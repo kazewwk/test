@@ -1,0 +1,2436 @@
+{
+  "pages": [
+    {
+      "page_idx": 337,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.321,
+            0.127,
+            0.698,
+            0.159
+          ],
+          "level": 2,
+          "content": "第十三章 马尔可夫链"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.206,
+            0.883,
+            0.326
+          ],
+          "content": "有些随机过程的特殊性质可以帮助我们更方便地刻画它们. 具有无记忆性的离散参数随机过程传统上称为马尔可夫链, 这类模型得名于早年就对其进行研究的俄国数学家马尔可夫. 马尔可夫链是独立随机试验模型的最直接推广, 它在近代物理学、生物学、管理科学、经济学、信息处理以及数字计算方法等领域有广泛的应用."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.405,
+            0.353,
+            0.62,
+            0.378
+          ],
+          "level": 2,
+          "content": "§ 1 定义与例子"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.404,
+            0.882,
+            0.452
+          ],
+          "content": "定义(马尔可夫链) 状态空间为有限集或可列集的随机过程 $\\{X_{t}, t=0,1,\\cdots\\}$ ，若对于任何一列状态 $i_{0}, i_{1}, \\cdots, i_{t-1}, i, j, X_{t}$ 满足性质"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.207,
+            0.459,
+            0.879,
+            0.478
+          ],
+          "content": "P \\{X _ {t + 1} = j \\mid X _ {0} = i _ {0}, \\dots , X _ {t - 1} = i _ {t - 1}, X _ {t} = i \\} = P \\{X _ {t + 1} = j \\mid X _ {t} = i \\}, \\tag {1.1}",
+          "image_source": "../../raw/pages_0337-0352/images/page_337_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.485,
+            0.476,
+            0.505
+          ],
+          "content": "则称 $X_{t}$ 为马尔可夫链，简称马氏链."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.51,
+            0.884,
+            0.683
+          ],
+          "content": "性质(1.1)称为马尔可夫链的马尔可夫性,简称马氏性.如果将(1.1)式中的时间参数 t 看成是现在时刻,那么  $0,1,\\cdots,t-1$  就表示过去时刻, $t+1$  表示将来时刻,则马尔可夫性可以直观解释为:若已知随机过程  $X_{t}$  现在所处的状态,则过程将来处于哪个状态的概率与过程过去曾经经历过的状态是无关的.因此,马氏性也称为无记忆性,或称无后效性.(1.1)式中的条件概率  $P\\{X_{t+1}=j|X_{t}=i\\}$  表示马氏链  $X_{t}$  在时刻 t 从状态 i 经过一步转移到状态 j 的概率.我们有以下定义:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.687,
+            0.882,
+            0.759
+          ],
+          "content": "定义(一步转移概率) 条件概率  $P\\{X_{t+1}=j \\mid X_{t}=i\\}$  称为马尔可夫链  $\\{X_{t}, t=0,1,\\cdots\\}$  在 t 时刻从 i 到 j 的一步转移概率. 当这一概率与 t 无关时我们称该马尔可夫链具有平稳转移概率, 并记为  $p_{ij}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.763,
+            0.882,
+            0.835
+          ],
+          "content": "我们将主要讨论具有平稳转移概率的马尔可夫链，它也称作时间齐性马尔可夫链或简称时齐马尔可夫链。由于概率是非负的，而且过程从一个状态 $i$ 出发总要转移到某状态 $j$ 中去（这是必然事件），所以，对任意状态 $i, j, p_{ij} \\geqslant 0$ 且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.457,
+            0.844,
+            0.878,
+            0.884
+          ],
+          "content": "\\sum_ {j = 0} ^ {\\infty} p _ {i j} = 1. \\tag {1.2}",
+          "image_source": "../../raw/pages_0337-0352/images/page_337_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.887,
+            0.61,
+            0.907
+          ],
+          "content": "通常把一步转移概率排成一个无穷维的方阵，记作"
+        }
+      ]
+    },
+    {
+      "page_idx": 338,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.134,
+            0.047,
+            0.199,
+            0.061
+          ],
+          "content": "· 324 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.396,
+            0.045,
+            0.589,
+            0.062
+          ],
+          "content": "第十三章 马尔可夫链"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.347,
+            0.089,
+            0.864,
+            0.203
+          ],
+          "content": "\\boldsymbol {P} = \\left[ \\begin{array}{c c c c c} p _ {0 0} & p _ {0 1} & \\dots & p _ {0 j} & \\dots \\\\ p _ {1 0} & p _ {1 1} & \\dots & p _ {1 j} & \\dots \\\\ \\vdots & \\vdots & & \\vdots \\\\ p _ {i 0} & p _ {i 1} & \\dots & p _ {i j} & \\dots \\\\ \\vdots & \\vdots & & \\vdots \\end{array} \\right], \\tag {1.3}",
+          "image_source": "../../raw/pages_0337-0352/images/page_338_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.209,
+            0.865,
+            0.254
+          ],
+          "content": "并称为时齐马尔可夫链的转移概率矩阵. 当状态空间为有限集时, $P$ 就是有限阶矩阵, 其阶数与状态空间中的状态数相同."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.258,
+            0.867,
+            0.4
+          ],
+          "content": "例 1(0-1 传输系统) 考虑如图 13-1 所示的只传输数字 0 和 1 的 t 级串联系统. 对每一级来说输出与输入具有相同的概率, 这一概率称为传真率, 相反的概率称为误码率. 设每一级的传真率均为 p, 误码率为 q=1-p. 并设一个单位时间传输一级,  $X_{0}$  是第一级的输入,  $X_{t}$  是第 t 级的输出. 那么  $X_{t}$  是一个状态空间为  $\\{0,1\\}$  的随机过程, 而且每一级的输出只与输入有关, 它是一个时齐马尔可夫链. 它的一步转移概率和一步转移概率矩阵分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.24,
+            0.406,
+            0.741,
+            0.449
+          ],
+          "content": "p _ {i j} = P \\{X _ {n + 1} = j   |   X _ {n} = i \\} = \\left\\{ \\begin{array}{l l} p, & j = i, \\\\ q, & j \\neq i, \\end{array} \\right. i, j \\in \\{0, 1 \\},",
+          "image_source": "../../raw/pages_0337-0352/images/page_338_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.454,
+            0.145,
+            0.472
+          ],
+          "content": "和"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.431,
+            0.48,
+            0.863,
+            0.521
+          ],
+          "content": "\\boldsymbol {P} = \\left[ \\begin{array}{l l} p & q \\\\ q & p \\end{array} \\right]. \\tag {1.4}",
+          "image_source": "../../raw/pages_0337-0352/images/page_338_equation_7.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.225,
+            0.538,
+            0.761,
+            0.569
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"X₀\"] --> B[\"1\"]\n  B --> C[\"X₁\"]\n  C --> D[\"2\"]\n  D --> E[\"X₂\"]\n  E --> F[\"...\"]\n  F --> G[\"Xₜ₋₁\"]\n  G --> H[\"t\"]\n  H --> I[\"Xₜ\"]\n  I --> J[\"...\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.455,
+                0.579,
+                0.53,
+                0.595
+              ],
+              "content": "图13-1"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0337-0352/images/page_338_image_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.616,
+            0.867,
+            0.71
+          ],
+          "content": "例2（直线上的随机游动）考虑在直线整数点上运动的粒子.设其向右及向左游动的概率分别为 $p$ 和 $q$ （如图13-2），并假定在初始时刻 $t = 0$ 时粒子处于原点，即 $X_0 = 0$ ，于是粒子在时刻 $t$ 所处的位置 $X_{t}$ 就是一个时齐马尔可夫链，其一步转移概率为 $p_{i(i + 1)} = p, p_{i(i - 1)} = q, p_{ii} = 1 - p - q.$ 当 $|i - j| > 1$ 时，$p_{ij} = 0$."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.223,
+            0.725,
+            0.759,
+            0.759
+          ],
+          "sub_type": "text_image",
+          "content": "-6 -5 -4 -3 -2 -1 O 1 2 3 4 5\nq p",
+          "captions": [
+            {
+              "bbox": [
+                0.455,
+                0.768,
+                0.53,
+                0.784
+              ],
+              "content": "图13-2"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0337-0352/images/page_338_image_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.805,
+            0.867,
+            0.9
+          ],
+          "content": "例3（有吸收壁的随机游动）在上例中如 $p = q = 0.5, X_{t}$ 就是对称随机游动，它可以用作公平赌博的模型。比如赌徒甲、乙用出现正反面概率都是0.5的钱币玩扔币游戏，每次的输赢为一元，用 $X_{t}$ 代表甲方在 $t$ 次扔币后所赢的钱数。假如甲方有赌本3，乙方有赌本2，则甲所感兴趣的问题是在自己输光之前乙输"
+        }
+      ]
+    },
+    {
+      "page_idx": 339,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.44,
+            0.046,
+            0.581,
+            0.063
+          ],
+          "content": "§ 1 定义与例子"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.8,
+            0.048,
+            0.866,
+            0.062
+          ],
+          "content": "· 325 ·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.087,
+            0.884,
+            0.154
+          ],
+          "continues_prev": true,
+          "content": "光的可能性有多大. 这就是著名的赌徒输光问题. 注意这里 $X_{t}$ 一旦达到0（甲方输光）或达到5（乙方输光）就不再游动. 这个模型称为有吸收壁的随机游动（如图13-3）."
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.316,
+            0.161,
+            0.709,
+            0.219
+          ],
+          "sub_type": "line",
+          "content": "| Interval | Value |\n| --- | --- |\n| 2~4 | 0.5 |",
+          "captions": [
+            {
+              "bbox": [
+                0.472,
+                0.228,
+                0.548,
+                0.244
+              ],
+              "content": "图13-3"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0337-0352/images/page_339_chart_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.266,
+            0.884,
+            0.334
+          ],
+          "content": "由上例可知当 $i, j \\neq 0, 5$ 时，$p_{i(i+1)} = p_{i(i-1)} = 0.5$，当 $|i - j| \\neq 1$ 时，$p_{ij} = 0$。$i = 0$ 或 $i = 5$ 对应甲方或乙方输光，从而 $X_t$ 不再游动。因此 $p_{00} = 1, p_{55} = 1$。再由(1.2)式知当 $i \\neq 0$ 时，$p_{0i} = 0$，当 $i \\neq 5$ 时，$p_{5i} = 0$。于是 $X_t$ 的一步转移概率矩阵为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.305,
+            0.339,
+            0.882,
+            0.48
+          ],
+          "content": "\\boldsymbol {P} = \\left[ \\begin{array}{c c c c c c} 1 & 0 & 0 & 0 & 0 & 0 \\\\ 0. 5 & 0 & 0. 5 & 0 & 0 & 0 \\\\ 0 & 0. 5 & 0 & 0. 5 & 0 & 0 \\\\ 0 & 0 & 0. 5 & 0 & 0. 5 & 0 \\\\ 0 & 0 & 0 & 0. 5 & 0 & 0. 5 \\\\ 0 & 0 & 0 & 0 & 0 & 1 \\end{array} \\right]. \\tag {1.5}",
+          "image_source": "../../raw/pages_0337-0352/images/page_339_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.508,
+            0.887,
+            0.651
+          ],
+          "content": "例4（排队模型）设服务系统由一个服务员和只可容纳两个人的等候室组成(图13-4).规则是先到先服务，后来者需在等候室依次排队.如系统内已有三个顾客(一个正在接受服务，两个在等候室里排队)，再到来的顾客就会离开.设时间间隔 $\\Delta t$ 内有一个顾客进入系统的概率为 $q$ ，如有顾客在服务中则其被服务完毕离开系统的概率为 $p$ .又设在这个时间区间里不可能有多于一个顾客进入或离开系统.再设有无顾客来到与服务是否完毕是相互独立的."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.241,
+            0.66,
+            0.784,
+            0.773
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"随机到达者\"] --> B{\"系统\"}\n  subgraph B\n    C[\"等候室\"]\n    D[\"服务台\"]\n  end\n  B --> E[\"离开者\"]\n  E --> F[\"\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.474,
+                0.782,
+                0.551,
+                0.798
+              ],
+              "content": "图13-4"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0337-0352/images/page_339_image_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.819,
+            0.885,
+            0.864
+          ],
+          "content": "用 $X_{t}$ 表示时间区间 $((t - 1)\\Delta t, t\\Delta t]$ 中系统内的顾客数. 则 $X_{t}$ 为一时齐马尔可夫链，其状态空间为 $\\{0,1,2,3\\}$. 下面来计算其一步转移概率."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.867,
+            0.887,
+            0.912
+          ],
+          "content": "由 $q$ 的定义可见 $p_{00} = 1 - q, p_{01} = q$. 由于不能有两个以上顾客进出系统，当 $|i - j| > 1$ 时，$p_{ij} = 0$. 稍加思考我们可以看到 $p_{10} = p_{21} = p_{32}$，因为它们都代表系"
+        }
+      ]
+    },
+    {
+      "page_idx": 340,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.134,
+            0.048,
+            0.201,
+            0.062
+          ],
+          "content": "· 326 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.396,
+            0.047,
+            0.589,
+            0.063
+          ],
+          "content": "第十三章 马尔可夫链"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.086,
+            0.869,
+            0.253
+          ],
+          "continues_prev": true,
+          "content": "统中有一个顾客接受服务后离开并且没有新顾客进入系统，这个概率为 $p(1 - q)$。类似地 $p_{23} = p_{12} = q(1 - p)$。较为复杂的是 $p_{11} = p_{22}$。有两种情况可以维持系统中人数不变:（1）正在接受服务的顾客没有离开，并且没有新顾客进入系统。（2）当前接受服务的顾客结束服务离开，并有一个新顾客进入系统，于是总概率为 $pq + (1 - p)(1 - q)$。一步转移概率 $p_{33}$ 稍有不同，因为系统中已有3个顾客，所以当无顾客离开系统时不能有新顾客进入，$p_{33} = pq + (1 - p)$。综合起来该系统的一步转移概率矩阵为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.143,
+            0.259,
+            0.866,
+            0.374
+          ],
+          "content": "\\boldsymbol {P} = \\left[ \\begin{array}{c c c c} 1 - q & q & 0 & 0 \\\\ p (1 - q) & p q + (1 - p) (1 - q) & q (1 - p) & 0 \\\\ 0 & p (1 - q) & p q + (1 - p) (1 - q) & q (1 - p) \\\\ 0 & 0 & p (1 - q) & p q + (1 - p) \\end{array} \\right]. \\tag {1.6}",
+          "image_source": "../../raw/pages_0337-0352/images/page_340_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.841,
+            0.381,
+            0.865,
+            0.398
+          ],
+          "content": "□"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.403,
+            0.78,
+            0.423
+          ],
+          "content": "在实际问题中一步转移概率可通过统计试验确定. 下面看一实例:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.427,
+            0.868,
+            0.495
+          ],
+          "content": "例 5(估计一步转移概率) 某计算机机房的一台计算机经常出故障. 研究者每隔 15 min 观察一次计算机的运行状态, 收集了 24 h 的数据 (共作 97 次观察). 用 1 表示正常状态, 用 0 表示不正常状态, 所得的数据序列如下:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.242,
+            0.501,
+            0.782,
+            0.544
+          ],
+          "content": "\\begin{array}{l} 1 1 1 0 0 1 0 0 1 1 1 1 1 1 1 0 0 1 1 1 1 0 1 1 1 1 1 1 0 0 1 1 1 1 1 1 1 1 1 0 0 0 1 1 0 1 1 0 1 \\\\ 1 1 1 0 1 1 0 1 1 0 1 0 1 1 1 1 0 1 1 1 0 1 1 1 1 0 1 1 1 1 1 0 0 1 1 0 1 1 1 1 1 1 0 0 1 1 1 \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0337-0352/images/page_340_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.549,
+            0.866,
+            0.593
+          ],
+          "content": "设 $X_{t}$ 为第 $t(t = 1,2,\\dots ,97)$ 个时段的计算机状态，可以认为它是一个时齐马尔可夫链，状态空间 $I = \\{0,1\\}$ .数据给出96次状态转移的情况是"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.23,
+            0.598,
+            0.747,
+            0.618
+          ],
+          "content": "$0 \\to 0,8$ 次； $0 \\to 1,18$ 次； $1 \\to 0,18$ 次； $1 \\to 1,52$ 次."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.622,
+            0.517,
+            0.641
+          ],
+          "content": "因此一步转移概率可用频率近似地表示为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.648,
+            0.864,
+            0.811
+          ],
+          "content": "\\begin{array}{l} p _ {0 0} = P \\{X _ {t + 1} = 0 \\mid X _ {t} = 0 \\} \\approx \\frac {8}{8 + 1 8} = \\frac {8}{2 6}, \\\\ p _ {0 1} = P \\{X _ {t + 1} = 1 \\mid X _ {t} = 0 \\} \\approx \\frac {1 8}{8 + 1 8} = \\frac {1 8}{2 6}, \\tag {1.7} \\\\ p _ {1 0} = P \\{X _ {t + 1} = 0 \\mid X _ {t} = 1 \\} \\approx \\frac {1 8}{1 8 + 5 2} = \\frac {1 8}{7 0}, \\\\ p _ {1 1} = P \\{X _ {t + 1} = 1 \\mid X _ {t} = 1 \\} \\approx \\frac {5 2}{1 8 + 5 2} = \\frac {5 2}{7 0}. \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0337-0352/images/page_340_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.815,
+            0.864,
+            0.86
+          ],
+          "content": "例6(续例5) 如果已知计算机在某一时段 $(15\\mathrm{min})$ 的状态为0.问接下来计算机能连续工作 $45\\mathrm{min}$ (3个时段)的概率有多大？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.864,
+            0.864,
+            0.909
+          ],
+          "content": "解 把已知状态为 0 的时段作为初始时段, 则所要求的概率为 $P\\{X_1 = 1, X_2 = 1, X_3 = 1 \\mid X_0 = 0\\}$. 由乘法公式、马尔可夫性和时齐性可以算出"
+        }
+      ]
+    },
+    {
+      "page_idx": 341,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.402,
+            0.048,
+            0.619,
+            0.065
+          ],
+          "content": "§ 2 多步转移概率的确定"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.8,
+            0.052,
+            0.866,
+            0.065
+          ],
+          "content": "· 327 ·"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.235,
+            0.089,
+            0.781,
+            0.174
+          ],
+          "content": "\\begin{array}{l} P \\left\\{X _ {1} = 1, X _ {2} = 1, X _ {3} = 1 \\mid X _ {0} = 0 \\right\\} \\\\ = P \\left\\{X _ {1} = 1 \\mid X _ {0} = 0 \\right\\} P \\left\\{X _ {2} = 1 \\mid X _ {1} = 1 \\right\\} P \\left\\{X _ {3} = 1 \\mid X _ {2} = 1 \\right\\} \\\\ = p _ {0 1} p _ {1 1} p _ {1 1} = \\frac {1 8}{2 6} \\cdot \\frac {5 2}{7 0} \\cdot \\frac {5 2}{7 0} = 0. 3 8 2. \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0337-0352/images/page_341_equation_2.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.344,
+            0.204,
+            0.677,
+            0.228
+          ],
+          "level": 2,
+          "content": "§ 2 多步转移概率的确定"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.255,
+            0.882,
+            0.373
+          ],
+          "content": "例1 在 §1 例5中如果设初始时段的状态为0, 我们想知道 $15\\mathrm{min}$ 到 $30\\mathrm{min}$ 的时间段里计算机正常工作的概率, 则需要计算 $P\\{X_2 = 1 \\mid X_0 = 0\\}$. 这是一个两步转移概率, 它的计算需要考虑中间项 $X_1$ 的状态. 当 $X_0 = 0$ 时, $X_1$ 有两种可能, $X_1 = 0$ 或 $X_1 = 1$. 因此计算 $P\\{X_2 = 1 \\mid X_0 = 0\\}$ 必须考虑这两条不同的路径, 从而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.178,
+            0.38,
+            0.86,
+            0.465
+          ],
+          "content": "\\begin{array}{l} P \\left\\{X _ {2} = 1 \\mid X _ {0} = 0 \\right\\} \\\\ = P \\left\\{X _ {2} = 1 \\mid X _ {1} = 1 \\right\\} P \\left\\{X _ {1} = 1 \\mid X _ {0} = 0 \\right\\} + P \\left\\{X _ {2} = 1 \\mid X _ {1} = 0 \\right\\} P \\left\\{X _ {1} = 0 \\mid X _ {0} = 0 \\right\\} \\\\ = p _ {0 1} p _ {1 1} + p _ {0 0} p _ {0 1} = \\frac {1 8}{2 6} \\cdot \\frac {5 2}{7 0} + \\frac {8}{2 6} \\cdot \\frac {1 8}{2 6} = 0. 7 2 7. \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0337-0352/images/page_341_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.13,
+            0.474,
+            0.879,
+            0.516
+          ],
+          "content": "上例中涉及的多步转移概率也出现在许多其他问题中. 我们先给出下述定义:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.173,
+            0.524,
+            0.797,
+            0.544
+          ],
+          "content": "定义(n 步转移概率) 设  $\\{X_{t}, t=0,1,\\cdots\\}$  为马尔可夫链, 条件概率"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.35,
+            0.549,
+            0.659,
+            0.569
+          ],
+          "content": "p _ {i j} (t, t + n) = P \\{X _ {t + n} = j   |   X _ {t} = i \\}",
+          "image_source": "../../raw/pages_0337-0352/images/page_341_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.129,
+            0.574,
+            0.879,
+            0.616
+          ],
+          "content": "称为马尔可夫链 $X_{t}$ 在时刻 $t$ 处于状态 $i$ 的条件下经过 $n$ 步转移到达状态 $j$ 的转移概率."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.129,
+            0.624,
+            0.878,
+            0.668
+          ],
+          "content": "若 $X_{t}$ 为时齐的，则 $p_{ij}(t,t + n)$ 与 $t$ 无关！将 $p_{ij}(t,t + n)$ 记作 $p_{ij}(n)$，相应的 $n$ 步转移概率矩阵 $(p_{ij}(n))$ 记作 $\\mathbf{P}(n)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.129,
+            0.674,
+            0.878,
+            0.718
+          ],
+          "content": "对于时齐马尔可夫链,上例中的方法同样可以用来计算多步转移概率.这就是著名的科尔莫戈罗夫一切普曼(Kolmogorov-Chapman)方程"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.271,
+            0.726,
+            0.874,
+            0.764
+          ],
+          "content": "p _ {i j} (n + m) = \\sum_ {k = 0} ^ {\\infty} p _ {i k} (n) p _ {k j} (m), \\quad i, j = 0, 1, 2, \\dots , \\tag {2.1}",
+          "image_source": "../../raw/pages_0337-0352/images/page_341_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.129,
+            0.768,
+            0.309,
+            0.786
+          ],
+          "content": "写成矩阵形式就是"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.395,
+            0.795,
+            0.873,
+            0.811
+          ],
+          "content": "\\boldsymbol {P} (n + m) = \\boldsymbol {P} (n) \\boldsymbol {P} (m). \\tag {2.2}",
+          "image_source": "../../raw/pages_0337-0352/images/page_341_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.13,
+            0.817,
+            0.265,
+            0.835
+          ],
+          "content": "由此递推可见"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.395,
+            0.844,
+            0.873,
+            0.861
+          ],
+          "content": "\\boldsymbol {P} (n) = \\boldsymbol {P} \\boldsymbol {P} (n - 1) = \\boldsymbol {P} ^ {n}. \\tag {2.3}",
+          "image_source": "../../raw/pages_0337-0352/images/page_341_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.129,
+            0.867,
+            0.862,
+            0.887
+          ],
+          "content": "也就是说时齐马尔可夫链的 $n$ 步转移概率矩阵是一步转移概率矩阵的 $n$ 次方."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.892,
+            0.877,
+            0.912
+          ],
+          "content": "接着,我们来研究马尔可夫链的有限维分布.设 I 为自然数的一个集合,它"
+        }
+      ]
+    },
+    {
+      "page_idx": 342,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.136,
+            0.048,
+            0.202,
+            0.062
+          ],
+          "content": "· 328 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.398,
+            0.046,
+            0.592,
+            0.063
+          ],
+          "content": "第十三章 马尔可夫链"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.087,
+            0.558,
+            0.106
+          ],
+          "content": "表示马尔可夫链  $X_{t}, t=0,1,\\cdots$  的状态空间. 记"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.363,
+            0.112,
+            0.623,
+            0.132
+          ],
+          "content": "p _ {j} (0) = P \\{X _ {0} = j \\}, \\quad j \\in I,",
+          "image_source": "../../raw/pages_0337-0352/images/page_342_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.136,
+            0.666,
+            0.156
+          ],
+          "content": "称它为 $X_{t}$ 的初始分布. 再看 $X_{t}$ 在任一时刻 $n$ 的一维分布"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.368,
+            0.163,
+            0.865,
+            0.18
+          ],
+          "content": "p _ {j} (n) = P \\{X _ {n} = j \\}, \\quad j \\in I. \\tag {2.4}",
+          "image_source": "../../raw/pages_0337-0352/images/page_342_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.189,
+            0.497,
+            0.23
+          ],
+          "content": "显然,作为概率分布  $\\sum_{j=0}^{\\infty}p_{j}(n)=1$ . 又有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.278,
+            0.235,
+            0.71,
+            0.275
+          ],
+          "content": "P \\{X _ {n} = j \\} = \\sum_ {i = 1} ^ {\\infty} P \\{X _ {n} = j \\mid X _ {0} = i \\} P \\{X _ {0} = i \\},",
+          "image_source": "../../raw/pages_0337-0352/images/page_342_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.279,
+            0.148,
+            0.297
+          ],
+          "content": "或"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.306,
+            0.865,
+            0.344
+          ],
+          "content": "p _ {j} (n) = \\sum_ {i = 0} ^ {\\infty} p _ {i} (0) p _ {i j} (n). \\tag {2.5}",
+          "image_source": "../../raw/pages_0337-0352/images/page_342_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.348,
+            0.302,
+            0.367
+          ],
+          "content": "如果我们用行向量"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.325,
+            0.375,
+            0.865,
+            0.392
+          ],
+          "content": "\\boldsymbol {p} (n) = \\left(p _ {0} (n), p _ {1} (n), \\dots , p _ {j} (n), \\dots\\right) \\tag {2.6}",
+          "image_source": "../../raw/pages_0337-0352/images/page_342_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.397,
+            0.869,
+            0.442
+          ],
+          "content": "来表示 $X_{t}$ 在时刻 $n$ 的一维分布，利用矩阵乘法（$I$ 是可列无限集时，仍用有限阶矩阵乘法的规则确定矩阵之积的元素），可以把(2.5)式写作"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.41,
+            0.449,
+            0.865,
+            0.465
+          ],
+          "content": "\\boldsymbol {p} (n) = \\boldsymbol {p} (0) \\boldsymbol {P} (n). \\tag {2.7}",
+          "image_source": "../../raw/pages_0337-0352/images/page_342_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.471,
+            0.869,
+            0.516
+          ],
+          "content": "换句话说,时齐马尔可夫链 $X_{t}$ 在任一时刻 $n$ 的一维分布由它的初始分布和 $n$ 步转移概率矩阵所确定."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.521,
+            0.869,
+            0.566
+          ],
+          "content": "对于任意 m 个时刻  $t_{1}, t_{2}, \\cdots, t_{m}$  以及状态  $n_{1}, n_{2}, \\cdots, n_{m} \\in I$ ，时齐马尔可夫链  $X_{t}$  的 m 维分布为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.173,
+            0.573,
+            0.866,
+            0.642
+          ],
+          "content": "\\begin{array}{l} P \\left\\{X _ {t _ {1}} = n _ {1}, X _ {t _ {2}} = n _ {2}, \\dots , X _ {t _ {m}} = n _ {m} \\right\\} \\\\ = P \\left\\{X _ {t _ {1}} = n _ {1} \\right\\} P \\left\\{X _ {t _ {2}} = n _ {2} \\mid X _ {t _ {1}} = n _ {1} \\right\\} \\dots P \\left\\{X _ {t _ {m}} = n _ {m} \\mid X _ {t _ {m - 1}} = n _ {m - 1} \\right\\} \\\\ = p _ {n _ {1}} (t _ {1}) p _ {n _ {1} n _ {2}} (t _ {2} - t _ {1}) \\dots p _ {n _ {m - 1} n _ {m}} (t _ {m} - t _ {m - 1}). \\tag {2.8} \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0337-0352/images/page_342_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.644,
+            0.869,
+            0.713
+          ],
+          "content": "结合(2.5)和(2.8)式可知:时齐马尔可夫链的有限维分布同样地完全由初始分布和转移概率矩阵所确定.总之,转移概率矩阵决定了马尔可夫链的统计规律."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.718,
+            0.869,
+            0.762
+          ],
+          "content": "例2 设 $X_{n}$ 是具有三个状态 $\\{0,1,2\\}$ 的时齐马尔可夫链，其一步转移概率矩阵为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.388,
+            0.77,
+            0.866,
+            0.833
+          ],
+          "content": "\\boldsymbol {P} = \\left[ \\begin{array}{c c c} 3 / 4 & 1 / 4 & 0 \\\\ 1 / 4 & 1 / 2 & 1 / 4 \\\\ 0 & 3 / 4 & 1 / 4 \\end{array} \\right], \\tag {2.9}",
+          "image_source": "../../raw/pages_0337-0352/images/page_342_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.841,
+            0.867,
+            0.886
+          ],
+          "content": "初始分布为  $p_{i}(0)=P\\{X_{0}=i\\}=1/3,i=0,1,2.$  试求(1)  $P\\{X_{0}=0,X_{2}=1\\}.$ \n(2)  $P\\{X_{2}=1\\}.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.892,
+            0.498,
+            0.911
+          ],
+          "content": "解 这里关键是二步转移概率矩阵"
+        }
+      ]
+    },
+    {
+      "page_idx": 343,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.404,
+            0.048,
+            0.62,
+            0.065
+          ],
+          "content": "§ 2 多步转移概率的确定"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.801,
+            0.052,
+            0.867,
+            0.065
+          ],
+          "content": "· 329 ·"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.347,
+            0.091,
+            0.88,
+            0.156
+          ],
+          "content": "\\boldsymbol {P} (2) = \\boldsymbol {P} ^ {2} = \\left[ \\begin{array}{c c c} 5 / 8 & 5 / 1 6 & 1 / 1 6 \\\\ 5 / 1 6 & 1 / 2 & 3 / 1 6 \\\\ 3 / 1 6 & 9 / 1 6 & 1 / 4 \\end{array} \\right]. \\tag {2.10}",
+          "image_source": "../../raw/pages_0337-0352/images/page_343_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.162,
+            0.334,
+            0.181
+          ],
+          "content": "利用 $P(2)$ 容易算出:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.183,
+            0.189,
+            0.705,
+            0.206
+          ],
+          "content": "(1) $P\\{X_0 = 0,X_2 = 1\\} = P\\{X_0 = 0\\} P\\{X_2 = 1|X_0 = 0\\}$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.423,
+            0.217,
+            0.698,
+            0.248
+          ],
+          "content": "= p _ {0} (0) p _ {0 1} (2) = \\frac {1}{3} \\cdot \\frac {5}{1 6} = \\frac {5}{4 8}.",
+          "image_source": "../../raw/pages_0337-0352/images/page_343_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.183,
+            0.258,
+            0.214,
+            0.273
+          ],
+          "content": "(2)"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.255,
+            0.273,
+            0.761,
+            0.29
+          ],
+          "content": "P \\left\\{X _ {2} = 1 \\right\\} = p _ {0} (0) p _ {0 1} (2) + p _ {1} (0) p _ {1 1} (2) + p _ {2} (0) p _ {2 1} (2)",
+          "image_source": "../../raw/pages_0337-0352/images/page_343_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.353,
+            0.3,
+            0.583,
+            0.332
+          ],
+          "content": "= \\frac {1}{3} \\left(\\frac {5}{1 6} + \\frac {1}{2} + \\frac {9}{1 6}\\right) = \\frac {1 1}{2 4}.",
+          "image_source": "../../raw/pages_0337-0352/images/page_343_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.34,
+            0.882,
+            0.41
+          ],
+          "content": "例3 在 §1 例1中,(1)设 $p = 0.9$, 求系统经二级传输后的传真率与三级传输后的误码率.(2)设初始分布 $p_1(0) = P\\{X_0 = 1\\} = \\alpha, p_0(0) = P\\{X_0 = 0\\} = 1 - \\alpha$. 又已知系统经 $n$ 级传输后输出为1, 问原发字符也是1的概率是多少?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.415,
+            0.816,
+            0.435
+          ],
+          "content": "解 回答这些问题的关键是计算 $n$ 步转移概率矩阵 $\\pmb{P}(n) = \\pmb{P}^n$. 由于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.389,
+            0.443,
+            0.624,
+            0.485
+          ],
+          "content": "\\boldsymbol {P} = \\left[ \\begin{array}{l l} p & q \\\\ q & p \\end{array} \\right] \\quad (q = 1 - p)",
+          "image_source": "../../raw/pages_0337-0352/images/page_343_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.491,
+            0.748,
+            0.51
+          ],
+          "content": "有相异的特征值 $\\lambda_1 = 1, \\lambda_2 = p - q$，由线性代数知识，$P$ 与对角矩阵"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.381,
+            0.519,
+            0.634,
+            0.562
+          ],
+          "content": "\\boldsymbol {D} = \\left[ \\begin{array}{c c} \\lambda_ {1} & 0 \\\\ 0 & \\lambda_ {2} \\end{array} \\right] = \\left[ \\begin{array}{c c} 1 & 0 \\\\ 0 & p - q \\end{array} \\right]",
+          "image_source": "../../raw/pages_0337-0352/images/page_343_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.567,
+            0.389,
+            0.586
+          ],
+          "content": "相似. 求出对应的特征向量"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.357,
+            0.595,
+            0.653,
+            0.644
+          ],
+          "content": "\\boldsymbol {v} _ {1} = \\left[ \\begin{array}{c} 1 / \\sqrt {2} \\\\ 1 / \\sqrt {2} \\end{array} \\right], \\quad \\boldsymbol {v} _ {2} = \\left[ \\begin{array}{c} - 1 / \\sqrt {2} \\\\ 1 / \\sqrt {2} \\end{array} \\right].",
+          "image_source": "../../raw/pages_0337-0352/images/page_343_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.65,
+            0.18,
+            0.668
+          ],
+          "content": "再令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.349,
+            0.678,
+            0.663,
+            0.727
+          ],
+          "content": "\\boldsymbol {H} = [ \\boldsymbol {v} _ {1}, \\boldsymbol {v} _ {2} ] = \\left[ \\begin{array}{c c} 1 / \\sqrt {2} & - 1 / \\sqrt {2} \\\\ 1 / \\sqrt {2} & 1 / \\sqrt {2} \\end{array} \\right],",
+          "image_source": "../../raw/pages_0337-0352/images/page_343_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.733,
+            0.424,
+            0.751
+          ],
+          "content": "则 $P = HDH^{-1}$. 于是, 容易算出"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.312,
+            0.76,
+            0.876,
+            0.862
+          ],
+          "content": "\\begin{array}{l} \\boldsymbol {P} ^ {n} = (\\boldsymbol {H} \\boldsymbol {D} \\boldsymbol {H} ^ {- 1}) ^ {n} = \\boldsymbol {H} \\boldsymbol {D} ^ {n} \\boldsymbol {H} ^ {- 1} \\\\ = \\left[ \\begin{array}{l l} \\frac {1}{2} + \\frac {1}{2} (p - q) ^ {n} & \\frac {1}{2} - \\frac {1}{2} (p - q) ^ {n} \\\\ \\frac {1}{2} - \\frac {1}{2} (p - q) ^ {n} & \\frac {1}{2} + \\frac {1}{2} (p - q) ^ {n} \\end{array} \\right]. \\tag {2.11} \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0337-0352/images/page_343_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.869,
+            0.879,
+            0.913
+          ],
+          "content": "（1）由(2.11)式可知，当 $p = 0.9$ 时，系统经二级传输后的传真率与三级传输后的误码率分别为"
+        }
+      ]
+    },
+    {
+      "page_idx": 344,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.132,
+            0.052,
+            0.199,
+            0.065
+          ],
+          "content": "· 330 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.394,
+            0.048,
+            0.588,
+            0.065
+          ],
+          "content": "第十三章 马尔可夫链"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.092,
+            0.707,
+            0.123
+          ],
+          "content": "p _ {1 1} (2) = p _ {0 0} (2) = \\frac {1}{2} + \\frac {1}{2} (0. 9 - 0. 1) ^ {2} = 0. 8 2 0,",
+          "image_source": "../../raw/pages_0337-0352/images/page_344_equation_2.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.136,
+            0.705,
+            0.166
+          ],
+          "content": "p _ {1 0} (3) = p _ {0 1} (3) = \\frac {1}{2} - \\frac {1}{2} (0. 9 - 0. 1) ^ {3} = 0. 2 4 4.",
+          "image_source": "../../raw/pages_0337-0352/images/page_344_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.175,
+            0.867,
+            0.22
+          ],
+          "content": "（2）根据贝叶斯公式，当已知系统经 $n$ 级传输后输出为1时，原发字符也是1的概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.265,
+            0.226,
+            0.864,
+            0.35
+          ],
+          "content": "\\begin{array}{l} P \\left\\{X _ {0} = 1 \\mid X _ {n} = 1 \\right\\} = \\frac {P \\left\\{X _ {0} = 1 \\right\\} P \\left\\{X _ {n} = 1 \\mid X _ {0} = 1 \\right\\}}{P \\left\\{X _ {n} = 1 \\right\\}} \\\\ = \\frac {p _ {1} (0) p _ {1 1} (n)}{p _ {0} (0) p _ {0 1} (n) + p _ {1} (0) p _ {1 1} (n)} \\\\ = \\frac {\\alpha + \\alpha (p - q) ^ {n}}{1 + (2 \\alpha - 1) (p - q) ^ {n}}. \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0337-0352/images/page_344_equation_5.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.388,
+            0.38,
+            0.606,
+            0.403
+          ],
+          "level": 2,
+          "content": "§ 3 遍 历 性"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.43,
+            0.868,
+            0.475
+          ],
+          "content": "上两小节我们从一步转移概率开始进而讨论了多步转移概率. 一个很自然想到的问题是当步数趋向无穷时转移概率会如何变化. 先看一个简单的例子."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.118,
+            0.48,
+            0.868,
+            0.525
+          ],
+          "content": "例 1(两个状态的马尔可夫链) 对于一般的两个状态的马尔可夫链,一步转移概率矩阵为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.531,
+            0.655,
+            0.572
+          ],
+          "content": "\\boldsymbol {P} = \\left[ \\begin{array}{c c} 1 - a & a \\\\ b & 1 - b \\end{array} \\right] \\quad (0 <   a, b <   1).",
+          "image_source": "../../raw/pages_0337-0352/images/page_344_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.58,
+            0.57,
+            0.599
+          ],
+          "content": "和 §2 例 3 类似, 可以算出 $n$ 步转移概率矩阵为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.21,
+            0.607,
+            0.865,
+            0.65
+          ],
+          "content": "\\boldsymbol {P} (n) = \\boldsymbol {P} ^ {n} = \\left[ \\begin{array}{l l} p _ {0 0} (n) & p _ {0 1} (n) \\\\ p _ {1 0} (n) & p _ {1 1} (n) \\end{array} \\right] \\tag {3.1}",
+          "image_source": "../../raw/pages_0337-0352/images/page_344_equation_11.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.261,
+            0.658,
+            0.773,
+            0.694
+          ],
+          "content": "= \\frac {1}{a + b} \\left[ \\begin{array}{l l} b & a \\\\ b & a \\end{array} \\right] + \\frac {(1 - a - b) ^ {n}}{a + b} \\left[ \\begin{array}{c c} a & - a \\\\ - b & b \\end{array} \\right], \\quad n = 1, 2, \\dots .",
+          "image_source": "../../raw/pages_0337-0352/images/page_344_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.704,
+            0.389,
+            0.723
+          ],
+          "content": "于是 $n$ 步转移概率具有极限"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.316,
+            0.73,
+            0.672,
+            0.762
+          ],
+          "content": "\\lim _ {n \\rightarrow \\infty} p _ {0 0} (n) = \\lim _ {n \\rightarrow \\infty} p _ {1 0} (n) = \\frac {b}{a + b} \\text {记成} \\pi_ {0},",
+          "image_source": "../../raw/pages_0337-0352/images/page_344_equation_14.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.317,
+            0.774,
+            0.67,
+            0.806
+          ],
+          "content": "\\lim _ {n \\rightarrow \\infty} p _ {0 1} (n) = \\lim _ {n \\rightarrow \\infty} p _ {1 1} (n) = \\frac {a}{a + b} \\stackrel {\\text {记成}} {=} \\pi_ {1}.",
+          "image_source": "../../raw/pages_0337-0352/images/page_344_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.815,
+            0.87,
+            0.911
+          ],
+          "content": "上述极限的意义是:对于固定的状态 j, 不管链在某一时刻从什么状态出发, 通过长时间转移, 到达状态 j 的概率都趋近于  $\\pi_{j}$ , 这就是所谓的遍历性. 又由于  $\\pi_{0} + \\pi_{1} = 1$ , 所以行向量  $(\\pi_{0}, \\pi_{1}) = \\pi$  构成一分布律, 称为该链的极限分布. 另外, 如果我们能用其他简便的方法直接求得极限分布  $\\pi$ , 则反过来, 当  $n \\gg 1$  时,"
+        }
+      ]
+    },
+    {
+      "page_idx": 345,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.439,
+            0.049,
+            0.58,
+            0.065
+          ],
+          "content": "§ 3 遍 历 性"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.799,
+            0.052,
+            0.864,
+            0.065
+          ],
+          "content": "· 331 ·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.088,
+            0.556,
+            0.109
+          ],
+          "continues_prev": true,
+          "content": "就可得到 $n$ 步转移概率的近似值 $p_{ij}(n) \\approx \\pi_j$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.114,
+            0.881,
+            0.158
+          ],
+          "content": "定义(遍历性) 设时齐马尔可夫链的状态空间为 $I$, 若对于所有 $i, j \\in I$, 转移概率 $p_{ij}(n)$ 存在极限"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.43,
+            0.165,
+            0.581,
+            0.191
+          ],
+          "content": "\\pi_ {j} = \\lim _ {n \\to \\infty} p _ {i j} (n),",
+          "image_source": "../../raw/pages_0337-0352/images/page_345_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.196,
+            0.881,
+            0.249
+          ],
+          "content": "则称此链具有遍历性. 又若  $\\sum_{j}\\pi_{j}=1$  , 则同时称行向量  $\\boldsymbol{\\pi}=(\\pi_{0},\\pi_{1},\\cdots)$  为该链的极限分布."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.256,
+            0.88,
+            0.325
+          ],
+          "content": "时齐马尔可夫链在什么条件下才具有遍历性？如何求出它的极限分布？这些问题在理论上已经圆满解决，但详述这一理论需要较多篇幅。下面仅就只有有限个状态的链，即有限链的遍历性给出一个充分条件。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.33,
+            0.88,
+            0.398
+          ],
+          "content": "定理(遍历性的充分条件) 设时齐马尔可夫链 $\\{X_{t}, t \\geqslant 0\\}$ 的状态空间为 $I = \\{0, 1, 2, \\cdots, N\\}$, P 是它的一步转移概率矩阵, 如果存在正整数 m, 使对任意 $i, j \\in I$, 都有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.407,
+            0.407,
+            0.875,
+            0.423
+          ],
+          "content": "p _ {i j} (m) > 0, \\quad i, j \\in I, \\tag {3.2}",
+          "image_source": "../../raw/pages_0337-0352/images/page_345_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.43,
+            0.766,
+            0.449
+          ],
+          "content": "则此链具有遍历性. 而且其极限分布  $\\boldsymbol{\\pi}=(\\pi_{0},\\pi_{1},\\cdots,\\pi_{N})$  是矩阵方程"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.474,
+            0.459,
+            0.875,
+            0.473
+          ],
+          "content": "\\pi = \\pi P \\tag {3.3}",
+          "image_source": "../../raw/pages_0337-0352/images/page_345_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.479,
+            0.179,
+            0.498
+          ],
+          "content": "或即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.351,
+            0.507,
+            0.875,
+            0.546
+          ],
+          "content": "\\pi_ {j} = \\sum_ {i = 0} ^ {N} \\pi_ {i} p _ {i j}, \\quad j = 0, 1, 2, \\dots , N \\tag {3.4}",
+          "image_source": "../../raw/pages_0337-0352/images/page_345_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.55,
+            0.245,
+            0.569
+          ],
+          "content": "的满足条件"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.426,
+            0.578,
+            0.875,
+            0.618
+          ],
+          "content": "\\pi_ {j} > 0, \\sum_ {j = 0} ^ {N} \\pi_ {j} = 1 \\tag {3.5}",
+          "image_source": "../../raw/pages_0337-0352/images/page_345_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.62,
+            0.229,
+            0.639
+          ],
+          "content": "的唯一解."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.645,
+            0.251,
+            0.663
+          ],
+          "content": "证明略."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.67,
+            0.879,
+            0.714
+          ],
+          "content": "依照定理,为证明有限链是遍历的,只需找到正整数 m,使得 m 步转移概率矩阵  $P^{m}$  无零元.而求极限分布  $\\pi$  的问题,则归结为求解(3.3)和(3.5)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.719,
+            0.879,
+            0.787
+          ],
+          "content": "在上述定理的条件下,马尔可夫链的极限分布同时也是它的平稳分布.也就是说,若用  $\\pi$  作为链的初始分布,即  $\\boldsymbol{p}(0)=\\boldsymbol{\\pi}$ , 则该链在任一时刻 t 的分布  $\\boldsymbol{p}(t)$  永远与  $\\pi$  一致. 这是因为由(3.3)式,有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.793,
+            0.714,
+            0.813
+          ],
+          "content": "\\boldsymbol {p} (t) = \\boldsymbol {p} (0) \\boldsymbol {P} (t) = \\pi \\boldsymbol {P} ^ {t} = \\pi \\boldsymbol {P} ^ {t - 1} = \\dots = \\pi \\boldsymbol {P} = \\pi .",
+          "image_source": "../../raw/pages_0337-0352/images/page_345_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.818,
+            0.879,
+            0.913
+          ],
+          "content": "例2 我们来说明带有两个反射壁的随机游动是遍历的，并求其极限分布（平稳分布）。有两个反射壁的随机游动类似 §1 例3，见图13-3。差别在于当 $X_{t}$ 到达反射壁0或5时停留或被反射的概率各为 $1 / 2$ 。于是 $X_{t}$ 的一步转移概率矩阵为"
+        }
+      ]
+    },
+    {
+      "page_idx": 346,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.134,
+            0.053,
+            0.201,
+            0.066
+          ],
+          "content": "· 332 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.397,
+            0.05,
+            0.589,
+            0.066
+          ],
+          "content": "第十三章 马尔可夫链"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.09,
+            0.867,
+            0.231
+          ],
+          "content": "\\boldsymbol {P} = \\left[ \\begin{array}{c c c c c c} 0. 5 & 0. 5 & 0 & 0 & 0 & 0 \\\\ 0. 5 & 0 & 0. 5 & 0 & 0 & 0 \\\\ 0 & 0. 5 & 0 & 0. 5 & 0 & 0 \\\\ 0 & 0 & 0. 5 & 0 & 0. 5 & 0 \\\\ 0 & 0 & 0 & 0. 5 & 0 & 0. 5 \\\\ 0 & 0 & 0 & 0 & 0. 5 & 0. 5 \\end{array} \\right]. \\tag {3.6}",
+          "image_source": "../../raw/pages_0337-0352/images/page_346_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.24,
+            0.869,
+            0.285
+          ],
+          "content": "为简便计,以符号×来代表转移概率矩阵的正元素.于是由上面的一步转移概率矩阵 P 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.164,
+            0.292,
+            0.823,
+            0.436
+          ],
+          "content": "\\boldsymbol {P} (2) = \\boldsymbol {P} ^ {2} = \\left[ \\begin{array}{c c c c c c} \\times & \\times & 0 & 0 & 0 & 0 \\\\ \\times & 0 & \\times & 0 & 0 & 0 \\\\ 0 & \\times & 0 & \\times & 0 & 0 \\\\ 0 & 0 & \\times & 0 & \\times & 0 \\\\ 0 & 0 & 0 & \\times & 0 & \\times \\\\ 0 & 0 & 0 & 0 & \\times & \\times \\end{array} \\right] \\left[ \\begin{array}{c c c c c c} \\times & \\times & 0 & 0 & 0 & 0 \\\\ \\times & 0 & \\times & 0 & 0 & 0 \\\\ 0 & \\times & 0 & \\times & 0 & 0 \\\\ 0 & 0 & \\times & 0 & \\times & 0 \\\\ 0 & 0 & 0 & \\times & \\times & \\times \\\\ 0 & 0 & 0 & 0 & \\times & \\times \\end{array} \\right]",
+          "image_source": "../../raw/pages_0337-0352/images/page_346_equation_4.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.264,
+            0.441,
+            0.567,
+            0.584
+          ],
+          "content": "= \\left[ \\begin{array}{c c c c c c} \\times & \\times & \\times & 0 & 0 & 0 \\\\ \\times & \\times & 0 & \\times & 0 & 0 \\\\ \\times & 0 & \\times & 0 & \\times & 0 \\\\ 0 & \\times & 0 & \\times & 0 & \\times \\\\ 0 & 0 & \\times & 0 & \\times & \\times \\\\ 0 & 0 & 0 & \\times & \\times & \\times \\end{array} \\right],",
+          "image_source": "../../raw/pages_0337-0352/images/page_346_equation_5.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.134,
+            0.592,
+            0.855,
+            0.884
+          ],
+          "content": "\\begin{array}{l} \\boldsymbol {P} (4) = \\boldsymbol {P} (2) \\boldsymbol {P} (2) = \\left[ \\begin{array}{c c c c c c} \\times & \\times & \\times & 0 & 0 & 0 \\\\ \\times & \\times & 0 & \\times & 0 & 0 \\\\ \\times & 0 & \\times & 0 & \\times & 0 \\\\ 0 & \\times & 0 & \\times & 0 & \\times \\\\ 0 & 0 & \\times & 0 & \\times & \\times \\\\ 0 & 0 & 0 & \\times & \\times & \\times \\end{array} \\right] \\left[ \\begin{array}{c c c c c c} \\times & \\times & \\times & 0 & 0 & 0 \\\\ \\times & \\times & 0 & \\times & 0 & 0 \\\\ \\times & 0 & \\times & 0 & \\times & 0 \\\\ 0 & \\times & 0 & \\times & 0 & \\times \\\\ 0 & 0 & \\times & 0 & {\\times} & \\times \\\\ 0 & 0 & 0 & \\times & \\times & \\times \\end{array} \\right] \\\\ = \\left[ \\begin{array}{c c c c c c} \\times & \\times & \\times & \\times & \\times & 0 \\\\ \\times & \\times & \\times & \\times & 0 & \\times \\\\ \\times & \\times & \\times & 0 & \\times & \\times \\\\ \\times & \\times & 0 & \\times & \\times & \\times \\\\ \\times & 0 & \\times & \\times & \\times & \\times \\\\ 0 & \\times & \\times & \\times & \\times & \\times \\end{array} \\right], \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0337-0352/images/page_346_equation_6.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 347,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.437,
+            0.05,
+            0.578,
+            0.066
+          ],
+          "content": "§ 3 遍 历 性"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.796,
+            0.053,
+            0.863,
+            0.066
+          ],
+          "content": "· 333 ·"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.159,
+            0.092,
+            0.849,
+            0.376
+          ],
+          "content": "\\begin{array}{l} \\boldsymbol {P} (5) = \\boldsymbol {P} (4) \\boldsymbol {P} = \\left[ \\begin{array}{c c c c c c} \\times & \\times & \\times & \\times & \\times & 0 \\\\ \\times & \\times & \\times & \\times & 0 & \\times \\\\ \\times & \\times & \\times & 0 & \\times & \\times \\\\ \\times & \\times & 0 & \\times & \\times & \\times \\\\ \\times & 0 & \\times & \\times & \\times & \\times \\\\ 0 & \\times & \\times & \\times & \\times & \\times \\end{array} \\right] \\left[ \\begin{array}{c c c c c c} \\times & \\times & 0 & 0 & 0 & 0 \\\\ \\times & 0 & \\times & 0 & 0 & 0 \\\\ 0 & \\times & 0 & \\times & 0 & 0 \\\\ 0 & 0 & \\times & 0 & \\times & 0 \\\\ 0 & 0 & 0 & \\times & 0 & \\times \\\\ 0 & 0 & 0 & 0 & \\times & \\times \\end{array} \\right] \\\\ = \\left[ \\begin{array}{c c c c c c} \\times & \\times & \\times & \\times & \\times & \\times \\\\ \\times & \\times & \\times & \\times & \\times & \\times \\\\ \\times & \\times & \\times & \\times & \\times & \\times \\\\ \\times & \\times & \\times & \\times & \\times & \\times \\\\ \\times & \\times & \\times & \\times & \\times & \\times \\\\ \\times & \\times & \\times & \\times & \\times & \\times \\end{array} \\right], \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0337-0352/images/page_347_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.382,
+            0.879,
+            0.424
+          ],
+          "content": "即 $P(5)$ 无零元. 由上述定理可知带有两个反射壁的随机游动是遍历的. 再根据 (3.3) 和 (3.5) 式, 写出极限分布 $\\pi = (\\pi_0, \\pi_1, \\pi_2, \\dots, \\pi_5)$ 满足的方程组"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.368,
+            0.431,
+            0.636,
+            0.597
+          ],
+          "content": "\\begin{array}{l} \\pi_ {0} = 0. 5 (\\pi_ {0} + \\pi_ {1}), \\\\ \\pi_ {1} = 0. 5 \\left(\\pi_ {0} + \\pi_ {2}\\right), \\\\ \\pi_ {2} = 0. 5 \\left(\\pi_ {1} + \\pi_ {3}\\right), \\\\ \\pi_ {3} = 0. 5 \\left(\\pi_ {2} + \\pi_ {4}\\right), \\\\ \\pi_ {4} = 0. 5 (\\pi_ {3} + \\pi_ {5}), \\\\ \\pi_ {5} = 0. 5 (\\pi_ {4} + \\pi_ {5}), \\\\ 1 = \\pi_ {0} + \\pi_ {1} + \\pi_ {2} + \\pi_ {3} + \\pi_ {4} + \\pi_ {5}. \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0337-0352/images/page_347_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.602,
+            0.879,
+            0.644
+          ],
+          "content": "先由前6个方程解得 $\\pi_0 = \\pi_1 = \\pi_2 = \\pi_3 = \\pi_4 = \\pi_5$ .将它们代入归一条件（即最后一个方程），得极限分布为 $\\pi = (1 / 6,1 / 6,1 / 6,1 / 6,1 / 6,1 / 6)$ □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.65,
+            0.879,
+            0.715
+          ],
+          "content": "例3 再来研究 §1 例4中排队模型的遍历性. 由(1.6)式给出的一步转移概率矩阵 $\\pmb{P}$ 可算得 $P(3) = P^3$ 无零元. 由本节定理知排队模型是遍历的. 其极限分布 $\\pi = (\\pi_0, \\pi_1, \\pi_2, \\pi_3)$ 满足方程组"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.24,
+            0.72,
+            0.767,
+            0.838
+          ],
+          "content": "\\left\\{ \\begin{array}{l} \\pi_ {0} = (1 - q) \\pi_ {0} + p (1 - q) \\pi_ {1}, \\\\ \\pi_ {1} = q \\pi_ {0} + [ p q + (1 - p) (1 - q) ] \\pi_ {1} + p (1 - q) \\pi_ {2}, \\\\ \\pi_ {2} = q (1 - p) \\pi_ {1} + [ p q + (1 - p) (1 - q) ] \\pi_ {2} + p (1 - q) \\pi_ {3}, \\\\ \\pi_ {3} = q (1 - p) \\pi_ {2} + [ p q + (1 - p) ] \\pi_ {3}, \\\\ \\pi_ {0} + \\pi_ {1} + \\pi_ {2} + \\pi_ {3} = 1. \\end{array} \\right.",
+          "image_source": "../../raw/pages_0337-0352/images/page_347_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.844,
+            0.277,
+            0.861
+          ],
+          "content": "解之,得唯一解"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.284,
+            0.868,
+            0.721,
+            0.911
+          ],
+          "content": "\\begin{array}{l} \\pi_ {0} = p ^ {3} (1 - q) ^ {3} / C, \\quad \\pi_ {1} = p ^ {2} q (1 - q) ^ {2} / C, \\\\ \\pi_ {2} = p q ^ {2} (1 - q) (1 - p) / C, \\quad \\pi_ {3} = q ^ {3} (1 - p) ^ {2} / C, \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0337-0352/images/page_347_equation_9.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 348,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.134,
+            0.055,
+            0.199,
+            0.067
+          ],
+          "content": "· 334 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.396,
+            0.051,
+            0.588,
+            0.067
+          ],
+          "content": "第十三章 马尔可夫链"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.09,
+            0.743,
+            0.111
+          ],
+          "content": "其中 $C = p^3 (1 - q)^3 +p^2 q(1 - q)^2 +pq^2 (1 - q)(1 - p) + q^3 (1 - p)^2.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.115,
+            0.867,
+            0.184
+          ],
+          "content": "假若此例中，$p = q = 1 / 2$，则可算得极限分布 $\\pi = (1 / 7, 2 / 7, 2 / 7, 2 / 7)$. 这告诉我们经过相当长一段时间后，系统中无人的情形约占 $14\\%$ 的时间，而系统中有一人、二人、三人的情形约各占 $29\\%$ 的时间."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.188,
+            0.867,
+            0.233
+          ],
+          "content": "例 4(无遍历性) 并非所有马尔可夫链都具有遍历性. 设一马尔可夫链的一步转移概率矩阵为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.379,
+            0.237,
+            0.651,
+            0.329
+          ],
+          "content": "\\boldsymbol {P} = \\left[ \\begin{array}{c c c c} 0 & 1 / 2 & 0 & 1 / 2 \\\\ 1 / 2 & 0 & 1 / 2 & 0 \\\\ 0 & 1 / 2 & 0 & 1 / 2 \\\\ 1 / 2 & 0 & 1 / 2 & 0 \\end{array} \\right],",
+          "image_source": "../../raw/pages_0337-0352/images/page_348_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.336,
+            0.306,
+            0.355
+          ],
+          "content": "试讨论它的遍历性."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.36,
+            0.301,
+            0.379
+          ],
+          "content": "解 容易算得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.318,
+            0.383,
+            0.665,
+            0.475
+          ],
+          "content": "\\boldsymbol {P} (2) = \\boldsymbol {P} ^ {2} = \\left[ \\begin{array}{c c c c} 1 / 2 & 0 & 1 / 2 & 0 \\\\ 0 & 1 / 2 & 0 & 1 / 2 \\\\ 1 / 2 & 0 & 1 / 2 & 0 \\\\ 0 & 1 / 2 & 0 & 1 / 2 \\end{array} \\right].",
+          "image_source": "../../raw/pages_0337-0352/images/page_348_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.48,
+            0.87,
+            0.53
+          ],
+          "content": "进一步可以验证: 当 n 为奇数时,  $\\boldsymbol{P}(n)=\\boldsymbol{P}(1)=\\boldsymbol{P}; n$  为偶数时,  $\\boldsymbol{P}(n)=\\boldsymbol{P}(2)$ . 这表明对任一固定的 j=1,2,3,4, 极限  $\\lim_{n\\to\\infty}p_{ij}(n)$  都不存在. 因此此链不具遍历性."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.167,
+            0.566,
+            0.22,
+            0.587
+          ],
+          "level": 2,
+          "content": "小结"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.607,
+            0.871,
+            0.669
+          ],
+          "content": "马尔可夫链的主要特征是马氏性. 通俗地说就是将来的状态只与其现在的状态有关, 而不依赖于它过去的状态. 本章主要讨论有平稳转移概率的马尔可夫链, 即转移概率与时间无关, 这样的马尔可夫链称为时齐的. 它的性质完全由其一步转移概率矩阵 $\\pmb{P}$ 决定."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.673,
+            0.872,
+            0.758
+          ],
+          "content": "接下来我们讨论了多步转移概率. 这里的主要工具是科尔莫戈罗夫一切普曼方程. 作为特例, 时齐马尔可夫链的 $n$ 步转移概率矩阵 $\\pmb{P}(n) = \\pmb{P}^n$, 即是其一步转移概率矩阵的 $n$ 次方. 转移概率矩阵的重要性在于时齐马尔可夫链的有限维分布同样地完全由初始分布和转移概率矩阵所确定. 因而, 转移概率矩阵决定了马尔可夫链的统计规律."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.762,
+            0.873,
+            0.848
+          ],
+          "content": "如果时齐马尔可夫链的 $n$ 步转移概率矩阵 $\\pmb{P}(n)$ 当 $n$ 增加时趋向一个固定的极限，则称该链具有遍历性.在 §3 定理中我们给出了时齐马尔可夫链具有遍历性的一个充分条件.在此充分条件下马尔可夫链的极限分布 $\\pi$ 与平稳分布相同，并可方便地通过矩阵方程 $\\pi = \\pi P$ 与归一条件解出."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.125,
+            0.853,
+            0.285,
+            0.87
+          ],
+          "level": 2,
+          "content": "■ 重要术语及主题"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.874,
+            0.872,
+            0.915
+          ],
+          "content": "马尔可夫链 马氏性(无后效性) 状态空间 时齐性 转移概率 转移概率矩阵 科尔莫戈罗夫一切普曼方程 遍历性 极限分布 平稳分布"
+        }
+      ]
+    },
+    {
+      "page_idx": 349,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.463,
+            0.05,
+            0.54,
+            0.065
+          ],
+          "content": "习题"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.793,
+            0.051,
+            0.858,
+            0.064
+          ],
+          "content": "· 335 ·"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.175,
+            0.097,
+            0.225,
+            0.117
+          ],
+          "level": 2,
+          "content": "习题"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.139,
+            0.876,
+            0.2
+          ],
+          "content": "1. 从数 $1,2,\\dots ,N$ 中任取一数，记为 $X_{1}$ ；再从 $1,2,\\dots ,X_{1}$ 中任取一数，记为 $X_{2}$ ；如此继续，从 $1,2,\\dots ,X_{n - 1}$ 中任取一数，记为 $X_{n}$. 说明 $\\{X_{n},n\\geqslant 1\\}$ 构成一时齐马尔可夫链，并写出它的状态空间和一步转移概率矩阵."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.206,
+            0.877,
+            0.285
+          ],
+          "content": "2. 设  $X_{0}=1, X_{1}, X_{2}, \\cdots, X_{n}, \\cdots$  是相互独立且都以概率  $p(0 < p < 1)$  取值 1，以概率 q = 1 - p 取值 0 的随机变量序列。令  $S_{n} = \\sum_{k=0}^{n} X_{k}$ 。证明  $\\{S_{n}, n \\geqslant 0\\}$  构成一马尔可夫链，并写出它的状态空间和一步转移概率矩阵。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.29,
+            0.607,
+            0.307
+          ],
+          "content": "3.（传染模型）考虑某种传染病在 $N$ 个人中传染，假设"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.312,
+            0.863,
+            0.326
+          ],
+          "content": "(1) 在每个单位时间内此 N 个人中恰有两人互相接触,且一切成对的接触是等可能的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.335,
+            0.571,
+            0.348
+          ],
+          "content": "(2) 当健康人与患者接触时, 被传染上的概率是  $\\alpha$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.356,
+            0.726,
+            0.37
+          ],
+          "content": "(3) 患者康复的概率为 0, 健康人如不与患者接触, 得病的概率也是 0."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.377,
+            0.874,
+            0.416
+          ],
+          "content": "以 $X_{n}$ 表示第 $n$ 个单位时间内的患者人数. 试说明这种传染过程, 即 $\\{X_{n}, n \\geqslant 0\\}$ 是一马尔可夫链, 并写出它的状态空间和一步转移概率矩阵."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.422,
+            0.876,
+            0.461
+          ],
+          "content": "4. 设马尔可夫链 $\\{X_{n}, n \\geqslant 0\\}$ 的状态空间为 $I = \\{1, 2, 3\\}$，初始分布为 $p_{1}(0) = 1/4, p_{2}(0) = 1/2, p_{3}(0) = 1/4$，一步转移概率矩阵为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.406,
+            0.466,
+            0.594,
+            0.525
+          ],
+          "content": "\\boldsymbol {P} = \\left[ \\begin{array}{c c c} 1 / 4 & 3 / 4 & 0 \\\\ 1 / 3 & 1 / 3 & 1 / 3 \\\\ 0 & 1 / 4 & 3 / 4 \\end{array} \\right].",
+          "image_source": "../../raw/pages_0337-0352/images/page_349_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.532,
+            0.455,
+            0.546
+          ],
+          "content": "(1) 计算  $P\\{X_{0}=1, X_{1}=2, X_{2}=2\\}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.554,
+            0.526,
+            0.569
+          ],
+          "content": "(2) 证明 $P\\{X_1 = 2, X_2 = 2 \\mid X_0 = 1\\} = p_{12} p_{22}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.578,
+            0.47,
+            0.593
+          ],
+          "content": "(3) 计算  $p_{12}(2)=P\\{X_{2}=2 \\mid X_{0}=1\\}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.602,
+            0.401,
+            0.616
+          ],
+          "content": "(4) 计算  $p_{2}(2)=P\\{X_{2}=2\\}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.624,
+            0.576,
+            0.639
+          ],
+          "content": "5. 说明如何得到 §1 例4中的转移概率 $p_{23}$ 和 $p_{34}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.646,
+            0.601,
+            0.661
+          ],
+          "content": "6. 用 §1 例 4 中转移概率 $p_{ij} (i \\neq j)$ 导出转移概率 $p_{ii}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.668,
+            0.324,
+            0.682
+          ],
+          "content": "7. 证明公式(3.1)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.129,
+            0.689,
+            0.878,
+            0.771
+          ],
+          "content": "8. 设任意相继的两天中, 雨天转晴天的概率为 $1/3$, 晴天转雨天的概率为 $1/2$, 任一天晴或雨互为逆事件, 以 0 表示晴天状态, 以 1 表示雨天状态, $X_{n}$ 表示第 $n$ 天的状态 (0 或 1). 试写出马尔可夫链 $\\{X_{n}, n \\geqslant 1\\}$ 的一步转移概率矩阵. 又若已知 5 月 1 日为晴天, 问 5 月 3 日为晴天, 5 月 5 日为雨天的概率各等于多少?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.129,
+            0.776,
+            0.878,
+            0.815
+          ],
+          "content": "9. 在一计算系统中, 每一循环具有误差的概率取决于先前一个循环是否有误差. 以 0 表示误差状态, 以 1 表示无误差状态. 设状态的一步转移概率矩阵为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.422,
+            0.82,
+            0.584,
+            0.869
+          ],
+          "content": "\\boldsymbol {P} = \\left[ \\begin{array}{c c} 0. 7 5 & 0. 2 5 \\\\ 0. 5 & 0. 5 \\end{array} \\right],",
+          "image_source": "../../raw/pages_0337-0352/images/page_349_equation_21.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.874,
+            0.62,
+            0.891
+          ],
+          "content": "试证明相应的时齐马尔可夫链具有遍历性,并求其极限分布."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.169,
+            0.898,
+            0.289,
+            0.914
+          ],
+          "content": "(1) 用定义解."
+        }
+      ]
+    },
+    {
+      "page_idx": 350,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.142,
+            0.05,
+            0.207,
+            0.064
+          ],
+          "content": "· 336 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.405,
+            0.05,
+            0.597,
+            0.066
+          ],
+          "content": "第十三章 马尔可夫链"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.09,
+            0.359,
+            0.106
+          ],
+          "content": "(2) 利用遍历性定理解."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.113,
+            0.542,
+            0.129
+          ],
+          "content": "10. 设时齐马尔可夫链的一步转移概率矩阵为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.327,
+            0.136,
+            0.666,
+            0.197
+          ],
+          "content": "\\boldsymbol {P} = \\left[ \\begin{array}{c c c} q & p & 0 \\\\ q & 0 & p \\\\ 0 & q & p \\end{array} \\right], \\quad q = 1 - p, \\quad p \\in (0, 1).",
+          "image_source": "../../raw/pages_0337-0352/images/page_350_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.201,
+            0.464,
+            0.217
+          ],
+          "content": "试证明此链具有遍历性,并求其极限分布."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.223,
+            0.54,
+            0.239
+          ],
+          "content": "11. 设时齐马尔可夫链的一步转移概率矩阵为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.41,
+            0.245,
+            0.584,
+            0.304
+          ],
+          "content": "\\boldsymbol {P} = \\left[ \\begin{array}{c c c} 1 / 2 & 1 / 2 & 0 \\\\ 1 / 2 & 1 / 2 & 0 \\\\ 0 & 0 & 1 \\end{array} \\right],",
+          "image_source": "../../raw/pages_0337-0352/images/page_350_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.31,
+            0.341,
+            0.327
+          ],
+          "content": "试证明此链不具有遍历性."
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2021-08-31T17:59:04+08:00",
+      "modified_at": "2021-09-01T15:49:01+08:00",
+      "producer_application": "Epson Scan 2",
+      "page_count": 443,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 0,
+          "width_pt": 480.0,
+          "height_pt": 657.0
+        },
+        {
+          "page_idx": 1,
+          "width_pt": 479.0,
+          "height_pt": 656.0
+        },
+        {
+          "page_idx": 2,
+          "width_pt": 479.0,
+          "height_pt": 656.0
+        },
+        {
+          "page_idx": 3,
+          "width_pt": 480.0,
+          "height_pt": 654.0
+        },
+        {
+          "page_idx": 4,
+          "width_pt": 479.0,
+          "height_pt": 654.0
+        },
+        {
+          "page_idx": 5,
+          "width_pt": 480.0,
+          "height_pt": 650.0
+        },
+        {
+          "page_idx": 6,
+          "width_pt": 479.0,
+          "height_pt": 650.0
+        },
+        {
+          "page_idx": 7,
+          "width_pt": 480.0,
+          "height_pt": 650.0
+        },
+        {
+          "page_idx": 8,
+          "width_pt": 479.0,
+          "height_pt": 650.0
+        },
+        {
+          "page_idx": 9,
+          "width_pt": 479.0,
+          "height_pt": 650.0
+        },
+        {
+          "page_idx": 10,
+          "width_pt": 478.0,
+          "height_pt": 650.0
+        },
+        {
+          "page_idx": 11,
+          "width_pt": 480.0,
+          "height_pt": 650.0
+        },
+        {
+          "page_idx": 12,
+          "width_pt": 479.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 13,
+          "width_pt": 479.0,
+          "height_pt": 651.0
+        },
+        {
+          "page_idx": 14,
+          "width_pt": 478.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 15,
+          "width_pt": 479.0,
+          "height_pt": 649.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

@@ -1,0 +1,3562 @@
+{
+  "pages": [
+    {
+      "page_idx": 80,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.136,
+            0.05,
+            0.191,
+            0.063
+          ],
+          "content": "· 66 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.361,
+            0.048,
+            0.628,
+            0.065
+          ],
+          "content": "第三章 多维随机变量及其分布"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.334,
+            0.092,
+            0.645,
+            0.135
+          ],
+          "content": "F _ {X} (x) = F (x, \\infty) = \\sum_ {x _ {i} \\leqslant x} \\sum_ {j = 1} ^ {\\infty} p _ {i j}.",
+          "image_source": "images/page_80_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.137,
+            0.527,
+            0.157
+          ],
+          "content": "与第二章(3.2)式比较,知道X的分布律为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.315,
+            0.172,
+            0.664,
+            0.214
+          ],
+          "content": "P \\{X = x _ {i} \\} = \\sum_ {j = 1} ^ {\\infty} p _ {i j}, \\quad i = 1, 2, \\dots .",
+          "image_source": "images/page_80_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.223,
+            0.308,
+            0.242
+          ],
+          "content": "同样， $Y$ 的分布律为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.318,
+            0.251,
+            0.664,
+            0.291
+          ],
+          "content": "P \\{Y = y _ {j} \\} = \\sum_ {i = 1} ^ {\\infty} p _ {i j}, \\quad j = 1, 2, \\dots .",
+          "image_source": "images/page_80_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.296,
+            0.697,
+            0.337
+          ],
+          "content": "记 $p_{i\\cdot} = \\sum_{j=1}^{\\infty} p_{ij} = P\\{X = x_i\\}, \\quad i = 1,2,\\cdots,$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.286,
+            0.342,
+            0.695,
+            0.381
+          ],
+          "content": "p _ {. j} = \\sum_ {i = 1} ^ {\\infty} p _ {i j} = P \\{Y = y _ {j} \\}, \\quad j = 1, 2, \\dots ,",
+          "image_source": "images/page_80_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.383,
+            0.869,
+            0.452
+          ],
+          "content": "分别称 $p_i$. $(i = 1,2,\\dots)$ 和 $p_{.j}(j = 1,2,\\dots)$ 为 $(X,Y)$ 关于 $X$ 和关于 $Y$ 的边缘分布律（注意，记号 $p_i$ 中的“·”表示 $p_i$ 是由 $p_{ij}$ 关于 $j$ 求和后得到的；同样，$p_{.j}$ 是由 $p_{ij}$ 关于 $i$ 求和后得到的）."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.457,
+            0.748,
+            0.477
+          ],
+          "content": "对于连续型随机变量 $(X,Y)$ ，设它的概率密度为 $f(x,y)$ ，由于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.268,
+            0.481,
+            0.711,
+            0.517
+          ],
+          "content": "F _ {X} (x) = F (x, \\infty) = \\int_ {- \\infty} ^ {x} \\left[ \\int_ {- \\infty} ^ {\\infty} f (x, y) \\mathrm{d} y \\right] \\mathrm{d} x,",
+          "image_source": "images/page_80_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.521,
+            0.749,
+            0.541
+          ],
+          "content": "由第二章(4.1)式知道， $X$ 是一个连续型随机变量，且其概率密度为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.548,
+            0.864,
+            0.58
+          ],
+          "content": "f _ {X} (x) = \\int_ {- \\infty} ^ {\\infty} f (x, y) \\mathrm{d} y. \\tag {2.3}",
+          "image_source": "images/page_80_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.586,
+            0.582,
+            0.606
+          ],
+          "content": "同样， $Y$ 也是一个连续型随机变量，其概率密度为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.613,
+            0.864,
+            0.645
+          ],
+          "content": "f _ {Y} (y) = \\int_ {- \\infty} ^ {\\infty} f (x, y) \\mathrm{d} x. \\tag {2.4}",
+          "image_source": "images/page_80_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.651,
+            0.733,
+            0.671
+          ],
+          "content": "分别称 $f_{X}(x), f_{Y}(y)$ 为 $(X, Y)$ 关于 $X$ 和关于 $Y$ 的边缘概率密度."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.116,
+            0.675,
+            0.868,
+            0.744
+          ],
+          "content": "例 1 一整数 N 等可能地在  $1,2,3,\\cdots,10$  十个值中取一个值. 设  $D=D(N)$  是能整除 N 的正整数的个数,  $F=F(N)$  是能整除 N 的素数的个数 (注意 1 不是素数). 试写出 D 和 F 的联合分布律, 并求边缘分布律."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.159,
+            0.748,
+            0.691,
+            0.768
+          ],
+          "content": "解 先将试验的样本空间及 $D, F$ 取值的情况列出如下:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.116,
+            0.78,
+            0.868,
+            0.891
+          ],
+          "content": "| 样本点 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| D | 1 | 2 | 2 | 3 | 2 | 4 | 2 | 4 | 3 | 4 |\n| F | 0 | 1 | 1 | 1 | 1 | 2 | 1 | 1 | 1 | 2 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_80_table_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 81,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.445,
+            0.049,
+            0.587,
+            0.066
+          ],
+          "content": "§ 2 边缘分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.815,
+            0.052,
+            0.871,
+            0.066
+          ],
+          "content": "· 67 ·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.089,
+            0.889,
+            0.133
+          ],
+          "content": "$D$ 所有可能取的值为 $1,2,3,4;F$ 所有可能取的值为 $0,1,2$. 容易得到 $(D,F)$ 取 $(i,j),i = 1,2,3,4,j = 0,1,2$ 的概率，例如"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.263,
+            0.14,
+            0.763,
+            0.175
+          ],
+          "content": "P \\{D = 1, F = 0 \\} = \\frac {1}{1 0}, \\quad P \\{D = 2, F = 1 \\} = \\frac {4}{1 0},",
+          "image_source": "images/page_81_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.18,
+            0.646,
+            0.201
+          ],
+          "content": "可得 $D$ 和 $F$ 的联合分布律及边缘分布律如下表所示:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.137,
+            0.212,
+            0.89,
+            0.414
+          ],
+          "content": "| $F\\ \\ D$ | 1 | 2 | 3 | 4 | $P\\{F=j\\}$ |\n| --- | --- | --- | --- | --- | --- |\n| 0 | $\\frac{1}{10}$ | 0 | 0 | 0 | $\\frac{1}{10}$ |\n| 1 | 0 | $\\frac{4}{10}$ | $\\frac{2}{10}$ | $\\frac{1}{10}$ | $\\frac{7}{10}$ |\n| 2 | 0 | 0 | 0 | $\\frac{2}{10}$ | $\\frac{2}{10}$ |\n| $P\\{D=i\\}$ | $\\frac{1}{10}$ | $\\frac{4}{10}$ | $\\frac{2}{10}$ | $\\frac{3}{10}$ | 1 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_81_table_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.433,
+            0.295,
+            0.453
+          ],
+          "content": "即有边缘分布律"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.23,
+            0.466,
+            0.501,
+            0.539
+          ],
+          "content": "| D | 1 | 2 | 3 | 4 |\n| --- | --- | --- | --- | --- |\n| $p_k$ | $\\frac{1}{10}$ | $\\frac{4}{10}$ | $\\frac{2}{10}$ | $\\frac{3}{10}$ |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_81_table_7.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.553,
+            0.467,
+            0.766,
+            0.539
+          ],
+          "content": "| F | 0 | 1 | 2 |\n| --- | --- | --- | --- |\n| $p_k$ | $\\frac{1}{10}$ | $\\frac{7}{10}$ | $\\frac{2}{10}$ |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_81_table_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.56,
+            0.62,
+            0.628
+          ],
+          "content": "我们常常将边缘分布律写在联合分布律表格的边缘上,如上表所示.这就是“边缘分布律”这个名词的来源."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.634,
+            0.62,
+            0.676
+          ],
+          "content": "例 2 设随机变量 X 和 Y 具有联合概率密度 (图 3-5)"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.248,
+            0.683,
+            0.506,
+            0.726
+          ],
+          "content": "f (x, y) = \\left\\{ \\begin{array}{l l} 6, & x ^ {2} \\leqslant y \\leqslant x, \\\\ 0, & \\text {其他}. \\end{array} \\right.",
+          "image_source": "images/page_81_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.731,
+            0.435,
+            0.751
+          ],
+          "content": "求边缘概率密度 $f_{X}(x), f_{Y}(y)$."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.636,
+            0.562,
+            0.867,
+            0.716
+          ],
+          "sub_type": "text_image",
+          "content": "y\ny=x\ny=x²\nO\nx",
+          "captions": [
+            {
+              "bbox": [
+                0.717,
+                0.723,
+                0.784,
+                0.74
+              ],
+              "content": "图3-5"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_81_image_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.178,
+            0.755,
+            0.205,
+            0.773
+          ],
+          "content": "解"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.202,
+            0.78,
+            0.807,
+            0.841
+          ],
+          "content": "f _ {X} (x) = \\int_ {- \\infty} ^ {\\infty} f (x, y) \\mathrm{d} y = \\left\\{ \\begin{array}{l l}  \\int_ {x ^ {2}} ^ {x} 6 \\mathrm{d} y = 6 (x - x ^ {2})  , & 0 \\leqslant x \\leqslant 1  , \\\\ 0  , & \\text {其他}. \\end{array} \\right.",
+          "image_source": "images/page_81_equation_16.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.205,
+            0.849,
+            0.813,
+            0.912
+          ],
+          "content": "f _ {Y} (y) = \\int_ {- \\infty} ^ {\\infty} f (x, y) \\mathrm{d} x = \\left\\{ \\begin{array}{l l}  \\int_ {y} ^ {\\sqrt {y}} 6 \\mathrm{d} x = 6 (\\sqrt {y} - y), & 0 \\leqslant y \\leqslant 1, \\\\ 0, & \\text {其他}. \\end{array} \\right.",
+          "image_source": "images/page_81_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.693,
+            0.823,
+            0.746,
+            0.842
+          ],
+          "content": "其他."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.859,
+            0.897,
+            0.884,
+            0.915
+          ],
+          "content": "□"
+        }
+      ]
+    },
+    {
+      "page_idx": 82,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.128,
+            0.052,
+            0.183,
+            0.065
+          ],
+          "content": "· 68 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.352,
+            0.049,
+            0.621,
+            0.066
+          ],
+          "content": "第三章 多维随机变量及其分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.155,
+            0.089,
+            0.573,
+            0.109
+          ],
+          "content": "例3 设二维随机变量 $(X,Y)$ 的概率密度为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.248,
+            0.116,
+            0.726,
+            0.2
+          ],
+          "content": "\\begin{array}{l} f (x, y) = \\frac {1}{2 \\pi \\sigma_ {1} \\sigma_ {2} \\sqrt {1 - \\rho^ {2}}} \\exp \\left\\{\\frac {- 1}{2 (1 - \\rho^ {2})} \\left[ \\frac {(x - \\mu_ {1}) ^ {2}}{\\sigma_ {1} ^ {2}} \\right. \\right. \\\\ \\left. - 2 \\rho \\frac {\\left(x - \\mu_ {1}\\right) \\left(y - \\mu_ {2}\\right)}{\\sigma_ {1} \\sigma_ {2}} + \\frac {\\left(y - \\mu_ {2}\\right) ^ {2}}{\\sigma_ {2} ^ {2}} \\right] \\Bigg \\}, \\\\ \\end{array}",
+          "image_source": "images/page_82_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.206,
+            0.864,
+            0.277
+          ],
+          "content": "其中 $\\mu_1, \\mu_2, \\sigma_1, \\sigma_2, \\rho$ 都是常数，且 $\\sigma_1 > 0, \\sigma_2 > 0, -1 < \\rho < 1$. 我们称 $(X, Y)$ 为服从参数为 $\\mu_1, \\mu_2, \\sigma_1, \\sigma_2, \\rho$ 的二维正态分布（这五个参数的意义将在下一章说明），记为 $(X, Y) \\sim N(\\mu_1, \\mu_2, \\sigma_1^2, \\sigma_2^2, \\rho)$. 试求二维正态随机变量的边缘概率密度."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.282,
+            0.49,
+            0.316
+          ],
+          "content": "解 $f_{X}(x) = \\int_{-\\infty}^{\\infty}f(x,y)\\mathrm{d}y$ ，由于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.278,
+            0.324,
+            0.724,
+            0.404
+          ],
+          "content": "\\begin{array}{l} \\frac {(y - \\mu_ {2}) ^ {2}}{\\sigma_ {2} ^ {2}} - 2 \\rho \\frac {(x - \\mu_ {1}) (y - \\mu_ {2})}{\\sigma_ {1} \\sigma_ {2}} \\\\ = \\left(\\frac {y - \\mu_ {2}}{\\sigma_ {2}} - \\rho \\frac {x - \\mu_ {1}}{\\sigma_ {1}}\\right) ^ {2} - \\rho^ {2} \\frac {(x - \\mu_ {1}) ^ {2}}{\\sigma_ {1} ^ {2}}, \\\\ \\end{array}",
+          "image_source": "images/page_82_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.411,
+            0.16,
+            0.43
+          ],
+          "content": "于是"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.205,
+            0.435,
+            0.769,
+            0.484
+          ],
+          "content": "f _ {X} (x) = \\frac {1}{2 \\pi \\sigma_ {1} \\sigma_ {2} \\sqrt {1 - \\rho^ {2}}} \\mathrm{e} ^ {- \\frac {(x - \\mu_ {1}) ^ {2}}{2 \\sigma_ {1} ^ {2}}} \\int_ {- \\infty} ^ {\\infty} \\mathrm{e} ^ {- \\frac {1}{2 (1 - \\rho^ {2})} \\left(\\frac {y - \\mu_ {2}}{\\sigma_ {2}} - \\rho \\frac {x - \\mu_ {1}}{\\sigma_ {1}}\\right) ^ {2}} \\mathrm{d} y.",
+          "image_source": "images/page_82_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.496,
+            0.138,
+            0.515
+          ],
+          "content": "令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.325,
+            0.522,
+            0.647,
+            0.565
+          ],
+          "content": "t = \\frac {1}{\\sqrt {1 - \\rho^ {2}}} \\Big (\\frac {y - \\mu_ {2}}{\\sigma_ {2}} - \\rho \\frac {x - \\mu_ {1}}{\\sigma_ {1}} \\Big),",
+          "image_source": "images/page_82_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.568,
+            0.159,
+            0.587
+          ],
+          "content": "则有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.327,
+            0.593,
+            0.65,
+            0.635
+          ],
+          "content": "f _ {X} (x) = \\frac {1}{2 \\pi \\sigma_ {1}} \\mathrm{e} ^ {- \\frac {(x - \\mu_ {1}) ^ {2}}{2 \\sigma_ {1} ^ {2}}} \\int_ {- \\infty} ^ {\\infty} \\mathrm{e} ^ {- t ^ {2 / 2}} \\mathrm{d} t,",
+          "image_source": "images/page_82_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.647,
+            0.695,
+            0.692
+          ],
+          "content": "即 $f_{X}(x) = \\frac{1}{\\sqrt{2\\pi}\\sigma_{1}}\\mathrm{e}^{-\\frac{(x - \\mu_{1})^{2}}{2\\sigma_{1}^{2}}},\\quad -\\infty < x < \\infty .$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.704,
+            0.16,
+            0.723
+          ],
+          "content": "同理"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.277,
+            0.729,
+            0.692,
+            0.776
+          ],
+          "content": "f _ {Y} (y) = \\frac {1}{\\sqrt {2 \\pi} \\sigma_ {2}} \\mathrm{e} ^ {- \\frac {(y - \\mu_ {2}) ^ {2}}{2 \\sigma_ {2} ^ {2}}}, \\quad - \\infty <   y <   \\infty .",
+          "image_source": "images/page_82_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.787,
+            0.864,
+            0.882
+          ],
+          "content": "我们看到二维正态分布的两个边缘分布都是一维正态分布，并且都不依赖于参数 $\\rho$ ，亦即对于给定的 $\\mu_1, \\mu_2, \\sigma_1, \\sigma_2$ ，不同的 $\\rho$ 对应不同的二维正态分布，它们的边缘分布却都是一样的。这一事实表明，单由关于 $X$ 和关于 $Y$ 的边缘分布，一般来说是不能确定随机变量 $X$ 和 $Y$ 的联合分布的。"
+        }
+      ]
+    },
+    {
+      "page_idx": 83,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.443,
+            0.048,
+            0.584,
+            0.065
+          ],
+          "content": "§ 3 条件分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.813,
+            0.051,
+            0.869,
+            0.065
+          ],
+          "content": "· 69 ·"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.407,
+            0.111,
+            0.623,
+            0.136
+          ],
+          "level": 2,
+          "content": "§ 3 条件分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.162,
+            0.673,
+            0.182
+          ],
+          "content": "我们由条件概率很自然地引出条件概率分布的概念."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.187,
+            0.611,
+            0.206
+          ],
+          "content": "设 $(X,Y)$ 是二维离散型随机变量,其分布律为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.322,
+            0.212,
+            0.694,
+            0.232
+          ],
+          "content": "P \\{X = x _ {i}, Y = y _ {j} \\} = p _ {i j}, \\quad i, j = 1, 2, \\dots .",
+          "image_source": "images/page_83_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.235,
+            0.568,
+            0.255
+          ],
+          "content": "$(X,Y)$ 关于 $X$ 和关于 $Y$ 的边缘分布律分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.263,
+            0.714,
+            0.306
+          ],
+          "content": "P \\{X = x _ {i} \\} = p _ {i.} = \\sum_ {j = 1} ^ {\\infty} p _ {i j}, \\quad i = 1, 2, \\dots ,",
+          "image_source": "images/page_83_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.304,
+            0.309,
+            0.71,
+            0.348
+          ],
+          "content": "P \\{Y = y _ {j} \\} = p _ {. j} = \\sum_ {i = 1} ^ {\\infty} p _ {i j}, \\quad j = 1, 2, \\dots .",
+          "image_source": "images/page_83_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.351,
+            0.885,
+            0.393
+          ],
+          "content": "设 $p_{.j} > 0$ ，我们来考虑在事件 $\\{Y = y_j\\}$ 已发生的条件下事件 $\\{X = x_i\\}$ 发生的概率，也就是来求事件"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.371,
+            0.399,
+            0.651,
+            0.42
+          ],
+          "content": "\\{X = x _ {i} \\mid Y = y _ {j} \\}, \\quad i = 1, 2, \\dots",
+          "image_source": "images/page_83_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.424,
+            0.427,
+            0.443
+          ],
+          "content": "的概率.由条件概率公式,可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.23,
+            0.448,
+            0.784,
+            0.488
+          ],
+          "content": "P \\{X = x _ {i} \\mid Y = y _ {j} \\} = \\frac {P \\{X = x _ {i} , Y = y _ {j} \\}}{P \\{Y = y _ {j} \\}} = \\frac {p _ {i j}}{p _ {\\cdot j}}, \\quad i = 1, 2, \\dots .",
+          "image_source": "images/page_83_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.492,
+            0.544,
+            0.511
+          ],
+          "content": "易知上述条件概率具有分布律的性质:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.18,
+            0.516,
+            0.415,
+            0.536
+          ],
+          "content": "1 ^ {\\circ} P \\{X = x _ {i} | Y = y _ {j} \\} \\geqslant 0.",
+          "image_source": "images/page_83_equation_14.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.178,
+            0.543,
+            0.773,
+            0.584
+          ],
+          "content": "2 ^ {\\circ} \\sum_ {i = 1} ^ {\\infty} P \\{X = x _ {i} \\mid Y = y _ {j} \\} = \\sum_ {i = 1} ^ {\\infty} \\frac {p _ {i j}}{p _ {\\cdot j}} = \\frac {1}{p _ {\\cdot j}} \\sum_ {i = 1} ^ {\\infty} p _ {i j} = \\frac {p _ {\\cdot j}}{p _ {\\cdot j}} = 1.",
+          "image_source": "images/page_83_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.587,
+            0.387,
+            0.606
+          ],
+          "content": "于是我们引入以下的定义."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.612,
+            0.883,
+            0.654
+          ],
+          "content": "定义 设 $(X, Y)$ 是二维离散型随机变量，对于固定的 $j$，若 $P\\{Y = y_j\\} > 0$ 则称"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.2,
+            0.661,
+            0.884,
+            0.7
+          ],
+          "content": "P \\{X = x _ {i}   |   Y = y _ {j} \\} = \\frac {P \\{X = x _ {i} , Y = y _ {j} \\}}{P \\{Y = y _ {j} \\}} = \\frac {p _ {i j}}{p _ {\\cdot j}}, \\quad i = 1, 2, \\dots \\tag {3.1}",
+          "image_source": "images/page_83_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.704,
+            0.571,
+            0.723
+          ],
+          "content": "为在 $Y = y_{j}$ 条件下随机变量 $X$ 的条件分布律."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.178,
+            0.728,
+            0.584,
+            0.747
+          ],
+          "content": "同样，对于固定的 $i$ ，若 $P\\{X = x_i\\} >0$ ，则称"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.2,
+            0.753,
+            0.884,
+            0.791
+          ],
+          "content": "P \\{Y = y _ {j} \\mid X = x _ {i} \\} = \\frac {P \\{X = x _ {i} , Y = y _ {j} \\}}{P \\{X = x _ {i} \\}} = \\frac {p _ {i j}}{p _ {i}}  , \\quad j = 1, 2, \\dots \\tag {3.2}",
+          "image_source": "images/page_83_equation_21.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.796,
+            0.57,
+            0.815
+          ],
+          "content": "为在 $X = x_{i}$ 条件下随机变量 $Y$ 的条件分布律."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.82,
+            0.886,
+            0.913
+          ],
+          "content": "例1 在一汽车工厂中，一辆汽车有两道工序是由机器人完成的。其一是紧固3只螺栓，其二是焊接2处焊点。以 $X$ 表示由机器人紧固的螺栓中紧固得不良的数目，以 $Y$ 表示由机器人焊接的不良焊点的数目。据积累的资料知 $(X, Y)$ 具有分布律:"
+        }
+      ]
+    },
+    {
+      "page_idx": 84,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.128,
+            0.054,
+            0.185,
+            0.067
+          ],
+          "content": "· 70 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.354,
+            0.051,
+            0.62,
+            0.068
+          ],
+          "content": "第三章 多维随机变量及其分布"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.112,
+            0.09,
+            0.864,
+            0.264
+          ],
+          "content": "| Y\\\\X | 0 | 1 | 2 | 3 | P{Y=j} |\n| --- | --- | --- | --- | --- | --- |\n| 0 | 0.840 | 0.030 | 0.020 | 0.010 | 0.900 |\n| 1 | 0.060 | 0.010 | 0.008 | 0.002 | 0.080 |\n| 2 | 0.010 | 0.005 | 0.004 | 0.001 | 0.020 |\n| P{X=i} | 0.910 | 0.045 | 0.032 | 0.013 | 1.000 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_84_table_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.282,
+            0.864,
+            0.327
+          ],
+          "content": "（1）求在 $X = 1$ 的条件下，$Y$ 的条件分布律。（2）求在 $Y = 0$ 的条件下，$X$ 的条件分布律。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.158,
+            0.333,
+            0.508,
+            0.352
+          ],
+          "content": "解 边缘分布律已经求出列在上表中."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.159,
+            0.357,
+            0.535,
+            0.376
+          ],
+          "content": "(1) 在 $X = 1$ 的条件下, $Y$ 的条件分布律为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.242,
+            0.382,
+            0.731,
+            0.417
+          ],
+          "content": "P \\{Y = 0 \\mid X = 1 \\} = \\frac {P \\{X = 1 , Y = 0 \\}}{P \\{X = 1 \\}} = \\frac {0 . 0 3 0}{0 . 0 4 5},",
+          "image_source": "images/page_84_equation_6.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.242,
+            0.424,
+            0.731,
+            0.46
+          ],
+          "content": "P \\{Y = 1 \\mid X = 1 \\} = \\frac {P \\{X = 1 , Y = 1 \\}}{P \\{X = 1 \\}} = \\frac {0 . 0 1 0}{0 . 0 4 5},",
+          "image_source": "images/page_84_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.242,
+            0.466,
+            0.731,
+            0.502
+          ],
+          "content": "P \\{Y = 2 \\mid X = 1 \\} = \\frac {P \\{X = 1 , Y = 2 \\}}{P \\{X = 1 \\}} = \\frac {0 . 0 0 5}{0 . 0 4 5},",
+          "image_source": "images/page_84_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.51,
+            0.184,
+            0.529
+          ],
+          "content": "或写成"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.278,
+            0.542,
+            0.701,
+            0.626
+          ],
+          "content": "| Y=k | 0 | 1 | 2 |\n| --- | --- | --- | --- |\n| P{Y=k\\|X=1} | $\\frac{6}{9}$ | $\\frac{2}{9}$ | $\\frac{1}{9}$ |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_84_table_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.159,
+            0.648,
+            0.641,
+            0.668
+          ],
+          "content": "(2) 同样可得在 Y=0 的条件下 X 的条件分布律为"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.242,
+            0.682,
+            0.738,
+            0.764
+          ],
+          "content": "| X=k | 0 | 1 | 2 | 3 |\n| --- | --- | --- | --- | --- |\n| P{X=k\\|Y=0} | $\\frac{84}{90}$ | $\\frac{3}{90}$ | $\\frac{2}{90}$ | $\\frac{1}{90}$ |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_84_table_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.795,
+            0.864,
+            0.864
+          ],
+          "content": "例2 一射手进行射击，击中目标的概率为 $p(0 < p < 1)$，射击直至击中目标两次为止。设以 $X$ 表示首次击中目标所进行的射击次数，以 $Y$ 表示总共进行的射击次数，试求 $X$ 和 $Y$ 的联合分布律及条件分布律。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.869,
+            0.867,
+            0.915
+          ],
+          "content": "解 按题意 Y=n 就表示在第 n 次射击时击中目标, 且在第 1 次, 第 2 次, …, 第 n-1 次射击中恰有一次击中目标. 已知各次射击是相互独立的, 于是"
+        }
+      ]
+    },
+    {
+      "page_idx": 85,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.443,
+            0.05,
+            0.584,
+            0.067
+          ],
+          "content": "§ 3 条件分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.813,
+            0.052,
+            0.869,
+            0.066
+          ],
+          "content": "· 71 ·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.091,
+            0.654,
+            0.11
+          ],
+          "continues_prev": true,
+          "content": "不管 $m(m < n)$ 是多少，概率 $P\\{X = m, Y = n\\}$ 都应等于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.285,
+            0.116,
+            0.738,
+            0.151
+          ],
+          "content": "p \\cdot p \\cdot \\underbrace {q \\cdot q \\cdot \\cdots \\cdot q} _ {n - 2 \\text {个}} = p ^ {2} q ^ {n - 2} \\quad (\\text {这里} q = 1 - p).",
+          "image_source": "images/page_85_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.156,
+            0.416,
+            0.175
+          ],
+          "content": "即得 $X$ 和 $Y$ 的联合分布律为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.239,
+            0.182,
+            0.781,
+            0.2
+          ],
+          "content": "P \\{X = m, Y = n \\} = p ^ {2} q ^ {n - 2}, \\quad n = 2, 3, \\dots ; m = 1, 2, \\dots , n - 1.",
+          "image_source": "images/page_85_equation_5.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.141,
+            0.21,
+            0.796,
+            0.397
+          ],
+          "content": "\\begin{array}{l} = p ^ {2} \\sum_ {n = m + 1} ^ {\\infty} q ^ {n - 2} = \\frac {p ^ {2} q ^ {m - 1}}{1 - q} = p q ^ {m - 1}, \\quad m = 1, 2, \\dots , \\\\ P \\{Y = n \\} = \\sum_ {m = 1} ^ {n - 1} P \\{X = m, Y = n \\} \\\\ = \\sum_ {m = 1} ^ {n - 1} p ^ {2} q ^ {n - 2} = (n - 1) p ^ {2} q ^ {n - 2}, \\quad n = 2, 3, \\dots . \\\\ \\end{array}",
+          "image_source": "images/page_85_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.21,
+            0.71,
+            0.25
+          ],
+          "content": "又 $P\\{X = m\\} = \\sum_{n = m + 1}^{\\infty}P\\{X = m,Y = n\\} = \\sum_{n = m + 1}^{\\infty}p^{2}q^{n - 2}$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.237,
+            0.307,
+            0.76,
+            0.396
+          ],
+          "content": "\\begin{array}{l} P \\{Y = n \\} = \\sum_ {m = 1} ^ {n - 1} P \\{X = m, Y = n \\} \\\\ = \\sum_ {m = 1} ^ {n - 1} p ^ {2} q ^ {n - 2} = (n - 1) p ^ {2} q ^ {n - 2}, \\quad n = 2, 3, \\dots . \\\\ \\end{array}",
+          "image_source": "images/page_85_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.401,
+            0.591,
+            0.419
+          ],
+          "content": "于是由(3.1)，(3.2)式得到所求的条件分布律为"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.425,
+            0.343,
+            0.443
+          ],
+          "content": "当  $n=2,3,\\cdots$  时，"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.184,
+            0.45,
+            0.757,
+            0.488
+          ],
+          "content": "P \\{X = m | Y = n \\} = \\frac {p ^ {2} q ^ {n - 2}}{(n - 1) p ^ {2} q ^ {n - 2}} = \\frac {1}{n - 1}, \\quad m = 1, 2, \\dots , n - 1;",
+          "image_source": "images/page_85_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.494,
+            0.348,
+            0.511
+          ],
+          "content": "当  $m=1,2,\\cdots$  时，"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.235,
+            0.518,
+            0.784,
+            0.556
+          ],
+          "content": "P \\{Y = n \\mid X = m \\} = \\frac {p ^ {2} q ^ {n - 2}}{p q ^ {m - 1}} = p q ^ {n - m - 1}, \\quad n = m + 1, m + 2, \\dots .",
+          "image_source": "images/page_85_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.565,
+            0.55,
+            0.597
+          ],
+          "content": "例如， $P\\{X=m|Y=3\\}=\\frac{1}{2},\\quad m=1,2;$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.237,
+            0.616,
+            0.597,
+            0.635
+          ],
+          "content": "P \\{Y = n \\mid X = 3 \\} = p q ^ {n - 4}, \\quad n = 4, 5, \\dots .",
+          "image_source": "images/page_85_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.649,
+            0.885,
+            0.694
+          ],
+          "content": "现设 $(X,Y)$ 是二维连续型随机变量，这时由于对任意 $x,y$ 有 $P\\{X = x\\} = 0$ $P\\{Y = y\\} = 0$ ，因此就不能直接用条件概率公式引入“条件分布函数”了."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.699,
+            0.881,
+            0.743
+          ],
+          "content": "设 $(X,Y)$ 的概率密度为 $f(x,y),(X,Y)$ 关于 $Y$ 的边缘概率密度为 $f_{Y}(y)$. 给定 $y$, 对于任意固定的 $\\varepsilon > 0$, 对于任意 $x$, 考虑条件概率"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.373,
+            0.748,
+            0.649,
+            0.768
+          ],
+          "content": "P \\{X \\leqslant x \\mid y <   Y \\leqslant y + \\varepsilon \\},",
+          "image_source": "images/page_85_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.772,
+            0.408,
+            0.792
+          ],
+          "content": "设 $P\\{y < Y \\leqslant y + \\varepsilon\\} > 0$，则有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.239,
+            0.799,
+            0.784,
+            0.911
+          ],
+          "content": "\\begin{array}{l} P \\{X \\leqslant x \\mid y <   Y \\leqslant y + \\varepsilon \\} = \\frac {P \\{X \\leqslant x , y <   Y \\leqslant y + \\varepsilon \\}}{P \\{y <   Y \\leqslant y + \\varepsilon \\}} \\\\ = \\frac {\\int_ {- \\infty} ^ {x} \\left[ \\int_ {y} ^ {y + \\epsilon} f (x , y) \\mathrm{d} y \\right] \\mathrm{d} x}{\\int_ {y} ^ {y + \\epsilon} f _ {Y} (y) \\mathrm{d} y}. \\\\ \\end{array}",
+          "image_source": "images/page_85_equation_20.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 86,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.126,
+            0.053,
+            0.183,
+            0.066
+          ],
+          "content": "· 72 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.351,
+            0.051,
+            0.62,
+            0.068
+          ],
+          "content": "第三章 多维随机变量及其分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.092,
+            0.862,
+            0.152
+          ],
+          "content": "在某些条件下，当 $\\varepsilon$ 很小时，上式右端分子、分母分别近似于 $\\varepsilon \\int_{-\\infty}^{x} f(x, y) \\mathrm{d}x$ 和 $\\varepsilon f_{Y}(y)$，于是当 $\\varepsilon$ 很小时，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.173,
+            0.159,
+            0.857,
+            0.211
+          ],
+          "content": "P \\{X \\leqslant x \\mid y <   Y \\leqslant y + \\varepsilon \\} \\approx \\frac {\\varepsilon \\int_ {- \\infty} ^ {x} f (x , y) \\mathrm{d} x}{\\varepsilon f _ {Y} (y)} = \\int_ {- \\infty} ^ {x} \\frac {f (x , y)}{f _ {Y} (y)} \\mathrm{d} x. \\tag {3.3}",
+          "image_source": "images/page_86_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.215,
+            0.86,
+            0.259
+          ],
+          "content": "与一维随机变量概率密度的定义式第二章(4.1)式比较,我们给出以下的定义."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.263,
+            0.862,
+            0.351
+          ],
+          "content": "定义 设二维随机变量 $(X,Y)$ 的概率密度为 $f(x,y),(X,Y)$ 关于Y的边缘概率密度为 $f_{Y}(y)$ . 若对于固定的 $y,f_{Y}(y)>0$ , 则称 $\\frac{f(x,y)}{f_{Y}(y)}$ 为在Y=y的条件下X的条件概率密度, 记为①"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.374,
+            0.359,
+            0.857,
+            0.392
+          ],
+          "content": "f _ {X | Y} (x \\mid y) = \\frac {f (x , y)}{f _ {Y} (y)}. \\tag {3.4}",
+          "image_source": "images/page_86_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.399,
+            0.86,
+            0.461
+          ],
+          "content": "称 $\\int_{-\\infty}^{x}f_{X|Y}(x\\mid y)\\mathrm{d}x = \\int_{-\\infty}^{x}\\frac{f(x,y)}{f_Y(y)}\\mathrm{d}x$ 为在 $Y = y$ 的条件下 $X$ 的条件分布函数，记为 $P\\{X\\leqslant x\\mid Y = y\\}$ 或 $F_{X|Y}(x\\mid y)$，即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.232,
+            0.467,
+            0.857,
+            0.501
+          ],
+          "content": "F _ {X | Y} (x \\mid y) = P \\{X \\leqslant x \\mid Y = y \\} = \\int_ {- \\infty} ^ {x} \\frac {f (x , y)}{f _ {Y} (y)} \\mathrm{d} x. \\tag {3.5}",
+          "image_source": "images/page_86_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.154,
+            0.507,
+            0.857,
+            0.546
+          ],
+          "content": "类似地，可以定义 $f_{Y|X}(y\\mid x) = \\frac{f(x,y)}{f_X(x)}$ 和 $F_{Y|X}(y\\mid x) = \\int_{-\\infty}^{y}\\frac{f(x,y)}{f_X(x)}\\mathrm{d}y.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.55,
+            0.453,
+            0.569
+          ],
+          "content": "由(3.3)式知道,当  $\\varepsilon$  很小时,有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.173,
+            0.575,
+            0.797,
+            0.609
+          ],
+          "content": "P \\{X \\leqslant x \\mid y <   Y \\leqslant y + \\varepsilon \\} \\approx \\int_ {- \\infty} ^ {x} f _ {X | Y} (x \\mid y) \\mathrm{d} x = F _ {X | Y} (x \\mid y),",
+          "image_source": "images/page_86_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.614,
+            0.544,
+            0.634
+          ],
+          "content": "上式说明了条件密度和条件分布函数的含义."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.638,
+            0.86,
+            0.682
+          ],
+          "content": "例3设 $G$ 是平面上的有界区域，其面积为 $A$ .若二维随机变量 $(X,Y)$ 具有概率密度"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.35,
+            0.688,
+            0.622,
+            0.749
+          ],
+          "content": "f (x, y) = \\left\\{ \\begin{array}{l l}  \\frac {1}{A}, & (x, y) \\in G, \\\\ 0, & \\text {其他}, \\end{array} \\right.",
+          "image_source": "images/page_86_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.753,
+            0.86,
+            0.798
+          ],
+          "content": "则称 $(X,Y)$ 在 $G$ 上服从均匀分布. 现设二维随机变量 $(X,Y)$ 在圆域 $x^{2} + y^{2}\\leqslant 1$ 上服从均匀分布，求条件概率密度 $f_{X|Y}(x|y)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.154,
+            0.802,
+            0.58,
+            0.822
+          ],
+          "content": "解 由假设,随机变量 $(X,Y)$ 具有概率密度"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.143,
+            0.851,
+            0.567,
+            0.88
+          ],
+          "content": "① 条件概率密度满足条件: $f_{X|Y}(x \\mid y) = \\frac{f(x, y)}{f_Y(y)} \\geqslant 0;$"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.242,
+            0.886,
+            0.722,
+            0.915
+          ],
+          "content": "$\\int_{-\\infty}^{\\infty}f_{X|Y}(x \\mid y)\\mathrm{d}x = \\int_{-\\infty}^{\\infty}\\frac{f(x,y)}{f_Y(y)}\\mathrm{d}x = \\frac{1}{f_Y(y)}\\int_{-\\infty}^{\\infty}f(x,y)\\mathrm{d}x = 1.$"
+        }
+      ]
+    },
+    {
+      "page_idx": 87,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.442,
+            0.048,
+            0.584,
+            0.065
+          ],
+          "content": "§ 3 条件分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.811,
+            0.05,
+            0.868,
+            0.063
+          ],
+          "content": "· 73 ·"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.372,
+            0.09,
+            0.648,
+            0.151
+          ],
+          "content": "f (x, y) = \\left\\{ \\begin{array}{l l} { \\frac {1}{\\pi},} & {x ^ {2} + y ^ {2} \\leqslant 1,} \\\\ {0,} & {\\text {其他},} \\end{array} \\right.",
+          "image_source": "images/page_87_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.156,
+            0.317,
+            0.175
+          ],
+          "content": "且有边缘概率密度"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.184,
+            0.18,
+            0.731,
+            0.287
+          ],
+          "content": "\\begin{array}{l} f _ {Y} (y) = \\int_ {- \\infty} ^ {\\infty} f (x, y) \\mathrm{d} x \\\\ = \\left\\{ \\begin{array}{l l} { \\frac {1}{\\pi} \\int_ {- \\sqrt {1 - y ^ {2}}} ^ {\\sqrt {1 - y ^ {2}}} \\mathrm{d} x = \\frac {2}{\\pi}   \\sqrt {1 - y ^ {2}}  ,} & {- 1 \\leqslant y \\leqslant 1  ,} \\\\ {0  ,} & {\\text {其他}.} \\end{array} \\right. \\\\ \\end{array}",
+          "image_source": "images/page_87_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.292,
+            0.357,
+            0.312
+          ],
+          "content": "于是当 $-1 < y < 1$ 时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.199,
+            0.318,
+            0.821,
+            0.414
+          ],
+          "content": "f _ {X \\mid Y} (x \\mid y) = \\left\\{ \\begin{array}{l l}  \\frac {\\frac {1}{\\pi}}{\\frac {2}{\\pi} \\sqrt {1 - y ^ {2}}} = \\frac {1}{2 \\sqrt {1 - y ^ {2}}}, & - \\sqrt {1 - y ^ {2}} \\leqslant x \\leqslant \\sqrt {1 - y ^ {2}}, \\\\ 0, & \\text {其他}. \\end{array} \\right.",
+          "image_source": "images/page_87_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.422,
+            0.812,
+            0.454
+          ],
+          "content": "当 $y = 0$ 和 $y = \\frac{1}{2}$ 时 $f_{X|Y}(x|y)$ 的图形分别如图3-6，图3-7所示."
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.184,
+            0.474,
+            0.486,
+            0.62
+          ],
+          "sub_type": "contour",
+          "content": "| -1 | 0.5 |\n| --- | --- |\n| 1 | 0.5 |",
+          "captions": [
+            {
+              "bbox": [
+                0.302,
+                0.63,
+                0.369,
+                0.646
+              ],
+              "content": "图3-6"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_87_chart_8.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.523,
+            0.474,
+            0.838,
+            0.62
+          ],
+          "sub_type": "contour",
+          "content": "| -0.866 | 0.577 |\n| --- | --- |\n| 0.866 | 0.577 |",
+          "captions": [
+            {
+              "bbox": [
+                0.649,
+                0.629,
+                0.715,
+                0.645
+              ],
+              "content": "图3-7"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_87_chart_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.68,
+            0.887,
+            0.725
+          ],
+          "content": "例 4 设数 X 在区间  $(0,1)$  上随机地取值，当观察到  $X = x (0 < x < 1)$  时，数 Y 在区间  $(x,1)$  上随机地取值。求 Y 的概率密度  $f_{Y}(y)$ 。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.729,
+            0.456,
+            0.748
+          ],
+          "content": "解 按题意 $X$ 具有概率密度"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.394,
+            0.753,
+            0.626,
+            0.796
+          ],
+          "content": "f _ {X} (x) = \\left\\{ \\begin{array}{l l} 1, & 0 <   x <   1, \\\\ 0, & \\text {其他}. \\end{array} \\right.",
+          "image_source": "images/page_87_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.801,
+            0.828,
+            0.82
+          ],
+          "content": "对于任意给定的值 $x(0 < x < 1)$，在 $X = x$ 的条件下 $Y$ 的条件概率密度为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.352,
+            0.826,
+            0.668,
+            0.887
+          ],
+          "content": "f _ {Y \\mid X} (y \\mid x) = \\left\\{ \\begin{array}{l l} \\frac {1}{1 - x}, & x <   y <   1, \\\\ 0, & \\text {其他}. \\end{array} \\right.",
+          "image_source": "images/page_87_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.892,
+            0.515,
+            0.912
+          ],
+          "content": "由(3.4)式得 $X$ 和 $Y$ 的联合概率密度为"
+        }
+      ]
+    },
+    {
+      "page_idx": 88,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.128,
+            0.051,
+            0.185,
+            0.065
+          ],
+          "content": "· 74 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.352,
+            0.049,
+            0.62,
+            0.066
+          ],
+          "content": "第三章 多维随机变量及其分布"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.239,
+            0.093,
+            0.734,
+            0.151
+          ],
+          "content": "f (x, y) = f _ {Y \\mid X} (y \\mid x) f _ {X} (x) = \\left\\{ \\begin{array}{l l} \\frac {1}{1 - x}, & 0 <   x <   y <   1, \\\\ 0, & \\text {其他.} \\end{array} \\right.",
+          "image_source": "images/page_88_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.157,
+            0.427,
+            0.176
+          ],
+          "content": "于是得关于 $Y$ 的边缘概率密度为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.185,
+            0.187,
+            0.688,
+            0.291
+          ],
+          "content": "\\begin{array}{l} f _ {Y} (y) = \\int_ {- \\infty} ^ {\\infty} f (x, y) \\mathrm{d} x \\\\ = \\left\\{ \\begin{array}{l l} \\int_ {0} ^ {y} \\frac {1}{1 - x} \\mathrm{d} x = - \\ln (1 - y), & 0 <   y <   1, \\\\ 0, & \\text {其他.} \\end{array} \\right. \\\\ \\end{array}",
+          "image_source": "images/page_88_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.573,
+            0.274,
+            0.623,
+            0.291
+          ],
+          "content": "其他."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.323,
+            0.322,
+            0.657,
+            0.346
+          ],
+          "level": 2,
+          "content": "§ 4 相互独立的随机变量"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.373,
+            0.86,
+            0.417
+          ],
+          "content": "本节我们将利用两个事件相互独立的概念引出两个随机变量相互独立的概念,这是一个十分重要的概念."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.422,
+            0.86,
+            0.466
+          ],
+          "content": "定义 设 $F(x, y)$ 及 $F_{X}(x), F_{Y}(y)$ 分别是二维随机变量 $(X, Y)$ 的分布函数及边缘分布函数. 若对于所有 $x, y$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.308,
+            0.473,
+            0.856,
+            0.489
+          ],
+          "content": "P \\{X \\leqslant x, Y \\leqslant y \\} = P \\{X \\leqslant x \\} P \\{Y \\leqslant y \\}, \\tag {4.1}",
+          "image_source": "images/page_88_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.497,
+            0.857,
+            0.515
+          ],
+          "content": "即 $F(x,y) = F_{X}(x)F_{Y}(y),$ (4.2)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.521,
+            0.461,
+            0.54
+          ],
+          "content": "则称随机变量 X 和 Y 是相互独立的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.545,
+            0.86,
+            0.589
+          ],
+          "content": "设 $(X,Y)$ 是连续型随机变量, $f(x,y)$ , $f_{X}(x)$ , $f_{Y}(y)$ 分别为 $(X,Y)$ 的概率密度和边缘概率密度,则X和Y相互独立的条件(4.2)式等价于:等式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.381,
+            0.597,
+            0.856,
+            0.613
+          ],
+          "content": "f (x, y) = f _ {X} (x) f _ {Y} (y) \\tag {4.3}",
+          "image_source": "images/page_88_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.619,
+            0.357,
+            0.638
+          ],
+          "content": "在平面上几乎处处①成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.644,
+            0.86,
+            0.687
+          ],
+          "content": "当 $(X,Y)$ 是离散型随机变量时,X和Y相互独立的条件(4.2)式等价于:对于 $(X,Y)$ 的所有可能取的值 $(x_{i},y_{j})$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.293,
+            0.694,
+            0.856,
+            0.711
+          ],
+          "content": "P \\{X = x _ {i}, Y = y _ {j} \\} = P \\{X = x _ {i} \\} P \\{Y = y _ {j} \\}. \\tag {4.4}",
+          "image_source": "images/page_88_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.717,
+            0.637,
+            0.736
+          ],
+          "content": "在实际中使用(4.3)式或(4.4)式要比使用(4.2)式方便."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.741,
+            0.543,
+            0.76
+          ],
+          "content": "例如 §1 例 2 中的随机变量 X 和 Y, 由于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.232,
+            0.767,
+            0.738,
+            0.812
+          ],
+          "content": "f _ {X} (x) = \\left\\{ \\begin{array}{l l} 2 \\mathrm{e} ^ {- 2 x}, & x > 0, \\\\ 0, & \\text {其他}, \\end{array} \\quad f _ {Y} (y) = \\left\\{ \\begin{array}{l l} \\mathrm{e} ^ {- y}, & y > 0, \\\\ 0, & \\text {其他}, \\end{array} \\right. \\right.",
+          "image_source": "images/page_88_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.817,
+            0.628,
+            0.837
+          ],
+          "content": "故有 $f(x,y) = f_{X}(x)f_{Y}(y)$，因而 $X,Y$ 是相互独立的。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.154,
+            0.842,
+            0.444,
+            0.861
+          ],
+          "content": "又如, 若 X, Y 具有联合分布律"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.14,
+            0.896,
+            0.752,
+            0.912
+          ],
+          "content": "① 此处“几乎处处成立”的含义是:在平面上除去“面积”为零的集合以外,处处成立."
+        }
+      ]
+    },
+    {
+      "page_idx": 89,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.406,
+            0.05,
+            0.623,
+            0.067
+          ],
+          "content": "§ 4 相互独立的随机变量"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.814,
+            0.052,
+            0.871,
+            0.066
+          ],
+          "content": "· 75 ·"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.14,
+            0.09,
+            0.889,
+            0.224
+          ],
+          "content": "| Y\\\\X | 0 | 1 | P{Y=j} |\n| --- | --- | --- | --- |\n| 1 | 1/6 | 2/6 | 1/2 |\n| 2 | 1/6 | 2/6 | 1/2 |\n| P{X=i} | 1/3 | 2/3 | 1 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_89_table_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.254,
+            0.752,
+            0.273
+          ],
+          "content": "则有 $P\\{X = 0,Y = 1\\} = 1 / 6 = P\\{X = 0\\} P\\{Y = 1\\}$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.279,
+            0.75,
+            0.297
+          ],
+          "content": "P \\{X = 0, Y = 2 \\} = 1 / 6 = P \\{X = 0 \\} P \\{Y = 2 \\},",
+          "image_source": "images/page_89_equation_4.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.303,
+            0.75,
+            0.322
+          ],
+          "content": "P \\{X = 1, Y = 1 \\} = 2 / 6 = P \\{X = 1 \\} P \\{Y = 1 \\},",
+          "image_source": "images/page_89_equation_5.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.328,
+            0.75,
+            0.346
+          ],
+          "content": "P \\{X = 1, Y = 2 \\} = 2 / 6 = P \\{X = 1 \\} P \\{Y = 2 \\},",
+          "image_source": "images/page_89_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.353,
+            0.384,
+            0.372
+          ],
+          "content": "因而 $X, Y$ 是相互独立的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.378,
+            0.886,
+            0.421
+          ],
+          "content": "再如 §2 例 1 中的随机变量 $F$ 和 $D$, 由于 $P\\{D=1, F=0\\}=1/10 \\neq P\\{D=1\\} \\times P\\{F=0\\}$, 因而 $F$ 和 $D$ 不是相互独立的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.427,
+            0.686,
+            0.446
+          ],
+          "content": "下面考察二维正态随机变量 $(X,Y)$ ，它的概率密度为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.28,
+            0.451,
+            0.749,
+            0.541
+          ],
+          "content": "\\begin{array}{l} f (x, y) = \\frac {1}{2 \\pi \\sigma_ {1} \\sigma_ {2} \\sqrt {1 - \\rho^ {2}}} \\exp \\left\\{\\frac {- 1}{2 (1 - \\rho^ {2})} \\left[ \\frac {(x - \\mu_ {1}) ^ {2}}{\\sigma_ {1} ^ {2}} \\right. \\right. \\\\ \\left. - 2 \\rho \\frac {(x - \\mu_ {1}) (y - \\mu_ {2})}{\\sigma_ {1} \\sigma_ {2}} + \\frac {(y - \\mu_ {2}) ^ {2}}{\\sigma_ {2} ^ {2}} \\right] \\Bigg \\}. \\\\ \\end{array}",
+          "image_source": "images/page_89_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.547,
+            0.699,
+            0.567
+          ],
+          "content": "由 §2 中例 3 知道, 其边缘概率密度 $f_{X}(x), f_{Y}(y)$ 的乘积为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.241,
+            0.573,
+            0.779,
+            0.613
+          ],
+          "content": "f _ {X} (x) f _ {Y} (y) = \\frac {1}{2 \\pi \\sigma_ {1} \\sigma_ {2}} \\exp \\left\\{- \\frac {1}{2} \\left[ \\frac {(x - \\mu_ {1}) ^ {2}}{\\sigma_ {1} ^ {2}} + \\frac {(y - \\mu_ {2}) ^ {2}}{\\sigma_ {2} ^ {2}} \\right] \\right\\}.",
+          "image_source": "images/page_89_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.62,
+            0.889,
+            0.693
+          ],
+          "content": "因此，如果 $\\rho = 0$ ，则对于所有 $x, y$ 有 $f(x, y) = f_X(x)f_Y(y)$，即 $X$ 和 $Y$ 相互独立。反之，如果 $X$ 和 $Y$ 相互独立，由于 $f(x, y), f_X(x), f_Y(y)$ 都是连续函数，故对于所有的 $x, y$ 有 $f(x, y) = f_X(x)f_Y(y)$。特别，令 $x = \\mu_1, y = \\mu_2$，自这一等式得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.397,
+            0.699,
+            0.626,
+            0.741
+          ],
+          "content": "\\frac {1}{2 \\pi \\sigma_ {1} \\sigma_ {2} \\sqrt {1 - \\rho^ {2}}} = \\frac {1}{2 \\pi \\sigma_ {1} \\sigma_ {2}},",
+          "image_source": "images/page_89_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.745,
+            0.508,
+            0.765
+          ],
+          "content": "从而  $\\rho=0$ . 综上所述, 得到以下的结论:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.77,
+            0.869,
+            0.791
+          ],
+          "content": "对于二维正态随机变量 $(X,Y)$ ，X和Y相互独立的充要条件是参数 $\\rho=0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.795,
+            0.888,
+            0.864
+          ],
+          "content": "例 一负责人到达办公室的时间均匀分布在8～12时，他的秘书到达办公室的时间均匀分布在7～9时，设他们两人到达的时间相互独立，求他们到达办公室的时间相差不超过5 min(1/12 h)的概率."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.869,
+            0.889,
+            0.915
+          ],
+          "content": "解 设 $X$ 和 $Y$ 分别是负责人和他的秘书到达办公室的时间, 由假设 $X$ 和 $Y$ 的概率密度分别为"
+        }
+      ]
+    },
+    {
+      "page_idx": 90,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.13,
+            0.054,
+            0.186,
+            0.068
+          ],
+          "content": "· 76 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.354,
+            0.052,
+            0.621,
+            0.068
+          ],
+          "content": "第三章 多维随机变量及其分布"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.241,
+            0.094,
+            0.754,
+            0.154
+          ],
+          "content": "f _ {X} (x) = \\left\\{ \\begin{array}{l l} \\frac {1}{4}, & 8 <   x <   1 2, \\\\ 0, & \\text {其他}, \\end{array} \\right. \\quad f _ {Y} (y) = \\left\\{ \\begin{array}{l l} \\frac {1}{2}, & 7 <   y <   9, \\\\ 0, & \\text {其他}, \\end{array} \\right.",
+          "image_source": "images/page_90_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.16,
+            0.534,
+            0.179
+          ],
+          "content": "因为 $X, Y$ 相互独立, 故 $(X, Y)$ 的概率密度为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.219,
+            0.185,
+            0.714,
+            0.245
+          ],
+          "content": "f (x, y) = f _ {X} (x) f _ {Y} (y) = \\left\\{ \\begin{array}{l l} \\frac {1}{8}, & 8 <   x <   1 2, 7 <   y <   9, \\\\ 0, & \\text {其他.} \\end{array} \\right.",
+          "image_source": "images/page_90_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.25,
+            0.528,
+            0.392
+          ],
+          "content": "按题意需要求概率 $P\\{|X - Y| \\leqslant 1 / 12\\}$. 画出区域: $|x - y| \\leqslant 1 / 12$, 以及长方形 $[8 < x < 12; 7 < y < 9]$, 它们的公共部分是四边形 $BCC'B'$, 记为 $G$ (如图3-8). 显然仅当 $(X, Y)$ 取值于 $G$ 内, 他们两人到达的时间相差才不超过 $1 / 12\\mathrm{h}$. 因此, 所求的概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.143,
+            0.397,
+            0.525,
+            0.478
+          ],
+          "content": "\\begin{array}{l} P \\left\\{\\mid X - Y \\mid \\leqslant \\frac {1}{1 2} \\right\\} = \\iint_ {G} f (x, y) \\mathrm{d} x \\mathrm{d} y \\\\ = \\frac {1}{8} \\times (G \\text {的面积}). \\\\ \\end{array}",
+          "image_source": "images/page_90_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.486,
+            0.749,
+            0.506
+          ],
+          "content": "而 $G$ 的面积 $=$ 三角形 $ABC$ 的面积一三角形 $AB'C'$ 的面积"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.316,
+            0.511,
+            0.573,
+            0.547
+          ],
+          "content": "= \\frac {1}{2} \\left(\\frac {1 3}{1 2}\\right) ^ {2} - \\frac {1}{2} \\left(\\frac {1 1}{1 2}\\right) ^ {2} = \\frac {1}{6}.",
+          "image_source": "images/page_90_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.115,
+            0.556,
+            0.596,
+            0.592
+          ],
+          "content": "于是 $P\\left\\{|X - Y|\\leqslant \\frac{1}{12}\\right\\} = \\frac{1}{48}.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.598,
+            0.861,
+            0.617
+          ],
+          "content": "即负责人和他的秘书到达办公室的时间相差不超过 5 min 的概率为 1/48. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.622,
+            0.858,
+            0.642
+          ],
+          "content": "以上所述关于二维随机变量的一些概念,容易推广到 n 维随机变量的情况."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.157,
+            0.647,
+            0.717,
+            0.666
+          ],
+          "content": "上面说过，n 维随机变量 $(X_{1}, X_{2}, \\cdots, X_{n})$ 的分布函数定义为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.239,
+            0.672,
+            0.735,
+            0.691
+          ],
+          "content": "F (x _ {1}, x _ {2}, \\dots , x _ {n}) = P \\{X _ {1} \\leqslant x _ {1}, X _ {2} \\leqslant x _ {2}, \\dots , X _ {n} \\leqslant x _ {n} \\},",
+          "image_source": "images/page_90_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.697,
+            0.408,
+            0.716
+          ],
+          "content": "其中  $x_{1}, x_{2}, \\cdots, x_{n}$  为任意实数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.155,
+            0.722,
+            0.834,
+            0.742
+          ],
+          "content": "若存在非负可积函数  $f(x_{1}, x_{2}, \\cdots, x_{n})$ ，使对于任意实数  $x_{1}, x_{2}, \\cdots, x_{n}$  有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.173,
+            0.748,
+            0.801,
+            0.784
+          ],
+          "content": "F (x _ {1}, x _ {2}, \\dots , x _ {n}) = \\int_ {- \\infty} ^ {x _ {n}} \\int_ {- \\infty} ^ {x _ {n - 1}} \\dots \\int_ {- \\infty} ^ {x _ {1}} f (x _ {1}, x _ {2}, \\dots , x _ {n}) \\mathrm{d} x _ {1} \\mathrm{d} x _ {2} \\dots \\mathrm{d} x _ {n},",
+          "image_source": "images/page_90_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.79,
+            0.659,
+            0.809
+          ],
+          "content": "则称  $f(x_{1},x_{2},\\cdots,x_{n})$  为  $(X_{1},X_{2},\\cdots,X_{n})$  的概率密度函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.815,
+            0.862,
+            0.885
+          ],
+          "content": "设 $(X_{1},X_{2},\\cdots,X_{n})$ 的分布函数 $F(x_{1},x_{2},\\cdots,x_{n})$ 为已知，则 $(X_{1},X_{2},\\cdots,X_{n})$ 的 $k(1\\leqslant k<n)$ 维边缘分布函数就随之确定.例如 $(X_{1},X_{2},\\cdots,X_{n})$ 关于 $X_{1}$ 、关于 $(X_{1},X_{2})$ 的边缘分布函数分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.333,
+            0.891,
+            0.64,
+            0.913
+          ],
+          "content": "F _ {X _ {1}} (x _ {1}) = F (x _ {1}, \\infty , \\infty , \\dots , \\infty),",
+          "image_source": "images/page_90_equation_19.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.54,
+            0.258,
+            0.84,
+            0.405
+          ],
+          "sub_type": "text_image",
+          "content": "y\n9\nA C' C\nB' G\nB\n7\nO 8 10 12 x",
+          "captions": [
+            {
+              "bbox": [
+                0.659,
+                0.413,
+                0.726,
+                0.429
+              ],
+              "content": "图3-8"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_90_image_20.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 91,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.377,
+            0.05,
+            0.65,
+            0.067
+          ],
+          "content": "§ 5 两个随机变量的函数的分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.813,
+            0.052,
+            0.869,
+            0.065
+          ],
+          "content": "· 77 ·"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.313,
+            0.091,
+            0.702,
+            0.112
+          ],
+          "content": "F _ {X _ {1}, X _ {2}} (x _ {1}, x _ {2}) = F (x _ {1}, x _ {2}, \\infty , \\infty , \\dots , \\infty).",
+          "image_source": "images/page_91_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.115,
+            0.886,
+            0.159
+          ],
+          "content": "又若  $f(x_{1}, x_{2}, \\cdots, x_{n})$  是  $(X_{1}, X_{2}, \\cdots, X_{n})$  的概率密度，则  $(X_{1}, X_{2}, \\cdots, X_{n})$  关于  $X_{1}$ 、关于  $(X_{1}, X_{2})$  的边缘概率密度分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.212,
+            0.164,
+            0.805,
+            0.242
+          ],
+          "content": "\\begin{array}{l} f _ {X _ {1}} (x _ {1}) = \\int_ {- \\infty} ^ {\\infty} \\int_ {- \\infty} ^ {\\infty} \\dots \\int_ {- \\infty} ^ {\\infty} f (x _ {1}, x _ {2}, \\dots , x _ {n}) \\mathrm{d} x _ {2} \\mathrm{d} x _ {3} \\dots \\mathrm{d} x _ {n}, \\\\ f _ {X _ {1}, X _ {2}} (x _ {1}, x _ {2}) = \\int_ {- \\infty} ^ {\\infty} \\int_ {- \\infty} ^ {\\infty} \\dots \\int_ {- \\infty} ^ {\\infty} f (x _ {1}, x _ {2}, \\dots , x _ {n}) \\mathrm{d} x _ {3} \\mathrm{d} x _ {4} \\dots \\mathrm{d} x _ {n}. \\\\ \\end{array}",
+          "image_source": "images/page_91_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.248,
+            0.469,
+            0.267
+          ],
+          "content": "若对于所有的  $x_{1}, x_{2}, \\cdots, x_{n}$  有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.28,
+            0.272,
+            0.741,
+            0.294
+          ],
+          "content": "F (x _ {1}, x _ {2}, \\dots , x _ {n}) = F _ {X _ {1}} (x _ {1}) F _ {X _ {2}} (x _ {2}) \\dots F _ {X _ {n}} (x _ {n}),",
+          "image_source": "images/page_91_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.297,
+            0.468,
+            0.315
+          ],
+          "content": "则称  $X_{1}, X_{2}, \\cdots, X_{n}$  是相互独立的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.321,
+            0.602,
+            0.341
+          ],
+          "content": "若对于所有的  $x_{1}, x_{2}, \\cdots, x_{m}; y_{1}, y_{2}, \\cdots, y_{n}$  有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.177,
+            0.346,
+            0.843,
+            0.365
+          ],
+          "content": "F (x _ {1}, x _ {2}, \\dots , x _ {m}, y _ {1}, y _ {2}, \\dots , y _ {n}) = F _ {1} (x _ {1}, x _ {2}, \\dots , x _ {m}) F _ {2} (y _ {1}, y _ {2}, \\dots , y _ {n}),",
+          "image_source": "images/page_91_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.37,
+            0.888,
+            0.438
+          ],
+          "content": "其中  $F_{1}, F_{2}, F$  依次为随机变量  $(X_{1}, X_{2}, \\cdots, X_{m}), (Y_{1}, Y_{2}, \\cdots, Y_{n})$  和  $(X_{1}, X_{2}, \\cdots, X_{m}, Y_{1}, Y_{2}, \\cdots, Y_{n})$  的分布函数，则称随机变量  $(X_{1}, X_{2}, \\cdots, X_{m})$  和  $(Y_{1}, Y_{2}, \\cdots, Y_{n})$  是相互独立的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.444,
+            0.641,
+            0.463
+          ],
+          "content": "我们有以下的定理,它在数理统计中是很有用的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.468,
+            0.888,
+            0.537
+          ],
+          "content": "定理 设 $(X_{1},X_{2},\\cdots,X_{m})$ 和 $(Y_{1},Y_{2},\\cdots,Y_{n})$ 相互独立，则 $X_{i}(i=1,2,\\cdots,m)$ 和 $Y_{j}(j=1,2,\\cdots,n)$ 相互独立。又若h,g是连续函数，则 $h(X_{1},X_{2},\\cdots,X_{m})$ 和 $g(Y_{1},Y_{2},\\cdots,Y_{n})$ 相互独立。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.542,
+            0.283,
+            0.561
+          ],
+          "content": "(证明略.)"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.305,
+            0.588,
+            0.726,
+            0.613
+          ],
+          "level": 2,
+          "content": "§ 5 两个随机变量的函数的分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.639,
+            0.887,
+            0.684
+          ],
+          "content": "上一章 §5 中已经讨论过一个随机变量的函数的分布, 本节讨论两个随机变量的函数的分布. 我们只就下面几个具体的函数来讨论."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.182,
+            0.7,
+            0.429,
+            0.721
+          ],
+          "level": 2,
+          "content": "(一) $Z = X + Y$ 的分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.736,
+            0.888,
+            0.78
+          ],
+          "content": "设 $(X,Y)$ 是二维连续型随机变量，它具有概率密度 $f(x,y)$. 则 $Z = X + Y$ 仍为连续型随机变量，其概率密度为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.367,
+            0.786,
+            0.884,
+            0.819
+          ],
+          "content": "f _ {X + Y} (z) = \\int_ {- \\infty} ^ {\\infty} f (z - y, y) \\mathrm{d} y, \\tag {5.1}",
+          "image_source": "images/page_91_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.828,
+            0.886,
+            0.861
+          ],
+          "content": "或 $f_{X + Y}(z) = \\int_{-\\infty}^{\\infty}f(x,z - x)\\mathrm{d}x.$ (5.2)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.867,
+            0.887,
+            0.913
+          ],
+          "content": "又若 $X$ 和 $Y$ 相互独立，设 $(X,Y)$ 关于 $X,Y$ 的边缘概率密度分别为 $f_{X}(x)$，$f_{Y}(y)$，则(5.1)，(5.2)式分别化为"
+        }
+      ]
+    },
+    {
+      "page_idx": 92,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.13,
+            0.053,
+            0.186,
+            0.066
+          ],
+          "content": "· 78 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.355,
+            0.051,
+            0.623,
+            0.068
+          ],
+          "content": "第三章 多维随机变量及其分布"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.325,
+            0.093,
+            0.861,
+            0.125
+          ],
+          "content": "f _ {X + Y} (z) = \\int_ {- \\infty} ^ {\\infty} f _ {X} (z - y) f _ {Y} (y) \\mathrm{d} y \\tag {5.3}",
+          "image_source": "images/page_92_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.133,
+            0.14,
+            0.149
+          ],
+          "content": "和"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.319,
+            0.149,
+            0.861,
+            0.181
+          ],
+          "content": "f _ {X + Y} (z) = \\int_ {- \\infty} ^ {\\infty} f _ {X} (x) f _ {Y} (z - x) \\mathrm{d} x. \\tag {5.4}",
+          "image_source": "images/page_92_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.188,
+            0.639,
+            0.207
+          ],
+          "content": "这两个公式称为 $f_{X}$ 和 $f_{Y}$ 的卷积公式，记为 $f_{X} * f_{Y}$，即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.192,
+            0.213,
+            0.775,
+            0.247
+          ],
+          "content": "f _ {X} * f _ {Y} = \\int_ {- \\infty} ^ {\\infty} f _ {X} (z - y) f _ {Y} (y) \\mathrm{d} y = \\int_ {- \\infty} ^ {\\infty} f _ {X} (x) f _ {Y} (z - x) \\mathrm{d} x.",
+          "image_source": "images/page_92_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.253,
+            0.602,
+            0.272
+          ],
+          "content": "证 先来求 $Z = X + Y$ 的分布函数 $F_{Z}(z)$，即有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.284,
+            0.276,
+            0.686,
+            0.32
+          ],
+          "content": "F _ {Z} (z) = P \\{Z \\leqslant z \\} = \\iint_ {x + y \\leqslant z} f (x, y) \\mathrm{d} x \\mathrm{d} y,",
+          "image_source": "images/page_92_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.321,
+            0.61,
+            0.364
+          ],
+          "content": "这里积分区域 $G: x + y \\leqslant z$ 是直线 $x + y = z$ 及其左下方的半平面(如图3-9). 将二重积分化成累次积分, 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.155,
+            0.366,
+            0.48,
+            0.401
+          ],
+          "content": "F _ {z} (z) = \\int_ {- \\infty} ^ {\\infty} \\left[ \\int_ {- \\infty} ^ {z - y} f (x, y) \\mathrm{d} x \\right] \\mathrm{d} y.",
+          "image_source": "images/page_92_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.408,
+            0.609,
+            0.466
+          ],
+          "content": "固定 $z$ 和 $y$ 对积分 $\\int_{-\\infty}^{z - y}f(x,y)\\mathrm{d}x$ 作变量变换，令$x = u - y$ ，得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.18,
+            0.471,
+            0.531,
+            0.506
+          ],
+          "content": "\\int_ {- \\infty} ^ {z - y} f (x, y) \\mathrm{d} x = \\int_ {- \\infty} ^ {z} f (u - y, y) \\mathrm{d} u.",
+          "image_source": "images/page_92_equation_12.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.626,
+            0.322,
+            0.843,
+            0.468
+          ],
+          "sub_type": "text_image",
+          "content": "y\nx+y=z\nO\nx",
+          "captions": [
+            {
+              "bbox": [
+                0.702,
+                0.477,
+                0.768,
+                0.492
+              ],
+              "content": "图3-9"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_92_image_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.512,
+            0.161,
+            0.529
+          ],
+          "content": "于是"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.16,
+            0.527,
+            0.805,
+            0.563
+          ],
+          "content": "F _ {Z} (z) = \\int_ {- \\infty} ^ {\\infty} \\left[ \\int_ {- \\infty} ^ {z} f (u - y, y) \\mathrm{d} u \\right] \\mathrm{d} y = \\int_ {- \\infty} ^ {z} \\left[ \\int_ {- \\infty} ^ {\\infty} f (u - y, y) \\mathrm{d} y \\right] \\mathrm{d} u.",
+          "image_source": "images/page_92_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.568,
+            0.619,
+            0.587
+          ],
+          "content": "由概率密度的定义即得(5.1)式. 类似可证得(5.2)式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.592,
+            0.864,
+            0.634
+          ],
+          "content": "例1 设 $X$ 和 $Y$ 是两个相互独立的随机变量. 它们都服从 $N(0,1)$ 分布, 其概率密度为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.297,
+            0.634,
+            0.676,
+            0.671
+          ],
+          "content": "f _ {X} (x) = \\frac {1}{\\sqrt {2 \\pi}} \\mathrm{e} ^ {- x ^ {2} / 2}, \\quad - \\infty <   x <   \\infty ,",
+          "image_source": "images/page_92_equation_19.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.299,
+            0.679,
+            0.671,
+            0.718
+          ],
+          "content": "f _ {Y} (y) = \\frac {1}{\\sqrt {2 \\pi}} \\mathrm{e} ^ {- y ^ {2} / 2}, \\quad - \\infty <   y <   \\infty .",
+          "image_source": "images/page_92_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.723,
+            0.356,
+            0.742
+          ],
+          "content": "求  $Z=X+Y$  的概率密度."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.154,
+            0.748,
+            0.305,
+            0.766
+          ],
+          "content": "解 由(5.4)式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.202,
+            0.769,
+            0.771,
+            0.856
+          ],
+          "content": "\\begin{array}{l} f _ {Z} (z) = \\int_ {- \\infty} ^ {\\infty} f _ {X} (x) f _ {Y} (z - x) \\mathrm{d} x \\\\ = \\frac {1}{2 \\pi} \\int_ {- \\infty} ^ {\\infty} \\mathrm{e} ^ {- \\frac {x ^ {2}}{2}} \\cdot \\mathrm{e} ^ {- \\frac {(z - x) ^ {2}}{2}} \\mathrm{d} x = \\frac {1}{2 \\pi} \\mathrm{e} ^ {- \\frac {z ^ {2}}{4}} \\int_ {- \\infty} ^ {\\infty} \\mathrm{e} ^ {- \\left(x - \\frac {z}{2}\\right) ^ {2}} \\mathrm{d} x, \\\\ \\end{array}",
+          "image_source": "images/page_92_equation_23.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.865,
+            0.264,
+            0.894
+          ],
+          "content": "令 $t = x - \\frac{z}{2}$ 得"
+        }
+      ]
+    },
+    {
+      "page_idx": 93,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.371,
+            0.047,
+            0.646,
+            0.065
+          ],
+          "content": "§ 5 两个随机变量的函数的分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.807,
+            0.048,
+            0.864,
+            0.063
+          ],
+          "content": "· 79 ·"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.269,
+            0.086,
+            0.744,
+            0.129
+          ],
+          "content": "f _ {Z} (z) = \\frac {1}{2 \\pi} \\mathrm{e} ^ {- \\frac {z ^ {2}}{4}} \\int_ {- \\infty} ^ {\\infty} \\mathrm{e} ^ {- t ^ {2}} \\mathrm{d} t = \\frac {1}{2 \\pi} \\mathrm{e} ^ {- \\frac {z ^ {2}}{4}} \\sqrt {\\pi} = \\frac {1}{2 \\sqrt {\\pi}} \\mathrm{e} ^ {- \\frac {z ^ {2}}{4}}.",
+          "image_source": "images/page_93_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.135,
+            0.357,
+            0.155
+          ],
+          "content": "即 $Z$ 服从 $N(0,2)$ 分布."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.159,
+            0.883,
+            0.28
+          ],
+          "content": "一般，设 X, Y 相互独立且  $X \\sim N(\\mu_{1}, \\sigma_{1}^{2})$ ,  $Y \\sim N(\\mu_{2}, \\sigma_{2}^{2})$ . 由 (5.4) 式经过计算知  $Z = X + Y$  仍然服从正态分布，且有  $Z \\sim N(\\mu_{1} + \\mu_{2}, \\sigma_{1}^{2} + \\sigma_{2}^{2})$ . 这个结论还能推广到 n 个独立正态随机变量之和的情况. 即若  $X_{i} \\sim N(\\mu_{i}, \\sigma_{i}^{2})$  ( $i = 1, 2, \\cdots, n$ ), 且它们相互独立，则它们的和  $Z = X_{1} + X_{2} + \\cdots + X_{n}$  仍然服从正态分布，且有  $Z \\sim N(\\mu_{1} + \\mu_{2} + \\cdots + \\mu_{n}, \\sigma_{1}^{2} + \\sigma_{2}^{2} + \\cdots + \\sigma_{n}^{2})$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.283,
+            0.883,
+            0.327
+          ],
+          "content": "更一般地,可以证明有限个相互独立的正态随机变量的线性组合仍然服从正态分布."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.332,
+            0.883,
+            0.376
+          ],
+          "content": "例2 在一简单电路中，两电阻 $R_{1}$ 和 $R_{2}$ 串联连接，设 $R_{1}, R_{2}$ 相互独立，它们的概率密度均为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.348,
+            0.382,
+            0.667,
+            0.443
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l l} { \\frac {1 0 - x}{5 0},} & {0 \\leqslant x \\leqslant 1 0,} \\\\ {0,} & {\\text {其他}.} \\end{array} \\right.",
+          "image_source": "images/page_93_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.448,
+            0.46,
+            0.468
+          ],
+          "content": "求总电阻 $R = R_{1} + R_{2}$ 的概率密度."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.177,
+            0.473,
+            0.489,
+            0.492
+          ],
+          "content": "解 由(5.4)式,R 的概率密度为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.359,
+            0.497,
+            0.655,
+            0.532
+          ],
+          "content": "f _ {R} (z) = \\int_ {- \\infty} ^ {\\infty} f (x) f (z - x) \\mathrm{d} x.",
+          "image_source": "images/page_93_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.538,
+            0.228,
+            0.557
+          ],
+          "content": "易知仅当"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.562,
+            0.693,
+            0.605
+          ],
+          "content": "\\left\\{ \\begin{array}{l l} 0 <   x <   1 0, \\\\ 0 <   z - x <   1 0, \\end{array} \\right. \\text {即} \\left\\{ \\begin{array}{l l} 0 <   x <   1 0, \\\\ z - 1 0 <   x <   z \\end{array} \\right.",
+          "image_source": "images/page_93_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.611,
+            0.588,
+            0.654
+          ],
+          "content": "时上述积分的被积函数不等于零. 参考图 3-10, 即得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.14,
+            0.66,
+            0.583,
+            0.761
+          ],
+          "content": "f _ {R} (z) = \\left\\{ \\begin{array}{l l}  \\int_ {0} ^ {z} f (x) f (z - x) \\mathrm{d} x, & 0 \\leqslant z <   1 0, \\\\  \\int_ {z - 1 0} ^ {1 0} f (x) f (z - x) \\mathrm{d} x, & 1 0 \\leqslant z \\leqslant 2 0, \\\\ 0, & \\text {其他}. \\end{array} \\right.",
+          "image_source": "images/page_93_equation_14.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.606,
+            0.619,
+            0.865,
+            0.753
+          ],
+          "sub_type": "line",
+          "content": "| z | x=z | x=z-10 |\n| --- | --- | --- |\n| 0 | 0 | — |\n| 10 | 10 | 10 |\n| 20 | — | 10 |",
+          "captions": [
+            {
+              "bbox": [
+                0.698,
+                0.76,
+                0.774,
+                0.775
+              ],
+              "content": "图3-10"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_93_chart_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.767,
+            0.414,
+            0.787
+          ],
+          "content": "将 $f(x)$ 的表达式代入上式得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.792,
+            0.77,
+            0.895
+          ],
+          "content": "f _ {R} (z) = \\left\\{ \\begin{array}{l l}  \\frac {1}{1 5 0 0 0} (6 0 0 z - 6 0 z ^ {2} + z ^ {3}), & 0 \\leqslant z <   1 0, \\\\  \\frac {1}{1 5 0 0 0} (2 0 - z) ^ {3}, & 1 0 \\leqslant z <   2 0, \\\\ 0, & \\text {其他}. \\end{array} \\right.",
+          "image_source": "images/page_93_equation_18.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.862,
+            0.873,
+            0.885,
+            0.891
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_93_image_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 94,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.049,
+            0.195,
+            0.062
+          ],
+          "content": "· 80 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.364,
+            0.048,
+            0.632,
+            0.065
+          ],
+          "content": "第三章 多维随机变量及其分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.088,
+            0.875,
+            0.133
+          ],
+          "content": "例3 设随机变量 $X, Y$ 相互独立，且分别服从参数为 $\\alpha, \\theta; \\beta, \\theta$ 的 $\\Gamma$ 分布（分别记成 $X \\sim \\Gamma(\\alpha, \\theta), Y \\sim \\Gamma(\\beta, \\theta)$. $X, Y$ 的概率密度分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.263,
+            0.139,
+            0.728,
+            0.2
+          ],
+          "content": "f _ {X} (x) = \\left\\{ \\begin{array}{l l} {{ \\frac {1}{\\theta^ {\\alpha} \\Gamma (\\alpha)} x ^ {\\alpha - 1} \\mathrm{e} ^ {- x / \\theta},}} & {{x > 0,}} \\\\ {{0,}} & {{\\text {其他},}} \\end{array} \\right. \\quad \\alpha > 0, \\theta > 0.",
+          "image_source": "images/page_94_equation_3.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.264,
+            0.206,
+            0.724,
+            0.267
+          ],
+          "content": "f _ {Y} (y) = \\left\\{ \\begin{array}{l l} \\frac {1}{\\theta^ {\\beta} \\Gamma (\\beta)} y ^ {\\beta - 1} \\mathrm{e} ^ {- y / \\theta}, & y > 0, \\\\ 0, & \\text {其他}, \\end{array} \\right. \\quad \\beta > 0, \\theta > 0.",
+          "image_source": "images/page_94_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.271,
+            0.782,
+            0.293
+          ],
+          "content": "试证明 $Z = X + Y$ 服从参数为 $\\alpha +\\beta ,\\theta$ 的 $\\Gamma$ 分布，即 $X + Y\\sim \\Gamma (\\alpha +\\beta ,\\theta)$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.296,
+            0.547,
+            0.315
+          ],
+          "content": "证 由(5.4)式 $Z = X + Y$ 的概率密度为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.32,
+            0.651,
+            0.355
+          ],
+          "content": "f _ {Z} (z) = \\int_ {- \\infty} ^ {\\infty} f _ {X} (x) f _ {Y} (z - x) \\mathrm{d} x.",
+          "image_source": "images/page_94_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.36,
+            0.214,
+            0.379
+          ],
+          "content": "易知仅当"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.365,
+            0.385,
+            0.627,
+            0.429
+          ],
+          "content": "\\left\\{ \\begin{array}{l l} x > 0, \\\\ z - x > 0, \\end{array} \\right. \\quad \\text {亦即} \\quad \\left\\{ \\begin{array}{l l} x > 0, \\\\ x <   z \\end{array} \\right.",
+          "image_source": "images/page_94_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.433,
+            0.871,
+            0.476
+          ],
+          "content": "时上述积分的被积函数不等于零,于是(参见图3-11)知当z<0时 $f_{Z}(z)=0$ ,而当z>0时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.121,
+            0.48,
+            0.62,
+            0.63
+          ],
+          "content": "\\begin{array}{l} f _ {Z} (z) = \\int_ {0} ^ {z} \\frac {1}{\\theta^ {\\alpha} \\Gamma (\\alpha)} x ^ {\\alpha - 1} \\mathrm{e} ^ {- x / \\theta} \\frac {1}{\\theta^ {\\beta} \\Gamma (\\beta)} (z - x) ^ {\\beta - 1} \\mathrm{e} ^ {- (z - x) / \\theta} \\mathrm{d} x \\\\ = \\frac {\\mathrm{e} ^ {- z / \\theta}}{\\theta^ {\\alpha + \\beta} \\Gamma (\\alpha) \\Gamma (\\beta)} \\int_ {0} ^ {z} x ^ {\\alpha - 1} (z - x) ^ {\\beta - 1} \\mathrm{d} x (\\text {令} x = z t) \\\\ = \\frac {z ^ {\\alpha + \\beta - 1} \\mathrm{e} ^ {- z / \\theta}}{\\theta^ {\\alpha + \\beta} \\Gamma (\\alpha) \\Gamma (\\beta)} \\int_ {0} ^ {1} t ^ {\\alpha - 1} (1 - t) ^ {\\beta - 1} \\mathrm{d} t \\\\ \\stackrel {\\text {记成}} {=} A z ^ {\\alpha + \\beta - 1} \\mathrm{e} ^ {- z / \\theta}, \\\\ \\end{array}",
+          "image_source": "images/page_94_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.635,
+            0.619,
+            0.672
+          ],
+          "content": "其中 $A = \\frac{1}{\\theta^{\\alpha + \\beta}\\Gamma(\\alpha)\\Gamma(\\beta)}\\int_{0}^{1}t^{\\alpha -1}(1 - t)^{\\beta -1}\\mathrm{d}t.$ (5.5)①"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.116,
+            0.674,
+            0.484,
+            0.692
+          ],
+          "content": "现在来计算 A. 由概率密度的性质得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.231,
+            0.697,
+            0.743,
+            0.775
+          ],
+          "content": "\\begin{array}{l} 1 = \\int_ {- \\infty} ^ {\\infty} f _ {Z} (z) \\mathrm{d} z = \\int_ {0} ^ {\\infty} A z ^ {\\alpha + \\beta - 1} \\mathrm{e} ^ {- z / \\theta} \\mathrm{d} z \\\\ = A \\theta^ {\\alpha + \\beta} \\int_ {0} ^ {\\infty} (z / \\theta) ^ {\\alpha + \\beta - 1} \\mathrm{e} ^ {- z / \\theta} \\mathrm{d} (z / \\theta) = A \\theta^ {\\alpha + \\beta} \\Gamma (\\alpha + \\beta), \\\\ \\end{array}",
+          "image_source": "images/page_94_equation_14.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.635,
+            0.49,
+            0.847,
+            0.643
+          ],
+          "sub_type": "text_image",
+          "content": "x\nO\nz",
+          "captions": [
+            {
+              "bbox": [
+                0.702,
+                0.653,
+                0.778,
+                0.668
+              ],
+              "content": "图3-11"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_94_image_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.809,
+            0.314,
+            0.826
+          ],
+          "content": "① (5.5)式中的积分"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.321,
+            0.83,
+            0.653,
+            0.857
+          ],
+          "content": "\\int_ {0} ^ {1} t ^ {\\alpha - 1} (1 - t) ^ {\\beta - 1} \\mathrm{d} t \\stackrel {\\text {记成}} {=} \\mathrm{B} (\\alpha , \\beta), \\qquad \\alpha , \\beta > 0,",
+          "image_source": "images/page_94_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.861,
+            0.607,
+            0.878
+          ],
+          "content": "称为 Beta 函数. 由(5.5), (5.6)式知 Beta 函数与  $\\Gamma$  函数有如下关系:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.414,
+            0.882,
+            0.564,
+            0.913
+          ],
+          "content": "\\mathrm{B} (\\alpha , \\beta) = \\frac {\\Gamma (\\alpha) \\Gamma (\\beta)}{\\Gamma (\\alpha + \\beta)}.",
+          "image_source": "images/page_94_equation_20.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 95,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.372,
+            0.047,
+            0.646,
+            0.064
+          ],
+          "content": "§ 5 两个随机变量的函数的分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.808,
+            0.048,
+            0.866,
+            0.062
+          ],
+          "content": "· 81 ·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.089,
+            0.881,
+            0.126
+          ],
+          "content": "即有 $A = \\frac{1}{\\theta^{\\alpha + \\beta}\\Gamma(\\alpha + \\beta)}.$ (5.6)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.133,
+            0.705,
+            0.193
+          ],
+          "content": "于是 $f_{Z}(z) = \\left\\{ \\begin{array}{ll} \\frac{1}{\\theta^{\\alpha + \\beta}\\Gamma(\\alpha + \\beta)} z^{\\alpha + \\beta - 1}\\mathrm{e}^{-z / \\theta}, & z > 0,\\\\ 0, & \\text{其他.} \\end{array} \\right.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.2,
+            0.597,
+            0.22
+          ],
+          "content": "即 $X + Y\\sim \\Gamma (\\alpha +\\beta ,\\theta)$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.224,
+            0.884,
+            0.341
+          ],
+          "content": "上述结论还能推广到 n 个相互独立的  $\\Gamma$  分布变量之和的情况. 即若  $X_{1}, X_{2}, \\cdots, X_{n}$  相互独立, 且  $X_{i}$  服从参数为  $\\alpha_{i}, \\beta (i = 1, 2, \\cdots, n)$  的  $\\Gamma$  分布, 则  $\\sum_{i=1}^{n} X_{i}$  服从参数为  $\\sum_{i=1}^{n} \\alpha_{i}, \\beta$  的  $\\Gamma$  分布. 这一性质称为  $\\Gamma$  分布的可加性."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.177,
+            0.345,
+            0.582,
+            0.384
+          ],
+          "level": 2,
+          "content": "（二） $Z = \\frac{Y}{X}$ 的分布、 $Z = XY$ 的分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.392,
+            0.884,
+            0.455
+          ],
+          "content": "设 $(X,Y)$ 是二维连续型随机变量，它具有概率密度 $f(x,y)$，则 $Z = \\frac{Y}{X}$，$Z = XY$ 仍为连续型随机变量，其概率密度分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.347,
+            0.461,
+            0.882,
+            0.495
+          ],
+          "content": "f _ {Y / X} (z) = \\int_ {- \\infty} ^ {\\infty} | x | f (x, x z) \\mathrm{d} x, \\tag {5.7}",
+          "image_source": "images/page_95_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.351,
+            0.503,
+            0.882,
+            0.539
+          ],
+          "content": "f _ {X Y} (z) = \\int_ {- \\infty} ^ {\\infty} \\frac {1}{| x |} f \\Big (x, \\frac {z}{x} \\Big) \\mathrm{d} x. \\tag {5.8}",
+          "image_source": "images/page_95_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.546,
+            0.884,
+            0.593
+          ],
+          "content": "又若 $X$ 和 $Y$ 相互独立. 设 $(X, Y)$ 关于 $X, Y$ 的边缘概率密度分别为 $f_{X}(x), f_{Y}(y)$, 则(5.7)式化为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.324,
+            0.599,
+            0.884,
+            0.634
+          ],
+          "content": "f _ {Y / X} (z) = \\int_ {- \\infty} ^ {\\infty} | x | f _ {X} (x) f _ {Y} (x z) \\mathrm{d} x. \\tag {5.9}",
+          "image_source": "images/page_95_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.641,
+            0.283,
+            0.66
+          ],
+          "content": "而(5.8)式化为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.328,
+            0.666,
+            0.885,
+            0.702
+          ],
+          "content": "f _ {X Y} (z) = \\int_ {- \\infty} ^ {\\infty} \\frac {1}{| x |} f _ {X} (x) f _ {Y} \\Big (\\frac {z}{x} \\Big) \\mathrm{d} x. \\tag {5.10}",
+          "image_source": "images/page_95_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.709,
+            0.571,
+            0.728
+          ],
+          "content": "证 $Z = Y / X$ 的分布函数为(如图3-12)"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.18,
+            0.733,
+            0.867,
+            0.912
+          ],
+          "content": "\\begin{array}{l} F _ {Y / X} (z) = P \\{Y / X \\leqslant z \\} = \\iint_ {G _ {1} \\cup G _ {2}} f (x, y) \\mathrm{d} x \\mathrm{d} y \\\\ = \\iint_ {y / x \\leqslant z, x <   0} f (x, y) \\mathrm{d} y \\mathrm{d} x + \\iint_ {y / x \\leqslant z, x > 0} f (x, y) \\mathrm{d} y \\mathrm{d} x \\\\ = \\int_ {- \\infty} ^ {0} \\left[ \\int_ {z x} ^ {\\infty} f (x, y) \\mathrm{d} y \\right] \\mathrm{d} x + \\int_ {0} ^ {\\infty} \\left[ \\int_ {- \\infty} ^ {z x} f (x, y) \\mathrm{d} y \\right] \\mathrm{d} x \\\\ \\xlongequal {\\text {令} y = x u} \\int_ {- \\infty} ^ {0} \\left[ \\int_ {z} ^ {- \\infty} x f (x, x u) \\mathrm{d} u \\right] \\mathrm{d} x + \\int_ {0} ^ {\\infty} \\left[ \\int_ {- \\infty} ^ {z} x f (x, x u) \\mathrm{d} u \\right] \\mathrm{d} x \\\\ \\end{array}",
+          "image_source": "images/page_95_equation_15.jpg"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2021-08-31T17:59:04+08:00",
+      "modified_at": "2021-09-01T15:49:01+08:00",
+      "producer_application": "Epson Scan 2",
+      "page_count": 443,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 80,
+          "width_pt": 477.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 81,
+          "width_pt": 478.0,
+          "height_pt": 647.0
+        },
+        {
+          "page_idx": 82,
+          "width_pt": 477.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 83,
+          "width_pt": 478.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 84,
+          "width_pt": 477.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 85,
+          "width_pt": 479.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 86,
+          "width_pt": 477.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 87,
+          "width_pt": 479.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 88,
+          "width_pt": 478.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 89,
+          "width_pt": 479.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 90,
+          "width_pt": 479.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 91,
+          "width_pt": 478.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 92,
+          "width_pt": 477.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 93,
+          "width_pt": 479.0,
+          "height_pt": 647.0
+        },
+        {
+          "page_idx": 94,
+          "width_pt": 478.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 95,
+          "width_pt": 479.0,
+          "height_pt": 648.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

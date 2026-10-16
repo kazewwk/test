@@ -1,0 +1,3536 @@
+{
+  "pages": [
+    {
+      "page_idx": 281,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.242,
+            0.129,
+            0.773,
+            0.162
+          ],
+          "level": 2,
+          "content": "第十章 bootstrap 方法(自助法)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.208,
+            0.881,
+            0.301
+          ],
+          "content": "bootstrap 方法为统计数据分析提供了强有力的途径和方法，与传统的参数方法相比较，它具有更一般性的应用。bootstrap 方法的实现，需要在计算机上作较多的计算。现在由于计算机的容量大，速度快，这样的计算是容易的。bootstrap 方法现在已成为一种流行的方法。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.306,
+            0.879,
+            0.349
+          ],
+          "content": "bootstrap 方法是由埃弗龙(Bradley Efron)在 20 世纪 70 年代后期建立的，近四十年来发展很快."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.338,
+            0.375,
+            0.682,
+            0.401
+          ],
+          "level": 2,
+          "content": "§ 1 非参数 bootstrap 方法"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.427,
+            0.879,
+            0.471
+          ],
+          "content": "bootstrap 方法的目标是基于已知数据去估计未知参数,例如估计均值、中位数、标准差等,构造未知参数的置信区间,以及对参数作假设检验等."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.176,
+            0.485,
+            0.627,
+            0.509
+          ],
+          "level": 2,
+          "content": "(一) 估计量的标准误差的 bootstrap 估计"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.53,
+            0.881,
+            0.623
+          ],
+          "content": "在估计总体未知参数 $\\theta$ 时，人们不但要给出 $\\theta$ 的估计 $\\hat{\\theta}$，还需要给出这一 $\\hat{\\theta}$ 的精度，通常我们用估计量 $\\hat{\\theta}$ 的标准差 $\\sigma_{\\hat{\\theta}} = \\sqrt{D(\\hat{\\theta})}$ 来度量估计 $\\hat{\\theta}$ 的精度。估计量 $\\hat{\\theta}$ 的标准差也称为估计量 $\\hat{\\theta}$ 的标准误差。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.627,
+            0.88,
+            0.791
+          ],
+          "content": "设 $(X_{1},X_{2},\\cdots,X_{n})$ 是来自以 $F(x)$ 为分布函数的总体的样本, $\\theta$ 是待估的未知参数.用 $\\hat{\\theta}=\\hat{\\theta}(X_{1},X_{2},\\cdots,X_{n})$ 作为 $\\theta$ 的估计量,在实际应用中 $\\hat{\\theta}$ 的抽样分布常常是难以处理的,这样 $\\sqrt{D(\\hat{\\theta})}$ 常没有一个简单的表达式.不过我们可以用蒙特卡罗(Monte Carlo)模拟的方法来求得 $\\sqrt{D(\\hat{\\theta})}$ 的估计.为此,自F产生很多容量为n的样本(例如B个),对于每一个样本计算 $\\hat{\\theta}$ 的值,得到 $\\hat{\\theta}_{1},\\hat{\\theta}_{2},\\cdots,\\hat{\\theta}_{B}$ ,则 $\\sqrt{D(\\hat{\\theta})}$ 可以用"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.379,
+            0.797,
+            0.876,
+            0.841
+          ],
+          "content": "\\hat {\\sigma} _ {\\hat {\\theta}} = \\sqrt {\\frac {1}{B - 1} \\sum_ {i = 1} ^ {B} (\\hat {\\theta} _ {i} - \\bar {\\theta}) ^ {2}} \\tag {1.1}",
+          "image_source": "../../raw/pages_0273-0288/images/page_281_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.846,
+            0.879,
+            0.911
+          ],
+          "content": "来估计, 其中  $\\bar{\\theta}=\\frac{1}{B}\\sum_{i=1}^{B}\\hat{\\theta}_{i}$ . 然而 F 常常是未知的. 这样就无法用模拟的方法产生 F 的样本, 不能得到 (1.1) 式的结果, 需要另外的方法."
+        }
+      ]
+    },
+    {
+      "page_idx": 282,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.137,
+            0.05,
+            0.202,
+            0.063
+          ],
+          "content": "· 268 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.359,
+            0.047,
+            0.63,
+            0.064
+          ],
+          "content": "第十章 bootstrap 方法(自助法)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.086,
+            0.872,
+            0.228
+          ],
+          "content": "现在设总体分布函数 F 未知,但是已经有一个容量为 n 的来自 F 的原始数据样本  $(x_{1}, x_{2}, \\cdots, x_{n})$ ①. 考虑到此时对应于样本  $(x_{1}, x_{2}, \\cdots, x_{n})$  的经验分布  $F_{n}$  是已知的,由格里汶科定理(见第六章 §3),当 n 很大时, $F_{n}$  接近于 F. 我们就用  $F_{n}$  代替 F,在  $F_{n}$  中抽取样本. 在  $F_{n}$  中抽取样本就是在原始样本  $(x_{1}, x_{2}, \\cdots, x_{n})$  中一次随机地取一个个体,放回,再在  $(x_{1}, x_{2}, \\cdots, x_{n})$  中抽取一个个体,直到得到容量为 n 的样本,也就是对具有概率密度函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.234,
+            0.66,
+            0.294
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l l} \\frac {1}{n}, & x \\in (x _ {1}, x _ {2}, \\dots , x _ {n}), \\\\ 0, & \\text {其他} \\end{array} \\right.",
+          "image_source": "../../raw/pages_0273-0288/images/page_282_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.297,
+            0.871,
+            0.343
+          ],
+          "content": "的离散型均匀分布随机变量以放回抽样的方法抽取容量为 n 的样本, 将得到的样本记为  $(x_{1}^{*}, x_{2}^{*}, \\cdots, x_{n}^{*})$ , 称为 bootstrap 样本."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.354,
+            0.872,
+            0.434
+          ],
+          "content": "对 bootstrap 样本按上一段中计算估计  $\\hat{\\theta}(x_{1}, x_{2}, \\cdots, x_{n})$  那样求出  $\\theta$  的估计  $\\hat{\\theta}^{*} = \\hat{\\theta}(x_{1}^{*}, x_{2}^{*}, \\cdots, x_{n}^{*})$ ， $\\hat{\\theta}^{*}$  称为  $\\theta$  的 bootstrap 估计。相继地、独立地抽得许多 bootstrap 样本（例如 B 个），以这些样本分别求出  $\\theta$  的 bootstrap 估计如下:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.442,
+            0.785,
+            0.467
+          ],
+          "content": "bootstrap 样本  $1(x_{1}^{*1}, x_{2}^{*1}, \\cdots, x_{n}^{*1})$ ，求出  $\\theta$  的 bootstrap 估计  $\\hat{\\theta}_{1}^{*}$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.476,
+            0.785,
+            0.499
+          ],
+          "content": "bootstrap 样本  $2(x_{1}^{*2}, x_{2}^{*2}, \\cdots, x_{n}^{*2})$ ，求出  $\\theta$  的 bootstrap 估计  $\\hat{\\theta}_{2}^{*}$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.493,
+            0.504,
+            0.506,
+            0.522
+          ],
+          "content": ":"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.525,
+            0.871,
+            0.587
+          ],
+          "content": "bootstrap 样本 $B(x_{1}^{*B}, x_{2}^{*B}, \\cdots, x_{n}^{*B})$，求出 $\\theta$ 的 bootstrap 估计 $\\hat{\\theta}_{B}^{*}$，则 $\\hat{\\theta}$ 的标准误差 $\\sqrt{D(\\hat{\\theta})}$ 就以"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.359,
+            0.594,
+            0.868,
+            0.637
+          ],
+          "content": "\\hat {\\sigma} _ {\\hat {\\theta}} = \\sqrt {\\frac {1}{B - 1} \\sum_ {i = 1} ^ {B} (\\hat {\\theta} _ {i} ^ {*} - \\bar {\\theta} ^ {*}) ^ {2}} \\tag {1.2}",
+          "image_source": "../../raw/pages_0273-0288/images/page_282_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.642,
+            0.812,
+            0.684
+          ],
+          "content": "来估计,其中  $\\bar{\\theta}^{*}=\\frac{1}{B}\\sum_{i=1}^{B}\\hat{\\theta}_{i}^{*}$ .(1.2)式就定义为  $\\sqrt{D(\\hat{\\theta})}$  的 bootstrap 估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.689,
+            0.694,
+            0.72
+          ],
+          "content": "综上所述,得到求 $\\sqrt{D(\\hat{\\theta})}$ 的 bootstrap 估计的步骤如下:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.723,
+            0.872,
+            0.768
+          ],
+          "content": "$1^{\\circ}$ 对原始样本 $x = (x_{1}, x_{2}, \\dots, x_{n})$ 按放回抽样的方法抽得容量为 $n$ 的样本 $x^{*} = (x_{1}^{*}, x_{2}^{*}, \\dots, x_{n}^{*})$ （称为bootstrap样本）."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.772,
+            0.872,
+            0.86
+          ],
+          "content": "$2^{\\circ}$ 相继地、独立地求出 $B$ 个 $(B\\geqslant 10000)$ 容量为 $n$ 的bootstrap样本 $x^{*i} = (x_1^{*i},x_2^{*i},\\dots ,x_n^{*i}),i = 1,2,\\dots ,B.$ 对第 $i$ 个bootstrap样本计算 $\\hat{\\theta}_i^* = \\hat{\\theta} (x_1^{*i},x_2^{*i},\\dots ,$ $x_{n}^{*i}),i = 1,2,\\dots ,B$ （ $\\hat{\\theta}_i^*$ 称为 $\\theta$ 的第 $i$ 个bootstrap估计）."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.152,
+            0.894,
+            0.781,
+            0.911
+          ],
+          "content": "① 例如，在进行复杂的物理实验时得到一组实验数据，但未能知道数据来自什么分布."
+        }
+      ]
+    },
+    {
+      "page_idx": 283,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.395,
+            0.047,
+            0.62,
+            0.065
+          ],
+          "content": "§ 1 非参数 bootstrap 方法"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.796,
+            0.05,
+            0.863,
+            0.063
+          ],
+          "content": "· 269 ·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.175,
+            0.087,
+            0.254,
+            0.106
+          ],
+          "content": "$3^{\\circ}$ 计算"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.259,
+            0.111,
+            0.741,
+            0.154
+          ],
+          "content": "\\hat {\\sigma} _ {\\hat {\\theta}} = \\sqrt {\\frac {1}{B - 1} \\sum_ {i = 1} ^ {B} (\\hat {\\theta} _ {i} ^ {*} - \\bar {\\theta} ^ {*}) ^ {2}}, \\text {其中} \\bar {\\theta} ^ {*} = \\frac {1}{B} \\sum_ {i = 1} ^ {B} \\hat {\\theta} _ {i} ^ {*}.",
+          "image_source": "../../raw/pages_0273-0288/images/page_283_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.13,
+            0.155,
+            0.878,
+            0.197
+          ],
+          "content": "例 1 某种基金的年回报率是具有分布函数 F 的连续型随机变量, F 未知, F 的中位数  $\\theta$  为未知参数. 现有以下的原始样本(以 % 计):"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.303,
+            0.199,
+            0.751,
+            0.24
+          ],
+          "content": "\\begin{array}{l} 9. 5 \\quad 2 1. 1 \\quad 1 2. 0 \\quad 1 0. 2 \\quad 1 2. 0 \\quad 2 1. 1 \\quad 1 0. 2 \\\\ 1 8. 2 \\quad 1 2. 0 \\quad 9. 5 \\quad 1 8. 0 \\quad 1 0. 2 \\quad 1 8. 2 \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0273-0288/images/page_283_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.242,
+            0.576,
+            0.262
+          ],
+          "content": "试求 F 的中位数的标准误差的 bootstrap 估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.13,
+            0.267,
+            0.879,
+            0.333
+          ],
+          "content": "解 将原始样本自小到大排序, 中间一个数为 12.0, 得中位数为 12.0. 相继地、独立地在上述 13 个数据中, 按放回抽样的方法取样, 取 B=10 000. 得到 10 000 个 bootstrap 样本①:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.13,
+            0.338,
+            0.858,
+            0.429
+          ],
+          "content": "\\begin{array}{l} \\text {样本} 1 \\quad 1 0. 2 \\quad 1 0. 2 \\quad 1 8. 2 \\quad 1 8. 2 \\quad 1 8. 2 \\quad 1 0. 2 \\quad 1 0. 2 \\quad 2 1. 1 \\quad 1 2. 0 \\quad 1 8. 2 \\\\ 2 1. 1 \\quad 2 1. 1 \\quad 1 2. 0 \\\\ \\text {样本} 2 \\quad 1 8. 2 \\quad 9. 5 \\quad 2 1. 1 \\quad 2 1. 1 \\quad 1 0. 2 \\quad 1 8. 0 \\quad 9. 5 \\quad 1 0. 2 \\quad 1 0. 2 \\quad 9. 5 \\\\ 1 0. 2 \\quad 1 2. 0 \\quad 2 1. 1 \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0273-0288/images/page_283_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.502,
+            0.436,
+            0.514,
+            0.454
+          ],
+          "content": ":"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.131,
+            0.459,
+            0.836,
+            0.477
+          ],
+          "content": "\\text {样本} 1 0 0 0 0 \\quad 2 1. 1 \\quad 9. 5 \\quad 1 0. 2 \\quad 9. 5 \\quad 1 2. 0 \\quad 1 2. 0 \\quad 2 1. 1 \\quad 1 8. 2 \\quad 1 8. 0",
+          "image_source": "../../raw/pages_0273-0288/images/page_283_equation_10.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.264,
+            0.484,
+            0.507,
+            0.501
+          ],
+          "content": "2 1. 1 \\quad 1 2. 0 \\quad 9. 5 \\quad 2 1. 1",
+          "image_source": "../../raw/pages_0273-0288/images/page_283_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.13,
+            0.508,
+            0.878,
+            0.552
+          ],
+          "content": "对以上每个 bootstrap 样本, 分别求出其样本中位数  $\\hat{\\theta}_{i}^{*}, i=1,2,\\cdots,10\\ 000$ . 将它们代入 (1.2) 式, 得到所求的标准误差的 bootstrap 估计为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.294,
+            0.559,
+            0.707,
+            0.604
+          ],
+          "content": "\\hat {\\sigma} _ {\\hat {\\theta}} = \\sqrt {\\frac {1}{9 9 9 9} \\sum_ {i = 1} ^ {1 0 0 0 0} (\\hat {\\theta} _ {i} ^ {*} - \\bar {\\theta} ^ {*}) ^ {2}} = 2. 6 7 6 1 3 1.",
+          "image_source": "../../raw/pages_0273-0288/images/page_283_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.607,
+            0.329,
+            0.649
+          ],
+          "content": "其中 $\\bar{\\theta}^{*} = \\frac{1}{B}\\sum_{i = 1}^{B}\\hat{\\theta}_{i}^{*}$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.173,
+            0.652,
+            0.46,
+            0.672
+          ],
+          "content": "计算程序见第十一章 §6 例 1."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.853,
+            0.654,
+            0.877,
+            0.671
+          ],
+          "content": "□"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.173,
+            0.687,
+            0.625,
+            0.71
+          ],
+          "level": 2,
+          "content": "(二) 估计量的均方误差的 bootstrap 估计"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.174,
+            0.724,
+            0.339,
+            0.743
+          ],
+          "content": "下面举例来说明."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.13,
+            0.748,
+            0.88,
+            0.791
+          ],
+          "content": "例 2(均方误差) 设金属元素铂的升华热是具有分布函数 F(F 未知) 的连续型随机变量. F 的中位数  $\\theta$  是未知参数, 现测得以下的原始样本(以 kcal/mol 计 $^{②}$ ):"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.168,
+            0.796,
+            0.842,
+            0.84
+          ],
+          "content": "\\begin{array}{l} 1 3 3. 7 \\quad 1 3 4. 1 \\quad 1 3 4. 3 \\quad 1 3 4. 4 \\quad 1 3 4. 5 \\quad 1 3 4. 7 \\quad 1 3 4. 8 \\quad 1 3 4. 8 \\quad 1 3 4. 8 \\\\ 1 3 4. 9 \\quad 1 3 4. 9 \\quad 1 3 5. 0 \\quad 1 3 5. 0 \\quad 1 3 5. 2 \\quad 1 3 5. 2 \\quad 1 3 5. 4 \\quad 1 3 5. 4 \\quad 1 3 5. 8 \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0273-0288/images/page_283_equation_20.jpg"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.161,
+            0.874,
+            0.853,
+            0.89
+          ],
+          "content": "① 由于取样是用放回抽样的方法，原始样本中有些元素会不止抽到一次，有些元素不会被抽到."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.164,
+            0.892,
+            0.654,
+            0.909
+          ],
+          "content": "② 1 千卡/摩尔 = 4186.8 焦耳/摩尔 (1 kcal/mol = 4186.8 J/mol)."
+        }
+      ]
+    },
+    {
+      "page_idx": 284,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.137,
+            0.051,
+            0.204,
+            0.065
+          ],
+          "content": "· 270 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.36,
+            0.048,
+            0.631,
+            0.066
+          ],
+          "content": "第十章 bootstrap 方法(自助法)"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.199,
+            0.089,
+            0.796,
+            0.107
+          ],
+          "content": "1 3 5. 8 \\quad 1 3 6. 3 \\quad 1 3 6. 6 \\quad 1 4 1. 2 \\quad 1 4 3. 3 \\quad 1 4 6. 5 \\quad 1 4 7. 8 \\quad 1 4 8. 8",
+          "image_source": "../../raw/pages_0273-0288/images/page_284_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.113,
+            0.871,
+            0.157
+          ],
+          "content": "(数据已排序). 以原始样本的中位数 $M = M(x)$ 作为总体中位数 $\\theta$ 的估计, 试求均方误差 $MSE = E[(M - \\theta)^2]$ 的 bootstrap 估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.161,
+            0.873,
+            0.239
+          ],
+          "content": "解 将原始样本自小到大排序, 左起第 13 个数为 135.0, 左起第 14 个数为 135.2, 于是原始样本的中位数为 135.1. 以 135.1 作为总体中位数 $\\theta$ 的估计, 即 $\\hat{\\theta} = 135.1$. 需估计均值 $E[(M - 135.1)^2]$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.243,
+            0.759,
+            0.263
+          ],
+          "content": "相继地、独立地自原始样本抽取 10 000 个 bootstrap 样本如下:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.12,
+            0.267,
+            0.847,
+            0.334
+          ],
+          "content": "\\begin{array}{c c c c c c c c c c} \\text {样本 1} & 1 4 3. 3 & 1 3 4. 8 & 1 4 8. 8 & 1 3 5. 4 & 1 3 5. 2 & 1 3 5. 2 & 1 3 4. 8 & 1 3 4. 4 & 1 3 4. 7 \\\\ & 1 3 5. 2 & 1 3 5. 0 & 1 3 5. 0 & 1 3 5. 4 & 1 3 5. 4 & 1 3 6. 3 & 1 3 4. 4 & 1 3 4. 9 & 1 3 4. 8 \\\\ & 1 3 6. 6 & 1 3 4. 1 & 1 3 4. 8 & 1 3 4. 8 & 1 3 3. 7 & 1 3 4. 8 & 1 3 4. 8 & 1 3 4. 4 \\end{array}",
+          "image_source": "../../raw/pages_0273-0288/images/page_284_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.34,
+            0.667,
+            0.359
+          ],
+          "content": "得样本中位数为  $M_{1}^{*}=134.85,(M_{1}^{*}-135.1)^{2}=0.0625;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.469,
+            0.365,
+            0.482,
+            0.382
+          ],
+          "content": ":"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.121,
+            0.388,
+            0.855,
+            0.48
+          ],
+          "content": "\\begin{array}{l l l l l l l l} \\text {样本 10 000} & 1 3 5. 8 & 1 3 5. 2 & 1 3 4. 9 & 1 3 5. 2 & 1 3 5. 4 & 1 3 5. 2 & 1 3 4. 3 & 1 3 4. 9 \\\\ & 1 3 4. 3 & 1 3 5. 0 & 1 3 4. 5 & 1 3 5. 8 & 1 4 6. 5 & 1 4 3. 3 & 1 3 5. 0 & 1 3 5. 2 \\\\ & 1 4 8. 8 & 1 3 6. 6 & 1 3 5. 4 & 1 3 6. 6 & 1 3 5. 2 & 1 3 3. 7 & 1 4 6. 5 & 1 3 5. 0 \\\\ & 1 3 5. 4 & 1 3 4. 8 \\end{array}",
+          "image_source": "../../raw/pages_0273-0288/images/page_284_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.486,
+            0.668,
+            0.505
+          ],
+          "content": "得样本中位数为 $M_{10000}^{*} = 135.2, (M_{10000}^{*} - 135.1)^{2} = 0.01.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.509,
+            0.832,
+            0.53
+          ],
+          "content": "将这 10 000 个数 $(M_{1}^{*}-135.1)^{2},\\cdots,(M_{10\\ 000}^{*}-135.1)^{2}$ 取平均值,得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.283,
+            0.534,
+            0.701,
+            0.577
+          ],
+          "content": "\\frac {1}{1 0 0 0 0} \\sum_ {i = 1} ^ {1 0 0 0 0} (M _ {i} ^ {*} - 1 3 5. 1) ^ {2} = 0. 0 7 4 3 2 3 2 5.",
+          "image_source": "../../raw/pages_0273-0288/images/page_284_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.581,
+            0.779,
+            0.6
+          ],
+          "content": "我们就用0.07432325作为均方误差 $E[(M - \\theta)^2]$ 的bootstrap估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.605,
+            0.452,
+            0.625
+          ],
+          "content": "计算程序见第十一章 §6 例 2."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.846,
+            0.605,
+            0.871,
+            0.623
+          ],
+          "content": "□"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.165,
+            0.64,
+            0.469,
+            0.662
+          ],
+          "level": 2,
+          "content": "(三) 偏差的 bootstrap 估计"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.683,
+            0.871,
+            0.74
+          ],
+          "content": "设 $(X_{1},X_{2},\\cdots,X_{n})$ 是来自以F为分布函数的总体的样本, $\\hat{\\theta}=\\hat{\\theta}(X_{1},X_{2},\\cdots,X_{n})$ 是未知参数 $\\theta$ 的估计量. $\\theta$ 的估计量 $\\hat{\\theta}$ 关于 $\\theta$ 的偏差定义为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.382,
+            0.748,
+            0.606,
+            0.772
+          ],
+          "content": "b = E (\\hat {\\theta} - \\theta) = E (\\hat {\\theta}) - \\theta .",
+          "image_source": "../../raw/pages_0273-0288/images/page_284_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.784,
+            0.399,
+            0.805
+          ],
+          "content": "当 $\\hat{\\theta}$ 是 $\\theta$ 的无偏估计时 $b = 0$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.81,
+            0.873,
+            0.855
+          ],
+          "content": "例3 试在例2中，以原始样本中位数 $M = M(\\pmb{x})$ 作为总体中位数 $\\theta$ 的估计，求偏差 $b = E(M - \\theta)$ 的bootstrap估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.859,
+            0.873,
+            0.913
+          ],
+          "content": "解 由例2知原始样本的中位数为135.1.以135.1作为总体中位数 $\\theta$ 的估计，即 $\\hat{\\theta} = 135.1.$ 需估计均值 $E(M - 135.1)$."
+        }
+      ]
+    },
+    {
+      "page_idx": 285,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.395,
+            0.048,
+            0.62,
+            0.066
+          ],
+          "content": "§ 1 非参数 bootstrap 方法"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.798,
+            0.05,
+            0.863,
+            0.064
+          ],
+          "content": "· 271 ·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.175,
+            0.089,
+            0.574,
+            0.108
+          ],
+          "content": "对于例2中10000个bootstrap样本计算"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.34,
+            0.114,
+            0.669,
+            0.133
+          ],
+          "content": "M _ {i} ^ {*} - 1 3 5. 1, \\quad i = 1, 2, \\dots , 1 0 0 0 0,",
+          "image_source": "../../raw/pages_0273-0288/images/page_285_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.138,
+            0.69,
+            0.158
+          ],
+          "content": "即有对于样本1有 $M_1^* - 135.1 = 134.85 - 135.1 = -0.25$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.495,
+            0.163,
+            0.508,
+            0.182
+          ],
+          "content": ":"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.174,
+            0.188,
+            0.717,
+            0.206
+          ],
+          "content": "对于样本 10 000 有  $M_{10\\ 000}^{*}-135.1=135.2-135.1=0.1$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.212,
+            0.702,
+            0.232
+          ],
+          "content": "将上述10000个数取平均值得到偏差 $b$ 的bootstrap估计为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.162,
+            0.237,
+            0.841,
+            0.281
+          ],
+          "content": "\\hat {b} ^ {*} = \\frac {1}{1 0 0 0 0} \\sum_ {i = 1} ^ {1 0 0 0 0} (M _ {i} ^ {*} - 1 3 5. 1) = \\frac {1}{1 0 0 0 0} \\sum_ {i = 1} ^ {1 0 0 0 0} M _ {i} ^ {*} - 1 3 5. 1 = 0. 0 4 3 3 3,",
+          "image_source": "../../raw/pages_0273-0288/images/page_285_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.174,
+            0.283,
+            0.461,
+            0.303
+          ],
+          "content": "计算程序见第十一章 §6 例 3."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.855,
+            0.285,
+            0.879,
+            0.302
+          ],
+          "content": "□"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.174,
+            0.318,
+            0.727,
+            0.341
+          ],
+          "level": 2,
+          "content": "(四) 用分位数法求未知参数的 bootstrap 置信区间"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.13,
+            0.356,
+            0.88,
+            0.426
+          ],
+          "content": "设  $\\boldsymbol{X}=(X_{1},X_{2},\\cdots,X_{n})$  是来自以 F 为分布函数 (F 未知) 的总体的样本.  $\\boldsymbol{x}=(x_{1},x_{2},\\cdots,x_{n})$  是已知的来自 F 的原始样本. 总体中含有未知参数  $\\theta$ . 现在来求  $\\theta$  的置信水平为  $1-\\alpha$  的置信区间."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.13,
+            0.431,
+            0.881,
+            0.518
+          ],
+          "content": "相继地、独立地自样本  $\\boldsymbol{x}=(x_{1},x_{2},\\cdots,x_{n})$  抽出 B 个（例如取 B=10 000）容量为 n 的 bootstrap 样本，对于每个 bootstrap 样本求出  $\\theta$  的 bootstrap 估计  $\\hat{\\theta}_{1}^{*}$ ， $\\hat{\\theta}_{2}^{*}$ ， $\\cdots$ ， $\\hat{\\theta}_{B}^{*}$ ，将它们自小到大排序得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.404,
+            0.522,
+            0.602,
+            0.546
+          ],
+          "content": "\\hat {\\theta} _ {(1)} ^ {*} \\leqslant \\hat {\\theta} _ {(2)} ^ {*} \\leqslant \\dots \\leqslant \\hat {\\theta} _ {(B)} ^ {*}.",
+          "image_source": "../../raw/pages_0273-0288/images/page_285_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.546,
+            0.371,
+            0.565
+          ],
+          "content": "令 $m = [(a / 2)B]$ ，则区间"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.438,
+            0.57,
+            0.879,
+            0.593
+          ],
+          "content": "(\\hat {\\theta} _ {(m)} ^ {*}, \\hat {\\theta} _ {(B - m)} ^ {*}) \\tag {1.3}",
+          "image_source": "../../raw/pages_0273-0288/images/page_285_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.601,
+            0.879,
+            0.647
+          ],
+          "content": "是  $\\theta$  的一个近似  $1-\\alpha$  置信区间. 这一区间的两端点分别是诸  $\\hat{\\theta}_{i}^{*}(i=1,2,\\cdots,B)$  的经验分布的下分位数  $\\alpha/2,1-\\alpha/2$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.651,
+            0.88,
+            0.695
+          ],
+          "content": "区间(1.3)称为  $\\theta$  的置信水平为  $1-\\alpha$  的 bootstrap 置信区间. 这种求置信区间的方法称为分位数法."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.7,
+            0.881,
+            0.743
+          ],
+          "content": "例 4 在例 2 中, 给出了金属元素铂的升华热的 26 个数据. 试利用这些数据求下述置信区间:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.131,
+            0.748,
+            0.88,
+            0.841
+          ],
+          "sub_type": "text",
+          "content": "（1）以样本中位数作为总体中位数 $\\theta$ 的估计，求 $\\theta$ 的置信水平为0.95的bootstrap置信区间.\n（2）以样本 $20\\%$ 截尾均值作为总体 $20\\%$ 截尾均值 $\\mu_t$ 的估计，求 $\\mu_t$ 的置信水平为0.95的bootstrap置信区间."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.173,
+            0.846,
+            0.879,
+            0.866
+          ],
+          "content": "解 $n = 26, B = 10000$，原始样本以及10000个模拟bootstrap样本见例2."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.87,
+            0.879,
+            0.915
+          ],
+          "content": "（1）对于每一个 bootstrap 样本算出中位数  $M_{1}^{*}, M_{2}^{*}, \\cdots, M_{10\\ 000}^{*}$ . 将它们自小到大排序得到"
+        }
+      ]
+    },
+    {
+      "page_idx": 286,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.138,
+            0.053,
+            0.204,
+            0.067
+          ],
+          "content": "· 272 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.361,
+            0.051,
+            0.631,
+            0.068
+          ],
+          "content": "第十章 bootstrap 方法(自助法)"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.173,
+            0.092,
+            0.812,
+            0.111
+          ],
+          "content": "M _ {(1)} ^ {*} \\leqslant M _ {(2)} ^ {*} \\leqslant \\dots \\leqslant M _ {(2 5 0)} ^ {*} \\leqslant M _ {(2 5 1)} ^ {*} \\leqslant \\dots \\leqslant M _ {(9 7 5 0)} ^ {*} \\leqslant M _ {(9 7 5 1)} ^ {*} \\leqslant \\dots \\leqslant M _ {(1 0 0 0 0)} ^ {*}.",
+          "image_source": "../../raw/pages_0273-0288/images/page_286_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.116,
+            0.869,
+            0.16
+          ],
+          "content": "由 $B = 10000, 1 - \\alpha = 0.95, \\alpha = 0.05, m = [(\\alpha / 2)B] = [0.025 \\times 10000] = 250, B - m = 9750$，得 $\\theta$ 的一个置信水平为 0.95 的 bootstrap 置信区间为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.308,
+            0.166,
+            0.679,
+            0.185
+          ],
+          "content": "(M _ {(2 5 0)} ^ {*}, M _ {(9 7 5 0)} ^ {*}) = (1 3 4. 8 0, 1 3 5. 8 0).",
+          "image_source": "../../raw/pages_0273-0288/images/page_286_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.19,
+            0.872,
+            0.233
+          ],
+          "content": "（2）对于例 2 中的 10 000 个 bootstrap 样本中的每一个，算出样本 20% 截尾均值: $\\bar{x}_{t1}^{*}, \\bar{x}_{t2}^{*}, \\cdots, \\bar{x}_{t10\\ 000}^{*}$ ，将它们自小到大排序得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.177,
+            0.24,
+            0.812,
+            0.26
+          ],
+          "content": "\\overline {{x}} _ {t (1)} ^ {*} \\leqslant \\overline {{x}} _ {t (2)} ^ {*} \\leqslant \\dots \\leqslant \\overline {{x}} _ {t (2 5 0)} ^ {*} \\leqslant \\overline {{x}} _ {t (2 5 1)} ^ {*} \\leqslant \\dots \\leqslant \\overline {{x}} _ {t (9 7 5 0)} ^ {*} \\leqslant \\overline {{x}} _ {t (9 7 5 1)} ^ {*} \\leqslant \\dots \\leqslant \\overline {{x}} _ {t (1 0 0 0 0)} ^ {*}.",
+          "image_source": "../../raw/pages_0273-0288/images/page_286_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.264,
+            0.872,
+            0.307
+          ],
+          "content": "按分位数法由(1.3)式得到 $20\\%$ 截尾均值的一个置信水平为0.95的bootstrap置信区间为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.37,
+            0.314,
+            0.617,
+            0.331
+          ],
+          "content": "(1 3 4. 8 9 3 8, 1 3 7. 4 5 6 3).",
+          "image_source": "../../raw/pages_0273-0288/images/page_286_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.338,
+            0.451,
+            0.357
+          ],
+          "content": "计算程序见第十一章 §6 例 4."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.362,
+            0.627,
+            0.381
+          ],
+          "content": "例 5 有 30 窝仔猪, 出生时各窝猪的存活只数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.219,
+            0.386,
+            0.774,
+            0.429
+          ],
+          "content": "\\begin{array}{c c c c c c c c c c c c c c c c} 9 & 8 & 1 0 & 1 2 & 1 1 & 1 2 & 7 & 9 & 1 1 & 8 & 9 & 7 & 7 & 8 & 9 \\\\ 7 & 9 & 9 & 1 0 & 9 & 9 & 9 & 1 2 & 1 0 & 1 0 & 9 & 1 3 & 1 1 & 1 3 & 9 \\end{array}",
+          "image_source": "../../raw/pages_0273-0288/images/page_286_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.434,
+            0.871,
+            0.479
+          ],
+          "content": "以样本均值  $\\bar{x}$  作为总体均值  $\\mu$  的估计，以样本标准差 s 作为总体标准差  $\\sigma$  的估计，试按分位数法求  $\\mu$  以及  $\\sigma$  的置信水平为 0.90 的 bootstrap 置信区间."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.484,
+            0.871,
+            0.527
+          ],
+          "content": "解 相继地、独立地自原始样本数据用放回抽样的方法,得到 10 000 个容量均为 30 的 bootstrap 样本:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.12,
+            0.532,
+            0.801,
+            0.599
+          ],
+          "content": "\\begin{array}{c c c c c c c c c c c c c c c c c} \\text {样本 1} & 8 & 8 & 1 0 & 1 2 & 7 & 1 1 & 1 1 & 8 & 1 0 & 1 2 & 7 & 9 & 1 0 & 8 & 9 & 1 1 \\\\ & 1 0 & 1 3 & 9 & 9 & 9 & 1 0 & 8 & 1 3 & 8 & 9 & 9 & 7 & 1 0 & 8 \\\\ & & & & & & \\vdots \\end{array}",
+          "image_source": "../../raw/pages_0273-0288/images/page_286_equation_14.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.12,
+            0.605,
+            0.842,
+            0.648
+          ],
+          "content": "\\begin{array}{c c c c c c c c c c c c c c c c c} \\text {样本} & 1 0 & 0 0 0 & 9 & 1 0 & 7 & 1 0 & 9 & 7 & 9 & 7 & 1 0 & 7 & 9 & 9 & 1 3 & 1 1 & 1 2 & 1 0 \\\\ & & & 1 2 & 1 2 & 1 0 & 9 & 8 & 1 1 & 9 & 9 & 9 & 1 1 & 1 2 & 1 1 & 1 2 & 9 \\end{array}",
+          "image_source": "../../raw/pages_0273-0288/images/page_286_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.654,
+            0.871,
+            0.724
+          ],
+          "content": "对上述每个 bootstrap 样本算出样本均值  $\\bar{x}_{i}^{*}(i=1,2,\\cdots,10\\ 000)$ ，将 10 000 个  $\\bar{x}_{i}^{*}$  按自小到大排序，左起第 500 位为  $\\bar{x}_{(500)}^{*}=9.03$ ，左起第 9 500 位为  $\\bar{x}_{(9\\ 500)}^{*}=10.038$ 。于是按 (1.3) 式得  $\\mu$  的一个置信水平为 0.90 的 bootstrap 置信区间为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.319,
+            0.729,
+            0.668,
+            0.748
+          ],
+          "content": "(\\overline {{x}} _ {(5 0 0)} ^ {*}, \\quad \\overline {{x}} _ {(9 5 0 0)} ^ {*}) = (9. 0 3, 1 0. 0 3 8).",
+          "image_source": "../../raw/pages_0273-0288/images/page_286_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.753,
+            0.872,
+            0.841
+          ],
+          "content": "对上述 10 000 个 bootstrap 样本的每一个算出标准差  $s_{i}^{*}(i=1,2,\\cdots,10\\ 000)$ ，将 10 000 个  $s_{i}^{*}$  按自小到大排序。左起第 500 位为  $s_{(500)}^{*}=1.35$ ，左起第 9 500 位为  $s_{(9\\ 500)}^{*}=1.98$ ，于是按 (1.3) 式得  $\\sigma$  的一个置信水平为 0.90 的 bootstrap 置信区间为  $(s_{(500)}^{*}, s_{(9\\ 500)}^{*})=(1.35, 1.98)$ 。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.846,
+            0.509,
+            0.866
+          ],
+          "content": "(本题的计算程序由读者自行给出.)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.844,
+            0.848,
+            0.869,
+            0.865
+          ],
+          "content": "□"
+        }
+      ]
+    },
+    {
+      "page_idx": 287,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.405,
+            0.05,
+            0.612,
+            0.067
+          ],
+          "content": "§ 2 参数 bootstrap 方法"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.798,
+            0.051,
+            0.864,
+            0.065
+          ],
+          "content": "· 273 ·"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.351,
+            0.113,
+            0.669,
+            0.138
+          ],
+          "level": 2,
+          "content": "§ 2 参数 bootstrap 方法"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.164,
+            0.885,
+            0.276
+          ],
+          "content": "假设所研究的总体的分布函数  $F(x;\\beta)$  的形式已知，但其中包含未知参数  $\\beta$  ( $\\beta$  可以是向量). 现在已知有一个来自  $F(x;\\beta)$  的样本  $X_{1}, X_{2}, \\cdots, X_{n}$ . 利用这一样本求出  $\\beta$  (在  $F(x;\\beta)$  下) 的最大似然估计  $\\hat{\\beta}$ . 在  $F(x;\\beta)$  中以  $\\hat{\\beta}$  代替  $\\beta$  得  $F(x;\\hat{\\beta})$ ，接着在  $F(x;\\hat{\\beta})$  中产生容量为 n 的样本"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.368,
+            0.285,
+            0.642,
+            0.309
+          ],
+          "content": "X _ {1} ^ {*}, X _ {2} ^ {*}, \\dots , X _ {n} ^ {*} \\sim F (x; \\hat {\\beta}) ①.",
+          "image_source": "../../raw/pages_0273-0288/images/page_287_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.313,
+            0.883,
+            0.382
+          ],
+          "content": "这种样本可以产生很多个,例如产生 B 个 $(B\\geqslant10\\ 000)$ ,就可以利用这些样本对总体进行统计推断,其做法与非参数 bootstrap 方法一样.这种方法称为参数 bootstrap 方法."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.175,
+            0.386,
+            0.846,
+            0.406
+          ],
+          "content": "例 1 某种类型的热泵的寿命 X(以年计)服从指数分布, 其分布函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.307,
+            0.411,
+            0.701,
+            0.455
+          ],
+          "content": "F (x; \\theta) = \\left\\{ \\begin{array}{l l} 1 - \\mathrm{e} ^ {- x / \\theta}, & x > 0, \\\\ 0, & \\text {其他}, \\end{array} \\right. \\quad \\theta > 0 \\text {未知}.",
+          "image_source": "../../raw/pages_0273-0288/images/page_287_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.46,
+            0.324,
+            0.479
+          ],
+          "content": "且知总体具有样本:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.317,
+            0.484,
+            0.741,
+            0.527
+          ],
+          "content": "\\begin{array}{l} 0. 4 \\quad 0. 6 \\quad 0. 7 \\quad 0. 9 \\quad 1. 0 \\quad 1. 3 \\quad 1. 9 \\quad 2. 0 \\\\ 4. 8 \\quad 5. 1 \\quad 5. 3 \\quad 5. 3 \\quad 6. 0 \\quad 1 2. 2 \\quad 1 5. 8 \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0273-0288/images/page_287_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.533,
+            0.724,
+            0.553
+          ],
+          "content": "求总体 X 的均值  $\\mu$  的置信水平为 0.95 的 bootstrap 置信区间."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.557,
+            0.883,
+            0.61
+          ],
+          "content": "解 由题意知上述样本的样本均值为 $\\bar{x} = 4.22$. 由最大似然估计法求得 $\\theta$ 的估计为 $\\hat{\\theta} = \\bar{x} = 4.22$. 以 $\\hat{\\theta}$ 代替 $F(x; \\theta)$ 中的 $\\theta$, 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.36,
+            0.615,
+            0.655,
+            0.659
+          ],
+          "content": "F (x; \\theta) = \\left\\{ \\begin{array}{l l} 1 - \\mathrm{e} ^ {- x / 4. 2 2}, & x > 0, \\\\ 0, & \\text {其他}. \\end{array} \\right.",
+          "image_source": "../../raw/pages_0273-0288/images/page_287_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.664,
+            0.884,
+            0.709
+          ],
+          "content": "相继地、独立地以  $F(x;\\theta)$  为分布函数产生 10 000 个容量为 15 的 bootstrap 样本. 算出这 10 000 个样本各自的均值  $\\bar{x}_{1}^{*}, \\bar{x}_{2}^{*}, \\cdots, \\bar{x}_{10\\ 000}^{*}$ . 将它们自小到大排序得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.27,
+            0.715,
+            0.745,
+            0.734
+          ],
+          "content": "\\overline {{x}} _ {(1)} ^ {*} \\leqslant \\overline {{x}} _ {(2)} ^ {*} \\leqslant \\dots \\leqslant \\overline {{x}} _ {(2 5 0)} ^ {*} \\leqslant \\dots \\leqslant \\overline {{x}} _ {(9 7 5 0)} ^ {*} \\leqslant \\dots \\leqslant \\overline {{x}} _ {(1 0 0 0 0)} ^ {*},",
+          "image_source": "../../raw/pages_0273-0288/images/page_287_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.739,
+            0.711,
+            0.758
+          ],
+          "content": "得总体的均值 $\\mu$ 的置信水平为0.95的bootstrap置信区间为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.31,
+            0.763,
+            0.704,
+            0.782
+          ],
+          "content": "(\\bar {x} _ {(2 5 0)} ^ {*}, \\bar {x} _ {(9 7 5 0)} ^ {*}) = (2. 3 9 2 0 9, 6. 6 8 2 1 3).",
+          "image_source": "../../raw/pages_0273-0288/images/page_287_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.178,
+            0.787,
+            0.464,
+            0.806
+          ],
+          "content": "计算程序见第十一章 §6 例 5."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.811,
+            0.885,
+            0.856
+          ],
+          "content": "例 2 猫的听觉神经反应速度 Y 近似服从参数为  $\\lambda$  的泊松分布. 抽取了 10 只猫, 测得它们的听觉神经纤维反应速度(即为噪声爆发的每 200 ms 的脉冲个"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.166,
+            0.896,
+            0.646,
+            0.915
+          ],
+          "content": "① 意指样本  $X_{1}^{*}, X_{2}^{*}, \\cdots, X_{n}^{*}$  来自以  $F(x; \\hat{\\beta})$  为分布函数的总体."
+        }
+      ]
+    },
+    {
+      "page_idx": 288,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.138,
+            0.051,
+            0.204,
+            0.065
+          ],
+          "content": "· 274 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.361,
+            0.05,
+            0.632,
+            0.067
+          ],
+          "content": "第十章 bootstrap 方法(自助法)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.09,
+            0.256,
+            0.109
+          ],
+          "content": "数)数据如下:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.175,
+            0.116,
+            0.818,
+            0.133
+          ],
+          "content": "1 5. 1 \\quad 1 4. 6 \\quad 1 2. 0 \\quad 1 9. 2 \\quad 1 6. 1 \\quad 1 5. 5 \\quad 1 1. 3 \\quad 1 8. 7 \\quad 1 7. 1 \\quad 1 7. 2",
+          "image_source": "../../raw/pages_0289-0304/images/page_288_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.14,
+            0.732,
+            0.16
+          ],
+          "content": "试求总体 $Y$ 的均值 $\\mu$ 的置信水平为0.95的bootstrap置信区间."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.165,
+            0.412,
+            0.183
+          ],
+          "content": "解 泊松分布的分布律为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.189,
+            0.655,
+            0.225
+          ],
+          "content": "P \\{Y = k \\} = \\frac {\\lambda^ {k} \\mathrm{e} ^ {- \\lambda}}{k !}, \\quad k = 0, 1, 2, \\dots .",
+          "image_source": "../../raw/pages_0289-0304/images/page_288_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.238,
+            0.769,
+            0.259
+          ],
+          "content": "由已知数据求出参数 $\\lambda$ 的最大似然估计为 $\\hat{\\lambda} = \\bar{y} = 15.68$ ，得分布律为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.295,
+            0.264,
+            0.868,
+            0.3
+          ],
+          "content": "P \\{Y = k \\} = \\frac {1 5 . 6 8 ^ {k} \\mathrm{e} ^ {- 1 5 . 6 8}}{k !}, \\quad k = 0, 1, 2, \\dots . \\tag {2.1}",
+          "image_source": "../../raw/pages_0289-0304/images/page_288_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.307,
+            0.87,
+            0.352
+          ],
+          "content": "相继地、独立地从分布律(2.1)产生10 000个容量为10的bootstrap样本.算出这10 000个样本各自的均值 $\\overline{y}_{1}^{*},\\overline{y}_{2}^{*},\\cdots,\\overline{y}_{10\\ 000}^{*}$ ，将它们自小到大排序得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.255,
+            0.359,
+            0.732,
+            0.379
+          ],
+          "content": "\\overline {{y}} _ {(1)} ^ {*} \\leqslant \\overline {{y}} _ {(2)} ^ {*} \\leqslant \\dots \\leqslant \\overline {{y}} _ {(2 5 0)} ^ {*} \\leqslant \\dots \\leqslant \\overline {{y}} _ {(9 7 5 0)} ^ {*} \\leqslant \\dots \\leqslant \\overline {{y}} _ {(1 0 0 0 0)} ^ {*},",
+          "image_source": "../../raw/pages_0289-0304/images/page_288_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.384,
+            0.698,
+            0.403
+          ],
+          "content": "得总体的均值 $\\mu$ 的置信水平为0.95的bootstrap置信区间为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.334,
+            0.408,
+            0.65,
+            0.428
+          ],
+          "content": "(\\bar {y} _ {(2 5 0)} ^ {*}, \\bar {y} _ {(9 7 5 0)} ^ {*}) = (1 3. 3, 1 8. 2).",
+          "image_source": "../../raw/pages_0289-0304/images/page_288_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.433,
+            0.451,
+            0.452
+          ],
+          "content": "计算程序见第十一章 §6 例 6."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.457,
+            0.87,
+            0.503
+          ],
+          "content": "例3 某种疾病患者的预计存活时间(自确诊到死亡的时间,以月计)是一个随机变量 $X$, 已知 $X \\sim N(\\mu, \\sigma^2)$, $\\mu, \\sigma^2$ 未知. 设有样本(以月计):"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.24,
+            0.507,
+            0.751,
+            0.551
+          ],
+          "content": "\\begin{array}{l} 8. 0 \\quad 1 3. 6 \\quad 1 3. 2 \\quad 1 3. 6 \\quad 1 2. 5 \\quad 1 4. 2 \\quad 1 4. 9 \\quad 1 4. 5 \\\\ 1 3. 4 \\quad 8. 6 \\quad 1 1. 5 \\quad 1 6. 0 \\quad 1 4. 0 \\quad 1 9. 0 \\quad 1 7. 9 \\quad 1 7. 0 \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0289-0304/images/page_288_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.556,
+            0.87,
+            0.601
+          ],
+          "content": "试用参数 bootstrap 方法(1)求总体 X 的均值  $\\mu$  的置信水平为 0.95 的 bootstrap 置信区间。(2)求 X 的中位数  $\\theta$  的置信水平为 0.95 的 bootstrap 置信区间."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.605,
+            0.87,
+            0.649
+          ],
+          "content": "解 分布 $N(\\mu, \\sigma^2)$ 中的未知参数 $\\mu, \\sigma^2$ 的最大似然估计分别为（见第七章 §1 例5）:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.281,
+            0.656,
+            0.701,
+            0.689
+          ],
+          "content": "\\hat {\\mu} = \\bar {x} = \\frac {1}{1 6} (8. 0 + 1 3. 6 + \\dots + 1 7. 0) = 1 3. 8 7,",
+          "image_source": "../../raw/pages_0289-0304/images/page_288_equation_18.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.341,
+            0.697,
+            0.634,
+            0.74
+          ],
+          "content": "\\hat {\\sigma} ^ {2} = \\frac {1}{1 6} \\sum_ {i = 1} ^ {1 6} (x _ {i} - \\bar {x}) ^ {2} = 8. 0 6.",
+          "image_source": "../../raw/pages_0289-0304/images/page_288_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.744,
+            0.869,
+            0.812
+          ],
+          "content": "（1）相继地、独立地从分布 N(13.87, 8.06) 产生 10 000 个容量为 16 的 bootstrap 样本。算出这 10 000 个样本各自的均值  $\\bar{x}_{1}^{*}, \\bar{x}_{2}^{*}, \\cdots, \\bar{x}_{10\\ 000}^{*}$ ，将它们自小到大排序得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.252,
+            0.818,
+            0.731,
+            0.839
+          ],
+          "content": "\\overline {{x}} _ {(1)} ^ {*} \\leqslant \\overline {{x}} _ {(2)} ^ {*} \\leqslant \\dots \\leqslant \\overline {{x}} _ {(2 5 0)} ^ {*} \\leqslant \\dots \\leqslant \\overline {{x}} _ {(9 7 5 0)} ^ {*} \\leqslant \\dots \\leqslant \\overline {{x}} _ {(1 0 0 0 0)} ^ {*},",
+          "image_source": "../../raw/pages_0289-0304/images/page_288_equation_21.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.843,
+            0.717,
+            0.864
+          ],
+          "content": "得到总体的均值 $\\mu$ 的置信水平为0.95的bootstrap置信区间为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.275,
+            0.868,
+            0.705,
+            0.887
+          ],
+          "content": "(\\bar {x} _ {(2 5 0)} ^ {*}, \\bar {x} _ {(9 7 5 0)} ^ {*}) = (1 2. 4 6 3 5 7, 1 5. 2 5 1 3 4).",
+          "image_source": "../../raw/pages_0289-0304/images/page_288_equation_23.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.893,
+            0.869,
+            0.914
+          ],
+          "content": "(2) 相继地、独立地从分布  $N(13.87, 8.06)$  产生 10 000 个容量为 16 的"
+        }
+      ]
+    },
+    {
+      "page_idx": 289,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.406,
+            0.044,
+            0.614,
+            0.062
+          ],
+          "content": "§ 2 参数 bootstrap 方法"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.8,
+            0.046,
+            0.867,
+            0.06
+          ],
+          "content": "· 275 ·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.084,
+            0.882,
+            0.128
+          ],
+          "continues_prev": true,
+          "content": "bootstrap 样本, 算出这 10 000 个样本各自的中位数 $M_{1}^{*}, M_{2}^{*}, \\cdots, M_{10\\ 000}^{*}$, 将它们自小到大排序得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.254,
+            0.134,
+            0.759,
+            0.155
+          ],
+          "content": "M _ {(1)} ^ {*} \\leqslant M _ {(2)} ^ {*} \\leqslant \\dots \\leqslant M _ {(2 5 0)} ^ {*} \\leqslant \\dots \\leqslant M _ {(9 7 5 0)} ^ {*} \\leqslant \\dots \\leqslant M _ {(1 0 0 0 0)} ^ {*},",
+          "image_source": "../../raw/pages_0289-0304/images/page_289_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.159,
+            0.78,
+            0.179
+          ],
+          "content": "得到总体 $X$ 的中位数 $\\theta$ 的置信水平为0.95的bootstrap置信区间为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.291,
+            0.184,
+            0.719,
+            0.203
+          ],
+          "content": "(M _ {(2 5 0)} ^ {*}, M _ {(9 7 5 0)} ^ {*}) = (1 2. 1 7 9 7 3, 1 5. 5 4 3 5 4).",
+          "image_source": "../../raw/pages_0289-0304/images/page_289_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.175,
+            0.208,
+            0.462,
+            0.228
+          ],
+          "content": "计算程序见第十一章 §6 例 7."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.175,
+            0.233,
+            0.559,
+            0.252
+          ],
+          "content": "例 4 某商店某种商品的月销售量如下:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.134,
+            0.267,
+            0.884,
+            0.332
+          ],
+          "content": "| 月销售量x | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 月份数 | 1 | 6 | 13 | 12 | 9 | 4 | 2 | 1 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_289_table_8.jpg"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.131,
+            0.355,
+            0.88,
+            0.447
+          ],
+          "sub_type": "text",
+          "content": "（1）已知月销售量服从泊松分布,试求平均月销售量的置信水平为 0.95 的 bootstrap 置信区间.\n（2）不能确定月销售量服从什么分布，试用非参数 bootstrap 方法求平均月销售量的置信水平为 0.95 的 bootstrap 置信区间."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.173,
+            0.453,
+            0.87,
+            0.473
+          ],
+          "content": "解 （1）用参数 bootstrap 方法. 月销售量  $X \\sim \\pi(\\lambda)$ . 先求出参数  $\\lambda$ . 分布律为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.341,
+            0.478,
+            0.667,
+            0.515
+          ],
+          "content": "P \\{X = k \\} = \\frac {\\lambda^ {k} \\mathrm{e} ^ {- \\lambda}}{k !}, \\quad k = 0, 1, 2, \\dots .",
+          "image_source": "../../raw/pages_0289-0304/images/page_289_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.522,
+            0.531,
+            0.541
+          ],
+          "content": "由已知数据求出参数 $\\lambda$ 的最大似然估计为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.13,
+            0.546,
+            0.871,
+            0.606
+          ],
+          "content": "\\begin{array}{l} \\hat {\\lambda} = \\bar {x} = \\frac {9 \\times 1 + 1 0 \\times 6 + 1 1 \\times 1 3 + 1 2 \\times 1 2 + 1 3 \\times 9 + 1 4 \\times 4 + 1 5 \\times 2 + 1 6 \\times 1}{1 + 6 + 1 3 + 1 2 + 9 + 4 + 2 + 1} = \\frac {5 7 5}{4 8} \\\\ = 1 1. 9 7 9 1 7, \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0289-0304/images/page_289_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.614,
+            0.88,
+            0.632
+          ],
+          "content": "即有 $X\\sim \\pi (11.97917).$ (2.2)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.639,
+            0.88,
+            0.683
+          ],
+          "content": "相继地、独立地从分布律(2.2)产生10 000个容量为48的bootstrap样本.算出这10 000个样本各自的均值 $\\bar{x}_{1}^{*},\\bar{x}_{2}^{*},\\cdots,\\bar{x}_{10\\ 000}^{*}$ ，将它们自小到大排序得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.267,
+            0.691,
+            0.744,
+            0.711
+          ],
+          "content": "\\overline {{x}} _ {(1)} ^ {*} \\leqslant \\overline {{x}} _ {(2)} ^ {*} \\leqslant \\dots \\leqslant \\overline {{x}} _ {(2 5 0)} ^ {*} \\leqslant \\dots \\leqslant \\overline {{x}} _ {(9 7 5 0)} ^ {*} \\leqslant \\dots \\leqslant \\overline {{x}} _ {(1 0 0 0 0)} ^ {*},",
+          "image_source": "../../raw/pages_0289-0304/images/page_289_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.715,
+            0.878,
+            0.734
+          ],
+          "content": "得到总体均值(即平均月销售量) $\\lambda$ 的置信水平为0.95的bootstrap置信区间为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.297,
+            0.74,
+            0.714,
+            0.759
+          ],
+          "content": "(\\bar {x} _ {(2 5 0)} ^ {*}, \\bar {x} _ {(9 7 5 0)} ^ {*}) = (1 1. 0 0 0 0 0, 1 2. 9 5 8 3 3).",
+          "image_source": "../../raw/pages_0289-0304/images/page_289_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.764,
+            0.882,
+            0.807
+          ],
+          "content": "（2）用非参数 bootstrap 方法. 按题意在 48 个月内共售出 575 件商品. 原始样本为"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.814,
+            0.882,
+            0.881
+          ],
+          "content": "(9,10,10,10,10,10,10,11,11,11,11,11,11,11,11,11,11,11,12,12,12,12,12,12,12,12,12,12,13,13,13,13,13,13,13,14,14,14,14,15,15,16)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.174,
+            0.888,
+            0.84,
+            0.907
+          ],
+          "content": "经计算得到平均月销售量的置信水平为0.95的bootstrap置信区间为"
+        }
+      ]
+    },
+    {
+      "page_idx": 290,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.128,
+            0.048,
+            0.194,
+            0.062
+          ],
+          "content": "· 276 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.35,
+            0.045,
+            0.621,
+            0.062
+          ],
+          "content": "第十章 bootstrap 方法(自助法)"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.275,
+            0.086,
+            0.692,
+            0.105
+          ],
+          "content": "(\\bar {x} _ {(2 5 0)} ^ {*}, \\bar {x} _ {(9 7 5 0)} ^ {*}) = (1 1. 5 6 2 5 0, 1 2. 4 1 6 6 7).",
+          "image_source": "../../raw/pages_0289-0304/images/page_290_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.155,
+            0.11,
+            0.441,
+            0.13
+          ],
+          "content": "计算程序见第十一章 §6 例8."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.133,
+            0.862,
+            0.227
+          ],
+          "content": "例 5 据哈代-温伯格(Hardy-Weinberg)定律, 若基因频率处于平衡状态, 则在人的总体中基因型 AA, Aa, aa 出现的频率分别为  $(1-\\theta)^{2}$ ,  $2\\theta(1-\\theta)$ ,  $\\theta^{2}(0<\\theta<1)$ . 因为人的某种抗原蛋白类型与其基因型相关联, 我们可以用人的此种抗原蛋白数据来估计人的基因型的频率."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.155,
+            0.232,
+            0.534,
+            0.252
+          ],
+          "content": "据 1937 年对香港的调查有以下的数据:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.114,
+            0.263,
+            0.862,
+            0.316
+          ],
+          "content": "| 抗原蛋白 | M | MN | N | 总人数 |\n| --- | --- | --- | --- | --- |\n| 频率数据 | 342 | 500 | 187 | 1 029 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_290_table_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.337,
+            0.515,
+            0.357
+          ],
+          "content": "我们就用这一数据来估计未知参数  $\\theta$ ，即有"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.115,
+            0.368,
+            0.863,
+            0.445
+          ],
+          "content": "<table><tr><td>基因型</td><td>AA</td><td>Aa</td><td>aa</td><td rowspan=\"2\">总人数</td></tr><tr><td>频率</td><td> $(1-\\theta)^{2}$ </td><td> $2\\theta(1-\\theta)$ </td><td> $\\theta^{2}$ </td></tr><tr><td>数据</td><td>342</td><td>500</td><td>187</td><td>1 029</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_290_table_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.158,
+            0.467,
+            0.404,
+            0.485
+          ],
+          "content": "(1) 求  $\\theta$  的最大似然估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.157,
+            0.491,
+            0.646,
+            0.509
+          ],
+          "content": "(2) 求  $\\theta$  的置信水平为 0.90 的 bootstrap 置信区间."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.157,
+            0.515,
+            0.662,
+            0.534
+          ],
+          "content": "解 本题样本容量较大,可以用频率作为概率的近似."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.539,
+            0.862,
+            0.583
+          ],
+          "content": "（1）分别记 $x_{1}, x_{2}, x_{3}$ 为具有基因型AA, Aa, aa的人数，记 $x_{1} + x_{2} + x_{3} = n$ ，似然函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.206,
+            0.587,
+            0.767,
+            0.607
+          ],
+          "content": "L = \\left[ (1 - \\theta) ^ {2} \\right] ^ {x _ {1}} \\left[ 2 \\theta (1 - \\theta) \\right] ^ {x _ {2}} (\\theta^ {2}) ^ {x _ {3}} = 2 ^ {x _ {2}} \\theta^ {x _ {2} + 2 x _ {3}} (1 - \\theta) ^ {2 x _ {1} + x _ {2}},",
+          "image_source": "../../raw/pages_0289-0304/images/page_290_equation_13.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.242,
+            0.613,
+            0.732,
+            0.631
+          ],
+          "content": "\\ln L = x _ {2} \\ln 2 + (x _ {2} + 2 x _ {3}) \\ln \\theta + (2 x _ {1} + x _ {2}) \\ln (1 - \\theta).",
+          "image_source": "../../raw/pages_0289-0304/images/page_290_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.116,
+            0.638,
+            0.664,
+            0.672
+          ],
+          "content": "令 $\\frac{\\mathrm{d}}{\\mathrm{d}\\theta}\\ln L = \\frac{x_2 + 2x_3}{\\theta} +\\frac{-(2x_1 + x_2)}{1 - \\theta} = 0,$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.116,
+            0.68,
+            0.631,
+            0.716
+          ],
+          "content": "解得 $\\hat{\\theta} = \\frac{x_2 + 2x_3}{2(x_1 + x_2 + x_3)} = \\frac{x_2 + 2x_3}{2n}.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.721,
+            0.864,
+            0.775
+          ],
+          "content": "以数据 $x_{1} = 342, x_{2} = 500, x_{3} = 187, n = 1029$ 代入上式得到 $\\theta$ 的最大似然估计为 $\\hat{\\theta} = 0.4247$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.788,
+            0.864,
+            0.834
+          ],
+          "content": "以 $\\hat{\\theta}$ 代替 $\\theta$ 得到 $(1-\\theta)^{2}=0.331,2\\theta(1-\\theta)=0.489,\\theta^{2}=0.180.$ 于是得到人的基因型的近似分布律为"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.116,
+            0.847,
+            0.865,
+            0.907
+          ],
+          "content": "| 基因型 | AA | Aa | aa |\n| --- | --- | --- | --- |\n| 概率 | 0.331 | 0.489 | 0.180 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_290_table_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 291,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.372,
+            0.043,
+            0.649,
+            0.06
+          ],
+          "content": "§ 3 bootstrap 假设检验方法举例"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.801,
+            0.046,
+            0.867,
+            0.059
+          ],
+          "content": "· 277 ·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.083,
+            0.884,
+            0.138
+          ],
+          "content": "（2）从这一分布律产生10000个bootstrap样本，得到 $\\theta$ 的10000个bootstrap估计 $\\hat{\\theta}_1^*,\\hat{\\theta}_2^*,\\dots ,\\hat{\\theta}_{10000}^*$ ，将这10000个数按自小到大的次序排列，得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.279,
+            0.146,
+            0.732,
+            0.171
+          ],
+          "content": "\\hat {\\theta} _ {(1)} ^ {*} \\leqslant \\hat {\\theta} _ {(2)} ^ {*} \\leqslant \\dots \\leqslant \\hat {\\theta} _ {(5 0 0)} ^ {*} \\leqslant \\dots \\leqslant \\hat {\\theta} _ {(9 5 0 0)} ^ {*} \\leqslant \\dots \\leqslant \\hat {\\theta} _ {(1 0 0 0 0)} ^ {*}.",
+          "image_source": "../../raw/pages_0289-0304/images/page_291_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.18,
+            0.883,
+            0.226
+          ],
+          "content": "取 $(\\hat{\\theta}_{(500)}^{*},\\hat{\\theta}_{(9500)}^{*}) = (0.4067,0.4422)$ 为 $\\theta$ 的置信水平为0.90的bootstrap置信区间."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.177,
+            0.232,
+            0.463,
+            0.252
+          ],
+          "content": "计算程序见第十一章 §6 例 9."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.298,
+            0.279,
+            0.724,
+            0.304
+          ],
+          "level": 2,
+          "content": "§ 3 bootstrap 假设检验方法举例"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.178,
+            0.34,
+            0.629,
+            0.364
+          ],
+          "level": 2,
+          "content": "（一）双样本均值差的 bootstrap 假设检验"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.378,
+            0.883,
+            0.475
+          ],
+          "content": "考虑双样本的位置问题. 设  $\\boldsymbol{X}=(X_{1},X_{2},\\cdots,X_{n_{1}})$  是来自  $F(x)$  为分布函数的总体的样本,  $\\boldsymbol{Y}=(Y_{1},Y_{2},\\cdots,Y_{n_{2}})$  是来自以  $F(x-\\Delta)$  为分布函数的总体的样本, 其中  $\\Delta$  是实数. 参数  $\\Delta$  是两样本间的位移. 设样本均值  $\\mu_{X}, \\mu_{Y}$  存在, 即有  $\\Delta=\\mu_{Y}-\\mu_{X}$ , 我们考虑下述单边检验问题:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.397,
+            0.48,
+            0.88,
+            0.498
+          ],
+          "content": "H _ {0}: \\Delta = 0, \\quad H _ {1}: \\Delta > 0. \\tag {3.1}",
+          "image_source": "../../raw/pages_0289-0304/images/page_291_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.503,
+            0.314,
+            0.522
+          ],
+          "content": "取两样本的均值差"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.385,
+            0.53,
+            0.622,
+            0.574
+          ],
+          "content": "V = \\frac {1}{n _ {2}} \\sum_ {i = 1} ^ {n _ {2}} Y _ {i} - \\frac {1}{n _ {1}} \\sum_ {i = 1} ^ {n _ {1}} X _ {i}",
+          "image_source": "../../raw/pages_0289-0304/images/page_291_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.577,
+            0.882,
+            0.648
+          ],
+          "content": "作为检验统计量. 判定准则是若  $v \\geqslant c$ ，则拒绝  $H_{0}$ . 用检验的 p 值的大小作为检验决策的依据. 将样本 X, Y 的观察值  $(x_{1}, x_{2}, \\cdots, x_{n_{1}}), (y_{1}, y_{2}, \\cdots, y_{n_{2}})$  的均值分别记为  $\\bar{x}, \\bar{y}$ ，则检验的 p 值是"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.409,
+            0.657,
+            0.597,
+            0.683
+          ],
+          "content": "\\hat {p} = P _ {H _ {0}} \\{v \\geqslant \\bar {y} - \\bar {x} \\}.",
+          "image_source": "../../raw/pages_0289-0304/images/page_291_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.687,
+            0.781,
+            0.707
+          ],
+          "content": "要注意上述等式的右端必须是当 $H_0$ 为真时，事件 $\\{v\\geqslant \\overline{y} -\\overline{x}\\}$ 的概率."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.712,
+            0.88,
+            0.756
+          ],
+          "content": "求解检验问题(3.1)的一个简单方法是,将两个样本 $(x_{1},x_{2},\\cdots,x_{n_{1}})$ 与 $(y_{1},y_{2},\\cdots,y_{n_{2}})$ 合并成一个大的样本:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.356,
+            0.761,
+            0.655,
+            0.781
+          ],
+          "content": "(x _ {1}, x _ {2}, \\dots , x _ {n _ {1}}, y _ {1}, y _ {2}, \\dots , y _ {n _ {2}}),",
+          "image_source": "../../raw/pages_0289-0304/images/page_291_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.784,
+            0.881,
+            0.854
+          ],
+          "content": "然后在其中以放回抽样的方法取样，分别取到一个容量为 $n_1$ 的样本和另一个容量为 $n_2$ 的样本.设 $B$ 为正整数， $v = \\overline{y} -\\overline{x}$ .以 $k$ 为计数器(在程序计算之前令 $k = 0)$ ，给定检验的显著性水平为 $\\alpha$ .得到求解检验问题(3.1)的步骤如下:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.174,
+            0.859,
+            0.799,
+            0.88
+          ],
+          "content": "$1^{\\circ}$ 将两个样本 $(x_{1}, x_{2}, \\dots, x_{n_{1}})$ 和 $(y_{1}, y_{2}, \\dots, y_{n_{2}})$ 合并成一个样本:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.335,
+            0.884,
+            0.669,
+            0.906
+          ],
+          "content": "\\mathbf {Z} = (x _ {1}, x _ {2}, \\dots , x _ {n _ {1}}, y _ {1}, y _ {2}, \\dots , y _ {n _ {2}}).",
+          "image_source": "../../raw/pages_0289-0304/images/page_291_equation_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 292,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.13,
+            0.047,
+            0.195,
+            0.061
+          ],
+          "content": "· 278 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.352,
+            0.045,
+            0.623,
+            0.061
+          ],
+          "content": "第十章 bootstrap 方法(自助法)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.155,
+            0.085,
+            0.729,
+            0.105
+          ],
+          "content": "$2^{\\circ}$ 用放回抽样的方法自 $\\mathbf{Z}$ 得到容量为 $n_1$ 的bootstrap样本:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.25,
+            0.117,
+            0.715,
+            0.16
+          ],
+          "content": "\\boldsymbol {X} ^ {*} = (x _ {1} ^ {*}, x _ {2} ^ {*}, \\dots , x _ {n _ {1}} ^ {*}), \\text {并计算} \\bar {x} ^ {*} = \\frac {1}{n _ {1}} \\sum_ {i = 1} ^ {n _ {1}} x _ {i} ^ {*}.",
+          "image_source": "../../raw/pages_0289-0304/images/page_292_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.17,
+            0.701,
+            0.19
+          ],
+          "content": "用放回抽样的方法自 $\\mathbf{Z}$ 得到容量为 $n_2$ 的bootstrap样本:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.202,
+            0.714,
+            0.245
+          ],
+          "content": "\\mathbf {Y} ^ {*} = (y _ {1} ^ {*}, y _ {2} ^ {*}, \\dots , y _ {n _ {2}} ^ {*}), \\text {并计算} \\bar {y} ^ {*} = \\frac {1}{n _ {2}} \\sum_ {i = 1} ^ {n _ {2}} y _ {i} ^ {*}.",
+          "image_source": "../../raw/pages_0289-0304/images/page_292_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.255,
+            0.632,
+            0.275
+          ],
+          "content": "$3^{\\circ}$ 计算 $v^{*} = \\overline{y}^{*} - \\overline{x}^{*}$, 若 $v^{*} \\geqslant v$, 则计数器 $k$ 加 1."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.157,
+            0.28,
+            0.513,
+            0.299
+          ],
+          "content": "重复计算  $2^{\\circ}, 3^{\\circ}$  共 B=10 000 次, 得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.361,
+            0.304,
+            0.612,
+            0.341
+          ],
+          "content": "\\hat {p} ^ {*} = \\frac {\\# _ {j = 1} ^ {1 0 0 0 0} \\{v _ {j} ^ {*} \\geqslant v \\}}{B} = \\frac {k}{B}.",
+          "image_source": "../../raw/pages_0289-0304/images/page_292_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.352,
+            0.371,
+            0.385
+          ],
+          "content": "若 $\\frac{k}{B}>\\alpha$ ，则接受 $H_{0}:\\Delta=0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.392,
+            0.805,
+            0.412
+          ],
+          "content": "例 1 分别抽查了甲、乙两球队部分队员的行李质量(以 kg 计)如下:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.117,
+            0.426,
+            0.865,
+            0.484
+          ],
+          "content": "| 甲队 | 34 | 39 | 41 | 28 | 33 |  |\n| --- | --- | --- | --- | --- | --- | --- |\n| 乙队 | 36 | 40 | 35 | 31 | 39 | 36 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_292_table_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.506,
+            0.865,
+            0.552
+          ],
+          "content": "设甲、乙两队队员的行李质量总体的分布函数至多差一个平移，设两总体的均值分别为  $\\mu_{1}, \\mu_{2}$ . 记  $\\Delta = \\mu_{2} - \\mu_{1}$ ，试检验假设"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.557,
+            0.597,
+            0.576
+          ],
+          "content": "H _ {0}: \\Delta = 0, \\quad H _ {1}: \\Delta > 0",
+          "image_source": "../../raw/pages_0289-0304/images/page_292_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.115,
+            0.583,
+            0.251,
+            0.601
+          ],
+          "content": "(取  $\\alpha=0.05$ )."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.606,
+            0.865,
+            0.649
+          ],
+          "content": "解 记 $X = (34, 39, 41, 28, 33), Y = (36, 40, 35, 31, 39, 36)$. 将两个样本合并成一个样本:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.275,
+            0.655,
+            0.701,
+            0.673
+          ],
+          "content": "\\mathbf {Z} = (3 4, 3 9, 4 1, 2 8, 3 3, 3 6, 4 0, 3 5, 3 1, 3 9, 3 6),",
+          "image_source": "../../raw/pages_0289-0304/images/page_292_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.687,
+            0.865,
+            0.734
+          ],
+          "content": "再按上述步骤 $2^{\\circ}, 3^{\\circ}$, 编制 R 语言程序. 计算结果得 $\\hat{p}^{*} = k / B = 0.3096 > 0.05$. 故接受 $H_{0}$, 拒绝 $H_{1}$, 认为乙队的行李质量的均值不比甲队的行李质量的均值大."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.157,
+            0.739,
+            0.463,
+            0.758
+          ],
+          "content": "计算程序见第十一章 §6 例 10."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.158,
+            0.774,
+            0.588,
+            0.797
+          ],
+          "level": 2,
+          "content": "(二) 单样本均值的 bootstrap 假设检验"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.812,
+            0.865,
+            0.856
+          ],
+          "content": "考虑单样本的位置问题. 设总体具有有限的均值  $\\mu.\\mu$  未知, 我们要来检验假设"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.372,
+            0.862,
+            0.605,
+            0.884
+          ],
+          "content": "H _ {0}: \\mu = \\mu_ {0}, \\quad H _ {1}: \\mu > \\mu_ {0}.",
+          "image_source": "../../raw/pages_0289-0304/images/page_292_equation_21.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.888,
+            0.334,
+            0.908
+          ],
+          "content": "其中  $\\mu_{0}$  是给定的常数."
+        }
+      ]
+    },
+    {
+      "page_idx": 293,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.375,
+            0.046,
+            0.654,
+            0.064
+          ],
+          "content": "§ 3 bootstrap 假设检验方法举例"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.803,
+            0.049,
+            0.87,
+            0.064
+          ],
+          "content": "· 279 ·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.087,
+            0.832,
+            0.126
+          ],
+          "content": "设 $x_{1}, x_{2}, \\cdots, x_{n}$ 来自均值为 $\\mu$ 的总体，$\\bar{x} = \\frac{1}{n} \\sum_{i=1}^{n} x_{i}$ 是 $\\mu$ 的一个估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.13,
+            0.885,
+            0.175
+          ],
+          "content": "我们利用 p 值来作假设检验. 注意到, 在作检验时, p 值必须在  $H_{0}:\\mu=\\mu_{0}$  时被估计, 为此, 我们将样本  $x_{1}, x_{2}, \\cdots, x_{n}$  作平移变换, 使成为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.182,
+            0.766,
+            0.203
+          ],
+          "content": "z _ {1} = x _ {1} - \\bar {x} + \\mu_ {0}, \\quad z _ {2} = x _ {2} - \\bar {x} + \\mu_ {0}, \\dots , z _ {n} = x _ {n} - \\bar {x} + \\mu_ {0}.",
+          "image_source": "../../raw/pages_0289-0304/images/page_293_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.206,
+            0.887,
+            0.302
+          ],
+          "content": "我们的 bootstrap 方法是以放回抽样的方法自  $z_{1}, z_{2}, \\cdots, z_{n}$  抽取 bootstrap 样本. 令  $z^{*}$  是这样得到的一个观察值, 易知  $E(z^{*}) = \\mu_{0}$ . 这样, 利用  $z_{1}, z_{2}, \\cdots, z_{n}$ , 则 bootstrap 取样在  $H_{0}: \\mu = \\mu_{0}$  下完成了. 于是得到 bootstrap 检验的步骤如下: 设 k 为正整数, 以 k 为计数器 (在计算之前令 k = 0), 给定显著性水平为  $\\alpha$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.306,
+            0.414,
+            0.325
+          ],
+          "content": "$1^{\\circ}$ 产生经平移的观察值"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.354,
+            0.332,
+            0.662,
+            0.351
+          ],
+          "content": "z _ {i} = x _ {i} - \\bar {x} + \\mu_ {0}, \\quad i = 1, 2, \\dots , n.",
+          "image_source": "../../raw/pages_0289-0304/images/page_293_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.178,
+            0.355,
+            0.74,
+            0.376
+          ],
+          "content": "$2^{\\circ}$ 用放回抽样的方法自 $\\mathbf{z}$ 得到容量为 $n$ 的bootstrap样本:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.223,
+            0.38,
+            0.791,
+            0.4
+          ],
+          "content": "$z^{*}=(z_{1}^{*},z_{2}^{*},\\cdots,z_{n}^{*})$ . 计算其均值  $\\bar{z}^{*}$ . 若  $\\bar{z}^{*}>\\bar{x}$ , 则 k 加 1."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.178,
+            0.405,
+            0.697,
+            0.425
+          ],
+          "content": "$3^{\\circ}$ 将 $2^{\\circ}$ 重复 $B$ 次，即得 $p^{*}$ 值的估计为（取 $B = 10000$）"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.43,
+            0.629,
+            0.468
+          ],
+          "content": "\\hat {p} ^ {*} = \\frac {\\# _ {j = 1} ^ {B} \\{\\overline {{z}} _ {j} ^ {*} \\geqslant \\overline {{x}} \\}}{B} = \\frac {k}{B}.",
+          "image_source": "../../raw/pages_0289-0304/images/page_293_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.476,
+            0.334,
+            0.509
+          ],
+          "content": "若 $\\frac{k}{B}>\\alpha$ ，则接受 $H_{0}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.517,
+            0.884,
+            0.56
+          ],
+          "content": "例2 某种元件的寿命 $X$ (以 $\\mathrm{h}$ 计) 是一个随机变量. 以 $\\mu$ 记 $X$ 的均值. $\\mu$ 未知. 今测得16只元件的寿命如下:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.319,
+            0.566,
+            0.744,
+            0.61
+          ],
+          "content": "| 159 | 280 | 101 | 212 | 224 | 379 | 179 | 264 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 222 | 362 | 168 | 250 | 149 | 260 | 485 | 170 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_293_table_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.616,
+            0.495,
+            0.635
+          ],
+          "content": "试检验假设(取显著性水平  $\\alpha=0.05$ ):"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.336,
+            0.641,
+            0.678,
+            0.662
+          ],
+          "content": "H _ {0}: \\mu = \\mu_ {0} = 2 2 5, \\quad H _ {1}: \\mu > \\mu_ {0} = 2 2 5.",
+          "image_source": "../../raw/pages_0289-0304/images/page_293_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.668,
+            0.883,
+            0.711
+          ],
+          "content": "解 样本容量 n=16，样本均值  $\\bar{x}=241.5$ ，取 B=10000。作变换  $z_{i}=x_{i}-\\bar{x}+\\mu_{0}, i=1,2,\\cdots,16$ ，即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.271,
+            0.718,
+            0.741,
+            0.736
+          ],
+          "content": "z _ {i} = x _ {i} - 2 4 1. 5 + 2 2 5 = x _ {i} - 1 6. 5, \\quad i = 1, 2, \\dots , 1 6.",
+          "image_source": "../../raw/pages_0289-0304/images/page_293_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.744,
+            0.744,
+            0.763
+          ],
+          "content": "求出 bootstrap 样本为  $z^{*}=(z_{1}^{*},z_{2}^{*},\\cdots,z_{16}^{*})$ ，其均值为  $\\bar{z}^{*}$ . 得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.268,
+            0.769,
+            0.744,
+            0.807
+          ],
+          "content": "\\hat {p} ^ {*} = \\frac {\\# _ {j = 1} ^ {B} \\{\\overline {{z}} _ {j} ^ {*} \\geqslant \\overline {{x}} \\}}{B} = \\frac {2 4 2 9}{1 0 0 0 0} = 0. 2 4 2 9 > \\alpha = 0. 0 5.",
+          "image_source": "../../raw/pages_0289-0304/images/page_293_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.815,
+            0.598,
+            0.834
+          ],
+          "content": "故接受  $H_{0}$ ，即认为元件的平均寿命不大于 225 h."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.839,
+            0.474,
+            0.859
+          ],
+          "content": "计算程序见第十一章 §6 例 11."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.864,
+            0.884,
+            0.909
+          ],
+          "content": "例3 地球的密度一般认为是 $5.51\\mathrm{g / cm^3}$. 1798年卡文迪什(Cavendish)做了一个著名的试验，得到以下的观察值(共29个数据):"
+        }
+      ]
+    },
+    {
+      "page_idx": 294,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.127,
+            0.049,
+            0.192,
+            0.062
+          ],
+          "content": "· 280 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.35,
+            0.046,
+            0.62,
+            0.063
+          ],
+          "content": "第十章 bootstrap 方法(自助法)"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.153,
+            0.086,
+            0.795,
+            0.153
+          ],
+          "content": "| 4.07 | 4.88 | 5.10 | 5.26 | 5.27 | 5.29 | 5.29 | 5.30 | 5.34 | 5.34 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 5.36 | 5.39 | 5.42 | 5.44 | 5.46 | 5.47 | 5.50 | 5.53 | 5.55 | 5.57 |\n| 5.58 | 5.61 | 5.62 | 5.63 | 5.65 | 5.75 | 5.79 | 5.85 | 5.86 |  |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_294_table_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.161,
+            0.47,
+            0.179
+          ],
+          "content": "试用以上数据检验假设(取  $\\alpha=0.05$ ):"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.304,
+            0.185,
+            0.666,
+            0.205
+          ],
+          "content": "H _ {0}: \\mu = \\mu_ {0} = 5. 5 1, \\quad H _ {1}: \\mu \\neq \\mu_ {0} = 5. 5 1.",
+          "image_source": "../../raw/pages_0289-0304/images/page_294_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.21,
+            0.86,
+            0.256
+          ],
+          "content": "解 样本容量 n=29，样本均值  $\\bar{x}=5.42$ 。取 B=10000。作变换  $z_{i}=x_{i}-\\bar{x}+\\mu_{0}, i=1,2,\\cdots,29$ ，即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.26,
+            0.719,
+            0.279
+          ],
+          "content": "z _ {i} = x _ {i} - 5. 4 2 + 5. 5 1 = x _ {i} + 0. 0 9, \\quad i = 1, 2, \\dots , 2 9.",
+          "image_source": "../../raw/pages_0289-0304/images/page_294_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.285,
+            0.327,
+            0.304
+          ],
+          "content": "求出 bootstrap 样本为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.404,
+            0.309,
+            0.57,
+            0.328
+          ],
+          "content": "(z _ {1} ^ {*}, z _ {2} ^ {*}, \\dots , z _ {2 9} ^ {*}),",
+          "image_source": "../../raw/pages_0289-0304/images/page_294_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.334,
+            0.16,
+            0.352
+          ],
+          "content": "得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.149,
+            0.356,
+            0.825,
+            0.393
+          ],
+          "content": "\\hat {p} ^ {*} = \\frac {\\# _ {i = 1} ^ {B} \\{\\overline {{z}} _ {i} ^ {*} > \\overline {{x}} \\} + \\# _ {i = 1} ^ {B} \\{\\overline {{z}} _ {i} ^ {*} <   - \\overline {{x}} \\}}{B} = \\frac {\\# _ {i = 1} ^ {B} \\{\\overline {{z}} _ {i} ^ {*} > \\overline {{x}} \\}}{B} = 0. 9 1 4 4 > 0. 0 5,",
+          "image_source": "../../raw/pages_0289-0304/images/page_294_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.401,
+            0.536,
+            0.421
+          ],
+          "content": "故接受  $H_{0}$ ，认为地球密度为  $\\mu=5.51\\ g/cm^{3}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.425,
+            0.452,
+            0.445
+          ],
+          "content": "计算程序见第十一章 §6 例 12."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.157,
+            0.457,
+            0.21,
+            0.477
+          ],
+          "level": 2,
+          "content": "小结"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.497,
+            0.864,
+            0.726
+          ],
+          "content": "设 $x = (x_{1}, x_{2}, \\cdots, x_{n})$ 是来自分布函数为 $F$ 的总体的样本，$F$ 未知。$R(x)$ 是 $x$ 的函数，$F_{n}$ 是相应的经验分布函数。假如我们感兴趣的是 $R(x)$ 的某些特征，例如 $R$ 的均值或中位数。非参数 bootstrap 方法的第一步是用已知的经验分布函数 $F_{n}$ 代替 $F$，在 $F_{n}$ 中抽样，得到数据样本 $x^{*} = (x_{1}^{*}, x_{2}^{*}, \\cdots, x_{n}^{*})$，然后计算 $R(x^{*})$ 的均值或中位数，作为所需求的均值或中位数的估计（bootstrap 估计）。通常的情况，$R(x^{*})$ 的分布过于复杂，不能用解析的方法计算得到 $R(x^{*})$ 的特征，而需要采用模拟的方法。在参数 bootstrap 方法中 $F = F(x; \\beta)$ 的形式已知，但包含未知参数 $\\beta$。先利用样本 $x$ 求出 $\\beta$ 的最大似然估计 $\\hat{\\beta}$，以 $F(x; \\hat{\\beta})$ 代替 $F$，在 $F(x; \\hat{\\beta})$ 中抽样得到数据样本 $x^{*}$，然后计算 $R(x^{*})$ 的均值或中位数，作为所需求的均值或中位数的 bootstrap 估计。非参数和参数 bootstrap 方法可用于当人们对总体知之甚少的情况，它们是近代统计中的一种用于数据处理的重要的实用方法。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.73,
+            0.863,
+            0.77
+          ],
+          "content": "本章还讲了双样本均值差的 bootstrap 假设检验方法和单样本均值的 bootstrap 假设检验方法. 用这种方法来做题是很方便的."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.16,
+            0.782,
+            0.212,
+            0.802
+          ],
+          "level": 2,
+          "content": "习题"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.823,
+            0.862,
+            0.864
+          ],
+          "content": "1. 生物学家随机地选取 20 只某种雄性绿蜘蛛(这种蜘蛛不织网而以追赶或跳跃去捕食)，测量它们前腿的长度,得到以下的原始样本(以 mm 计):"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.197,
+            0.869,
+            0.816,
+            0.907
+          ],
+          "content": "| 15.10 | 13.55 | 15.75 | 20.00 | 15.45 | 13.60 | 16.45 | 14.05 | 16.95 | 19.05 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 16.40 | 17.05 | 15.25 | 16.65 | 16.25 | 17.75 | 15.40 | 16.80 | 17.55 | 19.05 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_294_table_18.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 295,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.474,
+            0.044,
+            0.552,
+            0.06
+          ],
+          "content": "习题"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.803,
+            0.047,
+            0.868,
+            0.06
+          ],
+          "content": "· 281 ·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.083,
+            0.886,
+            0.16
+          ],
+          "content": "设前腿长度总体是具有分布函数 $F$ 的连续型随机变量，$F$ 未知. 总体中位数 $\\theta$ 是未知参数，以原始样本中位数作为总体中位数 $\\theta$ 的估计 $\\hat{\\theta}$，试求估计量的标准误差 $\\sqrt{D(\\hat{\\theta})}$ 的 bootstrap 估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.166,
+            0.886,
+            0.204
+          ],
+          "content": "2. 据美国国家运输安全委员会(National Transportation Safety Board)报道,美国在1983～2006年的飞机事故数为"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.31,
+            0.211,
+            0.749,
+            0.25
+          ],
+          "content": "| 23 | 16 | 21 | 24 | 34 | 30 | 28 | 24 | 26 | 18 | 23 | 23 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 36 | 37 | 49 | 50 | 51 | 56 | 46 | 41 | 54 | 30 | 40 | 31 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_295_table_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.256,
+            0.884,
+            0.294
+          ],
+          "content": "（1）以样本中位数  $M=M(x)$  作为总体中位数  $\\theta$  的估计，按分位数法求  $\\theta$  的置信水平为 0.95 的 bootstrap 置信区间（取 B=10000）."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.301,
+            0.884,
+            0.339
+          ],
+          "content": "(2) 以样本均值 $\\overline{x}$ 作为总体均值 $\\mu$ 的估计, 按分位数法求 $\\mu$ 的置信水平为 0.95 的 bootstrap 置信区间 (取 $B = 10000$)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.345,
+            0.692,
+            0.362
+          ],
+          "content": "3. 下面给出某个班级 20 个学生数理统计课程期终考试的得分:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.347,
+            0.368,
+            0.71,
+            0.406
+          ],
+          "content": "| 88 | 67 | 64 | 76 | 86 | 85 | 82 | 39 | 75 | 34 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 90 | 63 | 89 | 90 | 84 | 81 | 96 | 100 | 70 | 96 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_295_table_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.413,
+            0.884,
+            0.451
+          ],
+          "content": "（1）以样本中位数  $M=M(x)$  作为总体中位数  $\\theta$  的估计，按分位数法求  $\\theta$  的置信水平为 0.95 的 bootstrap 置信区间（取 B=10000）."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.457,
+            0.884,
+            0.495
+          ],
+          "content": "(2) 以样本均值  $\\bar{x}$  作为总体均值  $\\mu$  的估计, 按分位数法求  $\\mu$  的置信水平为 0.95 的 bootstrap 置信区间 (取 B=10 000)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.502,
+            0.884,
+            0.54
+          ],
+          "content": "（3）以样本 $10\\%$ 截尾均值作为总体 $10\\%$ 截尾均值 $\\mu_{l}$ 的估计，按分位数法求 $\\mu_{l}$ 的置信水平为0.95的bootstrap置信区间(取 $B = 10000$ )。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.547,
+            0.884,
+            0.585
+          ],
+          "content": "(4) 以样本标准差 $s$ 作为总体标准差 $\\sigma$ 的估计, 按分位数法求 $\\sigma$ 的置信水平为 0.95 的 bootstrap 置信区间 (取 $B = 10000$)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.591,
+            0.553,
+            0.608
+          ],
+          "content": "4. 测得某种小麦品种株高的数据(以 cm 计)为"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.3,
+            0.614,
+            0.717,
+            0.63
+          ],
+          "content": "| 90 | 105 | 101 | 95 | 100 | 100 | 101 | 105 | 93 | 97 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_295_table_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.636,
+            0.166,
+            0.651
+          ],
+          "content": "求:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.171,
+            0.659,
+            0.664,
+            0.698
+          ],
+          "sub_type": "text",
+          "content": "(1) 总体中位数  $\\theta$  的置信水平为 0.95 的 bootstrap 置信区间.\n(2) 总体均值  $\\mu$  的置信水平为 0.95 的 bootstrap 置信区间."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.703,
+            0.738,
+            0.72
+          ],
+          "content": "5. 已知某种电子元件的寿命 $X$ (以 $\\mathrm{h}$ 计) 服从指数分布, 其分布函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.338,
+            0.731,
+            0.673,
+            0.772
+          ],
+          "content": "F (x; \\theta) = \\left\\{ \\begin{array}{l l} 1 - \\mathrm{e} ^ {- \\frac {x}{\\theta}}, & x > 0, \\\\ 0, & \\text {其他}, \\end{array} \\right. \\quad \\theta > 0 \\text {未知}.",
+          "image_source": "../../raw/pages_0289-0304/images/page_295_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.778,
+            0.459,
+            0.794
+          ],
+          "content": "随机地取 12 只元件, 测得它们的寿命为"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.801,
+            0.88,
+            0.861
+          ],
+          "content": "340 430 560 920 1380 1520 1660 1770 2100 2320 2350 2650 试用参数 bootstrap 方法，以样本均值 $\\overline{x}$ 作为总体均值 $\\mu$ 的估计，按分位数法求 $\\mu$ 的置信水平为 0.90, 0.95 的 bootstrap 置信区间（取 $B = 10000$）."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.868,
+            0.88,
+            0.907
+          ],
+          "content": "6. 为查明某种血清是否会抑制白血病,选取患白血病已到晚期的老鼠9只,其中有5只用血清来治疗,另4只不作治疗.设两样本相互独立.从试验开始时计算存活时间(以月计)"
+        }
+      ]
+    },
+    {
+      "page_idx": 296,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.127,
+            0.05,
+            0.192,
+            0.063
+          ],
+          "content": "· 282 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.35,
+            0.047,
+            0.62,
+            0.063
+          ],
+          "content": "第十章 bootstrap 方法(自助法)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.089,
+            0.16,
+            0.104
+          ],
+          "content": "如下:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.11,
+            0.451,
+            0.126
+          ],
+          "content": "接受治疗 3.1 5.3 1.4 4.6 2.8"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.132,
+            0.405,
+            0.148
+          ],
+          "content": "不作治疗 1.9 0.5 0.9 2.1"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.153,
+            0.86,
+            0.193
+          ],
+          "content": "设治疗与否的存活时间的分布函数至多差一个平移. 取 $\\alpha = 0.05$，问这种血清对于白血病是否有抑制作用？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.197,
+            0.861,
+            0.259
+          ],
+          "content": "7. 一工厂的经理主张一新来的雇员在参加某种工作之前至少需要培训 $200\\mathrm{h}$ 才能成为独立工作者.为了检验这一主张的合理性，随机地选取10名雇员询问他们在独立工作前所经历的培训时间(以 $\\mathrm{h}$ 计)并记录如下:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.258,
+            0.264,
+            0.714,
+            0.279
+          ],
+          "content": "2 0 8 \\quad 1 8 0 \\quad 2 3 4 \\quad 1 6 8 \\quad 2 1 2 \\quad 2 0 8 \\quad 2 5 4 \\quad 2 2 9 \\quad 2 3 0 \\quad 1 8 1",
+          "image_source": "../../raw/pages_0289-0304/images/page_296_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.287,
+            0.506,
+            0.303
+          ],
+          "content": "试取  $\\alpha=0.05$  检验假设  $H_{0}:\\mu=200,H_{1}:\\mu>200$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.307,
+            0.855,
+            0.324
+          ],
+          "content": "8. 以 $X$ 表示服用一定剂量的某种药物使服用者脉搏每分钟增加的次数, 记录的数据为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.333,
+            0.33,
+            0.64,
+            0.345
+          ],
+          "content": "1 3 \\quad 1 5 \\quad 1 4 \\quad 1 0 \\quad 8 \\quad 1 2 \\quad 1 8 \\quad 9 \\quad 2 0",
+          "image_source": "../../raw/pages_0289-0304/images/page_296_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.351,
+            0.86,
+            0.392
+          ],
+          "content": "试检验假设 $H_0: \\mu = \\mu_0 = 10, H_1: \\mu > 10$ （取 $\\alpha = 0.05$）。其中 $\\mu$ 为脉搏每分钟增加的次数的均值。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2021-08-31T17:59:04+08:00",
+      "modified_at": "2021-09-01T15:49:01+08:00",
+      "producer_application": "Epson Scan 2",
+      "page_count": 443,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 0,
+          "width_pt": 480.0,
+          "height_pt": 657.0
+        },
+        {
+          "page_idx": 1,
+          "width_pt": 479.0,
+          "height_pt": 656.0
+        },
+        {
+          "page_idx": 2,
+          "width_pt": 479.0,
+          "height_pt": 656.0
+        },
+        {
+          "page_idx": 3,
+          "width_pt": 480.0,
+          "height_pt": 654.0
+        },
+        {
+          "page_idx": 4,
+          "width_pt": 479.0,
+          "height_pt": 654.0
+        },
+        {
+          "page_idx": 5,
+          "width_pt": 480.0,
+          "height_pt": 650.0
+        },
+        {
+          "page_idx": 6,
+          "width_pt": 479.0,
+          "height_pt": 650.0
+        },
+        {
+          "page_idx": 7,
+          "width_pt": 480.0,
+          "height_pt": 650.0
+        },
+        {
+          "page_idx": 8,
+          "width_pt": 479.0,
+          "height_pt": 650.0
+        },
+        {
+          "page_idx": 9,
+          "width_pt": 479.0,
+          "height_pt": 650.0
+        },
+        {
+          "page_idx": 10,
+          "width_pt": 478.0,
+          "height_pt": 650.0
+        },
+        {
+          "page_idx": 11,
+          "width_pt": 480.0,
+          "height_pt": 650.0
+        },
+        {
+          "page_idx": 12,
+          "width_pt": 479.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 13,
+          "width_pt": 479.0,
+          "height_pt": 651.0
+        },
+        {
+          "page_idx": 14,
+          "width_pt": 478.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 15,
+          "width_pt": 479.0,
+          "height_pt": 649.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

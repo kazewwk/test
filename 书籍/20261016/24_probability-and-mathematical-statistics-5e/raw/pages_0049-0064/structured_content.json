@@ -1,0 +1,3390 @@
+{
+  "pages": [
+    {
+      "page_idx": 48,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.139,
+            0.053,
+            0.195,
+            0.066
+          ],
+          "content": "· 34 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.383,
+            0.052,
+            0.614,
+            0.068
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.092,
+            0.875,
+            0.159
+          ],
+          "content": "这里“重复”是指在每次试验中  $P(A)=p$  保持不变；“独立”是指各次试验的结果互不影响，即若以  $C_{i}$  记第 i 次试验的结果， $C_{i}$  为 A 或  $\\overline{A}, i=1,2,\\cdots,n.$  “独立”是指"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.31,
+            0.168,
+            0.869,
+            0.183
+          ],
+          "content": "P (C _ {1} C _ {2} \\dots C _ {n}) = P (C _ {1}) P (C _ {2}) \\dots P (C _ {n}). \\tag {2.5}",
+          "image_source": "images/page_48_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.189,
+            0.873,
+            0.232
+          ],
+          "content": "$n$ 重伯努利试验是一种很重要的数学模型，它有广泛的应用，是研究极多的模型之一."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.237,
+            0.874,
+            0.403
+          ],
+          "content": "例如，$E$ 是抛一枚硬币观察得到正面或反面。$A$ 表示得正面，这是一个伯努利试验。如将硬币抛 $n$ 次，就是 $n$ 重伯努利试验。又如抛一颗骰子，若 $A$ 表示得到“1点”，$\\overline{A}$ 表示得到“非1点”。将骰子抛 $n$ 次，就是 $n$ 重伯努利试验。再如在袋中装有 $a$ 只白球，$b$ 只黑球。试验 $E$ 是在袋中任取一只球，观察其颜色。以 $A$ 表示“取到白球”，$P(A)=a/(a+b)$。若连续取球 $n$ 次作放回抽样，这就是 $n$ 重伯努利试验。然而，若作不放回抽样，虽则每次试验都有 $P(A)=a/(a+b)$（见第一章 §4 例5），但各次试验不再相互独立①，因而不再是 $n$ 重伯努利试验了。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.407,
+            0.873,
+            0.501
+          ],
+          "content": "以 X 表示 n 重伯努利试验中事件 A 发生的次数, X 是一个随机变量, 我们来求它的分布律. X 所有可能取的值为  $0, 1, 2, \\cdots, n$ . 由于各次试验是相互独立的, 因此事件 A 在指定的  $k (0 \\leqslant k \\leqslant n)$  次试验中发生, 在其他 n-k 次试验中 A 不发生 (例如在前 k 次试验中 A 发生, 而后 n-k 次试验中 A 不发生) 的概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.18,
+            0.504,
+            0.805,
+            0.551
+          ],
+          "content": "\\underbrace {p \\cdot p \\cdot \\cdots \\cdot p} _ {k \\text {个}} \\cdot \\underbrace {(1 - p) \\cdot (1 - p) \\cdot \\cdots \\cdot (1 - p)} _ {n - k \\text {个}} = p ^ {k} (1 - p) ^ {n - k}.",
+          "image_source": "images/page_48_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.118,
+            0.56,
+            0.87,
+            0.652
+          ],
+          "content": "这种指定的方式共有 $\\binom{n}{k}$ 种, 它们是两两互不相容的, 故在n次试验中A发生k次的概率为 $\\binom{n}{k}p^{k}(1-p)^{n-k}$ , 记q=1-p, 即有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.286,
+            0.669,
+            0.865,
+            0.704
+          ],
+          "content": "P \\{X = k \\} = \\binom {n} {k} p ^ {k} q ^ {n - k}, \\quad k = 0, 1, 2, \\dots , n. \\tag {2.6}",
+          "image_source": "images/page_48_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.715,
+            0.165,
+            0.733
+          ],
+          "content": "显然"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.324,
+            0.742,
+            0.661,
+            0.758
+          ],
+          "content": "P \\{X = k \\} \\geqslant 0, \\quad k = 0, 1, 2, \\dots , n;",
+          "image_source": "images/page_48_equation_11.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.264,
+            0.77,
+            0.712,
+            0.808
+          ],
+          "content": "\\sum_ {k = 0} ^ {n} P \\{X = k \\} = \\sum_ {k = 0} ^ {n} \\binom {n} {k} p ^ {k} q ^ {n - k} = (p + q) ^ {n} = 1.",
+          "image_source": "images/page_48_equation_12.jpg"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.114,
+            0.855,
+            0.868,
+            0.913
+          ],
+          "content": "① 对于不放回抽样，以 $A_{1}, A_{2}$ 分别记第一次、第二次取到白球，则有 $P(A_{2} \\mid A_{1}) = \\frac{a - 1}{a + b - 1}$，而 $P(A_{2}) = \\frac{a}{a + b}, P(A_{2} \\mid A_{1}) \\neq P(A_{2})$，故第一次、第二次试验不相互独立。即知(2.5)不成立。"
+        }
+      ]
+    },
+    {
+      "page_idx": 49,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.38,
+            0.044,
+            0.655,
+            0.062
+          ],
+          "content": "§ 2 离散型随机变量及其分布律"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.816,
+            0.047,
+            0.871,
+            0.062
+          ],
+          "content": "· 35 ·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.092,
+            0.889,
+            0.183
+          ],
+          "content": "即 $P\\{X = k\\}$ 满足条件（2.2），(2.3). 注意到 $\\binom{n}{k} p^k q^{n - k}$ 刚好是二项式 $(p + q)^n$ 的展开式中出现 $p^k$ 的那一项，我们称随机变量 $X$ 服从参数为 $n, p$ 的二项分布，并记为 $X \\sim b(n, p)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.183,
+            0.188,
+            0.531,
+            0.207
+          ],
+          "content": "特别, 当 n=1 时二项分布(2.6)化为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.371,
+            0.213,
+            0.651,
+            0.233
+          ],
+          "content": "P \\{X = k \\} = p ^ {k} q ^ {1 - k}, \\quad k = 0, 1.",
+          "image_source": "images/page_49_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.236,
+            0.327,
+            0.255
+          ],
+          "content": "这就是(0-1)分布."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.262,
+            0.888,
+            0.33
+          ],
+          "content": "例 2 按规定,某种型号电子元件的使用寿命超过 1500 h 的为一级品.已知某一大批产品的一级品率为 0.2,现在从中随机地抽查 20 只.问 20 只元件中恰有 k 只  $(k=0,1,\\cdots,20)$  为一级品的概率是多少?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.335,
+            0.888,
+            0.453
+          ],
+          "content": "解 这是不放回抽样.但由于这批元件的总数很大,且抽查的元件的数量相对于元件的总数来说又很小,因而可以当作放回抽样来处理,这样做会有一些误差,但误差不大.我们将检查一只元件看它是否为一级品看成是一次试验,检查20只元件相当于做20重伯努利试验.以X记20只元件中一级品的只数,那么,X是一个随机变量,且有 $X\\sim b(20,0.2)$ .由(2.6)式即得所求概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.291,
+            0.46,
+            0.728,
+            0.501
+          ],
+          "content": "P \\{X = k \\} = {\\binom {2 0} {k}} 0. 2 ^ {k} 0. 8 ^ {2 0 - k}, \\quad k = 0, 1, \\dots , 2 0.",
+          "image_source": "images/page_49_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.51,
+            0.351,
+            0.53
+          ],
+          "content": "将计算结果列表如下:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.139,
+            0.543,
+            0.887,
+            0.66
+          ],
+          "content": "<table><tr><td> $P\\{X=0\\}=0.012$ </td><td> $P\\{X=4\\}=0.218$ </td><td> $P\\{X=8\\}=0.022$ </td></tr><tr><td> $P\\{X=1\\}=0.058$ </td><td> $P\\{X=5\\}=0.175$ </td><td> $P\\{X=9\\}=0.007$ </td></tr><tr><td> $P\\{X=2\\}=0.137$ </td><td> $P\\{X=6\\}=0.109$ </td><td> $P\\{X=10\\}=0.002$ </td></tr><tr><td> $P\\{X=3\\}=0.205$ </td><td> $P\\{X=7\\}=0.055$ </td><td></td></tr><tr><td colspan=\"3\">当 $k\\geqslant 11$ 时, $P\\{X=k\\}<0.001$ </td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_49_table_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.68,
+            0.837,
+            0.7
+          ],
+          "content": "为了对本题的结果有一个直观了解,我们作出上表的图形,如图2-3所示."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.704,
+            0.505,
+            0.844
+          ],
+          "content": "从图2-3中看到，当 $k$ 增加时，概率 $P\\{X = k\\}$ 先是随之增加，直至达到最大值（本例中当 $k = 4$ 时取到最大值），随后单调减少.我们指出，一般，对于固定的 $n$ 及 $p$ ，二项分布 $b(n,p)$ 都具有这一性质. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.85,
+            0.505,
+            0.894
+          ],
+          "content": "例 3 某人进行射击,设每次射击的命中率为 0.02,独立射击 400 次,试"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.52,
+            0.714,
+            0.864,
+            0.865
+          ],
+          "sub_type": "bar",
+          "content": "| k | P{X=k} |\n| --- | --- |\n| 1 | ~0.25 |\n| 2 | ~0.65 |\n| 3 | ~0.95 |\n| 4 | ~1.05 |\n| 5 | ~0.85 |\n| 6 | ~0.45 |\n| 7 | ~0.20 |\n| 8 | ~0.08 |\n| 9 | ~0.04 |\n| 10 | ~0.03 |\n| 11 | ~0.02 |\n| 12 | ~0.02 |\n| 13 | ~0.02 |\n| 14 | ~0.02 |\n| 15 | ~0.02 |\n| 16 | ~0.02 |\n| 17 | ~0.02 |\n| 18 | ~0.02 |\n| 19 | ~0.02 |\n| 20 | ~0.02 |",
+          "captions": [
+            {
+              "bbox": [
+                0.659,
+                0.871,
+                0.726,
+                0.888
+              ],
+              "content": "图2-3"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_49_chart_14.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 50,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.132,
+            0.048,
+            0.187,
+            0.061
+          ],
+          "content": "· 36 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.375,
+            0.046,
+            0.605,
+            0.063
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.115,
+            0.086,
+            0.346,
+            0.106
+          ],
+          "continues_prev": true,
+          "content": "求至少击中两次的概率."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.115,
+            0.11,
+            0.862,
+            0.154
+          ],
+          "content": "解 将一次射击看成是一次试验. 设击中的次数为 $X$, 则 $X \\sim b(400, 0.02)$. $X$ 的分布律为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.227,
+            0.161,
+            0.749,
+            0.198
+          ],
+          "content": "P \\{X = k \\} = \\binom {4 0 0} {k} 0. 0 2 ^ {k} 0. 9 8 ^ {4 0 0 - k}, \\quad k = 0, 1, \\dots , 4 0 0.",
+          "image_source": "images/page_50_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.205,
+            0.274,
+            0.224
+          ],
+          "content": "于是所求概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.201,
+            0.229,
+            0.774,
+            0.273
+          ],
+          "content": "\\begin{array}{l} P \\{X \\geqslant 2 \\} = 1 - P \\{X = 0 \\} - P \\{X = 1 \\} \\\\ = 1 - 0. 9 8 ^ {4 0 0} - 4 0 0 \\times 0. 0 2 \\times 0. 9 8 ^ {3 9 9} = 0. 9 9 7 2. \\\\ \\end{array}",
+          "image_source": "images/page_50_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.279,
+            0.865,
+            0.468
+          ],
+          "content": "这个概率很接近于1. 我们从两方面来讨论这一结果的实际意义. 其一, 虽然每次射击的命中率很小（为0.02），但如果射击400次，则击中目标至少两次是几乎可以肯定的. 这一事实说明，一个事件尽管在一次试验中发生的概率很小，但只要试验次数很多，而且试验是独立地进行的，那么这一事件的发生几乎是肯定的. 这也告诉人们绝不能轻视小概率事件. 其二，如果射手在400次射击中，击中目标的次数竟不到两次，那么由于概率 $P\\{X < 2\\} \\approx 0.003$ 很小，根据实际推断原理，我们将怀疑“每次射击的命中率为0.02”这一假设，即认为该射手射击的命中率达不到0.02."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.473,
+            0.865,
+            0.567
+          ],
+          "content": "例 4 设有 80 台同类型设备, 各台工作是相互独立的, 发生故障的概率都是 0.01, 且一台设备的故障能由一个人处理. 考虑两种配备维修工人的方法, 其一是由 4 人维护, 每人负责 20 台; 其二是由 3 人共同维护 80 台. 试比较这两种方法在设备发生故障时不能及时维修的概率的大小."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.57,
+            0.864,
+            0.639
+          ],
+          "content": "解 按第一种方法. 以 $X$ 记“第1人维护的20台中同一时刻发生故障的台数”，以 $A_{i}(i = 1,2,3,4)$ 表示事件“第 $i$ 人维护的20台中发生故障不能及时维修”，则知80台中发生故障而不能及时维修的概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.281,
+            0.643,
+            0.691,
+            0.664
+          ],
+          "content": "P (A _ {1} \\cup A _ {2} \\cup A _ {3} \\cup A _ {4}) \\geqslant P (A _ {1}) = P \\{X \\geqslant 2 \\}.",
+          "image_source": "images/page_50_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.668,
+            0.356,
+            0.686
+          ],
+          "content": "而 $X \\sim b(20, 0.01)$, 故有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.241,
+            0.693,
+            0.731,
+            0.784
+          ],
+          "content": "\\begin{array}{l} P \\{X \\geqslant 2 \\} = 1 - \\sum_ {k = 0} ^ {1} P \\{X = k \\} \\\\ = 1 - \\sum_ {k = 0} ^ {1} {\\binom {2 0} {k}} 0. 0 1 ^ {k} 0. 9 9 ^ {2 0 - k} = 0. 0 1 6 9. \\\\ \\end{array}",
+          "image_source": "images/page_50_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.79,
+            0.664,
+            0.81
+          ],
+          "content": "即有 $P(A_{1} \\cup A_{2} \\cup A_{3} \\cup A_{4}) \\geqslant 0.0169.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.815,
+            0.862,
+            0.859
+          ],
+          "content": "按第二种方法. 以 $Y$ 记80台中同一时刻发生故障的台数. 此时, $Y \\sim b(80, 0.01)$, 故80台中发生故障而不能及时维修的概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.239,
+            0.864,
+            0.732,
+            0.907
+          ],
+          "content": "P \\{Y \\geqslant 4 \\} = 1 - \\sum_ {k = 0} ^ {3} {\\binom {8 0} {k}} 0. 0 1 ^ {k} 0. 9 9 ^ {8 0 - k} = 0. 0 0 8 7.",
+          "image_source": "images/page_50_equation_15.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 51,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.378,
+            0.044,
+            0.652,
+            0.062
+          ],
+          "content": "§ 2 离散型随机变量及其分布律"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.814,
+            0.046,
+            0.871,
+            0.06
+          ],
+          "content": "· 37 ·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.084,
+            0.889,
+            0.129
+          ],
+          "content": "我们发现,在后一种情况尽管任务重了(每人平均维护约27台),但工作效率不仅没有降低,反而提高了."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.184,
+            0.145,
+            0.347,
+            0.168
+          ],
+          "level": 2,
+          "content": "(三) 泊松分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.184,
+            0.183,
+            0.802,
+            0.203
+          ],
+          "content": "设随机变量 X 所有可能取的值为 0,1,2,…,而取各个值的概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.34,
+            0.209,
+            0.684,
+            0.244
+          ],
+          "content": "P \\{X = k \\} = \\frac {\\lambda^ {k} \\mathrm{e} ^ {- \\lambda}}{k !}, k = 0, 1, 2, \\dots ,",
+          "image_source": "images/page_51_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.252,
+            0.794,
+            0.271
+          ],
+          "content": "其中 $\\lambda > 0$ 是常数. 则称 $X$ 服从参数为 $\\lambda$ 的泊松分布, 记为 $X \\sim \\pi(\\lambda)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.276,
+            0.582,
+            0.295
+          ],
+          "content": "易知， $P\\{X=k\\}\\geqslant0,k=0,1,2,\\cdots$ ，且有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.248,
+            0.303,
+            0.775,
+            0.345
+          ],
+          "content": "\\sum_ {k = 0} ^ {\\infty} P \\{X = k \\} = \\sum_ {k = 0} ^ {\\infty} \\frac {\\lambda^ {k} \\mathrm{e} ^ {- \\lambda}}{k !} = \\mathrm{e} ^ {- \\lambda} \\sum_ {k = 0} ^ {\\infty} \\frac {\\lambda^ {k}}{k !} = \\mathrm{e} ^ {- \\lambda} \\cdot \\mathrm{e} ^ {\\lambda} = 1.",
+          "image_source": "images/page_51_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.348,
+            0.498,
+            0.368
+          ],
+          "content": "即 $P\\{X = k\\}$ 满足条件（2.2），(2.3)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.373,
+            0.888,
+            0.417
+          ],
+          "content": "参数 $\\lambda$ 的意义将在第四章说明, 有关服从泊松分布的随机变量的数学模型将在第十二章中讨论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.422,
+            0.889,
+            0.541
+          ],
+          "content": "具有泊松分布的随机变量在实际应用中是很多的.例如,一本书一页中的印刷错误数,某地区在一天内邮递遗失的信件数,某一医院在一天内的急诊病人数,某一地区一个时间间隔内发生交通事故的次数,在一个时间间隔内某种放射性物质发出的、经过计数器的 $\\alpha$ 粒子数等都服从泊松分布.泊松分布也是概率论中的一种重要分布."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.184,
+            0.546,
+            0.654,
+            0.565
+          ],
+          "content": "下面介绍一个用泊松分布来逼近二项分布的定理."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.571,
+            0.887,
+            0.615
+          ],
+          "content": "泊松定理 设 $\\lambda > 0$ 是一个常数, $n$ 是任意正整数, 设 $np_n = \\lambda$, 则对于任一固定的非负整数 $k$, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.37,
+            0.624,
+            0.649,
+            0.662
+          ],
+          "content": "\\lim _ {n \\to \\infty} \\binom {n} {k} p _ {n} ^ {k} (1 - p _ {n}) ^ {n - k} = \\frac {\\lambda^ {k} \\mathrm{e} ^ {- \\lambda}}{k !}.",
+          "image_source": "images/page_51_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.183,
+            0.674,
+            0.356,
+            0.706
+          ],
+          "content": "证 由 $p_n = \\frac{\\lambda}{n}$, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.196,
+            0.717,
+            0.866,
+            0.812
+          ],
+          "content": "\\begin{array}{l} \\binom {n} {k} p _ {n} ^ {k} (1 - p _ {n}) ^ {n - k} = \\frac {n (n - 1) \\cdots (n - k + 1)}{k !} \\left(\\frac {\\lambda}{n}\\right) ^ {k} \\left(1 - \\frac {\\lambda}{n}\\right) ^ {n - k} \\\\ = \\frac {\\lambda^ {k}}{k !} \\left[ 1 \\cdot \\left(1 - \\frac {1}{n}\\right) \\dots \\left(1 - \\frac {k - 1}{n}\\right) \\right] \\left(1 - \\frac {\\lambda}{n}\\right) ^ {n} \\left(1 - \\frac {\\lambda}{n}\\right) ^ {- k}. \\\\ \\end{array}",
+          "image_source": "images/page_51_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.819,
+            0.438,
+            0.838
+          ],
+          "content": "对于任意固定的 $k$ ，当 $n\\to \\infty$ 时，"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.197,
+            0.844,
+            0.825,
+            0.881
+          ],
+          "content": "1 \\cdot \\left(1 - \\frac {1}{n}\\right) \\dots \\left(1 - \\frac {k - 1}{n}\\right)\\rightarrow 1, \\quad \\left(1 - \\frac {\\lambda}{n}\\right) ^ {n} \\rightarrow \\mathrm{e} ^ {- \\lambda}, \\quad \\left(1 - \\frac {\\lambda}{n}\\right) ^ {- k} \\rightarrow 1.",
+          "image_source": "images/page_51_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.888,
+            0.186,
+            0.907
+          ],
+          "content": "故有"
+        }
+      ]
+    },
+    {
+      "page_idx": 52,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.132,
+            0.047,
+            0.187,
+            0.062
+          ],
+          "content": "· 38 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.375,
+            0.046,
+            0.605,
+            0.063
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.348,
+            0.09,
+            0.626,
+            0.128
+          ],
+          "content": "\\lim _ {n \\to \\infty} \\binom {n} {k} p _ {n} ^ {k} (1 - p _ {n}) ^ {n - k} = \\frac {\\lambda^ {k} \\mathrm{e} ^ {- \\lambda}}{k !}.",
+          "image_source": "images/page_52_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.115,
+            0.136,
+            0.864,
+            0.18
+          ],
+          "content": "定理的条件 $np_{n} = \\lambda$ （常数）意味着当 $n$ 很大时 $p_n$ 必定很小，因此，上述定理表明当 $n$ 很大，$p$ 很小 $(np = \\lambda)$ 时有以下近似式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.299,
+            0.19,
+            0.86,
+            0.225
+          ],
+          "content": "\\(\\binom {n} {k} p ^ {k} (1 - p) ^ {n - k} \\approx \\frac {\\lambda^ {k} \\mathrm{e} ^ {- \\lambda}}{k !} \\quad (\\text {其中} \\lambda = n p). \\tag {2.7}",
+          "image_source": "images/page_52_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.233,
+            0.863,
+            0.278
+          ],
+          "content": "也就是说以 $n, p$ 为参数的二项分布的概率值可以由参数为 $\\lambda = np$ 的泊松分布的概率值近似. 上式也能用来作二项分布概率的近似计算."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.283,
+            0.864,
+            0.351
+          ],
+          "content": "例 5 计算机硬件公司制造某种特殊型号的微型芯片, 次品率达 0.1%, 各芯片成为次品相互独立. 求在 1 000 只产品中至少有 2 只次品的概率. 以 X 记产品中的次品数,  $X \\sim b(1\\ 000, 0.001)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.157,
+            0.356,
+            0.317,
+            0.375
+          ],
+          "content": "解 所求概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.248,
+            0.382,
+            0.78,
+            0.472
+          ],
+          "content": "\\begin{array}{l} P \\{X \\geqslant 2 \\} = 1 - P \\{X = 0 \\} - P \\{X = 1 \\} \\\\ = 1 - 0. 9 9 9 ^ {1 0 0 0} - \\binom {1 0 0 0} {1} 0. 9 9 9 ^ {9 9 9} \\times 0. 0 0 1 \\\\ \\approx 1 - 0. 3 6 7 6 9 5 4 - 0. 3 6 8 0 6 3 5 = 0. 2 6 4 2 4 1 1. \\\\ \\end{array}",
+          "image_source": "images/page_52_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.478,
+            0.54,
+            0.497
+          ],
+          "content": "利用(2.7)式来计算得, $\\lambda=1\\ 000\\times0.001=1$ ,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.318,
+            0.505,
+            0.685,
+            0.545
+          ],
+          "content": "\\begin{array}{l} P \\{X \\geqslant 2 \\} = 1 - P \\{X = 0 \\} - P \\{X = 1 \\} \\\\ \\approx 1 - \\mathrm{e} ^ {- 1} - \\mathrm{e} ^ {- 1} \\approx 0. 2 6 4 2 4 1 1. \\\\ \\end{array}",
+          "image_source": "images/page_52_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.554,
+            0.863,
+            0.636
+          ],
+          "content": "显然利用(2.7)式的计算来得方便.一般,当 $n\\geqslant20,p\\leqslant0.05$ 时,用 $\\frac{\\lambda^{k}e^{-\\lambda}}{k!}\\quad(\\lambda=np)$ 作为 $\\binom{n}{k}p^{k}(1-p)^{n-k}$ 的近似值效果颇佳."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.323,
+            0.665,
+            0.658,
+            0.69
+          ],
+          "level": 2,
+          "content": "§ 3 随机变量的分布函数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.715,
+            0.864,
+            0.884
+          ],
+          "content": "对于非离散型随机变量 $X$ ，由于其可能取的值不能一一列举出来，因而就不能像离散型随机变量那样可以用分布律来描述它.另外，我们通常所遇到的非离散型随机变量取任一指定的实数值的概率都等于0（这一点在下一节将会讲到).再者，在实际中，对于这样的随机变量，例如误差 $\\varepsilon$ 、元件的寿命 $T$ 等，我们并不会对误差 $\\varepsilon = 0.05\\mathrm{mm}$ ，寿命 $T = 1251.3\\mathrm{h}$ 的概率感兴趣，而是考虑误差落在某个区间内的概率，寿命 $T$ 大于某个数的概率.因而我们转而去研究随机变量所取的值落在一个区间 $(x_{1},x_{2}]$ 的概率: $P\\{x_{1} < X\\leqslant x_{2}\\}$ .但由于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.285,
+            0.888,
+            0.684,
+            0.909
+          ],
+          "content": "P \\{x _ {1} <   X \\leqslant x _ {2} \\} = P \\{X \\leqslant x _ {2} \\} - P \\{X \\leqslant x _ {1} \\},",
+          "image_source": "images/page_52_equation_14.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 53,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.406,
+            0.047,
+            0.625,
+            0.064
+          ],
+          "content": "§ 3 随机变量的分布函数"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.815,
+            0.05,
+            0.871,
+            0.063
+          ],
+          "content": "· 39 ·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.087,
+            0.888,
+            0.13
+          ],
+          "content": "所以我们只需知道 $P\\{X \\leqslant x_2\\}$ 和 $P\\{X \\leqslant x_1\\}$ 就可以了. 下面引入随机变量的分布函数的概念①."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.136,
+            0.653,
+            0.155
+          ],
+          "content": "定义 设 $X$ 是一个随机变量, $x$ 是任意实数, 函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.359,
+            0.16,
+            0.668,
+            0.179
+          ],
+          "content": "F (x) = P \\{X \\leqslant x \\}, - \\infty <   x <   \\infty",
+          "image_source": "images/page_53_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.183,
+            0.331,
+            0.202
+          ],
+          "content": "称为 $X$ 的分布函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.208,
+            0.499,
+            0.226
+          ],
+          "content": "对于任意实数 $x_{1}, x_{2} (x_{1} < x_{2})$，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.231,
+            0.232,
+            0.887,
+            0.252
+          ],
+          "content": "P \\{x _ {1} <   X \\leqslant x _ {2} \\} = P \\{X \\leqslant x _ {2} \\} - P \\{X \\leqslant x _ {1} \\} = F (x _ {2}) - F (x _ {1}), \\tag {3.1}",
+          "image_source": "images/page_53_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.256,
+            0.887,
+            0.3
+          ],
+          "content": "因此,若已知 X 的分布函数,我们就知道 X 落在任一区间  $(x_{1}, x_{2}]$  上的概率,从这个意义上说,分布函数完整地描述了随机变量的统计规律性."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.305,
+            0.887,
+            0.346
+          ],
+          "content": "分布函数是一个普通的函数,正是通过它,我们将能用数学分析的方法来研究随机变量."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.352,
+            0.887,
+            0.395
+          ],
+          "content": "如果将 $X$ 看成是数轴上的随机点的坐标, 那么, 分布函数 $F(x)$ 在 $x$ 处的函数值就表示 $X$ 落在区间 $(- \\infty, x]$ 上的概率."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.4,
+            0.536,
+            0.419
+          ],
+          "content": "分布函数  $F(x)$  具有以下的基本性质:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.424,
+            0.432,
+            0.442
+          ],
+          "content": "$1^{\\circ}F(x)$ 是一个不减函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.448,
+            0.672,
+            0.468
+          ],
+          "content": "事实上，由(3.1)式对于任意实数 $x_{1}, x_{2} (x_{1} < x_{2})$ ，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.333,
+            0.473,
+            0.682,
+            0.492
+          ],
+          "content": "F (x _ {2}) - F (x _ {1}) = P \\{x _ {1} <   X \\leqslant x _ {2} \\} \\geqslant 0.",
+          "image_source": "images/page_53_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.496,
+            0.363,
+            0.515
+          ],
+          "content": "$2^{\\circ}0\\leqslant F(x)\\leqslant 1$ ，且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.52,
+            0.763,
+            0.548
+          ],
+          "content": "F (- \\infty) = \\lim _ {x \\to - \\infty} F (x) = 0, \\quad F (\\infty) = \\lim _ {x \\to \\infty} F (x) = 1.",
+          "image_source": "images/page_53_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.55,
+            0.637,
+            0.618
+          ],
+          "content": "上面两个式子,我们只从几何上加以说明.在图2-4中,将区间端点x沿数轴无限向左移动(即 $x\\rightarrow-\\infty$ ),则“随机点X落在点x左边”这一事件趋于不"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.652,
+            0.56,
+            0.862,
+            0.585
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.725,
+                0.592,
+                0.792,
+                0.608
+              ],
+              "content": "图2-4"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_53_image_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.622,
+            0.886,
+            0.688
+          ],
+          "content": "可能事件,从而其概率趋于0,即有 $F(-\\infty)=0$ ;又若将点x无限右移(即 $x\\to\\infty$ ),则“随机点X落在点x左边”这一事件趋于必然事件,从而其概率趋于1,即有 $F(\\infty)=1$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.177,
+            0.694,
+            0.653,
+            0.713
+          ],
+          "content": "$3^{\\circ}F(x + 0) = F(x)$ ，即 $F(x)$ 是右连续的.（证略.）"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.177,
+            0.718,
+            0.864,
+            0.738
+          ],
+          "content": "反之，可证具备性质 $1^{\\circ}, 2^{\\circ}, 3^{\\circ}$ 的函数 $F(x)$ 必是某个随机变量的分布函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.178,
+            0.742,
+            0.492,
+            0.761
+          ],
+          "content": "例1 设随机变量 $X$ 的分布律为"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.319,
+            0.774,
+            0.702,
+            0.84
+          ],
+          "content": "| X | -1 | 2 | 3 |\n| --- | --- | --- | --- |\n| $p_k$ | $\\frac{1}{4}$ | $\\frac{1}{2}$ | $\\frac{1}{4}$ |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_53_table_24.jpg"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.134,
+            0.875,
+            0.884,
+            0.91
+          ],
+          "content": "① 虽然对于离散型随机变量，我们可以用分布律全面地描述它，但为了从数学上能统一地对随机变量进行研究，在这里，我们对离散型随机变量和非离散型随机变量统一地定义了分布函数."
+        }
+      ]
+    },
+    {
+      "page_idx": 54,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.13,
+            0.049,
+            0.186,
+            0.062
+          ],
+          "content": "· 40 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.374,
+            0.047,
+            0.604,
+            0.063
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.088,
+            0.738,
+            0.125
+          ],
+          "content": "求 $X$ 的分布函数，并求 $P\\left\\{X \\leqslant \\frac{1}{2}\\right\\}, P\\left\\{\\frac{3}{2} < X \\leqslant \\frac{5}{2}\\right\\}, P\\{2 \\leqslant X \\leqslant 3\\}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.129,
+            0.865,
+            0.198
+          ],
+          "content": "解 $X$ 仅在 $x = -1,2,3$ 三点处其概率 $\\neq 0$ ，而 $F(x)$ 的值是 $X\\leqslant x$ 的累积概率值，由概率的有限可加性，知它即为小于或等于 $x$ 的那些 $x_{k}$ 处的概率 $p_k$ 之和，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.233,
+            0.203,
+            0.744,
+            0.295
+          ],
+          "content": "F (x) = \\left\\{ \\begin{array}{l l} 0 & x <   - 1, \\\\ P \\{X = - 1 \\}, & - 1 \\leqslant x <   2, \\\\ P \\{X = - 1 \\} + P \\{X = 2 \\}, & 2 \\leqslant x <   3, \\\\ 1, & x \\geqslant 3. \\end{array} \\right.",
+          "image_source": "images/page_54_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.116,
+            0.301,
+            0.632,
+            0.429
+          ],
+          "content": "即 $F(x) = \\begin{cases} 0, & x < -1, \\\\ \\frac{1}{4}, & -1 \\leqslant x < 2, \\\\ \\frac{3}{4}, & 2 \\leqslant x < 3, \\\\ 1, & x \\geqslant 3. \\end{cases}$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.433,
+            0.526,
+            0.517
+          ],
+          "content": "$F(x)$ 的图形如图2-5所示,它是一条阶梯形的曲线,在x=-1,2,3处有跳跃点,跳跃值分别为 $\\frac{1}{4}$ , $\\frac{1}{2}$ , $\\frac{1}{4}$ .又"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.156,
+            0.525,
+            0.404,
+            0.561
+          ],
+          "content": "P \\left\\{X \\leqslant \\frac {1}{2} \\right\\} = F \\left(\\frac {1}{2}\\right) = \\frac {1}{4},",
+          "image_source": "images/page_54_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.156,
+            0.568,
+            0.477,
+            0.646
+          ],
+          "content": "\\begin{array}{l} P \\left\\{\\frac {3}{2} <   X \\leqslant \\frac {5}{2} \\right\\} = F \\left(\\frac {5}{2}\\right) - F \\left(\\frac {3}{2}\\right) \\\\ = \\frac {3}{4} - \\frac {1}{4} = \\frac {1}{2}. \\\\ \\end{array}",
+          "image_source": "images/page_54_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.156,
+            0.654,
+            0.531,
+            0.713
+          ],
+          "content": "\\begin{array}{l} P \\{2 \\leqslant X \\leqslant 3 \\} = F (3) - F (2) + P \\{X = 2 \\} \\\\ = 1 - \\frac {3}{4} + \\frac {1}{2} = \\frac {3}{4}. \\\\ \\end{array}",
+          "image_source": "images/page_54_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.722,
+            0.531,
+            0.741
+          ],
+          "content": "一般,设离散型随机变量 X 的分布律为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.343,
+            0.747,
+            0.629,
+            0.768
+          ],
+          "content": "P \\{X = x _ {k} \\} = p _ {k}, \\quad k = 1, 2, \\dots .",
+          "image_source": "images/page_54_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.773,
+            0.498,
+            0.792
+          ],
+          "content": "由概率的可列可加性得 $X$ 的分布函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.798,
+            0.675,
+            0.836
+          ],
+          "content": "F (x) = P \\{X \\leqslant x \\} = \\sum_ {x _ {k} \\leqslant x} P \\{X = x _ {k} \\},",
+          "image_source": "images/page_54_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.116,
+            0.849,
+            0.861,
+            0.885
+          ],
+          "content": "即 $F(x) = \\sum_{x_k\\leqslant x}p_k,$ (3.2)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.889,
+            0.863,
+            0.909
+          ],
+          "content": "这里和式是对于所有满足 $x_{k} \\leqslant x$ 的 $k$ 求和的. 分布函数 $F(x)$ 在 $x = x_{k} (k = 1,$"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.542,
+            0.443,
+            0.843,
+            0.569
+          ],
+          "sub_type": "scatter",
+          "content": "| x | F(x) |\n| --- | --- |\n| -1 | 0 |\n| 2 | 0.75 |\n| 3 | 1 |",
+          "captions": [
+            {
+              "bbox": [
+                0.659,
+                0.576,
+                0.726,
+                0.592
+              ],
+              "content": "图2-5"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_54_chart_16.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 55,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.405,
+            0.044,
+            0.623,
+            0.062
+          ],
+          "content": "§ 3 随机变量的分布函数"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.813,
+            0.047,
+            0.871,
+            0.06
+          ],
+          "content": "· 41 ·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.085,
+            0.559,
+            0.105
+          ],
+          "content": "2, $\\cdots$ 处有跳跃,其跳跃值为 $p_{k}=P\\{X=x_{k}\\}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.109,
+            0.888,
+            0.178
+          ],
+          "content": "例2 一个靶子是半径为 $2\\mathrm{m}$ 的圆盘，设击中靶上任一同心圆盘上的点的概率与该圆盘的面积成正比，并设射击都能中靶，以 $X$ 表示弹着点与圆心的距离.试求随机变量 $X$ 的分布函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.182,
+            0.612,
+            0.202
+          ],
+          "content": "解 若 $x < 0$ ，则 $\\{X \\leqslant x\\}$ 是不可能事件，于是"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.406,
+            0.207,
+            0.612,
+            0.226
+          ],
+          "content": "F (x) = P \\{X \\leqslant x \\} = 0.",
+          "image_source": "images/page_55_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.231,
+            0.886,
+            0.276
+          ],
+          "content": "若 $0 \\leqslant x \\leqslant 2$ ，由题意，$P\\{0 \\leqslant X \\leqslant x\\} = kx^2, k$ 是某一常数，为了确定 $k$ 的值，取 $x = 2$ ，有 $P\\{0 \\leqslant X \\leqslant 2\\} = 2^2k$ ，但已知 $P\\{0 \\leqslant X \\leqslant 2\\} = 1$ ，故得 $k = 1/4$ ，即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.42,
+            0.283,
+            0.601,
+            0.318
+          ],
+          "content": "P \\{0 \\leqslant X \\leqslant x \\} = \\frac {x ^ {2}}{4}.",
+          "image_source": "images/page_55_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.328,
+            0.188,
+            0.347
+          ],
+          "content": "于是"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.354,
+            0.721,
+            0.417
+          ],
+          "content": "\\begin{array}{l} F (x) = P \\{X \\leqslant x \\} = P \\{X <   0 \\} + P \\{0 \\leqslant X \\leqslant x \\} \\\\ = \\frac {x ^ {2}}{4}. \\\\ \\end{array}",
+          "image_source": "images/page_55_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.428,
+            0.578,
+            0.447
+          ],
+          "content": "若 $x \\geqslant 2$ ，由题意 $\\{X \\leqslant x\\}$ 是必然事件，于是"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.406,
+            0.455,
+            0.612,
+            0.473
+          ],
+          "content": "F (x) = P \\{X \\leqslant x \\} = 1.",
+          "image_source": "images/page_55_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.482,
+            0.445,
+            0.501
+          ],
+          "content": "综合上述,即得 X 的分布函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.394,
+            0.51,
+            0.629,
+            0.6
+          ],
+          "content": "F (x) = \\left\\{ \\begin{array}{l l} 0, & x <   0, \\\\ \\frac {x ^ {2}}{4}, & 0 \\leqslant x <   2, \\\\ 1, & x \\geqslant 2. \\end{array} \\right.",
+          "image_source": "images/page_55_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.608,
+            0.543,
+            0.628
+          ],
+          "content": "它的图形是一条连续曲线,如图 2-6 所示."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.633,
+            0.548,
+            0.676
+          ],
+          "content": "另外,容易看到本例中的分布函数 $F(x)$ ,对于任意x可以写成形式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.242,
+            0.681,
+            0.437,
+            0.716
+          ],
+          "content": "F (x) = \\int_ {- \\infty} ^ {x} f (t) \\mathrm{d} t,",
+          "image_source": "images/page_55_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.721,
+            0.186,
+            0.74
+          ],
+          "content": "其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.748,
+            0.51,
+            0.807
+          ],
+          "content": "f (t) = \\left\\{ \\begin{array}{l l} \\frac {t}{2}, & 0 <   t <   2, \\\\ 0, & \\text {其他}. \\end{array} \\right.",
+          "image_source": "images/page_55_equation_18.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.565,
+            0.632,
+            0.865,
+            0.772
+          ],
+          "sub_type": "line",
+          "content": "| x | F(x) |\n| --- | --- |\n| 0 | 0 |\n| 2 | 1 |\n| >2 | 1 |",
+          "captions": [
+            {
+              "bbox": [
+                0.683,
+                0.78,
+                0.75,
+                0.796
+              ],
+              "content": "图2-6"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_55_chart_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.812,
+            0.888,
+            0.881
+          ],
+          "content": "这就是说， $F(x)$ 恰是非负函数 $f(t)$ 在区间 $(-\\infty, x]$ 上的积分，在这种情况我们称 X 为连续型随机变量。下一节我们将给出连续型随机变量的一般定义。"
+        }
+      ]
+    },
+    {
+      "page_idx": 56,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.129,
+            0.046,
+            0.185,
+            0.06
+          ],
+          "content": "· 42 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.372,
+            0.044,
+            0.601,
+            0.061
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.266,
+            0.106,
+            0.715,
+            0.131
+          ],
+          "level": 2,
+          "content": "§ 4 连续型随机变量及其概率密度"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.157,
+            0.862,
+            0.203
+          ],
+          "content": "一般,如上节例2中的随机变量那样,如果对于随机变量X的分布函数 $F(x)$ ,存在非负可积函数 $f(x)$ ,使对于任意实数x有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.389,
+            0.211,
+            0.857,
+            0.242
+          ],
+          "content": "F (x) = \\int_ {- \\infty} ^ {x} f (t) \\mathrm{d} t, \\tag {4.1}",
+          "image_source": "images/page_56_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.249,
+            0.822,
+            0.27
+          ],
+          "content": "则称 $X$ 为连续型随机变量，$f(x)$ 称为 $X$ 的概率密度函数，简称概率密度①."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.274,
+            0.86,
+            0.319
+          ],
+          "content": "由(4.1)式,据数学分析的知识知连续型随机变量的分布函数是连续函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.324,
+            0.861,
+            0.369
+          ],
+          "content": "在实际应用中遇到的基本上是离散型或连续型随机变量. 本书只讨论这两种随机变量."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.158,
+            0.374,
+            0.564,
+            0.394
+          ],
+          "content": "由定义知道,概率密度  $f(x)$  具有以下性质:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.154,
+            0.399,
+            0.353,
+            0.46
+          ],
+          "content": "\\begin{array}{l} 1 ^ {\\circ} f (x) \\geqslant 0. \\\\ 2 ^ {\\circ} \\int_ {- \\infty} ^ {\\infty} f (x) \\mathrm{d} x = 1. \\\\ \\end{array}",
+          "image_source": "images/page_56_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.158,
+            0.467,
+            0.493,
+            0.486
+          ],
+          "content": "$3^{\\circ}$ 对于任意实数 $x_{1}, x_{2} (x_{1} \\leqslant x_{2})$,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.24,
+            0.493,
+            0.726,
+            0.532
+          ],
+          "content": "P \\{x _ {1} <   X \\leqslant x _ {2} \\} = F (x _ {2}) - F (x _ {1}) = \\int_ {x _ {1}} ^ {x _ {2}} f (x) \\mathrm{d} x.",
+          "image_source": "images/page_56_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.534,
+            0.592,
+            0.554
+          ],
+          "content": "$4^{\\circ}$ 若 $f(x)$ 在点 $x$ 处连续，则有 $F'(x) = f(x)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.559,
+            0.492,
+            0.579
+          ],
+          "content": "反之，若 $f(x)$ 具备性质 $1^{\\circ}, 2^{\\circ}$，引入"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.387,
+            0.584,
+            0.582,
+            0.62
+          ],
+          "content": "G (x) = \\int_ {- \\infty} ^ {x} f (t) \\mathrm{d} t,",
+          "image_source": "images/page_56_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.625,
+            0.66,
+            0.646
+          ],
+          "content": "它是某一随机变量 $X$ 的分布函数，$f(x)$ 是 $X$ 的概率密度."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.65,
+            0.862,
+            0.744
+          ],
+          "content": "由性质 $2^{\\circ}$ 知道介于曲线 $y = f(x)$ 与 $Ox$ 轴之间的面积等于1（图2-7）.由 $3^{\\circ}$ 知道 $X$ 落在区间 $(x_{1}, x_{2}]$ 的概率 $P\\{x_{1} < X \\leqslant x_{2}\\}$ 等于区间 $(x_{1}, x_{2}]$ 上曲线 $y = f(x)$ 之下的曲边梯形的面积(图2-8).由性质 $4^{\\circ}$ 知道在 $f(x)$ 的连续点 $x$ 处有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.214,
+            0.753,
+            0.856,
+            0.789
+          ],
+          "content": "f (x) = \\lim _ {\\Delta x \\to 0 ^ {+}} \\frac {F (x + \\Delta x) - F (x)}{\\Delta x} = \\lim _ {\\Delta x \\to 0 ^ {+}} \\frac {P \\{x <   X \\leqslant x + \\Delta x \\}}{\\Delta x}. \\tag {4.2}",
+          "image_source": "images/page_56_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.794,
+            0.86,
+            0.839
+          ],
+          "content": "从这里我们看到概率密度的定义与物理学中的线密度的定义相类似, 这就是称  $f(x)$  为概率密度的缘故."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.111,
+            0.873,
+            0.86,
+            0.909
+          ],
+          "content": "① 由定义知道, 改变概率密度  $f(x)$  在个别点的函数值不影响分布函数  $F(x)$  的取值. 因此, 并不在乎改变概率密度在个别点上的值."
+        }
+      ]
+    },
+    {
+      "page_idx": 57,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.368,
+            0.055,
+            0.66,
+            0.072
+          ],
+          "content": "§ 4 连续型随机变量及其概率密度"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.815,
+            0.057,
+            0.871,
+            0.07
+          ],
+          "content": "· 43 ·"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.189,
+            0.109,
+            0.495,
+            0.254
+          ],
+          "sub_type": "area",
+          "content": "| X | f(x) |\n| --- | --- |\n| ~-1.5 | ~0.2 |\n| ~-0.8 | ~0.9 |\n| 0 | ~0.3 |\n| ~0.8 | ~0.9 |\n| ~1.5 | ~0.2 |",
+          "captions": [
+            {
+              "bbox": [
+                0.31,
+                0.263,
+                0.376,
+                0.278
+              ],
+              "content": "图2-7"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_57_chart_2.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.533,
+            0.107,
+            0.837,
+            0.254
+          ],
+          "sub_type": "area",
+          "content": "| X-axis | Y-axis |\n| --- | --- |\n| 0 | ~0.2 |\n| x1 | ~0.6 |\n| x2 | ~0.3 |",
+          "captions": [
+            {
+              "bbox": [
+                0.653,
+                0.263,
+                0.719,
+                0.278
+              ],
+              "content": "图2-8"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_57_chart_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.301,
+            0.548,
+            0.319
+          ],
+          "content": "由(4.2)式知道,若不计高阶无穷小,有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.367,
+            0.325,
+            0.887,
+            0.343
+          ],
+          "content": "P \\{x <   X \\leqslant x + \\Delta x \\} \\approx f (x) \\Delta x. \\tag {4.3}",
+          "image_source": "images/page_57_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.349,
+            0.741,
+            0.369
+          ],
+          "content": "这表示 $X$ 落在小区间 $(x, x + \\Delta x]$ 上的概率近似地等于 $f(x)\\Delta x$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.374,
+            0.518,
+            0.392
+          ],
+          "content": "例 1 设随机变量 X 具有概率密度"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.361,
+            0.399,
+            0.662,
+            0.484
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l l} k x, & 0 \\leqslant x <   3, \\\\ 2 - \\frac {x}{2}, & 3 \\leqslant x \\leqslant 4, \\\\ 0, & \\text {其他}. \\end{array} \\right.",
+          "image_source": "images/page_57_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.181,
+            0.488,
+            0.818,
+            0.524
+          ],
+          "content": "(1) 确定常数 $k$. (2) 求 $X$ 的分布函数 $F(x)$. (3) 求 $P\\left\\{1 < X \\leqslant \\frac{7}{2}\\right\\}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.181,
+            0.529,
+            0.481,
+            0.564
+          ],
+          "content": "解（1）由 $\\int_{-\\infty}^{\\infty}f(x)\\mathrm{d}x = 1$ ，得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.368,
+            0.57,
+            0.655,
+            0.606
+          ],
+          "content": "\\int_ {0} ^ {3} k x \\mathrm{d} x + \\int_ {3} ^ {4} \\left(2 - \\frac {x}{2}\\right) \\mathrm{d} x = 1,",
+          "image_source": "images/page_57_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.614,
+            0.462,
+            0.647
+          ],
+          "content": "解得 $k = \\frac{1}{6}$ ，于是 $X$ 的概率密度为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.356,
+            0.658,
+            0.667,
+            0.759
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l l} \\frac {x}{6}, & 0 \\leqslant x <   3, \\\\ 2 - \\frac {x}{2}, & 3 \\leqslant x <   4, \\\\ 0, & \\text {其他}. \\end{array} \\right.",
+          "image_source": "images/page_57_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.765,
+            0.382,
+            0.783
+          ],
+          "content": "(2) $X$ 的分布函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.278,
+            0.79,
+            0.748,
+            0.92
+          ],
+          "content": "F (x) = \\left\\{ \\begin{array}{l l} 0, & x <   0, \\\\ \\int_ {0} ^ {x} \\frac {x}{6} \\mathrm{d} x, & 0 \\leqslant x <   3, \\\\ \\int_ {0} ^ {3} \\frac {x}{6} \\mathrm{d} x + \\int_ {3} ^ {x} \\left(2 - \\frac {x}{2}\\right) \\mathrm{d} x, & 3 \\leqslant x <   4, \\\\ 1, & x \\geqslant 4. \\end{array} \\right.",
+          "image_source": "images/page_57_equation_17.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 58,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.13,
+            0.056,
+            0.186,
+            0.068
+          ],
+          "content": "· 44 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.375,
+            0.054,
+            0.604,
+            0.07
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.115,
+            0.095,
+            0.677,
+            0.224
+          ],
+          "content": "F (x) = \\left\\{ \\begin{array}{l l} 0, & x <   0, \\\\ \\frac {x ^ {2}}{1 2}, & 0 \\leqslant x <   3, \\\\ - 3 + 2 x - \\frac {x ^ {2}}{4}, & 3 \\leqslant x <   4, \\\\ 1, & x \\geqslant 4. \\end{array} \\right.",
+          "image_source": "images/page_58_equation_2.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.159,
+            0.23,
+            0.56,
+            0.266
+          ],
+          "content": "P \\left\\{1 <   X \\leqslant \\frac {7}{2} \\right\\} = F \\left(\\frac {7}{2}\\right) - F (1) = \\frac {4 1}{4 8}. \\tag {3}",
+          "image_source": "images/page_58_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.272,
+            0.865,
+            0.34
+          ],
+          "content": "需要指出的是,对于连续型随机变量 X 来说,它取任一指定实数值 a 的概率均为 0, 即  $P\\{X=a\\}=0$ . 事实上, 设 X 的分布函数为  $F(x), \\Delta x>0$ , 则由  $\\{X=a\\}\\subset\\{a-\\Delta x<X\\leqslant a\\}$  得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.227,
+            0.346,
+            0.745,
+            0.365
+          ],
+          "content": "0 \\leqslant P \\{X = a \\} \\leqslant P \\{a - \\Delta x <   X \\leqslant a \\} = F (a) - F (a - \\Delta x).",
+          "image_source": "images/page_58_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.37,
+            0.864,
+            0.414
+          ],
+          "content": "在上述不等式中令 $\\Delta x\\to 0$ ，并注意到 $X$ 为连续型随机变量，其分布函数 $F(x)$ 是连续的，即得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.413,
+            0.422,
+            0.859,
+            0.436
+          ],
+          "content": "P \\{X = a \\} = 0. \\tag {4.4}",
+          "image_source": "images/page_58_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.444,
+            0.863,
+            0.487
+          ],
+          "content": "据此,在计算连续型随机变量落在某一区间的概率时,可以不必区分该区间是开区间或闭区间或半闭区间.例如有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.277,
+            0.493,
+            0.694,
+            0.513
+          ],
+          "content": "P \\{a <   X \\leqslant b \\} = P \\{a \\leqslant X \\leqslant b \\} = P \\{a <   X <   b \\}.",
+          "image_source": "images/page_58_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.518,
+            0.864,
+            0.562
+          ],
+          "content": "在这里,事件 $\\{X=a\\}$ 并非不可能事件,但有 $P\\{X=a\\}=0$ . 这就是说,若A是不可能事件,则有 $P(A)=0$ ;反之,若 $P(A)=0$ ,并不一定意味着A是不可能事件."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.567,
+            0.863,
+            0.635
+          ],
+          "content": "以后当我们提到一个随机变量 $X$ 的“概率分布”时，指的是它的分布函数；或者，当 $X$ 是连续型随机变量时，指的是它的概率密度，当 $X$ 是离散型随机变量时，指的是它的分布律."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.641,
+            0.519,
+            0.66
+          ],
+          "content": "下面介绍三种重要的连续型随机变量."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.156,
+            0.675,
+            0.32,
+            0.697
+          ],
+          "level": 2,
+          "content": "(一)均匀分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.155,
+            0.713,
+            0.498,
+            0.733
+          ],
+          "content": "若连续型随机变量 $X$ 具有概率密度"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.364,
+            0.742,
+            0.858,
+            0.799
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l l} \\frac {1}{b - a}, & a <   x <   b, \\\\ 0, & \\text {其他，} \\end{array} \\right. \\tag {4.5}",
+          "image_source": "images/page_58_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.806,
+            0.638,
+            0.825
+          ],
+          "content": "则称 X 在区间  $(a, b)$  上服从均匀分布, 记为  $X \\sim U(a, b)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.155,
+            0.831,
+            0.495,
+            0.866
+          ],
+          "content": "易知 $f(x) \\geqslant 0$ ，且 $\\int_{-\\infty}^{\\infty} f(x) \\, \\mathrm{d}x = 1.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.872,
+            0.863,
+            0.917
+          ],
+          "content": "在区间 $(a, b)$ 上服从均匀分布的随机变量 $X$，具有下述意义的等可能性，即它落在区间 $(a, b)$ 中任意等长度的子区间内的可能性是相同的。或者说它落在"
+        }
+      ]
+    },
+    {
+      "page_idx": 59,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.362,
+            0.055,
+            0.656,
+            0.072
+          ],
+          "content": "§ 4 连续型随机变量及其概率密度"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.808,
+            0.056,
+            0.866,
+            0.07
+          ],
+          "content": "· 45 ·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.095,
+            0.882,
+            0.14
+          ],
+          "continues_prev": true,
+          "content": "$(a, b)$ 的子区间内的概率只依赖于子区间的长度而与子区间的位置无关. 事实上, 对于任一长度为 $l$ 的子区间 $(c, c + l), a \\leqslant c < c + l \\leqslant b$, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.227,
+            0.144,
+            0.779,
+            0.181
+          ],
+          "content": "P \\{c <   X \\leqslant c + l \\} = \\int_ {c} ^ {c + l} f (x) \\mathrm{d} x = \\int_ {c} ^ {c + l} \\frac {1}{b - a} \\mathrm{d} x = \\frac {l}{b - a}.",
+          "image_source": "images/page_59_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.177,
+            0.188,
+            0.462,
+            0.206
+          ],
+          "content": "由(4.1)式得 $X$ 的分布函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.377,
+            0.212,
+            0.882,
+            0.297
+          ],
+          "content": "F (x) = \\left\\{ \\begin{array}{l l} 0, & x <   a, \\\\ \\frac {x - a}{b - a}, & a \\leqslant x <   b, \\\\ 1, & x \\geqslant b. \\end{array} \\right. \\tag {4.6}",
+          "image_source": "images/page_59_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.303,
+            0.616,
+            0.323
+          ],
+          "content": "$f(x)$  及  $F(x)$  的图形分别如图 2-9, 图 2-10 所示."
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.175,
+            0.347,
+            0.51,
+            0.489
+          ],
+          "sub_type": "area",
+          "content": "| X | f(x) |\n| --- | --- |\n| a | 1/b-a |\n| b | 1/b-a |",
+          "captions": [
+            {
+              "bbox": [
+                0.311,
+                0.497,
+                0.378,
+                0.512
+              ],
+              "content": "图2-9"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_59_chart_7.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.547,
+            0.34,
+            0.84,
+            0.488
+          ],
+          "sub_type": "line",
+          "content": "| X | F(x) |\n| --- | --- |\n| 0 | 0 |\n| a | 0 |\n| b | 1 |\n| >b | 1 |",
+          "captions": [
+            {
+              "bbox": [
+                0.657,
+                0.496,
+                0.734,
+                0.511
+              ],
+              "content": "图2-10"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_59_chart_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.533,
+            0.884,
+            0.577
+          ],
+          "content": "例 2 设电阻值 R 是一个随机变量, 均匀分布在  $900 \\sim 1100 \\Omega$ . 求 R 的概率密度及 R 落在  $950 \\sim 1050 \\Omega$  的概率."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.177,
+            0.583,
+            0.456,
+            0.601
+          ],
+          "content": "解 按题意,R 的概率密度为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.321,
+            0.608,
+            0.695,
+            0.667
+          ],
+          "content": "f (r) = \\left\\{ \\begin{array}{l l} \\frac {1}{1 1 0 0 - 9 0 0}, & 9 0 0 <   r <   1 1 0 0, \\\\ 0, & \\text {其他.} \\end{array} \\right.",
+          "image_source": "images/page_59_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.673,
+            0.713,
+            0.709
+          ],
+          "content": "故有 $P\\{950 < R \\leqslant 1050\\} = \\int_{950}^{1050} \\frac{1}{200} \\mathrm{d}r = 0.5.$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.178,
+            0.727,
+            0.343,
+            0.749
+          ],
+          "level": 2,
+          "content": "(二) 指数分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.178,
+            0.764,
+            0.519,
+            0.783
+          ],
+          "content": "若连续型随机变量 $X$ 的概率密度为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.378,
+            0.79,
+            0.884,
+            0.849
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l l} \\frac {1}{\\theta} \\mathrm{e} ^ {- x / \\theta}, & x > 0, \\\\ 0, & \\text {其他}, \\end{array} \\right. \\tag {4.7}",
+          "image_source": "images/page_59_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.856,
+            0.637,
+            0.875
+          ],
+          "content": "其中  $\\theta>0$  为常数, 则称 X 服从参数为  $\\theta$  的指数分布."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.882,
+            0.885,
+            0.915
+          ],
+          "content": "易知 $f(x) \\geqslant 0$，且 $\\int_{-\\infty}^{\\infty} f(x) \\mathrm{d}x = 1$. 图2-11中分别画出了 $\\theta = 1/3, \\theta = 1$"
+        }
+      ]
+    },
+    {
+      "page_idx": 60,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.134,
+            0.056,
+            0.191,
+            0.069
+          ],
+          "content": "· 46 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.378,
+            0.054,
+            0.61,
+            0.071
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.095,
+            0.321,
+            0.113
+          ],
+          "content": "$\\theta=2$  时  $f(x)$  的图形."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.118,
+            0.119,
+            0.538,
+            0.161
+          ],
+          "content": "由(4.7)式容易得到随机变量 $X$ 的分布函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.183,
+            0.166,
+            0.538,
+            0.211
+          ],
+          "content": "F (x) = \\left\\{ \\begin{array}{l l} 1 - \\mathrm{e} ^ {- x / \\theta}, & x > 0, \\\\ 0, & \\text {其他}. \\end{array} \\right. \\tag {4.8}",
+          "image_source": "images/page_60_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.216,
+            0.538,
+            0.259
+          ],
+          "content": "服从指数分布的随机变量 X 具有以下有趣的性质:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.265,
+            0.352,
+            0.284
+          ],
+          "content": "对于任意 $s, t > 0$，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.117,
+            0.289,
+            0.532,
+            0.308
+          ],
+          "content": "P \\{X > s + t \\mid X > s \\} = P \\{X > t \\}. \\tag {4.9}",
+          "image_source": "images/page_60_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.314,
+            0.187,
+            0.332
+          ],
+          "content": "事实上"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.557,
+            0.094,
+            0.848,
+            0.267
+          ],
+          "sub_type": "line",
+          "content": "| x | \\(f(x) (\\theta=1/3)\\) | \\(f(x) (\\theta=1)\\) | \\(f(x) (\\theta=2)\\) |\n| --- | --- | --- | --- |\n| 0 | 3 | 1 | 0.5 |\n| 1 | ~0.4 | ~0.4 | ~0.3 |\n| 2 | — | — | ~0.2 |\n| 3 | — | — | ~0.15 |",
+          "captions": [
+            {
+              "bbox": [
+                0.665,
+                0.275,
+                0.74,
+                0.29
+              ],
+              "content": "图2-11"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_60_chart_9.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.231,
+            0.329,
+            0.77,
+            0.476
+          ],
+          "content": "\\begin{array}{l} P \\{X > s + t \\mid X > s \\} = \\frac {P \\{(X > s + t) \\cap (X > s) \\}}{P \\{X > s \\}} \\\\ = \\frac {P \\{X > s + t \\}}{P \\{X > s \\}} = \\frac {1 - F (s + t)}{1 - F (s)} \\\\ = \\frac {\\mathrm{e} ^ {- (s + t) / \\theta}}{\\mathrm{e} ^ {- s / \\theta}} = \\mathrm{e} ^ {- t / \\theta} \\\\ = P \\{X > t \\}. \\\\ \\end{array}",
+          "image_source": "images/page_60_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.481,
+            0.869,
+            0.573
+          ],
+          "content": "性质(4.9)称为无记忆性.如果 $X$ 是某一元件的寿命，那么(4.9)式表明:已知元件已使用了 $s\\mathrm{h}$，它总共能使用至少 $(s + t)\\mathrm{h}$ 的条件概率，与从开始使用时算起它至少能使用 $t\\mathrm{h}$ 的概率相等.这就是说，元件对它已使用过 $s\\mathrm{h}$ 没有记忆.具有这一性质是指数分布有广泛应用的重要原因."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.157,
+            0.578,
+            0.638,
+            0.598
+          ],
+          "content": "指数分布在可靠性理论与排队论中有广泛的应用."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.158,
+            0.612,
+            0.324,
+            0.635
+          ],
+          "level": 2,
+          "content": "(三) 正态分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.157,
+            0.651,
+            0.502,
+            0.669
+          ],
+          "content": "若连续型随机变量 $X$ 的概率密度为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.306,
+            0.673,
+            0.865,
+            0.713
+          ],
+          "content": "f (x) = \\frac {1}{\\sqrt {2 \\pi} \\sigma} \\mathrm{e} ^ {- \\frac {(x - \\mu) ^ {2}}{2 \\sigma^ {2}}}, \\quad - \\infty <   x <   \\infty , \\tag {4.10}",
+          "image_source": "images/page_60_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.72,
+            0.866,
+            0.763
+          ],
+          "content": "其中  $\\mu,\\sigma(\\sigma>0)$  为常数，则称 X 服从参数为  $\\mu,\\sigma$  的正态分布或高斯(Gauss)分布，记为  $X\\sim N(\\mu,\\sigma^{2})$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.157,
+            0.769,
+            0.802,
+            0.803
+          ],
+          "content": "显然 $f(x) \\geqslant 0$ ，下面来证明 $\\int_{-\\infty}^{\\infty} f(x) \\mathrm{d}x = 1.$ 令 $(x - \\mu) / \\sigma = t$ ，得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.304,
+            0.811,
+            0.669,
+            0.854
+          ],
+          "content": "\\int_ {- \\infty} ^ {\\infty} \\frac {1}{\\sqrt {2 \\pi} \\sigma} \\mathrm{e} ^ {- \\frac {(x - \\mu) ^ {2}}{2 \\sigma^ {2}}} \\mathrm{d} x = \\frac {1}{\\sqrt {2 \\pi}} \\int_ {- \\infty} ^ {\\infty} \\mathrm{e} ^ {- t ^ {2} / 2} \\mathrm{d} t.",
+          "image_source": "images/page_60_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.858,
+            0.867,
+            0.917
+          ],
+          "content": "记 $I = \\int_{-\\infty}^{\\infty}\\mathrm{e}^{-t^2 /2}\\mathrm{d}t$ ，则有 $I^2 = \\int_{-\\infty}^{\\infty}\\int_{-\\infty}^{\\infty}\\mathrm{e}^{-(t^2 +u^2) / 2}\\mathrm{d}t\\mathrm{d}u$ ，利用极坐标将它化成累次积分，得到"
+        }
+      ]
+    },
+    {
+      "page_idx": 61,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.361,
+            0.049,
+            0.653,
+            0.066
+          ],
+          "content": "§ 4 连续型随机变量及其概率密度"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.805,
+            0.05,
+            0.863,
+            0.064
+          ],
+          "content": "· 47 ·"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.368,
+            0.089,
+            0.637,
+            0.126
+          ],
+          "content": "I ^ {2} = \\int_ {0} ^ {2 \\pi} \\int_ {0} ^ {\\infty} r \\mathrm{e} ^ {- r ^ {2} / 2} \\mathrm{d} r \\mathrm{d} \\theta = 2 \\pi .",
+          "image_source": "images/page_61_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.137,
+            0.398,
+            0.157
+          ],
+          "content": "而 $I > 0$ ，故有 $I = \\sqrt{2\\pi}$ ，即有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.406,
+            0.164,
+            0.879,
+            0.198
+          ],
+          "content": "\\int_ {- \\infty} ^ {\\infty} \\mathrm{e} ^ {- t ^ {2} / 2} \\mathrm{d} t = \\sqrt {2 \\pi}, \\tag {4.11}",
+          "image_source": "images/page_61_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.207,
+            0.18,
+            0.225
+          ],
+          "content": "于是"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.234,
+            0.704,
+            0.279
+          ],
+          "content": "\\frac {1}{\\sqrt {2 \\pi} \\sigma} \\int_ {- \\infty} ^ {\\infty} \\mathrm{e} ^ {- \\frac {(x - \\mu) ^ {2}}{2 \\sigma^ {2}}} \\mathrm{d} x = \\frac {1}{\\sqrt {2 \\pi}} \\int_ {- \\infty} ^ {\\infty} \\mathrm{e} ^ {- t ^ {2} / 2} \\mathrm{d} t = 1.",
+          "image_source": "images/page_61_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.284,
+            0.879,
+            0.329
+          ],
+          "content": "参数 $\\mu, \\sigma$ 的意义将在第四章中说明. $f(x)$ 的图形如图2-12所示, 它具有以下性质."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.175,
+            0.333,
+            0.75,
+            0.353
+          ],
+          "content": "$1^{\\circ}$ 曲线关于 $x = \\mu$ 对称. 这表明对于任意 $h > 0$ 有 (图2-12)"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.357,
+            0.677,
+            0.379
+          ],
+          "content": "P \\{\\mu - h <   X \\leqslant \\mu \\} = P \\{\\mu <   X \\leqslant \\mu + h \\}.",
+          "image_source": "images/page_61_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.175,
+            0.383,
+            0.423,
+            0.403
+          ],
+          "content": "$2^{\\circ}$ 当 $x = \\mu$ 时取到最大值"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.44,
+            0.407,
+            0.57,
+            0.447
+          ],
+          "content": "f (\\mu) = \\frac {1}{\\sqrt {2 \\pi} \\sigma}.",
+          "image_source": "images/page_61_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.452,
+            0.884,
+            0.497
+          ],
+          "content": "$x$ 离 $\\mu$ 越远, $f(x)$ 的值越小. 这表明对于同样长度的区间, 当区间离 $\\mu$ 越远时, $X$ 落在这个区间上的概率越小."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.502,
+            0.656,
+            0.522
+          ],
+          "content": "在 $x = \\mu \\pm \\sigma$ 处曲线有拐点. 曲线以 $Ox$ 轴为渐近线."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.525,
+            0.886,
+            0.595
+          ],
+          "content": "另外,如果固定  $\\sigma$ , 改变  $\\mu$  的值, 则图形沿着 Ox 轴平移, 而不改变其形状(如图 2-12), 可见正态分布的概率密度曲线  $y = f(x)$  的位置完全由参数  $\\mu$  所确定.  $\\mu$  称为位置参数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.602,
+            0.884,
+            0.667
+          ],
+          "content": "如果固定 $\\mu$ ，改变 $\\sigma$ ，由于最大值 $f(\\mu) = \\frac{1}{\\sqrt{2\\pi}\\sigma}$ ，可知当 $\\sigma$ 越小时图形变得越尖（如图2-13），因而 $X$ 落在 $\\mu$ 附近的概率越大."
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.143,
+            0.754,
+            0.475,
+            0.871
+          ],
+          "sub_type": "contour",
+          "content": "| Feature | Value |\n| --- | --- |\n| Mean \\((\\mu)\\) | \\(\\mu\\) |\n| Mean \\((\\mu1)\\) | \\(\\mu1\\) |",
+          "captions": [
+            {
+              "bbox": [
+                0.272,
+                0.879,
+                0.348,
+                0.895
+              ],
+              "content": "图2-12"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_61_chart_16.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.51,
+            0.69,
+            0.882,
+            0.869
+          ],
+          "sub_type": "violin",
+          "content": "| Category | \\(\\sigma=0.5\\) | \\(\\sigma=1.0\\) | \\(\\sigma=1.5\\) |\n| --- | --- | --- | --- |\n| Peak Value | 0.798 | 0.399 | 0.266 |",
+          "captions": [
+            {
+              "bbox": [
+                0.659,
+                0.876,
+                0.735,
+                0.893
+              ],
+              "content": "图2-13"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_61_chart_18.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 62,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.136,
+            0.05,
+            0.191,
+            0.063
+          ],
+          "content": "· 48 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.38,
+            0.049,
+            0.61,
+            0.065
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.089,
+            0.586,
+            0.108
+          ],
+          "content": "由(4.10)式得 $X$ 的分布函数为(如图2-14)"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.363,
+            0.118,
+            0.866,
+            0.156
+          ],
+          "content": "F (x) = \\frac {1}{\\sqrt {2 \\pi} \\sigma} \\int_ {- \\infty} ^ {x} \\mathrm{e} ^ {- \\frac {(t - \\mu) ^ {2}}{2 \\sigma^ {2}}} \\mathrm{d} t, \\tag {4.12}",
+          "image_source": "images/page_62_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.164,
+            0.87,
+            0.208
+          ],
+          "content": "特别，当 $\\mu = 0, \\sigma = 1$ 时称随机变量 $X$ 服从标准正态分布. 其概率密度和分布函数分别用 $\\varphi(x), \\Phi(x)$ 表示，即有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.409,
+            0.22,
+            0.865,
+            0.256
+          ],
+          "content": "\\varphi (x) = \\frac {1}{\\sqrt {2 \\pi}} \\mathrm{e} ^ {- x ^ {2} / 2}, \\tag {4.13}",
+          "image_source": "images/page_62_equation_5.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.27,
+            0.865,
+            0.307
+          ],
+          "content": "\\Phi (x) = \\frac {1}{\\sqrt {2 \\pi}} \\int_ {- \\infty} ^ {x} \\mathrm{e} ^ {- t ^ {2} / 2} \\mathrm{d} t. \\tag {4.14}",
+          "image_source": "images/page_62_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.317,
+            0.867,
+            0.337
+          ],
+          "content": "易知 $\\Phi (-x) = 1 - \\Phi (x)$ (4.15)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.342,
+            0.277,
+            0.361
+          ],
+          "content": "(参见图 2-15)."
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.171,
+            0.379,
+            0.449,
+            0.515
+          ],
+          "sub_type": "line",
+          "content": "| X | F(x) |\n| --- | --- |\n| \\(\\mu\\) | 0.5 |",
+          "captions": [
+            {
+              "bbox": [
+                0.273,
+                0.523,
+                0.35,
+                0.539
+              ],
+              "content": "图2-14"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_62_chart_9.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.51,
+            0.398,
+            0.812,
+            0.516
+          ],
+          "sub_type": "contour",
+          "content": "| X | \\(\\phi(x)\\) |\n| --- | --- |\n| -x | ~0.25 |\n| 0 | 1.0 |\n| x | ~0.25 |",
+          "captions": [
+            {
+              "bbox": [
+                0.623,
+                0.524,
+                0.699,
+                0.54
+              ],
+              "content": "图2-15"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_62_chart_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.159,
+            0.564,
+            0.656,
+            0.583
+          ],
+          "content": "人们已编制了  $\\Phi(x)$  的函数表, 可供查用 (见附表 2)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.59,
+            0.867,
+            0.632
+          ],
+          "content": "一般,若随机变量  $X \\sim N(\\mu, \\sigma^{2})$ , 我们只要通过一个线性变换就能将它化成标准正态分布."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.157,
+            0.641,
+            0.696,
+            0.675
+          ],
+          "content": "引理 若随机变量 $X \\sim N(\\mu, \\sigma^2)$，则 $Z = \\frac{X - \\mu}{\\sigma} \\sim N(0, 1)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.157,
+            0.683,
+            0.427,
+            0.717
+          ],
+          "content": "证 $Z = \\frac{X - \\mu}{\\sigma}$ 的分布函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.182,
+            0.726,
+            0.789,
+            0.768
+          ],
+          "content": "P \\{Z \\leqslant x \\} = P \\left\\{\\frac {X - \\mu}{\\sigma} \\leqslant x \\right\\} = P \\{X \\leqslant \\mu + \\sigma x \\} = \\frac {1}{\\sqrt {2 \\pi} \\sigma} \\int_ {- \\infty} ^ {\\mu + \\sigma x} \\mathrm{e} ^ {- \\frac {(t - \\mu) ^ {2}}{2 \\sigma^ {2}}} \\mathrm{d} t,",
+          "image_source": "images/page_62_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.769,
+            0.25,
+            0.8
+          ],
+          "content": "令 $\\frac{t-\\mu}{\\sigma}=u$ , 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.298,
+            0.802,
+            0.672,
+            0.842
+          ],
+          "content": "P \\{Z \\leqslant x \\} = \\frac {1}{\\sqrt {2 \\pi}} \\int_ {- \\infty} ^ {x} \\mathrm{e} ^ {- u ^ {2} / 2} \\mathrm{d} u = \\Phi (x),",
+          "image_source": "images/page_62_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.849,
+            0.381,
+            0.884
+          ],
+          "content": "由此知 $Z = \\frac{X - \\mu}{\\sigma} \\sim N(0,1)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.893,
+            0.747,
+            0.914
+          ],
+          "content": "于是，若随机变量 $X \\sim N(\\mu, \\sigma^2)$，则它的分布函数 $F(x)$ 可写成"
+        }
+      ]
+    },
+    {
+      "page_idx": 63,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.361,
+            0.05,
+            0.655,
+            0.066
+          ],
+          "content": "§ 4 连续型随机变量及其概率密度"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.807,
+            0.051,
+            0.863,
+            0.064
+          ],
+          "content": "· 49 ·"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.269,
+            0.093,
+            0.879,
+            0.127
+          ],
+          "content": "F (x) = P \\{X \\leqslant x \\} = P \\left\\{\\frac {X - \\mu}{\\sigma} \\leqslant \\frac {x - \\mu}{\\sigma} \\right\\} = \\Phi \\left(\\frac {x - \\mu}{\\sigma}\\right). \\tag {4.16}",
+          "image_source": "images/page_63_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.133,
+            0.377,
+            0.153
+          ],
+          "content": "对于任意区间 $(x_{1}, x_{2}]$，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.298,
+            0.161,
+            0.878,
+            0.236
+          ],
+          "content": "\\begin{array}{l} P \\left\\{x _ {1} <   X \\leqslant x _ {2} \\right\\} = P \\left\\{\\frac {x _ {1} - \\mu}{\\sigma} <   \\frac {X - \\mu}{\\sigma} \\leqslant \\frac {x _ {2} - \\mu}{\\sigma} \\right\\} \\\\ = \\Phi \\left(\\frac {x _ {2} - \\mu}{\\sigma}\\right) - \\Phi \\left(\\frac {x _ {1} - \\mu}{\\sigma}\\right). \\tag {4.17} \\\\ \\end{array}",
+          "image_source": "images/page_63_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.174,
+            0.244,
+            0.54,
+            0.263
+          ],
+          "content": "例如,设随机变量  $X \\sim N(1,4)$ , 查表得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.159,
+            0.271,
+            0.868,
+            0.328
+          ],
+          "content": "\\begin{array}{l} P \\{0 <   X \\leqslant 1. 6 \\} = \\Phi \\left(\\frac {1 . 6 - 1}{2}\\right) - \\Phi \\left(\\frac {0 - 1}{2}\\right) = \\Phi (0. 3) - \\Phi (- 0. 5) \\\\ = 0. 6 1 7 9 - [ 1 - \\Phi (0. 5) ] = 0. 6 1 7 9 - 1 + 0. 6 9 1 5 = 0. 3 0 9 4. \\\\ \\end{array}",
+          "image_source": "images/page_63_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.174,
+            0.335,
+            0.706,
+            0.354
+          ],
+          "content": "设  $X \\sim N(\\mu, \\sigma^{2})$ ，由  $\\Phi(x)$  的函数表还能得到（图 2-16）:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.187,
+            0.359,
+            0.826,
+            0.378
+          ],
+          "content": "P \\{\\mu - \\sigma <   X <   \\mu + \\sigma \\} = \\Phi (1) - \\Phi (- 1) = 2 \\Phi (1) - 1 = 68.26\\%",
+          "image_source": "images/page_63_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.239,
+            0.384,
+            0.774,
+            0.402
+          ],
+          "content": "P \\left\\{\\mu - 2 \\sigma <   X <   \\mu + 2 \\sigma \\right\\} = \\Phi (2) - \\Phi (- 2) = 95.44 \\%,",
+          "image_source": "images/page_63_equation_9.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.242,
+            0.409,
+            0.769,
+            0.427
+          ],
+          "content": "P \\left\\{\\mu - 3 \\sigma <   X <   \\mu + 3 \\sigma \\right\\} = \\Phi (3) - \\Phi (- 3) = 99.74 \\%.",
+          "image_source": "images/page_63_equation_10.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.304,
+            0.443,
+            0.713,
+            0.596
+          ],
+          "sub_type": "qq",
+          "content": "| Interval | Percentage |\n| --- | --- |\n| \\(\\mu-3\\sigma\\) to μ-2σ | 68.26% |\n| \\(\\mu-2\\sigma\\) to μ-σ | 95.44% |\n| \\(\\mu-\\sigma\\) to μ+σ | 99.74% |\n| \\(\\mu+\\sigma\\) to μ+2σ | — |\n| \\(\\mu+2\\sigma\\) to μ+3σ | — |\n| \\(\\mu+3\\sigma\\) to μ+3σ | — |",
+          "captions": [
+            {
+              "bbox": [
+                0.472,
+                0.605,
+                0.548,
+                0.621
+              ],
+              "content": "图2-16"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_63_chart_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.64,
+            0.883,
+            0.686
+          ],
+          "content": "我们看到, 尽管正态变量的取值范围是 $(-\\infty, \\infty)$, 但它的值落在 $(\\mu - 3\\sigma, \\mu + 3\\sigma)$ 内几乎是肯定的事. 这就是人们所说的“$3\\sigma$”法则."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.689,
+            0.886,
+            0.782
+          ],
+          "content": "例3 将一温度调节器放置在贮存着某种液体的容器内. 调节器整定在 $d^{\\circ}\\mathrm{C}$, 液体的温度 $X$ (以 ${}^{\\circ}\\mathrm{C}$ 计) 是一个随机变量, 且 $X \\sim N(d, 0.5^{2})$. (1) 若 $d = 90^{\\circ}\\mathrm{C}$, 求 $X$ 小于 $89^{\\circ}\\mathrm{C}$ 的概率. (2) 若要求保持液体的温度至少为 $80^{\\circ}\\mathrm{C}$ 的概率不低于 0.99, 问 $d$ 至少为多少?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.178,
+            0.787,
+            0.378,
+            0.806
+          ],
+          "content": "解（1）所求概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.216,
+            0.813,
+            0.805,
+            0.87
+          ],
+          "content": "\\begin{array}{l} P \\{X <   8 9 \\} = P \\left\\{\\frac {X - 9 0}{0 . 5} <   \\frac {8 9 - 9 0}{0 . 5} \\right\\} = \\Phi \\left(\\frac {8 9 - 9 0}{0 . 5}\\right) = \\Phi (- 2) \\\\ = 1 - \\Phi (2) = 1 - 0. 9 7 7 2 = 0. 0 2 2 8. \\\\ \\end{array}",
+          "image_source": "images/page_63_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.878,
+            0.402,
+            0.897
+          ],
+          "content": "(2) 按题意需求 $d$ 满足"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2021-08-31T17:59:04+08:00",
+      "modified_at": "2021-09-01T15:49:01+08:00",
+      "producer_application": "Epson Scan 2",
+      "page_count": 443,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 48,
+          "width_pt": 477.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 49,
+          "width_pt": 480.0,
+          "height_pt": 647.0
+        },
+        {
+          "page_idx": 50,
+          "width_pt": 478.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 51,
+          "width_pt": 479.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 52,
+          "width_pt": 478.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 53,
+          "width_pt": 479.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 54,
+          "width_pt": 478.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 55,
+          "width_pt": 479.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 56,
+          "width_pt": 478.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 57,
+          "width_pt": 478.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 58,
+          "width_pt": 478.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 59,
+          "width_pt": 479.0,
+          "height_pt": 650.0
+        },
+        {
+          "page_idx": 60,
+          "width_pt": 477.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 61,
+          "width_pt": 479.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 62,
+          "width_pt": 477.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 63,
+          "width_pt": 478.0,
+          "height_pt": 649.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

@@ -1,0 +1,7164 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2021-08-31T17:59:04+08:00",
+      "modified_at": "2021-09-01T15:49:01+08:00",
+      "producer_application": "Epson Scan 2",
+      "page_count": 443,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 256,
+          "width_pt": 479.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 257,
+          "width_pt": 480.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 258,
+          "width_pt": 479.0,
+          "height_pt": 647.0
+        },
+        {
+          "page_idx": 259,
+          "width_pt": 480.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 260,
+          "width_pt": 478.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 261,
+          "width_pt": 480.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 262,
+          "width_pt": 479.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 263,
+          "width_pt": 479.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 264,
+          "width_pt": 478.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 265,
+          "width_pt": 479.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 266,
+          "width_pt": 478.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 267,
+          "width_pt": 480.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 268,
+          "width_pt": 479.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 269,
+          "width_pt": 480.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 270,
+          "width_pt": 479.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 271,
+          "width_pt": 479.0,
+          "height_pt": 649.0
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 256,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.136,
+            0.047,
+            0.201,
+            0.061
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "· 242 ·"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.369,
+            0.045,
+            0.619,
+            0.062
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第九章 方差分析及回归分析"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.163,
+            0.096,
+            0.377,
+            0.119
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(一) 一元线性回归"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.119,
+            0.133,
+            0.87,
+            0.228
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "设随机变量 Y 与 x 之间存在着某种相关关系. 这里, x 是可以控制或可以精确观察的变量, 如年龄、试验时的温度、施加的压力、电压与时间等. 换句话说我们可以随意指定 n 个值  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}, x_{2}, \\cdots, x_{n}"
+            },
+            {
+              "type": "text",
+              "content": " . 因此我们干脆不把 x 看成是随机变量, 而将它当作普通的变量. 本章中我们只讨论这种情况."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.119,
+            0.231,
+            0.511,
+            0.398
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "设随机变量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " （因变量）与普通变量"
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " （自变量）之间存在着相关关系，由于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 是随机变量，对于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 的各个确定值， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 有它的分布（如图9-1，图中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "C_1,C_2"
+            },
+            {
+              "type": "text",
+              "content": " 分别是"
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1},x_{2}"
+            },
+            {
+              "type": "text",
+              "content": " 处 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 的概率密度曲线).用 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(y|x)"
+            },
+            {
+              "type": "text",
+              "content": " 表示当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 取确定的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 值时，所对应的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 的分布函数，如果我们掌握了 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(y|x)"
+            },
+            {
+              "type": "text",
+              "content": " 随着"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 5,
+          "bbox": [
+            0.524,
+            0.238,
+            0.847,
+            0.368
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 5,
+              "bbox": [
+                0.524,
+                0.238,
+                0.847,
+                0.368
+              ],
+              "image_path": "images/page_256_image_5.jpg",
+              "content": "O\nx₁\nx₂\nx\nY\nC₁\nμ(x₂)\nC₂"
+            },
+            {
+              "type": "image_caption",
+              "index": 6,
+              "bbox": [
+                0.652,
+                0.376,
+                0.722,
+                0.392
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图9-1"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.117,
+            0.402,
+            0.87,
+            0.521
+          ],
+          "content": [
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 的取值而变化的规律, 那么就能完全掌握 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 之间的关系了. 然而这样做往往比较复杂. 作为一种近似, 我们转而去考察 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 的数学期望, 若 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 的数学期望 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(Y)"
+            },
+            {
+              "type": "text",
+              "content": " 存在, 则其值随 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 的取值而定, 它是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 的函数. 将这一函数记为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu_{Y|x}"
+            },
+            {
+              "type": "text",
+              "content": " 或 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x)"
+            },
+            {
+              "type": "text",
+              "content": ", 称为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 关于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 的回归函数 (如图9-1). 这样, 我们就将讨论 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 的相关关系的问题转换为讨论 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(Y) = \\mu(x)"
+            },
+            {
+              "type": "text",
+              "content": " 与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 的函数关系了."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.119,
+            0.524,
+            0.87,
+            0.62
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "我们知道, 若  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\eta"
+            },
+            {
+              "type": "text",
+              "content": "  是一个随机变量, 则  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E[(\\eta-c)^{2}]"
+            },
+            {
+              "type": "text",
+              "content": "  作为 c 的函数, 在  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c=E(\\eta)"
+            },
+            {
+              "type": "text",
+              "content": "  时  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E[(\\eta-c)^{2}]"
+            },
+            {
+              "type": "text",
+              "content": "  达到最小(参见第四章习题第17题). 这表明在一切 x 的函数中以回归函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x)"
+            },
+            {
+              "type": "text",
+              "content": "  作为 Y 的近似, 其均方误差  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E[(Y-\\mu(x))^{2}]"
+            },
+            {
+              "type": "text",
+              "content": "  为最小. 因此, 作为一种近似, 为了研究 Y 与 x 的关系转而去研究  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x)"
+            },
+            {
+              "type": "text",
+              "content": "  与 x 的关系是合适的."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.119,
+            0.623,
+            0.87,
+            0.691
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在实际问题中, 回归函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x)"
+            },
+            {
+              "type": "text",
+              "content": "  一般是未知的, 回归分析的任务在于根据试验数据去估计回归函数, 讨论有关的点估计、区间估计、假设检验等问题. 特别重要的是对随机变量 Y 的观察值作出点预测和区间预测."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.119,
+            0.695,
+            0.869,
+            0.74
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "我们对于 x 取定一组不完全相同的值  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}, x_{2}, \\cdots, x_{n}"
+            },
+            {
+              "type": "text",
+              "content": " ，设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{1}, Y_{2}, \\cdots, Y_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  分别是在  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}, x_{2}, \\cdots, x_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  处对 Y 的独立观察结果，称"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.348,
+            0.746,
+            0.866,
+            0.764
+          ],
+          "image_path": "images/page_256_equation_11.jpg",
+          "content": "(x _ {1}, Y _ {1}), (x _ {2}, Y _ {2}), \\dots , (x _ {n}, Y _ {n}) \\tag {3.1}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.12,
+            0.77,
+            0.439,
+            0.789
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "是一个样本①,对应的样本值记为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.346,
+            0.795,
+            0.639,
+            0.815
+          ],
+          "image_path": "images/page_256_equation_13.jpg",
+          "content": "(x _ {1}, y _ {1}), (x _ {2}, y _ {2}), \\dots , (x _ {n}, y _ {n})."
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.119,
+            0.818,
+            0.869,
+            0.839
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "我们首先要解决的问题是如何利用样本来估计 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 关于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 的回归函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x)"
+            },
+            {
+              "type": "text",
+              "content": ". 为"
+            }
+          ]
+        },
+        {
+          "type": "page_footnote",
+          "index": 15,
+          "bbox": [
+            0.117,
+            0.874,
+            0.869,
+            0.909
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "① 这里  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{1}, Y_{2}, \\cdots, Y_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  是相互独立的随机变量，但一般未必同分布，为方便计，也称  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(x_{1}, Y_{1}), (x_{2}, Y_{2}), \\cdots, (x_{n}, Y_{n})"
+            },
+            {
+              "type": "text",
+              "content": "  是一个样本."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 257,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.424,
+            0.048,
+            0.589,
+            0.065
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "§ 3 一元线性回归"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.795,
+            0.05,
+            0.861,
+            0.064
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "· 243 ·"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.132,
+            0.088,
+            0.879,
+            0.18
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "此，首先需要推测 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu (x)"
+            },
+            {
+              "type": "text",
+              "content": " 的形式.在一些问题中，我们可以由专业知识知道 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu (x)"
+            },
+            {
+              "type": "text",
+              "content": " 的形式.否则，可将每对观察值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(x_{i},y_{i})"
+            },
+            {
+              "type": "text",
+              "content": " 在直角坐标系中描出它的相应的点（如下例中的图9-2），这种图称为散点图.散点图可以帮助我们粗略地看出 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu (x)"
+            },
+            {
+              "type": "text",
+              "content": " 的形式."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.132,
+            0.186,
+            0.879,
+            0.23
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例1 为研究某一化学反应过程中, 温度 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " (以 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{^\\circ C}"
+            },
+            {
+              "type": "text",
+              "content": " 计) 对产品得率 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " (以 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\%"
+            },
+            {
+              "type": "text",
+              "content": " 计) 的影响, 测得数据如下:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 4,
+          "bbox": [
+            0.132,
+            0.244,
+            0.879,
+            0.301
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 4,
+              "bbox": [
+                0.132,
+                0.244,
+                0.879,
+                0.301
+              ],
+              "image_path": "images/page_257_table_4.jpg",
+              "content": "<table><tr><td>温度x(°C)</td><td>100</td><td>110</td><td>120</td><td>130</td><td>140</td><td>150</td><td>160</td><td>170</td><td>180</td><td>190</td></tr><tr><td>得率Y(%)</td><td>45</td><td>51</td><td>54</td><td>61</td><td>66</td><td>70</td><td>74</td><td>78</td><td>85</td><td>89</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.132,
+            0.322,
+            0.512,
+            0.414
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "这里自变量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 是普通变量，"
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 是随机变量. 画出散点图如图9-2所示. 由图大致看出 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x)"
+            },
+            {
+              "type": "text",
+              "content": " 具有线性函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a + bx"
+            },
+            {
+              "type": "text",
+              "content": " 的形式. □"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.132,
+            0.419,
+            0.512,
+            0.56
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 关于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 的回归函数为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x)"
+            },
+            {
+              "type": "text",
+              "content": ". 利用样本来估计 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x)"
+            },
+            {
+              "type": "text",
+              "content": " 的问题称为求 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 关于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 的回归问题. 特别, 若 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x)"
+            },
+            {
+              "type": "text",
+              "content": " 为线性函数: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x) = a + bx"
+            },
+            {
+              "type": "text",
+              "content": ", 此时估计 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x)"
+            },
+            {
+              "type": "text",
+              "content": " 的问题称为求一元线性回归问题. 本节只讨论这个问题."
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 7,
+          "bbox": [
+            0.529,
+            0.329,
+            0.858,
+            0.519
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 7,
+              "bbox": [
+                0.529,
+                0.329,
+                0.858,
+                0.519
+              ],
+              "image_path": "images/page_257_chart_7.jpg",
+              "content": "| x | y |\n| --- | --- |\n| 100 | ~46 |\n| 110 | ~52 |\n| 120 | ~55 |\n| 130 | ~62 |\n| 140 | ~68 |\n| 150 | ~71 |\n| 160 | ~76 |\n| 170 | ~79 |\n| 180 | ~86 |\n| 190 | ~91 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 8,
+              "bbox": [
+                0.659,
+                0.526,
+                0.73,
+                0.542
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图9-2"
+                }
+              ]
+            }
+          ],
+          "sub_type": "scatter"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.18,
+            0.567,
+            0.624,
+            0.586
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "我们假设对于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " （在某个区间内）的每一个值有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.406,
+            0.592,
+            0.6,
+            0.61
+          ],
+          "image_path": "images/page_257_equation_10.jpg",
+          "content": "Y \\sim N (a + b x, \\sigma^ {2}),"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.132,
+            0.617,
+            0.879,
+            0.66
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a, b"
+            },
+            {
+              "type": "text",
+              "content": " 及 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma^2"
+            },
+            {
+              "type": "text",
+              "content": " 都是不依赖于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 的未知参数. 记 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varepsilon = Y - (a + bx)"
+            },
+            {
+              "type": "text",
+              "content": ", 对 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 作这样的正态假设, 相当于假设"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.347,
+            0.667,
+            0.876,
+            0.685
+          ],
+          "image_path": "images/page_257_equation_12.jpg",
+          "content": "Y = a + b x + \\varepsilon , \\quad \\varepsilon \\sim N (0, \\sigma^ {2}), \\tag {3.2}"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.132,
+            0.692,
+            0.879,
+            0.735
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中未知参数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a, b"
+            },
+            {
+              "type": "text",
+              "content": " 及 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma^2"
+            },
+            {
+              "type": "text",
+              "content": " 都不依赖于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": ". (3.2) 称为一元线性回归模型, 其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b"
+            },
+            {
+              "type": "text",
+              "content": " 称为回归系数."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.132,
+            0.741,
+            0.879,
+            0.785
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(3.2) 式表明, 因变量 Y 由两部分组成, 一部分是 x 的线性函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a + bx"
+            },
+            {
+              "type": "text",
+              "content": " , 另一部分  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varepsilon \\sim N(0, \\sigma^{2})"
+            },
+            {
+              "type": "text",
+              "content": "  是随机误差, 是人们不可控制的."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 15,
+          "bbox": [
+            0.176,
+            0.801,
+            0.356,
+            0.824
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(二) "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a, b"
+            },
+            {
+              "type": "text",
+              "content": " 的估计"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.132,
+            0.839,
+            0.879,
+            0.884
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "取 x 的 n 个不全相同的值  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}, x_{2}, \\cdots, x_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  作独立试验，得到样本  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(x_{1}, Y_{1}), (x_{2}, Y_{2}), \\cdots, (x_{n}, Y_{n})"
+            },
+            {
+              "type": "text",
+              "content": " . 由 (3.2) 式"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.264,
+            0.891,
+            0.879,
+            0.91
+          ],
+          "image_path": "images/page_257_equation_17.jpg",
+          "content": "Y _ {i} = a + b x _ {i} + \\varepsilon_ {i}, \\varepsilon_ {i} \\sim N (0, \\sigma^ {2}), \\text {各} \\varepsilon_ {i} \\text {相互独立}. \\tag {3.3}"
+        }
+      ]
+    },
+    {
+      "page_idx": 258,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.132,
+            0.047,
+            0.199,
+            0.06
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "· 244 ·"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.366,
+            0.044,
+            0.616,
+            0.061
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第九章 方差分析及回归分析"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.117,
+            0.084,
+            0.864,
+            0.129
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "于是  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{i} \\sim N(a + bx_{i}, \\sigma^{2}), i = 1, 2, \\cdots, n."
+            },
+            {
+              "type": "text",
+              "content": "  由  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{1}, Y_{2}, \\cdots, Y_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  的独立性，知  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{1}, Y_{2}, \\cdots, Y_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  的联合概率密度为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.289,
+            0.133,
+            0.862,
+            0.233
+          ],
+          "image_path": "images/page_258_equation_3.jpg",
+          "content": "\\begin{array}{l} L = \\prod_ {i = 1} ^ {n} \\frac {1}{\\sigma \\sqrt {2 \\pi}} \\exp \\left\\{- \\frac {1}{2 \\sigma^ {2}} (y _ {i} - a - b x _ {i}) ^ {2} \\right\\} \\\\ = \\left(\\frac {1}{\\sigma \\sqrt {2 \\pi}}\\right) ^ {n} \\exp \\left\\{- \\frac {1}{2 \\sigma^ {2}} \\sum_ {i = 1} ^ {n} (y _ {i} - a - b x _ {i}) ^ {2} \\right\\}. \\tag {3.4} \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.117,
+            0.25,
+            0.865,
+            0.318
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "现用最大似然估计法来估计未知参数 a, b. 对于任意一组观察值  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y_{1}, y_{2}, \\cdots, y_{n}"
+            },
+            {
+              "type": "text",
+              "content": " ，(3.4) 式就是样本的似然函数. 显然，要 L 取最大值，只要 (3.4) 式右端花括弧中的平方和部分为最小，即只需函数"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.353,
+            0.329,
+            0.862,
+            0.366
+          ],
+          "image_path": "images/page_258_equation_5.jpg",
+          "content": "Q (a, b) = \\sum_ {i = 1} ^ {n} (y _ {i} - a - b x _ {i}) ^ {2} \\tag {3.5}"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.119,
+            0.37,
+            0.232,
+            0.389
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "取最小值①."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.166,
+            0.394,
+            0.612,
+            0.413
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "取 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Q"
+            },
+            {
+              "type": "text",
+              "content": " 分别关于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a, b"
+            },
+            {
+              "type": "text",
+              "content": " 的偏导数，并令它们等于零:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.321,
+            0.422,
+            0.862,
+            0.51
+          ],
+          "image_path": "images/page_258_equation_8.jpg",
+          "content": "\\left. \\begin{array}{l} \\frac {\\partial Q}{\\partial a} = - 2 \\sum_ {i = 1} ^ {n} (y _ {i} - a - b x _ {i}) = 0, \\\\ \\frac {\\partial Q}{\\partial b} = - 2 \\sum_ {i = 1} ^ {n} (y _ {i} - a - b x _ {i}) x _ {i} = 0. \\end{array} \\right\\} \\tag {3.6}"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.119,
+            0.516,
+            0.21,
+            0.534
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "得方程组"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.326,
+            0.544,
+            0.862,
+            0.631
+          ],
+          "image_path": "images/page_258_equation_10.jpg",
+          "content": "\\left\\{ \\begin{array}{l} n a + \\left(\\sum_ {i = 1} ^ {n} x _ {i}\\right) b = \\sum_ {i = 1} ^ {n} y _ {i}, \\\\ \\left(\\sum_ {i = 1} ^ {n} x _ {i}\\right) a + \\left(\\sum_ {i = 1} ^ {n} x _ {i} ^ {2}\\right) b = \\sum_ {i = 1} ^ {n} x _ {i} y _ {i}. \\end{array} \\right. \\tag {3.7}"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 11,
+          "bbox": [
+            0.119,
+            0.635,
+            0.364,
+            0.653
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(3.7) 式称为正规方程组."
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.168,
+            0.659,
+            0.586,
+            0.678
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 不全相同，正规方程组的系数行列式"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.206,
+            0.692,
+            0.781,
+            0.786
+          ],
+          "image_path": "images/page_258_equation_13.jpg",
+          "content": "\\left| \\begin{array}{c c} n & \\sum_ {i = 1} ^ {n} x _ {i} \\\\ \\sum_ {i = 1} ^ {n} x _ {i} & \\sum_ {i = 1} ^ {n} x _ {i} ^ {2} \\end{array} \\right| = n \\sum_ {i = 1} ^ {n} x _ {i} ^ {2} - \\left(\\sum_ {i = 1} ^ {n} x _ {i}\\right) ^ {2} = n \\sum_ {i = 1} ^ {n} (x _ {i} - \\overline {{x}}) ^ {2} \\neq 0."
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.119,
+            0.801,
+            0.654,
+            0.82
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "故(3.7)有唯一的一组解. 解得 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b, a"
+            },
+            {
+              "type": "text",
+              "content": " 的最大似然估计值为"
+            }
+          ]
+        },
+        {
+          "type": "page_footnote",
+          "index": 15,
+          "bbox": [
+            0.117,
+            0.855,
+            0.867,
+            0.91
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "① 如果 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 不是正态变量，则直接用(3.5)式估计 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a, b"
+            },
+            {
+              "type": "text",
+              "content": "，使 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 的观察值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a + bx_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 偏差的平方和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Q(a, b)"
+            },
+            {
+              "type": "text",
+              "content": " 为最小。这种方法叫最小二乘法，它是求经验公式的一种常用方法。若 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 是正态变量，则最小二乘法与最大似然估计法给出相同的结果。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 259,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.43,
+            0.047,
+            0.596,
+            0.064
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "§ 3 一元线性回归"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.802,
+            0.05,
+            0.868,
+            0.063
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "· 245 ·"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 2,
+          "bbox": [
+            0.228,
+            0.091,
+            0.881,
+            0.228
+          ],
+          "image_path": "images/page_259_equation_2.jpg",
+          "content": "\\left. \\begin{array}{l} \\hat {b} = \\frac {n \\sum_ {i = 1} ^ {n} x _ {i} y _ {i} - \\left(\\sum_ {i = 1} ^ {n} x _ {i}\\right) \\left(\\sum_ {i = 1} ^ {n} y _ {i}\\right)}{n \\sum_ {i = 1} ^ {n} x _ {i} ^ {2} - \\left(\\sum_ {i = 1} ^ {n} x _ {i}\\right) ^ {2}} = \\frac {\\sum_ {i = 1} ^ {n} (x _ {i} - \\bar {x}) (y _ {i} - \\bar {y})}{\\sum_ {i = 1} ^ {n} (x _ {i} - \\bar {x}) ^ {2}}, \\\\ \\hat {a} = \\frac {1}{n} \\sum_ {i = 1} ^ {n} y _ {i} - \\frac {\\hat {b}}{n} \\sum_ {i = 1} ^ {n} x _ {i} = \\bar {y} - \\hat {b} \\bar {x}, \\end{array} \\right\\} \\tag {3.8}"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.134,
+            0.238,
+            0.469,
+            0.279
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\overline{x} = \\frac{1}{n}\\sum_{i = 1}^{n}x_{i},\\quad \\overline{y} = \\frac{1}{n}\\sum_{i = 1}^{n}y_{i}."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.133,
+            0.289,
+            0.884,
+            0.346
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在得到 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a, b"
+            },
+            {
+              "type": "text",
+              "content": " 的估计 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{a}, \\hat{b}"
+            },
+            {
+              "type": "text",
+              "content": " 后，对于给定的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": "，我们就取 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{a} + \\hat{b}x"
+            },
+            {
+              "type": "text",
+              "content": " 作为回归函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x) = a + bx"
+            },
+            {
+              "type": "text",
+              "content": " 的估计，即 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{\\mu(x)} = \\hat{a} + \\hat{b}x"
+            },
+            {
+              "type": "text",
+              "content": "，称为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 关于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 的经验回归函数。记 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{a} + \\hat{b}x = \\hat{y}"
+            },
+            {
+              "type": "text",
+              "content": "，方程"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.453,
+            0.356,
+            0.88,
+            0.377
+          ],
+          "image_path": "images/page_259_equation_5.jpg",
+          "content": "\\hat {y} = \\hat {a} + \\hat {b} x \\tag {3.9}"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.134,
+            0.383,
+            0.787,
+            0.402
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "称为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 关于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 的经验回归方程, 简称回归方程, 其图形称为回归直线."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.177,
+            0.412,
+            0.704,
+            0.43
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "将(3.8)中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{a}"
+            },
+            {
+              "type": "text",
+              "content": " 的表达式代入(3.9)式,则回归方程可写成"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.418,
+            0.442,
+            0.88,
+            0.464
+          ],
+          "image_path": "images/page_259_equation_8.jpg",
+          "content": "\\hat {y} = \\overline {{y}} + \\hat {b} (x - \\overline {{x}}). \\tag {3.10}"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.134,
+            0.469,
+            0.883,
+            0.513
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(3.10) 表明, 对于样本值  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(x_{1}, y_{1}), (x_{2}, y_{2}), \\cdots, (x_{n}, y_{n})"
+            },
+            {
+              "type": "text",
+              "content": " , 回归直线通过散点图的几何中心  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(\\overline{x}, \\overline{y})"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.177,
+            0.518,
+            0.579,
+            0.537
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "今后我们将视方便而使用(3.9)或(3.10)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.177,
+            0.543,
+            0.555,
+            0.561
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "为了计算上的方便,我们引入下述记号:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.215,
+            0.57,
+            0.881,
+            0.709
+          ],
+          "image_path": "images/page_259_equation_12.jpg",
+          "content": "\\left. \\begin{array}{l} S _ {x x} = \\sum_ {i = 1} ^ {n} (x _ {i} - \\overline {{x}}) ^ {2} = \\sum_ {i = 1} ^ {n} x _ {i} ^ {2} - \\frac {1}{n} \\Big (\\sum_ {i = 1} ^ {n} x _ {i} \\Big) ^ {2}, \\\\ S _ {y y} = \\sum_ {i = 1} ^ {n} (y _ {i} - \\overline {{y}}) ^ {2} = \\sum_ {i = 1} ^ {n} y _ {i} ^ {2} - \\frac {1}{n} \\Big (\\sum_ {i = 1} ^ {n} y _ {i} \\Big) ^ {2}, \\\\ S _ {x y} = \\sum_ {i = 1} ^ {n} (x _ {i} - \\overline {{x}}) (y _ {i} - \\overline {{y}}) = \\sum_ {i = 1} ^ {n} x _ {i} y _ {i} - \\frac {1}{n} \\Big (\\sum_ {i = 1} ^ {n} x _ {i} \\Big) \\Big (\\sum_ {i = 1} ^ {n} y _ {i} \\Big). \\end{array} \\right\\} \\tag {3.11}"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.134,
+            0.712,
+            0.385,
+            0.73
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "这样， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a,b"
+            },
+            {
+              "type": "text",
+              "content": " 的估计值可写成"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.368,
+            0.738,
+            0.88,
+            0.822
+          ],
+          "image_path": "images/page_259_equation_14.jpg",
+          "content": "\\left. \\begin{array}{l} \\hat {b} = \\frac {S _ {x y}}{S _ {x x}}, \\\\ \\hat {a} = \\frac {1}{n} \\sum_ {i = 1} ^ {n} y _ {i} - \\left(\\frac {1}{n} \\sum_ {i = 1} ^ {n} x _ {i}\\right) \\hat {b}. \\end{array} \\right\\} \\tag {3.12}"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.134,
+            0.827,
+            0.883,
+            0.87
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 2(续例 1) 设在例 1 中的随机变量 Y 符合 (3.2) 式所述的条件, 求 Y 关于 x 的线性回归方程."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.181,
+            0.876,
+            0.741,
+            0.895
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "解 现在 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n = 10"
+            },
+            {
+              "type": "text",
+              "content": " ，为求线性回归方程，所需计算列表如下:"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 260,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.127,
+            0.048,
+            0.192,
+            0.062
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "· 246 ·"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.361,
+            0.045,
+            0.61,
+            0.062
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第九章 方差分析及回归分析"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 3,
+          "bbox": [
+            0.113,
+            0.107,
+            0.865,
+            0.45
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 2,
+              "bbox": [
+                0.446,
+                0.086,
+                0.528,
+                0.102
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "表9-17"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 3,
+              "bbox": [
+                0.113,
+                0.107,
+                0.865,
+                0.45
+              ],
+              "image_path": "images/page_260_table_3.jpg",
+              "content": "<table><tr><td>x</td><td>y</td><td><eq>x^{2}</eq></td><td><eq>y^{2}</eq></td><td>xy</td></tr><tr><td>100</td><td>45</td><td>10 000</td><td>2 025</td><td>4 500</td></tr><tr><td>110</td><td>51</td><td>12 100</td><td>2 601</td><td>5 610</td></tr><tr><td>120</td><td>54</td><td>14 400</td><td>2 916</td><td>6 480</td></tr><tr><td>130</td><td>61</td><td>16 900</td><td>3 721</td><td>7 930</td></tr><tr><td>140</td><td>66</td><td>19 600</td><td>4 356</td><td>9 240</td></tr><tr><td>150</td><td>70</td><td>22 500</td><td>4 900</td><td>10 500</td></tr><tr><td>160</td><td>74</td><td>25 600</td><td>5 476</td><td>11 840</td></tr><tr><td>170</td><td>78</td><td>28 900</td><td>6 084</td><td>13 260</td></tr><tr><td>180</td><td>85</td><td>32 400</td><td>7 225</td><td>15 300</td></tr><tr><td>190</td><td>89</td><td>36 100</td><td>7 921</td><td>16 910</td></tr><tr><td>Σ 1 450</td><td>673</td><td>218 500</td><td>47 225<eq>^{1}</eq></td><td>101 570</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.114,
+            0.471,
+            0.256,
+            0.489
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由表9-17得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.305,
+            0.497,
+            0.673,
+            0.529
+          ],
+          "image_path": "images/page_260_equation_5.jpg",
+          "content": "S _ {x x} = 2 1 8 5 0 0 - \\frac {1}{1 0} \\times 1 4 5 0 ^ {2} = 8 2 5 0,"
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.279,
+            0.54,
+            0.698,
+            0.573
+          ],
+          "image_path": "images/page_260_equation_6.jpg",
+          "content": "S _ {x y} = 1 0 1 5 7 0 - \\frac {1}{1 0} \\times 1 4 5 0 \\times 6 7 3 = 3 9 8 5,"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.114,
+            0.583,
+            0.591,
+            0.62
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "故得 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{b} = \\frac{S_{xy}}{S_{xx}} = 0.48303,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.228,
+            0.628,
+            0.748,
+            0.662
+          ],
+          "image_path": "images/page_260_equation_8.jpg",
+          "content": "\\hat {a} = \\frac {1}{1 0} \\times 6 7 3 - \\frac {1}{1 0} \\times 1 4 5 0 \\times 0. 4 8 3 0 3 = - 2. 7 3 9 3 5,"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.115,
+            0.67,
+            0.339,
+            0.688
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "于是得到回归直线方程"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.345,
+            0.694,
+            0.632,
+            0.713
+          ],
+          "image_path": "images/page_260_equation_10.jpg",
+          "content": "\\hat {y} = - 2. 7 3 9 3 5 + 0. 4 8 3 0 3 x,"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.115,
+            0.72,
+            0.186,
+            0.737
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "或写成"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.333,
+            0.743,
+            0.641,
+            0.763
+          ],
+          "image_path": "images/page_260_equation_12.jpg",
+          "content": "\\hat {y} = 6 7. 3 + 0. 4 8 3 0 3 (x - 1 4 5)."
+        },
+        {
+          "type": "paragraph_title",
+          "index": 13,
+          "bbox": [
+            0.158,
+            0.78,
+            0.323,
+            0.802
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(三) "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma^2"
+            },
+            {
+              "type": "text",
+              "content": " 的估计"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.16,
+            0.819,
+            0.277,
+            0.837
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由(3.2)式，"
+            }
+          ]
+        },
+        {
+          "type": "page_footnote",
+          "index": 15,
+          "bbox": [
+            0.147,
+            0.875,
+            0.355,
+            0.909
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "① "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sum_{i=1}^{n} y_i^2"
+            },
+            {
+              "type": "text",
+              "content": " 的值下面要用到."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 261,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.425,
+            0.044,
+            0.591,
+            0.062
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "§ 3 一元线性回归"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.796,
+            0.047,
+            0.864,
+            0.062
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "· 247 ·"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 2,
+          "bbox": [
+            0.24,
+            0.084,
+            0.768,
+            0.105
+          ],
+          "image_path": "images/page_261_equation_2.jpg",
+          "content": "E \\{[ Y - (a + b x) ] ^ {2} \\} = E (\\varepsilon^ {2}) = D (\\varepsilon) + [ E (\\varepsilon) ] ^ {2} = \\sigma^ {2},"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.13,
+            0.109,
+            0.88,
+            0.201
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "这表示 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma^2"
+            },
+            {
+              "type": "text",
+              "content": " 愈小，以回归函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x) = a + bx"
+            },
+            {
+              "type": "text",
+              "content": " 作为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 的近似导致的均方误差就愈小。这样，利用回归函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x) = a + bx"
+            },
+            {
+              "type": "text",
+              "content": " 去研究随机变量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 的关系就愈有效。然而 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma^2"
+            },
+            {
+              "type": "text",
+              "content": " 是未知的，因而我们需要利用样本去估计 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma^2"
+            },
+            {
+              "type": "text",
+              "content": "。为了估计 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma^2"
+            },
+            {
+              "type": "text",
+              "content": "，先引入下述残差平方和。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.173,
+            0.212,
+            0.741,
+            0.236
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "记 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{y}_i = \\hat{y}|_{x = x_i} = \\hat{a} +\\hat{b} x_i"
+            },
+            {
+              "type": "text",
+              "content": " ，称 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y_{i} - \\hat{y}_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 处的残差.平方和"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.3,
+            0.242,
+            0.877,
+            0.282
+          ],
+          "image_path": "images/page_261_equation_5.jpg",
+          "content": "Q _ {e} = \\sum_ {i = 1} ^ {n} (y _ {i} - \\hat {y} _ {i}) ^ {2} = \\sum_ {i = 1} ^ {n} (y _ {i} - \\hat {a} - \\hat {b} x _ {i}) ^ {2} \\tag {3.13}"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.129,
+            0.285,
+            0.579,
+            0.387
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "称为残差平方和(图9-3). 它是经验回归函数在 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 处的函数值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu (\\widehat{x_i}) = \\hat{a} +\\hat{b} x_i"
+            },
+            {
+              "type": "text",
+              "content": " 与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 处的观察值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 的偏差的平方和. 为了计算 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Q_{e}"
+            },
+            {
+              "type": "text",
+              "content": ", 我们将"
+            },
+            {
+              "type": "equation_inline",
+              "content": "Q_{e}"
+            },
+            {
+              "type": "text",
+              "content": " 作如下的分解:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.129,
+            0.393,
+            0.574,
+            0.525
+          ],
+          "image_path": "images/page_261_equation_7.jpg",
+          "content": "\\begin{array}{l} Q _ {e} = \\sum_ {i = 1} ^ {n} (y _ {i} - \\hat {y} _ {i}) ^ {2} = \\sum_ {i = 1} ^ {n} [ y _ {i} - \\overline {{y}} - \\hat {b} (x _ {i} - \\overline {{x}}) ] ^ {2} \\\\ = \\sum_ {i = 1} ^ {n} (y _ {i} - \\overline {{y}}) ^ {2} - 2 \\hat {b} \\sum_ {i = 1} ^ {n} (x _ {i} - \\overline {{x}}) (y _ {i} - \\overline {{y}}) \\\\ + \\hat {b} ^ {2} \\sum_ {i = 1} ^ {n} (x _ {i} - \\overline {{x}}) ^ {2} = S _ {y y} - 2 \\hat {b} S _ {x y} + \\hat {b} ^ {2} S _ {x x}. \\\\ \\end{array}"
+        },
+        {
+          "type": "chart",
+          "index": 8,
+          "bbox": [
+            0.582,
+            0.294,
+            0.871,
+            0.462
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 8,
+              "bbox": [
+                0.582,
+                0.294,
+                0.871,
+                0.462
+              ],
+              "image_path": "images/page_261_chart_8.jpg",
+              "content": "| X | Y |\n| --- | --- |\n| ~1.5 | ~2.5 |\n| ~2.5 | ~3.8 |\n| ~3.5 | ~4.0 |\n| ~4.5 | ~5.2 |\n| ~5.5 | ~4.2 |\n| ~6.5 | ~5.5 |\n| ~7.5 | ~6.8 |\n| ~8.5 | ~6.2 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 9,
+              "bbox": [
+                0.691,
+                0.47,
+                0.762,
+                0.486
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图9-3"
+                }
+              ]
+            }
+          ],
+          "sub_type": "scatter"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.13,
+            0.535,
+            0.562,
+            0.557
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由(3.12)式 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{b} = S_{xy} / S_{xx}"
+            },
+            {
+              "type": "text",
+              "content": " 得 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Q_{e}"
+            },
+            {
+              "type": "text",
+              "content": " 的一个分解式"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.415,
+            0.568,
+            0.876,
+            0.592
+          ],
+          "image_path": "images/page_261_equation_11.jpg",
+          "content": "Q _ {e} = S _ {y y} - \\hat {b} S _ {x y}. \\tag {3.14}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.178,
+            0.596,
+            0.531,
+            0.615
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由(3.8)式知,b,a的估计量分别为①"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.279,
+            0.623,
+            0.876,
+            0.761
+          ],
+          "image_path": "images/page_261_equation_13.jpg",
+          "content": "\\left. \\begin{array}{l} \\hat {b} = \\frac {\\sum_ {i = 1} ^ {n} (x _ {i} - \\overline {{x}}) (Y _ {i} - \\overline {{Y}})}{\\sum_ {i = 1} ^ {n} (x _ {i} - \\overline {{x}}) ^ {2}} = \\frac {\\sum_ {i = 1} ^ {n} (x _ {i} - \\overline {{x}}) Y _ {i}}{\\sum_ {i = 1} ^ {n} (x _ {i} - \\overline {{x}}) ^ {2}}, \\\\ \\hat {a} = \\frac {1}{n} \\sum_ {i = 1} ^ {n} Y _ {i} - \\frac {\\hat {b}}{n} \\sum_ {i = 1} ^ {n} x _ {i} = \\overline {{Y}} - \\hat {b}   \\overline {{x}}, \\end{array} \\right\\} \\tag {3.15}"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.127,
+            0.768,
+            0.876,
+            0.832
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\overline{Y}=\\frac{1}{n}\\sum_{i=1}^{n}Y_{i},\\overline{x}=\\frac{1}{n}\\sum_{i=1}^{n}x_{i}."
+            },
+            {
+              "type": "text",
+              "content": "  在  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S_{yy},S_{xy}"
+            },
+            {
+              "type": "text",
+              "content": "  的表达式(3.11)中，将  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y_{i}"
+            },
+            {
+              "type": "text",
+              "content": "  改为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{i}"
+            },
+            {
+              "type": "text",
+              "content": "   "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(i=1,2,\\cdots,n)"
+            },
+            {
+              "type": "text",
+              "content": " ，并把它们分别记为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S_{YY},S_{xY}"
+            },
+            {
+              "type": "text",
+              "content": " ，即"
+            }
+          ]
+        },
+        {
+          "type": "page_footnote",
+          "index": 15,
+          "bbox": [
+            0.127,
+            0.872,
+            0.879,
+            0.909
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "① 为方便计，在这里，将 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a, b"
+            },
+            {
+              "type": "text",
+              "content": " 的估计值和估计量都写成 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{a}, \\hat{b}"
+            },
+            {
+              "type": "text",
+              "content": "，在用到它们时，视上下文，是能区分 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{a}, \\hat{b}"
+            },
+            {
+              "type": "text",
+              "content": " 是估计值还是估计量的."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 262,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.137,
+            0.05,
+            0.203,
+            0.064
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "· 248 ·"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.37,
+            0.047,
+            0.62,
+            0.064
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第九章 方差分析及回归分析"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 2,
+          "bbox": [
+            0.25,
+            0.09,
+            0.735,
+            0.131
+          ],
+          "image_path": "images/page_262_equation_2.jpg",
+          "content": "S _ {Y Y} = \\sum_ {i = 1} ^ {n} (Y _ {i} - \\overline {{Y}}) ^ {2}, S _ {x Y} = \\sum_ {i = 1} ^ {n} (x _ {i} - \\overline {{x}}) (Y _ {i} - \\overline {{Y}})."
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.12,
+            0.133,
+            0.724,
+            0.153
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则(3.14)式中的残差平方和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Q_{e}"
+            },
+            {
+              "type": "text",
+              "content": " 的相应的统计量（仍记为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Q_{e}"
+            },
+            {
+              "type": "text",
+              "content": " ）为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.413,
+            0.164,
+            0.866,
+            0.184
+          ],
+          "image_path": "images/page_262_equation_4.jpg",
+          "content": "Q _ {e} = S _ {Y Y} - \\hat {b} S _ {x Y}. \\tag {3.16}"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.12,
+            0.19,
+            0.524,
+            0.209
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "残差平方和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Q_{e}"
+            },
+            {
+              "type": "text",
+              "content": " 服从分布(见本章附录 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "4^{\\circ}"
+            },
+            {
+              "type": "text",
+              "content": "):"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.416,
+            0.216,
+            0.866,
+            0.249
+          ],
+          "image_path": "images/page_262_equation_6.jpg",
+          "content": "\\frac {Q _ {e}}{\\sigma^ {2}} \\sim \\chi^ {2} (n - 2), \\tag {3.17}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.122,
+            0.259,
+            0.571,
+            0.293
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "于是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E\\left(\\frac{Q_e}{\\sigma^2}\\right) = n - 2,"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.121,
+            0.299,
+            0.68,
+            0.319
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "即知 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(Q_{e} / (n - 2)) = \\sigma^{2}"
+            },
+            {
+              "type": "text",
+              "content": ". 这样就得到了 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma^{2}"
+            },
+            {
+              "type": "text",
+              "content": " 的无偏估计量:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.334,
+            0.326,
+            0.867,
+            0.358
+          ],
+          "image_path": "images/page_262_equation_9.jpg",
+          "content": "\\hat {\\sigma} ^ {2} = \\frac {Q _ {e}}{n - 2} = \\frac {1}{n - 2} (S _ {Y Y} - \\hat {b} S _ {x Y}). \\tag {3.18}"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.12,
+            0.373,
+            0.871,
+            0.427
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在这里，还看到，只要算出表9-17中各栏的和，不但能算出 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{a},\\hat{b}"
+            },
+            {
+              "type": "text",
+              "content": " ，且能算出 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma^2"
+            },
+            {
+              "type": "text",
+              "content": " 的估计值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\sigma}^2"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.169,
+            0.431,
+            0.557,
+            0.45
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 3(续例 2) 求例 2 中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma^{2}"
+            },
+            {
+              "type": "text",
+              "content": "  的无偏估计."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.169,
+            0.456,
+            0.374,
+            0.474
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "解 由表9-17, 得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.201,
+            0.482,
+            0.786,
+            0.522
+          ],
+          "image_path": "images/page_262_equation_13.jpg",
+          "content": "S _ {y y} = \\sum_ {i = 1} ^ {n} y _ {i} ^ {2} - \\frac {1}{n} \\Big (\\sum_ {i = 1} ^ {n} y _ {i} \\Big) ^ {2} = 4 7 2 2 5 - \\frac {1}{1 0} \\times 6 7 3 ^ {2} = 1 9 3 2. 1."
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.123,
+            0.532,
+            0.506,
+            0.554
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "又已知 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S_{xy} = 3985, \\hat{b} = 0.48303"
+            },
+            {
+              "type": "text",
+              "content": "，即得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.378,
+            0.565,
+            0.614,
+            0.586
+          ],
+          "image_path": "images/page_262_equation_15.jpg",
+          "content": "Q _ {e} = S _ {y y} - \\hat {b} S _ {x y} = 7. 2 3,"
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.324,
+            0.59,
+            0.664,
+            0.61
+          ],
+          "image_path": "images/page_262_equation_16.jpg",
+          "content": "\\hat {\\sigma} ^ {2} = Q _ {e} / (n - 2) = 7. 2 3 / 8 = 0. 9 0."
+        },
+        {
+          "type": "paragraph_title",
+          "index": 17,
+          "bbox": [
+            0.165,
+            0.627,
+            0.479,
+            0.649
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(四) 线性假设的显著性检验"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.12,
+            0.663,
+            0.873,
+            0.804
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在以上的讨论中,我们假定Y关于x的回归函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x)"
+            },
+            {
+              "type": "text",
+              "content": " 具有形式 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a+bx"
+            },
+            {
+              "type": "text",
+              "content": " ,在处理实际问题时, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x)"
+            },
+            {
+              "type": "text",
+              "content": " 是否为x的线性函数,首先要根据有关专业知识和实践来判断,其次就要根据实际观察得到的数据运用假设检验的方法来判断.这就是说,求得的线性回归方程是否具有实用价值,一般来说,需要经过假设检验才能确定.若线性假设(3.2)符合实际,则b不应为零,因为若b=0,则 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(Y)=\\mu(x)"
+            },
+            {
+              "type": "text",
+              "content": " 就不依赖于x了.因此我们需要检验假设"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 19,
+          "bbox": [
+            0.435,
+            0.811,
+            0.558,
+            0.826
+          ],
+          "image_path": "images/page_262_equation_19.jpg",
+          "content": "H _ {0}: \\quad b = 0,"
+        },
+        {
+          "type": "equation",
+          "index": 20,
+          "bbox": [
+            0.436,
+            0.834,
+            0.867,
+            0.85
+          ],
+          "image_path": "images/page_262_equation_20.jpg",
+          "content": "H _ {1}: \\quad b \\neq 0. \\tag {3.19}"
+        },
+        {
+          "type": "text",
+          "index": 21,
+          "bbox": [
+            0.17,
+            0.856,
+            0.699,
+            0.875
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "我们使用 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t"
+            },
+            {
+              "type": "text",
+              "content": " 检验法来进行检验. 我们有(见本章附录 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2^{\\circ}"
+            },
+            {
+              "type": "text",
+              "content": "):"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 22,
+          "bbox": [
+            0.408,
+            0.887,
+            0.867,
+            0.908
+          ],
+          "image_path": "images/page_262_equation_22.jpg",
+          "content": "\\hat {b} \\sim N (b, \\sigma^ {2} / S _ {x x}). \\tag {3.20}"
+        }
+      ]
+    },
+    {
+      "page_idx": 263,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.426,
+            0.046,
+            0.592,
+            0.063
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "§ 3 一元线性回归"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.798,
+            0.049,
+            0.864,
+            0.063
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "· 249 ·"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.132,
+            0.086,
+            0.4,
+            0.105
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "又由(3.17)式，(3.18)式知"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.358,
+            0.117,
+            0.88,
+            0.157
+          ],
+          "image_path": "images/page_263_equation_3.jpg",
+          "content": "\\frac {(n - 2) \\hat {\\sigma} ^ {2}}{\\sigma^ {2}} = \\frac {Q _ {e}}{\\sigma^ {2}} \\sim \\chi^ {2} (n - 2), \\tag {3.21}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.132,
+            0.17,
+            0.489,
+            0.193
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "且 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{b}"
+            },
+            {
+              "type": "text",
+              "content": " 与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Q_{e}"
+            },
+            {
+              "type": "text",
+              "content": " 独立（见本章附录 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "5^{\\circ}"
+            },
+            {
+              "type": "text",
+              "content": " ).故有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.288,
+            0.203,
+            0.721,
+            0.255
+          ],
+          "image_path": "images/page_263_equation_5.jpg",
+          "content": "\\frac {\\hat {b} - b}{\\sqrt {\\sigma^ {2} / S _ {x x}}} \\Bigg | \\sqrt {\\frac {(n - 2) \\hat {\\sigma} ^ {2}}{\\sigma^ {2}}} \\Bigg | (n - 2) \\sim t (n - 2),"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.133,
+            0.266,
+            0.879,
+            0.311
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "即 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac{\\hat{b} - b}{\\hat{\\sigma}}\\sqrt{\\mathrm{S}_{xx}}\\sim t(n - 2)."
+            },
+            {
+              "type": "text",
+              "content": " (3.22)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.131,
+            0.32,
+            0.281,
+            0.353
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "这里 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\sigma} = \\sqrt{\\hat{\\sigma}^2}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.174,
+            0.361,
+            0.42,
+            0.38
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{0}"
+            },
+            {
+              "type": "text",
+              "content": "  为真时 b = 0, 此时"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.379,
+            0.386,
+            0.879,
+            0.431
+          ],
+          "image_path": "images/page_263_equation_9.jpg",
+          "content": "t = \\frac {\\hat {b}}{\\hat {\\sigma}} \\sqrt {S _ {x x}} \\sim t (n - 2), \\tag {3.23}"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.13,
+            0.445,
+            0.502,
+            0.468
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "且 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(\\hat{b}) = b = 0"
+            },
+            {
+              "type": "text",
+              "content": " ，即得 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_0"
+            },
+            {
+              "type": "text",
+              "content": " 的拒绝域为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.347,
+            0.478,
+            0.877,
+            0.523
+          ],
+          "image_path": "images/page_263_equation_11.jpg",
+          "content": "| t | = \\frac {| \\hat {b} |}{\\hat {\\sigma}} \\sqrt {S _ {x x}} \\geqslant t _ {a / 2} (n - 2), \\tag {3.24}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.129,
+            0.525,
+            0.336,
+            0.544
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "此处  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha"
+            },
+            {
+              "type": "text",
+              "content": "  为显著性水平."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.128,
+            0.55,
+            0.879,
+            0.594
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "当假设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{0}: b = 0"
+            },
+            {
+              "type": "text",
+              "content": "  被拒绝时，认为回归效果是显著的，反之，就认为回归效果不显著。回归效果不显著的原因可能有如下几种:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 17,
+          "bbox": [
+            0.171,
+            0.599,
+            0.782,
+            0.667
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 14,
+              "bbox": [
+                0.171,
+                0.599,
+                0.782,
+                0.619
+              ],
+              "content": [
+                {
+                  "type": "equation_inline",
+                  "content": "1^{\\circ}"
+                },
+                {
+                  "type": "text",
+                  "content": " 影响 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Y"
+                },
+                {
+                  "type": "text",
+                  "content": " 取值的，除 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "x"
+                },
+                {
+                  "type": "text",
+                  "content": " 及随机误差外还有其他不可忽略的因素."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 15,
+              "bbox": [
+                0.171,
+                0.624,
+                0.705,
+                0.644
+              ],
+              "content": [
+                {
+                  "type": "equation_inline",
+                  "content": "2^{\\circ}"
+                },
+                {
+                  "type": "text",
+                  "content": "   "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "E(Y)"
+                },
+                {
+                  "type": "text",
+                  "content": "  与 x 的关系不是线性的, 而存在着其他的关系."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 16,
+              "bbox": [
+                0.171,
+                0.648,
+                0.394,
+                0.667
+              ],
+              "content": [
+                {
+                  "type": "equation_inline",
+                  "content": "3^{\\circ}Y"
+                },
+                {
+                  "type": "text",
+                  "content": " 与 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "x"
+                },
+                {
+                  "type": "text",
+                  "content": " 不存在关系."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.128,
+            0.673,
+            0.502,
+            0.692
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "因此需要进一步的分析原因,分别处理."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.176,
+            0.698,
+            0.77,
+            0.718
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 4(续例 2) 检验例 2 中的回归效果是否显著, 取  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha = 0.05"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.127,
+            0.729,
+            0.879,
+            0.777
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "解 由例2、例3已知 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{b} = 0.48303, S_{xx} = 8250, \\hat{\\sigma}^2 = 0.90"
+            },
+            {
+              "type": "text",
+              "content": ". 查表得 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t_{0.05/2}(n - 2) = t_{0.025}(8) = 2.3060"
+            },
+            {
+              "type": "text",
+              "content": ". 由(3.24)式，假设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_0: b = 0"
+            },
+            {
+              "type": "text",
+              "content": " 的拒绝域为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 21,
+          "bbox": [
+            0.358,
+            0.789,
+            0.646,
+            0.835
+          ],
+          "image_path": "images/page_263_equation_21.jpg",
+          "content": "| t | = \\frac {| \\hat {b} |}{\\hat {\\sigma}} \\sqrt {S _ {x x}} \\geqslant 2. 3 0 6 0."
+        },
+        {
+          "type": "text",
+          "index": 22,
+          "bbox": [
+            0.129,
+            0.842,
+            0.178,
+            0.86
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "现在"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 23,
+          "bbox": [
+            0.287,
+            0.868,
+            0.719,
+            0.907
+          ],
+          "image_path": "images/page_263_equation_23.jpg",
+          "content": "| t | = \\frac {0 . 4 8 3 0 3}{\\sqrt {0 . 9 0}} \\sqrt {8 2 5 0} = 4 6. 2 5 > 2. 3 0 6 0,"
+        }
+      ]
+    },
+    {
+      "page_idx": 264,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.13,
+            0.053,
+            0.194,
+            0.066
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "· 250 ·"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.364,
+            0.049,
+            0.614,
+            0.066
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第九章 方差分析及回归分析"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.112,
+            0.091,
+            0.52,
+            0.11
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "故拒绝  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{0}:b=0"
+            },
+            {
+              "type": "text",
+              "content": "  ，认为回归效果是显著的."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.157,
+            0.124,
+            0.42,
+            0.147
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(五)系数 b 的置信区间"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.113,
+            0.16,
+            0.864,
+            0.205
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "当回归效果显著时,我们常需要对系数 b 作区间估计.事实上,可由(3.22)式得到 b 的置信水平为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1-\\alpha"
+            },
+            {
+              "type": "text",
+              "content": "  的置信区间为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.375,
+            0.214,
+            0.861,
+            0.254
+          ],
+          "image_path": "images/page_264_equation_5.jpg",
+          "content": "\\left(\\hat {b} \\pm t _ {\\alpha / 2} (n - 2) \\frac {\\hat {\\sigma}}{\\sqrt {S _ {x x}}}\\right). \\tag {3.25}"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.114,
+            0.26,
+            0.582,
+            0.279
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例如,例 1 中 b 的置信水平为 0.95 的置信区间为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.209,
+            0.286,
+            0.771,
+            0.322
+          ],
+          "image_path": "images/page_264_equation_7.jpg",
+          "content": "\\left(0. 4 8 3 0 3 \\pm 2. 3 0 6 0 \\times \\sqrt {\\frac {0 . 9 0}{8 2 5 0}}\\right) = (0. 4 5 8 9 4, 0. 5 0 7 1 2)."
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.158,
+            0.337,
+            0.796,
+            0.362
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(六) 回归函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x) = a + bx"
+            },
+            {
+              "type": "text",
+              "content": " 函数值的点估计和置信区间"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.114,
+            0.378,
+            0.867,
+            0.454
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_0"
+            },
+            {
+              "type": "text",
+              "content": " 是自变量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 的某一指定值. 由(3.9)式可以用经验回归函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{y} = \\widehat{\\mu(x)} = \\hat{a} + \\hat{b}x"
+            },
+            {
+              "type": "text",
+              "content": " 在 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_0"
+            },
+            {
+              "type": "text",
+              "content": " 的函数值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{y}_0 = \\mu(\\hat{x}_0) = \\hat{a} + \\hat{b}x_0"
+            },
+            {
+              "type": "text",
+              "content": " 作为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x_0) = a + bx_0"
+            },
+            {
+              "type": "text",
+              "content": " 的点估计, 即"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.379,
+            0.459,
+            0.863,
+            0.487
+          ],
+          "image_path": "images/page_264_equation_10.jpg",
+          "content": "\\hat {y} _ {0} = \\widehat {\\mu (x _ {0})} = \\hat {a} + \\hat {b} x _ {0}. \\tag {3.26}"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.117,
+            0.492,
+            0.299,
+            0.51
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "考虑相应的估计量"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.423,
+            0.519,
+            0.864,
+            0.54
+          ],
+          "image_path": "images/page_264_equation_12.jpg",
+          "content": "\\hat {Y} _ {0} = \\hat {a} + \\hat {b} x _ {0}, \\tag {3.27}"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.116,
+            0.553,
+            0.867,
+            0.597
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由本章附录 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "3^{\\circ}"
+            },
+            {
+              "type": "text",
+              "content": " 知，"
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(\\hat{Y}_0) = a + bx_0"
+            },
+            {
+              "type": "text",
+              "content": "，因此这一估计量是无偏的。下面来求 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x_0) = a + bx_0"
+            },
+            {
+              "type": "text",
+              "content": " 的置信区间。由本章附录 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "3^{\\circ}"
+            },
+            {
+              "type": "text",
+              "content": " 知"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.34,
+            0.605,
+            0.642,
+            0.669
+          ],
+          "image_path": "images/page_264_equation_14.jpg",
+          "content": "\\frac {\\hat {Y} _ {0} - (a + b x _ {0})}{\\sigma \\sqrt {\\frac {1}{n} + \\frac {(x _ {0} - \\overline {{x}}) ^ {2}}{S _ {x x}}}} \\sim N (0, 1)."
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.119,
+            0.674,
+            0.387,
+            0.693
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "又由(3.17)式，(3.18)式知"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.348,
+            0.703,
+            0.865,
+            0.742
+          ],
+          "image_path": "images/page_264_equation_16.jpg",
+          "content": "\\frac {(n - 2) \\hat {\\sigma} ^ {2}}{\\sigma^ {2}} = \\frac {Q _ {e}}{\\sigma^ {2}} \\sim \\chi^ {2} (n - 2), \\tag {3.28}"
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.119,
+            0.748,
+            0.519,
+            0.768
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "且由本章附录 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "6^{\\circ}"
+            },
+            {
+              "type": "text",
+              "content": " 知 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Q_{e},\\hat{Y}_{0}"
+            },
+            {
+              "type": "text",
+              "content": " 相互独立.于是"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 18,
+          "bbox": [
+            0.227,
+            0.774,
+            0.76,
+            0.838
+          ],
+          "image_path": "images/page_264_equation_18.jpg",
+          "content": "\\frac {\\hat {Y} _ {0} - (a + b x _ {0})}{\\sigma \\sqrt {\\frac {1}{n} + \\frac {(x _ {0} - \\overline {{x}}) ^ {2}}{S _ {x x}}}} \\left| \\sqrt {\\frac {(n - 2) \\hat {\\sigma} ^ {2}}{\\sigma^ {2}}} \\right| (n - 2) \\sim t (n - 2),"
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.122,
+            0.846,
+            0.646,
+            0.912
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "即 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac{\\hat{Y}_0 - (a + bx_0)}{\\hat{\\sigma}\\sqrt{\\frac{1}{n} + \\frac{(x_0 - \\overline{x})^2}{S_{xx}}}}\\sim t(n - 2)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 265,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.421,
+            0.047,
+            0.587,
+            0.064
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "§ 3 一元线性回归"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.793,
+            0.049,
+            0.86,
+            0.063
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "· 251 ·"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.127,
+            0.088,
+            0.714,
+            0.108
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "于是得到 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu (x_0) = a + bx_0"
+            },
+            {
+              "type": "text",
+              "content": " 的置信水平为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 - \\alpha"
+            },
+            {
+              "type": "text",
+              "content": " 的置信区间为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.298,
+            0.117,
+            0.873,
+            0.153
+          ],
+          "image_path": "images/page_265_equation_3.jpg",
+          "content": "\\left(\\hat {Y} _ {0} \\pm t _ {\\alpha / 2} (n - 2) \\hat {\\sigma} \\sqrt {\\frac {1}{n} + \\frac {(x _ {0} - \\bar {x}) ^ {2}}{S _ {x x}}}\\right), \\tag {3.29}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.129,
+            0.164,
+            0.876,
+            0.202
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "或即 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left(\\hat{a} +\\hat{b} x_0\\pm t_{a / 2}(n - 2)\\hat{\\sigma}\\sqrt{\\frac{1}{n} + \\frac{(x_0 - \\overline{x})^2}{S_{xx}}}\\right)."
+            },
+            {
+              "type": "text",
+              "content": " (3.29)'"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.127,
+            0.207,
+            0.876,
+            0.252
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "这一置信区间的长度是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_0"
+            },
+            {
+              "type": "text",
+              "content": " 的函数，它随 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "|x_0 - \\overline{x}|"
+            },
+            {
+              "type": "text",
+              "content": " 的增加而增加，当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_0 = \\overline{x}"
+            },
+            {
+              "type": "text",
+              "content": " 时为最短."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.17,
+            0.264,
+            0.584,
+            0.287
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(七) "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 的观察值的点预测和预测区间"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.127,
+            0.299,
+            0.878,
+            0.368
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "若我们对指定点 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x = x_0"
+            },
+            {
+              "type": "text",
+              "content": " 处因变量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 的观察值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_0"
+            },
+            {
+              "type": "text",
+              "content": " 感兴趣，然而我们在 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x = x_0"
+            },
+            {
+              "type": "text",
+              "content": " 处并未进行观察或者暂时无法观察，经验回归函数的一个重要应用是，可利用它对因变量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 的新观察值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_0"
+            },
+            {
+              "type": "text",
+              "content": " 进行点预测或区间预测."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.17,
+            0.372,
+            0.747,
+            0.392
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "若 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{0}"
+            },
+            {
+              "type": "text",
+              "content": " 是在 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x = x_0"
+            },
+            {
+              "type": "text",
+              "content": " 处对 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 的观察结果，由(3.2)式知它满足:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.331,
+            0.399,
+            0.873,
+            0.414
+          ],
+          "image_path": "images/page_265_equation_9.jpg",
+          "content": "Y _ {0} = a + b x _ {0} + \\varepsilon_ {0}, \\quad \\varepsilon_ {0} \\sim N (0, \\sigma^ {2}). \\tag {3.30}"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.127,
+            0.421,
+            0.831,
+            0.439
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "随机误差 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varepsilon_0"
+            },
+            {
+              "type": "text",
+              "content": " 可正也可负，其值无法预料，我们就用 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_0"
+            },
+            {
+              "type": "text",
+              "content": " 处的经验回归函数值"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.393,
+            0.442,
+            0.612,
+            0.47
+          ],
+          "image_path": "images/page_265_equation_11.jpg",
+          "content": "\\hat {Y} _ {0} = \\widehat {\\mu (x _ {0})} = \\hat {a} + \\hat {b} x _ {0}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.127,
+            0.474,
+            0.696,
+            0.493
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "作为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{0} = a + bx_{0} + \\varepsilon_{0}"
+            },
+            {
+              "type": "text",
+              "content": " 的点预测. 下面来求 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{0}"
+            },
+            {
+              "type": "text",
+              "content": " 的预测区间."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.127,
+            0.497,
+            0.879,
+            0.607
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "因 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{0}"
+            },
+            {
+              "type": "text",
+              "content": " 是将要做的一次独立试验的结果，因此它与已经得到的试验的结果"
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{1}, Y_{2}, \\cdots, Y_{n}"
+            },
+            {
+              "type": "text",
+              "content": " 相互独立.由(3.15)式知 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{b}"
+            },
+            {
+              "type": "text",
+              "content": " 是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{1}, Y_{2}, \\cdots, Y_{n}"
+            },
+            {
+              "type": "text",
+              "content": " 的线性组合，故 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{Y}_{0} = \\overline{Y} + \\hat{b}(x_{0} - \\overline{x})"
+            },
+            {
+              "type": "text",
+              "content": " 是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{1}, Y_{2}, \\cdots, Y_{n}"
+            },
+            {
+              "type": "text",
+              "content": " 的线性组合，故 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{0}"
+            },
+            {
+              "type": "text",
+              "content": " 与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{Y}_{0}"
+            },
+            {
+              "type": "text",
+              "content": " 相互独立.由(3.30)式和本章附录 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "3^{\\circ}"
+            },
+            {
+              "type": "text",
+              "content": " 得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.298,
+            0.596,
+            0.709,
+            0.646
+          ],
+          "image_path": "images/page_265_equation_14.jpg",
+          "content": "\\hat {Y} _ {0} - Y _ {0} \\sim N \\left(0, \\left[ 1 + \\frac {1}{n} + \\frac {(x _ {0} - \\overline {{x}}) ^ {2}}{S _ {x x}} \\right] \\sigma^ {2}\\right),"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.133,
+            0.655,
+            0.876,
+            0.72
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "即 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac{\\hat{Y}_0 - Y_0}{\\sigma\\sqrt{1 + \\frac{1}{n} + \\frac{(x_0 - \\overline{x})^2}{S_{xx}}}}\\sim N(0,1)."
+            },
+            {
+              "type": "text",
+              "content": " (3.31)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.129,
+            0.727,
+            0.791,
+            0.748
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "再由(3.28)式、(3.31)式及 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_0, \\hat{Y}_0, Q_e"
+            },
+            {
+              "type": "text",
+              "content": " 的相互独立性（本章附录 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "6^\\circ"
+            },
+            {
+              "type": "text",
+              "content": "）知"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.22,
+            0.752,
+            0.788,
+            0.816
+          ],
+          "image_path": "images/page_265_equation_17.jpg",
+          "content": "\\frac {\\hat {Y} _ {0} - Y _ {0}}{\\sigma \\sqrt {1 + \\frac {1}{n} + \\frac {(x _ {0} - \\overline {{x}}) ^ {2}}{S _ {x x}}}} \\left| \\sqrt {\\frac {(n - 2) \\hat {\\sigma} ^ {2}}{\\sigma^ {2}}} \\right| (n - 2) \\sim t (n - 2),"
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.133,
+            0.821,
+            0.673,
+            0.885
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "即 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac{\\hat{Y}_0 - Y_0}{\\hat{\\sigma}\\sqrt{1 + \\frac{1}{n} + \\frac{(x_0 - \\overline{x})^2}{S_{xx}}}}\\sim t(n - 2)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.13,
+            0.891,
+            0.456,
+            0.91
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "于是对于给定的置信水平 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 - \\alpha"
+            },
+            {
+              "type": "text",
+              "content": " 有"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 266,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.134,
+            0.05,
+            0.199,
+            0.064
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "· 252 ·"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.368,
+            0.048,
+            0.618,
+            0.064
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第九章 方差分析及回归分析"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 2,
+          "bbox": [
+            0.243,
+            0.09,
+            0.729,
+            0.154
+          ],
+          "image_path": "images/page_266_equation_2.jpg",
+          "content": "P \\left\\{\\frac {| \\hat {Y} _ {0} - Y _ {0} |}{\\hat {\\sigma} \\sqrt {1 + \\frac {1}{n} + \\frac {(x _ {0} - \\bar {x}) ^ {2}}{S _ {x x}}}} \\leqslant t _ {\\alpha / 2} (n - 2) \\right\\} = 1 - \\alpha ,"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.122,
+            0.164,
+            0.697,
+            0.209
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "或 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P\\left\\{\\hat{Y}_0 - t_{\\alpha /2}(n - 2)\\hat{\\sigma}\\sqrt{1 + \\frac{1}{n} + \\frac{(x_0 - \\overline{x})^2}{S_{xx}}} < Y_0\\right."
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.244,
+            0.218,
+            0.74,
+            0.262
+          ],
+          "image_path": "images/page_266_equation_4.jpg",
+          "content": "<   \\hat {Y} _ {0} + t _ {\\alpha / 2} (n - 2) \\hat {\\sigma} \\sqrt {1 + \\frac {1}{n} + \\frac {(x _ {0} - \\bar {x}) ^ {2}}{S _ {x x}}} \\Bigg \\} = 1 - \\alpha ."
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.122,
+            0.274,
+            0.865,
+            0.311
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "区间  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left(\\hat{Y}_{0}\\pm t_{\\alpha/2}(n-2)\\hat{\\sigma}\\sqrt{1+\\frac{1}{n}+\\frac{(x_{0}-\\overline{x})^{2}}{S_{xx}}}\\right)"
+            },
+            {
+              "type": "text",
+              "content": " ，(3.32)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.122,
+            0.322,
+            0.867,
+            0.359
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "即 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left(\\hat{a} +\\hat{b} x_0\\pm t_{a / 2}(n - 2)\\hat{\\sigma}\\sqrt{1 + \\frac{1}{n} + \\frac{(x_0 - \\overline{x})^2}{S_{xx}}}\\right)"
+            },
+            {
+              "type": "text",
+              "content": " (3.32)'"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.117,
+            0.366,
+            0.869,
+            0.459
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "称为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{0}"
+            },
+            {
+              "type": "text",
+              "content": " 的置信水平为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 - \\alpha"
+            },
+            {
+              "type": "text",
+              "content": " 的预测区间①.这一预测区间的长度是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_0"
+            },
+            {
+              "type": "text",
+              "content": " 的函数，它随 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "|x_0 - \\overline{x}|"
+            },
+            {
+              "type": "text",
+              "content": " 的增加而增加.当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_0 = \\overline{x}"
+            },
+            {
+              "type": "text",
+              "content": " 时为最短.将(3.32)式与(3.29)式比较，知道在相同的置信水平下，回归函数值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu (x_0)"
+            },
+            {
+              "type": "text",
+              "content": " 的置信区间要比 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{0}"
+            },
+            {
+              "type": "text",
+              "content": " 的预测区间短.这是因为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{0} = a + bx_{0} + \\varepsilon_{0}"
+            },
+            {
+              "type": "text",
+              "content": " 比 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu (x_0) = a + bx_0"
+            },
+            {
+              "type": "text",
+              "content": " 多了一项 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varepsilon_0"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.118,
+            0.463,
+            0.87,
+            0.532
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 5(续例 2) (1) 求回归函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x)"
+            },
+            {
+              "type": "text",
+              "content": "  在 x = 125 处的值  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(125)"
+            },
+            {
+              "type": "text",
+              "content": "  的置信水平为 0.95 的置信区间, 求在 x = 125 处 Y 的新观察值  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{0}"
+            },
+            {
+              "type": "text",
+              "content": "  的置信水平为 0.95 的预测区间. (2) 求在  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x = x_{0}"
+            },
+            {
+              "type": "text",
+              "content": "  处 Y 的新观察值  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{0}"
+            },
+            {
+              "type": "text",
+              "content": "  的置信水平为 0.95 预测区间."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.117,
+            0.542,
+            0.869,
+            0.589
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "解 （1）由例2，例3已知 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{b}=0.483\\ 03,\\hat{a}=-2.739\\ 35,S_{xx}=8\\ 250,\\hat{\\sigma}^{2}=0.90,\\bar{x}=145"
+            },
+            {
+              "type": "text",
+              "content": " ，查表得 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t_{0.05/2}(8)=2.306\\ 0"
+            },
+            {
+              "type": "text",
+              "content": " ，即得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.215,
+            0.598,
+            0.772,
+            0.761
+          ],
+          "image_path": "images/page_266_equation_10.jpg",
+          "content": "\\begin{array}{l} \\hat {Y} _ {0} = \\hat {Y} \\mid_ {x = 1 2 5} = [ - 2. 7 3 9 3 5 + 0. 4 8 3 0 3 x ] _ {x = 1 2 5} = 5 7. 6 4, \\\\ t _ {\\alpha / 2} (n - 2) \\hat {\\sigma} \\sqrt {\\frac {1}{n} + \\frac {(x _ {0} - \\bar {x}) ^ {2}}{S _ {x x}}} \\\\ = 2. 3 0 6 0 \\times \\sqrt {0 . 9 0} \\times \\sqrt {\\frac {1}{1 0} + \\frac {(1 2 5 - 1 4 5) ^ {2}}{8 2 5 0}} = 0. 8 4, \\\\ t _ {\\alpha / 2} (n - 2) \\hat {\\sigma} \\sqrt {1 + \\frac {1}{n} + \\frac {(x _ {0} - \\bar {x}) ^ {2}}{S _ {x x}}} = 2. 3 4, \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.119,
+            0.768,
+            0.869,
+            0.787
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "得回归函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu (x)"
+            },
+            {
+              "type": "text",
+              "content": " 在 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x = 125"
+            },
+            {
+              "type": "text",
+              "content": " 处的值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu (125)"
+            },
+            {
+              "type": "text",
+              "content": " 的一个置信水平为0.95的置信区间为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.417,
+            0.794,
+            0.571,
+            0.81
+          ],
+          "image_path": "images/page_266_equation_12.jpg",
+          "content": "(5 7. 6 4 \\pm 0. 8 4)."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.12,
+            0.817,
+            0.685,
+            0.836
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "又得 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_0 = 125"
+            },
+            {
+              "type": "text",
+              "content": " 处得率 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{0}"
+            },
+            {
+              "type": "text",
+              "content": " 的置信水平为0.95的预测区间为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.416,
+            0.842,
+            0.571,
+            0.859
+          ],
+          "image_path": "images/page_266_equation_14.jpg",
+          "content": "(5 7. 6 4 \\pm 2. 3 4)."
+        },
+        {
+          "type": "page_footnote",
+          "index": 15,
+          "bbox": [
+            0.15,
+            0.896,
+            0.862,
+            0.912
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "① 预测区间的含义与置信区间的含义相似，只是后者是对未知参数而言，前者是对随机变量而言."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 267,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.422,
+            0.048,
+            0.589,
+            0.065
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "§ 3 一元线性回归"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.793,
+            0.05,
+            0.861,
+            0.064
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "· 253 ·"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.171,
+            0.089,
+            0.869,
+            0.109
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(2) 在  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x = x_{0}"
+            },
+            {
+              "type": "text",
+              "content": "  处 Y 的新观察值  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{0}"
+            },
+            {
+              "type": "text",
+              "content": "  的一个置信水平为 0.95 的预测区间为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.279,
+            0.116,
+            0.724,
+            0.155
+          ],
+          "image_path": "images/page_267_equation_3.jpg",
+          "content": "\\left(\\hat {Y} \\mid_ {x = x _ {0}} \\pm t _ {0. 0 2 5} (8) \\hat {\\sigma} \\sqrt {1 + \\frac {1}{1 0} + \\frac {(x _ {0} - 1 4 5) ^ {2}}{8 2 5 0}}\\right)."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.127,
+            0.16,
+            0.877,
+            0.203
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "取 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_0"
+            },
+            {
+              "type": "text",
+              "content": " 为不同的值，得到各点处对应的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 的新观察值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_0"
+            },
+            {
+              "type": "text",
+              "content": " 的预测区间（置信水平为0.95）如下:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 5,
+          "bbox": [
+            0.129,
+            0.216,
+            0.877,
+            0.389
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 5,
+              "bbox": [
+                0.129,
+                0.216,
+                0.877,
+                0.389
+              ],
+              "image_path": "images/page_267_table_5.jpg",
+              "content": "<table><tr><td><eq>x_0</eq></td><td><eq>Y_0</eq>的预测区间</td><td><eq>x_0</eq></td><td><eq>Y_0</eq>的预测区间</td></tr><tr><td>125</td><td>(57.64±2.34)</td><td>150</td><td>(69.72±2.30)</td></tr><tr><td>130</td><td>(60.05±2.32)</td><td>155</td><td>(72.13±2.31)</td></tr><tr><td>135</td><td>(62.47±2.31)</td><td>160</td><td>(74.55±2.32)</td></tr><tr><td>140</td><td>(64.88±2.30)</td><td>165</td><td>(76.96±2.34)</td></tr><tr><td>145</td><td>(67.30±2.29)</td><td></td><td></td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.127,
+            0.408,
+            0.877,
+            0.453
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "将这些区间的下端点联结起来,又将这些区间的上端点联结起来,得到两条曲线 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "L_{1}"
+            },
+            {
+              "type": "text",
+              "content": " 和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "L_{2}"
+            },
+            {
+              "type": "text",
+              "content": " ,回归直线位于由 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "L_{1},L_{2}"
+            },
+            {
+              "type": "text",
+              "content": " 所围成的带域的中心线上."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.171,
+            0.467,
+            0.534,
+            0.49
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(八) 可化为一元线性回归的例子"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.127,
+            0.505,
+            0.877,
+            0.574
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "以上讨论了一元线性回归问题,在实际中常会遇到更为复杂的回归问题,但在某些情况下,可以通过适当的变量变换,将它化成一元线性回归来处理.下面介绍几种常见的可转化为一元线性回归的模型."
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.174,
+            0.578,
+            0.873,
+            0.597
+          ],
+          "image_path": "images/page_267_equation_9.jpg",
+          "content": "1 ^ {\\circ} \\quad Y = \\alpha \\mathrm{e} ^ {\\beta x} \\cdot \\varepsilon , \\quad \\ln \\varepsilon \\sim N (0, \\sigma^ {2}), \\tag {3.33}"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.127,
+            0.602,
+            0.766,
+            0.622
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha, \\beta, \\sigma^2"
+            },
+            {
+              "type": "text",
+              "content": " 是与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 无关的未知参数. 将 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = \\alpha \\mathrm{e}^{\\beta x} \\cdot \\varepsilon"
+            },
+            {
+              "type": "text",
+              "content": " 两边取对数，得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.382,
+            0.627,
+            0.614,
+            0.647
+          ],
+          "image_path": "images/page_267_equation_11.jpg",
+          "content": "\\ln Y = \\ln \\alpha + \\beta x + \\ln \\varepsilon ."
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.127,
+            0.65,
+            0.876,
+            0.693
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "令 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\ln Y = Y', \\ln \\alpha = a, \\beta = b, x = x', \\ln \\varepsilon = \\varepsilon'"
+            },
+            {
+              "type": "text",
+              "content": ", (3.33) 式可转化为一元线性回归模型"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.331,
+            0.7,
+            0.872,
+            0.717
+          ],
+          "image_path": "images/page_267_equation_13.jpg",
+          "content": "Y ^ {\\prime} = a + b x ^ {\\prime} + \\varepsilon^ {\\prime}, \\quad \\varepsilon^ {\\prime} \\sim N (0, \\sigma^ {2}). \\tag {3.34}"
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.174,
+            0.724,
+            0.872,
+            0.741
+          ],
+          "image_path": "images/page_267_equation_14.jpg",
+          "content": "2 ^ {\\circ} \\quad Y = \\alpha x ^ {\\beta} \\cdot \\varepsilon , \\quad \\ln \\varepsilon \\sim N (0, \\sigma^ {2}), \\tag {3.35}"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.127,
+            0.746,
+            0.762,
+            0.766
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha, \\beta, \\sigma^2"
+            },
+            {
+              "type": "text",
+              "content": " 是与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 无关的未知参数. 将 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = \\alpha x^\\beta \\cdot \\varepsilon"
+            },
+            {
+              "type": "text",
+              "content": " 两边取对数，得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.37,
+            0.771,
+            0.626,
+            0.791
+          ],
+          "image_path": "images/page_267_equation_16.jpg",
+          "content": "\\ln Y = \\ln \\alpha + \\beta \\ln x + \\ln \\varepsilon ."
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.127,
+            0.795,
+            0.876,
+            0.838
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "令 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\ln Y = Y', \\ln \\alpha = a, \\beta = b, \\ln x = x', \\ln \\varepsilon = \\varepsilon'"
+            },
+            {
+              "type": "text",
+              "content": ", (3.35) 式可转化为一元线性回归模型"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 18,
+          "bbox": [
+            0.331,
+            0.844,
+            0.872,
+            0.862
+          ],
+          "image_path": "images/page_267_equation_18.jpg",
+          "content": "Y ^ {\\prime} = a + b x ^ {\\prime} + \\varepsilon^ {\\prime}, \\quad \\varepsilon^ {\\prime} \\sim N (0, \\sigma^ {2}). \\tag {3.36}"
+        },
+        {
+          "type": "equation",
+          "index": 19,
+          "bbox": [
+            0.174,
+            0.87,
+            0.872,
+            0.888
+          ],
+          "image_path": "images/page_267_equation_19.jpg",
+          "content": "3 ^ {\\circ} \\quad Y = \\alpha + \\beta h (x) + \\varepsilon , \\quad \\varepsilon \\sim N (0, \\sigma^ {2}), \\tag {3.37}"
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.127,
+            0.892,
+            0.874,
+            0.913
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha, \\beta, \\sigma^2"
+            },
+            {
+              "type": "text",
+              "content": " 是与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 无关的未知参数. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h(x)"
+            },
+            {
+              "type": "text",
+              "content": " 是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 的已知函数，令 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha = a, \\beta = b,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 268,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.136,
+            0.054,
+            0.201,
+            0.068
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "· 254 ·"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.369,
+            0.051,
+            0.619,
+            0.068
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第九章 方差分析及回归分析"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.119,
+            0.092,
+            0.606,
+            0.111
+          ],
+          "content": [
+            {
+              "type": "equation_inline",
+              "content": "h(x) = x^{\\prime}"
+            },
+            {
+              "type": "text",
+              "content": " ，(3.37)式可转化为一元线性回归模型"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.335,
+            0.118,
+            0.865,
+            0.133
+          ],
+          "image_path": "images/page_268_equation_3.jpg",
+          "content": "Y = a + b x ^ {\\prime} + \\varepsilon , \\quad \\varepsilon \\sim N (0, \\sigma^ {2}). \\tag {3.38}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.119,
+            0.141,
+            0.87,
+            0.258
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "若在原模型下，例如在原模型(3.37)下，对于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(x,Y)"
+            },
+            {
+              "type": "text",
+              "content": " 有样本 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(x_{1},y_{1}),(x_{2},y_{2}),\\dots ,(x_{n},y_{n})"
+            },
+            {
+              "type": "text",
+              "content": " 就相当于在新模型(3.38)下有样本 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(x_1',y_1),(x_2',y_2),\\dots ,(x_n',y_n)"
+            },
+            {
+              "type": "text",
+              "content": "，其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{i}^{\\prime} = h(x_{i})"
+            },
+            {
+              "type": "text",
+              "content": "。于是就能利用上节的方法来估计 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a,b"
+            },
+            {
+              "type": "text",
+              "content": " 或对 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b"
+            },
+            {
+              "type": "text",
+              "content": " 作假设检验，或对 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 进行预测。在得到 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 关于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x^{\\prime}"
+            },
+            {
+              "type": "text",
+              "content": " 的回归方程后，再将原自变量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 代回，就得到 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 关于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 的回归方程，它的图形是一条曲线，也称为曲线回归方程。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.12,
+            0.262,
+            0.87,
+            0.307
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例6 下表是1957年美国旧轿车价格的调查资料, 今以 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 表示轿车的使用年数, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 表示相应的平均价格, 求 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 关于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 的回归方程."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 6,
+          "bbox": [
+            0.122,
+            0.321,
+            0.871,
+            0.386
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 6,
+              "bbox": [
+                0.122,
+                0.321,
+                0.871,
+                0.386
+              ],
+              "image_path": "images/page_268_table_6.jpg",
+              "content": "<table><tr><td>使用年数x</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>平均价格Y(美元)</td><td>2 651</td><td>1 943</td><td>1 494</td><td>1 087</td><td>765</td><td>538</td><td>484</td><td>290</td><td>226</td><td>204</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.121,
+            0.407,
+            0.445,
+            0.475
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "解 作散点图如图9-4,看起来Y与x呈指数关系,于是采用模型(3.33),即"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.123,
+            0.48,
+            0.445,
+            0.621
+          ],
+          "content": [
+            {
+              "type": "equation_inline",
+              "content": "Y = \\alpha e^{\\beta x} \\cdot \\varepsilon, \\quad \\ln \\varepsilon \\sim N(0, \\sigma^{2})"
+            },
+            {
+              "type": "text",
+              "content": " .\n\n经变量变换后就转化为(3.34)式:\n\n "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y' = a + bx' + \\varepsilon', \\varepsilon' \\sim N(0, \\sigma^{2})"
+            },
+            {
+              "type": "text",
+              "content": " ,\n\n其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y' = \\ln Y, a = \\ln \\alpha, b = \\beta, x' = x, \\varepsilon' = \\ln \\varepsilon"
+            },
+            {
+              "type": "text",
+              "content": " . 数据经变换后得到"
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 9,
+          "bbox": [
+            0.46,
+            0.415,
+            0.853,
+            0.58
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 9,
+              "bbox": [
+                0.46,
+                0.415,
+                0.853,
+                0.58
+              ],
+              "image_path": "images/page_268_chart_9.jpg",
+              "content": "| x | Y |\n| --- | --- |\n| 1 | ~2650 |\n| 2 | ~1950 |\n| 3 | ~1500 |\n| 4 | ~1150 |\n| 5 | ~900 |\n| 6 | ~550 |\n| 7 | ~480 |\n| 8 | ~300 |\n| 9 | ~250 |\n| 10 | ~250 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 10,
+              "bbox": [
+                0.622,
+                0.586,
+                0.693,
+                0.602
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图9-4"
+                }
+              ]
+            }
+          ],
+          "sub_type": "scatter"
+        },
+        {
+          "type": "table",
+          "index": 11,
+          "bbox": [
+            0.124,
+            0.636,
+            0.871,
+            0.692
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 11,
+              "bbox": [
+                0.124,
+                0.636,
+                0.871,
+                0.692
+              ],
+              "image_path": "images/page_268_table_11.jpg",
+              "content": "<table><tr><td><eq>x&#x27; = x</eq></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td><eq>y&#x27; = \\ln y</eq></td><td>7.8827</td><td>7.5720</td><td>7.3092</td><td>6.9912</td><td>6.6399</td><td>6.2879</td><td>6.1821</td><td>5.6699</td><td>5.4205</td><td>5.3181</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.123,
+            0.706,
+            0.215,
+            0.724
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "经计算得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.33,
+            0.735,
+            0.662,
+            0.756
+          ],
+          "image_path": "images/page_268_equation_13.jpg",
+          "content": "\\hat {b} = - 0. 2 9 7 6 8, \\quad \\hat {a} = 8. 1 6 4 5 8 5,"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.124,
+            0.763,
+            0.192,
+            0.781
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "从而有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.352,
+            0.79,
+            0.637,
+            0.811
+          ],
+          "image_path": "images/page_268_equation_15.jpg",
+          "content": "\\hat {y} ^ {\\prime} = 8. 1 6 4 5 8 5 - 0. 2 9 7 6 8 x."
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.125,
+            0.816,
+            0.215,
+            0.834
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "又可求得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.241,
+            0.845,
+            0.754,
+            0.89
+          ],
+          "image_path": "images/page_268_equation_17.jpg",
+          "content": "| t | = \\frac {| \\hat {b} |}{\\hat {\\sigma}} \\sqrt {S _ {x x}} = 3 2. 3 6 9 3 > t _ {0. 0 5 / 2} (8) = 2. 3 0 6 0,"
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.124,
+            0.897,
+            0.72,
+            0.916
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "即知线性回归效果是高度显著的.代回原变量,得曲线回归方程"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 269,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.422,
+            0.047,
+            0.587,
+            0.063
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "§ 4 多元线性回归"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.793,
+            0.049,
+            0.86,
+            0.062
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "· 255 ·"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 2,
+          "bbox": [
+            0.339,
+            0.092,
+            0.66,
+            0.111
+          ],
+          "image_path": "images/page_269_equation_2.jpg",
+          "content": "\\hat {y} = \\exp \\{\\hat {y} ^ {\\prime} \\} = 3 5 1 4. 2 6 \\mathrm{e} ^ {- 0. 2 9 7 6 8 x}."
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.18,
+            0.116,
+            0.512,
+            0.135
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "上面所讨论的一元线性回归模型是"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.348,
+            0.143,
+            0.872,
+            0.158
+          ],
+          "image_path": "images/page_269_equation_4.jpg",
+          "content": "Y = a + b x + \\varepsilon , \\quad \\varepsilon \\sim N (0, \\sigma^ {2}). \\tag {3.2}"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.13,
+            0.165,
+            0.385,
+            0.184
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "一般情况,一元回归模型为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.295,
+            0.192,
+            0.872,
+            0.208
+          ],
+          "image_path": "images/page_269_equation_6.jpg",
+          "content": "Y = \\mu (x; \\theta_ {1}, \\theta_ {2}, \\dots , \\theta_ {p}) + \\varepsilon , \\quad \\varepsilon \\sim N (0, \\sigma^ {2}), \\tag {3.39}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.13,
+            0.214,
+            0.554,
+            0.233
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta_{1},\\theta_{2},\\cdots,\\theta_{p},\\sigma^{2}"
+            },
+            {
+              "type": "text",
+              "content": "  是与 x 无关的未知参数."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.129,
+            0.238,
+            0.877,
+            0.355
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "如果回归函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x;\\theta_{1},\\theta_{2},\\cdots,\\theta_{p})"
+            },
+            {
+              "type": "text",
+              "content": "  是参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta_{1},\\theta_{2},\\cdots,\\theta_{p}"
+            },
+            {
+              "type": "text",
+              "content": "  的线性函数（不必是 x 的线性函数），则称（3.39）为线性回归模型；若  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x;\\theta_{1},\\theta_{2},\\cdots,\\theta_{p})"
+            },
+            {
+              "type": "text",
+              "content": "  是  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta_{1},\\theta_{2},\\cdots,\\theta_{p}"
+            },
+            {
+              "type": "text",
+              "content": "  的非线性函数，则称为非线性回归模型。上述模型（3.37）是线性回归模型，而模型（3.33），（3.35）都不是线性回归模型，但是它们都能经过变量变换转化为线性回归模型。又如"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.354,
+            0.363,
+            0.872,
+            0.377
+          ],
+          "image_path": "images/page_269_equation_9.jpg",
+          "content": "Y = \\theta_ {1} \\mathrm{e} ^ {\\theta_ {2} x} + \\varepsilon , \\quad \\varepsilon \\sim N (0, \\sigma^ {2}). \\tag {3.40}"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.13,
+            0.384,
+            0.876,
+            0.428
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "它是非线性回归模型. 它不能经过变量变换转化为线性回归模型①, 称为本质的非线性回归模型. 对于这种模型, 我们就不讨论了."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 11,
+          "bbox": [
+            0.38,
+            0.455,
+            0.632,
+            0.479
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "§ 4 多元线性回归"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.13,
+            0.506,
+            0.876,
+            0.575
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在实际问题中, 随机变量 Y 往往与多个普通变量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}, x_{2}, \\cdots, x_{p} (p > 1)"
+            },
+            {
+              "type": "text",
+              "content": "  有关. 对于自变量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}, x_{2}, \\cdots, x_{p}"
+            },
+            {
+              "type": "text",
+              "content": "  的一组确定的值, Y 有它的分布. 若 Y 的数学期望存在, 则它是  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}, x_{2}, \\cdots, x_{p}"
+            },
+            {
+              "type": "text",
+              "content": "  的函数, 记为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.348,
+            0.581,
+            0.654,
+            0.603
+          ],
+          "image_path": "images/page_269_equation_13.jpg",
+          "content": "\\mu_ {Y \\mid x _ {1}, x _ {2}, \\dots , x _ {p}} \\text {或} \\mu (x _ {1}, x _ {2}, \\dots , x _ {p}),"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.13,
+            0.605,
+            0.876,
+            0.648
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "它就是 Y 关于 x 的回归函数. 我们感兴趣的是  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x_{1}, x_{2}, \\cdots, x_{p})"
+            },
+            {
+              "type": "text",
+              "content": "  是  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}, x_{2}, \\cdots, x_{p}"
+            },
+            {
+              "type": "text",
+              "content": "  的线性函数的情况. 在这里, 仅讨论下述多元线性回归模型:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.277,
+            0.659,
+            0.873,
+            0.676
+          ],
+          "image_path": "images/page_269_equation_15.jpg",
+          "content": "Y = b _ {0} + b _ {1} x _ {1} + \\dots + b _ {p} x _ {p} + \\varepsilon , \\quad \\varepsilon \\sim N (0, \\sigma^ {2}), \\tag {4.1}"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.13,
+            0.686,
+            0.686,
+            0.707
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b_{0}, b_{1}, \\cdots, b_{p}, \\sigma^{2}"
+            },
+            {
+              "type": "text",
+              "content": " 都是与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}, x_{2}, \\cdots, x_{p}"
+            },
+            {
+              "type": "text",
+              "content": " 无关的未知参数."
+            }
+          ]
+        },
+        {
+          "type": "page_footnote",
+          "index": 17,
+          "bbox": [
+            0.161,
+            0.74,
+            0.396,
+            0.755
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "① 将(3.40)式两边取对数, 得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 18,
+          "bbox": [
+            0.323,
+            0.761,
+            0.683,
+            0.819
+          ],
+          "image_path": "images/page_269_equation_18.jpg",
+          "content": "\\begin{array}{l} \\ln Y = \\ln \\left(\\theta_ {1} \\mathrm{e} ^ {\\theta_ {2} x} + \\varepsilon\\right) = \\ln \\left[ \\theta_ {1} \\mathrm{e} ^ {\\theta_ {2} x} \\left(1 + \\frac {\\varepsilon}{\\theta_ {1}} \\mathrm{e} ^ {- \\theta_ {2} x}\\right) \\right] \\\\ = \\ln \\theta_ {1} + \\theta_ {2} x + \\ln \\left(1 + \\frac {\\varepsilon}{\\theta_ {1}} \\mathrm{e} ^ {- \\theta_ {2} x}\\right). \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.13,
+            0.828,
+            0.56,
+            0.852
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "令 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\ln Y = Y'"
+            },
+            {
+              "type": "text",
+              "content": ", "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\ln \\theta_1 = a, \\theta_2 = b"
+            },
+            {
+              "type": "text",
+              "content": ", "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\ln \\left(1 + \\frac{\\varepsilon}{\\theta_1} \\mathrm{e}^{-\\theta_2 x}\\right) = \\varepsilon'"
+            },
+            {
+              "type": "text",
+              "content": ", 则有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 20,
+          "bbox": [
+            0.439,
+            0.857,
+            0.565,
+            0.871
+          ],
+          "image_path": "images/page_269_equation_20.jpg",
+          "content": "Y ^ {\\prime} = a + b x + \\varepsilon^ {\\prime}."
+        },
+        {
+          "type": "text",
+          "index": 21,
+          "bbox": [
+            0.13,
+            0.875,
+            0.877,
+            0.911
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "从形式上看，上式好像是线性回归模型。但因误差项 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varepsilon'"
+            },
+            {
+              "type": "text",
+              "content": " 中包含未知参数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta_1, \\theta_2"
+            },
+            {
+              "type": "text",
+              "content": "，甚至包含自变量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": "。这在线性回归模型中是不允许的。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 270,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.049,
+            0.206,
+            0.064
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "· 256 ·"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.374,
+            0.048,
+            0.623,
+            0.065
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第九章 方差分析及回归分析"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.173,
+            0.089,
+            0.202,
+            0.107
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "设"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.285,
+            0.114,
+            0.868,
+            0.132
+          ],
+          "image_path": "images/page_270_equation_3.jpg",
+          "content": "(x _ {1 1}, x _ {1 2}, \\dots , x _ {1 p}, y _ {1}), \\dots , (x _ {n 1}, x _ {n 2}, \\dots , x _ {n p}, y _ {n}) \\tag {4.2}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.123,
+            0.141,
+            0.868,
+            0.194
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "是一个样本. 和一元线性回归的情况一样, 我们用最大似然估计法来估计参数.\n即取  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{b}_{0}, \\hat{b}_{1}, \\cdots, \\hat{b}_{p}"
+            },
+            {
+              "type": "text",
+              "content": "  使当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b_{0} = \\hat{b}_{0}, b_{1} = \\hat{b}_{1}, \\cdots, b_{p} = \\hat{b}_{p}"
+            },
+            {
+              "type": "text",
+              "content": "  时"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.314,
+            0.202,
+            0.868,
+            0.24
+          ],
+          "image_path": "images/page_270_equation_5.jpg",
+          "content": "Q = \\sum_ {i = 1} ^ {n} (y _ {i} - b _ {0} - b _ {1} x _ {i 1} - \\dots - b _ {p} x _ {i p}) ^ {2} \\tag {4.3}"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.123,
+            0.244,
+            0.223,
+            0.263
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "达到最小."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.171,
+            0.268,
+            0.722,
+            0.288
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "求 Q 分别关于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b_{0}, b_{1}, \\cdots, b_{p}"
+            },
+            {
+              "type": "text",
+              "content": "  的偏导数，并令它们等于零，得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.245,
+            0.296,
+            0.869,
+            0.41
+          ],
+          "image_path": "images/page_270_equation_8.jpg",
+          "content": "\\left. \\begin{array}{c} \\frac {\\partial Q}{\\partial b _ {0}} = - 2 \\sum_ {i = 1} ^ {n} (y _ {i} - b _ {0} - b _ {1} x _ {i 1} - \\dots - b _ {p} x _ {i p}) = 0, \\\\ \\frac {\\partial Q}{\\partial b _ {j}} = - 2 \\sum_ {i = 1} ^ {n} (y _ {i} - b _ {0} - b _ {1} x _ {i 1} - \\dots - b _ {p} x _ {i p}) x _ {i j} = 0, \\\\ j = 1, 2, \\dots , p. \\end{array} \\right\\} \\tag {4.4}"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.124,
+            0.416,
+            0.277,
+            0.435
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "化简(4.4)式得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.183,
+            0.455,
+            0.869,
+            0.616
+          ],
+          "image_path": "images/page_270_equation_10.jpg",
+          "content": "\\left. \\begin{array}{c} b _ {0} n + b _ {1} \\sum_ {i = 1} ^ {n} x _ {i 1} + b _ {2} \\sum_ {i = 1} ^ {n} x _ {i 2} + \\dots + b _ {p} \\sum_ {i = 1} ^ {n} x _ {i p} = \\sum_ {i = 1} ^ {n} y _ {i}, \\\\ b _ {0} \\sum_ {i = 1} ^ {n} x _ {i 1} + b _ {1} \\sum_ {i = 1} ^ {n} x _ {i 1} ^ {2} + b _ {2} \\sum_ {i = 1} ^ {n} x _ {i 1} x _ {i 2} + \\dots + b _ {p} \\sum_ {i = 1} ^ {n} x _ {i 1} x _ {i p} = \\sum_ {i = 1} ^ {n} x _ {i 1} y _ {i}, \\\\ \\dots \\dots \\\\ b _ {0} \\sum_ {i = 1} ^ {n} x _ {i p} + b _ {1} \\sum_ {i = 1} ^ {n} x _ {i p} x _ {i 1} + b _ {2} \\sum_ {i = 1} ^ {n} x _ {i p} x _ {i 2} + \\dots + b _ {p} \\sum_ {i = 1} ^ {n} x _ {i p} ^ {2} = \\sum_ {i = 1} ^ {n} x _ {i p} y _ {i}. \\end{array} \\right\\} \\tag {4.5}"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.123,
+            0.632,
+            0.871,
+            0.674
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(4.5) 式称为正规方程组. 为了求解的方便, 将 (4.5) 式写成矩阵的形式. 为此, 引入矩阵"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.219,
+            0.685,
+            0.77,
+            0.777
+          ],
+          "image_path": "images/page_270_equation_12.jpg",
+          "content": "\\boldsymbol {X} = \\left( \\begin{array}{c c c c c} 1 & x _ {1 1} & x _ {1 2} & \\dots & x _ {1 p} \\\\ 1 & x _ {2 1} & x _ {2 2} & \\dots & x _ {2 p} \\\\ \\vdots & \\vdots & \\vdots & & \\vdots \\\\ 1 & x _ {n 1} & x _ {n 2} & \\dots & x _ {n p} \\end{array} \\right), \\quad \\boldsymbol {Y} = \\left( \\begin{array}{c} y _ {1} \\\\ y _ {2} \\\\ \\vdots \\\\ y _ {n} \\end{array} \\right), \\quad \\boldsymbol {B} = \\left( \\begin{array}{c} b _ {0} \\\\ b _ {1} \\\\ \\vdots \\\\ b _ {p} \\end{array} \\right)."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.125,
+            0.783,
+            0.754,
+            0.877
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "因 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf{X}^{\\mathrm{T}}\\mathbf{X} = \\begin{bmatrix} 1 & 1 & \\cdots & 1 \\\\ x_{11} & x_{21} & \\cdots & x_{n1} \\\\ \\vdots & \\vdots & & \\vdots \\\\ x_{1p} & x_{2p} & \\cdots & x_{np} \\end{bmatrix}\\begin{bmatrix} 1 & x_{11} & x_{12} & \\cdots & x_{1p} \\\\ 1 & x_{21} & x_{22} & \\cdots & x_{2p} \\\\ \\vdots & \\vdots & \\vdots & & \\vdots \\\\ 1 & x_{n1} & x_{n2} & \\cdots & x_{np} \\end{bmatrix}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 271,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.424,
+            0.045,
+            0.588,
+            0.062
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "§ 4 多元线性回归"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.795,
+            0.047,
+            0.863,
+            0.06
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "· 257 ·"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 2,
+          "bbox": [
+            0.295,
+            0.097,
+            0.672,
+            0.26
+          ],
+          "image_path": "images/page_271_equation_2.jpg",
+          "content": "= \\left( \\begin{array}{c c c c} n & \\sum_ {i = 1} ^ {n} x _ {i 1} & \\dots & \\sum_ {i = 1} ^ {n} x _ {i p} \\\\ \\sum_ {i = 1} ^ {n} x _ {i 1} & \\sum_ {i = 1} ^ {n} x _ {i 1} ^ {2} & \\dots & \\sum_ {i = 1} ^ {n} x _ {i 1} x _ {i p} \\\\ \\vdots & \\vdots & & \\vdots \\\\ \\sum_ {i = 1} ^ {n} x _ {i p} & \\sum_ {i = 1} ^ {n} x _ {i p} x _ {i 1} & \\dots & \\sum_ {i = 1} ^ {n} x _ {i p} ^ {2} \\end{array} \\right),"
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.271,
+            0.283,
+            0.731,
+            0.445
+          ],
+          "image_path": "images/page_271_equation_3.jpg",
+          "content": "\\boldsymbol {X} ^ {\\mathrm{T}} \\boldsymbol {Y} = \\left( \\begin{array}{c c c c} 1 & 1 & \\dots & 1 \\\\ x _ {1 1} & x _ {2 1} & \\dots & x _ {n 1} \\\\ \\vdots & \\vdots & & \\vdots \\\\ x _ {1 p} & x _ {2 p} & \\dots & x _ {n p} \\end{array} \\right) \\left( \\begin{array}{c} y _ {1} \\\\ y _ {2} \\\\ \\vdots \\\\ y _ {n} \\end{array} \\right) = \\left( \\begin{array}{c} \\sum_ {i = 1} ^ {n} y _ {i} \\\\ \\sum_ {i = 1} ^ {n} x _ {i 1} y _ {i} \\\\ \\vdots \\\\ \\sum_ {i = 1} ^ {n} x _ {i p} y _ {i} \\end{array} \\right)."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.131,
+            0.456,
+            0.348,
+            0.474
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "于是(4.5)式即可写成"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.434,
+            0.485,
+            0.876,
+            0.502
+          ],
+          "image_path": "images/page_271_equation_5.jpg",
+          "content": "\\boldsymbol {X} ^ {\\mathrm{T}} \\boldsymbol {X} \\boldsymbol {B} = \\boldsymbol {X} ^ {\\mathrm{T}} \\boldsymbol {Y}, \\tag {4.5} ^ {\\prime}"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.13,
+            0.514,
+            0.879,
+            0.559
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "这就是正规方程组的矩阵形式. 在(4.5)′式两边左乘 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X^{T}X"
+            },
+            {
+              "type": "text",
+              "content": " 的逆矩阵 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(X^{\\mathrm{T}}X)^{-1}"
+            },
+            {
+              "type": "text",
+              "content": " （设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(X^{\\mathrm{T}}X)^{-1}"
+            },
+            {
+              "type": "text",
+              "content": " 存在）得到(4.5)′的解"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.375,
+            0.576,
+            0.876,
+            0.691
+          ],
+          "image_path": "images/page_271_equation_7.jpg",
+          "content": "\\hat {\\boldsymbol {B}} = \\left( \\begin{array}{c} \\hat {b} _ {0} \\\\ \\hat {b} _ {1} \\\\ \\vdots \\\\ \\hat {b} _ {p} \\end{array} \\right) = (\\boldsymbol {X} ^ {\\mathrm{T}} \\boldsymbol {X}) ^ {- 1} \\boldsymbol {X} ^ {\\mathrm{T}} \\boldsymbol {Y}, \\tag {4.6}"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.13,
+            0.702,
+            0.711,
+            0.721
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "这就是我们需要求的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(b_{0},b_{1},\\cdots,b_{p})^{\\mathrm{T}}"
+            },
+            {
+              "type": "text",
+              "content": " 的最大似然估计.我们取"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.368,
+            0.733,
+            0.641,
+            0.76
+          ],
+          "image_path": "images/page_271_equation_9.jpg",
+          "content": "\\hat {b} _ {0} + \\hat {b} _ {1} x _ {1} + \\dots + \\hat {b} _ {p} x _ {p} \\stackrel {\\mathrm{记成}} {=} \\hat {y}"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.13,
+            0.77,
+            0.701,
+            0.79
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "作为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu(x_{1},x_{2},\\cdots,x_{p})=b_{0}+b_{1}x_{1}+\\cdots+b_{p}x_{p}"
+            },
+            {
+              "type": "text",
+              "content": "  的估计. 方程"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.379,
+            0.805,
+            0.876,
+            0.829
+          ],
+          "image_path": "images/page_271_equation_11.jpg",
+          "content": "\\hat {y} = \\hat {b} _ {0} + \\hat {b} _ {1} x _ {1} + \\dots + \\hat {b} _ {p} x _ {p} \\tag {4.7}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.13,
+            0.839,
+            0.664,
+            0.857
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "称为 Y 关于 x 的 p 元经验线性回归方程, 简称回归方程."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.13,
+            0.863,
+            0.879,
+            0.907
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 下面给出了某种产品每件平均单价 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " (元)与批量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " (件)之间的关系的一组数据:"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

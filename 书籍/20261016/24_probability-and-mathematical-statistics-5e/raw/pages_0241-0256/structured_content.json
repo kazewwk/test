@@ -1,0 +1,2862 @@
+{
+  "pages": [
+    {
+      "page_idx": 240,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.141,
+            0.047,
+            0.206,
+            0.061
+          ],
+          "content": "· 226 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.375,
+            0.046,
+            0.623,
+            0.063
+          ],
+          "content": "第九章 方差分析及回归分析"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.348,
+            0.089,
+            0.645,
+            0.151
+          ],
+          "content": "\\frac {\\sum_ {i = 1} ^ {n _ {j}} (X _ {i j} - \\overline {{X}} _ {. j}) ^ {2}}{\\sigma^ {2}} \\sim \\chi^ {2} (n _ {j} - 1).",
+          "image_source": "images/page_240_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.162,
+            0.837,
+            0.184
+          ],
+          "content": "因各 $X_{ij}$ 相互独立，故(1.11)式中各平方和相互独立.由 $\\chi^2$ 分布的可加性知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.38,
+            0.193,
+            0.614,
+            0.234
+          ],
+          "content": "\\frac {S _ {E}}{\\sigma^ {2}} \\sim \\chi^ {2} \\Big (\\sum_ {j = 1} ^ {s} (n _ {j} - 1) \\Big),",
+          "image_source": "images/page_240_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.24,
+            0.871,
+            0.276
+          ],
+          "content": "即 $\\frac{S_E}{\\sigma^2} \\sim \\chi^2 (n - s),$ (1.12)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.287,
+            0.722,
+            0.328
+          ],
+          "content": "这里 $n = \\sum_{j=1}^{s} n_j$. 由(1.12)式还可知, $S_E$ 的自由度为 $n - s$, 且有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.398,
+            0.332,
+            0.871,
+            0.351
+          ],
+          "content": "E (S _ {E}) = (n - s) \\sigma^ {2}. \\tag {1.13}",
+          "image_source": "images/page_240_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.361,
+            0.871,
+            0.406
+          ],
+          "content": "下面讨论  $S_{A}$  的统计特性, 我们看到  $S_{A}$  是 s 个变量  $\\sqrt{n_{j}}(\\overline{X}_{.j}-\\overline{X})$  (j=1,  $2,\\cdots,s$ ) 的平方和, 它们之间仅有一个线性约束条件"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.17,
+            0.416,
+            0.825,
+            0.46
+          ],
+          "content": "\\sum_ {j = 1} ^ {s} \\sqrt {n _ {j}} \\big [ \\sqrt {n _ {j}} (\\overline {{X}} _ {. j} - \\overline {{X}}) \\big ] = \\sum_ {j = 1} ^ {s} n _ {j} (\\overline {{X}} _ {. j} - \\overline {{X}}) = \\sum_ {j = 1} ^ {s} \\sum_ {i = 1} ^ {n _ {j}} X _ {i j} - n \\overline {{X}} = 0,",
+          "image_source": "images/page_240_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.462,
+            0.374,
+            0.48
+          ],
+          "content": "故知  $S_{A}$  的自由度是 s-1."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.488,
+            0.554,
+            0.507
+          ],
+          "content": "再由(1.3)，(1.6)式及 $X_{ij}$ 的独立性，知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.417,
+            0.515,
+            0.871,
+            0.55
+          ],
+          "content": "\\overline {{X}} \\sim N \\Big (\\mu , \\frac {\\sigma^ {2}}{n} \\Big). \\tag {1.14}",
+          "image_source": "images/page_240_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.558,
+            0.171,
+            0.575
+          ],
+          "content": "即得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.226,
+            0.582,
+            0.765,
+            0.736
+          ],
+          "content": "\\begin{array}{l} E (S _ {A}) = E \\left[ \\sum_ {j = 1} ^ {s} n _ {j} \\overline {{X}} _ {. j} ^ {2} - n \\overline {{X}} ^ {2} \\right] = \\sum_ {j = 1} ^ {s} n _ {j} E (\\overline {{X}} _ {. j} ^ {2}) - n E (\\overline {{X}} ^ {2}) \\\\ = \\sum_ {j = 1} ^ {s} n _ {j} \\left[ \\frac {\\sigma^ {2}}{n _ {j}} + (\\mu + \\delta_ {j}) ^ {2} \\right] - n \\left(\\frac {\\sigma^ {2}}{n} + \\mu^ {2}\\right) \\\\ = (s - 1) \\sigma^ {2} + 2 \\mu \\sum_ {j = 1} ^ {s} n _ {j} \\delta_ {j} + n \\mu^ {2} + \\sum_ {j = 1} ^ {s} n _ {j} \\delta_ {j} ^ {2} - n \\mu^ {2}. \\\\ \\end{array}",
+          "image_source": "images/page_240_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.74,
+            0.405,
+            0.781
+          ],
+          "content": "由(1.1) $^{\\prime}$ 式 $\\sum_{j=1}^{s}n_{j}\\delta_{j}=0$ ，故有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.348,
+            0.781,
+            0.868,
+            0.821
+          ],
+          "content": "E (S _ {A}) = (s - 1) \\sigma^ {2} + \\sum_ {j = 1} ^ {s} n _ {j} \\delta_ {j} ^ {2}. \\tag {1.15}",
+          "image_source": "images/page_240_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.824,
+            0.598,
+            0.843
+          ],
+          "content": "进一步还可以证明 $S_A$ 与 $S_E$ 独立，且当 $H_0$ 为真时"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.412,
+            0.851,
+            0.868,
+            0.887
+          ],
+          "content": "\\frac {S _ {A}}{\\sigma^ {2}} \\sim \\chi^ {2} (s - 1). \\tag {1.16}",
+          "image_source": "images/page_240_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.89,
+            0.202,
+            0.908
+          ],
+          "content": "(证略.)"
+        }
+      ]
+    },
+    {
+      "page_idx": 241,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.39,
+            0.051,
+            0.626,
+            0.068
+          ],
+          "content": "§ 1 单因素试验的方差分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.796,
+            0.053,
+            0.863,
+            0.067
+          ],
+          "content": "· 227 ·"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.175,
+            0.101,
+            0.489,
+            0.124
+          ],
+          "level": 2,
+          "content": "（四）假设检验问题的拒绝域"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.175,
+            0.139,
+            0.692,
+            0.16
+          ],
+          "content": "现在我们可以来确定假设检验问题(1.2)'的拒绝域了."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.164,
+            0.461,
+            0.184
+          ],
+          "content": "由(1.15)式知, 当  $H_{0}$  为真时"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.433,
+            0.192,
+            0.875,
+            0.224
+          ],
+          "content": "E \\left(\\frac {S _ {A}}{s - 1}\\right) = \\sigma^ {2}, \\tag {1.17}",
+          "image_source": "images/page_241_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.23,
+            0.71,
+            0.27
+          ],
+          "content": "即 $\\frac{S_A}{s - 1}$ 是 $\\sigma^2$ 的无偏估计. 而当 $H_{1}$ 为真时, $\\sum_{j=1}^{s} n_j \\delta_j^2 > 0$, 此时"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.335,
+            0.272,
+            0.875,
+            0.31
+          ],
+          "content": "E \\left(\\frac {S _ {A}}{s - 1}\\right) = \\sigma^ {2} + \\frac {1}{s - 1} \\sum_ {j = 1} ^ {s} n _ {j} \\delta_ {j} ^ {2} > \\sigma^ {2}. \\tag {1.18}",
+          "image_source": "images/page_241_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.311,
+            0.281,
+            0.33
+          ],
+          "content": "又由(1.13)知，"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.433,
+            0.336,
+            0.875,
+            0.368
+          ],
+          "content": "E \\left(\\frac {S _ {E}}{n - s}\\right) = \\sigma^ {2}, \\tag {1.19}",
+          "image_source": "images/page_241_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.375,
+            0.582,
+            0.409
+          ],
+          "content": "即不管 $H_0$ 是否为真，$\\frac{S_E}{n - s}$ 都是 $\\sigma^2$ 的无偏估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.13,
+            0.418,
+            0.879,
+            0.506
+          ],
+          "content": "综上所述，分式 $F = \\frac{S_A / (s - 1)}{S_E / (n - s)}$ 的分子与分母独立，分母 $\\frac{S_E}{n - s}$ 不论 $H_0$ 是否为真，其数学期望总是 $\\sigma^2$。当 $H_0$ 为真时，分子的数学期望为 $\\sigma^2$，当 $H_0$ 不真时，由(1.18)式分子的取值有偏大的趋势。故知检验问题(1.2)'的拒绝域具有形式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.397,
+            0.51,
+            0.61,
+            0.548
+          ],
+          "content": "F = \\frac {S _ {A} / (s - 1)}{S _ {E} / (n - s)} \\geqslant k,",
+          "image_source": "images/page_241_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.13,
+            0.553,
+            0.878,
+            0.597
+          ],
+          "content": "其中 $k$ 由预先给定的显著性水平 $\\alpha$ 确定. 由(1.12)，(1.16)式及 $S_{E}$ 与 $S_{A}$ 的独立性知，当 $H_0$ 为真时，"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.278,
+            0.602,
+            0.724,
+            0.642
+          ],
+          "content": "\\frac {S _ {A} / (s - 1)}{S _ {E} / (n - s)} = \\frac {S _ {A} / \\sigma^ {2}}{s - 1} \\Big / \\frac {S _ {E} / \\sigma^ {2}}{n - s} \\sim F (s - 1, n - s).",
+          "image_source": "images/page_241_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.646,
+            0.467,
+            0.666
+          ],
+          "content": "由此得检验问题(1.2) $^{'}$ 的拒绝域为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.333,
+            0.674,
+            0.874,
+            0.708
+          ],
+          "content": "F = \\frac {S _ {A} / (s - 1)}{S _ {E} / (n - s)} \\geqslant F _ {\\alpha} (s - 1, n - s). \\tag {1.20}",
+          "image_source": "images/page_241_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.714,
+            0.721,
+            0.734
+          ],
+          "content": "上述分析的结果可排成表 9-5 的形式, 称为方差分析表."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.132,
+            0.768,
+            0.879,
+            0.915
+          ],
+          "content": "| 方差来源 | 平方和 | 自由度 | 均方 | F比 |\n| --- | --- | --- | --- | --- |\n| 因素A | $S_A$ | s-1 | $\\overline{S}_A = \\frac{S_A}{s-1}$ | $F = \\frac{\\overline{S}_A}{\\overline{S}_E}$ |\n| 误差 | $S_E$ | n-s | $\\overline{S}_E = \\frac{S_E}{n-s}$ |  |\n| 总和 | $S_T$ | n-1 |  |  |",
+          "captions": [
+            {
+              "bbox": [
+                0.354,
+                0.746,
+                0.655,
+                0.764
+              ],
+              "content": "表 9-5 单因素试验的方差分析表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_241_table_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 242,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.141,
+            0.051,
+            0.206,
+            0.064
+          ],
+          "content": "· 228 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.375,
+            0.049,
+            0.623,
+            0.066
+          ],
+          "content": "第九章 方差分析及回归分析"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.089,
+            0.873,
+            0.136
+          ],
+          "content": "表中 $\\overline{S}_A = S_A / (s - 1),\\overline{S}_E = S_E / (n - s)$ 分别称为 $S_{A},S_{E}$ 的均方.另外，因在$S_{T}$ 中 $n$ 个变量 $X_{ij} - \\overline{X}$ 之间仅满足一个约束条件(1.6)，故 $S_{T}$ 的自由度为 $n - 1$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.141,
+            0.756,
+            0.16
+          ],
+          "content": "在实际中,我们可以按以下较简便的公式来计算  $S_{T}, S_{A}$  和  $S_{E}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.174,
+            0.167,
+            0.735,
+            0.211
+          ],
+          "content": "记 $T_{.j} = \\sum_{i=1}^{n_j} X_{ij}, j = 1,2,\\cdots,s,\\quad T_{..} = \\sum_{j=1}^{s} \\sum_{i=1}^{n_j} X_{ij},$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.213,
+            0.172,
+            0.23
+          ],
+          "content": "即有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.28,
+            0.247,
+            0.871,
+            0.368
+          ],
+          "content": "\\begin{array}{l} S _ {T} = \\sum_ {j = 1} ^ {s} \\sum_ {i = 1} ^ {n _ {j}} X _ {i j} ^ {2} - n \\overline {{X}} ^ {2} = \\sum_ {j = 1} ^ {s} \\sum_ {i = 1} ^ {n _ {j}} X _ {i j} ^ {2} - \\frac {T _ {\\cdot \\cdot} ^ {2}}{n}, \\\\ S _ {A} = \\sum_ {j = 1} ^ {s} n _ {j} \\overline {{X}} _ {\\cdot j} ^ {2} - n \\overline {{X}} ^ {2} = \\sum_ {j = 1} ^ {s} \\frac {T _ {\\cdot j} ^ {2}}{n _ {j}} - \\frac {T _ {\\cdot \\cdot} ^ {2}}{n}, \\\\ S _ {E} = S _ {T} - S _ {A}. \\end{array} \\tag {1.21}",
+          "image_source": "images/page_242_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.381,
+            0.761,
+            0.4
+          ],
+          "content": "例 4 设在例 1 中符合模型(1.1) 条件, 检验假设( $\\alpha = 0.05$ ):"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.381,
+            0.415,
+            0.562,
+            0.436
+          ],
+          "content": "H _ {0}: \\mu_ {1} = \\mu_ {2} = \\mu_ {3},",
+          "image_source": "images/page_242_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.384,
+            0.44,
+            0.608,
+            0.46
+          ],
+          "content": "$H_{1}:\\mu_{1},\\mu_{2},\\mu_{3}$ 不全相等."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.473,
+            0.6,
+            0.492
+          ],
+          "content": "解 现在 $s = 3, n_1 = n_2 = n_3 = 5, n = 15,$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.21,
+            0.503,
+            0.791,
+            0.64
+          ],
+          "content": "\\begin{array}{l} S _ {T} = \\sum_ {j = 1} ^ {3} \\sum_ {i = 1} ^ {5} X _ {i j} ^ {2} - \\frac {T _ {. .} ^ {2}}{1 5} = 0. 9 6 3 9 1 2 - \\frac {3 . 8 ^ {2}}{1 5} = 0. 0 0 1 2 4 5 3 3, \\\\ S _ {A} = \\sum_ {j = 1} ^ {3} \\frac {T _ {. j} ^ {2}}{n _ {j}} - \\frac {T _ {. .} ^ {2}}{n} = \\frac {1}{5} (1. 2 1 ^ {2} + 1. 2 8 ^ {2} + 1. 3 1 ^ {2}) - \\frac {3 . 8 ^ {2}}{1 5} \\\\ = 0. 0 0 1 0 5 3 3 3, \\\\ S _ {E} ^ {\\cdot} = S _ {T} - S _ {A} = 0. 0 0 0 1 9 2. \\\\ \\end{array}",
+          "image_source": "images/page_242_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.653,
+            0.871,
+            0.695
+          ],
+          "content": "$S_{T}, S_{A}, S_{E}$ 的自由度依次为 $n - 1 = 14, s - 1 = 2, n - s = 12$，得方差分析表如表9-6所示:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.122,
+            0.73,
+            0.872,
+            0.848
+          ],
+          "content": "| 方差来源 | 平方和 | 自由度 | 均方 | F比 |\n| --- | --- | --- | --- | --- |\n| 因素 | 0.001 053 33 | 2 | 0.000 526 67 | 32.92 |\n| 误差 | 0.000 192 | 12 | 0.000 016 |  |\n| 总和 | 0.001 245 33 | 14 |  |  |",
+          "captions": [
+            {
+              "bbox": [
+                0.375,
+                0.709,
+                0.619,
+                0.726
+              ],
+              "content": "表 9-6 例 4 的方差分析表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_242_table_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.868,
+            0.871,
+            0.912
+          ],
+          "content": "因 $F_{0.05}(2,12) = 3.89 < 32.92$ ，故在显著性水平0.05下拒绝 $H_0$ ，认为各台机器生产的薄板厚度有显著的差异. □"
+        }
+      ]
+    },
+    {
+      "page_idx": 243,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.391,
+            0.05,
+            0.627,
+            0.068
+          ],
+          "content": "§ 1 单因素试验的方差分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.798,
+            0.053,
+            0.864,
+            0.067
+          ],
+          "content": "· 229 ·"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.177,
+            0.101,
+            0.414,
+            0.125
+          ],
+          "level": 2,
+          "content": "(五) 未知参数的估计"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.178,
+            0.139,
+            0.506,
+            0.16
+          ],
+          "content": "上面已讲到过,不管  $H_{0}$  是否为真,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.452,
+            0.171,
+            0.564,
+            0.207
+          ],
+          "content": "\\hat {\\sigma} ^ {2} = \\frac {S _ {E}}{n - s}",
+          "image_source": "images/page_243_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.218,
+            0.304,
+            0.238
+          ],
+          "content": "是  $\\sigma^{2}$  的无偏估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.243,
+            0.412,
+            0.262
+          ],
+          "content": "又由(1.14)，(1.7)式知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.223,
+            0.274,
+            0.786,
+            0.319
+          ],
+          "content": "E (\\overline {{X}}) = \\mu ,   E (\\overline {{X}} _ {. j}) = \\frac {1}{n _ {j}} \\sum_ {i = 1} ^ {n _ {j}} E (X _ {i j}) = \\mu_ {j}, \\quad j = 1, 2, \\dots , s.",
+          "image_source": "images/page_243_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.331,
+            0.584,
+            0.353
+          ],
+          "content": "故 $\\hat{\\mu} = \\overline{X}$, $\\hat{\\mu}_j = \\overline{X}_{.j}$ 分别是 $\\mu, \\mu_j$ 的无偏估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.357,
+            0.712,
+            0.377
+          ],
+          "content": "又若拒绝  $H_{0}$ ，这意味着效应  $\\delta_{1}, \\delta_{2}, \\cdots, \\delta_{s}$  不全为零。由于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.362,
+            0.387,
+            0.648,
+            0.408
+          ],
+          "content": "\\delta_ {j} = \\mu_ {j} - \\mu , \\quad j = 1, 2, \\dots , s,",
+          "image_source": "images/page_243_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.421,
+            0.622,
+            0.445
+          ],
+          "content": "知 $\\hat{\\delta}_j = \\overline{X}_{.j} - \\overline{X}$ 是 $\\delta_j$ 的无偏估计.此时还有关系式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.356,
+            0.456,
+            0.653,
+            0.499
+          ],
+          "content": "\\sum_ {j = 1} ^ {s} n _ {j} \\hat {\\delta} _ {j} = \\sum_ {j = 1} ^ {s} n _ {j} \\overline {{X}} _ {. j} - n \\overline {{X}} = 0.",
+          "image_source": "images/page_243_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.129,
+            0.504,
+            0.881,
+            0.549
+          ],
+          "content": "当拒绝 $H_0$ 时，常需要作出两总体 $N(\\mu_j, \\sigma^2)$ 和 $N(\\mu_k, \\sigma^2), j \\neq k$ 的均值差 $\\mu_j - \\mu_k = \\delta_j - \\delta_k$ 的区间估计. 其做法如下."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.183,
+            0.555,
+            0.625,
+            0.577
+          ],
+          "content": "由于 $E(\\overline{X}_{.j} - \\overline{X}_{.k}) = \\mu_j - \\mu_k,$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.36,
+            0.582,
+            0.651,
+            0.619
+          ],
+          "content": "D (\\overline {{X}} _ {. j} - \\overline {{X}} _ {. k}) = \\sigma^ {2} \\left(\\frac {1}{n _ {j}} + \\frac {1}{n _ {k}}\\right),",
+          "image_source": "images/page_243_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.631,
+            0.88,
+            0.677
+          ],
+          "content": "由第六章末所附“§3定理3的证明及其推广”知 $\\overline{X}_{.j}-\\overline{X}_{.k}$ 与 $\\hat{\\sigma}^{2}=S_{E}/(n-s)$ 独立.于是"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.244,
+            0.681,
+            0.792,
+            0.792
+          ],
+          "content": "\\begin{array}{l} \\frac {(\\overline {{X}} _ {. j} - \\overline {{X}} _ {. k}) - (\\mu_ {j} - \\mu_ {k})}{\\sqrt {\\overline {{S}} _ {E} \\left(\\frac {1}{n _ {j}} + \\frac {1}{n _ {k}}\\right)}} \\\\ = \\frac {(\\overline {{X}} _ {. j} - \\overline {{X}} _ {. k}) - (\\mu_ {j} - \\mu_ {k})}{\\sigma \\sqrt {1 / n _ {j} + 1 / n _ {k}}} \\left| \\sqrt {\\frac {S _ {E}}{\\sigma^ {2}}} \\right| (n - s) \\sim t (n - s). \\\\ \\end{array}",
+          "image_source": "images/page_243_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.797,
+            0.764,
+            0.818
+          ],
+          "content": "据此得均值差 $\\mu_{j} - \\mu_{k} = \\delta_{j} - \\delta_{k}$ 的置信水平为 $1 - \\alpha$ 的置信区间为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.306,
+            0.826,
+            0.877,
+            0.864
+          ],
+          "content": "\\left(\\overline {{X}} _ {. j} - \\overline {{X}} _ {. k} \\pm t _ {\\alpha / 2} (n - s) \\sqrt {\\overline {{S}} _ {E} \\left(\\frac {1}{n _ {j}} + \\frac {1}{n _ {k}}\\right)}\\right). \\tag {1.22}",
+          "image_source": "images/page_243_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.87,
+            0.881,
+            0.915
+          ],
+          "content": "例5 求例4中的未知参数 $\\sigma^2, \\mu_j, \\delta_j (j = 1,2,3)$ 的点估计及均值差的置信水平为0.95的置信区间."
+        }
+      ]
+    },
+    {
+      "page_idx": 244,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.138,
+            0.053,
+            0.204,
+            0.067
+          ],
+          "content": "· 230 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.372,
+            0.052,
+            0.621,
+            0.068
+          ],
+          "content": "第九章 方差分析及回归分析"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.097,
+            0.528,
+            0.12
+          ],
+          "content": "解 $\\hat{\\sigma}^2 = S_E / (n - s) = 0.000016,$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.145,
+            0.13,
+            0.846,
+            0.151
+          ],
+          "content": "\\hat {\\mu} _ {1} = \\overline {{x}} _ {. 1} = 0. 2 4 2, \\hat {\\mu} _ {2} = \\overline {{x}} _ {. 2} = 0. 2 5 6, \\hat {\\mu} _ {3} = \\overline {{x}} _ {. 3} = 0. 2 6 2, \\hat {\\mu} = \\overline {{x}} = 0. 2 5 3,",
+          "image_source": "images/page_244_equation_3.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.163,
+            0.159,
+            0.825,
+            0.183
+          ],
+          "content": "\\hat {\\delta} _ {1} = \\overline {{x}} _ {. 1} - \\overline {{x}} = - 0. 0 1 1, \\hat {\\delta} _ {2} = \\overline {{x}} _ {. 2} - \\overline {{x}} = 0. 0 0 3, \\hat {\\delta} _ {3} = \\overline {{x}} _ {. 3} - \\overline {{x}} = 0. 0 0 9.",
+          "image_source": "images/page_244_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.169,
+            0.188,
+            0.405,
+            0.207
+          ],
+          "content": "均值差的区间估计如下:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.213,
+            0.56,
+            0.232
+          ],
+          "content": "由 $t_{0.025}(n - s) = t_{0.025}(12) = 2.1788$ 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.192,
+            0.24,
+            0.796,
+            0.279
+          ],
+          "content": "t _ {0. 0 2 5} (1 2) \\sqrt {\\overline {{S}} _ {E} \\left(\\frac {1}{n _ {j}} + \\frac {1}{n _ {k}}\\right)} = 2. 1 7 8 8 \\sqrt {1 6 \\times 1 0 ^ {- 6} \\times \\frac {2}{5}} = 0. 0 0 6,",
+          "image_source": "images/page_244_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.284,
+            0.764,
+            0.305
+          ],
+          "content": "故 $\\mu_{1} - \\mu_{2},\\mu_{1} - \\mu_{3}$ 及 $\\mu_{2} - \\mu_{3}$ 的置信水平为0.95的置信区间分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.258,
+            0.31,
+            0.733,
+            0.374
+          ],
+          "content": "\\begin{array}{l} (0. 2 4 2 - 0. 2 5 6 \\pm 0. 0 0 6) = (- 0. 0 2 0, - 0. 0 0 8), \\\\ (0. 2 4 2 - 0. 2 6 2 \\pm 0. 0 0 6) = (- 0. 0 2 6, - 0. 0 1 4), \\\\ (0. 2 5 6 - 0. 2 6 2 \\pm 0. 0 0 6) = (- 0. 0 1 2, 0). \\\\ \\end{array}",
+          "image_source": "images/page_244_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.381,
+            0.871,
+            0.449
+          ],
+          "content": "例6 设在例2中的四种类型电路的响应时间的总体均为正态, 且各总体的方差相同, 但参数均未知. 又设各样本相互独立. 试取显著性水平 $\\alpha = 0.05$ 检验各类型电路的响应时间是否有显著差异."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.454,
+            0.871,
+            0.497
+          ],
+          "content": "解 分别以  $\\mu_{1}, \\mu_{2}, \\mu_{3}, \\mu_{4}$  记类型 I, II, III, IV 四种电路响应时间总体的均值. 我们需检验假设 ( $\\alpha = 0.05$ )"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.363,
+            0.503,
+            0.597,
+            0.523
+          ],
+          "content": "H _ {0}: \\mu_ {1} = \\mu_ {2} = \\mu_ {3} = \\mu_ {4},",
+          "image_source": "images/page_244_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.363,
+            0.528,
+            0.62,
+            0.548
+          ],
+          "content": "$H_{1}:\\mu_{1},\\mu_{2},\\mu_{3},\\mu_{4}$  不全相等."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.552,
+            0.569,
+            0.571
+          ],
+          "content": "现在 $n = 18, s = 4, n_1 = n_2 = n_3 = 5, n_4 = 3,$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.235,
+            0.579,
+            0.731,
+            0.623
+          ],
+          "content": "S _ {T} = \\sum_ {j = 1} ^ {4} \\sum_ {i = 1} ^ {n _ {j}} x _ {i j} ^ {2} - \\frac {T _ {\\cdot \\cdot} ^ {2}}{1 8} = 8 9 9 2 - 3 8 6 ^ {2} / 1 8 = 7 1 4. 4 4,",
+          "image_source": "images/page_244_equation_15.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.235,
+            0.631,
+            0.752,
+            0.725
+          ],
+          "content": "\\begin{array}{l} S _ {A} = \\sum_ {j = 1} ^ {4} \\frac {T _ {. j} ^ {2}}{n _ {j}} - \\frac {T _ {. .} ^ {2}}{1 8} \\\\ = \\left[ \\frac {1}{5} (9 4 ^ {2} + 1 4 1 ^ {2} + 9 2 ^ {2}) + \\frac {5 9 ^ {2}}{3} \\right] - \\frac {3 8 6 ^ {2}}{1 8} = 3 1 8. 9 8, \\\\ \\end{array}",
+          "image_source": "images/page_244_equation_16.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.235,
+            0.631,
+            0.751,
+            0.749
+          ],
+          "content": "\\begin{array}{l} S _ {A} = \\sum_ {j = 1} ^ {4} \\frac {T _ {. j} ^ {2}}{n _ {j}} - \\frac {T _ {. .} ^ {2}}{1 8} \\\\ = \\left[ \\frac {1}{5} (9 4 ^ {2} + 1 4 1 ^ {2} + 9 2 ^ {2}) + \\frac {5 9 ^ {2}}{3} \\right] - \\frac {3 8 6 ^ {2}}{1 8} = 3 1 8. 9 8, \\\\ S _ {E} = S _ {T} - S _ {A} = 3 9 5. 4 6. \\\\ \\end{array}",
+          "image_source": "images/page_244_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.755,
+            0.641,
+            0.775
+          ],
+          "content": "$S_{T}, S_{A}, S_{E}$  的自由度依次为 17, 3, 14, 结果载于表 9-7."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.119,
+            0.81,
+            0.869,
+            0.915
+          ],
+          "content": "| 方差来源 | 平方和 | 自由度 | 均方 | F比 |\n| --- | --- | --- | --- | --- |\n| 因素 | 318.98 | 3 | 106.33 | 3.76 |\n| 误差 | 395.46 | 14 | 28.25 |  |\n| 总和 | 714.44 | 17 |  |  |",
+          "captions": [
+            {
+              "bbox": [
+                0.37,
+                0.788,
+                0.616,
+                0.806
+              ],
+              "content": "表 9-7 例 6 的方差分析表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_244_table_20.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 245,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.382,
+            0.052,
+            0.621,
+            0.068
+          ],
+          "content": "§ 2 双因素试验的方差分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.79,
+            0.054,
+            0.858,
+            0.068
+          ],
+          "content": "· 231 ·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.092,
+            0.876,
+            0.137
+          ],
+          "content": "因 $F_{0.05}(3,14) = 3.34 < 3.76$ ，故在显著性水平0.05下拒绝 $H_0$ ，认为各类型电路的响应时间有显著差异. □"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.32,
+            0.164,
+            0.688,
+            0.189
+          ],
+          "level": 2,
+          "content": "§ 2 双因素试验的方差分析"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.175,
+            0.215,
+            0.493,
+            0.235
+          ],
+          "content": "本节介绍双因素试验的方差分析."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.171,
+            0.252,
+            0.557,
+            0.275
+          ],
+          "level": 2,
+          "content": "(一) 双因素等重复试验的方差分析"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.289,
+            0.877,
+            0.386
+          ],
+          "content": "设有两个因素 A, B 作用于试验指标. 因素 A 有 r 个水平  $A_{1}, A_{2}, \\cdots, A_{r}$ ，因素 B 有 s 个水平  $B_{1}, B_{2}, \\cdots, B_{s}$ . 现对因素 A, B 的水平的每对组合  $(A_{i}, B_{j}), i = 1, 2, \\cdots, r; j = 1, 2, \\cdots, s$  都作  $t (t \\geqslant 2)$  次试验（称为等重复试验），得到如表 9-8 的结果:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.127,
+            0.415,
+            0.877,
+            0.672
+          ],
+          "content": "| 因素A\\\\因素B | $B_1$ | $B_2$ | ... | $B_s$ |\n| --- | --- | --- | --- | --- |\n| $A_1$ | $X_{111},X_{112},$$\\cdots,X_{11t}$ | $X_{121},X_{122},$$\\cdots,X_{12t}$ | ... | $X_{1s1},X_{1s2},$$\\cdots,X_{1st}$ |\n| $A_2$ | $X_{211},X_{212},$$\\cdots,X_{21t}$ | $X_{221},X_{222},$$\\cdots,X_{22t}$ | ... | $X_{2s1},X_{2s2},$$\\cdots,X_{2st}$ |\n| ⋮ | ⋮ | ⋮ |  | ⋮ |\n| $A_r$ | $X_{r11},X_{r12},$$\\cdots,X_{r1t}$ | $X_{r21},X_{r22},$$\\cdots,X_{r2t}$ | ... | $X_{rs1},X_{rs2},$$\\cdots,X_{rst}$ |",
+          "captions": [
+            {
+              "bbox": [
+                0.466,
+                0.392,
+                0.537,
+                0.408
+              ],
+              "content": "表9-8"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_245_table_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.694,
+            0.176,
+            0.712
+          ],
+          "content": "并设"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.195,
+            0.723,
+            0.805,
+            0.744
+          ],
+          "content": "X _ {i j k} \\sim N (\\mu_ {i j}, \\sigma^ {2}), \\quad i = 1, 2, \\dots , r; j = 1, 2, \\dots , s; k = 1, 2, \\dots , t,",
+          "image_source": "images/page_245_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.756,
+            0.576,
+            0.777
+          ],
+          "content": "各 $X_{ijk}$ 独立.这里， $\\mu_{ij},\\sigma^2$ 均为未知参数.或写成"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.353,
+            0.789,
+            0.873,
+            0.884
+          ],
+          "content": "\\left. \\begin{array}{l} {{X _ {i j k} = \\mu_ {i j} + \\varepsilon_ {i j k},}} \\\\ {{\\varepsilon_ {i j k} \\sim N (0, \\sigma^ {2}), \\text {各} \\varepsilon_ {i j k} \\text {独立},}} \\\\ {{i = 1, 2, \\dots , r; j = 1, 2, \\dots , s;}} \\\\ {{k = 1, 2, \\dots , t.}} \\end{array} \\right\\} \\tag {2.1}",
+          "image_source": "images/page_245_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.896,
+            0.218,
+            0.915
+          ],
+          "content": "引入记号"
+        }
+      ]
+    },
+    {
+      "page_idx": 246,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.141,
+            0.053,
+            0.206,
+            0.067
+          ],
+          "content": "· 232 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.375,
+            0.051,
+            0.623,
+            0.068
+          ],
+          "content": "第九章 方差分析及回归分析"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.345,
+            0.096,
+            0.651,
+            0.285
+          ],
+          "content": "\\begin{array}{l} \\mu = \\frac {1}{r s} \\sum_ {i = 1} ^ {r} \\sum_ {j = 1} ^ {s} \\mu_ {i j}, \\\\ \\mu_ {i.} = \\frac {1}{s} \\sum_ {j = 1} ^ {s} \\mu_ {i j}, \\quad i = 1, 2, \\dots , r, \\\\ \\mu_ {. j} = \\frac {1}{r} \\sum_ {i = 1} ^ {r} \\mu_ {i j}, \\quad j = 1, 2, \\dots , s, \\\\ \\alpha_ {i} = \\mu_ {i}. - \\mu , \\quad i = 1, 2, \\dots , r, \\\\ \\beta_ {j} = \\mu_ {\\cdot j} - \\mu , \\quad j = 1, 2, \\dots , s. \\\\ \\end{array}",
+          "image_source": "images/page_246_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.29,
+            0.174,
+            0.308
+          ],
+          "content": "易见"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.382,
+            0.316,
+            0.612,
+            0.357
+          ],
+          "content": "\\sum_ {i = 1} ^ {r} \\alpha_ {i} = 0, \\quad \\sum_ {j = 1} ^ {s} \\beta_ {j} = 0.",
+          "image_source": "images/page_246_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.359,
+            0.873,
+            0.403
+          ],
+          "content": "称 $\\mu$ 为总平均，称 $\\alpha_{i}$ 为水平 $A_{i}$ 的效应，称 $\\beta_{j}$ 为水平 $B_{j}$ 的效应.这样可将 $\\mu_{ij}$ 表示成"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.308,
+            0.411,
+            0.869,
+            0.437
+          ],
+          "content": "\\mu_ {i j} = \\mu + \\alpha_ {i} + \\beta_ {j} + (\\mu_ {i j} - \\mu_ {i}. - \\mu_ {. j} + \\mu), \\tag {2.2}",
+          "image_source": "images/page_246_equation_6.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.33,
+            0.437,
+            0.622,
+            0.451
+          ],
+          "content": "i = 1, 2, \\dots , r; \\quad j = 1, 2, \\dots , s.",
+          "image_source": "images/page_246_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.129,
+            0.46,
+            0.87,
+            0.479
+          ],
+          "content": "记  $\\gamma_{ij}=\\mu_{ij}-\\mu_{i\\cdot}-\\mu_{\\cdot j}+\\mu,\\quad i=1,2,\\cdots,r;\\quad j=1,2,\\cdots,s,$  (2.3)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.484,
+            0.174,
+            0.502
+          ],
+          "content": "此时"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.389,
+            0.51,
+            0.869,
+            0.528
+          ],
+          "content": "\\mu_ {i j} = \\mu + \\alpha_ {i} + \\beta_ {j} + \\gamma_ {i j}. \\tag {2.4}",
+          "image_source": "images/page_246_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.533,
+            0.872,
+            0.577
+          ],
+          "content": "$\\gamma_{ij}$  称为水平  $A_{i}$  和水平  $B_{j}$  的交互效应, 这是由  $A_{i}, B_{j}$  搭配起来联合起作用而引起的. 易见"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.366,
+            0.592,
+            0.632,
+            0.679
+          ],
+          "content": "\\begin{array}{l} \\sum_ {i = 1} ^ {r} \\gamma_ {i j} = 0, \\quad j = 1, 2, \\dots , s, \\\\ \\sum_ {j = 1} ^ {s} \\gamma_ {i j} = 0, \\quad i = 1, 2, \\dots , r. \\\\ \\end{array}",
+          "image_source": "images/page_246_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.687,
+            0.31,
+            0.706
+          ],
+          "content": "这样，(2.1) 可写成"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.278,
+            0.719,
+            0.87,
+            0.836
+          ],
+          "content": "\\left. \\begin{array}{l} X _ {i j k} = \\mu + \\alpha_ {i} + \\beta_ {j} + \\gamma_ {i j} + \\varepsilon_ {i j k}, \\\\ \\varepsilon_ {i j k} \\sim N (0, \\sigma^ {2}), \\text {各} \\varepsilon_ {i j k} \\text {独立}, \\\\ i = 1, 2, \\dots , r; j = 1, 2, \\dots , s; k = 1, 2, \\dots , t, \\\\ \\sum_ {i = 1} ^ {r} \\alpha_ {i} = 0, \\sum_ {j = 1} ^ {s} \\beta_ {j} = 0, \\sum_ {i = 1} ^ {r} \\gamma_ {i j} = 0, \\sum_ {j = 1} ^ {s} \\gamma_ {i j} = 0, \\end{array} \\right\\} \\tag {2.5}",
+          "image_source": "images/page_246_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.844,
+            0.473,
+            0.864
+          ],
+          "content": "其中  $\\mu,\\alpha_{i},\\beta_{j},\\gamma_{ij}$  及  $\\sigma^{2}$  都是未知参数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.869,
+            0.873,
+            0.914
+          ],
+          "content": "(2.5) 式就是我们所要研究的双因素试验方差分析的数学模型. 对于这一模型我们要检验以下三个假设:"
+        }
+      ]
+    },
+    {
+      "page_idx": 247,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.382,
+            0.048,
+            0.623,
+            0.065
+          ],
+          "content": "§ 2 双因素试验的方差分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.791,
+            0.05,
+            0.858,
+            0.064
+          ],
+          "content": "· 233 ·"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.339,
+            0.092,
+            0.871,
+            0.134
+          ],
+          "content": "\\left\\{ \\begin{array}{l l} H _ {0 1}: & \\alpha_ {1} = \\alpha_ {2} = \\dots = \\alpha_ {r} = 0, \\\\ H _ {1 1}: & \\alpha_ {1}, \\alpha_ {2}, \\dots , \\alpha_ {r} \\text {不全为零}, \\end{array} \\right. \\tag {2.6}",
+          "image_source": "images/page_247_equation_2.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.339,
+            0.142,
+            0.871,
+            0.185
+          ],
+          "content": "\\left\\{ \\begin{array}{l l} H _ {0 2}: & \\beta_ {1} = \\beta_ {2} = \\dots = \\beta_ {s} = 0, \\\\ H _ {1 2}: & \\beta_ {1}, \\beta_ {2}, \\dots , \\beta_ {s} \\text {不全为零}, \\end{array} \\right. \\tag {2.7}",
+          "image_source": "images/page_247_equation_3.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.339,
+            0.192,
+            0.871,
+            0.234
+          ],
+          "content": "\\left\\{ \\begin{array}{l l} H _ {0 3}: & \\gamma_ {1 1} = \\gamma_ {1 2} = \\dots = \\gamma_ {r s} = 0, \\\\ H _ {1 3}: & \\gamma_ {1 1}, \\gamma_ {1 2}, \\dots , \\gamma_ {r s} \\text {不全为零}. \\end{array} \\right. \\tag {2.8}",
+          "image_source": "images/page_247_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.126,
+            0.241,
+            0.873,
+            0.284
+          ],
+          "content": "与单因素情况类似,对这些问题的检验方法也是建立在平方和的分解上的.先引入以下的记号:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.268,
+            0.294,
+            0.487,
+            0.333
+          ],
+          "content": "\\overline {{X}} = \\frac {1}{r s t} \\sum_ {i = 1} ^ {r} \\sum_ {j = 1} ^ {s} \\sum_ {k = 1} ^ {t} X _ {i j k},",
+          "image_source": "images/page_247_equation_6.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.268,
+            0.343,
+            0.731,
+            0.381
+          ],
+          "content": "\\overline {{X}} _ {i j.} = \\frac {1}{t} \\sum_ {k = 1} ^ {t} X _ {i j k}, \\quad i = 1, 2, \\dots , r; j = 1, 2, \\dots , s,",
+          "image_source": "images/page_247_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.268,
+            0.392,
+            0.628,
+            0.432
+          ],
+          "content": "\\overline {{X}} _ {i..} = \\frac {1}{s t} \\sum_ {j = 1} ^ {s} \\sum_ {k = 1} ^ {t} X _ {i j k}, \\quad i = 1, 2, \\dots , r,",
+          "image_source": "images/page_247_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.268,
+            0.442,
+            0.627,
+            0.48
+          ],
+          "content": "\\overline {{X}} _ {. j.} = \\frac {1}{r t} \\sum_ {i = 1} ^ {r} \\sum_ {k = 1} ^ {t} X _ {i j k}, \\quad j = 1, 2, \\dots , s.",
+          "image_source": "images/page_247_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.126,
+            0.486,
+            0.459,
+            0.504
+          ],
+          "content": "再引入总偏差平方和(称为总变差)"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.36,
+            0.519,
+            0.637,
+            0.561
+          ],
+          "content": "S _ {T} = \\sum_ {i = 1} ^ {r} \\sum_ {j = 1} ^ {s} \\sum_ {k = 1} ^ {t} (X _ {i j k} - \\overline {{X}}) ^ {2}.",
+          "image_source": "images/page_247_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.126,
+            0.571,
+            0.301,
+            0.589
+          ],
+          "content": "我们可将 $S_{T}$ 写成"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.208,
+            0.599,
+            0.793,
+            0.814
+          ],
+          "content": "\\begin{array}{l} S _ {T} = \\sum_ {i = 1} ^ {r} \\sum_ {j = 1} ^ {s} \\sum_ {k = 1} ^ {t} (X _ {i j k} - \\overline {{X}}) ^ {2} \\\\ = \\sum_ {i = 1} ^ {r} \\sum_ {j = 1} ^ {s} \\sum_ {k = 1} ^ {t} \\left[ (X _ {i j k} - \\overline {{X}} _ {i j.}) + (\\overline {{X}} _ {i..} - \\overline {{X}}) + (\\overline {{X}} _ {. j.} - \\overline {{X}}) \\right. \\\\ \\left. + (\\overline {{X}} _ {i j}. - \\overline {{X}} _ {i..} - \\overline {{X}} _ {. j.} + \\overline {{X}}) \\right] ^ {2} \\\\ = \\sum_ {i = 1} ^ {r} \\sum_ {j = 1} ^ {s} \\sum_ {k = 1} ^ {t} (X _ {i j k} - \\overline {{X}} _ {i j.}) ^ {2} + s t \\sum_ {i = 1} ^ {r} (\\overline {{X}} _ {i..} - \\overline {{X}}) ^ {2} \\\\ + r t \\sum_ {j = 1} ^ {s} (\\overline {{X}} _ {. j.} - \\overline {{X}}) ^ {2} + t \\sum_ {i = 1} ^ {r} \\sum_ {j = 1} ^ {s} (\\overline {{X}} _ {i j.} - \\overline {{X}} _ {i..} - \\overline {{X}} _ {. j.} + \\overline {{X}}) ^ {2}, \\\\ \\end{array}",
+          "image_source": "images/page_247_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.817,
+            0.33,
+            0.835
+          ],
+          "content": "即得平方和的分解式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.379,
+            0.843,
+            0.872,
+            0.86
+          ],
+          "content": "S _ {T} = S _ {E} + S _ {A} + S _ {B} + S _ {A \\times B}, \\tag {2.9}",
+          "image_source": "images/page_247_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.129,
+            0.87,
+            0.873,
+            0.912
+          ],
+          "content": "其中 $S_{E} = \\sum_{i=1}^{r}\\sum_{j=1}^{s}\\sum_{k=1}^{t}(X_{ijk}-\\overline{X}_{ij.})^{2},$ (2.10)"
+        }
+      ]
+    },
+    {
+      "page_idx": 248,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.051,
+            0.206,
+            0.065
+          ],
+          "content": "· 234 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.374,
+            0.049,
+            0.623,
+            0.066
+          ],
+          "content": "第九章 方差分析及回归分析"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.385,
+            0.094,
+            0.868,
+            0.132
+          ],
+          "content": "S _ {A} = s t \\sum_ {i = 1} ^ {r} (\\overline {{X}} _ {i..} - \\overline {{X}}) ^ {2}, \\tag {2.11}",
+          "image_source": "images/page_248_equation_2.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.14,
+            0.868,
+            0.179
+          ],
+          "content": "S _ {B} = r t \\sum_ {j = 1} ^ {s} (\\overline {{X}} _ {. j.} - \\overline {{X}}) ^ {2}, \\tag {2.12}",
+          "image_source": "images/page_248_equation_3.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.185,
+            0.868,
+            0.224
+          ],
+          "content": "S _ {A \\times B} = t \\sum_ {i = 1} ^ {r} \\sum_ {j = 1} ^ {s} (\\overline {{X}} _ {i j.} - \\overline {{X}} _ {i..} - \\overline {{X}} _ {. j.} + \\overline {{X}}) ^ {2}. \\tag {2.13}",
+          "image_source": "images/page_248_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.226,
+            0.871,
+            0.269
+          ],
+          "content": "$S_{E}$ 称为误差平方和， $S_{A}, S_{B}$ 分别称为因素 $A$ 、因素 $B$ 的效应平方和， $S_{A \\times B}$ 称为 $A, B$ 交互效应平方和."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.275,
+            0.871,
+            0.318
+          ],
+          "content": "可以证明 $S_{T}, S_{E}, S_{A}, S_{B}, S_{A \\times B}$ 的自由度依次为 $rst - 1, rs(t - 1), r - 1, s - 1, (r - 1)(s - 1)$，且有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.407,
+            0.332,
+            0.868,
+            0.364
+          ],
+          "content": "E \\left(\\frac {S _ {E}}{r s (t - 1)}\\right) = \\sigma^ {2}, \\tag {2.14}",
+          "image_source": "images/page_248_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.376,
+            0.376,
+            0.869,
+            0.431
+          ],
+          "content": "E \\Big (\\frac {S _ {A}}{r - 1} \\Big) = \\sigma^ {2} + \\frac {s t \\sum_ {i = 1} ^ {r} \\alpha_ {i} ^ {2}}{r - 1}, \\tag {2.15}",
+          "image_source": "images/page_248_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.376,
+            0.449,
+            0.869,
+            0.504
+          ],
+          "content": "E \\Big (\\frac {S _ {B}}{s - 1} \\Big) = \\sigma^ {2} + \\frac {r t \\sum_ {j = 1} ^ {s} \\beta_ {j} ^ {2}}{s - 1}, \\tag {2.16}",
+          "image_source": "images/page_248_equation_9.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.297,
+            0.522,
+            0.869,
+            0.578
+          ],
+          "content": "E \\Big (\\frac {S _ {A \\times B}}{(r - 1) (s - 1)} \\Big) = \\sigma^ {2} + \\frac {t \\sum_ {i = 1} ^ {r} \\sum_ {j = 1} ^ {s} \\gamma_ {i j} ^ {2}}{(r - 1) (s - 1)}. \\tag {2.17}",
+          "image_source": "images/page_248_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.585,
+            0.591,
+            0.604
+          ],
+          "content": "当 $H_{01}:\\alpha_1 = \\alpha_2 = \\dots = \\alpha_r = 0$ 为真时，可以证明"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.286,
+            0.611,
+            0.869,
+            0.646
+          ],
+          "content": "F _ {A} = \\frac {S _ {A} / (r - 1)}{S _ {E} / [ r s (t - 1) ]} \\sim F (r - 1, r s (t - 1)). \\tag {2.18}",
+          "image_source": "images/page_248_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.652,
+            0.531,
+            0.671
+          ],
+          "content": "取显著性水平为 $\\alpha$ ，得假设 $H_{01}$ 的拒绝域为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.281,
+            0.678,
+            0.869,
+            0.713
+          ],
+          "content": "F _ {A} = \\frac {S _ {A} / (r - 1)}{S _ {E} / [ r s (t - 1) ]} \\geqslant F _ {a} (r - 1, r s (t - 1)). \\tag {2.19}",
+          "image_source": "images/page_248_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.719,
+            0.634,
+            0.738
+          ],
+          "content": "类似地，在显著性水平  $\\alpha$  下，假设  $H_{02}$  的拒绝域为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.282,
+            0.745,
+            0.869,
+            0.781
+          ],
+          "content": "F _ {B} = \\frac {S _ {B} / (s - 1)}{S _ {E} / [ r s (t - 1) ]} \\geqslant F _ {\\alpha} (s - 1, r s (t - 1)). \\tag {2.20}",
+          "image_source": "images/page_248_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.787,
+            0.514,
+            0.806
+          ],
+          "content": "在显著性水平  $\\alpha$  下, 假设  $H_{03}$  的拒绝域为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.306,
+            0.812,
+            0.863,
+            0.874
+          ],
+          "content": "\\begin{array}{l} F _ {A \\times B} = \\frac {S _ {A \\times B} / [ (r - 1) (s - 1) ]}{S _ {E} / [ r s (t - 1) ]} \\\\ \\geqslant F _ {\\alpha} ((r - 1) (s - 1), r s (t - 1)). \\tag {2.21} \\\\ \\end{array}",
+          "image_source": "images/page_248_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.879,
+            0.588,
+            0.898
+          ],
+          "content": "上述结果可汇总成下列的方差分析表(表9-9):"
+        }
+      ]
+    },
+    {
+      "page_idx": 249,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.383,
+            0.047,
+            0.623,
+            0.064
+          ],
+          "content": "§ 2 双因素试验的方差分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.793,
+            0.049,
+            0.859,
+            0.063
+          ],
+          "content": "· 235 ·"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.127,
+            0.111,
+            0.879,
+            0.355
+          ],
+          "content": "| 方差来源 | 平方和 | 自由度 | 均方 | F比 |\n| --- | --- | --- | --- | --- |\n| 因素A | $S_A$ | r-1 | $\\overline{S}_A = \\frac{S_A}{r-1}$ | $F_A = \\frac{\\overline{S}_A}{\\overline{S}_E}$ |\n| 因素B | $S_B$ | s-1 | $\\overline{S}_B = \\frac{S_B}{s-1}$ | $F_B = \\frac{\\overline{S}_B}{\\overline{S}_E}$ |\n| 交互作用 | $S_{A \\times B}$ | (r-1)(s-1) | $\\overline{S}_{A \\times B} = \\frac{S_{A \\times B}}{(r-1)(s-1)}$ | $F_{A \\times B} = \\frac{\\overline{S}_{A \\times B}}{\\overline{S}_E}$ |\n| 误差 | $S_E$ | rs(t-1) | $\\overline{S}_E = \\frac{S_E}{rs(t-1)}$ |  |\n| 总和 | $S_T$ | rst-1 |  |  |",
+          "captions": [
+            {
+              "bbox": [
+                0.351,
+                0.088,
+                0.653,
+                0.105
+              ],
+              "content": "表 9-9 双因素试验的方差分析表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_249_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.129,
+            0.363,
+            0.486,
+            0.405
+          ],
+          "content": "记 $T\\ldots = \\sum_{i=1}^{r}\\sum_{j=1}^{s}\\sum_{k=1}^{t}X_{ijk},$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.412,
+            0.713,
+            0.45
+          ],
+          "content": "T _ {i j.} = \\sum_ {k = 1} ^ {t} X _ {i j k}, \\quad i = 1, 2, \\dots , r; j = 1, 2, \\dots , s,",
+          "image_source": "images/page_249_equation_5.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.458,
+            0.61,
+            0.498
+          ],
+          "content": "T _ {i..} = \\sum_ {j = 1} ^ {s} \\sum_ {k = 1} ^ {t} X _ {i j k}, \\quad i = 1, 2, \\dots , r,",
+          "image_source": "images/page_249_equation_6.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.505,
+            0.609,
+            0.543
+          ],
+          "content": "T _ {. j.} = \\sum_ {i = 1} ^ {r} \\sum_ {k = 1} ^ {t} X _ {i j k}, \\quad j = 1, 2, \\dots , s.",
+          "image_source": "images/page_249_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.547,
+            0.67,
+            0.566
+          ],
+          "content": "我们可以按照下述(2.22)式来计算上表中的各个平方和."
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.297,
+            0.572,
+            0.876,
+            0.784
+          ],
+          "content": "\\left. \\begin{array}{l} S _ {T} = \\sum_ {i = 1} ^ {r} \\sum_ {j = 1} ^ {s} \\sum_ {k = 1} ^ {t} X _ {i j k} ^ {2} - \\frac {T _ {\\cdots} ^ {2}}{r s t}, \\\\ S _ {A} = \\frac {1}{s t} \\sum_ {i = 1} ^ {r} T _ {i..} ^ {2} - \\frac {T _ {\\cdots} ^ {2}}{r s t}, \\\\ S _ {B} = \\frac {1}{r t} \\sum_ {j = 1} ^ {s} T _ {. j.} ^ {2}. - \\frac {T _ {\\cdots} ^ {2}}{r s t}, \\\\ S _ {A \\times B} = \\left(\\frac {1}{t} \\sum_ {i = 1} ^ {r} \\sum_ {j = 1} ^ {s} T _ {i j.} ^ {2}. - \\frac {T _ {\\cdots} ^ {2}}{r s t}\\right) - S _ {A} - S _ {B}, \\\\ S _ {E} = S _ {T} - S _ {A} - S _ {B} - S _ {A \\times B}. \\end{array} \\right\\} \\tag {2.22}",
+          "image_source": "images/page_249_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.79,
+            0.879,
+            0.86
+          ],
+          "content": "例 1 在上一节例 3 中, 假设符合双因素方差分析模型所需的条件. 试在显著性水平  $\\alpha = 0.05$  下, 检验不同燃料(因素 A)、不同推进器(因素 B)下的射程是否有显著差异? 交互作用是否显著?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.866,
+            0.879,
+            0.912
+          ],
+          "content": "解 需检验假设 $H_{01}, H_{02}, H_{03}$ （见(2.6)—(2.8)). $T\\ldots, T_{ij}$, $T_{i\\ldots}, T_{j\\cdot}$ 的计算如表9-10."
+        }
+      ]
+    },
+    {
+      "page_idx": 250,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.141,
+            0.05,
+            0.207,
+            0.063
+          ],
+          "content": "· 236 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.376,
+            0.048,
+            0.625,
+            0.065
+          ],
+          "content": "第九章 方差分析及回归分析"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.124,
+            0.11,
+            0.878,
+            0.387
+          ],
+          "content": "| A\\\\B | $B_1$ | $B_2$ | $B_3$ | $T_{i..}$ |\n| --- | --- | --- | --- | --- |\n| $A_1$ | 58.2(110.8)52.6 | 56.2(97.4)41.2 | 65.3(126.1)60.8 | 334.3 |\n| $A_2$ | 49.1(91.9)42.8 | 54.1(104.6)50.5 | 51.6(100)48.4 | 296.5 |\n| $A_3$ | 60.1(118.4)58.3 | 70.9(144.1)73.2 | 39.2(79.9)40.7 | 342.4 |\n| $A_4$ | 75.8(147.3)71.5 | 58.2(109.2)51.0 | 48.7(90.1)41.4 | 346.6 |\n| T.j. | 468.4 | 455.3 | 396.1 | 1 319.8 |",
+          "captions": [
+            {
+              "bbox": [
+                0.46,
+                0.089,
+                0.542,
+                0.104
+              ],
+              "content": "表9-10"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_250_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.173,
+            0.408,
+            0.686,
+            0.427
+          ],
+          "content": "表中括弧内的数是 $T_{ij}$ ..现在 $r = 4,s = 3,t = 2$ ，故有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.149,
+            0.433,
+            0.769,
+            0.469
+          ],
+          "content": "S _ {T} = (5 8. 2 ^ {2} + 5 2. 6 ^ {2} + \\dots + 4 1. 4 ^ {2}) - \\frac {1 3 1 9 . 8 ^ {2}}{2 4} = 2 6 3 8. 2 9 8 3 3,",
+          "image_source": "images/page_250_equation_5.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.149,
+            0.476,
+            0.847,
+            0.511
+          ],
+          "content": "S _ {A} = \\frac {1}{6} (3 3 4. 3 ^ {2} + 2 9 6. 5 ^ {2} + 3 4 2. 4 ^ {2} + 3 4 6. 6 ^ {2}) - \\frac {1 3 1 9 . 8 ^ {2}}{2 4} = 2 6 1. 6 7 5 0 0,",
+          "image_source": "images/page_250_equation_6.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.155,
+            0.519,
+            0.763,
+            0.554
+          ],
+          "content": "S _ {B} = \\frac {1}{8} (4 6 8. 4 ^ {2} + 4 5 5. 3 ^ {2} + 3 9 6. 1 ^ {2}) - \\frac {1 3 1 9 . 8 ^ {2}}{2 4} = 3 7 0. 9 8 0 8 3,",
+          "image_source": "images/page_250_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.14,
+            0.562,
+            0.856,
+            0.597
+          ],
+          "content": "S _ {A \\times B} = \\frac {1}{2} (1 1 0. 8 ^ {2} + 9 1. 9 ^ {2} + \\dots + 9 0. 1 ^ {2}) - \\frac {1 3 1 9 . 8 ^ {2}}{2 4} - S _ {A} - S _ {B} = 1 7 6 8. 6 9 2 5 0,",
+          "image_source": "images/page_250_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.155,
+            0.604,
+            0.556,
+            0.623
+          ],
+          "content": "S _ {E} = S _ {T} - S _ {A} - S _ {B} - S _ {A \\times B} = 2 3 6. 9 5 0 0 0.",
+          "image_source": "images/page_250_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.629,
+            0.429,
+            0.648
+          ],
+          "content": "得方差分析表如表 9-11 所示:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.124,
+            0.683,
+            0.876,
+            0.913
+          ],
+          "content": "| 方差来源 | 平方和 | 自由度 | 均方 | F比 |\n| --- | --- | --- | --- | --- |\n| 因素A(燃料) | 261.675 00 | 3 | 87.225 0 | $F_A = 4.42$ |\n| 因素B(推进器) | 370.980 83 | 2 | 185.490 4 | $F_B = 9.39$ |\n| 交互作用A×B | 1 768.692 50 | 6 | 294.782 1 | $F_{A \\times B} = 14.9$ |\n| 误差 | 236.950 00 | 12 | 19.745 8 |  |\n| 总和 | 2 638.298 33 | 23 |  |  |",
+          "captions": [
+            {
+              "bbox": [
+                0.371,
+                0.662,
+                0.625,
+                0.678
+              ],
+              "content": "表 9-11 例 1 的方差分析表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_250_table_12.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 251,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.378,
+            0.047,
+            0.619,
+            0.065
+          ],
+          "content": "§ 2 双因素试验的方差分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.789,
+            0.049,
+            0.854,
+            0.063
+          ],
+          "content": "· 237 ·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.087,
+            0.875,
+            0.254
+          ],
+          "content": "由于 $F_{0.05}(3,12) = 3.49 < F_A, F_{0.05}(2,12) = 3.89 < F_B$，所以在显著性水平 $\\alpha = 0.05$ 下，我们拒绝假设 $H_{01}, H_{02}$，即认为不同燃料或不同推进器下的射程有显著差异。也就是说，燃料和推进器这两个因素对射程的影响都是显著的。又，$F_{0.05}(6,12) = 3.00 < F_{A \\times B}$，故拒绝 $H_{03}$。值得注意的是，$F_{0.001}(6,12) = 8.38$ 也远小于 $F_{A \\times B} = 14.9$。故交互作用效应是高度显著的。从表9-10可以看出，$A_4$ 与 $B_1$ 或 $A_3$ 与 $B_2$ 的搭配都使火箭射程较之其他水平的搭配要远得多。在实际中我们就选最优的搭配方式来实施。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.258,
+            0.874,
+            0.375
+          ],
+          "content": "例 2 在某种金属材料的生产过程中, 对热处理温度(因素 B)与时间(因素 A)各取两个水平, 产品强度的测定结果(相对值)如表 9-12 所示. 在同一条件下每个试验重复两次. 设各水平搭配下强度的总体服从正态分布且方差相同. 各样本独立. 问热处理温度、时间以及这两者的交互作用对产品强度是否有显著的影响(取  $\\alpha = 0.05$ )?"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.124,
+            0.4,
+            0.875,
+            0.636
+          ],
+          "content": "| A\\\\B | $B_1$ | $B_2$ | $T_{i..}$ |\n| --- | --- | --- | --- |\n| $A_1$ | 38.0(76.6)38.6 | 47.0(91.8)44.8 | 168.4 |\n| $A_2$ | 45.0(88.8)43.8 | 42.4(83.2)40.8 | 172 |\n| $T_{.j.}$ | 165.4 | 175 | 340.4 |",
+          "captions": [
+            {
+              "bbox": [
+                0.458,
+                0.38,
+                0.54,
+                0.396
+              ],
+              "content": "表9-12"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_251_table_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.173,
+            0.656,
+            0.671,
+            0.676
+          ],
+          "content": "解 按题意需检验假设(2.6)—(2.8)，作计算如下:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.228,
+            0.682,
+            0.757,
+            0.714
+          ],
+          "content": "S _ {T} = (3 8. 0 ^ {2} + 3 8. 6 ^ {2} + \\dots + 4 0. 8 ^ {2}) - \\frac {3 4 0 . 4 ^ {2}}{8} = 7 1. 8 2,",
+          "image_source": "images/page_251_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.228,
+            0.724,
+            0.64,
+            0.756
+          ],
+          "content": "S _ {A} = \\frac {1}{4} (1 6 8. 4 ^ {2} + 1 7 2 ^ {2}) - \\frac {3 4 0 . 4 ^ {2}}{8} = 1. 6 2,",
+          "image_source": "images/page_251_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.228,
+            0.767,
+            0.65,
+            0.799
+          ],
+          "content": "S _ {B} = \\frac {1}{4} (1 6 5. 4 ^ {2} + 1 7 5 ^ {2}) - \\frac {3 4 0 . 4 ^ {2}}{8} = 1 1. 5 2,",
+          "image_source": "images/page_251_equation_9.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.228,
+            0.809,
+            0.77,
+            0.826
+          ],
+          "content": "S _ {A \\times B} = 1 4 5 5 1. 2 4 - 1 4 4 8 4. 0 2 - 1. 6 2 - 1 1. 5 2 = 5 4. 0 8,",
+          "image_source": "images/page_251_equation_10.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.228,
+            0.835,
+            0.648,
+            0.875
+          ],
+          "content": "\\begin{array}{l} S _ {E} = S _ {T} - S _ {A} - S _ {B} - S _ {A \\times B} \\\\ = 7 1. 8 2 - 1. 6 2 - 1 1. 5 2 - 5 4. 0 8 = 4. 6. \\\\ \\end{array}",
+          "image_source": "images/page_251_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.883,
+            0.432,
+            0.903
+          ],
+          "content": "得方差分析表如表 9-13 所示:"
+        }
+      ]
+    },
+    {
+      "page_idx": 252,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.148,
+            0.048,
+            0.216,
+            0.062
+          ],
+          "content": "· 238 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.383,
+            0.047,
+            0.631,
+            0.064
+          ],
+          "content": "第九章 方差分析及回归分析"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.133,
+            0.11,
+            0.88,
+            0.282
+          ],
+          "content": "| 方差来源 | 平方和 | 自由度 | 均方 | F比 |\n| --- | --- | --- | --- | --- |\n| 因素A | 1.62 | 1 | 1.62 | $F_A = 1.4$ |\n| 因素B | 11.52 | 1 | 11.52 | $F_B = 10.0$ |\n| 交互作用A×B | 54.08 | 1 | 54.08 | $F_{A \\times B} = 47.0$ |\n| 误差 | 4.6 | 4 | 1.15 |  |\n| 总和 | 71.82 | 7 |  |  |",
+          "captions": [
+            {
+              "bbox": [
+                0.372,
+                0.088,
+                0.643,
+                0.105
+              ],
+              "content": "表 9-13 例 2 的方差分析表①"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_252_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.3,
+            0.179,
+            0.318
+          ],
+          "content": "由于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.41,
+            0.326,
+            0.598,
+            0.344
+          ],
+          "content": "F _ {0. 0 5} (1, 4) = 7. 7 1,",
+          "image_source": "images/page_252_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.349,
+            0.879,
+            0.392
+          ],
+          "content": "所以认为时间对产品强度的影响不显著,而热处理温度的影响显著,且交互作用的影响显著."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.173,
+            0.408,
+            0.561,
+            0.432
+          ],
+          "level": 2,
+          "content": "(二) 双因素无重复试验的方差分析"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.447,
+            0.879,
+            0.615
+          ],
+          "content": "在以上的讨论中,我们考虑了双因素试验中两个因素的交互作用.为检验交互作用的效应是否显著,对于两个因素的每一组合 $(A_{i},B_{j})$ 至少要做2次试验.这是因为在模型(2.5)中,若 $k=1,\\gamma_{ij}+\\varepsilon_{ijk}$ 总以结合在一起的形式出现,这样就不能将交互作用与误差分离开来.如果在处理实际问题时,我们已经知道不存在交互作用,或已知交互作用对试验的指标影响很小,则可以不考虑交互作用.此时,即使k=1,也能对因素A、因素B的效应进行分析.现设对于两个因素的每一组合 $(A_{i},B_{j})$ 只做一次试验,所得结果如表9-14所示:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.129,
+            0.648,
+            0.875,
+            0.822
+          ],
+          "content": "| 因素A\\\\因素B | $B_1$ | $B_2$ | ... | $B_s$ |\n| --- | --- | --- | --- | --- |\n| $A_1$ | $X_{11}$ | $X_{12}$ | ... | $X_{1s}$ |\n| $A_2$ | $X_{21}$ | $X_{22}$ | ... | $X_{2s}$ |\n| $\\vdots$ | $\\vdots$ | $\\vdots$ |  | $\\vdots$ |\n| $A_r$ | $X_{r1}$ | $X_{r2}$ | ... | $X_{rs}$ |",
+          "captions": [
+            {
+              "bbox": [
+                0.463,
+                0.628,
+                0.545,
+                0.645
+              ],
+              "content": "表9-14"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_252_table_10.jpg"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.125,
+            0.855,
+            0.875,
+            0.909
+          ],
+          "content": "① 在实际应用中，总是先计算 $F_{A \\times B}$，对交互作用进行检验。如果交互作用不显著，则将 $A \\times B$ 一栏的平方和与自由度分别加到误差这一栏中去，重新计算 $F_A, F_B$，用新的 $F_A, F_B$ 对因素 $A$，因素 $B$ 进行检验。"
+        }
+      ]
+    },
+    {
+      "page_idx": 253,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.382,
+            0.047,
+            0.623,
+            0.064
+          ],
+          "content": "§ 2 双因素试验的方差分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.791,
+            0.047,
+            0.858,
+            0.062
+          ],
+          "content": "· 239 ·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.089,
+            0.177,
+            0.107
+          ],
+          "content": "并设"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.416,
+            0.112,
+            0.584,
+            0.133
+          ],
+          "content": "X _ {i j} \\sim N (\\mu_ {i j}, \\sigma^ {2}),",
+          "image_source": "images/page_253_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.289,
+            0.137,
+            0.712,
+            0.157
+          ],
+          "content": "各  $X_{ij}$  独立， $i=1,2,\\cdots,r;j=1,2,\\cdots,s,$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.17,
+            0.448,
+            0.191
+          ],
+          "content": "其中 $\\mu_{ij},\\sigma^2$ 均为未知参数.或写成"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.351,
+            0.2,
+            0.876,
+            0.297
+          ],
+          "content": "\\left. \\begin{array}{l} {{X _ {i j} = \\mu_ {i j} + \\varepsilon_ {i j},}} \\\\ {{\\varepsilon_ {i j} \\sim N (0, \\sigma^ {2}),}} \\\\ {{\\text {各} \\varepsilon_ {i j} \\text {独立},}} \\\\ {{i = 1, 2, \\dots , r; j = 1, 2, \\dots , s.}} \\end{array} \\right\\} \\tag {2.23}",
+          "image_source": "images/page_253_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.308,
+            0.876,
+            0.354
+          ],
+          "content": "沿用(一)中的记号, 注意到现在假设不存在交互作用, 此时  $\\gamma_{ij}=0, i=1, 2,\\cdots,r; j=1,2,\\cdots,s.$  故由(2.4)式知  $\\mu_{ij}=\\mu+\\alpha_{i}+\\beta_{j}.$  于是(2.23)可写成"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.354,
+            0.363,
+            0.876,
+            0.484
+          ],
+          "content": "\\left. \\begin{array}{l} {X _ {i j} = \\mu + \\alpha_ {i} + \\beta_ {j} + \\varepsilon_ {i j},} \\\\ {\\varepsilon_ {i j} \\sim N (0, \\sigma^ {2}), \\text {各} \\varepsilon_ {i j} \\text {独立},} \\\\ {i = 1, 2, \\dots , r; j = 1, 2, \\dots , s,} \\\\ {\\sum_ {i = 1} ^ {r} \\alpha_ {i} = 0, \\sum_ {j = 1} ^ {s} \\beta_ {j} = 0.} \\end{array} \\right\\} \\tag {2.24}",
+          "image_source": "images/page_253_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.129,
+            0.492,
+            0.876,
+            0.536
+          ],
+          "content": "这就是现在要研究的方差分析的模型. 对这个模型我们所要检验的假设有以下两个:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.347,
+            0.542,
+            0.876,
+            0.585
+          ],
+          "content": "\\left\\{ \\begin{array}{l l} H _ {0 1}: & \\alpha_ {1} = \\alpha_ {2} = \\dots = \\alpha_ {r} = 0, \\\\ H _ {1 1}: & \\alpha_ {1}, \\alpha_ {2}, \\dots , \\alpha_ {r} \\text {不全为零}. \\end{array} \\right. \\tag {2.25}",
+          "image_source": "images/page_253_equation_10.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.347,
+            0.591,
+            0.876,
+            0.637
+          ],
+          "content": "\\left\\{ \\begin{array}{l l} H _ {0 2}: & \\beta_ {1} = \\beta_ {2} = \\dots = \\beta_ {s} = 0, \\\\ H _ {1 2}: & \\beta_ {1}, \\beta_ {2}, \\dots , \\beta_ {s} \\text {不全为零}. \\end{array} \\right. \\tag {2.26}",
+          "image_source": "images/page_253_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.656,
+            0.68,
+            0.676
+          ],
+          "content": "与在(一)中同样的讨论可得方差分析表如表9-15所示:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.132,
+            0.709,
+            0.88,
+            0.911
+          ],
+          "content": "| 方差来源 | 平方和 | 自由度 | 均方 | F比 |\n| --- | --- | --- | --- | --- |\n| 因素A | $S_A$ | r-1 | $\\overline{S}_A = \\frac{S_A}{r-1}$ | $F_A = \\overline{S}_A / \\overline{S}_E$ |\n| 因素B | $S_B$ | s-1 | $\\overline{S}_B = \\frac{S_B}{s-1}$ | $F_B = \\overline{S}_B / \\overline{S}_E$ |\n| 误差 | $S_E$ | (r-1)(s-1) | $\\overline{S}_E = \\frac{S_E}{(r-1)(s-1)}$ |  |\n| 总和 | $S_T$ | rs-1 |  |  |",
+          "captions": [
+            {
+              "bbox": [
+                0.464,
+                0.689,
+                0.546,
+                0.705
+              ],
+              "content": "表9-15"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_253_table_14.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 254,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.138,
+            0.047,
+            0.204,
+            0.06
+          ],
+          "content": "· 240 ·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.372,
+            0.045,
+            0.623,
+            0.062
+          ],
+          "content": "第九章 方差分析及回归分析"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.086,
+            0.757,
+            0.105
+          ],
+          "content": "取显著性水平为  $\\alpha$ ，得假设  $H_{01}:\\alpha_{1}=\\alpha_{2}=\\cdots=\\alpha_{r}=0$  的拒绝域为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.307,
+            0.117,
+            0.68,
+            0.158
+          ],
+          "content": "F _ {A} = \\frac {\\overline {{S}} _ {A}}{\\overline {{S}} _ {E}} \\geqslant F _ {\\alpha} (r - 1, (r - 1) (s - 1)).",
+          "image_source": "images/page_254_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.17,
+            0.554,
+            0.191
+          ],
+          "content": "假设  $H_{02}:\\beta_{1}=\\beta_{2}=\\cdots=\\beta_{s}=0$  的拒绝域为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.308,
+            0.196,
+            0.679,
+            0.238
+          ],
+          "content": "F _ {B} = \\frac {\\overline {{S}} _ {B}}{\\overline {{S}} _ {E}} \\geqslant F _ {\\alpha} (s - 1, (r - 1) (s - 1)).",
+          "image_source": "images/page_254_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.169,
+            0.249,
+            0.585,
+            0.268
+          ],
+          "content": "表 9-15 中的平方和可按下述式子来计算:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.374,
+            0.277,
+            0.87,
+            0.445
+          ],
+          "content": "\\left. \\begin{array}{l} S _ {T} = \\sum_ {i = 1} ^ {r} \\sum_ {j = 1} ^ {s} X _ {i j} ^ {2} - \\frac {T _ {\\cdot \\cdot} ^ {2}}{r s}, \\\\ S _ {A} = \\frac {1}{s} \\sum_ {i = 1} ^ {r} T _ {i \\cdot} ^ {2} - \\frac {T _ {\\cdot \\cdot} ^ {2}}{r s}, \\\\ S _ {B} = \\frac {1}{r} \\sum_ {j = 1} ^ {s} T _ {\\cdot j} ^ {2} - \\frac {T _ {\\cdot \\cdot} ^ {2}}{r s}, \\\\ S _ {E} = S _ {T} - S _ {A} - S _ {B}, \\end{array} \\right\\} \\tag {2.27}",
+          "image_source": "images/page_254_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.459,
+            0.741,
+            0.501
+          ],
+          "content": "其中 $T_{..} = \\sum_{i=1}^{r} \\sum_{j=1}^{s} X_{ij}, \\quad T_{i..} = \\sum_{j=1}^{s} X_{ij}, \\quad i = 1,2,\\cdots,r,$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.345,
+            0.505,
+            0.641,
+            0.545
+          ],
+          "content": "T _ {. j} = \\sum_ {i = 1} ^ {r} X _ {i j}, \\quad j = 1, 2, \\dots , s.",
+          "image_source": "images/page_254_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.548,
+            0.87,
+            0.592
+          ],
+          "content": "例3 下面给出了在某5个不同地点、不同时间空气中的颗粒状物（以 $\\mathrm{mg / m^3}$ 计）的含量的数据:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.12,
+            0.606,
+            0.871,
+            0.821
+          ],
+          "content": "<table><tr><td rowspan=\"2\">因素A(时间)</td><td colspan=\"5\">因素B(地点)</td><td rowspan=\"2\"> $T_{i.}$ </td></tr><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>1995年10月</td><td>76</td><td>67</td><td>81</td><td>56</td><td>51</td><td>331</td></tr><tr><td>1996年1月</td><td>82</td><td>69</td><td>96</td><td>59</td><td>70</td><td>376</td></tr><tr><td>1996年5月</td><td>68</td><td>59</td><td>67</td><td>54</td><td>42</td><td>290</td></tr><tr><td>1996年8月</td><td>63</td><td>56</td><td>64</td><td>58</td><td>37</td><td>278</td></tr><tr><td> $T_{.j}$ </td><td>289</td><td>251</td><td>308</td><td>227</td><td>200</td><td>1 275</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_254_table_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.841,
+            0.87,
+            0.91
+          ],
+          "content": "设本题符合模型(2.24)中的条件.试在显著性水平  $\\alpha = 0.05$  下检验:在不同时间下颗粒状物含量的均值有无显著差异,在不同地点下颗粒状物含量的均值有无显著差异."
+        }
+      ]
+    },
+    {
+      "page_idx": 255,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.422,
+            0.045,
+            0.587,
+            0.062
+          ],
+          "content": "§ 3 一元线性回归"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.793,
+            0.047,
+            0.86,
+            0.06
+          ],
+          "content": "· 241 ·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.129,
+            0.086,
+            0.878,
+            0.13
+          ],
+          "content": "解 按题意需检验假设(2.25)、(2.26). $T_{i}$, $T_{j}$ 的值已算出载于上表. 现在 $r = 4, s = 5$. 由(2.27)得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.216,
+            0.136,
+            0.788,
+            0.284
+          ],
+          "content": "\\begin{array}{l} S _ {T} = 7 6 ^ {2} + 6 7 ^ {2} + \\dots + 3 7 ^ {2} - \\frac {1 2 7 5 ^ {2}}{2 0} = 3 5 7 1. 7 5, \\\\ S _ {A} = \\frac {1}{5} (3 3 1 ^ {2} + 3 7 6 ^ {2} + 2 9 0 ^ {2} + 2 7 8 ^ {2}) - \\frac {1 2 7 5 ^ {2}}{2 0} = 1 1 8 2. 9 5, \\\\ S _ {B} = \\frac {1}{4} (2 8 9 ^ {2} + 2 5 1 ^ {2} + \\dots + 2 0 0 ^ {2}) - \\frac {1 2 7 5 ^ {2}}{2 0} = 1 9 4 7. 5 0, \\\\ S _ {E} = 3 5 7 1. 7 5 - (1 1 8 2. 9 5 + 1 9 4 7. 5 0) = 4 4 1. 3 0. \\\\ \\end{array}",
+          "image_source": "images/page_255_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.129,
+            0.289,
+            0.435,
+            0.308
+          ],
+          "content": "得方差分析表如表 9-16 所示:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.13,
+            0.344,
+            0.879,
+            0.49
+          ],
+          "content": "| 方差来源 | 平方和 | 自由度 | 均方 | F比 |\n| --- | --- | --- | --- | --- |\n| 因素A | $S_A = 1\\ 182.95$ | 3 | 394.32 | $F_A = 10.72$ |\n| 因素B | $S_B = 1\\ 947.50$ | 4 | 486.88 | $F_B = 13.24$ |\n| 误差 | $S_E = 441.30$ | 12 | 36.78 |  |\n| 总和 | $S_T = 3\\ 571.75$ | 19 |  |  |",
+          "captions": [
+            {
+              "bbox": [
+                0.375,
+                0.322,
+                0.632,
+                0.34
+              ],
+              "content": "表 9-16 例 3 的方差分析表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_255_table_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.129,
+            0.511,
+            0.879,
+            0.607
+          ],
+          "content": "由于 $F_{0.05}(3,12) = 3.49 < 10.72, F_{0.05}(4,12) = 3.26 < 13.24$，故拒绝 $H_{01}$ 及 $H_{02}$，即认为不同时间下颗粒状物含量的均值有显著差异，也认为不同地点下颗粒状物含量的均值有显著差异。即认为在本题中，时间和地点对颗粒状物的含量的影响均为显著。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.38,
+            0.633,
+            0.634,
+            0.657
+          ],
+          "level": 2,
+          "content": "§ 3 一元线性回归"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.129,
+            0.684,
+            0.88,
+            0.902
+          ],
+          "content": "在客观世界中普遍存在着变量之间的关系. 变量之间的关系一般来说可分为确定性的与非确定性的两种. 确定性关系是指变量之间的关系可以用函数关系来表达的. 另一种非确定性的关系即所谓相关关系. 例如人的身高与体重之间存在着关系, 一般来说, 人高一些, 体重要重一些, 但同样高度的人, 体重往往不相同. 人的血压与年龄之间也存在着关系, 但同年龄的人的血压往往不相同. 气象中的温度与湿度之间的关系也是这样. 这是因为我们涉及的变量 (如体重、血压、湿度) 是随机变量, 上面所说的变量关系是非确定性的. 回归分析是研究相关关系的一种数学工具, 它能帮助我们从一个变量取得的值去估计另一变量所取的值."
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2021-08-31T17:59:04+08:00",
+      "modified_at": "2021-09-01T15:49:01+08:00",
+      "producer_application": "Epson Scan 2",
+      "page_count": 443,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 240,
+          "width_pt": 479.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 241,
+          "width_pt": 480.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 242,
+          "width_pt": 479.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 243,
+          "width_pt": 480.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 244,
+          "width_pt": 478.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 245,
+          "width_pt": 480.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 246,
+          "width_pt": 479.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 247,
+          "width_pt": 480.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 248,
+          "width_pt": 479.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 249,
+          "width_pt": 479.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 250,
+          "width_pt": 478.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 251,
+          "width_pt": 479.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 252,
+          "width_pt": 479.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 253,
+          "width_pt": 480.0,
+          "height_pt": 649.0
+        },
+        {
+          "page_idx": 254,
+          "width_pt": 479.0,
+          "height_pt": 647.0
+        },
+        {
+          "page_idx": 255,
+          "width_pt": 480.0,
+          "height_pt": 648.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}
