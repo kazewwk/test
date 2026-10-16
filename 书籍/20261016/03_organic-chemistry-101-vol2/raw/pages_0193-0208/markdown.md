@@ -1,0 +1,644 @@
+![](images/page_192_image_2.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Nitration reaction equation of benzene
+</details>
+
+## 2. 经芳基自由基历程
+
+芳基重氮盐在单电子还原剂如 $\mathrm{H}_3\mathrm{PO}_2$ 、 $\mathrm{Cu(I)}$ 离子等存在的条件下被单电子还原（单电子转移，SET），释放氮气生成芳基自由基，最终实现取代反应，生成多种芳烃衍生物。主要有重氮基被氢、溴、氯、氰基和亚磺酰基取代生成对应的芳烃、卤代烃、氰化物及磺酰化合物。
+
+（1）重氮基被氢取代 重氮基被氢取代是去除芳环上氨基的一种间接合成方法，常用的还原剂是 $\mathrm{H}_3\mathrm{PO}_2$ ，这一历程通常认为是经过单电子转移生成芳基自由基进行的，次磷酸被氧化为亚磷酸。
+
+链引发:
+
+$$
+\mathrm{Ar} - \stackrel {+} {\mathrm{N}} \equiv \mathrm{N} + \mathrm{H} _ {3} \mathrm{PO} _ {2} \longrightarrow \mathrm{Ar} ^ {*} + \mathrm{N} _ {2} + \underset {\mathrm{HO}} {\overset {\mathrm{H}} {\mathrm{P}}} ^ {+ *} \mathrm{OH}
+$$
+
+链传递:
+
+$$
+\begin{array}{l} \mathrm{Ar} ^ {\cdot} + \mathrm{H} _ {3} \mathrm{PO} _ {2} \longrightarrow \mathrm{Ar} - \mathrm{H} + \mathrm{HO} ^ {\cdot} \stackrel {\mathrm{P}} {\mathrm{OH}} \\ \mathrm{Ar} - \stackrel {+} {\mathrm{N}} \equiv \mathrm{N} + \mathrm{HO} ^ {\cdot} \stackrel {\cdot} {\mathrm{P}} \mathrm{OH} \longrightarrow \mathrm{Ar} ^ {\cdot} + \mathrm{N} _ {2} + \mathrm{HO} ^ {\cdot} \stackrel {\cdot} {\mathrm{P}} \stackrel {\cdot} {\mathrm{O}} _ {+} ^ {\cdot} \mathrm{H} \\ \mathrm{HO} ^ {-} \stackrel {\mathrm{P}} {\underset {+} {\mathrm{O}}} ^ {-} \mathrm{H} + \mathrm{H} _ {2} \mathrm{O} \longrightarrow \mathrm{H} _ {3} \mathrm{PO} _ {3} + \mathrm{H} ^ {+} \\ \end{array}
+$$
+
+利用这一反应，可以以芳胺为原料合成一些通常难以通过其他方法获得的多取代芳烃。例如，从对甲苯胺合成间溴甲苯:
+
+![](images/page_192_image_11.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["Me\nNH2"] -->|Ac2O, Na2CO3| B["Me\nNHAc"]
+  B -->|Br2, FeBr3| C["Me\nBr\nNHAc"]
+  C -->|HCl, H2O| D["Me\nBr\nNH2"]
+  D -->|NaNO2, 稀H2SO4, 0~5 °C| E["Me\nBr\nHSO4-"]
+  E -->|H3PO2| F["Me\nBr"]
+```
+</details>
+
+需要说明的是，使用锌/盐酸、氯化亚锡/盐酸、亚硫酸钠、亚硫酸氢钠或硫代硫酸钠等还原剂时，也经历了单电子过程，产物则是重要的有机合成中间体芳肼，芳肼广泛用于药物、染料及其他化学品的合成。这类反应是工业上制备苯肼的重要途径之一。
+
+$$
+\mathrm{C} _ {6} \mathrm{H} _ {5} \mathrm{N} _ {2} \mathrm{Cl} + \mathrm{Na} _ {2} \mathrm{S} _ {2} \mathrm{O} _ {3} + \mathrm{NaOH} + 2 \mathrm{H} _ {2} \mathrm{O} \longrightarrow \mathrm{C} _ {6} \mathrm{H} _ {5} \mathrm{NHNH} _ {2} + \mathrm{NaCl} + 2 \mathrm{NaHSO} _ {3}
+$$
+
+（2）重氮基被氯、溴和氰基取代（Sandmeyer 反应） 氯离子和溴离子的亲核能力较弱，因此直接将重氮基团转化为氯或溴的效率较低。然而，在氢卤酸溶液中，若存在相应的卤化亚铜盐，加热重氮盐时，重氮基团可以被氯或溴取代，这个过程称为 Sandmeyer 反应。该反应的机理较为复杂，涉及单电子转移（SET）过程，可能形成芳基自由基中间体，从而推动反应进行。
+
+![](images/page_192_image_15.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Nitration reaction equation of benzene
+</details>
+
+在 Sandmeyer 反应中，如果使用氰化亚铜作为催化剂，并加入过量的氰化钾或氰化钠，可以合成芳甲腈。此外，Sandmeyer 反应还适用于三氟甲基化等其他反应，为合成多种芳香化合物提供了有效的方法。
+
+![](images/page_193_image_3.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Nitration reaction pathway of a diamino-substituted benzamide under various conditions, including NaNO2, HSO4-, and CuSCN catalysts
+</details>
+
+（3）重氮基被硝基和磺酸基取代 将芳基重氮盐悬浮在亚硝酸盐或亚硫酸盐的水溶液中，并在金属铜催化下，可以实现重氮基向硝基或磺酸基的转化。例如，邻硝基苯胺通过与亚硝酸反应生成重氮盐，经过阴离子交换形成氟硼酸盐，随后在铜的催化下与亚硝酸钠反应，最终合成邻二硝基苯。此外，氯化重氮苯在铜的催化作用下与亚硫酸钠反应，则可得到苯磺酸钠。
+
+![](images/page_193_image_5.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Multi-step organic synthesis reaction scheme involving nitrobenzene, diazo compound, and sulfonamide under various conditions
+</details>
+
+## 3. 重氮盐的亲电反应
+
+重氮盐是一类非常优秀的亲电试剂，可以和一系列亲核性物质如烯醇负离子、磺酰胺、富电子芳烃等发生反应，广泛应用于有机合成。例如，1887年，英国化学家Japp与Klingemann利用弱碱与β-酮酯生成的烯醇负离子作为亲核试剂，与重氮盐发生反应，生成的含有偶氮结构单元（azo skeleton，偶氮官能团易光致异构，本文以热力学稳定的E型表达）的β-酮酯在碱性条件下发生逆缩合反应，经后处理可以高效制备芳香腙类化合物。值得说明的是，芳香腙化合物在酸性条件下，可以经历Fischer吲哚合成机制获得一系列吲哚类化合物。
+
+![](images/page_193_image_8.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["R¹C(=O)CH(R²C(=O)OEt)"] -->|NaOH| B["R¹C(=O)CH(R²C(=O)(OEt))"]
+  B -->|Ar-N⁺≡N| C["R¹C(=O)CH(R²C(=O)OEt)"]
+  C -->|NaOH| D["R¹C(=O)CH(R²C(=O)OEt)"]
+  D --> E["Ar-N⁻N-C(=O)(OEt)"]
+  E -->|H₂O| F["Ar-NH-C(=O)(OEt)"]
+  F --> G["R²≠H"]
+  H["逆缩合"] --> I["Ar-N⁻N-C(=O)(OEt)"]
+  I --> J["H₂O"]
+```
+</details>
+
+以磺酰亚胺为亲核试剂，在三乙胺等碱存在的条件下，与芳香重氮盐发生反应，可以制备叠氮取代的芳烃。
+
+苯基叠氮可以用于多种重要的合成转化，可以作为1,3-偶极子用于周环反应，如click反应制备三氮唑等；2023年，Levin教授以苯基叠氮为原料，利用骨架编辑策略，成功实现苯环到吡啶环的转变[Science，2023,381(6665):1474-1479]。
+
+![](images/page_194_image_3.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing chlorination of a chlorinated benzene derivative using TsNH2 and Et3N to form an azo compound with NHTs and NEt3.
+</details>
+
+芳香重氮盐作为亲电试剂，与富电子的芳烃（如芳胺、酚负离子等）发生亲电取代反应，可以高效制备一系列具有偶氮骨架的共轭体系，偶氮基是能吸收一定波长的可见光的发色团，因此含有偶氮基团的芳香共轭化合物是应用最广的一类合成染料，数量可达几千种，如苯胺黄、苏丹红系列、苋菜红等。这些染料的分子结构通常是由一个或多个偶氮基团连接成的大共轭体系，$\pi$ 电子的离域范围较大，使其能够吸收特定波长的可见光，从而呈现不同颜色。被广泛用于纤维的染色或印花，也常用于塑料、油漆或橡胶等着色。
+
+1861 年，曼恩（Mène）发现芳香胺重氮盐能与芳香胺或芳香酚反应，并合成了第一个偶氮染料——苯胺黄。随着深入研究，科学家发现在冷的反应条件下，芳香伯胺或仲芳胺与重氮盐发生偶联反应时，动力学上首先是芳胺氮原子进行亲核加成，生成重氮氨基化合物，在弱酸性条件下，重氮氨基化合物不断生成热力学更稳定的氨基取代的偶氮化合物。反应产物通常是氨基对位的偶氮取代，若对位已被其他基团占据，则会生成邻位产物。需要说明的是若使用脂肪伯胺或仲胺，则生成相应的重氮氨基化合物。
+
+![](images/page_194_image_6.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing conversion of benzylamine to amine and then to amine product under acidic conditions
+</details>
+
+大家熟知的酸碱指示剂甲基橙就是经典的偶氮类物质，以4-氨基苯磺酸钠衍生的重氮盐作为亲电试剂，与N,N-二甲基苯胺发生亲电取代反应可以制备甲基橙。甲基橙变色范围为pH 3.1\~4.4，在酸性条件下共轭体系发生改变，从黄色变成红色。
+
+![](images/page_194_image_8.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing synthesis of 甲基橙 (80%) from 4-nitrobenzaldehyde and its sulfonated derivatives under NaNO2/HCl conditions
+</details>
+
+重氮盐也非常容易和酚负离子发生反应，生成一系列偶氮类物质。例如，可以用于鉴定镁离子的镁试剂（碱性溶液中呈亮蓝色）就是偶氮类物质。镁离子鉴别试剂试镁灵Ⅰ是间苯二酚与对硝基苯基重氮盐反应生成的；若使用α-萘酚为原料，则会生成萘羟基对位取代的产物，生成试镁灵Ⅱ。工业染料苏丹红一号（Sudan I），则是通过苯基重氮盐与β-萘酚在碱性条件下高效制备得到。
+
+![](images/page_194_image_10.jpg)
+
+实际上，书中所述只是芳基重氮盐在现代有机合成中的几类经典用途，随着研究的深入，越开越多的合成转化被开发，如以芳基重氮盐为原料，通过偶联等反应构建碳碳键、多种杂环骨架编辑等。值得说明的是，有些对称的偶氮化合物加热时容易均裂分解，释放出氮气，产生自由基，例如大家熟知的 AIBN（偶氮二异丁腈），就基于偶氮这一性质用作自由基引发剂。
+
+## 12.4.2 芳基重氮盐在偶联反应中的应用
+
+在 Ti(Ⅲ)的催化作用下，芳基重氮盐可以转化为芳基自由基。这些生成的自由基随后与  $\alpha,\beta-$  不饱和醛或酮发生反应，导致碳链的增长，生成新的醛或酮。这一反应机理为有机合成提供了新的方法，能够高效地构建更复杂的分子结构。
+
+![](images/page_195_image_5.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction pathway showing the synthesis of a carbocation intermediate from arylamine and titanium ions
+</details>
+
+此外，芳基重氮盐在 $\mathrm{Cu(I)}$ 的催化作用下，还可以与某些烯烃发生反应，生成相应的芳烃衍生物。在此反应中，烯烃的结构可以是 $\mathrm{CH}_2 = \mathrm{CHR}$，其中R可以是烯基、卤素（X）、羰基（C=O）或芳基（Ar）等。这一反应拓宽了芳基重氮盐的应用范围，为合成多样化芳烃提供了新途径。
+
+![](images/page_195_image_7.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing the synthesis of a chlorinated alkane from aryl chloride and N-alkoxide
+</details>
+
+近年来，以 C-N 键活化而非 C-X 或 C-O 键断裂来开启金属催化循环构建化合物的方法，已在有机金属化学研究中崭露头角，成为新的探索路径。在这一领域的研究中，芳基重氮盐因其特殊性质，在偶联反应里备受关注，成为研究热点所在。目前，相关文献已囊括多种碳碳键形成的方式，如芳芳键（如 Suzuki-Miyaura 偶联、Stille 偶联、Hiyama 偶联及自身偶联）、芳烯键（如 Heck-Matsuda 偶联和氢化芳化反应）、芳炔键（如 Sonogashira 偶联）等各类反应途径。
+
+![](images/page_195_image_9.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["Ar-Ar'"] -->|Suzuki-Miyaura\nAr'BOH2| B["Ar-N≡N"]
+  C["Ar-Ar'"] -->|Stille\nAr'Sn| B
+  D["Ar-Ar'"] -->|Hiyama\nAr'SiOR3| B
+  E["Ar-Ar"] -->|Homocoupling| B
+  B --> F["Heck-Matsuda\nR=CH-R"] --> G["Ar-CH=CH-R"]
+  B --> H["Hydroarylation\nR≡R"] --> I["Ar-C(=C)-H-R"]
+  B --> J["Sonogashira\nR≡H"] --> K["R≡Ar"]
+  B --> L["Carbonylation\nCO, NuH"] --> M["Ar-C(=O)-Nu"]
+```
+</details>
+
+## 12.5 芳香含氮杂环化合物
+
+在环状化合物中，除碳原子外，还有其他原子参与成环，这些原子被称为杂原子，而这样的化合物被称为杂环化合物（heterocyclic compound）。常见的杂原子包括氧、硫和氮。
+
+![](images/page_196_image_2.jpg)
+
+杂环化合物在自然界中广泛存在，并且大多数具有重要的生物活性或生理功能。例如，叶绿素赋予植物绿色，是植物进行光合作用的重要物质；血红素让血液呈现红色，负责高等动物体内的氧气运输；糖类为生命提供能量；核酸（包含嘧啶和嘌呤类杂环）携带着生命体的全部遗传信息。
+
+有些杂环化合物属于非芳香族，其性质与含有杂原子的非环状化合物相似，因此通常将它们归入一般的非环状化合物中讨论。本节将重点介绍具有芳香性的含氮杂环化合物，它们在性质上与普通的胺类化合物有显著差异。
+
+## 12.5.1 吡咯
+
+最常见的含有一个氮原子的五元杂环化合物是吡咯，它是一种无色液体。在吡咯分子中，所有的碳原子和氮原子都采用  $sp^{2}$  杂化。这些原子通过  $sp^{2}$  杂化以  $\sigma$  键相互结合，构成一个平面环状结构。每个碳原子和氮原子上各有一个 p 轨道，碳原子的 p 轨道中有一个电子，而氮原子的 p 轨道中则包含两个电子。这些 p 轨道彼此平行并相互重叠，形成一个包含 6 个  $\pi$  电子的环形共轭体系，符合 Hückel 规则，因此吡咯具有芳香性。
+
+吡咯环上的氢原子受到 $\pi$ 电子环流的影响，其 ${}^{1}\mathrm{H}$ NMR信号出现在低场 $\delta 7$ 左右，这是吡咯具有芳香性的一个重要特征。此外，由于氮原子具有吸电子诱导效应，吡咯中 $\alpha$ 位的氢原子化学位移比 $\beta$ 位氢原子的更大。
+
+吡咯分子中，氮原子相比氧和硫原子具有更强的给电子共轭效应，因此吡咯的分子偶极矩方向与吡咯烷的相反:吡咯的偶极矩指向3号和4号碳原子（编号标注于边栏的吡咯结构上），而吡咯烷的偶极矩则指向氮原子。此外，吡咯氮原子上的氢具有弱酸性，$\mathrm{pK_a}$ 值为17.5，酸性强于吡咯烷（$\mathrm{pK_a = 35}$），与一般的醇（$\mathrm{pK_a = 16\sim 19}$）相似。因此，吡咯可以在液氨中通过强碱（如 $\mathrm{NaNH_2}$、$\mathrm{NaH}$）完全转化为其钠盐，甚至在惰性溶剂中也可以通过金属钠或钾将其转化为相应的盐。
+
+## 1. 亲电取代反应
+
+吡咯的芳香性使其容易发生芳香亲电取代反应，如硝化、卤化、磺化及Friedel-Crafts反应。与苯相比，吡咯中杂原子氮的孤对电子会增加整个芳杂环的电子密度（在5个原子上有6个 $\pi$ 电子），因此吡咯的亲电取代反应活性比苯的高，反应活性接近苯胺的反应活性。
+
+例如，在氯化、溴化、碘化或酰基化反应中，吡咯不需要使用催化剂即可进行反应。这是因为吡咯分子中的电子密度较高，能够有效吸引亲电试剂，从而使这些反应更加顺利地发生。
+
+![](images/page_196_image_12.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Two-step organic synthesis reaction scheme: 4 l₂ in NaHCO₃/H₂O to form a cyclic imidazolone, and (CH₃CO)₂O in 150–200 °C to yield a ketone.
+</details>
+
+吡咯甚至能够在质子酸催化下直接与羧酸发生酰基化反应。与传统的 Friedel-Crafts 酰基化不同，吡咯由于其较高的电子密度，能够在温和条件下与羧酸反应而无须使用更为强烈的 Lewis 酸催化剂。质子酸催化下的酰基化反应使吡咯容易引入酰基，例如乙酰基或其他脂肪族或芳香族酰基，从而生成相应的酰基化吡咯化合物。这种反应的一个典型例子是吡咯与乙酸在酸性介质中反应生成 $N-$ 乙酰吡咯。
+
+![](images/page_197_image_3.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing condensation of a pyridine derivative with anisole under CF3COOH and chloroform conditions at 80°C
+</details>
+
+吡咯的化学性质较为活泼，在强酸环境下不稳定。例如，吡咯遇到强酸或氧化剂时，容易发生开环或聚合反应，形成高聚物。因此，吡咯的亲电取代反应通常需要在温和条件下进行，以尽量减少副反应的发生。
+
+例如，在吡咯磺化时通常使用温和的吡啶三氧化硫加合物作为磺化试剂，而不使用浓硫酸。硝化吡咯时，由于其容易被氧化，不能直接使用强氧化性的硝酸作为硝化剂。为了避免氧化，通常采用硝酸乙酸酐（$\mathrm{AcONO_2}$）作为硝化剂。这种反应条件较为温和，能够有效避免吡咯分子的过度氧化或副反应的发生。
+
+![](images/page_197_image_6.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Nitration reaction equation of benzene under AcONO2 at -10°C, yielding 50% and 13% products
+</details>
+
+吡咯有两种不同的取代位置，通常以  $\alpha-$  取代为主。无论是  $\alpha$  位还是  $\beta$  位，吡咯的亲电取代反应活性都比苯的大。通过比较两种位置的取代反应中间体的稳定性，可以更好地理解这种反应的区域选择性。
+
+以吡咯的亲电取代反应为例，当发生  $\alpha$  位取代时，形成的  $\sigma$  络合物有三个共振结构，正电荷可以分散在三个原子上；而当发生  $\beta$  位取代时， $\sigma$  络合物只有两个共振结构，正电荷仅分散在两个原子上。因此， $\alpha$  位取代形成的中间体比  $\beta$  位的更加稳定，这也是吡咯的反应通常以  $\alpha$  位取代为主的原因。
+
+![](images/page_197_image_9.jpg)
+
+吡咯在酸催化下能与醛发生缩合反应。例如，在质子酸（如三氟乙酸 TFA）催化下，两分子的 2,4-二甲基吡咯与芳甲醛缩合，生成的亲电取代产物在氧化后与三氟化硼（BF₃）配位，形成配合物硼-二吡咯甲川（boron-dipyrromethene，简称 BODIPY）。BODIPY 是一类应用广泛的荧光染料，因其优异的荧光性能而被广泛用于生物成像、光电器件等领域。
+
+![](images/page_198_image_2.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction pathway showing synthesis of BODIPY from a starting compound involving amine and aryl groups, followed by oxidation to form a fused heterocyclic product.
+</details>
+
+与上述反应类似，在质子酸或 Lewis 酸催化下，4 分子吡咯可以与 4 分子醛缩合，生成卟啉（porphyrin）。这种反应是制备卟啉环系化合物的经典方法。卟啉类化合物在自然界中广泛存在，如血红素、胆红素、叶绿素等。这些天然化合物具有重要生物功能，如血红素参与氧气的运输。卟啉骨架也存在于多种光敏剂结构中，如卟吩姆钠、血卟啉等通过特定波长光激发产生活性氧，能够选择性地破坏肿瘤细胞，从而可被用于多种癌症的光动力治疗中。
+
+![](images/page_198_image_4.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Molecular structure of a ferrocene-based organometallic complex with CO2H substituents
+</details>
+
+血红素 Heme
+
+![](images/page_198_image_6.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Complex organic molecule structure with multiple nitrogen and hydroxyl groups, including two carboxylic acid side chains
+</details>
+
+血卟啉 HiPorfin
+
+此外，吡咯还可以与较弱的亲电试剂（如芳基重氮盐）发生亲电取代反应，生成偶氮化合物。在此类反应中，吡咯也能够遵循其典型的区域选择性，优先在  $\alpha$  位发生反应。同时，吡咯能够进行 Michael 加成和 Mannich 反应，这些反应也遵循  $\alpha$  位的优先选择性规律。然而，若  $\alpha$  位已经被占据，反应也可以在  $\beta$  位进行。
+
+![](images/page_198_image_9.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction pathway showing two pathways of a pyridine derivative with N-Ph and acetylamine derivatives under different conditions
+</details>
+
+吡咯与 Vilsmeier 试剂（由 DMF 和 POCl₃ 生成）反应，可以成功在吡咯环中引入醛基以合成吡咯的醛衍生物。反应的选择性受吡咯氮原子上取代基的空间位阻影响。当氮原子上有较大的取代基时，其位阻可能使反应更倾向于在 β 位发生亲电取代，而不是通常的 α 位。
+
+![](images/page_198_image_11.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing the synthesis of a substituted pyridine derivative from aniline and amide under catalytic conditions
+</details>
+
+## 2. 还原反应
+
+五元杂环化合物的化学性质通常较为活泼，其芳香性虽然存在，但相对于苯较弱，因此常表现出不饱和化合物的某些性质。例如，吡咯在镍催化下能够进行加氢反应，生成四氢吡咯（也称吡咯烷），这表明其分子中的双键可以被氢化。当使用锌作为还原剂时，吡咯可以部分还原，生成2,5-二氢-1H-吡咯。
+
+![](images/page_199_image_3.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing nickel hydride conversion under H2/Ni and Zn/AcOH conditions
+</details>
+
+这种不完全芳香性和易于发生加成反应的性质, 使得五元杂环化合物在化学反应中相对较为灵活, 能够参与多种不同的还原或加成反应。
+
+## 3. 共轭加成和 Diels-Alder 反应
+
+吡咯的亲核性较强，通常不作为双烯体参与Diels-Alder反应。然而， $N$ -取代的吡咯却能够与活泼的亲双烯体发生Diels-Alder反应。 $N$ -取代吡咯通过引入取代基降低了吡咯环的亲核性，使其能够更好地参与该反应。
+
+例如，当 $N-$ 取代吡咯与某些活泼的亲双烯体（如二烯或炔烃）反应时，可以形成环状产物。这种反应的特性使得 $N-$ 取代吡咯成为合成复杂分子的有效中间体，展现了其在有机合成中的重要应用。
+
+![](images/page_199_image_8.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing the formation of a substituted pyridine derivative from an imidazole and a trifluoromethyl group under THF conditions
+</details>
+
+## 4. 吡咯 N-H 的酸性
+
+吡咯氮上的氢有一定的酸性，$\mathrm{pK_a}$ 约为17.5，可以与强碱性物质如钾（K）反应，生成吡咯钾盐，该盐可以与不同的亲电试剂发生反应，制备一系列非常有价值的精细化合物。例如，吡咯钾盐与二氧化碳发生Kolbe-Schmitt反应，可以得到2-吡咯甲酸；吡咯钾盐与二氯卡宾（氯仿在碱性条件下生成）可以通过Reimer-Tiemann反应制备2-吡咯甲醛；吡咯钾盐与二氯卡宾也会发生反常的Reimer-Tiemann反应，发生扩环生成3-氯吡啶，这一过程也称为Ciamician-Dennstedt重排；吡咯钾盐与位阻比较小的伯卤代烷或碘甲烷则会在氮端反应，生成氮烷基取代的吡咯；吡咯钾盐与酰氯反应可以实现氮上的酰基化，该物质受热发生Friedel-Crafts反应，生成2-酰基吡咯。
+
+![](images/page_199_image_11.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction pathway showing conversion of pyridine to pyrimidine via chlorination and oxidation steps
+</details>
+
+## 5. 吡咯的制备
+
+吡咯的合成方法很多，而以易得1,4-二酮（呋喃水解可以方便制得）为原料与氨或胺进行缩合环化是制备取代吡咯的经典方法，称为Paal-Knorr合成法。该反应经历如下反应步骤，①缩合反应:1,4-二酮与氨或胺在酸性条件下反应，生成相应的缩合产物。②环化反应:经过进一步的脱水和重排，形成吡咯。该方法具有高效性和多样性，广泛应用于有机合成中，尤其在药物合成和功能材料的制备方面。1,4-二酮与氨发生Paal-Knorr反应则形成氮端未取代的吡咯。
+
+![](images/page_200_image_4.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing the formation of a substituted pyridine derivative from a ketone and amide under AcOH catalysis
+</details>
+
+## 12.5.2 咧哚
+
+![](images/page_200_image_6.jpg)
+
+吲哚 indole
+
+吲哚环系化合物在自然界中广泛存在，已发现的吲哚类生物碱种类已有上千种，其中大多数都具有重要的生理作用。例如，吲哚-3-乙酸是一种植物生长调节剂，在植物生长发育中发挥着重要作用，尤其是促进植物向光性生长，比如向日葵向阳光的倾斜行为等。色氨酸则是一种必需氨基酸，它在体内参与多种生物合成反应，包括神经递质的合成等。
+
+## 1. 吲哚的结构与物理性质
+
+吲哚是具有 10 个  $\pi$  电子的芳香体系，其中 8 个  $\pi$  电子来源于其双键，2 个  $\pi$  电子来自氮原子上的孤对电子。这使得吲哚展现出丰富的共振结构，增强了其芳香性和稳定性。
+
+由于吲哚环的电子密度高于苯，因此吲哚具有富电子的芳香化合物特性。这一特性使得吲哚在化学反应中表现出较强的亲核性。
+
+吲哚为白色片状结晶，熔点为  $52^{\circ}$ C，其气味独特，通常被描述为有臭味。然而，在极稀薄的浓度下，吲哚散发出香味，因此也在香水和香料工业中作为重要的芳香成分，展现出其多样化的应用潜力。
+
+## 2. 引哚的碱性与亲核性
+
+吲哚的碱性极弱（共轭酸的  $pK_{a}$  为 -3.63），且 3 位碳原子更容易获得质子，而不是 1 位氮原子。这使得吲哚不仅碱性很弱，还表现出一定的弱酸性（ $pK_{a}$  为 16.97）。吲哚与强碱反应时可以生成盐，并且在碱性条件下能够与卤代烷发生 N-烷基化反应。
+
+在强碱的作用下，吲哚与卤代烃发生亲核取代反应，形成 N-烷基化的吲哚衍生物。例如:抗抑郁症药物伊普吲哚（Iprindole），其最后一步合成便是吲哚中间体的 N-烷基化反应。通过调节反应条件和选择合适的卤代烃，可以有效地合成出不同的吲哚衍生物，为药物研发和合成提供重要的方法。
+
+![](images/page_200_image_16.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing synthesis of a fused heterocyclic compound with TsO and NMe5 under NaH/THF conditions
+</details>
+
+## 3. 吲哚的亲电取代反应
+
+由于吲哚是富电子芳香化合物，其3位碳原子带有部分负电荷，这使得吲哚容易发生亲电取代反应。通常情况下，反应主要发生在较活泼的3位碳原子上。
+
+为了避免 N-烷基化反应的发生，在 3 位碳原子的烷基化过程中，常使用卤代烷作为亲电试剂，并在中性条件或 Lewis 酸催化下进行。这种方法可以高选择性地将烷基引入吲哚的 3 位碳上。
+
+3-取代吲哚的选择性可以通过分析其反应中间体的相对稳定性来解释。在生成3-取代吲哚的 $\sigma$ 络合物中间体中，吲哚的芳香性得以保留，这使得该中间体相对较稳定。相对而言，2-取代吲哚的中间体则会破坏吲哚环的芳香性，因此其稳定性较低。
+
+![](images/page_201_image_6.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["Imidazolium Compound"] -->|"E⁺\n3位加成"| B["Intermediate Product"]
+  C["Imidazolium Compound"] -->|"E⁺\n2位加成"| D["Intermediate Product"]
+  B -->|"E⁺\n2位加成"| D
+  D -->|"H⁺"| E["Final Product"]
+```
+</details>
+
+由于 3-取代吲哚的中间体较为稳定, 反应更倾向于形成这个中间体并生成 3-取代产物。相比之下, 2-取代吲哚中间体的较低稳定性导致该反应不易发生, 从而使得 3-取代反应占据了主导地位。
+
+和其他芳烃很像，吲哚可以发生多种亲电取代反应，如酰基化、硝化及 Friedel-Crafts 烷基化反应，使得吲哚及其衍生物在有机合成和药物研发中具有广泛的应用潜力。
+
+![](images/page_201_image_9.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing the conversion of a naphthalene derivative to a nitro-substituted imidazole using (RCO)2O and PhCOONO2 in MeCN at 0°C
+</details>
+
+与其他富电子芳香化合物（如苯酚、吡咯和呋喃）类似，吲哚也容易发生 Mannich 反应，生成 3-(氨基甲基)取代的衍生物。此外，吲哚在适当条件下还能够发生 Vilsmeier 反应，生成 3-甲酰基吲哚，进一步拓展了吲哚的应用潜力。
+
+![](images/page_201_image_11.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction pathway showing two possible enzymatic reactions of indole derivatives with acetylamine and methoxyphenyl groups
+</details>
+
+## 4. 咧哚的合成
+
+吲哚环的合成方法多种多样，较为常见的就有十余种，在这些方法中，Fischer吲哚合成
+
+[3,3]-σ 重排属于周环反应的 σ 迁移反应，具体见第 13 章相关内容。
+
+法是应用最广泛的合成方法之一。将有 $\alpha$-氢的酮（或醛）与苯肼（或取代苯肼）在醋酸中加热回流生成苯腙，无须分离，苯腙在酸催化下异构化形成的烯胺后经历[3,3]-$\sigma$ 重排生成亚胺阳离子，成环后消除一分子氨，从而实现取代吲哚的构建。常用的催化剂有氯化锌、三氟化硼和多聚磷酸。
+
+Fischer 吲哚合成法在工业上应用广泛。例如，Fischer 吲哚合成法被认为是 2-苯基吲哚的有效且实用的合成途径，2-苯基吲哚可作为一种阳离子染料的合成中间体。通过控制反应条件和选择合适的催化剂可以高效地合成多种取代吲哚，为染料和药物的开发提供了基础。
+
+![](images/page_202_image_5.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing the synthesis of a substituted indole derivative from aniline and acetone under HOAc at 80–98°C, followed by ZnCl2 at 195°C.
+</details>
+
+在 Fischer 吲哚合成中，醛由于容易发生自身缩合或歧化反应，通常不宜直接使用。不过，缩醛和环状烯醚等醛的前体可以有效地用于这一转化。例如，在治疗偏头痛的药物阿莫曲坦（Almotriptan）的合成中，使用 4-氯丁醛缩二乙醇作为 4-氯丁醛的等价物，可以有效避免醛的自身缩合问题。此反应过程:首先将苯胺衍生物重氮化后还原为苯肼衍生物，其在酸催化下与 4-氯丁醛缩二乙醇反应形成苯腙，随后经过重排和环化反应，合成出吲哚环系，再对侧链的伯胺进行还原胺化引入两个甲基。利用这种策略，可以有效地提高合成反应的选择性和产率，为阿莫曲坦的工业化生产提供可靠的合成路线。这种方法也可应用于合成其他具有重要生理活性的吲哚衍生物。
+
+![](images/page_202_image_7.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Multi-step organic synthesis reaction scheme involving sulfonamide, diazotoluene, and pyridine derivatives with reagents and conditions
+</details>
+
+阿莫曲坦 (Almotriptan)
+
+## 12.5.3 吡啶和嘧啶
+
+吡啶和嘧啶衍生物在自然界中广泛存在，且在生物体内发挥着重要作用。例如，烟酸（吡啶-3-甲酸）和烟酰胺都是维生素B族的重要成员，能够促进新陈代谢。烟酸还有扩张血管的作用，通常通过烟碱（即尼古丁）的氧化来制备。另一类重要的吡啶衍生物包括维生素 $B_{6}$ 家族的成员——吡哆醛、吡哆胺和吡哆醇，它们在动植物中分布广泛，尤其在谷物外皮中含量丰富。缺乏维生素 $B_{6}$ 会引发呕吐和中枢神经兴奋等生理反应。
+
+![](images/page_203_image_2.jpg)
+
+吡啶 pyridine
+
+![](images/page_203_image_4.jpg)
+
+嘧啶 pyrimidine
+
+此外，吡啶衍生物在农业和医学领域也有重要应用。例如，吡氯灵和病定清是常见的植物杀菌剂，能够有效防治疫霉病、腐霉病等植物病害。而嘧啶类化合物在核酸结构中扮演着关键角色，如5-氟尿嘧啶是一种抗肿瘤的药物，嘧啶碱基则是DNA和RNA的基本构成单位。
+
+![](images/page_203_image_7.jpg)
+
+吡氯灵 pyroxychlor
+
+![](images/page_203_image_9.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical structure of a substituted pyridine derivative with phenyl, cyano, and chlorine groups
+</details>
+
+病定清 pyridinitril
+
+通过这些例子可以看出，吡啶和嘧啶衍生物在生物化学和医药化学中占据了极为重要的位置，既影响生命体内的基本代谢过程，又广泛应用于医药和农业领域。
+
+## 1. 吡啶和嘧啶的结构与物理性质
+
+吡啶的结构与苯类似，环上的氮原子采用  $sp^{2}$  杂化轨道成键，并有一个 p 电子参与到环中的共轭体系中，形成 6 个  $\pi$  电子的闭合共轭结构，赋予它芳香性。 $^{1}$ H NMR 数据也验证了其芳香性的存在。嘧啶的结构与吡啶相似，由于氮原子的存在，其电子密度分布不同。共振结构表明，氮原子上的电子密度较高，带有部分负电荷，而 2 位、4 位和 6 位的碳原子上电子密度较低，带有部分正电荷，尤其比 3 位和 5 位碳原子更为明显。这是氮原子的强吸电子效应所致。
+
+吡啶的偶极矩较大，约为 2.26 D，且其方向指向氮原子。吡啶是一种有恶臭味的无色液体，沸点为 115 °C，可与水、乙醇、乙醚等溶剂混溶，因此常用作良好的溶剂和化工原料。工业上，吡啶通常从煤焦油或骨焦油的轻油部分提取而得。嘧啶的熔点为 22 °C，沸点为 124 °C，具有良好的水溶性和醇溶性。嘧啶衍生物在自然界中广泛存在，具有重要作用，如尿嘧啶、胞嘧啶和胸腺嘧啶均是核酸中的基本碱基。
+
+这些吡啶和嘧啶衍生物不仅在化学工业中应用广泛，还在生命科学中发挥着不可替代的作用，特别是作为核酸的重要组成部分，用于遗传信息的传递和表达，具体在16.4节中介绍。
+
+![](images/page_203_image_16.jpg)
+
+尿嘧啶 uracil
+
+![](images/page_203_image_18.jpg)
+
+胞嘧啶 cytosine
+
+![](images/page_203_image_20.jpg)
+
+胸腺嘧啶 thymine
+
+羟基嘧啶与其酮式（即酰胺型）结构为互变异构体。这种互变异构现象也称作“酮-烯醇互变”，在有机化学中十分普遍。在嘧啶化合物中，烯醇式和酮式之间的互变使得分子能够根据环境条件进行结构调节，在生物系统和大多数条件下，平衡状态下主要以酮式存在。
+
+例如，在核酸中的嘧啶碱基——尿嘧啶、胞嘧啶和胸腺嘧啶，通常以酰胺型结构存在，从而保证了稳定的遗传物质功能。这是由于其芳香性和氢键作用而体现的稳定性优势。
+
+![](images/page_204_image_3.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction showing conversion of a pyridine derivative to a heterocyclic compound
+</details>
+
+## 2. 吡啶和嘧啶的碱性与亲核性
+
+吡啶氮原子上的孤对电子不参与芳香体系共轭，因此它表现出一定的碱性。吡啶的共轭酸的  $pK_{a}$  为 5.32，虽然其碱性比脂肪胺（如六氢吡啶， $pK_{a}=11$ ）弱，但比苯胺（ $pK_{a}=4.58$ ）强得多，而且也明显强于吡咯（吡咯的氮原子的孤对电子参与共轭，使其碱性大幅减弱）。因此，吡啶经常被用作有机碱之一，并且能够与酸生成盐，如吡啶盐酸盐。
+
+当吡啶环上引入给电子基团时，其碱性会进一步增强。例如，4-甲基吡啶、4-甲氧基吡啶和4-(二甲基氨基)吡啶（DMAP）都具有比吡啶更强的碱性。尤其是DMAP，它是有机化学中常用的碱性催化剂。
+
+吡啶可以作为亲核试剂与卤代烷发生亲核取代反应生成季铵盐。例如，吡啶与碘甲烷反应生成吡啶季铵盐，其在290\~300℃下加热可以脱去碘化氢，生成2-甲基吡啶和4-甲基吡啶。
+
+吡啶也常用作酯化反应和酰胺化反应的催化剂。在这些反应中，吡啶先作为亲核试剂进攻酰氯，生成酰基吡啶中间体，这是反应的决速步；随后，醇或胺进攻该中间体，最终形成酯或酰胺，同时吡啶作为离去基团，结合 HCl 生成吡啶盐酸盐。
+
+作为一种 Lewis 碱，吡啶能够与金属离子等 Lewis 酸配位形成配合物。例如，吡啶与三氧化铬可形成一种易燃的配合物，但在用 HCl 处理后会生成较为安全的氯铬酸吡啶盐（PCC），这是一种温和的氧化剂，常用于将伯醇氧化为醛或将仲醇氧化为酮。
+
+此外，吡啶还能与三氧化硫形成稳定的固体配合物，这种温和的试剂广泛用于对酸敏感或反应活性较低的芳香化合物的磺化反应，如呋喃的磺化反应。
+
+## 3. 吡啶和嘧啶的亲电取代反应
+
+吡啶可以进行亲电取代反应，但吡啶环中的氮原子具有较强的吸电子效应，使得整个环系的电子密度较低，导致其亲电取代反应的活性相对较弱，类似于硝基苯。因此，吡啶不容易像苯那样进行典型的亲电取代反应，如Friedel-Crafts反应。即使是硝化、磺化和卤化等反应，通常也需要较为苛刻的条件才能发生。具体而言，这类反应通常在吡啶的3位进行，这是因为3位是吡啶环中电子密度相对较高、亲电试剂较容易进攻的位点。
+
+例如，吡啶的卤化反应往往需要在高温下使用卤化铁（如  $FeCl_{3}$  ）作为催化剂才能进行。类似地，硝化反应一般需要较强的硝化试剂和较高的反应温度，而磺化反应则需要三氧化硫与发烟硫酸等强酸体系。
+
+![](images/page_204_image_14.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Nitration reaction equation of benzene
+</details>
+
+吡啶环上如果有活化基团，亲电取代反应则会变得容易进行。活化基团能够通过给电子效应增加吡啶环的电子密度，从而降低亲电试剂进入反应的活化能，反应也能够在更温和的条件下进行，取代的区域选择性则与电子分布相关。例如，4-甲基吡啶的甲基是一个弱的给电子基团，能够通过诱导给电子效应增加吡啶环上的电子密度，尤其是增强了3位和5位的电子密度，因此亲电取代反应会比未取代的吡啶更容易发生，主要发生在3位。
+
+氨基和甲氧基是强的给电子基团，这些取代基位于2位、4位或6位时能够通过给电子共轭效应显著增加吡啶环的电子密度，导致亲电试剂更容易进攻吡啶环，增强了亲电取代反应的活性。因此，2-氨基吡啶在较温和的条件下就可以发生卤化或硝化反应。
+
+![](images/page_205_image_4.jpg)
+
+吡啶的亲电取代反应比较惰性，反应主要发生在3位（或5位）。然而，当吡啶与过氧化氢反应生成吡啶 $N-$ 氧化物（pyridine $N-$ oxide）时，亲电取代反应的活性显著增强，而且取代的位置发生了改变，主要在4位进行。这种变化与氧的孤对电子与 $\pi^{*}(\mathrm{N}-\mathrm{C})$ 的超共轭效应 $[\mathrm{n(O)}\rightarrow \pi^{*}(\mathrm{N}-\mathrm{C})]$ 有关。从电子效应看，这是一种给电子效应，使得环上电子密度升高，与亲电试剂反应活性增强，反应可以在较温和的条件下进行。并且，电子密度的重新分布使得4位的电子密度最高，成为最佳反应位置。因此，吡啶 $N-$ 氧化物的亲电取代反应主要发生是4位。
+
+吡啶 N-氧化物在有机合成中非常有用，尤其是其与三氯化磷（PCl $_{3}$ ）反应脱氧生成4-取代吡啶。这是因为氧的存在，可以简便地控制亲电取代反应的位置，然后在需要时通过脱氧步骤得到4-取代吡啶，这种方法在有机合成中被广泛应用。
+
+![](images/page_205_image_7.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Nitration reaction equation of benzene
+</details>
+
+由于嘧啶环上有两个氮原子分别位于1位和3位，氮原子的强吸电子效应使得嘧啶环的电子密度比吡啶的电子密度更低，进一步抑制了亲电试剂的进攻，因此嘧啶的亲电取代反应更难进行。不过，当嘧啶环上引入给电子基团（如氨基、羟基等）时，电子密度会局部增加，从而活化嘧啶环，亲电取代反应变得相对容易。当这些给电子基团位于嘧啶环的4位或6位时，它们能通过共轭效应向5位供电子，激活这些位置进行亲电取代反应。因此，在嘧啶环的2位、4位或6位有活化基团时，嘧啶的亲电取代反应往往优先在5位进行。例如，2-氨基嘧啶中氨基作为强给电子基团，能够通过共轭效应增加3位和5位的电子密度，进而促进亲电取代反应，亲电取代主要发生在5位。
+
+![](images/page_205_image_9.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing bromination of a pyridine derivative under Br₂ at 80 °C
+</details>
+
+## 4. 吡啶和嘧啶的亲核取代反应
+
+吡啶氮原子的吸电子效应，使得环上电子密度降低，尤其是在2位、4位和6位，因此有利于吡啶发生亲核取代反应（nucleophilic substitution），类似于硝基苯的行为。
+
+吡啶的亲核取代反应速率主要由负离子中间体的形成决定。当亲核试剂进攻吡啶环上的不同位置时，会形成不同的中间体，而这些中间体的稳定性则直接影响反应的速率。2位（或6位）和4位的中间体相比于3位（或5位）的中间体更加稳定。原因在于，当亲核试剂进攻2位或4位时，吡啶环中形成的负离子中间体具有特别稳定的八电子氮负离子结构（类似于八隅体规则的稳定性），使其更为稳定。例如，吡啶与强碱性的烷基锂或芳基锂试剂反应得到2位烃基化产物，其芳构化是由空气氛下反应实现的。
+
+![](images/page_206_image_5.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing conversion of pyridine to pyridine under PhLi and air conditions
+</details>
+
+（1）Chichibabin 反应 吡啶与氨基钠的反应称为 Chichibabin 反应，生成 2-氨基吡啶，这是在吡啶环上引入氨基的经典反应。嘧啶也发生类似反应，都通过加成-消除机理进行，反应通常伴随着氢气的释放。以吡啶的反应为例， $NH_{2}$  作为亲核试剂进攻吡啶的 2 位形成负离子中间体，随后发生负氢消除。消除的负氢很快与氨基的活泼氢结合，释放出一分子氢气，最终得到氨基取代的吡啶衍生物。嘧啶在与氨基钠反应时，也能引入氨基，反应进行更为容易。
+
+![](images/page_206_image_7.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Nitration reaction of pyridine under sodium hydroxide and water conditions, yielding substituted pyridine with 130°C at room temperature
+</details>
+
+（2）有离去基团时的亲核取代反应:加成-消除机理 当吡啶环上有卤素原子（如氯、溴、碘）时，由于其吸电子效应使得相邻位置的电子密度进一步降低，促进了亲核试剂的进攻，也增强了卤素作为离去基团的能力。这一现象使得吡啶在2位、4位、6位发生亲核取代反应变得相对容易，经过加成-消除机理得到亲核取代产物。例如，2-氯吡啶中的氯原子由于吡啶环氮原子的吸电子效应，容易被亲核试剂（如氨、胺、醇、硫醇等）取代。其与氨反应，氯被氨基取代，生成2-氨基吡啶。4-溴吡啶与甲醇钠反应，溴作为好的离去基团，容易发生亲核取代反应生成4-甲氧基吡啶。
+
+![](images/page_206_image_9.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing chlorination and methylation steps of a brominated pyridine derivative under ammonia/ZnCl₂ at 220°C
+</details>
+
+（3）苯炔机理:消除-加成历程 3-卤代吡啶的亲核取代反应则与上述过程不同，通常涉及芳炔中间体的形成。在强碱性条件下其通过消除-加成机理与亲核试剂发生反应。具体机制如下:在强碱性（如氨基钠、氢氧化钠等）条件下，经 E1cb 机理消除一分子卤化氢形成芳炔结构。此芳炔中间体具有较高的反应性，亲核试剂（如氨基钠、醇类或其他亲核试剂）对其发生加成反应，形成一个新的共价键，从而生成取代的吡啶衍生物。
+
+![](images/page_207_image_3.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Nitration reaction equation of benzene
+</details>
+
+（4）ANRORC 机理 除了加成-消除机理和苯炔机理，嘧啶的亲核取代反应还可能经过 ANRORC 机理，即亲核加成（addition of the nucleophile）-开环（ring-opening）-关环（ring-closing）机理。低温下在液氨中用金属氨基盐（如氨基钠）作亲核试剂与取代嘧啶的 ANRORC 反应已被深入研究。以下结果为 ANRORC 机理提供了实验依据:
+
+① 反应主要产物是溴被氨基取代的 6-苯基嘧啶-4-胺，不生成 5 位取代异构体，说明反应不经过苯炔中间体。
+
+![](images/page_207_image_6.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing bromination of a pyridine derivative with aniline under KNH2/NH3 conditions
+</details>
+
+② 以哌啶锂为碱时，反应中还可分离出开环的腈中间体，同样否定了 Meisenheimer 中间体的存在。
+
+![](images/page_207_image_8.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing piperidine/ethylene coupling with a Z/E mixture under -75°C
+</details>
+
+③ C5 位氘标记的底物，反应产物中不存在氘原子。该现象可以通过 A 与 B 间互变异构所导致的 H-D 快速交换来解释。
+
+![](images/page_207_image_10.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing transformation of a pyridine derivative under KNH2/NH3 at -75°C to form intermediate A and B, with reagents labeled.
+</details>

@@ -1,0 +1,716 @@
+![](images/page_96_image_2.jpg)
+
+氢化铝锂还原酰胺时，强碱性的氢化铝锂会先和弱酸性的酰胺氮上的氢反应成盐（Ⅰ），并放出氢气；然后氢负离子对盐（Ⅰ）中羰基碳进行亲核加成，形成中间体（Ⅱ），接着发生氧消除，同时（Ⅱ）中氮原子提供一对电子与碳形成碳氮双键，生成亚胺阳离子活性中间体（Ⅲ），（Ⅲ）进一步还原，水解得胺。
+
+![](images/page_96_image_4.jpg)
+
+氢化铝锂中的氢被烷氧基取代后，还原能力减弱。若烷氧基位阻加大，则相应试剂的还原能力更弱。但利用此策略，可进行选择性还原。例如，三叔丁氧基氢化铝锂 $\mathrm{[LiAlH(OC(CH_3)_3)_3]}$ 可以把酰卤还原成醛，而不是得到醇。二乙氧基氢化铝锂 $\mathrm{[LiAlH_2(OCH_2CH_3)_2]}$ 、三乙氧基氢化铝锂 $\mathrm{[LiAlH(OCH_2CH_3)_3]}$ 等试剂可以把三级酰胺还原成相应的醛。
+
+![](images/page_96_image_6.jpg)
+
+## 3. 金属钠-醇还原
+
+加热回流条件下，用金属钠-醇（常用乙醇、丁醇或戊醇等）还原酯得到伯醇，此反应称为 Bouveault-Blanc 反应。用此方法还原酯，分子中的碳碳双键不受影响，是工业上生产不饱和醇的主要途径之一。
+
+![](images/page_97_image_4.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing conversion of ethyl acetate to acetaldehyde under Na/C₂H₅OH catalyst
+</details>
+
+反应时，金属钠首先给出价电子，与酯形成自由基负离子（free radical anion）（Ⅰ），（Ⅰ）从钠中再得到一个电子生成（Ⅱ），（Ⅱ）与醇反应生成（Ⅲ）并消除醇钠（R"ONa），（Ⅲ）再消除醇钠（R'ONa）得到醛（Ⅳ）；醛（Ⅳ）重复步骤1\~3，得到醇钠（V），反应结束后经酸化处理得到醇。
+
+![](images/page_97_image_6.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Reaction pathway diagram showing sequential steps of sodium ion conversion to carbonyl compound, including intermediates and reagents like R'ONa and R'OH.
+</details>
+
+»问题 10-7 完成下列反应，写出主要反应产物。
+
+![](images/page_97_image_8.jpg)
+
+## 10.7.6 酰胺的特性
+
+## 1. 酰胺的酸碱性
+
+氨的氮上有一对未共用的电子对，所以氨的水溶液呈碱性。当氨上的氢被酰基取代后，酰胺氮上其他氢的酸性增强了。因此，酰胺能表现出弱碱性和弱酸性。这是因为在酰胺中，氮原子上的未共用电子对与羰基共轭，使得氮上的未共用电子对部分转移到氧原子上，进而促使氮氢键的共用电子对偏向氮原子，而有利于氢以质子的形式离去。例如，将氯化氢气体通入乙酰胺的乙醚溶液中，会生成不溶于乙醚的盐，说明酰胺具有弱碱性。形成的盐不稳定，遇水即分解为乙酰胺和盐酸。
+
+$$
+\mathrm{CH} _ {3} \mathrm{CONH} _ {2} + \mathrm{HCl} \xrightarrow {\text {无水乙醚}} \mathrm{CH} _ {3} \mathrm{CONH} _ {2} \cdot \mathrm{HCl}
+$$
+
+另外，酰胺与金属钠在乙醚溶液中作用，生成钠盐，说明酰胺具有弱酸性。但该钠盐遇水即分解。
+
+$$
+2 \mathrm{CH} _ {3} \mathrm{CONH} _ {2} + 2 \mathrm{Na} \xrightarrow {\text {无水乙醚}} 2 \mathrm{CH} _ {3} \mathrm{CONHNa} + \mathrm{H} _ {2}
+$$
+
+氨中的两个氢原子被两个酰基取代后，氮原子与两个酰基共轭，氮对共轭体系贡献的电子更多，氮上的氢更容易以质子形式离去。因此，酰亚胺氮上的氢具有一定的酸性。它可以与碱发生反应，生成较为稳定的盐。
+
+$$
+\text {Cyclic product} + \text {KOH} \longrightarrow \text {Cyclic product} + \text {H}_2\text {O}
+$$
+
+酰亚胺还可以与溴发生取代反应。例如，丁二酰亚胺与溴反应，得到 N-溴代丁二酰亚胺（N-bromosuccinimide，NBS）。
+
+$$
+\text {N} - \text {溴代丁二酰亚胺} (\mathrm{NBS}) + \mathrm{HBr} \xrightarrow {\mathrm{Br} _ {2}} \text {N} - \mathrm{Br}
+$$
+
+## 2. 酰胺脱水
+
+酰胺与五氧化二磷或氯化亚砜共热或高温加热，会发生分子内脱水生成腈。这是合成腈的最常用方法之一。
+
+$$
+\begin{array}{r l} & \text {CHCHCONH} _ {2} \xrightarrow [ \mathrm{P} _ {2} \mathrm{O} _ {5} , 2 8 0 ^ {\circ} \mathrm{C} ]{\mathrm{P} _ {2} \mathrm{O} _ {5}} \text {CHCN} \\ & \text {CHCHCONH} _ {2} \xrightarrow [ \mathrm{SOCl} _ {2} , \text {回流} ]{\mathrm{P} _ {2} \mathrm{O} _ {5}} \text {CHCN} \\ & \text {CHCHCHCHCHCHCHCN} \end{array} 85\%
+$$
+
+酰胺羰基氧原子具有亲核性。使用氯化亚砜脱水时，羰基氧与氯化亚砜首先发生亲核取代，随后发生消除反应，生成腈，同时释放出二氧化硫和氯化氢。
+
+![](images/page_99_image_2.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction mechanism showing sulfonation of amine with chlorine to form a chlorinated alkene, followed by HCl elimination and subsequent cyclization to R-CN.
+</details>
+
+## 3. Hofmann 降解反应
+
+伯酰胺与溴或氯在碱溶液中作用，生成少一个碳原子的伯胺。该反应通常称为 Hofmann 降解反应，也称为 Hofmann 重排反应。该反应产率高、产品较纯，是制备伯胺的有效策略之一。
+
+![](images/page_99_image_5.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing bromination of a ketone to form a 94% product under Br₂ and NaOH/H₂O conditions
+</details>
+
+Hofmann 重排反应的机理如下:碱夺去酰胺氮原子上的一个质子，形成酰胺负离子；酰胺负离子的氮原子发生卤化反应，形成 N-卤代酰胺中间体；过量的碱进一步夺去 N-卤代酰胺中间体的质子（由于卤素的吸电子作用，N-卤代酰胺中间体酸性更强），生成 N-卤代酰胺负离子；N-卤代酰胺负离子脱卤，生成酰基氮烯，氮烯又称乃春（nitrene）；酰基氮烯中间体的氮原子最外层只有 6 个电子，极不稳定，会立即发生 1,2-迁移，与羰基相连的烃基带着一对价电子转移到氮原子上，生成异氰酸酯（isocyanate）。由于缺少氮烯中间体存在的证据，因此，也有人认为 N-卤代酰胺负离子的脱卤与烃基 1,2-迁移是同时发生的。最后，异氰酸酯与水反应，生成不稳定的取代氨基酸，进而脱羧得到伯胺。
+
+![](images/page_99_image_7.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["R-C(=O)-NH2"] --> B["HO⁻ + H₂O"]
+  B --> C["R-C(=O)-NH"]
+  C --> D["X₂ + X⁻"]
+  D --> E["R-C(=O)-NH-X"]
+  E --> F["HO⁻ + H₂O"]
+  F --> G["R-C(=O)-N-X"]
+  
+  H["R-NH₂"] <--> I["CO₂"]
+  I --> J["HO-C(=O)-NH-R"]
+  J --> K["H₂O"]
+  K --> L["O=C=N-R"]
+  
+  M["N-卤代酰胺负离子"] --> N["1,2-迁移"]
+  N --> O["X⁻"]
+  O --> P["1,2-迁移"]
+  P --> Q["[R-C(=O)-N:]"]
+  
+  R["异氰酸酯"] -.-> S["酰基氮烯"]
+```
+</details>
+
+值得指出的是，在 Hofmann 重排反应中，如果发生迁移的烃基碳原子为手性碳原子，迁移后其构型不变。
+
+![](images/page_99_image_9.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing bromination of a ketone to form a diester under brate and sodium hydroxide conditions
+</details>
+
+»问题 10-8 写出下面反应的反应机理。
+
+![](images/page_99_image_11.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing bromination of a ketone to form a diester under basic conditions
+</details>
+
+## 10.7.7 烯酮的反应
+
+与联烯相似，烯酮的两个 $\pi$ 键呈正交式，特别容易打开，化学性质十分活泼。最简单的烯酮是乙烯酮（$\mathrm{CH}_2 = \mathrm{C} = \mathrm{O}$）。它是一种有毒气体，沸点为 $-48^{\circ}\mathrm{C}$。现以乙烯酮为例，介绍其反应性质。
+
+## 1. 羰基的加成
+
+烯酮的羰基可和多种含活泼氢的化合物，如水、卤化氢、羧酸、醇、硫醇、氨等发生加成反应。加成时，氢总加在氧上，另一部分加在碳上，生成的烯醇经互变异构得到羧酸、酰卤、酸酐、酯、硫酯、酰胺等。这些反应中，化合物中的活泼氢都被乙酰基取代，因此，烯酮是一种理想的乙酰化试剂（acetylation reagent）。工业上是用此反应制备乙酸酐。
+
+![](images/page_100_image_6.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["H2C=C=O"] --> B["H2O"]
+  A --> C["HX"]
+  A --> D["RCOOH"]
+  A --> E["ROH"]
+  A --> F["RSH"]
+  A --> G["NH3"]
+  
+  B --> H["H2C=CH(OH)X"]
+  C --> I["H2C=CH(OH)X"]
+  D --> J["H2C=CH(OH)OOCR"]
+  E --> K["H2C=CH(OH)OR"]
+  F --> L["H2C=CH(OH)SR"]
+  G --> M["H2C=CH(OH)NH2"]
+  
+  H --> N["CH3COH"]
+  I --> O["CH3CX"]
+  J --> P["CH3COCR"]
+  K --> Q["CH3COR"]
+  L --> R["CH3CSR"]
+  M --> S["CH3CNH2"]
+  
+  N --> T["羧酸"]
+  O --> U["酰卤"]
+  P --> V["酸酐"]
+  Q --> W["酯"]
+  R --> X["硫酯"]
+  S --> Y["酰胺"]
+```
+</details>
+
+烯酮也可以和格氏试剂发生反应，水解后生成酮。
+
+$$
+\mathrm{H} _ {2} \mathrm{C} = \mathrm{C} = \mathrm{O} + \mathrm{RMgX} \longrightarrow \mathrm{H} _ {2} \mathrm{C} = \underset {\mathrm{R}} {\overset {\mathrm{OMgX}} {\rightleftharpoons}} \xrightarrow {\mathrm{H} _ {2} \mathrm{O}} \underset {\mathrm{R}} {\overset {\mathrm{O}} {\rightleftharpoons}}
+$$
+
+## 2. 与甲醛反应及烯酮二聚
+
+在氯化锌或三氯化铝等 Lewis 酸的作用下，烯酮与甲醛反应，可生成  $\beta-$  丙内酯（ $\beta-propanolactone$ ）。由于环张力， $\beta-$  丙内酯容易与亲核试剂发生开环反应。在合适的条件下，乙烯酮可以二聚生成二乙烯酮。二乙烯酮是取代的  $\beta-$  丙内酯，加热又重新分解为乙烯酮。因此，二乙烯酮是乙烯酮的一种保存形式。
+
+![](images/page_100_image_11.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Two-step chemical reaction scheme showing oxidation of aldehyde to β-catalyzed carbonyl and then to diethyl ketone
+</details>
+
+»问题 10-9 从二甲基乙烯酮为起始原料制备如下化合物。
+
+(1) $(\mathrm{CH}_3)_2\mathrm{CHCOOH}$ (2) $(\mathrm{CH}_3)_2\mathrm{CHCONHCH}_3$ (3) $(\mathrm{CH}_3)_2\mathrm{CHCO}_2\mathrm{CH}_2\mathrm{CH}_3$
+
+## 10.8 羧酸及羧酸衍生物的制备
+
+## 10.8.1 羧酸的制备
+
+## 1. 氧化法制备
+
+羧酸可通过烯、炔的氧化（参见 5.8.6 小节），醇的氧化，醛、酮的氧化（参见 9.5.2 小节），以及芳烃的氧化（参见 6.6.1 小节）来制备。
+
+## 2. 由羧酸衍生物和腈的水解制备
+
+羧酸也可通过羧酸衍生物及腈的水解来制备（参见 10.7.2 小节）。
+
+## 3. 由格氏试剂制备
+
+格氏试剂和二氧化碳发生反应生成羧酸镁盐，经水解得到羧酸。该方法可由一级、二级、三级和芳香卤代烃制备多一个碳原子的羧酸。低温对反应有利，一般将反应温度控制在-10\~10℃。试验时，在冷却条件下可将二氧化碳通入格氏试剂的乙醚溶液中；也可将格氏试剂的乙醚溶液加入过量的干冰中，这时干冰既是反应试剂又是冷却剂。
+
+![](images/page_101_image_12.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Organic synthesis reaction pathway showing magnesium-catalyzed transformation with water-eth醚, CO2, and H3O+ to yield 86% product
+</details>
+
+## 4. 由油脂的水解制备
+
+天然动植物油脂是高级脂肪酸的甘油酯。油脂在碱性条件下水解得到高级脂肪酸盐，经酸化后得到不同碳链的高级脂肪酸。
+
+![](images/page_101_image_15.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing oxidation of a ketone to form aldehyde and its subsequent reduction
+</details>
+
+## 10.8.2 酰卤的制备
+
+羧酸与无机酰卤反应时，羧羟基被卤原子取代，得到酰卤产物，这是制备酰卤的一般方法（参见10.6.2小节）。常用的无机酰卤包括 $\mathrm{SOCl}_2$ 、 $\mathrm{PX}_3$ 、 $\mathrm{PX}_5$ （X为氯或溴）。
+
+## 10.8.3 酸酐的制备
+
+酰氯与羧酸钠盐发生亲核取代反应生成酸酐，这是制备对称及非对称酸酐的经典方法。
+
+![](images/page_102_image_2.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing chloroacetate reacting with sodium acetate to form a ketone, yielding 66% product
+</details>
+
+对于相对分子质量较大的酸酐，可通过相应羧酸与乙酸酐的酸酐交换反应来制备。在该可逆反应中，乙酸酐作为脱水剂生成乙酸，通过移去乙酸，促使反应平衡向右移动，生成新的酸酐。酸酐交换反应只适用于制备相对分子质量较大的对称酸酐。
+
+![](images/page_102_image_4.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing condensation between aldehyde and ketone under condition 2
+</details>
+
+一些二元羧酸的分子内脱水反应也可用于制备五元环或六元环状酸酐（参见 10.6.8 小节）。
+
+工业上制备邻苯二甲酸酐则采用萘或邻二甲苯在五氧化二钒为主的钒系催化剂体系下进行催化氧化反应。
+
+![](images/page_102_image_7.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing conversion of naphthalene to a ketone under V2O5/O2 conditions at 400–500 °C, followed by oxidation to a substituted benzene product.
+</details>
+
+## 10.8.4 酯的制备
+
+羧酸的酯化反应（参见10.6.3小节）及酰氯和酸酐的醇解（参见10.7.1小节）是制备酯的常用方法。但在一些情况下，羧酸与醇的酸催化酯化反应不能得到所需要的酯。因此常以 $4-(N,N-$ 二甲氨基)吡啶（DMAP）为催化剂，以化学计量或过量二环己基碳二亚胺（dicyclohexylcarbodiimide，DCC）为脱水剂，在无水条件下实现羧酸与醇直接反应，生成酯和二环己基脲（DCU）。由于DCU不溶于常用的有机溶剂（如二氯甲烷），反应结束后可通过过滤滤除DCU。此类酯化反应在中性条件下进行，也适用于对酸敏感的底物。
+
+![](images/page_102_image_10.jpg)
+
+反应过程中，DCC 活化羧基。首先，羧酸的质子转移到 DCC 上，使得羧酸根负离子具有更好的亲核性，而质子化的 DCC 具有更好的亲电性；随后两者进行亲核加成反应得到活化酯中间体 A；A 的结构类似酸酐，它受到醇的亲核进攻，发生类似酸酐的醇解反应，得到 DCU 和酯。
+
+![](images/page_103_image_3.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction mechanism showing oxidation and reduction reactions of a cyclic amine derivative with carboxylic acid groups
+</details>
+
+此外，羧酸与重氮甲烷反应，可以制备羧酸甲酯。反应过程中重氮甲烷先从羧酸中夺取一个质子，随后羧酸根负离子对质子化的重氮甲烷进攻，经历  $S_{N}2$  反应形成羧酸甲酯，并放出氮气。
+
+![](images/page_103_image_5.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction mechanism showing oxidation of a ketone to form an ester and then to form a protonated amine
+</details>
+
+## 10.8.5 酰胺的制备
+
+酰胺可以通过羧酸衍生物的氨（胺）解来制备（参见10.7.3小节），也可采用腈的部分水解（参见10.7.2小节）或铵盐的可控脱水（参见10.6.4小节）来制备。
+
+在 DMAP 的催化作用下，利用脱水剂 DCC 可实现羧酸与伯胺或仲胺的脱水缩合，生成酰胺。
+
+$$
+\mathrm{RCO} _ {2} \mathrm{H} + \mathrm{R} ^ {\prime} \mathrm{NH} _ {2} + \mathrm{DCC} \xrightarrow {\text {DMAP}} \mathrm{RCONHR} ^ {\prime} + \mathrm{DCU}
+$$
+
+在酸催化下，肟发生重排，也能生成酰胺。该反应称为 Beckmann 重排反应。
+
+![](images/page_103_image_11.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction showing protonation of a hydroxyl group to form a carbonyl compound with NHR and H⁺ counterion
+</details>
+
+Beckmann 重排反应属于 1,2-重排反应。其反应机理参见 9.5.1 小节。
+
+Beckmann 重排反应的特点是:① 离去基团与迁移基团处于反位。② 离去基团的离去和迁移基团的迁移是同步进行的。③ 迁移基团的构型保持不变。
+
+![](images/page_104_image_4.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing dehydration of a diester to form a ketone using sulfuric acid and alkene
+</details>
+
+## 10.8.6 腈的制备
+
+卤代烷与氰化钾（钠）的亲核取代反应是制备腈的常用方法。酰胺的脱水反应也可用于制备腈（参见 10.7.6 小节）。
+
+## 10.8.7 烯酮的制备
+
+烯酮一般用  $\alpha-$  溴代酰溴与锌粉共热，通过单分子共轭碱消除反应（E1cb 反应），失去两个溴原子后得到。
+
+![](images/page_104_image_9.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing bromination of a carbonyl compound with zinc under heating to form a carbamate ester and zinc bromide
+</details>
+
+α-重氮羰基化合物经 Wolff 重排也是制备烯酮的常用方法。
+
+![](images/page_104_image_11.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing amine reacting with silver iodide to form a carbonyl compound
+</details>
+
+在工业上，乙烯酮可以通过丙酮或乙酸的热裂解反应制备。
+
+$$
+\mathrm{CH} _ {3} \mathrm{COCH} _ {3} \xrightarrow {7 0 0 \sim 8 0 0 ^ {\circ} \mathrm{C}} \begin{array}{c} \mathrm{H} \\ \mathrm{H} \end{array} = \mathrm{C} = \mathrm{O} + \mathrm{CH} _ {4}
+$$
+
+$$
+\mathrm{CH} _ {3} \mathrm{COOH} \xrightarrow [ 7 0 0 \sim 7 4 0 ^ {\circ} \mathrm{C} ]{\mathrm{AlPO} _ {4}} \begin{array}{c} \mathrm{H} \\ \mathrm{H} \end{array} = \mathrm{C} = \mathrm{O} + \mathrm{H} _ {2} \mathrm{O}
+$$
+
+## 10.9 聚酯与聚酰胺
+
+天然或人工合成的纤维都是高相对分子质量的聚合物。天然纤维来源于动物或植物，这也决定了天然纤维化学结构的基础属性。例如，羊毛、丝绸等来源于动物的天然纤维是蛋白质，它们由氨基酸通过酰胺键连接而成；而棉花、亚麻布等来源于植物的天然纤维是由葡萄糖单体组成的糖类，具有纤维素的结构。
+
+![](images/page_105_image_2.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical structure of a peptide-like molecule with multiple amide and ester linkages
+</details>
+
+动物纤维-蛋白质-酰胺键
+
+![](images/page_105_image_4.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Three identical glycoside molecular structures with multiple hydroxyl groups and sugar moieties
+</details>
+
+植物纤维-糖类-葡萄糖
+
+链增长聚合（chain-growth polymerization）和逐步增长聚合（step-growth polymerization）是制备人工合成聚合物的两种主要方式。聚酯和聚酰胺是采用逐步增长聚合策略合成的两类重要聚合物。酰羰基的亲核取代反应是此类转化反应中新键形成的关键步骤。
+
+聚酯是由多元醇和多元酸缩聚而得的聚合物。聚对苯二甲酸乙二醇酯（PET）是热塑性聚酯中最重要的品种之一，其合成方法参见10.7.1小节。聚酯广泛应用于包装业、电子电器、医疗卫生、建筑、汽车等领域，其中包装是聚酯最大的非纤应用市场，同时也是PET增长最快的领域。
+
+![](images/page_105_image_8.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical structure of a polyene compound with multiple benzene rings and ester linkages
+</details>
+
+聚对苯二甲酸乙二醇酯
+
+聚酰胺是具有通过酰胺键连接的重复单元的聚合物。尼龙-66 是一种重要的聚酰胺产品，其合成方法参见 10.6.4 小节。
+
+![](images/page_105_image_11.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical structure of a polyamide polymer with repeating amide linkages and terminal groups
+</details>
+
+尼龙-66
+
+## 10.10 油脂
+
+天然动植物油脂是高级脂肪酸的甘油酯。在室温条件下，一般是液体的称为油，是固体或半固体的称为脂。油脂不仅可以食用，还是重要的工业原料。油脂用氢氧化钠水解所得不同碳链的高级脂肪酸钠盐可用于制作肥皂。因此，油脂的水解也称为皂化反应。
+
+![](images/page_105_image_15.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing oxidation of a carbonyl compound to form an alcohol and its associated sodium salts
+</details>
+
+油脂
+
+十个碳以上的羧酸钠盐
+
+我国桐油中的桐油酸（eleostearic acid）的三个双键形成共轭体系，使得桐油表现出一些特殊性质，而在油漆工业中占有一定的地位。当桐油等含有共轭双键的油脂涂布在平面上与空气接触时，会形成一层干硬而有弹性的膜，因此，这类油脂也称为干性油（drying oil）。
+
+![](images/page_106_image_3.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical structure of hexadecanol (C6H5O4)
+</details>
+
+## 10.10.1 脂肪酸
+
+天然油脂水解后的脂肪酸是多种酸的混合物，一般是10个碳以上偶数碳原子的饱和酸或不饱和酸。油脂中的饱和酸多是12\~18个碳的羧酸，如月桂酸、肉豆蔻酸、软脂酸（palmitic acid）、硬脂酸（stearic acid）等。几乎所有的油脂中均含有软脂酸；硬脂酸在动物脂肪中含量较多；椰子油中含有大量的月桂酸，有时可高达近50%。油脂中不饱和酸的碳原子数均大于10，分布最广的不饱和酸是油酸（oleic acid），它是橄榄油的主要成分，含量高达85%；亚油酸（linoleic acid）是葵花籽油的主要成分。现常用简单的代号来表示不饱和脂肪酸的碳原子数目及双键的数目和位置。如油酸的代号为18:19C，表示它是一个18碳链的脂肪酸，1代表一个双键，9C代表顺式双键在C9和C10之间。其他类似。
+
+![](images/page_106_image_6.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Structural formulas of acyl alcohols with Chinese names and carbon chain lengths
+</details>
+
+含有一个以上双键的脂肪酸统称为多烯脂肪酸。它对动物的新陈代谢十分重要。动物需要食用含有这些不饱和酸的食物，才能维持身体对多烯脂肪酸的正常需求。
+
+## 10.10.2 脂肪酸的来源
+
+油脂经水解后得到的脂肪酸是混合物，不易分离纯化。工业上通过分馏脂肪酸甲酯或脂肪酸乙酯的方法来提纯脂肪酸。首先，利用油脂与甲醇或乙醇进行酯交换反应，分馏生成脂肪酸甲酯或乙酯和甘油，然后水解脂肪酸甲酯或乙酯，进而得到纯净的脂肪酸。脂肪酸甲酯或乙酯的还原（参见10.7.5小节），可以得到脂肪醇。
+
+![](images/page_106_image_10.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing oxidation of acrylate to form diol and fatty acid methyl ester
+</details>
+
+## 10.10.3 肥皂和合成洗涤剂
+
+高级脂肪酸钠盐同时含有亲油性的长链烃基和亲水性的羧酸根负离子。在水溶液中，这些长链烃基在 van der Waals 作用力下相互接近，聚成一团，似球状，而球状物的表面被亲水性的羧酸根负离子所占据。这种自组装而成的球状物称为胶束（micelle）。当胶束遇到油滴后，胶束中亲油性的烃基即没入油滴中，而亲水性的羧酸根负离子处在油滴外而没入水中。去污时，在机械力的震动和摩擦作用下，大油珠会被分散成细小的油珠，进一步被高级脂肪酸钠盐所形成的胶束包围而分散，不能彼此结合，只能成为较小的油珠悬浮和分散在水中，呈乳液状。
+
+![](images/page_107_image_4.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical structure of a cyclic ester with multiple carboxylic acid groups and a central polyether ring
+</details>
+
+胶束的横切面示意图
+
+普通肥皂只能在软水中使用，当遇到硬水时，会与硬水中的镁盐、钙盐等形成不溶于水的羧酸盐沉淀，并丧失去污能力。由于对肥皂等洗涤剂的需求量、去污效果和环保要求等的不断提升，目前国内外大量使用合成洗涤剂。这些合成洗涤剂的结构不同，但均含有一个极性的水溶性基团（water-soluble group）和一个非极性的亲油性烃基（oil-soluble alkyl group）。其作用原理和肥皂类似，但可以在硬水中使用，因为它们与硬水中的钙盐、镁盐等不能形成不溶于水的沉淀。目前广泛使用的洗涤剂是十二碳醇硫酸酯的钠盐（十二烷基硫酸钠）和12\~18个碳的直链烷基苯磺酸钠。
+
+$$
+\mathrm{CH}_3(\mathrm{CH}_2)_{11}\mathrm{OSO}_3^- \mathrm{Na}^+
+$$
+
+十二烷基硫酸钠
+
+![](images/page_107_image_9.jpg)
+
+烷基苯磺酸钠
+
+## 10.10.4 磷脂和生物膜
+
+在动植物体内含有一类和油脂类似的化合物，称为类脂质，它们也是高级脂肪酸的酯。其中，分子中含有磷的叫磷脂（phosphatide），在植物的种子、蛋黄和脑中含量较多。磷脂多为甘油酯，以脑磷脂（cephalin）和卵磷脂（lecithin）为最重要的存在形式。磷脂中的酰基是相应含有16个碳以上的高级脂肪酸，如硬脂酸、软脂酸、油酸、亚油酸等；磷脂中游离的羟基具有强的酸性，可与碱性胺形成离子偶极键（dipolar bond）。此时，磷脂分子就分为两个部分:一部分是长链的亲油性烃基，另一部分是亲水性的两性离子（zwitterion）。因此，磷脂在水中可以排成两列，形成磷脂双分子层。
+
+![](images/page_108_image_2.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical structure of a phosphorus-containing organic compound with O2CR and NH3 groups
+</details>
+
+磷脂酰乙醇胺
+ $\alpha$ -脑磷脂
+
+![](images/page_108_image_4.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical structure of a phosphorus-containing organic compound with ester and amine functional groups
+</details>
+
+磷脂酰胆碱
+α-卵磷脂
+
+生物膜（biomembrane）由蛋白质（protein）和脂类（主要是磷脂）组成，在细胞吸收外界物质和分泌代谢产物的过程中起重要作用。生物膜对各类物质的渗透性不一样，脂溶性物质可以通过生物膜的类脂部分扩散入细胞。因此，脂类在膜的结构和功能中起着十分重要的作用。
+
+## 10.11 蜡
+
+蜡（wax）多为固体，是由16个碳以上偶数碳原子的羧酸和高级一元醇形成的酯，也存在一些相对分子质量较高的羧酸、醇、碳氢化合物及酮。蜡可用于制备蜡纸、防水剂、光泽剂等。水解蜡可得到相应的高级羧酸和高级醇。
+
+$$
+\mathrm{C}_{25\sim 27}\mathrm{H}_{51\sim 55}\mathrm{COOC}_{20\sim 32}\mathrm{H}_{61\sim 65}
+$$
+
+蜂蜡, 熔点60\~62℃
+
+存在于蜜蜂腹部
+
+$$
+\mathrm{C}_{15}\mathrm{H}_{31}\mathrm{COOC}_{16}\mathrm{H}_{33}
+$$
+
+鲸蜡, 熔点41\~46℃
+
+存在于鲸鱼头部
+
+$$
+\mathrm{C}_{25}\mathrm{H}_{51}\mathrm{COOC}_{30}\mathrm{H}_{61}
+$$
+
+巴西蜡, 熔点83\~90℃
+
+存在于巴西棕榈叶中
+
+## 10.12 碳酸衍生物
+
+碳酸可以看成一个双羟基化合物，它的水合物称为原碳酸（ortho-carbonic acid）。碳酸和原碳酸都是很不稳定的化合物。它们在低温（-70 °C）或压力下可以稳定存在，但温度稍微升高，即可分解为二氧化碳和水。但是，碳酸和原碳酸的一些衍生物是比较稳定的，并广泛应用于有机合成中。
+
+![](images/page_108_image_20.jpg)
+
+碳酸
+
+![](images/page_108_image_22.jpg)
+
+原碳酸
+
+## 10.12.1 光气和氯甲酸酯
+
+碳酸的二酰氯又叫光气（phosgene），在室温时为气体，沸点为  $8^{\circ}$ C，有剧毒。工业上，以活性炭作催化剂，用氯气和一氧化碳在  $200^{\circ}$ C 反应制备光气；用在实验室，光气可由四氯化碳和 80% 的发烟硫酸制备。光气溶于甲苯且不与之反应，因此，新制备的光气常用甲苯吸收并储存。
+
+工业制备:
+
+$$
+\mathrm{Cl} _ {2} + \mathrm{CO} \xrightarrow [ \text {活性炭} ]{2 0 0 ^ {\circ} \mathrm{C}} \mathrm{COCl} _ {2}
+$$
+
+实验室制备:
+
+$$
+\mathrm{CCl} _ {4} + 2 \mathrm{SO} _ {3} \longrightarrow \mathrm{COCl} _ {2} + \mathrm{S} _ {2} \mathrm{O} _ {5} \mathrm{Cl} _ {2}
+$$
+
+光气和酰氯一样，可与多种亲核试剂发生反应。例如，光气氨解生成脲（如与氨气反应生成尿素），醇解生成碳酸二酯。
+
+![](images/page_109_image_7.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction pathway showing conversion of urea to diester and then to carboxylic acid
+</details>
+
+当使用过量的光气与醇反应时，则生成氯甲酸酯。例如，将苄醇倒入过量光气的甲苯溶液中，生成氯甲酸苄酯，其缩写为 $\mathrm{CbzCl}$ 。常利用它的氨解或醇解反应保护反应物分子中的氨（胺）基或羟基。合成反应结束后，通过催化氢化的方法，在室温条件下即可除去该保护基团。
+
+![](images/page_109_image_9.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["Cl-C(=O)-Cl"] -->|"PhCH2OH\nHCl"| B["Ph-CH2-O-C(=O)-Cl"]
+  B -->|"RNH2\nHCl"| C["RHN-C(=O)-O-CH2-Ph"]
+  C -->|"Pd/C, H2\nCO2, PhCH3"| D["RNHCbz"]
+  D --> E["RNH2"]
+```
+</details>
+
+光气和氯甲酸酯是重要的有机合成试剂，已被广泛应用于许多精细化学品（医药、农药、染料等）的工业生产中。例如，光气与芳烃的傅-克反应生成酰氯，水解可得芳香酸，或再和另一分子芳烃反应，生成二芳基酮。
+
+![](images/page_109_image_11.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing chlorination of benzene with dichloromethacrylate under aluminum chloride, followed by hydrolysis to form carboxylic acid and phenylbenzene derivatives.
+</details>
+
+由于光气是剧毒气体，使用时应特别注意安全。目前，在工业生产和实验室研究中，可以用碳酸双三氯甲酯（俗称三光气）来替代光气。三光气是白色固体，熔点为81\~83℃，沸点为203\~206℃。三光气不溶于水，可溶于氯仿、二氯甲烷、乙醚、四氢呋喃等有机溶剂，使用方便且较为安全，可直接或在碱（如三乙胺、吡啶等）催化作用下与醇、胺等亲核试剂反应。
+
+![](images/page_109_image_13.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Pyridine-catalyzed reaction of chloroacetate under light irradiation, yielding 83% product with benzylamine·HCl
+</details>
+
+## 10.12.2 尿素（脲）和胍
+
+尿素（urea，又称脲）也称碳酰胺，是碳酸最重要的衍生物之一，也是人类和多数动物新陈代谢的最终产物之一，每日约产生30 g，存在于尿液中。脲是结晶性固体，熔点为132 °C，能溶于水和乙醇，不溶于乙醚。它是最早由人体排泄物中提取的一种纯有机化合物（1773年），在有机化学发展史中占有重要地位。工业上，脲是用二氧化碳和过量的氨在20 MPa/180 °C下反应制备的。
+
+$$
+2 \mathrm{NH} _ {3} + \mathrm{CO} _ {2} \longrightarrow \mathrm{H} _ {2} \mathrm{NCOONH} _ {4} \longrightarrow \mathrm{H} _ {2} \mathrm{N} \stackrel {\mathrm{O}} {\mathrm{C}} \mathrm{NH} _ {2} + \mathrm{H} _ {2} \mathrm{O}
+$$
+
+脲具有酰胺的结构，因此具有酰胺的一般化学性质。但脲分子中同一个碳上连有两个氨基，因此它还有一些特性。脲的结构至今还有些争论。脲中碳氮键的键长是137 pm，比一般的碳氮单键要短，但比碳氮双键要长；同时脲中碳氧双键的键长是125 pm，比一般的碳氧双键要长。因此，脲表述为两性离子的结构较好。
+
+$$
+\mathrm{H} _ {2} \mathrm{N} \stackrel {\mathrm{O}} {\underset {\mathrm{NH} _ {2}} {\rightleftharpoons}} \quad \longleftrightarrow \quad \mathrm{H} _ {2} \mathrm{N} ^ {+} \stackrel {\mathrm{O} ^ {-}} {\underset {\mathrm{NH} _ {2}} {\rightleftharpoons}}
+$$
+
+脲具有弱碱性，可与强酸作用生成盐。例如，脲与硝酸反应生成硝酸脲，它不溶于浓硝酸，只微溶于水。利用此性质可以从尿液中分离出脲。
+
+$$
+\mathrm{H} _ {2} \mathrm{N} ^ {+} = \underset {\mathrm{NH} _ {2}} {\overset {\mathrm{O} ^ {-}} {\rightleftharpoons}} + \mathrm{HNO} _ {3} \longrightarrow \mathrm{H} _ {2} \mathrm{N} ^ {+} = \underset {\mathrm{NH} _ {2}} {\overset {\mathrm{OH}} {\rightleftharpoons}} \cdot \mathrm{NO} _ {3} ^ {-}
+$$
+
+在乙醇钠存在下，脲与丙二酸酯反应，生成环状的丙二酰脲。丙二酰脲具有酸性，又称巴比妥酸（barbituric acid），它的衍生物曾用作安眠药。
+
+$$
+\mathrm{H} _ {2} \mathrm{N} \stackrel {\mathrm{O}} {\mathrm{C}} \mathrm{NH} _ {2} + \mathrm{C} _ {2} \mathrm{H} _ {5} \mathrm{O} \stackrel {\mathrm{O}} {\mathrm{C}} \mathrm{CH} _ {2} \mathrm{OC} _ {2} \mathrm{H} _ {5} \xrightarrow {\mathrm{C} _ {2} \mathrm{H} _ {5} \mathrm{ONa}} \text {巴比妥酸} + 2 \mathrm{C} _ {2} \mathrm{H} _ {5} \mathrm{OH}
+$$
+
+脲分子中有氨基，与亚硝酸作用发生重氮化反应，随后放出氮气。利用该反应可以除去重氮化反应后过量的亚硝酸。
+
+$$
+\mathrm{CO} (\mathrm{NH} _ {2}) _ {2} + 2 \mathrm{HNO} _ {2} \longrightarrow \mathrm{CO} _ {2} + 2 \mathrm{N} _ {2} + 3 \mathrm{H} _ {2} \mathrm{O}
+$$
+
+脲的主要用途是作为固体氮肥，含氮量达 $46.6\%$ ，适用于各种土壤和作物。脲与甲醛作用可生成脲甲醛树脂。脲能与多种具有一定链长的直链烷烃、醇、酸和酯等形成结晶化合物，也叫包合物（clathrate）。研究这些包合化合物的晶体，表明脲形成一个筒状的螺旋体，中间有一个 $500~\mathrm{pm}$ 的通道，直链化合物可以放置在该通道里，而支链化合物不能。因此，包合化合物可将一些直链化合物与其支链同分异构体分开。
+
+胍（guanidine）也称亚氨脲，是一种有机强碱，也是一种很重要的化合物，在许多生理活性分子中都含有这个基团。二甲双胍是口服类降血糖药，是治疗2型糖尿病的一线药物。
+
+![](images/page_111_image_4.jpg)
+
+胍
+
+![](images/page_111_image_6.jpg)
+
+二甲双胍
+
+## 10.12.3 碳酸酯
+
+碳酸二甲酯（dimethyl carbonate，DMC）是一种重要的有机合成中间体，也是一种低毒、环保性能优异、用途广泛的化工原料。它在室温下为无色透明液体，熔点为4℃，沸点为90.3℃。由于具有低毒、易于生物降解，溶解性好，含氧量较高（53.7%），抗爆指数高等性质，碳酸二甲酯是理想的燃油添加剂。在燃烧过程中不冒黑烟，可降低碳烟粒子及氮氧化物的排放量。碳酸二甲酯主要通过酯交换法和氧化酰基化法合成。
+
+酯交换法:
+
+![](images/page_111_image_11.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing the conversion of a ketone to a diester using 2CH3OH catalyst
+</details>
+
+氧化酰基化法:
+
+$$
+2 \mathrm{CH} _ {3} \mathrm{OH} + \mathrm{CO} + \frac {1}{2} \mathrm{O} _ {2} \longrightarrow \begin{array}{c} \mathrm{O} \\ \mathrm{O} \end{array} + \mathrm{H} _ {2} \mathrm{O}
+$$
+
+碳酸二甲酯
+
+碳酸二甲酯也可用于合成其他化合物。例如，多菌灵可用碳酸二甲酯合成。它是一种广谱性杀菌剂，对多种作物由真菌（如半知菌、多子囊菌）引起的病害有防治效果。
+
+![](images/page_111_image_16.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing conversion of a pyridine derivative to a quinolinone derivative using DMC and CaCl2 reagents
+</details>
+
+多菌灵
+
+碳酸二甲酯（DMC）、碳酸乙甲酯（ethyl methyl carbonate，EMC）、碳酸乙烯酯（ethylene carbonate，EC）、碳酸丙烯酯（propylene carbonate，PC）都是很好的锂电池电解液。氟代碳酸乙烯酯（fluoroethylene carbonate，FEC）是很好的锂离子电池电解液添加剂。它能形成紧密结构层但又不增加阻抗，形成固体电解质界面（solid electrolyte interface，SEI）膜的性能更好，能阻止电解液的进一步分解，提高电解液的低温性能，提高锂电池的循环寿命。
