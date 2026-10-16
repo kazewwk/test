@@ -1,0 +1,2612 @@
+{
+  "pages": [
+    {
+      "page_idx": 32,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.762,
+            0.067,
+            0.858,
+            0.081
+          ],
+          "content": "1.4 泊松过程"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.875,
+            0.069,
+            0.892,
+            0.08
+          ],
+          "content": "25"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.418,
+            0.121,
+            0.725,
+            0.254
+          ],
+          "content": "\\begin{array}{l} = \\sum_ {k = 0} ^ {\\infty} \\mathbf {P} (N _ {s} = k) \\mathbf {E} \\bigg (\\exp \\left\\{\\mathrm{i} \\sum_ {j = 1} ^ {n} \\theta_ {j} \\xi_ {k + j} \\right\\} \\bigg) \\\\ = \\sum_ {k = 0} ^ {\\infty} \\mathbf {P} (N _ {s} = k) \\prod_ {j = 1} ^ {n} \\int_ {\\mathbb {R}} \\mathrm{e} ^ {\\mathrm{i} \\theta_ {j} x} \\mu (\\mathrm{d} x) \\\\ = \\prod_ {j = 1} ^ {n} \\int_ {\\mathbb {R}} \\mathrm{e} ^ {\\mathrm{i} \\theta_ {j} x} \\mu (\\mathrm{d} x), \\\\ \\end{array}",
+          "image_source": "images/page_32_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.266,
+            0.806,
+            0.284
+          ],
+          "content": "所以 $\\{\\xi_{N_s + n}:n\\geqslant 1\\}$ 是独立同分布随机变量序列且有分布 $\\mu$ .再由(1.4.6)式有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.388,
+            0.295,
+            0.856,
+            0.339
+          ],
+          "content": "X _ {s + t} - X _ {s} = \\sum_ {n = 1} ^ {N _ {s + t} - N _ {s}} \\xi_ {N _ {s} + n}. \\tag {1.4.8}",
+          "image_source": "images/page_32_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.351,
+            0.857,
+            0.413
+          ],
+          "content": "易知 $(N_{s + t} - N_s:t\\geqslant 0)$ 是以 $\\alpha \\geqslant 0$ 为参数的零初值泊松过程, 且与 $\\{\\xi_{N_s + n}:n\\geqslant 1\\}$ 独立. 因此, 在 $N_{s + t} - N_s = k$ 条件下, 上式右边为 $k$ 个以 $\\mu$ 为分布的独立同分布随机变量之和. 再根据全期望公式有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.334,
+            0.424,
+            0.701,
+            0.549
+          ],
+          "content": "\\begin{array}{l} \\mathbf {E} \\mathrm{e} ^ {\\mathrm{i} \\theta (X _ {s + t} - X _ {s})} = \\mathbf {E} \\exp \\left\\{\\mathrm{i} \\theta \\sum_ {n = 1} ^ {N _ {s + t} - N _ {s}} \\xi_ {N _ {s} + n} \\right\\} \\\\ = \\mathrm{e} ^ {- \\alpha t} \\sum_ {k = 0} ^ {\\infty} \\frac {(\\alpha t) ^ {k}}{k !} \\left[ \\int_ {\\mathbb {R}} \\mathrm{e} ^ {\\mathrm{i} \\theta x} \\mu (\\mathrm{d} x) \\right] ^ {k} \\\\ = \\exp \\left\\{t \\int_ {\\mathbb {R}} (\\mathrm{e} ^ {\\mathrm{i} \\theta x} - 1) \\mu (\\mathrm{d} x) \\right\\}. \\\\ \\end{array}",
+          "image_source": "images/page_32_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.559,
+            0.856,
+            0.599
+          ],
+          "content": "即 (1.4.7) 式成立. 对任何  $0 \\leqslant t_{0} < t_{1} < t_{2} < \\cdots < t_{n}$  及实数  $\\theta_{1}, \\theta_{2}, \\cdots, \\theta_{n}$ ，利用形如 (1.4.8) 式的表达可以得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.611,
+            0.763,
+            0.652
+          ],
+          "content": "\\mathbf {E} \\exp \\left\\{\\mathrm{i} \\sum_ {k = 1} ^ {n} \\theta_ {k} (X _ {t _ {k}} - X _ {t _ {k - 1}}) \\right\\} = \\prod_ {k = 1} ^ {n} \\mathbf {E} \\exp \\left\\{\\mathrm{i} \\theta_ {k} (X _ {t _ {k}} - X _ {t _ {k - 1}}) \\right\\}.",
+          "image_source": "images/page_32_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.664,
+            0.856,
+            0.704
+          ],
+          "content": "由随机向量的特征函数的性质知  $X_{t_{1}} - X_{t_{0}}, X_{t_{2}} - X_{t_{1}}, \\cdots, X_{t_{n}} - X_{t_{n-1}}$  相互独立. 显然这些随机变量与  $X_{t_{0}} = X_{0} = \\xi_{0}$  独立. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.712,
+            0.856,
+            0.798
+          ],
+          "content": "例 1.4.2 在某保险公司的理赔业务中, 申请赔偿的顾客按照参数为 $\\alpha > 0$ 的零初值泊松过程 $(N_{t}: t \\geqslant 0)$ 到达, 而顾客申请赔偿的金额由独立同分布的非负随机变量序列 $\\{\\xi_{n}: n \\geqslant 0\\}$ 给出. 这样, 在时间段 $(0, t]$ 到来的顾客申请赔偿金额的总和 $X_{t}$ 就由 (1.4.6) 式给出, 而 $(X_{t}: t \\geqslant 0)$ 是一个复合泊松过程. 则对任何 $x \\geqslant 0$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.35,
+            0.809,
+            0.65,
+            0.851
+          ],
+          "content": "\\mathbf {P} (X _ {t} \\geqslant x) = \\mathrm{e} ^ {- \\alpha t} \\sum_ {k = 0} ^ {\\infty} \\frac {(\\alpha t) ^ {k}}{k !} \\mu^ {* k} [ x, \\infty),",
+          "image_source": "images/page_32_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.863,
+            0.856,
+            0.927
+          ],
+          "content": "其中 $\\mu^{*k}$ 表示 $\\mu$ 的 $k$ 重卷积. 对于足够小的概率值 $p (0 < p < 1)$, 由上式可确定出最小的 $x = x_{t}(p) \\geqslant 0$ 使得 $\\mathbf{P}(X_{t} \\geqslant x) \\leqslant p$. 这样只要准备额度为 $x_{t}(p)$ 的预备金, 在时间段 $(0, t]$ 出现赔偿金不足的概率就不会超过 $p$."
+        }
+      ]
+    },
+    {
+      "page_idx": 33,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.068,
+            0.125,
+            0.08
+          ],
+          "content": "26"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.066,
+            0.304,
+            0.081
+          ],
+          "content": "第一章 基本概念和例子"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.122,
+            0.821,
+            0.286
+          ],
+          "content": "例 1.4.3 考虑某个服务站的工作情况. 设其顾客按照参数为  $\\alpha > 0$  的零初值泊松过程 ( $N_{t}: t \\geqslant 0$ ) 到达, 而顾客所需服务的工作量由独立同分布的非负随机变量序列  $\\{\\xi_{n}: n \\geqslant 0\\}$  给出. 令 ( $X_{t}: t \\geqslant 0$ ) 是由 (1.4.6) 式定义的复合泊松过程, 则  $X_{t}$  表示在时间段 (0, t] 到来的顾客所需服务工作量的总和. 设服务站的工作效率为  $\\beta > 0$ , 则其在时间段 (0, t] 能够提供的最大服务量为  $\\beta t$ . 记  $Y_{t} = X_{t} - \\beta t$ . 考虑到在等待顾客数量清零时服务器不提供服务, 可以发现 t 时刻等待的顾客所需服务的工作总量应为  $Z_{t} = Y_{t} - \\inf_{0 \\leqslant s \\leqslant t} Y_{s}$ ."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.175,
+            0.306,
+            0.248,
+            0.325
+          ],
+          "level": 2,
+          "content": "练习题"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.139,
+            0.351,
+            0.819,
+            0.464
+          ],
+          "sub_type": "text",
+          "content": "1. 设 $(N(t): t \\geqslant 0)$ 是参数为 $\\lambda > 0$ 的泊松过程。对 $t > s > 0$ 求条件概率 $\\mathbf{P}(N(s) = k | N(t) = n)$。\n2. 设  $(N_{t}: t \\geqslant 0)$  是从零出发参数为  $\\alpha > 0$  的泊松过程。对  $n \\geqslant 1$  令  $S_{n} = \\inf\\{t \\geqslant 0 : N_{t} \\geqslant n\\}$  是  $(N_{t}: t \\geqslant 0)$  的第 n 次跳跃的等待时间。证明对于 t > 0 在给定  $\\{N(t) = n\\}$  之下  $(S_{1}, S_{2}, \\cdots, S_{n})$  的联合条件概率分布密度为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.239,
+            0.482,
+            0.672,
+            0.533
+          ],
+          "content": "f (x _ {1}, x _ {2}, \\dots , x _ {n}) = \\left\\{ \\begin{array}{l l} n! / t ^ {n}, & 0 <   x _ {1} <   x _ {2} <   \\dots <   x _ {n}, \\\\ 0, & \\text {其他.} \\end{array} \\right.",
+          "image_source": "images/page_33_equation_7.jpg"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.139,
+            0.553,
+            0.818,
+            0.713
+          ],
+          "sub_type": "text",
+          "content": "3. 对 t > 0 令  $(X_{1}, X_{2}, \\cdots, X_{n})$  是服从均匀分布  $U(0, t)$  的独立随机变量序列. 再令  $(Z_{1}, Z_{2}, \\cdots, Z_{n})$  是  $(X_{1}, X_{2}, \\cdots, X_{n})$  的由小到大排列的顺序统计量. 证明  $(Z_{1}, Z_{2}, \\cdots, Z_{n})$  具有上题中给出的概率分布密度.\n4. 设 $(X_{t}: t \\geqslant 0)$ 和 $(Y_{t}: t \\geqslant 0)$ 分别是以 $\\alpha > 0$ 和 $\\beta > 0$ 为参数的泊松过程且二者相互独立. 证明 $(X_{t} + Y_{t}: t \\geqslant 0)$ 是以 $\\alpha + \\beta$ 为参数的泊松过程.\n5. 设 $(X_{n}: n \\geqslant 0)$ 是离散时间一维随机游动, 而 $(X_{N_{t}}: t \\geqslant 0)$ 是例1.4.1中定义的连续时间随机游动. 分别讨论二者的长时间极限行为."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.14,
+            0.766,
+            0.359,
+            0.788
+          ],
+          "level": 2,
+          "content": "1.5 泊松随机测度"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.176,
+            0.839,
+            0.382,
+            0.859
+          ],
+          "level": 2,
+          "content": "1.5.1 定义和存在性"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.884,
+            0.819,
+            0.926
+          ],
+          "content": "考虑可测空间 $(E, \\mathcal{E})$。为具体起见，我们假定 $(E, \\mathcal{E})$ 是某个有限维欧氏空间的博雷尔可测子空间，即 $E \\in \\mathcal{B}^d$ ($d \\geqslant 1$) 且 $\\mathcal{E} = E \\cap \\mathcal{B}^d$。设 $\\mu$ 为 $(E, \\mathcal{E})$ 上的 $\\sigma$ 有限测度。"
+        }
+      ]
+    },
+    {
+      "page_idx": 34,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.733,
+            0.067,
+            0.858,
+            0.081
+          ],
+          "content": "1.5 泊松随机测度"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.875,
+            0.069,
+            0.893,
+            0.08
+          ],
+          "content": "27"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.178,
+            0.122,
+            0.857,
+            0.162
+          ],
+          "content": "定义 1.5.1 称取值于  $\\{0,1,2,\\cdots,\\infty\\}$  的随机变量族  $X=\\{X(B):B\\in\\mathcal{E}\\}$  是以  $\\mu$  为强度的整数值随机测度, 是指它满足下列条件:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.215,
+            0.168,
+            0.616,
+            0.207
+          ],
+          "sub_type": "text",
+          "content": "(1) 若 $B \\in \\mathscr{E}$ 满足 $\\mu(B) < \\infty$, 则 $\\mathbf{E}[X(B)] = \\mu(B)$;\n(2) 若  $B_{1}, B_{2}, \\cdots \\in E$  两两不相交, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.398,
+            0.223,
+            0.856,
+            0.265
+          ],
+          "content": "X \\Big (\\bigcup_ {k = 1} ^ {\\infty} B _ {k} \\Big) = \\sum_ {k = 1} ^ {\\infty} X (B _ {k}). \\tag {1.5.1}",
+          "image_source": "images/page_34_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.28,
+            0.857,
+            0.318
+          ],
+          "content": "定义 1.5.2 称  $(E, \\mathcal{E})$  上的以  $\\mu$  为强度的整数值随机测度是泊松随机测度, 是指它满足下列条件:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.215,
+            0.326,
+            0.792,
+            0.342
+          ],
+          "content": "(1) 若 $B \\in \\mathscr{E}$ 满足 $\\mu(B) < \\infty$, 则 $X(B)$ 服从参数为 $\\mu(B)$ 的泊松分布, 即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.312,
+            0.358,
+            0.688,
+            0.391
+          ],
+          "content": "\\mathbf {P} (X (B) = k) = \\frac {\\mu (B) ^ {k}}{k !} \\mathrm{e} ^ {- \\mu (B)}, \\quad k = 0, 1, 2, \\dots ;",
+          "image_source": "images/page_34_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.215,
+            0.403,
+            0.851,
+            0.42
+          ],
+          "content": "(2) 若  $B_{1}, B_{2}, \\cdots, B_{n} \\in E$  两两不相交, 则  $X(B_{1}), X(B_{2}), \\cdots, X(B_{n})$  相互独立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.425,
+            0.857,
+            0.464
+          ],
+          "content": "根据泊松分布的性质, 若 $X$ 是以 $\\mu$ 为强度的泊松随机测度且 $B \\in \\mathcal{E}$ 满足 $\\mu(B) < \\infty$, 则有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.348,
+            0.484,
+            0.856,
+            0.502
+          ],
+          "content": "\\mathbf {E} [ X (B) ] = \\mu (B), \\quad \\mathbf {V a r} [ X (B) ] = \\mu (B). \\tag {1.5.2}",
+          "image_source": "images/page_34_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.52,
+            0.856,
+            0.56
+          ],
+          "content": "例 1.5.1 设  $E=\\{1,2\\}$ ，而  $\\mu$  为 E 上的计数测度。再设  $\\xi_{1},\\xi_{2}$  和  $\\xi_{3}$  是独立同分布随机变量，且均服从参数为 1 的泊松分布。令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.312,
+            0.579,
+            0.688,
+            0.597
+          ],
+          "content": "X (\\{1 \\}) = \\xi_ {1}, X (\\{2 \\}) = \\xi_ {2}, X (\\{1, 2 \\}) = \\xi_ {1} + \\xi_ {3},",
+          "image_source": "images/page_34_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.614,
+            0.856,
+            0.652
+          ],
+          "content": "则 $X$ 满足定义 1.5.2 中的性质 (1) 和 (2). 但 (1.5.1) 式不成立, 故 $X$ 不是整数值随机测度."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.659,
+            0.857,
+            0.724
+          ],
+          "content": "定理 1.5.1 设 X 为  $(E, \\mathcal{E})$  上的以  $\\mu$  为强度的整数值随机测度, 则 X 是泊松随机测度的充要条件是对任意的  $\\theta_{1}, \\theta_{2}, \\cdots, \\theta_{n} \\in R$  和两两不相交的  $B_{1}, B_{2}, \\cdots, B_{n} \\in E$  当  $\\mu(B_{1}) < \\infty, \\mu(B_{2}) < \\infty, \\cdots, \\mu(B_{n}) < \\infty$  时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.293,
+            0.738,
+            0.856,
+            0.78
+          ],
+          "content": "\\mathbf {E} \\exp \\left\\{\\mathrm{i} \\sum_ {k = 1} ^ {n} \\theta_ {k} X (B _ {k}) \\right\\} = \\exp \\left\\{\\sum_ {k = 1} ^ {n} (\\mathrm{e} ^ {\\mathrm{i} \\theta_ {k}} - 1) \\mu (B _ {k}) \\right\\}. \\tag {1.5.3}",
+          "image_source": "images/page_34_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.795,
+            0.856,
+            0.835
+          ],
+          "content": "证明 只需注意 (1.5.3) 式成立当且仅当  $X(B_{1}), X(B_{2}), \\cdots, X(B_{n})$  独立且分别服从参数为  $\\mu(B_{1}), \\mu(B_{2}), \\cdots, \\mu(B_{n})$  的泊松分布. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.843,
+            0.856,
+            0.929
+          ],
+          "content": "定理 1.5.2 设  $\\mu$  为非零有限测度. 令  $\\eta$  是以  $\\mu(E)$  为参数的泊松随机变量, 而  $\\xi_{1}, \\xi_{2}, \\cdots$  是取值于  $(E, \\mathcal{E})$  的随机变量且有相同的分布  $\\mu(E)^{-1}\\mu$ . 再设  $\\eta, \\xi_{1}, \\xi_{2}, \\cdots$  相互独立, 则  $X := \\sum_{j=1}^{\\eta} \\delta_{\\xi_{j}}$  是以  $\\mu$  为强度的泊松随机测度."
+        }
+      ]
+    },
+    {
+      "page_idx": 35,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.068,
+            0.125,
+            0.08
+          ],
+          "content": "28"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.066,
+            0.304,
+            0.081
+          ],
+          "content": "第一章 基本概念和例子"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.122,
+            0.819,
+            0.163
+          ],
+          "content": "证明 显然 X 满足 (1.5.1)式. 根据关于  $\\eta, \\xi_{1}, \\xi_{2}, \\cdots$  的分布和独立性的假定, 对于  $\\theta_{1}, \\theta_{2}, \\cdots, \\theta_{n} \\in R$  和两两不交的  $B_{1}, B_{2}, \\cdots, B_{n} \\in E$  有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.189,
+            0.174,
+            0.768,
+            0.487
+          ],
+          "content": "\\begin{array}{l} \\mathbf {E} \\exp \\left\\{\\mathrm{i} \\sum_ {k = 1} ^ {n} \\theta_ {k} X (B _ {k}) \\right\\} = \\sum_ {m = 0} ^ {\\infty} \\mathbf {P} (\\eta = m) \\mathbf {E} \\exp \\left\\{\\mathrm{i} \\sum_ {j = 1} ^ {m} \\sum_ {k = 1} ^ {n} \\theta_ {k} \\delta_ {\\xi_ {j}} (B _ {k}) \\right\\} \\\\ = \\sum_ {m = 0} ^ {\\infty} \\mathrm{e} ^ {- \\mu (E)} \\frac {\\mu (E) ^ {m}}{m !} \\mathbf {E} \\exp \\left\\{\\mathrm{i} \\sum_ {j = 1} ^ {m} \\sum_ {k = 1} ^ {n} \\theta_ {k} 1 _ {B _ {k}} (\\xi_ {j}) \\right\\} \\\\ = \\sum_ {m = 0} ^ {\\infty} \\mathrm{e} ^ {- \\mu (E)} \\frac {1}{m !} \\left[ \\int_ {E} \\exp \\left\\{\\mathrm{i} \\sum_ {k = 1} ^ {n} \\theta_ {k} 1 _ {B _ {k}} (x) \\right\\} \\mu (\\mathrm{d} x) \\right] ^ {m} \\\\ = \\exp \\left\\{- \\mu (E) + \\int_ {E} \\exp \\left\\{\\mathrm{i} \\sum_ {k = 1} ^ {n} \\theta_ {k} 1 _ {B _ {k}} (x) \\right\\} \\mu (\\mathrm{d} x) \\right\\} \\\\ = \\exp \\left\\{\\int_ {E} \\left(\\exp \\left\\{\\mathrm{i} \\sum_ {k = 1} ^ {n} \\theta_ {k} 1 _ {B _ {k}} (x) \\right\\} - 1\\right) \\mu (\\mathrm{d} x) \\right\\} \\\\ = \\exp \\left\\{\\int_ {E} \\sum_ {k = 1} ^ {n} (\\mathrm{e} ^ {\\mathrm{i} \\theta_ {k}} - 1) 1 _ {B _ {k}} (x) \\mu (\\mathrm{d} x) \\right\\} \\\\ = \\exp \\left\\{\\sum_ {k = 1} ^ {n} (\\mathrm{e} ^ {\\mathrm{i} \\theta_ {k}} - 1) \\mu (B _ {k}) \\right\\}. \\\\ \\end{array}",
+          "image_source": "images/page_35_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.5,
+            0.566,
+            0.517
+          ],
+          "content": "由定理 1.5.1 知 X 是以  $\\mu$  为强度的泊松随机测度. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.175,
+            0.525,
+            0.524,
+            0.542
+          ],
+          "content": "基于定理 1.5.1 和定理 1.5.2, 显然有下面的:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.548,
+            0.819,
+            0.695
+          ],
+          "content": "定理 1.5.3 设  $\\mu$  是无限的  $\\sigma$  有限测度, 而  $\\{E_{k}\\} \\subseteq E$  是两两不相交集合列, 满足  $\\bigcup_{k=1}^{\\infty} E_{k} = E$  且对每个  $k \\geqslant 1$  有  $0 < \\mu(E_{k}) < \\infty$  且. 令  $\\mu_{k}$  为  $\\mu$  在  $E_{k}$  上的限制, 即对任何  $B \\in E$  有  $\\mu_{k}(B) = \\mu(B \\cap E_{k})$ . 令  $\\{X_{k}\\}$  为 E 上的独立泊松随机测度列, 其中  $X_{k}$  有强度  $\\mu_{k}$ . 对  $B \\in E$  令  $X(B) = \\sum_{k=1}^{\\infty} X_{k}(B)$ . 则  $X = \\{X(B) : B \\in E\\}$  是以  $\\mu$  为强度的泊松随机测度."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.176,
+            0.722,
+            0.426,
+            0.741
+          ],
+          "level": 2,
+          "content": "1.5.2 积分和补偿的测度"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.766,
+            0.819,
+            0.829
+          ],
+          "content": "设 $X$ 为定义在某个概率空间 $(\\Omega, \\mathcal{F}, \\mathbf{P})$ 上以 $(E, \\mathcal{E})$ 上的 $\\sigma$ 有限测度 $\\mu$ 为强度的整数值随机测度. 由 (1.5.1) 式知映射 $B \\mapsto X(B)$ 的确是 $(E, \\mathcal{E})$ 上的 $\\sigma$ 有限测度. 因此可以考虑 $E$ 上的可测函数 $f$ 相对于 $X$ 的积分"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.261,
+            0.839,
+            0.664,
+            0.874
+          ],
+          "content": "\\int_ {E} f (x) X (\\mathrm{d} x) = \\int_ {E} f ^ {+} (x) X (\\mathrm{d} x) - \\int_ {E} f ^ {-} (x) X (\\mathrm{d} x),",
+          "image_source": "images/page_35_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.886,
+            0.819,
+            0.927
+          ],
+          "content": "其中 $f^{\\pm}$ 分别表示 $f$ 的正负部. 这里当然需要假定上式右端的两个积分中至少有一个有限. 为简化记号, 我们将上面的积分记为 $X(f)$. 特别地, 当 $f$ 为 $\\mu$ 可积函数时, 通过"
+        }
+      ]
+    },
+    {
+      "page_idx": 36,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.733,
+            0.067,
+            0.858,
+            0.081
+          ],
+          "content": "1.5 泊松随机测度"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.875,
+            0.069,
+            0.892,
+            0.08
+          ],
+          "content": "29"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.122,
+            0.384,
+            0.138
+          ],
+          "content": "简单函数逼近的方法易证"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.435,
+            0.159,
+            0.856,
+            0.176
+          ],
+          "content": "\\mathbf {E} [ X (f) ] = \\mu (f). \\tag {1.5.4}",
+          "image_source": "images/page_36_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.194,
+            0.856,
+            0.211
+          ],
+          "content": "定理 1.5.2 给出了有限强度泊松随机测度 X 的具体构造或表示. 在这种情况下, 显然有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.43,
+            0.227,
+            0.572,
+            0.268
+          ],
+          "content": "X (f) = \\sum_ {i = 1} ^ {\\eta} f (\\xi_ {i}).",
+          "image_source": "images/page_36_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.284,
+            0.727,
+            0.301
+          ],
+          "content": "更一般地, 若 X 由定理 1.5.3 给出, 则 f 相对于 X 的积分可以表示为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.315,
+            0.316,
+            0.686,
+            0.358
+          ],
+          "content": "X (f) = \\sum_ {k = 1} ^ {\\infty} X _ {k} (f) = \\sum_ {k = 1} ^ {\\infty} X _ {k} (f ^ {+}) - \\sum_ {k = 1} ^ {\\infty} X _ {k} (f ^ {-}).",
+          "image_source": "images/page_36_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.373,
+            0.535,
+            0.39
+          ],
+          "content": "这里要求上式右端的级数中至少有一个有限."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.396,
+            0.857,
+            0.437
+          ],
+          "content": "定理 1.5.4 设 X 为  $(E, \\mathcal{E})$  上的以  $\\sigma$  有限测度  $\\mu$  为强度的整数值随机测度, 则 X 是泊松随机测度当且仅当对  $(E, \\mathcal{E})$  上的任何  $\\mu$  可积函数 f 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.351,
+            0.449,
+            0.856,
+            0.482
+          ],
+          "content": "\\mathrm{Ee} ^ {\\mathrm{i} X (f)} = \\exp \\Big \\{\\int_ {E} (\\mathrm{e} ^ {\\mathrm{i} f (x)} - 1) \\mu (\\mathrm{d} x) \\Big \\}. \\tag {1.5.5}",
+          "image_source": "images/page_36_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.497,
+            0.859,
+            0.736
+          ],
+          "content": "证明 注意 $|\\mathrm{e}^{\\mathrm{i}f} - 1| \\leqslant |f|$. 所以当 $f$ 为 $\\mu$ 可积函数时 (1.5.5) 式右边关于 $\\mu$ 的积分有限. 设 $X$ 为以 $\\mu$ 为强度的泊松随机测度. 若 $B_1, B_2, \\dots, B_n \\in \\mathcal{E}$ 两两不相交且 $\\mu(B_1) < \\infty$, $\\mu(B_2) < \\infty, \\dots, \\mu(B_n) < \\infty$, 则 $X(B_1), X(B_2), \\dots, X(B_n)$ 相互独立且分别服从参数为 $\\mu(B_1), \\mu(B_2), \\dots, \\mu(B_n)$ 的泊松分布. 因此对任何实数 $\\theta_1, \\theta_2, \\dots, \\theta_n$ (1.5.3) 式成立. 这说明 (1.5.5) 式对于 $\\mu$ 可积的简单函数 $f = \\sum_{k=1}^{n} \\theta_k 1_{B_k}$ 成立. 利用简单函数列的逼近和控制收敛定理, 易证 (1.5.5) 式对于任何 $\\mu$ 可积函数 $f$ 成立. 反之, 假设 (1.5.5) 式对任意的 $\\mu$ 可积函数 $f \\in \\mathcal{E}$ 成立. 取 $B_1, B_2, \\dots, B_n \\in \\mathcal{E}$ 两两不相交且满足 $\\mu(B_1) < \\infty, \\mu(B_2) < \\infty, \\dots, \\mu(B_n) < \\infty$. 对于 $\\mu$ 可积的简单函数 $f = \\sum_{k=1}^{n} \\theta_k 1_{B_k}$ 应用 (1.5.5) 式得 (1.5.3)式, 再由定理 1.5.1 即知 $X$ 是以 $\\mu$ 为强度的泊松随机测度. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.742,
+            0.858,
+            0.807
+          ],
+          "content": "定理 1.5.5 设  $\\mu$  是  $(E, \\mathcal{E})$  上的  $\\sigma$  有限测度, 而  $\\phi$  是由  $(E, \\mathcal{E})$  到可测空间  $(F, \\mathcal{F})$  的可测映射, 且像测度  $\\mu \\circ \\phi^{-1}$  也是  $\\sigma$  有限测度. 若 X 是以  $\\mu$  为强度的泊松随机测度, 则像测度  $X \\circ \\phi^{-1}$  是以  $\\mu \\circ \\phi^{-1}$  为强度的泊松随机测度."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.814,
+            0.858,
+            0.856
+          ],
+          "content": "证明 注意对 $(F, \\mathcal{F})$ 上的任何 $\\mu \\circ \\phi^{-1}$ 可积函数 $f$ 有 $\\mu \\circ \\phi^{-1}(f) = \\mu (\\phi \\circ f)$ 和 $X \\circ \\phi^{-1}(f) = X(\\phi \\circ f)$, 应用定理 1.5.4 即得结论. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.863,
+            0.859,
+            0.928
+          ],
+          "content": "给定以 $\\sigma$ 有限测度 $\\mu$ 为强度的整数值随机测度 $X$, 其补偿的测度指的是随机的符号测度 $\\tilde{X} := X - \\mu$, 而 $E$ 上的函数 $f$ 关于该补偿的测度的积分自然定义为 $\\tilde{X}(f) = X(f) - \\mu(f)$, 该表达式对于任何 $\\mu$ 可积函数 $f$ 有意义."
+        }
+      ]
+    },
+    {
+      "page_idx": 37,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.068,
+            0.125,
+            0.08
+          ],
+          "content": "30"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.066,
+            0.304,
+            0.081
+          ],
+          "content": "第一章 基本概念和例子"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.122,
+            0.819,
+            0.162
+          ],
+          "content": "对于泊松随机测度 $X$, 关于其补偿的测度的积分可以做进一步的扩展. 设 $f$ 和 $f^2$ 都关于 $\\mu$ 可积. 通过简单函数逼近的方法易证"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.176,
+            0.646,
+            0.196
+          ],
+          "content": "\\mathbf {E} [ X (f) ^ {2} ] = \\mu (f ^ {2}) + \\mu (f) ^ {2}, \\quad \\mathbf {E} [ \\tilde {X} (f) ^ {2} ] = \\mu (f ^ {2}).",
+          "image_source": "images/page_37_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.209,
+            0.819,
+            0.273
+          ],
+          "content": "对于一般的 $\\mu$ 平方可积函数 $f$, 可取函数列 $\\{f_n\\}$, 其中每个 $f_n$ 关于 $\\mu$ 可积且平方可积, 同时当 $n \\to \\infty$ 时有 $\\mu(|f_n - f|^2) \\to 0$. 这样 $\\{f_n\\}$ 就是 $L^2(\\mu)$ 中的基本列, 即当 $m, n \\to \\infty$ 时有 $\\mu(|f_m - f_n|^2) \\to 0$. 注意"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.31,
+            0.287,
+            0.61,
+            0.308
+          ],
+          "content": "\\mathbf {E} [ | \\tilde {X} (f _ {m}) - \\tilde {X} (f _ {n}) | ^ {2} ] = \\mu (| f _ {m} - f _ {n} | ^ {2}).",
+          "image_source": "images/page_37_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.32,
+            0.819,
+            0.383
+          ],
+          "content": "因此随机变量序列 $\\{\\tilde{X}(f_n)\\}$ 是 $L^2 (\\mathbf{P})$ 中的基本列. 于是存在几乎必然意义下唯一的平方可积随机变量 $\\tilde{X}(f)$ 使当 $n\\to \\infty$ 时有 $\\mathbf{E}[|\\tilde{X} (f_n) - \\tilde{X} (f)|^2 ]\\to 0.$ 我们称 $\\tilde{X}(f)$ 为 $f$ 关于 $\\tilde{X}$ 的积分. 由上式易得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.386,
+            0.398,
+            0.534,
+            0.418
+          ],
+          "content": "\\mathbf {E} [ \\tilde {X} (f) ^ {2} ] = \\mu (f ^ {2}).",
+          "image_source": "images/page_37_equation_7.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.176,
+            0.444,
+            0.403,
+            0.463
+          ],
+          "level": 2,
+          "content": "1.5.3 随机测度的应用"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.487,
+            0.819,
+            0.573
+          ],
+          "content": "随机测度在随机过程的研究中有很多重要的应用. 作为泊松随机测度的应用, 下面给出复合泊松过程的另外一种构造. 设 $\\nu$ 是 $\\mathbb{R}$ 上的非零有限测度且有 $\\nu(\\{0\\}) = 0$. 设 $N(\\mathrm{ds}, \\mathrm{dz})$ 是 $(0, \\infty) \\times \\mathbb{R}$ 上的以 $\\mathrm{ds}\\nu(\\mathrm{dz})$ 为强度的泊松随机测度, 其中 $\\mathrm{ds}$ 表示勒贝格测度, 而 $X_0$ 是与之独立的随机变量. 令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.305,
+            0.582,
+            0.818,
+            0.617
+          ],
+          "content": "X _ {t} = X _ {0} + \\int_ {(0, t ]} \\int_ {\\mathbb {R}} z N (\\mathrm{d} s, \\mathrm{d} z), \\quad t \\geqslant 0. \\tag {1.5.6}",
+          "image_source": "images/page_37_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.629,
+            0.818,
+            0.668
+          ],
+          "content": "记 $N_{t} = N((0,t]\\times \\mathbb{R})$ ，由定义1.5.2中的性质，易知 $(N_{t})$ 是以 $\\alpha := \\nu (\\mathbb{R})$ 为参数的泊松过程."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.675,
+            0.818,
+            0.716
+          ],
+          "content": "命题 1.5.6 令  $S = \\inf\\{t \\geqslant 0 : N_{t} > 0\\}$  为  $(N_{t})$  首次跳跃的时刻, 则  $(X_{t})$  在此时刻的跳幅  $\\Delta X_{S} := X_{S} - X_{S-}$  服从分布  $\\mu := \\alpha^{-1}\\nu$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.723,
+            0.819,
+            0.815
+          ],
+          "content": "证明 注意 $S$ 也是 $(X_{t})$ 首次跳跃的时刻. 对 $n \\geqslant 1$ 令 $\\tau_{n} = \\inf \\{k / 2^{n} > 0 : X_{k / 2^{n}} \\neq i\\}$. 显然 $\\{\\tau_{n}\\}$ 为递降的停时列, 并且 $\\tau_{n} \\geqslant S$, 故 $\\tau := \\lim_{n \\to \\infty} \\tau_{n} \\geqslant S$. 显然, 对任何 $k / 2^{n} < \\tau$ 有 $X_{k / 2^{n}} = i$. 由轨道右连续性, 对任何 $t \\in [0, \\tau)$ 有 $X_{t} = i$. 这意味着 $S \\geqslant \\tau$, 故得 $S = \\lim_{n \\to \\infty} \\tau_{n}$. 因为 $\\mathbf{P}_{i}(S = t) = 0$, 利用控制收敛定理得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.193,
+            0.824,
+            0.726,
+            0.848
+          ],
+          "content": "\\mathbf {P} (S \\leqslant t) = \\mathbf {P} (S <   t) = \\lim _ {n \\to \\infty} \\mathbf {P} (\\tau_ {n} <   t) \\leqslant \\lim _ {n \\to \\infty} \\mathbf {P} (\\tau_ {n} \\leqslant t) \\leqslant \\mathbf {P} (S \\leqslant t).",
+          "image_source": "images/page_37_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.857,
+            0.364,
+            0.873
+          ],
+          "content": "再由过程轨道的右连续性得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.178,
+            0.884,
+            0.76,
+            0.93
+          ],
+          "content": "\\mathbf {E} (\\mathrm{e} ^ {\\mathrm{i} \\theta \\varDelta X _ {S}}; S \\leqslant t) = \\lim _ {n \\to \\infty} \\mathbf {E} (\\mathrm{e} ^ {\\mathrm{i} \\theta \\varDelta X _ {S}}; \\tau_ {n} \\leqslant t) = \\lim _ {n \\to \\infty} \\sum_ {k = 1} ^ {\\lfloor 2 ^ {n} t \\rfloor} \\mathbf {E} (\\mathrm{e} ^ {\\mathrm{i} \\theta Z _ {k}}; \\tau_ {n} = k / 2 ^ {n}),",
+          "image_source": "images/page_37_equation_16.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 38,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.733,
+            0.067,
+            0.858,
+            0.081
+          ],
+          "content": "1.5 泊松随机测度"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.874,
+            0.069,
+            0.892,
+            0.08
+          ],
+          "content": "31"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.122,
+            0.684,
+            0.141
+          ],
+          "content": "其中  $Z_{k}=X_{k/2^{n}}-X_{(k-1)/2^{n}}$ . 根据泊松随机测度的独立增量性,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.289,
+            0.154,
+            0.775,
+            0.352
+          ],
+          "content": "\\begin{array}{l} \\mathbf {E} (\\mathrm{e} ^ {\\mathrm{i} \\theta Z _ {k}}; \\tau_ {n} = k / 2 ^ {n}) \\\\ = \\mathbf {E} (\\mathrm{e} ^ {\\mathrm{i} \\theta (X _ {k / 2 ^ {n}} - X _ {(k - 1) / 2 ^ {n}})}; N _ {(k - 1) / 2 ^ {n}} = 0, N _ {k / 2 ^ {n}} - N _ {(k - 1) / 2 ^ {n}} \\geqslant 1) \\\\ = \\mathbf {P} (N _ {(k - 1) / 2 ^ {n}} = 0) \\mathbf {E} (\\mathrm{e} ^ {\\mathrm{i} \\theta (X _ {k / 2 ^ {n}} - X _ {(k - 1) / 2 ^ {n}})}; N _ {k / 2 ^ {n}} - N _ {(k - 1) / 2 ^ {n}} \\geqslant 1) \\\\ = \\mathrm{e} ^ {- \\alpha (k - 1) / 2 ^ {n}} \\mathbf {E} (\\mathrm{e} ^ {\\mathrm{i} \\theta (X _ {1 / 2 ^ {n}} - X _ {0})}; N _ {1 / 2 ^ {n}} \\geqslant 1) \\\\ = \\mathrm{e} ^ {- \\alpha (k - 1) / 2 ^ {n}} \\mathbf {E} [ \\mathrm{e} ^ {\\mathrm{i} \\theta (X _ {1 / 2 ^ {n}} - X _ {0})} (1 - 1 _ {\\{N _ {1 / 2 ^ {n}} = 0 \\}}) ] \\\\ = \\mathrm{e} ^ {- \\alpha (k - 1) / 2 ^ {n}} \\left[ \\exp \\left\\{\\frac {1}{2 ^ {n}} \\int_ {\\mathbb {R}} (\\mathrm{e} ^ {\\mathrm{i} \\theta z} - 1) \\nu (\\mathrm{d} z) \\right\\} - \\mathrm{e} ^ {- \\alpha / 2 ^ {n}} \\right] \\\\ = \\mathrm{e} ^ {- \\alpha k / 2 ^ {n}} \\left[ \\exp \\left\\{\\frac {\\alpha}{2 ^ {n}} \\int_ {\\mathbb {R}} \\mathrm{e} ^ {\\mathrm{i} \\theta z} \\mu (\\mathrm{d} z) \\right\\} - 1 \\right]. \\\\ \\end{array}",
+          "image_source": "images/page_38_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.364,
+            0.33,
+            0.38
+          ],
+          "content": "回到上面的等式得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.219,
+            0.392,
+            0.816,
+            0.515
+          ],
+          "content": "\\begin{array}{l} \\mathbf {E} (\\mathrm{e} ^ {\\mathrm{i} \\theta \\Delta X _ {S}}; S \\leqslant t) = \\lim _ {n \\to \\infty} \\sum_ {k = 1} ^ {\\lfloor 2 ^ {n} t \\rfloor} \\mathrm{e} ^ {- \\alpha k / 2 ^ {n}} \\Big [ \\exp \\left\\{\\frac {\\alpha}{2 ^ {n}} \\int_ {\\mathbb {R}} \\mathrm{e} ^ {\\mathrm{i} \\theta z} \\mu (\\mathrm{d} z) \\right\\} - 1 \\Big ] \\\\ = \\lim _ {n \\to \\infty} \\frac {\\mathrm{e} ^ {- \\alpha / 2 ^ {n}} [ 1 - \\mathrm{e} ^ {- \\alpha \\lfloor 2 ^ {n} t \\rfloor / 2 ^ {n}} ]}{1 - \\mathrm{e} ^ {- \\alpha / 2 ^ {n}}} \\Big [ \\exp \\Big \\{\\frac {\\alpha}{2 ^ {n}} \\int_ {\\mathbb {R}} \\mathrm{e} ^ {\\mathrm{i} \\theta z} \\mu (\\mathrm{d} z) \\Big \\} - 1 \\Big ] \\\\ = (1 - \\mathrm{e} ^ {- \\alpha t}) \\int_ {\\mathbb {R}} \\mathrm{e} ^ {\\mathrm{i} \\theta z} \\mu (\\mathrm{d} z). \\\\ \\end{array}",
+          "image_source": "images/page_38_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.526,
+            0.547,
+            0.544
+          ],
+          "content": "在上式中令  $t \\rightarrow \\infty$  即知  $\\Delta X_{S}$  服从分布  $\\mu$ . □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.178,
+            0.55,
+            0.857,
+            0.59
+          ],
+          "content": "定理 1.5.7 由 (1.5.6) 式定义的  $(X_{t}: t \\geqslant 0)$  是有跳跃速率  $\\alpha$  和跳跃分布  $\\mu := \\alpha^{-1}\\nu$  的复合泊松过程."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.598,
+            0.857,
+            0.729
+          ],
+          "content": "证明 令 $S_{k}$ 为 $(N_{t})$ 的第 $k$ 次跳跃发生的时刻。我们需要证明跳幅 $\\Delta X_{S_k} = X_{S_k} - X_{S_{k-}}$, $k = 1,2,\\cdots$ 独立且服从相同的分布 $\\mu$。为简单起见，下面只证明关于前两个跳幅的结论。有兴趣的读者可以参考下面的论证方法自行完成一般情况的证明。对 $n \\geqslant 0$ 令 $D_n = \\{i/2^n : i = 0,1,2,\\cdots\\}$。再令 $\\tau_{k,n} = \\inf \\{t \\in D_n : t > S_k\\}$ 为 $S_k$ 的二分点离散化。显然序列 $\\{S_k\\}$ 是严格增的。对 $t \\geqslant 0$ 和 $\\theta_1, \\theta_2 \\in \\mathbb{R}$，与命题1.5.6的证明中类似地有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.303,
+            0.744,
+            0.856,
+            0.841
+          ],
+          "content": "\\begin{array}{l} \\mathbf {E} \\big (\\mathrm{e} ^ {\\mathrm{i} (\\theta_ {1} \\Delta X _ {S _ {1}} + \\theta_ {2} \\Delta X _ {S _ {2}})}; S _ {2} \\leqslant t \\big) \\\\ = \\lim _ {n \\to \\infty} \\mathbf {E} \\big (\\mathrm{e} ^ {\\mathrm{i} (\\theta_ {1} \\varDelta X _ {S _ {1}} + \\theta_ {2} \\varDelta X _ {S _ {2}})}; \\tau_ {2, n} \\leqslant t \\big) \\\\ = \\lim _ {n \\to \\infty} \\sum_ {k = 1} ^ {\\lfloor 2 ^ {n} t \\rfloor} \\sum_ {j = 1} ^ {k} \\mathbf {E} (\\mathrm{e} ^ {\\mathrm{i} (\\theta_ {1} Z _ {j} + \\theta_ {2} Z _ {k})}; \\tau_ {1, n} = j / 2 ^ {n}, \\tau_ {2, n} = k / 2 ^ {n}), \\tag {1.5.7} \\\\ \\end{array}",
+          "image_source": "images/page_38_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.853,
+            0.462,
+            0.873
+          ],
+          "content": "其中 $Z_{k} = X_{k / 2^{n}} - X_{(k - 1) / 2^{n}}$ .注意"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.354,
+            0.884,
+            0.562,
+            0.929
+          ],
+          "content": "\\sum_ {k = 1} ^ {\\lfloor 2 ^ {n} t \\rfloor} \\mathbf {P} \\big (\\tau_ {1, n} = \\tau_ {2, n} = k / 2 ^ {n} \\big)",
+          "image_source": "images/page_38_equation_11.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 39,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.068,
+            0.125,
+            0.08
+          ],
+          "content": "32"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.066,
+            0.304,
+            0.081
+          ],
+          "content": "第一章 基本概念和例子"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.295,
+            0.119,
+            0.673,
+            0.246
+          ],
+          "content": "\\begin{array}{l} = \\sum_ {k = 1} ^ {\\lfloor 2 ^ {n} t \\rfloor} \\mathbf {P} \\big (N _ {(k - 1) / 2 ^ {n}} = 0, N _ {k / 2 ^ {n}} - N _ {(k - 1) / 2 ^ {n}} \\geqslant 2 \\big) \\\\ = \\sum_ {k = 1} ^ {\\lfloor 2 ^ {n} t \\rfloor} \\mathrm{e} ^ {- \\alpha (k - 1) / 2 ^ {n}} \\left(1 - \\mathrm{e} ^ {- \\alpha / 2 ^ {n}} - \\frac {\\alpha}{2 ^ {n}} \\mathrm{e} ^ {- \\alpha / 2 ^ {n}}\\right) \\\\ \\leqslant 2 ^ {n} t \\Big (1 - \\mathrm{e} ^ {- \\alpha / 2 ^ {n}} - \\frac {\\alpha}{2 ^ {n}} \\mathrm{e} ^ {- \\alpha / 2 ^ {n}} \\Big). \\\\ \\end{array}",
+          "image_source": "images/page_39_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.259,
+            0.2,
+            0.275
+          ],
+          "content": "所以有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.318,
+            0.292,
+            0.605,
+            0.338
+          ],
+          "content": "\\lim _ {n \\to \\infty} \\sum_ {k = 1} ^ {\\lfloor 2 ^ {n} t \\rfloor} \\mathbf {P} \\big (\\tau_ {1, n} = \\tau_ {2, n} = k / 2 ^ {n} \\big) = 0.",
+          "image_source": "images/page_39_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.355,
+            0.398,
+            0.373
+          ],
+          "content": "另一方面, 当 $1 \\leqslant j \\leqslant k - 1$ 时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.234,
+            0.39,
+            0.734,
+            0.723
+          ],
+          "content": "\\begin{array}{l} \\mathbf {E} \\big (\\mathrm{e} ^ {\\mathrm{i} (\\theta_ {1} Z _ {j} + \\theta_ {2} Z _ {k})}; \\tau_ {1, n} = j / 2 ^ {n}, \\tau_ {2, n} = k / 2 ^ {n} \\big) \\\\ = \\mathbf {E} \\big (\\mathrm{e} ^ {\\mathrm{i} \\left(\\theta_ {1} Z _ {j} + \\theta_ {2} Z _ {k}\\right)} 1 _ {\\left\\{N _ {(j - 1) / 2 ^ {n}} = 0 \\right\\}} 1 _ {\\left\\{N _ {j / 2 ^ {n}} - N _ {(j - 1) / 2 ^ {n}} \\geqslant 1 \\right\\}}. \\\\ \\left. 1 _ {\\{N _ {(k - 1) / 2 ^ {n}} - N _ {j / 2 ^ {n}} = 0 \\}} 1 _ {\\{N _ {k / 2 ^ {n}} - N _ {(k - 1) / 2 ^ {n}} \\geqslant 1 \\}}\\right) \\\\ = \\mathbf {E} \\big (N _ {(j - 1) / 2 ^ {n}} = 0 \\big) \\mathbf {E} \\big (\\mathrm{e} ^ {\\mathrm{i} \\theta_ {1} Z _ {j}} 1 _ {\\{N _ {j / 2 ^ {n}} - N _ {(j - 1) / 2 ^ {n}} \\geqslant 1 \\}} \\big)  . \\\\ \\mathbf {E} \\big (N _ {(k - 1) / 2 ^ {n}} - N _ {j / 2 ^ {n}} = 0 \\big) \\mathbf {E} \\big (\\mathrm{e} ^ {\\mathrm{i} \\theta_ {2} Z _ {k}}) 1 _ {\\{N _ {k / 2 ^ {n}} - N _ {(k - 1) / 2 ^ {n}} \\geqslant 1 \\}}\\left. \\right) \\\\ = \\mathrm{e} ^ {- \\alpha (k - 2) / 2 ^ {n}} \\mathbf {E} \\big (\\mathrm{e} ^ {\\mathrm{i} \\theta_ {1} Z _ {1}}; N _ {1 / 2 ^ {n}} \\geqslant 1 \\big) \\mathbf {E} \\big (\\mathrm{e} ^ {\\mathrm{i} \\theta_ {2} Z _ {1}}; N _ {1 / 2 ^ {n}} \\geqslant 1 \\big) \\\\ = \\mathrm{e} ^ {- \\alpha (k - 2) / 2 ^ {n}} \\mathbf {E} \\big [ \\mathrm{e} ^ {\\mathrm{i} \\theta_ {1} Z _ {1}} (1 - 1 _ {\\{N _ {1 / 2 ^ {n}} = 0 \\}}) \\big ] \\mathbf {E} \\big [ \\mathrm{e} ^ {\\mathrm{i} \\theta_ {2} Z _ {1}} (1 - 1 _ {\\{N _ {1 / 2 ^ {n}} = 0 \\}}) \\big ] \\\\ = \\mathrm{e} ^ {- \\alpha (k - 2) / 2 ^ {n}} \\left[ \\exp \\left\\{\\frac {1}{2 ^ {n}} \\int_ {\\mathbb {R}} (\\mathrm{e} ^ {\\mathrm{i} \\theta_ {1} z} - 1) \\nu (\\mathrm{d} z) \\right\\} - \\mathrm{e} ^ {- \\alpha / 2 ^ {n}} \\right]. \\\\ \\left[ \\exp \\left\\{\\frac {1}{2 ^ {n}} \\int_ {\\mathbb {R}} (\\mathrm{e} ^ {\\mathrm{i} \\theta_ {2} z} - 1) \\nu (\\mathrm{d} z) \\right\\} - \\mathrm{e} ^ {- \\alpha / 2 ^ {n}} \\right] \\\\ = \\mathrm{e} ^ {- \\alpha k / 2 ^ {n}} \\Big [ \\exp \\left\\{\\frac {\\alpha}{2 ^ {n}} \\int_ {\\mathbb {R}} \\mathrm{e} ^ {\\mathrm{i} \\theta_ {1} z} \\mu (\\mathrm{d} z) \\right\\} - 1 \\Big ]. \\\\ \\left[ \\exp \\left\\{\\frac {\\alpha}{2 ^ {n}} \\int_ {\\mathbb {R}} \\mathrm{e} ^ {\\mathrm{i} \\theta_ {2} z} \\mu (\\mathrm{d} z) \\right\\} - 1 \\right]. \\\\ \\end{array}",
+          "image_source": "images/page_39_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.738,
+            0.416,
+            0.755
+          ],
+          "content": "根据上面的计算, 回到 (1.5.7) 式有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.25,
+            0.771,
+            0.697,
+            0.931
+          ],
+          "content": "\\begin{array}{l} \\mathbf {E} \\big (\\mathrm{e} ^ {\\mathrm{i} (\\theta_ {1} \\varDelta X _ {S _ {1}} + \\theta_ {2} \\varDelta X _ {S _ {2}})}; S _ {2} \\leqslant t \\big) \\\\ = \\lim _ {n \\to \\infty} \\sum_ {k = 1} ^ {\\lfloor 2 ^ {n} t \\rfloor} \\sum_ {j = 1} ^ {k - 1} \\mathrm{e} ^ {- \\alpha k / 2 ^ {n}} \\Big [ \\exp \\left\\{\\frac {\\alpha}{2 ^ {n}} \\int_ {\\mathbb {R}} \\mathrm{e} ^ {\\mathrm{i} \\theta_ {1} z} \\mu (\\mathrm{d} z) \\right\\} - 1 \\Big ]. \\\\ \\left[ \\exp \\left\\{\\frac {\\alpha}{2 ^ {n}} \\int_ {\\mathbb {R}} \\mathrm{e} ^ {\\mathrm{i} \\theta_ {2} z} \\mu (\\mathrm{d} z) \\right\\} - 1 \\right] \\\\ = \\lim _ {n \\to \\infty} \\alpha^ {2} \\sum_ {k = 1} ^ {\\lfloor 2 ^ {n} t \\rfloor} \\sum_ {j = 1} ^ {k - 1} \\mathrm{e} ^ {- \\alpha k / 2 ^ {n}} \\frac {1}{2 ^ {2 n}} \\int_ {\\mathbb {R}} \\mathrm{e} ^ {\\mathrm{i} \\theta_ {1} z} \\mu (\\mathrm{d} z) \\int_ {\\mathbb {R}} \\mathrm{e} ^ {\\mathrm{i} \\theta_ {2} z} \\mu (\\mathrm{d} z) \\\\ \\end{array}",
+          "image_source": "images/page_39_equation_8.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 40,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.733,
+            0.067,
+            0.858,
+            0.081
+          ],
+          "content": "1.5 泊松随机测度"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.875,
+            0.069,
+            0.893,
+            0.08
+          ],
+          "content": "33"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.291,
+            0.12,
+            0.757,
+            0.24
+          ],
+          "content": "\\begin{array}{l} = \\lim _ {n \\to \\infty} \\alpha^ {2} \\sum_ {k = 1} ^ {\\lfloor 2 ^ {n} t \\rfloor} (k - 1) \\mathrm{e} ^ {- \\alpha k / 2 ^ {n}} \\frac {1}{2 ^ {2 n}} \\int_ {\\mathbb {R}} \\mathrm{e} ^ {\\mathrm{i} \\theta_ {1} z} \\mu (\\mathrm{d} z) \\int_ {\\mathbb {R}} \\mathrm{e} ^ {\\mathrm{i} \\theta_ {2} z} \\mu (\\mathrm{d} z) \\\\ = \\alpha^ {2} \\int_ {0} ^ {t} s \\mathrm{e} ^ {- \\alpha s} \\mathrm{d} s \\int_ {\\mathbb {R}} \\mathrm{e} ^ {\\mathrm{i} \\theta_ {1} z} \\mu (\\mathrm{d} z) \\int_ {\\mathbb {R}} \\mathrm{e} ^ {\\mathrm{i} \\theta_ {2} z} \\mu (\\mathrm{d} z) \\\\ = \\left(1 - \\mathrm{e} ^ {- \\alpha t} - \\alpha t \\mathrm{e} ^ {- \\alpha t}\\right) \\int_ {\\mathbb {R}} \\mathrm{e} ^ {\\mathrm{i} \\theta_ {1} z} \\mu (\\mathrm{d} z) \\int_ {\\mathbb {R}} \\mathrm{e} ^ {\\mathrm{i} \\theta_ {2} z} \\mu (\\mathrm{d} z). \\\\ \\end{array}",
+          "image_source": "images/page_40_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.253,
+            0.375,
+            0.269
+          ],
+          "content": "在上式中令 $t\\to \\infty$ 时得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.28,
+            0.701,
+            0.315
+          ],
+          "content": "\\mathbf {E} \\big (\\mathrm{e} ^ {\\mathrm{i} (\\theta_ {1} \\varDelta X _ {S _ {1}} + \\theta_ {2} \\varDelta X _ {S _ {2}})} \\big) = \\int_ {\\mathbb {R}} \\mathrm{e} ^ {\\mathrm{i} \\theta_ {1} z} \\mu (\\mathrm{d} z) \\int_ {\\mathbb {R}} \\mathrm{e} ^ {\\mathrm{i} \\theta_ {2} z} \\mu (\\mathrm{d} z).",
+          "image_source": "images/page_40_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.328,
+            0.621,
+            0.346
+          ],
+          "content": "所以跳幅  $\\Delta X_{S_{1}}$  和  $\\Delta X_{S_{2}}$  独立且服从相同的分布  $\\mu$ . ☐"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.353,
+            0.857,
+            0.416
+          ],
+          "content": "设 $q$ 为 $\\mathbb{R}$ 上的非负博雷尔可测函数, 而 $\\mu$ 是 $\\mathbb{R}$ 上的 $\\sigma$ 有限测度. 再设 $\\mu(\\{0\\}) = 0$ 且 $0 < \\beta := \\mu(q) < \\infty$. 令 $N(\\mathrm{d}s, \\mathrm{d}z, \\mathrm{d}u)$ 是 $(0, \\infty) \\times \\mathbb{R} \\times (0, \\infty)$ 上的以 $\\mathrm{d}s\\mu(\\mathrm{d}z)\\mathrm{d}u$ 为强度的泊松随机测度, 而 $Z_0$ 是与之独立的随机变量. 再令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.318,
+            0.43,
+            0.856,
+            0.468
+          ],
+          "content": "Z _ {t} = Z _ {0} + \\int_ {0} ^ {t} \\int_ {\\mathbb {R}} \\int_ {0} ^ {q (z)} z N (\\mathrm{d} s, \\mathrm{d} z, \\mathrm{d} u), \\quad t \\geqslant 0. \\tag {1.5.8}",
+          "image_source": "images/page_40_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.484,
+            0.856,
+            0.525
+          ],
+          "content": "定理 1.5.8 由 (1.5.8) 式定义的  $(Z_{t}: t \\geqslant 0)$  是有跳跃速率  $\\beta$  和跳跃分布  $\\beta^{-1} q(z)$   $\\mu(\\mathrm{d}z)$  的复合泊松过程."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.533,
+            0.856,
+            0.597
+          ],
+          "content": "证明 令 $N_{q}(\\mathrm{d}s,\\mathrm{d}z)$ 为 $1_{\\{u\\leqslant q(z)\\}}N(\\mathrm{d}s,\\mathrm{d}z,\\mathrm{d}u)$ 在映射 $(s,z,u)\\mapsto (s,z)$ 之下的像测度.应用定理1.5.5不难证明 $N_{q}(\\mathrm{d}s,\\mathrm{d}z)$ 是 $(0,\\infty)\\times \\mathbb{R}$ 上的以 $q(z)\\mathrm{d}s\\mu (\\mathrm{d}z)$ 为强度的泊松随机测度,而且与 $Z_0$ 独立.由(1.5.8)式有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.352,
+            0.611,
+            0.649,
+            0.647
+          ],
+          "content": "Z _ {t} = Z _ {0} + \\int_ {0} ^ {t} \\int_ {\\mathbb {R}} z N _ {q} (\\mathrm{d} s, \\mathrm{d} z), \\quad t \\geqslant 0.",
+          "image_source": "images/page_40_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.66,
+            0.466,
+            0.677
+          ],
+          "content": "再根据定理 1.5.7 即得欲证结论. □"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.215,
+            0.705,
+            0.287,
+            0.723
+          ],
+          "level": 2,
+          "content": "练习题"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.216,
+            0.749,
+            0.472,
+            0.765
+          ],
+          "content": "1. 在定理 1.4.8 的条件下, 证明:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.179,
+            0.772,
+            0.856,
+            0.835
+          ],
+          "sub_type": "text",
+          "content": "(1) $(N_{s+t}-N_{s}:t\\geqslant0)$ 是以 $\\alpha\\geqslant0$ 为参数的零初值泊松过程,而 $\\{\\xi_{N_{s}+n}:n\\geqslant1\\}$ 是与之独立的独立同分布随机变量序列且有分布 $\\mu;$\n(2) 定理 1.4.8 中定义的过程  $(X_{t}: t \\geqslant 0)$  满足定理 1.4.8 中的性质 (2)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.841,
+            0.856,
+            0.881
+          ],
+          "content": "2. 设 $\\mu$ 是可测空间 $(E, \\mathcal{E})$ 上的 $\\sigma$ 有限测度. 证明 $(E, \\mathcal{E})$ 上的以 $\\mu$ 为强度的整数值随机测度 $X$ 是泊松随机测度当且仅当对 $(E, \\mathcal{E})$ 上的任何非负可测函数 $f$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.333,
+            0.895,
+            0.667,
+            0.931
+          ],
+          "content": "\\mathrm{Ee} ^ {- X (f)} = \\exp \\bigg \\{- \\int_ {E} (1 - \\mathrm{e} ^ {- f (x)}) \\mu (\\mathrm{d} x) \\bigg \\}.",
+          "image_source": "images/page_40_equation_18.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 41,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.105,
+            0.068,
+            0.125,
+            0.08
+          ],
+          "content": "34"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.304,
+            0.081
+          ],
+          "content": "第一章 基本概念和例子"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.122,
+            0.819,
+            0.163
+          ],
+          "content": "3. 令 $X$ 是 $(E, \\mathcal{E})$ 上的以有限测度 $\\mu$ 为强度的泊松随机测度. 证明对任意的 $f, g \\in \\mathrm{p}\\mathcal{E}$, 有"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.177,
+            0.166,
+            0.603,
+            0.233
+          ],
+          "sub_type": "text",
+          "content": "(1) $\\mathbf{E}[X(f)\\mathrm{e}^{-X(g)}] = \\mu (f\\mathrm{e}^{-g})\\mathbf{E}[\\mathrm{e}^{-X(g)}]$;\n(2) $\\mathbf{E}[X(f)^2\\mathrm{e}^{-X(g)}] = [\\mu (f^2\\mathrm{e}^{-g}) + \\mu (f\\mathrm{e}^{-g})^2 ]\\mathbf{E}[\\mathrm{e}^{-X(g)}];$\n(3) $\\mathbf{E}[\\tilde{X}(f)^4] = \\mu(f^4) + 3\\mu(f^2)^2.$"
+        }
+      ]
+    },
+    {
+      "page_idx": 42,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.068,
+            0.125,
+            0.079
+          ],
+          "content": "36"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.067,
+            0.26,
+            0.08
+          ],
+          "content": "第二章 鞅论基础"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.122,
+            0.819,
+            0.209
+          ],
+          "content": "鞅是一类非常重要的随机过程. 从条件期望的观点看, 鞅具有相对平稳性. 鞅方法是现代随机过程理论中最重要的工具之一. 本章介绍鞅论的基本结果, 包括鞅 (上、下鞅) 的概念、离散时间下鞅的不等式、有界停止定理、收敛定理、连续时间鞅论等. 作为预备知识, 回顾了期望和条件期望的基本性质, 并对流和停时进行了简单的讨论."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.139,
+            0.261,
+            0.307,
+            0.283
+          ],
+          "level": 2,
+          "content": "2.1 预备知识"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.175,
+            0.333,
+            0.338,
+            0.352
+          ],
+          "level": 2,
+          "content": "2.1.1 数学期望"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.378,
+            0.819,
+            0.442
+          ],
+          "content": "考虑概率空间 $(\\Omega, \\mathcal{F}, \\mathbf{P})$. 设 $\\xi$ 为此概率空间上的随机变量. 令 $\\mu_{\\xi}$ 和 $F_{\\xi}$ 分别为 $\\xi$ 在 $\\mathbb{R}^d$ 上的概率分布和分布函数. 若 $f$ 为 $\\mathbb{R}^d$ 上的博雷尔可测函数, 则随机变量 $f(\\xi)$ 的数学期望可表示为斯蒂尔切斯积分"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.361,
+            0.454,
+            0.818,
+            0.488
+          ],
+          "content": "\\mathbf {E} f (\\xi) = \\int_ {\\mathbb {R} ^ {d}} f (x) \\mathrm{d} F _ {\\xi} (x), \\tag {2.1.1}",
+          "image_source": "images/page_42_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.505,
+            0.327,
+            0.522
+          ],
+          "content": "或者用测度积分表示为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.285,
+            0.535,
+            0.818,
+            0.57
+          ],
+          "content": "\\mathbf {E} f (\\xi) = \\int_ {\\Omega} f (\\xi (\\omega)) \\mathbf {P} (\\mathrm{d} \\omega) = \\int_ {\\mathbb {R} ^ {d}} f (x) \\mu_ {\\xi} (\\mathrm{d} x). \\tag {2.1.2}",
+          "image_source": "images/page_42_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.586,
+            0.506,
+            0.604
+          ],
+          "content": "若  $\\mathbf{E}|f(\\xi)|<\\infty,$  则称随机变量  $f(\\xi)$  是可积的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.609,
+            0.819,
+            0.719
+          ],
+          "content": "值得指出的是, 上面借助斯蒂尔切斯积分定义数学期望的方法有一定的局限性. 例如, 即使 $f$ 为 $\\mathbb{R}^d$ 上的有界博雷尔可测函数, (2.1.1) 式右边的积分也可能没有意义. 利用测度积分的表示 (2.1.2) 式则没有这样的问题. 不过对于本书中所遇到的函数, 上面两种积分都是有意义的. 想了解关于测度的严格积分理论的读者, 可以参考高等概率论的著作. 根据本书上册中的讨论, 关于数学期望有如下的定理:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.724,
+            0.818,
+            0.766
+          ],
+          "content": "定理 2.1.1 设可积随机变量  $\\xi$  和  $\\eta$  关于子  $\\sigma$  代数  $G \\subseteq F$  可测, 则  $\\mathbf{P}(\\xi \\leqslant \\eta) = 1$  当且仅当对任何  $A \\in G$  都有  $\\mathbf{E}(\\xi 1_{A}) \\leqslant \\mathbf{E}(\\eta 1_{A})$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.77,
+            0.818,
+            0.811
+          ],
+          "content": "推论 2.1.2 设可积随机变量  $\\xi$  和  $\\eta$  关于子  $\\sigma$  代数  $G \\subseteq F$  可测, 则  $\\mathbf{P}(\\xi = \\eta) = 1$  当且仅当对任何  $A \\in G$  都有  $\\mathbf{E}(\\xi 1_{A}) = \\mathbf{E}(\\eta 1_{A})$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.816,
+            0.818,
+            0.863
+          ],
+          "content": "定理 2.1.3 (单调收敛定理) 设  $\\xi, \\xi_{n}, n = 1, 2, \\cdots$  为非负随机变量且单调不降地有  $\\lim_{n \\to \\infty} \\xi_{n} \\stackrel{a.s.}{=} \\xi$ ，则有  $\\lim_{n \\to \\infty} E\\xi_{n} = E\\xi$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.869,
+            0.807,
+            0.887
+          ],
+          "content": "定理 2.1.4 (法图 (Fatou) 定理) 对于任何非负随机变量  $\\xi_{n}, n = 1, 2, \\cdots$ ，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.353,
+            0.906,
+            0.818,
+            0.931
+          ],
+          "content": "\\operatorname * {l i m i n f} _ {n \\to \\infty} \\mathbf {E} \\xi_ {n} \\geqslant \\mathbf {E} \\big (\\operatorname * {l i m i n f} _ {n \\to \\infty} \\xi_ {n} \\big). \\tag {2.1.3}",
+          "image_source": "images/page_42_equation_15.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 43,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.761,
+            0.067,
+            0.858,
+            0.081
+          ],
+          "content": "2.1 预备知识"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.874,
+            0.069,
+            0.893,
+            0.08
+          ],
+          "content": "37"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.122,
+            0.856,
+            0.169
+          ],
+          "content": "定理 2.1.5（控制收敛定理） 设随机变量  $\\xi, \\xi_{n}, n = 1, 2, \\cdots$  满足  $\\lim_{n \\to \\infty} \\xi_{n} \\stackrel{a.s.}{=} \\xi$ .\n若有非负可积随机变量  $\\eta$  使得  $|\\xi_{n}| \\leqslant \\eta$  (a.s.),  $n = 1, 2, \\cdots$ ，则有  $\\lim_{n \\to \\infty} E\\xi_{n} = E\\xi$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.17,
+            0.856,
+            0.21
+          ],
+          "content": "上面的控制收敛定理的条件可以弱化. 称 $(\\Omega, \\mathcal{F}, \\mathbf{P})$ 上的一列随机变量 $\\{\\xi_n\\}$ 是一致可积的, 是指当 $c \\to \\infty$ 时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.401,
+            0.231,
+            0.598,
+            0.259
+          ],
+          "content": "\\sup _ {n \\geqslant 1} \\mathbf {E} \\big (| \\xi_ {n} | 1 _ {\\{| \\xi_ {n} | \\geqslant c \\}} \\big) \\to 0.",
+          "image_source": "images/page_43_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.277,
+            0.45,
+            0.293
+          ],
+          "content": "特别地, 不难看出对任何  $\\alpha > 1$  有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.282,
+            0.314,
+            0.719,
+            0.334
+          ],
+          "content": "\\mathbf {E} (| \\xi_ {n} | 1 _ {\\{| \\xi_ {n} | \\geqslant c \\}}) \\leqslant c ^ {1 - \\alpha} \\mathbf {E} (| \\xi_ {n} | ^ {\\alpha} 1 _ {\\{| \\xi_ {n} | \\geqslant c \\}}) \\leqslant c ^ {1 - \\alpha} \\mathbf {E} (| \\xi_ {n} | ^ {\\alpha}).",
+          "image_source": "images/page_43_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.352,
+            0.578,
+            0.379
+          ],
+          "content": "因此, 若 $\\sup_{n\\geqslant 1}\\mathbf{E}(|\\xi_n|^{\\alpha}) < \\infty$ ，则 $\\{\\xi_n\\}$ 是一致可积的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.386,
+            0.857,
+            0.433
+          ],
+          "content": "定理 2.1.6 设随机变量  $\\xi, \\xi_{1}, \\xi_{2}, \\cdots$  满足  $\\lim_{n\\to\\infty}\\xi_{n}\\stackrel{a.s.}{=} \\xi$ . 若序列  $\\{\\xi_{n}\\}$  一致可积,\n则有  $\\lim_{n\\to\\infty}\\mathbf{E}\\xi_{n}=\\mathbf{E}\\xi.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.214,
+            0.438,
+            0.692,
+            0.455
+          ],
+          "content": "证明 由一致可积性, 对任何 $\\varepsilon > 0$, 当 $c(c > 0)$ 充分大时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.305,
+            0.475,
+            0.695,
+            0.503
+          ],
+          "content": "\\sup _ {n \\geqslant 1} \\mathbf {E} \\big (\\xi_ {n} 1 _ {\\{\\xi_ {n} <   - c \\}} \\big) \\geqslant - \\sup _ {n \\geqslant 1} \\mathbf {E} \\big (| \\xi_ {n} | 1 _ {\\{| \\xi_ {n} | > c \\}} \\big) \\geqslant - \\varepsilon .",
+          "image_source": "images/page_43_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.521,
+            0.239,
+            0.536
+          ],
+          "content": "因此有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.262,
+            0.559,
+            0.738,
+            0.579
+          ],
+          "content": "\\mathbf {E} \\xi_ {n} = \\mathbf {E} \\big (\\xi_ {n} 1 _ {\\{\\xi_ {n} \\geqslant - c \\}} \\big) + \\mathbf {E} \\big (\\xi_ {n} 1 _ {\\{\\xi_ {n} <   - c \\}} \\big) \\geqslant \\mathbf {E} \\big (\\xi_ {n} 1 _ {\\{\\xi_ {n} \\geqslant - c \\}} \\big) - \\varepsilon .",
+          "image_source": "images/page_43_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.597,
+            0.489,
+            0.616
+          ],
+          "content": "对 $(\\xi_{n} - c)1_{\\{\\xi_{n}\\geqslant -c\\}}$ 应用法图定理可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.257,
+            0.634,
+            0.744,
+            0.658
+          ],
+          "content": "\\operatorname * {l i m i n f} _ {n \\to \\infty} \\mathbf {E} \\big (\\xi_ {n} 1 _ {\\{\\xi_ {n} \\geqslant - c \\}} \\big) \\geqslant \\mathbf {E} \\big (\\operatorname * {l i m i n f} _ {n \\to \\infty} \\xi_ {n} 1 _ {\\{\\xi_ {n} \\geqslant - c \\}} \\big) \\geqslant \\mathbf {E} \\big (\\operatorname * {l i m i n f} _ {n \\to \\infty} \\xi_ {n} \\big).",
+          "image_source": "images/page_43_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.673,
+            0.239,
+            0.688
+          ],
+          "content": "因此有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.379,
+            0.71,
+            0.622,
+            0.734
+          ],
+          "content": "\\operatorname * {l i m i n f} _ {n \\to \\infty} \\mathbf {E} \\xi_ {n} \\geqslant \\mathbf {E} \\big (\\operatorname * {l i m i n f} _ {n \\to \\infty} \\xi_ {n} \\big) - \\varepsilon .",
+          "image_source": "images/page_43_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.748,
+            0.364,
+            0.764
+          ],
+          "content": "再由 $\\varepsilon > 0$ 的任意性得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.394,
+            0.786,
+            0.606,
+            0.81
+          ],
+          "content": "\\operatorname * {l i m i n f} _ {n \\to \\infty} \\mathbf {E} \\xi_ {n} \\geqslant \\mathbf {E} \\big (\\operatorname * {l i m i n f} _ {n \\to \\infty} \\xi_ {n} \\big).",
+          "image_source": "images/page_43_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.824,
+            0.285,
+            0.84
+          ],
+          "content": "类似地, 可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.387,
+            0.861,
+            0.612,
+            0.888
+          ],
+          "content": "\\operatorname * {l i m s u p} _ {n \\to \\infty} \\mathbf {E} \\xi_ {n} \\leqslant \\mathbf {E} \\big (\\operatorname * {l i m s u p} _ {n \\to \\infty} \\xi_ {n} \\big).",
+          "image_source": "images/page_43_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.906,
+            0.747,
+            0.93
+          ],
+          "content": "因为  $\\lim_{n\\to\\infty}\\xi_{n}\\stackrel{a.s.}{=} \\xi,$  以上二式右边的积分都等于  $E\\xi,$  故欲证结果成立. □"
+        }
+      ]
+    },
+    {
+      "page_idx": 44,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.068,
+            0.125,
+            0.079
+          ],
+          "content": "38"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.067,
+            0.26,
+            0.08
+          ],
+          "content": "第二章 鞅论基础"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.122,
+            0.819,
+            0.185
+          ],
+          "content": "值域为有限集合的可测函数称为简单函数. 根据上面的关于数学期望的收敛定理, 经常可以利用结构较为简单的随机变量的期望逼近一般随机变量的期望. 典型的做法如下: 对于整数 $n \\geqslant 1$ 令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.22,
+            0.199,
+            0.818,
+            0.243
+          ],
+          "content": "\\phi_ {n} (x) = n 1 _ {\\{x \\geqslant n \\}} + \\sum_ {k = 1} ^ {n 2 ^ {n}} 2 ^ {- n} (k - 1) 1 _ {[ (k - 1) / 2 ^ {n}, k / 2 ^ {n})} (x), \\quad x \\geqslant 0. \\tag {2.1.4}",
+          "image_source": "images/page_44_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.259,
+            0.819,
+            0.3
+          ],
+          "content": "显然, 对任意的 $x \\geqslant 0$ 有 $\\phi_n(x) \\uparrow x$. 对于非负随机变量 $\\xi$, 当 $n \\to \\infty$ 时有 $\\phi_n(\\xi) \\uparrow \\xi$. 再由积分单调收敛定理有 $\\mathbf{E}[\\phi_n(\\xi)] \\uparrow \\mathbf{E}\\xi$."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.175,
+            0.326,
+            0.382,
+            0.346
+          ],
+          "level": 2,
+          "content": "2.1.2 条件数学期望"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.37,
+            0.819,
+            0.41
+          ],
+          "content": "定义 2.1.1 设 X 为概率空间  $(\\Omega, \\mathcal{F}, \\mathbf{P})$  上的可积随机变量. 考虑子  $\\sigma$  代数  $G \\subseteq F$ . 如果对于一切事件  $A \\in G$  有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.429,
+            0.818,
+            0.448
+          ],
+          "content": "\\mathbf {E} (1 _ {A} \\xi) = \\mathbf {E} (1 _ {A} X), \\tag {2.1.5}",
+          "image_source": "images/page_44_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.464,
+            0.816,
+            0.528
+          ],
+          "content": "则称关于 $\\mathcal{G}$ 可测的随机变量 $\\xi$ 为 $X$ 的给定 $\\mathcal{G}$ 的条件数学期望或条件期望, 并记之为 $\\mathbf{E}(X|\\mathcal{G})$. 对于 $B \\in \\mathcal{F}$, 称条件期望 $\\mathbf{E}(1_B|\\mathcal{G})$ 为 $B$ 的给定 $\\mathcal{G}$ 的条件概率, 并记之为 $\\mathbf{P}(B|\\mathcal{G})$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.533,
+            0.819,
+            0.597
+          ],
+          "content": "根据高等概率论中的结果, 满足定义 2.1.1 中要求的随机变量 $\\xi$ 存在; 如可参见 [37]. 由推论 2.1.2 知, 该随机变量在几乎必然相等的意义下唯一. 若 $Z$ 是另一随机变量, 我们写 $\\mathbf{E}(X|Z) = \\mathbf{E}[X|\\sigma(Z)]$. 注意, 这个记号与上册中定义的条件期望相吻合."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.178,
+            0.602,
+            0.817,
+            0.62
+          ],
+          "content": "定理 2.1.7 设 X 和 Y 是概率空间  $(\\Omega, \\mathcal{F}, \\mathbf{P})$  上的可积随机变量, 则有如下性质:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.176,
+            0.626,
+            0.51,
+            0.735
+          ],
+          "sub_type": "text",
+          "content": "(1)  $\\mathbf{E}[\\mathbf{E}(X|\\mathcal{G})]=\\mathbf{E}(X);$\n(2) 若 X 与 G 独立, 则  $\\mathbf{E}(X|\\mathcal{G}) = \\mathbf{E}(X)$ ;\n(3) 对任何 $a \\in \\mathbb{R}$ 有 $\\mathbf{E}(aX|\\mathcal{G}) = a\\mathbf{E}(X|\\mathcal{G})$;\n(4) $\\mathbf{E}(X + Y|\\mathcal{G}) = \\mathbf{E}(X|\\mathcal{G}) + \\mathbf{E}(Y|\\mathcal{G})$;\n(5) 若 $X \\leqslant Y$, 则有 $\\mathbf{E}(X|\\mathcal{G}) \\leqslant \\mathbf{E}(Y|\\mathcal{G})$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.743,
+            0.819,
+            0.783
+          ],
+          "content": "证明 在 (2.1.5) 式中取 $A = \\Omega$ 即可得性质 (1). 若 $X$ 与 $\\mathcal{G}$ 独立, 则对任何 $A \\in \\mathcal{G}$ 随机变量 $1_A$ 与 $X$ 独立, 故有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.327,
+            0.802,
+            0.595,
+            0.82
+          ],
+          "content": "\\mathbf {E} (1 _ {A} X) = \\mathbf {E} (1 _ {A}) \\mathbf {E} X = \\mathbf {E} (1 _ {A} \\mathbf {E} X),",
+          "image_source": "images/page_44_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.838,
+            0.535,
+            0.855
+          ],
+          "content": "再由推论 2.1.2 知性质 (2) 成立. 对任何 $A \\in \\mathcal{G}$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.237,
+            0.874,
+            0.682,
+            0.892
+          ],
+          "content": "\\mathbf {E} (1 _ {A} a X) = a \\mathbf {E} (1 _ {A} X) = a \\mathbf {E} [ 1 _ {A} \\mathbf {E} (X | \\mathscr {G}) ] = \\mathbf {E} [ 1 _ {A} a \\mathbf {E} (X | \\mathscr {G}) ],",
+          "image_source": "images/page_44_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.909,
+            0.619,
+            0.927
+          ],
+          "content": "因而性质 (3) 成立. 类似地可以证明性质 (4) 和 (5) 成立. $\\square$"
+        }
+      ]
+    },
+    {
+      "page_idx": 45,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.761,
+            0.067,
+            0.858,
+            0.081
+          ],
+          "content": "2.1 预备知识"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.874,
+            0.069,
+            0.893,
+            0.08
+          ],
+          "content": "39"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.123,
+            0.857,
+            0.187
+          ],
+          "content": "定理 2.1.8 设 X 为概率空间  $(\\Omega, \\mathcal{F}, \\mathbf{P})$  上的随机变量且数学期望 EX 存在, 再设  $\\xi$  为关于子  $\\sigma$  代数  $G \\subseteq F$  可测的随机变量, 则  $\\xi = \\mathbf{E}(X|\\mathcal{G})$  当且仅当对任何 G 可测随机变量 Y, 只要  $Y\\xi$  或 YX 可积, 就有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.431,
+            0.207,
+            0.856,
+            0.224
+          ],
+          "content": "\\mathbf {E} (Y \\xi) = \\mathbf {E} (Y X). \\tag {2.1.6}",
+          "image_source": "images/page_45_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.243,
+            0.857,
+            0.353
+          ],
+          "content": "证明 若 (2.1.6) 式成立, 则对 $A \\in \\mathcal{G}$ 取 $Y = 1_A$ 即知 $\\xi = \\mathbf{E}(X|\\mathcal{G})$. 反之, 假设 $\\xi = \\mathbf{E}(X|\\mathcal{G})$, 下证 (2.1.6) 式成立. 根据数学期望的线性性, 只需考虑 $X, \\xi$ 和 $Y$ 都是非负随机变量的情况. 此时, 显然 (2.1.5) 式对于任意的 $A \\in \\mathcal{G}$ 成立. 因此, 当 $Y$ 是 $\\mathcal{G}$ 中有限个集合的示性函数的线性组合时 (2.1.6) 式成立. 特别地, 若 $\\phi_n$ 由 (2.1.4) 式给出, 则有 $\\mathbf{E}[\\phi_n(Y)X] = \\mathbf{E}[\\phi_n(Y)\\xi]$. 令 $n \\to \\infty$ 并应用单调收敛定理即得 (2.1.6) 式. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.361,
+            0.857,
+            0.4
+          ],
+          "content": "推论 2.1.9 设 X, Y 是  $(\\Omega, \\mathcal{F}, \\mathbf{P})$  上的随机变量且 Y 关于 G 可测. 若 X 和 YX 都可积, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.408,
+            0.422,
+            0.856,
+            0.439
+          ],
+          "content": "\\mathbf {E} (Y X | \\mathcal {G}) = Y \\mathbf {E} (X | \\mathcal {G}). \\tag {2.1.7}",
+          "image_source": "images/page_45_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.214,
+            0.458,
+            0.772,
+            0.475
+          ],
+          "content": "证明 对任何 $A \\in \\mathcal{G}$, 因 $1_A Y$ 和 $1_A$ 都关于 $\\mathcal{G}$ 可测, 应用 (2.1.6) 式得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.312,
+            0.495,
+            0.687,
+            0.515
+          ],
+          "content": "\\mathbf {E} \\big [ 1 _ {A} Y \\mathbf {E} (X | \\mathcal {G}) \\big ] = \\mathbf {E} (1 _ {A} Y X) = \\mathbf {E} \\big [ 1 _ {A} \\mathbf {E} (Y X | \\mathcal {G}) \\big ].",
+          "image_source": "images/page_45_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.532,
+            0.581,
+            0.549
+          ],
+          "content": "又因  $Y\\mathbf{E}(X|\\mathcal{G})$  关于 G 可测, 故 (2.1.7) 式成立. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.218,
+            0.558,
+            0.811,
+            0.575
+          ],
+          "content": "推论 2.1.10 设 X 为可积随机变量, 而  $G_{1} \\subseteq G_{2}$  都是 F 的子  $\\sigma$  代数, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.392,
+            0.594,
+            0.607,
+            0.614
+          ],
+          "content": "\\mathbf {E} \\big [ \\mathbf {E} (X | \\mathcal {G} _ {2}) | \\mathcal {G} _ {1} \\big ] = \\mathbf {E} (X | \\mathcal {G} _ {1}).",
+          "image_source": "images/page_45_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.214,
+            0.632,
+            0.58,
+            0.649
+          ],
+          "content": "证明 对任何 $A \\in \\mathcal{G}_1 \\subseteq \\mathcal{G}_2$, 应用 (2.1.7) 式得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.668,
+            0.726,
+            0.688
+          ],
+          "content": "\\mathbf {E} \\big \\{1 _ {A} \\mathbf {E} \\big [ \\mathbf {E} (X | \\mathcal {G} _ {2}) | \\mathcal {G} _ {1} \\big ] \\big \\} = \\mathbf {E} \\big \\{\\mathbf {E} \\big [ \\mathbf {E} (1 _ {A} X | \\mathcal {G} _ {2}) | \\mathcal {G} _ {1} \\big ] \\big \\} = \\mathbf {E} (1 _ {A} X).",
+          "image_source": "images/page_45_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.705,
+            0.636,
+            0.723
+          ],
+          "content": "因  $\\mathbf{E}[\\mathbf{E}(1_{A}X|\\mathcal{G}_{2})|\\mathcal{G}_{1}]$  关于  $G_{1}$  可测, 故知欲证结论成立. □"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.214,
+            0.75,
+            0.379,
+            0.768
+          ],
+          "level": 2,
+          "content": "2.1.3 流和停时"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.178,
+            0.794,
+            0.857,
+            0.879
+          ],
+          "content": "考虑概率空间 $(\\Omega, \\mathcal{F}, \\mathbf{P})$. 令 $I = \\mathbb{Z}_{+}$ 或 $\\mathbb{R}_{+}$. 如果 $\\mathcal{F}$ 的子 $\\sigma$ 代数族 $(\\mathcal{F}_t : t \\in I)$ 满足对任何 $s < t \\in I$ 都有 $\\mathcal{F}_s \\subseteq \\mathcal{F}_t$, 就称它是 $\\sigma$ 代数流或简称流. 对应于 $I = \\mathbb{Z}_{+}$ 或 $\\mathbb{R}_{+}$, 我们也经常将 $(\\mathcal{F}_t : t \\in I)$ 写为 $(\\mathcal{F}_t : t \\geqslant 0)$ 或 $(\\mathcal{F}_n : n \\geqslant 0)$. 直观上, 可以将 $\\sigma$ 代数 $\\mathcal{F}_t$ 解释为观测某些随机现象到 $t \\in I$ 时刻所积累的知识或信息."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.886,
+            0.857,
+            0.927
+          ],
+          "content": "称状态空间 $(E, \\mathcal{E})$ 上的随机过程 $X = (X_{t}: t \\in I)$ 关于某个流 $(\\mathcal{F}_{t}: t \\in I)$ 是适应的, 是指对任何 $t \\in I$, 随机变量 $X_{t}$ 都是 $\\mathcal{F}_{t}$ 可测的. 直观上, 过程 $X$ 关于流 $(\\mathcal{F}_{t})$ 适应"
+        }
+      ]
+    },
+    {
+      "page_idx": 46,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.068,
+            0.125,
+            0.08
+          ],
+          "content": "40"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.066,
+            0.26,
+            0.081
+          ],
+          "content": "第二章 鞅论基础"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.122,
+            0.819,
+            0.162
+          ],
+          "continues_prev": true,
+          "content": "可以解释为 X 的运动情况在我们的观测范围内, 或者说我们到任何时刻 t 积累的知识都包含了 X 在此时刻前的运动情况的所有信息. 给定过程 X, 定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.178,
+            0.818,
+            0.2
+          ],
+          "content": "\\mathscr {F} ^ {X} = \\sigma (\\{X _ {s}: s \\in I \\}), \\mathscr {F} _ {t} ^ {X} = \\sigma (\\{X _ {s}: s \\in I, s \\leqslant t \\}), \\tag {2.1.8}",
+          "image_source": "images/page_46_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.214,
+            0.819,
+            0.256
+          ],
+          "content": "则 $(\\mathcal{F}_t^X: t \\in I)$ 构成一个流, 称为 $X$ 的自然流, 称 $(\\mathcal{F}^X, \\mathcal{F}_t^X: t \\in I)$ 为 $X$ 的自然 $\\sigma$ 代数. 显然 $X$ 关于其自然流 $(\\mathcal{F}_t^X: t \\in I)$ 适应, 且它在 $X$ 所适应的流中是最小的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.261,
+            0.819,
+            0.3
+          ],
+          "content": "定义 2.1.2 称映射 $T: \\Omega \\to I \\cup \\{\\infty\\}$ 为关于流 $(\\mathcal{F}_t : t \\in I)$ 的停时或可选时, 是指对任何 $t \\in I$ 都有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.318,
+            0.319,
+            0.818,
+            0.339
+          ],
+          "content": "\\{T \\leqslant t \\} = \\{\\omega \\in \\Omega : T (\\omega) \\leqslant t \\} \\in \\mathscr {F} _ {t}. \\tag {2.1.9}",
+          "image_source": "images/page_46_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.355,
+            0.384,
+            0.372
+          ],
+          "content": "对于给定的 $(\\mathcal{F}_{t})$ 停时T, 定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.249,
+            0.39,
+            0.673,
+            0.409
+          ],
+          "content": "\\mathcal {F} _ {T} = \\{A \\in \\mathcal {F} _ {\\infty}: \\text {对任意} t \\in I \\text {有} A \\cap \\{T \\leqslant t \\} \\in \\mathcal {F} _ {t} \\},",
+          "image_source": "images/page_46_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.421,
+            0.682,
+            0.464
+          ],
+          "content": "其中 $\\mathcal{F}_{\\infty} = \\sigma \\left( \\bigcup_{t \\in I} \\mathcal{F}_t \\right)$. 易证 $\\mathcal{F}_T$ 是一个 $\\sigma$ 代数, 称为 $T$ 前 $\\sigma$ 代数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.467,
+            0.819,
+            0.577
+          ],
+          "content": "停时 $T$ 是相对于某个流而言的. 当流 $(\\mathcal{F}_t)$ 明确时, 我们简单地称 $T$ 为停时. 直观上, 性质 $\\{T \\leqslant t\\} \\in \\mathcal{F}_t$ 表示根据时刻 $t$ 我们掌握的信息 $\\mathcal{F}_t$ 可以判断 $T$ 是否已经在 $t$ 时刻或更早地到来. 停时 $\\sigma$ 代数 $\\mathcal{F}_T$ 可以解释为到随机时刻 $T$ 我们掌握的所有知识或信息的总和. 不难证明, 停时 $T$ 关于 $\\sigma$ 代数 $\\mathcal{F}_T$ 可测. 另外, 若 $S$ 和 $T$ 都是停时且 $S \\leqslant T$, 则 $\\mathcal{G}_S \\subseteq \\mathcal{G}_T$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.583,
+            0.818,
+            0.622
+          ],
+          "content": "命题 2.1.11 若 S 和 T 是  $(\\mathcal{F}_{t})$  的停时, 则  $S \\vee T, S \\wedge T$  和  $S + T$  也是  $(\\mathcal{F}_{t})$  的停时."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.631,
+            0.818,
+            0.672
+          ],
+          "content": "证明 由 $\\{S \\vee T \\leqslant t\\} = \\{S \\leqslant t\\} \\cap \\{T \\leqslant t\\}$ 和 $\\{S \\wedge T \\leqslant t\\} = \\{S \\leqslant t\\} \\cup \\{T \\leqslant t\\}$ 知 $S \\vee T$ 和 $S \\wedge T$ 是 $(\\mathcal{F}_t)$ 的停时. 若 $I = \\mathbb{Z}_+$, 则对 $t \\in I$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.686,
+            0.633,
+            0.731
+          ],
+          "content": "\\{S + T = t \\} = \\bigcup_ {k = 0} ^ {t} \\{S = k, T = t - k \\} \\in \\mathscr {F} _ {t},",
+          "image_source": "images/page_46_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.744,
+            0.818,
+            0.786
+          ],
+          "content": "因而 $S + T$ 是 $(\\mathcal{F}_t)$ 的停时.下面考虑 $I = \\mathbb{R}_{+}$ 的情况.此时，对任何 $t\\geqslant 0$ 有 $\\{S>$ $t\\} \\cup \\{T > t\\} \\in \\mathcal{F}_t.$ 而且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.304,
+            0.801,
+            0.818,
+            0.845
+          ],
+          "content": "\\begin{array}{l} \\{S + T > t \\} = \\{S > t \\} \\cup \\{S + T > t, S \\leqslant t \\} \\\\ = \\{S > t \\} \\cup \\{t - T <   S \\leqslant t \\}, \\tag {2.1.10} \\\\ \\end{array}",
+          "image_source": "images/page_46_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.86,
+            0.502,
+            0.879
+          ],
+          "content": "其中  $\\{S > t\\} \\in F_{t}$ . 令 Q 表示有理数集, 则有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.242,
+            0.893,
+            0.615,
+            0.93
+          ],
+          "content": "\\{t - T <   S \\leqslant t \\} = \\bigcup_ {r \\in [ 0, t) \\cap \\mathbb {Q}} \\{t - T <   r \\leqslant S \\leqslant t \\}",
+          "image_source": "images/page_46_equation_17.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 47,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.761,
+            0.067,
+            0.858,
+            0.081
+          ],
+          "content": "2.1 预备知识"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.875,
+            0.069,
+            0.892,
+            0.08
+          ],
+          "content": "41"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.411,
+            0.12,
+            0.754,
+            0.156
+          ],
+          "content": "= \\bigcup_ {r \\in [ 0, t) \\cap \\mathbb {Q}} \\{T > t - r \\} \\cap \\{S \\geqslant r \\} \\cap \\{S \\leqslant t \\},",
+          "image_source": "images/page_47_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.168,
+            0.857,
+            0.21
+          ],
+          "content": "其中 $\\{T > t - r\\} \\in \\mathcal{F}_{t-r} \\subseteq \\mathcal{F}_t, \\{S \\geqslant r\\} \\in \\mathcal{F}_r \\subseteq \\mathcal{F}_t$ 而 $\\{S \\leqslant t\\} \\in \\mathcal{F}_t$. 所以 $\\{t - T < S \\leqslant t\\} \\in \\mathcal{F}_t$. 由 (2.1.10) 式知 $\\{S + T > t\\} \\in \\mathcal{F}_t$, 故 $T + S$ 是 $(\\mathcal{F}_t)$ 的停时. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.216,
+            0.857,
+            0.28
+          ],
+          "content": "例 2.1.1 映射 $T: \\Omega \\to \\{0, 1, \\cdots\\} \\cup \\{\\infty\\}$ 是关于离散时间流 $(\\mathcal{F}_n)$ 的停时当且仅当对任何 $n \\geqslant 0$ 都有 $\\{T = n\\} \\in \\mathcal{F}_n$. 此时 $A \\in \\mathcal{F}_T$ 当且仅当对任何 $n \\geqslant 0$ 都有 $A \\cap \\{T = n\\} \\in \\mathcal{F}_n$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.285,
+            0.857,
+            0.325
+          ],
+          "content": "例 2.1.2 设离散时间随机过程  $(X_{n})$  关于流  $(\\mathcal{F}_{n})$  适应. 再设 T 为  $(\\mathcal{F}_{n})$  的停时, 则对任意的  $n \\geqslant 0$  和  $i \\in E$  有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.261,
+            0.342,
+            0.741,
+            0.36
+          ],
+          "content": "\\{T <   \\infty \\} \\cap \\{X _ {T} = i \\} \\cap \\{T = n \\} = \\{X _ {n} = i \\} \\cap \\{T = n \\} \\in \\mathcal {G} _ {n},",
+          "image_source": "images/page_47_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.374,
+            0.856,
+            0.414
+          ],
+          "content": "故有 $\\{T < \\infty\\} \\cap \\{X_T = i\\} \\in \\mathcal{G}_T$. 这说明映射 $\\omega \\mapsto X_{T(\\omega)}(\\omega)$ 限制在 $\\{T < \\infty\\}$ 上关于 $\\{T < \\infty\\} \\cap \\mathcal{G}_T$ 可测."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.42,
+            0.857,
+            0.505
+          ],
+          "content": "设 $X = (X_{t}:t\\in I)$ 是以 $E$ 为状态空间的随机过程. 分别称 $\\tau_A\\coloneqq \\inf \\{t\\in I:X_t\\in A\\}$ 和 $T_{A}:= \\inf \\{t\\in I:t > 0,X_{t}\\in A\\}$ 为 $X$ 对于集合 $A\\subseteq E$ 的首达时与击中时. 直观上 $\\tau_{A}$ 和 $T_{A}$ 分别是在考虑和不考虑初始位置的情况下, 随机过程 $X$ 首次进入集合 $A$ 的时刻."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.512,
+            0.857,
+            0.596
+          ],
+          "content": "例 2.1.3 设状态空间  $(E, \\mathcal{E})$  上的离散时间随机过程  $(X_{n})$  关于流  $(\\mathcal{F}_{n})$  适应, 则 X 对于集合  $A \\in E$  的首达时  $\\tau_{A}$  和击中时  $T_{A}$  都是停时. 例如, 我们有  $\\{\\tau_{A} \\leqslant n\\} = \\bigcup_{k=0}^{n} \\{X_{k} \\in A\\} \\in \\mathscr{F}_{n}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.178,
+            0.599,
+            0.856,
+            0.639
+          ],
+          "content": "设 $\\{\\xi_n : n \\geqslant 1\\}$ 是独立同分布随机变量序列. 令 $(\\mathcal{F}_n)$ 是 $(\\xi_n)$ 的自然 $\\sigma$ 代数流. 再定义从原点出发的随机游动"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.416,
+            0.651,
+            0.855,
+            0.692
+          ],
+          "content": "X _ {n} = \\sum_ {i = 1} ^ {n} \\xi_ {i}, \\quad n \\geqslant 0. \\tag {2.1.11}",
+          "image_source": "images/page_47_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.704,
+            0.783,
+            0.722
+          ],
+          "content": "注意 $(\\mathcal{F}_n)$ 也是 $(X_{n})$ 的自然流. 下面命题的结论称为沃尔德 (Wald) 恒等式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.219,
+            0.727,
+            0.804,
+            0.746
+          ],
+          "content": "命题 2.1.12 (沃尔德恒等式) 设  $\\mathbf{E}(\\xi_{1})$  存在而 T 是关于  $(\\mathcal{F}_{n})$  的停时, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.418,
+            0.761,
+            0.582,
+            0.779
+          ],
+          "content": "\\mathbf {E} (X _ {T}) = \\mathbf {E} (T) \\mathbf {E} (\\xi_ {1}).",
+          "image_source": "images/page_47_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.793,
+            0.856,
+            0.833
+          ],
+          "content": "证明 因 $T$ 是 $(\\mathcal{F}_n)$ 的停时, 事件 $\\{T \\geqslant n\\} = \\{T \\leqslant n - 1\\}^c \\in \\mathcal{F}_{n-1}$ 独立于 $\\xi_n$. 从而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.311,
+            0.843,
+            0.724,
+            0.932
+          ],
+          "content": "\\begin{array}{l} \\mathbf {E} (X _ {T}) = \\mathbf {E} \\Big (\\sum_ {n = 1} ^ {\\infty} \\xi_ {n} 1 _ {\\{n \\leqslant T \\}} \\Big) = \\sum_ {n = 1} ^ {\\infty} \\mathbf {E} \\big (\\xi_ {n} 1 _ {\\{n \\leqslant T \\}} \\big) \\\\ = \\sum_ {n = 1} ^ {\\infty} \\mathbf {E} (\\xi_ {n}) \\mathbf {E} (1 _ {\\{n \\leqslant T \\}}) = \\mathbf {E} (\\xi_ {1}) \\sum_ {n = 1} ^ {\\infty} \\mathbf {P} (n \\leqslant T). \\\\ \\end{array}",
+          "image_source": "images/page_47_equation_16.jpg"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "modified_at": "2026-08-04T18:30:12+08:00",
+      "page_count": 246,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 32,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 33,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 34,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 35,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 36,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 37,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 38,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 39,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 40,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 41,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 42,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 43,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 44,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 45,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 46,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 47,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

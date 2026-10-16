@@ -1,0 +1,2921 @@
+{
+  "pages": [
+    {
+      "page_idx": 176,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.1,
+            0.068,
+            0.125,
+            0.079
+          ],
+          "content": "180"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.066,
+            0.304,
+            0.08
+          ],
+          "content": "第七章 连续时间马氏链"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.123,
+            0.329,
+            0.139
+          ],
+          "content": "故知  $\\mathbf{P}(\\zeta=\\infty)=1.$  □"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.175,
+            0.166,
+            0.317,
+            0.185
+          ],
+          "level": 2,
+          "content": "7.2.3 嵌入链"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.209,
+            0.819,
+            0.274
+          ],
+          "content": "定理 7.2.6 设 E 上的连续时间马氏链  $(X_{t}: t \\geqslant 0)$  的密度矩阵 Q 为保守的, 且无吸收状态. 则  $(X_{S_{n}}: n \\geqslant 0)$  是离散时间马氏链, 且有转移矩阵  $P := (q_{i}^{-1} q_{ij} (1 - \\delta_{ij}) : i, j \\in E)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.282,
+            0.819,
+            0.346
+          ],
+          "content": "证明 因 $Q$ 无吸收状态, 每个 $S_{n}$ 都是有限停时. 注意 $X_{S_n}$ 关于 $\\mathcal{F}_{S_n}$ 可测. 根据强马氏性, 对 $i \\in E$ 和 $F \\in \\mathcal{F}_{S_n}$, 在条件概率 $\\mathbf{P}(\\cdot | F \\cap \\{X_{S_n} = i\\})$ 之下 ($X_{S_n + t}: t \\geqslant 0$) 为与 $X$ 有相同密度矩阵的马氏链. 再利用定理 7.2.2, 对于任何 $j \\neq i$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.307,
+            0.364,
+            0.614,
+            0.384
+          ],
+          "content": "\\mathbf {P} (X _ {S _ {n + 1}} = j | F \\cap \\{X _ {S _ {n}} = i \\}) = q _ {i} ^ {- 1} q _ {i j}.",
+          "image_source": "images/page_176_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.401,
+            0.726,
+            0.419
+          ],
+          "content": "因而 $(X_{S_n}:n\\geqslant 0)$ 关于流 $(\\mathcal{F}_{S_n}:n\\geqslant 0)$ 是以 $P$ 为转移矩阵的马氏链. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.427,
+            0.817,
+            0.467
+          ],
+          "content": "在上面定理的情况下, 我们称离散时间马氏链  $(X_{S_{n}}: n \\geqslant 0)$  为  $(X_{t}: t \\geqslant 0)$  的嵌入链. 通过考虑嵌入链, 可将一些有关连续时间马氏链的问题转化为离散时间问题来处理."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.473,
+            0.817,
+            0.513
+          ],
+          "content": "例 7.2.1 考虑状态空间  $Z_{+}$  上参数为  $\\alpha > 0$  的泊松过程, 其转移矩阵  $(P_{t})_{t \\geqslant 0}$  由例 7.1.2 给出. 特别地, 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.213,
+            0.528,
+            0.706,
+            0.561
+          ],
+          "content": "p _ {t} (i, i) = \\mathrm{e} ^ {- \\alpha t}, p _ {t} (i, i + 1) = \\alpha t \\mathrm{e} ^ {- \\alpha t}, p _ {t} (i, i + 2) = \\frac {(\\alpha t) ^ {2}}{2} \\mathrm{e} ^ {- \\alpha t}.",
+          "image_source": "images/page_176_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.573,
+            0.411,
+            0.59
+          ],
+          "content": "经简单计算知, 相应的密度矩阵为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.354,
+            0.605,
+            0.818,
+            0.705
+          ],
+          "content": "Q = \\alpha \\left( \\begin{array}{c c c c} - 1 & 1 & 0 & \\dots \\\\ 0 & - 1 & 1 & \\dots \\\\ 0 & 0 & - 1 & \\dots \\\\ \\vdots & \\vdots & \\vdots \\end{array} \\right). \\tag {7.2.16}",
+          "image_source": "images/page_176_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.72,
+            0.816,
+            0.76
+          ],
+          "content": "由定理 1.4.1 或定理 7.2.2, 泊松过程在  $Z_{+}$ 中每个点停留一个以  $\\alpha$  为参数的指数分布时间后跳到该点右边相邻的整数点, 如此一直运动下去."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.174,
+            0.766,
+            0.701,
+            0.784
+          ],
+          "content": "例 7.2.2 由 (7.1.6) 式定义的转移矩阵有密度矩阵  $Q = \\alpha(\\pi - I)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.788,
+            0.819,
+            0.83
+          ],
+          "content": "例 7.2.3 令  $E = \\{-1, 1\\}^{S}$ ，其中  $S \\subseteq Z^{d}$  为非空有限集合。对于  $k \\in S$  和  $x = \\{x(i) : i \\in S\\} \\in E$  定义  $x_{k} = \\{x_{k}(i) : i \\in S\\} \\in E$  如下:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.348,
+            0.85,
+            0.564,
+            0.89
+          ],
+          "content": "x _ {k} (i) = \\left\\{ \\begin{array}{l l} x (i), & i \\neq k, \\\\ - x (i), & i = k. \\end{array} \\right.",
+          "image_source": "images/page_176_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.909,
+            0.817,
+            0.928
+          ],
+          "content": "给定常数 $\\beta > 0$, 我们可以定义 $E$ 上的保守密度矩阵 $Q = \\{q_{xy} : x, y \\in E\\}$ 如下: 当"
+        }
+      ]
+    },
+    {
+      "page_idx": 177,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.762,
+            0.068,
+            0.857,
+            0.081
+          ],
+          "content": "7.2 密度矩阵"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.875,
+            0.069,
+            0.899,
+            0.08
+          ],
+          "content": "181"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.122,
+            0.341,
+            0.139
+          ],
+          "content": "$y = x_{k}$ $(k\\in S)$ 时令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.362,
+            0.154,
+            0.856,
+            0.196
+          ],
+          "content": "q _ {x x _ {k}} = \\exp \\Bigg \\{- \\sum_ {| k - j | = 1} \\beta x (k) x (j) \\Bigg \\}, \\tag {7.2.17}",
+          "image_source": "images/page_177_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.21,
+            0.857,
+            0.275
+          ],
+          "content": "当 $y \\neq x$ 为其他状态时令 $q_{xy} = 0$. 以 $Q$ 为密度矩阵的马氏链称为伊辛 (Ising) 模型, 它描述了铁磁体的磁化过程, 其中 $\\beta$ 与绝对温度的倒数成正比. 关于伊辛模型的详细讨论, 可参见 [4,25]."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.215,
+            0.301,
+            0.287,
+            0.319
+          ],
+          "level": 2,
+          "content": "练习题"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.345,
+            0.857,
+            0.414
+          ],
+          "content": "1. 设 $P = (p_{ij}(t): i, j \\in E, t \\geqslant 0)$ 是以 $Q$ 为密度矩阵的马氏转移矩阵. 证明: 若 $M := \\sup_{i \\in E} q_i < \\infty$, 则 $\\lim_{t \\to 0+} p_{ii}(t) = 1$ 对 $i \\in E$ 一致地成立, 进而函数族 $\\{p_{ij}(\\cdot): i, j \\in E\\}$ 在 $[0, \\infty)$ 上等度连续."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.214,
+            0.419,
+            0.778,
+            0.438
+          ],
+          "content": "提示: 由 (7.2.6) 式有 $p_{ii}(t) = \\mathrm{e}^{-\\phi_i(t)} \\geqslant \\mathrm{e}^{-t q_i} \\geqslant \\mathrm{e}^{-t M}$, 再应用定理 7.1.9."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.443,
+            0.859,
+            0.482
+          ],
+          "content": "2. 设 $P = (p_{ij}(t): i, j \\in E, t \\geqslant 0)$ 是以 $Q$ 为密度矩阵的马氏转移矩阵. 对 $i, j \\in E$ 和 $\\lambda > 0$ 令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.397,
+            0.499,
+            0.604,
+            0.534
+          ],
+          "content": "u _ {i j} (\\lambda) = \\int_ {0} ^ {\\infty} \\mathrm{e} ^ {- \\lambda t} p _ {i j} (t) \\mathrm{d} t.",
+          "image_source": "images/page_177_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.548,
+            0.553,
+            0.583
+          ],
+          "content": "证明: (1) 对  $i \\in E$  和  $\\lambda > 0$  有  $\\sum_{j} \\lambda u_{ij}(\\lambda) = 1$ ;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.216,
+            0.586,
+            0.356,
+            0.603
+          ],
+          "content": "(2) 对 $i, j \\in E$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.311,
+            0.627,
+            0.69,
+            0.651
+          ],
+          "content": "\\lim _ {\\lambda \\to \\infty} \\lambda u _ {i j} (\\lambda) = \\delta_ {i j}, \\quad \\lim _ {\\lambda \\to \\infty} \\lambda [ \\lambda u _ {i j} (\\lambda) - \\delta_ {i j} ] = q _ {i j};",
+          "image_source": "images/page_177_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.216,
+            0.662,
+            0.446,
+            0.68
+          ],
+          "content": "(3) 对 $i, j \\in E$ 和 $\\lambda, \\mu > 0$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.701,
+            0.669,
+            0.734
+          ],
+          "content": "u _ {i j} (\\lambda) - u _ {i j} (\\mu) = (\\mu - \\lambda) \\sum_ {k \\in E} u _ {i k} (\\lambda) u _ {k j} (\\mu).",
+          "image_source": "images/page_177_equation_14.jpg"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.179,
+            0.75,
+            0.857,
+            0.881
+          ],
+          "sub_type": "text",
+          "content": "3. 设 $(\\xi_{n}: n \\geqslant 0)$ 是从 $x \\in \\mathbb{Z}$ 出发的离散时间一维对称简单随机游动, 而 $(N_{t}: t \\geqslant 0)$ 与之独立, 从原点出发且以 $\\alpha > 0$ 为参数的泊松过程. 证明连续时间对称简单随机游动 $(\\xi_{N_{t}}: t \\geqslant 0)$ 是鞅.\n4. 设 $(X_{t}: t \\geqslant 0)$ 是从 $x \\in \\mathbb{Z}$ 出发的连续时间一维对称简单随机游动. 对 $y \\in \\mathbb{Z}$ 令 $T_{y} = \\inf \\{t > 0 : X_{t} = y\\}$. 利用 $(X_{t}: t \\geqslant 0)$ 的鞅性质证明: 若 $a, b \\in \\mathbb{Z}$ 满足 $a < x < b$, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.328,
+            0.898,
+            0.673,
+            0.931
+          ],
+          "content": "\\mathbf {P} (T _ {a} > T _ {b}) = \\frac {x - a}{b - a}, \\quad \\mathbf {P} (T _ {b} > T _ {a}) = \\frac {b - x}{b - a}.",
+          "image_source": "images/page_177_equation_18.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 178,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.1,
+            0.068,
+            0.125,
+            0.079
+          ],
+          "content": "182"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.066,
+            0.304,
+            0.08
+          ],
+          "content": "第七章 连续时间马氏链"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.122,
+            0.819,
+            0.191
+          ],
+          "content": "5. 设 $(\\xi_{n}: n \\geqslant 0)$ 是从原点出发的一维简单随机游动, 而 $(N_{t}: t \\geqslant 0)$ 与之独立, 从原点出发, 以 $a > 0$ 为参数的泊松过程. 令 $X_{n} = \\xi_{n} - \\min_{0 \\leqslant k \\leqslant n} \\xi_{k}$ 和 $Y_{n} = \\max_{0 \\leqslant k \\leqslant n} \\xi_{k} - \\xi_{n}$. 证明 $(X_{N_{t}}: t \\geqslant 0)$ 和 $(Y_{N_{t}}: t \\geqslant 0)$ 都是连续时间马氏链, 并给出其密度矩阵."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.196,
+            0.819,
+            0.283
+          ],
+          "content": "提示: 令 $p = \\mathbf{P}(\\xi_1 = 1)$ 和 $q = \\mathbf{P}(\\xi_1 = -1)$. 再令 $\\tau_1 = \\inf \\{n \\geqslant 0 : X_n = 1\\}$ 和 $S_1 = \\inf \\{t \\geqslant 0 : X_{N_t} = 1\\}$. 注意对 $k \\geqslant 1$ 有 $\\mathbf{P}(\\tau_1 = k) = pq^{k-1}$, 且在条件概率 $\\mathbf{P}(\\cdot | \\tau_1 = k)$ 之下 $S_1$ 是 $k$ 个独立且均服从参数为 $\\alpha$ 的指数分布的随机变量之和. 根据全期望公式有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.295,
+            0.295,
+            0.627,
+            0.336
+          ],
+          "content": "\\mathbf {P} (\\mathrm{e} ^ {- \\lambda S _ {1}}) = \\sum_ {k = 1} ^ {\\infty} p q ^ {k - 1} \\Big (\\frac {a}{a + \\lambda} \\Big) ^ {k} = \\frac {a p}{a p + \\lambda}.",
+          "image_source": "images/page_178_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.351,
+            0.819,
+            0.392
+          ],
+          "content": "因此 $S_{1}$ 服从参数为 $ap$ 的指数分布. 类似地可知 $T_{1} = \\inf \\{t \\geqslant 0 : Y_{N_{t}} = 1\\}$ 服从参数为 $aq$ 的指数分布."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.14,
+            0.444,
+            0.383,
+            0.466
+          ],
+          "level": 2,
+          "content": "7.3 向前和向后方程"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.512,
+            0.818,
+            0.552
+          ],
+          "content": "设 $(P(t))_{t\\geqslant 0} = \\{(p_{ij}(t):i,j\\in E):t\\geqslant 0\\}$ 是可数状态空间 $E$ 上的准马氏转移矩阵, 则对于 $t\\geqslant 0$ 和 $h > 0$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.242,
+            0.567,
+            0.818,
+            0.602
+          ],
+          "content": "p _ {i j} (t + h) - p _ {i j} (t) = \\sum_ {k \\neq j} p _ {i k} (t) p _ {k j} (h) - p _ {i j} (t) [ 1 - p _ {j j} (h) ] \\tag {7.3.1}",
+          "image_source": "images/page_178_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.617,
+            0.164,
+            0.632
+          ],
+          "content": "和"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.241,
+            0.649,
+            0.818,
+            0.684
+          ],
+          "content": "p _ {i j} (t + h) - p _ {i j} (t) = \\sum_ {k \\neq i} p _ {i k} (h) p _ {k j} (t) - [ 1 - p _ {i i} (h) ] p _ {i j} (t). \\tag {7.3.2}",
+          "image_source": "images/page_178_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.699,
+            0.818,
+            0.739
+          ],
+          "content": "令 $Q = (q_{ij}:i,j\\in E)$ 为 $(P(t))_{t\\geqslant 0}$ 的密度矩阵.我们自然地希望可以在上面二式两边同除以 $h$ 并令 $h\\to 0+$ 得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.338,
+            0.755,
+            0.818,
+            0.791
+          ],
+          "content": "p _ {i j} ^ {\\prime} (t) = \\sum_ {k \\neq j} p _ {i k} (t) q _ {k j} - p _ {i j} (t) q _ {j} \\tag {7.3.3}",
+          "image_source": "images/page_178_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.805,
+            0.164,
+            0.82
+          ],
+          "content": "和"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.336,
+            0.836,
+            0.818,
+            0.871
+          ],
+          "content": "p _ {i j} ^ {\\prime} (t) = \\sum_ {k \\neq i} q _ {i k} p _ {k j} (t) - q _ {i} p _ {i j} (t). \\tag {7.3.4}",
+          "image_source": "images/page_178_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.886,
+            0.818,
+            0.927
+          ],
+          "content": "这两个式子分别称为 (柯尔莫哥洛夫) 向前微分方程和向后微分方程. 显然 (7.2.1) 式和 (7.2.2) 式可视为 (7.3.3) 式和 (7.3.4) 式当 $t = 0$ 时的特例."
+        }
+      ]
+    },
+    {
+      "page_idx": 179,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.718,
+            0.068,
+            0.857,
+            0.081
+          ],
+          "content": "7.3 向前和向后方程"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.875,
+            0.069,
+            0.9,
+            0.08
+          ],
+          "content": "183"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.215,
+            0.12,
+            0.379,
+            0.138
+          ],
+          "level": 2,
+          "content": "7.3.1 向后方程"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.22,
+            0.163,
+            0.638,
+            0.181
+          ],
+          "content": "定理 7.3.1 向后微分方程 (7.3.4) 等价于积分方程"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.308,
+            0.193,
+            0.856,
+            0.235
+          ],
+          "content": "p _ {i j} (t) = \\delta_ {i j} + \\sum_ {k \\neq i} \\int_ {0} ^ {t} q _ {i k} p _ {k j} (s) \\mathrm{d} s - \\int_ {0} ^ {t} q _ {i} p _ {i j} (s) \\mathrm{d} s. \\tag {7.3.5}",
+          "image_source": "images/page_179_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.247,
+            0.857,
+            0.311
+          ],
+          "content": "证明 由定理 7.1.9 知 $p_{ij}(t)$ 关于 $t \\geqslant 0$ 一致连续. 若 (7.3.4) 式成立, 根据控制收敛定理可知 $p_{ij}'(t)$ 也关于 $t \\geqslant 0$ 一致连续, 对该式两边积分并应用富比尼定理即得 (7.3.5) 式. 反之, 设 (7.3.5) 式成立. 根据富比尼定理有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.297,
+            0.321,
+            0.704,
+            0.363
+          ],
+          "content": "p _ {i j} (t) = \\delta_ {i j} + \\int_ {0} ^ {t} \\left[ \\sum_ {k \\neq i} q _ {i k} p _ {k j} (s) \\right] \\mathrm{d} s - \\int_ {0} ^ {t} q _ {i} p _ {i j} (s) \\mathrm{d} s.",
+          "image_source": "images/page_179_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.375,
+            0.857,
+            0.416
+          ],
+          "content": "注意这里积分中的级数对 $s \\geqslant 0$ 一致收敛且一致连续, 由此可见 $p_{ij}(t)$ 关于 $t \\geqslant 0$ 连续可导. 在上式两边对 $t \\geqslant 0$ 求导即得 (7.3.4) 式. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.219,
+            0.423,
+            0.638,
+            0.44
+          ],
+          "content": "定理 7.3.2 向后微分方程 (7.3.4) 等价于积分方程"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.319,
+            0.453,
+            0.856,
+            0.495
+          ],
+          "content": "p _ {i j} (t) = \\delta_ {i j} \\mathrm{e} ^ {- q _ {i} t} + \\sum_ {k \\neq i} \\int_ {0} ^ {t} q _ {i k} p _ {k j} (s) \\mathrm{e} ^ {- q _ {i} (t - s)} \\mathrm{d} s. \\tag {7.3.6}",
+          "image_source": "images/page_179_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.215,
+            0.507,
+            0.55,
+            0.524
+          ],
+          "content": "证明 显然, 向后微分方程 (7.3.4) 等价于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.382,
+            0.536,
+            0.619,
+            0.571
+          ],
+          "content": "\\left[ \\mathrm{e} ^ {q _ {i} t} p _ {i j} (t) \\right] ^ {\\prime} = \\sum_ {k \\neq i} \\mathrm{e} ^ {q _ {i} t} q _ {i k} p _ {k j} (t).",
+          "image_source": "images/page_179_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.583,
+            0.457,
+            0.6
+          ],
+          "content": "另一方面, 积分方程 (7.3.6) 等价于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.343,
+            0.611,
+            0.856,
+            0.653
+          ],
+          "content": "\\mathrm{e} ^ {q _ {i} t} p _ {i j} (t) = \\delta_ {i j} + \\sum_ {k \\neq i} \\int_ {0} ^ {t} q _ {i k} p _ {k j} (s) \\mathrm{e} ^ {q _ {i} s} \\mathrm{d} s. \\tag {7.3.7}",
+          "image_source": "images/page_179_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.665,
+            0.856,
+            0.704
+          ],
+          "content": "与定理 7.3.1 的证明中类似地, 可以看到以上二式等价, 故 (7.3.4) 式和 (7.3.6) 式等价. $\\square$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.712,
+            0.856,
+            0.753
+          ],
+          "content": "引理 7.3.3 令 $a < b \\in \\mathbb{R}$. 若连续函数 $f$ 在区间 $[a, b]$ 上有连续的右导数 $f'_+$, 则存在 $z \\in [a, b)$ 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.392,
+            0.767,
+            0.856,
+            0.786
+          ],
+          "content": "(b - a) f _ {+} ^ {\\prime} (z) = f (b) - f (a). \\tag {7.3.8}",
+          "image_source": "images/page_179_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.799,
+            0.857,
+            0.886
+          ],
+          "content": "证明 首先, 考虑 $f(a) = f(b) = c$ 的特例. 假若对一切 $x \\in [a, b]$ 有 $f(x) \\leqslant c$, 则 $f_{+}^{\\prime}(a) \\leqslant 0$. 否则函数 $f$ 在某点 $x_1 \\in (a, b)$ 取到其最大值, 因而 $f_{+}^{\\prime}(x_1) \\leqslant 0$. 所以总有 $x_1 \\in [a, b)$ 使得 $f_{+}^{\\prime}(x_1) \\leqslant 0$. 类似地, 有 $x_2 \\in [a, b)$ 使得 $f_{+}^{\\prime}(x_1) \\geqslant 0$. 由 $f_{+}^{\\prime}$ 的连续性, 存在 $z \\in [a, b)$ 使得 $f_{+}^{\\prime}(z) = 0$. 对于一般情况, 将前面的结论应用于函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.363,
+            0.897,
+            0.638,
+            0.93
+          ],
+          "content": "g (x) := f (x) - \\frac {f (b) - f (a)}{b - a} (x - a),",
+          "image_source": "images/page_179_equation_18.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 180,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.1,
+            0.068,
+            0.125,
+            0.079
+          ],
+          "content": "184"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.066,
+            0.304,
+            0.08
+          ],
+          "content": "第七章 连续时间马氏链"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.122,
+            0.573,
+            0.14
+          ],
+          "content": "知存在 $z \\in [a, b)$ 使得 $g_{+}^{\\prime}(z) = 0$, 故 (7.3.8) 式成立. $\\square$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.147,
+            0.816,
+            0.189
+          ],
+          "content": "引理7.3.4 令 $a < b \\in \\mathbb{R}$. 若连续函数 $f$ 在区间 $[a, b]$ 上有连续的右导数 $f_{+}^{\\prime}$, 则 $f$ 在 $[a, b]$ 上连续可导且 $f' = f_{+}^{\\prime}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.174,
+            0.196,
+            0.655,
+            0.214
+          ],
+          "content": "证明 对于 $a \\leqslant x < y \\leqslant b$, 根据引理 7.3.3 有 $z \\in [x, y)$ 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.35,
+            0.232,
+            0.572,
+            0.25
+          ],
+          "content": "(y - x) f _ {+} ^ {\\prime} (z) = f (y) - f (x).",
+          "image_source": "images/page_180_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.267,
+            0.766,
+            0.286
+          ],
+          "content": "类似地, 对于 $a \\leqslant y < x \\leqslant b$, 存在 $z \\in [y, x)$ 使上面关系成立. 由 $f_{+}^{\\prime}$ 的连续性得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.308,
+            0.301,
+            0.614,
+            0.335
+          ],
+          "content": "\\lim _ {y \\to x} \\frac {f (y) - f (x)}{y - x} = \\lim _ {y \\to x} f _ {+} ^ {\\prime} (z) = f _ {+} ^ {\\prime} (x).",
+          "image_source": "images/page_180_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.35,
+            0.475,
+            0.368
+          ],
+          "content": "因此 $f$ 在 $[a,b]$ 上连续可导且 $f^{\\prime} = f_{+}^{\\prime}$. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.375,
+            0.816,
+            0.416
+          ],
+          "content": "定理 7.3.5 (柯尔莫哥洛夫) 设转移矩阵  $(P(t))_{t\\geqslant0}$  有保守的密度矩阵 Q，则对任意的  $i,j\\in E$ ，函数  $t\\mapsto p_{ij}(t)$  在  $[0,\\infty)$  上连续可导且向后微分方程 (7.3.4) 成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.174,
+            0.424,
+            0.531,
+            0.44
+          ],
+          "content": "证明 一方面, 由 (7.3.2) 式和法图定理可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.453,
+            0.818,
+            0.492
+          ],
+          "content": "\\operatorname * {l i m i n f} _ {h \\to 0 +} \\frac {1}{h} [ p _ {i j} (h + t) - p _ {i j} (t) ] \\geqslant \\sum_ {k \\neq i} q _ {i k} p _ {k j} (t) - q _ {i} p _ {i j} (t). \\tag {7.3.9}",
+          "image_source": "images/page_180_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.508,
+            0.714,
+            0.525
+          ],
+          "content": "另一方面, 取有限集合 $A \\subseteq E$ 使 $i \\in A$, 并记 $A^c = E \\setminus A$. 由 (7.3.2) 式有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.192,
+            0.54,
+            0.765,
+            0.73
+          ],
+          "content": "\\begin{array}{l} p _ {i j} (h + t) - p _ {i j} (t) \\leqslant \\sum_ {k \\in A, k \\neq i} p _ {i k} (h) p _ {k j} (t) - [ 1 - p _ {i i} (h) ] p _ {i j} (t) + \\sum_ {k \\in A ^ {c}} p _ {i k} (h) \\\\ \\leqslant \\sum_ {k \\in A, k \\neq i} p _ {i k} (h) p _ {k j} (t) - [ 1 - p _ {i i} (h) ] p _ {i j} (t) + \\\\ 1 - p _ {i i} (h) - \\sum_ {k \\in A, k \\neq i} p _ {i k} (h) \\\\ = \\sum_ {k \\in A, k \\neq i} p _ {i k} (h) p _ {k j} (t) + [ 1 - p _ {i i} (h) ] [ 1 - p _ {i j} (t) ] - \\\\ \\sum_ {k \\in A, k \\neq i} p _ {i k} (h). \\\\ \\end{array}",
+          "image_source": "images/page_180_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.745,
+            0.454,
+            0.761
+          ],
+          "content": "将上式两端同除以 h > 0 并取上极限得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.171,
+            0.773,
+            0.767,
+            0.813
+          ],
+          "content": "\\operatorname * {l i m s u p} _ {h \\to 0 +} \\frac {1}{h} [ p _ {i j} (h + t) - p _ {i j} (t) ] \\leqslant \\sum_ {k \\in A, k \\neq i} q _ {i k} p _ {k j} (t) + q _ {i} [ 1 - p _ {i j} (t) ] - \\sum_ {k \\in A, k \\neq i} q _ {i k}.",
+          "image_source": "images/page_180_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.828,
+            0.57,
+            0.845
+          ],
+          "content": "因为密度矩阵 Q 保守, 由有限集合  $A \\subseteq E$  的任意性得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.332,
+            0.857,
+            0.638,
+            0.93
+          ],
+          "content": "\\begin{array}{l} \\operatorname * {l i m s u p} _ {h \\to 0 +} \\frac {1}{h} [ p _ {i j} (h + t) - p _ {i j} (t) ] \\\\ \\leqslant \\sum_ {k \\neq i} q _ {i k} p _ {k j} (t) + q _ {i} [ 1 - p _ {i j} (t) ] - \\sum_ {k \\neq i} q _ {i k} \\\\ \\end{array}",
+          "image_source": "images/page_180_equation_17.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 181,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.718,
+            0.068,
+            0.857,
+            0.081
+          ],
+          "content": "7.3 向前和向后方程"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.875,
+            0.069,
+            0.9,
+            0.08
+          ],
+          "content": "185"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.37,
+            0.12,
+            0.856,
+            0.154
+          ],
+          "content": "= \\sum_ {k \\neq i} q _ {i k} p _ {k j} (t) - q _ {i} p _ {i j} (t). \\tag {7.3.10}",
+          "image_source": "images/page_181_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.171,
+            0.857,
+            0.235
+          ],
+          "content": "由 (7.3.9) 式和 (7.3.10) 式, 若将 $p_{ij}'(t)$ 理解为右导数, 则 (7.3.4) 式成立, 而由控制收敛定理易知该右导数关于 $t \\geqslant 0$ 连续. 再应用引理 7.3.4 知 $t \\mapsto p_{ij}(t)$ 连续可导且满足方程 (7.3.4). □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.244,
+            0.857,
+            0.283
+          ],
+          "content": "推论 7.3.6 马氏转移矩阵  $(P(t))_{t\\geqslant0}$  的向后微分方程 (7.3.4) 成立当且仅当其密度矩阵 Q 保守."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.293,
+            0.857,
+            0.356
+          ],
+          "content": "证明 若密度矩阵 $Q$ 保守, 由定理7.3.5知向后微分方程(7.3.4)成立. 反之, 假设向后微分方程(7.3.4)成立. 由(7.3.4)式和控制收敛定理知 $t \\mapsto p_{ij}'(t)$ 在 $[0, \\infty)$ 上连续, 而且有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.379,
+            0.374,
+            0.621,
+            0.409
+          ],
+          "content": "\\sum_ {j \\in E} | p _ {i j} ^ {\\prime} (t) | \\leqslant \\sum_ {k \\neq i} q _ {i k} + q _ {i} = 2 q _ {i}",
+          "image_source": "images/page_181_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.181,
+            0.425,
+            0.204,
+            0.44
+          ],
+          "content": "和"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.404,
+            0.46,
+            0.597,
+            0.495
+          ],
+          "content": "\\sum_ {j \\in E} p _ {i j} ^ {\\prime} (t) = \\sum_ {k \\neq i} q _ {i k} - q _ {i}.",
+          "image_source": "images/page_181_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.511,
+            0.348,
+            0.527
+          ],
+          "content": "再根据富比尼定理有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.543,
+            0.715,
+            0.585
+          ],
+          "content": "\\Bigl (\\sum_ {k \\neq i} q _ {i k} - q _ {i} \\Bigr) t = \\sum_ {j \\in E} \\int_ {0} ^ {t} p _ {i j} ^ {\\prime} (s) \\mathrm{d} s = \\sum_ {j \\in E} p _ {i j} (t) - 1 = 0,",
+          "image_source": "images/page_181_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.601,
+            0.774,
+            0.619
+          ],
+          "content": "其中最后一个等号成立是根据 $(P(t))_{t\\geqslant 0}$ 的马氏性.故密度矩阵 $Q$ 保守.□"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.215,
+            0.646,
+            0.379,
+            0.665
+          ],
+          "level": 2,
+          "content": "7.3.2 向前方程"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.69,
+            0.857,
+            0.73
+          ],
+          "content": "与向后微分方程类似地, 向前微分方程也可写为等价的积分方程形式. 为了简化证明, 下面只对保守的密度矩阵讨论此问题."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.218,
+            0.736,
+            0.819,
+            0.754
+          ],
+          "content": "定理 7.3.7 设密度矩阵 Q 保守, 则向前微分方程 (7.3.3) 等价于积分方程"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.307,
+            0.771,
+            0.856,
+            0.813
+          ],
+          "content": "p _ {i j} (t) = \\delta_ {i j} + \\sum_ {k \\neq j} \\int_ {0} ^ {t} p _ {i k} (s) q _ {k j} \\mathrm{d} s - \\int_ {0} ^ {t} p _ {i j} (s) q _ {j} \\mathrm{d} s. \\tag {7.3.11}",
+          "image_source": "images/page_181_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.83,
+            0.857,
+            0.871
+          ],
+          "content": "证明 由定理7.3.5知 $t \\mapsto p_{ij}(t)$ 在 $[0, \\infty)$ 上连续可导. 若(7.3.3)式成立, 对两边积分即得(7.3.11)式. 反之, 设(7.3.11)式成立. 对 $t \\geqslant 0$ 和 $h > 0$, 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.222,
+            0.886,
+            0.78,
+            0.93
+          ],
+          "content": "\\frac {1}{h} [ p _ {i j} (t + h) - p _ {i j} (t) ] = \\sum_ {k \\neq j} \\frac {1}{h} \\int_ {0} ^ {h} p _ {i k} (t + s) q _ {k j} \\mathrm{d} s - \\frac {1}{h} \\int_ {0} ^ {h} p _ {i j} (t + s) q _ {j} \\mathrm{d} s.",
+          "image_source": "images/page_181_equation_17.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 182,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.1,
+            0.068,
+            0.125,
+            0.079
+          ],
+          "content": "186"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.066,
+            0.304,
+            0.08
+          ],
+          "content": "第七章 连续时间马氏链"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.122,
+            0.489,
+            0.138
+          ],
+          "content": "对上式取极限  $h \\rightarrow 0+$  并利用法图定理得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.335,
+            0.155,
+            0.586,
+            0.19
+          ],
+          "content": "p _ {i j} ^ {\\prime} (t) \\geqslant \\sum_ {k \\neq j} p _ {i k} (t) q _ {k j} - p _ {i j} (t) q _ {j}.",
+          "image_source": "images/page_182_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.205,
+            0.819,
+            0.245
+          ],
+          "content": "假若 (7.3.3) 式不成立, 则当 $t$ 属于某个非空开区间 $(u, v) \\subseteq (0, \\infty)$ 时上式中的严格大于号成立, 故当 $t > u$ 时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.267,
+            0.259,
+            0.655,
+            0.302
+          ],
+          "content": "p _ {i j} (t) - \\delta_ {i j} > \\sum_ {k \\neq j} \\int_ {0} ^ {t} p _ {i k} (s) q _ {k j} \\mathrm{d} s - \\int_ {0} ^ {t} p _ {i j} (s) q _ {j} \\mathrm{d} s,",
+          "image_source": "images/page_182_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.316,
+            0.819,
+            0.356
+          ],
+          "content": "这与 (7.3.11) 式矛盾, 故 (7.3.3) 式必然成立. 这就证明了 (7.3.3) 式和 (7.3.11) 式的等价性. $\\square$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.177,
+            0.365,
+            0.555,
+            0.382
+          ],
+          "content": "与定理 7.3.7 的证明中类似地, 可以证明如下的:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.387,
+            0.779,
+            0.406
+          ],
+          "content": "定理 7.3.8 设密度矩阵 Q 保守, 则向前微分方程 (7.3.3) 等价于积分方程"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.277,
+            0.422,
+            0.818,
+            0.463
+          ],
+          "content": "p _ {i j} (t) = \\delta_ {i j} \\mathrm{e} ^ {- q _ {j} t} + \\sum_ {k \\neq j} \\int_ {0} ^ {t} p _ {i k} (s) q _ {k j} \\mathrm{e} ^ {- q _ {j} (t - s)} \\mathrm{d} s. \\tag {7.3.12}",
+          "image_source": "images/page_182_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.479,
+            0.819,
+            0.518
+          ],
+          "content": "与向后方程有所不同, 即使对保守的密度矩阵, 向前方程也并非总成立; 详见 [35] 中的讨论."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.175,
+            0.546,
+            0.382,
+            0.565
+          ],
+          "level": 2,
+          "content": "7.3.3 最小转移矩阵"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.59,
+            0.819,
+            0.655
+          ],
+          "content": "设 $Q = (q_{ij}:i,j\\in E)$ 为保守密度矩阵. 称准马氏转移矩阵 $(F(t))_{t\\geqslant 0} = \\{(f_{ij}(t):i,j\\in E):t\\geqslant 0\\}$ 是向前方程(7.3.3)的最小解, 是指它满足(7.3.3)式且对任何满足该方程的准转移矩阵 $(P(t))_{t\\geqslant 0} = \\{(p_{ij}(t):i,j\\in E):t\\geqslant 0\\}$ 都有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.337,
+            0.672,
+            0.584,
+            0.69
+          ],
+          "content": "f _ {i j} (t) \\leqslant p _ {i j} (t), \\quad i, j \\in E, t \\geqslant 0.",
+          "image_source": "images/page_182_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.707,
+            0.818,
+            0.749
+          ],
+          "content": "类似地可定义向后方程 (7.3.4) 的最小解. 受到定理 7.2.3 和推论 7.2.4 的结果的启发, 对于 $t \\geqslant 0$ 和 $i, j \\in E$, 令 $g_{ij}^{(0)}(t) = \\delta_{ij} \\mathrm{e}^{-q_i t}$, 并对于 $n \\geqslant 1$ 依次定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.301,
+            0.764,
+            0.818,
+            0.806
+          ],
+          "content": "g _ {i j} ^ {(n)} (t) = \\sum_ {k \\neq i} \\int_ {0} ^ {t} \\mathrm{e} ^ {- q _ {i} s} q _ {i k} g _ {k j} ^ {(n - 1)} (t - s) \\mathrm{d} s. \\tag {7.3.13}",
+          "image_source": "images/page_182_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.821,
+            0.318,
+            0.838
+          ],
+          "content": "在此基础上, 我们定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.295,
+            0.853,
+            0.818,
+            0.894
+          ],
+          "content": "f _ {i j} ^ {(n)} (t) = \\sum_ {k = 0} ^ {n} g _ {i j} ^ {(k)} (t), \\quad f _ {i j} (t) = \\sum_ {k = 0} ^ {\\infty} g _ {i j} ^ {(k)} (t). \\tag {7.3.14}",
+          "image_source": "images/page_182_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.909,
+            0.377,
+            0.928
+          ],
+          "content": "再令  $F(t)=(f_{ij}(t):i,j\\in E)$ ."
+        }
+      ]
+    },
+    {
+      "page_idx": 183,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.718,
+            0.068,
+            0.857,
+            0.081
+          ],
+          "content": "7.3 向前和向后方程"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.875,
+            0.069,
+            0.9,
+            0.08
+          ],
+          "content": "187"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.221,
+            0.123,
+            0.576,
+            0.141
+          ],
+          "content": "命题7.3.9 对任意的 $n \\geqslant 1$ 和 $i, j \\in E$, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.31,
+            0.158,
+            0.856,
+            0.2
+          ],
+          "content": "g _ {i j} ^ {(n)} (t) = \\sum_ {k \\neq j} \\int_ {0} ^ {t} g _ {i k} ^ {(n - 1)} (t - s) q _ {k j} \\mathrm{e} ^ {- q _ {j} s} \\mathrm{d} s, \\quad t \\geqslant 0. \\tag {7.3.15}",
+          "image_source": "images/page_183_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.215,
+            0.214,
+            0.597,
+            0.232
+          ],
+          "content": "证明 使用归纳法证明. 根据 (7.3.13) 式我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.243,
+            0.243,
+            0.794,
+            0.379
+          ],
+          "content": "\\begin{array}{l} g _ {i j} ^ {(1)} (t) = \\sum_ {k \\neq i} \\int_ {0} ^ {t} \\mathrm{e} ^ {- q _ {i} s} q _ {i k} g _ {k j} ^ {(0)} (t - s) \\mathrm{d} s = \\sum_ {k \\neq i} \\int_ {0} ^ {t} \\mathrm{e} ^ {- q _ {i} s} q _ {i k} \\delta_ {k j} \\mathrm{e} ^ {- q _ {k} (t - s)} \\mathrm{d} s \\\\ = 1 _ {\\{i \\neq j \\}} \\int_ {0} ^ {t} \\mathrm{e} ^ {- q _ {i} s} q _ {i j} \\mathrm{e} ^ {- q _ {j} (t - s)} \\mathrm{d} s = \\sum_ {k \\neq j} \\int_ {0} ^ {t} \\mathrm{e} ^ {- q _ {i} s} \\delta_ {i k} q _ {k j} \\mathrm{e} ^ {- q _ {j} (t - s)} \\mathrm{d} s \\\\ = \\sum_ {k \\neq j} \\int_ {0} ^ {t} g _ {i k} ^ {(0)} (s) q _ {k j} \\mathrm{e} ^ {- q _ {j} (t - s)} \\mathrm{d} s, \\\\ \\end{array}",
+          "image_source": "images/page_183_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.392,
+            0.857,
+            0.431
+          ],
+          "content": "故 (7.3.15) 式对 $n = 1$ 成立. 下设 (7.3.15) 式对某个 $n \\geqslant 1$ 成立. 由 (7.3.13) 式和归纳法假设有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.249,
+            0.443,
+            0.789,
+            0.624
+          ],
+          "content": "\\begin{array}{l} g _ {i j} ^ {(n + 1)} (t) = \\sum_ {k \\neq i} \\int_ {0} ^ {t} \\mathrm{e} ^ {- q _ {i} s} q _ {i k} g _ {k j} ^ {(n)} (t - s) \\mathrm{d} s \\\\ = \\sum_ {k \\neq i} \\int_ {0} ^ {t} \\mathrm{e} ^ {- q _ {i} s} q _ {i k} \\bigg [ \\sum_ {l \\neq j} \\int_ {0} ^ {t - s} g _ {k l} ^ {(n - 1)} (t - s - v) q _ {l j} \\mathrm{e} ^ {- q _ {j} v} \\mathrm{d} v \\bigg ] \\mathrm{d} s \\\\ = \\sum_ {l \\neq j} \\int_ {0} ^ {t} q _ {l j} \\left[ \\sum_ {k \\neq i} \\int_ {0} ^ {t - v} g _ {k l} ^ {(n - 1)} (t - v - s) q _ {i k} \\mathrm{e} ^ {- q _ {i} s} \\mathrm{d} s \\right] \\mathrm{e} ^ {- q _ {j} v} \\mathrm{d} v \\\\ = \\sum_ {l \\neq j} \\int_ {0} ^ {t} q _ {l j} g _ {i l} ^ {(n)} (t - v) \\mathrm{e} ^ {- q _ {j} v} \\mathrm{d} v. \\\\ \\end{array}",
+          "image_source": "images/page_183_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.636,
+            0.506,
+            0.653
+          ],
+          "content": "于是知 (7.3.15) 式对所有 $n \\geqslant 1$ 成立. $\\square$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.22,
+            0.661,
+            0.582,
+            0.679
+          ],
+          "content": "命题7.3.10 对任意的 $n \\geqslant 0$ 和 $i, j \\in E$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.308,
+            0.696,
+            0.857,
+            0.737
+          ],
+          "content": "g _ {i j} ^ {(n)} (r + t) = \\sum_ {m = 0} ^ {n} \\sum_ {l \\in E} g _ {i l} ^ {(m)} (r) g _ {l j} ^ {(n - m)} (t), \\quad r, t \\geqslant 0. \\tag {7.3.16}",
+          "image_source": "images/page_183_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.753,
+            0.857,
+            0.792
+          ],
+          "content": "证明 显然 (7.3.16) 式对于 $n = 0$ 成立. 假设该式对某个 $n \\geqslant 0$ 成立. 根据 (7.3.13) 式及归纳假设有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.262,
+            0.804,
+            0.701,
+            0.932
+          ],
+          "content": "\\begin{array}{l} g _ {i j} ^ {(n + 1)} (r + t) = \\sum_ {k \\neq i} \\left(\\int_ {0} ^ {r} + \\int_ {r} ^ {r + t}\\right) \\mathrm{e} ^ {- q _ {i} s} q _ {i k} g _ {k j} ^ {(n)} (r + t - s) \\mathrm{d} s \\\\ = \\sum_ {k \\neq i} \\left[ \\int_ {0} ^ {r} \\mathrm{e} ^ {- q _ {i} s} q _ {i k} g _ {k j} ^ {(n)} (r + t - s) \\mathrm{d} s + \\right. \\\\ \\mathrm{e} ^ {- q _ {i} r} \\int_ {0} ^ {t} \\mathrm{e} ^ {- q _ {i} s} q _ {i k} g _ {k j} ^ {(n)} (t - s) \\mathrm{d}s \\Biggr ] \\\\ \\end{array}",
+          "image_source": "images/page_183_equation_12.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 184,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.1,
+            0.068,
+            0.125,
+            0.079
+          ],
+          "content": "188"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.142,
+            0.066,
+            0.304,
+            0.08
+          ],
+          "content": "第七章 连续时间马氏链"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.326,
+            0.119,
+            0.732,
+            0.285
+          ],
+          "content": "\\begin{array}{l} = \\sum_ {k \\neq i} \\left[ \\int_ {0} ^ {r} \\mathrm{e} ^ {- q _ {i} s} q _ {i k} \\sum_ {l \\in E} \\sum_ {m = 0} ^ {n} g _ {k l} ^ {(m)} (r - s) g _ {l j} ^ {(n - m)} (t) \\mathrm{d} s \\right] \\\\ + \\mathrm{e} ^ {- q _ {i} r} g _ {i j} ^ {(n + 1)} (t) \\\\ = \\sum_ {l \\in E} \\left[ \\sum_ {m = 0} ^ {n} g _ {i l} ^ {(m + 1)} (r) g _ {l j} ^ {(n - m)} (t) + g _ {i l} ^ {(0)} (r) g _ {l j} ^ {(n + 1)} (t) \\right] \\\\ = \\sum_ {l \\in E} \\sum_ {m = 0} ^ {n + 1} g _ {i l} ^ {(m)} (r) g _ {l j} ^ {(n + 1 - m)} (t). \\\\ \\end{array}",
+          "image_source": "images/page_184_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.302,
+            0.538,
+            0.319
+          ],
+          "content": "由数学归纳法知 (7.3.16) 式对一切 $n \\geqslant 0$ 成立. $\\square$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.33,
+            0.541,
+            0.348
+          ],
+          "content": "命题7.3.11 对任意的 $n \\geqslant 1$ 和 $i, j \\in E$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.263,
+            0.368,
+            0.816,
+            0.41
+          ],
+          "content": "f _ {i j} ^ {(n)} (t) = \\delta_ {i j} \\mathrm{e} ^ {- q _ {i} t} + \\sum_ {k \\neq j} \\int_ {0} ^ {t} f _ {i k} ^ {(n - 1)} (t - s) q _ {k j} \\mathrm{e} ^ {- q _ {j} s} \\mathrm{d} s \\tag {7.3.17}",
+          "image_source": "images/page_184_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.429,
+            0.163,
+            0.442
+          ],
+          "content": "和"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.262,
+            0.457,
+            0.816,
+            0.499
+          ],
+          "content": "f _ {i j} ^ {(n)} (t) = \\delta_ {i j} \\mathrm{e} ^ {- q _ {i} t} + \\sum_ {k \\neq i} \\int_ {0} ^ {t} \\mathrm{e} ^ {- q _ {i} s} q _ {i k} f _ {k j} ^ {(n - 1)} (t - s) \\mathrm{d} s. \\tag {7.3.18}",
+          "image_source": "images/page_184_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.521,
+            0.816,
+            0.561
+          ],
+          "content": "证明 由于 $g_{ij}^{(0)}(t) = \\delta_{ij}\\mathrm{e}^{-q_it}$, 分别将 (7.3.13) 式和 (7.3.15) 式两边对 $n \\geqslant 1$ 求和即得欲证结果. $\\square$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.573,
+            0.816,
+            0.614
+          ],
+          "content": "定理 7.3.12 由 (7.3.14) 式定义的  $F(t) = (f_{ij}(t) : i, j \\in E, t \\geqslant 0)$  是准马氏转移矩阵, 而且是向前微分方程 (7.3.3) 的最小解, 也是向后微分方程 (7.3.4) 的最小解."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.623,
+            0.816,
+            0.678
+          ],
+          "content": "证明 首先, 我们证明 $\\sum_{j \\in E} f_{ij}(t) \\leqslant 1$. 为此只需证明 $\\sum_{j \\in E} f_{ij}^{(n)}(t) \\leqslant 1$ 对一切 $n \\geqslant 0$ 成立. 采用数学归纳法. 注意"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.262,
+            0.696,
+            0.658,
+            0.733
+          ],
+          "content": "\\sum_ {j \\in E} f _ {i j} ^ {(0)} (t) = \\sum_ {j \\in E} g _ {i j} ^ {(0)} (t) = \\sum_ {j \\in E} \\delta_ {i j} \\mathrm{e} ^ {- q _ {i} t} = \\mathrm{e} ^ {- q _ {i} t} \\leqslant 1.",
+          "image_source": "images/page_184_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.751,
+            0.588,
+            0.786
+          ],
+          "content": "假设 $\\sum_{j\\in E}f_{ij}^{(n)}(t)\\leqslant 1$ 对某个 $n\\geqslant 0$ 成立.由(7.3.18)式有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.258,
+            0.802,
+            0.699,
+            0.934
+          ],
+          "content": "\\begin{array}{l} \\sum_ {j \\in E} f _ {i j} ^ {(n + 1)} (t) = \\mathrm{e} ^ {- q _ {i} t} + \\sum_ {j \\in E} \\sum_ {k \\neq i} \\int_ {0} ^ {t} \\mathrm{e} ^ {- q _ {i} s} q _ {i k} f _ {k j} ^ {(n)} (t - s) \\mathrm{d}s \\\\ \\leqslant \\mathrm{e} ^ {- q _ {i} t} + \\sum_ {k \\neq i} \\int_ {0} ^ {t} \\mathrm{e} ^ {- q _ {i} s} q _ {i k} \\mathrm{d} s \\\\ \\leqslant \\mathrm{e} ^ {- q _ {i} t} + \\int_ {0} ^ {t} q _ {i} \\mathrm{e} ^ {- q _ {i} s} \\mathrm{d} s = 1. \\\\ \\end{array}",
+          "image_source": "images/page_184_equation_13.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 185,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.718,
+            0.068,
+            0.857,
+            0.081
+          ],
+          "content": "7.3 向前和向后方程"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.875,
+            0.069,
+            0.9,
+            0.08
+          ],
+          "content": "189"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.12,
+            0.65,
+            0.155
+          ],
+          "content": "因此 $\\sum_{j\\in E}f_{ij}^{(n)}(t)\\leqslant 1$ 对所有 $n\\geqslant 0$ 成立.根据命题7.3.10有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.166,
+            0.749,
+            0.255
+          ],
+          "content": "\\begin{array}{l} f _ {i j} (s + t) = \\sum_ {n = 0} ^ {\\infty} g _ {i j} ^ {(n)} (s + t) = \\sum_ {n = 0} ^ {\\infty} \\sum_ {m = 0} ^ {n} \\sum_ {l \\in E} g _ {i l} ^ {(m)} (s) g _ {l j} ^ {(n - m)} (t) \\\\ = \\sum_ {l \\in E} \\sum_ {m = 0} ^ {\\infty} \\sum_ {k = 0} ^ {\\infty} g _ {i l} ^ {(m)} (s) g _ {l j} ^ {(k)} (t) = \\sum_ {l \\in E} f _ {i l} (s) f _ {l j} (t). \\\\ \\end{array}",
+          "image_source": "images/page_185_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.265,
+            0.857,
+            0.395
+          ],
+          "content": "所以 $F$ 是转移矩阵. 在 (7.3.18) 式两边令 $n \\to \\infty$ 知 $F$ 满足向后积分方程 (7.3.6), 再据定理 7.3.2 知 $F$ 满足向后微分方程 (7.3.4). 故 $f_{ij}(t)$ 关于 $t \\geqslant 0$ 可导. 在 (7.3.17) 式两边令 $n \\to \\infty$ 知 $F$ 满足向前积分方程 (7.3.12). 应用定理 7.3.8 知 $F$ 满足向前微分方程 (7.3.3). 设有准转移矩阵 $(P(t))_{t \\geqslant 0}$ 满足向前微分方程 (7.3.3), 则它也满足向前积分方程 (7.3.12). 因此 $p_{ij}(t) \\geqslant \\delta_{ij} \\mathrm{e}^{-q_i t} = f_{ij}^{(0)}(t)$. 而若设 $p_{ij}(t) \\geqslant f_{ij}^{(n)}(t)$, 则由 (7.3.12) 式得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.268,
+            0.406,
+            0.732,
+            0.448
+          ],
+          "content": "p _ {i j} (t) \\geqslant \\delta_ {i j} \\mathrm{e} ^ {- q _ {i} t} + \\sum_ {k \\neq j} \\int_ {0} ^ {t} f _ {i k} ^ {(n)} (t - s) q _ {k j} \\mathrm{e} ^ {- q _ {i} s} \\mathrm{d} s = f _ {i j} ^ {(n + 1)} (t).",
+          "image_source": "images/page_185_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.462,
+            0.856,
+            0.504
+          ],
+          "content": "根据归纳法, 对一切 $n \\geqslant 0$ 有 $p_{ij}(t) \\geqslant f_{ij}^{(n)}(t)$. 取极限即得 $p_{ij}(t) \\geqslant f_{ij}(t)$. 类似地可证, 若转移矩阵 $(P(t))_{t \\geqslant 0}$ 满足向后微分方程 (7.3.4), 也有 $p_{ij}(t) \\geqslant f_{ij}(t)$ 成立. $\\square$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.509,
+            0.856,
+            0.561
+          ],
+          "content": "推论 7.3.13 若对任意  $t \\geqslant 0$  和  $i \\in E$  都有  $\\sum_{j \\in E} f_{ij}(t) = 1$ ，则 Q 的向前方程和向后方程均存在唯一解且二者相同."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.569,
+            0.856,
+            0.609
+          ],
+          "content": "根据定理 7.3.12 知, 密度矩阵 Q 的向前和向后微分方程有公共的最小解  $(F(t))_{t \\geqslant 0}$ , 我们称之为 Q 的最小转移矩阵. 以  $(F(t))_{t \\geqslant 0}$  为转移矩阵的马氏链称为 Q 的最小链."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.614,
+            0.856,
+            0.678
+          ],
+          "content": "具有给定密度矩阵的连续时间转移矩阵的唯一性的判别准则是基本的理论问题. 侯振挺 [18] 给出了该唯一性成立的简洁的充要条件, 解决了该领域长期遗留的难题. 关于连续时间马氏链的研究有丰富而深刻的理论, 参见 [4,35]."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.207,
+            0.705,
+            0.471,
+            0.723
+          ],
+          "level": 2,
+          "content": "\\*7.3.4 最小链的随机方程"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.748,
+            0.856,
+            0.813
+          ],
+          "content": "利用泊松随机测度驱动的随机积分方程的轨道唯一解, 可以构造出具有给定密度矩阵的右连续最小马氏链. 为了表达上的方便, 这里假定 $E \\subseteq \\mathbb{Z}$. 考虑 $E$ 上的保守密度矩阵 $Q = (q_{ij}: i, j \\in E)$. 用 $\\pi(\\mathrm{d}z)$ 表示 $E$ 上的计数测度."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.818,
+            0.856,
+            0.882
+          ],
+          "content": "设 $N(\\mathrm{ds},\\mathrm{dz},\\mathrm{du})$ 为 $(0,\\infty)\\times E\\times (0,\\infty)$ 上的以 $\\mathrm{ds}\\pi (\\mathrm{dz})\\mathrm{du}$ 为强度的泊松随机测度，而 $X_0$ 是取值于 $E$ 且与 $N(\\mathrm{ds},\\mathrm{dz},\\mathrm{du})$ 独立的随机变量.这里 $\\mathrm{ds}$ 和 $\\mathrm{du}$ 表示 $(0,\\infty)$ 上的勒贝格测度.记 $q(i,j) = q_{ij}1_{\\{i\\neq j\\}}$ .考虑随机积分方程"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.297,
+            0.893,
+            0.856,
+            0.931
+          ],
+          "content": "X _ {t} = X _ {0} + \\int_ {0} ^ {t} \\int_ {E} \\int_ {0} ^ {q (X _ {s -}, z)} (z - X _ {s -}) N (\\mathrm{d} s, \\mathrm{d} z, \\mathrm{d} u). \\tag {7.3.19}",
+          "image_source": "images/page_185_equation_13.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 186,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.1,
+            0.068,
+            0.125,
+            0.079
+          ],
+          "content": "190"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.066,
+            0.304,
+            0.08
+          ],
+          "content": "第七章 连续时间马氏链"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.121,
+            0.816,
+            0.179
+          ],
+          "content": "此处及以后约定 $\\int_{a}^{b} = \\int_{(a,b]}$ 该方程的确切含义如下:根据泊松随机测度的构造，存在$(0,\\infty)\\times E\\times (0,\\infty)$ 的可数的随机子集 $\\operatorname {supp}(N) = \\{(s_i,z_i,u_i):i\\in I\\}$ 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.301,
+            0.191,
+            0.818,
+            0.226
+          ],
+          "content": "N (\\mathrm{d} s, \\mathrm{d} z, \\mathrm{d} u) = \\sum_ {i \\in I} \\delta_ {(s _ {i}, z _ {i}, u _ {i})} (\\mathrm{d} s, \\mathrm{d} z, \\mathrm{d} u). \\tag {7.3.20}",
+          "image_source": "images/page_186_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.239,
+            0.373,
+            0.256
+          ],
+          "content": "注意, 方程 (7.3.19) 可以写为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.295,
+            0.27,
+            0.818,
+            0.304
+          ],
+          "content": "X _ {t} = X _ {0} + \\sum_ {s _ {i} \\leqslant t} (z _ {i} - X _ {s _ {i} -}) 1 _ {\\{u _ {i} \\leqslant q (X _ {s -}, z _ {i}) \\}}. \\tag {7.3.21}",
+          "image_source": "images/page_186_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.318,
+            0.819,
+            0.358
+          ],
+          "content": "易证 $\\mathbf{P}$ (存在 $i \\neq j$ 使得 $s_i = s_j$) = 0. 方程 (7.3.19) 式或 (7.3.21) 式给出了轨道 $t \\mapsto X_t$ 每次跳跃的时刻和跳幅. 它的第 1 次跳跃发生在时刻"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.262,
+            0.375,
+            0.66,
+            0.393
+          ],
+          "content": "S _ {1} := \\inf \\{s > 0: N ((0, s ] \\times E \\times (0, q (X _ {0}, z) ]) > 0 \\}.",
+          "image_source": "images/page_186_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.408,
+            0.816,
+            0.45
+          ],
+          "content": "对 $0 \\leqslant t < S_{1}$ 有 $X_{t} = X_{0}$. 由 (7.3.19) 式和 (7.3.20) 式不难看出, 存在唯一的 $(Z_{1}, U_{1}) \\in E \\times (0, q(X_{0}, z)]$ 满足 $(S_{i}, Z_{i}, U_{i}) \\in \\operatorname{supp}(N)$. 再由 (7.3.19) 式有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.253,
+            0.465,
+            0.668,
+            0.483
+          ],
+          "content": "X _ {S _ {1}} = X _ {S _ {1} -} + (Z _ {1} - X _ {S _ {1} -}) = X _ {0} + (Z _ {1} - X _ {0}) = Z _ {1}.",
+          "image_source": "images/page_186_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.498,
+            0.45,
+            0.515
+          ],
+          "content": "轨道 $t \\mapsto X_{t}$ 的第2次跳跃发生在时刻"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.247,
+            0.533,
+            0.673,
+            0.551
+          ],
+          "content": "S _ {2} := \\inf \\{s > S _ {1}: N ((S _ {1}, s ] \\times E \\times (0, q (X _ {S _ {1}}, z) ]) > 0 \\},",
+          "image_source": "images/page_186_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.565,
+            0.819,
+            0.676
+          ],
+          "content": "其后轨道的运动情况类似. 用 $S_{n}$ 表示 $t \\mapsto X_{t}$ 的第 $n$ 次跳跃发生的时刻, 则 $S_{n}$ 为停时且序列 $\\{S_{n}\\}$ 严格单增. 令 $\\zeta = \\lim_{n \\to \\infty} S_{n}$. 显然 $t \\mapsto X_{t}$ 在时间区间 $[0, \\zeta)$ 内的运动由 (7.3.19) 式唯一决定. 对于 $\\zeta \\leqslant t < \\infty$, 我们补充定义 $X_{t} = \\infty$. 则 $X = (X_{t}: t \\geqslant 0)$ 是取值于 $\\tilde{E} := E \\cup \\{\\infty\\}$ 的右连续过程. 注意, 在 (7.3.19) 式中将 $t$ 替换为 $t \\wedge S_{n}$ 后, 该等式对于每个 $n \\geqslant 1$ 几乎必然成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.681,
+            0.819,
+            0.721
+          ],
+          "content": "在上述意义下, 我们说 $X$ 是 (7.3.19) 式的轨道唯一解. 对于 $t \\geqslant 0$ 令 $\\mathcal{G}_t$ 是下面的随机变量族生成的 $\\sigma$ 代数:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.237,
+            0.737,
+            0.685,
+            0.756
+          ],
+          "content": "\\{X _ {0}, N ((0, s ] \\times A \\times B): 0 \\leqslant s \\leqslant t, A \\subseteq E, B \\in \\mathscr {B} (0, \\infty) \\}.",
+          "image_source": "images/page_186_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.771,
+            0.484,
+            0.788
+          ],
+          "content": "不难看出, 过程 X 关于流  $(\\mathcal{G}_{t}: t \\geqslant 0)$  适应."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.793,
+            0.816,
+            0.835
+          ],
+          "content": "定理 7.3.14 随机积分方程 (7.3.19) 的轨道唯一解 X 关于流  $(\\mathcal{G}_{t}: t \\geqslant 0)$  是以 Q 为密度矩阵的马氏链, 且其转移矩阵  $(F(t))_{t \\geqslant 0}$  是 Q 的最小转移矩阵."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.842,
+            0.819,
+            0.882
+          ],
+          "content": "证明 记 $\\mathbf{P}_i = \\mathbf{P}(\\cdot |X_0 = i)$ 和 $f_{ij}(t) = \\mathbf{P}_i(X_t = j)$. 由方程 (7.3.19), 对任何 $t, r \\geqslant 0$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.217,
+            0.893,
+            0.818,
+            0.932
+          ],
+          "content": "X _ {r + t} = X _ {r} + \\int_ {0} ^ {t} \\int_ {E} \\int_ {0} ^ {q (X _ {r + s -}, z)} (z - X _ {r + s -}) N (r + \\mathrm{d} s, \\mathrm{d} z, \\mathrm{d} u). \\tag {7.3.22}",
+          "image_source": "images/page_186_equation_18.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 187,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.718,
+            0.068,
+            0.857,
+            0.081
+          ],
+          "content": "7.3 向前和向后方程"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.875,
+            0.069,
+            0.899,
+            0.08
+          ],
+          "content": "191"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.122,
+            0.857,
+            0.187
+          ],
+          "content": "根据泊松随机测度的性质, 对任何 $G \\in \\mathcal{G}_r$ 在 $\\mathbf{P}(\\cdot | G \\cap \\{X_r = i\\})$ 之下 $N(r + \\mathrm{d}s, \\mathrm{d}z, \\mathrm{d}u)$ 仍是 $(0, \\infty) \\times E \\times (0, \\infty)$ 上以 $\\mathrm{ds}\\pi(\\mathrm{dz})\\mathrm{d}u$ 为强度的泊松随机测度. 比较 (7.3.19) 式和 (7.3.22) 式知 $\\mathbf{P}(X_{r+t} = j|G \\cap \\{X_r = i\\}) = f_{ij}(t)$. 由全概率公式得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.201,
+            0.763,
+            0.299
+          ],
+          "content": "\\begin{array}{l} f _ {i j} (r + t) = \\mathbf {P} (X _ {r + t} = j | X _ {0} = i) \\\\ = \\sum_ {k \\in E} \\mathbf {P} (X _ {r} = k | X _ {0} = i) \\mathbf {P} (X _ {r + t} = j | X _ {r} = k, X _ {0} = i) \\\\ = \\sum_ {k \\in E} f _ {i k} (r) f _ {k j} (t). \\\\ \\end{array}",
+          "image_source": "images/page_187_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.313,
+            0.857,
+            0.4
+          ],
+          "content": "这说明 $(F(t))_{t\\geqslant 0} = \\{f_{ij}(t):i,j\\in E):t\\geqslant 0\\}$ 为 $E$ 上的转移矩阵, 而 $(X_{t}:t\\geqslant 0)$ 是以 $(F(t))_{t\\geqslant 0}$ 为转移矩阵的马氏链. 注意 $f_{ij}(t) = \\mathbf{P}_i(\\zeta >t,X_t = j)$. 根据推论7.2.4知$(F(t))_{t\\geqslant 0}$ 由(7.2.15)式或(7.3.14)式给出. 再由定理7.3.12知 $F$ 是其密度矩阵的最小转移矩阵. 下面证明 $(F(t))_{t\\geqslant 0}$ 的密度矩阵为 $Q$. 对于固定的 $i\\in E$, 定义左极右连过程"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.333,
+            0.414,
+            0.669,
+            0.453
+          ],
+          "content": "Z _ {t} = \\int_ {0} ^ {t} \\int_ {E} \\int_ {0} ^ {q (i, z)} z N (\\mathrm{d} s, \\mathrm{d} z, \\mathrm{d} u), \\quad t \\geqslant 0.",
+          "image_source": "images/page_187_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.466,
+            0.856,
+            0.506
+          ],
+          "content": "由定理 1.5.8 知  $(Z_{t}: t \\geqslant 0)$  是以  $q_{i}$  为跳跃速率以  $q_{i}^{-1} q(i, z) \\pi(\\mathrm{d}z)$  为跳跃分布的复合泊松过程. 令  $T_{1}$  为其首次跳跃时间. 注意, 在  $P_{i}$  之下有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.309,
+            0.519,
+            0.692,
+            0.558
+          ],
+          "content": "X _ {t \\wedge T _ {1}} = i + \\int_ {0} ^ {t \\wedge T _ {1}} \\int_ {E} \\int_ {0} ^ {q (i, z)} (z - i) N (\\mathrm{d} s, \\mathrm{d} z, \\mathrm{d} u).",
+          "image_source": "images/page_187_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.571,
+            0.513,
+            0.588
+          ],
+          "content": "故 $T_{1}$ 也是 $(X_{t}:t\\geqslant 0)$ 的首次跳跃时间且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.292,
+            0.603,
+            0.709,
+            0.643
+          ],
+          "content": "X _ {T _ {1}} = i + \\int_ {\\{T _ {1} \\}} \\int_ {E} \\int_ {0} ^ {q (i, z)} (z - i) N (\\mathrm{d} s, \\mathrm{d} z, \\mathrm{d} u) = Z _ {T _ {1}}.",
+          "image_source": "images/page_187_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.656,
+            0.238,
+            0.671
+          ],
+          "content": "所以有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.246,
+            0.691,
+            0.754,
+            0.71
+          ],
+          "content": "\\mathbf {P} _ {i} (T _ {1} \\leqslant t, X _ {T _ {1}} = j) = \\mathbf {P} _ {i} (T _ {1} \\leqslant t, Z _ {T _ {1}} = j) = (1 - \\mathrm{e} ^ {- q _ {i} t}) q _ {i} ^ {- 1} q (i, j).",
+          "image_source": "images/page_187_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.726,
+            0.55,
+            0.744
+          ],
+          "content": "再由定理7.2.2知 $(F(t))_{t\\geqslant 0}$ 有密度矩阵 $Q$ □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.752,
+            0.856,
+            0.792
+          ],
+          "content": "随机积分方程 (7.3.19) 的关键结构是通过在随机区间 $(0, q(X_{s-}, z)]$ 上的积分得到解的随机跳跃强度 $q(X_{s-}, z)$. 关于泊松随机测度驱动的随机方程的研究, 可以参考 [20] 等."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.215,
+            0.819,
+            0.285,
+            0.837
+          ],
+          "level": 2,
+          "content": "练习题"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.216,
+            0.863,
+            0.686,
+            0.88
+          ],
+          "content": "1. 设向前微分方程 (7.3.3) 成立, 则对 $s, t \\geqslant 0$ 和 $i, j \\in E$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.391,
+            0.895,
+            0.609,
+            0.929
+          ],
+          "content": "p _ {i j} ^ {\\prime} (s + t) = \\sum_ {l \\in E} p _ {i l} (s) p _ {l j} ^ {\\prime} (t).",
+          "image_source": "images/page_187_equation_16.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 188,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.1,
+            0.068,
+            0.125,
+            0.08
+          ],
+          "content": "192"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.066,
+            0.304,
+            0.081
+          ],
+          "content": "第七章 连续时间马氏链"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.175,
+            0.122,
+            0.647,
+            0.139
+          ],
+          "content": "2. 设向后微分方程 (7.3.4) 成立, 则对 $s, t \\geqslant 0$ 和 $i, j \\in E$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.351,
+            0.156,
+            0.57,
+            0.189
+          ],
+          "content": "p _ {i j} ^ {\\prime} (s + t) = \\sum_ {l \\in E} p _ {i l} (s) p _ {l j} ^ {\\prime} (t).",
+          "image_source": "images/page_188_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.205,
+            0.819,
+            0.246
+          ],
+          "content": "3. 对于有限状态空间 $E$, 任何马氏转移矩阵 $(P(t))_{t \\geqslant 0}$ 的密度矩阵 $Q$ 是保守的, 而且向前和向后方程都成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.251,
+            0.819,
+            0.315
+          ],
+          "content": "提示: 由定理 7.2.1(3) 的证明不难看出, 当状态空间 E 有限时, 任何马氏转移矩阵的密度矩阵保守. 分别将 (7.3.1) 式和 (7.3.2) 式两边同除以 h 并令  $h \\rightarrow 0+$  即得 (7.3.3) 式和 (7.3.4) 式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.32,
+            0.819,
+            0.362
+          ],
+          "content": "4. 设 $E$ 是有限状态空间, 而 $Q$ 为 $E$ 上的保守密度矩阵, 则可定义 $E$ 上的马氏转移矩阵 $P = (P(t): t \\geqslant 0)$ 如下:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.377,
+            0.591,
+            0.418
+          ],
+          "content": "P (t) = \\mathrm{e} ^ {Q t} := \\sum_ {n = 0} ^ {\\infty} \\frac {t ^ {n}}{n !} Q ^ {n}, \\quad t \\geqslant 0.",
+          "image_source": "images/page_188_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.433,
+            0.816,
+            0.452
+          ],
+          "content": "证明  $Q = P'(0)$  且  $(P(t))_{t \\geqslant 0}$  是 Q 的向后方程的唯一解, 也是 Q 的向前方程的唯一解."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.456,
+            0.819,
+            0.497
+          ],
+          "content": "5. 考虑状态空间 $\\mathbb{Z}_{+}$ 上参数为 $\\alpha > 0$ 的泊松过程, 其转移矩阵 $(P(t): t \\geqslant 0)$ 和密度矩阵 $Q$ 分别由例7.1.2和例7.2.1给出. 证明 $P(t) = \\mathrm{e}^{Qt}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.175,
+            0.502,
+            0.367,
+            0.519
+          ],
+          "content": "提示: 令  $D = Q + I$ , 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.239,
+            0.533,
+            0.719,
+            0.622
+          ],
+          "content": "\\begin{array}{l} P (t) = \\mathrm{e} ^ {- \\alpha t} \\sum_ {k = 0} ^ {\\infty} \\frac {(\\alpha t) ^ {k}}{k !} D ^ {k} = \\sum_ {k = 0} ^ {\\infty} \\frac {(\\alpha t) ^ {k}}{k !} D ^ {k} \\sum_ {i = 0} ^ {\\infty} \\frac {(- 1) ^ {i} (\\alpha t) ^ {i}}{i !} \\\\ = \\sum_ {n = 0} ^ {\\infty} \\sum_ {k = 0} ^ {n} \\frac {(- 1) ^ {n - k} (\\alpha t) ^ {n}}{k ! (n - k) !} D ^ {k} = \\sum_ {n = 0} ^ {\\infty} \\frac {(\\alpha t) ^ {n}}{n !} (D - I) ^ {n} = \\mathrm{e} ^ {Q t}. \\\\ \\end{array}",
+          "image_source": "images/page_188_equation_11.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 189,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.1,
+            0.068,
+            0.125,
+            0.079
+          ],
+          "content": "194"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.066,
+            0.319,
+            0.08
+          ],
+          "content": "第八章 连续时间马氏过程"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.122,
+            0.819,
+            0.185
+          ],
+          "content": "在本章中, 我们对连续时间的马氏过程的基本概念和性质做简单的介绍, 主要内容包括转移半群、马氏性、强马氏性、费勒半群和费勒过程、卷积半群、莱维过程、强费勒性以及若干典型的例子等."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.139,
+            0.237,
+            0.357,
+            0.259
+          ],
+          "level": 2,
+          "content": "8.1 马氏转移半群"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.306,
+            0.819,
+            0.37
+          ],
+          "content": "研究马氏过程的基本工具是转移半群, 它给出了过程的某种条件分布. 利用转移半群可以对马氏过程的若干基本分布给出简洁的表达. 本节讨论与转移半群相关的若干基本概念, 并简单介绍欧氏空间上的卷积半群."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.175,
+            0.396,
+            0.382,
+            0.415
+          ],
+          "level": 2,
+          "content": "8.1.1 转移核与半群"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.44,
+            0.819,
+            0.527
+          ],
+          "content": "考虑可测空间 $(E, \\mathcal{E})$. 严格来说, 后面涉及的积分都是指抽象测度的积分. 对该理论不熟悉的读者可假定 $(E, \\mathcal{E})$ 是欧氏空间 $(\\mathbb{R}^d, \\mathcal{B}^d)$ 的可测子空间, 并将这里关于测度的积分理解为关于相应分布函数的斯蒂尔切斯积分. 用 $\\mathrm{b}\\mathcal{E}$ 表示 $E$ 上的全体关于 $\\mathcal{E}$ 可测的有界函数构成的线性空间. 对于 $f \\in \\mathrm{b}\\mathcal{E}$ 定义其上确界范数:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.392,
+            0.54,
+            0.818,
+            0.567
+          ],
+          "content": "\\| f \\| = \\sup _ {x \\in E} | f (x) |. \\tag {8.1.1}",
+          "image_source": "images/page_189_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.577,
+            0.664,
+            0.594
+          ],
+          "content": "注意 b$\\mathcal{E}$ 在范数 $\\|\\cdot\\|$ 之下是完备的, 因此是巴拿赫 (Banach) 空间."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.6,
+            0.818,
+            0.64
+          ],
+          "content": "定义 8.1.1 设  $(E, \\mathcal{E})$  和  $(F, \\mathcal{F})$  是两个可测空间. 称映射  $K: E \\times F \\to [0, \\infty)$  为由  $(E, \\mathcal{E})$  到  $(F, \\mathcal{F})$  上的转移核, 是指它满足如下条件:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.175,
+            0.646,
+            0.655,
+            0.686
+          ],
+          "sub_type": "text",
+          "content": "(1) 当 $B \\in \\mathcal{F}$ 固定时, $x \\mapsto K(x, B)$ 是 $(E, \\mathcal{E})$ 上的可测函数;\n(2) 当 $x \\in E$ 固定时, $B \\mapsto K(x, B)$ 是 $(F, \\mathscr{F})$ 上的有限测度."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.692,
+            0.818,
+            0.755
+          ],
+          "content": "称转移核 $K$ 是有界的, 是指它在 $E \\times \\mathcal{F}$ 上有界. 特别地, 当 $K(\\cdot, F) \\equiv 1$ 时称 $K$ 是马氏转移核; 当 $K(\\cdot, F) \\leqslant 1$ 时称 $K$ 是准马氏转移核; 当 $E = F$ 且 $\\mathcal{E} = \\mathcal{F}$ 时称 $K$ 是 $(E, \\mathcal{E})$ 或 $E$ 上的转移核."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.761,
+            0.818,
+            0.801
+          ],
+          "content": "核与函数空间上的线性算子之间有密切的联系. 设 $K$ 是 $(E, \\mathcal{E})$ 到 $(F, \\mathcal{F})$ 的有界核. 对于 $f \\in \\mathrm{b}\\mathcal{F}$, 令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.32,
+            0.807,
+            0.602,
+            0.841
+          ],
+          "content": "K f (x) = \\int_ {F} f (y) K (x, \\mathrm{d} y), \\quad x \\in E.",
+          "image_source": "images/page_189_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.85,
+            0.818,
+            0.891
+          ],
+          "content": "易知 $Kf \\in \\mathrm{b}\\mathcal{E}$, 且 $f \\mapsto Kf$ 是由线性空间 $\\mathrm{b}\\mathcal{F}$ 到线性空间 $\\mathrm{b}\\mathcal{E}$ 的线性算子. 显然该线性算子与核 $K$ 相互唯一决定. 对于 $(E, \\mathcal{E})$ 上的有限测度 $\\mu$ 令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.31,
+            0.897,
+            0.611,
+            0.932
+          ],
+          "content": "\\mu K (B) = \\int_ {E} K (x, B) \\mu (\\mathrm{d} x), \\quad B \\in \\mathcal {F}.",
+          "image_source": "images/page_189_equation_17.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 190,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.732,
+            0.067,
+            0.857,
+            0.081
+          ],
+          "content": "8.1 马氏转移半群"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.875,
+            0.069,
+            0.9,
+            0.08
+          ],
+          "content": "195"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.122,
+            0.857,
+            0.162
+          ],
+          "content": "则 $\\mu K$ 是 $(F, \\mathcal{F})$ 上的有限测度. 因此 $K$ 诱导一个将 $(E, \\mathcal{E})$ 上的有限测度映至 $(F, \\mathcal{F})$ 上的有限测度的算子. 显然当 $K$ 是马氏转移核时, 它将概率测度映为概率测度."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.168,
+            0.857,
+            0.207
+          ],
+          "content": "设 $K$ 和 $L$ 分别是可测空间 $(E, \\mathcal{E})$ 到 $(F, \\mathcal{F})$ 和 $(F, \\mathcal{F})$ 到 $(G, \\mathcal{G})$ 的有界核. 对 $x \\in E$ 和 $A \\in \\mathcal{G}$ 定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.373,
+            0.22,
+            0.629,
+            0.255
+          ],
+          "content": "K L (x, A) = \\int_ {F} K (x, \\mathrm{d} y) L (y, A).",
+          "image_source": "images/page_190_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.27,
+            0.745,
+            0.288
+          ],
+          "content": "则 $KL$ 是一个 $(E, \\mathcal{E})$ 到 $(G, \\mathcal{G})$ 的有界核, 称为 $K$ 与 $L$ 的复合. 显然有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.354,
+            0.307,
+            0.647,
+            0.325
+          ],
+          "content": "K (L f) = (K L) f, \\quad (\\mu K) L = \\mu (K L).",
+          "image_source": "images/page_190_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.343,
+            0.604,
+            0.361
+          ],
+          "content": "所以今后遇到上述运算时, 我们简写作 KLf 或  $\\mu KL$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.367,
+            0.859,
+            0.407
+          ],
+          "content": "定义 8.1.2 称  $(E, \\mathcal{E})$  上的一族准马氏转移核  $(P_{t})_{t \\geqslant 0}$  为转移半群, 是指  $P_{0}(x, \\cdot) = \\delta_{x}$  且对任意  $s, t \\geqslant 0$ , 有  $P_{s}P_{t} = P_{s+t}$ , 这等价于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.301,
+            0.419,
+            0.701,
+            0.453
+          ],
+          "content": "P _ {t + s} (x, B) = \\int_ {E} P _ {s} (x, \\mathrm{d} y) P _ {t} (y, B), \\quad x \\in E, B \\in \\mathscr {E}.",
+          "image_source": "images/page_190_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.181,
+            0.468,
+            0.47,
+            0.485
+          ],
+          "content": "上式称为查普曼-柯尔莫哥洛夫方程."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.491,
+            0.857,
+            0.532
+          ],
+          "content": "根据上面的说明, 转移半群 $(P_{t})_{t\\geqslant 0}$ 决定了巴拿赫空间 $\\mathrm{b}\\mathcal{E}$ 的一族线性算子 $(P_{t})_{t\\geqslant 0}$. 显然在算子运算之下 $(P_{t})_{t\\geqslant 0}$ 仍然构成一个半群. 由于 $P_{t}$ 是准马氏转移核, 易知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.406,
+            0.552,
+            0.857,
+            0.57
+          ],
+          "content": "\\| P _ {t} f \\| \\leqslant \\| f \\|, \\quad f \\in \\mathrm{b} \\mathscr {E}. \\tag {8.1.2}",
+          "image_source": "images/page_190_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.588,
+            0.528,
+            0.606
+          ],
+          "content": "所以  $(P_{t})_{t\\geqslant0}$  是 bE 上的压缩线性算子半群."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.611,
+            0.857,
+            0.652
+          ],
+          "content": "称转移半群 $(P_{t})_{t\\geqslant 0}$ 是可测的, 是指对于任何 $f\\in \\mathrm{b}\\mathcal{E}$ 映射 $(t,x)\\mapsto P_t f(x)$ 关于乘积 $\\sigma$ 代数 $\\mathcal{B}[0,\\infty)\\times \\mathcal{E}$ 可测. 此时, 令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.349,
+            0.667,
+            0.857,
+            0.702
+          ],
+          "content": "U ^ {\\alpha} f (x) = \\int_ {0} ^ {\\infty} \\mathrm{e} ^ {- \\alpha t} P _ {t} f (x) \\mathrm{d} t, \\quad x \\in E, \\tag {8.1.3}",
+          "image_source": "images/page_190_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.717,
+            0.857,
+            0.756
+          ],
+          "content": "称 $U^{\\alpha}$ 为 $(P_t)_{t\\geqslant 0}$ 的 $\\alpha$ 位势算子, 而称 $(U^{\\alpha})_{\\alpha >0}$ 为 $(P_t)_{t\\geqslant 0}$ 的预解式. 易证下面的预解方程"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.776,
+            0.857,
+            0.796
+          ],
+          "content": "U ^ {\\beta} f (x) = U ^ {\\alpha} f (x) - (\\beta - \\alpha) U ^ {\\alpha} U ^ {\\beta} f (x), \\quad \\alpha , \\beta > 0. \\tag {8.1.4}",
+          "image_source": "images/page_190_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.814,
+            0.857,
+            0.876
+          ],
+          "content": "例 8.1.1 对于  $t \\geqslant 0$  令  $R_{t}(x, \\mathrm{d}y) = \\delta_{x+t}(\\mathrm{d}y)$ ，则  $(R_{t})_{t \\geqslant 0}$  构成 R 上的马氏转移半群，也可限定为  $R_{+}$ 上的马氏转移半群，或者限定为  $\\mathbb{R}_{-} := (-\\infty, 0]$  上的准马氏转移半群."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.883,
+            0.857,
+            0.923
+          ],
+          "content": "例 8.1.2 对于  $t \\geqslant 0$  令  $Q_{t}(x, \\mathrm{d}y) = \\delta_{x + \\operatorname{sgn}(x)t}(\\mathrm{d}y)$ ，则  $(R_{t})_{t \\geqslant 0}$  构成 R 上的马氏转移半群，也可限定为  $R_{+} := [0, \\infty)$  上的马氏转移半群."
+        }
+      ]
+    },
+    {
+      "page_idx": 191,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.1,
+            0.068,
+            0.125,
+            0.079
+          ],
+          "content": "196"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.066,
+            0.319,
+            0.08
+          ],
+          "content": "第八章 连续时间马氏过程"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.122,
+            0.819,
+            0.185
+          ],
+          "content": "例8.1.3 设 $\\pi$ 为可测空间 $(E, \\mathcal{E})$ 上的马氏转移核. 记 $\\pi^0(x, \\mathrm{dy}) = \\delta_x(\\mathrm{dy})$, 并对 $n \\geqslant 1$ 令 $\\pi^n$ 是 $\\pi$ 的 $n$ 重复合. 再设 $\\alpha \\geqslant 0$ 为常数. 对于 $t \\geqslant 0$ 利用泊松分布定义 $(E, \\mathcal{E})$ 上的转移核"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.318,
+            0.201,
+            0.605,
+            0.243
+          ],
+          "content": "P _ {t} (x, \\mathrm{d} y) = \\mathrm{e} ^ {- \\alpha t} \\sum_ {n = 0} ^ {\\infty} \\frac {(\\alpha t) ^ {n}}{n !} \\pi^ {n} (x, \\mathrm{d} y).",
+          "image_source": "images/page_191_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.258,
+            0.495,
+            0.275
+          ],
+          "content": "易证 $(P_{t})_{t\\geqslant0}$ 构成 $(E,\\mathscr{E})$ 上的马氏转移半群."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.28,
+            0.819,
+            0.344
+          ],
+          "content": "考虑 $(E, \\mathcal{E})$ 上的准马氏转移半群 $(P_t)_{t \\geqslant 0}$. 对于 $\\partial \\notin E$ 令 $\\tilde{E} = E \\cup \\{\\partial\\}$. 再令 $\\tilde{\\mathcal{E}}$ 为 $\\tilde{E}$ 上的由 $\\mathcal{E}$ 和 $\\{\\partial\\}$ 生成的 $\\sigma$ 代数. 不难证明 $\\tilde{\\mathcal{E}} = \\mathcal{E} \\cup \\{B \\cup \\{\\partial\\} : B \\in \\mathcal{E}\\}$. 则对于 $t \\geqslant 0$ 存在 $(\\tilde{E}, \\tilde{\\mathcal{E}})$ 上唯一的马氏转移核 $\\tilde{P}_t$ 满足"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.362,
+            0.818,
+            0.446
+          ],
+          "content": "\\tilde {P} _ {t} (x, A) = \\left\\{ \\begin{array}{l l} P _ {t} (x, A), & x \\in E, A \\in \\mathscr {E}, \\\\ 1 - P _ {t} (x, E), & x \\in E, A = \\{\\partial \\}, \\\\ \\delta_ {\\partial} (A), & x = \\partial , A \\in \\tilde {\\mathscr {E}}. \\end{array} \\right. \\tag {8.1.5}",
+          "image_source": "images/page_191_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.462,
+            0.818,
+            0.503
+          ],
+          "content": "易证 $(\\tilde{P}_t)_{t\\geqslant 0}$ 构成 $(\\tilde{E},\\tilde{\\mathcal{E}})$ 上的马氏转移半群. 所以, 任何一个准马氏转移半群总可扩张为马氏转移半群."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.509,
+            0.818,
+            0.55
+          ],
+          "content": "命题 8.1.1 设 E 为度量拓扑空间, 而 E 为其博雷尔  $\\sigma$  代数. 再设  $\\mu$  和  $\\nu$  是  $(E, \\mathcal{E})$  上的有限测度, 则  $\\mu = \\nu$  当且仅当有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.288,
+            0.561,
+            0.818,
+            0.597
+          ],
+          "content": "\\int_ {E} f (x) \\mu (\\mathrm{d} x) = \\int_ {E} f (x) \\nu (\\mathrm{d} x), \\quad f \\in C _ {b} (E), \\tag {8.1.6}",
+          "image_source": "images/page_191_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.611,
+            0.506,
+            0.627
+          ],
+          "content": "其中  $C_{b}(E)$  表示 E 上的有界连续函数的全体."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.636,
+            0.819,
+            0.769
+          ],
+          "content": "证明 若有 $\\mu = \\nu$，则显然 (8.1.6) 式成立。反之，设 (8.1.6) 式成立。任取开集 $G \\subseteq E$。对 $x \\in E$ 令 $g(x) = \\inf \\{\\rho(x, y) : y \\in G^c\\}$。易证 $g$ 为 $E$ 上的连续函数，且当 $x \\in G$ 时有 $g(x) > 0$，而当 $x \\in G^c$ 时有 $g(x) = 0$。对 $n \\geqslant 1$ 令 $f_n = 1 \\wedge (ng)$。显然 $f_n \\in C_b(E)$，故 (8.1.6) 式中的等式对每个 $f_n$ 成立。注意，在逐点收敛的意义下单调不降地 $\\lim_{n \\to \\infty} f_n = 1_G$。根据单调收敛定理有 $\\mu(G) = \\nu(G)$，再由邓肯类定理知 $\\mu(A) = \\nu(A)$ 对一切 $A \\in \\mathcal{E}$ 成立。$\\square$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.175,
+            0.796,
+            0.383,
+            0.815
+          ],
+          "level": 2,
+          "content": "8.1.2 费勒转移半群"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.84,
+            0.819,
+            0.927
+          ],
+          "content": "本小节假定 $E$ 是可分局部紧度量空间, 其典型的特例包括欧氏空间 $\\mathbb{R}^d$ 及其各种类型的区间. 对此概念不熟悉的读者可假定 $E$ 是 $\\mathbb{R}^d$ 或其中的某个区间. 令 $\\mathcal{E}$ 为 $E$ 的博雷尔 $\\sigma$ 代数, 即由 $E$ 的所有开集生成的 $\\sigma$ 代数. 令 $\\tilde{E} = E \\cup \\{\\infty\\}$ 是 $E$ 的单点紧化空间. 也就是说, 点 $\\infty$ 的邻域系就是 $E$ 的所有紧子集在 $\\tilde{E}$ 中的补集. 这样 $\\tilde{E}$ 是一个"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "modified_at": "2026-08-04T18:30:12+08:00",
+      "page_count": 246,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 176,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 177,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 178,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 179,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 180,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 181,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 182,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 183,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 184,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 185,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 186,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 187,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 188,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 189,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 190,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 191,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

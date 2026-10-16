@@ -1,0 +1,3035 @@
+{
+  "pages": [
+    {
+      "page_idx": 64,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.068,
+            0.125,
+            0.079
+          ],
+          "content": "58"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.067,
+            0.26,
+            0.08
+          ],
+          "content": "第二章 鞅论基础"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.122,
+            0.616,
+            0.14
+          ],
+          "content": "令 $k \\to \\infty$ 得 $\\mathbf{E}(X_n 1_A) = \\mathbf{E}(X 1_A)$. 因而 $\\mathbf{E}(X|\\mathcal{F}_n) = X_n$. $\\square$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.146,
+            0.818,
+            0.186
+          ],
+          "content": "推论 2.4.6 设  $(X_{n})$  为非负上鞅, 则当  $n \\to \\infty$  时有  $X_{n} \\stackrel{a.s.}{\\rightarrow} X$ , 其中 X 是一个可积随机变量."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.194,
+            0.819,
+            0.235
+          ],
+          "content": "证明 因为 $(X_{n})$ 是非负上鞅, 序列 $\\mathbf{E}|X_n| = \\mathbf{E}(X_n)$ 不增, 从而有界. 应用定理2.4.5于下鞅 $(-X_{n})$ 即可. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.242,
+            0.819,
+            0.307
+          ],
+          "content": "推论 2.4.7 对任何可积随机变量 Y 和  $\\sigma$  代数流  $(\\mathcal{F}_{n})_{n\\geqslant0}$ ，当  $n\\to\\infty$  时  $X_{n}:=$ \n\n$\\mathbf{E}(Y|\\mathcal{F}_{n})$  几乎必然且  $L^{1}$  收敛于  $X_{\\infty}:=\\mathbf{E}(Y|\\mathcal{F}_{\\infty})$ ，其中  $\\mathcal{F}_{\\infty}=\\sigma\\left(\\bigcup_{n}\\mathcal{F}_{n}\\right)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.31,
+            0.816,
+            0.356
+          ],
+          "content": "证明 由命题2.2.5知杜布鞅 $(X_{n})$ 一致可积.根据定理2.4.5,在几乎必然和 $L^1$ 意义下，极限 $X = \\lim_{n\\to \\infty}X_n\\in \\mathcal{F}_\\infty$ 存在且 $X_{n} = \\mathbf{E}(X|\\mathcal{F}_{n})$ .这样"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.219,
+            0.365,
+            0.818,
+            0.385
+          ],
+          "content": "\\mathbf {E} (X _ {\\infty} | \\mathcal {F} _ {n}) = \\mathbf {E} [ \\mathbf {E} (Y | \\mathcal {F} _ {\\infty}) | \\mathcal {F} _ {n} ] = \\mathbf {E} (Y | \\mathcal {F} _ {n}) = X _ {n} = \\mathbf {E} (X | \\mathcal {F} _ {n}). \\tag {2.4.5}",
+          "image_source": "images/page_64_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.397,
+            0.819,
+            0.438
+          ],
+          "content": "令 $\\mathcal{M}$ 是使等式 $\\mathbf{E}(X_{\\infty};A) = \\mathbf{E}(X;A)$ 成立的所有事件 $A\\in \\mathcal{F}_{\\infty}$ 构成的集类.应用单调收敛定理可以证明 $\\mathcal{M}$ 是一个单调类.由(2.4.5)式对任何 $A\\in \\mathcal{F}_n$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.327,
+            0.452,
+            0.595,
+            0.47
+          ],
+          "content": "\\mathbf {E} (X _ {\\infty}; A) = \\mathbf {E} (X _ {n}; A) = \\mathbf {E} (X; A).",
+          "image_source": "images/page_64_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.48,
+            0.819,
+            0.569
+          ],
+          "content": "所以  $M \\supseteq \\bigcup_{n} F_{n}$ . 注意  $\\bigcup_{n} F_{n}$  是一个集代数. 根据单调类定理有  $M \\supseteq m \\left( \\bigcup_{n} F_{n} \\right) = \\sigma \\left( \\bigcup_{n} F_{n} \\right) = \\mathcal{F}_{\\infty}$ , 即上式对任何  $A \\in F_{\\infty}$  也成立. 所以几乎必然地  $X = X_{\\infty}$ . □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.575,
+            0.819,
+            0.668
+          ],
+          "content": "推论 2.4.8 设有随机变量序列  $(Y_{n})_{n\\geqslant0}$  和  $\\sigma$  代数流  $(\\mathcal{F}_{n})_{n\\geqslant0}$ . 如果几乎必然地  $\\lim_{n\\to\\infty}Y_{n}=Y$  且有可积随机变量 Z 使得  $|Y_{n}|\\leqslant Z$ , 那么  $X_{n}:=\\mathbf{E}(Y_{n}|\\mathcal{F}_{n})$  几乎必然且  $L^{1}$  收敛于  $X_{\\infty}:=\\mathbf{E}(Y|\\mathcal{F}_{\\infty})$ , 其中  $\\mathcal{F}_{\\infty}=\\sigma\\left(\\bigcup_{n}\\mathcal{F}_{n}\\right)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.671,
+            0.819,
+            0.725
+          ],
+          "content": "证明 令 $W_{n} = \\sup_{k\\geqslant n}|Y_{k} - Y|$, 则 $|W_{n}| \\leqslant 2Z$ 且几乎必然地 $W_{n} \\to 0$. 再由推论2.4.7有 $X_{\\infty} = \\lim_{n\\to \\infty}\\mathbf{E}(Y|\\mathcal{F}_n)$, 故对于任何 $m \\geqslant 0$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.196,
+            0.73,
+            0.76,
+            0.816
+          ],
+          "content": "\\begin{array}{l} \\operatorname * {l i m s u p} _ {n \\to \\infty} | X _ {n} - X _ {\\infty} | = \\operatorname * {l i m s u p} _ {n \\to \\infty} | X _ {n} - \\mathbf {E} (Y | \\mathscr {F} _ {n}) | = \\operatorname * {l i m s u p} _ {n \\to \\infty} | \\mathbf {E} (Y _ {n} - Y | \\mathscr {F} _ {n}) | \\\\ \\leqslant \\operatorname * {l i m s u p} _ {n \\to \\infty} \\mathbf {E} (| Y _ {n} - Y | | \\mathscr {F} _ {n}) = \\operatorname * {l i m s u p} _ {n \\to \\infty} \\mathbf {E} (W _ {n} | \\mathscr {F} _ {n}) \\\\ \\leqslant \\lim _ {n \\to \\infty} \\mathbf {E} (W _ {m} | \\mathcal {F} _ {n}) = \\mathbf {E} (W _ {m} | \\mathcal {F} _ {\\infty}), \\\\ \\end{array}",
+          "image_source": "images/page_64_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.822,
+            0.818,
+            0.863
+          ],
+          "content": "其中最后一个等号成立再次用到了推论 2.4.7. 根据条件期望的控制收敛定理, 上式右端当 $m \\to \\infty$ 时趋于零. 所以结论中的几乎必然收敛成立. 另一方面, 由于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.337,
+            0.877,
+            0.586,
+            0.897
+          ],
+          "content": "| X _ {n} | \\leqslant \\mathbf {E} (| Y _ {n} | \\big | \\mathscr {F} _ {n}) \\leqslant \\mathbf {E} (Z | \\mathscr {F} _ {n}),",
+          "image_source": "images/page_64_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.909,
+            0.819,
+            0.927
+          ],
+          "content": "且右边的随机变量序列一致可积, 显然  $(X_{n})$  一致可积, 故结论中的  $L^{1}$  收敛也成立. □"
+        }
+      ]
+    },
+    {
+      "page_idx": 65,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.703,
+            0.067,
+            0.858,
+            0.081
+          ],
+          "content": "2.4 不等式和收敛定理"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.875,
+            0.069,
+            0.893,
+            0.08
+          ],
+          "content": "59"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.215,
+            0.12,
+            0.423,
+            0.138
+          ],
+          "level": 2,
+          "content": "2.4.4 向后收敛定理"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.164,
+            0.857,
+            0.227
+          ],
+          "content": "前面考虑的离散时间鞅的参数集为  $\\{0,1,2,\\cdots\\}$ . 形象地说, 定理 2.4.5 中的下鞅收敛是向前收敛. 接下来我们讨论下鞅的向左收敛定理, 也就是考虑时间集为  $\\{\\cdots,-2,-1,0\\}$  的情况."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.232,
+            0.857,
+            0.319
+          ],
+          "content": "定理 2.4.9 设  $(X_{n}: n \\leqslant 0)$  是关于流  $(\\mathcal{F}_{n})_{n \\leqslant 0}$  的下鞅且  $\\inf_{n} \\mathbf{E}(X_{n}) > -\\infty$ ，则  $(X_{n})$  是一致可积的。而且当  $n \\to -\\infty$  时， $X_{n}$  几乎必然且  $L^{1}$  收敛于一个可积随机变量  $X_{-\\infty}$ ，且对任何 n 有  $\\mathbf{E}(X_{n} | \\mathcal{F}_{-\\infty}) \\geqslant X_{-\\infty}$ ，其中  $F_{-\\infty} = \\bigcap_{n=0}^{-\\infty} F_{n}$ 。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.325,
+            0.857,
+            0.39
+          ],
+          "content": "证明 对任何 $n \\leqslant 0$ 有 $\\mathbf{E}(X_{n-1}) \\leqslant \\mathbf{E}(X_n)$. 所以 $\\inf_{n} \\mathbf{E}(X_n) > -\\infty$ 蕴涵极限 $x := \\lim_{n \\to -\\infty} \\mathbf{E}(X_n)$ 单调递降地存在且有限. 对于 $\\varepsilon > 0$ 取 $k \\leqslant 0$ 使 $\\mathbf{E}(X_k) < x + \\varepsilon$. 注意, 对 $n \\leqslant k$ 有 $\\mathbf{E}(X_n) \\geqslant x > \\mathbf{E}(X_k) - \\varepsilon$, 所以"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.406,
+            0.786,
+            0.567
+          ],
+          "content": "\\begin{array}{l} \\mathbf {E} (| X _ {n} |; | X _ {n} | > \\lambda) = \\mathbf {E} (X _ {n}; X _ {n} > \\lambda) - \\mathbf {E} (X _ {n}; X _ {n} <   - \\lambda) \\\\ = \\mathbf {E} (X _ {n}; X _ {n} > \\lambda) - \\mathbf {E} (X _ {n}) + \\mathbf {E} (X _ {n}; X _ {n} \\geqslant - \\lambda) \\\\ \\leqslant \\mathbf {E} [ \\mathbf {E} (X _ {k} | \\mathscr {F} _ {n}); X _ {n} > \\lambda ] - \\mathbf {E} (X _ {n}) + \\\\ \\mathbf {E} [ \\mathbf {E} (X _ {k} | \\mathscr {F} _ {n}); X _ {n} \\geqslant - \\lambda ] \\\\ \\leqslant \\mathbf {E} (X _ {k}; X _ {n} > \\lambda) - \\mathbf {E} (X _ {k}) + \\varepsilon + \\mathbf {E} (X _ {k}; X _ {n} \\geqslant - \\lambda) \\\\ = \\mathbf {E} (X _ {k}; X _ {n} > \\lambda) - \\mathbf {E} (X _ {k}; X _ {n} <   - \\lambda) + \\varepsilon \\\\ \\leqslant \\mathbf {E} (| X _ {k} |; | X _ {n} | > \\lambda) + \\varepsilon . \\\\ \\end{array}",
+          "image_source": "images/page_65_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.584,
+            0.638,
+            0.601
+          ],
+          "content": "取 $L := L_k \\geqslant 1$ 充分大使得 $\\mathbf{E}(|X_k|; |X_k| > L) < \\varepsilon$. 由上式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.31,
+            0.62,
+            0.726,
+            0.667
+          ],
+          "content": "\\begin{array}{l} \\mathbf {E} (| X _ {n} |; | X _ {n} | > \\lambda) \\leqslant \\mathbf {E} (| X _ {k} |; | X _ {k} | \\leqslant L, | X _ {n} | > \\lambda) + 2 \\varepsilon \\\\ \\leqslant L \\mathbf {E} (| X _ {n} | > \\lambda) + 2 \\varepsilon . \\\\ \\end{array}",
+          "image_source": "images/page_65_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.685,
+            0.382,
+            0.702
+          ],
+          "content": "另外, 由马尔可夫不等式,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.24,
+            0.715,
+            0.76,
+            0.747
+          ],
+          "content": "\\mathbf {P} (| X _ {n} | > \\lambda) \\leqslant \\frac {1}{\\lambda} \\mathbf {E} | X _ {n} | = \\frac {1}{\\lambda} \\big [ 2 \\mathbf {E} (X _ {n} ^ {+}) - \\mathbf {E} (X _ {n}) \\big ] \\leqslant \\frac {1}{\\lambda} \\big [ 2 \\mathbf {E} (X _ {0} ^ {+}) - x \\big ],",
+          "image_source": "images/page_65_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.759,
+            0.857,
+            0.799
+          ],
+          "content": "其中最后的不等号是由于 $x \\leqslant \\mathbf{E}(X_n)$ 而 $X = (X_n^+)_{n \\leqslant 0}$ 也是下鞅. 由上述两个不等式得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.313,
+            0.813,
+            0.688,
+            0.847
+          ],
+          "content": "\\sup _ {n \\leqslant k} \\mathbf {E} (| X _ {n} |; | X _ {n} | > \\lambda) \\leqslant \\frac {1}{\\lambda} L \\left[ 2 \\mathbf {E} (X _ {0} ^ {+}) - x \\right] + 2 \\varepsilon ,",
+          "image_source": "images/page_65_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.181,
+            0.864,
+            0.221,
+            0.88
+          ],
+          "content": "从而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.361,
+            0.902,
+            0.639,
+            0.929
+          ],
+          "content": "\\operatorname * {l i m s u p} _ {\\lambda \\to \\infty} \\sup _ {n \\leqslant k} \\mathbf {E} (| X _ {n} |; | X _ {n} | > \\lambda) \\leqslant 2 \\varepsilon .",
+          "image_source": "images/page_65_equation_14.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 66,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.105,
+            0.068,
+            0.125,
+            0.079
+          ],
+          "content": "60"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.066,
+            0.26,
+            0.08
+          ],
+          "content": "第二章 鞅论基础"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.122,
+            0.457,
+            0.138
+          ],
+          "content": "另外, 不难取常数  $N \\geqslant 1$  使当  $\\lambda \\geqslant N$  时"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.342,
+            0.155,
+            0.577,
+            0.182
+          ],
+          "content": "\\sup _ {k \\leqslant n \\leqslant 0} \\mathbf {E} (| X _ {n} |; | X _ {n} | > \\lambda) \\leqslant 2 \\varepsilon .",
+          "image_source": "images/page_66_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.194,
+            0.271,
+            0.21
+          ],
+          "content": "综合以上二式得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.321,
+            0.227,
+            0.597,
+            0.253
+          ],
+          "content": "\\operatorname * {l i m s u p} _ {\\lambda \\to \\infty} \\sup _ {n \\leqslant 0} \\mathbf {E} (| X _ {n} |; | X _ {n} | > \\lambda) \\leqslant 2 \\varepsilon .",
+          "image_source": "images/page_66_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.266,
+            0.816,
+            0.336
+          ],
+          "content": "由  $\\varepsilon > 0$  的任意性即知  $(X_{n})_{n \\leqslant 0}$  一致可积，故第一个断言得证.类似于定理 2.4.5 的证明.令  $X_{*} = \\liminf_{n \\to -\\infty} X_{n}$  和  $X^{*} = \\limsup_{n \\to -\\infty} X_{n}$ .对非负整数 N，用  $V_{N}^{X}[a, b]$  表示下鞅  $\\{X_{-N}, X_{-N+1}, \\cdots, X_{0}\\}$  对区间 [a, b] 的上穿次数，则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.318,
+            0.343,
+            0.602,
+            0.374
+          ],
+          "content": "\\mathbf {E} \\{V _ {N} ^ {X} [ a, b ] \\} \\leqslant \\frac {1}{b - a} \\mathbf {E} | X _ {0} - a | <   \\infty .",
+          "image_source": "images/page_66_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.383,
+            0.816,
+            0.456
+          ],
+          "content": "由此可以推出几乎必然地 $X_{*} = X^{*}$。所以几乎必然存在有限或无限的极限 $X_{-\\infty} := \\lim_{n \\to -\\infty} X_{n}$。显然 $X_{-\\infty}$ 关于 $\\mathscr{F}_{-\\infty}$ 可测。再由 $(X_{n}: n \\leqslant 0)$ 的一致可积性知 $X_{-\\infty}$ 为有限可积随机变量且 $X_{n} \\xrightarrow{L^{1}} X_{-\\infty}$。另外对任何 $k < n \\leqslant 0$ 和 $A \\in \\mathscr{F}_{-\\infty} \\subseteq \\mathscr{F}_{k}$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.22,
+            0.471,
+            0.698,
+            0.489
+          ],
+          "content": "\\mathbf {E} [ \\mathbf {E} (X _ {n} | \\mathscr {F} _ {- \\infty}) 1 _ {A} ] = \\mathbf {E} (X _ {n} 1 _ {A}) = \\mathbf {E} [ \\mathbf {E} (X _ {n} | \\mathscr {F} _ {k}) 1 _ {A} ] \\geqslant \\mathbf {E} (X _ {k} 1 _ {A}).",
+          "image_source": "images/page_66_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.503,
+            0.741,
+            0.521
+          ],
+          "content": "令 $k \\to -\\infty$ 得 $\\mathbf{E}[\\mathbf{E}(X_n|\\mathcal{F}_{-\\infty})1_A] \\geqslant \\mathbf{E}(X_{-\\infty}1_A)$, 故 $\\mathbf{E}(X_n|\\mathcal{F}_{-\\infty}) \\geqslant X_{-\\infty}$. $\\square$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.178,
+            0.528,
+            0.731,
+            0.546
+          ],
+          "content": "推论 2.4.10 对可积随机变量 Y 和  $\\sigma$  代数流  $(\\mathcal{F}_{n})_{n\\leqslant0}$ ，几乎必然地"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.339,
+            0.56,
+            0.58,
+            0.584
+          ],
+          "content": "\\mathbf {E} (Y | \\mathscr {F} _ {- \\infty}) = \\lim _ {n \\to - \\infty} \\mathbf {E} (Y | \\mathscr {F} _ {n}),",
+          "image_source": "images/page_66_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.598,
+            0.304,
+            0.629
+          ],
+          "content": "其中  $\\mathscr{F}_{-\\infty}=\\bigcap_{n}\\mathscr{F}_{n}.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.636,
+            0.816,
+            0.718
+          ],
+          "content": "推论 2.4.11 设有随机变量序列  $(Y_{n})_{n\\leqslant0}$  和  $\\sigma$  代数流  $(\\mathcal{F}_{n})_{n\\leqslant0}$ . 若几乎必然地  $\\lim_{n\\to-\\infty}Y_{n}=Y$  且有可积随机变量 Z 使得  $|Y_{n}|\\leqslant Z$ , 则  $X_{n}:=\\mathbf{E}(Y_{n}|\\mathcal{F}_{n})$  几乎必然且  $L^{1}$  收敛于  $X_{-\\infty}:=\\mathbf{E}(Y|\\mathcal{F}_{-\\infty})$ , 其中  $F_{-\\infty}=\\bigcap_{n}\\mathcal{F}_{n}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.721,
+            0.653,
+            0.738
+          ],
+          "content": "上面推论的证明与推论 2.4.7 和推论 2.4.8 的类似, 因此省略."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.175,
+            0.766,
+            0.245,
+            0.784
+          ],
+          "level": 2,
+          "content": "练习题"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.81,
+            0.443,
+            0.826
+          ],
+          "content": "1. 证明推论 2.4.10 和推论 2.4.11."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.829,
+            0.816,
+            0.889
+          ],
+          "content": "2. 设 $\\{\\xi_n\\}$ 为零均值平方可积独立随机变量序列. 令 $S_{n} = \\sum_{k=1}^{n} \\xi_{k}$, 则对 $n \\geqslant 1$ 和 $\\lambda > 0$ 有 (柯尔莫哥洛夫不等式)"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.334,
+            0.897,
+            0.584,
+            0.929
+          ],
+          "content": "\\mathbf {P} \\Big (\\max _ {1 \\leqslant k \\leqslant n} | S _ {k} | \\geqslant \\lambda \\Big) \\leqslant \\frac {1}{\\lambda^ {2}} \\mathbf {E} (S _ {n} ^ {2}).",
+          "image_source": "images/page_66_equation_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 67,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.733,
+            0.067,
+            0.858,
+            0.081
+          ],
+          "content": "2.5 连续时间下鞅"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.874,
+            0.069,
+            0.892,
+            0.08
+          ],
+          "content": "61"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.122,
+            0.425,
+            0.138
+          ],
+          "content": "利用鞅不等式给出上式的证明."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.179,
+            0.144,
+            0.857,
+            0.321
+          ],
+          "sub_type": "text",
+          "content": "3. 设 $(X_{n}: n \\geqslant 0)$ 为离散时间鞅, 且对某个 $p > 1$ 有 $\\sup_{n \\geqslant 0} \\mathbf{E}[|X_{n}|^{p}] < \\infty$. 证明存在可积随机变量 $X$ 使得 $X_{n} \\xrightarrow{L^{1}} X (n \\to \\infty)$.\n4. 在上题的情况下, 证明 $X_{n} \\xrightarrow{L^{p}} X (n \\to \\infty)$.\n5. 设 $(X_{n}: n \\geqslant 0)$ 为平方可积离散时间鞅. 根据杜布分解定理, 存在唯一的从原点出发的可料增过程 $(\\langle X \\rangle_{n}: n \\geqslant 0)$ 使得 $(X_{n} - \\langle X \\rangle_{n}: n \\geqslant 0)$ 是鞅. 证明下面4个性质等价: (1) $\\sup_{n \\geqslant 0} \\mathbf{E}[X_{n}^{2}] < \\infty$; (2) $\\sup_{n \\geqslant 0} \\mathbf{E}[\\langle X \\rangle_{n}] < \\infty$; (3) $(X_{n})$ 在 $L^{2}$ 意义下收敛; (4) $(X_{n})$ 在 $L^{2}$ 和几乎必然意义下收敛."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.18,
+            0.374,
+            0.398,
+            0.394
+          ],
+          "level": 2,
+          "content": "2.5 连续时间下鞅"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.442,
+            0.859,
+            0.506
+          ],
+          "content": "本节讨论连续时间下鞅的轨道的正则性. 考虑完备概率空间 $(\\Omega, \\mathcal{F}, \\mathbf{P})$ 及其上的加强流 $(\\mathcal{F}_t)_{t \\geqslant 0}$. 设 $D$ 是 $[0, \\infty)$ 的一个可数稠子集且包含所有正整数. 对于整数 $K \\geqslant 1$, 令 $D_K = [0, K] \\cap D$. 后面的很多结果都是在几乎必然意义下叙述的."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.215,
+            0.533,
+            0.422,
+            0.551
+          ],
+          "level": 2,
+          "content": "2.5.1 轨道的正则化"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.576,
+            0.859,
+            0.64
+          ],
+          "content": "设 $X = (X_{t}: t \\geqslant 0)$ 是一个 $(\\mathcal{F}_{t})$ 下鞅. 对给定的整数 $N \\geqslant 1$, 取有限集 $F := \\{0 = t_{0} < t_{1} < \\cdots < t_{N} = K\\} \\subseteq D_{K}$. 对 $0 \\leqslant n \\leqslant N$, 令 $Y_{n} = X_{t_{n}}$ 和 $\\mathcal{G}_{n} = \\mathcal{F}_{t_{n}}$. 显然 $Y = (Y_{n}: 0 \\leqslant n \\leqslant N)$ 关于流 $(\\mathcal{G}_{n}: 0 \\leqslant n \\leqslant N)$ 是一个下鞅. 由杜布上穿不等式得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.264,
+            0.65,
+            0.738,
+            0.68
+          ],
+          "content": "\\lambda \\mathbf {P} \\Big (\\max _ {0 \\leqslant n \\leqslant N} | Y _ {n} | > \\lambda \\Big) \\leqslant 2 \\mathbf {E} (Y _ {N} ^ {+}) - \\mathbf {E} (Y _ {0}) = 2 \\mathbf {E} (X _ {K} ^ {+}) - \\mathbf {E} (X _ {0})",
+          "image_source": "images/page_67_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.692,
+            0.204,
+            0.706
+          ],
+          "content": "和"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.28,
+            0.716,
+            0.721,
+            0.748
+          ],
+          "content": "\\mathbf {E} \\{U _ {N} ^ {Y} [ a, b ] \\} \\leqslant \\frac {1}{b - a} \\mathbf {E} [ (Y _ {N} - a) ^ {+} ] = \\frac {1}{b - a} \\mathbf {E} [ (X _ {K} - a) ^ {+} ],",
+          "image_source": "images/page_67_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.759,
+            0.857,
+            0.801
+          ],
+          "content": "其中 $\\lambda > 0, a < b$. 显然 $U_N^Y[a, b]$ 也就是 $X$ 限制在 $F$ 上对 $[a, b]$ 的上穿次数. 因此, 我们也将其记为 $U_F^X[a, b]$. 再令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.309,
+            0.813,
+            0.692,
+            0.835
+          ],
+          "content": "U _ {D _ {K}} ^ {X} [ a, b ] = \\sup \\{U _ {F} ^ {X} [ a, b ]: F \\subseteq D _ {K} \\text {为有限集合} \\},",
+          "image_source": "images/page_67_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.846,
+            0.857,
+            0.889
+          ],
+          "content": "它是 $X$ 限制在 $D_K$ 上对区间 $[a, b]$ 的上穿次数. 因为 $D_K$ 可数, 故其有限子集全体是可数的, 因此 $U_{D_K}^X[a, b]$ 是一个正随机变量. 由上面的不等式和法图定理容易推出"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.343,
+            0.897,
+            0.856,
+            0.93
+          ],
+          "content": "\\lambda \\mathbf {P} \\Big (\\sup _ {t \\in D _ {K}} | X _ {t} | > \\lambda \\Big) \\leqslant 2 \\mathbf {E} (X _ {K} ^ {+}) - \\mathbf {E} (X _ {0}) \\tag {2.5.1}",
+          "image_source": "images/page_67_equation_17.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 68,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.105,
+            0.068,
+            0.125,
+            0.079
+          ],
+          "content": "62"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.066,
+            0.26,
+            0.08
+          ],
+          "content": "第二章 鞅论基础"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.123,
+            0.164,
+            0.137
+          ],
+          "content": "和"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.319,
+            0.152,
+            0.818,
+            0.185
+          ],
+          "content": "\\mathbf {E} \\{U _ {D _ {K}} ^ {X} [ a, b ] \\} \\leqslant \\frac {1}{b - a} \\mathbf {E} [ (X _ {K} - a) ^ {+} ]. \\tag {2.5.2}",
+          "image_source": "images/page_68_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.196,
+            0.819,
+            0.236
+          ],
+          "content": "为了简化叙述, 我们用 $s \\uparrow t$ 表示 $s < t$ 且 $s \\uparrow t$, 符号 $\\Downarrow$ 的含义类似. 下面是连续时间下鞅正则化的第一个基本定理."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.241,
+            0.819,
+            0.281
+          ],
+          "content": "定理 2.5.1 设  $X = (X_{t} : t \\geqslant 0)$  是一个  $(\\mathcal{F}_{t})$  下鞅, 而 D 是  $[0, \\infty)$  的一个可数稠子集. 那么"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.288,
+            0.819,
+            0.327
+          ],
+          "content": "(1) 对几乎所有的 $\\omega \\in \\Omega$, 映射 $t \\mapsto X_t(\\omega)$ 对任何 $K > 0$ 在 $D_K$ 上有界且存在极限:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.31,
+            0.346,
+            0.818,
+            0.4
+          ],
+          "content": "\\left\\{ \\begin{array}{l l} X _ {t +} ^ {D} (\\omega) := \\lim _ {D \\ni s \\Downarrow t} X _ {s} (\\omega) & (t \\geqslant 0), \\\\ X _ {t -} ^ {D} (\\omega) := \\lim _ {D \\ni s \\uparrow t} X _ {s} (\\omega) & (t > 0). \\end{array} \\right. \\tag {2.5.3}",
+          "image_source": "images/page_68_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.417,
+            0.684,
+            0.436
+          ],
+          "content": "这里  $X_{+}^{D}=(X_{t+}^{D}:t\\geqslant0)$  左极右连, 而  $X_{-}^{D}=(X_{t-}^{D}:t>0)$  左连右极."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.139,
+            0.441,
+            0.816,
+            0.526
+          ],
+          "sub_type": "text",
+          "content": "(2) 对每个 $t \\geqslant 0$ 随机变量 $X_{t+}^{D}$ 可积且 $X_{t} \\leqslant \\mathbf{E}(X_{t+}^{D}|\\mathcal{F}_{t})$. 特别地, 若均值函数 $t \\mapsto \\mathbf{E}(X_{t})$ 右连续, 则 $X_{t} = \\mathbf{E}(X_{t+}^{D}|\\mathcal{F}_{t})$.\n(3) 过程 $X_{+}^{D} = (X_{t + }^{D}: t \\geqslant 0)$ 是 $(\\mathcal{F}_{t + })$ 下鞅; 且当 $X$ 是 $(\\mathcal{F}_t)$ 鞅时, $X_{+}^{D}$ 是 $(\\mathcal{F}_{t + })$ 鞅."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.537,
+            0.819,
+            0.6
+          ],
+          "content": "证明 (1) 记 $N_0$ 为 $\\Omega$ 中使轨道 $t \\mapsto X_t(\\omega)$ 在某个 $D_K$ 上无界或在某个点 $t \\geqslant 0$ 处 (2.5.3) 式中右或左极限不存在的 $\\omega$ 全体. 只需证明 $N_0 \\in \\mathcal{F}$ 且 $\\mathbf{P}(N_0) = 0$. $\\mathbb{Q}$ 表示有理数集. 根据引理 1.1.3 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.311,
+            0.615,
+            0.818,
+            0.657
+          ],
+          "content": "N _ {0} = \\bigcup_ {K = 1} ^ {\\infty} \\Big (\\Big \\{\\sup _ {t \\in D _ {K}} | X _ {t} | = \\infty \\Big \\} \\cup N _ {K} \\Big), \\tag {2.5.4}",
+          "image_source": "images/page_68_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.673,
+            0.18,
+            0.688
+          ],
+          "content": "其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.329,
+            0.707,
+            0.592,
+            0.743
+          ],
+          "content": "N _ {K} = \\bigcup_ {a, b \\in \\mathbb {Q}, a <   b} \\left\\{U _ {D _ {K}} ^ {X} [ a, b ] = \\infty \\right\\}.",
+          "image_source": "images/page_68_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.759,
+            0.486,
+            0.776
+          ],
+          "content": "对任何整数 $K \\geqslant 1$ 及 $a < b$, 由 (2.5.1) 式有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.268,
+            0.791,
+            0.689,
+            0.858
+          ],
+          "content": "\\begin{array}{l} \\mathbf {P} \\Big \\{\\sup _ {t \\in D _ {K}} | X _ {t} | = \\infty \\Big \\} = \\lim _ {\\lambda \\to \\infty} \\mathbf {P} \\Big \\{\\sup _ {t \\in D _ {K}} | X _ {t} | > \\lambda \\Big \\} \\\\ \\leqslant \\lim _ {\\lambda \\rightarrow \\infty} \\frac {1}{\\lambda} \\left[ 2 \\mathbf {E} (X _ {K} ^ {+}) - \\mathbf {E} (X _ {0}) \\right] = 0, \\\\ \\end{array}",
+          "image_source": "images/page_68_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.87,
+            0.279,
+            0.886
+          ],
+          "content": "而由 (2.5.2) 式有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.26,
+            0.904,
+            0.622,
+            0.93
+          ],
+          "content": "\\mathbf {P} \\big \\{U _ {D _ {K}} ^ {X} [ a, b ] = \\infty \\big \\} = \\lim _ {N \\to \\infty} \\mathbf {P} \\big \\{U _ {D _ {K}} ^ {X} [ a, b ] \\geqslant N \\big \\}",
+          "image_source": "images/page_68_equation_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 69,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.733,
+            0.067,
+            0.858,
+            0.081
+          ],
+          "content": "2.5 连续时间下鞅"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.874,
+            0.069,
+            0.893,
+            0.08
+          ],
+          "content": "63"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.45,
+            0.119,
+            0.736,
+            0.186
+          ],
+          "content": "\\begin{array}{l} \\leqslant \\lim _ {N \\to \\infty} \\frac {1}{N} \\mathbf {E} \\big \\{U _ {D _ {K}} ^ {X} [ a, b ] \\big \\} \\\\ \\leqslant \\lim _ {N \\to \\infty} \\frac {1}{N (b - a)} \\mathbf {E} [ (X _ {K} - a) ^ {+} ] = 0. \\\\ \\end{array}",
+          "image_source": "images/page_69_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.199,
+            0.41,
+            0.216
+          ],
+          "content": "再由 (2.5.4) 式得  $\\mathbf{P}(N_{0})=0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.222,
+            0.857,
+            0.263
+          ],
+          "content": "(2) 对任何 $t \\geqslant 0$, 取序列 $\\{s_k : k \\geqslant 0\\} \\subseteq D$ 满足 $s_k \\Downarrow t$. 对整数 $n \\leqslant 0$ 令 $Y_n = X_{s_{-n}}$ 和 $\\mathcal{G}_n = \\mathcal{F}_{s_{-n}}$, 则 $Y = (Y_n : n \\leqslant 0)$ 是关于 $(\\mathcal{G}_n : n \\leqslant 0)$ 的下鞅, 且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.392,
+            0.28,
+            0.607,
+            0.299
+          ],
+          "content": "\\mathbf {E} (Y _ {n}) = \\mathbf {E} (X _ {s _ {- n}}) \\geqslant \\mathbf {E} (X _ {t}).",
+          "image_source": "images/page_69_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.315,
+            0.857,
+            0.379
+          ],
+          "content": "由定理 2.4.9 知 Y 一致可积, 而且当  $n \\to -\\infty$  时  $Y_{n} = X_{s_{-n}}$  几乎必然且  $L^{1}$  收敛于某个随机变量  $Y_{-\\infty}$ , 显然  $Y_{-\\infty} = X_{t+}^{D}$ . 特别地,  $X_{t+}^{D}$  可积. 又因为  $X_{t} \\leqslant \\mathbf{E}(X_{s_{-n}} | \\mathcal{F}_{t})$ , 对于任何  $A \\in F_{t}$  有  $\\mathbf{E}(X_{t}; A) \\leqslant \\mathbf{E}(X_{s_{-n}}; A)$ . 由  $L^{1}$  收敛性推出"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.26,
+            0.395,
+            0.741,
+            0.415
+          ],
+          "content": "\\mathbf {E} (X _ {t}; A) \\leqslant \\mathbf {E} (X _ {t +} ^ {D}; A) = \\mathbf {E} [ \\mathbf {E} (X _ {t +} ^ {D} 1 _ {A} | \\mathcal {F} _ {t}) ] = \\mathbf {E} [ \\mathbf {E} (X _ {t +} ^ {D} | \\mathcal {F} _ {t}); A ],",
+          "image_source": "images/page_69_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.431,
+            0.56,
+            0.449
+          ],
+          "content": "所以 $X_{t} \\leqslant \\mathbf{E}(X_{t+}^{D}|\\mathcal{F}_{t})$. 若 $t \\mapsto \\mathbf{E}(X_{t})$ 右连续, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.307,
+            0.465,
+            0.692,
+            0.49
+          ],
+          "content": "\\mathbf {E} (X _ {t}) = \\lim _ {k \\to \\infty} \\mathbf {E} (X _ {s _ {k}}) = \\mathbf {E} (X _ {t +} ^ {D}) = \\mathbf {E} [ \\mathbf {E} (X _ {t +} ^ {D} | \\mathscr {F} _ {t}) ].",
+          "image_source": "images/page_69_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.505,
+            0.361,
+            0.523
+          ],
+          "content": "从而  $X_{t}=\\mathbf{E}(X_{t+}^{D}|\\mathcal{F}_{t})$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.528,
+            0.857,
+            0.569
+          ],
+          "content": "(3) 首先由于 $(\\mathcal{F}_{t+})$ 是加强流, 易知 $X_{+}^{D}$ 是 $(\\mathcal{F}_{t+})$ 适应的可积过程. 另外对 $t > s \\geqslant 0$, 令 $s_{0} = t$ 并取 $\\{s_{n}: n \\geqslant 1\\} \\subseteq D$ 使 $s_{0} \\geqslant s_{n} \\Downarrow s$. 根据推论2.4.10得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.216,
+            0.583,
+            0.785,
+            0.635
+          ],
+          "content": "X _ {s +} ^ {D} = \\lim _ {n \\to \\infty} X _ {s _ {n}} \\leqslant \\lim _ {n \\to \\infty} \\mathbf {E} (X _ {s _ {0}} | \\mathcal {F} _ {s _ {n}}) = \\mathbf {E} \\left(X _ {s _ {0}} | \\bigcap_ {n \\geqslant 0} \\mathcal {F} _ {s _ {n}}\\right) = \\mathbf {E} (X _ {t} | \\mathcal {F} _ {s +}).",
+          "image_source": "images/page_69_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.648,
+            0.706,
+            0.666
+          ],
+          "content": "再取 $\\{t_n : n \\geqslant 0\\} \\subseteq D$ 满足 $t_n \\Downarrow t$. 令 $A \\in \\mathcal{F}_{s+}$. 对 $t_n$ 应用上式得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.245,
+            0.683,
+            0.754,
+            0.702
+          ],
+          "content": "\\mathbf {E} (X _ {s +} ^ {D}; A) \\leqslant \\mathbf {E} [ \\mathbf {E} (X _ {t _ {n}} | \\mathcal {F} _ {s +}); A ] = \\mathbf {E} [ \\mathbf {E} (X _ {t _ {n}} 1 _ {A} | \\mathcal {F} _ {s +}) ] = \\mathbf {E} (X _ {t _ {n}}; A).",
+          "image_source": "images/page_69_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.718,
+            0.397,
+            0.734
+          ],
+          "content": "再令 $n\\to \\infty$ ，由 $L^1$ 收敛得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.243,
+            0.752,
+            0.757,
+            0.772
+          ],
+          "content": "\\mathbf {E} (X _ {s +} ^ {D}; A) \\leqslant \\mathbf {E} (X _ {t +} ^ {D}; A) = \\mathbf {E} [ \\mathbf {E} (X _ {t +} ^ {D} 1 _ {A} | \\mathscr {F} _ {s +}) ] = \\mathbf {E} [ \\mathbf {E} (X _ {t +} ^ {D} | \\mathscr {F} _ {s +}); A ],",
+          "image_source": "images/page_69_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.787,
+            0.857,
+            0.83
+          ],
+          "content": "从而 $X_{s+}^{D} \\leqslant \\mathbf{E}(X_{t+}^{D}|\\mathcal{F}_{s+})$, 即 $X_{+}^{D}$ 是关于 $(\\mathcal{F}_{t+})$ 的下鞅. 若 $X$ 是鞅, 则 $\\mathbf{E}(X_t)$ 是常数, 那么 $\\mathbf{E}(X_{t+}^{D})$ 也是常数, 故 $X_{s+}^{D} = \\mathbf{E}(X_{t+}^{D}|\\mathcal{F}_{s+})$, 因而 $X_{+}^{D}$ 是鞅. $\\square$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.836,
+            0.857,
+            0.876
+          ],
+          "content": "注意, 上面右极限过程 $X_{+}^{D}$ 的定义与可数稠集 $D$ 有关, 但显然由两个不同可数稠集所定义的右极限过程是无区别的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.882,
+            0.857,
+            0.923
+          ],
+          "content": "定理 2.5.2 (1) 若 X 是随机右连续的  $(\\mathcal{F}_{t})$  下鞅, 则它有左极右连的  $(\\mathcal{F}_{t+})$  下鞅修正; (2) 若 X 是右连续的  $(\\mathcal{F}_{t})$  下鞅, 则它是几乎必然左极右连的  $(\\mathcal{F}_{t+})$  下鞅."
+        }
+      ]
+    },
+    {
+      "page_idx": 70,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.105,
+            0.068,
+            0.125,
+            0.079
+          ],
+          "content": "64"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.066,
+            0.26,
+            0.08
+          ],
+          "content": "第二章 鞅论基础"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.121,
+            0.819,
+            0.185
+          ],
+          "content": "证明 由定理2.5.1知 $X_{+}^{D}$ 为左极右连的 $(\\mathcal{F}_{t+})$ 下鞅.若 $X$ 随机右连续，由命题1.1.2知 $X_{+}^{D}$ 是 $X$ 的一个修正.若假定 $X$ 右连续，由命题1.1.1知 $X_{+}^{D}$ 与 $X$ 无区别，因而 $X$ 是几乎必然左极右连的 $(\\mathcal{F}_{t+})$ 下鞅.□"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.192,
+            0.819,
+            0.233
+          ],
+          "content": "定理 2.5.3 设流  $(\\mathcal{F}_{t})$  满足通常条件. 若下鞅 X 的均值函数  $t \\mapsto \\mathbf{E}(X_{t})$  右连续, 则 X 有左极右连的  $(\\mathcal{F}_{t})$  下鞅修正. 特别地, 在通常条件下, 鞅总有左极右连的修正."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.24,
+            0.819,
+            0.28
+          ],
+          "content": "证明 根据定理 2.5.1, 因  $(\\mathcal{F}_{t})$  右连续, 知  $X_{+}^{D}$  为左极右连的  $(\\mathcal{F}_{t})$  下鞅. 再因  $t \\mapsto \\mathbf{E}(X_{t})$  是右连续, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.304,
+            0.292,
+            0.617,
+            0.313
+          ],
+          "content": "X _ {t} = \\mathbf {E} (X _ {t +} ^ {D} | \\mathcal {F} _ {t}) = \\mathbf {E} (X _ {t +} ^ {D} | \\mathcal {F} _ {t +}) = X _ {t +} ^ {D}.",
+          "image_source": "images/page_70_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.324,
+            0.336,
+            0.342
+          ],
+          "content": "故 $X_{+}^{D}$ 是 $X$ 的修正. $\\square$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.35,
+            0.819,
+            0.413
+          ],
+          "content": "定义 2.5.1 称连续的实数值  $(\\mathcal{F}_{t})$  适应随机过程  $(B_{t}: t \\geqslant 0)$  是关于流  $(\\mathcal{F}_{t})$  的以  $\\sigma^{2} \\geqslant 0$  为参数的布朗运动, 是指对任意的  $t > s \\geqslant 0$  增量  $B_{t} - B_{s}$  独立于  $F_{s}$  且服从高斯分布  $N(0, \\sigma^{2}(t - s))$ , 即对  $\\theta \\in R$  有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.271,
+            0.423,
+            0.818,
+            0.446
+          ],
+          "content": "\\mathbf {E} [ \\mathrm{e} ^ {\\mathrm{i} \\theta (B _ {t} - B _ {s})} | \\mathcal {F} _ {s} ] = \\mathbf {E} [ \\mathrm{e} ^ {\\mathrm{i} \\theta (B _ {t} - B _ {s})} ] = \\mathrm{e} ^ {- \\sigma^ {2} (t - s) \\theta^ {2} / 2}. \\tag {2.5.5}",
+          "image_source": "images/page_70_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.457,
+            0.676,
+            0.475
+          ],
+          "content": "特别地, 当 $\\sigma^2 = 1$ 时称 $(B_t : t \\geqslant 0)$ 为关于流 $(\\mathcal{F}_t)$ 的标准布朗运动."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.48,
+            0.818,
+            0.543
+          ],
+          "content": "显然, 当 $(\\mathcal{F}_t)$ 为 $(B_t)$ 的自然 $\\sigma$ 代数流时, 这里关于 $(\\mathcal{F}_t)$ 的布朗运动的定义与定义1.3.1等价. 另外, 若 $(B_t)$ 是关于 $(\\mathcal{F}_t)$ 的布朗运动且 $\\mathbf{E}|B_0| < \\infty$, 则它是关于该流的鞅."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.549,
+            0.818,
+            0.59
+          ],
+          "content": "命题 2.5.4 若  $(B_{t}: t \\geqslant 0)$  关于流  $(\\mathcal{F}_{t})$  是以  $\\sigma^{2}$  为参数的布朗运动, 则它关于右连续加强流  $(\\mathcal{F}_{t+}^{*})$  也是以  $\\sigma^{2}$  为参数的布朗运动."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.597,
+            0.818,
+            0.636
+          ],
+          "content": "证明 在假定条件下, 显然 (2.5.5) 式对于加强流 $(\\mathcal{F}_t^*)$ 也成立, 故对 $t > s \\geqslant 0$ 和 $\\theta \\in \\mathbb{R}$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.294,
+            0.644,
+            0.626,
+            0.675
+          ],
+          "content": "\\mathbf {E} [ \\mathrm{e} ^ {\\mathrm{i} \\theta B _ {t}} | \\mathcal {F} _ {s} ^ {*} ] = \\exp \\left\\{\\mathrm{i} \\theta B _ {s} - \\frac {1}{2} \\sigma^ {2} (t - s) \\theta^ {2} \\right\\}.",
+          "image_source": "images/page_70_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.682,
+            0.524,
+            0.699
+          ],
+          "content": "根据推论 2.4.10, 并利用  $(B_{t}: t \\geqslant 0)$  的连续性得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.706,
+            0.63,
+            0.737
+          ],
+          "content": "\\mathbf {E} [ \\mathrm{e} ^ {\\mathrm{i} \\theta B _ {t}} | \\mathcal {F} _ {s +} ^ {*} ] = \\exp \\left\\{\\mathrm{i} \\theta B _ {s} - \\frac {1}{2} \\sigma^ {2} (t - s) \\theta^ {2} \\right\\}.",
+          "image_source": "images/page_70_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.744,
+            0.636,
+            0.762
+          ],
+          "content": "所以 $(B_{t}:t\\geqslant0)$ 关于 $(\\mathcal{F}_{t+}^{*})$ 也是以 $\\sigma^{2}$ 为参数的布朗运动. □"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.174,
+            0.788,
+            0.383,
+            0.807
+          ],
+          "level": 2,
+          "content": "2.5.2 有界停止定理"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.832,
+            0.568,
+            0.849
+          ],
+          "content": "下面的定理是杜布有界停止定理的连续时间版本."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.855,
+            0.818,
+            0.894
+          ],
+          "content": "定理 2.5.5 设 X 为右连续  $(\\mathcal{F}_{t})$  下鞅,  $\\tau$  和  $\\sigma$  是有界停时且  $\\sigma \\leqslant \\tau$ , 则  $X_{\\sigma}$  和  $X_{\\tau}$  是可积的且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.392,
+            0.909,
+            0.818,
+            0.929
+          ],
+          "content": "X _ {\\sigma} \\leqslant \\mathbf {E} (X _ {\\tau} | \\mathcal {F} _ {\\sigma}). \\tag {2.5.6}",
+          "image_source": "images/page_70_equation_20.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 71,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.732,
+            0.067,
+            0.858,
+            0.081
+          ],
+          "content": "2.5 连续时间下鞅"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.874,
+            0.069,
+            0.893,
+            0.08
+          ],
+          "content": "65"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.122,
+            0.859,
+            0.21
+          ],
+          "content": "证明 对  $n \\geqslant 0$  令  $D_{n} = \\{i/2^{n} : i = 0, 1, 2, \\cdots\\}$ . 再令  $\\sigma_{n} = \\inf\\{t \\in D_{n} : t > \\sigma\\}$  为  $\\sigma$  的二分点离散化. 注意  $D_{n} \\subseteq D_{n+1}$  且  $\\sigma_{n}$  和  $\\sigma_{n+1}$  都是值域为  $D_{n+1}$  的关于流  $(\\mathcal{F}_{t} : t \\in D_{n+1})$  的有界停时. 另外, 单调下降地  $\\sigma_{n} \\to \\sigma$ . 所以应用离散时间杜布有界停止定理于  $(\\mathcal{F}_{t} : t \\in D_{n+1})$  下鞅  $(X_{t} : t \\in D_{n+1})$  知  $X_{\\sigma_{n}}$  与  $X_{\\sigma_{n+1}}$  是可积的且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.404,
+            0.23,
+            0.597,
+            0.249
+          ],
+          "content": "X _ {\\sigma_ {n + 1}} \\leqslant \\mathbf {E} (X _ {\\sigma_ {n}} | \\mathscr {F} _ {\\sigma_ {n + 1}}).",
+          "image_source": "images/page_71_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.269,
+            0.86,
+            0.427
+          ],
+          "content": "对 $k \\leqslant 0$, 令 $Y_{k} = X_{\\sigma_{-k}}$ 和 $\\mathcal{G}_k = \\mathcal{F}_{\\sigma_{-k}}$. 上式说明 $(Y_k : k \\leqslant 0)$ 是关于 $(\\mathcal{G}_k : k \\leqslant 0)$ 的下鞅. 对任何 $k \\leqslant 0$ 我们有 $\\mathbf{E}(Y_k) = \\mathbf{E}(X_{\\sigma_{-k}}) \\geqslant \\mathbf{E}(X_0)$. 由定理2.4.9, 当 $k \\to -\\infty$ 时 $Y_k$ 几乎必然且 $L^1$ 收敛于某个随机变量 $Y_{-\\infty}$. 因为 $X$ 右连续, 当 $n \\to \\infty$ 时 $X_{\\sigma_n} = Y_{-n}$ 几乎必然且 $L^1$ 收敛于 $X_{\\sigma_+} = X_\\sigma = Y_{-\\infty}$. 再令 $\\tau_n = \\inf \\{t \\in D_n : t > \\tau\\}$ 为 $\\tau$ 的二分点离散化. 与上面类似地可知, 当 $n \\to \\infty$ 时 $X_{\\tau_n}$ 几乎必然且 $L^1$ 收敛于 $X_\\tau = X_{\\tau_+}$. 由于 $\\tau_n \\geqslant \\sigma_n$, 应用离散时间杜布停止定理得 $X_{\\sigma_n} \\leqslant \\mathbf{E}(X_{\\tau_n} | \\mathcal{F}_{\\sigma_n})$. 所以, 对任何 $A \\in \\mathcal{F}_\\sigma \\subseteq \\mathcal{F}_{\\sigma_n}$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.245,
+            0.446,
+            0.756,
+            0.465
+          ],
+          "content": "\\mathbf {E} (X _ {\\sigma_ {n}}; A) \\leqslant \\mathbf {E} [ \\mathbf {E} (X _ {\\tau_ {n}} | \\mathcal {F} _ {\\sigma_ {n}}); A ] = \\mathbf {E} [ \\mathbf {E} (X _ {\\tau_ {n}} 1 _ {A} | \\mathcal {F} _ {\\sigma_ {n}}) ] = \\mathbf {E} (X _ {\\tau_ {n}}; A).",
+          "image_source": "images/page_71_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.485,
+            0.525,
+            0.502
+          ],
+          "content": "在上式两端令 $n\\to \\infty$ ，并利用 $L^1$ 收敛性得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.268,
+            0.525,
+            0.732,
+            0.544
+          ],
+          "content": "\\mathbf {E} (X _ {\\sigma}; A) \\leqslant \\mathbf {E} (X _ {\\tau}; A) = \\mathbf {E} [ \\mathbf {E} (X _ {\\tau} 1 _ {A} | \\mathcal {F} _ {\\sigma}) ] = \\mathbf {E} [ \\mathbf {E} (X _ {\\tau} | \\mathcal {F} _ {\\sigma}); A ].",
+          "image_source": "images/page_71_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.564,
+            0.42,
+            0.581
+          ],
+          "content": "此蕴涵欲证不等式(2.5.6). □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.592,
+            0.857,
+            0.634
+          ],
+          "content": "推论 2.5.6 关于  $(\\mathcal{F}_{t})$  适应的右连续可积过程 X 是鞅当且仅当对任何有界停时  $\\sigma \\leqslant \\tau$  有  $\\mathbf{E}(X_{\\sigma}) = \\mathbf{E}(X_{\\tau})$ ，或等价地对任何有界停时  $\\tau$  有  $\\mathbf{E}(X_{\\tau}) = \\mathbf{E}(X_{0})$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.64,
+            0.857,
+            0.679
+          ],
+          "content": "下面定理的结论类似于定理 2.3.6, 说明一个右连续正上鞅在到达零点后, 会永远停留在零点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.685,
+            0.857,
+            0.726
+          ],
+          "content": "定理 2.5.7 设 X 为非负右连续  $(\\mathcal{F}_{t})$  上鞅. 令  $\\tau = \\inf\\{t \\geqslant 0 : X_{t} \\text{ 或 } X_{t-} = 0\\}$ . 则对任何  $t \\geqslant 0$  有  $P\\{X_{t} > 0, \\tau < t\\} = 0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.739,
+            0.859,
+            0.825
+          ],
+          "content": "证明 根据定理 2.5.2 可以假定  $(\\mathcal{F}_{t})$  右连续. 再由命题 2.1.21 知  $\\tau_{n} := \\inf\\{t \\geqslant 0 : X_{t} < 1/n\\}$  为  $(\\mathcal{F}_{t})$  停时. 当  $\\tau_{n} < \\infty$  时, 显然  $X_{\\tau_{n}} \\leqslant 1/n$ . 由定理 2.5.5 有  $\\mathbf{E}(X_{t}|\\mathcal{F}_{t \\wedge \\tau_{n}}) \\leqslant X_{t \\wedge \\tau_{n}}$ . 注意  $\\tau_{n} \\leqslant \\tau$  且  $\\{\\tau_{n} < t\\} = \\{t \\wedge \\tau_{n} < t\\} \\in \\mathcal{F}_{t \\wedge \\tau_{n}}$ . 利用 X 的正性和上鞅性,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.295,
+            0.845,
+            0.741,
+            0.891
+          ],
+          "content": "\\begin{array}{l} \\mathbf {E} (X _ {t}; \\tau <   t) \\leqslant \\mathbf {E} (X _ {t}; \\tau_ {n} <   t) = \\mathbf {E} [ \\mathbf {E} (X _ {t} | \\mathscr {F} _ {t \\wedge \\tau_ {n}}); \\tau_ {n} <   t ] \\\\ \\leqslant \\mathbf {E} (X _ {t \\wedge \\tau_ {n}}; \\tau_ {n} <   t) = \\mathbf {E} (X _ {\\tau_ {n}}; \\tau_ {n} <   t) \\leqslant 1 / n. \\\\ \\end{array}",
+          "image_source": "images/page_71_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.909,
+            0.679,
+            0.927
+          ],
+          "content": "由 $n \\geqslant 1$ 的任意性, 我们有 $\\mathbf{E}(X_t; \\tau < t) = 0$, 故得定理结论. $\\square$"
+        }
+      ]
+    },
+    {
+      "page_idx": 72,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.105,
+            0.068,
+            0.125,
+            0.079
+          ],
+          "content": "66"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.066,
+            0.26,
+            0.08
+          ],
+          "content": "第二章 鞅论基础"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.175,
+            0.12,
+            0.36,
+            0.138
+          ],
+          "level": 2,
+          "content": "2.5.3 下鞅不等式"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.164,
+            0.819,
+            0.228
+          ],
+          "content": "通过对时间集进行可数稠子集逼近, 可以将关于离散时间下鞅的很多结果推广到连续时间情况. 为此, 取 $[0, \\infty)$ 的可数稠子集 $D = \\{r_1, r_2, \\cdots\\}$. 对 $t \\geqslant 0$, 令 $D_n(t) = [0, t] \\cap \\{r_1, r_2, \\cdots, r_n, t\\}$. 注意, 对于任何右连续随机过程 $X = (X_t : t \\geqslant 0)$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.35,
+            0.246,
+            0.57,
+            0.274
+          ],
+          "content": "\\sup _ {0 \\leqslant s \\leqslant t} X _ {s} = \\lim _ {n \\to \\infty} \\sup _ {s \\in D _ {n} (t)} X _ {s}.",
+          "image_source": "images/page_72_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.29,
+            0.759,
+            0.307
+          ],
+          "content": "应用离散时间情况的相应结果和法图定理, 可以推得关于右连续下鞅的不等式:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.313,
+            0.76,
+            0.331
+          ],
+          "content": "定理 2.5.8 设  $(X_{t})$  是右连续的  $(\\mathcal{F}_{t})$  下鞅, 则对任何  $\\lambda > 0$  及  $t \\geqslant 0$  有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.254,
+            0.344,
+            0.668,
+            0.376
+          ],
+          "content": "\\lambda \\mathbf {P} \\Big (\\sup _ {0 \\leqslant s \\leqslant t} X _ {s} \\geqslant \\lambda \\Big) \\leqslant \\mathbf {E} \\Big (X _ {t}; \\sup _ {0 \\leqslant s \\leqslant t} X _ {s} \\geqslant \\lambda \\Big) \\leqslant \\mathbf {E} (X _ {t} ^ {+})",
+          "image_source": "images/page_72_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.392,
+            0.163,
+            0.406
+          ],
+          "content": "和"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.423,
+            0.621,
+            0.455
+          ],
+          "content": "\\lambda \\mathbf {P} \\Big (\\sup _ {0 \\leqslant s \\leqslant t} | X _ {s} | \\geqslant \\lambda \\Big) \\leqslant 2 \\mathbf {E} (X _ {t} ^ {+}) - \\mathbf {E} (X _ {0}).",
+          "image_source": "images/page_72_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.474,
+            0.779,
+            0.492
+          ],
+          "content": "推论 2.5.9 设  $(X_{t})$  是右连续的正  $(\\mathcal{F}_{t})$  上鞅, 则对任何  $\\lambda > 0$  及  $t \\geqslant 0$  有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.26,
+            0.506,
+            0.662,
+            0.538
+          ],
+          "content": "\\lambda \\mathbf {P} \\Big (\\sup _ {s \\geqslant 0} X _ {s} \\geqslant \\lambda \\Big) = \\lambda \\mathbf {P} \\Big (\\sup _ {s \\geqslant 0} | - X _ {s} | \\geqslant \\lambda \\Big) \\leqslant \\mathbf {E} (X _ {0}).",
+          "image_source": "images/page_72_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.557,
+            0.816,
+            0.597
+          ],
+          "content": "定理 2.5.10 设  $(X_{t})$  是右连续的  $(\\mathcal{F}_{t})$  鞅或正下鞅, 则对任何  $\\lambda > 0, p \\geqslant 1$  及  $t \\geqslant 0$  有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.329,
+            0.612,
+            0.594,
+            0.644
+          ],
+          "content": "\\lambda^ {p} \\mathbf {P} \\Big (\\sup _ {0 \\leqslant s \\leqslant t} | X _ {s} | \\geqslant \\lambda \\Big) \\leqslant \\mathbf {E} (| X _ {t} | ^ {p});",
+          "image_source": "images/page_72_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.66,
+            0.357,
+            0.676
+          ],
+          "content": "而对任何 $p > 1$ 及 $t \\geqslant 0$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.314,
+            0.69,
+            0.606,
+            0.723
+          ],
+          "content": "\\mathbf {E} \\Big (\\sup _ {0 \\leqslant s \\leqslant t} | X _ {s} | ^ {p} \\Big) \\leqslant \\Big (\\frac {p}{p - 1} \\Big) ^ {p} \\mathbf {E} (| X _ {t} | ^ {p}).",
+          "image_source": "images/page_72_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.739,
+            0.816,
+            0.779
+          ],
+          "content": "另外, 与离散时间的情况和定理 2.5.1 的证明类似地, 可以将鞅序列的收敛定理推广到连续时间的情况. 例如, 我们有:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.784,
+            0.819,
+            0.859
+          ],
+          "content": "定理 2.5.11 设  $(\\mathcal{F}_{t})$  满足通常条件, 而  $(X_{t})$  是右连续下鞅且  $\\sup_{t\\geqslant0}P|X_{t}|<\\infty$ , 则当  $t\\to\\infty$  时有  $X_{t}\\stackrel{a.s.}{\\rightarrow}X$ , 其中 X 是一个可积随机变量. 另外若  $(X_{t})$  是一致可积下鞅, 则  $X_{t}\\stackrel{L^{1}}{\\rightarrow}X$ ; 若  $(X_{t})$  是一致可积鞅, 则还有  $X_{t}=\\mathbf{E}(X|\\mathcal{F}_{t})$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.863,
+            0.819,
+            0.927
+          ],
+          "content": "连续时间下鞅的基本理论主要是法国数学家梅耶 (Paul-André Meyer) 建立的. 梅耶是著名的斯特拉斯堡概率论学派的领导者. 他最著名的工作之一是连续时间下鞅的杜布-梅耶分解定理, 即杜布的离散时间下鞅分解定理的连续时间版本."
+        }
+      ]
+    },
+    {
+      "page_idx": 73,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.733,
+            0.067,
+            0.858,
+            0.081
+          ],
+          "content": "2.5 连续时间下鞅"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.874,
+            0.069,
+            0.893,
+            0.08
+          ],
+          "content": "67"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.215,
+            0.12,
+            0.287,
+            0.138
+          ],
+          "level": 2,
+          "content": "练习题"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.18,
+            0.159,
+            0.857,
+            0.466
+          ],
+          "sub_type": "text",
+          "content": "1. 设 $\\{(M_t, \\mathcal{F}_t): t \\geqslant 0\\}$ 和 $\\{(N_t, \\mathcal{G}_t): t \\geqslant 0\\}$ 是连续时间鞅, 且 $\\mathcal{F}_{\\infty} := \\sigma \\left( \\bigcup_{t \\geqslant 0} \\mathcal{F}_t \\right)$ 和 $\\mathcal{G}_{\\infty} := \\sigma \\left( \\bigcup_{t \\geqslant 0} \\mathcal{G}_t \\right)$ 独立. 令 $\\mathcal{H}_t = \\sigma \\left( \\mathcal{F}_t \\bigcup \\mathcal{G}_t \\right)$. 证明 $\\{(M_t N_t, \\mathcal{H}_t): t \\geqslant 0\\}$ 是鞅.\n2. 设 $(M_t : t \\geqslant 0)$ 为非负连续下鞅. 再设 $\\{T_n\\}$ 为有界单增停时列. 令 $T = \\lim_{n \\to \\infty} T_n$. 证明 $\\mathbf{E}(M_T) = \\lim_{n \\to \\infty} \\mathbf{E}(M_{T_n})$.\n3. 设 $(M_t : t \\geqslant 0)$ 是连续鞅且 $M_0 = 0$. 再设 $a < 0 < b$, 并令 $\\tau = \\inf \\{t \\geqslant 0 : M_t \\notin [a, b]\\}$. 已知 $\\mathbf{P}(\\tau < \\infty) = 1$, 求概率 $\\mathbf{P}(M_\\tau = a)$ 和 $\\mathbf{P}(M_\\tau = b)$ 的值.\n4. 通过对时间集进行可数稠子集逼近, 给出定理 2.5.10 的证明.\n5. 设 $(M_t : t \\geqslant 0)$ 是右连续平方可积鞅, 且对于有界停时 $T$ 有 $\\mathbf{E}(M_T^2) = 0$. 证明 $\\mathbf{P}(M_{t \\wedge T} = 0 : t \\geqslant 0) = 1$.\n6. 设 $(M_t : t \\geqslant 0)$ 是连续局部鞅且 $M_0 = 0$. 证明: 存在局部化序列 $\\{T_k\\}$ 使得每个 $(M_{t \\wedge T_k})$ 是有界连续鞅."
+        }
+      ]
+    },
+    {
+      "page_idx": 74,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.068,
+            0.125,
+            0.08
+          ],
+          "content": "70"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.066,
+            0.318,
+            0.081
+          ],
+          "content": "第三章 更新过程及其应用"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.122,
+            0.821,
+            0.209
+          ],
+          "content": "在应用中经常需要考虑比泊松过程更广的一类计数过程, 它们的跳跃间隔时间由独立同分布随机变量给出, 但这些随机变量未必服从指数分布. 这样的计数过程就是 “更新过程”. 本章讨论更新过程的若干基本性质, 包括更新方程、基本更新定理、大数定律、中心极限定理等, 并介绍该模型对于随机游动和若干实际问题的应用."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.139,
+            0.26,
+            0.308,
+            0.282
+          ],
+          "level": 2,
+          "content": "3.1 更新过程"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.175,
+            0.332,
+            0.36,
+            0.351
+          ],
+          "level": 2,
+          "content": "3.1.1 定义和性质"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.375,
+            0.819,
+            0.44
+          ],
+          "content": "考虑某概率空间 $(\\Omega, \\mathcal{F}, \\mathbf{P})$ 上的独立同分布的非负随机变量序列 $\\{\\xi_n : n \\geqslant 1\\}$. 令 $F$ 为其共同的分布函数. 假定 $F(0) = \\mathbf{P}(\\xi_n = 0) < 1$, 因而 $\\mu := \\mathbf{E}(\\xi_n) > 0$. 这里我们不排除 $\\mu = \\infty$ 的情况. 记 $S_0 = 0$, 并令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.376,
+            0.454,
+            0.818,
+            0.497
+          ],
+          "content": "S _ {n} = \\sum_ {k = 1} ^ {n} \\xi_ {k}, \\quad n \\geqslant 1, \\tag {3.1.1}",
+          "image_source": "images/page_74_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.512,
+            0.489,
+            0.529
+          ],
+          "content": "则 $(S_{n}:n\\geqslant0)$ 是具有非负跳幅的随机游动."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.535,
+            0.585,
+            0.553
+          ],
+          "content": "命题 3.1.1 当  $n \\to \\infty$  时几乎必然地  $S_{n}/n \\to \\mu$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.56,
+            0.819,
+            0.648
+          ],
+          "content": "证明 当 $\\mu < \\infty$ 时, 由强大数定律知命题的结论成立. 下面考虑 $\\mu = \\infty$ 的情况. 对 $n, k \\geqslant 1$ 记 $\\xi_{n}^{(k)} = \\xi_{n} \\wedge k$. 则 $\\{\\xi_{n}^{(k)} : n \\geqslant 1\\}$ 是独立同分布非负随机变量序列, 且当 $k$ 充分大时有 $0 < \\mu^{(k)} := \\mathbf{E}(\\xi_{1}^{(k)}) < \\infty$. 令 $(S_{n}^{(k)} : n \\geqslant 0)$ 为由 $\\{\\xi_{n}^{(k)} : n \\geqslant 1\\}$ 定义的具有非负跳幅的随机游动. 显然有 $\\xi_{n}^{(k)} \\leqslant \\xi_{n}$ 和 $S_{n}^{(k)} \\leqslant S_{n}$. 根据强大数定律, 几乎必然有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.34,
+            0.662,
+            0.581,
+            0.7
+          ],
+          "content": "\\operatorname * {l i m i n f} _ {n \\to \\infty} \\frac {S _ {n}}{n} \\geqslant \\lim _ {n \\to \\infty} \\frac {S _ {n} ^ {(k)}}{n} = \\mu^ {(k)}.",
+          "image_source": "images/page_74_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.71,
+            0.72,
+            0.734
+          ],
+          "content": "因  $\\lim_{k\\to\\infty}\\mu^{(k)}=\\mu=\\infty,$  在上式两端取极限知几乎必然  $\\lim_{n\\to\\infty}S_{n}/n=\\infty.$  ☐"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.736,
+            0.818,
+            0.777
+          ],
+          "content": "在实践中, 人们经常用 (3.1.1) 式定义的序列 $\\{S_n : n \\geqslant 1\\}$ 表示一系列更新发生的时刻. 显然, 对 $t \\geqslant 0$ 在时间区间 $(0, t]$ 更新发生的次数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.291,
+            0.793,
+            0.818,
+            0.835
+          ],
+          "content": "N (t) := \\sum_ {n = 1} ^ {\\infty} 1 _ {\\{S _ {n} \\leqslant t \\}} = \\sup \\{n \\geqslant 0: S _ {n} \\leqslant t \\}. \\tag {3.1.2}",
+          "image_source": "images/page_74_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.849,
+            0.819,
+            0.891
+          ],
+          "content": "根据命题3.1.1几乎必然地 $\\lim_{n\\to \\infty}S_n = \\infty$ ，故对任何 $t\\geqslant 0$ 至多只有有限个 $n$ 使得$S_{n}\\leqslant t,$ 进而 $N(t) <   \\infty$ .由(3.1.2)式不难看出，对于 $n\\geqslant 0$ 和 $t\\geqslant 0$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.381,
+            0.91,
+            0.818,
+            0.929
+          ],
+          "content": "N (t) \\geqslant n \\Leftrightarrow S _ {n} \\leqslant t; \\tag {3.1.3}",
+          "image_source": "images/page_74_equation_15.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 75,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.762,
+            0.068,
+            0.858,
+            0.081
+          ],
+          "content": "3.1 更新过程"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.875,
+            0.069,
+            0.891,
+            0.08
+          ],
+          "content": "71"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.122,
+            0.308,
+            0.138
+          ],
+          "content": "而对于 $t \\geqslant 0$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.419,
+            0.16,
+            0.856,
+            0.178
+          ],
+          "content": "S _ {N (t)} \\leqslant t <   S _ {N (t) + 1}. \\tag {3.1.4}",
+          "image_source": "images/page_75_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.197,
+            0.857,
+            0.237
+          ],
+          "content": "定义 3.1.1 我们称由 (3.1.2) 式定义的零初值不降非负整数值过程  $(N(t): t \\geqslant 0)$  为更新过程, 称  $S_{n}$  为其第 n 次更新时间, 而称每个  $\\xi_{n}$  为其更新间隔时间."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.243,
+            0.857,
+            0.329
+          ],
+          "content": "例 3.1.1 设有一批同类型的电子元件, 其寿命是独立同分布的随机变量. 在某台机器上使用着一个此种元件, 当它损坏时立即用备件进行替换. 设  $\\{\\xi_{n}: n \\geqslant 1\\}$  为依次使用的元件的寿命, 则  $S_{n}$  代表第 n 个备件安装的时刻, 而  $N(t)$  代表到 t 时刻为止更换元件的次数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.336,
+            0.857,
+            0.381
+          ],
+          "content": "下面的命题表明, 由更新过程  $(N(t): t \\geqslant 0)$  描述的更新现象的总更新次数  $N(\\infty) := \\lim_{t \\to \\infty} N(t)$  几乎必然是无穷大."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.22,
+            0.388,
+            0.53,
+            0.405
+          ],
+          "content": "命题 3.1.2 几乎必然有  $N(\\infty)=\\infty$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.415,
+            0.857,
+            0.456
+          ],
+          "content": "证明 若 $N(\\infty)$ 为有限数, 则它必为非负整数, 同时必有 $S_{N(\\infty)} < \\infty$ 且 $S_{N(\\infty)+1} = \\infty$, 而这意味着 $\\xi_{N(\\infty)+1} = \\infty$, 故"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.271,
+            0.474,
+            0.729,
+            0.515
+          ],
+          "content": "\\mathbf {P} (N (\\infty) <   \\infty) \\leqslant \\mathbf {P} \\Big (\\bigcup_ {n = 1} ^ {\\infty} \\{\\xi_ {n} = \\infty \\} \\Big) \\leqslant \\sum_ {n = 1} ^ {\\infty} \\mathbf {P} (\\xi_ {n} = \\infty) = 0.",
+          "image_source": "images/page_75_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.532,
+            0.441,
+            0.549
+          ],
+          "content": "因此几乎必然有 $N(\\infty) = \\infty$ ，□"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.558,
+            0.857,
+            0.599
+          ],
+          "content": "根据假设, 随机变量序列 $\\{\\xi_n\\}$ 有共同的分布函数 $F$. 所以 $S_n$ 的分布就是 $F$ 的 $n$ 重卷积 $F^{*n}$. 再由 (3.1.3) 式有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.329,
+            0.615,
+            0.86,
+            0.694
+          ],
+          "content": "\\begin{array}{l} \\mathbf {P} (N (t) = n) = \\mathbf {P} (N (t) \\geqslant n) - \\mathbf {P} (N (t) \\geqslant n + 1) \\\\ = \\mathbf {P} (S _ {n} \\leqslant t) - \\mathbf {P} (S _ {n + 1} \\leqslant t) \\\\ = F ^ {* n} (t) - F ^ {* (n + 1)} (t). \\tag {3.1.5} \\\\ \\end{array}",
+          "image_source": "images/page_75_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.71,
+            0.857,
+            0.751
+          ],
+          "content": "例3.1.2 设 $\\{\\xi_n\\}$ 服从几何分布 $G(p)$, 其中 $0 \\leqslant p \\leqslant 1$, 即 $\\mathbf{P}(\\xi_n = k) = p(1 - p)^{k-1}$, $k \\geqslant 1$. 此时 $S_n$ 代表伯努利试验中第 $n$ 次成功出现的时间, 它服从帕斯卡分布, 即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.338,
+            0.77,
+            0.662,
+            0.79
+          ],
+          "content": "\\mathbf {P} (S _ {n} = k) = \\mathrm{C} _ {k - 1} ^ {n - 1} p ^ {n} (1 - p) ^ {k - n}, \\quad k \\geqslant n.",
+          "image_source": "images/page_75_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.808,
+            0.857,
+            0.847
+          ],
+          "content": "用 $\\lfloor t\\rfloor$ 表示不超过 $t$ 的最大整数. 则 $\\mathbf{P}(N(t) = n)$ 就是在前 $\\lfloor t\\rfloor$ 次试验中出现 $n$ 次成功的概率, 故有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.307,
+            0.868,
+            0.694,
+            0.889
+          ],
+          "content": "\\mathbf {P} (N (t) = n) = \\mathrm{C} _ {\\lfloor t \\rfloor} ^ {n} p ^ {n} (1 - p) ^ {\\lfloor t \\rfloor - n}, \\quad 0 \\leqslant n \\leqslant \\lfloor t \\rfloor ,",
+          "image_source": "images/page_75_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.906,
+            0.436,
+            0.924
+          ],
+          "content": "即  $N(t)$  服从二项分布  $B(\\lfloor t \\rfloor, p)$ ."
+        }
+      ]
+    },
+    {
+      "page_idx": 76,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.068,
+            0.125,
+            0.079
+          ],
+          "content": "72"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.066,
+            0.318,
+            0.08
+          ],
+          "content": "第三章 更新过程及其应用"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.122,
+            0.816,
+            0.162
+          ],
+          "content": "例 3.1.3 设  $\\{\\xi_{n}\\}$  服从以  $\\lambda > 0$  为参数的指数分布, 即  $F(x) = 1 - \\mathrm{e}^{-\\lambda x}, x > 0$ . 此时  $S_{n}$  的分布  $F^{*n}$  为伽马分布  $\\Gamma(\\lambda, n)$ , 它有分布密度"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.33,
+            0.169,
+            0.591,
+            0.204
+          ],
+          "content": "p _ {n} (x) = \\frac {\\lambda^ {n}}{\\Gamma (n)} x ^ {n - 1} \\mathrm{e} ^ {- \\lambda x}, \\quad x > 0.",
+          "image_source": "images/page_76_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.215,
+            0.183,
+            0.23
+          ],
+          "content": "所以"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.279,
+            0.239,
+            0.675,
+            0.345
+          ],
+          "content": "\\begin{array}{l} 1 - F ^ {* n} (t) = \\frac {\\lambda^ {n}}{\\Gamma (n)} \\int_ {t} ^ {\\infty} y ^ {n - 1} \\mathrm{e} ^ {- \\lambda y} \\mathrm{d} y \\\\ = \\frac {\\lambda^ {n}}{n \\Gamma (n)} \\left[ y ^ {n} \\mathrm{e} ^ {- \\lambda y} \\Big | _ {t} ^ {\\infty} + \\lambda \\int_ {t} ^ {\\infty} y ^ {n} \\mathrm{e} ^ {- \\lambda y} \\mathrm{d} y \\right] \\\\ = - \\frac {(\\lambda t) ^ {n}}{n !} \\mathrm{e} ^ {- \\lambda t} + 1 - F ^ {* (n + 1)} (t). \\\\ \\end{array}",
+          "image_source": "images/page_76_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.354,
+            0.296,
+            0.371
+          ],
+          "content": "再由 (3.1.5) 式可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.322,
+            0.382,
+            0.6,
+            0.415
+          ],
+          "content": "\\mathbf {P} (N (t) = n) = \\frac {(\\lambda t) ^ {n}}{n !} \\mathrm{e} ^ {- \\lambda t}, \\quad n \\geqslant 0.",
+          "image_source": "images/page_76_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.423,
+            0.668,
+            0.44
+          ],
+          "content": "事实上, 由定理 1.4.3 知  $(N(t): t \\geqslant 0)$  就是以  $\\lambda$  为参数的泊松过程."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.175,
+            0.468,
+            0.339,
+            0.486
+          ],
+          "level": 2,
+          "content": "3.1.2 更新方程"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.512,
+            0.816,
+            0.552
+          ],
+          "content": "称 $m(t) := \\mathbf{E}[N(t)]$, $t \\geqslant 0$ 为更新过程 $(N(t): t \\geqslant 0)$ 的更新函数. 由 (3.1.3) 式和非负整数值随机变量的期望的计算公式可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.214,
+            0.562,
+            0.816,
+            0.603
+          ],
+          "content": "m (t) = \\sum_ {n = 1} ^ {\\infty} \\mathbf {P} (N (t) \\geqslant n) = \\sum_ {n = 1} ^ {\\infty} \\mathbf {P} (S _ {n} \\leqslant t) = \\sum_ {n = 1} ^ {\\infty} F ^ {* n} (t), \\quad t \\geqslant 0, \\tag {3.1.6}",
+          "image_source": "images/page_76_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.615,
+            0.382,
+            0.632
+          ],
+          "content": "其中  $F^{*n}$  表示 F 的 n 重卷积."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.178,
+            0.638,
+            0.51,
+            0.656
+          ],
+          "content": "命题 3.1.3 对任何  $t \\geqslant 0$  有  $m(t) < \\infty$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.174,
+            0.663,
+            0.725,
+            0.681
+          ],
+          "content": "证明 显然  $F^{*n}(t)$  关于  $n \\geqslant 1$  单调不增, 且当 n 充分大 ( $n \\geqslant 1$ ) 时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.347,
+            0.693,
+            0.575,
+            0.734
+          ],
+          "content": "F ^ {* n} (t) = \\mathbf {P} \\Big (\\sum_ {k = 1} ^ {n} \\xi_ {k} \\leqslant t \\Big) <   1.",
+          "image_source": "images/page_76_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.746,
+            0.279,
+            0.763
+          ],
+          "content": "再由 (3.1.6) 式得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.199,
+            0.775,
+            0.721,
+            0.817
+          ],
+          "content": "m (t) = \\sum_ {k = 0} ^ {\\infty} \\sum_ {i = 1} ^ {n} F ^ {* k n} * F ^ {* i} (t) \\leqslant \\sum_ {k = 0} ^ {\\infty} \\sum_ {i = 1} ^ {n} F ^ {* k n} (t) \\leqslant n \\Big [ 1 + \\sum_ {k = 1} ^ {\\infty} F ^ {* n} (t) ^ {k} \\Big ].",
+          "image_source": "images/page_76_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.829,
+            0.324,
+            0.845
+          ],
+          "content": "显然上式右端有限. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.854,
+            0.816,
+            0.894
+          ],
+          "content": "由 (3.1.6) 式和命题 3.1.3 知更新函数 $m(t)$ 是 $[0, \\infty)$ 上的非负不降有限函数. 再由 (3.1.6) 式可得如下的通过卷积表达的方程:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.336,
+            0.91,
+            0.816,
+            0.928
+          ],
+          "content": "m (t) = F (t) + m * F (t), \\quad t \\geqslant 0. \\tag {3.1.7}",
+          "image_source": "images/page_76_equation_20.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 77,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.761,
+            0.068,
+            0.858,
+            0.081
+          ],
+          "content": "3.1 更新过程"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.875,
+            0.069,
+            0.893,
+            0.08
+          ],
+          "content": "73"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.122,
+            0.857,
+            0.161
+          ],
+          "content": "定义 3.1.2 设 H 为  $[0, \\infty)$  上的局部有界可测函数, 而 F 为  $[0, \\infty)$  上的概率分布函数. 称如下方程为更新方程"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.181,
+            0.856,
+            0.198
+          ],
+          "content": "K (t) = H (t) + K * F (t), \\quad t \\geqslant 0, \\tag {3.1.8}",
+          "image_source": "images/page_77_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.216,
+            0.462,
+            0.232
+          ],
+          "content": "其中  $K*F$  表示 K 和 F 的卷积, 即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.383,
+            0.246,
+            0.856,
+            0.282
+          ],
+          "content": "K * F (t) = \\int_ {0} ^ {t} K (t - x) \\mathrm{d} F (x). \\tag {3.1.9}",
+          "image_source": "images/page_77_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.297,
+            0.857,
+            0.36
+          ],
+          "content": "这里一般应将等式 (3.1.9) 右边理解为关于 $F$ 决定的概率测度的积分. 利用测度论中的富比尼 (Fubini) 定理, 可以证明该式定义了一个局部有界可测函数 $K * F$. 显然方程 (3.1.8) 是更新函数的方程 (3.1.7) 的推广."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.366,
+            0.856,
+            0.405
+          ],
+          "content": "定理 3.1.4 方程 (3.1.8) 存在唯一的局部有界可测函数解 K, 且该解具有如下的卷积表达形式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.374,
+            0.425,
+            0.856,
+            0.442
+          ],
+          "content": "K (t) = H (t) + H * m (t), \\quad t \\geqslant 0. \\tag {3.1.10}",
+          "image_source": "images/page_77_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.46,
+            0.856,
+            0.5
+          ],
+          "content": "证明 由富比尼定理可知 (3.1.10) 式确实定义了一个局部有界可测函数 $K$. 再根据 (3.1.6) 式和 (3.1.10) 式有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.326,
+            0.516,
+            0.71,
+            0.624
+          ],
+          "content": "\\begin{array}{l} K (t) = H (t) + \\Big (H * \\sum_ {n = 1} ^ {\\infty} F ^ {* n} \\Big) (t) \\\\ = H (t) + H * F (t) + H * \\Big (\\sum_ {n = 2} ^ {\\infty} F ^ {* (n - 1)} * F \\Big) (t) \\\\ = H (t) + (H + H * m) * F (t). \\\\ \\end{array}",
+          "image_source": "images/page_77_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.641,
+            0.856,
+            0.68
+          ],
+          "content": "所以 $K$ 满足方程 (3.1.8), 即该方程有解. 反之, 设 $K$ 为方程 (3.1.8) 的局部有界可测函数解. 反复应用该方程可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.341,
+            0.699,
+            0.857,
+            0.79
+          ],
+          "content": "\\begin{array}{l} K (t) = H (t) + (H + K * F) * F (t) \\\\ = H (t) + H * F (t) + K * F ^ {* 2} (t) = \\dots \\\\ = H (t) + H * \\Big (\\sum_ {k = 1} ^ {n - 1} F ^ {* k} \\Big) (t) + K * F ^ {* n} (t). \\tag {3.1.11} \\\\ \\end{array}",
+          "image_source": "images/page_77_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.804,
+            0.482,
+            0.82
+          ],
+          "content": "对上式右边的最后一项可做如下估计:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.275,
+            0.834,
+            0.725,
+            0.871
+          ],
+          "content": "| K * F ^ {* n} (t) | \\leqslant \\int_ {0} ^ {t} | K (t - x) | \\mathrm{d} F ^ {* n} (x) \\leqslant \\sup _ {0 \\leqslant s \\leqslant t} | K (s) | F ^ {* n} (t).",
+          "image_source": "images/page_77_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.886,
+            0.856,
+            0.927
+          ],
+          "content": "由 (3.1.6) 式和命题 3.1.3 知, 当 $n \\to \\infty$ 时有 $F^{*n}(t) \\to 0$, 从而 $K * F^{*n}(t) \\to 0$. 在 (3.1.11) 式两端令 $n \\to \\infty$ 即得 (3.1.10)式. 这就证明了该方程的解的唯一性. $\\square$"
+        }
+      ]
+    },
+    {
+      "page_idx": 78,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.068,
+            0.125,
+            0.079
+          ],
+          "content": "74"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.066,
+            0.318,
+            0.08
+          ],
+          "content": "第三章 更新过程及其应用"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.123,
+            0.454,
+            0.141
+          ],
+          "content": "定理3.1.5 对任何 $0 \\leqslant s \\leqslant t$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.261,
+            0.153,
+            0.66,
+            0.188
+          ],
+          "content": "\\mathbf {P} (S _ {N (t)} \\leqslant s) = 1 - F (t) + \\int_ {0} ^ {s} [ 1 - F (t - x) ] \\mathrm{d} m (x).",
+          "image_source": "images/page_78_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.175,
+            0.197,
+            0.414,
+            0.214
+          ],
+          "content": "证明 对任何 $0 \\leqslant s \\leqslant t$ 可写"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.231,
+            0.224,
+            0.725,
+            0.353
+          ],
+          "content": "\\begin{array}{l} \\mathbf {P} (S _ {N (t)} \\leqslant s) = \\mathbf {P} (N (t) = 0) + \\sum_ {n = 1} ^ {\\infty} \\mathbf {P} (S _ {N (t)} \\leqslant s, N (t) = n) \\\\ = \\mathbf {P} (\\xi_ {1} > t) + \\sum_ {n = 1} ^ {\\infty} \\mathbf {P} (S _ {n} \\leqslant s, \\xi_ {n + 1} > t - S _ {n}) \\\\ = 1 - F (t) + \\sum_ {n = 1} ^ {\\infty} \\mathbf {E} \\big [ 1 _ {\\{S _ {n} \\leqslant s \\}} \\mathbf {P} (\\xi_ {n + 1} > t - S _ {n} | S _ {n}) \\big ]. \\\\ \\end{array}",
+          "image_source": "images/page_78_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.363,
+            0.607,
+            0.38
+          ],
+          "content": "因随机变量序列  $\\{\\xi_{n}\\}$  独立同分布, 利用 (3.1.6) 式可以推得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.219,
+            0.392,
+            0.737,
+            0.513
+          ],
+          "content": "\\begin{array}{l} \\mathbf {P} (S _ {N (t)} \\leqslant s) = 1 - F (t) + \\sum_ {n = 1} ^ {\\infty} \\int_ {0} ^ {s} \\mathbf {P} (\\xi_ {n + 1} > t - x | S _ {n} = x) \\mathrm{d} F ^ {* n} (x) \\\\ = 1 - F (t) + \\sum_ {n = 1} ^ {\\infty} \\int_ {0} ^ {s} [ 1 - F (t - x) ] \\mathrm{d} F ^ {* n} (x) \\\\ = 1 - F (t) + \\int_ {0} ^ {s} [ 1 - F (t - x) ] \\mathrm{d} m (x), \\\\ \\end{array}",
+          "image_source": "images/page_78_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.522,
+            0.816,
+            0.562
+          ],
+          "content": "即欲证等式成立. (因为可能有 $\\mathbf{P}(S_n = x) = 0$, 所以上式中第一个等号的严格论证需要更多工作, 这里从略.) $\\square$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.57,
+            0.816,
+            0.611
+          ],
+          "content": "由 (3.1.4) 式可知 $W(t) := S_{N(t)+1} - t$ 为严格正的随机变量, 它给出 $t$ 时刻的待更新时间. 令 $(\\mathscr{F}_n)$ 为 $(S_n : n \\geqslant 0)$ 的自然流, 由 (3.1.3) 式有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.209,
+            0.625,
+            0.816,
+            0.643
+          ],
+          "content": "\\{N (t) + 1 = n \\} = \\{n - 1 \\leqslant N (t) <   n \\} = \\{S _ {n - 1} \\leqslant t <   S _ {n} \\} \\in \\mathscr {F} _ {n}, \\tag {3.1.12}",
+          "image_source": "images/page_78_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.655,
+            0.557,
+            0.673
+          ],
+          "content": "故 $N(t) + 1$ 是 $(\\mathcal{F}_n)$ 的停时. 应用沃尔德恒等式易得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.355,
+            0.687,
+            0.564,
+            0.706
+          ],
+          "content": "\\mathbf {E} [ W (t) ] = \\mu [ m (t) + 1 ] - t.",
+          "image_source": "images/page_78_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.718,
+            0.432,
+            0.735
+          ],
+          "content": "所以  $m(t)$  和  $\\mathbf{E}[W(t)]$  相互唯一决定."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.741,
+            0.439,
+            0.758
+          ],
+          "content": "定理 3.1.6 对任何  $t, x \\geqslant 0$  有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.231,
+            0.771,
+            0.69,
+            0.807
+          ],
+          "content": "\\mathbf {P} (W (t) > x) = 1 - F (t + x) + \\int_ {0} ^ {t} [ 1 - F (t + x - y) ] \\mathrm{d} m (y).",
+          "image_source": "images/page_78_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.175,
+            0.816,
+            0.476,
+            0.834
+          ],
+          "content": "证明 记 $K_{x}(t) = \\mathbf{P}(W(t) > x)$, 则有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.259,
+            0.846,
+            0.66,
+            0.929
+          ],
+          "content": "\\mathbf {P} (W (t) > x | \\xi_ {1} = y) = \\left\\{ \\begin{array}{l l} 1, & y > t + x, \\\\ 0, & t <   y \\leqslant t + x, \\\\ K _ {x} (t - y), & 0 <   y \\leqslant t. \\end{array} \\right.",
+          "image_source": "images/page_78_equation_17.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 79,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.761,
+            0.067,
+            0.858,
+            0.081
+          ],
+          "content": "3.1 更新过程"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.875,
+            0.069,
+            0.892,
+            0.08
+          ],
+          "content": "75"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.122,
+            0.221,
+            0.137
+          ],
+          "content": "所以"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.346,
+            0.149,
+            0.69,
+            0.222
+          ],
+          "content": "\\begin{array}{l} K _ {x} (t) = \\int_ {0} ^ {\\infty} \\mathbf {P} (W (t) > x | \\xi_ {1} = y) \\mathrm{d} F (y) \\\\ = 1 - F (t + x) + \\int_ {0} ^ {t} K _ {x} (t - y) \\mathrm{d} F (y). \\\\ \\end{array}",
+          "image_source": "images/page_79_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.235,
+            0.63,
+            0.252
+          ],
+          "content": "上式为 (3.1.8) 式的特例. 由定理 3.1.4 即得欲证等式. $\\square$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.261,
+            0.857,
+            0.3
+          ],
+          "content": "例3.1.4 设更新间隔时间服从均匀分布 $U(0,1)$, 即 $F(t) = t$, $0 \\leqslant t \\leqslant 1$. 由定理3.1.4有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.298,
+            0.313,
+            0.704,
+            0.35
+          ],
+          "content": "m (t) = F (t) + \\int_ {0} ^ {t} m (t - x) \\mathrm{d} F (x) = t + \\int_ {0} ^ {t} m (x) \\mathrm{d} x.",
+          "image_source": "images/page_79_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.364,
+            0.732,
+            0.382
+          ],
+          "content": "求导得  $m'(t)=1+m(t)$ . 又因  $m(0)=0$ , 解微分方程得  $m(t)=\\mathrm{e}^{t}-1$ ."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.215,
+            0.408,
+            0.287,
+            0.427
+          ],
+          "level": 2,
+          "content": "练习题"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.215,
+            0.452,
+            0.763,
+            0.471
+          ],
+          "content": "1. 设  $(N(t): t \\geqslant 0)$  为 (3.1.2) 式定义的更新过程, 求  $g(t) := \\mathbf{E}[N(t)^{2}]$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.215,
+            0.475,
+            0.51,
+            0.492
+          ],
+          "content": "提示: 令  $S_{1}$  是第一次更新的时间, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.299,
+            0.506,
+            0.701,
+            0.542
+          ],
+          "content": "g (t) = \\mathbf {E} \\{\\mathbf {E} [ N (t) ^ {2} | S _ {1} ] \\} = \\int_ {0} ^ {t} \\mathbf {E} [ N (t) ^ {2} | S _ {1} = x ] \\mathrm{d} F (x).",
+          "image_source": "images/page_79_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.556,
+            0.221,
+            0.572
+          ],
+          "content": "证明"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.286,
+            0.586,
+            0.715,
+            0.622
+          ],
+          "content": "g (t) = F (t) + 2 \\int_ {0} ^ {t} m (t - x) \\mathrm{d} F (x) + \\int_ {0} ^ {t} g (t - x) \\mathrm{d} F (x).",
+          "image_source": "images/page_79_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.636,
+            0.454,
+            0.653
+          ],
+          "content": "由 (3.1.7) 式知 $g$ 是如下方程的解:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.34,
+            0.668,
+            0.66,
+            0.704
+          ],
+          "content": "g (t) = 2 m (t) - F (t) + \\int_ {0} ^ {t} g (t - x) \\mathrm{d} F (x),",
+          "image_source": "images/page_79_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.718,
+            0.322,
+            0.734
+          ],
+          "content": "根据定理 3.1.4 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.351,
+            0.754,
+            0.649,
+            0.772
+          ],
+          "content": "g (t) = 2 m (t) - F (t) + [ 2 m - F ] * m (t).",
+          "image_source": "images/page_79_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.789,
+            0.526,
+            0.806
+          ],
+          "content": "再应用 (3.1.7) 式得  $g(t)=m(t)+2m*m(t)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.811,
+            0.857,
+            0.852
+          ],
+          "content": "2. 在例 3.1.1 中, 设 $L(t) = S_{N(t)+1} - S_{N(t)}$, 则 $L(t)$ 代表时刻 $t$ 在用元件的总寿命. 证明 $\\mathbf{P}(L(t) > x) \\geqslant \\mathbf{P}(\\xi_1 > x)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.215,
+            0.857,
+            0.547,
+            0.874
+          ],
+          "content": "提示: 当  $t \\leqslant x$  时结论显然. 当 t > x 时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.201,
+            0.888,
+            0.617,
+            0.929
+          ],
+          "content": "\\mathbf {P} (L (t) > x) = \\sum_ {k = 0} ^ {\\infty} \\mathbf {P} (\\xi_ {k + 1} > x, S _ {k} \\leqslant t, \\xi_ {k + 1} > t - S _ {k})",
+          "image_source": "images/page_79_equation_21.jpg"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "modified_at": "2026-08-04T18:30:12+08:00",
+      "page_count": 246,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 64,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 65,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 66,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 67,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 68,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 69,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 70,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 71,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 72,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 73,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 74,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 75,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 76,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 77,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 78,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        },
+        {
+          "page_idx": 79,
+          "width_pt": 884.5709838867188,
+          "height_pt": 1179.4300537109375
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}
