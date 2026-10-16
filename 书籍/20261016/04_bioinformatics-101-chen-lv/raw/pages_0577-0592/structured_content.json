@@ -1,0 +1,2199 @@
+{
+  "pages": [
+    {
+      "page_idx": 576,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.0,
+            0.052,
+            0.024,
+            0.063
+          ],
+          "content": "562"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.197,
+            0.05,
+            0.333,
+            0.063
+          ],
+          "content": "13 生物信息学实验基础"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.228,
+            0.095,
+            0.351,
+            0.112
+          ],
+          "level": 2,
+          "content": "(2) 代码缩进"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.116,
+            0.875,
+            0.265
+          ],
+          "content": "在 Python 编程中，代码缩进是一个非常重要的概念。Python 使用缩进来表示代码块，而不是像其他编程语言那样使用花括号 {} 或关键字 begin 和 end。正确的缩进不仅使代码更具可读性，而且是 Python 语法的强制要求。Python 强制要求在同一级别的代码块中使用一致的缩进，而控制结构（如 if 语句、循环、函数和类定义）要求后续的代码块进行缩进。尽量避免在同一个项目中混合使用空格和制表符进行缩进。最好选择一种方式并保持一致。PEP 8（Python 增强提案）推荐使用 4 个空格进行缩进，而不是制表符。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.227,
+            0.269,
+            0.37,
+            0.286
+          ],
+          "level": 2,
+          "content": "(3) 对象与变量"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.289,
+            0.874,
+            0.417
+          ],
+          "content": "在Python中，一切都是对象。对象包含数据（称为属性或成员变量）和可以操作这些数据的方法（称为成员函数或方法），每个对象都属于某个类（类型）。变量是指向对象的名称，用于存储和操作数据。变量通过赋值操作符 $=$ 进行定义和赋值。Python中的对象可以分为可变对象和不可变对象。可变对象是可以在原地修改的对象，如列表、字典、集合等。不可变对象是指不可以在原地修改的对象，如字符串、整数、元组等。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.226,
+            0.421,
+            0.386,
+            0.437
+          ],
+          "level": 2,
+          "content": "(4) 常用数据结构"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.441,
+            0.873,
+            0.482
+          ],
+          "content": "与 R 类似，Python 的常用数据结构包括:数字（number）、字符串（string）、列表（list）、元组（tuple）、字典（dictionary）和集合（set）等 6 种（表 13-8）。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.194,
+            0.515,
+            0.873,
+            0.897
+          ],
+          "content": "<table><tr><td>数据结构</td><td>特点</td><td>操作示例</td></tr><tr><td rowspan=\"4\">数字</td><td rowspan=\"4\">有序且不可变,用于存储数值,包括整数类型(int)、浮点数类型(float)、布尔类型(bool)、复数类型(complex)</td><td># 整数 (int)my_int = 42print(type(my_int)) # 输出:</td></tr><tr><td># 浮点数 (float)my_float = 3.14print(type(my_float)) # 输出:</td></tr><tr><td># 复数 (complex)my_complex = 1 + 2jprint(type(my_complex)) # 输出:</td></tr><tr><td># 数学操作sum = my_int + my_floatproduct = my_int * my_complexprint(sum) # 输出: 45.14print(product) # 输出: (42+84j)</td></tr><tr><td>字符串</td><td>有序且不可变,用于存储字符,可以使用单引号(&#x27;)、双引号(&#x27;&#x27;)和三引号(&#x27;&#x27;)指定,使用“+”号连接两个字符串</td><td># 创建字符串my_str = &quot;Hello, World!&quot;# 访问字符串元素print(my_str[0]) # 输出: Hprint(my_str[-1]) # 输出: !# 字符串切片print(my_str[7:12]) # 输出: World</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.416,
+                0.496,
+                0.646,
+                0.512
+              ],
+              "content": "表 13-8 Python 常用数据结构"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_576_table_9.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 577,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.594,
+            0.048,
+            0.8,
+            0.061
+          ],
+          "content": "13.2 Linux系统及常用编程语言简介"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.976,
+            0.049,
+            0.999,
+            0.059
+          ],
+          "content": "563"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.105,
+            0.111,
+            0.8,
+            0.91
+          ],
+          "continues_prev": true,
+          "content": "<table><tr><td>数据结构</td><td>特点</td><td>操作示例</td></tr><tr><td rowspan=\"3\"></td><td rowspan=\"3\"></td><td># 字符串连接new_str = my_str + &quot;How are you?&quot;print(new_str) # 输出: Hello, World! How are you?</td></tr><tr><td># 字符串分割words = my_str.split(&quot;, &quot;)print(words) # 输出: [&#x27;Hello&#x27;, &#x27;World!&#x27;]</td></tr><tr><td># 字符串格式化name = &quot;Alice&quot;age = 25info = f&quot;My name is {name} and I am {age} years old.&quot;print(info) # 输出: My name is Alice and I am 25 years old.</td></tr><tr><td rowspan=\"6\">列表</td><td rowspan=\"6\">有序且可变,用于存储任意类型的对象,使用“[]”标识</td><td># 创建列表my_list = [1, 2, 3, 4, 5]</td></tr><tr><td># 访问列表元素print(my_list[0]) # 输出: 1print(my_list[-1]) # 输出: 5</td></tr><tr><td># 修改列表元素my_list[0] = 10print(my_list) # 输出: [10, 2, 3, 4, 5]</td></tr><tr><td># 添加元素my_list.append(6)print(my_list) # 输出: [10, 2, 3, 4, 5, 6]</td></tr><tr><td># 删除元素my_list.remove(3)print(my_list) # 输出: [10, 2, 4, 5, 6]</td></tr><tr><td># 列表切片print(my_list[1:4]) # 输出: [2, 4, 5]</td></tr><tr><td rowspan=\"3\">元组</td><td rowspan=\"3\">有序且不可变,用于存储任意类型的对象,使用“()”标识</td><td># 创建元组my_tuple = (1, 2, 3, 4, 5)</td></tr><tr><td># 访问元组元素print(my_tuple[0]) # 输出: 1print(my_tuple[-1]) # 输出: 5</td></tr><tr><td># 元组切片print(my_tuple[1:4]) # 输出: (2, 3, 4)</td></tr><tr><td rowspan=\"3\">字典</td><td rowspan=\"3\">无序且可变,用于存储键值对,其中键值都是Python对象,使用“{}”标识</td><td># 创建字典my_dict = {&quot;name&quot;:&quot;Alice&quot;, &quot;age&quot;:25, &quot;city&quot;:&quot;New York&quot;}</td></tr><tr><td># 访问字典元素print(my_dict[&quot;name&quot;]) # 输出: Alice</td></tr><tr><td># 修改字典元素my_dict[&quot;age&quot;] = 25print(my_dict) # 输出: {&#x27;name&#x27;:&#x27;Alice&#x27;, &#x27;age&#x27;:25, &#x27;city&#x27;:&#x27;New York&#x27;}</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.733,
+                0.094,
+                0.77,
+                0.108
+              ],
+              "content": "续表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_577_table_3.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 578,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.0,
+            0.044,
+            0.024,
+            0.054
+          ],
+          "content": "564"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.192,
+            0.041,
+            0.331,
+            0.053
+          ],
+          "content": "13 生物信息学实验基础"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.189,
+            0.104,
+            0.88,
+            0.628
+          ],
+          "continues_prev": true,
+          "content": "| 数据结构 | 特点 | 操作示例 |\n| --- | --- | --- |\n| 集合 | 无序且可变,用于存储不重复的元素,可以看作只有键没有值的字典,使用“{}”或者set()函数创建集合 | # 添加字典元素my_dict[\"email\"] = \"alice@example.com\"print(my_dict) # 输出: {'name':'Alice', 'age':25,'city':'New York', 'email':'alice@example.com'}# 删除字典元素del my_dict[\"city\"]print(my_dict) # 输出: {'name':'Alice', 'age':25,'email':'alice@example.com'}# 遍历字典for key, value in my_dict.items():print(f\"{key}:{value}\")# 创建集合my_set = {1, 2, 3, 4, 5}# 添加元素my_set.add(6)print(my_set) # 输出: {1, 2, 3, 4, 5, 6}# 删除元素my_set.remove(3)print(my_set) # 输出: {1, 2, 4, 5, 6}# 集合操作set1 = {1, 2, 3}set2 = {3, 4, 5}# 交集print(set1 &amp; set2) # 输出: {3}# 并集print(set1 \\| set2) # 输出: {1, 2, 3, 4, 5}# 差集print(set1 - set2) # 输出: {1, 2} |",
+          "captions": [
+            {
+              "bbox": [
+                0.815,
+                0.085,
+                0.851,
+                0.099
+              ],
+              "content": "续表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_578_table_3.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.224,
+            0.655,
+            0.421,
+            0.672
+          ],
+          "level": 2,
+          "content": "(5) Python 控制语句"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.676,
+            0.884,
+            0.76
+          ],
+          "content": "和其他语言类似，Python 控制语句用于控制程序的执行流程，包括条件判断、循环以及跳转等。其中在条件判断语句中，if、elif、else 用于基于条件选择执行路径；在循环语句中，for 和 while 用于重复执行代码块，break 和 continue 用于控制循环流程。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.224,
+            0.765,
+            0.406,
+            0.782
+          ],
+          "level": 2,
+          "content": "(6) 函数定义与调用"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.786,
+            0.884,
+            0.825
+          ],
+          "content": "def 关键字用于定义函数，函数是一组可以重复使用的代码块。return 语句用于返回函数的结果。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.225,
+            0.831,
+            0.351,
+            0.848
+          ],
+          "level": 2,
+          "content": "(7) 异常处理"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.225,
+            0.852,
+            0.884,
+            0.87
+          ],
+          "content": "try、except 和 finally 语句用于捕获和处理可能发生的异常，确保程序的健壮性。"
+        }
+      ]
+    },
+    {
+      "page_idx": 579,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.544,
+            0.049,
+            0.751,
+            0.062
+          ],
+          "content": "13.2 Linux系统及常用编程语言简介"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.926,
+            0.051,
+            0.95,
+            0.062
+          ],
+          "content": "565"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.094,
+            0.093,
+            0.313,
+            0.111
+          ],
+          "level": 2,
+          "content": "13.2.4.4 Python 数据操作"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.054,
+            0.116,
+            0.758,
+            0.287
+          ],
+          "content": "Python 提供了丰富的运算符和操作符来执行各种常见的数据分析，包括算术运算（用于执行基本的数学运算）、比较运算（用于比较两个值，结果为布尔值 True 或 False）、逻辑运算（用于组合布尔表达式或反转布尔值）、位运算（用于对整数的二进制位进行操作）、成员运算（用于检查某个值是否在序列中存在）、身份运算（用于比较两个对象是否是同一个对象）。此外，Python 还提供了标准函数库（包）用于特定功能的数据运算，常见的包括 math 库、random 库、statistics 库。此外，还有诸如 NumPy 包、SciPy 包、Pandas 包等第三方库用于执行特定功能的数据操作和探索分析（表 13-9）。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.058,
+            0.327,
+            0.755,
+            0.904
+          ],
+          "content": "| 库/包 | 主要功能 | 示例代码 |\n| --- | --- | --- |\n| math | 提供数学函数,如三角函数、对数函数、幂函数等 | import mathprint(math.sqrt(16)) # 输出: 4.0print(math.factorial(5)) # 输出: 120print(math.pi) # 输出: 3.141592653589793 |\n| random | 提供随机数生成、随机选择、打乱序列等功能 | import randomprint(random.randint(1,10)) # 输出: 1 ~ 10 随机整数print(random.choice('apple', 'banana', 'cherry'))# 输出: 从列表中随机选择一个元素 |\n| statistics | 提供统计计算功能,如均值、中位数、方差等 | import statisticsdata = [1, 2, 3, 4, 5]print(statistics.mean(data)) # 输出: 3print(statistics.median(data)) # 输出: 3print(statistics.stdev(data))# 输出: 1.5811388300841898 |\n| NumPy | 支持大型、多维数组和矩阵的数学运算 | import numpy as nparray = np.array([1, 2, 3, 4, 5])print(np.mean(array)) # 输出: 3.0print(np.sqrt(array)) # 输出: [1. 1.414213561.73205081 2. 2.23606798] |\n| SciPy | 提供科学计算功能,如优化、插值、积分等 | from scipy import optimizedef f(x):return x**2 + 5*x + 6 |\n|  |  | result = optimize.minimize(f, 0)print(result.x) # 输出: 优化后的最小值位置 |\n| Pandas | 高效的数据处理和分析,适合处理结构化数据(数据框) | import pandas as pddata = {'Name':['Alice', 'Bob', 'Charlie'], 'Age':[25, 30, 35]}df = pd.DataFrame(data)print(df) |\n| statsmodels | 提供统计模型和计量经济学工具 | import statsmodels.api as smimport numpy as npimport pandas as pd# 创建示例数据np.random.seed(0)X = np.random.rand(100) * 10y = 2.5 * X + np.random.randn(100) * 2 |",
+          "captions": [
+            {
+              "bbox": [
+                0.26,
+                0.309,
+                0.546,
+                0.325
+              ],
+              "content": "表 13-9 Python 常用数据操作函数库"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_579_table_5.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 580,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.0,
+            0.052,
+            0.022,
+            0.062
+          ],
+          "content": "566"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.193,
+            0.051,
+            0.331,
+            0.063
+          ],
+          "content": "13 生物信息学实验基础"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.191,
+            0.115,
+            0.88,
+            0.876
+          ],
+          "continues_prev": true,
+          "content": "| 库/包 | 主要功能 | 示例代码 |\n| --- | --- | --- |\n|  |  | # 将数据转换为 DataFrame data = pd.DataFrame({'X':X, 'y':y}) # 添加常数列用于回归模型的截距 X_with_const = sm.add_constant(data['X']) # 创建和拟合线性回归模型 model = sm.OLS(data['y'], X_with_const) results = model.fit() # 输出回归结果摘要 print(results.summary()) |\n| scikit-learn | 机器学习库,提供分类、回归、聚类等算法 | from sklearn.datasets import load_iris from sklearn.model_selection import train_test_split from sklearn.svm import SVC from sklearn.metrics import accuracy_score # 加载数据集 iris = load_iris() X, y = iris.data, iris.target # 划分数据集 X_train, X_test, y_train, y_test = train_test_split (X, y, test_size=0.3, random_state=42) # 训练模型 model = SVC() model.fit(X_train, y_train) # 预测和评估 y_pred = model.predict(X_test) accuracy = accuracy_score(y_test, y_pred) print(f\"Accuracy: {accuracy}\") |\n| TensorFlow | 深度学习框架,支持大规模机器学习和神经网络 | import tensorflow as tf # 创建一个简单的模型 model = tf.keras.Sequential([tf.keras.layers.Dense(10, activation='relu', input_shape=(4,)), tf.keras.layers.Dense(3, activation='softmax')]) # 编译模型 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy']) print(\"Model summary:\") model.summary() |\n| Keras | 高级深度学习 API,基于 TensorFlow,简化模型构建 | from keras.models import Sequential from keras.layers import Dense # 创建一个简单的模型 model = Sequential([Dense(10, activation='relu', input_shape=(4,)), Dense(3, activation='softmax')) # 编译模型 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy']) print(\"Model summary:\") model.summary() |",
+          "captions": [
+            {
+              "bbox": [
+                0.816,
+                0.097,
+                0.852,
+                0.111
+              ],
+              "content": "续表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_580_table_3.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 581,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.592,
+            0.044,
+            0.8,
+            0.057
+          ],
+          "content": "13.2 Linux系统及常用编程语言简介"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.976,
+            0.044,
+            0.999,
+            0.055
+          ],
+          "content": "567"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.104,
+            0.108,
+            0.803,
+            0.504
+          ],
+          "continues_prev": true,
+          "content": "<table><tr><td>库/包</td><td>主要功能</td><td>示例代码</td></tr><tr><td rowspan=\"2\">PyTorch</td><td rowspan=\"2\">深度学习框架,支持动态图和张量计算</td><td>import torchimport torch.nn as nnimport torch.optim as optim# 创建一个简单的模型class SimpleNN(nn.Module):def __init__(self):super(SimpleNN,self).__init__()self.fc1 = nn.Linear(4, 10)self.fc2 = nn.Linear(10, 3)def forward(self, x):x = torch.relu(self.fc1(x))x = self.fc2(x)return x</td></tr><tr><td>model = SimpleNN()# 打印模型结构print(model)</td></tr><tr><td>BeautifulSoup</td><td>用于从网页抓取数据的库,支持HTML 和 XML解析</td><td>from bs4 import BeautifulSoupimport requests# 获取网页内容response = requests.get(&#x27;https://ngdc.cncb.ac.cn&#x27;)soup = BeautifulSoup(response.content,&#x27;html.parser&#x27;)# 提取网页标题title = soup.title.stringprint(f&quot;Webpage title: {title}&quot;)</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.733,
+                0.09,
+                0.77,
+                0.104
+              ],
+              "content": "续表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_581_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.523,
+            0.804,
+            0.652
+          ],
+          "content": "这里重点介绍一下 NumPy（Numerical Python），它是一个开源 Python 库，几乎应用于科学和工程的所有领域。它是在 Python 中处理数值数据的通用标准，也是科学 Python 和 PyData 生态系统的核心。从初学者到经验丰富的研究人员都在利用 NumPy 从事最先进的科学和工业研发工作。NumPy API 广泛用于 Pandas、SciPy、Matplotlib、scikit-learn、scikit-image 以及其他大多数数据科学和科学 Python 软件包。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.657,
+            0.804,
+            0.765
+          ],
+          "content": "NumPy 库包含多维数组和矩阵数据结构。NumPy 提供了 ndarray（一个同构的 $n$ 维数组对象），并提供了对其进行高效操作的方法。NumPy 可用于对数组执行各种数学运算。它为 Python 增加了功能强大的数据结构，保证了数组和矩阵的高效计算，并提供了一个庞大的高级数学函数库，从而可以对这些数组和矩阵进行操作（图 13-4）。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.14,
+            0.77,
+            0.339,
+            0.787
+          ],
+          "level": 2,
+          "content": "13.2.4.5 Python 可视化"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.792,
+            0.805,
+            0.92
+          ],
+          "content": "Python 常用的可视化库包括 Matplotlib、Seaborn 和 Plotly 等。其中，Matplotlib 是一个强大的 2D 绘图库，可以创建各种类型的图表。Seaborn 是基于 Matplotlib 的高级可视化库，提供了更丰富的统计图表和更美观的默认样式，可以通过极简的代码，做出具有分析价值而又十分美观的图形。Seaborn 可以实现 Python 环境下的绝大部分探索性分析的任务，而且对 Python 的其他库（如 Numpy、Pandas 和 SciPy）有很好的支持。Plotly 提供了交互式图表，适用于网页应用和交互式数据分析（表 13-10）。"
+        }
+      ]
+    },
+    {
+      "page_idx": 582,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.056,
+            0.05,
+            0.079,
+            0.059
+          ],
+          "content": "568"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.249,
+            0.045,
+            0.385,
+            0.057
+          ],
+          "content": "13 生物信息学实验基础"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.054,
+            0.089,
+            0.952,
+            0.407
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  subgraph Data_Structure [\"数据结构\"]\n  A[\"x=\"] --> B[\"data type: 8-byte integer\\nshape (4, 3)\\nstrides (24, 8)\"]\n  B --> C[\"0 1 2 3 4 5 6 7 8 9 10 11\"]\n  C --> D[\"8 bytes per element\"]\n  D --> E[\"3x8=24 bytes to jump one row down\"]\n  end\n\n  subgraph Quantization_Olning [\"向量化运算\"]\n  F[\"0 1\\n3 4\\n6 7\\n9 10\"] --> G[\"1 1\\n1 1\\n1 1\\n1 1\"]\n  G --> H[\"1 2\\n4 5\\n7 8\\n10 11\"]\n  end\n\n  subgraph Broadcast_Mechanism [\"广播机制\"]\n  I[\"0\\n3\\n6\\n9\"] --> J{\"x\"}\n  J --> K[\"0\\n3\\n6\\n9\"]\n  K --> L[\"1 2\\n3 6\\n6 12\\n9 18\"]\n  end\n\n  subgraph Archiving_Management [\"归约制作\"]\n  M[\"0 1 2\\n3 4 5\\n6 7 8\\n9 10 11\"] --> N{\"sum axis 1\\n21\\n30\"}\n  N --> O[\"3\\n12\\n21\\n30\"]\n  O --> P[\"sum axis 0\\naxis(0,1)\\n66\"]\n  P --> Q[\"66\"]\n  end\n\n  subgraph Output_Out_of_Limit [\"实例说明\"]\n    R[\"&quot;In [1\"]: import numpy as np\"]\n    S[\"&quot;In [2\"]: x=np.arange(12)\"]\n    T[\"&quot;In [3\"]: x=x.reshape(4, 3)\"]\n    U[\"&quot;In [4\"]: x\\nOut[\"4\"]: array([[0, 1, 2],[3, 4, 5],[6, 7, 8],[9, 10, 11]])\"]\n    V[\"&quot;In [5\"]: np.mean(x, axis=0)\\nOut[\"5\"]: array([4.5, 5.5, 6.5])\"]\n    W[\"&quot;In [6\"]: x=x-np.mean(x, axis=0)\"]\n    X[\"&quot;In [7\"]: x\\nOut[\"7\"]: array([[-4.5, -4.5, -4.5],[-1.5, -1.5, -1.5],[1.5, 1.5, 1.5],[4.5, 4.5, 4.5]])\"]\n  end\n\n  %% Connections between steps\n  A -.-> B\n  B -.-> C\n  C -.-> D\n  D -.-> E\n  E -.-> F\n  F -.-> G\n  G -.-> H\n  H -.-> I\n  I -.-> J\n  J -.-> K\n  K -.-> L\n  L -.-> M\n  M -.-> N\n  N -.-> O\n  O -.-> P\n  P -.-> Q\n  Q -.-> R\n  R -.-> S\n  S -.-> T\n  T -.-> U\n  U -.-> V\n  V -.-> W\n  W -.-> X\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.046,
+                0.409,
+                0.245,
+                0.425
+              ],
+              "content": "图13-4 NumPy库的功能"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_582_image_2.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.248,
+            0.477,
+            0.952,
+            0.814
+          ],
+          "content": "| 库/包 | Matplotlib | Seaborn | Plotly |\n| --- | --- | --- | --- |\n| 示例代码 | import matplotlib.pyplot as pltimport numpy as np# 创建示例数据x = np.linspace(0, 10, 100)y = np.sin(x)# 创建图形和轴plt.figure(figsize=(10, 6))# 绘制线图plt.plot(x, y, label='Sine Wave', color='b',linestyle='-', marker='o')# 添加标题和标签plt.title('Sine Wave Example')plt.xlabel('x-axis')plt.ylabel('y-axis')# 添加图例plt.legend()# 显示图形plt.grid(True)plt.show() | import seaborn as sns import pandas as pd# 创建示例数据data = pd.DataFrame({'x':np.arange(10),'y':np.random.rand(10)*100,'category':['A', 'B']*5})# 创建散点图sns.scatterplot(data=data, x='x', y='y',hue='category',style='category')# 添加标题plt.title('Seaborn Scatter Plot')# 显示图形plt.show() | import plotly.graph_objects as goimport numpy as np# 创建示例数据x = np.linspace(0, 10, 100)y = np.cos(x)# 创建图形对象fig = go.Figure()# 添加线图fig.add_trace(go.Scatter (x=x, y=y, mode='lines+markers', name='Cosine Wave'))# 添加标题和轴标签fig.update_layout(title='Cosine Wave Example',xaxis_title='x-axis',yaxis_title='y-axis')# 显示图形fig.show() |",
+          "captions": [
+            {
+              "bbox": [
+                0.47,
+                0.459,
+                0.72,
+                0.474
+              ],
+              "content": "表 13-10 Python 常用可视化包"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_582_table_5.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.28,
+            0.84,
+            0.425,
+            0.856
+          ],
+          "level": 2,
+          "content": "(1) Matplotlib"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.244,
+            0.862,
+            0.951,
+            0.9
+          ],
+          "content": "Matplotlib 作为 Python 中最受欢迎的数据可视化库之一，为数据科学家和研究人员提供了丰富而灵活的工具，用于创建引人入胜的图形和图表。其强大的功能"
+        }
+      ]
+    },
+    {
+      "page_idx": 583,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.549,
+            0.055,
+            0.758,
+            0.067
+          ],
+          "content": "13.2 Linux系统及常用编程语言简介"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.934,
+            0.055,
+            0.959,
+            0.065
+          ],
+          "content": "569"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.057,
+            0.099,
+            0.759,
+            0.138
+          ],
+          "continues_prev": true,
+          "content": "和直观的接口使得图形可视化变得更加简单，同时为用户提供了极大的自定义和控制权。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.057,
+            0.143,
+            0.76,
+            0.269
+          ],
+          "content": "Matplotlib 支持各种图形类型，包括线图、散点图、柱状图、饼图等，以及 3D 图形的绘制。用户可以轻松创建具有各种格式和样式的图形，以满足不同的需求。通过简单的 API 调用，Matplotlib 使得生成高质量的图表成为一项轻松而富有创造性的任务。Matplotlib 的可视化不仅仅局限于静态图形，它还支持动画和交互性可视化。通过嵌入式绘图和交互式工具包，用户能够创建交互式图表，使得数据探索和解释更加直观和深入。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.057,
+            0.274,
+            0.762,
+            0.357
+          ],
+          "content": "总的来说，Matplotlib 作为一个功能强大而灵活的图形可视化库，不仅适用于初学者，也深受专业用户的喜爱。其丰富的功能、清晰的文档和强大的社区支持使得 Matplotlib 成为数据科学和可视化领域不可或缺的工具，为用户提供了展示数据、理解趋势和传达发现的有效手段。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.094,
+            0.363,
+            0.218,
+            0.377
+          ],
+          "level": 2,
+          "content": "(2) Seaborn"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.057,
+            0.384,
+            0.762,
+            0.577
+          ],
+          "content": "Seaborn 是一个基于 Matplotlib 的 Python 数据可视化库，专注于提供各种吸引人且信息丰富的统计图形。其设计灵感来自 R 语言中的 ggplot2，旨在让用户能够通过简单的方法创建美观而又有力的可视化图表。下面是对 Seaborn 图形可视化的简要说明。Seaborn 提供了一系列高级接口，使得绘制统计图形变得轻松而直观。通过 Seaborn，用户可以利用少量的代码轻松创建各种图形，包括散点图、折线图、直方图、箱线图等，以及更高级的统计图形，如核密度估计图和小提琴图。其中一项显著特征是 Seaborn 的配色方案和图形样式，这些都经过精心设计，使得生成的图形在审美上更具吸引力。用户可以通过简单的命令更改整体图形的外观，而不必深入研究每个绘图元素。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.057,
+            0.582,
+            0.76,
+            0.643
+          ],
+          "content": "Seaborn 的功能强大之处在于其与 Pandas 数据框架的良好集成。用户可以直接使用 Pandas 数据框架中的列来绘制图形，而不必进行复杂的数据准备。这种无缝集成简化了数据可视化的流程，使得从数据探索到图形呈现更加流畅。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.057,
+            0.648,
+            0.762,
+            0.776
+          ],
+          "content": "在创建图形方面, Seaborn 提供了一些高级函数, 如 'relplot' 和 'catplot', 这些函数允许用户根据数据集中的变量关系轻松创建多个子图, 从而更全面地理解数据。此外, Seaborn 还支持在单个图形中绘制多个子图, 以便比较不同方面的数据。对于统计关系的可视化, Seaborn 提供了 'lmplot' 函数, 该函数支持绘制线性回归模型的散点图, 并在图形中展示回归线的拟合情况。这有助于直观地了解两个变量之间的关系及其拟合程度。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.057,
+            0.78,
+            0.762,
+            0.864
+          ],
+          "content": "总体而言，Seaborn 作为一个强大而灵活的数据可视化工具，为用户提供了轻松绘制各种统计图形的能力，使得数据的探索和解释变得更加直观和高效。其出色的设计和简单易用的接口使得它成为数据科学家和分析师们首选的可视化库之一。"
+        }
+      ]
+    },
+    {
+      "page_idx": 584,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.0,
+            0.049,
+            0.024,
+            0.059
+          ],
+          "content": "570"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.195,
+            0.048,
+            0.331,
+            0.06
+          ],
+          "content": "13 生物信息学实验基础"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.228,
+            0.094,
+            0.515,
+            0.111
+          ],
+          "level": 2,
+          "content": "13.2.4.6 Python生物信息学软件包"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.116,
+            0.871,
+            0.154
+          ],
+          "content": "在生物信息学中，有大量基于Python语言开发的软件包用于处理特定类型的生物学数据，下面列举几例来说明。"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.189,
+            0.159,
+            0.873,
+            0.676
+          ],
+          "sub_type": "text",
+          "content": "① Biopython Biopython 是一个开源的、非商业性质的 Python 包，用于计算生物学和生物信息学领域。Biopython 能处理各种生物学数据，如 DNA、RNA 和蛋白质序列，同时也允许用户通过编程的方式访问在线生物信息数据库（如 NCBI）。Biopython 包含的模块涉及序列处理和比对、数据库查询、蛋白质结构、基因结构等，大大拓展了其功能。\n② Pysam Pysam 是一个与 SAM/BAM 格式（用于存储 DNA 测序数据）交互的 Python 库，为生物信息学和基因组学领域提供了强大的功能。主要功能包括读取和写入 SAM/BAM 文件，提供对测序比对数据的灵活访问，以及执行各种基因组学分析任务，如覆盖深度计算、变异检测和序列比对统计。Pysam 的接口设计使得用户能够方便地操作和分析大规模 DNA 测序数据，为生物信息学研究提供了高效而可扩展的工具。\n③ Scanpy Scanpy 是与 Anndata（一种数据结构）联合开发的用于分析单细胞基因表达数据的可扩展工具包。它包括预处理、可视化、聚类、轨迹推断和差异表达测试。基于 Python 的实现可高效处理超过 100 万个细胞的数据集。\n④ PyDESeq2 PyDESeq2 是 DESeq2 方法在 Python 上的实现，用于对大量 RNA-Seq 数据进行差异表达分析（differential expression analysis, DEA），最初是用 R 语言实现的。目前还处在持续开放阶段，后续还会添加很多功能。\n⑤ Pybedtools Pybedtools 是著名基因组研究工具 Bedtools 的 Python 版, Pybedtools 封装并扩展了 BEDTools, 可在 Python 中进行特征级操作。\n⑥ PySCeS PySCeS 是一个用于细胞系统科学计算和仿真的 Python 库。它为复杂系统的数据分析、可视化和仿真提供了多种工具。利用 PySCeS，用户可以以交互和直观的方式执行仿真、分析数据和可视化结果。\n⑦ NetworkX NetworkX 是一个用于创建、操作和研究复杂网络的结构、动态和功能的 Python 软件包。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.194,
+            0.709,
+            0.5,
+            0.732
+          ],
+          "level": 2,
+          "content": "13.3 数据分析流程搭建"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.754,
+            0.873,
+            0.858
+          ],
+          "content": "随着生物数据量和复杂性的增加，数据分析流程的可扩展性与可重复性变得至关重要。在生物信息学数据分析中，将数据转化为有用的信息涉及多种工具的组合使用、参数的优化及复杂数据集的管理。为了解决这些挑战，工作流管理系统应运而生。它们简化管道开发、优化资源利用、管理软件安装和版本，并能在多种计算平台上运行，从而实现分析流程的可移植性和共享性。"
+        }
+      ]
+    },
+    {
+      "page_idx": 585,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.61,
+            0.039,
+            0.75,
+            0.052
+          ],
+          "content": "13.3 数据分析流程搭建"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.929,
+            0.039,
+            0.954,
+            0.05
+          ],
+          "content": "571"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.049,
+            0.087,
+            0.749,
+            0.295
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  subgraph Data[\"数据\"]\n    A[\"生物学数据\\n基因组、转录组、蛋白质组、代谢组、...\"]\n  end\n  \n  subgraph Analysis[\"生物信息学方法和工具\"]\n    B[\"数据采集\"]\n    C[\"数据清洗\"]\n    D[\"数据分析\"]\n  end\n  \n  subgraph Output[\"知识图谱\"]\n    E[\"生物学知识\\n揭示数据隐含规律\\n解答生物医学问题\"]\n  end\n  \n  A -->|\"数据采集\"| C\n  C -->|\"数据解析\"| E\n  E -->|\"数据可视化\"| F[\"生物学知识\\n揭示数据隐含规律\\n解答生物医学问题\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.764,
+                0.088,
+                0.957,
+                0.125
+              ],
+              "content": "图13-5 生物信息学数据分析基本过程"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_585_image_2.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.047,
+            0.318,
+            0.416,
+            0.34
+          ],
+          "level": 2,
+          "content": "13.3.1 生物信息分析流程搭建简介"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.044,
+            0.359,
+            0.752,
+            0.423
+          ],
+          "content": "生物信息学数据分析流程的搭建旨在建立一个系统化的方法来处理生物学数据，包括一系列数据处理、分析和解释步骤，旨在从生物学实验中产生的原始数据中提取有用的生物学信息（图13-5）。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.08,
+            0.428,
+            0.486,
+            0.445
+          ],
+          "content": "以下是一个简要的生物信息分析流程搭建过程。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.079,
+            0.45,
+            0.285,
+            0.467
+          ],
+          "level": 2,
+          "content": "(1) 数据采集和预处理"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.079,
+            0.473,
+            0.604,
+            0.49
+          ],
+          "content": "针对某个问题，获取相关数据、进行质控和可能的格式转换。"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.044,
+            0.495,
+            0.75,
+            0.625
+          ],
+          "sub_type": "text",
+          "content": "① 数据获取 收集生物学实验生成的数据，如基因组测序数据（DNA 测序、RNA 测序）、蛋白质质谱数据、表型数据等。\n② 质量控制 检查数据的质量，识别并处理潜在的质量问题，如测序错误、低质量读数等。\n③ 数据格式转换 将原始数据转换为常用的生物信息学数据格式，如 FASTQ、SAM/BAM、BED、VCF 等，以便进一步的分析。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.08,
+            0.63,
+            0.205,
+            0.647
+          ],
+          "level": 2,
+          "content": "(2) 数据分析"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.079,
+            0.653,
+            0.565,
+            0.67
+          ],
+          "content": "针对不同类型的数据，采用的分析方法和工具也不一样。"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.044,
+            0.675,
+            0.75,
+            0.894
+          ],
+          "sub_type": "text",
+          "content": "① 序列比对 对测序数据进行序列比对，将测序片段与参考基因组或转录组进行比对，以确定它们的位置和变异。\n② 差异表达分析 对 RNA 测序数据进行差异表达分析，识别在不同条件下基因表达的差异。\n③ 通路和功能富集分析 将差异表达基因集合映射到生物通路和功能注释数据库，以了解这些基因的生物学意义。\n④ 蛋白质鉴定和定量 对质谱数据进行蛋白质鉴定和定量，识别蛋白质并测量其表达水平。\n⑤ 突变分析 对 DNA 测序数据进行突变分析，识别基因突变、单核苷酸多态性（SNP）等变异。"
+        }
+      ]
+    },
+    {
+      "page_idx": 586,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.0,
+            0.041,
+            0.024,
+            0.053
+          ],
+          "content": "572"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.2,
+            0.042,
+            0.34,
+            0.054
+          ],
+          "content": "13 生物信息学实验基础"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.234,
+            0.087,
+            0.376,
+            0.104
+          ],
+          "level": 2,
+          "content": "(3) 数据可视化"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.233,
+            0.109,
+            0.791,
+            0.126
+          ],
+          "content": "利用不同的方法或者工具对不同类型的结果数据进行可视化展示。"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.196,
+            0.131,
+            0.893,
+            0.236
+          ],
+          "sub_type": "text",
+          "content": "① 生成图表 使用数据可视化工具（如 ggplot2、matplotlib 等）创建图表和图形，以展示分析结果。\n② 绘制热图 用于可视化基因表达、蛋白质表达或其他多维数据。\n③ 制作通路图 展示通路和功能富集分析结果的图表。\n④ 制作基因组浏览器图 可视化基因、变异和注释在基因组上的位置。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.234,
+            0.241,
+            0.416,
+            0.257
+          ],
+          "level": 2,
+          "content": "（4）结果解释和报告"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.233,
+            0.262,
+            0.634,
+            0.279
+          ],
+          "content": "根据图表结果，解释数据中隐含的生物学意义。"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.197,
+            0.284,
+            0.891,
+            0.367
+          ],
+          "sub_type": "text",
+          "content": "① 解释生物学意义 解释分析结果，理解差异表达基因的生物学功能和潜在的生物学意义。\n② 生成报告 创建报告文档，将分析结果以可理解的方式呈现给其他研究人员或利益相关者。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.234,
+            0.372,
+            0.493,
+            0.388
+          ],
+          "level": 2,
+          "content": "(5) 结果验证和实验设计优化"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.233,
+            0.394,
+            0.674,
+            0.41
+          ],
+          "content": "对分析结果进行进一步实验验证或者优化分析流程。"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.233,
+            0.416,
+            0.755,
+            0.455
+          ],
+          "sub_type": "text",
+          "content": "① 根据分析结果，设计验证实验以确认潜在生物学发现。\n② 根据实验结果和反馈，优化实验设计和生物信息分析流程。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.234,
+            0.46,
+            0.455,
+            0.476
+          ],
+          "level": 2,
+          "content": "(6) 文献综述和科研交流"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.233,
+            0.482,
+            0.538,
+            0.498
+          ],
+          "content": "将分析结果呈现到论文或者报告中。"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.233,
+            0.504,
+            0.715,
+            0.542
+          ],
+          "sub_type": "text",
+          "content": "① 撰写和发表研究论文，以分享发现和方法。\n② 参与学术会议和研讨会，与同行分享研究成果和经验。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.234,
+            0.547,
+            0.416,
+            0.563
+          ],
+          "level": 2,
+          "content": "(7) 持续优化和改进"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.234,
+            0.569,
+            0.538,
+            0.586
+          ],
+          "content": "根据新的需求，持续优化分析流程。"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.197,
+            0.591,
+            0.89,
+            0.652
+          ],
+          "sub_type": "text",
+          "content": "① 持续融合新的生物信息学工具、技术和方法。\n② 参与生物信息学社区，与其他研究人员交流并分享经验，从用户获取反馈信息。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.196,
+            0.656,
+            0.893,
+            0.893
+          ],
+          "content": "以上是生物信息分析流程的一般概述。具体的分析流程将取决于研究问题和数据类型。传统的分析流程通常使用定制脚本或 Make 文件进行开发，可以简化数据的重复分析过程。然而，这些传统流程通常与本地计算基础设施高度耦合，且缺乏充分的文档、参数跟踪和工具版本控制。在运行到其他设备时，传统管道需要手动安装，难以共享和维护，结果的复现性也常常受到影响。因此，对于数据密集型任务，可以使用工作流管理软件来处理复杂的数据分析工作流程。目前正在使用和开发中的工作流管理软件超过 150 种，包括 Nextflow、Snakemake 等。不同工作流管理软件之间的一个主要区别在于易用性、灵活性和功能丰富性之间的权衡。随着生物信息学领域的不断发展，分析工具和方法也在不断演进，因此持续学习和改进是非常重要的。生物信息学家通常需要具备数据分析、统计学和编程等多方面的技能，以便有效地进行生物学数据分析。以下以基因表达量化分析为例，分别介绍经典的"
+        }
+      ]
+    },
+    {
+      "page_idx": 587,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.608,
+            0.04,
+            0.748,
+            0.052
+          ],
+          "content": "13.3 数据分析流程搭建"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.926,
+            0.04,
+            0.951,
+            0.051
+          ],
+          "content": "573"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.047,
+            0.083,
+            0.936,
+            0.451
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_587_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.045,
+            0.466,
+            0.75,
+            0.529
+          ],
+          "continues_prev": true,
+          "content": "分析流程和基于工作流管理软件 Snakemake 的使用方法（图 13-6）。为了在 Linux 系统上实践这两个分析流程，需要预先安装好相关软件和程序包。如果已经安装好 Anaconda 环境，可以很方便地利用下面 Conda 命令来安装依赖软件包:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.047,
+            0.537,
+            0.441,
+            0.619
+          ],
+          "sub_type": "code",
+          "content": "```txt\n# 安装fastQC、Salmon、Snakemake软件\nconda install bioconda::fastqc\nconda install bioconda::salmon\nconda install snakemake\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.762,
+                0.468,
+                0.955,
+                0.527
+              ],
+              "content": "图13-6 生物信息学数据分析流程的比较（以基因表达量化分析为例）"
+            }
+          ],
+          "footnotes": []
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.048,
+            0.648,
+            0.414,
+            0.669
+          ],
+          "level": 2,
+          "content": "13.3.2 基于 Shell 的分析流程搭建"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.082,
+            0.693,
+            0.35,
+            0.71
+          ],
+          "level": 2,
+          "content": "13.3.2.1 基于 Shell 的流程简介"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.045,
+            0.715,
+            0.75,
+            0.779
+          ],
+          "content": "基于 Shell 的分析流程搭建可以帮助用户自动化执行一系列命令和任务，使数据处理、分析和报告生成过程更加高效，这对于处理大规模数据分析和批处理任务尤其有用。下面是搭建基于 Shell 的分析流程的一般步骤。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.081,
+            0.783,
+            0.267,
+            0.801
+          ],
+          "level": 2,
+          "content": "（1）明确任务和目标"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.046,
+            0.806,
+            0.75,
+            0.845
+          ],
+          "content": "确定要执行的任务和分析的目标。这可以包括数据清洗、统计分析、可视化、报告生成等各种任务。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.081,
+            0.85,
+            0.247,
+            0.868
+          ],
+          "level": 2,
+          "content": "(2) 准备工作环境"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.045,
+            0.873,
+            0.75,
+            0.913
+          ],
+          "content": "创建一个适当的工作目录，将数据和分析脚本放在其中，并确保有适当的权限来执行所需要的操作。"
+        }
+      ]
+    },
+    {
+      "page_idx": 588,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.0,
+            0.051,
+            0.024,
+            0.061
+          ],
+          "content": "574"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.195,
+            0.047,
+            0.333,
+            0.059
+          ],
+          "content": "13 生物信息学实验基础"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.225,
+            0.092,
+            0.407,
+            0.108
+          ],
+          "level": 2,
+          "content": "(3) 编写 Shell 脚本"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.112,
+            0.895,
+            0.152
+          ],
+          "content": "使用文本编辑器创建一个 Shell 脚本（通常以 .sh 为文件扩展名），在其中编写一系列 Shell 命令和任务。以下是一些常见的 Shell 命令示例:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.223,
+            0.156,
+            0.844,
+            0.239
+          ],
+          "sub_type": "text",
+          "content": "① 数据清洗 使用 awk、sed 或 grep 等命令来处理和过滤数据。\n② 统计分析 调用 R、Python 或其他统计软件的命令来执行数据分析。\n③ 数据可视化 使用命令行绘图工具或调用可视化库来生成图表。\n④ 报告生成 使用 echo 命令和文本操作来创建报告文本。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.225,
+            0.243,
+            0.49,
+            0.259
+          ],
+          "level": 2,
+          "content": "13.3.2.2 基于 Shell 的实例分析"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.265,
+            0.897,
+            0.305
+          ],
+          "content": "以下是一个使用 Shell 脚本实现图 13-6 中基因表达量化分析的示例:这个脚本首先利用 fastQC 进行质量控制，然后利用 Salmon 创建索引基因表达量化分析。"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.188,
+            0.318,
+            0.314,
+            0.333
+          ],
+          "sub_type": "code",
+          "content": "```shell\n#!/bin/bash\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.189,
+            0.375,
+            0.863,
+            0.507
+          ],
+          "sub_type": "code",
+          "content": "```shell\nFASTQ_DIR=\"/path/to/fastq/files\"\nTRANSCRIPTOME_FASTA=\"/path/to/transcriptome.fa.gz\" # 转录组\n    FASTA 文件路径\nOUTPUT_DIR=\"/path/to/output\"\nFASTQC_OUTPUT=\"\\${OUTPUT_DIR}/fastqc_results\"\nSALMON_INDEX_DIR=\"\\${OUTPUT_DIR}/salmon_index\"\nSALMON_OUTPUT=\"\\${OUTPUT_DIR}/salmon_quant\"\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.189,
+                0.356,
+                0.303,
+                0.373
+              ],
+              "content": "# 设置变量"
+            }
+          ],
+          "footnotes": []
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.189,
+            0.548,
+            0.504,
+            0.604
+          ],
+          "sub_type": "code",
+          "content": "```shell\nmkdir -p ${FASTQC_OUTPUT}\nmkdir -p ${SALMON_INDEX_DIR}\nmkdir -p ${SALMON_OUTPUT}\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.189,
+                0.529,
+                0.348,
+                0.545
+              ],
+              "content": "# 创建输出目录"
+            }
+          ],
+          "footnotes": []
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.189,
+            0.645,
+            0.631,
+            0.739
+          ],
+          "sub_type": "code",
+          "content": "```shell\necho \"Running FastQC...\"\nfor file in \\${FASTQ_DIR}/*.fastq.gz; do\n    fastqc -o \\${FASTQC_OUTPUT} \\${file}\ndone\necho \"FastQC complete.\"\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.189,
+                0.625,
+                0.479,
+                0.641
+              ],
+              "content": "# 第1步:质量控制（FastQC）"
+            }
+          ],
+          "footnotes": []
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.189,
+            0.78,
+            0.882,
+            0.855
+          ],
+          "sub_type": "code",
+          "content": "```shell\necho \"Creating Salmon index...\"\nsalmon index -t ${TRANSCRIPTOME_FASTA} -i ${SALMON_INDEX_DIR}\n-p 8\necho \"Salmon index created at ${SALMON_INDEX_DIR}.\"\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.188,
+                0.759,
+                0.466,
+                0.777
+              ],
+              "content": "# 第2步:创建 Salmon 索引"
+            }
+          ],
+          "footnotes": []
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.19,
+            0.894,
+            0.457,
+            0.91
+          ],
+          "sub_type": "code",
+          "content": "```batch\necho \"Running Salmon...\"\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.188,
+                0.874,
+                0.617,
+                0.892
+              ],
+              "content": "# 第3步:转录组数据比对和定量（Salmon）"
+            }
+          ],
+          "footnotes": []
+        }
+      ]
+    },
+    {
+      "page_idx": 589,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.612,
+            0.042,
+            0.754,
+            0.055
+          ],
+          "content": "13.3 数据分析流程搭建"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.931,
+            0.044,
+            0.956,
+            0.055
+          ],
+          "content": "575"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.045,
+            0.089,
+            0.754,
+            0.36
+          ],
+          "sub_type": "code",
+          "content": "```shell\nfor file in \\${FASTQ_DIR}/*_R1_*.fastq.gz; do\n    SAMPLE_NAME=\\$(basename \\${file} | sed\n's/_R1_.*.fastq.gz//')\n    R1=\\${file}\n    R2=\\${FASTQ_DIR}/\\${SAMPLE_NAME}_R2_*.fastq.gz\n\n    salmon quant -i \\${SALMON_INDEX_DIR} -l A \\\n    -1 \\${R1} -2 \\${R2} \\textbackslash{}\n    -p 8 --validateMappings -o \\${SALMON_OUTPUT}/\\${SAMPLE_NAME}\ndone\necho \"Salmon quantification complete.\"\n\n# 输出完成消息\necho \"Analysis complete. Results are in \\${OUTPUT_DIR.\"\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.044,
+            0.372,
+            0.754,
+            0.412
+          ],
+          "content": "将以上代码保存在名为 runRNAquant.sh 的 Shell 脚本文件中。该脚本的代码详细解释如下:"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.079,
+            0.417,
+            0.204,
+            0.433
+          ],
+          "level": 2,
+          "content": "(1) 设置变量"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.078,
+            0.439,
+            0.616,
+            0.57
+          ],
+          "sub_type": "text",
+          "content": "① FASTQ\\_DIR 输入的 FASTQ 文件所在目录。\n② OUTPUT\\_DIR 分析结果的输出目录。\n③ FASTQC\\_OUTPUT FastQC 分析结果的输出目录。\n④ SALMON\\_INDEX\\_DIR Salmon 索引的输出目录。\n⑤ SALMON\\_OUTPUT Salmon 定量分析结果的输出目录。\n⑥ TRANSCRIPTOME\\_FASTA 转录组 FASTA 文件的路径。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.079,
+            0.575,
+            0.244,
+            0.591
+          ],
+          "level": 2,
+          "content": "(2) 创建输出目录"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.078,
+            0.597,
+            0.591,
+            0.615
+          ],
+          "content": "使用 mkdir -p 命令创建输出目录，如果目录不存在则创建。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.079,
+            0.62,
+            0.309,
+            0.637
+          ],
+          "level": 2,
+          "content": "（3）质量控制（FastQC）"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.078,
+            0.643,
+            0.612,
+            0.66
+          ],
+          "content": "对每个 FASTQ 文件运行 FastQC，并将结果输出到指定目录。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.079,
+            0.665,
+            0.287,
+            0.682
+          ],
+          "level": 2,
+          "content": "(4) 创建 Salmon 索引"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.044,
+            0.688,
+            0.753,
+            0.727
+          ],
+          "content": "使用 salmon index 命令根据转录组 FASTA 文件创建索引，指定输出目录和线程数。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.079,
+            0.733,
+            0.425,
+            0.75
+          ],
+          "level": 2,
+          "content": "(5) 转录组数据比对和定量（Salmon）"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.078,
+            0.755,
+            0.616,
+            0.84
+          ],
+          "sub_type": "text",
+          "content": "① 对每个样本运行 Salmon 定量分析，指定索引、输入文件和输出目录。\n② -1 A 参数指定自动检测文库类型。\n③ -p 8 指定使用的线程数，可以根据实际情况调整。\n④ -validateMappings 选项用于启用映射验证，提高定量精度。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.08,
+            0.845,
+            0.245,
+            0.861
+          ],
+          "level": 2,
+          "content": "(6) 输出完成消息"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.08,
+            0.867,
+            0.37,
+            0.884
+          ],
+          "content": "脚本运行完成后，输出提示信息。"
+        }
+      ]
+    },
+    {
+      "page_idx": 590,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.0,
+            0.039,
+            0.024,
+            0.049
+          ],
+          "content": "576"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.197,
+            0.037,
+            0.335,
+            0.049
+          ],
+          "content": "13 生物信息学实验基础"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.229,
+            0.084,
+            0.352,
+            0.101
+          ],
+          "level": 2,
+          "content": "(7) 注意事项"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.192,
+            0.105,
+            0.88,
+            0.258
+          ],
+          "sub_type": "text",
+          "content": "① 运行此脚本前，请确保已安装 FastQC 和 Salmon，并将其可执行文件路径添加到系统环境变量中。\n② 确保指定的文件路径和目录存在并且正确。\n③ 根据计算资源和数据量调整 -p 参数，以优化性能。\n④ 使用 echo 命令输出有关每个步骤的消息，以便在运行脚本时了解进展情况。\n⑤ 在分析完成后，可以使用 rm 命令删除不再需要的中间文件，以节省存储空间。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.263,
+            0.882,
+            0.326
+          ],
+          "content": "以上步骤完成了自动化和管理数据分析流程。利用该流程有助于确保分析的一致性，减少手动干预的需要，并提高了工作效率。要在 Shell 终端中运行这个示例脚本，需要:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.227,
+            0.331,
+            0.821,
+            0.349
+          ],
+          "content": "① 为脚本添加执行权限 使用 chmod 命令为 Shell 脚本添加执行权限:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.195,
+            0.362,
+            0.451,
+            0.378
+          ],
+          "sub_type": "code",
+          "content": "```batch\nchmod +x runRNAquant.sh\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.228,
+            0.391,
+            0.661,
+            0.409
+          ],
+          "content": "② 执行脚本 运行 Shell 脚本以启动整个分析流程:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.197,
+            0.422,
+            0.375,
+            0.438
+          ],
+          "sub_type": "code",
+          "content": "```txt\n./runRNAquant.sh\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.192,
+            0.451,
+            0.882,
+            0.604
+          ],
+          "sub_type": "text",
+          "content": "③ 自动化和调度 根据需要，可以将 Shell 脚本与自动化工具（如 cron 任务）结合使用，以按计划自动执行分析任务。\n④ 日志记录和错误处理 在 Shell 脚本中添加适当的日志记录和错误处理，以便跟踪分析的进展并识别问题。\n⑤ 结果保存和报告 将分析结果保存到适当的位置，并生成报告或图表，以便进一步解释和分享。\n⑥ 维护和改进 定期维护和改进 Shell 脚本，以适应新的需求和数据。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.23,
+            0.61,
+            0.578,
+            0.626
+          ],
+          "level": 2,
+          "content": "13.3.2.3 基于 Snakemake 的分析流程搭建"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.229,
+            0.633,
+            0.423,
+            0.649
+          ],
+          "level": 2,
+          "content": "(1) Snakemake 简介"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.655,
+            0.882,
+            0.786
+          ],
+          "content": "Snakemake 是一个基于 Python 的用于创建可重复和可扩展数据分析工作流程的免费工具。通过 Snakemake 可以定义一系列任务以及这些任务之间的依赖关系，构建一个可重复、可维护和可扩展的工作流程，从而无须人工干预即可执行数千至数万个数据集。Snakemake 还拥有强大的并行处理能力，它可以根据任务之间的依赖关系，有效利用任何计算平台，智能地并行执行任务，从而加快整个工作流程的运行速度（图 13-7）。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.229,
+            0.791,
+            0.529,
+            0.808
+          ],
+          "content": "简单来说，Snakemake 有以下优点:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.192,
+            0.812,
+            0.882,
+            0.921
+          ],
+          "sub_type": "text",
+          "content": "① 可读性强（readability） 使用 Snakemake 时，数据分析工作流程是通过 Python 上一种易读、适应性强且功能强大的规范语言来定义的。每个规则（rule）描述分析中的一个步骤，定义如何从输入文件获取输出文件，规则之间的依赖关系会自动确定。\n② 易移植（portability） 通过与 Conda 软件包管理器和容器虚拟化的集成，"
+        }
+      ]
+    },
+    {
+      "page_idx": 591,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.61,
+            0.029,
+            0.751,
+            0.041
+          ],
+          "content": "13.3 数据分析流程搭建"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.929,
+            0.028,
+            0.954,
+            0.039
+          ],
+          "content": "577"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.132,
+            0.072,
+            0.234,
+            0.087
+          ],
+          "level": 2,
+          "content": "声明式工作流"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.044,
+            0.099,
+            0.307,
+            0.285
+          ],
+          "sub_type": "text_image",
+          "content": "rule convert_to-pdf:\ninput:\n\"(prefix).svg\"\noutput:\n\"(prefix).pdf\"\nlog:\n\"logs/convert-to-pdf/(prefix).log\"\nwrapper:\n\"0.47.0/utils/cairosvg\"\n\nrule plot histogram:\ninput:\n\"results/by-country/(country).csv\"\noutput:\n\"results/plots/(country) .hist.svg\"\ncontainer :\n\"docker://faizanbashir/python-datascience\nlog :\n\"logs/plot-hist/(country).log\"\nscript:\n\"scripts/plot-hist.py\"",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_591_image_3.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.426,
+            0.074,
+            0.544,
+            0.089
+          ],
+          "level": 2,
+          "content": "自动化任务调度"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.368,
+            0.099,
+            0.64,
+            0.288
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph TD\n  A[\"one\\nsample: sample1\"] --> B[\"two\"]\n  C[\"one\\nsample: sample2\"] --> D[\"two\"]\n  E[\"one\\nsample: sample3\"] --> F[\"two\"]\n  B --> G[\"gather_and_do_something\"]\n  D --> G\n  F --> G\n  G --> H[\"split final\\nsample: sample1\"]\n  G --> I[\"split final\\nsample: sample2\"]\n  G --> J[\"split final\\nsample: sample3\"]\n  H --> K[\"all\"]\n  I --> K\n  J --> K\n```",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_591_image_5.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.765,
+            0.074,
+            0.898,
+            0.089
+          ],
+          "level": 2,
+          "content": "并行和分布式执行"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.695,
+            0.1,
+            0.943,
+            0.285
+          ],
+          "sub_type": "flowchart",
+          "content": "This diagram illustrates a process flow with multiple nodes and directional arrows, showing how inputs are processed through intermediate stages to produce final outputs.",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_591_image_7.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.045,
+            0.323,
+            0.085,
+            0.355
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_591_image_8.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.093,
+            0.326,
+            0.22,
+            0.354
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_591_image_9.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.046,
+            0.372,
+            0.09,
+            0.413
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_591_image_10.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.097,
+            0.376,
+            0.218,
+            0.406
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_591_image_11.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.337,
+            0.319,
+            0.67,
+            0.421
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"Central puzzle piece\"] --> B[\"User Icon\"]\n  A --> C[\"Email Icon\"]\n  A --> D[\"File Icon\"]\n  A --> E[\"Document Icon\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.468,
+                0.304,
+                0.536,
+                0.319
+              ],
+              "content": "可扩展性"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_591_image_13.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.761,
+            0.32,
+            0.916,
+            0.37
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_591_image_14.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.726,
+            0.382,
+            0.781,
+            0.415
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_591_image_15.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.809,
+            0.381,
+            0.871,
+            0.41
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_591_image_16.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.891,
+            0.38,
+            0.942,
+            0.412
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_591_image_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.04,
+            0.439,
+            0.547,
+            0.456
+          ],
+          "content": "每个流程步骤的所有软件依赖关系都会在执行时自动部署。"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.038,
+            0.461,
+            0.75,
+            0.64
+          ],
+          "sub_type": "text",
+          "content": "③ 模块化管理（modularization） 通过直接将脚本和 Jupyter notebook 集成，快速实施分析步骤。轻松创建和使用可重复使用的工具包装器，并将数据分析拆分成独立的模块。\n④ 透明（transparency） 自动、交互、独立的报告确保了从结果到所用步骤、参数、代码和软件的完全透明。\n⑤ 可扩展（scalability）结合 Conda，工作流可以被无缝扩展到服务器、集群、网格和云环境，当整理好流程以后，只需要简单替换几个参数，就能快速开始分析一个新的数据。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.038,
+            0.645,
+            0.75,
+            0.686
+          ],
+          "content": "最后，Snakemake 可包含对所需要软件的描述，这些软件将自动部署到任何执行环境中。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.074,
+            0.692,
+            0.353,
+            0.709
+          ],
+          "level": 2,
+          "content": "(2) Snakemake 使用方法介绍"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.038,
+            0.715,
+            0.752,
+            0.825
+          ],
+          "content": "① Snakemake 的基本用法 在 Snakemake 中，可以使用类似于 Python 的语法来描述任务和规则，根据 Snakefile 中指定的规则来定义数据分析流程。Snakemake 的基本组成单位叫 “rule”，即 “规则”。每个规则（rule）定义了一个任务，规定了输入（input）、输出（output）以及执行任务所需要的命令（action），形成一个完整的工作流。语法如下:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.043,
+            0.846,
+            0.635,
+            0.928
+          ],
+          "sub_type": "code",
+          "content": "```txt\nrule Name:\n    input:\n        \"path/to/inputfile\", \"path/to/other/inputfile\"\n    output:\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.764,
+                0.434,
+                0.96,
+                0.472
+              ],
+              "content": "图13-7 Snakemake的主要特点"
+            }
+          ],
+          "footnotes": []
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {}
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 576,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 577,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 578,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 579,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 580,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 581,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 582,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 583,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 584,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 585,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 586,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 587,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 588,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 589,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 590,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 591,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

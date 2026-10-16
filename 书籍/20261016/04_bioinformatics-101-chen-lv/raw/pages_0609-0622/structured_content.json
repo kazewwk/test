@@ -1,0 +1,3147 @@
+{
+  "pages": [
+    {
+      "page_idx": 608,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.0,
+            0.06,
+            0.022,
+            0.07
+          ],
+          "content": "594"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.192,
+            0.059,
+            0.328,
+            0.07
+          ],
+          "content": "13 生物信息学实验基础"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.102,
+            0.875,
+            0.225
+          ],
+          "content": "通过各种方式实现，包括索引的优化、查询性能的改进和硬件升级。这确保了用户可以快速、高效地访问所需要的数据。数据安全性是不可忽视的因素，特别是在处理敏感信息，如个体基因组数据时。访问控制、数据加密和审计机制是确保数据不被未经授权的访问和泄漏的关键工具。最后，合规性和长期数据存储也是数据库管理的重要方面。确保数据库遵守相关法规，如 HIPAA、GDPR 等，以及制定适当的数据归档策略，以确保数据的长期访问性，有助于维护数据库的可靠性和合法性。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.229,
+            0.876,
+            0.289
+          ],
+          "content": "综合来看，数据库管理和维护是生物信息学研究的基础，它们确保了数据库的数据质量、可用性和安全性，为科研人员和医疗专业人员提供了可靠的数据资源，促进了生物信息学领域的不断进步。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.225,
+            0.293,
+            0.499,
+            0.309
+          ],
+          "level": 2,
+          "content": "13.4.2.4 关系型数据库管理系统"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.314,
+            0.874,
+            0.396
+          ],
+          "content": "在生物信息学领域，合适的数据库管理系统对于存储、管理和分析海量生物学数据至关重要。不同的数据库管理系统具有各自的特点和适用场景，因此在选择合适的数据库时，需要考虑项目的规模、性能需求以及预算等因素。表13-11是关于常见的关系型数据库管理系统在生物信息学中的应用以及其优点和缺点的综合性讨论。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.191,
+            0.427,
+            0.876,
+            0.717
+          ],
+          "content": "| 数据库管理系统 | 适用场景在生物信息学中的联系 | 优点 | 缺点 |\n| --- | --- | --- | --- |\n| MySQL | 存储和查询生物信息学数据,如基因组序列、蛋白质信息、实验数据等。适用于小型生物信息学项目,如基因分析和小规模实验数据的管理 | 高性能、易用简单、开发者社区活跃 | 数据安全性不够牢固、不支持分布式数据库实现、部分功能不如商用数据库完善 |\n| Oracle | 支持大规模生物信息学项目的管理,包括基因组数据的存储、生物通路分析和大规模生物数据库的维护。适用于大型生物信息学研究中,如生物医学研究和大规模基因组学项目 | 丰富的特性、高性能、支持大型企业应用程序 | 昂贵的价格、不适用于小规模项目、性能不如某些开源数据库 |\n| SQL Server | 用于中等规模生物信息学项目,如生物数据仓库的建设、实验室数据管理和生物信息学工具的支持。适用于中等规模的生物信息学应用,如教育、生物医学研究等 | 易于部署和使用、良好的数据恢复能力 | 适用范围较窄,不太适用于大规模企业 |\n| PostgreSQL | 提供数据存储和管理的系统,适用于中大型的生物信息学应用,如生物信息学工具的开发和数据集成。适用于需要多版本并发控制和完整事务支持的生物信息学项目 | 开源商业集成、完整的事务支持、多版本并发控制 | 性能稍逊于某些其他数据库 |",
+          "captions": [
+            {
+              "bbox": [
+                0.397,
+                0.409,
+                0.663,
+                0.424
+              ],
+              "content": "表 13-11 关系型数据库之间的比较"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_608_table_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.726,
+            0.876,
+            0.787
+          ],
+          "content": "总而言之，选择适合项目需求的数据库管理系统对于生物信息学研究的成功至关重要。不同的数据库系统具有不同的优势和劣势，因此，在想搭建生物信息学平台要做出选择时，需要根据具体情况仔细权衡各方面的因素。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.19,
+            0.808,
+            0.482,
+            0.827
+          ],
+          "level": 2,
+          "content": "13.4.3 非关系型数据库介绍"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.846,
+            0.876,
+            0.884
+          ],
+          "content": "传统的关系型数据库（如 MySQL）以表格形式存储数据，并使用结构化查询语言（SQL）来管理和检索数据。然而，随着数据的不断增长和多样化，非关系型"
+        }
+      ]
+    },
+    {
+      "page_idx": 609,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.632,
+            0.056,
+            0.758,
+            0.067
+          ],
+          "content": "13.4 数据库开发基础"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.934,
+            0.054,
+            0.959,
+            0.065
+          ],
+          "content": "595"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.058,
+            0.099,
+            0.759,
+            0.158
+          ],
+          "continues_prev": true,
+          "content": "数据库（NoSQL）应运而生。非关系型数据库是一种更加灵活的数据存储方法，通常不要求固定的模式，适用于大规模数据和半结构化数据。非关系型数据库主要包括以下几种类型。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.095,
+            0.164,
+            0.239,
+            0.179
+          ],
+          "level": 2,
+          "content": "(1) 文档数据库"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.094,
+            0.185,
+            0.735,
+            0.245
+          ],
+          "sub_type": "text",
+          "content": "① 概述 文档数据库以类似于 JSON 或 XML 的文档格式存储数据。\n② 应用 用于存储和查询半结构化数据，如日志、博客帖子、文章内容等。\n③例子 MongoDB、CouchDB。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.095,
+            0.25,
+            0.238,
+            0.266
+          ],
+          "level": 2,
+          "content": "(2) 列族数据库"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.059,
+            0.272,
+            0.759,
+            0.355
+          ],
+          "sub_type": "text",
+          "content": "① 概述 列族数据库以列簇的形式存储数据，适用于高写入和高可扩展性的场景。\n② 应用 用于时间序列数据、日志、传感器数据等。\n③例子 Apache Cassandra、HBase。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.095,
+            0.36,
+            0.218,
+            0.375
+          ],
+          "level": 2,
+          "content": "(3) 键值存储"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.094,
+            0.381,
+            0.715,
+            0.442
+          ],
+          "sub_type": "text",
+          "content": "① 概述 键值存储将数据存储为键值对，适用于快速的键值查找和存储。\n② 应用 用于缓存、用户会话管理、用户偏好设置等。\n③例子 Redis、Amazon DynamoDB。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.095,
+            0.448,
+            0.218,
+            0.464
+          ],
+          "level": 2,
+          "content": "(4) 图数据库"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.061,
+            0.469,
+            0.761,
+            0.53
+          ],
+          "sub_type": "text",
+          "content": "① 概述 图数据库用于存储和查询图形数据结构，适用于关系复杂的数据。\n② 应用 用于社交网络分析、生物信息学中的蛋白质相互作用网络等。\n③例子 Neo4j、Amazon Neptune。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.059,
+            0.535,
+            0.759,
+            0.617
+          ],
+          "content": "非关系型数据库在生物信息学中也有一定的潜在应用，包括:① 存储和查询生物学数据，如基因组序列、蛋白质结构、生物通路等。② 处理大规模的实验数据，如基因表达数据、DNA 测序数据。③ 构建生物信息学工具和平台，支持研究人员进行生物学研究和分析。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.059,
+            0.622,
+            0.759,
+            0.727
+          ],
+          "content": "尽管本节不深入讨论非关系型数据库的细节，但非关系型数据库为生物信息学提供了灵活、可扩展、高性能的数据存储和查询解决方案，能够更好地应对生物信息学领域的数据特点和挑战。这些数据库系统在帮助研究人员存储、管理和分析生物学数据方面发挥了关键作用，推动生物信息学研究的进展。同时，读者也可以根据自己的兴趣和需要进一步学习有关特定数据库类型的深入信息。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.063,
+            0.75,
+            0.427,
+            0.77
+          ],
+          "level": 2,
+          "content": "13.4.4 生物信息学数据库应用开发"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.098,
+            0.793,
+            0.315,
+            0.81
+          ],
+          "level": 2,
+          "content": "13.4.4.1 数据库开发简介"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.059,
+            0.815,
+            0.759,
+            0.875
+          ],
+          "content": "生物信息学数据库应用开发是一个综合性的领域，涵盖了数据库设计、前后端框架的构建以及可视化系统的开发等多个方面（图13-12）。在这里，将简要介绍生物信息学数据库应用开发的主要内容和流程，以帮助读者朋友更好地理解这一领域。"
+        }
+      ]
+    },
+    {
+      "page_idx": 610,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.064,
+            0.045,
+            0.087,
+            0.055
+          ],
+          "content": "596"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.259,
+            0.044,
+            0.395,
+            0.056
+          ],
+          "content": "13 生物信息学实验基础"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.257,
+            0.087,
+            0.92,
+            0.325
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  subgraph DataLayer[\"数据层(后端)\"]\n  DB1[\"MySQL\"] --> DB2[\"MongoDB\"]\n  end\n\n  subgraph WebService[\"Web服务(后端)\"]\n    direction TB\n  WebNode[\"Web服务 (后端)\"] --> LogicLogic[\"业务逻辑\\nPython/JAVA\"]\n  end\n\n  subgraph EndUsers[\"终端用户(前端)\"]\n  User1[\"浏览器\\nHTML/CSS\"] --> User2[\"响应\"]\n  User2 --> User3[\"请求\"]\n  end\n\n  %% LogicLogic Flow\n  DB1 <--> WebNode\n  WebNode --> LogicLogic\n  LogicLogic --> User1\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.062,
+                0.095,
+                0.244,
+                0.131
+              ],
+              "content": "图13-12 生物信息学数据库开发基本组成部分"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_610_image_3.jpg"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.254,
+            0.335,
+            0.936,
+            0.872
+          ],
+          "sub_type": "text",
+          "content": "① 数据采集与处理 生物信息学数据库通常需要整合各种来源的数据，包括基因组数据、蛋白质信息、生物通路等。数据采集和处理包括数据获取、清洗、转换和标准化，确保数据的质量和一致性。\n② 数据库设计 生物信息学数据库的设计是整个应用的基础。在这一阶段，开发者需要考虑数据的结构化和组织，以及如何存储和管理生物信息数据。常见的数据库类型包括关系型数据库（如 MySQL、PostgreSQL）和非关系型数据库（如 MongoDB），选择适合项目需求的数据库类型非常重要。\n③ 后端框架 开发一个稳健的后端框架是关键。这包括选择合适的编程语言和框架来构建应用程序的逻辑部分。常用的编程语言包括 Python、Java 和 Ruby，而框架如 Django、Flask、Ruby on Rails 等可加速开发过程。\n④ API 开发 提供合适的 API 接口，以便前端和其他应用能够与数据库交互。这些 API 应该能够支持数据查询、检索和更新等操作，同时保护数据的安全性和隐私。\n⑤ 前端开发 前端开发负责创建用户界面，使用户能够轻松地访问和操作数据库中的数据。使用 HTML、CSS 和 JavaScript 等技术来构建交互式的界面，以提供用户友好的体验。\n⑥ 可视化系统 生物信息学数据库通常包括图表、数据可视化和报告生成功能，以帮助研究人员更好地理解数据。使用图形库和可视化工具，将数据以可视化的方式呈现出来，有助于数据的解释和分析。\n⑦ 在线分析软件 一些生物信息学数据库还提供在线分析工具，允许用户对数据进行实时分析和处理。这需要集成合适的分析算法和工具，并确保计算资源的可用性和性能。\n⑧ 安全性和维护 确保数据库应用的安全性对于生物信息学非常关键。实施身份验证、授权和数据加密措施，同时定期备份和监测系统以保持应用的稳定性和可用性。"
+        }
+      ]
+    },
+    {
+      "page_idx": 611,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.622,
+            0.047,
+            0.751,
+            0.06
+          ],
+          "content": "13.4 数据库开发基础"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.929,
+            0.048,
+            0.953,
+            0.059
+          ],
+          "content": "597"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.047,
+            0.092,
+            0.754,
+            0.198
+          ],
+          "content": "在开发生物信息学数据库应用时，理解生物信息学领域的特点和需求非常重要。这包括对基因组学、蛋白质组学和分子生物学等领域的基本知识，以便更好地满足研究人员和科学家的需求。总之，生物信息学数据库应用开发涉及多个关键步骤，从数据库设计到前端界面的构建，都需要仔细考虑。通过合理的规划和开发，可以为生物信息学研究提供强大的工具和平台，促进该领域的发展和创新。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.085,
+            0.202,
+            0.306,
+            0.218
+          ],
+          "level": 2,
+          "content": "13.4.4.2 数据库开发实践"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.047,
+            0.223,
+            0.755,
+            0.285
+          ],
+          "content": "下面以鸢尾花数据集 iris 为例，实现一个简单的在线数据库（只包含一个表格）展示鸢尾花数据信息。数据库端选用 MySQL、业务端和用户端采用 Shiny 技术。需要考虑数据库设计、数据处理和可视化三个主要部分。以下是一个基本的设计思路。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.083,
+            0.29,
+            0.206,
+            0.306
+          ],
+          "level": 2,
+          "content": "(1) 数据收集"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.047,
+            0.312,
+            0.754,
+            0.395
+          ],
+          "content": "iris 数据集由英国统计学家和生物学家罗纳德·费希尔（Ronald Fisher）收集提供，包含 150 个记录，每条记录都有 4 个特征（萼片长度:sepal length；萼片宽度:sepal width；花瓣长度:petal length；花瓣宽度:petal width；均以 cm 为单位）和 1 个物种类别标签。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.082,
+            0.4,
+            0.226,
+            0.417
+          ],
+          "level": 2,
+          "content": "(2) 数据库设计"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.047,
+            0.423,
+            0.753,
+            0.463
+          ],
+          "content": "首先，在MySQL中创建一个数据库和一个表来存储iris数据集。以下是创建表的SQL脚本:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.048,
+            0.477,
+            0.454,
+            0.682
+          ],
+          "sub_type": "code",
+          "content": "```sql\nCREATE DATABASE iris_db;\nUSE iris_db;\nCREATE TABLE iris (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  sepal_length FLOAT,\n  sepal_width FLOAT,\n  petal_length FLOAT,\n  petal_width FLOAT,\n  species VARCHAR(50)\n);\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.08,
+            0.698,
+            0.751,
+            0.716
+          ],
+          "content": "其次，使用 R 包将 iris 数据集导入 MySQL 数据库。以下是具体的 R 包代码:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.047,
+            0.73,
+            0.281,
+            0.747
+          ],
+          "content": "\\# 安装并加载必要的R包"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.049,
+            0.752,
+            0.339,
+            0.852
+          ],
+          "sub_type": "code",
+          "content": "```r\ninstall.packages(\"DBI\")\ninstall.packages(\"RMySQL\")\n\nlibrary(DBI)\nlibrary(RMySQL)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.047,
+            0.877,
+            0.261,
+            0.894
+          ],
+          "content": "\\# 连接到MySQL数据库"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.049,
+            0.899,
+            0.58,
+            0.915
+          ],
+          "sub_type": "code",
+          "content": "```txt\ncon<- dbConnect(RMySQL::MySQL(), user = 'root',\n```",
+          "captions": [],
+          "footnotes": []
+        }
+      ]
+    },
+    {
+      "page_idx": 612,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.0,
+            0.058,
+            0.024,
+            0.068
+          ],
+          "content": "598"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.194,
+            0.053,
+            0.333,
+            0.064
+          ],
+          "content": "13 生物信息学实验基础"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.191,
+            0.095,
+            0.836,
+            0.311
+          ],
+          "sub_type": "code",
+          "content": "```python\npassword = 'root', dbname = 'iris_db', host = 'localhost')\n\n# 加载 iris 数据集\ndata(iris)\n\n# 写入 iris 数据到 MySQL 表中\ndbWriteTable(con, \"iris\", iris, row.names = FALSE,\n    append = TRUE)\n\n# 断开连接\ndbDisconnect(con)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.224,
+            0.324,
+            0.411,
+            0.342
+          ],
+          "level": 2,
+          "content": "(3) 构建 Shiny 应用"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.344,
+            0.884,
+            0.385
+          ],
+          "content": "使用 Shiny 构建一个简单的交互式数据库，用表格和图表方式展示和分析 iris 数据集。数据库包括 UI 和 Server 两部分内容。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.226,
+            0.389,
+            0.321,
+            0.406
+          ],
+          "content": "① UI 部分"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.191,
+            0.416,
+            0.661,
+            0.758
+          ],
+          "sub_type": "code",
+          "content": "```r\nlibrary(shiny)\n\nui <- fluidPage(\n  titlePanel(\"Iris 数据集展示\"),\n  sidebarLayout(\n    sidebarPanel(\n      selectInput(\"species\", \"选择物种\",\n      choices = unique(iris\\$Species)),\n      actionButton(\"search\", \"搜索\")\n  ),\n  mainPanel(\n    tableOutput(\"iris_table\"),\n    plotOutput(\"sepal_plot\"),\n    plotOutput(\"petal_plot\")\n  )\n)\n)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.23,
+            0.768,
+            0.355,
+            0.785
+          ],
+          "content": "② Server 部分"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.196,
+            0.814,
+            0.363,
+            0.869
+          ],
+          "sub_type": "code",
+          "content": "```r\nlibrary(shiny)\nlibrary(DBI)\nlibrary(RMySQL)\n```",
+          "captions": [],
+          "footnotes": []
+        }
+      ]
+    },
+    {
+      "page_idx": 613,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.635,
+            0.039,
+            0.765,
+            0.052
+          ],
+          "content": "13.4 数据库开发基础"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.941,
+            0.043,
+            0.966,
+            0.053
+          ],
+          "content": "599"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.046,
+            0.086,
+            0.718,
+            0.808
+          ],
+          "sub_type": "code",
+          "content": "```r\nserver <- function(input, output) {\n    con <- dbConnect(RMySQL::MySQL(), user = 'root',\n        password = 'root', dbname = 'iris_db',\n        host = 'localhost')\n\n    observeEvent(input\\$search, {\n        species <- input\\$species\n        query <- paste(\"SELECT * FROM iris WHERE species = '',\n            species, \"\", sep = \"\")\n        iris_data <- dbGetQuery(con, query)\n\n        output\\$iris_table <- renderTable({\n            iris_data\n        })\n\n        output\\$sepal_plot <- renderPlot({\n            plot(iris_data\\$sepal_length, iris_data\\$sepal_width,\n                main = \"Sepal Length vs Width\",\n                xlab = \"Sepal Length\", ylab = \"Sepal Width\",\n                col = iris_data\\$species)\n        })\n\n        output\\$petal_plot <- renderPlot({\n            plot(iris_data\\$petal_length, iris_data\\$petal_width,\n                main = \"Petal Length vs Width\",\n                xlab = \"Petal Length\", ylab = \"Petal Width\",\n                col = iris_data\\$species)\n        })\n    })\n\n    onSessionEnded(function() {\n        dbDisconnect(con)\n    })\n}\n\nshinyApp(ui = ui, server = server)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.084,
+            0.818,
+            0.17,
+            0.835
+          ],
+          "level": 2,
+          "content": "(4) 部署"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.049,
+            0.841,
+            0.767,
+            0.88
+          ],
+          "content": "将 Shiny 应用部署到 Shiny Server 或其他支持 R Shiny 的服务器上，以便用户可以通过浏览器访问和使用该应用。"
+        }
+      ]
+    },
+    {
+      "page_idx": 614,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.0,
+            0.044,
+            0.026,
+            0.055
+          ],
+          "content": "600"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.197,
+            0.042,
+            0.333,
+            0.054
+          ],
+          "content": "13 生物信息学实验基础"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.203,
+            0.091,
+            0.314,
+            0.11
+          ],
+          "level": 2,
+          "content": "※ 推荐阅读"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.192,
+            0.139,
+            0.875,
+            0.31
+          ],
+          "sub_type": "text",
+          "content": "1. Alser M, Lawlor B, Abdill R J, et al. Packaging and containerization of computational methods [J]. Nature protocols, 2024, 19: 2529-2539.\n点评:该文系统介绍了在计算生物学和生物信息学领域中，打包（packaging）和容器化（containerization）技术的应用与实践。这些技术通过整合软件工具及其依赖环境，简化了复杂计算方法的安装与部署，极大地提升了工具的可用性和可重复性。\n2. Gentleman R, Carey V J, Huber W, et al. Bioinformatics and computational biology solutions using R and Bioconductor [M]. Heidelberg: Springer, 2021."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.192,
+            0.313,
+            0.874,
+            0.395
+          ],
+          "content": "点评:该书深入讲解了如何利用 R 语言及 Bioconductor 工具进行生物信息学数据分析。书中涵盖了基因组学、转录组学和蛋白质组学的常见数据处理流程，着重介绍了标准化分析工作流的设计和实现，特别适合生物信息学领域初学者和中级研究人员参考。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.192,
+            0.4,
+            0.874,
+            0.44
+          ],
+          "content": "3. Ma X K, Yu Y, Huang T, et al. Bioinformatics software development: principles and future directions [J]. The innovation life, 2024, 2(3): 100083."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.192,
+            0.444,
+            0.874,
+            0.505
+          ],
+          "content": "点评:该文系统阐述了生物信息学软件开发的原则和未来的发展方向，强调了人工智能（AI）在加速和增强生物信息学软件开发过程中的重要性，并展望了AI增强的云计算如何为自主研究铺平道路。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.192,
+            0.51,
+            0.874,
+            0.571
+          ],
+          "content": "4. Younens-Clark K. Mastering Python for bioinformatics: how to write flexible, documented, tested Python code for research computing [M]. California: O'Reilly Media, 2021."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.192,
+            0.575,
+            0.874,
+            0.637
+          ],
+          "content": "点评:该书介绍使用Python进行生物信息学编程，除了编程本身，还涵盖了文档、测试可重复性等话题，并通过实例如解析FASTA/FASTQ文件来学习生物信息学编程技巧。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.203,
+            0.668,
+            0.356,
+            0.687
+          ],
+          "level": 2,
+          "content": "※ 思考与练习题"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.229,
+            0.716,
+            0.875,
+            0.887
+          ],
+          "sub_type": "text",
+          "content": "1. 为什么编程在生物信息学中扮演了重要角色？\n2. 生物信息学数据分析流程的核心要素有哪些？\n3. 构建生物学数据库时需要考虑哪些设计原则？\n4. 思考如何将不同的组学数据类型存储在 R 或者 Python 对应的数据结构中。分别使用 R 和 Python 代码实现这些数据的存储和简单操作（如子集提取、聚合统计或可视化）。\n5. 如何为大规模组学数据（如单细胞转录组数据）选择更高效的存储和处理工具（如 R 中的 Seurat 对象、SingleCellExperiment 或 Python 中的 AnnData 对象）?"
+        }
+      ]
+    },
+    {
+      "page_idx": 615,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.705,
+            0.052,
+            0.747,
+            0.064
+          ],
+          "content": "讨论题"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.925,
+            0.05,
+            0.949,
+            0.062
+          ],
+          "content": "601"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.046,
+            0.096,
+            0.393,
+            0.113
+          ],
+          "content": "讨论其优缺点，并实现一个简单的例子。"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.045,
+            0.118,
+            0.749,
+            0.29
+          ],
+          "sub_type": "text",
+          "content": "6. 结合 ChatGPT 或 DeepSeek 以及本章的编程基础知识，综合使用 Shell、R 和 Python 编程技术，尝试实现本书前面的章节中不同组学的基本分析流程搭建。\n7. 借助 ChatGPT 或 DeepSeek 的代码生成能力，针对某个具体分析任务（如基因表达量化分析），实现一个 Nextflow 分析流程。\n8. 基于 MySQL 和 Python 技术，尝试开发一个涉及多个表格的生物信息学数据库（辅助使用 ChatGPT）。\n9. 在生物信息学数据分析中，常常需要使用不同的算法（如聚类、分类、降维等）来处理复杂的生物数据。请分析并讨论以下问题:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.045,
+            0.295,
+            0.75,
+            0.4
+          ],
+          "sub_type": "text",
+          "content": "(1) 如何选择适合不同类型组学数据的算法?\n（2）对于高维数据（如基因表达数据），常用的降维算法有哪些？请分别简述它们的优缺点。\n(3) 实现一个基于 PCA 或 t-SNE 的降维过程, 使用 R 或 Python 对基因表达数据进行降维并可视化。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.083,
+            0.405,
+            0.714,
+            0.423
+          ],
+          "content": "10. 数据清洗和预处理是生物信息学分析中的重要步骤。请完成以下任务:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.045,
+            0.428,
+            0.749,
+            0.512
+          ],
+          "sub_type": "text",
+          "content": "（1）选择一个常见的组学数据类型（如基因表达数据、甲基化数据等），进行数据清洗和预处理（如去除缺失值、标准化、去除低表达基因等）。\n（2）使用R或Python代码实现数据清洗和预处理过程，并对结果进行可视化（例如，绘制标准化后的基因表达热图）。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.055,
+            0.545,
+            0.15,
+            0.563
+          ],
+          "level": 2,
+          "content": "※ 讨论题"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.045,
+            0.593,
+            0.75,
+            0.854
+          ],
+          "sub_type": "text",
+          "content": "1. R 和 Python 在生物信息学中的应用都很广泛。请分析两者在生物信息学中的优缺点，特别是在数据处理、可视化和算法实现方面的表现。在实际的生物学研究中，哪种语言更为适合？为什么？\n2. 在生物信息学研究中，数据质量对分析结果的影响非常大。请讨论在基因组学和转录组学数据处理中，常见的数据质量控制步骤（如数据去除、过滤、归一化等）。哪些步骤是必不可少的，哪些步骤可以根据具体情况灵活调整？\n3. 随着多组学技术的广泛应用，如何将来自不同组学（如基因组学、转录组学、蛋白质组学等）的数据进行有效整合和分析，成为一个重要的研究方向。请讨论多组学数据整合的挑战、方法和潜在的应用前景。\n4. 开放源代码的生物信息学工具（如 Bioconductor 等）和封闭源代码的商业软件（如 GeneSpring 等）各有优缺点。请讨论它们在使用中的不同之处，包括其可访问性、可定制性、成本和性能等方面。哪种工具更适合大规模生物数据分析？"
+        }
+      ]
+    },
+    {
+      "page_idx": 616,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.0,
+            0.047,
+            0.025,
+            0.058
+          ],
+          "content": "602"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.2,
+            0.049,
+            0.338,
+            0.06
+          ],
+          "content": "13 生物信息学实验基础"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.207,
+            0.096,
+            0.32,
+            0.114
+          ],
+          "level": 2,
+          "content": "※ 参考文献"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.194,
+            0.141,
+            0.87,
+            0.39
+          ],
+          "sub_type": "ref_text",
+          "content": "1. Di T P, Chatzou M, Floden E, et al. Nextflow enables reproducible computational workflows [J]. Nature biotechnology, 2017, 35: 316-319.\n2. Gentleman R C, Carey V J, Bates D M, et al. Bioconductor: open software development for computational biology and bioinformatics [J]. Genome biology, 2004, 5: R80.\n3. Harris C R, Millman K J, van der Walt S J, et al. Array programming with NumPy [J]. Nature, 2020, 585: 357-362.\n4. Köster J, Rahmann S. Snakemake: a scalable bioinformatics workflow engine [J]. Bioinformatics, 2012, 28(19): 2520-2522.\n5. Wratten L, Wilm A, Göke J. Reproducible, scalable, and shareable analysis pipelines with bioinformatics workflow managers [J]. Nature methods, 2021, 18: 1161-1168."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.481,
+            0.413,
+            0.701,
+            0.43
+          ],
+          "content": "编者:陈迪俊（南京大学）"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.538,
+            0.433,
+            0.737,
+            0.45
+          ],
+          "content": "余光创（南方医科大学）"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.481,
+            0.453,
+            0.863,
+            0.47
+          ],
+          "content": "审读:章 张（中国科学院北京基因组研究所）"
+        }
+      ]
+    },
+    {
+      "page_idx": 617,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.052,
+            0.109,
+            0.202,
+            0.139
+          ],
+          "content": "名词索引"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.054,
+            0.365,
+            0.276,
+            0.38
+          ],
+          "content": "I 型错误（type I error） 36"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.384,
+            0.276,
+            0.398
+          ],
+          "content": "Ⅱ型错误（type Ⅱ error） 36"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.051,
+            0.416,
+            0.066,
+            0.43
+          ],
+          "level": 2,
+          "content": "B"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.439,
+            0.245,
+            0.453
+          ],
+          "content": "倍数法（fold-change） 19"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.456,
+            0.336,
+            0.471
+          ],
+          "content": "备择假设（alternative hypothesis） 35"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.474,
+            0.438,
+            0.489
+          ],
+          "content": "变分自编码器（variational autoencoder，VAE） 105"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.492,
+            0.205,
+            0.506
+          ],
+          "content": "变量（variable） 27"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.51,
+            0.337,
+            0.524
+          ],
+          "content": "变异系数（coefficient of variation） 29"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.527,
+            0.297,
+            0.542
+          ],
+          "content": "标准差（standard deviation） 29"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.545,
+            0.283,
+            0.559
+          ],
+          "content": "标准误差（standard error） 34"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.563,
+            0.492,
+            0.596
+          ],
+          "content": "表达数量性状基因座（expression quantitative trait locus, eQTL） 389"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.599,
+            0.236,
+            0.614
+          ],
+          "content": "表型组（phenome） 366"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.051,
+            0.631,
+            0.067,
+            0.645
+          ],
+          "level": 2,
+          "content": "C"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.655,
+            0.221,
+            0.669
+          ],
+          "content": "参数（parameter） 28"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.672,
+            0.332,
+            0.687
+          ],
+          "content": "参数估计（parameter estimation） 32"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.69,
+            0.454,
+            0.705
+          ],
+          "content": "残差神经网络（residual neural network, ResNet） 102"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.708,
+            0.33,
+            0.722
+          ],
+          "content": "测量模型（measurement model） 384"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.725,
+            0.336,
+            0.74
+          ],
+          "content": "层次聚类（hierarchical clustering） 80"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.744,
+            0.438,
+            0.758
+          ],
+          "content": "长短期记忆（long short-term memory, LSTM） 103"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.761,
+            0.277,
+            0.776
+          ],
+          "content": "超参数（hyperparameter） 94"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.779,
+            0.393,
+            0.794
+          ],
+          "content": "超几何分布（hypergeometric distribution） 49"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.797,
+            0.323,
+            0.811
+          ],
+          "content": "重复序列（repetitive sequence） 149"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.814,
+            0.331,
+            0.829
+          ],
+          "content": "抽样分布（sampling distribution） 33"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.832,
+            0.249,
+            0.846
+          ],
+          "content": "次梯度（subgradient） 69"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.849,
+            0.382,
+            0.864
+          ],
+          "content": "错误发现率（false discovery rate, FDR） 45"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.051,
+            0.88,
+            0.067,
+            0.894
+          ],
+          "level": 2,
+          "content": "D"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.052,
+            0.903,
+            0.406,
+            0.918
+          ],
+          "content": "大语言模型（large language model, LLM） 107"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.366,
+            0.755,
+            0.381
+          ],
+          "content": "代谢组学（metabonomics） 350"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.384,
+            0.743,
+            0.398
+          ],
+          "content": "单侧检验（one-sided test） 36"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.402,
+            0.952,
+            0.417
+          ],
+          "content": "单核苷酸多态性（single nucleotide polymorphism, SNP） 68"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.42,
+            0.813,
+            0.434
+          ],
+          "content": "单因素方差分析（one-way ANOVA） 41"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.437,
+            0.886,
+            0.453
+          ],
+          "content": "等距特征映射（isometric mapping, ISOMAP） 77"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.455,
+            0.869,
+            0.47
+          ],
+          "content": "低维空间嵌入（low dimensional embedding） 77"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.473,
+            0.916,
+            0.488
+          ],
+          "content": "独立性卡方检验（chi-square test for independence） 48"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.491,
+            0.848,
+            0.506
+          ],
+          "content": "多尺度表型组学（multiscale phenomics） 373"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.509,
+            0.839,
+            0.523
+          ],
+          "content": "多重检验校正（multiple test correction） 45"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.514,
+            0.54,
+            0.528,
+            0.554
+          ],
+          "level": 2,
+          "content": "F"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.564,
+            0.82,
+            0.578
+          ],
+          "content": "Fisher 精确检验（Fisher's exact test） 49"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.582,
+            0.729,
+            0.596
+          ],
+          "content": "反事实（counterfactual） 82"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.6,
+            0.823,
+            0.614
+          ],
+          "content": "反事实结果（counterfactual outcome） 83"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.618,
+            0.671,
+            0.632
+          ],
+          "content": "方差（variance） 29"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.635,
+            0.853,
+            0.65
+          ],
+          "content": "方差分析（analysis of variance, ANOVA） 41"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.653,
+            0.798,
+            0.667
+          ],
+          "content": "非参数检验（non-parametric test） 52"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.671,
+            0.668,
+            0.685
+          ],
+          "content": "峰度（kurtosis） 30"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.689,
+            0.772,
+            0.704
+          ],
+          "content": "符号秩检验（signed rank test） 52"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.514,
+            0.721,
+            0.53,
+            0.735
+          ],
+          "level": 2,
+          "content": "G"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.744,
+            0.9,
+            0.759
+          ],
+          "content": "高维尺度分析（multidimensional scaling，MDS） 77"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.762,
+            0.683,
+            0.776
+          ],
+          "content": "个体（individual） 26"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.78,
+            0.951,
+            0.811
+          ],
+          "content": "个体处理稳定性假设（stable unit treatment value assumption, SUTVA） 85"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.815,
+            0.879,
+            0.829
+          ],
+          "content": "个体因果效应（individual causal effect，ICE） 83"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.512,
+            0.847,
+            0.526,
+            0.861
+          ],
+          "level": 2,
+          "content": "J"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.869,
+            0.95,
+            0.9
+          ],
+          "content": "基本局部比对搜索工具（Basic Local Alignment Search Tool, BLAST） 153"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.514,
+            0.903,
+            0.827,
+            0.918
+          ],
+          "content": "机器学习（machine learning，ML） 16,93"
+        }
+      ]
+    },
+    {
+      "page_idx": 618,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.054,
+            0.055,
+            0.078,
+            0.066
+          ],
+          "content": "604"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.245,
+            0.054,
+            0.296,
+            0.066
+          ],
+          "content": "名词索引"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.1,
+            0.185,
+            0.114
+          ],
+          "content": "极差（range） 29"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.117,
+            0.3,
+            0.131
+          ],
+          "content": "假设检验（hypothesis testing） 32"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.134,
+            0.309,
+            0.148
+          ],
+          "content": "监督学习（supervised learning） 94"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.151,
+            0.278,
+            0.164
+          ],
+          "content": "检验统计量（test statistic） 35"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.168,
+            0.377,
+            0.182
+          ],
+          "content": "简单随机抽样（simple random sampling） 27"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.185,
+            0.285,
+            0.198
+          ],
+          "content": "交叉验证（cross-validation） 74"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.202,
+            0.3,
+            0.215
+          ],
+          "content": "结构模型（structural model） 385"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.219,
+            0.421,
+            0.233
+          ],
+          "content": "结构因果模型（struetnral cansal model、SCM） 82"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.236,
+            0.426,
+            0.25
+          ],
+          "content": "结构约束 LASSO（structure constraint LASSO） 71"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.253,
+            0.348,
+            0.266
+          ],
+          "content": "结果回归（outcome regression, OR） 86"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.27,
+            0.312,
+            0.284
+          ],
+          "content": "精准医学（precision medicine） 464"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.287,
+            0.364,
+            0.301
+          ],
+          "content": "局部线性嵌入（local linear embedding） 78"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.304,
+            0.35,
+            0.318
+          ],
+          "content": "局部线性映射（local linear mapping） 78"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.321,
+            0.269,
+            0.336
+          ],
+          "content": "拒绝域（rejection region） 35"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.339,
+            0.468,
+            0.353
+          ],
+          "content": "卷积神经网络（convolutional neural network，CNN） 101"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.357,
+            0.185,
+            0.371
+          ],
+          "content": "均值（mean） 28"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.055,
+            0.388,
+            0.071,
+            0.402
+          ],
+          "level": 2,
+          "content": "K"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.41,
+            0.334,
+            0.425
+          ],
+          "content": "卡方分布（chi-square distribution） 47"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.428,
+            0.259,
+            0.443
+          ],
+          "content": "可忽略性（ignorability） 83"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.446,
+            0.292,
+            0.46
+          ],
+          "content": "扩散模型（diffusion model） 107"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.055,
+            0.478,
+            0.071,
+            0.492
+          ],
+          "level": 2,
+          "content": "L"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.501,
+            0.285,
+            0.516
+          ],
+          "content": "列联表（contingency table） 48"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.519,
+            0.254,
+            0.533
+          ],
+          "content": "临界值（critical value） 35"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.536,
+            0.272,
+            0.551
+          ],
+          "content": "岭回归（ridge regression） 67"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.055,
+            0.568,
+            0.074,
+            0.582
+          ],
+          "level": 2,
+          "content": "M"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.59,
+            0.399,
+            0.605
+          ],
+          "content": "曼-惠特尼 U 检验（Mann-Whitney U test） 52"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.608,
+            0.325,
+            0.623
+          ],
+          "content": "敏感性分析（sensitivity analysis） 87"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.626,
+            0.301,
+            0.64
+          ],
+          "content": "模型评估（model assessment） 73"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.644,
+            0.285,
+            0.658
+          ],
+          "content": "模型选择（model selection） 73"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.055,
+            0.675,
+            0.071,
+            0.689
+          ],
+          "level": 2,
+          "content": "N"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.698,
+            0.341,
+            0.713
+          ],
+          "content": "拟合优度检验（goodness of fit test） 47"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.055,
+            0.729,
+            0.071,
+            0.743
+          ],
+          "level": 2,
+          "content": "P"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.753,
+            0.221,
+            0.768
+          ],
+          "content": "p 值 (p value) 19, 36"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.771,
+            0.259,
+            0.785
+          ],
+          "content": "配对数据（paired data） 38"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.788,
+            0.21,
+            0.802
+          ],
+          "content": "偏度（skewness） 29"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.805,
+            0.461,
+            0.82
+          ],
+          "content": "频数频率表（frequency and relative frequency table） 30"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.055,
+            0.836,
+            0.074,
+            0.85
+          ],
+          "level": 2,
+          "content": "Q"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.859,
+            0.294,
+            0.874
+          ],
+          "content": "潜在变量（latent variables） 384"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.876,
+            0.437,
+            0.891
+          ],
+          "content": "潜在结果模型（potential outcome model, POM） 82"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.101,
+            0.794,
+            0.116
+          ],
+          "content": "强化学习（reinforcement learning） 94"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.119,
+            0.941,
+            0.148
+          ],
+          "content": "全表型组关联研究（phenome-wide association study, Phe-WAS） 394"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.151,
+            0.944,
+            0.183
+          ],
+          "content": "全基因组关联分析（genome-wide association study, GWAS）\n68, 386"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.502,
+            0.198,
+            0.519,
+            0.212
+          ],
+          "level": 2,
+          "content": "R"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.219,
+            0.815,
+            0.234
+          ],
+          "content": "人工智能（artificial intelligence，AI） 92"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.236,
+            0.758,
+            0.25
+          ],
+          "content": "融合 LASSO (fused LASSO) 71"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.502,
+            0.266,
+            0.518,
+            0.281
+          ],
+          "level": 2,
+          "content": "S"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.289,
+            0.703,
+            0.303
+          ],
+          "content": "散点图（scatter plot） 31"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.306,
+            0.774,
+            0.32
+          ],
+          "content": "深度学习（deep learning, DL） 96"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.324,
+            0.944,
+            0.338
+          ],
+          "content": "生成对抗网络（generative adversarial network, GAN） 105"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.341,
+            0.74,
+            0.355
+          ],
+          "content": "生物统计学（biostatistics） 26"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.358,
+            0.749,
+            0.372
+          ],
+          "content": "生物信息学（bioinformatics） 2"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.375,
+            0.707,
+            0.39
+          ],
+          "content": "数据类型（data type） 27"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.393,
+            0.726,
+            0.407
+          ],
+          "content": "数据特征（data feature） 27"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.411,
+            0.738,
+            0.425
+          ],
+          "content": "双侧检验（two-sided test） 36"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.428,
+            0.797,
+            0.443
+          ],
+          "content": "双稳健估计（doubly robust, DR） 86"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.446,
+            0.813,
+            0.461
+          ],
+          "content": "双因素方差分析（two-way ANOVA） 42"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.464,
+            0.637,
+            0.478
+          ],
+          "content": "水平（level） 42"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.481,
+            0.819,
+            0.496
+          ],
+          "content": "四分位距（interquartile range, IQR） 29"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.499,
+            0.844,
+            0.514
+          ],
+          "content": "随机抽样模型（random sampling model） 27"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.517,
+            0.765,
+            0.531
+          ],
+          "content": "随机区组（randomized block） 42"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.502,
+            0.548,
+            0.518,
+            0.562
+          ],
+          "level": 2,
+          "content": "T"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.572,
+            0.674,
+            0.586
+          ],
+          "content": "Transformer 网络 107"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.59,
+            0.949,
+            0.622
+          ],
+          "content": "t 分布式随机邻域嵌入（t-distributed stochastic neighbor embedding, t-SNE） 78"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.625,
+            0.656,
+            0.639
+          ],
+          "content": "t 检验（t-test） 37"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.643,
+            0.84,
+            0.659
+          ],
+          "content": "条件可忽略性（conditional ignorability） 84"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.661,
+            0.699,
+            0.676
+          ],
+          "content": "同源（homologous） 150"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.679,
+            0.68,
+            0.693
+          ],
+          "content": "统计量（statistic） 27"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.697,
+            0.78,
+            0.711
+          ],
+          "content": "统计推断（statistical inference） 32"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.714,
+            0.687,
+            0.729
+          ],
+          "content": "统计学（statistics） 26"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.733,
+            0.774,
+            0.748
+          ],
+          "content": "统计学习（statistical learning） 16"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.751,
+            0.95,
+            0.783
+          ],
+          "content": "统一流形逼近与投影（uniform manifold approximation and projection, UMAP）78"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.786,
+            0.751,
+            0.801
+          ],
+          "content": "图 LASSO（graph LASSO） 71"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.804,
+            0.858,
+            0.819
+          ],
+          "content": "图卷积网络（graph convolution network） 102"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.505,
+            0.835,
+            0.527,
+            0.849
+          ],
+          "level": 2,
+          "content": "W"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.859,
+            0.752,
+            0.874
+          ],
+          "content": "网络模体（network motif） 429"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.5,
+            0.877,
+            0.775,
+            0.891
+          ],
+          "content": "韦尔奇 t 检验（Welch's t-test） 38"
+        }
+      ]
+    },
+    {
+      "page_idx": 619,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.72,
+            0.048,
+            0.774,
+            0.06
+          ],
+          "content": "名词索引"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.95,
+            0.047,
+            0.976,
+            0.058
+          ],
+          "content": "605"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.068,
+            0.096,
+            0.327,
+            0.112
+          ],
+          "content": "伪关联（spurious association） 81"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.068,
+            0.114,
+            0.373,
+            0.131
+          ],
+          "content": "无监督学习（unsupervised learning） 94"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.068,
+            0.145,
+            0.085,
+            0.16
+          ],
+          "level": 2,
+          "content": "X"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.068,
+            0.169,
+            0.337,
+            0.185
+          ],
+          "content": "系统生物学（systems biology） 416"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.068,
+            0.188,
+            0.331,
+            0.203
+          ],
+          "content": "显著性检验（significance test） 36"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.068,
+            0.206,
+            0.336,
+            0.221
+          ],
+          "content": "显著性水平（significance level） 35"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.068,
+            0.224,
+            0.411,
+            0.24
+          ],
+          "content": "限制性内切酶（restriction endonuclease） 148"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.068,
+            0.243,
+            0.338,
+            0.258
+          ],
+          "content": "相关分析（correlation analysis） 19"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.068,
+            0.261,
+            0.244,
+            0.277
+          ],
+          "content": "箱线图（box-plot） 31"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.068,
+            0.28,
+            0.35,
+            0.295
+          ],
+          "content": "辛普森悖论（Simpson's paradox） 81"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.068,
+            0.298,
+            0.385,
+            0.313
+          ],
+          "content": "学生 t 分布（Student's t-distribution） 34"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.068,
+            0.317,
+            0.47,
+            0.333
+          ],
+          "content": "循环神经网络（recurrent neural network, RNN） 103"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.068,
+            0.348,
+            0.085,
+            0.363
+          ],
+          "level": 2,
+          "content": "Y"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.068,
+            0.372,
+            0.22,
+            0.388
+          ],
+          "content": "样本（sample） 26"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.068,
+            0.391,
+            0.282,
+            0.406
+          ],
+          "content": "样本容量（sample size） 27"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.068,
+            0.409,
+            0.447,
+            0.424
+          ],
+          "content": "药物不良反应（adverse drug reaction, ADR） 500"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.068,
+            0.427,
+            0.452,
+            0.443
+          ],
+          "content": "耶茨连续性校正（Yates's continuity correction） 49"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.068,
+            0.446,
+            0.463,
+            0.462
+          ],
+          "content": "隐马尔可夫模型（hidden Markov model，HMM） 63"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.534,
+            0.097,
+            0.757,
+            0.113
+          ],
+          "content": "原假设（null hypothesis） 35"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.534,
+            0.145,
+            0.55,
+            0.16
+          ],
+          "level": 2,
+          "content": "Z"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.534,
+            0.169,
+            0.693,
+            0.184
+          ],
+          "content": "Z检验（Z-test） 37"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.534,
+            0.188,
+            0.718,
+            0.203
+          ],
+          "content": "折线图（line chart） 30"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.534,
+            0.206,
+            0.734,
+            0.222
+          ],
+          "content": "正性假设（positivity） 84"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.534,
+            0.224,
+            0.899,
+            0.24
+          ],
+          "content": "支持向量机（support vector machine, SVM） 74"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.534,
+            0.243,
+            0.721,
+            0.258
+          ],
+          "content": "直方图（histogram） 31"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.534,
+            0.261,
+            0.652,
+            0.276
+          ],
+          "content": "秩（rank） 52"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.534,
+            0.28,
+            0.765,
+            0.295
+          ],
+          "content": "秩和检验（rank sum test） 52"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.534,
+            0.298,
+            0.797,
+            0.313
+          ],
+          "content": "置信区间（confidence interval） 34"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.534,
+            0.316,
+            0.702,
+            0.332
+          ],
+          "content": "中位数（median） 28"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.534,
+            0.335,
+            0.674,
+            0.35
+          ],
+          "content": "众数（mode） 29"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.534,
+            0.354,
+            0.937,
+            0.369
+          ],
+          "content": "主成分分析（principal component analysis, PCA） 77"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.534,
+            0.372,
+            0.806,
+            0.387
+          ],
+          "content": "自由度（degree of freedom, df） 34"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.534,
+            0.39,
+            0.711,
+            0.406
+          ],
+          "content": "总体（population） 26"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.534,
+            0.409,
+            0.873,
+            0.424
+          ],
+          "content": "组间方差（variance between laboratories） 41"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.534,
+            0.427,
+            0.852,
+            0.443
+          ],
+          "content": "组内方差（variance within laboratory） 41"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.534,
+            0.446,
+            0.814,
+            0.461
+          ],
+          "content": "坐标下降法（coordinate descent） 69"
+        }
+      ]
+    },
+    {
+      "page_idx": 620,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.107,
+            0.088,
+            0.178,
+            0.103
+          ],
+          "level": 2,
+          "content": "郑重声明"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.076,
+            0.111,
+            0.729,
+            0.21
+          ],
+          "content": "高等教育出版社依法对本书享有专有出版权。任何未经许可的复制、销售行为均违反《中华人民共和国著作权法》，其行为人将承担相应的民事责任和行政责任；构成犯罪的，将被依法追究刑事责任。为了维护市场秩序，保护读者的合法权益，避免读者误用盗版书造成不良后果，我社将配合行政执法部门和司法机关对违法犯罪的单位和个人进行严厉打击。社会各界人士如发现上述侵权行为，希望及时举报，我社将奖励举报有功人员。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.216,
+            0.414,
+            0.23
+          ],
+          "content": "反盗版举报电话（010）58581999 58582371"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.234,
+            0.33,
+            0.249
+          ],
+          "content": "反盗版举报邮箱 dd@hep.com.cn"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.251,
+            0.632,
+            0.267
+          ],
+          "content": "通信地址 北京市西城区德外大街4号 高等教育出版社知识产权与法律事务部"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.269,
+            0.233,
+            0.284
+          ],
+          "content": "邮政编码 100120"
+        }
+      ]
+    },
+    {
+      "page_idx": 621,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            0.0,
+            0.038,
+            0.143,
+            0.332
+          ],
+          "sub_type": "text_image",
+          "content": "100",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_621_image_0.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.169,
+            0.088,
+            0.361,
+            0.126
+          ],
+          "level": 2,
+          "content": "“101计划”核心教材 生物科学领域"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.17,
+            0.142,
+            0.35,
+            0.157
+          ],
+          "content": "普通生物学 / 赵进东 金力"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.17,
+            0.159,
+            0.491,
+            0.174
+          ],
+          "content": "生物化学（上、下册）/ 昌增益 施一公 王新泉"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.176,
+            0.409,
+            0.191
+          ],
+          "content": "细胞与分子生物学 / 陈晔光 陈建国"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.193,
+            0.397,
+            0.208
+          ],
+          "content": "遗传学和发育生物学 / 许田 金力"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.211,
+            0.418,
+            0.225
+          ],
+          "content": "生理学原理 / 王世强 梅岩艾 朱景宁"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.227,
+            0.389,
+            0.242
+          ],
+          "content": "微生物学 / 邓子新 陈峰 陈向东"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.244,
+            0.422,
+            0.26
+          ],
+          "content": "神经生物学导论 / 饶毅 梅林 段树民"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.262,
+            0.404,
+            0.276
+          ],
+          "content": "生物物理学 / 施一公 汤超 王宏伟"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.279,
+            0.418,
+            0.293
+          ],
+          "content": "普通生态学 / 方精云 唐志尧 王志恒"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.296,
+            0.337,
+            0.31
+          ],
+          "content": "生物信息学 / 陈铭 吕晖"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.312,
+            0.296,
+            0.327
+          ],
+          "content": "免疫生物学 / 董晨"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.33,
+            0.395,
+            0.344
+          ],
+          "content": "普通生物学实验 / 林宏辉 赵进东"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.346,
+            0.434,
+            0.361
+          ],
+          "content": "生物化学实验 / 周丛照 昌增益 施一公"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.363,
+            0.44,
+            0.378
+          ],
+          "content": "细胞与分子生物学实验 / 陈建国 陈晔光"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.38,
+            0.368,
+            0.395
+          ],
+          "content": "现代遗传学实验 / 许田 金力"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.397,
+            0.565,
+            0.412
+          ],
+          "content": "生理学和神经生物学实验 / 朱景宁 高志华 王世强 梅岩艾"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.414,
+            0.422,
+            0.428
+          ],
+          "content": "生物信息学实验 / 陈铭 吕晖 陈迪俊"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.43,
+            0.395,
+            0.445
+          ],
+          "content": "普通生态学实验 / 唐志尧 吉成均"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.175,
+            0.854,
+            0.302,
+            0.942
+          ],
+          "content": "扫一扫 请真伪\n获取增值服务"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.312,
+            0.879,
+            0.463,
+            0.901
+          ],
+          "content": "新形态教材网"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.312,
+            0.902,
+            0.481,
+            0.913
+          ],
+          "content": "网址:abooks.hep.com.cn/64131"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.313,
+            0.913,
+            0.414,
+            0.922
+          ],
+          "content": "使用说明详见书内版权页"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.8,
+            0.836,
+            0.943,
+            0.916
+          ],
+          "content": "ISBN 978-7-04-064131-8\n9 787040 641318>"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.816,
+            0.922,
+            0.924,
+            0.936
+          ],
+          "content": "定价 156.00 元"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {}
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 608,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 609,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 610,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 611,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 612,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 613,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 614,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 615,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 616,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 617,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 618,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 619,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 620,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 621,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

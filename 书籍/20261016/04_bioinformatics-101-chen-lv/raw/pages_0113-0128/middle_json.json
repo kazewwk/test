@@ -1,0 +1,4501 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {}
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 112,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 113,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 114,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 115,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 116,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 117,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 118,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 119,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 120,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 121,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 122,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 123,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 124,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 125,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 126,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 127,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 112,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.043,
+            0.052,
+            0.069,
+            0.062
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "098"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.247,
+            0.052,
+            0.388,
+            0.065
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3 深度学习和人工智能"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.246,
+            0.1,
+            0.495,
+            0.123
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.2 深度学习基础"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.246,
+            0.152,
+            0.423,
+            0.171
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.2.1 神经网络"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.244,
+            0.19,
+            0.955,
+            0.25
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "神经网络是由若干简单处理单元相互连接而成的机器学习模型。受生物体神经元（图3-7a）的启发，神经网络的基本处理单元（即神经元）接受多个输入，进行整合之后，产生一个输出值。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.243,
+            0.256,
+            0.956,
+            0.317
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "图3-7b是一个能实现线性回归的最简单神经网络，每个输入神经元接收一个输入特征；输出神经元与所有的输入神经元相连，对输入加权求和再加上偏置项 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b"
+            },
+            {
+              "type": "text",
+              "content": " 得到激活值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "z"
+            },
+            {
+              "type": "text",
+              "content": " ，这里直接将 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "z"
+            },
+            {
+              "type": "text",
+              "content": " 作为预测值输出。该网络可以表示为:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.463,
+            0.323,
+            0.955,
+            0.365
+          ],
+          "image_path": "images/page_112_equation_6.jpg",
+          "content": "y = z = \\sum_ {i = 0} ^ {D} w _ {i} x _ {i} + b = \\boldsymbol {w} ^ {T} \\boldsymbol {x} + b \\tag {3-2}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.244,
+            0.376,
+            0.956,
+            0.437
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{i}"
+            },
+            {
+              "type": "text",
+              "content": "  为第 i 个特征的值， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "w_{i}"
+            },
+            {
+              "type": "text",
+              "content": "  为第 i 个输入神经元与输出神经元之间连接的权重。神经元还可以加上激活函数（activation function），记为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(z)"
+            },
+            {
+              "type": "text",
+              "content": " ，在上例中用逻辑斯谛函数（Logistic function）作为激活函数即可实现逻辑回归:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.498,
+            0.447,
+            0.955,
+            0.468
+          ],
+          "image_path": "images/page_112_equation_8.jpg",
+          "content": "y = g (z) = g \\left(\\boldsymbol {w} ^ {T} \\boldsymbol {x} + b\\right) \\tag {3-3}"
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.534,
+            0.473,
+            0.955,
+            0.504
+          ],
+          "image_path": "images/page_112_equation_9.jpg",
+          "content": "g (z) = \\frac {1}{1 + e ^ {- z}} \\tag {3-4}"
+        },
+        {
+          "type": "image",
+          "index": 10,
+          "bbox": [
+            0.046,
+            0.547,
+            0.335,
+            0.615
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 10,
+              "bbox": [
+                0.046,
+                0.547,
+                0.335,
+                0.615
+              ],
+              "image_path": "images/page_112_image_10.jpg",
+              "content": "树突\n胞体\n髓鞘\n轴突"
+            },
+            {
+              "type": "image_caption",
+              "index": 11,
+              "bbox": [
+                0.177,
+                0.617,
+                0.2,
+                0.63
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a)"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "image",
+          "index": 12,
+          "bbox": [
+            0.058,
+            0.641,
+            0.317,
+            0.719
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 12,
+              "bbox": [
+                0.058,
+                0.641,
+                0.317,
+                0.719
+              ],
+              "image_path": "images/page_112_image_12.jpg",
+              "content": "```mermaid\ngraph LR\n  x0[\"x0\"] -->|\"ω0\"| Sum\n  x1[\"x1\"] -->|\"ω1\"| Sum\n  x2[\"x2\"] -->|\"ω2\"| Sum\n  Sum[\"z = Σ_i ω_i x_i + b\"] --> y[\"y\"]\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 13,
+              "bbox": [
+                0.176,
+                0.718,
+                0.199,
+                0.731
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b)"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "image",
+          "index": 14,
+          "bbox": [
+            0.365,
+            0.603,
+            0.532,
+            0.711
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 14,
+              "bbox": [
+                0.365,
+                0.603,
+                0.532,
+                0.711
+              ],
+              "image_path": "images/page_112_image_14.jpg",
+              "content": "```mermaid\ngraph LR\n  x0[\"x0\"] --> h0[\"h0\"]\n  x1[\"x1\"] --> h1[\"h1\"]\n  x2[\"x2\"] --> h2[\"h2\"]\n  h0 --> y[\"y\"]\n  h1 --> y\n  h2 --> y\n  h3[\"h3\"] --> y\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 15,
+              "bbox": [
+                0.434,
+                0.716,
+                0.455,
+                0.73
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(c)"
+                }
+              ]
+            },
+            {
+              "type": "image_caption",
+              "index": 16,
+              "bbox": [
+                0.042,
+                0.74,
+                0.262,
+                0.755
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图3-7 神经网络的一般模式"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.041,
+            0.76,
+            0.538,
+            0.907
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "（a）生物体神经元的模型图。神经元包括树突、胞体和轴突，它通过树突接收上一个神经元的信号，然后通过轴突传导给下一个神经元；（b）能实现线性回归的最简单神经网络，包括数个输入神经元和一个输出神经元，输入与输出神经元之间的连接权重 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "w"
+            },
+            {
+              "type": "text",
+              "content": " 是可以学习的参数，在输出神经元给出预测之前可以通过一个激活函数；（c）多层感知机，包含数个输入层、数个隐藏层以及一个输出层的神经网络，这里把激活函数放在了神经元内部"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.555,
+            0.513,
+            0.957,
+            0.62
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在输入神经元和输出神经元之间加上若干隐藏神经元，即可得到多层感知机（multi-layer perceptron），如图3-7c所示。早期的感知机无法解决线性不可分的问题，如异或问题，为此研究者引入了整流线性激活函数:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 19,
+          "bbox": [
+            0.68,
+            0.631,
+            0.955,
+            0.649
+          ],
+          "image_path": "images/page_112_equation_19.jpg",
+          "content": "g (z) = m a x \\{0, z \\} \\tag {3-5}"
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.554,
+            0.662,
+            0.957,
+            0.723
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "使用整流线性激活函数的神经元称为整流线性单元（rectified linear unit，ReLU），在现代神经网络作为隐藏神经元的默认推荐。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 21,
+          "bbox": [
+            0.554,
+            0.728,
+            0.96,
+            0.9
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在神经网络中，神经元按照层级的方式组织，图3-7b包含了数个输入层和一个输出层，图3-7c包含了数个输入层、数个隐藏层和一个输出层。随着隐藏层越来越多，神经网络会变得越来越“深”，深度学习由此得名。需要指出的是，深度学习的内涵就是很“深”的机器学习模型，除了神经网络之外，其他模型（如图模型）完全也可以作为深度学习的底层架构。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 113,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.695,
+            0.051,
+            0.804,
+            0.064
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.2 深度学习基础"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.976,
+            0.052,
+            0.999,
+            0.063
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "099"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.108,
+            0.097,
+            0.806,
+            0.203
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "万能近似定理（universal approximation theorem）表明，一个神经网络如果具有线性输出层和至少一层具有“挤压”性质的激活函数（如逻辑斯谛函数）的隐藏层，那么它在隐藏神经元足够多的情况下，能够以任意精度近似任何从一个有限维空间到另一个有限维空间的Borel可测函数。Borel可测函数的定义超出了本书的范畴，这里只需要知道定义在 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R^n"
+            },
+            {
+              "type": "text",
+              "content": " 的有界闭集上的任何连续函数都是Borel可测的。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.108,
+            0.206,
+            0.806,
+            0.29
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "尽管一个足够“宽”的浅层网络能够表示任何Borel可测函数，但实际应用中通常使用更“深”的神经网络，因为更深的网络能大幅减少需要神经元的数量，而且在广泛的任务中泛化得更好。深度网络还暗含了一种先验，即模型学习的函数应该是由几个更简单的函数组合而成的。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.109,
+            0.312,
+            0.351,
+            0.332
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.2.2 基于梯度的优化"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.108,
+            0.351,
+            0.806,
+            0.631
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在深度学习中，训练又称为优化，指的是通过调整神经网络的参数，使得模型能够更好地拟合训练数据，获得泛化的预测或生成能力。优化的目标是最小化一个损失函数（loss function），该损失函数评估了模型预测和真实数据或目标之间的差距。在数学中，函数的导数可以指示如何调整自变量以减小函数值。类似地，在深度学习中，通过将模型的所有参数（记为一个向量）视为损失函数的自变量，梯度（函数相对向量的导数）能指导我们找到使损失函数最小化的模型参数。其中，梯度的计算通常使用反向传播（back propagation，BP）算法，通过链式法则将损失函数的梯度从输出层传递到输入层，得到梯度相对于每个参数的分量。这些分量一起指明了在参数空间中使损失函数上升最快的方向，所以不断沿着梯度的反方向对参数进行更新，并重新计算梯度，就可以逐步降低损失函数的值。在模型训练中，随机梯度下降（stochastic gradient descent，SGD）是最有代表性的优化算法，其基本思想是每次从全部训练样本中随机抽取一个小批量（minibatch），快速估算损失函数对模型参数的梯度，以加快模型的收敛。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.108,
+            0.635,
+            0.806,
+            0.829
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "学习率是梯度反向传播中的一个重要超参数，控制参数更新的步长。学习率过小会导致模型收敛缓慢，但学习率过大又会导致震荡或发散。学习率调度技术可以根据训练过程中的情况动态地调整学习率，如学习率衰减、周期性调整等。学习率对模型的性能有显著的影响，准确地设置学习率是一个非常具有挑战性的工作。由于损失函数通常对某些参数高度敏感，而对另一部分参数不敏感，因此对每个参数自适应地设置不同的学习率是非常有必要的。出于这一考虑，研究人员设计了自适应梯度算法（adaptive gradient algorithm, AdaGrad）和自适应矩估计算法（adaptive moment estimation, Adam）等优化算法，都可以通过每个参数的历史梯度来自适应地设置学习率，从而在实践中表现出良好的性能和较快的收敛速度。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.109,
+            0.85,
+            0.327,
+            0.87
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.2.3 改进优化策略"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.145,
+            0.889,
+            0.804,
+            0.906
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "除了调整学习率外，研究人员还会使用一些其他策略来解决梯度反向传播算法"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 114,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.0,
+            0.028,
+            0.022,
+            0.039
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "100"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.193,
+            0.027,
+            0.326,
+            0.041
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3 深度学习和人工智能"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.191,
+            0.075,
+            0.873,
+            0.117
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在实践应用时遇到的问题，改进深度学习模型的优化过程，提升模型的优化速度以及鲁棒性。下面选取几种代表性的策略进行介绍。"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.19,
+            0.122,
+            0.874,
+            0.21
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "① 激活函数 激活函数不仅能向神经网络引入非线性，使其更好地学习复杂的数据分布；还能够改善梯度传播，有效避免梯度消失或梯度爆炸等问题，加速模型的收敛速度。如逻辑斯谛函数的广泛饱和性不利于基于梯度的学习，故不鼓励将其用于多层感知机的隐藏神经元，而双曲正切函数通常会表现得更好。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.189,
+            0.215,
+            0.875,
+            0.35
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "② 批标准化 批标准化（batch normalization）是深度学习模型中常用的一种自适应重参数化方法，旨在解决训练过程中的内部协变量偏移（internal covariate shift）问题，即在网络的不同层之间数据的分布发生变化，导致网络难以收敛和训练困难的现象。批标准化通过在每个小批量样本上对输入进行归一化，使得每一层的输入数据具有相对稳定的分布，减少梯度的变化范围，提高梯度的有效性和稳定性，加速了训练过程。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.19,
+            0.354,
+            0.875,
+            0.512
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "③ 正则化 正则化（regularization）是一种用于控制模型复杂性和提高泛化能力的技术，包括 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{L}_1"
+            },
+            {
+              "type": "text",
+              "content": " 正则化、"
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{L}_2"
+            },
+            {
+              "type": "text",
+              "content": " 正则化、Dropout 以及提前终止（early stopping）等。"
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{L}_1"
+            },
+            {
+              "type": "text",
+              "content": " 正则化和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{L}_2"
+            },
+            {
+              "type": "text",
+              "content": " 正则化通过在损失函数中引入额外的惩罚项，约束模型参数的取值范围或模型的复杂度，从而降低过拟合的风险；Dropout 随机地将一些神经元的输出置为零，以减少神经元之间的依赖性，增强模型的泛化能力；提前终止策略在训练过程中监测模型在验证集上的性能，并在性能不再提升时停止训练，有效避免了过拟合。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.19,
+            0.517,
+            0.874,
+            0.652
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "④ 预训练和迁移学习 预训练（pretraining）和迁移学习（transfer learning）是利用已经训练好的模型参数来加速新模型的训练和提高性能的常用策略。预训练是指在小规模数据集上训练模型之前，先在大规模数据集上训练一个模型，然后将其参数作为新模型的初始化参数；迁移学习是指将已训练好模型的一部分或全部参数迁移到新任务的模型上，以提高新任务的学习效果。两种策略都能在速度和性能方面显著优化模型的训练过程，尤其是在数据有限的情况下。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.19,
+            0.656,
+            0.873,
+            0.722
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "我们已经介绍了一些通用的深度学习优化策略，针对具体的任务，模型架构本身也对其性能有着极其重要的影响。接下来我们将从结构、原理等方面介绍一些具体的深度学习模型，并阐明其适用的任务范围。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.192,
+            0.758,
+            0.484,
+            0.783
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.3 深度学习常用模型"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.191,
+            0.806,
+            0.875,
+            0.918
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在上一节中，我们以多层感知机为例介绍了神经网络，其中相邻两层的神经元之间是全连接（fully connected）的，不同网络之间的主要区别是神经元的层数和每层中的神经元数目。在实践中，人们为特定的机器学习任务开发出了种类繁多的神经网络架构，每种架构都有独特的结构化限制，反映了设计者希望网络学习到的先验知识。本节我们将依次介绍处理图像数据和自然语言的常见深度学习模型，分别"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 115,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.616,
+            0.052,
+            0.75,
+            0.065
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.3 深度学习常用模型"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.923,
+            0.053,
+            0.947,
+            0.064
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "101"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.052,
+            0.097,
+            0.75,
+            0.135
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对应深度学习的两大研究领域——计算机视觉与自然语言处理；最后介绍生成式深度学习模型。"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.053,
+            0.159,
+            0.436,
+            0.181
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.3.1 处理图像数据的深度学习模型"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.052,
+            0.198,
+            0.75,
+            0.304
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在处理图像数据时，相邻位置的像素往往会相互关联，这种局部模式又会在不同的位置重复出现。研究者针对这些特性专门设计出了卷积神经网络（convolutional neural network，CNN），其核心思想是利用卷积操作来提取输入数据的局部特征，具有局部连接、权重共享等特性。在数学中，卷积是对两个实变函数进行的一种数学运算，如用一个核函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "w(a)"
+            },
+            {
+              "type": "text",
+              "content": " 对 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x(t)"
+            },
+            {
+              "type": "text",
+              "content": " 进行卷积:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.249,
+            0.31,
+            0.748,
+            0.345
+          ],
+          "image_path": "images/page_115_equation_5.jpg",
+          "content": "s (t) = (x * w) (t) = \\int x (a) w (t - a) d a \\tag {3-6}"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.053,
+            0.352,
+            0.75,
+            0.391
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在机器学习中，输入数据通常是多维数组的形式，而卷积核是待优化的多维数组形式的参数，如用一个二维卷积核 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K"
+            },
+            {
+              "type": "text",
+              "content": " 对一张二维图像 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I"
+            },
+            {
+              "type": "text",
+              "content": " 进行卷积:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.176,
+            0.399,
+            0.748,
+            0.433
+          ],
+          "image_path": "images/page_115_equation_7.jpg",
+          "content": "S (i, j) = (I * K) (i, j) = \\sum_ {m} \\sum_ {n} I (i - m, j - n) K (m, n) \\tag {3-7}"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.052,
+            0.442,
+            0.75,
+            0.569
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "图3-8a展示了如何用神经网络进行一维卷积操作，可以看作是左边的局部子网络在输入数据上滑动（sliding），使得隐藏神经元与输入神经元之间形成局部连接，而且不同位置的参数共享。我们将这样的局部子网络称为卷积核（kernel），其效果类似于一个滤波器（filter），捕捉数据中的空间结构信息，如边缘、纹理等。如图3-8b所示，一个卷积层会包含若干个卷积核，每个卷积核生成一个特征平面（feature map），不同的特征平面学习数据不同方面的特性。除了卷积层之外，卷积"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 9,
+          "bbox": [
+            0.277,
+            0.584,
+            0.577,
+            0.689
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 9,
+              "bbox": [
+                0.277,
+                0.584,
+                0.577,
+                0.689
+              ],
+              "image_path": "images/page_115_image_9.jpg",
+              "content": "```mermaid\ngraph LR\n  x1[\"x1\"] --> s1[\"s1\"]\n  s1 -->|a| s2[\"s2\"]\n  s2 -->|a| s3[\"s3\"]\n  s3 -->|a| s4[\"s4\"]\n  s4 -->|a| s4\n  s4 -->|b| x5[\"x5\"]\n  x2[\"x2\"] -->|b| s2\n  s2 -->|b| x3\n  x3[\"x3\"] -->|b| s3\n  x3 -->|b| x4\n  x4[\"x4\"] -->|b| s4\n  x5[\"x5\"] -->|b| s4\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 10,
+              "bbox": [
+                0.415,
+                0.691,
+                0.436,
+                0.704
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a)"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "image",
+          "index": 11,
+          "bbox": [
+            0.099,
+            0.711,
+            0.713,
+            0.888
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 11,
+              "bbox": [
+                0.099,
+                0.711,
+                0.713,
+                0.888
+              ],
+              "image_path": "images/page_115_image_11.jpg",
+              "content": "输入\n32x32\nC1: 特征平面\n6@28x28\nS2: 特征平面\n6@14x14\nC3: 特征平面\n16@10x10\nS4: 特征平面\n16@5x5\nC5: 层\n120\nF6: 层\n84\n输出\n10\n卷积层\n池化层\n卷积层\n池化层\n全连接层\n全连接层\n高斯关联"
+            },
+            {
+              "type": "image_caption",
+              "index": 12,
+              "bbox": [
+                0.415,
+                0.89,
+                0.437,
+                0.904
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b)"
+                }
+              ]
+            },
+            {
+              "type": "image_caption",
+              "index": 13,
+              "bbox": [
+                0.76,
+                0.783,
+                0.924,
+                0.798
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图3-8 卷积神经网络"
+                }
+              ]
+            },
+            {
+              "type": "image_footnote",
+              "index": 14,
+              "bbox": [
+                0.76,
+                0.803,
+                0.944,
+                0.899
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "（a）用神经网络实现一维卷积；（b）识别手写数字的卷积神经网络，包含两个卷积层、两个池化层和三个全连接层"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text_image"
+        }
+      ]
+    },
+    {
+      "page_idx": 116,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.051,
+            0.035,
+            0.075,
+            0.046
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "102"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.25,
+            0.033,
+            0.386,
+            0.047
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3 深度学习和人工智能"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.207,
+            0.079,
+            0.322,
+            0.21
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.207,
+                0.079,
+                0.322,
+                0.21
+              ],
+              "image_path": "images/page_116_image_2.jpg",
+              "content": "```mermaid\ngraph TD\n  A[\"x\"] --> B[\"神经层\"]\n  B --> C[\"F(x)\"]\n  C --> D[\"神经层\"]\n  D --> E{\"+\"}\n  E --> F[\"F(x)+x\"]\n  F --> G[\"(a)\"]\n```"
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "image",
+          "index": 3,
+          "bbox": [
+            0.049,
+            0.223,
+            0.203,
+            0.807
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 3,
+              "bbox": [
+                0.049,
+                0.223,
+                0.203,
+                0.807
+              ],
+              "image_path": "images/page_116_image_3.jpg",
+              "content": "```mermaid\ngraph TD\n  A[\"输入\"] --> B[\"7x7矩阵\"]\n  B --> C[\"池化\"]\n  C --> D[\"残差块 (64)\"]\n  D --> E[\"残差块 (64)\"]\n  E --> F[\"残差块 (64)\"]\n  F --> G[\"残差块 (128)\"]\n  G --> H[\"残差块 (128)\"]\n  H --> I[\"残差块 (128)\"]\n  I --> J[\"...\"]\n  J --> K[\"残差块 (512)\"]\n  K --> L[\"残差块 (512)\"]\n  L --> M[\"残差块 (512)\"]\n  M --> N[\"池化\"]\n  N --> O[\"fc 1000\"]\n  O --> P[\"softmax\"]\n```"
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "image",
+          "index": 4,
+          "bbox": [
+            0.214,
+            0.246,
+            0.471,
+            0.691
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 4,
+              "bbox": [
+                0.214,
+                0.246,
+                0.471,
+                0.691
+              ],
+              "image_path": "images/page_116_image_4.jpg",
+              "content": "```mermaid\ngraph TD\n  A[\"残差块层\\n(A)\"] --> B[\"a\"]\n  subgraph ResidualBlock [\"残差块\\n(残差块层 (A+2)\"]\n    direction TB\n  B --> C[\"矩阵\"]\n  C --> D[\"relu\"]\n  D --> E[\"矩阵\"]\n  E --> F{\"+\"}\n  end\n  B --> F\n  F --> G[\"残差块层\\n(A+2)\"]\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 5,
+              "bbox": [
+                0.243,
+                0.811,
+                0.265,
+                0.826
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b)"
+                }
+              ]
+            },
+            {
+              "type": "image_caption",
+              "index": 6,
+              "bbox": [
+                0.048,
+                0.833,
+                0.216,
+                0.85
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图3-9 残差神经网络"
+                }
+              ]
+            },
+            {
+              "type": "image_footnote",
+              "index": 7,
+              "bbox": [
+                0.046,
+                0.856,
+                0.483,
+                0.917
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "（a）残差块是残差神经网络的基本组成模块；（b）用残差神经网络进行图像识别，引入残差块后，网络甚至能堆叠到512层深"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.498,
+            0.079,
+            0.951,
+            0.189
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "神经网络一般还包含池化（pooling）层，利用简单的卷积核（如平均或取最大值）对提取出的特征平面进行降维，提高计算效率，并防止过拟合。经过多个卷积层和池化层之后，通常会使用全连接层进行最终的分类、回归等任务。"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.499,
+            0.194,
+            0.953,
+            0.486
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "卷积神经网络在处理图像等任务时具有出色的性能和良好的泛化能力，如丹·奇雷桑（Dan Ciresan）等用包含两个卷积层的网络在MNIST手写数字数据集上将错误率降低至 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0.23\\%"
+            },
+            {
+              "type": "text",
+              "content": " ，远低于其他机器学习方法，达到了接近人类的表现。但是，在更加复杂的图像数据集上，研究者发现随着卷积层数的增加，模型性能不再提升甚至急剧下降，即深层网络的退化（degradation）现象。设想一种手动构建深层网络的方案，即在一个训练好的浅层网络上加一些能实现恒等映射的网络层，这样得到的深层网络应该和之前的浅层网络效果一样好。但从头开始训练一个深层网络却会发生退化现象，这说明有些网络比另一些更难训练，尤其是难以拟合恒等映射，即 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H(x) = x"
+            },
+            {
+              "type": "text",
+              "content": " 。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.499,
+            0.49,
+            0.953,
+            0.759
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "为解决这一问题，何恺明等开发了残差神经网络（residual neural network, ResNet）。ResNet 使用跳跃连接（skip connection）策略来构建残差单元，将输入数据直接添加到残差块（residual block）的输出中，即  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H(x) = F(x) + x"
+            },
+            {
+              "type": "text",
+              "content": " 。该策略形成了短路（shortcut）路径，弱化了每层之间的强联系（图 3-9a）。ResNet 通过学习残差来实现映射，而不是直接学习整个映射函数，因此可以有效解决梯度消失和网络退化问题。克服这一缺点后，ResNet 就能大幅增加模型深度并提高模型收敛速度，从而大大提升模型性能，在图像分类、目标检测和图像分割等计算机视觉任务中取得了巨大成功（图 3-9b）。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.499,
+            0.764,
+            0.952,
+            0.917
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "非欧式空间数据，如图（graph），具有不规则性，导致传统的卷积等操作不再适用。研究者设计了专门处理图的神经网络结构，主要是在各种基础深度学习模型上针对图结构进行改造，如图卷积网络（graph convolution network）就是将卷积运算运用到图中每一个节点和它的邻居的特征集合上。随着图神经网络的发展，研究人员也将其泛化到欧式空间数据的处"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 117,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.669,
+            0.054,
+            0.803,
+            0.067
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.3 深度学习常用模型"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.978,
+            0.054,
+            0.999,
+            0.065
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "103"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.099,
+            0.803,
+            0.204
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "理上，如点云、三维原子结构等，这些网络也称为几何深度学习。几何深度学习会将原本的欧式空间内的坐标点，通过 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k-"
+            },
+            {
+              "type": "text",
+              "content": " 近邻等方式构建图边连关系，形成一个非欧式空间的数据结构，其中原本欧式空间的坐标信息被储存在图的节点和边上。几何深度学习算法会考虑数据的对称性、不变性、等变性等，适用于大部分包含三维原子结构的任务。"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.227,
+            0.486,
+            0.248
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.3.2 处理序列数据的深度学习模型"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.267,
+            0.803,
+            0.394
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "虽然卷积神经网络在图像数据上表现出了卓越的性能，但是它缺乏对序列结构和上下文信息进行建模的能力，导致其对自然语言等序列数据的处理能力偏弱。在处理自然语言时，会把每句话拆分成一系列标记（token），并按照从前到后的顺序，在每个时间步处理一个标记。循环神经网络（recurrent neural network, RNN）是为处理时序数据而专门设计的网络结构，其基本结构是一个循环单元，在每个时间步接收输入和前一步的隐藏状态，并输出当前步的隐藏状态（图3-10）。"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.344,
+            0.405,
+            0.8,
+            0.423
+          ],
+          "image_path": "images/page_117_equation_5.jpg",
+          "content": "h _ {t} = g _ {t} (U x _ {t} + V h _ {t - 1} + b _ {h}) \\tag {3-8}"
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.346,
+            0.432,
+            0.8,
+            0.451
+          ],
+          "image_path": "images/page_117_equation_6.jpg",
+          "content": "y _ {t} = g _ {y} (W h _ {t} + b _ {t}) \\tag {3-9}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.105,
+            0.463,
+            0.802,
+            0.589
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "循环神经网络在不同的时间步共享参数，这样无论关键词在句子中哪个位置出现，都能以相似的方式被识别，相比之下全连接网络需要在每个时间步都把全部语言规则学习一遍。循环神经网络中的隐藏状态可以看作是网络对于序列中之前所有标记的编码表示，隐藏状态与当前标记一起连接到循环单元，使得循环神经网络在对序列中的每个标记进行建模时能考虑序列上下文的影响，即在处理序列数据时保持信息的持续流动。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.106,
+            0.593,
+            0.804,
+            0.764
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "循环神经网络在理论上具有学习长程依赖的能力，但梯度在经过许多层传播之后倾向于爆炸或消失；即使我们假设其参数是稳定的，但长程依赖的权重指数级小于短程相互作用的，使其很难学习。一种解决方案是设计能够在多个时间尺度上工作的模型，即让模型的某些部分在细粒度时间尺度上处理细节信息，而另一部分则在粗粒度时间尺度上传递来自遥远过去的上下文信息。研究者提出了一系列策略，包括在时间维度增加跳跃连接，设置自循环的隐藏神经元用不同时间常数整合信号，删除细粒度时间尺度的连接等。在实践中最成功的序列模型是门控循环神经网络（gated recurrent neural network, gated RNN），包括长短期记忆（long short-term"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 9,
+          "bbox": [
+            0.116,
+            0.774,
+            0.791,
+            0.907
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 9,
+              "bbox": [
+                0.116,
+                0.774,
+                0.791,
+                0.907
+              ],
+              "image_path": "images/page_117_image_9.jpg",
+              "content": "```mermaid\ngraph LR\n  A[\"x\"] -->|\"U\"| B[\"h\"]\n  B -->|\"W\"| C[\"o\"]\n  B -->|\"...\"| D[\"h_{t-1}\"]\n  E[\"xt-1\"] -->|\"U\"| D\n  D -->|\"W\"| F[\"ot-1\"]\n  G[\"xt\"] -->|\"U\"| H[\"ht\"]\n  H -->|\"W\"| I[\"ot\"]\n  H -->|\"V\"| J[\"ht+1\"]\n  K[\"xt+1\"] -->|\"U\"| L[\"ht+1\"]\n  L -->|\"W\"| M[\"ot+1\"]\n  N[\"...\"] -->|\"V\"| O[\"...\"]\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 10,
+              "bbox": [
+                0.815,
+                0.865,
+                0.999,
+                0.901
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图3-10 循环神经网络的循环单元及其展开图"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        }
+      ]
+    },
+    {
+      "page_idx": 118,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.0,
+            0.042,
+            0.024,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "104"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.198,
+            0.041,
+            0.334,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3 深度学习和人工智能"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 3,
+          "bbox": [
+            0.313,
+            0.085,
+            0.784,
+            0.328
+          ],
+          "content": [
+            {
+              "type": "image_caption",
+              "index": 2,
+              "bbox": [
+                0.0,
+                0.085,
+                0.182,
+                0.121
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图3-11 长短期记忆网络的基本组成单元"
+                }
+              ]
+            },
+            {
+              "type": "image_body",
+              "index": 3,
+              "bbox": [
+                0.313,
+                0.085,
+                0.784,
+                0.328
+              ],
+              "image_path": "images/page_118_image_3.jpg",
+              "content": "```mermaid\ngraph LR\n  A[\"长时记忆输入\"] --> B((\"×\"))\n  C[\"短时记忆输出\"] --> D((\"h_t\"))\n  E[\"隐层输入\"] --> F[\"x_t 输入\"]\n  G[\"长时记忆输出\"] --> H((\"c_l\"))\n  I[\"矩时记忆输出\"] --> J[\"h_t-1\"]\n  K[\"tanh\"] --> L{\"×\"}\n  M[\"tanh\"] --> L\n  N[\"σ\"] --> L\n  O[\"σ\"] --> L\n  P[\"f_t\"] --> L\n  Q[\"i_t\"] --> L\n  R[\"o_t\"] --> L\n  S[\"tanh\"] --> T{\"×\"}\n  U[\"输出\"] --> V[\"h_t\"]\n```"
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.195,
+            0.343,
+            0.863,
+            0.361
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "memory, LSTM）网络和门控循环单元（gated recurrent unit, GRU）网络。"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.195,
+            0.365,
+            0.901,
+            0.496
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "长短期记忆网络的关键贡献是自循环的权重由上下文决定，不同的输入序列可以产生不同的权重，从而累积不同时间尺度的记忆。具体来说，长短期记忆网络将隐藏神经单元替换成复杂的LSTM细胞（图3-11），其内部形成自循环并记忆自己的细胞状态 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c"
+            },
+            {
+              "type": "text",
+              "content": " 。LSTM细胞包含三个依赖当前标记和隐藏状态的门（gate）结构，输入门 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i"
+            },
+            {
+              "type": "text",
+              "content": " 控制当前输入有多少需要被记忆，遗忘门 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f"
+            },
+            {
+              "type": "text",
+              "content": " 控制当前细胞记忆如何更新，输出门 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "o"
+            },
+            {
+              "type": "text",
+              "content": " 控制记忆内容有多少需要输出到当前隐藏状态。"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.381,
+            0.508,
+            0.897,
+            0.527
+          ],
+          "image_path": "images/page_118_equation_6.jpg",
+          "content": "i _ {t} = g _ {i} (W _ {i} x _ {t} + U _ {i} h _ {t - 1} + b _ {i}) \\tag {3-10}"
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.38,
+            0.537,
+            0.897,
+            0.556
+          ],
+          "image_path": "images/page_118_equation_7.jpg",
+          "content": "f _ {t} = g _ {f} (W _ {f} x _ {t} + U _ {f} h _ {t - 1} + b _ {f}) \\tag {3-11}"
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.38,
+            0.566,
+            0.897,
+            0.584
+          ],
+          "image_path": "images/page_118_equation_8.jpg",
+          "content": "o _ {t} = g _ {o} (W _ {o} x _ {t} + U _ {o} h _ {t - 1} + b _ {o}) \\tag {3-12}"
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.381,
+            0.594,
+            0.897,
+            0.613
+          ],
+          "image_path": "images/page_118_equation_9.jpg",
+          "content": "c _ {t} = f _ {t} \\circ c _ {t - 1} + i _ {t} \\circ \\tanh (W _ {c} x _ {t} + U _ {c} h _ {t - 1}) \\tag {3-13}"
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.379,
+            0.623,
+            0.897,
+            0.641
+          ],
+          "image_path": "images/page_118_equation_10.jpg",
+          "content": "h _ {t} = o _ {t} \\circ \\tanh (c _ {t}) \\tag {3-14}"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.195,
+            0.655,
+            0.9,
+            0.741
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "长短期记忆网络比简单的循环神经网络更擅长学习序列数据中的长程依赖关系，在具有挑战性的序列处理任务上获得了优越的表现。但长短期记忆网络的计算过于复杂，研究者分析了其架构中哪些是真正必要的，开发出了门控循环单元网络，用一个更新门和一个复位门来控制信息的流动。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.195,
+            0.746,
+            0.899,
+            0.809
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "循环神经网络及其变种在自然语言处理、语音识别等任务中取得了引人注目的突破，能够利用上下文信息进行预测（如情绪分析）和生成（如聊天机器人），为语言理解和内容生成任务带来了革命性的进展。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 13,
+          "bbox": [
+            0.196,
+            0.832,
+            0.486,
+            0.853
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.3.3 生成式深度学习模型"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.197,
+            0.872,
+            0.899,
+            0.912
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "神经网络也可以用于无监督任务，尤其是生成式模型能够生成新的数据，展现出激动人心的应用前景。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 119,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.62,
+            0.046,
+            0.754,
+            0.058
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.3 深度学习常用模型"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.93,
+            0.048,
+            0.952,
+            0.058
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "105"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.05,
+            0.088,
+            0.63,
+            0.236
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "生成对抗网络（generative adversarial network，GAN）是一种经典的深度生成模型，其基于博弈论场景，采用对抗训练的方式生成逼真的新样本。生成对抗网络由生成器（generator）和判别器（discriminator）两个主要组件组成，生成器 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g"
+            },
+            {
+              "type": "text",
+              "content": " 接收一个低维的随机噪声向量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "z"
+            },
+            {
+              "type": "text",
+              "content": " 作为输入，并将其映射到高维数据空间中，生成尽可能逼真的样本数据 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x = g(z; \\theta_g)"
+            },
+            {
+              "type": "text",
+              "content": "；判别器 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "d"
+            },
+            {
+              "type": "text",
+              "content": " 的任务是对给定的样本 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 输出概率值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "d(x; \\theta_d)"
+            },
+            {
+              "type": "text",
+              "content": "，指示其是来自真实数据分布而不是来自生成器"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 3,
+          "bbox": [
+            0.647,
+            0.09,
+            0.951,
+            0.189
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 3,
+              "bbox": [
+                0.647,
+                0.09,
+                0.951,
+                0.189
+              ],
+              "image_path": "images/page_119_image_3.jpg",
+              "content": "```mermaid\ngraph LR\n  A[\"噪声\"] --> B[\"生成器\"]\n  B --> C[\"生成数据\"]\n  C --> D[\"判别器\"]\n  E[\"真实数据\"] --> D\n  D --> F[\"真或假\"]\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 4,
+              "bbox": [
+                0.644,
+                0.198,
+                0.82,
+                0.213
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图3-12 生成对抗网络"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.05,
+            0.24,
+            0.757,
+            0.302
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "的概率（图3-12）。生成对抗网络可以看作是一场零和游戏，记函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "u(\\theta_g, \\theta_d)"
+            },
+            {
+              "type": "text",
+              "content": " 为判别器的收益，那么生成器的收益就是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "-u(\\theta_g; \\theta_d)"
+            },
+            {
+              "type": "text",
+              "content": "，在学习过程中两者都试图最大化各自的收益，最终生成器收敛于:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.3,
+            0.314,
+            0.754,
+            0.339
+          ],
+          "image_path": "images/page_119_equation_6.jpg",
+          "content": "g ^ {*} = \\arg \\min _ {g} \\max _ {d} u (g, d) \\tag {3-15}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.051,
+            0.347,
+            0.283,
+            0.364
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "可以把收益函数 u 设置为:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.141,
+            0.377,
+            0.754,
+            0.397
+          ],
+          "image_path": "images/page_119_equation_8.jpg",
+          "content": "u \\left(\\boldsymbol {\\theta} _ {g}, \\boldsymbol {\\theta} _ {d}\\right) = \\mathbb {E} _ {\\boldsymbol {x} \\sim p _ {d a t a}} \\log [ d (\\boldsymbol {x}) ] + \\mathbb {E} _ {\\boldsymbol {x} \\sim p _ {m o d e l}} \\log [ 1 - d (\\boldsymbol {x}) ] \\tag {3-16}"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.049,
+            0.408,
+            0.754,
+            0.446
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "这驱使判别器正确地区分样本是真实的还是伪造的，同时生成器试图产生能以假乱真的样本。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.049,
+            0.452,
+            0.754,
+            0.558
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "生成对抗网络的核心思想是通过两个网络的对抗来推动模型的学习和提升。它不需要显式地定义生成样本的概率分布，也就不需要用变分学习等复杂技巧来近似推断生成概率，而是通过反复迭代训练逐渐优化生成器和判别器的网络参数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": " ，使生成的样本逼近真实数据分布。生成对抗网络具有广泛的应用，在图像生成、文本生成、音频合成等任务中取得了巨大成功，并成为深度学习中重要的研究方向之一。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.048,
+            0.562,
+            0.754,
+            0.734
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "自编码器（autoencoder，AE）是一种经典的无监督深度神经网络，由编码器（encoder）和解码器（decoder）组成，其中编码器将输入样本 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 映射到低维隐空间中的隐变量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "z"
+            },
+            {
+              "type": "text",
+              "content": "，并捕捉样本的关键特征；解码器则根据隐变量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "z"
+            },
+            {
+              "type": "text",
+              "content": " 重构出样本 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{x}"
+            },
+            {
+              "type": "text",
+              "content": "，也就是从隐空间重新映射回原来的数据空间（图3-13）。自编码器通过最小化重构误差（如 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\| x - \\hat{x} \\|"
+            },
+            {
+              "type": "text",
+              "content": "），以无监督的方式来学习数据的低维表示。自编码器也可用于生成新的数据，即从隐空间采样得到 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "z'"
+            },
+            {
+              "type": "text",
+              "content": "，然后通过解码器得到样本 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x'"
+            },
+            {
+              "type": "text",
+              "content": "。但是自编码器的隐空间没有约束，其训练过程只能保证隐空间中在输入样本附近的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "z'"
+            },
+            {
+              "type": "text",
+              "content": " 生成的样本是符合原始数据分布的，当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "z'"
+            },
+            {
+              "type": "text",
+              "content": " 距离较远时可能会生成一些毫无意义的样本。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.05,
+            0.737,
+            0.756,
+            0.886
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "研究者提出了多种方案来约束自编码器的隐空间，如稀疏自编码器、去噪自编码器、收缩自编码器等，其中最成功的是变分自编码器（variational autoencoder, VAE）。变分自编码器期望隐变量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "z"
+            },
+            {
+              "type": "text",
+              "content": " 能代表产生样本的真实因素，如表型是由基因型和环境因素共同决定的，人们对这些因素的先验知识可以指导模型的训练。具体来说，变分自编码器认为隐变量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "z"
+            },
+            {
+              "type": "text",
+              "content": " 符合某种预先定义的分布 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_{\\theta}(z)"
+            },
+            {
+              "type": "text",
+              "content": "，编码器 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(x)"
+            },
+            {
+              "type": "text",
+              "content": " 负责从输入样本 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 产生该分布的参数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "，从分布采样得到 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "z"
+            },
+            {
+              "type": "text",
+              "content": " 后经过解码器 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(z)"
+            },
+            {
+              "type": "text",
+              "content": " 得到 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{x}"
+            },
+            {
+              "type": "text",
+              "content": " 的分布，再采样得到 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{x}"
+            },
+            {
+              "type": "text",
+              "content": "。变分自编码器的损失函数包括 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{x}"
+            },
+            {
+              "type": "text",
+              "content": " 之间的重构损失和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_{\\theta}(z)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 120,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.0,
+            0.041,
+            0.024,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "106"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.197,
+            0.039,
+            0.333,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3 深度学习和人工智能"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 3,
+          "bbox": [
+            0.246,
+            0.079,
+            0.839,
+            0.31
+          ],
+          "content": [
+            {
+              "type": "image_caption",
+              "index": 2,
+              "bbox": [
+                0.0,
+                0.084,
+                0.184,
+                0.121
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图3-13 自编码器（a）与变分自编码器（b）"
+                }
+              ]
+            },
+            {
+              "type": "image_body",
+              "index": 3,
+              "bbox": [
+                0.246,
+                0.079,
+                0.839,
+                0.31
+              ],
+              "image_path": "images/page_120_image_3.jpg",
+              "content": "```mermaid\ngraph LR\n  Input[\"输入\"] -->|\"理想情况下, 它们是相等的\"| x{\"x\"}\n  x --> Encoder[\"编码器 gφ\"]\n  Encoder --> Z[\"z\"]\n  Z --> Decode[\"解码器 fθ\"]\n  Decode --> Output[\"重构输出\"]\n  subgraph Compression[\"输入的低维压缩表示\"]\n    direction TB\n  end\n  subgraph Process[\"瓶颈!\"]\n    direction TB\n  end\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 4,
+              "bbox": [
+                0.513,
+                0.319,
+                0.535,
+                0.334
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a)"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "image",
+          "index": 5,
+          "bbox": [
+            0.247,
+            0.356,
+            0.839,
+            0.543
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 5,
+              "bbox": [
+                0.247,
+                0.356,
+                0.839,
+                0.543
+              ],
+              "image_path": "images/page_120_image_5.jpg",
+              "content": "```mermaid\ngraph LR\n  Input[\"输入\"] -->|\"理想情况下, 它们是相等的\"| Output[\"重构输出\"]\n  \n  subgraph Process [\"概率编码器\\nq_φ(z|x)\"]\n    direction TB\n  Input -->|\"均值\\nμ\"-->| \"标准误\\nσ\"| Z[\"z\"]\n  Input -->|\"Z=μ+σ⊙ε\\nε~N0,i\"| Z\n  end\n  \n  subgraph Sampling [\"采样潜在向量\"]\n    direction TB\n  Z -->|\"采样潜在向量\"| Z\n  end\n  \n  subgraph Decoder [\"概率解码器\\np_θ(x|z)\"]\n    direction TB\n  Z -->|\"概率解码器\\np_θx| z)\"| Output\n  end\n  \n  Output --> Output\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 6,
+              "bbox": [
+                0.512,
+                0.555,
+                0.534,
+                0.57
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b)"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.194,
+            0.578,
+            0.897,
+            0.71
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "与先验分布（如标准正态分布）之间的 KL 散度（Kullback-Leibler divergence），具体的数学推导请参见迪德里克·金马（Diederik Kingma）等的论文。变分自编码器的优点是隐空间在整个先验分布范围内都是有效的，或者说任何从先验分布采样得到的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "z'"
+            },
+            {
+              "type": "text",
+              "content": " 都能经过解码器得到符合原始数据分布的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x'"
+            },
+            {
+              "type": "text",
+              "content": " 。变分自编码器理论优雅，易于实现，在实践中也取得了出色的表现，经过良好训练的变分自编码器可以解释数据的内在规律。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.194,
+            0.745,
+            0.496,
+            0.77
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.4 深度学习进阶模型"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.193,
+            0.793,
+            0.897,
+            0.924
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "深度学习是一个迅速发展的领域，不断有新的模型架构涌现出来，这里我们选取一些产生了重大影响的模型架构进行介绍。需要指出的是，本节的主要目的并不是“追赶”深度学习的前沿领域（教科书的更新频率远慢于深度学习的发展速度），而是让同学们体会深度学习的强大能力和广泛应用场景。新模型总是万变不离其宗，只要熟练掌握前面两节中介绍的基础知识，将来遇到新的深度学习模型就能较容易地理解和应用了。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 121,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.673,
+            0.055,
+            0.804,
+            0.068
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.4 深度学习进阶模型"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.979,
+            0.056,
+            0.999,
+            0.067
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "107"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.115,
+            0.104,
+            0.287,
+            0.123
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.4.1 扩散模型"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.114,
+            0.143,
+            0.811,
+            0.378
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "贾沙·索尔-迪克斯坦（Jascha Sohl-Dickstein）等于2015年提出了受启发于非平衡热力学的扩散模型（diffusion model），之后乔纳森·何（Jonathan Ho）等于2020年提出了降噪扩散概率模型（denoising diffusion probabilistic models），引发了图像生成领域的新一轮热潮。扩散模型一般包括两个过程:前向扩散（forward diffusion）和反向去噪（reverse denoising）。前向扩散过程会给输入 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{0}"
+            },
+            {
+              "type": "text",
+              "content": " 进行逐步加噪，T步后加噪至纯噪声 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{T}"
+            },
+            {
+              "type": "text",
+              "content": " ；反向去噪过程则通过神经网络去学习如何将 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{T}"
+            },
+            {
+              "type": "text",
+              "content": " 逐步还原为原始状态的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{x_{0}}"
+            },
+            {
+              "type": "text",
+              "content": " 。这两个过程都使用了参数化的马尔可夫链。基于学习好的去噪网络，我们输入从特定分布中采样的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{T}^{\\prime}"
+            },
+            {
+              "type": "text",
+              "content": "，最终输出一个符合原始数据分布的新样本 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{0}^{\\prime}"
+            },
+            {
+              "type": "text",
+              "content": " 。随着近期大量出色工作[如稳定扩散模型（stable diffusion model）]的推出，扩散模型逐渐被应用于蛋白质设计、RNA设计、小分子设计等生物学领域，极大地推动了科学的进步。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.115,
+            0.401,
+            0.373,
+            0.42
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.4.2 Transformer 网络"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.114,
+            0.439,
+            0.807,
+            0.542
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在处理序列数据时，循环神经网络只能串行操作，无法通过并行化来提升计算效率。2017年诞生的Transformer网络被认为是深度学习领域的革命性突破，其核心思想是完全基于注意力（attention）机制来处理输入序列，并行处理输入序列的不同位置。Transformer网络不仅大幅提升了并行效率，还在机器翻译任务上超越了之前最佳的网络。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.114,
+            0.547,
+            0.808,
+            0.65
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "深度学习中的注意力机制模仿了人类视觉和认知系统，要求神经网络在处理输入数据时选择性地关注重要部分，提高了模型的性能和泛化能力。注意力机制基于输入的特征，计算每个部分的注意力权重。这些权重可以表示为概率分布，用于指示输入中不同部分的重要性。根据这些权重，网络可以聚焦于最相关的部分，并在后续计算中更有针对性地使用这些信息，并赋予模型一定程度的可解释性。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.114,
+            0.655,
+            0.809,
+            0.78
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Transformer 网络的输入为序列中每个标记的嵌入（embedding）表示和该标记在序列中的位置编码（positional encoding）。Transformer 网络的基本组成包括编码器和解码器两部分，每一部分都包含数个多头注意力（multi-head attention）模块和多层感知机（图 3-14），多头注意力允许模型同时学习多个不同的注意力权重，捕捉不同的语义关系。Transformer 网络使用自注意力机制，可以在每个位置上直接建模长距离依赖关系，使得模型能够更好地理解句子中的上下文信息。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.115,
+            0.803,
+            0.31,
+            0.823
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.4.3 大语言模型"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.114,
+            0.842,
+            0.809,
+            0.903
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "近年来, 基于 Transformer 网络的大语言模型 (large language model, LLM), 通过在大规模的文本数据集上进行预训练, 学习文本中丰富的语言知识和语义表示, 有效地提升了语言表示的能力, 在机器翻译、对话问答、文本生成等下游任务取得"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 122,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.046,
+            0.042,
+            0.071,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "108"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.246,
+            0.04,
+            0.384,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3 深度学习和人工智能"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.045,
+            0.085,
+            0.541,
+            0.495
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.045,
+                0.085,
+                0.541,
+                0.495
+              ],
+              "image_path": "images/page_122_image_2.jpg",
+              "content": "```mermaid\ngraph LR\n  subgraph Encoder\n  A[\"Input Embedding\"] --> B{\"Add & Norm\"}\n  B --> C[\"Prefeed\"]\n  C --> D[\"Multi-head Attention\"]\n  D --> E[\"Add & Norm\"]\n  E --> F[\"Nx\"]\n  end\n\n  subgraph Decoder\n  G[\"Remove Masked Data\"] --> H[\"Add & Norm\"]\n  H --> I[\"Prefeed\"]\n  I --> J[\"Add & Norm\"]\n  J --> K[\"Multi-head Attention\"]\n  K --> L[\"Add & Norm\"]\n  L --> M[\"Add & Norm\"]\n  M --> N[\"Prefeed\"]\n  N --> O[\"Add & Norm\"]\n  O --> P[\"Line性化\"]\n  P --> Q[\"Softmax\"]\n  end\n\n  subgraph Output\n  R[\"Output Embedding\"] --> S{\"Output (Right-Min)\"}\n  S --> T[\"Output Embedding\"]\n  T --> U[\"Output Embedding\"]\n  U --> V[\"Output Embedding\"]\n  end\n\n  A -.->|\"位置编码\"| G\n  G -.->|\"位置编码\"| D\n  D -.->|\"位置编码\"| E\n  E -.->|\"位置编码\"| F\n  F -.->|\"位置编码\"| G\n  G -.->|\"位置编码\"| H\n  H -.->|\"位置编码\"| I\n  I -.->|\"位置编码\"| J\n  J -.->|\"位置编码\"| K\n  K -.->|\"位置编码\"| L\n  L -.->|\"位置编码\"| M\n  M -.->|\"位置编码\"| N\n  N -.->|\"位置编码\"| O\n  O -.->|\"位置编码\"| P\n  P -.->|\"输出概率\"| Q\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 3,
+              "bbox": [
+                0.042,
+                0.503,
+                0.248,
+                0.518
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图3-14 Transformer网络"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.555,
+            0.084,
+            0.954,
+            0.214
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "了极其优异的表现。尤其是随后提出的多模态大语言模型，通过学习并融合多种模态（如文本、图像、音频、视频等）的数据，能够应用于诸如图像标注、视频字幕生成、根据文字生成视频等多种下游任务，甚至被视为迈向通用人工智能的里程碑。"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.555,
+            0.219,
+            0.954,
+            0.351
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "语言模型是一个自然语言中词语的概率分布模型。设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S = (w_{1}, w_{2}, w_{3}, \\cdots, w_{m})"
+            },
+            {
+              "type": "text",
+              "content": "  是一个由 m 个词组成的句子，则  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "w_{1}, w_{2}, w_{3}, \\cdots, w_{m}"
+            },
+            {
+              "type": "text",
+              "content": "  的联合概率  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p(W) = p(w_{1}, w_{2}, w_{3}, \\cdots, w_{m})"
+            },
+            {
+              "type": "text",
+              "content": "  即为语言模型。利用贝叶斯公式，语言模型可被分解为:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.563,
+            0.357,
+            0.953,
+            0.4
+          ],
+          "image_path": "images/page_122_equation_6.jpg",
+          "content": "p (W) = \\prod_ {i = 1} ^ {m} p (w _ {i} | w _ {1}, w _ {2}, w _ {3}, \\dots , w _ {i - 1}) (3 - 1 7)"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.555,
+            0.409,
+            0.953,
+            0.451
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "研究者试图用各类方法近似表示 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p(W)"
+            },
+            {
+              "type": "text",
+              "content": "，包括用神经网络预测 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p(W)"
+            },
+            {
+              "type": "text",
+              "content": "。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.554,
+            0.455,
+            0.955,
+            0.541
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "大语言模型主要基于 Transformer 网络，并且具备大量的参数，如 Meta 公司 2023 年的 Llama2 最大版本拥有约 700 亿参数。如图 3-15 所示，根据预训练任务类型和模型架构的差异，"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.243,
+            0.548,
+            0.955,
+            0.611
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "大语言模型主要可分为三类:自回归语言模型（autoregressive language model）、掩码语言模型（masked language model）和编码器-解码器语言模型（encoder-decoder language model）。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.244,
+            0.616,
+            0.954,
+            0.656
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "① 自回归语言模型（如美国的 GPT 系列，中国的 DeepSeek 等）的核心预训练任务是给定上文，预测下一个词语，即最大化:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.441,
+            0.666,
+            0.758,
+            0.708
+          ],
+          "image_path": "images/page_122_equation_11.jpg",
+          "content": "\\sum_ {i = 1} ^ {m} \\log [ p (w _ {i} | w _ {1}, w _ {2}, w _ {3}, \\dots , w _ {i - 1}; \\theta_ {T}) ]"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.243,
+            0.719,
+            0.954,
+            0.782
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中，"
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta_{T}"
+            },
+            {
+              "type": "text",
+              "content": " 表示参数量为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T"
+            },
+            {
+              "type": "text",
+              "content": " 的模型参数集，为最主要的优化对象。以 ChatGPT 为例（图3-16），自回归语言模型由 Transformer 网络中的解码器堆叠而成，尤其适合于文本生成这一类的任务。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.244,
+            0.787,
+            0.954,
+            0.828
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "② 掩码语言模型（如 BERT、RoBERTa 等）的核心预训练任务是给定掩码词的上下文，预测掩码词，类似于“完形填空”任务，即最大化:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.4,
+            0.841,
+            0.799,
+            0.876
+          ],
+          "image_path": "images/page_122_equation_14.jpg",
+          "content": "\\sum_ {j} c _ {j} \\log [ p (w _ {j} | w _ {1}, \\dots , w _ {j - 1}, w _ {j + 1}, \\dots , w _ {m}; \\theta_ {T}) ]"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.244,
+            0.887,
+            0.954,
+            0.926
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c_{j}\\in \\{0,1\\}"
+            },
+            {
+              "type": "text",
+              "content": " 表示 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "w_{j}"
+            },
+            {
+              "type": "text",
+              "content": " 是否被掩码。以BERT为例，掩码语言模型由Transformer网络中的编码器堆叠而成。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 123,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.641,
+            0.047,
+            0.751,
+            0.06
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.5 深度学习应用"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.927,
+            0.049,
+            0.951,
+            0.06
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "109"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.047,
+            0.089,
+            0.936,
+            0.325
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.047,
+                0.089,
+                0.936,
+                0.325
+              ],
+              "image_path": "images/page_123_image_2.jpg",
+              "content": "This flowchart illustrates the architecture of language models and their corresponding examples, including self-encoding, mapping, decoding, and example generation."
+            },
+            {
+              "type": "image_caption",
+              "index": 3,
+              "bbox": [
+                0.046,
+                0.328,
+                0.34,
+                0.344
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图3-15 三种主要的大语言模型示意图"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "image",
+          "index": 4,
+          "bbox": [
+            0.048,
+            0.357,
+            0.749,
+            0.468
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 4,
+              "bbox": [
+                0.048,
+                0.357,
+                0.749,
+                0.468
+              ],
+              "image_path": "images/page_123_image_4.jpg",
+              "content": "```mermaid\ngraph TD\n  A[\"BL\"] --> B[\"请用一句话介绍一下深度学习\"]\n  C[\"S\"] --> D[\"深度学习是一种基于人工神经网络的机器学习方法，通过多层次的数据表示学习解决复杂任务。\"]\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 5,
+              "bbox": [
+                0.763,
+                0.357,
+                0.953,
+                0.393
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图3-16 ChatGPT使用例子"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.043,
+            0.483,
+            0.75,
+            0.545
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "③ 编码器-解码器语言模型（如 BART、T5 等）的核心预训练任务是将序列通过一定方式变形，如词语删除、句子打乱、词语掩码等，要求模型恢复出原始的句子，即最大化:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.182,
+            0.56,
+            0.614,
+            0.579
+          ],
+          "image_path": "images/page_123_equation_7.jpg",
+          "content": "\\log [ p (w _ {1}, w _ {2}, \\dots , w _ {m - 1}, w _ {m} | x _ {1}, x _ {2}, \\dots , x _ {n - 1}, x _ {n}; \\theta_ {T}) ]"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.043,
+            0.591,
+            0.749,
+            0.631
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(x_{1},x_{2},\\cdots,x_{n-1},x_{n})"
+            },
+            {
+              "type": "text",
+              "content": " 是变形后的句子。以 BART 为例，编码器-解码器语言模型由完整的 Transformer 网络堆叠而成，尤其适合于机器翻译这一类任务。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.045,
+            0.665,
+            0.294,
+            0.689
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.5 深度学习应用"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.044,
+            0.71,
+            0.752,
+            0.794
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "人工智能技术尤其是深度学习算法的开发，从开始就和生物学研究有深度融合，在生物信息的各个领域都有着广泛的应用。从基因预测、蛋白质结构预测，到知识图谱构建，以及影像和视频识别。原则上，具有一定规律性和特征的数据都可以用深度学习进行建模。以下从生物信息的数据类型出发来举例。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 11,
+          "bbox": [
+            0.046,
+            0.818,
+            0.222,
+            0.837
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.5.1 序列数据"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.047,
+            0.857,
+            0.751,
+            0.896
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "序列数据包括基因序列、基因组序列、蛋白质序列等。传统的组学序列主要通过统计分析方法和经典的机器学习方法如马尔可夫模型和支持向量机等进行分析。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 124,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.0,
+            0.048,
+            0.024,
+            0.059
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "110"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.203,
+            0.047,
+            0.343,
+            0.059
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3 深度学习和人工智能"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.198,
+            0.093,
+            0.92,
+            0.155
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "近年来由于深度学习技术的快速发展，特别是循环神经网络（RNN）、长短时记忆（LSTM）网络、Transformer 网络等模型的兴起，深度学习在不断积累的大量序列数据分析中表现出强大的建模能力。例如:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 7,
+          "bbox": [
+            0.198,
+            0.16,
+            0.92,
+            0.448
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 3,
+              "bbox": [
+                0.198,
+                0.16,
+                0.92,
+                0.222
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "① 基因组序列分析用于识别 DNA 序列中的功能区域以及特殊原件，如基因的启动子区域、增强子、转录结合位点、核小体定位预测、RNA 剪接预测、非编码 RNA 的功能预测等；"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.198,
+                0.227,
+                0.918,
+                0.267
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "② 蛋白质序列分析用于预测蛋白质的二级结构、三级结构、功能域、蛋白修饰位点、蛋白质互作预测、蛋白质变体效应预测、蛋白质同源预测等；"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.198,
+                0.272,
+                0.92,
+                0.38
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "③ 表观遗传学数据用于预测染色质开放区域，传统方法依赖于实验数据，如染色质可及性测序技术（assay for transposase-accessible chromatin using sequencing, ATAC-Seq）、DNase I 超敏感位点测序（DNase I hypersensitive sites sequencing, DNase-Seq）来识别染色质开放区域，而深度学习模型能够利用这些实验数据进行预测和泛化，此外还可用于 DNA 甲基化预测、组蛋白修饰预测等；"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.199,
+                0.385,
+                0.92,
+                0.448
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "④ 转录组数据用于预训练的单细胞模型, 可以实现细胞类型分类、谱系追踪、发育轨迹推断等任务, 通过深度自编码器或变分自编码器 (VAE) 等方法消除批次误差, 利用图神经网络对空间转录组数据进行建模, 揭示组织结构中的细胞异质性等。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.2,
+            0.472,
+            0.377,
+            0.492
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.5.2 结构数据"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.2,
+            0.512,
+            0.919,
+            0.552
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "结构数据包括蛋白质三维结构、核酸结构等。深度学习模型能够通过学习复杂的特征和表达表示，帮助科研人员精确预测分子结构，并解释结构的功能。例如:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 12,
+          "bbox": [
+            0.199,
+            0.557,
+            0.918,
+            0.642
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 10,
+              "bbox": [
+                0.199,
+                0.557,
+                0.918,
+                0.597
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "① 蛋白质结构预测，AlphaFold模型应用于蛋白质三维结构预测，为理解蛋白质的功能和相互作用提供了新视角；"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 11,
+              "bbox": [
+                0.199,
+                0.602,
+                0.918,
+                0.642
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "② 小分子-靶标互作预测，通过深度学习方法可以预测小分子药物与生物大分子（如蛋白质、RNA）的结合方式和亲和力，为药物开发提供指导。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 13,
+          "bbox": [
+            0.2,
+            0.668,
+            0.354,
+            0.687
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.5.3 图数据"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.198,
+            0.707,
+            0.92,
+            0.77
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "图数据包括基因调控网络、蛋白质相互作用、药物靶点关系等。图神经网络（graph neural network，GNN）能够处理复杂的网络结构数据，帮助研究人员理解生物系统中复杂的关系和动态变化。例如:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 18,
+          "bbox": [
+            0.199,
+            0.775,
+            0.92,
+            0.903
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 15,
+              "bbox": [
+                0.199,
+                0.775,
+                0.92,
+                0.814
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "① 基因调控网络用于推断基因之间的调控关系，发现潜在的调控因子和信号通路。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 16,
+              "bbox": [
+                0.199,
+                0.82,
+                0.918,
+                0.859
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "② 蛋白质-蛋白质相互作用网络用于预测蛋白质之间的相互作用，发现新颖的蛋白质复合物。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 17,
+              "bbox": [
+                0.2,
+                0.864,
+                0.92,
+                0.903
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "③ 药物-靶点网络用于预测药物的潜在靶点，以及多种药物组合的相互作用，为个性化医疗和精准治疗提供理论支持。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        }
+      ]
+    },
+    {
+      "page_idx": 125,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.697,
+            0.05,
+            0.807,
+            0.063
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.5 深度学习应用"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.98,
+            0.051,
+            0.999,
+            0.062
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "111"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.111,
+            0.099,
+            0.283,
+            0.12
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.5.4 影像数据"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.109,
+            0.139,
+            0.808,
+            0.244
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "影像数据包括不同分辨率尺度的影像，如纳米级别的亚细胞影像、微米级别的细胞影像（病理影像、免疫组化、免疫荧光等）；厘米级别的脑影像，如计算机断层扫描（computed tomography，CT）、磁共振成像（magnetic resonance imaging，MRI）等。深度学习，尤其是卷积神经网络（CNN）在影像数据的分析中取得了巨大的成功，能够实现自动化的影像分割、分类和检测。例如:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 7,
+          "bbox": [
+            0.109,
+            0.248,
+            0.808,
+            0.615
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.109,
+                0.248,
+                0.808,
+                0.485
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "① 病理影像分析 如癌症检测、组织分类、自动化病理评分、图像标注等，深度学习模型尤其是卷积神经网络可以帮助医生快速准确地识别病灶区域，提高诊断效率和准确率。在癌症检测中，利用深度学习方法（inception、ResNet等）从组织切片中自动检测癌变区域；通过深度学习算法识别病理图像中的肿瘤浸润前沿，检测癌症的分期及进展。在组织分类中:在病理切片上区分不同类型的组织，如区分正常组织、癌症组织和间质组织。利用多尺度卷积神经网络，如密集连接网络（densely connected convolutional networks, DenseNet）在不同分辨率下同时学习图像特征，实现细胞级和组织级的精确分类。在免疫组化图像中:深度学习模型可以识别和计数病理切片中染色阳性细胞的数量和分布，如PD-L1、Ki-67等标志物的表达，为临床治疗决策提供辅助支持。使用多通道图像融合模型（如multi-input CNN）结合IHC图像的多通道信息，提高染色分析的准确性和效率。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.109,
+                0.489,
+                0.808,
+                0.571
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "② 医学影像分割 如肿瘤边界、器官结构分割等，为后续的定量分析和治疗计划制定提供重要依据。肿瘤边界分割如脑肿瘤分割、乳腺肿瘤分割、肺结节分割等。脏器结构分割如肝、心脏、前列腺等的结构分割。病灶区域的分割应用如骨折分割、软组织分割等。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.11,
+                0.576,
+                0.807,
+                0.615
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "③ 脑影像分析 用于研究大脑的结构和功能异常，如阿尔茨海默病的早期诊断、癫痫病灶的精确定位等。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.111,
+            0.637,
+            0.285,
+            0.657
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.5.5 生理数据"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.109,
+            0.677,
+            0.808,
+            0.825
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "生理数据包括心电图（electrocardiogram, ECG）、脑电图（electroencephalogram, EEG），以及由智能腕表采集的心率、血氧饱和度等。电生理数据的特殊数据结构包括时间序列数据（如心电图和脑电图的波形数据）、多通道数据（如ECG通常涉及多个导联的信号，EEG涉及多个电极的信号）、高维数据、连续和离散数据结合[生理数据可能包括连续的信号（如ECG、EEG波形）和离散事件（如心律失常的事件记录)]。深度学习在处理时间序列和多模态生理数据中表现优异，可用于健康监测、疾病预测和个性化医疗。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.109,
+            0.829,
+            0.808,
+            0.891
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "① 心电图分析自动检测心律失常、心肌缺血等心脏疾病，实时监测患者健康状态。深度心电图网络（deep electrocardiogram network, DeepECG）、心电图网络（electrocardiogram network, ECGNet）、人工智能诊断辅助网络（artificial intelligence"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 126,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.0,
+            0.043,
+            0.022,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "112"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.197,
+            0.044,
+            0.333,
+            0.056
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3 深度学习和人工智能"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.194,
+            0.089,
+            0.894,
+            0.173
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "diagnostic assistance network, AIDANet)等模型用于实时检测心律失常（如房颤、室性早搏等），提供准确的诊断信息。心肌缺血检测系统（myocardial ischemia detection system, MIDeS）、心脏神经网络（heart neural network, HeartNet）等系统可以在ECG数据中识别心肌缺血的早期迹象，并提供预警。"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.231,
+            0.177,
+            0.813,
+            0.193
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "② 脑电图分析用于癫痫发作检测、睡眠状态识别、情绪状态评估等。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.195,
+            0.198,
+            0.894,
+            0.238
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "③ 可穿戴设备数据分析通过智能手表、手环等设备采集的数据，预测个体的运动模式、睡眠质量、压力水平等，为个性化健康管理提供依据。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.195,
+            0.261,
+            0.368,
+            0.281
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.5.6 视频数据"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.195,
+            0.302,
+            0.894,
+            0.341
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "视频数据包括动物和人的行为模式。通过深度学习技术，可以自动提取视频中的行为特征，用于行为预测和智能监控。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 7,
+          "bbox": [
+            0.195,
+            0.346,
+            0.894,
+            0.43
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.196,
+                0.346,
+                0.894,
+                0.385
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "① 动物行为分析用于研究动物的行为模式，如觅食、交配等，为神经科学和行为学研究提供数据支持。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.195,
+                0.39,
+                0.894,
+                0.43
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "② 人类行为分析用于监测患者的康复训练、老年人的跌倒检测等，提高智能监护系统的智能化水平。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 10,
+          "bbox": [
+            0.195,
+            0.465,
+            0.695,
+            0.489
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.6 深度学习和人工智能的总结与展望"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.194,
+            0.512,
+            0.897,
+            0.573
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "深度学习和人工智能经过几十年跌宕起伏的发展，涌现出了一系列针对不同任务的模型架构和训练策略，在图像识别、自然语言处理等多个领域取得了重大突破。未来深度学习的发展方向包括以下六方面。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 12,
+          "bbox": [
+            0.232,
+            0.578,
+            0.571,
+            0.595
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "（1）更高效先进的网络结构和训练算法"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.194,
+            0.6,
+            0.896,
+            0.684
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "近年来，深度学习模型参数量的不断增长带来了模型性能的巨大提升，但对训练模型所需要的计算资源需求也与日俱增，因此需要设计更加高效的网络架构以提升模型的学习和表示能力，以及更高效的训练算法来加快训练进程，减少计算资源的开支。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 14,
+          "bbox": [
+            0.231,
+            0.69,
+            0.533,
+            0.707
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "（2）支持多模态混合输入以及分析"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.194,
+            0.712,
+            0.896,
+            0.773
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "传统的深度学习任务一般依赖于单一类型的数据输入，限制了模型解决复杂的真实世界问题的能力。未来的深度学习模型将兼顾多种类型的数据，包括图像、文本、语音等，并能整合各类模态数据进行推理与分析。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 16,
+          "bbox": [
+            0.231,
+            0.778,
+            0.453,
+            0.795
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "（3）真实世界中强化学习"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.194,
+            0.8,
+            0.894,
+            0.839
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在自动驾驶、机器人控制等领域仍然依赖强化学习的范式进行复杂问题的自动化决策，算法将在对真实世界的理解基础上进行模型优化。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 18,
+          "bbox": [
+            0.231,
+            0.845,
+            0.533,
+            0.861
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "（4）增加模型的可解释性和透明性"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.195,
+            0.866,
+            0.896,
+            0.905
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "随着深度学习模型参数量的不断增大，其性能得到了提升，但其可解释性与透明性却仍然匮乏。未来针对可解释性与透明性的研究将极大提升我们对于深度学习"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 127,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.76,
+            0.052,
+            0.801,
+            0.065
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "讨论题"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.978,
+            0.053,
+            0.999,
+            0.064
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "113"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.1,
+            0.098,
+            0.801,
+            0.136
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "模型的理解，以及增强人们对于人工智能系统的信任，同时也更有利于我们总结研究问题的规律。"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.136,
+            0.142,
+            0.283,
+            0.159
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(5) 隐私与安全"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.1,
+            0.164,
+            0.802,
+            0.204
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "随着人工智能系统的广泛应用，对模型在数据安全与隐私保护方面提出了更高的要求，因此需要在模型设计方面更加注重数据收集和隐私保护的平衡。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.136,
+            0.208,
+            0.361,
+            0.225
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(6) 智能体自主科研系统"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.099,
+            0.23,
+            0.803,
+            0.292
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2025 年以来，多个智能体自主科研系统在各个领域开始被开发，在生命科学领域如中国的 DREAM 系统、美国的 Biomni 和 CellForge 等，有望使生物信息分析进入新时代。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.11,
+            0.324,
+            0.226,
+            0.343
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "※ 推荐阅读"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.139,
+            0.372,
+            0.611,
+            0.389
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "1. 周志华. 机器学习 [M]. 北京:清华大学出版社，2016."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.1,
+            0.394,
+            0.799,
+            0.432
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "点评:该书全面讲解了机器学习基础知识，包括监督学习、非监督学习、强化学习等。在理论和算法讲解的同时，配合了大量的实例。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.1,
+            0.438,
+            0.798,
+            0.476
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2. Russell S, Norvig P. 人工智能:一种现代的方法 [M]. 殷建平，祝恩，刘越，等译. 北京:清华大学出版社，2011."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.136,
+            0.481,
+            0.791,
+            0.499
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "点评:该书为人工智能领域的经典教材，内容包括了人工智能领域的主要方向。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 12,
+          "bbox": [
+            0.11,
+            0.531,
+            0.27,
+            0.55
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "※ 思考与练习题"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "list",
+          "index": 13,
+          "bbox": [
+            0.1,
+            0.579,
+            0.8,
+            0.75
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 14,
+              "bbox": [
+                0.139,
+                0.579,
+                0.658,
+                0.596
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. 什么是人工智能 (AI)? AI 与机器学习和深度学习有何不同?"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 15,
+              "bbox": [
+                0.137,
+                0.601,
+                0.797,
+                0.618
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. 神经网络如何通过梯度下降算法进行训练？请简述梯度下降算法的工作原理。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 16,
+              "bbox": [
+                0.1,
+                0.623,
+                0.797,
+                0.662
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "3. Transformer 网络与传统的 RNN 相比有哪些优势？为什么 Transformer 网络在自然语言处理任务中广泛应用？"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 17,
+              "bbox": [
+                0.1,
+                0.667,
+                0.797,
+                0.706
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "4. 生成模型的基本原理是什么？简述自编码器（AE）和生成对抗网络（GAN）的不同之处。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 18,
+              "bbox": [
+                0.135,
+                0.711,
+                0.792,
+                0.728
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "5. 深度学习的未来展望如何？哪些领域可能会从未来的深度学习发展中获益？"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 19,
+              "bbox": [
+                0.136,
+                0.732,
+                0.563,
+                0.75
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "6. 深度学习在医学影像分析中的应用优势是什么？"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 20,
+          "bbox": [
+            0.11,
+            0.782,
+            0.204,
+            0.8
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "※ 讨论题"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 21,
+          "bbox": [
+            0.099,
+            0.829,
+            0.797,
+            0.89
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "1. 生命科学数据，如基因组、转录组、蛋白质组、代谢网络、调控网络等，与其他领域的哪些数据类型相似？借鉴其他领域的人工智能算法时，需要注意什么相似性和不同？"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

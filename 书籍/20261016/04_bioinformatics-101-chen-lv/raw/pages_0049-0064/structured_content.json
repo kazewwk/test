@@ -1,0 +1,2872 @@
+{
+  "pages": [
+    {
+      "page_idx": 48,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.005,
+            0.039,
+            0.03,
+            0.051
+          ],
+          "content": "034"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.208,
+            0.037,
+            0.323,
+            0.05
+          ],
+          "content": "2 生物统计学基础"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.204,
+            0.085,
+            0.877,
+            0.103
+          ],
+          "content": "样本标准差 $s$ 作为 $\\sigma$ 的估计值，可以得到 $\\overline{X}$ 的标准误差（standard error）"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.513,
+            0.11,
+            0.922,
+            0.143
+          ],
+          "content": "S E _ {\\overline {{X}}} = \\frac {s}{\\sqrt {n}} \\tag {2-6}",
+          "image_source": "images/page_48_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.204,
+            0.152,
+            0.923,
+            0.193
+          ],
+          "content": "$SE_{\\overline{X}}$ 作为 $\\sigma_{\\overline{X}}$ 的估计值描述了 $\\overline{X}$ 抽样分布的离散程度。标准误差越小代表 $\\overline{X}$ 的准确度越高。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.204,
+            0.198,
+            0.924,
+            0.262
+          ],
+          "content": "置信区间（confidence interval）是在给定的置信水平 $1 - \\alpha$ 下，基于统计量构造的总体参数的一种区间估计。对于正态总体 $X$ 的均值 $\\mu$ ，已知 $\\sqrt{n} (\\overline{X} -\\mu) / \\sigma$ 服从标准正态分布，故"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.368,
+            0.273,
+            0.922,
+            0.294
+          ],
+          "content": "P [ - Z _ {1 - \\alpha / 2} <   \\sqrt {n} (\\overline {{X}} - \\mu) / \\sigma <   Z _ {1 - \\alpha / 2} ] = 1 - \\alpha \\tag {2-7}",
+          "image_source": "images/page_48_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.206,
+            0.307,
+            0.255,
+            0.323
+          ],
+          "content": "进而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.314,
+            0.335,
+            0.922,
+            0.356
+          ],
+          "content": "P (\\overline {{X}} - Z _ {1 - \\alpha / 2} \\times \\sigma / \\sqrt {n} <   \\mu <   \\overline {{X}} + Z _ {1 - \\alpha / 2} \\times \\sigma / \\sqrt {n}) = 1 - \\alpha \\tag {2-8}",
+          "image_source": "images/page_48_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.207,
+            0.368,
+            0.859,
+            0.388
+          ],
+          "content": "其中， $Z_{1 - \\alpha /2}$ 是标准正态分布的上 $\\alpha /2$ 分位点。当标准差 $\\sigma$ 已知时，区间"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.485,
+            0.393,
+            0.922,
+            0.426
+          ],
+          "content": "\\overline {{X}} \\pm Z _ {1 - \\alpha / 2} \\times \\frac {\\sigma}{\\sqrt {n}} \\tag {2-9}",
+          "image_source": "images/page_48_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.208,
+            0.436,
+            0.862,
+            0.454
+          ],
+          "content": "是均值 $\\mu$ 的置信水平为 $1 - \\alpha$ 的置信区间。通常，取 $\\alpha = 0.01$ 或 $\\alpha = 0.05$。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.247,
+            0.46,
+            0.419,
+            0.476
+          ],
+          "level": 2,
+          "content": "2.2.2.2 学生t分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.207,
+            0.481,
+            0.925,
+            0.592
+          ],
+          "content": "在实际数据分析中，如果总体的标准差 $\\sigma$ 是未知的，可以用样本标准差 $s$ 代替。1907年英国人威廉·戈塞特（William Gosset）以笔名Student发表的论文中，给出了$\\sqrt{n} (\\overline{X} -\\mu) / s$ 的抽样分布，被人们称为学生 $t$ 分布（Student's t-distribution）（以下简称 $t$ 分布）。该分布的整体形状与自由度（degree of freedom, df）有关（图2-9）。当自由度趋近于无穷，$t$ 分布接近于标准正态分布。"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.258,
+            0.604,
+            0.867,
+            0.943
+          ],
+          "sub_type": "line",
+          "content": "| X | df=1 | df=2 | df=3 | df=5 | df=10 | \\(df=\\infty\\) |\n|---|---|---|---|---|---|---|\n| -5.0 | ~0.01 | ~0.01 | ~0.01 | ~0.01 | ~0.01 | ~0.01 |\n| -2.5 | ~0.04 | ~0.04 | ~0.04 | ~0.04 | ~0.04 | ~0.04 |\n| 0.0 | ~0.39 | ~0.38 | ~0.37 | ~0.36 | ~0.35 | ~0.32 |\n| 2.5 | ~0.04 | ~0.04 | ~0.04 | ~0.04 | ~0.04 | ~0.04 |\n| 5.0 | ~0.01 | ~0.01 | ~0.01 | ~0.01 | ~0.01 | ~0.01 |",
+          "captions": [
+            {
+              "bbox": [
+                0.0,
+                0.9,
+                0.192,
+                0.937
+              ],
+              "content": "图2-9 不同自由度下的t分布"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_48_chart_14.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 49,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.606,
+            0.052,
+            0.751,
+            0.064
+          ],
+          "content": "2.2 参数估计和假设检验"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.924,
+            0.052,
+            0.949,
+            0.063
+          ],
+          "content": "035"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.097,
+            0.751,
+            0.135
+          ],
+          "content": "t 分布在统计分析中应用广泛，其中包括置信区间的构建。当总体标准差未知时，区间"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.295,
+            0.145,
+            0.752,
+            0.163
+          ],
+          "content": "\\overline {{X}} \\pm t _ {1 - \\alpha / 2} (n - 1) \\times S E _ {\\overline {{X}}} \\tag {2-10}",
+          "image_source": "images/page_49_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.177,
+            0.752,
+            0.216
+          ],
+          "content": "是总体均值 $\\mu$ 的置信水平为 $1 - \\alpha$ 的置信区间。其中，$t_{1 - \\alpha /2}(n - 1)$ 是自由度为 $n - 1$ 的 $t$ 分布的上 $\\alpha /2$ 分位点。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.056,
+            0.239,
+            0.228,
+            0.258
+          ],
+          "level": 2,
+          "content": "2.2.3 假设检验"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.278,
+            0.752,
+            0.317
+          ],
+          "content": "通过假设检验，我们能够区分某一数据特征的变化是由抽样的随机误差引入的，还是由真实的生物学本质决定的。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.322,
+            0.418,
+            0.339
+          ],
+          "content": "一般情况下，假设检验包括 4 个步骤。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.092,
+            0.344,
+            0.247,
+            0.359
+          ],
+          "level": 2,
+          "content": "2.2.3.1 提出假设"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.054,
+            0.366,
+            0.75,
+            0.491
+          ],
+          "content": "假设检验首先要根据实际问题提出合理的假设，一个是原假设（null hypothesis），记作 $H_0$；另一个是备择假设（alternative hypothesis），记作 $H_A$。原假设是预先设立的假设，通常是基于先前的分析或专业知识做出的初始声明，“原”就是原来就有的结论或事实。备择假设是当原假设不成立时准备接受的结论，即拒绝原假设后可供选择的假设，如认为数据特征的变化是由于样本所属总体与假定总体的参数不同所引起的。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.054,
+            0.495,
+            0.75,
+            0.556
+          ],
+          "content": "原假设的形式是多样的，随研究内容不同而变化，但必须是有意义的，根据原假设是否成立，可以对问题作出回答。例如，考察某个总体的均值 $\\mu$ 是否大于某已知常数 $\\mu_0$ ，即考虑以下假设检验问题，原假设和备择假设分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.285,
+            0.571,
+            0.526,
+            0.587
+          ],
+          "content": "H _ {0}: \\mu \\leqslant \\mu_ {0} \\Longleftrightarrow H _ {A}: \\mu > \\mu_ {0}",
+          "image_source": "images/page_49_equation_11.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.091,
+            0.602,
+            0.461,
+            0.618
+          ],
+          "level": 2,
+          "content": "2.2.3.2 确定检验统计量以及拒绝域的形式"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.054,
+            0.623,
+            0.75,
+            0.684
+          ],
+          "content": "在检验一个假设时用到的统计量称为检验统计量（test statistic）。例如，上述总体均值的假设检验问题，可以使用样本均值  $\\overline{X}$  作为检验统计量。根据备择假设  $H_{A}$  的实际意义，需要寻找适当的使原假设  $H_{0}$  被拒绝的样本所在区域 D，称 D"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.055,
+            0.689,
+            0.622,
+            0.773
+          ],
+          "content": "为拒绝域（rejection region）。在常见的假设检验问题中拒绝域通常可以转化为检验统计量所处的区域，如假设检验问题的拒绝域形式为 $D = \\{\\overline{X} > C\\}$，其中常数 $C$ 称为临界值（critical value）。拒绝域和置信区间的关系示意图如图2-10所示。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.091,
+            0.777,
+            0.421,
+            0.793
+          ],
+          "level": 2,
+          "content": "2.2.3.3 给定显著性水平，求出拒绝域"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.056,
+            0.798,
+            0.622,
+            0.901
+          ],
+          "content": "显著性水平（significance level）是预先人为给定的一个较小的数，用于表示检验统计量落入拒绝域的概率，通常选择 $\\alpha = 0.05$ 或 $\\alpha = 0.01$ 。当原假设成立时，通过控制将其错误拒绝的概率小于或等于给定的显著性水平 $\\alpha$ ，给出关于临界值的方程，解出临界值 $C$ ，这样就确定了检验的拒绝域。"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.64,
+            0.691,
+            0.945,
+            0.872
+          ],
+          "sub_type": "text_image",
+          "content": "α/2\n拒绝域\n置信区间\nα/2\n拒绝域",
+          "captions": [
+            {
+              "bbox": [
+                0.637,
+                0.879,
+                0.887,
+                0.894
+              ],
+              "content": "图2-10 置信区间和拒绝域示意图"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_49_image_17.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 50,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.046,
+            0.038,
+            0.071,
+            0.048
+          ],
+          "content": "036"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.249,
+            0.038,
+            0.361,
+            0.051
+          ],
+          "content": "2 生物统计学基础"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.284,
+            0.086,
+            0.536,
+            0.102
+          ],
+          "level": 2,
+          "content": "2.2.3.4 推断是否拒绝原假设"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.244,
+            0.107,
+            0.951,
+            0.191
+          ],
+          "content": "通过给定的样本，可以算出检验统计量的值。若检验统计量的值落在拒绝域中，则拒绝原假设 $H_0$ ，否则不能拒绝原假设 $H_0$ ，只能被动接受原假设。除了使用拒绝域来做判断，还可以计算 $p$ 值（$p$ value），即在观测数据下拒绝原假设的最小显著性水平。如果 $p$ 值小于给定的显著性水平 $\\alpha$ ，则拒绝原假设 $H_0$ ，否则接受 $H_0$ 。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.283,
+            0.196,
+            0.512,
+            0.213
+          ],
+          "level": 2,
+          "content": "2.2.3.5 I型和Ⅱ型错误"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.245,
+            0.218,
+            0.951,
+            0.325
+          ],
+          "content": "由于我们是根据样本做检验，而样本具有随机性，所以进行假设检验并不能保证判断一定是正确的，根据错误情况不同，可以将错误分为Ⅰ型和Ⅱ型错误（表2-4）。Ⅰ型错误（type I error）也称为弃真错误，指的是当 $H_{0}$ 实际是正确的时候，假设检验否定了 $H_{0}$ 。Ⅱ型错误（type II error）也称为存伪错误，指的是当 $H_{0}$ 实际是错误的时候，假设检验接受了 $H_{0}$ 。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.248,
+            0.36,
+            0.951,
+            0.446
+          ],
+          "content": "<table><tr><td rowspan=\"2\">观测样本</td><td colspan=\"2\">总体</td></tr><tr><td> $H_0$ 为真</td><td> $H_A$ 为真</td></tr><tr><td>接受  $H_0$ </td><td>正确</td><td>II型错误</td></tr><tr><td>拒绝  $H_0$ </td><td>I型错误</td><td>正确</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.457,
+                0.34,
+                0.741,
+                0.355
+              ],
+              "content": "表 2-4 假设检验不同推断的可能结果"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_50_table_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.244,
+            0.457,
+            0.953,
+            0.588
+          ],
+          "content": "记犯 I 型错误的概率为  $\\alpha$ ，犯 II 型错误的概率为  $\\beta$ 。我们希望犯两类错误的概率都尽量小，但是这是不可能的。对给定的样本，要减少犯 I 型错误的概率，必然会增加犯 II 型错误的概率，反之亦然（图 2-11）。因此，有个谁优先的问题。J. Neyman 提出先保证犯 I 型错误的概率不超过某个给定的很小的数，在此基础上使犯 II 型错误的概率尽量小。如果仅仅考虑控制犯 I 型错误的概率，而不涉及犯 II 型错误的概率所得到的检验，称为显著性检验（significance test）。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.244,
+            0.612,
+            0.536,
+            0.632
+          ],
+          "level": 2,
+          "content": "2.2.4 正态总体均值的检验"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.28,
+            0.653,
+            0.95,
+            0.671
+          ],
+          "content": "对于单个正态总体均值  $\\mu$  的假设检验问题，在应用中常见的情形有以下 3 种:"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.043,
+            0.709,
+            0.507,
+            0.884
+          ],
+          "sub_type": "area",
+          "content": "| Category | Description |\n| --- | --- |\n| Black Curve | Normal distribution curve (α/2) |\n| Red Curve | Normal distribution curve (β) |\n| Shaded Area 1 | Left of the black curve (α/2) |\n| Shaded Area 2 | Right of the red curve (β) |\n| Center Point | \\(\\mu0\\) |\n| Right Peak | \\(\\mu\\) |",
+          "captions": [
+            {
+              "bbox": [
+                0.041,
+                0.892,
+                0.349,
+                0.907
+              ],
+              "content": "图2-11 假设检验中两类统计错误的关系"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_50_chart_11.jpg"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.597,
+            0.681,
+            0.88,
+            0.742
+          ],
+          "sub_type": "text",
+          "content": "① $H_0: \\mu \\leqslant \\mu_0 \\Longleftrightarrow H_A: \\mu > \\mu_0$\n② $H_0: \\mu \\geqslant \\mu_0 \\Longleftrightarrow H_A: \\mu < \\mu_0$\n③ $H_0: \\mu = \\mu_0 \\Longleftrightarrow H_A: \\mu \\neq \\mu_0$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.522,
+            0.754,
+            0.953,
+            0.863
+          ],
+          "content": "其中，$\\mu_0$ 是给定的常数。前两种检验问题称为单侧检验（one-sided test），即均值 $\\mu$ 是否显著地大于（或小于）给定的常数 $\\mu_0$；第三种是双侧检验（two-sided test），即均值 $\\mu$ 是否显著地不等于给定的常数 $\\mu_0$。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.522,
+            0.867,
+            0.952,
+            0.908
+          ],
+          "content": "总体方差 $\\sigma^2$ 是否已知对检验方法的选择有影响。在已知 $\\sigma^2 = \\sigma_0^2$ 的情况下，可以使用Z检验。"
+        }
+      ]
+    },
+    {
+      "page_idx": 51,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.655,
+            0.044,
+            0.801,
+            0.057
+          ],
+          "content": "2.2 参数估计和假设检验"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.977,
+            0.045,
+            0.999,
+            0.055
+          ],
+          "content": "037"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.134,
+            0.09,
+            0.264,
+            0.106
+          ],
+          "level": 2,
+          "content": "2.2.4.1 Z检验"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.112,
+            0.803,
+            0.193
+          ],
+          "content": "Z 检验（Z-test）是统计学中最基本的一种假设检验方法，被广泛用于比较一个总体均值与给定的常数有无显著差异。假设正态总体 X 均值为  $\\mu$ ，标准差为  $\\sigma$ ，并且  $X_{1}, X_{2}, \\cdots, X_{n}$  是来自该总体的一个随机样本。Z 检验假定  $\\sigma = \\sigma_{0}$  已知，对应的检验统计量为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.394,
+            0.198,
+            0.802,
+            0.236
+          ],
+          "content": "Z = \\frac {\\overline {{X}} - \\mu_ {0}}{\\sigma_ {0} / \\sqrt {n}} \\tag {2-11}",
+          "image_source": "images/page_51_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.244,
+            0.802,
+            0.283
+          ],
+          "content": "在原假设 $H_0$ 成立时，该统计量服从标准正态分布，$Z \\sim N(0,1)$。根据备择假设 $H_A$ 的具体形式，可以用 R 语言计算临界值，进而确定检验的拒绝域。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.133,
+            0.288,
+            0.391,
+            0.305
+          ],
+          "level": 2,
+          "content": "2.2.4.2 t检验和韦尔奇t检验"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.31,
+            0.802,
+            0.35
+          ],
+          "content": "当总体标准差未知时，Z 检验无法使用。如果将样本标准差代替总体标准差，可以得到 t 检验（t-test），其检验统计量为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.394,
+            0.355,
+            0.801,
+            0.393
+          ],
+          "content": "T = \\frac {\\overline {{X}} - \\mu_ {0}}{s / \\sqrt {n}} \\tag {2-12}",
+          "image_source": "images/page_51_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.401,
+            0.802,
+            0.461
+          ],
+          "content": "在原假设 $H_0$ 成立时，该统计量服从自由度为 $n - 1$ 的 $\\mathrm{t}$ 分布，$T \\sim t(n - 1)$。与 $\\mathbf{Z}$ 检验类似，根据备择假设 $H_A$ 的具体形式，可以用 $\\mathbf{R}$ 语言计算临界值，进而确定拒绝域。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.467,
+            0.802,
+            0.528
+          ],
+          "content": "在实际问题中，除了单样本检验，两样本检验同样具有重要的意义。假设有两个正态总体，其均值分别为 $\\mu_{1}$ 和 $\\mu_{2}$，方差分别为 $\\sigma_1^2$ 和 $\\sigma_2^2$。我们考虑以下3种假设检验问题:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.298,
+            0.534,
+            0.601,
+            0.597
+          ],
+          "sub_type": "text",
+          "content": "① $H_0: \\mu_1 \\leqslant \\mu_2 \\Longleftrightarrow H_A: \\mu_1 > \\mu_2$\n② $H_0:\\mu_1\\geqslant \\mu_2\\Longleftrightarrow H_A:\\mu_1 <   \\mu_2$\n③ $H_0: \\mu_1 = \\mu_2 \\Longleftrightarrow H_A: \\mu_1 \\neq \\mu_2$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.607,
+            0.801,
+            0.647
+          ],
+          "content": "（1）如果 $\\sigma_1^2$ 和 $\\sigma_2^2$ 均已知，可以使用两样本Z检验。记两个样本的均值分别为$\\overline{X}_1$ 和 $\\overline{X}_2$ ，样本容量分别为 $n_1$ 和 $n_2$ ，Z检验统计量为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.38,
+            0.651,
+            0.801,
+            0.707
+          ],
+          "content": "Z = \\frac {\\overline {{X}} _ {1} - \\overline {{X}} _ {2}}{\\sqrt {\\frac {\\sigma_ {1} ^ {2}}{n _ {1}} + \\frac {\\sigma_ {2} ^ {2}}{n _ {2}}}} \\tag {2-13}",
+          "image_source": "images/page_51_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.717,
+            0.604,
+            0.734
+          ],
+          "content": "它在原假设  $H_{0}$  成立时服从标准正态分布，即  $Z \\sim N(0,1)$ 。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.739,
+            0.802,
+            0.779
+          ],
+          "content": "（2）如果 $\\sigma_1^2$ 和 $\\sigma_2^2$ 未知，但样本容量 $n_1$ 和 $n_2$ 足够大，仍可以使用Z检验。记两个样本的标准差分别为 $s_1$ 和 $s_2$ ，Z检验统计量为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.377,
+            0.783,
+            0.801,
+            0.841
+          ],
+          "content": "Z = \\frac {\\overline {{X}} _ {1} - \\overline {{X}} _ {2}}{\\sqrt {\\frac {s _ {1} ^ {2}}{n _ {1}} + \\frac {s _ {2} ^ {2}}{n _ {2}}}} \\tag {2-14}",
+          "image_source": "images/page_51_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.849,
+            0.497,
+            0.866
+          ],
+          "content": "它在原假设  $H_{0}$  成立时近似服从标准正态分布。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.13,
+            0.871,
+            0.737,
+            0.889
+          ],
+          "content": "（3）如果 $\\sigma_1^2$ 和 $\\sigma_2^2$ 未知，且样本容量较小，则需要使用两样本t检验。"
+        }
+      ]
+    },
+    {
+      "page_idx": 52,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.0,
+            0.038,
+            0.022,
+            0.048
+          ],
+          "content": "038"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.194,
+            0.037,
+            0.303,
+            0.049
+          ],
+          "content": "2 生物统计学基础"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.227,
+            0.082,
+            0.512,
+            0.099
+          ],
+          "content": "① 当  $\\sigma_{1} = \\sigma_{2}$  时，t 检验统计量为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.459,
+            0.106,
+            0.871,
+            0.16
+          ],
+          "content": "T = \\frac {\\overline {{X}} _ {1} - \\overline {{X}} _ {2}}{s _ {w} \\sqrt {\\frac {1}{n _ {1}} + \\frac {1}{n _ {2}}}} \\tag {2-15}",
+          "image_source": "images/page_52_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.169,
+            0.232,
+            0.185
+          ],
+          "content": "其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.414,
+            0.185,
+            0.651,
+            0.22
+          ],
+          "content": "s _ {w} ^ {2} = \\frac {(n _ {1} - 1) s _ {1} ^ {2} + (n _ {2} - 1) s _ {2} ^ {2}}{n _ {1} + n _ {2} - 2}",
+          "image_source": "images/page_52_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.229,
+            0.874,
+            0.247
+          ],
+          "content": "在原假设 $H_0$ 成立时，该统计量服从自由度为 $n_1 + n_2 - 2$ 的t分布，即 $T\\sim t(n_{1} + n_{2} - 2)$。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.223,
+            0.252,
+            0.875,
+            0.27
+          ],
+          "content": "② 当 $\\sigma_{1} \\neq \\sigma_{2}$ 时，可以使用韦尔奇 t 检验（Welch's t-test），其检验统计量为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.467,
+            0.277,
+            0.872,
+            0.333
+          ],
+          "content": "T = \\frac {\\overline {{X}} _ {1} - \\overline {{X}} _ {2}}{\\sqrt {\\frac {s _ {1} ^ {2}}{n _ {1}} + \\frac {s _ {2} ^ {2}}{n _ {2}}}} \\tag {2-16}",
+          "image_source": "images/page_52_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.342,
+            0.735,
+            0.361
+          ],
+          "content": "它在原假设 $H_0$ 成立时服从自由度为 $v$ 的 $\\mathfrak{t}$ 分布，$T \\sim t(v)$，其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.419,
+            0.37,
+            0.644,
+            0.43
+          ],
+          "content": "v = \\frac {\\left[ (s _ {1} ^ {2} / n _ {1}) + (s _ {2} ^ {2} / n _ {2}) \\right] ^ {2}}{\\left[ \\frac {(s _ {1} ^ {2} / n _ {1}) ^ {2}}{(n _ {1} - 1)} + \\frac {(s _ {2} ^ {2} / n _ {2}) ^ {2}}{(n _ {2} - 1)} \\right]}",
+          "image_source": "images/page_52_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.438,
+            0.877,
+            0.593
+          ],
+          "content": "配对数据（paired data）是两样本检验中的一种特殊情况。例如，比较同一批乳腺癌患者在使用某种治疗方案前后的癌症指标水平。在处理配对数据时，直接使用两样本检验方法可能会引入条件内部差异，而实际上希望检验的是由于条件不同而产生的差异。在这种情况下，应该使用配对样本检验。注意到，检验配对数据均值 $\\mu_{1}$ 与 $\\mu_{2}$ 之间的关系，等价于检验配对数据均值差 $d = \\mu_{1} - \\mu_{2}$ 与0之间的关系。此时，两样本检验问题转化为单样本检验问题，根据适用范围可选择单样本Z检验或t检验。表2-5总结了正态总体均值的各类假设检验方法。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.597,
+            0.877,
+            0.707
+          ],
+          "content": "例题2-1:一家制药公司开发了一种新的降血压药物。为了测试新药的效果，他们进行了一项临床试验，随机选择了100名高血压患者参加试验。试验前，这些患者的平均血压为 $150\\mathrm{mmHg}$，标准差为 $15\\mathrm{mmHg}$。试验后，这些患者的平均血压为 $140\\mathrm{mmHg}$，标准差为 $10\\mathrm{mmHg}$。这个数据是否能确定新药的有效性？（显著性水平取 $\\alpha = 0.05$）"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.711,
+            0.875,
+            0.753
+          ],
+          "content": "检验过程:由于样本容量大于30，因此根据中心极限定理可以使用Z检验进行假设检验。原假设和备择假设分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.293,
+            0.765,
+            0.768,
+            0.783
+          ],
+          "content": "H _ {0}: \\text {试验前后患者的平均血压无显著差异} (\\mu_ {1} = \\mu_ {2}) \\Longleftrightarrow",
+          "image_source": "images/page_52_equation_14.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.293,
+            0.793,
+            0.734,
+            0.812
+          ],
+          "content": "H _ {A}: \\text {试验前后患者的平均血压有显著差异} (\\mu_ {1} \\neq \\mu_ {2})",
+          "image_source": "images/page_52_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.826,
+            0.42,
+            0.844
+          ],
+          "content": "通过计算，Z检验统计量为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.365,
+            0.853,
+            0.699,
+            0.91
+          ],
+          "content": "Z = \\frac {\\overline {{X}} _ {1} - \\overline {{X}} _ {2}}{\\sqrt {\\frac {s _ {1} ^ {2}}{n _ {1}} + \\frac {s _ {2} ^ {2}}{n _ {2}}}} = \\frac {1 5 0 - 1 4 0}{\\sqrt {\\frac {1 5 ^ {2}}{1 0 0} + \\frac {1 0 ^ {2}}{1 0 0}}} = 5. 5 4 7",
+          "image_source": "images/page_52_equation_17.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 53,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.66,
+            0.048,
+            0.804,
+            0.061
+          ],
+          "content": "2.2 参数估计和假设检验"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.977,
+            0.047,
+            0.999,
+            0.058
+          ],
+          "content": "039"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.115,
+            0.111,
+            0.806,
+            0.515
+          ],
+          "content": "<table><tr><td colspan=\"2\">样本情况</td><td>检验方法</td><td>原假设 $H_0$ </td><td>备择假设 $H_A$ </td><td>检验统计量</td><td>拒绝域</td></tr><tr><td rowspan=\"6\">单样本(包括配对数据)</td><td rowspan=\"3\">方差已知</td><td rowspan=\"3\">Z 检验( $\\sigma = \\sigma_0$ )</td><td> $\\mu \\leqslant \\mu_0$ </td><td> $\\mu >\\mu_0$ </td><td rowspan=\"3\"> $Z=\\frac{\\overline{X}-\\mu_0}{\\sigma_0/\\sqrt{n}}$ </td><td> $Z \\geqslant Z_{1-\\alpha}$ </td></tr><tr><td> $\\mu \\geqslant \\mu_0$ </td><td> $\\mu < \\mu_0$ </td><td> $Z \\leqslant Z_\\alpha$ </td></tr><tr><td> $\\mu = \\mu_0$ </td><td> $\\mu \\neq \\mu_0$ </td><td> $|Z| \\geqslant Z_{1-\\alpha/2}$ </td></tr><tr><td rowspan=\"3\">方差未知</td><td rowspan=\"3\">t 检验</td><td> $\\mu \\leqslant \\mu_0$ </td><td> $\\mu >\\mu_0$ </td><td rowspan=\"3\"> $T=\\frac{\\overline{X}-\\mu_0}{s/\\sqrt{n}}$ </td><td> $T \\geqslant t_{1-\\alpha}(n-1)$ </td></tr><tr><td> $\\mu \\geqslant \\mu_0$ </td><td> $\\mu < \\mu_0$ </td><td> $T \\leqslant t_\\alpha(n-1)$ </td></tr><tr><td> $\\mu = \\mu_0$ </td><td> $\\mu \\neq \\mu_0$ </td><td> $|T| \\geqslant t_{1-\\alpha/2}(n-1)$ </td></tr><tr><td rowspan=\"12\">两样本</td><td rowspan=\"3\">方差已知</td><td rowspan=\"3\">Z 检验( $\\sigma_1$  和  $\\sigma_2$  均已知)</td><td> $\\mu_1 \\leqslant \\mu_2$ </td><td> $\\mu_1 >\\mu_2$ </td><td rowspan=\"3\"> $Z=\\frac{\\overline{X}_1 - \\overline{X}_2}{\\sqrt{\\frac{\\sigma_1^2}{n_1} + \\frac{\\sigma_2^2}{n_2}}}$ </td><td> $Z \\geqslant Z_{1-\\alpha}$ </td></tr><tr><td> $\\mu_1 \\geqslant \\mu_2$ </td><td> $\\mu_1 < \\mu_2$ </td><td> $Z \\leqslant Z_\\alpha$ </td></tr><tr><td> $\\mu_1 = \\mu_2$ </td><td> $\\mu_1 \\neq \\mu_2$ </td><td> $|Z| \\geqslant Z_{1-\\alpha/2}$ </td></tr><tr><td rowspan=\"9\">方差未知</td><td rowspan=\"3\">t 检验( $\\sigma_1 = \\sigma_2$ )</td><td> $\\mu_1 \\leqslant \\mu_2$ </td><td> $\\mu_1 >\\mu_2$ </td><td rowspan=\"3\"> $T=\\frac{\\overline{X}_1 - \\overline{X}_2}{s_w\\sqrt{\\frac{1}{n_1} + \\frac{1}{n_2}}}$ </td><td> $T \\geqslant t_{1-\\alpha}(n_1 + n_2 - 2)$ </td></tr><tr><td> $\\mu_1 \\geqslant \\mu_2$ </td><td> $\\mu_1 < \\mu_2$ </td><td> $T \\leqslant t_\\alpha(n_1 + n_2 - 2)$ </td></tr><tr><td> $\\mu_1 = \\mu_2$ </td><td> $\\mu_1 \\neq \\mu_2$ </td><td> $|T| \\geqslant t_{1-\\alpha/2}(n_1 + n_2 - 2)$ </td></tr><tr><td rowspan=\"3\">Z 检验( $n_1$  和  $n_2$  足够大)</td><td> $\\mu_1 \\leqslant \\mu_2$ </td><td> $\\mu_1 >\\mu_2$ </td><td rowspan=\"3\"> $Z=\\frac{\\overline{X}_1 - \\overline{X}_2}{\\sqrt{\\frac{s_1^2}{n_1} + \\frac{s_2^2}{n_2}}}$ </td><td> $Z \\geqslant Z_{1-\\alpha}$ </td></tr><tr><td> $\\mu_1 \\geqslant \\mu_2$ </td><td> $\\mu_1 < \\mu_2$ </td><td> $Z \\leqslant Z_\\alpha$ </td></tr><tr><td> $\\mu_1 = \\mu_2$ </td><td> $\\mu_2 \\neq \\mu_2$ </td><td> $|Z| \\geqslant Z_{1-\\alpha/2}$ </td></tr><tr><td rowspan=\"3\">韦尔奇 t 检验( $\\sigma_1 \\neq \\sigma_2, n_1$  和  $n_2$  较小)</td><td> $\\mu_1 \\leqslant \\mu_2$ </td><td> $\\mu_1 >\\mu_2$ </td><td rowspan=\"3\"> $T=\\frac{\\overline{X}_1 - \\overline{X}_2}{\\sqrt{\\frac{s_1^2}{n_1} + \\frac{s_2^2}{n_2}}}$ </td><td> $T \\geqslant t_{1-\\alpha}(v)$ </td></tr><tr><td> $\\mu_1 \\geqslant \\mu_2$ </td><td> $\\mu_1 < \\mu_2$ </td><td> $T \\leqslant t_\\alpha(v)$ </td></tr><tr><td> $\\mu_1 = \\mu_2$ </td><td> $\\mu_1 \\neq \\mu_2$ </td><td> $|T| \\geqslant t_{1-\\alpha/2}(v)$ </td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.305,
+                0.092,
+                0.616,
+                0.107
+              ],
+              "content": "表 2-5 正态总体均值的参数假设检验方法"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_53_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.532,
+            0.807,
+            0.572
+          ],
+          "content": "这是一个双侧检验，通过查表可知临界值为 $1.96 < 5.547$ ，或者统计软件计算可知 $p$ 值小于0.05，因此拒绝原假设，表明试验前后患者的平均血压具有显著差异。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.576,
+            0.807,
+            0.636
+          ],
+          "content": "例题2-2:如果例题2-1中的临床试验患者数变为20名，试验前后血压数据同例题2-1，假设数据服从正态分布且试验前后总体方差相同，如何确定新药的有效性？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.642,
+            0.808,
+            0.681
+          ],
+          "content": "检验过程:由于样本容量小于30，且试验前后总体方差相同，因此可以使用t检验进行假设检验。原假设和备择假设分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.216,
+            0.692,
+            0.7,
+            0.712
+          ],
+          "content": "H _ {0}: \\text {试验前后患者的平均血压无显著差异} (\\mu_ {1} = \\mu_ {2}) \\Longleftrightarrow",
+          "image_source": "images/page_53_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.216,
+            0.72,
+            0.663,
+            0.739
+          ],
+          "content": "H _ {A}: \\text {试验前后患者的平均血压有显著差异} (\\mu_ {1} \\neq \\mu_ {2})",
+          "image_source": "images/page_53_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.753,
+            0.341,
+            0.77
+          ],
+          "content": "通过计算，t 检验统计量为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.25,
+            0.778,
+            0.664,
+            0.835
+          ],
+          "content": "T = \\frac {\\overline {{X}} _ {1} - \\overline {{X}} _ {2}}{s _ {w} \\sqrt {\\frac {1}{n _ {1}} + \\frac {1}{n _ {2}}}} = \\frac {1 5 0 - 1 4 0}{s _ {w} \\sqrt {\\frac {1}{2 0} + \\frac {1}{2 0}}} = 2. 4 8 \\sim t (3 8)",
+          "image_source": "images/page_53_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.842,
+            0.155,
+            0.859
+          ],
+          "content": "其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.302,
+            0.859,
+            0.612,
+            0.894
+          ],
+          "content": "s _ {w} ^ {2} = \\frac {(n _ {1} - 1) s _ {1} ^ {2} + (n _ {2} - 1) s _ {2} ^ {2}}{n _ {1} + n _ {2} - 2} = 1 6 2. 5",
+          "image_source": "images/page_53_equation_12.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 54,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.0,
+            0.05,
+            0.022,
+            0.061
+          ],
+          "content": "040"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.201,
+            0.05,
+            0.314,
+            0.062
+          ],
+          "content": "2 生物统计学基础"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.198,
+            0.095,
+            0.907,
+            0.157
+          ],
+          "content": "通过查表可知 t 检验在自由度为 38 时，临界值为 2.02 < 2.48，或者通过统计软件计算可知 p 值为 0.0177 < 0.05，因此拒绝原假设，表明试验前后患者的平均血压具有显著差异。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.199,
+            0.161,
+            0.907,
+            0.223
+          ],
+          "content": "例题2-3:在例题2-1的试验中，假如有10名患者的试验前后数据均是可获得的，具体如表2-6所示。假设数据服从正态分布且试验前后总体方差相同，这个数据是否能支持确定新药的有效性？"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.204,
+            0.263,
+            0.907,
+            0.493
+          ],
+          "content": "| 患者 | 试验前血压/mmHg | 试验后血压/mmHg |\n| --- | --- | --- |\n| 1 | 152 | 150 |\n| 2 | 153 | 135 |\n| 3 | 155 | 146 |\n| 4 | 146 | 142 |\n| 5 | 166 | 140 |\n| 6 | 160 | 150 |\n| 7 | 141 | 141 |\n| 8 | 152 | 129 |\n| 9 | 151 | 127 |\n| 10 | 151 | 137 |",
+          "captions": [
+            {
+              "bbox": [
+                0.424,
+                0.245,
+                0.684,
+                0.26
+              ],
+              "content": "表 2-6 10 名受试患者血压情况表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_54_table_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.2,
+            0.518,
+            0.907,
+            0.557
+          ],
+          "content": "检验过程:这是一个配对样本，由于样本容量小于30，所以应使用配对t检验。原假设和备择假设分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.568,
+            0.831,
+            0.586
+          ],
+          "content": "H _ {0}: \\text {试验前后患者的平均血压无显著差异} (d = \\mu_ {1} - \\mu_ {2} = 0) \\Longleftrightarrow",
+          "image_source": "images/page_54_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.596,
+            0.797,
+            0.614
+          ],
+          "content": "H _ {A}: \\text {试验前后患者的平均血压有显著差异} (d = \\mu_ {1} - \\mu_ {2} \\neq 0)",
+          "image_source": "images/page_54_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.198,
+            0.628,
+            0.907,
+            0.691
+          ],
+          "content": "通过计算，10位患者试验前后血压差值为 $2\\mathrm{mmHg}$ 、 $18\\mathrm{mmHg}$ 、 $9\\mathrm{mmHg}$ 、 $4\\mathrm{mmHg}$ 、 $26\\mathrm{mmHg}$ 、 $10\\mathrm{mmHg}$ 、 $0\\mathrm{mmHg}$ 、 $23\\mathrm{mmHg}$ 、 $24\\mathrm{mmHg}$ 、 $14\\mathrm{mmHg}$，均值为 $\\overline{d} = 13.0\\mathrm{mmHg}$，标准差为 $s_{\\overline{d}} = 9.5\\mathrm{mmHg}$ 。t检验统计量为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.392,
+            0.701,
+            0.712,
+            0.739
+          ],
+          "content": "t = \\frac {\\overline {{d}} - 0}{s _ {\\overline {{d}}} / \\sqrt {n}} = \\frac {1 3 . 0 - 0}{9 . 5 / \\sqrt {1 0}} = 4. 3 2 7 \\sim t (9)",
+          "image_source": "images/page_54_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.198,
+            0.749,
+            0.907,
+            0.811
+          ],
+          "content": "查表可知双侧检验下，t 分布在自由度为 9 时临界值为 $2.262 < 4.327$，通过统计软件可以计算出 $p$ 值为 $0.0019 < 0.05$，因此拒绝原假设，表明试验前后患者的平均血压具有显著差异。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.2,
+            0.834,
+            0.373,
+            0.854
+          ],
+          "level": 2,
+          "content": "2.2.5 方差分析"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.201,
+            0.873,
+            0.907,
+            0.914
+          ],
+          "content": "前文介绍的是针对一个或两个总体均值的假设检验方法。在实际应用中，我们常会遇到多个总体均值的比较问题。例如，某个药品在对照组、青少年实验组、中"
+        }
+      ]
+    },
+    {
+      "page_idx": 55,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.655,
+            0.047,
+            0.803,
+            0.06
+          ],
+          "content": "2.2 参数估计和假设检验"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.978,
+            0.048,
+            0.999,
+            0.058
+          ],
+          "content": "041"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.092,
+            0.803,
+            0.198
+          ],
+          "continues_prev": true,
+          "content": "年实验组和老年实验组中使用，需要比较药效在不同组间是否有差异。方差分析（analysis of variance, ANOVA）是一种用于比较多个组之间均值是否存在显著差异的统计方法。其基本原理在于通过对总体方差的分解和比较，评估不同组之间均值的差异是否超出了由随机误差引起的范围。本节主要介绍单因素方差分析和双因素方差分析。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.135,
+            0.203,
+            0.35,
+            0.219
+          ],
+          "level": 2,
+          "content": "2.2.5.1 单因素方差分析"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.225,
+            0.803,
+            0.287
+          ],
+          "content": "单因素方差分析（one-way ANOVA）用于比较一个变量在多个组别之间的差异，其中组别之间只有一个因素（变量）不同。假设有 k 个组，其总体均值分别为  $\\mu_{1}, \\mu_{2}, \\cdots, \\mu_{k}$ 。考虑以下假设检验问题"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.201,
+            0.302,
+            0.7,
+            0.321
+          ],
+          "content": "H _ {0}: \\mu_ {1} = \\mu_ {2} = \\dots = \\mu_ {k} \\Longleftrightarrow H _ {A}: \\mu_ {j}, j = 1, \\dots , k \\text {不全相等}",
+          "image_source": "images/page_55_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.334,
+            0.804,
+            0.44
+          ],
+          "content": "该方法将总体方差分解为组间方差（variance between laboratories）和组内方差（variance within laboratory），通过计算组间方差与组内方差的比值来判断这两种方差是否显著不同。我们称该比值为 F 统计量。如果 F 统计量很大，即组间方差显著大于组内方差，那么组间均值存在显著差异。单因素方差分析要求数据满足 3 个假设:正态性、组间方差齐性和独立性。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.445,
+            0.804,
+            0.484
+          ],
+          "content": "假设第 j 组数据有  $n_{j}$  个观测值，即  $X_{ij}, i = 1, \\cdots, n_{j}$ 。记 n 为总观测数据量， $\\overline{X}_{j}$  为第 j 组的均值， $\\overline{X}$  为所有组的均值，即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.25,
+            0.497,
+            0.652,
+            0.589
+          ],
+          "content": "n = \\sum_ {j = 1} ^ {k} n _ {j}, \\quad \\overline {{X}} _ {j} = \\frac {1}{n _ {j}} \\sum_ {i = 1} ^ {n _ {j}} X _ {i j}, \\quad \\overline {{\\overline {{X}}}} = \\frac {\\sum_ {j = 1} ^ {k} n _ {j} \\overline {{X}} _ {j}}{\\sum_ {j = 1} ^ {k} n _ {j}}",
+          "image_source": "images/page_55_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.598,
+            0.643,
+            0.617
+          ],
+          "content": "我们可以将 $X_{ij}$ 与 $\\overline{X}$ 之间的差异分解为组内和组间两部分，即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.302,
+            0.627,
+            0.602,
+            0.656
+          ],
+          "content": "X _ {i j} - \\overline {{\\overline {{X}}}} = \\left(X _ {i j} - \\overline {{X}} _ {j}\\right) + \\left(X _ {j} - \\overline {{\\overline {{X}}}}\\right)",
+          "image_source": "images/page_55_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.664,
+            0.576,
+            0.681
+          ],
+          "content": "类似地，可以将总平方和分解为组内和组间两部分，即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.369,
+            0.697,
+            0.536,
+            0.714
+          ],
+          "content": "S S _ {T} = S S _ {W} + S S _ {B}",
+          "image_source": "images/page_55_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.728,
+            0.143,
+            0.745
+          ],
+          "content": "其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.257,
+            0.752,
+            0.484,
+            0.797
+          ],
+          "content": "S S _ {T} = \\sum_ {j = 1} ^ {k} \\sum_ {i = 1} ^ {n _ {j}} \\left(X _ {i j} - \\overline {{\\overline {{X}}}}\\right) ^ {2}",
+          "image_source": "images/page_55_equation_14.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.254,
+            0.802,
+            0.62,
+            0.847
+          ],
+          "content": "S S _ {W} = \\sum_ {j = 1} ^ {k} \\sum_ {i = 1} ^ {n _ {j}} \\left(X _ {i j} - \\overline {{X}} _ {j}\\right) ^ {2} = \\sum_ {j = 1} ^ {k} (n _ {j} - 1) s _ {j} ^ {2}",
+          "image_source": "images/page_55_equation_15.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.258,
+            0.852,
+            0.652,
+            0.897
+          ],
+          "content": "S S _ {B} = \\sum_ {j = 1} ^ {k} \\sum_ {i = 1} ^ {n _ {j}} \\left(\\overline {{X}} _ {j} - \\overline {{\\overline {{X}}}}\\right) ^ {2} = \\sum_ {j = 1} ^ {k} n _ {j} \\left(\\overline {{X}} _ {j} - \\overline {{\\overline {{X}}}}\\right) ^ {2}",
+          "image_source": "images/page_55_equation_16.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 56,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.0,
+            0.036,
+            0.026,
+            0.046
+          ],
+          "content": "042"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.205,
+            0.037,
+            0.318,
+            0.05
+          ],
+          "content": "2 生物统计学基础"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.203,
+            0.086,
+            0.837,
+            0.104
+          ],
+          "content": "在组间方差齐性的假设下，可以分别计算组内方差估计和组间方差估计为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.43,
+            0.109,
+            0.682,
+            0.175
+          ],
+          "content": "M S _ {W} = \\frac {S S _ {W}}{\\sum_ {j = 1} ^ {k} (n _ {j} - 1)} = \\frac {S S _ {W}}{n - k}",
+          "image_source": "images/page_56_equation_3.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.498,
+            0.179,
+            0.616,
+            0.213
+          ],
+          "content": "M S _ {B} = \\frac {S S _ {B}}{k - 1}",
+          "image_source": "images/page_56_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.204,
+            0.223,
+            0.646,
+            0.241
+          ],
+          "content": "因此，我们可以写出单因素方差分析的 F 统计量为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.437,
+            0.246,
+            0.905,
+            0.283
+          ],
+          "content": "F = \\frac {M S _ {B}}{M S _ {W}} = \\frac {S S _ {B} / (k - 1)}{S S _ {W} / (n - k)} \\tag {2-17}",
+          "image_source": "images/page_56_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.203,
+            0.293,
+            0.907,
+            0.381
+          ],
+          "content": "在原假设 $H_0$ 成立时，该统计量服从自由度为 $k - 1$ 和 $n - k$ 的 $\\mathbf{F}$ 分布，即 $F \\sim F(k - 1, n - k)$。当 $\\mathbf{F}$ 统计量的值落入拒绝域 $\\{F : F > F_{1-\\alpha}(k - 1, n - k)\\}$ 时，拒绝原假设，认为这 $k$ 组数据的总体均值不全相同。一般地，我们可以使用方差分析表来展示整个计算过程，如表2-7。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.207,
+            0.423,
+            0.907,
+            0.515
+          ],
+          "content": "| 来源 | 平方和 | 自由度 | 均方和 | F 统计量 | 拒绝域 |\n| --- | --- | --- | --- | --- | --- |\n| 组间 | $SS_B$ | k-1 | $MS_B$ | $F = MS_B / MS_W$ | $F > F_{1-\\alpha}(k-1, n-k)$ |\n| 组内 | $SS_W$ | n-k | $MS_W$ |  |  |\n| 总和 | $SS_T$ | n-1 |  |  |  |",
+          "captions": [
+            {
+              "bbox": [
+                0.476,
+                0.404,
+                0.634,
+                0.42
+              ],
+              "content": "表 2-7 方差分析表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_56_table_9.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.241,
+            0.541,
+            0.455,
+            0.559
+          ],
+          "level": 2,
+          "content": "2.2.5.2 双因素方差分析"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.201,
+            0.565,
+            0.909,
+            0.676
+          ],
+          "content": "当所有组别是由两个因素的组合产生时，可以使用双因素方差分析（two-way ANOVA）。我们称每个因素的不同取值为水平（level）。通过对总体方差进行分解，双因素方差分析不仅可以检验这两个因素各自对结果的影响，还可以检验它们的交互效应，即它们一起对结果的影响是否显著。双因素方差分析同样要求数据满足正态性、组间方差齐性和独立性。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.241,
+            0.681,
+            0.667,
+            0.699
+          ],
+          "content": "下面依据每个组别下观测值是否有重复分别讨论。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.201,
+            0.704,
+            0.909,
+            0.884
+          ],
+          "content": "首先，我们从无重复观测的情况出发，引入随机区组（randomized block）的概念。随机区组指的是将整个数据分为若干个不同的区组，每个区组对应两个因素各取一个水平条件下的所有观测值。这种分组是随机进行的，以确保不同组之间的差异是由因素的变化引起的，而不是其他混杂因素。例如，研究一种新药物的疗效，考虑药物剂量和患者性别两个因素，可以将患者随机分成不同的区组，每个区组对应一种剂量和性别组合，然后对每个区组的患者进行观察并记录结果。通过这种随机分组的设计，可以将性别和剂量这两个因素的影响独立地分析，以确定它们对药物疗效的影响程度。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.24,
+            0.889,
+            0.672,
+            0.907
+          ],
+          "content": "随机区组设计下，数据可以整理成表 2-8 的形式。"
+        }
+      ]
+    },
+    {
+      "page_idx": 57,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.654,
+            0.045,
+            0.801,
+            0.058
+          ],
+          "content": "2.2 参数估计和假设检验"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.976,
+            0.047,
+            0.999,
+            0.056
+          ],
+          "content": "043"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.089,
+            0.11,
+            0.8,
+            0.251
+          ],
+          "content": "<table><tr><td rowspan=\"2\">因素 A</td><td colspan=\"4\">因素 B</td><td rowspan=\"2\">因素 A 均值</td></tr><tr><td>1</td><td>2</td><td>......</td><td>b</td></tr><tr><td>1</td><td> $X_{11}$ </td><td> $X_{12}$ </td><td>......</td><td> $X_{1b}$ </td><td> $\\overline{X}_{1}^{[A]}$ </td></tr><tr><td>2</td><td> $X_{21}$ </td><td> $X_{22}$ </td><td>......</td><td> $X_{2b}$ </td><td> $\\overline{X}_{2}^{[A]}$ </td></tr><tr><td>......</td><td>......</td><td>......</td><td>......</td><td>......</td><td>......</td></tr><tr><td>a</td><td> $X_{a1}$ </td><td> $X_{a2}$ </td><td>......</td><td> $X_{ab}$ </td><td> $\\overline{X}_{a}^{[A]}$ </td></tr><tr><td>因素 B 均值</td><td> $\\overline{X}_{1}^{[B]}$ </td><td> $\\overline{X}_{2}^{[B]}$ </td><td>......</td><td> $\\overline{X}_{b}^{[B]}$ </td><td> $\\overline{\\overline{X}}$ </td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.312,
+                0.091,
+                0.58,
+                0.106
+              ],
+              "content": "表 2-8 无重复观测的随机区组设计"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_57_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.084,
+            0.264,
+            0.798,
+            0.303
+          ],
+          "content": "总平方和可以分解为组间因素A平方和、组间因素B平方和，以及误差（组内）平方和，即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.317,
+            0.31,
+            0.569,
+            0.327
+          ],
+          "content": "S S _ {T} = S S _ {A} + S S _ {B} + S S _ {E r r o r}",
+          "image_source": "images/page_57_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.084,
+            0.34,
+            0.13,
+            0.357
+          ],
+          "content": "其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.342,
+            0.365,
+            0.573,
+            0.409
+          ],
+          "content": "S S _ {T} = \\sum_ {i = 1} ^ {a} \\sum_ {j = 1} ^ {b} \\left(X _ {i j} - \\overline {{\\overline {{X}}}}\\right) ^ {2}",
+          "image_source": "images/page_57_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.345,
+            0.414,
+            0.562,
+            0.455
+          ],
+          "content": "S S _ {A} = b \\sum_ {i = 1} ^ {a} \\left(\\overline {{X}} _ {i} ^ {[ A ]} - \\overline {{\\overline {{X}}}}\\right) ^ {2}",
+          "image_source": "images/page_57_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.345,
+            0.46,
+            0.563,
+            0.505
+          ],
+          "content": "S S _ {B} = a \\sum_ {j = 1} ^ {b} \\left(\\overline {{X}} _ {j} ^ {[ B ]} - \\overline {{\\overline {{X}}}}\\right) ^ {2}",
+          "image_source": "images/page_57_equation_9.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.315,
+            0.513,
+            0.564,
+            0.531
+          ],
+          "content": "S S _ {E r r o r} = S S _ {T} - S S _ {A} - S S _ {B}",
+          "image_source": "images/page_57_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.081,
+            0.544,
+            0.798,
+            0.606
+          ],
+          "content": "进而，我们可以写出对应的方差估计值 $MS_{A} = SS_{A} / (a - 1)$，$MS_{B} = SS_{B} / (b - 1)$，$MS_{Error} = SS_{Error} / (n - a - b + 1)$。因此，无重复观测的双因素方差分析的F统计量为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.611,
+            0.794,
+            0.645
+          ],
+          "content": "F _ {A} = \\frac {M S _ {A}}{M S _ {E r r o r}} \\tag {2-18}",
+          "image_source": "images/page_57_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.081,
+            0.655,
+            0.795,
+            0.696
+          ],
+          "content": "它在原假设 $H_0$ 成立时服从自由度为 $a - 1$ 和 $n - a - b + 1$ 的F分布，即 $F_{A}\\sim F(a - 1,n - a - b + 1)$；以及"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.373,
+            0.701,
+            0.794,
+            0.736
+          ],
+          "content": "F _ {B} = \\frac {M S _ {B}}{M S _ {E r r o r}} \\tag {2-19}",
+          "image_source": "images/page_57_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.081,
+            0.746,
+            0.795,
+            0.788
+          ],
+          "content": "它在原假设 $H_0$ 成立时服从自由度为 $b - 1$ 和 $n - a - b + 1$ 的 $\\mathrm{F}$ 分布，即 $F_{B} \\sim F(b - 1, n - a - b + 1)$。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.116,
+            0.792,
+            0.709,
+            0.81
+          ],
+          "content": "类似地，该假设检验过程可以使用一个方差分析表展示，如表2-9。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.079,
+            0.814,
+            0.794,
+            0.918
+          ],
+          "content": "如果我们想知道两个因素之间的交互效应对各组均值的影响是否有显著性差异，就需要考虑有重复观测的双因素方差分析。假设每个区组内重复观测 $r$ 次，记 $X_{ijk}$ 为因素A的第 $i$ 个水平和因素B的第 $j$ 个水平条件下第 $k$ 个观测值， $\\overline{X}_{ij} = \\frac{1}{r}\\sum_{k = 1}^{r}X_{ijk}$ 为因素A的第 $i$ 个水平和因素B的第 $j$ 个水平条件下所有观测值的均值，则可"
+        }
+      ]
+    },
+    {
+      "page_idx": 58,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.0,
+            0.038,
+            0.027,
+            0.049
+          ],
+          "content": "044"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.205,
+            0.037,
+            0.319,
+            0.05
+          ],
+          "content": "2 生物统计学基础"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.207,
+            0.105,
+            0.913,
+            0.246
+          ],
+          "content": "| 来源 | 平方和 | 自由度 | 均方和 | F 统计量 | 拒绝域 |\n| --- | --- | --- | --- | --- | --- |\n| 因素 A | $SS_A$ | a-1 | $MS_A$ | $F_A = \\frac{MS_A}{MS_{Error}}$ | $F_A > F_{1-\\alpha}(a-1, n-a-b+1)$ |\n| 因素 B | $SS_B$ | b-1 | $MS_B$ | $F_B = \\frac{MS_B}{MS_{Error}}$ | $F_B > F_{1-\\alpha}(b-1, n-a-b+1)$ |\n| 误差 | $SS_{Error}$ | n-a-b+1 | $MS_{Error}$ |  |  |\n| 总和 | $SS_T$ | n-1 |  |  |  |",
+          "captions": [
+            {
+              "bbox": [
+                0.406,
+                0.087,
+                0.709,
+                0.102
+              ],
+              "content": "表 2-9 无重复观测的双因素方差分析表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_58_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.206,
+            0.263,
+            0.271,
+            0.281
+          ],
+          "content": "以计算"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.416,
+            0.289,
+            0.68,
+            0.335
+          ],
+          "content": "S S _ {B l o c k} = r \\sum_ {i = 1} ^ {a} \\sum_ {j = 1} ^ {b} \\left(\\overline {{X}} _ {i j} - \\overline {{\\overline {{X}}}}\\right) ^ {2}",
+          "image_source": "images/page_58_equation_5.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.445,
+            0.339,
+            0.664,
+            0.38
+          ],
+          "content": "S S _ {A} = b r \\sum_ {i = 1} ^ {a} \\left(\\overline {{X}} _ {i} ^ {[ A ]} - \\overline {{\\overline {{X}}}}\\right) ^ {2}",
+          "image_source": "images/page_58_equation_6.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.445,
+            0.385,
+            0.667,
+            0.429
+          ],
+          "content": "S S _ {B} = a r \\sum_ {j = 1} ^ {b} \\left(\\overline {{X}} _ {j} ^ {[ B ]} - \\overline {{\\overline {{X}}}}\\right) ^ {2}",
+          "image_source": "images/page_58_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.435,
+            0.436,
+            0.687,
+            0.454
+          ],
+          "content": "S S _ {A B} = S S _ {B l o c k} - S S _ {A} - S S _ {B}",
+          "image_source": "images/page_58_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.446,
+            0.461,
+            0.705,
+            0.506
+          ],
+          "content": "S S _ {T} = \\sum_ {i = 1} ^ {a} \\sum_ {j = 1} ^ {b} \\sum_ {k = 1} ^ {r} \\left(X _ {i j k} - \\overline {{\\overline {{X}}}}\\right) ^ {2}",
+          "image_source": "images/page_58_equation_9.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.418,
+            0.514,
+            0.629,
+            0.531
+          ],
+          "content": "S S _ {E r r o r} = S S _ {T} - S S _ {B l o c k}",
+          "image_source": "images/page_58_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.207,
+            0.546,
+            0.489,
+            0.563
+          ],
+          "content": "对应的方差分析表可见表 2-10。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.209,
+            0.598,
+            0.919,
+            0.796
+          ],
+          "content": "<table><tr><td colspan=\"2\">来源</td><td>平方和</td><td>自由度</td><td>均方和</td><td>F统计量</td><td>拒绝域</td></tr><tr><td rowspan=\"4\">区组</td><td>因素A</td><td> $SS_A$ </td><td>a-1</td><td> $MS_A$ </td><td> $F_A = \\frac{MS_A}{MS_{Error}}$ </td><td> $F_A > F_{1-\\alpha}[a-1, ab(r-1)]$ </td></tr><tr><td>因素B</td><td> $SS_B$ </td><td>b-1</td><td> $MS_B$ </td><td> $F_B = \\frac{MS_B}{MS_{Error}}$ </td><td> $F_B > F_{1-\\alpha}[b-1, ab(r-1)]$ </td></tr><tr><td>A×B</td><td> $SS_{AB}$ </td><td>(a-1)(b-1)</td><td> $MS_{AB}$ </td><td> $F_{AB} = \\frac{MS_{AB}}{MS_{Error}}$ </td><td> $F_{AB} > F_{1-\\alpha}[(a-1)(b-1), ab(r-1)]$ </td></tr><tr><td>区组和</td><td> $SS_{Block}$ </td><td>ab-1</td><td></td><td></td><td></td></tr><tr><td colspan=\"2\">误差</td><td> $SS_{Error}$ </td><td>ab(r-1)</td><td> $MS_{Error}$ </td><td></td><td></td></tr><tr><td colspan=\"2\">总和</td><td> $SS_T$ </td><td>n-1</td><td></td><td></td><td></td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.406,
+                0.578,
+                0.716,
+                0.594
+              ],
+              "content": "表 2-10 有重复观测的双因素方差分析表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_58_table_13.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.208,
+            0.829,
+            0.43,
+            0.85
+          ],
+          "level": 2,
+          "content": "2.2.6 多重检验校正"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.208,
+            0.87,
+            0.917,
+            0.934
+          ],
+          "content": "在进行大量假设检验时，如果不采取措施来控制错误率，那么由于偶然性引起的错误可能会大幅增加。例如，一个由4组数据组成的数据集，通过单因素方差分析发现4组均值并不相等。此时，我们关心究竟是哪一对（或哪几对）的均值不相"
+        }
+      ]
+    },
+    {
+      "page_idx": 59,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.653,
+            0.047,
+            0.799,
+            0.059
+          ],
+          "content": "2.2 参数估计和假设检验"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.976,
+            0.048,
+            0.999,
+            0.058
+          ],
+          "content": "045"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.091,
+            0.8,
+            0.13
+          ],
+          "continues_prev": true,
+          "content": "等。如果两两进行比较，需要进行6次检验。假设单次检验的显著性水平都是 $\\alpha$ 。不难发现，6次检验累积的I型错误概率将大于 $\\alpha$ 。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.134,
+            0.8,
+            0.195
+          ],
+          "content": "多重检验校正（multiple test correction）是统计学中一个重要的概念，目的在于控制进行多个假设检验时由于随机性引起的错误率增加。常用的多重检验校正方法有 Bonferroni 校正和 Benjamini-Hochberg 校正。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.133,
+            0.201,
+            0.331,
+            0.216
+          ],
+          "level": 2,
+          "content": "2.2.6.1 Bonferroni 校正"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.222,
+            0.801,
+            0.35
+          ],
+          "content": "Bonferroni 校正是一种非常保守的校正方法，其基本思想是将单个检验的显著性水平除以检验的总次数。例如，设定整体的显著性水平为 0.05，如果进行了 5 次检验，那么每个检验的显著性水平将变成 $0.05 / 5 = 0.01$（或者将每个检验的 $p$ 值乘以总次数，称为校正后的 $p$ 值，再与显著性水平 0.05 比较）。这种方法的优点是非常简单和直观，但缺点是当进行大量检验时，可能会过于保守，导致显著性结果的发现率降低。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.133,
+            0.356,
+            0.409,
+            0.372
+          ],
+          "level": 2,
+          "content": "2.2.6.2 Benjamini-Hochberg 校正"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.094,
+            0.378,
+            0.801,
+            0.483
+          ],
+          "content": "Benjamini-Hochberg 校正（简称 BH 校正）是一种控制错误发现率（false discovery rate，FDR）的方法。FDR 是指被错误地拒绝的假设（即假阳性）占被拒绝的假设总数（即所有阳性）的比例。例如，进行 100 次假设检验，其中有 6 个真实存在的效应，但我们发现了 10 个显著效应，那么其中 4 个是假阳性，FDR 就是 $4/10 = 0.4$，即发现的显著效应中有 $40\\%$ 是假的。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.488,
+            0.8,
+            0.527
+          ],
+          "content": "相比于Bonferroni校正，BH校正在保证统计效力的同时，也能控制假阳性的比例。其步骤如下:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.095,
+            0.532,
+            0.8,
+            0.66
+          ],
+          "sub_type": "text",
+          "content": "① 将所有检验的 p 值从小到大排序;\n② 对每一个 $p$ 值分配一个秩次，最小的被赋予最小的秩次（$i = 1$），第二小的被赋予 $i = 2$，以此类推，最大的被赋予 $i = n$，其中 $n$ 是检验的总次数；\n③ 对每一个 $p$ 值乘以总次数再除以位次来得到校正后的 $p$ 值（即 $p_{adjust} = p \\times n / i$);\n④ 所有校正后的 p 值小于等于显著性水平的检验被认为是显著的。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.664,
+            0.799,
+            0.727
+          ],
+          "content": "例题 2-4:一位生物学家想要研究 4 种肥料（A、B、C、D）对植物生长的影响。他在实验室里种植了 40 棵同一品种的植物，每种肥料分别用于 10 棵植物，其他条件相同。经过一段时间后，他测量了每株植物的高度（表 2-11）。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.731,
+            0.799,
+            0.772
+          ],
+          "content": "假设数据符合正态分布，该生物学家想知道 4 种肥料对植物生长的影响有无差异？如果有，是哪种肥料存在显著差异？（真实情况为肥料 C 与其他 3 种有显著差异）"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.776,
+            0.799,
+            0.816
+          ],
+          "content": "检验过程:由于是4组样本的比较，组间仅有一个因素（肥料种类）不同，因此应使用单因素方差分析检验。原假设和备择假设分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.137,
+            0.828,
+            0.758,
+            0.846
+          ],
+          "content": "H _ {0}: 4 \\text {种肥料对植物生长的影响没有显著差异} (\\mu_ {A} = \\mu_ {B} = \\mu_ {C} = \\mu_ {D}) \\Longleftrightarrow",
+          "image_source": "images/page_59_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.855,
+            0.691,
+            0.873
+          ],
+          "content": "$H_{A}$ :至少一种肥料对植物生长的影响与其他肥料相比有显著差异"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.178,
+            0.883,
+            0.397,
+            0.901
+          ],
+          "content": "(\\mu_ {A}, \\mu_ {B}, \\mu_ {C}, \\mu_ {D} \\text {不全相等})",
+          "image_source": "images/page_59_equation_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 60,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.0,
+            0.037,
+            0.026,
+            0.048
+          ],
+          "content": "046"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.199,
+            0.038,
+            0.311,
+            0.051
+          ],
+          "content": "2 生物统计学基础"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.202,
+            0.104,
+            0.895,
+            0.328
+          ],
+          "content": "| A/cm | B/cm | C/cm | D/cm |\n| --- | --- | --- | --- |\n| 18.3 | 13.0 | 20.9 | 15.3 |\n| 19.3 | 20.4 | 19.1 | 16.5 |\n| 24.7 | 24.4 | 26.0 | 17.2 |\n| 20.2 | 7.3 | 23.3 | 20.9 |\n| 20.4 | 21.1 | 23.3 | 13.0 |\n| 25.1 | 21.5 | 28.1 | 19.0 |\n| 21.4 | 16.1 | 23.1 | 14.3 |\n| 16.2 | 16.3 | 25.0 | 21.8 |\n| 17.9 | 16.2 | 27.1 | 15.5 |\n| 18.7 | 14.5 | 24.2 | 19.7 |",
+          "captions": [
+            {
+              "bbox": [
+                0.416,
+                0.085,
+                0.677,
+                0.101
+              ],
+              "content": "表 2-11 施用不同肥料植物的高度"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_60_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.199,
+            0.344,
+            0.29,
+            0.361
+          ],
+          "content": "通过计算:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.369,
+            0.841,
+            0.393
+          ],
+          "content": "\\overline {{X}} _ {1} = 2 0. 2 2, \\quad \\overline {{X}} _ {2} = 1 7. 0 8, \\quad \\overline {{X}} _ {3} = 2 4. 0 1, \\quad \\overline {{X}} _ {4} = 1 7. 3 2, \\quad \\overline {{\\overline {{X}}}} = 1 9. 6 5 7 5",
+          "image_source": "images/page_60_equation_5.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.398,
+            0.707,
+            0.445
+          ],
+          "content": "S S _ {T} = \\sum_ {j = 1} ^ {4} \\sum_ {i = 1} ^ {1 0} \\left(X _ {i j} - \\overline {{\\overline {{X}}}}\\right) ^ {2} = 7 5 3. 0 7 7 8",
+          "image_source": "images/page_60_equation_6.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.387,
+            0.449,
+            0.705,
+            0.495
+          ],
+          "content": "S S _ {B} = \\sum_ {j = 1} ^ {4} \\sum_ {i = 1} ^ {1 0} \\left(\\overline {{X}} _ {j} - \\overline {{\\overline {{X}}}}\\right) ^ {2} = 3 1 3. 6 8 0 8",
+          "image_source": "images/page_60_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.381,
+            0.5,
+            0.709,
+            0.545
+          ],
+          "content": "S S _ {W} = \\sum_ {j = 1} ^ {4} \\sum_ {i = 1} ^ {1 0} \\left(X _ {i j} - \\overline {{X}} _ {j}\\right) ^ {2} = 4 3 9. 3 9 7 0",
+          "image_source": "images/page_60_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.195,
+            0.555,
+            0.894,
+            0.643
+          ],
+          "content": "查F分布临界值表可知在 $\\alpha = 0.05$ 的显著性水平下，F分布在自由度为3和36时临界值为2.867，F统计量 $8.5667 > 2.867$ 位于拒绝域，通过统计软件可以计算出 $p$ 值为 $0.0002 < 0.05$ ，因此拒绝原假设，表明至少有一种肥料对植物生长的影响与其他肥料相比有显著差异（表2-12）。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.2,
+            0.683,
+            0.894,
+            0.786
+          ],
+          "content": "| 来源 | 平方和 | 自由度 | 均方和 | F 统计量 | 拒绝域 |\n| --- | --- | --- | --- | --- | --- |\n| 组间 | 313.6808 | 3 | 104.5603 | $F = \\frac{MS_B}{MS_W} = 8.5667$ | $F > F_{1-\\alpha}(k-1, n-k)$ |\n| 组内 | 439.3970 | 36 | 12.2055 |  |  |\n| 总和 | 753.0778 | 39 |  |  |  |",
+          "captions": [
+            {
+              "bbox": [
+                0.454,
+                0.663,
+                0.634,
+                0.679
+              ],
+              "content": "表 2-12 计算结果统计"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_60_table_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.809,
+            0.893,
+            0.849
+          ],
+          "content": "在此基础上，我们可以使用多重 t 检验确定有显著差异的肥料种类，校正方式分别选择 Bonferroni 校正和 BH 校正（表 2-13）。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.854,
+            0.894,
+            0.918
+          ],
+          "content": "从结果中可以看出，校正前后A-D检验对的 $p$ 值由小于0.05转为大于0.05。由于真实情况是只有肥料C与其他3种肥料有显著不同，因此经过校正的 $p$ 值准确识别出A-C、B-C、C-D3组具有显著差异的同时，避免了A-D具有显著差异的"
+        }
+      ]
+    },
+    {
+      "page_idx": 61,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.658,
+            0.06,
+            0.803,
+            0.072
+          ],
+          "content": "2.2 参数估计和假设检验"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.975,
+            0.059,
+            0.998,
+            0.07
+          ],
+          "content": "047"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.117,
+            0.123,
+            0.803,
+            0.261
+          ],
+          "content": "| 检验对 | 原始p值 | Bonferroni 校正 | BH 校正 |\n| --- | --- | --- | --- |\n| A-B | 0.1044 | 0.6264 (0.1044 × 6) | 0.1253 (0.1044 × 6/5) |\n| A-C | 0.0072 | 0.0432 (0.0072 × 6) | 0.0144 (0.0072 × 6/3) |\n| A-D | 0.0380 | 0.2280 (0.0380 × 6) | 0.0570 (0.0380 × 6/4) |\n| B-C | 0.0017 | 0.0102 (0.0017 × 6) | 0.0051 (0.0017 × 6/2) |\n| B-D | 0.8970 | 1.0000 (0.8970 × 6) | 0.8970 (0.8970 × 6/6) |\n| C-D | 0.00005 | 0.0003 (0.00005 × 6) | 0.0003 (0.00005 × 6/1) |",
+          "captions": [
+            {
+              "bbox": [
+                0.346,
+                0.105,
+                0.572,
+                0.12
+              ],
+              "content": "表 2-13 多重 t 检验校正方式"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_61_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.115,
+            0.277,
+            0.204,
+            0.293
+          ],
+          "content": "错误结论。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.115,
+            0.316,
+            0.287,
+            0.337
+          ],
+          "level": 2,
+          "content": "2.2.7 卡方检验"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.355,
+            0.803,
+            0.439
+          ],
+          "content": "卡方分布（chi-square distribution）是一种常见的概率分布，用于描述 $k$ 个独立的标准正态随机变量的平方和，记作 $\\chi^2 (k)$，其中 $k$ 是自由度参数。卡方分布的自由度决定了分布的形状，当自由度较大时，卡方分布近似于正态分布（图2-12）。卡方检验常用于验证数据是否遵循某种假设的分布，以及评估对数据的拟合程度。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.151,
+            0.442,
+            0.343,
+            0.459
+          ],
+          "level": 2,
+          "content": "2.2.7.1 拟合优度检验"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.463,
+            0.804,
+            0.546
+          ],
+          "content": "拟合优度检验（goodness of fit test）是一种用于检验观测数据与理论分布之间是否存在显著差异的统计方法。假设的理论分布并不总是正态分布、泊松分布、二项分布等常见分布，也可能是与生物学本质有关的分布，例如孟德尔杂交试验中两对杂合子产生的4种性状，应当满足频数比例为9:3:3:1。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.549,
+            0.804,
+            0.653
+          ],
+          "content": "拟合优度检验的基本思想是比较观测频数与期望频数之间的差异。期望频数是根据所选的理论分布以及总体参数计算出来的。通过计算观测频数与期望频数之间的差异，可以得到一个卡方统计量及拒绝域，从而判断理论分布对于观测数据偏离程度。注意该检验需要满足所有期望频数大于等于1，且不超过 $20\\%$ 的期望频数小于5。"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.167,
+            0.665,
+            0.748,
+            0.912
+          ],
+          "sub_type": "line",
+          "content": "| X | df=1 | df=2 | df=3 | df=5 | df=10 |\n|---|---|---|---|---|---|\n| 0 | ~0.5 | ~0.5 | 0 | 0 | 0 |\n| 1 | ~0.35 | ~0.35 | ~0.24 | ~0.08 | ~0.01 |\n| 2 | ~0.2 | ~0.2 | ~0.24 | ~0.12 | ~0.01 |\n| 3 | ~0.1 | ~0.12 | ~0.2 | ~0.14 | ~0.02 |\n| 4 | ~0.05 | ~0.07 | ~0.15 | ~0.15 | ~0.04 |\n| 5 | ~0.03 | ~0.05 | ~0.1 | ~0.14 | ~0.06 |\n| 6 | ~0.02 | ~0.03 | ~0.07 | ~0.12 | ~0.08 |\n| 7 | ~0.01 | ~0.02 | ~0.05 | ~0.1 | ~0.09 |\n| 8 | ~0.01 | ~0.01 | ~0.03 | ~0.08 | ~0.1 |",
+          "captions": [
+            {
+              "bbox": [
+                0.816,
+                0.873,
+                0.999,
+                0.91
+              ],
+              "content": "图2-12 不同自由度下的卡方分布"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_61_chart_10.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 62,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.0,
+            0.041,
+            0.026,
+            0.053
+          ],
+          "content": "048"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.208,
+            0.044,
+            0.321,
+            0.057
+          ],
+          "content": "2 生物统计学基础"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.209,
+            0.093,
+            0.915,
+            0.157
+          ],
+          "content": "考虑有 $k$ 个类别或分组的样本，容量为 $n$ ，观测频数和期望频数分别记为 $O_{i}$ 和 $E_{i}$ ，代表第 $i$ 个类别或分组内的观测频数和期望频数大小。拟合优度检验的原假设和备择假设分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.282,
+            0.172,
+            0.845,
+            0.191
+          ],
+          "content": "H _ {0}: \\text {样本数据服从假设分布} \\iff H _ {A}: \\text {样本数据不服从假设分布}",
+          "image_source": "images/page_62_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.247,
+            0.206,
+            0.457,
+            0.223
+          ],
+          "content": "拟合优度检验的过程为:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.246,
+            0.228,
+            0.856,
+            0.314
+          ],
+          "sub_type": "text",
+          "content": "① 设置显著性水平  $\\alpha$ ;\n②对于每个类别或水平，计算观测数据频数 $O_{i}$ ;\n③ 根据理论分布在不同类别或水平的概率 $p_i$，计算期望频数 $E_i = np_i$;\n④ 计算拟合优度检验统计量"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.475,
+            0.323,
+            0.652,
+            0.366
+          ],
+          "content": "X ^ {2} = \\sum_ {i = 1} ^ {k} \\frac {(O _ {i} - E _ {i}) ^ {2}}{E _ {i}}",
+          "image_source": "images/page_62_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.213,
+            0.377,
+            0.916,
+            0.419
+          ],
+          "content": "该统计量在原假设 $H_0$ 成立时近似服从自由度为 $k - 1$ 的卡方分布，即 $X^2 \\sim \\chi^2(k - 1)$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.249,
+            0.422,
+            0.825,
+            0.441
+          ],
+          "content": "⑤ 查表确定 $\\chi^2 (k - 1)$ 的下 $1 - \\alpha$ 分位数，进而确定检验的拒绝域。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.25,
+            0.445,
+            0.613,
+            0.463
+          ],
+          "content": "拟合优度检验的过程可以用表 2-14 展示。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.216,
+            0.505,
+            0.917,
+            0.616
+          ],
+          "content": "<table><tr><td>分组</td><td>1</td><td>2</td><td>......</td><td>k</td><td>总和</td></tr><tr><td>观测频数/ $O_i$ </td><td> $O_1$ </td><td> $O_2$ </td><td>......</td><td> $O_k$ </td><td>n</td></tr><tr><td>期望频数/ $E_i$ </td><td> $E_1 = np_1$ </td><td> $E_2 = np_2$ </td><td>......</td><td> $E_k = np_k$ </td><td>n</td></tr><tr><td> $X^2$ </td><td colspan=\"5\"> $\\sum_{i=1}^{k} \\frac{(O_i - E_i)^2}{E_i}$ </td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.427,
+                0.485,
+                0.704,
+                0.501
+              ],
+              "content": "表 2-14 拟合优度检验统计量计算表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_62_table_15.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.25,
+            0.64,
+            0.463,
+            0.658
+          ],
+          "level": 2,
+          "content": "2.2.7.2 独立性卡方检验"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.214,
+            0.663,
+            0.918,
+            0.705
+          ],
+          "content": "独立性卡方检验（chi-square test for independence）是一种用于检验两个分类变量之间是否独立的统计方法。独立性卡方检验的原假设和备择假设分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.281,
+            0.719,
+            0.851,
+            0.738
+          ],
+          "content": "H _ {0}: \\text {两个变量相互是独立的} \\iff H _ {A}: \\text {两个变量相互是不独立的}",
+          "image_source": "images/page_62_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.212,
+            0.751,
+            0.919,
+            0.815
+          ],
+          "content": "独立性卡方检验通常应用于列联表（contingency table）数据，其中一个变量作为行变量，另一个变量作为列变量。列联表展示了两个变量之间的交叉分布，其中每个单元格包含了两个变量特定组合下的频数。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.212,
+            0.82,
+            0.919,
+            0.906
+          ],
+          "content": "独立性卡方检验的基本思想同样是比较观测频数与期望频数之间的差异，以评估两个变量之间的关联程度。期望频数是基于独立性假设计算得出的。通过计算观测频数与期望频数之间的差异，可以得到一个卡方统计量。然后，将该统计量与卡方分布的分位数进行比较，从而判断两个变量之间是否存在显著的关联。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.25,
+            0.91,
+            0.919,
+            0.929
+          ],
+          "content": "考虑一个包括变量 A（m 个类别）和变量 B（k 个类别）的样本，容量为 n，观"
+        }
+      ]
+    },
+    {
+      "page_idx": 63,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.657,
+            0.049,
+            0.803,
+            0.061
+          ],
+          "content": "2.2 参数估计和假设检验"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.977,
+            0.049,
+            0.999,
+            0.059
+          ],
+          "content": "049"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.093,
+            0.804,
+            0.132
+          ],
+          "continues_prev": true,
+          "content": "测频数和期望频数分别记为 $O_{ij}$ 和 $E_{ij}$，代表同时属于变量A的第 $i$ 个类别和变量B的第 $j$ 个类别的观测频数或期望频数大小。独立性卡方检验的过程为:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.103,
+            0.136,
+            0.806,
+            0.219
+          ],
+          "sub_type": "text",
+          "content": "① 设置显著性水平  $\\alpha$ ;\n② 对于变量 A 的每个类别 i 和变量 B 的每个类别 j，计算观测频数  $O_{ij}$ ，第 i 行和  $R_{i}=\\sum_{j=1}^{k}O_{ij}$  以及第 j 列和  $C_{j}=\\sum_{i=1}^{m}O_{ij}$ ;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.221,
+            0.581,
+            0.238
+          ],
+          "content": "③ 基于原假设的独立性，计算每个单元格期望频数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.39,
+            0.246,
+            0.518,
+            0.279
+          ],
+          "content": "E _ {i j} = \\frac {R _ {i} \\times C _ {j}}{n}",
+          "image_source": "images/page_63_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.287,
+            0.68,
+            0.306
+          ],
+          "content": "④ 计算独立性卡方检验统计量:如果所有单元格  $E_{ij}$  均大于 5，"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.344,
+            0.317,
+            0.564,
+            0.361
+          ],
+          "content": "X ^ {2} = \\sum_ {i = 1} ^ {m} \\sum_ {j = 1} ^ {k} \\frac {(O _ {i j} - E _ {i j}) ^ {2}}{E _ {i j}}",
+          "image_source": "images/page_63_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.371,
+            0.804,
+            0.474
+          ],
+          "content": "如果存在 $E_{ij}$ 小于5，那么需要进行耶茨连续性校正（Yates's continuity correction）来提高卡方检验的稳健性，此时统计量变为 $X^{2} = \\sum_{i=1}^{m} \\sum_{j=1}^{k} \\frac{(|O_{ij} - E_{ij}| - 0.5)^{2}}{E_{ij}}$。在原假设 $H_{0}$ 成立时，上述统计量近似服从自由度为 $(m-1)(k-1)$ 的卡方分布，即 $X^{2} \\sim \\chi^{2} \\{(m-1)(k-1)\\}$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.479,
+            0.793,
+            0.518
+          ],
+          "content": "⑤ 查表确定 $\\chi^2\\{(m - 1)(k - 1)\\}$ 的下 $1 - \\alpha$ 分位数，进而确定检验的拒绝域。独立性卡方检验的过程可以用表2-15展示。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.107,
+            0.559,
+            0.803,
+            0.807
+          ],
+          "content": "<table><tr><td rowspan=\"2\">变量A</td><td colspan=\"4\">变量B</td><td rowspan=\"2\">总和</td></tr><tr><td>1</td><td>2</td><td>......</td><td>k</td></tr><tr><td>1</td><td> $O_{11}$  $(E_{11}=R_1C_1/n)$ </td><td> $O_{12}$  $(E_{12}=R_1C_2/n)$ </td><td>......</td><td> $O_{1k}$  $(E_{1k}=R_1C_k/n)$ </td><td> $R_1$ </td></tr><tr><td>2</td><td> $O_{21}$  $(E_{21}=R_2C_1/n)$ </td><td> $O_{22}$  $(E_{22}=R_2C_2/n)$ </td><td>......</td><td> $O_{2k}$  $(E_{2k}=R_2C_k/n)$ </td><td> $R_2$ </td></tr><tr><td>......</td><td>......</td><td>......</td><td>......</td><td>......</td><td>......</td></tr><tr><td>m</td><td> $O_{m1}$  $(E_{m1}=R_mC_1/n)$ </td><td> $O_{m2}$  $(E_{m2}=R_mC_2/n)$ </td><td>......</td><td> $O_{mk}$  $(E_{mk}=R_mC_k/n)$ </td><td> $R_m$ </td></tr><tr><td>总和</td><td> $C_1$ </td><td> $C_2$ </td><td>......</td><td> $C_k$ </td><td>n</td></tr><tr><td> $X^2$ </td><td colspan=\"5\"> $\\sum_{i=1}^{m}\\sum_{j=1}^{k}\\frac{(O_{ij}-E_{ij})^2}{E_{ij}}$ 或 $\\sum_{i=1}^{m}\\sum_{j=1}^{k}\\frac{(|O_{ij}-E_{ij}|-0.5)^2}{E_{ij}}$ (连续性校正)</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.31,
+                0.54,
+                0.6,
+                0.556
+              ],
+              "content": "表 2-15 独立性卡方检验统计量计算表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_63_table_13.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.141,
+            0.825,
+            0.367,
+            0.842
+          ],
+          "level": 2,
+          "content": "2.2.7.3 Fisher 精确性检验"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.848,
+            0.802,
+            0.91
+          ],
+          "content": "对于两个二分类变量（2×2列联表），除了独立性卡方检验外，还可以使用Fisher精确检验（Fisher's exact test）。该检验基于超几何分布（hypergeometric distribution），优先适用于以下两种情况之一:"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {}
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 48,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 49,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 50,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 51,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 52,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 53,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 54,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 55,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 56,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 57,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 58,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 59,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 60,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 61,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 62,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 63,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

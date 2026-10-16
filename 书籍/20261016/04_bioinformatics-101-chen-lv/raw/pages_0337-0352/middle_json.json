@@ -1,0 +1,3970 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {}
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 336,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 337,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 338,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 339,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 340,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 341,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 342,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 343,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 344,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 345,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 346,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 347,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 348,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 349,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 350,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 351,
+          "width_pt": 595.2760009765625,
+          "height_pt": 841.8900146484375
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 336,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.0,
+            0.051,
+            0.022,
+            0.06
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "322"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.195,
+            0.051,
+            0.34,
+            0.063
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9 蛋白质组学和代谢组学"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.191,
+            0.095,
+            0.881,
+            0.155
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "的成功作出了很大贡献。此外，AlphaFold2还引入了一系列新技术，如回收机制（recycling）和自蒸馏（self-distillation），这些技术首次应用于蛋白质结构预测领域，显著提高了预测水平。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.191,
+            0.16,
+            0.885,
+            0.503
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "RoseTTAFold是由华盛顿大学大卫·贝克（David Baker）研究团队开发的一种蛋白质结构预测方法，与AlphaFold2同时问世。RoseTTAFold的工作流程可以分为三个部分:特征嵌入、三轨（three-track）编码器和解码器。首先，它和AlphaFold2一样，在数据库中搜索同源序列和结构。为了减轻计算压力，研究人员将目标序列分成了许多不连续的小片段，进一步生成MSA特征和氨基酸间接触信息。接着，模型会处理每一个片段进行MSA特征和氨基酸间接触信息的处理，这一过程也涉及各种attention架构。最后，模型会将这两部分信息综合起来，生成蛋白质的三维结构。RoseTTAFold模型在生成最终的三维结构时采用了两种不同的策略:第一种是利用pyRosetta，它会根据预测的氨基酸间距离和方向分布来生成全原子结构；第二种是用SE（3）等变性Transformer，对不同片段的特征和接触信息进行平均后，直接生成主链坐标（端到端）。这两种方法各有优缺点，前者可以得到更准确结构，但计算量更大；后者速度更快，但准确性可能略低于前者。RoseTTAFold的秘诀在于采用了三轨架构，分别关注氨基酸序列，氨基酸间接触信息以及蛋白质可能的三级结构，再借助attention机制将三者连接起来，从而使得神经网络可以综合推理这些不同层面的信息。研究表明，这种三轨模型在CASP14蛋白质结构预测挑战中虽然性能不及AlphaFold2，但仍表现出色，优于现有的许多方法。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.191,
+            0.507,
+            0.884,
+            0.788
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "ESMFold 是由 Meta AI 研究团队开发的一种端到端的蛋白质结构预测模型。它利用了大型预训练语言模型 ESM-2，可以直接从蛋白质序列中推断出蛋白质三维结构。ESMFold 的架构与 AlphaFold2 类似，主要分为三个部分:特征嵌入、Fold trunk 编码器和解码器结构模块。ESMFold 在特征嵌入模块中利用 ESM-2 为目标序列生成了序列特征，并从语言模型的 attention 机制中提取了氨基酸间的接触信息，不再像 AlphaFold 和 RoseTTAFold 那样依赖于多序列比对。接下来的两个模块与 AlphaFold2 类似，通过一系列折叠块交替更新序列表示和氨基酸对表示，然后将这些块的输出传递给等变性 Transformer 结构模块，在最终输出蛋白质的原子级结构和预测的置信度之前，执行了三次回收机制。ESMFold 优势在于它简化了模型设计，语言模型内化了与结构相关的进化模式，不再需要用复杂的 attention 机制将多序列比对（MSA）集成到神经网络中，从而大大提高了预测速度。相较于 AlphaFold2，在较短的序列上 ESMFold 的预测速度快了 60 倍，同时保持了出色的模型准确性。因此，是在探索海量宏基因组蛋白质的结构空间方面，ESMFold 表现更为高效。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.192,
+            0.809,
+            0.5,
+            0.829
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.2.3 功能蛋白质的从头设计"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.194,
+            0.847,
+            0.884,
+            0.887
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在从一级序列出发的蛋白质结构预测方法逐渐走向成熟的同时，人们自然地将目光转向了如何通过设计一个蛋白质的一级序列，使得其拥有所期待的功能这一科"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 337,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.68,
+            0.047,
+            0.801,
+            0.059
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.2 蛋白质结构分析"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.977,
+            0.046,
+            0.999,
+            0.056
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "323"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.091,
+            0.803,
+            0.239
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "学问题上。设计并合成一个指定功能的蛋白质的工作，就叫功能蛋白质的从头设计（de novo design）。人们已知最早的蛋白质从头设计的工作发生在1979年，Bernd Gutte及合作者基于物理学模型手动设计了一个含有34个氨基酸的RNA结合蛋白。随后，伴随着人们对蛋白质结构-序列的关系和蛋白质生物物理学的进一步理解，以及计算机科学的进步，在20世纪80年代末到21世纪初，蛋白质从头设计取得了长足的进展。其中一个里程碑式的突破是在2003年Kuhlman等成功设计出了第一个自然界中不存在的蛋白质折叠。"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.244,
+            0.804,
+            0.371
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "我们知道，在结构生物学和蛋白质化学中的一个人们共同认可的基本理论是:尽管有着蛋白质修饰等影响蛋白质结构和功能的其他影响因素，蛋白质的一级序列是决定蛋白质三维结构和功能的主要因素。因此，在理论上，当我们穷尽一个蛋白质的所有一级序列时，我们一定能够得到具有某个特定功能或者功能最优化的蛋白质。然而，这一方法面临着无法逾越的计算和实验障碍。以一个30个氨基酸的小蛋白为例，其所有可能的蛋白质序列个数为:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.378,
+            0.382,
+            0.524,
+            0.399
+          ],
+          "image_path": "images/page_337_equation_4.jpg",
+          "content": "2 0 ^ {3 0} \\approx 1. 0 7 \\times 1 0 ^ {3 9}"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.414,
+            0.804,
+            0.561
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "如考虑同种氨基酸的不同构象，序列数可能更多。这个数量的蛋白质显然已经超出了实验验证的数量范围，也超过了使用计算方法预测其结构和功能的数量范围。然而，以 AlphaFold2 为代表的，基于深度学习方法的蛋白质结构预测方法给了人们以启发。既然使用深度学习的方法能够实现在不对蛋白质所有原子的所有位置和构象进行遍历的情况下高精度预测蛋白质结构，能够避免基于“第一性原理”进行蛋白质结构预测的天量计算量需求，我们是否可以采取类似的方法实现高精度的蛋白质从头设计？"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.567,
+            0.804,
+            0.693
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "尽管目前科学家们尚未取得普遍性的解决方案，在功能蛋白质的从头设计领域，人们做出了许多尝试。这些尝试的基本思路是:通过已知功能蛋白质获得结构或者序列上的保守特征，并设计大量符合结构或序列保守特征的蛋白质；通过先验知识获得蛋白质功能的相关特征并建立评价函数（如和某个底物或者辅酶的结合能），进而对所设计的蛋白质进行评价；最终，将评价得分较高的蛋白质进行实验验证，明确蛋白质功能水平。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.699,
+            0.803,
+            0.782
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "近几年来，以来自美国华盛顿大学的大卫·贝克（David Baker）教授为代表的计算生物学家在使用深度学习方法设计功能蛋白质领域开展了大量工作，取得了丰硕的成果。这里以贝克教授团队在2023年发表在Nature杂志上的一篇论文为例，对这一领域取得的进展进行简单介绍。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.787,
+            0.803,
+            0.892
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "这一项研究的任务是设计新型的萤光素酶，这是一种可以自然发光的蛋白质，在生物科学中具有广泛的应用价值。研究人员选择了一种合成的荧光素发光基团二苯基四嗪（diphenylterazine，DTZ）作为目标发光基团，力图设计能结合该基团并发光的蛋白质。他们将DTZ同4000个已知序列-结构关系的蛋白质进行分子对接，发现很多核转运因子2（nuclear transporter factor 2，NTF2）类似蛋白拥有与DTZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 338,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.054,
+            0.048,
+            0.078,
+            0.058
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "324"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.254,
+            0.048,
+            0.402,
+            0.061
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9 蛋白质组学和代谢组学"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.054,
+            0.093,
+            0.585,
+            0.252
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.054,
+                0.093,
+                0.585,
+                0.252
+              ],
+              "image_path": "images/page_338_image_2.jpg",
+              "content": "```mermaid\ngraph LR\n  A[\"打分算法\"] -->|\"30 000次迭代\"| B[\"最终结构\"]\n  C[\"蒙特卡罗算法\\n更新\"] --> D[\"可变序列\\nASCDGHV...GSAVTSG\"]\n  E[\"预测结构\\ntrRossetta\"] --> D\n  D --> F[\"保守序列\"]\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 3,
+              "bbox": [
+                0.052,
+                0.259,
+                0.269,
+                0.276
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图9-7 “全家族幻视”算法"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.601,
+            0.095,
+            0.946,
+            0.156
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "大小和形状相吻合的结合位点，因此选择了NTF2超家族作为设计的目标拓扑结构。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.601,
+            0.161,
+            0.949,
+            0.29
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "研究人员下一步的目的是产生足够多的设计蛋白质分子。他们使用了一种称为“全家族幻视”（family-wide hallucination）的方法，从2000个自然存在的NTF2出发，使用蒙特卡罗算法（Monte-Carlo algorithm）搜索序列空间，在每一步搜索使"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.251,
+            0.296,
+            0.949,
+            0.358
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "用 trRossetta 深度学习算法预测蛋白质结构，并综合使用神经网络模型置信度、结构变化导致的关键折叠损失、氢键网络等数据计算其得分，并进行反复迭代。通过这种方法，研究人员一共得到了 1615 个新的 NTF2 结构（图 9-7）。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.252,
+            0.362,
+            0.95,
+            0.534
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "通过生物化学实验和量子化学计算研究，人们已经得知生物发光反应同DTZ的阴离子状态相关，且DTZ周边环境能显著降低同 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "^{8}O_{2}"
+            },
+            {
+              "type": "text",
+              "content": " 的单电子传导（single-electron transfer，SET）自由能。研究人员从这些已知的“先验信息”出发进一步开展了蛋白质分子设计工作。他们首先产生了DTZ的各种结构状态，并使用RIFGen方法对每一种状态进行分析，计算其“旋转异构体相互作用场”（rotamer interaction field, RIF）。然后，他们使用RIFDock方法将每一个DTZ状态及其相关的RIF同所设计的蛋白质进行对接，最大化其蛋白质-DTZ相互作用。经序列优化后，研究人员挑选了7648个人工设计的蛋白质分子，并进行了进一步验证（图9-8）。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.251,
+            0.539,
+            0.95,
+            0.623
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "通过进一步的实验验证，研究人员发现所设计的 LuxSit-i 人工合成萤光素酶不仅比已知的所有人工设计的萤光素酶活性都高，和天然的萤光素酶活性相仿，而且有着完全不同的蛋白质结构组织形式，并且和底物的结合能力高于天然萤光素酶。这表明了这一设计策略的成功。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.251,
+            0.627,
+            0.95,
+            0.69
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "使用深度学习的方法进行功能蛋白质的从头设计是一个正在极速发展的科研领域，一些成功的蛋白质分子设计案例不断涌现，相信本领域还会持续取得新的里程碑式的进步。"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 11,
+          "bbox": [
+            0.264,
+            0.709,
+            0.935,
+            0.868
+          ],
+          "content": [
+            {
+              "type": "image_caption",
+              "index": 10,
+              "bbox": [
+                0.059,
+                0.82,
+                0.242,
+                0.856
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图9-8 萤光素酶蛋白质的设计"
+                }
+              ]
+            },
+            {
+              "type": "image_body",
+              "index": 11,
+              "bbox": [
+                0.264,
+                0.709,
+                0.935,
+                0.868
+              ],
+              "image_path": "images/page_338_image_11.jpg",
+              "content": "```mermaid\ngraph LR\n  A[\"二苯基四嗪 (DTZ)\"] -->|RIFGen| B[\"DTZ能量场 (RIF)\"]\n  B -->|RIFDock| C[\"蛋白质-DTZ 复合物\"]\n  D[\"Protein Structure\"] -->|实验验证| E[\"Final Polymer Structure\"]\n```"
+            }
+          ],
+          "sub_type": "flowchart"
+        }
+      ]
+    },
+    {
+      "page_idx": 339,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.645,
+            0.048,
+            0.803,
+            0.061
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3 蛋白质分子动力学模拟"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.977,
+            0.049,
+            0.999,
+            0.059
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "325"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.112,
+            0.092,
+            0.466,
+            0.116
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3 蛋白质分子动力学模拟"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.111,
+            0.144,
+            0.443,
+            0.166
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3.1 分子动力学模拟发展简史"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.11,
+            0.184,
+            0.808,
+            0.399
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "认识蛋白质首先需要认识两个基本的关系:一个是序列-结构关系，即蛋白质折叠问题；另一个是结构-功能关系。序列-结构关系实际上是蛋白质怎么从无序的新生肽链到有序三维结构的问题，而结构-功能关系实际上是蛋白质如何实现从一种特定构象到另一种特定构象的问题。这两个问题都涉及蛋白质的构象动力学，而分子模拟正是一种非常强大的研究蛋白质构象动力学的工具。在20世纪70年代，马丁·卡普拉斯（Martin Karplus）、迈克尔·莱维特（Michael Levitt）和亚利耶·瓦谢尔（Arieh Warshel）等多位科学家首次实现了在计算机上来模拟蛋白质的构象动力学。随后的近半个世纪，分子模拟已经取得了巨大的进展，并成为研究生物大分子的动力学和功能的强有力的工具（图9-9a）。其中最常见的分子模拟方法有两种:分子动力学（molecular dynamics，MD）和蒙特卡罗（Monte Carlo，MC）。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.11,
+            0.403,
+            0.808,
+            0.573
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "MD 通过建立包含蛋白质或其他相关分子及其周围环境（如水分子、离子、磷脂双层膜等）的原子模型，然后根据经典力学原理计算各个原子之间的相互作用力和加速度，从而预测体系的运动轨迹。具体来说，MD 模拟首先需要确定初始构象，为各原子指定初始位置，随后根据势能函数计算原子间的作用力和加速度，接着利用牛顿运动方程计算原子在飞秒时间内的位移，不断重复上述计算步骤，最终得到体系的运动轨迹，类似一个三维电影。因为模拟可以在原子水平观察生物大分子的动力学过程，时间分辨率达到飞秒量级，因此可以提供实验很难观察到的原子细节和揭示微观的分子机制。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.11,
+            0.578,
+            0.808,
+            0.882
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "MC 方法是一种很强大的随机抽样技术，它被广泛应用于统计物理和计算化学中，在蛋白质模拟领域也发挥着重要作用。蒙特卡罗方法起源于 20 世纪 40 年代，约翰·冯·诺依曼（John von Neumann）和斯坦尼斯拉夫·乌拉姆（Stanislaw Ulam）以摩纳哥著名的赌场蒙特卡罗为其命名，因为该方法与轮盘游戏具有相同的随机特征。1953 年，尼古拉斯·梅特罗波利斯（Nicholas Metropolis）等提出著名的 Metropolis 算法，将 MC 方法成功引入统计物理研究。该方法根据体系的能量函数，按一定概率随机选择新的构象，并按平衡分布接受或拒绝新的构象。在蛋白质结构预测领域，MC 方法于 20 世纪 70 年代首次用于研究蛋白质链的构象采样。随后，多种改进的 MC 算法被提出并应用于蛋白质构象采样和优化。MC 算法是蛋白质构象搜索和折叠研究的一个重要补充手段，其随机采样本质允许其更广泛访问构象空间。类似于 MD，MC 算法也是根据统计力学原理构建，可有效跳出局部能量势阱，对蛋白质构象空间进行全局采样，因此可有效搜索构象空间和折叠路径。然而 MC 算法通常用于计算一些与动力学无关的平衡态性质，相比于 MD 的应用场景更局限一些，本节后面将重点介绍 MD 模拟方法。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 340,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.061,
+            0.054,
+            0.086,
+            0.065
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "326"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.259,
+            0.053,
+            0.407,
+            0.066
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9 蛋白质组学和代谢组学"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.059,
+            0.096,
+            0.517,
+            0.272
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.059,
+                0.096,
+                0.517,
+                0.272
+              ],
+              "image_path": "images/page_340_image_2.jpg",
+              "content": "Molecular structure diagram showing protein domains with labeled regions (ps, ns, μs, ms) and molecular models"
+            },
+            {
+              "type": "image_caption",
+              "index": 3,
+              "bbox": [
+                0.264,
+                0.278,
+                0.286,
+                0.293
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a)"
+                }
+              ]
+            }
+          ],
+          "sub_type": "chemical"
+        },
+        {
+          "type": "image",
+          "index": 4,
+          "bbox": [
+            0.552,
+            0.096,
+            0.831,
+            0.272
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 4,
+              "bbox": [
+                0.552,
+                0.096,
+                0.831,
+                0.272
+              ],
+              "image_path": "images/page_340_image_4.jpg",
+              "content": "```mermaid\ngraph LR\n  A[\"精度\"] --> B[\"采样问题\"]\n  B --> C[\"力场问题\"]\n  C --> D[\"精准\"]\n  E[\"精度\"] --> F[\"力场问题\"]\n  F --> G[\"精度\"]\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 5,
+              "bbox": [
+                0.683,
+                0.278,
+                0.704,
+                0.292
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b)"
+                }
+              ]
+            },
+            {
+              "type": "image_caption",
+              "index": 6,
+              "bbox": [
+                0.057,
+                0.303,
+                0.247,
+                0.4
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图9-9 蛋白质构象动力学的不同时间尺度（a, Surpeta Bartłomiej et al., 2020）和分子动力学模拟（b）的两大经典问题"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.256,
+            0.306,
+            0.949,
+            0.388
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "蛋白质的折叠和去折叠可能在毫秒到微秒以上尺度发生；药物分子在蛋白靶标上的解离可能需要数秒甚至更长的时间。模拟运算速度取决于硬件算力和体系大小等，常规蛋白质体系在主流显卡（如英伟达RTX4090、RTX5090）上，通常每天可以计算几十到上百纳秒。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.255,
+            0.393,
+            0.95,
+            0.65
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "因为 MD 模拟中的单位时间步长通常在飞秒量级，而常规 MD 所能及的时间尺度通常在微秒量级，但是许多生物构象动力学发生的时间尺度在毫秒量级以上，这导致模拟时间尺度和现实尺度存在一条鸿沟。也就是说计算机模拟的时间尺度对于现实时间尺度来说太慢了，这就是时间尺度问题或者“采样问题”（图 9-9b）。尽管计算机算力和模拟算法都在快速发展，但模拟长时间尺度（毫秒以上时间尺度）的生物事件仍有可能相当困难。另外 MD 模拟结果的精确程度高度依赖于力场参数的准确性，即便力场参数只是存在很小的误差，在很多步 MD 积分之后也会累积到非常大的误差。当前常规蛋白质的力场已经相对准确，但对其他生物分子，如核酸，仍有较大改进空间，这就是“力场问题”（图 9-9b）。力场问题和采样问题是分子动力学模拟的核心难点，但也是活跃的研究方向。随着计算机技术进步和新理论方法出现，这两个问题都将获得很大进展。力场和采样的改进将大幅增强分子动力学的预测能力和应用场景。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.257,
+            0.672,
+            0.542,
+            0.693
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3.2 分子动力学基本原理"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 10,
+          "bbox": [
+            0.294,
+            0.715,
+            0.484,
+            0.731
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3.2.1 统计力学基础"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.256,
+            0.736,
+            0.95,
+            0.905
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "模拟产生的大量体系微观构象需要统计力学作为桥梁来计算自由能等宏观热力学量。根据是否考虑量子效应可以将统计力学分为经典统计力学和量子统计力学。经典统计力学是连接物质微观运动和宏观性质的桥梁，也是分子动力学的基础。在分子水平上，基于波恩·奥本海默近似（Born-Oppenheimer approximation，忽略电子的运动，而将系统的能量视为原子核空间位置的函数），经典牛顿力学定律是可以近似适用的，对于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N"
+            },
+            {
+              "type": "text",
+              "content": " 个粒子组成的系统，其中的粒子 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i"
+            },
+            {
+              "type": "text",
+              "content": " 的状态可以通过其位置"
+            },
+            {
+              "type": "equation_inline",
+              "content": "r_i"
+            },
+            {
+              "type": "text",
+              "content": " 和动量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_i"
+            },
+            {
+              "type": "text",
+              "content": " 确定，位置和动量都是时间的函数，且具有笛卡尔坐标系 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 、 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y"
+            },
+            {
+              "type": "text",
+              "content": " 、 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "z"
+            },
+            {
+              "type": "text",
+              "content": " 三方向上的三个自由度。因此， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N"
+            },
+            {
+              "type": "text",
+              "content": " 粒子系统的经典动力学可以用6N个函数的完整集"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 341,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.646,
+            0.049,
+            0.803,
+            0.061
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3 蛋白质分子动力学模拟"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.977,
+            0.049,
+            0.999,
+            0.06
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "327"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.109,
+            0.092,
+            0.803,
+            0.175
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "合  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{r_{1}(t),\\cdots,r_{N}(t),p_{1}(t),\\cdots,p_{N}(t)\\}"
+            },
+            {
+              "type": "text",
+              "content": "  表示。在任意时刻 t，系统的所有信息都可以由这 6N 个函数描述，由此可以确定系统的完整时间演化。这 6N 个函数定义的维度空间被称为相空间。相空间中的任意一个点，都对应了一个系统的状态，而系统随时间的变化，可以体现为相空间轨迹。"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.11,
+            0.18,
+            0.804,
+            0.24
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在统计力学中，系统的宏观性质是微观状态的统计平均值。系综（ensemble）是统计力学中非常重要的概念，一个系统处于的热力学状态通常可以通过一系列的参数来描述，如粒子数目、压强、温度等。而一个体系的宏观性质是由这些参数所决定的。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.149,
+            0.244,
+            0.547,
+            0.262
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "下面介绍几个在分子动力学模拟中常用的系综。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 9,
+          "bbox": [
+            0.11,
+            0.266,
+            0.805,
+            0.545
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.111,
+                0.266,
+                0.804,
+                0.326
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "① 正则系综（canonical ensemble） 又称为 NVT 系综，用于表示在固定温度下通过热浴法达到热平衡的系统所有可能状态的集合。该系综的粒子数 N、体积 V 及温度 T 保持恒定，系统通常与外界热浴处于热平衡以保持温度不变。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.11,
+                0.331,
+                0.805,
+                0.413
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "② 等温等压系综（isothermal-isobaric ensemble）又称为 NPT 系综，其粒子数 N、压强 p 及温度 T 保持恒定。由于体系的压强 p 与体积 V 是共轭量，可以通过调节体系的体积来实现压强恒定。对于在溶液中发生的生物过程，如果体系的压强和体积变化不大，在模拟中使用 NVT 和 NPT 系综的差别一般也不显著。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.111,
+                0.418,
+                0.804,
+                0.501
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "③ 微正则系综（micro-canonical ensemble）即 NVE 系综。该系综下系统的粒子数 N、体积 V 及能量 E 不变，体系沿着相空间的恒定能量轨道演化。平衡体系为孤立系统，与外界既无能量交换，也无粒子交换。因为形式简单，微正则系综常见于验证新的算法和程序中。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.11,
+                0.506,
+                0.804,
+                0.545
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "④ 巨正则系综（grand-canonical ensemble）是正则系综的推广，总化学势、体积和温度保持不变，可以允许粒子的增加或减少。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.11,
+            0.549,
+            0.804,
+            0.61
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "一个生物过程能否发生取决于其始末态的自由能差，因此，自由能是最关键的热力学量之一。在热力学中存在亥姆霍兹自由能和吉布斯自由能两种定义。亥姆霍兹自由能定义为:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.403,
+            0.621,
+            0.804,
+            0.639
+          ],
+          "image_path": "images/page_341_equation_11.jpg",
+          "content": "F = U - T S \\tag {9-3}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.11,
+            0.653,
+            0.486,
+            0.67
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中，U 为内能，T 为温度，S 为系统的熵。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.148,
+            0.675,
+            0.337,
+            0.692
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "吉布斯自由能定义为:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.401,
+            0.703,
+            0.805,
+            0.721
+          ],
+          "image_path": "images/page_341_equation_14.jpg",
+          "content": "G = H - T S \\tag {9-4}"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.11,
+            0.735,
+            0.414,
+            0.752
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中，H 为系统的焓，焓的定义为:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.402,
+            0.764,
+            0.805,
+            0.781
+          ],
+          "image_path": "images/page_341_equation_16.jpg",
+          "content": "H = U + p V \\tag {9-5}"
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.11,
+            0.795,
+            0.409,
+            0.812
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中，p 为压强，V 为系统的体积。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.11,
+            0.817,
+            0.805,
+            0.9
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "两种自由能定义都包含了一个内能相关项和一个熵相关项，这说明自由能受到原子间相互作用的变化和熵变化的影响。两种定义的差异在于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "pV"
+            },
+            {
+              "type": "text",
+              "content": " 项。亥姆霍兹自由能适用于恒定体积（NVT系综），而吉布斯自由能适用于恒定压强（NPT系综），其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "pV"
+            },
+            {
+              "type": "text",
+              "content": " 项量化了与体积变化相关的功。一般生理过程可以看作等压过程，系统的"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 342,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.0,
+            0.053,
+            0.023,
+            0.063
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "328"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.197,
+            0.052,
+            0.345,
+            0.065
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9 蛋白质组学和代谢组学"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.195,
+            0.097,
+            0.48,
+            0.113
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "演化由吉布斯自由能梯度所驱动。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.194,
+            0.118,
+            0.887,
+            0.157
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "系统演化所形成的自由能地貌可以完整地描述系统的热力学和动力学性质。在相空间体积 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A"
+            },
+            {
+              "type": "text",
+              "content": " 中出现系统的概率 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_A"
+            },
+            {
+              "type": "text",
+              "content": " 直接与自由能相关:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.489,
+            0.162,
+            0.887,
+            0.194
+          ],
+          "image_path": "images/page_342_equation_4.jpg",
+          "content": "p _ {A} = \\frac {e ^ {- \\beta F _ {A}}}{e ^ {- \\beta F}} \\tag {9-6}"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.194,
+            0.205,
+            0.89,
+            0.252
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F_{A}"
+            },
+            {
+              "type": "text",
+              "content": " 是相空间体积 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A"
+            },
+            {
+              "type": "text",
+              "content": " 的自由能， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F"
+            },
+            {
+              "type": "text",
+              "content": " 是在整个相空间上计算的自由能， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta = \\frac{1}{k_B T}"
+            },
+            {
+              "type": "text",
+              "content": "，"
+            },
+            {
+              "type": "equation_inline",
+              "content": "k_B"
+            },
+            {
+              "type": "text",
+              "content": " 为玻尔兹曼常数， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T"
+            },
+            {
+              "type": "text",
+              "content": " 为温度。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.23,
+            0.257,
+            0.63,
+            0.273
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于 A、B 两状态的自由能差，可以表示如下:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.416,
+            0.278,
+            0.887,
+            0.312
+          ],
+          "image_path": "images/page_342_equation_7.jpg",
+          "content": "\\Delta F _ {A B} = F _ {A} - F _ {B} = - \\frac {1}{\\beta} \\ln \\frac {p _ {A}}{p _ {B}} \\tag {9-7}"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.194,
+            0.32,
+            0.89,
+            0.468
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "从式(9-7)可知，要计算自由能差，可以通过对于A和B状态的采样进行计数以统计其概率实现，如统计两种配体与同受体结合的概率。虽然这种方法较为简单，但其计算成本和时间尺度往往过大。另一种方法就是估计配分函数，对于相互作用复杂的粒子，需要对其坐标和动量进行数值积分。对于多粒子系统，对所有自由度积分在计算上是不可行的。因此，通常使用模拟来对可访问的相空间体积进行采样。在模拟中，体系通常需要很长的计算时间才能偶尔采样到高能微观态，因此该方法通常不适合用来计算绝对自由能，不过可用来评估不同状态的相对自由能。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.232,
+            0.472,
+            0.386,
+            0.488
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3.2.2 分子力场"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.194,
+            0.493,
+            0.89,
+            0.575
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "分子动力学通过一系列分子力场势函数来描述分子内和分子间的相互作用，进而计算分子的势能。与基于第一性原理的从头计算不同，分子力场势函数使用经验公式描述分子状态，是一种对于波函数的近似和简化。简单来说，分子势能的基本函数形式包括键合能和非键相互作用能两项:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.424,
+            0.586,
+            0.888,
+            0.603
+          ],
+          "image_path": "images/page_342_equation_11.jpg",
+          "content": "E _ {t o t a l} = E _ {b o n d e d} + E _ {n o n b o n d e d} \\tag {9-8}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.194,
+            0.617,
+            0.889,
+            0.656
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对能量项进一步细分，键合能可以分为键长的伸缩能、键角的弯曲能、二面角扭转能；非键相互作用能可以分为静电相互作用能和范德华相互作用能:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.402,
+            0.667,
+            0.888,
+            0.686
+          ],
+          "image_path": "images/page_342_equation_13.jpg",
+          "content": "E _ {b o n d e d} = E _ {b o n d} + E _ {a n g l e} + E _ {d i h e d r a l} \\tag {9-9}"
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.379,
+            0.691,
+            0.888,
+            0.709
+          ],
+          "image_path": "images/page_342_equation_14.jpg",
+          "content": "E _ {\\text {nonbonded}} = E _ {\\text {electrostatic}} + E _ {\\text {vanderWaals}} \\tag {9-10}"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.232,
+            0.723,
+            0.614,
+            0.739
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "不同的力场中，函数组成形式可能略有不同。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.196,
+            0.743,
+            0.889,
+            0.782
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于势函数的各个能量项，需要选取合适的经验公式和力场参数来描述，这里以 AMBER 力场为例，简单介绍其力场参数的选择。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.232,
+            0.786,
+            0.805,
+            0.803
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于键长的伸缩能和键角的弯曲能，力场使用谐振子势能公式拟合:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 18,
+          "bbox": [
+            0.433,
+            0.808,
+            0.888,
+            0.845
+          ],
+          "image_path": "images/page_342_equation_18.jpg",
+          "content": "E _ {b o n d} = \\sum_ {b o n d s} \\frac {K _ {r}}{2} (r - r _ {e q}) ^ {2} \\tag {9-11}"
+        },
+        {
+          "type": "equation",
+          "index": 19,
+          "bbox": [
+            0.428,
+            0.848,
+            0.888,
+            0.886
+          ],
+          "image_path": "images/page_342_equation_19.jpg",
+          "content": "E _ {a n g l e} = \\sum_ {a n g l e s} \\frac {K _ {\\theta}}{2} (\\theta - \\theta_ {e q}) ^ {2} \\tag {9-12}"
+        }
+      ]
+    },
+    {
+      "page_idx": 343,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.589,
+            0.047,
+            0.748,
+            0.06
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3 蛋白质分子动力学模拟"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.923,
+            0.047,
+            0.949,
+            0.058
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "329"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.05,
+            0.092,
+            0.749,
+            0.131
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r_{eq}"
+            },
+            {
+              "type": "text",
+              "content": "  和  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta_{eq}"
+            },
+            {
+              "type": "text",
+              "content": "  为平衡状态下标准键长和键角； "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K_{r}"
+            },
+            {
+              "type": "text",
+              "content": "  和  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K_{\\theta}"
+            },
+            {
+              "type": "text",
+              "content": "  为力常数；r 与  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  则为瞬时的键长与键角。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.087,
+            0.136,
+            0.489,
+            0.153
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于二面角扭转能，使用傅里叶级数进行拟合:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.223,
+            0.159,
+            0.748,
+            0.203
+          ],
+          "image_path": "images/page_343_equation_4.jpg",
+          "content": "E _ {d i h e d r a l} = \\sum_ {d i h e d r a l s} \\sum_ {n = 0} ^ {N} \\frac {V _ {n}}{2} [ 1 + \\cos (n \\phi - \\gamma) ] \\tag {9-13}"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.051,
+            0.212,
+            0.75,
+            0.252
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V_{n}"
+            },
+            {
+              "type": "text",
+              "content": " 为势垒高度，用于描述二面角旋转的难度； "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n"
+            },
+            {
+              "type": "text",
+              "content": " 为多重度，指键在一个周期内旋转过程中能量极小点的个数； "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\gamma"
+            },
+            {
+              "type": "text",
+              "content": " 为相位因子，为能量最低时对应二面角的大小。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.051,
+            0.257,
+            0.75,
+            0.295
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于静电相互作用能，原子对被视为带电电荷 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 、 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q_{j}"
+            },
+            {
+              "type": "text",
+              "content": " 的粒子（电荷通过电荷分配方法赋予），按库仑定律计算:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.292,
+            0.303,
+            0.748,
+            0.34
+          ],
+          "image_path": "images/page_343_equation_7.jpg",
+          "content": "E _ {e l e c t r o s t a t i c} = \\sum_ {i <   j} \\frac {q _ {i} q _ {j}}{4 \\pi \\epsilon_ {0} r _ {i j}} \\tag {9-14}"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.087,
+            0.35,
+            0.599,
+            0.367
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于范德华相互作用能，使用 Lennard-Jones 势函数来描述:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.18,
+            0.373,
+            0.748,
+            0.417
+          ],
+          "image_path": "images/page_343_equation_9.jpg",
+          "content": "E _ {v a n d e r W a a l s} = E _ {L J} (r) = \\sum_ {i <   j} \\epsilon_ {i j} \\left[ \\left(\\frac {\\sigma_ {i j}}{r _ {i j}}\\right) ^ {1 2} - \\left(\\frac {\\sigma_ {i j}}{r _ {i j}}\\right) ^ {6} \\right] \\tag {9-15}"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.051,
+            0.427,
+            0.604,
+            0.446
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中，"
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\epsilon_{ij}"
+            },
+            {
+              "type": "text",
+              "content": " 表示势阱深度；"
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma_{ij}"
+            },
+            {
+              "type": "text",
+              "content": " 表示对应势能为0时的原子间距离。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.051,
+            0.45,
+            0.747,
+            0.489
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "这样就可以使用配套的力场参数来表示力场的势函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U"
+            },
+            {
+              "type": "text",
+              "content": " ，这些力场参数一般由拟合实验数据确定，或是由量化计算拟合得到。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.052,
+            0.494,
+            0.749,
+            0.533
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "通过选择合适的力场参数，MD 方法可以对分子运动提供精确度接近量子力学方法的解，而所需的计算资源则要少许多。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 13,
+          "bbox": [
+            0.089,
+            0.538,
+            0.282,
+            0.555
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3.2.3 牛顿运动方程"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.052,
+            0.56,
+            0.749,
+            0.599
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "势函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U"
+            },
+            {
+              "type": "text",
+              "content": " 是计算原子受力的基础，通过势函数计算出原子的势能和其对原子位置的导数，对处于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 位置的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i"
+            },
+            {
+              "type": "text",
+              "content": " 原子，其受力为:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.352,
+            0.604,
+            0.748,
+            0.639
+          ],
+          "image_path": "images/page_343_equation_15.jpg",
+          "content": "F = - \\frac {\\partial U}{\\partial x _ {i}} \\tag {9-16}"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.088,
+            0.648,
+            0.528,
+            0.665
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "根据牛顿运动方程，可以进一步计算其瞬时加速度:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.313,
+            0.67,
+            0.748,
+            0.705
+          ],
+          "image_path": "images/page_343_equation_17.jpg",
+          "content": "a _ {i} = \\frac {F _ {i}}{m _ {i}} = - \\frac {1}{m _ {i}} \\frac {\\partial U}{\\partial x _ {i}} \\tag {9-17}"
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.051,
+            0.714,
+            0.749,
+            0.732
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对处于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t"
+            },
+            {
+              "type": "text",
+              "content": " 时刻的原子，给定其位置、速度以及加速度，就可以计算出其在一个"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.051,
+            0.736,
+            0.517,
+            0.797
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "时间步长后 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t + \\delta t"
+            },
+            {
+              "type": "text",
+              "content": " 的速度和位置，从而得出其运动轨迹，并推进模拟进行到下一步，分子动力学模拟就是这一过程的不断迭代（图9-10）。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.051,
+            0.802,
+            0.518,
+            0.886
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由于分子动力学模拟需要处理的是一个多原子的复杂体系，需要使用有限差分法（如 Verlet 算法、蛙跳算法和速度-Verlet 算法等）来计算。Verlet 算法计算位置和速度的公式如下:"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 21,
+          "bbox": [
+            0.534,
+            0.762,
+            0.948,
+            0.854
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 21,
+              "bbox": [
+                0.534,
+                0.762,
+                0.948,
+                0.854
+              ],
+              "image_path": "images/page_343_image_21.jpg",
+              "content": "```mermaid\ngraph LR\n  A[\"势能函数\\n原子初始位置\"] --> B[\"计算原子受力\"]\n  C[\"将原子移动到新位置\"] --> B\n  B --> D[\"计算原子加速度\"]\n  D --> E[\"计算原子速度\"]\n  E --> F[\"计算原子速度\"]\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 22,
+              "bbox": [
+                0.531,
+                0.862,
+                0.915,
+                0.878
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图9-10 分子动力学模拟计算牛顿运动方程流程简图"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        }
+      ]
+    },
+    {
+      "page_idx": 344,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.057,
+            0.056,
+            0.081,
+            0.066
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "330"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.256,
+            0.056,
+            0.402,
+            0.068
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9 蛋白质组学和代谢组学"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 2,
+          "bbox": [
+            0.295,
+            0.098,
+            0.944,
+            0.131
+          ],
+          "image_path": "images/page_344_equation_2.jpg",
+          "content": "x (t + \\delta t) = x (t) + \\frac {x ^ {(1)} (t)}{1 !} \\delta t + \\frac {x ^ {(2)} (t)}{2 !} (\\delta t) ^ {2} + \\frac {x ^ {(3)} (t)}{3 !} (\\delta t) ^ {3} + O \\left[ (\\delta t) ^ {4} \\right] \\tag {9-18}"
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.295,
+            0.133,
+            0.944,
+            0.165
+          ],
+          "image_path": "images/page_344_equation_3.jpg",
+          "content": "x (t - \\delta t) = x (t) - \\frac {x ^ {(1)} (t)}{1 !} \\delta t + \\frac {x ^ {(2)} (t)}{2 !} (\\delta t) ^ {2} - \\frac {x ^ {(3)} (t)}{3 !} (\\delta t) ^ {3} + O \\left[ (\\delta t) ^ {4} \\right] \\tag {9-19}"
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.335,
+            0.168,
+            0.943,
+            0.199
+          ],
+          "image_path": "images/page_344_equation_4.jpg",
+          "content": "v (t) = \\frac {1}{2 \\delta t} [ x (t + \\delta t) - x (t - \\delta t) ] \\tag {9-20}"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.251,
+            0.206,
+            0.946,
+            0.266
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在算法运行前，原子的位置 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x(t_0)"
+            },
+            {
+              "type": "text",
+              "content": " 为已知量，速度 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "v(t_0)"
+            },
+            {
+              "type": "text",
+              "content": " 可以自行赋值，加速度 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a(t)"
+            },
+            {
+              "type": "text",
+              "content": " 则始终由势函数得到，也是已知量。之后就可以不断迭代计算，最终得出原子的运动轨迹。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.251,
+            0.27,
+            0.946,
+            0.33
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "用于更新原子运动速度和位置的改进算法还有很多，如蛙跳算法和速度-Verlet算法，其共同目标在于利用势函数得到原子瞬时加速度的基础上，更准确和更有效率地计算原子下一时刻的状态。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.289,
+            0.335,
+            0.501,
+            0.351
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3.2.4 周期性边界条件"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.25,
+            0.356,
+            0.949,
+            0.587
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于现今的计算能力，模拟宏观的体系（原子数量级达到 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "10^{23}"
+            },
+            {
+              "type": "text",
+              "content": "）是一个巨大挑战。因此，在MD中通常使用包含较少粒子的模拟盒（simulation box）进行模拟。模拟盒是一个定义了模拟中分子运动空间的虚拟容器。为了用模拟盒模拟生物体系（可视为无限大的系统），正确处理边界和边界效应对于模拟结果至关重要。周期性边界条件（periodic boundary conditions，PBCs）是常见的处理边界条件的方法之一。通过周期性边界条件，MD模拟可以通过镜像来填满整个空间，镜像的状态与模拟盒同步。如图9-11所示，中间区域为模拟盒，而周围的区域均为镜像，原子可以自由地跨越盒子的边界，当一个分子扩散穿过模拟盒的边界时，它会重新出现在另一侧。因此，中心模拟盒内的原子数保持不变，每个分子总是与其相邻的原子相互作用，即使它们可能位于模拟框的相对两侧。周期性边界条件使得可以通过使用一小部分（晶胞）来近似无限系统。"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 9,
+          "bbox": [
+            0.053,
+            0.593,
+            0.303,
+            0.784
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 9,
+              "bbox": [
+                0.053,
+                0.593,
+                0.303,
+                0.784
+              ],
+              "image_path": "images/page_344_image_9.jpg",
+              "content": "Diagram showing a central square with directional arrows and surrounding colored dots, no text or symbols present."
+            },
+            {
+              "type": "image_caption",
+              "index": 10,
+              "bbox": [
+                0.054,
+                0.79,
+                0.245,
+                0.805
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图9-11 周期性边界条件"
+                }
+              ]
+            }
+          ],
+          "sub_type": "natural_image"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.054,
+            0.808,
+            0.299,
+            0.88
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "假设中央模拟盒中左上角显示为绿色的原子正在向上运动出模拟盒，其会表现为在盒子左下方重新出现在这一模拟盒中"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 12,
+          "bbox": [
+            0.316,
+            0.608,
+            0.673,
+            0.629
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3.3 蛋白质分子动力学模拟过程"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 13,
+          "bbox": [
+            0.353,
+            0.651,
+            0.547,
+            0.667
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3.3.1 模拟体系建模"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.314,
+            0.672,
+            0.947,
+            0.818
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在开始分子动力学模拟之前，首先要明确所需要解决的科学问题，然后根据科学问题的属性来构建体系模型，并选取合适的模拟软件和分子力场。本节展示了模拟过程中的几个一般性步骤，具体的文件规范、输入指令等还需要根据使用软件的不同去确定。蛋白质三维结构是进行模拟的起点。对于已经通过结构生物学方法解析出结构的蛋白质，可以从PDB数据库去获取其结构文件。对于尚不存在已知结构的蛋白质，也可以使用同源建模或者AI预测的方式去获取其可能的结构。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.315,
+            0.822,
+            0.947,
+            0.882
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "然而需要注意的是，即便是实验解析的结构（如晶体结构、冷冻电镜结构和核磁共振结构），它们也都通常是通过计算机建模的方式来获得的。对于从PDB数据库获取到的结构，需要仔细检查其细节的合理性和进一步补"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 345,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.642,
+            0.049,
+            0.8,
+            0.061
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3 蛋白质分子动力学模拟"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.978,
+            0.049,
+            0.999,
+            0.059
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "331"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.1,
+            0.092,
+            0.803,
+            0.219
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "充缺失的细节。例如，冷冻电镜结构中缺失的氢原子，在全原子力场中需要根据蛋白质所处 pH 环境（如生理 pH 条件）确定氨基酸残基的质子化状态，再补全氢原子；晶体结构中的一些非关键溶剂分子和离子也可以根据具体情况在建模中不予考虑；对于缺失的无序结构区域，可以通过建模软件来补全；如果是预测的结构，结构的局部可信度也需要检查。初始结构和局部细节的处理对于模拟的结果影响很大，在模拟软件中也往往存在相关的算法模块，帮助使用者进行结构的调节优化。"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.099,
+            0.224,
+            0.804,
+            0.372
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "模拟盒的性质是根据所需的模拟条件设置的。例如，对盒子溶剂化处理，并添加适当浓度的离子来模拟胞内环境；而如果要模拟膜蛋白，通常需要将蛋白质置于适当的磷脂双分子层中。盒子的形状和大小也需要仔细考虑，由于周期性边界条件的存在，为了避免蛋白质与自身发生非现实的相互作用，盒子不能设置得太小，而过大的盒子则会浪费计算资源，总之，盒子的调整需要兼顾准确性和计算效率。同样地，这一步处理往往也可以使用模拟软件或者网站工具（如CHARMM-GUI）辅助完成。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.378,
+            0.292,
+            0.393
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3.3.2 参数设置"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.1,
+            0.4,
+            0.801,
+            0.438
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "处理完三维结构并准备好模拟输入文件后，则需要设置好模拟的相关参数，如模拟的温度、压强、时间步长和步数、合理的相互作用截断距离等。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.1,
+            0.443,
+            0.804,
+            0.591
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在这一环节要定义好指定的算法、步长和步数，这需要根据模拟需求所设置；对于模拟产生的坐标、温度和能量等信息以及日志文件，要根据需要指定其更新频率；温度设置是通过系统和热浴的耦合实现的，需要定义温度耦合算法，参照温度和耦合时间常数；压强控制是通过恒压器实现的，同样需要定义压强耦合方式，参照恒压值和耦合时间常数；另外还要设置好构象约束、相互作用截断，库仑力计算方式等。参数设置对模拟有重要影响，针对不同的体系和目的，需要选择合适的参数组合。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.597,
+            0.388,
+            0.612
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3.3.3 体系平衡和轨迹生成"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.1,
+            0.618,
+            0.804,
+            0.723
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在开始长时间尺度成品模拟之前，还需要检查两个关键点:① 模拟的结构是否存在一些不合理之处，如原子距离过近或者键角处于非自然状态，这可能使系统处于非正常的高能状态；② 系统的压强、温度等性质是否与设定值存在较大的偏差。这些性质的瞬时波动可能导致体系的能量溢出甚至崩溃。这些潜在的问题一般可以通过能量最小化和平衡两个步骤来解决。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.1,
+            0.727,
+            0.804,
+            0.832
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "能量最小化过程的目标是搜索系统势能的极小值，不同模拟软件进行能量最小化的策略有所不同，目前比较常用的有最陡下降法和共轭梯度法。在模拟过程中，可以通过体系势能的变化来观察能量最小化的效果。平衡是为了使体系到达合理的初始状态，如使用NVT系综调整体系压强，并使用NPT系综调整体积。可以通过监控压强、温度等指标来观察平衡过程。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.1,
+            0.837,
+            0.803,
+            0.876
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "体系达到平衡之后，就可以进入长时间尺度的成品模拟阶段，并通过采样得到体系的演化轨迹，这通常包括原子的坐标、速度，还有体系的能量、温度和压强等。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 346,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.054,
+            0.052,
+            0.079,
+            0.063
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "332"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.255,
+            0.052,
+            0.402,
+            0.065
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9 蛋白质组学和代谢组学"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.29,
+            0.1,
+            0.443,
+            0.116
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3.3.4 结果分析"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.251,
+            0.121,
+            0.949,
+            0.203
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "分子动力学轨迹文件能够提供体系随时间的演化过程。通过分析轨迹，可以得到体系的构象变化过程、构象分布等。可视化软件可以帮助研究者更直观地观察和分析分子结构；在轨迹分析方面也有一些工具（如 MDAnalysis、MDtraj、PLUMED 等，见 9.3.5.3）。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.251,
+            0.208,
+            0.949,
+            0.292
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "分子动力学模拟得到的分子电影只是一种基于模型的“观察”，而非“答案”。对轨迹的分析则是一个从模拟结果中提取关键信息，回答科学问题的过程。跟做实验一样，模拟是计算机实验，也需要考虑结果的可重复性，因此需要足够的统计，即结果需要具备各态历经性和收敛性。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.252,
+            0.314,
+            0.54,
+            0.334
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3.4 高级算法和最新进展"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.29,
+            0.357,
+            0.443,
+            0.373
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3.4.1 增强采样"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.252,
+            0.378,
+            0.949,
+            0.527
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "常规时间尺度（微秒量级）的全原子 MD 模拟通常只能观察到体系在能量局部极小点附近的热涨落，很难跨越较高能垒实现大尺度的构象状态变化，也就难以观察有较大生物意义的构象变化过程。这就需要通过增强采样算法，来帮助体系跨越高能垒，从而采样到更长时间尺度的体系动态变化过程。因为增强采样算法通常需要对体系添加额外的偏置势（biased potential）来加速体系的动力学，因此常规的 MD 模拟也被称为无偏分子动力学（unbiased MD）模拟。这里，“无偏”是指体系中不存在力场之外的额外偏置力。比较经典的增强采样方法有伞形采样（umbrella sampling,"
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 8,
+          "bbox": [
+            0.053,
+            0.537,
+            0.447,
+            0.774
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 8,
+              "bbox": [
+                0.053,
+                0.537,
+                0.447,
+                0.774
+              ],
+              "image_path": "images/page_346_chart_8.jpg",
+              "content": "| 集合变量 | 平均力势 (Red Line) | 平均力势 (Blue Line) |\n| --- | --- | --- |\n| 1 | High | Low |\n| 2 | Low | Minimum |\n| 3 | High | Low |\n| 4 | Low | Minimum |\n| 5 | High | Low |\n| 6 | Low | Minimum |\n| 7 | High | Low |\n| 8 | Low | Minimum |\n| 9 | High | Low |\n| 10 | Low | Minimum |\n| 11 | High | Low |\n| 12 | Low | Minimum |\n| 13 | High | Low |\n| 14 | Low | Minimum |\n| 15 | High | Low |\n| 16 | Low | Minimum |\n| 17 | High | Low |\n| 18 | Low | Minimum |\n| 19 | High | Low |\n| 20 | Low | Minimum |\n| 21 | High | Low |\n| 22 | Low | Minimum |\n| 23 | High | Low |\n| 24 | Low | Minimum |\n| 25 | High | Low |\n| 26 | Low | Minimum |\n| 27 | High | Low |\n| 28 | Low | Minimum |\n| 29 | High | Low |\n| 30 | Low | Minimum |\n| 31 | High | Low |\n| 32 | Low | Minimum |\n| 33 | High | Low |\n| 34 | Low | Minimum |\n| 35 | High | Low |\n| 36 | Low | Minimum |\n| 37 | High | Low |\n| 38 | Low | Minimum |\n| 39 | High | Low |\n| 40 | Low | Minimum |\n| 41 | High | Low |\n| 42 | Low | Minimum |\n| 43 | High | Low |\n| 44 | Low | Minimum |\n| 45 | High | Low |\n| 46 | Low | Minimum |\n| 47 | High | Low |\n| 48 | Low | Minimum |\n| 49 | High | Low |\n| 50 | Low | Minimum |\n| 51 | High | Low |\n| 52 | Low | Minimum |\n| 53 | High | Low |\n| 54 | Low | Minimum |\n| 55 | High | Low |\n| 56 | Low | Minimum |\n| 57 | High | Low |\n| 58 | Low | Minimum |\n| 59 | High | Low |\n| 60 | Low | Minimum |\n| 61 | High | Low |\n| 62 | Low | Minimum |\n| 63 | High | Low |\n| 64 | Low | Minimum |\n| 65 | High | Low |\n| 66 | Low | Minimum |\n| 67 | High | Low |\n| 68 | Low | Minimum |\n| 69 | High | Low |\n| 70 | Low | Minimum |\n| 71 | High | Low |\n| 72 | Low | Minimum |\n| 73 | High | Low |\n| 74 | Low | Minimum |\n| 75 | High | Low |\n| 76 | Low | Minimum |\n| 77 | High | Low |\n| 78 | Low | Minimum |\n| 79 | High | Low |\n| 80 | Low | Minimum |\n| 81 | High | Low |\n| 82 | Low | Minimum |\n| 83 | High | Low |\n| 84 | Low | Minimum |\n| 85 | High | Low |\n| 86 | Low | Minimum |\n| 87 | High | Low |\n| 88 | Low | Minimum |\n| 89 | High | Low |\n| 90 | Low | Minimum |\n| 91 | High | Low |\n| 92 | Low | Minimum |\n| 93 | High | Low |\n| 94 | Low | Minimum |\n| 95 | High | Low |\n| 96 | Low | Minimum |\n| 97 | High | Low |\n| 98 | Low | Minimum |\n| 99 | High | Low |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 9,
+              "bbox": [
+                0.053,
+                0.782,
+                0.371,
+                0.797
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图9-12 伞形采样过程（Róg et al., 2021）"
+                }
+              ]
+            }
+          ],
+          "sub_type": "line"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.053,
+            0.802,
+            0.446,
+            0.892
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "整个过程可概述为以下步骤:① 依集合变量将构象空间划分为多个窗口，并在每一窗口内添加谐振势；② 在特定偏置势下，用直方图表示对集体变量空间的采样分布；③ 用 WHAM 方法整合所有窗口的数据，进行重加权，重建整个无偏的自由能面"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.462,
+            0.531,
+            0.948,
+            0.571
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "US）、副本交换分子动力学（replica exchange molecular dynamics，REMD）、元动力学（metadynamics）等。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 12,
+          "bbox": [
+            0.498,
+            0.574,
+            0.623,
+            0.591
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(1) 伞形采样"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.461,
+            0.597,
+            0.949,
+            0.746
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由乔治·托里（George Torrie）和约翰·瓦罗（John Valleau）于1977年首次提出，其核心思想是将构象转变过程划分成多个窗口采样，通过引入偏置势（通常是谐振势）优化每个窗口的采样，避免体系困在低能态，可以有效地采样反应过程中的高能状态。然后通过算法（如weighted histogram analysis method, WHAM）将所有窗口的统计结果整合起来，可以重建整个无偏的自由能面（图9-12）。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.461,
+            0.75,
+            0.949,
+            0.811
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "伞形采样法是基于特定的集合变量（collective variable, CV）进行的，集合变量一般为基于体系中特定原子坐标 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 的函数，如原子间距离、键角等，即:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.655,
+            0.822,
+            0.944,
+            0.84
+          ],
+          "image_path": "images/page_346_equation_15.jpg",
+          "content": "s (x) = f (x) \\tag {9-21}"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.461,
+            0.853,
+            0.947,
+            0.891
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "确定好能正确描述某一过程的集合变量后，伞形采样将该集合变量所定义的势能面分成多个窗口，在每一窗口"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 347,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.588,
+            0.053,
+            0.746,
+            0.065
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3 蛋白质分子动力学模拟"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.922,
+            0.054,
+            0.947,
+            0.064
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "333"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.052,
+            0.096,
+            0.232,
+            0.113
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "中添加谐振势  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\omega_{i}(x)"
+            },
+            {
+              "type": "text",
+              "content": " :"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.12,
+            0.12,
+            0.452,
+            0.15
+          ],
+          "image_path": "images/page_347_equation_3.jpg",
+          "content": "\\omega_ {i} (x) = \\frac {1}{2} k [ s (x) - s _ {i} ^ {r e f} ] ^ {2} \\tag {9-22}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.05,
+            0.159,
+            0.454,
+            0.331
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中，k 为自定义力常数， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "s(x)"
+            },
+            {
+              "type": "text",
+              "content": "  为当前构象对应集合变量的值， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "s_{i}^{ref}"
+            },
+            {
+              "type": "text",
+              "content": "  为窗口 i 模拟对应的集合变量的平衡值。可以看出，该谐振势在体系偏离平衡时，为体系提供一个外力，将体系限制在窗口采样范围内，起到增强该窗口区域采样的效果。将不同窗口的模拟数据合并，再通过重加权（reweighting）去掉谐振势的影响，就可以将所需要观测的全局自由能面还原出来。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.086,
+            0.336,
+            0.31,
+            0.353
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "（2）副本交换分子动力学"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.05,
+            0.358,
+            0.454,
+            0.397
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "最初由杉田有治（Yuji Sugita）和冈本祐幸（Yuko Okamoto）在1999年提出，其通过并行多"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.05,
+            0.401,
+            0.75,
+            0.552
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "个不同哈密顿量（在不同温度）的独立模拟，并允许相邻副本（即 replica，是指在模拟过程中独立运行的一个系统配置。每个副本通常具有不同的条件，如温度、压强或其他控制参数）之间进行交换，从而扩展了模拟所探索到的构象空间（图 9-13）。例如，通过高温对体系进行加速而采样到的构象可以被交换到常温副本中，从而提高常温副本中的构象探索效率。为使每个副本采集到的构象符合该温度下的玻尔兹曼分布，副本间的交换必须满足细致平衡条件，通常需要遵循 Metropolis 准则（Metropolis criteria），两副本进行交换的概率 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " 为:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.319,
+            0.558,
+            0.748,
+            0.609
+          ],
+          "image_path": "images/page_347_equation_8.jpg",
+          "content": "\\left\\{ \\begin{array}{l l} p = 1, & \\Delta \\leqslant 0 \\\\ p = e ^ {- \\Delta}, & \\Delta > 0 \\end{array} \\right. \\tag {9-23}"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.086,
+            0.619,
+            0.138,
+            0.635
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中，"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.277,
+            0.647,
+            0.748,
+            0.667
+          ],
+          "image_path": "images/page_347_equation_10.jpg",
+          "content": "\\Delta = (\\beta_ {i} - \\beta_ {j}) [ E (x _ {j}) - E (x _ {i}) ] \\tag {9-24}"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.05,
+            0.679,
+            0.749,
+            0.719
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "这里的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(x)"
+            },
+            {
+              "type": "text",
+              "content": " 为对应构象的能量。高温构象的能量如果低于低温构象，则副本交换一定发生；否则将进行依赖于构象能量差的随机交换。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 12,
+          "bbox": [
+            0.086,
+            0.724,
+            0.212,
+            0.74
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(3) 元动力学"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.05,
+            0.745,
+            0.75,
+            0.895
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由米歇尔·帕里内洛（Michelle Parrinello）课题组在2002年提出并持续发展，采用不断在集合变量空间的势能面添加偏置势（通常是高斯势，Gaussian potential），帮助体系克服高能垒，并引导系统探索高能构象空间，从而可以在短的模拟时间尺度内观察到长时间尺度的生物事件（图9-14）。现在被广泛使用的元动力学方法是改进版本的WT-MetaD（well-tempered metadynamics）。元动力学类似于伞状采样算法，也同样依赖于集合变量。在每一时刻，根据当前的集合变量值添加对应高斯势。随着当前集合变量值总偏置势的累积，所添加的高斯势衰减，从而可以避免体"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 14,
+          "bbox": [
+            0.468,
+            0.097,
+            0.948,
+            0.299
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 14,
+              "bbox": [
+                0.468,
+                0.097,
+                0.948,
+                0.299
+              ],
+              "image_path": "images/page_347_image_14.jpg",
+              "content": "```mermaid\ngraph LR\n  T0[\"T0\"] -->|Red Arrow| T1[\"T1\"]\n  T0 -->|Orange Arrow| T2[\"T2\"]\n  T0 -->|Blue Arrow| T3[\"T3\"]\n  \n  T1 -->|Green Arrow| T2\n  T1 -->|Red Arrow| T3\n  \n  T2 -->|Green Arrow| T3\n  T2 -->|Orange Arrow| T3\n  \n  T3 -->|Green Arrow| T4[\"T4\"]\n  T3 -->|Red Arrow| T5[\"T5\"]\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 15,
+              "bbox": [
+                0.465,
+                0.307,
+                0.868,
+                0.323
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图9-13 副本交换分子动力学过程（Rög et al., 2021）"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.465,
+            0.327,
+            0.948,
+            0.363
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在高温副本中加速采样到的构象可与常温副本构象交换，以加速构象探索效率"
+            }
+          ],
+          "continues_prev": true
+        }
+      ]
+    },
+    {
+      "page_idx": 348,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.067,
+            0.043,
+            0.091,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "334"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.265,
+            0.041,
+            0.411,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9 蛋白质组学和代谢组学"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.064,
+            0.085,
+            0.573,
+            0.337
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.064,
+                0.085,
+                0.573,
+                0.337
+              ],
+              "image_path": "images/page_348_image_2.jpg",
+              "content": ""
+            },
+            {
+              "type": "image_caption",
+              "index": 3,
+              "bbox": [
+                0.066,
+                0.343,
+                0.384,
+                0.359
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图9-14 元动力学过程（Rög et al., 2021）"
+                }
+              ]
+            },
+            {
+              "type": "image_footnote",
+              "index": 4,
+              "bbox": [
+                0.064,
+                0.364,
+                0.574,
+                0.44
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "（a）体系处于某势阱中并通过不断累积偏置势，逐渐接近能垒；（b）体系越过能垒并进入另一势阱，此时偏置势主要施加在新的势阱中；（c）两势阱的能垒都被施加的偏置势所克服，此时体系在两亚稳态间的转变已不需要跨过能垒，体系中偏置势继续累积，寻找能垒更高的亚稳态"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.585,
+            0.085,
+            0.957,
+            0.283
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "系搜索到非物理高能态区域，并加速对新的构象空间的探索。随着高斯势添加，系统中的总偏置不断累计，直至体系脱离势能阱，并进入新的势能阱，直到几乎填平整个势能面，最终达到收敛。和伞形采样一样，元动力学方法也可通过重加权技术复原任意集合变量。与伞形采样相比，元动力学不需要构建多个窗口独立模拟，而具有自动快速探索势能面的特点。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.585,
+            0.286,
+            0.957,
+            0.44
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "总的来说，增强采样算法的主要挑战是针对不同系统需要采用不同的采样方法，并且其所需计算量仍然不小。目前增强采样算法和机器学习方法的结合已经展现出很大的潜力。将来增强采样在分子模拟中的应用将更加广泛和高效，这将大幅推进对蛋白质构象变化机制的深入理解。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.299,
+            0.446,
+            0.471,
+            0.463
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3.4.2 粗粒化建模"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.26,
+            0.468,
+            0.96,
+            0.6
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "粗粒化建模通常是指使用粗粒度更高的简化模型来模拟复杂系统的建模方法。粗粒化模型广泛用于各种分子的建模，如蛋白质、核酸、脂质和糖类等。虽然粗粒化模型会忽略掉一些分子细节，但是可以极大地拓展模拟体系的大小和时间尺度，因此广泛应用于研究生物大分子体系。在分子动力学模拟发展的早期，粗粒化建模方法就已经得到了应用。在20世纪70年代，迈克尔·莱维特（Michael Levitt）和亚利耶·瓦谢尔（Arieh Warshel）就使用粗粒化方法研究了蛋白质折叠的问题。"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 9,
+          "bbox": [
+            0.068,
+            0.62,
+            0.573,
+            0.89
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 9,
+              "bbox": [
+                0.068,
+                0.62,
+                0.573,
+                0.89
+              ],
+              "image_path": "images/page_348_image_9.jpg",
+              "content": "磷脂酰胆碱\n全原子模型\n粗粒化模型"
+            },
+            {
+              "type": "image_caption",
+              "index": 10,
+              "bbox": [
+                0.06,
+                0.898,
+                0.564,
+                0.914
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图9-15 全原子模型的粗粒化建模（Bradley & Radhakrishnan, 2013）"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.585,
+            0.606,
+            0.959,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "目前应用比较广泛的粗粒化力场包括MARTINI力场,其是由格罗宁根大学的Marrink等于2004年开发的（图9-15）。最初MARTINI力场仅用于模拟磷脂，通常用于理解生物膜行为方面的生物问题。2007年，其应用范围扩展到蛋白质和核酸等其他各类分子。2021年，最新版的MARTINI3力场发布，进一步提高了对局部细节的敏感度和小分子模拟的精确度。典型的MARTINI模型将化学原子基团简化为珠子，从而精简了体系中的粒子数。其定义了四大类粗粒化珠子:Q（charged）、P（polar）、N（nonpolar）和C（apolar），并且可以进一步细分为总共20种珠子类型。对于珠子大小，MARTINI有"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 349,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.644,
+            0.05,
+            0.803,
+            0.063
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3 蛋白质分子动力学模拟"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.978,
+            0.05,
+            0.999,
+            0.062
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "335"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.107,
+            0.095,
+            0.803,
+            0.156
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "普通型、小型和微型三种规格可以选择，分别映射4个、3个或2个重原子。普通型珠子最为常用，也最为高效；小型珠子主要用于表示环状结构；微型珠子一般用于表示核酸分子。"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.144,
+            0.161,
+            0.512,
+            0.177
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3.4.3 整合结构生物学与分子动力学模拟"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.106,
+            0.182,
+            0.806,
+            0.506
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "目前，分子动力学模拟技术在结构生物学研究中的应用已相当广泛。从优化低分辨率结构到解释生物学功能，分子模拟技术都显示出了其独特的优势。这一方法不仅拓展了结构生物学研究的深度，还有助于挖掘单一结构背后的服务多构象动力学信息。对于高度柔性的生物大分子，如固有无序蛋白或含有无序区的蛋白，单一实验技术难以获得精确的全局构象模型。这时，整合多种信息和方法的技术就显得尤为重要。基于物理的分子动力学模拟正是整合多种结构生物学数据（如X射线晶体学、冷冻电镜、核磁共振光谱、小角X射线散射和交联质谱等数据）的强大工具。这就涉及新兴的整合结构生物学技术。通常，各种实验技术只能提供生物大分子的部分信息，如X射线晶体学和冷冻电镜技术只能提供有序结构部分的信息，核磁共振光谱和小角X射线散射可以提供一些动力学和系综平均的信息等。在整合结构生物学中，计算模拟可以整合分子力场和多种信息，补充实验无法观察到的细节，生成生物大分子的结构系综，从而获取实验技术难以测定的高时空分辨率信息。通过整合各种实验数据，并结合分子动力学模拟的能量地貌全景描绘，研究人员可以对生物大分子有更系统、全面准确的认知。这正是整合结构生物学技术的目标和意义所在。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.144,
+            0.511,
+            0.414,
+            0.527
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3.4.4 蛋白质模拟的硬件进展"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.106,
+            0.533,
+            0.806,
+            0.705
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在过去的几十年里，计算硬件以及用于分子动力学的算法和软件的改进允许在更长的时间尺度下进行模拟，同时极大地节约了计算的成本，最近的改进尤其显著。高度专业化的硬件导致最大可实现速度的大幅提高，允许某些模拟达到实验级的时间尺度。如 D. E. Shaw Research 公司开发的超级计算机 Anton 系列，其使用特制的硬件，即定制的集成电路，以便于更快、更高效地进行蛋白质折叠计算；IBM 开发了计算生物超级计算机 Blue Gene，用于研究复杂的生物系统，包括蛋白质折叠；斯坦福大学创建了 Folding@Home，这是一个分布式计算项目，它利用普通家用计算机的算力来模拟蛋白质折叠和其他分子动力学。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.107,
+            0.727,
+            0.508,
+            0.747
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3.5 主流分子动力学软件和力场介绍"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.144,
+            0.77,
+            0.471,
+            0.787
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3.5.1 开源和商业分子动力学软件包"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.106,
+            0.792,
+            0.805,
+            0.898
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "分子动力学软件最核心的功能就是进行分子动力学模拟的计算，早期的分子动力学软件只是配合不同分子力场而开发的不同计算工具，功能相对单一；现如今的分子动力学软件往往会打包一些辅助工具，帮助进行模型构建以及应对不同的计算需求等，有些软件也能够支持多种力场输入。根据运营模式，本节分别介绍开源和商业化分子动力学软件（表9-2）。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 350,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.0,
+            0.054,
+            0.022,
+            0.065
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "336"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.192,
+            0.054,
+            0.335,
+            0.067
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9 蛋白质组学和代谢组学"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 3,
+          "bbox": [
+            0.194,
+            0.117,
+            0.875,
+            0.288
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 2,
+              "bbox": [
+                0.393,
+                0.098,
+                0.667,
+                0.113
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "表 9-2 几种主流分子动力学模拟软件"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 3,
+              "bbox": [
+                0.194,
+                0.117,
+                0.875,
+                0.288
+              ],
+              "image_path": "images/page_350_table_3.jpg",
+              "content": "<table><tr><td>软件名</td><td>收费方式</td><td>运营团队</td></tr><tr><td>OpenMM</td><td>开源</td><td>斯坦福大学</td></tr><tr><td>GROMACS</td><td>开源</td><td>格罗宁根大学</td></tr><tr><td>Charmm</td><td>商用/开源学术版</td><td>Biovia 公司</td></tr><tr><td>Amber</td><td>商用/开源学术版</td><td>David Case 等</td></tr><tr><td>NAMD</td><td>开源</td><td>伊利诺伊大学厄巴纳-香槟分校</td></tr><tr><td>LAMMPS</td><td>开源</td><td>桑迪亚国家实验室</td></tr><tr><td>DESMOND</td><td>商用</td><td>D. E. Shaw Research 公司、Schrödinger 公司</td></tr><tr><td>ACEMD</td><td>商用</td><td>Acellera Solutions 公司</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.188,
+            0.303,
+            0.876,
+            0.493
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "开源的分子动力学软件具有代码开放、高度自定义等显著优势。与商业软件不同，开源软件源代码对用户完全透明，允许用户查看算法实现的每一个细节，这有助于加深对理论方法的理解。用户也可以基于开源代码修改或者添加功能，使软件更切合特定的科研需求。开源软件开发者也会及时采用和实现最新的理论进展与算法优化，使软件功能保持与前沿发展接轨。此外，由于无须支付高额许可费，开源软件的使用成本较低。开源软件促进了科研界的互动交流和协作，用户可以得到广泛的社区技术支持。因此，开源软件更受到学术界的青睐。但需要注意的是，开源软件界面普遍不如商业软件友好精致，使用难度较大，需要对理论方法和编程有一定了解。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.188,
+            0.498,
+            0.876,
+            0.646
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "GROMACS 和 NAMD 是两款开源的分子动力学模拟软件。GROMACS 最初由格罗宁根大学生物物理化学系开发，现在由世界各地的大学和研究中心的研究人员共同维护。GROMACS 是最快、最流行的分子动力学软件包之一，可支持 GPU 运算。GROMACS 通过命令行界面进行操作，使用文件进行输入和输出。其支持使用大部分主流的分子力场，操作灵活性高。NAMD 是由伊利诺伊大学厄巴纳-香槟分校理论与计算生物物理学组和并行编程实验室合作开发的。其主要特点是并行效率高，常用于模拟大型系统，可通过可视化软件 VMD 进行交互式模拟。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.188,
+            0.65,
+            0.876,
+            0.797
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "商业分子动力学模拟软件一般需要支付费用购买使用权。商业软件的优势在于界面友好、使用简便，能够提供完善的技术支持和用户培训。商业软件往往集成了从建模、模拟到分析的各个功能模块，不同任务环节可以较好衔接，工作流程的连贯性较好。此外，商业软件较为重视图形界面的开发和结构可视化效果的呈现，能够帮助科研人员直观理解模拟系统，操作起来十分便利。软件开发商也会持续根据用户的反馈开发新功能，保证软件与前沿科研需求对接。总体而言，商业软件可以提供专业可靠的服务和良好的用户体验，但其使用价格往往较为昂贵。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.188,
+            0.802,
+            0.876,
+            0.883
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于研究者而言，使用商业软件能够更轻松地解决科学问题，而不用耗费时间在学习编程、软件开发以及分子动力学原理上。即使使用商业软件，也不应该让模拟成为一个“黑盒”，进行机械化的工作，仍然应该明确每一步工作的原理和意义，对分子模拟有更深层的掌握。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 351,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.588,
+            0.053,
+            0.746,
+            0.065
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3 蛋白质分子动力学模拟"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.922,
+            0.052,
+            0.947,
+            0.063
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "337"
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 2,
+          "bbox": [
+            0.05,
+            0.096,
+            0.845,
+            0.371
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 2,
+              "bbox": [
+                0.05,
+                0.096,
+                0.845,
+                0.371
+              ],
+              "image_path": "images/page_351_chart_2.jpg",
+              "content": "| Mutation | Type | Status |\n| :--- | :--- | :--- |\n| OPLS-AA/L | Bifacial/Chromatin | Two-Section |\n| CHARMM22 | Chromatin | Two-Section |\n| CHARMM22/C | Chromatin | Two-Section |\n| FF99SB | Bifacial/Chromatin | Two-Section |\n| FF99SB*-ILDN | Chromatin | Two-Section |\n| RSFF1 | Chromatin | Two-Section |\n| FF99SB-ILDN | Chromatin | Two-Section |\n| FF03w | Chromatin | Two-Section |\n| CHARMM22* | Chromatin | Two-Section |\n| RSFF2 | Chromatin | Two-Section |\n| CHARMM36 | Chromatin | Two-Section |\n| FF03ws | Chromatin | Two-Section |\n| FF99IDPs | Chromatin | Two-Section |\n| OPLS-AA/M | Chromatin | Two-Section |\n| FF12SB-imp | Chromatin | Two-Section |\n| FF14SB | Chromatin | Two-Section |\n| OPLS3 | Chromatin | Two-Section |\n| FF14IDPSFF | Chromatin | Two-Section |\n| FF14IDPs | Chromatin | Two-Section |\n| CHARMM36m f03CMAP | Chromatin | Two-Section |\n| a99SB-disp | Chromatin | Two-Section |\n| RSFF2C | Chromatin | Two-Section |\n| ESFF1 | Chromatin | Two-Section |\n| CHARMM36IDPSFF | Chromatin | Two-Section |\n| OPLSIDPSFF | Chromatin | Two-Section |\n| FF19SB | Chromatin | Two-Section |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 9,
+              "bbox": [
+                0.759,
+                0.385,
+                0.951,
+                0.442
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图9-16 近年来蛋白质分子力场的发展（Mondal et al., 2022）"
+                }
+              ]
+            }
+          ],
+          "sub_type": "state_timeline"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.049,
+            0.386,
+            0.749,
+            0.491
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "较为著名的商业软件包包括 Amber 和 Charmm 等。Amber 和 Charmm 均为适配于各自同名分子力场的模拟软件。AMBER 力场和模拟软件 Amber 最初由加州大学旧金山分校的 Peter Kollman 团队开发；CHARMM 力场及模拟软件最初由哈佛大学 Martin Karplus 团队开发。Amber 和 Charmm 如今都分为商用版和开源学术版两个版本，研究者也可以方便地构建体系和进行模拟。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.05,
+            0.494,
+            0.749,
+            0.556
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在药学领域，由于大批量药物筛选的需要，商用软件的应用十分广泛。如知名的商业软件包 Schrödinger，其可以提供分子建模、分子动力学模拟、轨迹分析、分子可视化等一系列服务，但这类软件开发主要服务于商业潜力巨大的药学研究。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.086,
+            0.561,
+            0.262,
+            0.577
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3.5.2 蛋白质力场"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.049,
+            0.581,
+            0.749,
+            0.708
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "分子力场规定了模拟中各类相互作用的形式和参数，是分子动力学模拟的基础。使用的力场准确与否，会对模拟的可信程度产生直接影响。随着各类力场的版本不断更新，近年来推出的力场计算精度和效率显著提高，针对不同的体系，也有各种特异性力场推出，对特定类型分子进行优化（图9-16）。力场的不断发展为更准确预测蛋白质结构、动力学性质和相互作用提供了可能。在使用力场时，要注意对于体系的适用性。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.049,
+            0.711,
+            0.749,
+            0.861
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "以下是几种经典的蛋白质力场:① AMBER 力场，该力场是最早和最具代表性的力场之一，由加州大学旧金山分校开发。不同版本的 AMBER 力场包括 FF94、FF96、FF99、FF99SB、FF14SB、FF19SB 等；② CHARMM 力场，其由哈佛大学开发，针对蛋白质、DNA 和糖类分子，参数化更为精细和复杂。不同版本包括 CHARMM22、CHARMM27、CHARMM36 等；③ GROMOS 力场，由瑞士巴塞尔大学开发，不同版本包括 43A1、43B1、43A2、53A5、53A6 等；④ OPLS 力场，由奥勒岗州立大学开发，与 AMBER 力场类似，侧重于小分子，包括 OPLS-AA、OPLS-UA 等版本。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.051,
+            0.864,
+            0.749,
+            0.903
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在这些经典力场中，键拉伸和角度弯曲的动力学通过简谐振动来描述，且省略了键拉伸和角度弯曲之间的相关性。也有一些力场将非调和三次或四次项添加到"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

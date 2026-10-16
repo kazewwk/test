@@ -1,0 +1,452 @@
+## (1) 条件语句 (if 语句)
+
+条件语句可以根据条件执行不同的操作。在生物信息学中，读者可以使用条件语句来检查文件是否存在、数据是否符合特定标准，以及执行与数据质量控制、过滤或选择相关的操作。
+
+## (2) 循环 (for 或 while 循环)
+
+循环允许重复执行一组操作，通常用于遍历文件列表、批量处理多个文件或运行相同的命令多次。在生物信息学中，循环经常用于对多个样本、数据文件或基因进行分析。
+
+在生物信息学中，这些条件语句和循环结构可以用于自动化数据分析、质量控制、比对、序列分析和生成报告等任务。通过结合条件语句和循环，可以根据特定的条件或需要，自动处理大量的生物信息学数据，并生成统计信息或可视化结果。这有助于提高工作效率和准确性，特别是在处理大规模生物数据集时。例如:
+
+```shell
+$ if [ -e data.txt ]; then
+    echo "Data file exists."
+else
+    echo "Data file does not exist."
+fi
+
+$ for file in *.fasta; do
+    echo "Processing $file..."
+    # 执行一些分析操作
+done
+
+$ while [ -f data.txt ]; do
+    echo "Data file still exists."
+    sleep 3600  # 等待1小时
+done
+```
+
+## 13.2.2.5 Shell 传递参数
+
+命令行参数是通过命令行传递给 Shell 脚本或可执行程序的参数，它们允许用户在运行脚本或程序时提供输入数据或配置选项。在生物信息学中，命令行参数通常用于指定输入文件、输出目录、参数值等，以控制分析流程的行为。在 Shell 脚本中，可以使用 $1$、$2$、$3$ 等特殊变量来引用传递给脚本的命令行参数。这些变量表示第一个、第二个、第三个参数，依此类推。
+
+## 13.2.2.6 Shell函数
+
+函数在 Shell 编程中用于封装一组相关的命令和操作，以便于重复使用和组织代码。在生物信息学中，函数通常用于执行特定的生物信息学任务，如数据处理、序列分析、比对、统计等。在 Shell 脚本中，可以使用 function 关键字或者简单地使用函数名来定义一个函数。函数可以接受参数，并且可以返回一个值。函数使代码更加模块化和可维护，有助于提高生物信息学工作的效率。
+
+## 13.2.2.7 Shell 管道
+
+管道是 Shell 编程中非常实用的概念，它允许将多个命令连接在一起，将一个命令的输出传递给另一个命令的输入，从而实现数据流的处理、转换和过滤。在生物信息学中，管道通常用于处理和分析大规模的生物数据，如 DNA 序列、蛋白质序列、测序数据等。以下是一些关于管道的详细说明和示例。
+
+## (1) 管道的语法
+
+在 Shell 中，管道使用竖线符号 | 连接两个或多个命令，将第一个命令的输出传递给下一个命令的输入。语法如下:
+
+```txt
+$ command1 | command2
+```
+
+## (2) 管道的应用
+
+① FASTQ 文件处理 假设有一个包含测序数据的 FASTQ 文件，可以使用管道来处理和分析数据。以下示例演示如何使用 zcat 解压缩压缩的 FASTQ 文件，然后使用 grep 查找特定的序列，最后使用 wc 统计匹配的序列数量:
+
+```shell
+$ zcat data.fastq.gz | grep -c "ACGT" | wc -l
+```
+
+② 序列比对和过滤 在生物信息学中，通常需要将测序数据与参考基因组比对，并过滤匹配的序列。以下示例演示如何使用 bowtie2 进行比对，然后使用 samtools 过滤和处理 SAM 文件，并使用 bedtools 从比对结果中提取感兴趣的区域（注意:在命令的末尾使用 \ 表示命令还没结束，可以换行继续写）。
+
+```shell
+$ bowtie2 -x reference_index -U data.fastq | \
+samtools view -bS - | bedtools intersect -a - \
+-b regions_of_interest.bed > filtered.bam
+```
+
+③ 数据处理和统计 在生物信息学中, 常常需要对数据进行各种处理和统计。以下示例演示如何使用 awk 和 sort 来处理并统计一个包含基因表达数据的文本文件:
+
+```shell
+$ cat gene_expression.txt | \
+awk '{if ($2 >= 10) print $1}' | \
+sort | uniq -c > high_expression_genes.txt
+```
+
+④ 多步骤分析流程 生物信息学中的复杂分析通常涉及多个步骤，每个步骤都可以通过管道连接起来。例如，RNA测序数据的预处理可能包括质量控制、剪切适配、比对等多个步骤，这些步骤可以通过管道一次性完成。
+⑤ 数据可视化 管道还可以用于生成图表和可视化结果。例如，可以使用一系列命令将数据转换为图形数据，然后使用绘图工具如 ggplot 来绘制图表。
+
+总之，管道是 Shell 编程中的强大工具，可以将多个命令组合在一起，以快速、高效地处理和分析生物信息学数据。它们使得复杂的分析流程变得可管理和可重复，有助于加快研究进展。
+
+## 13.2.2.8 Shell输入/输出重定向
+
+Shell 输入/输出重定向是一种强大的技术，允许控制命令如何处理输入和输出。在生物信息学中，它可以用于从文件中读取数据、将输出保存到文件，以及管道操作的数据流重定向。以下是 Shell 输入/输出重定向的详细说明和示例（表 13-3）。
+
+表 13-3 Shell 输入/输出重定向的详细说明
+
+| 命令 | 说明 |
+| --- | --- |
+| command > file | 将命令的输出重定向到 file |
+| command &lt; file | 将 file 内容重定向为命令的输入 |
+| command >> file | 将输出以追加的方式重定向到 file |
+| n > file | 将文件描述符为 n 的文件重定向到 file |
+| n >> file | 将文件描述符为 n 的文件以追加的方式重定向到 file |
+| n >&amp; m | 将输出文件 m 和 n 合并 |
+| n &lt;&amp; m | 将输入文件 m 和 n 合并 |
+| &lt;&lt; tag | 将开始标记 tag 和结束标记 tag 之间的内容作为输入 |
+
+需要注意的是, 文件描述符 (file descriptor) 用不同的数字表示不同的标准流: 0通常是标准输入 (STDIN), 1 是标准输出 (STDOUT), 2 是标准错误 (STDERR)。
+
+① 标准输入（STDIN）通过将输入从键盘改为来自文件或另一个命令的输出，可以使用 $<$ 符号来实现。
+② 标准输出（STDOUT） 通过将输出从屏幕改为写入文件，可以使用 > 符号来实现。
+③ 标准错误（STDERR）通常，错误信息会输出到屏幕，但可以使用 $2>$ 符号将错误信息重定向到文件。
+④ 组合输入/输出 可以同时重定向标准输入、标准输出和标准错误，以便更好地控制命令的输入和输出。
+
+示例:运行生物信息学工具，将输入从文件中读取，将标准输出和标准错误保存到不同文件中。
+
+```txt
+$ # 从"input.fasta"读取数据，将标准输出保存到"output.txt"，将
+    标准错误保存到"error.txt"
+$ bioinformatics_tool < input.fasta > output.txt 2> error.txt
+```
+
+输入/输出重定向使生物信息学研究人员能够更有效地处理大量数据和跟踪命令的执行情况。它们对于数据分析、错误记录和自动化任务都非常有用。通过组合这些技术，可以构建复杂的分析流程，以满足特定的研究需求。
+
+以上这些示例演示了 Shell 编程在生物信息学中的一些常见应用。Shell 脚本可以根据具体的研究需求进行定制，用于自动化分析流程、数据处理、文件管理和任务调度等任务。它们使研究人员能够更有效地处理和分析生物信息学数据，这也是每一位生物信息学研究者应该具备的基础技能。
+
+## 13.2.3 R 编程语言
+
+R 语言是一个统计计算和可视化的语言和环境，它的起源可以追溯到贝尔实验室的统计学家约翰·钱伯斯（John Chambers）于 1976 年开发的 S 语言。R 语言与 C 语言诞生于同一时代，语法很不一样，现代主流语言多数是基于 C 语言的语法，导致 R 语言的语法初学起来会觉得有些奇怪。S-PLUS 和 R 语言分别是基于 S 语言的商业和开源实现版本。R 语言的创始人罗斯·伊哈卡（Ross Ihaka）和罗伯特·杰特曼（Robert Gentleman）于 1993 年开始开发 R 语言。他们的目标是创建一个开源的、可扩展的数据分析和统计计算环境，以满足不同领域的数据科学需求。R 语言的名称取自他们名字的首字母，自诞生以来，取得了长足的发展，应该说是基于 S 语言，又超越 S 语言的一门编程语言，特别是有着活跃的社区，为其开发了面向不同领域的扩展包，包括农业、计算物理、经济、流行病学、医学图像处理、生态环境等。面对大数据时代，R 语言拥有以 tidyverse 为代表的一系列软件包，以统一的数据操作方式，提供数据导入（readr 包）、数据整理（tidyr 包）、数据处理（dplyr 和 forcats 包）和数据可视化（ggplot2 包）一系列的支持。在生物信息学领域，拥有最大的生信开源社区 Bioconductor，提供了超过 2000 个软件包，提供了快速访问公共数据资源、高通量数据处理分析和可视化，大大地降低了生信科研人员分析数据的门槛。
+
+## 13.2.3.1 R 语言的安装
+
+Windows 和 Mac OS 用户可通过 CRAN 下载 R 语言并安装，其他平台可通过包管理系统（如 Ubuntu 可通过 apt-get，RedHat 可通过 yum 安装）或者通过下载源码进行编译安装。R 语言作为一门编程语言，用户可以通过写脚本然后通过 Rscript 来执行。同时 R 语言还提供了可交互的终端，用户可通过终端执行指令进行数据的操作、分析和可视化。此外有多种集成开发环境（integrated development environment，IDE）支持 R 语言，包括 RStudio、RCode、Eclipse 等，也有多款文本编辑器（Vim、Emacs 和 VSCode 等）可通过安装插件支持 R 语言。最广为流行的是 RStudio，它提供了友好的用户界面便于用户进行代码编辑、数据分析、管理项目乃至生成报告。RStudio 支持跨平台，可在 Windows、Mac OS 和 Linux 系统上运行。RStudio 默认界面提供了 4 个区域。
+
+① 代码编辑器 代码编辑器位于左上角，用户可创建新的脚本或打开已有的脚本文件，代码可发送到终端进行运行。
+② 终端 终端位于左下角，是 R 运行代码的地方，用户可以直接在此处键入代码并回车运行。一般情况下，用户会把代码写在代码编辑器中，再发送到终端进行执行，这样也有利于保存代码。
+③ 数据浏览器 数据浏览器位于右上角，可在此处浏览运行环境中的变量、代码执行历史和外部数据连接等。
+④ 文件浏览器 文件浏览器位于右下角，包括几个标签页，包括文件（files）用于浏览本地文件，图形（plots）用于显示出图，包（packages）用于浏览安装包，帮助（help）用于显示帮助文档。RStudio 同时还内置了一个网络浏览器，所以 html 文档和可交互的 Web 图形均可在此区域展示。帮助也是一个很重要的功能，用户需要更深入地了解某个指令，可以在终端键入？和相应的指令，如在终端执行?list，会显示 list 的帮助文档。
+
+## 13.2.3.2 R包的管理
+
+R 包的安装一般可通过 install.packages() 指令, 它支持来自 CRAN、Bioconductor 和 R-Forge 这几个软件仓库的 R 包。它默认使用 CRAN 作为软件仓库来搜索安装 R 包, 用户可通过 repos 参数, 或者是 setRepositories() 函数设定 install.packages() 使用的软件仓库。一般不使用它来安装 Bioconductor 包, 而是使用 CRAN 包 BiocManager 来安装 Bioconductor 软件包, 它提供 install() 指令来完成安装。因为 Bioconductor 每半年发布一次, 使用 BiocManager 来安装, 可以有效地杜绝混淆不同发行版本包的安装, 这对于软件包的稳健运行是必要的。
+
+```javascript
+> # 安装R包
+> install.packages("BiocManager")
+```
+
+安装之后，可通过 library() 函数加载包，然后就可以运行包所提供的功能。如使用 BiocMaanger 包来安装 DESeq2 包，可使用以下指令:
+
+```txt
+> library(BiocManager)
+> install("DESeq2")
+```
+
+当前有更多的软件存放在 GitHub 上，没有正式发布于 CRAN 或 Bioconductor 上，安装此类 R 包，可以通过 remotes 包所提供的 install\_github() 函数来实现。例如，提供多种单细胞数据下载功能的 seurat-data 包，可以通过以下指令下载安装:
+
+```txt
+> library(remotes)
+> install_github("satijalab/seurat-data")
+```
+
+R 包 rvcheck 提供了一系列更新 R 包的函数，check\_r() 函数可用于检查是否有新的 R 版本，check\_cran() 函数用于检查 CRAN 包的更新，check\_bioc() 函数用于检查 Bioconductor 包的更新，check\_github() 用于检查 GitHub 包的更新，并且提供了一站式更新所有 R 包的函数 update\_all()。如用户想一次性更新所有 R 包，可执行以下指令:
+
+```txt
+> library(rvcheck)
+> update_all()
+```
+
+R 包的删除，可以使用 remove.packages() 函数来完成，如删除 ggplot2 包，可以使用以下指令:
+
+```txt
+> remove.packages('ggplot2')
+```
+
+## 13.2.3.3 数据类型和数据结构
+
+R 语言基本的数据类型主要有数值型（numeric）、字符型（character）、逻辑型（logical）等，这些基本数据类型可以组成复杂的数据结构，包括向量（vector）、矩阵（matrix）、列表（list）和数据框（data.frame）等（表 13-4）。
+
+表 13-4 R 基本数据类型和数据结构
+
+| 数据类型 | 说明 | 示例 | 解释 |
+| --- | --- | --- | --- |
+| numeric | 数值类型,包括整数和实数 | x&lt;-42y&lt;-3.14 | x是整数,y是实数,都是numeric类型 |
+| integer | 整数类型,通过L后缀指定 | z&lt;-42L | z是整数类型,使用L后缀标识为integer |
+| character | 字符串类型,文本数据 | gene&lt;- "AP1" | gene是字符类型,表示一个基因的名字 |
+| logical | 布尔类型,真或假 | flag&lt;-TRUEstatus&lt;-FALSE | flag和status是布尔类型,分别表示真和假 |
+| complex | 复数类型,包括实部和虚部 | comp&lt;-2+3i | comp是复数类型,包含实部2和虚部3 |
+| factor | 因子类型,用于分类数据 | gender&lt;--factor(c("male","female", "male")) | gender是因子类型,用于表示分类数据,包含两个类别 |
+| vector | 向量类型,同一类型元素的有序集合 | vec&lt;-c(1, 2, 3, 4) | vec是一个数值向量,包含4个数值 |
+| list | 列表类型,可以包含不同类型的数据 | lst&lt;-list(name="AP1", group=2, expression=9.5) | lst是一个列表,包含字符、数值和实数类型的元素 |
+| matrix | 矩阵类型,二维数组,所有元素类型相同 | mat&lt;-matrix(1:6, nrow=2, ncol=3) | mat是一个数值矩阵,包含两行三列 |
+| array | 数组类型,多维数组,所有元素类型相同 | arr&lt;-array(1:8, dim=c(2, 2, 2)) | arr是一个三维数组,每维度包含2个元素 |
+| data.frame | 数据框类型,类似于数据库中的表格,可以包含不同类型的列 | df&lt;-data.frame(id=1:3, name=c("A", "B", "C"), score=c(9.5, 8.0, 7.5)) | df是一个数据框,包含id、name和score三列 |
+
+不同数据类型之间可以进行转换，R 内部实现了 as 系列函数用于进行类型转换（表 13-5）。
+
+表 13-5 R 数据类型转换函数
+
+| 函数 | 说明 | 示例 | 输出 |
+| --- | --- | --- | --- |
+| as.numeric | 转换为数值 | x&lt;- "42"; as.numeric(x) | 42(将字符"42"转换为数值42) |
+| as.integer | 转换为整数 | y&lt;- 3.14; as.integer(y) | 3(将数值3.14转换为整数3) |
+| as.character | 转换为字符 | z&lt;- 42; as.character(z) | "42"(将数值42转换为字符"42") |
+| as.logical | 转换为布尔 | a&lt;- 1; as.logical(a) | TRUE(将数值1转换为布尔值TRUE) |
+| as.complex | 转换为复数 | b&lt;- 2; as.complex(b) | 2+0i(将数值2转换为复数2+0i) |
+| as.factor | 转换为因子 | c&lt;- c("male", "female", "male"); as.factor(c) | 将字符向量转换为因子类型 |
+| as.vector | 转换为向量 | d &lt;- matrix(1:4, nrow=2); as.vector(d) | c(1, 2, 3, 4)(将矩阵转换为向量) |
+| as.list | 转换为列表 | e &lt;- c(1, 2, 3); as.list(e) | list(1, 2, 3)(将向量转换为列表) |
+| as.matrix | 转换为矩阵 | f &lt;- c(1, 2, 3, 4); as.matrix(f) | 矩阵形式的对象 |
+| as.array | 转换为数组 | g &lt;- 1:8; as.array(g, dim=c(2, 2, 2)) | 三维数组 |
+| as.data.frame | 转换为数据框 | h &lt;- list(a=1:3, b=4:6); as.data.frame(h) | 数据框形式的对象 |
+
+storage.mode() 函数可以查看对象数据的存储模式，object.size() 函数查看对象的分配空间。
+
+```r
+storage.mode(2)
+storage.mode(as.integer(2))
+storage.mode(2L)
+x <- sample(c('apple', 'cherry', 'apple', 'watermelon'), 1000,
+    replace=TRUE)
+y <- as.factor(x)
+object.size(x)
+object.size(y)
+```
+
+## 13.2.3.4 R语言基本语法
+
+R 语言的语法简洁而灵活，特别适用于统计分析和数据科学。在 R 终端环境下，不同 R 命令或者语句以 “>” 为提示符（参考一下例子），输入完一条语句之后按回车键，将执行本条语句，输出结果信息并提示输入下一条语句。也可以将所有命令存放在一个以 .R 或者 .r 为后缀的文件中，在 R 中通过 source() 函数或者在 Bash 中通过 Rscript 程序来执行文件中的所有语句。R 语言的基本语法汇总于表 13-6。
+
+表 13-6 R 语言基本语法汇总
+
+<table><tr><td>类别</td><td>描述</td><td>示例代码</td></tr><tr><td>注释</td><td>R 语言使用 # 符号进行单行注释,注释内容在 #之后</td><td># 这是一个单行注释</td></tr><tr><td>赋值</td><td>R 语言使用&lt;-和=进行赋值,推荐使用&lt;-</td><td>x&lt;-5;y=10</td></tr><tr><td>算术操作符</td><td>包括加法、减法、乘法、除法、幂运算、取余和取整</td><td>5+3;5-3;5*3;5/35^3;5%%3;5%/%3</td></tr><tr><td>逻辑操作符</td><td>包括等于、不等于、大于、小于、大于等于、小于等于、逻辑与、逻辑或、逻辑非</td><td>5==3;5!=3;5&gt;3;5&lt;3;5&gt;=3;5&lt;=3;TRUE&amp;FALSE;TRUE|FALSE;!TRUE;</td></tr><tr><td>条件语句</td><td>if 语句和 ifelse 函数用于条件判断</td><td>x &lt;- 5if(x &gt; 0) { print("x 是正数")} else if (x &lt; 0) { print("x 是负数")} else { print("x 是零")}# 使用 ifelse 函数y &lt;- ifelse(x &gt; 0, " 正数", " 非正数")print(y)</td></tr><tr><td>循环语句</td><td>包括 for 循环、while 循环和 repeat 循环</td><td># for 循环for(i in 1:5) { print(i)}# while 循环count &lt;- 1while(count &lt;= 5) { print(count) count &lt;- count + 1}# repeat 循环count &lt;- 1repeat { print(count) count &lt;- count + 1 if(count &gt; 5) { break }}</td></tr><tr><td>函数定义</td><td>创建和调用函数</td><td># 定义函数read_fasta &lt;- function(file) { con &lt;- readLines(file) i &lt;- grep("&gt;", con) res &lt;- data.frame( descrtioon = con[i], sequence = con[i + 1]) return(res)}# 调用函数f &lt;- textConnection("&gt;abc\nACGTACGTACGT\n&gt; def\nAAATTTGGGCCC\n")read_fasta(f)</td></tr><tr><td>数据排序</td><td>按特定列排序数据框</td><td># 按年龄排序sorted_data &lt;- df[order(df$age), ]</td></tr><tr><td>数据过滤</td><td>根据条件过滤数据框中的行</td><td># 过滤年龄大于 30 的数据filtered_data &lt;- subset(df, age &gt; 30)</td></tr><tr><td rowspan="2">读取数据</td><td rowspan="2">读取 CSV 文件和 Excel文件</td><td># 读取 CSV 文件data &lt;- read.csv("data.csv")</td></tr><tr><td># 读取 Excel 文件library(readxl)data &lt;- read_excel("data.xlsx")</td></tr><tr><td rowspan="2">写入数据</td><td rowspan="2">写入 CSV 文件和 Excel文件</td><td># 写入 CSV 文件write.csv(data_frame, "output.csv")</td></tr><tr><td># 写入 Excel 文件library(writexl)write.xlsx(data_frame, "output.xlsx")</td></tr></table>
+
+## 13.2.3.5 数据选择与操作
+
+R 语言中使用中括号（[]）进行数据的提取，它支持所有基本的数据结构，向量和列表可通过中括号提取相应位置的子集。如果是命名向量或列表，可以使用名字来提取子集。
+
+```txt
+n <- 1:5
+names(n) <- letters[1:5]
+n[c(1,3)]
+n[c("a", "d")]
+y <- list(num=n, char = LETTERS[1:3], f = sum)
+y[1:2]
+y['f']
+```
+
+同样地中括号也支持矩阵和数据框，两者都是表格样的数据，中括号中可以指定行和列来获取相应位置的元素，如果只指定行或列，则会抽取出整行或整列。
+
+```r
+# 创建数据框
+df <- data.frame(
+    name = c("Alice", "Bob", "Charlie"),
+    age = c(25, 30, 35),
+    score = c(90, 85, 88)
+)
+# 选择列
+name_column <- df\$name
+# 选择行
+first_row <- df[1, ]
+# 选择特定元素
+element <- df[1, "name"]
+```
+
+另一方面，矩阵是以向量为基础的，可以使用向量的形式来提取数据，而数据框是以列表来实现的，可以使用列表的方式来提取数据:
+
+```txt
+df [2]
+```
+
+列表的数据较为复杂，使用中括号提取得到的仍是列表，如果想要提取列表某一元素的具体值，则可以使用双中括号（[[]]），例如:
+
+```json
+y[2]
+y[[2]]
+```
+
+此处使用中括号,提取子集,即长度为1的列表,而使用双中括号,则返回这一元素的具体值,即一个向量。如果列表是命名的,中括号和双中括号均支持使用名字来提取数据,名字必须是完美匹配,不然会返回NULL值。命名列表还可以使用美元符号\$来提取数据,作用与双中括号一样,但名字支持部分匹配。
+
+```txt
+y[['num']]
+y[['n']]
+y$num
+y$n
+```
+
+需要注意的是，在R语言中，数值运算（加、减、乘、除等）、关系运算（大于、小于和等于）、逻辑运算（与、或、非等）均支持向量化运算，运算的优先级是先进行数值运算，再进行关系运算，最后进行逻辑运算，使用括号来明确运算顺序，会让代码的可读性更强一些，也更不容易出错。
+
+下面以一个例子来展示，假如需要求100以内可整除3或5数值的加和，不使用向量化运算的情况下，可以使用for循环:
+
+```r
+x <- 1:100
+total <- 0
+for (i in x) {
+    if (i %% 3 == 0 || i %% 5 == 0) {
+        total = total + i
+    }
+}
+total
+```
+
+如果使用向量化运算，代码会变得非常简洁:
+
+```erlang
+sum(x[x %% 3 == 0 | x %% 5 == 0])
+```
+
+这个代码首先进行数值运算，x%%3对1～100的数值进行求模计算，再进行关系运算，判断所得到的模是否等于0，得到TRUE或FALSE的逻辑值，此处得到的是数值是否能整除3。以同样的方式得到数值是否能整除5。最后对这两个长度为100的逻辑向量进行逻辑运算，此处使用|求或，也是向量化运算，为TRUE的位置相应的数值要么能整除3，要么能整除5。通过[]把相应位置的数值抽取出来，用sum()函数进行求和。
+
+## 13.2.3.6 管道操作符
+
+R 从 4.1.0 版本开始支持原生管道操作符 ( $|>$ )。在此之前，管道操作通常通过 dplyr 包的 “%>%” 运算符来实现。学习了前面 Shell 编程，对这一概念应该不陌生，它能够将管道操作符左边函数的输出重定向为右边函数的输入，这样可以减少嵌套函数调用，或者是减少定义中间变量，有助于提高代码的可读性。
+
+```txt
+x |> sqrt() |> log2() |> sum()
+```
+
+这一例子对 $1 \sim 100$ 的整数进行开方，再取对数，最后进行加和。使用管道的可读性更强，更符合人的思维逻辑。
+
+使用原生管道操作符的一个好处是避免了对外部包的依赖，这在需要简化环境配置和提高代码兼容性时非常有用。而 dplyr 的管道操作符则提供了丰富的操作功能，并在 R 社区中得到广泛应用。
+
+```r
+# 安装并加载dplyr包
+install.packages("dplyr")
+library(dplyr)
+
+# dplyr管道操作符示例
+result <- mtcars %>%                      # 管道操作
+select(mpg, cyl, disp) %>%          # 选择特征
+subset(cyl == 4) %>%                  # 筛选数据
+summarise(mean_mpg = mean(mpg)) # 汇总统计
+print(result)
+```
+
+## 13.2.3.7 强大统计分析能力
+
+R 语言以专业的统计分析能力著称，提供了强大的统计计算和数据分析工具，广泛用于各类统计分析任务，包括描述性统计、假设检验、相关分析、回归分析、聚类分析、时间序列分析等（表 13-7）。
+
+表 13-7 R 统计分析功能
+
+<table><tr><td>统计分析类型</td><td>功能描述</td><td>示例代码</td></tr><tr><td>描述性统计</td><td>计算基本的描述性统计量,如均值、中位数、标准差等</td><td>data &lt;- mtcarssummary(data)mean(data$mpg)median(data$mpg)sd(data$mpg)</td></tr><tr><td rowspan="2">假设检验</td><td rowspan="2">进行t检验、卡方检验等假设检验</td><td># t 检验t.test(mpg ~ am, data = mtcars)</td></tr><tr><td># 卡方检验chisq.test(table(mtcars$cyl, mtcars$gear))</td></tr><tr><td>相关分析</td><td>计算变量之间的相关系数,并进行相关检验</td><td>cor(mtcars$mpg, mtcars$wt)cor.test(mtcars$mpg, mtcars$wt)</td></tr><tr><td>回归分析</td><td>进行线性回归、多元回归等回归分析</td><td># 线性回归lm_model &lt;- lm(mpg ~ wt + hp, data = mtcars)summary(lm_model)</td></tr><tr><td>聚类分析</td><td>进行层次聚类、K-均值聚类等聚类分析</td><td># K-均值聚类kmeans_result &lt;- kmeans(scale(mtcars[, c("mpg", "hp")]), centers = 3)kmeans_result# 层次聚类dist_matrix &lt;- dist(scale(mtcars[, c("mpg", "hp")]))hclust_result &lt;- hclust(dist_matrix)plot(hclust_result)</td></tr><tr><td>时间序列分析</td><td>进行时间序列建模、分解等分析</td><td># 时间序列分解ts_data &lt;- ts(AirPassengers, frequency = 12)decomposed_ts &lt;- decompose(ts_data)plot(decomposed_ts)# ARIMA 建模library(forecast)arima_model &lt;- auto.arima(AirPassengers)forecast_result &lt;- forecast(arima_model)plot(forecast_result)</td></tr></table>
+
+## 13.2.3.8 丰富的数据可视化功能
+
+数据可视化是生物信息研究中非常重要的一个环节。所谓“一图胜千言”，好的数据可视化可以更加清晰地将生物学数据呈现出来，从而讲好生物学故事。R语言的另外一个优势在于它提供丰富的数据可视化功能。前面介绍的基本数据结构基本上都可以通过plot()等相关函数进行图形化展示，R语言的绘图包也非常多样化，包括lattice、grid、gridExtra和plotly等。
+
+当前最流行的是基于图形语法的 ggplot2 包及其大量扩展包，ggplot2 是基于 grid 绘图包的一种图形语法的实现，可以绘制各式各样的图形。ggplot2 可视化的基本元素主要有 3 个:数据、几何对象和坐标系统。数据默认支持数据框，当然可以扩展为其他的数据类型，如在 ggtree 包中，扩展了 ggplot() 接受树对象作为输入。坐标系统一般也是使用默认的笛卡尔坐标系，少数情况会转换为极坐标进行可视化。几何对象则定义了可视化的图形，如 geom\_point() 画散点图、geom\_text() 画出文本、geom\_boxplot() 画出箱式图，而 geom\_violin() 画出小提琴图等。ggplot2 定义了许多几何对象，使用相应的几何对象就可以画图相应的图形。几何对象中最主要的特征是美学映射和标尺，这也是诸多几何对象所拥有的共性。美学映射描述了变量到可视化特征的映射，如数据中某个变量拿来映射为点的大小，另外一个变量拿来映射为点的颜色等，包括坐标轴的映射，都是属于美学映射的范畴。而标尺描述了可视化特征（颜色、大小等）到具体数值上的转换。
+
+以 R 内置数据集 iris（鸢尾花）为例，这个数据集包括 3 种鸢尾花，各 50 组数据，包括萼片的长和宽以及花瓣的长和宽。下面的例子画出萼片和花瓣长度的散点图:
+
+```txt
+library(ggplot2)
+ggplot(data = iris) + geom_point(mapping = aes(x = Sepal.
+    Length, y = Petal.Length, color=Species))
+```
+
+这里传入 iris 数据集到 ggplot() 函数中，使用 geom\_point() 画散点图，在这一几何对象中传入美学映射，将萼片长度映射为 x 轴，花瓣长度映射为 y 轴，用物种映射为点的颜色。通过这样的指令，就画出了散点图。
+
+从图中可以看出不同物种的萼片和花瓣长度的大小差别明显，可以使用 geom\_boxplot() 来画出箱式图呈现数据分布:
+
+```r
+p <- ggplot(iris, aes(Species, Sepal.Length, fill=Species)) +
+    geom_boxplot()
+p
+```
+
+美学映射如果放在图层中，是图层所特有的映射，如果映射是多个图层中共有的，可以放到 ggplot() 函数中，这样相当于是全局设定。ggplot 画的图，可以存为对象，打印的时候，会渲染出相应的图。而这个 ggplot 对象，可以后续使用指令添加图层，更换标尺、应用主题等。标尺描述了可视化特征（如这里的颜色）到具体数值的转换，ggplot2 提供了一系列预设的标尺可以直接应用于图像中。例如，可以使用 viridis 配色方案来给上图上色:
+
+```txt
+p + scale_fill_viridis_d()
+```
+
+用户也可以手工指定标尺所对应的范围，如此处可以指定3种颜色来为3个物种上色。
+
+```txt
+p + scale_fill_manual(values = c("darkgreen", "blue",
+        "firebrick"))
+```
+
+通用调用不同的图层，可以画出不同类型的图形，而复杂的图形，可以通过图层的叠加来实现，如下面的例子，在箱式图上把原始数据给加上去:
+
+```txt
+p + geom_jitter()
+```
+
+geom\_jitter() 相比于 geom\_point()，为数据点添加了随机位移，相当于抖动了一个数据，以避免相同值的数据互相覆盖。
+
+ggplot2 还提供了强大的主题系统，把呈现数据和画图细节给分离开来，这样用户可以专注于呈现数据，随后有需要才调整画图的细节。并且 ggplot2 和扩展包提供了许多预设的主题，可以直接应用。此处使用 ggthemes 包中的华尔街日报主题。
+
+```r
+library(ggthemes)
+p <- p + scale_fill_wsj() + theme_wsj()
+p
+```
+
+用户可以基于预设的主题作为起点，在此基础上继续调整一些细节:
+
+```python
+p + theme(axis.text.x = element_text(angle=45, hjust=1,
+    color='blue'))
+```
+
+这一指令调整了 x 轴的文本，设置了角度、对齐方式和颜色。
+
+## 13.2.3.9 常用的生物信息学软件包
+
+到目前为止，有大量的生物信息学软件包都是基于 R 语言开发的，用于处理各种复杂的生物学数据。下面举例其中几例。
+
+① Bioconductor Bioconductor 是一个开放资源，为生物信息学和基因组学研究提供了丰富的软件工具和数据集。它包含了众多相关软件包，涵盖了从序列分析到基因表达分析的各种应用。
+② 序列数据处理 Biostrings 包可以快速地处理生物序列信息，包括计算 GC 含量、查找 motif 等。并且 Bioconductor 还提供了一些物种的全基因序列数据包，这些数据都是基于 Biostrings 构建，称之为 BSgenome 包。使用统一的数据结构来存储，也方便使用统一的方式来处理数据。
+③ 基因组区间计算 基因组区间的表征和计算是非常重要的，二代测序读长比对到参考基因组，得到读长在基因组上的匹配位置，结合基因在基因组上的位置信息，这是转录组数据进行基因表达定量的基础，表观基因组也依赖于修饰位点、结合区间、上下游注释等区间信息的运算。Bioconductor 提供了 3 个核心包 IRanges、GenomicRanges 和 GenomicFeatures 用于表征基因组区间数据，以及提供了相应的操作（如求重叠区域）。
+④ FASTQ 和 BAM 文件操作 针对短序列读长二代测序，Bioconductor 也提供了一系列的包进行数据的操作，Rsamtools 提供了 BAM 文件的读取而 ShortRead 则提供了 FASTAQ 文件的读取，GenomicAlignments 包提供了数据结构用于表征基因组比对的结果，以及提供了相应的一些操作。
+⑤ 基因差异表达分析 DESeq2 用于转录组 RNA-Seq 数据的差异表达分析, 采用基于负二项分布的统计方法进行精确的差异基因表达检测。
+⑥ 数据可视化 ComplexHeatmap 包用于生成复杂的组学数据热图，支持多种注释和自定义功能，适合展示复杂的数据矩阵。
+
+## 13.2.4 Python 编程语言
+
+Python 是一种广泛使用的高级编程语言，以其简洁和易读的语法而闻名，它由吉多·范·罗苏姆（Guido van Rossum）于 1991 年首次发布（首个版本为 0.9.0）。自 2004 年以后，Python 的使用率呈线性增长。2011 年 1 月，它被 TIOBE 编程语言排行榜评为 2010 年度语言。2017 年，IEEE Spectrum 发布的研究报告显示，在 2016 年排名第三的 Python 在 2017 年已经成为世界上最受欢迎的语言。在 2019 年 9 月发布的 PYPL（PopularitY of Programming Language，编程语言流行指数）排行榜中，Python 一枝独秀。Python 的版本持续更新和迭代，最新版本是 3.12.4。实际上，Python 2 和 Python 3 共存的时间较长，过渡期从 Python 3.0 发布开始（2008 年 12 月 3 日），到 Python 2.7 的支持结束（2020 年 1 月 1 日），历时约 12 年。鼓励大家采用 Python 3 的版本进行学习和实践，以便享受最新功能和安全性。以下是 Python 的一些关键特点。
+
+① 易于学习和使用 Python 的语法简洁明了，容易上手，适合初学者和经验丰富的程序员。
+② 广泛的应用领域 Python 可以用于网站开发、数据分析、人工智能、机器学习、自动化脚本、科学计算、网络编程等多个领域。
+③ 丰富的标准库和第三方库 Python 提供了大量的标准库，同时也有许多第三方库和框架，如 NumPy、Pandas、Django、Flask 等，能够大大简化开发过程。
+④ 跨平台支持 Python 是一种跨平台语言，能够在各种操作系统上运行，包括 Windows、Mac OS 和 Linux。
+⑤ 解释型语言 Python 代码在执行前不需要编译，可以直接运行，这使得开发和调试过程更加高效。
+⑥ 动态类型 Python 使用动态类型，这意味着变量在运行时才确定类型，使得编程更加灵活。
+⑦ 社区支持 Python 有一个活跃的开发者社区，提供了丰富的学习资源、文档和支持。
+
+如今，Python 在数据科学、人工智能和网络开发等领域表现尤为突出，在生物信息学中也广泛使用。
+
+## 13.2.4.1 Python 安装与使用
+
+安装 Python 通常很容易，现在许多 Linux 和 UNIX 发行版都包含了最新的 Python。甚至有些 Windows 系统自带安装了 Python。建议大家通过 Anaconda 来安装并管理 Python 环境，Anaconda 是一款广泛使用的开源 Python 发行版，支持 Windows、Mac OS 和 Linux 等系统，安装非常容易。Anaconda 集成了 Python 解释器和许多常用的库和工具，包括 NumPy、Pandas、Matplotlib、SciPy、Scikit-learn 等。用户无须单独安装每个组件，只需要一次安装即可拥有一个功能齐全的工作环境，因此，特别适合数据科学、机器学习和大数据处理等领域。Anaconda 提供了强大的环境管理工具 Conda，用户可以轻松创建、切换和管理多个 Python 环境。这使得在不同项目中使用不同版本的 Python 和库变得非常方便，避免了依赖冲突问题。
+
+重要的是，Anaconda 集成了 JupyterLab、Jupyter Notebook、Spyder、PyCharm 等常用的开发工具，用户可以直接使用这些工具进行开发和分析。推荐大家采用 Jupyter 作为 Python 开发工具，Jupyter 是一个开源的交互式计算环境，支持多种编程语言，尽管最初是为 Python 设计的，Jupyter 现在支持超过 40 种编程语言，包括 R、Julia、JavaScript 和 Scala。其核心组件是 Jupyter Notebook 和 Jupyter Lab，这两个工具为数据科学、学术研究和教育提供了一个强大的平台。Jupyter 支持用户在浏览器中创建和分享包含代码、文本、方程式和可视化内容的文档，非常适合探究式学习。此外，运行代码的输出结果，包括图像、表格和交互式图表，可以直接显示在文档中，非常适合数据分析和报告。
+
+## 13.2.4.2 Python包的安装与使用
+
+在 Python 中，模块（module）和包（package）是组织和管理代码的重要概念，有助于提高代码的可维护性和重用性。模块是一个 Python 文件，其中包含函数、类和变量的定义以及可执行代码。包是一个包含多个模块的目录，可以避免模块名冲突问题。一个包就是一个文件夹，包名就是文件夹名。Python 2 要求包名文件夹下必须包含一个 \_\_init\_\_.py 文件来表示该目录是一个包，Python3 摒弃了这个要求。
+
+Python 包可以通过包管理器（如 pip 和 Conda）来安装。pip 是 Python 的标准包管理器，适用于安装和管理 Python 包；而 Conda 是 Anaconda 发行版中的包管理器，适用于 Python 和其他语言的包管理。例如，要安装 NumPy 和 Pandas 包，可以运行:
+
+```txt
+pip install numpy # 通过pip命令安装
+conda install numpy # 通过conda命令安装
+```
+
+模块可以通过 import 语句在其他 Python 程序中使用，也可以使用 “from ...import...” 语句从模块中导入特定的函数或类。例如，导入 NumPy，创建数组并计算均值:
+
+```python
+import numpy as np
+# 创建一个NumPy数组
+arr = np.array([1, 2, 3, 4, 5])
+# 计算数组的均值
+mean = np.mean(arr)
+print(f'均值: {mean}')
+```
+
+使用 pip uninstall &lt;package_name&gt; 或者 conda remove &lt;package_name&gt; 命令卸载包。此外，如果遇到版本冲突问题，可以尝试创建 Conda 虚拟环境来隔离项目环境。
+
+## 13.2.4.3 Python基本语法
+
+## (1) Python 注释
+
+在 Python 编程中，注释是代码中的解释性文字，不会被解释器执行。注释的主要目的是帮助开发者理解代码逻辑，提供有关代码用途和功能的信息，以及在调试和维护代码时提供指导。Python 支持单行注释和多行注释，其中，单行注释以 # 符号开始，注释内容从 # 符号后开始，直到行末；多行字符串注释通常用三重引号''' 或"'""包围。多行字符串注释在函数或类定义中也经常用作文档字符串（docstring），用于提供函数、类或模块的说明。
