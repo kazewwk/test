@@ -6,13 +6,13 @@
 
 识别结果保留原件供核对，未宣称 OCR 和公式经过逐字人工校对。
 
-完成 4/29 本；[逐书 ZIP Release](https://github.com/kazewwk/test/releases/tag/mineru-advanced-textbooks-2026-10-16)。
+完成 5/29 本；[逐书 ZIP Release](https://github.com/kazewwk/test/releases/tag/mineru-advanced-textbooks-2026-10-16)。
 
 | 教材 | 页数 | 状态 |
 | --- | ---: | --- |
 | 101计划 数学分析(全三册) (楼红卫, 杨家忠,_ | 856 | 待完成 |
 | 101计划有机化学(上册) (张丹维 王彦广 裴坚) | 351 | 待完成 |
-| 101计划有机化学(下册) (张丹维 王彦广 裴坚) | 331 | 待完成 |
+| [101计划有机化学(下册) (张丹维 王彦广 裴坚)](03_organic-chemistry-101-vol2/) | 331 | 已完成 |
 | 101计划核心教材 生物信息学 (主编 陈铭 吕晖) | 622 | 待完成 |
 | [101计划概率论(下册) (李增沪,张梅,何辉)](05_probability-101-vol2/) | 246 | 已完成 |
 | Bioinformatics Algorithms A_ | 380 | 待完成 |
