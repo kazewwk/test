@@ -1,0 +1,4144 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "modified_at": "2025-09-22T18:16:52+08:00",
+      "page_count": 878,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 144,
+          "width_pt": 594.5399780273438,
+          "height_pt": 783.1799926757812
+        },
+        {
+          "page_idx": 145,
+          "width_pt": 594.5399780273438,
+          "height_pt": 783.1799926757812
+        },
+        {
+          "page_idx": 146,
+          "width_pt": 592.5599975585938,
+          "height_pt": 781.2000122070312
+        },
+        {
+          "page_idx": 147,
+          "width_pt": 592.739990234375,
+          "height_pt": 781.2000122070312
+        },
+        {
+          "page_idx": 148,
+          "width_pt": 594.1799926757812,
+          "height_pt": 780.2999877929688
+        },
+        {
+          "page_idx": 149,
+          "width_pt": 594.3599853515625,
+          "height_pt": 780.2999877929688
+        },
+        {
+          "page_idx": 150,
+          "width_pt": 593.280029296875,
+          "height_pt": 783.1799926757812
+        },
+        {
+          "page_idx": 151,
+          "width_pt": 593.280029296875,
+          "height_pt": 783.1799926757812
+        },
+        {
+          "page_idx": 152,
+          "width_pt": 592.739990234375,
+          "height_pt": 780.8400268554688
+        },
+        {
+          "page_idx": 153,
+          "width_pt": 592.9199829101562,
+          "height_pt": 780.6599731445312
+        },
+        {
+          "page_idx": 154,
+          "width_pt": 592.5599975585938,
+          "height_pt": 781.2000122070312
+        },
+        {
+          "page_idx": 155,
+          "width_pt": 592.5599975585938,
+          "height_pt": 780.8400268554688
+        },
+        {
+          "page_idx": 156,
+          "width_pt": 594.719970703125,
+          "height_pt": 782.6400146484375
+        },
+        {
+          "page_idx": 157,
+          "width_pt": 594.719970703125,
+          "height_pt": 782.6400146484375
+        },
+        {
+          "page_idx": 158,
+          "width_pt": 594.1799926757812,
+          "height_pt": 781.9199829101562
+        },
+        {
+          "page_idx": 159,
+          "width_pt": 594.1799926757812,
+          "height_pt": 781.5599975585938
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 144,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.554,
+            0.044,
+            0.778,
+            0.058
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.3 阿贝成像理论与晶体学中的相位问题"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.944,
+            0.046,
+            0.967,
+            0.057
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "121"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.11,
+            0.086,
+            0.501,
+            0.353
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "出的光线经过准直透镜或准直镜筒照射到样品上，在后焦面形成一个中间图像，这个中间图像可以看作是样品的傅里叶变换。然后，物镜再对这个中间图像进行反傅里叶变换，实现对样品的收集、放大和成像。然而，在X射线成像中，我们面临着一个挑战。由于X射线的折射率几乎为1.0，这意味着X射线几乎不会被透镜聚焦。因此，在X射线系统中，我们只能获得后焦面的数据，也就是通过探测器记录到的X射线强度信息。当我们试图通过反傅里叶变换将这些数据转换回实空间时，我们只能得到振幅信息，相位信息则丢失了。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.11,
+            0.358,
+            0.501,
+            0.737
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "然而，相位信息至关重要。如图4-13所示，如果我们将两位晶体学家、诺贝尔奖获得者赫伯特·豪普特曼（Herbert A. Hauptman，1917—2011）和杰罗姆·卡尔勒（Jerome Karle，1918—2013）照片的相位互换，最终的图像将更像哪一个，完全取决于相位信息。这个例子清楚地展示了相位信息在图像重建中的重要性；此外，丢失的相位信息也是晶体学中所谓的“相位问题”的核心。如何从仅有的衍射数据中恢复相位信息，成为晶体学中的一个重要问题。卡尔勒和豪普特曼发展了解决小分子相位问题的直接法（见4.3.3.2节），并因此获得了1985年的诺贝尔化学奖。马克斯·佩鲁茨（Max Ferdinand Perutz，1914—2002）和约翰·肯德鲁（John Cowdery Kendrew，1917—1997）发明了同晶置换法，解决了蛋白质晶体的相位问题，并因此获得了1962年的诺贝尔化学奖。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.11,
+            0.765,
+            0.303,
+            0.786
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.3.2 晶体的衍射"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.11,
+            0.808,
+            0.5,
+            0.848
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "理想晶体是通过单胞密度和无限延伸的周期性平移点阵的卷积来描述的三维周期性结构"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 6,
+          "bbox": [
+            0.527,
+            0.088,
+            0.969,
+            0.34
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 6,
+              "bbox": [
+                0.527,
+                0.088,
+                0.969,
+                0.34
+              ],
+              "image_path": "images/page_144_image_6.jpg",
+              "content": "可见光\n电子束\n透镜/物镜\n后焦面\nX射线\n晶体\n衍射线"
+            },
+            {
+              "type": "image_caption",
+              "index": 7,
+              "bbox": [
+                0.521,
+                0.349,
+                0.811,
+                0.366
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图4-12 阿贝成像理论和晶体学相位问题"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "image",
+          "index": 8,
+          "bbox": [
+            0.607,
+            0.39,
+            0.88,
+            0.684
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 8,
+              "bbox": [
+                0.607,
+                0.39,
+                0.88,
+                0.684
+              ],
+              "image_path": "images/page_144_image_8.jpg",
+              "content": "Four black-and-white portraits of men in formal attire, no visible text or symbols"
+            },
+            {
+              "type": "image_caption",
+              "index": 9,
+              "bbox": [
+                0.521,
+                0.695,
+                0.719,
+                0.71
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图4-13 相位信息的重要性"
+                }
+              ]
+            }
+          ],
+          "sub_type": "natural_image"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.52,
+            0.713,
+            0.968,
+            0.835
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第一排是卡尔勒（左）和豪普特曼（右）的照片，他们因为在解决小分子晶体相位问题上的工作而获得了诺贝尔奖。我们可以将这些照片视为密度图，并计算它们的傅里叶变换，以获得振幅和相位信息。如果我们将豪普特曼照片的相位与卡尔勒照片的振幅结合起来，我们就得到了左下方的图像。右下方的图像则将卡尔勒的相位与豪普特曼的振幅结合起来。显然，相位决定了我们所观察到的内容。当我们考虑使用原子模型的相位时，模型相位的偏差也就非常令人担忧。"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.108,
+            0.852,
+            0.777,
+            0.894
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "（图4-14）。针对无限延伸的晶格，整个晶体的电子密度 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\rho_{\\text{晶}}(r)"
+            },
+            {
+              "type": "text",
+              "content": " 可以表示为单胞的电子密度 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\rho_{\\text{单胞}}(r)"
+            },
+            {
+              "type": "text",
+              "content": " 与沿着 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a"
+            },
+            {
+              "type": "text",
+              "content": "、"
+            },
+            {
+              "type": "equation_inline",
+              "content": "b"
+            },
+            {
+              "type": "text",
+              "content": "、"
+            },
+            {
+              "type": "equation_inline",
+              "content": "c"
+            },
+            {
+              "type": "text",
+              "content": " 方向周期性重复的点阵的卷积:"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 145,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.034,
+            0.047,
+            0.057,
+            0.059
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "122"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.223,
+            0.046,
+            0.307,
+            0.06
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4 晶体学导论"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 3,
+          "bbox": [
+            0.22,
+            0.088,
+            0.889,
+            0.284
+          ],
+          "content": [
+            {
+              "type": "image_caption",
+              "index": 2,
+              "bbox": [
+                0.03,
+                0.09,
+                0.21,
+                0.124
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图4-14 晶体的周期平移性形成"
+                }
+              ]
+            },
+            {
+              "type": "image_body",
+              "index": 3,
+              "bbox": [
+                0.22,
+                0.088,
+                0.889,
+                0.284
+              ],
+              "image_path": "images/page_145_image_3.jpg",
+              "content": "周期平移点阵\nδ (r-na-mb-pc)\n卷积\n⊗\n单胞\n=\nb\na\nρ单胞(r) = ρ晶(r)"
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.374,
+            0.307,
+            0.89,
+            0.343
+          ],
+          "image_path": "images/page_145_equation_4.jpg",
+          "content": "\\rho_ {\\mathrm{晶}} (r) = \\sum_ {n = - \\infty} ^ {\\infty} \\sum_ {m = - \\infty} ^ {\\infty} \\sum_ {p = - \\infty} ^ {\\infty} \\rho_ {\\mathrm{单胞}} (r) * \\delta (r - n a - m b - p c)  . \\tag {4-1}"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.22,
+            0.35,
+            0.89,
+            0.435
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a"
+            },
+            {
+              "type": "text",
+              "content": " 、 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b"
+            },
+            {
+              "type": "text",
+              "content": " 、 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c"
+            },
+            {
+              "type": "text",
+              "content": " 是晶胞矢量， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n"
+            },
+            {
+              "type": "text",
+              "content": " 、 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "m"
+            },
+            {
+              "type": "text",
+              "content": " 和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " 是整数，代表实空间的分数坐标， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\delta"
+            },
+            {
+              "type": "text",
+              "content": " 是狄拉克"
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\delta"
+            },
+            {
+              "type": "text",
+              "content": " 函数。根据阿贝成像理论，晶体的弹性相干散射是对 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\rho_{\\text{晶}}(r)"
+            },
+            {
+              "type": "text",
+              "content": " 的傅里叶变换。根据傅里叶卷积定理，两个函数的卷积的傅里叶变换是单个函数的傅里叶变换的乘积（知识窗4-5），故有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.342,
+            0.449,
+            0.766,
+            0.479
+          ],
+          "image_path": "images/page_145_equation_6.jpg",
+          "content": "\\hat {F} \\left[ \\rho_ {\\mathrm{晶}} (r) \\right] = \\sum_ {n} \\sum_ {m} \\sum_ {p} \\hat {F} \\left[ \\rho_ {\\mathrm{单胞}} (r) \\right] \\hat {F} \\left[ \\delta (r - n a - m b - p c) \\right] _ {\\circ}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.221,
+            0.486,
+            0.889,
+            0.526
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "实空间中的狄拉克 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\delta (r - na - mb - pc)"
+            },
+            {
+              "type": "text",
+              "content": " 函数的傅里叶变换是倒易空间中的狄拉克"
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\delta (S - ha^{*} - kb^{*} - lc^{*})"
+            },
+            {
+              "type": "text",
+              "content": " 函数，代表了倒易晶格，其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h,k,l"
+            },
+            {
+              "type": "text",
+              "content": " 是倒易空间的分数坐标:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.346,
+            0.54,
+            0.89,
+            0.569
+          ],
+          "image_path": "images/page_145_equation_8.jpg",
+          "content": "\\hat {F} \\left[ \\rho_ {\\mathrm{晶}} (r) \\right] = \\hat {F} \\left[ \\rho_ {\\mathrm{单胞}} (r) \\right] \\sum_ {n} \\sum_ {m} \\sum_ {p} \\delta (S - h a ^ {*} - k b ^ {*} - l c ^ {*})  . \\tag {4-2}"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.221,
+            0.577,
+            0.889,
+            0.615
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "因此，晶体的散射 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{F} [\\rho_{\\text{晶}}(r)]"
+            },
+            {
+              "type": "text",
+              "content": " 与单胞的散射 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{F} [\\rho_{\\text{单胞}}(r)]"
+            },
+            {
+              "type": "text",
+              "content": " 成正比，并且仅在离散的散射矢量方向上发生:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.481,
+            0.62,
+            0.625,
+            0.638
+          ],
+          "image_path": "images/page_145_equation_10.jpg",
+          "content": "S = h a ^ {*} + k b ^ {*} + l c ^ {*} \\circ"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.221,
+            0.643,
+            0.888,
+            0.662
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "实验测量了倒易空间的衍射振幅 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "|F(hkl)|"
+            },
+            {
+              "type": "text",
+              "content": " 后，再重现相位信息 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi (hkl)"
+            },
+            {
+              "type": "text",
+              "content": "，通过反傅里"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 12,
+          "bbox": [
+            0.047,
+            0.723,
+            0.134,
+            0.74
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "知识窗4-5"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 13,
+          "bbox": [
+            0.42,
+            0.755,
+            0.502,
+            0.773
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "卷积"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.046,
+            0.791,
+            0.45,
+            0.831
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "卷积是一种积分变换的数学方式，两个时间域函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h(t)"
+            },
+            {
+              "type": "text",
+              "content": " 和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(t)"
+            },
+            {
+              "type": "text",
+              "content": " 的卷积一般表示为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.16,
+            0.844,
+            0.336,
+            0.873
+          ],
+          "image_path": "images/page_145_equation_15.jpg",
+          "content": "g * h = \\int_ {- \\infty} ^ {\\infty} g (\\tau) h (t - \\tau) \\mathrm{d} \\tau 。"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.078,
+            0.881,
+            0.45,
+            0.898
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "卷积的物理意义是:一个函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g"
+            },
+            {
+              "type": "text",
+              "content": " （如:晶胞）在另一"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.47,
+            0.792,
+            0.876,
+            0.875
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "个函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h"
+            },
+            {
+              "type": "text",
+              "content": " （如:平移点阵）上的加权叠加。卷积定理是傅里叶变换的一个重要性质，它表明两个函数在时间域的卷积对应于频率域中的乘积，如果 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F"
+            },
+            {
+              "type": "text",
+              "content": " 表示傅里叶变换，那么"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 18,
+          "bbox": [
+            0.587,
+            0.881,
+            0.757,
+            0.898
+          ],
+          "image_path": "images/page_145_equation_18.jpg",
+          "content": "F (g * h) = F (g) \\times F (h) _ {\\circ}"
+        }
+      ]
+    },
+    {
+      "page_idx": 146,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.548,
+            0.042,
+            0.772,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.3 阿贝成像理论与晶体学中的相位问题"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.939,
+            0.043,
+            0.964,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "123"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.085,
+            0.531,
+            0.103
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "叶变换就可以获得晶胞内的电子密度分布函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\rho (xyz)"
+            },
+            {
+              "type": "text",
+              "content": " :"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.21,
+            0.115,
+            0.666,
+            0.145
+          ],
+          "image_path": "images/page_146_equation_3.jpg",
+          "content": "\\rho (x y z) = \\frac {1}{V} \\sum_ {h} \\sum_ {k} \\sum_ {l} | F (h k l) | \\cos 2 \\pi [ h x + k y + l z - \\phi (h k l) ] _ {\\circ}"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.105,
+            0.177,
+            0.387,
+            0.197
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.3.3 晶体相位求解的方法"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.105,
+            0.222,
+            0.774,
+            0.329
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "X射线晶体衍射实验中丢失的相位信息可以通过帕特森法（Patterson method）或直接法（direct method）求解。这两种方法常用于小分子晶体学的相位求解，或者蛋白质晶体学中重原子或者反常散射原子位置坐标的求解。Shelx程序包集成了帕特森法和直接法，是目前使用最广泛的结构分析软件，在我们研究晶体性质时发挥着至关重要的作用。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.139,
+            0.335,
+            0.254,
+            0.351
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(1) 帕特森法"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.106,
+            0.358,
+            0.771,
+            0.397
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由于相位信息无法通过实验直接观测到，阿瑟·帕特森（Arthur Lindo Patterson, 1902—1966）提出，直接对衍射强度进行傅里叶变换:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.225,
+            0.408,
+            0.653,
+            0.44
+          ],
+          "image_path": "images/page_146_equation_8.jpg",
+          "content": "P (r) = \\hat {F} ^ {- 1} (I (h)) = \\hat {F} ^ {- 1} (\\left| F (h) \\right| ^ {2}) = \\frac {1}{V} \\sum_ {h} \\left| F (h) \\right| ^ {2} \\mathrm{e} ^ {- 2 \\pi \\mathrm{i} h r} 。"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.106,
+            0.449,
+            0.155,
+            0.464
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "然而，"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.29,
+            0.47,
+            0.595,
+            0.508
+          ],
+          "image_path": "images/page_146_equation_10.jpg",
+          "content": "\\mid F (h) \\mid^ {2} = F (h) F ^ {*} (\\overline {{h}}) = \\sum_ {j = 1} ^ {N} \\sum_ {k = 1} ^ {N} f _ {j} f _ {k} \\mathrm{e} ^ {2 \\pi \\mathrm{i} h (r _ {j} - r _ {k})}"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.105,
+            0.515,
+            0.774,
+            0.578
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "正如上式所示， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "|F(h)|^2"
+            },
+            {
+              "type": "text",
+              "content": " 也可视为倒易空间中的结构因子。在实空间中，它是由位于位置 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r_j - r_k"
+            },
+            {
+              "type": "text",
+              "content": " 的散射体和散射因子 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f_{j}f_{k}"
+            },
+            {
+              "type": "text",
+              "content": " 的结构构成。帕特森函数是根据晶格中原子位置之间的差异计算得出的一种函数（图4-15），具有以下特点:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 12,
+          "bbox": [
+            0.14,
+            0.584,
+            0.774,
+            0.624
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 13,
+              "bbox": [
+                0.14,
+                0.584,
+                0.397,
+                0.601
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "① 帕特森晶胞与晶体晶胞相同。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 14,
+              "bbox": [
+                0.14,
+                0.606,
+                0.774,
+                0.624
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "② 由晶胞中 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "N"
+                },
+                {
+                  "type": "text",
+                  "content": " 个原子形成的晶体的帕特森函数将显示 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "N^2"
+                },
+                {
+                  "type": "text",
+                  "content": " 个峰值（即所有可能的"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "image",
+          "index": 15,
+          "bbox": [
+            0.109,
+            0.644,
+            0.761,
+            0.917
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 15,
+              "bbox": [
+                0.109,
+                0.644,
+                0.761,
+                0.917
+              ],
+              "image_path": "images/page_146_image_15.jpg",
+              "content": "```mermaid\ngraph LR\n  A[\"Molecular Structure\"] -->|\"a\\nb\"| B[\"Intermediate State\"]\n  C[\"Molecular Structure\"] -->|\"a\\nb\"| D[\"Intermediate State\"]\n  E[\"Molecular Structure\"] -->|\"a\\nb\"| F[\"Final Lattice Structure: p2mm\"]\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 16,
+              "bbox": [
+                0.786,
+                0.645,
+                0.966,
+                0.679
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图4-15 晶体与帕特森函数的关系"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        }
+      ]
+    },
+    {
+      "page_idx": 147,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.038,
+            0.044,
+            0.062,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "124"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.229,
+            0.044,
+            0.312,
+            0.056
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4 晶体学导论"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.227,
+            0.087,
+            0.793,
+            0.105
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "原子间矢量），即使不考虑每个原子与自身的矢量，峰值数量也为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N^2 - N"
+            },
+            {
+              "type": "text",
+              "content": "。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 3,
+          "bbox": [
+            0.226,
+            0.11,
+            0.894,
+            0.195
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.226,
+                0.11,
+                0.894,
+                0.15
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "③ 峰值的高度与参与原子的原子数的乘积成比例，这在检测结构中较重原子时提供了很大的优势。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.226,
+                0.155,
+                0.894,
+                0.195
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "④ 帕特森函数的对称性可以通过去除每个对称操作的平移部分并添加一个中心反演进行推导。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.225,
+            0.201,
+            0.894,
+            0.309
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "利用帕特森重叠方法（Patterson superimposition method），可以获得单个晶体的电子密度分布（图4-16），其中包括求和函数、乘积函数以及广泛使用的最小值函数。在蛋白质晶体学软件SOLVE中，寻找重原子或者反常散射原子位置的方法是通过帕特森最小值函数重叠法实现的，简称为HASSP。在Shelxd程序首次应用双空间迭代法之前，初始原子位置的种子生成也可以通过帕特森最小值函数重叠法获得。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.225,
+            0.314,
+            0.894,
+            0.422
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "帕特森法被用于解析多个含有重原子的晶体结构，如铂酞菁（platinum phthalocyanin）和胆固醇碘化物结构。尽管一些晶体中存在重原子，但它们并未占据主导地位，这对于使用帕特森法解析结构构成了挑战。多罗西·霍奇金（Dorothy Crowfoot Hodgkin，1910—1994）凭借毅力和化学直觉，成功利用帕特森法解析了具有挑战性的结构，如青霉素和维生素 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B_{12}"
+            },
+            {
+              "type": "text",
+              "content": " ，从而获得了1964年的诺贝尔化学奖。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.26,
+            0.427,
+            0.357,
+            0.444
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(2) 直接法"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.225,
+            0.449,
+            0.894,
+            0.626
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "然而，大多数有机分子的原子（如碳、氮和氧，氢的散射强度较弱通常可以忽略不计）仅展现出近似相等的散射强度，因此，引入重原子并不总是那样简单。幸运的是，随着晶体学直接法的进步，对解决相位问题的需求得到了满足。直接法的发展可以追溯到哈克-卡斯珀（Harker-Kasper）不等式和卡尔勒-豪普特曼（Karle-Hauptman）行列式不等式的早期研究。通过塞尔（Sayre）、科克伦（Cochran）和查哈里阿森（Zachariasen）引入的符号关系，以及豪普特曼和卡尔勒撰写的美国晶体学会专论，这些方法在处理中心对称结构时的适用范围显著扩大。1952年，塞尔基于原子性，推导出了适用于中心对称和非中心对称结构的结构因子 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(h)"
+            },
+            {
+              "type": "text",
+              "content": " 、 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(h')"
+            },
+            {
+              "type": "text",
+              "content": " 和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(h-h')"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.034,
+            0.651,
+            0.214,
+            0.683
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "图4-16 帕特森函数重叠法"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.033,
+            0.687,
+            0.214,
+            0.879
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "将（A）中帕特森函数复制一份，沿着红色箭头平移到原点，然后与原始的帕特森函数重叠，得到（B）。在（B）中抹去单独的、较低的峰，得到（C）。再次复制原始的帕特森函数（A），并沿着绿色的箭头平移，然后与（C）重叠，得到（D）。清除较低的峰，就可以获得晶体的结构。"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 12,
+          "bbox": [
+            0.234,
+            0.653,
+            0.892,
+            0.915
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 12,
+              "bbox": [
+                0.234,
+                0.653,
+                0.892,
+                0.915
+              ],
+              "image_path": "images/page_147_image_12.jpg",
+              "content": "Diagram illustrating molecular structure changes with labeled components (A), (B), (C), and (E)"
+            }
+          ],
+          "sub_type": "chemical"
+        }
+      ]
+    },
+    {
+      "page_idx": 148,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.561,
+            0.042,
+            0.775,
+            0.056
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.4 劳厄衍射、布拉格单色仪法的区别"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.939,
+            0.042,
+            0.964,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "125"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.107,
+            0.086,
+            0.775,
+            0.194
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "之间的确切方程，即塞尔等式，其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h = (h, k, l)"
+            },
+            {
+              "type": "text",
+              "content": " 是倒易矢量。1950年，卡尔勒和豪普特曼提出了基于正定性行列式因子的结构因子 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(h), F(h')"
+            },
+            {
+              "type": "text",
+              "content": " 和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(h - h')"
+            },
+            {
+              "type": "text",
+              "content": " 相位之间的关系:对于振幅足够大的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "|F(h)|"
+            },
+            {
+              "type": "text",
+              "content": "、"
+            },
+            {
+              "type": "equation_inline",
+              "content": "|F(h')|"
+            },
+            {
+              "type": "text",
+              "content": " 和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "|F(h - h')|"
+            },
+            {
+              "type": "text",
+              "content": " 的三元组，相位关系 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varphi(h) \\approx \\varphi(h') + \\varphi(h - h')"
+            },
+            {
+              "type": "text",
+              "content": " 大致成立。基于三相位不变量，最终推导出了一个著名的正切公式:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.311,
+            0.197,
+            0.564,
+            0.259
+          ],
+          "image_path": "images/page_148_equation_3.jpg",
+          "content": "\\tan \\varphi_ {h} = \\frac {\\sum_ {h ^ {\\prime}} \\kappa_ {h , h ^ {\\prime}} \\sin \\left(\\varphi_ {h ^ {\\prime}} + \\varphi_ {h - h ^ {\\prime}}\\right)}{\\sum_ {h ^ {\\prime}} \\kappa_ {h , h ^ {\\prime}} \\cos \\left(\\varphi_ {h ^ {\\prime}} + \\varphi_ {h - h ^ {\\prime}}\\right)} ,"
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.35,
+            0.266,
+            0.531,
+            0.286
+          ],
+          "image_path": "images/page_148_equation_4.jpg",
+          "content": "\\kappa_ {h, h ^ {\\prime}} = 2 \\sigma_ {3} \\sigma_ {2} ^ {- 3 / 2} E _ {h} E _ {h ^ {\\prime}} E _ {h - h ^ {\\prime}} \\circ"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.107,
+            0.29,
+            0.776,
+            0.444
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E_{h}"
+            },
+            {
+              "type": "text",
+              "content": " 是归一化结构因子。该公式以已知的部分相位为基础，通过使用三相位不变量关系式，可以推导出剩余的相位值。直到1964年，卡尔勒夫妇才使用他们的符号加法程序（symbolic addition）首次用直接法解决了第一个非中心对称结构。计算机的问世使得自动解决方法如MULTAN、SHELX成为解决小结构的主要工具。它们已成功解决了大量晶体结构的相位问题，从而使药物分子结构分析成为一种常规的研究手段。在后续的研究中，豪普特曼引入了双空间（dual space）的概念，这极大地增强了直接法的能力，使其可以解析包含更多原子的晶体结构。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.108,
+            0.448,
+            0.774,
+            0.489
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "1985年诺贝尔化学奖授予两位直接法先驱者豪普特曼和卡尔勒，这是对这些方法在晶体学特别是在科学领域中所获得重要性的认可。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.107,
+            0.538,
+            0.589,
+            0.563
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.4 劳厄衍射、布拉格单色仪法的区别"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.109,
+            0.583,
+            0.775,
+            0.647
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在晶体衍射实验中，一个关键的考虑是如何将倒易晶格点映射到厄瓦耳球的表面上，或者如何调整厄瓦耳球的半径，以便不同的衍射点能够落在其球面上。实现这一目标主要有两种方法:劳厄法和布拉格单色仪法。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.108,
+            0.675,
+            0.258,
+            0.695
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.4.1 劳厄法"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.107,
+            0.719,
+            0.777,
+            0.918
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "使用固定晶体和连续波长光谱（也称为白光辐射）的方法被称为劳厄法（Laue method）。在这种方法中，晶体保持静止，连续频谱的X射线照射在晶体上，不同的晶面会筛选出并偏转不同波长的X射线。在厄瓦耳球模型中，每一个波长都会形成一个厄瓦耳球，因此，连续波的波长将形成连续的多个厄瓦耳球，而晶体的倒易空间点是离散的。当某个倒易空间点接触到某个厄瓦耳球时，在相应方向上会发生衍射（图4-17）。然而，劳厄法存在一个主要挑战，即一张照片上记录了多种波长的衍射点，这可能导致衍射点过于密集，甚至有时会发生重叠，给结构分析带来困难。因此，这种方法通常只在需要快速收集衍射数据的特殊应用中使用，特别是在衍射受到某些方式影响的情况下（例如:微小的晶体或对氧气、湿度高度敏感的样品）。该方"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 149,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.037,
+            0.045,
+            0.06,
+            0.056
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "126"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.227,
+            0.045,
+            0.31,
+            0.057
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4 晶体学导论"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 3,
+          "bbox": [
+            0.037,
+            0.098,
+            0.212,
+            0.248
+          ],
+          "content": [
+            {
+              "type": "image_caption",
+              "index": 2,
+              "bbox": [
+                0.038,
+                0.088,
+                0.06,
+                0.102
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(A)"
+                }
+              ]
+            },
+            {
+              "type": "image_body",
+              "index": 3,
+              "bbox": [
+                0.037,
+                0.098,
+                0.212,
+                0.248
+              ],
+              "image_path": "images/page_149_image_3.jpg",
+              "content": "1/λmin\n1/λmax"
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "image",
+          "index": 5,
+          "bbox": [
+            0.264,
+            0.104,
+            0.442,
+            0.247
+          ],
+          "content": [
+            {
+              "type": "image_caption",
+              "index": 4,
+              "bbox": [
+                0.265,
+                0.089,
+                0.286,
+                0.102
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(B)"
+                }
+              ]
+            },
+            {
+              "type": "image_body",
+              "index": 5,
+              "bbox": [
+                0.264,
+                0.104,
+                0.442,
+                0.247
+              ],
+              "image_path": "images/page_149_image_5.jpg",
+              "content": "Grayscale abstract pattern with radial lines and a central dot (no text or symbols)"
+            },
+            {
+              "type": "image_caption",
+              "index": 6,
+              "bbox": [
+                0.033,
+                0.257,
+                0.339,
+                0.272
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图 4-17 劳厄衍射技术中的厄瓦耳球的构造"
+                }
+              ]
+            },
+            {
+              "type": "image_footnote",
+              "index": 7,
+              "bbox": [
+                0.033,
+                0.275,
+                0.446,
+                0.325
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "（A）最大球的半径为  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "1/\\lambda_{min}"
+                },
+                {
+                  "type": "text",
+                  "content": " ，最小球的半径为  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "1/\\lambda_{max}"
+                },
+                {
+                  "type": "text",
+                  "content": " 。分辨率球的半径为  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "1/d_{min}"
+                },
+                {
+                  "type": "text",
+                  "content": " 。在阴影区域内的倒易晶格点会引起衍射。（B）一幅劳厄衍射图像。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "natural_image"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.468,
+            0.088,
+            0.892,
+            0.355
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "法获得的优势主要是双重的。首先，由于单个图像上可以有比单色实验更多的衍射点，因此有可能在单个图像上获得一个有用的完整数据集。只要已知底层结构，劳厄实验收集的数据（可能只有 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "50\\% \\sim 70\\%"
+            },
+            {
+              "type": "text",
+              "content": " 的完整性）就足以明确识别配体。其次，由于同步辐射的衍射图样可以由单个电子束团的辐射形成，因此可以观察到非常短时间尺度上的变化，达到皮秒级别。在20世纪80年代中期到晚期，人们投入了相当大的努力来发展同步辐射上的劳厄晶体学，用于收集蛋白质数据。由于当时的样品几乎普遍处于室温，单色方法需要在数小时内收集多张衍射图像，然而晶体总是显示出明显的辐射损伤。单个劳厄曝光所关联的极短曝"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.225,
+            0.36,
+            0.611,
+            0.377
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "光时间和实质的完整性意味着可以避免这种情况。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.224,
+            0.382,
+            0.89,
+            0.468
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "处理劳厄实验的图像比使用单色辐射进行数据收集的图像要复杂得多，这主要是由于每个单独数据的波长依赖性。只要事先知道晶体对称性和单位细胞尺寸，这个困难就可以克服。目前同步辐射的主要实际问题是，鉴于处理数据的软件和计算资源的状态，全世界可用于该技术的光束线非常少。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 11,
+          "bbox": [
+            0.225,
+            0.496,
+            0.46,
+            0.516
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.4.2 布拉格单色仪法"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.224,
+            0.54,
+            0.892,
+            0.694
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "为了解决劳厄法中衍射点过于密集的问题，研究者们选择使用固定的厄瓦耳球，这需要选取特定的波长（单色辐射），并通过旋转晶体使不同的倒易晶格点进入衍射状态，此方法被称为单色法。晶体围绕与入射X射线束垂直的轴旋转，即单轴仪器中的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varphi"
+            },
+            {
+              "type": "text",
+              "content": " 轴和多圆仪器中的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\omega"
+            },
+            {
+              "type": "text",
+              "content": " 轴；将旋转轴如此定位的额外优点是可将盲区的尺寸最小化。这种方法被称为旋转法（rotation method）。旋转法是在大分子晶体学中记录衍射数据的最常用方法（图4-18）。在实际操作中，家用衍射仪通常使用波长为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1.5418\\AA"
+            },
+            {
+              "type": "text",
+              "content": " 的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{CuK}\\alpha"
+            },
+            {
+              "type": "text",
+              "content": " 射线作为入射光源。晶体被放置在测角仪上，并以恒定的速度进行旋转。在"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 13,
+          "bbox": [
+            0.034,
+            0.721,
+            0.482,
+            0.896
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 13,
+              "bbox": [
+                0.034,
+                0.721,
+                0.482,
+                0.896
+              ],
+              "image_path": "images/page_149_image_13.jpg",
+              "content": "1/λ\nO\n1/λ\nO"
+            },
+            {
+              "type": "image_caption",
+              "index": 14,
+              "bbox": [
+                0.034,
+                0.903,
+                0.216,
+                0.918
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图4-18 布拉格单色仪法"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.501,
+            0.698,
+            0.89,
+            0.827
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "旋转过程中，入射线与晶体中的不同晶面发生相互作用，从而产生衍射。利用X射线探测器，研究者们可以记录晶体在不同旋转角度时的衍射图像。这些衍射图像是由晶体中的原子散射形成的，可以提供丰富的信息，帮助我们理解其内部结构并进行解析。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.501,
+            0.833,
+            0.892,
+            0.918
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "衍射图像收集完成后，自从布拉格使用离子化室技术来确定简单盐类结构以来，估计衍射点的强度一直是结构生物学的一个组成部分。现代数据处理可以分为一系列步骤:"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 150,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.56,
+            0.04,
+            0.771,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.4 劳厄衍射、布拉格单色仪法的区别"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.938,
+            0.04,
+            0.962,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "127"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 7,
+          "bbox": [
+            0.105,
+            0.084,
+            0.772,
+            0.395
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 2,
+              "bbox": [
+                0.106,
+                0.084,
+                0.771,
+                0.124
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "① 自动指标化。这需要一个峰提取程序，然后分析峰的位置以确定单位细胞尺寸、布拉维格子和晶体取向。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 3,
+              "bbox": [
+                0.105,
+                0.129,
+                0.772,
+                0.192
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "② 相机参数的预校正（晶体到探测器的距离，相对于振荡方向的扫描方向，探测器偏离 X 射线束正射的倾斜角度），晶体取向和有效镶嵌扩散（实际镶嵌扩散与束流发散的卷积）。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.105,
+                0.197,
+                0.772,
+                0.26
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "③ 通过剖面拟合进行强度积分，假设衍射位置是根据预校正的相机和晶体参数计算得出的。[可以为每个衍射点估计误差；可以应用重叠和过载（探测器的非线性响应）校正；可以计算衍射的部分性。]"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.105,
+                0.265,
+                0.772,
+                0.328
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "④ 洛伦兹和偏振校正，然后归约到倒易空间中的唯一不对称单位（这依赖于劳厄群）。然后需要根据它们在倒易空间中选定的不对称单位的指标对衍射进行排序。这便于比较对称相关的衍射，它们将在衍射列表中相邻。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.105,
+                0.333,
+                0.772,
+                0.395
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "⑤ 对称相关和重复测量的衍射强度确保相等，使得数据内部一致（假设已经确定了正确的劳厄群）。在最终数据处理后，分析观测衍射点强度之间的差异，可以作为数据质量的指示，但不一定表明其绝对正确性。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.105,
+            0.4,
+            0.772,
+            0.441
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "大分子晶体结构的质量在一定程度上取决于数据的质量和数量。那么，如何利用数据质量指标来选择高分辨率截止值以获得最佳模型呢？数据精度的通用指标包括:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.14,
+            0.446,
+            0.22,
+            0.464
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(1) "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R_{\\mathrm{merge}}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.14,
+            0.468,
+            0.607,
+            0.487
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "传统的内部一致性度量是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R_{\\mathrm{merge}}"
+            },
+            {
+              "type": "text",
+              "content": " （也称为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R_{\\mathrm{sym}}"
+            },
+            {
+              "type": "text",
+              "content": " ），其定义如下:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.331,
+            0.491,
+            0.543,
+            0.552
+          ],
+          "image_path": "images/page_150_equation_11.jpg",
+          "content": "R _ {\\mathrm{merge}} = \\frac {\\sum_ {h} \\sum_ {l} | I _ {h l} - \\langle I _ {h} \\rangle |}{\\sum_ {h} \\sum_ {l} \\langle I _ {h} \\rangle},"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.105,
+            0.558,
+            0.772,
+            0.599
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "即对所有衍射 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h"
+            },
+            {
+              "type": "text",
+              "content": " 的观察强度 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I"
+            },
+            {
+              "type": "text",
+              "content": " 求和。但这种方法存在一个缺点，那就是即使通过平均更多的观测点来改善合并数据，它也会随着数据冗余性的增加而增加。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.14,
+            0.604,
+            0.22,
+            0.622
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(2) "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{CC}_{1/2}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.105,
+            0.626,
+            0.774,
+            0.802
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "引入 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{CC}_{1/2}"
+            },
+            {
+              "type": "text",
+              "content": " 来评估合并数据的精度，它是独立观测集之间的皮尔森（Pearson）相关系数（CC）。完全相关数据与反相关数据的CC值范围为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1\\sim -1"
+            },
+            {
+              "type": "text",
+              "content": " ，但对于指标化正确的数据，这些指标的范围应该从接近1的高度精确数据到接近0的非常不精确数据。基于CC的指标的一个优点是，它们具有经过充分研究的统计特性，因此，给定一个CC值和有多少观测结果对其有贡献，就可以计算出该值偶然出现的概率，即零假设成立的可能性有多大。类似地，通过关联两个半数据集产生的强度值，在分辨率壳层中计算出 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{CC}_{1/2}"
+            },
+            {
+              "type": "text",
+              "content": "，它提供了可辨别信号水平的无模型经验测量，相当于冷冻电镜研究中判别分辨率的傅里叶壳层相关统计。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 151,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.037,
+            0.043,
+            0.06,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "128"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.227,
+            0.043,
+            0.31,
+            0.056
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4 晶体学导论"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.225,
+            0.086,
+            0.545,
+            0.111
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.5 蛋白质晶体学的发展"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.225,
+            0.132,
+            0.618,
+            0.153
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.5.1 胃蛋白酶晶体的 X 射线衍射照片"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.224,
+            0.177,
+            0.892,
+            0.556
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "1934年4月，约翰·贝尔纳（John Desmond Bernal，1901—1971）获得了一些胃蛋白酶（pepsin）的晶体。当他首次将这些晶体置于X射线下时，并未观察到预期的衍射图像，而只得到了一个模糊的图像，与前人在处理蛋白质晶体时得到的结果类似。然而，贝尔纳并没有放弃。他通过显微镜观察发现，当晶体从母液中取出时，它们会发生变质，变得发白且失去双折射现象。这让贝尔纳意识到，为了保持晶体的完整性和活性，必须将其保持在母液中。于是，他用一个薄壁玻璃毛细管装载了一颗湿晶体，并成功保持了其透明度。当这颗晶体再次置于X射线下时，就产生了优秀的衍射图案，胶片上布满大量的衍射点。在这项工作中，贝尔纳得到了霍奇金的帮助。她协助贝尔纳通过测定晶胞尺寸、空间群等特征来表征X射线照片。1934年5月，他们在Nature杂志上发表了来自蛋白质晶体的第一张X射线照片。完成这项工作后，霍奇金回到了牛津，在那里她通过解析胆固醇、青霉素、维生素 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B_{12}"
+            },
+            {
+              "type": "text",
+              "content": " 和胰岛素的X射线晶体结构，为结构生物学作出了杰出的贡献。因此，与剑桥的同事们一起，她被认为是蛋白质晶体学的创始人之一。然而，在使蛋白质结构测定成为可能的过程中，还缺少一个至关重要的信息——相位。解决蛋白质晶体学中的相位问题几乎需要额外20年的时间。以下只介绍蛋白质晶体学的发展历程，更详细的蛋白质晶体学相位问题的解析方法，包括同晶置换法、反常散射法、分子置换法等，会在第五部分的第23章中进行详细介绍。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.225,
+            0.583,
+            0.525,
+            0.604
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.5.2 多对同晶置换法的诞生"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.224,
+            0.627,
+            0.892,
+            0.914
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "1936年，来自奥地利的年轻研究生佩鲁茨（知识窗4-6）加入了贝尔纳的团队。佩鲁茨获得了血红蛋白的蛋白质晶体，并在团队成员的帮助下确定了晶体的基本参数，包括晶胞尺寸和空间群。高质量X射线图案清晰展示了晶体中的蛋白质分子结构，但进一步解析这些结构并不容易。佩鲁茨尝试了各种相位求解方法，如帕特森法和直接法，但对于如此大的蛋白质分子，这些方法都未能提供正确的相位。直到1953年，佩鲁茨开始研究一种早已被讨论和使用过的方法。这种方法的基本思路是引入重原子到分子中，结晶改性分子，以获得略有改变的X射线衍射强度。这种方法已经成功地应用于较小的分子，但没有人认为它适用于如血蛋白这样巨大的分子。即使是具有80个电子的重原子，也不被期望会对含有一千个或更多轻原子的分子的衍射图案产生可测量的变化。然而，佩鲁茨没有放弃。他成功地结晶了血红蛋白的汞化合物“衍生物”，并将其中的一个晶体暴露在X射线下。当他显影照片时，与未经改性的蛋白质晶体的衍射强度相比，他都可以看到明显的变化（图4-19）。汞原子并没有在衍射图案中占主导地位，而仅仅是改变了“未经改性”的胶片上的强度，产生了微小但可"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 152,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.628,
+            0.04,
+            0.769,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.5 蛋白质晶体学的发展"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.936,
+            0.04,
+            0.96,
+            0.051
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "129"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.117,
+            0.098,
+            0.204,
+            0.114
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "知识窗4-6"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.467,
+            0.13,
+            0.597,
+            0.149
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "马克斯·佩鲁茨"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.116,
+            0.167,
+            0.522,
+            0.321
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "马克斯·佩鲁茨出生于奥地利，后来成为英国一位杰出的生物化学家。因为对血红蛋白结构进行了开创性的X射线衍射分析，他与约翰·肯德鲁共同荣获了1962年的诺贝尔化学奖。佩鲁茨曾在维也纳大学和剑桥大学接受教育，并于1940年获得博士学位。在剑桥大学的职业生涯初期，他于1937年加入了著名的卡文迪许实验室，并成功拍摄了血红蛋白晶体的首批X射线衍射图像。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.542,
+            0.167,
+            0.948,
+            0.298
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "随后，他利用 X 射线晶体学进行了血红蛋白结构的研究。1947 年，佩鲁茨与肯德鲁共同在剑桥创建了医学研究委员会（MRC）下研究生物系统分子结构的部门，佩鲁茨担任该部门的负责人。从 1962 年起，该部门成为 MRC 的“分子生物学实验室”（LMB），佩鲁茨继续担任负责人直到 1979 年退休。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.375,
+            0.769,
+            0.438
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "测量的差异，可以用于确定相位。然而，实际上，需要两种不同的衍生物（理论上）才能计算出唯一的相位。这就是多对同晶置换法（multiple isomorphous replacement，MIR），该方法被用于解析蛋白质晶体的原子结构。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.443,
+            0.772,
+            0.575
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "佩鲁茨的学生肯德鲁（知识窗4-7）在获得博士学位后，决定将他的研究重点从血红蛋白转移到体积只有其四分之一但功能密切相关的肌红蛋白上。血红蛋白由四个蛋白链和四个血红素基团组成，其作用是将氧输送到细胞中，而单链肌红蛋白只有一个血红素基团，在肌肉中储存氧气（作为氧气的储备）。肯德鲁选择这个新的项目可能是因为确定这种较小分子的结构会更容易，且由于它和血红蛋白在功能上如此密切相关，有可能在这两种结构之间进行有趣的比较。"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 8,
+          "bbox": [
+            0.111,
+            0.619,
+            0.761,
+            0.912
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 8,
+              "bbox": [
+                0.111,
+                0.619,
+                0.761,
+                0.912
+              ],
+              "image_path": "images/page_152_image_8.jpg",
+              "content": "```mermaid\ngraph LR\n  A[\"衍生物晶体\"] --> B{\"|FP|\"}\n  B --> C[\"母体晶体\"]\n  C --> D{\"|F|\"}\n  D --> E[\"重原子晶体\"]\n  E --> F{\"|FH| ≈ |FP| - |F|\"}\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 9,
+              "bbox": [
+                0.781,
+                0.619,
+                0.962,
+                0.903
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图4-19 同晶置换法在这个“假想实验”中，我们考虑了从完全同晶的衍生物晶体中减去一个天然蛋白质晶体的情况。这样做相当于将实空间中的轻原子“抵消”，只留下重原子在差异晶体中。尽管我们无法制备出差异晶体，但我们可以通过观察衍生物和天然蛋白质晶体实验数据之间的差异来推导一个“差异衍射模式”。这个模式在倒易空间中具有相同数量的衍射，但代表了一个更简单化的“差异晶体”情景。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        }
+      ]
+    },
+    {
+      "page_idx": 153,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.039,
+            0.042,
+            0.063,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "130"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.23,
+            0.042,
+            0.313,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4 晶体学导论"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.052,
+            0.099,
+            0.137,
+            0.116
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "知识窗4-7"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.407,
+            0.132,
+            0.524,
+            0.15
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "约翰·肯德鲁"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.05,
+            0.169,
+            0.458,
+            0.321
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "约翰·肯德鲁爵士1917年出生于英格兰牛津郡，1997年于剑桥郡去世，是一位英国生物化学家，他确定了肌肉蛋白肌红蛋白的三维结构，这种蛋白在肌肉细胞中储存氧气。由于他的成就，他与佩鲁茨共同获得了1962年的诺贝尔化学奖。肯德鲁在剑桥大学三一学院接受教育，并于1949年获得博士学位。1946年至1947年，他与佩鲁茨共同创立了剑桥医学研究委员会分子生物学"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.476,
+            0.169,
+            0.882,
+            0.3
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "单位。他们使用X射线晶体学技术来研究蛋白质的结构，其中佩鲁茨研究血红蛋白，而肯德鲁试图确定相对简单的肌红蛋白的结构。到1960年，随着特殊衍射技术的使用和计算机帮助分析X射线数据，肯德鲁能够获得肌红蛋白分子中氨基酸单元排列的三维模型，这是首次在蛋白质领域完成此类成就。"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.227,
+            0.379,
+            0.897,
+            0.602
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "肯德鲁决定使用佩鲁茨的多对同晶置换法来求解相位。在制备并测试了大量衍生物后，他最终成功地制备了五种化合物，这些衍生物的衍射强度与未修饰的蛋白质晶体相比呈现出合理的强度变化。肯德鲁使用帕特森法确定了重原子的位置，同时使用手绘的相位图进行相位求解。最后，他使用400个来自未经改性晶体的测定强度数据和相应的相位来计算电子密度。根据计算的电子密度图，他构建了分辨率为6Å的肌红蛋白分子模型（图4-20A）。这一研究成果在1957年初完成，并于次年发表在Nature杂志上。这是第一张蛋白质分子结构的图像，后来在1959年，肌红蛋白（分辨率为2.0Å；图4-20B）和血红蛋白（分辨率为5.5Å）的高质量结构测定也随之完成。1962年佩鲁茨和肯德鲁因对肌红蛋白和血红蛋白结构的研究而获得了诺贝尔化学奖。至此，蛋白质晶体学的方法已经全面建立，更多重要的蛋白质结构随后被解析出来。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.227,
+            0.628,
+            0.649,
+            0.648
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.5.3 同步辐射光源与多波长反常散射技术"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.263,
+            0.673,
+            0.895,
+            0.691
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在20世纪40年代，科学家首次观察到，在磁场中受到加速的带电粒子能够产生电"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.471,
+            0.695,
+            0.896,
+            0.915
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "磁辐射（图4-21A），这种现象被称为同步辐射源。它所产生的辐射强度非常高，比传统的X射线管要强几个数量级。然而，直到20世纪70年代，人们仍然普遍怀疑生物样品是否能够承受同步辐射光源产生的高强度X射线。1976年，一项实验对在同步辐射光束中的蛋白质晶体的稳定性进行了测试，结果令人鼓舞。所有不同蛋白质（包括红色氧化蛋白、蓝铜蛋白、神经生长因子和L-谷氨酰胺酶）的晶体在测试中仅受到了相对较小的辐射损伤，足以获得高质量的衍射图像。因此，这个实验确立了使用同步辐射来确定生物"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 11,
+          "bbox": [
+            0.039,
+            0.742,
+            0.223,
+            0.872
+          ],
+          "content": [
+            {
+              "type": "image_caption",
+              "index": 10,
+              "bbox": [
+                0.039,
+                0.72,
+                0.063,
+                0.735
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(A)"
+                }
+              ]
+            },
+            {
+              "type": "image_body",
+              "index": 11,
+              "bbox": [
+                0.039,
+                0.742,
+                0.223,
+                0.872
+              ],
+              "image_path": "images/page_153_image_11.jpg",
+              "content": "Abstract 3D light blue ribbon-like structure resembling a stylized letter or symbol (no text or symbols present)"
+            }
+          ],
+          "sub_type": "natural_image"
+        },
+        {
+          "type": "image",
+          "index": 13,
+          "bbox": [
+            0.261,
+            0.737,
+            0.445,
+            0.868
+          ],
+          "content": [
+            {
+              "type": "image_caption",
+              "index": 12,
+              "bbox": [
+                0.262,
+                0.721,
+                0.283,
+                0.735
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(B)"
+                }
+              ]
+            },
+            {
+              "type": "image_body",
+              "index": 13,
+              "bbox": [
+                0.261,
+                0.737,
+                0.445,
+                0.868
+              ],
+              "image_path": "images/page_153_image_13.jpg",
+              "content": "3D ribbon diagram of a protein structure, showing helices and beta sheets (no labels or text)"
+            },
+            {
+              "type": "image_caption",
+              "index": 14,
+              "bbox": [
+                0.036,
+                0.883,
+                0.219,
+                0.898
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图 4-20 肌红蛋白的结构"
+                }
+              ]
+            },
+            {
+              "type": "image_footnote",
+              "index": 15,
+              "bbox": [
+                0.036,
+                0.901,
+                0.374,
+                0.915
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "（A）6 Å 分辨率的电子密度图。（B）2 Å 分辨率的结构。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "natural_image"
+        }
+      ]
+    },
+    {
+      "page_idx": 154,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.631,
+            0.044,
+            0.771,
+            0.057
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.5 蛋白质晶体学的发展"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.94,
+            0.045,
+            0.962,
+            0.056
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "131"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.108,
+            0.086,
+            0.765,
+            0.257
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.108,
+                0.086,
+                0.765,
+                0.257
+              ],
+              "image_path": "images/page_154_image_2.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.29,
+            0.772,
+            0.421
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "分子晶体结构的可行性。2008年上海同步辐射光源的建成为我国结构生物学发展做出了巨大的贡献（图4-21B）。同步辐射的主要优势之一是高强度，这使得数据收集更加高效，研究人员可以从较小的蛋白质晶体中获得高分辨率的衍射图像，这对于难以结晶的蛋白质或难以形成大晶体的蛋白质尤为重要。此外，同步辐射束的高强度还减少了数据收集所需的曝光时间，从而最大限度地减少了对蛋白质晶体的辐射损伤。同步辐射在高分辨率蛋白质结构研究中发挥着重要的作用。"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.426,
+            0.774,
+            0.581
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "同步辐射的另一个优势在于其宽能谱特性。同步辐射源能够产生不同能量的X射线，使研究人员能够根据实验需求定制X射线波长，这对于发展反常散射等技术至关重要。反常散射，又称为共振散射，是指当入射X射线的能量接近原子激发到激发态的跃迁能量时发生的散射现象（图4-22）。利用蛋白质结构中某些原子（如硫或硒）的反常散射特性，在多个波长下收集数据，可以解决相位问题，这就是多波长反常散射法（multi-wavelength anomalous diffraction，MAD）。MAD方法在蛋白质晶体学中得到了广泛应用，因为它省却了在多对同晶置换法中摸索多个衍生物晶体的烦琐步骤。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.783,
+            0.087,
+            0.964,
+            0.12
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "图4-21 同步加速器的示意图"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.783,
+            0.123,
+            0.964,
+            0.427
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "（A）同步加速器储存环中各基本组件的位置。在小型电子枪或注入器（injector）中产生的电子首先经过助推环（booster）进行预加速，然后再注入储存环中。射频发生器（radio-frequency generator）或脉冲补偿器（kicker）可补偿电子环绕过程中的能量损失，以保持其恒定能量。弯曲磁铁（bending magnet）作为插入装置位于直线段中，产生切向的白色（多色）X射线束，将其单色化，最终到达装有衍射设备的实验舱（hutch）。（B）上海同步加速器的布局。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.607,
+            0.296,
+            0.628
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.5.4 分子置换法"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.651,
+            0.529,
+            0.917
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "肌红蛋白和血红蛋白在分子量和生理功能上有着明显的相似性。科学家们在详细解析了它们的结构之后发现，肌红蛋白的分子结构与血红蛋白的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha"
+            },
+            {
+              "type": "text",
+              "content": " 和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta"
+            },
+            {
+              "type": "text",
+              "content": " 多肽链保持着显著的相似性。这一发现催生了一个思路:如果两个蛋白质的结构高度相似，那么可以使用已知的蛋白质结构作为模型，来解析另一个未知结构的相位问题（图4-23）。1962年，迈克尔·罗斯曼（Michael G. Rossmann，1930—2019）和戴维·布洛（David Blow，1931—2004）提出了分子置换法（molecular replacement method）。在这种方法中，研究者首先需要确定已知模型在未知晶格中的旋转和平移参数。这可以通过将预测的衍射图与实验数据进行比"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 9,
+          "bbox": [
+            0.551,
+            0.635,
+            0.96,
+            0.807
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 9,
+              "bbox": [
+                0.551,
+                0.635,
+                0.96,
+                0.807
+              ],
+              "image_path": "images/page_154_image_9.jpg",
+              "content": ""
+            },
+            {
+              "type": "image_caption",
+              "index": 10,
+              "bbox": [
+                0.548,
+                0.815,
+                0.716,
+                0.829
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图 4-22 反常散射原理"
+                }
+              ]
+            },
+            {
+              "type": "image_footnote",
+              "index": 11,
+              "bbox": [
+                0.546,
+                0.832,
+                0.964,
+                0.919
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "（A）当入射光子能量较低时，它们要么发生散射，要么不被吸收，因为这些光子的能量不足以激发任何可用的电子跃迁。（B）当入射光子具有足够高的能量时，一部分光子被吸收并以较低能量重新发射（产生荧光），另一部分光子则被吸收并立即以相同的能量重新发射（与吸收边能量强耦合）。（C）A、B两图轨道能级示意图。"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 155,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.037,
+            0.046,
+            0.06,
+            0.057
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "132"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.227,
+            0.045,
+            0.31,
+            0.058
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4 晶体学导论"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.039,
+            0.088,
+            0.372,
+            0.259
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.039,
+                0.088,
+                0.372,
+                0.259
+              ],
+              "image_path": "images/page_155_image_2.jpg",
+              "content": "旋转矩阵\nR\nX未知 = RXX已知 + T\n同源已知结构\nX已知\nT\n平移矢量\n未知结构\nX未知"
+            },
+            {
+              "type": "image_caption",
+              "index": 3,
+              "bbox": [
+                0.034,
+                0.265,
+                0.232,
+                0.28
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图4-23 分子置换法的原理"
+                }
+              ]
+            },
+            {
+              "type": "image_footnote",
+              "index": 4,
+              "bbox": [
+                0.034,
+                0.283,
+                0.374,
+                0.335
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "分子置换法是蛋白质晶体结构解析中常用的一种重要基本方法。通过已知结构，结合晶体学的结构修正方法，可以推导出另一个未知结构。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.394,
+            0.088,
+            0.892,
+            0.152
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "较，并优化这些参数以使二者尽可能一致。一旦这些参数被确定，研究者就可以利用已知模型结构提供的相位信息，结合未知结构的实验强度数据，来解析出未知蛋白质的结构。"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.395,
+            0.179,
+            0.698,
+            0.2
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.5.5 蛋白质晶体结构的验证"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.394,
+            0.224,
+            0.895,
+            0.355
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由于宏观分子晶体学通常处理的有限分辨率和不完美的相位信息，建立和优化蛋白质模型并不是一门精确的科学。相反，这是一个主观过程，受经验、偏见、期望和实践的影响。这意味着在此过程中犯错几乎是不可避免的，但晶体学家的任务是在分析、发表和提交结构之前尽可能多地消除这些错误。对于高分辨率数据和良好相位，得到的模型可能 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "95\\%"
+            },
+            {
+              "type": "text",
+              "content": " 以上是由数据"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.224,
+            0.359,
+            0.895,
+            0.626
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "决定的，尽管在原子分辨率下，仍需主观选择:使用哪个优化程序，是否包含备选构象，是否模拟显式氢原子，如何模拟温度因子，应用哪些限制和约束，哪些峰在电子密度图里解释为溶剂分子，以及如何处理非晶体学对称性。一旦分辨率降至 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2\\AA"
+            },
+            {
+              "type": "text",
+              "content": " 以下，这种平衡就会发生变化，一些发表的蛋白质模型似乎是由某些晶体学家的想象决定的，而非实验数据。主观性不一定是问题，前提是晶体学家经验丰富，知道自己在做什么，并意识到实验数据对模型的限制。然而，即使是缺乏经验的人也可以避免许多模型构建和优化的陷阱。除了实践经验，还有许多其它方法可以减少或避免错误。这些包括:①在模型构建中使用从良好优化结构数据库中得出的信息，例如，从 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{C}_{\\alpha}"
+            },
+            {
+              "type": "text",
+              "content": " 轨迹生成主链坐标和从首选的旋转异构体构象生成侧链坐标；②使用各种局部质量检查（以检测出因一个或多个理由被认为是“异常”的残基，这些残基需要进一步审查和可能的调整）；③使用全局质量指标，例如，使用 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R_{\\mathrm{free}}"
+            },
+            {
+              "type": "text",
+              "content": " 值来指示重大错误，防止过拟合，并监控重建和优化过程的进展。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.225,
+            0.676,
+            0.466,
+            0.7
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.6 自由电子激光"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.223,
+            0.721,
+            0.897,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "自由电子激光器（free electron laser，FEL）的发展可追溯到20世纪70年代，但建造X射线自由电子激光（X-ray free electron laser，XFEL）的最初提议是在1992年。经过十多年的努力，直到2009年才出现了第一台运行的硬XFEL。XFEL是基于自由电子激光技术的创新，它利用高速电子束产生极强且极短脉冲的X射线束（图4-24）。XFEL能够产生极高强度的X射线脉冲，其辐射强度可达传统X射线源的数十亿倍。这种高辐射强度使得XFEL能够探测到微弱信号，例如蛋白质晶体的衍射图像，即使样品微小或非常稀薄，也能获得高质量的数据。XFEL产生的脉冲极短，通常在飞秒（"
+            },
+            {
+              "type": "equation_inline",
+              "content": "10^{-15}\\mathrm{s}"
+            },
+            {
+              "type": "text",
+              "content": "）至阿秒（"
+            },
+            {
+              "type": "equation_inline",
+              "content": "10^{-18}\\mathrm{s}"
+            },
+            {
+              "type": "text",
+              "content": "）的时间尺度内。这意味着XFEL能够捕捉到物质内部极短暂的动态过程，例如化学反应、原子振动和电子转移等现象。由于XFEL"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 156,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.666,
+            0.046,
+            0.771,
+            0.058
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.6 自由电子激光"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.938,
+            0.046,
+            0.962,
+            0.057
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "133"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.11,
+            0.086,
+            0.554,
+            0.305
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.11,
+                0.086,
+                0.554,
+                0.305
+              ],
+              "image_path": "images/page_156_image_2.jpg",
+              "content": ""
+            },
+            {
+              "type": "image_caption",
+              "index": 3,
+              "bbox": [
+                0.593,
+                0.088,
+                0.804,
+                0.103
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图 4-24 X 射线自由电子激光"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.593,
+            0.106,
+            0.964,
+            0.283
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "产生自由电子激光的过程:首先，将电子束加速至接近光速，并通过周期性横向磁场（扭摆器）使其产生摆动，形成正弦状路径，电子在这个过程中会发射电磁辐射（A）。最初的电磁辐射是低能且不相干的（B，上）。通过足够长的扭摆器阵列，使电磁辐射与电子束长时间相互作用，在自放大自发辐射模式下，电子沿着运动方向聚集形成尺寸接近光波波长的周期性束团（B，下）。在这个过程中，束团将自身动能转化为光场能量，增大光场振幅直到饱和，从而产生自由电子激光（C）。X射线自由电子激光也被称为第四代光源，其亮度更高，全相干，可调谐，并且以超短脉冲形式发射。"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.106,
+            0.359,
+            0.771,
+            0.398
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "采用自由电子束，研究者可以根据实验需求调整电子束的能量和强度，以选择最适合研究不同样品的条件，并获取最佳的实验结果。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.106,
+            0.404,
+            0.774,
+            0.625
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在理论上，由于XFEL具有高强度性和高度聚焦性，使得单分子散射技术成为可能（见图4-6A）。然而，目前的技术尚不能实现对单分子散射结构的解析。因此，科学家们将XFEL应用于研究非常小的或难以获得完整晶体的样品（图4-25），从而催生了串行晶体学技术（serial crystallography）。在串行晶体学中，样品以微小晶体微滴的形式，通过X射线或电子束进行快速扫描。这些微滴中含有单个或少量晶体，每个晶体会连续被扫描并记录其衍射图像。由于扫描速度非常快，每个晶体只被照射一次，因此避免了对晶体的损伤。所获得的散射图像用于确定晶体的结构。由于每个晶体都是独立的，可以用不同的图像来解析晶体的结构，并通过采用大量数据的平均值来提高信噪比。此方法有效地用于研究动态过程、非晶态物质或难以获得完整晶体的生物大分子等样品。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.106,
+            0.629,
+            0.775,
+            0.692
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "为了实现单分子成像，科学家们采取了一种独特的策略:向X射线束中注入一系列孤立的分子。在这种强烈的X射线脉冲与分子相互作用的过程中，X射线会从分子的原子上散射出来，从而形成一个独特的散射图案。通过分析这些散射图案，科学家"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.107,
+            0.697,
+            0.499,
+            0.916
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "们能够重建出分子详细的三维电子密度图，展现其微观原子结构。X射线自由电子激光单分子成像技术面临着一个挑战:如何从单个分子中准确收集数据。这是因为X射线脉冲的强度极高，有可能对被研究的分子造成损害或破坏。为了解决这一问题，科学家们采用了一种名为“破坏前衍射”的技术。破坏前衍射是一种巧妙的解决方案，该技术在分子被X射线束破坏之前捕捉其散射衍射图案的快照，然后将这些快照组合起来，以此重建出分子的原子结构（图4-26）。"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 9,
+          "bbox": [
+            0.519,
+            0.716,
+            0.964,
+            0.895
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 9,
+              "bbox": [
+                0.519,
+                0.716,
+                0.964,
+                0.895
+              ],
+              "image_path": "images/page_156_image_9.jpg",
+              "content": "气液喷射机\nLCLS X射线脉冲\n互动点\n前置探测器\n后部探测器"
+            },
+            {
+              "type": "image_caption",
+              "index": 10,
+              "bbox": [
+                0.518,
+                0.901,
+                0.671,
+                0.917
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图 4-25 串行晶体学"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text_image"
+        }
+      ]
+    },
+    {
+      "page_idx": 157,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.037,
+            0.049,
+            0.06,
+            0.06
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "134"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.227,
+            0.049,
+            0.309,
+            0.061
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4 晶体学导论"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.037,
+            0.093,
+            0.476,
+            0.385
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.037,
+                0.093,
+                0.476,
+                0.385
+              ],
+              "image_path": "images/page_157_image_2.jpg",
+              "content": "```mermaid\ngraph LR\n  A[\"X射线束\"] --> B[\"粒子流\"]\n  B --> C[\"像素探测器上\\n记录的衍射图样\"]\n  D[\"脉冲计数器\"] --> C\n  C --> E[\"分类\"]\n  E --> F[\"平均\"]\n  F --> G[\"确定取向\"]\n  G --> H[\"重构\"]\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 3,
+              "bbox": [
+                0.518,
+                0.264,
+                0.835,
+                0.279
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图 4-26 X射线自由电子激光单分子成像技术"
+                }
+              ]
+            },
+            {
+              "type": "image_footnote",
+              "index": 4,
+              "bbox": [
+                0.518,
+                0.281,
+                0.892,
+                0.387
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "XFEL 单粒子衍射成像涉及记录目标物体在因电离和库仑爆炸而破坏之前的单粒子衍射图案（上图）、单粒子衍射图案的分类、2D 类平均、方向确定以及倒易空间中强度的三维重构。傅里叶幅度随后被用于合成物体的真实空间图像，但仅在恢复衍射实验中丢失的相位信息之后。相位信息是使用迭代相位检索算法实现的。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.235,
+            0.444,
+            0.345,
+            0.463
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "※ 本章小结"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.224,
+            0.477,
+            0.892,
+            0.629
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "本章从天然矿物晶体入手，讨论了人们对于晶体内部结构的早期推测。基于晶体平移对称性的假设，引入了14种布拉维晶格、32个点群和230种空间群的概念。随着X射线的发现和晶体相干衍射实验的成功，人们首次在实验中直接观察到晶体内部的平移对称性，并开发出了通过衍射图像来推断晶体分子结构的技术。为了解析更为复杂的分子结构，晶体学中的相位问题变得日益显著，为此研究者们发展了多种解决相位问题的技术。蛋白质晶体学同样围绕着这一相位问题，经过70多年的发展，逐渐成为现代的结构生物学。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.235,
+            0.669,
+            0.325,
+            0.688
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "※ 思考题"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "list",
+          "index": 8,
+          "bbox": [
+            0.261,
+            0.703,
+            0.652,
+            0.786
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.261,
+                0.703,
+                0.652,
+                0.719
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. 为什么晶体结构分析中要选择晶体作为衍射物质？"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 10,
+              "bbox": [
+                0.261,
+                0.726,
+                0.585,
+                0.741
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. X射线晶体学中相位问题的根源是什么？"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 11,
+              "bbox": [
+                0.261,
+                0.747,
+                0.652,
+                0.763
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "3. 劳厄衍射法和布拉格单色仪法之间的区别是什么？"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.261,
+                0.77,
+                0.652,
+                0.785
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "4. 小分子晶体学中，有哪些方法可以解决相位问题？"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 13,
+          "bbox": [
+            0.235,
+            0.803,
+            0.345,
+            0.822
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "※ 扩展阅读"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.262,
+            0.836,
+            0.3,
+            0.851
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "图书"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.225,
+            0.859,
+            0.89,
+            0.897
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Aroyo M I. International tables for crystallography: Volume A: Space-group symmetry[M]. 6th ed. Hoboken: Wiley, 2017."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.259,
+            0.904,
+            0.889,
+            0.921
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Authier A. Early days of X-ray crystallography[M]. Oxford: Oxford University Press,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 158,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.72,
+            0.042,
+            0.771,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "扩展阅读"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.938,
+            0.042,
+            0.962,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "135"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 11,
+          "bbox": [
+            0.107,
+            0.085,
+            0.773,
+            0.441
+          ],
+          "content": [
+            {
+              "type": "ref_text",
+              "index": 2,
+              "bbox": [
+                0.108,
+                0.085,
+                0.154,
+                0.099
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2013."
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 3,
+              "bbox": [
+                0.108,
+                0.107,
+                0.773,
+                0.146
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Blundell T L, Johnson L N. Protein crystallography[M]. London: Academic Press, 1976."
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 4,
+              "bbox": [
+                0.142,
+                0.153,
+                0.717,
+                0.17
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Drenth J. Principles of protein X-ray crystallography[M]. Berlin: Springer, 2007."
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 5,
+              "bbox": [
+                0.107,
+                0.176,
+                0.773,
+                0.215
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Judson H F. The eighth day of creation: makers of the revolution in biology[M]. Cold Spring Harbor: Cold Spring Harbor Laboratory Press, 1996."
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 6,
+              "bbox": [
+                0.107,
+                0.221,
+                0.773,
+                0.259
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "McRee D E, David P R. Practical protein crystallography[M]. San Diego: Academic Press, 1999."
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 7,
+              "bbox": [
+                0.107,
+                0.266,
+                0.773,
+                0.305
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Rossmann M G, Arnold E V. International tables for crystallography: crystallography of biological macromolecules[M]. Berlin: Springer, 2001."
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 8,
+              "bbox": [
+                0.107,
+                0.311,
+                0.773,
+                0.351
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Rupp B. Biomolecular crystallography: principles, practice, and application to structural biology[M]. New York: Garland Science, 2010."
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 9,
+              "bbox": [
+                0.107,
+                0.356,
+                0.773,
+                0.395
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Woolfson M M. An introduction to X-ray crystallography[M]. Cambridge: Cambridge University Press, 1997."
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 10,
+              "bbox": [
+                0.107,
+                0.402,
+                0.773,
+                0.441
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Woolfson M M, Fan H F. Physical and non-physical methods of solving crystal structures[M]. Cambridge: Cambridge University Press, 1995."
+                }
+              ]
+            }
+          ],
+          "sub_type": "ref_text"
+        }
+      ]
+    },
+    {
+      "page_idx": 159,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "index": 0,
+          "bbox": [
+            0.097,
+            0.122,
+            0.207,
+            0.239
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.335,
+            0.235,
+            0.543,
+            0.277
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "核磁共振"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.333,
+            0.32,
+            0.896,
+            0.587
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "上一章的X射线晶体结构解析和下一章的冷冻透射电子显微镜可以说都是“所见即所得”的方法——实验数据在倒易空间采集或者重构后，再回到实空间转化为三维的结构密度，在某种意义上可以说我们“亲眼”看到了生物大分子。核磁共振与此迥异，它所采集的是较为“抽象”的核磁谱图，从中提取出结构约束，再通过计算结构生物学方法，尤其是分子动力学模拟，获得生物大分子的三维结构。因此，核磁结构都是通过“计算”间接得到的。这种结构解析方式优缺点都很鲜明:一方面让核磁共振在面对其它两种方法的竞争时，由于学习曲线陡峭、解析步骤烦琐以及对样品限制较多而落于下风；另一方面也赋予了核磁共振在处理生物大分子的柔性区域、固有无序蛋白或者核酸分子时的独特优势。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.333,
+            0.592,
+            0.894,
+            0.782
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "核磁共振本质上是一种量子现象，其发展与上世纪初量子力学的革命密切相关，所成就的自然科学方面的诺贝尔奖得主不在少数。生物大分子的核磁测量最早可追溯到20世纪50年代，并在此后数十年里蓬勃发展。尤其是上世纪末到本世纪初的十余年堪称生物核磁发展的黄金时代，新方法层出不穷，硬件也日新月异，为核磁共振成为与晶体衍射和冷冻电镜并列的生物大分子结构解析的三大方法之一奠定了坚实的基础。尽管如此，核磁共振技术的进一步发展仍面临着诸多挑战。展望未来，核磁共振领域迫切需要更多革新性方法的出现。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.333,
+            0.788,
+            0.894,
+            0.879
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "本章以核磁共振发展的历史脉络开始，讲解了核磁共振的基本概念和它在生物大分子结构研究中的应用。在学习中注意体会核磁共振与另外两种结构解析方法相比优缺点分别在哪里，什么情况下适合采用核磁共振方法。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}
