@@ -1,0 +1,2403 @@
+# 第21章 紫外交联免疫沉淀（CLIP）技术进行体内RNA结合位点作图
+
+原始 PDF 第 332–380 页。
+
+## 第 21 章 紫外交联免疫沉淀(CLIP)
+
+## 技术进行体内 RNA 结合位点作图
+
+导言 | 交联免疫沉淀方法 1418 CLIP 方法演化 1421
+
+高通量测序（HITS）CLIP 1420 CLIP实验设计原则 1422
+
+CLIP结果验证 1420 致谢 1422
+
+方案 | 1 CLIP 实验免疫沉淀严谨性的优化 1424 ● 替代方案 去磷酸化 RL3 接头 5' 端
+
+2 活细胞的紫外交联和裂解物制备 1429 的标记 1445
+
+3 RNA 酶滴定、免疫沉淀及 SDS-PAGE 1432 5 RNA 标签的分离、5'-接头的连接和反转录 PCR 扩增 1446
+
+4 3'-接头的连接和用 SDS-PAGE 进行大小选择 1441 6 RNA CLIP 标签测序 1456
+7 RNA 接头胶回收及保存 1458
+
+信息栏 紫外蛋白交联的机制和特异性 1460
+
+HITS-CLIP 数据分析 1462
+
+---
+
+## 导言
+
+深入理解 RNA 如何被调控，将为我们打开重新洞悉生物复杂性的大门。例如，线虫和人有显著的差异，却都有大约相同数量标准的蛋白质编码基因。对 DNA 复杂性认识的极限，加上由 RNA 世界概念产生的兴奋点和 RNA 具有极高复杂性的新证据（见 Cech 2009; Sharp 2009; Licatalosi and Darnell 2010），为这一难题给出了解决方法。现代观点认为每个物种的 DNA 是一个包含遗传信息的压缩文件（zip-file），被一套复杂的调控途径解压缩成为 RNA 世界，在 RNA 世界里每个生物的多样性得以展现。按照这一观点，了解 RNA 代谢调控将为认识复杂的细胞、组织和器官特异性的功能提供一种新的途径。
+
+通过 RNA-蛋白质复合物共价交联、纯化和 RNA 测序的 RNA CLIP（交联免疫沉淀）方法作为获得直接的、功能性 RNA-蛋白质相互作用位点的基因组范围图谱的有力工具引起了广泛关注。这些图谱被用于确定调控位点，并有望了解正常细胞功能中 RNA 调控的动力学及其在疾病中的调节异常。
+
+RNA CLIP 最早建立于 2003 年（Ule et al. 2003），从那时起，随着高通量测序方法（HITS-CLIP，也称为 CLIP-seq）的应用，该方法的用途得到大大扩展，用来分析交联的 RNA 序列（Licatalosi et al. 2008）。到 2011 年，CLIP 或 HITS-CLIP 被用来分析各种组织和生物体中的 RNA-蛋白质相互作用，如真细菌的耐辐射奇球菌、丝状真菌的玉蜀黍黑粉菌、酿酒酵母、秀丽隐杆线虫、HeLa 及 293T 细胞、人胚胎干细胞、小鼠脑或细精管（表 21-1）（Darnell 2010）。
+
+用交联方法来研究 RNA-蛋白质相互作用在许多方面类似于十年或更早前建立的染色质免疫沉淀技术（ChIP）（第20章），该方法用来分析DNA-蛋白质相互作用。从历史的角度来看，ChIP的出现就预示着CLIP，但现在这两种技术在几个重要方法上发生了差异。这两种技术都注重保持天然的蛋白质-核酸相互作用，因为这种相互作用在纯化过程中很容易丢失或重新组合，这是DNA-蛋白质相互作用（Kuo and Allis 1999）和RNA-蛋白质相互作用（Mili and Steitz 2004）研究中公认的难题。蛋白质-DNA交联方法最早于20世纪80年代在分析转录和染色质调控因子(Ilyin and Georgiev 1969; Gilmour and Lis 1984; Solomon and Varshavsky 1985)的过程中建立，随着DNA ChIP技术的出现，这一技术在20世纪90年代得到广泛使用，例如用于研究组蛋白-DNA相互作用(Kuo and Allis 1999）。
+
+紫外照射（Alexander and Moroson 1962; Smith 1962）和甲醛处理（Ilyin and Georgiev 1969）是较早就被认可的两种在体外交联 DNA-蛋白质复合物的方法。1974 年，紫外照射同样被证实可以将 RNA 交联到蛋白质上（Schoemaker and Schimmel 1974）。到 20 世纪 80 年代中期，这些技术开始用于体内研究（Gilmour and Lis 1984），如被用来在照射的细胞中分析（Mayrand and Pederson 1981; Mayrand et al. 1981; Li et al. 2006）、免疫沉淀和制备作用于核糖核蛋白复合物（RNP）的抗体（Dreyfuss et al. 1984）。但当时紫外线照射还没有被考虑作为纯化蛋白质结合 DNA 或 RNA 的一种手段。这种可能性被忽视的原因有两个:一是认为紫外线交联的效率太低，没有应用价值（Fecko et al. 2007），二是知道紫外线交联会妨碍反转录酶（RT；用于 RNA-蛋白质结合位点作图）（Urlaub et al. 2002）。因此，甲醛交联的可逆性（Kuo and Allis 1999）是其用于 ChIP 方案的一个重要因素。
+
+有关紫外交联的担忧在 2003 年就排除了，当时第一个 CLIP 实验显示，紫外交联后反转录受阻是因为它本身效率低。照射后的样品经蛋白酶 K 消化后，就可以被反转录和
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1417
+
+PCR 扩增，来自交联 RNA 的产物即可通过测序获知其序列。在当时建立的 CLIP 方案基础上，经过一些修改，就形成了本章所描述的方法。不过，潜在的局部反转录阻滞作用仍然引起关注，并推动了一些替代性 CLIP 方案的形成（iCLIP; Konig et al. 2010）。幸运的是，这一问题并没有被证明成为识别结合 RNA 片段的障碍；下面描述的标准紫外交联方案能产生成千上万与许多不同 RNA 结合蛋白（RNABP）交联的独特的 RNA 序列（标签）。实际上，反转录在交联位点所遇到的问题甚至更具优势:在交联位点处的错误或部分反转录受阻可被用以确定 RNA-蛋白质相互作用的确切位点（Ule et al. 2005; Granneman et al. 2009; Hafner et al. 2010; Konig et al. 2010; Zhang et al. 2010; Zhang and Darnell 2011）。
+
+与利用甲醛交联的标准 DNA ChIP 相比, 采用紫外交联的 RNA CLIP 具有独特优势。CLIP 具有提供更高时空解析度的潜力, 因为紫外线照射后, 只有在直接相互作用 (一个键长) 的蛋白质和核酸之间才会产生交联。CLIP 这种较强的特异性 (下文讨论), 与甲醛交联形成了鲜明的对比。在甲醛交联中, 大的蛋白质-核酸和蛋白质-蛋白质复合物都可以发生交联。
+
+表 21-1 用 CLIP 技术研究的典型的 RNA 结合蛋白
+
+| RNA 结合蛋白 | 方法 | 组织/细胞类型 | 主要发现 | 参考文献 |
+| --- | --- | --- | --- | --- |
+| Nova | CLIP 和 HITS-CLIP | 小鼠脑组织 | 结合基序生物学靶标RNA 剪接图谱poly(A)使用调控3'-UTR 定位元件络丝蛋白途径 RNA 剪接分析 | Ule et al. 2003; Licatalosi et al. 2008; Racca et al. 2010; Yano et al. 2010 |
+| PTB | HITS-CLIP;已发表CLIP 数据的重分析 | HeLa 细胞 | 结合基序RNA 剪接图谱 | Xue et al. 2009; Llorian et al. 2010 |
+| 带标签的 Khd1 | HITS-CLIP | 啤酒酵母 | 结合基序生物学靶标翻译调控中的作用 | Wolf et al. 2010 |
+| hnRNP A1 | CLIP | HeLa 细胞 | pri-mRNA 加工调控过程中的作用 | Guil and Caceres 2007 |
+| TIA1 | HITS-iCLIP | HeLa 细胞 | RNA 剪接图谱 | Wang et al. 2010 |
+| Fox2 | HITS-CLIP | 人胚胎干细胞 | 生物学靶标RNA 剪接图谱 | Yeo et al. 2009 |
+| SFRS1 | CLIP 和 HITS-CLIP | HEK293T 细胞 | 结合基序疾病相关位点 | Sanford et al. 2008, 2009 |
+| 带标签的 Rrm4 | CLIP | 丝状真菌玉米黑粉菌 | 结合基序rrm4-RNP 定位 | Becht et al. 2006 |
+| CUGBP1 | CLIP | 小鼠后脑组织 | 结合基序剪接靶的验证 | Daughters et al. 2009 |
+| 带标签的 snRNP | HITS-CLIP | 啤酒酵母 | 蛋白质-rRNA 和 snoRNA 相互作用位点详细作图 | Granneman et al. 2009; Bohnsack et al. 2009 |
+| Ro homolog Rsr | CLIP | 耐辐射球菌 | 与 rRNA 相互作用的发现 | Wurtmann and Wolin 2010 |
+| hnRNP C | HITS-iCLIP | HeLa 细胞 | 结合基序RNA 剪接图谱剪接相关 hnRNP 颗粒结构 | Konig et al. 2010 |
+| Ago 和带标签的 Ago | HITS-CLIP 和 PAR-CLIP | 小鼠脑组织;HeLa 细胞;HEK293 细胞 | Ago-miRNA 精确结合位点 | Chi et al. 2009; Hafner et al. 2010; Leung et al. 2011 |
+| Alg-1 | HITS-CLIP | 秀丽新小杆线虫 | Alg-1-miRNA 精确结合位点 | Zisoulis et al. 2010 |
+| Msy2 | CLIP | 小鼠输精管 | piRNA 和及其他小RNA 相互作用 | Xu et al. 2009 |
+| HuR | PAR-CLIP | HEK293 细胞 | 在 mRNA 稳定性及加工中的作用 | Lebedeva et al. 2011; Mukherjee et al. 2011 |
+| FMRP | HITS-CLIP | 小鼠脑组织 | 翻译抑制机制及与自闭症的联系 | Darnell et al. 2011 |
+
+修改自 Darnell 2010。
+
+---
+
+1418
+
+分子克隆实验指南（原书第四版）
+
+由于紫外交联通过形成共价键固定了 RNA-蛋白质之间的相互作用，CLIP 就可以对二者的结合进行“抓拍”，而不会受到后续操作步骤的影响。相对于缺少交联步骤的方法，包括最常使用的 RNP 免疫沉淀（RIP），这是一个非常大的优势。关键是 CLIP 还能在单个 RNA 分子中识别蛋白结合位点。如果对交联的 RNA 进行高通量测序，CLIP 技术就可以在全基因组范围获得蛋白质-RNA 结合位点图谱。针对一些 RNA 结合蛋白，HITS-CLIP 具有生成预测调控模式的能力（Darnell 2010; Licatalosi and Darnell 2010; Darnell et al. 2011），包括涉及多种 RNA-蛋白质相互作用（如 Argonaute miRNA-mRNA 复合物中的相互作用）的 RNA 结合蛋白（Chi et al. 2009; Hafner et al. 2010; Zisoulis et al. 2010; Leung et al. 2011）。HITS-CLIP 为研究人员提供了将调控性 RNA 结合蛋白的活性与小 RNA 调控网络进行整合的可能（见信息栏“紫外蛋白交联的机制和特异性”和“HITS-CLIP 数据分析”）。
+
+![](../../raw/pages_0321-0336/images/page_334_image_3.jpg)
+
+## 交联免疫沉淀方法
+
+交联免疫沉淀（CLIP）（图 21-1）提供了描绘 RNA-蛋白质在体内相互作用的一种通用方法，无论是 254nm 紫外线处理过的整个组织、生物体，还是单个细胞类型（Ule et al. 2003, 2005; Jensen and Darnell 2008）。紫外照射诱导一个瞬态电子受激状态导致紧密接触（最多相距几埃）的 RNA 和蛋白质之间产生共价键。虽然确切的机制尚不完全清楚，但相信核酸碱基吸收紫外光后（Brimacombe et al. 1988），诱导基态电子进入单线高能状态，使电子形成一个新的共价键（Fecko et al. 2007）。蛋白质-RNA 交联反应只发生在少数结合位点（标准 CLIP 实验中 1%～5%，尽管不同蛋白质可能不同）（也见 Fecko et al. 2007）（也见信息栏“紫外蛋白交联的机制和特异性”）。
+
+形成这个新键后，就可以在非常严谨的条件下纯化 RNA-蛋白质复合物。原则上，任何纯化方法都可以使用。但是，在实践中，一个可靠的方案取决于 3 个步骤:①用针对 RNA 结合蛋白（RNABP）本身或表达标签的抗体进行免疫沉淀；②通过 SDS-PAGE 进行大小分离；③转移到硝酸纤维素膜以去除污染的（非交联的）RNA。在该纯化过程中，RNA 被消化变小，通常消化成约 50 个核苷酸大小的片段，以便于鉴定结合位点（例如，交联的 RNA 片段为 20～100 个碱基）。一旦获得足够的纯度，再用蛋白酶 K 处理除去交联复合物中的蛋白质成分，并纯化释放的 RNA 片段。相关方案仍在不断改进，目前的方案是用 RNA 连接酶将 RNA 接头连接到释放出的所有 RNA 上，用反义引物和反转录酶进行 cDNA 合成以生成测序的模板。
+
+CLIP 的一个主要优点是可以在体内对众多不同的系统进行相互作用分析。虽然 CLIP 最早是在小鼠的大脑中完成的，它后来被应用到一系列完整生物体中，包括细菌、真菌、酵母、线虫，以及人胚胎干细胞在内的多种培养的哺乳动物组织细胞（表 21-1）。CLIP 也被应用到许多涉及不同生物过程的不同 RNA 结合蛋白（表 21-1）。例如，来自 hnRNP A1 的少量 CLIP 序列标签，就足以推测出该复合物可能调控 miRNA 前体的加工（Guil and Caceres 2007），这一推测随后得到了证实（Michlewski et al. 2008），另一研究更提示该蛋白质参与 miRNA 调控（Newman et al. 2008）。对少量 Nova（一个在小鼠脑神经元细胞核和细胞质中发现的 55kDa 的 RNA 结合蛋白）CLIP 标签进行的分析发现了功能相关的 RNA-蛋白质相互作用，这些相互作用的重要性随后被更高通量的研究所证实（Licatalosi et al. 2008）。
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1419
+
+![](../../raw/pages_0321-0336/images/page_335_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["UV"] --> B["RNA"]
+  B --> C["细胞裂解\nRNA酶部分消化"]
+  C --> D["抗原表位纯化"]
+  D --> E["RNA结合区"]
+  E --> F["5' OH- - 3' PO4\n严谨免疫沉淀"]
+  F --> G["蛋白酶A\nDynabead"]
+  G --> H["抗抗原表位抗体"]
+  H --> I["碱性磷酸酶"]
+  I --> J["5' OH- - 3' PO4\nRNA接头"]
+  J --> K["3' 接头连接"]
+  K --> L["5' PO4"]
+  L --> M["嘌呤霉素基团"]
+  M --> N["&quot;T4 PNK酶和[32P"]ATP"]
+  N --> O["SDS-PAGE\n转移到硝酸纤维膜"]
+  O --> P["蛋白质-RNA复合物的放射自显影"]
+  P --> Q["切取硝酸纤维膜条带。用蛋白酶K消化。纯化RNA"]
+  Q --> R["5' 接头连接"]
+  R --> S["5' OH- - 3' OH\n5' 接头连接"]
+```
+</details>
+
+图 21-1 交联免疫沉淀（CLIP）。对组织（如脑组织）或细胞进行紫外线照射（方案 2），在体内诱导 RNA-蛋白复合物发生共价交联。（箭头 1，见方案 2 和方案 3）细胞裂解及 RNA 酶部分消化可以在免疫沉淀之前对 RNA-蛋白复合物进行部分净化，并能将交联 RNA 的长度减小到所需的大小（一般约 50 个碱基或更小）。RNase A 及 T1 在消化的 RNA 上留下一个 5' 羟基和 3' 磷酸基团。（箭头 2，见方案 1 和方案 3）交联允许使用严谨的条件对蛋白质进行纯化。可以使用针对天然表位或蛋白标签的抗体进行免疫沉淀。（箭头 3、4，见方案 4）为防止在 3' 端连接接头时分子内 RNA 环化，用碱性磷酸酶去掉 3' 磷酸基团。接头自身的 3' 端被嘌呤霉素封闭，这样可以阻止接头-接头的自连反应。（箭头 5，见方案 4）RNA 的 5' 端用 T4 多聚核苷酸激酶及  $[\gamma-^{32}P]$ ATP 进行标记。（箭头 6，见方案 4）RNABP-RNA 复合物从
+
+---
+
+1420
+
+分子克隆实验指南（原书第四版）
+
+磁珠上释放，用变性 SDS-PAGE 凝胶进行电泳并转移到硝酸纤维素膜上（两个重要的纯化步骤），之后进行放射自显影。（箭头 7，见方案 5）从硝酸纤维素膜上切取放射性的 RNABP-RNA 复合物，用蛋白酶 K 消化去掉 RNABP，洗脱 RNA，再用酚:氯仿抽提，最后进行乙醇沉淀。（箭头 8，见方案 5）在 RNA 的 5' 端加上第二个接头。（箭头 9，见方案 5 和 6）对 RNA 进行 RT-PCR 扩增及测序（彩图请扫封底二维码）。
+
+![](../../raw/pages_0337-0352/images/page_336_image_3.jpg)
+
+## 高通量测序（HITS）CLIP
+
+最早进行 CLIP 实验时，340 个单一的 Nova 结合 RNA 序列测序成本约 4000 美元（Ule et al. 2003）。少量的标签不足以完全囊括 Nova 与 RNA 相互作用的种类。后来用高通量测序 CLIP（HITS-CLIP 或 CLIP-seq）对这些研究进行了扩展。2008 年用 HITS-CLIP 技术对相同的 RNA-蛋白质相互作用进行重新分析，同样的 4000 美元成本鉴定出多达 1000 倍的单一序列标签。单个 RNA 标签的价格持续大幅下降。鉴于获得如此庞大的数据集，利用生物信息学方法分析 RNA CLIP 标签成为所有 HITS-CLIP 研究的一个重要组成部分。
+
+HITS-CLIP 得到的 RNA-蛋白质图谱可以结合其他研究的结果一起来揭示结合位点与蛋白质和 RNA 功能之间的关系。例如，结合生物信息学研究（Ule et al. 2006），RNA-蛋白质图谱显示结合位点决定了 Nova 介导的剪接调控结果（包含或排除外显子）（Licatalosi et al. 2008）。随后的研究，包括 PTB 的 HITS-CLIP（Xue et al. 2009）结合 PTB-依赖的 RNA 剪接变异体功能分析（Llorian et al. 2010），以及其他 RNA 结合蛋白- Fox2、hnRNP C、hnRNPL、TIA1/2、TDP-43、MBNL 和 CELF 蛋白（Yuan et al. 2007; Kalsotra et al. 2008; Zhang et al. 2008; Yeo et al. 2009; Du et al. 2010; Chen and Manley 2009; Tollervey et al. 2011; Witten and Ule 2011）的相关研究都使人们意识到这种位置依赖的剪接图谱是普遍现象。它们揭示了同样适合许多 RNA 结合蛋白的剪接调控规则（Chen and Manley 2009; Corrionero and Valcarcel 2009; Licatalosi and Darnell 2010; Witten and Ule 2011）。HITS-CLIP 还揭示 Nova 在可变聚腺苷酸化调控中发挥作用（Licatalosi et al. 2008）。hnRNP C 的 HITS-CLIP 研究则提示蛋白质可以形成类似于 DNA 核小体的高度有序的 RNA-蛋白复合物，从而在剪接抑制中发挥重要作用（Konig et al. 2010）。最后，用 HITS-CLIP 对 Argonaute（AGO）足迹进行全基因组绘图发现了许多位于 3'非翻译区之外的结合位点，这暗示在 RNA 转录物上有新的 Ago-miRNA 调控点（Chi et al. 2009; Hafner et al. 2010; Zisoulis et al. 2010）。HITS-CLIP 技术的这些应用为传统调控机制的研究方法提供了一个新的帮手（Sharp 2009; Xue et al. 2009; Nilsen and Graveley 2010）。
+
+![](../../raw/pages_0337-0352/images/page_336_image_7.jpg)
+
+## CLIP 结果验证
+
+要获得功能性 RNA-蛋白质图谱，把 CLIP 产生的物理 RNA-蛋白质的相互作用的种类与可检测到的 RNA 变体关联起来是非常有价值的。例如，在不同组织或遗传背景下进行 RNA-seq 分析，再结合生物信息学分析，这就能提供一个鉴定功能性 RNA-蛋白质图谱的通用方法（Licatalosi and Darnell 2010）。通常情况下，这些类似的实验协同 CLIP 数据可以带来新的生物学见解。例如，CLIP 数据可以与下列分析研究结合，如单独的 RNA 微阵列分析（Ule et al. 2005; Licatalosi et al. 2008; Daughters et al. 2009; Yeo et al. 2009）、RNA 序列分析（Bohnsack et al. 2009; Chi et al. 2009; Hafner et al. 2010; Llorian et al. 2010; Zisoulis et al. 2010）、RNA-蛋白质相互作用功能鉴定（Chi et al. 2009; Darnell et al. 2011）、生理功能（Huang et al. 2005; Ruggiu et al. 2009），甚至 RNA 定位（Racca et al. 2010）或细胞迁移（Yano et al. 2010）的细胞学研究。
+
+CLIP 数据与其他类型数据的交叉验证的例子包括:Fox2 研究（Yeo et al. 2009）与张
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1421
+
+等（2008）进行的独立生物信息学验证的数据，PTB 研究（Xue et al. 2009）与生物化学和生物信息学独立评估的数据（Gama-Carvalho et al. 2006; Boutz et al. 2007; Xing et al. 2008; Llorian et al. 2010）。独立确证 CLIP 研究的例子还包括一些由不同的实验室独立进行的类似研究，如同 Ago 的 HITS-CLIP 研究（Chi et al. 2009; Hafner et al. 2010; Zisoulis et al. 2010）。
+
+![](../../raw/pages_0337-0352/images/page_337_image_3.jpg)
+
+## CLIP 方法演化
+
+基本的 CLIP 方法已经发生演化，并可能继续发展（表 21-2）。这些方法有共同的特性:在活细胞中紫外照射交联 RNA-蛋白质复合物，然后在严谨条件下纯化 RNA-蛋白质复合物，部分消化 RNA，以产生可克隆的片段，连接接头以进行 RT-PCR 扩增和 cDNA 测序（或在新出现的方法中，可直接进行 RNA 测序）（Ozsolak et al. 2009）。一种改进的方法是在 CLIP 之前将蛋白质带上标签以进行蛋白纯化[cross-linking reactions and purification, or cross-linking and analyses of cDNA（CRAC）]（Granneman et al. 2009）。在 CRAC 中引入标签蛋白或许是有用的，但对于其他 RNA 结合蛋白纯化手段并不合适，尽管当目的是识别生物相关位点时，关注化学计量很重要。鉴定交联位点的方法包括:监测反转录酶的中止 [individual nucleotide resolution UV cross-linking and immunoprecipitation （iCLIP）]（Konig et al. 2010），以及在组织培养细胞的 RNA 中掺入 4-硫尿核苷后鉴定核苷酸的变化 [photoactivatable-ribonucleoside-enhanced cross-linking and immunoprecipitation（PAR-CLIP）]（Hafner et al. 2010）。这些信息也可以通过对序列错误进行生物信息学分析或分析基本 CLIP 方案中反转录中止位点获得（Ule et al. 2005; Granneman et al. 2009; Konig et al. 2010; Zhang and Darnell 2011）。
+
+表 21-2 CLIP 方法的演化
+
+| 名称 | 描述 | 优点 | 缺点 | 参考文献 |
+| --- | --- | --- | --- | --- |
+| CLIP | 最早用来在小鼠脑组织交联 RNA-蛋白复合物的方案。见表21-1 | 便宜,被充分验证 | 低复杂度,需要针对内源蛋白的免疫沉淀抗体 | Ule et al. 2003, 2005;Jensen and Darnell 2008;http://lab.rockefelleredu/darnell/methods/CLIP |
+| HITS-CLIP | 使用下一代测序建立全基因组RNA-蛋白质图谱。最初用于小鼠脑组织。见表21-1 | 高复杂度,被充分验证,可通过突变鉴定 RNA-蛋白质交联位点 |  | Licatalosi et al. 2008 |
+| Crac CLIP | 使用亲和标签免疫沉淀 RNABP | 在缺乏针对内源蛋白的免疫沉淀抗体时可用 | 除非在内源位点插入标签,RNABP的化学计量及RNA图谱可能受到影响。RNABP-标签融合载体可能影响RNA结合特性 | Granneman et al. 2009 |
+| PAR-CLIP | 4-硫代鸟苷掺入到RNA,可提高交联效率 | 如果需要高交联效率,或天然蛋白交联效率低时有帮助;可以确定RNA-蛋白作用位点 | 目前局限于培养细胞;4-硫代鸟苷对细胞有毒性;T-C转换得分分析限制了CLIP序列间隔 | Hafner et al. 2010 |
+| iCLIP | 将反转录酶停顿位点确定到氨基酸-核苷酸交联位点附近的CLIP变种 | 能够确定 RNA-蛋白交联位点可高效俘获交联的RNA标签 | 需要针对内源蛋白进行免疫沉淀 | Konig et al. 2010 |
+
+---
+
+1422
+
+分子克隆实验指南（原书第四版）
+
+CLIP 是相对较新的技术，并通过许多实验室不断改进（Darnell 2010）。对多数应用来说，这里所描述的基本 CLIP 方案所产生的数百万 CLIP 标签通过生物信息学筛选足以获得数十万单一 CLIP 标签，这些单一 CLIP 标签可用来生成翔实的全基因组 RNA 图谱。
+
+![](../../raw/pages_0337-0352/images/page_338_image_3.jpg)
+
+## CLIP 实验设计原则
+
+在对一个感兴趣的 RNA 结合蛋白进行 CLIP 实验前，有几个问题需要考虑。一个关键的决定是起始材料的选择。CLIP 的一个主要优点是，它通过紫外线处理完整的细胞或生物体组织瞬时固定了 RNA 结合蛋白和 RNA 之间的结合，从而能检测到生理性相互作用。因此，对生物体、组织和发育状态的选择是非常关键的，而对诸如细胞或神经元活性的扰动控制及生物学相关问题是能而且应该谨慎选择的。另一个关键因素是在交联后成功地纯化 RNABP-RNA 复合物，这一般使用免疫沉淀方法。因为 RNA-蛋白质相互作用对化学计量是敏感的（如过表达的蛋白质或导致非特异的 RNA 相互作用），如果可能的话，提倡使用针对内源蛋白的抗体进行免疫沉淀，这有利于获得生理相关的 RNA-蛋白质相互作用。如果实在无法实现，过表达带标签的 RNA 结合蛋白也可以考虑。这时，须尽可能使表达水平接近生理水平，因此在内源位点敲入一个标签要优于表达一个 cDNA 转基因。
+
+因为基本的 CLIP 技术依赖于免疫沉淀作为一个主要的纯化步骤（虽然从理论上讲，任何蛋白质纯化手段都可以使用），免疫沉淀的质量常常是每个 CLIP 实验的限制因素。本章提供了几个预试验方案，用以评估 CLIP 实验的灵敏度和特异性（例如，方案 1 和方案 3）。一般说来，由于交联导致共价键结合，可以在严谨的条件下进行免疫沉淀和洗涤，而不必担心丢失 RNABP-RNA 相互作用。当然，抗体-RNABP 的相互作用强度还是需要考虑的。按下面方案所描述的方法，花些时间用渐次增强的洗涤条件评估最高严谨度是非常值得的，这样可以获得真正需要的 RNA-蛋白质复合物。
+
+方案2～5是典型的CLIP实验。因为需要在硝酸纤维膜上进行曝光并分析RNABP-RNA复合物，在方案4和方案5之间有一个自然的中止点。此时，滤膜可以在-80℃无限期保存，将来可以切下条带。曝光并分析方案4的结果后，就会发现有必要从头开始实验，以增加起始材料或稍稍调整纯化步骤。一旦各项实验因素都得到优化后（方案1），一个完整的CLIP实验可以在一个星期完成。随后进行的RNA测序（方案6）和生物信息学分析将完成整个HITS-CLIP实验。
+
+![](../../raw/pages_0337-0352/images/page_338_image_8.jpg)
+
+## 致谢
+
+我们感谢 Robert Darnell 实验室过去和现在的成员为最初建立、使用 CLIP 方法（特别是 Kirk Jensen 和 Jernej Ule）和应用高通量测序技术（特别是 Donny Licatalosi、Sung Wook Chi 和 Chaolin Zhang）所做的贡献。我们感谢实验室成员在实验方案改进和多个 RNA 结合蛋白中的应用，以及对目前方案的审阅中做出的贡献。此外，我们感谢所有分享 CLIP 技术使用经验的研究者。本研究方案及相关问题和评注都在我们的 CLIP 论坛上（http://lab.rockefeller.edu/darnell/），欢迎大家浏览。
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1423
+
+## 参考文献
+
+- Alexander P, Moroson H. 1962. Cross-linking of deoxyribonucleic acid to protein following ultra-violet irradiation of different cells. Nature 194:882–883.
+- Becht P, Konig J, Feldbrugge M. 2006. The RNA-binding protein Rrm4 is essential for polarity in Ustilago maydis and shuttles along microtubules. J Cell Sci 119: 4964–4973.
+- Bohnsack MT, Martin R, Granneman S, Ruprecht M, Schleiff E, Tollervey D. 2009. Prp43 bound at different sites on the pre-rRNA performs distinct functions in ribosome synthesis. Mol Cell 36: 583–592.
+- Boutz PL, Stoilov P, Li Q, Lin CH, Chawla G, Ostrow K, Shiue L, Ares MJ, Black DL. 2007. A post-transcriptional regulatory switch in polypyrimidine tract-binding proteins reprograms alternative splicing in developing neurons. Genes Dev 21: 1636–1652.
+- Brimacombe R, Stiege W, Kyriatsoulis A, Maly P. 1988. Intra-RNA and RNA-protein cross-linking techniques in Escherichia coli ribosomes. Methods Enzymol 164: 287–309.
+- Cech TR. 2009. Crawling out of the RNA world. Cell 136: 599–602.
+- Chen M, Manley JL. 2009. Mechanisms of alternative splicing regulation: Insights from molecular and genomics approaches. Nat Rev Mol Cell Biol 10: 741–754.
+- Chi SW, Zang JB, Mele A, Darnell RB. 2009. Argonaute HITS-CLIP decodes microRNA-mRNA interaction maps. Nature 460: 479–486.
+- Corrionero A, Valcarcel J. 2009. RNA processing: Redrawing the map of charted territory. Mol Cell 36: 918–919.
+- Darnell RB. 2010. HITS-CLIP: Panoramic views of protein–RNA regulation in living cells. Wiley Interdiscip Rev RNA 1: 266–286.
+- Darnell JC, Van Driesche SJ, Zhang C, Hung KY, Mele A, Fraser CE, Stone EF, Chen C, Fak JJ, Chi SW, et al. 2011. FMRP stalls ribosomal translocation on mRNAs linked to synaptic function and autism. Cell 146:247–261.
+- Daughters RS, Tuttle DL, Gao W, Ikeda Y, Moseley ML, Ebner TJ, Swanson MS, Ranum LP. 2009. RNA gain-of-function in spinocerebellar ataxia type 8. PLoS Genet 5: e1000600. doi: 10.1371/journal.pgen.1000600.
+- Dreyfuss G, Choi YD, Adam SA. 1984. Characterization of heterogeneous nuclear RNA–protein complexes in vivo with monoclonal antibodies. Mol Cell Biol 4: 1104–1114.
+- Du H, Cline MS, Osborne RJ, Tuttle DL, Clark TA, Donohue JP, Hall MP, Shiue L, Swanson MS, Thornton CA, et al. 2010. Aberrant alternative splicing and extracellular matrix gene expression in mouse models of myotonic dystrophy. Nat Struct Mol Biol 17: 187–193.
+- Fecko CJ, Munson KM, Saunders A, Sun G, Begley TP, Lis JT, Webb WW. 2007. Comparison of femtosecond laser and continuous wave UV sources for protein–nucleic acid crosslinking. Photochem Photobiol 83: 1394–1404.
+- Gama-Carvalho M, Barbosa-Morais NL, Brodsky AS, Silver PA, Carmo-Fonseca M. 2006. Genome-wide identification of functionally distinct subsets of cellular mRNAs associated with two nucleocytoplasmic-shuttling mammalian splicing factors. Genome Biol 7: R113. doi:10.1186/gb-2006-7-11-r113.
+- Gilmour DS, Lis JT. 1984. Detecting protein–DNA interactions in vivo: Distribution of RNA polymerase on specific bacterial genes. Proc Natl Acad Sci 81: 4275–4279.
+- Granneman S, Kudla G, Petfalski E, Tollervey D. 2009. Identification of protein binding sites on U3 snoRNA and pre-rRNA by UV cross-linking and high-throughput analysis of cDNAs. Proc Natl Acad Sci 106:9613–9618.
+- Guil S, Caceres JF. 2007. The multifunctional RNA-binding protein hnRNP A1 is required for processing of miR-18a. Nat Struct Mol Biol 14: 591–596.
+- Hafner M, Landthaler M, Burger L, Khorshid M, Hausser J, Berninger P, Rothballer A, Ascano MJ, Jungkamp AC, Munschauer M, et al. 2010. Transcriptome-wide identification of RNA-binding protein and microRNA target sites by PAR-CLIP. Cell 141: 129–141.
+- Huang CS, Shi SH, Ule J, Ruggiu M, Barker LA, Darnell RB, Jan YN, Jan LY. 2005. Common molecular pathways mediate long-term potentiation of synaptic excitation and slow synaptic inhibition. Cell 123: 105–118.
+- Ilyin YV, Georgiev GP. 1969. Heterogeneity of deoxynucleoprotein particles as evidenced by ultracentrifugation of cesium chloride density gradient. J Mol Biol 41: 299–303.
+- Jensen KB, Darnell RB. 2008. CLIP: Crosslinking and immunoprecipitation of in vivo RNA targets of RNA-binding proteins. Methods Mol Biol 488: 85–98.
+- Kalsotra A, Xiao X, Ward AJ, Castle JC, Johnson JM, Burge CB, Cooper TA. 2008. A postnatal switch of CELF and MBNL proteins reprograms alternative splicing in the developing heart. Proc Natl Acad Sci 105:20333–20338.
+- Konig J, Zarnack K, Rot G, Curk T, Kayikci M, Zupan B, Turner DJ, Luscombe NM, Ule J. 2010. iCLIP reveals the function of hnRNP particles in splicing at individual nucleotide resolution. Nat Struct Mol Biol 17:909–915.
+- Kuo MH, Allis CD. 1999. In vivo cross-linking and immunoprecipitation for studying dynamic protein: DNA associations in a chromatin environment. Methods 19: 425–433.
+- Lebedeva S, Jens M, Theil K, Schwanhäusser B, Selbach M, Landthaler M,
+- Rajewsky N. 2011. Transcriptome-wide analysis of regulatory interactions of the RNA-binding protein HuR. Mol Cell 43: 340–352.
+- Leung AK, Young AG, Bhutkar A, Zheng GX, Bosson AD, Nielsen CB, Sharp PA. 2011. Genome-wide identification of Ago2 binding sites from mouse embryonic stem cells with and without mature microRNAs. Nat Struct Mol Biol 18: 237–244. (Erratum. 2011. Nat Struct Mol Biol 18: 1084.)
+- Li Y, Bor YC, Misawa Y, Xue Y, Rekosh D, Hammarskjold ML. 2006. An intron with a constitutive transport element is retained in a Tap messenger RNA. Nature 443: 234–237.
+- Licatalosi DD, Darnell RB. 2010. RNA processing and its regulation: Global insights into biological networks. Nat Rev Genet 11: 75–87.
+- Licatalosi DD, Mele A, Fak JJ, Ule J, Kayikci M, Chi SW, Clark TA, Schweitzer AC, Blume JE, Wang X, et al. 2008. HITS-CLIP yields genome-wide insights into brain alternative RNA processing. Nature 456: 464–469.
+- Llorian M, Schwartz S, Clark TA, Hollander D, Tan LY, Spellman R, Gordon A, Schweitzer AC, de la Grange P, Ast G, et al. 2010. Position-dependent alternative splicing activity revealed by global profiling of alternative splicing events regulated by PTB. Nat Struct Mol Biol 17:1114–1123.
+- Mayrand S, Pederson T. 1981. Nuclear ribonucleoprotein particles probed in living cells. Proc Natl Acad Sci 78: 2208–2212.
+- Mayrand S, Setyono B, Greenberg JR, Pederson T. 1981. Structure of nuclear ribonucleoprotein: Identification of proteins in contact with poly(A) $^{+}$ heterogeneous nuclear RNA in living HeLa cells. J Cell Biol 90: 380–384.
+- Michlewski G, Guil S, Semple CA, Caceres JF. 2008. Posttranscriptional regulation of miRNAs harboring conserved terminal loops. Mol Cell 32: 383–393.
+- Mili S, Steitz JA. 2004. Evidence for reassociation of RNA-binding proteins after cell lysis: Implications for the interpretation of immunoprecipitation analyses. RNA 10: 1692–1694.
+- Mukherjee N, Corcoran DL, Nusbaum JD, Reid DW, Georgiev S, Hafner M, Ascano M Jr, Tuschl T, Ohler U, Keene JD. 2011. Integrative regulatory mapping indicates that the RNA-binding protein HuR couples pre-mRNA processing and mRNA stability. Mol Cell 43: 327–339.
+- Newman MA, Thomson JM, Hammond SM. 2008. Lin-28 interaction with the Let-7 precursor loop mediates regulated microRNA processing. RNA 14: 1539–1549.
+- Nilsen TW, Graveley BR. 2010. Expansion of the eukaryotic proteome by alternative splicing. Nature 463: 457–463.
+- Ozsolak F, Platt AR, Jones DR, Reifenberger JG, Sass LE, McInerney P, Thompson JF, Bowers J, Jarosz M, Milos PM. 2009. Direct RNA sequencing. Nature 461: 814–818.
+- Racca C, Gardiol A, Eom T, Ule J, Triller A, Darnell RB. 2010. The neuronal splicing factor Nova co-localizes with target RNAs in the dendrite. Front Neural Circuits 4: 5.
+- Ruggiu M, Herbst R, Kim N, Jevsek M, Fak JJ, Mann MA, Fischbach G, Burden SJ, Darnell RB. 2009. Rescuing Z+ agrin splicing in Nova null mice restores synapse formation and unmasks a physiologic defect in motor neuron firing. Proc Natl Acad Sci 106: 3513–3518.
+- Sanford JR, Coutinho P, Hackett JA, Wang X, Ranahan W, Caceres JF. 2008. Identification of nuclear and cytoplasmic mRNA targets for the shuttling protein SF2/ASF. PLoS ONE 3: e3369. doi: 10.1371/journal.pone.0003369.
+- Sanford JR, Wang X, Mort M, Vanduyn N, Cooper DN, Mooney SD, Edenberg HJ, Liu Y. 2009. Splicing factor SFRS1 recognizes a functionally diverse landscape of RNA transcripts. Genome Res 19: 381–394.
+- Schoemaker HJ, Schimmel PR. 1974. Photo-induced joining of a transfer RNA with its cognate aminoacyl-transfer RNA synthetase. J Mol Biol 84: 503–513.
+- Sharp PA. 2009. The centrality of RNA. Cell 136: 577–580.
+- Smith KC. 1962. Dose dependent decrease in extractability of DNA from bacteria following irradiation with ultraviolet light or with visible light plus dye. Biochem Biophys Res Commun 8: 157–163.
+- Solomon MJ, Varshavsky A. 1985. Formaldehyde-mediated DNA-protein crosslinking: A probe for in vivo chromatin structures. Proc Natl Acad Sci 82: 6470–6474.
+- Tollervey JR, Curk T, Rogelj B, Briese M, Cereda M, Kayikci M, König J, Hortobágyi T, Nishimura AL, Zupunski V, et al. 2011. Characterizing the RNA targets and position-dependent splicing regulation by TDP-43. Nat Neurosci 14: 452–458.
+- Ule J, Jensen K, Mele A, Darnell RB. 2005. CLIP: A method for identifying protein–RNA interaction sites in living cells. Methods 37: 376–386.
+- Ule J, Jensen KB, Ruggiu M, Mele A, Ule A, RB Darnell. 2003. CLIP identifies Nova-regulated RNA networks in the brain. Science 302: 1212–1215.
+- Ule J, Stefani G, Mele A, Ruggiu M, Wang X, Taneri B, Gaasterland T, Blencowe BJ, Darnell RB. 2006. An RNA map predicting Novadependent splicing regulation. Nature 444: 580–586.
+- Urlaub H, Hartmuth K, Luhrmann R. 2002. A two-tracked approach to analyze RNA-protein crosslinking sites in native, nonlabeled small
+
+---
+
+1424
+
+分子克隆实验指南（原书第四版）
+
+- nuclear ribonucleoprotein particles. Methods 26: 170–181.
+- Wang Z, Kayikci M, Briese M, Zarnack K, Luscombe NM, Rot G, Zupan B, Curk T, Ule J. 2010. iCLIP predicts the dual splicing effects of TIA-RNA interactions. PLoS Biol 8: e1000530. doi: 10.1371/journal.pbio.1000530.
+- Witten JT, Ule J. 2011. Understanding splicing regulation through RNA splicing maps. Trends Genet 27: 89–97.
+- Wolf JJ, Dowell RD, Mahony S, Rabani M, Gifford DK, Fink GR. 2010. Feed-forward regulation of a cell fate determinant by an RNA-binding protein generates asymmetry in yeast. Genetics 185: 513–522.
+- Wurtmann EJ, Wolin SL. 2010. A role for a bacterial ortholog of the Ro autoantigen in starvation-induced rRNA degradation. Proc Natl Acad Sci 107: 4022–4027.
+- Xing Y, Stoilov P, Kapur K, Han A, Jiang H, Shen S, Black DL, Wong WH. 2008. MADS: A new and improved method for analysis of differential alternative splicing by exon-tiling microarrays. RNA 14:1470–1479.
+- Xu M, Medvedev S, Yang J, Hecht NB. 2009. MIWI-independent small RNAs (MSY-RNAs) bind to the RNA-binding protein, MSY2, in male germ cells. Proc Natl Acad Sci 106: 12371–12376.
+- Xue Y, Zhou Y, Wu T, Zhu T, Ji X, Kwon YS, Zhang C, Yeo G, Black DL, Sun H, et al. 2009. Genome-wide analysis of PTB–RNA interactions reveals a strategy used by the general splicing repressor to modulate exon inclusion or skipping. Mol Cell 36: 996–1006.
+- Yano M, Hayakawa-Yano Y, Mele A, Darnell RB. 2010. Nova2 regulates neuronal migration through an RNA switch in disabled-1 signaling. Neuron 66: 848–858.
+- Yeo GW, Coufal NG, Liang TY, Peng GE, Fu XD, Gage FH. 2009. An RNA code for the FOX2 splicing regulator revealed by mapping RNA-protein interactions in stem cells. Nat Struct Mol Biol 16: 130–137.
+- Yuan Y, Compton SA, Sobczak K, Stenberg MG, Thornton CA, Griffith JD, Swanson MS. 2007. Muscleblind-like 1 interacts with RNA hairpins in splicing target and pathogenic RNAs. Nucleic Acids Res 35: 5474–5486
+- Zhang C, Darnell RB. 2011 Mapping in vivo protein–RNA interactions at single-nucleotide resolution from HITS-CLIP data. Nat Biotechnol 29:607–614 (also see online Methods section; doi:10.1038/nbt.1873).
+- Zhang C, Zhang Z, Castle J, Sun S, Johnson J, Krainer AR, Zhang MQ. 2008. Defining the regulatory network of the tissue-specific splicing factors Fox-1 and Fox-2. Genes Dev 22: 2550–2563.
+- Zhang C, Frias MA, Mele A, Ruggiu M, Eom T, Marney CB, Wang H, Licatalosi DD, Fak JJ, Darnell RB. 2010. Integrative modeling defines the Nova splicing-regulatory network and its combinatorial controls. Science 329: 439–443.
+- Zisoulis DG, Lovci MT, Wilbert ML, Hutt KR, Liang TY, Pasquinelli AE, Yeo GW. 2010. Comprehensive discovery of endogenous Argonaute binding sites in Caenorhabditis elegans. Nat Struct Mol Biol 17: 173–179.
+
+## 方案 1 CLIP 实验免疫沉淀严谨性的优化
+
+该方案旨在为 CLIP 实验优化 RNABP 纯化方法。需要评估的关键变量是确定抗体的质量及用以免疫沉淀大部分但非全部 RNABP 的抗体使用量（抗体滴定会减少非特异结合），以及确定抗体-抗原相互作用对严谨洗涤条件的耐受性。这些实验的结果可先用免疫印迹验证，然后再用 CLIP 预实验方案确认（如方案 3 所描述）。请注意，二者是完全不同的试验，免疫印迹或许显示结果非常干净，因为免疫印迹无法检测到与一个无关 RNA 结合蛋白交联的污染 RNA，但 CLIP 预实验通过放射自显影就可以检测到。因此，在用不同方法洗涤后，免疫印迹主要用来确定有多少 RNABP 被免疫沉淀下来并保留在珠子上，而 CLIP 预实验则用来评估交联到感兴趣 RNABP 上的 RNA 纯度。一旦预实验结束，最优化的免疫沉淀条件就应该用到正常的 CLIP 实验中，包括交联、RNA 酶消化、接头连接、RNA 标签标记以及放射自显影结果分析，这些在方案 3 和方案 4 中讨论。
+
+![](../../raw/pages_0337-0352/images/page_340_image_21.jpg)
+
+## 实验材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+需验证的抗体
+
+珠子洗涤缓冲液（BWB）（PBS，pH 7.4，含 0.02% Tween20）
+
+细胞或组织裂解物（按方案2制备）
+
+蛋白A或蛋白G偶联的Dynabeads磁珠（Life Technologies公司，目录号100-01D/100-03D）
+
+高盐洗涤缓冲液&lt;R&gt;
+
+高严谨性免疫沉淀洗涤缓冲液&lt;R&gt;
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1425
+
+上样缓冲液(4×)(NuPAGE LDS 样品缓冲液; Life Technologies 公司, 目录号 NP0008)
+
+低盐洗涤缓冲液&lt;R&gt;
+
+温和免疫沉淀洗涤缓冲液&lt;R&gt;
+
+中度免疫沉淀洗涤缓冲液（参见  $1 \times$  PXL 洗涤缓冲液）&lt;R&gt;
+
+NuPAGE MOPS 或 MES 电泳缓冲液（20×）（Life Technologies 公司，目录号 NP0001 或 NP0002）
+
+NuPAGE 样品还原剂（10×）（Life Technologies 公司，目录号 NP0004）
+
+NuPAGE 转移缓冲液（20×）（Life Technologies 公司，目录号 NP00061）
+
+无 RNA 酶水（配制缓冲液用）（如 Applied Biosystems/Ambion 公司，目录号 4387936）
+
+## 设备
+
+冷室
+
+适用于微量离心管的旋转式混合器（免疫沉淀过程中保持珠子处于悬浮状态）
+
+磁珠聚集装置（Life Technologies 公司，目录号 123-21D）
+
+微量离心管[National Scientific Supply 公司，SlickSeal tubes（无 RNA 酶），目录号 CN170S-GT，VWR#20172-945]
+
+微型凝胶转移装置（如 XCell II 印迹模块；Life Technologies 公司）和供电源
+
+硝酸纤维膜[如 Optitran BA-S 83 或 85（增强硝酸纤维膜；Whatman 公司），Immobilon-P（PVDF；Millipore 公司），或 Protran BA85（纯硝酸纤维膜；Whatman 公司）]
+
+我们在 CLIP 实验中使用 Protran BA85 分析 RNABP-RNA 复合物。
+
+Novex NuPage Bis-Tris 凝胶和凝胶电泳装置（Life Technologies 公司）
+
+恒温混合仪
+
+![](../../raw/pages_0337-0352/images/page_341_image_20.jpg)
+
+## 方法
+
+## 制备加载抗体的磁珠
+
+1. 在无 RNA 酶微量离心管中对  $400 \mu L$  蛋白 A Dynabead 磁珠进行清洗，洗 3 次，每次用 1 mL BWB 缓冲液。
+
+厂商的操作手册上包含了重要的有关 Dynabead 磁珠及磁架的辅助信息和操作小贴士。
+
+2. 在 BWB 缓冲液中重悬磁珠，并加入  $32 \mu g$  相应抗体，总体积为  $400 \mu L$ 。在室温旋转孵育 30min。
+
+如果使用桥接抗体（如 Fc 片段特异的兔抗鼠 IgG，Jackson ImmunoResearch 公司，315-001-008），加入 32μg 桥接抗体，室温翻转混合孵育 30min，用 1mL BWB 洗 3 次。再用最初体积（小于加入抗体后的体积）的 BWB 重悬，加入 64μg 按 1:1 混合的两种针对不同蛋白表位的单克隆抗体。在室温旋转孵育 30min。
+
+蛋白 A Dynabead 磁珠的结合能力大约是每  $100 \mu L$  重悬磁珠可结合  $8 \mu g$  人的 IgG。抗体结合到磁珠上须按照最初的磁珠体积操作（这里是  $400 \mu L$ ，但可根据需要及抗体进行调整）。
+
+3. 用 $1 \mathrm{~mL} 1 \times \mathrm{BWB}$ 缓冲液洗涤加载抗体的磁珠, 洗 3 次。
+
+磁珠可用手颠倒几次重悬，但用旋转混合器让磁珠完全重悬更方便一些。
+
+4. 洗完后，用最初体积的 $1 \times \mathrm{BWB}$ 缓冲液（这里是 $400\mu \mathrm{L}$ ）重悬，置于冰上直至使用。
+
+---
+
+1426
+
+分子克隆实验指南（原书第四版）
+
+## 免疫沉淀和洗涤预实验
+
+5. 按照方案 2 或根据具体实验修改的条件制备细胞或组织的裂解物。
+
+需注意的是，在完整的 CLIP 方案中，裂解前的细胞或组织先要进行交联。但在免疫沉淀预实验中，免疫印迹用来评估抗原的消耗，交联步骤可以省略。
+
+方案 2 是用类似于 RIPA 的变性缓冲液制备裂解物的标准方法。针对这种免疫沉淀预实验，除了变性裂解物，非变性裂解物也应该用作温和免疫沉淀的起始材料。
+
+6. 在免疫沉淀前保留少量裂解物以用于免疫印迹分析，这是免疫沉淀实验的“input”。
+
+裂解物保留量取决于蛋白检测的难易程度。一般来说，20μL 裂解物组分可与 5μL 5×上样缓冲液混合。尽管这样就可以检测到许多蛋白质，但要检测其他蛋白质则需要用三氯乙酸（TCA）对较大体积的裂解物进行沉淀。需注意的是，在标准 SDS-PAGE 微型凝胶的每个泳道的上样体积超过 100μL 后，会导致异常迁移及条带拖尾。
+
+7. 将步骤 4 准备的加载了抗体的磁珠加入到细胞裂解物中。抗体使用量取决于监测蛋白消耗的预实验结果及有效抗原量和所用抗体亲和力等因素。
+
+举例:对小鼠脑组织的 Nova CLIP 实验来说，在 300mg 交联的小鼠脑组织裂解物中加入 400μL 加载的蛋白 G Dynabead 磁珠[24μg 羊抗 Nova2 抗体（C-16，sc-10546）结合到 400μL Dynabead 磁珠]。
+
+8. 加载的磁珠和细胞/组织裂解物在  $4^{\circ}$ C 旋转孵育 2h，然后用磁架富集复合物。保留  $10 \sim 20 \mu L$  上清，通过免疫印迹分析抗原吸附程度。
+
+需要注意的是，免疫沉淀后的上清被所加的磁珠稀释了，所以用于免疫印迹分析的量必须进行相应调整。可以把缓冲液加入到原裂解样品中，稀释到免疫沉淀后上清相应的浓度。
+
+9. 把磁珠分成几份，分别按照下面所述的温和、中度及严谨的条件进行洗涤。所有洗涤的体积都是 1mL，在旋转混合器上旋转 2～4min 进行完全重悬。洗涤时更换离心管也有助于减少免疫沉淀的背景。
+
+i. 温和洗涤条件:用温和免疫沉淀洗涤缓冲液洗 4 次。
+
+ii. 中度洗涤条件:用中度免疫沉淀洗涤缓冲液（1×PXL 洗涤缓冲液）洗 4 次。
+
+iii. 严谨洗涤条件:先用高严谨性免疫沉淀洗涤缓冲液洗一次，再用高盐洗涤缓冲液洗一次，最后用低盐洗涤缓冲液洗两次。
+
+10. 最后一次洗完后，用加了还原剂的 $1 \times$ NuPage LDS 上样缓冲液进行重悬。如果 RNABP 在胶上与 IgG 的轻重链大小相近，样品还原剂可以不用。
+
+在标准的 SDS 样品缓冲液加热到  $90^{\circ}$ C 后，蛋白 A 会从 Dynabead 磁珠上脱落，导致凝胶上背景很高并模糊所感兴趣的条带。替代方案是用 NuPAGE LDS 上样缓冲液，加热不要超过  $70^{\circ}$ C，这一方案已被成功地用来评估免疫沉淀反应。
+
+11. 在恒温混合仪上将重悬的磁珠于  $70^{\circ}$ C 振摇 10min。下一步是用 Novex NuPage 凝胶对重悬液、此前保留的 Input 裂解物和上清液进行电泳，分析你感兴趣的 RNABP（见方案 3）。再转膜进行免疫印迹分析。
+
+12. 用免疫印迹分析比较等量 Input、免疫沉淀后的上清及免疫沉淀产物中 RNABP 的水平，判断免疫沉淀是否成功（见第 19 章，方案 19）。
+
+见“疑难解答”。
+
+![](../../raw/pages_0337-0352/images/page_342_image_21.jpg)
+
+## 疑难解答
+
+问题（步骤12）:免疫沉淀后上清中RNABP的水平与Input的相似，表明免疫沉淀过程只从“input”中去除了极少量的抗原。
+
+解决方案:如果在最温和的免疫沉淀条件下，确实获得了这样的结果，可能是抗体使用量不够。另一种可能性是，裂解物制备时没有完全变性，免疫沉淀时抗原表位被隐蔽而
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1427
+
+没有充分暴露。例如，一个核糖体蛋白被埋在完整的核糖体中，就需要很强的变性处理。如果抗体识别的是天然表位（适当的折叠）的话，也可能是变性条件太强导致抗原表位被破坏。
+
+问题（步骤 12）:在免疫沉淀后的上清中，抗原从 input 中清除，但在免疫沉淀产物中也没有。
+
+解决方案:可能是由于抗体抗原反应亲合力低或者抗体与蛋白A磁珠的结合能力低，在洗涤过程中复合物丢失。免疫沉淀中用的许多小鼠IgG亚型与蛋白A的亲合力较低。替代方法:选用蛋白G，共价交联抗体到激活的磁珠上；或按照方案所述，使用兔抗鼠的IgG桥接抗体。在极少情况下，可能是抗原没有从磁珠上释放出来。确认一下样品缓冲液中的还原剂是否过期以及样品是否确实加热到 $70^{\circ}\mathrm{C}$ 。如果需要，可采用更强的条件让抗原从磁珠上释放出来（加热到 $95^{\circ}\mathrm{C}$，加β-巯基乙醇），但这样磁珠上的蛋白A会掉下来，并模糊RNABP条带。换一种二抗（如辣根过氧化物酶偶联的蛋白G）可以减轻这一问题。
+
+问题（步骤 12）:只有在最温和条件下才能获得理想的抗原免疫沉淀效果。
+
+解决方案:虽然这看起来不是问题，但实际上，我们发现如果温和的免疫沉淀是仅有的初始纯化步骤，很难获得干净的CLIP结果（与对照相比）。可以用另一个抗体或抗体组合试试。一般来说，多克隆抗体或混合的单克隆抗体比单个单克隆抗体具有更高的亲合力。如果没有其他抗体可用，可以用亚细胞组分进行温和免疫沉淀。如果这些方法都不行，可以使用带标签的RNABP，这可以通过转基因表达或敲入到内源位点等手段实现。后一种在内源基因上加标签的方法更适用，因为这样可以维持正常的RNABP表达模式。需要进行功能分析，以确保标签不影响蛋白质的功能。
+
+问题（步骤12）:免疫印迹显示免疫沉淀产物有多条带，这显示免疫沉淀污染了其他蛋白质。
+
+解决方案:这是否是一个问题，取决于其他蛋白质是否是RNA结合蛋白。这一问题在方案13的“疑难解答”部分解释的更详细，在方案3中，交联到免疫沉淀蛋白上的标记RNA可以显现出来。但需要注意的是，在CLIP实验中使用过量的抗体只会增加噪声，而不会增强检测信号。一旦选择了最佳的抗体、裂解物制备方案及洗涤缓冲液后，对加载了抗体的磁珠进行滴定就非常重要了。我们的目的是免疫沉淀下来大部分而不是全部RNABP，保证只有最强亲合力的免疫表位被沉淀下来，这可以通过检测在免疫沉淀后的上清中被消耗的蛋白质来实现。
+
+![](../../raw/pages_0337-0352/images/page_343_image_9.jpg)
+
+## 讨论
+
+优化 CLIP 的免疫沉淀中有 3 点需要注意:①细胞或组织裂解物的制备（见方案 2）；②抗体的选择；③洗涤条件的严谨性。
+
+## 优化裂解物的制备
+
+虽然本方案的目的是确定最佳的免疫沉淀严谨性，免疫沉淀用的裂解物制备也需要优化。方案2（1×PBS、0.1% SDS、0.5%脱氧胆酸钠和0.5% NP-40）中的方法适合大部分蛋白质-蛋白质相互作用和非交联的蛋白质-RNA相互作用。在某些条件下，用很强的变性条件（1%～2% SDS）完全解离RNP复合物是非常重要的。例如，在分析核糖体蛋白-RNA相互作用时，就需要克服核糖体和其他稳定RNP复合物对RIPA等常规IP缓冲液的抵抗作用。用最多含1% NP-40或Triton X-100的非变性缓冲液去裂解细胞，并以2000g离心去掉细胞核，这种处理方法对胞质RNABP来说是合适的。
+
+准备最佳裂解物制备方案时，需要考虑下面几个因素:选用变性还是非变性条件；这
+
+---
+
+1428
+
+分子克隆实验指南（原书第四版）
+
+些条件是否会导致感兴趣的 RNABP 从其他蛋白质（可能构成复合体）上解离。这对每个特定的 RNABP 来说都需要通过实验确定。查看已发表 CLIP 实验所使用的条件很有价值，CLIP 实验已经在整体组织（小鼠脑组织）、组织培养细胞、线虫、酵母、真细菌及真菌和其他物种中成功完成（Darnell 2010; Darnell et al. 2011）。
+
+## 抗体选择
+
+抗体选择对理想的 CLIP 实验来说是一个关键步骤。因为有多个免疫表位可以识别，多克隆抗体对抗原有更高的亲和力；但它们并不一定总是适用，因为低特异性或识别交叉反应表位，免疫沉淀下来其他蛋白质。尽管单克隆抗体亲和力低，但可能有助于解决这一问题。增加亲和力并能保持特异性的一个方法是，用识别同一个蛋白质不同表位的不同抗体混合物进行免疫沉淀反应。在严谨的洗涤条件下，使用桥接抗体（如 Fc 片段特异的兔抗鼠 IgG）增加蛋白 A 磁珠上小鼠 IgG 的滞留量，就可以达到这一目的（Darnell et al. 2011）。
+
+## 洗涤条件的严谨性
+
+在 CLIP 实验中要利用紫外照射导致的 RNA-蛋白质共价结合的优势，在最严谨而不丢失 RNABP 的条件下进行免疫沉淀反应是非常重要的（Darnell et al. 2011）。对新的抗体，我们都要在温和、中度及非常严谨的条件下进行筛选。
+
+![](../../raw/pages_0337-0352/images/page_344_image_7.jpg)
+
+## 配方
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+CLIP 方案所用的所有试剂的制备和保存必须避免 RNA 酶的污染。见第 6 章关于实验室无 RNA 酶溶液的配制及 RNA 操作的通用准则。
+
+高盐洗涤缓冲液
+
+| 试剂 | 含量(1L) | 终浓度 |
+| --- | --- | --- |
+| Tris-HCl(1mol/L,pH 7.5) | 15mL | 15mmol/L |
+| EDTA(0.5mol/L,pH 8.0) | 10mL | 5mmol/L |
+| EGTA(0.5mol/L) | 5mL | 2.5mmol/L |
+| Triton X-100 | 10mL | 1%(V/V) |
+| Na-deoxycholate(DOC) | 10 g | 1%(m/V) |
+| SDS(20%) | 5mL | 0.1%(V/V) |
+| NaCl(5.0mol/L) | 200mL | 1mol/L |
+
+用无 RNA 酶的水配至 1L，4℃储存。
+
+高严谨性免疫沉淀洗涤缓冲液
+
+| 试剂 | 含量(1L) | 终浓度 |
+| --- | --- | --- |
+| Tris-HCl(1mol/L,pH 7.5) | 15mL | 15mmol/L |
+| EDTA(0.5mol/L,pH 8.0) | 10mL | 5mmol/L |
+| EGTA(0.5mol/L) | 5mL | 2.5mmol/L |
+| Triton X-100 | 10mL | 1%(V/V) |
+| Na-deoxycholate(DOC) | 10g | 1%(m/V) |
+| SDS(20%) | 5mL | 0.1%(V/V) |
+| NaCl(5.0mol/L) | 24mL | 120mmol/L |
+| KCl(1.0mol/L) | 25mL | 25mmol/L |
+
+用无 RNA 酶的水配至 1L，4℃储存。
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1429
+
+低盐洗涤缓冲液
+
+| 试剂 | 含量(1L) | 终浓度 |
+| --- | --- | --- |
+| Tris-HCl(1mol/L,pH 7.5) | 15mL | 15mmol/L |
+| EDTA(0.5mol/L,pH 8.0) | 10mL | 5mmol/L |
+
+用无 RNA 酶的水配至 1L，4℃储存。
+
+温和免疫沉淀洗涤缓冲液
+
+| 试剂 | 含量(1L) | 终浓度 |
+| --- | --- | --- |
+| HEPES(1mol/L,室温下pH 7.4) | 20mL | 20mmol/L |
+| NaCl(5mol/L) | 30mL | 150mmol/L |
+| MgCl2(1mol/L) | 5mL | 5mmol/L |
+| Nonidet P-40(NP-40) | 10mL | 1%(V/V) |
+
+用无 RNA 酶的水配至 1L，4℃储存。
+
+## 中度免疫沉淀洗涤缓冲液
+
+(也称  $1 \times PXL$  洗涤缓冲液，类似于 RIPA)
+
+| 试剂 | 含量(1L) | 终浓度 |
+| --- | --- | --- |
+| PBS(10×) | 100mL | 1× |
+| SDS(20%) | 5mL | 0.1%(V/V) |
+| 脱氧胆酸钠 | 5g | 0.5%(m/V) |
+| Nonidet P-40(NP-40) | 5mL | 0.5%(V/V) |
+
+购买的  $10 \times$  PBS 是组织培养级；购买的无 RNA 酶的 SDS 是 20% 储存液。
+
+用无 RNA 酶的水配至 1L，4℃储存。
+
+## 参考文献
+
+Darnell RB. 2010. HITS-CLIP: Panoramic views of protein–RNA regulation in living cells. Wiley Interdiscip Rev RNA 1: 266–286.
+Darnell JC, Van Driesche SJ, Zhang C, Hung KY, Mele A, Fraser CE, Stone EF, Chen C, Fak JJ, Chi SW, et al. 2011. FMRP stalls ribosomal translocation on mRNAs linked to synaptic function and autism Cell 146: 247–261.
+
+## 方案 2 活细胞的紫外交联和裂解物制备
+
+CLIP 实验最大的优势之一是活细胞内的 RNA-蛋白质复合物被紫外线照射固定在原位。本方案是对哺乳动物组织培养细胞或整体组织进行紫外交联的方法。对后者来说，组织一般先要磨碎，才能进行交联。当然，如果所选组织的厚度很薄，就没有必要再磨碎了。最好一次只处理尽可能少的组织，保持在冰冷的缓冲液中，而且一旦取材尽快交联，这样才能在交联的时候保持天然的相互作用。
+
+![](../../raw/pages_0337-0352/images/page_345_image_18.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+---
+
+1430
+
+分子克隆实验指南（原书第四版）
+
+## 试剂
+
+感兴趣的细胞或整体组织
+
+HEPES 缓冲的 Hank's 平衡盐溶液（HHBSS）（冰冷的）
+
+Hank's 平衡盐溶液（1×）（无镁离子及钙离子，不加酚红）（Life Technologies 公司；目录号 14185052）（包含 10mmol/L HEPES，pH 7.3）无菌过滤，4℃保存。
+
+磷酸盐缓冲液（PBS）（组织培养级，无镁离子或钙离子），加热至 $37^{\circ} \mathrm{C}$
+
+## 设备
+
+细胞培养用离心机（适用 15mL 和 50mL 圆锥形离心管；用于细胞收集）
+
+冷室
+
+浅托盘中含少量水的碎冰（须适用于紫外交联仪；用于组织分解和交联）
+
+低温冰箱（-80℃）（用于细胞沉淀的长期保存）
+
+冷冻微型离心机
+
+微量离心管[National Scientific Supply 公司，SlickSeal tubes（无 RNA 酶），目录号 CN170S-GT，VWR#20172-945]
+
+组织培养皿（35～150mm，按需要选用）
+
+紫外交联仪（254nm）（如Stratagene公司的Stratalinker model 2400，虽已停产但在分子生物学实验室广泛使用；或Spectroline公司的Spectrolinker，带 $254\mathrm{nm}$ 灯管）
+
+![](../../raw/pages_0337-0352/images/page_346_image_16.jpg)
+
+## 方法
+
+## 紫外交联单层或悬浮培养单细胞
+
+如果缺乏特异且高亲和力抗体，无法用组织进行免疫沉淀时，可以使用表达带标签RNABP的体外培养细胞。
+
+1. 对单层培养细胞，细胞生长在组织培养皿上，用 $37^{\circ}\mathrm{C}$ 的PBS漂洗一次，再加入PBS至刚好覆盖单层细胞。对悬浮培养来说，温和地漂洗细胞沉淀，再用交联所需最小体积的PBS重悬。例如，$10^{7}$ 个细胞需用 $1\mathrm{mL}$ PBS重悬，并转移至一个 $35\mathrm{mm}$ 的皿或6孔板的一个孔中。将培养皿置于带冰水的浅盘上，并放进紫外交联仪。
+
+用温 PBS 替代培养基，因为培养基会影响紫外交联效果。
+
+见“疑难解答”。
+
+2. 在紫外交联仪中照射培养细胞，先照射 $400\mathrm{mJ/cm^2}$，再照射 $200\mathrm{mJ/cm^2}$。
+
+与完整的组织相比，单层培养的细胞只需较低剂量的紫外线就可以充分交联。更高剂量的交联并不能获得更好的效果，因为过量的紫外照射会导致RNA断裂（photonicking）及包括RNA-RNA交联（photodimerization）在内的过度交联。适度紫外线的剂量由紫外检测器确定，并不需要根据皿的大小来调整。
+
+Stratalinker 或 Spectrolinker 交联仪都配有紫外检测器，可以监测细胞/组织接收的实际剂量。计量单位是 J/m²。例如，要照射 400mJ/cm²，就在 Stratalinker 的键盘上输入 “4000”，按 “Energy”，然后按 “Start”。因为单个细胞更容易被紫外线穿透，因此与磨碎的组织相比，只需使用较低剂量的紫外线。
+
+见“疑难解答”。
+
+3. 收集细胞。如果是悬浮细胞，于 $4^{\circ} \mathrm{C}$ 温和离心收集细胞，并用约 3 倍细胞沉淀体积的冰冷 PBS 重悬。每 $1 \mathrm{~mL}$ 细胞悬液分至 1 个微量离心管中。用微量离心机于 $4^{\circ} \mathrm{C}$ 以 $5000 \mathrm{r} / \mathrm{min}$ 离心收集细胞，去上清，并冻存于 $-80^{\circ} \mathrm{C}$ 直至使用（每个离心管存放约 $200 \sim 300 \mu \mathrm{L}$ 细胞沉淀）。交联的单层培养细胞通常可以被冰冷的 PBS 及 EDTA 洗下来；如果不能，可以在裂解缓冲液中用细胞刮刀直接刮下来，省掉离心步骤。裂解物可以保存于 $-80^{\circ} \mathrm{C}$，也可以直接
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1431
+
+使用。在冷冻样品前，可以进行任何必要的纯化步骤（如亚细胞组分分离）。
+
+冻存细胞或细胞裂解物以便以后使用，但要注意冻融过程中会发生蛋白聚集，用新鲜样品可能会获得更干净的免疫沉淀效果。但实际上，如果用含SDS的裂解缓冲液来制备免疫沉淀样品，我们发现蛋白聚集并不是一个严重问题。
+
+## 交联组织样本
+
+4. 收集组织，将组织放入装有约 $25\mathrm{mL}$ 冰冷HHBSS的组织培养皿中，培养皿放在装有冰水的托盘上，直至收集过程结束。
+
+样品收集和紫外照射之间的时间越短越好，而且样品保持在尽可能冷的状态以避免破坏内源相互作用。根据组织类型和应用的不同，可以用不同的缓冲液替代 HHBSS。
+
+见“疑难解答”。
+
+5. 在冰冷缓冲液中对任何需要的组织进行切割操作。
+
+6. 将组织块转移到 10mL 冰冷 PBS 中，将组织切割成 1～2mm 的碎块，首先用 5mL 的细胞培养用吸管，如果需要更小的组织块，可以在吸管前端加一个 1mL 的吸头。研磨操作要在冷室中进行，吸管和吸头也要预冷至 4℃，以尽量减少样品温度升高。组织也可被快速切成 1～2mm 厚的小块，如果组织块本身就很小，就不需要切割操作了。
+
+紫外线可以穿透很多层细胞，因此并不需要将组织研磨成单细胞悬液。操作步骤越少越好。
+
+参见“疑难解答”。
+
+7. 将一个 $10\mathrm{cm}$ 的组织培养皿放在装有含水碎冰的托盘上，再将切割好的 $10\mathrm{mL}$ 悬液转移到组织培养皿中；或将切碎的组织放入装有 $10\mathrm{mL}$ 新鲜冰冷HHBSS的新皿中，培养皿也放在装有一薄层含水碎冰的托盘上。在紫外交联仪上交联3次，每次剂量为 $400\mathrm{mJ/cm^2}$，每次照射之间，将悬液混匀一下，使样品保持冷却状态并保证获得更均一的交联效果。
+
+参见“疑难解答”。
+
+8. 于 $4^{\circ} \mathrm{C}$ 温和离心 $5 \mathrm{~min}$, 收集解离组织细胞。用细胞沉淀 3 倍体积的冰冷 PBS 重悬, 并按 $1 \mathrm{~mL}$ 一份转移到微量离心管中。于 $4^{\circ} \mathrm{C}$ 以 $5000 \mathrm{r} / \mathrm{min}$ 离心 $1 \mathrm{~min}$ 收集细胞。
+
+9. 去上清，于-80℃冷冻并保存细胞沉淀（每管装200～300μL细胞沉淀）。如果用的是较大的组织块，就用无菌镊子或手术刀片头将它们转移至15mL的锥底离心管中，按上述条件温和离心。
+
+新鲜组织可以用来进行裂解及免疫沉淀，也可以被速冻并保存在-80℃。
+
+![](../../raw/pages_0337-0352/images/page_347_image_17.jpg)
+
+## 疑难解答
+
+问题（步骤6）:研磨很难将组织解离。
+
+解决方案:可以用手术刀或解剖工具将组织切成直径 $1\sim 2\mathrm{mm}$ 的小方块，这时就没有必要进行解离操作了。也可以将组织冻在液氮里，再用研钵及研杵将组织研成粉末，在紫外照射过程中也保持冷冻状态，我们实验室进行HITS-CLIP实验证实这样不会造成RNA-蛋白质特异相互作用的丢失。
+
+问题（步骤 2 对细胞，步骤 7 对组织）:不清楚用多少紫外 “energy”。
+
+解决方案:紫外线剂量可以根据不同蛋白进行优化，因为不同RNA结合区域的交联效率不同。可以在 $100\mathrm{mJ} / \mathrm{cm}^2$ 、 $200\mathrm{mJ} / \mathrm{cm}^2$ 或 $400\mathrm{mJ} / \mathrm{cm}^2$ 的剂量下进行 $1\sim 3$ 次重复交联。总之，根据方案3中的预放射自显影的结果，选用可获得满意信号的最低照射剂量是比较好的。在交联过程中要避免样品温度升高，并防止RNABP与RNA的重新组合。
+
+问题（步骤 1 对细胞，步骤 4 对组织）:不清楚需用多少细胞或组织进行交联。
+
+解决方案:按我们的经验，50～200mg 的组织或一个 150mm 培养皿 50%融合的细胞
+
+---
+
+1432
+
+分子克隆实验指南（原书第四版）
+
+对许多 RNA 结合蛋白来说，都足以获得高质量的数据。但对一个新的 RNABP 来说，所需的起始材料都要根据表达水平、交联效率或与 RNA 相互作用的稳定性等因素来决定。
+
+![](../../raw/pages_0337-0352/images/page_348_image_3.jpg)
+
+## 讨论
+
+在 RNABP 与 RNA 相互作用的状态下，用紫外交联固定 RNABP 的一个重要优势是可以在生物体、组织或细胞中俘获内源的相互作用。要充分利用这一优势，选择一个在交联前和交联过程中对该系统影响最小的实验方案是很重要的。本方案描述了通过研磨解离组织的方法，这样可以增加交联时的照射面积。对软组织来说，如果组织、缓冲液及吸管都保持在很冷的状态，而且操作本身也在冷室进行，这个方案可以获得良好效果。方案中已经提到，尽可能少地处理组织，并减少组织收集和交联之间的时间，可以更好保持内源的相互作用。最近，我们发现，与进行更多的组织解离操作相比，对完整的大脑皮层进行交联可以获得大约一半的交联效果。考虑到可以更快交联组织的优势，只损失 50% 的信号是可以接受的。
+
+虽然要将 RNA 交联到相关 RNABP 上，必须进行紫外照射。但紫外线也可以导致核酸分子之间的交联（photodimerization），这会导致核酸链断裂。根据已经给定的剂量范围以及方案 3 中 CLIP 预实验的监测结果，紫外照射剂量很容易确定。根据方案 3 中交联 RNA 的放射性标记结果，不要使用超过获得复合物所需剂量的紫外照射。
+
+## 方案 3 RNA 酶滴定、免疫沉淀及 SDS-PAGE
+
+CLIP 方案继续使用来自混合裂解物或细胞沉淀的交联 RNABP-RNA 复合物(方案 2)。用 RNA 酶处理样品，部分降解结合的 RNA，再用方案 1 中优化的免疫沉淀条件纯化复合物。在 RNA 上连接 3'接头，进行放射性标记，再用 SDS-PAGE 电泳分离复合物。
+
+首次使用本方案时，对每种样品都要进行预实验以确定最佳的 RNA 酶浓度，并用  ${}^{32}$ P 标记 RNA 片段评估 RNABP-RNA 复合物的质量和纯度。在做这些实验时，暂时不用连接 3'接头。通过预实验评估是否能通过放射自显影检测到足量的 RNA-蛋白质复合物，以及与对照样品相比是否有非特异 RNA 片段污染。一旦优化好 RNA 酶的条件，就表明免疫沉淀后 RNA-蛋白质复合物检测的信噪比是可以接受的，在进入方案 4 之前，CLIP 方案可以重复进行。
+
+## 对照的选择
+
+选择合适的对照对解释最终结果至关重要。要评估克隆的所有 RNA 标签是否来自于感兴趣 RNABP 交联的 RNA，需要几个好的阴性对照:①一个基因敲除细胞/生物体，RNA 干扰（RNAi）敲减所感兴趣的 RNABP；②转染只带标签的载体，证明免疫沉淀下来的 RNA 依赖于特异的 RNABP。样品中如果完全没有针对一个特异抗体的高亲合力表位（如基因敲除），就会出现因为抗体脱靶结合到低亲和性表位所导致的高背景。一个理想的对照是失去了 RNA 结合能力的 RNABP 突变体。对预实验来说，非交联样品是必备的对照。在缺乏更好对照的情况下，无关抗体也被用作对照。但要注意这不能证明免疫沉淀
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1433
+
+产物依赖于 RNABP，而是取决于所用的抗体，因为抗体可以免疫沉淀下来不止一个RNABP。最后，如果有通用的阳性对照，这样可以确保所有的操作步骤都可以正常工作。例如，研究人员使用哺乳动物脑组织，Nova CLIP 是非常可靠的，相关操作步骤在本书中和已发表的工作（Ule et al. 2005; Jensen and Darnell 2008; Licatalosi et al. 2008）中都有详细描述。对其他组织和生物体来说，可以参考已发表的相关文献（Darnell 2010）。一个决定性重要阳性对照是样品重复，包括相同裂解物的技术重复或生物学重复。
+
+![](../../raw/pages_0337-0352/images/page_349_image_3.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+免疫沉淀用抗体
+
+珠子洗涤缓冲液（BWB）（PBS，pH 7.4，包含 0.02% Tween 20）
+
+交联的细胞或组织（方案 2 中制备）
+
+$\left[\gamma-^{32}P\right]$  ATP (3000 Ci/mmol)
+
+免疫沉淀洗涤缓冲液（方案1中所选的）
+
+上样缓冲液(4×)(NuPAGE LDS 样品缓冲液; Life Technologies 公司, 目录号 NP0008) 甲醇
+
+分子质量标准
+
+NuPAGE MOPS 或 MES 电泳缓冲液（20×）（Life Technologies 公司，目录号分别是 NP0001 或 NP0002）
+
+NuPAGE 转移缓冲液（20×）（Life Technologies 公司，目录号 NP00061）
+
+磷酸盐缓冲液（PBS）（1×）
+
+PNK 缓冲液 (1×) &lt;R&gt;
+
+PNK (1×) + EGTA 缓冲液&lt;R&gt;
+
+蛋白 A 或蛋白 G Dynabeads 磁珠（Life Technologies 公司，目录号 100-01D/100-03D）
+
+PXL 洗涤缓冲液（1×）（参照方案 1 作为中度免疫沉淀洗涤缓冲液）&lt;R&gt;
+
+PXL 洗涤缓冲液 (5×) &lt;R&gt;
+
+RNA 酶 A（分子生物学级；20U/ $\mu$ L）（如 Affymetrix/USB 公司，目录号 70194Y）
+
+RNasin Plus（Promega 公司，目录号 N2611）或 SUPERASE-In（Applied Biosystems/Ambion 公司，目录号 AM2694）（可选；见步骤 8 注释）
+
+RQ1 DNase（1U/μL）（Promega 公司，目录号:M6101）
+
+样品还原剂（10×）（NuPAGE 样品还原剂，Life Technologies 公司，目录号 NP0004）
+
+T4 PNK 酶（10 000U/mL）（New England Biolabs 公司，目录号 M0201S）
+
+## 设备
+
+聚碳酸酯离心管（11×34mm）（Beckman 公司，目录号 343778）
+
+冷室
+
+---
+
+1434
+
+分子克隆实验指南（原书第四版）
+
+微量离心管用旋转混合器（免疫沉淀用）
+
+盖革计数器
+
+发光贴纸
+
+磁珠收集装置（Life Technologies 公司，目录号 123-21D）
+
+微量离心管[National Scientific Supply 公司 SlickSeal tubes（无 RNA 酶），目录号 CN170S-GT，VWR#20172-945]
+
+硝酸纤维膜（Protran BA-85，Whatman 公司）
+
+Novex NuPAGE Bis-Tris 凝胶和凝胶电泳装置（Life Technologies 公司）
+
+胶片（如 Kodak MR）
+
+保鲜膜（如 Saran Wrap）
+
+恒温混合仪
+
+孵育时用来避免 Dynabead 沉淀，Eppendorf 公司的 Thermomixer R 很适合这一目的。
+
+台式冷冻超速离心机（如 Beckman 公司 Optima MAX，TLA-120.2 转子）
+
+Wheaton 玻璃匀浆器（可选；见步骤 5）
+
+XCell II 印迹模块（Life Technologies 公司）
+
+![](../../raw/pages_0337-0352/images/page_350_image_16.jpg)
+
+## 方法
+
+1. 按方案 1 制备加载抗体的磁珠。用 BWB 缓冲液洗涤  $400 \mu L$  蛋白 A 或蛋白 G 磁珠，洗 3 次。用 BWB 缓冲液重悬磁珠，并加入  $32 \mu g$  抗体，使总体积至最初的  $400 \mu L$ 。
+
+在方案 1 中确定选用那些试剂用于免疫沉淀。
+
+用小鼠脑组织进行 Nova 的 CLIP，用 24μg 羊抗 Nova2 抗体（C-16，sc-10546），并用 400μL Dynabead 磁珠。
+
+2. 抗体与磁珠在室温结合 30\~45min。
+
+3. 用 BWB 缓冲液洗磁珠 3 次，并用  $400 \mu L$  根据方案 1 所选用的缓冲液（BWB 缓冲液重悬、 $1 \times PXL$  洗涤缓冲液，或与 RNABP 免疫沉淀相同的缓冲液）重悬。
+
+4. 按方案 2 获得交联细胞或组织。它们可以是用  $-80^{\circ}C$  保存的样品或新鲜样品制备。
+
+下列步骤适用于 200～300μL 交联的细胞或组织沉淀。根据对较少体积的组织或细胞沉淀，要进行相应的体积调整，或根据裂解物制备的方式进行调整。每个 RNABP（根据表达量、结合与不结合的比例、交联的难易程度等因素）进行 CLIP 所需的组织量（也就是装有细胞或组织沉淀的离心管数）都不相同，需要根据经验确定。对大多数 RNABP 来说，一般需要 4 管细胞或组织沉淀，可获得 4mL 裂解物。
+
+## 制备免疫沉淀用裂解物，包括 RNA 酶滴定
+
+5. 每管交联的组织沉淀，用  $700 \mu L \times PXL$  洗涤缓冲液进行重悬（总体积至 1 mL），冰上放置 10 min。
+
+如果组织不易裂解，可以用 Wheaton 玻璃匀浆器等设备进行温和的机械破碎，制备裂解液。如果适用的话，也可以用其他制备方法，包括去核，以及用标准的密度梯度沉降技术纯化细胞核、多聚核糖体、单核糖体或 mRNP 复合物。
+
+6. 管中加入  $30 \mu L$  RQ1 DNase，于  $37^{\circ}C$ ，以 1000r/min 在恒温混匀仪上孵育 5min。
+
+没有  $Ca^{2+}$  及  $Mg^{2+}$  时，DNase I 没有正常的活性，不过裂解液中  $Ca^{2+}$  及  $Mg^{2+}$  的浓度对 DNase I 来说足够了。见“疑难解答”。
+
+7. 用  $1 \times$  PXL 洗涤缓冲液按 1:100 稀释 RNA 酶 A，并进行 3 次 10 倍稀释，稀释到 1:100 000，从而共有 4 种 RNA 酶浓度。
+
+对于 CLIP 预实验，要用整套 RNA 酶稀释浓度。根据放射自显影结果，确定 RNA 酶浓度（图 21-2）。
+
+对于标准的 CLIP 方案，当你确定了 RNA 酶条件，你可以只用两种稀释梯度-预实验确定的最优浓度及一个过消化的浓度（一般来说是最低稀释的 RNase A），后者用来确认交联 RNA 后蛋白的分子质量。
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1435
+
+![](../../raw/pages_0337-0352/images/page_351_image_2.jpg)
+
+<details>
+<summary>text_image</summary>
+
+1:500 1:500 1:5000 1:50 000
+RNA酶稀释
+225
+150
+102
+76
+52
+38
+31
+24
+适用于CLIP的理想RNABP-RNA复合物
+游离的RNABP
+无紫外交联 紫外交联
+</details>
+
+图 21-2 交联 RNA-蛋白质复合物的 RNA 酶滴定。整个鼠大脑组织进行交联，在按照方案 3 进行 RNA 酶 A 滴定及用 PNK 酶进行  ${}^{32}$ P 标记后，分子质量约 38kDa 的 RNABP 被免疫沉淀下来。高 RNA 酶浓度（1:500）处理时，标记的 RNABP-RNA 复合物与蛋白质本身的大小接近。当使用较低浓度 RNA 酶时，就明显出现了弥散的较高分子质量 RNABP-RNA 复合物条带，其中含有较长的 RNA 片段。从分子质量（Mr）可以估算出 RNA 的大约长度，而研究人员可以选用适合他们实验的长度。非紫外交联组作为阴性/特异性对照。
+
+8. 将不同管的裂解物混合，再按照 1mL 每管重新分配，以进行 RNA 酶处理。每管中各加入  $10\mu L$  不同稀释倍数的 RNA 酶（第一管加入  $10\mu L$  按 1:100 稀释的 RNA 酶，第二管加入  $10\mu L$  按 1:1000 稀释的 RNA 酶，依此类推）；于  $37^{\circ}C$  混合孵育 5min 后转移至冰上。加入 RNA 酶前取  $10\mu L$  裂解物用于后续分析。
+
+在 Nova CLIP 方案中，一般不加 RNA 酶抑制剂终止消化，因为免疫沉淀操作在  $4^{\circ}$ C 进行，而且在 RNA 酶滴定时已经考虑了剩余 RNA 酶活性的影响。不过如果需要更好地控制 RNA 酶活性，可以加入 RNasin Plus 或 SUPERASE·In。重要的是保持一致性。如果在 RNA 酶滴定实验中加入了 RNA 酶抑制剂，那就继续加吧。保留一小份裂解物对于确保你的 RNABP 没有被高速离心（32 000g）沉淀下来是很重要的。
+
+9. 用预冷的台式超速离心机（用 $11\mathrm{mm} \times 34\mathrm{mm}$ 聚碳酸酯离心管，TLA120.2转子）对裂解物进行离心，$4^{\circ}\mathrm{C} 32000\mathrm{g}$ (RCFavg)离心 $20\mathrm{min}$ 。在TLA120.2转子上对应是 $30000\mathrm{r / min}$ 。
+
+每种 RNABP 最优的离心条件要根据经验确定。更高的转速有助于去掉核糖体等较大的 RNP，但此时需保证所需要的 RNABP 在上清里。
+
+10. 小心转移上清，并保留  $10 \sim 20 \mu L$ ，这是离心后的等份，用作免疫沉淀的 “input”。
+
+## 免疫沉淀
+
+11. 离心后，将全部上清加到装有洗好磁珠的新微量离心管中。
+
+在加裂解液前，去掉磁珠中剩余的洗涤缓冲液。磁珠要一直保持湿润状态。请按照生产厂家的说明处理蛋白 A 磁珠。
+
+按照方案 1（见方案最后的“疑难解答”部分）进行的免疫沉淀滴定实验，应该会对给定体积的细胞裂解物给出最合适的磁珠使用量。
+
+12. 在  $4^{\circ}$ C，将磁珠/裂解物混合物旋转混合孵育 2h。
+
+13. 在磁架上捕获磁珠，并去上清。上清作为免疫后沉淀（postimmunoprecipitation）
+
+---
+
+1436
+
+分子克隆实验指南（原书第四版）
+
+样品等分为 $10\sim 20\mu \mathrm{L}$ 保存，进行免疫印迹分析以验证抗原去除效率。
+
+14. 用方案 1 中步骤 9 所选的冷缓冲液洗涤磁珠。
+
+方案 1 中的预实验应该确定了免疫后沉淀洗涤条件的最佳严谨度。RNABP Nova 所用的中等洗涤方案是，用  $1 \times PXL$  洗涤缓冲液洗 3 次，再用  $5 \times PXL$  洗涤缓冲液洗 1 次，每次都用 1mL 洗液。
+
+15. 再用 $1 \times \mathrm{PNK}$ 缓冲液洗 2 次。
+
+用 PNK 缓冲液洗涤是为了将磁珠转换进适合 T4 PNK 酶活性的缓冲液中。
+
+对标准的 CLIP 方案，直接进入方案 4。
+
+## RNA 酶滴定和 SDS-PAGE 电泳（预实验）
+
+在方案 1 和方案 2 中，裂解和免疫沉淀条件已经优化，在本方案步骤 7 中 RNA 酶也被滴定。在上述实验条件下，本预实验则被用来确定交联的 RNA-蛋白复合物的分子质量和数量。这里，RNA 直接用 T4PNK 酶进行标记。标记的 RNA-蛋白复合物则在变性 SDS 聚丙烯酰胺凝胶上进行电泳分析。标准的实验方案要用 SDS-PAGE 凝胶电泳分离 RNABP-RNA 复合物，本实验包含了相关详细操作步骤。
+
+16. 在无RNA酶的微量离心管中，按顺序混合下列组分（单位是 $\mu \mathrm{L}$ ）制备PNK反应溶液。
+
+| $H_{2}O$ | 64μL |
+| --- | --- |
+| PNK 缓冲液(10×) | 8μL |
+| $[γ^{-32}P]ATP$(3000 Ci/mmol) | 4μL |
+| T4 PNK 酶 | 4μL |
+
+按实际样品数再加一个样品准备试剂，以容许移液过程中的误差。
+
+使用  ${}^{32}$ P 时，采取标准防护措施以保护实验人员和实验室的其他人员免受放射性照射。
+
+17. 吸去磁珠（步骤 15 中获得的包含免疫沉淀下来的 RNABP-RNA 复合物）中剩余的 PNK 缓冲液。每个样品中加入 80μL PNK 反应混合液，在温浴混合振荡器（Thermomixer R）上于 37℃ 孵育 20min，每 2min 以 1000r/min 振荡 15 s。
+
+18. 用 $1\mathrm{mL}$ 缓冲液，按下面的顺序对磁珠进行旋转洗涤。$1\times \mathrm{PNK}$ 缓冲液洗2次，$5\times$ PXL洗涤缓冲液洗1次，再用 $1\times \mathrm{PNK}$ 缓冲液洗2次。
+
+如果你的免疫沉淀产物在  $5 \times PXL$  等高严谨洗液中不稳定，可以用较温和的洗涤缓冲液替代。
+
+19. 在磁珠洗涤过程中，混合下列试剂以准备  $1 \times$  LDS 样品上样缓冲液。
+
+<table><tr><td> ${\mathrm{H}}_{2}\mathrm{O}$ </td><td>19.5μL</td></tr><tr><td>LDS 样品缓冲液</td><td>7.5μL</td></tr><tr><td colspan="2">(4×NuPAGE LDS 样品缓冲液,Life Technologies 公司)</td></tr><tr><td>样品还原剂</td><td>3μL</td></tr><tr><td>(NuPAGE 样品还原剂)</td><td></td></tr></table>
+
+上样缓冲液可以含还原剂，也可以不含（用  $3 \mu L$  水代替）。免疫沉淀中所用的大量抗体可能会干扰 RNABP-RNA 复合物在凝胶上的迁移。根据 RNABP-RNA 复合物的大小，可以使用或不用还原剂，以避免在凝胶上出现轻链和重链 IgG（25kDa 和 50kDa）或完整 IgG（150kDa）。
+
+20. 用  $30 \mu L$   $1 \times$  LDS 样品上样缓冲液重悬磁珠。
+
+21. 在恒温混匀仪上于  $70^{\circ}$ C，以 1000r/min 振荡孵育 10min。
+
+22. 用磁架捕获磁珠，并将上清上样到适当的 Novex NuPAGE Bis-Tris 凝胶上。
+
+用 Bis-Tris 缓冲的 Novex NuPAGE 凝胶，并在 MOPS 或 MES 缓冲液中进行电泳是至关重要的。标准的 SDS-PAGE 凝胶用 Tris 缓冲，电泳时 pH 可达到约 9.5，可能导致 RNA 的碱水解。Novex NuPAGE 系统则可以在电泳时保持在中性状态。
+
+目前有 $8\%$ 、 $10\%$ 、 $12\%$ 或 $4\% \sim 12\%$ 梯度凝胶可选择。MES（更适合 $20\sim 30\mathrm{kDa}$ 大小的小分子RNABP）或MOPS
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1437
+
+电泳缓冲液的选择对蛋白质的迁移有显著影响。虽然我们使用 $4\% \sim 12\%$ 梯度凝胶及MOPS缓冲液进行大多数预实验，但 $12\%$ 的凝胶更适合分离35kDa大小的RNABP，而 $8\%$ 的凝胶则更适合大分子质量RNABP（如 $55\sim 100\mathrm{kDa}$）。Life Technologies公司提供了一个描述不同系统中的迁移标准的图表，非常有用。一般情况下，所选的凝胶及缓冲液让RNABP-RNA复合物比单独的RNABP滞后最少20kDa。在这个范围里可以获得最佳的分离效果，这也有助于判断免疫沉淀产物中是否有小分子的RNABP污染。
+
+与标准的聚丙烯酰胺凝胶相比，在 Novex NuPAGE 凝胶上一些预染分子质量标准的大小可能有些不同。不过 GE Life Sciences 公司的全范围 “彩虹” 预染分子质量标准在凝胶上的大小与预期分子大小相符。我们一般在每隔一个泳道之间都上分子质量标准以避免样品间的污染。
+
+23. 作为一个分析工具，对之前保留的免疫沉淀前样品、免疫沉淀后产物及免疫后沉淀的上清各取 $10\mu \mathrm{L}$ 等量样品进行独立的免疫印迹分析（按方案1，步骤11）。
+
+见“疑难解答”。
+
+24. 按照生产厂商的说明，在冷室里以 $175\sim 200\mathrm{V}$ 的电压进行Novex NuPAGE凝胶电泳。
+
+与所上的样品相比，凝胶本身的放射性要低得多。大多数同位素，如单个的 ATP 和小分子未被交联的 RNA，将会在下槽的电泳缓冲液中。长至 100 个碱基未交联的 RNA 在凝胶上会迁移到小于 30kDa 的位置。
+
+25. 电泳后，用 XCell II 印迹模块将凝胶上的复合物转移到 Protran BA-85 硝酸纤维膜（Whatman）上。在含 10% 甲醇的 NuPAGE 转移缓冲液中以 30V 电压转移 1h。
+
+Protran BA-85 硝酸纤维膜易碎，但对 RNA/蛋白质提取物来说，可以取得比增强的尼龙膜更好的效果。
+
+通过延长转膜时间来增加 RNABP-RNA 复合物的转移量的尝试并不成功。即使有更多的复合物转移到硝酸纤维膜上，但发现只有更少的 RNA 可以被克隆，这可能是因为过长的转膜时间（长至 2.5h）损伤了 RNA 分子。
+
+26. 转膜结束后，用无 RNA 酶的  $1 \times$  PBS 漂洗，并在 KimWipe 吸水纸轻柔地吸去边缘的水分。
+
+27. 用保鲜膜包裹硝酸纤维膜，依照交联效果，在-80℃对胶片（Kodak MR 胶片效果良好）曝光30min至3天。在保鲜膜外面至少用两个发光贴纸。
+
+按照这个程序操作，如果RNABP-RNA复合物需要3天以上的时间才能曝光，后面很难对RNA进行克隆。这个时候需要用更多的起始材料从新进行CLIP实验。
+
+在曝光前，可以用盖革计数器检测硝酸纤维膜上的放射性，以初步检测试验是否成功。
+
+见“疑难解答”。
+
+![](../../raw/pages_0353-0368/images/page_353_image_16.jpg)
+
+## 疑难解答
+
+问题（步骤6）:用RQ1 DNase处理后，裂解物仍然非常黏稠，这提示DNA没有被完全降解。
+
+解决方案:这可能是因为裂解物中  $Ca^{2+}$  和  $Mg^{2+}$  的浓度不够。补充至 1mmol/L  $Ca^{2+}$  和 10mmol/L 的  $Mg^{2+}$  有助于增加 RQ1 DNase 的活性。此外，DNase 的用量和作用时间也可以增加，要注意在 37℃时，裂解物中内源的 RNA 酶也会发挥活性。
+
+问题（步骤 23）:用  $10 \sim 20 \mu L$  的免疫沉淀前及免疫沉淀后样品进行免疫印迹分析时，RNABP 信号不可见，不足以评估抗原消耗效率。
+
+解决方案:可以用更大体积的样品，也可用 TCA 对蛋白质进行沉淀浓缩。注意，微型凝胶的单个泳道最多只能上  $100 \mu g$  的总蛋白样品。本问题的一个解决方案是进行一次免疫沉淀-免疫印迹操作，这样在免疫印迹之前，RNABP 蛋白先被免疫沉淀下来。为了定量，需要对剩下的上清重新进行免疫沉淀以保证第一次免疫沉淀后 100% 的蛋白质都被清除。如果裂解缓冲液中含有钾离子，要用 TCA 沉淀法去除钾离子，钾离子碰到标准上样缓冲液中 SDS 会沉淀。以钠离子为基础的缓冲液是有益的，因为这样样品可以直接进行电泳。
+
+问题（步骤 27）:不清楚所需的 RNABP-RNA 复合物会迁移到什么位置。
+
+---
+
+1438
+
+分子克隆实验指南（原书第四版）
+
+解决方案:在经过交联并用最高浓度 RNA 酶处理过的样品中，放射性条带会出现在 RNABP 的预期大小附近或稍大一点点的地方（表明非常小的 RNA 标签对蛋白质迁移的影响极小），而在非交联样品和对照样品中则没有放射性条带。可以封闭硝酸纤维膜，并进行免疫印迹分析显示单独 RNBP 的迁移位置。
+
+问题（步骤 27）:在最高浓度 RNA 酶处理的样品上，没有放射性条带。
+
+解决方案:在某些情况下，RNA 酶的过度消化可能会抑制 T4 PNK 酶的标记反应，可能是因为导致 RNA 标签太小，或者不能接触到 T4 PNK 酶。
+
+问题（步骤 27）:在任何泳道都没有预期大小的放射性条带。
+
+解决方案: 如果即使用较低的 RNA 酶浓度, 在预期分子质量位置仍然没有特异的 RNA 标记条带, 需进行免疫印迹分析以分析 RNABP 是否被有效免疫沉淀下来并在胶上。如果免疫沉淀有效, 但在 2\~3 天的曝光后, 交联 RNA 仍不可见, 就需要使用本方案导言部分所描述的阳性对照对交联的效果进行分析。可以增加起始实验材料。最后, 很可能所谓的 RNABP 实际上并不能直接结合 RNA, 或者结合的 RNA 太少, 无法检测。
+
+问题（步骤27）:在非交联样品中有弥散的RNA标记信号。
+
+解决方案:这提示游离的 RNA 分子可能污染了免疫沉淀物。更严谨的洗涤条件，包括增加洗涤次数、洗涤时更换新的离心管，可能有助于减少背景。另外，一些 RNBP 与 RNA 结合得非常紧密，即使不进行交联，这种相互作用也能保持，如 Argonaute 与 miRNA 的相互作用就是这样。如果这是一个问题，可以用更强烈解离 RNP 的方法制备裂解物，保证去掉未交联的 RNA。
+
+问题（步骤 27）:在非交联对照泳道，有锐利的条带。
+
+解决方案:有时检测到蛋白质被 T4 PNK 酶直接标记的信号。在所有的泳道都有标记信号，但在非标记对照泳道信号特别强并呈锐利的条带。这通常表明蛋白质直接被  $[\gamma-^{32}P]$  ATP 标记上了。虽然 T4 PNK 酶并不能使蛋白磷酸化，磷酸化反应可能会来自下列 3 种途径之一:商品化的 T4 PNK 酶中污染了蛋白激酶，一种免疫共沉淀下来的蛋白激酶，或 RNABP 本身具有蛋白激酶活性。为避免在标准 CLIP 方案中蛋白被标记，我们收录了用  $[\gamma-^{32}P]$  ATP 标记 3' 接头，并通过 T4 RNA 连接酶反应使用标记好的接头的方法，这样就能避免蛋白激酶污染的问题（详细方案见方案 4 中的替代方案“非磷酸化 RL3 接头 5' 端的标记”）。
+
+问题（步骤27）:在靶RNABP之上的位置，有交联到另一个非所需RNABP的RNA显著信号。
+
+解决方案:如果比靶RNBP慢但比污染的RNBP要快的条带可以从硝酸纤维膜上切下来，这个CLIP实验有可能是成功的。虽然切下比游离RNABP大约 $20\mathrm{kDa}$ 的复合物是比较满意的，实际上 $20\sim 30\mathrm{mer}$ 的标签可以从比游离蛋白大 $7\sim 10\mathrm{kDa}$ 的位置克隆到。可以通过延长电泳时间或选用不同浓度的PAGE凝胶获得更好的分离效果。
+
+问题（步骤27）:在靶RNABP之下的位置，有交联到另一个非所需RNABP的RNA显著信号。
+
+解决方案:用高浓度的 RNA 酶处理，减少结合较长 RNA 标签的小分子 RNABP 与结合较短 RNA 标签的较大靶 RNABP 迁移到相同位置的可能性，这样就能切下所需条带。就这一点而言，PCR 步骤（见方案 5）之后的大小选择是有益的。不过，重新评估纯化步骤以增加免疫沉淀的特异性是非常值得去做的，这包括抗体的选择、洗涤的严谨度、洗涤时更换离心管和/或在免疫沉淀之间进行亚细胞分离。优化本方案，通过与对照比较标记的 RNABP-RNA 复合物进行评估，在一个成功的 CLIP 实验中是最重要的步骤。
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1439
+
+![](../../raw/pages_0353-0368/images/page_355_image_2.jpg)
+
+## 讨论
+
+## SDS-PAGE 凝胶分离
+
+严谨的免疫沉淀是分离一种 RNABP-RNA 复合物的一个纯化步骤，SDS-PAGE 凝胶分离则是第二步至关重要的纯化步骤。为了从 SDS-PAGE 凝胶上去除来自任何可能污染的 RNABP 的 CLIP 标签，我们用系列 10 倍稀释的 RNA 酶优化 RNA 酶浓度。这一步也可达到确定 RNA 酶条件的目的，在这种条件下，可以按照所需的大小选择 RNA 标签（使 RNA 标签长度足以在基因组上精确定位，但又不会太长以致来自污染 RNABP-RNA 复合物的标签在 SDS-PAGE 凝胶上共迁移）（有关这一点的详细讨论见 Ule et al. 2005）。理想的结果是在被最高浓度 RNA 酶处理的样品中出现一个接近 RNABP 分子质量的放射性条带，而随着 RNA 酶浓度降低，放射性条带有拖尾现象，而且分子质量变大，如图 21-2 所示。在阴性对照样品中则没有类似信号。如果在以最高浓度 RNA 酶处理的样品中出现多条带，说明有非特异 RNABP 被免疫沉淀下来。这可能是一个问题，也可能不是，取决于下面两点:①带的大小；②是否能切下所需的 RNABP-RNA 复合物，而不被无关 RNABP-RNA 复合物污染。例如，如果污染蛋白比靶蛋白大，这就不是问题，因为可以在污染条带之下把所需的 RNABP-RNA 复合物切下来。
+
+## 核酸酶的选择
+
+选择核酸酶的一个重要考虑是降低 RNA 分子的大小。在预实验及标准方案中（方案 3～方案 5），使用的是 RNase A，RNA 酶可以水解单链 RNA 上的嘧啶残基（胞嘧啶和尿嘧啶）3' 端的磷酸二酯键，留下 3' 磷酸。在其他实验中，我们也用 RNase T1（Applied Biosystems/Abmion 公司 AM2280），这种酶在鸟嘌呤残基后面切割单链 RNA，并保留 3' 磷酸，或者组合使用 RNase A 和 RNase T1。RNase A 和 RNase T1 最初在 3' 端都留下 2',3' 环单磷酸中间体，这种中间体分解成 3' 羟基，RNase T1 要比 RNase A 慢（Mohr and Thach 1969）；任何残留的 2',3' 环单磷酸中间体都被随后的多聚核苷酸激酶分解。其他核酸酶也曾被使用，包括微球菌核酸酶和 RNase I。RNase I 是非特异的，能切割所有 RNA 磷酸二酯键。不过，它能被 0.1% SDS 完全且不可逆地失活。最后，发现碱水解是一个有效减小 RNA 的非酶手段，而且这一方法没有序列和结构偏性。
+
+## 曝光时间
+
+检测标记 RNA 所需曝光时间的长短可以粗略评估交联的蛋白质-RNA 量，以及最终纯化及测序交联 RNA 的难易程度。对 Nova 来说，如果用大约 100mg 的小鼠脑组织作为起始材料，经过 60min 的曝光就可以在放射自显影胶片上观察的信号，并且会发现这种起始量很容易操作。对其他蛋白质来说，一个成功的 CLIP 实验，长至 3 天的曝光时间仍然能获得足够的 RNA。
+
+在进行 RNA 酶滴定的泳道，随着 RNA 酶浓度的降低，标记条带的分子质量会变大并且有拖尾现象，这反映了交联 RNA 标签分子质量的增大。如果所需的 RNABP 距离其他任何污染 RNABP 超过 10～20kDa，纯化与所需 RNABP 特异交联的 RNA 是可行的。
+
+---
+
+1440
+
+分子克隆实验指南（原书第四版）
+
+![](../../raw/pages_0353-0368/images/page_356_image_2.jpg)
+
+## 配方
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+CLIP 方案所用的所有试剂的制备和保存必须避免 RNA 酶的污染。见第 6 章关于实验室无 RNA 酶溶液的配制及 RNA 操作的通用准则。
+
+PNK 缓冲液（1×）
+
+| 试剂 | 含量(1L) | 终浓度 |
+| --- | --- | --- |
+| Tris-HCl(1mol/L,pH 7.4) | 50mL | 50mmol/L |
+| MgCl2(1mol/L) | 10mL | 10mmol/L |
+| Nonidet P-40(NP-40) | 5mL | 0.5%(V/V) |
+
+用水补充至1L。4℃保存。
+
+PNK（1×）+EGTA缓冲液
+
+| 试剂 | 含量(1L) | 终浓度 |
+| --- | --- | --- |
+| Tris-HCl(1mol/L,pH 7.4) | 50mL | 50mmol/L |
+| EGTA(0.5mol/L) | 40mL | 20mmol/L |
+| Nonidet P-40(NP-40) | 5mL | 0.5%(V/V) |
+
+用水补充至 1L。4℃保存。
+
+## PXL 洗涤缓冲液（1×）
+
+(参见方案1，作为中度免疫沉淀洗涤缓冲液)
+
+| 试剂 | 含量(1L) | 终浓度 |
+| --- | --- | --- |
+| PBS(10×)(组织培养级,无$Mg^{2+}$,无$Ca^{2+}$) | 100mL | 1× |
+| SDS(20%) | 5mL | 0.1%(V/V) |
+| 脱氧胆酸钠 | 5g | 0.5%(m/V) |
+| Nonidet P-40(NP-40) | 5mL | 0.5%(V/V) |
+
+用水补充至1L。4℃保存。
+
+PXL 洗涤缓冲液（5×）
+
+| 试剂 | 含量(1L) | 终浓度 |
+| --- | --- | --- |
+| PBS(10×)(组织培养级,无$Mg^{2+}$,无$Ca^{2+}$) | 500mL | 5× |
+| SDS(20%) | 5mL | 0.1%(V/V) |
+| 脱氧胆酸钠 | 5g | 0.5%(m/V) |
+| Nonidet P-40(NP-40) | 5mL | 0.5%(V/V) |
+
+用水补充至 1L。4℃保存。
+
+## 参考文献
+
+Darnell RB. 2010. HITS-CLIP: Panoramic views of protein–RNA regulation in living cells. Wiley Interdiscip Rev RNA 1: 266–286.
+
+Jensen KB, Darnell RB. 2008. CLIP: Crosslinking and immunoprecipitation of in vivo RNA targets of RNA-binding proteins. Methods Mol Biol 488: 85–98.
+
+Licatalosi DD, Mele A, Fak JJ, Ule J, Kayikci M, Chi SW, Clark TA, Schweitzer AC, Blume JE, Wang X, et al. 2008. HITS-CLIP yields genome-wide insights into brain alternative RNA processing. Nature 456: 464–469.
+
+Mohr SC, Thach RE. 1969. Application of ribonuclease T1 to the synthesis of oligoribonucleotides of defined base sequence. J Biol Chem 244:6566–6576.
+
+Ule J, Jensen K, Mele A, Darnell RB. 2005. CLIP: A method for identifying protein–RNA interaction sites in living cells. Methods 37: 376–386.
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1441
+
+## 方案 4 3'-接头的连接和用 SDS-PAGE 进行大小选择
+
+在本方案中，免疫共沉淀下来的 RNA 标签用碱性磷酸酶处理去除 RNA 酶消化后留下的 3' 磷酸。去磷酸基团可以阻止连接反应时发生分子内环化。一个 RNA 接头被连接到 RNA 标签的 3' 端，这种 RNA 接头的 3' 端被嘌呤霉素封闭，不能发生接头-接头多聚化。连接上接头的 RNABP-RNA 复合物通过抗体结合在蛋白 A Dynabead 磁珠上，而游离的接头则通过洗涤被去除。最后通过 SDS-PAGE 电泳及转膜，按大小选择所需的 RNABP-RNA 复合物完成进一步的纯化步骤。
+
+![](../../raw/pages_0353-0368/images/page_357_image_4.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+碱性磷酸酶（牛小肠，1U/μL，10×缓冲液）（Roche Applied Science 公司，目录号 10-713-023001）
+
+ATP 溶液（1mmol/L）
+
+包被了抗体的磁珠（结合免疫沉淀的交联 RNABP-RNA 复合物）（方案 3，步骤 15）
+
+牛血清白蛋白
+
+去磷酸缓冲液（10×）（碱性磷酸酶附带）
+
+$$
+[ \gamma - ^ {3 2} \mathrm{P} ] \mathrm{ATP}
+$$
+
+免疫沉淀洗涤缓冲液（方案1中所优化的）
+
+上样缓冲液（4×）（LDS；NuPAGE LDS 样品缓冲液，Life Technologies 公司；目录号 NP0008）
+
+MOPS 或 MES 电泳缓冲液（20×）（Life Technologies 公司，目录号分别是 NP0001 或 NP0002）
+
+NuPAGE 转移缓冲液（20×）（Life Technologies 公司，目录号 NP00061）
+
+PNK 缓冲液（1×，10×）&lt;R&gt;
+
+PNK+EGTA 缓冲液（1×）&lt;R&gt;
+
+嘌呤霉素封闭的 3'-接头（带 5'-磷酸）:RL3:5'-P-GUGUCAGUCACUUCCAGCGG-3'-嘌呤霉素（Dharmacon 公司；20 pmol/ $\mu$ L 水溶液，于-80℃保存）
+
+嘌呤霉素封闭的 3'-接头（无 5'-磷酸，替代方案“去磷酸化 RL3 接头 5'端的标记”）:RL3(-P): 5'-OH-GUGUCAGUCACUUCCAGCGG-3'-嘌呤霉素（Dharmacon 公司；20pmol/μL 水溶液，于 -80℃ 保存）
+
+PXL 缓冲液 (5×) &lt;R&gt;
+
+RL3 RNA 接头和 RL3 (-P) 接头（凝胶纯化，并按方案 7 所述方法保存）
+
+无 RNA 酶的 PBS
+
+RNA 酶处理的裂解物
+
+---
+
+1442
+
+分子克隆实验指南（原书第四版）
+
+使用能获得所需大小 RNA 的 RNA 酶浓度制备（见方案 3）。
+
+RNasin Plus（Promega 公司）
+
+样品还原剂（10×）（NuPAGE 样品还原剂，Life Technologies 公司，目录号 NP0004）
+
+T4 多聚核苷酸激酶（PNK；10U/ $\mu$ L）（NEB 公司，目录号 M0201S）
+
+T4 RNA 连接酶（Fermentas 公司，目录号 EL0021；10U/ $\mu$ L，附带 BSA，10×缓冲液）
+
+## 设备
+
+G-25 柱（替代方案 “去磷酸化 RL3 接头 5' 端的标记”）（GE Healthcare 公司，目录号 27-5325-01）
+
+发光贴纸（如 Agilent Technologies 公司的 Glogos）
+
+微量离心管[National Scientific Supply 公司，SlickSeal tubes（RNase-free），目录号CN170S-GT，VWR#20172-945]
+
+硝酸纤维膜（Whatman 公司的 Protran BA85）
+
+Novex NuPage Bis-Tris 凝胶和凝胶电泳装置（Life Technologies 公司）
+
+胶片（如 Kodak MR）
+
+保鲜膜（如 Saran Wrap）
+
+Thermomixer R 恒温混匀仪
+
+涡旋设备
+
+XCell II 印迹模块（Life Technologies 公司）
+
+![](../../raw/pages_0353-0368/images/page_358_image_18.jpg)
+
+## 方法
+
+按照方案3的步骤制备细胞裂解物，用RNase及DNase处理，离心去沉淀，并进行免疫沉淀。
+
+## RNA 标签的去磷酸化以防止接头连接过程中的环化
+
+1. 在最后一次用  $1 \times PNK$  缓冲液洗涤结合了 RNABP-RNA 复合物的磁珠（方案 3，步骤 15，称为 RNABP:RNA 磁珠）后，去掉所有痕量的 PNK 缓冲液，并立即用去磷酸反应混合液重悬磁珠，按如下方法准备去磷酸反应混合液:
+
+在一个无 A 的微量离心管中，每个反应按顺序混合下列试剂:
+
+| 无RNA酶的水 | 67μL |
+| --- | --- |
+| 去磷酸缓冲液(10×) | 8μL |
+| 碱性磷酸酶 | 3μL |
+| RNasin Plus(Promega) | 2μL |
+
+温和涡旋重悬磁珠。
+
+总共  $80 \mu L$  的反应体积，可用于不超过  $400 \mu L$  起始体积的 Dynabead 磁珠。
+
+2. 在 Thermomixer R 恒温混匀仪上于  $37^{\circ}$ C 孵育 20min, 每 2min 以 1000r/min 振荡 15s。
+
+3. 用 $1\mathrm{mL}1\times \mathrm{PNK}$ 缓冲液洗一次，用 $1\mathrm{mL}1\times \mathrm{PNK} + \mathrm{EGTA}$ 缓冲液洗一次，再用 $1\times \mathrm{PNK}$ 缓冲液洗两次。
+
+在连接反应前，完全去掉碱性磷酸酶非常重要。不能用加热的方法（因为具有解离抗体-蛋白复合物的风险）。因此，本方案步骤3的洗涤非常重要。为彻底去除非特异吸附在微量离心管上的碱性磷酸酶，我们在洗涤过程中至少要换一次离心管。
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1443
+
+## 3'RNA 接头的连接（在磁珠上）
+
+4. 在一个无 RNA 酶的微量离心管中，按顺序混合下列成分制备接头混合液:
+
+| 无RNA酶的水 | 32μL |
+| --- | --- |
+| RL3 RNA接头(20pmol/μL水溶液,-80°C保存) | 8μL |
+
+5. 将 $40 \mu \mathrm{L}$ 接头混合液加到每管 RNABP:RNA 磁珠中, 温和涡旋混匀。置于冰上。
+
+6. 在一个无 RNA 酶微量离心管中，按顺序混合下列成分，制备连接酶混合液:
+
+| 无RNA酶的水 | 22μL |
+| --- | --- |
+| T4 RNA连接酶缓冲液(10×) | 8μL |
+| BSA(0.2μg/μL) | 8μL |
+| T4 RNA连接酶 | 2μL |
+
+7. 将 $40 \mu \mathrm{L}$ 连接酶混合液加入到每管 RNABP:RNA 磁珠中（最终接头浓度为 $2 \mathrm{pmol} / \mu \mathrm{L}$）。
+
+总反应体积是  $80 \mu L$ ，用于不超过  $400 \mu L$  起始体积的 Dynabead 磁珠。Fermentas 公司的  $10 \times T4 RNA$  连接酶缓冲液已包含 ATP。不过，由于在冻融过程中 ATP 非常不稳定，我们经常会在连接反应中额外补充 ATP（用保存于  $-80^{\circ}C$  的 10mmol/L 的 ATP 分装母液，加至终浓度为 1mmol/L）。
+
+8. 在 Thermomixer R 恒温混匀仪上于  $16^{\circ}$ C 孵育过夜，每 2min 以 1000r/min 振荡 15 s。
+
+9. 用 $1\mathrm{mL}1\times \mathrm{PNK}$ 缓冲液洗一次，用 $1\mathrm{mL}5\times \mathrm{PXL}$ 缓冲液洗一次，再用 $1\times \mathrm{PNK}$ 缓冲液洗2次。
+
+## RNA 标签的磷酸化
+
+10. 在一个无 RNA 酶的微量离心管中，每个反应按顺序混合下列成分:
+
+| ${\mathrm{H}}_{2}\mathrm{O}$ | 64μL |
+| --- | --- |
+| PNK缓冲液(10×) | 8μL |
+| $\left\lbrack {\gamma -{}^{32}\mathrm{P}}\right\rbrack \mathrm{{ATP}}$ | 4μL |
+| T4 PNK 酶 | 4μL |
+
+总反应体积是  $80 \mu L$ ，用于不超过  $400 \mu L$  起始体积的 Dynabead 磁珠。
+
+11. 在 Thermomixer R 恒温混匀仪上于  $37^{\circ}$ C 孵育 20min, 每 2min 以 1000r/min 振荡 15s。
+
+12. 加入  $10 \mu L$  1mmol/L 的 ATP，继续孵育 5min。
+
+13. 用 $1\mathrm{mL} 1 \times \mathrm{PNK}$ 缓冲液洗一次，用 $1\mathrm{mL} 5 \times \mathrm{PXL}$ 缓冲液洗一次，再用 $1 \times \mathrm{PNK}$ 缓冲液洗两次。
+
+## 通过 SDS-PAGE 纯化 RNABP-RNA 复合物
+
+放射性标记的 RNABP-RNA 复合物通过 SDS-PAGE 凝胶电泳进行分离, 转移至硝酸纤维素膜上, 并进行放射自显影。电泳方法在预实验方案 3 的步骤 19\~步骤 27 有详细描述。
+
+14. 在磁珠洗涤时，每份样品混合下列成分制备  $1 \times$  LDS 样品上样缓冲液:
+
+| 无RNA酶的水 | 19.5μL |
+| --- | --- |
+| LDS样品上样缓冲液(NuPAGE样品上样缓冲液,Life Technologies公司) | 7.5μL |
+| 样品还原剂(NuPAGE样品还原剂,Life Technologies公司) | 3μL |
+
+制备上样缓冲液时可以加也可以不加还原剂（用  $3 \mu L$  水替代还原剂）。免疫沉淀中所用的大量抗体可能会干扰
+
+---
+
+1444
+
+分子克隆实验指南（原书第四版）
+
+RNABP-RNA 复合物在凝胶上的迁移。根据 RNABP-RNA 复合物的大小，可以在还原或非还原条件下进行电泳，以避免在凝胶上出现轻链和重链 IgG（25kDa 和 50kDa）或完整 IgG（150kDa）。
+
+15. 每管用  $30 \mu L$   $1 \times$  LDS 样品上样缓冲液重悬磁珠。
+
+16. 在 Thermomixer R 恒温混匀仪上于  $70^{\circ}$ C，以 1000r/min 振荡孵育 10min。
+
+17. 用磁架捕获磁珠，上清上样到 Novex NuPAGE Bis-Tris 凝胶上，在冷室里按照厂商的说明以 175～200V 的电压进行电泳。
+
+有关凝胶和缓冲液选择的讨论将方案3，步骤22。
+
+18. 电泳结束后，用 XCELL II 印迹模块将复合物转移至 Protran BA-85 硝酸纤维膜（Whatman 公司）上。在含 10% 甲醇的 NuPAGE 转移缓冲液中以 30 V 电压转移 1h。
+
+19. 电转结束后，用  $1 \times$  PBS（无 RNA 酶）漂洗硝酸纤维膜，并用 KimWipe 吸水纸轻柔地吸去边缘的水分。
+
+20. 用保鲜膜包裹硝酸纤维膜，在-80℃对胶片（Kodak MR 效果良好）进行曝光，根据交联的程度，曝光时间为 30min 至 3 天。在保鲜膜外面至少使用两张发光贴纸，使滤膜与胶片对齐以准确切下所需条带。
+
+21. 60min 后显影，如果需要可以重新曝光长达 3 天。
+
+如果按照本程序操作，需要 3 天时间才能显出 RNABP-RNA 复合物，在后面很难对 RNA 进行克隆。
+
+22. 根据与对照样品对比，鉴定所需的 RNABP-RNA 复合物，并评估是否有其他 RNABP 污染，这些 RNBP 交联的 RNA 可能会污染所需的 RNA 序列。分析胶片时，滤膜要保存在 -80℃。理想的结果是，标记的 RNA-蛋白复合物比游离的 RNABP 大约 20kDa，而且与对照相比，RNABP 是非常特异的。这些在方案 3 的导言部分有所讨论。
+
+见“疑难解答”。
+
+![](../../raw/pages_0353-0368/images/page_360_image_14.jpg)
+
+## 疑难解答
+
+期望放射自显影的结果与方案 3 的相似。相关解释在方案 3 有讨论。
+
+问题（步骤 22）:对去磷酸化 RL3 接头进行 5' 端标记，并将此  ${}^{32}$ P 标记的 3' 接头连接到 RNA 标签上，但在硝酸纤维膜上几乎检测不到信号。
+
+解决方案:我们常常发现与用 T4 PNK 酶对 RNA 直接进行 5' 端标记相比，用标记好的接头进行连接标记的效果要差一些。这并不意味着 RNA 标签少，更难进行克隆，而只是要把滤膜在 -80℃ 曝光更久一点，因为这种方法标记的效率要低一些。
+
+问题（步骤 22）:使用接头标记而不是直接标记时，即使经过 3～4 天的曝光，滤膜上的信号仍然很弱。
+
+解决方案:这可能说明接头连接不成功。检查 T4 RNA 连接酶的失效日期，确认缓冲液中的 ATP（特别是  $10 \times T4$  RNA 连接酶缓冲液）是否经过多次冻融过程。用一个 RNA 设置阳性连接对照，并进行聚丙烯酰胺凝胶电泳确认连接酶的活性。
+
+![](../../raw/pages_0353-0368/images/page_360_image_21.jpg)
+
+## 讨论
+
+实验到这一步，就要根据放射自显影结果判断是否进行方案 5——分离、RT-PCR 扩增 RNA 标签。如果设置了充分的对照，包括无 RNABP 对照或 RNABP 不结合 RNA 的对照，这时应该获得了令人信服的信噪比。
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1445
+
+## 替代方案 去磷酸化 RL3 接头 5' 端的标记
+
+这是对 RNA 标签连接 3' 接头并进行 5' 端标记的替代方案(方案 4, 步骤 10～步骤 13)。在某些时候用这一替代方案是因为，在步骤 10～步骤 13 用 PNK 酶进行标记时蛋白质可能会被直接磷酸化，从而在放射自显影时出现较强的背景条带。如果出现这种情况，可以先将 3' 接头的 5' 端进行磷酸化标记，然后这种  ${}^{32}$ P 标记的 RL3 接头再与 RNABP-RNA 复合物进行连接，这样 RNA 标签就可以被特异性的标记了。这样，PNK 酶处理时就不需要  $[\gamma-{}^{32}P]$ ATP，在整个 25min 的 PNK 反应中可以用 1μL 的 10mmol/L ATP 代替。
+
+![](../../raw/pages_0353-0368/images/page_361_image_4.jpg)
+
+## 方法
+
+1. 在进行免疫沉淀时或之前，在无 RNA 酶的微量离心管中按顺序混合下列成分，准备  $50 \mu L$  的接头标记反应混合物:
+
+| RL3(-P)接头(20pmol/μL) | 6μL |
+| --- | --- |
+| PNK缓冲液(10×) | 5μL |
+| [γ-32P]ATP | 25μL |
+| T4 PNK酶 | 8μL |
+| RNasin Plus | 3μL |
+| H2O | 3μL |
+
+2. 在 Thermomixer R 恒温混匀仪或水浴中于  $37^{\circ}$ C 孵育 30min。
+
+3. 加  $2 \mu L$  1mmol/L 的 ATP，再孵育 5min 以使接头的 5' 端完全磷酸化。
+
+4. 颠倒 G-25 柱并涡旋，重悬树脂。然后折断柱子的底部，并松开盖。
+
+5. 将 G-25 柱装到一个微量离心管中，以 735g 离心 1min，再转移至一个新的无 RNA 酶微量离心管中。
+
+6. 将样品加到树脂上，以 735g 离心 2min。末端标记好的接头可以马上使用，也可以于 -20℃ 保存直至使用。
+
+7. 在无 RNA 酶微量离心管中，每个反应按顺序混合下列成分（体积以微升为单位）。
+
+| 无RNA酶的水 | 50μL |
+| --- | --- |
+| T4 RNA连接酶缓冲液(10×) | 8μL |
+| BSA | 8μL |
+| T4 RNA连接酶 | 2μL |
+| RNasin Plus | 2μL |
+| 5'端标记的RL3接头 | 10μL |
+
+总反应体积是  $80 \mu L$ ，用于不超过  $400 \mu L$  起始体积的 Dynabead 磁珠。与主方案步骤 6 相似，如果 Fermentas 的  $10 \times$  缓冲液已经冻融了 2 或 3 次，可以加终浓度为 1 mmol/L 的 ATP。
+
+8. 在 Thermomixer R 恒温混匀仪上，于  $16^{\circ}$ C 孵育 1h，每 2min 以 1000r/min 振荡 15s。
+9. 加  $4 \mu L$  RL3 接头（20pmol/ $\mu L$ ，带 5' 磷酸，未标记），在 Thermomixer R 恒温混匀仪上于  $16^{\circ}C$  孵育过夜，每 2min 以 1000r/min 振荡 15s。
+10. 用 $1 \mathrm{~mL} 1 \times \mathrm{PNK}$ 缓冲液洗一次，用 $1 \mathrm{~mL} 5 \times \mathrm{PXL}$ 缓冲液洗一次，再用 $1 \times \mathrm{PNK}$ 缓冲液洗3次。
+11. 在一个无 RNA 酶的微量离心管中，每个反应按顺序混合下列成分:
+
+---
+
+1446
+
+分子克隆实验指南（原书第四版）
+
+| 无RNA酶的水 | 65μL |
+| --- | --- |
+| PNK缓冲液(10×) | 8μL |
+| ATP(10mmol/L) | 1μL |
+| T4 PNK酶 | 4μL |
+| RNasin Plus | 2μL |
+
+12. 将上面的混合液加到磁珠上，并温和涡旋重悬磁珠。
+13. 在 Thermomixer R 恒温混匀仪上，于  $37^{\circ}$ C 孵育 20min，每 2min 以 1000r/min 振荡 15s。
+14. 用 $1 \mathrm{~mL} 1 \times \mathrm{PNK}$ 缓冲液洗一次，用 $1 \mathrm{~mL} 5 \times \mathrm{PXL}$ 缓冲液洗一次，再用 $1 \times \mathrm{PNK}$ 缓冲液洗三次。
+15. 继续进行方案 4 的步骤 14。
+
+![](../../raw/pages_0353-0368/images/page_362_image_8.jpg)
+
+## 配方
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+CLIP 方案所用的所有试剂的制备和保存必须避免 RNA 酶的污染。见第 6 章关于实验室无 RNA 酶溶液的配制及 RNA 操作的通用准则。
+
+PNK 缓冲液（1×）
+
+| 试剂 | 含量(1L) | 终浓度 |
+| --- | --- | --- |
+| Tris-HCl(1mol/L,pH 7.4) | 50mL | 50mmol/L |
+| MgCl2(1mol/L) | 10mL | 10mmol/L |
+| Nonidet P-40(NP-40) | 5mL | 0.5%(V/V) |
+
+用水补充至1L。4℃保存。
+
+PNK（1×）+EGTA缓冲液
+
+| 试剂 | 含量(1L) | 终浓度 |
+| --- | --- | --- |
+| Tris-HCl(1mol/L,pH 7.4) | 50mL | 50mmol/L |
+| EGTA(0.5mol/L) | 40mL | 20mmol/L |
+| Nonidet P-40(NP-40) | 5mL | 0.5%(V/V) |
+
+用水补充至1L。4℃保存。
+
+PXL 洗涤缓冲液（5×）
+
+| 试剂 | 含量(1L) | 终浓度 |
+| --- | --- | --- |
+| PBS(10×)(组织培养级,无$Mg^{2+}$,无$Ca^{2+}$) | 500mL | 5× |
+| SDS(20%) | 5mL | 0.1%(V/V) |
+| 脱氧胆酸钠 | 5g | 0.5%(m/V) |
+| Nonidet P-40(NP-40) | 5mL | 0.5%(V/V) |
+
+用水补充至1L。4℃保存。
+
+# 方案 5 RNA 标签的分离、5'-接头的连接和反转录 PCR 扩增
+
+本方案描述了通过蛋白酶 K 消化交联的蛋白质以纯化 RNA 标签，在 RNA 标签的 5' 端加上接头，并通过 RT-PCR 进行扩增。使用本方案增加了一个重要的纯化步骤:根据大
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1447
+
+小选择 PCR 产物，这样可以富集那些与所需 RNABP 交联 RNA 的扩增产物。
+
+![](../../raw/pages_0353-0368/images/page_363_image_3.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+AccuPrime Supermix（Life Technologies 公司，目录号 12344-024）
+
+丙烯酰胺:亚甲双丙烯酰胺（40%溶液；19:1）
+
+琼脂糖凝胶（3% MetaPhor）（可选；见步骤 56）
+
+过硫酸铵（APS；10%，m/V；用水新鲜配制，或分装保存于-20℃）
+
+AmpliSize 分子标尺（Bio-Rad 公司，目录号 170-8200）
+
+溴酚蓝/二甲苯蓝溶液（各 0.5%；Sigma-Aldrich 公司，目录号 B-3269）
+
+氯仿:异戊醇（24:1）（OmniPur；EMD公司，目录号3155-OP）
+
+变性聚丙烯酰胺凝胶&lt;R&gt;
+
+二硫苏糖醇（DTT；0.1mol/L）
+
+DNA 分子质量标准（如 AmpliSize Molecular Ruler，Bio-Rad 公司）
+
+dNTP 溶液（PCR 级；含全部 4 种 dNTP，每种浓度为 10mmol/L）（如 Life Technologies 公司，目录号 18427-088）
+
+DP3 引物（Fisher/Operon 公司；用 TE 缓冲液配制成浓度为  $20 \mu mol/L$  的溶液）:5'-CCGCTGGAAGTGACTGACAC-3'
+
+DP5 引物（Fisher/Operon 公司；用 TE 缓冲液配制成浓度为 20μmol/L 的溶液）:5'-AGGGAGGACGATGCGG-3'
+
+乙醇（75%），冷的
+
+乙醇:异丙醇（1:1）
+
+糖原（5mg/mL）（Applied Biosystems/Ambion 公司，目录号 AM9510）
+
+变性聚丙烯酰胺凝胶用上样缓冲液（2×）&lt;R&gt;
+
+NaOAc（3mol/L储存液；pH 5.2；分子生物学级）（如 EMD Biosciences/Calbiochem 公司，目录号 567422）
+
+含所需 RNABP-RNA 复合物的硝酸纤维素膜（来自方案 4，步骤 22）
+
+蛋白酶 K 缓冲液（1×）&lt;R&gt;
+
+蛋白酶 K 缓冲液（1×）/尿素（7mol/L）&lt;R&gt;
+
+蛋白酶 K（20mg/mL 储存液）（Roche 公司，目录号 1373196）
+
+RL5D RNA 接头（Dharmacon 公司；20μmol/L，胶纯化并按方案 7 所述保存），RL5D:5'-OH-AGGGAGGACGAUGCGGGr (N)r (N)r (N)r (N) G-3'-OH
+
+RL5 RNA 接头（Dharmacon 公司；20μmol/L，胶纯化并按方案 7 所述保存）:5'-OH-AGGGAGGACGAUGCGG-3'-OH
+
+RNA 酚（Applied Biosystems/Ambion 公司，目录号 AM9710）
+
+使用水饱和酚（pH 6.6），不要将 pH 调至 7.9。
+
+RNasin Plus（Promega 公司，目录号 N2611）
+
+RQ1 DNase（1U/μL）及附带缓冲液（Promega 公司，目录号 M6101）
+
+RT-PCR 级的水（Applied Biosystems/Ambion 公司，目录号 AM9935）
+
+---
+
+1448
+
+分子克隆实验指南（原书第四版）
+
+SuperScript III 反转录酶（RT）（200U/ $\mu$ L；附带 5×第一链缓冲液及 0.1mol/L DTT）（Life Technologies 公司，目录号 18080-093）
+
+按我们的经验，对 CLIP 来说，SuperScript III 的效果最好，因为 CLIP 获得的 RNA 模板上带有至少一个共价结合的氨基酸残基。在我们所设定的条件下，这种反转录酶在通读修饰的碱基时有更高的容忍度。
+
+SYBR Gold(Life Technologies/Molecular Probes 公司, 10 000×储存液, 目录号 S11494)
+
+TBE 缓冲液（1×）
+
+TBE 缓冲液 (5×) &lt;R&gt;
+
+TE 缓冲液（1×）（10mmol/L Tris-HCl，pH 8.0，1mmol/L EDTA）
+
+TEMED
+
+T4 RNA 连接酶（10U/ $\mu$ L；附带缓冲液及 BSA）（Fermentas 公司，目录号 EL0021）尿素
+
+## 设备
+
+BA-85 硝酸纤维膜（Whatman 公司）
+
+盖革计数器或闪烁计数器
+
+发光贴纸
+
+金属管塞
+
+MetaPhor 琼脂糖凝胶（3%）（可选；见步骤 56）
+
+微型离心机
+
+微量离心管[National Scientific Supply 公司，SlickSeal 管（无 RNA 酶），目录号 CN170S-GT，VWR#20172-945]
+
+PCR 仪（如 Bio-Rad 公司的 iCycler）与配套的 PCR 管
+
+胶片（如 Kodak MR）
+
+保鲜膜（如 Saran Wrap）
+
+QIAquick 凝胶回收试剂盒（QIAGEN 公司，目录号 28704）
+
+旋转振荡器
+
+手术刀（11号或其他一次性，无RNA酶外科手术刀）
+
+Thermomixer R 恒温混匀仪
+
+透照仪（观测 SYBR Gold 或溴化乙锭染色的 PCR 产物）
+
+垂直凝胶电泳系统（如 Thermo Scientific Owl，P9DS-2 双凝胶系统）
+
+![](../../raw/pages_0353-0368/images/page_364_image_27.jpg)
+
+## 方法
+
+## 含有 RNABP-RNA 复合物的硝酸纤维膜条带的切除
+
+1. 如果还没做的话，先鉴定方案 4 步骤 12 中获得的 RNABP-RNA 复合物。避免污染其他 RNABP，因为这些 RNABP 交联的 RNA 会污染真正所需的 RNA 组分。
+
+检查胶片结果时，将滤膜保持在冷却状态。
+
+理想的结果是，RNA 强标记区域比游离的 RNABP 大约 20kDa，而且与对照相比是特异的。这在方案 3 进行了讨论。
+
+2. 用发光贴纸，使胶片和硝酸纤维膜至少两点对齐。
+
+对着光拿这种发光贴纸-胶片三明治，有助于看透滤膜。
+
+3. 将保鲜膜包裹的滤膜固定到胶片上，防止切条带时发生移动。
+
+4. 用手术刀，小心地把需要切取区域周围的保鲜膜切下来，并剥开以露出滤膜。
+
+5. 用一个干净的手术刀，在游离 RNABP 上方约 20kDa 处，切下一条 1\~2mm 宽硝酸
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1449
+
+纤维膜。用干净手术刀的刀头将切下的滤膜转移到一个干净、无RNA酶的平台表面（无RNA酶吸头盒盖的内表面就是一个便捷的平台表面）。同时从阳性对照及重复样品上切下对应的样品。
+
+实际上，在阴性对照没有信号的情况下，即使将相应的对照区域进行进一步处理以作为消减的背景，通常都得不到结果，只会克隆到接头二聚体或其梯度产物等无意义序列。
+
+6. 用两个手术刀，将每块滤膜切成 $1\sim 2\mathrm{mm}$ 大小的方块，并转移到一个无RNA酶的微量离心管中。
+
+## 蛋白酶 K 消化去除 RNA 标签上交联的 RNABP
+
+7. 用 $1 \times$ 蛋白酶 K 缓冲液按 $1:5$ 稀释, 制备 $4 \mathrm{mg} / \mathrm{mL}$ 的蛋白酶 K 溶液。每个样品需要 $200 \mu \mathrm{L}$ 。至少按多一个样品准备。
+
+8. 将准备好的蛋白酶 K 溶液在  $37^{\circ}$ C 孵育 20min，去除任何污染的 RNA 酶。
+
+9. 将  $200 \mu L$  预处理好的蛋白酶 K 加到每管切碎的硝酸纤维膜片中。在 Thermomixer R 恒温混匀仪上，于  $37^{\circ} C$  以 1000r/min 孵育 20min。
+
+10. 加入  $200 \mu L$   $1 \times$  蛋白酶 K /7mol/L 尿素溶液。再用 Thermomixer R 恒温混匀仪，于  $37^{\circ}C$  以 1000r/min 孵育 20min。
+
+11. 加入  $400 \mu L$  的水饱和 RNA 酚和  $130 \mu L$  的氯仿:异戊醇（24:1），涡旋后，用 Thermomixer R 恒温混匀仪，于  $37^{\circ} C$  以 1000r/min 孵育 20min。
+
+12. 在室温，用微型离心机以最高转速离心 5min，进行分相。
+
+13. 收集水相（上层），转移至一个新的无 RNA 酶的微量离心管中。
+
+14. 在水相中加  $0.75 \mu L$  的糖原，涡旋。
+
+糖原作为共沉剂可促进少量 RNA 的回收。不过要注意，糖原可以抑制 T4RNA 连接酶的活性。
+
+15. 再加入  $50 \mu L$  3mol/L 的 NaOAc（pH 5.2）。
+
+16. 加入 1mL 乙醇:异丙醇（1:1）。
+
+17. 在 $-20^{\circ}C$ 沉淀过夜。
+
+## 5'RNA 接头连接
+
+18. 用微型离心机，于  $4^{\circ}$ C，以最高转速离心  $20 \sim 25$ min。
+
+19. 用 1mL 冷的 75%乙醇（存放于-20℃）漂洗沉淀两次，再去掉全部残留乙醇。
+
+用 75%乙醇对沉淀及离心管内表面进行漂洗非常重要，因为残留的盐分会降低连接效率。我们建议用 75%乙醇洗两次。洗第二次时，涡旋，再以最高转速离心 10min 回收 RNA 沉淀。
+
+这一步要小心操作，不要丢失 RNA。因为有糖原，沉淀可见，但如果不小心的话，RNA 还是很容易丢失。
+
+如果洗脱下来的 RNA 放射性较强, 可以检测的话, 可以用盖革计数器检测沉淀, 也可以用闪烁计数器检测 RNA 干沉淀的契伦科夫计数 (Cerenkov counts)。
+
+20. 打开离心管的盖，在室温晾干 10min。
+
+不要让沉淀过干，因为 RNA 会变得难溶。如果用真空离心蒸发浓缩器，2～5min 就足够了。
+
+21. 加入  $6.9 \mu L$  无 RNA 酶的水，温和吹打  $10 \sim 15$  次溶解 RNA。
+
+这一步也要小心，不要丢失 RNA。例如，在重悬时，RNA 沉淀可能会粘在吸头内，造成偶然丢失。
+
+22. 在一个无 RNA 酶的微量离心管中，每份样品按顺序加入下列成分，配制 RNA 连接混合液。
+
+这个配方配制的是混合液。考虑到吸取误差，多准备1\~2份混合液是必要的。
+
+| T4 RNA 连接酶缓冲液(10×) | 1μL |
+| --- | --- |
+| BSA(连接酶附带的) | 1μL |
+| T4 RNA 连接酶 | 0.1μL |
+| RL5 或 RL5D RNA 接头(20 pmol/μL) | 1μL |
+
+---
+
+1450
+
+分子克隆实验指南（原书第四版）
+
+23. 将  $3.1 \mu L$  RNA 连接混合物加到  $6.9 \mu L$  回收的 RNA 中。
+
+24. 于  $16^{\circ}$ C，孵育 2h 至过夜。
+
+因为  $5'$  接头的  $5'$  及  $3'$  端都是羟基，因此它不会自身环化。RNA 标签-3'接头也不会环化，因它有一个  $5'$ -磷酸和一个  $3'$ -嘌呤霉素基团。
+
+25. 在一个无 RNA 酶的微量离心管中，每份样品按顺序加入下列成分，配制 DNA 消化混合液。
+
+| 无RNA酶的水 | 79μL |
+| --- | --- |
+| RQ1 DNase缓冲液(10×) | 11μL |
+| RNasin Plus | 5μL |
+| RQ1 DNase | 5μL |
+
+26. 将  $100 \mu L$  的 DNase 消化混合液加入到每份样品中。
+
+27. 在  $37^{\circ}$ C 孵育 20min。
+
+28. 每份样品中，按顺序加入下列成分:
+
+| 无RNA酶的水 | 300μL |
+| --- | --- |
+| RNA酚 | 300μL |
+| 氯仿:异戊醇(24:1) | 100μL |
+
+29. 充分涡旋。
+
+30. 用微型离心机，以最高转速离心 5min 进行分相。
+
+31. 将水相（上层）转移到一个无 RNA 酶的微量离心管中。
+
+32. 加入  $300 \mu L$  氯仿/异戊醇（24:1），充分涡旋，室温以最高转速离心 2min 进行分相。
+
+33. 将水相（上层）转移到一个无 RNA 酶的微量离心管中。
+
+34. 加入  $0.5 \mu L$  糖原，涡旋。
+
+35. 加入  $50 \mu L$  3mol/L 的 NaOAc（pH 5.2），涡旋。
+
+36. 加入 1mL 乙醇:异丙醇（1:1），涡旋或颠倒混匀。
+
+37.  $-20^{\circ}C$  沉淀过夜。
+
+## 反转录
+
+38. 用微型离心机，于  $4^{\circ}$ C，以最高转速离心  $20 \sim 25$ min。
+
+39. 按前述方法漂洗并干燥沉淀。
+
+再用闪烁计数器检测回收的 RNA 量。
+
+40. 用 $18\mu \mathrm{L}$ 水重悬RNA，分成两个 $9\mu \mathrm{L}$ 的等份，分别用作反转录和一个无反转录酶的对照。
+
+41. 在每个 $9\mu \mathrm{L}$ 的RNA中，加入 $2\mu \mathrm{L}$ 的DP3引物(5pmol/μL的储存液)和 $1\mu \mathrm{L}10\mathrm{mmol / L}$ 的dNTP。
+
+将 PCR 管放在 PCR 仪上，非常方便。
+
+42.  $65^{\circ}$ C加热 5min，再置于冰上，让 DP3 引物与 RNA 复性。
+
+43. 短暂离心，将  $12 \mu L$  的混合物置于离心管底部。
+
+44. 在一个无 RNA 酶的离心管中, 每个反应按顺序加入下列成分, 制备反转录混合液。
+
+这个配方配制的是混合液。考虑到吸取误差，多准备1～2份混合液是必要的。
+
+| SuperScript 反转录缓冲液(5×) | 4μL |
+| --- | --- |
+| dNTP(10mmol/L) | 1μL |
+| DTT(0.1mol/L) | 1μL |
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1451
+
+| RNasin Plus | 1μL |
+| --- | --- |
+| SuperScript III | 1μL |
+
+准备一份无反转录酶的对照，用等体积的水替代反转录酶。
+
+45. 在每份 RNA+DP3 引物的样品里, 加入  $8 \mu L$  反转录混合液, 用吸头吹打 3\~4 次混匀。
+
+46. 上述样品先在  $50^{\circ}$ C 反应 45min，在  $55^{\circ}$ C 孵育 15min，再在  $90^{\circ}$ C 处理 5min，最终保持在  $4^{\circ}$ C。将样品转移至冰上。
+
+## PCR 扩增
+
+47. 下面的第一种 PCR 方法通常被用来扩增反转录产物。不过，每个反应中这种方法只能利用 1/10 的第一链 cDNA 模板，从而会丢失 RNA 标签池的复杂度。最近，通过运用第二种 PCR 扩增方法，改进了操作程序，可以利用更大比例的反转录产物，从而保留 RNA 标签池的复杂度。
+
+## 方法1:传统反转录产物PCR扩增
+
+i. 在无 RNA 酶的微量离心管中，每个反应按顺序加入下列成分，制备 PCR 扩增混合物:
+
+| AccuPrime Pfx Supermix | 27μL |
+| --- | --- |
+| DP5 引物(20pmol/mL) | 0.75μL |
+| DP3 引物(20pmol/mL) | 0.75μL |
+
+ii. 混合好的  $28.5 \mu L$  的扩增混合物分到做好标记的 PCR 管中，再在各管中加入  $2 \mu L$  的反转录产物。盖好盖，温和涡旋后短暂离心。
+
+iii. PCR 扩增程序如下:
+
+| 循环数 | 变性 | 复性 | 延伸 |
+| --- | --- | --- | --- |
+| 1 | 95°C 2min |  |  |
+| 20~40 | 95°C 20s | 58°C 30s | 68°C 30s |
+| 最后循环 |  |  | 68°C 5min |
+
+保持在  $4^{\circ}$ C。
+
+要确定 PCR 扩增的最佳循环数，每次 CLIP 实验都要同时运行多个样品，并从 24 个循环开始，每隔 2 个循环取出一管。然后用变性聚丙烯酰胺凝胶及 SYBR Gold 染色分析扩增效果。
+
+## 方法2:保持RNA标签池复杂度的PCR扩增
+
+i. 在无 RNA 酶微量离心管中，按顺序混合下列成分，准备 5 个  $61 \mu L$  体积（是方法 1 体积的两倍）的扩增反应。
+
+| AccuPrime Pfx Supermix | 54μL |
+| --- | --- |
+| DP5 引物(20pmol/mL) | 1.5μL |
+| DP3 引物(20pmol/mL) | 1.5μL |
+
+每个 CLIP 样品共需  $285 \mu L$  的混合物。
+
+ii. 每份  $57 \mu L$  混合物分到 5 个 PCR 管中（每个 CLIP 样品需 5 管），再在每管中加入  $4 \mu L$  反转录产物。用完  $20 \mu L$  反转录产物。
+
+iii. 按照方法 1 步骤 iii 的扩增程序扩增 12 个循环。
+
+iv. 在第 12 个循环  $68^{\circ}$ C 延伸结束后，将 PCR 管转移至一个放在冰上的金属块上。
+
+v. 在一个新的离心管中将 5 管合并，对起始 cDNA 池中的每个 RNA 标签，在混合的 PCR 产物就包含了多个拷贝。
+
+vi. 在冰上，按照每份  $30.5 \mu L$  分配到新的 PCR 管中，再在 PCR 仪上从  $95^{\circ}C$  开始进行进一步扩增循环。
+
+---
+
+1452
+
+分子克隆实验指南（原书第四版）
+
+每两个循环取出一个 PCR 管，以评估最佳循环数。最佳循环次数是获得用以评估大小的可见产物的最小循环数。12 次循环后混合 PCR 产物是为了在每个 PCR 中保持起始模板的复杂度，从而避免因为低拷贝（在按 10 份分配反转录产物时，标签数会分配不均匀）导致的不均一扩增。
+
+## PCR 扩增产物的分析
+
+48. 在 $50 \mathrm{~mL}$ 的圆锥管中, 混合 $8.4 \mathrm{~g}$ 尿素、$4 \mathrm{~mL} 5 \times \mathrm{TBE}$ 及 $5 \mathrm{~mL}$ 水, 直至尿素溶解。加入 $5 \mathrm{~mL} 40 \%$ 的丙烯酰胺: 亚甲双丙烯酰胺溶液 (19:1), 总体积为 $20 \mathrm{~mL}$ 。
+
+49. 装配 Owl 双垂直电泳系统的灌胶系统，按厂商说明书准备灌制一块 1.5mm 厚的凝胶。
+
+50. 在灌胶前，加入  $200 \mu L$  10% 的过硫酸铵（APS）和  $7.5 \mu L$  的 TEMED。灌制凝胶，并在室温聚合。
+
+51. 每份  $30.5 \mu L$  的 PCR 产物与  $30.5 \mu L$  的  $2 \times$  上样缓冲液混合，按下面的说明将每个反应上到一个泳道里。在第一个泳道，上  $3 \mu L$  的 AmpliSize 分子标尺（DNA 低分子质量标准）。
+
+一般按这种方式上样:分子质量标准，24个、26个、28个和30个循环的实验样品；24个、26个、28个和30个循环的无RNABP阴性对照样品（如果有的话）。在第二块胶上，分子质量标准，24个、26个、28个和30个循环的无反转录酶实验样品对照；24个、26个、28个和30个循环的无RNABP无反转录酶对照（如果有的话）。
+
+小心操作，保证对照样品及平行反应与实验样品完全隔开，因为如果有污染的 PCR 产物，会带进测序时的 PCR 重扩增。
+
+52. 用 $1 \times \mathrm{TBE}$ 电泳缓冲液，在 $350\mathrm{V}$ 电压下电泳 $1\mathrm{h}$，直至溴酚蓝染料到达凝胶底部。
+
+53. 拆开凝胶板，将凝胶浸入含有 SYBR Gold（按 1:10 000 稀释）的 TBE 中，在脱色摇床上温和染色 10～40min。
+
+54. 将染色的凝胶放在一块保鲜膜上，并用透照仪进行成像。图 21-3 是一个 PCR 凝胶的例子。
+
+许多透照仪用的是 254nm 的紫外光源，这会导致 PCR 产物发生光切刻（photonicking）和光二聚化作用。使用 312nm 波长的激发光源可以避免这一问题。参考 SYBR Gold 厂商的说明书可以获得更多有关使用 SYBR Gold 进行透照和成像的小窍门。
+
+见“疑难解答”。
+
+![](../../raw/pages_0369-0384/images/page_368_image_15.jpg)
+
+<details>
+<summary>text_image</summary>
+
+PCR循环数: 20 22 24 26
++RT
+-RT
+300
+200
+100
+50
+引物
+</details>
+
+图 21-3 交联 RNA-蛋白复合物的 RNA 酶滴定。每  $30.5 \mu L$  来自方案 5，步骤 47iii（传统方法）或步骤 47vi（第二种方法）与  $30.5 \mu L$  的  $2 \times$  上样缓冲液混合，每个反应上到尿素 PAGE 凝胶的一个泳道（按照步骤 51）。 $3 \mu L$  AmpliSizer 分子标尺上到每块凝胶的第一个泳道。进行电泳并按照步骤 52～54 进行观测。在这个示例凝胶上，对一个含量很丰富的 RNABP 进行了 HITS-CLIP 实验；因此，我们取
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1453
+
+出 20～26 个循环的样品进行电泳（如图所示）。不过，更常规的实验可以取 24～30 个循环的样品进行分析。在+RT 样品中，从第 22 个循环开始就在 100bp 处出现了依赖于 RT 的 PCR 产物涂抹带，而在-RT 对照 PCR 中就没有。PCR 引物则靠近凝胶的底部，如括号所示。
+
+55. 在评估实验成功后（见“疑难解答”及讨论部分），在透照仪上用手术刀将 $80\sim$ 100碱基的PCR产物切下来，并转移至无菌微量离心管中。
+
+现在不再需要无RNA酶的离心管了，但还是要按标准预防措施操作，以避免PCR产物的交叉污染。
+
+56. 按照 Qiagen 公司提供的“用户建立”的“从聚丙烯酰胺凝胶回收 DNA 片段”方案，用 QIAquick 胶回收试剂盒回收 DNA；或者，PCR 产物也可以用  $1 \times$  TBE 进行标准的琼脂糖电泳，并用 EB 染色，在 254nm 或 312nm 成像（见第 2 章，方案 1 和方案 2）。我们使用 3% 的 Metaphor 琼脂糖凝胶，这可以准确地区分小 PCR 产物的大小。按标准方案，用 QIAquick 胶回收试剂盒回收 DNA，用  $50 \mu L$  的 TE 缓冲液洗脱，这可以提高长期保存的稳定性。有关实验结果的更多细节见讨论部分。
+
+PCR产物的测序在方案6中描述。
+
+![](../../raw/pages_0369-0384/images/page_369_image_7.jpg)
+
+## 疑难解答
+
+问题（步骤 54）:在实验组中，PCR 产物呈现阶梯状。
+
+解决方案:在连接和克隆时，如果RNA太少，就会发生这种现象。因为这时，无用的竞争性反应（如接头-接头连接）就会占优势。有时，RNA接头的轻微降解，从而露出了末端的磷酸基团或丢失了封闭基团，这也会导致接头与接头发生连接。接头应该进行胶纯化，并按单次使用量进行分装，并于 $-80^{\circ}\mathrm{C}$ 保存。另一个解决方法是增加起始实验材料。有可能接头连接步骤会导致RNA样品明显丢失。
+
+问题（步骤 54）:在无反转录酶对照样品中有 PCR 产物。
+
+解决方案:这说明有 DNA 污染，这种污染通常来自之前或同时进行的 CLIP 实验的 PCR 产物。本方案中，连接好的 RNA 产物最后用 DNase 进行了处理（步骤 25～27），因此污染肯定发生在步骤 27 以后所用的试剂上。所有东西，包括微量离心管、所有试剂都应该更换或验证没有污染。为避免污染，所有试剂要单独存放，按单次使用量分装（如果可能），一直使用带滤芯的吸头，并且常用无反转录酶的对照监测实验。
+
+问题（步骤 54）:在早期循环可见 PCR 产物，而在后期循环中产物略微变大。
+
+解决方案:我们有时也会看到这种现象，但并不清楚原因。一旦可见，尽量从早期循环中切取所需的 PCR 产物。
+
+问题（步骤54）:实验样品泳道有PCR产物，但不是预期（80～100个碱基）的大小。
+
+解决方案:将实验样品泳道的 PCR 产物与无 RNABP 组进行对比，确认 PCR 产物是否来自与感兴趣 RNABP 交联的 RNA。但要注意，即使样品中完全缺乏相应抗体的最佳抗原表位，但由于竞争性和化学计量（stoichiometry）等原因，也会有不同的蛋白质可能会被免疫沉淀下来。针对同一 RNABP 的第二种抗体是一个非常好的阳性对照。在对几个 RNABP 进行的 CLIP 实验中，在游离 RNABP 上方约 20kDa 处进行切取，会得到 80～100 个碱基的 PCR 产物。不过，非常小或非常大的 RNABP 会与此有些不同。
+
+问题（步骤 54）:PCR 产物长度小于 60 个碱基。
+
+解决方案:要与基因组进行可靠地比对，最小的 PCR 产物 56～60 个碱基——RNA 标签为 20 个碱基，接头加起来是 36 个碱基。可以从保存在 -80℃ 硝酸纤维膜上切取更大一点的条带（与之前切取的相比），或者从使用较低 RNA 酶浓度的泳道切取所需样品。有的时候，RNABP 可能主要识别小 RNA，如 miRNA，这样就不会产生预期的 80～100 个碱基 PCR 产物。这可以在硝酸纤维膜上看出来，因为即使使用较低的 RNA 酶浓度，RNABP-RNA 复合物也不增大。
+
+---
+
+1454
+
+分子克隆实验指南（原书第四版）
+
+![](../../raw/pages_0369-0384/images/page_370_image_2.jpg)
+
+## 讨论
+
+最后凝胶上应显示从 50bp 和 100bp 开始的分子质量标准，以及一系列不同 PCR 循环的 PCR 产物，如 24、26、28 和 30 循环。重要的是，在无反转录酶等阴性对照中，相同的循环数是否有类似的 PCR 产物。如果对在较少循环数下获得的结果还有些疑惑，对照组可以扩增多至 40 个循环。
+
+## 理想结果
+
+如果切取的是游离 RNABP 上方约 20kDa 的条带，理想的结果是 PCR 产物在 80～100 碱基处呈现一个拖尾的带。RNA 标签大小为 50～60 个碱基，再加 36 个碱基的接头。与较小 RNABP 交联的较长 RNA 标签会产生较大的 PCR 产物，同样，较大的污染 RNABP 交联的较小 RNA 片段会导致较小的 PCR 产物。阴性对照在 80～100bp 处没有 PCR 产物，至少在稍多几个循环后没有。例如，如果一个野生型小鼠 RNABP-CLIP 实验在 24 个循环时有很好的结果，而敲除对照小鼠在 30 个循环时开始出现 PCR 产物，这说明在野生型小鼠中，所需的 RNABP 仍很好地富集了 RNA 标签，虽然可能不是绝对干净。在分析最终序列和评估那些稀有标签是否真与靶 RNABP 结合时，这是一个需要考虑的重要数据。
+
+## 确定切除条带
+
+含 RNABP-RNA 复合物的硝酸纤维素膜上，选择切取哪条带是一个重要问题，Ago（Argonaute）CLIP 实验可以说明这一点。因为与 Ago 交联的很大一部分都是 miRNA，PCR 产物大小约为 57 个碱基（21 个碱基的 miRNA 和 36 个碱基的接头）。如果切取 Ago 上方 20kDa 的条带（97kDa+20kDa=117kDa），就不会有 miRNA 的 PCR 产物。实际上，进行 Ago 的 CLIP 实验时，在硝酸纤维膜上切取了比通常更宽的条带，同时包括了 Ago:miRNA 复合物及 Ago:mRNA 复合物，这样可以鉴定许多 Ago 所结合 miRNA 真正的靶 mRNA（Chi et al. 2009）。再用凝胶分析 PCR 产物时，可以同时看到两条带，一个在约 57 个碱基（约 21+36）处，另一个在 80～100 个（约 50+36）碱基处。根据测序结果，可以证实大部分 57 个碱基的产物来自 miRNA，而 80～100 个碱基的产物来自靶 mRNA 分子。
+
+通常，可以知道切取较小的带不会丢失在细胞内结合的小RNA分子，而较大的带则可能是种类广泛的RNA。如果怀疑靶RNA不能被RNA酶充分消化，或者需要把更长的RNA定向CLIP下来时（用基因特异引物扩增回收产物，确定特异RNA分子是否与一个RNABP直接交联），甚至可以切取更大的条带。一般来说，RNA酶浓度越低，RNA标签越长，其他RNABP造成污染的可能性也越大。
+
+## 将 3' 接头连接于 RNA 标签
+
+CLIP方案的一个关键步骤是在RNA标签上连接 $3^{\prime}$ 接头。用T4 RNA连接酶对多个RNA结合蛋白成功地完成了实验。替代策略包括单接头连接或用环化产物进行多核苷酸延展（polynucleotide stretch）（Ingolia et al. 2009），以及iCLIP（Konig et al. 2009）及PAR-CLIP（Hafner et al. 2010）等演进CLIP方案中所用的改动方法。
+
+![](../../raw/pages_0369-0384/images/page_370_image_12.jpg)
+
+## 配方
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。CLIP 方案所用的所有试剂的制备和保存必须避免 RNA 酶的污染，见第 6 章关于实验室无 RNA 酶溶液的配制及 RNA 操作
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1455
+
+的通用准则。
+
+## 变性聚丙烯酰胺凝胶
+
+20mL 的混合物可以灌制一块 1.5mm 厚的凝胶。在灌胶前再加过硫酸铵和 TEMED。
+
+| 试剂 | 含量(20mL) | 终浓度 |
+| --- | --- | --- |
+| 尿素 | 8.4g | 7mol/L |
+| 丙烯酰胺:亚甲双丙烯酰胺(40%,19:1) | 5mL | 10%(V/V) |
+| TBE缓冲液(5×) | 4mL | 1× |
+| 过硫酸铵(10%,m/V) | 200μL | 0.1%(m/V) |
+| TEMED | 7.5μL | 0.0375%(m/V) |
+
+变性聚丙烯酰胺凝胶用上样缓冲液（2×）
+
+| 试剂 | 含量(1mL) | 终浓度 |
+| --- | --- | --- |
+| 去离子甲酰胺 | 950μL | 95%(V/V) |
+| EDTA(100mmol/L,pH 8.0) | 50μL | 5mmol/L |
+
+将 4 份甲酰胺混合物与 1 份 0.5% 的溴酚蓝及二甲苯蓝溶液（Sigma-Aldrich B-3269）混合，保存于 -20℃。
+
+PK 缓冲液（1×）
+
+| 试剂 | 含量(1L) | 终浓度 |
+| --- | --- | --- |
+| Tris-HCl(1mol/L,pH 7.5) | 100mL | 100mmol/L |
+| NaCl(5mol/L) | 10mL | 50mmol/L |
+| EDTA(0.5mol/L,pH 8.0) | 20mL | 10mmol/L |
+
+用水补充至1L。4℃保存。
+
+PK 缓冲液（1×）/尿素（7mol/L）
+
+| 试剂 | 含量(10mL) | 终浓度 |
+| --- | --- | --- |
+| Tris-HCl(1mol/L,pH 7.5) | 1mL | 100mmol/L |
+| NaCl(5mol/L) | 0.1mL | 50mmol/L |
+| EDTA(0.5mol/L,pH 8.0) | 0.2mL | 10mmol/L |
+| 尿素 | 4.2g | 7mol/L |
+
+用水补充至 10mL。此缓冲液每次需新鲜配制。
+
+TBE 缓冲液（5×）
+
+| 试剂 | 含量(1L) | 终浓度 |
+| --- | --- | --- |
+| Tris 碱 | 54g | 445mmol/L |
+| 硼酸 | 27.5g | 445mmol/L |
+| EDTA(0.5mol/L,pH 8.0) | 20mL | 10mmol/L |
+
+用水补充至 1L。用 4 份水将 1 份  $5 \times TBE$  稀释成  $1 \times TBE$ 。
+
+## 参考文献
+
+Chi SW, Zang JB, Mele A, Darnell RB. 2009. Argonaute HITS-CLIP decodes microRNA-mRNA interaction maps. Nature 460: 479–486.
+Hafner M, Landthaler M, Burger L, Khorshid M, Hausser J, Berninger P, Rothballer A, Ascano MJ, Jungkamp AC, Munschauer M, et al. 2010. Transcriptome-wide identification of RNA-binding protein and microRNA target sites by PAR-CLIP. Cell 141: 129–141.
+
+- Ingolia NT, Ghaemmaghami S, Newman JR, Weissman JS. 2009. Genome-wide analysis in vivo of translation with nucleotide resolution using ribosome profiling. Science 324: 218–223.
+- Konig J, Baumann S, Koepke J, Pohlmann T, Zarnack K, Feldbrugge M. 2009. The fungal RNA-binding protein Rrm4 mediates long-distance transport of ubi1 and rho3 mRNAs. EMBO J 28: 1855–1866.
+
+---
+
+1456
+
+分子克隆实验指南（原书第四版）
+
+## 方案 6 RNA CLIP 标签测序
+
+对 CLIP 下来 RNA 标签的 PCR 产物，有两种测序策略。低通量测序是对 PCR 产物进行克隆、常规抽提及测序。对方案 5 获得的 PCR 产物，可以用 PCR 加 A 尾及 TA 克隆等常规方案处理（见第 3 章，方案 12）。分析少量克隆时，这是一个有价值的策略。例如，对一个 CLIP 预实验，可以测 50 条序列，以验证这些序列来自所用物种而不是来自细菌 RNA 污染。在刚开始建立 CLIP 方法时，细菌 RNA 污染是一个严重问题，因为一些商品化的酶被来自其他物种的 RNA 污染，而且这些 RNA 不幸被克隆进去了。我们发现 T4 RNA 连接酶是这种污染的一个常见污染源，现在我们一直用 Fermentas 公司的产品，因为它污染最少。在新 CLIP 实验中，特别是处理微量的 RNA 样品时，这一问题需要注意。
+
+一般来说，考虑到费用的降低，如果要对 CLIP 获得的 RNA 进行测序，高通量测序策略是首选。本方案描述的是用适配 Illumina 公司 Solexa 平台的引物对 PCR 产物进行重扩增的方法。虽然本方案是特别针对 Illumina 公司 Solexa 平台的，与此类似，对初始 PCR 产物进行重扩增时，也可以将平台特异的序列加到 PCR 扩增的 DNA 末端（见 11 章）。
+
+![](../../raw/pages_0369-0384/images/page_372_image_5.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+AccuPrime Pfx Supermix（Life Technologies 公司，目录号 12344-040）
+
+琼脂糖凝胶，高分辨率（如 MetaPhor）
+
+AmpliSize 分子标尺（Bio-Rad 公司）
+
+DSFP3 引物（Fisher/Operon 公司；20pmol/μL）:5'-CAAGCAGAAGACGGCATACG ACCGCTGGAAGTGACTGACAC-3'
+
+DSFP5 引物 (Fisher/Operon 公司; 20pmol/μL): 5'-AATGATACGGCGACCACCGACTA TGGATACTTAGTCAGGGAGGACGATGCGG-3'
+
+溴化乙锭溶液
+
+Illumina 测序引物 SSP1(也称为 Solexa 测序引物)(Fisher/Operon 公司): 5'-CTATGGA TACTTAGTCAGGGAGGACGATGCGG-3'
+
+来自方案 5 的 PCR 产物（用 DP3 及 DP5 引物进行扩增的）
+
+TBE 缓冲液（1×）（配制凝胶和电泳用）&lt;A&gt;
+
+Tris-EDTA（TE）缓冲液（1×）（10mmol/L Tris-HCl，pH 8.0；1mmol/L EDTA）&lt;A&gt;
+
+## 设备
+
+使用高通量测序设备
+
+本方案针对 Illumina 的测序平台，其他平台需要不同的引物。
+
+垂直电泳系统（如 Thermo Scientific Owl B1A EasyCast 微型凝胶系统）
+
+金属块（Metal block）
+
+微量离心管(National Scientific Supply 公司, SlickSeal 管[无 RNA 酶], 目录号 CN170S-
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1457
+
+GT, VWR#20172-945)
+
+PCR 仪（如 Bio-Rad 公司的 iCycler）及 PCR 管
+
+QIAquick 凝胶回收试剂盒（QIAGEN 公司，目录号 28704）
+
+Quant-iT DNA 分析试剂盒（高灵敏度）（Life Technologies 公司，目录号 Q33120）
+
+透照仪（312nm）（如 Spectroline）
+
+![](../../raw/pages_0369-0384/images/page_373_image_7.jpg)
+
+## 方法
+
+## 用 Illumina/Solexa 融合引物进行 PCR 重扩增
+
+1. 在一个微量离心管中，每个反应混合下列成分制备 PCR 混合物:
+
+| AccuPrime Pfx Supermix | 27μL |
+| --- | --- |
+| DSFP5 引物(20μmol/L) | 0.5μL |
+| DSFP3 引物(20μmol/L) | 0.5μL |
+
+2. 在置于冰上的金属块上放置足够的做好标记的 PCR 管，来自方案 5 的每个样品做 4 个 PCR 反应。
+
+与方案 5 类似，这些 PCR 反应用来评估不同循环次数的扩增效果。
+
+3. 按  $28 \mu L/$  管，将 PCR 混合物分装至前面准备好的 PCR 管中。
+
+4. 每个 PCR 管中加  $3 \mu L$  纯化的 PCR 产物（来自方案 5）。
+
+5. 按下面的程序进行 PCR 扩增。
+
+| 循环数 | 变性 | 复性 | 延伸 |
+| --- | --- | --- | --- |
+| 1 | 95°C 2min |  |  |
+| 6~12 | 95°C 20s | 58°C 30s | 68°C 40s |
+| 最后循环 |  |  | 68°C 5min |
+
+保持在  $4^{\circ}$ C，并转移至冰上。
+
+6. 灌制含溴化乙锭的 2%\~3% 的高分辨率琼脂糖凝胶（如 MetaPhor）。
+
+注意生产厂商有关使用 MetaPhor 琼脂糖的说明。若不遵循说明，它很难操作。
+
+7. 将全部 PCR 产物上到紧邻低分子质量梯度标准的泳道，进行电泳。
+
+8. 用透照仪观测 DNA，最好用 312nm 的激发光，避免 254nm 紫外线通过光分解及光二聚化对 DNA 损伤。
+
+见“疑难解答”。
+
+9. 从凝胶上切下 150\~170 碱基处的 DNA。
+
+10. 用 QIAquick 凝胶回收试剂盒从凝胶上回收 DNA。
+
+高灵敏的 Quant-iT DNA 分析试剂盒可以有效定量用于高通量测序的微量 DNA。
+
+11. 每个样品准备  $10 \sim 30 \mu L$  10nmol/L 的 DNA，用于 Illumina 测序。如果合适的话，联系测序机构或资源中心，获得有关样品递交的具体细节。有关测序结果生物信息学分析的讨论，见 HITS-CLIP 数据分析信息栏。
+
+![](../../raw/pages_0369-0384/images/page_373_image_28.jpg)
+
+## 疑难解答
+
+问题（步骤 8）:在 12 轮扩增后，没有明显的产物。
+
+解决方案:使用阳性对照以确认 PCR 工作正常。对样品来说，AccuPrime Pfx 可能会因为因为多次冻融而丧失活性。确认第一次扩增的 PCR 产物（本方案的模板）被有效回收。
+
+---
+
+1458
+
+分子克隆实验指南（原书第四版）
+
+## 方案 7 RNA 接头胶回收及保存
+
+在从生产厂商收到前面方案中要用的 RNA 接头后, 它们必须用变性聚丙烯酰胺凝胶进行纯化, 并按单次使用量分装, 保存在 $-80^{\circ} \mathrm{C}$ 。如果 $3^{\prime}$ 接头丢失了嘌呤霉素封闭基团, 在 $3^{\prime}$ 接头连接过程中会发生 $3^{\prime}$ 接头的连环化。此外, 缩短的接头也会使测序结果的生物信息学分析变得更困难。按下面的方案, 可以在 $20 \%$ 的变性聚丙烯酰胺凝胶对 $50 \mu \mathrm{L}$ 去保护的 RNA 接头 (500μmol/L) 进行电泳及纯化。
+
+![](../../raw/pages_0369-0384/images/page_374_image_4.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+丙烯酰胺:亚甲双丙烯酰胺（40%溶液；19:1）
+
+过硫酸铵（APS; 10%, m/V；用水新鲜配制，或分装保存于-20℃）
+
+AmpliSize 分子标尺（Bio-Rad 公司，目录号 170-8200）
+
+溴酚蓝/二甲苯蓝溶液（各 0.5%；Sigma-Aldrich 公司，目录号 B-3269）
+
+乙醇（75%，保存于-20℃）
+
+乙醇:异丙醇（1:1）
+
+变性聚丙烯酰胺凝胶用上样缓冲液（2×）&lt;R&gt;
+
+RL3、RL3（-P）、RL5 和 RL5D RNA 接头
+
+RNA 凝胶洗脱缓冲液（1mol/L NaOAc，pH 5.2；1mmol/L EDTA）
+
+RT-PCR 级水（Applied Biosystems/Ambion 公司，目录号 AM9935）
+
+TBE 缓冲液 (1×) &lt;A&gt;
+
+TBE 缓冲液 (5×) &lt;R&gt;
+
+TEMED
+
+尿素
+
+## 设备
+
+KODAK BioMax TranScreen LE(8in×10in)(PerkinElmer 公司, 目录号 1622034001EA)
+微量离心管[National Scientific Supply 公司, SlickSeal 管(无 RNA 酶), 目录号 CN170S-GT, VWR#20172-945]
+
+Nanosep MF Spin 柱（0.45μm 滤膜，Part #: ODM45C34；Pall 公司）
+
+保鲜膜（如 Saran Wrap）
+
+手术刀（11 号或其他一次性的无 RNA 酶外科手术刀）
+
+分光光度计
+
+橡胶活塞注射器（1mL）
+
+恒温混匀仪
+
+紫外灯（手持式，检查 RNA 条带用）
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1459
+
+垂直电泳系统（如 Thermo Scientific Owl 公司，P9DS-2 双凝胶系统）
+
+Whatman 无黏合剂玻璃超细纤维滤膜（GF/D 型，直径 1.0cm；Whatman 公司，目录号 1823-010）
+
+![](../../raw/pages_0369-0384/images/page_375_image_4.jpg)
+
+## 方法
+
+1. 混合下列成分制备 20mL 20% 的凝胶:
+
+| 尿素 | 8.4g |
+| --- | --- |
+| 丙烯酰胺:亚甲双丙烯酰胺(40%;19∶1) | 10mL |
+| TBE(5×) | 4mL |
+| $H_2O$ | 补充至20mL |
+
+2. 装配垂直电泳系统的灌胶系统，准备灌制一块 1.5mm 厚的凝胶。
+
+3. 灌胶前，加入  $200 \mu L$  10% 的过硫酸铵（APS）和  $7.5 \mu L$  的 TEMED。充分混合，按厂商说明灌制凝胶。
+
+4. 用无 RNA 酶的水将 RNA 接头配制成 500mmol/L 的溶液。
+
+5. 在 $50\mu \mathrm{L}$ RNA接头中加入 $50\mu \mathrm{L}$ 的 $2\times$ 甲酰胺上样缓冲液，上样到配好的 $20\%$ 聚丙烯酰胺凝胶。
+
+6. 用  $1 \times$  TBE 缓冲液，在 350V 电压下电泳，直至溴酚蓝到达凝胶底部。
+
+7. 拆开凝胶板，将凝胶转移至一块置于成像屏[如 KODAK BioMax TranScreen LE（8in×10in）]上方的保鲜膜上。与荧光背景相比，RNA 接头在紫外线下呈现为黑色的条带。
+
+见“疑难解答”。
+
+8. 小心操作，只切取全长的 RNA 接头条带，并将凝胶块转移至无 RNA 酶的微量离心管中。
+
+9. 加入  $350 \mu L$  RNA 凝胶洗脱缓冲液。
+
+10. 用 1mL 注射器的橡胶活塞将凝胶块压碎，小心操作避免溅出。
+
+11. 用恒温混匀仪，在  $37^{\circ}$ C 温和振摇 30min，使凝胶浆充分浸泡。
+
+12. 用 1mL 吸头，将凝胶浆转移至一个或多个 Nanosep spin 滤器（在 Nanosep spin 柱的底部放置一块 Whatman GF/D 滤膜）上，并按厂商的说明进行离心。
+
+13. 将洗脱液转移至一个新的无 RNA 酶的微量离心管中，在微型离心机上以最高转速离心 1min。
+
+14. 加入 1mL 乙醇:异丙醇（1:1），充分混合，于-20℃沉淀几小时至过夜。
+
+15. 用微型离心机，于  $4^{\circ}$ C，以最高转速离心  $20 \sim 25$ min。
+
+16. 用 1mL 预冷的 75%乙醇（存放于-20℃）漂洗沉淀，去掉残留乙醇。
+
+17. 在室温，空气干燥 5\~10min。
+
+18. 用  $50 \mu L$  RT-PCR 级的水重悬沉淀。
+
+19. 用分光光度计测量 260nm 的吸光度，检测 RNA 的浓度，并用 RT-PCR 级的水配制成 20mmol/L 的工作液。
+
+用 NanoDrop 分光光度计进行检测非常方便。
+
+20. 按单次使用量（注意:每次实验样品和对照样品都要进行几个接头连接反应）对凝胶纯化的 RNA 接头进行分装，并于  $-80^{\circ}C$  保存。
+
+---
+
+1460
+
+分子克隆实验指南（原书第四版）
+
+![](../../raw/pages_0369-0384/images/page_376_image_2.jpg)
+
+## 疑难解答
+
+问题（步骤 7）:电泳时，RNA 呈现宽且弥散的带，或有拖尾现象。
+
+解决方案:可能是上样量过大。使用更宽的上样孔（3～5cm），将样品上到多个上样孔中，或者每个孔上较少的样品，这三种办法都能提高电泳分辨率。
+
+![](../../raw/pages_0369-0384/images/page_376_image_6.jpg)
+
+## 讨论
+
+RNA 接头的完整性对成功的 CLIP 实验来说是非常关键的。要用凝胶纯化小批量的 RNA 接头，然后-80℃保存，并避免 RNA 接头的多次冻融。对非常微量的 RNA 样品来说，这样可以明显促进接头连接以及随后扩增的效果。在处理接头时，必须使用最高质量的试剂，并保证无 RNA 酶操作。
+
+![](../../raw/pages_0369-0384/images/page_376_image_9.jpg)
+
+## 配方
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+CLIP 方案所用的所有试剂的制备和保存必须避免 RNA 酶的污染。见第 6 章关于实验室无 RNA 酶溶液的配制及 RNA 操作的通用准则。
+
+变性聚丙烯酰胺凝胶用上样缓冲液（2×）
+
+| 试剂 | 含量(1mL) | 终浓度 |
+| --- | --- | --- |
+| 去离子甲酰胺 | 950μL | 95%(V/V) |
+| EDTA(100mmol/L,pH 8.0) | 50μL | 5%(V/V) |
+
+将 4 份甲酰胺混合物与 1 份 0.5% 的溴酚蓝及二甲苯蓝溶液（Sigma-Aldrich B-3269）混合，保存于 -20℃。
+
+TBE 缓冲液（5×）
+
+| 试剂 | 含量(1L) | 终浓度 |
+| --- | --- | --- |
+| Tris 碱 | 54g | 445mmol/L* |
+| 硼酸 | 27.5g | 445mmol/L* |
+| EDTA(0.5mol/L,pH 8.0) | 20mL | 10mmol/L |
+
+用水补充至 1L。用 4 份水将 1 份 5×TBE 稀释成 1×TBE。
+
+## 信息栏
+
+![](../../raw/pages_0369-0384/images/page_376_image_20.jpg)
+
+## 紫外蛋白交联的机制和特异性
+
+紫外线介导的交联机制现在还不完全清楚，但据信是因为核酸碱基吸收了 250～
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">\* 原文为 445nmol/L，译者注。</span></small>
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1461
+
+280nm 波长的紫外线（Brimacombe et al. 1988）。基态电子激发到单线高能状态，从而在与核苷酸直接结合的分子间形成了一个新的共价键（Fecko et al. 2007）。由于交联只发生在距离以埃计的分子之间，所以在 CLIP 实验中，只有直接的蛋白质-RNA 结合才能被交联以及进行深入分析。虽然会导致 DNA-DNA 及 RNA-RNA 交联，紫外照射并不会诱导蛋白-蛋白交联（Zwieb et al. 1978; Brimacombe et al. 1988），因此被广泛用于核糖体结构制图等各种生物化学分析领域。
+
+蛋白质-RNA 交联反应只在极少数结合位点发生[在我们自己的研究中用纯化的重组蛋白和一个高亲合力 RNA 适配子对交联效率进行了评估，结果发现最大交联效率在 $1\% \sim 5\%$ ，不过不同蛋白的效率可能不同（Fecko et al. 2007）。]值得注意的是，蛋白质和 RNA 紫外交联的特异性与甲醛交联不同，甲醛交联用于 DNA ChIP，也曾被用于分析蛋白质-RNA 相互作用（Vasudevan and Steitz 2007; Yong et al. 2010）。甲醛交联通常会产生更广泛的蛋白质-核酸及蛋白质-蛋白质复合物，因为甲醛必须浸入组织，因此还有时间限制。甲醛交联的这些特征会让全基因组范围鉴定 RNA-蛋白直接相互作用位点的努力变得更麻烦。
+
+核酸碱基和氨基酸侧链交联的特异性在生物物理水平还没有完全阐释。据报道，紫外线更偏好交联某些氨基酸和核苷酸，用高强度激光研究蛋白蛋白质-DNA相互作用（8纳秒Nd:YAG激光，约100MW cm²）（Hockensmith et al. 1986）时特别偏好胸苷。但这也不完全确定，部分是因为在评估蛋白质-核酸交联的手段或作用机制方面都缺乏共识（Fecko et al. 2007）。RNA-蛋白质相互作用研究显示紫外交联可以在许多氨基酸和嘌呤及嘧啶之间都可以诱导产生共价键（Havron and Sperling 1977）。例如，所有20种氨基酸都被发现可以与多聚尿苷酸在体外交联（Shetlar et al. 1984）。按照这种认识，可以相信任何氨基酸可以与任何核苷酸残基发生紫外交联（Hockensmith et al. 1986）。与这些体外研究一致，CLIP可用来在广泛序列（YCAY，CU，U富集区，GA元件）中鉴定RNABP特异的结合位点。而且，Ago蛋白（通过特定位点与miRNA结合，但也能与周围的mRNA序列交联）的HITS-CLIP分析显示，Ago蛋白对周围的mRNA序列也没有显示任何核苷酸偏好（Chi et al. 2009; Hafner et al. 2010; Zisoulis et al. 2010）。
+
+考虑到紫外交联与甲醛交联相比在精确度上的优势，与目前的 ChIP 测序方法相比，DNA CLIP（Law et al. 1998）理论上是一个可提供更高分辨率的 DNA-蛋白相互作用分析手段。不过在解析 DNA-蛋白相互作用位点方面，DNA-CLIP 不一定能竞争过当前生物信息学方法的能力和速度（Johnson et al. 2007）。
+
+## 参考文献
+
+Brimacombe R, Stiege W, Kyriatsoulis A, Maly P. 1988. Intra-RNA and RNA-protein cross-linking techniques in Escherichia coli ribosomes. Methods Enzymol 164: 287–309.
+Chi SW, Zang JB, Mele A, Darnell RB. 2009. Argonaute HITS-CLIP decodes microRNA-mRNA interaction maps. Nature 460: 479–486.
+Fecko CJ, Munson KM, Saunders A, Sun G, Begley TP, Lis JT, Webb WW. 2007. Comparison of femtosecond laser and continuous wave UV sources for protein-nucleic acid crosslinking. Photochem Photobiol 83: 1394–1404.
+
+Hafner M, Landthaler M, Burger L, Khorshid M, Hausser J, Berninger P, Rothballer A, Ascano MJ, Jungkamp AC, Munschauer M, et al. 2010. Transcriptome-wide identification of RNA-binding protein and microRNA target sites by PAR-CLIP. Cell 141: 129–141.
+Havron A, Sperling J. 1977. Specificity of photochemical cross-linking in protein–nucleic acid complexes: Identification of the interacting residues in RNase–pyrimidine nucleotide complex. Biochemistry 16: 5631–5635.
+
+---
+
+1462
+
+分子克隆实验指南（原书第四版）
+
+- Hockensmith JW, Kubasek WL, Vorachek WR, von Hippel PH. 1986. Laser cross-linking of nucleic acids to proteins. Methodology and first applications to the phage T4 DNA replication system. J Biol Chem 261:3512–3518.
+- Johnson DS, Mortazavi A, Myers RM, Wold B. 2007. Genome-wide mapping of in vivo protein–DNA interactions. Science 316: 1497–1502.
+- Law A, Hirayoshi K, O'Brien T, Lis JT. 1998. Direct cloning of DNA that interacts in vivo with a specific protein: Application to RNA polymerase II and sites of pausing in Drosophila. Nucleic Acids Res 26: 919–924.
+- Shetlar MD, Carbone J, Steady E, Hom K. 1984. Photochemical addition of amino acids and peptides to polyuridylic acid. Photochem Photobiol 39:141–144.
+- Vasudevan S, Steitz JA. 2007. AU-rich-element-mediated upregulation of translation by FXR1 and Argonaute 2. Cell 128: 1105–1118.
+- Yong J, Kasim M, Bachorik JL, Wan L, Dreyfuss G. 2010. Gemin5 delivers snRNA precursors to the SMN complex for snRNP biogenesis. Mol Cell 38: 551–562.
+- Zisoulis DG, Lovci MT, Wilbert ML, Hutt KR, Liang TY, Pasquinelli AE, Yeo GW. 2010. Comprehensive discovery of endogenous Argonaute binding sites in Caenorhabditis elegans. Nat Struct Mol Biol 17: 173–179.
+- Zwieb C, Ross A, Rinke J, Meinke M, Brimacombe R. 1978. Evidence for RNA–RNA cross-link formation in Escherichia coli ribosomes. Nucleic Acids Res 5: 2705–2720.
+
+![](../../raw/pages_0369-0384/images/page_378_image_12.jpg)
+
+## HITS-CLIP 数据分析
+
+## 将 HITS-CLIP 与其他方法结合使用
+
+HITS-CLIP 可以在全基因组范围分析相互作用位点。从这些研究中得出的一个原则是:在分析这种结合位点时，如果与对 RNA 的全基因组功能分析相结合，在许多情况下都更有成效。这些全基因组功能分析的例子包括:通过微阵列或 RNA 测序分析一些扰动（通常是基因敲减或遗传缺失等遗传扰动）导致的 RNA 变化。不出意料，考虑到这些实验给出的巨大数据量，一个重要的第三种分析工具是生物信息学/计算方法。最近，对有关在分析 HITS-CLIP 数据时组合使用这些工具的讨论，进行了综述(Licatalosi and Darnell 2010)。
+
+有研究人员根据 PTB 蛋白（polypyrimidine tract-binding protein）依赖的剪接变体的全基因组分析（Llorian et al. 2010），对 HITS-CLIP 数据进行了再分析（Xue et al. 2009），这是一个有关组合使用这些功能分析工具的很有价值的例子。组合使用这些办法，在结合生物信息学分析，可以重新阐释 CLIP 数据，从而揭示有关 PTB 结合位点决定剪接抑制或增强结果的 RNA 调控图谱（Llorian et al. 2010）。在某种意义来说，其他一些 RNABP 与此相似，包括 Nova（Ule et al. 2006），Fox2（Zhang et al. 2008；Yeo et al. 2009），不均一核糖核蛋白 L（hnRNP L）（Hung et al. 2008），hnRNP C（Konig et al. 2010），类盲肌蛋白（muscleblind-like protein，MBNL）（Du et al. 2010）和 TIA1/L（Wang et al. 2010）。
+
+## HITS-CLIP 数据的生物信息学和计算分析
+
+有文献报道通过使用生物信息学将结合位点及 CLIP 标签簇描绘为精确的结合足迹（Licatalosi et al. 2008; Granneman et al. 2009; Sanford et al. 2009; Wang et al. 2010; Khorsid et al. 2011; Kishore et al. 2011），利用 Argonaute 的 mRNA 足迹预测 miRNA 结合位点（Licatalosi et al. 2008; Granneman et al. 2009; Sanford et al. 2009; Wang et al. 2010），或建立预测计算工具（Zhang et al. 2010）。
+
+关于这种策略的一些要点还是有必要描述一下。有关处理大规模下一代测序数据的基本生物信息学途径有几个部分构成。第一，原始标签，一般是20～50碱基或更长，通过生物信息学方法去掉任何接头序列，并匹配到基因组上（见第8章，方案5）。虽然只保留匹配到单一基因组位点的序列标签是必要的常规策略，你也必须意识到假基因或重复基因（如核糖体RNA）会排除掉一些真正有效的标签，因为这些标签会匹配到多个基因组位点。多数时候，单个标签的多次出现被折算单个序列组合。这样可以消除PCR扩增步骤带来的过扩增偏性。将来，RNA直接测序用来分析HITS-CLIP标签可以消除这种担心。同时，在使用RT-PCR的方案中，含条形码的接头（bar-coded linker）有助于从真正的单一RNA标签中区分PCR副本（Konig et al. 2010）。与此类似，如果有污染问题（特别是同时开展多个CLIP实验时），除了标准的PCR预防措施，可以考虑使用索引接头（indexed linker）（Cronn et al. 2008），这样使每个实验都具有唯一的核苷酸代码。
+
+---
+
+第 21 章 紫外交联免疫沉淀（CLIP）技术进行体内 RNA 结合位点作图
+
+1463
+
+有了一套筛选过的，并能匹配到基因组的单一序列，对数据进行更高级的分析就成为可能。RNA 结合蛋白对一些异常（非功能性）RNA 序列可能需要一定的转运时间，对这些生理及生化的背景标签，一般都要排除。一种方法是将数据标准化成每个转录物的预期标签，就像描绘 Ago 的 mRNA 足迹实验中所做的一样（Chi et al. 2009）。另一种通用方法是聚焦于那些有重叠的 RNA 标签，因为这些序列可以确定可重复的 RNA-蛋白质相互作用位点；在复杂的生物学实验中，我们发现重点关注那些在多次生物学重复实验出现的序列很有价值（用“生物复杂性”的＞n 来定义位点，n 代表重复实验的次数）（Licatalosi et al. 2008）。可以设置每个簇的标签数阈值（峰值），对这些位点进行进一步精简（也见第 8 章，方案 6）。一般来说，运用类似 Excel 的程序，HITS-CLIP 数据的这种分析并不困难，很容易完成，即使要处理的是大数据集。
+
+最近生物信息学研究将标准 HITS-CLIP 方案获得的 RNA-蛋白质图谱分辨率精确到单核苷酸。这最初被认为是 PAR-CLIP 特有的优势，PAR-CLIP 可以通过分析紫外照射诱导的核苷酸替代物的突变来确定交联位点。不过在标准的 CLIP 中，早就注意到交联簇内的特定位置，突变会增加（Ule et al. 2005; Granneman et al. 2009）。在对 Nova 和 Ago HITS-CLIP 实验进行交联诱导突变（cross-link-induced mutation, CIMS）分析时，这被生物信息学分析证明有效，可以通过这些突变来确定交联的核苷酸。这种方法并不需要使用核苷酸替代物（可以使用正常的细胞或组织进行分析），相对于 PAR-CLIP 来说，这也是一个明显的优势（Kishore et al. 2011）。
+
+在论文发表时，按惯例要将 HITS-CLIP 获得的 CLIP 标签数据保存在美国国立卫生研究院维护的公开访问网站[基因表达综合数据库（GEO）；http://www.ncbi.nlm.nih.gov/geo/]。
+
+(付汉江 译，郑晓飞 校)
