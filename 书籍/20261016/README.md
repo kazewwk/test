@@ -6,7 +6,7 @@
 
 识别结果保留原件供核对，未宣称 OCR 和公式经过逐字人工校对。
 
-完成 17/29 本；[逐书 ZIP Release](https://github.com/kazewwk/test/releases/tag/mineru-advanced-textbooks-2026-10-16)。
+完成 18/29 本；[逐书 ZIP Release](https://github.com/kazewwk/test/releases/tag/mineru-advanced-textbooks-2026-10-16)。
 
 | 教材 | 页数 | 状态 |
 | --- | ---: | --- |
@@ -29,7 +29,7 @@
 | 分子细胞生物学 (陈晔光，张传茂，陈佺主编, 主编陈晔_ | 561 | 待完成 |
 | 分析化学(“101计划”核心教材·化学领域) (蒋健晖_ | 683 | 待完成 |
 | [合成生物学 (刘建忠)](19_synthetic-biology-liu/) | 268 | 已完成 |
-| 基因工程 第4版 (Pdg2Pic, 张惠展编著) | 566 | 待完成 |
+| [基因工程 第4版 (Pdg2Pic, 张惠展编著)](20_genetic-engineering-4e/) | 566 | 已完成 |
 | 微生物学(101计划) (邓子新,陈峰,陈向东) | 710 | 待完成 |
 | [数理统计 (王兆军)](22_mathematical-statistics-wang/) | 373 | 已完成 |
 | [概率论(上册)101计划核心教材 (李增沪)](23_probability-101-vol1/) | 248 | 已完成 |
