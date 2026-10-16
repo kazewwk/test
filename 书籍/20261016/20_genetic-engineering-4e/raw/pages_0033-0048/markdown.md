@@ -1,0 +1,675 @@
+II类限制性核酸内切酶虽然具有特异性的识别序列及切割位点，但当酶解条件发生变化时，酶切反应的专一性可能会降低，导致同种酶识别多种序列，这种现象称为限制性核酸内切酶的星号活性(Star Activity)。例如，EcoRI在正常条件下识别 $5^{\prime}$ -GAATTC-3'序列，但在低盐 $(<  50~\mathrm{mmol / L})$ 、高 $\mathrm{pH}(>8)$ 和甘油大量存在的情况下，其识别序列会扩展至$5^{\prime}$ -AAATTC-3'和 $5^{\prime}$ -GAGTTC-3'等，导致EcoRI在DNA分子上的切割频率大幅度增加。能产生星号活性的限制性核酸内切酶还包括BamHI等，在涉及上述两种酶的多酶联合酶解反应时应充分考虑这一点。
+
+限制性核酸内切酶的反应规模设计主要取决于待酶切DNA的量，由其确定酶量，最后确定反应体积。1个标准单位(U)的任何限制性核酸内切酶定义为在最佳缓冲系统中，$37^{\circ}\mathrm{C}$ 反应 $1\mathrm{h}$ （快切酶仅需数分钟）完全水解 $1\mu \mathrm{g}$ pBR322 DNA所需的酶量。因此，一个标准的酶切反应设计为: $0.1\sim 1.0~\mu \mathrm{g}$ DNA $5\mu \mathrm{L},10$ 倍的缓冲液 $2\mu \mathrm{L}$ 、酶 $1\mu \mathrm{L}$ （10倍过量），无菌重蒸水 $12\mu \mathrm{L}$，反应总体积为 $20~\mu \mathrm{L}$ 。商品酶一般含 $50\%$ 的甘油，为了确保甘油在反应体系中不对酶活性及专一性造成影响，酶的加入体积最好不要超过反应总体积的$1 / 10$ 。有时由于待酶切DNA样品的纯度不够，可以适当扩大反应体积，以降低DNA样品中杂质对酶活性的抑制作用。另外，整个反应体系应尽可能做到无菌，防止痕量存在的DNA酶对酶切产物的进一步降解。微量的金属离子往往会抑制限制性核酸内切酶的活性，这也是在酶切反应中使用重蒸水的原因。酶解反应结束后，有时需要灭活，大多数限制性核酸内切酶可简单地在 $68^{\circ}\mathrm{C}$ 保温 $10\mathrm{min}$ 灭活，某些酶如BamHI等不易加热灭活，可用等体积的苯酚-氯仿溶液处理反应液，再用乙醚萃取残留的苯酚（苯酚是酶的强烈抑制剂），最后用乙醇沉淀回收DNA。但在一般情况下，无论是电泳或乙醇沉淀DNA，都不需要酶的灭活工序。
+
+## 2. T4-DNA 连接酶的连接反应
+
+T4-DNA 连接酶催化的连接反应的缓冲系统组成为:50～100 mmol/L Tris-HCl (pH 7.5)，10 mmol/L MgCl₂，5 mmol/L DTT 以及不大于 1 mmol/L 的 ATP，过量的甘油同样对连接酶的活性有抑制作用。在设计连接反应时，同样应以待连接的 DNA 量为基准。通常 1 标准单位 (U) 的 T4-DNA 连接酶定义为:在最佳缓冲系统及 15℃、1 h（快连酶仅需 10 min）之内，完全连接 1 μg λ-DNA 的 HindIII 片段所需的酶量。一般情况下，1 μL (5U) 的连接酶已经足够，而连接反应总体积一般控制在 10～20 μL 内为宜。
+
+影响连接反应的因素很多，包括温度、离子浓度、DNA末端的性质及浓度、DNA片段的大小等。如果待连接的DNA片段携带由限制性核酸内切酶产生的黏性末端，则在较低的温度下黏性末端退火形成含两个交叉缺口的互补双链结构。这时的连接可视为分子内反应，其连接反应速度比分子间的连接速度快，因此理论上来说连接反应温度应以不高于黏性末端的熔点温度 $(T_{\mathrm{m}})$ 为宜。虽然 $T_{\mathrm{m}}$ 值随着黏性末端的长度及碱基成分而变化，但是大多数限制性核酸内切酶产生的黏性末端的 $T_{\mathrm{m}}$ 值在 $15^{\circ}\mathrm{C}$ 以下。另外，T4-DNA连接酶连接活性本身的最适温度却是 $37^{\circ}\mathrm{C}, 5^{\circ}\mathrm{C}$ 以下活性大为降低，因此在实际操作时，连接反应温度与时间常采用下列几种组合（快连酶除外）:$15^{\circ}\mathrm{C} / 4\mathrm{h}, 12^{\circ}\mathrm{C} / 8\mathrm{h}, 7^{\circ}\mathrm{C} / 16\mathrm{h}$ 或 $4^{\circ}\mathrm{C}$/过夜。
+
+## 3. 重组率及其影响因素
+
+重组率是指在连接反应结束后，含外源DNA片段的重组分子数与所投入的载体分子数之比，虽然它与连接反应效率有关，但含义不同。如果外源DNA片段与载体DNA均用同一种限制性核酸内切酶切开，则连接反应产物可存在多种形式，如含外源DNA片段的重组分子和自我连接的载体分子，后者称为载体的自我环化或空载。连接效率高并不一定等于重组率就高，在连接反应中增加连接酶的用量和延长反应时间，一般只能提高连接效率，但未必对重组率的提高有利。
+
+提高重组率可采用下列方法:① 提高外源 DNA 片段与载体 DNA 的分子数之比，理想的比例范围为 2:1\~10:1，这样可以增加外源 DNA 片段与载体分子之间的碰撞机会，减少载体 DNA 分子之间以及载体 DNA 两个末端之间的接触，从而降低载体自我环化的能力；② 在连接反应前，先用碱性磷酸单酯酶去除载体 DNA 5'末端的磷酸基团，这样即使载体 DNA 分子的两个黏性末端发生退火互补，也不能形成共价环化结构，而且这种退火互补与重新开环是可逆的，这就为载体分子最大限度地接纳外源 DNA 片段提供了条件。外源 DNA 片段与载体 DNA 退火后，连接酶仍可借助于外源 DNA 片段 5'端的磷酸基团将两者连接在一起，形成在每一条链上各含一个缺口的准重组分子，两个缺口之间的距离等于外源 DNA 片段的大小。除非外源 DNA 片段极小（<50 bp），一般情况下这种准重组分子在室温下不会开环。在后续的转化中，准重组分子同样可以进入受体细胞（转化效率稍低），并在受体细胞内得到修复，形成完整的重组 DNA 分子（图 2-14）；③ 在连接反应前，用 TdT 酶在载体分子的  $3'$  羟基末端聚合一段同种碱基的寡聚核苷酸（即同聚尾），防止载体 DNA 分子之间以及两个末端之间的连接，而在外源 DNA 片段的  $3'$  末端加上互补性同聚尾，两者退火后甚至不经连接便可导入受体细胞内。
+
+![](images/page_33_image_4.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["载体"] --> B{"2 P"}
+  B --> C["碱性磷酸单酯酶"]
+  B --> D["T4-DNA 连接酶"]
+  C --> E["载体"]
+  D --> F["自身环化载体"]
+  E --> G["T4-DNA 连接酶"]
+  F --> G
+  G --> H["外源 DNA"]
+  H --> I["重组 DNA"]
+  I --> J["转化\n在受体细胞内修复缺口"]
+```
+</details>
+
+图2-14 用碱性磷酸单酯酶防止载体自身环化
+
+## 2.2.5 DNA 分子重组的方法
+
+DNA 分子之间的重组本质上是由 DNA 连接酶介导的双链缺口处磷酸二酯键的修复反应,而这种双链缺口结构的形成依赖于 DNA 片段单链末端之间的碱基互补作用。因此,由限制性核酸内切酶切割产生的黏性末端或者人工加装的互补性单链末端均能在 DNA 连接酶的存在下连为一体。
+
+## 1. 相同黏性末端的连接
+
+如果外源 DNA 和载体 DNA 均用相同的限制性内切酶切割，则不管是单酶酶解还是双酶联合酶解，两种 DNA 分子均含相同的末端（经双酶切后，两种 DNA 的两个末端序列不同），因此混合后它们能顺利连接成重组 DNA 分子。经单酶处理的外源 DNA 片段在重组分子中可能存在正反两种方向，而经两种非同尾酶处理的外源 DNA 片段只有一种方向与载体 DNA 重组（图 2-15）。上述两种重组分子均可用相应的限制性核酸内切酶重新切出外源 DNA 片段和载体 DNA，即克隆的外源 DNA 片段可以原样回收。
+
+(a) 同种酶产生的黏性末端的连接
+
+![](images/page_34_image_8.jpg)
+
+<details>
+<summary>text_image</summary>
+
+EcoRI
+基因
+5'-GAATTC
+3'-CTTAAG
+EcoRI
+EcoRI
+GAATTC-3'
+CTTAAG-5'
+</details>
+
+(b) 不同种酶产生的黏性末端的连接
+
+![](images/page_34_image_10.jpg)
+
+<details>
+<summary>text_image</summary>
+
+EcoRI
+5'—GAATTC
+3'—CTTAAG
+基因
+GGATCC—3'
+CCTAGG—5'
+BamHI
+EcoRI
+BamHI
+</details>
+
+![](images/page_34_image_11.jpg)
+
+<details>
+<summary>text_image</summary>
+
+5' AATTC
+G
+CTTAA 5'
+</details>
+
+![](images/page_34_image_12.jpg)
+
+<details>
+<summary>text_image</summary>
+
+5' G
+3' CTTAA
+退火
+连接
+AATTC 3'
+G 5'
+</details>
+
+![](images/page_34_image_13.jpg)
+
+<details>
+<summary>text_image</summary>
+
+5' AATTC
+G
+G
+CCTAG 5'
+</details>
+
+![](images/page_34_image_14.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["CTTAA"] -->|"退火"| B["连接"]
+  B --> C["GATCC"]
+  C --> D["5' 3', 3' 5'"]
+```
+</details>
+
+![](images/page_34_image_15.jpg)
+
+<details>
+<summary>text_image</summary>
+
+EcoRI
+基因
+EcoRI
+5' GAATTC
+3' CTTAAG
+GAATTC
+3'
+CTTAAG
+CTTAAG
+5'
+5' GAATTC
+3' CTTAAG
+GAATTC
+3'
+CTTAAG
+CTTAAG
+5'
+</details>
+
+![](images/page_34_image_16.jpg)
+
+<details>
+<summary>text_image</summary>
+
+EcoRI
+5' GAATTC
+3' CTTAAG
+基因
+BamIII
+GGATCC 3'
+CCTAGG 5'
+</details>
+
+图2-15 限制性核酸内切酶产生的黏性末端的连接
+
+用两种同尾酶分别切割外源DNA片段和载体DNA，因产生的黏性末端相同也可直接连接。一个极端的例子是外源DNA用同尾酶A和B水解，而载体用这组同尾酶的另外两个成员C和D酶切，则两种DNA分子的4个末端均相同，它们都属于最简单的相同黏性末端的连接。值得注意的是，多数同尾酶产生的黏性末端一经连接，重组分子便不能用任何一种同尾酶在相同的位点切开(图2-16)。例如，BamHI(识别序列为 $5^{\prime} - \mathrm{GGATCC} - 3^{\prime}$ )水解的DNA片段与BglII(识别序列为 $5^{\prime} - \mathrm{AGATCT} - 3^{\prime}$ )切开的片段连接后，所形成的重组分子在两个原切点处均不能为 BamHI 或 BglII 切割，这种现象称为酶切口的“焊死”作用。只有在少数情况下，由两种同尾酶产生的黏性末端经连接后可被其中一种酶切开。例如，EaeI 的识别序列为  $5^{\prime}-PyGGCCPu-3^{\prime}$ ，EayI 的识别序列为  $5^{\prime}-CGGCCG-3^{\prime}$ ，它们形成的黏性末端相同，连接后的重组分子序列  $5^{\prime}-PyGGCCG-3^{\prime}$  仅能为 EaeI 所识别，显然这种情况取决于限制性内切酶识别序列的相对专一性。
+
+![](images/page_35_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["载体"] -->|BglII| B["BglII"]
+  B -->|BglII| C["BglII"]
+  B -->|BamIII| D["BamIII"]
+  D -->|BamIII| E["BamIII"]
+  E -->|BamIII| F["BamIII"]
+  F -->|退火| G["载体"]
+  G -->|基因| H["基因"]
+  H -->|连接| I["载体"]
+```
+</details>
+
+图2-16 同尾酶产生的黏性末端的连接
+
+## 2. 平头末端的连接
+
+T4-DNA 连接酶既可催化 DNA 黏性末端的连接,也能催化 DNA 平头末端的连接,前者在退火条件下属于分子内的作用,而后者则为分子间的反应。从分子反应动力学的角度讲,后者反应更为复杂,且速度也慢得多,因为一个平头末端的  $5'$  磷酸基团或  $3'$  羟基与另一个平头末端的  $3'$  羟基和  $5'$  磷酸基团同时相遇的机会显著减少,通常平头末端的连接速度是黏性末端的  $1/100 \sim 1/10$ 。为了提高平头末端的连接速度,可采取以下措施:① 增加连接酶用量,通常使用黏性末端连接用量的 10 倍;② 增加 DNA 平头末端的浓度,提高平头末端之间的碰撞概率;③ 加入 NaCl 或 LiCl 以及 PEG;④ 适当提高连接反应温度,平头末端连接与退火无关,适当提高反应温度既可以提高底物末端或分子之间的碰撞概率,又可增加连接酶的反应活性,一般选择  $20 \sim 25^{\circ}C$  较为适宜。
+
+连接体系中高浓度的 ATP 对平头末端的连接极为不利。ATP 浓度超过 1 mmol/L 会发生腺嘌呤核苷酸在连接位点的随机插入；当 ATP 浓度升至 2.5 mmol/L 时，又会显著地抑制平头末端连接反应本身。因此，除非需要特异性抑制平头末端的连接，对大多数连接反应而言，0.5 mmol/L 的 ATP 浓度较为合适。
+
+## 3. 不同黏性末端的连接
+
+不同的黏性末端原则上无法直接连接，但可将它们转化为平头末端后再进行连接，所产生的重组分子往往会增加或减少几个碱基对，并且破坏了原来的酶切位点，使重组的外源DNA片段无法酶切回收；若连接位点位于基因编码区内，则会破坏阅读框架，使之不能正确表达。不同黏性末端的连接有四种类型:①待连接的两种DNA分子都具有5'突出末端
+
+![](images/page_36_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  subgraph a["(a)"]
+  A["5' G 3' CCTAG"] --> B["GATCC 3' G 5'"]
+  B --> C["5'AATTC G CTTAA5'"]
+  D["Klenow ↓"] --> E["Klenow ↓"]
+  F["5' GGATC GATCC 3' CCTAG CTAGG"] --> G["5'AATTC GAATT TTAAG CTTAA5'"]
+  H["T4-DNA 连接酶"] --> I["5' GGATCAATTC CCTAGTTAAG GAATTGATCC CTTAACTAGG 3'5'"]
+  end
+
+  subgraph b["(b)"]
+  J["5' G 3' CCTAG"] --> K["GATCC 3' G 5'"]
+  L["S1 ↓"] --> M["S1 ↓"]
+  N["5' G 3' C"] --> O["C 3' G 5'"]
+  P["5'C G C 5'"] --> Q["5'C G C 5'"]
+  R["T4-DNA 连接酶"] --> S["5' GC CG GC CG 3'5'"]
+  end
+
+  subgraph c["(c)"]
+  T["5' G 3' CCTAG"] --> U["GATCC 3' G 5'"]
+  V["5'AATTC G CTTAA5'"] --> W["5' G 3' CCTAG"]
+  X["Klenow ↓"] --> Y["S1 ↓"]
+  Z["5' GGATC GATCC 3' CCTAG CTAGG 3'5'"] --> AA["5'C G C 5'"]
+  AB["T4-DNA 连接酶"] --> AC["5' G 3' C"] --> AD["C 3' G 5'"]
+  AE["T4-DNA 连接酶"] --> AF["EcoRI EcoRI"]
+  AG["BamHI BamHI 5' GGATCC CCTAGG GGATCC CCTAGG 3'5'"] --> AH["5' GAATTC CTTAAG GAATT CTTAA5'"]
+  end
+```
+</details>
+
+图2-17 不同的 $5^{\prime}$ 黏性末端之间的连接
+
+![](images/page_36_image_4.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["T4-DNA 聚合酶"] --> B["T4-DNA 连接酶"]
+  C["5' GCATG\n3' C"] --> A
+  D["C 3' GTACG 5'"] --> A
+  E["G 3'ACGTC G"] --> A
+  F["CTGCA 3' G"] --> A
+  G["5' G\n3' C"] --> A
+  H["C 3' G 5'"] --> A
+  I["G 3' C G"] --> A
+  J["CC GG 3' 5'"] --> A
+```
+</details>
+
+图2-18 不同的 $3^{\prime}$ 黏性末端之间的连接
+
+(图 2 - 17)。在连接反应之前,两种DNA片段或用Klenow酶补平或用S1核酸酶切平,然后进行连接。前者产生的重组分子多出4对碱基,而后者产生的重组分子则少去4对碱基。一般情况下大多使用Klenow酶补平的方法,因为S1核酸酶掌握不好,容易造成双链DNA的降解反应;②待连接的两种DNA分子都具有3'突出末端(图 2 - 18)。Klenow酶对这种结构没有活性,可以用T4-DNA聚合酶将这两种DNA的3'突出末端切除,形成平头末端后再连接,所
+
+产生的重组分子同样少了4对碱基；③一种DNA分子具有 $3^{\prime}$ 突出末端，另一种DNA分子携带 $5^{\prime}$ 突出末端(图2-19)。这种情况要求两种DNA分子在连接前，分别进行相应的处理，若 $5^{\prime}$ 突出末端用Klenow酶补平，而 $3^{\prime}$ 突出末端用T4-DNA聚合酶修平，则连接产生的重组DNA分子并没有改变碱基对的数目；④两种DNA分子均含不同的两个黏性末端（图
+
+![](images/page_37_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  subgraph Panel_a["(a) T4-DNA 聚合酶"]
+  A1["5' CTGCA\n3' G"] --> B1["T4-DNA 聚合酶"]
+  B1 --> C1["5' AATTC\nG\nCTTAA 5'"]
+  D1["5' C\n3' G"] --> E1["T4-DNA 连接酶"]
+  E1 --> F1["5' CAATTC\n3' GTTAAG\nGAATTG\nCTTAAC 5'"]
+  B2["Klenow"] --> C2["5' AATTC\nTTAAG\nGAATT\nCTTAA 5'"]
+  end
+
+  subgraph Panel_b["(b) T4-DNA 聚合酶"]
+  B2 --> C3["5' CTGCA\n3' G"] --> D2["S1"]
+  D2 --> E2["5' AATTC\nG\nCTTAA 5'"]
+  E2 --> F2["5' C\n3' G"] --> E3["T4-DNA 连接酶"]
+  E3 --> F3["5' CC\n3' GG\nGG\nCC 5'"]
+  end
+```
+</details>
+
+图2-19 $3^{\prime}$ 黏性末端与 $5^{\prime}$ 黏性末端之间的连接
+
+2-20)。通常先用 Klenow 酶补平一种 DNA 分子的 5' 突出末端, 再用 T4-DNA 聚合酶切平 3' 突出的另一末端, 而且两种 DNA 分子可以混合一同处理。
+
+在有些情况下,含不同  $5'$  突出黏性末端的两种 DNA 分子经 Klenow 酶补平连接后,形成的重组分子可恢复一个或两个原来的限制性内切酶识别序列,甚至还可能产生新的酶切位点(图 2-21),如 XbaI 与 HindIII 的黏性末端(XbaI 切点恢复)、XbaI 与 EcoRI(两者切点均保留)、BamHI 与 BglII(产生 ClaI 位点)等。
+
+![](images/page_37_image_6.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["T4-DNA 聚合酶\nKlenow"] --> B["T4-DNA 连接酶"]
+  B --> C["Final Product"]
+```
+</details>
+
+图2-20 两种均含不同黏性末端的DNA片段的连接
+
+![](images/page_37_image_8.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  subgraph Diagram_a["(a) Transcription Pathway"]
+    direction TB
+  XbaI --> TCTAGA3Agatct5["TCTAGA3'AGATCT5'"]
+  XbaI --> AGATCT3["AGATCT3'"]
+  XbaI --> AGATC3["AGATC3'"]
+  AGATC3 --> Klenow3["Klenow3'"]
+  Klenow3 --> TCTAGAGATC3["TCTAGAGATC3'"]
+  Klenow3 --> AGCTT3["AGCTT3'"]
+  AGCTT3 --> TCTAGAGATC3
+  AGCTT3 --> AGCTT3
+  AGCTT3 --> TCTAGAGATC3
+  AGCTT3 --> AGCTT3
+  AGCTT3 --> TCTAGAGATC3
+  AGCTT3 --> AGATCTCGAA3["AGATCTCGAA3'"]
+  AGATCTCGAA3 --> TCTAGAGCTT3["TCTAGAGCTT3'"]
+  AGATCTCGAA3 --> AGATCTCGAA3
+  AGATCTCGAA3 --> AGATCTCGAA3
+  AGATCTCGAA3 --> AGATCTCGAA3
+  AGATCTCGAA3 --> AGATCTCGAA3
+  AGATCTCGAA3 --> AGATCTCGAA3
+  AGATCTCGAA3 --> AGATCTCGAA3
+  AGATCTCGAA3 --> AGATCTCGAA3
+  AGATCTCGAA3 --> AGATACTCGAA3
+  AGATACTCGAA3 --> AGATACTCGAA3
+  AGATACTCGAA3 --> AGATACTCGAA3
+  AGATACTCGAA3 --> AGATACTCGAA3
+  AGATACTCGAA3 --> AGATACTCGAA3
+  AGATACTCGAA3 --> AGATACTCGAA3
+  AGATACTCGAA3 --> AGATACTCGAA3
+  AGATACTCGAA3 --> AGATACTCGAAA3["AGATACTCGAAA3'"]
+  AGATACTCGAA3 --> AGATACTCGAAA3
+  AGATACTCGAAA3 --> AGATACTCGAAA3
+  AGATACTCGAAA3 --> AGATACTCGAAA3
+  AGATACTCGAAA3 --> AGATACTCGAAA3
+  AGATACTCGAAA3 --> AGATACTCGAAA3
+  AGATACTCGAAA3 --> AGATACTCGAAA3
+  AGATACTCGAAA3 --> AGATACTCGAAA3
+  AGATACTCGAAA3 --> AGATACTCGAAA3
+  end
+
+  subgraph Diagram_b["(b) Transcription Pathway"]
+    direction TB
+  XbaI --> TCTAGA3Agatct5
+  XbaI --> TCTAGAGATC3
+  XbaI --> TCTAGAGATC3
+  XbaI --> TCTAGAGATC3
+  XbaI --> TCTAGAGATC3
+  XbaI --> TCTAGAGATC3
+  XbaI --> TCTAGAGATC3
+  XbaI --> TCTAGAGATC3
+  XbaI --> TCTAGAATTCA3["TCTAGAATTCA3'"]
+  XbaI --> TCTAGAATTCA3
+  XbaI --> TCTAGAATTCA3
+  XbaI --> TCTAGAATTCA3
+  XbaI --> TCTAGAATTCA3
+  XbaI --> TCTAGAATTCA3
+  XbaI --> TCTAGAATTCA3
+  XbaI --> TCTAGAATTCA3
+  XbaI --> TACTTAGTTAAG5["TACTTAGTTAAG5'"]
+  XbaI --> TACTTAGTTAAG5
+  XbaI --> TACTTAGTTAAG5
+  XbaI --> TACTTAGTTAAG5
+  XbaI --> TACTTAGTTAAG5
+  XbaI --> TACTTAGTTAAG5
+  XbaI --> TACTTAGTTAAG5
+  XbaI --> TACTTAGTTAAG5
+  XbaI --> TACTAGAATTCA3["TACTAGAATTCA3'"]
+  XbaI --> TACTAGAATTCA3
+  XbaI --> TACTAGAATTCA3
+  XbaI --> TACTAGAATTCA3
+  XbaI --> TACTAGAATTCA3
+  XbaI --> TACTAGAATTCA3
+  XbaI --> TACTAGAATTCA3
+  XbaI --> TACTTAGTTAAG5
+  XbaI --> TACTTAGTTAAG5
+  XbaI --> TACTTAGTTAAG5
+  XbaI --> TACTTAGTTAAG5
+  XbaI --> TACTTAGTTAAG5
+  XbaI --> TACTTAGTTAAG5
+  XbaI --> TACTTAGTTAAG5
+  XBaI --> TACTTAGTTAAG5
+  XbaI --> TACTTAGTTAAG5
+  XbaI --> TACTTAGTTAAG5
+  XbaI --> TACTTAGTTAAG5
+  XbaI --> TACTTAGTTAAG5
+  XbaI --> TACTTAGTTAAG5
+  XbaI --> TACTTAGTTAAG5
+  XbaI --> TACTTAGTTAAGNlEnd["TACTTAGTTAAG<nl>  end"]
+```
+</details>
+
+![](images/page_38_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["BamHI"] -->|"5' GGATCC CCTAGG 3' 5'"| B["BglII"]
+  B -->|"5' AGATCT TCTAGA 3' 5'"| C["BglII"]
+  D["BamHI"] -->|"5' G CCTAG"| E["Klenow"]
+  F["Klenow"] -->|"5' GGATC CCTAG"| E
+  G["Klenow"] -->|"5' GGATC CCTAG"| H["T4-DNA 连接酶"]
+  I["Clal"] -->|"5' GGATCGATCT CCTAGCTAGA 3' 5'"| H
+  H -->|"Clal"| J["T4-DNA 连接酶"]
+```
+</details>
+
+图2-21 酶切位点在连接后的恢复与更新
+
+## 4. 人工黏性末端的连接
+
+上述不同黏性末端的连接大都破坏了原来的限制性内切酶识别序列，导致重组的外源DNA片段难以酶切回收。为了克服这一困难，可用TdT处理经酶切的DNA片段，使之在3'末端增补核苷酸同聚尾，然后进行连接；同时由TdT酶产生的人工黏性末端还可有效避免载体分子内或分子间以及外源DNA片段之间的连接，以提高重组率。
+
+(1) 5'突出的末端[图 2-22(a)]。若外源 DNA 片段含 EcoRI 的黏性末端, 则先用 Klenow 酶补平, 然后用 TdT 酶加上多聚 C 的人工黏性末端, 使得 EcoRI 酶切口在连接后完好保留; 载体 DNA 分子则在补平后加上多聚 G 的互补人工黏性末端, 两种分子退火粘在一起。由于 TdT 酶并不能精确控制多聚核苷酸末端的碱基数目, 因此在同一 DNA 分子的两
+
+(a) 5' 黏性末端的连接
+
+![](images/page_38_image_8.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["Klenow"] --> B["5' AATTC G CTTAA 5'"]
+  B --> C["5' AATTC TTAAG GAATT CTTAA 5'"]
+  C --> D["TdT dCTP"]
+  D --> E["AATTC GAATTCCCCC 3' CTTAA"]
+  F["5' GGATCGGGGGG AATTC CCTAG CCCCCCTTAAG GAATTCCCCC GATCC 3' CTTAA GGGGGGCTAGG 5'"]
+  G["5' CCTAG 5'"] --> H["5' GATCC 3' CCTAG 5'"]
+  H --> I["5' GGATC CCTAG 5'"]
+  J["5' GGATCGGGGGG AATTC CCTAG CCCCCCTTAAG GAATTCCCCCGATCC 3' CTTAA GGGGGGCTAGG 5'"]
+  K["5' GGATCGGGGGGAATTC CCTAGCCCCCTTAAG GAATTCCCCCGATCC 3' CTTAA GGGGGGCTAGG 5'"]
+  L["退火"] --> M["5' GGATCGGGGGG AATTC CCTAG CCCCCCTTAAG GAATTCCCCCGATCC 3' CTTAA GGGGGGCTAGG 5'"]
+  M --> N["Klenow"]
+  O["EcoRI"] --> P["5' GGATCGGGGGGAATTC CCTAGCCCCCTTAAG GAATTCCCCCGATCC 3' CTTAA GGGGGGCTAGG 5'"]
+  P --> Q["EcoRI"]
+```
+</details>
+
+(b) 3' 黏性末端的连接
+
+![](images/page_39_image_3.jpg)
+
+图2-22 人工黏性末端的连接
+
+个人工黏性末端以及两个分子之间的人工黏性末端有可能长度不等,但若此时再用 Klenow 酶填补缺刻,经连接后便能形成完整的重组分子,而克隆的外源 DNA 片段仍可用 EcoRI 回收。
+
+(2) $3^{\prime}$ 突出的末端[图2-22(b)]。若外源DNA片段带有PstI的黏性末端，则用TdT酶直接加上多聚G的人工黏性末端（目的是保留PstI的酶切位点），而载体分子则加上多聚C的互补末端，退火后用Klenow酶填补有可能出现的缺刻，并将之连接成重组分子，此时克隆的外源DNA片段可用PstI回收。
+（3）平头末端[图2-22(c)]。DNA分子的平头末端不管是否由限制性内切酶产生，经TdT酶接上同聚尾人工黏性末端后，一般情况下不能用限制性内切酶回收插入片段，但可用S1核酸酶从重组分子上切下这个插入片段。其做法是:两种DNA分子分别用TdT酶增补多聚A和多聚T的人工黏性末端，退火后用Klenow酶填补缺刻，并将之连接成重组分子。此时或克隆后只需将重组分子稍稍加热，AT配对区域就会出现单链结构，用S1核酸酶处理即可回收插入片段，而重组分子的其他区域一般不会出现大面积连续的AT区域，因此其$T_{\mathrm{m}}$ 总是高于AT人工黏性末端(通常由 $30\sim 50$ 个AT碱基对组成)区域的 $T_{\mathrm{m}}$ ，只要掌握合适的加热温度便能保证S1核酸酶作用位点的正确性。
+
+## 5. 酶切位点的定点更换
+
+在有些分子克隆实验中,需要将 DNA 上的一种限制性内切酶识别序列转化成另一种酶的识别序列,以便 DNA 分子的重组。有两种方法可以达到这个目的。
+
+（1）加装人工接头。接头(Linker)是一段含某种限制性内切酶识别序列的人工合成的寡聚核苷酸，通常为八聚体和十聚体。图2-23所示的是一种利用人工接头片段在DNA上更换或增添限制性内切酶识别序列的标准程序。如果DNA分子的两端是平头末端，则将人工接头直接连接上去，然后用相应的限制性内切酶切出黏性末端。若要在DNA分子的某一限制性内切酶的识别序列处接上另一种酶的人工接头，可先用前一种酶把DNA切开，然后依照 $5^{\prime}$ 突出末端用Klenow酶补平以及 $3^{\prime}$ 突出末端用T4-DNA聚合酶切平的原则，将DNA末端处理成平头，再接上相应的人工接头。
+
+![](images/page_40_image_6.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["CCGAATTTCGG\nGGCTTAAGCC"] -->|"接头"| B["基因"]
+  B -->|"连接"| C["EcoRI"]
+  C -->|"连接"| D["载体"]
+```
+</details>
+
+图2-23 在DNA上加装人工接头
+
+(2) 改造识别序列。这种方法的原理是利用一种限制性内切酶的识别序列改造另一种酶的识别序列，从而使前者迁移到后者的位置上。例如，将 DNA 上的 AluI 识别序列改造成 EcoRI 识别序列，其操作程序如图 2-24 所示:先用 AluI 切开 DNA 片段，将任何一段含 EcoRI 识别位点的 DNA 片段用 EcoRI 切开，并以 Klenow 酶补平黏性末端，两种 DNA 分子连接，再用 EcoRI 切开重组分子，原来的 AluI 位点即转化为 EcoRI 位点。这里应区分两种情况:第一，DNA 片段上有多个 AluI 位点需要同时换成 EcoRI 识别位点；第二，DNA 分子上只有一个 AluI 位点，两种情况的操作方式并不完全相同。由上述操作程序可知，任何能提供 $3^{\prime}\mathrm{G}$ 的限制性内切酶识别序列，包括其黏性末端经 Klenow 酶补平或经 T4-DNA 聚合酶切平，均可转变为 EcoRI 识别序列以及与 EcoRI 相似的其他酶的识别序列，如 AvaII、BamHI、BstEII 等。根据同样的原理，还可将提供 $3^{\prime}\mathrm{C}, 3^{\prime}\mathrm{A}, 3^{\prime}\mathrm{T}$ 的限制性内切酶识别序列更换成相应的其他酶识别序列，这些序列的对应关系列在表 2-9 中。
+
+![](images/page_41_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["待改造位点"] --> B["AluI"]
+  B --> C["EcoRI"]
+  C --> D["EcoRI"]
+  E["Klenow"] --> F["T4-DNA 连接酶"]
+  F --> G["EcoRI"]
+  G --> H["T4-DNA 连接酶"]
+  H --> I["EcoRI"]
+```
+</details>
+
+图2-24 酶切位点的原位转换
+
+表 2-9 限制性核酸内切酶切口原位转换的对应关系
+
+<table><tr><td colspan="4">A酶切口</td><td colspan="4">B酶切口</td></tr><tr><td colspan="3">酶</td><td>识别序列</td><td colspan="3">酶切</td><td>识别序列</td></tr><tr><td rowspan="12">3&#x27;碱基对供体</td><td rowspan="3">3&#x27;-G</td><td>AluI</td><td>AG/CT</td><td rowspan="12">5&#x27;碱基对供体</td><td rowspan="3">5&#x27;-G</td><td>EcoRI</td><td>G/AATTC</td></tr><tr><td>XbaI</td><td>T/CTAGA</td><td>BamHI</td><td>G/GATCC</td></tr><tr><td>XmaI</td><td>C/CCGGG</td><td>HinfI</td><td>G/ANTC</td></tr><tr><td rowspan="3">3&#x27;-C</td><td>BamHI</td><td>G/GATCC</td><td rowspan="3">5&#x27;-C</td><td>XhoI</td><td>C/TCGAG</td></tr><tr><td>BglII</td><td>A/GATCT</td><td>XmaI</td><td>C/CCGGG</td></tr><tr><td>BclI</td><td>T/GATCA</td><td>HpaII</td><td>C/CGG</td></tr><tr><td rowspan="3">3&#x27;-A</td><td>SalI</td><td>G/TCGAC</td><td rowspan="3">5&#x27;-A</td><td>BglII</td><td>A/GATCT</td></tr><tr><td>DpnI</td><td>GA/TC</td><td>MaeII</td><td>A/CGT</td></tr><tr><td>XcaI</td><td>GTA/TAC</td><td>SpeI</td><td>A/CTAGT</td></tr><tr><td rowspan="3">3&#x27;-T</td><td>EcoRI</td><td>G/AATTC</td><td rowspan="3">5&#x27;-T</td><td>BclI</td><td>T/GATCA</td></tr><tr><td>EcoRV</td><td>GAT/ATC</td><td>XbaI</td><td>T/CTAGA</td></tr><tr><td>HindIII</td><td>A/AGCTT</td><td>TaqI</td><td>T/CGA</td></tr></table>
+
+## 2.3 重组 DNA 分子的转化与扩增(转与增)
+
+重组 DNA 分子在体外构建完成后, 必须导入特定的受体细胞, 使之无性繁殖并高效表达外源基因或直接改变其遗传性状, 这个导入过程及操作统称为重组 DNA 分子的转化 (Transformation)。对于不同的受体细胞, 往往采取不同的转化策略, 本节主要涉及细菌尤其是大肠杆菌的转化原理和方法, 其他生物受体细胞的转化手段将在有关章节中专题论述。
+
+## 2.3.1 重组 DNA 转化的基本概念
+
+DNA 重组技术中的转化仅仅是一个将 DNA 重组分子人工导入受体细胞的单元操作过程, 它沿用了自然界细菌转化的概念, 但无论在原理还是在方式上均与细菌的自然转化有所不同, 同时也与哺乳动物正常细胞突变为癌细胞的细胞转化概念有着本质的区别。重组 DNA 人工导入受体细胞有多种方法, 包括转化、转染、接合以及其他物理手段, 如受体细胞的电穿孔和显微注射等, 这些导入方法在 DNA 重组技术中统称为转化操作。
+
+经典的细菌转化现象是1928年英国细菌学家格里菲斯(Griffich)在肺炎双球菌中发现的，并在1944年由美国的艾弗瑞(Avery)创立完整的转化概念。细菌转化的本质是受体菌直接吸收来自供体菌的游离DNA片段，并在细胞中通过同源交换将之重组至自身的基因组中，从而获得供体菌的相应遗传性状，其中来自供体菌的游离DNA片段称为转化因子。在自然条件下，转化因子由供体菌的裂解产生，其全基因组断裂为 $100\mathrm{kb}$ 左右的DNA片段。具有转化能力的DNA片段往往是双链DNA分子，单链DNA分子很难甚至根本不能转化受体菌。就受体细菌而言，只有当其处于感受态（即受体细胞最易接受外源DNA片段而实现转化的一种特殊生理状态)时才能有效接受转化因子，处于感受态的受体细菌吸收转化因子的能力为一般细菌生理状态的千倍以上，而且不同细菌间的感受态差异往往受自身的遗传特性、菌龄、生理培养条件等诸多因素的影响。
+
+细菌自然转化的全过程包括五个步骤:①感受态的形成。典型的革兰氏阳性细菌由于细胞壁较厚，形成感受态时细胞表面发生明显的变化，包括展示各种蛋白因子和酶类，负责转化因子的结合、切割及加工。感受态细胞能分泌一种相对分子质量较小的激活蛋白或感受因子，其功能是与细胞表面受体结合，诱导某些与感受态有关的特征性蛋白（如细菌溶素）的合成，使细菌胞壁部分降解，局部暴露出细胞膜上的DNA结合蛋白和核酸酶等。②转化因子的结合。受体菌细胞膜上的DNA结合蛋白可与转化因子的双链DNA结构特异性结合，单链DNA或RNA、双链RNA以及DNA-RNA杂合双链均不能结合在膜上。③转化因子的吸收。双链DNA分子与结合蛋白作用后激活邻近的核酸酶，导致一条链被降解，而另一条链被吸收至受体菌中，这个吸收过程为EDTA所抑制，可能是因为核酸酶活性需要二价阳离子的存在。④整合复合物前体的形成。进入受体细胞的单链DNA与另一种游离的蛋白因子结合，形成整合复合物前体结构，它能有效保护单链DNA免受各种胞内核酸酶的降解，并将其引导至受体菌染色体DNA处。⑤转化因子单链DNA的整合。供体单链DNA片段通过同源重组，置换受体染色体DNA的同源区域，形成异源杂合双链DNA结构。
+
+革兰氏阴性细菌细胞表面的结构和组成均与革兰氏阳性细菌有所不同，供体DNA进入受体细胞的转化机制还不十分清楚。革兰氏阴性细菌在感受态的建立过程中伴随着几种膜蛋白的表达，它们负责识别和吸收外源DNA片段。研究表明，嗜血杆菌(Haemophilus)和萘氏杆菌均能识别自身的DNA，如嗜血杆菌所吸收的自身DNA片段中均含一段 $11\mathrm{bp}$ 的保守序列 $5^{\prime} - \mathrm{AAGTGCGGTCA} - 3^{\prime}$ 。这表明革兰氏阴性细菌在转化过程中对供体DNA的吸收具有一定的序列特异性，受体细胞只吸收其自身或与其亲缘关系很近的DNA片段，外源DNA片段虽能结合在感受态细胞的表面，但极少被吸收。与革兰氏阳性菌不同，嗜血杆菌和萘氏杆菌等革兰氏阴性细菌的DNA是以完整的双链形式被吸收的，在整合作用发生之前，进入受体细胞内的双链DNA片段与相应的DNA结合蛋白结合，不为核酸酶所降解，DNA整合同样发生在单链水平上，另一条链以及被取代的受体菌单链DNA则被降解。
+
+原核细菌的转化虽是一种较为普遍的遗传变异现象,但目前仍只在部分细菌的种属之间得以良好鉴定,如肺炎双球菌、芽孢杆菌、链球菌、假单孢杆菌以及放线菌等。而在肠杆菌科的一些细菌之间很难进行转化,其主要原因是一方面转化因子难以被吸收,另一方面受体细胞内往往存在着降解线状转化因子的核酸酶系统。另外,细菌自然转化是自身进化的一种方式,通常伴随着 DNA 的整合,因此在 DNA 重组的转化实验中,很少采取自然转化的方法,而是通过物理手段将重组 DNA 分子导入受体细胞中,同时也对受体细胞进行遗传处理,使之丧失对外源 DNA 分子的降解作用,确保较高的转化效率。
+
+## 2.3.2 细菌受体细胞的选择
+
+野生型细菌一般不能直接用作基因工程的受体细胞,因为它对外源 DNA 的转化效率较低,并且有可能对其他生物种群存在感染寄生性,因此必须通过诱变手段对野生型细菌进行遗传性状改造,使之具备下列条件。
+
+## 1. 细菌受体细胞的限制缺陷性
+
+前已述及，野生型细菌具有针对外源DNA的限制和修饰系统。如果用提取自大肠杆菌C600株的质粒DNA转化大肠杆菌K12株，后者的限制系统会切开未经自身修饰系统甲基化修饰的质粒DNA，使之不能在细胞中有效复制，因此转化效率很低。同样，来自不同生物的外源DNA或重组DNA转化野生型大肠杆菌，也会遇到受体细胞限制系统的降解。为了突破细菌转化的种属特异性，提高任何来源的DNA分子的转化效率，通常选用限制系统缺陷型的受体细胞。大肠杆菌的限制系统主要由hsdR基因编码，因此具有 $hsdR^{-}$ 遗传表型的大肠杆菌各株因外源DNA降解能力的缺失，可转化性得以大幅度提升。
+
+## 2. 细菌受体细胞的重组缺陷性
+
+野生型细菌在转化过程中接纳的外源 DNA 分子能与染色体 DNA 发生体内同源重组，这个过程是自发进行的，由 rec 基因家族的编码产物驱动。大肠杆菌中存在着两条体内同源重组的途径，即 RecBCD 途径和 RecEF 途径，前者远比后者重要，但两种途径均需要 RecA 重组蛋白的参与。RecA 是一个单链蛋白，在同源重组过程中起着不可替代的作用，它能促进 DNA 分子之间的同源联会和 DNA 单链交换， $recA^{-}$ 突变型大肠杆菌菌株的遗传重组频率降为原来的 1/1000000。大肠杆菌的 recB、recC、recD 基因分别编码不同相对分子质量的多肽链，三者构成同源重组的统一功能单位 RecBCD 蛋白（核酸酶 V），它具有依赖于 ATP 的双链 DNA 外切酶和单链 DNA 内切酶双重活性，这两种活性为同源遗传重组所必需。就细菌受体系统而言，以外源基因克隆、扩增以及表达为目的的基因工程大都基于 DNA 重组分子的自主复制，因此受体细胞必须选择体内同源重组缺陷型的遗传表型，其相应的基因型为  $recA^{-}$ 、 $recB^{-}$ 或  $recC^{-}$ ，有些大肠杆菌受体细胞则 3 个基因同时被灭活。
+
+## 3. 细菌受体细胞的转化亲和性
+
+用于基因工程的细菌受体细胞必须对重组 DNA 分子具有较高的可转化性, 这种特性主要表现在细胞壁和细胞膜的结构上。利用遗传诱变技术可以改变受体细胞壁的通透性, 从而提高其转化效率。在用噬菌体 DNA 载体构建的 DNA 重组分子进行转染时, 受体细胞膜上还必须具有噬菌体的特异性吸附受体, 如对应于  $\lambda$  噬菌体的大肠杆菌膜蛋白 LamB 等。
+
+## 4. 细菌受体细胞的遗传互补性
+
+受体细胞必须具有与载体所携带的选择标记互补的遗传性状，方能使转化细胞的筛选成为可能。例如，若载体DNA上携带氨苄青霉素抗性基因 $(Ap^r)$，则所选用的受体细胞应对这种抗生素敏感，当重组分子转入受体细胞后，载体上的标记基因赋予受体细胞抗生素的抗性特征，以区分转化细胞与非转化细胞。更为理想的受体细胞具有与外源基因表达产物活性互补的遗传特征，这样便可直接筛选到外源基因表达的转化细胞。
+
+## 5. 细菌受体细胞的感染寄生缺陷性
+
+相当多的细菌对其他生物尤其是人和牲畜具有感染和寄生效应，重组DNA分子导入这些细菌受体中后极有可能随着受体菌的感染寄生作用进入生物体内，并广泛传播。如果外源基因表达产物对人体和牲畜有害，则会导致一场灾难，因此从安全的角度上考虑，受体细胞不能具有感染寄生性。不仅如此，即便能阻断受体菌的感染寄生途径，重组细菌在自然界的扩散繁殖对环境生态系统也同样会构成威胁。针对这一难题的有效解决策略是构建一种合成性配体小分子依赖型的受体细菌突变株，后者的生长必需基因编码产物只有在这种合成性配体小分子存在的条件下才能发挥功能，因而这种受体细菌一旦离开实验室便呈致死性。DNA重组实验中常见的大肠杆菌受体细胞及其遗传特性列在表2-10中。
+
+表 2-10 实验室常见的大肠杆菌受体及其遗传特性
+
+| 菌株 | 遗传型 |
+| --- | --- |
+| BL21(DE3) | $F^{-} ompT gal dcm lon hsdS_{B}(r_{B}^{-}, m_{B}^{-}) \lambda (DE3[lacI lacUV5 - T7 gene 1 ind 1 sam7 nin5])$ |
+| C600 | $F^{-} tonA21 thi-1 thr-1 leuB6 lacY1 supE44 rfbC1 fhuA1 \lambda^{-}$ |
+| DH5α | $F^{-} endA1 supE44 thi-1 recA1 relA1 gyrA96 deoR \Phi80dlacZ\Delta M15 \Delta(lacZYA - argF)U169hsdR17(r_{k}^{-} m_{k}^{+}) \lambda^{-}$ |
+| JM83 | $rpsL ara \Delta(lac-proAB) \Phi80dlacZ\Delta M15 thi(Str^{r})$ |
+| JM101 | $supE44 thi-1\Delta(lac-proAB) F'[lacI^{q}Z \Delta M15 traD36 proAB^{+}]$ |
+| JM107 | $endA1 supE44 thi-1 relA1 gyrA96 \Delta(lac-proAB) [F'traD36 proAB^{+} lacI^{q}lacZ\Delta M15] hsdR17(r_{k}^{-} m_{k}^{+}) \lambda^{-}$ |
+| JM109(DE3) | $endA1 supE44 thi-1 relA1 gyrA96 recA1 mcrB^{+} \Delta(lac-proAB) e14^{-}[F'traD36 proAB^{+} lacI^{q}lacZ \Delta M15] hsdR17(r_{k}^{-} m_{k}^{+}) \lambda(DE3)$ |
+| LE392 | $supE44 supF58(lacY1 or \Delta lacIZY) galK2 galT22 metB1 trpR55 hsdR514(r_{k}^{-} m_{k}^{+})$ |
+| TOP10 | $F^{-} mcrA \Delta(mrr^{-} hsdRMS^{-} mcrBC) \Phi80lacZ \Delta M15 \Delta lacX74 nupG recA1 araD139 \Delta(ara-leu)7697 galE15 galK16 rpsL(Str^{r}) endA1 \lambda^{-}$ |
+
+受体细胞选择的另一方面内容是受体细胞种属的确定。对于以改良生物物种为目的的基因工程操作而言，受体细胞的种属没有选择的余地，待改良的生物物种就是受体；但对外源基因的克隆与表达来说，受体细胞种类的选择至关重要，它直接关系到基因工程产业化的成败。几种受体生物对外源基因克隆表达的影响列在表2-11中。
+
+表 2-11 基因工程常用克隆表达系统的优缺点
+
+| 受体生物 | 优点 | 缺点 |
+| --- | --- | --- |
+| 大肠杆菌系统 | 基因工程的经典模型系统;生长迅速;异源蛋白高效表达;遗传背景清楚 | 潜在病原体;潜在致热原;蛋白不能分泌至培养基中;无糖基化机器;大量表达的蛋白质以不溶解的变性和失活形式在细胞质中积累 |
+| 芽孢杆菌系统 | 基因工程安全的宿主菌;良好分泌;发酵历史悠久 | 异源蛋白表达水平低;胞内胞外蛋白酶丰富;无糖基化机器 |
+| 真核酵母系统 | 基因工程安全的宿主菌;遗传背景清楚;具有糖基化和翻译后修饰功能;可分泌异源蛋白;可在廉价简单的培养基中规模发酵 | 多数情况下异源蛋白表达水平低;有超糖基化趋势;培养基中异源蛋白有时分泌不理想 |
+| 丝状真菌系统 | 分泌大量同源蛋白;存在糖基化和翻译后修饰;具有成熟的生长和下游过程工业技术 | 异源蛋白表达率低;产生蛋白酶 |
+| 杆状病毒系统 | 分泌异源蛋白;存在糖基化和翻译后修饰 | 存在终端死亡系统;异源蛋白表达率低;无唾液酸化修饰系统;难以大规模生产;培养基昂贵 |
+| 哺乳动物细胞 | 分泌异源蛋白;能正确糖基化和翻译后修饰 | 异源蛋白表达率低;难以大规模生产;培养基昂贵 |
+
+## 2.3.3 细菌受体细胞的转化方法
+
+细菌受体细胞对应多种转化方法，后者基于物理、化学和生物学原理而建立，分述如下。
+
+## 1. 钙离子诱导的完整细胞转化
+
+1970 年,曼德尔(Mandel)和黑格(Higa)发现用  $CaCl_{2}$  处理过的大肠杆菌能够吸收  $\lambda$  噬菌体 DNA;此后不久,考恩(Cohen)等人用此法成功制备了以质粒 DNA 转化大肠杆菌的感受态细胞,其整个操作程序如图 2-25 所示。将处于对数生长期的细菌置于  $0^{\circ}C$  的  $CaCl_{2}$  低渗溶液中，使细胞膨胀；同时  $Ca^{2+}$  使细胞膜磷脂层形成液晶结构，使得位于外膜与内膜间隙中的部分核酸酶离开所在区域，这便构成了大肠杆菌人工诱导的感受态。此时加入 DNA， $Ca^{2+}$  又与 DNA 结合形成抗脱氧核糖核酸酶(DNase)的羟基-磷酸钙复合物，并黏附在细菌细胞膜的外表面上。经短暂的  $42^{\circ}C$  热脉冲处理后，细菌细胞膜的液晶结构发生剧烈扰动，随之出现许多间隙，致使通透性增加，DNA 分子便趁机渗入细胞内。此外在上述转化过程中， $Mg^{2+}$  的存在对 DNA 的稳定性起很大的作用， $MgCl_{2}$  与  $CaCl_{2}$  又对大肠杆菌某些菌株感受态细胞的建立具有独特的协同效应。1983 年，哈纳汉(Hanahan)除了用  $CaCl_{2}$  和  $MgCl_{2}$  处理细胞外，还设计了一套用二甲基亚砜(DMSO)和二巯基苏糖醇(DTT)进一步诱导细胞产生高频感受态的程序，从而大大提高了大肠杆菌的转化效率。目前， $Ca^{2+}$  诱导法已成功用于大肠杆菌、葡萄球菌以及其他一些革兰氏阴性菌的转化。
+
+![](images/page_45_image_3.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["离心\n收集菌体"] --> B["10 mmol/L CaCl₂\n冰浴悬浮"]
+  B --> C["离心\n收集菌体"]
+  C --> D["75 mmol/L CaCl₂\n冰浴悬浮"]
+  D --> E["加 DNA\n冰浴 30 min"]
+  E --> F["加新鲜培养基\n37°C培养 1 h"]
+  F --> G["涂板筛选"]
+  G --> H["42°C\n热脉冲 2 min"]
+```
+</details>
+
+图2-25 钙离子诱导的大肠杆菌转化程序
+
+## 2. 聚乙二醇介导的细菌原生质体转化
+
+在高渗培养基中生长至对数生长期的细菌，用含适量溶菌酶的等渗缓冲液处理，剥除其细胞壁形成原生质体，后者丧失了一部分定位在膜上的DNase，有利于双链环状DNA分子的吸收。此时，再加入含待转化的DNA样品和PEG的等渗溶液，均匀混合。离心除去PEG，将菌体涂布在特殊的固体培养基上再生细胞壁，最终得到转化细胞。这种方法不仅适用于芽孢杆菌和链霉菌等革兰氏阳性细菌，也对酵母菌、霉菌甚至植物等真核细胞有效。只是不同种属的生物细胞，其原生质体的制备与再生的方法不同，而且细胞壁的再生率严重制约转化效率。
+
+## 3. 电穿孔驱动的完整细胞转化
+
+电穿孔(Electroporation)是一种电场介导的细胞膜可渗透化处理技术。受体细胞在电场脉冲的作用下，细胞壁形成一些微孔通道，使得DNA分子直接与裸露的细胞膜脂双层结构接触，并引发吸收过程。具体操作程序因转化细胞的种属而异。对于大肠杆菌而言，大约$50~\mu \mathrm{L}$ 的细胞悬浮液与DNA样品混合后，置于装有电极的槽内，然后选用大约 $25~\mu \mathrm{F}$ 、$2.5\mathrm{kV}$ 和 $200\Omega$ 的电场强度处理 $4.6\mathrm{ms}$，即可获得理想的转化效率。虽然电穿孔法转化较大的重组质粒 $(>100\mathrm{kb})$ 的转化效率是小质粒(约 $3\mathrm{kb}$) 的 $1 / 1000$ ，但该法比 $\mathrm{Ca^{2+}}$ 诱导和原生质体转化方法理想，因为后两种方法几乎不能转化大于 $100\mathrm{kb}$ 的质粒DNA。而且，几乎所有细菌均可找到一套与之匹配的电穿孔操作条件，因此电穿孔转化方法已成为细菌转化
+
+的标准程序。
+
+## 4. 基于细菌接合的完整细胞转化
+
+接合(Conjugation)是指通过细菌细胞之间的直接接触导致DNA从一个细胞转移至另一个细胞的过程。这个过程是由结合型质粒完成的，它通常具有促进供体细胞与受体细胞有效接触的接合功能以及诱导DNA分子传递的转移功能，两者均由接合型质粒上的有关基因编码。在DNA重组中常用的绝大多数载体质粒缺少接合功能区，因此不能直接通过细胞接合方法转化受体细胞，然而如果在同一个细胞中存在着含接合功能区域的辅助质粒，则有些克隆载体质粒能有效地接合转化受体细胞。因此，首先将具有接合功能的辅助质粒转移至含重组质粒的细胞中，然后将这种供体细胞与难以用上述转化方法转化的受体细胞进行混合，促使两者发生接合作用，最终导致重组质粒进入受体细胞。接合转化的标准程序如图2-26所示。
+
+![](images/page_46_image_5.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["接种"] --> B["供体菌"]
+  A --> C["辅助菌"]
+  A --> D["受体菌"]
+  
+  B --> E["混合菌液"]
+  E --> F["收集菌体"]
+  
+  subgraph Processing
+    G["翻瓶培养\n1.5~2.5 h"] -.-> H["接合转化型细胞"]
+    I["扩增鉴定"] -.-> J["双抗平板"]
+    K["涂板筛选"] -.-> L["悬浮菌体"]
+    M["取下滤膜"] -.-> N["取下滤膜"]
+    O["无抗平板"] -.-> P["微孔滤膜"]
+  end
+  
+  F --> Q["洗涤菌体"]
+  Q --> R["悬浮菌体"]
+  R --> S["点样于微孔滤膜上"]
+  S --> T["培养过夜"]
+```
+</details>
+
+图2-26 细菌接合转化操作程序
+
+细菌接合转化整个过程涉及包括受体菌在内的3种菌株的混合，即受体菌、含接合型质粒的辅助菌以及含待转化重组质粒的供体菌。三者混合后，接合型质粒既可从辅助菌株转移至供体菌，也可直接进入受体菌，含两种相容型质粒的供体菌再与受体菌或辅助菌发生接合反应。此时细菌混合液中已出现多种形式的细胞，因为任何菌株接合发生频率都不可能达到 $100\%$ 。为了迅速而准确地筛选出仅接纳了重组质粒的受体细胞（即接合转化细胞），必须使用菌种和质粒上相应的遗传标记，例如携带接合型质粒的菌株A不能在最小培养基上生长且对抗生素X敏感；含待转化重组质粒的菌株B也不能在最小培养基生长，如果它失去含X抗性基因的重组质粒，则同样对X敏感；受体细胞C能在最小培养基中生长且对抗生素X和Y均敏感。3种菌株首先在无抗生素的完全培养基中进行混合，短暂培养启动接合转化，然后迅速涂布在含抗生素的最小培养基上进行筛选。此时，只有接纳了重组质粒的受体细胞才能长成菌落(克隆)，其中为数极少的菌落含双质粒。随机选择几个菌落，将之涂布在含抗生素的最小培养基上，凡是在这种培养基中不能生长的菌落即为只含重组质粒的受体转化克隆，因为只有接合型质粒所携带的Y抗生素抗性基因能赋予受体细胞对Y的抗性。应当特别指出的是，在接合转化过程中使用的重组质粒与接合型质粒必须具备相容性，
+
+否则两者难以稳定地共存于供体菌中。
+
+## 5. 基于 $\lambda$ 噬菌体感染的大肠杆菌转染
+
+以 $\lambda -\mathrm{DNA}$ 为载体的重组DNA分子，由于其相对分子质量较大，通常采取转染的方法将之导入受体细胞内。在转染之前必须对重组DNA分子进行人工体外包装，使之成为具有感染活力的噬菌体颗粒。用于体外包装的蛋白质可直接从大肠杆菌的溶原株中制备，现已商品化。这些包装蛋白通常分成分离放置且功能互补的两部分，一部分缺少E组分，另一部分缺少D组分。包装时，只有当这两部分的包装蛋白与重组 $\lambda -\mathrm{DNA}$ 分子三者混合后，包装才能有效进行，任何一种蛋白包装溶液被重组分子污染后均不能包装成有感染活力的噬菌体颗粒，这种设计基于安全考虑。整个包装操作过程与转化一样简单:将 $\lambda -\mathrm{DNA}$ 载体和外源DNA片段的连接反应液与两种包装蛋白组分混合，在室温下放置 $1\mathrm{h}$，加入一滴氯仿，离心除去细菌碎片，即得重组噬菌体颗粒的悬浮液。将之稀释合适的倍数，并与处于对数生长期的大肠杆菌受体细胞混合涂布，过夜培养即可获得含透明噬菌斑（即克隆）的转化平板，后者用于筛选与鉴定操作。
+
+## 2.3.4 转化率及其影响因素
+
+在常规转化条件下,由上述各种转化程序介导的转化型细胞在受体细胞中通常只占极少份额,这为后续转化型细胞的筛选构成一定难度和操作负担。因此,全面分析影响转化的各种因素,针对性改进转化操作条件以提高转化效率,具有重要意义。
+
+## 1. 转化率的定义
+
+转化率是转化(包括转染)效率的评估指标,通常有两种表征形式。一是在待转化DNA分子数大于受体细胞数的条件下,转化细胞与细胞总数之比。例如在标准条件下,利用 $Ca^{2+}$ 诱导法转化质粒DNA的最大转化率为 $10^{-3}$ ,即平均每1000个受体细胞中有一个细胞能接纳质粒DNA。如果处于感受态的受体细胞能100%地接纳DNA分子,则这种转化率直接反映了受体细胞中感受态细胞的含量;转化率的另一种表示形式是在受体细胞数相对于待转化DNA分子数大大过量时,每微克DNA转化所产生的克隆数。由于在一般规模的转化实验中,所观测到的每个受体细胞只能接纳一个DNA分子,因此上述转化率的定义也可表征为每微克DNA进入受体细胞的分子数。例如,pUC18对大肠杆菌的转化率为 $10^{8}/\mu g$ DNA,其含义为每微克pUC18只有 $10^{8}$ 个分子能进入受体细胞, $1\mu g$ pUC18中共有 $6.02\times10^{17}/(2686\times660)=3.4\times10^{11}$ 个分子(其中660为1对碱基平均相对分子质量),也就是说,每3400个pUC18分子中只有一个分子进入受体细胞。如果能够准确确定转化 $1\mu g$ pUC18所用的受体细胞总数,则上述两种转化率可以相互换算。
+
+## 2. 转化率的用途
+
+利用实验测得的转化率和重组率参数可以帮助设计DNA重组实验的规模。例如，某一克隆系统的重组率为 $20\%$ ，转化率为 $10^{7} / (\mu \mathrm{g}$ DNA)，经体外切割与连接处理后的载体DNA或重组分子的转化率是直接从细菌中制备的载体DNA的1/100，若载体DNA和重组DNA分子的转化率差异忽略不计，则欲获得 $10^{4}$ 个含重组DNA分子的克隆，至少应投入$0.5\mu \mathrm{g}$ 载体DNA，其计算方法如下: $10^{4} / (20\% \times 10^{-2}\times 10^{7})$ 。按外源DNA片段与载体DNA分子数 $10:1$ 的要求，即可推算出外源DNA片段的用量。如果转化培养液全部涂板筛选，理论上可形成 $10^{4}$ 个转化克隆，若使每块平板上平均含500个克隆，则需涂布20块平板。涂布过密会给后续筛选带来很大困难，涂布太稀，既浪费又给筛选造成不必要的麻烦。
+
+## 3. 转化率的影响因素
+
+转化率的高低对于一般重组克隆实验关系不大,但在构建基因文库时,保持较高的转化率至关重要。影响转化率的因素很多,其中包括以下三种。
+
+(1) 载体 DNA 及重组 DNA 方面。载体本身的性质决定了转化率的高低, 不同的载体
