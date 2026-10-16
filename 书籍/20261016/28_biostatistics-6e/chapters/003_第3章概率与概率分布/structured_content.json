@@ -1,0 +1,6542 @@
+{
+  "pages": [
+    {
+      "page_idx": 67,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.138,
+            0.114,
+            0.29,
+            0.164
+          ],
+          "content": "第 3 章"
+        },
+        {
+          "type": "doc_title",
+          "bbox": [
+            0.613,
+            0.183,
+            0.856,
+            0.211
+          ],
+          "level": 1,
+          "content": "概率与概率分布"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.134,
+            0.263,
+            0.22,
+            0.284
+          ],
+          "level": 2,
+          "content": "本章提要"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.293,
+            0.591,
+            0.31
+          ],
+          "content": "概率和概率分布是统计推断的基础。本章主要讨论:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.16,
+            0.314,
+            0.834,
+            0.397
+          ],
+          "sub_type": "text",
+          "content": "• 事件关系与概率计算；\n• 离散性随机变量、连续性随机变量及其概率分布；\n• 常见理论分布:二项分布、泊松分布和正态分布；\n• 抽样分布:样本平均数的抽样分布、样本频率的抽样分布、正态总体抽样分布。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.423,
+            0.875,
+            0.527
+          ],
+          "content": "第二章详细叙述了如何通过调查和试验获得样本数据、进行数据整理、编制频数分布表和频数分布图，系统介绍了数据分布集中性、变异程度、分布形状等特征的度量指标与描述方法。但是进行数据统计分析，不能仅是对样本特征进行统计描述这一个方面，还需要通过样本统计数来推断其所属总体的参数，即统计推断。在进行统计推断之前，需要了解事件、概率、概率分布及抽样分布等基础知识。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.35,
+            0.55,
+            0.621,
+            0.572
+          ],
+          "level": 2,
+          "content": "第一节 事件及其概率"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.115,
+            0.596,
+            0.874,
+            0.635
+          ],
+          "content": "概率是对某一特定事件出现可能性大小进行度量的指标。为理解概率的含义，需要首先了解随机试验、事件、频率等基本概念，并在此基础上讨论事件关系和概率计算问题。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.152,
+            0.649,
+            0.387,
+            0.669
+          ],
+          "level": 2,
+          "content": "一、事件、频率与概率"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.151,
+            0.681,
+            0.262,
+            0.7
+          ],
+          "level": 2,
+          "content": "（一）事件"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.714,
+            0.876,
+            0.797
+          ],
+          "content": "在自然界中，有许多现象可以预知其在一定条件下是否出现。例如，水在一个标准大气压条件下，加热到 100℃时肯定会沸腾。这种在一定条件下必然出现的现象，称为必然事件（certain event），以 U 表示。必然事件的反面，则不会发生。例如，种子的发芽率不可能超过 100%，这种在一定条件下必然不出现的事件，称为不可能事件（impossible event），以 V 表示。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.801,
+            0.874,
+            0.883
+          ],
+          "content": "在自然界中还有另外许多现象，它们在一定条件下出现的结果是偶然的，有可能发生，也可能不发生。例如，小麦种子在播种后可能发芽，也可能不发芽；投掷一枚质地均匀的硬币，其结果可能是硬币正面朝上，也可能是反面朝上。为了研究事件的发生与出现的结果，通常需要通过试验对一定条件下出现的自然现象进行观测或度量。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.888,
+            0.875,
+            0.927
+          ],
+          "content": "一个试验如果满足以下三个特性，则称其为一个随机试验（random trial），简称试验（trial）:①试验可以在相同条件下重复进行；②每次试验的可能结果不止一个，但试验的所"
+        }
+      ]
+    },
+    {
+      "page_idx": 68,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.408,
+            0.073,
+            0.599,
+            0.088
+          ],
+          "content": "第 3 章 概率与概率分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.834,
+            0.075,
+            0.878,
+            0.087
+          ],
+          "content": "·57·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.106,
+            0.884,
+            0.188
+          ],
+          "continues_prev": true,
+          "content": "有可能结果在试验之前是确切知道的；③每次试验总是恰好出现可能结果中的一个，但在试验之前不能确定试验出现的确切结果。上述小麦种子的发芽情况、投掷硬币哪面朝上的情况，都具备随机试验的三个特征，因此都是随机试验。像这种在某些确定条件下进行随机试验可能出现也可能不出现的现象，称为随机事件（random event），简称事件（event）。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.192,
+            0.884,
+            0.318
+          ],
+          "content": "对一项随机试验，可以将试验中所有可能结果的全体定义为样本空间（sample space），用符号 Ω 表示，而样本空间中每一个特定的试验结果被称为样本点（sample point）。样本空间是随机试验中所有可能结果的集合，显然它是一个必然事件。例如，设随机试验为抛一颗质地均匀骰子出现向上面的点数，其样本空间 Ω:｛1，2，3，4，5，6｝；投掷一枚质地均匀硬币的样本空间 $Q ;$ :｛正面朝上，反面朝上｝；一粒种子发芽的样本空间 $Q ;$ :｛发芽，不发芽｝；动物性别的样本空间 Ω:｛雄性，雌性｝；一品红花色的样本空间 $Q ;$ :｛红色，粉色，白色｝；等等。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.161,
+            0.332,
+            0.269,
+            0.35
+          ],
+          "level": 2,
+          "content": "（二）频率"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.371,
+            0.88,
+            0.42
+          ],
+          "content": "设事件 A 在 n 次重复试验中发生了 m 次，其比值 $\\frac{m}{n}$ 称为事件 A 发生的频率（frequency），记为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.456,
+            0.428,
+            0.882,
+            0.458
+          ],
+          "content": "W (A) = \\frac {m}{n} \\tag {3-1}",
+          "image_source": "../../raw/pages_0065-0080/images/page_68_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.462,
+            0.604,
+            0.478
+          ],
+          "content": "显然，W（A）是 0～1 的一个数，即 $0 \\leqslant W(A) \\leqslant 1$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.484,
+            0.884,
+            0.522
+          ],
+          "content": "例 **3-1** 为测定某批玉米种子的发芽率，分别取 10，20，50，100，200，500，1000（粒）种子，在相同条件下进行发芽试验，其结果如表 3-1 所示。试计算玉米种子的发芽率。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.559,
+            0.884,
+            0.627
+          ],
+          "content": "| 种子总数(n) | 10 | 20 | 50 | 100 | 200 | 500 | 1000 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 发芽种子数(m) | 9 | 19 | 47 | 91 | 186 | 459 | 920 |\n| 种子发芽率($\\frac{m}{n}$) | 0.900 | 0.950 | 0.940 | 0.910 | 0.930 | 0.918 | 0.920 |",
+          "captions": [
+            {
+              "bbox": [
+                0.36,
+                0.541,
+                0.646,
+                0.555
+              ],
+              "content": "表 3-1 某批玉米种子的发芽试验结果"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0065-0080/images/page_68_table_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.639,
+            0.884,
+            0.698
+          ],
+          "content": "从表 3-1 可以清楚地看出，试验中随 n 值的不同，其种子发芽率也不同。当 n 较小时，其发芽率波动较大；随 n 值增大，发芽率的波动性逐渐减小。当 n 充分大时，其频率值就稳定在 0.920 这个数值上。当 n 为 1000 时，玉米种子的发芽频率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.402,
+            0.703,
+            0.604,
+            0.736
+          ],
+          "content": "W (A) = \\frac {m}{n} = \\frac {9 2 0}{1 0 0 0} = 0. 9 2",
+          "image_source": "../../raw/pages_0065-0080/images/page_68_equation_12.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.161,
+            0.75,
+            0.269,
+            0.768
+          ],
+          "level": 2,
+          "content": "（三）概率"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.783,
+            0.884,
+            0.843
+          ],
+          "content": "由例 3-1 可以引出概率（probability）的定义:某事件 A 在 n 次重复试验中，发生了 m次，当试验次数 n 不断增大时，事件 A 发生的频率 W（A）越来越接近某一确定值 $p   ,$ ，于是定义 $p$ 为事件 A 发生的概率，记为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.46,
+            0.849,
+            0.882,
+            0.865
+          ],
+          "content": "P (A) = p \\tag {3-2}",
+          "image_source": "../../raw/pages_0065-0080/images/page_68_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.87,
+            0.884,
+            0.909
+          ],
+          "content": "显然，在一般情况下，不可能完全准确地得到 $p _ { \\bot }$ ，常以在 n 充分大时，事件 A 发生的频率作为事件 A 发生概率 $p$ 的近似值，即"
+        }
+      ]
+    },
+    {
+      "page_idx": 69,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.164,
+            0.087
+          ],
+          "content": "·58·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.087
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.421,
+            0.109,
+            0.872,
+            0.139
+          ],
+          "content": "P (A) = p = \\lim _ {n \\to \\infty} \\frac {m}{n} \\tag {3-3}",
+          "image_source": "../../raw/pages_0065-0080/images/page_69_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.143,
+            0.876,
+            0.224
+          ],
+          "content": "例 3-1 中 n 为 1000 时，我们可以认为 n 是充分大，则玉米发芽概率 $p$ 可认为是 0.920。 $p$表示了事件 A 发生可能性的大小。根据概率的定义，概率有如下基本性质:①任何事件的概率都在 0～1，即 $0 \\leqslant P\\left (  A\\right )  \\leqslant 1$ ；②必然事件的概率等于 1，即 $P ( U )   =   1$ ；③不可能事件的概率等于 0，即 $P\\left ( V \\right ) = 0$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.153,
+            0.238,
+            0.409,
+            0.258
+          ],
+          "level": 2,
+          "content": "二、事件关系与概率计算"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.151,
+            0.271,
+            0.373,
+            0.29
+          ],
+          "level": 2,
+          "content": "（一）事件的相互关系"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.112,
+            0.304,
+            0.874,
+            0.495
+          ],
+          "sub_type": "text",
+          "content": "1.和事件 事件 A 和事件 B 至少有一件发生而构成的新事件称为事件 A 和事件 B 的和事件（sum event），以 $A { + } B$ 表示。例如，在检验小麦面粉品质时，随机抽取一个样品的出粉率为 81%以下称为事件 A，随机抽取一个样品的出粉率为 81%～85%称为事件 B，现抽取一个样品的出粉率为 85%以下，则这一新事件即事件 A 和事件 B 的和事件。和事件的定义可推广到多个事件的和，可表示为 $A_{1} + A_{2} + \\cdots + A_{n}$ 。\n2.积事件 事件 A 和事件 B 同时发生而构成的新事件称为事件 A 和事件 B 的积事件（product event），以 $A \\bullet B$ 表示。例如，在调查棉田病虫害发生情况时，以棉铃虫的发生为事件 A，以黄萎病的发生为事件 B，则棉铃虫和黄萎病同时发生这一新事件称为事件 A 和事件B 的积事件。积事件的定义也可推广到多个事件的积，可表示为 $\\mathcal{A}_{1} \\bullet \\mathcal{A}_{2} \\bullet \\cdots \\bullet \\mathcal{A}_{n}  。$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.499,
+            0.875,
+            0.581
+          ],
+          "content": "3.互斥事件 事件 A 和事件 B 不能同时发生，即 $A \\cdot B = V$ ，那么称事件 A 和事件 B为互斥事件（exclusive event）。例如，豌豆的花色分为红花和白花，开红花为事件 A，开白花为事件 B，现一株 $\\mathrm { F _ { 1 } }$ 代豌豆，不可能既开红花又开白花，所以开红花和开白花为互斥事件。这一定义也可推广到 $A _ { 1 }$ 、 ${ \\it A } _ { 2 } , \\cdots , { \\it A } _ { n }$ 多个事件。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.586,
+            0.875,
+            0.711
+          ],
+          "content": "4.对立事件 事件 A 和事件 B 必有一个事件发生，但二者不能同时发生，即 $A + B =$ $U , A \\cdot B = V ,$ ，则称事件 A 与事件 B 互为对立事件（complementary event），事件 B 可表示为A ，事件 A 可表示为 $\\overline { { B } }$ 。例如，新生婴儿是男孩为事件 A，新生婴儿是女孩为事件 B，现有一个刚出生的婴儿，要么是男孩要么是女孩，即 $A + B = U$ ，是必然事件，同时又不可能既是男孩又是女孩，即 $A \\cdot B   =   V ,$ ，是不可能事件，所以新生婴儿是男孩和新生婴儿是女孩互为对立事件，新生婴儿是女孩也可记为 A ，新生婴儿是男孩也可记为 $\\overline { { B } }$ 。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.716,
+            0.874,
+            0.82
+          ],
+          "content": "5.独立事件 事件 A 的发生与事件 B 的发生毫无关系，反之，事件 B 的发生也与事件 A 的发生毫无关系，则称事件 A 和事件 B 为独立事件（independent event）。例如，播种两粒玉米，第一粒发芽为事件 A，第二粒发芽为事件 B，第一粒是否发芽不影响第二粒的发芽，第二粒是否发芽也不影响第一粒的发芽，则事件 A 和事件 B 相互独立。如果多个事件 $A _ { 1 }$ $A_{2} 、 \\cdots 、 A_{n}$ 彼此独立，则称之为独立事件群（independent event group）。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.823,
+            0.875,
+            0.906
+          ],
+          "content": "6.完全事件系 如果多个事件 $A_{1} 、 A_{2} 、 \\cdots 、 A_{n}$ 两两相斥，且每次试验结果必然发生其一，则称事件 $A_{1} 、 A_{2} 、 \\cdots 、 A_{n}$ 为一个完全事件系（complete event system），恰好等于样本空间。由于 $A_{1} 、 A_{2} 、 \\cdots 、 A_{n}$ 相互之间无交叉，所以它们实质上对应的是样本空间中的样本点。例如，抽取一位阿拉伯数字，抽取数字为 0、1、…、9 就构成了完全事件系。"
+        }
+      ]
+    },
+    {
+      "page_idx": 70,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.408,
+            0.073,
+            0.599,
+            0.089
+          ],
+          "content": "第 3 章 概率与概率分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.834,
+            0.075,
+            0.878,
+            0.087
+          ],
+          "content": "·59·"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.161,
+            0.116,
+            0.315,
+            0.134
+          ],
+          "level": 2,
+          "content": "（二）条件概率"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.149,
+            0.884,
+            0.188
+          ],
+          "content": "在事件 B 已发生的情况下事件 A 发生的概率，称为事件 A 的条件概率（conditional probability），记作 $P \\left( A \\left| B \\right) \\right.$ 。条件概率 $P \\left( A \\left| B \\right) \\right.$ 与无条件概率 $P ~ ( A )$ 通常是不一样的。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.192,
+            0.884,
+            0.232
+          ],
+          "content": "例 **3-2** 为研究某抗生素的耐药性，随机抽取 574 名成年气管炎患者调查了服用与未服用该药，以及敏感与不敏感的情况（表 3-2）。试计算各个条件概率与无条件概率。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.267,
+            0.884,
+            0.34
+          ],
+          "content": "| 人群 | 敏感(A)人数 | 不敏感($\\overline{A}$)人数 | 合计 |\n| --- | --- | --- | --- |\n| 服用抗生素(B) | 215 | 180 | 395 |\n| 未服用抗生素($\\overline{B}$) | 106 | 73 | 179 |\n| 合计 | 321 | 253 | 574 |",
+          "captions": [
+            {
+              "bbox": [
+                0.377,
+                0.249,
+                0.63,
+                0.264
+              ],
+              "content": "表 3-2 不同人群气管炎患者情况"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0065-0080/images/page_70_table_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.352,
+            0.884,
+            0.391
+          ],
+          "content": "本例中所调查的人数较多，根据概率定义可将频率看作概率。令 A、 A 分别表示敏感和不敏感的人数，B、 $\\overline { { B } }$ 分别表示是否服用抗生素。根据条件概率定义，各个条件概率分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.394,
+            0.707,
+            0.429
+          ],
+          "content": "P (A \\mid B) = \\frac {2 1 5}{3 9 5} = 0. 5 4 4 3, P (A \\mid \\bar {B}) = \\frac {1 0 6}{1 7 9} = 0. 5 9 2 2",
+          "image_source": "../../raw/pages_0065-0080/images/page_70_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.431,
+            0.709,
+            0.465
+          ],
+          "content": "P (\\bar {A} \\mid B) = \\frac {1 8 0}{3 9 5} = 0. 4 5 5 7, P (\\bar {A} \\mid \\bar {B}) = \\frac {7 3}{1 7 9} = 0. 4 0 7 8",
+          "image_source": "../../raw/pages_0065-0080/images/page_70_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.468,
+            0.356,
+            0.484
+          ],
+          "content": "各个无条件概率分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.321,
+            0.489,
+            0.685,
+            0.524
+          ],
+          "content": "P (A) = \\frac {3 2 1}{5 7 4} = 0. 5 5 9 2, P (\\bar {A}) = \\frac {2 5 3}{5 7 4} = 0. 4 4 0 8",
+          "image_source": "../../raw/pages_0065-0080/images/page_70_equation_11.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.321,
+            0.526,
+            0.685,
+            0.56
+          ],
+          "content": "P (B) = \\frac {3 9 5}{5 7 4} = 0. 6 8 8 2, P (\\bar {B}) = \\frac {1 7 9}{5 7 4} = 0. 3 1 1 8",
+          "image_source": "../../raw/pages_0065-0080/images/page_70_equation_12.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.161,
+            0.572,
+            0.36,
+            0.591
+          ],
+          "level": 2,
+          "content": "（三）概率计算法则"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.606,
+            0.884,
+            0.643
+          ],
+          "content": "1.加法定理 互斥事件 A 和 B 的和事件的概率等于事件 A 和事件 B 的概率之和，称为加法定理（additive theorem），即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.383,
+            0.65,
+            0.882,
+            0.666
+          ],
+          "content": "P (A + B) = P (A) + P (B) \\tag {3-4}",
+          "image_source": "../../raw/pages_0065-0080/images/page_70_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.671,
+            0.884,
+            0.709
+          ],
+          "content": "例 **3-3** 调查某玉米田，一穗株占 67.2%，双穗株占 30.7%，空穗株占 2.1%，试计算一穗株和双穗株的概率。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.715,
+            0.884,
+            0.752
+          ],
+          "content": "已知:一穗株占 67.2%，即 $P\\left (  A\\right ) =0.672$ ；双穗株占 30.7%，即 $P\\left (  B\\right ) =0.307$ ，故所要计算的和事件概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.293,
+            0.758,
+            0.713,
+            0.773
+          ],
+          "content": "P (A + B) = P (A) + P (B) = 0. 6 7 2 + 0. 3 0 7 = 0. 9 7 9",
+          "image_source": "../../raw/pages_0065-0080/images/page_70_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.778,
+            0.734,
+            0.795
+          ],
+          "content": "推理 1 如果 $\\mathcal{A}_{1} 、 \\mathcal{A}_{2} 、 \\cdots 、 \\mathcal{A}_{n}$ 为 $n$ 个互斥事件，则其和事件的概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.274,
+            0.8,
+            0.882,
+            0.817
+          ],
+          "content": "P (A _ {1} + A _ {2} + \\dots + A _ {n}) = P (A _ {1}) + P (A _ {2}) + \\dots + P (A _ {n}) \\tag {3-5}",
+          "image_source": "../../raw/pages_0065-0080/images/page_70_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.823,
+            0.411,
+            0.84
+          ],
+          "content": "推理 2 对立事件 $\\overline { { A } }$ 的概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.436,
+            0.843,
+            0.882,
+            0.86
+          ],
+          "content": "P (\\bar {A}) = 1 - P (A) \\tag {3-6}",
+          "image_source": "../../raw/pages_0065-0080/images/page_70_equation_22.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.866,
+            0.525,
+            0.882
+          ],
+          "content": "推理 3 完全事件系和事件的概率和等于 1。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.888,
+            0.884,
+            0.926
+          ],
+          "content": "2.乘法定理 如果事件 A 和事件 B 为独立事件，则事件 A 与事件 B 同时发生的概率等于事件 A 和事件 B 各自概率的乘积，称为乘法定理（multiplication theorem），即"
+        }
+      ]
+    },
+    {
+      "page_idx": 71,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.164,
+            0.087
+          ],
+          "content": "·60·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.088
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.386,
+            0.106,
+            0.872,
+            0.121
+          ],
+          "content": "P (A B) = P (A) P (B) \\tag {3-7}",
+          "image_source": "../../raw/pages_0065-0080/images/page_71_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.128,
+            0.874,
+            0.166
+          ],
+          "content": "例 **3-4** 播种玉米时，每穴播种两粒种子，已知玉米种子的发芽率为 90%，试求每穴两粒种子均发芽的概率和一粒种子发芽的概率。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.116,
+            0.171,
+            0.863,
+            0.207
+          ],
+          "content": "设第一粒种子发芽为事件 A，第二粒发芽为事件 B，于是有 $P\\left (  A\\right ) =P\\left ( B \\right ) =0.90$ $P\\left(\\bar{A}\\right)=P\\left(\\bar{B}\\right)=0.10$ 。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.213,
+            0.366,
+            0.229
+          ],
+          "content": "两粒种子均发芽的概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.312,
+            0.235,
+            0.673,
+            0.25
+          ],
+          "content": "P (A B) = P (A) P (B) = 0. 9 0 \\times 0. 9 0 = 0. 8 1",
+          "image_source": "../../raw/pages_0065-0080/images/page_71_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.256,
+            0.349,
+            0.273
+          ],
+          "content": "一粒种子发芽的概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.183,
+            0.276,
+            0.804,
+            0.293
+          ],
+          "content": "P (A \\overline {{B}}) + P (\\overline {{A}} B) = P (A) P (\\overline {{B}}) + P (\\overline {{A}}) P (B) = 0. 9 0 \\times 0. 1 0 + 0. 1 0 \\times 0. 9 0 = 0. 1 8",
+          "image_source": "../../raw/pages_0065-0080/images/page_71_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.299,
+            0.504,
+            0.315
+          ],
+          "content": "推理 如果 $A_{1} 、 A_{2} 、 \\cdots 、 A_{n}$ 彼此独立，则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.312,
+            0.321,
+            0.872,
+            0.337
+          ],
+          "content": "P (A _ {1} A _ {2} \\dots A _ {n}) = P (A _ {1}) P (A _ {2}) \\dots P (A _ {n}) \\tag {3-8}",
+          "image_source": "../../raw/pages_0065-0080/images/page_71_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.343,
+            0.384,
+            0.359
+          ],
+          "content": "对条件概率，其计算公式为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.416,
+            0.365,
+            0.872,
+            0.399
+          ],
+          "content": "P (A \\mid B) = \\frac {P (A B)}{P (B)} \\tag {3-9}",
+          "image_source": "../../raw/pages_0065-0080/images/page_71_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.408,
+            0.664,
+            0.424
+          ],
+          "content": "例 **3-5** 根据例 3-2 数据，试计算各个积事件概率和条件概率。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.43,
+            0.478,
+            0.446
+          ],
+          "content": "由表 3-2 数据，各个积事件概率分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.45,
+            0.685,
+            0.485
+          ],
+          "content": "P (A B) = \\frac {2 1 5}{5 7 4} = 0. 3 7 4 6, P (A \\overline {{B}}) = \\frac {1 0 6}{5 7 4} = 0. 1 8 4 7",
+          "image_source": "../../raw/pages_0065-0080/images/page_71_equation_15.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.304,
+            0.487,
+            0.685,
+            0.521
+          ],
+          "content": "P (\\overline {{A}} B) = \\frac {1 8 0}{5 7 4} = 0. 3 1 3 6, \\quad P (\\overline {{A}} \\overline {{B}}) = \\frac {7 3}{5 7 4} = 0. 1 2 7 2",
+          "image_source": "../../raw/pages_0065-0080/images/page_71_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.525,
+            0.457,
+            0.541
+          ],
+          "content": "根据式（3-9），各个条件概率分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.347,
+            0.545,
+            0.641,
+            0.58
+          ],
+          "content": "P (A \\mid B) = \\frac {P (A B)}{P (B)} = \\frac {0 . 3 7 4 6}{0 . 6 8 8 2} = 0. 5 4 4 3",
+          "image_source": "../../raw/pages_0065-0080/images/page_71_equation_18.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.346,
+            0.584,
+            0.643,
+            0.62
+          ],
+          "content": "P (A | \\overline {{B}}) = \\frac {P (A \\overline {{B}})}{P (\\overline {{B}})} = \\frac {0 . 1 8 4 7}{0 . 3 1 1 8} = 0. 5 9 2 2",
+          "image_source": "../../raw/pages_0065-0080/images/page_71_equation_19.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.346,
+            0.626,
+            0.641,
+            0.662
+          ],
+          "content": "P (\\bar {A} \\mid B) = \\frac {P (\\bar {A} B)}{P (B)} = \\frac {0 . 3 1 3 6}{0 . 6 8 8 2} = 0. 4 5 5 7",
+          "image_source": "../../raw/pages_0065-0080/images/page_71_equation_20.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.346,
+            0.668,
+            0.643,
+            0.704
+          ],
+          "content": "P (\\overline {{A}} | \\overline {{B}}) = \\frac {P (\\overline {{A}} \\overline {{B}})}{P (\\overline {{B}})} = \\frac {0 . 1 2 7 2}{0 . 3 1 1 8} = 0. 4 0 7 8",
+          "image_source": "../../raw/pages_0065-0080/images/page_71_equation_21.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.71,
+            0.876,
+            0.772
+          ],
+          "content": "3.全概率法则 如果 $B_{1} 、 B_{2} 、 \\cdots 、 B_{n}$ 为完全事件系， $P\\left(B_{1}+B_{2}+\\cdots+B_{n}\\right)=1$ ，且 P $(B_i) > 0 \\quad (i = 1, 2, \\cdots, n)$ ，A 为任意事件，则事件 A 的全概率法则（law of total probability）为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.334,
+            0.776,
+            0.872,
+            0.812
+          ],
+          "content": "P (A) = \\sum_ {i = 1} ^ {n} P (A B _ {i}) = \\sum_ {i = 1} ^ {n} P (B _ {i}) P (A | B _ {i}) \\tag {3-10}",
+          "image_source": "../../raw/pages_0065-0080/images/page_71_equation_23.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.814,
+            0.871,
+            0.854
+          ],
+          "content": "4.逆概率法则 如果 $B_{1} 、 B_{2} 、 \\cdots 、 B_{n}$ 为完全事件系且 $P\\left(B_{i}\\right)>0\\left(i=1,\\ 2,\\ \\cdots,\\ n\\right)$ A 为任意事件， $P\\left(A\\right)>0$ ，则由式（3-9），有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.339,
+            0.857,
+            0.872,
+            0.893
+          ],
+          "content": "P (B _ {i} \\mid A) = \\frac {P (A B _ {i})}{P (A)} = \\frac {P (B _ {i}) P (A \\mid B _ {i})}{P (A)} \\tag {3-11}",
+          "image_source": "../../raw/pages_0065-0080/images/page_71_equation_25.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.899,
+            0.862,
+            0.917
+          ],
+          "content": "将全概率法则式（3-10）代入式（3-11），得出逆概率法则（law of inverse probability），"
+        }
+      ]
+    },
+    {
+      "page_idx": 72,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.408,
+            0.073,
+            0.599,
+            0.088
+          ],
+          "content": "第 3 章 概率与概率分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.834,
+            0.075,
+            0.878,
+            0.087
+          ],
+          "content": "·61·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.106,
+            0.429,
+            0.122
+          ],
+          "content": "也称为贝叶斯定理（Bayes theorem）:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.378,
+            0.126,
+            0.882,
+            0.181
+          ],
+          "content": "P (B _ {i} \\mid A) = \\frac {P (B _ {i}) P (A \\mid B _ {i})}{\\sum_ {i = 1} ^ {n} P (B _ {i}) P (A \\mid B _ {i})} \\tag {3-12}",
+          "image_source": "../../raw/pages_0065-0080/images/page_72_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.186,
+            0.884,
+            0.246
+          ],
+          "content": "贝叶斯定理从形式上看，是将简单的条件概率 $P \\left( B _ { i } \\middle | A \\right)$ 表示成复杂的形式，但在许多情况下，公式右端的 $P ~ ( B _ { i } )$ 和 $P \\left( A   \\middle |   B _ { i } \\right)$ 或为已知，或容易求得，这样在利用贝叶斯定理计算条件概率时还是比较方便的。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.251,
+            0.826,
+            0.267
+          ],
+          "content": "例 **3-6** 利用全概率法则和逆概率法则，试根据例 3-2 数据计算各个事件的概率。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.273,
+            0.884,
+            0.311
+          ],
+          "content": "由式（3-10）全概率法则，B、 B 为一个完全事件系，敏感（A）和不敏感（ A ）的概率分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.255,
+            0.316,
+            0.749,
+            0.371
+          ],
+          "content": "\\begin{array}{l} P (A) = \\sum_ {i = 1} ^ {n} P (B _ {i}) P (A | B _ {i}) = P (B) P (A | B) + P (\\overline {{B}}) P (A | \\overline {{B}}) \\\\ = 0. 6 8 8 2 \\times 0. 5 4 4 3 + 0. 3 1 1 8 \\times 0. 5 9 2 2 = 0. 5 5 9 2 \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0065-0080/images/page_72_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.256,
+            0.378,
+            0.746,
+            0.413
+          ],
+          "content": "P (\\bar {A}) = \\sum_ {i = 1} ^ {n} P (B _ {i}) P (\\bar {A} \\mid B _ {i}) = P (B) P (\\bar {A} \\mid B) + P (\\bar {B}) P (\\bar {A} \\mid \\bar {B})",
+          "image_source": "../../raw/pages_0065-0080/images/page_72_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.305,
+            0.416,
+            0.652,
+            0.432
+          ],
+          "content": "= 0. 6 8 8 2 \\times 0. 4 5 5 7 + 0. 3 1 1 8 \\times 0. 4 0 7 8 = 0. 4 4 0 8",
+          "image_source": "../../raw/pages_0065-0080/images/page_72_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.438,
+            0.875,
+            0.476
+          ],
+          "content": "利用式（3-12）逆概率法则，得出敏感人群中服用抗生素（B）和未服用抗生素 $( \\; { \\overline { { B } } } \\; )$的概率分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.209,
+            0.479,
+            0.799,
+            0.535
+          ],
+          "content": "P (B \\mid A) = \\frac {P (B) P (A \\mid B)}{\\sum_ {i = 1} ^ {n} P (B _ {i}) P (A \\mid B _ {i})} = \\frac {P (B) P (A \\mid B)}{P (B) P (A \\mid B) + P (\\overline {{B}}) P (A \\mid \\overline {{B}})} = 0. 6 6 9 8",
+          "image_source": "../../raw/pages_0065-0080/images/page_72_equation_11.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.209,
+            0.538,
+            0.798,
+            0.595
+          ],
+          "content": "P (\\bar {B} \\mid A) = \\frac {P (\\bar {B}) P (A \\mid \\bar {B})}{\\sum_ {i = 1} ^ {n} P (B _ {i}) P (A \\mid B _ {i})} = \\frac {P (\\bar {B}) P (A \\mid \\bar {B})}{P (B) P (A \\mid B) + P (\\bar {B}) P (A \\mid \\bar {B})} = 0. 3 3 0 2",
+          "image_source": "../../raw/pages_0065-0080/images/page_72_equation_12.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.164,
+            0.608,
+            0.305,
+            0.628
+          ],
+          "level": 2,
+          "content": "三、大数定律"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.643,
+            0.884,
+            0.703
+          ],
+          "content": "前面已经指出，当 n 充分大时，事件 A 发生的频率 $W \\left( A \\right)$ 就可代替概率 P（A）。频率和概率之间的关系，实际上就是统计数与参数的关系，频率 W（A）是一个统计数，概率 $P ~ ( A )$是一个参数。为什么可以用频率 W（A）来代替概率 P（A）？这是由于大数定律在起作用。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.707,
+            0.884,
+            0.789
+          ],
+          "content": "大数定律（law of large numbers）是概率论中用来阐述大量随机现象平均结果稳定性的一系列定律的总称，最常用的是伯努利定理（Bernoulli’s theorem），可描述为:设 m 是 n 次独立试验中事件 A 出现的次数，而 p 是事件 A 在每次试验中出现的概率，则对于任意小的正数 ε，有如下关系:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.409,
+            0.793,
+            0.882,
+            0.831
+          ],
+          "content": "\\lim _ {n \\to \\infty} P \\left\\{\\left| \\frac {m}{n} - p \\right| <   \\varepsilon \\right\\} = 1 \\tag {3-13}",
+          "image_source": "../../raw/pages_0065-0080/images/page_72_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.836,
+            0.732,
+            0.873
+          ],
+          "content": "式中， $P$ 为 $\\boxed { \\frac { m } { n } { - } p } { < } \\varepsilon .$ 这一事件的概率， $P { = } 1$ 表示这一事件为必然事件。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.884,
+            0.884,
+            0.913
+          ],
+          "content": "伯努利定律说明:若试验条件不变，重复次数 n 接近无限时，频率 $\\frac{m}{n}$ 与理论概率 $p$ 的差"
+        }
+      ]
+    },
+    {
+      "page_idx": 73,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.164,
+            0.088
+          ],
+          "content": "·62·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.088
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.106,
+            0.874,
+            0.143
+          ],
+          "continues_prev": true,
+          "content": "值必定要小于一个任意小的正数 $\\varepsilon ,$ ，即这两者可以基本相等，这几乎是一个必然要发生的事件，即 $P { = } 1$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.149,
+            0.875,
+            0.209
+          ],
+          "content": "在大数定律中，欣钦定理（Khinchine theorem）是用来说明为什么可以用算术平均数 x 来推断总体平均数 $\\mu$ 的。它可描述为:设 $x_{1} 、 x_{2} 、 \\cdots 、 x_{n}$ 是来自同一总体的随机变量，对于任意小的正数 ε，有如下关系:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.38,
+            0.213,
+            0.872,
+            0.255
+          ],
+          "content": "\\lim _ {n \\to \\infty} P \\left\\{\\left| \\frac {1}{n} \\sum_ {i = 1} ^ {n} x _ {i} - \\mu \\right| <   \\varepsilon \\right\\} = 1 \\tag {3-14}",
+          "image_source": "../../raw/pages_0065-0080/images/page_73_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.259,
+            0.874,
+            0.318
+          ],
+          "content": "式（3-14）阐述了当试验重复次数 n 无限增大时，随机变量的算术平均数与总体平均数之间的差一定小于任意小的正数 $\\varepsilon ,$ ，也就是 $\\overline { { x } }$ 基本上与 $\\mu$ 相等，这几乎是一个必然要发生的事件，即 $P { = } 1$ 。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.324,
+            0.873,
+            0.362
+          ],
+          "content": "实际上，我们可以这样来理解欣钦定律:设一个随机变量 $x _ { i }$ 由一个总体平均数 $\\mu$ 和一个随机误差 $\\varepsilon _ { i }$ 所构成，可以用下面的线性模型（linear model）来表达:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.454,
+            0.368,
+            0.872,
+            0.385
+          ],
+          "content": "x _ {i} = \\mu + \\varepsilon_ {i} \\tag {3-15}",
+          "image_source": "../../raw/pages_0065-0080/images/page_73_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.389,
+            0.78,
+            0.406
+          ],
+          "content": "如果从同一总体抽取 n 个随机变量构成一个样本，那么样本平均数可表示为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.345,
+            0.412,
+            0.639,
+            0.449
+          ],
+          "content": "\\bar {x} = \\frac {1}{n} \\sum_ {i = 1} ^ {n} x _ {i} = \\frac {1}{n} \\sum_ {i = 1} ^ {n} (\\mu + \\varepsilon_ {i}) = \\mu + \\frac {1}{n} \\sum_ {i = 1} ^ {n} \\varepsilon_ {i}",
+          "image_source": "../../raw/pages_0065-0080/images/page_73_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.457,
+            0.874,
+            0.536
+          ],
+          "content": "从上式可以看出，当试验次数 n 越来越大时， $\\frac { 1 } { n } \\sum _ { i = 1 } ^ { n } \\mathcal { E } _ { i } .$ 部分会变得越来越小。因为 $\\varepsilon _ { i }$ 有正有负，正负相互抵消，且随着 n 的增大， $\\frac { 1 } { n } \\sum _ { i = 1 } ^ { n } \\varepsilon _ { i } .$ 会变得非常小，使 x 越来越接近 $\\mu   \\mathrm { { } _ { \\circ } }$ 。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.54,
+            0.875,
+            0.644
+          ],
+          "content": "从以上解释，我们可以将大数定律通俗地表达为:样本容量越大，样本统计数与总体参数之差越小。有了大数定律作为理论基础，只要从总体中抽取的随机变量相当多，就可以用样本的统计数来估计总体参数。尽管存在随机误差，但通过进行大量的重复试验，其总体特征可以透过个别的偶然现象显示出其必然性，而且这种随机误差可以用数学方法进行估计，在一定范围内也可以得到人为控制，因此完全可以根据样本的统计数来估计总体的参数。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.337,
+            0.668,
+            0.633,
+            0.689
+          ],
+          "level": 2,
+          "content": "第二节 离散性概率分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.713,
+            0.873,
+            0.773
+          ],
+          "content": "明确了事件、概率及其运算法则，只是了解了随机现象及其关系的概念描述和简单计算。若要全面了解随机现象及其发生的规律，就必须知道随机变量及其概率分布，并在此基础上正确应用统计方法去解决各种实际问题。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.153,
+            0.788,
+            0.296,
+            0.807
+          ],
+          "level": 2,
+          "content": "一、随机变量"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.821,
+            0.874,
+            0.903
+          ],
+          "content": "上节已讲到事件的样本空间概念，它是所有样本点的集合。在一次随机试验中，事件样本点的出现是不确定的。定义一个与事件对应的变量 X，将 X 的某一次取值用 $x _ { i }$ 记作样本空间的样本点，此时的 X 就称为随机变量（random variable）， $x _ { i }$ 就称为随机变量的一个观测值（observed value）或者变量值（value of variable）。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.908,
+            0.873,
+            0.925
+          ],
+          "content": "随机变量是一种定义在样本空间 Ω 上的函数，是用数值来描述特定试验一切可能出现的"
+        }
+      ]
+    },
+    {
+      "page_idx": 74,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.408,
+            0.073,
+            0.599,
+            0.089
+          ],
+          "content": "第 3 章 概率与概率分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.834,
+            0.075,
+            0.878,
+            0.087
+          ],
+          "content": "·63·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.106,
+            0.884,
+            0.188
+          ],
+          "continues_prev": true,
+          "content": "结果，它的取值事先不能确定，结果的出现具有随机性。根据随机变量取值类型的不同，可以将其分为离散性随机变量和连续性随机变量。只能取有限个或可数个值的随机变量称为离散性随机变量（discrete random variable），可以在一个或多个区间取任何值的变量称为连续性随机变量（continuous random variable）。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.192,
+            0.884,
+            0.232
+          ],
+          "content": "研究随机变量主要是研究它的取值范围，即取值的概率。随机变量的取值与取这些值的概率之间的对应关系称为随机变量的概率分布（probability distribution）。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.163,
+            0.245,
+            0.486,
+            0.265
+          ],
+          "level": 2,
+          "content": "二、离散性随机变量的概率分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.278,
+            0.884,
+            0.317
+          ],
+          "content": "设离散性随机变量 X 所有可能的取值为 $X = x_{i} (i = 1, 2, \\cdots, n)$ ，对于任意一个 $x _ { i }$ 都有一个相应的概率为 $p_{i} (i = 1, 2, \\cdots, n)$ ，可用概率函数（probability function）表示为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.311,
+            0.322,
+            0.882,
+            0.339
+          ],
+          "content": "f (x) = P (X = x _ {i}) = p _ {i} \\quad (i = 1, 2, \\dots , n) \\tag {3-16}",
+          "image_source": "../../raw/pages_0065-0080/images/page_74_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.343,
+            0.884,
+            0.418
+          ],
+          "content": "式中， $x _ { i }$ 与 $p _ { i }$ 为数值，表示事件“变量 X 取值为 ${x_{i}}^{ 劵 }$ 的概率等于 $p _ { i ^ { \\circ } }$ 。这就是离散性随机变量X 的概率分布。并且，离散性随机变量概率分布具有 $p _ { i } { \\geq } 0$ 和 $\\sum_{i = 1}^{n}p_{i} = 1\\ (i = 1,\\ 2,\\ \\cdots,\\ n)$ 的性质。离散性随机变量的概率分布也可用表格的形式表示，如表 3-3 所示。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.454,
+            0.884,
+            0.498
+          ],
+          "content": "| 变量($x_i$) | $x_1$ | $x_2$ | ... | $x_i$ | ... | $x_n$ |\n| --- | --- | --- | --- | --- | --- | --- |\n| 概率($p_i$) | $p_1$ | $p_2$ | ... | $p_i$ | ... | $p_n$ |",
+          "captions": [
+            {
+              "bbox": [
+                0.368,
+                0.436,
+                0.638,
+                0.451
+              ],
+              "content": "表 3-3 离散性随机变量的概率分布"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0065-0080/images/page_74_table_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.511,
+            0.884,
+            0.549
+          ],
+          "content": "一般离散性随机变量，如 n 粒棉花种子的发芽数、n 枚种蛋的出雏数、n 尾鱼苗的成活数等，其概率分布均可用表 3-3 的格式表示出来。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.554,
+            0.884,
+            0.592
+          ],
+          "content": "例 **3-7** 投掷一枚质地均匀的骰子，向上一面所得点数 X 是一个离散性随机变量，求其出现点数的概率分布。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.597,
+            0.884,
+            0.651
+          ],
+          "content": "投掷一次骰子所得向上一面的点数有 6 种可能，即点数为 1～6 的任意值。由于骰子是均质的，1～6 每种结果出现的概率是相等的，即都为 $\\frac{1}{6}$ ，因而该随机变量的概率函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.319,
+            0.657,
+            0.682,
+            0.69
+          ],
+          "content": "f (x) = P (X = x _ {i}) = \\frac {1}{6} \\quad (i = 1, 2, \\dots , 6)",
+          "image_source": "../../raw/pages_0065-0080/images/page_74_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.693,
+            0.456,
+            0.71
+          ],
+          "content": "可能得到点数的概率分布如表 3-4 所示。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.747,
+            0.884,
+            0.791
+          ],
+          "content": "| 可能得到向上一面的点数($x_i$) | 1 | 2 | 3 | 4 | 5 | 6 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 概率($p_i$) | 1/6 | 1/6 | 1/6 | 1/6 | 1/6 | 1/6 |",
+          "captions": [
+            {
+              "bbox": [
+                0.291,
+                0.729,
+                0.715,
+                0.744
+              ],
+              "content": "表 3-4 投掷一枚质地均匀骰子可能得到点数的概率分布"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0065-0080/images/page_74_table_16.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.163,
+            0.813,
+            0.556,
+            0.832
+          ],
+          "level": 2,
+          "content": "三、离散性随机变量的数学期望和方差"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.846,
+            0.884,
+            0.906
+          ],
+          "content": "与第二章介绍的平均数类似，随机变量的数学期望是对随机变量概率分布的一个概括性度量。离散性随机变量 X 的数学期望（mathematical expectation）是 X 所有可能取值 $x _ { i }   ( i { = } 1$ $2 , \\cdots , n )$ 与其相应概率 $p_{i} (i = 1, 2, \\cdots, n)$ 乘积之和，用 $\\mu$ 或 E（X）表示，即"
+        }
+      ]
+    },
+    {
+      "page_idx": 75,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.164,
+            0.088
+          ],
+          "content": "·64·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.088
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.416,
+            0.103,
+            0.872,
+            0.133
+          ],
+          "content": "\\mu = E (X) = \\sum_ {i} x _ {i} p _ {i} \\tag {3-17}",
+          "image_source": "../../raw/pages_0065-0080/images/page_75_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.137,
+            0.874,
+            0.175
+          ],
+          "content": "数学期望又称为平均数或均值，它实质上是随机变量所有可能取值的加权平均，其权数就是取值的概率。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.18,
+            0.87,
+            0.198
+          ],
+          "content": "离散性随机变量 X 的方差等于 $( x _ { i } - \\mu ) ^ { 2 }$ 与相应概率 $p _ { i }$ 乘积之和，用 $\\sigma ^ { 2 }$ 或 D（X）表示，即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.386,
+            0.201,
+            0.872,
+            0.232
+          ],
+          "content": "\\sigma^ {2} = D (X) = \\sum_ {i} (x _ {i} - \\mu) ^ {2} p _ {i} \\tag {3-18}",
+          "image_source": "../../raw/pages_0065-0080/images/page_75_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.233,
+            0.768,
+            0.253
+          ],
+          "content": "离散性随机变量 X 的标准差等于方差的算术平方根，用 $\\sigma$ 或 ${ \\sqrt { D \\left( X \\right) } }$ 表示。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.256,
+            0.875,
+            0.294
+          ],
+          "content": "方差（或标准差）反映了随机变量 X 取值的变异程度。由于标准差的计量单位与随机变量相同，相对于方差更容易解释，在实际问题分析中常使用标准差。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.299,
+            0.874,
+            0.337
+          ],
+          "content": "例 **3-8** 对例 3-7 投掷一枚质地均匀骰子可能得到向上一面点数的概率分布，求其数学期望、方差和标准差。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.342,
+            0.576,
+            0.359
+          ],
+          "content": "根据表 3-4 数据，利用式（3-17）和式（3-18），有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.298,
+            0.364,
+            0.689,
+            0.401
+          ],
+          "content": "\\mu = E (X) = \\sum_ {i} x _ {i} p _ {i} = \\frac {1}{6} \\times (1 + 2 + 3 + 4 + 5 + 6) = 3. 5",
+          "image_source": "../../raw/pages_0065-0080/images/page_75_equation_10.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.182,
+            0.404,
+            0.804,
+            0.442
+          ],
+          "content": "\\sigma^ {2} = D (X) = \\sum_ {i} (x _ {i} - \\mu) ^ {2} p _ {i} = \\frac {1}{6} \\times [ (1 - 3. 5) ^ {2} + (2 - 3. 5) ^ {2} + \\dots + (6 - 3. 5) ^ {2} ] = 2. 9 1 7",
+          "image_source": "../../raw/pages_0065-0080/images/page_75_equation_11.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.434,
+            0.444,
+            0.553,
+            0.466
+          ],
+          "content": "\\sigma = \\sqrt {\\sigma^ {2}} = 1. 7 0 8",
+          "image_source": "../../raw/pages_0065-0080/images/page_75_equation_12.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.153,
+            0.478,
+            0.296,
+            0.497
+          ],
+          "level": 2,
+          "content": "四、二项分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.512,
+            0.875,
+            0.616
+          ],
+          "content": "二项分布（binomial distribution）是一种离散性随机变量的分布，生物学研究中经常碰到这种离散性的变量。对于植物、动物、微生物等生物体的某个性状，常常可以把其资料分成两个类型。例如，哺乳动物是雄性还是雌性、种子发芽与不发芽、穗子有芒与无芒、后代成活与死亡等。这样的结果只能是“非此即彼”两种情况，彼此构成对立事件，我们把这种“非此即彼”事件所构成的总体称为二项总体（binomial population），其概率分布称为二项分布。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.15,
+            0.63,
+            0.419,
+            0.648
+          ],
+          "level": 2,
+          "content": "（一）二项分布的概率函数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.664,
+            0.582,
+            0.68
+          ],
+          "content": "二项总体在进行重复抽样试验中具有如下共同特征。"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.112,
+            0.686,
+            0.874,
+            0.788
+          ],
+          "sub_type": "text",
+          "content": "（1）每次试验只有两个对立结果，如种子发芽或不发芽，分别记作事件 A 与 $\\overline { { A } }$ ，它们出现的概率分别为 $p$ 与 $q ( q = 1 - p )$ 。\n（2）试验具有重复性和独立性。重复性（repeatability）是指每次试验条件不变，在每次试验中事件 A 出现的概率皆为 $p \\circ$ 。独立性（independence）是指任何一次试验中事件 A 的出现与其余各次试验中出现何种结果无关。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.792,
+            0.874,
+            0.832
+          ],
+          "content": "设 X 是一个离散性随机变量，它的所有可能取值为 0，1，2，…，n，以 x 表示在 n 次试验中事件 A 出现的次数。其概率分布函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.406,
+            0.836,
+            0.872,
+            0.855
+          ],
+          "content": "P (X = x) = C _ {n} ^ {x} p ^ {x} q ^ {n - x} \\tag {3-19}",
+          "image_source": "../../raw/pages_0065-0080/images/page_75_equation_21.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.857,
+            0.875,
+            0.917
+          ],
+          "content": "式中，我们称 $P\\left(X=x\\right)$ 为随机变量 X 的二项分布，记作 $B ( n , p )$ 。之所以把这个分布称为二项分布，是因为 $C_{n}^{x}=\\frac{n!}{x!(n-x)!}$ 恰好等于 $( p + q ) ^ { \\textit { n } }$ 牛顿二项式（Newton binomial）展开式"
+        }
+      ]
+    },
+    {
+      "page_idx": 76,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.408,
+            0.073,
+            0.599,
+            0.089
+          ],
+          "content": "第 3 章 概率与概率分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.834,
+            0.075,
+            0.878,
+            0.087
+          ],
+          "content": "·65·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.106,
+            0.84,
+            0.122
+          ],
+          "continues_prev": true,
+          "content": "中含有 $p ^ { x }$ 的第 x+1 项，这一分布也称为伯努利分布（Bernouli distribution）。展开后有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.183,
+            0.128,
+            0.888,
+            0.163
+          ],
+          "content": "(p + q) ^ {n} = C _ {n} ^ {0} q ^ {n} + C _ {n} ^ {1} p ^ {1} q ^ {n - 1} + C _ {n} ^ {2} p ^ {2} q ^ {n - 2} + \\dots + C _ {n} ^ {x} p ^ {x} q ^ {n - x} + \\dots + C _ {n} ^ {n} p ^ {n} = \\sum_ {x = 0} ^ {n} C _ {n} ^ {x} p ^ {x} q ^ {n - x} \\tag {3-20}",
+          "image_source": "../../raw/pages_0065-0080/images/page_76_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.167,
+            0.477,
+            0.183
+          ],
+          "content": "由于 $(p + q)^n = 1$ ，式（3-20）可写为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.381,
+            0.188,
+            0.882,
+            0.224
+          ],
+          "content": "\\sum_ {x = 0} ^ {n} C _ {n} ^ {x} p ^ {x} q ^ {n - x} = \\sum_ {x = 0} ^ {n} P (X = x) = 1 \\tag {3-21}",
+          "image_source": "../../raw/pages_0065-0080/images/page_76_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.227,
+            0.882,
+            0.265
+          ],
+          "content": "若将以上试验重复 N 次，每次在 n 个试验中出现事件 A 为 x 次的理论次数则等于 N 乘以事件 A 出现 x 次的相应概率:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.395,
+            0.271,
+            0.882,
+            0.287
+          ],
+          "content": "\\text {理论次数} = N \\cdot P (X = x) \\tag {3-22}",
+          "image_source": "../../raw/pages_0065-0080/images/page_76_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.293,
+            0.826,
+            0.309
+          ],
+          "content": "二项分布的概率累积函数（probability cumulative function）可用式（3-23）表示:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.401,
+            0.314,
+            0.882,
+            0.35
+          ],
+          "content": "F (X = x _ {i}) = \\sum_ {x = 0} ^ {i} P (X = x _ {i}) \\tag {3-23}",
+          "image_source": "../../raw/pages_0065-0080/images/page_76_equation_9.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.161,
+            0.363,
+            0.429,
+            0.382
+          ],
+          "level": 2,
+          "content": "（二）二项分布概率的计算"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.396,
+            0.884,
+            0.457
+          ],
+          "content": "例 **3-9** 豌豆的红花纯合基因型和白花纯合基因型杂交后，在 $\\mathrm { F } _ { 2 }$ 代红花植株与白花植株出现的比率为 3∶1。若每次随机观察 4 株，共观察 100 次，问得红花为 0 株、1 株、2 株、3株和 4 株的概率各是多少？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.461,
+            0.884,
+            0.522
+          ],
+          "content": "根据题意，由于红花植株与白花植株在 $\\mathrm { F } _ { 2 }$ 代出现的比率为 3∶1，那么出现红花植株的概率 $p { = } 0 . 7 5$ ，出现白花植株的概率 $q { = } 0 . 2 5$ ，观察株数 $n { = } 4$ ，代入式（3-19），其计算结果如表 3-5 所示。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.559,
+            0.884,
+            0.715
+          ],
+          "content": "| 红花植株概率函数$f(x)$ | $C_{n}^{x}p^{x}q^{n-x}$ | $P(X=x)$ | $F(X=x)$ | $N\\cdot P(X=x)$ |\n| --- | --- | --- | --- | --- |\n| $f(0)$ | $C_{4}^{0}p^{0}q^{4}=1\\times 0.75^{0}\\times 0.25^{4}$ | 0.0039 | 0.0039 | 0.39 |\n| $f(1)$ | $C_{4}^{1}p^{1}q^{3}=4\\times 0.75^{1}\\times 0.25^{3}$ | 0.0469 | 0.0508 | 4.69 |\n| $f(2)$ | $C_{4}^{2}p^{2}q^{2}=6\\times 0.75^{2}\\times 0.25^{2}$ | 0.2109 | 0.2617 | 21.09 |\n| $f(3)$ | $C_{4}^{3}p^{3}q^{1}=4\\times 0.75^{3}\\times 0.25^{1}$ | 0.4219 | 0.6836 | 42.19 |\n| $f(4)$ | $C_{4}^{4}p^{4}q^{0}=1\\times 0.75^{4}\\times 0.25^{0}$ | 0.3164 | 1.0000 | 31.64 |\n| 总和 |  | 1.0000 |  | 100.00 |",
+          "captions": [
+            {
+              "bbox": [
+                0.252,
+                0.54,
+                0.744,
+                0.557
+              ],
+              "content": "表 3-5 观察 4 株出现红花植株的概率分布表 $(p=0.75, q=0.25)$"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0065-0080/images/page_76_table_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.727,
+            0.883,
+            0.764
+          ],
+          "content": "例 **3-10** 某批鸡种蛋的孵化率是 0.90，今从该批种蛋中每次任选 5 枚进行孵化，试计算孵出小鸡的各种可能概率。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.77,
+            0.884,
+            0.807
+          ],
+          "content": "在此问题中， $n=5, p=0.90, q=1-p=1-0.90=0.10$ ，每次孵化 5 枚种蛋得到小鸡数服从二项分布 B（5，0.90）。获得 0、1、2、3、4、5 只小鸡的概率分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.324,
+            0.812,
+            0.667,
+            0.831
+          ],
+          "content": "P (0) = C _ {5} ^ {0} p ^ {0} q ^ {5} = 1 \\times 0. 9 0 ^ {0} \\times 0. 1 0 ^ {5} = 0. 0 0 0 0 1",
+          "image_source": "../../raw/pages_0065-0080/images/page_76_equation_17.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.326,
+            0.836,
+            0.662,
+            0.854
+          ],
+          "content": "P (1) = C _ {5} ^ {1} p ^ {1} q ^ {4} = 5 \\times 0. 9 0 ^ {1} \\times 0. 1 0 ^ {4} = 0. 0 0 0 4 5",
+          "image_source": "../../raw/pages_0065-0080/images/page_76_equation_18.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.326,
+            0.859,
+            0.678,
+            0.877
+          ],
+          "content": "P (2) = C _ {5} ^ {2} p ^ {2} q ^ {3} = 1 0 \\times 0. 9 0 ^ {2} \\times 0. 1 0 ^ {3} = 0. 0 0 8 1 0",
+          "image_source": "../../raw/pages_0065-0080/images/page_76_equation_19.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.326,
+            0.882,
+            0.677,
+            0.9
+          ],
+          "content": "P (3) = C _ {5} ^ {3} p ^ {3} q ^ {2} = 1 0 \\times 0. 9 0 ^ {3} \\times 0. 1 0 ^ {2} = 0. 0 7 2 9 0",
+          "image_source": "../../raw/pages_0065-0080/images/page_76_equation_20.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.326,
+            0.905,
+            0.667,
+            0.924
+          ],
+          "content": "P (4) = C _ {5} ^ {4} p ^ {4} q ^ {1} = 5 \\times 0. 9 0 ^ {4} \\times 0. 1 0 ^ {1} = 0. 3 2 8 0 5",
+          "image_source": "../../raw/pages_0065-0080/images/page_76_equation_21.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 77,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.164,
+            0.087
+          ],
+          "content": "·66·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.087
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.322,
+            0.105,
+            0.664,
+            0.125
+          ],
+          "content": "P (5) = C _ {5} ^ {5} p ^ {5} q ^ {0} = 1 \\times 0. 9 0 ^ {5} \\times 0. 1 0 ^ {0} = 0. 5 9 0 4 9",
+          "image_source": "../../raw/pages_0065-0080/images/page_77_equation_2.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.15,
+            0.127,
+            0.82,
+            0.164
+          ],
+          "content": "F (X = x) = \\sum_ {x = 0} ^ {5} C _ {n} ^ {x} p ^ {x} q ^ {n - x} = 0. 0 0 0 0 1 + 0. 0 0 0 4 5 + 0. 0 0 8 1 0 + 0. 0 7 2 9 0 + 0. 3 2 8 0 5 + 0. 5 9 0 4 9 = 1",
+          "image_source": "../../raw/pages_0065-0080/images/page_77_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.168,
+            0.75,
+            0.185
+          ],
+          "content": "例 **3-11** 某小麦品种在田间出现自然变异植株的概率为 0.0045，试计算:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.149,
+            0.19,
+            0.797,
+            0.228
+          ],
+          "sub_type": "text",
+          "content": "（1）调查 100 株，获得两株或两株以上变异植株的概率是多少？\n（2）期望有 0.99 的概率获得 1 株或 1 株以上的变异植株，至少应调查多少株？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.233,
+            0.871,
+            0.27
+          ],
+          "content": "本例中，出现变异植株的概率 $p = 0.0045$ ，出现非变异植株的概率 $q = 1 - p = 1 - 0.0045 =$ 0.9955，n=100。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.276,
+            0.542,
+            0.293
+          ],
+          "content": "（1）获得两株或两株以上变异植株的概率计算:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.298,
+            0.437,
+            0.314
+          ],
+          "content": "获得 0 株、1 株变异植株的概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.291,
+            0.319,
+            0.697,
+            0.339
+          ],
+          "content": "P (0) = C _ {1 0 0} ^ {0} p ^ {0} q ^ {1 0 0} = 1 \\times 0. 0 0 4 5 ^ {0} \\times 0. 9 9 5 5 ^ {1 0 0} = 0. 6 3 7 0",
+          "image_source": "../../raw/pages_0065-0080/images/page_77_equation_11.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.291,
+            0.342,
+            0.695,
+            0.362
+          ],
+          "content": "P (1) = C _ {1 0 0} ^ {1} p ^ {1} q ^ {9 9} = 1 0 0 \\times 0. 0 0 4 5 ^ {1} \\times 0. 9 9 5 5 ^ {9 9} = 0. 2 8 7 9",
+          "image_source": "../../raw/pages_0065-0080/images/page_77_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.365,
+            0.873,
+            0.403
+          ],
+          "content": "由于 $x=0, x=1, x=2, \\cdots, x=100$ 是互斥事件，且构成一个完全事件系，故得到两株或两株以上变异植株的概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.25,
+            0.41,
+            0.735,
+            0.426
+          ],
+          "content": "P (x \\geqslant 2) = 1 - P (0) - P (1) = 1 - 0. 6 3 7 0 - 0. 2 8 7 9 = 0. 0 7 5 1",
+          "image_source": "../../raw/pages_0065-0080/images/page_77_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.431,
+            0.806,
+            0.45
+          ],
+          "content": "（2）调查的株数 n 应满足 $P\\left(0\\right)=1-0.99=0.01$ ，即满足 $P\\left(0\\right)=C_{n}^{0}p^{0}q^{n}=0.01$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.454,
+            0.271,
+            0.47
+          ],
+          "content": "对于本例，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.435,
+            0.476,
+            0.551,
+            0.492
+          ],
+          "content": "0. 9 9 5 5 ^ {n} = 0. 0 1",
+          "image_source": "../../raw/pages_0065-0080/images/page_77_equation_17.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.42,
+            0.497,
+            0.567,
+            0.515
+          ],
+          "content": "n \\lg 0. 9 9 5 5 = \\lg 0. 0 1",
+          "image_source": "../../raw/pages_0065-0080/images/page_77_equation_18.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.334,
+            0.52,
+            0.653,
+            0.556
+          ],
+          "content": "n = \\frac {\\lg 0 . 0 1}{\\lg 0 . 9 9 5 5} = \\frac {- 2}{- 0 . 0 0 1 9 5 9} \\approx 1 0 2 1 (\\text {株})",
+          "image_source": "../../raw/pages_0065-0080/images/page_77_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.562,
+            0.783,
+            0.579
+          ],
+          "content": "因此，期望有 0.99 的概率得到 1 株或 1 株以上变异植株至少应调查 1021 株。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.15,
+            0.593,
+            0.554,
+            0.612
+          ],
+          "level": 2,
+          "content": "（三）二项分布的形状、数学期望与方差"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.627,
+            0.722,
+            0.645
+          ],
+          "content": "1.二项分布的形状 二项分布的形状是由 n 和 p 两个参数决定的。"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.112,
+            0.649,
+            0.874,
+            0.709
+          ],
+          "sub_type": "text",
+          "content": "（1）当 $p$ 值较小且 n 值不大时，图形是偏倚的。随着 n 值增大，分布逐渐趋于对称，如图 3-1 所示。\n（2）当 p 值趋于 0.5 时，分布趋于对称，如图 3-2 所示。"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.163,
+            0.717,
+            0.494,
+            0.907
+          ],
+          "sub_type": "line",
+          "content": "| x | n=10 | n=50 | n=100 |\n|---|---|---|---|\n| 0 | ~0.34 | 0 | 0 |\n| 1 | ~0.39 | ~0.03 | ~0.03 |\n| 2 | ~0.20 | ~0.07 | ~0.07 |\n| 3 | ~0.14 | ~0.14 | ~0.01 |\n| 4 | ~0.06 | ~0.18 | ~0.02 |\n| 5 | ~0.01 | ~0.18 | ~0.04 |\n| 6 | 0 | ~0.15 | ~0.06 |\n| 7 | 0 | ~0.10 | ~0.08 |\n| 8 | 0 | ~0.07 | ~0.12 |\n| 9 | 0 | ~0.04 | ~0.13 |\n| 10 | 0 | ~0.02 | ~0.13 |\n| 11 | 0 | ~0.01 | ~0.12 |\n| 12 | 0 | ~0.01 | ~0.10 |\n| 13 | 0 | 0 | ~0.08 |\n| 14 | 0 | 0 | ~0.06 |\n| 15 | 0 | 0 | ~0.04 |\n| 16 | 0 | 0 | ~0.03 |\n| 17 | 0 | 0 | ~0.02 |\n| 18 | 0 | 0 | ~0.01 |\n| 19 | 0 | 0 | ~0.01 |\n| 20 | 0 | 0 | ~0.01 |",
+          "captions": [
+            {
+              "bbox": [
+                0.224,
+                0.91,
+                0.439,
+                0.925
+              ],
+              "content": "图 3-1 n 值不同的二项分布"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0065-0080/images/page_77_chart_26.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.523,
+            0.73,
+            0.825,
+            0.906
+          ],
+          "sub_type": "line",
+          "content": "| x | f(x)::p=0.3 | f(x)::p=0.5 | f(x)::p=0.7 |\n|---|---|---|---|\n| 0 | ~0.13 | ~0.02 | ~0.02 |\n| 1 | ~0.31 | ~0.09 | ~0.02 |\n| 2 | ~0.34 | ~0.22 | ~0.04 |\n| 3 | — | ~0.30 | ~0.16 |\n| 4 | — | ~0.22 | ~0.33 |\n| 5 | — | ~0.09 | ~0.31 |\n| 6 | — | ~0.02 | ~0.11 |",
+          "captions": [
+            {
+              "bbox": [
+                0.561,
+                0.909,
+                0.776,
+                0.926
+              ],
+              "content": "图 3-2 p 值不同的二项分布"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0065-0080/images/page_77_chart_28.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 78,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.408,
+            0.073,
+            0.599,
+            0.088
+          ],
+          "content": "第 3 章 概率与概率分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.834,
+            0.075,
+            0.878,
+            0.087
+          ],
+          "content": "·67·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.106,
+            0.884,
+            0.144
+          ],
+          "content": "2.二项分布的数学期望与方差 若随机变量 X 服从二项分布，则有二项分布的数学期望（平均数）为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.388,
+            0.147,
+            0.882,
+            0.169
+          ],
+          "content": "\\mu_ {x} = E (X) = \\sum x _ {i} P (x _ {i}) = n p \\tag {3-24}",
+          "image_source": "../../raw/pages_0065-0080/images/page_78_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.172,
+            0.319,
+            0.188
+          ],
+          "content": "二项分布的方差为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.359,
+            0.193,
+            0.882,
+            0.215
+          ],
+          "content": "\\sigma^ {2} = D (X) = \\sum (x _ {i} - \\mu) ^ {2} P (x _ {i}) = n p q \\tag {3-25}",
+          "image_source": "../../raw/pages_0065-0080/images/page_78_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.219,
+            0.337,
+            0.235
+          ],
+          "content": "二项分布的标准差为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.442,
+            0.239,
+            0.882,
+            0.262
+          ],
+          "content": "\\sigma = \\sqrt {\\sigma^ {2}} = \\sqrt {n p q} \\tag {3-26}",
+          "image_source": "../../raw/pages_0065-0080/images/page_78_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.266,
+            0.884,
+            0.304
+          ],
+          "content": "例 **3-12** 求例 3-9 豌豆的红花纯合基因型和白花纯合基因型杂交后 $\\mathrm { F } _ { 2 }$ 代红花植株的数学期望、方差和标准差。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.309,
+            0.884,
+            0.348
+          ],
+          "content": "例 3-9 中对红花植株与白花植株的观察， $n=4,\\ p=0.75$ ，由式（3-24）、式（3-25）和式（3-26）可求得红花株数出现的数学期望（平均数）、方差和标准差分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.382,
+            0.353,
+            0.613,
+            0.37
+          ],
+          "content": "\\mu_ {x} = n p = 4 \\times 0. 7 5 = 3. 0 (\\text {株})",
+          "image_source": "../../raw/pages_0065-0080/images/page_78_equation_10.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.342,
+            0.373,
+            0.655,
+            0.392
+          ],
+          "content": "\\sigma^ {2} = n p q = 4 \\times 0. 7 5 \\times 0. 2 5 = 0. 7 5 \\text {(株} ^ {2})",
+          "image_source": "../../raw/pages_0065-0080/images/page_78_equation_11.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.335,
+            0.394,
+            0.666,
+            0.415
+          ],
+          "content": "\\sigma = \\sqrt {n p q} = \\sqrt {4 \\times 0 . 7 5 \\times 0 . 2 5} = 0. 8 6 6 0 (\\text {株})",
+          "image_source": "../../raw/pages_0065-0080/images/page_78_equation_12.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.164,
+            0.428,
+            0.305,
+            0.447
+          ],
+          "level": 2,
+          "content": "五、泊松分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.46,
+            0.884,
+            0.563
+          ],
+          "content": "在生物学研究中，有许多事件出现的概率很小，而样本容量或试验次数却很大，即有很小的 p 值和很大的 n 值。这时，二项分布就变成另外一种特殊的分布，即泊松分布（Poisson distribution）。例如，显微镜视野内染色体有变异的细胞计数、由突变而引起的遗传病患者数的分布、田间小区内出现变异植株的计数、作物种子田内杂草的计数、单位容积的水或牛奶中细菌的数目、家畜产怪胎数、样方内少见植物的个体数等都属于泊松分布。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.569,
+            0.697,
+            0.585
+          ],
+          "content": "泊松分布也是一种离散性随机变量的分布，其分布的概率函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.429,
+            0.59,
+            0.882,
+            0.625
+          ],
+          "content": "P (X = x) = \\frac {\\mathrm{e} ^ {- \\lambda} \\lambda^ {x}}{x !} \\tag {3-27}",
+          "image_source": "../../raw/pages_0065-0080/images/page_78_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.627,
+            0.168,
+            0.643
+          ],
+          "content": "且有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.357,
+            0.649,
+            0.882,
+            0.687
+          ],
+          "content": "\\sum_ {x = 0} ^ {\\infty} P (X = x) = \\mathrm{e} ^ {- \\lambda} \\sum_ {x = 0} ^ {\\infty} \\frac {\\lambda^ {x}}{x !} = \\mathrm{e} ^ {- \\lambda} \\mathrm{e} ^ {\\lambda} = 1 \\tag {3-28}",
+          "image_source": "../../raw/pages_0065-0080/images/page_78_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.691,
+            0.881,
+            0.726
+          ],
+          "content": "式（3-27）和式（3-28）中，λ 为参数， $\\lambda  =  np ; \\mathrm { ~ e ~ }$ 为自然对数底，近似值为 2.71828； $x { = } 0$ ，1，2……"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.733,
+            0.489,
+            0.75
+          ],
+          "content": "泊松分布的数学期望、方差、标准差为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.446,
+            0.756,
+            0.882,
+            0.772
+          ],
+          "content": "\\mu = E (X) = \\lambda \\tag {3-29}",
+          "image_source": "../../raw/pages_0065-0080/images/page_78_equation_21.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.445,
+            0.776,
+            0.882,
+            0.793
+          ],
+          "content": "\\sigma^ {2} = D (X) = \\lambda \\tag {3-30}",
+          "image_source": "../../raw/pages_0065-0080/images/page_78_equation_22.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.452,
+            0.798,
+            0.881,
+            0.818
+          ],
+          "content": "\\sigma = \\sqrt {\\sigma^ {2}} = \\sqrt {\\lambda} \\tag {3-31}",
+          "image_source": "../../raw/pages_0065-0080/images/page_78_equation_23.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.821,
+            0.884,
+            0.86
+          ],
+          "content": "从式（3-29）和式（3-30）可以知道，泊松分布的参数 λ 不但是其分布的平均数 $\\mu ,$ ，而且还是方差 $\\sigma ^ { 2 } ,$ 。我们把具有参数 λ 的泊松分布记作 P（λ）。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.865,
+            0.884,
+            0.926
+          ],
+          "content": "泊松分布的形状由参数 λ 所确定。当 λ 较小时，泊松分布是偏倚的，如图 3-3 所示。随λ 增大，分布逐渐对称。当 λ 无限增大时，泊松分布逐渐逼近正态分布 N（λ，λ）。当 $\\lambda { = } 2 0$时，泊松分布基本逼近正态分布 N（λ，λ）；当 $\\lambda { = } 3 0$ 时，泊松分布已和正态分布非常接近；"
+        }
+      ]
+    },
+    {
+      "page_idx": 79,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.163,
+            0.087
+          ],
+          "content": "·68·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.537,
+            0.087
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.114,
+            0.107,
+            0.44,
+            0.31
+          ],
+          "sub_type": "line",
+          "content": "| x | \\(\\lambda=0.5\\) | \\(\\lambda=1.5\\) | \\(\\lambda=2.5\\) |\n|---|---|---|---|\n| 0 | ~0.58 | ~0.24 | ~0.11 |\n| 1 | ~0.33 | ~0.33 | ~0.22 |\n| 2 | ~0.11 | ~0.25 | ~0.26 |\n| 3 | ~0.02 | ~0.11 | ~0.21 |\n| 4 | — | ~0.04 | ~0.14 |\n| 5 | — | ~0.01 | ~0.09 |\n| 6 | — | — | ~0.05 |\n| 7 | — | — | ~0.02 |\n| 8 | — | — | ~0.01 |",
+          "captions": [
+            {
+              "bbox": [
+                0.169,
+                0.314,
+                0.383,
+                0.329
+              ],
+              "content": "图 3-3 λ 值不同的泊松分布"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0065-0080/images/page_79_chart_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.45,
+            0.106,
+            0.872,
+            0.144
+          ],
+          "content": "当 $\\lambda { = } 5 0$ 时，这两种分布除一种是离散性的和一种是连续性的之外，已没有多大区别。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.449,
+            0.149,
+            0.874,
+            0.34
+          ],
+          "content": "泊松分布在生物学研究中有广泛的应用:①在生物学研究中，有许多小概率事件，其发生概率 $p$往往小于 0.1，甚至小于 0.01。例如，两对交换率为0.1 的连锁基因在 $\\mathrm { F } _ { 2 }$ 代出现纯合新个体的概率只有$2 \\times 0.05^{2} = 0.0050$ ；自花授粉植物出现天然异交或突变的概率往往小于 0.01；等等。对于这些小概率事件，都可以用泊松分布描述其概率分布，从而做出需要的频率预期。②由于泊松分布是描述小概率事件的，因而二项分布当 $p { \\leq } 0 . 1$ 和 $n p { < } 5$ 时，可用泊"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.344,
+            0.241,
+            0.36
+          ],
+          "content": "松分布来近似。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.365,
+            0.875,
+            0.426
+          ],
+          "content": "例 **3-13** 用显微镜检查某食品样本内结核菌的数目，对在某些视野内各小方格中的细菌数目加以计数，然后按不同的细菌数把格子分类，记录每类中的格子数目，结果如表 3-6 所示。试计算各种细菌数的理论格子数。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.114,
+            0.463,
+            0.875,
+            0.721
+          ],
+          "content": "| 细菌数(x) | 实际格子数 | P(X=x) | 理论格子数 |\n| --- | --- | --- | --- |\n| 0 | 5 | 0.0506 | 5.97 |\n| 1 | 19 | 0.1511 | 17.83 |\n| 2 | 26 | 0.2253 | 26.59 |\n| 3 | 26 | 0.2240 | 26.43 |\n| 4 | 21 | 0.1671 | 19.72 |\n| 5 | 13 | 0.0997 | 11.76 |\n| 6 | 5 | 0.0496 | 5.85 |\n| 7 | 1 | 0.0211 | 2.49 |\n| 8 | 1 | 0.0079 | 0.93 |\n| 9 | 1 | 0.0026 | 0.31 |\n| 合计 | 118 | 0.9990 | 117.88 |",
+          "captions": [
+            {
+              "bbox": [
+                0.332,
+                0.444,
+                0.654,
+                0.459
+              ],
+              "content": "表 3-6 食品样本内结核菌计数的泊松分布"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0065-0080/images/page_79_table_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.732,
+            0.874,
+            0.77
+          ],
+          "content": "各小方格中出现细菌数是小概率事件，服从泊松分布。现从样本数据中计算出每个格子中的细菌平均数:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.263,
+            0.776,
+            0.721,
+            0.814
+          ],
+          "content": "\\bar {x} = \\frac {\\sum f x}{n} = \\frac {1}{1 1 8} \\times (0 \\times 5 + 1 \\times 1 9 + \\dots + 9 \\times 1) = 2. 9 8 3 1 (\\text {个})",
+          "image_source": "../../raw/pages_0065-0080/images/page_79_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.817,
+            0.875,
+            0.879
+          ],
+          "content": "用样本平均数 x 估计总体平均数 $\\mu ,$ ，即 λ，代入式（3-27），计算当 $x = 0, 1, 2, \\cdots, 9$时的概率 $P\\left(X=x\\right)$ ），填入表 3-6 第三列中。根据理论次数= $N \\cdot P (X = x)$ 计算各个细菌数的理论格子数，结果列入表 3-6 第四列。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.883,
+            0.874,
+            0.922
+          ],
+          "content": "例 **3-14** 例 3-11 数据中小麦品种中出现变异植株的概率 $p = 0.0045$ ，可以看成小概率事件。试用泊松分布求解例 3-11 所提的两个问题。"
+        }
+      ]
+    },
+    {
+      "page_idx": 80,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.408,
+            0.073,
+            0.601,
+            0.089
+          ],
+          "content": "第 3 章 概率与概率分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.834,
+            0.075,
+            0.88,
+            0.088
+          ],
+          "content": "·69·"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.161,
+            0.106,
+            0.264,
+            0.122
+          ],
+          "level": 2,
+          "content": "（1）先求 λ:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.392,
+            0.128,
+            0.616,
+            0.144
+          ],
+          "content": "\\lambda = n p = 1 0 0 \\times 0. 0 0 4 5 = 0. 4 5",
+          "image_source": "../../raw/pages_0081-0096/images/page_80_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.149,
+            0.287,
+            0.166
+          ],
+          "content": "代入式（3-27），有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.361,
+            0.172,
+            0.648,
+            0.209
+          ],
+          "content": "P (0) = \\frac {\\mathrm{e} ^ {- 0 . 4 5} 0 . 4 5 ^ {0}}{0 !} = \\mathrm{e} ^ {- 0. 4 5} = 0. 6 3 7 6",
+          "image_source": "../../raw/pages_0081-0096/images/page_80_equation_5.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.34,
+            0.215,
+            0.669,
+            0.251
+          ],
+          "content": "P (1) = \\frac {\\mathrm{e} ^ {- 0 . 4 5} 0 . 4 5 ^ {1}}{1 !} = 0. 4 5 \\times \\mathrm{e} ^ {- 0. 4 5} = 0. 2 8 6 9",
+          "image_source": "../../raw/pages_0081-0096/images/page_80_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.257,
+            0.604,
+            0.274
+          ],
+          "content": "所以，调查 100 株获得两株或两株以上变异植株的概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.255,
+            0.279,
+            0.752,
+            0.295
+          ],
+          "content": "P (x \\geqslant 2) = 1 - P (0) - P (1) = 1 - 0. 6 3 7 6 - 0. 2 8 6 9 = 0. 0 7 5 5",
+          "image_source": "../../raw/pages_0081-0096/images/page_80_equation_8.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.161,
+            0.301,
+            0.383,
+            0.317
+          ],
+          "level": 2,
+          "content": "（2）调查的株数 n 应满足:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.438,
+            0.322,
+            0.569,
+            0.337
+          ],
+          "content": "\\mathrm{e} ^ {- \\lambda} = \\mathrm{e} ^ {- n p} = 0. 0 1",
+          "image_source": "../../raw/pages_0081-0096/images/page_80_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.344,
+            0.206,
+            0.36
+          ],
+          "content": "因此，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.279,
+            0.366,
+            0.638,
+            0.402
+          ],
+          "content": "n = \\frac {\\lg 0 . 0 1}{- p \\mathrm{lge}} = \\frac {- 2}{- 0 . 0 0 4 5 \\times 0 . 4 3 4 2 9} = 1 0 2 3 (\\text {株})",
+          "image_source": "../../raw/pages_0081-0096/images/page_80_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.408,
+            0.793,
+            0.447
+          ],
+          "content": "上述结果与例 3-10 的结果很接近，数值的差异是由于计算过程中小数位数精度不一致所产生的。"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.813,
+            0.373,
+            0.876,
+            0.419
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.807,
+                0.421,
+                0.881,
+                0.435
+              ],
+              "content": "超几何分布"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_80_image_14.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.348,
+            0.472,
+            0.644,
+            0.493
+          ],
+          "level": 2,
+          "content": "第三节 连续性概率分布"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.164,
+            0.516,
+            0.351,
+            0.535
+          ],
+          "level": 2,
+          "content": "一、概率密度函数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.549,
+            0.884,
+            0.674
+          ],
+          "content": "回顾上一节有关“随机变量和概率分布”的定义，连续性随机变量可以直观地理解为“可以在某一个或多个区间内取任意数值的随机变量”，在数轴上它的所有取值充满一个或多个区间，因此它不是计数数据，而是计量数据。这是连续性随机变量与离散性随机变量的本质区别，也决定了这两类随机变量概率的不同:对一个离散性随机变量，可以计算其某一特定取值的概率；而对连续性随机变量，必须在某一区域内考虑相应的概率问题。与离散性随机变量概率分布相对应，连续性随机变量主要是通过概率密度函数来描述不同范围内取值的概率。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.679,
+            0.884,
+            0.74
+          ],
+          "content": "当试验数据为连续性随机变量时，一般通过分组整理成频数分布表（表 2-12）。如果从总体中抽取样本的容量 n 相当大，则频率分布就趋于稳定，我们将它近似地看成总体的概率分布。下面通过频率分布曲线进行讨论。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.744,
+            0.885,
+            0.913
+          ],
+          "content": "根据表 2-11 计算鲢鱼体长的<u>频率</u>密度 $\\left( \\frac{ 频率 }{ 组距 } \\right)$ 作直方图，如图 3-4 所示。在直方图中，同一组内的频率密度是相等的，每一个直方图的矩形面积就表示该组的频率，直方图中每一个小矩形的上边中点连接起来就得到一条阶梯形曲线。可以想象，当样本容量 n 不断增加时，相应的组距不断减少，那么直方条越来越多、越来越细，阶梯形曲线逐渐趋于光滑。当 n 无限大时，频率转化为概率，频率密度就转化为概率密度，阶梯形曲线也就转化为一条光滑的连续曲线，这时频率密度分布也就转化为概率密度分布了，此曲线称为连续性随机变量 X 的概率密度曲线（probability density curve），如图 3-5 所示。表示这一曲线的函数 f（x）称为连"
+        }
+      ]
+    },
+    {
+      "page_idx": 81,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.164,
+            0.087
+          ],
+          "content": "·70·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.087
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.106,
+            0.633,
+            0.122
+          ],
+          "continues_prev": true,
+          "content": "续性随机变量 X 的概率密度函数（probability density function）。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.127,
+            0.874,
+            0.166
+          ],
+          "content": "对于一个连续性随机变量 X，取值于某一区间 $( x _ { 1 } , x _ { 2 } )$ 内的概率即图 3-5 中阴影部分的面积，这一面积可表示为函数 $f \\left( x \\right)$ 的积分，即"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.114,
+            0.177,
+            0.468,
+            0.37
+          ],
+          "sub_type": "histogram",
+          "content": "| 鲢鱼体长 (cm) | 频率密度 |\n| --- | --- |\n| 35~40 | ~0.003 |\n| 40~45 | ~0.005 |\n| 45~50 | ~0.022 |\n| 50~55 | ~0.037 |\n| 55~60 | ~0.053 |\n| 60~65 | ~0.032 |\n| 65~70 | ~0.022 |\n| 70~75 | ~0.008 |\n| 75~80 | ~0.009 |\n| 80~85 | ~0.003 |\n| 85~90 | ~0.001 |",
+          "captions": [
+            {
+              "bbox": [
+                0.156,
+                0.374,
+                0.427,
+                0.388
+              ],
+              "content": "图 3-4 鲢鱼体长的频率密度分布图"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_81_chart_4.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.481,
+            0.189,
+            0.871,
+            0.37
+          ],
+          "sub_type": "histogram",
+          "content": "| X | f(x) |\n| --- | --- |\n| 0 | ~0.05 |\n| \\(x_{1}\\) | ~0.65 |\n| \\(x_{2}\\) | ~0.85 |\n| \\(+\\infty\\) | ~0.05 |",
+          "captions": [
+            {
+              "bbox": [
+                0.548,
+                0.374,
+                0.82,
+                0.388
+              ],
+              "content": "图 3-5 鲢鱼体长的概率密度分布图"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_81_chart_6.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.361,
+            0.401,
+            0.871,
+            0.429
+          ],
+          "content": "P (x _ {1} <   X = x \\leqslant x _ {2}) = \\int_ {x _ {1}} ^ {x _ {2}} f (x) \\mathrm{d} x \\tag {3-32}",
+          "image_source": "../../raw/pages_0081-0096/images/page_81_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.434,
+            0.874,
+            0.472
+          ],
+          "content": "式（3-32）即连续性随机变量概率密度函数的表达式。由此可见，连续性随机变量概率的分布由概率密度函数 f（x）所确定。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.478,
+            0.874,
+            0.515
+          ],
+          "content": "对于随机变量 X 在区间 $( - \\infty , + \\infty )$ 内进行抽样，事件 $\\text{\" } - \\infty  <  X  =  x  <  + \\infty  \\text{\" }$ 为必然事件，所以有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.324,
+            0.521,
+            0.872,
+            0.547
+          ],
+          "content": "P (- \\infty <   X = x \\leqslant + \\infty) = \\int_ {- \\infty} ^ {+ \\infty} f (x) \\mathrm{d} x = 1 \\tag {3-33}",
+          "image_source": "../../raw/pages_0081-0096/images/page_81_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.552,
+            0.704,
+            0.568
+          ],
+          "content": "式（3-33）表示概率密度函数 $f \\left( x \\right)$ 曲线与 x 轴所围成的面积为 1。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.153,
+            0.581,
+            0.294,
+            0.6
+          ],
+          "level": 2,
+          "content": "二、正态分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.612,
+            0.875,
+            0.781
+          ],
+          "content": "正态分布（normal distribution）也称为高斯分布（Gauss distribution），是一种连续性随机变量的概率分布。它的分布状态是多数变量都围绕在平均值左右，由平均值到分布的两侧，变量数减少。正态分布是一种在统计理论和应用上最重要的分布。试验误差的分布一般服从于这种分布，许多生物现象的计量数据均近似服从这种分布。同时，在一定条件下，正态分布还可作为离散性随机变量或其他连续性随机变量的近似分布。例如，当 n 相当大或 $p$ 与 $q$基本接近时，二项分布接近于正态分布；当 λ 较大时，泊松分布也接近正态分布。有些总体虽然并不服从正态分布，但从总体中随机抽取的样本容量相当大时，其样本平均数的分布也近似于正态分布。这样，就可以用正态分布代替其他分布进行概率计算和统计推断。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.15,
+            0.796,
+            0.464,
+            0.814
+          ],
+          "level": 2,
+          "content": "（一）正态分布的概率密度函数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.829,
+            0.796,
+            0.845
+          ],
+          "content": "正态分布的概率密度函数可由二项分布的概率函数在 $n   \\to   \\infty$ 时导出，其方程为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.399,
+            0.85,
+            0.871,
+            0.892
+          ],
+          "content": "f (x) = \\frac {1}{\\sigma \\sqrt {2 \\pi}} \\mathrm{e} ^ {- \\frac {1}{2} \\left(\\frac {x - \\mu}{\\sigma}\\right) ^ {2}} \\tag {3-34}",
+          "image_source": "../../raw/pages_0081-0096/images/page_81_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.897,
+            0.874,
+            0.914
+          ],
+          "content": "式中， $f \\left( x \\right)$ 为正态分布的概率密度函数，表示随机变量 X 的某一 x 值出现的概率密度函数"
+        }
+      ]
+    },
+    {
+      "page_idx": 82,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.408,
+            0.073,
+            0.601,
+            0.089
+          ],
+          "content": "第 3 章 概率与概率分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.834,
+            0.075,
+            0.88,
+            0.088
+          ],
+          "content": "·71·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.106,
+            0.881,
+            0.144
+          ],
+          "continues_prev": true,
+          "content": "值； $\\mu$ 为总体平均数； $\\sigma$ 为总体标准差； $\\pi$ 为圆周率，近似值为 3.1415926；e 为自然对数底，近似值为 2.71828。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.149,
+            0.884,
+            0.21
+          ],
+          "content": "正态分布记为 $N \\left( \\mu , \\sigma ^ { 2 } \\right)$ ），表示具有平均数为 $\\mu _ { \\gamma }$ 、方差为 $\\sigma ^ { 2 }$ 的正态分布。 $\\mu$ 和 $\\sigma$ 是正态分布的两个主要参数，一个正态分布完全由参数 $\\mu$ 和 $\\sigma$ 来决定。正态分布曲线（normal distribution curve）如图 3-6 所示。"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.2,
+            0.219,
+            0.816,
+            0.372
+          ],
+          "sub_type": "violin",
+          "content": "| Interval | Percentage |\n| --- | --- |\n| \\(\\mu - 1\\sigma\\) to μ | 68.26% |\n| \\(\\mu - 2\\sigma\\) to μ + 2σ | 95.46% |",
+          "captions": [
+            {
+              "bbox": [
+                0.419,
+                0.374,
+                0.591,
+                0.39
+              ],
+              "content": "图 3-6 正态分布曲线"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_82_chart_4.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.161,
+            0.402,
+            0.387,
+            0.421
+          ],
+          "level": 2,
+          "content": "（二）正态分布的特征"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.439,
+            0.889,
+            0.694
+          ],
+          "content": "正态分布具有以下特征:①当 $x   =   \\mu$ 时， $f \\left( x \\right)$ 有最大值 $\\frac { 1 } { \\sigma \\sqrt { 2 \\pi } }$ ，所以，正态分布曲线是以平均数 $\\mu$ 处为峰值的曲线。②当 $x { - } \\mu$ 的绝对值相等时， $f \\left( x \\right)$ 值也相等，所以正态分布是以 $\\mu$ 为中心向左右两侧对称的分布。 $\\textcircled{3}  \\frac { x {  一  } \\mu } { \\sigma }$ 的绝对值越大， $f \\left( x \\right)$ 值就越小，但 $f \\left( x \\right)$ 永远不会等于 0，所以正态分布以 $x$ 轴为渐近线，x 的取值区间为 $( - \\infty , + \\infty )$ 。④正态分布曲线完全由参数 $\\mu$ 和 $\\sigma$ 来决定。 $\\mu$ 确定正态分布曲线在 x 轴上的中心位置， $\\mu$ 减小，曲线左移；$\\mu$ 增大，曲线右移。 $\\sigma$ 确定正态分布曲线的展开程度， $\\sigma$ 越小，曲线展开程度越小，曲线越陡高； $\\sigma$ 越大，曲线展开程度越大，曲线越宽。不同 $\\mu$ 值和不同 σ 值的正态分布曲线比较见图 3-7 和图 3-8。⑤正态分布曲线在 $x { = } \\mu { \\pm } \\sigma$ 处各有一个拐点（knee point），曲线通过拐点时改变弯曲方向。⑥正态分布曲线的 x 在区间 $( - \\infty , + \\infty )$ 皆可取值，这样就构成了 $x$ 取值的完全事件系，因此，正态分布的概率密度曲线与渐近线 x 轴所围成的全部面积必然等于 1。"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.147,
+            0.74,
+            0.501,
+            0.836
+          ],
+          "sub_type": "violin",
+          "content": "| \\(\\mu\\) | Curve 1 (Peak) | Curve 2 (Peak) | Curve 3 (Peak) |\n| --- | --- | --- | --- |\n| -4 | ~0.05 | 0 | 0 |\n| -3 | ~0.25 | ~0.05 | 0 |\n| -2 | ~0.65 | ~0.25 | ~0.05 |\n| -1 | ~0.95 | ~0.65 | ~0.25 |\n| 0 | ~0.75 | ~0.95 | ~0.65 |\n| 1 | ~0.35 | ~0.75 | ~0.95 |\n| 2 | ~0.15 | ~0.35 | ~0.95 |\n| 3 | ~0.05 | ~0.15 | ~0.65 |\n| 4 | 0 | ~0.05 | ~0.35 |",
+          "captions": [
+            {
+              "bbox": [
+                0.153,
+                0.84,
+                0.486,
+                0.856
+              ],
+              "content": "图 3-7 $\\mu$ 值不同、 $\\sigma$ 值相同的 3 条正态曲线"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_82_chart_8.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.532,
+            0.701,
+            0.867,
+            0.837
+          ],
+          "sub_type": "violin",
+          "content": "| \\(\\mu\\) | \\(\\sigma=0.5\\) | \\(\\sigma=1.0\\) | \\(\\sigma=2.0\\) |\n| --- | --- | --- | --- |\n| -4 | 0 | ~0.02 | ~0.03 |\n| -3 | 0 | ~0.05 | ~0.08 |\n| -2 | 0 | ~0.12 | ~0.15 |\n| -1 | ~0.15 | ~0.25 | ~0.20 |\n| 0 | 1.0 | ~0.40 | ~0.22 |\n| 1 | ~0.15 | ~0.25 | ~0.20 |\n| 2 | 0 | ~0.12 | ~0.15 |\n| 3 | 0 | ~0.05 | ~0.10 |\n| 4 | 0 | 0 | ~0.05 |",
+          "captions": [
+            {
+              "bbox": [
+                0.529,
+                0.84,
+                0.86,
+                0.856
+              ],
+              "content": "图 3-8 $\\mu$ 值相同、 $\\sigma$ 值不同的 3 条正态曲线"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_82_chart_10.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.161,
+            0.868,
+            0.363,
+            0.887
+          ],
+          "level": 2,
+          "content": "（三）标准正态分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.901,
+            0.884,
+            0.92
+          ],
+          "content": "对于一个正态分布， $\\mu$ 确定了分布曲线的中心位置， $\\sigma$ 则确定了分布曲线的变异度。不"
+        }
+      ]
+    },
+    {
+      "page_idx": 83,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.164,
+            0.087
+          ],
+          "content": "·72·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.088
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.106,
+            0.874,
+            0.166
+          ],
+          "continues_prev": true,
+          "content": "同的正态分布有不同的 $\\mu$ 和 $\\sigma ,$ ，所以对 $N \\left( \\mu , \\sigma ^ { 2 } \\right)$ 来说不是一条曲线，而是一个曲线系统。为便于一般化应用，需将正态分布标准化（standardization）。令 $\\mu = 0 , \\sigma ^ { 2 } = 1$ ，则正态分布概率密度函数式（3-34）即可标准化为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.417,
+            0.171,
+            0.872,
+            0.21
+          ],
+          "content": "f (u) = \\frac {1}{\\sqrt {2 \\pi}} \\mathrm{e} ^ {- \\frac {1}{2} u ^ {2}} \\tag {3-35}",
+          "image_source": "../../raw/pages_0081-0096/images/page_83_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.214,
+            0.874,
+            0.232
+          ],
+          "content": "从几何意义上说，正态分布的标准化实质上是将坐标轴进行平移和尺度转换，使正态分布"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.114,
+            0.238,
+            0.468,
+            0.37
+          ],
+          "sub_type": "contour",
+          "content": "| \\(\\mu\\) | f(u) |\n| --- | --- |\n| -3 | ~0.01 |\n| -2 | ~0.08 |\n| -1 | ~0.25 |\n| 0 | ~0.37 |\n| 1 | ~0.25 |\n| 2 | ~0.08 |\n| 3 | ~0.01 |",
+          "captions": [
+            {
+              "bbox": [
+                0.188,
+                0.374,
+                0.393,
+                0.389
+              ],
+              "content": "图 3-9 标准正态分布曲线"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_83_chart_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.477,
+            0.235,
+            0.875,
+            0.382
+          ],
+          "content": "具有平均数 $\\mu { = } 0$ ，标准差 $\\sigma { = } 1$ 。将随机变量 u服从于 $\\mu = 0 , \\sigma ^ { 2 } = 1$ 的正态分布称为标准正态分布（standard normal distribution），又称为 u 分布（u-distribution），记作 N（0，1）。f（u）称为标准正态分布方程（standard normal distribution equation）或 u 分布方程（u-distribution equation），标准正态分布曲线见图 3-9。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.515,
+            0.387,
+            0.873,
+            0.404
+          ],
+          "content": "对于任何一个服从正态分布 $N \\left( \\mu , \\sigma ^ { 2 } \\right)$ 的"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.409,
+            0.426,
+            0.425
+          ],
+          "content": "随机变量 X，都可以进行标准化变换:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.455,
+            0.433,
+            0.872,
+            0.463
+          ],
+          "content": "u = \\frac {x - \\mu}{\\sigma} \\tag {3-36}",
+          "image_source": "../../raw/pages_0081-0096/images/page_83_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.467,
+            0.857,
+            0.484
+          ],
+          "content": "式中，u 为标准正态离差（standard normal deviate），它表示离开平均数 $\\mu$ 有几个标准差 $\\sigma _ { \\circ }$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.489,
+            0.874,
+            0.527
+          ],
+          "content": "标准正态分布的概率累积函数记作 $F \\mathrm { ~ } ( u )$ ，它是变量 u 小于某一定值 $u _ { i }$ 的概率，这需要对式（3-35）计算从-∞到 $u _ { i }$ 的定积分，即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.354,
+            0.533,
+            0.872,
+            0.557
+          ],
+          "content": "F (u _ {i}) = P (u \\leqslant u _ {i}) = \\int_ {- \\infty} ^ {u _ {i}} f (u) \\mathrm{d} u \\tag {3-37}",
+          "image_source": "../../raw/pages_0081-0096/images/page_83_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.563,
+            0.664,
+            0.58
+          ],
+          "content": "对于 u 落在区间（a，b）的概率（图 3-10 中的阴影部分），有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.361,
+            0.585,
+            0.872,
+            0.623
+          ],
+          "content": "P (a \\leqslant u \\leqslant b) = \\int_ {a} ^ {b} \\frac {1}{\\sqrt {2 \\pi}} \\mathrm{e} ^ {- \\frac {1}{2} u ^ {2}} \\mathrm{d} u \\tag {3-38}",
+          "image_source": "../../raw/pages_0081-0096/images/page_83_equation_15.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.15,
+            0.638,
+            0.419,
+            0.657
+          ],
+          "level": 2,
+          "content": "（四）正态分布的概率计算"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.671,
+            0.492,
+            0.818
+          ],
+          "content": "由于正态分布的概率累积函数应用广泛，统计学家已计算好实际需要的各个 $F ( u )$ 值，列于附表 1。在计算一般正态分布的概率时，只需将服从正态分布的随机变量x取值区间的上、下限按式（3-36）转换成 u 取值区间的上、下限，再查附表 1 即可（图 3-10）。例如，查附表 $F(-1.0)=0.1587,F(2.0)=0.97725.$"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.506,
+            0.667,
+            0.875,
+            0.782
+          ],
+          "sub_type": "area",
+          "content": "| X-axis | Area |\n| --- | --- |\n| < a | N/A |\n| a ~ b | Shaded (between -a and b) |",
+          "captions": [
+            {
+              "bbox": [
+                0.557,
+                0.785,
+                0.821,
+                0.8
+              ],
+              "content": "图 3-10 标准正态分布的概率计算"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_83_chart_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.823,
+            0.874,
+            0.861
+          ],
+          "content": "例 **3-15** 设 u 服从正态分布 N（0，1），试求: $\\textcircled{i} P \\left( u \\leqslant 1 \\right)$ ； $\\textcircled{2} P ~ ( u \\textgreater 1 )$ ）； $P(-2.0<$ $u \\leqslant 1.5 ; \\textcircled{4} P \\left( \\left| u \\right| > 2.58 \\right)$ ）。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.867,
+            0.266,
+            0.882
+          ],
+          "content": "查附表 1，得"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.888,
+            0.444,
+            0.904
+          ],
+          "content": "（1） $P\\ (u \\leqslant 1) = F\\ (u = 1) = 0.8413$"
+        }
+      ]
+    },
+    {
+      "page_idx": 84,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.408,
+            0.073,
+            0.601,
+            0.089
+          ],
+          "content": "第 3 章 概率与概率分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.834,
+            0.075,
+            0.88,
+            0.088
+          ],
+          "content": "·73·"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.123,
+            0.105,
+            0.886,
+            0.187
+          ],
+          "sub_type": "text",
+          "content": "（2） $P\\left(u>1\\right)=1-P\\left(u\\leqslant1\\right)=1-F\\left(u=1\\right)=1-0.8413=0.1587$\n（3） $P\\left(-2.0<u\\leqslant1.5\\right)=F\\left(u=1.5\\right)-F\\left(u=-2.0\\right)=0.93319-0.02275=0.91044$\n（4） $P\\left( \\left| u \\right| > 2.58 \\right) = P\\left( u > 2.58 \\right) + P\\left( u \\leqslant - 2.58 \\right) = 1 - F\\left( u = 2.58 \\right) + F\\left( u = - 2.58 \\right) =$ $1-0.99506+0.00494=0.00988$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.192,
+            0.884,
+            0.253
+          ],
+          "content": "例 **3-16** 试计算下列概率值: $P\\left( \\mu - \\sigma < x \\leqslant \\mu + \\sigma \\right); \\textcircled{2} P\\left( \\mu - 2\\sigma < x \\leqslant \\mu + 2\\sigma \\right); \\textcircled{3} P\\left( \\mu - \\right.$ $$3 \\sigma { < } x { \\leqslant } \\mu { + } 3 \\sigma ) ; \\textcircled{4} P$ $( \\mu { - } 1 . 9 6 \\sigma { < } x { \\leqslant } \\mu { + } 1 . 9 6 \\sigma ) ; \\textcircled{5} P$ $( \\mu { - } 2 . 5 8 \\sigma { < } x { \\leqslant } \\mu { + } 2 . 5 8 \\sigma ) ; \\textcircled{e} P$ $( x { > } \\mu$+$ $1.96\\sigma, x \\leqslant \\mu - 1.96\\sigma); \\textcircled{7} P \\left( x > \\mu + 2.58\\sigma, x \\leqslant \\mu - 2.58\\sigma \\right)$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.257,
+            0.678,
+            0.274
+          ],
+          "content": "首先，根据式（3-36）求 u 值，然后查附表 1，进行概率计算:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.201,
+            0.315,
+            0.412,
+            0.348
+          ],
+          "content": "u _ {2} = \\frac {x - \\mu}{\\sigma} = \\frac {(\\mu + \\sigma) - \\mu}{\\sigma} = 1",
+          "image_source": "../../raw/pages_0081-0096/images/page_84_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.199,
+            0.352,
+            0.728,
+            0.37
+          ],
+          "content": "P (\\mu - \\sigma <   x \\leqslant \\mu + \\sigma) = P (- 1 <   u \\leqslant 1) = F (u = 1) - F (u = - 1)",
+          "image_source": "../../raw/pages_0081-0096/images/page_84_equation_9.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.366,
+            0.374,
+            0.582,
+            0.389
+          ],
+          "content": "= 0. 8 4 1 3 - 0. 1 5 8 7 = 0. 6 8 2 6",
+          "image_source": "../../raw/pages_0081-0096/images/page_84_equation_10.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.202,
+            0.432,
+            0.422,
+            0.466
+          ],
+          "content": "u _ {2} = \\frac {x - \\mu}{\\sigma} = \\frac {(\\mu + 2 \\sigma) - \\mu}{\\sigma} = 2",
+          "image_source": "../../raw/pages_0081-0096/images/page_84_equation_11.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.199,
+            0.469,
+            0.746,
+            0.487
+          ],
+          "content": "P (\\mu - 2 \\sigma <   x \\leqslant \\mu + 2 \\sigma) = P (- 2 <   u \\leqslant 2) = F (u = 2) - F (u = - 2)",
+          "image_source": "../../raw/pages_0081-0096/images/page_84_equation_12.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.385,
+            0.492,
+            0.619,
+            0.507
+          ],
+          "content": "= 0. 9 7 7 2 5 - 0. 0 2 2 7 5 = 0. 9 5 4 5",
+          "image_source": "../../raw/pages_0081-0096/images/page_84_equation_13.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.202,
+            0.549,
+            0.421,
+            0.582
+          ],
+          "content": "u _ {2} = \\frac {x - \\mu}{\\sigma} = \\frac {(\\mu + 3 \\sigma) - \\mu}{\\sigma} = 3",
+          "image_source": "../../raw/pages_0081-0096/images/page_84_equation_14.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.199,
+            0.586,
+            0.746,
+            0.604
+          ],
+          "content": "P (\\mu - 3 \\sigma <   x \\leqslant \\mu + 3 \\sigma) = P (- 3 <   u \\leqslant 3) = F (u = 3) - F (u = - 3)",
+          "image_source": "../../raw/pages_0081-0096/images/page_84_equation_15.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.385,
+            0.608,
+            0.619,
+            0.623
+          ],
+          "content": "= 0. 9 9 8 6 5 - 0. 0 0 1 3 5 = 0. 9 9 7 3",
+          "image_source": "../../raw/pages_0081-0096/images/page_84_equation_16.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.202,
+            0.666,
+            0.467,
+            0.7
+          ],
+          "content": "u _ {2} = \\frac {x - \\mu}{\\sigma} = \\frac {(\\mu + 1 . 9 6 \\sigma) - \\mu}{\\sigma} = 1. 9 6",
+          "image_source": "../../raw/pages_0081-0096/images/page_84_equation_17.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.199,
+            0.703,
+            0.884,
+            0.721
+          ],
+          "content": "P (\\mu - 1. 9 6 \\sigma <   x \\leqslant \\mu + 1. 9 6 \\sigma) = P (- 1. 9 6 <   u \\leqslant 1. 9 6) = F (u = 1. 9 6) - F (u = - 1. 9 6)",
+          "image_source": "../../raw/pages_0081-0096/images/page_84_equation_18.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.429,
+            0.726,
+            0.624,
+            0.74
+          ],
+          "content": "= 0. 9 7 5 0 - 0. 0 2 5 0 = 0. 9 5",
+          "image_source": "../../raw/pages_0081-0096/images/page_84_equation_19.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.202,
+            0.783,
+            0.47,
+            0.816
+          ],
+          "content": "u _ {2} = \\frac {x - \\mu}{\\sigma} = \\frac {(\\mu + 2 . 5 8 \\sigma) - \\mu}{\\sigma} = 2. 5 8",
+          "image_source": "../../raw/pages_0081-0096/images/page_84_equation_20.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.199,
+            0.82,
+            0.884,
+            0.837
+          ],
+          "content": "P (\\mu - 2. 5 8 \\sigma <   x \\leqslant \\mu + 2. 5 8 \\sigma) = P (- 2. 5 8 <   u \\leqslant 2. 5 8) = F (u = 2. 5 8) - F (u = - 2. 5 8)",
+          "image_source": "../../raw/pages_0081-0096/images/page_84_equation_21.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.434,
+            0.843,
+            0.678,
+            0.858
+          ],
+          "content": "= 0. 9 9 5 0 6 - 0. 0 0 4 9 4 = 0. 9 9 0 1 2",
+          "image_source": "../../raw/pages_0081-0096/images/page_84_equation_22.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.46,
+            0.886,
+            0.752,
+            0.901
+          ],
+          "content": "= 1 - F (u = 1. 9 6) + F (u = - 1. 9 6)",
+          "image_source": "../../raw/pages_0081-0096/images/page_84_equation_23.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.46,
+            0.908,
+            0.684,
+            0.922
+          ],
+          "content": "= 1 - 0. 9 7 5 0 + 0. 0 2 5 0 = 0. 0 5",
+          "image_source": "../../raw/pages_0081-0096/images/page_84_equation_24.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 85,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.164,
+            0.087
+          ],
+          "content": "·74·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.449,
+            0.073,
+            0.538,
+            0.088
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.15,
+            0.106,
+            0.772,
+            0.165
+          ],
+          "content": "\\begin{array}{l} = 1 - F (u = 2. 5 8) + F (u = - 2. 5 8) \\\\ = 1 - 0. 9 9 5 0 6 + 0. 0 0 4 9 4 = 0. 0 0 9 8 8 \\approx 0. 0 1 \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0081-0096/images/page_85_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.171,
+            0.874,
+            0.253
+          ],
+          "content": "上述计算结果参见图 3-6。从上述计算可知，虽然标准正态分布 u 的取值区间为 $( - \\infty$ $+ \\infty )$ ），但实际上 $|u| > 2.58$ 的概率只有 $0.01,\\ \\left| u \\right| > 1.96$ 的概率也只有 0.05。也就是说，在$\\mu \\pm 1 . 9 6 \\sigma$ 和 $\\mu \\pm 2 . 5 8 \\sigma$ 范围内已分别包含了 95%和 99%的变量，即 $|x - \\mu| > 1.96\\sigma$ 和 $\\left| x - \\mu \\right| >$ 2.58σ 的概率只有 5%和 1%。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.257,
+            0.873,
+            0.34
+          ],
+          "content": "以上在计算 $|x - \\mu| > 1.96\\sigma$ 和 $|x - \\mu| > 2.58\\sigma$ 的概率时均为双尾概率（two-tailed probability），即左尾概率和右尾概率之和。由于双尾概率值经常使用，为减少计算的麻烦，附表 2［正态离差（u）值表］列出了双尾概率取某一显著水平α 时的u 临界值（critical value），即分位数（fractile），记为 $u _ { \\alpha } ,$ ，可直接查用。例如，可查得 $p { = } 0 . 0 5$ 时， $u_{0.05}=1.96;\\ p=0.01$ 时， $u_{0.01} = 2.58$ 。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.344,
+            0.862,
+            0.382
+          ],
+          "content": "例 **3-17** 调查某玉米品种穗长（cm），其资料服从正态分布 N（15.7，1.04）。试计算:①玉米穗长的 95%范围值；②玉米穗长＞16cm 的概率。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.387,
+            0.871,
+            0.405
+          ],
+          "content": "已知玉米穗长服从正态分布， $\\mu = 15.7 (cm) , \\sigma^{2} = 1.04 (cm^{2})$ ，则 $\\sigma=\\sqrt{1.04}=1.02\\ (cm)$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.409,
+            0.772,
+            0.426
+          ],
+          "content": "（1）查附表 2，双尾概率 $u_{0.05} = 1.96$ ，则有玉米穗长的 95%范围值上下限为"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.333,
+            0.431,
+            0.644,
+            0.447
+          ],
+          "content": "上限: $15.7+1.96\\times1.02=17.70\\left (  cm  \\right )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.333,
+            0.452,
+            0.644,
+            0.468
+          ],
+          "content": "下限:15.7-1.96×1.02=13.70（cm）"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.475,
+            0.873,
+            0.526
+          ],
+          "content": "（2）已知 $x > 16  cm$ ，求得 $u = \\frac{x - \\mu}{\\sigma} = \\frac{16 - 15.7}{1.02} = 0.29$ ，查附表 1， $F\\left(0.29\\right)=0.6141$ ，因此，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.237,
+            0.533,
+            0.747,
+            0.548
+          ],
+          "content": "P (x > 1 6) = P (u > 0. 2 9) = 1 - F (0. 2 9) = 1 - 0. 6 1 4 1 = 0. 3 8 5 9",
+          "image_source": "../../raw/pages_0081-0096/images/page_85_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.554,
+            0.874,
+            0.592
+          ],
+          "content": "对应于双尾概率， $x \\leqslant \\mu - 1.96\\sigma$ 或 $x > \\mu + 1.96\\sigma$ 的概率称为单尾概率（one-tailed probability）。例如，"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.122,
+            0.599,
+            0.186,
+            0.644
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.116,
+                0.647,
+                0.19,
+                0.659
+              ],
+              "content": "数据正态性"
+            },
+            {
+              "bbox": [
+                0.116,
+                0.663,
+                0.19,
+                0.675
+              ],
+              "content": "的评估方法"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_85_image_13.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.354,
+            0.597,
+            0.721,
+            0.614
+          ],
+          "content": "P (x \\leqslant \\mu - 1. 9 6 \\sigma) = P (x > \\mu + 1. 9 6 \\sigma) = 0. 0 2 5",
+          "image_source": "../../raw/pages_0081-0096/images/page_85_equation_16.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.36,
+            0.619,
+            0.717,
+            0.635
+          ],
+          "content": "P (x \\leqslant \\mu - 1. 6 4 \\sigma) = P (x > \\mu + 1. 6 4 \\sigma) = 0. 0 5",
+          "image_source": "../../raw/pages_0081-0096/images/page_85_equation_17.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.36,
+            0.64,
+            0.715,
+            0.657
+          ],
+          "content": "P (x \\leqslant \\mu - 2. 3 3 \\sigma) = P (x > \\mu + 2. 3 3 \\sigma) = 0. 0 1",
+          "image_source": "../../raw/pages_0081-0096/images/page_85_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.242,
+            0.663,
+            0.605,
+            0.68
+          ],
+          "content": "此时， $u_{0.025}=1.96,\\quad u_{0.05}=1.64,\\quad u_{0.01}=2.33 。$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.153,
+            0.693,
+            0.407,
+            0.712
+          ],
+          "level": 2,
+          "content": "三、其他连续性概率分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.727,
+            0.825,
+            0.743
+          ],
+          "content": "除上面介绍的正态分布外，常见的连续性变量概率分布还有均匀分布和指数分布。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.151,
+            0.758,
+            0.304,
+            0.777
+          ],
+          "level": 2,
+          "content": "（一）均匀分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.791,
+            0.874,
+            0.852
+          ],
+          "content": "均匀分布又称为规则分布。植物种群中个体分布的理想状态是等距分布，即个体之间保持一定的均匀间距。标准的均匀分布在自然情况下极为罕见，而人工栽培的农作物保持有一定株行距的田间分布即均匀分布。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.856,
+            0.873,
+            0.895
+          ],
+          "content": "对于随机变量 X 只在区间［a，b］内取值，其概率分布常用均匀分布来描述。如果随机变量 X 服从概率密度函数:"
+        }
+      ]
+    },
+    {
+      "page_idx": 86,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.408,
+            0.073,
+            0.601,
+            0.089
+          ],
+          "content": "第 3 章 概率与概率分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.834,
+            0.075,
+            0.88,
+            0.088
+          ],
+          "content": "·75·"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.371,
+            0.107,
+            0.882,
+            0.164
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l l} \\frac {1}{b - a}, & a <   x \\leqslant b (a <   b) \\\\ 0, & \\text {其他} \\end{array} \\right. \\tag {3-39}",
+          "image_source": "../../raw/pages_0081-0096/images/page_86_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.171,
+            0.884,
+            0.188
+          ],
+          "content": "则称 X 服从 $[ a , b ]$ 上的均匀分布（uniform distribution），记作 $U \\left( a , b \\right)$ ，如图 3-11 所示。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.192,
+            0.886,
+            0.274
+          ],
+          "content": "由图 3-11 可以看出，均匀分布的随机变量 X 在其取值范围 $[ a , b ]$ 内的概率密度函数是个常数，与其位置没有关系。由于图中矩形的高度是个常数，等于 $\\frac { 1 } { b ^ { - } a }$ ，这样随机变量 X在其取值范围 $[ a , b ]$ 内矩形的总面积等于 1。均匀分布的累积概率函数（图 3-12）为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.355,
+            0.278,
+            0.882,
+            0.354
+          ],
+          "content": "F (X = x) = \\left\\{ \\begin{array}{l} 0, x \\leqslant a \\\\ \\frac {x - a}{b - a}, a <   x \\leqslant b (a <   b) \\\\ 1, x > b \\end{array} \\right. \\tag {3-40}",
+          "image_source": "../../raw/pages_0081-0096/images/page_86_equation_5.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.149,
+            0.362,
+            0.49,
+            0.512
+          ],
+          "sub_type": "area",
+          "content": "| X | f(x) |\n| --- | --- |\n| a | 1/(b-a) |\n| b | 1/(b-a) |",
+          "captions": [
+            {
+              "bbox": [
+                0.192,
+                0.514,
+                0.454,
+                0.529
+              ],
+              "content": "图 3-11 均匀分布的概率密度函数"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_86_chart_6.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.522,
+            0.363,
+            0.861,
+            0.512
+          ],
+          "sub_type": "line",
+          "content": "| x | F (X=x) |\n| --- | --- |\n| a | 0 |\n| b | 1.0 |",
+          "captions": [
+            {
+              "bbox": [
+                0.558,
+                0.514,
+                0.822,
+                0.529
+              ],
+              "content": "图 3-12 均匀分布的累积概率函数"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_86_chart_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.543,
+            0.509,
+            0.559
+          ],
+          "content": "均匀分布的数学期望（平均数）和方差是"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.432,
+            0.564,
+            0.882,
+            0.597
+          ],
+          "content": "\\mu = E (X) = \\frac {a + b}{2} \\tag {3-41}",
+          "image_source": "../../raw/pages_0081-0096/images/page_86_equation_11.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.407,
+            0.601,
+            0.882,
+            0.634
+          ],
+          "content": "\\sigma^ {2} = D (X) = \\frac {1}{1 2} (b - a) ^ {2} \\tag {3-42}",
+          "image_source": "../../raw/pages_0081-0096/images/page_86_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.638,
+            0.883,
+            0.676
+          ],
+          "content": "例 **3-18** 调查某自然保护区天然油松林种群空间分布状况，其平均间距为 30m，最小间距不小于 5m。现随机抽取任一棵油松，其与相邻油松株距 10m 的概率是多少？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.681,
+            0.884,
+            0.719
+          ],
+          "content": "设某棵油松与相邻油松间的距离 X 服从 $(a = 5, b = 30)$ 的均匀分布，由式（3-39），其概率密度函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.404,
+            0.723,
+            0.603,
+            0.78
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l l} \\frac {1}{2 5}, & 5 <   x \\leqslant 2 5 \\\\ 0, & \\text {其他} \\end{array} \\right.",
+          "image_source": "../../raw/pages_0081-0096/images/page_86_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.785,
+            0.884,
+            0.824
+          ],
+          "content": "因此，某棵油松与相邻油松间的距离 X 落入区间（5，30）的任一子区间（5，10）的概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.452,
+            0.828,
+            0.555,
+            0.862
+          ],
+          "content": "\\frac {1 0 - 5}{2 5} = 0. 2 0",
+          "image_source": "../../raw/pages_0081-0096/images/page_86_equation_17.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.161,
+            0.875,
+            0.315,
+            0.894
+          ],
+          "level": 2,
+          "content": "（二）指数分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.909,
+            0.884,
+            0.926
+          ],
+          "content": "指数分布是用于描述发生某一特定事件所需时间的一种连续性分布。例如，动植物的寿"
+        }
+      ]
+    },
+    {
+      "page_idx": 87,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.164,
+            0.087
+          ],
+          "content": "·76·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.088
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.106,
+            0.874,
+            0.145
+          ],
+          "continues_prev": true,
+          "content": "命、微生物繁殖若干倍所需时间等，这些随机变量 X 通常可以认为只能取非负值，因而常用近似的服从指数分布来描述。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.149,
+            0.45,
+            0.166
+          ],
+          "content": "如果随机变量 X 服从概率密度函数:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.378,
+            0.17,
+            0.872,
+            0.213
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l} \\lambda \\mathrm{e} ^ {- \\lambda x}, x > 0 (\\lambda > 0) \\\\ 0, \\text {其他} \\end{array} \\right. \\tag {3-43}",
+          "image_source": "../../raw/pages_0081-0096/images/page_87_equation_4.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.112,
+            0.216,
+            0.458,
+            0.378
+          ],
+          "sub_type": "line",
+          "content": "| X | f(x) |\n| --- | --- |\n| 0 | \\(\\lambda\\) |\n| >0 | <\\(\\lambda\\) |",
+          "captions": [
+            {
+              "bbox": [
+                0.153,
+                0.381,
+                0.414,
+                0.396
+              ],
+              "content": "图 3-13 指数分布的概率密度函数"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_87_chart_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.465,
+            0.216,
+            0.874,
+            0.255
+          ],
+          "content": "则称 X 服从参数 λ 的指数分布（exponential distribution），记作 E（λ），如图 3-13 所示。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.465,
+            0.259,
+            0.875,
+            0.362
+          ],
+          "content": "与其他连续性随机变量分布一样，服从指数分布的随机变量 X 在某一区间取值的概率等于图 3-13 所示概率密度函数曲线与该区间围成的面积。当随机变量 $X { \\leqslant } x$ 时，其取值小于或等于特定值 x 的概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.569,
+            0.367,
+            0.875,
+            0.384
+          ],
+          "content": "P (X \\leqslant x) = 1 - \\mathrm{e} ^ {- \\lambda x} \\tag {3-44}",
+          "image_source": "../../raw/pages_0081-0096/images/page_87_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.504,
+            0.389,
+            0.875,
+            0.406
+          ],
+          "content": "服从指数分布的随机变量 X 在区间（a，b）"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.411,
+            0.294,
+            0.427
+          ],
+          "content": "$(0 < a \\leqslant b)$ 的概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.431,
+            0.872,
+            0.449
+          ],
+          "content": "P (a <   x \\leqslant b) = P (x \\leqslant b) - P (x \\leqslant a) = \\mathrm{e} ^ {- \\lambda a} - \\mathrm{e} ^ {- \\lambda b} \\tag {3-45}",
+          "image_source": "../../raw/pages_0081-0096/images/page_87_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.454,
+            0.499,
+            0.47
+          ],
+          "content": "指数分布的数学期望（平均数）和方差是"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.435,
+            0.476,
+            0.872,
+            0.508
+          ],
+          "content": "\\mu = E (X) = \\frac {1}{\\lambda} \\tag {3-46}",
+          "image_source": "../../raw/pages_0081-0096/images/page_87_equation_14.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.428,
+            0.513,
+            0.872,
+            0.547
+          ],
+          "content": "\\sigma^ {2} = D (X) = \\frac {1}{\\lambda^ {2}} \\tag {3-47}",
+          "image_source": "../../raw/pages_0081-0096/images/page_87_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.555,
+            0.873,
+            0.611
+          ],
+          "content": "例 **3-19** 假设普通雄性家猫的寿命服从 $\\lambda { = } \\frac { 1 } { 1 0 }$ 的指数分布，计算:①普通雄性家猫寿命超 15 年的概率；②某一雄性家猫年龄为 10 岁，它还能成活 8 年的概率是多少？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.616,
+            0.768,
+            0.648
+          ],
+          "content": "当 $\\lambda { = } \\frac { 1 } { 1 0 }$ 时，随机变量普通雄性家猫的寿命 X 服从指数分布概率密度函数:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.396,
+            0.651,
+            0.591,
+            0.711
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l l} \\frac {1}{1 0} \\mathrm{e} ^ {- \\frac {1}{1 0} x}, & x > 0 \\\\ 0, & \\text {其他} \\end{array} \\right.",
+          "image_source": "../../raw/pages_0081-0096/images/page_87_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.716,
+            0.571,
+            0.733
+          ],
+          "content": "（1）根据式（3-44），可以直接计算 X≤15 的概率:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.281,
+            0.737,
+            0.705,
+            0.765
+          ],
+          "content": "P (X \\leqslant 1 5) = 1 - \\mathrm{e} ^ {- \\frac {1}{1 0} \\times 1 5} = 1 - \\mathrm{e} ^ {- 1. 5} = 1 - 0. 2 2 3 1 = 0. 7 7 6 9",
+          "image_source": "../../raw/pages_0081-0096/images/page_87_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.771,
+            0.214,
+            0.787
+          ],
+          "content": "于是，则有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.289,
+            0.793,
+            0.696,
+            0.809
+          ],
+          "content": "P (X > 1 5) = 1 - P (X \\leqslant 1 5) = 1 - 0. 7 7 6 9 = 0. 2 2 3 1",
+          "image_source": "../../raw/pages_0081-0096/images/page_87_equation_22.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.814,
+            0.784,
+            0.853
+          ],
+          "content": "（2）某一雄性家猫年龄为 10 岁，它再活 8 年的时间范围是（10，18），代入式（3-45），得出其概率为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.159,
+            0.857,
+            0.738,
+            0.886
+          ],
+          "content": "P (1 0 <   X \\leqslant 1 8) = \\mathrm{e} ^ {- \\frac {1}{1 0} \\times 1 0} - \\mathrm{e} ^ {- \\frac {1}{1 0} \\times 1 8} = \\mathrm{e} ^ {- 1} - \\mathrm{e} ^ {- 1. 8} = 0. 3 6 7 9 - 0. 1 6 5 3 = 0. 2 0 2 6",
+          "image_source": "../../raw/pages_0081-0096/images/page_87_equation_24.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.804,
+            0.811,
+            0.868,
+            0.856
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.806,
+                0.859,
+                0.865,
+                0.872
+              ],
+              "content": "对数正态"
+            },
+            {
+              "bbox": [
+                0.82,
+                0.875,
+                0.851,
+                0.888
+              ],
+              "content": "分布"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_87_image_25.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 88,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.409,
+            0.073,
+            0.601,
+            0.089
+          ],
+          "content": "第 3 章 概率与概率分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.834,
+            0.075,
+            0.878,
+            0.087
+          ],
+          "content": "·77·"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.367,
+            0.125,
+            0.623,
+            0.147
+          ],
+          "level": 2,
+          "content": "第四节 抽 样 分 布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.171,
+            0.886,
+            0.34
+          ],
+          "content": "从第一章我们了解到，统计学中的核心问题是研究总体与由总体中所取样本的关系，这种关系可从抽样过程和推断过程两个方向来研究。从已知的总体中以一定的样本容量进行随机抽样（图 3-14），由样本的统计数所对应的概率分布称为抽样分布（sampling distribution）。抽样分布不同于由各观测值所形成的总体分布和样本分布，它是指样本统计数的概率分布，如样本平均数的分布、样本频率的分布、样本方差的分布等。因此，抽样分布也称为统计数分布。以样本平均数为例，它是总体平均数的一个估计值，如果按照相同的样本容量、相同的抽样方式反复地抽取样本，每次可以计算一个平均数，所有可能样本的平均数所形成的分布，就是样本平均数的抽样分布。第 4 章介绍的统计推断就是以抽样分布作为理论基础的。"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.275,
+            0.35,
+            0.735,
+            0.512
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"随机样本\\n1\"] -->|\"从样本到总体方向\"| B[\"总体\"]\n  C[\"2\"] -->|\"从样本到总体方向\"| B\n  D[\"3\"] -->|\"从总体到样本方向\"| E[\"4\"]\n  F[\"n\"] -->|\"从总体到样本方向\"| E\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.381,
+                0.515,
+                0.626,
+                0.53
+              ],
+              "content": "图 3-14 从总体抽取样本的过程"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_88_image_4.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.164,
+            0.542,
+            0.418,
+            0.561
+          ],
+          "level": 2,
+          "content": "一、抽样试验与无偏估计"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.576,
+            0.886,
+            0.723
+          ],
+          "content": "从总体中抽样必须符合随机的原则，即保证总体中的每一个个体在每一次抽样中都有相同的概率被抽取为样本。从理论上讲，从一个总体中抽取所有可能的样本，就能获得统计数变异的全部信息。但是，这样的抽样试验（sampling experiment）不仅在无限总体中无法做到，就是在许多有限总体中也难以实现。解决这一矛盾的方法是，仅抽取一部分样本，或对小的有限总体进行复置抽样（duplicate sampling），又称为放回抽样（sampling with replacement）。在小总体中进行复置抽样，样本可以从不会耗尽的总体中获得，所以从理论上可以看成总体容量是无限的，因此具有无限总体抽样的性质，即所获得样本是等概率的和随机的。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.728,
+            0.886,
+            0.789
+          ],
+          "content": "设有一个 N=3 的近似正态总体，具有变量 3、4、5，由式（2-9）、式（2-28）和式（2-30）可求得 $\\mu = 4  、 \\sigma^{2} = 0.6667  、 \\sigma = 0.8165$ 。现以 n=2 进行独立的复置抽样，可得 $N^{n}=3^{2}=9$ 个样本，其抽样结果列于表 3-7。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.825,
+            0.884,
+            0.926
+          ],
+          "content": "| 样本编号 | 样本值 | $\\bar{x}$ | $s^{2}$ | s |\n| --- | --- | --- | --- | --- |\n| 1 | 3, 3 | 3.0 | 0 | 0 |\n| 2 | 3, 4 | 3.5 | 0.5 | 0.7071 |\n| 3 | 3, 5 | 4.0 | 2.0 | 1.4142 |\n| 4 | 4, 3 | 3.5 | 0.5 | 0.7071 |",
+          "captions": [
+            {
+              "bbox": [
+                0.211,
+                0.806,
+                0.796,
+                0.822
+              ],
+              "content": "表 3-7 由 N=3 的总体进行 n=2 复置抽样所有样本的平均数、方差和标准差"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_88_table_10.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 89,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.163,
+            0.087
+          ],
+          "content": "·78·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.537,
+            0.087
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.114,
+            0.123,
+            0.875,
+            0.264
+          ],
+          "continues_prev": true,
+          "content": "| 样本编号 | 样本值 | $\\bar{x}$ | $s^{2}$ | s |\n| --- | --- | --- | --- | --- |\n| 5 | 4, 4 | 4.0 | 0 | 0 |\n| 6 | 4, 5 | 4.5 | 0.5 | 0.7071 |\n| 7 | 5, 3 | 4.0 | 2.0 | 1.4142 |\n| 8 | 5, 4 | 4.5 | 0.5 | 0.7071 |\n| 9 | 5, 5 | 5.0 | 0 | 0 |\n| $\\sum$ |  | 36.0 | 6.0 | 5.6568 |",
+          "captions": [
+            {
+              "bbox": [
+                0.801,
+                0.106,
+                0.839,
+                0.12
+              ],
+              "content": "续表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_89_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.275,
+            0.406,
+            0.291
+          ],
+          "content": "根据表 3-7 的数据，可以求出:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.297,
+            0.365,
+            0.313
+          ],
+          "content": "样本平均数 x 的平均数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.434,
+            0.318,
+            0.551,
+            0.351
+          ],
+          "content": "\\mu_ {\\bar {x}} = \\frac {3 6}{9} = 4 = \\mu",
+          "image_source": "../../raw/pages_0081-0096/images/page_89_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.354,
+            0.348,
+            0.371
+          ],
+          "content": "样本方差 $s ^ { 2 }$ 的平均数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.412,
+            0.377,
+            0.573,
+            0.409
+          ],
+          "content": "\\mu_ {s ^ {2}} = \\frac {6}{9} = 0. 6 6 6 7 = \\sigma^ {2}",
+          "image_source": "../../raw/pages_0081-0096/images/page_89_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.413,
+            0.361,
+            0.43
+          ],
+          "content": "样本标准差 s 的平均数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.393,
+            0.434,
+            0.591,
+            0.467
+          ],
+          "content": "\\mu_ {s} = \\frac {5 . 6 5 6 8}{9} = 0. 6 2 8 5 \\neq \\sigma",
+          "image_source": "../../raw/pages_0081-0096/images/page_89_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.471,
+            0.875,
+            0.553
+          ],
+          "content": "在统计学上，如果所有可能样本的某一统计数的平均数等于总体的相应参数，则称该统计数为总体相应参数的无偏估计值（unbiased estimated value）。根据上述计算结果，可以得到以下性质:①样本平均数 x 是总体平均数 $\\mu$ 的无偏估计值；②样本方差 $s ^ { 2 }$ 是总体方差 $\\sigma ^ { 2 }$的无偏估计值；③样本标准差 s 不是总体标准差 $\\sigma$ 的无偏估计值。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.152,
+            0.567,
+            0.43,
+            0.586
+          ],
+          "level": 2,
+          "content": "二、样本平均数的抽样分布"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.151,
+            0.6,
+            0.486,
+            0.618
+          ],
+          "level": 2,
+          "content": "（一）一个样本平均数的抽样分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.633,
+            0.876,
+            0.757
+          ],
+          "content": "对上述 $N = 3, n = 2$ 抽样试验所得的 9 个样本平均数，整理频数分布表，列于表 3-8。如果对这个 3、4、5 组成的总体再进行 n=4 的抽样试验，共可得 $N ^ { n } { = } 3 ^ { 4 } { = } 8 1$ 个样本平均数，其平均数的频数分布也列于表 3-8。由于从总体中抽出的样本为每一个可能样本，且每个样本中的变量均为随机变量，所以其样本平均数也为随机变量，也形成一定的理论分布，这种理论分布称为样本平均数的概率分布，或称样本平均数的分布（distribution of the sample mean）。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.114,
+            0.794,
+            0.875,
+            0.917
+          ],
+          "content": "<table><tr><td colspan=\"4\">n=2</td><td colspan=\"4\">n=4</td></tr><tr><td> $\\bar{x}$ </td><td>f(频数)</td><td> $f\\bar{x}$ </td><td> $f\\bar{x}^2$ </td><td> $\\bar{x}$ </td><td>f(频数)</td><td> $f\\bar{x}$ </td><td> $f\\bar{x}^2$ </td></tr><tr><td>3.0</td><td>1</td><td>3</td><td>9.0</td><td>3.00</td><td>1</td><td>3</td><td>9.00</td></tr><tr><td></td><td></td><td></td><td></td><td>3.25</td><td>4</td><td>13</td><td>42.25</td></tr><tr><td>3.5</td><td>2</td><td>7</td><td>24.5</td><td>3.50</td><td>10</td><td>35</td><td>122.50</td></tr><tr><td></td><td></td><td></td><td></td><td>3.75</td><td>16</td><td>60</td><td>225.00</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.315,
+                0.776,
+                0.671,
+                0.792
+              ],
+              "content": "表 3-8 样本容量不同的样本平均数的频数分布"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_89_table_16.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 90,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.409,
+            0.073,
+            0.599,
+            0.088
+          ],
+          "content": "第 3 章 概率与概率分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.835,
+            0.075,
+            0.878,
+            0.087
+          ],
+          "content": "·79·"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.123,
+            0.885,
+            0.284
+          ],
+          "continues_prev": true,
+          "content": "<table><tr><td colspan=\"4\">n=2</td><td colspan=\"4\">n=4</td></tr><tr><td> $\\bar{x}$ </td><td>f(频数)</td><td> $f\\bar{x}$ </td><td> $f\\bar{x}^2$ </td><td> $\\bar{x}$ </td><td>f(频数)</td><td> $f\\bar{x}$ </td><td> $f\\bar{x}^2$ </td></tr><tr><td>4.0</td><td>3</td><td>12</td><td>48.0</td><td>4.00</td><td>19</td><td>76</td><td>304.00</td></tr><tr><td></td><td></td><td></td><td></td><td>4.25</td><td>16</td><td>68</td><td>289.00</td></tr><tr><td>4.5</td><td>2</td><td>9</td><td>40.5</td><td>4.50</td><td>10</td><td>45</td><td>202.50</td></tr><tr><td></td><td></td><td></td><td></td><td>4.75</td><td>4</td><td>19</td><td>90.25</td></tr><tr><td>5.0</td><td>1</td><td>5</td><td>25.0</td><td>5.00</td><td>1</td><td>5</td><td>25.00</td></tr><tr><td>Σ</td><td>9</td><td>36</td><td>147.0</td><td>Σ</td><td>81</td><td>324</td><td>1309.50</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.811,
+                0.106,
+                0.85,
+                0.12
+              ],
+              "content": "续表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_90_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.294,
+            0.884,
+            0.354
+          ],
+          "content": "样本平均数的分布与其他分布一样也有两个重要参数，一个是样本平均数的平均数，记作 $\\mu _ { \\overline { { x } } }$ ；另一个是样本平均数的方差，记作 $\\sigma _ { x } ^ { 2 }$ 。根据表 3-8，可求得 $n { = } 2$ 的样本平均数的平均数 $\\mu _ { \\overline { { x } } }$ 和方差 $\\sigma _ { x } ^ { 2 }$ 分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.417,
+            0.357,
+            0.593,
+            0.393
+          ],
+          "content": "\\mu_ {\\bar {x}} = \\frac {\\sum f \\bar {x}}{N ^ {n}} = \\frac {3 6}{9} = 4 = \\mu",
+          "image_source": "../../raw/pages_0081-0096/images/page_90_equation_5.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.258,
+            0.397,
+            0.752,
+            0.45
+          ],
+          "content": "\\sigma_ {\\bar {x}} ^ {2} = \\frac {1}{N ^ {n}} \\left[ \\sum f \\bar {x} ^ {2} - \\frac {\\left(\\sum f \\bar {x}\\right) ^ {2}}{N ^ {n}} \\right] = \\frac {1}{9} \\times \\left(1 4 7 - \\frac {3 6 ^ {2}}{9}\\right) = 0. 3 3 3 3 = \\frac {\\sigma^ {2}}{n}",
+          "image_source": "../../raw/pages_0081-0096/images/page_90_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.454,
+            0.643,
+            0.472
+          ],
+          "content": "同样，可求得 $n { = } 4$ 时样本平均数的平均数 $\\mu _ { \\overline { { x } } }$ 和方差 $\\sigma _ { x } ^ { 2 }$ 为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.442,
+            0.476,
+            0.566,
+            0.508
+          ],
+          "content": "\\mu_ {\\bar {x}} = \\frac {3 2 4}{8 1} = 4 = \\mu",
+          "image_source": "../../raw/pages_0081-0096/images/page_90_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.343,
+            0.511,
+            0.667,
+            0.552
+          ],
+          "content": "\\sigma_ {\\bar {x}} ^ {2} = \\frac {1}{8 1} \\times \\left(1 3 0 9. 5 0 - \\frac {3 2 4 ^ {2}}{8 1}\\right) = 0. 1 6 6 7 = \\frac {\\sigma^ {2}}{n}",
+          "image_source": "../../raw/pages_0081-0096/images/page_90_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.557,
+            0.648,
+            0.573
+          ],
+          "content": "由以上抽样试验，可得出样本平均数分布有以下基本性质:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.578,
+            0.585,
+            0.595
+          ],
+          "content": "（1）样本平均数分布的平均数等于总体平均数，即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.478,
+            0.601,
+            0.882,
+            0.616
+          ],
+          "content": "\\mu_ {\\bar {x}} = \\mu \\tag {3-48}",
+          "image_source": "../../raw/pages_0081-0096/images/page_90_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.62,
+            0.66,
+            0.636
+          ],
+          "content": "（2）样本平均数分布的方差等于总体方差除以样本容量，即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.472,
+            0.641,
+            0.882,
+            0.676
+          ],
+          "content": "\\sigma_ {\\bar {x}} ^ {2} = \\frac {\\sigma^ {2}}{n} \\tag {3-49}",
+          "image_source": "../../raw/pages_0081-0096/images/page_90_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.68,
+            0.886,
+            0.717
+          ],
+          "content": "进而，有样本平均数的标准误差（standard error，SE），简称平均数的标准误（standard error of mean）:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.469,
+            0.72,
+            0.882,
+            0.752
+          ],
+          "content": "\\sigma_ {\\bar {x}} = \\frac {\\sigma}{\\sqrt {n}} \\tag {3-50}",
+          "image_source": "../../raw/pages_0081-0096/images/page_90_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.126,
+            0.754,
+            0.884,
+            0.814
+          ],
+          "content": "（3）如果从正态总体 $N \\left( \\mu , \\sigma ^ { 2 } \\right)$ 进行抽样，其样本平均数 x 是一个具有平均数 $\\mu _ { \\gamma }$ 、方差$\\frac{\\sigma^{2}}{n}$ 的正态分布，记作 $N \\Biggl ( \\mu , \\frac { \\sigma ^ { 2 } } { n } \\Biggr )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.819,
+            0.884,
+            0.919
+          ],
+          "content": "（4）如果被抽样总体不是正态总体，但具有平均数 $\\mu$ 和方差 $\\sigma ^ { 2 }$ ，当样本容量 n 不断增大，样本平均数 $\\overline { { x } }$ 的分布也越来越接近正态分布，且具有平均数 $\\mu _ { 1 }$ 、方差 $\\frac { \\sigma ^ { 2 } } { n }$ ，这称为中心极限定理（central limit theorem）。这个定理对于连续性变量或非连续性变量都适用。无论总体为何种分布，一般只要样本容量 $n \\geqslant 3 0$ ，就可应用中心极限定理，认为样本平均数 x 的分布是"
+        }
+      ]
+    },
+    {
+      "page_idx": 91,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.164,
+            0.087
+          ],
+          "content": "·80·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.088
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.106,
+            0.842,
+            0.122
+          ],
+          "continues_prev": true,
+          "content": "正态分布。在计算样本平均数出现的概率时，其正态离差 u 可按式（3-51）进行标准化:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.417,
+            0.127,
+            0.872,
+            0.18
+          ],
+          "content": "u = \\frac {\\overline {{x}} - \\mu_ {\\overline {{x}}}}{\\sigma_ {\\overline {{x}}}} = \\frac {\\overline {{x}} - \\mu}{\\frac {\\sigma}{\\sqrt {n}}} \\tag {3-51}",
+          "image_source": "../../raw/pages_0081-0096/images/page_91_equation_3.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.15,
+            0.194,
+            0.531,
+            0.213
+          ],
+          "level": 2,
+          "content": "（二）两个样本平均数差数的抽样分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.227,
+            0.875,
+            0.333
+          ],
+          "content": "设有两个相互独立的正态总体，总体一为 $N _ { 1 } { = } 2$ ，具变量 3、6，其平均数 $\\mu _ { 1 } { = } 4 . 5$ ，方差$\\sigma _ { 1 } ^ { 2 }   =   2 . 2 5$ ，当以 $n _ { 1 } { = } 3$ 进行复置抽样试验，共可得 $2 ^ { 3 } { = } 8$ 个样本，求得 $\\mu_{\\overline{x}_{1}}=4.5,\\ \\sigma_{\\overline{x}_{1}}^{2}=0.75;$ ；总体二为 $N _ { 2 } { = } 3$ ，具变量 2、4、6，其平均数 $\\mu _ { 2 } { = } 4$ ，方差 $\\sigma_{2}^{2} = 2.6667$ ，当以 $n _ { 2 } { = } 2$ 进行复置抽样试验，共可得 $3 ^ { 2 } { = } 9$ 个样本，求得 $\\mu_{\\bar{x}_{2}}=4,\\ \\sigma_{\\bar{x}_{2}}^{2}=1.333$ 。将来自两个总体的样本平均数进行所有可能的比较，得出 72 个样本平均数差数 $( \\overline { { x } } _ { 1 }   -   \\overline { { x } } _ { 2 } )$ ，其频数分布如表 3-9 所示。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.114,
+            0.362,
+            0.875,
+            0.587
+          ],
+          "content": "| $\\overline{x}_{1}-\\overline{x}_{2}$ | f(频数) | $f(\\overline{x}_{1}-\\overline{x}_{2})$ | $f(\\overline{x}_{1}-\\overline{x}_{2})^{2}$ |\n| --- | --- | --- | --- |\n| 4 | 1 | 4 | 16 |\n| 3 | 5 | 15 | 45 |\n| 2 | 12 | 24 | 48 |\n| 1 | 18 | 18 | 18 |\n| 0 | 18 | 0 | 0 |\n| -1 | 12 | -12 | 12 |\n| -2 | 5 | -10 | 20 |\n| -3 | 1 | -3 | 9 |\n| $\\sum$ | 72 | 36 | 168 |",
+          "captions": [
+            {
+              "bbox": [
+                0.325,
+                0.341,
+                0.66,
+                0.359
+              ],
+              "content": "表 3-9 样本平均数差数 $( \\overline { { x } } _ { 1 }   -   \\overline { { x } } _ { 2 } )$ 的频数分布"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_91_table_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.598,
+            0.874,
+            0.638
+          ],
+          "content": "根据表 3-9，可求出两个样本平均数差数分布（distribution of the sample mean difference）的平均数 $\\mu _ { \\overline { { x } } _ { 1 } - \\overline { { x } } _ { 2 } }$ 和方差 $\\sigma _ { \\overline { { x _ { 1 } } } - \\overline { { x _ { 2 } } } } ^ { 2 }$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.297,
+            0.64,
+            0.718,
+            0.781
+          ],
+          "content": "\\begin{array}{l} \\mu_ {\\bar {x} _ {1} - \\bar {x} _ {2}} = \\frac {\\sum f \\left(\\bar {x} _ {1} - \\bar {x} _ {2}\\right)}{N _ {1} ^ {n _ {1}} N _ {2} ^ {n _ {2}}} = \\frac {3 6}{7 2} = 0. 5 = \\mu_ {1} - \\mu_ {2} \\\\ \\sigma_ {\\bar {x} _ {1} - \\bar {x} _ {2}} ^ {2} = \\frac {1}{N _ {1} ^ {n _ {1}} N _ {2} ^ {n _ {2}}} \\left\\{\\sum f (\\bar {x} _ {1} - \\bar {x} _ {2}) ^ {2} - \\frac {\\left[ \\sum f (\\bar {x} _ {1} - \\bar {x} _ {2}) \\right] ^ {2}}{N _ {1} ^ {n _ {1}} N _ {2} ^ {n _ {2}}} \\right\\} \\\\ = \\frac {1}{7 2} \\times \\left(1 6 8 - \\frac {3 6 ^ {2}}{7 2}\\right) = 2. 0 8 3 3 = \\sigma_ {\\bar {x} _ {1}} ^ {2} + \\sigma_ {\\bar {x} _ {2}} ^ {2} = \\frac {\\sigma_ {1} ^ {2}}{n _ {1}} + \\frac {\\sigma_ {2} ^ {2}}{n _ {2}} \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0081-0096/images/page_91_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.786,
+            0.637,
+            0.802
+          ],
+          "content": "根据上述计算，可得两个样本平均数差数分布的基本性质:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.807,
+            0.874,
+            0.845
+          ],
+          "content": "（1）两个样本平均数差数分布的平均数等于总体平均数的差数（或样本平均数分布的平均数的差数），即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.435,
+            0.851,
+            0.871,
+            0.869
+          ],
+          "content": "\\mu_ {\\overline {{x}} _ {1} - \\overline {{x}} _ {2}} = \\mu_ {1} - \\mu_ {2} \\tag {3-52}",
+          "image_source": "../../raw/pages_0081-0096/images/page_91_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.873,
+            0.873,
+            0.912
+          ],
+          "content": "（2）两个样本平均数差数分布的方差等于各自总体方差除以各自样本容量之和（或两样本平均数分布的方差之和），即"
+        }
+      ]
+    },
+    {
+      "page_idx": 92,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.408,
+            0.073,
+            0.599,
+            0.088
+          ],
+          "content": "第 3 章 概率与概率分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.834,
+            0.075,
+            0.878,
+            0.087
+          ],
+          "content": "·81·"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.401,
+            0.104,
+            0.882,
+            0.143
+          ],
+          "content": "\\sigma_ {\\overline {{x}} _ {1} - \\overline {{x}} _ {2}} ^ {2} = \\sigma_ {\\overline {{x}} _ {1}} ^ {2} + \\sigma_ {\\overline {{x}} _ {2}} ^ {2} = \\frac {\\sigma_ {1} ^ {2}}{n _ {1}} + \\frac {\\sigma_ {2} ^ {2}}{n _ {2}} \\tag {3-53}",
+          "image_source": "../../raw/pages_0081-0096/images/page_92_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.148,
+            0.785,
+            0.165
+          ],
+          "content": "进而，有样本平均数差数的标准误（standard error of the sample mean difference）:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.433,
+            0.168,
+            0.882,
+            0.21
+          ],
+          "content": "\\sigma_ {\\overline {{x}} _ {1} - \\overline {{x}} _ {2}} = \\sqrt {\\frac {\\sigma_ {1} ^ {2}}{n _ {1}} + \\frac {\\sigma_ {2} ^ {2}}{n _ {2}}} \\tag {3-54}",
+          "image_source": "../../raw/pages_0081-0096/images/page_92_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.215,
+            0.497,
+            0.235
+          ],
+          "content": "当 $\\sigma_{1}^{2} = \\sigma_{2}^{2} = \\sigma^{2}$ 时，式（3-53）可简化为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.422,
+            0.238,
+            0.882,
+            0.278
+          ],
+          "content": "\\sigma_ {\\overline {{x}} _ {1} - \\overline {{x}} _ {2}} ^ {2} = \\sigma^ {2} \\left(\\frac {1}{n _ {1}} + \\frac {1}{n _ {2}}\\right) \\tag {3-55}",
+          "image_source": "../../raw/pages_0081-0096/images/page_92_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.283,
+            0.479,
+            0.3
+          ],
+          "content": "当 $n_{1}=n_{2}=n$ 时，式（3-53）可简化为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.442,
+            0.303,
+            0.882,
+            0.339
+          ],
+          "content": "\\sigma_ {\\overline {{x}} _ {1} - \\overline {{x}} _ {2}} ^ {2} = \\frac {\\sigma_ {1} ^ {2} + \\sigma_ {2} ^ {2}}{n} \\tag {3-56}",
+          "image_source": "../../raw/pages_0081-0096/images/page_92_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.342,
+            0.662,
+            0.361
+          ],
+          "content": "当 $\\sigma_{1}^{2} = \\sigma_{2}^{2} = \\sigma^{2}$ 且 $n_{1}=n_{2}=n$ 时，式（3-53）可进一步简化为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.454,
+            0.365,
+            0.882,
+            0.4
+          ],
+          "content": "\\sigma_ {\\overline {{x}} _ {1} - \\overline {{x}} _ {2}} ^ {2} = \\frac {2 \\sigma^ {2}}{n} \\tag {3-57}",
+          "image_source": "../../raw/pages_0081-0096/images/page_92_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.405,
+            0.884,
+            0.451
+          ],
+          "content": "（3）从两个独立正态总体 $N \\left( \\mu _ { 1 } , \\sigma _ { \\overline { { x } } _ { 1 } } ^ { 2 } \\right)$ ）  和 $N \\left( \\mu _ { 2 } , \\sigma _ { \\overline { { x } } _ { 2 } } ^ { 2 } \\right)$ 中抽出的样本平均数差数的分布也是正态分布，并具有平均数 $\\mu _ { 1 } - \\mu _ { 2 }$ 和方差 $\\sigma _ { \\overline { { x } } _ { 1 } - \\overline { { x } } _ { 2 } } ^ { 2 }$ ，记作 $N \\left( \\mu _ { 1 } - \\mu _ { 2 } , \\sigma _ { \\bar { x } _ { 1 } - \\bar { x } _ { 2 } } ^ { 2 } \\right)$ 。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.163,
+            0.465,
+            0.418,
+            0.484
+          ],
+          "level": 2,
+          "content": "三、样本频率的抽样分布"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.161,
+            0.498,
+            0.473,
+            0.516
+          ],
+          "level": 2,
+          "content": "（一）一个样本频率的抽样分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.531,
+            0.884,
+            0.591
+          ],
+          "content": "生物学研究中，在研究一些分类变量时要用比例估计，也就是用样本频率 $\\hat { p }$ 去推断总体频率 $p _ { \\circ }$ 。例如，男女性别占全部人数之比、显隐性性状占总观测数的比例等。为了用样本频率 $\\hat { p }$ 去估计总体频率 $p   ,$ ，就需要了解样本频率的抽样分布。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.596,
+            0.884,
+            0.678
+          ],
+          "content": "样本频率的抽样分布（sampling distribution of frequency）也称为样本比例的抽样分布（sampling distribution of percentage），是从总体中重复随机抽取容量为 n 的所有样本，获得样本频率的概率分布。样本中具有某一特征的单位数 $x$ 占样本全部单位数 n 的比例称为样本频率，用 $\\hat { p }$ 表示，其计算公式为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.481,
+            0.685,
+            0.882,
+            0.715
+          ],
+          "content": "\\hat {p} = \\frac {x}{n} \\tag {3-58}",
+          "image_source": "../../raw/pages_0081-0096/images/page_92_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.72,
+            0.397,
+            0.737
+          ],
+          "content": "可用样本频率 $\\hat { p }$ 估计总体频率 $p   .$ 。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.742,
+            0.884,
+            0.802
+          ],
+          "content": "由二项分布可知，当 n 充分大时 $(n \\geqslant 30)$ ），在复置抽样的条件下，样本频率 $\\hat { p }$ 的抽样分布可用正态分布逼近。通过式（3-24）、式（3-25）和式（3-26）可以推导出样本频率（比例）的数学期望（平均数）、方差和标准差:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.402,
+            0.809,
+            0.882,
+            0.841
+          ],
+          "content": "\\mu_ {p} = E (P) = \\frac {\\mu_ {x}}{n} = \\frac {n p}{n} = p \\tag {3-59}",
+          "image_source": "../../raw/pages_0081-0096/images/page_92_equation_19.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.395,
+            0.844,
+            0.881,
+            0.88
+          ],
+          "content": "\\sigma_ {p} ^ {2} = D (P) = \\frac {\\sigma_ {x} ^ {2}}{n ^ {2}} = \\frac {p (1 - p)}{n} \\tag {3-60}",
+          "image_source": "../../raw/pages_0081-0096/images/page_92_equation_20.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.419,
+            0.884,
+            0.882,
+            0.921
+          ],
+          "content": "\\sigma_ {p} = \\sqrt {\\sigma_ {p} ^ {2}} = \\sqrt {\\frac {p (1 - p)}{n}} \\tag {3-61}",
+          "image_source": "../../raw/pages_0081-0096/images/page_92_equation_21.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 93,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.164,
+            0.087
+          ],
+          "content": "·82·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.088
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.106,
+            0.871,
+            0.138
+          ],
+          "content": "因此，样本频率 $\\hat { p }$ 的抽样分布具有平均数 $\\mu _ { p } { \\mathrm {  三  } } p .$ 、方差 $\\sigma_{p}^{2}=\\frac{p\\left(1-p\\right)}{n}$ ，记作 $N \\left( \\mu _ { p } , \\sigma _ { p } ^ { 2 } \\right)$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.15,
+            0.152,
+            0.509,
+            0.171
+          ],
+          "level": 2,
+          "content": "（二）两个样本频率差数的抽样分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.186,
+            0.875,
+            0.246
+          ],
+          "content": "设两个总体均服从二项分布，分别从两个总体中抽取样本容量为 $n _ { 1 }$ 、 $n _ { 2 }$ 的独立样本，得到样本频率分别为 $\\hat { p } _ { 1 }  、 \\hat { p } _ { 2 }  。$ 。当两个样本都为大样本时，两个样本频率之差的抽样分布可用正态分布来近似，其数学期望（平均数）、方差和标准差为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.386,
+            0.25,
+            0.871,
+            0.27
+          ],
+          "content": "\\mu_ {p _ {1} - p _ {2}} = E (P _ {1} - P _ {2}) = p _ {1} - p _ {2} \\tag {3-62}",
+          "image_source": "../../raw/pages_0081-0096/images/page_93_equation_5.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.32,
+            0.273,
+            0.871,
+            0.311
+          ],
+          "content": "\\sigma_ {p _ {1} - p _ {2}} ^ {2} = D (P _ {1} - P _ {2}) = \\frac {p _ {1} (1 - p _ {1})}{n _ {1}} + \\frac {p _ {2} (1 - p _ {2})}{n _ {2}} \\tag {3-63}",
+          "image_source": "../../raw/pages_0081-0096/images/page_93_equation_6.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.328,
+            0.314,
+            0.871,
+            0.355
+          ],
+          "content": "\\sigma_ {p _ {1} - p _ {2}} = \\sqrt {\\sigma_ {p _ {1} - p _ {2}} ^ {2}} = \\sqrt {\\frac {p _ {1} (1 - p _ {1})}{n _ {1}} + \\frac {p _ {2} (1 - p _ {2})}{n _ {2}}} \\tag {3-64}",
+          "image_source": "../../raw/pages_0081-0096/images/page_93_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.36,
+            0.863,
+            0.424
+          ],
+          "content": "因此，两个样本频率差数 $\\hat { p } _ { 1 } \\mathrm { { \\overline { { ~ - } } } } \\hat { p } _ { 2 }$ 的抽样分布服从正态分布，具有平均数 $\\mu_{p_{1}-p_{2}}=p_{1}-p_{2}$方差 $\\sigma_{p_{1}-p_{2}}^{2}=\\frac{p_{1}\\left(1-p_{1}\\right)}{n_{1}}+\\frac{p_{2}\\left(1-p_{2}\\right)}{n_{2}}$ ，记作 $N \\left( p _ { 1 } - p _ { 2 } , \\frac { p _ { 1 } \\left( 1 - p _ { 1 } \\right) } { n _ { 1 } } + \\frac { p _ { 2 } \\left( 1 - p _ { 2 } \\right) } { n _ { 2 } } \\right)$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.153,
+            0.437,
+            0.386,
+            0.456
+          ],
+          "level": 2,
+          "content": "四、正态总体抽样分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.47,
+            0.874,
+            0.532
+          ],
+          "content": "从正态总体 X 抽取样本，再由该样本构造统计数，则该统计数的分布称为正态总体抽样分布（sampling distribution of normal population），主要有 t 分布、 $\\chi ^ { 2 }$ 分布和 F 分布 3 个著名的分布。统计实践中，一般用 t 分布、 $\\chi ^ { 2 }$ 分布和 F 分布来构造精确的小样本 $(n \\leqslant 30)$ 方法。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.151,
+            0.545,
+            0.272,
+            0.563
+          ],
+          "level": 2,
+          "content": "（一）t 分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.578,
+            0.875,
+            0.68
+          ],
+          "content": "前面计算样本平均数分布和样本平均数差数分布的概率时，需要总体方差 $\\sigma ^ { 2 }$ 已知，或者$\\sigma ^ { 2 }$ 未知但样本容量较大 $(n \\geqslant 30)$ ），此时用样本方差 $s ^ { 2 }$ 估计 $\\sigma ^ { 2 }$ 。但在实际研究中经常遇到总体方差 $\\sigma ^ { 2 }$ 未知且样本容量不大 $(n < 30)$ 的情况，如果仍用 $s ^ { 2 }$ 来估计 $\\sigma ^ { 2 }$ ，这时 $\\frac { \\overline { { x } } \\overline { { - \\mu } } } { s / \\sqrt { n } }$ 就不再服从标准正态分布了，而是服从自由度 $df = n - 1$ 的 t 分布（t-distribution），即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.424,
+            0.686,
+            0.872,
+            0.722
+          ],
+          "content": "t = \\frac {\\overline {{x}} - \\mu}{s _ {\\overline {{x}}}} = \\frac {\\overline {{x}} - \\mu}{s / \\sqrt {n}} \\tag {3-65}",
+          "image_source": "../../raw/pages_0081-0096/images/page_93_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.727,
+            0.52,
+            0.745
+          ],
+          "content": "式中， $s _ { \\overline { { x } } }$ 为样本平均数的标准误，其计算公式为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.458,
+            0.752,
+            0.871,
+            0.784
+          ],
+          "content": "s _ {\\bar {x}} = \\frac {s}{\\sqrt {n}} \\tag {3-66}",
+          "image_source": "../../raw/pages_0081-0096/images/page_93_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.116,
+            0.788,
+            0.269,
+            0.805
+          ],
+          "content": "$s _ { \\overline { { x } } }$ 为 $\\sigma _ { \\overline { { x } } }$ 的估计值。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.81,
+            0.874,
+            0.848
+          ],
+          "content": "t 分布是英国统计学家 Gosset 于 1908 年以笔名“Student”所发表的论文中提出的，因此也称学生氏 t 分布，简称 t 分布。t 分布的概率密度函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.354,
+            0.852,
+            0.871,
+            0.926
+          ],
+          "content": "f (t) = \\frac {\\Gamma \\left(\\frac {d f + 1}{2}\\right)}{\\sqrt {\\pi d f} \\Gamma \\left(\\frac {d f}{2}\\right)} \\left(1 + \\frac {t ^ {2}}{d f}\\right) ^ {- \\frac {d f + 1}{2}} \\tag {3-67}",
+          "image_source": "../../raw/pages_0081-0096/images/page_93_equation_18.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 94,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.408,
+            0.073,
+            0.601,
+            0.089
+          ],
+          "content": "第 3 章 概率与概率分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.834,
+            0.075,
+            0.88,
+            0.088
+          ],
+          "content": "·83·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.106,
+            0.287,
+            0.122
+          ],
+          "content": "式中，Γ 为 Γ 函数。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.128,
+            0.52,
+            0.145
+          ],
+          "content": "t 分布的数学期望（平均数）和方差分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.424,
+            0.149,
+            0.884,
+            0.169
+          ],
+          "content": "\\mu_ {t} = 0 \\quad (d f > 1) \\tag {3-68}",
+          "image_source": "../../raw/pages_0081-0096/images/page_94_equation_4.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.412,
+            0.173,
+            0.882,
+            0.209
+          ],
+          "content": "\\sigma_ {t} ^ {2} = \\frac {d f}{d f - 2} \\quad (d f > 2) \\tag {3-69}",
+          "image_source": "../../raw/pages_0081-0096/images/page_94_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.214,
+            0.534,
+            0.36
+          ],
+          "content": "t 分布具有以下特征:①t 分布曲线是左右对称的，围绕平均数 $\\mu _ { t } { = } 0$ 向两侧递降；②t 分布受自由度 $df = n - 1$ 的制约，每个自由度都有一条 t分布曲线；③和正态分布相比，t 分布为扁平分布，其顶部偏低，尾部偏高，自由度 $df \\geqslant 30$ 时，其曲线就比较接近正态分布曲线，当 $df \\rightarrow \\infty$ 时则和正态分布曲线重合（图 3-15）。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.366,
+            0.534,
+            0.383
+          ],
+          "content": "和正态分布一样，t 分布曲线与横轴所围成的"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.387,
+            0.534,
+            0.405
+          ],
+          "content": "面积也等于 1。各种自由度下双尾概率水平的 t 值，"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.409,
+            0.875,
+            0.427
+          ],
+          "content": "$P { = } 0 . 0 5$ 的 t 值为 2.228， $P { = } 0 . 0 1$ 的 t 值为 3.169，分别记作 $t_{0.05(10)} = 2.228$ 和 $t_{0.01(10)} = 3.169.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.43,
+            0.882,
+            0.448
+          ],
+          "content": "因此，t 值在区间 $\\left[ - t _ { 0 . 0 5 } , + t _ { 0 . 0 5 } \\right]$ 内的概率为 0.95，在区间 $\\left[ - t _ { 0 . 0 1 } , + t _ { 0 . 0 1 } \\right]$ 内的概率为 0.99，"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.452,
+            0.586,
+            0.47
+          ],
+          "content": "其中 $t_{0.05} 、 t_{0.01}$ 分别称为双尾概率为 5%和 1%的 t 临界值。"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.545,
+            0.212,
+            0.887,
+            0.359
+          ],
+          "sub_type": "violin",
+          "content": "| X | t分布 (Y) | 正态分布 (Y) |\n| --- | --- | --- |\n| -4 | ~0.01 | ~0.02 |\n| -3 | ~0.05 | ~0.08 |\n| -2 | ~0.15 | ~0.18 |\n| -1 | ~0.32 | ~0.35 |\n| 0 | ~0.38 | ~0.42 |\n| 1 | ~0.32 | ~0.35 |\n| 2 | ~0.15 | ~0.18 |\n| 3 | ~0.05 | ~0.08 |\n| 4 | ~0.01 | ~0.02 |",
+          "captions": [
+            {
+              "bbox": [
+                0.55,
+                0.361,
+                0.879,
+                0.376
+              ],
+              "content": "图 3-15 正态分布曲线与 t 分布曲线的比较"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_94_chart_12.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.161,
+            0.482,
+            0.294,
+            0.505
+          ],
+          "level": 2,
+          "content": "（二） $\\chi ^ { 2 }$ 分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.519,
+            0.886,
+            0.574
+          ],
+          "content": "在第三节，我们已经知道标准正态离差 $\\frac { \\overline { { x } } \\mathrm { { \\textellipsis } } \\mu } { \\sigma }$ 服从 $N \\left( 0 , 1 \\right)$ 。假设从标准正态总体中抽取 k 个独立样本，就会得到 $u_{1}^{2}, \\quad u_{2}^{2}, \\quad \\cdots, \\quad u_{k}^{2}$ ，则定义它们的和为 $\\chi^{2}   ( chi-square )$ ，即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.341,
+            0.578,
+            0.884,
+            0.618
+          ],
+          "content": "\\chi^ {2} = u _ {1} ^ {2} + u _ {2} ^ {2} + \\dots + u _ {k} ^ {2} = \\sum_ {i = 1} ^ {k} u _ {i} ^ {2} = \\sum_ {i = 1} ^ {k} \\left(\\frac {x - \\mu}{\\sigma}\\right) ^ {2} \\tag {3-70}",
+          "image_source": "../../raw/pages_0081-0096/images/page_94_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.621,
+            0.654,
+            0.639
+          ],
+          "content": "式（3-70）即 $\\chi ^ { 2 }$ 分布（distribution），其自由度为 $df = k - 1$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.643,
+            0.886,
+            0.682
+          ],
+          "content": "$\\chi ^ { 2 }$ 分布首先由 Abbey 于 1863 年提出，后来由 Hermert 和 K. Pearson 分别于 1875 年和 1900年推导出来。 $\\chi ^ { 2 }$ 分布的概率密度函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.402,
+            0.686,
+            0.885,
+            0.755
+          ],
+          "content": "f (\\chi^ {2}) = \\frac {(\\chi^ {2}) ^ {\\frac {d f}{2} - 1}}{2 ^ {\\frac {d f}{2}} \\Gamma \\left(\\frac {d f}{2}\\right)} \\mathrm{e} ^ {- \\frac {1}{2} \\chi^ {2}} \\tag {3-71}",
+          "image_source": "../../raw/pages_0081-0096/images/page_94_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.159,
+            0.758,
+            0.377,
+            0.776
+          ],
+          "content": "$\\chi ^ { 2 }$ 分布的概率累积函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.403,
+            0.78,
+            0.885,
+            0.809
+          ],
+          "content": "F (\\chi^ {2}) = \\int_ {0} ^ {\\chi^ {2}} f (\\chi^ {2}) \\mathrm{d} (\\chi^ {2}) \\tag {3-72}",
+          "image_source": "../../raw/pages_0081-0096/images/page_94_equation_21.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.812,
+            0.886,
+            0.916
+          ],
+          "content": "$\\chi ^ { 2 }$ 分布是连续性随机变量的分布，每个不同的自由度都有一个相应的 $\\chi ^ { 2 }$ 分布曲线，所以$\\chi ^ { 2 }$ 分布是一组曲线。 $\\chi ^ { 2 }$ 分布的特征为: $\\textcircled{i} \\chi^{2}$ 分布于区间 $\\left[0,   +\\infty\\right)$ ，并且呈反 J 形的偏态分布（skewed distribution）； $\\textcircled{2} \\chi^{2}$ 分布的偏度系数随自由度降低而增大，当自由度 $d f { = } 1$ 时，曲线以纵轴为渐近线；③随自由度 $d f$ 增大， $\\chi ^ { 2 }$ 分布曲线渐趋左右对称，当 $df \\geqslant 30$ 时， $\\chi ^ { 2 }$ 分布已接近正态分布（图 3-16）。"
+        }
+      ]
+    },
+    {
+      "page_idx": 95,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.164,
+            0.087
+          ],
+          "content": "·84·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.087
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.112,
+            0.102,
+            0.406,
+            0.308
+          ],
+          "sub_type": "line",
+          "content": "| \\(\\chi^{2}\\) | df=1 | df=3 | df=5 |\n| --- | --- | --- | --- |\n| 0 | 0.5 | 0 | 0 |\n| ~1.2 | ~0.23 | ~0.23 | ~0.08 |\n| ~3.2 | ~0.05 | ~0.16 | ~0.16 |\n| ~12 | — | — | ~0.01 |",
+          "captions": [
+            {
+              "bbox": [
+                0.127,
+                0.312,
+                0.393,
+                0.328
+              ],
+              "content": "图 3-16 不同自由度的 $\\chi ^ { 2 }$ 分布曲线"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_95_chart_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.415,
+            0.106,
+            0.875,
+            0.228
+          ],
+          "content": "附表 4 列出了各种自由度下不同单尾（右尾）概率的 $\\chi ^ { 2 }$ 值。例如，当 $d f { = } 2$ 时，查得 $P { = } 0 . 0 5$ 的 $\\chi ^ { 2 }$ 值为 5.99，$P { = } 0 . 0 1$ 的 $\\chi ^ { 2 }$ 值为 9.21，分别记作 $\\chi^{2}_{0.05(2)} = 5.99, \\chi^{2}_{0.01(2)} =$ 9.21，表示 $P\\left( \\chi^{2} > 5.99 \\right) = 0.05$ $P\\left( \\chi^{2} > 9.21 \\right) = 0.01$即所得 $\\chi ^ { 2 }$ 值大于 5.99 的概率仅有 5%，大于 9.21 的概率仅有 1%。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.455,
+            0.241,
+            0.582,
+            0.26
+          ],
+          "level": 2,
+          "content": "（三）F 分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.415,
+            0.271,
+            0.874,
+            0.333
+          ],
+          "content": "设从一正态总体 $N \\left( \\mu , \\sigma ^ { 2 } \\right)$ 中随机抽取样本容量为$n _ { 1 }$ 和 $n _ { 2 }$ 的两个独立样本，其样本方差为 $s _ { 1 } ^ { 2 }$ 和 $s _ { 2 } ^ { 2 }$ ，则定义 $s _ { 1 } ^ { 2 }$ 和 $s _ { 2 } ^ { 2 }$ 的比值为 $F ;$ :"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.464,
+            0.336,
+            0.871,
+            0.375
+          ],
+          "content": "F = \\frac {s _ {1} ^ {2}}{s _ {2} ^ {2}} \\tag {3-73}",
+          "image_source": "../../raw/pages_0081-0096/images/page_95_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.379,
+            0.875,
+            0.461
+          ],
+          "content": "此 F 值具有 $s _ { 1 } ^ { 2 }$ 的自由度 $df_{1}=n_{1}-1$ 和 $s _ { 2 } ^ { 2 }$ 的自由度 $df_{2}=n_{2}-1$ 。如果对一正态总体在特定的 $d f _ { 1 }$ 和 $d f _ { 2 }$ 下进行一系列随机独立抽样，则所有可能的 F 值就构成一个 F 分布（F-distribution）。F 分布的概率密度函数是由两个独立 $\\chi ^ { 2 }$ 变量的概率密度所构成的联合概率密度函数（joint probability density function），其方程为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.285,
+            0.463,
+            0.872,
+            0.536
+          ],
+          "content": "f (F) = \\frac {\\Gamma \\left(\\frac {d f _ {1} + d f _ {2}}{2}\\right)}{\\Gamma \\left(\\frac {d f _ {1}}{2}\\right) \\Gamma \\left(\\frac {d f _ {2}}{2}\\right)} d f _ {1} ^ {\\frac {d f _ {1}}{2}} d f _ {2} ^ {\\frac {d f _ {2}}{2}} \\frac {F ^ {\\frac {d f _ {1}}{2} - 1}}{(d f _ {1} F + d f _ {2}) ^ {\\frac {d f _ {1} + d f _ {2}}{2}}} \\tag {3-74}",
+          "image_source": "../../raw/pages_0081-0096/images/page_95_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.537,
+            0.874,
+            0.576
+          ],
+          "content": "式中，Γ 为 $T$ 函数； $d f _ { 1 }$ 和 $d f _ { 2 }$ 分别为 $s _ { 1 } ^ { 2 }$ 和 $s _ { 2 } ^ { 2 }$ 的自由度。由式（3-74）可知，F 分布是随自由度 $d f _ { 1 }$ 和 $d f _ { 2 }$ 变化而变化的一组曲线。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.58,
+            0.363,
+            0.596
+          ],
+          "content": "F 分布的概率累积函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.192,
+            0.597,
+            0.482,
+            0.624
+          ],
+          "content": "F (F) = \\int_ {0} ^ {F} f (F) \\mathrm{d} F \\tag {3-75}",
+          "image_source": "../../raw/pages_0081-0096/images/page_95_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.626,
+            0.484,
+            0.751
+          ],
+          "content": "F 分布具有以下特征: $\\textcircled{i} F$ 的取值区间为$\\left[0,   +\\infty \\right)$ ；②F 分布的平均数 $\\mu _ { F } { = } 1$ ，因为构成 F 值的 $s _ { 1 } ^ { 2 }$ 和 $s _ { 2 } ^ { 2 }$ 都是同一 $\\sigma ^ { 2 }$ 的无偏值；③F分布曲线的形状仅取决于 $d f _ { 1 }$ 和 $d f _ { 2 }$ ，在 $d f _ { 1 } { = } 1$和 $df_{1} = 2$ 时，F 分布曲线呈 $\\begin{aligned} 产 \\end{aligned}$ 重倾斜的反向 J形，当 $df_{1} \\geqslant 3$ 时转为右偏曲线（图 3-17）。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.756,
+            0.484,
+            0.794
+          ],
+          "content": "附表 5 列出的是 F 分布在不同 $d f _ { 1 }$ $d f _ { 2 }$下 $P { = } 0 . 0 5$ 和 $P { = } 0 . 0 1$ 时的 F 值（右尾）。例"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.494,
+            0.587,
+            0.877,
+            0.771
+          ],
+          "sub_type": "line",
+          "content": "| F | df1=2, df2=5 | df1=8, df2=20 | df1=4, df2=10 |\n|---|---|---|---|\n| 0 | 1.0 | 0.0 | 0.0 |\n| ~0.3 | ~0.65 | ~0.65 | ~0.65 |\n| ~0.6 | ~0.45 | ~0.78 | ~0.68 |\n| ~1.0 | ~0.3 | ~0.55 | ~0.45 |\n| ~1.5 | ~0.2 | ~0.3 | ~0.3 |\n| ~2.0 | ~0.15 | ~0.18 | ~0.18 |\n| ~3.0 | ~0.05 | ~0.08 | ~0.08 |\n| ~4.0 | ~0.02 | ~0.06 | ~0.06 |",
+          "captions": [
+            {
+              "bbox": [
+                0.534,
+                0.774,
+                0.833,
+                0.789
+              ],
+              "content": "图 3-17 不同自由度 $d f _ { 1 }$ 和 $d f _ { 2 }$ 的 F 分布"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_95_chart_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.798,
+            0.874,
+            0.86
+          ],
+          "content": "如， $df_{1}=4,\\ df_{2}=10$ 时，可查得 $P { = } 0 . 0 5$ 的 F 值为 3.48， $P { = } 0 . 0 1$ 的 F 值为 5.99，分别记作 $F_{0.05(4,10)} = 3.48$ $F_{0.01(4,10)} = 5.99$ ，表示 $P\\left(F>3.84\\right)=0.05$ ，P $(F > 5.99) = 0.01$ ，即所得$F$ 值大于 3.48 的概率仅有 5%，大于 5.99 的概率仅有 1%。"
+        }
+      ]
+    },
+    {
+      "page_idx": 96,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.409,
+            0.073,
+            0.599,
+            0.088
+          ],
+          "content": "第 3 章 概率与概率分布"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.835,
+            0.075,
+            0.878,
+            0.087
+          ],
+          "content": "·85·"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.428,
+            0.125,
+            0.565,
+            0.145
+          ],
+          "level": 2,
+          "content": "思考练习题"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.159,
+            0.17,
+            0.655,
+            0.185
+          ],
+          "content": "习题 **3.1** 试解释必然事件、不可能事件和随机事件，并分别举例。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.159,
+            0.189,
+            0.624,
+            0.204
+          ],
+          "content": "习题 **3.2** 随机试验的含义是什么？什么是样本空间和样本点？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.159,
+            0.208,
+            0.608,
+            0.223
+          ],
+          "content": "习题 **3.3** 什么是频率？什么是概率？频率如何转化为概率？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.158,
+            0.227,
+            0.74,
+            0.242
+          ],
+          "content": "习题 **3.4** 什么是互斥事件？什么是对立事件？什么是独立事件？试举例说明。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.159,
+            0.246,
+            0.506,
+            0.261
+          ],
+          "content": "习题 **3.5** 什么是条件概率？何谓全概率法则？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.159,
+            0.265,
+            0.488,
+            0.28
+          ],
+          "content": "习题 **3.6** 什么是随机变量？它有哪些类型？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.159,
+            0.285,
+            0.485,
+            0.299
+          ],
+          "content": "习题 **3.7** 简述概率密度函数及其图形意义。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.303,
+            0.882,
+            0.336
+          ],
+          "content": "习题 **3.8** 什么是正态分布？什么是标准正态分布？正态分布曲线有什么特点 $\\textit { ? } \\mu$ 和 σ 对正态分布曲线有何影响？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.158,
+            0.341,
+            0.876,
+            0.356
+          ],
+          "content": "习题 **3.9** 什么是抽样分布？样本平均数的抽样总体与原总体平均数、方差两个参数间有何关系？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.36,
+            0.88,
+            0.394
+          ],
+          "content": "习题 **3.10** 已知 u 服从标准正态分布 $N ( 0 ,   1 )$ ，试查 $F ( u )$ 值表计算下列概率值: $P(0.3 < u \\leq 1.08)$ $P\\ (-1<u\\leqslant 1);\\quad \\textcircled{3} P\\ (-2<u\\leqslant 2);\\quad \\textcircled{4} P\\ (-1.96<u\\leqslant 1.96);\\quad \\textcircled{5} P\\ (-2.58<u\\leqslant 2.58)$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.398,
+            0.875,
+            0.432
+          ],
+          "content": "习题 **3.11** 设 X 服从正态分布 N（4，16），试通过标准化变换后查 $F \\; \\left( u \\right)$ 值表计算下列概率值:$P\\left(-3<x\\leqslant4\\right);\\quad P\\left(x\\leqslant0.44\\right);\\quad P\\left(x>-1.48\\right);\\quad \\left(4\\right)P\\left(x>-1\\right)$ 。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.436,
+            0.884,
+            0.47
+          ],
+          "content": "习题 **3.12** 有一男女比例为 51∶49 的人群，已知男性中 5%是色盲，女性中 0.25%是色盲，现随机抽中了一个色盲者，计算这个色盲者恰好是男性的概率。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.474,
+            0.884,
+            0.546
+          ],
+          "content": "习题 **3.13** 水稻糯和非糯为一对等位基因控制，糯稻纯合体为 ww，非糯稻纯合体为 WW，两个纯合亲本杂交后，其 $\\mathrm { F _ { 1 } }$ 代为非糯稻杂合体 $W w .$ 。①现以 $\\mathrm { F _ { 1 } }$ 代回交于糯稻亲本，在后代 200 株中预期有多少株为糯稻，多少株为非糯稻？试列出糯稻和非糯稻的概率； $\\textcircled { 2 }$ 当 $\\mathrm { F _ { 1 } }$ 代自交， $\\mathrm { F } _ { 2 }$ 代性状分离，其中 3/4为非糯稻，1/4 为糯稻。假定 $\\mathrm { F } _ { 2 }$ 代播种了 2000 株，试问糯稻株和非糯稻株各有多少株？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.55,
+            0.884,
+            0.603
+          ],
+          "content": "习题 **3.14** 大麦的矮生基因和抗锈基因连锁，以矮生基因与正常抗锈基因杂交，在 $\\mathrm { F } _ { 2 }$ 代出现纯合正常抗锈植株的概率仅 0.0036。试计算:①在 $\\mathrm { F } _ { 2 }$ 代种植 200 株时，纯合正常抗锈植株的各种可能株数的概率；②若希望有 0.99 的概率保证获得 1 株或 1 株以上纯合正常抗锈植株，则 $\\mathrm { F } _ { 2 }$ 代至少应种植多少株？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.607,
+            0.882,
+            0.641
+          ],
+          "content": "习题 **3.15** 设对同性别、同月龄的小白鼠接种某种病菌，假定接种后经过一段时间生存的概率为0.425，若 5 只一组进行随机抽样，试问其中“四生一死”的概率有多大？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.645,
+            0.882,
+            0.68
+          ],
+          "content": "习题 **3.16** 有一正态分布的平均数为 16，方差为 4，试计算:①落于 10～20 的数据的百分数；②小于 12 或大于 20 的数据的百分数。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.684,
+            0.881,
+            0.734
+          ],
+          "content": "习题**3.17** 假设一种有机生物的寿命服从参数λ= $\\pm { \\frac { 1 } { 2 0 0 } }$ 的指数分布。随机选取一个该物种的新生命，计算:①该有机生物活过 60 年的概率。②该有机生物的寿命在 50～80 年的概率。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.738,
+            0.884,
+            0.791
+          ],
+          "content": "习题 **3.18** 查表计算: $\\textcircled{i} d f { = } 5$ 时， $P\\left(t\\leqslant-2.571\\right)=?P\\left(t>4.032\\right)=?\\frac{2}{9}df=2$ 时，P $( \\chi ^ { 2 } \\leqslant 0 . 0 5 ) = ? P ( \\chi ^ { 2 } > 5 . 9 9 ) = ? P ( 0 . 0 5 < \\chi ^ { 2 } \\leqslant 7 . 3 8 ) = ? \\textcircled { 3 } d f _ { 1 } = 3 , d f _ { 2 } = 1 0$ 时， $P\\left(F>3.71\\right)=?$ $P\\left(F>6.55\\right)=?$"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.474,
+            0.806,
+            0.536,
+            0.851
+          ],
+          "content": ""
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.475,
+            0.854,
+            0.534,
+            0.866
+          ],
+          "content": "参考答案"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "authors": [
+        "CNKI"
+      ],
+      "created_at": "2023-10-31T11:03:42-08:00",
+      "creator_application": "ReaderEx_DIS 2.0.0 Build 3915",
+      "producer_application": "TTKN",
+      "page_count": 393,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 0,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 1,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 2,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 3,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 4,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 5,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 6,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 7,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 8,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 9,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 10,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 11,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 12,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 13,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 14,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 15,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

@@ -1,0 +1,2699 @@
+{
+  "pages": [
+    {
+      "page_idx": 289,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.138,
+            0.134,
+            0.338,
+            0.163
+          ],
+          "content": "第 11 章"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.682,
+            0.182,
+            0.856,
+            0.211
+          ],
+          "level": 2,
+          "content": "协方差分析"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.135,
+            0.263,
+            0.22,
+            0.285
+          ],
+          "level": 2,
+          "content": "本章提要"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.293,
+            0.848,
+            0.309
+          ],
+          "content": "协方差分析是将方差分析和回归分析结合应用的一种综合统计分析方法。本章主要讨论:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.164,
+            0.315,
+            0.476,
+            0.395
+          ],
+          "sub_type": "text",
+          "content": "• 协方差分析的意义和作用；\n• 协方差分析的数学模型与基本假定；\n• 单向分组数据的协方差分析；\n• 两向分组数据的协方差分析。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.423,
+            0.874,
+            0.504
+          ],
+          "content": "第 7 章所介绍的方差分析是对某一种性状的变量进行分析的方法，但是在实际调查或试验中，我们常会遇到所分析的变量还受到另一个或多个难以控制的变量影响的情况，此时我们就需要考虑是否能够采用某种方法来消除这些干扰变量的影响，以提高试验结果的可靠程度。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.509,
+            0.875,
+            0.592
+          ],
+          "content": "协方差分析常用于在比较一个依变量 y 在一个或几个不同试验因素水平上的差异的同时，y 还受另一个难以人为控制的变量 x 的影响，且该变量 x 不能作为方差分析中的一个因素去进行分解处理。此时，如果 x 和 y 之间存在直线回归关系，我们就在按照变异来源对平方和、乘积和与自由度进行分解的基础上，首先检验 x 和 y 的直线回归关系，并据此对 y 进"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.131,
+            0.598,
+            0.194,
+            0.643
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.118,
+                0.646,
+                0.205,
+                0.69
+              ],
+              "content": "协方差分析与方差分析变量关系的不同"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_289_image_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.22,
+            0.595,
+            0.874,
+            0.656
+          ],
+          "content": "行矫正，然后对矫正后的 y 值进行方差分析。这种把回归分析与方差分析结合起来应用的分析方法，就称为协方差分析（analysis of covariance），变量 x 称为协变量（covariate）。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.22,
+            0.661,
+            0.873,
+            0.699
+          ],
+          "content": "协方差分析可用于单因素、二因素及多因素分组数据，本章仅介绍单因素（单向分组）和二因素（两向分组）数据的协方差分析。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.296,
+            0.723,
+            0.673,
+            0.746
+          ],
+          "level": 2,
+          "content": "第一节 协方差分析的基本概念"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.152,
+            0.767,
+            0.453,
+            0.787
+          ],
+          "level": 2,
+          "content": "一、协方差分析的意义和作用"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.801,
+            0.875,
+            0.904
+          ],
+          "content": "第 7 章中的“方差”是描述某一变量偏离其平均数程度的变异特征数，方差越大，该变量的变异越大。而“协方差”则是用来度量两个变量之间协同变异程度的总体参数，协方差的绝对值越大，两个变量相互影响越大。对于涉及两个变量的试验数据，由于每个变量的总变异既包含了各变量的自身变异，也包含了由于二者相互影响的协同变异，故须采用协方差分析的方法来进行分析，才能得到正确的推断。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.909,
+            0.486,
+            0.926
+          ],
+          "content": "协方差分析的作用主要有以下 3 个方面。"
+        }
+      ]
+    },
+    {
+      "page_idx": 290,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.421,
+            0.073,
+            0.586,
+            0.088
+          ],
+          "content": "第 11 章 协方差分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.826,
+            0.075,
+            0.877,
+            0.087
+          ],
+          "content": "·279·"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.161,
+            0.113,
+            0.519,
+            0.132
+          ],
+          "level": 2,
+          "content": "（一）降低试验误差，实现统计控制"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.144,
+            0.886,
+            0.334
+          ],
+          "content": "要提高试验的精确度和灵敏度，必须严格控制试验条件的均匀性，使各处理处于尽可能一致的条件下，这称为试验控制（experimental control）。但是在某些情况下，即使做出很大努力也难使试验控制达到预期要求。例如，研究植物生长调节剂对减少棉花蕾铃脱落的效应，要求各处理的单株有相同的蕾铃数，而这是不易达到的。如果单株蕾铃数（x）和蕾铃脱落率 $( y )$ 之间存在直线回归关系，则可以利用这种直线回归关系将各处理 y 的观测值都矫正到x 相同时的结果，使得处理间 $y$ 的比较能够在相同的 x 基础上进行，从而得出正解的结论，实现统计控制。统计控制（statistical control）是试验控制的一种辅助手段，是用统计方法来矫正因客观存在又无法控制的因素造成的自变量的不同而对依变量所产生的影响。经过矫正，可使试验误差减小，对试验处理效应的估计更为准确。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.161,
+            0.346,
+            0.518,
+            0.365
+          ],
+          "level": 2,
+          "content": "（二）分析不同变异来源的相关关系"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.377,
+            0.884,
+            0.416
+          ],
+          "content": "在第 8 章“直线回归与相关分析”一章，已经介绍过相关系数可以表示两个相关变量线性相关的性质与程度。相关系数的计算公式为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.392,
+            0.419,
+            0.614,
+            0.468
+          ],
+          "content": "r = \\frac {\\sum (x - \\bar {x}) (y - \\bar {y})}{\\sqrt {\\sum (x - \\bar {x}) ^ {2} \\sum (y - \\bar {y}) ^ {2}}}",
+          "image_source": "../../raw/pages_0289-0304/images/page_290_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.472,
+            0.499,
+            0.488
+          ],
+          "content": "将该式的分子和分母同时除以（n-1），可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.387,
+            0.492,
+            0.886,
+            0.575
+          ],
+          "content": "r = \\frac {\\frac {\\sum (x - \\bar {x}) (y - \\bar {y})}{n - 1}}{\\sqrt {\\frac {\\sum (x - \\bar {x}) ^ {2}}{n - 1} \\frac {\\sum (y - \\bar {y}) ^ {2}}{n - 1}}} \\tag {11-1}",
+          "image_source": "../../raw/pages_0289-0304/images/page_290_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.577,
+            0.882,
+            0.676
+          ],
+          "content": "式中， $\\frac{\\sum (x - \\overline{x})^2}{n - 1}$ 为 x 的均方（mean square），记作 $M S _ { x }$ ，它是变量 x 总体方差 $\\sigma _ { x } ^ { 2 }$ 的无偏估计量；$\\frac{\\sum (y - \\overline{y})^2}{n - 1}$ 为 y 的均方，记作 $M S _ { y }$ ，它是变量 y 总体方差 $\\sigma _ { y } ^ { 2 }$ 的无偏估计量； $\\frac{\\sum (x - \\bar{x})(y - \\bar{y})}{n - 1}$为 x 与 y 的平均的离均差的乘积和，简称为均积（mean product），记作 $M P _ { x y }$ ，公式为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.328,
+            0.677,
+            0.885,
+            0.731
+          ],
+          "content": "M P _ {x y} = \\frac {\\sum (x - \\bar {x}) (y - \\bar {y})}{n - 1} = \\frac {\\sum x y - \\frac {\\sum x \\sum y}{n}}{n - 1} \\tag {11-2}",
+          "image_source": "../../raw/pages_0289-0304/images/page_290_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.734,
+            0.883,
+            0.753
+          ],
+          "content": "与样本的均积相应的总体参数称为协方差（covariance），记作 $C O V _ { x y }$ 或 $\\sigma _ { x y } ^ { 2 }$ 。其计算公式为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.391,
+            0.756,
+            0.885,
+            0.793
+          ],
+          "content": "C O V _ {x y} = \\frac {\\sum (x - \\mu_ {x}) (y - \\mu_ {y})}{N} \\tag {11-3}",
+          "image_source": "../../raw/pages_0289-0304/images/page_290_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.801,
+            0.884,
+            0.841
+          ],
+          "content": "统计学上已经证明样本均积 $M P _ { x y }$ 是总体协方差 $C O V _ { x y }$ 的无偏估计值。因此，样本相关系数 r 也可用样本的均方 $M S _ { x }$ $M S _ { y }$ 和均积 $M P _ { x y }$ 表示:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.443,
+            0.848,
+            0.885,
+            0.89
+          ],
+          "content": "r = \\frac {M P _ {x y}}{\\sqrt {M S _ {x} M S _ {y}}} \\tag {11-4}",
+          "image_source": "../../raw/pages_0289-0304/images/page_290_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.895,
+            0.719,
+            0.912
+          ],
+          "content": "而相应的总体相关系数 ρ 可用 x 与 y 的总体方差与总体协方差表示:"
+        }
+      ]
+    },
+    {
+      "page_idx": 291,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.172,
+            0.087
+          ],
+          "content": "·280·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.087
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.412,
+            0.102,
+            0.875,
+            0.146
+          ],
+          "content": "\\rho = \\frac {C O V _ {x y}}{\\sqrt {\\sigma_ {x} ^ {2} \\sigma_ {y} ^ {2}}} = \\frac {C O V _ {x y}}{\\sigma_ {x} \\sigma_ {y}} \\tag {11-5}",
+          "image_source": "../../raw/pages_0289-0304/images/page_291_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.15,
+            0.874,
+            0.254
+          ],
+          "content": "在随机模型的方差分析中，根据方差和期望方差的关系，可以得到不同来源的方差组分的估计值。同样，在随机模型的协方差分析中，根据均积和期望均积的关系，可以得到不同变异来源的协方差组分的估计值。有了这些估计值，就可进一步估算出两个变量 x 与 y 之间各个变异来源的相关系数，从而进行相应的总体相关分析。这些分析在遗传、育种、生态和环保等方面的研究上是很有用处的。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.15,
+            0.268,
+            0.351,
+            0.287
+          ],
+          "level": 2,
+          "content": "（三）估计缺失数据"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.302,
+            0.873,
+            0.362
+          ],
+          "content": "利用方差分析的方法对缺失数据进行估计，是建立在误差平方和最小的基础上的，但处理平方和却向上偏倚。如果用协方差分析的方法估计缺失数据，则既可保证误差平方和最小，又能得到无偏的处理平方和。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.152,
+            0.376,
+            0.431,
+            0.395
+          ],
+          "level": 2,
+          "content": "二、协方差分析的数学模型"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.41,
+            0.764,
+            0.427
+          ],
+          "content": "对于一个具有 N 对（x，y）观测值的总体，协方差分析的线性数学模型为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.382,
+            0.431,
+            0.874,
+            0.45
+          ],
+          "content": "y _ {i j} = \\mu_ {y} + \\alpha_ {i} + \\beta (x _ {i j} - \\mu_ {x}) + \\varepsilon_ {i j} \\tag {11-6}",
+          "image_source": "../../raw/pages_0289-0304/images/page_291_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.454,
+            0.873,
+            0.493
+          ],
+          "content": "式中， $\\mu _ { y }$ 和 $\\mu _ { x }$ 分别为 y 和 $x$ 的总体平均数； $\\alpha _ { i }$ 为第 i 个处理的效应； $\\beta$ 为 y 依 x 的总体回归系数； $\\varepsilon _ { i j }$ 为随机误差。式（11-6）移项可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.381,
+            0.496,
+            0.875,
+            0.515
+          ],
+          "content": "y _ {i j} - \\alpha_ {i} = \\mu_ {y} + \\beta (x _ {i j} - \\mu_ {x}) + \\varepsilon_ {i j} \\tag {11-7}",
+          "image_source": "../../raw/pages_0289-0304/images/page_291_equation_10.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.382,
+            0.518,
+            0.875,
+            0.537
+          ],
+          "content": "y _ {i j} - \\beta (x _ {i j} - \\mu_ {x}) = \\mu_ {y} + \\alpha_ {i} + \\varepsilon_ {i j} \\tag {11-8}",
+          "image_source": "../../raw/pages_0289-0304/images/page_291_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.54,
+            0.875,
+            0.621
+          ],
+          "content": "式（11-7）中，若令 $y _ { i j } ^ { \\prime }   =   y _ { i j }   -   \\alpha _ { i }$ $y _ { i j } ^ { \\prime }$ 表示在观测值中剔除了处理效应，即误差项，此时协方差分析即 $y _ { i j } ^ { \\prime }$ 与 $x _ { i j }$ 的线性回归分析。式（11-8）中，若令 $y_{ij}^{\\prime\\prime} = y_{ij} - \\beta(x_{ij} - \\mu_x)$ $y _ { i j } ^ { \\prime \\prime }$ 表示对观测值进行了回归矫正，此时协方差分析即 $y _ { i j } ^ { \\prime \\prime }$ 的方差分析，并且是消除了 $x _ { i j }$ 不一致对 $y _ { i j }$ 影响之后的方差分析。由此说明协方差分析是回归分析与方差分析的结合。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.153,
+            0.635,
+            0.431,
+            0.654
+          ],
+          "level": 2,
+          "content": "三、协方差分析的基本假定"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.132,
+            0.67,
+            0.195,
+            0.715
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.119,
+                0.717,
+                0.207,
+                0.761
+              ],
+              "content": "关于回归系数同质性检验的问题"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_291_image_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.259,
+            0.668,
+            0.801,
+            0.686
+          ],
+          "content": "当应用上述模型检验矫正平均数时，必须满足下面 3 个基本假定。"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.259,
+            0.69,
+            0.861,
+            0.769
+          ],
+          "sub_type": "text",
+          "content": "（1） $x$ 是固定的变量，因而处理效应 $\\alpha _ { i }$ 属固定模型。\n（2） $\\varepsilon _ { i j }$ 是独立的（与处理效应无关），且服从 $N \\left( 0 , \\sigma _ { y / x } ^ { 2 } \\right)$ 。从样本来说，各处理的离回归方差 $s_{y/x}^{2}=\\frac{Q_{i}}{n-2}$ 应没有显著差异，即离回归方差同质。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.776,
+            0.874,
+            0.837
+          ],
+          "content": "（3）各处理的（x，y）总体都是线性的，且具有共同的回归系数 $\\beta ,$ ，因而各处理总体的回归是一组平行的直线。对样本来说，各误差项的回归系数本身是显著的，但各回归系数 $b _ { i }$之间的差异不显著，即误差项的线性回归是显著的，而回归系数 $b _ { i }$ 的差异是不显著的。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.27,
+            0.861,
+            0.699,
+            0.882
+          ],
+          "level": 2,
+          "content": "第二节 单向分组数据的协方差分析"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.906,
+            0.873,
+            0.924
+          ],
+          "content": "由式（11-2）可以看出，均积与均方有相似的形式，同时二者也具有相似的性质。在方"
+        }
+      ]
+    },
+    {
+      "page_idx": 292,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.422,
+            0.073,
+            0.586,
+            0.088
+          ],
+          "content": "第 11 章 协方差分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.826,
+            0.075,
+            0.878,
+            0.087
+          ],
+          "content": "·281·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.106,
+            0.884,
+            0.166
+          ],
+          "continues_prev": true,
+          "content": "差分析中，一个变量的总平方和与总自由度可以按照变异来源进行分解，从而求得相应的均方。统计学已证明，两个变量的总乘积和与总自由度也可按照变异来源进行分解从而获得相应的均积。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.171,
+            0.88,
+            0.209
+          ],
+          "content": "设有 k 组双变量数据，每组样本皆有 n 对 $( x ,   y )$ 观测值，那么该数据共有 nk 对观测值，其数据模式如表 11-1 所示。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.246,
+            0.885,
+            0.518
+          ],
+          "content": "<table><tr><td>组别</td><td></td><td></td><td colspan=\"4\">观测值</td><td>总和</td><td>平均</td></tr><tr><td rowspan=\"2\">1</td><td> $x_{11}$ </td><td> $x_{12}$ </td><td>...</td><td> $x_{1j}$ </td><td>...</td><td> $x_{1n}$ </td><td> $T_{x1}.$ </td><td> $\\overline{x}_{1}.$ </td></tr><tr><td> $y_{11}$ </td><td> $y_{12}$ </td><td>...</td><td> $y_{1j}$ </td><td>...</td><td> $y_{1n}$ </td><td> $T_{y1}.$ </td><td> $\\overline{y}_{1}.$ </td></tr><tr><td rowspan=\"2\">2</td><td> $x_{21}$ </td><td> $x_{22}$ </td><td>...</td><td> $x_{2j}$ </td><td>...</td><td> $x_{2n}$ </td><td> $T_{x2}.$ </td><td> $\\overline{x}_{2}.$ </td></tr><tr><td> $y_{21}$ </td><td> $y_{22}$ </td><td>...</td><td> $y_{2j}$ </td><td>...</td><td> $y_{2n}$ </td><td> $T_{y2}.$ </td><td> $\\overline{y}_{2}.$ </td></tr><tr><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td><td></td><td> $\\vdots$ </td><td></td><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td></tr><tr><td rowspan=\"2\">i</td><td> $x_{i1}$ </td><td> $x_{i2}$ </td><td>...</td><td> $x_{ij}$ </td><td>...</td><td> $x_{in}$ </td><td> $T_{xi}.$ </td><td> $\\overline{x}_{i}.$ </td></tr><tr><td> $y_{i1}$ </td><td> $y_{i2}$ </td><td>...</td><td> $y_{ij}$ </td><td>...</td><td> $y_{in}$ </td><td> $T_{yi}.$ </td><td> $\\overline{y}_{i}.$ </td></tr><tr><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td><td></td><td> $\\vdots$ </td><td></td><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td></tr><tr><td rowspan=\"2\">k</td><td> $x_{k1}$ </td><td> $x_{k2}$ </td><td>...</td><td> $x_{kj}$ </td><td>...</td><td> $x_{kn}$ </td><td> $T_{xk}.$ </td><td> $\\overline{x}_{k}.$ </td></tr><tr><td> $y_{k1}$ </td><td> $y_{k2}$ </td><td>...</td><td> $y_{kj}$ </td><td>...</td><td> $y_{kn}$ </td><td> $T_{yk}.$ </td><td> $\\overline{y}_{k}.$ </td></tr><tr><td rowspan=\"2\">总计</td><td></td><td></td><td></td><td></td><td></td><td></td><td> $T_x$ </td><td> $\\overline{x}$ </td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td> $T_y$ </td><td> $\\overline{y}$ </td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.373,
+                0.228,
+                0.634,
+                0.243
+              ],
+              "content": "表 11-1 单向分组试验的数据模式"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_292_table_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.529,
+            0.884,
+            0.611
+          ],
+          "content": "表 11-1 中，x 和 $y$ 的总平方和与总自由度皆可按方差分析分解为组间和组内两部分，此处不再赘述。相应地，总乘积和（total sum of product）也可分解为组间乘积和（sum of products between group）和组内乘积和（sum of products within group）两部分。总乘积和用 $SP_{ 总 }$ 或 $S P _ { T }$表示，组间乘积和用 $SP_{ 组间 }$ 或 $S P _ { t }$ 表示，组内乘积和用 $SP_{ 组内 }$ 或 $S P _ { e }$ 表示，则有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.447,
+            0.616,
+            0.885,
+            0.634
+          ],
+          "content": "S P _ {T} = S P _ {t} + S P _ {e} \\tag {11-9}",
+          "image_source": "../../raw/pages_0289-0304/images/page_292_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.638,
+            0.356,
+            0.654
+          ],
+          "content": "各部分相应的自由度为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.402,
+            0.659,
+            0.885,
+            0.675
+          ],
+          "content": "n k - 1 = (k - 1) + k (n - 1) \\tag {11-10}",
+          "image_source": "../../raw/pages_0289-0304/images/page_292_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.68,
+            0.337,
+            0.696
+          ],
+          "content": "乘积和的计算公式为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.278,
+            0.702,
+            0.886,
+            0.826
+          ],
+          "content": "\\left\\{ \\begin{array}{l} S P _ {T} = \\sum_ {i = 1} ^ {k} \\sum_ {j = 1} ^ {n} (x _ {i j} - \\bar {x}) (y _ {i j} - \\bar {y}) = \\sum_ {i = 1} ^ {k} \\sum_ {j = 1} ^ {n} x _ {i j} y _ {i j} - \\frac {1}{n k} (T _ {x} T _ {y}) \\\\ S P _ {t} = n \\sum_ {i = 1} ^ {k} (\\bar {x} _ {i.} - \\bar {x}) (\\bar {y} _ {i.} - \\bar {y}) = \\frac {1}{n} \\sum_ {i = 1} ^ {k} (T _ {x _ {i.}} T _ {y _ {i.}}) - \\frac {1}{n k} (T _ {x} T _ {y}) \\\\ S P _ {e} = \\sum_ {i = 1} ^ {k} \\sum_ {j = 1} ^ {n} (x _ {i j} - \\bar {x} _ {i.}) (y _ {i j} - \\bar {y} _ {i.}) = \\sum_ {i = 1} ^ {k} \\sum_ {j = 1} ^ {n} x _ {i j} y _ {i j} - \\frac {1}{n} \\sum_ {i = 1} ^ {k} (T _ {x _ {i.}} T _ {y _ {i.}}) \\end{array} \\right. \\tag {11-11}",
+          "image_source": "../../raw/pages_0289-0304/images/page_292_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.831,
+            0.405,
+            0.847
+          ],
+          "content": "式（11-11）代入式（11-9），则有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.228,
+            0.852,
+            0.884,
+            0.89
+          ],
+          "content": "\\sum_ {i = 1} ^ {k} \\sum_ {j = 1} ^ {n} (x _ {i j} - \\bar {x}) (y _ {i j} - \\bar {y}) = n \\sum_ {i = 1} ^ {k} (\\bar {x} _ {i \\cdot} - \\bar {x}) (\\bar {y} _ {i \\cdot} - \\bar {y}) + \\sum_ {i = 1} ^ {k} \\sum_ {j = 1} ^ {n} (x _ {i j} - \\bar {x} _ {i \\cdot}) (y _ {i j} - \\bar {y} _ {i \\cdot}) \\tag {11-12}",
+          "image_source": "../../raw/pages_0289-0304/images/page_292_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.896,
+            0.884,
+            0.913
+          ],
+          "content": "例 **11-1** 为比较 3 种不同配合饲料的效应，现将 24 头猪随机分成 3 组进行不同饲料喂"
+        }
+      ]
+    },
+    {
+      "page_idx": 293,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.173,
+            0.087
+          ],
+          "content": "·282·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.088
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.106,
+            0.772,
+            0.122
+          ],
+          "content": "养试验，测定结果列于表 11-2。试分析 3 种配合饲料对猪的增重差异是否显著。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.115,
+            0.159,
+            0.875,
+            0.332
+          ],
+          "content": "<table><tr><td>饲料</td><td></td><td></td><td></td><td></td><td colspan=\"5\">观测值</td><td>总和</td><td>平均</td></tr><tr><td rowspan=\"2\"> $A_1$ </td><td>x(始重)</td><td>18</td><td>16</td><td>11</td><td>14</td><td>14</td><td>13</td><td>17</td><td>17</td><td>120</td><td>15</td></tr><tr><td>y(增重)</td><td>85</td><td>89</td><td>65</td><td>80</td><td>78</td><td>83</td><td>91</td><td>85</td><td>656</td><td>82</td></tr><tr><td rowspan=\"2\"> $A_2$ </td><td>x(始重)</td><td>17</td><td>18</td><td>18</td><td>19</td><td>21</td><td>21</td><td>16</td><td>22</td><td>152</td><td>19</td></tr><tr><td>y(增重)</td><td>95</td><td>100</td><td>94</td><td>98</td><td>104</td><td>97</td><td>90</td><td>106</td><td>784</td><td>98</td></tr><tr><td rowspan=\"2\"> $A_3$ </td><td>x(始重)</td><td>18</td><td>23</td><td>23</td><td>20</td><td>24</td><td>25</td><td>25</td><td>26</td><td>184</td><td>23</td></tr><tr><td>y(增重)</td><td>91</td><td>89</td><td>98</td><td>82</td><td>100</td><td>98</td><td>102</td><td>108</td><td>768</td><td>96</td></tr><tr><td rowspan=\"2\">总计</td><td>x</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>456</td><td>19</td></tr><tr><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2208</td><td>92</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.278,
+                0.141,
+                0.7,
+                0.157
+              ],
+              "content": "表 11-2 3 种饲料饲喂试验中猪的始重与增重数据（kg）"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_293_table_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.344,
+            0.874,
+            0.469
+          ],
+          "content": "对于表 11-2 的数据可先直接对增重 y 进行方差分析，结果列于表 11-3。方差分析结果表明，3 种配合饲料对猪的增重影响差异达极显著水平。但是，我们不能轻易相信这一推断。由表 11-2 数据可以看出，各组猪的始重 x 相差较大。而始重不同对猪的增重也有影响，一般始重大的猪，增重快；始重小的猪，增重慢。方差分析的方法忽略了始重不同的影响，将始重与饲料对增重的效应混在一起，并不能反映饲料的真实效应。因此，需用协方差分析的方法，矫正始重 x 对增重 y 的影响，从而获得真实的饲料效应。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.115,
+            0.506,
+            0.875,
+            0.589
+          ],
+          "content": "| 变异来源 | df | SS | $s^2$ | F | $F_{0.05}$ | $F_{0.01}$ |\n| --- | --- | --- | --- | --- | --- | --- |\n| 饲料间 | 2 | 1216 | 608.00 | 11.34** | 3.47 | 5.78 |\n| 误差 | 21 | 1126 | 53.62 |  |  |  |\n| 总变异 | 23 | 2342 |  |  |  |  |",
+          "captions": [
+            {
+              "bbox": [
+                0.307,
+                0.487,
+                0.679,
+                0.503
+              ],
+              "content": "表 11-3 表 11-2 数据不考虑始重时的方差分析表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_293_table_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.152,
+            0.6,
+            0.506,
+            0.617
+          ],
+          "content": "下面结合本例详述协方差分析的方法步骤。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.152,
+            0.632,
+            0.611,
+            0.65
+          ],
+          "level": 2,
+          "content": "一、计算各项变异的平方和、乘积和与自由度"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.665,
+            0.616,
+            0.681
+          ],
+          "content": "根据表 11-2 的数据，首先计算分析所需的 6 个数据，即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.243,
+            0.684,
+            0.748,
+            0.729
+          ],
+          "content": "\\begin{array}{l l l} \\sum x = 4 5 6 & \\sum x ^ {2} = 9 0 4 4 & n k = 2 4 \\\\ \\sum y = 2 2 0 8 & \\sum y ^ {2} = 2 0 5 4 7 8 & \\sum x y = 4 2 7 0 1 \\end{array}",
+          "image_source": "../../raw/pages_0289-0304/images/page_293_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.731,
+            0.328,
+            0.746
+          ],
+          "content": "（1）x 变量的平方和:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.152,
+            0.75,
+            0.657,
+            0.791
+          ],
+          "content": "总变异"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.152,
+            0.794,
+            0.713,
+            0.835
+          ],
+          "content": "饲料间"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.152,
+            0.837,
+            0.622,
+            0.857
+          ],
+          "content": "误差"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.861,
+            0.328,
+            0.877
+          ],
+          "content": "（2）y 变量的平方和:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.152,
+            0.881,
+            0.677,
+            0.922
+          ],
+          "content": "总变异"
+        }
+      ]
+    },
+    {
+      "page_idx": 294,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.422,
+            0.073,
+            0.586,
+            0.088
+          ],
+          "content": "第 11 章 协方差分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.826,
+            0.075,
+            0.877,
+            0.087
+          ],
+          "content": "·283·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.105,
+            0.735,
+            0.147
+          ],
+          "content": "饲料间"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.156,
+            0.648,
+            0.179
+          ],
+          "content": "误差"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.192,
+            0.337,
+            0.209
+          ],
+          "content": "（3）x 与 y 的乘积和:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.213,
+            0.701,
+            0.251
+          ],
+          "content": "总变异"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.257,
+            0.481,
+            0.295
+          ],
+          "content": "饲料间"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.302,
+            0.298,
+            0.731,
+            0.332
+          ],
+          "content": "= \\frac {1 2 0 \\times 6 5 6 + 1 5 2 \\times 7 8 4 + 1 8 4 \\times 7 6 8}{8} - \\frac {4 5 6 \\times 2 2 0 8}{2 4} = 4 4 8",
+          "image_source": "../../raw/pages_0289-0304/images/page_294_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.339,
+            0.624,
+            0.358
+          ],
+          "content": "误差"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.362,
+            0.325,
+            0.378
+          ],
+          "content": "（4）相应的自由度:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.382,
+            0.6,
+            0.4
+          ],
+          "content": "总变异"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.404,
+            0.576,
+            0.422
+          ],
+          "content": "饲料间"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.425,
+            0.618,
+            0.443
+          ],
+          "content": "误差"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.446,
+            0.364,
+            0.462
+          ],
+          "content": "将以上结果列于表 11-4。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.126,
+            0.5,
+            0.884,
+            0.622
+          ],
+          "content": "<table><tr><td rowspan=\"2\">变异来源</td><td rowspan=\"2\">df</td><td rowspan=\"2\"> $SS_x$ </td><td rowspan=\"2\"> $SS_y$ </td><td rowspan=\"2\"> $SS_{xy}$ </td><td rowspan=\"2\"> $b_e (y/x)$ </td><td colspan=\"4\">矫正值(离回归部分)变异的分析</td></tr><tr><td>df</td><td>Q</td><td> $s^2$ </td><td>F</td></tr><tr><td>总变异</td><td>23</td><td>380</td><td>2342</td><td>749</td><td></td><td>22</td><td>865.6816</td><td></td><td></td></tr><tr><td>饲料组</td><td>2</td><td>256</td><td>1216</td><td>448</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>组内</td><td>21</td><td>124</td><td>1126</td><td>301</td><td>2.4274</td><td>20</td><td>395.3468</td><td>19.7673</td><td></td></tr><tr><td colspan=\"6\">矫正组(饲料组)间变异</td><td>2</td><td>470.3348</td><td>235.1674</td><td>11.90**</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.302,
+                0.482,
+                0.706,
+                0.497
+              ],
+              "content": "表 11-4 表 11-2 数据始重 x 与增重 y 的协方差分析表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_294_table_15.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.163,
+            0.654,
+            0.553,
+            0.673
+          ],
+          "level": 2,
+          "content": "二、检验 x 和 y 是否存在直线回归关系"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.687,
+            0.884,
+            0.835
+          ],
+          "content": "计算误差项（组内项）的回归系数 $b _ { e ( y / x ) } ,$ ，并对线性回归关系进行显著性检验，其目的是要从组内项变异中找出始重 x 与增重 y 之间是否存在真实的线性回归关系。在对回归系数进行显著性检验时，假设 $H_{0}:\\ \\beta = 0;\\ H_{A}:\\ \\beta \\ne 0$ 。若接受 $H _ { 0 } { \\colon \\thinspace } \\beta { = } 0$ ，则二者之间回归关系不显著，说明增重 y 不受始重 x 的影响，即 y 与 x 无关，可以不用考虑始重 x，而直接对增重 y进行方差分析；若否定 $H _ { 0 } \\colon \\beta { = } 0$ ，则二者之间存在显著的直线回归关系，表明增重 y 受始重x 的影响，应当用线性回归关系来矫正 y 值以消除因 x 的不同而产生的影响，然后根据矫正后的 y 值进行方差分析。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.16,
+            0.849,
+            0.865,
+            0.868
+          ],
+          "level": 2,
+          "content": "（一）计算误差项回归系数、回归平方和、离回归平方和与相应的自由度"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.882,
+            0.306,
+            0.899
+          ],
+          "content": "误差项回归系数:"
+        }
+      ]
+    },
+    {
+      "page_idx": 295,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.172,
+            0.087
+          ],
+          "content": "·284·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.088
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.383,
+            0.105,
+            0.601,
+            0.145
+          ],
+          "content": "b _ {e (y / x)} = \\frac {S P _ {e}}{S S _ {e _ {x}}} = \\frac {3 0 1}{1 2 4} = 2. 4 2 7 4",
+          "image_source": "../../raw/pages_0289-0304/images/page_295_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.152,
+            0.15,
+            0.391,
+            0.166
+          ],
+          "content": "误差项回归平方和与自由度:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.381,
+            0.17,
+            0.605,
+            0.211
+          ],
+          "content": "U _ {e} = \\frac {S P _ {e} ^ {2}}{S S _ {e _ {x}}} = \\frac {3 0 1 ^ {2}}{1 2 4} = 7 3 0. 6 5 3 2",
+          "image_source": "../../raw/pages_0289-0304/images/page_295_equation_4.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.456,
+            0.216,
+            0.534,
+            0.233
+          ],
+          "content": "d f _ {e (U)} = 1",
+          "image_source": "../../raw/pages_0289-0304/images/page_295_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.152,
+            0.24,
+            0.41,
+            0.255
+          ],
+          "content": "误差项离回归平方和与自由度:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.327,
+            0.259,
+            0.66,
+            0.279
+          ],
+          "content": "Q _ {e} = S S _ {e _ {y}} - U _ {e} = 1 1 2 6 - 7 3 0. 6 5 3 2 = 3 9 5. 3 4 6 8",
+          "image_source": "../../raw/pages_0289-0304/images/page_295_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.296,
+            0.283,
+            0.691,
+            0.304
+          ],
+          "content": "d f _ {e (Q)} = d f _ {e} - d f _ {e (U)} = k (n - 1) - 1 = 3 \\times (8 - 1) - 1 = 2 0",
+          "image_source": "../../raw/pages_0289-0304/images/page_295_equation_8.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.15,
+            0.318,
+            0.632,
+            0.337
+          ],
+          "level": 2,
+          "content": "（二）检验误差项回归系数 $b _ { e }$ 的显著性（t 检验）"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.34,
+            0.35,
+            0.644,
+            0.395
+          ],
+          "content": "s _ {e (y / x)} = \\sqrt {\\frac {Q _ {e}}{d f _ {e (Q)}}} = \\sqrt {\\frac {3 9 5 . 3 4 6 8}{2 0}} = 4. 4 4 6 0",
+          "image_source": "../../raw/pages_0289-0304/images/page_295_equation_10.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.377,
+            0.399,
+            0.611,
+            0.44
+          ],
+          "content": "s _ {b _ {e}} = \\frac {S _ {e (y / x)}}{\\sqrt {S S _ {e _ {x}}}} = \\frac {4 . 4 4 6 0}{\\sqrt {1 2 4}} = 0. 3 9 9 3",
+          "image_source": "../../raw/pages_0289-0304/images/page_295_equation_11.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.395,
+            0.444,
+            0.591,
+            0.482
+          ],
+          "content": "t = \\frac {b _ {e}}{s _ {b _ {e}}} = \\frac {2 . 4 2 7 4}{0 . 3 9 9 3} = 6. 0 7 9 1",
+          "image_source": "../../raw/pages_0289-0304/images/page_295_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.488,
+            0.871,
+            0.526
+          ],
+          "content": "查附表 3， $t_{0.01(20)} = 2.854$ ，该 t 值达到极显著水平，应该否定 $H _ { 0 } \\colon \\beta { = } 0$ ，接受 $H _ { A } : \\beta \\neq 0$推断:y 依 x 有极显著的直线回归关系，即猪的增重确实受到始重的影响。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.153,
+            0.54,
+            0.587,
+            0.561
+          ],
+          "level": 2,
+          "content": "三、检验矫正平均数 $\\overline { { \\boldsymbol { y } } } _ { i ( x = \\overline { { x } } ) }$ 间的差异显著性"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.574,
+            0.875,
+            0.634
+          ],
+          "content": "误差项（组内项）回归关系显著时，需用误差项回归系数对增重 y 进行矫正，以消除始重 x 不同对增重 y 的影响，从而使各种不同的饲料效应处于始重 x 相同水平的基础上进行比较。也就是说，在消除协变量 x 的影响后，比较各处理矫正 y 值的差异显著性。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.639,
+            0.876,
+            0.764
+          ],
+          "content": "检验矫正后 y 值的差异显著性，在进行平方和的计算时，并不需要将各个 y 的矫正值求出后再进行计算。由回归分析可知，依变量 y 的平方和可分解为回归平方和与离回归平方和。回归平方和是 y 受 x 影响而产生的变异部分，离回归平方和则是 y 去除了 x 影响后剩余的变异部分。而矫正增重 y 计算出的各项平方和，实际上就是去除了始重 x 影响的部分。统计学上已证明，矫正后 y 的各项平方和与自由度等于其相应变异项的离回归平方和与自由度。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.768,
+            0.874,
+            0.85
+          ],
+          "content": "其具体分析过程为:对总变异项做回归分析，求得其离回归平方和 $Q _ { T } ^ { \\prime }$ 和自由度 $d f _ { T ( \\boldsymbol { \\mathscr { Q } } ) } ^ { \\prime }$再由 $Q _ { T } ^ { \\prime } { - } Q _ { e } ^ { \\prime }$ 和 $d f _ { T ( Q ) } ^ { \\prime } - d f _ { e ( Q ) } ^ { \\prime }$ 即得到矫正 y 值的平方和与自由度，进而可对矫正平均数（adjusted mean） $\\overline { { y } } _ { i ( x = \\overline { { x } } ) }$ 间的差异显著性进行 F 检验。由此可以看出，在对矫正 y 值进行方差分析时，并不需要对各处理的矫正 y 值进行计算。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.15,
+            0.863,
+            0.599,
+            0.883
+          ],
+          "level": 2,
+          "content": "（一）计算矫正增重 y 的各项平方和与自由度"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.897,
+            0.647,
+            0.914
+          ],
+          "content": "矫正 y 值的总平方和与自由度，即总离回归平方和与自由度"
+        }
+      ]
+    },
+    {
+      "page_idx": 296,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.421,
+            0.073,
+            0.589,
+            0.089
+          ],
+          "content": "第 11 章 协方差分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.826,
+            0.075,
+            0.88,
+            0.088
+          ],
+          "content": "·285·"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.338,
+            0.105,
+            0.669,
+            0.145
+          ],
+          "content": "Q _ {T} ^ {\\prime} = S S _ {T _ {y}} - \\frac {S P _ {T} ^ {2}}{S S _ {T _ {x}}} = 2 3 4 2 - \\frac {7 4 9 ^ {2}}{3 8 0} = 8 6 5. 6 8 1 6",
+          "image_source": "../../raw/pages_0289-0304/images/page_296_equation_2.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.342,
+            0.148,
+            0.666,
+            0.168
+          ],
+          "content": "d f _ {T (Q)} ^ {\\prime} = (n k - 1) - 1 = n k - 2 = 8 \\times 3 - 2 = 2 2",
+          "image_source": "../../raw/pages_0289-0304/images/page_296_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.172,
+            0.836,
+            0.189
+          ],
+          "content": "矫正 y 值的误差项（组内项）平方和与自由度，即误差项离回归平方和与自由度:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.317,
+            0.198,
+            0.689,
+            0.218
+          ],
+          "content": "Q _ {e} ^ {\\prime} = Q _ {e} = S S _ {e _ {y}} - U _ {e} = 1 1 2 6 - 7 3 0. 6 5 3 2 = 3 9 5. 3 4 6 8",
+          "image_source": "../../raw/pages_0289-0304/images/page_296_equation_5.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.328,
+            0.221,
+            0.682,
+            0.241
+          ],
+          "content": "d f _ {e (Q)} ^ {\\prime} = d f _ {e (Q)} = k (n - 1) - 1 = 3 \\times (8 - 1) - 1 = 2 0",
+          "image_source": "../../raw/pages_0289-0304/images/page_296_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.245,
+            0.553,
+            0.261
+          ],
+          "content": "矫正 y 值处理项（组间项）的平方和与自由度:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.325,
+            0.266,
+            0.682,
+            0.284
+          ],
+          "content": "Q _ {t} ^ {\\prime} = Q _ {T} ^ {\\prime} - Q _ {e} ^ {\\prime} = 8 6 5. 6 8 1 6 - 3 9 5. 3 4 6 8 = 4 7 0. 3 3 4 8",
+          "image_source": "../../raw/pages_0289-0304/images/page_296_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.286,
+            0.635,
+            0.306
+          ],
+          "content": "d f _ {t (Q)} ^ {\\prime} = d f _ {T (Q)} ^ {\\prime} - d f _ {e (Q)} ^ {\\prime} = 2 2 - 2 0 = 2",
+          "image_source": "../../raw/pages_0289-0304/images/page_296_equation_9.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.16,
+            0.319,
+            0.657,
+            0.338
+          ],
+          "level": 2,
+          "content": "（二）列出协方差分析表，进行矫正值的方差分析"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.353,
+            0.819,
+            0.37
+          ],
+          "content": "将矫正增重 y 的各项平方和与自由度列入表 11-4，即得到完整的协方差分析表。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.46,
+            0.168,
+            0.476
+          ],
+          "content": "则有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.419,
+            0.484,
+            0.591,
+            0.518
+          ],
+          "content": "F = \\frac {2 3 5 . 1 6 7 4}{1 9 . 7 6 7 3} = 1 1. 9 0",
+          "image_source": "../../raw/pages_0289-0304/images/page_296_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.525,
+            0.884,
+            0.564
+          ],
+          "content": "查附表 5， $F_{0.01(2,20)}=5.85,\\ F>F_{0.01(2,20)}$ ，F 值达极显著水平。因此，通过矫正消除始重x 影响后，各饲料组间矫正增重 y 差异达极显著水平，需进行多重比较。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.163,
+            0.576,
+            0.533,
+            0.597
+          ],
+          "level": 2,
+          "content": "四、矫正平均数 $\\overline { { y } } _ { i ( x = \\overline { { x } } ) }$ 间的多重比较"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.161,
+            0.611,
+            0.476,
+            0.63
+          ],
+          "level": 2,
+          "content": "（一）计算各矫正增重的平均数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.644,
+            0.884,
+            0.683
+          ],
+          "content": "误差项（组内项）回归系数 $b _ { e ( y / x ) }$ 表示始重 x 对增重 y 影响的性质和程度，且不包含处理间差异的影响，因此可用 $b _ { e ( y / x ) }$ 根据平均始重的不同来矫正每一处理的增重平均值。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.686,
+            0.394,
+            0.703
+          ],
+          "content": "矫正平均数 $\\overline { { y } } _ { i ( x = \\overline { { x } } ) }$ 的公式为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.402,
+            0.707,
+            0.885,
+            0.726
+          ],
+          "content": "\\overline {{y}} _ {i (x = \\overline {{x}})} = \\overline {{y}} _ {i} - b _ {e (y / x)} (\\overline {{x}} _ {i} - \\overline {{x}}) \\tag {11-13}",
+          "image_source": "../../raw/pages_0289-0304/images/page_296_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.731,
+            0.883,
+            0.769
+          ],
+          "content": "式中， $\\overline { { y } } _ { i ( x = \\overline { { x } } ) }$ 为第 i 个处理 y 的矫正平均数； $\\overline { { y } } _ { i }$ 为第 i 个处理实际观测值的平均数； $\\overline { { x } } _ { i }$ 为自变量 x 的第 i 个处理的平均数； 为自变量 x 的总平均数。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.774,
+            0.707,
+            0.79
+          ],
+          "content": "将表 11-2 数据代入式（11-13），计算各处理组矫正平均增重如下:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.269,
+            0.793,
+            0.737,
+            0.812
+          ],
+          "content": "\\overline {{y}} _ {1 (x = \\overline {{x}})} = \\overline {{y}} _ {1} - b _ {e (y / x)} (\\overline {{x}} _ {1} - \\overline {{x}}) = 8 2 - 2. 4 2 7 4 \\times (1 5 - 1 9) = 9 1. 7 0 9 6",
+          "image_source": "../../raw/pages_0289-0304/images/page_296_equation_22.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.268,
+            0.814,
+            0.741,
+            0.833
+          ],
+          "content": "\\overline {{y}} _ {2 (x = \\overline {{x}})} = \\overline {{y}} _ {2} - b _ {e (y / x)} (\\overline {{x}} _ {2} - \\overline {{x}}) = 9 8 - 2. 4 2 7 4 \\times (1 9 - 1 9) = 9 8. 0 0 0 0",
+          "image_source": "../../raw/pages_0289-0304/images/page_296_equation_23.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.266,
+            0.836,
+            0.743,
+            0.855
+          ],
+          "content": "\\overline {{y}} _ {3 (x = \\overline {{x}})} = \\overline {{y}} _ {3} - b _ {e (y / x)} (\\overline {{x}} _ {3} - \\overline {{x}}) = 9 6 - 2. 4 2 7 4 \\times (2 3 - 1 9) = 8 6. 2 9 0 4",
+          "image_source": "../../raw/pages_0289-0304/images/page_296_equation_24.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.16,
+            0.869,
+            0.476,
+            0.888
+          ],
+          "level": 2,
+          "content": "（二）矫正平均数间的多重比较"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.902,
+            0.884,
+            0.919
+          ],
+          "content": "1.t 检验法 当矫正平均数的误差项自由度小于 20，且变量 x 的变异较大时，可采用"
+        }
+      ]
+    },
+    {
+      "page_idx": 297,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.172,
+            0.087
+          ],
+          "content": "·286·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.088
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.106,
+            0.294,
+            0.122
+          ],
+          "content": "两两比较的 t 检验法。"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.415,
+            0.124,
+            0.874,
+            0.162
+          ],
+          "content": "t = \\frac {\\overline {{y}} _ {i (x = \\overline {{x}})} - \\overline {{y}} _ {l (x = \\overline {{x}})}}{s _ {D}} \\tag {11-14}",
+          "image_source": "../../raw/pages_0289-0304/images/page_297_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.164,
+            0.558,
+            0.18
+          ],
+          "content": "式中， $s _ { D }$ 为两矫正平均数间差数的标准误，其公式为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.363,
+            0.184,
+            0.875,
+            0.233
+          ],
+          "content": "s _ {D} = \\sqrt {s _ {e (y / x)} ^ {2} \\left[ \\frac {1}{n _ {i}} + \\frac {1}{n _ {l}} + \\frac {(\\overline {{x}} _ {i} - \\overline {{x}} _ {l}) ^ {2}}{S S _ {e _ {x}}} \\right]} \\tag {11-15}",
+          "image_source": "../../raw/pages_0289-0304/images/page_297_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.235,
+            0.874,
+            0.273
+          ],
+          "content": "式中， $\\boldsymbol { S } _ { e ( y / x ) } ^ { 2 }$ 为误差项离回归方差； $n _ { i } .$ 、 $n _ { l }$ 为比较的两个样本容量； $\\overline { { x } } _ { i }$ 、 $\\overline { { x } } _ { l }$ 为两个相比较样本的 $x$ 变量平均数； $S S _ { e _ { x } }$ 为 $x$ 变量的组内项平方和。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.277,
+            0.701,
+            0.294
+          ],
+          "content": "如果两个样本容量相同，即 $n_{i} = n_{l} = n$ 时，式（11-15）可以表示为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.296,
+            0.875,
+            0.345
+          ],
+          "content": "s _ {D} = \\sqrt {s _ {e (y / x)} ^ {2} \\left[ \\frac {2}{n} + \\frac {(\\overline {{x}} _ {i} - \\overline {{x}} _ {l}) ^ {2}}{S S _ {e _ {x}}} \\right]} \\tag {11-16}",
+          "image_source": "../../raw/pages_0289-0304/images/page_297_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.346,
+            0.873,
+            0.386
+          ],
+          "content": "在本例中，检验 $A _ { 1 }$ 与 $A _ { 2 }$ 平均数差异显著性。已知 $\\bar{y}_{1(x=\\bar{x})}=91.7096$ $\\overline{y}_{2(x=\\overline{x})}=98.0000$ $S _ { e ( y / x ) } ^ { 2 } =$ 19.7673， $df_{e(Q)} = 20$ ， $n_{1}=n_{2}=8$ $\\overline { { x } } _ { 1 } { = } 1 5$ ， $\\overline { { x } } _ { 2 } { = } 1 9$ $S S _ { e _ { x } }   =   1 2 4$ 。由式（11-16）得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.334,
+            0.39,
+            0.654,
+            0.435
+          ],
+          "content": "s _ {D} = \\sqrt {1 9 . 7 6 7 3 \\times \\left[ \\frac {2}{8} + \\frac {(1 5 - 1 9) ^ {2}}{1 2 4} \\right]} = 2. 7 3 7 2",
+          "image_source": "../../raw/pages_0289-0304/images/page_297_equation_10.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.298,
+            0.44,
+            0.688,
+            0.479
+          ],
+          "content": "t = \\frac {\\overline {{y}} _ {i (x = \\bar {x})} - \\overline {{y}} _ {l (x = \\bar {x})}}{s _ {D}} = \\frac {9 1 . 7 0 9 6 - 9 8 . 0 0 0 0}{2 . 7 3 7 2} = - 2. 2 9 8",
+          "image_source": "../../raw/pages_0289-0304/images/page_297_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.483,
+            0.874,
+            0.521
+          ],
+          "content": "由于 $t \\mid = 2.298 > t_{0.05(20)} = 2.086$ ，达显著水平。表明饲料 $A _ { 1 }$ 与 $A _ { 2 }$ 对猪增重效果有明显差别，即 $A _ { 2 }$ 显著优于 $A _ { 1 }$ 。同理可对 $A _ { 1 }$ 与 $\\it { A _ { 3 } }  、 \\it { A _ { 2 } }$ 与 $A _ { 3 }$ 进行比较。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.525,
+            0.875,
+            0.584
+          ],
+          "content": "2.**LSD** 法 由于每次比较都要分别计算两个矫正平均数差数的标准误 $s _ { D 1 }$ ，显然比较麻烦。为简便起见，当误差项自由度在 20 或 20 以上，且 x 变量的变异较小时，可用一个平均数差数标准误进行比较。此时:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.338,
+            0.59,
+            0.875,
+            0.639
+          ],
+          "content": "s _ {D} = \\sqrt {s _ {e (y / x)} ^ {2} \\left[ 1 + \\frac {S S _ {t _ {x}}}{(k - 1) S S _ {e _ {x}}} \\right] \\left(\\frac {1}{n _ {i}} + \\frac {1}{n _ {l}}\\right)} \\tag {11-17}",
+          "image_source": "../../raw/pages_0289-0304/images/page_297_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.643,
+            0.472,
+            0.661
+          ],
+          "content": "式中， $S S _ { t _ { x } }$ 为 $x$ 变量组间平方和； $k$ 为组数。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.665,
+            0.492,
+            0.681
+          ],
+          "content": "当 $n _ { i } { = } n _ { l } { = } n$ 时，式（11-17）可以表示为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.355,
+            0.682,
+            0.875,
+            0.73
+          ],
+          "content": "s _ {D} = \\sqrt {s _ {e (y / x)} ^ {2} \\times \\left[ 1 + \\frac {S S _ {t _ {x}}}{(k - 1) S S _ {e _ {x}}} \\right] \\times \\frac {2}{n}} \\tag {11-18}",
+          "image_source": "../../raw/pages_0289-0304/images/page_297_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.733,
+            0.873,
+            0.77
+          ],
+          "content": "按公式 $L S D _ { \\alpha } = t _ { \\alpha } \\cdot s _ { D } ,$ 计算出最小显著差数，并与各组均数矫正值的差数进行比较，即可检验它们的差异显著性。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.776,
+            0.874,
+            0.814
+          ],
+          "content": "本例中，其误差项自由度为 20，但不满足 $^ { a } x$ 变量变异较小”这一条件，因此不宜采用此法进行多重比较。为了便于学习和掌握该种方法，仍以本例的数据来进行说明。"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.309,
+            0.818,
+            0.677,
+            0.858
+          ],
+          "content": "s _ {D} = \\sqrt {1 9 . 7 6 7 3 \\times \\left[ 1 + \\frac {2 5 6}{(3 - 1) \\times 1 2 4} \\right] \\times \\frac {2}{8}} = 3. 1 6 9 1",
+          "image_source": "../../raw/pages_0289-0304/images/page_297_equation_20.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.368,
+            0.862,
+            0.62,
+            0.88
+          ],
+          "content": "L S D _ {0. 0 5} = 2. 0 8 6 \\times 3. 1 6 9 1 = 6. 6 1 0 7",
+          "image_source": "../../raw/pages_0289-0304/images/page_297_equation_21.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.368,
+            0.883,
+            0.619,
+            0.901
+          ],
+          "content": "L S D _ {0. 0 1} = 2. 8 4 5 \\times 3. 1 6 9 1 = 9. 0 1 6 1",
+          "image_source": "../../raw/pages_0289-0304/images/page_297_equation_22.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.905,
+            0.469,
+            0.921
+          ],
+          "content": "将平均数差异显著性结果列入表 11-5。"
+        }
+      ]
+    },
+    {
+      "page_idx": 298,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.422,
+            0.073,
+            0.587,
+            0.088
+          ],
+          "content": "第 11 章 协方差分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.826,
+            0.075,
+            0.878,
+            0.087
+          ],
+          "content": "·287·"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.127,
+            0.884,
+            0.229
+          ],
+          "content": "<table><tr><td rowspan=\"2\">饲料</td><td rowspan=\"2\">矫正y值平均数 $\\bar{y}_{i(x=\\overline{x})}$ </td><td colspan=\"2\">差异显著性</td></tr><tr><td> $\\bar{y}_{i(x=\\overline{x})}-86.2904$ </td><td> $\\bar{y}_{i(x=\\overline{x})}-91.7096$ </td></tr><tr><td> $A_{2}$ </td><td>98.0000</td><td>11.7096**</td><td>6.2904</td></tr><tr><td> $A_{1}$ </td><td>91.7096</td><td>5.4192</td><td></td></tr><tr><td> $A_{3}$ </td><td>86.2904</td><td></td><td></td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.306,
+                0.109,
+                0.694,
+                0.124
+              ],
+              "content": "表 11-5 3 种饲料效应的差异显著性比较（LSD 法）"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_298_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.241,
+            0.794,
+            0.279
+          ],
+          "content": "检验结果表明，饲料 $A _ { 2 }$ 与 $A _ { 3 }$ 差异达极显著水平，其余皆不显著。3 种饲料中以 $A _ { 2 }$ 最好， $A _ { 1 }$ 与 $A _ { 3 }$ 次之。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.284,
+            0.794,
+            0.344
+          ],
+          "content": "由于变量 x 的变异较大，而在检验时使用一个共同的平均数差数标准误，因而出现了与 t 检验不完全一致的结果。用 t 检验时， $A _ { 1 }$ 与 $A _ { 2 }$ 之间存在显著差异，而用 LSD 法进行比较时，二者差异未达显著水平。"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.815,
+            0.244,
+            0.876,
+            0.289
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.809,
+                0.291,
+                0.882,
+                0.336
+              ],
+              "content": "协方差分析与方差分析结果的不同"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_298_image_6.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.281,
+            0.366,
+            0.71,
+            0.387
+          ],
+          "level": 2,
+          "content": "第三节 两向分组数据的协方差分析"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.41,
+            0.884,
+            0.448
+          ],
+          "content": "若试验设有 k 个处理，每个处理设 n 个类别（重复），则 nk 对观测值可以按两向进行分组，其数据模式如表 11-6 所示。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.481,
+            0.887,
+            0.7
+          ],
+          "content": "<table><tr><td rowspan=\"2\">组</td><td colspan=\"10\">类</td><td rowspan=\"2\" colspan=\"2\">总和</td><td rowspan=\"2\" colspan=\"2\">平均</td></tr><tr><td colspan=\"2\">1</td><td colspan=\"2\">2</td><td> $\\cdots$ </td><td colspan=\"2\">j</td><td> $\\cdots$ </td><td colspan=\"2\">n</td></tr><tr><td>1</td><td> $x_{11}$ </td><td> $y_{11}$ </td><td> $x_{12}$ </td><td> $y_{12}$ </td><td> $\\cdots$ </td><td> $x_{1j}$ </td><td> $y_{1j}$ </td><td> $\\cdots$ </td><td> $x_{1n}$ </td><td> $y_{1n}$ </td><td> $T_{x_1.}$ </td><td> $T_{y_1.}$ </td><td> $\\overline{x}_1.$ </td><td> $\\overline{y}_1.$ </td></tr><tr><td>2</td><td> $x_{21}$ </td><td> $y_{21}$ </td><td> $x_{22}$ </td><td> $y_{22}$ </td><td> $\\cdots$ </td><td> $x_{2j}$ </td><td> $x_{2j}$ </td><td> $\\cdots$ </td><td> $x_{2n}$ </td><td> $y_{2n}$ </td><td> $T_{x_2.}$ </td><td> $T_{y_2.}$ </td><td> $\\overline{x}_2.$ </td><td> $\\overline{y}_2.$ </td></tr><tr><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td><td></td><td> $\\vdots$ </td><td> $\\vdots$ </td><td></td><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td></tr><tr><td>i</td><td> $x_{i1}$ </td><td> $y_{i1}$ </td><td> $x_{i2}$ </td><td> $y_{i2}$ </td><td> $\\cdots$ </td><td> $x_{ij}$ </td><td> $y_{ij}$ </td><td> $\\cdots$ </td><td> $x_{in}$ </td><td> $y_{in}$ </td><td> $T_{x_i.}$ </td><td> $T_{y_i.}$ </td><td> $\\overline{x}_i.$ </td><td> $\\overline{y}_i.$ </td></tr><tr><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td><td></td><td> $\\vdots$ </td><td> $\\vdots$ </td><td></td><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.373,
+                0.462,
+                0.635,
+                0.478
+              ],
+              "content": "表 11-6 两向分组试验的数据模式"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_298_table_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.712,
+            0.704,
+            0.728
+          ],
+          "content": "表 11-6 的总乘积和可分解为类间、组间和误差 3 个部分，其值为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.302,
+            0.731,
+            0.887,
+            0.871
+          ],
+          "content": "\\left\\{ \\begin{array}{l} S P _ {\\text {总}} = \\sum_ {1} ^ {n k} \\left(x _ {i j} - \\bar {x}\\right) \\left(y _ {i j} - \\bar {y}\\right) = \\sum_ {1} ^ {n k} x _ {i j} y _ {i j} - \\frac {T _ {x} T _ {y}}{n k} \\\\ S P _ {\\text {类间}} = k \\sum_ {1} ^ {n} \\left(\\bar {x}. _ {j} - \\bar {x}\\right) \\left(\\bar {y}. _ {j} - \\bar {y}\\right) = \\frac {1}{k} \\sum_ {1} ^ {n} T _ {x. j} T _ {y. j} - \\frac {T _ {x} T _ {y}}{n k} \\\\ S P _ {\\text {组间}} = n \\sum_ {1} ^ {k} \\left(\\bar {x} _ {i}. - \\bar {x}\\right) \\left(\\bar {y} _ {i}. - \\bar {y}\\right) = \\frac {1}{n} \\sum_ {1} ^ {k} T _ {x _ {i}} T _ {y _ {i}} - \\frac {T _ {x} T _ {y}}{n k} \\\\ S P _ {\\text {误差}} = S P _ {\\text {总}} - S P _ {\\text {类间}} - S P _ {\\text {组间}} \\end{array} \\right. \\tag {11-19}",
+          "image_source": "../../raw/pages_0289-0304/images/page_298_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.873,
+            0.884,
+            0.91
+          ],
+          "content": "式中， $i = 1, 2, \\cdots, k; j = 1, 2, \\cdots, n 。$ 各 $S P$ 的相应自由度依次为 nk-1、n-1、k-1 和$(n - 1)(k - 1)$"
+        }
+      ]
+    },
+    {
+      "page_idx": 299,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.173,
+            0.087
+          ],
+          "content": "·288·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.088
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.106,
+            0.785,
+            0.122
+          ],
+          "content": "根据这些乘积和 $S P$ 和用第 7 章方法得到的平方和 SS，就可进行协方差分析。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.128,
+            0.646,
+            0.144
+          ],
+          "content": "下面以例 11-2 为例，介绍二向分组数据协方差分析的方法。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.149,
+            0.874,
+            0.231
+          ],
+          "content": "例 **11-2** 表 11-7 是施肥期和施肥量对杂交水稻‘南优 3 号’结实率影响的部分结果，共 14 个处理，两个区组，随机区组设计。在试验过程中发现单位面积上的颖花数对结实率有明显的回归关系，因此将颖花数（x，万 $/ \\mathbf { m } ^ { 2 } )$ ）和结实率（y，%）一起测定。试做协方差分析。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.113,
+            0.264,
+            0.876,
+            0.684
+          ],
+          "content": "<table><tr><td rowspan=\"3\">处理</td><td colspan=\"9\">区组</td></tr><tr><td colspan=\"2\">I</td><td colspan=\"2\">II</td><td colspan=\"2\">总和</td><td colspan=\"2\">平均</td><td rowspan=\"2\">矫正值[  $\\bar{y}_{i(x=\\bar{x})}$  ]</td></tr><tr><td>x</td><td>y</td><td>x</td><td>y</td><td> $T_{x_i.}$ </td><td> $T_{y_i.}$ </td><td> $\\bar{x}_{i.}$ </td><td> $\\bar{y}_{i.}$ </td></tr><tr><td>1</td><td>4.59</td><td>58</td><td>4.32</td><td>61</td><td>8.91</td><td>119</td><td>4.455</td><td>59.5</td><td>64.76</td></tr><tr><td>2</td><td>4.09</td><td>65</td><td>4.11</td><td>62</td><td>8.20</td><td>127</td><td>4.100</td><td>63.5</td><td>66.03</td></tr><tr><td>3</td><td>3.94</td><td>64</td><td>4.11</td><td>64</td><td>8.05</td><td>128</td><td>4.025</td><td>64.0</td><td>65.95</td></tr><tr><td>4</td><td>3.90</td><td>66</td><td>3.57</td><td>69</td><td>7.47</td><td>135</td><td>3.735</td><td>67.5</td><td>67.22</td></tr><tr><td>5</td><td>3.45</td><td>71</td><td>3.79</td><td>67</td><td>7.24</td><td>138</td><td>3.620</td><td>69.0</td><td>67.83</td></tr><tr><td>6</td><td>3.48</td><td>71</td><td>3.38</td><td>72</td><td>6.86</td><td>143</td><td>3.430</td><td>71.5</td><td>68.87</td></tr><tr><td>7</td><td>3.39</td><td>71</td><td>3.03</td><td>74</td><td>6.42</td><td>145</td><td>3.210</td><td>72.5</td><td>68.18</td></tr><tr><td>8</td><td>3.14</td><td>72</td><td>3.24</td><td>69</td><td>6.38</td><td>141</td><td>3.190</td><td>70.5</td><td>66.02</td></tr><tr><td>9</td><td>3.34</td><td>69</td><td>3.04</td><td>69</td><td>6.38</td><td>138</td><td>3.190</td><td>69.0</td><td>64.52</td></tr><tr><td>10</td><td>4.12</td><td>61</td><td>4.76</td><td>54</td><td>8.88</td><td>115</td><td>4.440</td><td>57.5</td><td>62.65</td></tr><tr><td>11</td><td>4.12</td><td>63</td><td>4.75</td><td>56</td><td>8.87</td><td>119</td><td>4.435</td><td>59.5</td><td>64.61</td></tr><tr><td>12</td><td>3.84</td><td>67</td><td>3.60</td><td>62</td><td>7.44</td><td>129</td><td>3.720</td><td>64.5</td><td>64.10</td></tr><tr><td>13</td><td>3.96</td><td>64</td><td>4.50</td><td>60</td><td>8.46</td><td>124</td><td>4.230</td><td>62.0</td><td>65.53</td></tr><tr><td>14</td><td>3.03</td><td>75</td><td>3.01</td><td>71</td><td>6.04</td><td>146</td><td>3.020</td><td>73.0</td><td>67.22</td></tr><tr><td> $T_{\\cdot j}$ </td><td>52.39</td><td>937</td><td>53.21</td><td>910</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>总和(T)</td><td></td><td></td><td></td><td></td><td>105.60</td><td>1847</td><td></td><td></td><td></td></tr><tr><td>平均值</td><td></td><td></td><td></td><td></td><td></td><td></td><td>3.7714</td><td>65.9643</td><td></td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.31,
+                0.245,
+                0.676,
+                0.261
+              ],
+              "content": "表 11-7 ‘南优 3 号’颖花数和结实率部分数据"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_299_table_6.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.152,
+            0.699,
+            0.431,
+            0.719
+          ],
+          "level": 2,
+          "content": "一、乘积和与自由度的分解"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.731,
+            0.874,
+            0.768
+          ],
+          "content": "首先用两向分组数据的通常方法计算表 11-7 数据的各项平方和列于表 11-8，乘积和则由式（11-19）算出:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.189,
+            0.771,
+            0.796,
+            0.919
+          ],
+          "content": "\\begin{array}{l} S P _ {\\text {总}} = \\sum_ {1} ^ {n k} x _ {i j} y _ {i j} - \\frac {T _ {x} T _ {y}}{n k} \\\\ = 4. 5 9 \\times 5 8 + 4. 0 9 \\times 6 5 + \\dots + 3. 0 1 \\times 7 1 - \\frac {1}{2 8} \\times (1 0 5. 6 0 \\times 1 8 4 7) = - 7 3. 5 9 8 6 \\\\ S P _ {\\text {组间}} = \\frac {1}{k} \\sum_ {1} ^ {n} \\left(T _ {x _ {\\cdot j}} T _ {y _ {\\cdot j}}\\right) - \\frac {T _ {x} T _ {y}}{n k} \\\\ = \\frac {5 2 . 3 9 \\times 9 3 7 + 5 3 . 2 1 \\times 9 1 0}{1 4} - \\frac {1}{2 8} \\times (1 0 5. 6 0 \\times 1 8 4 7) = - 0. 7 9 0 7 \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0289-0304/images/page_299_equation_9.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 300,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.422,
+            0.073,
+            0.586,
+            0.088
+          ],
+          "content": "第 11 章 协方差分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.826,
+            0.075,
+            0.877,
+            0.087
+          ],
+          "content": "·289·"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.18,
+            0.105,
+            0.831,
+            0.202
+          ],
+          "content": "\\begin{array}{l} S P _ {\\text {处理}} = \\frac {1}{n} \\sum_ {1} ^ {k} (T _ {x _ {i}.} T _ {y _ {i}.}) - \\frac {T _ {x} T _ {y}}{n k} \\\\ = \\frac {8 . 9 1 \\times 1 1 9 + 8 . 2 0 \\times 1 2 7 + \\cdots + 6 . 0 4 \\times 1 4 6}{2} - \\frac {1}{2 8} \\times (1 0 5. 6 0 \\times 1 8 4 7) = - 6 6. 3 6 3 6 \\\\ S P _ {\\text {误差}} = S P _ {\\text {总}} - S P _ {\\text {区组}} - S P _ {\\text {处理}} = - 7 3. 5 9 8 6 - (- 0. 7 9 0 9) - (- 6 6. 3 6 3 6) = - 6. 4 4 4 3 \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0289-0304/images/page_300_equation_2.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.231,
+            0.884,
+            0.344
+          ],
+          "content": "| 变异来源 | $SS_x$ | $SS_y$ | SP |\n| --- | --- | --- | --- |\n| 总变异 | 7.7343 | 802.9643 | -73.5986 |\n| 区组间 | 0.0240 | 26.0357 | -0.7907 |\n| 处理间 | 6.8731 | 694.4643 | -66.3636 |\n| 误差 | 0.8372 | 82.4643 | -6.4443 |",
+          "captions": [
+            {
+              "bbox": [
+                0.353,
+                0.213,
+                0.655,
+                0.228
+              ],
+              "content": "表 11-8 表 11-7 数据的平方和与乘积和"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_300_table_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.355,
+            0.797,
+            0.372
+          ],
+          "content": "有了上述结果，可先对 x 变量和 y 变量分别进行方差分析，结果列于表 11-9。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.404,
+            0.884,
+            0.518
+          ],
+          "content": "<table><tr><td rowspan=\"2\">变异来源</td><td rowspan=\"2\">df</td><td colspan=\"3\">x变量</td><td colspan=\"3\">y变量</td><td rowspan=\"2\"> $F_{0.05}$ </td><td rowspan=\"2\"> $F_{0.01}$ </td></tr><tr><td>SS</td><td> $s^2$ </td><td>F</td><td>SS</td><td> $s^2$ </td><td>F</td></tr><tr><td>区组间</td><td>1</td><td>0.0240</td><td>0.0240</td><td>0.3727</td><td>26.0357</td><td>26.0357</td><td>4.1044</td><td>4.67</td><td>9.07</td></tr><tr><td>处理间</td><td>13</td><td>6.8731</td><td>0.5287</td><td>8.2096**</td><td>694.4643</td><td>53.4203</td><td>8.4214**</td><td>2.57</td><td>3.90</td></tr><tr><td>误差</td><td>13</td><td>0.8372</td><td>0.0644</td><td></td><td>82.4643</td><td>6.3434</td><td></td><td></td><td></td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.378,
+                0.387,
+                0.63,
+                0.401
+              ],
+              "content": "表 11-9 表 11-7 数据的方差分析"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_300_table_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.529,
+            0.884,
+            0.611
+          ],
+          "content": "表 11-9 表明，不同区组的颖花数（x）和结实率（y）都没有显著差异，但不同施肥处理的 x 和 y 的差异均达极显著水平。在单项分组数据的协方差分析中，我们已经知道，如果 y和 x 无关，上述推断将是正确的；如果 y 和 x 有关，则不一定正确。因此，首先应明确 y 和x 是否有线性关系。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.163,
+            0.625,
+            0.553,
+            0.646
+          ],
+          "level": 2,
+          "content": "二、检验 x 和 y 是否存在线性回归关系"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.659,
+            0.534,
+            0.677
+          ],
+          "content": "由表 11-8 的误差项可得线性回归的 $U _ { e }$ 和 $Q _ { e }$ :"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.363,
+            0.68,
+            0.641,
+            0.72
+          ],
+          "content": "U _ {e} = \\frac {S P _ {e} ^ {2}}{S S _ {e _ {x}}} = \\frac {(- 6 . 4 4 4 3) ^ {2}}{0 . 8 3 7 2} = 4 9. 6 0 4 6",
+          "image_source": "../../raw/pages_0289-0304/images/page_300_equation_11.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.334,
+            0.723,
+            0.672,
+            0.745
+          ],
+          "content": "Q _ {e} = S S _ {e _ {y}} - U _ {e} = 8 2. 4 6 4 3 - 4 9. 6 0 4 6 = 3 2. 8 5 9 7",
+          "image_source": "../../raw/pages_0289-0304/images/page_300_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.75,
+            0.884,
+            0.789
+          ],
+          "content": "将线性回归进行 F 检验（表 11-10）， $F = 18.1151$ ，达极显著水平。因此应对 y 值进行矫正，并对矫正平均数进行差异显著性检验，才能明确不同区组或处理对于结实率的效应。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.825,
+            0.884,
+            0.918
+          ],
+          "content": "| 变异来源 | df | SS | $s^2$ | F |\n| --- | --- | --- | --- | --- |\n| 线性回归 | 1 | 49.6046 | 49.6046 | 18.1151** |\n| 离回归 | 12 | 32.8597 | 2.7383 |  |\n| 总变异 | 13 | 82.4643 |  |  |",
+          "captions": [
+            {
+              "bbox": [
+                0.305,
+                0.807,
+                0.701,
+                0.822
+              ],
+              "content": "表 11-10 表 11-7 数据误差项线性回归的显著性检验"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_300_table_15.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 301,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.173,
+            0.087
+          ],
+          "content": "·290·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.088
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.153,
+            0.113,
+            0.588,
+            0.134
+          ],
+          "level": 2,
+          "content": "三、检验矫正平均数 $\\overline { { y } } _ { i ( x = \\overline { { x } } ) }$ 间的差异显著性"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.149,
+            0.875,
+            0.313
+          ],
+          "content": "表 11-7 的数据分为区组和处理两项，因此，检验矫正平均数的差异显著性需一项一项地进行。检验处理的矫正平均数 $\\overline { { \\mathcal { Y } } } _ { i \\cdot ( x = \\overline { { x } } ) }$ 的差异显著性时，需将处理间和误差项的 $d f .$ 、SS 和 $S P$相加以代替总变异的 $d f _ { \\gamma }$ 、SS 和 $SP;$ ；检验区组的矫正平均数 $\\overline { { \\mathcal { Y } } } _ { \\cdot j ( x = \\overline { { x } } ) }$ 的差异显著性时，需将区组间和误差项的 $d f .$ 、SS 和 $S P$ 相加以代替总变异的 $d f _ { \\gamma }$ 、SS 和 $S P$ （这里的“处理间+误差项”和“区组间+误差项”相当于表 11-4 中的“总变异”）。由此，可以分别对两项矫正平均数间的差异进行显著性检验。区组只是局部控制的一种手段，在结果分析上只需剔除其影响，而不必研究其效应，因此这里仅对处理项的矫正平均数 $\\overline { { y } } _ { i \\cdot   ( x = \\overline { { x } } ) }$ 之间的差异显著性进行检验，结果列于表 11-11。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.114,
+            0.35,
+            0.875,
+            0.472
+          ],
+          "content": "<table><tr><td rowspan=\"2\">变异来源</td><td rowspan=\"2\">df</td><td rowspan=\"2\"> $SS_x$ </td><td rowspan=\"2\"> $SS_y$ </td><td rowspan=\"2\">SP</td><td rowspan=\"2\"> $b_e$ </td><td colspan=\"5\">矫正值(离回归)变异的分析</td></tr><tr><td>df</td><td>Q</td><td> $s^2$ </td><td>F</td><td> $F_{0.05}$ </td></tr><tr><td>处理+误差</td><td>26</td><td>7.7103</td><td>776.9286</td><td>-72.8079</td><td></td><td>25</td><td>89.4080</td><td></td><td></td><td></td></tr><tr><td>处理</td><td>13</td><td>6.8731</td><td>694.4643</td><td>-66.3636</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>误差</td><td>13</td><td>0.8372</td><td>82.4643</td><td>-6.4443</td><td>-7.6974</td><td>12</td><td>32.8597</td><td>2.7383</td><td></td><td></td></tr><tr><td>矫正平均数的差异</td><td></td><td></td><td></td><td></td><td></td><td>13</td><td>56.5483</td><td>4.3499</td><td>1.5885</td><td>2.66</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.277,
+                0.331,
+                0.709,
+                0.347
+              ],
+              "content": "表 11-11 表 11-7 数据处理间矫正平均数的协方差分析表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_301_table_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.483,
+            0.874,
+            0.542
+          ],
+          "content": "由表 11-11 可知，其 $F$ 值为 1.5885，未达到显著水平。说明各处理矫正平均数 $\\overline { { y } } _ { i ( x = \\overline { { x } } ) }$ 之间并无显著差异，因而不需要再对各矫正平均数间进行多重比较。但是，假设 $\\overline { { y } } _ { i ( x = \\overline { { x } } ) }$ 间的F 检验是显著的，则需要进行矫正平均数间的多重比较，其具体过程如下。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.547,
+            0.874,
+            0.607
+          ],
+          "content": "由表 11-10 可知，误差项线性回归达到极显著水平，所以可用表 11-11 中误差项回归系数 $b_{e(y/x)} = -7.6974$ 对各处理的 $| \\overline { { y } } _ { i } |$ 进行矫正。 $b_{e(y/x)} = -7.6974$ 表示颖花数 x 每增加 1 万 $/ \\mathrm { m } ^ { 2 }$结实率 $y$ 将下降 7.6974%。将 $b_{e(y/x)} = -7.6974$ 代入式（11-13），即有方程"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.367,
+            0.61,
+            0.618,
+            0.628
+          ],
+          "content": "\\overline {{y}} _ {i (x = \\overline {{x}})} = \\overline {{y}} _ {i} + 7. 6 9 7 4 (\\overline {{x}} _ {i} - 3. 7 7 1 4)",
+          "image_source": "../../raw/pages_0289-0304/images/page_301_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.631,
+            0.874,
+            0.669
+          ],
+          "content": "上式可将各处理的结实率都矫正到颖花数为 3.7714 万 $/ \\mathbf { m } ^ { 2 }$ 的结实率，由此可计算各处理矫正平均数为"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.737,
+            0.874,
+            0.774
+          ],
+          "content": "将计算出的 $\\overline { { y } } _ { i ( x = \\overline { { x } } ) }$ 列于表 11-7 末列。它们已和单位面积上颖花数的多少无关，故在相互比较时更为真实。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.78,
+            0.875,
+            0.905
+          ],
+          "content": "综上所述，本试验的基本结论是:不同的施肥期和施肥量，对‘南优 3 号’单位面积上的颖花数和结实率都有极显著的影响。但是，因颖花数和结实率有极显著的线性回归关系，故将各处理每平方米的颖花数都矫正到同一水平，则不同的结实率没有显著差异。因此，在本例中，不同施肥期和施肥量，对‘南优 3 号’的结实率只有间接效应，而没有显著的直接效应，即不同的施肥期和施肥量造成 $\\sum$ 单位面积上颖花数的差异，进而造成结实率的差异。"
+        }
+      ]
+    },
+    {
+      "page_idx": 302,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.422,
+            0.073,
+            0.587,
+            0.088
+          ],
+          "content": "第 11 章 协方差分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.826,
+            0.075,
+            0.878,
+            0.087
+          ],
+          "content": "·291·"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.429,
+            0.12,
+            0.564,
+            0.141
+          ],
+          "level": 2,
+          "content": "思考练习题"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.159,
+            0.159,
+            0.633,
+            0.174
+          ],
+          "content": "习题 **11.1** 什么是协方差分析？协方差分析的主要作用是什么？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.179,
+            0.88,
+            0.232
+          ],
+          "content": "习题 **11.2** 为研究 $A_{1} 、 A_{2} 、 A_{3} 、 A_{4} 4$ 种不同肥料对梨树单株产量的影响，选择 40 株梨树进行试验。将 40 株梨树完全随机分为 4 组，每组包含 10 株，每组施用一种肥料。各株梨树的起始干周（x，cm）和单株产量（y，kg）如下表所示。试检验 4 种肥料对梨树单株产量的影响是否有差异。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.24,
+            0.885,
+            0.44
+          ],
+          "content": "<table><tr><td colspan=\"5\">肥料</td><td colspan=\"7\">观测值</td><td>总和</td><td>平均</td></tr><tr><td rowspan=\"2\"> $A_1$ </td><td> $x_{1j}$ </td><td>36</td><td>30</td><td>26</td><td>23</td><td>26</td><td>30</td><td>20</td><td>19</td><td>20</td><td>16</td><td>246</td><td>24.6</td></tr><tr><td> $y_{1j}$ </td><td>89</td><td>80</td><td>74</td><td>80</td><td>85</td><td>68</td><td>73</td><td>68</td><td>80</td><td>58</td><td>755</td><td>75.5</td></tr><tr><td rowspan=\"2\"> $A_2$ </td><td> $x_{2j}$ </td><td>28</td><td>27</td><td>27</td><td>24</td><td>25</td><td>23</td><td>20</td><td>18</td><td>17</td><td>20</td><td>229</td><td>22.9</td></tr><tr><td> $y_{2j}$ </td><td>64</td><td>81</td><td>73</td><td>67</td><td>77</td><td>67</td><td>64</td><td>65</td><td>59</td><td>57</td><td>674</td><td>67.4</td></tr><tr><td rowspan=\"2\"> $A_3$ </td><td> $x_{3j}$ </td><td>28</td><td>33</td><td>26</td><td>22</td><td>23</td><td>20</td><td>22</td><td>23</td><td>18</td><td>17</td><td>232</td><td>23.2</td></tr><tr><td> $y_{3j}$ </td><td>55</td><td>62</td><td>58</td><td>58</td><td>66</td><td>55</td><td>60</td><td>71</td><td>55</td><td>48</td><td>588</td><td>58.8</td></tr><tr><td rowspan=\"2\"> $A_4$ </td><td> $x_{4j}$ </td><td>32</td><td>23</td><td>27</td><td>23</td><td>27</td><td>28</td><td>20</td><td>24</td><td>19</td><td>17</td><td>240</td><td>24.0</td></tr><tr><td> $y_{4j}$ </td><td>52</td><td>58</td><td>64</td><td>62</td><td>54</td><td>54</td><td>55</td><td>44</td><td>51</td><td>51</td><td>545</td><td>54.5</td></tr><tr><td rowspan=\"2\">总计</td><td>x</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>947</td><td>23.675</td></tr><tr><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2562</td><td>64.050</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_302_table_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.451,
+            0.884,
+            0.523
+          ],
+          "content": "习题 **11.3** 对 6 个菜豆品种进行了维生素 C 含量 $(y,\\  mg /100g)$ 比较试验，4 次重复，随机区组试验设计。根据已有的研究结果，菜豆维生素 C 的含量不仅与品种有关，而且与豆荚的成熟度有关。但是在试验中无法使所有小区的豆荚同时成熟，所以同时测定了 $1 0 0 \\mathrm { g }$ 所采豆荚干物质重百分率 $( x , \\% )$作为豆荚成熟度的指标。测定结果如下表所示，试对该数据进行协方差分析。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.535,
+            0.885,
+            0.844
+          ],
+          "content": "<table><tr><td>品种</td><td></td><td colspan=\"4\">区组</td><td>总和</td><td>平均</td></tr><tr><td rowspan=\"2\"> $A_1$ </td><td> $x_{1j}$ </td><td>34.0</td><td>33.4</td><td>34.7</td><td>38.9</td><td>141.0</td><td>35.250</td></tr><tr><td> $y_{1j}$ </td><td>93.0</td><td>94.8</td><td>91.7</td><td>80.8</td><td>360.3</td><td>90.075</td></tr><tr><td rowspan=\"2\"> $A_2$ </td><td> $x_{2j}$ </td><td>39.6</td><td>39.8</td><td>51.2</td><td>52.0</td><td>182.6</td><td>45.650</td></tr><tr><td> $y_{2j}$ </td><td>47.3</td><td>51.5</td><td>33.3</td><td>27.2</td><td>159.3</td><td>39.825</td></tr><tr><td rowspan=\"2\"> $A_3$ </td><td> $x_{3j}$ </td><td>31.7</td><td>30.1</td><td>33.8</td><td>39.6</td><td>135.2</td><td>33.800</td></tr><tr><td> $y_{3j}$ </td><td>81.4</td><td>109.0</td><td>71.6</td><td>57.5</td><td>319.5</td><td>79.875</td></tr><tr><td rowspan=\"2\"> $A_4$ </td><td> $x_{4j}$ </td><td>37.7</td><td>38.2</td><td>40.3</td><td>39.4</td><td>155.6</td><td>38.900</td></tr><tr><td> $y_{4j}$ </td><td>66.9</td><td>74.1</td><td>64.7</td><td>69.3</td><td>275.0</td><td>68.750</td></tr><tr><td rowspan=\"2\"> $A_5$ </td><td> $x_{5j}$ </td><td>24.9</td><td>24.0</td><td>24.9</td><td>23.5</td><td>97.3</td><td>24.325</td></tr><tr><td> $y_{5j}$ </td><td>119.5</td><td>128.5</td><td>125.6</td><td>129.0</td><td>502.6</td><td>125.650</td></tr><tr><td rowspan=\"2\"> $A_6$ </td><td> $x_{6j}$ </td><td>30.3</td><td>29.1</td><td>31.7</td><td>28.3</td><td>119.4</td><td>29.850</td></tr><tr><td> $y_{6j}$ </td><td>106.6</td><td>111.4</td><td>99.0</td><td>126.1</td><td>443.1</td><td>110.775</td></tr><tr><td rowspan=\"2\">总和</td><td> $x_{,j}$ </td><td>198.2</td><td>194.6</td><td>216.6</td><td>221.7</td><td rowspan=\"2\"> $\\sum x=831.1$  $\\sum y=2059.8$ </td><td></td></tr><tr><td> $y_{,j}$ </td><td>514.7</td><td>569.3</td><td>485.9</td><td>489.9</td><td></td></tr><tr><td rowspan=\"2\">平均</td><td> $x_{,j}$ </td><td>33.033</td><td>32.433</td><td>36.100</td><td>36.950</td><td></td><td> $\\bar{x}=34.629$ </td></tr><tr><td> $y_{,j}$ </td><td>85.783</td><td>94.883</td><td>80.983</td><td>81.650</td><td></td><td> $\\bar{y}=85.825$ </td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0289-0304/images/page_302_table_7.jpg"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.473,
+            0.855,
+            0.536,
+            0.9
+          ],
+          "content": ""
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.475,
+            0.903,
+            0.534,
+            0.915
+          ],
+          "content": "参考答案"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "authors": [
+        "CNKI"
+      ],
+      "created_at": "2023-10-31T11:03:42-08:00",
+      "creator_application": "ReaderEx_DIS 2.0.0 Build 3915",
+      "producer_application": "TTKN",
+      "page_count": 393,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 0,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 1,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 2,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 3,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 4,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 5,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 6,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 7,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 8,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 9,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 10,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 11,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 12,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 13,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 14,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 15,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

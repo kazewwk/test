@@ -1,0 +1,3435 @@
+{
+  "pages": [
+    {
+      "page_idx": 221,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.138,
+            0.135,
+            0.29,
+            0.164
+          ],
+          "content": "第 9 章"
+        },
+        {
+          "type": "doc_title",
+          "bbox": [
+            0.445,
+            0.183,
+            0.856,
+            0.211
+          ],
+          "level": 1,
+          "content": "可直线化的非线性回归分析"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.134,
+            0.263,
+            0.22,
+            0.281
+          ],
+          "level": 2,
+          "content": "本章提要"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.293,
+            0.862,
+            0.331
+          ],
+          "content": "可直线化的非线性回归分析是对自变量 x 和依变量 y 之间不是直线关系，但经数据变换后可以进行直线回归分析的一种方法。本章主要讨论:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.123,
+            0.333,
+            0.866,
+            0.42
+          ],
+          "sub_type": "text",
+          "content": "• 变量 y 与 x 曲线关系类型的确定及数据变换方法；\n• 倒数函数、指数函数、对数函数、幂函数及 Logistic 生长曲线等常见非线性方程的建立与回归关系显著性检验；\n• 相关指数的概念及其应用。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.444,
+            0.874,
+            0.592
+          ],
+          "content": "在研究过程中经常可以遇到变量间的非线性关系，如细菌的繁殖速率与温度、作物产量与施肥量等都属这种类型，可通过非线性回归分析来描述这种关系。非线性回归分析最主要的任务是确定变量 y 与 x 的曲线关系类型。首先通过专业知识判断函数类型，或者根据专业人士已知的理论推导，或者是经验公式来判断。例如，单细胞生物生长初期数量、植物冠层中的光强度分布，都可用指数函数描述。如果没有足够的专业知识判断变量间的关系是哪种类型，则可用直观的方法——作散点图的方法来判断。把 n 对观测值在坐标轴上绘出，观察实测点的分布趋势与哪一类已知函数最接近，即可用该函数曲线进行拟合。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.596,
+            0.875,
+            0.678
+          ],
+          "content": "可以用来表示两个变量间关系的曲线种类有很多，有些曲线类型可以通过数据转换变形为直线形式，我们称之为直线化（rectification）。对转换后的数据建立直线回归方程，然后再反转换为曲线回归方程（curvilinear regression equation），这就是可直线化的非线性回归分析。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.31,
+            0.707,
+            0.66,
+            0.729
+          ],
+          "level": 2,
+          "content": "第一节 非线性回归的直线化"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.152,
+            0.757,
+            0.36,
+            0.777
+          ],
+          "level": 2,
+          "content": "一、曲线类型的确定"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.792,
+            0.875,
+            0.897
+          ],
+          "content": "生物学中变量间的曲线关系通常有倒数函数曲线、指数函数曲线、对数函数曲线、幂函数曲线、“S”形曲线等多种形式，但是要找出两个变量间恰当的非线性回归方程形式并不是很容易的事情，需要借助于有关专业知识所提供的推断。例如，单细胞生物生长初期数量是按指数函数增长，但若生长时间较长，受营养供应和生存空间等因素的限制，后期生长受到抑制，则会变为“S”形曲线；酶促反应动力学中的米氏方程是一种双曲线等。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.9,
+            0.874,
+            0.918
+          ],
+          "content": "因此，只有研究工作者对所研究的变量有足够的专业知识和实践经验，并借助于散点图"
+        }
+      ]
+    },
+    {
+      "page_idx": 222,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.366,
+            0.073,
+            0.643,
+            0.088
+          ],
+          "content": "第 9 章 可直线化的非线性回归分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.827,
+            0.075,
+            0.878,
+            0.087
+          ],
+          "content": "·211·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.106,
+            0.63,
+            0.122
+          ],
+          "content": "和直线化的数据转换，才能选出一条符合要求的最优曲线的。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.128,
+            0.686,
+            0.143
+          ],
+          "content": "确定曲线类型是非线性回归分析的关键，主要有以下几种方法。"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.123,
+            0.149,
+            0.886,
+            0.274
+          ],
+          "sub_type": "text",
+          "content": "（1）图示法。根据所获得的调查与试验数据的自然尺度绘出散点图，然后按照散点图的趋势绘出能够反映它们之间变化规律的曲线，并与已知的曲线相比较，找出与之较为相似的曲线图形，该曲线即选定的类型。\n（2）直线化法。根据散点图进行直观的比较，选出一种曲线类型，并将原始数据进行转换，将曲线方程直线化，用转换后的数据绘出散点图，若该图形为直线趋势，即表明选取的曲线类型是恰当的，否则需要重新进行选择。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.279,
+            0.887,
+            0.362
+          ],
+          "content": "确定曲线类型时，往往需要从多方面慎重考虑。曲线配合得好坏，通常以所配曲线与实测点吻合程度的高低来衡量，这取决于离回归平方和 $\\sum ( y - { \\hat { y } } ) ^ { 2 }$ 与 $y$ 的总平方和 $\\sum ( y - { \\overline { { y } } } ) ^ { 2 }$的比例大小。若这个比例小，说明所配曲线与实测点吻合程度高，反之则低。我们把 1 与这个比值之差定义为曲线回归的相关指数（correlation exponential），记为 $R ^ { 2 }$ ，即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.422,
+            0.367,
+            0.882,
+            0.408
+          ],
+          "content": "R ^ {2} = 1 - \\frac {\\sum (y - \\hat {y}) ^ {2}}{\\sum (y - \\bar {y}) ^ {2}} \\tag {9-1}",
+          "image_source": "../../raw/pages_0209-0224/images/page_222_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.414,
+            0.883,
+            0.453
+          ],
+          "content": "相关指数 $R ^ { 2 }$ 的大小反映了回归曲线拟合度的高低，表示利用曲线回归方程进行估测的可靠程度的高低。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.457,
+            0.886,
+            0.518
+          ],
+          "content": "对于同一组实测数据，根据散点图的形状，可用若干相近的曲线进行拟合，同时建立若干曲线回归方程，然后根据 $R ^ { 2 }$ 的大小和生物学等专业知识，选择既符合生物学规律，又有较高拟合度的曲线回归方程来描述两个变量间的曲线回归关系。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.162,
+            0.532,
+            0.372,
+            0.551
+          ],
+          "level": 2,
+          "content": "二、数据变换的方法"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.566,
+            0.78,
+            0.582
+          ],
+          "content": "在进行非线性回归曲线的直线化时，对原数据进行转换的方法通常有两种。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.588,
+            0.882,
+            0.626
+          ],
+          "content": "（1）直接引入新变量。这种方法是直接引入新的变量，从而使变量间为直线关系。例如，对数函数曲线方程为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.461,
+            0.645,
+            0.564,
+            0.662
+          ],
+          "content": "\\hat {y} = a + b \\lg x",
+          "image_source": "../../raw/pages_0209-0224/images/page_222_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.669,
+            0.641,
+            0.687
+          ],
+          "content": "直接引入新变量 $x ^ { \\prime }$ ，令 $x ^ { \\prime } { = } \\lg x$ ，原方程式转换为直线形式，即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.461,
+            0.692,
+            0.547,
+            0.709
+          ],
+          "content": "\\hat {y} = a + b x ^ {\\prime}",
+          "image_source": "../../raw/pages_0209-0224/images/page_222_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.717,
+            0.882,
+            0.755
+          ],
+          "content": "（2）方程变换后再引入新变量。这种方法是将原曲线方程进行一定的数学变换后，再引入新变量，从而使变量间的关系变为直线关系。例如，幂函数曲线方程为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.474,
+            0.763,
+            0.534,
+            0.78
+          ],
+          "content": "\\hat {y} = a x ^ {b}",
+          "image_source": "../../raw/pages_0209-0224/images/page_222_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.788,
+            0.262,
+            0.804
+          ],
+          "content": "两边取对数，得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.432,
+            0.81,
+            0.575,
+            0.828
+          ],
+          "content": "\\lg \\hat {y} = \\lg a + b \\lg x",
+          "image_source": "../../raw/pages_0209-0224/images/page_222_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.834,
+            0.53,
+            0.852
+          ],
+          "content": "若令 $\\hat { y } ^ { \\prime } { = } \\lg \\hat { y }$ $a ^ { \\prime } { = } \\lg a$ $x ^ { \\prime } { = } \\lg x$ ，则原方程式变为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.413,
+            0.858,
+            0.507,
+            0.875
+          ],
+          "content": "\\hat {y} ^ {\\prime} = a ^ {\\prime} + b x ^ {\\prime}",
+          "image_source": "../../raw/pages_0209-0224/images/page_222_equation_22.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.883,
+            0.527,
+            0.899
+          ],
+          "content": "几种常用曲线方程的直线化方法列于表 9-1。"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.815,
+            0.833,
+            0.877,
+            0.878
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.81,
+                0.881,
+                0.882,
+                0.893
+              ],
+              "content": "双曲线函数"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0209-0224/images/page_222_image_24.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 223,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.173,
+            0.087
+          ],
+          "content": "·212·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.088
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.115,
+            0.127,
+            0.875,
+            0.443
+          ],
+          "content": "<table><tr><td rowspan=\"2\">曲线回归方程</td><td colspan=\"3\">经尺度转换的新变量及参数</td><td rowspan=\"2\">直线化的方程</td></tr><tr><td> $y'$ </td><td> $x'$ </td><td> $a'$ </td></tr><tr><td> $\\hat{y} = \\frac{a+bx}{x}$ </td><td> $y' = yx$ </td><td></td><td></td><td> $\\hat{y}' = a+bx$ </td></tr><tr><td> $\\hat{y} = \\frac{1}{a+bx}$ </td><td> $y' = \\frac{1}{y}$ </td><td></td><td></td><td> $\\hat{y}' = a+bx$ </td></tr><tr><td> $\\hat{y} = \\frac{x}{a+bx}$ </td><td> $y' = \\frac{x}{y}$ </td><td></td><td></td><td> $\\hat{y}' = a+bx$ </td></tr><tr><td> $\\hat{y} = ax + bx^2$ </td><td> $y' = \\frac{y}{x}$ </td><td></td><td></td><td> $\\hat{y}' = a+bx$ </td></tr><tr><td> $\\hat{y} = a+b\\ln x$ </td><td></td><td> $x' = \\ln x$ </td><td></td><td> $\\hat{y} = a+bx'$ </td></tr><tr><td> $\\hat{y} = a+b\\lg x$ </td><td></td><td> $x' = \\lg x$ </td><td></td><td> $\\hat{y} = a+bx'$ </td></tr><tr><td> $\\hat{y} = ax^b$ </td><td> $y' = \\ln y$ </td><td> $x' = \\ln x$ </td><td> $a' = \\ln a$ </td><td> $\\hat{y}' = a'+bx'$ </td></tr><tr><td> $\\hat{y} = ae^{bx}$ </td><td> $y' = \\ln y$ </td><td></td><td> $a' = \\ln a$ </td><td> $\\hat{y}' = a'+bx$ </td></tr><tr><td> $\\hat{y} = axe^{bx}$ </td><td> $y' = \\ln \\frac{y}{x}$ </td><td></td><td> $a' = \\ln a$ </td><td> $\\hat{y}' = a'+bx$ </td></tr><tr><td> $\\hat{y} = \\frac{1}{ax^b}$ </td><td> $y' = \\ln \\frac{1}{y}$ </td><td> $x' = \\ln x$ </td><td> $a' = \\ln a$ </td><td> $\\hat{y}' = a'+bx'$ </td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.358,
+                0.109,
+                0.63,
+                0.124
+              ],
+              "content": "表 9-1 常用曲线方程的直线化方法"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0209-0224/images/page_223_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.455,
+            0.875,
+            0.515
+          ],
+          "content": "统计学上已经证明，对于倒数函数曲线、指数函数曲线、对数函数曲线、幂函数曲线和Logistic 生长曲线这几种曲线方程，只要变量转换以后的直线化回归关系达到显著，变量反转后得到的曲线方程回归关系也较好。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.35,
+            0.538,
+            0.621,
+            0.559
+          ],
+          "level": 2,
+          "content": "第二节 倒数函数曲线"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.582,
+            0.63,
+            0.599
+          ],
+          "content": "倒数函数（reciprocal function）常见的表达式有以下几种:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.449,
+            0.604,
+            0.872,
+            0.638
+          ],
+          "content": "\\hat {y} = \\frac {a + b x}{x} \\tag {9-2}",
+          "image_source": "../../raw/pages_0209-0224/images/page_223_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.452,
+            0.642,
+            0.872,
+            0.676
+          ],
+          "content": "\\hat {y} = \\frac {1}{a + b x} \\tag {9-3}",
+          "image_source": "../../raw/pages_0209-0224/images/page_223_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.45,
+            0.684,
+            0.872,
+            0.714
+          ],
+          "content": "\\hat {y} = \\frac {x}{a + b x} \\tag {9-4}",
+          "image_source": "../../raw/pages_0209-0224/images/page_223_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.718,
+            0.446,
+            0.736
+          ],
+          "content": "若令 $y ^ { \\prime } { = } x y$ ，则式（9-2）可以写成"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.452,
+            0.739,
+            0.872,
+            0.756
+          ],
+          "content": "\\hat {y} ^ {\\prime} = a + b x \\tag {9-5}",
+          "image_source": "../../raw/pages_0209-0224/images/page_223_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.764,
+            0.876,
+            0.821
+          ],
+          "content": "若令 $y ^ { \\prime } { = } \\frac { 1 } { y }$ ，则式（9-3）也可以写成式（9-5）。若令 $y ^ { \\prime } { = } { \\frac { x } { y } }$ ，则式（9-4）也可以写成式（9-5）。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.826,
+            0.874,
+            0.864
+          ],
+          "content": "因此，式（9-5）是式（9-2）、式（9-3）和式（9-4）直线化后的表达形式。本节以式（9-2）为例讨论倒数函数方程的拟合过程。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.869,
+            0.875,
+            0.927
+          ],
+          "content": "如果两个变量的成对观测值在坐标系中的散点图分布趋势类似于倒数函数曲线图（图 9-1），可试配 $\\scriptstyle { \\hat { y } } = { \\frac { a + b x } { x } }$ 型的回归方程。首先引入新的变量 $y' \\left( y' = xy \\right)$ ），然后用 $y ^ { \\prime } .$ 与 x 进"
+        }
+      ]
+    },
+    {
+      "page_idx": 224,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.366,
+            0.073,
+            0.643,
+            0.088
+          ],
+          "content": "第 9 章 可直线化的非线性回归分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.826,
+            0.075,
+            0.878,
+            0.087
+          ],
+          "content": "·213·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.106,
+            0.591,
+            0.144
+          ],
+          "content": "行直线回归分析，求得 a 和 b，经过数据还原即可得倒数函数方程。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.152,
+            0.592,
+            0.253
+          ],
+          "content": "应用 $\\scriptstyle { \\hat { y } } = { \\frac { a + b x } { x } }$ 的条件如下:①x 的观测值无 0 值；②xy 应具有专业意义，而不是抽象的变量；③以 $y ^ { \\prime } ( y ^ { \\prime } =$ xy）和 x 为坐标绘制出的散点图有明显的直线性；④y′和x 的相关系数差异达到显著。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.257,
+            0.594,
+            0.318
+          ],
+          "content": "例 **9-1** 测定‘苏品1号’玉米在不同密度下的平均株重（x， $\\mathbf { g } /$ 株）和经济系数 $( y )$ 的关系，结果如表 9-2所示。试对该组数据进行回归分析。"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.604,
+            0.1,
+            0.887,
+            0.288
+          ],
+          "sub_type": "contour",
+          "content": "| Condition | Description |\n| --- | --- |\n| a > 0, b < 0 | Function curve starting from the origin (0,0) |\n| a < 0, b > 0 | Function curve starting from the origin (0,0) |\n| a > 0, b > 0 | Function curve starting from the origin (0,0) |",
+          "captions": [
+            {
+              "bbox": [
+                0.613,
+                0.29,
+                0.877,
+                0.32
+              ],
+              "content": "图 9-1 倒数函数 $\\scriptstyle { \\hat { y } } = { \\frac { a + b x } { x } }$ 的图示"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_224_chart_5.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.355,
+            0.884,
+            0.555
+          ],
+          "content": "| 密度(千株/667$m^2$) | x | y | $y' = xy$ | $x^2$ | $xy'$ | $y'^2$ | $\\hat{y}$ | $y - \\hat{y}$ |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 1 | 399 | 0.380 | 151.620 | 159201 | 60496.380 | 22988.624 | 0.384 | -0.004 |\n| 2 | 329 | 0.379 | 124.691 | 108241 | 41023.339 | 15547.845 | 0.376 | 0.003 |\n| 3 | 247 | 0.371 | 91.637 | 61009 | 22634.339 | 8397.340 | 0.362 | 0.009 |\n| 4 | 191 | 0.343 | 65.513 | 36481 | 12512.983 | 4291.953 | 0.344 | -0.001 |\n| 5 | 145 | 0.317 | 45.965 | 21025 | 6664.925 | 2112.781 | 0.320 | -0.003 |\n| 6 | 119 | 0.301 | 35.819 | 14161 | 4262.461 | 1283.001 | 0.298 | 0.003 |\n| 7 | 90 | 0.248 | 22.320 | 8100 | 2008.800 | 498.182 | 0.259 | -0.011 |",
+          "captions": [
+            {
+              "bbox": [
+                0.368,
+                0.336,
+                0.638,
+                0.351
+              ],
+              "content": "表 9-2 玉米株重与经济系数的关系"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_224_table_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.567,
+            0.884,
+            0.629
+          ],
+          "content": "（1）绘制散点图，判断曲线类型。根据表 9-2 数据绘制 x 和 y 的散点图（图 9-2），散点图与图 9-1 中 $a   \\leq   0$ 、b＞0 的曲线相似。为了能够做出更准确的判断，图 9-3 绘出了 x 与 y′ $(y' = xy)$ 的散点图， $y ^ { \\prime } .$ 与 x 之间存在直线关系，这表明选择该倒数函数曲线是适合的。"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.138,
+            0.638,
+            0.501,
+            0.814
+          ],
+          "sub_type": "scatter",
+          "content": "| x (g) | y |\n| --- | --- |\n| ~90 | ~0.25 |\n| ~120 | ~0.30 |\n| ~150 | ~0.32 |\n| ~190 | ~0.34 |\n| ~240 | ~0.37 |\n| ~320 | ~0.38 |\n| ~400 | ~0.38 |",
+          "captions": [
+            {
+              "bbox": [
+                0.183,
+                0.818,
+                0.486,
+                0.833
+              ],
+              "content": "图 9-2 经济系数 y 与玉米株重 x 的关系"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_224_chart_10.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.51,
+            0.639,
+            0.878,
+            0.814
+          ],
+          "sub_type": "line",
+          "content": "| x (g) | y |\n| --- | --- |\n| ~95 | ~25 |\n| ~125 | ~37 |\n| ~155 | ~48 |\n| ~200 | ~68 |\n| ~255 | ~92 |\n| ~340 | ~127 |\n| ~410 | ~156 |",
+          "captions": [
+            {
+              "bbox": [
+                0.547,
+                0.818,
+                0.882,
+                0.834
+              ],
+              "content": "图 9-3 例 9-1 数据中 $y ^ { \\prime }$ 与 x 之间的直线关系"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_224_chart_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.847,
+            0.88,
+            0.886
+          ],
+          "content": "（2）配合倒数函数方程。利用 $y ^ { \\prime } )$ 和 x 进行直线回归分析，得到 a 和 b 值，代入式（9-2）即得倒数函数方程。具体步骤如下所述。"
+        }
+      ]
+    },
+    {
+      "page_idx": 225,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.173,
+            0.087
+          ],
+          "content": "·214·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.088
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.106,
+            0.52,
+            0.122
+          ],
+          "content": "第一步，根据表 9-2 数据计算 6 个一级数据:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.235,
+            0.129,
+            0.748,
+            0.175
+          ],
+          "content": "\\begin{array}{l l l} \\sum x = 1 5 2 0 & \\sum x ^ {2} = 4 0 8 2 1 8 & \\sum y ^ {\\prime} = 5 3 7. 5 6 5 \\\\ \\sum y ^ {\\prime 2} = 5 5 1 1 9. 7 2 7 & \\sum x y ^ {\\prime} = 1 4 9 6 0 3. 2 2 7 & n = 7 \\end{array}",
+          "image_source": "../../raw/pages_0225-0240/images/page_225_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.182,
+            0.523,
+            0.198
+          ],
+          "content": "第二步，由 6 个一级数据计算 5 个二级数据:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.206,
+            0.71,
+            0.25
+          ],
+          "content": "S S _ {x} = \\sum x ^ {2} - \\frac {\\left(\\sum x\\right) ^ {2}}{n} = 4 0 8 2 1 8 - \\frac {1 5 2 0 ^ {2}}{7} = 7 8 1 6 0. 8 5 7",
+          "image_source": "../../raw/pages_0225-0240/images/page_225_equation_5.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.255,
+            0.258,
+            0.73,
+            0.297
+          ],
+          "content": "S S _ {y ^ {\\prime}} = \\sum y ^ {2} - \\frac {\\left(\\sum y ^ {\\prime}\\right) ^ {2}}{n} = 5 5 1 1 9. 7 2 7 - \\frac {5 3 7 . 5 6 5 ^ {2}}{7} = 1 3 8 3 7. 4 2 3",
+          "image_source": "../../raw/pages_0225-0240/images/page_225_equation_6.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.208,
+            0.303,
+            0.777,
+            0.342
+          ],
+          "content": "S P _ {x y ^ {\\prime}} = \\sum x y ^ {\\prime} - \\frac {(\\sum x) (\\sum y ^ {\\prime})}{n} = 1 4 9 6 0 3. 2 2 7 - \\frac {1 5 2 0 \\times 5 3 7 . 5 6 5}{7} = 3 2 8 7 4. 8 2 7",
+          "image_source": "../../raw/pages_0225-0240/images/page_225_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.382,
+            0.348,
+            0.605,
+            0.386
+          ],
+          "content": "\\overline {{x}} = \\frac {\\sum x}{n} = \\frac {1 5 2 0}{7} = 2 1 7. 1 4 3",
+          "image_source": "../../raw/pages_0225-0240/images/page_225_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.368,
+            0.393,
+            0.617,
+            0.431
+          ],
+          "content": "\\overline {{y}} ^ {\\prime} = \\frac {\\sum y ^ {\\prime}}{n} = \\frac {5 3 7 . 5 6 5}{7} = 7 6. 7 9 5",
+          "image_source": "../../raw/pages_0225-0240/images/page_225_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.438,
+            0.48,
+            0.455
+          ],
+          "content": "第三步，计算回归系数 b 和回归截距 a:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.355,
+            0.46,
+            0.628,
+            0.498
+          ],
+          "content": "b = \\frac {S P _ {x y ^ {\\prime}}}{S S _ {x}} = \\frac {3 2 8 7 4 . 8 2 7}{7 8 1 6 0 . 8 5 7} = 0. 4 2 0 6",
+          "image_source": "../../raw/pages_0225-0240/images/page_225_equation_11.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.286,
+            0.506,
+            0.694,
+            0.523
+          ],
+          "content": "a = \\overline {{y}} ^ {\\prime} - b \\overline {{x}} = 7 6. 7 9 5 - 0. 4 2 0 6 \\times 2 1 7. 1 4 3 = - 1 4. 5 3 5 3",
+          "image_source": "../../raw/pages_0225-0240/images/page_225_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.533,
+            0.706,
+            0.55
+          ],
+          "content": "第四步，将 a 和 b 代入式（9-2），得到 y 和 x 之间的倒数函数方程:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.391,
+            0.561,
+            0.594,
+            0.595
+          ],
+          "content": "\\hat {y} = \\frac {- 1 4 . 5 3 5 3 + 0 . 4 2 0 6 x}{x}",
+          "image_source": "../../raw/pages_0225-0240/images/page_225_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.606,
+            0.874,
+            0.645
+          ],
+          "content": "（3）直线化回归方程的显著性检验。对直线化后的回归方程进行显著性检验时，我们可以计算 $x$ 与 $y ^ { \\prime }$ 的相关系数并对其进行显著性检验。"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.276,
+            0.652,
+            0.709,
+            0.695
+          ],
+          "content": "r _ {x y ^ {\\prime}} = \\frac {S P _ {x y ^ {\\prime}}}{\\sqrt {S S _ {x} S S _ {y ^ {\\prime}}}} = \\frac {3 2 8 7 4 . 8 2 7}{\\sqrt {7 8 1 6 0 . 8 5 7 \\times 1 3 8 3 7 . 4 2 3}} = 0. 9 9 9 6 ^ {* *}",
+          "image_source": "../../raw/pages_0225-0240/images/page_225_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.705,
+            0.874,
+            0.785
+          ],
+          "content": "（4）计算曲线回归方程的相关指数。将 x 的每一取值代入倒数方程 $\\frac{-14.5353+0.4206x}{x}$可以得到相应的 $\\hat { y } ,$ ，其结果列于表 9-2 中。从每一对 y 与 $\\hat { y }$ 的差值大小可看出每一对观测值受随机误差影响的大小，差异越大，随机误差就越大。根据式（9-1），有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.318,
+            0.791,
+            0.669,
+            0.834
+          ],
+          "content": "R ^ {2} = 1 - \\frac {\\sum (y - \\hat {y}) ^ {2}}{\\sum (y - \\bar {y}) ^ {2}} = 1 - \\frac {0 . 0 0 0 2 4 6}{0 . 0 1 4 4} = 0. 9 8 2 9",
+          "image_source": "../../raw/pages_0225-0240/images/page_225_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.844,
+            0.873,
+            0.902
+          ],
+          "content": "表明玉米株重 $( x )$ 和经济系数 $( y )$ 的回归关系用倒数函数方程 $\\frac{-14.5353+0.4206x}{x}$ 进行描述，其相关指数达 0.9829，说明该倒数函数拟合程度较好。"
+        }
+      ]
+    },
+    {
+      "page_idx": 226,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.366,
+            0.073,
+            0.643,
+            0.088
+          ],
+          "content": "第 9 章 可直线化的非线性回归分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.826,
+            0.075,
+            0.878,
+            0.087
+          ],
+          "content": "·215·"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.36,
+            0.125,
+            0.63,
+            0.147
+          ],
+          "level": 2,
+          "content": "第三节 指数函数曲线"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.171,
+            0.595,
+            0.188
+          ],
+          "content": "指数函数（exponential function）常见的有两种形式:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.472,
+            0.191,
+            0.882,
+            0.209
+          ],
+          "content": "\\hat {y} = a \\mathrm{e} ^ {b x} \\tag {9-6}",
+          "image_source": "../../raw/pages_0225-0240/images/page_226_equation_4.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.475,
+            0.213,
+            0.882,
+            0.23
+          ],
+          "content": "\\hat {y} = a b ^ {x} \\tag {9-7}",
+          "image_source": "../../raw/pages_0225-0240/images/page_226_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.235,
+            0.779,
+            0.295
+          ],
+          "content": "在指数函数中，x 是作为指数出现的，系数 b 常用以描述动植物生长、细菌繁殖和经济增长或衰减速率。如图 9-4 所示，当 $a   \\geq   0$ 时，如果曲线方程是式（9-6），$b   \\geq   0$ 表示是生长型曲线， $b   \\leq   0$ 表示是衰减型曲线；如果曲线方程是式（9-7），"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.3,
+            0.551,
+            0.337
+          ],
+          "content": "$b   \\geq   1$ 表示是凹增长型曲线， $0 \\leq b \\leq 1$ 表示是凸增长型曲线， $b   \\leq   0$ 表示是衰减型曲线。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.343,
+            0.465,
+            0.359
+          ],
+          "content": "将式（9-6）两边取自然对数，得到:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.264,
+            0.364,
+            0.543,
+            0.38
+          ],
+          "content": "\\ln \\hat {y} = \\ln a + b x \\tag {9-8}",
+          "image_source": "../../raw/pages_0225-0240/images/page_226_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.386,
+            0.479,
+            0.402
+          ],
+          "content": "令 $y ^ { \\prime } { = } \\mathrm { l n } y$ $a ^ { \\prime } { = } \\ln a$ ，式（9-8）变形为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.281,
+            0.406,
+            0.542,
+            0.422
+          ],
+          "content": "\\hat {y} ^ {\\prime} = a ^ {\\prime} + b x \\tag {9-9}",
+          "image_source": "../../raw/pages_0225-0240/images/page_226_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.427,
+            0.51,
+            0.444
+          ],
+          "content": "式（9-9）为式（9-6）直线化后的表达式。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.449,
+            0.553,
+            0.508
+          ],
+          "content": "例 **9-2** 棉花红铃虫的产卵数与温度有关，试根据表 9-3 中的数据建立棉花红铃虫产卵数与温度的回归方程。"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.571,
+            0.305,
+            0.887,
+            0.497
+          ],
+          "sub_type": "line",
+          "content": "| Category | Equation |\n| --- | --- |\n| Intersection Point | (a, b) |",
+          "captions": [
+            {
+              "bbox": [
+                0.601,
+                0.501,
+                0.846,
+                0.517
+              ],
+              "content": "图 9-4 指数函数 $\\hat { y } { = } a \\mathbf { e } ^ { b x }$ 的图示"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_226_chart_14.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.545,
+            0.884,
+            0.609
+          ],
+          "content": "| 温度(x,°C) | 21 | 23 | 25 | 27 | 29 | 32 | 35 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 产卵数(y) | 7 | 11 | 21 | 24 | 66 | 115 | 325 |\n| y'=lny | 1.9459 | 2.3979 | 3.0445 | 3.1781 | 4.1897 | 4.7449 | 5.7838 |",
+          "captions": [
+            {
+              "bbox": [
+                0.185,
+                0.527,
+                0.49,
+                0.542
+              ],
+              "content": "表 9-3 棉花红铃虫产卵数与温度的关系"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_226_table_17.jpg"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.122,
+            0.62,
+            0.884,
+            0.744
+          ],
+          "sub_type": "text",
+          "content": "（1）绘制散点图，判断曲线类型。根据表 9-3 的数据绘制 $( x , y )$ 散点图（图 9-5）。该散点图与图 9-4 中 $b   \\geq   0$ 时的曲线相似，选择方程 $\\hat { y } { = } a \\mathbf { e } ^ { b x }$ 进行曲线拟合。同时，以 $x$ 和 $y ^ { \\prime }$ $(y' = \\log y)$ 的数据绘制散点图（图 9-6），其直线趋势较为明显，说明配合 $\\hat { y } { = } a \\mathbf { e } ^ { b x }$ 的曲线方程是适合的。\n（2）配合指数曲线方程。以 x 和 $y^{\\prime} \\left( y^{\\prime} = \\ln y \\right)$ 进行直线回归分析，求出 b 和 $a ^ { \\prime }$ ，并将 $a ^ { \\prime }$转换为 a，代入 $\\hat { y } { = } a \\mathbf { e } ^ { b x }$ 即可。具体步骤如下。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.751,
+            0.531,
+            0.767
+          ],
+          "content": "第一步，根据表 9-3 数据计算 6 个一级数据:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.254,
+            0.77,
+            0.751,
+            0.792
+          ],
+          "content": "\\sum x = 1 9 2 \\quad \\sum x ^ {2} = 5 4 1 4 \\quad \\sum y ^ {\\prime} = 2 5. 2 8 4 8",
+          "image_source": "../../raw/pages_0225-0240/images/page_226_equation_22.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.257,
+            0.795,
+            0.669,
+            0.817
+          ],
+          "content": "\\sum y ^ {\\prime 2} = 1 0 2. 4 2 5 8 \\quad \\sum x y ^ {\\prime} = 7 3 3. 7 0 7 9 \\quad n = 7",
+          "image_source": "../../raw/pages_0225-0240/images/page_226_equation_23.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.821,
+            0.533,
+            0.837
+          ],
+          "content": "第二步，由 $6$ 个一级数据计算 5 个二级数据:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.319,
+            0.842,
+            0.688,
+            0.882
+          ],
+          "content": "S S _ {x} = \\sum x ^ {2} - \\frac {\\left(\\sum x\\right) ^ {2}}{n} = 5 4 1 4 - \\frac {1 9 2 ^ {2}}{7} = 1 4 7. 7 1 4 3",
+          "image_source": "../../raw/pages_0225-0240/images/page_226_equation_25.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.805,
+            0.235,
+            0.869,
+            0.281
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.801,
+                0.284,
+                0.874,
+                0.296
+              ],
+              "content": "相对生长率"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_226_image_26.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 227,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.173,
+            0.087
+          ],
+          "content": "·216·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.087
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.152,
+            0.1,
+            0.51,
+            0.315
+          ],
+          "sub_type": "scatter",
+          "content": "| \\(x ({}^{\\circ}C)\\) | y |\n| --- | --- |\n| ~21 | ~5 |\n| ~23 | ~8 |\n| ~24 | ~15 |\n| ~26 | ~25 |\n| ~28 | ~55 |\n| ~31 | ~110 |\n| ~34 | ~320 |",
+          "captions": [
+            {
+              "bbox": [
+                0.172,
+                0.319,
+                0.506,
+                0.335
+              ],
+              "content": "图 9-5 棉花红铃虫产卵数 y 与温度 x 的关系"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_227_chart_2.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.542,
+            0.1,
+            0.843,
+            0.315
+          ],
+          "sub_type": "scatter",
+          "content": "| x \\(({}^{\\circ}C)\\) | y' = ln y |\n| --- | --- |\n| ~20.5 | ~1.8 |\n| ~23 | ~2.3 |\n| ~24 | ~3.1 |\n| ~27 | ~3.2 |\n| ~28 | ~4.2 |\n| ~30.5 | ~4.8 |\n| ~34.5 | ~5.9 |",
+          "captions": [
+            {
+              "bbox": [
+                0.543,
+                0.319,
+                0.872,
+                0.335
+              ],
+              "content": "图 9-6 例 9-2 数据中 y′与 x 之间的直线关系"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_227_chart_4.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.226,
+            0.344,
+            0.761,
+            0.512
+          ],
+          "content": "\\begin{array}{l} S S _ {y ^ {\\prime}} = \\sum y ^ {\\prime 2} - \\frac {\\left(\\sum y ^ {\\prime}\\right) ^ {2}}{n} = 1 0 2. 4 2 5 8 - \\frac {2 5 . 2 8 4 8 ^ {2}}{7} = 1 1. 0 9 4 2 \\\\ S P _ {x y ^ {\\prime}} = \\sum x y ^ {\\prime} - \\frac {\\sum x \\sum y ^ {\\prime}}{n} = 7 3 3. 7 0 7 9 - \\frac {1 9 2 \\times 2 5 . 2 8 4 8}{7} = 4 0. 1 8 2 0 \\\\ \\overline {{x}} = \\frac {\\sum x}{n} = \\frac {1 9 2}{7} = 2 7. 4 2 8 6 \\\\ \\overline {{y}} ^ {\\prime} = \\frac {\\sum y ^ {\\prime}}{n} = \\frac {2 5 . 2 8 4 8}{7} = 3. 6 1 2 1 \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0225-0240/images/page_227_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.52,
+            0.334,
+            0.536
+          ],
+          "content": "第三步，计算 b 和 $a ^ { \\prime } ;$ :"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.369,
+            0.545,
+            0.616,
+            0.584
+          ],
+          "content": "b = \\frac {S P _ {x y ^ {\\prime}}}{S S _ {x}} = \\frac {4 0 . 1 8 2 0}{1 4 7 . 7 1 4 3} = 0. 2 7 2 0",
+          "image_source": "../../raw/pages_0225-0240/images/page_227_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.285,
+            0.59,
+            0.7,
+            0.608
+          ],
+          "content": "a ^ {\\prime} = \\overline {{y}} ^ {\\prime} - b \\overline {{x}} = 3. 6 1 2 1 - 0. 2 7 2 0 \\times 2 7. 4 2 8 6 = - 3. 8 4 8 5",
+          "image_source": "../../raw/pages_0225-0240/images/page_227_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.617,
+            0.641,
+            0.635
+          ],
+          "content": "第四步，计算 a 值，将 a、b 代入 $\\hat { y } = a \\mathbf { e } ^ { b x }$ ，得到曲线方程:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.387,
+            0.644,
+            0.597,
+            0.661
+          ],
+          "content": "a = \\mathrm{e} ^ {a ^ {\\prime}} = \\mathrm{e} ^ {- 3. 8 4 8 5} = 0. 0 2 1 3",
+          "image_source": "../../raw/pages_0225-0240/images/page_227_equation_11.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.421,
+            0.668,
+            0.566,
+            0.687
+          ],
+          "content": "\\hat {y} = 0. 0 2 1 3 \\mathrm{e} ^ {0. 2 7 2 0 x}",
+          "image_source": "../../raw/pages_0225-0240/images/page_227_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.696,
+            0.874,
+            0.734
+          ],
+          "content": "（3）直线化回归方程的显著性检验。检验 $y ^ { \\prime } .$ 与 x 的回归关系，计算回归与离回归的平方和:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.306,
+            0.743,
+            0.677,
+            0.763
+          ],
+          "content": "U = b \\cdot S P _ {x y ^ {\\prime}} = 0. 2 7 2 0 \\times 4 0. 1 8 2 0 = 1 0. 9 2 9 5",
+          "image_source": "../../raw/pages_0225-0240/images/page_227_equation_14.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.31,
+            0.77,
+            0.677,
+            0.791
+          ],
+          "content": "Q = S S _ {y ^ {\\prime}} - U = 1 1. 0 9 4 2 - 1 0. 9 2 9 5 = 0. 1 6 4 7",
+          "image_source": "../../raw/pages_0225-0240/images/page_227_equation_15.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.366,
+            0.799,
+            0.62,
+            0.866
+          ],
+          "content": "F = \\frac {\\frac {U}{1}}{\\frac {Q}{n - 2}} = \\frac {1 0 . 9 2 9 5}{\\frac {0 . 1 6 4 7}{7 - 2}} = 3 3 1. 8 0 0 ^ {* *}",
+          "image_source": "../../raw/pages_0225-0240/images/page_227_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.874,
+            0.873,
+            0.911
+          ],
+          "content": "$F = 331.800 > F_{0.01}$ ，回归关系极显著，说明配合曲线方程 $\\hat{y} = 0.0213\\mathrm{e}^{0.2720x}$ 是适合的（表 9-4）。"
+        }
+      ]
+    },
+    {
+      "page_idx": 228,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.366,
+            0.073,
+            0.643,
+            0.088
+          ],
+          "content": "第 9 章 可直线化的非线性回归分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.826,
+            0.075,
+            0.878,
+            0.087
+          ],
+          "content": "·217·"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.127,
+            0.884,
+            0.21
+          ],
+          "content": "| 变异来源 | df | SS | $s^2$ | F | $F_{0.05}$ | $F_{0.01}$ |\n| --- | --- | --- | --- | --- | --- | --- |\n| 回归 | 1 | 10.9295 | 10.9295 | 331.800** | 6.61 | 16.26 |\n| 离回归 | 5 | 0.1647 | 0.0329 |  |  |  |\n| 总变异 | 6 | 11.0942 |  |  |  |  |",
+          "captions": [
+            {
+              "bbox": [
+                0.319,
+                0.109,
+                0.689,
+                0.124
+              ],
+              "content": "表 9-4 表 9-3 数据 x 与 y′回归关系的显著性检验"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_228_table_3.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.361,
+            0.237,
+            0.63,
+            0.258
+          ],
+          "level": 2,
+          "content": "第四节 对数函数曲线"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.283,
+            0.569,
+            0.3
+          ],
+          "content": "对数函数（logarithmic function）的一般表达式为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.297,
+            0.303,
+            0.562,
+            0.32
+          ],
+          "content": "\\hat {y} = a + b \\lg x \\tag {9-10}",
+          "image_source": "../../raw/pages_0225-0240/images/page_228_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.324,
+            0.471,
+            0.342
+          ],
+          "content": "若令 $\\lg x = x'$ ，则式（9-10）可以写成"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.306,
+            0.345,
+            0.562,
+            0.362
+          ],
+          "content": "\\hat {y} = a + b x ^ {\\prime} \\tag {9-11}",
+          "image_source": "../../raw/pages_0225-0240/images/page_228_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.367,
+            0.547,
+            0.383
+          ],
+          "content": "式（9-11）为式（9-10）直线化后的表达形式。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.388,
+            0.573,
+            0.491
+          ],
+          "content": "如果两个变量的成对观测值在坐标系中的散点图分布趋势类似于对数函数曲线（图 9-7），可配合对数曲线方程 $\\hat{y} = a + b \\lg x$ 。首先将 x 变量的每一观测值取对数转换为新变量 $x ^ { \\prime } ,$ ，然后用 x′与 y 进行直线回归分析，求得 a 和 b，即得到对数函数方程。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.497,
+            0.574,
+            0.557
+          ],
+          "content": "例 **9-3** 在水稻育秧中，塑料薄膜青苗床内空气最高温度 $( y , \\mathrm { ~  ~ } )$ 和室外空气最高温度 $( x , ~ \\mathrm { { ^ \\circ C } } )$ 数据如表 9-5 所示。求它们之间的函数关系式。"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.587,
+            0.311,
+            0.887,
+            0.536
+          ],
+          "sub_type": "line",
+          "content": "| Category | Description |\n| --- | --- |\n| Curve 1 | b > 0 (Upper curve) |\n| Curve 2 | b < 0 (Lower curve) |",
+          "captions": [
+            {
+              "bbox": [
+                0.596,
+                0.537,
+                0.874,
+                0.553
+              ],
+              "content": "图 9-7 对数函数 $\\hat{y} = a + b \\lg x$ 的图示"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_228_chart_12.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.593,
+            0.884,
+            0.923
+          ],
+          "content": "| 序号 | x | y | $x' = \\lg x$ | $x'^2$ | $x'y$ | $y^2$ | $\\hat{y}$ |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 1 | 7.2 | 13.8 | 0.8573 | 0.7350 | 11.8312 | 190.44 | 16.79 |\n| 2 | 7.9 | 21.4 | 0.8976 | 0.8057 | 19.2092 | 457.96 | 18.79 |\n| 3 | 11.8 | 24.9 | 1.0719 | 1.1489 | 26.6899 | 620.01 | 27.45 |\n| 4 | 12.0 | 32.3 | 1.0792 | 1.1646 | 34.8576 | 1043.29 | 27.81 |\n| 5 | 16.9 | 33.6 | 1.2279 | 1.5077 | 41.2570 | 1128.96 | 35.20 |\n| 6 | 18.7 | 39.5 | 1.2718 | 1.6176 | 50.2377 | 1560.25 | 37.38 |\n| 7 | 18.9 | 40.1 | 1.2765 | 1.6294 | 51.1861 | 1608.01 | 37.61 |\n| 8 | 20.2 | 36.9 | 1.3054 | 1.7039 | 48.1675 | 1361.61 | 39.05 |\n| 9 | 21.8 | 40.2 | 1.3385 | 1.7915 | 53.8060 | 1616.04 | 40.69 |\n| 10 | 22.7 | 42.6 | 1.3560 | 1.8388 | 57.7667 | 1814.76 | 41.57 |\n| 11 | 22.9 | 44.6 | 1.3598 | 1.8492 | 60.6487 | 1989.16 | 41.76 |\n| 12 | 23.1 | 36.6 | 1.3636 | 1.8594 | 49.9082 | 1339.56 | 41.94 |\n| 13 | 23.3 | 35.1 | 1.3674 | 1.8697 | 47.9942 | 1232.01 | 42.13 |\n| 14 | 23.6 | 44.4 | 1.3729 | 1.8849 | 60.9573 | 1971.36 | 42.41 |\n| 15 | 23.8 | 44.1 | 1.3766 | 1.8950 | 60.7070 | 1944.81 | 42.59 |\n| 16 | 27.0 | 43.9 | 1.4314 | 2.0488 | 62.8369 | 1927.21 | 45.31 |",
+          "captions": [
+            {
+              "bbox": [
+                0.326,
+                0.575,
+                0.682,
+                0.59
+              ],
+              "content": "表 9-5 苗床内最高温度与空气最高温度的关系"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_228_table_15.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 229,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.173,
+            0.087
+          ],
+          "content": "·218·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.087
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.114,
+            0.123,
+            0.875,
+            0.244
+          ],
+          "continues_prev": true,
+          "content": "| 序号 | x | y | $x' = \\lg x$ | $x'^2$ | $x'y$ | $y^2$ | $\\hat{y}$ |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 17 | 27.6 | 48.3 | 1.4409 | 2.0762 | 69.5959 | 2332.89 | 45.78 |\n| 18 | 28.6 | 48.5 | 1.4564 | 2.1210 | 70.6338 | 2352.25 | 46.55 |\n| 19 | 30.7 | 46.3 | 1.4871 | 2.2116 | 68.8545 | 2143.69 | 48.08 |\n| 20 | 31.4 | 50.4 | 1.4969 | 2.2408 | 75.4453 | 2540.16 | 48.57 |\n| 合计 | 420.1 | 767.5 | 25.8350 | 33.9997 | 1022.5905 | 31174.43 |  |",
+          "captions": [
+            {
+              "bbox": [
+                0.8,
+                0.109,
+                0.839,
+                0.123
+              ],
+              "content": "续表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_229_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.251,
+            0.876,
+            0.314
+          ],
+          "content": "（1）绘制散点图，判断曲线类型。根据表 9-5 的数据绘制 $( x , y )$ 散点图（图 9-8），该散点图与图 9-7 中 b＞0 的曲线相似。为了能够做出更准确的判断，图 9-9 绘出了 $x^{\\prime} \\left( x^{\\prime} = \\lg x \\right)$与 y 的散点图， $x ^ { \\prime } .$ 与 y 之间存在直线关系，这说明选择对数曲线是适合的。"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.151,
+            0.321,
+            0.434,
+            0.502
+          ],
+          "sub_type": "scatter",
+          "content": "| \\(x ({}^{\\circ}C)\\) | \\(y ({}^{\\circ}C)\\) |\n| --- | --- |\n| ~7 | ~15 |\n| ~8 | ~21 |\n| ~9 | ~24 |\n| ~10 | ~30 |\n| ~16 | ~31 |\n| ~18 | ~40 |\n| ~19 | ~42 |\n| ~20 | ~36 |\n| ~21 | ~36 |\n| ~22 | ~36 |\n| ~22 | ~41 |\n| ~23 | ~42 |\n| ~23 | ~47 |\n| ~24 | ~47 |\n| ~25 | ~36 |\n| ~26 | ~40 |\n| ~27 | ~48 |\n| ~28 | ~49 |\n| ~29 | ~47 |\n| ~30 | ~49 |\n| ~31 | ~43 |\n| ~38 | ~53 |",
+          "captions": [
+            {
+              "bbox": [
+                0.114,
+                0.506,
+                0.504,
+                0.522
+              ],
+              "content": "图 9-8 苗床内最高气温 $y$ 与空气最高气温 x 的关系"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_229_chart_5.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.554,
+            0.322,
+            0.845,
+            0.503
+          ],
+          "sub_type": "scatter",
+          "content": "| x'=lgx | \\(y ({}^{\\circ}C)\\) |\n| --- | --- |\n| ~0.85 | ~14 |\n| ~0.87 | ~20 |\n| ~1.05 | ~24 |\n| ~1.06 | ~30 |\n| ~1.22 | ~31 |\n| ~1.23 | ~40 |\n| ~1.24 | ~42 |\n| ~1.28 | ~36 |\n| ~1.30 | ~42 |\n| ~1.32 | ~43 |\n| ~1.33 | ~45 |\n| ~1.34 | ~47 |\n| ~1.35 | ~36 |\n| ~1.36 | ~37 |\n| ~1.37 | ~44 |\n| ~1.38 | ~45 |\n| ~1.40 | ~47 |\n| ~1.42 | ~48 |\n| ~1.43 | ~49 |\n| ~1.45 | ~48 |",
+          "captions": [
+            {
+              "bbox": [
+                0.539,
+                0.506,
+                0.872,
+                0.522
+              ],
+              "content": "图 9-9 例 9-3 数据中 $x ^ { \\prime } .$ 与 $y$ 之间的直线关系"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_229_chart_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.535,
+            0.874,
+            0.574
+          ],
+          "content": "（2）配合对数函数方程。以 $x^{\\prime} \\left( x^{\\prime} = \\lg x \\right)$ 和 y 进行直线回归分析，求出 a 和 b，并代入式（9-10）即得对数函数方程。具体步骤如下。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.579,
+            0.521,
+            0.595
+          ],
+          "content": "第一步，根据表 9-5 数据计算 6 个一级数据:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.286,
+            0.598,
+            0.7,
+            0.62
+          ],
+          "content": "\\sum x ^ {\\prime} = 2 5. 8 3 5 0 \\quad \\sum x ^ {2} = 3 3. 9 9 9 7 \\quad \\sum y = 7 6 7. 5",
+          "image_source": "../../raw/pages_0225-0240/images/page_229_equation_11.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.289,
+            0.625,
+            0.652,
+            0.647
+          ],
+          "content": "\\sum y ^ {2} = 3 1 1 7 4. 4 3 \\quad \\sum x ^ {\\prime} y = 1 0 2 2. 5 9 0 5 \\quad n = 2 0",
+          "image_source": "../../raw/pages_0225-0240/images/page_229_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.152,
+            0.651,
+            0.528,
+            0.667
+          ],
+          "content": "第二步，由 6 个一级数据计算 5 个二级数据:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.671,
+            0.713,
+            0.714
+          ],
+          "content": "S S _ {x ^ {\\prime}} = \\sum x ^ {2} - \\frac {\\left(\\sum x ^ {\\prime}\\right) ^ {2}}{n} = 3 3. 9 9 9 7 - \\frac {2 5 . 8 3 5 0 ^ {2}}{2 0} = 0. 6 2 7 3",
+          "image_source": "../../raw/pages_0225-0240/images/page_229_equation_14.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.277,
+            0.716,
+            0.71,
+            0.756
+          ],
+          "content": "S S _ {y} = \\sum y ^ {2} - \\frac {\\left(\\sum y\\right) ^ {2}}{n} = 3 1 1 7 4. 4 3 - \\frac {7 6 7 . 5 ^ {2}}{2 0} = 1 7 2 1. 6 1 7 5",
+          "image_source": "../../raw/pages_0225-0240/images/page_229_equation_15.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.224,
+            0.758,
+            0.763,
+            0.796
+          ],
+          "content": "S P _ {x ^ {\\prime} y} = \\sum x ^ {\\prime} y - \\frac {\\sum x ^ {\\prime} \\sum y}{n} = 1 0 2 2. 5 9 0 5 - \\frac {2 5 . 8 3 5 0 \\times 7 6 7 . 5}{2 0} = 3 1. 1 7 2 4",
+          "image_source": "../../raw/pages_0225-0240/images/page_229_equation_16.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.799,
+            0.612,
+            0.837
+          ],
+          "content": "\\overline {{x}} ^ {\\prime} = \\frac {\\sum x ^ {\\prime}}{n} = \\frac {2 5 . 8 3 5 0}{2 0} = 1. 2 9 1 8",
+          "image_source": "../../raw/pages_0225-0240/images/page_229_equation_17.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.378,
+            0.84,
+            0.609,
+            0.88
+          ],
+          "content": "\\overline {{y}} = \\frac {\\sum y}{n} = \\frac {7 6 7 . 5}{2 0} = 3 8. 3 7 5",
+          "image_source": "../../raw/pages_0225-0240/images/page_229_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.884,
+            0.482,
+            0.9
+          ],
+          "content": "第三步，计算回归系数 b 和回归截距 a:"
+        }
+      ]
+    },
+    {
+      "page_idx": 230,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.366,
+            0.073,
+            0.643,
+            0.088
+          ],
+          "content": "第 9 章 可直线化的非线性回归分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.826,
+            0.075,
+            0.878,
+            0.087
+          ],
+          "content": "·219·"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.382,
+            0.105,
+            0.623,
+            0.143
+          ],
+          "content": "b = \\frac {S P _ {x ^ {\\prime} y}}{S S _ {x ^ {\\prime}}} = \\frac {3 1 . 1 7 2 4}{0 . 6 2 7 3} = 4 9. 6 9 3 0",
+          "image_source": "../../raw/pages_0225-0240/images/page_230_equation_2.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.306,
+            0.147,
+            0.701,
+            0.163
+          ],
+          "content": "a = \\overline {{y}} - b \\overline {{x}} ^ {\\prime} = 3 8. 3 7 5 - 4 9. 6 9 3 0 \\times 1. 2 9 1 8 = - 2 5. 8 1 8 4",
+          "image_source": "../../raw/pages_0225-0240/images/page_230_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.168,
+            0.72,
+            0.185
+          ],
+          "content": "第四步，将 $a$ 和 b 直接代入式（9-10），得到 $y$ 与 $x$ 的对数函数方程"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.392,
+            0.189,
+            0.614,
+            0.206
+          ],
+          "content": "\\hat {y} = - 2 5. 8 1 8 4 + 4 9. 6 9 3 0 \\lg x",
+          "image_source": "../../raw/pages_0225-0240/images/page_230_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.21,
+            0.871,
+            0.227
+          ],
+          "content": "（3）直线化回归方程的显著性检验。计算 $y$ 与 $x ^ { \\prime } .$ 直线回归关系的回归与离回归平方和:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.327,
+            0.23,
+            0.677,
+            0.25
+          ],
+          "content": "U = b \\cdot S P _ {x ^ {\\prime} y} = 4 9. 6 9 3 0 \\times 3 1. 1 7 2 4 = 1 5 4 9. 0 5 0 1",
+          "image_source": "../../raw/pages_0225-0240/images/page_230_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.317,
+            0.253,
+            0.69,
+            0.272
+          ],
+          "content": "Q = S S _ {y} - U = 1 7 2 1. 6 1 7 5 - 1 5 4 9. 0 5 0 1 = 1 7 2. 5 6 7 4",
+          "image_source": "../../raw/pages_0225-0240/images/page_230_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.368,
+            0.276,
+            0.64,
+            0.341
+          ],
+          "content": "F = \\frac {\\frac {U}{1}}{\\frac {Q}{n - 2}} = \\frac {1 5 4 9 . 0 5 0 1}{\\frac {1 7 2 . 5 6 7 4}{2 0 - 2}} = 1 6 1. 5 7 7 ^ {* *}",
+          "image_source": "../../raw/pages_0225-0240/images/page_230_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.345,
+            0.794,
+            0.362
+          ],
+          "content": "$F = 161.577 > F_{0.01}$ ，说明回归关系极显著，配合对数函数是适合的（表 9-6）。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.398,
+            0.884,
+            0.492
+          ],
+          "content": "| 变异来源 | df | SS | $s^2$ | F | $F_{0.05}$ | $F_{0.01}$ |\n| --- | --- | --- | --- | --- | --- | --- |\n| 回归 | 1 | 1549.0501 | 1549.0501 | 161.577** | 4.41 | 8.29 |\n| 离回归 | 18 | 172.5674 | 9.5871 |  |  |  |\n| 总变异 | 19 | 1721.6175 |  |  |  |  |",
+          "captions": [
+            {
+              "bbox": [
+                0.31,
+                0.38,
+                0.698,
+                0.396
+              ],
+              "content": "表 9-6 例 9-3 数据中 $y$ 与 x′回归关系的显著性检验"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_230_table_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.504,
+            0.884,
+            0.542
+          ],
+          "content": "利用曲线回归方程进行预测时，可将每一个 x 值转换成 $x ^ { \\prime }$ ，再通过回归分析的方法预测出 $y$ 所在区间。表 9-5 最后一列即为每一个 x 值代入曲线回归方程得到相应估计值 $\\hat { y }$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.374,
+            0.567,
+            0.618,
+            0.588
+          ],
+          "level": 2,
+          "content": "第五节 幂函数曲线"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.612,
+            0.697,
+            0.629
+          ],
+          "content": "幂函数（power function）是 $y$ 为 x 某次幂的函数曲线，其方程为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.475,
+            0.633,
+            0.882,
+            0.651
+          ],
+          "content": "\\hat {y} = a x ^ {b} \\tag {9-12}",
+          "image_source": "../../raw/pages_0225-0240/images/page_230_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.655,
+            0.373,
+            0.672
+          ],
+          "content": "将式（9-12）两边取对数，得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.435,
+            0.675,
+            0.882,
+            0.693
+          ],
+          "content": "\\lg \\hat {y} = \\lg a + b \\lg x \\tag {9-13}",
+          "image_source": "../../raw/pages_0225-0240/images/page_230_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.697,
+            0.536,
+            0.715
+          ],
+          "content": "令 $y ^ { \\prime } = \\lg y , x ^ { \\prime } = \\lg x , a ^ { \\prime } = \\lg a$ ，得到直线方程:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.458,
+            0.717,
+            0.882,
+            0.734
+          ],
+          "content": "\\hat {y} ^ {\\prime} = a ^ {\\prime} + b x ^ {\\prime} \\tag {9-14}",
+          "image_source": "../../raw/pages_0225-0240/images/page_230_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.739,
+            0.884,
+            0.821
+          ],
+          "content": "式（9-12）的图形如图 9-10 所示。如果两个变量的散点图类似于图 9-10 中的某一条曲线，说明可用幂函数曲线进行拟合。为了进一步进行验证，可将 x 和 y 都取对数，然后绘出 $x ^ { \\prime }$ $(x' = \\lg x)$ 和 $y' \\left( y' = \\lg y \\right)$ 的散点图，如果散点呈直线趋势，即说明选用幂函数曲线是适合的。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.826,
+            0.884,
+            0.886
+          ],
+          "content": "例 **9-4** 为了研究 $\\mathrm { C O } _ { 2 }$ 对变黄期烟叶叶绿素降解的影响，在 30 倍 $\\mathrm { C O } _ { 2 }$ 浓度下测定了不同烘烤时间（x，h）下叶绿素含量 $( y ,$ ，占干重%），其结果列于表 9-7。试对该数据进行回归分析。"
+        }
+      ]
+    },
+    {
+      "page_idx": 231,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.173,
+            0.087
+          ],
+          "content": "·220·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.087
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.268,
+            0.1,
+            0.728,
+            0.22
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.358,
+                0.224,
+                0.629,
+                0.24
+              ],
+              "content": "图 9-10 幂指数函数 ${ \\hat { y } } { = } a x ^ { b }$ 的图示"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_231_image_2.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.115,
+            0.276,
+            0.875,
+            0.51
+          ],
+          "content": "| 序号 | x | y | $x' = \\lg x$ | $y' = \\lg y$ |\n| --- | --- | --- | --- | --- |\n| 1 | 12 | 0.17430 | 1.0792 | -0.7587 |\n| 2 | 15 | 0.11080 | 1.1761 | -0.9555 |\n| 3 | 19 | 0.06340 | 1.2788 | -1.1979 |\n| 4 | 25 | 0.05310 | 1.3979 | -1.2749 |\n| 5 | 32 | 0.04155 | 1.5051 | -1.3814 |\n| 6 | 35 | 0.04080 | 1.5441 | -1.3893 |\n| 7 | 38 | 0.04020 | 1.5798 | -1.3958 |\n| 8 | 41 | 0.03998 | 1.6128 | -1.3982 |\n| 9 | 46 | 0.03762 | 1.6628 | -1.4246 |\n| 10 | 49 | 0.03538 | 1.6902 | -1.4512 |\n| 11 | 58 | 0.03533 | 1.7634 | -1.4519 |",
+          "captions": [
+            {
+              "bbox": [
+                0.349,
+                0.258,
+                0.636,
+                0.273
+              ],
+              "content": "表 9-7 烘烤时间与叶绿素含量的关系"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_231_table_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.522,
+            0.874,
+            0.604
+          ],
+          "content": "（1）绘制散点图，判断曲线类型。根据表 9-7 的 x 和 y 的成对观测值在坐标系中绘制散点图（图 9-11），该图类似于图 9-10 中 $b   \\leq   0$ 的曲线，可试配幂函数曲线。绘出 $x ^ { \\prime } ( x ^ { \\prime } =$ lgx）和 $y' \\left( y' = \\lg y \\right)$ 的散点图（图 9-12），如散点图呈直线趋势，说明选用幂函数曲线是适合的。"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.143,
+            0.616,
+            0.413,
+            0.796
+          ],
+          "sub_type": "line",
+          "content": "| x (h) | y (%) |\n| --- | --- |\n| ~12 | ~0.18 |\n| 15 | ~0.09 |\n| 30 | ~0.04 |\n| 45 | ~0.03 |\n| 60 | ~0.03 |",
+          "captions": [
+            {
+              "bbox": [
+                0.123,
+                0.8,
+                0.452,
+                0.816
+              ],
+              "content": "图 9-11 烘烤时间 x 与叶绿素含量 y 的关系"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_231_chart_7.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.547,
+            0.614,
+            0.84,
+            0.796
+          ],
+          "sub_type": "scatter",
+          "content": "| x'=1gx | y'=lgv |\n| --- | --- |\n| ~1.08 | ~-0.75 |\n| ~1.18 | ~-0.92 |\n| ~1.28 | ~-1.20 |\n| ~1.40 | ~-1.35 |\n| ~1.50 | ~-1.40 |\n| ~1.55 | ~-1.42 |\n| ~1.58 | ~-1.45 |\n| ~1.62 | ~-1.40 |\n| ~1.65 | ~-1.48 |\n| ~1.70 | ~-1.48 |\n| ~1.75 | ~-1.45 |",
+          "captions": [
+            {
+              "bbox": [
+                0.521,
+                0.8,
+                0.863,
+                0.816
+              ],
+              "content": "图 9-12 例 9-4 数据中 $x ^ { \\prime } .$ 与 $y ^ { \\prime }$ 之间的直线关系"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_231_chart_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.83,
+            0.506,
+            0.847
+          ],
+          "content": "（2）配合幂函数曲线方程。具体步骤如下。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.852,
+            0.391,
+            0.867
+          ],
+          "content": "第一步，计算 6 个一级数据:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.259,
+            0.871,
+            0.727,
+            0.894
+          ],
+          "content": "\\sum x ^ {\\prime} = 1 6. 2 9 0 1 \\quad \\sum x ^ {2} = 2 4. 6 1 4 9 \\quad \\sum y ^ {\\prime} = - 1 4. 0 7 9 4",
+          "image_source": "../../raw/pages_0225-0240/images/page_231_equation_13.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.262,
+            0.895,
+            0.639,
+            0.918
+          ],
+          "content": "\\sum y ^ {2} = 1 8. 5 3 4 0 \\quad \\sum x ^ {\\prime} y ^ {\\prime} = - 2 1. 3 2 2 9 \\quad n = 1 1",
+          "image_source": "../../raw/pages_0225-0240/images/page_231_equation_14.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 232,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.366,
+            0.073,
+            0.643,
+            0.088
+          ],
+          "content": "第 9 章 可直线化的非线性回归分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.826,
+            0.075,
+            0.878,
+            0.087
+          ],
+          "content": "·221·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.106,
+            0.533,
+            0.122
+          ],
+          "content": "第二步，由 6 个一级数据计算 5 个二级数据:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.298,
+            0.127,
+            0.71,
+            0.168
+          ],
+          "content": "S S _ {x ^ {\\prime}} = \\sum x ^ {2} - \\frac {\\left(\\sum x ^ {\\prime}\\right) ^ {2}}{n} = 2 4. 6 1 4 9 - \\frac {1 6 . 2 9 0 1 ^ {2}}{1 1} = 0. 4 9 0 6",
+          "image_source": "../../raw/pages_0225-0240/images/page_232_equation_3.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.282,
+            0.171,
+            0.727,
+            0.211
+          ],
+          "content": "S S _ {y ^ {\\prime}} = \\sum y ^ {2} - \\frac {\\left(\\sum y ^ {\\prime}\\right) ^ {2}}{n} = 1 8. 5 3 4 0 - \\frac {(- 1 4 . 0 7 9 4) ^ {2}}{1 1} = 0. 5 1 3 1",
+          "image_source": "../../raw/pages_0225-0240/images/page_232_equation_4.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.212,
+            0.214,
+            0.796,
+            0.25
+          ],
+          "content": "S P _ {x ^ {\\prime} y ^ {\\prime}} = \\sum x ^ {\\prime} y ^ {\\prime} - \\frac {\\sum x ^ {\\prime} \\sum y ^ {\\prime}}{n} = - 2 1. 3 2 2 9 - \\frac {1 6 . 2 9 0 1 \\times (- 1 4 . 0 7 9 4)}{1 1} = - 0. 4 7 2 5",
+          "image_source": "../../raw/pages_0225-0240/images/page_232_equation_5.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.394,
+            0.253,
+            0.615,
+            0.289
+          ],
+          "content": "\\overline {{x}} ^ {\\prime} = \\frac {\\sum x ^ {\\prime}}{n} = \\frac {1 6 . 2 9 0 1}{1 1} = 1. 4 8 0 9",
+          "image_source": "../../raw/pages_0225-0240/images/page_232_equation_6.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.374,
+            0.292,
+            0.635,
+            0.329
+          ],
+          "content": "\\overline {{y}} ^ {\\prime} = \\frac {\\sum y ^ {\\prime}}{n} = \\frac {- 1 4 . 0 7 9 4}{1 1} = - 1. 2 7 9 9",
+          "image_source": "../../raw/pages_0225-0240/images/page_232_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.332,
+            0.343,
+            0.348
+          ],
+          "content": "第三步，计算 b 和 $a ^ { \\prime } ;$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.353,
+            0.632,
+            0.392
+          ],
+          "content": "b = \\frac {S P _ {x ^ {\\prime} y ^ {\\prime}}}{S S _ {x ^ {\\prime}}} = \\frac {- 0 . 4 7 2 5}{0 . 4 9 0 6} = - 0. 9 6 3 1",
+          "image_source": "../../raw/pages_0225-0240/images/page_232_equation_9.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.288,
+            0.394,
+            0.718,
+            0.411
+          ],
+          "content": "a ^ {\\prime} = \\overline {{y}} ^ {\\prime} - b \\overline {{x}} ^ {\\prime} = - 1. 2 7 9 9 - (- 0. 9 6 3 1) \\times 1. 4 8 0 9 = 0. 1 4 6 4",
+          "image_source": "../../raw/pages_0225-0240/images/page_232_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.416,
+            0.547,
+            0.432
+          ],
+          "content": "第四步，将 a′转换为 a，得到幂函数曲线方程:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.404,
+            0.437,
+            0.603,
+            0.454
+          ],
+          "content": "a = 1 0 ^ {a ^ {\\prime}} = 1 0 ^ {0. 1 4 6 4} = 1. 4 0 0 9",
+          "image_source": "../../raw/pages_0225-0240/images/page_232_equation_12.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.438,
+            0.457,
+            0.571,
+            0.476
+          ],
+          "content": "\\hat {y} = 1. 4 0 0 9 x ^ {- 0. 9 6 3 1}",
+          "image_source": "../../raw/pages_0225-0240/images/page_232_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.481,
+            0.871,
+            0.497
+          ],
+          "content": "（3）直线化回归方程的显著性检验。计算 $y ^ { \\prime }$ 与 $x ^ { \\prime } .$ 直线回归关系的回归与离回归平方和:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.322,
+            0.501,
+            0.682,
+            0.52
+          ],
+          "content": "U = b \\cdot S P _ {x ^ {\\prime} y ^ {\\prime}} = - 0. 9 6 3 1 \\times (- 0. 4 7 2 5) = 0. 4 5 5 1",
+          "image_source": "../../raw/pages_0225-0240/images/page_232_equation_15.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.348,
+            0.523,
+            0.659,
+            0.542
+          ],
+          "content": "Q = S S _ {y ^ {\\prime}} - U = 0. 5 1 3 1 - 0. 4 5 5 1 = 0. 0 5 8 0",
+          "image_source": "../../raw/pages_0225-0240/images/page_232_equation_16.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.387,
+            0.545,
+            0.62,
+            0.611
+          ],
+          "content": "F = \\frac {\\frac {U}{1}}{\\frac {Q}{n - 2}} = \\frac {0 . 4 5 5 1}{\\frac {0 . 0 5 8 0}{1 1 - 2}} = 7 0. 6 1 9 ^ {* *}",
+          "image_source": "../../raw/pages_0225-0240/images/page_232_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.614,
+            0.878,
+            0.632
+          ],
+          "content": "$F=70.619>F_{0.01}$ ，说明回归关系达到极显著，配合幂函数曲线方程是适合的（表 9-8）。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.668,
+            0.884,
+            0.751
+          ],
+          "content": "| 变异来源 | df | SS | $s^2$ | F | $F_{0.05}$ | $F_{0.01}$ |\n| --- | --- | --- | --- | --- | --- | --- |\n| 回归 | 1 | 0.4551 | 0.4551 | 70.619** | 5.12 | 10.56 |\n| 离回归 | 9 | 0.0580 | 0.0064 |  |  |  |\n| 总变异 | 10 | 0.5131 |  |  |  |  |",
+          "captions": [
+            {
+              "bbox": [
+                0.31,
+                0.65,
+                0.698,
+                0.666
+              ],
+              "content": "表 9-8 例 9-4 数据中 $y$ 与 x′回归关系的显著性检验"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_232_table_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.763,
+            0.882,
+            0.801
+          ],
+          "content": "为了更好地说明例 9-4 数据符合幂函数曲线关系，而不是其他类型曲线或直线关系，可将其进行不同曲线方程的拟合，并计算直线化后两个变量之间的相关系数。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.805,
+            0.667,
+            0.825
+          ],
+          "content": "幂函数方程: $\\hat { y } { = } 1 . 4 0 0 9 x ^ { - 0 . 9 6 3 1 }$ ，lgx 与 y 之间的 $r = - 0 . 9 4 1 7$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.827,
+            0.725,
+            0.846
+          ],
+          "content": "对数函数方程: $\\hat{y}=0.3147-0.0743\\ln x$ lnx 与 $y$ 之间的 $r = - 0 . 8 7 2 0$ ；"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.849,
+            0.695,
+            0.868
+          ],
+          "content": "指数函数方程: $\\hat{y} = 0.1457\\mathrm{e}^{-0.0304x}$ ，x 与 lny 之间的 $r   =   - 0 . 8 5 6 2$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.87,
+            0.697,
+            0.89
+          ],
+          "content": "直线函数方程: $\\hat{y}=0.1372-0.0023x$ 与 $y$ 之间的 $r = - 0 . 7 6 5 2$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.892,
+            0.884,
+            0.91
+          ],
+          "content": "以上4个方程，其直线化后两个变量的相关系数均达极显著水平 $r_{0.01(9)} = 0.735$ ，而幂"
+        }
+      ]
+    },
+    {
+      "page_idx": 233,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.173,
+            0.087
+          ],
+          "content": "·222·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.088
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.105,
+            0.874,
+            0.145
+          ],
+          "continues_prev": true,
+          "content": "函数曲线直线化后的相关程度最高，表明配合出的幂函数曲线方程 $\\hat{y} = 1.4009x^{-0.9631}$ 是最适宜的。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.329,
+            0.169,
+            0.64,
+            0.191
+          ],
+          "level": 2,
+          "content": "第六节 Logistic 生长曲线"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.151,
+            0.213,
+            0.557,
+            0.233
+          ],
+          "level": 2,
+          "content": "一、Logistic 生长曲线的由来和基本特征"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.246,
+            0.874,
+            0.349
+          ],
+          "content": "Logistic 生长曲线（Logistic growth curve）最初由比利时数学家 P. F. Verhulst 于 1838年推导出来，但长期被忽视。直到 20 世纪 20 年代才被生物学家和统计学家 R. Pearl 和 L. J. Reed 重新发现，应用于研究人口生长规律，所以，这种特殊的曲线也称为 Pearl 增长曲线，简称 Pearl 曲线。目前它已广泛应用于动植物的饲养、栽培、资源、生态、环保等方面的模拟研究。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.354,
+            0.873,
+            0.371
+          ],
+          "content": "Logistic 生长曲线的基本特点是开始增长缓慢，而在以后的某一范围内迅速增长，达到"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.376,
+            0.747,
+            0.435
+          ],
+          "content": "一定的限度后又缓慢下来，曲线呈拉长的“S”形，因此，也称为“S”形曲线。相对于对称“S”形曲线，Logistic 生长曲线属于非对称的“S”形曲线，其方程为"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.785,
+            0.373,
+            0.848,
+            0.418
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.761,
+                0.421,
+                0.871,
+                0.434
+              ],
+              "content": "对称“S”形曲线"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_233_image_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.442,
+            0.44,
+            0.871,
+            0.472
+          ],
+          "content": "\\hat {y} = \\frac {K}{1 + a \\mathrm{e} ^ {- b x}} \\tag {9-15}",
+          "image_source": "../../raw/pages_0225-0240/images/page_233_equation_10.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.132,
+            0.472,
+            0.443,
+            0.664
+          ],
+          "sub_type": "line",
+          "content": "| X-axis | Y-axis |\n| --- | --- |\n| 0 | ~0.2 |\n| -ln(1/a/b) | K/2 |\n| x | K/2 |\n| \\(\\infty\\) | K |",
+          "captions": [
+            {
+              "bbox": [
+                0.113,
+                0.666,
+                0.46,
+                0.694
+              ],
+              "content": "图 9-13 Logistic 生长曲线 $\\hat{y} = \\frac{K}{1 + a\\mathrm{e}^{-bx}}$ 的图示"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_233_chart_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.51,
+            0.477,
+            0.738,
+            0.493
+          ],
+          "content": "曲线的图形如图 9-13 所示。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.509,
+            0.498,
+            0.797,
+            0.515
+          ],
+          "content": "Logistic 生长曲线的基本特征如下。"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.471,
+            0.52,
+            0.874,
+            0.643
+          ],
+          "sub_type": "text",
+          "content": "（1）当 x=0 时， $\\hat { y } { = } \\frac { K } { 1 { + } a }$ ；当 $x   \\to   \\infty , \\quad \\hat { y }   =   K$ 。所以时间为 0 的起始量是 $\\frac { K } { 1 + a }$ ，时间无限延长的终极量是 K。\n（2）式（9-15）的二阶导数 时，"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.474,
+            0.646,
+            0.871,
+            0.695
+          ],
+          "content": "$x = \\frac{- \\ln \\frac{1}{a}}{b}, \\quad \\hat{y} = \\frac{K}{2}$ ，这说明 y 是随 x 的增加而增"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.698,
+            0.868,
+            0.747
+          ],
+          "content": "加的。当 $\\scriptstyle x = { \\frac { - \\ln { \\frac { 1 } { a } } } { b } }$ 时，曲线有一个拐点（knee point），这时 $\\hat { y } { = } \\frac { K } { 2 }$ ，恰为终极量 K 的一半。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.75,
+            0.76,
+            0.82
+          ],
+          "content": "所以，x 在 $\\left[ 0 , { \\frac { - \\mathrm { l n } { \\frac { 1 } { a } } } { b } } \\right]$ 区间内，曲线下凹，x 在 $\\left( { \\frac { - { \\ln } { \\frac { 1 } { a } } } { b } } , \\infty \\right)$ 区间内，曲线上凸。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.151,
+            0.833,
+            0.489,
+            0.854
+          ],
+          "level": 2,
+          "content": "二、Logistic 生长曲线方程的配合"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.867,
+            0.874,
+            0.906
+          ],
+          "content": "从式（9-15）可以看出，只要确定了 K 值，就可利用直线化方法求出方程的两个统计数a 和 b。式（9-15）移项后可得"
+        }
+      ]
+    },
+    {
+      "page_idx": 234,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.366,
+            0.073,
+            0.643,
+            0.088
+          ],
+          "content": "第 9 章 可直线化的非线性回归分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.826,
+            0.075,
+            0.878,
+            0.087
+          ],
+          "content": "·223·"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.448,
+            0.105,
+            0.882,
+            0.14
+          ],
+          "content": "\\frac {K - \\hat {y}}{\\hat {y}} = a \\mathrm{e} ^ {- b x} \\tag {9-16}",
+          "image_source": "../../raw/pages_0225-0240/images/page_234_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.144,
+            0.3,
+            0.16
+          ],
+          "content": "两边取自然对数后得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.429,
+            0.164,
+            0.882,
+            0.198
+          ],
+          "content": "\\ln \\frac {K - \\hat {y}}{\\hat {y}} = \\ln a - b x \\tag {9-17}",
+          "image_source": "../../raw/pages_0225-0240/images/page_234_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.2,
+            0.592,
+            0.233
+          ],
+          "content": "若令 $\\scriptstyle { \\hat { y } } ^ { \\prime } = \\ln { \\frac { K - { \\hat { y } } } { \\hat { y } } }$ $a ^ { \\prime } { = } \\ln a$ $b ^ { \\prime }   =   - b$ ，式（9-17）即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.458,
+            0.236,
+            0.882,
+            0.253
+          ],
+          "content": "\\hat {y} ^ {\\prime} = a ^ {\\prime} + b ^ {\\prime} x \\tag {9-18}",
+          "image_source": "../../raw/pages_0225-0240/images/page_234_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.258,
+            0.875,
+            0.296
+          ],
+          "content": "因此，可将每一个 y 观测值转换为 $y ^ { \\prime } ,$ ，用 $y ^ { \\prime } .$ 与 x 进行直线回归分析，即可求出 $a ^ { \\prime }$ 和 $b ^ { \\prime } ,$ 。在转换时，必须先确定 K 值，K 值的确定方法有下面两种。"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.12,
+            0.301,
+            0.884,
+            0.362
+          ],
+          "sub_type": "text",
+          "content": "（1）如果依变量 y 是累积频率，则 y 无限增大的终极量应为 100（%），可用 $K { = } 1 0 0$ 表示。\n（2）当依变量 y 是生长量或繁殖量时，可取 3 对自变量为等间距的观测值 $(x_{1}, y_{1}), (x_{2},$ $y _ { 2 } )$ 和 $(x_{3}, y_{3})$ ），并将其代入式（9-16），得到联立方程组:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.435,
+            0.366,
+            0.569,
+            0.482
+          ],
+          "content": "\\left\\{ \\begin{array}{l} \\frac {K - y _ {1}}{y _ {1}} = a \\mathrm{e} ^ {- b x _ {1}} \\\\ \\frac {K - y _ {2}}{y _ {2}} = a \\mathrm{e} ^ {- b x _ {2}} \\\\ \\frac {K - y _ {3}}{y _ {3}} = a \\mathrm{e} ^ {- b x _ {3}} \\end{array} \\right.",
+          "image_source": "../../raw/pages_0225-0240/images/page_234_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.487,
+            0.376,
+            0.504
+          ],
+          "content": "将方程组中的 a 和 b 消去，得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.382,
+            0.509,
+            0.624,
+            0.556
+          ],
+          "content": "\\frac {y _ {2} (K - y _ {1})}{y _ {1} (K - y _ {2})} = \\left[ \\frac {y _ {3} (K - y _ {2})}{y _ {2} (K - y _ {3})} \\right] ^ {\\frac {x _ {1} - x _ {2}}{x _ {2} - x _ {3}}}",
+          "image_source": "../../raw/pages_0225-0240/images/page_234_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.559,
+            0.376,
+            0.592
+          ],
+          "content": "如果令 $x_{2}=\\frac{x_{1}+x_{3}}{2}$ ，可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.392,
+            0.595,
+            0.882,
+            0.633
+          ],
+          "content": "K = \\frac {y _ {2} ^ {2} (y _ {1} + y _ {3}) - 2 y _ {1} y _ {2} y _ {3}}{y _ {2} ^ {2} - y _ {1} y _ {3}} \\tag {9-19}",
+          "image_source": "../../raw/pages_0225-0240/images/page_234_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.636,
+            0.884,
+            0.674
+          ],
+          "content": "例 **9-5** 表 9-9 是某种肉鸡在良好饲养环境条件下的增重数据。试配合 Logistic 生长曲线方程。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.711,
+            0.884,
+            0.883
+          ],
+          "content": "| x(周次) | y(kg) | 2.827-y/y | $y'=\\ln \\frac{2.827-y}{y}$ |\n| --- | --- | --- | --- |\n| 2 | 0.30 | 8.4233 | 2.1310 |\n| 4 | 0.86 | 2.2872 | 0.8273 |\n| 6 | 1.73 | 0.6341 | -0.4555 |\n| 8 | 2.20 | 0.2850 | -1.2553 |\n| 10 | 2.47 | 0.1445 | -1.9342 |\n| 12 | 2.67 | 0.0588 | -2.8336 |\n| 14 | 2.80 | 0.0096 | -4.6415 |",
+          "captions": [
+            {
+              "bbox": [
+                0.385,
+                0.693,
+                0.623,
+                0.708
+              ],
+              "content": "表 9-9 肉鸡饲养过程增重数据"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_234_table_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.895,
+            0.884,
+            0.913
+          ],
+          "content": "（1）求终极量 K。取 x 为等间距的 $x_{1}=2、x_{2}=8、x_{3}=14$ 的生长量 $y_{1}=0.30,\\ y_{2}=2.20$ 和"
+        }
+      ]
+    },
+    {
+      "page_idx": 235,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.12,
+            0.075,
+            0.173,
+            0.087
+          ],
+          "content": "·224·"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.45,
+            0.073,
+            0.538,
+            0.088
+          ],
+          "content": "生物统计学"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.106,
+            0.336,
+            0.124
+          ],
+          "content": "$y_{3} = 2.80$ ，由式（9-19）得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.243,
+            0.127,
+            0.744,
+            0.162
+          ],
+          "content": "K = \\frac {2 . 2 0 ^ {2} \\times (0 . 3 0 + 2 . 8 0) - 2 \\times 0 . 3 0 \\times 2 . 2 0 \\times 2 . 8 0}{2 . 2 0 ^ {2} - 0 . 3 0 \\times 2 . 8 0} = 2. 8 2 7 (\\mathrm{kg})",
+          "image_source": "../../raw/pages_0225-0240/images/page_235_equation_3.jpg"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.149,
+            0.166,
+            0.765,
+            0.223
+          ],
+          "sub_type": "text",
+          "content": "（2）将 y 转换为 $y ^ { \\prime } \\circ$ 计算出 $\\frac{2.827  一  y}{y}$ 和 $y' = \\ln \\frac{2.827 - y}{y}$ ，分别列于表 9-9。\n（3）计算 $x$ 和 $y ^ { \\prime }$ 回归分析的二级数据。"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.313,
+            0.226,
+            0.71,
+            0.246
+          ],
+          "content": "S S _ {x} = 1 1 2 \\quad S S _ {y ^ {\\prime}} = 3 0. 8 0 6 7 \\quad S P _ {x y ^ {\\prime}} = - 5 8. 2 3 6 3",
+          "image_source": "../../raw/pages_0225-0240/images/page_235_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.316,
+            0.249,
+            0.535,
+            0.266
+          ],
+          "content": "\\overline {{x}} = 8 \\quad \\overline {{y}} ^ {\\prime} = - 1. 1 6 6 0",
+          "image_source": "../../raw/pages_0225-0240/images/page_235_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.27,
+            0.61,
+            0.288
+          ],
+          "content": "（4）计算 $b ^ { \\prime } .$ 和 $a ^ { \\prime }$ ，并转换成 a 和 b，建立 Logistic 方程。"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.357,
+            0.291,
+            0.629,
+            0.329
+          ],
+          "content": "b ^ {\\prime} = \\frac {S P _ {x y ^ {\\prime}}}{S S _ {x}} = \\frac {- 5 8 . 2 3 6 3}{1 1 2} = - 0. 5 2 0 0",
+          "image_source": "../../raw/pages_0225-0240/images/page_235_equation_10.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.331,
+            0.697,
+            0.388
+          ],
+          "content": "\\begin{array}{l} a ^ {\\prime} = \\overline {{y}} ^ {\\prime} - b ^ {\\prime} \\overline {{x}} = - 1. 1 6 6 0 - (- 0. 5 2 0 0) \\times 8 = 2. 9 9 4 0 \\\\ a = \\mathrm{e} ^ {a ^ {\\prime}} = \\mathrm{e} ^ {2. 9 9 4 0} = 1 9. 9 6 5 4 \\\\ b = - b ^ {\\prime} = 0. 5 2 0 0 \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0225-0240/images/page_235_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.436,
+            0.392,
+            0.517,
+            0.408
+          ],
+          "content": "所以，有"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.115,
+            0.405,
+            0.426,
+            0.605
+          ],
+          "sub_type": "line",
+          "content": "| x (周次) | 鸡体重 (y)/kg |\n| --- | --- |\n| 0 | ~0.15 |\n| 2 | ~0.45 |\n| 4 | ~0.95 |\n| 6 | ~1.75 |\n| 8 | ~2.35 |\n| 10 | ~2.65 |\n| 12 | ~2.80 |\n| 14 | ~2.85 |",
+          "captions": [
+            {
+              "bbox": [
+                0.123,
+                0.609,
+                0.416,
+                0.626
+              ],
+              "content": "图 9-14 肉鸡增生的 Logistic 生长曲线"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_235_chart_13.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.558,
+            0.412,
+            0.75,
+            0.446
+          ],
+          "content": "\\hat {y} = \\frac {2 . 8 2 7}{1 + 1 9 . 9 6 5 4 \\mathrm{e} ^ {- 0 . 5 2 0 0 x}}",
+          "image_source": "../../raw/pages_0225-0240/images/page_235_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.435,
+            0.454,
+            0.872,
+            0.576
+          ],
+          "content": "此方程的图形如图 9-14 所示，并可求 $\\hat { y } { = } \\frac { K } { 2 } { = }$ 1.4135， $x{=}\\frac{{-}{\\ln}\\frac{1}{a}}{b}{=}5.76$ （ ） 周次 时，是曲线的拐点，生长速率从越来越快开始变为越来越慢，这是此种肉鸡生长的关键时期。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.473,
+            0.581,
+            0.738,
+            0.601
+          ],
+          "content": "（5）计算 x 和 $y ^ { \\prime }$ 的相关系数 $r _ { x y ^ { \\prime } } ,$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.525,
+            0.604,
+            0.783,
+            0.64
+          ],
+          "content": "r _ {x y ^ {\\prime}} = \\frac {- 5 8 . 2 3 6 3}{\\sqrt {1 1 2 \\times 3 0 . 8 0 6 7}} = - 0. 9 9 1 4 ^ {* *}",
+          "image_source": "../../raw/pages_0225-0240/images/page_235_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.645,
+            0.871,
+            0.686
+          ],
+          "content": "$\\left| r_{xy'} \\right| = 0.9914 > r_{0.01(5)} = 0.874$ ，达到极显著水平，说明 x 和 $y ^ { \\prime }$ 的直线关系是极显著的，表 9-9 的数据配合 Logistic 生长曲线方程是适合的。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.417,
+            0.709,
+            0.554,
+            0.731
+          ],
+          "level": 2,
+          "content": "思考练习题"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.755,
+            0.75,
+            0.771
+          ],
+          "content": "习题 **9.1** 生物学中常见的曲线类型有哪些？如何确定两个变量之间的曲线类型？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.774,
+            0.649,
+            0.79
+          ],
+          "content": "习题 **9.2** 非线性回归曲线进行直线化时，常用的转换方法有哪些？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.793,
+            0.874,
+            0.827
+          ],
+          "content": "习题 **9.3** 测定细砂土中毛管水的上升高度 $(y,\\  cm )$ 和经历时数（x，h）的关系，其结果如下表所示。试做回归分析。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.114,
+            0.833,
+            0.875,
+            0.878
+          ],
+          "content": "| 经历时数(x,h) | 12 | 24 | 48 | 96 | 144 | 192 | 240 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 上升高度(y,cm) | 21 | 34 | 42 | 48 | 53 | 57 | 60 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_235_table_24.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.886,
+            0.875,
+            0.921
+          ],
+          "content": "习题 **9.4** 下表列出了甘薯薯块在生长过程中的鲜重 $( x , ~ \\mathbf { g } )$ 和呼吸强度 $\\left[ y,\\  mg \\  CO _2/(100  g \\  FW \\cdot  h ) \\right]$的数据。为探讨二者的回归关系，试分别建立幂函数方程、对数函数方程及指数函数方程，并分别对"
+        }
+      ]
+    },
+    {
+      "page_idx": 236,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.366,
+            0.073,
+            0.643,
+            0.088
+          ],
+          "content": "第 9 章 可直线化的非线性回归分析"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.826,
+            0.075,
+            0.878,
+            0.087
+          ],
+          "content": "·225·"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.106,
+            0.324,
+            0.122
+          ],
+          "content": "方程的拟合效果进行评价。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.128,
+            0.884,
+            0.172
+          ],
+          "content": "| 鲜重(x,g) | 10 | 38 | 80 | 125 | 200 | 310 | 445 | 480 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 呼吸强度 [y, mg CO2/(100g FW·h)] | 92 | 32 | 21 | 12 | 10 | 7 | 7 | 6 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_236_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.18,
+            0.884,
+            0.215
+          ],
+          "content": "习题 **9.5** 玉米淀粉生产中，浸渍时间 $( x , \\mathrm { ~ h ~ } )$ 和乳酸菌数 $( y , \\mathrm { m L } )$ 的数据记录如下，试建立浸渍时间和乳酸菌数的回归关系。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.222,
+            0.884,
+            0.265
+          ],
+          "content": "| 浸渍时间(x,h) | 4 | 12 | 20 | 28 | 36 | 44 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 乳酸菌数(y,mL) | 226000 | 362000 | 659000 | 839000 | 1612000 | 3004000 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_236_table_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.273,
+            0.875,
+            0.308
+          ],
+          "content": "习题 **9.6** 在动物的饲料配方研究中，发现动物体重 $( y , ~ \\mathfrak { g } )$ 和日龄 $( x , \\mathrm { ~ d ~ } )$ 存在某种曲线关系，试根据下列数据进行回归关系分析。"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.314,
+            0.884,
+            0.358
+          ],
+          "content": "| 日龄(x, d) | 0 | 7 | 14 | 21 | 28 | 42 | 56 | 70 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 体重(y, g) | 105 | 214 | 335 | 560 | 790 | 1290 | 2010 | 2950 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_236_table_7.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.476,
+            0.376,
+            0.534,
+            0.417
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.475,
+                0.422,
+                0.534,
+                0.435
+              ],
+              "content": "参考答案"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0225-0240/images/page_236_image_8.jpg"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "authors": [
+        "CNKI"
+      ],
+      "created_at": "2023-10-31T11:03:42-08:00",
+      "creator_application": "ReaderEx_DIS 2.0.0 Build 3915",
+      "producer_application": "TTKN",
+      "page_count": 393,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 0,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 1,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 2,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 3,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 4,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 5,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 6,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 7,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 8,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 9,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 10,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 11,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 12,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 13,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 14,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        },
+        {
+          "page_idx": 15,
+          "width_pt": 530.0789794921875,
+          "height_pt": 737.0079956054688
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}
