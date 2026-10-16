@@ -6,7 +6,7 @@
 
 识别结果保留原件供核对，未宣称 OCR 和公式经过逐字人工校对。
 
-完成 22/29 本；[逐书 ZIP Release](https://github.com/kazewwk/test/releases/tag/mineru-advanced-textbooks-2026-10-16)。
+完成 23/29 本；[逐书 ZIP Release](https://github.com/kazewwk/test/releases/tag/mineru-advanced-textbooks-2026-10-16)。
 
 | 教材 | 页数 | 状态 |
 | --- | ---: | --- |
@@ -20,7 +20,7 @@
 | [biostat](08_biostat/) | 472 | 已完成 |
 | [Gene Cloning and DNA Analys_](09_gene-cloning-and-dna-analysis/) | 435 | 已完成 |
 | [Introduction to bioinformat_](10_introduction-to-bioinformatics/) | 440 | 已完成 |
-| Introduction to Probability_ | 636 | 待完成 |
+| [Introduction to Probability_](11_introduction-to-probability/) | 636 | 已完成 |
 | [Synthetic Biology A Primer_](12_synthetic-biology-a-primer/) | 194 | 已完成 |
 | [代谢工程 (赵学明，陈涛，王智文，杨琛，花强，柳志杰，_](13_metabolic-engineering-zhao/) | 343 | 已完成 |
 | [分子克隆实验指南（原书第四版）（套装上中下册）（上册）_](14_molecular-cloning-4e-zh-vol1/) | 528 | 已完成 |
