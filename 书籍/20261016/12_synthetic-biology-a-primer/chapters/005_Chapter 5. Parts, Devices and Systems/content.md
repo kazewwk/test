@@ -1,0 +1,483 @@
+# Chapter 5. Parts, Devices and Systems
+
+原始 PDF 第 88–103 页。
+
+# CHAPTER 5
+
+# Parts, Devices and Systems
+
+## 5.1 Introduction
+
+Synthetic biology follows a hierarchical structure, building up systems from smaller components. At the lowest level are the parts, which are pieces of DNA that encode for a single biological function such as an enzyme or promoter. These parts are then combined into the next layer, a device, which is a collection of parts that performs a desired higher order function, for example production of a protein. Devices are further combined into a system, which can be defined as the minimum number of devices necessary to perform the behaviour specified in the design phase. Systems can have fairly simple behaviour (e.g. an oscillator) or more complicated behaviour (e.g. a set of metabolic pathways to synthesise a product). Parts and devices are usually treated as modular entities in design and modelling. This means that it is assumed that they can be exchanged without affecting the behaviour of other system components that are left untouched, which is problematic in biological systems. Systems must be implemented in a chassis, which provides the underlying biology necessary to transcribe and translate the system as well as any enzymatic substrates that would be nec essary. The chassis can be a living organism (also called in vivo implementation), or it can be abiotic, providing only the necessary biochemical components for in vitro transcription and translation.
+
+## 5.2 Parts
+
+A part is a piece of DNA that encodes a biological function. In synthetic biology, parts are usually not used singly, but instead are combined into devices. When following the design cycle outlined in Chapter 2, the part is the unit which undergoes extensive characterisation and testing in different conditions to make a datasheet in order to enable modelling and model-based design. Some commonly encountered parts, along with their functions, are listed in Table 5.1 and Fig. 5.1 (which shows the symbols used to denote each part in the Synthetic Biology Open Language (SBOL) Visual notation.
+
+73
+
+---
+
+74
+
+Synthetic Biology — A Primer
+
+Table 5.1 Some common biological parts.
+
+| Part | Function | BioBricks Example |
+| --- | --- | --- |
+| Promoter | Initiate transcription | BBa_J23101E.coli constitutive |
+| Operator | Regulate transcription | BBa_J64987LacI binding site |
+| Ribosome binding site | Initiate translation | BBa_J63003S cerevisiae designed |
+| Protein coding sequence | Encode for a protein | BBa_E0040GFPmut3b |
+| Terminator | Attenuate transcription | BBa_B1001E.coli, artificial, small |
+
+Parts
+
+![](../../raw/pages_0081-0096/images/page_88_image_5.jpg)
+
+<details>
+<summary>text_image</summary>
+
+Promoter
+Ribosome Entry Site
+Protein Coding Sequence
+Terminator
+</details>
+
+Example Devices
+
+![](../../raw/pages_0081-0096/images/page_88_image_7.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  Input["Input"] --> A["Protein Generator"]
+  A --> B["Inverter"]
+  B --> C["Receiver"]
+```
+</details>
+
+Fig. 5.1 SBOL Visual for parts and some example devices.
+
+---
+
+Parts, Devices and Systems
+
+75
+
+## 5.2.1 Promoter
+
+A promoter is a sequence of DNA that recruits RNA polymerase and other accessory proteins to prime the transcription of messenger RNA (the molecular details of this process are described in Chapter 1). There are two common types of promoters — regulated and constitutive. Constitutive promoters are not regulated by any DNA binding proteins and, therefore, are always ‘on’. Constitutive promoters are useful in synthetic biology for providing a constant level of a protein of interest to a system. By varying the sequence of the DNA encoding the RNA polymerase binding site, it is possible to vary the strength of the promoter and to increase or decrease the number of mRNA copies that are made from it per second. This, in turn, will lead to a different steady-state concentration of protein after the effects of translation and degradation are applied.
+
+Regulated promoters often contain additional DNA sequences, known as operators (see below), which allow other protein factors to bind to the DNA and modulate the transcription rate. Thus, the timing of transcription can be controlled, either through the addition of a small molecule, which affects the recruitment of accessory factors to the operator, or by using a second genetic circuit to produce the accessory proteins at specific times. Regulated promoters can be either positively regulated (factors binding to the DNA increase transcription rate) or negatively regulated (factors binding to the DNA decrease transcription rate). In many cases negative regulators are present within the cell and will prevent transcription from the promoter under normal conditions. In this case, the default state of the promoter is ‘off’. However, perturbing the biochemistry of the chassis (by adding small molecules or changing the temperature, pH, etc. of the system) can sometimes affect the interaction of the regulator with the operator, turning the promoter to the ‘on’ state. In this case, the promoter would be termed inducible.
+
+## 5.2.2 Operator
+
+Classically, a DNA sequence is termed an operator if it recruits the binding of factors that negatively regulate the promoter, also known as repressors. However, DNA sequences that bind positive regulators, also called activators, are sometimes also referred to as operators. Often in synthetic biology, the operator will not be considered as a separate part, but rather as a part of the promoter and the promoter/operator set will be characterised together as a single unit. The strength of repressor or activator binding is influenced by the DNA sequence of the operator. In addition, sequences near the operator site can also alter DNA–protein interactions, changing promoter behavior. This can be manipulated to tune the level of repression or activation and, thus, the strength of the promoter.
+
+## 5.2.3 Ribosome binding site
+
+A ribosome binding site or ribosome entry site is a sequence of mRNA that recruits ribosomes for the initiation of protein translation. In prokaryotes, the ribosome binding site is also called the Shine–Dalgarno sequence (named after Dr John Shine and Dr Linda Dalgarno who discovered the sequence in 1975) and in eukaryotes it is known as the Kozak consensus
+
+---
+
+76
+
+Synthetic Biology — A Primer
+
+sequence (after discoverer Dr Marilyn Kozak). Like promoters and operators, the sequence of the ribosome binding site affects the strength of ribosome binding and, therefore, the amount of protein synthesised.
+
+## 5.2.4 Protein coding sequence
+
+A protein coding sequence is a sequence of DNA that encodes for a protein. It begins with a start codon (ATG) to initiate protein translation, and ends with one of three stop codons (TAA, TAG or TGA) to indicate the end of the translation region. In between are the DNA triplets (codons) which denote the amino acids that make up the protein. Three types of protein coding sequences are commonly used in synthetic biology: reporters, repressors and enzymes.
+
+Reporters are used as readouts of dynamic biological events and usually consist of a protein that produces a visual or fluorescent output. The green fluorescent protein (GFP) and its derivatives are often used as reporters because they gain fluorescence spontaneously upon protein folding and do not require the addition of any exogenous reagents such as enzymatic substrates. Other reporters include enzymes which catalyse a reaction leading to a coloured or fluorescent product. One classic example is the enzyme β-galactosidase (also known as LacZ) which is the enzyme utilised in blue–white screening schemes for cloning. LacZ naturally catalyses the degradation of lactose into glucose plus galactose, but also hydrolyses galactose residues from a variety of chemical substrates. Several chemical analogues have been designed such that upon cleavage of the galactose residue a coloured or fluorescent product is released which serves as an indicator and allows for the calculation of the amount of LacZ present in the sample. Luciferase, an enzyme whose action upon a substrate results in the production of light (photons), is also commonly used.
+
+Repressors are very often used as components of synthetic devices such as logic gates, switches and oscillators (discussed below). Their natural function is to bind to the operator region of promoters and prevent (repress) transcription. In addition to their DNA binding sites, repressors also contain binding sites for small molecules (inducers) that can influence their ability to bind DNA. The small molecules can be used to control the action of the repressor, switching it on and off. The final type of coding region used in synthetic biology is an enzyme, which performs an interesting chemical reaction for building systems. For example, a set of enzymes that perform sequential reactions form a metabolic pathway.
+
+## 5.2.5 Terminators
+
+A terminator is a sequence of DNA that signals the end of a transcriptional unit by causing the RNA polymerase to cease transcription and disengage. Terminators are placed past the 3’ end of a protein coding sequence. In prokaryotes, terminators are often palindromic in DNA sequence, which leads to the formation of strong secondary structure (e.g. hairpins) that help to weaken the interaction between the RNA polymerase and the DNA strand being copied. Often devices will incorporate two tandem terminators to reduce the chance of transcriptional read through.
+
+---
+
+Parts, Devices and Systems
+
+77
+
+## 5.3 Devices
+
+Parts are assembled into devices which perform simple, user-defined functions. Figure 5.1 depicts a schematic of a few common devices using the same symbols to describe common DNA parts. Note that devices can have similar architecture but perform different functions, depending on the function of the individual parts. For example, the schematics for an inverter and a receiver are largely the same. However, their functions are different. In this case, the difference in function comes from the fact that the protein generated in the first half of the device has a different interaction with the promoter in the second half of the device. In the case of the inverter it represses the promoter, whereas in the case of the receiver it binds and helps initiate transcription from it.
+
+## 5.3.1 Reporters and protein generators
+
+The simplest device is a protein generator which combines a promoter, ribosome binding site, protein coding region and terminator. As a unit these function to produce a protein via transcription (promoter, terminator) and then translation (ribosome binding site, protein coding region).
+
+## 5.3.2 Logic gates
+
+The term ‘logic gate’ comes from electronic circuits and is used to denote a device where multiple inputs are assessed together in order to control a single output. These simple circuits can be combined to create more complex electrical circuits. They also form the basis of modern computers, which contain hundreds of thousands of logic gates. The operations performed by logic gates can be described with Boolean algebra using binary states: 1 if a condition is satisfied, 0 if it is not. A logic gate takes multiple binary inputs, assesses them according to a predefined rule and produces a single binary output: 1 for on, 0 for off. The identity of the predefined rule determines the type of logic gate. In synthetic biology, logic gates have been constructed from genetic circuits, biochemical networks and free nucleic acids.
+
+## 5.3.2.1 AND
+
+In an AND gate all conditions must be satisfied in order for the output to be switched on. The simplest AND gate is controlled by two inputs, both of which must be present in order to produce the output. The logic applied to this gate can be formulated as ‘If A AND B then “ON”, Else “OFF”’. In synthetic biology there have been a wide variety of AND gate designs. For example, an AND gate can be constructed as a hybrid promoter in which two different operator sites are used to control transcription (Fig. 5.2). Two different repressors can then bind to these sites and block transcription. The presence of both inducers is required to relieve repression, making the output dependent on the presence of two small molecules.
+
+---
+
+78
+
+Synthetic Biology — A Primer
+
+![](../../raw/pages_0081-0096/images/page_92_image_2.jpg)
+
+<details>
+<summary>text_image</summary>
+
+Inducer A Inducer B Output
+0 0 0
+1 0 0
+0 1 0
+1 1 1
+</details>
+
+Fig. 5.2 AND gate promoter constructed from two operators (grey and black), which are bound by two repressors. The promoter remains off unless both inducers are present.
+
+## 5.3.2.2 OR
+
+OR gates follow the logic rule, ‘If A OR B, then “ON”, Else, “OFF”’. Therefore, for an OR gate to be switched on, only one of the input conditions must be satisfied. A very rudimentary OR gate can be constructed from a parallel set of reporter genes, each controlled by a single inducible promoter (Fig. 5.3). The presence of either molecule will turn the circuit on. Many other OR gate designs are possible.
+
+## 5.3.2.3 NOT (Inverter)
+
+A NOT gate takes a single input and inverts it. Therefore, it is also known as an inverter. When a signal is present, then the output of the NOT gate is ‘off’, whereas if the signal is absent, then the output is ‘on’. NOT gates in synthetic biology have been constructed from compatible promoter/repressor pairs, like the example in Fig. 5.4. An inducible promoter that responds to the desired input signal controls the production of a repressor which controls the production of the output signal. The input signal causes the production of the repressor, which in turn represses the promoter that controls the output signal, turning it off. In the absence of the signal, the output signal remains on.
+
+## 5.3.2.4 Negated gates
+
+Logic gates are modular and can be combined to produce more complex behaviours. Connecting a NOT gate to any other gate will invert the function of that gate. A NOT
+
+---
+
+Parts, Devices and Systems
+
+79
+
+![](../../raw/pages_0081-0096/images/page_93_chart_2.jpg)
+
+<details>
+<summary>bar</summary>
+
+| Condition | Inducer A | Inducer B | Output |
+| --- | --- | --- | --- |
+| 1 | Yes | No | No |
+| 2 | Yes | No | No |
+| 3 | Yes | No | No |
+| 4 | Yes | No | No |
+| 5 | Yes | No | No |
+| 6 | Yes | No | No |
+| 7 | Yes | No | No |
+| 8 | Yes | No | No |
+| 9 | Yes | No | No |
+| 10 | Yes | No | No |
+| 11 | Yes | No | No |
+| 12 | Yes | No | No |
+| 13 | Yes | No | No |
+| 14 | Yes | No | No |
+| 15 | Yes | No | No |
+| 16 | Yes | No | No |
+| 17 | Yes | No | No |
+| 18 | Yes | No | No |
+| 19 | Yes | No | No |
+| 20 | Yes | No | No |
+| 21 | Yes | No | No |
+| 22 | Yes | No | No |
+| 23 | Yes | No | No |
+| 24 | Yes | No | No |
+| 25 | Yes | No | No |
+| 26 | Yes | No | No |
+| 27 | Yes | No | No |
+| 28 | Yes | No | No |
+| 29 | Yes | No | No |
+| 30 | Yes | No | No |
+| 31 | Yes | No | No |
+| 32 | Yes | No | No |
+| 33 | Yes | No | No |
+| 34 | Yes | No | No |
+| 35 | Yes | No | No |
+| 36 | Yes | No | No |
+| 37 | Yes | No | No |
+| 38 | Yes | No | No |
+| 39 | Yes | No | No |
+| 40 | Yes | No | No |
+| 41 | Yes | No | No |
+| 42 | Yes | No | No |
+| 43 | Yes | No | No |
+| 44 | Yes | No | No |
+| 45 | Yes | No | No |
+| 46 | Yes | No | No |
+| 47 | Yes | No | No |
+| 48 | Yes | No | No |
+| 49 | Yes | No | No |
+| 50 | Yes | No | No |
+</details>
+
+Fig. 5.3 OR gate constructed from two separate promoters (grey and black), which are bound by two repressors. The presence of either inducer is enough to switch the circuit on by allowing transcription from one of the promoters.
+
+gate can be combined with an AND gate to produce a NAND gate, which has behaviour the opposite of the AND gate depicted in Fig. 5.2. In other words, the NAND gate produces an output unless two signals are present. Similarly, a NOT gate can be combined with an OR gate to produce a NOR gate, whose behaviour is opposite of the OR gate in Fig. 5.3. A NOR gate will only produce a signal when both signals are absent.
+
+---
+
+80
+
+Synthetic Biology — A Primer
+
+![](../../raw/pages_0081-0096/images/page_94_image_2.jpg)
+
+Fig. 5.4 A NOT gate based on a compatible promoter/repressor (grey) whose production is controlled by an input signal. The output is inverted, meaning it is absent when the signal is present and present when the signal is absent.
+
+## 5.3.3 Cell signalling senders and receivers
+
+Cell–cell signalling devices are useful in synthetic biology for coordinating the behaviour of populations. Most of these devices have been implemented in bacteria and rely on a bacterial signalling mechanism known as quorum sensing. Quorum sensing is used by cells to sense the population density and coordinate gene expression and other behaviours. Quorum sensing is accomplished via the synthesis, secretion and uptake of small molecules, the concentration of which affects the behaviour of the cell population. Thus, two types of device can be created from quorum sensing for cell–cell communication: senders, those that synthesise and secrete the molecule; and receivers, those that take up the signal and produce an output in response.
+
+Natural quorum sensing is built around small organic molecules called acyl-homoserine lactones (AHLs). Different species of bacteria synthesise different AHL molecules that vary in the length of the acyl chain or in the chemical functional groups it contains. Thus, it is possible to create sender devices that synthesise and secrete AHL molecules that are not normally secreted by a given chassis, leading to an orthogonal system for behaviour coordination. Placing this device under the control of a regulated promoter allows the system to respond to environmental signals.
+
+Receiver devices are based on transcription factors that bind the AHL molecules and turn on target gene expression in response. In natural quorum sensing these transcription factors are continually produced, but are unstable in the absence of the AHL molecule which they bind. When the AHL is present, they are stabilised, bind to the operator region of a target promoter and turn on transcription. Synthetic receiver devices consist of the promoter, which is controlled by the AHL responsive transcription factor upstream of genes for the desired
+
+---
+
+Parts, Devices and Systems
+
+81
+
+response. Orthogonal receiver devices can be constructed by using transcription factors and promoters from quorum-sensing signalling pathways from other species. These are supplied as an additional part of the genetic circuit either under the control of a constitutive promoter or under the control of another inducible one.
+
+## 5.3.4 Light control devices
+
+Building complex systems requires control over the timing of gene expression. This can be achieved with some of the parts and devices described above. Inducible promoters (see Section 5.2.1) can be activated through the addition of small molecules to the growth medium, and receiver devices (see 5.3.3) can be activated through manipulating the sender devices. However, light offers a means of controlling expression that is non-invasive and potentially has a higher degree of spatial control. Thus, the development of devices to manipulate chassis in response to light has received a lot of attention with devices implemented in many of the commonly used chassis including bacteria, yeast and mammalian cells.
+
+In basic terms a device for light control consists of a light-gathering element and an effector that controls transcription in response to the light input. Light-gathering elements to date have mostly been photoreceptors from organisms that naturally respond to light, usually plants or cyanobacteria, heterologously expressed in the chassis in question. These usually contain a chemical chromophore element that harvests the light itself, contained within a protein receptor. Often the absorption of photons by the chromophore results in a conformational change in the protein receptor, which helps to signal to the effector that light has been received.
+
+Once the effector has received a signal from the light-gathering element, it then controls gene expression in response. To do this, the effector must interact with the native genetic machinery of the chassis, so in most cases natural elements from the host have been used and fused to the protein receptors to form chimeras. Two strategies, phosphorylation of transcription factors and dimerisation of proteins, have been used for light control to date, but in principle any strategy can be developed.
+
+## 5.4 Simple Systems
+
+A number of simple systems have been developed that are composed of one or more devices. These are discussed below. More complex systems, i.e. those that synthesise a product or vastly alter cellular behaviour, are discussed in Chapter 8.
+
+## 5.4.1 Feedback loops
+
+Feedback occurs when the output from a device influences the future behaviour of that device. These effects can be either negative (reducing the future output) or positive (increasing the future output). Feedback systems are inherent to biological organisms and theoretical analysis shows that they are necessary to reduce the noise or biological variability within a
+
+---
+
+82
+
+Synthetic Biology — A Primer
+
+cellular system. This is supported by a wealth of evidence from control engineering where feedback loops are often used to increase the robustness of a system.
+
+Many different designs for feedback loops can be developed depending on the overall desired behaviour of the system. Some naturally occurring proteins are generically useful for certain types of feedback. For example, repressors are useful for developing negative feedback loops by influencing the promoter used to produce them. In this case, the repressor is placed in an operon with the circuit of interest and its production will decrease the future level of transcription and translation of the circuit of interest. Similarly, activators can be used to produce a positive feedback loop when placed under the control of a promoter that they influence. Another scheme for positive feedback places specific RNA polymerases on the operon, which will increase the transcription of the circuit when produced.
+
+## 5.4.2 Switches
+
+Continuing the analogy with electrical engineering, a switch is a device that allows the cells to be altered from one state to another, i.e. turned on or off, usually in response to a user input or an environmental signal. A toggle switch is a switch with two arms arranged in feedback such that each controls the other. Depending on the conditions in the cell or the presence of an external signal, the build up of one regulator can ‘overpower’ the other, flipping the switch and leading to downstream effects. A schematic of one possible organisation of a genetic toggle switch is illustrated in Fig. 5.5. In this case, depending on whether signal A or
+
+![](../../raw/pages_0097-0112/images/page_96_image_6.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["Signal A"] --> C["Repressor B"]
+  B["Signal B"] --> C
+  C --> D["Promoter A"]
+  E["Repressor A"] --> F["Reporter"]
+  D --> G["Promoter B"]
+  F --> G
+```
+</details>
+
+Fig. 5.5 A generalised toggle switch composed of two repressors, A and B, each of which interacts with a promoter, A and B, to repress transcription. This repression can be altered by a signal. A reporter can be placed in tandem with either or both repressors to give visual output of the switch function.
+
+---
+
+Parts, Devices and Systems
+
+83
+
+signal B is present and the strengths of promoters A and B, either repressor can accumulate, flipping the switch. A reporter can be placed in frame with either (or both) repressor to give a visual indication of when the switch has flipped. Theoretical studies have also shown that any network with an even number of repressors in feedback will display switch-like behaviour, so more complex switch designs are possible.
+
+Toggle switches with delayed action can be used to trigger gene expression after a user-defined period of time. These are also called timer switches. The length of time before switching is controlled by the relative strengths of the two promoters, which lead to a differential accumulation of one of the repressors. This leads to the switching mechanism being activated when the concentration of repressor surpasses a threshold.
+
+## 5.4.3 Oscillators
+
+Oscillations are variations in the level of system output over time in a defined and repeating or periodic pattern, usually a wave function. In natural biological systems these occur as part of circadian clocks where the timing of gene expression follows a cyclical pattern. They also occur in the central nervous system which displays rhythmic patterns of neural activity and in many biochemical networks. An oscillator is a device that creates oscillations in output. Many schemes for synthetic oscillators have been explored on both a theoretical and experimental level because such devices are necessary in order to create complex systems. The goal in all cases is to create a system that results in stable, sustained and robust oscillations.
+
+Oscillations are defined by two parameters: their periodicity and their amplitude (Fig. 5.6). The period of an oscillation is the length of time that elapses from peak output to peak output. This can also be thought of as the length of time that a single cycle takes. The frequency of an oscillation, or how many oscillations occur in a given time period, can be calculated by taking the inverse of the period. The amplitude of an oscillation is the distance between the average and the maximum output of the oscillation.
+
+![](../../raw/pages_0097-0112/images/page_97_chart_7.jpg)
+
+<details>
+<summary>line</summary>
+
+| Feature | Description |
+| --- | --- |
+| Y-axis | Output |
+| X-axis | Time |
+| Period | Duration between two peaks |
+| Amplitude | Amplitude relative to the average amplitude |
+| Average amplitude | Horizontal dashed line representing the baseline level |
+</details>
+
+Fig. 5.6 A schematic of an oscillator.
+
+---
+
+84
+
+Synthetic Biology — A Primer
+
+## 5.4.3.1 Single gene coupled with delay
+
+One generic design for an oscillator is to couple a negative feedback loop with a delay or lag phase. This design can be tuned to create system instability which will lead to oscillations. The simplest system design with this organisation is a single gene with negative feedback regulation of itself, coupled to a mechanism for delay. This is an organisation very similar to a delay line oscillator and has been demonstrated in theoretical studies.
+
+## 5.4.3.2 Lotka–Volterra oscillators
+
+Sender and receiver devices can be combined into two different cell populations to form an oscillator that is governed by the Lotka–Volterra equations. These are the same equations which govern the behaviour of predator–prey interactions in ecosystems. In a Lotka–Volterra oscillator, two different populations of cells are mixed, one which synthesises a signal at an exponential rate (prey), and one which causes this signal to decay exponentially (predator). In this instance, oscillations are induced by the time delay in response as signals are transmitted from one population to another, leading to a lag in response. This oscillator follows the same generic design of a negative feedback with delay. The predator consumption of the signal leads to negative feedback and the diffusion and processing of the signal molecules introduces the delay.
+
+## 5.4.3.3 Repressilators
+
+Repressilators are oscillators constructed by coupling together multiple inverters. The classical repressilator consisted of three inverters (Fig. 5.7), but theoretical investigations suggest that any number of odd inverters in series will produce sustained oscillations. Here again, the principle of a negative feedback loop with delay applies. The negative feedback comes through the use of an odd number of genes in a cyclic structure, while the delay is introduced by the temporal behaviour of the system along the cyclic gene structure. Repressilators have also been constructed that contain senders and receivers to coordinate the oscillations among a population of cells.
+
+![](../../raw/pages_0097-0112/images/page_98_image_8.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["Promoter A"] --> B["Repressor A"]
+  B --> C["Promoter C"]
+  D["Promoter B"] --> E["Repressor B"]
+  E --> F["Promoter B"]
+  F --> G["Repressor C"]
+```
+</details>
+
+Fig. 5.7 A generalised repressilator composed of three inverters.
+
+---
+
+Parts, Devices and Systems
+
+85
+
+![](../../raw/pages_0097-0112/images/page_99_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  subgraph Dark Sensor
+  A["pcyA"] --> B["hol"]
+  C["cph8"] --> D["PompC"]
+  end
+
+  subgraph Process Step
+  E["luxl X"] --> F["cl Y"]
+  G["luxR"] --> H["Plux-λ"]
+  I["lacZ Z"] --> J["Black Pigment"]
+  end
+
+  subgraph Interaction Node
+  K["AHL"] --> L{"X AND (NOT Y)"}
+  M["X AND (NOT Y)"] --> N["X AND (NOT Y)"]
+  end
+
+  D --> E
+  D --> G
+  D --> H
+  D --> I
+  H --> I
+  I --> J
+```
+</details>
+
+Fig. 5.8 A schematic of an edge detector. The circuit is composed of a dark-sensing element and an AHL receiver which together help cells to determine whether they are on the boundary of light and dark and, if so, make a black pigment. (Courtesy: Tabor et al., 2009).
+
+## 5.4.4 Edge detector
+
+Edge detection algorithms are used in image processing to define the boundaries between objects by detecting shifts in the brightness when moving from pixel to pixel. In synthetic biology edge detectors are necessary when using light control elements to ensure that cells at the boundary between light and dark behave in a controlled manner. The edge detector described in Fig. 5.8 combines a light-control element with a sender, a receiver and two logic gates to create an edge detection algorithm. The edge detector system is an excellent illustration of the principles of synthetic biology whereby more complex behaviours are created from well-characterised components. This system was initially constructed for use with the bacterial camera, but is useful for any light-control scenario. In the edge detector, two logic gates are used to help the cells to determine whether or not they are at the boundary of light and dark. Cells which are in the dark (as determined by the light-sensing element within them as a NOT gate, i.e. NOT light) activate a sender device which produces AHL. Cells which are in the light do not produce anything, but act as receivers for theAHL molecule from neighbouring cells. Cells which are at the boundary are in the light, so don’t produce AHL, and they also receive a signal from the cells next to them (which are in the dark) and are activated to produce a pigment. Hence, they follow the logic X (I receive the AHL) and NOT Y (I am in the light) and produce a pigment. This works because although theAHL can diffuse it is taken up by cells in close proximity to the dark before reaching the total population.
+
+## 5.4.5 Counters
+
+Systems have been produced which allow bacteria to record events (also called counters) which allows the population to retain a memory of past events. This can be accomplished by coupling protein generators that are dependent upon one another for function. For instance, if the first event causes the production of a non-native protein that is necessary for the activation of a second protein generator, then the second event can trigger that output only after the first has occurred. The sequence can be continued if the output of the second event can control the third, etc. However, one drawback to such schemes is that the circuits become very large because a new protein generator is necessary for every event that one wishes to count. Additional memory devices can be constructed through induction of chromosomal rearrangements by DNA modifying enzymes called integrases.
+
+---
+
+Synthetic Biology — A Primer
+
+## 5.5 Connecting Parts and Devices
+
+Connecting parts and devices into a unit is not necessarily a simplistic task as the biological context in which a part or device is contained can affect its output. What this means is that the nucleic acid sequences surrounding a part can affect how that part functions. For instance, a promoter function is primarily affected by its sequence, but is also secondarily affected by the DNA base pairs both upstream and downstream of it, which affect the melting temperature of the DNA and the secondary structure produced when the strands are parted for transcription to take place. Within organisms, this property can be used to fine-tune the output from various promoters. Similarly, when connecting different devices, the nucleic acid sequences in between will affect the function. This added layer of complexity must be taken into account when building complex systems.
+
+## 5.5.1 Tuning secondary structure of mRNA in and around parts
+
+When constructing biochemical networks to synthesise a product of interest, it is often necessary to tune the output of several protein-generating devices to optimise flux through the pathway and prevent intermediates from building up. One method to accomplish this is to tune the mRNA structure flanking different parts in the pathway so that the secondary structure of the mRNA balances translation. Examples include the DNA sequence of the promoter in between consensus binding sites, the region around the ribosome binding site and the intergenic regions between protein coding devices. While there are some algorithms that have been developed for this type of calculation (see below), another option to accomplish the same task is to create a combinatorial library which varies the secondary structure somewhat randomly and to screen for increased output from the device or system. Although this method is labour intensive, it provides the ability to experimentally explore the effect of variations in protein output on the overall yield from a system.
+
+## 5.5.2 RBS matching
+
+The output of protein generators has also been tuned by optimising the strength of the ribosome binding site computationally. An algorithm has been developed to predict the output based on the free energy of interaction between the 30S ribosomal complex and the ribosome binding site. The algorithm also takes into account the immediate context of the ribosome binding site, that is, the identity of the nucleic acids surrounding it. This helps to guide the design of metabolic pathways by providing information on the proportional output of a protein generator. This must still be paired with design information that suggests how much of each protein is necessary to optimise flux in the pathway.
+
+## 5.5.3 Insulators
+
+Work has also investigated the potential for insulating the interconnection of parts to remove the problems of context dependency. This could be accomplished by adding buffering
+
+---
+
+Parts, Devices and Systems
+
+87
+
+sequences between parts in order to prevent the formation of adverse secondary structures that could impact the independent function of parts. However, questions remain as to how to experimentally implement this idea fully. For example, the ideal structure of a buffering region is itself context-dependent because it depends on the sequence around it. In addition, some parts must be closely spaced (e.g. a ribosome binding site and the start of a protein coding sequence), so that it will be impossible to insert buffers in all contexts.
+
+A theoretical method of insulating the interconnection of two devices has also been proposed through the use of small circuits to prevent the devices from impeding each other. The ideal insulator would not interact with the upstream device, but simply receive the signal and generate a stable output independent of the identity of the downstream device. However, in order to perform an insulating function it is necessary to synthesise and degrade biomolecules at a very high level and rapid rate in order to be able to generate a stable output. Thus, it is important to note that insulating devices will incur a very high metabolic burden on the cell.
+
+## 5.6 Summary
+
+The foundation of synthetic biology is a hierarchical assembly of smaller parts into devices into systems. This chapter has given a basic overview of some of the common parts, devices and small systems that have been constructed to date. For in-depth descriptions of the components discussed in this chapter, the reader is referred to the following research articles:
+
+## Reading
+
+## Toggle switch:
+
+Gardner, TS, Cantor, CR and Collins, JJ. (2000). Construction of a genetic toggle switch in Escherichia coli. Nature 403: 339–342.
+
+## Oscillators:
+
+- Danino, T, Mondragón-Palomino, O, Tsimring, L, et al. (2010). A synchronized quorum of genetic clocks. Nature 463: 326–330.
+- Elowitz, MB and Leibler, S. (2000). A synthetic oscillatory network of transcriptional regulators. Nature 403: 335–338.
+- Stricker, J, Cookson, S, Bennett, MR, et al. (2008). A fast robust and tunable synthetic gene oscillator. Nature 456: 516–519.
+
+## Edge detector:
+
+Tabor, JJ, Salis, HM, Simpson, ZB, et al. (2009). A synthetic genetic edge detection program. Cell 137: 1272–1281.
+
+---
+
+88
+
+Synthetic Biology — A Primer
+
+## RBS matching:
+
+Farasat, I, Kushwaha, M, Collens, J, et al. (2014). Efficient search, mapping, and optimization of multi-protein genetic systems in diverse bacteria. Mol Syst Biolo 10: 731.
+
+## Insulators:
+
+Del Vecchio, D, Ninfa, AJ and Sontag, ED (2008). Modular cell biology: retroactivity and insulation. Mol Syst Biol 4: 161.
+
+## Memory devices:
+
+Yang, L, Nielsen, AAK, Fernandez-Rodrigues, J, et al. (2014). Permanent genetic memory with > 1-byte capacity. Nat Methods 11: 1261–1266.

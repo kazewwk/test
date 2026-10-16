@@ -1,0 +1,763 @@
+--- PDF page 104 ---
+CHAPTER 6
+Modelling Synthetic Biology Systems
+6.1 Introduction
+In this chapter, we examine the role that mathematical modelling can play in the rigorous
+forward-engineering design of robust synthetic biology systems of increasing complexity.
+Synthetic biology aims to rationally construct complex biological systems from well-
+characterisedcomponentsinthewaythat,forexample,anelectroniccircuitmaybedesigned.
+Engineers have long had to deal with some of the challenges that synthetic biologists are
+now confronted with. The use of mathematical models and of model-based computer aided
+design tools is widespread in other engineering disciplines and has enabled the efﬁcient
+design and manufacture of complex systems composed of a large number of interacting
+parts.
+6.2 Why is Mathematical Modelling Important and Useful?
+As can be witnessed from other engineering disciplines such as chemical, mechanical or
+electrical engineering, the efﬁcient design of complex systems can be greatly facilitated
+through the use of a rigorous forward-engineering approach rooted in mathematical
+modelling, model analysis and systems design and control. In this context, the ﬁrst question
+one might want to ask is: What exactly is a model?
+A model is a representation of the essential aspects of an existing system or of a system
+to be constructed which presents knowledge of that system in a usable form for its analysis
+or for its design. Models are thus not replicas of reality; they are simpliﬁed descriptions of it.
+It is important to understand that there is no such thing as ‘the’ model. A model can only
+be deﬁned based on the type of questions that one seeks to answer, e.g. how can one
+design a gene regulation system that produces proteins whose intracellular concentrations
+oscillate periodically in time? Or how can we engineer a metabolic pathway allowing E. coli
+bacteria to produce as much ethanol as possible from a carbon source such as glucose? These
+questions determine the level of abstraction or granularity and type of model that needs to
+be built.
+89
+
+
+--- PDF page 105 ---
+90
+Synthetic Biology — A Primer
+Building models requires both the speciﬁcation of the model structure for the
+desired system (e.g. set of parametric equations describing the constituent parts and their
+interconnections) and the identiﬁcation of the set of parameters appearing in the model (e.g.
+production and decay rates). It is also important to estimate biologically feasible ranges
+of variation of the model parameters within which the desired behaviour of the system is
+preserved.
+Mathematical modelling is the result of a trade-off between accuracy and simplicity
+since although large, complex models may lead to more accurate results they typically
+require many more parameters whose values may not be easily accessible. Furthermore,
+the behaviour of very large models might also be harder to analyse/understand or to
+numerically simulate. Therefore, building ‘good’ models takes practice, experience and
+iteration. The goal of a ‘good’ model is to appropriately capture the fundamental aspects
+of the system of interest while leaving out the details that are irrelevant to the questions
+that are asked. With this goal in mind, the modelling process has to take into account
+the appropriate time and spatial scales that need to be considered, the type of data
+available, and also the types of simulation, analysis and design tools to be used. The
+modelling process is considered successful when the model obtained possesses the following
+characteristics:
+Accuracy: the model should attempt to describe current observations with a ‘sufﬁcient’level
+of accuracy.
+Predictability: the model should allow one to predict the behaviour of the system (through
+analysis or simulation) in situations not already observed.
+Reusability: the model should be reusable in other similar cases.
+Parsimony: the model should be as simple as possible. That is, given competing and equally
+good models, the simplest one should be preferred.
+6.2.1 What are the uses of mathematical modelling in synthetic biology?
+Mathematical modelling plays a crucial role in the efﬁcient and rational design of robust and
+complex synthetic biology systems since it serves as a formal link between the conception
+and physical realisation of a biological circuit. In particular, the rational building of robust
+systems of increasing complexity from the interconnection of different parts or devices
+can be signiﬁcantly facilitated through the use of a forward-engineering approach relying
+on the separation of the in silico model-based design from the actual in vivo or in vitro
+wet laboratory implementation. This approach allows various designs to ﬁrst be tested and
+optimised in silico using model-based computer simulations and mathematical analysis
+methods before committing any effort or time to their in vivo or in vitro realisation.
+When appropriately developed, ‘good’mathematical models allow for design decisions
+to be taken regarding how to interconnect subsystems, choose parameter values and
+design regulatory elements so as to propose a system implementation satisfying the
+design speciﬁcations (e.g. desired behaviour, robustness to environmental perturbations,
+fundamental limits on system operation and performance).
+
+
+--- PDF page 106 ---
+Modelling Synthetic Biology Systems
+91
+6.3 Forward-engineering Approach to the Design of Synthetic
+Biology Systems
+As the requirements of synthetic biological systems have become more complex, the need
+for modelling methods and software design tools has become more acute. To ensure that
+mathematicalmodelscanbeefﬁcientlyreusedinthedesignofincreasinglycomplexsystems,
+the developed models must be easily composable (e.g. by interconnecting them using
+well-deﬁned inputs and outputs for each model) and the behaviour resulting from their
+interconnection must be predictable from the behaviour of the components and the way they
+are interconnected.This last step is the goal of systems and control theory, and its application
+to the analysis and design of biological systems has led to many recent developments. The
+deﬁnition of composable design models and of their appropriate interconnection is a key step
+in enabling the robust design of complex systems from the interconnection of several parts.
+This step is at the core of the forward-engineering approach of synthetic biology systems in
+which, ideally, the designer can use the following workﬂow (Fig. 6.1).
+The design begins by the deﬁnition of the design objectives, i.e. what dynamical
+phenotypic behaviour is sought and with what properties (e.g. robustness, yield, time
+response); and under what constraints (e.g. upper limits on output variability, deﬁnition
+of chassis and environmental constraints). Based on these design speciﬁcations, different
+possible designs are envisioned. These designs differ by the choice of components or parts
+used, the values of the parameters appearing in the part models and the way these parts are
+interconnected.
+For each design a set of mathematical models is constructed, ideally by using a
+standardised and curated database of composable models for the parts and considering
+the interconnection rules imposed by the considered design. Model-based analysis and
+simulations are performed to assess the performance of each design in silico with respect
+Fig. 6.1
+The engineering design cycle — design starts in silico and proceeds iteratively along the cycle. The use
+of ComputerAided Design tools can allow for the in silico modelling, analysis and optimisation of the design prior
+to the actual wet laboratory implementation of the system. (Inspired by Chandran et al., 2008.)
+
+
+--- PDF page 107 ---
+92
+Synthetic Biology — A Primer
+to the initial design speciﬁcations. At this stage, in silico analysis and optimisation allows
+one to search for parameter values leading to the desired behaviour. Furthermore, using
+robustness analysis, different models can be assessed with respect to their ability to withstand
+structural and dynamic perturbations. This typically leads to in silico iterations whose goal
+is to eventually select a subset of design candidates for the wet laboratory implementation.
+The in silico candidate designs are then ‘translated/compiled’ into DNA sequences
+which are then implemented in vitro or in vivo. The implementation is tested and
+characterised to yield biological data that are then compared with the initial design
+objectives, thereby allowing assessment of the quality of the design and, if necessary,
+improvements by iterating once or several times around the design cycle. The use of
+Computer-Aided Design (CAD) tools can make iterations between these different steps
+easier and more efﬁcient. Furthermore, CAD tools can be supplemented by Graphical User
+Interfaces (GUIs), which enable the construction of devices and systems by graphically
+interconnecting components on a canvas and automatically building the corresponding
+models in the background. Ultimately, computational tools could also be used to predict
+the DNA sequence that is required for the in vivo or in vitro implementation of the designed
+model into a particular host cell or even to control and automate the DNA assembly or
+de novo synthesis process using liquid-handling robots.
+The engineering design cycle shown in Fig. 6.1 enables the efﬁcient design of synthetic
+biologysystemsofincreasingcomplexityusingaforward-engineeringapproachverysimilar
+to the one successfully used in many other engineering disciplines. In particular, this
+approach enables the adoption of another important engineering principle: abstraction (see
+Chapter 3). Abstraction allows the construction of complex systems without the need for
+a detailed understanding of the processes involved at each stage along the design cycle. In
+other words, using abstraction each step along the cycle can be realised by different experts
+who do not need to know the details of the implementation of the other steps. The only
+knowledge required is that of the interface between the steps, i.e. what each step receives
+from the others and what it provides to the others. In particular, using abstraction system
+design and system fabrication can be separated (Fig. 6.2).
+The advantage of such a separation is that it saves time, money and effort since the
+main burden of the design is realised more efﬁciently in silico than in vivo or in vitro.
+6.4 Types of Mathematical Models and their Role
+In the following sections we brieﬂy introduce various types of mathematical models that
+are typically used in synthetic and systems biology to capture the essential dynamics of
+biochemical processes.
+6.4.1 Choosing the level of mathematical abstraction/resolution
+of the model
+As in other disciplines, synthetic biology systems can be modelled in a variety of ways and
+at many different levels of resolution and time scales (Fig. 6.3).
+
+
+--- PDF page 108 ---
+Modelling Synthetic Biology Systems
+93
+Fig. 6.2
+Using the engineering design cycle in Fig. 6.1 and the concept of abstraction, system design can be
+separated from system fabrication. (Inspired by Heinemann and Panke, 2006.)
+Fig. 6.3
+Levels of abstraction typically used in the modelling process. (Inspired by: http://www.cds.caltech.edu/
+∼murray/BFSwiki/index.php/Main_page)
+For example, we can try to model the molecular dynamics of the components of the
+cell, in which case we attempt to model the individual proteins and other species and their
+interactions via molecular-scale forces and motions.At this scale, the individual interactions
+between proteins, nucleic acids and other biomolecules are resolved, resulting in a highly
+detailed/complex model of the dynamics of these subunits.
+
+
+--- PDF page 109 ---
+94
+Synthetic Biology — A Primer
+Most of the time, however, such a level of resolution is both computationally intractable
+and too quantitatively inaccurate (due to the lack of knowledge of many parameter values)
+to answer the questions that one is interested in during the design of synthetic biology
+systems. Therefore, more coarse-grained models using Ordinary Differential Equations
+(ODEs), Partial Differential Equations (PDEs), Stochastic Differential Equations (SDEs) or
+Chemical Master Equations (CMEs) are typically used to model simple synthetic biology
+circuits (Fig. 6.4).
+6.4.1.1 Temporal (ODEs) versus spatio–temporal (PDEs) models
+Two coarse-grained types of model typically used are Ordinary Differential Equations
+(ODEs) and Partial Differential Equations (PDEs). These coarse-grained models can be
+Fig. 6.4
+(Continued)
+
+
+--- PDF page 110 ---
+Modelling Synthetic Biology Systems
+95
+used as simpliﬁcations of the real processes as long as their corresponding assumptions
+are satisﬁed. One typical assumption, for example, is spatial homogeneity (either within
+the cell or at the population level). Under the assumption of a spatial homogeneity, ODEs
+models are most commonly used. In ODEs, each variable, for example biochemical species
+concentration, can only depend on time but not on space (see Fig. 6.4a for example, where
+the variables p(t) and m(t) are only function of time). On the contrary, if spatial variations or
+non-homogeneities need to be explicitly taken into account, then the modelling may require
+the use of PDEs where the variables can depend both on time and on space (see Fig. 6.4b
+where the variable u(t, x, y) is a function of time and of the spatial coordinates x and y. In
+this model we only consider two spatial coordinates, i.e. u is assumed to be evolving on a
+plane).
+ODEs and PDEs are widely used in synthetic biology modelling. For example, some of
+the ﬁrst synthetic biology systems such as the toggle switch (Gardner, Cantor et al., 2000)
+and the repressilator (Elowitz and Leibler, 2000) were modelled using ODEs. On the other
+hand, to capture spatial variations in the dynamics of a population of bacteria acting as
+synchronised oscillators, PDEs were used.
+←−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
+Fig. 6.4
+The different types of models typically used in systems and synthetic biology. (a) Using ordinary
+differential equations to model gene transcription regulation by repressors. The model possesses two variables m(t)
+and p(t). m(t) represents the concentration of mRNA obtained through transcription of the considered gene while
+p(t)representstheconcentrationofproteinobtainedthroughtranslationofthemRNA,attimet.Theproposedmodel
+contains several parameters: the maximal transcription rate k1, the repression coefﬁcient K, the Hill coefﬁcient n,
+the mRNA degradation rate d1, the protein translation rate k2 and the protein degradation rate d2. In this model,
+R is considered as an external input representing the concentration of transcriptional repressor while the model
+output is chosen to be the amount of protein produced. Based on this simple model for gene transcription regulation
+by repressors a more complex model for two mutually repressing genes can be proposed. In this model the protein
+produced as the result of the expression of one gene acts as a repressor of the transcription of the other gene and
+reciprocally. This latter construct is called the toggle switch and was modelled and built by Gardner, Cantor et al.
+2000. (b) Using partial differential equations to model biological pattern formation using the reaction–diffusion
+equation. The model considered here possesses a single variable u(t, x, y) which depends on time t but also on
+the planar spatial coordinates x and y. The change in local concentration of each chemical species over time is a
+function of the Laplacian of the local concentration (to account for diffusion) and the local concentration of the
+chemical species (to account for chemical reactions) (Turk, 1991; Meinhardt and de Boer, 2001). The parameter
+µ is the diffusion coefﬁcient (a measure of how fast molecules diffuse from regions of high concentration to
+regions of low concentration) while the function f(u) is deﬁned based on the speciﬁc details of how the molecules
+in the system react with each other. (c) Stochastic differential equations (based on the Langevin approximation)
+for the p53 oscillation model (Geva-Zatorsky, Rosenfeld et al., 2006), where dW is the increment of the Wiener
+process (also known as Brownian motion — the stochastic element of the equation) and X, Y0 and Y represent the
+numbers of p53, Mdm2 precursor and Mdm2 respectively.  represents the volume of the system and α, β and k
+represent the production and degradation rates. As with the previous types of models described above (a, b and c),
+the variables X, Y0 and Y vary continuously (i.e. they cannot take discrete values). (d) Chemical master equation
+for a simple stochastic gene expression model (Thattai and van Oudenaarden, 2001) where R and P represent the
+number of RNA and protein molecules respectively, and π(R, P, t) is the probability of observing R RNA and
+P protein molecules at time t. In contrast to the previous types of equations, R and P are discrete integer values
+and change stochastically in discrete jumps over time according to the parameters of the model. The parameters
+kR and kP are the production rates of mRNA and protein, while γR and γP are degradation rates of mRNA and
+protein respectively.
+
+
+--- PDF page 111 ---
+96
+Synthetic Biology — A Primer
+6.4.1.2 Stochastic (SDEs) versus deterministic (ODEs) models
+Another important distinction occurs based on the type of modelling framework used,
+deterministic versus stochastic. The deterministic framework is appropriate to describe
+the mean behaviour (averaged across a large number of molecules) of a biochemical
+system. Deterministic models implicitly assume that the underlying variables such as
+concentrations or molecule numbers vary in a deterministic fashion. In other words, there
+is no element of randomness associated with the corresponding model, and thus given
+the same initial conditions (e.g. same initial concentrations) the time evolution of all the
+variables is always the same. On the other hand, the stochastic framework takes into account
+the random interactions of biochemical species. More speciﬁcally, stochastic models are
+used to mathematically capture stochastic variations and noise, two properties inherent to
+biological systems. They are typically used when the number of species involved is ‘small’
+and stochastic effects can no longer be ‘averaged out’. This is, for example, the case for
+transcription factors, which, in certain circumstances, can be expressed at low levels (a few
+tens of molecules), or for DNA, for which a single copy may exist in the cell. Due to the
+presence of some randomness in stochastic models, the time evolution of variables will not
+be necessarily the same for a given model simulated several times starting from the same
+initial conditions.
+Two main types of stochastic models — Stochastic Differential Equations (Fig. 6.4c)
+and Chemical Master Equations (Fig. 6.4d) — are typically used to represent stochastic
+systems. The analysis of stochastic models can occasionally be realised by mathematically
+deriving the most important statistical moments (such as mean and variance), although this
+can be quite hard for complex models such as those typically found in realistic biological
+modelling.Therefore, understanding the behaviour of complex stochastic models is typically
+done through large numbers of computer simulations.
+Simulationof CMEsmodelsis verycomputationallyexpensive, especiallyifthenumber
+ofdifferentbiochemicalspeciesinthemodelislarge,thereactionratesarehighorthenumber
+of molecules of each species increases in size. Simulation from SDEs is less computationally
+expensive but SDEs do not accurately represent chemical processes at (very) low number of
+molecules. For this reason, there has been an effort to develop hybrid models that combine
+deterministic (ODE) and stochastic (SDEs and/or CMEs) modelling into a single framework
+where each species is modelled most appropriately while minimising computational time.
+Since designs that speciﬁcally use stochastic aspects as features are quite hard to obtain,
+one typically starts with deterministic designs/models and, if necessary, the behaviour and
+performance of these designs are then put to the test by creating corresponding stochastic
+models and checking that the stochastic aspects do not signiﬁcantly impact on the initially
+designed behaviour or performance.
+6.4.2 Experimental data, model resolution and parameter identiﬁcation
+Choosing the appropriate level of resolution of a model (see Fig. 6.3) also requires taking
+into account the type, amount and quality of experimental data that are or can be made
+
+
+--- PDF page 112 ---
+Modelling Synthetic Biology Systems
+97
+available. Indeed, a model with a very high resolution might not be very useful if the
+amount and quality of data available to estimate the model parameters is low or if these data
+do not really allow one to assert the level of conﬁdence one can have on the created model
+(to accept or invalidate the designed model by comparing its predictions with measured
+data). This also raises the question of identiﬁcation of model parameters from the data, i.e.
+what is the minimal amount of information necessary in order to be able to estimate the
+parameters of a given model. This question is not only important for the appropriate design
+of models but also for the design of experimental protocols targeting the extraction of the
+minimal information required to address the parameter identiﬁcation problem.
+6.5 Model Repositories
+In order to facilitate the modelling process, several biological model repositories have been
+created in recent years. These repositories are accessible online and serve as a centralised
+source of information that allows users to store, search and retrieve published mathematical
+models of biological interests. A non-exhaustive list of biological model repositories can
+be found at http://systems-biology.org/resources/model-repositories/. Among these model
+repositories, one of the most used is BioModels (http://www.ebi.ac.uk/biomodels-main/). It
+provides access to published, peer-reviewed, quantitative models of biochemical and cellular
+systems.The models on BioModels are stored under the form of biochemical reactions which
+can be used to automatically create both deterministic (e.g. ODEs) and stochastic (e.g. SDEs)
+mathematical models.
+It is important to note that each model in the BioModel repository is carefully
+curated to verify that it corresponds to the referenced publication and gives the proper
+numerical results. Curators also annotate the components of the models with terms from
+controlled vocabularies and links to other relevant data resources. The models published
+on the BioModels website can be simulated online (deterministically or stochastically) and
+exported into various formats including the popular Systems Biology Markup Language
+(SBML) (http://sbml.org/Main_Page) or the CellML format (http://www.cellml.org/).These
+are machine-readable formats for representing computational models at the biochemical
+reaction level. By supporting SBML or CellML as input and output formats, different
+software tools can operate on the same representation of a model, removing chance for
+errors in translation and assuring a common starting point for analyses and simulations.
+6.6 Information Necessary for Synthetic Biology Modelling
+As we saw in the previous section, biological models typically contain several parameters
+whose values inﬂuence the time evolution/behaviour of the considered model (for example,
+k1, k2, K, n, d1 and d2 in the ODEs model for gene transcription regulation by repressors
+of Fig. 6.4a). So even if, based on ﬁrst principles or engineering design considerations, the
+structure of the system can be speciﬁed under the form of a parametric model, a careful
+estimation of the model parameters will be required to ensure the appropriate behaviour
+
+
+--- PDF page 113 ---
+98
+Synthetic Biology — A Primer
+of the designed system. In the next three sections, we give an overview of the sources of
+quantitative information that are useful to identify model parameters.
+6.6.1 Datasets from the biological literature
+Parameter values are typically inferred from measured experimental data (see Section 6.6.3
+‘Parameter Inference and Model Selection’). Sometimes parameter values can also be
+derived from biophysical values and computations using insight into the biological processes
+involved. Most often, the ﬁrst step when looking for particular parameter values consists of
+searching the specialised literature and sifting through a large amount of papers to extract
+the relevant information. This, however, can be quite time-consuming and inefﬁcient. This is
+why scientists and researchers have started gathering and curating this information in order
+to deposit it in freely accessible, online repositories. One such popular repository recently
+developed at the Systems Biology Department in Harvard (USA) and theWeizmann Institute
+(Israel) is called BioNumbers (http://bionumbers.hms.harvard.edu/). The BioNumbers
+website provides access to a growing number of biological and biophysical values extracted
+from the literature, together with the source used to provide the values. The centralisation
+of this information greatly facilitates the search for biologically relevant values, which can
+be useful for estimating the values of parameters appearing in biological models.
+6.6.2 Datasheets from the characterisation of synthetic biology parts
+Another way of obtaining useful information for the design of models and the identiﬁcation
+of their parameters comes from the direct and methodical wet laboratory characterisation
+of engineered synthetic biology parts. Electronic engineers use TTL Data Books listing
+standard electronic components and their characteristics in order to choose the components
+required to construct their circuits. In a similar way, the ultimate goal of standardisation
+and characterisation of synthetic biology parts is to provide synthetic biologists with a
+catalogue of standard parts together with their associated characterisation datasheets. To be
+useful, these datasheets should contain enough quantitative information to allow a synthetic
+biologist to appropriately choose the speciﬁc parts that will yield the desired behaviour
+for an engineered system. An example of ‘gold standard’ datasheet is the BBa_F2620
+part datasheet giving quantitative characterisation information of a genetic receiver device
+(see http://parts.igem.org/wiki/images/f/fe/EndyFig1-F2620DataSheet.pdf). This receiver
+device takes the concentration of an inducer molecule as input and produces a speciﬁc
+output signal in response. The corresponding datasheet deﬁnes a number of aspects of the
+behaviour of the device: the strength of the output signal at different inducer concentrations,
+the time evolution of the output, the reliability or expected time to failure of the device,
+the degree of compatibility with other inducers and an indication of the type and amount of
+cellular resources the device consumes. Signiﬁcantly, the authors of this datasheet underline
+the importance of measuring a large number of properties in order to comprehensively
+characterise genetic elements, especially those that describe the way the parts interact
+with the chassis in which they are intended to function. This hints at the necessity of
+producing high-quality datasheets of well-characterised parts in order to support the rapid
+
+
+--- PDF page 114 ---
+Modelling Synthetic Biology Systems
+99
+and efﬁcient reuse of the engineered parts or devices in various systems of increasing
+complexity. The creation of a registry of professionally characterised biological parts
+is one of the main goals of BIOFAB (see Chapter 3). These characterisation data are
+very useful to build mathematical models of the characterised parts and to identify their
+parameters.
+6.6.3 Parameter inference and model selection
+Given experimental data of sufﬁcient quality and quantity it is possible to estimate the
+values of parameters appearing in mathematical models (this is called parameter inference
+or parameter estimation) and to decide which model is ‘better’at explaining a given process
+(this is called model selection).
+Typically, wet laboratory experimental data consist of time course measurements of the
+model species under some in vivo or in vitro conditions, such as time series measurements
+of protein concentrations under speciﬁc experimental conditions. Given these experimental
+data, parameter inference can be posed as a parameter optimisation problem where the
+function to be optimised takes as inputs the experimental data and the model with the
+chosen parameter values and gives as output a measure of how well simulations/predictions
+of the model with these particular parameter values match the experimental data.The optimal
+parameter estimates are those that maximise the objective function.
+Model selection, on the other hand, refers to the task of selecting the ‘most appropriate’
+models within a set of competing candidate models. Generally, models with more parameters
+ﬁt the data better than models with fewer parameters and this must be accounted for. This
+is typically done using a parsimony principle so that given two competing models which
+explain the data equally well, the simpler one will be preferred. This is done using concepts
+such as the Likelihood Ratio Test (LRT), the Akaike Information Criterion (AIC) or the
+Bayesian Information Criterion (BIC).
+6.7 Information Provided by Synthetic Biology Models
+6.7.1 Metrics of interest in synthetic biology
+From an engineering design point of view, the purpose of mathematical models in synthetic
+biology is to enable fast, efﬁcient and reliable prediction and pre-assessment of the
+behaviour, robustness and performance of a designed system before its actual wet laboratory
+implementation. In particular, based on a mathematical model several metrics of interest
+to the designer (see Fig. 6.5) can be estimated in silico for the envisioned design(s). These
+metrics can be, for example, the time it takes for the system to respond to a step change
+at its input, the expected steady-state amplitude of the output of the system, the tunability
+of the output with respect to some of the parameters of the model or the robustness of
+the system to environmental perturbations. All of these metrics are extremely important in
+the appropriate design of a synthetic biology system. Estimating them in silico based on
+constructed models can be done efﬁciently through mathematical analysis and numerical
+simulations of the models.
+
+
+--- PDF page 115 ---
+100
+Synthetic Biology — A Primer
+Fig. 6.5
+Example of typical performance metrics for the time evolution of the output of a designed system.
+6.7.2 Model-based numerical simulations
+To ensure that the in silico designed systems behave as desired, the proposed designs and
+their corresponding models are numerically simulated in various situations. This step is
+useful to check that models are characterised by behaviours and performances coherent
+with the initial design speciﬁcations. During this step the various metrics of interests are
+estimated in silico (Fig. 6.5). If the behaviour or performance are not satisfactory then some
+additional in silico iterations will be necessary to reﬁne the designs/models until they are
+deemed acceptable.
+6.7.3 Fundamental limits on system operation
+Mathematical analysis of a model provides the designer with important information regard-
+ingthepossibletypesofbehavioursthatcanbeexpectedfromtheimplementationofamodel,
+and also the fundamental limits of the designs, as well as ways to improve the design.
+6.7.3.1 Identifying important controlling factors and weak spots
+in the design analysis of the models
+Once models have been created and their parameters determined, these models can be
+mathematically analysed in order to characterise their qualitative behaviour and identify
+important controlling factors and ways to improve the design. Which parameters have the
+‘largest impact’on the model behaviour? This is typically discovered through what is called
+
+
+--- PDF page 116 ---
+Modelling Synthetic Biology Systems
+101
+a parameter sensitivity analysis as explained in more detail below. What types of behaviours
+can be expected from the considered model and how can this behaviour change when
+the parameter values are modiﬁed? This is done through bifurcation analysis (see below).
+How robust is the behaviour/performance of the designed model to structural and dynamic
+perturbations?
+6.7.3.1.1 Parameter sensitivity analysis
+The goal of a parameter sensitivity analysis is to determine the inﬂuence of each parameter
+or combination of parameters on the behaviour or performance of the model. Sensitive
+parameters are those which are primarily responsible for signiﬁcant changes in dynamical
+behaviour or performance and their value should be chosen wisely. Local sensitivity analysis
+is the study of the changes in the model output or performance function with respect to small
+perturbations in individual speciﬁed parameter values. Global sensitivity analysis enables an
+examination of the response of the system output or performance to simultaneous variations
+in parameter values across the whole admissible range of parameter variations. Global
+sensitivity analysis is of particular importance in biological models for which parameters
+can vary within large intervals depending on their meaning.
+Examples of sensitivity analysis software tools developed speciﬁcally for biological
+systems include BioSens (http://thedoylegroup.org/research/biosens/), SensSB (Rodriguez-
+Fernandez and Banga, 2010) and SBML-SAT (Zi, Zheng et al., 2008).
+6.7.3.1.2 Bifurcation analysis
+This type of analysis informs the designer about transitions in dynamical regime induced by
+variations in parameter values. In particular, bifurcation analysis allows one to characterise
+regions in the parameter space in which the steady-state behaviour of the system remains
+qualitatively the same. At the boundaries of such regions, a qualitative change in the
+steady-state behaviour occurs, e.g. increasing the value of a single parameter while keeping
+the others constant leads to a transition from a unique asymptotically stable equilibrium
+point to an asymptotically stable periodic oscillation. The characterisation of these regions
+provides crucial information for the design as it allows the identiﬁcation of the parameter
+regions/ranges within which a desired behaviour can be obtained. Numerical continuation
+analysis tools such as XPPAUT (Ermentrout et al., 2003) or MATCONT (Dhooge et al.,
+2003) can be used to perform a bifurcation analysis of a given model once an initial guess
+for its associated steady-state solution is known.
+6.7.3.1.3 Robustness analysis
+Although several designs can lead to the same behaviour, their respective ability to withstand
+perturbations may be very different. Provided that enough information is known about the
+perturbation (at least an upper bound on the energy of the perturbation), robust analysis
+of the models allows the assessment of their relative immunity to such perturbations.
+In particular, this step can prove very informative for the robust design of systems, and
+
+
+--- PDF page 117 ---
+102
+Synthetic Biology — A Primer
+established multivariable robust control techniques can be used to that effect in the design
+process.
+A widely used tool for this type of analysis is the Matlab Robust Control Toolbox
+(http://www.mathworks.com/products/robust/). The SBML-SAT tool mentioned above also
+implements algorithms for robustness analysis, as does the BIOCHAM (Rizk, Batt et al.,
+2009) modelling environment.
+6.7.3.2 Determining constraints/limits on system behaviour/performance
+through mathematical analysis
+By mathematically analysing a model or a family of models, some information can be gained
+regarding the conditions required to obtain a particular behaviour or ways to improve the
+design but also, and most importantly, regarding the fundamental limits that constrain the
+considered design — for example, by using a combination of control and information theory
+to mathematically obtain a fundamental limit on the maximum suppression of molecular
+ﬂuctuations that can be obtained using any type of feedback control mechanism (Lestas,
+Vinnicombe, et al., 2010). The result shows that the limit is inversely proportional to the
+quartic root of the number of signalling events, making it extremely expensive to increase
+accuracy (e.g. to reduce molecular ﬂuctuations by one order of magnitude you need to
+increase the number of signalling events by four orders of magnitude). This type of result is
+very useful for the design of synthetic biology systems since it informs the designer about
+what can be expected at best from any design and thus allows one to deﬁne the limits of
+what is achievable by a particular design.
+6.8 Computational Tools for In Vivo or In Vitro Implementation
+of Synthetic Biology Systems
+Once mathematical analysis and numerical simulations indicate that the models satisfy the
+design speciﬁcations, the synthetic biologist can focus his or her attention on the laboratory
+realisation of the proposed designs. This initiates the construction, characterisation and
+testing phase of the engineering design cycle (Fig. 6.1).
+The laboratory implementation requires translation of the candidate synthetic biology
+design(s) into a biological language that the host cell can understand and ‘execute’. This
+typically means converting the design into an appropriate DNA sequence that the cell tran-
+scription/translation machinery can use to implement the desired synthetic biology circuit.
+If the design is based on the interconnection of standard, well-characterised parts for
+which the associated models and parameter values are known then the implementation can
+be quite straightforward. In this situation, the physical design requires the assembly of
+the DNA sequences associated with the different parts into a larger section of DNA that
+implements the design (see Chapter 3). The assembly phase also requires the integration of
+this larger piece of DNA into plasmid vectors or into the chromosome of the host cell. The
+assembly phase can range in scale from assembling a gene optimised to efﬁciently express
+a protein with a given amino acid sequence, to assembling a set of genes to form a pathway,
+
+
+--- PDF page 118 ---
+Modelling Synthetic Biology Systems
+103
+and up to assembling an entire bacterial genome. In this context, computational algorithms
+can help eliminate human error as well as minimise the time and cost of experiments with
+the ultimate aim of high-throughput fully automated assembly by liquid-handling robots.
+6.8.1 Computational tools for the automatic implementation
+of designs based on existing biological parts
+The laboratory implementation of a synthetic biology system becomes more complex if one
+does not really know which parts are needed to build the desired system. In such a situation,
+tools that (based on a speciﬁed model/behaviour) enable either automatic selection of parts
+or de novo synthesis of DNA sequences are necessary.
+Some currently developed tools such as the GEC programming language (Phillips and
+Cardelli, 2009) can take a high-level description of the desired speciﬁcations/behaviour
+together with a database of standard biological parts with associated properties, and output
+a set of candidate designs (based on the appropriate choice of parts from the part database)
+that satisfy the requirements deﬁned in the GEC program. The resulting set of candidate
+part-based designs can then be numerically simulated for further analysis and selection
+before the actual experimental implementation.
+Another example is ClothoCAD (http://www.clothocad.org/). ClothoCAD is an ambi-
+tious large-scale project to develop a modular and integrated software platform for synthetic
+biology systems providing graphical sequence editing, data management, algorithm
+management tools and a plug-in system. This software includes the ability to interface
+with liquid-handling robots for automated production of the designed constructs.
+6.8.2 Computational tools for the implementation of designs
+requiring de novo DNA synthesis
+Automatic DNA sequence compilers are currently being developed to help synthetic
+biologists automatically predict the speciﬁc DNA sequences that need to be inserted into a
+chassis cell in order to implement the synthetic biology system that was designed in silico.
+In particular, current research efforts are focusing on developing calculators or DNA
+sequence predictors for the most fundamental synthetic biology parts, including promoters,
+ribosome binding sites, protein coding sequences and terminators. This kind of tool is
+extremely useful as it provides a link between some high-level property and its low-level
+implementation within the biomolecular language of the cell. In the future, such tools will
+provide the currently missing link, allowing the de novo prediction/compilation of DNA
+sequences required to implement any particular synthetic circuit.
+6.9 Comparison of Model Predictions/Simulations
+with In Vivo/In Vitro Data
+In order to close the engineering design cycle and to assess the quality of a model and its
+utility in the design of a synthetic biology system, the predictions of the model need to be
+
+
+--- PDF page 119 ---
+104
+Synthetic Biology — A Primer
+Fig.6.6
+Comparingmodelpredictionswithexperimentaldata.Modelsaretypicallytheresultsofseveraliterations
+aimed at reﬁning the model based on these comparisons.
+compared with experimental data obtained from the in vivo or in vitro implementation of
+the system (Fig. 6.6).
+In the design context, in vivo or in vitro testing and characterisation of the synthetic
+biology construct allows one to feed information back about the behaviour and performance
+of the implemented systems, allowing for model reﬁnement where necessary. Comparison
+with the initial design speciﬁcations then allows the designer to decide if the implemented
+systems satisfy the design requirements or if some additional iteration along the design
+cycle is necessary. Furthermore, predictions of the model may also be informative for the
+design of new experiments whose goal is to reveal previously unobserved behaviours of the
+system, thereby deepening its understanding.
+6.10 Model and/or Experimental Reﬁnements
+If the synthetic biology systems implemented in vivo or in vitro do not satisfy the required
+design speciﬁcations or do not behave as predicted by the model, it is necessary to identify
+the cause of such discrepancy. Several causes of discrepancies must be considered: (i) the
+model is inappropriate and needs to be revised; (ii) the design speciﬁcations are too stringent
+and need to be relaxed; (iii) the implementation of the synthetic biology construct contains
+errors that need to be identiﬁed and corrected. The ﬁrst two causes (i) and (ii) launch the
+synthetic biologist around another full iteration of the engineering design cycle (Fig. 6.1).
+(iii) requires the use of circuit debugging tools, such as DNA sequencing, and methods for
+biochemical network reconstruction from data to test if the structure of the implemented
+synthetic biology circuit corresponds to the one originally intended by its designer.
+The approach and concepts that we have brieﬂy introduced in this chapter constitute the
+main toolbox that engineers typically use to successfully build complex systems by relying
+on a rational approach based on mathematical modelling, model analysis and in silico
+simulations prior to actual system implementation. Taking a similar approach in synthetic
+biology will provide the community with foundational mathematical and computational
+tools required for the efﬁcient forward-engineering of robust synthetic biology systems of
+increasing complexity.
+
+
+--- PDF page 120 ---
+Modelling Synthetic Biology Systems
+105
+Reading
+Forward engineering:
+Anderson, J, Strelkowa, N, Stan, G-B, et al. (2012). Engineering and ethical perspectives in synthetic
+biology. EMBO Reports 13(7): 584–590.
+Endy, D. (2005). Foundations for engineering biology. Nature 438: 449–453.
+Galdzicki, M, Clancy, KP, Oberortner, E, et al. (2014). The Synthetic Biology Open Language (SBOL)
+provides a community standard for communicating designs in synthetic biology. Nat Biotechnol,
+32(6): 545—550. doi:10.1038/nbt.2891.
+Kelwick, R, Kopniczky, M, Bower, I, et al. (2015). A forward-design approach to increase the
+production of poly-3-hydroxybutyrate in genetically engineered Escherichia coli, PLoS ONE
+10(2): e0117202. doi: 10.1371/journal.pone.0117202.
+Peccoud, J, Anderson, JC, Chandran, D, et al. (2011). Essential information for synthetic DNA
+sequences. Nat Biotechnol, 29(1): 22; discussion 22–23. doi:10.1038/nbt.1753.
+Systems and control theory:
+Alon, U. (2007). An Introduction to Systems Biology: Design Principles of Biological Circuits.
+Chapman & Hall/CRC Mathematical and Computational Biology Series, Boca Raton, FL.
+Iglesias, PA and Ingalls, BP. (2010). ControlTheory and Systems Biology. MIT Press, Cambridge, MA.
+Kitano, H. (2001). Foundations of Systems Biology. MIT Press, Cambridge, MA.
+Kulkarni, V, Stan, G-B and Raman, K (Eds) (2014). A Systems Theoretic Approach to Systems and
+Synthetic Biology I: Models and System Characterizations. Springer, Berlin.
+Kulkarni, V, Stan, G-B and Raman, K (Eds) (2014). A Systems Theoretic Approach to Systems and
+Synthetic Biology II: Analysis and Design of Cellular Systems. Springer, Berlin.
+Oyarzún, DA and Stan, G-BV (2013). Synthetic gene circuits for metabolic control: design trade-offs
+and constraints. J R Soc Interface 10(78): 20120671. doi:10.1098/rsif.2012.0671.
+Oyarzún, DA, Lugagne, J-B, and Stan, G-BV (2015). Noise propagation in synthetic gene circuits for
+metabolic control. ACS Synthetic Biology, 4(2): 116—125. doi:10.1021/sb400126a.
+Wellstead, P, Bullinger, E, Kalamatianos, D, et al. (2008). The rôle of control and system theory in
+systems biology. Annu Rev Control 32(1): 33–47.
+Engineering design cycle:
+Anderson, J, Strelkowa, N, Stan, G-BV, et al. (2012). Engineering and ethical perspectives in synthetic
+biology. Rigorous, robust and predictable designs, public engagement and a modern ethical
+framework are vital to the continued success of synthetic biology. EMBO Reports, 13(7): 584–
+590. doi:10.1038/embor.2012.81.
+Arpino, JAJ, Hancock, EJ, Anderson, J, et al. (2013). Tuning the dials of Synthetic Biology.
+Microbiology-SGM, 159: 1236–1253. doi:10.1099/mic.0.067975-0.
+Chandran, D, Copeland,WB, Sleight, SC, et al. (2008). Mathematical modeling and synthetic biology.
+Drug Discov Today: Disease Models 5(4): 299–309.
+Use of ODEs and SDEs in synthetic biology modelling:
+Algar, R, Ellis, T and Stan, G-BV (2014). Modelling essential interactions between synthetic genes
+and their chassis cell, Proceedings of the 53rd IEEE Conference on Decision and Control (IEEE
+CDC 2014), J.W. Marriott Hotel, Los Angeles, CA, USA, 15—17 December, 2014.
+Danino, T, Mondragón-Palomino, O, Tsimring, L, et al. (2010). A synchronized quorum of genetic
+clocks. Nature 463: 326–330.
+
+
+--- PDF page 121 ---
+106
+Synthetic Biology — A Primer
+Elowitz, MB and Leibler, S. (2000). A synthetic oscillatory network of transcriptional regulators.
+Nature 403: 335–338.
+Gardner,TS, Cantor, CR and Collins, JJ. (2000). Construction of a genetic toggle switch in Escherichia
+coli. Nature 403: 339–342.
+Kaznessis, YN. (2009). Multiscale models for synthetic biology. Conf Proc IEEE Eng Med Biol Soc
+6408–6411.
+Purcell, O, Savery, NJ, Grierson, CS, et al. (2010). A comparative analysis of synthetic genetic
+oscillators. J R Soc Interface 7(52):1503–1024.
+Van Kampen, NG. (2007). Stochastic Processes in Physics and Chemistry. Elsevier, Amsterdam.
+Wilkinson, DJ. (2009). Stochastic modelling for quantitative description of heterogeneous biological
+systems. Nat Rev Genet 10(2): 122–133.
+Model resolution and parameter identiﬁcation:
+Gonçalves, J and Warnick, S. (2008). Necessary and sufﬁcient conditions for dynamical structure
+reconstruction of LTI networks. IEEE Trans Automat Control 53(7): 1670–1674.
+Ljung, L. (1999). System Identiﬁcation: Theory for the User, 2nd Ed. Prentice Hall, Upper Saddle
+River, NJ.
+Sontag, ED. (2008). Network reconstruction based on steady-state data. Essays Biochem: Systems
+Biology 45: 161–176.
+Sontag, ED, Kiyatkin, A and Kholodenko, BN. (2004). Inferring dynamic architecture of cellular
+networksusingtimeseriesofgeneexpression,proteinandmetabolitedata.Bioinformatics 20(12):
+1877–1886.
+Yuan, Y, Stan, G-B, Warnick, S, et al. (2010). Network structure reconstruction from noisy data. 49th
+IEEE CDC, Atlanta, Georgia.
+Bionumbers:
+Milo, R, Jorgensen, P, Moran, U, et al. (2010). BioNumbers — the database of key numbers in
+molecular and cell biology. Nucleic Acids Res 38(Database issue): D750–753.
+Datasheets for biological parts:
+Canton, B, Labno, A and Endy, D. (2008). Reﬁnement and standardization of synthetic biological
+parts and devices. Nat Biotechnol 26(7): 787–793.
+Model selection:
+Burnham, KP and Anderson, DR. (2008). Model selection and multimodel inference. Technometrics
+45: 18.
+Parameter sensitivity analysis:
+Kiparissides, A, Kucherenko, SS, Mantalaris, A, et al. (2009). Global sensitivity analysis challenges
+in biological systems modeling. Ind Eng Chem Res 48(15): 7168–7180.
+Kitano, H. (2004). Biological robustness. Nat Rev Gen 5(11): 826–837.
+Lestas, I, Vinnicombe, G and Paulsson, J. (2010). Fundamental limits on the suppression of molecular
+ﬂuctuations. Nature 467: 174–178.
+Saltelli, A. (2008). Global Sensitivity Analysis: The Primer. John Wiley, Chichester.
+
+
+--- PDF page 122 ---
+Modelling Synthetic Biology Systems
+107
+Saltelli, A, Ratto, M, Tarantola, S, et al. (2005). Sensitivity analysis for chemical models. Chem Rev
+105(7): 2811–2827.
+Zhou, K, Doyle, JC and Glover, K. (1995). Robust and Optimal Control. Prentice Hall, Upper Saddle
+River, NJ.
+General References:
+Ceroni, F,Algar, R, Stan, G-BV, et al. (2015). Quantifying cellular capacity identiﬁes gene expression
+designs with reduced burden, Nat Methods, 12: 415–418.
+Del Vecchio, D and Murray, R. (2010). Biomolecular Feedback Systems. Available at: http://www.
+cds.caltech.edu/∼murray/BFSwiki/index.php/Main_Page [Accessed 24 February 2015].
+Dhooge, A, Govaerts, W, Yu, A, et al. (2003). MATCONT: a MATLAB package for numerical
+bifurcation analysis of ODEs. ACM Trans Math Software 29(2): 141–164.
+Ermentrout, B. (2003). Simulating, analyzing, and animating dynamical systems: a guide to XPPAUT
+for researchers and students. Appl Mech Rev 56(4): B53–B53.
+Geva-Zatorsky, N, Rosenfeld, N, Itzkovitz, S, et al. (2006). Oscillations and variability in the p53 sys-
+tem. Mol Syst Biol 2: 2006 0033. Available at: http://msb.embopress.org/content/2/1/2006.0033
+[Accessed 24 February 2015].
+Heinemann, M and Panke, S. (2006). Synthetic biology — putting engineering into biology.
+Bioinformatics 22(22): 2790–2799.
+Lestas, I, Vinnicombe, G and Paulsson, J. (2010). Fundamental limits on the suppression of molecular
+ﬂuctuations. Nature 467: 174–178.
+Macdonald, JT, Barnes, C, Kitney, RI, et al. (2011). Computational design approaches and tools for
+synthetic biology. Integr Biol, 3(2): 97–108. doi:10.1039/c0ib00077a.
+Meinhardt, H and de Boer, PA. (2001). Pattern formation in Escherichia coli: a model for the pole-
+to-pole oscillations of Min proteins and the localization of the division site. Proc Natl Acad Sci
+U S A 98(25): 14202–14207.
+Phillips, A and Cardelli, L. (2009). A programming language for composable DNA circuits. J R Soc
+Interface 6 Suppl 4: S419–436.
+Prindle, A, Samayoa, P, Razinkov, I, et al. (2012). A sensing array of radically coupled genetic
+‘biopixels’. Nature, 481(7379): 39–44. doi:10.1038/nature10722.
+Purnick, PEM and Weiss, R. (2009). The second wave of synthetic biology: from modules to systems.
+Nat Rev Mol Cell Bio 10(6): 410–422.
+Rizk, A, Batt, G, Fages, F, et al. (2009). A general computational method for robustness analysis with
+applications to synthetic gene networks. Bioinformatics 25(12): 169–178.
+Rodriguez-Fernandez, M and Banga, JR. (2010). SensSB: a software toolbox for the development and
+sensitivity analysis of systems biology models. Bioinformatics 26(13): 1675–1676.
+Salis, HM, Mirsky, EA and Voigt, CA. (2009). Automated design of synthetic ribosome binding sites
+to control protein expression. Nat Biotechnol 27(10): 946–950.
+Stricker, J, Cookson, S, Bennett, MR, et al. (2008).A fast, robust and tunable synthetic gene oscillator.
+Nature 456: 516–519.
+Strogatz, S. (1994). Nonlinear Dynamics and Chaos: with applications to physics, biology, chemistry,
+and engineering. Perseus Books, New York.
+Thattai, M and van Oudenaarden, A. (2001). Intrinsic noise in gene regulatory networks. Proc Natl
+Acad Sci U S A 98(15): 8614–8619.
+Turk, G. (1991). Generating textures on arbitrary surfaces using reaction-diffusion. Siggraph 91 Conf
+Proc 25: 289–298.
+
+
+--- PDF page 123 ---
+108
+Synthetic Biology — A Primer
+Wright, O, Stan, G-BV and Ellis, T. (2013). Building-in biosafety for synthetic biology. Microbiology-
+SGM, 159: 1221–1235. doi:10.1099/mic.0.066308-0.
+Wright, O, Delmans, M, Stan, G-B, et al. (2014). GeneGuard: A Modular Plasmid System Designed
+for Biosafety. ACS Synth Biol, 140522150840004. doi:10.1021/sb500234s.
+Zheng, Y and Sriram, G. (2010). Mathematical modeling: bridging the gap between concept and
+realization in synthetic biology. J Biomed Biotechnol. Available at: http://www.hindawi.com/
+journals/bmri/2010/541609/ [Accessed 24 February 2015].
+Zi, Z, Zheng,Y, Rundell, AE, et al. (2008). SBML-SAT: a systems biology markup language (SBML)
+based sensitivity analysis tool. Bioinformatics 9: 342. Available at: http://www.biomedcentral.
+com/1471-2105/9/342 [Accessed 24 February 2015].

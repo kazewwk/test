@@ -1,0 +1,1569 @@
+# Index
+
+原始 PDF 第 186–194 页。
+
+## Index
+
+3 ends, 4, 153
+
+5 ends, 4, 153
+
+A. thaliaria, 42
+
+abiotic, 73
+
+abstraction, 51, 92, 123
+
+acceptors, 2
+
+accessory proteins, 75
+
+accuracy, 90
+
+acidophilic bacteria, 117
+
+activators, 14, 75
+
+acyl-homoserine lactones (AHLs), 80, 85
+
+adenine, 2
+
+Aequorea victoria, 49
+
+Akaike Information Criterion (AIC), 99
+
+alga, 62
+
+algae, 143
+
+amateur biologists, 134
+
+amine (NH<sub>2</sub>), 10
+
+amino acid, 10, 64
+
+amplification of DNA, 4
+
+amplitude, 31, 83
+
+amplitude spectrum, 34, 35
+
+amylases, 112
+
+Amyris, 111
+
+AND, 39, 77
+
+anneal, 151
+
+annotation, 43
+
+anti-σ factors, 14
+
+anti-anti-σ factors, 14
+
+anti-commons, 137
+
+anti-parallel configuration, 4
+
+antibiotic resistance marker, 152
+
+antibiotics, 66
+
+antibody, 114, 159
+
+antisense strands, 44
+
+application, 109, 126, 131, 137
+
+application layer, 24, 25
+
+arsenic, 126
+
+Artemisia annua, 114
+
+artemisinic acid, 114
+
+artemisinin, 111, 114, 143
+
+artemisinin-based combination therapies (ACT), 143
+
+artificial cells, 61
+
+Artificial Intelligence (AI), 141
+
+assembly, 66
+
+assembly line, 123
+
+ATG, 8, 16
+
+ATP, 4
+
+Bacillus, 120
+
+Bacillus subtilis, 65, 127
+
+backbone, 2
+
+bacteriophage λ, 15
+
+bacteriophage Qβ, 69
+
+bacto-builders, 124
+
+baker’s yeast, 112
+
+base, 2
+
+Bayesian Information Criterion (BIC), 99
+
+BCCS-Bristol, 124
+
+behaviour coordination, 80
+
+bench scale reactors, 111
+
+β-galactosidase, 49, 76
+
+bifurcation analysis, 101
+
+binary inputs, 77
+
+binary states, 77
+
+binding, 15
+
+binding of proteins to a DNA sequence, 15
+
+Bio-Economic Research Associates, 143
+
+BioBricks, 48, 54, 119, 126, 136, 137, 138, 153
+
+BioBricks assembly, 47, 152, 153
+
+BioBricks Registry, 55
+
+BioBricks assembly standard, 47
+
+BioBricks Foundation (BBF), 137
+
+BioBricks Public Agreement (BPA), 137, 138
+
+171
+
+---
+
+172
+
+Synthetic Biology — A Primer
+
+BioCAD, 19, 26, 56
+
+bioerror, 135
+
+biofuels, 110, 111, 133, 143
+
+biohacking, 131, 133
+
+BioLogic, 39
+
+BioLogical, 40
+
+Biological Innovation for an Open Society (BIOS), 138
+
+biological pattern formation, 95
+
+biologics, 112
+
+bioluminescence, 70
+
+biomass, 112, 144
+
+biomaterials, 115, 116
+
+biomining, 117
+
+BioModels, 97
+
+BioNumbers, 98
+
+bioparts, 20
+
+biopranking, 135
+
+bioremediation, 116
+
+biosafety, 131
+
+biosecurity, 131, 133
+
+BioSens, 101
+
+biosensors, 68, 114, 126, 142
+
+bioterror, 135
+
+bioterrorism, 133
+
+bistable switch, 124
+
+black box approach, 36
+
+block diagram, 28, 36
+
+blood glucose sensors, 115
+
+Blue Crystal, 125
+
+Bode Analysis, 38
+
+Boolean algebra, 77
+
+Boolean functions, 39
+
+Boolean networks, 54
+
+bottom-up, 47, 61, 66, 68, 115, 116, 122
+
+Brownian motion, 95
+
+buffering sequences, 87
+
+butadiene, 113
+
+butanol, 113
+
+C. elegans, 42
+
+cancer, 115
+
+capillary electrophoresis, 44
+
+carboxylic acid (COOH), 10
+
+cardiovascular disease, 112
+
+Carlson Curve, 45
+
+carotene, 126
+
+Carsonella ruddii, 62
+
+CASP competition (Critical Assessment of techniques for Protein Structure Prediction), 12
+
+catechol 2,3-dioxygenase, 49
+
+cDNA, 158
+
+cell–cell communication, 122
+
+cell–cell signalling, 80
+
+cell fate, 116
+
+cell signalling senders, 80
+
+CellML, 97
+
+cellular compartment growth, 69
+
+central dogma, 6, 7, 64
+
+characterisation, 19, 48, 98, 111
+
+chassis, 25, 43, 61, 62, 68, 73, 110, 134, 152
+
+chemical leaching, 117
+
+Chemical Master Equations (CMEs), 94
+
+chemical replicating systems, 69
+
+chemical synthesis, 110
+
+chemoattractant, 125
+
+chemotactically, 125
+
+chimeras, 81
+
+Chinese hamster ovary cells, 112
+
+chloroplast, 62, 63
+
+chromophore, 81
+
+citizen panel, 146
+
+climate change, 112, 117
+
+clocks, 39
+
+cloning, 76, 151, 152
+
+closed-loop system, 37
+
+closed-source parts registries, 55
+
+Clotho, 29
+
+ClothoCAD, 56, 57
+
+co-transformation, 66
+
+coarse-grained models, 94
+
+coding strand, 13
+
+codon optimisation, 45, 113
+
+codon usage, 9, 113
+
+codons, 8, 76
+
+colorimetry, 48
+
+commensal soil organisms, 117
+
+commercialisation, 136
+
+commodity chemicals, 113
+
+communication layer, 24, 25
+
+comparative approach, 64, 65
+
+compartmentalisation, 62
+
+complementarity, 2, 69
+
+complementary, 4, 13
+
+complexity, 1, 12
+
+composable, 91
+
+---
+
+Index
+
+173
+
+Computer-Aided Design (CAD), 28, 56, 91, 92
+
+conjugation, 123
+
+consensus conference, 146
+
+consensus sequence, 16
+
+constitutive promoters, 75, 81
+
+contamination, 110
+
+context dependence, 16
+
+controlling, 12
+
+cooperativity, 15
+
+counters, 40, 85
+
+creating life, 131
+
+‘creating’ new life, 141
+
+crops, 117
+
+crosstalk, 39
+
+cyanobacterium, 116, 121
+
+cybernetics, 31
+
+cytoplasm, 63
+
+cytosine, 2
+
+D. melanogaster, 42
+
+database layer, 24
+
+datasheet, 22, 26, 27, 73, 98, 111
+
+de novo, 56, 133
+
+debugging, 104
+
+decay rates, 90
+
+degeneracy, 9
+
+degradation, 17, 75
+
+delay, 39, 84
+
+deletion, 65
+
+denaturation of the DNA, 4
+
+deoxyribonucleotide triphosphates (dNTPs), 4
+
+design, 91
+
+design cycle, 19, 26, 73
+
+design specifications, 91
+
+‘designer’ cells, 58, 68
+
+designer organisms, 58
+
+deterministic, 96
+
+diffusion coefficient, 95
+
+dimerisation, 81
+
+directed evolution, 69
+
+division, 69
+
+division of labour, 123
+
+DNA (deoxyribonucleic acid), 1, 61, 151
+
+DNA assembly, 28
+
+DNA microarrays, 46
+
+DNA oligonucleotides, 4
+
+DNA polymerase, 4, 64, 151
+
+DNA repair, 44, 66, 68
+
+DNA replication, 2, 64
+
+DNA sequencing, 43
+
+DNA structure, 1
+
+DNA synthesis, 44, 126
+
+DNA template, 151
+
+DNA-editing enzymes, 47
+
+do-it-yourself biology, 135
+
+double-helical, 1, 2
+
+double-stranded, 4
+
+downstream, 86
+
+dual-use, 133
+
+DuPont, 113
+
+dynamic perturbations, 101
+
+E. chromi, 125
+
+E. coli, 13, 51, 62, 89, 112, 113, 115, 120, 121, 124, 143
+
+E. coli K-12, 42
+
+E. coli prokaryote, 12
+
+E. coli σ factors, 14
+
+Eau d’e coli, 122
+
+Ebola virus, 133
+
+edge detection, 116
+
+edge detector, 85
+
+electron microscopy, 12
+
+emergent behaviour, 1
+
+enabling technologies, 41
+
+Endy, Drew, 119
+
+energy crops, 143
+
+energy density, 113
+
+energy source, 4
+
+engineer, 49
+
+engineering, 19
+
+engineering approach, 68
+
+engineering biology, 58
+
+engineering design cycle, 91
+
+engineering principle, 1, 123
+
+engineering proteins, 12
+
+environment, 127, 131
+
+environment sensor, 127
+
+environmental, 131
+
+environmental release, 127
+
+enzymes, 64, 76
+
+essential genes, 64
+
+ethanol, 89, 112
+
+ethylene, 113
+
+eukaryotes, 12, 13
+
+evolution, 13, 17, 50, 62, 68, 69
+
+evolutionary pressures, 1
+
+exonuclease activity, 6
+
+---
+
+174
+
+Synthetic Biology — A Primer
+
+exponential growth phase, 123
+
+expression levels, 49
+
+extremophile, 4
+
+fail-safe switches, 110
+
+Fast Fourier Transform (FFT), 34, 35
+
+FBI, 121
+
+feedback, 17, 37
+
+feedback loop, 31, 81
+
+fermentation, 110, 112
+
+first ATG (methionine) codon, 16
+
+flow cytometry, 48
+
+flow of information, 12
+
+fluorescence, 76, 126
+
+fluorescence detectors, 127
+
+fluorescence microscopy, 49
+
+fluorescent dye, 43, 155
+
+fluorescent molecules, 49
+
+fluorescent probes, 156
+
+fluorescent proteins, 49, 50, 76, 116
+
+fluorimetry, 48
+
+fluorophores, 49
+
+FlyBase, 43
+
+food security, 143
+
+forward design, 114
+
+forward-engineering, 89–91
+
+foundational technologies, 41
+
+Fourier, Joseph, 30, 34
+
+Fourier series, 32
+
+Fourier transform, 34
+
+frames, 8, 9
+
+Frankenstein’s monster, 139
+
+free energy difference, 16
+
+frequency domain, 34
+
+frequency response, 38
+
+fuels, 68, 112
+
+functional groups, 2, 10
+
+gates, 39
+
+GEC programming language, 103
+
+gel electrophoresis, 43, 154
+
+gene circuit, 20, 28, 116
+
+gene expression, 80, 116
+
+gene synthesis, 44, 56
+
+genetic code, 8
+
+genetics, 41
+
+GenoCAD, 29
+
+genome projects, 43
+
+genome reduction, 63
+
+genome sequences, 42
+
+genome synthesis, 66, 138
+
+genome transplantation, 67
+
+genomics, 46
+
+global inequality, 142
+
+global inequity, 131
+
+global sensitivity analysis, 101
+
+glucose, 89, 112, 115
+
+‘gold standard’ datasheet, 98
+
+granularity, 89
+
+Graphical User Interfaces (GUIs), 92
+
+Green Fluorescent Protein (GFP), 49, 76, 126
+
+growth cycle, 123
+
+guanine, 2
+
+hairpins, 76
+
+half-life, 16, 17
+
+heavy metal, 117
+
+heavy-metal pollutants, 126
+
+hierarchical structure, 73
+
+high-throughput techniques, 46
+
+Hill coefficient, 30, 95
+
+Hill kinetic function, 29
+
+Hodgkinia cicadicola, 62
+
+holoenzyme, 13
+
+homologous sequences, 16
+
+hop-count system, 123
+
+Human Genome Project, 19
+
+human practices, 121, 127
+
+hydrogen bond, 2
+
+hydrogen bond donors, 2
+
+hygroscopic, 113
+
+hypoxia, 115
+
+Imperial College London, 23, 55, 127
+
+implementation, 20, 90
+
+independent activity period (IAP), 119
+
+inducer, 29, 124
+
+information flow, 1, 6
+
+information storage, 1
+
+input/output systems, 35
+
+in silico, 43, 46, 90, 125
+
+Institute for OneWorld Health (iOWH), 143
+
+insulators, 86
+
+insulin, 10, 112
+
+intellectual property (IP), 133, 136
+
+interface (HTML) layer, 24, 25
+
+intergenic regions, 86
+
+International Genetically Engineered Machine
+
+(iGEM), 22, 48, 54, 116, 119
+
+---
+
+Index
+
+175
+
+International Genetically Engineered Machine (iGEM) competition, 133, 137
+
+International Open Facility Advancing Biotechnology (BIOFAB), 99, 138
+
+invasin, 115
+
+inverter, 29, 77
+
+inverters (NAND gates), 39
+
+in vitro, 4
+
+In Vitro Fertilisation (IVF), 141
+
+in vitro life, 61
+
+in vitro transcription, 73
+
+in vivo, 90
+
+isoamyl acetate, 123
+
+isocaudomers, 47
+
+J. Craig Venter Institute (JCVI), 57, 58, 66, 141
+
+Jamboree, 119
+
+judge, 121
+
+keratin, 9
+
+Kevlar, 113
+
+kill-switch, 127
+
+kinetic constant, 30
+
+kit, 120
+
+Knight, Tom, 47, 119, 153
+
+knock-out, 65
+
+Kozak consensus sequence, 75
+
+LacUV5, 26
+
+LacZ, 76, 121
+
+lag phase, 84
+
+Langevin approximation, 95
+
+Laplace approach, 30
+
+Laplace Domain, 30, 36
+
+Laplace, Pierre-Simon, 30
+
+Laplace transform, 30, 37
+
+Laplace transform operator, 30, 38
+
+Laplacian, 95
+
+ligase, 44, 152
+
+light control devices, 81
+
+light-sensing, 122
+
+Likelihood Ratio Test (LRT), 99
+
+lipases, 112
+
+liquid-handling robots, 92
+
+lithographic techniques, 116, 121, 122
+
+local sensitivity analysis, 101
+
+logic gate, 20, 77, 122
+
+logical devices, 39
+
+Lotka–Volterra equations, 40
+
+Lotka–Volterra oscillators, 84
+
+luminescence, 49
+
+luminometry, 48
+
+lycopene, 126
+
+M. capricolum, 63
+
+M. genitalium, 63
+
+M. laboratorium, 65, 68
+
+M. mycoides, 63
+
+M. pneumoniae, 63
+
+master equations, 54
+
+MATCONT, 101
+
+Matlab, 125
+
+messenger molecule, 6, 7
+
+messenger RNA (mRNA), 13, 16, 29, 51, 59, 75
+
+metabolic burden, 87
+
+metabolic engineering, 69
+
+metadata, 22, 25
+
+metal extraction, 117
+
+metazoan, 42
+
+methyl salicylate, 123
+
+mevalonate pathway, 114
+
+microarray, 158
+
+microarray DNA, 56
+
+microbial cell factories, 111
+
+microbiology, 41
+
+Micrococcus luteus, 143
+
+microfluidics, 57
+
+microscopy, 48
+
+mineralise, 116
+
+miniaturisation, 57
+
+minimal cells, 61, 131
+
+mismatched, 6
+
+MIT, 47, 119, 122
+
+model, 25, 36
+
+model parameters, 90
+
+model refinement, 104
+
+model repositories, 97
+
+model selection, 99
+
+model structure, 90
+
+model-based design, 48
+
+modelling, 16, 20, 26, 29, 47, 52, 89, 124
+
+models, 94, 96
+
+modular, 127
+
+modular composability, 51
+
+modularity, 19
+
+molecular dynamics, 93
+
+molecular fluctuations, 102
+
+motors, 9
+
+mutation, 49, 50
+
+---
+
+176
+
+Synthetic Biology — A Primer
+
+Mycoplasma mycoides, 141
+
+myosin, 9
+
+Nanoarchaeum equitans, 62
+
+NASA, 121
+
+natural selection, 1
+
+negated gates, 78
+
+negative feedback loop, 82, 84
+
+negative regulators, 75, 84
+
+network, 83
+
+noise, 81
+
+non-essential genes, 65
+
+NOR gate, 124
+
+Northern blot, 157
+
+NOT (Inverter), 39, 78, 85
+
+nuclear magnetic resonance (NMR), 12
+
+nucleotides, 2
+
+nucleus, 63
+
+numerical continuation analysis, 101
+
+numerical simulations, 100, 102
+
+Nyquist–Shannon sampling criterion, 32
+
+oligonucleotide, 44, 57
+
+open online databases, 43
+
+open reading frame (ORF), 13
+
+open source, 43, 55
+
+OpenWetWare.org, 43, 119, 134
+
+operator, 74, 75
+
+operon, 13, 82
+
+optical sensors, 109
+
+OR, 39, 78
+
+Ordinary Differential Equations (ODEs), 29, 30, 54, 94
+
+Organism/Machine Divide, 139
+
+origins of life, 69
+
+orthogonality, 39, 40, 59
+
+oscillator, 39, 73, 76, 83
+
+Ostreococcus tauri, 62, 63
+
+outreach, 120
+
+ownership, 131, 136
+
+palindromic, 76
+
+parameter estimation, 52
+
+parameter optimisation, 99
+
+parameter sensitivity analysis, 101
+
+parameters, 16, 25, 36, 83, 90
+
+parametric equations, 90
+
+Parasight Project, 127, 128
+
+Parsimony principle, 90, 99, 166
+
+part characterisation, 19, 22
+
+part libraries, 53
+
+Partial Differential Equations (PDEs), 94
+
+parts, 19, 20, 73, 98
+
+parts registries, 54
+
+partsregistry.org, 43, 54
+
+patent, 136
+
+patent thickets, 137
+
+pattern formation, 115, 121
+
+patterning, 115
+
+PCR amplification, 44
+
+Peking University team, 123, 124
+
+Pelagibacter ubique, 63
+
+peptide bond, 11
+
+peptide signalling system, 127
+
+performance metrics, 100
+
+personalised medicine, 110, 115
+
+pharmaceutical synthesis, 110
+
+phosphate, 2
+
+phosphoramidite chemistry, 44
+
+phosphorylation, 81
+
+photofilm, 121, 122
+
+photoreceptors, 81
+
+photorhodopsin, 116
+
+pigment, 121, 126, 127
+
+pilot plants, 111
+
+platform chemicals, 113
+
+platform technology, 19, 28
+
+Playing God, 139–142
+
+polarity of DNA, 13
+
+poliovirus, 66, 133
+
+pollution, 116
+
+polyacrylamide, 154
+
+Polymerase Chain Reaction (PCR), 4, 6, 44, 45, 47, 126, 151
+
+post-testing model, 52
+
+poster, 121
+
+predator–prey dynamics, 40
+
+predictive design, 16
+
+presentation, 121
+
+prevention, 114
+
+primary antibody, 159
+
+primary structure, 11
+
+primase, 4
+
+primers, 44, 151
+
+prions, 61
+
+production, 90
+
+progressive overlap extension PCR, 44
+
+prokaryotes, 13
+
+proofreading domains, 6
+
+propanol, 113
+
+propylene, 113
+
+---
+
+Index
+
+177
+
+proteases, 112, 127
+
+protein, 61
+
+protein coding sequence, 20, 74, 76
+
+protein folding, 76
+
+protein generators, 77, 85
+
+protein overproduction, 112
+
+protein-based therapeutics, 112
+
+proteins, 6, 9, 49
+
+protocell, 138
+
+prototype, 129
+
+Pseudomonas, 117
+
+public acceptance, 110, 117
+
+public benefit, 110
+
+public health, 131
+
+public opposition, 110
+
+public value, 131, 142
+
+push-on-push-off switch system, 123
+
+Quantitative PCR (Real-Time PCR), 157
+
+quorum-sensing, 70, 71, 80, 81, 115, 116, 125
+
+race hazards, 40
+
+RBS calculator, 16
+
+RBS matching, 86
+
+reaction–diffusion equation, 95
+
+receiver, 77, 80
+
+receiver cells, 116
+
+red fluorescent protein (RFP), 49
+
+red light, 116
+
+reduced genome, 68
+
+reductionist approach, 64
+
+redundancy, 8
+
+reference elements, 50
+
+Registry of Standard Biological Parts, 19, 22, 23, 26, 54, 55, 119, 120, 137–138
+
+regulatory elements, 6
+
+release, 110, 127, 132
+
+repair, 2
+
+replicase, 69
+
+reporter genes, 126
+
+reporters, 76, 77
+
+repressilator, 84, 95, 119
+
+repressors, 14, 75, 76
+
+resolution, 92
+
+response to light, 122
+
+restriction enzyme, 47, 153
+
+Restriction Enzyme Cloning, 152
+
+reusability, 90
+
+reverse transcription, 157, 158
+
+Rhizobium etli, 126
+
+ribosomal, 64
+
+ribosome, 7, 59, 69
+
+ribosome binding site (RBS), 20, 16, 56, 74, 75
+
+riboswitches, 17
+
+ribozyme, 17, 69
+
+RNA, 6, 7, 56, 61
+
+RNA motifs, 54
+
+RNA polymerase, 13, 75, 82
+
+RNA primer, 4
+
+RNA regulation, 17
+
+RNA self-replicators, 69
+
+RNA world, 17, 69
+
+RNA-dependent, 69
+
+robustness, 1, 82, 91
+
+robustness analysis, 92
+
+Saccharomyces cerevisiae, 42, 62, 114
+
+Saccharomyces Genome Database (SGD), 43
+
+sampling interval, 32
+
+sampling theory, 32
+
+Sanger sequencing, 43
+
+SBML-SAT, 101
+
+scale-up, 110, 114
+
+‘scar’ sequences, 48
+
+Schistosoma, 127
+
+second- and third-generation sequencing, 44
+
+secondary metabolism, 114
+
+secondary structure, 16, 76
+
+secondary structure of the mRNA, 86
+
+selection, 49
+
+self-conservation, 141
+
+self-construction, 141
+
+self-regulation, 142
+
+self-repair, 142
+
+self-replicating, 69, 141
+
+sender, 85, 116
+
+sensitivity tuners, 126
+
+sensor, 38, 110, 112
+
+SensSB, 101
+
+sequencing, 19, 132, 155
+
+Shannon, Claude, 31, 32
+
+Shine–Dalgarno sequence, 8, 75
+
+shotgun sequencing, 43
+
+sigma (σ) factors, 13
+
+sigmoidal, 15
+
+signal theory, 31
+
+signalling, 31, 40, 115
+
+simple pole, 38
+
+single-stranded DNA, 4, 158
+
+single-stranded pieces of DNA, 151
+
+---
+
+178
+
+Synthetic Biology — A Primer
+
+siRNA (small interfering RNA), 17
+
+smart therapeutics, 115
+
+SNP Consortium, 138
+
+sodium dodecyl sulphate (SDS), 154
+
+soil bacteria, 68
+
+solid-phase synthesis, 44
+
+Southern blot, 156
+
+Spanish Flu virus, 134
+
+specialty chemicals, 114
+
+specification, 20, 110
+
+spider silk, 9, 113
+
+spores, 127
+
+standard DNA assembly, 47
+
+standard measurement, 48
+
+standardisation, 19, 50
+
+standards, 47
+
+starch grain, 63
+
+starch granule, 62
+
+start codon (ATG), 76
+
+stationary phase, 123
+
+steady-state, 75
+
+stochastic, 96
+
+Stochastic Differential Equations (SDEs), 54, 94
+
+stop codons, 9, 76
+
+strands, 2
+
+strength of a synthetic RBS site, 17
+
+strength of the promoter, 75
+
+strength of the RBS, 16
+
+structural, 101
+
+sustainable, 116
+
+switch, 13, 15, 29, 40, 76, 82
+
+switchgrass, 143
+
+SYNBIOSAFE, 135
+
+Synechocystis cyanobacteria, 68
+
+synthesis of DNA, 4
+
+synthetic biology, 1, 12, 16, 19
+
+synthetic biology design cycle, 20, 21
+
+Synthetic Biology Information System (SynBIS), 23, 24
+
+synthetic cells, 61
+
+synthetic chromosome, 58
+
+synthetic genome, 63, 137
+
+synthetic life, 58, 61, 65
+
+system, 19, 20, 73, 116
+
+system fabrication, 93
+
+systematic design, 19, 26
+
+systems and control theory, 30, 35, 91
+
+systems biology, 46
+
+Systems Biology Markup Language (SBML), 97
+
+systems theory, 31
+
+Taq, 4
+
+temperature cycling, 4
+
+template, 2
+
+template strand, 13
+
+temporal differentiation, 123
+
+terminator, 20, 74, 76
+
+TEV, 127
+
+Texas Instruments data book, 39
+
+therapeutic proteins, 112
+
+thermal cycling, 4
+
+thermodynamically balanced inside-out PCR, 44
+
+thermophilic organisms, 110
+
+thymine, 2
+
+time domain, 30, 34
+
+time evolution, 31
+
+time series, 34
+
+timing functions, 39
+
+TinkerCell, 29
+
+tissue engineering, 115, 116
+
+toggle switch, 82, 95, 124
+
+top-down, 47, 116, 122
+
+tracks, 121
+
+trade adaptation, 144
+
+transcription, 29, 49, 64, 75
+
+transcription factor, 10, 14, 29, 64, 81
+
+transcription initiation site, 13
+
+transcriptional, 13
+
+transcriptional regulatory device, 29
+
+transfection, 152
+
+transfer function, 36
+
+transfer RNA (tRNA), 9, 10, 17, 45, 64, 161, 168, 169
+
+transformation, 152
+
+translation, 51, 64, 73
+
+transposon, 61, 68
+
+triphosphate, 4
+
+tRNA synthetase enzymes, 9
+
+Tropical Disease Initiative (TDI), 138
+
+TTL Data Book, 48, 98
+
+two-component, 116
+
+two-component systems, 64, 121
+
+UCSF, 121
+
+upstream, 86
+
+uracil, 7, 8
+
+---
+
+Index
+
+179
+
+UT-Austin, 121
+
+UV light, 124
+
+UV responsive genes, 124
+
+validation, 111
+
+value-added products, 112
+
+vector, 152
+
+Venter, J. Craig, 43, 137
+
+vesicles, 69
+
+Vibrio cholerae, 116
+
+Vibrio harveyi, 70
+
+viruses, 61
+
+watermarks (WM), 67
+
+wave function, 83
+
+waveforms, 31
+
+Western blot, 159
+
+Wiener, Norbert, 31
+
+Wiener process, 95
+
+wintergreen oil, 123
+
+World Health Organization, 143
+
+X-ray crystallography, 12
+
+xenobiotics, 117
+
+XPPAUT, 101
+
+XylE, 127
+
+Yersinia pseudotuberculosis, 115

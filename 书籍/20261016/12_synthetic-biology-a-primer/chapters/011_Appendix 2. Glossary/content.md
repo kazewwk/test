@@ -1,0 +1,343 @@
+# Appendix 2. Glossary
+
+原始 PDF 第 176–185 页。
+
+# APPENDIX 2 Glossary
+
+**Abstraction:** A process where higher concepts are built from combining concepts that themselves have been founded on first principles. The purpose of abstraction is to hide unnecessary details and manage complexity by allowing individuals to work at any one level of complexity without regard for the details that define other levels, while simultaneously allowing for the principled exchange of limited information across levels.
+
+**Activator:** A protein which binds to DNA in the region of the promoter (usually upstream) and aids in establishing transcription.
+
+**Akaike Information Criterion (AIC):** A criterion for model selection among a class of parametric models with different numbers of parameters. Loosely speaking theAIC provides a quantitative measure of the compromise between accuracy and complexity of the model.
+
+**Amino acid:** Building block of proteins.
+
+**Amplitude:** The height of the peak obtained in an oscillation.
+
+**AND gate:** A logic gate where all inputs must be present to produce the output.
+
+**Anticodon:** The portion of the tRNA that base pairs with the mRNA codon to position the correct amino acid for protein synthesis.
+
+**Antisense (strand):** The complementary strand to the sense strand. It does not actually encode for a gene, but its sequence is determined through base pairing.
+
+**Base pair:** A single nucleotide in a macromolecule. The same term is sometimes used for the actual physical hydrogen bonding between two nucleic acid strands.
+
+**Bayesian Information Criterion (BIC):** A criterion for model selection among a class of parametric models with different numbers of parameters. It is a variant of the Akaike Information Criterion, whose development is based on a Bayesian argument.
+
+**Biobricks**<strong><sup>TM</sup></strong>**:** DNA biological parts with standardised prefix and suffix DNA sequences that allow them to be routinely assembled.
+
+**Bioerror:** Accidental release of biological organisms.
+
+161
+
+---
+
+162
+
+Synthetic Biology — A Primer
+
+**Biohacking:** Synthetic biology experiments by non-experts, analogous to computer hacking.
+
+**Biosafety:** Measures to protect against accidental exposure to biological organisms.
+
+**Biosecurity:** Measures to counteract bioterrorism.
+
+**Bioterrorism:** The deliberate release of biological organisms with the intent to cause harm.
+
+**Bottom-up:** Method of engineering in which a system is built up from scratch beginning with basic elements or building blocks.
+
+**Capillary electrophoresis:** A fast, miniaturised method for gel electrophoresis where hundreds of thin capillary tubes contain gel, replacing the need for large slab gels.
+
+**Central dogma:** The central tenet of information flow in molecular biology that DNA is transcribed to RNA which is translated into proteins.
+
+**Chassis:** A chassis is the underlying biology in which a device or system is implemented. This can be a living organism (host) or an in vitro system for transcription and translation.
+
+**Chemical master equation:** Differential equation describing the time evolution of the probability of a system to occupy each one of a discrete set of possible chemical states.
+
+**Chimera:** A fusion of genes from two different organisms.
+
+**Coarse-grained models:** A description of a system which regards large subcomponents without giving details about their internal description. On the contrary, **fine-grained models** additionally provide details of the smaller components of which the larger ones are composed.
+
+**Coding Region:** See **open reading frame**.
+
+**Codon optimisation:** For most amino acids there are multiple codons. Different codons for the same amino acid can have a variety of efficiencies during translation of an mRNA into a protein, and these efficiencies vary across nature. Efficiency of translation can be improved by selecting the optimal codons for the chassis cell.
+
+**Codons:** In a protein-coding sequence each amino acid of the protein is encoded by three bases of mRNA, which are transcribed from the equivalent three bases of DNA in the gene.
+
+**Colourimetry:** Quantitative measurement of a colour change.
+
+**Commodity (chemicals):** Molecules that are made in very large scale and usually sold for a very small profit per unit, but are sold in such volume that the process is still economical.
+
+**Complement/Complementarity:** The ‘opposite’ strand of nucleic acid whose sequence is determined by base pairing with the sense strand.
+
+**Composable design models:** Models useful for design purposes that can be easily arranged or composed together to form super-models of higher complexity.
+
+**Computer-Aided Design (CAD):** The use of computer technology for the process of design and design-documentation. CAD software or environments provide the user with input-tools for the purpose of streamlining design processes.
+
+---
+
+Glossary
+
+163
+
+**Consensus:** The most common nucleic acid base or amino acid in a particular position when a group of sequences are compared.
+
+**Conserved (sequence):** Areas of nucleic acid or protein that do not vary between organisms.
+
+**Constitutive (promoter):** A promoter from which transcription is constantly taking place.
+
+**Context dependence:** The idea that the nucleic acid sequence in the immediate vicinity of the parts can affect its function.
+
+**Degenerate (code):** The idea that since there are more triplet codons than amino acids required, some amino acids will be encoded by more than one codon.
+
+**Deterministic model:** Mathematical model in which outcomes are precisely determined through known relationships among states and events, without any room for random variation. In a deterministic model, every set of variable states is uniquely determined by parameters in the model and by sets of previous states of these variables. Therefore, deterministic models perform the same way for a given set of initial conditions.
+
+**Device:** A device is a collection of parts that perform a higher order function, usually human-defined.
+
+**DNA:** Deoxyribonucleic acid. A biological macromolecule that encodes the information necessary for an organism to function. Consists of a deoxyribose (sugar)-phosphate backbone and four bases: Adenine, Thymine, Cytosine and Guanine.
+
+**Downstream (DNA):** Part of the DNA that is closer to the 3’ end of the strand than the reference sequence.
+
+**Dual use:** The idea that scientific discoveries can also be used for other, unintended, purposes such as military applications by rogue states.
+
+**Eukaryote:** Cells that contain a true nucleus and, often, other compartments (organelles) with specific functions.
+
+**Extrinsic noise:** Noise due to variability in the amount or state of biochemical species external to the considered biochemical process, e.g. transcription or translation.
+
+**Feedback:** A phenomenon whereby the output of a circuit influences the future performance of that circuit. Feedback can either be positive or negative.
+
+**Fine chemicals:** Speciality chemicals, often with high retail value, which are not made on a very large scale. For example, most pharmaceutical drugs are fine chemicals.
+
+**Flow cytometry:** Fast measurement of colour, fluorescence and luminescence from thousands of single cells, achieved by passing cells in a thin capillary tube at high speed past sensitive detectors.
+
+**Fluorometry:** Quantitative measurement of light emitted in a fluorescence reaction.
+
+**Fluorophores:** A molecule that fluoresces by emitting light after being stimulated by a different wavelength of light.
+
+---
+
+164
+
+Synthetic Biology — A Primer
+
+## Frequency: See periodicity.
+
+**Functional genomics:** The use of genome sequence data to describe molecular biology functions in cells, such as transcription regulation.
+
+**Gene synthesis:** The construction of double-stranded DNA over 200 bp long from chemicals.
+
+**Genome Engineering:** The rational re-writing, editing or complete novel design of whole genomes.
+
+**Granularity:** The scale or level of detail present in a mathematical model (see also **coarsegrained**, above).
+
+**Graphical User Interface (GUI):** User interface that allows users to interact with programs in more ways than typing. The actions are usually performed through direct manipulation of the graphical elements such as clicking on an icon.
+
+**Heterologous:** Non-native, coming from a different organism.
+
+**High-throughput techniques:** Experimental methods that process hundreds or thousands of samples in parallel, rather than one at a time.
+
+**High-value added:** Molecules which can be sold for much more than the cost of the starting materials.
+
+**Holoenzyme:** A complete enzyme that contains all of its constituent parts and is, therefore, functional.
+
+**Human practices:** A field which considers the societal aspects of technology including the impact on the end-user.
+
+**Identifiability:** Property which a model must satisfy in order for inference to be possible. A model is **identifiable** if it is theoretically possible to learn the true value of this model’s underlying parameter after obtaining an infinite number of observations from it. Usually the model is identifiable only under certain technical restrictions, in which case the set of these requirements is called the **identification conditions**.
+
+**iGEM:** The International Genetically Engineering Machine synthetic biology competition in which teams of students design, model, implement and then present a new synthetic biology system or circuit at an organised event (Jamboree).
+
+**In silico:** Performed on computer or via computer simulation.
+
+**In vitro:** Performed not in a living organism but in a controlled environment, such as in a test tube or Petri dish.
+
+**In vivo:** Performed in live cells or living organisms.
+
+**Inducible (Promoter):** A common term for a regulated promoter where the repressor is present in sufficient numbers that the default state of the promoter is ‘off’. When a small
+
+---
+
+Glossary
+
+165
+
+molecule is added to titrate the repressor away from its binding site transcription can then proceed.
+
+**Intellectual property:** Term for an invention or an idea which is new and therefore qualifies for patent, copyright or trademark protection.
+
+**Intergenic:** Region between genes.
+
+**Intrinsic noise:** Noise due to the inherent stochasticity of biochemical processes such as transcription and translation.
+
+**Inverter:** Another term for **NOT gate** (see below).
+
+**Isocaudomers:** Pairs of restriction enzymes that have slightly different recognition sequences but the DNA they cut can still link together naturally because of compatible overhanging ends.
+
+**Likelihood Ratio Test (LRT):** A test to compare the fit of two models, one of which is nested within the other. This often occurs when testing whether a simplifying assumption for a model is valid, as when two or more model parameters are assumed to be related.
+
+**Logic gate:** A device that relies on multiple inputs to control a single output, the basis of modern computing.
+
+**Luminescence:** The light-emitting property of a molecule that can convert a chemical reaction into one or more photons.
+
+**Luminometry:** Quantitative measurement of a light-emitting reaction.
+
+**Microbe:** A single-celled, microscopic organism.
+
+**Microfluidics:** The precise control and manipulation of fluids and reactions in tubes and vessels typically micrometres in size.
+
+**Microscopy:** The analysis and measurement of cells using optical microscopes.
+
+**Minimal cells:** Cell systems specifically designed and engineered to exist with a minimal amount of genetic information.
+
+**Model:** A simplified or idealised description or conception of a particular system, situation or process, often in mathematical terms, that is put forward as a basis for theoretical or empirical understanding, or for calculations, predictions, etc.
+
+**Modular/modularity:** Modularity is a property of a system which allows individual parts or devices to be exchanged without affecting the function of the parts or devices which remain untouched.
+
+**mRNA:** Messenger RNA is produced from a gene by transcription. It is recognised and translated by a ribosome to create the protein encoded by that gene.
+
+**mRNA lifetime:** The lifetime of an mRNA is a measure of the amount of time the mRNA exists in a cell after it has been produced. During this time it can repeatedly be translated to make many copies of the protein it encodes.
+
+---
+
+166
+
+Synthetic Biology — A Primer
+
+**Mutation and selection:** The main method of natural evolution and directed evolution, where mutations occur in DNA sequence and lead to changes in cell behaviour that can be selected for.
+
+**NAND Gate:** Contraction of **NOT** and **AND**, a NAND gate produces an output signal except for in the presence of two inputs. It shows the opposite behaviour of an AND gate.
+
+**NOR Gate:** Contraction of **NOT** and **OR**, a NOR gate produces an output signal only when both inputs are absent, i.e. if NOT A NOR B, then ‘ON’, else ‘OFF’.
+
+**NOT Gate:** Also called an inverter. A NOT gate inverts a signal. In the presence of an input signal it does not produce an output. However, in the absence of a signal it does produce an output.
+
+**Open reading frame:** See also **protein coding sequence**. A DNA sequence that contains the necessary cues for translation of a protein.
+
+**Open source:** An idea borrowed from software engineering, where the ‘code’ should be shared among users in order to promote innovation.
+
+**Operator:** A DNA sequence that is recognised by a repressor or activator of transcription.
+
+**Operon:** A set of open reading frames, often part of a single metabolic pathway, transcribed from a single promoter.
+
+**OR gate:** A logic gate which produces an output signal if one of the input signals is present, i.e. if A OR B, then ‘ON’, else ‘OFF’.
+
+**Ordinary differential equation:** A relation that contains functions of only one independent variable (typically time), and one or more of their derivatives with respect to that variable.
+
+**Orthogonal/orthogonality:** When two or more similar systems are engineered so that they cannot interact with each other.
+
+**Palindrome (Palindromic):** A sequence that is the same when read from left to right on the sense strand or right to left on the antisense strand (for example effect that complementary base pairs within a single strand can hydrogen bond, forming a hairpin structure.
+
+**Parsimony or Occam’s Razor Principle:** Principle which generally recommends selecting the competing hypothesis that makes the fewest new assumptions when the hypotheses are equal in other respects. The Razor is a principle that suggests we should tend towards simpler theories until we can trade some simplicity for increased explanatory power/accurateness.
+
+**Part:** A piece of DNA which encodes a biological function. Examples include a promoter, a ribosome binding site or a gene-coding region.
+
+**Partial differential equation:** A relation involving an unknown function (or functions) of several independent variables (typically time and space) and their partial derivatives with respect to those variables.
+
+---
+
+Glossary
+
+167
+
+**Periodicity:** The length of time elapsed from peak to peak in an oscillatory system. Also called the **frequency**.
+
+**Platform chemicals:** Chemical building blocks that serve as the starting point for a variety of useful molecules.
+
+**Polymerase chain reaction (PCR) methods:** Molecular biology techniques that use the polymerase chain reaction (PCR) to amplify, modify and link together DNA sequences (see also Appendix 1).
+
+**Primer (DNA or RNA):**A short piece of DNA or RNA that directs the site of DNA synthesis. RNA primers occur naturally during replication, whilst the process of polymerase chain reaction relies on purchased DNA primers to ensure the correct sequence is copied.
+
+**Prion:** A self-replicating protein.
+
+**Prokaryote:** A simple cell that does not contain a nucleus or other organelles.
+
+**Promoter:** A part that encodes for gene transcription (production of messenger RNA). A promoter will often include regulatory binding sites for repressors or activators (also known as **operators**).
+
+**Protein coding sequence:** DNA sequence, beginning with a start codon and ending with a stop codon, which encodes for a protein of interest such as a repressor or an enzyme. See also **open reading frame**.
+
+**Receiver:** A device that responds to a signal from another cell by transcribing one or more genes as part of coordinating population level behaviour.
+
+**Regulatory regions:** Regions of DNA that do not encode a protein but instead contain information that directs when, where and how much of a protein needs to be produced.
+
+**Replication:** The process of copying DNA.
+
+**Reporter:** A protein which is used as a biological readout by producing a visual output such as fluorescent or colour.
+
+**Repressilator:** Oscillator constructed from an odd number of inverters coupled together.
+
+**Repressor:** A protein which binds to DNA in the region of a promoter and blocks transcription.
+
+**Restriction enzymes:** Proteins purified from bacteria that recognise specific DNA sequences and cut the DNA backbone at these sites.
+
+**Ribosome:** Cellular machinery for protein synthesis that catalyses the formation of the actual peptide bond.
+
+**Ribosome binding site (RBS):** Also known as Shine–Delgarno sequence in prokaryotes or Kozak consensus sequence in eukaryotes. A messenger RNA sequence that is recognised by ribosomes and serves to initiate protein synthesis.
+
+---
+
+168
+
+Synthetic Biology — A Primer
+
+**RNA:** Ribonucleic acid. A biological macromolecule consisting of a sugar-phosphate backbone and four bases: Adenine, Uracil, Cytosine and Guanine. RNA has many functions in a cell. Messenger RNA (see also **mRNA**) is the product of transcription and carries the information to produce proteins within a cell. Transfer RNA (see also **tRNA**) carries amino acids to the correct site for protein synthesis. There are also small RNA molecules (microRNAs) that have been discovered to control cellular processes.
+
+**Robotic automation:** The use of programmable mechanics, such as robot arms, to automate routine laboratory experiments.
+
+**Sanger sequencing:** A method to sequence DNA developed partly by Fred Sanger in 1977. The method relies on early termination of DNA replication in vitro, followed by electrophoresis on gels to resolve different sized DNA fragments that are used to infer the sequence (see also Appendix 1).
+
+**Scale-up:** The act of moving a manufacturing process from the laboratory into larger reactors.
+
+**Scar sequences:** Short DNA sequences that remain at part junctions when two DNA biological parts are assembled together using certain techniques.
+
+**Second and third generation sequencing:** New technologies for DNA sequencing that have replaced Sanger sequencing. Several of these methods involve hundreds of thousands of reactions occurring in parallel on specialised chips.
+
+**Sender:** A device that synthesises and secretes a chemical signal that is sent to other cells in a population in order to coordinate behaviour.
+
+**Sense (strand):** The strand of DNA that contains an open reading frame.
+
+**Shotgun sequencing:** A strategy for sequencing projects where large regions of DNA are broken into many small overlapping regions that can easily be sequenced and then pieced back together.
+
+**Solid-phase oligonucleotide synthesis:** A chemical method to custom-make singlestranded DNA pieces fewer than 200 bases long.
+
+**Standard/standardisation:** Agreed upon measures or designs for parts that can be used by the whole community so that parts are interchangeable.
+
+**Statistical moments:** Loosely speaking, a quantitative measure of the shape of a set of data points. The most used statistical moments are the first two moments called the mean and the variance respectively.
+
+**Stochastic differential equation:** Differential equation in which one or more of the terms is a stochastic process, thus resulting in a solution which is itself a stochastic process. Typically, SDEs incorporate white noise which can be thought of as the derivative of Brownian motion (or the Wiener process); other types of random fluctuations are also possible, such as jump processes.
+
+---
+
+Glossary
+
+169
+
+**Stochastic model:** Mathematical model involving random variable(s), i.e. in which outcomes are not uniquely determined through a known relationship among states and events. Stochastic models are typically used to estimate probability distributions of potential outcomes.
+
+**Switch:** A triggerable device that alters the behaviour of cells in response to a signal.
+
+**Synthetic life:** Self-replicating living systems that have been engineered from first principles.
+
+**System:** A system is a collection of devices that lead to a desired (usually useful) behaviour.
+
+**Systems biology:** Using mathematical analysis of large experimental datasets to uncover and explain biological function.
+
+**Terminator:** Also known as transcriptional terminator. DNA sequence, usually with strong secondary structure, that serves to terminate transcription by causing the RNA polymerase to disengage from the DNA strand.
+
+**Toggle switch:** A particular type of genetic switch composed of two promoter/repressor pairs in feedback with each other.
+
+**Top-down:** An engineering approach which seeks to first understand high level system behaviour and then decompose systems piece by piece adding complexity where necessary.
+
+**Transcription:** The process of synthesising an mRNA molecule from a DNA template.
+
+**Transfer RNA (tRNA):** An RNA molecule with an amino acid attached that participates in protein synthesis by bringing the amino acid to the correct location. This is accomplished through the use of an anticodon which pairs with the codon on the mRNA strand.
+
+**Transistor–transistor logic (TTL) data book:** Catalogue of standardised parts and circuits useful for electronic circuit design.
+
+**Translation:** The process of synthesising a protein from an mRNA.
+
+**Transposon:** A ‘movable’ element of DNA that is able to excise itself from a strand and move to another location where it can then integrate.
+
+**Upstream (DNA):** DNA bases closer to the 5’ end of the DNA strand than the point of reference.
+
+---
+
+This page intentionally left blank

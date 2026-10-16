@@ -1,0 +1,2861 @@
+{
+  "pages": [
+    {
+      "page_idx": 33,
+      "blocks": [
+        {
+          "type": "doc_title",
+          "bbox": [
+            0.423,
+            0.2,
+            0.577,
+            0.22
+          ],
+          "level": 1,
+          "content": "CHAPTER 2"
+        },
+        {
+          "type": "doc_title",
+          "bbox": [
+            0.244,
+            0.235,
+            0.756,
+            0.26
+          ],
+          "level": 1,
+          "content": "Basic Concepts in Engineering Biology"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.101,
+            0.332,
+            0.263,
+            0.349
+          ],
+          "level": 2,
+          "content": "2.1 Introduction"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.358,
+            0.901,
+            0.533
+          ],
+          "content": "This chapter describes basic concepts in engineering biology which have direct application in synthetic biology. Systematic design is a key approach in synthetic biology. This is described, together with the concept of parts or components, devices and systems, the synthetic biology design cycle and modelling techniques. Other important areas relating to the application of engineering methods include the registry of parts and part characterisation. Underlying this is the concept of web-based information systems and data templates for parts data. Another important aspect of synthetic biology is the development of platform or foundational technology, which is discussed in relation to the information system and the concept of BioCAD. The final section of the chapter deals with some example applications."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.535,
+            0.901,
+            0.67
+          ],
+          "content": "Francis Collins, the director responsible for the Human Genome Project (see Chapter 3) within the National Institute of Health, stated in a lecture approximately two years after the publication in Nature, that ‘the initial sequencing of the human genome would not have been possible without the extensive use of ICT and computers’. This statement encapsulates how the confluence of engineering, physical science, ICT and computing on the one hand and biology on the other has resulted in the development of a new discipline of synthetic biology."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.101,
+            0.712,
+            0.314,
+            0.731
+          ],
+          "level": 2,
+          "content": "2.2 Systematic Design"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.74,
+            0.901,
+            0.934
+          ],
+          "content": "An important aspect of synthetic biology is the application of systematic design to the creation of biologically-based devices and systems. This approach is based upon the engineering principles of modularity, characterisation and standardisation. The concept of modularity is the ability to reduce a device or system to a number of component parts. In this approach each of the parts is characterised in detail. That is to say that the characteristics of the part and how it operates under different conditions (e.g. for a type of chassis or cell) are rigorously studied. Where possible, parts are standardised in order that, in principle, a series of standard parts can be combined to create a device. The power of this approach, which is used in many areas of engineering, is that a device does not need to be produced from scratch every time, but, rather, it can be created from existing standard parts (and as we will"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.491,
+            0.956,
+            0.51,
+            0.968
+          ],
+          "content": "19"
+        }
+      ]
+    },
+    {
+      "page_idx": 34,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.101,
+            0.068,
+            0.123,
+            0.08
+          ],
+          "content": "20"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.4,
+            0.068,
+            0.618,
+            0.082
+          ],
+          "content": "Synthetic Biology — A Primer"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.104,
+            0.9,
+            0.182
+          ],
+          "continues_prev": true,
+          "content": "see, in some cases a combination of standard parts and new parts). These concepts, which are widely used in engineering and manufacturing, are currently being applied to synthetic biology. This is known as the Parts, Devices and Systems approach to synthetic biology design (see Chapter 5 for a biological explanation of parts in the synthetic biology context)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.098,
+            0.205,
+            0.526,
+            0.223
+          ],
+          "level": 2,
+          "content": "2.2.1 The parts, devices and systems approach"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.231,
+            0.9,
+            0.268
+          ],
+          "content": "In current synthetic biology a hierarchy based on the Parts, Devices and Systems approach can be defined as follows:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.099,
+            0.285,
+            0.9,
+            0.4
+          ],
+          "sub_type": "text",
+          "content": "(i) Parts (bioparts) — these encode biological functions (currently synthetically designed DNA).\n(ii) Devices — these are made from a collection of parts (bioparts) and encode human defined functions (e.g. logic gates).\n(iii) Systems — systems perform tasks, such as counting and, potentially in the future, intracellular control functions."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.417,
+            0.9,
+            0.475
+          ],
+          "content": "Hence, in principle, to construct a simple gene circuit comprising a promoter, ribosome binding site, protein coding sequence and terminator would consist of joining four sections of DNA (where each section is a part, i.e. a specific DNA sequence for the considered part)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.098,
+            0.498,
+            0.761,
+            0.517
+          ],
+          "level": 2,
+          "content": "2.2.2 The synthetic biology design cycle and its role in systematic design"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.525,
+            0.901,
+            0.661
+          ],
+          "content": "A key aspect of synthetic biology is the application to biology of techniques which are normally used in engineering design and development. The essence of this approach is to define the specification of the part, device or system required and to develop a design which meets these specifications. This overall approach is part of what is known as the design cycle (based on the design, build test and learn paradigm); this is illustrated in Fig. 2.1. It should be noted that the responsible research and innovation paradigm is implemented at all stages of the design cycle."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.662,
+            0.901,
+            0.895
+          ],
+          "content": "In Fig. 2.1, the specification step is followed by a detailed design step. One of the key differences between design today and that of the past is the ability to undertake detailed computer modelling. This is also true in synthetic biology. Comparisons are often made between the difficulty of designing biological systems and the design of electronic devices, such as transistors, 60 years ago. The difference today is the wide availability of large amounts of computer power, which makes it possible to carry out detailed computer modelling. This means that the expected behaviour of the part, device or system under development can be simulated in detail. The next stage in the cycle is implementation. In synthetic biology this normally means synthesising DNA and inserting it into a host cell (chassis). The next stage of the design cycle, testing and validation, is particularly important in synthetic biology because it is the host response to the insertion of new DNA which determines whether or not the specification and the design have been properly realised."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.897,
+            0.9,
+            0.935
+          ],
+          "content": "Another key aspect of the design cycle approach is that the development of a part, device or system can involve a number of iterations of the cycle, with each iteration refining"
+        }
+      ]
+    },
+    {
+      "page_idx": 35,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.35,
+            0.067,
+            0.635,
+            0.082
+          ],
+          "content": "Basic Concepts in Engineering Biology"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.877,
+            0.068,
+            0.897,
+            0.08
+          ],
+          "content": "21"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.134,
+            0.104,
+            0.862,
+            0.436
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph TD\n  A[\"Specifications\"] --> B[\"Debug/Learn\"]\n  A --> C[\"Design\"]\n  B --> D[\"Test/Validate\"]\n  C --> E[\"Model\"]\n  D --> F[\"Build\"]\n  E --> G[\"Parts + Assembly\"]\n  F --> H[\"Metrology\"]\n  G --> H\n  style A fill:#fff,stroke:#333\n  style B fill:#fff,stroke:#333\n  style C fill:#fff,stroke:#333\n  style D fill:#fff,stroke:#333\n  style E fill:#fff,stroke:#333\n  style F fill:#fff,stroke:#333\n  style G fill:#fff,stroke:#333\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.334,
+                0.45,
+                0.663,
+                0.466
+              ],
+              "content": "Fig. 2.1 The synthetic biology design cycle."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0033-0048/images/page_35_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.486,
+            0.902,
+            0.779
+          ],
+          "continues_prev": true,
+          "content": "the design and its implementation. Engineering systems, for example the A380 Airbus, are based on standard devices, which are built from standard parts. In synthetic biology the field of electronics is sometimes used as a conceptual model. Taking the example of a simple audio amplifier, this would be designed using standard resistors, capacitors and transistors. The designer would have a set of specifications for the amplifier and look up manufacturers’ handbooks (today, probably on the internet) to find component parts which meet the exact specifications which are required for the design. What is important here is to understand that a great deal of time and effort will have been devoted by component manufacturers to produce parts which exactly matched their specifications. In fact, it is common in engineering for a number of manufacturers to make and sell parts which exactly match the same specifications. It is important to note that the designer of the audio amplifier would not question for a moment that a commercially available part exactly matches its specification. Once built, tested and validated, the audio amplifier becomes a standard device built from standard parts — with its own specification sheet (the same approach applies to standard parts and devices in synthetic biology)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.78,
+            0.902,
+            0.935
+          ],
+          "content": "Taking this whole approach one step further, now suppose that the objective is to build a simple radio. Radios basically comprise three standard devices: a radio frequency, or RF stage; an intermediate frequency, or IF stage; and an audio stage (the audio amplifier). Hence, the aim would be to build the radio from these three standard devices. It may well be the case that each stage is manufactured and supplied by a different manufacturer but, because they are all standard, it is possible to connect the three stages together to form the radio. This is a very powerful approach and is routinely applied to the building of most engineering systems because it does not require everything to be designed and built from scratch."
+        }
+      ]
+    },
+    {
+      "page_idx": 36,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.101,
+            0.068,
+            0.121,
+            0.079
+          ],
+          "content": "22"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.4,
+            0.068,
+            0.618,
+            0.081
+          ],
+          "content": "Synthetic Biology — A Primer"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.102,
+            0.104,
+            0.898,
+            0.328
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"Design of Biological Devices and Systems\"] --> B[\"Computer Modelling of Designs\"]\n  B --> C[\"In vivo Characterisation\"]\n  C --> D[\"Testing and Validation\"]\n  E[\"Part design and build\"] --> F[\"In vitro Characterisation\"]\n  F --> G[\"Storage of DNA, Data and Metadata\"]\n  H[\"Registry + Information System\"] -.-> A\n  H -.-> B\n  H -.-> C\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.202,
+                0.339,
+                0.795,
+                0.355
+              ],
+              "content": "Fig. 2.2 Device design — incorporating the design cycle and the registry of parts."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0033-0048/images/page_36_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.393,
+            0.9,
+            0.586
+          ],
+          "content": "A similar conceptual approach is used in synthetic biology. Here a number of bioparts are combined to produce a particular device (on the basis of a particular design). Figure 2.2 illustrates this process. The top line of the figure comprises a linear version of the synthetic biology design cycle. Referring to the first block (design of biological devices and systems) at this point, the bioparts which were used in the design are defined. On this basis, the registry is first interrogated to determine which standard bioparts are available. If additional bioparts are required then new parts need to be designed and built (as shown in the lower section of the diagram). Following the design and build the part is characterised and the characterisation data and metadata are added to the registry as a new part. The part is also then included in the fabrication of the new device."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.098,
+            0.615,
+            0.517,
+            0.634
+          ],
+          "level": 2,
+          "content": "2.3 The Registry and Part Characterisation"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.643,
+            0.901,
+            0.854
+          ],
+          "content": "Earlier in this chapter the concept of the engineering approach to synthetic biology design was introduced in terms of parts, devices and systems. To summarise, the basic concept is one of using a combination of standard parts to produce standard devices, which are then combined to produce standard systems. This means that the standard parts must be thoroughly characterised so that their performance is carefully determined in relation to all the conditions under which the part will operate normally in the context of a particular type of chassis (cell). Hence, for example, the function of the part is defined on datasheets which comprise graphical, tabular and written information. In addition, metadata is usually provided. This is data about the context in which the data relating to the part has been obtained (experimental conditions, type of equipment etc). Metadata is often referred to as data about data."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.858,
+            0.901,
+            0.935
+          ],
+          "content": "Unlike the situation 20 years ago, datasheets in almost all fields today are stored electronically in databases. In the case of synthetic biology parts (bioparts), data and metadata are stored in a registry of parts. The best known registry is currently the so-called MIT Registry for the International Genetically Engineered Machine (iGEM) competition"
+        }
+      ]
+    },
+    {
+      "page_idx": 37,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.349,
+            0.067,
+            0.635,
+            0.082
+          ],
+          "content": "Basic Concepts in Engineering Biology"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.877,
+            0.068,
+            0.899,
+            0.08
+          ],
+          "content": "23"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.104,
+            0.903,
+            0.281
+          ],
+          "continues_prev": true,
+          "content": "(see Chapter 8). This is a large registry containing many parts which have been designed for the iGEM competition. It does, however, have a number of problems. For example, the data tend to be more qualitative than quantitative; the parts do not always function as stated; and within the iGEM competition the focus has been on quantity rather than the quality of parts. In practice for this registry parts can be submitted by any user; they do not need to conform to a universal structure; they often contain missing data fields; and they are not automatically verified upon submission to the registry. There is, therefore, a widely held view that for professional/commercial synthetic biology design there is a need for a thoroughly characterised registry of parts."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.099,
+            0.308,
+            0.341,
+            0.326
+          ],
+          "level": 2,
+          "content": "2.4 Information Systems"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.335,
+            0.903,
+            0.491
+          ],
+          "content": "Since the concept of a registry of parts is one which is familiar in a range of fields, it is possible to look at previous experience in other fields to try and design an ideal format for a professional registry of parts. For most registries of parts it is now the case that the part data and metadata are stored in an electronic database, which forms part of what is commonly known as a web-based information system. In synthetic biology, Imperial College has developed an information system called SynBIS (standing for Synthetic Biology Information System). The system is illustrated in Fig. 2.3. Referring to the figure, it can be seen that SynBIS is a web-based information system which comprises a fourlayer"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.102,
+            0.513,
+            0.903,
+            0.905
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph TD\n  subgraph Database Layer\n    DB1[\"SynBIS SQL Database\"]\n  end\n\n  subgraph Application Layer\n    AP1[\"Exptl Data\"]\n    AP2[\"Comparator\"]\n    AP3[\"Model\"]\n  end\n\n  subgraph Communication Layer\n    Comm1[\"Exporter\"]\n    Comm2[\"Outputs to other systems\"]\n  end\n\n  subgraph Interface Layer\n    UI[\"User Input and Display\"]\n  end\n\n  Inputs[\"Inputs from other systems\"] --> DataInput[\"Data and Information Input\\n• Part descriptions\\n• Data from external sources\\n• Models and model data\"]\n\n  DB1 --> AP1\n  DB1 --> AP2\n  DB1 --> AP3\n\n  API[\"Interface (HTML) Layer\"]\n  API --> Comm1\n  API --> Comm2\n\n  API --> Output[\"Outputs to other systems\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.269,
+                0.915,
+                0.726,
+                0.932
+              ],
+              "content": "Fig. 2.3 The Synthetic Biology Information System (SynBIS)."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0033-0048/images/page_37_image_5.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 38,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.101,
+            0.068,
+            0.123,
+            0.08
+          ],
+          "content": "24"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.399,
+            0.068,
+            0.618,
+            0.082
+          ],
+          "content": "Synthetic Biology — A Primer"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.104,
+            0.9,
+            0.161
+          ],
+          "continues_prev": true,
+          "content": "architecture consisting of an interface layer (the web browser); a communication layer; an application layer (comprising specialist software); and a database layer (which comprises a structured query language (SQL) commercial database)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.099,
+            0.189,
+            0.335,
+            0.208
+          ],
+          "level": 2,
+          "content": "2.4.1 The SynBIS system"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.216,
+            0.9,
+            0.273
+          ],
+          "content": "The specific implementation of the model can best be described in terms of the detailed diagram of SynBIS (Fig. 2.3). The left- and right-hand sides of the diagram are divided according to the following structure."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.099,
+            0.295,
+            0.59,
+            0.314
+          ],
+          "level": 2,
+          "content": "2.4.1.1 Left-hand side of the system diagram (Fig. 2.3)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.322,
+            0.9,
+            0.36
+          ],
+          "content": "This comprises the functionality to input various types of data and information into the system. How this is achieved will now be described in terms of each of the layers."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.099,
+            0.39,
+            0.405,
+            0.408
+          ],
+          "level": 2,
+          "content": "2.4.1.1.1 Interface (HTML) layer"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.417,
+            0.9,
+            0.455
+          ],
+          "content": "This comprises a web-browser (HTML) interface where the user can control the input of various types of data and information into the SynBIS database. These include the following:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.098,
+            0.476,
+            0.899,
+            0.572
+          ],
+          "sub_type": "text",
+          "content": "(i) Part description (type, function, etc.).\n(ii) Experimental data, from an external source — a typical example being characteristic data for a particular part.\n(iii) Model description (i.e. the description of models in terms of their equations).\n(iv) Data derived from specific models."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.099,
+            0.602,
+            0.385,
+            0.621
+          ],
+          "level": 2,
+          "content": "2.4.1.1.2 Communication layer"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.629,
+            0.9,
+            0.667
+          ],
+          "content": "The role of the Communication Layer on this side of the system diagram is to allow the information and data described in the previous section, above, to enter the system."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.099,
+            0.697,
+            0.347,
+            0.715
+          ],
+          "level": 2,
+          "content": "2.4.1.1.3 Application layer"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.724,
+            0.9,
+            0.84
+          ],
+          "content": "Once the data and information have been entered into the system at the Interface Layer, it is transferred to the Application Layer. Here there are two types of application software. The first converts known data types to the SynBIS data standard via standards converter software. The second set of software is conformance software, which checks that the data and information conform to the SynBIS template. If this is not the case then the system delivers a compliance report."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.099,
+            0.87,
+            0.325,
+            0.888
+          ],
+          "level": 2,
+          "content": "2.4.1.1.4 Database layer"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.897,
+            0.9,
+            0.935
+          ],
+          "content": "This comprises the SQL database, whose schema is the SynBIS template. All the information and data which is entered into the SynBIS system must conform to this template."
+        }
+      ]
+    },
+    {
+      "page_idx": 39,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.349,
+            0.067,
+            0.632,
+            0.082
+          ],
+          "content": "Basic Concepts in Engineering Biology"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.877,
+            0.068,
+            0.898,
+            0.08
+          ],
+          "content": "25"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.098,
+            0.104,
+            0.603,
+            0.122
+          ],
+          "level": 2,
+          "content": "2.4.1.2 Right-hand side of the system diagram (Fig. 2.3)"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.099,
+            0.131,
+            0.405,
+            0.15
+          ],
+          "level": 2,
+          "content": "2.4.1.2.1 Interface (HTML) layer"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.158,
+            0.9,
+            0.214
+          ],
+          "content": "As previously discussed, this comprises a web-browser (HTML) interface. However, in this section of the system diagram the user can control a number of system functions. These include:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.098,
+            0.23,
+            0.896,
+            0.326
+          ],
+          "sub_type": "text",
+          "content": "(i) The display and manipulation of various types of data and information from the SynBIS database.\n(ii) The export of data and information to other systems.\n(iii) Running computer models and displaying the results.\n(iv) Running comparisons of experimental data from the database with model results."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.098,
+            0.351,
+            0.385,
+            0.37
+          ],
+          "level": 2,
+          "content": "2.4.1.2.2 Communication layer"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.379,
+            0.9,
+            0.436
+          ],
+          "content": "The primary role of the Communication Layer on this side of the system diagram is to allow the information and data which result from comparing experimental data with model data to be exported to other systems."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.098,
+            0.461,
+            0.347,
+            0.479
+          ],
+          "level": 2,
+          "content": "2.4.1.2.3 Application layer"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.488,
+            0.9,
+            0.524
+          ],
+          "content": "On this side of the system diagram the Application Layer carries out a number of important functions:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.098,
+            0.541,
+            0.9,
+            0.715
+          ],
+          "sub_type": "text",
+          "content": "(i) It enables the extraction, display and manipulation of data and information from the database.\n(ii) It enables data and information (such as parameters) from the database to populate models for the purpose of simulation.\n(iii) It controls the comparison of experimental data from the database with the results of simulations. Such comparative studies are important because their objective is to study how and why the experimental data differs from that predicted by the model simulation. On this basis new parameters can be fed to external systems for the purpose of optimising parts."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.098,
+            0.733,
+            0.347,
+            0.75
+          ],
+          "level": 2,
+          "content": "2.4.1.3 Data and metadata"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.76,
+            0.901,
+            0.935
+          ],
+          "content": "As previously described, the information relating to a particular biopart is stored in the database under two separate headings. Hence, conceptually, it is important to understand the schema for the storage of such information in the database. Part type and chassis type are two key pieces of information associated with a particular biopart. Figure 2.4 illustrates the schema for the data and metadata for a particular part, in this example, a promoter. The basic information relating to the part is at the top of the schematic (part type and part number); below this are the characteristics of the part. In practice the characteristics may well comprise graphical information and, also, alphanumeric information. For a given part the scientists characterising the part will determine how many separate characteristics are"
+        }
+      ]
+    },
+    {
+      "page_idx": 40,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.101,
+            0.068,
+            0.121,
+            0.08
+          ],
+          "content": "26"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.4,
+            0.068,
+            0.618,
+            0.082
+          ],
+          "content": "Synthetic Biology — A Primer"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.158,
+            0.104,
+            0.845,
+            0.391
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph TD\n  A[\"Part Type (eg promoter)\"] --> B[\"Part n\"]\n  B --> C[\"Characteristic 1\"]\n  B --> D[\"Characteristic 2\"]\n  B --> E[\"Characteristic k\"]\n  B --> F[\"Other Data\"]\n  C --> G[\"Experiment 1\"]\n  D --> H[\"Experiment 2\"]\n  E --> I[\"Experiment m\"]\n  G --> J[\"Metadata\"]\n  H --> J\n  I --> J\n  F --> J\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.28,
+                0.4,
+                0.719,
+                0.417
+              ],
+              "content": "Fig. 2.4 A simplified version of the SynBIS Data Template."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0033-0048/images/page_40_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.443,
+            0.9,
+            0.479
+          ],
+          "continues_prev": true,
+          "content": "needed to fully characterise the part. This will determine the nature of the experimental information and its extent."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.482,
+            0.902,
+            0.637
+          ],
+          "content": "To illustrate this further, Fig. 2.5 shows a part datasheet for the promoter LacUV5. Referring to the figure, it can be seen that in this particular case the datasheet comprises various types of graphical information — as well as images, sequences and diagrams. In addition, there is a significant amount of metadata. In relation to the metadata, the aim is to produce, as far as possible, a standard template for metadata for promoters (and similar metadata schema for other types of part). In reality, the metadata comprises a series of categories, each of which has associated active fields. For a particular case individual fields may or may not be populated."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.098,
+            0.665,
+            0.35,
+            0.684
+          ],
+          "level": 2,
+          "content": "2.5 The BioCAD Concept"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.693,
+            0.844,
+            0.712
+          ],
+          "content": "Some of the key points which have been made so far can be summarised as follows:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.108,
+            0.725,
+            0.899,
+            0.821
+          ],
+          "sub_type": "text",
+          "content": "(i) In synthetic biology design an important approach is to build standard systems from standard devices which comprise standard parts.\n(ii) This is done in the context of the design cycle and systematic design approach and the implementation throughout the responsible research innovation paradigm.\n(iii) Standard parts are stored in a registry of parts."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.835,
+            0.902,
+            0.933
+          ],
+          "content": "In the synthetic biology design process there is an interplay between the dry laboratory and the wet laboratory. It is very important to understand that normally, in practice, wet laboratory work takes far longer than work in the dry laboratory. Hence, modelling (dry lab work) is important because it can reduce the amount of time needed for part characterisation in the wet lab."
+        }
+      ]
+    },
+    {
+      "page_idx": 41,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.132,
+            0.111,
+            0.212,
+            0.146
+          ],
+          "content": "Imperial College London"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.259,
+            0.101,
+            0.357,
+            0.121
+          ],
+          "content": "Part Data Sheet"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.228,
+            0.13,
+            0.39,
+            0.154
+          ],
+          "content": "Promoter: LacUV5"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.409,
+            0.117,
+            0.445,
+            0.134
+          ],
+          "content": "CSYNBI"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.409,
+            0.135,
+            0.474,
+            0.143
+          ],
+          "content": ""
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.612,
+            0.101,
+            0.708,
+            0.12
+          ],
+          "content": "Part Data Sheet"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.579,
+            0.13,
+            0.741,
+            0.154
+          ],
+          "content": "Promoter: LacUV5"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.76,
+            0.117,
+            0.796,
+            0.134
+          ],
+          "content": "CSYNBI"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.76,
+            0.135,
+            0.826,
+            0.143
+          ],
+          "content": ""
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.134,
+            0.187,
+            0.477,
+            0.845
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.279,
+                0.167,
+                0.339,
+                0.184
+              ],
+              "content": "LB Medium"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0033-0048/images/page_41_image_10.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.484,
+            0.169,
+            0.655,
+            0.819
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0033-0048/images/page_41_image_11.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.704,
+            0.175,
+            0.786,
+            0.191
+          ],
+          "level": 2,
+          "content": "Other Metadata"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.709,
+            0.196,
+            0.79,
+            0.207
+          ],
+          "level": 2,
+          "content": "Metadata version:0.1"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.672,
+            0.216,
+            0.812,
+            0.284
+          ],
+          "content": "| Title | BioFAB Bit-Atom-Bit Transfer |\n| --- | --- |\n| Time | 17:00 |\n| Date | 23/11/2010 |\n| Location | CSynBI (Bessemer) |\n| Operator | Chris Hirst |\n| Species | E. Coli |\n| Strain | DH10B (Invitrogen) |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0033-0048/images/page_41_table_14.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.683,
+            0.296,
+            0.813,
+            0.393
+          ],
+          "content": "| Origin of culture | Colony from Plate |\n| --- | --- |\n| Culture volume | 2ml |\n| Culture vessel | 14ml BD Falcon tube |\n| Duration of growth | Overnight (16h) |\n| Media | LB (Merck, batch VM853385) and M9 (Knight recipe) |\n| Antibiotic | Kanamycin |\n| Antibiotic conc. | 50μg/ml |\n| Temperature | 37 °C |\n| Shaking (rpm) | 225 |\n| Incubator | Thermo Scientific - MaxQ 6000 |",
+          "captions": [
+            {
+              "bbox": [
+                0.673,
+                0.287,
+                0.708,
+                0.295
+              ],
+              "content": "Starter culture"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0033-0048/images/page_41_table_16.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.683,
+            0.405,
+            0.815,
+            0.468
+          ],
+          "content": "| Culture volume | 1ml |\n| --- | --- |\n| Culture vessel | 14ml BD Falcon tube |\n| Duration of growth | 90 minutes |\n| Media | As above |\n| Inoculation ratio | 60:1 LB, 50:1 M9 |\n| Antibiotic | Kanamycin |\n| Antibiotic conc. | 50μg/ml |",
+          "captions": [
+            {
+              "bbox": [
+                0.673,
+                0.397,
+                0.699,
+                0.404
+              ],
+              "content": "Outgrowth"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0033-0048/images/page_41_table_18.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.683,
+            0.481,
+            0.816,
+            0.595
+          ],
+          "content": "| Culture volume | 120μl |\n| --- | --- |\n| Culture vessel | 96-well Greiner black f-bottom |\n| Duration | 5 hours |\n| Media | As above |\n| Inoculation ratio | 6:1 LB, 4:1 M9 |\n| Antibiotic | Kanamycin |\n| Antibiotic conc. | 50μg/ml |\n| Temperature | 37°C |\n| Shaking (rpm) | 500 (30s), double orbital, before reading |\n| Incubator | Thermo Scientific - MaxQ 6000 |\n| Readings | Reader - HourlyCytometry - at 3h and 5h |",
+          "captions": [
+            {
+              "bbox": [
+                0.673,
+                0.472,
+                0.688,
+                0.48
+              ],
+              "content": "Assay"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0033-0048/images/page_41_table_20.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.683,
+            0.608,
+            0.813,
+            0.652
+          ],
+          "content": "<table><tr><td colspan=\"2\">D</td></tr><tr><td>Instrument</td><td>Polarstar Omega</td></tr><tr><td>Wavelength</td><td>600nm</td></tr><tr><td>Blank reading</td><td>Media (LB or M9)</td></tr><tr><td>Sample vessel</td><td>96-well black f-bottom Greiner</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.673,
+                0.599,
+                0.706,
+                0.607
+              ],
+              "content": "Measurement"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0033-0048/images/page_41_table_22.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.683,
+            0.669,
+            0.813,
+            0.796
+          ],
+          "content": "<table><tr><td>Instrument</td><td>Polarstar Omega</td></tr><tr><td>Excitation Wavelength</td><td>385 ± 10</td></tr><tr><td>Emission Wavelength</td><td>410 ± 10</td></tr><tr><td>Blank reading</td><td>Taken but not used</td></tr><tr><td>Sample vessel</td><td>96-well flat black Greiner plate</td></tr><tr><td colspan=\"2\">ow Cytometry</td></tr><tr><td>Instrument</td><td>Becton Dickinson FACScan</td></tr><tr><td>Excitation laser</td><td>Green</td></tr><tr><td>Output Channel</td><td>FL1-H (Green)</td></tr><tr><td>Number of cells</td><td>Max 10,000</td></tr><tr><td>Gated / Not Gated</td><td>Gated</td></tr><tr><td>Sample media</td><td>Water</td></tr><tr><td>Sample vessel</td><td>96-well clear f-bottom (Costar)</td></tr><tr><td>Statistics used</td><td>Mean, Variance</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.677,
+                0.66,
+                0.709,
+                0.668
+              ],
+              "content": "Fluorescence"
+            },
+            {
+              "bbox": [
+                0.338,
+                0.866,
+                0.622,
+                0.887
+              ],
+              "content": "Fig . 2 . 5 An illustrative example of a promoter datasheet."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0033-0048/images/page_41_table_24.jpg"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.917,
+            0.35,
+            0.931,
+            0.631
+          ],
+          "content": "Basic Concepts in Engineering Biology"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.919,
+            0.877,
+            0.931,
+            0.898
+          ],
+          "content": "27"
+        }
+      ]
+    },
+    {
+      "page_idx": 42,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.101,
+            0.068,
+            0.121,
+            0.08
+          ],
+          "content": "28"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.4,
+            0.068,
+            0.618,
+            0.082
+          ],
+          "content": "Synthetic Biology — A Primer"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.229,
+            0.104,
+            0.773,
+            0.386
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph TD\n  A[\"SynBIS – integrated BioCAD and modelling suite\"] --> B[\"DNA Assembly\\n• Robust automated DNA assembly methods\\n• Parts to Genes\\n• Genes to Pathways\"]\n  B --> C[\"Characterisation (data for SynBIS)\\n• In vitro\\n• In vivo\\n• Reference parts under different conditions\"]\n  C --> D[\"Chassis (data for SynBIS)\\n• E. coli\\n• Yeast\\n• Bacillus subtilis\\n• Geobacillus\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.098,
+                0.393,
+                0.9,
+                0.424
+              ],
+              "content": "Fig. 2.6 Components of Platform Technology which are incorporated into SynBIS to provide an integrated BioCAD and modelling suite."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0033-0048/images/page_42_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.447,
+            0.902,
+            0.602
+          ],
+          "content": "In this context (and again in relation to what is done in other fields), the concept of an information system which incorporates a Computer-Aided Design tools approach to synthetic biology, is being developed — this is often referred to as the BioCAD concept. Figure 2.6 illustrates the BioCAD concept in relation to its incorporation into SynBIS. BioCAD incorporates a number of aspects of synthetic biology design: DNA assembly, including feedback as illustrated in Figure 2.9, characterisation (data for SynBIS) and chassis (data for SynBIS). Hence, the concept is that a major amount of design and modelling work can be undertaken in the dry laboratory using BioCAD software."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.604,
+            0.901,
+            0.759
+          ],
+          "content": "More specifically, in relation to BioCAD, the systematic design approach in synthetic biology has many similarities to more general computer modelling. Referring to the lefthand side of Fig. 2.7, in computer modelling a block diagram of the design is obtained. Then for each block a mathematical description of the function of the block is derived. The entire block diagram and its associated mathematical descriptions are then converted to high level computer code using a high level computer language (such as C or C++). Within the computer the high level code is then converted to assembly code and then down to machine code (these last two steps are automatic)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.76,
+            0.901,
+            0.895
+          ],
+          "content": "On the right-hand side of Fig. 2.7, in synthetic biology a block diagram of the design is first obtained. The next step is to convert the basic block diagram into a biopart (or gene circuit) block diagram. At this point, computer simulations are run and the synthetic biology block diagram design and the associated bioparts block diagram are modified in relation to the results of the simulation. Once the biopart block diagram has been optimised, the next stage is to progress to assembly strategy software. This then leads to DNA assembly and ultimately to viability testing in the wet lab."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.897,
+            0.9,
+            0.935
+          ],
+          "content": "It is important to state that currently the BioCAD concept illustrated in the diagram (as well as the associated BioCAD software) is still being developed. There are, however,"
+        }
+      ]
+    },
+    {
+      "page_idx": 43,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.349,
+            0.067,
+            0.635,
+            0.082
+          ],
+          "content": "Basic Concepts in Engineering Biology"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.877,
+            0.068,
+            0.899,
+            0.08
+          ],
+          "content": "29"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.186,
+            0.106,
+            0.818,
+            0.41
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.387,
+                0.42,
+                0.611,
+                0.436
+              ],
+              "content": "Fig. 2.7 A BioCAD Schema."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0033-0048/images/page_43_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.458,
+            0.9,
+            0.515
+          ],
+          "continues_prev": true,
+          "content": "a number of computer packages available which deal with various levels of the synthetic biology CAD block diagram. These include Clotho, GenoCAD, TinkerCell and a number of other open source packages."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.098,
+            0.545,
+            0.241,
+            0.563
+          ],
+          "level": 2,
+          "content": "2.6 Modelling"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.572,
+            0.9,
+            0.65
+          ],
+          "content": "The device shown in Fig. 2.8 is a typical representation of a transcriptional regulatory device which comprises an inducible promoter, RBS, coding region and a terminator. Using the transcriptional regulatory device as an example, the following section describes the methodology of representing a biological device/system using block diagrams."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.651,
+            0.901,
+            0.747
+          ],
+          "content": "The device can be described by ordinary differential equations (ODEs). The same ODEs can also be used to describe devices such as inverters and switches. Referring to the equations, Eq. (1) describes the transcription of mRNA, which is activated in the presence of transcription factor [W]. In the example, [W] is considered to be an inducer. Hence $\\mu = + 1$ A Hill kinetic function is used to model these dynamics. Consequently, Eq. (1) is nonlinear."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.27,
+            0.77,
+            0.729,
+            0.905
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  TF[\"TF\"] --> Promoter[\"promoter\"]\n  TF --> Gene[\"gene\"]\n  Gene --> Protein[\"protein\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.149,
+                0.915,
+                0.848,
+                0.933
+              ],
+              "content": "Fig. 2.8 A diagram of typical transcriptional regulatory device (TF refers to transcription factor)."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0033-0048/images/page_43_image_8.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 44,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.101,
+            0.068,
+            0.123,
+            0.08
+          ],
+          "content": "30"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.399,
+            0.067,
+            0.618,
+            0.082
+          ],
+          "content": "Synthetic Biology — A Primer"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.104,
+            0.9,
+            0.161
+          ],
+          "content": "This equation takes [W] as the input and [mRNA] as the output. Equation (2) describes the translation of protein [P]. The input to this process is the concentration of mRNA and the output is the concentration of P. This is treated as a linear equation."
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.316,
+            0.175,
+            0.9,
+            0.232
+          ],
+          "content": "\\frac {d [ m R N A ]}{d t} = \\frac {k _ {t r} \\cdot \\left(\\frac {W ^ {n}}{K ^ {n}}\\right) ^ {\\mu}}{1 + \\left(\\frac {W ^ {n}}{K ^ {n}}\\right)} - d _ {m} \\cdot [ m R N A ] \\tag {1}",
+          "image_source": "../../raw/pages_0033-0048/images/page_44_equation_3.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.358,
+            0.235,
+            0.9,
+            0.274
+          ],
+          "content": "\\frac {d [ P ]}{d t} = k _ {t l} [ m R N A ] - d _ {p} \\cdot [ P ] \\tag {2}",
+          "image_source": "../../raw/pages_0033-0048/images/page_44_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.287,
+            0.16,
+            0.302
+          ],
+          "content": "where"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.099,
+            0.313,
+            0.504,
+            0.509
+          ],
+          "sub_type": "algorithm",
+          "content": "[mRNA] mRNA Concentration\n[P] Protein Concentration\n$k_{tr}$ kinetic constant of transcription\n$k_{tl}$ kinetic constant of translation\n[W] inducer $\\mu = +1$\nrepressor $\\mu = 0$\nK Activation/Repression Coefficient\nn Hill Coefficient\n$d_m$ Degradation constant of mRNA\n$d_p$ Degradation constant of Protein",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.519,
+            0.901,
+            0.693
+          ],
+          "content": "The problem when analysing biological systems — or in the case of synthetic biology, designing biological devices and systems — is that as the system becomes more complex it becomes progressively more difficult to have an intuitive ‘feel’ for linking the mathematical description to the biology. This is a problem that has been faced on many occasions in the past. Fortunately, in engineering and physics there is a whole branch of mathematics called Systems and Control Theory, which has been developed over many years to address this problem. In fact the basis of the methods largely revolves around a mathematical theory which was pioneered by two French mathematicians: Pierre-Simon Laplace and Joseph Fourier at the beginning of the 19th century."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.695,
+            0.901,
+            0.83
+          ],
+          "content": "Their work is fundamental to much of modern engineering analysis. The essence of the Laplace approach is to convert or transform ODEs into what is called another domain — the Laplace Domain. In this domain, ODEs become algebraic equations, which are far easier to manipulate. Once a solution has been obtained in the Laplace Domain the final equation/solution is retransformed back into the Time Domain (i.e. the real world). The conversion of a function (e.g. an equation) from the Time to the Laplace Domain is done using the forward Laplace transform, vis:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.396,
+            0.844,
+            0.9,
+            0.884
+          ],
+          "content": "F (s) = \\int_ {0} ^ {\\infty} f (t) e ^ {- s t} d t \\tag {3}",
+          "image_source": "../../raw/pages_0033-0048/images/page_44_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.897,
+            0.9,
+            0.935
+          ],
+          "content": "where s is the so-called Laplace transform operator. Hence, the Laplace transform is used extensively to systematise the solution of ordinary differential equations."
+        }
+      ]
+    },
+    {
+      "page_idx": 45,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.35,
+            0.067,
+            0.635,
+            0.082
+          ],
+          "content": "Basic Concepts in Engineering Biology"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.877,
+            0.068,
+            0.897,
+            0.08
+          ],
+          "content": "31"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.123,
+            0.106,
+            0.877,
+            0.239
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"Subtractor\"] --> B[\"Compensator\"]\n  B --> C[\"Effector\"]\n  C --> D[\"Out put\"]\n  E[\"Feed back take-off\"] --> B\n  E --> C\n```",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0033-0048/images/page_45_image_2.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.216,
+            0.244,
+            0.428,
+            0.462
+          ],
+          "sub_type": "text_image",
+          "content": "Cybernetics\nor CONTROL and COMMUNICATION\nin THE ANIMAL and THE MACHINE\nBy NORBERT WIENER\nA study of vital importance to psychologism,\nphysiologies, electrical engineers, radio engineers,\nvioligations, philosophers, mathematics, arthropoiesis, psychiatrists, and physicians.",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0033-0048/images/page_45_image_3.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.564,
+            0.263,
+            0.866,
+            0.386
+          ],
+          "sub_type": "text_image",
+          "content": "ρ(t,γ),ν,χ) = Σ₀ ∫_0 (t,γ,γ-δ,γ,γ-δ)\n∫∫ H(η,γ)\n= ∫∫ H\nχ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ,λ, λ, λ",
+          "captions": [
+            {
+              "bbox": [
+                0.465,
+                0.411,
+                0.79,
+                0.442
+              ],
+              "content": "Cybernetics (1948)"
+            },
+            {
+              "bbox": [
+                0.097,
+                0.47,
+                0.9,
+                0.501
+              ],
+              "content": "Fig. 2.9 Example of a feedback loop. (Courtesy: Weiner, N. (1961 [1948]). Cybernetics. MIT Press, Cambridge, MA)."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0033-0048/images/page_45_image_4.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.099,
+            0.521,
+            0.294,
+            0.538
+          ],
+          "level": 2,
+          "content": "2.7 Norbert Weiner"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.548,
+            0.902,
+            0.783
+          ],
+          "content": "Around sixty years ago two major building blocks were put in place in relation to systems and signal theory — the publication of Norbert Wiener’s book, Cybernetics, in 1948, and the publication of Claude Shannon’s work on information theory in the same year. In Cybernetics, Wiener established the mathematical basis for studying biological systems. Wiener’s work, and that of others, has resulted in a major area of engineering science called systems theory. The main goal of systems theory is to define general principles that can be used to describe (and also design) systems regardless of their nature — biological, electrical, ecological, etc. This, coupled with signal theory (another very important area of engineering), has been widely applied in a range of fields, including biology in the form of systems biology. For example, systems theory is widely used in various industrial areas nowadays, such as the design and construction of aircraft control systems, information and telecommunication networks and economics."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.098,
+            0.811,
+            0.448,
+            0.83
+          ],
+          "level": 2,
+          "content": "2.8 Signal Theory/Signal Processing"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.838,
+            0.902,
+            0.938
+          ],
+          "content": "In addition to the use of systems theory, in order to describe biological systems there is often a need to study waveforms. Waveforms are often expressed in terms of the time evolution of a function; for example, the evolution of amplitude of a particular quantity against time. In many areas of science and engineering this is achieved by the application of signal theory. This area of theory, often called signal processing, can be used to analyse signals in"
+        }
+      ]
+    },
+    {
+      "page_idx": 46,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.101,
+            0.068,
+            0.123,
+            0.08
+          ],
+          "content": "32"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.4,
+            0.068,
+            0.618,
+            0.082
+          ],
+          "content": "Synthetic Biology — A Primer"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.135,
+            0.104,
+            0.865,
+            0.258
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.097,
+                0.265,
+                0.9,
+                0.297
+              ],
+              "content": "Fig. 2.10 An example of a continuous waveform is illustrated on the left, and its equivalent sampled data waveform on the right (where the waveform comprises only the sampled values T seconds apart)."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0033-0048/images/page_46_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.318,
+            0.9,
+            0.395
+          ],
+          "continues_prev": true,
+          "content": "biological systems (such as in cell signalling). In nature, signals associated with experiments (waveforms) are normally defined as being ‘continuous’. Continuous in this context means that over the period during which the waveform is being recorded, it comprises finite values at all points in time (see Fig. 2.10, left side)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.397,
+            0.901,
+            0.512
+          ],
+          "content": "The problem is that digital computers can only work with finite amounts of data, i.e. sampled data (see Fig. 2.10, right side). This problem was addressed by Claude Shannon. Shannon established the basis of the information and communication revolution which has taken place over the last 60 years. One of Shannon’s main contributions was his ‘sampling theory’, which allows data to be converted from its continuous form to its sampled form without loss of information and vice versa."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.514,
+            0.901,
+            0.689
+          ],
+          "content": "Referring to Fig. 2.10 (right) it can be seen that the sampled version of the waveform comprises vertical lines, which have discrete values and are separated by an interval T (the sampling interval). Shannon determined that all the information in a waveform can be retained in its sampled form if the original waveform is sampled with an interval T where the sampling frequency $F _ { s } \\: = \\: 1 / T$ and $F _ { s }$ is greater than or equal to twice the maximum frequency contained in the continuous waveform. This is called the Nyquist– Shannon sampling criterion. To understand what is meant by ‘the maximum frequency contained in the continuous waveform’we need to introduce how a signal can be decomposed into its fundamental components. This is covered in the next section."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.098,
+            0.713,
+            0.446,
+            0.731
+          ],
+          "level": 2,
+          "content": "2.8.1 The analysis of periodic signals"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.74,
+            0.9,
+            0.836
+          ],
+          "content": "In studying biological waveforms for the purposes of synthetic biology design it is often the case that the waveform comprises a number of components that arise from different aspects of the biological function. These fundamental components are superimposed (added) to produce the complete waveform being studied. Such an example is that shown in Fig. 2.11."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.838,
+            0.901,
+            0.935
+          ],
+          "content": "Inspection of the waveform reveals that there appear to be patterns in it; for example, similar successive peaks at approximately 0.2, 2.2 and 4.1 mins. Further inspection reveals even more patterns. However, it is difficult to proceed further just by inspection of the waveform. To precisely reveal these patterns a more detailed analysis based on Fourier decomposition of the signal (the basis of which is covered in the next section) is very useful."
+        }
+      ]
+    },
+    {
+      "page_idx": 47,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.35,
+            0.067,
+            0.635,
+            0.082
+          ],
+          "content": "Basic Concepts in Engineering Biology"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.877,
+            0.068,
+            0.899,
+            0.08
+          ],
+          "content": "33"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.175,
+            0.106,
+            0.831,
+            0.368
+          ],
+          "sub_type": "line",
+          "content": "| Minutes | Amplitude (Arbitrary Units) |\n| --- | --- |\n| 0.0 | ~690 |\n| 0.1 | ~720 |\n| 0.2 | ~760 |\n| 0.3 | ~680 |\n| 0.4 | ~650 |\n| 0.5 | ~720 |\n| 0.6 | ~770 |\n| 0.7 | ~760 |\n| 0.8 | ~710 |\n| 0.9 | ~770 |\n| 1.0 | ~700 |\n| 1.1 | ~780 |\n| 1.2 | ~800 |\n| 1.3 | ~790 |\n| 1.4 | ~770 |\n| 1.5 | ~780 |\n| 1.6 | ~730 |\n| 1.7 | ~740 |\n| 1.8 | ~720 |\n| 1.9 | ~750 |\n| 2.0 | ~680 |\n| 2.1 | ~750 |\n| 2.2 | ~650 |\n| 2.3 | ~720 |\n| 2.4 | ~760 |\n| 2.5 | ~770 |\n| 2.6 | ~710 |\n| 2.7 | ~770 |\n| 2.8 | ~690 |\n| 2.9 | ~780 |\n| 3.0 | ~800 |\n| 3.1 | ~790 |\n| 3.2 | ~770 |\n| 3.3 | ~780 |\n| 3.4 | ~730 |\n| 3.5 | ~720 |\n| 3.6 | ~750 |\n| 3.7 | ~690 |\n| 3.8 | ~750 |\n| 3.9 | ~650 |\n| 4.0 | ~720 |\n| 4.1 | ~760 |\n| 4.2 | ~770 |\n| 4.3 | ~760 |\n| 4.4 | ~700 |\n| 4.5 | ~760 |\n| 4.6 | ~700 |\n| 4.7 | ~770 |",
+          "captions": [
+            {
+              "bbox": [
+                0.274,
+                0.379,
+                0.723,
+                0.394
+              ],
+              "content": "Fig. 2.11 An example of a ‘continuous’ biological waveform."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0033-0048/images/page_47_chart_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.414,
+            0.9,
+            0.608
+          ],
+          "content": "Let us now consider a second example, which is somewhat artificial but helps us to understand the decomposition of a signal into several fundamental components. Referring to Fig. 2.12, consider the case of three sinewaves $a ( t ) , b ( t )$ and $c ( t )$ , where $a ( t ) = \\mathrm { A _ { 1 } }$ sin $\\omega _ { 1 } t ,$ $b ( t ) = \\mathrm { A } _ { 2 }$ sin $\\omega _ { 2 } t$ and $c ( t ) = \\mathrm { A } _ { 3 }$ sin $\\omega _ { 3 } t$ . When the waveforms are summed at discrete points in time, they generate the waveform $d ( t )$ . This waveform can, therefore, be said to comprise the sum of $a ( t ) ,   b ( t )$ and $c ( t ) \\mathrm { ~  —  ~ } \\mathbf { o r }$ to put it another way, the waveform $d ( t )$ comprises three components $a ( t ) , b ( t )$ and $c ( t )$ . The waveform $d ( t )$ is similar to the type of waveforms obtained in experimental data (e.g. Fig. 2.11). Normally the problem in biological waveform analysis is the inverse problem, i.e. to break a waveform down into its components (in the example of Fig. 2.12, to break $d ( t )$ into $a ( t ) , b ( t )$ and $c ( t ) )$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.609,
+            0.901,
+            0.726
+          ],
+          "content": "Fortunately this is a problem that was solved by the French mathematician Joseph Fourier 200 years ago. Fourier developed a method called the Fourier transform (more on this in the next section) for breaking waveforms down into their constituent parts and to represent the components, for example, as plots of amplitude against frequency. To understand how this works, let us return to the example of the three sinewaves. Referring again to Fig. 2.12, we can see by inspection that:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.301,
+            0.739,
+            0.9,
+            0.757
+          ],
+          "content": "d (t) = \\mathrm{A} _ {1} \\sin \\omega_ {1} t + \\mathrm{A} _ {2} \\sin \\omega_ {2} t + \\mathrm{A} _ {3} \\sin \\omega_ {3} t \\tag {4}",
+          "image_source": "../../raw/pages_0033-0048/images/page_47_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.77,
+            0.9,
+            0.829
+          ],
+          "content": "where the amplitude and frequency of each sinewave is: $( \\mathrm { A } _ { 1 } , \\omega _ { 1 } ) ,   ( \\mathrm { A } _ { 2 } , \\omega _ { 2 } )$ and $( \\mathrm { A } _ { 3 } , \\omega _ { 3 } )$ Hence, the information in $d ( t )$ can be represented on a plot of amplitude against frequency, as shown below in Fig. 2.13. This plot is called the Amplitude Spectrum of $d ( t )$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.098,
+            0.85,
+            0.458,
+            0.869
+          ],
+          "level": 2,
+          "content": "2.8.2 The time and frequency domains"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.877,
+            0.901,
+            0.935
+          ],
+          "content": "Referring to the plot of waveform d(t) (Fig. 2.12), this is a plot which comprises amplitude on the vertical axis (the ordinate) and time on the horizontal axis (the abscissa). The waveform is therefore said to be in the Time Domain and the plot is called a Time Series. The amplitude"
+        }
+      ]
+    },
+    {
+      "page_idx": 48,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.101,
+            0.068,
+            0.121,
+            0.079
+          ],
+          "content": "34"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.4,
+            0.068,
+            0.618,
+            0.081
+          ],
+          "content": "Synthetic Biology — A Primer"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.152,
+            0.105,
+            0.849,
+            0.557
+          ],
+          "sub_type": "line",
+          "content": "| Waveform | Summing Value |\n| --- | --- |\n| a(t) | \\(A_{1}sin\\omega_{1}t\\) |\n| b(t) | \\(A_{2}sin\\omega_{2}t\\) |\n| c(t) | \\(A_{3}sin\\omega_{3}t\\) |\n| d(t) | \\(A_{1}sin\\omega_{1}t + A_{2}sin\\omega_{2}t + A_{3}sin\\omega_{3}t\\) |",
+          "captions": [
+            {
+              "bbox": [
+                0.108,
+                0.57,
+                0.886,
+                0.586
+              ],
+              "content": "Fig. 2.12 The addition of three sinewaves (a(t), b(t), c(t)) to produce the multi-component waveform (d(t))."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0049-0064/images/page_48_chart_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.603,
+            0.9,
+            0.756
+          ],
+          "content": "spectrum of $\\left[ d ( t ) \\right.$ comprises a plot of amplitude on the ordinate and frequency on the abscissa (Fig. 2.13). In this case, the waveform is said to be expressed in the Frequency Domain and the corresponding plot is called the amplitude spectrum. The conversion of a time series to its spectrum is a linear process and is said to be a ‘conversion from the Time Domain to the Frequency Domain’. In practice, today, the calculation of the amplitude spectrum for a particular time series is achieved via a computer algorithm called a Fast Fourier Transform or FFT (see Fig. 2.14). The FFT is a fast version of the original method developed by Joseph Fourier."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.76,
+            0.901,
+            0.935
+          ],
+          "content": "Frequently, the constituent parts of a complicated waveform can be more readily determined from its frequency spectrum. To illustrate this point, Fig. 2.15 shows the time series of a biological waveform (left), together with its frequency spectrum (right). Inspection of the time series shows that it is very difficult to determine the underlying components which comprise the waveform. However, inspection of its frequency spectrum shows that the waveform actually comprises one major periodic component at 0.05 Hz, or 20-second period, together with a range of low level noise — which impairs identification of the periodic component in the time series. This type of signal analysis by Frequency Domain inspection is a very powerful tool in the synthetic biology design toolbox."
+        }
+      ]
+    },
+    {
+      "page_idx": 49,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.35,
+            0.067,
+            0.635,
+            0.082
+          ],
+          "content": "Basic Concepts in Engineering Biology"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.878,
+            0.068,
+            0.899,
+            0.08
+          ],
+          "content": "35"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.246,
+            0.104,
+            0.752,
+            0.306
+          ],
+          "sub_type": "spectrogram",
+          "content": "| Peak | Freq (Normalised Units) | Amp (Normalised Units) |\n| --- | --- | --- |\n| A1 | 1 | ~5.8 |\n| A2 | 3.5 | ~4.8 |\n| A3 | 7 | ~2.3 |",
+          "captions": [
+            {
+              "bbox": [
+                0.339,
+                0.318,
+                0.658,
+                0.335
+              ],
+              "content": "Fig. 2.13 The Amplitude Spectrum of d(t)."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0049-0064/images/page_49_chart_2.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.153,
+            0.357,
+            0.849,
+            0.56
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"The Time Domain\"] --> B[\"FFT\"]\n  B --> C[\"The Frequency Domain\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.207,
+                0.572,
+                0.791,
+                0.588
+              ],
+              "content": "Fig. 2.14 Conversion from the Time Domain to Frequency Domain via the FFT."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0049-0064/images/page_49_image_4.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.141,
+            0.603,
+            0.86,
+            0.786
+          ],
+          "sub_type": "spectrogram",
+          "content": "| Time (seconds) | Spectral Power |\n| --- | --- |\n| 0 | ~0 |\n| 100 | ~21 |\n| 200 | ~18 |\n| 300 | ~18 |\n| 400 | ~20 |",
+          "captions": [
+            {
+              "bbox": [
+                0.097,
+                0.793,
+                0.9,
+                0.825
+              ],
+              "content": "Fig. 2.15 A biological waveform and its spectrum. The waveform essentially comprises a single 20-second period component (obscured in the time domain by noise)."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0049-0064/images/page_49_chart_6.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.098,
+            0.85,
+            0.414,
+            0.869
+          ],
+          "level": 2,
+          "content": "2.9 Systems and Control Theory"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.877,
+            0.902,
+            0.935
+          ],
+          "content": "The device shown in Fig. 2.8 is a form of a dynamical system. In engineering, the analysis of such systems is achieved by Systems and Control Theory. This provides a framework to analyse properties of interconnections of input/output systems. Control Theory has"
+        }
+      ]
+    },
+    {
+      "page_idx": 50,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.101,
+            0.068,
+            0.123,
+            0.08
+          ],
+          "content": "36"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.399,
+            0.068,
+            0.618,
+            0.082
+          ],
+          "content": "Synthetic Biology — A Primer"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.104,
+            0.9,
+            0.16
+          ],
+          "continues_prev": true,
+          "content": "been extensively used in the design of control engineering systems and in the study of physiological systems. Control Theory could also provide a systematic framework to design and build biological systems."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.163,
+            0.902,
+            0.396
+          ],
+          "content": "The challenges in modelling systems and devices are to identify and derive a suitable mathematical model, to describe the system and to determine its parameters. Modelling can be performed, for example, using a black box approach. Here the details of the system are generally ignored. The focus of the black box approach is to use the input and output of the system (or device) to define a transfer function that characterises the system behaviour. Hence, the relationship between the output variable and the input variable of the system is described by the transfer function. The transfer function is a property of a system itself, a linear system independent of the magnitude and nature of the input or driving function. This method of modelling has been widely used in the study of physiological systems. For example, for heart rate variability (HRV) the system can be described by a series of components (described in the Laplace Domain), connected in a manner that describes the overall system."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.099,
+            0.423,
+            0.303,
+            0.44
+          ],
+          "level": 2,
+          "content": "2.9.1 Block diagrams"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.45,
+            0.9,
+            0.507
+          ],
+          "content": "The basis of the Systems and Control methodology is the representation of devices and systems in terms of block diagrams, derived from descriptions of their ODEs. As will be shown, these techniques also allow the incorporation of nonlinearities into the model."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.509,
+            0.528,
+            0.527
+          ],
+          "content": "For example, the Laplace Domain equation"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.42,
+            0.545,
+            0.899,
+            0.563
+          ],
+          "content": "Y (s) = G (s) X (s) \\tag {5}",
+          "image_source": "../../raw/pages_0049-0064/images/page_50_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.581,
+            0.729,
+            0.598
+          ],
+          "content": "can be expressed in a block diagram form as shown below in Fig. 2.16."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.6,
+            0.9,
+            0.657
+          ],
+          "content": "For more complex systems, it is possible to break the dynamic down still further by using multiple blocks in series. So, here, $G ( s )$ becomes $G _ { 1 } ( s )$ and $G _ { 2 } ( s )$ as shown in Fig. 2.17."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.364,
+            0.686,
+            0.637,
+            0.733
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"X(s)\"] --> B[\"G(s)\"]\n  B --> C[\"Y(s)\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.312,
+                0.744,
+                0.685,
+                0.76
+              ],
+              "content": "Fig. 2.16 The block diagram of version of Eq. (4)."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0049-0064/images/page_50_image_10.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.153,
+            0.79,
+            0.845,
+            0.871
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.252,
+                0.882,
+                0.744,
+                0.899
+              ],
+              "content": "Fig. 2.17 The breaking down of G(s) into multiple blocks in series."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0049-0064/images/page_50_image_12.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 51,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.349,
+            0.067,
+            0.632,
+            0.082
+          ],
+          "content": "Basic Concepts in Engineering Biology"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.877,
+            0.068,
+            0.897,
+            0.08
+          ],
+          "content": "37"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.33,
+            0.103,
+            0.67,
+            0.215
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  R[\"R(s)\"] -->|\"+\"| ×((\"×\"))\n  G[\"G(s)\"] --> C[\"C(s)\"]\n  H[\"H(s)\"] -->|\"-\"| node[\"×\"]\n  C --> H\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.308,
+                0.227,
+                0.688,
+                0.243
+              ],
+              "content": "Fig. 2.18 A block diagram of a closed-loop system."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0049-0064/images/page_51_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.262,
+            0.9,
+            0.318
+          ],
+          "content": "Now referring to the block diagram, the arrows only represent information flow, so that referring to the right-hand part of the diagram in Fig. 2.17, if we were to introduce an output for the block containing $G _ { 1 } ( s )$ , say $Z ( s )$ , then $Z ( s )$ could be defined as:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.414,
+            0.332,
+            0.897,
+            0.349
+          ],
+          "content": "Z (s) = G _ {1} (s) X (s) \\tag {6}",
+          "image_source": "../../raw/pages_0049-0064/images/page_51_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.362,
+            0.899,
+            0.418
+          ],
+          "content": "The block diagram method can be extended to include feedback, as shown in Fig. 2.18. This configuration is often referred to as a closed-loop system (where the symbol with the X inside the circle is a comparator)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.421,
+            0.898,
+            0.477
+          ],
+          "content": "The method is also capable of representing blocks in parallel (e.g. if $G _ { 1 } ( s )$ and $G _ { 2 } ( s )$ were in parallel, rather than series). A final point, blocks in the Laplace Domain are said to be described by ‘Transfer Functions’, so G(s) actually represents a Transfer Function."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.098,
+            0.501,
+            0.402,
+            0.518
+          ],
+          "level": 2,
+          "content": "2.9.2 Laplace transform method"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.527,
+            0.899,
+            0.584
+          ],
+          "content": "By way of example, the regulatory device shown in Fig. 2.19 can be represented as a block diagram as shown in Fig. 2.14. Block 1 represents the transcription process described by Eq. (1) and Block 2 represents the translation process described by Eq. (2)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.586,
+            0.9,
+            0.643
+          ],
+          "content": "Referring to the equations of the example device shown in Fig. 2.8, Eq. (2) is a linear equation. Hence, Laplace transformation can be applied directly. The transformation of Eq. (2) is as follows:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.653,
+            0.687,
+            0.672
+          ],
+          "content": "The Laplace transform of Eq. (2), described earlier in this chapter,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.368,
+            0.68,
+            0.897,
+            0.716
+          ],
+          "content": "\\frac {d [ P ]}{d t} = k _ {t l} [ m R N A ] - d _ {p} \\cdot [ P ] \\tag {7}",
+          "image_source": "../../raw/pages_0049-0064/images/page_51_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.723,
+            0.45,
+            0.741
+          ],
+          "content": "with zero initial conditions is given by:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.371,
+            0.753,
+            0.897,
+            0.773
+          ],
+          "content": "s [ P ] = k _ {t l} [ m R N A ] - d _ {p} \\cdot [ P ] \\tag {8}",
+          "image_source": "../../raw/pages_0049-0064/images/page_51_equation_14.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.338,
+            0.79,
+            0.663,
+            0.904
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  Input[\"Input\"] --> Sum((X))\n  ErrorSignal[\"Error Signal\"] --> Sum\n  FeedbackSignal[\"Feedback Signal\"] --> Sum\n  Sum --> G[\"G(s)\"]\n  G --> Output[\"Output\"]\n  Output --> H[\"H(s)\"]\n  H --> FeedbackSignal\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.236,
+                0.916,
+                0.759,
+                0.932
+              ],
+              "content": "Fig. 2.19 Representation of the regulatory device using block diagrams."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0049-0064/images/page_51_image_15.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 52,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.101,
+            0.068,
+            0.121,
+            0.079
+          ],
+          "content": "38"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.4,
+            0.068,
+            0.618,
+            0.081
+          ],
+          "content": "Synthetic Biology — A Primer"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.104,
+            0.389,
+            0.122
+          ],
+          "content": "By arranging Eq. (8), we obtain:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.137,
+            0.896,
+            0.175
+          ],
+          "content": "G _ {2} (s) = \\frac {[ P ]}{[ m R N A ]} = \\frac {k _ {t l}}{s + d _ {p}} \\tag {9}",
+          "image_source": "../../raw/pages_0049-0064/images/page_52_equation_3.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.383,
+            0.179,
+            0.896,
+            0.213
+          ],
+          "content": "G (s) = \\frac {K}{s + a} \\tag {10}",
+          "image_source": "../../raw/pages_0049-0064/images/page_52_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.226,
+            0.898,
+            0.262
+          ],
+          "content": "$G _ { 2 } ( s )$ is now in a standard form, which is called a simple pole. Simple poles have the general form where a and K are constants."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.265,
+            0.9,
+            0.342
+          ],
+          "content": "In the Laplace Domain the system solution can be represented by the transient response plus the steady state response. As stated previously, in Eq. (3), the Laplace transform operator is defined as $^ { \\circ } s ^ { \\prime }$ . This definition is extended to incorporate the concept of the steady state and transient responses, so s becomes:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.448,
+            0.362,
+            0.896,
+            0.376
+          ],
+          "content": "s = \\sigma + j \\omega \\tag {11}",
+          "image_source": "../../raw/pages_0049-0064/images/page_52_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.394,
+            0.898,
+            0.432
+          ],
+          "content": "where $\\sigma$ is the transient response and jω the steady state response. Hence, s is replaced by jω to obtain the steady state response of the system (usually called the frequency response)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.434,
+            0.899,
+            0.529
+          ],
+          "content": "In relation to systematic design in synthetic biology, the frequency response is often particularly useful when determining the mathematical description of parts of the device or system, in order to develop a computer model. In practice, there are a number of ways of obtaining such a description from experimental data and/or the literature. An important method of doing this is Bode Analysis."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.099,
+            0.562,
+            0.371,
+            0.58
+          ],
+          "level": 2,
+          "content": "2.10 Models and Languages"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.099,
+            0.589,
+            0.283,
+            0.607
+          ],
+          "level": 2,
+          "content": "2.10.1 Applications"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.616,
+            0.899,
+            0.675
+          ],
+          "content": "This section discusses some applications where biological analogues of electrical devices could be constructed using a synthetic biology approach. For more information on these and other devices as well as their construction from biological parts, please see Chapter 5."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.099,
+            0.693,
+            0.424,
+            0.712
+          ],
+          "level": 2,
+          "content": "2.10.1.1 Electronics and computing"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.72,
+            0.901,
+            0.936
+          ],
+          "content": "The ability to manipulate signals and functions is a key requirement of many engineering devices and will be required of synthetic biology constructs. For example, many sensors need to combine, control or switch signals to produce a reliable output signal. With this approach the conceptual methodologies of electronics and computing can be applied to applications in synthetic biology. The operating speeds, time constants and power consumption of biologically synthesised parts and devices are likely to be very different from silicon-based electronic devices and computers. For example, biologically synthesised devices may be operationally much slower than their electronic equivalents. This may not be a disadvantage if such devices are to be used to monitor biological processes, since the time constants of the devices would match those of the environment in which they would operate. In addition, they may be driven by power supplies that derive their energy from the surrounding environment."
+        }
+      ]
+    },
+    {
+      "page_idx": 53,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.35,
+            0.068,
+            0.635,
+            0.082
+          ],
+          "content": "Basic Concepts in Engineering Biology"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.878,
+            0.068,
+            0.898,
+            0.08
+          ],
+          "content": "39"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.103,
+            0.9,
+            0.141
+          ],
+          "content": "Biologically synthesised devices may also be capable of operating in environments that would be inhospitable to their electronic counterparts."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.101,
+            0.166,
+            0.329,
+            0.186
+          ],
+          "level": 2,
+          "content": "2.10.1.1.1 Orthogonality"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.194,
+            0.902,
+            0.543
+          ],
+          "content": "One important problem which needs to be addressed is that of crosstalk in biological systems. Although biological devices are expected, conceptually, to work in a similar manner to their electronic equivalents, a key difference is that unlike electronic digital circuits the individual gates are not connected by wires. In electronic digital circuits there is no significant crosstalk, provided the circuit is properly laid out. This is not the case in synthetic biology where designed constructs sit in a melange of different substances. Since biological systems lack the same physical isolation as occurs in electronic and mechanical engineering, the interactions of biological components have to depend on the chemical specificity between them. However, the toolkit of synthetic biology now contains only a small repertoire of orthogonal regulatory elements. Here orthogonality means that the modules should not interfere with existing parts and modules in the designed biological systems as well as the genetic background circuit of the host. This constrains the development of more complicated systems that might comprise many components because the use of non-orthogonal components in one system likely leads to unintended interactions. There is a pressing need to expand the synthetic biology toolkit of available parts and modules that are truly orthogonal. This will provide the flexibility to construct larger-scale customisable systems with more complex circuitry, like the combinatorial logic circuits found in electronic engineering."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.101,
+            0.569,
+            0.432,
+            0.589
+          ],
+          "level": 2,
+          "content": "2.10.1.1.2 Logical devices and gates"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.596,
+            0.902,
+            0.81
+          ],
+          "content": "The Texas Instruments data book in the 1970s transformed the application of electronic integrated circuits by allowing designers to combine logical functions using standard parts. Using a base set of Boolean functions represented by the components AND, NOT, OR, etc. any logical function can be produced, including addition and multiplication. A key aspect of this was the TTL standard permitting reliable interface between components. The development of a similar biologically engineered armoury of components performing logical functions will expand the range of biologically engineered devices that can be constructed. Logic gates are the basis of all digital devices from calculators through microprocessors to computers. The ability to design and build robust biological logic gates (BioLogic) is an important goal in synthetic biology. This is the basis upon which biological systems potentially can be controlled."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.101,
+            0.835,
+            0.456,
+            0.854
+          ],
+          "level": 2,
+          "content": "2.10.1.1.3 Timing functions and clocks"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.863,
+            0.902,
+            0.94
+          ],
+          "content": "The ability to generate time delays or time intervals is another tool used in the design of electronic circuits, and will be required to provide a flexible range of functions required in synthetic biology-engineered devices.A time delay coupled with a series of inverters (NAND gates) constitute the basis of a simple oscillator which can then produce a regular clock signal."
+        }
+      ]
+    },
+    {
+      "page_idx": 54,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.101,
+            0.068,
+            0.123,
+            0.08
+          ],
+          "content": "40"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.4,
+            0.068,
+            0.618,
+            0.082
+          ],
+          "content": "Synthetic Biology — A Primer"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.104,
+            0.9,
+            0.239
+          ],
+          "content": "The operation of many logical devices requires a clock to synchronise switching. Clocks can also be used with a counter to time multiple events. An example is work carried out on oscillators which are based on predator–prey dynamics using the Lotka–Volterra equations. The intention is to extend this work and look at other dynamics which could form the basis of clocks for logical devices — e.g. oscillators can now be realised in terms of protein concentrations. Combined with counters this can be used to generate a time delay, or other operations."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.098,
+            0.263,
+            0.322,
+            0.279
+          ],
+          "level": 2,
+          "content": "2.10.1.1.4 Race hazards"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.29,
+            0.901,
+            0.445
+          ],
+          "content": "A race condition or race hazard is a flaw in an electronic system or process whereby the output and/or result of the process is unexpectedly and critically dependent on the sequence or timing of other events. The term originates with the idea of two signals racing each other to influence the output first, making the outcome much less predictable. In digital electronic circuits significant amounts of time and effort have been devoted to the elimination of such problems. With proper circuit layouts, digital electronic circuits are no longer subject to this problem. However, it may well not be the case in relation to biologically-based devices where the connections between gates are biochemical."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.098,
+            0.469,
+            0.285,
+            0.485
+          ],
+          "level": 2,
+          "content": "2.10.1.1.5 Counters"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.496,
+            0.901,
+            0.673
+          ],
+          "content": "Once simple multi-stage logical devices have been successfully constructed, following the conclusion of the work on orthogonality and hazards, the next stage will be to construct devices which implement human-defined functions. Counters are a good example of such devices that can be used in association with clocks to define time intervals, or to trigger secondary events after a defined number of primary events. In electronic terms a counter requires an adder using the logic gates discussed above, together with a comparator that compares the count with a target number. The development of counters is a precursor to developing a range of BioLogical devices which will address issues relating to control and signalling in the context of synthetic biology."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.098,
+            0.699,
+            0.185,
+            0.717
+          ],
+          "level": 2,
+          "content": "Reading"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.098,
+            0.723,
+            0.9,
+            0.824
+          ],
+          "sub_type": "ref_text",
+          "content": "- Dorf, RC and Bishop, RH. (2008). Modern Control Systems, 11th Ed. Prentice Hall, Upper Saddle River, NJ.\n- Endy, D. (2005). Foundations for Engineering Biology. Nature 438: 449–453.\n- Franklin, GF, Powell, DJ and Workman, ML. (1997). Digital Control of Dynamic Systems, 3rd Ed. Prentice Hall, Upper Saddle River, NJ.\n- Ogata, K. (2001). Modern Control Engineering, 4th Ed. Prentice Hall, Upper Saddle River, NJ."
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Synthetic Biology",
+      "authors": [
+        "Baldwin, Geoff"
+      ],
+      "created_at": "2015-07-31T09:22:35+05:30",
+      "modified_at": "2015-08-13T18:30:02+05:30",
+      "creator_application": "DVIPSONE 2.2.8  http://www.YandY.com",
+      "producer_application": "Acrobat Distiller 5.0.5 (Windows)",
+      "page_count": 194,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 0,
+          "width_pt": 454.3219909667969,
+          "height_pt": 662.9869995117188
+        },
+        {
+          "page_idx": 1,
+          "width_pt": 453.8800048828125,
+          "height_pt": 662.7199935913086
+        },
+        {
+          "page_idx": 2,
+          "width_pt": 453.8800048828125,
+          "height_pt": 662.7200088500977
+        },
+        {
+          "page_idx": 3,
+          "width_pt": 453.8800048828125,
+          "height_pt": 662.7199935913086
+        },
+        {
+          "page_idx": 4,
+          "width_pt": 453.8800048828125,
+          "height_pt": 662.7199935913086
+        },
+        {
+          "page_idx": 5,
+          "width_pt": 453.8800048828125,
+          "height_pt": 662.7199935913086
+        },
+        {
+          "page_idx": 6,
+          "width_pt": 453.8800048828125,
+          "height_pt": 662.7200088500977
+        },
+        {
+          "page_idx": 7,
+          "width_pt": 453.8800048828125,
+          "height_pt": 662.7199935913086
+        },
+        {
+          "page_idx": 8,
+          "width_pt": 453.8800048828125,
+          "height_pt": 662.7200088500977
+        },
+        {
+          "page_idx": 9,
+          "width_pt": 453.8800048828125,
+          "height_pt": 662.7199935913086
+        },
+        {
+          "page_idx": 10,
+          "width_pt": 453.8800048828125,
+          "height_pt": 662.7199935913086
+        },
+        {
+          "page_idx": 11,
+          "width_pt": 453.8800048828125,
+          "height_pt": 662.7199935913086
+        },
+        {
+          "page_idx": 12,
+          "width_pt": 453.8800048828125,
+          "height_pt": 662.7200088500977
+        },
+        {
+          "page_idx": 13,
+          "width_pt": 453.8800048828125,
+          "height_pt": 662.7199935913086
+        },
+        {
+          "page_idx": 14,
+          "width_pt": 453.8800048828125,
+          "height_pt": 662.7199935913086
+        },
+        {
+          "page_idx": 15,
+          "width_pt": 453.8800048828125,
+          "height_pt": 662.7199935913086
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}
