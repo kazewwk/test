@@ -1,0 +1,2183 @@
+{
+  "pages": [
+    {
+      "page_idx": 560,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "544"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.068,
+            0.868,
+            0.105
+          ],
+          "content": "1. Choose a uniformly random J in $\\{ 1 , 2 , \\ldots , m \\}$ , and obtain $y$ from x by replacing $x _ { J }$ with $1 - x _ { J }$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.121,
+            0.868,
+            0.175
+          ],
+          "content": "2. If $y$ is not in $C ,$ stay at $x .$ If y is in $C ,$ flip a coin that lands Heads with probability min $\\tilde { \\left( 1 , e ^ { \\beta ( V ( y ) - \\tilde { V ( x ) } ) } \\right) }$ . If the coin lands Heads, $\\mathbf { g } \\mathbf { o }$ to $y ;$ otherwise, stay at $x .$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.205,
+            0.896,
+            0.356
+          ],
+          "content": "This chain will converge to the desired stationary distribution. But how should $\\beta$ be chosen? If $\\beta$ is very large, then the best solutions are given very high probability, but the chain may be very slow to converge to the stationary distribution since it can easily get stuck in local modes: the chain may find itself in a state which, while not globally optimal, is still better than the other states that can be reached in one step, and then the probability of rejecting proposals to go elsewhere may be very high. On the other hand, if $\\beta$ is close to 0, then it’s easy for the chain to explore the space, but there isn’t as much incentive for the chain to uncover good solutions."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.371,
+            0.897,
+            0.522
+          ],
+          "content": "An optimization technique called simulated annealing avoids having to choose one value of $\\beta .$ Instead, one specifies a sequence of $\\beta$ values, such that $\\beta$ gradually increases over time. At first, $\\beta$ is small and the space $C$ can be explored broadly. As $\\beta$ gets larger and larger, the stationary distribution becomes more and more concentrated on the best solution or solutions. The name “simulated annealing” comes from an analogy with the annealing of metals, a process in which a metal is heated to a high temperature and then gradually cooled until it reaches a very strong, stable state; $\\beta$ corresponds to the reciprocal of temperature. \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.536,
+            0.896,
+            0.631
+          ],
+          "content": "As mentioned in Example 12.1.4, the Metropolis-Hastings algorithm can also be applied in a continuous state space, using PDFs instead of PMFs. This is extremely useful in Bayesian inference, where we often want to study the posterior distribution of an unknown parameter. This posterior distribution may be very complicated to work with analytically, and may have an unknown normalizing constant."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.645,
+            0.896,
+            0.74
+          ],
+          "content": "The MCMC approach is to obtain a large number of draws from a Markov chain whose stationary distribution is the posterior distribution. We can then use these draws to approximate the true posterior distribution. For example, we can estimate the posterior mean using the sample mean of these draws, and the posterior median using the sample median of the draws."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.754,
+            0.896,
+            0.848
+          ],
+          "content": "Gelman et al. [10] and McElreath [18] provide extensive introductions to Bayesian thinking and Bayesian data analysis, with wide ranges of applications and emphasis on statistical modeling and simulation. Various supplementary materials for these two books can be found at [http://www.stat.columbia.edu/\\~gelman/book](http://www.stat.columbia.edu) and [https://xcelab.net/rm/statistical-rethinking](https://xcelab.net) respectively."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.862,
+            0.896,
+            0.921
+          ],
+          "content": "Example 12.1.8 (Normal-Normal conjugacy). Let $Y | \\theta   \\sim   \\mathcal { N } ( \\theta , \\sigma ^ { 2 } )$ , where $\\sigma ^ { 2 }$ is known but $\\theta$ is unknown. Using the Bayesian framework, we treat θ as a random variable, with prior given by $\\theta \\sim \\mathcal { N } ( \\mu , \\tau ^ { 2 } )$ for some known constants $\\mu$ and $\\tau ^ { 2 }$ . That"
+        }
+      ]
+    },
+    {
+      "page_idx": 561,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.038,
+            0.347,
+            0.053
+          ],
+          "content": "Markov chain Monte Carlo"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "545"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.068,
+            0.405,
+            0.085
+          ],
+          "content": "is, we have the two-level model"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.449,
+            0.105,
+            0.57,
+            0.125
+          ],
+          "content": "\\theta \\sim \\mathcal {N} (\\mu , \\tau^ {2})",
+          "image_source": "images/page_561_equation_3.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.425,
+            0.131,
+            0.574,
+            0.149
+          ],
+          "content": "Y | \\theta \\sim \\mathcal {N} (\\theta , \\sigma^ {2}).",
+          "image_source": "images/page_561_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.168,
+            0.893,
+            0.204
+          ],
+          "content": "Describe how to use the Metropolis-Hastings algorithm to find the posterior mean and variance of θ after observing the value of $Y$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.217,
+            0.195,
+            0.234
+          ],
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.247,
+            0.895,
+            0.303
+          ],
+          "content": "After observing $Y = y$ , we can update our prior uncertainty for θ using Bayes’ rule. Because we are interested in the posterior distribution of $\\theta ,$ any terms not depending on $\\theta$ can be treated as part of the normalizing constant. Thus,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.254,
+            0.318,
+            0.745,
+            0.343
+          ],
+          "content": "f _ {\\theta | Y} (\\theta | y) \\propto f _ {Y | \\theta} (y | \\theta) f _ {\\theta} (\\theta) \\propto e ^ {- \\frac {1}{2 \\sigma^ {2}} (y - \\theta) ^ {2}} e ^ {- \\frac {1}{2 \\tau^ {2}} (\\theta - \\mu) ^ {2}}.",
+          "image_source": "images/page_561_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.359,
+            0.895,
+            0.453
+          ],
+          "content": "Since we have a quadratic function of θ in the exponent, we recognize the posterior PDF of $\\theta$ as a Normal PDF. The posterior distribution stays in the Normal family, which tells us that the Normal is the conjugate prior of the Normal. In fact, by completing the square (a rather tedious calculation which we shall omit), we can obtain an explicit formula for the posterior distribution of $\\theta ;$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.265,
+            0.469,
+            0.731,
+            0.519
+          ],
+          "content": "\\theta | Y = y \\sim \\mathcal {N} \\left(\\frac {\\frac {1}{\\sigma^ {2}}}{\\frac {1}{\\sigma^ {2}} + \\frac {1}{\\tau^ {2}}} y + \\frac {\\frac {1}{\\tau^ {2}}}{\\frac {1}{\\sigma^ {2}} + \\frac {1}{\\tau^ {2}}} \\mu , \\frac {1}{\\frac {1}{\\sigma^ {2}} + \\frac {1}{\\tau^ {2}}}\\right).",
+          "image_source": "images/page_561_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.545,
+            0.482,
+            0.563
+          ],
+          "content": "Let’s try to make sense of this formula."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.099,
+            0.576,
+            0.896,
+            0.776
+          ],
+          "sub_type": "text",
+          "content": "• It says that the posterior mean of θ, $E ( \\theta | Y = y )$ , is a weighted average of the prior mean $\\mu$ and the observed data y. The weights are determined by how certain we are about $\\theta$ before getting the data and how precisely the data are measured. If we are already very sure about $\\theta$ even before getting the data, then $\\tau ^ { 2 }$ will be small and $1 / \\tau ^ { 2 }$ will be large, which will give a lot of weight to the prior mean $\\mu .$ On the other hand, if the data are very precise, then $\\sigma ^ { 2 }$ will be small and $1 / \\sigma ^ { 2 }$ will be large, which will give a lot of weight to the data $y$ .\n• For the posterior variance, if we define precision to be the reciprocal of variance, then the result simply says that the posterior precision of $\\theta$ is the sum of the prior precision $1 / \\tau ^ { 2 }$ and the data precision $1 / \\sigma ^ { 2 }$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.787,
+            0.896,
+            0.92
+          ],
+          "content": "This is all well and good, but let’s suppose we didn’t know how to complete the square, or that we wanted to check our calculations for specific values of $y ,   \\sigma ^ { 2 } ,   \\mu ,$ and $\\tau ^ { 2 }$ . We can do this by simulating from the posterior distribution of $\\theta ,$ using the Metropolis-Hastings algorithm to construct a Markov chain whose stationary distribution is $f _ { \\theta | Y } ( \\theta | y )$ . The same method can also be applied to a wide variety of distributions that are far more complicated than the Normal to work with analytically. A Metropolis-Hastings algorithm for generating $\\theta _ { 0 } , \\theta _ { 1 } , \\ldots$ is as follows."
+        }
+      ]
+    },
+    {
+      "page_idx": 562,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.052
+          ],
+          "content": "546"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.068,
+            0.873,
+            0.201
+          ],
+          "content": "1. If $\\theta _ { n } = x$ , propose a new state $x ^ { \\prime }$ according to some transition rule. One way to do this in a continuous state space is to generate a Normal r.v. $\\epsilon _ { n }$ with mean 0 and add it onto the current state to get the proposed state: in other words, we generate $\\epsilon _ { n } \\sim \\mathcal { N } ( 0 , d ^ { 2 } )$ for some constant $d ,$ and then set $x ^ { \\prime } = x + \\epsilon _ { n }$ . This is the analog of a transition matrix for a continuous state space. The only additional detail is deciding $d ;$ in practice, we try to choose a moderate value that is neither too large nor too small."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.21,
+            0.489,
+            0.228
+          ],
+          "content": "2. The acceptance probability is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.358,
+            0.235,
+            0.682,
+            0.277
+          ],
+          "content": "a (x, x ^ {\\prime}) = \\min \\left(\\frac {s (x ^ {\\prime}) p (x ^ {\\prime} , x)}{s (x) p (x , x ^ {\\prime})}, 1\\right),",
+          "image_source": "images/page_562_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.283,
+            0.872,
+            0.341
+          ],
+          "content": "where $s$ is the desired stationary PDF (this was a PMF in the discrete case) and $p ( x , x ^ { \\prime } )$ is the probability density of proposing $x ^ { \\prime }$ from $x$ (this was $p _ { i j }$ in the discrete case)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.349,
+            0.872,
+            0.406
+          ],
+          "content": "In this problem, we want the stationary PDF to be $f _ { \\theta | Y }$ , so we’ll use that for s. As for $p ( x , x ^ { \\prime } )$ , proposing $x ^ { \\prime }$ from x is the same as having $\\epsilon _ { n } = x ^ { \\prime }   -   x$ so we evaluate the PDF of $\\epsilon _ { n }$ at $x ^ { \\prime } - x$ to get"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.38,
+            0.412,
+            0.659,
+            0.451
+          ],
+          "content": "p (x, x ^ {\\prime}) = \\frac {1}{\\sqrt {2 \\pi} d} e ^ {- \\frac {1}{2 d ^ {2}} (x ^ {\\prime} - x) ^ {2}}.",
+          "image_source": "images/page_562_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.458,
+            0.872,
+            0.496
+          ],
+          "content": "However, since $p ( x ^ { \\prime } , x ) = p ( x , x ^ { \\prime } )$ , these terms cancel from the acceptance probability, leaving us with"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.369,
+            0.502,
+            0.671,
+            0.546
+          ],
+          "content": "a (x, x ^ {\\prime}) = \\min \\left(\\frac {f _ {\\theta | Y} (x ^ {\\prime} | y)}{f _ {\\theta | Y} (x | y)}, 1\\right).",
+          "image_source": "images/page_562_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.553,
+            0.87,
+            0.591
+          ],
+          "content": "Once again, the normalizing constant cancels in the numerator and denominator of the acceptance probability."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.599,
+            0.87,
+            0.636
+          ],
+          "content": "3. Flip a coin that lands Heads with probability $a ( x , x ^ { \\prime } )$ , independently of the Markov chain."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.646,
+            0.87,
+            0.684
+          ],
+          "content": "4. If the coin lands Heads, accept the proposal and set $\\theta _ { n + 1 } = x ^ { \\prime }$ . Otherwise, stay in place and set $\\theta _ { n + 1 } = x$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.701,
+            0.897,
+            0.815
+          ],
+          "content": "We ran the algorithm for $1 0 ^ { 4 }$ iterations with the settings $Y   =   3 ,   \\mu   =   0 ,   \\sigma ^ { 2 }   =   1$ $\\tau ^ { 2 } = 4$ , and $d = 1$ . Figure 12.2 shows a histogram of the resulting draws from the posterior distribution of $\\theta .$ The posterior distribution indeed looks like a Normal curve. We can estimate the posterior mean and variance using the sample mean and sample variance. For the draws we obtained, the sample mean is 2.4 and the sample variance is 0.8. These are in close agreement with the theoretical values:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.194,
+            0.82,
+            0.823,
+            0.868
+          ],
+          "content": "E (\\theta | Y = 3) = \\frac {\\frac {1}{\\sigma^ {2}}}{\\frac {1}{\\sigma^ {2}} + \\frac {1}{\\tau^ {2}}} y + \\frac {\\frac {1}{\\tau^ {2}}}{\\frac {1}{\\sigma^ {2}} + \\frac {1}{\\tau^ {2}}} \\mu = \\frac {1}{1 + \\frac {1}{4}} \\cdot 3 + \\frac {\\frac {1}{4}}{1 + \\frac {1}{4}} \\cdot 0 = 2. 8,",
+          "image_source": "images/page_562_equation_14.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.178,
+            0.874,
+            0.56,
+            0.918
+          ],
+          "content": "\\mathrm{Var} (\\theta | Y = 3) = \\frac {1}{\\frac {1}{\\sigma^ {2}} + \\frac {1}{\\tau^ {2}}} = \\frac {1}{1 + \\frac {1}{4}} = 0. 8.",
+          "image_source": "images/page_562_equation_15.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 563,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.038,
+            0.347,
+            0.053
+          ],
+          "content": "Markov chain Monte Carlo"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": "547"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.069,
+            0.897,
+            0.145
+          ],
+          "content": "The posterior mean is closer to the observed data than to the prior mean, which makes sense because $\\tau ^ { 2 }$ is larger than $\\sigma ^ { 2 }$ , corresponding to a relatively high level of prior uncertainty. Using the code provided in the R section of this chapter, you can see how the posterior distribution changes for different values of $y ,   \\mu ,   \\sigma ^ { 2 }$ , and $\\tau ^ { 2 }$"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.217,
+            0.18,
+            0.765,
+            0.402
+          ],
+          "sub_type": "histogram",
+          "content": "| Bin (theta) | Frequency |\n| --- | --- |\n| -0.5~0 | ~30 |\n| 0~0.5 | ~180 |\n| 0.5~1 | ~450 |\n| 1~1.5 | ~970 |\n| 1.5~2 | ~1780 |\n| 2~2.5 | ~2200 |\n| 2.5~3 | ~1950 |\n| 3~3.5 | ~1380 |\n| 3.5~4 | ~780 |\n| 4~4.5 | ~290 |\n| 4.5~5 | ~120 |\n| 5~5.5 | ~10 |",
+          "captions": [
+            {
+              "bbox": [
+                0.104,
+                0.429,
+                0.248,
+                0.444
+              ],
+              "content": "FIGURE 12.2"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_563_chart_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.447,
+            0.897,
+            0.503
+          ],
+          "content": "Histogram of $1 0 ^ { 4 }$ draws from the posterior distribution of θ given $Y = 3$ , obtained using Metropolis-Hastings with $\\mu = 0 ,   \\sigma ^ { 2 } = 1$ , and $\\tau ^ { 2 } = 4$ . The sample mean is 2.4 and the sample variance is 0.8, in agreement with the theoretical values."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.122,
+            0.54,
+            0.876,
+            0.714
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.104,
+                0.733,
+                0.248,
+                0.747
+              ],
+              "content": "FIGURE 12.3"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_563_image_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.751,
+            0.841,
+            0.769
+          ],
+          "content": "Trace plots of $\\theta _ { n }$ as a function of the iteration number n, for $d = 1 0 0 , 1 , 0 . 0 1$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.788,
+            0.897,
+            0.92
+          ],
+          "content": "To help diagnose whether our Markov chain is adequately exploring the state space, we can make a trace plot, which is a plot of the samples $\\theta _ { n }$ as a function of n. Figure 12.3 shows three trace plots corresponding to three different choices for the standard deviation d of the proposals, namely $d = 1 0 0 ,   d = 1$ , and $d = 0 . 0 1$ . The trace plot for $d = 1 0 0$ has numerous flat regions where the chain is staying in place. This indicates that d is too large, so the proposals are often rejected. On the other hand, $d = 0 . 0 1$ is too small; we can see from the trace plot that the chain takes tiny"
+        }
+      ]
+    },
+    {
+      "page_idx": 564,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.052
+          ],
+          "content": "548"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.895,
+            0.126
+          ],
+          "continues_prev": true,
+          "content": "steps and is unable to venture very far from its starting point. The trace plot for $d = 1$ is just right, exhibiting neither the low acceptance rate of the $d = 1 0 0$ chain, nor the restricted mobility of the $d = 0 . 0 1$ chain."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.135,
+            0.896,
+            0.21
+          ],
+          "content": "In this example, the posterior distribution of θ is available analytically, so we used MCMC for illustrative purposes, to show that the results obtained by MCMC agree with their theoretical counterparts. But the same technique also applies in problems where the prior isn’t conjugate and the posterior isn’t a named distribution. \u0003"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.293,
+            0.367,
+            0.314
+          ],
+          "level": 2,
+          "content": "12.2 Gibbs sampling"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.331,
+            0.897,
+            0.445
+          ],
+          "content": "Gibbs sampling is an MCMC algorithm for obtaining approximate draws from a joint distribution, based on sampling from conditional distributions one at a time: at each stage, one variable is updated (keeping all the other variables fixed) by drawing from the conditional distribution of that variable given all the other variables. This approach is especially useful in problems where these conditional distributions are pleasant to work with."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.455,
+            0.897,
+            0.569
+          ],
+          "content": "First we will run through how the Gibbs sampler works in the bivariate case, where the desired stationary distribution is the joint PMF of discrete r.v.s X and Y . There are several forms of Gibbs samplers, depending on the order in which updates are done. We will introduce two major kinds of Gibbs sampler: systematic scan, in which the updates sweep through the components in a deterministic order, and random scan, in which a randomly chosen component is updated at each stage."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.577,
+            0.897,
+            0.71
+          ],
+          "content": "Algorithm 12.2.1 (Systematic scan Gibbs sampler). Let X and Y be discrete r.v.s with joint PMF $p _ { X , Y } ( x , y ) \\; = \\; P ( X \\; = \\; x , Y \\; = \\; y )$ . We wish to construct a two-dimensional Markov chain $( X _ { n } , Y _ { n } )$ whose stationary distribution is $p _ { X , Y }$ . The systematic scan Gibbs sampler proceeds by updating the X-component and the Y -component in alternation. If the current state is $( X _ { n } , Y _ { n } )   =   ( x _ { n } , y _ { n } )$ , then we update the X-component while holding the Y -component fixed, and then update the Y -component while holding the X-component fixed:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.167,
+            0.729,
+            0.868,
+            0.812
+          ],
+          "sub_type": "text",
+          "content": "1. Draw $x _ { n + 1 }$ from the conditional distribution of X given $Y = y _ { n }$ , and set $X _ { n + 1 } = x _ { n + 1 }$\n2. Draw $y _ { n + 1 }$ from the conditional distribution of Y given $X = x _ { n + 1 }$ , and set $Y _ { n + 1 } = y _ { n + 1 }$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.833,
+            0.895,
+            0.873
+          ],
+          "content": "Repeating steps 1 and 2 over and over, the stationary distribution of the chain $( X _ { 0 } , Y _ { 0 } ) , ( X _ { 1 } , Y _ { 1 } ) , ( X _ { 2 } , Y _ { 2 } ) , \\ldots { \\operatorname { ~ i s ~ } } p _ { X , Y }$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.881,
+            0.897,
+            0.92
+          ],
+          "content": "Algorithm 12.2.2 (Random scan Gibbs sampler). As above, let X and Y be discrete r.v.s with joint PMF $p _ { X , Y } ( x , y )$ . We wish to construct a two-dimensional"
+        }
+      ]
+    },
+    {
+      "page_idx": 565,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.038,
+            0.347,
+            0.053
+          ],
+          "content": "Markov chain Monte Carlo"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "549"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.068,
+            0.896,
+            0.125
+          ],
+          "content": "Markov chain $( X _ { n } , Y _ { n } )$ whose stationary distribution is $p _ { X , Y }$ . Each move of the random scan Gibbs sampler picks a uniformly random component and updates it, according to the conditional distribution given the other component:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.175,
+            0.143,
+            0.786,
+            0.158
+          ],
+          "content": "1. Choose which component to update, with equal probabilities."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.171,
+            0.868,
+            0.244
+          ],
+          "content": "2. If the X-component was chosen, draw a value $x _ { n + 1 }$ from the conditional distribution of X given $Y = y _ { n }$ , and set $X _ { n + 1 } = x _ { n + 1 } , Y _ { n + 1 } = y _ { n } .$ Similarly, if the Y -component was chosen, draw a value $y _ { n + 1 }$ from the conditional distribution of Y given $X = x _ { n }$ , and set $X _ { n + 1 } = x _ { n } , Y _ { n + 1 } = y _ { n + 1 }$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.264,
+            0.894,
+            0.303
+          ],
+          "content": "Repeating steps 1 and 2 over and over, the stationary distribution of the chain $( X _ { 0 } , Y _ { 0 } ) , ( X _ { 1 } , Y _ { 1 } ) , ( X _ { 2 } , Y _ { 2 } ) , \\ldots$ is $p _ { X , Y }$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.311,
+            0.896,
+            0.443
+          ],
+          "content": "Gibbs sampling generalizes naturally to higher dimensions. If we want to sample from a d-dimensional joint distribution, the Markov chain we construct will be a sequence of d-dimensional random vectors. At each stage, we choose one component of the vector to update, and we draw from the conditional distribution of that component given the most recent values of the other components. We can either cycle through the components of the vector in a systematic order, or choose a random component to update each time."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.452,
+            0.896,
+            0.566
+          ],
+          "content": "The Gibbs sampler is less flexible than the Metropolis-Hastings algorithm in the sense that we don’t get to choose a proposal distribution; this also makes it simpler in the sense that we don’t have to choose a proposal distribution. The flavors of Gibbs and Metropolis-Hastings are rather different, in that Gibbs emphasizes conditional distributions while Metropolis-Hastings emphasizes acceptance probabilities. But the algorithms are closely connected, as we show below."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.574,
+            0.896,
+            0.65
+          ],
+          "content": "Theorem 12.2.3 (Random scan Gibbs as Metropolis-Hastings). The random scan Gibbs sampler is a special case of the Metropolis-Hastings algorithm, in which the proposal is always accepted. In particular, it follows that the stationary distribution of the random scan Gibbs sampler is as desired."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.667,
+            0.896,
+            0.763
+          ],
+          "content": "Proof. We will show this in two dimensions, but the proof is similar in any dimension. Let X and Y be discrete r.v.s whose joint PMF is the desired stationary distribution. Let’s work out what the Metropolis-Hastings algorithm says to do, using the following proposal distribution: from $( x , y )$ , randomly update one coordinate by running one move of the random scan Gibbs sampler."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.771,
+            0.367,
+            0.789
+          ],
+          "content": "To simplify notation, write"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.112,
+            0.802,
+            0.885,
+            0.823
+          ],
+          "content": "P (X = x, Y = y) = p (x, y), P (Y = y | X = x) = p (y | x), P (X = x | Y = y) = p (x | y).",
+          "image_source": "images/page_565_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.834,
+            0.896,
+            0.891
+          ],
+          "content": "More formally, we should write $p _ { Y | X } ( y | x )$ instead of $p ( y | x )$ , to avoid issues like wondering what $p ( 5 | 3 )$ means. But writing $p ( y | x )$ is more compact and does not create ambiguity in this proof."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.9,
+            0.894,
+            0.921
+          ],
+          "content": "Let’s compute the Metropolis-Hastings acceptance probability for going from $( x , y )$"
+        }
+      ]
+    },
+    {
+      "page_idx": 566,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "550"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.126
+          ],
+          "content": "to $( x ^ { \\prime } , y ^ { \\prime } )$ . The states $( x , y )$ and $( x ^ { \\prime } , y ^ { \\prime } )$ must be equal in at least one component, since the proposal says to update only one component. Suppose that $x = x ^ { \\prime }$ (the case $y = y ^ { \\prime }$ can be handled symmetrically). Then the acceptance probability is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.304,
+            0.141,
+            0.695,
+            0.186
+          ],
+          "content": "\\frac {p (x , y ^ {\\prime}) p (y | x) \\frac {1}{2}}{p (x , y) p (y ^ {\\prime} | x) \\frac {1}{2}} = \\frac {p (x) p (y ^ {\\prime} | x) p (y | x)}{p (x) p (y | x) p (y ^ {\\prime} | x)} = 1.",
+          "image_source": "images/page_566_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.199,
+            0.896,
+            0.236
+          ],
+          "content": "Thus, this Metropolis-Hastings algorithm always accepts the proposal! So it’s just running the random scan Gibbs sampler without modifying it. \u0004"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.26,
+            0.633,
+            0.278
+          ],
+          "content": "Let’s study some concrete examples of Gibbs samplers."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.289,
+            0.897,
+            0.44
+          ],
+          "content": "Example 12.2.4 (Graph coloring). Let G be a network (also called a graph): there are n nodes, and for each pair of distinct nodes, there either is or isn’t an edge joining them. We have a set of k colors, e.g., if $k = 7 .$ the color set may be {red, orange, yellow, green, blue, indigo, violet}. A k-coloring of the network is an assignment of a color to each node, such that two nodes joined by an edge can’t be the same color. For example, a 3-coloring of a network is illustrated below. Graph coloring is an important topic in computer science, with wide-ranging applications such as task scheduling and the game of Sudoku."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.316,
+            0.454,
+            0.681,
+            0.639
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph TD\n  A[\"Node 1\"] --> B[\"Node 2\"]\n  B --> C[\"Node 3\"]\n  C --> D[\"Node 4\"]\n  D --> E[\"Node 5\"]\n  E --> F[\"Node 6\"]\n  F --> G[\"Node 7\"]\n  G --> H[\"Node 8\"]\n  H --> I[\"Node 9\"]\n  I --> J[\"Node 10\"]\n  J --> K[\"Node 11\"]\n  K --> L[\"Node 12\"]\n  L --> M[\"Node 13\"]\n  M --> N[\"Node 14\"]\n  N --> O[\"Node 15\"]\n  O --> P[\"Node 16\"]\n  P --> Q[\"Node 17\"]\n  Q --> R[\"Node 18\"]\n  R --> S[\"Node 19\"]\n  S --> T[\"Node 20\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.103,
+                0.655,
+                0.25,
+                0.67
+              ],
+              "content": "FIGURE 12.4"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_566_image_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.673,
+            0.357,
+            0.69
+          ],
+          "content": "A 3-coloring of a network."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.709,
+            0.896,
+            0.822
+          ],
+          "content": "Suppose that it is possible to k-color G. Form a Markov chain on the space of all k-colorings of G, with transitions as follows: starting with a k-coloring of $G ,$ pick a uniformly random node, figure out what the legal colors are for that node, and then repaint that node with a uniformly random legal color (note that this random color may be the same as the current color). Show that this Markov chain is reversible, and find its stationary distribution."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.833,
+            0.196,
+            0.85
+          ],
+          "level": 2,
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.862,
+            0.896,
+            0.919
+          ],
+          "content": "Let C be the set of all k-colorings of G, and let $q _ { i j }$ be the transition probability of going from i to $j$ for any k-colorings i and $j$ in $C .$ We will show that $q _ { i j } = q _ { j i }$ which implies that the stationary distribution is uniform on $C .$"
+        }
+      ]
+    },
+    {
+      "page_idx": 567,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.038,
+            0.347,
+            0.053
+          ],
+          "content": "Markov chain Monte Carlo"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.892,
+            0.053
+          ],
+          "content": "551"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.145
+          ],
+          "content": "For any k-coloring i and node v, let $L ( i , v )$ be the number of legal colorings for node $v ,$ keeping the colors of all other nodes the same as they are in i. If k-colorings i and $j$ differ at more than one node, then $q _ { i j } = 0 = q _ { j i } . \\mathrm { ~ I f ~ } i = j$ , then obviously $q _ { i j } = q _ { j i }$ If i and $j$ differ at exactly one node v, then $L ( i , v ) = L ( j , v )$ , so"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.341,
+            0.156,
+            0.657,
+            0.196
+          ],
+          "content": "q _ {i j} = \\frac {1}{n} \\frac {1}{L (i , v)} = \\frac {1}{n} \\frac {1}{L (j , v)} = q _ {j i}.",
+          "image_source": "images/page_567_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.207,
+            0.895,
+            0.245
+          ],
+          "content": "So the transition matrix is symmetric, which shows that the stationary distribution is uniform over the state space."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.254,
+            0.896,
+            0.33
+          ],
+          "content": "How is this an example of Gibbs sampling? Think of each node in the graph as a discrete r.v. that can take on k possible values. These nodes have a joint distribution, and the constraint that connected nodes cannot have the same color imposes a complicated dependence structure between nodes."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.338,
+            0.897,
+            0.472
+          ],
+          "content": "We would like to sample a random k-coloring of the entire graph; that is, we want to draw from the joint distribution of all the nodes. Since this is difficult, we instead condition on all but one node. If the joint distribution is to be uniform over all legal graphs, then the conditional distribution of one node given all the others is uniform over its legal colors. Thus, at each stage of the algorithm, we are drawing from the conditional distribution of one node given all the others: we’re running a random scan Gibbs sampler! \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.479,
+            0.897,
+            0.575
+          ],
+          "content": "Example 12.2.5 (Darwin’s finches). When Charles Darwin visited the Galápagos Islands, he kept a record of the finch species he observed on each island. Table 12.1 summarizes Darwin’s data, with each row corresponding to a species and each column to an island. The presence of a 1 in entry $( i , j )$ of the table indicates that species i was observed on island $j .$"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.109,
+            0.587,
+            0.892,
+            0.826
+          ],
+          "content": "<table><tr><td rowspan=\"2\">Species</td><td colspan=\"18\">Island</td></tr><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>Total</td></tr><tr><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>14</td></tr><tr><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>13</td></tr><tr><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>14</td></tr><tr><td>4</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>10</td></tr><tr><td>5</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>12</td></tr><tr><td>6</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td></tr><tr><td>7</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>10</td></tr><tr><td>8</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr><tr><td>9</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>10</td></tr><tr><td>10</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>11</td></tr><tr><td>11</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>6</td></tr><tr><td>12</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td></tr><tr><td>13</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>17</td></tr><tr><td>Total</td><td>4</td><td>4</td><td>11</td><td>10</td><td>10</td><td>8</td><td>9</td><td>10</td><td>8</td><td>9</td><td>3</td><td>10</td><td>4</td><td>7</td><td>9</td><td>3</td><td>3</td><td>122</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.104,
+                0.835,
+                0.896,
+                0.892
+              ],
+              "content": "TABLE 12.1 Presence of 13 finch species (rows) on 17 islands (columns). A value of 1 in entry $( i , j )$ indicates that species i was observed on island j. Data are from Sanderson [22]."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_567_table_8.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 568,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "552"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.239
+          ],
+          "content": "Given these data, we might be interested in knowing whether the pattern of 0’s and 1’s observed in the table is anomalous in some way. For example, does there appear to be dependence between the rows and columns? Do some pairs of species frequently occur together on the same islands, more often than one would expect by chance? These patterns may shed light on the dynamics of inter-species cooperation or competition. One way to test for such patterns is by looking at a lot of random tables with the same row and column sums as the observed table, to see how the observed table compares to the random ones. This is a common technique in statistics known as a goodness-of-fit test."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.248,
+            0.897,
+            0.34
+          ],
+          "content": "But how do we generate random tables with the same row and column sums as Table 12.1? The number of tables satisfying these constraints is impossible to enumerate. MCMC comes to the rescue: we’ll create a Markov chain on the space of all tables with these row and column sums, whose stationary distribution is uniform over all such tables."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.351,
+            0.896,
+            0.426
+          ],
+          "content": "To construct the Markov chain, we need a way to transition from one table to another without changing the row or column sums. Starting from the observed table, randomly select two rows and two columns. If the four entries at their intersection have one of the following two patterns:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.404,
+            0.437,
+            0.597,
+            0.474
+          ],
+          "content": "\\begin{array}{c c} 0 & 1 \\\\ 1 & 0 \\end{array} \\quad \\text {or} \\quad \\begin{array}{c c} 1 & 0 \\\\ 0 & 1 \\end{array}",
+          "image_source": "images/page_568_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.486,
+            0.896,
+            0.636
+          ],
+          "content": "then switch to the opposite pattern with probability $1 / 2 ;$ otherwise stay in place. For example, if we selected rows 1 and 3 and columns 1 and 17, we would switch the four entries at their intersection from $^ { \\mathrm { ~ 0 ~ 1 ~ } } _ { \\mathrm { ~ 1 ~ 0 ~ } }$ to $^ { 1 0 } _ { 0 1 }$ with probability $1 / 2 .$ This is a symmetric transition rule (for all tables t and $t ^ { \\prime } ,$ the transition probability from t to $t ^ { \\prime }$ equals the transition probability from $t ^ { \\prime }$ to $t )$ , the transitions never alter the row or column sums, and it can be shown that the Markov chain defined in this way is irreducible. Therefore the stationary distribution is uniform over all tables with the given row and column sums, as desired."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.646,
+            0.896,
+            0.777
+          ],
+          "content": "To interpret this procedure as a Gibbs sampler, consider conditioning on all entries in the table besides the four entries at the intersection of rows 1 and 3 and columns 1 and 17. If the stationary distribution is to be uniform over all tables with the given row and column sums, then the conditional distribution of these four entries must be uniform over all configurations that don’t change the row and column sums, namely $^ { \\mathrm { ~ 0 ~ 1 ~ } } _ { \\mathrm { ~ 1 ~ 0 ~ } }$ and $^ { 1 0 } _ { 0 1 }$ . Thus, at each stage, we are drawing from the conditional distribution of four entries given all the rest. \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.787,
+            0.894,
+            0.824
+          ],
+          "content": "As with Metropolis-Hastings, Gibbs sampling also applies to continuous distributions, replacing conditional PMFs with conditional PDFs."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.834,
+            0.896,
+            0.89
+          ],
+          "content": "Example 12.2.6 (Chicken-egg with unknown parameters). A chicken lays $N$ eggs, where $N \\sim  Pois (\\lambda)$ . Each egg hatches with probability $p ,$ where $p$ is unknown; we let $p \\sim \\mathrm { B e t a } ( a , b )$ . The constants $\\lambda , a , b$ are known."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.9,
+            0.894,
+            0.919
+          ],
+          "content": "Here’s the catch: we don’t get to observe N. Instead, we only observe the number"
+        }
+      ]
+    },
+    {
+      "page_idx": 569,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.038,
+            0.347,
+            0.053
+          ],
+          "content": "Markov chain Monte Carlo"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "553"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.068,
+            0.895,
+            0.106
+          ],
+          "continues_prev": true,
+          "content": "of eggs that hatch, X. Describe how to use Gibbs sampling to find $E ( p | X = x )$ , the posterior mean of $p$ after observing x hatched eggs."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.106,
+            0.115,
+            0.195,
+            0.132
+          ],
+          "level": 2,
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.143,
+            0.895,
+            0.18
+          ],
+          "content": "By the chicken-egg story, the distribution of X given $p$ is $\\operatorname { P o i s } ( \\lambda p )$ . The posterior PDF of $p$ is proportional to"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.246,
+            0.191,
+            0.752,
+            0.214
+          ],
+          "content": "f (p | X = x) \\propto P (X = x | p) f (p) \\propto e ^ {- \\lambda p} (\\lambda p) ^ {x} p ^ {a - 1} q ^ {b - 1},",
+          "image_source": "images/page_569_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.225,
+            0.62,
+            0.244
+          ],
+          "content": "where we have dropped all terms not depending on $p .$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.253,
+            0.895,
+            0.366
+          ],
+          "content": "This isn’t a named distribution, so it might appear as though we’re stuck, but we can get ourselves out of this rut by thinking conditionally. What do we wish we knew? The total number of eggs! Conditional on observing $N = n$ and knowing the true value of $p ,$ the distribution of X would be $\\operatorname { B i n } ( n , p )$ . By conditioning on the total number of eggs, we recover Beta-Binomial conjugacy between $p$ and X. This allows us to write down the posterior distribution right away using Story 8.3.3:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.298,
+            0.378,
+            0.698,
+            0.398
+          ],
+          "content": "p | X = x, N = n \\sim \\mathrm{Beta} (x + a, n - x + b).",
+          "image_source": "images/page_569_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.418,
+            0.895,
+            0.513
+          ],
+          "content": "The fact that conditioning on $N$ makes matters so much nicer inspires us to use Gibbs sampling to tackle the problem. We alternate between sampling from $p$ conditional on N and sampling from N conditional on $p ,$ as described below. Throughout, we must also condition on $X = x .$ since we seek to learn about the posterior distributions of the parameters conditional on the evidence."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.522,
+            0.78,
+            0.541
+          ],
+          "content": "We make an initial guess for $p$ and $N .$ then iterate the following steps:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.559,
+            0.868,
+            0.594
+          ],
+          "content": "1. Conditional on $N = n$ and $X = x$ , draw a new guess for $p$ from the $\\mathrm { B e t a } ( x + a , n - x + b )$ distribution."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.606,
+            0.868,
+            0.66
+          ],
+          "content": "2. Conditional on $p$ and $X = x ,$ the number of unhatched eggs is $Y \\sim  Pois (\\lambda(1 - p))$ by the chicken-egg story, so we can draw $Y$ from the $\\mathrm { P o i s } ( \\lambda ( 1 - p ) )$ distribution and set the new guess for N to be $N = x + Y$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.68,
+            0.895,
+            0.775
+          ],
+          "content": "After many iterations, we have draws for both $p$ and N. If we want, we can ignore the draws of $N ,$ since N was merely a device to help us sample $p .$ But for fun, we’ll plot both: Figure 12.5 shows histograms of the posterior draws of $p$ and N when $\\lambda = 10,   a = b = 1$ (corresponding to a $\\mathrm { U n i f } ( 0 , 1 )$ prior on $p )$ , and we observe $X = 7$ hatched eggs."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.783,
+            0.895,
+            0.916
+          ],
+          "content": "As for the posterior mean $E ( p | X   =   x )$ originally asked for in the problem, we can take the sample mean of the draws of $p$ to get a good approximation. In this case, the sample mean is 0.68. Using the code provided in the R section of this chapter, you can try changing the values of $\\lambda ,   a ,   b ,$ and $x$ to see how the histograms and the posterior mean are affected. The key strategy for this problem was to add the unobserved number of eggs N to the model, so that we would have pleasant conditional distributions and could use Gibbs sampling conveniently. \u0003"
+        }
+      ]
+    },
+    {
+      "page_idx": 570,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "554"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.054
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.107,
+            0.071,
+            0.87,
+            0.343
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_570_image_2.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.361,
+            0.248,
+            0.376
+          ],
+          "level": 2,
+          "content": "FIGURE 12.5"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.379,
+            0.897,
+            0.416
+          ],
+          "content": "Histograms of $1 0 ^ { 4 }$ draws from the posterior distributions of $p$ and $N ,$ where $\\lambda = 1 0$ $a = 1,   b = 1$ , and we observe $X = 7$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.501,
+            0.257,
+            0.52
+          ],
+          "level": 2,
+          "content": "12.3 Recap"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.545,
+            0.896,
+            0.658
+          ],
+          "content": "Markov chain Monte Carlo allows us to sample from complicated distributions using Markov chains. MCMC has been applied in a very wide variety of problems in recent years. The main idea behind MCMC algorithms is to construct a Markov chain whose stationary distribution is the distribution we wish to sample from. After running the Markov chain for a long time, the values that the Markov chain takes on can serve as draws from the desired distribution."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.676,
+            0.896,
+            0.809
+          ],
+          "content": "The two MCMC algorithms discussed in this chapter are Metropolis-Hastings and Gibbs sampling. The Metropolis-Hastings algorithm uses any irreducible Markov chain on the state space to generate proposals, then accepts or rejects those proposals so as to produce a modified Markov chain with the desired stationary distribution. Moreover, the resulting chain is reversible. The choice of the proposal distribution is extremely important in practice, since a bad proposal distribution may result in very slow convergence to the stationary distribution."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.825,
+            0.897,
+            0.921
+          ],
+          "content": "Gibbs sampling is a method for drawing from a d-dimensional joint distribution by updating the components of a d-dimensional Markov chain one at a time, condi tional on all other components. This can be done through a systematic scan, which deterministically cycles through the components in a fixed order, or a random scan, which randomly chooses which component to update at each stage."
+        }
+      ]
+    },
+    {
+      "page_idx": 571,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.038,
+            0.347,
+            0.053
+          ],
+          "content": "Markov chain Monte Carlo"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "555"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.109,
+            0.204,
+            0.127
+          ],
+          "level": 2,
+          "content": "12.4 R"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.146,
+            0.331,
+            0.166
+          ],
+          "level": 2,
+          "content": "Metropolis-Hastings"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.183,
+            0.897,
+            0.239
+          ],
+          "content": "Here’s how to implement the Metropolis-Hastings algorithm for Example 12.1.8, the Normal-Normal model. First, we choose our observed value of Y and decide on values for the constants σ, µ, and τ :"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.103,
+            0.249,
+            0.224,
+            0.322
+          ],
+          "sub_type": "code",
+          "content": "```r\ny <- 3\nsigma <- 1\nmu <- 0\ntau <- 2\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.334,
+            0.897,
+            0.408
+          ],
+          "content": "We also need to choose the standard deviation of the proposals for step 1 of the algorithm, as explained in Example 12.1.8; for this problem, we let d = 1. We set the number of iterations to run, and we allocate a vector theta of length 10<sup>4</sup> which we will fill with our simulated draws:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.103,
+            0.419,
+            0.348,
+            0.474
+          ],
+          "sub_type": "code",
+          "content": "```r\nd <- 1\nniter <- 10^4\ntheta <- rep(0,niter)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.484,
+            0.896,
+            0.521
+          ],
+          "content": "Now for the main loop. We initialize θ to the observed value y, then run the algorithm described in Example 12.1.8:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.103,
+            0.531,
+            0.85,
+            0.68
+          ],
+          "sub_type": "code",
+          "content": "```r\ntheta[1] <- y\nfor (i in 2:niter){\n    theta.p <- theta[i-1] + rnorm(1,0,d)\n    r <- dnorm(y,theta.p,sigma) * dnorm(theta.p,mu,tau) /\n        (dnorm(y,theta[i-1],sigma) * dnorm(theta[i-1],mu,tau))\n    flip <- rbinom(1,1,min(r,1))\n    theta[i] <- if(flip==1) theta.p else theta[i-1]\n}\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.691,
+            0.897,
+            0.766
+          ],
+          "content": "Let’s step through each line inside the loop. The proposed value of θ is theta.p, which equals the previous value of θ plus a Normal random variable with mean 0 and standard deviation d (recall that rnorm takes the standard deviation and not the variance as input). The ratio r is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.32,
+            0.772,
+            0.68,
+            0.817
+          ],
+          "content": "\\frac {f _ {\\theta | Y} (x ^ {\\prime} | y)}{f _ {\\theta | Y} (x | y)} = \\frac {e ^ {- \\frac {1}{2 \\sigma^ {2}} (y - x ^ {\\prime}) ^ {2}} e ^ {- \\frac {1}{2 \\tau^ {2}} (x ^ {\\prime} - \\mu) ^ {2}}}{e ^ {- \\frac {1}{2 \\sigma^ {2}} (y - x) ^ {2}} e ^ {- \\frac {1}{2 \\tau^ {2}} (x - \\mu) ^ {2}}},",
+          "image_source": "images/page_571_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.825,
+            0.897,
+            0.919
+          ],
+          "content": "where theta.p is playing the role of $x ^ { \\prime }$ and theta[i-1] is playing the role of x. The coin flip to determine whether to accept or reject the proposal is flip, which is a coin flip with probability min(r,1) of Heads (encoding Heads as 1 and Tails as 0). Finally, we set theta[i] equal to the proposed value if the coin flip lands Heads, and keep it at the previous value otherwise."
+        }
+      ]
+    },
+    {
+      "page_idx": 572,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "556"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.069,
+            0.895,
+            0.126
+          ],
+          "content": "The vector theta now contains all of our simulation draws. We typically discard some of the initial draws to give the chain some time to approach the stationary distribution. The following line of code discards the first half of the draws:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.104,
+            0.137,
+            0.449,
+            0.155
+          ],
+          "sub_type": "code",
+          "content": "```txt\ntheta <- theta[-(1:(niter/2))]\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.168,
+            0.897,
+            0.224
+          ],
+          "content": "To see what the remaining draws look like, we can create a histogram using hist(theta). We can also compute summary statistics such as mean(theta) and var(theta), which give us the sample mean and sample variance."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.259,
+            0.175,
+            0.276
+          ],
+          "level": 2,
+          "content": "Gibbs"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.298,
+            0.896,
+            0.355
+          ],
+          "content": "Now let’s implement Gibbs sampling for Example 12.2.6, the chicken-egg story with unknown hatching probability and invisible unhatched eggs. The first step is to decide on our observed value of X, as well as the constants λ, a, b:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.103,
+            0.367,
+            0.248,
+            0.44
+          ],
+          "sub_type": "code",
+          "content": "```r\nx <- 7\nlambda <- 10\na <- 1\nb <- 1\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.454,
+            0.896,
+            0.509
+          ],
+          "content": "Next we decide how many iterations to run, and we allocate space for our results, creating two vectors p and N of length 10<sup>4</sup> which we will fill with our simulated draws:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.103,
+            0.523,
+            0.301,
+            0.579
+          ],
+          "sub_type": "code",
+          "content": "```r\nniter <- 10^4\np <- rep(0,niter)\nN <- rep(0,niter)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.59,
+            0.896,
+            0.644
+          ],
+          "content": "Finally, we’re ready to run the Gibbs sampler. We initialize p and N to the values 0.5 and 2x, respectively, and then we run the algorithm as explained in Example 12.2.6:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.103,
+            0.658,
+            0.586,
+            0.769
+          ],
+          "sub_type": "code",
+          "content": "```txt\np[1] <- 0.5\nN[1] <- 2*x\nfor (i in 2:niter){\n    p[i] <- rbeta(1,x+a,N[i-1]-x+b)\n    N[i] <- x + rpois(1,lambda*(1-p[i-1]))\n}\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.783,
+            0.447,
+            0.8
+          ],
+          "content": "Again, we discard the initial draws:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.103,
+            0.814,
+            0.358,
+            0.85
+          ],
+          "sub_type": "code",
+          "content": "```txt\np <- p[-(1:(niter/2))]\nN <- N[-1:(niter/2))]\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.863,
+            0.895,
+            0.92
+          ],
+          "content": "To see what the remaining draws look like, we can make histograms using hist(p) and hist(N), which is how we created Figure 12.5. We can also compute summary statistics such as mean(p) or median(p)."
+        }
+      ]
+    },
+    {
+      "page_idx": 573,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.038,
+            0.347,
+            0.053
+          ],
+          "content": "Markov chain Monte Carlo"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": "557"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.109,
+            0.292,
+            0.127
+          ],
+          "level": 2,
+          "content": "12.5 Exercises"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.139,
+            0.871,
+            0.201
+          ],
+          "content": "1. Let $p ( x , y )$ be the joint PMF of two discrete r.v.s X and $Y$ Using shorthand notation as we used with the Gibbs sampler, let $p ( x )$ and $p ( y )$ be the marginal PMFs of $X$ and $Y$ and $p ( x | y )$ and $p ( y | x )$ be the conditional PMFs of $X$ given $Y$ and $Y$ given X. Suppose the support of $Y$ is the same as the support of the conditional distribution of $Y | X$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.211,
+            0.868,
+            0.242
+          ],
+          "content": "(a) Use the identity $p ( x ) p ( y | x ) = p ( y ) p ( x | y )$ to find an expression for the marginal PMF $p ( y )$ in terms of the conditional PMFs $p ( x | y )$ and $p ( y | x )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.248,
+            0.75,
+            0.264
+          ],
+          "content": "Hint: Rewrite the identity as $p ( x ) / p ( y ) = p ( x | y ) / p ( y | x )$ and take a sum."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.274,
+            0.868,
+            0.305
+          ],
+          "content": "(b) Explain why the two conditional distributions $p ( x | y )$ and $p ( y | x )$ determine the joint distribution $p ( x , y )$ , and how this fact relates to the Gibbs sampler."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.312,
+            0.871,
+            0.388
+          ],
+          "content": "2. We have a network G with n nodes and some edges. Each node of $G$ can either be vacant or occupied. We want to place particles on the nodes of $G$ in such a way that the particles are not too crowded. Thus, define a feasible configuration as a placement of particles such that each node is occupied by at most one particle, and no neighbor of an occupied node is occupied."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.391,
+            0.868,
+            0.436
+          ],
+          "content": "Construct a Markov chain whose stationary distribution is uniform over all feasible configurations. Clearly specify the transition rule of your Markov chain, and explain why its stationary distribution is uniform."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.444,
+            0.87,
+            0.52
+          ],
+          "content": "3. This problem considers an application of MCMC techniques to image analysis. Imagine a 2D image consisting of an $L \\times L$ grid of black-or-white pixels. Let $Y _ { j }$ be the indicator of the jth pixel being white, for $j = 1 , \\ldots , L ^ { 2 }$ . Viewing the pixels as nodes in a network, the neighbors of a pixel are the pixels immediately above, below, to the left, and to the right (except for boundary cases)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.522,
+            0.868,
+            0.553
+          ],
+          "content": "Let $i \\sim j$ stand for $\\mathfrak { c } _ { i }$ and $j$ are neighbors”. A commonly used model for the joint PMF of $\\mathbf { Y } = ( Y _ { 1 } , \\ldots , Y _ { L ^ { 2 } } )$ is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.351,
+            0.563,
+            0.686,
+            0.611
+          ],
+          "content": "P (\\mathbf {Y} = \\mathbf {y}) \\propto \\exp \\left(\\beta \\sum_ {(i, j): i \\sim j} I (y _ {i} = y _ {j})\\right).",
+          "image_source": "images/page_573_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.619,
+            0.87,
+            0.681
+          ],
+          "content": "If $\\beta$ is positive, this says that neighboring pixels prefer to have the same color. The normalizing constant of this joint PMF is a sum over all $2 ^ { L ^ { 2 } }$ possible configurations, so it may be very computationally difficult to obtain. This motivates the use of MCMC to simulate from the model."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.685,
+            0.868,
+            0.73
+          ],
+          "content": "(a) Suppose that we wish to simulate random draws from the joint PMF of $\\mathbf { Y } ,$ for a particular known value of $\\beta .$ Explain how we can do this using Gibbs sampling, cycling through the pixels one by one in a fixed order."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.741,
+            0.868,
+            0.772
+          ],
+          "content": "(b) Now provide a Metropolis-Hastings algorithm for this problem, based on a proposal of picking a uniformly random site and toggling its value."
+        }
+      ]
+    },
+    {
+      "page_idx": 574,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            0.288,
+            0.291,
+            0.393,
+            0.364
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_574_image_0.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.403,
+            0.3,
+            0.717,
+            0.336
+          ],
+          "level": 2,
+          "content": "Taylor & Francis"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.405,
+            0.337,
+            0.635,
+            0.355
+          ],
+          "content": "Taylor & Francis Group"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.405,
+            0.357,
+            0.598,
+            0.371
+          ],
+          "content": "http://taylorandfrancis.com"
+        }
+      ]
+    },
+    {
+      "page_idx": 575,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.06,
+            0.164,
+            0.089
+          ],
+          "content": ""
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.115,
+            0.367,
+            0.143
+          ],
+          "level": 2,
+          "content": "Poisson processes"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.23,
+            0.896,
+            0.324
+          ],
+          "content": "Poisson processes serve as a simple model for events occurring in time or space: in one dimension, cars passing by a highway checkpoint; in two dimensions, flowers in a meadow; in three dimensions, stars in a region of the galaxy. Poisson processes are a primary building block for more complicated processes in time and space, which are the focus of a branch of statistics called spatial statistics."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.336,
+            0.894,
+            0.45
+          ],
+          "content": "Poisson processes are also useful in probability, as they tie together many of the named distributions and provide us with insightful story proofs for results that might otherwise be tedious to show. This leads to a new problem-solving strategy, which we will demonstrate: even when a problem makes no mention of Poisson processes, there are sometimes ways to pretend the r.v.s are coming from a Poisson process so that we can use convenient Poisson process properties."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.461,
+            0.894,
+            0.517
+          ],
+          "content": "In this chapter, we’ll review the already familiar definition of the 1D Poisson process, derive and discuss three important properties of the 1D Poisson process, and then extend these properties to Poisson processes in higher dimensions."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.602,
+            0.596,
+            0.623
+          ],
+          "level": 2,
+          "content": "13.1 Poisson processes in one dimension"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.643,
+            0.897,
+            0.718
+          ],
+          "content": "In Section 5.6, we defined a one-dimensional Poisson process and showed that the interarrival times are i.i.d. Exponentials. In Chapter 8 we showed that the time of the jth arrival (relative to some fixed starting time) is Gamma. Let’s review these results, with notation that will help us generalize to higher dimensions."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.729,
+            0.896,
+            0.768
+          ],
+          "content": "Definition 13.1.1 (1D Poisson process). A sequence of arrivals in continuous time is a Poisson process with rate λ if the following conditions hold:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.175,
+            0.789,
+            0.868,
+            0.839
+          ],
+          "sub_type": "text",
+          "content": "1. The number of arrivals in an interval of length t is distributed Pois(λt).\n2. The numbers of arrivals in disjoint time intervals are independent."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.863,
+            0.896,
+            0.919
+          ],
+          "content": "Usually we will assume that the timeline starts at t = 0, in which case we have a Poisson process on $( 0 , \\infty )$ , but we can use the same conditions to define a Poisson process on $( - \\infty , \\infty )$ if we want the timeline to be infinite in both directions."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.935,
+            0.894,
+            0.95
+          ],
+          "content": "559"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Probability, Second Edition",
+      "authors": [
+        "Joseph K. Blitzstein;Jessica Hwang;"
+      ],
+      "created_at": "2019-01-18T11:22:30+05:30",
+      "modified_at": "2019-02-04T21:29:14+05:30",
+      "creator_application": "LaTeX with hyperref",
+      "producer_application": "pdfTeX-1.40.19",
+      "page_count": 636,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 560,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 561,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 562,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 563,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 564,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 565,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 566,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 567,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 568,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 569,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 570,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 571,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 572,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 573,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 574,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 575,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

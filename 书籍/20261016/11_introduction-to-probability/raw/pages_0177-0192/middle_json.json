@@ -1,0 +1,6222 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Probability, Second Edition",
+      "authors": [
+        "Joseph K. Blitzstein;Jessica Hwang;"
+      ],
+      "created_at": "2019-01-18T11:22:30+05:30",
+      "modified_at": "2019-02-04T21:29:14+05:30",
+      "creator_application": "LaTeX with hyperref",
+      "producer_application": "pdfTeX-1.40.19",
+      "page_count": 636,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 176,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 177,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 178,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 179,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 180,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 181,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 182,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 183,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 184,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 185,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 186,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 187,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 188,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 189,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 190,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 191,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 176,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "160"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.896,
+            0.102
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Finally, if we multiply both sides by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p q"
+            },
+            {
+              "type": "text",
+              "content": " , we recover the original sum we wanted to find:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.255,
+            0.103,
+            0.745,
+            0.149
+          ],
+          "image_path": "images/page_176_equation_3.jpg",
+          "content": "E (X) = \\sum_ {k = 0} ^ {\\infty} k q ^ {k} p = p q \\sum_ {k = 0} ^ {\\infty} k q ^ {k - 1} = p q \\frac {1}{(1 - q) ^ {2}} = \\frac {q}{p}."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.165,
+            0.897,
+            0.239
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In Example 9.1.8, we will give a story proof of the same result, based on first-step analysis: condition on the result of the first trial in the story interpretation of X. If the first trial is a success, we know "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = 0"
+            },
+            {
+              "type": "text",
+              "content": " and if it’s a failure, we have one wasted trial and then are back where we started. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.249,
+            0.896,
+            0.288
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 4.3.7 (First Success expectation). Since we can write "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y   \\sim   \\mathrm { F S } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = X + 1"
+            },
+            {
+              "type": "text",
+              "content": " where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { G e o m } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " , we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.344,
+            0.3,
+            0.655,
+            0.339
+          ],
+          "image_path": "images/page_176_equation_6.jpg",
+          "content": "E (Y) = E (X + 1) = \\frac {q}{p} + 1 = \\frac {1}{p}."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.359,
+            0.897,
+            0.414
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Negative Binomial distribution generalizes the Geometric distribution: instead of waiting for just one success, we can wait for any predetermined number r of successes."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.425,
+            0.896,
+            0.502
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Story 4.3.8 (Negative Binomial distribution). In a sequence of independent Bernoulli trials with success probability p, if X is the number of failures before the rth success, then X is said to have the Negative Binomial distribution with parameters r and p, denoted "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathrm { N B i n } ( r , p )"
+            },
+            {
+              "type": "text",
+              "content": " \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.51,
+            0.894,
+            0.585
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Both the Binomial and the Negative Binomial distributions are based on independent Bernoulli trials; they differ in the stopping rule and in what they are counting. The Binomial counts the number of successes in a fixed number of trials; the Negative Binomial counts the number of failures until a fixed number of successes."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.594,
+            0.894,
+            0.651
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In light of these similarities, it comes as no surprise that the derivation of the Negative Binomial PMF bears a resemblance to the corresponding derivation for the Binomial."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.66,
+            0.896,
+            0.695
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 4.3.9 (Negative Binomial PMF). If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathrm { N B i n } ( r , p )"
+            },
+            {
+              "type": "text",
+              "content": " , then the PMF of X is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.354,
+            0.694,
+            0.645,
+            0.734
+          ],
+          "image_path": "images/page_176_equation_12.jpg",
+          "content": "P (X = n) = \\binom{n + r - 1}{r - 1} p ^ {r} q ^ {n}"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.103,
+            0.74,
+            0.439,
+            0.758
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n = 0 , 1 , 2 \\ldots"
+            },
+            {
+              "type": "text",
+              "content": " , where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q = 1 - p"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.776,
+            0.896,
+            0.871
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. Imagine a string of 0’s and 1’s, with 1’s representing successes. The probability of any specific string of n 0’s and r 1’s is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p ^ { r } q ^ { n }"
+            },
+            {
+              "type": "text",
+              "content": " . How many such strings are there? Because we stop as soon as we hit the rth success, the string must terminate in a 1. Among the other "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n   +   r   -   1"
+            },
+            {
+              "type": "text",
+              "content": " positions, we choose "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r - 1"
+            },
+            {
+              "type": "text",
+              "content": " places for the remaining 1’s to go. So the overall probability of exactly n failures before the rth success is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.268,
+            0.882,
+            0.731,
+            0.923
+          ],
+          "image_path": "images/page_176_equation_15.jpg",
+          "content": "P (X = n) = \\binom {n + r - 1} {r - 1} p ^ {r} q ^ {n}, \\quad n = 0, 1, 2, \\dots ."
+        }
+      ]
+    },
+    {
+      "page_idx": 177,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.108,
+            0.039,
+            0.21,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Expectation"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.862,
+            0.039,
+            0.892,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "161"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.068,
+            0.893,
+            0.105
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Just as a Binomial r.v. can be represented as a sum of i.i.d. Bernoullis, a Negative Binomial r.v. can be represented as a sum of i.i.d. Geometrics."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.105,
+            0.115,
+            0.893,
+            0.172
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 4.3.10. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathrm { N B i n } ( r , p )"
+            },
+            {
+              "type": "text",
+              "content": " , viewed as the number of failures before the rth success in a sequence of independent Bernoulli trials with success probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p ."
+            },
+            {
+              "type": "text",
+              "content": " Then we can write "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = X _ { 1 } + \\cdots + X _ { r }"
+            },
+            {
+              "type": "text",
+              "content": " where the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " are i.i.d. Geom(p)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.105,
+            0.19,
+            0.893,
+            0.246
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " be the number of failures until the first success, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " be the number of failures between the first success and the second success, and in general, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " be the number of failures between the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( i - 1 )"
+            },
+            {
+              "type": "text",
+              "content": " st success and the ith success."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.105,
+            0.256,
+            0.893,
+            0.35
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 }   \\sim   \\mathrm { G e o m } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " by the story of the Geometric distribution. After the first success, the number of additional failures until the next success is still Geometric! So "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 2 } \\sim \\operatorname { G e o m } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " , and similarly for all the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " . Furthermore, the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " are independent because the trials are all independent of each other. Adding the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " , we get the total number of failures before the rth success, which is X. \u0004"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.105,
+            0.369,
+            0.893,
+            0.405
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Using linearity, the expectation of the Negative Binomial now follows without any additional calculations."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.105,
+            0.416,
+            0.893,
+            0.472
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 4.3.11 (Negative Binomial expectation). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X   \\sim   \\mathrm { N B i n } ( r , p )"
+            },
+            {
+              "type": "text",
+              "content": " . By the previous theorem, we can write "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = X _ { 1 }   + \\cdots + X _ { r }"
+            },
+            {
+              "type": "text",
+              "content": " , where the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " are i.i.d. Geom(p). By linearity,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.318,
+            0.472,
+            0.68,
+            0.505
+          ],
+          "image_path": "images/page_177_equation_8.jpg",
+          "content": "E (X) = E (X _ {1}) + \\dots + E (X _ {r}) = r \\cdot \\frac {q}{p}."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.105,
+            0.52,
+            0.893,
+            0.595
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The next example is a famous problem in probability and an instructive application of the Geometric and First Success distributions. It is usually stated as a problem about collecting coupons, hence its name, but we’ll use toys instead of coupons."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.105,
+            0.604,
+            0.893,
+            0.718
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 4.3.12 (Coupon collector). Suppose there are n types of toys, which you are collecting one by one, with the goal of getting a complete set. When collecting toys, the toy types are random (as is sometimes the case, for example, with toys included in cereal boxes or included with kids’ meals from a fast food restaurant). Assume that each time you collect a toy, it is equally likely to be any of the n types. What is the expected number of toys needed until you have a complete set?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 11,
+          "bbox": [
+            0.108,
+            0.728,
+            0.194,
+            0.744
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.105,
+            0.755,
+            0.893,
+            0.793
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let N be the number of toys needed; we want to find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( N )"
+            },
+            {
+              "type": "text",
+              "content": " . Our strategy will be to break up N into a sum of simpler r.v.s so that we can apply linearity. So write"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.379,
+            0.809,
+            0.622,
+            0.828
+          ],
+          "image_path": "images/page_177_equation_13.jpg",
+          "content": "N = N _ {1} + N _ {2} + \\dots + N _ {n},"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.105,
+            0.843,
+            0.893,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " is the number of toys until the first toy type you haven’t seen before (which is always 1, as the first toy is always a new type), "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " is the additional number of toys until the second toy type you haven’t seen before, and so forth. Figure 4.6 illustrates these definitions with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n = 3"
+            },
+            {
+              "type": "text",
+              "content": " toy types."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 178,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.14,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "162"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.285,
+            0.064,
+            0.72,
+            0.157
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.285,
+                0.064,
+                0.72,
+                0.157
+              ],
+              "image_path": "images/page_178_image_2.jpg",
+              "content": "N₁\n↑\nN₂\nN₃"
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.178,
+            0.238,
+            0.194
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 4.6"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.101,
+            0.195,
+            0.897,
+            0.271
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Coupon collector, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n = 3"
+            },
+            {
+              "type": "text",
+              "content": " . Here "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " is the time (number of toys collected) until the first new toy type, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " is the additional time until the second new type, and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N _ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " is the additional time until the third new type. The total number of toys for a complete set is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N _ { 1 } + N _ { 2 } + N _ { 3 }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.297,
+            0.896,
+            0.373
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "By the story of the FS distribution, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N _ { 2 } \\sim \\mathrm { F S } ( ( n   -   1 ) / n )"
+            },
+            {
+              "type": "text",
+              "content": " : after collecting the first toy type, there’s a "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / n"
+            },
+            {
+              "type": "text",
+              "content": " chance of getting the same toy you already had (failure) and an "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( n - 1 ) / n"
+            },
+            {
+              "type": "text",
+              "content": " chance you’ll get something new (success). Similarly, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N _ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " , the additional number of toys until the third new toy type, is distributed "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { F S } ( ( n   -   2 ) / n )"
+            },
+            {
+              "type": "text",
+              "content": " . In general,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.38,
+            0.388,
+            0.619,
+            0.409
+          ],
+          "image_path": "images/page_178_equation_6.jpg",
+          "content": "N _ {j} \\sim \\mathrm{FS} ((n - j + 1) / n)."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.424,
+            0.228,
+            0.442
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "By linearity,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.265,
+            0.456,
+            0.732,
+            0.565
+          ],
+          "image_path": "images/page_178_equation_8.jpg",
+          "content": "\\begin{array}{l} E (N) = E (N _ {1}) + E (N _ {2}) + E (N _ {3}) + \\dots + E (N _ {n}) \\\\ = 1 + \\frac {n}{n - 1} + \\frac {n}{n - 2} + \\dots + n \\\\ = n \\sum_ {j = 1} ^ {n} \\frac {1}{j}. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.579,
+            0.575,
+            0.598
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For large n, this is very close to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n ( \\log n + 0 . 5 7 7 )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.101,
+            0.607,
+            0.896,
+            0.701
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Before we leave this example, let’s take a moment to connect it to our proof of Theorem 4.3.10, the representation of the Negative Binomial as a sum of i.i.d. Geometrics. In both problems, we are waiting for a specified number of successes, and we approach the problem by considering the intervals between successes. There are two major differences:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 11,
+          "bbox": [
+            0.099,
+            0.712,
+            0.896,
+            0.89
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.099,
+                0.712,
+                0.896,
+                0.786
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• In Theorem 4.3.10, we exclude the successes themselves, so the number of failures between two successes is Geometric. In the coupon collector problem, we include the successes because we want to count the total number of toys, so we have First Success r.v.s instead."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 13,
+              "bbox": [
+                0.099,
+                0.797,
+                0.896,
+                0.89
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• In Theorem 4.3.10, the probability of success in each trial never changes, so the total number of failures is a sum of i.i.d. Geometrics. In the coupon collector problem, the probability of success decreases after each success, since it becomes harder and harder to find a new toy type you haven’t seen before; so the "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "N _ { j }"
+                },
+                {
+                  "type": "text",
+                  "content": " are not identically distributed, though they are independent. \u0003"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.103,
+            0.9,
+            0.894,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "h 4.3.13 (Expectation of a nonlinear function of an r.v.). Expectation is linear,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 179,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.108,
+            0.039,
+            0.21,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Expectation"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.863,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "163"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.067,
+            0.896,
+            0.126
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "but in general we do not have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( g ( X ) )   =   g ( E ( X ) )"
+            },
+            {
+              "type": "text",
+              "content": " for arbitrary functions "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ."
+            },
+            {
+              "type": "text",
+              "content": " We must be careful not to move the E around when g is not linear. The next example shows a situation in which "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( g ( X ) )"
+            },
+            {
+              "type": "text",
+              "content": " is very different from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( E ( X ) )"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.105,
+            0.133,
+            0.896,
+            0.248
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 4.3.14 (St. Petersburg paradox). Suppose a wealthy stranger offers to play the following game with you. You will flip a fair coin until it lands Heads for the first time, and you will receive $2 if the game lasts for 1 round, $4 if the game lasts for 2 rounds, $8 if the game lasts for 3 rounds, and in general, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbb { S } 2 ^ { n }"
+            },
+            {
+              "type": "text",
+              "content": " if the game lasts for n rounds. What is the fair value of this game (the expected payoff)? How much would you be willing to pay to play this game once?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.107,
+            0.257,
+            0.195,
+            0.274
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.105,
+            0.283,
+            0.896,
+            0.341
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let X be your winnings from playing the game. By definition, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = 2 ^ { N }"
+            },
+            {
+              "type": "text",
+              "content": " where N is the number of rounds that the game lasts. Then X is 2 with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 2 ,"
+            },
+            {
+              "type": "text",
+              "content": " 4 with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 4 ,"
+            },
+            {
+              "type": "text",
+              "content": " , 8 with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 8 ,"
+            },
+            {
+              "type": "text",
+              "content": " , and so on, so"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.311,
+            0.347,
+            0.689,
+            0.385
+          ],
+          "image_path": "images/page_179_equation_6.jpg",
+          "content": "E (X) = \\frac {1}{2} \\cdot 2 + \\frac {1}{4} \\cdot 4 + \\frac {1}{8} \\cdot 8 + \\dots = \\infty ."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.105,
+            0.389,
+            0.896,
+            0.467
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The expected winnings are infinite! On the other hand, the number of rounds N that the game lasts is the number of tosses until the first Heads, so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N \\sim \\mathrm { F S } ( 1 / 2 )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( N ) = 2"
+            },
+            {
+              "type": "text",
+              "content": " . Thus "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( 2 ^ { N } ) = \\infty"
+            },
+            {
+              "type": "text",
+              "content": " while "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 ^ { E ( N ) } = 4"
+            },
+            {
+              "type": "text",
+              "content": " . Infinity certainly does not equal 4, illustrating the danger of confusing "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( g ( X ) )"
+            },
+            {
+              "type": "text",
+              "content": " with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( E ( X ) )"
+            },
+            {
+              "type": "text",
+              "content": " when "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g"
+            },
+            {
+              "type": "text",
+              "content": " is not linear."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.105,
+            0.473,
+            0.896,
+            0.626
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This problem is often considered a paradox because although the game’s expected payoff is infinite, most people would not be willing to pay very much to play the game (even if they could afford to lose the money). One explanation is to note that the amount of money in the real world is finite. Suppose that if the game lasts longer than 40 rounds, the wealthy stranger flees the country and you get nothing. Since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 ^ { 4 0 } \\approx 1 . 1 \\times 1 0 ^ { 1 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , this still gives you the potential to earn over a trillion dollars, and anyway it’s incredibly unlikely that the game will last longer than 40 rounds. But in this setting, your expected value is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.315,
+            0.632,
+            0.684,
+            0.684
+          ],
+          "image_path": "images/page_179_equation_9.jpg",
+          "content": "E (X) = \\sum_ {n = 1} ^ {4 0} \\frac {1}{2 ^ {n}} \\cdot 2 ^ {n} + \\sum_ {n = 4 1} ^ {\\infty} \\frac {1}{2 ^ {n}} \\cdot 0 = 4 0."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.105,
+            0.698,
+            0.896,
+            0.775
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Is this drastic reduction because the wealthy stranger may flee the country? Let’s suppose instead that the wealthy stranger caps your winnings at "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 ^ { 4 0 }"
+            },
+            {
+              "type": "text",
+              "content": " , so if the game lasts more than 40 rounds you will get this amount rather than walking away empty-handed. Now your expected value is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.261,
+            0.782,
+            0.738,
+            0.834
+          ],
+          "image_path": "images/page_179_equation_11.jpg",
+          "content": "E (X) = \\sum_ {n = 1} ^ {4 0} \\frac {1}{2 ^ {n}} \\cdot 2 ^ {n} + \\sum_ {n = 4 1} ^ {\\infty} \\frac {1}{2 ^ {n}} \\cdot 2 ^ {4 0} = 4 0 + 1 = 4 1,"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.105,
+            0.84,
+            0.896,
+            0.916
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "an increase of only $1 from the previous scenario. The "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\infty"
+            },
+            {
+              "type": "text",
+              "content": " in the St. Petersburg paradox is driven by an infinite “tail” of extremely rare events where you get extremely large payoffs. Cutting off this tail at some point, which makes sense in the real world, dramatically reduces the expected value of the game. \u0003"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 180,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "164"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.109,
+            0.673,
+            0.13
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.4 Indicator r.v.s and the fundamental bridge"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.147,
+            0.896,
+            0.221
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This section is devoted to indicator random variables, which we already encountered in the previous chapter but will treat in much greater detail here. In particular, we will show that indicator r.v.s are an extremely useful tool for calculating expected values."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.231,
+            0.896,
+            0.307
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Recall from the previous chapter that the indicator r.v. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { A }"
+            },
+            {
+              "type": "text",
+              "content": " (or "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I ( A ) )"
+            },
+            {
+              "type": "text",
+              "content": " for an event A is defined to be 1 if A occurs and 0 otherwise. So "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { A }"
+            },
+            {
+              "type": "text",
+              "content": " is a Bernoulli random variable, where success is defined as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "^ { \\circ } A"
+            },
+            {
+              "type": "text",
+              "content": " occurs” and failure is defined as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "^ { \\circ } A"
+            },
+            {
+              "type": "text",
+              "content": " does not occur”. Some useful properties of indicator r.v.s are summarized below."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.316,
+            0.896,
+            0.355
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 4.4.1 (Indicator r.v. properties). Let A and B be events. Then the following properties hold."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 6,
+          "bbox": [
+            0.174,
+            0.369,
+            0.56,
+            0.476
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.176,
+                0.371,
+                0.56,
+                0.391
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "( I _ { A } ) ^ { k } = I _ { A }"
+                },
+                {
+                  "type": "text",
+                  "content": " for any positive integer "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "k ."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.176,
+                0.4,
+                0.331,
+                0.418
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "I _ { A ^ { c } } = 1 - I _ { A } ."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.176,
+                0.429,
+                0.335,
+                0.447
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "3. "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "I _ { A \\cap B } = I _ { A } I _ { B } ."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.492,
+            0.896,
+            0.549
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. Property 1 holds since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 ^ { k } = 0"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 ^ { k } = 1"
+            },
+            {
+              "type": "text",
+              "content": " for any positive integer k. Property 2 holds since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 - I _ { A }"
+            },
+            {
+              "type": "text",
+              "content": " is 1 if A does not occur and 0 if A occurs. Property 3 holds since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { A } I _ { B }"
+            },
+            {
+              "type": "text",
+              "content": " is 1 if both "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { A }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { B }"
+            },
+            {
+              "type": "text",
+              "content": " are 1, and 0 otherwise. Property 4 holds since"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.141,
+            0.56,
+            0.896,
+            0.581
+          ],
+          "image_path": "images/page_180_equation_11.jpg",
+          "content": "I _ {A \\cup B} = 1 - I _ {A ^ {c} \\cap B ^ {c}} = 1 - I _ {A ^ {c}} I _ {B ^ {c}} = 1 - (1 - I _ {A}) (1 - I _ {B}) = I _ {A} + I _ {B} - I _ {A} I _ {B}."
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.6,
+            0.894,
+            0.638
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Indicator r.v.s provide a link between probability and expectation; we call this fact the fundamental bridge."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.647,
+            0.896,
+            0.704
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 4.4.2 (Fundamental bridge between probability and expectation). There is a one-to-one correspondence between events and indicator r.v.s, and the probability of an event A is the expected value of its indicator r.v. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { A }"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.424,
+            0.714,
+            0.573,
+            0.735
+          ],
+          "image_path": "images/page_180_equation_14.jpg",
+          "content": "P (A) = E (I _ {A})."
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.102,
+            0.751,
+            0.896,
+            0.828
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. For any event A, we have an indicator r.v. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { A }"
+            },
+            {
+              "type": "text",
+              "content": " . This is a one-to-one correspondence since A uniquely determines "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { A }"
+            },
+            {
+              "type": "text",
+              "content": " and vice versa (to get from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { A }"
+            },
+            {
+              "type": "text",
+              "content": " back to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A ,"
+            },
+            {
+              "type": "text",
+              "content": " we can use the fact that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A   =   \\{ s   \\in   S   :   I _ { A } ( s )   =   1 \\} )"
+            },
+            {
+              "type": "text",
+              "content": " . Since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { A } \\sim \\mathrm { B e r n } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p = P ( A )"
+            },
+            {
+              "type": "text",
+              "content": " , we have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( I _ { A } ) = P ( A )"
+            },
+            {
+              "type": "text",
+              "content": " \u0004"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.102,
+            0.844,
+            0.896,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The fundamental bridge connects events to their indicator r.v.s, and allows us to express any probability as an expectation. As an example, we give a short proof of inclusion-exclusion and a related inequality known as Boole’s inequality or Bonferroni’s inequality using indicator r.v.s."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 181,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.21,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Expectation"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.862,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "165"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.894,
+            0.104
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 4.4.3 (Boole, Bonferroni, and inclusion-exclusion). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { 1 } , A _ { 2 } , \\ldots , A _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " be events. Note that"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.307,
+            0.12,
+            0.692,
+            0.141
+          ],
+          "image_path": "images/page_181_equation_3.jpg",
+          "content": "I (A _ {1} \\cup \\dots \\cup A _ {n}) \\leq I (A _ {1}) + \\dots + I (A _ {n}),"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.154,
+            0.894,
+            0.21
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "since if the left-hand side is 0 this is immediate, and if the left-hand side is 1 then at least one term on the right-hand side must be 1. Taking the expectation of both sides and using linearity and the fundamental bridge, we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.299,
+            0.225,
+            0.7,
+            0.246
+          ],
+          "image_path": "images/page_181_equation_5.jpg",
+          "content": "P (A _ {1} \\cup \\dots \\cup A _ {n}) \\leq P (A _ {1}) + \\dots + P (A _ {n}),"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.259,
+            0.897,
+            0.316
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "which is called Boole’s inequality or Bonferroni’s inequality. To prove inclusionexclusion for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n   =   2"
+            },
+            {
+              "type": "text",
+              "content": " , we can take the expectation of both sides in Property 4 of Theorem 4.4.1. For general n, we can use properties of indicator r.v.s as follows:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.329,
+            0.903,
+            0.419
+          ],
+          "image_path": "images/page_181_equation_7.jpg",
+          "content": "\\begin{array}{l} 1 - I (A _ {1} \\cup \\dots \\cup A _ {n}) = I (A _ {1} ^ {c} \\cap \\dots \\cap A _ {n} ^ {c}) \\\\ = (1 - I (A _ {1})) \\dots (1 - I (A _ {n})) \\\\ = 1 - \\sum_ {i} I \\left(A _ {i}\\right) + \\sum_ {i <   j} I \\left(A _ {i}\\right) I \\left(A _ {j}\\right) - \\dots + (- 1) ^ {n} I \\left(A _ {1}\\right) \\dots I \\left(A _ {n}\\right). \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.43,
+            0.894,
+            0.465
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Taking the expectation of both sides, by the fundamental bridge we have proven the inclusion-exclusion theorem. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.477,
+            0.894,
+            0.609
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Conversely, the fundamental bridge is also extremely useful in many expected value problems. We can often express a complicated discrete r.v. whose distribution we don’t know as a sum of indicator r.v.s, which are extremely simple. The fundamental bridge lets us find the expectation of the indicators; then, using linearity, we obtain the expectation of our original r.v. This strategy is extremely useful and versatile— in fact, we already used it when deriving the expectations of the Binomial and Hypergeometric distributions earlier in this chapter!"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.618,
+            0.894,
+            0.713
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Recognizing problems that are amenable to this strategy and then defining the indicator r.v.s takes practice, so it is important to study a lot of examples and solve a lot of problems. In applying the strategy to a random variable that counts the number of [noun]s, we should have an indicator for each potential [noun]. This [noun] could be a person, place, or thing; we will see examples of all three types."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.721,
+            0.894,
+            0.759
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We’ll start by revisiting two problems from Chapter 1, de Montmort’s matching problem and the birthday problem."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.768,
+            0.894,
+            0.825
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 4.4.4 (Matching continued). We have a well-shuffled deck of n cards, labeled 1 through n. A card is a match if the card’s position in the deck matches the card’s label. Let X be the number of matches; find E(X)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 13,
+          "bbox": [
+            0.105,
+            0.835,
+            0.194,
+            0.851
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.862,
+            0.894,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "First let’s check whether X could have any of the named distributions we have studied. The Binomial and Hypergeometric are the only two candidates since the value of X must be an integer between 0 and n. But neither of these distributions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 182,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "166"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.144
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "has the right support because X can’t take on the value "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n - 1 { \\mathrm { : ~ i f ~ } } n - 1"
+            },
+            {
+              "type": "text",
+              "content": " cards are matches, then the nth card must be a match as well. So X does not follow a named distribution we have studied, but we can readily find its mean using indicator r.v.s: let’s write "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = I _ { 1 } + I _ { 2 } + \\cdots + I _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " , where"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.258,
+            0.152,
+            0.728,
+            0.193
+          ],
+          "image_path": "images/page_182_equation_3.jpg",
+          "content": "I _ {j} = \\left\\{ \\begin{array}{l l} 1 & \\text {if the jth card in the deck is a match,} \\\\ 0 & \\text {otherwise.} \\end{array} \\right."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.201,
+            0.896,
+            0.258
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In other words, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " is the indicator for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " , the event that the jth card in the deck is a match. We can imagine that each "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " “raises its hand” to be counted if its card is a match; adding up the raised hands, we get the total number of matches, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.267,
+            0.373,
+            0.286
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "By the fundamental bridge,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.404,
+            0.293,
+            0.597,
+            0.329
+          ],
+          "image_path": "images/page_182_equation_6.jpg",
+          "content": "E (I _ {j}) = P (A _ {j}) = \\frac {1}{n}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.336,
+            0.34,
+            0.355
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j"
+            },
+            {
+              "type": "text",
+              "content": " . So by linearity,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.302,
+            0.363,
+            0.698,
+            0.398
+          ],
+          "image_path": "images/page_182_equation_8.jpg",
+          "content": "E (X) = E (I _ {1}) + \\dots + E (I _ {n}) = n \\cdot \\frac {1}{n} = 1."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.405,
+            0.896,
+            0.461
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The expected number of matched cards is 1, regardless of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n ."
+            },
+            {
+              "type": "text",
+              "content": " Even though the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " are dependent in a complicated way that makes the distribution of X neither Binomial nor Hypergeometric, linearity still holds. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.47,
+            0.896,
+            0.566
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 4.4.5 (Distinct birthdays, birthday matches). In a group of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n"
+            },
+            {
+              "type": "text",
+              "content": " people, under the usual assumptions about birthdays, what is the expected number of distinct birthdays among the n people, i.e., the expected number of days on which at least one of the people was born? What is the expected number of birthday matches, i.e., pairs of people with the same birthday?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.105,
+            0.574,
+            0.195,
+            0.591
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.103,
+            0.602,
+            0.879,
+            0.622
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let X be the number of distinct birthdays, and write "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = I _ { 1 } + \\dots + I _ { 3 6 5 }"
+            },
+            {
+              "type": "text",
+              "content": " , where"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.302,
+            0.63,
+            0.685,
+            0.671
+          ],
+          "image_path": "images/page_182_equation_13.jpg",
+          "content": "I _ {j} = \\left\\{ \\begin{array}{l l} 1 & \\text {if the jth day is represented,} \\\\ 0 & \\text {otherwise.} \\end{array} \\right."
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.103,
+            0.679,
+            0.896,
+            0.717
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We create an indicator for each day of the year because X counts the number of days of the year that are represented. By the fundamental bridge,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.109,
+            0.725,
+            0.889,
+            0.766
+          ],
+          "image_path": "images/page_182_equation_15.jpg",
+          "content": "E (I _ {j}) = P (j \\text {th day is represented}) = 1 - P (\\text {no one born on day} j) = 1 - \\left(\\frac {3 6 4}{3 6 5}\\right) ^ {n}"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.103,
+            0.773,
+            0.367,
+            0.792
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j ."
+            },
+            {
+              "type": "text",
+              "content": " Then by linearity,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.357,
+            0.799,
+            0.642,
+            0.843
+          ],
+          "image_path": "images/page_182_equation_17.jpg",
+          "content": "E (X) = 3 6 5 \\left(1 - \\left(\\frac {3 6 4}{3 6 5}\\right) ^ {n}\\right)."
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.102,
+            0.848,
+            0.896,
+            0.888
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Now let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " be the number of birthday matches. Label the people as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 , 2 , \\ldots , n"
+            },
+            {
+              "type": "text",
+              "content": " , and order the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle { \\binom { n } { 2 } }"
+            },
+            {
+              "type": "text",
+              "content": " pairs of people in some definite way. Then we can write"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 19,
+          "bbox": [
+            0.4,
+            0.897,
+            0.598,
+            0.924
+          ],
+          "image_path": "images/page_182_equation_19.jpg",
+          "content": "Y = J _ {1} + \\dots + J _ {\\binom {n} {2}},"
+        }
+      ]
+    },
+    {
+      "page_idx": 183,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.108,
+            0.039,
+            0.21,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Expectation"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.863,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "167"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.067,
+            0.897,
+            0.143
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "J _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " is the indicator of the ith pair of people having the same birthday. We create an indicator for each pair of people since Y counts the number of pairs of people with the same birthday. The probability of any two people having the same birthday is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 3 6 5"
+            },
+            {
+              "type": "text",
+              "content": " , so again by the fundamental bridge and linearity,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.437,
+            0.159,
+            0.562,
+            0.198
+          ],
+          "image_path": "images/page_183_equation_3.jpg",
+          "content": "E (Y) = \\frac {\\binom {n} {2}}{3 6 5}."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.105,
+            0.22,
+            0.896,
+            0.315
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In addition to the fundamental bridge and linearity, the last two examples used a basic form of symmetry to simplify the calculations greatly: within each sum of indicator r.v.s, each indicator had the same expected value. For example, in the matching problem the probability of the jth card being a match does not depend on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j ,"
+            },
+            {
+              "type": "text",
+              "content": " so we can just take n times the expected value of the first indicator r.v."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.105,
+            0.324,
+            0.894,
+            0.401
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Other forms of symmetry can also be extremely helpful when available. The next two examples showcase a form of symmetry that stems from having equally likely permutations. Note how symmetry, linearity, and the fundamental bridge are used in tandem to make seemingly very hard problems manageable."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.105,
+            0.411,
+            0.896,
+            0.563
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 4.4.6 (Putnam problem). A permutation "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { 1 } , a _ { 2 } , \\ldots , a _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 , 2 , \\ldots , n"
+            },
+            {
+              "type": "text",
+              "content": " has a local maximum at j if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { j } > a _ { j - 1 }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { j } > a _ { j + 1 }"
+            },
+            {
+              "type": "text",
+              "content": " (for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 \\leq j \\leq n - 1"
+            },
+            {
+              "type": "text",
+              "content": " ; for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j = 1"
+            },
+            {
+              "type": "text",
+              "content": " a local maximum at j means "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { 1 } > a _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " while for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j = n"
+            },
+            {
+              "type": "text",
+              "content": " , it means "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { n }   >   a _ { n - 1 } )"
+            },
+            {
+              "type": "text",
+              "content": " . For example, 4, 2, 5, 3, 6, 1 has 3 local maxima, at positions 1, 3, and 5. The Putnam exam (a famous, hard math competition, on which the median score is often a 0) from 2006 posed the following question: for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\geq 2"
+            },
+            {
+              "type": "text",
+              "content": " , what is the average number of local maxima of a random permutation of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 , 2 , \\ldots , n"
+            },
+            {
+              "type": "text",
+              "content": " , with all n! permutations equally likely?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.108,
+            0.572,
+            0.194,
+            0.59
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.105,
+            0.601,
+            0.896,
+            0.734
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This problem can be solved quickly using indicator r.v.s, symmetry, and the fundamental bridge. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { 1 } , \\ldots , I _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " be indicator r.v.s, where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " is 1 if there is a local maximum at position "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j ,"
+            },
+            {
+              "type": "text",
+              "content": " and 0 otherwise. We are interested in the expected value of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle \\sum _ { j = 1 } ^ { n } I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " . For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 < j < n ,   E I _ { j } = 1 / 3"
+            },
+            {
+              "type": "text",
+              "content": " since having a local maximum at "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j"
+            },
+            {
+              "type": "text",
+              "content": " is equivalent to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " being the largest of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { j - 1 } , a _ { j } , a _ { j + 1 }"
+            },
+            {
+              "type": "text",
+              "content": " , which has probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 3"
+            },
+            {
+              "type": "text",
+              "content": " since all orders are equally likely. For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j = 1"
+            },
+            {
+              "type": "text",
+              "content": " or "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j = n"
+            },
+            {
+              "type": "text",
+              "content": " , we have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E I _ { j } = 1 / 2"
+            },
+            {
+              "type": "text",
+              "content": " since then there is only one neighbor. Thus, by linearity,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.3,
+            0.748,
+            0.7,
+            0.807
+          ],
+          "image_path": "images/page_183_equation_9.jpg",
+          "content": "E \\left(\\sum_ {j = 1} ^ {n} I _ {j}\\right) = 2 \\cdot \\frac {1}{2} + (n - 2) \\cdot \\frac {1}{3} = \\frac {n + 1}{3}."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.105,
+            0.83,
+            0.894,
+            0.906
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The next example introduces the Negative Hypergeometric distribution, which completes the following table. The table shows the distributions for four sampling schemes: the sampling can be done with or without replacement, and the stopping rule can require a fixed number of draws or a fixed number of successes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 184,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "168"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 2,
+          "bbox": [
+            0.106,
+            0.066,
+            0.894,
+            0.142
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 2,
+              "bbox": [
+                0.106,
+                0.066,
+                0.894,
+                0.142
+              ],
+              "image_path": "images/page_184_table_2.jpg",
+              "content": "<table><tr><td></td><td>With replacement</td><td>Without replacement</td></tr><tr><td>Fixed number of trials</td><td>Binomial</td><td>Hypergeometric</td></tr><tr><td>Fixed number of successes</td><td>Negative Binomial</td><td>Negative Hypergeometric</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.156,
+            0.897,
+            0.289
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 4.4.7 (Negative Hypergeometric). An urn contains w white balls and b black balls, which are randomly drawn one by one without replacement, until r white balls have been obtained. The number of black balls drawn before drawing the rth white ball has a Negative Hypergeometric distribution with parameters "
+            },
+            {
+              "type": "equation_inline",
+              "content": "w , b , r"
+            },
+            {
+              "type": "text",
+              "content": " . We denote this distribution by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { N H G e o m } ( w , b , r )"
+            },
+            {
+              "type": "text",
+              "content": " . Of course, we assume that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r \\leq w"
+            },
+            {
+              "type": "text",
+              "content": " . For example, if we shuffle a deck of cards and deal them one at a time, the number of cards dealt before uncovering the first ace is NHGeom(4, 48, 1)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.298,
+            0.896,
+            0.392
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As another example, suppose a college offers g good courses and b bad courses (for some definition of “good” and “bad”), and a student wants to find 4 good courses to take. Not having any idea which of the courses are good, the student randomly tries out courses one at a time, stopping when they have obtained 4 good courses. Then the number of bad courses the student tries out is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { N H G e o m } ( g , b , 4 )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.401,
+            0.896,
+            0.458
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can obtain the PMF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { N H G e o m } ( w , b , r )"
+            },
+            {
+              "type": "text",
+              "content": " by noting that, in the urn context, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = k"
+            },
+            {
+              "type": "text",
+              "content": " means that the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( r + k )"
+            },
+            {
+              "type": "text",
+              "content": " th ball chosen is white and exactly "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r - 1"
+            },
+            {
+              "type": "text",
+              "content": " of the first "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r + k - 1"
+            },
+            {
+              "type": "text",
+              "content": " balls chosen are white. This gives"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.3,
+            0.468,
+            0.699,
+            0.518
+          ],
+          "image_path": "images/page_184_equation_6.jpg",
+          "content": "P (X = k) = \\frac {\\binom {w} {r - 1} \\binom {b} {k}}{\\binom {w + b} {r + k - 1}} \\cdot \\frac {w - r + 1}{w + b - r - k + 1}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.529,
+            0.453,
+            0.548
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k = 0 , 1 , \\ldots , b"
+            },
+            {
+              "type": "text",
+              "content": " (and 0 otherwise)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.557,
+            0.896,
+            0.632
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Alternatively, we can imagine that we continue drawing balls until the urn has been emptied out; this is valid since whether or not we continue to draw balls after obtaining the rth white ball has no effect on X. Think of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "w + b"
+            },
+            {
+              "type": "text",
+              "content": " balls as lined up in a random order, the order in which they will be drawn."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.642,
+            0.896,
+            0.736
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = k"
+            },
+            {
+              "type": "text",
+              "content": " means that among the first "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r + k - 1"
+            },
+            {
+              "type": "text",
+              "content": " balls there are exactly "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r - 1"
+            },
+            {
+              "type": "text",
+              "content": " white balls, then there is a white ball, and then among the last "
+            },
+            {
+              "type": "equation_inline",
+              "content": "w + b - r - k"
+            },
+            {
+              "type": "text",
+              "content": " balls there are exactly "
+            },
+            {
+              "type": "equation_inline",
+              "content": "w - r"
+            },
+            {
+              "type": "text",
+              "content": " white balls. All "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\binom { w + b } { w } }"
+            },
+            {
+              "type": "text",
+              "content": " possibilities for the locations of the white balls in the line are equally likely. So by the naive definition of probability, we have the following slightly simpler expression for the PMF:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.345,
+            0.745,
+            0.655,
+            0.796
+          ],
+          "image_path": "images/page_184_equation_10.jpg",
+          "content": "P (X = k) = \\frac {\\binom {r + k - 1} {r - 1} \\binom {w + b - r - k} {w - r}}{\\binom {w + b} {w}},"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.806,
+            0.453,
+            0.825
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k = 0 , 1 , \\ldots , b"
+            },
+            {
+              "type": "text",
+              "content": " (and 0 otherwise)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.835,
+            0.895,
+            0.891
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Finding the expected value of a Negative Hypergeometric r.v. directly from the definition of expectation results in complicated sums. But the answer is very simple: for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { N H G e o m } ( w , b , r )"
+            },
+            {
+              "type": "text",
+              "content": " , we have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X ) = r b / ( w + 1 )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.103,
+            0.901,
+            0.895,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s prove this using indicator r.v.s. As explained above, we can assume that we"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 185,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.108,
+            0.039,
+            0.21,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Expectation"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.862,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "169"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.104,
+            0.067,
+            0.896,
+            0.182
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "continue drawing balls until the urn is empty. First consider the case "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r = 1"
+            },
+            {
+              "type": "text",
+              "content": " . Label the black balls as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 , 2 , \\ldots , b ,"
+            },
+            {
+              "type": "text",
+              "content": " and let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " be the indicator of black ball "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j"
+            },
+            {
+              "type": "text",
+              "content": " being drawn before any white balls have been drawn. Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( I _ { j } = 1 ) = 1 / ( w + 1 )"
+            },
+            {
+              "type": "text",
+              "content": " since, listing out the order in which black ball "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j"
+            },
+            {
+              "type": "text",
+              "content": " and the white balls are drawn (ignoring the other balls), all orders are equally likely by symmetry, and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j } = 1"
+            },
+            {
+              "type": "text",
+              "content": " is equivalent to black ball "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j"
+            },
+            {
+              "type": "text",
+              "content": " being first in this list. So by linearity,"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.32,
+            0.194,
+            0.681,
+            0.254
+          ],
+          "image_path": "images/page_185_equation_3.jpg",
+          "content": "E \\left(\\sum_ {j = 1} ^ {b} I _ {j}\\right) = \\sum_ {j = 1} ^ {b} E (I _ {j}) = b / (w + 1)."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.274,
+            0.896,
+            0.445
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Sanity check: This answer makes sense since it is increasing in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b ,"
+            },
+            {
+              "type": "text",
+              "content": " decreasing in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "w ,"
+            },
+            {
+              "type": "text",
+              "content": " and correct in the extreme cases "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b   =   0"
+            },
+            {
+              "type": "text",
+              "content": " (when no black balls will be drawn) and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "w   =   0"
+            },
+            {
+              "type": "text",
+              "content": " (when all the black balls will be exhausted before drawing a nonexistent white ball). Moreover, note that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b / ( w + 1 )"
+            },
+            {
+              "type": "text",
+              "content": " looks similar to, but is strictly smaller than, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b / w ,"
+            },
+            {
+              "type": "text",
+              "content": " which is the expected value of a Geom "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( w / ( w + b ) ) { \\mathrm { ~ r . v ~ } }"
+            },
+            {
+              "type": "text",
+              "content": " . It makes sense that sampling without replacement should give a smaller expected waiting time than sampling with replacement. Similarly, if you are searching for something you lost, it makes more sense to choose locations to check without replacement, rather than wasting time looking over and over again in locations you already ruled out."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.453,
+            0.896,
+            0.531
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For general "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r ,"
+            },
+            {
+              "type": "text",
+              "content": " write "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = X _ { 1 } + X _ { 2 } + \\cdots + X _ { r }"
+            },
+            {
+              "type": "text",
+              "content": " , where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " is the number of black balls before the first white ball, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " is the number of black balls after the first white ball but before the second white ball, etc. By essentially the same argument we used to handle the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r = 1 { \\mathrm { ~ c a s e } } ."
+            },
+            {
+              "type": "text",
+              "content": " we have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X _ { j } ) = b / ( w + 1 )"
+            },
+            {
+              "type": "text",
+              "content": " for each "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j ."
+            },
+            {
+              "type": "text",
+              "content": " So by linearity,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.402,
+            0.545,
+            0.597,
+            0.565
+          ],
+          "image_path": "images/page_185_equation_6.jpg",
+          "content": "E (X) = r b / (w + 1)."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.589,
+            0.896,
+            0.666
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Closely related to indicator r.v.s is an alternative expression for the expectation of a nonnegative integer-valued r.v. X. Rather than summing up values of X times values of the PMF of X, we can sum up probabilities of the form "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X > n )"
+            },
+            {
+              "type": "text",
+              "content": " (known as tail probabilities), over nonnegative integers "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.104,
+            0.674,
+            0.896,
+            0.732
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 4.4.8 (Expectation via survival function). Let X be a nonnegative integer-valued r.v. Let F be the CDF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X ,"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "G ( x ) = 1 - F ( x ) = P ( X > x )"
+            },
+            {
+              "type": "text",
+              "content": " . The function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "G"
+            },
+            {
+              "type": "text",
+              "content": " is called the survival function of X. Then"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.412,
+            0.745,
+            0.589,
+            0.793
+          ],
+          "image_path": "images/page_185_equation_9.jpg",
+          "content": "E (X) = \\sum_ {n = 0} ^ {\\infty} G (n)."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.104,
+            0.804,
+            0.894,
+            0.844
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "That is, we can obtain the expectation of X by summing up the survival function (or, stated otherwise, summing up tail probabilities of the distribution)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.104,
+            0.861,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. For simplicity, we will prove the result only for the case that X is bounded, i.e., there is a nonnegative integer b such that X is always at most b. We can represent X as a sum of indicator r.v.s: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = I _ { 1 } + I _ { 2 } + \\cdots + I _ { b }"
+            },
+            {
+              "type": "text",
+              "content": " , where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { n } = I ( X \\geq n )"
+            },
+            {
+              "type": "text",
+              "content": " . For"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 186,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "170"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.895,
+            0.106
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "example, if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X   =   7"
+            },
+            {
+              "type": "text",
+              "content": " occurs, then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " through "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { 7 }"
+            },
+            {
+              "type": "text",
+              "content": " equal 1 while the other indicators equal 0."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.116,
+            0.895,
+            0.154
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "By linearity and the fundamental bridge, and the fact that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{ X \\geq k \\}"
+            },
+            {
+              "type": "text",
+              "content": " is the same event as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{ X > k - 1 \\}"
+            },
+            {
+              "type": "text",
+              "content": " ,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.192,
+            0.168,
+            0.808,
+            0.219
+          ],
+          "image_path": "images/page_186_equation_4.jpg",
+          "content": "E (X) = \\sum_ {k = 1} ^ {b} E (I _ {k}) = \\sum_ {k = 1} ^ {b} P (X \\geq k) = \\sum_ {n = 0} ^ {b - 1} P (X > n) = \\sum_ {n = 0} ^ {\\infty} G (n)."
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.241,
+            0.895,
+            0.277
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As a quick example, we use the above result to give another derivation of the mean of a Geometric r.v."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.288,
+            0.895,
+            0.344
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 4.4.9 (Geometric expectation redux). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { G e o m } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " , and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q = 1 - p ."
+            },
+            {
+              "type": "text",
+              "content": " Using the Geometric story, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{ X > n \\}"
+            },
+            {
+              "type": "text",
+              "content": " is the event that the first "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n + 1"
+            },
+            {
+              "type": "text",
+              "content": " trials are all failures. So by Theorem 4.4.8,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.27,
+            0.358,
+            0.731,
+            0.406
+          ],
+          "image_path": "images/page_186_equation_7.jpg",
+          "content": "E (X) = \\sum_ {n = 0} ^ {\\infty} P (X > n) = \\sum_ {n = 0} ^ {\\infty} q ^ {n + 1} = \\frac {q}{1 - q} = \\frac {q}{p},"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.419,
+            0.74,
+            0.437
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "confirming what we already knew about the mean of a Geometric."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.519,
+            0.698,
+            0.54
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.5 Law of the unconscious statistician (LOTUS)"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.558,
+            0.897,
+            0.672
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As we saw in the St. Petersburg paradox, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( g ( X ) )"
+            },
+            {
+              "type": "text",
+              "content": " does not equal "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( E ( X ) )"
+            },
+            {
+              "type": "text",
+              "content": " in general if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g"
+            },
+            {
+              "type": "text",
+              "content": " is not linear. So how do we correctly calculate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(g(X))?"
+            },
+            {
+              "type": "text",
+              "content": " Since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X )"
+            },
+            {
+              "type": "text",
+              "content": " is an r.v., one way is to first find the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X )"
+            },
+            {
+              "type": "text",
+              "content": " and then use the definition of expectation. Perhaps surprisingly, it turns out that it is possible to find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( g ( X ) )"
+            },
+            {
+              "type": "text",
+              "content": " directly using the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " , without first having to find the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X )"
+            },
+            {
+              "type": "text",
+              "content": " . This is done using the law of the unconscious statistician (LOTUS)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.68,
+            0.895,
+            0.715
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 4.5.1 (LOTUS). If X is a discrete r.v. and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g"
+            },
+            {
+              "type": "text",
+              "content": " is a function from R to R, then"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.352,
+            0.715,
+            0.646,
+            0.752
+          ],
+          "image_path": "images/page_186_equation_12.jpg",
+          "content": "E (g (X)) = \\sum_ {x} g (x) P (X = x),"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.759,
+            0.61,
+            0.777
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where the sum is taken over all possible values of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.787,
+            0.897,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This means that we can get the expected value of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X )"
+            },
+            {
+              "type": "text",
+              "content": " knowing only "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X = x )"
+            },
+            {
+              "type": "text",
+              "content": " the PMF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " ; we don’t need to know the PMF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X )"
+            },
+            {
+              "type": "text",
+              "content": " . The name comes from the fact that in going from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X )"
+            },
+            {
+              "type": "text",
+              "content": " to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( g ( X ) )"
+            },
+            {
+              "type": "text",
+              "content": " it is tempting just to change x to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x )"
+            },
+            {
+              "type": "text",
+              "content": " in the definition, which can be done very easily and mechanically, perhaps in a state of unconsciousness. On second thought, it may sound too good to be true that finding the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X )"
+            },
+            {
+              "type": "text",
+              "content": " is not needed for this calculation, but LOTUS says it is true."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 187,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.21,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Expectation"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.862,
+            0.039,
+            0.892,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "171"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.126
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Before proving LOTUS in general, let’s see why it is true in some special cases. Let X have support "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 , 1 , 2 , \\ldots"
+            },
+            {
+              "type": "text",
+              "content": " . with probabilities "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 0 } , p _ { 1 } , p _ { 2 } , \\ldots"
+            },
+            {
+              "type": "text",
+              "content": " , so the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { P M F }"
+            },
+            {
+              "type": "text",
+              "content": " is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(X = n) ="
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " . Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X ^ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " has support "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 ^ { 3 } , 1 ^ { 3 } , 2 ^ { 3 } , \\ldots"
+            },
+            {
+              "type": "text",
+              "content": " . with probabilities "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 0 } , p _ { 1 } , p _ { 2 } , \\ldots ,"
+            },
+            {
+              "type": "text",
+              "content": " so"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.419,
+            0.133,
+            0.582,
+            0.18
+          ],
+          "image_path": "images/page_187_equation_3.jpg",
+          "content": "E (X) = \\sum_ {n = 0} ^ {\\infty} n p _ {n},"
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.411,
+            0.184,
+            0.592,
+            0.23
+          ],
+          "image_path": "images/page_187_equation_4.jpg",
+          "content": "E (X ^ {3}) = \\sum_ {n = 0} ^ {\\infty} n ^ {3} p _ {n}."
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.238,
+            0.897,
+            0.349
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As claimed by LOTUS, to edit the expression for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X )"
+            },
+            {
+              "type": "text",
+              "content": " into an expression for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X ^ { 3 } )"
+            },
+            {
+              "type": "text",
+              "content": " we can just change the n in front of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " to an "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n ^ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " . This was an easy example since the function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x ) = x ^ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " is one-to-one. But LOTUS holds much more generally. The key insight needed for the proof of LOTUS for general "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g"
+            },
+            {
+              "type": "text",
+              "content": " is the same as the one we used for the proof of linearity: the expectation of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X )"
+            },
+            {
+              "type": "text",
+              "content": " can be written in ungrouped form as"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.353,
+            0.349,
+            0.651,
+            0.385
+          ],
+          "image_path": "images/page_187_equation_6.jpg",
+          "content": "E (g (X)) = \\sum_ {s} g (X (s)) P (\\{s \\}),"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.389,
+            0.897,
+            0.446
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where the sum is over all the pebbles in the sample space, but we can also group the pebbles into super-pebbles according to the value that X assigns to them. Within the super-pebble "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = x ,   g ( X )"
+            },
+            {
+              "type": "text",
+              "content": " always takes on the value "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x )"
+            },
+            {
+              "type": "text",
+              "content": " . Therefore,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.314,
+            0.451,
+            0.685,
+            0.624
+          ],
+          "image_path": "images/page_187_equation_8.jpg",
+          "content": "\\begin{array}{l} E (g (X)) = \\sum_ {s} g (X (s)) P (\\{s \\}) \\\\ = \\sum_ {x} \\sum_ {s: X (s) = x} g (X (s)) P (\\{s \\}) \\\\ = \\sum_ {x} g (x) \\sum_ {s: X (s) = x} P (\\{s \\}) \\\\ = \\sum_ {x} g (x) P (X = x). \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.629,
+            0.896,
+            0.667
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In the last step, we used the fact that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle \\sum _ { s : X ( s ) = x } P ( \\{ s \\} )"
+            },
+            {
+              "type": "text",
+              "content": " is the weight of the superpebble "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = x"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 10,
+          "bbox": [
+            0.104,
+            0.75,
+            0.275,
+            0.768
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.6 Variance"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.787,
+            0.896,
+            0.862
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "One important application of LOTUS is for finding the variance of a random variable. Like expected value, variance is a single-number summary of the distribution of a random variable. While the expected value tells us the center of mass of a distribution, the variance tells us how spread out the distribution is."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.872,
+            0.897,
+            0.891
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition 4.6.1 (Variance and standard deviation). The variance of an r.v. X is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.38,
+            0.899,
+            0.619,
+            0.92
+          ],
+          "image_path": "images/page_187_equation_13.jpg",
+          "content": "\\mathrm{Var} (X) = E (X - E X) ^ {2}."
+        }
+      ]
+    },
+    {
+      "page_idx": 188,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "172"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.773,
+            0.086
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The square root of the variance is called the standard deviation (SD):"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.398,
+            0.095,
+            0.599,
+            0.117
+          ],
+          "image_path": "images/page_188_equation_3.jpg",
+          "content": "\\mathrm{SD} (X) = \\sqrt {\\mathrm{Var} (X)}."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.126,
+            0.895,
+            0.165
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Recall that when we write "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(X - EX)^{2}"
+            },
+            {
+              "type": "text",
+              "content": " , we mean the expectation of the random variable "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(X - EX)^{2}"
+            },
+            {
+              "type": "text",
+              "content": " , not "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(E(\\dot{X} - EX))^2"
+            },
+            {
+              "type": "text",
+              "content": " (which is 0 by linearity)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.173,
+            0.897,
+            0.343
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The variance of X measures how far X is from its mean on average, but instead of simply taking the average difference between X and its mean EX, we take the average squared difference. To see why, note that the average deviation from the mean, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(X - EX)"
+            },
+            {
+              "type": "text",
+              "content": " , always equals 0 by linearity; positive and negative deviations cancel each other out. By squaring the deviations, we ensure that both positive and negative deviations contribute to the overall variability. However, because variance is an average squared distance, it has the wrong units: if X is in dollars, Var(X) is in squared dollars. To get back to our original units, we take the square root; this gives us the standard deviation."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.352,
+            0.897,
+            0.466
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "One might wonder why variance isn’t defined as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E [ X { - } E X ]"
+            },
+            {
+              "type": "text",
+              "content": " which would achieve the goal of counting both positive and negative deviations while maintaining the same units as X. This measure of variability isn’t nearly as popular as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(X - EX)^{2}"
+            },
+            {
+              "type": "text",
+              "content": " , for a variety of reasons. Most notably, the absolute value function isn’t differentiable at 0, whereas the squaring function is differentiable everywhere and is central in various fundamental mathematical results such as the Pythagorean theorem."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.474,
+            0.896,
+            0.532
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "An equivalent expression for variance is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { V a r } ( X ) = E ( X ^ { 2 } ) - ( E X ) ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " . This formula is often easier to work with when doing actual calculations. Since this is the variance formula we will use over and over again, we state it as its own theorem."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.104,
+            0.54,
+            0.429,
+            0.559
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 4.6.2. For any r.v. X,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.366,
+            0.568,
+            0.632,
+            0.589
+          ],
+          "image_path": "images/page_188_equation_9.jpg",
+          "content": "\\mathrm{Var} (X) = E (X ^ {2}) - (E X) ^ {2}."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.104,
+            0.605,
+            0.891,
+            0.625
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu = E X"
+            },
+            {
+              "type": "text",
+              "content": " . Expanding "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( X - \\mu ) ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " and using linearity, the variance of X is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.15,
+            0.633,
+            0.848,
+            0.655
+          ],
+          "image_path": "images/page_188_equation_11.jpg",
+          "content": "E (X - \\mu) ^ {2} = E (X ^ {2} - 2 \\mu X + \\mu^ {2}) = E (X ^ {2}) - 2 \\mu E X + \\mu^ {2} = E (X ^ {2}) - \\mu^ {2}."
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.101,
+            0.673,
+            0.896,
+            0.731
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Variance has the following properties. The first two are easily verified from the definition, the third will be addressed in a later chapter, and the last one is proven just after stating it."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 13,
+          "bbox": [
+            0.099,
+            0.739,
+            0.896,
+            0.89
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 14,
+              "bbox": [
+                0.099,
+                0.74,
+                0.896,
+                0.796
+              ],
+              "content": [
+                {
+                  "type": "equation_inline",
+                  "content": "\\operatorname { V a r } ( X + c ) = \\operatorname { V a r } ( X )"
+                },
+                {
+                  "type": "text",
+                  "content": " for any constant c. Intuitively, if we shift a distribution to the left or right, that should affect the center of mass of the distribution but not its spread."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 15,
+              "bbox": [
+                0.099,
+                0.805,
+                0.509,
+                0.825
+              ],
+              "content": [
+                {
+                  "type": "equation_inline",
+                  "content": "\\operatorname { V a r } ( c X ) = c ^ { 2 } \\operatorname { V a r } ( X )"
+                },
+                {
+                  "type": "text",
+                  "content": " for any constant c."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 16,
+              "bbox": [
+                0.099,
+                0.833,
+                0.897,
+                0.89
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• If X and Y are independent, then "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\operatorname { V a r } ( X + Y )   =   \\operatorname { V a r } ( X ) + \\operatorname { V a r } ( Y )"
+                },
+                {
+                  "type": "text",
+                  "content": " We prove this and discuss it more in Chapter 7. This is not true in general if X and Y are dependent. For example, in the extreme case where X always equals Y , we have"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.183,
+            0.899,
+            0.832,
+            0.921
+          ],
+          "image_path": "images/page_188_equation_17.jpg",
+          "content": "\\operatorname{Var} (X + Y) = \\operatorname{Var} (2 X) = 4 \\operatorname{Var} (X) > 2 \\operatorname{Var} (X) = \\operatorname{Var} (X) + \\operatorname{Var} (Y)"
+        }
+      ]
+    },
+    {
+      "page_idx": 189,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.21,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Expectation"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.862,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "173"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.119,
+            0.068,
+            0.894,
+            0.106
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { V a r } ( X ) > 0"
+            },
+            {
+              "type": "text",
+              "content": " (which will be true unless X is a constant, as the next property shows)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.099,
+            0.115,
+            0.896,
+            0.173
+          ],
+          "content": [
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { V a r } ( X )   \\geq   0 ,"
+            },
+            {
+              "type": "text",
+              "content": " , with equality if and only if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X   =   a )   =   1"
+            },
+            {
+              "type": "text",
+              "content": " for some constant a. In other words, the only random variables that have zero variance are constants (which can be thought of as degenerate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { r . v . s ) }"
+            },
+            {
+              "type": "text",
+              "content": " ; all other r.v.s have positive variance."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.181,
+            0.897,
+            0.276
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To prove the last property, note that Var(X) is the expectation of the nonnegative "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { r . v . } \\quad ( X \\mathrm { ~ - ~ } E X ) ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { V a r } ( X )   \\geq   0"
+            },
+            {
+              "type": "text",
+              "content": " . If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X   =   a )   =   1"
+            },
+            {
+              "type": "text",
+              "content": " for some constant "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a ,"
+            },
+            {
+              "type": "text",
+              "content": " then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X ) = a"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X ^ { 2 } ) = { \\dot { a } } ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { V a r } ( X ) = 0"
+            },
+            {
+              "type": "text",
+              "content": " . Conversely, suppose that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { V a r } ( X ) = 0"
+            },
+            {
+              "type": "text",
+              "content": " Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X - E X ) ^ { 2 } = 0"
+            },
+            {
+              "type": "text",
+              "content": " , which shows that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( X - E X ) ^ { 2 } = 0"
+            },
+            {
+              "type": "text",
+              "content": " has probability 1, which in turn shows that X equals its mean with probability 1."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.285,
+            0.896,
+            0.341
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "h 4.6.3 (Variance is not linear). Unlike expectation, variance is not linear. The constant comes out squared in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { V a r } ( c X ) = c ^ { 2 } \\operatorname { V a r } ( X )"
+            },
+            {
+              "type": "text",
+              "content": " , and the variance of the sum of r.v.s may not be the sum of their variances if they are dependent."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.35,
+            0.896,
+            0.388
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 4.6.4 (Geometric and Negative Binomial variance). In this example we’ll use LOTUS to compute the variance of the Geometric distribution."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.397,
+            0.708,
+            0.417
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { G e o m } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " . We already know "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X ) = q / p ."
+            },
+            {
+              "type": "text",
+              "content": " . By LOTUS,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.255,
+            0.426,
+            0.745,
+            0.476
+          ],
+          "image_path": "images/page_189_equation_8.jpg",
+          "content": "E (X ^ {2}) = \\sum_ {k = 0} ^ {\\infty} k ^ {2} P (X = k) = \\sum_ {k = 0} ^ {\\infty} k ^ {2} p q ^ {k} = \\sum_ {k = 1} ^ {\\infty} k ^ {2} p q ^ {k}."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.484,
+            0.894,
+            0.52
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We’ll find this using a tactic similar to how we found the expectation, starting from the geometric series"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.427,
+            0.52,
+            0.572,
+            0.567
+          ],
+          "image_path": "images/page_189_equation_10.jpg",
+          "content": "\\sum_ {k = 0} ^ {\\infty} q ^ {k} = \\frac {1}{1 - q}"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.572,
+            0.829,
+            0.59
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "and taking derivatives. After differentiating once with respect to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q ,"
+            },
+            {
+              "type": "text",
+              "content": " we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.394,
+            0.599,
+            0.606,
+            0.648
+          ],
+          "image_path": "images/page_189_equation_12.jpg",
+          "content": "\\sum_ {k = 1} ^ {\\infty} k q ^ {k - 1} = \\frac {1}{(1 - q) ^ {2}}."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.657,
+            0.897,
+            0.714
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We start the sum from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k = 1"
+            },
+            {
+              "type": "text",
+              "content": " since the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k = 0"
+            },
+            {
+              "type": "text",
+              "content": " term is 0 anyway. If we differentiate again, we’ll get "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k ( k - 1 )"
+            },
+            {
+              "type": "text",
+              "content": " instead of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " as we want, so let’s replenish our supply of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q ^ { \\prime } \\mathrm { s }"
+            },
+            {
+              "type": "text",
+              "content": " by multiplying both sides by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q ."
+            },
+            {
+              "type": "text",
+              "content": " This gives"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.404,
+            0.723,
+            0.594,
+            0.771
+          ],
+          "image_path": "images/page_189_equation_14.jpg",
+          "content": "\\sum_ {k = 1} ^ {\\infty} k q ^ {k} = \\frac {q}{(1 - q) ^ {2}}."
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.102,
+            0.78,
+            0.54,
+            0.798
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Now we are ready to take another derivative:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.389,
+            0.808,
+            0.61,
+            0.856
+          ],
+          "image_path": "images/page_189_equation_16.jpg",
+          "content": "\\sum_ {k = 1} ^ {\\infty} k ^ {2} q ^ {k - 1} = \\frac {1 + q}{(1 - q) ^ {3}},"
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.104,
+            0.865,
+            0.13,
+            0.877
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "so"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 18,
+          "bbox": [
+            0.285,
+            0.875,
+            0.714,
+            0.923
+          ],
+          "image_path": "images/page_189_equation_18.jpg",
+          "content": "E (X ^ {2}) = \\sum_ {k = 1} ^ {\\infty} k ^ {2} p q ^ {k} = p q \\frac {1 + q}{(1 - q) ^ {3}} = \\frac {q (1 + q)}{p ^ {2}}."
+        }
+      ]
+    },
+    {
+      "page_idx": 190,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "174"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.104,
+            0.068,
+            0.18,
+            0.086
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Finally,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.243,
+            0.085,
+            0.754,
+            0.127
+          ],
+          "image_path": "images/page_190_equation_3.jpg",
+          "content": "\\operatorname{Var} (X) = E (X ^ {2}) - (E X) ^ {2} = \\frac {q (1 + q)}{p ^ {2}} - \\left(\\frac {q}{p}\\right) ^ {2} = \\frac {q}{p ^ {2}}."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.129,
+            0.895,
+            0.166
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This is also the variance of the First Success distribution, since shifting by a constant does not affect the variance."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.176,
+            0.896,
+            0.236
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Since an "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { N B i n } ( r , p )"
+            },
+            {
+              "type": "text",
+              "content": " r.v. can be represented as a sum of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r \\mathrm { i . i . d }"
+            },
+            {
+              "type": "text",
+              "content": " . Geom "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( p )"
+            },
+            {
+              "type": "text",
+              "content": " r.v.s by Theorem 4.3.10, and since variance is additive for independent random variables, it follows that the variance of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { N B i n } ( r , p )"
+            },
+            {
+              "type": "text",
+              "content": " distribution is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r \\cdot { \\frac { q } { p ^ { 2 } } }"
+            },
+            {
+              "type": "text",
+              "content": " \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.242,
+            0.896,
+            0.317
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "LOTUS is an all-purpose tool for computing "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( g ( X ) )"
+            },
+            {
+              "type": "text",
+              "content": " for any "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ,"
+            },
+            {
+              "type": "text",
+              "content": " but as it usually leads to complicated sums, it should be used as a last resort. For variance calculations, our trusty indicator r.v.s can sometimes be used in place of LOTUS, as in the next example."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.326,
+            0.896,
+            0.384
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 4.6.5 (Binomial variance). Let’s find the variance of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { B i n } ( n , p )"
+            },
+            {
+              "type": "text",
+              "content": " using indicator r.v.s to avoid tedious sums. Represent "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = I _ { 1 } + I _ { 2 } + \\cdots + I _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " , where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " is the indicator of the jth trial being a success. Each "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " has variance"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.267,
+            0.389,
+            0.731,
+            0.413
+          ],
+          "image_path": "images/page_190_equation_8.jpg",
+          "content": "\\mathrm{Var} (I _ {j}) = E (I _ {j} ^ {2}) - (E (I _ {j})) ^ {2} = p - p ^ {2} = p (1 - p)."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.104,
+            0.417,
+            0.531,
+            0.441
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(Recall that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j } ^ { 2 } = I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " , so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( I _ { j } ^ { 2 } ) = E ( I _ { j } ) = p . )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.447,
+            0.895,
+            0.481
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Since the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " are independent, we can add their variances to get the variance of their sum:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.274,
+            0.484,
+            0.724,
+            0.505
+          ],
+          "image_path": "images/page_190_equation_11.jpg",
+          "content": "\\operatorname{Var} (X) = \\operatorname{Var} (I _ {1}) + \\dots + \\operatorname{Var} (I _ {n}) = n p (1 - p)."
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.517,
+            0.896,
+            0.576
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Alternatively, we can find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X ^ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " by first finding "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E { \\binom { X } { 2 } }"
+            },
+            {
+              "type": "text",
+              "content": " . The latter sounds more complicated, but actually it is simpler since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle { \\binom { X } { 2 } }"
+            },
+            {
+              "type": "text",
+              "content": " is the number of pairs of successful trials. Creating an indicator r.v. for each pair of trials, we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.411,
+            0.581,
+            0.587,
+            0.623
+          ],
+          "image_path": "images/page_190_equation_13.jpg",
+          "content": "E \\binom{X}{2} = \\binom{n}{2} p ^ {2}."
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.104,
+            0.627,
+            0.163,
+            0.644
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Thus,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.206,
+            0.644,
+            0.792,
+            0.666
+          ],
+          "image_path": "images/page_190_equation_15.jpg",
+          "content": "n (n - 1) p ^ {2} = E (X (X - 1)) = E (X ^ {2}) - E (X) = E (X ^ {2}) - n p,"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.104,
+            0.67,
+            0.277,
+            0.688
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "which again gives"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.17,
+            0.695,
+            0.828,
+            0.717
+          ],
+          "image_path": "images/page_190_equation_17.jpg",
+          "content": "\\mathrm{Var} (X) = E (X ^ {2}) - (E X) ^ {2} = (n (n - 1) p ^ {2} + n p) - (n p) ^ {2} = n p (1 - p)."
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.104,
+            0.724,
+            0.807,
+            0.743
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Exercise 48 uses this strategy to find the variance of the Hypergeometric."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 19,
+          "bbox": [
+            0.104,
+            0.825,
+            0.259,
+            0.843
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.7 Poisson"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.102,
+            0.862,
+            0.895,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The last discrete distribution that we’ll introduce in this chapter is the Poisson, which is an extremely popular distribution for modeling discrete data. We’ll introduce its PMF, mean, and variance, and then discuss its story in more detail."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 191,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.21,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Expectation"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.862,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "175"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.897,
+            0.105
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition 4.7.1 (Poisson distribution). An r.v. X has the Poisson distribution with parameter λ, where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda > 0"
+            },
+            {
+              "type": "text",
+              "content": " , if the PMF of X is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.32,
+            0.112,
+            0.68,
+            0.15
+          ],
+          "image_path": "images/page_191_equation_3.jpg",
+          "content": "P (X = k) = \\frac {e ^ {- \\lambda} \\lambda^ {k}}{k !}, \\quad k = 0, 1, 2, \\dots ."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.156,
+            0.396,
+            0.175
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We write this as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim  Pois (\\lambda)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.181,
+            0.714,
+            0.205
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This is a valid PMF because of the Taylor series "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\begin{array} { r } { \\sum _ { k = 0 } ^ { \\infty } \\frac { \\lambda ^ { k } } { k ! } = e ^ { \\lambda } } \\end{array}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.212,
+            0.896,
+            0.249
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 4.7.2 (Poisson expectation and variance). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X   \\sim   \\mathrm { P o i s } ( \\lambda )"
+            },
+            {
+              "type": "text",
+              "content": " . We will show that the mean and variance are both equal to λ. For the mean, we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.374,
+            0.257,
+            0.625,
+            0.429
+          ],
+          "image_path": "images/page_191_equation_7.jpg",
+          "content": "\\begin{array}{l} E (X) = e ^ {- \\lambda} \\sum_ {k = 0} ^ {\\infty} k \\frac {\\lambda^ {k}}{k !} \\\\ = e ^ {- \\lambda} \\sum_ {k = 1} ^ {\\infty} k \\frac {\\lambda^ {k}}{k !} \\\\ = \\lambda e ^ {- \\lambda} \\sum_ {k = 1} ^ {\\infty} \\frac {\\lambda^ {k - 1}}{(k - 1) !} \\\\ = \\lambda e ^ {- \\lambda} e ^ {\\lambda} = \\lambda . \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.439,
+            0.896,
+            0.476
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "First we dropped the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k = 0"
+            },
+            {
+              "type": "text",
+              "content": " term because it was 0. Then we took a λ out of the sum so that what was left inside was just the Taylor series for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "e ^ { \\lambda }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.485,
+            0.618,
+            0.505
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To get the variance, we first find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X ^ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " . By LOTUS,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.297,
+            0.512,
+            0.704,
+            0.56
+          ],
+          "image_path": "images/page_191_equation_10.jpg",
+          "content": "E (X ^ {2}) = \\sum_ {k = 0} ^ {\\infty} k ^ {2} P (X = k) = e ^ {- \\lambda} \\sum_ {k = 0} ^ {\\infty} k ^ {2} \\frac {\\lambda^ {k}}{k !}."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.566,
+            0.892,
+            0.601
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "From here, the derivation is very similar to that of the variance of the Geometric. Differentiate the familiar series"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.44,
+            0.607,
+            0.559,
+            0.655
+          ],
+          "image_path": "images/page_191_equation_12.jpg",
+          "content": "\\sum_ {k = 0} ^ {\\infty} \\frac {\\lambda^ {k}}{k !} = e ^ {\\lambda}"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.104,
+            0.661,
+            0.414,
+            0.679
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "with respect to λ and replenish:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.416,
+            0.687,
+            0.582,
+            0.784
+          ],
+          "image_path": "images/page_191_equation_14.jpg",
+          "content": "\\begin{array}{l} \\sum_ {k = 1} ^ {\\infty} k \\frac {\\lambda^ {k - 1}}{k !} = e ^ {\\lambda}, \\\\ \\sum_ {k = 1} ^ {\\infty} k \\frac {\\lambda^ {k}}{k !} = \\lambda e ^ {\\lambda}. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.104,
+            0.792,
+            0.277,
+            0.81
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Rinse and repeat:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.329,
+            0.817,
+            0.67,
+            0.914
+          ],
+          "image_path": "images/page_191_equation_16.jpg",
+          "content": "\\begin{array}{l} \\sum_ {k = 1} ^ {\\infty} k ^ {2} \\frac {\\lambda^ {k - 1}}{k !} = e ^ {\\lambda} + \\lambda e ^ {\\lambda} = e ^ {\\lambda} (1 + \\lambda), \\\\ \\sum_ {k = 1} ^ {\\infty} k ^ {2} \\frac {\\lambda^ {k}}{k !} = e ^ {\\lambda} \\lambda (1 + \\lambda). \\\\ \\end{array}"
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

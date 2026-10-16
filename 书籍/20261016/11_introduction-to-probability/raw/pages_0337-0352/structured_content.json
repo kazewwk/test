@@ -1,0 +1,2545 @@
+{
+  "pages": [
+    {
+      "page_idx": 336,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "320"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.068,
+            0.894,
+            0.125
+          ],
+          "content": "if refrigerators have twice the failure rate of stoves, then it says that the odds are 2 to 1 in favor of the refrigerator failing first. As a simple check, note that the answer reduces to $1 / 2$ when $\\lambda _ { 1 } = \\lambda _ { 2 }$ , which must be true by symmetry."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.134,
+            0.894,
+            0.19
+          ],
+          "content": "An alternative method of getting the same result is to use LOTP to condition on $T _ { 1 }$ (or condition on $T _ { 2 } )$ . A third approach, using a story about Poisson processes, is in Chapter 13. \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.2,
+            0.894,
+            0.236
+          ],
+          "content": "Our last example in this section demonstrates how we can use the joint distribution of X and Y to derive the distribution of a function of X and $Y$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.246,
+            0.894,
+            0.341
+          ],
+          "content": "Example 7.1.25 (Cauchy PDF). Let X and Y be i.i.d. $\\mathcal { N } ( 0 , 1 )$ , and let $T = X / Y$ (We can define $T$ arbitrarily in the case $Y = 0 ;$ ; the choice of how to define $T$ in that case has no effect on the distribution of $T ,$ since $P ( Y = 0 ) = 0 . )$ The distribution of $T$ is a famous named distribution called the Cauchy distribution, and we will encounter it again in later chapters. Meanwhile, find the PDF of $T$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.106,
+            0.351,
+            0.194,
+            0.367
+          ],
+          "level": 2,
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.378,
+            0.894,
+            0.414
+          ],
+          "content": "We’ll find an expression for the CDF of T first, and then differentiate to get the PDF. We can write"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.26,
+            0.419,
+            0.738,
+            0.46
+          ],
+          "content": "F _ {T} (t) = P (T \\leq t) = P \\left(\\frac {X}{Y} \\leq t\\right) = P \\left(\\frac {X}{| Y |} \\leq t\\right),",
+          "image_source": "images/page_336_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.466,
+            0.894,
+            0.526
+          ],
+          "content": "since the ${ \\mathrm { ~ r . v . s ~ } } { \\frac { X } { Y } }$ and $\\frac { X } { | | Y | | }$ are identically distributed by the symmetry of the standard Normal distribution. Now $\\left| Y \\right|$ is nonnegative, so we can multiply by it on both sides without reversing the direction of the inequality. Thus, we are interested in finding"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.394,
+            0.534,
+            0.604,
+            0.555
+          ],
+          "content": "F _ {T} (t) = P (X \\leq t | Y |).",
+          "image_source": "images/page_336_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.561,
+            0.894,
+            0.618
+          ],
+          "content": "We calculate this probability by integrating the joint PDF of X and $Y$ over the region where $X \\leq t | Y |$ holds. The joint PDF of X and Y is just the product of the marginal PDFs, by independence. So"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.275,
+            0.624,
+            0.725,
+            0.694
+          ],
+          "content": "\\begin{array}{l} F _ {T} (t) = P (X \\leq t | Y |) \\\\ = \\int_ {- \\infty} ^ {\\infty} \\int_ {- \\infty} ^ {t | y |} \\frac {1}{\\sqrt {2 \\pi}} e ^ {- x ^ {2} / 2} \\frac {1}{\\sqrt {2 \\pi}} e ^ {- y ^ {2} / 2} d x d y. \\\\ \\end{array}",
+          "image_source": "images/page_336_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.698,
+            0.894,
+            0.774
+          ],
+          "content": "Note that the inner limits of integration (the limits for x) depend on $y ,$ whereas the outer limits of integration (the limits for $y )$ can’t depend on $x$ (see the math appendix for more about limits of integration with multiple integrals). With some manipulations, we can get the double integral down to a single integral:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.255,
+            0.779,
+            0.744,
+            0.918
+          ],
+          "content": "\\begin{array}{l} F _ {T} (t) = \\int_ {- \\infty} ^ {\\infty} \\frac {1}{\\sqrt {2 \\pi}} e ^ {- y ^ {2} / 2} \\left(\\int_ {- \\infty} ^ {t | y |} \\frac {1}{\\sqrt {2 \\pi}} e ^ {- x ^ {2} / 2} d x\\right) d y \\\\ = \\int_ {- \\infty} ^ {\\infty} \\frac {1}{\\sqrt {2 \\pi}} e ^ {- y ^ {2} / 2} \\Phi (t | y |) d y \\\\ = \\sqrt {\\frac {2}{\\pi}} \\int_ {0} ^ {\\infty} e ^ {- y ^ {2} / 2} \\Phi (t y) d y. \\\\ \\end{array}",
+          "image_source": "images/page_336_equation_14.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 337,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": "Joint distributions"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "321"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.125
+          ],
+          "content": "Alternatively, we can get the same result without doing a double integral by using one of the versions of LOTP. Letting I be the indicator r.v. for the event $X \\leq t | Y |$ we again have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.129,
+            0.699,
+            0.215
+          ],
+          "content": "\\begin{array}{l} P (I = 1) = \\int_ {- \\infty} ^ {\\infty} P (I = 1 | Y = y) f _ {Y} (y) d y \\\\ = \\int_ {- \\infty} ^ {\\infty} \\frac {1}{\\sqrt {2 \\pi}} e ^ {- y ^ {2} / 2} \\Phi (t | y |) d y. \\\\ \\end{array}",
+          "image_source": "images/page_337_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.22,
+            0.897,
+            0.333
+          ],
+          "content": "At this point we seem to be stuck with an integral we don’t know how to do. Fortunately, we were asked to find the PDF, not the CDF, so instead of evaluating the integral, we can just differentiate it with respect to t (not with respect to $y ,$ which is a dummy variable). We are permitted to interchange the order of integration and differentiation under mild technical conditions, which are met here. (This technique is known as differentiation under the integral sign, or DUThIS for short.) Then"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.275,
+            0.339,
+            0.725,
+            0.51
+          ],
+          "content": "\\begin{array}{l} f _ {T} (t) = F _ {T} ^ {\\prime} (t) = \\sqrt {\\frac {2}{\\pi}} \\int_ {0} ^ {\\infty} \\frac {\\partial}{\\partial t} \\left(e ^ {- y ^ {2} / 2} \\Phi (t y)\\right) d y \\\\ = \\sqrt {\\frac {2}{\\pi}} \\int_ {0} ^ {\\infty} y e ^ {- y ^ {2} / 2} \\varphi (t y) d y \\\\ = \\frac {1}{\\pi} \\int_ {0} ^ {\\infty} y e ^ {- \\frac {(1 + t ^ {2}) y ^ {2}}{2}} d y \\\\ = \\frac {1}{\\pi (1 + t ^ {2})}, \\\\ \\end{array}",
+          "image_source": "images/page_337_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.516,
+            0.896,
+            0.551
+          ],
+          "content": "using the substitution $u = ( 1 + t ^ { 2 } ) y ^ { 2 } / 2 ,   d u = ( 1 + t ^ { 2 } ) y d y$ for the final step. So the PDF of $T$ is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.37,
+            0.55,
+            0.63,
+            0.587
+          ],
+          "content": "f _ {T} (t) = \\frac {1}{\\pi (1 + t ^ {2})}, \\quad t \\in \\mathbb {R}.",
+          "image_source": "images/page_337_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.59,
+            0.16,
+            0.606
+          ],
+          "content": "Since"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.274,
+            0.602,
+            0.725,
+            0.641
+          ],
+          "content": "\\int_ {- \\infty} ^ {\\infty} \\frac {1}{1 + t ^ {2}} d t = \\arctan (\\infty) - \\arctan (- \\infty) = \\pi ,",
+          "image_source": "images/page_337_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.645,
+            0.896,
+            0.682
+          ],
+          "content": "we have obtained a valid PDF. If we want to obtain the CDF too, we can integrate the PDF over the appropriate interval:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.282,
+            0.69,
+            0.717,
+            0.731
+          ],
+          "content": "F _ {T} (t) = \\int_ {- \\infty} ^ {t} \\frac {1}{\\pi (1 + u ^ {2})} d u = \\frac {1}{\\pi} \\arctan (t) + \\frac {1}{2}.",
+          "image_source": "images/page_337_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.747,
+            0.896,
+            0.822
+          ],
+          "content": "As we mentioned, the distribution of T is called the Cauchy distribution. The Cauchy PDF is similar in shape to the Normal bell curve, but with tails that decay less quickly to 0. Figure 7.7 superimposes the Cauchy and standard Normal PDFs; the heavier tails of the Cauchy PDF are evident."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.832,
+            0.897,
+            0.916
+          ],
+          "content": "An interesting fact about the Cauchy distribution is that although the PDF is symmetric about 0, its expected value does not exist, since the integral $\\textstyle \\int _ { - \\infty } ^ { \\infty } { \\frac { t } { \\pi \\left( 1 + t ^ { 2 } \\right) } } d t$ diverges: note that for large $\\begin{array} { r } { t , \\; \\frac { t } { 1 + t ^ { 2 } } \\approx \\frac { 1 } { t } } \\end{array}$ , and $\\begin{array} { r } { \\int _ { 1 } ^ { \\infty } \\frac { 1 } { t } d t = \\infty } \\end{array}$ . It would be a blunder to write $\\text{\" }E(\\frac{X}{Y})=E(X)E(\\frac{1}{Y})=\\overset{\\text{\" }}{0}\\cdot E(\\frac{1}{Y})=0 \\text{\" }$ , since $E ( \\frac { 1 } { Y } )$ also does not exist. \u0003"
+        }
+      ]
+    },
+    {
+      "page_idx": 338,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "322"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.217,
+            0.083,
+            0.778,
+            0.31
+          ],
+          "sub_type": "violin",
+          "content": "| X | PDF (Black) | PDF (Gray) |\n| --- | --- | --- |\n| -3 | ~0.02 | ~0.00 |\n| -2 | ~0.06 | ~0.05 |\n| -1 | ~0.18 | ~0.25 |\n| 0 | ~0.32 | ~0.40 |\n| 1 | ~0.18 | ~0.25 |\n| 2 | ~0.06 | ~0.05 |\n| 3 | ~0.02 | ~0.00 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_338_chart_2.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.337,
+            0.238,
+            0.352
+          ],
+          "level": 2,
+          "content": "FIGURE 7.7"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.355,
+            0.894,
+            0.391
+          ],
+          "content": "Cauchy PDF (dark) and $\\mathcal { N } ( 0 , 1 )$ PDF (light). The Cauchy distribution has much heavier tails than the Normal distribution."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.417,
+            0.266,
+            0.435
+          ],
+          "level": 2,
+          "content": "7.1.3 Hybrid"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.454,
+            0.897,
+            0.53
+          ],
+          "content": "It is also possible that we could be interested in the joint distribution of a discrete r.v. and a continuous r.v. This case was mentioned when discussing the four forms of Bayes’ rule and LOTP. Conceptually it is analogous to the other cases, but since the notation can be tricky, we’ll work through an example that sheds light on it."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.54,
+            0.896,
+            0.653
+          ],
+          "content": "Example 7.1.26 (Which company made the lightbulb?). A lightbulb was manufactured by one of two companies. Bulbs that are made by Company 0 last an Expo(λ<sub>0</sub>) amount of time, and bulbs made by Company 1 last an $\\mathrm{Exp}(\\lambda_1)$ amount of time, with $\\lambda _ { 0 }   <   \\lambda _ { 1 }$ . The bulb of interest here was made by Company 0 with probability $p _ { 0 }$ and by Company 1 with probability $p _ { 1 } = 1 - p _ { 0 }$ , but from inspecting the bulb we don’t know which company made it."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.663,
+            0.894,
+            0.701
+          ],
+          "content": "Let T be how long the bulb lasts, and I be the indicator of it having been made by Company 1."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.1,
+            0.707,
+            0.899,
+            0.806
+          ],
+          "sub_type": "text",
+          "content": "(a) Find the CDF and PDF of $T .$\n(b) Does T have the memoryless property?\n(c) Find the conditional distribution of I given T = t. What happens to this as $t \\rightarrow \\infty ?$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.816,
+            0.195,
+            0.832
+          ],
+          "level": 2,
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.844,
+            0.897,
+            0.919
+          ],
+          "content": "Since T is a continuous r.v. and I is discrete, the joint distribution of $T$ and I is a hybrid, as illustrated in Figure 7.8. In a joint PDF of two continuous r.v.s, there are infinitely many vertical slices of the joint PDF that we can take, each corresponding to a different conditional PDF. Here there are only two conditional PDFs of $T ,$ one"
+        }
+      ]
+    },
+    {
+      "page_idx": 339,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": "Joint distributions"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "323"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.126
+          ],
+          "continues_prev": true,
+          "content": "for $I = 0$ and one for $I = 1$ . As stated in the problem, the conditional distribution of $T$ given $I = 0$ is Expo(λ<sub>0</sub>) and given I = 1 is $\\mathrm{Exp}(\\lambda_1)$ . The marginal distribution of I is $\\mathrm { B e r n } ( p _ { 1 } )$"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.302,
+            0.149,
+            0.709,
+            0.37
+          ],
+          "sub_type": "text_image",
+          "content": "I = 0\nI = 1\nt",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_339_image_3.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.393,
+            0.239,
+            0.409
+          ],
+          "level": 2,
+          "content": "FIGURE 7.8"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.412,
+            0.459,
+            0.43
+          ],
+          "content": "Hybrid joint distribution of T and I."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.448,
+            0.896,
+            0.542
+          ],
+          "content": "Thus, we are given the joint distribution of T and I in terms of (1) the marginal distribution of I and (2) the conditional distribution of $T$ given I. The problem then asks us to flip it around and find (1) the marginal distribution of $T$ and (2) the conditional distribution of I given $T .$ Phrased in this way, it becomes clear that LOTP and Bayes’ rule will be our friends."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.559,
+            0.895,
+            0.596
+          ],
+          "content": "(a) In this part we are asked to derive the marginal distribution of T. For the CDF, we use the law of total probability, conditioning on I:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.219,
+            0.61,
+            0.78,
+            0.687
+          ],
+          "content": "\\begin{array}{l} F _ {T} (t) = P (T \\leq t) = P (T \\leq t | I = 0) p _ {0} + P (T \\leq t | I = 1) p _ {1} \\\\ = (1 - e ^ {- \\lambda_ {0} t}) p _ {0} + (1 - e ^ {- \\lambda_ {1} t}) p _ {1} \\\\ = 1 - p _ {0} e ^ {- \\lambda_ {0} t} - p _ {1} e ^ {- \\lambda_ {1} t} \\\\ \\end{array}",
+          "image_source": "images/page_339_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.702,
+            0.666,
+            0.72
+          ],
+          "content": "for $t > 0$ . The marginal PDF is the derivative of the CDF:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.301,
+            0.737,
+            0.697,
+            0.759
+          ],
+          "content": "f _ {T} (t) = p _ {0} \\lambda_ {0} e ^ {- \\lambda_ {0} t} + p _ {1} \\lambda_ {1} e ^ {- \\lambda_ {1} t}, \\text {for} t > 0.",
+          "image_source": "images/page_339_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.776,
+            0.896,
+            0.832
+          ],
+          "content": "We could also have gotten this directly from the $^ { \\circ } X$ continuous, Y discrete” version of LOTP, but we did not write out a proof of that version of LOTP, and working through this example helps show why that version of LOTP works."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.844,
+            0.897,
+            0.919
+          ],
+          "content": "(b) Since $\\lambda _ { 0 } \\neq \\lambda _ { 1 }$ , the above expression for the PDF does not reduce to the form $\\dot { \\lambda } e ^ { - \\lambda t }$ . So the distribution of $T$ is not Exponential, which implies that it does not have the memoryless property. (The distribution of T is called a mixture of two Exponentials.)"
+        }
+      ]
+    },
+    {
+      "page_idx": 340,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.105,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "324"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.068,
+            0.893,
+            0.105
+          ],
+          "content": "(c) Using a hybrid form of Bayes’ rule, which is the $^ { \\circ } X$ continuous, Y discrete” version in the table of versions of Bayes’ rule, we have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.309,
+            0.118,
+            0.69,
+            0.159
+          ],
+          "content": "P (I = 1 | T = t) = \\frac {f _ {T} (t | I = 1) P (I = 1)}{f _ {T} (t)},",
+          "image_source": "images/page_340_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.17,
+            0.896,
+            0.209
+          ],
+          "content": "where $f _ { T } ( t | I = 1 )$ is the conditional PDF of T given $I = 1$ , evaluated at t. Using the fact that $T | I = 1 \\sim \\mathrm { E x p o } ( \\lambda _ { 1 } )$ and the marginal PDF derived in (a),"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.189,
+            0.221,
+            0.812,
+            0.264
+          ],
+          "content": "P (I = 1 | T = t) = \\frac {p _ {1} \\lambda_ {1} e ^ {- \\lambda_ {1} t}}{p _ {0} \\lambda_ {0} e ^ {- \\lambda_ {0} t} + p _ {1} \\lambda_ {1} e ^ {- \\lambda_ {1} t}} = \\frac {p _ {1} \\lambda_ {1}}{p _ {0} \\lambda_ {0} e ^ {(\\lambda_ {1} - \\lambda_ {0}) t} + p _ {1} \\lambda_ {1}}.",
+          "image_source": "images/page_340_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.274,
+            0.897,
+            0.352
+          ],
+          "content": "Thus the conditional distribution of I given $T = t$ is Bernoulli with this probability of success. This probability goes to 0 as $t \\rightarrow \\infty$ , which makes sense intuitively: the longer the bulb lasts, the more confident we will be that it was made by Company 0, as their bulbs have a lower failure rate λ and a higher life expectancy $\\frac { 1 } { \\lambda } .$ \u0003"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.432,
+            0.304,
+            0.451
+          ],
+          "level": 2,
+          "content": "7.2 2D LOTUS"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.469,
+            0.896,
+            0.525
+          ],
+          "content": "The two-dimensional version of LOTUS lets us calculate the expectation of a random variable that is a function of two random variables X and Y , using the joint distribution of X and Y ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.535,
+            0.896,
+            0.571
+          ],
+          "content": "Theorem 7.2.1 (2D LOTUS). Let g be a function from $\\mathbb { R } ^ { 2 }$ to $\\mathbb { R } .$ If X and $Y$ are discrete, then"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.278,
+            0.571,
+            0.721,
+            0.61
+          ],
+          "content": "E (g (X, Y)) = \\sum_ {x} \\sum_ {y} g (x, y) P (X = x, Y = y).",
+          "image_source": "images/page_340_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.617,
+            0.624,
+            0.636
+          ],
+          "content": "If X and Y are continuous with joint PDF $f _ { X , Y }$ , then"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.277,
+            0.648,
+            0.721,
+            0.69
+          ],
+          "content": "E (g (X, Y)) = \\int_ {- \\infty} ^ {\\infty} \\int_ {- \\infty} ^ {\\infty} g (x, y) f _ {X, Y} (x, y) d x d y.",
+          "image_source": "images/page_340_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.71,
+            0.896,
+            0.767
+          ],
+          "content": "Like its 1D counterpart, 2D LOTUS saves us from having to find the distribution of $g ( X , Y )$ in order to calculate its expectation. Instead, having the joint PMF or joint PDF of X and $Y$ is enough."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.776,
+            0.808,
+            0.795
+          ],
+          "content": "One use of 2D LOTUS is to find the expected distance between two r.v.s."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.804,
+            0.896,
+            0.843
+          ],
+          "content": "Example 7.2.2 (Expected distance between two Uniforms). Let X and $Y$ be i.i.d. Unif(0, 1) r.v.s. Find $E ( | X - Y | )$"
+        }
+      ]
+    },
+    {
+      "page_idx": 341,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": "Joint distributions"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "325"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.069,
+            0.195,
+            0.085
+          ],
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.097,
+            0.897,
+            0.117
+          ],
+          "content": "Since the joint PDF is 1 on the unit square $\\{ ( x , y ) : x , y \\in [ 0 , 1 ] \\}$ , 2D LOTUS gives"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.233,
+            0.129,
+            0.768,
+            0.264
+          ],
+          "content": "\\begin{array}{l} E (| X - Y |) = \\int_ {0} ^ {1} \\int_ {0} ^ {1} | x - y | d x d y \\\\ = \\int_ {0} ^ {1} \\int_ {y} ^ {1} (x - y) d x d y + \\int_ {0} ^ {1} \\int_ {0} ^ {y} (y - x) d x d y \\\\ = 2 \\int_ {0} ^ {1} \\int_ {y} ^ {1} (x - y) d x d y = 1 / 3. \\\\ \\end{array}",
+          "image_source": "images/page_341_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.276,
+            0.896,
+            0.313
+          ],
+          "content": "First we broke up the integral into two parts so we could eliminate the absolute value; then we used symmetry."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.324,
+            0.896,
+            0.38
+          ],
+          "content": "Incidentally, by solving this problem, we have also figured out the expected value of $M = \\operatorname* { m a x } ( X , Y )$ and $L = \\operatorname* { m i n } ( X , Y )$ . Since $M + L$ is the same r.v. as $X + Y$ and $M - L$ is the same r.v. as $| X - Y |$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.347,
+            0.398,
+            0.652,
+            0.439
+          ],
+          "content": "\\begin{array}{l} E (M + L) = E (X + Y) = 1, \\\\ E (M - L) = E (| X - Y |) = 1 / 3. \\\\ \\end{array}",
+          "image_source": "images/page_341_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.456,
+            0.896,
+            0.513
+          ],
+          "content": "This is a system of two equations and two unknowns, which we can solve to get $E ( M ) = 2 / 3$ and $E ( L ) = 1 / 3$ . As a check, $E ( M )$ exceeds $E ( L )$ , as it should, and $E ( M )$ and $E ( L )$ are equidistant from $1 / 2$ , as should be the case by symmetry. \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.525,
+            0.894,
+            0.564
+          ],
+          "content": "Example 7.2.3 (Expected distance between two Normals). For $X , Y \\stackrel { \\mathrm { i . i . d . } } { \\sim } \\mathcal { N } ( 0 , 1 )$ find $E ( | X - Y | )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.575,
+            0.195,
+            0.591
+          ],
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.604,
+            0.481,
+            0.623
+          ],
+          "content": "We could again use 2D LOTUS, giving"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.218,
+            0.636,
+            0.782,
+            0.676
+          ],
+          "content": "E (| X - Y |) = \\int_ {- \\infty} ^ {\\infty} \\int_ {- \\infty} ^ {\\infty} | x - y | \\frac {1}{\\sqrt {2 \\pi}} e ^ {- x ^ {2} / 2} \\frac {1}{\\sqrt {2 \\pi}} e ^ {- y ^ {2} / 2} d x d y,",
+          "image_source": "images/page_341_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.69,
+            0.896,
+            0.765
+          ],
+          "content": "but an easier solution uses the fact that the sum or difference of independent $\\mathrm { N o r - }$ mals is Normal, as we proved using MGFs in Chapter 6. Then $X - Y \\sim \\mathcal { N } ( 0 , 2 )$ , so we can write $X - Y = \\sqrt{2}Z$ where $Z \\sim \\mathcal { N } ( 0 , 1 )$ , and $E(|X - Y|) = \\sqrt{2}E|Z|$ . Thus, we have reduced a 2D LOTUS to a 1D LOTUS! It was shown in Example 5.4.7 that"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.437,
+            0.78,
+            0.564,
+            0.82
+          ],
+          "content": "E | Z | = \\sqrt {\\frac {2}{\\pi}},",
+          "image_source": "images/page_341_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.832,
+            0.13,
+            0.844
+          ],
+          "content": "so"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.406,
+            0.842,
+            0.592,
+            0.883
+          ],
+          "content": "E (| X - Y |) = \\frac {2}{\\sqrt {\\pi}}.",
+          "image_source": "images/page_341_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.901,
+            0.834,
+            0.919
+          ],
+          "content": "We can also use 2D LOTUS to give another proof of linearity of expectation."
+        }
+      ]
+    },
+    {
+      "page_idx": 342,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "326"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.068,
+            0.896,
+            0.106
+          ],
+          "content": "Example 7.2.4 (Linearity via 2D LOTUS). Let X and Y be continuous r.v.s (the analogous method also works in the discrete case). By 2D LOTUS,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.172,
+            0.116,
+            0.828,
+            0.222
+          ],
+          "content": "\\begin{array}{l} E (X + Y) = \\int_ {- \\infty} ^ {\\infty} \\int_ {- \\infty} ^ {\\infty} (x + y) f _ {X, Y} (x, y) d x d y \\\\ = \\int_ {- \\infty} ^ {\\infty} \\int_ {- \\infty} ^ {\\infty} x f _ {X, Y} (x, y) d x d y + \\int_ {- \\infty} ^ {\\infty} \\int_ {- \\infty} ^ {\\infty} y f _ {X, Y} (x, y) d x d y \\\\ = E (X) + E (Y). \\\\ \\end{array}",
+          "image_source": "images/page_342_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.234,
+            0.896,
+            0.308
+          ],
+          "content": "This is a short proof of linearity of expectation. For the last step, we used 2D LOTUS and the fact that X is a function of X and $Y$ (that happens to be degenerate in the sense that it doesn’t involve $Y )$ , and similarly for Y . Another way to get the last step is to write"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.113,
+            0.319,
+            0.89,
+            0.36
+          ],
+          "content": "\\int_ {- \\infty} ^ {\\infty} \\int_ {- \\infty} ^ {\\infty} y f _ {X, Y} (x, y) d x d y = \\int_ {- \\infty} ^ {\\infty} y \\int_ {- \\infty} ^ {\\infty} f _ {X, Y} (x, y) d x d y = \\int_ {- \\infty} ^ {\\infty} y f _ {Y} (y) d y = E (Y),",
+          "image_source": "images/page_342_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.37,
+            0.896,
+            0.446
+          ],
+          "content": "where we took y out from the inner integral (since y is held constant when integrating with respect to $x )$ and then recognized the marginal PDF of Y . For the $E ( X )$ term we can first swap the order of integration, from dxdy to dydx, and then the same argument that we used for the $E ( Y )$ term can be applied. \u0003"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.528,
+            0.485,
+            0.546
+          ],
+          "level": 2,
+          "content": "7.3 Covariance and correlation"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.565,
+            0.897,
+            0.679
+          ],
+          "content": "Just as the mean and variance provided single-number summaries of the distribution of a single $\\mathbf { r } . \\mathbf { v } . ,$ covariance is a single-number summary of the joint distribution of two r.v.s. Roughly speaking, covariance measures a tendency of two r.v.s to go up or down together, relative to their means: positive covariance between X and Y indicates that when X goes up, $Y$ also tends to go up, and negative covariance indicates that when X goes up, $Y$ tends to go down. Here is the precise definition."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.687,
+            0.818,
+            0.706
+          ],
+          "content": "Definition 7.3.1 (Covariance). The covariance between r.v.s X and Y is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.313,
+            0.719,
+            0.685,
+            0.74
+          ],
+          "content": "\\mathrm{Cov} (X, Y) = E ((X - E X) (Y - E Y)).",
+          "image_source": "images/page_342_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.751,
+            0.816,
+            0.77
+          ],
+          "content": "Multiplying this out and using linearity, we have an equivalent expression:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.327,
+            0.783,
+            0.672,
+            0.803
+          ],
+          "content": "\\operatorname{Cov} (X, Y) = E (X Y) - E (X) E (Y).",
+          "image_source": "images/page_342_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.825,
+            0.896,
+            0.92
+          ],
+          "content": "Let’s think about the definition intuitively. If X and Y tend to move in the same direction, then $X - E X$ and $Y - E Y$ will tend to be either both positive or both negative, so $( X - E X ) ( Y - E Y )$ will be positive on average, giving a positive covariance. If X and Y tend to move in opposite directions, then $X - E X$ and $Y - E Y$ will tend to have opposite signs, giving a negative covariance."
+        }
+      ]
+    },
+    {
+      "page_idx": 343,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": "Joint distributions"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "327"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.894,
+            0.105
+          ],
+          "content": "If X and Y are independent, then their covariance is zero. We say that r.v.s with zero covariance are uncorrelated."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.115,
+            0.823,
+            0.134
+          ],
+          "content": "Theorem 7.3.2. If X and Y are independent, then they are uncorrelated."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.152,
+            0.896,
+            0.208
+          ],
+          "content": "Proof. We’ll show this in the case where X and $Y$ are continuous, with PDFs $f _ { X }$ and $f _ { Y }$ . Since X and Y are independent, their joint PDF is the product of the marginal PDFs. By 2D LOTUS,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.288,
+            0.214,
+            0.714,
+            0.367
+          ],
+          "content": "\\begin{array}{l} E (X Y) = \\int_ {- \\infty} ^ {\\infty} \\int_ {- \\infty} ^ {\\infty} x y f _ {X} (x) f _ {Y} (y) d x d y \\\\ = \\int_ {- \\infty} ^ {\\infty} y f _ {Y} (y) \\left(\\int_ {- \\infty} ^ {\\infty} x f _ {X} (x) d x\\right) d y \\\\ = \\int_ {- \\infty} ^ {\\infty} x f _ {X} (x) d x \\int_ {- \\infty} ^ {\\infty} y f _ {Y} (y) d y \\\\ = E (X) E (Y). \\\\ \\end{array}",
+          "image_source": "images/page_343_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.373,
+            0.792,
+            0.392
+          ],
+          "content": "The proof in the discrete case is the same, with PMFs instead of PDFs."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.41,
+            0.896,
+            0.485
+          ],
+          "content": "The converse of this theorem is false: just because X and Y are uncorrelated does not mean they are independent. For example, let $X \\sim \\mathcal { N } ( 0 , 1 )$ , and let $Y = X ^ { 2 }$ Then $E ( X Y )   =   E ( X ^ { 3 } )   =   0$ because the odd moments of the standard Normal distribution are equal to 0 by symmetry. Thus X and Y are uncorrelated,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.268,
+            0.495,
+            0.731,
+            0.516
+          ],
+          "content": "\\operatorname{Cov} (X, Y) = E (X Y) - E (X) E (Y) = 0 - 0 = 0,",
+          "image_source": "images/page_343_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.526,
+            0.897,
+            0.639
+          ],
+          "content": "but they are certainly not independent: Y is a function of X, so knowing X gives us perfect information about $Y$ . Covariance is a measure of linear association, so r.v.s can be dependent in nonlinear ways and still have zero covariance, as this example demonstrates. The bottom right plot of Figure 7.9 shows draws from the joint distribution of X and Y in this example. The other three plots illustrate positive correlation, negative correlation, and independence."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.648,
+            0.528,
+            0.667
+          ],
+          "content": "Covariance has the following key properties."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.129,
+            0.681,
+            0.874,
+            0.877
+          ],
+          "sub_type": "text",
+          "content": "1. $\\mathrm{Cov}(X, X) = \\mathrm{Var}(X)$\n2. $\\mathrm{Cov}(X,Y)=\\mathrm{Cov}(Y,X)$\n3. $\\mathrm { C o v } ( X , c ) = 0$ for any constant c.\n4. $\\mathrm{Cov}(aX,Y)=a\\mathrm{Cov}(X,Y)$ for any constant a.\n5. $\\mathrm{Cov}(X + Y,Z) = \\mathrm{Cov}(X,Z) + \\mathrm{Cov}(Y,Z)$\n6. $\\operatorname { C o v } ( X + Y , Z + W ) = \\operatorname { C o v } ( X , Z ) + \\operatorname { C o v } ( X , W ) + \\operatorname { C o v } ( Y , Z ) + \\operatorname { C o v } ( Y , W ) .$\n7. $\\mathrm{Var}(X + Y) = \\mathrm{Var}(X) + \\mathrm{Var}(Y) + 2\\mathrm{Cov}(X,Y)$ . For n r.v.s $X _ { 1 } , \\ldots , X _ { n } ,$ ,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.191,
+            0.882,
+            0.846,
+            0.922
+          ],
+          "content": "\\mathrm{Var} (X _ {1} + \\dots + X _ {n}) = \\mathrm{Var} (X _ {1}) + \\dots + \\mathrm{Var} (X _ {n}) + 2 \\sum_ {i <   j} \\mathrm{Cov} (X _ {i}, X _ {j}).",
+          "image_source": "images/page_343_equation_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 344,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "328"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.144,
+            0.194,
+            0.849,
+            0.685
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.104,
+                0.705,
+                0.237,
+                0.72
+              ],
+              "content": "FIGURE 7.9"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_344_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.723,
+            0.896,
+            0.799
+          ],
+          "content": "Draws from the joint distribution of $( X , Y )$ under various dependence structures. Top left: X and $Y$ are positively correlated. Top right: X and $Y$ are negatively correlated. Bottom left: X and $Y$ are independent, hence uncorrelated. Bottom right: $Y$ is a deterministic function of $X$ , but $X$ and $Y$ are uncorrelated."
+        }
+      ]
+    },
+    {
+      "page_idx": 345,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": "Joint distributions"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": "329"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.106
+          ],
+          "content": "The first five properties follow readily from the definition and basic properties of expectation. Property 6 follows from Property 2 and Property 5, by expanding"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.141,
+            0.116,
+            0.856,
+            0.206
+          ],
+          "content": "\\begin{array}{l} \\operatorname{Cov} (X + Y, Z + W) = \\operatorname{Cov} (X, Z + W) + \\operatorname{Cov} (Y, Z + W) \\\\ = \\operatorname{Cov} (Z + W, X) + \\operatorname{Cov} (Z + W, Y) \\\\ = \\operatorname{Cov} (Z, X) + \\operatorname{Cov} (W, X) + \\operatorname{Cov} (Z, Y) + \\operatorname{Cov} (W, Y) \\\\ = \\operatorname{Cov} (X, Z) + \\operatorname{Cov} (X, W) + \\operatorname{Cov} (Y, Z) + \\operatorname{Cov} (Y, W). \\\\ \\end{array}",
+          "image_source": "images/page_345_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.217,
+            0.896,
+            0.254
+          ],
+          "content": "Property 7 follows from writing the variance of an r.v. as its covariance with itself (by Property 1) and then using Property 6 repeatedly."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.264,
+            0.896,
+            0.299
+          ],
+          "content": "We have now fulfilled our promise from Chapter 4 that for independent r.v.s, the variance of the sum is the sum of the variances:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.207,
+            0.306,
+            0.79,
+            0.365
+          ],
+          "content": "\\mathrm{Var} \\left(\\sum_ {j = 1} ^ {n} X _ {j}\\right) = \\sum_ {j = 1} ^ {n} \\mathrm{Var} (X _ {j}) \\text {if} X _ {1}, \\dots , X _ {n} \\text {are independent}.",
+          "image_source": "images/page_345_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.373,
+            0.893,
+            0.41
+          ],
+          "content": "By Theorem 7.3.2, independent r.v.s are uncorrelated, so in that case all the covariance terms drop out of the expression in Property 7."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.42,
+            0.843,
+            0.438
+          ],
+          "content": "h 7.3.3. If X and Y are independent, then the properties of covariance give"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.232,
+            0.449,
+            0.764,
+            0.469
+          ],
+          "content": "\\operatorname{Var} (X - Y) = \\operatorname{Var} (X) + \\operatorname{Var} (- Y) = \\operatorname{Var} (X) + \\operatorname{Var} (Y).",
+          "image_source": "images/page_345_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.48,
+            0.896,
+            0.517
+          ],
+          "content": "It is a common mistake to claim $``  Var (X - Y) =  Var (X) -  Var (Y)$ ; this is a category error since $\\operatorname { V a r } ( X ) - \\operatorname { V a r } ( Y )$ could be negative. For general X and Y , we have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.27,
+            0.528,
+            0.727,
+            0.548
+          ],
+          "content": "\\operatorname{Var} (X - Y) = \\operatorname{Var} (X) + \\operatorname{Var} (Y) - 2 \\operatorname{Cov} (X, Y).",
+          "image_source": "images/page_345_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.568,
+            0.896,
+            0.623
+          ],
+          "content": "Since covariance depends on the units in which X and Y are measured—if we decide to measure X in centimeters rather than meters, the covariance is multiplied by 100—it is easier to interpret a unitless version of covariance called correlation."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.634,
+            0.823,
+            0.652
+          ],
+          "content": "Definition 7.3.4 (Correlation). The correlation between r.v.s X and Y is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.342,
+            0.661,
+            0.655,
+            0.705
+          ],
+          "content": "\\mathrm{Corr} (X, Y) = \\frac {\\mathrm{Cov} (X , Y)}{\\sqrt {\\mathrm{Var} (X) \\mathrm{Var} (Y)}}.",
+          "image_source": "images/page_345_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.713,
+            0.781,
+            0.732
+          ],
+          "content": "(This is undefined in the degenerate cases $\\operatorname { V a r } ( X ) = 0 { \\mathrm { ~ o r ~ } } \\operatorname { V a r } ( Y ) = 0 . )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.741,
+            0.896,
+            0.815
+          ],
+          "content": "Notice that shifting and scaling X and Y has no effect on their correlation. Shifting does not affect Cov(X, Y ), Var(X), or $\\operatorname { V a r } ( Y )$ , so the correlation is unchanged. As for scaling, the fact that we divide by the standard deviations of X and Y ensures that the scale factor cancels out:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.159,
+            0.821,
+            0.838,
+            0.865
+          ],
+          "content": "\\operatorname{Corr} (c X, Y) = \\frac {\\operatorname{Cov} (c X , Y)}{\\sqrt {\\operatorname{Var} (c X) \\operatorname{Var} (Y)}} = \\frac {c \\operatorname{Cov} (X , Y)}{\\sqrt {c ^ {2} \\operatorname{Var} (X) \\operatorname{Var} (Y)}} = \\operatorname{Corr} (X, Y).",
+          "image_source": "images/page_345_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.882,
+            0.896,
+            0.918
+          ],
+          "content": "Correlation is convenient to interpret because it does not depend on the units of measurement and is always between −1 and 1."
+        }
+      ]
+    },
+    {
+      "page_idx": 346,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "330"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.068,
+            0.714,
+            0.087
+          ],
+          "content": "Theorem 7.3.5 (Correlation bounds). For any r.v.s X and Y ,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.392,
+            0.105,
+            0.606,
+            0.126
+          ],
+          "content": "- 1 \\leq \\operatorname{Corr} (X, Y) \\leq 1.",
+          "image_source": "images/page_346_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.15,
+            0.897,
+            0.207
+          ],
+          "content": "Proof. Without loss of generality we can assume X and Y have variance 1, since scaling does not change the correlation. Let $\\rho   =   \\mathrm { C o r r } ( X , Y )   =   \\mathrm { C o v } ( X , Y )$ . Using the fact that variance is nonnegative, along with Property 7 of covariance, we have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.205,
+            0.224,
+            0.792,
+            0.244
+          ],
+          "content": "\\operatorname{Var} (X + Y) = \\operatorname{Var} (X) + \\operatorname{Var} (Y) + 2 \\operatorname{Cov} (X, Y) = 2 + 2 \\rho \\geq 0,",
+          "image_source": "images/page_346_equation_5.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.205,
+            0.265,
+            0.792,
+            0.285
+          ],
+          "content": "\\mathrm{Var} (X - Y) = \\mathrm{Var} (X) + \\mathrm{Var} (Y) - 2 \\mathrm{Cov} (X, Y) = 2 - 2 \\rho \\geq 0.",
+          "image_source": "images/page_346_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.297,
+            0.285,
+            0.317
+          ],
+          "content": "Thus, $- 1 \\leq \\rho \\leq 1$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.342,
+            0.738,
+            0.36
+          ],
+          "content": "Here is an example of how to calculate covariance and correlation."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.372,
+            0.893,
+            0.41
+          ],
+          "content": "Example 7.3.6 (Exponential max and min). Let X and Y be i.i.d. Expo(1) r.v.s. Find the correlation between max $( X , Y )$ and min(X, Y )."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.421,
+            0.195,
+            0.438
+          ],
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.452,
+            0.896,
+            0.508
+          ],
+          "content": "Let $M = \\operatorname* { m a x } ( X , Y )$ and $L = \\operatorname* { m i n } ( X , Y )$ . By the memoryless property and results from Chapter 5, we know that $L   \\sim   \\mathrm { E x p o } ( 2 ) , \\; M   -   L   \\sim   \\mathrm { E x p o } ( 1 )$ , and $M - L$ is independent of L (see Example 5.6.5). Therefore,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.103,
+            0.525,
+            0.896,
+            0.56
+          ],
+          "content": "\\mathrm{Cov} (M, L) = \\mathrm{Cov} (M - L + L, L) = \\mathrm{Cov} (M - L, L) + \\mathrm{Cov} (L, L) = 0 + \\mathrm{Var} (L) = \\frac {1}{4},",
+          "image_source": "images/page_346_equation_12.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.18,
+            0.577,
+            0.818,
+            0.613
+          ],
+          "content": "\\operatorname{Var} (M) = \\operatorname{Var} (M - L + L) = \\operatorname{Var} (M - L) + \\operatorname{Var} (L) = 1 + \\frac {1}{4} = \\frac {5}{4},",
+          "image_source": "images/page_346_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.622,
+            0.147,
+            0.638
+          ],
+          "content": "and"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.26,
+            0.637,
+            0.737,
+            0.692
+          ],
+          "content": "\\mathrm{Corr} (M, L) = \\frac {\\mathrm{Cov} (M , L)}{\\sqrt {\\mathrm{Var} (M) \\mathrm{Var} (L)}} = \\frac {\\frac {1}{4}}{\\sqrt {\\frac {5}{4} \\cdot \\frac {1}{4}}} = \\frac {1}{\\sqrt {5}}.",
+          "image_source": "images/page_346_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.7,
+            0.896,
+            0.833
+          ],
+          "content": "h 7.3.7. In the above example, it makes sense that the correlation is positive because M is constrained to be at least as large as L. The following argument would be a blunder: $``Either $M = X , \\thinspace L = Y$ or $M = Y , \\thinspace L = X$$ , so either $\\mathrm{Cov}(M, L) =$ $\\mathrm{Cov}(X,Y)$ or $\\mathrm{Cov}(M, L) = \\mathrm{Cov}(Y, X)$ . But Cov $( Y , X ) = \\operatorname { C o v } ( X , Y )$ so we always have $\\mathrm{Cov}(M,L)=\\mathrm{Cov}(X,Y)=0.$ It is true that either $M = X ,   L = Y$ will occur or $M   =   Y ,   L   =   X$ will occur, but these are events, not deterministic cases. The argument would fall apart if if were written carefully using conditional probability."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.844,
+            0.896,
+            0.919
+          ],
+          "content": "Covariance properties can also be a helpful tool for finding variances, especially when the r.v. of interest is a sum of dependent random variables. The next example uses properties of covariance to derive the variance of the Hypergeometric distribution. If you did Exercise 48 from Chapter 4, you can compare the two derivations."
+        }
+      ]
+    },
+    {
+      "page_idx": 347,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": "Joint distributions"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.892,
+            0.053
+          ],
+          "content": "331"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.068,
+            0.893,
+            0.088
+          ],
+          "content": "Example 7.3.8 (Hypergeometric variance). Find $\\operatorname { V a r } ( X )$ for $X \\sim \\operatorname { H G e o m } ( w , b , n )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.099,
+            0.195,
+            0.116
+          ],
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.128,
+            0.896,
+            0.24
+          ],
+          "content": "Interpret X as the number of white balls in a sample of size n from an urn with w white and b black balls. We can represent $X$ as a sum of indicator random variables, $X   =   I _ { 1 } + \\cdots + I _ { n }$ , where $I _ { j }$ is the indicator of the jth ball in the sample being white. Each $I _ { j }$ has mean $p = w / ( w + b )$ and variance $p ( 1 - p )$ , but because the $I _ { j }$ are dependent, we cannot simply add their variances. Instead, we apply properties of covariance:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.246,
+            0.251,
+            0.752,
+            0.401
+          ],
+          "content": "\\begin{array}{l} \\operatorname{Var} (X) = \\operatorname{Var} \\left(\\sum_ {j = 1} ^ {n} I _ {j}\\right) \\\\ = \\operatorname{Var} (I _ {1}) + \\dots + \\operatorname{Var} (I _ {n}) + 2 \\sum_ {i <   j} \\operatorname{Cov} (I _ {i}, I _ {j}) \\\\ = n p (1 - p) + 2 \\binom {n} {2} \\mathrm{Cov} (I _ {1}, I _ {2}), \\\\ \\end{array}",
+          "image_source": "images/page_347_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.414,
+            0.893,
+            0.453
+          ],
+          "content": "since all $\\textstyle { \\binom { n } { 2 } }$ pairs of indicators have the same covariance by symmetry. Now we just need to find $\\mathrm{Cov}(I_{1},I_{2})$ . By the fundamental bridge,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.102,
+            0.467,
+            0.909,
+            0.554
+          ],
+          "content": "\\begin{array}{l} \\mathrm{Cov} (I _ {1}, I _ {2}) = E (I _ {1} I _ {2}) - E (I _ {1}) E (I _ {2}) \\\\ = P (1 \\text {st and 2nd balls both white}) - P (1 \\text {st ball white}) P (2 \\text {nd ball white}) \\\\ = \\frac {w}{w + b} \\cdot \\frac {w - 1}{w + b - 1} - p ^ {2}. \\\\ \\end{array}",
+          "image_source": "images/page_347_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.566,
+            0.82,
+            0.585
+          ],
+          "content": "Plugging this into the above formula and simplifying, we eventually obtain"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.368,
+            0.599,
+            0.632,
+            0.636
+          ],
+          "content": "\\mathrm{Var} (X) = \\frac {N - n}{N - 1} n p (1 - p),",
+          "image_source": "images/page_347_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.651,
+            0.896,
+            0.746
+          ],
+          "content": "where $N = w + b .$ This differs from the Binomial variance of $n p ( 1 - p )$ by a factor of $\\frac { N   -   n } { N   -   1 }$ , which is known as the finite population correction. The discrepancy arises from the fact that in the Binomial story, we sample with replacement, so the same ball can be drawn multiple times; in the Hypergeometric story, we sample without replacement, so each ball appears in the sample at most once."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.756,
+            0.896,
+            0.852
+          ],
+          "content": "If we consider N to be the “population size” of the urn, then as N grows very large relative to the sample size $n ,$ it becomes extremely unlikely that in sampling with replacement, we would draw the same ball more than once. Thus sampling with replacement and sampling without replacement become equivalent in the limit as $N \\to \\infty$ with n fixed, and the finite population correction approaches 1."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.862,
+            0.896,
+            0.919
+          ],
+          "content": "The other case where sampling with and without replacement are equivalent is the simple case where we only draw one ball from the urn, and indeed, the finite population correction also equals 1 when $n = 1$ \u0003"
+        }
+      ]
+    },
+    {
+      "page_idx": 348,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "332"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.143
+          ],
+          "content": "The last two sections in this chapter introduce the Multinomial and Multivariate Normal distributions. The Multinomial is the most famous discrete multivariate distribution, and the Multivariate Normal is the most famous continuous multivariate distribution."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.226,
+            0.316,
+            0.245
+          ],
+          "level": 2,
+          "content": "7.4 Multinomial"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.263,
+            0.896,
+            0.357
+          ],
+          "content": "The Multinomial distribution is a generalization of the Binomial. Whereas the Binomial distribution counts the successes in a fixed number of trials that can only be categorized as success or failure, the Multinomial distribution keeps track of trials whose outcomes can fall into multiple categories, such as excellent, adequate, poor; or red, yellow, green, blue."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.367,
+            0.897,
+            0.483
+          ],
+          "content": "Story 7.4.1 (Multinomial distribution). Each of n objects is independently placed into one of $k$ categories. An object is placed into category $j$ with probability $p _ { j }$ where the $p _ { j }$ are nonnegative and $\\textstyle \\sum _ { j = 1 } ^ { k } p _ { j } = 1$ . Let $X _ { 1 }$ be the number of objects in category 1, $X _ { 2 }$ the number of objects in category 2, etc., so that $X _ { 1 }   +   \\cdots   +   X _ { k } = n$ Then $\\mathbf { X } = ( X _ { 1 } , \\ldots , X _ { k } )$ is said to have the Multinomial distribution with parameters n and $\\mathbf { p } = ( p _ { 1 } , \\ldots , p _ { k } )$ . We write this as $\\mathbf { X } \\sim \\operatorname { M u l t } _ { k } ( n , \\mathbf { p } )$ \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.491,
+            0.894,
+            0.529
+          ],
+          "content": "We call X a random vector because it is a vector of random variables. The joint PMF of X can be derived from the story."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.538,
+            0.894,
+            0.573
+          ],
+          "content": "Theorem 7.4.2 (Multinomial joint PMF). I $\\operatorname { f } \\mathbf { X } \\sim \\operatorname { M u l t } _ { k } ( n , \\mathbf { p } )$ , then the joint PMF of X is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.227,
+            0.571,
+            0.772,
+            0.609
+          ],
+          "content": "P (X _ {1} = n _ {1}, \\dots , X _ {k} = n _ {k}) = \\frac {n !}{n _ {1} ! n _ {2} ! \\dots n _ {k} !} \\cdot p _ {1} ^ {n _ {1}} p _ {2} ^ {n _ {2}} \\dots p _ {k} ^ {n _ {k}},",
+          "image_source": "images/page_348_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.613,
+            0.512,
+            0.631
+          ],
+          "content": "for $n _ { 1 } , \\ldots , n _ { k }$ satisfying $n _ { 1 } + \\cdots + n _ { k } = n$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.649,
+            0.896,
+            0.739
+          ],
+          "content": "Proof. If $n _ { 1 } , \\ldots , n _ { k }$ don’t add up to $n ,$ then the event $\\{ X _ { 1 } = n _ { 1 } , \\ldots , X _ { k } = n _ { k } \\}$ is impossible: every object has to go somewhere, and new objects can’t appear out of nowhere. If $n _ { 1 } , \\ldots , n _ { k }$ do add up to $n ,$ then any particular way of putting $n _ { 1 }$ objects into category 1, $n _ { 2 }$ objects into category 2, etc., has probability $p _ { 1 } ^ { n _ { 1 } } p _ { 2 } ^ { n _ { 2 } } \\ldots p _ { k } ^ { n _ { k } }$ , and there are"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.437,
+            0.738,
+            0.564,
+            0.775
+          ],
+          "content": "\\frac {n !}{n _ {1} ! n _ {2} ! \\ldots n _ {k} !}",
+          "image_source": "images/page_348_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.779,
+            0.894,
+            0.817
+          ],
+          "content": "ways to do this, as discussed in Example 1.4.18 in the context of rearranging the letters in STATISTICS. So the joint PMF is as claimed. \u0004"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.834,
+            0.894,
+            0.89
+          ],
+          "content": "Since we’ve specified the joint distribution of $\\mathbf { X } ,$ we have enough information to determine the marginal and conditional distributions, as well as the covariance between any two components of $\\mathbf { X }$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.9,
+            0.894,
+            0.92
+          ],
+          "content": "Let’s take these one by one, starting with the marginal distribution of $X _ { j }$ , which is"
+        }
+      ]
+    },
+    {
+      "page_idx": 349,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": "Joint distributions"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "333"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.067,
+            0.896,
+            0.22
+          ],
+          "continues_prev": true,
+          "content": "the jth component of X. Were we to blindly apply the definition, we would have to sum the joint PMF over all components of X other than $X _ { j }$ . The prospect of $k - 1$ summations is an unpleasant one, to say the least. Fortunately, we can avoid tedious calculations if we instead use the story of the Multinomial distribution: $X _ { j }$ is the number of objects in category $j ,$ where each of the $n$ objects independently belongs to category $j$ with probability $p _ { j }$ . Define success as landing in category $j .$ Then we just have n independent Bernoulli trials, so the marginal distribution of $X _ { j }$ is $\\mathrm { B i n } ( n , p _ { j } )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.229,
+            0.895,
+            0.269
+          ],
+          "content": "Theorem 7.4.3 (Multinomial marginals). The marginals of a Multinomial are Binomial. Specifically, if $\\mathbf { X } \\sim \\operatorname { M u l t } _ { k } ( n , \\mathbf { p } )$ , then $X _ { j } \\sim \\operatorname { B i n } ( n , p _ { j } )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.278,
+            0.896,
+            0.392
+          ],
+          "content": "More generally, whenever we merge multiple categories together in a Multinomial random vector, we get another Multinomial random vector. For example, suppose we randomly sample n people in a country with 5 political parties. (If the sampling is done without replacement, the $n$ trials are not independent, but independence is a good approximation as long as the population is large relative to the sample, as we discussed in Theorem 3.9.3 and Example 7.3.8.) Let"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.297,
+            0.408,
+            0.7,
+            0.43
+          ],
+          "content": "\\mathbf {X} = (X _ {1}, \\dots , X _ {5}) \\sim \\mathrm{Mult} _ {5} (n, (p _ {1}, \\dots , p _ {5}))",
+          "image_source": "images/page_349_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.446,
+            0.896,
+            0.484
+          ],
+          "content": "represent the political party affiliations of the sample, i.e., $X _ { j }$ is the number of people in the sample who support party $j$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.494,
+            0.895,
+            0.57
+          ],
+          "content": "Suppose that parties 1 and 2 are the dominant parties, while parties 3 through 5 are minor third parties. If we decide that instead of keeping track of all 5 parties, we only want to count the number of people in party 1, party 2, or “other”, then we can define a new random vector that lumps all the third parties into one category:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.357,
+            0.587,
+            0.642,
+            0.609
+          ],
+          "content": "\\mathbf {Y} = (X _ {1}, X _ {2}, X _ {3} + X _ {4} + X _ {5}).",
+          "image_source": "images/page_349_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.625,
+            0.42,
+            0.643
+          ],
+          "content": "By the story of the Multinomial,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.327,
+            0.661,
+            0.672,
+            0.683
+          ],
+          "content": "\\mathbf {Y} \\sim \\mathrm{Mult} _ {3} (n, (p _ {1}, p _ {2}, p _ {3} + p _ {4} + p _ {5})).",
+          "image_source": "images/page_349_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.71,
+            0.893,
+            0.747
+          ],
+          "content": "Of course, this idea applies to merging categories in any Multinomial, not just in the context of political parties."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.757,
+            0.895,
+            0.834
+          ],
+          "content": "Theorem 7.4.4 (Multinomial lumping). If $\\mathbf { X } \\sim \\operatorname { M u l t } _ { k } ( n , \\mathbf { p } )$ , then for any distinct $i$ and $j , \\; X _ { i } + X _ { j } \\; \\sim \\; \\mathrm { B i n } ( n , p _ { i } + p _ { j } )$ . The random vector of counts obtained from merging categories i and $j$ is still Multinomial. For example, merging categories 1 and 2 gives"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.223,
+            0.851,
+            0.776,
+            0.872
+          ],
+          "content": "(X _ {1} + X _ {2}, X _ {3}, \\dots , X _ {k}) \\sim \\mathrm{Mult} _ {k - 1} (n, (p _ {1} + p _ {2}, p _ {3}, \\dots , p _ {k})).",
+          "image_source": "images/page_349_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.899,
+            0.896,
+            0.919
+          ],
+          "content": "Now for the conditional distributions. Suppose we get to observe $X _ { 1 }$ , the number of"
+        }
+      ]
+    },
+    {
+      "page_idx": 350,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "334"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.068,
+            0.895,
+            0.106
+          ],
+          "continues_prev": true,
+          "content": "objects in category 1, and we wish to update our distribution for the other categories $( X _ { 2 } , \\ldots , X _ { k } )$ . One way to do this is with the definition of conditional PMF:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.15,
+            0.113,
+            0.851,
+            0.155
+          ],
+          "content": "P (X _ {2} = n _ {2}, \\dots , X _ {k} = n _ {k} | X _ {1} = n _ {1}) = \\frac {P (X _ {1} = n _ {1} , X _ {2} = n _ {2} , \\dots , X _ {k} = n _ {k})}{P (X _ {1} = n _ {1})}.",
+          "image_source": "images/page_350_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.161,
+            0.896,
+            0.275
+          ],
+          "content": "The numerator is the joint PMF of the Multinomial, and the denominator is the marginal PMF of $X _ { 1 }$ , both of which we have already derived. However, we prefer to use the Multinomial story to deduce the conditional distribution of $( X _ { 2 } , \\ldots , X _ { k } )$ without algebra. Given that there are $n _ { 1 }$ objects in category 1, the remaining $n   -   n _ { 1 }$ objects fall into categories 2 through k, independently of one another. By Bayes’ rule, the conditional probability of falling into category $j$ is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.14,
+            0.282,
+            0.86,
+            0.323
+          ],
+          "content": "P (\\text {in category} j \\mid \\text {not in category 1}) = \\frac {P (\\text {in category} j)}{P (\\text {not in category 1})} = \\frac {p _ {j}}{p _ {2} + \\cdots + p _ {k}},",
+          "image_source": "images/page_350_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.328,
+            0.896,
+            0.403
+          ],
+          "content": "for $j \\; = \\; 2 , \\ldots , k$ . This makes intuitive sense: the updated probabilities are proportional to the original probabilities $( p _ { 2 } , \\ldots , p _ { k } )$ , but these must be renormalized to yield a valid probability vector. Putting it all together, we have the following result."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.413,
+            0.785,
+            0.433
+          ],
+          "content": "Theorem 7.4.5 (Multinomial conditioning). If $\\mathbf { X } \\sim \\operatorname { M u l t } _ { k } ( n , \\mathbf { p } )$ , then"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.24,
+            0.441,
+            0.76,
+            0.464
+          ],
+          "content": "(X _ {2}, \\dots , X _ {k}) \\big | X _ {1} = n _ {1} \\sim \\mathrm{Mult} _ {k - 1} (n - n _ {1}, (p _ {2} ^ {\\prime}, \\dots , p _ {k} ^ {\\prime})),",
+          "image_source": "images/page_350_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.472,
+            0.394,
+            0.494
+          ],
+          "content": "where $p _ { j } ^ { \\prime } = p _ { j } / ( p _ { 2 } + \\cdots + p _ { k } )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.5,
+            0.896,
+            0.574
+          ],
+          "content": "Finally, we know that components within a Multinomial random vector are dependent since they are constrained by $X _ { 1 } + \\cdots + X _ { k } = n$ . To find the covariance between $X _ { i }$ and $X _ { j }$ , we can use the marginal and lumping properties we have just discussed."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.585,
+            0.894,
+            0.625
+          ],
+          "content": "Theorem 7.4.6 (Covariance in a Multinomial). Let $( X _ { 1 } , \\ldots , X _ { k } ) { \\sim } { \\operatorname { M u l t } } _ { k } ( n , \\mathbf { p } )$ where $\\mathbf { p } = ( p _ { 1 } , \\ldots , p _ { k } )$ . For $i \\neq j, \\mathrm{Cov}(X_i, X_j) = -np_i p_j$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.64,
+            0.896,
+            0.698
+          ],
+          "content": "Proof. For concreteness, let $i \\; = \\; 1$ and $j \\; = \\; 2$ . Using the lumping property and the marginal distributions of a Multinomial, we know $X _ { 1 } + X _ { 2 } \\sim \\operatorname { B i n } ( n , p _ { 1 } + p _ { 2 } )$ $X _ { 1 } \\sim \\operatorname { B i n } ( n , p _ { 1 } )$ , and $X _ { 2 } \\sim \\operatorname { B i n } ( n , p _ { 2 } )$ . Therefore"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.247,
+            0.707,
+            0.752,
+            0.729
+          ],
+          "content": "\\mathrm{Var} (X _ {1} + X _ {2}) = \\mathrm{Var} (X _ {1}) + \\mathrm{Var} (X _ {2}) + 2 \\mathrm{Cov} (X _ {1}, X _ {2})",
+          "image_source": "images/page_350_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.738,
+            0.19,
+            0.754
+          ],
+          "content": "becomes"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.161,
+            0.767,
+            0.837,
+            0.788
+          ],
+          "content": "n (p _ {1} + p _ {2}) (1 - (p _ {1} + p _ {2})) = n p _ {1} (1 - p _ {1}) + n p _ {2} (1 - p _ {2}) + 2 \\mathrm{Cov} (X _ {1}, X _ {2}).",
+          "image_source": "images/page_350_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.796,
+            0.894,
+            0.836
+          ],
+          "content": "Solving for $\\mathrm{Cov}(X_{1},X_{2})$ gives $\\mathrm{Cov}(X_{1},X_{2}) = -np_{1}p_{2}$ . By the same logic, for $i \\neq j$ we have $\\mathrm{Cov}(X_{i},X_{j}) = -np_{i}p_{j}$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.843,
+            0.896,
+            0.919
+          ],
+          "content": "The components are negatively correlated, as we would expect: if we know there are a lot of objects in category i, then there aren’t as many objects left over that could possibly be in category $j .$ Exercise 65 asks for a different proof of this result, using indicators. \u0004"
+        }
+      ]
+    },
+    {
+      "page_idx": 351,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": "Joint distributions"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "335"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.067,
+            0.896,
+            0.2
+          ],
+          "continues_prev": true,
+          "content": "h 7.4.7 (Independent trials but dependent components). The k components of a Multinomial are dependent, but the n objects in the story of the Multinomial are independently categorized. In the extreme case $k = 2 ,$ a $\\mathrm { M u l t } _ { k } ( n , \\mathbf { p } )$ random vector looks like $( X , n - X )$ with $X \\sim \\operatorname { B i n } ( n , p _ { 1 } )$ , which we can think of as (number of successes, number of failures), where “success” is defined as getting category 1. The number of successes is perfectly negatively correlated with the number of failures, even though the trials are independent."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.21,
+            0.894,
+            0.248
+          ],
+          "content": "We conclude this section with a heroic example that ties together many of the most important concepts for the Multinomial."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.258,
+            0.894,
+            0.352
+          ],
+          "content": "Example 7.4.8 (Statwoman). The superhero Statwoman uses probability and statistics to fight crime. She has battled with countless foes, sometimes even fighting several at the same time. For simplicity though, assume that each of her battles is with exactly one of the following adversaries: the Confounder, the Extrapolator, and the Overfitter."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.363,
+            0.894,
+            0.476
+          ],
+          "content": "Suppose that Statwoman will have n battles next year (with n a positive integer), and that each battle is with the Confounder with probability $p _ { 1 }$ , the Extrapolator with probability $p _ { 2 }$ , and the Overfitter with probability $p _ { 3 }$ , independently. Here $p _ { 1 } , p _ { 2 } , p _ { 3 }$ are nonnegative and sum to 1. Let $X _ { 1 } , X _ { 2 } , X _ { 3 }$ be the numbers of battles Statwoman will have with the Confounder, the Extrapolator, and the Overfitter next year, respectively."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.1,
+            0.484,
+            0.901,
+            0.863
+          ],
+          "sub_type": "text",
+          "content": "(a) Find the joint distribution of $X _ { 1 } , X _ { 2 } , X _ { 3 }$\n(b) Find the correlation between $X _ { 1 }$ and $X _ { 2 }$\n(c) Suppose for this part only that it turns out that the Extrapolator and the Overfitter have been devising evil plots together, so it is of interest to study their combined number of skirmishes with Statwoman. Let $X _ { 2 3 } = X _ { 2 }   +   X _ { 3 }$ . Find the joint distribution of $X _ { 1 } , X _ { 2 3 }$\n(d) Suppose for this part only that the parameters $p _ { 1 } , p _ { 2 } , p _ { 3 }$ are unknown, $n = 3 6 0$ and it is observed that exactly 36 of Statwoman’s battles are with the Overfitter. A natural way to estimate $p _ { 3 }$ would be to use $3 6 / 3 6 0 = 0 . 1$ . The maximum likelihood estimate (MLE) of $p _ { 3 }$ is the value of $p _ { 3 }$ that makes the observed data, $X _ { 3 } = 3 6$ , as likely as possible. That is, the MLE is the value of $p _ { 3 }$ that maximizes $P ( X _ { 3 } = 3 6 )$ Show that the MLE is the natural estimate, 0.1.\n(e) Assume for this part only that the Overfitter has been captured, through heroic efforts! So assume that all of Statwoman’s battles next year will be with one of her other two adversaries. Find the joint PMF of $X _ { 1 } , X _ { 2 }$ , given that $X _ { 3 } = 0$\n(f) Now suppose that, instead of the number of battles being a constant $n ,$ the number of battles is $N \\sim  Pois (\\lambda)$ . Find the joint distribution of $X _ { 1 } , X _ { 2 } , X _ { 3 }$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.106,
+            0.87,
+            0.194,
+            0.887
+          ],
+          "level": 2,
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.899,
+            0.807,
+            0.92
+          ],
+          "content": "(a) By the story of the Multinomial, $( X _ { 1 } , X _ { 2 } , X _ { 3 } ) \\sim \\operatorname { M u l t } _ { 3 } ( n , ( p _ { 1 } , p _ { 2 } , p _ { 3 } ) )$"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Probability, Second Edition",
+      "authors": [
+        "Joseph K. Blitzstein;Jessica Hwang;"
+      ],
+      "created_at": "2019-01-18T11:22:30+05:30",
+      "modified_at": "2019-02-04T21:29:14+05:30",
+      "creator_application": "LaTeX with hyperref",
+      "producer_application": "pdfTeX-1.40.19",
+      "page_count": 636,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 336,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 337,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 338,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 339,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 340,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 341,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 342,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 343,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 344,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 345,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 346,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 347,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 348,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 349,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 350,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 351,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

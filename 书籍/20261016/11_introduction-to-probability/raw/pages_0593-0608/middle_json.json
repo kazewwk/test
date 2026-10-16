@@ -1,0 +1,6456 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Probability, Second Edition",
+      "authors": [
+        "Joseph K. Blitzstein;Jessica Hwang;"
+      ],
+      "created_at": "2019-01-18T11:22:30+05:30",
+      "modified_at": "2019-02-04T21:29:14+05:30",
+      "creator_application": "LaTeX with hyperref",
+      "producer_application": "pdfTeX-1.40.19",
+      "page_count": 636,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 592,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 593,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 594,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 595,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 596,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 597,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 598,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 599,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 600,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 601,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 602,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 603,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 604,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 605,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 606,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 607,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 592,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "576"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.106
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "are distributed as the order statistics of n i.i.d. Unif(0, L) r.v.s. The following code simulates arrivals from a Poisson process with rate 10 in the interval (0, 5]:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.103,
+            0.119,
+            0.37,
+            0.193
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.103,
+                0.119,
+                0.37,
+                0.193
+              ],
+              "content": "L <- 5\nlambda <- 10\nn <- rpois(1,lambda*L)\nt <- sort(runif(n,0,L))"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "r"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.206,
+            0.895,
+            0.243
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To visualize the Poisson process we have generated, we can plot the cumulative number of arrivals N(t) as a function of t:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.256,
+            0.336,
+            0.274
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 5,
+              "bbox": [
+                0.103,
+                0.256,
+                0.336,
+                0.274
+              ],
+              "content": "plot(t,1:n,type=\"s\")"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.103,
+            0.287,
+            0.566,
+            0.305
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This produces a staircase plot as in Figure 13.8."
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 7,
+          "bbox": [
+            0.134,
+            0.343,
+            0.86,
+            0.639
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 7,
+              "bbox": [
+                0.134,
+                0.343,
+                0.86,
+                0.639
+              ],
+              "image_path": "images/page_592_chart_7.jpg",
+              "content": "| t | N(t) |\n| --- | --- |\n| 0.2 | 1 |\n| 0.3 | 4 |\n| 0.5 | 6 |\n| 0.6 | 8 |\n| 0.7 | 9 |\n| 0.8 | 10 |\n| 0.9 | 11 |\n| 1.0 | 12 |\n| 1.1 | 13 |\n| 1.2 | 14 |\n| 1.3 | 15 |\n| 1.4 | 16 |\n| 1.5 | 17 |\n| 1.6 | 18 |\n| 1.7 | 19 |\n| 1.8 | 20 |\n| 1.9 | 21 |\n| 2.0 | 22 |\n| 2.1 | 23 |\n| 2.2 | 24 |\n| 2.3 | 25 |\n| 2.4 | 26 |\n| 2.5 | 27 |\n| 2.6 | 28 |\n| 2.7 | 29 |\n| 2.8 | 30 |\n| 2.9 | 31 |\n| 3.0 | 32 |\n| 3.1 | 33 |\n| 3.2 | 34 |\n| 3.3 | 35 |\n| 3.4 | 36 |\n| 3.5 | 37 |\n| 3.6 | 38 |\n| 3.7 | 39 |\n| 3.8 | 40 |\n| 3.9 | 41 |\n| 4.0 | 42 |\n| 4.1 | 43 |\n| 4.2 | 44 |\n| 4.3 | 45 |\n| 4.4 | 46 |\n| 4.5 | 47 |\n| 4.6 | 48 |\n| 4.7 | 49 |\n| 4.8 | 50 |\n| 4.9 | 51 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 8,
+              "bbox": [
+                0.103,
+                0.667,
+                0.248,
+                0.683
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 13.8"
+                }
+              ]
+            }
+          ],
+          "sub_type": "line"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.685,
+            0.807,
+            0.704
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Number of arrivals in a Poisson process with rate 10 in the interval (0, 5]."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 10,
+          "bbox": [
+            0.104,
+            0.748,
+            0.21,
+            0.767
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Thinning"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.101,
+            0.787,
+            0.897,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It is straightforward to thin a Poisson process in R. The following code starts with a vector of arrival times t and the corresponding number of arrivals n from a Poisson process of rate λ on some interval, generated as above. For each arrival, we flip a coin with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " of Heads; these coin tosses are stored in the vector "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { y } ."
+            },
+            {
+              "type": "text",
+              "content": " Finally, the arrivals for which the coin landed Heads are labeled as type-1; the rest are labeled as type-2. The resulting vectors of arrival times, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { t } _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { t } _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , are realizations of independent Poisson processes of rates "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda p"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda ( 1   -   p )"
+            },
+            {
+              "type": "text",
+              "content": " , by Theorem 13.2.14."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 593,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.264,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Poisson processes"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.86,
+            0.039,
+            0.895,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "577"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.104,
+            0.069,
+            0.631,
+            0.087
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can carry out this procedure for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p = 0 . 3"
+            },
+            {
+              "type": "text",
+              "content": " as follows:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.103,
+            0.098,
+            0.313,
+            0.173
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.103,
+                0.098,
+                0.313,
+                0.173
+              ],
+              "content": "p <- 0.3\ny <- rbinom(n,1,p)\nt1 <- t[y==1]\nt2 <- t[y==0]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.206,
+            0.32,
+            0.224
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2D Poisson process"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.101,
+            0.243,
+            0.897,
+            0.336
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Simulating a 2D Poisson process of rate λ on a square is nearly as easy as simulating a 1D Poisson process. In the square "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , L ] \\times ( 0 , L ]"
+            },
+            {
+              "type": "text",
+              "content": " , the number of arrivals is distributed "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { P o i s } ( \\lambda L ^ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " . Conditional on the number of arrivals, the locations of the arrivals are i.i.d. Uniform points in the square. By Example 7.1.23, the coordinates for each of these points are i.i.d. Unif(0, L). So for L = 5, λ = 10, we can type:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.103,
+            0.347,
+            0.381,
+            0.44
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.103,
+                0.347,
+                0.381,
+                0.44
+              ],
+              "content": "L <- 5\nlambda <- 10\nn <- rpois(1,lambda*L^2)\nx <- runif(n,0,L)\ny <- runif(n,0,L)"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "r"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.105,
+            0.522,
+            0.292,
+            0.54
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "13.6 Exercises"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "list",
+          "index": 8,
+          "bbox": [
+            0.131,
+            0.552,
+            0.871,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.132,
+                0.552,
+                0.871,
+                0.6
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. Passengers arrive at a bus stop according to a Poisson process with rate λ. The arrivals of buses are exactly t minutes apart. Show that on average, the sum of the waiting times of the riders on one of the buses is "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "{ \\textstyle { \\frac { 1 } { 2 } } } \\lambda t ^ { 2 }"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 10,
+              "bbox": [
+                0.132,
+                0.605,
+                0.871,
+                0.651
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. Earthquakes occur over time according to a Poisson process with rate λ. The jth earthquake has intensity "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Z _ { j }"
+                },
+                {
+                  "type": "text",
+                  "content": " , where the "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Z _ { j }"
+                },
+                {
+                  "type": "text",
+                  "content": " are i.i.d. with mean "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mu"
+                },
+                {
+                  "type": "text",
+                  "content": " and variance "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\sigma ^ { 2 }"
+                },
+                {
+                  "type": "text",
+                  "content": " . Find the mean and variance of the cumulative intensity of all the earthquakes up to time t."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 11,
+              "bbox": [
+                0.132,
+                0.657,
+                0.871,
+                0.72
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "3. Alice receives phone calls according to a Poisson process with rate λ. Unfortunately she has lost her cell phone charger. The battery’s remaining life is a random variable T with mean µ and variance "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\sigma ^ { 2 }"
+                },
+                {
+                  "type": "text",
+                  "content": " . Let "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "N ( T )"
+                },
+                {
+                  "type": "text",
+                  "content": " be the number of phone calls she receives before the battery dies; find "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "E ( N ( T ) )"
+                },
+                {
+                  "type": "text",
+                  "content": " , Var(N(T)), and "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathrm{Cov}(T, N(T))"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.132,
+                0.725,
+                0.871,
+                0.817
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "4. Emails arrive in Bob’s inbox according to a Poisson process with rate "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\lambda ,"
+                },
+                {
+                  "type": "text",
+                  "content": " measured in emails per hour; each email is work-related with probability p and personal with probability "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "1 - p ."
+                },
+                {
+                  "type": "text",
+                  "content": " The amount of time it takes to answer a work-related email is a random variable with mean "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mu _ { W }"
+                },
+                {
+                  "type": "text",
+                  "content": " and variance "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\sigma _ { W } ^ { 2 }"
+                },
+                {
+                  "type": "text",
+                  "content": " , the amount of time it takes to answer a personal email has mean "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mu _ { P }"
+                },
+                {
+                  "type": "text",
+                  "content": " and variance "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\sigma _ { P } ^ { 2 }"
+                },
+                {
+                  "type": "text",
+                  "content": " , and the response times for different emails are independent."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 13,
+              "bbox": [
+                0.166,
+                0.819,
+                0.871,
+                0.85
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "What is the average amount of time Bob has to spend answering all the emails that arrive in a t-hour interval? What about the variance?"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 14,
+              "bbox": [
+                0.132,
+                0.857,
+                0.871,
+                0.919
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "5. In an endless soccer match, goals are scored according to a Poisson process with rate λ. Each goal is made by team A with probability p and team B with probability "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "1 - p ."
+                },
+                {
+                  "type": "text",
+                  "content": " For "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "j > 1"
+                },
+                {
+                  "type": "text",
+                  "content": " , the jth goal is a turnaround if it is made by a different team than the "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "( j - 1 ) \\mathrm { s }"
+                },
+                {
+                  "type": "text",
+                  "content": " t goal; for example, in the sequence AABBA. . . , the 3rd and 5th goals are turnarounds."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        }
+      ]
+    },
+    {
+      "page_idx": 594,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "578"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 2,
+          "bbox": [
+            0.168,
+            0.071,
+            0.868,
+            0.122
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 3,
+              "bbox": [
+                0.168,
+                0.071,
+                0.661,
+                0.086
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) In n goals, what is the expected number of turnarounds?"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.168,
+                0.093,
+                0.868,
+                0.122
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) If an A-to-B turnaround has just occurred, what is the expected time until the next B-to-A turnaround?"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.133,
+            0.13,
+            0.871,
+            0.16
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N _ { t }"
+            },
+            {
+              "type": "text",
+              "content": " be the number of arrivals up until time t in a Poisson process of rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda ,"
+            },
+            {
+              "type": "text",
+              "content": " and let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " be the time of the nth arrival. Consider statements of the form"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.407,
+            0.171,
+            0.632,
+            0.188
+          ],
+          "image_path": "images/page_594_equation_6.jpg",
+          "content": "P \\left(N _ {t} \\lessgtr 1 n\\right) = P \\left(T _ {n} \\lessgtr 2 t\\right),"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.167,
+            0.198,
+            0.871,
+            0.227
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lessgtr"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lessgtr 2"
+            },
+            {
+              "type": "text",
+              "content": " are replaced by symbols from the list "
+            },
+            {
+              "type": "equation_inline",
+              "content": "< , \\leq , \\geq , >"
+            },
+            {
+              "type": "text",
+              "content": " . Which of these statements are true?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.133,
+            0.235,
+            0.871,
+            0.281
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "7. Claims against an insurance company follow a Poisson process with rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda > 0 ."
+            },
+            {
+              "type": "text",
+              "content": " A total of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N"
+            },
+            {
+              "type": "text",
+              "content": " claims were received over two disjoint time periods of combined length "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t = t _ { 1 } + t _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " the length of period i."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.167,
+            0.291,
+            0.868,
+            0.322
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) Given this information, derive the conditional probability distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " , the number of claims made in the first period, given N."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.167,
+            0.333,
+            0.868,
+            0.394
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) The amount paid for the ith claim is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { i } ,"
+            },
+            {
+              "type": "text",
+              "content": " with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , X _ { 2 } , \\ldots { ~ \\operatorname { i . i . d . } }"
+            },
+            {
+              "type": "text",
+              "content": " and independent of the claims process. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(X_{i}) = \\mu, \\mathrm{Var}(X_{i}) = \\sigma^{2}"
+            },
+            {
+              "type": "text",
+              "content": " , for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i = 1 , \\ldots , N"
+            },
+            {
+              "type": "text",
+              "content": " . Given N, find the mean and variance of the total claims paid in period 1. That is, find these two conditional moments of the quantity"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.464,
+            0.403,
+            0.576,
+            0.445
+          ],
+          "image_path": "images/page_594_equation_11.jpg",
+          "content": "W _ {1} = \\sum_ {i = 1} ^ {N _ {1}} X _ {i},"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.168,
+            0.454,
+            0.502,
+            0.469
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where (by convention) "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W_{1}=0\\  if \\ N_{1}=0"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.133,
+            0.476,
+            0.871,
+            0.553
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "8. On a certain question-and-answer website, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N \\sim \\mathrm{Poisson}(\\lambda_1)"
+            },
+            {
+              "type": "text",
+              "content": " questions will be posted tomorrow, with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " measured in questions/day. Given N, the post times are i.i.d. and uniformly distributed over the day (a day begins and ends at midnight). When a question is posted, it takes an "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{Exp}(\\lambda_{2})"
+            },
+            {
+              "type": "text",
+              "content": " amount of time (in days) for an answer to be posted, independent of what happens with other questions."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 14,
+          "bbox": [
+            0.167,
+            0.563,
+            0.868,
+            0.634
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 15,
+              "bbox": [
+                0.168,
+                0.563,
+                0.868,
+                0.593
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) Find the probability that a question posted at a uniformly random time tomorrow will not yet have been answered by the end of that day."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 16,
+              "bbox": [
+                0.168,
+                0.604,
+                0.868,
+                0.634
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) Find the joint distribution of how many answered and unanswered questions posted tomorrow there will be at the end of that day."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.133,
+            0.642,
+            0.871,
+            0.718
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9. An inhomogeneous Poisson process in one dimension is a Poisson process whose rate, instead of being constant, is a nonnegative function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda ( t )"
+            },
+            {
+              "type": "text",
+              "content": " of time. Formally, we require that the number of arrivals in the interval "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ t _ { 1 } , t _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " be Poisson-distributed with mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle \\int _ { t _ { 1 } } ^ { t _ { 2 } } \\lambda ( t ) d t"
+            },
+            {
+              "type": "text",
+              "content": " and that disjoint intervals be independent. When "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda ( t )"
+            },
+            {
+              "type": "text",
+              "content": " is constant, this reduces to the definition of the ordinary or homogeneous Poisson process."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.167,
+            0.729,
+            0.868,
+            0.759
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) Show that we can generate arrivals from an inhomogeneous Poisson process in the interval "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ t _ { 1 } , t _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " using the following procedure."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.168,
+            0.762,
+            0.868,
+            0.792
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "1. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { \\mathrm { m a x } }"
+            },
+            {
+              "type": "text",
+              "content": " be the maximum value of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda ( t )"
+            },
+            {
+              "type": "text",
+              "content": " in the interval "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ t _ { 1 } , t _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " . Create a 2D rectangle "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ t _ { 1 } , t _ { 2 } ) \\times [ 0 , \\lambda _ { \\operatorname* { m a x } } ]"
+            },
+            {
+              "type": "text",
+              "content": " , and plot the function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda ( t )"
+            },
+            {
+              "type": "text",
+              "content": " in the rectangle."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.168,
+            0.795,
+            0.868,
+            0.825
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2. Generate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N \\sim \\operatorname { P o i s } ( \\lambda _ { \\operatorname* { m a x } } ( t _ { 2 } - t _ { 1 } ) )"
+            },
+            {
+              "type": "text",
+              "content": " , and place N points uniformly at random in the rectangle."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 21,
+          "bbox": [
+            0.168,
+            0.828,
+            0.868,
+            0.873
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3. For each of the N points: if the point falls below the curve "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda ( t )"
+            },
+            {
+              "type": "text",
+              "content": " , accept it as an arrival in the process, and take its horizontal coordinate to be its arrival time. If the point falls above the curve "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda ( t )"
+            },
+            {
+              "type": "text",
+              "content": " , reject it."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 22,
+          "bbox": [
+            0.168,
+            0.876,
+            0.701,
+            0.891
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Hint: Verify that the two conditions in the definition are satisfied."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 23,
+          "bbox": [
+            0.168,
+            0.903,
+            0.868,
+            0.918
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) Suppose we have an inhomogeneous Poisson process with rate function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda ( t )"
+            },
+            {
+              "type": "text",
+              "content": " . Let"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 595,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.263,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Poisson processes"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "579"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.168,
+            0.07,
+            0.873,
+            0.117
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "N(t) be the number of arrivals up to time t and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " be the time of the jth arrival. Explain why the hybrid joint PDF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N ( t )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { 1 } , \\ldots , T _ { N ( t ) }"
+            },
+            {
+              "type": "text",
+              "content": " , which constitute all the data observed up to time t, is given by"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.225,
+            0.126,
+            0.814,
+            0.161
+          ],
+          "image_path": "images/page_595_equation_3.jpg",
+          "content": "f (n, t _ {1}, \\ldots , t _ {n}) = \\frac {e ^ {- \\lambda_ {\\mathrm{total}}} \\lambda_ {\\mathrm{total}} ^ {n}}{n !} \\cdot n! \\frac {\\lambda (t _ {1}) \\ldots \\lambda (t _ {n})}{\\lambda_ {\\mathrm{total}} ^ {n}} = e ^ {- \\lambda_ {\\mathrm{total}}} \\lambda (t _ {1}) \\ldots \\lambda (t _ {n})"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.167,
+            0.17,
+            0.806,
+            0.189
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 < t _ { 1 } < t _ { 2 } < \\cdots < t _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " and nonnegative integer n, where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\begin{array} { r } { \\lambda _ { \\mathrm { t o t a l } } = \\int _ { 0 } ^ { t } \\lambda ( u ) d u . } \\end{array}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.125,
+            0.194,
+            0.871,
+            0.24
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "10. A Cox process is a generalization of a Poisson process, where the rate λ is a random variable. That is, λ is generated according to some distribution on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , \\infty )"
+            },
+            {
+              "type": "text",
+              "content": " and then, given that value of λ, a Poisson process with that rate is generated."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.167,
+            0.25,
+            0.868,
+            0.265
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) Explain intuitively why disjoint intervals in a 1D Cox process are not independent."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.167,
+            0.276,
+            0.868,
+            0.306
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) In a 1D Cox process where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda   \\sim   \\mathrm { G a m m a } ( \\alpha , \\beta )"
+            },
+            {
+              "type": "text",
+              "content": " , find the covariance between the number of arrivals in [0, t) and the number of arrivals in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ t , t + s )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.168,
+            0.31,
+            0.347,
+            0.324
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Hint: Condition on λ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.125,
+            0.332,
+            0.871,
+            0.379
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "11. In a Yule process with rate λ, the rate of arrivals increases after each new arrival, so that the time of the first arrival is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { E x p o } ( \\lambda )"
+            },
+            {
+              "type": "text",
+              "content": " and the time between the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( j - 1 )"
+            },
+            {
+              "type": "text",
+              "content": " st and jth arrivals is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname{Expo}(j\\lambda)"
+            },
+            {
+              "type": "text",
+              "content": " for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j = 2 , 3 , \\ldots . \\mathrm { S o }"
+            },
+            {
+              "type": "text",
+              "content": " interarrival times are independent but not i.i.d."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.167,
+            0.389,
+            0.868,
+            0.435
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) Show that the superposition of two independent Yule processes with the same rate λ is a Yule process, except shifted so that the interarrival times are Expo(2λ), Expo(3λ), Expo(4λ), . . . rather than Expo(λ), Expo(2λ), Expo(3λ), . . ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.167,
+            0.445,
+            0.868,
+            0.476
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) Show that if we project the process from Part (a) into discrete time, the resulting sequence of type-1 and type-2 arrivals is equivalent to the following discrete-time process:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.168,
+            0.483,
+            0.58,
+            0.497
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "1. Start with two balls in an urn, labeled 1 and 2."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.167,
+            0.501,
+            0.868,
+            0.53
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2. Draw a ball out of the urn at random, note its number, and replace it along with another ball with the same number."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.168,
+            0.535,
+            0.429,
+            0.549
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3. Repeat step 2 over and over."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.125,
+            0.556,
+            0.871,
+            0.648
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "12. Consider the coupon collector problem: there are n toy types, and toys are collected one by one, sampling with replacement from the set of toy types each time. We solved this problem in Chapter 4, assuming that all toy types are equally likely. Now suppose that at each stage, the jth toy type is collected with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " , where the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " are not necessarily equal. Let N be the number of toys needed until we have a full set; we wish to find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( N )"
+            },
+            {
+              "type": "text",
+              "content": " . This problem outlines an embedding method for calculating "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( N )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.167,
+            0.659,
+            0.868,
+            0.72
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) Suppose that the toys arrive according to a Poisson process with rate 1, so that the interarrival times between toys are i.i.d. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j } \\sim \\operatorname { E x p o ( 1 ) }"
+            },
+            {
+              "type": "text",
+              "content": " . For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j = 1 , \\ldots , n"
+            },
+            {
+              "type": "text",
+              "content": " let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " be the waiting time until the first toy of type "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j ."
+            },
+            {
+              "type": "text",
+              "content": " What are the distributions of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { j } ?"
+            },
+            {
+              "type": "text",
+              "content": " Are the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " independent?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.167,
+            0.73,
+            0.868,
+            0.776
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) Explain why "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T = \\operatorname* { m a x } ( Y _ { 1 } , \\ldots , Y _ { n } )"
+            },
+            {
+              "type": "text",
+              "content": " , the waiting time until all toy types are collected, can also be written as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } + \\dots + X _ { N }"
+            },
+            {
+              "type": "text",
+              "content": " , where the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " are defined as in Part (a). Use this to show that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( T ) = E ( N )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.168,
+            0.787,
+            0.805,
+            0.803
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(c) Show that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( T )"
+            },
+            {
+              "type": "text",
+              "content": " , and hence "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( N )"
+            },
+            {
+              "type": "text",
+              "content": " , can be found by computing the integral"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 19,
+          "bbox": [
+            0.399,
+            0.812,
+            0.64,
+            0.855
+          ],
+          "image_path": "images/page_595_equation_19.jpg",
+          "content": "\\int_ {0} ^ {\\infty} \\left(1 - \\prod_ {j = 1} ^ {n} (1 - e ^ {- p _ {j} t})\\right) d t."
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.168,
+            0.876,
+            0.836,
+            0.894
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Hint: Use the identity "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\begin{array} { r } { E ( T ) = \\int _ { 0 } ^ { \\infty } P ( T > t ) d t } \\end{array}"
+            },
+            {
+              "type": "text",
+              "content": " , which was shown in Example 5.3.8."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 596,
+      "blocks": [
+        {
+          "type": "image",
+          "index": 0,
+          "bbox": [
+            0.288,
+            0.291,
+            0.393,
+            0.364
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 0,
+              "bbox": [
+                0.288,
+                0.291,
+                0.393,
+                0.364
+              ],
+              "image_path": "images/page_596_image_0.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.403,
+            0.3,
+            0.717,
+            0.336
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Taylor & Francis"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.405,
+            0.337,
+            0.635,
+            0.355
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Taylor & Francis Group"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.405,
+            0.357,
+            0.598,
+            0.371
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "http://taylorandfrancis.com"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 597,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.062,
+            0.152,
+            0.09
+          ],
+          "content": []
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.107,
+            0.116,
+            0.191,
+            0.139
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Math"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.263,
+            0.226,
+            0.28
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.1 Sets"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.117,
+            0.303,
+            0.697,
+            0.321
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A set is a Many that allows itself to be thought of as a One."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.117,
+            0.322,
+            0.273,
+            0.34
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "– Georg Cantor"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.353,
+            0.896,
+            0.447
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A set is a collection of objects. The objects can be anything: numbers, people, cats, courses, even other sets! The language of sets allows us to talk precisely about events. If S is a set, then the notation "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x   \\in   S"
+            },
+            {
+              "type": "text",
+              "content": " indicates that x is an element or member of the set S (and x /∈ S indicates that x is not in S). We can think of the set as a club, with precisely defined criteria for membership. For example:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 6,
+          "bbox": [
+            0.128,
+            0.467,
+            0.874,
+            0.653
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.133,
+                0.47,
+                0.592,
+                0.49
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. {1, 3, 5, 7, . . . } is the set of all odd numbers;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.132,
+                0.501,
+                0.476,
+                0.52
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. R is the set of all real numbers;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.132,
+                0.532,
+                0.594,
+                0.552
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "3. {Worf, Jack, Tobey} is the set of Joe’s cats;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 10,
+              "bbox": [
+                0.131,
+                0.563,
+                0.871,
+                0.583
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "4. [3, 7] is the closed interval consisting of all real numbers between 3 and 7;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 11,
+              "bbox": [
+                0.132,
+                0.594,
+                0.871,
+                0.651
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "5. {HH, HT, T H, T T} is the set of all possible outcomes if a coin is flipped twice (where, for example, HT means the first flip lands Heads and the second lands Tails)."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.674,
+            0.896,
+            0.75
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To describe a set (when it’s tedious or impossible to list out its elements), we can give a rule that says whether each possible object is or isn’t in the set. For example, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{ ( x , y ) \\in \\mathbb { R } ^ { 2 } : x ^ { 2 } + y ^ { 2 } \\leq 1 \\}"
+            },
+            {
+              "type": "text",
+              "content": " is the disk of radius 1 in the plane "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbb { R } ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , centered at the origin. In this expression, the “:” is read as “such that”."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 13,
+          "bbox": [
+            0.104,
+            0.786,
+            0.352,
+            0.804
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.1.1 The empty set"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.101,
+            0.825,
+            0.897,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The smallest set, which is both subtle and important, is the empty set, which is the set that has no elements whatsoever. It is denoted by ∅ or by {}. Make sure not to confuse ∅ with {∅}. The former has no elements, while the latter has one element. If we visualize the empty set as an empty paper bag, then we can visualize {∅} as a paper bag inside of a paper bag."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 15,
+          "bbox": [
+            0.861,
+            0.936,
+            0.892,
+            0.95
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "581"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 598,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "582"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.068,
+            0.277,
+            0.085
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.1.2 Subsets"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.101,
+            0.105,
+            0.897,
+            0.236
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If A and B are sets, then we say A is a subset of B (and write "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A \\subseteq B )"
+            },
+            {
+              "type": "text",
+              "content": " if every element of A is also an element of B. For example, the set of all integers is a subset of the set of all real numbers. It is always true that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varnothing"
+            },
+            {
+              "type": "text",
+              "content": " and A itself are subsets of A; these are the extreme cases for subsets. A general strategy for showing that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A \\subseteq B"
+            },
+            {
+              "type": "text",
+              "content": " is to let x be an arbitrary element of A, and then show that x must also be an element of B. A general strategy for showing that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A = B"
+            },
+            {
+              "type": "text",
+              "content": " for two sets A and B is to show that each is a subset of the other."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.271,
+            0.627,
+            0.29
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.1.3 Unions, intersections, and complements"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.101,
+            0.308,
+            0.897,
+            0.422
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The union of two sets A and B, written as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A \\cup B"
+            },
+            {
+              "type": "text",
+              "content": " , is the set of all objects that are in A or B (or both). The intersection of A and B, written as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A \\cap B"
+            },
+            {
+              "type": "text",
+              "content": " , is the set of all objects that are in both A and B. We say that A and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B"
+            },
+            {
+              "type": "text",
+              "content": " are disjoint if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\overline { { A } } } \\cap B = \\emptyset"
+            },
+            {
+              "type": "text",
+              "content": " For n sets "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { 1 } , \\ldots , A _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " , the union "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { 1 } \\cup A _ { 2 } \\cup \\cdots \\cup A _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " is the set of all objects that are in at least one of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { j } { } ^ { \\gamma } \\mathrm { s } _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " while the intersection "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { 1 } \\cap A _ { 2 } \\cap \\cdots \\cap A _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " is the set of all objects that are in all of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { j } { } ^ { \\mathfrak { j } } \\mathrm { s }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.431,
+            0.896,
+            0.506
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In many applications, all the sets we’re working with are subsets of some set "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S"
+            },
+            {
+              "type": "text",
+              "content": " (in probability, this may be the set of all possible outcomes of some experiment). When S is clear from the context, we define the complement of a set A to be the set of all objects in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S"
+            },
+            {
+              "type": "text",
+              "content": " that are not in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A ;"
+            },
+            {
+              "type": "text",
+              "content": " this is denoted by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A ^ { c }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.516,
+            0.896,
+            0.591
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Unions, intersections, and complements can be visualized easily using Venn diagrams, such as the one shown below. The union is the entire shaded region, while the intersection is the football-shaped region of points that are in both A and B. The complement of A is all points in the rectangle that are outside of A."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 8,
+          "bbox": [
+            0.285,
+            0.605,
+            0.719,
+            0.81
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 8,
+              "bbox": [
+                0.285,
+                0.605,
+                0.719,
+                0.81
+              ],
+              "image_path": "images/page_598_image_8.jpg",
+              "content": "S\nA∩B\nA\nB"
+            },
+            {
+              "type": "image_caption",
+              "index": 9,
+              "bbox": [
+                0.104,
+                0.828,
+                0.242,
+                0.844
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE A.1"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.105,
+            0.846,
+            0.271,
+            0.864
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A Venn diagram."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.881,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that the area of the region "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A \\cup B"
+            },
+            {
+              "type": "text",
+              "content": " is the area of A plus the area of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B ,"
+            },
+            {
+              "type": "text",
+              "content": " minus the area of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A \\cap B"
+            },
+            {
+              "type": "text",
+              "content": " (this is a basic form of the inclusion-exclusion principle)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 599,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.155,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Math"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "583"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.068,
+            0.893,
+            0.103
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "De Morgan’s laws give an elegant, useful duality between unions and intersections:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.298,
+            0.11,
+            0.703,
+            0.127
+          ],
+          "image_path": "images/page_599_equation_3.jpg",
+          "content": "(A _ {1} \\cup A _ {2} \\cup \\dots \\cup A _ {n}) ^ {c} = A _ {1} ^ {c} \\cap A _ {2} ^ {c} \\cap \\dots \\cap A _ {n} ^ {c}"
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.298,
+            0.142,
+            0.703,
+            0.159
+          ],
+          "image_path": "images/page_599_equation_4.jpg",
+          "content": "(A _ {1} \\cap A _ {2} \\cap \\dots \\cap A _ {n}) ^ {c} = A _ {1} ^ {c} \\cup A _ {2} ^ {c} \\cup \\dots \\cup A _ {n} ^ {c}"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.105,
+            0.17,
+            0.894,
+            0.227
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It is much more important to understand De Morgan’s laws than to memorize them! The first law says that not being in at least one of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " is the same thing as not being in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " , nor being in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , nor being in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " , etc."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.105,
+            0.237,
+            0.894,
+            0.332
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For example, let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " be the set of people who like the jth Star Wars prequel, for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j \\in \\{ 1 , 2 , 3 \\}"
+            },
+            {
+              "type": "text",
+              "content": " . Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\bar { ( } A _ { 1 } \\cup A _ { 2 } \\cup A _ { 3 } ) ^ { c }"
+            },
+            {
+              "type": "text",
+              "content": " is the set of people for whom it is not the case that they like at least one of the prequels, but that is the same as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { 1 } ^ { c } \\cap A _ { 2 } ^ { c } \\cap A _ { 3 } ^ { c }"
+            },
+            {
+              "type": "text",
+              "content": " , the set of people who don’t like The Phantom Menace, don’t like Attack of the Clones, and don’t like Revenge of the Sith."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.105,
+            0.342,
+            0.894,
+            0.438
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The second law says that not being in all of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " is the same thing as being outside at least one of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " . For example, let the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " be defined as in the previous paragraph. If it is not the case that you like all of the Star Wars prequels (making you a member of the set "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( A _ { 1 } { \\cap } A _ { 2 } { \\cap } A _ { 3 } ) ^ { c } )"
+            },
+            {
+              "type": "text",
+              "content": " , then there must be at least one prequel that you don’t like (making you a member of the set "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { 1 } ^ { c } \\cup A _ { 2 } ^ { c } \\cup A _ { 3 } ^ { c } )"
+            },
+            {
+              "type": "text",
+              "content": " , and vice versa."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.105,
+            0.447,
+            0.893,
+            0.485
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proving the following facts about sets (not just drawing Venn diagrams, though they are very helpful for building intuition) is good practice:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 9,
+          "bbox": [
+            0.131,
+            0.505,
+            0.755,
+            0.582
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 10,
+              "bbox": [
+                0.132,
+                0.505,
+                0.755,
+                0.524
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "A \\cap B"
+                },
+                {
+                  "type": "text",
+                  "content": " and "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "A \\cap B ^ { c }"
+                },
+                {
+                  "type": "text",
+                  "content": " are disjoint, with "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "(A \\cap B) \\cup (A \\cap B^c) = A"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 11,
+              "bbox": [
+                0.132,
+                0.535,
+                0.482,
+                0.552
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "A \\cap B = A"
+                },
+                {
+                  "type": "text",
+                  "content": " if and only if "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "A \\subseteq B"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.132,
+                0.564,
+                0.457,
+                0.582
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "3. "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "A \\subseteq B"
+                },
+                {
+                  "type": "text",
+                  "content": " if and only if "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "B ^ { c } \\subseteq A ^ { c }"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 13,
+          "bbox": [
+            0.107,
+            0.618,
+            0.3,
+            0.636
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.1.4 Partitions"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.105,
+            0.655,
+            0.894,
+            0.75
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A collection of subsets "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { 1 } , \\ldots , A _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " of a set "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S"
+            },
+            {
+              "type": "text",
+              "content": " is a partition of S if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { 1 } \\cup \\cdots \\cup A _ { n } = S"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { i } \\cap A _ { j }   =   \\emptyset"
+            },
+            {
+              "type": "text",
+              "content": " for all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i   \\neq   j"
+            },
+            {
+              "type": "text",
+              "content": " . In words, a partition of a set is a collection of disjoint subsets whose union is the entire set. For example, the set of even numbers "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{ 0 , 2 , 4 , \\dots \\}"
+            },
+            {
+              "type": "text",
+              "content": " and the set of odd numbers "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{ 1 , 3 , 5 , \\dots \\}"
+            },
+            {
+              "type": "text",
+              "content": " form a partition of the set of nonnegative integers."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 15,
+          "bbox": [
+            0.107,
+            0.784,
+            0.314,
+            0.804
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.1.5 Cardinality"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.105,
+            0.823,
+            0.894,
+            0.897
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A set may be finite or infinite. If A is a finite set, we write "
+            },
+            {
+              "type": "equation_inline",
+              "content": "| A |"
+            },
+            {
+              "type": "text",
+              "content": " for the number of elements in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A ,"
+            },
+            {
+              "type": "text",
+              "content": " which is called its size or cardinality. For example, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "| \\{ 2 , 4 , 6 , 8 , 1 0 \\} | = 5"
+            },
+            {
+              "type": "text",
+              "content": " since there are 5 elements in this set. A very useful fact is that A and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B"
+            },
+            {
+              "type": "text",
+              "content": " are finite sets, then"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.357,
+            0.9,
+            0.643,
+            0.92
+          ],
+          "image_path": "images/page_599_equation_17.jpg",
+          "content": "| A \\cup B | = | A | + | B | - | A \\cap B |."
+        }
+      ]
+    },
+    {
+      "page_idx": 600,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "584"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.069,
+            0.896,
+            0.145
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This is a form of the inclusion-exclusion theorem from Chapter 1. It says that to count how many elements are in the union of A and B, we can add the separate counts for each, and then adjust for the fact that we have double-counted the elements (if any) that are in both A and B."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.154,
+            0.897,
+            0.248
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Two sets A and B are said to have the same size or same cardinality if they can be put into one-to-one correspondence, i.e., if each element of A can be paired up with exactly one element of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B ,"
+            },
+            {
+              "type": "text",
+              "content": " with no unpaired elements in either set. We say that A is smaller than B if there is not a one-to-one correspondence between A and B, but there is a one-to-one correspondence between A and some subset of B."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.258,
+            0.897,
+            0.41
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For example, suppose that we want to count the number of people in a movie theater with 100 seats. Assume that no one in the theater is standing, and no seat has more than one person in it. The obvious thing to do is to go around counting people one by one (though it’s surprisingly easy to miss someone or accidentally count someone twice). But if every seat is occupied, then a much easier method is to note that there must be 100 people, since there are 100 seats and there is a one-to-one correspondence between people and seats. If some seats are empty, then there must be fewer than 100 people there."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.418,
+            0.897,
+            0.553
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This idea of looking at one-to-one correspondences makes sense both for finite and for infinite sets. Consider the perfect squares "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 ^ { 2 } , 2 ^ { 2 } , 3 ^ { 2 } , \\ldots ."
+            },
+            {
+              "type": "text",
+              "content": " . Galileo pointed out the paradoxical result that on the one hand it seems like there are fewer perfect squares than positive integers (since every perfect square is a positive integer, but lots of positive integers aren’t perfect squares), but on the other hand it seems like these two sets have the same size since they can be put into one-to-one correspondence: pair "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " with 1, pair "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " with 2, pair "
+            },
+            {
+              "type": "equation_inline",
+              "content": "3 ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " with 3, etc."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.56,
+            0.897,
+            0.675
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The resolution of Galileo’s paradox is to realize that intuitions about finite sets don’t necessarily carry over to infinite sets. By definition, the set of all perfect squares and the set of all positive integers do have the same size. Another famous example of this is Hilbert’s hotel. For any hotel in the real world the number of rooms is finite. If every room is occupied, there is no way to accommodate more guests, other than by cramming more people into already occupied rooms."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.683,
+            0.897,
+            0.798
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Now consider an imaginary hotel with an infinite sequence of rooms, numbered 1, 2, 3, . . . . Assume that all the rooms are occupied, and that a weary traveler arrives, looking for a room. Can the hotel give the traveler a room, without leaving any of the current guests without a room? Yes, one way is to have the guest in room n move to room "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n + 1"
+            },
+            {
+              "type": "text",
+              "content": " , for all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n = 1 , 2 , 3 , \\ldots"
+            },
+            {
+              "type": "text",
+              "content": " . This frees up room 1, so the traveler can stay there."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.806,
+            0.897,
+            0.921
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "What if infinitely many travelers arrive at the same time, such that their cardinality is the same as that of the positive integers (so we can label the travelers as traveler 1, traveler "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 , \\ldots ) ?"
+            },
+            {
+              "type": "text",
+              "content": " The hotel could fit them in one by one by repeating the above procedure over and over again, but it would take forever (infinitely many moves) to accommodate everyone, and it would be bad for business to make the current guests keep moving over and over again. Can the room assignments be updated just once"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 601,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.155,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Math"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "585"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.143
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "so that everyone has a room? Yes, one way is to have the guest in room n move to room to 2n for all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n = 1 , 2 , 3 , \\ldots"
+            },
+            {
+              "type": "text",
+              "content": " , and then have traveler n move into room "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 n - 1"
+            },
+            {
+              "type": "text",
+              "content": " In this way, the current guests occupy all the even-numbered rooms, and the new guests occupy all the odd-numbered rooms."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.153,
+            0.897,
+            0.248
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "An infinite set is called countably infinite if it has the same cardinality as the set of all positive integers. A set is called countable if it is finite or countably infinite, and uncountable otherwise. The mathematician Cantor showed that not all infinite sets are the same size. In particular, the set of all real numbers is uncountable, as is any interval in the real line of positive length."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.105,
+            0.281,
+            0.392,
+            0.3
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.1.6 Cartesian product"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.317,
+            0.618,
+            0.335
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Cartesian product of two sets A and B is the set"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.344,
+            0.346,
+            0.655,
+            0.366
+          ],
+          "image_path": "images/page_601_equation_6.jpg",
+          "content": "A \\times B = \\{(a, b): a \\in A,   b \\in B \\}."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.374,
+            0.896,
+            0.413
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For example, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ 0 , 1 ] \\times [ 0 , 1 ]"
+            },
+            {
+              "type": "text",
+              "content": " is the square "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{ ( x , y ) : x , y \\in [ 0 , 1 ] \\}"
+            },
+            {
+              "type": "text",
+              "content": " , and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbb { R } \\times \\mathbb { R } = \\mathbb { R } ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " is two-dimensional Euclidean space."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.105,
+            0.496,
+            0.292,
+            0.514
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.2 Functions"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.533,
+            0.897,
+            0.648
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let A and B be sets. A function from A to B is a deterministic rule that, given an element of A as input, provides an element of B as an output. That is, a function from A to B is a machine that takes an x in A and “maps” it to some y in B. Different x’s can map to the same y, but each x only maps to one y. Here A is called the domain and B is called the target. The notation "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f : A \\to B"
+            },
+            {
+              "type": "text",
+              "content": " says that f is a function mapping A into B. The range of f is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{ y \\in B : f ( x ) = y"
+            },
+            {
+              "type": "text",
+              "content": " for some "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x \\in A \\}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.655,
+            0.896,
+            0.769
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It is important to distinguish between f (the function) and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( x )"
+            },
+            {
+              "type": "text",
+              "content": " (the value of the function when evaluated at x). That is, f is a rule, while "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( x )"
+            },
+            {
+              "type": "text",
+              "content": " is a number for each number x. The function g given by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x ) = e ^ { - x ^ { 2 } / 2 }"
+            },
+            {
+              "type": "text",
+              "content": " is exactly the same as the function g given by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( t ) = e ^ { - t ^ { 2 } / 2 }"
+            },
+            {
+              "type": "text",
+              "content": " ; what matters is the rule, not the name we use for the input. For this example, the rule is that x gets mapped to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "e ^ { - x ^ { 2 } / 2 }"
+            },
+            {
+              "type": "text",
+              "content": " ; this rule is also denoted by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x \\mapsto e ^ { - x ^ { 2 } / 2 }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.778,
+            0.895,
+            0.835
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A function f from the real line to the real line is continuous if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( x ) \\rightarrow f ( a )"
+            },
+            {
+              "type": "text",
+              "content": " as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x \\rightarrow a"
+            },
+            {
+              "type": "text",
+              "content": " for any value of a. It is called right-continuous if this is true when approaching from the right, i.e., "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( x ) \\to f ( a )"
+            },
+            {
+              "type": "text",
+              "content": " as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x \\rightarrow a"
+            },
+            {
+              "type": "text",
+              "content": " while ranging over values with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x > a"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.844,
+            0.897,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The set A may not be a set of numbers. In probability, it is extremely common and useful to consider functions whose domains are the set of all possible outcomes of some experiment. It may be difficult to write down a formula for the function, but the function is still valid as long as it’s defined unambiguously."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 602,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "586"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.068,
+            0.42,
+            0.085
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.2.1 One-to-one functions"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.108,
+            0.894,
+            0.166
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f"
+            },
+            {
+              "type": "text",
+              "content": " be a function from A to B. Then f is a one-to-one function if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x) \\neq f(y)"
+            },
+            {
+              "type": "text",
+              "content": " whenever "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x \\neq y"
+            },
+            {
+              "type": "text",
+              "content": " . That is, any two distinct inputs in A get mapped to two distinct outputs in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B ;"
+            },
+            {
+              "type": "text",
+              "content": " for each "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y"
+            },
+            {
+              "type": "text",
+              "content": " in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B ,"
+            },
+            {
+              "type": "text",
+              "content": " there can be at most one x in A that maps to it."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.179,
+            0.834,
+            0.198
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f"
+            },
+            {
+              "type": "text",
+              "content": " be a one-to-one function from A to B, and let C be the range of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ,"
+            },
+            {
+              "type": "text",
+              "content": " i.e.,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.308,
+            0.219,
+            0.689,
+            0.24
+          ],
+          "image_path": "images/page_602_equation_5.jpg",
+          "content": "C = \\{b \\in B: f (a) = b \\text {for some} x \\in A \\}."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.104,
+            0.26,
+            0.894,
+            0.316
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Then there is an inverse function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ^ { - 1 } : C \\to A"
+            },
+            {
+              "type": "text",
+              "content": " , defined by letting "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ^ { - 1 } ( y )"
+            },
+            {
+              "type": "text",
+              "content": " be the unique element "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x \\in A"
+            },
+            {
+              "type": "text",
+              "content": " such that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( x ) = y"
+            },
+            {
+              "type": "text",
+              "content": " . A function that has an inverse is called an invertible function."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.331,
+            0.894,
+            0.408
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For example, let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( x ) = x ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " for all real x. This is not a one-to-one function since, for example, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(3) = f(-3)"
+            },
+            {
+              "type": "text",
+              "content": " . But now assume instead that the domain of f is chosen to be "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ 0 , \\infty )"
+            },
+            {
+              "type": "text",
+              "content": " , so we are defining "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f"
+            },
+            {
+              "type": "text",
+              "content": " as a function from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ 0 , \\infty )"
+            },
+            {
+              "type": "text",
+              "content": " to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ 0 , \\infty )"
+            },
+            {
+              "type": "text",
+              "content": " . Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f"
+            },
+            {
+              "type": "text",
+              "content": " is one-to-one, and its inverse function is given by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ^ { - 1 } ( y ) = { \\sqrt { y } }"
+            },
+            {
+              "type": "text",
+              "content": " for all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y \\in [ 0 , \\infty )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.104,
+            0.42,
+            0.894,
+            0.496
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The pigeonhole principle says that if A and B are finite sets with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "| A | > | B |"
+            },
+            {
+              "type": "text",
+              "content": " , then there does not exist a one-to-one function from A to B. In other words, if k objects are placed into n boxes, where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k   >   n"
+            },
+            {
+              "type": "text",
+              "content": " , then there must be at least one box that contains more than one object."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.104,
+            0.51,
+            0.894,
+            0.586
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For example, in the birthday problem from Chapter 1 (assuming there are 365 days in a year), with 366 or more people there is guaranteed to be at least one birthday match. There is no one-to-one function assigning a birthday to each of the people, when there are more people than there are days in a year."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 10,
+          "bbox": [
+            0.105,
+            0.623,
+            0.58,
+            0.642
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.2.2 Increasing and decreasing functions"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.104,
+            0.664,
+            0.894,
+            0.778
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f : A \\to \\mathbb { R }"
+            },
+            {
+              "type": "text",
+              "content": " , where A is a set of real numbers. Then f is an increasing function if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x \\leq y"
+            },
+            {
+              "type": "text",
+              "content": " implies "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( x ) \\leq f ( y )"
+            },
+            {
+              "type": "text",
+              "content": " (for all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x , y \\in A )"
+            },
+            {
+              "type": "text",
+              "content": " . Note that this definition allows there to be regions where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f"
+            },
+            {
+              "type": "text",
+              "content": " is flat, e.g., the constant function that is equal to 42 everywhere is an increasing function, and any CDF (see Section 3.6) is an increasing function. We say that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f"
+            },
+            {
+              "type": "text",
+              "content": " is strictly increasing if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x   <   y"
+            },
+            {
+              "type": "text",
+              "content": " implies "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( x )   <   f ( y )"
+            },
+            {
+              "type": "text",
+              "content": " . For example, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f : \\mathbb { R } \\rightarrow \\mathbb { R }"
+            },
+            {
+              "type": "text",
+              "content": " with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( x ) = x ^ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " is a strictly increasing function."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.104,
+            0.791,
+            0.894,
+            0.848
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Similarly, f is a decreasing function if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x \\leq y"
+            },
+            {
+              "type": "text",
+              "content": " implies "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( x ) \\geq f ( y )"
+            },
+            {
+              "type": "text",
+              "content": " , and is a strictly decreasing function if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x < y"
+            },
+            {
+              "type": "text",
+              "content": " implies "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x) > f(y)"
+            },
+            {
+              "type": "text",
+              "content": " . For example, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f : ( 0 , \\infty ) \\to ( 0 , \\infty )"
+            },
+            {
+              "type": "text",
+              "content": " with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( x ) = 1 / x"
+            },
+            {
+              "type": "text",
+              "content": " is a strictly decreasing function."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.104,
+            0.862,
+            0.894,
+            0.918
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A monotone function is a function that is either increasing or decreasing. A strictly monotone function is a function that is either strictly increasing or strictly decreasing. Note that any strictly monotone function is one-to-one."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 603,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.156,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Math"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "587"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.068,
+            0.453,
+            0.086
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.2.3 Even and odd functions"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.101,
+            0.124,
+            0.897,
+            0.199
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f"
+            },
+            {
+              "type": "text",
+              "content": " be a function from R to R. We say "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f"
+            },
+            {
+              "type": "text",
+              "content": " is an even function if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x) = f(-x)"
+            },
+            {
+              "type": "text",
+              "content": " for all x, and we say "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f"
+            },
+            {
+              "type": "text",
+              "content": " is an odd function if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "-f(x)=f(-x)"
+            },
+            {
+              "type": "text",
+              "content": " for all x. If neither of these conditions is satisfied, then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f"
+            },
+            {
+              "type": "text",
+              "content": " is neither even nor odd. Figure A.2 shows the graphs of two even functions and two odd functions."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 4,
+          "bbox": [
+            0.142,
+            0.247,
+            0.837,
+            0.729
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 4,
+              "bbox": [
+                0.142,
+                0.247,
+                0.837,
+                0.729
+              ],
+              "image_path": "images/page_603_image_4.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.749,
+            0.245,
+            0.764
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE A.2"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.766,
+            0.897,
+            0.825
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Even and odd functions. The graphs on the left are even functions: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( x ) = x ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " on the top and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( x ) = e ^ { - x ^ { 2 } / 2 }"
+            },
+            {
+              "type": "text",
+              "content": " on the bottom. The graphs on the right are odd functions: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( x ) = x ^ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " on the top and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( x ) = x e ^ { - x ^ { 2 } / 2 }"
+            },
+            {
+              "type": "text",
+              "content": " on the bottom."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.101,
+            0.863,
+            0.896,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Even and odd functions have nice symmetry properties. The graph of an even function remains the same if you reflect it about the vertical axis, and the graph of an odd function remains the same if you rotate it 180 degrees around the origin."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 604,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "588"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.104,
+            0.069,
+            0.574,
+            0.087
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Even functions have the property that for any "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a ,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.368,
+            0.095,
+            0.633,
+            0.136
+          ],
+          "image_path": "images/page_604_equation_3.jpg",
+          "content": "\\int_ {- a} ^ {a} f (x) d x = 2 \\int_ {0} ^ {a} f (x) d x,"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.144,
+            0.897,
+            0.199
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "assuming the integral exists. This is because the area under the function from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "- a"
+            },
+            {
+              "type": "text",
+              "content": " to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0"
+            },
+            {
+              "type": "text",
+              "content": " is equal to the area under the function from 0 to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a ."
+            },
+            {
+              "type": "text",
+              "content": " Odd functions have the property that for any "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a ,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.42,
+            0.199,
+            0.579,
+            0.236
+          ],
+          "image_path": "images/page_604_equation_5.jpg",
+          "content": "\\int_ {- a} ^ {a} f (x) d x = 0,"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.103,
+            0.241,
+            0.896,
+            0.277
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "again assuming the integral exists. This is because the area under the function from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "- a"
+            },
+            {
+              "type": "text",
+              "content": " to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0"
+            },
+            {
+              "type": "text",
+              "content": " cancels the area under the function from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0"
+            },
+            {
+              "type": "text",
+              "content": " to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a ."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.313,
+            0.522,
+            0.33
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.2.4 Convex and concave functions"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.104,
+            0.349,
+            0.638,
+            0.366
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A function g whose domain is an interval I is convex if"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.291,
+            0.38,
+            0.706,
+            0.399
+          ],
+          "image_path": "images/page_604_equation_9.jpg",
+          "content": "g (p x _ {1} + (1 - p) x _ {2}) \\leq p g (x _ {1}) + (1 - p) g (x _ {2})"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.409,
+            0.897,
+            0.522
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x _ { 1 } , x _ { 2 }   \\in   I"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p   \\in   ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " . Geometrically, this says that if we draw a line segment connecting two points on the graph of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ,"
+            },
+            {
+              "type": "text",
+              "content": " then the line segment lies above the graph of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ."
+            },
+            {
+              "type": "text",
+              "content": " If the derivative "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ^ { \\prime }"
+            },
+            {
+              "type": "text",
+              "content": " exists, then an equivalent definition is that every tangent line to the graph of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g"
+            },
+            {
+              "type": "text",
+              "content": " lies below the graph. If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ^ { \\prime \\prime }"
+            },
+            {
+              "type": "text",
+              "content": " exists, then an equivalent definition is that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ^ { \\prime \\prime } ( x ) \\geq 0"
+            },
+            {
+              "type": "text",
+              "content": " for all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x \\in I"
+            },
+            {
+              "type": "text",
+              "content": " . An example is shown in Figure A.3. A simple example is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x ) = x ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , whose second derivative is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g^{\\prime\\prime}(x) = 2 > 0"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 11,
+          "bbox": [
+            0.28,
+            0.545,
+            0.717,
+            0.774
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 11,
+              "bbox": [
+                0.28,
+                0.545,
+                0.717,
+                0.774
+              ],
+              "image_path": "images/page_604_image_11.jpg",
+              "content": "y = g(x)"
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 12,
+          "bbox": [
+            0.104,
+            0.792,
+            0.245,
+            0.808
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE A.3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.81,
+            0.896,
+            0.847
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Graph of a convex function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ."
+            },
+            {
+              "type": "text",
+              "content": " We have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ^ { \\prime \\prime } ( x ) \\geq 0"
+            },
+            {
+              "type": "text",
+              "content": " . Any line segment connecting two points on the curve lies above the curve. Any tangent line lies below the curve."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.862,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g"
+            },
+            {
+              "type": "text",
+              "content": " is concave "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\mathrm { i f ~ } } { - g }"
+            },
+            {
+              "type": "text",
+              "content": " is convex. If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ^ { \\prime \\prime }"
+            },
+            {
+              "type": "text",
+              "content": " exists, then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g"
+            },
+            {
+              "type": "text",
+              "content": " is concave if and only if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ^ { \\prime \\prime } ( x ) \\leq 0"
+            },
+            {
+              "type": "text",
+              "content": " for all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " in the domain. For example, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x ) = \\log ( x )"
+            },
+            {
+              "type": "text",
+              "content": " defines a concave function on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , \\infty )"
+            },
+            {
+              "type": "text",
+              "content": " since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g''(x) = -1/x^2 < 0"
+            },
+            {
+              "type": "text",
+              "content": " for all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x \\in ( 0 , \\infty )"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 605,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.155,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Math"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "589"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.068,
+            0.611,
+            0.086
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.2.5 Exponential and logarithmic functions"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.11,
+            0.896,
+            0.184
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "An exponential function is a function of the form "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( x ) = a ^ { x }"
+            },
+            {
+              "type": "text",
+              "content": " for some number "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a > 0"
+            },
+            {
+              "type": "text",
+              "content": " If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a > 1"
+            },
+            {
+              "type": "text",
+              "content": " , the function is increasing, and if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 < a < 1"
+            },
+            {
+              "type": "text",
+              "content": " , the function is decreasing. The most common exponential function we’ll work with is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( x ) = e ^ { x }"
+            },
+            {
+              "type": "text",
+              "content": " , and a very useful limit result to know is that"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.424,
+            0.186,
+            0.577,
+            0.22
+          ],
+          "image_path": "images/page_605_equation_4.jpg",
+          "content": "\\left(1 + \\frac {x}{n}\\right) ^ {n} \\rightarrow e ^ {x}"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.235,
+            0.896,
+            0.291
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": " , for any real number x. This has an interpretation in terms of a bank paying compound interest on a deposit: as compounding occurs more and more times per year, the growth rate approaches exponential growth."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.105,
+            0.306,
+            0.586,
+            0.324
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Here are some properties of exponential functions:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 7,
+          "bbox": [
+            0.131,
+            0.351,
+            0.301,
+            0.442
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.133,
+                0.353,
+                0.297,
+                0.371
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "a ^ { x } a ^ { y } = a ^ { x + y } ."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.133,
+                0.386,
+                0.299,
+                0.406
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "a ^ { x } b ^ { x } = ( a b ) ^ { x } ."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 10,
+              "bbox": [
+                0.133,
+                0.42,
+                0.289,
+                0.44
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "3. "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "( a ^ { x } ) ^ { y } = a ^ { x y } ."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.104,
+            0.468,
+            0.897,
+            0.543
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The inverse of an exponential function is a logarithmic function: for positive "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y , \\log _ { a } y"
+            },
+            {
+              "type": "text",
+              "content": " is defined to be the number x such that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a ^ { x } = y"
+            },
+            {
+              "type": "text",
+              "content": " . Throughout this book, when we write log y without explicitly specifying the base, we are referring to the natural logarithm (base e)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.105,
+            0.558,
+            0.484,
+            0.576
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Here are some properties of logarithms:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 13,
+          "bbox": [
+            0.129,
+            0.602,
+            0.412,
+            0.698
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 14,
+              "bbox": [
+                0.133,
+                0.606,
+                0.407,
+                0.625
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\log _ { a } x + \\log _ { a } y = \\log _ { a } x y ."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 15,
+              "bbox": [
+                0.133,
+                0.639,
+                0.344,
+                0.658
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\log _ { a } x ^ { n } = n \\log _ { a } x ."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 16,
+              "bbox": [
+                0.133,
+                0.67,
+                0.301,
+                0.695
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "3. lo "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\begin{array} { r } { \\operatorname { g } _ { a } x = { \\frac { \\log x } { \\log a } } } \\end{array}"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 17,
+          "bbox": [
+            0.105,
+            0.731,
+            0.572,
+            0.749
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.2.6 Floor function and ceiling function"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.104,
+            0.772,
+            0.896,
+            0.867
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The floor function is defined by letting "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lfloor x \\rfloor"
+            },
+            {
+              "type": "text",
+              "content": " be the greatest integer less than or equal to x. That is, it says to round down to an integer. For example, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ 3 . 1 4 ] = 3 ,"
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left[ -1.3 \\right] = -2"
+            },
+            {
+              "type": "text",
+              "content": " , and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ 5 ] = 5"
+            },
+            {
+              "type": "text",
+              "content": " . (Some books denote the floor function by [x] but this is bad notation since it does not suggest a corresponding notation for the ceiling function, and since square brackets are also used for other purposes.)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.104,
+            0.881,
+            0.894,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The ceiling function is defined by letting "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lceil x \\rceil"
+            },
+            {
+              "type": "text",
+              "content": " be the smallest integer greater than or equal to x. For example, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lceil 3.14 \\rceil = 4,   \\lceil -1.3 \\rceil = -1"
+            },
+            {
+              "type": "text",
+              "content": " , and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lceil 5 \\rceil = 5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 606,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "590"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.104,
+            0.068,
+            0.619,
+            0.087
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.2.7 Factorial function and gamma function"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.105,
+            0.896,
+            0.143
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The factorial function takes a positive integer n and returns the product of the integers from 1 to n, denoted n! and read "
+            },
+            {
+              "type": "equation_inline",
+              "content": "^ { \\mathfrak { a } } n"
+            },
+            {
+              "type": "text",
+              "content": " factorial”:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.372,
+            0.158,
+            0.624,
+            0.178
+          ],
+          "image_path": "images/page_606_equation_4.jpg",
+          "content": "n! = n (n - 1) (n - 2) \\dots 1."
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.193,
+            0.897,
+            0.286
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Also, we define "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 ! = 1"
+            },
+            {
+              "type": "text",
+              "content": " . This convention makes sense since if we think of n! as the number of ways in which n people can line up, there is 1 way for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n = 0"
+            },
+            {
+              "type": "text",
+              "content": " (this just means there is no one there, so the line is empty). It is also very helpful since, for example, we can then say that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n ! / ( n - 1 ) ! = n"
+            },
+            {
+              "type": "text",
+              "content": " for all positive integers n without running into trouble when "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n = 1"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.296,
+            0.896,
+            0.335
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The factorial function grows extremely quickly as n grows. A famous, useful approximation for factorials is Stirling’s formula,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.41,
+            0.346,
+            0.589,
+            0.38
+          ],
+          "image_path": "images/page_606_equation_7.jpg",
+          "content": "n! \\approx \\sqrt {2 \\pi n} \\left(\\frac {n}{e}\\right) ^ {n}."
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.391,
+            0.896,
+            0.429
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The ratio of the two sides converges to 1 as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": " . For example, direct calculation gives "
+            },
+            {
+              "type": "equation_inline",
+              "content": "5 2 ! \\approx 8 . 0 6 6 \\times 1 0 ^ { 6 7 }"
+            },
+            {
+              "type": "text",
+              "content": " , while Stirling’s formula says "
+            },
+            {
+              "type": "equation_inline",
+              "content": "5 2 ! \\approx 8 . 0 5 3 \\times 1 0 ^ { 6 7 }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.438,
+            0.894,
+            0.474
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The gamma function Γ generalizes the factorial function to positive real numbers; it is defined by"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.351,
+            0.474,
+            0.647,
+            0.513
+          ],
+          "image_path": "images/page_606_equation_10.jpg",
+          "content": "\\Gamma (a) = \\int_ {0} ^ {\\infty} x ^ {a} e ^ {- x} \\frac {d x}{x}, \\quad a > 0,"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.518,
+            0.357,
+            0.536
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "and has the property that"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.422,
+            0.537,
+            0.576,
+            0.557
+          ],
+          "image_path": "images/page_606_equation_12.jpg",
+          "content": "\\Gamma (n) = (n - 1)!"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.103,
+            0.564,
+            0.545,
+            0.584
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for all positive integers n. Also, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Gamma ( 1 / 2 ) = { \\sqrt { \\pi } } ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.593,
+            0.894,
+            0.629
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "An important property of the gamma function, which generalizes the fact that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n ! = n \\cdot ( n - 1 ) !"
+            },
+            {
+              "type": "text",
+              "content": " , is that"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.414,
+            0.631,
+            0.584,
+            0.651
+          ],
+          "image_path": "images/page_606_equation_15.jpg",
+          "content": "\\Gamma (a + 1) = a \\Gamma (a)"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.102,
+            0.66,
+            0.724,
+            0.679
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a > 0"
+            },
+            {
+              "type": "text",
+              "content": " . See Chapter 8 for more about the gamma function."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 17,
+          "bbox": [
+            0.104,
+            0.761,
+            0.28,
+            0.779
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.3 Matrices"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.12,
+            0.798,
+            0.374,
+            0.816
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Neo: What is the Matrix?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.119,
+            0.818,
+            0.877,
+            0.854
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Trinity: The answer is out there, Neo, and it’s looking for you, and it will find you if you want it to."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.12,
+            0.856,
+            0.418,
+            0.875
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "– The Matrix (film from 1999)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 21,
+          "bbox": [
+            0.103,
+            0.882,
+            0.897,
+            0.924
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A matrix is a rectangular array of numbers, such as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\binom { 3 \\quad 1 / e } { 2 \\pi \\quad 1 } } { \\mathrm { ~ o r ~ } } { \\binom { 1 \\quad 1 \\quad 0 } { 1 \\quad 2 \\quad 3 } }"
+            },
+            {
+              "type": "text",
+              "content": " . We"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 607,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.155,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Math"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.892,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "591"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.163
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "say that the dimensions of a matrix are m by n (also written "
+            },
+            {
+              "type": "equation_inline",
+              "content": "m \\times n )"
+            },
+            {
+              "type": "text",
+              "content": " if it has m rows and n columns (so the former example is 2 by 2, while the latter is 2 by 3). The matrix is called square if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "m = n"
+            },
+            {
+              "type": "text",
+              "content": " . If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "m = 1"
+            },
+            {
+              "type": "text",
+              "content": " , we have a row vector ; if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n = 1"
+            },
+            {
+              "type": "text",
+              "content": " , we have a column vector. We write "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A = ( a _ { i j } )"
+            },
+            {
+              "type": "text",
+              "content": " to indicate that the row "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i ,"
+            },
+            {
+              "type": "text",
+              "content": " column "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j"
+            },
+            {
+              "type": "text",
+              "content": " entry of A is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { i j }"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.105,
+            0.195,
+            0.575,
+            0.215
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.3.1 Matrix addition and multiplication"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.232,
+            0.896,
+            0.27
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To add two matrices A and B with the same dimensions, just add the corresponding entries, e.g.,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.31,
+            0.292,
+            0.692,
+            0.335
+          ],
+          "image_path": "images/page_607_equation_5.jpg",
+          "content": "\\left( \\begin{array}{c c c} 1 & 1 & 0 \\\\ 1 & 1 & 1 \\end{array} \\right) + \\left( \\begin{array}{c c c} 1 & 0 & 0 \\\\ 1 & 1 & 0 \\end{array} \\right) = \\left( \\begin{array}{c c c} 2 & 1 & 0 \\\\ 2 & 2 & 1 \\end{array} \\right)."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.345,
+            0.896,
+            0.401
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "When we multiply an "
+            },
+            {
+              "type": "equation_inline",
+              "content": "m \\times n"
+            },
+            {
+              "type": "text",
+              "content": " matrix A by an "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\times r"
+            },
+            {
+              "type": "text",
+              "content": " matrix "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B ."
+            },
+            {
+              "type": "text",
+              "content": " we obtain an "
+            },
+            {
+              "type": "equation_inline",
+              "content": "m \\times r"
+            },
+            {
+              "type": "text",
+              "content": " matrix "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A B"
+            },
+            {
+              "type": "text",
+              "content": " . The product AB is undefined if the number of columns of A does not equal the number of rows of B."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.41,
+            0.896,
+            0.467
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The row "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i ,"
+            },
+            {
+              "type": "text",
+              "content": " column "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j"
+            },
+            {
+              "type": "text",
+              "content": " entry of AB is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle \\sum _ { k = 1 } ^ { n } a _ { i k } b _ { k j }"
+            },
+            {
+              "type": "text",
+              "content": " , where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { i j }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b _ { i j }"
+            },
+            {
+              "type": "text",
+              "content": " are the row "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i ,"
+            },
+            {
+              "type": "text",
+              "content": " column "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j"
+            },
+            {
+              "type": "text",
+              "content": " entries of A and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B ,"
+            },
+            {
+              "type": "text",
+              "content": " respectively. For example, here is how to multiply a "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 \\times 3"
+            },
+            {
+              "type": "text",
+              "content": " matrix by a "
+            },
+            {
+              "type": "equation_inline",
+              "content": "3 \\times 1"
+            },
+            {
+              "type": "text",
+              "content": " vector:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.255,
+            0.473,
+            0.745,
+            0.533
+          ],
+          "image_path": "images/page_607_equation_8.jpg",
+          "content": "\\left( \\begin{array}{c c c} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{array} \\right) \\left( \\begin{array}{c} 7 \\\\ 8 \\\\ 9 \\end{array} \\right) = \\binom{1 \\cdot 7 + 2 \\cdot 8 + 3 \\cdot 9}{4 \\cdot 7 + 5 \\cdot 8 + 6 \\cdot 9} = \\binom{5 0}{1 2 2}."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.546,
+            0.896,
+            0.584
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that AB may not equal "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B A"
+            },
+            {
+              "type": "text",
+              "content": " , even if both are defined. To multiply a matrix A by a scalar, just multiply each entry by that scalar."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.593,
+            0.897,
+            0.688
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The transpose of a matrix A is the matrix whose row "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i ,"
+            },
+            {
+              "type": "text",
+              "content": " column "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j"
+            },
+            {
+              "type": "text",
+              "content": " entry is the row "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j ,"
+            },
+            {
+              "type": "text",
+              "content": " column i entry of A. It is denoted by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A ^ { \\prime }"
+            },
+            {
+              "type": "text",
+              "content": " and read as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "^ { \\circ } A"
+            },
+            {
+              "type": "text",
+              "content": " transpose”. The rows of A are the columns of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A ^ { \\prime } ,"
+            },
+            {
+              "type": "text",
+              "content": " and the columns of A are the rows of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A ^ { \\prime } ,"
+            },
+            {
+              "type": "text",
+              "content": " A square matrix A is symmetric if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A ^ { \\prime } = A"
+            },
+            {
+              "type": "text",
+              "content": " . A useful property of transposes is that if A and B are matrices such that the product AB is defined, then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( A B ) ^ { \\prime } = B ^ { \\prime } A ^ { \\prime }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.697,
+            0.568,
+            0.715
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The determinant of a "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 \\times 2"
+            },
+            {
+              "type": "text",
+              "content": " matrix is defined by"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.416,
+            0.72,
+            0.582,
+            0.762
+          ],
+          "image_path": "images/page_607_equation_12.jpg",
+          "content": "\\left| \\begin{array}{c c} a & b \\\\ c & d \\end{array} \\right| = a d - b c."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.766,
+            0.896,
+            0.803
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Determinants can also be defined for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\times n"
+            },
+            {
+              "type": "text",
+              "content": " matrices, in a recursive manner not reviewed here."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 14,
+          "bbox": [
+            0.105,
+            0.837,
+            0.509,
+            0.856
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.3.2 Eigenvalues and eigenvectors"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.104,
+            0.874,
+            0.689,
+            0.892
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "An eigenvalue of an "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\times n"
+            },
+            {
+              "type": "text",
+              "content": " matrix A is a number λ such that"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.454,
+            0.901,
+            0.547,
+            0.918
+          ],
+          "image_path": "images/page_607_equation_16.jpg",
+          "content": "A \\mathbf {v} = \\lambda \\mathbf {v}"
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

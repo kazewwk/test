@@ -1,0 +1,5848 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Probability, Second Edition",
+      "authors": [
+        "Joseph K. Blitzstein;Jessica Hwang;"
+      ],
+      "created_at": "2019-01-18T11:22:30+05:30",
+      "modified_at": "2019-02-04T21:29:14+05:30",
+      "creator_application": "LaTeX with hyperref",
+      "producer_application": "pdfTeX-1.40.19",
+      "page_count": 636,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 304,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 305,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 306,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 307,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 308,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 309,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 310,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 311,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 312,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 313,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 314,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 315,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 316,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 317,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 318,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 319,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 304,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "288"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.067,
+            0.895,
+            0.125
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "to conquer a seemingly intractable counting problem. Then we’ll prove that the PGF of a nonnegative integer-valued r.v. determines its distribution, which we omitted in the more general MGF setting."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.105,
+            0.134,
+            0.896,
+            0.191
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition 6.7.1 (Probability generating function). The probability generating function (PGF) of a nonnegative integer-valued r.v. X with PMF "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { k } = P ( X = k )"
+            },
+            {
+              "type": "text",
+              "content": " is the generating function of the PMF. By LOTUS, this is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.414,
+            0.206,
+            0.586,
+            0.254
+          ],
+          "image_path": "images/page_304_equation_4.jpg",
+          "content": "E (t ^ {X}) = \\sum_ {k = 0} ^ {\\infty} p _ {k} t ^ {k}."
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.105,
+            0.268,
+            0.895,
+            0.308
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The PGF converges to a value in [−1, 1] for all t in [−1, 1] since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle \\sum _ { k = 0 } ^ { \\infty } p _ { k } = 1"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "| p _ { k } t ^ { k } | \\leq p _ { k }"
+            },
+            {
+              "type": "text",
+              "content": " for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "| t | \\leq 1"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.105,
+            0.316,
+            0.752,
+            0.335
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The MGF is closely related to the PGF, when both exist: for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t > 0"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.408,
+            0.349,
+            0.592,
+            0.372
+          ],
+          "image_path": "images/page_304_equation_7.jpg",
+          "content": "E (t ^ {X}) = E (e ^ {X \\log t})"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.105,
+            0.387,
+            0.395,
+            0.406
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "is the MGF evaluated at log t."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.105,
+            0.417,
+            0.895,
+            0.472
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 6.7.2 (Generating dice probabilities). Frederick Mosteller, the founder of the Harvard Statistics Department, once recounted the following life-changing moment:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.119,
+            0.484,
+            0.88,
+            0.635
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A key moment in my life occurred in one of those classes during my sophomore year. We had the question: When three dice are rolled what is the chance that the sum of the faces will be 10? The students in this course were very good, but we all got the answer largely by counting on our fingers. When we came to class, I said to the teacher, “That’s all very well—we got the answer—but if we had been asked about six dice and the probability of getting 18, we would still be home counting. How do you do problems like that?” He said, “I don’t know, but I know a man who probably does and I’ll ask him.”"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.119,
+            0.636,
+            0.88,
+            0.766
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "One day I was in the library and Professor Edwin G. Olds of the Mathematics Department came in. He shouted at me, “I hear you’re interested in the three dice problem.” He had a huge voice, and you know how libraries are. I was embarrassed. “Well, come and see me,” he said, “and I’ll show you about it.” “Sure,” I said. But I was saying to myself, “I’ll never go.” Then he said, “What are you doing?” I showed him. “That’s nothing important,” he said. “Let’s go now.”"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.119,
+            0.768,
+            0.88,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "So we went to his office, and he showed me a generating function. It was the most marvelous thing I had ever seen in mathematics. It used mathematics that, up to that time, in my heart of hearts, I had thought was something that mathematicians just did to create homework problems for innocent students in high school and college. I don’t know where I had got ideas like that about various parts of mathematics. Anyway, I was stunned when I saw how Olds used this mathematics that I hadn’t believed in. He used it in such an unusually outrageous way. It was a total retranslation of the meaning of the numbers. [1]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 305,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.19,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Moments"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "289"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.182
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let X be the total from rolling 6 fair dice, and let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , \\ldots , X _ { 6 }"
+            },
+            {
+              "type": "text",
+              "content": " be the individual rolls. What is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(X = 18) ?"
+            },
+            {
+              "type": "text",
+              "content": " It turns out that there are 3431 ways to obtain a sum of 18, so the probability is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "3 4 3 1 / 6 ^ { 6 } \\approx 0 . 0 7 3 5"
+            },
+            {
+              "type": "text",
+              "content": " . Listing out all possibilities is extremely tedious, and the tedium would be compounded with the worry of having somehow missed a case. And what if we laboriously listed out all 3431 cases, and then were asked to find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(X = 19) ?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.191,
+            0.851,
+            0.209
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The PGF of X lets us count the cases in a systematic way. The PGF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.357,
+            0.218,
+            0.642,
+            0.253
+          ],
+          "image_path": "images/page_305_equation_4.jpg",
+          "content": "E (t ^ {X _ {1}}) = \\frac {1}{6} (t + t ^ {2} + \\dots + t ^ {6})."
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.26,
+            0.489,
+            0.279
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Since the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " are i.i.d., the PGF of X is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.166,
+            0.289,
+            0.832,
+            0.327
+          ],
+          "image_path": "images/page_305_equation_6.jpg",
+          "content": "E \\left(t ^ {X}\\right) = E \\left(t ^ {X _ {1}} \\dots t ^ {X _ {6}}\\right) = E \\left(t ^ {X _ {1}}\\right) \\dots E \\left(t ^ {X _ {6}}\\right) = \\frac {t ^ {6}}{6 ^ {6}} (1 + t + \\dots + t ^ {5}) ^ {6}."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.336,
+            0.897,
+            0.431
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "By definition, the coefficient of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t ^ { 1 8 }"
+            },
+            {
+              "type": "text",
+              "content": " in the PGF is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X   =   1 8 )"
+            },
+            {
+              "type": "text",
+              "content": " . So the number of ways to get a sum of 18 is the coefficient of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t ^ { 1 8 }"
+            },
+            {
+              "type": "text",
+              "content": " in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t ^ { 6 } ( \\dot { 1 + t + \\cdots + t ^ { 5 } } ) ^ { 6 }"
+            },
+            {
+              "type": "text",
+              "content": " , which is the coefficient of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t ^ { 1 2 }"
+            },
+            {
+              "type": "text",
+              "content": " in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 1 + t + \\cdots + t ^ { 5 } ) ^ { 6 }"
+            },
+            {
+              "type": "text",
+              "content": " . Multiplying this out by hand is tedious, but it is vastly easier than listing out 3431 cases, and it can also be done easily on a computer without having to write a special program."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.44,
+            0.876,
+            0.458
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Better yet, we can use the fact that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 + t + \\cdots + t ^ { 5 }"
+            },
+            {
+              "type": "text",
+              "content": " is a geometric series to write"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.352,
+            0.467,
+            0.646,
+            0.509
+          ],
+          "image_path": "images/page_305_equation_9.jpg",
+          "content": "(1 + t + \\dots + t ^ {5}) ^ {6} = \\frac {(1 - t ^ {6}) ^ {6}}{(1 - t) ^ {6}}."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.517,
+            0.896,
+            0.608
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(Assume that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "| t |   <   1"
+            },
+            {
+              "type": "text",
+              "content": " , which we can do since, as with the MGF, we just need to know how the PGF behaves in an open interval containing 0.) The above equation is just algebra since we have the bookkeeping device t, but would have been hard to fathom if everything were still in sequence notation. By the binomial theorem, the numerator is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.36,
+            0.607,
+            0.638,
+            0.658
+          ],
+          "image_path": "images/page_305_equation_11.jpg",
+          "content": "(1 - t ^ {6}) ^ {6} = \\sum_ {j = 0} ^ {6} \\binom{6}{j} (- 1) ^ {j} t ^ {6 j}."
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.104,
+            0.663,
+            0.368,
+            0.68
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For the denominator, write"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.304,
+            0.69,
+            0.696,
+            0.739
+          ],
+          "image_path": "images/page_305_equation_13.jpg",
+          "content": "\\frac {1}{(1 - t) ^ {6}} = (1 + t + t ^ {2} + \\dots) ^ {6} = \\sum_ {k = 0} ^ {\\infty} a _ {k} t ^ {k}."
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.748,
+            0.897,
+            0.866
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Here "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { k }"
+            },
+            {
+              "type": "text",
+              "content": " is the number of ways to choose one term from each of the six "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 1 { + } t { + } t ^ { 2 } { + } \\dots )"
+            },
+            {
+              "type": "text",
+              "content": " factors, such that the degrees add up to k. For example, for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k = 2 0"
+            },
+            {
+              "type": "text",
+              "content": " one possibility is to choose the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t ^ { 3 } , 1 , t ^ { 2 } , \\dot { t } ^ { 1 0 } , 1 , t ^ { 5 }"
+            },
+            {
+              "type": "text",
+              "content": " terms, respectively, since these choices contribute one "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t ^ { 2 0 }"
+            },
+            {
+              "type": "text",
+              "content": " term when the product is expanded out. So "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { k }"
+            },
+            {
+              "type": "text",
+              "content": " is the number of solutions to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y _ { 1 } + y _ { 2 } + \\dots + y _ { 6 } = k"
+            },
+            {
+              "type": "text",
+              "content": " , with the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " nonnegative integers. We saw how to count this number of solutions in Chapter 1: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { k }"
+            },
+            {
+              "type": "text",
+              "content": " is the Bose-Einstein value "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\binom { 6 + k - 1 } { k } } = { \\binom { k + 5 } { 5 } }"
+            },
+            {
+              "type": "text",
+              "content": " . So"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.374,
+            0.875,
+            0.625,
+            0.923
+          ],
+          "image_path": "images/page_305_equation_15.jpg",
+          "content": "\\frac {1}{(1 - t) ^ {6}} = \\sum_ {k = 0} ^ {\\infty} \\binom{k + 5}{5} t ^ {k}."
+        }
+      ]
+    },
+    {
+      "page_idx": 306,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "290"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.068,
+            0.815,
+            0.086
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 < t < 1"
+            },
+            {
+              "type": "text",
+              "content": " , another way to see why this equation holds is to write it as"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.371,
+            0.103,
+            0.629,
+            0.15
+          ],
+          "image_path": "images/page_306_equation_3.jpg",
+          "content": "\\sum_ {k = 0} ^ {\\infty} \\binom{k + 5}{5} (1 - t) ^ {6} t ^ {k} = 1,"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.165,
+            0.896,
+            0.241
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "which we already knew to be true since the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { N B i n } ( 6 , 1   -   t )"
+            },
+            {
+              "type": "text",
+              "content": " PMF must sum to 1. (The identity for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 1 - t ) ^ { - 6 }"
+            },
+            {
+              "type": "text",
+              "content": " is an example of a generalization of the binomial theorem to allow for negative integer powers; this helps explain why the Negative Binomial is called that despite being neither negative nor Binomial!)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.105,
+            0.25,
+            0.792,
+            0.269
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Putting together the above results, we just need the coefficient of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t ^ { 1 2 }"
+            },
+            {
+              "type": "text",
+              "content": " in"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.313,
+            0.284,
+            0.692,
+            0.343
+          ],
+          "image_path": "images/page_306_equation_6.jpg",
+          "content": "\\left(\\sum_ {j = 0} ^ {2} \\binom {6} {j} (- 1) ^ {j} t ^ {6 j}\\right) \\left(\\sum_ {k = 0} ^ {1 2} \\binom {k + 5} {5} t ^ {k}\\right),"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.356,
+            0.896,
+            0.413
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where we summed only up to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j = 2"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k = 1 2"
+            },
+            {
+              "type": "text",
+              "content": " in the two factors since any further terms will not contribute to the coefficient of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t ^ { 1 2 }"
+            },
+            {
+              "type": "text",
+              "content": " . This lets us reduce the 3431 cases down to just three cases: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( j , k )"
+            },
+            {
+              "type": "text",
+              "content": " is (0, 12), (1, 6), or "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 2 , 0 )"
+            },
+            {
+              "type": "text",
+              "content": " . The coefficient of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t ^ { 1 2 }"
+            },
+            {
+              "type": "text",
+              "content": " is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.354,
+            0.427,
+            0.65,
+            0.469
+          ],
+          "image_path": "images/page_306_equation_8.jpg",
+          "content": "\\binom {1 7} {5} - 6 \\binom {1 1} {5} + \\binom {6} {2} = 3 4 3 1,"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.104,
+            0.482,
+            0.66,
+            0.5
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "since, for example, when "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j = 1"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k = 6"
+            },
+            {
+              "type": "text",
+              "content": " we get the term"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.331,
+            0.514,
+            0.668,
+            0.556
+          ],
+          "image_path": "images/page_306_equation_10.jpg",
+          "content": "- \\binom {6} {1} t ^ {6} \\cdot \\binom {6 + 5} {5} t ^ {6} = - 6 \\binom {1 1} {5} t ^ {1 2}."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.105,
+            0.569,
+            0.163,
+            0.587
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Thus,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.404,
+            0.586,
+            0.597,
+            0.622
+          ],
+          "image_path": "images/page_306_equation_12.jpg",
+          "content": "P (X = 1 8) = \\frac {3 4 3 1}{6 ^ {6}}."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.104,
+            0.638,
+            0.896,
+            0.695
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Since the PGF is just a handy bookkeeping device for the PMF, it fully determines the distribution (for any nonnegative integer-valued r.v.). The theorem below shows how to pluck the PMF values down from the “clothesline” of the PGF."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.104,
+            0.705,
+            0.896,
+            0.782
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 6.7.3. Let X and Y be nonnegative integer-valued r.v.s, with PGFs "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g _ { X }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g _ { Y }"
+            },
+            {
+              "type": "text",
+              "content": " respectively. Suppose that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g _ { X } ( t )   =   g _ { Y } ( t )"
+            },
+            {
+              "type": "text",
+              "content": " for all t in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( - a , a )"
+            },
+            {
+              "type": "text",
+              "content": " , where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0   <   a   <   1"
+            },
+            {
+              "type": "text",
+              "content": " . Then X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " have the same distribution, and their PMF can be recovered by taking derivatives of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g _ { X }"
+            },
+            {
+              "type": "text",
+              "content": " :"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.338,
+            0.795,
+            0.66,
+            0.838
+          ],
+          "image_path": "images/page_306_equation_15.jpg",
+          "content": "P (X = k) = P (Y = k) = \\frac {g _ {X} ^ {(k)} (0)}{k !}."
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.106,
+            0.856,
+            0.232,
+            0.874
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. Write"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.416,
+            0.874,
+            0.582,
+            0.923
+          ],
+          "image_path": "images/page_306_equation_17.jpg",
+          "content": "g _ {X} (t) = \\sum_ {k = 0} ^ {\\infty} p _ {k} t ^ {k}."
+        }
+      ]
+    },
+    {
+      "page_idx": 307,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.19,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Moments"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "291"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.894,
+            0.105
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g _ { X } ( 0 ) = p _ { 0 }"
+            },
+            {
+              "type": "text",
+              "content": " , so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X = 0 )"
+            },
+            {
+              "type": "text",
+              "content": " has been recovered—from knowing the function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g _ { X }"
+            },
+            {
+              "type": "text",
+              "content": " we can extract the value of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X = 0 )"
+            },
+            {
+              "type": "text",
+              "content": " . The derivative is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.398,
+            0.113,
+            0.6,
+            0.16
+          ],
+          "image_path": "images/page_307_equation_3.jpg",
+          "content": "g _ {X} ^ {\\prime} (t) = \\sum_ {k = 1} ^ {\\infty} k p _ {k} t ^ {k - 1},"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.165,
+            0.896,
+            0.222
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g _ { X } ^ { \\prime } ( 0 ) = p _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " (swapping the derivative and the infinite sum is justified by results in real analysis). Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X = 1 )"
+            },
+            {
+              "type": "text",
+              "content": " has been recovered. Continuing in this way, we can recover the entire PMF by taking derivatives. \u0004"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.231,
+            0.897,
+            0.307
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 6.7.4. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X   \\sim   \\mathrm { B i n } ( n , p )"
+            },
+            {
+              "type": "text",
+              "content": " . The PGF of a Bern(p) r.v. is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p t + q"
+            },
+            {
+              "type": "text",
+              "content": " (with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q = 1 - p )"
+            },
+            {
+              "type": "text",
+              "content": " , so the PGF of X is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( t ) = ( p t + q ) ^ { n }"
+            },
+            {
+              "type": "text",
+              "content": " . The above theorem says that any r.v. with this PGF must in fact be Binomial. Furthermore, we can recover the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { P M F }"
+            },
+            {
+              "type": "text",
+              "content": " by computing"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.237,
+            0.312,
+            0.76,
+            0.351
+          ],
+          "image_path": "images/page_307_equation_6.jpg",
+          "content": "g (0) = q ^ {n},   g ^ {\\prime} (0) = n p q ^ {n - 1},   g ^ {\\prime \\prime} (0) / 2! = \\binom {n} {2} p ^ {2} q ^ {n - 2}, \\dots"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.355,
+            0.869,
+            0.373
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can avoid having to take derivatives by using the binomial theorem to write"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.321,
+            0.379,
+            0.677,
+            0.426
+          ],
+          "image_path": "images/page_307_equation_8.jpg",
+          "content": "g (t) = (p t + q) ^ {n} = \\sum_ {k = 0} ^ {n} \\binom {n} {k} p ^ {k} q ^ {n - k} t ^ {k},"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.432,
+            0.637,
+            0.449
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "from which we can directly read off the Binomial PMF."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.103,
+            0.459,
+            0.894,
+            0.497
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "While we’re working with the Binomial PGF, let’s see how it can be used to get the moments of a Binomial. Letting "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { k } = P ( X = k )"
+            },
+            {
+              "type": "text",
+              "content": " , we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.324,
+            0.504,
+            0.673,
+            0.55
+          ],
+          "image_path": "images/page_307_equation_11.jpg",
+          "content": "g ^ {\\prime} (t) = n p (p t + q) ^ {n - 1} = \\sum_ {k = 1} ^ {n} k p _ {k} t ^ {k - 1},"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.104,
+            0.555,
+            0.13,
+            0.567
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "so"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.354,
+            0.565,
+            0.644,
+            0.612
+          ],
+          "image_path": "images/page_307_equation_13.jpg",
+          "content": "g ^ {\\prime} (1) = n p = \\sum_ {k = 1} ^ {n} k p _ {k} = E (X)."
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.104,
+            0.615,
+            0.377,
+            0.634
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Taking the derivative again,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.25,
+            0.639,
+            0.748,
+            0.687
+          ],
+          "image_path": "images/page_307_equation_15.jpg",
+          "content": "g ^ {\\prime \\prime} (t) = n (n - 1) p ^ {2} (p t + q) ^ {n - 2} = \\sum_ {k = 2} ^ {n} k (k - 1) p _ {k} t ^ {k - 2},"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.104,
+            0.691,
+            0.13,
+            0.703
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "so"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.326,
+            0.705,
+            0.672,
+            0.726
+          ],
+          "image_path": "images/page_307_equation_17.jpg",
+          "content": "E (X (X - 1)) = g ^ {\\prime \\prime} (1) = n (n - 1) p ^ {2}."
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.103,
+            0.73,
+            0.896,
+            0.768
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Rearranging these results gives another proof that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { V a r } ( X )   =   n p q"
+            },
+            {
+              "type": "text",
+              "content": " . Continuing in this way, we have computed what are called the factorial moments of the Binomial:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 19,
+          "bbox": [
+            0.3,
+            0.773,
+            0.698,
+            0.813
+          ],
+          "image_path": "images/page_307_equation_19.jpg",
+          "content": "E (X (X - 1) \\dots (X - k + 1)) = k! \\binom {n} {k} p ^ {k}."
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.102,
+            0.819,
+            0.897,
+            0.916
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Dividing by k! on both sides, this implies "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E { \\binom { X } { k } }   =   { \\binom { n } { k } } p ^ { k }"
+            },
+            {
+              "type": "text",
+              "content": " , which can also be seen with a story proof: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\binom { X } { k } }"
+            },
+            {
+              "type": "text",
+              "content": " is the number of ways to choose k out of the X successful Bernoulli trials, which is the number of ways to choose k out of the n original trials such that all k are successes. Creating an indicator r.v. for each of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left( \\begin{matrix} { n } \\\\ { k } \\\\ \\end{matrix} \\right)"
+            },
+            {
+              "type": "text",
+              "content": " subsets of size k and using linearity, the result follows. \u0003"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 308,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "292"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.109,
+            0.245,
+            0.129
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.8 Recap"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.147,
+            0.896,
+            0.259
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A useful way to study a distribution is via its moments. The first 4 moments are widely used as a basis for quantitatively describing what the distribution looks like, though many other descriptions are also possible. In particular, the first moment is the mean, the second central moment is the variance, the third standardized moment measures skew (asymmetry), and the fourth standardized moment minus 3 is a measure of how heavy the tails are."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.269,
+            0.897,
+            0.343
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Moments are useful for far more than studying the location and shape of a distribution, especially when the moment generating function (MGF) exists (which is stronger than saying that all the moments exist). The MGF of an r.v. X is the function M defined by"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.422,
+            0.343,
+            0.579,
+            0.364
+          ],
+          "image_path": "images/page_308_equation_5.jpg",
+          "content": "M (t) = E (e ^ {t X}),"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.372,
+            0.894,
+            0.409
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "if this is finite for all t in some open interval containing 0. If the MGF exists, then"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.182,
+            0.423,
+            0.816,
+            0.445
+          ],
+          "image_path": "images/page_308_equation_7.jpg",
+          "content": "M (0) = 1, M ^ {\\prime} (0) = E (X), M ^ {\\prime \\prime} (0) = E (X ^ {2}), M ^ {\\prime \\prime \\prime} (0) = E (X ^ {3}), \\dots"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.469,
+            0.896,
+            0.525
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "MGFs are useful for three main reasons: for computing moments (as an alternative to LOTUS), for studying sums of independent r.v.s, and since they fully determine the distribution and thus serve as an additional blueprint for a distribution."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.534,
+            0.897,
+            0.666
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We also introduced the Log-Normal and Weibull distributions in this chapter, both of which are widely used in practice. The Log-Normal and Weibull are connected to the Normal and Exponential, respectively, via simple transformations. The log of a Log-Normal r.v. is Normal, and raising a Wei(λ, γ) r.v. to the power γ yields an Expo(λ) r.v. Often the best way to study a Log-Normal is to transform it back to Normal, and likewise for Weibull and Exponential. Chapter 8 goes into much more detail about how to work with transformations."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.676,
+            0.896,
+            0.751
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Figure 6.8 augments our map of the connections between fundamental objects in probability. If the MGF of X exists, then the sequence "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(X),E(X^{2}),E(X^{3})"
+            },
+            {
+              "type": "text",
+              "content": " of moments provides enough information (at least in principle) to determine the distribution of X."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 309,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.191,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Moments"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "293"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.107,
+            0.075,
+            0.896,
+            0.413
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.107,
+                0.075,
+                0.896,
+                0.413
+              ],
+              "image_path": "images/page_309_image_2.jpg",
+              "content": "```mermaid\ngraph LR\n  A[\"CDF F\\nPMF (discrete)\\nPDF (continuous)\\nstory name, parameters\\nMGF\"] -->|generate| B[\"X\"]\n  B --> C[\"X ≤ x\\nX = x\"]\n  C --> D[\"P(X ≤ x) = F(x)\\nP(X = x)\"]\n  B --> E[\"E(X), Var(X), SD(X)\"]\n  B --> F[\"X, X², X³, ... g(X)\"]\n  F -->|LOTUS| G[\"E(X), E(X²), E(X³), ... E(g(X))\"]\n  G -->|find the MGF| A\n```"
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.436,
+            0.237,
+            0.451
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 6.8"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.453,
+            0.897,
+            0.511
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For an r.v. X, we can study its moments "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X ) , E ( X ^ { 2 } ) , \\ldots ."
+            },
+            {
+              "type": "text",
+              "content": " These can be computed using LOTUS or by the MGF (if it exists). If the MGF exists, it determines the distribution, taking us full circle and adding to our list of blueprints."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.579,
+            0.192,
+            0.596
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.9 R"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.104,
+            0.616,
+            0.216,
+            0.633
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Functions"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.653,
+            0.897,
+            0.709
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The MGF of an r.v. is a function. As an example of defining and working with functions in R, let’s use the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " MGF, which is given by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M ( t )   =   e ^ { t ^ { 2 } / \\widetilde { 2 } }"
+            },
+            {
+              "type": "text",
+              "content": " . The code"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.72,
+            0.441,
+            0.739
+          ],
+          "image_path": "images/page_309_equation_8.jpg",
+          "content": "\\mathrm{M} <   - \\text {function(t)} \\{\\exp (\\mathrm{t} ^ {\\wedge} 2 / 2) \\}"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.101,
+            0.749,
+            0.896,
+            0.825
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "defines M to be this function. The function(t) says that we’re defining a function of one variable t (called the argument of the function). Then, for example, M(0) evaluates the function at 0, M(1:10) evaluates the function at 1, 2, . . . , 10, and curve(M,from=-3,to=3) plots the graph of M from −3 to 3. Writing"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.103,
+            0.834,
+            0.441,
+            0.853
+          ],
+          "image_path": "images/page_309_equation_10.jpg",
+          "content": "\\mathrm{M} <   - \\text {function} (\\mathrm{x}) \\{\\exp (\\mathrm{x} ^ {\\wedge} 2 / 2) \\}"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.863,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "would define the same function M, except that now the argument is named x. Giving the arguments names is helpful for functions of more than one variable, since R then saves us from having to remember the order in which to write the"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 310,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "294"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.067,
+            0.896,
+            0.125
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "arguments, and allows us to assign default values. For example, the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { N } ( \\mu , \\sigma ^ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " MGF is given by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( t ) = \\exp ( \\mu t + \\sigma ^ { 2 } t ^ { 2 } / 2 )"
+            },
+            {
+              "type": "text",
+              "content": " , which depends on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t , \\mu ,"
+            },
+            {
+              "type": "text",
+              "content": " and σ. We can define this in R by"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.105,
+            0.135,
+            0.738,
+            0.155
+          ],
+          "image_path": "images/page_310_equation_3.jpg",
+          "content": "\\mathrm{g} <   - \\text {function} (\\mathrm{t}, \\text {mean} = 0, \\mathrm{sd} = 1) \\{\\exp (\\text {mean} * \\mathrm{t} + \\mathrm{sd} ^ {\\wedge} 2 * \\mathrm{t} ^ {\\wedge} 2 / 2) \\}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.105,
+            0.163,
+            0.896,
+            0.258
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "What is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{g}(1,2,3)?"
+            },
+            {
+              "type": "text",
+              "content": " It’s the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { N } ( 2 , 3 ^ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " MGF evaluated at 1, but it may be hard to remember which argument is which, especially when working with many functions with many arguments over the course of many months. So we can also write "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{g}(\\mathrm{t}=1, \\mathrm{mean}=2, \\mathrm{sd}=3)"
+            },
+            {
+              "type": "text",
+              "content": " or g(mean=2,sd=3,t=1) or any of the other 4 permutations to mean the same thing."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.105,
+            0.267,
+            0.896,
+            0.362
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Also, when defining g we specified default values of 0 for the mean and 1 for the standard deviation, so if we want the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { N } ( 0 , 5 ^ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " MGF evaluated at 3, we can use "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(t=3,\\mathbf{s}\\mathbf{d}=5)"
+            },
+            {
+              "type": "text",
+              "content": " as shorthand. It would be bad here to write "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathtt { g } ( 3 , 5 )"
+            },
+            {
+              "type": "text",
+              "content": " , since that is ambiguous about which argument is omitted; in fact, R interprets this as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(t=3,  mean =5)"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.106,
+            0.396,
+            0.212,
+            0.414
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Moments"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.105,
+            0.433,
+            0.896,
+            0.49
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "LOTUS makes it easy to write down any moment of a continuous r.v. as an integral, and then R can help us do the integral numerically, using the integrate command. For example, let’s approximate the 6th moment of a "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " r.v. The code"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.105,
+            0.5,
+            0.553,
+            0.538
+          ],
+          "image_path": "images/page_310_equation_8.jpg",
+          "content": "\\begin{array}{l} \\mathrm{g} <   - \\text {function(x)} \\mathrm{x} ^ {\\wedge} 6 * \\text {dnorm(x)} \\\\ \\text {integrate(g, lower = -Inf, upper = Inf)} \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.105,
+            0.546,
+            0.896,
+            0.623
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "asks R to compute "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle \\int _ { - \\infty } ^ { \\infty } g ( x ) d x"
+            },
+            {
+              "type": "text",
+              "content": " , where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x ) = x ^ { 6 } \\varphi ( x )"
+            },
+            {
+              "type": "text",
+              "content": " with ϕ the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " PDF. When we ran this, R reported 15 (the correct answer, as we know from this chapter!) and that the absolute error was less than "
+            },
+            {
+              "type": "equation_inline",
+              "content": "7 . 9 \\times 1 0 ^ { - 5 }"
+            },
+            {
+              "type": "text",
+              "content": " . Similarly, to check that the 2nd moment (and variance) of a Unif(−1, 1) r.v. is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 3"
+            },
+            {
+              "type": "text",
+              "content": " , we can use"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.105,
+            0.634,
+            0.506,
+            0.671
+          ],
+          "image_path": "images/page_310_equation_10.jpg",
+          "content": "\\begin{array}{l} \\text {h < - function(x) x^2 * dunif(x, - 1, 1)} \\\\ \\text {integrate(h, lower = -1, upper = 1)} \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.105,
+            0.681,
+            0.896,
+            0.775
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "h 6.9.1. Numerical integration runs into difficulties for some functions; as usual, checking answers in multiple ways is a good idea. Using upper = Inf is preferred to using a large number as the upper limit when integrating up to ∞ (and likewise for a lower limit of −∞). For example, on many systems integrate(dnorm,0,10^6) reports 0 while integrate(dnorm,0,Inf) reports the correct answer, 0.5."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.105,
+            0.785,
+            0.896,
+            0.823
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For moments of a discrete r.v., we can use LOTUS and the sum command. For example, to find the 2nd moment of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathrm { P o i s ( 7 ) }"
+            },
+            {
+              "type": "text",
+              "content": " , we can use"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.105,
+            0.833,
+            0.46,
+            0.871
+          ],
+          "image_path": "images/page_310_equation_13.jpg",
+          "content": "\\begin{array}{l} \\text {g < - function(k) k^2*dpois(k,7)} \\\\ \\text {sum(g(0:100))} \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.105,
+            0.881,
+            0.896,
+            0.918
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Here we summed up to 100 since it’s clear after getting a sense of the terms that the total contribution of all the terms after "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k \\; = \\; 1 0 0"
+            },
+            {
+              "type": "text",
+              "content": " is negligible (choosing an"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 311,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.108,
+            0.039,
+            0.19,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Moments"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "295"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.104,
+            0.069,
+            0.895,
+            0.126
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "upper limit in this way is in contrast to how to use the integrate command in the continuous case). The result is extremely close to 56, which is comforting since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(X^{2}) =  Var (X) + (EX)^{2} = 7 + 49 = 56."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.135,
+            0.895,
+            0.193
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A sample moment can be found in one line in R. If x is a vector of data, then mean(x) gives its sample mean and, more generally, mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( x ^ { n } n )"
+            },
+            {
+              "type": "text",
+              "content": " gives the nth sample mean for any positive integer n. For example,"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.203,
+            0.278,
+            0.239
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 4,
+              "bbox": [
+                0.103,
+                0.203,
+                0.278,
+                0.239
+              ],
+              "content": "x <- rnorm(100)\nmean(x^6)"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "r"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.25,
+            0.895,
+            0.306
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "gives the 6th sample moment of 100 i.i.d. N (0, 1) r.v.s. How close is it to the true 6th moment? How close are other sample moments to the corresponding true moments?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.104,
+            0.317,
+            0.895,
+            0.43
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The sample variance can also be found in one line in R. If x is a vector of data, then var(x) gives its sample variance. This returns NA (not available) if x has length 1, since the n − 1 in the denominator is 0 in this case. It makes sense not to return a numerical value in this case, not only because of the definition but also because it would be insane to try to estimate the variability of a population if we only have one observation!"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.441,
+            0.895,
+            0.516
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For a simple demonstration of using the sample mean and sample variance to estimate the true mean and true variance of a distribution, we generate 1000 times from a N (0, 1) distribution and store the values in z. We then compute the sample mean and sample variance with mean and var."
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.527,
+            0.29,
+            0.582
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 8,
+              "bbox": [
+                0.103,
+                0.527,
+                0.29,
+                0.582
+              ],
+              "content": "z <- rnorm(1000)\nmean(z)\nvar(z)"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "r"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.104,
+            0.593,
+            0.895,
+            0.651
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We find that mean(z) is close to 0 and var(z) is close to 1. You can try this out for a "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { N } ( \\mu , \\sigma ^ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " distribution (or other distribution) of your choosing; just remember that rnorm takes σ and not "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " as an input!"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.104,
+            0.66,
+            0.895,
+            0.698
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The sample standard deviation of x can be found using sd(x). This gives the same result as sqrt(var(x))."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.104,
+            0.708,
+            0.895,
+            0.746
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "R does not come with built-in functions for sample skewness or sample kurtosis, but we can define our own functions as follows."
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 12,
+          "bbox": [
+            0.103,
+            0.757,
+            0.567,
+            0.917
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 12,
+              "bbox": [
+                0.103,
+                0.757,
+                0.567,
+                0.917
+              ],
+              "content": "skew <- function(x) {\n    centrmoment <- mean((x-mean(x))^3)\n    centrmoment/(sd(x)^3)\n}\n\nkurt <- function(x) {\n    centrmoment <- mean((x-mean(x))^4)\n    centrmoment/(sd(x)^4) - 3\n}"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "r"
+        }
+      ]
+    },
+    {
+      "page_idx": 312,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "296"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.068,
+            0.329,
+            0.086
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Medians and modes"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.106,
+            0.896,
+            0.182
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To find the median of a continuous r.v. with CDF F, we need to solve the equation "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( x ) = 1 / 2"
+            },
+            {
+              "type": "text",
+              "content": " for x, which is equivalent to finding the root (zero) of the function g given by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x ) = F ( x ) - 1 / 2"
+            },
+            {
+              "type": "text",
+              "content": " . This can be done using uniroot in R. For example, let’s find the median of the Expo(1) distribution. The code"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.192,
+            0.454,
+            0.23
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 4,
+              "bbox": [
+                0.103,
+                0.192,
+                0.454,
+                0.23
+              ],
+              "content": "g <- function(x) pexp(x) - 1/2\nuniroot(g,lower=0,upper=1)"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "r"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.24,
+            0.896,
+            0.296
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "asks R to find a root of the desired function between 0 and 1. This returns an answer very close to the true answer of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\log ( 2 ) \\approx 0 . 6 9 3"
+            },
+            {
+              "type": "text",
+              "content": " . Of course, in this case we can solve "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 - e ^ { - x } = 1 / 2"
+            },
+            {
+              "type": "text",
+              "content": " directly without having to use numerical methods."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.104,
+            0.307,
+            0.896,
+            0.345
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "h 6.9.2. The uniroot command is useful but it only attempts to find one root (as the name suggests), and there is no guarantee that it will find a root."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.355,
+            0.896,
+            0.413
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "An easier way to find the median of the Expo(1) in R is to use qexp(1/2). The function qexp is the quantile function of the Expo(1) distribution, which means that qexp(p) is the value of x such that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X \\leq x ) = p"
+            },
+            {
+              "type": "text",
+              "content": " for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathrm { E x p o ( 1 ) }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.104,
+            0.422,
+            0.896,
+            0.516
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For finding the mode of a continuous distribution, we can use the optimize function in R. For example, let’s find the mode of the Gamma(6, 1) distribution, which is an important distribution that we will introduce in the next chapter. Its PDF is proportional to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x ^ { 5 } e ^ { - x }"
+            },
+            {
+              "type": "text",
+              "content": " . Using calculus, we can find that the mode is at x = 5. Using R, we can find that the mode is very close to x = 5 as follows."
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.528,
+            0.575,
+            0.564
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 9,
+              "bbox": [
+                0.103,
+                0.528,
+                0.575,
+                0.564
+              ],
+              "content": "h <- function(x) x^5*exp(-x)\noptimize(h,lower=0,upper=20,maximum=TRUE)"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "r"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.104,
+            0.575,
+            0.894,
+            0.612
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If we had wanted to minimize instead of maximize, we could have put maximum=FALSE."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.104,
+            0.623,
+            0.896,
+            0.699
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Next, let’s do a discrete example of median and mode. An interesting fact about the Bin(n, p) distribution is that if the mean np is an integer, then the median and mode are also np (even if the distribution is very skewed). To check this fact about the median for the Bin(50, 0.2) distribution, we can use the following code."
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 12,
+          "bbox": [
+            0.103,
+            0.71,
+            0.461,
+            0.747
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 12,
+              "bbox": [
+                0.103,
+                0.71,
+                0.461,
+                0.747
+              ],
+              "content": "n <- 50; p <- 0.2\nwhich.max(pbinom(0:n,n,p)>=0.5)"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.104,
+            0.757,
+            0.896,
+            0.889
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The which.max function finds the location of the maximum of a vector, giving the index of the first occurrence of a maximum. Since TRUE is encoded as 1 and FALSE is encoded as 0, the first maximum in pbinom "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 : \\mathrm { n } , \\mathrm { n } , \\mathrm { p } ) > = 0 . 5"
+            },
+            {
+              "type": "text",
+              "content": " is at the first value for which the CDF is at least 0.5. The output of the above code is 11, but we must be careful to avoid an off-by-one error: the index 11 corresponds to the median being 10, since we started evaluating the CDF at 0. Similarly, which.max(dbinom "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 : \\mathrm { n } , \\mathrm { n } , \\mathrm { p } )"
+            },
+            {
+              "type": "text",
+              "content": " returns 11, showing that the mode is at 10."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.104,
+            0.9,
+            0.894,
+            0.918
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The sample median of a vector x of data can be found using median(x). But"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 313,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.109,
+            0.039,
+            0.189,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Moments"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "297"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.106,
+            0.068,
+            0.894,
+            0.125
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "mode(x) does not give the sample mode of x (rather, it gives information about what type of object x is). To find the sample mode (or sample modes, in case there are ties), we can use the following function."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.105,
+            0.139,
+            0.449,
+            0.231
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.105,
+                0.139,
+                0.449,
+                0.231
+              ],
+              "content": "datamode <- function(x) {\n    t <- table(x)\n    m <- max(t)\n    as.numeric(names(t[t==m]))\n}"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "r"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.108,
+            0.271,
+            0.525,
+            0.291
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Log-Normal and Weibull distributions"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.106,
+            0.313,
+            0.894,
+            0.407
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Analogous to the functions dnorm, pnorm, and rnorm for the Normal distribution, the functions dlnorm, plnorm, and rlnorm give the Log-Normal PDF, the Log-Normal CDF, and random generation of Log-Normal r.v.s, respectively. The parameters used for these functions for the Log-Normal are the mean and standard deviation of the underlying Normal."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.106,
+            0.422,
+            0.894,
+            0.498
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For example, dlnorm(x,1,2) gives the PDF of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { L N } ( 1 , 4 )"
+            },
+            {
+              "type": "text",
+              "content": " distribution (not LN (1, 2), nor a Log-Normal whose mean is 1). Because of the relationship between Normal and Log-Normal, rlnorm(n,mu,sigma) is equivalent to exp(rnorm(n,mu,sigma))."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.106,
+            0.512,
+            0.894,
+            0.587
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For the Weibull, we can obtain the PDF, the CDF, and random generation with the functions dweibull, pweibull, and rweibull, respectively. The parametrization in R is different from the one we are using, but it is easy to convert between them: for the Wei(λ, γ) distribution, let a = γ and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b = \\lambda ^ { - 1 / \\gamma }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.106,
+            0.602,
+            0.894,
+            0.678
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Then dweibull(x,a,b) gives the Wei(λ, γ) PDF, pweibull(x,a,b) gives the CDF, and rweibull(n,a,b) generates n i.i.d. draws from the distribution. Because of the relationship between Exponential and Weibull, another way to generate Wei(λ, γ) r.v.s is to generate Expo(λ) r.v.s and then raise each of them to the 1/γ power."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.108,
+            0.716,
+            0.278,
+            0.733
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Dice simulation"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.106,
+            0.757,
+            0.894,
+            0.833
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In the starred Section 6.7, we showed that in rolling 6 fair dice, the probability of a total of 18 is 3431 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "/ 6 ^ { 6 } \\approx 0 . 0 7 3 5 4"
+            },
+            {
+              "type": "text",
+              "content": " . But the proof was complicated. If we only need an approximate answer, simulation is a much easier approach. And we already know how to do it! Here is the code for a million repetitions:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 11,
+          "bbox": [
+            0.106,
+            0.848,
+            0.677,
+            0.884
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 11,
+              "bbox": [
+                0.106,
+                0.848,
+                0.677,
+                0.884
+              ],
+              "content": "r <- replicate(10^6,sum(sample(6,6,replace=TRUE)))\nsum(r==18)/10^6"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "r"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.108,
+            0.9,
+            0.767,
+            0.918
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In our simulation this yielded 0.07346, which is very close to 0.07354."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 314,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "298"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.104,
+            0.11,
+            0.292,
+            0.128
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.10 Exercises"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.148,
+            0.819,
+            0.166
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Exercises marked with s have detailed solutions at "
+            },
+            {
+              "type": "hyperlink",
+              "url": "http://stat110.net",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "http://stat110.net"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.168,
+            0.194,
+            0.596,
+            0.212
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Means, medians, modes, and moments"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "list",
+          "index": 5,
+          "bbox": [
+            0.133,
+            0.222,
+            0.871,
+            0.322
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.133,
+                0.222,
+                0.596,
+                0.239
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. Let "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "U \\sim \\operatorname { U n i f } ( a , b )"
+                },
+                {
+                  "type": "text",
+                  "content": " . Find the median and mode of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "U"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.133,
+                0.245,
+                0.594,
+                0.261
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. Let "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X \\sim \\operatorname{Expo}(\\lambda)"
+                },
+                {
+                  "type": "text",
+                  "content": " . Find the median and mode of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X"
+                },
+                {
+                  "type": "text",
+                  "content": " ."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.132,
+                0.267,
+                0.871,
+                0.299
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "3. Let X have the Pareto distribution with parameter "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "a > 0 ;"
+                },
+                {
+                  "type": "text",
+                  "content": " this means that X has PDF "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "f ( x ) = a / x ^ { a + 1 }"
+                },
+                {
+                  "type": "text",
+                  "content": " for "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "x \\geq 1"
+                },
+                {
+                  "type": "text",
+                  "content": " (and 0 otherwise). Find the median and mode of X."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.133,
+                0.305,
+                0.324,
+                0.322
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "4. Let "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X \\sim \\operatorname { B i n } ( n , p )"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "list",
+          "index": 10,
+          "bbox": [
+            0.167,
+            0.332,
+            0.871,
+            0.405
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 11,
+              "bbox": [
+                0.167,
+                0.332,
+                0.871,
+                0.362
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) For "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "n = 5 ,   p = 1 / 3"
+                },
+                {
+                  "type": "text",
+                  "content": " , find all medians and all modes of X. How do they compare to the mean?"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.167,
+                0.374,
+                0.871,
+                0.405
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) For "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "n = 6 ,   p = 1 / 3"
+                },
+                {
+                  "type": "text",
+                  "content": " , find all medians and all modes of X. How do they compare to the mean?"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.132,
+            0.412,
+            0.871,
+            0.444
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5. Let X be Discrete Uniform on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 , 2 , \\ldots , n"
+            },
+            {
+              "type": "text",
+              "content": " . Find all medians and all modes of X (your answer can depend on whether n is even or odd)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.133,
+            0.45,
+            0.872,
+            0.558
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6. Suppose that we have data giving the amount of rainfall in a city each day in a certain year. We want useful, informative summaries of how rainy the city was that year. On the majority of days in that year, it did not rain at all in the city. Discuss and compare the following six summaries: the mean, median, and mode of the rainfall on a randomly chosen day from that year, and the mean, median, and mode of the rainfall on a randomly chosen rainy day from that year (where by “rainy day” we mean that it did rain that day in the city)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.133,
+            0.564,
+            0.872,
+            0.626
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "7. Let a and b be positive constants. The Beta distribution with parameters a and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b ,"
+            },
+            {
+              "type": "text",
+              "content": " which we introduce in detail in Chapter 8, has PDF proportional to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x^{a - 1}(1 - x)^{b - 1}"
+            },
+            {
+              "type": "text",
+              "content": " for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 < x < 1"
+            },
+            {
+              "type": "text",
+              "content": " (and the PDF is 0 outside of this range). Show that for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a > 1 , b > 1"
+            },
+            {
+              "type": "text",
+              "content": " , the mode of the distribution is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(a - 1) / (a + b - 2)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.167,
+            0.632,
+            0.871,
+            0.663
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Hint: Take the log of the PDF first (note that this does not affect where the maximum is achieved)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.132,
+            0.67,
+            0.871,
+            0.702
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "8. Find the median of the Beta distribution with parameters "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a   =   3"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b = 1"
+            },
+            {
+              "type": "text",
+              "content": " (see the previous problem for information about the Beta distribution)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.132,
+            0.707,
+            0.871,
+            0.755
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9. Let Y be Log-Normal with parameters "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " . So "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = e ^ { X }"
+            },
+            {
+              "type": "text",
+              "content": " with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathcal { N } ( \\mu , \\sigma ^ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " . Three students are discussing the median and the mode of Y . Evaluate and explain whether or not each of the following arguments is correct."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 19,
+          "bbox": [
+            0.167,
+            0.765,
+            0.871,
+            0.911
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 20,
+              "bbox": [
+                0.167,
+                0.765,
+                0.871,
+                0.813
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) Student A: The median of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Y"
+                },
+                {
+                  "type": "text",
+                  "content": " is "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "e ^ { \\mu }"
+                },
+                {
+                  "type": "text",
+                  "content": " because the median of X is "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mu"
+                },
+                {
+                  "type": "text",
+                  "content": " and the exponential function is continuous and strictly increasing, so the event "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Y \\leq e ^ { \\mu }"
+                },
+                {
+                  "type": "text",
+                  "content": " is the same as the event "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X \\leq \\mu"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 21,
+              "bbox": [
+                0.167,
+                0.822,
+                0.871,
+                0.854
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) Student B: The mode of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Y"
+                },
+                {
+                  "type": "text",
+                  "content": " is "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "e ^ { \\mu }"
+                },
+                {
+                  "type": "text",
+                  "content": " because the mode of X is "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mu ,"
+                },
+                {
+                  "type": "text",
+                  "content": " which corresponds to "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "e ^ { \\mu }"
+                },
+                {
+                  "type": "text",
+                  "content": " for "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Y"
+                },
+                {
+                  "type": "text",
+                  "content": " since "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Y = e ^ { X }"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 22,
+              "bbox": [
+                0.167,
+                0.865,
+                0.871,
+                0.911
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(c) Student C: The mode of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Y"
+                },
+                {
+                  "type": "text",
+                  "content": " is "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mu"
+                },
+                {
+                  "type": "text",
+                  "content": " because the mode of X is "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mu"
+                },
+                {
+                  "type": "text",
+                  "content": " and the exponential function is continuous and strictly increasing, so maximizing the PDF of X is equivalent to maximizing the PDF of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Y = { \\dot { e } } ^ { X }"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        }
+      ]
+    },
+    {
+      "page_idx": 315,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.191,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Moments"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "299"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.125,
+            0.07,
+            0.871,
+            0.132
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "10. A distribution is called symmetric unimodal if it is symmetric (about some point) and has a unique mode. For example, any Normal distribution is symmetric unimodal. Let X have a continuous symmetric unimodal distribution for which the mean exists. Show that the mean, median, and mode of X are all equal."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.124,
+            0.138,
+            0.752,
+            0.155
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "11. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , \\ldots , X _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " be i.i.d. r.v.s with mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu ,"
+            },
+            {
+              "type": "text",
+              "content": " variance "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , and skewness "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\gamma ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.168,
+            0.165,
+            0.443,
+            0.181
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) Standardize the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " by letting"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.461,
+            0.189,
+            0.579,
+            0.219
+          ],
+          "image_path": "images/page_315_equation_5.jpg",
+          "content": "Z _ {j} = \\frac {X _ {j} - \\mu}{\\sigma}."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.167,
+            0.228,
+            0.871,
+            0.26
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\bar{X}_{n}"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\bar{Z}_{n}"
+            },
+            {
+              "type": "text",
+              "content": " be the sample means of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { j } ,"
+            },
+            {
+              "type": "text",
+              "content": " respectively. Show that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " has the same skewness as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j } ,"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { Z } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " has the same skewness as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\bar{X}_{n}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.167,
+            0.269,
+            0.868,
+            0.301
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) Show that the skewness of the sample mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\gamma / { \\sqrt { n } } ."
+            },
+            {
+              "type": "text",
+              "content": " You can use the fact, shown in Chapter 7, that if X and Y are independent then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X Y ) = E ( X ) E ( Y )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.167,
+            0.307,
+            0.871,
+            0.369
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Hint: By (a), we can assume "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu = 0"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ^ { 2 } = 1"
+            },
+            {
+              "type": "text",
+              "content": " without loss of generality; if the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " are not standardized initially, then we can standardize them. If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( X _ { 1 } + X _ { 2 } + \\cdots + X _ { n } ) ^ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " is expanded out, there are 3 types of terms: terms such as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } ^ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " , terms such as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "3 X _ { 1 } ^ { 2 } X _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , and terms such as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "6 X _ { 1 } X _ { 2 } X _ { 3 }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.168,
+            0.379,
+            0.829,
+            0.396
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(c) What does the result of (b) say about the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " when n is large?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.125,
+            0.401,
+            0.871,
+            0.448
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "12. Let c be the speed of light in a vacuum. Suppose that c is unknown, and scientists wish to estimate it. But even more so than that, they wish to estimate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , for use in the famous equation "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E = m c ^ { 2 }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.167,
+            0.458,
+            0.871,
+            0.52
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Through careful experiments, they obtain i.i.d. measurements "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , \\ldots , X _ { n } { \\sim } \\mathcal { N } ( c , \\sigma ^ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " Using these data, there are various possible ways to estimate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " . Two natural ways are: (1) estimate c using the average of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j } { } ^ { \\prime } \\mathrm { s }"
+            },
+            {
+              "type": "text",
+              "content": " and then square the estimated "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c _ { \\gamma }"
+            },
+            {
+              "type": "text",
+              "content": " and (2) average the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j } ^ { 2 } { } ^ { , } \\mathbf { s }"
+            },
+            {
+              "type": "text",
+              "content": " . So let"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.453,
+            0.52,
+            0.586,
+            0.56
+          ],
+          "image_path": "images/page_315_equation_12.jpg",
+          "content": "\\bar {X} _ {n} = \\frac {1}{n} \\sum_ {j = 1} ^ {n} X _ {j},"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.168,
+            0.564,
+            0.432,
+            0.578
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "and consider the two estimators"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.399,
+            0.586,
+            0.639,
+            0.626
+          ],
+          "image_path": "images/page_315_equation_14.jpg",
+          "content": "T _ {1} = \\bar {X} _ {n} ^ {2} \\text {and} T _ {2} = \\frac {1}{n} \\sum_ {j = 1} ^ {n} X _ {j} ^ {2}."
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.167,
+            0.635,
+            0.871,
+            0.664
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " is the square of the first sample moment and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " is the second sample moment."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.169,
+            0.676,
+            0.343,
+            0.692
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) Find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( T _ { 1 } < T _ { 2 } )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.167,
+            0.697,
+            0.871,
+            0.73
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Hint: Start by comparing "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( \\textstyle \\frac { 1 } { n } \\sum _ { j = 1 } ^ { n } x _ { j } ) ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\textstyle { \\frac { 1 } { n } } \\sum _ { j = 1 } ^ { n } x _ { j } ^ { 2 } }"
+            },
+            {
+              "type": "text",
+              "content": " when "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x _ { 1 } , \\ldots , x _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " are numbers, by considering a discrete r.v. whose possible values are "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x _ { 1 } , \\ldots , x _ { n }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.167,
+            0.74,
+            0.871,
+            0.771
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) When an r.v. T is used to estimate an unknown parameter "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta ,"
+            },
+            {
+              "type": "text",
+              "content": " the bias of the estimator "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T"
+            },
+            {
+              "type": "text",
+              "content": " is defined to be "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( T ) - \\theta"
+            },
+            {
+              "type": "text",
+              "content": " . Find the bias of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " and the bias of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { 2 }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.167,
+            0.777,
+            0.871,
+            0.809
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Hint: First find the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\bar{X}_{n}"
+            },
+            {
+              "type": "text",
+              "content": " . In general, for finding "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y ^ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " for an r.v. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " , it is often useful to write it as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(Y^{2}) = \\mathrm{Var}(Y) + (EY)^{2}"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 20,
+          "bbox": [
+            0.168,
+            0.836,
+            0.498,
+            0.855
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Moment generating functions"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 21,
+          "bbox": [
+            0.125,
+            0.864,
+            0.871,
+            0.911
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "13. s A fair die is rolled twice, with outcomes X for the first roll and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " for the second roll. Find the moment generating function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M _ { X + Y } ( t )"
+            },
+            {
+              "type": "text",
+              "content": " of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X + Y"
+            },
+            {
+              "type": "text",
+              "content": " (your answer should be a function of t and can contain unsimplified finite sums)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 316,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "300"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.125,
+            0.07,
+            0.871,
+            0.1
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "14. s Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U _ { 1 } , U _ { 2 } , \\ldots , U _ { 6 0 }"
+            },
+            {
+              "type": "text",
+              "content": " be i.i.d. Unif(0, 1) and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = U _ { 1 } + U _ { 2 } + \\cdots + U _ { 6 0 }"
+            },
+            {
+              "type": "text",
+              "content": " . Find the MGF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.125,
+            0.105,
+            0.871,
+            0.137
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "15. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W = X ^ { 2 }   +   Y ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\overline { { X } } , \\overline { { Y } } \\; \\mathrm { i . i . d . } \\; \\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " . The MGF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " turns out to be "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 1   -   2 t ) ^ { - 1 / 2 }"
+            },
+            {
+              "type": "text",
+              "content": " for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t < 1 / 2"
+            },
+            {
+              "type": "text",
+              "content": " (you can assume this)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.168,
+            0.145,
+            0.374,
+            0.16
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) Find the MGF of W."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.166,
+            0.169,
+            0.871,
+            0.215
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) What famous distribution that we have studied so far does W follow (be sure to state the parameters in addition to the name)? In fact, the distribution of W is also a special case of two more famous distributions that we will study in later chapters!"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.125,
+            0.22,
+            0.871,
+            0.251
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "16. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { E x p o } ( \\lambda )"
+            },
+            {
+              "type": "text",
+              "content": " . Find the skewness of X, and explain why it is positive and why it does not depend on λ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.167,
+            0.256,
+            0.869,
+            0.272
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Hint: Recall that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda X \\sim \\mathrm{Exp}(1)"
+            },
+            {
+              "type": "text",
+              "content": " and the nth moment of an Expo(1) r.v. is n! for all n."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.125,
+            0.276,
+            0.729,
+            0.292
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "17. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , \\ldots , X _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " be i.i.d. with mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu ,"
+            },
+            {
+              "type": "text",
+              "content": " variance "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , and MGF M. Let"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.429,
+            0.298,
+            0.61,
+            0.332
+          ],
+          "image_path": "images/page_316_equation_9.jpg",
+          "content": "Z _ {n} = \\sqrt {n} \\left(\\frac {\\bar {X} _ {n} - \\mu}{\\sigma}\\right)."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.168,
+            0.345,
+            0.809,
+            0.361
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) Show that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " is a standardized quantity, i.e., it has mean 0 and variance 1."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.168,
+            0.369,
+            0.672,
+            0.386
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) Find the MGF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " in terms of M, the MGF of each "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.125,
+            0.39,
+            0.871,
+            0.422
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "18. Use the MGF of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\mathrm { G e o m } } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " distribution to give another proof that the mean of this distribution is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q / p"
+            },
+            {
+              "type": "text",
+              "content": " and the variance is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q / p ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q = 1 - p"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.125,
+            0.425,
+            0.829,
+            0.442
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "19. Use MGFs to determine whether "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X + 2 Y"
+            },
+            {
+              "type": "text",
+              "content": " is Poisson if X and Y are i.i.d. Pois(λ)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.124,
+            0.446,
+            0.871,
+            0.478
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "20. s Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim  Pois (\\lambda)"
+            },
+            {
+              "type": "text",
+              "content": " , and let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M ( t )"
+            },
+            {
+              "type": "text",
+              "content": " be the MGF of X. The cumulant generating function is defined to be "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( t ) = \\log M ( t )"
+            },
+            {
+              "type": "text",
+              "content": " . Expanding "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( t )"
+            },
+            {
+              "type": "text",
+              "content": " as a Taylor series"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.456,
+            0.484,
+            0.582,
+            0.523
+          ],
+          "image_path": "images/page_316_equation_15.jpg",
+          "content": "g (t) = \\sum_ {j = 1} ^ {\\infty} \\frac {c _ {j}}{j !} t ^ {j}"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.167,
+            0.53,
+            0.871,
+            0.562
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(the sum starts at "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j = 1"
+            },
+            {
+              "type": "text",
+              "content": " because "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( 0 ) = 0 )"
+            },
+            {
+              "type": "text",
+              "content": " , the coefficient "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " is called the jth cumulant of X. Find the jth cumulant of X, for all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j \\geq 1"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.124,
+            0.566,
+            0.871,
+            0.628
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "21. s Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { n } \\: \\sim \\: \\operatorname { B i n } ( n , p _ { n } )"
+            },
+            {
+              "type": "text",
+              "content": " for all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\geq 1"
+            },
+            {
+              "type": "text",
+              "content": " , where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n p _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " is a constant "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda   >   0"
+            },
+            {
+              "type": "text",
+              "content": " for all n (so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { n } = \\lambda / n )"
+            },
+            {
+              "type": "text",
+              "content": " . Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim  Pois (\\lambda)"
+            },
+            {
+              "type": "text",
+              "content": " . Show that the MGF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " converges to the MGF of X (this gives another way to see that the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { B i n } ( n , p )"
+            },
+            {
+              "type": "text",
+              "content": " distribution can be well-approximated by the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { P o i s } ( \\lambda )"
+            },
+            {
+              "type": "text",
+              "content": " when n is large, p is small, and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda = n p"
+            },
+            {
+              "type": "text",
+              "content": " is moderate)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.124,
+            0.632,
+            0.871,
+            0.679
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "22. Consider a setting where a Poisson approximation should work well: let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { 1 } , \\ldots , A _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " be independent, rare events, with n large and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { j }   =   P ( A _ { j } )"
+            },
+            {
+              "type": "text",
+              "content": " small for all j. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X ="
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I ( A _ { 1 } ) + \\cdots + I ( A _ { n } )"
+            },
+            {
+              "type": "text",
+              "content": " count how many of the rare events occur, and let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda = E(X)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.168,
+            0.686,
+            0.37,
+            0.702
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) Find the MGF of X."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.167,
+            0.71,
+            0.871,
+            0.772
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) If the approximation "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 + x \\approx e ^ { x }"
+            },
+            {
+              "type": "text",
+              "content": " (this is a good approximation when x is very close to 0 but terrible when x is not close to 0) is used to write each factor in the MGF of X as e to a power, what happens to the MGF? Explain why the result makes sense intuitively."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 21,
+          "bbox": [
+            0.124,
+            0.776,
+            0.871,
+            0.808
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "23. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U _ { 1 } , U _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " be i.i.d. Unif(0, 1). Example 8.2.5 in Chapter 8 shows that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U _ { 1 } + U _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " has a Triangle distribution, with PDF given by"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 22,
+          "bbox": [
+            0.383,
+            0.813,
+            0.646,
+            0.861
+          ],
+          "image_path": "images/page_316_equation_22.jpg",
+          "content": "f (t) = \\left\\{ \\begin{array}{l l} t & \\text {for} 0 <   t \\leq 1, \\\\ 2 - t & \\text {for} 1 <   t <   2. \\end{array} \\right."
+        },
+        {
+          "type": "text",
+          "index": 23,
+          "bbox": [
+            0.167,
+            0.866,
+            0.871,
+            0.913
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The method in Example 8.2.5 is useful but it often leads to difficult integrals, so having alternative methods is important. Show that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U _ { 1 } + U _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " has a Triangle distribution by showing that they have the same MGF."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 317,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.19,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Moments"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "301"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.123,
+            0.07,
+            0.843,
+            0.087
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "24. Let X and Y be i.i.d. Expo(1), and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "L = X - Y"
+            },
+            {
+              "type": "text",
+              "content": " . The Laplace distribution has PDF"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.46,
+            0.095,
+            0.579,
+            0.124
+          ],
+          "image_path": "images/page_317_equation_3.jpg",
+          "content": "f (x) = \\frac {1}{2} e ^ {- | x |}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.167,
+            0.132,
+            0.741,
+            0.148
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for all real x. Use MGFs to show that the distribution of L is Laplace."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.123,
+            0.154,
+            0.873,
+            0.2
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "25. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z \\sim \\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " , and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = | Z |"
+            },
+            {
+              "type": "text",
+              "content": " . So Y has the Folded Normal distribution, discussed in Example 5.4.7. Find two expressions for the MGF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " as unsimplified integrals: one integral based on the PDF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y ."
+            },
+            {
+              "type": "text",
+              "content": " and one based on the PDF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.124,
+            0.206,
+            0.442,
+            0.222
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "26. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X , Y , Z , W \\sim \\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " be i.i.d."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 9,
+          "bbox": [
+            0.168,
+            0.228,
+            0.707,
+            0.269
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.168,
+                0.228,
+                0.707,
+                0.245
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) Find an expression for "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "E \\left( \\Phi ( Z ) e ^ { Z } \\right)"
+                },
+                {
+                  "type": "text",
+                  "content": " as an unsimplified integral."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.168,
+                0.252,
+                0.635,
+                0.269
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) Find "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "E ( \\Phi ( Z ) )"
+                },
+                {
+                  "type": "text",
+                  "content": " and "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "E ( e ^ { Z } )"
+                },
+                {
+                  "type": "text",
+                  "content": " as fully simplified numbers."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        }
+      ]
+    },
+    {
+      "page_idx": 318,
+      "blocks": [
+        {
+          "type": "image",
+          "index": 0,
+          "bbox": [
+            0.288,
+            0.291,
+            0.393,
+            0.364
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 0,
+              "bbox": [
+                0.288,
+                0.291,
+                0.393,
+                0.364
+              ],
+              "image_path": "images/page_318_image_0.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.403,
+            0.3,
+            0.717,
+            0.336
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Taylor & Francis"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.405,
+            0.337,
+            0.635,
+            0.355
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Taylor & Francis Group"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.405,
+            0.357,
+            0.598,
+            0.371
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "http://taylorandfrancis.com"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 319,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.108,
+            0.061,
+            0.138,
+            0.089
+          ],
+          "content": []
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.105,
+            0.115,
+            0.381,
+            0.139
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Joint distributions"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.243,
+            0.896,
+            0.394
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "When we first introduced random variables and their distributions in Chapter 3, we noted that the individual distributions of two r.v.s do not tell us anything about whether the r.v.s are independent or dependent. For example, two Bern(1/2) r.v.s X and Y could be independent if they indicate Heads on two different coin flips, or dependent if they indicate Heads and Tails, respectively, on the same coin flip. Thus, although the PMF of X is a complete blueprint for X and the PMF of Y is a complete blueprint for Y , these individual PMFs are missing important information about how the two r.v.s are related."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.42,
+            0.895,
+            0.459
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Of course, in real life, we usually care about the relationship between multiple r.v.s in the same experiment. To give just a few examples:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 4,
+          "bbox": [
+            0.096,
+            0.484,
+            0.896,
+            0.781
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.097,
+                0.484,
+                0.896,
+                0.559
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Medicine: To evaluate the effectiveness of a treatment, we may take multiple measurements per patient; an ensemble of blood pressure, heart rate, and cholesterol readings can be more informative than any of these measurements considered separately."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.097,
+                0.585,
+                0.895,
+                0.659
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Genetics: To study the relationships between various genetic markers and a particular disease, if we only looked separately at distributions for each genetic marker, we could fail to learn about whether an interaction between markers is related to the disease."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.097,
+                0.686,
+                0.895,
+                0.781
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Time series: To study how something evolves over time, we can often make a series of measurements over time, and then study the series jointly. There are many applications of such series, such as global temperatures, stock prices, or national unemployment rates. The series of measurements considered jointly can help us deduce trends for the purpose of forecasting future measurements."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.806,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This chapter considers joint distributions, also called multivariate distributions, which capture the previously missing information about how multiple r.v.s interact. We introduce multivariate analogs of the CDF, PMF, and PDF in order to provide a complete specification of the relationship between multiple r.v.s. After this groundwork is in place, we’ll study a couple of famous named multivariate distributions, generalizing the Binomial and Normal distributions to higher dimensions."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 9,
+          "bbox": [
+            0.861,
+            0.936,
+            0.894,
+            0.95
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "303"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

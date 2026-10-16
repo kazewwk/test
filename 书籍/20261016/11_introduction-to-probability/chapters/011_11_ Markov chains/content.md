@@ -1,0 +1,1658 @@
+# 11: Markov chains
+
+原始 PDF 第 514–551 页。
+
+## Markov chains
+
+Markov chains were first introduced in 1906 by Andrey Markov (of Markov’s inequality), with the goal of showing that the law of large numbers can apply to random variables that are not independent. To see where the Markov model comes from, start by considering an i.i.d. sequence of random variables $X _ { 0 } , X _ { 1 } , \ldots , X _ { n } , \ldots$ where we think of n as time. This is the setting we worked in throughout Chapter 10, but for modeling real-world phenomena, independence can be an excessively restrictive assumption; it means that the $X _ { n }$ provide absolutely no information about each other. At the other extreme, allowing arbitrary interactions between the $X _ { n }$ makes it very difficult to compute even basic things. A Markov chain is a sequence of r.v.s that exhibits one-step dependence, in a precise sense that we shall soon define. Thus Markov chains are a happy medium between complete independence and complete dependence.
+
+Since their invention, Markov chains have become extremely important in a huge number of fields such as biology, game theory, finance, machine learning, and statistical physics. They are also very widely used for simulations of complex distributions, via algorithms known as Markov chain Monte Carlo (MCMC). In this chapter we will introduce Markov chains and their properties, and in the next chapter we’ll look at some examples of MCMC techniques.
+
+## 11.1 Markov property and transition matrix
+
+Markov chains “live” in both space and time: the set of possible values of the $X _ { n }$ is called the state space, and the index n represents the evolution of the process over time. The state space of a Markov chain can be either discrete or continuous, and time can also be either discrete or continuous (in the continuous-time setting, we would imagine a process $X _ { t }$ defined for all real $t \geq 0 )$ . In this chapter we will focus exclusively on discrete-state, discrete-time Markov chains, with a finite state space. Specifically, we will assume that the $X _ { n }$ take values in a finite set, which we usually take to be $\{ 1 , 2 , \ldots , M \}$ or $\{ 0 , 1 , \ldots , M \}$
+
+Definition 11.1.1 (Markov chain). A sequence of random variables $X _ { 0 } , X _ { 1 } , X _ { 2 } , \ldots$ taking values in the state space $\{ 1 , 2 , \ldots , M \}$ is called a Markov chain if for all $n \geq 0$
+
+$$
+P (X _ {n + 1} = j | X _ {n} = i, X _ {n - 1} = i _ {n - 1}, \dots , X _ {0} = i _ {0}) = P (X _ {n + 1} = j | X _ {n} = i).
+$$
+
+497
+
+---
+
+498
+
+Introduction to Probability
+
+The quantity $P ( X _ { n + 1 }   =   j | X _ { n }   =   i )$ is called the transition probability from state $i$ to state $j .$ In this book, when referring to a Markov chain we will implicitly assume that it is time-homogeneous, which means that the transition probability $P ( X _ { n + 1 }   =   j | X _ { n }   =   i )$ is the same for all times n. But care is needed, since the literature is not consistent about whether to say “time-homogeneous Markov chain” or just “Markov chain”.
+
+The above condition is called the Markov property, and it says that given the entire past history $X _ { 0 } , X _ { 1 } , X _ { 2 } , \ldots , X _ { n }$ , only the most recent term, $X _ { n }$ , matters for predicting $X _ { n + 1 }$ . If we think of time n as the present, times before n as the past, and times after n as the future, the Markov property says that given the present, the past and future are conditionally independent. The Markov property greatly simplifies computations of conditional probability: instead of having to condition on the entire past, we only need to condition on the most recent value.
+
+To describe the dynamics of a Markov chain, we need to know the probabilities of moving from any state to any other state, that is, the probabilities $P(X_{n+1} =$ $j | X _ { n } = i )$ on the right-hand side of the Markov property. This information can be encoded in a matrix, called the transition matrix, whose $( i , j )$ entry is the probability of going from state i to state $j$ in one step of the chain.
+
+Definition 11.1.2 (Transition matrix). Let $X _ { 0 } , X _ { 1 } , X _ { 2 } , \ldots$ be a Markov chain with state space $\{ 1 , 2 , \ldots , M \}$ , and let $q _ { i j } = P ( X _ { n + 1 } = j | X _ { n } = i )$ be the transition probability from state $i$ to state $j$ . The $M \times M$ matrix $Q   =   ( q _ { i j } )$ is called the transition matrix of the chain.
+
+Note that $Q$ is a nonnegative matrix in which each row sums to 1. This is because, starting from any state $i ,$ the events “move to $1 ^ { \flat \flat }$ , “move to $2 , \ldots ,$ “move to $M ^ { \flat }$ are disjoint, and their union has probability 1 because the chain has to go somewhere.
+
+Example 11.1.3 (Rainy-sunny Markov chain). Suppose that on any given day, the weather can either be rainy or sunny. If today is rainy, then tomorrow will be rainy with probability $1 / 3$ and sunny with probability $2 / 3$ . If today is sunny, then tomorrow will be rainy with probability $1 / 2$ and sunny with probability $1 / 2 .$ Letting $X _ { n }$ be the weather on day $n , \: X _ { 0 } , X _ { 1 } , X _ { 2 } , \ldots$ . is a Markov chain on the state space $\{ R , S \}$ , where $R$ stands for rainy and S for sunny. We know that the Markov property is satisfied because, from the description of the process, only today’s weather matters for predicting tomorrow’s.
+
+The transition matrix of the chain is
+
+$$
+\begin{array}{c c} R & S \\ R \left( \begin{array}{c c} 1 / 3 & 2 / 3 \\ 1 / 2 & 1 / 2 \end{array} \right). \end{array}
+$$
+
+The first row says that starting from state $R ,$ we transition back to state $R$ with probability $1 / 3$ and transition to state $S$ with probability $2 / 3$ . The second row says
+
+---
+
+Markov chains
+
+499
+
+that starting from state $S ,$ we have a 1/2 $1 / 2$ chance of moving to state R and a $1 / 2$ chance of staying in state S. We could just as well have used
+
+$$
+\begin{array}{c c} S & R \\ S \left( \begin{array}{c c} 1 / 2 & 1 / 2 \\ 2 / 3 & 1 / 3 \end{array} \right) \end{array}
+$$
+
+as our transition matrix instead. In general, if there isn’t an obvious ordering of the states of a Markov chain (as with the states R and S), we just need to fix an ordering of the states and use it consistently.
+
+The transition probabilities of a Markov chain can also be represented with a diagram. Each state is represented by a circle, and the arrows indicate the possible one-step transitions; we can imagine a particle wandering around from state to state, randomly choosing which arrow to follow. Next to the arrows we write the corresponding transition probabilities.
+
+![](../../raw/pages_0513-0528/images/page_515_image_6.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["R"] -->|"2/3"| B["S"]
+  B -->|"1/2"| A
+  A -->|"1/3"| A
+  B -->|"1/2"| A
+```
+</details>
+
+What if the weather tomorrow depended on the weather today and the weather yesterday? For example, suppose that the weather behaves as above, except that if there have been two consecutive days of rain, then tomorrow will definitely be sunny, and if there have been two consecutive days of sun, then tomorrow will definitely be rainy. Under these new weather dynamics, the $X _ { n }$ no longer form a Markov chain, as the Markov property is violated: conditional on today’s weather, yesterday’s weather can still provide useful information for predicting tomorrow’s weather.
+
+However, by enlarging the state space, we can create a new Markov chain: let $Y _ { n } = \left( X _ { n - 1 } , X _ { n } \right)$ for $n \geq 1$ . Then $Y _ { 1 } , Y _ { 2 } , \ldots$ is a Markov chain on the state space $\{ ( R , R ) , ( R , S ) , ( S , R ) , ( S , S ) \}$ . You can verify that the new transition matrix is
+
+$$
+\begin{array}{c} (R, R) \quad (R, S) \quad (S, R) \quad (S, S) \\ (R, R) \left( \begin{array}{c c c c} 0 & 1 & 0 & 0 \\ 0 & 0 & 1 / 2 & 1 / 2 \\ 1 / 3 & 2 / 3 & 0 & 0 \\ 0 & 0 & 1 & 0 \end{array} \right) \end{array}
+$$
+
+and that its corresponding graphical representation is given in the following figure.
+
+---
+
+500
+
+Introduction to Probability
+
+![](../../raw/pages_0513-0528/images/page_516_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  RR["RR"] -->|1| RS["RS"]
+  RS -->|1/2| SR["SR"]
+  SR -->|1/3| RR
+  SS["SS"] -->|1| SR
+  SR -->|2/3| RS
+```
+</details>
+
+Similarly, we could handle third-order or fourth-order dependencies in the weather by further enlarging the state space to make the Markov property hold. 
+
+Once we have the transition matrix $Q$ of a Markov chain, we can work out the transition probabilities for longer timescales.
+
+Definition 11.1.4 (n-step transition probabili $\mathrm { t y } )$ . The n-step transition probability from $i$ to $j$ is the probability of being at $j$ exactly n steps after being at $i .$ We denote this by $q _ { i j } ^ { ( n ) }$ :
+
+$$
+q _ {i j} ^ {(n)} = P (X _ {n} = j | X _ {0} = i).
+$$
+
+Note that
+
+$$
+q _ {i j} ^ {(2)} = \sum_ {k} q _ {i k} q _ {k j}
+$$
+
+since to get from i to $j$ in two steps, the chain must go from $i$ to some intermediary state $k ,$ and then from $k$ to $j ;$ these transitions are independent because of the Markov property. Since the right-hand side is the $( i , j )$ entry of $Q ^ { 2 }$ by definition of matrix multiplication, we conclude that the matrix $Q ^ { 2 }$ gives the two-step transition probabilities. By induction, the nth power of the transition matrix gives the n-step transition probabilities:
+
+$$
+q _ {i j} ^ {(n)} \text {is the} (i, j) \text {entry of} Q ^ {n}.
+$$
+
+Example 11.1.5 (Transition matrix of 4-state Markov chain). Consider the 4-state Markov chain depicted in Figure 11.1. When no probabilities are written over the arrows, as in this case, it means all arrows originating from a given state are equally likely. For example, there are $3$ arrows originating from state 1, so the transitions $1 \rightarrow 3 ,   1 \rightarrow 2$ , and $1 \rightarrow 1$ all have probability $1 / 3 .$ . Therefore the transition matrix of the chain is
+
+$$
+Q = \left( \begin{array}{c c c c} 1 / 3 & 1 / 3 & 1 / 3 & 0 \\ 0 & 0 & 1 / 2 & 1 / 2 \\ 0 & 1 & 0 & 0 \\ 1 / 2 & 0 & 0 & 1 / 2 \end{array} \right).
+$$
+
+---
+
+Markov chains
+
+501
+
+![](../../raw/pages_0513-0528/images/page_517_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  1["1"] --> 2["2"]
+  n1["1"] --> 3["3"]
+  n1 --> 4["4"]
+  n2["2"] --> n3["3"]
+  n2 --> n4["4"]
+  n3 --> n2
+  n3 --> n4
+  n4 --> n1
+```
+</details>
+
+## FIGURE 11.1
+
+A 4-state Markov chain.
+
+To compute the probability that the chain is in state 3 after $5$ steps, starting at state 1, we would look at the (1,3) entry of $Q ^ { 5 }$ . Here, using a computer to find $Q ^ { 5 }$
+
+$$
+Q ^ {5} = \left( \begin{array}{c c c c} 8 5 3 / 3 8 8 8 & 5 0 9 / 1 9 4 4 & 5 2 / 2 4 3 & 3 9 5 / 1 2 9 6 \\ 1 7 3 / 8 6 4 & 8 5 / 4 3 2 & 3 1 / 1 0 8 & 9 1 / 2 8 8 \\ 3 7 / 1 4 4 & 2 9 / 7 2 & 1 / 9 & 1 1 / 4 8 \\ 4 9 9 / 2 5 9 2 & 3 9 5 / 1 2 9 6 & 7 1 / 3 2 4 & 2 4 5 / 8 6 4 \end{array} \right),
+$$
+
+so $q _ { 1 3 } ^ { ( 5 ) } = 5 2 / 2 4 3 .$
+
+![](../../raw/pages_0513-0528/images/page_517_image_8.jpg)
+
+Using the language of Chapter $^ { 7 , }$ the transition matrix $Q$ encodes the conditional distribution of $X _ { 1 }$ given the initial state of the chain. Specifically, the ith row of $Q$ is the conditional PMF of $X _ { 1 }$ given $X _ { 0 } = i ,$ displayed as a row vector. Similarly, the ith row of $Q ^ { n }$ is the conditional PMF of $X _ { n }$ given $X _ { 0 } = i$
+
+To get the marginal distributions of $X _ { 0 } , X _ { 1 } , \ldots$ , we need to specify not only the transition matrix, but also the initial conditions of the chain. The initial state $X _ { 0 }$ can be specified deterministically, or randomly according to some distribution. Let $( t _ { 1 } , t _ { 2 } , \ldots , t _ { M } )$ be the PMF of $X _ { 0 }$ displayed as a vector, that is, $t _ { i } = P ( X _ { 0 } = i )$ Then the marginal distribution of the chain at any time can be computed from the transition matrix, averaging over all the states using LOTP.
+
+Proposition 11.1.6 (Marginal distribution of $\left| X _ { n } \right\rangle$ . Define $\mathbf { t } = ( t _ { 1 } , t _ { 2 } , \ldots , t _ { M } )$ by $t _ { i } = P ( X _ { 0 } = i )$ , and view t as a row vector. Then the marginal distribution of $X _ { n }$ is given by the vector $\mathbf { t } Q ^ { n }$ . That is, the jth component of $\mathbf { t } Q ^ { n }$ is $P ( X _ { n } = j )$
+
+Proof. By the law of total probability, conditioning on $X _ { 0 }$ , the probability that the chain is in state $j$ after n steps is
+
+$$
+P (X _ {n} = j) = \sum_ {i = 1} ^ {M} P (X _ {0} = i) P (X _ {n} = j | X _ {0} = i) = \sum_ {i = 1} ^ {M} t _ {i} q _ {i j} ^ {(n)},
+$$
+
+which is the jth component of $\mathbf { t } Q ^ { n }$ by definition of matrix multiplication.
+
+---
+
+502
+
+Introduction to Probability
+
+Example 11.1.7 (Marginal distributions of 4-state Markov chain). Again consider the 4-state Markov chain shown in Figure 11.1. Suppose that the initial conditions are $\mathbf { t } = ( 1 / 4 , 1 / 4 , 1 / 4 , 1 / 4 )$ , meaning that the chain has equal probability of starting in each of the four states. Let $X _ { n }$ be the position of the chain at time n. Then the marginal distribution of $X _ { 1 }$ is
+
+$$
+\begin{array}{l} \mathbf {t} Q = \left( \begin{array}{c c c c} 1 / 4 & 1 / 4 & 1 / 4 & 1 / 4 \end{array} \right) \left( \begin{array}{c c c c} 1 / 3 & 1 / 3 & 1 / 3 & 0 \\ 0 & 0 & 1 / 2 & 1 / 2 \\ 0 & 1 & 0 & 0 \\ 1 / 2 & 0 & 0 & 1 / 2 \end{array} \right) \\ = \left( \begin{array}{c c c c} 5 / 2 4 & 1 / 3 & 5 / 2 4 & 1 / 4 \end{array} \right). \\ \end{array}
+$$
+
+The marginal distribution of $X _ { 5 }$ is
+
+$$
+\begin{array}{l} \mathbf {t} Q ^ {5} = \left( \begin{array}{c c c c} 1 / 4 & 1 / 4 & 1 / 4 & 1 / 4 \end{array} \right) \left( \begin{array}{c c c c} 8 5 3 / 3 8 8 8 & 5 0 9 / 1 9 4 4 & 5 2 / 2 4 3 & 3 9 5 / 1 2 9 6 \\ 1 7 3 / 8 6 4 & 8 5 / 4 3 2 & 3 1 / 1 0 8 & 9 1 / 2 8 8 \\ 3 7 / 1 4 4 & 2 9 / 7 2 & 1 / 9 & 1 1 / 4 8 \\ 4 9 9 / 2 5 9 2 & 3 9 5 / 1 2 9 6 & 7 1 / 3 2 4 & 2 4 5 / 8 6 4 \end{array} \right) \\ = \left( \begin{array}{c c c c} 3 3 7 9 / 1 5 5 5 2 & 2 2 6 7 / 7 7 7 6 & 1 0 1 / 4 8 6 & 1 4 6 9 / 5 1 8 4 \end{array} \right). \\ \end{array}
+$$
+
+We used a computer to perform the matrix multiplication.
+
+![](../../raw/pages_0513-0528/images/page_518_image_7.jpg)
+
+## 11.2 Classification of states
+
+In this section we introduce terminology for describing the various characteristics of a Markov chain. The states of a Markov chain can be classified as recurrent or transient, depending on whether they are visited over and over again in the long run or are eventually abandoned. States can also be classified according to their period, which is a positive integer summarizing the amount of time that can elapse between successive visits to a state. These characteristics are important because they determine the long-run behavior of the Markov chain, which we will study in Section 11.3.
+
+The concepts of recurrence and transience are best illustrated with a concrete example. In the Markov chain shown on the left of Figure 11.2 (previously featured in Example 11.1.5), a particle moving around between states will continue to spend time in all 4 states in the long run, since it is possible to get from any state to any other state. In contrast, consider the chain on the right of Figure 11.2, and let the particle start at state 1. For a while, the chain may linger in the triangle formed by states 1, 2, and 3, but eventually it will reach state 4, and from there it can never return to states 1, 2, or 3. It will then wander around between states 4, 5, and 6 forever. States 1, 2, and 3 are transient and states 4, 5, and 6 are recurrent.
+
+In general, these concepts are defined as follows.
+
+---
+
+Markov chains
+
+503
+
+![](../../raw/pages_0513-0528/images/page_519_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  subgraph Left Diagram
+  A["1"] --> B["2"]
+  A --> C["3"]
+  A --> D["4"]
+  B --> A
+  B --> C
+  B --> D
+  C --> A
+  D --> A
+  end
+  subgraph Right Diagram
+  E["1"] --> F["2"]
+  E --> G["3"]
+  F --> H["4"]
+  G --> H
+  H --> I["5"]
+  H --> J["6"]
+  I --> K["5"]
+  J --> L["6"]
+  K --> M["6"]
+  L --> N["6"]
+  end
+```
+</details>
+
+FIGURE 11.2
+
+Left: 4-state Markov chain with all states recurrent. Right: 6-state Markov chain with states 1, 2, and 3 transient.
+
+Definition 11.2.1 (Recurrent and transient states). State i of a Markov chain is recurrent if starting from i, the probability is 1 that the chain will eventually return to i. Otherwise, the state is transient, which means that if the chain starts from i, there is a positive probability of never returning to i.
+
+In fact, although the definition of a transient state only requires that there be a positive probability of never returning to the state, we can say something stronger: as long as there is a positive probability of leaving i forever, the chain eventually will leave i forever. Moreover, we can find the distribution of the number of returns to the state.
+
+Proposition 11.2.2 (Number of returns to transient state is Geometric). Let i be a transient state of a Markov chain. Suppose the probability of never returning to i, starting from i, is a positive number $p > 0$ . Then, starting from i, the number of times that the chain returns to i before leaving forever is distributed Geom(p).
+
+The proof is by the story of the Geometric distribution: each time that the chain is at i, we have a Bernoulli trial which results in “failure” if the chain eventually returns to i and “success” if the chain leaves i forever; these trials are independent by the Markov property. The number of returns to state i is the number of failures before the first success, which matches the story of the Geometric distribution. And since a Geometric random variable always takes finite values, this proposition tells us that after some finite number of visits, the chain will leave state i forever.
+
+If the number of states is not too large, one way to classify states as recurrent or transient is to draw a diagram of the Markov chain and use the same kind of reasoning that we used when analyzing the chains in Figure 11.2. A special case where we can immediately conclude all states are recurrent is when the chain is irreducible, meaning that it is possible to get from any state to any other state.
+
+---
+
+504
+
+Introduction to Probability
+
+Definition 11.2.3 (Irreducible and reducible chain). A Markov chain with transition matrix $Q$ is irreducible if for any two states i and $j ,$ it is possible to go from i to $j$ in a finite number of steps (with positive probability). That is, for any states $i , j$ there is some positive integer n such that the $( i , j )$ entry of $Q ^ { n }$ is positive. A Markov chain that is not irreducible is called reducible.
+
+Proposition 11.2.4 (Irreducible implies all states recurrent). In an irreducible Markov chain with a finite state space, all states are recurrent.
+
+Proof. It is clear that at least one state must be recurrent; if all states were transient, the chain would eventually leave all states forever and have nowhere to go! So assume without loss of generality that state 1 is recurrent, and consider any other state i. We know that $q _ { 1 i } ^ { ( n ) }$ is positive for some n, by definition of irreducibility. Thus, every time the chain is at state 1, there is a positive probability that after n more steps it will be at state i.
+
+Since the chain visits state 1 infinitely often, we know the chain will eventually reach state i from state 1; think of each visit to state 1 as starting a trial, where “success” is defined as reaching state i in at most n steps. From state i, the chain will return to state 1 because state 1 is recurrent, and by the same logic, it will eventually reach state i again. By induction, the chain will visit state i infinitely often. Since i was arbitrary, we conclude that all states are recurrent. 
+
+The converse of the proposition is false; it is possible to have a reducible Markov chain whose states are all recurrent. An example is given by the Markov chain below, which consists of two “islands” of states.
+
+![](../../raw/pages_0513-0528/images/page_520_image_7.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  1["1"] --> 2["2"]
+  n1["1"] --> 3["3"]
+  n2["2"] --> 4["4"]
+  n3["3"] --> 5["5"]
+  n4["4"] --> 6["6"]
+  n5["5"] --> n6["6"]
+  n6 --> n3
+  n6 --> n5
+  n3 --> n1
+  n4 --> n1
+  n5 --> n1
+```
+</details>
+
+h 11.2.5. Note that recurrence or transience is a property of each state in a Markov chain, while irreducibility or reducibility is a property of the chain as a whole.
+
+Here are two familiar problems from earlier chapters, viewed through the lens of Markov chains. For each, we’ll identify the recurrent and transient states.
+
+Example 11.2.6 (Gambler’s ruin as a Markov chain). In the gambler’s ruin problem (Example 2.7.3), two gamblers, A and B, start with i and $N - i$ dollars respectively, making a sequence of bets for \$1. In each round, player A has probability p of winning and probability $q = 1 - p$ of losing. Let $X _ { n }$ be the wealth of gambler A at time n. Then $X _ { 0 } , X _ { 1 } , \ldots$ is a Markov chain on the state space $\{ 0 , 1 , \ldots , N \}$ . By
+
+---
+
+Markov chains
+
+505
+
+design, $X _ { 0 } = i .$ Once the Markov chain reaches 0 or N, signifying bankruptcy for player A or player B, the chain stays in that state forever. A diagram of the chain is shown below.
+
+![](../../raw/pages_0513-0528/images/page_521_image_3.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  0["0\n1"] --> 1["1"]
+  n1["1"] -->|q| n0["0"]
+  n1 -->|p| 2["2"]
+  n2["2"] -->|q| n1
+  n2 -->|p| n2
+  n2 -->|q| n2
+  node["..."] -->|p| N-1["N-1"]
+  N1["N-1"] -->|q| n1
+  N1 -->|p| N["N"]
+  N -->|q| n1
+```
+</details>
+
+We proved in Chapter 2 that the probability that either A or B goes bankrupt is 1, so for any starting state i other than 0 or N, the Markov chain will eventually be absorbed into state 0 or N, never returning to i. Therefore, for this Markov chain, states 0 and N are recurrent, and all other states are transient. The chain is reducible because from state 0 it is only possible to go to state 0, and from state N it is only possible to go to state N. 
+
+Example 11.2.7 (Coupon collector as a Markov chain). In the coupon collector problem (Example 4.3.12), there are C types of coupons (or toys), which we collect one by one, sampling with replacement from the $C$ coupon types each time. Let $X _ { n }$ be the number of distinct coupon types in our collection after n attempts. Then $X _ { 0 } , X _ { 1 } , \ldots$ . is a Markov chain on the state space $\{ 0 , 1 , \ldots , C \}$ . By design, $X _ { 0 } = 0$ This chain is depicted below.
+
+![](../../raw/pages_0513-0528/images/page_521_image_6.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  0["0"] -->|"1"| 1["1"]
+  n1["1"] -->|"C-1/C"| 2["2"]
+  n2["2"] -->|"C-2/C"| node["...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ..."]
+  %% Connections between states
+  n1 -->|"1/C"| n1
+  n1 -->|"1/C"| n2
+  n2 -->|"2/C"| C["C-1"]
+  C -->|"1/C"| C
+  C -->|"1/C"| n2
+```
+</details>
+
+With the exception of state $C ,$ we can never return to a state after leaving it; the number of coupon types in the collection can only increase with time. Thus all states are transient except for $C ,$ which is recurrent. The chain is reducible since, e.g., it’s impossible to go from state 2 back to state 1. 
+
+Another way to classify states is according to their periods. The period of a state summarizes how much time can elapse between successive visits to the state.
+
+Definition 11.2.8 (Period of a state, periodic and aperiodic chain). The period of a state i in a Markov chain is the greatest common divisor (gcd) of the possible numbers of steps it can take to return to i when starting at i. That is, the period of i is the greatest common divisor of numbers n such that the $( i , i )$ entry of $Q ^ { n }$ is positive. (The period of i is ∞ if it’s impossible ever to return to i after starting at i.) A state is called aperiodic if its period equals 1, and periodic otherwise. The chain itself is called aperiodic if all its states are aperiodic, and periodic otherwise.
+
+For example, let’s consider again the two Markov chains from Figure 11.2, shown again in Figure 11.3. We first consider the 6-state chain on the right. Starting from state 1, it is possible to be back at state 1 after 3 steps, 6 steps, 9 steps, etc., but it
+
+---
+
+506
+
+Introduction to Probability
+
+![](../../raw/pages_0513-0528/images/page_522_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  subgraph Left Diagram
+  A["1"] --> B["2"]
+  A --> C["3"]
+  A --> D["4"]
+  B --> A
+  B --> C
+  B --> D
+  C --> A
+  D --> A
+  end
+  subgraph Right Diagram
+  E["5"] --> F["6"]
+  F --> G["4"]
+  G --> F
+  H["1"] --> I["2"]
+  I --> J["3"]
+  J --> G
+  K["5"] --> F
+  K --> G
+  L["6"] --> M["6"]
+  M --> N["6"]
+  O["1"] --> I
+  O --> J
+  P["2"] --> J
+  Q["3"] --> J
+  R["4"] --> G
+  S["5"] --> F
+  T["6"] --> M
+  U["7"] --> V["8"]
+  V --> W["9"]
+  end
+```
+</details>
+
+FIGURE 11.3
+
+Left: an aperiodic Markov chain. Right: a periodic Markov chain in which states 1, 2, and 3 have period 3.
+
+is not possible to be back at state 1 after any number of steps that is not a multiple of 3. Therefore, state 1 has period 3. Similarly, states 2 and 3 also have period 3. On the other hand, states 4, 5, and 6 have period 1, but the chain is periodic since at least one state does not have period 1. By contrast, in the chain on the left all states are aperiodic, so that chain is aperiodic.
+
+In the gambler’s ruin chain from Example 11.2.6, each state has period 2 except for 0 and N, which have period 1. In the coupon collector chain, each state has period 1 except for state 0, which has period ∞ because it’s impossible to return to state 0. So neither of these chains is aperiodic.
+
+Checking whether an irreducible chain is aperiodic is often much easier than it might seem: the next proposition shows that we only need to calculate the period of one state, rather than searching state by state for a state whose period is not 1.
+
+Proposition 11.2.9 (Periods in an irreducible chain). In an irreducible Markov chain, all states have the same period.
+
+## 11.3 Stationary distribution
+
+The concepts of recurrence and transience are important for understanding the longrun behavior of a Markov chain. At first, the chain may spend time in transient states. Eventually though, the chain will spend all its time in recurrent states. But what fraction of the time will it spend in each of the recurrent states? This question is answered by the stationary distribution of the chain, also known as the steadystate distribution. We will learn in this section that for irreducible and aperiodic
+
+---
+
+Markov chains
+
+507
+
+Markov chains, the stationary distribution describes the long-run behavior of the chain, regardless of its initial conditions. It will tell us both the long-run probability of being in any particular state, and the long-run proportion of time that the chain spends in that state.
+
+Definition 11.3.1 (Stationary distribution). A row vector $\mathbf { s } = ( s _ { 1 } , \ldots , s _ { M } )$ such that $s _ { i }   \geq   0$ and $\textstyle \sum _ { i } s _ { i }   =   1$ is a stationary distribution for a Markov chain with transition matrix $Q$ if
+
+$$
+\sum_ {i} s _ {i} q _ {i j} = s _ {j}
+$$
+
+for all $j .$ This system of linear equations can be written as one matrix equation:
+
+$$
+\mathbf {s} Q = \mathbf {s}.
+$$
+
+Recall that if s is the distribution of $X _ { 0 } ,$ then sQ is the marginal distribution of $X _ { 1 }$ . Thus the equation $\mathbf { s } Q = \mathbf { s }$ means that if $X _ { 0 }$ has distribution s, then $X _ { 1 }$ also has distribution s. But then $X _ { 2 }$ also has distribution s, as does $X _ { 3 }$ , etc. That is, a Markov chain whose initial distribution is the stationary distribution s will stay in the stationary distribution forever.
+
+One way to think about the stationary distribution of a Markov chain intuitively is to imagine a large number of particles, each independently bouncing from state to state according to the transition probabilities. After a while, the system of particles will approach an equilibrium where, at each time period, the number of particles leaving a state will be counterbalanced by the number of particles entering that state, and this will be true for all states. At this equilibrium, the system as a whole will appear to be stationary, and the proportion of particles in each state will be given by the stationary distribution. We will explore this perspective on stationary distributions more after Definition 11.4.1.
+
+h 11.3.2 (Stationary distribution is marginal, not conditional). When a Markov chain is at the stationary distribution, the unconditional PMF of $X _ { n }$ equals s for all $n ,$ but the conditional PMF of $X _ { n }$ given $X _ { n - 1 } = i$ is still encoded by the ith row of the transition matrix $Q$
+
+If a Markov chain starts at the stationary distribution, then all of the $X _ { n }$ are identically distributed (since they have the same marginal distribution s), but they are not necessarily independent, since the conditional distribution of $X _ { n }$ given $X _ { n - 1 } = i$ is, in general, different from the marginal distribution of $X _ { n }$
+
+h 11.3.3 (Sympathetic magic). If a Markov chain starts at the stationary distribution, then the marginal distributions of the $X _ { n }$ are all equal. This is not the same as saying that the $X _ { n }$ themselves are all equal; confusing the random variables $X _ { n }$ with their distributions is an example of sympathetic magic.
+
+For very small Markov chains, we may solve for the stationary distribution by hand, using the definition. The next example illustrates this for a two-state chain.
+
+---
+
+508
+
+Introduction to Probability
+
+Example 11.3.4 (Stationary distribution for a two-state chain). Let
+
+$$
+Q = \left( \begin{array}{c c} 1 / 3 & 2 / 3 \\ 1 / 2 & 1 / 2 \end{array} \right).
+$$
+
+The stationary distribution is of the form $\mathbf { s } = ( s , 1 - s )$ , and we must solve for s in
+
+$$
+\left( \begin{array}{c c} s & 1 - s \end{array} \right) \left( \begin{array}{c c} 1 / 3 & 2 / 3 \\ 1 / 2 & 1 / 2 \end{array} \right) = \left( \begin{array}{c c} s & 1 - s \end{array} \right),
+$$
+
+which is equivalent to
+
+$$
+\begin{array}{l} \frac {1}{3} s + \frac {1}{2} (1 - s) = s, \\ \frac {2}{3} s + \frac {1}{2} (1 - s) = 1 - s. \\ \end{array}
+$$
+
+The only solution to these equations is $s = 3 / 7$ , so $( 3 / 7 , 4 / 7 )$ is the unique stationary distribution of this Markov chain.
+
+More generally, suppose that $q _ { 1 2 } = a$ and $q _ { 2 1 } = b ,$ where $0 < a < 1$ and $0 < b < 1$ Then the transition matrix is
+
+$$
+Q = \left( \begin{array}{c c} 1 - a & a \\ b & 1 - b \end{array} \right).
+$$
+
+Writing $\mathbf { s } = ( s _ { 1 } , s _ { 2 } )$ , the equation $\mathbf { s } Q = \mathbf { s }$ becomes the linear system
+
+$$
+\begin{array}{l} (1 - a) s _ {1} + b s _ {2} = s _ {1}, \\ a s _ {1} + (1 - b) s _ {2} = s _ {2} \\ \end{array}
+$$
+
+Both equations in this system simplify to
+
+$$
+a s _ {1} = b s _ {2}.
+$$
+
+Plugging in $s _ { 2 } = 1 - s _ { 1 }$ , it follows that the unique solution to this system is
+
+$$
+\mathbf {s} = \left(\frac {b}{a + b}, \frac {a}{a + b}\right).
+$$
+
+In short, $\mathbf { s } \propto ( b , a )$ , i.e., s is a constant times $( b , a )$ . The constant is whatever it needs to be to make the components of s sum to 1. As a check, note that for the $Q$ given earlier with specific numbers, this result says that the stationary distribution should be proportional to $( b , a ) = ( 1 / 2 , 2 / 3 )$ , which, multiplying by $6$ to clear the denominators, is equivalent to being proportional to $( 3 , 4 )$ . The stationary distribution we solved for earlier was $( 3 / 7 , 4 / 7 )$ , which is indeed proportional to $( 3 , 4 )$ 
+
+In linear algebra terminology, the equation $\mathbf { s } Q = \mathbf { s }$ says that s is a left eigenvector of $Q$ with eigenvalue 1 (see Section A.3 of the math appendix). To get the usual kind of eigenvector (a right eigenvector), take transposes: $Q ^ { \prime } \mathbf { s } ^ { \prime } = \mathbf { s } ^ { \prime }$ , where the <sup>0</sup>symbol denotes taking the transpose.
+
+---
+
+Markov chains
+
+509
+
+## 11.3.1 Existence and uniqueness
+
+Does a stationary distribution always exist, and is it unique? It turns out that for a finite state space, a stationary distribution always exists. Furthermore, in irreducible Markov chains, the stationary distribution is unique.
+
+Theorem 11.3.5 (Existence and uniqueness of stationary distribution). For any irreducible Markov chain, there exists a unique stationary distribution. In this distribution, every state has positive probability.
+
+The theorem is a consequence of a result from linear algebra called the Perron-Frobenius theorem, which is stated in Section A.3 of the math appendix.
+
+The 4-state chain on the left of Figure 11.3 is irreducible: in terms of the picture, it is possible to go from anywhere to anywhere following the arrows; in terms of the transition matrix $Q ,$ all the entries of $Q ^ { 5 }$ are positive. Therefore, by Theorem 11.3.5, the chain has a unique stationary distribution.
+
+On the other hand, the gambler’s ruin chain from Example 11.2.6 is reducible, so the theorem does not apply. It turns out that this chain has infinitely many stationary distributions. In the long run, the chain will either wind up at state 0 (and stay there forever) or wind up at state N (and stay there forever). This suggests, and it is easy to check, that the degenerate distributions $\mathbf { s } = ( 1 , 0 , \ldots , 0 )$ and $\mathbf { t } = ( 0 , 0 , \ldots , 1 )$ are both stationary distributions. It follows that any weighted combination $p \mathbf { s }   +   ( 1   -   p ) \mathbf { t }$ where $0 \leq p \leq 1$ , is also a stationary distribution, since it sums to 1 and
+
+$$
+(p \mathbf {s} + (1 - p) \mathbf {t}) Q = p \mathbf {s} Q + (1 - p) \mathbf {t} Q = p \mathbf {s} + (1 - p) \mathbf {t},
+$$
+
+where, as usual, Q is the transition matrix.
+
+## 11.3.2 Convergence
+
+We have already informally stated that the stationary distribution describes the long-run behavior of the chain, in the sense that if we run the chain for a long time, the marginal distribution of $X _ { n }$ converges to the stationary distribution s. The next theorem states that this is true as long as the chain is both irreducible and aperiodic. Then, regardless of the chain’s initial conditions, the PMF of $X _ { n }$ will converge to the stationary distribution as $n \to \infty$ . This relates the concept of stationarity to the long-run behavior of a Markov chain. The proof is omitted.
+
+Theorem 11.3.6 (Convergence to stationary distribution). Let $X _ { 0 } , X _ { 1 } , \ldots$ . be an irreducible, aperiodic Markov chain with stationary distribution s and transition matrix Q. Then $P ( X _ { n } = i )$ converges to $s _ { i }$ as $n \to \infty$ . In terms of the transition matrix, $Q ^ { n }$ converges to a matrix in which each row is s.
+
+Therefore, after a large number of steps, the probability that the chain is in state i is close to the stationary probability $s _ { i } .$ , regardless of the chain’s initial conditions. This makes irreducible, aperiodic chains especially nice to work with. Irreducibility
+
+---
+
+510
+
+Introduction to Probability
+
+means that for each $( i , j )$ there is some power $Q ^ { m }$ where the $( i , j )$ entry is positive, but if we also assume aperiodicity it turns out that we can find a value of m that works for all $i , j$ . More precisely, a chain is irreducible and aperiodic if and only if some power $Q ^ { m }$ is positive in all entries.
+
+Intuitively, the extra condition of aperiodicity is needed in order to rule out chains that just go around in circles, such as the chain in the following example, or chains where, say, some states are accessible only after an even number of steps while other states are accessible only after an odd number of steps.
+
+Example 11.3.7 (Periodic chain). The figure below shows a periodic Markov chain where each state has period 5.
+
+![](../../raw/pages_0513-0528/images/page_526_image_5.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  1["1"] --> 2["2"]
+  2["2"] --> 3["3"]
+  3["3"] --> 4["4"]
+  4["4"] --> 5["5"]
+  5["5"] --> n1["1"]
+```
+</details>
+
+FIGURE 11.4
+
+A periodic chain.
+
+The transition matrix of the chain is
+
+$$
+Q = \left( \begin{array}{c c c c c} 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \end{array} \right).
+$$
+
+It can be verified without much difficulty that $\textbf { s } = \; ( 1 / 5 , 1 / 5 , 1 / 5 , 1 / 5 , 1 / 5 )$ is a stationary distribution of this chain, and by Theorem 11.3.5, s is unique. However, suppose the chain starts at $X _ { 0 } = 1$ . Then the PMF of $X _ { n }$ assigns probability 1 to the state (n mod 5) + 1 and 0 to all other states.<sup>1</sup>In particular, it does not converge to s as $n \to \infty$ . Nor does $Q ^ { n }$ converge to a matrix in which each row is s: the chain’s transitions are deterministic, so $Q ^ { n }$ always consists of 0’s and 1’s. 
+
+Lastly, the stationary distribution tells us the average time between visits to any particular state.
+
+Theorem 11.3.8 (Expected time to return). Let $X _ { 0 } , X _ { 1 } , \ldots$ . be an irreducible Markov chain with stationary distribution s. Let $r _ { i }$ be the expected time it takes the chain to return to i, given that it starts at i. Then $s _ { i } = 1 / r _ { i }$
+
+Here is how the theorems apply to the two-state chain from Example 11.3.4.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280"><sup>1</sup>The notation n mod 5 denotes the remainder when n is divided by 5.</span></small>
+
+---
+
+Markov chains
+
+511
+
+Example 11.3.9 (Long-run behavior of a two-state chain). In the long run, the chain in Example 11.3.4 will spend $3 / 7$ of its time in state 1 and $4 / 7$ of its time in state 2. Starting at state 1, it will take an average of $7 / 3$ steps to return to state 1. The powers of the transition matrix converge to a matrix where each row is the stationary distribution:
+
+$$
+\left( \begin{array}{c c} 1 / 3 & 2 / 3 \\ 1 / 2 & 1 / 2 \end{array} \right) ^ {n} \to \left( \begin{array}{c c} 3 / 7 & 4 / 7 \\ 3 / 7 & 4 / 7 \end{array} \right) \text {as} n \to \infty .
+$$
+
+## 11.3.3 Google PageRank
+
+We next consider a vastly larger example of a stationary distribution, for a Markov chain on a state space with billions of interconnected nodes: the World Wide Web. The next example explains how the founders of Google modeled web-surfing as a Markov chain, and then used its stationary distribution to rank the relevance of webpages. For years Google described the resulting method, known as PageRank, as “the heart of our software”.
+
+Suppose you are interested in a certain topic, say chess, so you use a search engine to look for useful webpages with information about chess. There are millions of webpages that mention the word “chess”, so a key issue a search engine needs to deal with is what order to show the search results in. It would be a disaster to have to wade through thousands of garbage pages that mention “chess” before finding informative content.
+
+In the early days of the web, various approaches to this ranking problem were used. For example, some search engines employed people to manually decide which pages were most useful, like a museum curator. But aside from being subjective and expensive, this quickly became infeasible as the web grew. Others focused on the number of times the search term was mentioned on the site. But a page that mentions “chess” over and over again could easily be less useful than a concise reference page or a page about chess that doesn’t repeatedly mention the word. Furthermore, this method is very open to abuse: a spam page could boost its ranking just by including a long list of words repeated over and over again.
+
+Both of the above methods ignore the structure of the web: which pages link to which other pages? Taking the link structure into account led to dramatic improvements in search engines. As a first attempt, one could rank a page based on how many other pages link to it. That is, if Page A links to Page B, we consider it a vote for B, and we rank pages based on how many votes they have.
+
+But this is again very open to abuse: a spam page could boost its ranking by creating thousands of other spam pages linking to it. And though it may seem democratic for each page to have equal voting power, an incoming link from a reliable page is more meaningful than a link from an uninformative page. Google PageRank, which was introduced in 1998 by Sergey Brin and the aptly named Larry Page, ranks
+
+---
+
+512
+
+Introduction to Probability
+
+the importance of a page not only by how many pages link to it, but also by the importance of those pages.
+
+Consider the web as a directed network—which is what it is. Each page on the web is a node, and links between nodes represent links between pages. For example, suppose for simplicity that the web only has 4 pages, connected as shown in the figure below.
+
+![](../../raw/pages_0529-0544/images/page_528_image_4.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  1["1"] <--> 2["2"]
+  1["1"] <--> 3["3"]
+  2["2"] <--> 3["3"]
+  2["2"] <--> 4["4"]
+  3["3"] --> 4["4"]
+```
+</details>
+
+## FIGURE 11.5
+
+It’s a small web after all.
+
+Imagine someone randomly surfing the web, starting at some page and then randomly clicking links to go from one page to the next (with equal probabilities for all links on the current page). The idea of PageRank is to measure the importance of a page by the long-run fraction of time spent at that page.
+
+Of course, some pages may have no outgoing links at all, such as page 4 above. When the web surfer encounters such a page, rather than despairing they open up a new browser window and visits a uniformly random page. Thus a page with no links is converted to a page that links to every page, including itself. For the example above, the resulting transition matrix is
+
+$$
+Q = \left( \begin{array}{c c c c} 0 & 1 / 2 & 0 & 1 / 2 \\ 1 / 2 & 0 & 1 / 2 & 0 \\ 0 & 0 & 0 & 1 \\ 1 / 4 & 1 / 4 & 1 / 4 & 1 / 4 \end{array} \right).
+$$
+
+In general, let M be the number of pages on the web, let $Q$ be the M by M transition matrix of the chain described above, and let s be the stationary distribution (assuming it exists and is unique). Think of $s _ { j }$ as a measure of how important page $j$ is. Intuitively, the equation
+
+$$
+s _ {j} = \sum_ {i} s _ {i} q _ {i j}
+$$
+
+says that the score of page $j$ should be based not only on how many other pages link to it, but on their scores. Furthermore, the “voting power” of a page gets diluted if it has a lot of outgoing links: it counts for more if page i’s only link is to page $j$ (so that $q _ { i j } = 1 )$ than if page i has thousands of links, one of which happens to be to page j.
+
+---
+
+Markov chains
+
+513
+
+It is not clear that a unique stationary distribution exists for this chain, since it may not be irreducible and aperiodic. Even if it is irreducible and aperiodic, convergence to the stationary distribution could be very slow since the web is so immense. To address these issues, suppose that before each move, the web surfer flips a coin with probability α of Heads. If Heads, the web surfer clicks a random link from the current page; if Tails, the web surfer teleports to a uniformly random page. The resulting chain has the Google transition matrix
+
+$$
+G = \alpha Q + (1 - \alpha) \frac {J}{M},
+$$
+
+where J is the M by M matrix of all 1’s. Note that the row sums of G are 1 and that all entries are positive, so G is a valid transition matrix for an irreducible, aperiodic Markov chain. This means there is a unique stationary distribution s, called PageRank, and the chain will converge to it! The choice of α is an important consideration; choosing α close to 1 makes sense to respect the structure of the web as much as possible, but there is a tradeoff since it turns out that smaller values of α make the chain converge much faster. As a compromise, the original recommendation of Brin and Page was α = 0.85.
+
+PageRank is conceptually nice, but computing it sounds extremely difficult, considering that sG = s could be a system of 100 billion equations in 100 billion unknowns. Instead of thinking of this as a massive algebra problem, we can use the Markov chain interpretation: for any starting distribution t, $\mathbf { t } G ^ { n } \to \mathbf { s } { \mathrm { ~ a s ~ } } n \to \infty$ . And tG is easier to compute than it might seem at first:
+
+$$
+\mathbf {t} G = \alpha (\mathbf {t} Q) + \frac {1 - \alpha}{M} (\mathbf {t} J),
+$$
+
+where computing the first term isn’t too hard since Q is very sparse (mostly $\mathrm { 0 ^ { \circ } s ) }$ and computing the second term is easy since tJ is a vector of all 1’s. Then tG becomes the new t, and we can compute $\mathbf { t } G ^ { 2 } = ( \mathbf { t } G ) G$ , etc., until the sequence appears to have converged (though it is hard to know that it has converged). This gives an approximation to PageRank, and has an intuitive interpretation as the distribution of where the web surfer is after a large number of steps.
+
+## 11.4 Reversibility
+
+We have seen that the stationary distribution of a Markov chain is extremely useful for understanding its long-run behavior. Unfortunately, in general it may be computationally difficult to find the stationary distribution when the state space is large. This section addresses an important special case where working with eigenvalue equations for large matrices can be avoided.
+
+---
+
+514
+
+Introduction to Probability
+
+Definition 11.4.1 (Reversibility). Let $Q   =   ( q _ { i j } )$ be the transition matrix of a Markov chain. Suppose there is $\mathbf { s } = ( s _ { 1 } , \ldots , s _ { M } )$ with $\textstyle s _ { i } \geq 0 , \sum _ { i } s _ { i } = 1$ , such that
+
+$$
+s _ {i} q _ {i j} = s _ {j} q _ {j i}
+$$
+
+for all states $i$ and $j .$ This equation is called the reversibility or detailed balance condition, and we say that the chain is reversible with respect to s if it holds.
+
+The term “reversible” comes from the fact that a reversible chain, started according to its stationary distribution, behaves in the same way regardless of whether time is run forwards or backwards. If you record a video of a reversible chain, started according to its stationary distribution, and then show the video to a friend, either in the normal way or with time reversed, your friend will not be able to determine from watching the video whether time is running forwards or backwards.
+
+As discussed after Definition 11.3.1, we can think about the stationary distribution of a Markov chain intuitively in terms of a system consisting of a large number of particles independently bouncing around according to the transition probabilities. In the long run, the proportion of particles in any state $j$ is the stationary probability of state $j ,$ and the flow of particles out of state $j$ is counterbalanced by the flow of particles into state $j .$ To see this in more detail, let $n$ be the number of particles and s be a probability vector such that $s _ { j }$ is the current proportion of particles at state $j .$ . By definition, s is the stationary distribution of the chain if and only if
+
+$$
+s _ {j} = \sum_ {i} s _ {i} q _ {i j} = s _ {j} q _ {j j} + \sum_ {i: i \neq j} s _ {i} q _ {i j},
+$$
+
+for all states $j .$ This equation can be rewritten as
+
+$$
+n s _ {j} (1 - q _ {j j}) = \sum_ {i: i \neq j} n s _ {i} q _ {i j}.
+$$
+
+The left-hand side is the approximate number of particles that will exit from state $j$ on the next step, since there are $n s _ { j }$ particles at state $j ,$ each of which will stay at $j$ with probability $q _ { j j }$ and leave with probability $1 - q _ { j j }$ . The right-hand side is the approximate number of particles that will enter state $j$ on the next step, since for each $i \neq j$ there are $n s _ { i }$ particles at state $i ,$ each of which will enter state $j$ with probability $q _ { i j }$ . So there is a balance between particles leaving state $j$ and particles entering state $j$
+
+The reversibility condition imposes a much more stringent form of balance, in which for each pair of states $i , j$ with $i \neq j$ , the flow of particles from state $i$ to state $j$ is counterbalanced by the flow of particles from state $j$ to state i. To see this, write the reversibility equation for states $i$ and $j$ as
+
+$$
+n s _ {i} q _ {i j} = n s _ {j} q _ {j i}.
+$$
+
+The left-hand side is the approximate number of particles that will go from state $i$ to state $j$ on the next step, since there are $n s _ { i }$ particles at state $i ,$ each of which
+
+---
+
+Markov chains
+
+515
+
+has probability $q _ { i j }$ of going to state $j$ . Similarly, the right-hand side is the approximate number of particles that will go from state $i$ to state $j$ on the next step. So reversibility says that there is a balance between particles going from state i to state $j .$ , and particles going from state $j$ to state $i .$
+
+Given a transition matrix, if we can find a probability vector s that satisfies the reversibility condition, then s is automatically a stationary distribution. This should not be surprising, in light of the above discussion.
+
+Proposition 11.4.2 (Reversible implies stationary). Suppose that $Q   =   ( q _ { i j } )$ is the transition matrix of a Markov chain that is reversible with respect to a nonnegative vector $\mathbf { s } = ( s _ { 1 } , \ldots , s _ { M } )$ whose components sum to 1. Then s is a stationary distribution of the chain.
+
+Proof. We have
+
+$$
+\sum_ {i} s _ {i} q _ {i j} = \sum_ {i} s _ {j} q _ {j i} = s _ {j} \sum_ {i} q _ {j i} = s _ {j},
+$$
+
+where the last equality is because each row sum of $Q$ is 1. So s is stationary.
+
+This is a powerful result because it is often easier to verify the reversibility condition than it is to solve the entire system of equations $\mathbf { s } Q = \mathbf { s }$ . However, in general we may not know in advance whether it is possible to find s satisfying the reversibility condition, and even when it is possible, it may take a lot of effort to find an s that works. In the remainder of this section, we look at three types of Markov chains where it is possible to find an s that satisfies the reversibility condition. Such Markov chains are called reversible.
+
+First, if $Q$ is a symmetric matrix, then the stationary distribution is uniform over the state space: $\mathbf { s } = ( 1 / M , 1 / M , \ldots , 1 / M )$ . It is easy to see that if $q _ { i j } = q _ { j i }$ , then the reversibility condition $s _ { i } q _ { i j } = s _ { j } q _ { j i }$ is satisfied when $s _ { i } = s _ { j }$ for all i and $j$
+
+This is a special case of a more general fact, stated below: if each column of $Q$ sums to 1, then the stationary distribution is uniform over the state space.
+
+Proposition 11.4.3. If each column of the transition matrix $Q$ sums to 1, then the uniform distribution over all states, $( 1 / M , 1 / M , \ldots , 1 / M )$ , is a stationary distribution. (A nonnegative matrix such that the row sums and the column sums are all equal to 1 is called a doubly stochastic matrix.)
+
+Proof. Assuming each column sums to 1, the row vector $\mathbf { v } = ( 1 , 1 , \ldots , 1 )$ satisfies $\mathbf { v } Q = \mathbf { v }$ . It follows that $( 1 / M , 1 / M , \ldots , 1 / M )$ is stationary. 
+
+Second, if the Markov chain is a random walk on an undirected network, then there is a simple formula for the stationary distribution.
+
+---
+
+516
+
+Introduction to Probability
+
+Example 11.4.4 (Random walk on an undirected network). A network is a collection of nodes joined by edges; the network is undirected if edges can be traversed in either direction, meaning there are no one-way streets. Suppose a wanderer randomly traverses the edges of an undirected network. From a node $i ,$ the wanderer randomly picks any of the edges at $i ,$ with equal probabilities, and then traverses the chosen edge. For example, in the network shown below, from node 3 the wanderer goes to node 1 or node 2, with probability 1/2 each.
+
+![](../../raw/pages_0529-0544/images/page_532_image_3.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  1["1"] --> 2["2"]
+  3["3"] --> 4["4"]
+  5["5"] --> n4["4"]
+  4["4"] --> n1["1"]
+```
+</details>
+
+The degree of a node is the number of edges attached to it, and the degree sequence of a network with nodes $1 , 2 , \ldots , n$ is the vector $( d _ { 1 } , \ldots , d _ { n } )$ listing all the degrees, where $d _ { j }$ is the degree of node $j .$ An edge from a node to itself is allowed (such an edge is called a self-loop), and counts 1 toward the degree of that node.
+
+For example, the network above has degree sequence d = (4, 3, 2, 3, 2). Note that
+
+$$
+d _ {i} q _ {i j} = d _ {j} q _ {j i}
+$$
+
+for all $i , j ,$ , since $q _ { i j }$ is $1 / d _ { i } { \mathrm { ~ i f ~ } } \{ i , j \}$ is an edge and 0 otherwise, for $i \neq j$ . Therefore, by Proposition 11.4.2, the stationary distribution is proportional to the degree sequence. Intuitively, the nodes with the highest degrees are the most well-connected, so it makes sense that the chain spends the most time in these states in the long run. In the example above, this says that
+
+$$
+\mathbf {s} = \left(\frac {4}{1 4}, \frac {3}{1 4}, \frac {2}{1 4}, \frac {3}{1 4}, \frac {2}{1 4}\right)
+$$
+
+is the stationary distribution for the random walk.
+
+Exercise 20 explores random walk on a weighted undirected network; each edge has a weight assigned to it, and the wanderer chooses where to go from i with probabilities proportional to the weights on the available edges. It turns out that this is a reversible Markov chain. More surprisingly, every reversible Markov chain can be represented as random walk on a weighted undirected network! 
+
+---
+
+Markov chains
+
+517
+
+Here is a concrete example of a random walk on an undirected network.
+
+Example 11.4.5 (Knight on a chessboard). Consider a knight randomly moving around on $\mathrm { ~ a ~ } 4 \times 4$ chessboard.
+
+![](../../raw/pages_0529-0544/images/page_533_image_4.jpg)
+
+<details>
+<summary>text_image</summary>
+
+4
+3
+2
+1
+A	B	C	D
+</details>
+
+The 16 squares are labeled in a grid, e.g., the knight is currently at the square B3, and the upper left square is A4. Each move of the knight is an L-shaped jump: the knight moves two squares horizontally followed by one square vertically, or vice versa. For example, from B3 the knight can move to A1, C1, D2, or D4; from A4 it can move to B2 or C3. Note that from a light square, the knight always moves to a dark square and vice versa.
+
+Suppose that at each step, the knight moves randomly, with each possibility equally likely. This creates a Markov chain where the states are the 16 squares. Compute the stationary distribution of the chain.
+
+## Solution:
+
+There are only three types of squares on the board: 4 center squares, 4 corner squares (such as A4), and 8 edge squares (such as B4; exclude corner squares from being considered edge squares). We can consider the board to be an undirected network where two squares are connected by an edge if they are accessible via a single knight’s move. Then a center square has degree 4, a corner square has degree 2, and an edge square has degree 3, so their stationary probabilities are 4a, 2a, 3a respectively for some a.
+
+To find $a ,$ count the number of squares of each type to get $4 a \cdot 4 + 2 a \cdot 4 + 3 a \cdot 8 = 1$ giving $a = 1 / 4 8$ . Thus, each center square has stationary probability $4 / 4 8 = 1 / 1 2$ each corner square has stationary probability $2 / 4 8 = 1 / 2 4$ , and each edge square has stationary probability $3 / 4 8 = 1 / 1 6$ 
+
+Third and finally, if in each time period a Markov chain can only move one step to the left, one step to the right, or stay in place, then it is called a birth-death chain. All birth-death chains are reversible.
+
+---
+
+518
+
+Introduction to Probability
+
+Example 11.4.6 (Birth-death chain). A birth-death chain on states $\{ 1 , 2 , \ldots , M \}$ is a Markov chain with transition matrix $Q = ( q _ { i j } )$ such that $q_{ij} > 0   if   |i - j| = 1$ and $q _ { i j }   =   0   \mathrm { ~ i f ~ }   | i   -   j |   \geq   2$ . This says it’s possible to go one step to the left and possible to go one step to the right (except at boundaries) but impossible to jump further in one step. The name stems from applications to the growth or decline of a population, where a step to the right is thought of as a birth and a step to the left is thought of as a death in the population.
+
+For example, the chain shown below is a birth-death chain if the labeled transitions have positive probabilities, except for the loops from a state to itself, which are allowed to have 0 probability.
+
+![](../../raw/pages_0529-0544/images/page_534_image_4.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  1["1"] -->|"q1,1"| 2["2"]
+  n2["2"] -->|"q2,1"| n1["1"]
+  n2 -->|"q1,2"| 3["3"]
+  n3["3"] -->|"q3,2"| n2
+  n3 -->|"q2,3"| 4["4"]
+  n4["4"] -->|"q4,3"| n3
+  n4 -->|"q3,4"| 5["5"]
+  n5["5"] -->|"q5,4"| n4
+  n5 -->|"q4,5"| n4
+  n5 -->|"q5,5"| n5
+```
+</details>
+
+We will now show that any birth-death chain is reversible, and construct the stationary distribution. Let $s _ { 1 }$ be a positive number, to be specified later. Since we want $s _ { \mathrm { 1 } } q _ { \mathrm { 1 2 } } = s _ { \mathrm { 2 } } q _ { \mathrm { 2 1 } }$ , let
+
+$$
+s _ {2} = s _ {1} q _ {1 2} / q _ {2 1}.
+$$
+
+Then since we want $s _ { \mathrm { 2 } } q _ { \mathrm { 2 3 } } = s _ { \mathrm { 3 } } q _ { \mathrm { 3 2 } }$ , let
+
+$$
+s _ {3} = s _ {2} q _ {2 3} / q _ {3 2} = s _ {1} q _ {1 2} q _ {2 3} / (q _ {3 2} q _ {2 1}).
+$$
+
+Continuing in this way, let
+
+$$
+s _ {j} = \frac {s _ {1} q _ {1 2} q _ {2 3} \dots q _ {j - 1 , j}}{q _ {j , j - 1} q _ {j - 1 , j - 2} \dots q _ {2 1}},
+$$
+
+for all states $j$ with $2 \leq j \leq M$ . Choose $s _ { 1 }$ so that the $s _ { j }$ sum to 1. Then the chain is reversible with respect to s, since $q_{ij} = q_{ji} = 0   if   |i - j| \geq 2$ and by construction $s_{i}q_{ij} = s_{j}q_{ji}   if   |i - j| = 1$ . Thus, s is the stationary distribution. 
+
+The Ehrenfest chain is a birth-death chain that can be used as a simple model for the diffusion of gas molecules. The stationary distribution turns out to be a Binomial distribution.
+
+Example 11.4.7 (Ehrenfest). There are two containers with a total of M distinguishable particles. Transitions are made by choosing a random particle and moving it from its current container into the other container. Initially, all of the particles are in the second container. Let $X _ { n }$ be the number of particles in the first container at time $n ,$ so $X _ { 0 } = 0$ and the transition from $X _ { n }$ to $X _ { n + 1 }$ is done as described above. This is a periodic Markov chain with state space $\{ 0 , 1 , \ldots , M \}$
+
+---
+
+Markov chains
+
+519
+
+![](../../raw/pages_0529-0544/images/page_535_image_2.jpg)
+
+As illustrated above, the first container has $X _ { n }$ particles and the second has $M   -   X _ { n }$ particles. We will use the reversibility condition to show that $\mathbf { s } = ( s _ { 0 } , s _ { 1 } , \ldots , s _ { M } )$ with
+
+$$
+s _ {i} = \binom{M}{i} \left(\frac {1}{2}\right) ^ {M}
+$$
+
+is the stationary distribution. Note that this is the $\mathrm { B i n } ( M , 1 / 2 )$ PMF.
+
+Let $s _ { i }$ be as claimed, and check that $s _ { i } q _ { i j } = s _ { j } q _ { j i }$ . If $j = i + 1$ (with $i < M )$ , then
+
+$$
+s _ {i} q _ {i j} = \binom{M}{i} \left(\frac {1}{2}\right) ^ {M} \frac {M - i}{M} = \frac {M !}{(M - i) ! i !} \left(\frac {1}{2}\right) ^ {M} \frac {M - i}{M} = \binom{M - 1}{i} \left(\frac {1}{2}\right) ^ {M},
+$$
+
+$$
+s _ {j} q _ {j i} = \binom{M}{j} \left(\frac {1}{2}\right) ^ {M} \frac {j}{M} = \frac {M !}{(M - j) ! j !} \left(\frac {1}{2}\right) ^ {M} \frac {j}{M} = \binom{M - 1}{j - 1} \left(\frac {1}{2}\right) ^ {M} = s _ {i} q _ {i j}.
+$$
+
+By a similar calculation, if $j = i - 1$ (with $i > 0 )$ , then $s _ { i } q _ { i j } = s _ { j } q _ { j i }$ . For all other values of i and $j ,   q _ { i j } = q _ { j i } = 0$ . Therefore, s is stationary.
+
+The Binomial was a natural guess for the stationary distribution because after running the Markov chain for a long time, each particle is about equally likely to be in either container. However, the PMF does not converge to a Binomial since the chain has period 2, with $X _ { n }$ guaranteed to be even when n is even, and odd when n is odd.
+
+Happily, it turns out that another interpretation of the stationary distribution remains valid here: $s _ { i }$ is the long-run proportion of time that the chain spends in state i. More precisely, letting $I _ { k }$ be the indicator of the chain being in state i at time k, it can be shown that
+
+$$
+\frac {1}{n} \sum_ {k = 0} ^ {n - 1} I _ {k} \rightarrow s _ {i}
+$$
+
+as $n \to \infty$ , with probability 1.
+
+![](../../raw/pages_0529-0544/images/page_535_image_14.jpg)
+
+---
+
+520
+
+Introduction to Probability
+
+## 11.5 Recap
+
+A Markov chain is a sequence of r.v.s $X _ { 0 } , X _ { 1 } , X _ { 2 } , \ldots$ . satisfying the Markov property, which states that given the present, the past and future are conditionally independent:
+
+$$
+P (X _ {n + 1} = j | X _ {n} = i, X _ {n - 1} = i _ {n - 1}, \dots , X _ {0} = i _ {0}) = P (X _ {n + 1} = j | X _ {n} = i) = q _ {i j}.
+$$
+
+The transition matrix $Q = ( q _ { i j } )$ gives the probabilities of moving from any state to any other state in one step. The ith row of the transition matrix is the conditional PMF of $X _ { n + 1 }$ given $X _ { n } = i .$ The nth power of the transition matrix gives the $n -$ step transition probabilities. If we specify initial conditions $s _ { i } = P ( X _ { 0 } = i )$ and let $\mathbf { s } = ( s _ { 1 } , \ldots , s _ { M } )$ , then the marginal PMF of $X _ { n }$ is $\mathbf { s } Q ^ { n }$
+
+States of a Markov chain can be classified as recurrent or transient: recurrent if the chain will return to the state over and over, and transient if it will eventually leave forever. States can also be classified according to their periods; the period of state i is the greatest common divisor of the numbers of steps it can take to return to $i ,$ starting from i. A chain is irreducible if it is possible to get from any state to any state in a finite number of steps, and aperiodic if each state has period 1.
+
+A stationary distribution for a finite Markov chain is a PMF s such that $\mathbf { s } Q = \mathbf { s } .$ Under various conditions, the stationary distribution of a finite Markov chain exists and is unique, and the PMF of $X _ { n }$ converges to s as $n \to \infty$ . If state i has stationary probability $s _ { i } .$ then the expected time for the chain to return to $i ,$ starting from $i ,$ is $r _ { i } = 1 / s _ { i }$
+
+If a PMF s satisfies the reversibility condition $s _ { i } q _ { i j } \; = \; s _ { j } q _ { j i }$ for all $i$ and $j ,$ it guarantees that s is a stationary distribution of the Markov chain with transition matrix $Q = ( q _ { i j } )$ . Markov chains for which there exists s satisfying the reversibility condition are called reversible. We discussed three types of reversible chains:
+
+1. If the transition matrix is symmetric, then the stationary distribution is uniform over all states.
+
+2. If the chain is a random walk on an undirected network, then the stationary distribution is proportional to the degree sequence, i.e.,
+
+$$
+s _ {j} = \frac {d _ {j}}{\sum_ {i} d _ {i}}.
+$$
+
+3. If the chain is a birth-death chain, then the stationary distribution satisfies
+
+$$
+s _ {j} = \frac {s _ {1} q _ {1 2} q _ {2 3} \cdots q _ {j - 1 , j}}{q _ {j , j - 1} q _ {j - 1 , j - 2} \cdots q _ {2 1}}
+$$
+
+for $j > 1$ , where $s _ { 1 }$ is solved for at the end to make $s _ { 1 } + \dots + s _ { M } = 1$
+
+---
+
+Markov chains
+
+521
+
+![](../../raw/pages_0529-0544/images/page_537_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["any distribution t for the initial state"] -->|generate| B["X₀, X₁, X₂, ..."]
+  C["stationary distribution s for the initial state"] -->|generate| D["Y₀, Y₁, Y₂, ..."]
+  B --> E["Xₙ = i\n(given this event, past and future are independent)"]
+  D --> F["Yₙ = i\n(given this event, past and future are independent)"]
+  E --> G["P(Xₙ = i) = (tQⁿ)i"]
+  F --> H["P(Yₙ = i) = sᵢ"]
+  G --> I["converges to sᵢ as n → ∞"]
+```
+</details>
+
+FIGURE 11.6
+
+Given a transition matrix Q and a distribution t over the states, we can generate a Markov chain $X _ { 0 } , X _ { 1 } , \ldots$ by choosing $X _ { 0 }$ according to t and then running the chain according to the transition probabilities. An important event is $X _ { n } = i$ , the event that the chain is visiting state i at time n. We can then find the PMF of $X _ { n }$ in terms of $Q$ and t, and (under conditions discussed in the chapter) the PMF will converge to the stationary distribution s. If instead we start the chain out according to s, then the chain will stay stationary forever.
+
+Figure 11.6 compares two ways to run a Markov chain with transition matrix $Q ;$ choosing the initial state according to an arbitrary distribution t over the states, or choosing the initial state according to the stationary distribution s. In the former case, the exact PMF after n steps can be found in terms of $Q$ and t, and the PMF converges to s (under some very general conditions discussed in this chapter). In the latter case, the chain is stationary forever.
+
+## 11.6 R
+
+## Matrix calculations
+
+Let’s do some calculations for the 4-state Markov chain in Example 11.1.5, as an example of working with transition matrices in R. First, we need to specify the transition matrix $Q .$ This is done with the matrix command: we type in the entries
+
+---
+
+522
+
+Introduction to Probability
+
+of the matrix, row by row, as a long vector, and then we tell R the number of rows and columns in the matrix (nrow and ncol), as well as the fact that we typed in the entries by row (byrow=TRUE):
+
+<div class="docvortex-algorithm" style="white-space: pre-wrap; font-family:monospace;">
+Q &lt;- matrix(c(1/3,1/3,1/3,0,
+           0,0,1/2,1/2,
+           0,1,0,0,
+           1/2,0,0,1/2),nrow=4,ncol=4,byrow=TRUE)
+</div>
+
+To obtain higher order transition probabilities, we can multiply Q by itself repeatedly. The matrix multiplication command in R is $\% * \%$ (not just \*). So
+
+<div class="docvortex-algorithm" style="white-space: pre-wrap; font-family:monospace;">
+Q2 &lt;- Q %*% Q
+Q3 &lt;- Q2 %*% Q
+Q4 &lt;- Q2 %*% Q2
+Q5 &lt;- Q3 %*% Q2
+</div>
+
+produces $Q ^ { 2 }$ through $Q ^ { 5 }$ . If we want to know the probability of going from state 3 to state 4 in exactly 5 steps, we can extract the (3, 4) entry of $Q ^ { 5 }$
+
+Q5[3,4]
+
+This gives 0.229, agreeing with the value 11/48 shown in Example 11.1.5.
+
+To compute a power $Q ^ { n }$ without directly doing repeated matrix multiplications, we can use the command Q $\% \sim \%$ n after installing and loading the expm package. For example, Q %^% 42 yields $Q ^ { 4 2 }$ . By exploring the behavior of $Q ^ { n }$ as n grows, we can see Theorem 11.3.6 in action (and get a sense of how long it takes for the chain to get very close to its stationary distribution).
+
+In particular, for n large each row of $Q ^ { n }$ is approximately (0.214, 0.286, 0.214, 0.286), so this is approximately the stationary distribution. Another way to obtain the stationary distribution numerically is to use
+
+eigen(t(Q))
+
+to compute the eigenvalues and eigenvectors of the transpose of $Q ;$ then the eigenvector corresponding to the eigenvalue 1 can be selected and normalized so that the components sum to 1.
+
+## Gambler’s ruin
+
+To simulate from the gambler’s ruin chain from Example 11.2.6, we start by deciding the total amount of money N, the probability p of gambler A winning a given round, and the number of time periods nsim that we wish to simulate.
+
+<div class="docvortex-algorithm" style="white-space: pre-wrap; font-family:monospace;">
+N &lt;- 10
+p &lt;- 1/2
+nsim &lt;- 80
+</div>
+
+---
+
+Markov chains
+
+523
+
+Next, we allocate a vector of length nsim called x, which will store the values of the Markov chain. For the initial condition, we set the first entry of x equal to 5; this gives both gamblers \$5 to start with.
+
+```r
+x <- rep(0,nsim)
+x[1] <- 5
+```
+
+Now we are ready to simulate the subsequent values of the Markov chain. This is achieved with the following block of code, which we will explain step by step.
+
+```txt
+for (i in 2:nsim){
+    if (x[i-1]==0 || x[i-1]==N){
+        x[i] <- x[i-1]
+    }
+    else{
+        x[i] <- x[i-1] + sample(c(1,-1), 1, prob=c(p,1-p))
+    }
+}
+```
+
+The first line and the outer set of braces constitute a for loop: for (i in 2:nsim) means that all the code inside the for loop will be executed over and over, with the value of i set to 2, then set to 3, then set to 4, all the way until i reaches the value nsim. Each pass through the loop represents one step of the Markov chain.
+
+Inside the for loop, we first check to see whether the chain is already at one of the endpoints, 0 or N; we do this with an if statement. If the chain is already at 0 or N, then we set its new value equal to its previous value, since the chain is not allowed to escape 0 or N. Otherwise, if the chain is not at 0 or N, it is free to move left or right. We use the sample command to move to the right 1 unit or to the left 1 unit, with probabilities p and 1-p, respectively.
+
+To see what path was taken by the Markov chain during our simulation, we can plot the values of x as a function of time:
+
+```txt
+plot(x, type='l', ylim=c(0,N))
+```
+
+You should see a path that starts at 5 and bounces up and down before being absorbed into state 0 or state N.
+
+## Simulating from a finite-state Markov chain
+
+With a few modifications, we can simulate from an arbitrary Markov chain on a finite state space. For concreteness, we will illustrate how to simulate from the 4-state Markov chain in Example 11.1.5.
+
+As above, we can type
+
+```txt
+Q <- matrix(c(1/3,1/3,1/3,0,
+0,0,1/2,1/2,
+```
+
+---
+
+524
+
+Introduction to Probability
+
+```csv
+0,1,0,0,
+1/2,0,0,1/2),nrow=4,ncol=4,byrow=TRUE)
+```
+
+to specify the transition matrix Q.
+
+Next, we choose the number of states and the number of time periods to simulate, we allocate space for the results of the simulation, and we choose initial conditions for the chain. In this example, x[1] <- sample(1:M,1) says the initial distribution of the chain is uniform over all states.
+
+```r
+M <- nrow(Q)
+nsim <- 10^4
+x <- rep(0,nsim)
+x[1] <- sample(1:M,1)
+```
+
+For the simulation itself, we again use sample to choose a number from 1 to M. At time i, the chain was previously at state x[i-1], so we must use row x[i-1] of the transition matrix to determine the probabilities of sampling 1, 2, . . . , M. The notation Q[x[i-1],] denotes row x[i-1] of the matrix Q.
+
+```txt
+for (i in 2:nsim){
+    x[i] <- sample(M, 1, prob=Q[x[i-1],])
+}
+```
+
+Since we set nsim to a large number, it may be reasonable to believe that the chain is close to stationarity during the latter portion of the simulation. To check this, we eliminate the first half of the simulations to give the chain time to reach stationarity:
+
+```r
+x <- x[-(1:(nsim/2))]
+```
+
+We then use the table command to calculate the number of times the chain visited each state; dividing by length(x) converts the counts into proportions. The result is an approximation to the stationary distribution.
+
+```txt
+table(x)/length(x)
+```
+
+For comparison, the true stationary distribution of the chain is approximately (0.214, 0.286, 0.214, 0.286). Is this close to what you obtained via simulation?
+
+## 11.7 Exercises
+
+Exercises marked with s have detailed solutions at [http://stat110.net](http://stat110.net).
+
+---
+
+Markov chains
+
+525
+
+## Markov property
+
+1. s Let $X _ { 0 } , X _ { 1 } , X _ { 2 } , \ldots$ . be a Markov chain. Show that $X _ { 0 } , X _ { 2 } , X _ { 4 } , X _ { 6 } , \ldots$ . is also a Markov chain, and explain why this makes sense intuitively.
+
+2. s Let $X _ { 0 } , X _ { 1 } , X _ { 2 } , \ldots$ . be an irreducible Markov chain with state space $\{ 1 , 2 , \ldots , M \}$ $M \geq 3$ , transition matrix $Q = ( q _ { i j } )$ , and stationary distribution $\mathbf { s } = ( s _ { 1 } , \ldots , s _ { M } )$ . Let the initial state $X _ { 0 }$ follow the stationary distribution, i.e., $P ( X _ { 0 } = i ) = s _ { i }$
+
+(a) On average, how many of $X _ { 0 } , X _ { 1 } , \ldots , X _ { 9 }$ equal 3? (In terms of s; simplify.)
+
+(b) Let $Y _ { n } = ( X _ { n } - 1 ) ( X _ { n } - 2 )$ . For $M = 3$ , find an example of $Q$ (the transition matrix for the original chain $X _ { 0 } , X _ { 1 } , \dots )$ where $Y _ { 0 } , Y _ { 1 } , \ldots$ . is Markov, and another example of Q where $Y _ { 0 } , Y _ { 1 } , \ldots$ . is not Markov. In your examples, make $q _ { i i } > 0$ for at least one i and make sure it is possible to get from any state to any other state eventually.
+
+3. A Markov chain has two states, A and B, with transitions as follows:
+
+![](../../raw/pages_0529-0544/images/page_541_image_8.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["A"] -->|"0.5"| B["B"]
+  B["B"] -->|"1"| A
+```
+</details>
+
+Suppose we do not get to observe this Markov chain, which we’ll call $X _ { 0 } , X _ { 1 } , X _ { 2 } , \ldots .$ Instead, whenever the chain transitions from A back to $A ,$ we observe a 0, and whenever it changes states, we observe a 1. Let the sequence of 0’s and 1’s be called $Y _ { 0 } , Y _ { 1 } , Y _ { 2 } , \ldots .$
+
+For example, if the X chain starts out as
+
+$$
+A, A, B, A, B, A, A, \dots
+$$
+
+then the Y chain starts out as
+
+$$
+0, 1, 1, 1, 1, 0, \dots
+$$
+
+(a) Show that $Y _ { 0 } , Y _ { 1 } , Y _ { 2 } , \ldots$ . is not a Markov chain.
+
+(b) In Example 11.1.3, we dealt with a violation of the Markov property by enlarging the state space to incorporate second-order dependence. Show that such a trick will not work for $Y _ { 0 } , Y _ { 1 } , Y _ { 2 } , \ldots .$ That is, no matter how large m is,
+
+$$
+Z _ {n} = (Y _ {n - m + 1}, Y _ {n - m + 2}, \dots , Y _ {n}), n = m - 1, m, \dots
+$$
+
+is still not a Markov chain.
+
+4. There are three blocks, floating in a sea of lava. Label the blocks 1, 2, 3, from left to right. Mark the Kangaroo, a video game character, is standing on block 1. To reach safety, he must get to block 3. He can’t jump directly from block 1 to block 3; his only hope is to jump from block 1 to block 2, then jump from block 2 to block 3. Each time he jumps, he has probability $1 / 2$ of success and probability $1 / 2$ of “dying” by falling into the lava. If he “dies”, he starts again at block 1.
+
+Let J be the total number of jumps that Mark will make in order to get to block 3.
+
+(a) Find $E ( J )$ , using the Markov property and conditional expectation.
+(b) Explain how this problem relates to a coin tossing problem from Chapter 9.
+
+---
+
+526
+
+Introduction to Probability
+
+## Stationary distribution
+
+5. s Consider the Markov chain shown below, where $0   <   p   <   1$ and the labels on the arrows indicate transition probabilities.
+
+![](../../raw/pages_0529-0544/images/page_542_image_4.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  1["1"] -->|"1-p"| 2["2"]
+  n2["2"] -->|"1-p"| 1["1"]
+  n1["1"] -->|"p"| n1
+```
+</details>
+
+(a) Write down the transition matrix Q for this chain.
+(b) Find the stationary distribution of the chain.
+(c) What is the limit of $Q ^ { n }$ as $n \to \infty ?$
+
+6. s Consider the Markov chain shown below, where the state space is {1, 2, 3, 4} and the labels to the right of arrows indicate transition probabilities.
+
+![](../../raw/pages_0529-0544/images/page_542_image_10.jpg)
+
+(a) Write down the transition matrix $Q$ for this chain.
+(b) Which states (if any) are recurrent? Which states (if any) are transient?
+(c) Find two different stationary distributions for the chain.
+
+7. s Daenerys has three dragons: Drogon, Rhaegal, and Viserion. Each dragon independently explores the world in search of tasty morsels. Let $X _ { n } , Y _ { n } , Z _ { n }$ be the locations at time n of Drogon, Rhaegal, Viserion respectively, where time is assumed to be discrete and the number of possible locations is a finite number M. Their paths $X _ { 0 } , X _ { 1 } , X _ { 2 } , \ldots ;$ $Y _ { 0 } , Y _ { 1 } , Y _ { 2 } , \ldots ;$ and $Z _ { 0 } , Z _ { 1 } , Z _ { 2 } , \ldots$ . are independent Markov chains with the same stationary distribution s. Each dragon starts out at a random location generated according to the stationary distribution.
+
+(a) Let state 0 be home (so s0 is the stationary probability of the home state). Find the expected number of times that Drogon is at home, up to time 24, i.e., the expected number of how many of $X _ { 0 } , X _ { 1 } , \ldots , X _ { 2 4 }$ are state 0 (in terms of s0).
+
+(b) If we want to track all 3 dragons simultaneously, we need to consider the vector of positions, $( X _ { n } , Y _ { n } , Z _ { n } )$ . There are $M ^ { 3 }$ possible values for this vector; assume that each is assigned a number from 1 to $M ^ { 3 } , \; \mathrm { e . g . , \; i f } \; M   =   2$ we could encode the states $( 0 , 0 , 0 ) , ( 0 , 0 , 1 ) , ( 0 , 1 , 0 ) , \ldots , ( 1 , 1 , 1 )$ as $1 , 2 , 3 , \ldots , 8$ respectively. Let $W _ { n }$ be the number between 1 and $M ^ { 3 }$ representing $( X _ { n } , Y _ { n } , Z _ { n } )$ . Determine whether $W _ { 0 } , W _ { 1 } , \ldots$ . is a Markov chain.
+
+(c) Given that all 3 dragons start at home at time 0, find the expected time it will take for all 3 to be at home again at the same time.
+
+---
+
+Markov chains
+
+527
+
+8. Consider the following Markov chain with $5 2 !   \approx   8   \times   1 0 ^ { 6 7 }$ states. The states are the possible orderings of a standard 52-card deck. To run one step of the chain, pick 2 different cards from the deck, with all pairs equally likely, and swap the 2 cards. Find the stationary distribution of the chain.
+
+## Reversibility
+
+9. s A Markov chain $X _ { 0 } , X _ { 1 } , \ldots$ with state space $\{ - 3 , - 2 , - 1 , 0 , 1 , 2 , 3 \}$ proceeds as follows. The chain starts at $X _ { 0 }   =   0$ . If $X _ { n }$ is not an endpoint $( - 3   \mathrm { ~ o r ~ }   3 )$ , then $X _ { n + 1 }$ is $X _ { n } - 1$ or $X _ { n } + 1$ , each with probability $1 / 2$ . Otherwise, the chain gets reflected off the endpoint, i.e., from 3 it always goes to 2 and from −3 it always goes to −2. A diagram of the chain is shown below.
+
+![](../../raw/pages_0529-0544/images/page_543_image_5.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["-3"] <--> B["-2"]
+  B <--> C["-1"]
+  C <--> D["0"]
+  D <--> E["1"]
+  E <--> F["2"]
+  F <--> G["3"]
+```
+</details>
+
+(a) Is $| X _ { 0 } | , | X _ { 1 } | , | X _ { 2 } | , \ldots$ . also a Markov chain? Explain.
+
+Hint: For both (a) and (b), think about whether the past and future are conditionally independent given the present; don’t do calculations with a $7$ by $7$ transition matrix!
+
+(b) Let sgn be the sign function: sgn $\operatorname { l } ( x )   =   1   \operatorname { i f }   x   >   0 ,   \operatorname { s g n } ( x )   =   - 1   \operatorname { i f }   x   <   0$ , and $\mathrm { s g n } ( 0 ) = 0$ . Is $\operatorname { s g n } ( X _ { 0 } ) , \operatorname { s g n } ( X _ { 1 } ) , \operatorname { s g n } ( X _ { 2 } ) , \ldots$ a Markov chain? Explain.
+
+(c) Find the stationary distribution of the chain $X _ { 0 } , X _ { 1 } , X _ { 2 } , \ldots .$
+
+(d) Find a simple way to modify some of the transition probabilities $q _ { i j }$ for $i \in \{ - 3 , 3 \}$ to make the stationary distribution of the modified chain uniform over the states.
+
+10. s Let $G$ be an undirected network with nodes labeled $1 , 2 , \ldots , M$ (edges from a node to itself are not allowed), where $M \geq 2$ and random walk on this network is irreducible. Let $d _ { j }$ be the degree of node $j$ for each $j .$ Create a Markov chain on the state space $1 , 2 , \ldots , M$ , with transitions as follows. From state $i ,$ generate a proposal $j$ by choosing a uniformly random $j$ such that there is an edge between i and $j$ in $G ;$ then $\mathbf { g } \mathbf { o }$ to j with probability min $( d _ { i } / d _ { j } , 1 )$ , and stay at i otherwise.
+
+(a) Find the transition probability $q _ { i j }$ from i to $j$ for this chain, for all states $i , j$
+
+(b) Find the stationary distribution of this chain.
+
+11. s (a) Consider a Markov chain on the state space $\{ 1 , 2 , \ldots , 7 \}$ with the states arranged in a “circle” as shown below, and transitions given by moving one step clockwise or counterclockwise with equal probabilities. For example, from state $6 ,$ the chain moves to state $7$ or state 5 with probability $1 / 2$ each; from state $^ { 7 , }$ the chain moves to state 1 or state 6 with probability $1 / 2$ each. The chain starts at state 1.
+
+![](../../raw/pages_0529-0544/images/page_543_image_15.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  1["1"] --> 2["2"]
+  n2["2"] --> 3["3"]
+  n3["3"] --> 4["4"]
+  n4["4"] --> 5["5"]
+  n5["5"] --> 6["6"]
+  n6["6"] --> 7["7"]
+  n7["7"] --> n1["1"]
+```
+</details>
+
+---
+
+528
+
+Introduction to Probability
+
+Find the stationary distribution of this chain.
+
+(b) Consider a new chain obtained by “unfolding the circle”. Now the states are arranged as shown below. From state 1 the chain always goes to state 2, and from state 7 the chain always goes to state 6. Find the new stationary distribution.
+
+![](../../raw/pages_0545-0560/images/page_544_image_4.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  1["1"] --> 2["2"]
+  n2["2"] --> 3["3"]
+  n3["3"] --> 4["4"]
+  n4["4"] --> 5["5"]
+  n5["5"] --> 6["6"]
+  n6["6"] --> 7["7"]
+```
+</details>
+
+12. s Let $X _ { n }$ be the price of a certain stock at the start of the nth day, and assume that $X _ { 0 } , X _ { 1 } , X _ { 2 } , \ldots$ . follows a Markov chain with transition matrix Q. (Assume for simplicity that the stock price can never go below 0 or above a certain upper bound, and that it is always rounded to the nearest dollar.)
+
+(a) A lazy investor only looks at the stock once a year, observing the values on days 0, 365, 2 · 365, 3 · 365, . . . . So the investor observes $Y _ { 0 } , Y _ { 1 } , \ldots ,$ where $Y _ { n }$ is the price after n years (which is 365n days; you can ignore leap years). Is $Y _ { 0 } , Y _ { 1 } , \ldots$ . also a Markov chain? Explain why or why not; if so, what is its transition matrix?
+(b) The stock price is always an integer between \$0 and \$28. From each day to the next, the stock goes up or down by \$1 or \$2, all with equal probabilities (except for days when the stock is at or near a boundary, i.e., at \$0, \$1, \$27, or \$28).
+
+If the stock is at \$0, it goes up to \$1 or \$2 on the next day (after receiving government bailout money). If the stock is at \$28, it goes down to \$27 or \$26 the next day. If the stock is at \$1, it either goes up to \$2 or \$3, or down to \$0 (with equal probabilities); similarly, if the stock is at \$27 it either goes up to \$28, or down to \$26 or \$25. Find the stationary distribution of the chain.
+
+13. s In chess, the king can move one square at a time in any direction (horizontally, vertically, or diagonally).
+
+![](../../raw/pages_0545-0560/images/page_544_image_11.jpg)
+
+<details>
+<summary>text_image</summary>
+
+8
+7
+6
+5
+4
+3
+2
+1
+a b c d e f g h
+</details>
+
+For example, in the diagram, from the current position the king can move to any of 8 possible squares. A king is wandering around on an otherwise empty $8 \times 8$ chessboard, where for each move all possibilities are equally likely. Find the stationary distribution of this chain (of course, don’t list out a vector of length 64 explicitly! Classify the 64 squares into types and say what the stationary probability is for a square of each type).
+
+14. A chess piece is wandering around on an otherwise vacant $8 \times 8$ chessboard. At each move, the piece (a king, queen, rook, bishop, or knight) chooses uniformly at random where to go, among the legal choices (according to the rules of chess, which you should look up if you are unfamiliar with them).
+
+(a) For each of these cases, determine whether the Markov chain is irreducible, and whether it is aperiodic.
+
+---
+
+Markov chains
+
+529
+
+Hint for the knight: Note that a knight’s move always goes from a light square to a dark square or vice versa. A knight’s tour is a sequence of knight moves on a chessboard such that the knight visits each square exactly once. Many knight’s tours exist.
+
+(b) Suppose for this part that the piece is a rook, with initial position chosen uniformly at random. Find the distribution of where the rook is after n moves.
+(c) Now suppose that the piece is a king, with initial position chosen deterministically to be the upper left corner square. Determine the expected number of moves it takes the king to return to that square, fully simplified, preferably in at most 140 characters.
+(d) The stationary distribution for the random walk of the king from the previous part is not uniform over the 64 squares of the chessboard. A recipe for modifying the chain to obtain a uniform stationary distribution is as follows. Label the squares as $1 , 2 , \ldots , 6 4$ and let $d _ { i }$ be the number of legal moves from square i. Suppose the king is currently at square i. The next move of the chain is determined as follows:
+
+Step 1: Generate a proposal square $j$ by picking uniformly at random among the legal moves from i.
+
+Step 2: Flip a coin with probability min $\mathbf { . } ( d _ { i } / d _ { j } , 1 )$ of Heads. If the coin lands Heads, go to j. Otherwise, stay at i.
+
+Show that this modified chain has a stationary distribution that is uniform over the 64 squares.
+
+15. s Find the stationary distribution of the Markov chain shown below, without using matrices. The number above each arrow is the corresponding transition probability.
+
+![](../../raw/pages_0545-0560/images/page_545_image_11.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  1["1"] -->|"1\n1/2"| 2["2"]
+  n2["2"] -->|"1/2\n1/4"| 3["3"]
+  n3["3"] -->|"5/12"| n3
+  n3 -->|"1/3\n1/6"| 4["4"]
+  n4["4"] -->|"7/12"| n4
+  n4 -->|"1/4\n1/8"| 5["5"]
+```
+</details>
+
+16. There are two urns with a total of 2N distinguishable balls. Initially, the first urn has N white balls and the second urn has N black balls. At each stage, we pick a ball at random from each urn and interchange them. Let $X _ { n }$ be the number of black balls in the first urn at time n. This is a Markov chain on the state space $\{ 0 , 1 , \ldots , N \}$
+
+(a) Give the transition probabilities of the chain.
+(b) Show that $( s _ { 0 } , s _ { 1 } , \ldots , s _ { N } )$ where
+
+$$
+s _ {i} = \frac {\binom {N} {i} \binom {N} {N - i}}{\binom {2 N} {N}}
+$$
+
+is the stationary distribution, by verifying the reversibility condition.
+
+17. Find the stationary distribution of a Markov chain $X _ { 0 } , X _ { 1 } , X _ { 2 } , \ldots$ . on the state space $\{ 0 , 1 , \ldots , 1 1 0 \}$ , with transition probabilities given by
+
+$$
+P (X _ {n + 1} = j | X _ {n} = 0) = p, \text { for } j = 1, 2, \dots , 1 1 0;
+$$
+
+$$
+P (X _ {n + 1} = 0 | X _ {n} = 0) = 1 - 1 1 0 p;
+$$
+
+$$
+P (X _ {n + 1} = j | X _ {n} = j) = 1 - r, \text { for } j = 1, 2, \dots , 1 1 0;
+$$
+
+$$
+P (X _ {n + 1} = 0 | X _ {n} = j) = r, \text {   for   } j = 1, 2, \dots , 1 1 0,
+$$
+
+where p and r are constants with $\textstyle 0 < p < { \frac { 1 } { 1 1 0 } }$ and $0 < r < 1$
+
+---
+
+530
+
+Introduction to Probability
+
+18. Determine whether the Markov chain shown below is reversible, and find the stationary distribution of the chain. The label to the left of an arrow gives the corresponding transition probability.
+
+![](../../raw/pages_0545-0560/images/page_546_image_3.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  1["1"] -->|0.2| n1["1"]
+  n1 -->|0.4| n2["2"]
+  n1 -->|0.2| n3["3"]
+  n1 -->|0.4| n3
+  n1 -->|0.2| n4["4"]
+  2["2"] -->|0.2| n1
+  n2 -->|0.4| n4
+  n2 -->|0.2| n5["5"]
+  n2 -->|0.4| n5
+  n2 -->|0.2| n6["6"]
+  3["3"] -->|0.2| n1
+  n3 -->|0.4| n6
+  n3 -->|0.2| n7["7"]
+  n3 -->|0.4| n7
+  4["4"] -->|0.8| n4
+  5["5"] -->|0.8| n5
+  6["6"] -->|0.8| n6
+  7["7"] -->|0.8| n7
+  n7 -->|0.2| n3
+```
+</details>
+
+19. Nausicaa Distribution sells distribution plushies on Etsy. They have two different photos of the Evil Cauchy plushie but do not know which is more effective in getting a customer to purchase an Evil Cauchy plushie. Each visitor to their website is shown one of the two photos (call them Photo A and Photo B), and then the visitor either does buy an Evil Cauchy (“success”) or does not buy one (“failure”).
+
+Let a and b be the probabilities of success when Photo A is shown and when Photo B is shown, respectively. Even though the Evil Cauchy is irresistible, suppose that $0 < a < 1$ and $0 < b < 1$ . Suppose that the following strategy is followed (note that the strategy can be followed without knowing a and b). Show the first visitor Photo A. If that visitor buys an Evil Cauchy, continue with Photo A for the next visitor; otherwise, switch to Photo B. Similarly, if the nth visitor is a “success” then show the $( n + 1 ) \mathrm { s t }$ visitor the same photo, and otherwise switch to the other photo.
+
+(a) Show how to represent the resulting process as a Markov chain, drawing a diagram and giving the transition matrix. The states are A1, B1, A0, B0 (use this order for the transition matrix and stationary distribution), where, for example, being at state A1 means that the current visitor was shown Photo A and was a success.
+(b) Determine whether this chain is reversible.
+
+Hint: First think about which transition probabilities are zero and which are nonzero.
+
+(c) Show that the stationary distribution is proportional to $\textstyle { \left( { \frac { a } { 1 - a } } , { \frac { b } { 1 - b } } , 1 , 1 \right) }$ , and find the stationary distribution.
+(d) Show that for $a \neq b ,$ the stationary probability of success for each visitor is strictly better than the success probability that would be obtained by independently, randomly choosing (with equal probabilities) which photo to show to each visitor.
+
+20. This exercise considers random walk on a weighted undirected network. Suppose that an undirected network is given, where each edge $( i , j )$ has a nonnegative weight $w _ { i j }$ assigned to it (we allow $i = j$ as a possibility). We assume that $w _ { i j } = w _ { j i }$ since the edge from i to $j$ is considered the same as the edge from $j$ to i. To simplify notation, define $w _ { i j } = 0$ whenever $( i , j )$ is not an edge.
+
+---
+
+Markov chains
+
+531
+
+When at node i, the next step is determined by choosing an edge attached to i with probabilities proportional to the weights. For example, if the walk is at node 1 and there are 3 possible edges coming out from node 1, with weights 7, 1, 4, then the first of these 3 edges is traversed with probability $7 / 1 2$ , the second is traversed with probability $1 / 1 2 ,$ and the third is traversed with probability $4 / 1 2$ If all the weights equal 1, then the process reduces to the kind of random walk on a network that we studied earlier.
+
+(a) Let $\begin{array} { r } { v _ { i } = \sum _ { j } w _ { i j } } \end{array}$ for all nodes i. Show that the stationary distribution of node i is proportional to $v _ { i }$
+
+(b) Show that every reversible Markov chain can be represented as a random walk on a weighted undirected network. That is, given the transition matrix Q of a reversible Markov chain, show that we can choose the weights $w _ { i j }$ so that the random walk defined above is a Markov chain with transition matrix Q. Be sure to check that $w _ { i j } = w _ { j i }$
+
+Hint: Let $w _ { i j } = s _ { i } q _ { i j }$ , with s the stationary distribution and $q _ { i j }$ the $( i , j )$ entry of $Q$
+
+## Mixed practice
+
+21. s A cat and a mouse move independently back and forth between two rooms. At each time step, the cat moves from the current room to the other room with probability 0.8. Starting from room 1, the mouse moves to Room 2 with probability 0.3 (and remains otherwise). Starting from room 2, the mouse moves to room 1 with probability 0.6 (and remains otherwise).
+
+(a) Find the stationary distributions of the cat chain and of the mouse chain.
+
+(b) Note that there are 4 possible (cat, mouse) states: both in room 1, cat in room 1 and mouse in room 2, cat in room 2 and mouse in room 1, and both in room 2. Number these cases 1, 2, 3, 4, respectively, and let $Z _ { n }$ be the number representing the (cat, mouse) state at time n. Is $Z _ { 0 } , Z _ { 1 } , Z _ { 2 } , \ldots \; \mathrm { a }$ Markov chain?
+
+(c) Now suppose that the cat will eat the mouse if they are in the same room. We wish to know the expected time (number of steps taken) until the cat eats the mouse for two initial configurations: when the cat starts in room 1 and the mouse starts in room 2, and vice versa. Set up a system of two linear equations in two unknowns whose solution is the desired values.
+
+22. (a) Alice and Bob are wandering around randomly, independently of each other, in a house with M rooms, labeled $1 , 2 , \ldots , M$ . Let $d _ { i }$ be the number of doors in room i (leading to other rooms, not leading outside). At each step, Alice moves to another room by choosing randomly which door to go through (with equal probabilities). Bob does the same, independently. The Markov chain they each follow is irreducible and aperiodic. Let $A _ { n }$ and $B _ { n }$ be Alice’s room and Bob’s room at time n, respectively, for $n = 0 , 1 , 2 , \ldots .$
+
+Find $\lim_{n \to \infty} P(A_n = i, B_n = j)$
+
+(b) With setup as in (a), let $p _ { i j }$ be the transition probability for going from room i to room j. Let $t _ { i k }$ be the expected first time at which Alice and Bob are in the same room, if Alice starts in room i and Bob starts in room k (note that $t _ { i k } = 0$ for $i = k )$
+
+Provide a system of linear equations, the solution of which would yield $t _ { i k }$ for all rooms $i , k .$
+
+Hint: Condition on Alice’s first move and Bob’s first move.
+
+23. Let $\{ X _ { n } \}$ be a Markov chain on states {0, 1, 2} with transition matrix
+
+$$
+Q = \left( \begin{array}{c c c} 0. 8 & 0. 2 & 0 \\ 0 & 0. 8 & 0. 2 \\ 0 & 0 & 1 \end{array} \right).
+$$
+
+---
+
+532
+
+Introduction to Probability
+
+The chain starts at $X _ { 0 } = 0$ . Let $T$ be the time it takes to reach state $2 ;$
+
+$$
+T = \min \{n: X _ {n} = 2 \}.
+$$
+
+By drawing the Markov chain and telling a story, find $E ( T )$ and $\operatorname { V a r } ( T )$
+
+24. Consider the following Markov chain on the state space $\{ 1 , 2 , 3 , 4 , 5 , 6 \}$
+
+![](../../raw/pages_0545-0560/images/page_548_image_6.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  1["1"] -->|0.5| 2["2"]
+  n1["1"] -->|0.5| 3["3"]
+  n2["2"] -->|0.5| n3["3"]
+  n2 -->|0.5| 4["4"]
+  n3 -->|0.3| n4["4"]
+  n3 -->|0.2| 5["5"]
+  n3 -->|0.2| n5["5"]
+  n3 -->|0.3| n4
+  n4 -->|0.7| 6["6"]
+  n4 -->|0.7| n6["6"]
+  n5 -->|0.8| n5
+  n6 -->|0.3| n6
+```
+</details>
+
+(a) Suppose the chain starts at state 1. Find the distribution of the number of times that the chain returns to state 1.
+(b) In the long run, what fraction of the time does the chain spend in state 3? Explain briefly.
+
+25. Let $Q$ be the transition matrix of a Markov chain on the state space $\{ 1 , 2 , \ldots , M \}$ , such that state M is an absorbing state, i.e., from state M the chain can never leave. Suppose that from any other state, it is possible to reach M (in some number of steps).
+
+(a) Which states are recurrent, and which are transient? Explain.
+(b) What is the limit of $Q ^ { n }$ as $n \to \infty ?$
+(c) For $i , j \in \{ 1 , 2 , \ldots , M - 1 \}$ , find the probability that the chain is at state $j$ at time n, given that the chain is at state i at time 0 (your answer should be in terms of $Q )$ .
+(d) For $i , j \in \{ 1 , 2 , \ldots , M - 1 \}$ , find the expected number of times that the chain is at state $j$ up to (and including) time $n ,$ given that the chain is at state i at time 0 (in terms of $Q )$
+(e) Let R be the $\left( M   -   1 \right) \times \left( M   -   1 \right)$ matrix obtained from Q by deleting the last row and the last column of Q. Show that the $( i , j )$ entry of $( I - R ) ^ { - 1 }$ is the expected number of times that the chain is at state $j$ before absorption, given that it starts out at state $i .$
+
+Hint: We have $I + R + R ^ { 2 } + \cdots = ( I - R ) ^ { - 1 }$ , analogously to a geometric series. Also, if we partition $Q$ as
+
+$$
+Q = \left( \begin{array}{c c} R & B \\ \hline 0 & 1 \end{array} \right)
+$$
+
+where B is a $( M - 1 ) \times 1$ matrix and 0 is the $1 \times ( M - 1 )$ zero matrix, then
+
+$$
+Q ^ {k} = \left( \begin{array}{c c} R ^ {k} & B _ {k} \\ \hline 0 & 1 \end{array} \right)
+$$
+
+for some $( M - 1 ) \times 1$ matrix $B _ { k }$
+
+---
+
+Markov chains
+
+533
+
+26. In the game called Chutes and Ladders, players try to be first to reach a certain destination on a board. The board is a grid of squares, numbered from 1 to the number of squares. The board has some “chutes” and some “ladders”, each of which connects a pair of squares. Here we will consider the one player version of the game (this can be extended to the multi-player version without too much trouble, since with more than one player, the players simply take turns independently until one reaches the destination).
+
+On each turn, the player rolls a fair die, which determines how many squares forward to move on the grid, e.g., if the player is at square 5 and rolls a 3, then they advance to square 8. If the resulting square is the base of a ladder, the player gets to climb the ladder, instantly arriving at a more advanced square. If the resulting square is the top of a chute, the player instantly slides down to the bottom of the chute.
+
+This game can be viewed naturally as a Markov chain: given where the player currently is on the board, the past history does not matter for computing, for example, the probability of winning within the next 3 moves.
+
+Consider a simplified version of Chutes and Ladders, played on the $3 \times 3$ board shown below. The player starts out at square 1, and wants to get to square 9. On each move, a fair coin is flipped, and the player gets to advance 1 square if the coin lands Heads and 2 squares if the coin lands Tails. However, there are 2 ladders (shown as upward-pointing arrows) and 2 chutes (shown as downward-pointing arrows) on the board.
+
+![](../../raw/pages_0545-0560/images/page_549_image_6.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  1["Node 1"] --> 2["Node 2"]
+  n2["2"] --> 3["Node 3"]
+  n3["3"] --> 4["Node 4"]
+  n4["4"] --> 5["Node 5"]
+  n5["5"] --> 6["Node 6"]
+  n6["6"] --> 7["Node 7"]
+  n7["7"] --> 8["Node 8"]
+  n8["8"] --> 9["Node 9"]
+```
+</details>
+
+(a) Explain why, despite the fact that there are 9 squares, we can represent the game using the $5 \times 5$ transition matrix
+
+$$
+Q = \left( \begin{array}{c c c c c} 0 & 0. 5 & 0. 5 & 0 & 0 \\ 0 & 0 & 0. 5 & 0. 5 & 0 \\ 0. 5 & 0 & 0 & 0. 5 & 0 \\ 0. 5 & 0 & 0 & 0 & 0. 5 \\ 0 & 0 & 0 & 0 & 1 \end{array} \right).
+$$
+
+(b) Find the mean and variance for the number of times the player will visit square $^ { 7 , }$ without using matrices or any messy calculations.
+
+The remaining parts of this problem require matrix calculations that are best done on a computer. You can use whatever computing environment you want, but here is some information for how to do it in R. In any case, you should state what environment you used and include your code. To create the transition matrix in R, you can use the following commands:
+
+$$
+\begin{array}{l} \mathrm{a} <   - 0. 5 \\ \mathrm{Q} <   - \text {matrix} (\mathrm{c} (0, 0, \mathrm{a}, \mathrm{a}, 0, \mathrm{a}, 0, 0, 0, 0, \mathrm{a}, \mathrm{a}, 0, 0, 0, 0, \mathrm{a}, \mathrm{a}, 0, 0, 0, 0, 0, \mathrm{a}, 1), \mathrm{nrow} = 5) \\ \end{array}
+$$
+
+---
+
+534
+
+Introduction to Probability
+
+Some useful R commands for matrices are in Appendix B.2. In particular, diag(n) gives the $n \times n$ identity matrix, solve(A) gives the inverse $A ^ { - 1 }$ , and A $\% * \%$ B gives the product $A B$ (note that A\*B does not do ordinary matrix multiplication). Matrix powers are not built into R, but you can compute $A ^ { k }$ using $A \% \sim \%$ k after installing and loading the expm package.
+
+(c) Find the median duration of the game (where duration is the number of coin flips).
+
+Hint: Relate the CDF of the duration to powers of $Q$
+
+(d) Find the mean duration of the game (with duration defined as above).
+
+Hint: Relate the duration to the total amount of time spent in transient states, and apply Part (e) of the previous problem.

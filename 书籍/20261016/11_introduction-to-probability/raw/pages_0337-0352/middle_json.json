@@ -1,0 +1,5909 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Probability, Second Edition",
+      "authors": [
+        "Joseph K. Blitzstein;Jessica Hwang;"
+      ],
+      "created_at": "2019-01-18T11:22:30+05:30",
+      "modified_at": "2019-02-04T21:29:14+05:30",
+      "creator_application": "LaTeX with hyperref",
+      "producer_application": "pdfTeX-1.40.19",
+      "page_count": 636,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 336,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 337,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 338,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 339,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 340,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 341,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 342,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 343,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 344,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 345,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 346,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 347,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 348,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 349,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 350,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 351,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 336,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "320"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.068,
+            0.894,
+            0.125
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "if refrigerators have twice the failure rate of stoves, then it says that the odds are 2 to 1 in favor of the refrigerator failing first. As a simple check, note that the answer reduces to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 2"
+            },
+            {
+              "type": "text",
+              "content": " when "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 1 } = \\lambda _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , which must be true by symmetry."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.105,
+            0.134,
+            0.894,
+            0.19
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "An alternative method of getting the same result is to use LOTP to condition on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " (or condition on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " . A third approach, using a story about Poisson processes, is in Chapter 13. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.105,
+            0.2,
+            0.894,
+            0.236
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Our last example in this section demonstrates how we can use the joint distribution of X and Y to derive the distribution of a function of X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.105,
+            0.246,
+            0.894,
+            0.341
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 7.1.25 (Cauchy PDF). Let X and Y be i.i.d. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " , and let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T = X / Y"
+            },
+            {
+              "type": "text",
+              "content": " (We can define "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T"
+            },
+            {
+              "type": "text",
+              "content": " arbitrarily in the case "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = 0 ;"
+            },
+            {
+              "type": "text",
+              "content": " ; the choice of how to define "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T"
+            },
+            {
+              "type": "text",
+              "content": " in that case has no effect on the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T ,"
+            },
+            {
+              "type": "text",
+              "content": " since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( Y = 0 ) = 0 . )"
+            },
+            {
+              "type": "text",
+              "content": " The distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T"
+            },
+            {
+              "type": "text",
+              "content": " is a famous named distribution called the Cauchy distribution, and we will encounter it again in later chapters. Meanwhile, find the PDF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.106,
+            0.351,
+            0.194,
+            0.367
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.105,
+            0.378,
+            0.894,
+            0.414
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We’ll find an expression for the CDF of T first, and then differentiate to get the PDF. We can write"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.26,
+            0.419,
+            0.738,
+            0.46
+          ],
+          "image_path": "images/page_336_equation_8.jpg",
+          "content": "F _ {T} (t) = P (T \\leq t) = P \\left(\\frac {X}{Y} \\leq t\\right) = P \\left(\\frac {X}{| Y |} \\leq t\\right),"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.105,
+            0.466,
+            0.894,
+            0.526
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "since the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\mathrm { ~ r . v . s ~ } } { \\frac { X } { Y } }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac { X } { | | Y | | }"
+            },
+            {
+              "type": "text",
+              "content": " are identically distributed by the symmetry of the standard Normal distribution. Now "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left| Y \\right|"
+            },
+            {
+              "type": "text",
+              "content": " is nonnegative, so we can multiply by it on both sides without reversing the direction of the inequality. Thus, we are interested in finding"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.394,
+            0.534,
+            0.604,
+            0.555
+          ],
+          "image_path": "images/page_336_equation_10.jpg",
+          "content": "F _ {T} (t) = P (X \\leq t | Y |)."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.105,
+            0.561,
+            0.894,
+            0.618
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We calculate this probability by integrating the joint PDF of X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " over the region where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\leq t | Y |"
+            },
+            {
+              "type": "text",
+              "content": " holds. The joint PDF of X and Y is just the product of the marginal PDFs, by independence. So"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.275,
+            0.624,
+            0.725,
+            0.694
+          ],
+          "image_path": "images/page_336_equation_12.jpg",
+          "content": "\\begin{array}{l} F _ {T} (t) = P (X \\leq t | Y |) \\\\ = \\int_ {- \\infty} ^ {\\infty} \\int_ {- \\infty} ^ {t | y |} \\frac {1}{\\sqrt {2 \\pi}} e ^ {- x ^ {2} / 2} \\frac {1}{\\sqrt {2 \\pi}} e ^ {- y ^ {2} / 2} d x d y. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.105,
+            0.698,
+            0.894,
+            0.774
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that the inner limits of integration (the limits for x) depend on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y ,"
+            },
+            {
+              "type": "text",
+              "content": " whereas the outer limits of integration (the limits for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y )"
+            },
+            {
+              "type": "text",
+              "content": " can’t depend on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " (see the math appendix for more about limits of integration with multiple integrals). With some manipulations, we can get the double integral down to a single integral:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.255,
+            0.779,
+            0.744,
+            0.918
+          ],
+          "image_path": "images/page_336_equation_14.jpg",
+          "content": "\\begin{array}{l} F _ {T} (t) = \\int_ {- \\infty} ^ {\\infty} \\frac {1}{\\sqrt {2 \\pi}} e ^ {- y ^ {2} / 2} \\left(\\int_ {- \\infty} ^ {t | y |} \\frac {1}{\\sqrt {2 \\pi}} e ^ {- x ^ {2} / 2} d x\\right) d y \\\\ = \\int_ {- \\infty} ^ {\\infty} \\frac {1}{\\sqrt {2 \\pi}} e ^ {- y ^ {2} / 2} \\Phi (t | y |) d y \\\\ = \\sqrt {\\frac {2}{\\pi}} \\int_ {0} ^ {\\infty} e ^ {- y ^ {2} / 2} \\Phi (t y) d y. \\\\ \\end{array}"
+        }
+      ]
+    },
+    {
+      "page_idx": 337,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Joint distributions"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "321"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.125
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Alternatively, we can get the same result without doing a double integral by using one of the versions of LOTP. Letting I be the indicator r.v. for the event "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\leq t | Y |"
+            },
+            {
+              "type": "text",
+              "content": " we again have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.3,
+            0.129,
+            0.699,
+            0.215
+          ],
+          "image_path": "images/page_337_equation_3.jpg",
+          "content": "\\begin{array}{l} P (I = 1) = \\int_ {- \\infty} ^ {\\infty} P (I = 1 | Y = y) f _ {Y} (y) d y \\\\ = \\int_ {- \\infty} ^ {\\infty} \\frac {1}{\\sqrt {2 \\pi}} e ^ {- y ^ {2} / 2} \\Phi (t | y |) d y. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.22,
+            0.897,
+            0.333
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "At this point we seem to be stuck with an integral we don’t know how to do. Fortunately, we were asked to find the PDF, not the CDF, so instead of evaluating the integral, we can just differentiate it with respect to t (not with respect to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y ,"
+            },
+            {
+              "type": "text",
+              "content": " which is a dummy variable). We are permitted to interchange the order of integration and differentiation under mild technical conditions, which are met here. (This technique is known as differentiation under the integral sign, or DUThIS for short.) Then"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.275,
+            0.339,
+            0.725,
+            0.51
+          ],
+          "image_path": "images/page_337_equation_5.jpg",
+          "content": "\\begin{array}{l} f _ {T} (t) = F _ {T} ^ {\\prime} (t) = \\sqrt {\\frac {2}{\\pi}} \\int_ {0} ^ {\\infty} \\frac {\\partial}{\\partial t} \\left(e ^ {- y ^ {2} / 2} \\Phi (t y)\\right) d y \\\\ = \\sqrt {\\frac {2}{\\pi}} \\int_ {0} ^ {\\infty} y e ^ {- y ^ {2} / 2} \\varphi (t y) d y \\\\ = \\frac {1}{\\pi} \\int_ {0} ^ {\\infty} y e ^ {- \\frac {(1 + t ^ {2}) y ^ {2}}{2}} d y \\\\ = \\frac {1}{\\pi (1 + t ^ {2})}, \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.516,
+            0.896,
+            0.551
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "using the substitution "
+            },
+            {
+              "type": "equation_inline",
+              "content": "u = ( 1 + t ^ { 2 } ) y ^ { 2 } / 2 ,   d u = ( 1 + t ^ { 2 } ) y d y"
+            },
+            {
+              "type": "text",
+              "content": " for the final step. So the PDF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T"
+            },
+            {
+              "type": "text",
+              "content": " is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.37,
+            0.55,
+            0.63,
+            0.587
+          ],
+          "image_path": "images/page_337_equation_7.jpg",
+          "content": "f _ {T} (t) = \\frac {1}{\\pi (1 + t ^ {2})}, \\quad t \\in \\mathbb {R}."
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.104,
+            0.59,
+            0.16,
+            0.606
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Since"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.274,
+            0.602,
+            0.725,
+            0.641
+          ],
+          "image_path": "images/page_337_equation_9.jpg",
+          "content": "\\int_ {- \\infty} ^ {\\infty} \\frac {1}{1 + t ^ {2}} d t = \\arctan (\\infty) - \\arctan (- \\infty) = \\pi ,"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.645,
+            0.896,
+            0.682
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "we have obtained a valid PDF. If we want to obtain the CDF too, we can integrate the PDF over the appropriate interval:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.282,
+            0.69,
+            0.717,
+            0.731
+          ],
+          "image_path": "images/page_337_equation_11.jpg",
+          "content": "F _ {T} (t) = \\int_ {- \\infty} ^ {t} \\frac {1}{\\pi (1 + u ^ {2})} d u = \\frac {1}{\\pi} \\arctan (t) + \\frac {1}{2}."
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.747,
+            0.896,
+            0.822
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As we mentioned, the distribution of T is called the Cauchy distribution. The Cauchy PDF is similar in shape to the Normal bell curve, but with tails that decay less quickly to 0. Figure 7.7 superimposes the Cauchy and standard Normal PDFs; the heavier tails of the Cauchy PDF are evident."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.832,
+            0.897,
+            0.916
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "An interesting fact about the Cauchy distribution is that although the PDF is symmetric about 0, its expected value does not exist, since the integral "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle \\int _ { - \\infty } ^ { \\infty } { \\frac { t } { \\pi \\left( 1 + t ^ { 2 } \\right) } } d t"
+            },
+            {
+              "type": "text",
+              "content": " diverges: note that for large "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\begin{array} { r } { t , \\; \\frac { t } { 1 + t ^ { 2 } } \\approx \\frac { 1 } { t } } \\end{array}"
+            },
+            {
+              "type": "text",
+              "content": " , and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\begin{array} { r } { \\int _ { 1 } ^ { \\infty } \\frac { 1 } { t } d t = \\infty } \\end{array}"
+            },
+            {
+              "type": "text",
+              "content": " . It would be a blunder to write "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\text{\" }E(\\frac{X}{Y})=E(X)E(\\frac{1}{Y})=\\overset{\\text{\" }}{0}\\cdot E(\\frac{1}{Y})=0 \\text{\" }"
+            },
+            {
+              "type": "text",
+              "content": " , since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( \\frac { 1 } { Y } )"
+            },
+            {
+              "type": "text",
+              "content": " also does not exist. \u0003"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 338,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "322"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 2,
+          "bbox": [
+            0.217,
+            0.083,
+            0.778,
+            0.31
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 2,
+              "bbox": [
+                0.217,
+                0.083,
+                0.778,
+                0.31
+              ],
+              "image_path": "images/page_338_chart_2.jpg",
+              "content": "| X | PDF (Black) | PDF (Gray) |\n| --- | --- | --- |\n| -3 | ~0.02 | ~0.00 |\n| -2 | ~0.06 | ~0.05 |\n| -1 | ~0.18 | ~0.25 |\n| 0 | ~0.32 | ~0.40 |\n| 1 | ~0.18 | ~0.25 |\n| 2 | ~0.06 | ~0.05 |\n| 3 | ~0.02 | ~0.00 |"
+            }
+          ],
+          "sub_type": "violin"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.103,
+            0.337,
+            0.238,
+            0.352
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 7.7"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.355,
+            0.894,
+            0.391
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Cauchy PDF (dark) and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " PDF (light). The Cauchy distribution has much heavier tails than the Normal distribution."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.417,
+            0.266,
+            0.435
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "7.1.3 Hybrid"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.454,
+            0.897,
+            0.53
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It is also possible that we could be interested in the joint distribution of a discrete r.v. and a continuous r.v. This case was mentioned when discussing the four forms of Bayes’ rule and LOTP. Conceptually it is analogous to the other cases, but since the notation can be tricky, we’ll work through an example that sheds light on it."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.54,
+            0.896,
+            0.653
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 7.1.26 (Which company made the lightbulb?). A lightbulb was manufactured by one of two companies. Bulbs that are made by Company 0 last an Expo(λ"
+            },
+            {
+              "type": "text",
+              "content": "0",
+              "styles": [
+                "subscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ") amount of time, and bulbs made by Company 1 last an "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{Exp}(\\lambda_1)"
+            },
+            {
+              "type": "text",
+              "content": " amount of time, with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 0 }   <   \\lambda _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " . The bulb of interest here was made by Company 0 with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 0 }"
+            },
+            {
+              "type": "text",
+              "content": " and by Company 1 with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 1 } = 1 - p _ { 0 }"
+            },
+            {
+              "type": "text",
+              "content": " , but from inspecting the bulb we don’t know which company made it."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.663,
+            0.894,
+            0.701
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let T be how long the bulb lasts, and I be the indicator of it having been made by Company 1."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 9,
+          "bbox": [
+            0.1,
+            0.707,
+            0.899,
+            0.806
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 10,
+              "bbox": [
+                0.104,
+                0.71,
+                0.429,
+                0.728
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) Find the CDF and PDF of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "T ."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 11,
+              "bbox": [
+                0.104,
+                0.739,
+                0.519,
+                0.758
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) Does T have the memoryless property?"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.103,
+                0.768,
+                0.894,
+                0.804
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(c) Find the conditional distribution of I given T = t. What happens to this as "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "t \\rightarrow \\infty ?"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 13,
+          "bbox": [
+            0.105,
+            0.816,
+            0.195,
+            0.832
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.844,
+            0.897,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Since T is a continuous r.v. and I is discrete, the joint distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T"
+            },
+            {
+              "type": "text",
+              "content": " and I is a hybrid, as illustrated in Figure 7.8. In a joint PDF of two continuous r.v.s, there are infinitely many vertical slices of the joint PDF that we can take, each corresponding to a different conditional PDF. Here there are only two conditional PDFs of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T ,"
+            },
+            {
+              "type": "text",
+              "content": " one"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 339,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Joint distributions"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "323"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.126
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I = 0"
+            },
+            {
+              "type": "text",
+              "content": " and one for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I = 1"
+            },
+            {
+              "type": "text",
+              "content": " . As stated in the problem, the conditional distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T"
+            },
+            {
+              "type": "text",
+              "content": " given "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I = 0"
+            },
+            {
+              "type": "text",
+              "content": " is Expo(λ"
+            },
+            {
+              "type": "text",
+              "content": "0",
+              "styles": [
+                "subscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ") and given I = 1 is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{Exp}(\\lambda_1)"
+            },
+            {
+              "type": "text",
+              "content": " . The marginal distribution of I is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { B e r n } ( p _ { 1 } )"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "image",
+          "index": 3,
+          "bbox": [
+            0.302,
+            0.149,
+            0.709,
+            0.37
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 3,
+              "bbox": [
+                0.302,
+                0.149,
+                0.709,
+                0.37
+              ],
+              "image_path": "images/page_339_image_3.jpg",
+              "content": "I = 0\nI = 1\nt"
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.393,
+            0.239,
+            0.409
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 7.8"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.412,
+            0.459,
+            0.43
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Hybrid joint distribution of T and I."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.448,
+            0.896,
+            0.542
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Thus, we are given the joint distribution of T and I in terms of (1) the marginal distribution of I and (2) the conditional distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T"
+            },
+            {
+              "type": "text",
+              "content": " given I. The problem then asks us to flip it around and find (1) the marginal distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T"
+            },
+            {
+              "type": "text",
+              "content": " and (2) the conditional distribution of I given "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T ."
+            },
+            {
+              "type": "text",
+              "content": " Phrased in this way, it becomes clear that LOTP and Bayes’ rule will be our friends."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.559,
+            0.895,
+            0.596
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) In this part we are asked to derive the marginal distribution of T. For the CDF, we use the law of total probability, conditioning on I:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.219,
+            0.61,
+            0.78,
+            0.687
+          ],
+          "image_path": "images/page_339_equation_8.jpg",
+          "content": "\\begin{array}{l} F _ {T} (t) = P (T \\leq t) = P (T \\leq t | I = 0) p _ {0} + P (T \\leq t | I = 1) p _ {1} \\\\ = (1 - e ^ {- \\lambda_ {0} t}) p _ {0} + (1 - e ^ {- \\lambda_ {1} t}) p _ {1} \\\\ = 1 - p _ {0} e ^ {- \\lambda_ {0} t} - p _ {1} e ^ {- \\lambda_ {1} t} \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.702,
+            0.666,
+            0.72
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t > 0"
+            },
+            {
+              "type": "text",
+              "content": " . The marginal PDF is the derivative of the CDF:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.301,
+            0.737,
+            0.697,
+            0.759
+          ],
+          "image_path": "images/page_339_equation_10.jpg",
+          "content": "f _ {T} (t) = p _ {0} \\lambda_ {0} e ^ {- \\lambda_ {0} t} + p _ {1} \\lambda_ {1} e ^ {- \\lambda_ {1} t}, \\text {for} t > 0."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.776,
+            0.896,
+            0.832
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We could also have gotten this directly from the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "^ { \\circ } X"
+            },
+            {
+              "type": "text",
+              "content": " continuous, Y discrete” version of LOTP, but we did not write out a proof of that version of LOTP, and working through this example helps show why that version of LOTP works."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.103,
+            0.844,
+            0.897,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) Since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 0 } \\neq \\lambda _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " , the above expression for the PDF does not reduce to the form "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\dot { \\lambda } e ^ { - \\lambda t }"
+            },
+            {
+              "type": "text",
+              "content": " . So the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T"
+            },
+            {
+              "type": "text",
+              "content": " is not Exponential, which implies that it does not have the memoryless property. (The distribution of T is called a mixture of two Exponentials.)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 340,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.105,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "324"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.893,
+            0.105
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(c) Using a hybrid form of Bayes’ rule, which is the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "^ { \\circ } X"
+            },
+            {
+              "type": "text",
+              "content": " continuous, Y discrete” version in the table of versions of Bayes’ rule, we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.309,
+            0.118,
+            0.69,
+            0.159
+          ],
+          "image_path": "images/page_340_equation_3.jpg",
+          "content": "P (I = 1 | T = t) = \\frac {f _ {T} (t | I = 1) P (I = 1)}{f _ {T} (t)},"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.17,
+            0.896,
+            0.209
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f _ { T } ( t | I = 1 )"
+            },
+            {
+              "type": "text",
+              "content": " is the conditional PDF of T given "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I = 1"
+            },
+            {
+              "type": "text",
+              "content": " , evaluated at t. Using the fact that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T | I = 1 \\sim \\mathrm { E x p o } ( \\lambda _ { 1 } )"
+            },
+            {
+              "type": "text",
+              "content": " and the marginal PDF derived in (a),"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.189,
+            0.221,
+            0.812,
+            0.264
+          ],
+          "image_path": "images/page_340_equation_5.jpg",
+          "content": "P (I = 1 | T = t) = \\frac {p _ {1} \\lambda_ {1} e ^ {- \\lambda_ {1} t}}{p _ {0} \\lambda_ {0} e ^ {- \\lambda_ {0} t} + p _ {1} \\lambda_ {1} e ^ {- \\lambda_ {1} t}} = \\frac {p _ {1} \\lambda_ {1}}{p _ {0} \\lambda_ {0} e ^ {(\\lambda_ {1} - \\lambda_ {0}) t} + p _ {1} \\lambda_ {1}}."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.274,
+            0.897,
+            0.352
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Thus the conditional distribution of I given "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T = t"
+            },
+            {
+              "type": "text",
+              "content": " is Bernoulli with this probability of success. This probability goes to 0 as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t \\rightarrow \\infty"
+            },
+            {
+              "type": "text",
+              "content": " , which makes sense intuitively: the longer the bulb lasts, the more confident we will be that it was made by Company 0, as their bulbs have a lower failure rate λ and a higher life expectancy "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac { 1 } { \\lambda } ."
+            },
+            {
+              "type": "text",
+              "content": " \u0003"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.432,
+            0.304,
+            0.451
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "7.2 2D LOTUS"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.469,
+            0.896,
+            0.525
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The two-dimensional version of LOTUS lets us calculate the expectation of a random variable that is a function of two random variables X and Y , using the joint distribution of X and Y ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.535,
+            0.896,
+            0.571
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 7.2.1 (2D LOTUS). Let g be a function from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbb { R } ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbb { R } ."
+            },
+            {
+              "type": "text",
+              "content": " If X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " are discrete, then"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.278,
+            0.571,
+            0.721,
+            0.61
+          ],
+          "image_path": "images/page_340_equation_10.jpg",
+          "content": "E (g (X, Y)) = \\sum_ {x} \\sum_ {y} g (x, y) P (X = x, Y = y)."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.617,
+            0.624,
+            0.636
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If X and Y are continuous with joint PDF "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f _ { X , Y }"
+            },
+            {
+              "type": "text",
+              "content": " , then"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.277,
+            0.648,
+            0.721,
+            0.69
+          ],
+          "image_path": "images/page_340_equation_12.jpg",
+          "content": "E (g (X, Y)) = \\int_ {- \\infty} ^ {\\infty} \\int_ {- \\infty} ^ {\\infty} g (x, y) f _ {X, Y} (x, y) d x d y."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.71,
+            0.896,
+            0.767
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Like its 1D counterpart, 2D LOTUS saves us from having to find the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X , Y )"
+            },
+            {
+              "type": "text",
+              "content": " in order to calculate its expectation. Instead, having the joint PMF or joint PDF of X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " is enough."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.776,
+            0.808,
+            0.795
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "One use of 2D LOTUS is to find the expected distance between two r.v.s."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.102,
+            0.804,
+            0.896,
+            0.843
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 7.2.2 (Expected distance between two Uniforms). Let X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " be i.i.d. Unif(0, 1) r.v.s. Find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( | X - Y | )"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 341,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Joint distributions"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "325"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.069,
+            0.195,
+            0.085
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.103,
+            0.097,
+            0.897,
+            0.117
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Since the joint PDF is 1 on the unit square "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{ ( x , y ) : x , y \\in [ 0 , 1 ] \\}"
+            },
+            {
+              "type": "text",
+              "content": " , 2D LOTUS gives"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.233,
+            0.129,
+            0.768,
+            0.264
+          ],
+          "image_path": "images/page_341_equation_4.jpg",
+          "content": "\\begin{array}{l} E (| X - Y |) = \\int_ {0} ^ {1} \\int_ {0} ^ {1} | x - y | d x d y \\\\ = \\int_ {0} ^ {1} \\int_ {y} ^ {1} (x - y) d x d y + \\int_ {0} ^ {1} \\int_ {0} ^ {y} (y - x) d x d y \\\\ = 2 \\int_ {0} ^ {1} \\int_ {y} ^ {1} (x - y) d x d y = 1 / 3. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.276,
+            0.896,
+            0.313
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "First we broke up the integral into two parts so we could eliminate the absolute value; then we used symmetry."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.103,
+            0.324,
+            0.896,
+            0.38
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Incidentally, by solving this problem, we have also figured out the expected value of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M = \\operatorname* { m a x } ( X , Y )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "L = \\operatorname* { m i n } ( X , Y )"
+            },
+            {
+              "type": "text",
+              "content": " . Since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M + L"
+            },
+            {
+              "type": "text",
+              "content": " is the same r.v. as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X + Y"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M - L"
+            },
+            {
+              "type": "text",
+              "content": " is the same r.v. as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "| X - Y |"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.347,
+            0.398,
+            0.652,
+            0.439
+          ],
+          "image_path": "images/page_341_equation_7.jpg",
+          "content": "\\begin{array}{l} E (M + L) = E (X + Y) = 1, \\\\ E (M - L) = E (| X - Y |) = 1 / 3. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.456,
+            0.896,
+            0.513
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This is a system of two equations and two unknowns, which we can solve to get "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( M ) = 2 / 3"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( L ) = 1 / 3"
+            },
+            {
+              "type": "text",
+              "content": " . As a check, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( M )"
+            },
+            {
+              "type": "text",
+              "content": " exceeds "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( L )"
+            },
+            {
+              "type": "text",
+              "content": " , as it should, and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( M )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( L )"
+            },
+            {
+              "type": "text",
+              "content": " are equidistant from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 2"
+            },
+            {
+              "type": "text",
+              "content": " , as should be the case by symmetry. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.525,
+            0.894,
+            0.564
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 7.2.3 (Expected distance between two Normals). For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X , Y \\stackrel { \\mathrm { i . i . d . } } { \\sim } \\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( | X - Y | )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.105,
+            0.575,
+            0.195,
+            0.591
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.104,
+            0.604,
+            0.481,
+            0.623
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We could again use 2D LOTUS, giving"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.218,
+            0.636,
+            0.782,
+            0.676
+          ],
+          "image_path": "images/page_341_equation_12.jpg",
+          "content": "E (| X - Y |) = \\int_ {- \\infty} ^ {\\infty} \\int_ {- \\infty} ^ {\\infty} | x - y | \\frac {1}{\\sqrt {2 \\pi}} e ^ {- x ^ {2} / 2} \\frac {1}{\\sqrt {2 \\pi}} e ^ {- y ^ {2} / 2} d x d y,"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.103,
+            0.69,
+            0.896,
+            0.765
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "but an easier solution uses the fact that the sum or difference of independent "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { N o r - }"
+            },
+            {
+              "type": "text",
+              "content": " mals is Normal, as we proved using MGFs in Chapter 6. Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X - Y \\sim \\mathcal { N } ( 0 , 2 )"
+            },
+            {
+              "type": "text",
+              "content": " , so we can write "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X - Y = \\sqrt{2}Z"
+            },
+            {
+              "type": "text",
+              "content": " where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z \\sim \\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " , and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(|X - Y|) = \\sqrt{2}E|Z|"
+            },
+            {
+              "type": "text",
+              "content": " . Thus, we have reduced a 2D LOTUS to a 1D LOTUS! It was shown in Example 5.4.7 that"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.437,
+            0.78,
+            0.564,
+            0.82
+          ],
+          "image_path": "images/page_341_equation_14.jpg",
+          "content": "E | Z | = \\sqrt {\\frac {2}{\\pi}},"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.104,
+            0.832,
+            0.13,
+            0.844
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "so"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.406,
+            0.842,
+            0.592,
+            0.883
+          ],
+          "image_path": "images/page_341_equation_16.jpg",
+          "content": "E (| X - Y |) = \\frac {2}{\\sqrt {\\pi}}."
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.104,
+            0.901,
+            0.834,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can also use 2D LOTUS to give another proof of linearity of expectation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 342,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "326"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.896,
+            0.106
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 7.2.4 (Linearity via 2D LOTUS). Let X and Y be continuous r.v.s (the analogous method also works in the discrete case). By 2D LOTUS,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.172,
+            0.116,
+            0.828,
+            0.222
+          ],
+          "image_path": "images/page_342_equation_3.jpg",
+          "content": "\\begin{array}{l} E (X + Y) = \\int_ {- \\infty} ^ {\\infty} \\int_ {- \\infty} ^ {\\infty} (x + y) f _ {X, Y} (x, y) d x d y \\\\ = \\int_ {- \\infty} ^ {\\infty} \\int_ {- \\infty} ^ {\\infty} x f _ {X, Y} (x, y) d x d y + \\int_ {- \\infty} ^ {\\infty} \\int_ {- \\infty} ^ {\\infty} y f _ {X, Y} (x, y) d x d y \\\\ = E (X) + E (Y). \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.234,
+            0.896,
+            0.308
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This is a short proof of linearity of expectation. For the last step, we used 2D LOTUS and the fact that X is a function of X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " (that happens to be degenerate in the sense that it doesn’t involve "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y )"
+            },
+            {
+              "type": "text",
+              "content": " , and similarly for Y . Another way to get the last step is to write"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.113,
+            0.319,
+            0.89,
+            0.36
+          ],
+          "image_path": "images/page_342_equation_5.jpg",
+          "content": "\\int_ {- \\infty} ^ {\\infty} \\int_ {- \\infty} ^ {\\infty} y f _ {X, Y} (x, y) d x d y = \\int_ {- \\infty} ^ {\\infty} y \\int_ {- \\infty} ^ {\\infty} f _ {X, Y} (x, y) d x d y = \\int_ {- \\infty} ^ {\\infty} y f _ {Y} (y) d y = E (Y),"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.37,
+            0.896,
+            0.446
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where we took y out from the inner integral (since y is held constant when integrating with respect to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x )"
+            },
+            {
+              "type": "text",
+              "content": " and then recognized the marginal PDF of Y . For the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X )"
+            },
+            {
+              "type": "text",
+              "content": " term we can first swap the order of integration, from dxdy to dydx, and then the same argument that we used for the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y )"
+            },
+            {
+              "type": "text",
+              "content": " term can be applied. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.528,
+            0.485,
+            0.546
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "7.3 Covariance and correlation"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.565,
+            0.897,
+            0.679
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Just as the mean and variance provided single-number summaries of the distribution of a single "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { r } . \\mathbf { v } . ,"
+            },
+            {
+              "type": "text",
+              "content": " covariance is a single-number summary of the joint distribution of two r.v.s. Roughly speaking, covariance measures a tendency of two r.v.s to go up or down together, relative to their means: positive covariance between X and Y indicates that when X goes up, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " also tends to go up, and negative covariance indicates that when X goes up, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " tends to go down. Here is the precise definition."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.687,
+            0.818,
+            0.706
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition 7.3.1 (Covariance). The covariance between r.v.s X and Y is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.313,
+            0.719,
+            0.685,
+            0.74
+          ],
+          "image_path": "images/page_342_equation_10.jpg",
+          "content": "\\mathrm{Cov} (X, Y) = E ((X - E X) (Y - E Y))."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.751,
+            0.816,
+            0.77
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Multiplying this out and using linearity, we have an equivalent expression:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.327,
+            0.783,
+            0.672,
+            0.803
+          ],
+          "image_path": "images/page_342_equation_12.jpg",
+          "content": "\\operatorname{Cov} (X, Y) = E (X Y) - E (X) E (Y)."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.825,
+            0.896,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s think about the definition intuitively. If X and Y tend to move in the same direction, then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X - E X"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y - E Y"
+            },
+            {
+              "type": "text",
+              "content": " will tend to be either both positive or both negative, so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( X - E X ) ( Y - E Y )"
+            },
+            {
+              "type": "text",
+              "content": " will be positive on average, giving a positive covariance. If X and Y tend to move in opposite directions, then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X - E X"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y - E Y"
+            },
+            {
+              "type": "text",
+              "content": " will tend to have opposite signs, giving a negative covariance."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 343,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Joint distributions"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "327"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.894,
+            0.105
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If X and Y are independent, then their covariance is zero. We say that r.v.s with zero covariance are uncorrelated."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.103,
+            0.115,
+            0.823,
+            0.134
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 7.3.2. If X and Y are independent, then they are uncorrelated."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.152,
+            0.896,
+            0.208
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. We’ll show this in the case where X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " are continuous, with PDFs "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f _ { X }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f _ { Y }"
+            },
+            {
+              "type": "text",
+              "content": " . Since X and Y are independent, their joint PDF is the product of the marginal PDFs. By 2D LOTUS,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.288,
+            0.214,
+            0.714,
+            0.367
+          ],
+          "image_path": "images/page_343_equation_5.jpg",
+          "content": "\\begin{array}{l} E (X Y) = \\int_ {- \\infty} ^ {\\infty} \\int_ {- \\infty} ^ {\\infty} x y f _ {X} (x) f _ {Y} (y) d x d y \\\\ = \\int_ {- \\infty} ^ {\\infty} y f _ {Y} (y) \\left(\\int_ {- \\infty} ^ {\\infty} x f _ {X} (x) d x\\right) d y \\\\ = \\int_ {- \\infty} ^ {\\infty} x f _ {X} (x) d x \\int_ {- \\infty} ^ {\\infty} y f _ {Y} (y) d y \\\\ = E (X) E (Y). \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.103,
+            0.373,
+            0.792,
+            0.392
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The proof in the discrete case is the same, with PMFs instead of PDFs."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.41,
+            0.896,
+            0.485
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The converse of this theorem is false: just because X and Y are uncorrelated does not mean they are independent. For example, let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " , and let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = X ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X Y )   =   E ( X ^ { 3 } )   =   0"
+            },
+            {
+              "type": "text",
+              "content": " because the odd moments of the standard Normal distribution are equal to 0 by symmetry. Thus X and Y are uncorrelated,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.268,
+            0.495,
+            0.731,
+            0.516
+          ],
+          "image_path": "images/page_343_equation_8.jpg",
+          "content": "\\operatorname{Cov} (X, Y) = E (X Y) - E (X) E (Y) = 0 - 0 = 0,"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.526,
+            0.897,
+            0.639
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "but they are certainly not independent: Y is a function of X, so knowing X gives us perfect information about "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " . Covariance is a measure of linear association, so r.v.s can be dependent in nonlinear ways and still have zero covariance, as this example demonstrates. The bottom right plot of Figure 7.9 shows draws from the joint distribution of X and Y in this example. The other three plots illustrate positive correlation, negative correlation, and independence."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.103,
+            0.648,
+            0.528,
+            0.667
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Covariance has the following key properties."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 11,
+          "bbox": [
+            0.129,
+            0.681,
+            0.874,
+            0.877
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.133,
+                0.684,
+                0.382,
+                0.703
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathrm{Cov}(X, X) = \\mathrm{Var}(X)"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 13,
+              "bbox": [
+                0.132,
+                0.713,
+                0.406,
+                0.732
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathrm{Cov}(X,Y)=\\mathrm{Cov}(Y,X)"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 14,
+              "bbox": [
+                0.132,
+                0.741,
+                0.49,
+                0.759
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "3. "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathrm { C o v } ( X , c ) = 0"
+                },
+                {
+                  "type": "text",
+                  "content": " for any constant c."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 15,
+              "bbox": [
+                0.132,
+                0.77,
+                0.611,
+                0.788
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "4. "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathrm{Cov}(aX,Y)=a\\mathrm{Cov}(X,Y)"
+                },
+                {
+                  "type": "text",
+                  "content": " for any constant a."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 16,
+              "bbox": [
+                0.132,
+                0.797,
+                0.569,
+                0.816
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "5. "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathrm{Cov}(X + Y,Z) = \\mathrm{Cov}(X,Z) + \\mathrm{Cov}(Y,Z)"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 17,
+              "bbox": [
+                0.132,
+                0.825,
+                0.869,
+                0.845
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "6. "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\operatorname { C o v } ( X + Y , Z + W ) = \\operatorname { C o v } ( X , Z ) + \\operatorname { C o v } ( X , W ) + \\operatorname { C o v } ( Y , Z ) + \\operatorname { C o v } ( Y , W ) ."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 18,
+              "bbox": [
+                0.132,
+                0.853,
+                0.851,
+                0.873
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "7. "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathrm{Var}(X + Y) = \\mathrm{Var}(X) + \\mathrm{Var}(Y) + 2\\mathrm{Cov}(X,Y)"
+                },
+                {
+                  "type": "text",
+                  "content": " . For n r.v.s "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X _ { 1 } , \\ldots , X _ { n } ,"
+                },
+                {
+                  "type": "text",
+                  "content": " ,"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "equation",
+          "index": 19,
+          "bbox": [
+            0.191,
+            0.882,
+            0.846,
+            0.922
+          ],
+          "image_path": "images/page_343_equation_19.jpg",
+          "content": "\\mathrm{Var} (X _ {1} + \\dots + X _ {n}) = \\mathrm{Var} (X _ {1}) + \\dots + \\mathrm{Var} (X _ {n}) + 2 \\sum_ {i <   j} \\mathrm{Cov} (X _ {i}, X _ {j})."
+        }
+      ]
+    },
+    {
+      "page_idx": 344,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "328"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.144,
+            0.194,
+            0.849,
+            0.685
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.144,
+                0.194,
+                0.849,
+                0.685
+              ],
+              "image_path": "images/page_344_image_2.jpg",
+              "content": ""
+            },
+            {
+              "type": "image_caption",
+              "index": 3,
+              "bbox": [
+                0.104,
+                0.705,
+                0.237,
+                0.72
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 7.9"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.723,
+            0.896,
+            0.799
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Draws from the joint distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( X , Y )"
+            },
+            {
+              "type": "text",
+              "content": " under various dependence structures. Top left: X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " are positively correlated. Top right: X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " are negatively correlated. Bottom left: X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " are independent, hence uncorrelated. Bottom right: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " is a deterministic function of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " , but "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " are uncorrelated."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 345,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Joint distributions"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "329"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.106
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The first five properties follow readily from the definition and basic properties of expectation. Property 6 follows from Property 2 and Property 5, by expanding"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.141,
+            0.116,
+            0.856,
+            0.206
+          ],
+          "image_path": "images/page_345_equation_3.jpg",
+          "content": "\\begin{array}{l} \\operatorname{Cov} (X + Y, Z + W) = \\operatorname{Cov} (X, Z + W) + \\operatorname{Cov} (Y, Z + W) \\\\ = \\operatorname{Cov} (Z + W, X) + \\operatorname{Cov} (Z + W, Y) \\\\ = \\operatorname{Cov} (Z, X) + \\operatorname{Cov} (W, X) + \\operatorname{Cov} (Z, Y) + \\operatorname{Cov} (W, Y) \\\\ = \\operatorname{Cov} (X, Z) + \\operatorname{Cov} (X, W) + \\operatorname{Cov} (Y, Z) + \\operatorname{Cov} (Y, W). \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.217,
+            0.896,
+            0.254
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Property 7 follows from writing the variance of an r.v. as its covariance with itself (by Property 1) and then using Property 6 repeatedly."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.264,
+            0.896,
+            0.299
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We have now fulfilled our promise from Chapter 4 that for independent r.v.s, the variance of the sum is the sum of the variances:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.207,
+            0.306,
+            0.79,
+            0.365
+          ],
+          "image_path": "images/page_345_equation_6.jpg",
+          "content": "\\mathrm{Var} \\left(\\sum_ {j = 1} ^ {n} X _ {j}\\right) = \\sum_ {j = 1} ^ {n} \\mathrm{Var} (X _ {j}) \\text {if} X _ {1}, \\dots , X _ {n} \\text {are independent}."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.373,
+            0.893,
+            0.41
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "By Theorem 7.3.2, independent r.v.s are uncorrelated, so in that case all the covariance terms drop out of the expression in Property 7."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.42,
+            0.843,
+            0.438
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "h 7.3.3. If X and Y are independent, then the properties of covariance give"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.232,
+            0.449,
+            0.764,
+            0.469
+          ],
+          "image_path": "images/page_345_equation_9.jpg",
+          "content": "\\operatorname{Var} (X - Y) = \\operatorname{Var} (X) + \\operatorname{Var} (- Y) = \\operatorname{Var} (X) + \\operatorname{Var} (Y)."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.48,
+            0.896,
+            0.517
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It is a common mistake to claim "
+            },
+            {
+              "type": "equation_inline",
+              "content": "``  Var (X - Y) =  Var (X) -  Var (Y)"
+            },
+            {
+              "type": "text",
+              "content": " ; this is a category error since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { V a r } ( X ) - \\operatorname { V a r } ( Y )"
+            },
+            {
+              "type": "text",
+              "content": " could be negative. For general X and Y , we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.27,
+            0.528,
+            0.727,
+            0.548
+          ],
+          "image_path": "images/page_345_equation_11.jpg",
+          "content": "\\operatorname{Var} (X - Y) = \\operatorname{Var} (X) + \\operatorname{Var} (Y) - 2 \\operatorname{Cov} (X, Y)."
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.568,
+            0.896,
+            0.623
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Since covariance depends on the units in which X and Y are measured—if we decide to measure X in centimeters rather than meters, the covariance is multiplied by 100—it is easier to interpret a unitless version of covariance called correlation."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.103,
+            0.634,
+            0.823,
+            0.652
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition 7.3.4 (Correlation). The correlation between r.v.s X and Y is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.342,
+            0.661,
+            0.655,
+            0.705
+          ],
+          "image_path": "images/page_345_equation_14.jpg",
+          "content": "\\mathrm{Corr} (X, Y) = \\frac {\\mathrm{Cov} (X , Y)}{\\sqrt {\\mathrm{Var} (X) \\mathrm{Var} (Y)}}."
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.103,
+            0.713,
+            0.781,
+            0.732
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(This is undefined in the degenerate cases "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { V a r } ( X ) = 0 { \\mathrm { ~ o r ~ } } \\operatorname { V a r } ( Y ) = 0 . )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.102,
+            0.741,
+            0.896,
+            0.815
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Notice that shifting and scaling X and Y has no effect on their correlation. Shifting does not affect Cov(X, Y ), Var(X), or "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { V a r } ( Y )"
+            },
+            {
+              "type": "text",
+              "content": " , so the correlation is unchanged. As for scaling, the fact that we divide by the standard deviations of X and Y ensures that the scale factor cancels out:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.159,
+            0.821,
+            0.838,
+            0.865
+          ],
+          "image_path": "images/page_345_equation_17.jpg",
+          "content": "\\operatorname{Corr} (c X, Y) = \\frac {\\operatorname{Cov} (c X , Y)}{\\sqrt {\\operatorname{Var} (c X) \\operatorname{Var} (Y)}} = \\frac {c \\operatorname{Cov} (X , Y)}{\\sqrt {c ^ {2} \\operatorname{Var} (X) \\operatorname{Var} (Y)}} = \\operatorname{Corr} (X, Y)."
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.102,
+            0.882,
+            0.896,
+            0.918
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Correlation is convenient to interpret because it does not depend on the units of measurement and is always between −1 and 1."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 346,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "330"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.104,
+            0.068,
+            0.714,
+            0.087
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 7.3.5 (Correlation bounds). For any r.v.s X and Y ,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.392,
+            0.105,
+            0.606,
+            0.126
+          ],
+          "image_path": "images/page_346_equation_3.jpg",
+          "content": "- 1 \\leq \\operatorname{Corr} (X, Y) \\leq 1."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.15,
+            0.897,
+            0.207
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. Without loss of generality we can assume X and Y have variance 1, since scaling does not change the correlation. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\rho   =   \\mathrm { C o r r } ( X , Y )   =   \\mathrm { C o v } ( X , Y )"
+            },
+            {
+              "type": "text",
+              "content": " . Using the fact that variance is nonnegative, along with Property 7 of covariance, we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.205,
+            0.224,
+            0.792,
+            0.244
+          ],
+          "image_path": "images/page_346_equation_5.jpg",
+          "content": "\\operatorname{Var} (X + Y) = \\operatorname{Var} (X) + \\operatorname{Var} (Y) + 2 \\operatorname{Cov} (X, Y) = 2 + 2 \\rho \\geq 0,"
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.205,
+            0.265,
+            0.792,
+            0.285
+          ],
+          "image_path": "images/page_346_equation_6.jpg",
+          "content": "\\mathrm{Var} (X - Y) = \\mathrm{Var} (X) + \\mathrm{Var} (Y) - 2 \\mathrm{Cov} (X, Y) = 2 - 2 \\rho \\geq 0."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.297,
+            0.285,
+            0.317
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Thus, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "- 1 \\leq \\rho \\leq 1"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.104,
+            0.342,
+            0.738,
+            0.36
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Here is an example of how to calculate covariance and correlation."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.372,
+            0.893,
+            0.41
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 7.3.6 (Exponential max and min). Let X and Y be i.i.d. Expo(1) r.v.s. Find the correlation between max "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( X , Y )"
+            },
+            {
+              "type": "text",
+              "content": " and min(X, Y )."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.105,
+            0.421,
+            0.195,
+            0.438
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.452,
+            0.896,
+            0.508
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M = \\operatorname* { m a x } ( X , Y )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "L = \\operatorname* { m i n } ( X , Y )"
+            },
+            {
+              "type": "text",
+              "content": " . By the memoryless property and results from Chapter 5, we know that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "L   \\sim   \\mathrm { E x p o } ( 2 ) , \\; M   -   L   \\sim   \\mathrm { E x p o } ( 1 )"
+            },
+            {
+              "type": "text",
+              "content": " , and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M - L"
+            },
+            {
+              "type": "text",
+              "content": " is independent of L (see Example 5.6.5). Therefore,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.103,
+            0.525,
+            0.896,
+            0.56
+          ],
+          "image_path": "images/page_346_equation_12.jpg",
+          "content": "\\mathrm{Cov} (M, L) = \\mathrm{Cov} (M - L + L, L) = \\mathrm{Cov} (M - L, L) + \\mathrm{Cov} (L, L) = 0 + \\mathrm{Var} (L) = \\frac {1}{4},"
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.18,
+            0.577,
+            0.818,
+            0.613
+          ],
+          "image_path": "images/page_346_equation_13.jpg",
+          "content": "\\operatorname{Var} (M) = \\operatorname{Var} (M - L + L) = \\operatorname{Var} (M - L) + \\operatorname{Var} (L) = 1 + \\frac {1}{4} = \\frac {5}{4},"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.104,
+            0.622,
+            0.147,
+            0.638
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "and"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.26,
+            0.637,
+            0.737,
+            0.692
+          ],
+          "image_path": "images/page_346_equation_15.jpg",
+          "content": "\\mathrm{Corr} (M, L) = \\frac {\\mathrm{Cov} (M , L)}{\\sqrt {\\mathrm{Var} (M) \\mathrm{Var} (L)}} = \\frac {\\frac {1}{4}}{\\sqrt {\\frac {5}{4} \\cdot \\frac {1}{4}}} = \\frac {1}{\\sqrt {5}}."
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.103,
+            0.7,
+            0.896,
+            0.833
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "h 7.3.7. In the above example, it makes sense that the correlation is positive because M is constrained to be at least as large as L. The following argument would be a blunder: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "``Either $M = X , \\thinspace L = Y$ or $M = Y , \\thinspace L = X$"
+            },
+            {
+              "type": "text",
+              "content": " , so either "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{Cov}(M, L) ="
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{Cov}(X,Y)"
+            },
+            {
+              "type": "text",
+              "content": " or "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{Cov}(M, L) = \\mathrm{Cov}(Y, X)"
+            },
+            {
+              "type": "text",
+              "content": " . But Cov "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( Y , X ) = \\operatorname { C o v } ( X , Y )"
+            },
+            {
+              "type": "text",
+              "content": " so we always have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{Cov}(M,L)=\\mathrm{Cov}(X,Y)=0."
+            },
+            {
+              "type": "text",
+              "content": " It is true that either "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M = X ,   L = Y"
+            },
+            {
+              "type": "text",
+              "content": " will occur or "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M   =   Y ,   L   =   X"
+            },
+            {
+              "type": "text",
+              "content": " will occur, but these are events, not deterministic cases. The argument would fall apart if if were written carefully using conditional probability."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.102,
+            0.844,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Covariance properties can also be a helpful tool for finding variances, especially when the r.v. of interest is a sum of dependent random variables. The next example uses properties of covariance to derive the variance of the Hypergeometric distribution. If you did Exercise 48 from Chapter 4, you can compare the two derivations."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 347,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Joint distributions"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.892,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "331"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.068,
+            0.893,
+            0.088
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 7.3.8 (Hypergeometric variance). Find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { V a r } ( X )"
+            },
+            {
+              "type": "text",
+              "content": " for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { H G e o m } ( w , b , n )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.106,
+            0.099,
+            0.195,
+            0.116
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.128,
+            0.896,
+            0.24
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Interpret X as the number of white balls in a sample of size n from an urn with w white and b black balls. We can represent "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " as a sum of indicator random variables, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X   =   I _ { 1 } + \\cdots + I _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " , where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " is the indicator of the jth ball in the sample being white. Each "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " has mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p = w / ( w + b )"
+            },
+            {
+              "type": "text",
+              "content": " and variance "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p ( 1 - p )"
+            },
+            {
+              "type": "text",
+              "content": " , but because the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " are dependent, we cannot simply add their variances. Instead, we apply properties of covariance:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.246,
+            0.251,
+            0.752,
+            0.401
+          ],
+          "image_path": "images/page_347_equation_5.jpg",
+          "content": "\\begin{array}{l} \\operatorname{Var} (X) = \\operatorname{Var} \\left(\\sum_ {j = 1} ^ {n} I _ {j}\\right) \\\\ = \\operatorname{Var} (I _ {1}) + \\dots + \\operatorname{Var} (I _ {n}) + 2 \\sum_ {i <   j} \\operatorname{Cov} (I _ {i}, I _ {j}) \\\\ = n p (1 - p) + 2 \\binom {n} {2} \\mathrm{Cov} (I _ {1}, I _ {2}), \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.104,
+            0.414,
+            0.893,
+            0.453
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "since all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle { \\binom { n } { 2 } }"
+            },
+            {
+              "type": "text",
+              "content": " pairs of indicators have the same covariance by symmetry. Now we just need to find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{Cov}(I_{1},I_{2})"
+            },
+            {
+              "type": "text",
+              "content": " . By the fundamental bridge,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.467,
+            0.909,
+            0.554
+          ],
+          "image_path": "images/page_347_equation_7.jpg",
+          "content": "\\begin{array}{l} \\mathrm{Cov} (I _ {1}, I _ {2}) = E (I _ {1} I _ {2}) - E (I _ {1}) E (I _ {2}) \\\\ = P (1 \\text {st and 2nd balls both white}) - P (1 \\text {st ball white}) P (2 \\text {nd ball white}) \\\\ = \\frac {w}{w + b} \\cdot \\frac {w - 1}{w + b - 1} - p ^ {2}. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.105,
+            0.566,
+            0.82,
+            0.585
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Plugging this into the above formula and simplifying, we eventually obtain"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.368,
+            0.599,
+            0.632,
+            0.636
+          ],
+          "image_path": "images/page_347_equation_9.jpg",
+          "content": "\\mathrm{Var} (X) = \\frac {N - n}{N - 1} n p (1 - p),"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.104,
+            0.651,
+            0.896,
+            0.746
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N = w + b ."
+            },
+            {
+              "type": "text",
+              "content": " This differs from the Binomial variance of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n p ( 1 - p )"
+            },
+            {
+              "type": "text",
+              "content": " by a factor of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac { N   -   n } { N   -   1 }"
+            },
+            {
+              "type": "text",
+              "content": " , which is known as the finite population correction. The discrepancy arises from the fact that in the Binomial story, we sample with replacement, so the same ball can be drawn multiple times; in the Hypergeometric story, we sample without replacement, so each ball appears in the sample at most once."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.104,
+            0.756,
+            0.896,
+            0.852
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If we consider N to be the “population size” of the urn, then as N grows very large relative to the sample size "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n ,"
+            },
+            {
+              "type": "text",
+              "content": " it becomes extremely unlikely that in sampling with replacement, we would draw the same ball more than once. Thus sampling with replacement and sampling without replacement become equivalent in the limit as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": " with n fixed, and the finite population correction approaches 1."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.104,
+            0.862,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The other case where sampling with and without replacement are equivalent is the simple case where we only draw one ball from the urn, and indeed, the finite population correction also equals 1 when "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n = 1"
+            },
+            {
+              "type": "text",
+              "content": " \u0003"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 348,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "332"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.143
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The last two sections in this chapter introduce the Multinomial and Multivariate Normal distributions. The Multinomial is the most famous discrete multivariate distribution, and the Multivariate Normal is the most famous continuous multivariate distribution."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.226,
+            0.316,
+            0.245
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "7.4 Multinomial"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.263,
+            0.896,
+            0.357
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Multinomial distribution is a generalization of the Binomial. Whereas the Binomial distribution counts the successes in a fixed number of trials that can only be categorized as success or failure, the Multinomial distribution keeps track of trials whose outcomes can fall into multiple categories, such as excellent, adequate, poor; or red, yellow, green, blue."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.367,
+            0.897,
+            0.483
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Story 7.4.1 (Multinomial distribution). Each of n objects is independently placed into one of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k"
+            },
+            {
+              "type": "text",
+              "content": " categories. An object is placed into category "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j"
+            },
+            {
+              "type": "text",
+              "content": " with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " where the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " are nonnegative and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle \\sum _ { j = 1 } ^ { k } p _ { j } = 1"
+            },
+            {
+              "type": "text",
+              "content": " . Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " be the number of objects in category 1, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " the number of objects in category 2, etc., so that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 }   +   \\cdots   +   X _ { k } = n"
+            },
+            {
+              "type": "text",
+              "content": " Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { X } = ( X _ { 1 } , \\ldots , X _ { k } )"
+            },
+            {
+              "type": "text",
+              "content": " is said to have the Multinomial distribution with parameters n and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { p } = ( p _ { 1 } , \\ldots , p _ { k } )"
+            },
+            {
+              "type": "text",
+              "content": " . We write this as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { X } \\sim \\operatorname { M u l t } _ { k } ( n , \\mathbf { p } )"
+            },
+            {
+              "type": "text",
+              "content": " \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.491,
+            0.894,
+            0.529
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We call X a random vector because it is a vector of random variables. The joint PMF of X can be derived from the story."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.538,
+            0.894,
+            0.573
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 7.4.2 (Multinomial joint PMF). I "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { f } \\mathbf { X } \\sim \\operatorname { M u l t } _ { k } ( n , \\mathbf { p } )"
+            },
+            {
+              "type": "text",
+              "content": " , then the joint PMF of X is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.227,
+            0.571,
+            0.772,
+            0.609
+          ],
+          "image_path": "images/page_348_equation_8.jpg",
+          "content": "P (X _ {1} = n _ {1}, \\dots , X _ {k} = n _ {k}) = \\frac {n !}{n _ {1} ! n _ {2} ! \\dots n _ {k} !} \\cdot p _ {1} ^ {n _ {1}} p _ {2} ^ {n _ {2}} \\dots p _ {k} ^ {n _ {k}},"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.613,
+            0.512,
+            0.631
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n _ { 1 } , \\ldots , n _ { k }"
+            },
+            {
+              "type": "text",
+              "content": " satisfying "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n _ { 1 } + \\cdots + n _ { k } = n"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.649,
+            0.896,
+            0.739
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n _ { 1 } , \\ldots , n _ { k }"
+            },
+            {
+              "type": "text",
+              "content": " don’t add up to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n ,"
+            },
+            {
+              "type": "text",
+              "content": " then the event "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{ X _ { 1 } = n _ { 1 } , \\ldots , X _ { k } = n _ { k } \\}"
+            },
+            {
+              "type": "text",
+              "content": " is impossible: every object has to go somewhere, and new objects can’t appear out of nowhere. If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n _ { 1 } , \\ldots , n _ { k }"
+            },
+            {
+              "type": "text",
+              "content": " do add up to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n ,"
+            },
+            {
+              "type": "text",
+              "content": " then any particular way of putting "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " objects into category 1, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " objects into category 2, etc., has probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 1 } ^ { n _ { 1 } } p _ { 2 } ^ { n _ { 2 } } \\ldots p _ { k } ^ { n _ { k } }"
+            },
+            {
+              "type": "text",
+              "content": " , and there are"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.437,
+            0.738,
+            0.564,
+            0.775
+          ],
+          "image_path": "images/page_348_equation_11.jpg",
+          "content": "\\frac {n !}{n _ {1} ! n _ {2} ! \\ldots n _ {k} !}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.779,
+            0.894,
+            0.817
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "ways to do this, as discussed in Example 1.4.18 in the context of rearranging the letters in STATISTICS. So the joint PMF is as claimed. \u0004"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.834,
+            0.894,
+            0.89
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Since we’ve specified the joint distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { X } ,"
+            },
+            {
+              "type": "text",
+              "content": " we have enough information to determine the marginal and conditional distributions, as well as the covariance between any two components of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { X }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.9,
+            0.894,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s take these one by one, starting with the marginal distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " , which is"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 349,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Joint distributions"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "333"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.104,
+            0.067,
+            0.896,
+            0.22
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "the jth component of X. Were we to blindly apply the definition, we would have to sum the joint PMF over all components of X other than "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " . The prospect of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k - 1"
+            },
+            {
+              "type": "text",
+              "content": " summations is an unpleasant one, to say the least. Fortunately, we can avoid tedious calculations if we instead use the story of the Multinomial distribution: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " is the number of objects in category "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j ,"
+            },
+            {
+              "type": "text",
+              "content": " where each of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n"
+            },
+            {
+              "type": "text",
+              "content": " objects independently belongs to category "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j"
+            },
+            {
+              "type": "text",
+              "content": " with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " . Define success as landing in category "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j ."
+            },
+            {
+              "type": "text",
+              "content": " Then we just have n independent Bernoulli trials, so the marginal distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { B i n } ( n , p _ { j } )"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.229,
+            0.895,
+            0.269
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 7.4.3 (Multinomial marginals). The marginals of a Multinomial are Binomial. Specifically, if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { X } \\sim \\operatorname { M u l t } _ { k } ( n , \\mathbf { p } )"
+            },
+            {
+              "type": "text",
+              "content": " , then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j } \\sim \\operatorname { B i n } ( n , p _ { j } )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.278,
+            0.896,
+            0.392
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "More generally, whenever we merge multiple categories together in a Multinomial random vector, we get another Multinomial random vector. For example, suppose we randomly sample n people in a country with 5 political parties. (If the sampling is done without replacement, the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n"
+            },
+            {
+              "type": "text",
+              "content": " trials are not independent, but independence is a good approximation as long as the population is large relative to the sample, as we discussed in Theorem 3.9.3 and Example 7.3.8.) Let"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.297,
+            0.408,
+            0.7,
+            0.43
+          ],
+          "image_path": "images/page_349_equation_5.jpg",
+          "content": "\\mathbf {X} = (X _ {1}, \\dots , X _ {5}) \\sim \\mathrm{Mult} _ {5} (n, (p _ {1}, \\dots , p _ {5}))"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.104,
+            0.446,
+            0.896,
+            0.484
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "represent the political party affiliations of the sample, i.e., "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " is the number of people in the sample who support party "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.494,
+            0.895,
+            0.57
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Suppose that parties 1 and 2 are the dominant parties, while parties 3 through 5 are minor third parties. If we decide that instead of keeping track of all 5 parties, we only want to count the number of people in party 1, party 2, or “other”, then we can define a new random vector that lumps all the third parties into one category:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.357,
+            0.587,
+            0.642,
+            0.609
+          ],
+          "image_path": "images/page_349_equation_8.jpg",
+          "content": "\\mathbf {Y} = (X _ {1}, X _ {2}, X _ {3} + X _ {4} + X _ {5})."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.104,
+            0.625,
+            0.42,
+            0.643
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "By the story of the Multinomial,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.327,
+            0.661,
+            0.672,
+            0.683
+          ],
+          "image_path": "images/page_349_equation_10.jpg",
+          "content": "\\mathbf {Y} \\sim \\mathrm{Mult} _ {3} (n, (p _ {1}, p _ {2}, p _ {3} + p _ {4} + p _ {5}))."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.104,
+            0.71,
+            0.893,
+            0.747
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Of course, this idea applies to merging categories in any Multinomial, not just in the context of political parties."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.104,
+            0.757,
+            0.895,
+            0.834
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 7.4.4 (Multinomial lumping). If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { X } \\sim \\operatorname { M u l t } _ { k } ( n , \\mathbf { p } )"
+            },
+            {
+              "type": "text",
+              "content": " , then for any distinct "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j , \\; X _ { i } + X _ { j } \\; \\sim \\; \\mathrm { B i n } ( n , p _ { i } + p _ { j } )"
+            },
+            {
+              "type": "text",
+              "content": " . The random vector of counts obtained from merging categories i and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j"
+            },
+            {
+              "type": "text",
+              "content": " is still Multinomial. For example, merging categories 1 and 2 gives"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.223,
+            0.851,
+            0.776,
+            0.872
+          ],
+          "image_path": "images/page_349_equation_13.jpg",
+          "content": "(X _ {1} + X _ {2}, X _ {3}, \\dots , X _ {k}) \\sim \\mathrm{Mult} _ {k - 1} (n, (p _ {1} + p _ {2}, p _ {3}, \\dots , p _ {k}))."
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.104,
+            0.899,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Now for the conditional distributions. Suppose we get to observe "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " , the number of"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 350,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "334"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.068,
+            0.895,
+            0.106
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "objects in category 1, and we wish to update our distribution for the other categories "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( X _ { 2 } , \\ldots , X _ { k } )"
+            },
+            {
+              "type": "text",
+              "content": " . One way to do this is with the definition of conditional PMF:"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.15,
+            0.113,
+            0.851,
+            0.155
+          ],
+          "image_path": "images/page_350_equation_3.jpg",
+          "content": "P (X _ {2} = n _ {2}, \\dots , X _ {k} = n _ {k} | X _ {1} = n _ {1}) = \\frac {P (X _ {1} = n _ {1} , X _ {2} = n _ {2} , \\dots , X _ {k} = n _ {k})}{P (X _ {1} = n _ {1})}."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.161,
+            0.896,
+            0.275
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The numerator is the joint PMF of the Multinomial, and the denominator is the marginal PMF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " , both of which we have already derived. However, we prefer to use the Multinomial story to deduce the conditional distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( X _ { 2 } , \\ldots , X _ { k } )"
+            },
+            {
+              "type": "text",
+              "content": " without algebra. Given that there are "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " objects in category 1, the remaining "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n   -   n _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " objects fall into categories 2 through k, independently of one another. By Bayes’ rule, the conditional probability of falling into category "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j"
+            },
+            {
+              "type": "text",
+              "content": " is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.14,
+            0.282,
+            0.86,
+            0.323
+          ],
+          "image_path": "images/page_350_equation_5.jpg",
+          "content": "P (\\text {in category} j \\mid \\text {not in category 1}) = \\frac {P (\\text {in category} j)}{P (\\text {not in category 1})} = \\frac {p _ {j}}{p _ {2} + \\cdots + p _ {k}},"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.104,
+            0.328,
+            0.896,
+            0.403
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j \\; = \\; 2 , \\ldots , k"
+            },
+            {
+              "type": "text",
+              "content": " . This makes intuitive sense: the updated probabilities are proportional to the original probabilities "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( p _ { 2 } , \\ldots , p _ { k } )"
+            },
+            {
+              "type": "text",
+              "content": " , but these must be renormalized to yield a valid probability vector. Putting it all together, we have the following result."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.105,
+            0.413,
+            0.785,
+            0.433
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 7.4.5 (Multinomial conditioning). If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { X } \\sim \\operatorname { M u l t } _ { k } ( n , \\mathbf { p } )"
+            },
+            {
+              "type": "text",
+              "content": " , then"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.24,
+            0.441,
+            0.76,
+            0.464
+          ],
+          "image_path": "images/page_350_equation_8.jpg",
+          "content": "(X _ {2}, \\dots , X _ {k}) \\big | X _ {1} = n _ {1} \\sim \\mathrm{Mult} _ {k - 1} (n - n _ {1}, (p _ {2} ^ {\\prime}, \\dots , p _ {k} ^ {\\prime})),"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.105,
+            0.472,
+            0.394,
+            0.494
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { j } ^ { \\prime } = p _ { j } / ( p _ { 2 } + \\cdots + p _ { k } )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.104,
+            0.5,
+            0.896,
+            0.574
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Finally, we know that components within a Multinomial random vector are dependent since they are constrained by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } + \\cdots + X _ { k } = n"
+            },
+            {
+              "type": "text",
+              "content": " . To find the covariance between "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " , we can use the marginal and lumping properties we have just discussed."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.105,
+            0.585,
+            0.894,
+            0.625
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 7.4.6 (Covariance in a Multinomial). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( X _ { 1 } , \\ldots , X _ { k } ) { \\sim } { \\operatorname { M u l t } } _ { k } ( n , \\mathbf { p } )"
+            },
+            {
+              "type": "text",
+              "content": " where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { p } = ( p _ { 1 } , \\ldots , p _ { k } )"
+            },
+            {
+              "type": "text",
+              "content": " . For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i \\neq j, \\mathrm{Cov}(X_i, X_j) = -np_i p_j"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.105,
+            0.64,
+            0.896,
+            0.698
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. For concreteness, let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i \\; = \\; 1"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j \\; = \\; 2"
+            },
+            {
+              "type": "text",
+              "content": " . Using the lumping property and the marginal distributions of a Multinomial, we know "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } + X _ { 2 } \\sim \\operatorname { B i n } ( n , p _ { 1 } + p _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } \\sim \\operatorname { B i n } ( n , p _ { 1 } )"
+            },
+            {
+              "type": "text",
+              "content": " , and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 2 } \\sim \\operatorname { B i n } ( n , p _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " . Therefore"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.247,
+            0.707,
+            0.752,
+            0.729
+          ],
+          "image_path": "images/page_350_equation_13.jpg",
+          "content": "\\mathrm{Var} (X _ {1} + X _ {2}) = \\mathrm{Var} (X _ {1}) + \\mathrm{Var} (X _ {2}) + 2 \\mathrm{Cov} (X _ {1}, X _ {2})"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.105,
+            0.738,
+            0.19,
+            0.754
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "becomes"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.161,
+            0.767,
+            0.837,
+            0.788
+          ],
+          "image_path": "images/page_350_equation_15.jpg",
+          "content": "n (p _ {1} + p _ {2}) (1 - (p _ {1} + p _ {2})) = n p _ {1} (1 - p _ {1}) + n p _ {2} (1 - p _ {2}) + 2 \\mathrm{Cov} (X _ {1}, X _ {2})."
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.104,
+            0.796,
+            0.894,
+            0.836
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solving for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{Cov}(X_{1},X_{2})"
+            },
+            {
+              "type": "text",
+              "content": " gives "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{Cov}(X_{1},X_{2}) = -np_{1}p_{2}"
+            },
+            {
+              "type": "text",
+              "content": " . By the same logic, for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i \\neq j"
+            },
+            {
+              "type": "text",
+              "content": " we have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{Cov}(X_{i},X_{j}) = -np_{i}p_{j}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.104,
+            0.843,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The components are negatively correlated, as we would expect: if we know there are a lot of objects in category i, then there aren’t as many objects left over that could possibly be in category "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j ."
+            },
+            {
+              "type": "text",
+              "content": " Exercise 65 asks for a different proof of this result, using indicators. \u0004"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 351,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Joint distributions"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "335"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.067,
+            0.896,
+            0.2
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "h 7.4.7 (Independent trials but dependent components). The k components of a Multinomial are dependent, but the n objects in the story of the Multinomial are independently categorized. In the extreme case "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k = 2 ,"
+            },
+            {
+              "type": "text",
+              "content": " a "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { M u l t } _ { k } ( n , \\mathbf { p } )"
+            },
+            {
+              "type": "text",
+              "content": " random vector looks like "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( X , n - X )"
+            },
+            {
+              "type": "text",
+              "content": " with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { B i n } ( n , p _ { 1 } )"
+            },
+            {
+              "type": "text",
+              "content": " , which we can think of as (number of successes, number of failures), where “success” is defined as getting category 1. The number of successes is perfectly negatively correlated with the number of failures, even though the trials are independent."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.105,
+            0.21,
+            0.894,
+            0.248
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We conclude this section with a heroic example that ties together many of the most important concepts for the Multinomial."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.105,
+            0.258,
+            0.894,
+            0.352
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 7.4.8 (Statwoman). The superhero Statwoman uses probability and statistics to fight crime. She has battled with countless foes, sometimes even fighting several at the same time. For simplicity though, assume that each of her battles is with exactly one of the following adversaries: the Confounder, the Extrapolator, and the Overfitter."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.105,
+            0.363,
+            0.894,
+            0.476
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Suppose that Statwoman will have n battles next year (with n a positive integer), and that each battle is with the Confounder with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " , the Extrapolator with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , and the Overfitter with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " , independently. Here "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 1 } , p _ { 2 } , p _ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " are nonnegative and sum to 1. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , X _ { 2 } , X _ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " be the numbers of battles Statwoman will have with the Confounder, the Extrapolator, and the Overfitter next year, respectively."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 6,
+          "bbox": [
+            0.1,
+            0.484,
+            0.901,
+            0.863
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.105,
+                0.487,
+                0.533,
+                0.506
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) Find the joint distribution of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X _ { 1 } , X _ { 2 } , X _ { 3 }"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.105,
+                0.516,
+                0.535,
+                0.535
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) Find the correlation between "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X _ { 1 }"
+                },
+                {
+                  "type": "text",
+                  "content": " and "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X _ { 2 }"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.105,
+                0.545,
+                0.894,
+                0.621
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(c) Suppose for this part only that it turns out that the Extrapolator and the Overfitter have been devising evil plots together, so it is of interest to study their combined number of skirmishes with Statwoman. Let "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X _ { 2 3 } = X _ { 2 }   +   X _ { 3 }"
+                },
+                {
+                  "type": "text",
+                  "content": " . Find the joint distribution of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X _ { 1 } , X _ { 2 3 }"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 10,
+              "bbox": [
+                0.105,
+                0.631,
+                0.894,
+                0.744
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(d) Suppose for this part only that the parameters "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "p _ { 1 } , p _ { 2 } , p _ { 3 }"
+                },
+                {
+                  "type": "text",
+                  "content": " are unknown, "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "n = 3 6 0"
+                },
+                {
+                  "type": "text",
+                  "content": " and it is observed that exactly 36 of Statwoman’s battles are with the Overfitter. A natural way to estimate "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "p _ { 3 }"
+                },
+                {
+                  "type": "text",
+                  "content": " would be to use "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "3 6 / 3 6 0 = 0 . 1"
+                },
+                {
+                  "type": "text",
+                  "content": " . The maximum likelihood estimate (MLE) of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "p _ { 3 }"
+                },
+                {
+                  "type": "text",
+                  "content": " is the value of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "p _ { 3 }"
+                },
+                {
+                  "type": "text",
+                  "content": " that makes the observed data, "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X _ { 3 } = 3 6"
+                },
+                {
+                  "type": "text",
+                  "content": " , as likely as possible. That is, the MLE is the value of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "p _ { 3 }"
+                },
+                {
+                  "type": "text",
+                  "content": " that maximizes "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "P ( X _ { 3 } = 3 6 )"
+                },
+                {
+                  "type": "text",
+                  "content": " Show that the MLE is the natural estimate, 0.1."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 11,
+              "bbox": [
+                0.105,
+                0.755,
+                0.894,
+                0.811
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(e) Assume for this part only that the Overfitter has been captured, through heroic efforts! So assume that all of Statwoman’s battles next year will be with one of her other two adversaries. Find the joint PMF of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X _ { 1 } , X _ { 2 }"
+                },
+                {
+                  "type": "text",
+                  "content": " , given that "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X _ { 3 } = 0"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.105,
+                0.821,
+                0.894,
+                0.86
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(f) Now suppose that, instead of the number of battles being a constant "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "n ,"
+                },
+                {
+                  "type": "text",
+                  "content": " the number of battles is "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "N \\sim  Pois (\\lambda)"
+                },
+                {
+                  "type": "text",
+                  "content": " . Find the joint distribution of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X _ { 1 } , X _ { 2 } , X _ { 3 }"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 13,
+          "bbox": [
+            0.106,
+            0.87,
+            0.194,
+            0.887
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.105,
+            0.899,
+            0.807,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) By the story of the Multinomial, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( X _ { 1 } , X _ { 2 } , X _ { 3 } ) \\sim \\operatorname { M u l t } _ { 3 } ( n , ( p _ { 1 } , p _ { 2 } , p _ { 3 } ) )"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

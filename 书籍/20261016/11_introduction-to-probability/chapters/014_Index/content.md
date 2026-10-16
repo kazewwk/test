@@ -1,0 +1,1467 @@
+# Index
+
+原始 PDF 第 626–636 页。
+
+## Index
+
+2D LOTUS, 324
+
+2D Poisson process, 573
+
+68-95-99.7% rule, 236
+
+Adam’s law, 426
+
+adjusting for overcounting, 15
+
+aggregation of data, 76
+
+aperiodic Markov chain, 505
+
+axioms of probability, 22
+
+bank–post office story, 396
+
+Bayes’ billiards, 382
+
+Bayes’ rule, 53
+
+coherency of, 67
+
+four versions of, 316
+
+odds form, 54
+
+with extra conditioning, 60
+
+Bayesian view of probability, 22, 383
+
+Bernoulli distribution, 112
+
+MGF of, 279
+
+sum of r.v.s, 131
+
+Bernoulli trial, 112
+
+Beta distribution, 380
+
+and the Binomial, 383
+
+and the Gamma, 396
+
+as the distribution of the order statistics of Uniforms, 402
+
+expectation of, 397
+
+PDF of, 397
+
+simulation of, 539
+
+Beta-Binomial distribution, 398
+
+binary entropy function, 186
+
+binomial coefficient, 15
+
+Binomial distribution, 112
+
+and Beta, 383
+
+and Hypergeometric, 118, 133
+
+and Poisson, 181
+
+conditional distribution given a sum, 133
+
+expectation of, 156
+
+MGF of, 281
+
+Normal approximation to, 475
+
+PMF of, 113
+
+sum of r.v.s, 131
+
+symmetry property of, 115
+
+variance of, 174
+
+binomial theorem, 16
+
+birth-death chain, 518
+
+birthday problem, 12, 136
+
+expected number of birthday matches, 166
+
+Poisson approximation for, 179
+
+with general probabilities, 43
+
+with near-birthdays counted as matches, 179
+
+Bivariate Normal distribution, 337, 433
+
+generation of, 342
+
+joint PDF of, 374
+
+parameters of, 338
+
+sum and difference in, 341
+
+Blissville, 242
+
+Blotchville, 242, 393, 438
+
+Bobo the amoeba, 71
+
+Bonferroni’s inequality, 165
+
+Boole’s inequality, 165
+
+Bose-Einstein, 18
+
+bound on a probability, 457
+
+bounds on a Normal tail probability example, 466
+
+Box-Muller transformation, 373
+
+branching process, 71
+
+609
+
+---
+
+610
+
+Index
+
+bus waiting time example, 242
+
+capture-recapture, 117, 134
+
+cardinality of a set, 583
+
+cars on a highway example, 571
+
+category error, 127, 436
+
+Cauchy distribution, 320, 371, 476
+
+Cauchy-Schwarz inequality, 458
+
+CDF, see cumulative distribution function
+
+central limit theorem, 471
+
+central moment, 272
+
+change of variables
+
+in multiple dimensions, 372
+
+in one dimension, 369
+
+location-scale transformation example, 372
+
+Chebyshev’s inequality, 465
+
+Chernoff’s bound, 466
+
+Chi-Square distribution, 477
+
+as a Gamma, 477
+
+expectation of, 477
+
+MGF of, 477
+
+PDF of, 370
+
+variance of, 477
+
+chicken-egg story, 310, 552, 569
+
+class size paradox, 244
+
+CLT, see central limit theorem
+
+code for communication across a noisy channel, 185
+
+code-breaking example, 541
+
+coin-tossing: waiting for HH vs. HT, 421
+
+coloring of a Poisson process, 570
+
+committee-choosing example, 15
+
+communicating over a noisy channel, 185
+
+competing risks example, 566
+
+complement, 582
+
+compound interest formula, 589
+
+concave function, 461, 588
+
+conditional expectation, 415
+
+Adam’s law, 427
+
+dropping what’s independent, 426
+
+given an event, 416
+
+given an r.v., 425
+
+projection interpretation, 429
+
+properties of, 426
+
+taking out what’s known, 426
+
+conditional independence
+
+does not imply independence, 65, 133
+
+given an event vs. given the complement, 65
+
+is not implied by independence, 66, 133
+
+of events, 65
+
+of random variables, 132
+
+conditional PDF, 313
+
+conditional PMF, 306
+
+conditional probability, 46
+
+as a tool for computing probability, 54, 68
+
+as probability, 59
+
+Bayes’ rule, see Bayes’ rule
+
+coherence of, 67
+
+conditioning on more than one event, 62
+
+conditioning on the first step, 71
+
+conditioning on what you wish you knew, 68
+
+conditional variance, 432
+
+conditionitis example, 56
+
+confounding variable, 76, 310
+
+conjugate prior, 383, 392, 544
+
+contingency table, 308
+
+continuity correction, 475
+
+continuous random variable, 213
+
+convex function, 461, 588
+
+convolution, 376
+
+of Bernoullis, 131
+
+of Binomials, 131
+
+of Discrete Uniforms, 109
+
+of Exponentials, 378, 390
+
+of Gammas, 392
+
+of Geometrics, 161
+
+of Normals, 287
+
+of Poissons, 181, 287
+
+---
+
+Index
+
+611
+
+of Uniforms, 378
+
+correlation, 329
+
+is between −1 and 1, 330
+
+count-time duality, 245, 573
+
+countable set, 585
+
+coupon collector problem, 161
+
+as a Markov chain, 505
+
+covariance, 326
+
+properties of, 327
+
+cumulative distribution function, 121
+
+empirical CDF, 470
+
+joint CDF, 304
+
+validity of, 121
+
+Darwin’s finches example, 551
+
+de Montmort’s matching problem, 25, 165
+
+De Morgan’s laws, 4, 583
+
+defense attorney’s fallacy, 75
+
+degree of a node, 516
+
+detailed balance condition, 514
+
+dictionary translating between English and sets, 6
+
+difference equation, 73, 592
+
+differential equation, 593
+
+discrete random variable, 106, 213
+
+probability mass function of, 107
+
+support of, 106
+
+Discrete Uniform distribution, 118
+
+sum of r.v.s, 109
+
+disease testing example, 56, 67
+
+distribution, 107
+
+as a blueprint, 128, 137
+
+conditional, 132, 133, 182, 221, 306, 313, 393, 501, 561, 562
+
+joint distribution, 304
+
+kurtosis of, 275
+
+marginal, 305, 313, 501
+
+median of, 267
+
+mode of, 267
+
+parameter of, 112
+
+posterior, 383
+
+prior, 383
+
+skewness of, 273
+
+symmetry of, 273
+
+doubly stochastic matrix, 515
+
+dropping what’s independent, 426
+
+DUnif, see Discrete Uniform distribution
+
+Ehrenfest chain, 518
+
+eigenvalue, 591
+
+eigenvector, 592
+
+elk problem, 117, 134
+
+embedding into a Poisson process, 567
+
+empirical CDF, 470
+
+empty set, 581
+
+entropy, 462
+
+Eve’s law, 434
+
+event, 3
+
+existence proofs using probability and expectation, 184
+
+expectation
+
+as center of mass, 151, 219, 273
+
+determined by the distribution, 151
+
+does not determine the distribution, 152
+
+fundamental bridge to probability, 164
+
+linearity of, 152, 426
+
+minimizes mean squared error, 269
+
+monotonicity of, 157
+
+of a continuous r.v., 219
+
+of a discrete r.v., 149
+
+of distance between two Normals, 325
+
+of distance between two Uniforms, 324
+
+via Adam’s law, 427
+
+via summing tail probabilities, 169
+
+via survival function, 169
+
+expected value, see expectation
+
+---
+
+612
+
+Index
+
+Exponential distribution, 238
+
+all the moments of, 283
+
+CDF of, 238
+
+correlation between max and min, 330
+
+mean of, 239
+
+memoryless property of, see memoryless property of the Exponential
+
+MGF of, 282
+
+minimum of independent r.v.s, 246
+
+PDF of, 238
+
+probability of one r.v. being less than another, 319
+
+sum of a First Success number of r.v.s, 569
+
+sum of r.v.s, 378, 390
+
+variance of, 239
+
+exponential function, 589
+
+factorial, 12, 590
+
+First Success distribution, 159
+
+expectation of, 160
+
+sum of a First Success number of Exponentials, 569
+
+first-step analysis, 71
+
+Fisher exact test, 133
+
+Folded Normal distribution, 237
+
+frequentist view of probability, 22, 48
+
+FS, see First Success distribution
+
+function, 585
+
+concave, 461, 588
+
+continuous, 585
+
+convex, 461, 588
+
+domain of, 585
+
+even, 587
+
+increasing, 586
+
+inverse of a, 586
+
+odd, 587
+
+one-to-one, 586
+
+range of, 585
+
+right-continuous, 585
+
+strictly increasing, 586
+
+target of, 585
+
+function of a random variable, 123, 367
+
+fundamental bridge, 164
+
+gambler’s ruin problem, 72
+
+as a Markov chain, 504
+
+Gamma distribution, 388
+
+and a Poisson process, 392, 393, 438
+
+and the Beta, 396
+
+expectation of, 388
+
+moments of, 390
+
+Normal approximation to, 475
+
+PDF of, 388
+
+sum of r.v.s, 392
+
+variance of, 390
+
+gamma function, 387, 590
+
+generating function, 279
+
+Geometric distribution, 157
+
+CDF of, 158
+
+expectation of, 159, 170, 421
+
+for returns to a transient state, 503
+
+MGF of, 280
+
+PMF of, 157
+
+sum of r.v.s, 161
+
+variance of, 173
+
+geometric series, 597
+
+Gibbs sampler, 548
+
+good score principle, 184
+
+Google PageRank, 511
+
+graph coloring example, 550
+
+Hamming distance, 186
+
+harmonic series, 598
+
+HGeom, see Hypergeometric distribution
+
+hierarchical model, 437
+
+Hypergeometric distribution, 115
+
+and Binomial, 118, 133
+
+expectation of, 156
+
+PMF of, 116
+
+symmetry property of, 117
+
+---
+
+Index
+
+613
+
+two sets of tags interpretation, 117
+
+variance of, 331
+
+i.i.d., see independent and identically distributed
+
+ice cream cones example, 10
+
+inclusion-exclusion, 25, 165
+
+independence
+
+conditional, 65
+
+does not imply conditional independence, 66, 133
+
+is not implied by conditional independence, 65, 133
+
+of many events, 65
+
+of many random variables, 129
+
+of r.v.s implies they are uncorrelated, but not conversely, 327
+
+of two events, 63
+
+of two random variables, 129
+
+pairwise, 64
+
+independence of two random variables, 309
+
+independence of two random variables, 316
+
+independent and identically distributed, 130
+
+symmetry property of, 248
+
+indicator random variable, 112, 164, 167
+
+inequalities for probabilities, 457
+
+information theory, 185, 462
+
+inner product of random variables, 431
+
+intersection, 582
+
+irreducible Markov chain, 503
+
+Jacobian matrix, 372, 374, 396, 596
+
+Jensen’s inequality, 461
+
+joint CDF, 304
+
+joint distribution, 304
+
+continuous case, 312
+
+discrete case, 304
+
+hybrid case, 322, 393
+
+joint MGF, 339, 460
+
+joint PDF, 312
+
+joint PMF, 304
+
+jumpers example, 249
+
+knight on a chessboard example, 517
+
+kurtosis, 275
+
+labeling objects, 14
+
+law of large numbers, 467
+
+law of rare events, 177
+
+law of the unconscious statistician 2D LOTUS, 324
+
+continuous case, 220
+
+discrete case, 170
+
+law of total expectation, 417
+
+law of total probability, 54, 376, 418
+
+four versions of, 316
+
+with extra conditioning, 60
+
+law of total variance, 434
+
+Leibniz’s mistake, 14
+
+length-biased sampling, 244
+
+life expectancy example, 417
+
+lighthouse example, 371
+
+linear regression example, 430
+
+linearity of conditional expectation, 427
+
+linearity of expectation, 152
+
+Little’s law, 563
+
+LLN, see law of large numbers
+
+location, 222
+
+location-scale transformation, 222, 235, 251, 282
+
+PDF of, 372
+
+log probability scoring example, 464
+
+Log-Normal distribution, 270, 284
+
+all the moments of, 284
+
+nonexistence of MGF of, 284
+
+PDF of, 370
+
+logarithm, 589
+
+---
+
+614
+
+Index
+
+Logistic distribution, 215, 226
+
+LOTP, see law of total probability
+
+LOTUS, see law of the unconscious statistician
+
+marginal distribution, 305, 313, 393
+
+marginal PDF, 313
+
+marginal PMF, 305
+
+Markov chain, 497
+
+irreducible, 503
+
+period of, 505
+
+stationary distribution, 507
+
+Markov chain Monte Carlo, 536
+
+Markov property, 498
+
+Markov’s inequality, 465
+
+matching pennies example, 133
+
+matching problem, 25, 165
+
+matrix, 590
+
+maximum of two die rolls example, 126
+
+MCMC, 536
+
+mean
+
+arithmetic, 149
+
+of a random variable, see expectation
+
+weighted, 149
+
+median, 267
+
+minimizes mean absolute error, 269
+
+memoryless property of the Exponential, 240, 241, 330
+
+Metropolis-Hastings algorithm, 537
+
+MGF, see moment generating function
+
+Mills’ inequality, 259
+
+mode, 267
+
+moment, 272
+
+moment generating function, 279
+
+determines the distribution, 280
+
+for finding moments, 280 joint MGF as the generalization for joint distributions, 339
+
+of a location-scale transformation, 282
+
+of a sum, 281
+
+Monte Carlo, 469, 535
+
+Monty Hall problem, 68
+
+multilevel model, 437
+
+Multinomial distribution, 332
+
+conditional distributions of, 334
+
+covariance between components of, 334
+
+joint PMF of, 332
+
+lumping property of, 333
+
+marginal distributions of, 333
+
+multiplication rule, 8
+
+Multivariate Normal distribution, 337
+
+concatenation property of, 338
+
+covariance matrix of, 338
+
+joint MGF of, 339
+
+joint PDF in the bivariate case, 374
+
+mean vector of, 338
+
+parameters of, 338
+
+subvectors property of, 338
+
+uncorrelated implies independent within an MVN random vector, 339
+
+murder evidence example, 75
+
+mystery opponent example, 133
+
+mystery prize example, 419
+
+naive definition of probability, 6
+
+NBin, see Negative Binomial distribution
+
+near-birthday problem, 179
+
+nearest star example, 574
+
+Negative Binomial distribution, 160
+
+as a Gamma mixture of Poissons, 568
+
+expectation of, 161
+
+---
+
+Index
+
+615
+
+MGF of, 281
+
+PMF of, 160
+
+variance of, 173
+
+Negative Hypergeometric distribution, 168, 384
+
+network, 516
+
+Newton-Pepys problem, 17
+
+NHGeom, see Negative Hypergeometric distribution
+
+Normal distribution, 232, 235
+
+68-95-99.7% rule for, 236
+
+all the moments of a standard Normal, 283
+
+CDF of, 236
+
+central limit theorem, 471
+
+distribution of the sample variance, 478
+
+expectation of, 234
+
+independence of sample mean and sample variance, 342
+
+MGF of, 282
+
+normalizing constant of, 233
+
+PDF of, 236
+
+sum of r.v.s, 287
+
+symmetry properties of, 232
+
+variance of, 235
+
+with Normal prior on the mean, 544
+
+occurrence of an event, 3
+
+odds, 53
+
+order statistics, 399
+
+CDFs of, 400
+
+for Uniforms, 402
+
+marginal PDFs of, 401
+
+outcome of an experiment, 3
+
+PageRank, 511
+
+pairwise independence, 64
+
+parameter of a distribution, 112
+
+partial derivative, 594
+
+partition of a set, 583
+
+partnerships example, 21
+
+pattern recognition, 394, 599
+
+PDF, see probability density function
+
+Pebble World, 3, 48
+
+percentiles on an exam example, 225
+
+period of a state, 505
+
+permutation
+
+of 1, 2, . . . , n, 12
+
+of a word, 16
+
+random, 249
+
+Perron-Frobenius theorem, 509, 592
+
+PGF, see probability generating function
+
+PMF, see probability mass function
+
+Poisson distribution, 175
+
+and Binomial, 181
+
+as an approximation, 177
+
+chicken-egg story, 310
+
+conditional distribution given a sum, 182
+
+expectation of, 175
+
+Gamma mixture of Poissons is Negative Binomial, 568
+
+Normal approximation to, 475
+
+PMF of, 175
+
+sum of r.v.s, 181, 287
+
+variance of, 175
+
+Poisson paradigm, 177
+
+Poisson process, 244, 392, 438, 559
+
+and the Gamma distribution, 393, 438
+
+coloring of, 570
+
+conditional distribution of counts, 561
+
+conditional distribution of times, 562
+
+count-time duality for, 245
+
+embedding strategy, 567
+
+generative story, 560, 563
+
+in more than one dimension, 573
+
+projection of superposed processes into discrete time, 567
+
+---
+
+616
+
+Index
+
+superposition property, 564
+
+thinning of, 568
+
+poker probabilities, 17
+
+positive predictive value of a test, 88
+
+possibility principle, 184
+
+posterior distribution, 383, 393
+
+posterior mean, 393, 545
+
+posterior probability, 46
+
+posterior variance, 393, 545
+
+prior distribution, 383
+
+prior probability, 46
+
+probabilistic method, 184
+
+probability, 1–579
+
+as conditional probability, 59
+
+axioms of, 22
+
+Bayesian view of, 22, 383
+
+bounds on, 457
+
+four fundamental objects in, 137, 192, 252, 293, 345, 403, 441, 482, 521
+
+frequentist view of, 22, 48
+
+fundamental bridge to expectation, 164
+
+general definition of, 22
+
+naive definition of, 6
+
+of a union, 25
+
+of an intersection, 53
+
+properties of, 23
+
+probability density function, 214
+
+conditional PDF, 313
+
+intuitive interpretation of, 217
+
+joint PDF, 312
+
+marginal PDF, 313
+
+units of, 218
+
+probability generating function, 287
+
+probability integral transform, see universality of the Uniform
+
+probability mass function, 107
+
+conditional, 132, 133, 182
+
+conditional PMF, 306
+
+joint PMF, 304
+
+marginal PMF, 305
+
+validity of, 110
+
+probability scoring example, 464
+
+prosecutor’s fallacy, 74
+
+Putnam problem, 167
+
+quantile function, 224
+
+R, 29
+
+r.v., see random variable
+
+random coin example, 55, 60, 65
+
+random sample from a random city example, 437
+
+random scan Gibbs sampler, 548
+
+random sign, 133, 337
+
+random slips of paper example, 119
+
+random sum of random variables, 436, 569
+
+random variable, 104
+
+continuous, see continuous random variable
+
+convolution of r.v.s, see convolution
+
+discrete, see discrete random variable
+
+distribution of, 107
+
+function of a, 123, 367
+
+indicator, see indicator random variable
+
+kurtosis of, 275
+
+median of, 267
+
+mode of, 267
+
+moment of, 272
+
+skewness of, 273
+
+source of randomness, 106
+
+sum of a random number of r.v.s, 436
+
+sum of r.v.s, see convolution
+
+symmetry of, 273
+
+random walk, 72, 125, 126, 423, 516
+
+random walk on an undirected network, 516
+
+ranks of a list of numbers, 249
+
+---
+
+Index
+
+617
+
+Rayleigh distribution, 216, 227
+
+records example, 249
+
+recurrent state, 503
+
+reversibility of a Markov chain, 514
+
+ROC (receiver operator characteristic) curve, 364
+
+Sally Clark case, 74
+
+sample mean, 276, 467, 535
+
+mean and variance of, 277
+
+sample moment, 276
+
+sample space, 3
+
+sample standard deviation, 277
+
+sample variance, 277, 535
+
+distribution in the Normal case, 478
+
+unbiasedness of, 278
+
+sampling
+
+with replacement, 11, 119, 168
+
+with the number of successes fixed, 168
+
+with the number of trials fixed, 168
+
+without replacement, 12, 119, 168
+
+scale, 222
+
+second moment method, 459
+
+sensitivity of a test, 56
+
+set, 581
+
+Shannon’s theorem, 185
+
+simple random sampling, 7
+
+Simpson’s paradox, 76
+
+simulated annealing, 544
+
+six-fingered man example, 58
+
+size of a set, 583
+
+skewness, 273
+
+SLLN, see strong law of large numbers
+
+soul of statistics, 46
+
+specificity of a test, 56
+
+St. Petersburg paradox, 163
+
+standard deviation, 171
+
+standard Normal distribution, 232
+
+standardized moment, 272
+
+stationary distribution, 536
+
+convergence to, 509
+
+stationary distribution of a Markov chain, 507
+
+existence and uniqueness of, 509
+
+Statwoman example, 335
+
+stick-breaking example, 425
+
+Stirling’s formula, 590
+
+story
+
+of Bayes’ billiards, 382
+
+of the bank and the post office, 396
+
+of the Beta and the Binomial, 383
+
+of the Beta and the Gamma, 396
+
+of the Binomial, 112, 131
+
+of the captured and recaptured elk, 117
+
+of the chicken and the egg, 310, 552, 569
+
+of the Discrete Uniform, 118
+
+of the Exponential, 241
+
+of the First Success, 159, 162
+
+of the Geometric, 157, 503
+
+of the Hypergeometric, 115
+
+of the Negative Binomial, 160
+
+of the Negative Hypergeometric, 168
+
+of the Normal, 471
+
+of the Poisson, 177
+
+of the Poisson process and the Gamma, 392, 438
+
+of the Uniform, 251
+
+story proof
+
+for counting, 20
+
+for distributions, 118, 132
+
+strong law of large numbers, 467
+
+Student-t distribution, 479
+
+subset, 582
+
+subsets example, 11
+
+sum of die rolls example, 109, 111, 288
+
+---
+
+618
+
+Index
+
+sum of random variables, see convolution
+
+superposition of Poisson processes, 564
+
+survival function, 169
+
+symmetric distribution, 273
+
+symmetry of i.i.d. random variables, 248
+
+sympathetic magic, 127, 223, 507
+
+systematic scan Gibbs sampler, 548
+
+t distribution, see Student-t distribution
+
+taking out what’s known, 426
+
+Taylor series for e<sup>x</sup>, 598
+
+team captain example, 20
+
+thinning of a Poisson process, 568
+
+toy collector problem, 161
+
+trace plot, 547
+
+transformation, 123, 367
+
+transient state, 503
+
+transition matrix of a Markov chain, 498
+
+translating between English and sets, 6
+
+tree diagram, 8, 69
+
+Triangle distribution, 379
+
+true negative rate, 56
+
+true positive rate, 56
+
+two cards example, 46
+
+two children example at least one girl, 49
+
+at least one winter girl, 51
+
+random child is a girl, 50
+
+two coin tosses example, 105, 107, 115
+
+two friends example, 66, 133
+
+two-envelope paradox, 418
+
+unbiasedness of an estimator, 278
+
+uncorrelated, 327
+
+is implied by independence but does not imply independence, 327
+
+within a Multivariate Normal random vector, 339
+
+uncountable set, 585
+
+Uniform distribution, 220
+
+CDF of, 220
+
+conditional distribution of, 221
+
+has probability proportional to length, 220
+
+mean of, 222
+
+MGF of, 280
+
+on a region in the plane, 317
+
+order statistics of, 402
+
+PDF of, 220
+
+sum of r.v.s, 378
+
+universality of, 224, 372
+
+variance of, 222
+
+union, 582
+
+units
+
+converting between, 367
+
+in a change of variables, 369
+
+of a PDF, 218
+
+universality of the Uniform, 224, 372
+
+for generating Exponential r.v.s, 539
+
+users visiting a website example, 563
+
+validity
+
+of CDF, 121
+
+of joint PDF, 312
+
+of joint PMF, 304
+
+of PDF, 215
+
+of PMF, 110
+
+Vandermonde’s identity, 21, 131
+
+variance, 171
+
+as moment of inertia, 273
+
+properties of, 172
+
+via Eve’s law, 434
+
+vector space of random variables, 431
+
+volatile stock example, 475
+
+waiting time until HH vs. HT, 421
+
+---
+
+Index
+
+619
+
+weak law of large numbers, 467
+
+Weibull distribution, 241, 285, 574
+
+winner’s curse, 421
+
+wishful thinking, 68, 310, 418, 423
+
+WLLN, see weak law of large numbers
+
+Zipf distribution, 538

@@ -1,0 +1,3021 @@
+{
+  "pages": [
+    {
+      "page_idx": 448,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "432"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.163
+          ],
+          "content": "We can now also give a geometric interpretation for Adam’s law: $E ( Y )$ says to project Y in one step onto the space of all constants; $E ( E ( Y | X ) )$ says to do it in two steps, by first projecting onto the plane and then projecting $E ( Y | X )$ onto the space of all constants, which is a line within that plane. Adam’s law says that the one-step and two-step methods yield the same result."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.172,
+            0.897,
+            0.268
+          ],
+          "content": "In the next section we will introduce Eve’s law, which serves the same purpose for variance as Adam’s law does for expectation. As a preview and to further explore the geometric interpretation of conditional expectation, let’s look at $\\operatorname { V a r } ( Y )$ from the perspective of this section. Assume that $E(Y)=0 (  if  E(Y) \\neq 0,$ we can center $Y$ by subtracting $E ( Y )$ ; doing so has no effect on the variance of Y )."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.276,
+            0.896,
+            0.315
+          ],
+          "content": "We can decompose $Y$ into two orthogonal terms, the residual $Y - E ( Y | X )$ and the conditional expectation $E ( Y | X )$ :"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.348,
+            0.329,
+            0.651,
+            0.35
+          ],
+          "content": "Y = (Y - E (Y | X)) + E (Y | X).",
+          "image_source": "images/page_448_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.365,
+            0.896,
+            0.403
+          ],
+          "content": "The two terms are orthogonal since $Y - E ( Y | X )$ is uncorrelated with any function of $X$ , and $E ( Y | X )$ is a function of X. So by the Pythagorean theorem,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.307,
+            0.416,
+            0.693,
+            0.438
+          ],
+          "content": "| | Y | | ^ {2} = | | Y - E (Y | X) | | ^ {2} + | | E (Y | X) | | ^ {2}.",
+          "image_source": "images/page_448_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.453,
+            0.185,
+            0.47
+          ],
+          "content": "That is,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.281,
+            0.472,
+            0.719,
+            0.492
+          ],
+          "content": "\\operatorname{Var} (Y) = \\operatorname{Var} (Y - E (Y | X)) + \\operatorname{Var} (E (Y | X)).",
+          "image_source": "images/page_448_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.501,
+            0.896,
+            0.577
+          ],
+          "content": "As we will see in the next section, this identity is a form of Eve’s law. So it turns out that Eve’s law, which may look cryptic at first glance, can be interpreted as just being the Pythagorean theorem for a “triangle” whose sides are the vectors $Y - E ( Y | X ) , E ( Y | X )$ , and $Y$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.66,
+            0.414,
+            0.678
+          ],
+          "level": 2,
+          "content": "9.5 Conditional variance"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.697,
+            0.896,
+            0.755
+          ],
+          "content": "Once we’ve defined conditional expectation given an r.v., we have a natural way to define conditional variance given a random variable: replace all instances of $E ( \\cdot )$ in the definition of unconditional variance with $E ( \\cdot | X )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.763,
+            0.894,
+            0.799
+          ],
+          "content": "Definition 9.5.1 (Conditional variance). The conditional variance of Y given X is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.327,
+            0.801,
+            0.671,
+            0.822
+          ],
+          "content": "\\mathrm{Var} (Y | X) = E ((Y - E (Y | X)) ^ {2} | X).",
+          "image_source": "images/page_448_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.831,
+            0.305,
+            0.85
+          ],
+          "content": "This is equivalent to"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.323,
+            0.864,
+            0.677,
+            0.886
+          ],
+          "content": "\\mathrm{Var} (Y | X) = E (Y ^ {2} | X) - (E (Y | X)) ^ {2}.",
+          "image_source": "images/page_448_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.9,
+            0.891,
+            0.92
+          ],
+          "content": "h 9.5.2. Like $E(Y|X), \\operatorname{Var}(Y|X)$ is a random variable, and it is a function of $X$"
+        }
+      ]
+    },
+    {
+      "page_idx": 449,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.038,
+            0.314,
+            0.054
+          ],
+          "content": "Conditional expectation"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "433"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.068,
+            0.894,
+            0.125
+          ],
+          "content": "Since conditional variance is defined in terms of conditional expectations, we can use results about conditional expectation to help us calculate conditional variance. Here’s an example."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.133,
+            0.857,
+            0.153
+          ],
+          "content": "Example 9.5.3. Let $Z \\sim \\mathcal { N } ( 0 , 1 )$ and $Y = Z ^ { 2 }$ . Find $\\operatorname { V a r } ( Y | Z )$ and $\\operatorname { V a r } ( Z | Y )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.163,
+            0.195,
+            0.179
+          ],
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.19,
+            0.894,
+            0.247
+          ],
+          "content": "Without any calculations we can see that $\\mathrm { V a r } ( Y | Z )   =   0 ;$ conditional on $Z , \\; Y$ is a known constant, and the variance of a constant is 0. By the same reasoning, $\\mathrm { V a r } ( h ( Z ) | Z ) = 0$ for any function $h .$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.256,
+            0.473,
+            0.275
+          ],
+          "content": "To get $\\operatorname { V a r } ( Z | Y )$ , apply the definition:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.316,
+            0.287,
+            0.682,
+            0.31
+          ],
+          "content": "\\mathrm{Var} (Z | Z ^ {2}) = E (Z ^ {2} | Z ^ {2}) - (E (Z | Z ^ {2})) ^ {2}.",
+          "image_source": "images/page_449_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.322,
+            0.894,
+            0.362
+          ],
+          "content": "The first term equals $Z ^ { 2 }$ . The second term equals 0 by symmetry, as we found in Example 9.3.3. Thus $\\mathrm { V a r } ( Z | Z ^ { 2 } ) = Z ^ { 2 }$ , which we can write as $\\operatorname { V a r } ( Z | Y ) = Y$ \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.37,
+            0.894,
+            0.407
+          ],
+          "content": "In the next example, we will practice working with conditional expectation and conditional variance in the context of the Bivariate Normal."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.417,
+            0.894,
+            0.474
+          ],
+          "content": "Example 9.5.4 (Conditional expectation and conditional variance in a BVN). Let $( Z , W )$ be Bivariate Normal, with Corr $( Z , W ) = \\rho$ and $Z , W$ marginally $\\mathcal { N } ( 0 , 1 )$ Find $E ( W | Z )$ and $\\operatorname { V a r } ( W | Z )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.482,
+            0.894,
+            0.54
+          ],
+          "content": "Solution: We can assume that $( Z , W )$ has been constructed as in Example 7.5.10, since $E ( W | Z )$ and $\\operatorname { V a r } ( W | Z )$ depend only on the joint distribution of $( Z , W )$ , not on the specific method that was used to create $( Z , W )$ . So let"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.397,
+            0.556,
+            0.606,
+            0.601
+          ],
+          "content": "\\begin{array}{l} Z = X \\\\ W = \\rho X + \\sqrt {1 - \\rho^ {2}} Y, \\\\ \\end{array}",
+          "image_source": "images/page_449_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.614,
+            0.894,
+            0.67
+          ],
+          "content": "with $X , Y   i.i.d.  \\mathcal{N}(0,1)$ . We can then solve the problem very neatly, without having to resort to messy integrals based on the Bivariate Normal joint PDF. The conditional expectation is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.14,
+            0.682,
+            0.859,
+            0.706
+          ],
+          "content": "E (W | Z) = E (W | X) = \\rho X + \\sqrt {1 - \\rho^ {2}} E (Y | X) = \\rho X + \\sqrt {1 - \\rho^ {2}} E (Y) = \\rho Z,",
+          "image_source": "images/page_449_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.719,
+            0.72,
+            0.737
+          ],
+          "content": "since X and Y are independent. And the conditional variance is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.15,
+            0.75,
+            0.848,
+            0.773
+          ],
+          "content": "\\operatorname{Var} (W | Z) = \\operatorname{Var} (W | X) = \\operatorname{Var} (\\sqrt {1 - \\rho^ {2}} Y | X) = (1 - \\rho^ {2}) \\operatorname{Var} (Y) = 1 - \\rho^ {2},",
+          "image_source": "images/page_449_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.786,
+            0.816,
+            0.805
+          ],
+          "content": "since $\\rho X$ acts as a constant if we are given $X$ , and Y is independent of $X$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.814,
+            0.874,
+            0.833
+          ],
+          "content": "Interestingly, the same argument with the roles of $Z$ and $W$ reversed shows that"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.304,
+            0.845,
+            0.696,
+            0.868
+          ],
+          "content": "E (Z | W) = \\rho W, \\text {and} \\operatorname{Var} (Z | W) = 1 - \\rho^ {2}.",
+          "image_source": "images/page_449_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.881,
+            0.894,
+            0.919
+          ],
+          "content": "One might have guessed that if we should multiply by $\\rho$ to go from an observed value of $Z$ to a predicted value of W, then we should divide by $\\rho$ to go from an observed"
+        }
+      ]
+    },
+    {
+      "page_idx": 450,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "434"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.145
+          ],
+          "continues_prev": true,
+          "content": "value of $W$ to a predicted value of $Z .$ But the above results say to multiply by the same $\\rho ,$ regardless of whether using $Z$ to predict $W$ or vice versa! This is closely related to the fact that correlation is symmetric $( \\operatorname { C o r r } ( Z , W )   =   \\rho   =   \\operatorname { C o r r } ( W , Z ) )$ and to an important concept in statistics known as regression toward the mean. \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.154,
+            0.896,
+            0.21
+          ],
+          "content": "We learned in the previous section that Adam’s law relates conditional expectation to unconditional expectation. A companion result for Adam’s law is $E v e   ^ { \\prime } s$ law, which relates conditional variance to unconditional variance."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.221,
+            0.619,
+            0.239
+          ],
+          "content": "Theorem 9.5.5 (Eve’s law). For any r.v.s X and $Y$ ,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.303,
+            0.256,
+            0.696,
+            0.276
+          ],
+          "content": "\\mathrm{Var} (Y) = E (\\mathrm{Var} (Y | X)) + \\mathrm{Var} (E (Y | X)).",
+          "image_source": "images/page_450_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.302,
+            0.897,
+            0.358
+          ],
+          "content": "The ordering of $E ^ { \\flat } \\mathrm { s }$ and $\\mathrm { V a r ^ { \\prime } s }$ on the right-hand side spells EVVE, whence the name Eve’s law. Eve’s law is also known as the law of total variance or the variance decomposition formula."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.379,
+            0.769,
+            0.399
+          ],
+          "content": "Proof. Let $g ( X ) = E ( Y | X )$ . By Adam’s law, $E(g(X)) = E(Y)$ . Then"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.207,
+            0.413,
+            0.79,
+            0.436
+          ],
+          "content": "E (\\operatorname{Var} (Y | X)) = E (E (Y ^ {2} | X) - g (X) ^ {2}) = E (Y ^ {2}) - E (g (X) ^ {2}),",
+          "image_source": "images/page_450_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.206,
+            0.449,
+            0.791,
+            0.472
+          ],
+          "content": "\\mathrm{Var} (E (Y | X)) = E (g (X) ^ {2}) - (E g (X)) ^ {2} = E (g (X) ^ {2}) - (E Y) ^ {2}.",
+          "image_source": "images/page_450_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.482,
+            0.522,
+            0.5
+          ],
+          "content": "Adding these equations, we have Eve’s law."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.522,
+            0.896,
+            0.71
+          ],
+          "content": "To visualize Eve’s law, imagine a population where each person has a value of $X$ and a value of $Y$ . We can divide this population into subpopulations, one for each possible value of $X .$ . For example, if $X$ represents age and $Y$ represents height, we can group people based on age. Then there are two sources contributing to the variation in people’s heights in the overall population. First, within each age group, people have different heights. The average amount of variation in height within each age group is the within-group variation, $E ( \\operatorname { V a r } ( Y | X ) )$ . Second, across age groups, the average heights are different. The variance of average heights across age groups is the between-group variation, $\\operatorname { V a r } ( E ( Y | X ) )$ . Eve’s law says that to get the total variance of $Y ,$ we simply add these two sources of variation."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.72,
+            0.896,
+            0.815
+          ],
+          "content": "Figure 9.7 illustrates Eve’s law in the simple case where we have three age groups. The average amount of scatter within each of the groups $X   =   1 , \\; X   =   2$ , and $X \\; = \\; 3$ is the within-group variation, $E ( \\operatorname { V a r } ( Y | X ) )$ . The variance of the group means $E(Y|X=1),   E(Y|X=2)$ , and $E ( Y | X = 3 )$ is the between-group variation, $\\operatorname { V a r } ( E ( Y | X ) )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.825,
+            0.896,
+            0.92
+          ],
+          "content": "Another way to think about Eve’s law is in terms of prediction. If we wanted to predict someone’s height based on their age alone, the ideal scenario would be if everyone within an age group had exactly the same height, while different age groups had different heights. Then, given someone’s age, we would be able to predict their height perfectly. In other words, the ideal scenario for prediction is $n o$ within-group"
+        }
+      ]
+    },
+    {
+      "page_idx": 451,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.038,
+            0.314,
+            0.055
+          ],
+          "content": "Conditional expectation"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "435"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.249,
+            0.067,
+            0.404,
+            0.136
+          ],
+          "sub_type": "natural_image",
+          "content": "Simple diagram of black dots arranged inside an oval outline (no text or symbols)",
+          "captions": [
+            {
+              "bbox": [
+                0.285,
+                0.153,
+                0.364,
+                0.174
+              ],
+              "content": "X = 1"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_451_image_2.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.423,
+            0.067,
+            0.578,
+            0.135
+          ],
+          "sub_type": "natural_image",
+          "content": "Simple diagram of black dots arranged inside an oval boundary (no text or symbols)",
+          "captions": [
+            {
+              "bbox": [
+                0.459,
+                0.153,
+                0.542,
+                0.174
+              ],
+              "content": "X = 2"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_451_image_4.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.596,
+            0.067,
+            0.752,
+            0.135
+          ],
+          "sub_type": "natural_image",
+          "content": "Simple diagram of black dots arranged inside an oval outline (no text or symbols)",
+          "captions": [
+            {
+              "bbox": [
+                0.631,
+                0.153,
+                0.713,
+                0.174
+              ],
+              "content": "X = 3"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_451_image_6.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.203,
+            0.238,
+            0.219
+          ],
+          "level": 2,
+          "content": "FIGURE 9.7"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.222,
+            0.895,
+            0.257
+          ],
+          "content": "Eve’s law says that total variance is the sum of within-group and between-group variation."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.28,
+            0.896,
+            0.356
+          ],
+          "content": "variation in height, since the within-group variation cannot be explained by age differences. For this reason, within-group variation is also called unexplained variation, and between-group variation is also called explained variation. Eve’s law says that the overall variance of Y is the sum of unexplained and explained variation."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.366,
+            0.49,
+            0.382
+          ],
+          "content": "We can also write Eve’s law in the form"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.281,
+            0.395,
+            0.717,
+            0.415
+          ],
+          "content": "\\mathrm{Var} (Y) = \\mathrm{Var} (Y - E (Y | X)) + \\mathrm{Var} (E (Y | X)),",
+          "image_source": "images/page_451_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.426,
+            0.545,
+            0.445
+          ],
+          "content": "since, letting W be the residual $Y - E ( Y | X )$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.202,
+            0.455,
+            0.795,
+            0.476
+          ],
+          "content": "\\mathrm{Var} (Y - E (Y | X)) = E (W ^ {2}) = E (E (W ^ {2} | X)) = E (\\mathrm{Var} (Y | X)).",
+          "image_source": "images/page_451_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.487,
+            0.895,
+            0.524
+          ],
+          "content": "Again this says that we can decompose variance into within-group variation plus between-group variation."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.533,
+            0.896,
+            0.61
+          ],
+          "content": "h 9.5.6. Let Y be an r.v. and A be an event. It is wrong to say $\\operatorname { { } ^ { \\operatorname { { \\mathcal { C } } } } V a r } ( Y ) \\; = \\;$ $\\mathrm { V a r } ( Y | A ) P ( A ) + \\mathrm { V a r } ( Y | A ^ { c } ) P ( A ^ { c } )$ , even though this looks analogous to the law of total expectation. (For a simple counterexample, let $Y \\sim \\mathrm { B e r n } ( 1 / 2 )$ and A be the event $Y = 0$ . Then $\\operatorname { V a r } ( Y | A )$ and $\\operatorname { V a r } ( Y | A ^ { c } )$ are both 0, but $\\operatorname { V a r } ( Y ) = 1 / 4 . )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.618,
+            0.895,
+            0.656
+          ],
+          "content": "Instead, we should use Eve’s law if we want to condition on whether or not A occurred: letting I be the indicator of A,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.311,
+            0.666,
+            0.686,
+            0.687
+          ],
+          "content": "\\mathrm{Var} (Y) = E (\\mathrm{Var} (Y | I)) + \\mathrm{Var} (E (Y | I)).",
+          "image_source": "images/page_451_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.697,
+            0.724,
+            0.716
+          ],
+          "content": "To see how this expression relates to the “wrong expression”, let"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.102,
+            0.727,
+            0.895,
+            0.748
+          ],
+          "content": "p = P (A), q = P (A ^ {c}), a = E (Y | A), b = E (Y | A ^ {c}), v = \\operatorname{Var} (Y | A), w = \\operatorname{Var} (Y | A ^ {c}).",
+          "image_source": "images/page_451_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.757,
+            0.895,
+            0.796
+          ],
+          "content": "Then $E ( Y | I )$ is a with probability p and b with probability q, and $\\operatorname { V a r } ( Y | I )$ is v with probability p and w with probability q. So"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.204,
+            0.806,
+            0.794,
+            0.827
+          ],
+          "content": "E (\\operatorname{Var} (Y | I)) = v p + w q = \\operatorname{Var} (Y | A) P (A) + \\operatorname{Var} (Y | A ^ {c}) P (A ^ {c}),",
+          "image_source": "images/page_451_equation_22.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.837,
+            0.895,
+            0.856
+          ],
+          "content": "which is exactly the “wrong expression”, and Var(Y ) consists of this plus the term"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.313,
+            0.865,
+            0.684,
+            0.887
+          ],
+          "content": "\\mathrm{Var} (E (Y | I)) = a ^ {2} p + b ^ {2} q - (a p + b q) ^ {2}.",
+          "image_source": "images/page_451_equation_24.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.898,
+            0.816,
+            0.916
+          ],
+          "content": "It is crucial to account for both within-group and between-group variation."
+        }
+      ]
+    },
+    {
+      "page_idx": 452,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "436"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.109,
+            0.461,
+            0.13
+          ],
+          "level": 2,
+          "content": "9.6 Adam and Eve examples"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.146,
+            0.895,
+            0.203
+          ],
+          "content": "We conclude this chapter with several examples showing how Adam’s law and Eve’s law allow us to find the mean and variance of complicated r.v.s, especially in situations that involve multiple levels of randomness."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.212,
+            0.896,
+            0.288
+          ],
+          "content": "In our first example, the r.v. of interest is a random sum: the sum of a random number of random variables. There are thus two levels of randomness: first, each term in the sum is a random variable; second, the number of terms in the sum is also a random variable."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.296,
+            0.897,
+            0.415
+          ],
+          "content": "Example 9.6.1 (Random sum). A store receives N customers in a day, where N is an r.v. with finite mean and variance. Let $X _ { j }$ be the amount spent by the jth customer at the store. Assume that each $X _ { j }$ has mean $\\mu$ and variance $\\sigma ^ { 2 }$ , and that N and all the $X _ { j }$ are independent of one another. Find the mean and variance of the random sum $\\begin{array} { r } { \\tilde { X } = \\sum _ { j = 1 } ^ { N } X _ { j } } \\end{array}$ , which is the store’s total revenue in a day, in terms of $\\mu ,   \\sigma ^ { 2 } ,   E ( N )$ , and Var(N)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.43,
+            0.195,
+            0.447
+          ],
+          "level": 2,
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.457,
+            0.897,
+            0.552
+          ],
+          "content": "Since X is a sum, our first impulse might be to claim ${ } ^ { \\propto } E ( X ) = N \\mu$ by linearity”. Alas, this would be a category error, since $E ( X )$ is a number and $N \\mu$ is a random variable. The key is that X is not merely a sum, but a random sum; the number of terms we are adding up is itself random, whereas linearity applies to sums with a fixed number of terms."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.561,
+            0.895,
+            0.618
+          ],
+          "content": "Yet this category error actually suggests the correct strategy: if only we were allowed to treat N as a constant, then linearity would apply. So let’s condition on N. By linearity of conditional expectation,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.197,
+            0.625,
+            0.802,
+            0.685
+          ],
+          "content": "E (X | N) = E \\left(\\sum_ {j = 1} ^ {N} X _ {j} | N\\right) = \\sum_ {j = 1} ^ {N} E (X _ {j} | N) = \\sum_ {j = 1} ^ {N} E (X _ {j}) = N \\mu .",
+          "image_source": "images/page_452_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.692,
+            0.895,
+            0.75
+          ],
+          "content": "We used the independence of the $X _ { j }$ and N to assert $E ( X _ { j } | N )   =   E ( X _ { j } )$ for all $j .$ . Note that the statement ${ } ^ { \\backprime \\backprime } E ( X | N ) = N \\mu$ is not a category error because both sides of the equality are r.v.s that are functions of N. Finally, by Adam’s law,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.759,
+            0.699,
+            0.781
+          ],
+          "content": "E (X) = E (E (X | N)) = E (N \\mu) = \\mu E (N).",
+          "image_source": "images/page_452_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.79,
+            0.895,
+            0.828
+          ],
+          "content": "This is a pleasing result: the average total revenue is the average amount spent per customer, multiplied by the average number of customers."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.836,
+            0.641,
+            0.856
+          ],
+          "content": "For $\\operatorname { V a r } ( X )$ , we again condition on N to get $\\operatorname { V a r } ( X | N )$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.157,
+            0.864,
+            0.84,
+            0.924
+          ],
+          "content": "\\operatorname{Var} (X | N) = \\operatorname{Var} \\left(\\sum_ {j = 1} ^ {N} X _ {j} | N\\right) = \\sum_ {j = 1} ^ {N} \\operatorname{Var} (X _ {j} | N) = \\sum_ {j = 1} ^ {N} \\operatorname{Var} (X _ {j}) = N \\sigma^ {2}.",
+          "image_source": "images/page_452_equation_14.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 453,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.039,
+            0.314,
+            0.054
+          ],
+          "content": "Conditional expectation"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "437"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.068,
+            0.778,
+            0.086
+          ],
+          "content": "Eve’s law then tells us how to obtain the unconditional variance of $X$ :"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.097,
+            0.697,
+            0.168
+          ],
+          "content": "\\begin{array}{l} \\mathrm{Var} (X) = E (\\mathrm{Var} (X | N)) + \\mathrm{Var} (E (X | N)) \\\\ = E (N \\sigma^ {2}) + \\mathrm{Var} (N \\mu) \\\\ = \\sigma^ {2} E (N) + \\mu^ {2} \\mathrm{Var} (N). \\\\ \\end{array}",
+          "image_source": "images/page_453_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.188,
+            0.895,
+            0.243
+          ],
+          "content": "In the next example, two levels of randomness arise because our experiment takes place in two stages. We sample a city from a group of cities, then sample citizens within the city. This is an example of a multilevel model."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.253,
+            0.896,
+            0.329
+          ],
+          "content": "Example 9.6.2 (Random sample from a random city). To study the prevalence of a disease in several cities of interest within a certain county, we pick a city at random, then pick a random sample of n people from that city. This is a form of a widely used survey technique known as cluster sampling."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.338,
+            0.897,
+            0.508
+          ],
+          "content": "Let $Q$ be the proportion of diseased people in the chosen city, and let X be the number of diseased people in the sample. As illustrated in Figure 9.8 (where white dots represent healthy individuals and black dots represent diseased individuals), different cities may have very different prevalences. Since each city has its own disease prevalence, $Q$ is a random variable. Suppose that $Q \\; \\sim \\; \\mathrm { U n i f } ( 0 , 1 )$ . Also assume that conditional on $Q ,$ each individual in the sample independently has probability $Q$ of having the disease; this is true if we sample with replacement from the chosen city, and is approximately true if we sample without replacement but the population size is large. Find $E ( X )$ and Var(X)."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.285,
+            0.52,
+            0.72,
+            0.71
+          ],
+          "sub_type": "natural_image",
+          "content": "Diagram showing four quadrants with shaded regions containing black and white dots, no text or symbols present",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_453_image_7.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.727,
+            0.238,
+            0.742
+          ],
+          "level": 2,
+          "content": "FIGURE 9.8"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.745,
+            0.896,
+            0.858
+          ],
+          "content": "A certain oval-shaped county has 4 cities. Each city has healthy people (represented as white dots) and diseased people (represented as black dots). A random city is chosen, and then a random sample of n people is chosen from within that city. There are two components to the variability in the number of diseased people in the sample: variation due to different cities having different disease prevalence, and variation due to the randomness of the sample within the chosen city."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.872,
+            0.196,
+            0.888
+          ],
+          "level": 2,
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.9,
+            0.894,
+            0.92
+          ],
+          "content": "With our assumptions, $X | Q   \\sim   \\mathrm { B i n } ( n , Q )$ ; this notation says that conditional on"
+        }
+      ]
+    },
+    {
+      "page_idx": 454,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "438"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.182
+          ],
+          "continues_prev": true,
+          "content": "knowing the disease prevalence in the chosen city, we can treat Q as a constant, and each sampled individual is an independent Bernoulli trial with probability Q of success. Using the mean and variance of the Binomial distribution, $E ( X | Q ) = n Q$ and $\\mathrm { V a r } ( X | Q ) \\; = \\; n Q ( 1   -   Q )$ . Furthermore, using the moments of the standard Uniform distribution, $E(Q)=1/2,   E(Q^2)=1/3$ , and $\\operatorname { V a r } ( Q ) = 1 / 1 2$ . Now we can apply Adam’s law and Eve’s law to get the unconditional mean and variance of $X$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.329,
+            0.195,
+            0.672,
+            0.225
+          ],
+          "content": "E (X) = E (E (X | Q)) = E (n Q) = \\frac {n}{2},",
+          "image_source": "images/page_454_equation_3.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.309,
+            0.255,
+            0.69,
+            0.362
+          ],
+          "content": "\\begin{array}{l} \\operatorname{Var} (X) = E (\\operatorname{Var} (X | Q)) + \\operatorname{Var} (E (X | Q)) \\\\ = E (n Q (1 - Q)) + \\operatorname{Var} (n Q) \\\\ = n E (Q) - n E (Q ^ {2}) + n ^ {2} \\mathrm{Var} (Q) \\\\ = \\frac {n}{6} + \\frac {n ^ {2}}{1 2}. \\\\ \\end{array}",
+          "image_source": "images/page_454_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.383,
+            0.897,
+            0.513
+          ],
+          "content": "Note that the structure of this problem is identical to that in the story of Bayes billiards. Therefore, we actually know the distribution of $X$ , not just its mean and variance: X is Discrete Uniform on $\\{ 0 , 1 , 2 , \\ldots , n \\}$ . But the Adam-and-Eve approach can be applied when $Q$ has a more complicated distribution, or with more levels in the multilevel model, whether or not it is feasible to work out the distribution of X. For example, we could have people within cities within counties within states within countries. \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.524,
+            0.896,
+            0.561
+          ],
+          "content": "Last but not least, we revisit Story 8.4.5, the Gamma-Poisson problem from the previous chapter."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.57,
+            0.897,
+            0.647
+          ],
+          "content": "Example 9.6.3 (Gamma-Poisson revisited). Recall that Fred decided to find out about the rate of Blotchville’s Poisson process of buses by waiting at the bus stop for t hours and counting the number of buses $Y$ . He then used the data to update his prior distribution $\\lambda \\sim \\mathrm { G a m m a } ( r _ { 0 } , b _ { 0 } )$ . Thus, Fred was using the two-level model"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.419,
+            0.663,
+            0.602,
+            0.68
+          ],
+          "content": "\\lambda \\sim \\operatorname{Gamma} (r _ {0}, b _ {0})",
+          "image_source": "images/page_454_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.398,
+            0.686,
+            0.546,
+            0.703
+          ],
+          "content": "Y | \\lambda \\sim \\operatorname{Pois} (\\lambda t).",
+          "image_source": "images/page_454_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.718,
+            0.896,
+            0.757
+          ],
+          "content": "We found that under Fred’s model, the marginal distribution of Y is Negative Binomial with parameters $r = r _ { 0 }$ and $p = b _ { 0 } / ( b _ { 0 } + t )$ . In particular,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.388,
+            0.77,
+            0.56,
+            0.806
+          ],
+          "content": "E (Y) = \\frac {r q}{p} = \\frac {r _ {0} t}{b _ {0}},",
+          "image_source": "images/page_454_equation_11.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.369,
+            0.812,
+            0.63,
+            0.851
+          ],
+          "content": "\\mathrm{Var} (Y) = \\frac {r q}{p ^ {2}} = \\frac {r _ {0} t (b _ {0} + t)}{b _ {0} ^ {2}}.",
+          "image_source": "images/page_454_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.862,
+            0.897,
+            0.919
+          ],
+          "content": "Let’s independently verify this with Adam’s law and Eve’s law. Using results about the Poisson distribution, the conditional mean and variance of $Y$ given λ are $E ( Y | \\lambda )   =   \\mathrm { V a r } ( Y | \\lambda )   =   \\lambda t$ . Using results about the Gamma distribution, the"
+        }
+      ]
+    },
+    {
+      "page_idx": 455,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.038,
+            0.314,
+            0.054
+          ],
+          "content": "Conditional expectation"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": "439"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.106
+          ],
+          "continues_prev": true,
+          "content": "marginal mean and variance of λ are $E ( \\lambda ) = r _ { 0 } / b _ { 0 }$ and $\\mathrm { V a r } ( \\lambda ) = r _ { 0 } / b _ { 0 } ^ { 2 }$ . For Adam and Eve, this is all that is required:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.318,
+            0.117,
+            0.682,
+            0.243
+          ],
+          "content": "\\begin{array}{l} E (Y) = E (E (Y | \\lambda)) = E (\\lambda t) = \\frac {r _ {0} t}{b _ {0}}, \\\\ \\operatorname{Var} (Y) = E (\\operatorname{Var} (Y | \\lambda)) + \\operatorname{Var} (E (Y | \\lambda)) \\\\ = E (\\lambda t) + \\operatorname{Var} (\\lambda t) \\\\ = \\frac {r _ {0} t}{b _ {0}} + \\frac {r _ {0} t ^ {2}}{b _ {0} ^ {2}} = \\frac {r _ {0} t (b _ {0} + t)}{b _ {0} ^ {2}}, \\\\ \\end{array}",
+          "image_source": "images/page_455_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.252,
+            0.897,
+            0.346
+          ],
+          "content": "which is consistent with our earlier answers. The difference is that when using Adam and Eve, we don’t need to know that Y is Negative Binomial! If we had been too lazy to derive the marginal distribution of Y , or if we weren’t so lucky as to have a named distribution for Y , Adam and Eve would still deliver the mean and variance of $Y$ (though not the PMF)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.355,
+            0.897,
+            0.468
+          ],
+          "content": "Lastly, let’s compare the mean and variance of Y under the two-level model to the mean and variance we would get if Fred were absolutely sure of the true value of λ. In other words, suppose we replaced λ by its mean, $E ( \\lambda )   =   r _ { 0 } / b _ { 0 }$ , making λ a constant instead of an r.v. Then the marginal distribution of the number of buses (which we’ll call $\\tilde { Y }$ under the new assumptions) would just be Poisson with parameter $r _ { 0 } t / b _ { 0 }$ . Then we would have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.449,
+            0.48,
+            0.568,
+            0.516
+          ],
+          "content": "E (\\tilde {Y}) = \\frac {r _ {0} t}{b _ {0}},",
+          "image_source": "images/page_455_equation_6.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.432,
+            0.518,
+            0.568,
+            0.553
+          ],
+          "content": "\\mathrm{Var} (\\tilde {Y}) = \\frac {r _ {0} t}{b _ {0}}.",
+          "image_source": "images/page_455_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.564,
+            0.897,
+            0.622
+          ],
+          "content": "Notice that $E ( \\tilde { Y } ) = E ( Y )$ , but $\\mathrm { V a r } ( \\tilde { Y } ) < \\mathrm { V a r } ( Y )$ : the extra term $r _ { 0 } t ^ { 2 } / b _ { 0 } ^ { 2 }$ <sup>from</sup> Eve’s law is missing. Intuitively, when we fix λ at its mean, we are eliminating a level of uncertainty in the model, and this causes a reduction in the unconditional variance."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.631,
+            0.896,
+            0.707
+          ],
+          "content": "Figure 9.9 overlays the plots of two PMFs, that of $Y \\sim \\mathrm { N B i n } ( r _ { 0 } , b _ { 0 } / ( b _ { 0 }   +   t ) )$ in gray and that of $\\tilde { Y } \\sim \\operatorname { P o i s } ( r _ { 0 } t / b _ { 0 } )$ in black. The values of the parameters are arbitrarily chosen to be $r _ { 0 } = 5 ,   b _ { 0 } = 1 ,   t = 2$ . These two PMFs have the same center of mass, but the PMF of Y is noticeably more dispersed. \u0003"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.789,
+            0.242,
+            0.809
+          ],
+          "level": 2,
+          "content": "9.7 Recap"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.827,
+            0.896,
+            0.864
+          ],
+          "content": "To calculate an unconditional expectation, we can divide up the sample space and use the law of total expectation"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.366,
+            0.875,
+            0.632,
+            0.923
+          ],
+          "content": "E (Y) = \\sum_ {i = 1} ^ {n} E (Y | A _ {i}) P (A _ {i}),",
+          "image_source": "images/page_455_equation_12.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 456,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "440"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.212,
+            0.081,
+            0.775,
+            0.319
+          ],
+          "sub_type": "scatter",
+          "content": "| x | Black Series (PMF) | Grey Series (PMF) |\n|---|---|---|\n| 0 | ~0.005 | ~0.005 |\n| 1 | ~0.002 | ~0.015 |\n| 2 | ~0.003 | ~0.028 |\n| 3 | ~0.008 | ~0.042 |\n| 4 | ~0.018 | ~0.056 |\n| 5 | ~0.038 | ~0.068 |\n| 6 | ~0.062 | ~0.075 |\n| 7 | ~0.090 | ~0.078 |\n| 8 | ~0.112 | ~0.078 |\n| 9 | ~0.125 | ~0.075 |\n| 10 | ~0.125 | ~0.072 |\n| 11 | ~0.112 | ~0.065 |\n| 12 | ~0.095 | ~0.058 |\n| 13 | ~0.072 | ~0.050 |\n| 14 | ~0.052 | ~0.042 |\n| 15 | ~0.035 | ~0.035 |\n| 16 | ~0.022 | ~0.030 |\n| 17 | ~0.012 | ~0.025 |\n| 18 | ~0.008 | ~0.020 |\n| 19 | ~0.005 | ~0.015 |\n| 20 | ~0.003 | ~0.012 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_456_chart_2.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.337,
+            0.238,
+            0.352
+          ],
+          "level": 2,
+          "content": "FIGURE 9.9"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.354,
+            0.897,
+            0.392
+          ],
+          "content": "PMF of $Y   \\sim   \\mathrm { N B i n } ( r _ { 0 } , b _ { 0 } / ( b _ { 0 } + t ) )$ in gray and $\\tilde { Y }   \\sim   \\mathrm { P o i s } ( r _ { 0 } t / b _ { 0 } )$ in black, where $r _ { 0 } = 5 ,   b _ { 0 } = 1 ,   t = 2$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.415,
+            0.896,
+            0.49
+          ],
+          "content": "but we must be careful not to destroy information in subsequent steps (such as by forgetting in the midst of a long calculation to condition on something that needs to be conditioned on). In problems with a recursive structure, we can also use first-step analysis for expectations."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.5,
+            0.896,
+            0.575
+          ],
+          "content": "The conditional expectation $E ( Y | X )$ and conditional variance $\\operatorname { V a r } ( Y | X )$ are random variables that are functions of $X ;$ they are obtained by treating X as if it were a known constant. If X and $Y$ are independent, then $E ( Y | X )   =   E ( Y )$ and $\\operatorname { V a r } ( Y | X ) = \\operatorname { V a r } ( Y )$ . Conditional expectation has the properties"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.319,
+            0.583,
+            0.61,
+            0.603
+          ],
+          "content": "E (h (X) Y | X) = h (X) E (Y | X)",
+          "image_source": "images/page_456_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.322,
+            0.605,
+            0.681,
+            0.627
+          ],
+          "content": "E (Y _ {1} + Y _ {2} | X) = E (Y _ {1} | X) + E (Y _ {2} | X),",
+          "image_source": "images/page_456_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.634,
+            0.896,
+            0.709
+          ],
+          "content": "analogous to the properties $E ( c Y ) = c E ( Y )$ and $E(Y_{1} + Y_{2}) = E(Y_{1}) + E(Y_{2})$ for unconditional expectation. The conditional expectation $E ( Y | X )$ is also the random variable that makes the residual $Y - E ( Y | X )$ uncorrelated with any function of $X$ which means we can interpret it geometrically as a projection."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.719,
+            0.445,
+            0.736
+          ],
+          "content": "Finally, Adam’s law and Eve’s law,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.32,
+            0.746,
+            0.518,
+            0.766
+          ],
+          "content": "E (Y) = E (E (Y | X))",
+          "image_source": "images/page_456_equation_11.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.305,
+            0.769,
+            0.695,
+            0.79
+          ],
+          "content": "\\operatorname{Var} (Y) = E (\\operatorname{Var} (Y | X)) + \\operatorname{Var} (E (Y | X)),",
+          "image_source": "images/page_456_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.797,
+            0.895,
+            0.833
+          ],
+          "content": "often help us calculate $E ( Y )$ and $\\operatorname { V a r } ( Y )$ in problems that feature multiple forms or levels of randomness."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.844,
+            0.897,
+            0.919
+          ],
+          "content": "Figure 9.10 illustrates how the number $E ( Y | X = x )$ connects with the r.v. $E ( Y | X )$ whose expectation is $E ( Y )$ by Adam’s law. Additionally, it shows how the ingredients in Eve’s law are formed and come together to give a useful decomposition of $\\operatorname { V a r } ( Y )$ in terms of quantities that condition on $X$"
+        }
+      ]
+    },
+    {
+      "page_idx": 457,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.039,
+            0.314,
+            0.055
+          ],
+          "content": "Conditional expectation"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "441"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.107,
+            0.075,
+            0.896,
+            0.495
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph TD\n  A[\"joint distributions\"] -->|generate| B[\"X,Y\"]\n  C[\"random variables\"] --> D[\"X = x\"]\n  E[\"events\"] --> F[\"E(Y|X = x)\\n(function of x)\"]\n  G[\"numbers\"] --> H[\"E(Y|X) = E(Y)\\n(Adam's law)\"]\n  I[\"variables\"] --> J[\"E(Y|X)\"]\n  K[\"variables\"] --> L[\"E(Y|X)\"]\n  M[\"variables\"] --> N[\"E(Var(Y|X))\"]\n  O[\"variables\"] --> P[\"Var(Y|X)\"]\n  Q[\"variables\"] --> R[\"Var(Y|X)\"]\n  S[\"variables\"] --> T[\"Var(Y) = E(Var(Y|X)) + Var(E(Y|X))\\n(Eve's law)\"]\n  \n  B -->|condition on r.v.| U[\"E(Y|X)\\n(function of X)\"]\n  D -->|condition on event| U\n  U -->|variance| V[\"Var(E(Y|X))\\n(between group variation)\"]\n  U -->|expectation| W[\"Var(Y|X)\\n(function of X)\"]\n  V -->|expectation| X[\"E(Var(Y|X))\\n(within group variation)\"]\n  W -->|expectation| X\n  X --> Y[\"Var(Y) = E(Var(Y|X)) + Var(E(Y|X))\\n(Eve's law)\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.104,
+                0.513,
+                0.249,
+                0.529
+              ],
+              "content": "FIGURE 9.10"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_457_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.531,
+            0.897,
+            0.662
+          ],
+          "content": "We often observe an r.v. X and want to predict another r.v. Y based on the information about X. If we observe that $X = x ,$ then we can condition on that event and use $E ( Y | X = x )$ as our prediction. The conditional expectation $E ( Y | X )$ is the r.v. that takes the value $E ( Y | X = x )$ when $X = x$ . Adam’s law lets us compute the unconditional expectation $E ( Y )$ by starting with the conditional expectation $E ( Y | X )$ . Similarly, Eve’s law lets us compute $\\operatorname { V a r } ( Y )$ in terms of quantities that condition on $X$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.734,
+            0.192,
+            0.751
+          ],
+          "level": 2,
+          "content": "9.8 R"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.773,
+            0.385,
+            0.791
+          ],
+          "level": 2,
+          "content": "Mystery prize simulation"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.813,
+            0.897,
+            0.888
+          ],
+          "content": "We can use simulation to show that in Example 9.1.7, the example of bidding on a mystery prize with unknown value, any bid will lead to a negative payout on average. First choose a bid b (we chose 0.6); then simulate a large number of hypothetical mystery prizes and store them in v:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.104,
+            0.902,
+            0.202,
+            0.917
+          ],
+          "content": "b <   - 0. 6",
+          "image_source": "images/page_457_equation_8.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 458,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.14,
+            0.053
+          ],
+          "content": "442"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.105,
+            0.069,
+            0.29,
+            0.104
+          ],
+          "sub_type": "code",
+          "content": "```txt\nnsim <- 10^5\nv <- runif(nsim)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.117,
+            0.894,
+            0.172
+          ],
+          "content": "The bid is accepted if b > (2/3)\\*v. To get the average profit conditional on an accepted bid, we use square brackets to keep only those values of v satisfying the condition:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.106,
+            0.185,
+            0.383,
+            0.203
+          ],
+          "sub_type": "code",
+          "content": "```txt\nmean(v[b > (2/3)*v]) - b\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.215,
+            0.894,
+            0.251
+          ],
+          "content": "This value is negative regardless of b, as you can check by experimenting with different values of b."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.106,
+            0.288,
+            0.361,
+            0.306
+          ],
+          "level": 2,
+          "content": "Time until HH vs. HT"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.327,
+            0.894,
+            0.383
+          ],
+          "content": "To verify the results of Example 9.1.9, we can start by generating a long sequence of fair coin tosses. This is done with the sample command. We use paste with the collapse=\"\" argument to turn these tosses into a single string of H’s and T’s:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.106,
+            0.394,
+            0.721,
+            0.414
+          ],
+          "sub_type": "code",
+          "content": "```txt\npaste(sample(c(\"H\",\"T\"),100,replace=TRUE),collapse=\"\")\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.425,
+            0.897,
+            0.461
+          ],
+          "content": "A sequence of length 100 is enough to virtually guarantee that both HH and HT will have appeared at least once."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.474,
+            0.894,
+            0.53
+          ],
+          "content": "To determine how many tosses are required on average to see HH and HT, we need to generate many sequences of coin tosses. For this, we use our familiar friend replicate:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.106,
+            0.541,
+            0.779,
+            0.579
+          ],
+          "sub_type": "code",
+          "content": "```txt\nr <- replicate(10^3,paste(sample(c(\"H\",\"T\"),100,replace=T),\n            collapse=\"\"))\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.609,
+            0.894,
+            0.685
+          ],
+          "content": "Now r contains a thousand sequences of coin tosses, each of length 100. To find the first appearance of HH in each of these sequences, you can use the str\\_locate command from the stringr package. After you’ve installed and loaded the package,"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.106,
+            0.696,
+            0.369,
+            0.714
+          ],
+          "sub_type": "code",
+          "content": "```r\nt <- str_locate(r,\"HH\")\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.727,
+            0.894,
+            0.839
+          ],
+          "content": "creates a two-column table t, whose columns contain the starting and ending positions of the first appearance of HH in each sequence of coin tosses. (Use head(t) to display the first few rows of the table and get an idea of what your results look like.) What we want are the ending positions, given by the second column. In particular, we want the average value of the second column, which is an approximation of the average waiting time for HH :"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.106,
+            0.851,
+            0.231,
+            0.869
+          ],
+          "sub_type": "code",
+          "content": "```txt\nmean(t[,2])\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.881,
+            0.894,
+            0.917
+          ],
+          "content": "Is your answer around 6? Trying again with \"HT\" instead of \"HH\", is your answer around 4?"
+        }
+      ]
+    },
+    {
+      "page_idx": 459,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.038,
+            0.314,
+            0.054
+          ],
+          "content": "Conditional expectation"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "443"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.068,
+            0.298,
+            0.087
+          ],
+          "level": 2,
+          "content": "Linear regression"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.107,
+            0.895,
+            0.163
+          ],
+          "content": "In Example 9.3.10, we derived formulas for the slope and intercept of a linear regression model, which can be used to predict a response variable using an explanatory variable. Let’s try to apply these formulas to a simulated dataset:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.102,
+            0.176,
+            0.393,
+            0.212
+          ],
+          "sub_type": "code",
+          "content": "```txt\nx <- rnorm(100)\ny <- 3 + 5*x + rnorm(100)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.224,
+            0.897,
+            0.3
+          ],
+          "content": "The vector x contains 100 realizations of the random variable $X \\sim \\mathcal { N } ( 0 , 1 )$ , and the vector y contains 100 realizations of the random variable $Y = a + b X + \\epsilon$ where $\\epsilon \\sim \\mathcal { N } ( 0 , 1 )$ . As we can see, the true values of a and b for this dataset are 3 and 5, respectively. We can visualize the data as a scatterplot with plot(x,y)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.312,
+            0.895,
+            0.349
+          ],
+          "content": "Now let’s see if we can get good estimates of the true a and b, using the formulas in Example 9.3.10:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.103,
+            0.361,
+            0.381,
+            0.398
+          ],
+          "sub_type": "code",
+          "content": "```r\nb <- cov(x,y) / var(x)\na <- mean(y) - b*mean(x)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.41,
+            0.895,
+            0.504
+          ],
+          "content": "Here cov(x,y), var(x), and mean(x) provide the sample covariance, sample variance, and sample mean, estimating the quantities Cov(X, Y ), Var(X), and E(X), respectively. (We have discussed sample mean and sample variance in detail in earlier chapters. Sample covariance is defined analogously, and is a natural way to estimate the true covariance.)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.516,
+            0.897,
+            0.572
+          ],
+          "content": "You should find that b is close to 5 and a is close to 3. These estimated values define the line of best fit. The abline command lets us plot the line of best fit on top of our scatterplot:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.103,
+            0.585,
+            0.279,
+            0.621
+          ],
+          "sub_type": "code",
+          "content": "```txt\nplot(x,y)\nabline(a=a,b=b)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.633,
+            0.895,
+            0.671
+          ],
+          "content": "The first argument to abline is the intercept of the line, and the second argument is the slope."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.756,
+            0.279,
+            0.774
+          ],
+          "level": 2,
+          "content": "9.9 Exercises"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.795,
+            0.819,
+            0.814
+          ],
+          "content": "Exercises marked with s have detailed solutions at [http://stat110.net](http://stat110.net)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.168,
+            0.842,
+            0.603,
+            0.861
+          ],
+          "level": 2,
+          "content": "Conditional expectation given an event"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.871,
+            0.872,
+            0.919
+          ],
+          "content": "1. Fred wants to travel from Blotchville to Blissville, and is deciding between 3 options (involving different routes or different forms of transportation). The jth option would take an average of $\\mu _ { j }$ hours, with a standard deviation of $\\sigma _ { j }$ hours. Fred randomly"
+        }
+      ]
+    },
+    {
+      "page_idx": 460,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.052
+          ],
+          "content": "444"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.054
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.07,
+            0.871,
+            0.101
+          ],
+          "continues_prev": true,
+          "content": "chooses between the 3 options, with equal probabilities. Let T be how long it takes for him to get from Blotchville to Blissville."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.168,
+            0.112,
+            0.802,
+            0.154
+          ],
+          "sub_type": "text",
+          "content": "(a) Find $E ( T )$ . Is it simply $( \\mu _ { 1 } + \\mu _ { 2 } + \\mu _ { 3 } ) / 3$ , the average of the expectations?\n(b) Find $\\operatorname { V a r } ( T )$ . Is it simply $( \\sigma _ { 1 } ^ { 2 } + \\sigma _ { 2 } ^ { 2 } + \\sigma _ { 3 } ^ { 2 } ) / 3$ the average of the variances?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.16,
+            0.871,
+            0.221
+          ],
+          "content": "2. While Fred is sleeping one night, X legitimate emails and Y spam emails are sent to him. Suppose that X and Y are independent, with $X   \\sim   \\mathrm { P o i s ( 1 0 ) }$ and $Y   \\sim   \\mathrm { P o i s ( 4 0 ) }$ When he wakes up, he observes that he has 30 new emails in his inbox. Given this information, what is the expected value of how many new legitimate emails he has?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.228,
+            0.871,
+            0.288
+          ],
+          "content": "3. A group of 21 women and 14 men are enrolled in a medical study. Each of them has a certain disease with probability p, independently. It is then found (through extremely reliable testing) that exactly 5 of the people have the disease. Given this information, what is the expected number of women who have the disease?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.295,
+            0.871,
+            0.386
+          ],
+          "content": "4. A researcher studying crime is interested in how often people have gotten arrested. Let $X \\sim  Pois (\\lambda)$ be the number of times that a random person got arrested in the last 10 years. However, data from police records are being used for the researcher’s study, and people who were never arrested in the last 10 years do not appear in the records. In other words, the police records have a selection bias: they only contain information on people who have been arrested in the last 10 years."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.389,
+            0.871,
+            0.481
+          ],
+          "content": "So averaging the numbers of arrests for people in the police records does not directly estimate $E ( X )$ ; it makes more sense to think of the police records as giving us information about the conditional distribution of how many times a person was arrest, given that the person was arrested at least once in the last 10 years. The conditional distribution of X, given that $X \\geq 1$ , is called a truncated Poisson distribution (see Exercise 14 from Chapter 3 for another example of this distribution)."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.169,
+            0.49,
+            0.348,
+            0.533
+          ],
+          "sub_type": "text",
+          "content": "(a) Find $E ( X | X \\geq 1 )$\n(b) Find $\\operatorname { V a r } ( X | X \\geq 1 )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.539,
+            0.871,
+            0.631
+          ],
+          "content": "5. A fair 20-sided die is rolled repeatedly, until a gambler decides to stop. The gambler pays \\$1 per roll, and receives the amount shown on the die when the gambler stops (e.g., if the die is rolled 7 times and the gambler decides to stop then, with an 18 as the value of the last roll, then the net payoff is $\\S 18-\\S 7=\\S 11)$ . Suppose the gambler uses the following strategy: keep rolling until a value of m or greater is obtained, and then stop (where m is a fixed integer between 1 and 20)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.169,
+            0.641,
+            0.472,
+            0.657
+          ],
+          "content": "(a) What is the expected net payoff?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.663,
+            0.871,
+            0.694
+          ],
+          "content": "Hint: The average of consecutive integers $a , a + 1 , \\ldots , a + n$ is the same as the average of the first and last of these. See the math appendix for more information about series."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.704,
+            0.648,
+            0.72
+          ],
+          "content": "(b) Use R or other software to find the optimal value of m."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.726,
+            0.648,
+            0.742
+          ],
+          "content": "6. Let $X \\sim \\operatorname{Expo}(\\lambda)$ . Find $E ( X | X < 1 )$ in two different ways:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.168,
+            0.752,
+            0.731,
+            0.794
+          ],
+          "sub_type": "text",
+          "content": "(a) by calculus, working with the conditional PDF of X given $X < 1$\n(b) without calculus, by expanding E(X) using the law of total expectation."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.8,
+            0.871,
+            0.862
+          ],
+          "content": "7. You are given an opportunity to bid on a mystery box containing a mystery prize! The value of the prize is completely unknown, except that it is worth at least nothing, and at most a million dollars. So the true value V of the prize is considered to be Uniform on [0,1] (measured in millions of dollars)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.871,
+            0.871,
+            0.918
+          ],
+          "content": "You can choose to bid any nonnegative amount b (in millions of dollars). If $\\begin{array} { r } { b < \\frac { 1 } { 4 } V } \\end{array}$ , then your bid is rejected and nothing is gained or lost. If $\\begin{array} { r } { b \\geq \\frac { 1 } { 4 } V } \\end{array}$ , then your bid is accepted and your net payoff is $V - b$ (since you pay b to get a prize worth V )."
+        }
+      ]
+    },
+    {
+      "page_idx": 461,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.039,
+            0.314,
+            0.054
+          ],
+          "content": "Conditional expectation"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.862,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "445"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.07,
+            0.871,
+            0.102
+          ],
+          "content": "Find your expected payoff as a function of b (be sure to specify it for all $b \\geq 0 )$ . Then find the optimal bid $b ,$ to maximize your expected payoff."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.109,
+            0.871,
+            0.185
+          ],
+          "content": "8. s You get to choose between two envelopes, each of which contains a check for some positive amount of money. Unlike in the two-envelope paradox, it is not given that one envelope contains twice as much money as the other envelope. Instead, assume that the two values were generated independently from some distribution on the positive real numbers, with no information given about what that distribution is."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.188,
+            0.872,
+            0.281
+          ],
+          "content": "After picking an envelope, you can open it and see how much money is inside (call this value x), and then you have the option of switching. As no information has been given about the distribution, it may seem impossible to have better than a 50% chance of picking the better envelope. Intuitively, we may want to switch if x is “small” and not switch if x is “large”, but how do we define “small” and “large” in the grand scheme of all possible distributions? [The last sentence was a rhetorical question.]"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.292,
+            0.871,
+            0.354
+          ],
+          "content": "Consider the following strategy for deciding whether to switch. Generate a threshold T ∼ Expo(1), and switch envelopes if and only if the observed value x is less than the value of T. Show that this strategy succeeds in picking the envelope with more money with probability strictly greater than $1 / 2 .$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.366,
+            0.871,
+            0.428
+          ],
+          "content": "Hint: Let t be the value of $T$ (generated by a random draw from the Expo(1) distribution). First explain why the strategy works very well if t happens to be in between the two envelope values, and does no harm in any case $( \\mathrm { i . e . }$ , there is no case in which the strategy succeeds with probability strictly less than $1 / 2 )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.435,
+            0.871,
+            0.496
+          ],
+          "content": "9. There are two envelopes, each of which has a check for a Unif(0, 1) amount of money, measured in thousands of dollars. The amounts in the two envelopes are independent. You get to choose an envelope and open it, and then you can either keep that amount or switch to the other envelope and get whatever amount is in that envelope."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.499,
+            0.871,
+            0.545
+          ],
+          "content": "Suppose that you use the following strategy: choose an envelope and open it. If you observe $U ,$ then stick with that envelope with probability $U ,$ and switch to the other envelope with probability $1 - U$"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.168,
+            0.558,
+            0.718,
+            0.601
+          ],
+          "sub_type": "text",
+          "content": "(a) Find the probability that you get the larger of the two amounts.\n(b) Find the expected value of what you will receive."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.126,
+            0.608,
+            0.871,
+            0.67
+          ],
+          "content": "10. Suppose n people are bidding on a mystery prize that is up for auction. The bids are to be submitted in secret, and the individual who submits the highest bid wins the prize. The ith bidder receives a signal $X _ { i } ,$ with $X _ { 1 } , \\ldots , X _ { n }$ i.i.d. The value of the prize, $V ,$ is defined to be the sum of the individual bidders’ signals:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.438,
+            0.682,
+            0.601,
+            0.697
+          ],
+          "content": "V = X _ {1} + \\dots + X _ {n}.",
+          "image_source": "images/page_461_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.709,
+            0.871,
+            0.786
+          ],
+          "content": "This is known in economics as the wallet game: we can imagine that the n people are bidding on the total amount of money in their wallets, and each person’s signal is the amount of money in their own wallet. Of course, the wallet is a metaphor; the game can also be used to model company takeovers, where each of two companies bids to take over the other, and a company knows its own value but not the value of the other company."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.789,
+            0.593,
+            0.804
+          ],
+          "content": "For this problem, assume the $X _ { i }$ are i.i.d. Unif(0, 1)."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.168,
+            0.811,
+            0.871,
+            0.91
+          ],
+          "sub_type": "text",
+          "content": "(a) Before receiving her signal, what is bidder 1’s unconditional expectation for $V ?$\n(b) Conditional on receiving the signal $X _ { 1 } = x _ { 1 }$ , what is bidder 1’s expectation for V ?\n(c) Suppose each bidder submits a bid equal to their conditional expectation for V , i.e., bidder i bids $E ( V | X _ { i } = x _ { i } )$ . Conditional on receiving the signal $X _ { 1 } = x _ { 1 }$ and winning the auction, what is bidder 1’s expectation for V ? Explain intuitively why this quantity is always less than the quantity calculated in (b)."
+        }
+      ]
+    },
+    {
+      "page_idx": 462,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.052
+          ],
+          "content": "446"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.07,
+            0.871,
+            0.102
+          ],
+          "content": "11. s A coin with probability p of Heads is flipped repeatedly. For (a) and (b), suppose that p is a known constant, with $0 < p < 1$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.113,
+            0.78,
+            0.128
+          ],
+          "content": "(a) What is the expected number of flips until the pattern HT is observed?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.14,
+            0.782,
+            0.155
+          ],
+          "content": "(b) What is the expected number of flips until the pattern HH is observed?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.168,
+            0.869,
+            0.213
+          ],
+          "content": "(c) Now suppose that p is unknown, and that we use a $\\mathrm { B e t a } ( a , b )$ prior to reflect our uncertainty about $p$ (where a and b are known constants and are greater than 2). In terms of a and b, find the corresponding answers to (a) and (b) in this setting."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.221,
+            0.871,
+            0.3
+          ],
+          "content": "12. A coin with probability p of Heads is flipped repeatedly, where $0   <   p   <   1$ . The sequence of outcomes can be divided into runs (blocks of $H ^ { \\flat } \\mathrm { s }$ or blocks of $T ^ { \\mathrm { { , } } } \\mathrm { { s ) , e . g . } }$ HHHT T T T HT T T HH becomes $\\boxed { H H H } \\boxed { T T T T } \\boxed { H } \\boxed { T T T } \\boxed { H H } .$ which has 5 runs, with lengths 3, 4, 1, 3, 2, respectively. Assume that the coin is flipped at least until the start of the third run."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.312,
+            0.533,
+            0.326
+          ],
+          "content": "(a) Find the expected length of the first run."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.34,
+            0.555,
+            0.354
+          ],
+          "content": "(b) Find the expected length of the second run."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.363,
+            0.871,
+            0.393
+          ],
+          "content": "13. A fair 6-sided die is rolled once. Find the expected number of additional rolls needed to obtain a value at least as large as that of the first roll."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.396,
+            0.475,
+            0.412
+          ],
+          "content": "14. A fair 6-sided die is rolled repeatedly."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.423,
+            0.842,
+            0.438
+          ],
+          "content": "(a) Find the expected number of rolls needed to get a 1 followed right away by a 2."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.447,
+            0.697,
+            0.461
+          ],
+          "content": "Hint: Start by conditioning on whether or not the first roll is a 1."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.474,
+            0.754,
+            0.489
+          ],
+          "content": "(b) Find the expected number of rolls needed to get two consecutive 1’s."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.501,
+            0.871,
+            0.547
+          ],
+          "content": "(c) Let $a _ { n }$ be the expected number of rolls needed to get the same value n times in a row $( \\mathrm { i . e . } ,$ to obtain a streak of n consecutive $j ^ { \\prime } \\mathrm { s }$ for some not-specified-in-advance value of $j )$ . Find a recursive formula for $a _ { n + 1 }$ in terms of $a _ { n }$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.555,
+            0.871,
+            0.585
+          ],
+          "content": "Hint: Divide the time until there are $n + 1$ consecutive appearances of the same value into two pieces: the time until there are n consecutive appearances, and the rest."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.588,
+            0.83,
+            0.604
+          ],
+          "content": "(d) Find a simple, explicit formula for $a _ { n }$ for all $n \\geq 1$ . What is $a _ { 7 }$ (numerically)?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.168,
+            0.633,
+            0.709,
+            0.65
+          ],
+          "level": 2,
+          "content": "Conditional expectation given a random variable"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.661,
+            0.871,
+            0.707
+          ],
+          "content": "15. s Let $X _ { 1 } , X _ { 2 }$ be i.i.d., and let $\\bar { X } = \\textstyle { \\frac { 1 } { 2 } } ( X _ { 1 } + X _ { 2 } )$ be the sample mean. In many statistics problems, it is useful or important to obtain a conditional expectation given $\\bar { X }$ . As an example of this, find $E ( w _ { 1 } X _ { 1 } + w _ { 2 } X _ { 2 } | \\bar { X } )$ , where $w _ { 1 } , w _ { 2 }$ are constants with $w _ { 1 }   +   w _ { 2 } = 1$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.714,
+            0.871,
+            0.745
+          ],
+          "content": "16. Let $X _ { 1 } , X _ { 2 } , \\ldots$ be i.i.d. r.v.s with mean 0, and let $S _ { n } = X _ { 1 } + \\cdots + X _ { n }$ . As shown in Example 9.3.6, the expected value of the first term given the sum of the first n terms is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.45,
+            0.755,
+            0.59,
+            0.784
+          ],
+          "content": "E (X _ {1} | S _ {n}) = \\frac {S _ {n}}{n}.",
+          "image_source": "images/page_462_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.792,
+            0.775,
+            0.808
+          ],
+          "content": "Generalize this result by finding $E ( S _ { k } | S _ { n } )$ for all positive integers k and $n .$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.816,
+            0.871,
+            0.862
+          ],
+          "content": "17. s Consider a group of n roommate pairs at a college (so there are $2 n$ students). Each of these 2n students independently decides randomly whether to take a certain course, with probability p of success (where “success” is defined as taking the course)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.864,
+            0.871,
+            0.911
+          ],
+          "content": "Let N be the number of students among these 2n who take the course, and let X be the number of roommate pairs where both roommates in the pair take the course. Find $E ( X )$ and $E ( X | N )$ ."
+        }
+      ]
+    },
+    {
+      "page_idx": 463,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.039,
+            0.314,
+            0.054
+          ],
+          "content": "Conditional expectation"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": "447"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.069,
+            0.871,
+            0.102
+          ],
+          "content": "18. s Show that $E ( ( Y - E ( Y | X ) ) ^ { 2 } | X ) = E ( Y ^ { 2 } | X ) - ( E ( Y | X ) ) ^ { 2 }$ , so these two expressions for $\\operatorname { V a r } ( Y | X )$ agree."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.107,
+            0.871,
+            0.138
+          ],
+          "content": "Hint for the variance: Adding a constant (or something acting as a constant) does not affect variance."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.144,
+            0.871,
+            0.192
+          ],
+          "content": "19. Let X be the height of a randomly chosen adult man, and Y be his father’s height, where X and Y have been standardized to have mean 0 and standard deviation 1. Suppose that $( X , Y )$ is Bivariate Normal, with $X , Y \\sim \\mathcal { N } ( 0 , 1 )$ and $\\operatorname { C o r r } ( X , Y ) = \\rho .$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.201,
+            0.871,
+            0.277
+          ],
+          "content": "(a) Let $y   =   a x + b$ be the equation of the best line for predicting Y from X (in the sense of minimizing the mean squared error), e.g., if we were to observe $X = 1 . 3$ then we would predict that Y is $1 . 3 a + b .$ Now suppose that we want to use Y to predict X, rather than using X to predict Y . Give and explain an intuitive guess for what the slope is of the best line for predicting X from Y ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.287,
+            0.871,
+            0.318
+          ],
+          "content": "(b) Find a constant c (in terms of $\\rho )$ and an r.v. V such that $Y = c X + V$ , with V independent of X."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.328,
+            0.618,
+            0.345
+          ],
+          "content": "Hint: Start by finding c such that $\\mathrm{Cov}(X,Y-cX)=0.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.353,
+            0.871,
+            0.385
+          ],
+          "content": "(c) Find a constant d (in terms of $\\rho )$ and an r.v. W such that $X = d Y + W$ , with W independent of Y ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.169,
+            0.394,
+            0.424,
+            0.412
+          ],
+          "content": "(d) Find $E ( Y | X )$ and $E ( X | Y )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.42,
+            0.871,
+            0.482
+          ],
+          "content": "(e) Reconcile (a) and (d), if your intuitive guess in (a) differed from what the results of (d) implied. Give a clear and correct intuitive explanation of the relationship between the slope of the best line for predicting Y from X and the slope of the best line for predicting X from Y ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.488,
+            0.345,
+            0.505
+          ],
+          "content": "20. Let $\\mathbf { X } \\sim \\operatorname { M u l t } _ { 5 } ( n , \\mathbf { p } )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.169,
+            0.513,
+            0.468,
+            0.53
+          ],
+          "content": "(a) Find $E ( X _ { 1 } | X _ { 2 } )$ and $\\operatorname { V a r } ( X _ { 1 } | X _ { 2 } )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.169,
+            0.539,
+            0.379,
+            0.556
+          ],
+          "content": "(b) Find $E ( X _ { 1 } | X _ { 2 } + X _ { 3 } )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.561,
+            0.871,
+            0.592
+          ],
+          "content": "21. Let Y be a discrete r.v., A be an event with $0   <   P(A)   <   1$ , and $I _ { A }$ be the indicator r.v. for A."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.602,
+            0.868,
+            0.619
+          ],
+          "content": "(a) Explain precisely how the r.v. $E ( Y | I _ { A } )$ relates to the numbers $E ( Y | A )$ and $E ( Y | A ^ { c } )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.627,
+            0.868,
+            0.659
+          ],
+          "content": "(b) Show that $E(Y|A)=E(YI_{A})/P(A)$ , directly from the definitions of expectation and conditional expectation."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.665,
+            0.717,
+            0.681
+          ],
+          "content": "Hint: Let $X = Y I _ { A }$ , and then find an expression for the PMF of X."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.69,
+            0.868,
+            0.707
+          ],
+          "content": "(c) Use (b) to give a short proof of the fact that $E ( Y ) = E ( Y | A ) P ( A ) + E ( Y | A ^ { c } ) P ( A ^ { c } )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.709,
+            0.871,
+            0.74
+          ],
+          "content": "22. Show that the following version of LOTP, which we encountered in Section 7.1, is also a consequence of Adam’s law: for any event A and continuous r.v. X with PDF $f _ { X }$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.377,
+            0.747,
+            0.66,
+            0.78
+          ],
+          "content": "P (A) = \\int_ {- \\infty} ^ {\\infty} P (A | X = x) f _ {X} (x) d x.",
+          "image_source": "images/page_463_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.791,
+            0.424,
+            0.807
+          ],
+          "content": "Hint: Consider $E ( I ( A ) | X = x )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.812,
+            0.871,
+            0.859
+          ],
+          "content": "23. s Let X and Y be random variables with finite variances, and let $W = Y - E ( Y | X )$ This is a residual: the difference between the true value of Y and the predicted value of Y based on X."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.869,
+            0.448,
+            0.886
+          ],
+          "content": "(a) Compute E(W) and $E ( W | X )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.894,
+            0.787,
+            0.911
+          ],
+          "content": "(b) Compute $\\operatorname { V a r } ( W )$ , for the case that $W | X \\sim \\mathcal { N } ( 0 , X ^ { 2 } )$ with $X \\sim \\mathcal { N } ( 0 , 1 )$"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Probability, Second Edition",
+      "authors": [
+        "Joseph K. Blitzstein;Jessica Hwang;"
+      ],
+      "created_at": "2019-01-18T11:22:30+05:30",
+      "modified_at": "2019-02-04T21:29:14+05:30",
+      "creator_application": "LaTeX with hyperref",
+      "producer_application": "pdfTeX-1.40.19",
+      "page_count": 636,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 448,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 449,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 450,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 451,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 452,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 453,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 454,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 455,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 456,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 457,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 458,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 459,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 460,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 461,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 462,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 463,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

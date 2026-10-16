@@ -1,0 +1,6302 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Probability, Second Edition",
+      "authors": [
+        "Joseph K. Blitzstein;Jessica Hwang;"
+      ],
+      "created_at": "2019-01-18T11:22:30+05:30",
+      "modified_at": "2019-02-04T21:29:14+05:30",
+      "creator_application": "LaTeX with hyperref",
+      "producer_application": "pdfTeX-1.40.19",
+      "page_count": 636,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 480,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 481,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 482,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 483,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 484,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 485,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 486,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 487,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 488,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 489,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 490,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 491,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 492,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 493,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 494,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 495,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 480,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "464"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.069,
+            0.195,
+            0.085
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.097,
+            0.423,
+            0.115
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Using properties of logs, we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.354,
+            0.126,
+            0.645,
+            0.175
+          ],
+          "image_path": "images/page_480_equation_4.jpg",
+          "content": "D (\\mathbf {p}, \\mathbf {r}) = - \\sum_ {j = 1} ^ {n} p _ {j} \\log_ {2} \\left(\\frac {r _ {j}}{p _ {j}}\\right)."
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.187,
+            0.895,
+            0.225
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let Y be a random variable that takes on values "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r _ { j } / p _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " with probabilities "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " , so that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "D ( \\mathbf { p } , \\mathbf { r } ) = - E ( \\log _ { 2 } ( Y ) )"
+            },
+            {
+              "type": "text",
+              "content": " by LOTUS. Then by Jensen’s inequality,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.228,
+            0.237,
+            0.772,
+            0.257
+          ],
+          "image_path": "images/page_480_equation_6.jpg",
+          "content": "D (\\mathbf {p}, \\mathbf {r}) = - E (\\log_ {2} (Y)) \\geq - \\log_ {2} (E (Y)) = - \\log_ {2} (1) = 0,"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.269,
+            0.896,
+            0.325
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "with equality if and only if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { p } = \\mathbf { r }"
+            },
+            {
+              "type": "text",
+              "content": " . This result tells us that we’re more surprised on average when we work with the wrong probabilities than when we work with the correct probabilities. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.335,
+            0.896,
+            0.448
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 10.1.9 (Log probability scoring). Imagine that on a multiple-choice exam, instead of circling just one of the answer choices, you are asked to assign a probability of correctness to each choice. Your score on a particular question is the log of the probability that you assign to the correct answer. The maximum score for a particular question is 0, and the minimum score is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "- \\infty"
+            },
+            {
+              "type": "text",
+              "content": " , attained if you assign zero probability to the correct answer."
+            },
+            {
+              "type": "text",
+              "content": "1",
+              "styles": [
+                "superscript"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.457,
+            0.896,
+            0.571
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Suppose your personal probabilities of correctness for each of the n answer choices are "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 1 } , \\ldots , p _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " , where the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " are positive and sum to 1. Show that your expected score on a question is maximized if you report your true probabilities "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " , not any other probabilities. In other words, under log probability scoring, you have no incentive to lie about your beliefs and pretend to be more or less confident than you really are (assuming that your goal is to maximize your expected score)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.105,
+            0.58,
+            0.195,
+            0.597
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.607,
+            0.896,
+            0.721
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This example is isomorphic to the previous one! Your expected score on a question is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle \\sum _ { j = 1 } ^ { n } p _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " log "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " if you report your true probabilities p, and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle \\sum _ { j = 1 } ^ { n } p _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " log "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " if you report false probabilities r. The difference between these two is precisely the Kullback-Leibler divergence between p and r. This is always nonnegative, as we proved in the previous example. Therefore your expected score is maximized when you report your true probabilities. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 12,
+          "bbox": [
+            0.104,
+            0.754,
+            0.836,
+            0.773
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "10.1.3 Markov, Chebyshev, Chernoff: bounds on tail probabilities"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.791,
+            0.895,
+            0.828
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The inequalities in this section provide bounds on the probability of an r.v. taking on an “extreme” value in the right or left tail of a distribution."
+            }
+          ]
+        },
+        {
+          "type": "page_footnote",
+          "index": 14,
+          "bbox": [
+            0.101,
+            0.841,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "1",
+              "styles": [
+                "superscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Joe’s philosophy professor as an undergraduate at Caltech, Alan Hájek, used precisely this system. He warned the class never to put a probability of zero, since a score of −∞ would not only give a −∞ on that exam, but also it would spill through and result in a −∞ for the whole semester, since a weighted average with even a tiny positive weight on a −∞ yields −∞. Despite this warning, some students did put probability zero on the correct answers."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 481,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.038,
+            0.378,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Inequalities and limit theorems"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "465"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.068,
+            0.741,
+            0.087
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 10.1.10 (Markov). For any r.v. X and constant "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a > 0"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.4,
+            0.099,
+            0.601,
+            0.138
+          ],
+          "image_path": "images/page_481_equation_3.jpg",
+          "content": "P (| X | \\geq a) \\leq \\frac {E | X |}{a}."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.105,
+            0.153,
+            0.799,
+            0.177
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\begin{array} { r } { Y = { \\frac { | X | } { a } } } \\end{array}"
+            },
+            {
+              "type": "text",
+              "content": " . We need to show that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(Y \\geq 1) \\leq E(Y)"
+            },
+            {
+              "type": "text",
+              "content": " . Note that"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.43,
+            0.189,
+            0.571,
+            0.211
+          ],
+          "image_path": "images/page_481_equation_5.jpg",
+          "content": "I (Y \\geq 1) \\leq Y,"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.104,
+            0.224,
+            0.896,
+            0.282
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "since if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I ( Y \\geq 1 ) = 0"
+            },
+            {
+              "type": "text",
+              "content": " then the inequality reduces to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y \\geq 0"
+            },
+            {
+              "type": "text",
+              "content": " , and if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I ( Y \\geq 1 ) = 1"
+            },
+            {
+              "type": "text",
+              "content": " then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y \\geq 1"
+            },
+            {
+              "type": "text",
+              "content": " (because the indicator says so). Taking the expectation of both sides, we have Markov’s inequality. \u0004"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.299,
+            0.897,
+            0.45
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For an intuitive interpretation, let X be the income of a randomly selected individual from a population. Taking "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a \\; = \\; 2 E ( X )"
+            },
+            {
+              "type": "text",
+              "content": " , Markov’s inequality says that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X \\: \\geq \\: 2 E ( X ) ) \\: \\leq \\: 1 / 2 ,"
+            },
+            {
+              "type": "text",
+              "content": " i.e., it is impossible for more than half the population to make at least twice the average income. This is clearly true, since if over half the population were earning at least twice the average income, the average income would be higher! Similarly, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X \\geq 3 E ( X ) ) \\leq 1 / 3 ;"
+            },
+            {
+              "type": "text",
+              "content": " you can’t have more than "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 3"
+            },
+            {
+              "type": "text",
+              "content": " of the population making at least three times the average income, since those people would already drive the average above what it is."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.104,
+            0.459,
+            0.896,
+            0.572
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Markov’s inequality is a very crude bound because it requires absolutely no assumptions about "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " . The right-hand side of the inequality could be greater than 1, or even infinite; this is not very helpful when trying to bound a number that we already know to be between 0 and 1. Surprisingly, the following two inequalities, which can be derived from Markov’s inequality with almost no additional work, can often give us bounds that are much better than Markov’s."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.104,
+            0.581,
+            0.894,
+            0.619
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 10.1.11 (Chebyshev). Let X have mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": " and variance "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " . Then for any "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a > 0"
+            },
+            {
+              "type": "text",
+              "content": " ,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.393,
+            0.619,
+            0.606,
+            0.655
+          ],
+          "image_path": "images/page_481_equation_10.jpg",
+          "content": "P (| X - \\mu | \\geq a) \\leq \\frac {\\sigma^ {2}}{a ^ {2}}."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.105,
+            0.669,
+            0.405,
+            0.688
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. By Markov’s inequality,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.225,
+            0.699,
+            0.775,
+            0.74
+          ],
+          "image_path": "images/page_481_equation_12.jpg",
+          "content": "P (| X - \\mu | \\geq a) = P ((X - \\mu) ^ {2} \\geq a ^ {2}) \\leq \\frac {E (X - \\mu) ^ {2}}{a ^ {2}} = \\frac {\\sigma^ {2}}{a ^ {2}}."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.104,
+            0.759,
+            0.894,
+            0.796
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Substituting cσ for a, for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c > 0"
+            },
+            {
+              "type": "text",
+              "content": " , we have the following equivalent form of Chebyshev’s inequality:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.39,
+            0.794,
+            0.61,
+            0.829
+          ],
+          "image_path": "images/page_481_equation_14.jpg",
+          "content": "P (| X - \\mu | \\geq c \\sigma) \\leq \\frac {1}{c ^ {2}}."
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.104,
+            0.834,
+            0.896,
+            0.89
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This gives us an upper bound on the probability of an r.v. being more than c standard deviations away from its mean, e.g., there can’t be more than a 25% chance of being 2 or more standard deviations from the mean."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.104,
+            0.899,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The idea for proving Chebyshev from Markov was to square "
+            },
+            {
+              "type": "equation_inline",
+              "content": "| X - \\mu |"
+            },
+            {
+              "type": "text",
+              "content": " and then"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 482,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "466"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.125
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "apply Markov. Similarly, it is often fruitful to perform other transformations before applying Markov. Chernoff ’s bound, which is widely used in engineering, uses this idea with an exponential function."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.103,
+            0.134,
+            0.857,
+            0.153
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 10.1.12 (Chernoff). For any r.v. X and constants "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a > 0"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t > 0"
+            },
+            {
+              "type": "text",
+              "content": " ,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.396,
+            0.166,
+            0.602,
+            0.205
+          ],
+          "image_path": "images/page_482_equation_4.jpg",
+          "content": "P (X \\geq a) \\leq \\frac {E (e ^ {t X})}{e ^ {t a}}."
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.221,
+            0.895,
+            0.259
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. The transformation g with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x )   =   e ^ { t x }"
+            },
+            {
+              "type": "text",
+              "content": " is invertible and strictly increasing. So by Markov’s inequality, we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.32,
+            0.271,
+            0.677,
+            0.31
+          ],
+          "image_path": "images/page_482_equation_6.jpg",
+          "content": "P (X \\geq a) = P (e ^ {t X} \\geq e ^ {t a}) \\leq \\frac {E (e ^ {t X})}{e ^ {t a}}."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.331,
+            0.896,
+            0.368
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "At first it may not be clear what Chernoff’s bound has to offer that Markov’s inequality doesn’t, but it has two very nice features:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 8,
+          "bbox": [
+            0.132,
+            0.386,
+            0.871,
+            0.472
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.132,
+                0.386,
+                0.871,
+                0.425
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. The right-hand side can be optimized over t to give the tightest upper bound, as in the proof of Cauchy-Schwarz."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 10,
+              "bbox": [
+                0.132,
+                0.433,
+                0.871,
+                0.472
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. If the MGF of X exists, then the numerator in the bound is the MGF, and some of the useful properties of MGFs can come into play."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.489,
+            0.895,
+            0.527
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s now compare the three bounds just discussed by applying them to a simple example where the true probability is known."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.536,
+            0.896,
+            0.612
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 10.1.13 (Bounds on a Normal tail probability). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z \\sim \\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " . By the 68-95-99.7% rule, we know that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( | Z | > 3 )"
+            },
+            {
+              "type": "text",
+              "content": " is approximately 0.003; the exact value is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 \\cdot \\Phi ( - 3 )"
+            },
+            {
+              "type": "text",
+              "content": " . Let’s see what upper bounds are obtained from Markov’s, Chebyshev’s, and Chernoff’s inequalities."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.099,
+            0.62,
+            0.682,
+            0.641
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "• Markov: In Chapter 5, we found that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E | Z | = { \\sqrt { 2 / \\pi } }"
+            },
+            {
+              "type": "text",
+              "content": " . Then"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.327,
+            0.655,
+            0.688,
+            0.697
+          ],
+          "image_path": "images/page_482_equation_14.jpg",
+          "content": "P (| Z | > 3) \\leq \\frac {E | Z |}{3} = \\frac {1}{3} \\cdot \\sqrt {\\frac {2}{\\pi}} \\approx 0. 2 7."
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.099,
+            0.718,
+            0.234,
+            0.735
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "• Chebyshev:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.395,
+            0.733,
+            0.62,
+            0.768
+          ],
+          "image_path": "images/page_482_equation_16.jpg",
+          "content": "P (| Z | > 3) \\leq \\frac {1}{9} \\approx 0. 1 1."
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.099,
+            0.784,
+            0.582,
+            0.803
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "• Chernoff (after using symmetry of the Normal):"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 18,
+          "bbox": [
+            0.246,
+            0.815,
+            0.769,
+            0.838
+          ],
+          "image_path": "images/page_482_equation_18.jpg",
+          "content": "P (| Z | > 3) = 2 P (Z > 3) \\leq 2 e ^ {- 3 t} E (e ^ {t Z}) = 2 e ^ {- 3 t} \\cdot e ^ {t ^ {2} / 2},"
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.12,
+            0.853,
+            0.627,
+            0.871
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "using the MGF of the standard Normal distribution."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.119,
+            0.881,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The right-hand side is minimized at "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t = 3"
+            },
+            {
+              "type": "text",
+              "content": " , as found by setting the derivative equal to 0, possibly after taking the log first (which is a good idea since it doesn’t affect"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 483,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.038,
+            0.378,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Inequalities and limit theorems"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.895,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "467"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.119,
+            0.068,
+            0.896,
+            0.106
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where the minimum occurs and it means we just have to minimize a quadratic polynomial). Plugging in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t = 3"
+            },
+            {
+              "type": "text",
+              "content": " , we have"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.367,
+            0.119,
+            0.651,
+            0.143
+          ],
+          "image_path": "images/page_483_equation_3.jpg",
+          "content": "P (| Z | > 3) \\leq 2 e ^ {- 9 / 2} \\approx 0. 0 2 2."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.167,
+            0.897,
+            0.263
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "All of these upper bounds are correct, but Chernoff’s bound is the best by far. This example also illustrates the distinction between a bound and an approximation, as we explained in the introduction to this chapter. Markov’s inequality tells us that the tail probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( | Z | > 3 )"
+            },
+            {
+              "type": "text",
+              "content": " is at most 0.27, but it would be a blunder to say that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( | Z | > 3 )"
+            },
+            {
+              "type": "text",
+              "content": " is approximately "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0.27  \\text{— }  we  \\text{°d }"
+            },
+            {
+              "type": "text",
+              "content": " be off by a factor of about 100. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.105,
+            0.345,
+            0.439,
+            0.365
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "10.2 Law of large numbers"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.383,
+            0.896,
+            0.459
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We turn next to two theorems, the law of large numbers and the central limit theorem, which describe the behavior of the sample mean of i.i.d. r.v.s as the sample size grows. Throughout this section and the next, assume we have i.i.d. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , X _ { 2 } , X _ { 3 } , \\ldots"
+            },
+            {
+              "type": "text",
+              "content": " with finite mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": " and finite variance "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " . For all positive integers n, let"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.397,
+            0.47,
+            0.602,
+            0.509
+          ],
+          "image_path": "images/page_483_equation_7.jpg",
+          "content": "\\bar {X} _ {n} = \\frac {X _ {1} + \\cdots + X _ {n}}{n}"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.519,
+            0.896,
+            0.557
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "be the sample mean of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " through "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " . The sample mean is itself an "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { r } . \\mathbf { V } ."
+            },
+            {
+              "type": "text",
+              "content": " , with mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": " and variance "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ^ { 2 } / n { \\mathrm { : } }"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.169,
+            0.57,
+            0.766,
+            0.605
+          ],
+          "image_path": "images/page_483_equation_9.jpg",
+          "content": "E (\\bar {X} _ {n}) = \\frac {1}{n} E (X _ {1} + \\dots + X _ {n}) = \\frac {1}{n} (E (X _ {1}) + \\dots + E (X _ {n})) = \\mu ,"
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.15,
+            0.607,
+            0.848,
+            0.645
+          ],
+          "image_path": "images/page_483_equation_10.jpg",
+          "content": "\\mathrm{Var} (\\bar {X} _ {n}) = \\frac {1}{n ^ {2}} \\mathrm{Var} (X _ {1} + \\dots + X _ {n}) = \\frac {1}{n ^ {2}} (\\mathrm{Var} (X _ {1}) + \\dots + \\mathrm{Var} (X _ {n})) = \\frac {\\sigma^ {2}}{n}."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.668,
+            0.896,
+            0.764
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The law of large numbers (LLN) says that as n grows, the sample mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " converges to the true mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": " (in a sense that is explained below). The LLN comes in two versions, “strong” (SLLN) and “weak” (WLLN), which use slightly different definitions of what it means for a sequence of r.v.s to converge to a number. We will state both versions, and prove the second using Chebyshev’s inequality."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.772,
+            0.897,
+            0.869
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 10.2.1 (Strong law of large numbers). The sample mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " converges to the true mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": " pointwise, with probability 1. Recalling that r.v.s are functions from the sample space S to R, this form of convergence says that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\bar { X } _ { n } ( s ) \\to \\mu"
+            },
+            {
+              "type": "text",
+              "content": " for each point "
+            },
+            {
+              "type": "equation_inline",
+              "content": "s \\in S"
+            },
+            {
+              "type": "text",
+              "content": " , except that the convergence is allowed to fail on some set "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B _ { 0 }"
+            },
+            {
+              "type": "text",
+              "content": " of exceptions, as long as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( B _ { 0 } ) = 0"
+            },
+            {
+              "type": "text",
+              "content": " . In short, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( \\bar { X } _ { n } \\rightarrow \\mu ) = 1"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.877,
+            0.896,
+            0.916
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 10.2.2 (Weak law of large numbers). For all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\epsilon > 0 ,   P ( | \\bar { X } _ { n } - \\mu | > \\epsilon ) \\rightarrow 0"
+            },
+            {
+              "type": "text",
+              "content": " as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": " . (This form of convergence is called convergence in probability.)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 484,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "468"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.068,
+            0.533,
+            0.087
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. Fix "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\epsilon > 0"
+            },
+            {
+              "type": "text",
+              "content": " . By Chebyshev’s inequality,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.384,
+            0.099,
+            0.613,
+            0.139
+          ],
+          "image_path": "images/page_484_equation_3.jpg",
+          "content": "P (| \\bar {X} _ {n} - \\mu | > \\epsilon) \\leq \\frac {\\sigma^ {2}}{n \\epsilon^ {2}}."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.15,
+            0.803,
+            0.168
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": " , the right-hand side goes to 0, and so must the left-hand side."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.189,
+            0.896,
+            0.283
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The law of large numbers is essential for simulations, statistics, and science. Consider generating “data” from a large number of independent replications of an experiment, performed either by computer simulation or in the real world. Every time we use the average value in the replications of some quantity to approximate its theoretical average, we are implicitly appealing to the LLN."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.293,
+            0.899,
+            0.445
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 10.2.3 (Running proportion of Heads). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , X _ { 2 } , \\ldots"
+            },
+            {
+              "type": "text",
+              "content": " be i.i.d. Bern(1/2). Interpreting the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " as indicators of Heads in a string of fair coin tosses, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " is the proportion of Heads after n tosses. The SLLN says that with probability 1, when the sequence of r.v.s "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\bar { X } _ { 1 } , \\bar { X } _ { 2 } , \\bar { X } _ { 3 } , \\ldots"
+            },
+            {
+              "type": "text",
+              "content": " . crystallizes into a sequence of numbers, the sequence of numbers will converge to 1/2. Mathematically, there are bizarre outcomes such as HHHHHH . . . and HHTHHTHHTHHT. . . , but collectively they have zero probability of occurring. The WLLN says that for any "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\epsilon > 0"
+            },
+            {
+              "type": "text",
+              "content": " , the probability of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " being more than \u000f away from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 2"
+            },
+            {
+              "type": "text",
+              "content": " can be made as small as we like by letting n grow."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.453,
+            0.896,
+            0.529
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As an illustration, we simulated six sequences of fair coin tosses and, for each sequence, computed "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " as a function of n. Of course, in real life we cannot simulate infinitely many coin tosses, so we stopped after 300 tosses. Figure 10.2 plots "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " as a function of n for each sequence."
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 8,
+          "bbox": [
+            0.22,
+            0.559,
+            0.778,
+            0.791
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 8,
+              "bbox": [
+                0.22,
+                0.559,
+                0.778,
+                0.791
+              ],
+              "image_path": "images/page_484_chart_8.jpg",
+              "content": "| number of tosses | Running proportion of Heads (Series 1) | Running proportion of Heads (Series 2) | Running proportion of Heads (Series 3) | Running proportion of Heads (Series 4) | Running proportion of Heads (Series 5) | Running proportion of Heads (Series 6) | Running proportion of Heads (Series 7) | Running proportion of Heads (Series 8) |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 0 | ~0.0 | ~0.0 | ~0.0 | ~0.0 | ~0.0 | ~0.0 | ~0.0 | ~0.0 |\n| 50 | ~0.55 | ~0.52 | ~0.48 | ~0.45 | ~0.42 | ~0.40 | ~0.38 | ~0.35 |\n| 100 | ~0.52 | ~0.50 | ~0.48 | ~0.46 | ~0.44 | ~0.42 | ~0.40 | ~0.38 |\n| 150 | ~0.51 | ~0.49 | ~0.47 | ~0.45 | ~0.43 | ~0.41 | ~0.40 | ~0.38 |\n| 200 | ~0.51 | ~0.49 | ~0.47 | ~0.45 | ~0.43 | ~0.41 | ~0.40 | ~0.38 |\n| 250 | ~0.51 | ~0.49 | ~0.47 | ~0.45 | ~0.43 | ~0.41 | ~0.40 | ~0.38 |\n| 300 | ~0.51 | ~0.49 | ~0.47 | ~0.45 | ~0.43 | ~0.41 | ~0.40 | ~0.38 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 9,
+              "bbox": [
+                0.103,
+                0.808,
+                0.248,
+                0.823
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 10.2"
+                }
+              ]
+            }
+          ],
+          "sub_type": "line"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.826,
+            0.895,
+            0.883
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Running proportion of Heads in 6 sequences of fair coin tosses. Dashed lines at 0.6 and 0.4 are plotted for reference. As the number of tosses increases, the proportion of Heads approaches "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 2 ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.104,
+            0.9,
+            0.894,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "At the beginning, we can see that there is quite a bit of fluctuation in the running"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 485,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.378,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Inequalities and limit theorems"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "469"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.106
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "proportion of Heads. As the number of coin tosses increases, however, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { V a r } ( { \\bar { X } } _ { n } )"
+            },
+            {
+              "type": "text",
+              "content": " gets smaller and smaller, and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " approaches "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 2"
+            },
+            {
+              "type": "text",
+              "content": " \u0003"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.119,
+            0.896,
+            0.214
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "h 10.2.4 (LLN does not contradict the fact that a coin is memoryless). In the above example, the law of large numbers states that the proportion of Heads converges to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 2"
+            },
+            {
+              "type": "text",
+              "content": " , but this does not imply that after a long string of Heads, the coin is “due” for a Tails to balance things out. Rather, the convergence takes place through swamping: past tosses are swamped by the infinitely many tosses that are yet to come."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.227,
+            0.895,
+            0.283
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A sequence of i.i.d. Bernoullis is the simplest possible example of the LLN, but this simple case forms the basis for extremely useful methods in statistics, as the following examples illustrate."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.296,
+            0.897,
+            0.412
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 10.2.5 (Monte Carlo integration). Let f be a complicated function whose integral "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\begin{array} { r } { \\int _ { a } ^ { b } f ( x ) d x } \\end{array}"
+            },
+            {
+              "type": "text",
+              "content": " we want to approximate. Assume that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 \\leq f ( x ) \\leq c { \\mathrm { ~ s o ~ } }"
+            },
+            {
+              "type": "text",
+              "content": " that we know the integral is finite. On the surface, this problem doesn’t involve probability, as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle \\int _ { a } ^ { b } f ( x ) d x"
+            },
+            {
+              "type": "text",
+              "content": " is just a number. But where there is no randomness, we can create our own! The technique of Monte Carlo integration uses random samples to obtain approximations of definite integrals when exact integration methods are unavailable."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.424,
+            0.897,
+            0.537
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let A be the rectangle in the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( x , y )"
+            },
+            {
+              "type": "text",
+              "content": " -plane given by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a \\leq x \\leq b"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 \\leq y \\leq c"
+            },
+            {
+              "type": "text",
+              "content": " Let B be the region under the curve "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y = f(x)"
+            },
+            {
+              "type": "text",
+              "content": " (and above the x-axis) for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a \\leq x \\leq b"
+            },
+            {
+              "type": "text",
+              "content": " so the desired integral is the area of region B. Our strategy will be to take random samples from A, then calculate the proportion of the samples that also fall into the area B. This is depicted in Figure 10.3: points in B are in black, and points not in B are in white."
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 7,
+          "bbox": [
+            0.302,
+            0.572,
+            0.709,
+            0.801
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 7,
+              "bbox": [
+                0.302,
+                0.572,
+                0.709,
+                0.801
+              ],
+              "image_path": "images/page_485_chart_7.jpg",
+              "content": "| Series | X (range) | Y (range) |\n| --- | --- | --- |\n| Open Circles | a~b | ~0.2 ~1.0 |\n| Filled Circles | a~b | ~0.05 ~0.8 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 8,
+              "bbox": [
+                0.103,
+                0.823,
+                0.249,
+                0.838
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 10.3"
+                }
+              ]
+            }
+          ],
+          "sub_type": "scatter"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.841,
+            0.897,
+            0.916
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Monte Carlo integration. To approximate the area under "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( x )"
+            },
+            {
+              "type": "text",
+              "content": " from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x = a"
+            },
+            {
+              "type": "text",
+              "content": " to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x = b ."
+            },
+            {
+              "type": "text",
+              "content": " generate random points in the rectangle "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ a , b ] \\times [ 0 , c ]"
+            },
+            {
+              "type": "text",
+              "content": " , and approximate the area under "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( x )"
+            },
+            {
+              "type": "text",
+              "content": " by the proportion of points falling underneath the curve, multiplied by the total area of the rectangle."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 486,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "470"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.067,
+            0.897,
+            0.145
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To see why this works, suppose we pick i.i.d. points "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( X _ { 1 } , Y _ { 1 } ) , ( X _ { 2 } , Y _ { 2 } ) , \\ldots , ( X _ { n } , Y _ { n } )"
+            },
+            {
+              "type": "text",
+              "content": " uniformly in the rectangle "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A"
+            },
+            {
+              "type": "text",
+              "content": " . Define indicator r.v.s "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { 1 } , \\ldots , I _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " by letting "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j }   =   1"
+            },
+            {
+              "type": "text",
+              "content": " if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( X _ { j } , Y _ { j } )"
+            },
+            {
+              "type": "text",
+              "content": " is in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j } = 0"
+            },
+            {
+              "type": "text",
+              "content": " otherwise. Then the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " are Bernoulli r.v.s whose success probability is precisely the ratio of the area of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B"
+            },
+            {
+              "type": "text",
+              "content": " to the area of A. Letting "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p = E ( I _ { j } )"
+            },
+            {
+              "type": "text",
+              "content": " ,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.321,
+            0.158,
+            0.675,
+            0.203
+          ],
+          "image_path": "images/page_486_equation_3.jpg",
+          "content": "p = E (I _ {j}) = P (I _ {j} = 1) = \\frac {\\int_ {a} ^ {b} f (x) d x}{c (b - a)}."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.217,
+            0.849,
+            0.239
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can estimate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " using "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\textstyle { \\frac { 1 } { n } } \\sum _ { j = 1 } ^ { n } I _ { j } }"
+            },
+            {
+              "type": "text",
+              "content": " , and then estimate the desired integral by"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.355,
+            0.254,
+            0.645,
+            0.305
+          ],
+          "image_path": "images/page_486_equation_5.jpg",
+          "content": "\\int_ {a} ^ {b} f (x) d x \\approx c (b - a) \\frac {1}{n} \\sum_ {j = 1} ^ {n} I _ {j}."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.317,
+            0.896,
+            0.374
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Since the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " are i.i.d. with mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p ,"
+            },
+            {
+              "type": "text",
+              "content": " it follows from the law of large numbers that with probability 1, the estimate converges to the true value of the integral as the number of points approaches infinity. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.383,
+            0.896,
+            0.44
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 10.2.6 (Convergence of empirical CDF). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , \\ldots , X _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " be i.i.d. random variables with CDF "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ."
+            },
+            {
+              "type": "text",
+              "content": " For every number "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x ,"
+            },
+            {
+              "type": "text",
+              "content": " let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R _ { n } ( x )"
+            },
+            {
+              "type": "text",
+              "content": " count how many of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , \\ldots , X _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " are less than or equal to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x ;"
+            },
+            {
+              "type": "text",
+              "content": " that is,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.384,
+            0.454,
+            0.615,
+            0.505
+          ],
+          "image_path": "images/page_486_equation_8.jpg",
+          "content": "R _ {n} (x) = \\sum_ {j = 1} ^ {n} I (X _ {j} \\leq x)."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.518,
+            0.896,
+            0.556
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Since the indicators "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I ( X _ { j } \\leq x )"
+            },
+            {
+              "type": "text",
+              "content": " are i.i.d. with probability of success "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( x )"
+            },
+            {
+              "type": "text",
+              "content": " , we know "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R _ { n } ( x )"
+            },
+            {
+              "type": "text",
+              "content": " is Binomial with parameters n and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( x )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.103,
+            0.566,
+            0.56,
+            0.584
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The empirical CDF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , \\ldots , X _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " is defined as"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.42,
+            0.597,
+            0.579,
+            0.635
+          ],
+          "image_path": "images/page_486_equation_11.jpg",
+          "content": "\\hat {F} _ {n} (x) = \\frac {R _ {n} (x)}{n},"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.649,
+            0.896,
+            0.725
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "considered as a function of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x ."
+            },
+            {
+              "type": "text",
+              "content": " Before we observe "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , \\ldots , X _ { n } , \\; \\hat { F } _ { n } ( x )"
+            },
+            {
+              "type": "text",
+              "content": " is a random variable for each "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x ."
+            },
+            {
+              "type": "text",
+              "content": " . After we observe "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , \\ldots , X _ { n } , \\thinspace \\hat { F } _ { n } ( x )"
+            },
+            {
+              "type": "text",
+              "content": " crystallizes into a particular value at each "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x ,"
+            },
+            {
+              "type": "text",
+              "content": " so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat { F } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " crystallizes into a particular CDF, which can be used to estimate the true CDF F if the latter is unknown."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.735,
+            0.896,
+            0.815
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For example, suppose "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n = 4"
+            },
+            {
+              "type": "text",
+              "content": " and we observe "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } = x _ { 1 } , X _ { 2 } = x _ { 2 } , X _ { 3 } = x _ { 3 } , X _ { 4 } = x _ { 4 }"
+            },
+            {
+              "type": "text",
+              "content": " Then the graph of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac { R _ { 4 } ( x ) } { 4 }"
+            },
+            {
+              "type": "text",
+              "content": " starts at 0 and then jumps by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 4"
+            },
+            {
+              "type": "text",
+              "content": " every time one of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x _ { j } { } ^ { \\prime } \\mathrm { s }"
+            },
+            {
+              "type": "text",
+              "content": " is reached. In other words, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac { R _ { 4 } ( x ) } { 4 }"
+            },
+            {
+              "type": "text",
+              "content": " is the CDF of a discrete random variable taking on values "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x _ { 1 } , \\ldots , x _ { 4 }"
+            },
+            {
+              "type": "text",
+              "content": " , each with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 4"
+            },
+            {
+              "type": "text",
+              "content": " . This is illustrated in Figure 10.4."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.823,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Now we can ask, what happens to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat { F } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\rightarrow \\infty ?"
+            },
+            {
+              "type": "text",
+              "content": " This is a natural question if we are using "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat { F } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " as an estimate of the true "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ;"
+            },
+            {
+              "type": "text",
+              "content": " does the approximation fare well in the limit? The law of large numbers provides the answer: for every "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x ,   R _ { n } ( x )"
+            },
+            {
+              "type": "text",
+              "content": " is the sum of n i.i.d. Bern(p) r.v.s, where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p   =   F ( x )"
+            },
+            {
+              "type": "text",
+              "content": " . So by the SLLN, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\hat { F } } _ { n } ( x )   \\to   F ( x )"
+            },
+            {
+              "type": "text",
+              "content": " with probability 1 as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\to \\infty"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 487,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.038,
+            0.378,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Inequalities and limit theorems"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "471"
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 2,
+          "bbox": [
+            0.288,
+            0.068,
+            0.717,
+            0.31
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 2,
+              "bbox": [
+                0.288,
+                0.068,
+                0.717,
+                0.31
+              ],
+              "image_path": "images/page_487_chart_2.jpg",
+              "content": "| X | Value |\n| --- | --- |\n| 0 | 0 |\n| 0 | 1 |\n| 1 | 1 |\n| 1 | 2 |\n| 2 | 2 |\n| 3 | 3 |\n| 4 | 4 |"
+            }
+          ],
+          "sub_type": "scatter"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.103,
+            0.331,
+            0.25,
+            0.347
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 10.4"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.349,
+            0.897,
+            0.388
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Empirical CDF after observing "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } { = } x _ { 1 } , X _ { 2 } { = } x _ { 2 } , X _ { 3 } { = } x _ { 3 } , X _ { 4 } { = } x _ { 4 }"
+            },
+            {
+              "type": "text",
+              "content": " . The graph jumps by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 4"
+            },
+            {
+              "type": "text",
+              "content": " every time one of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x _ { j } { } ^ { \\prime } \\mathrm { s }"
+            },
+            {
+              "type": "text",
+              "content": " is reached."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.413,
+            0.897,
+            0.564
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The empirical CDF is commonly used in nonparametric statistics, a branch of statistics that tries to understand a random sample without making strong assumptions about the family of distributions from which it originated. For example, instead of assuming "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , \\ldots , X _ { n } \\sim \\mathcal { N } ( \\mu , \\sigma ^ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " , a nonparametric method would allow "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , \\ldots , X _ { n } \\sim F"
+            },
+            {
+              "type": "text",
+              "content": " for an arbitrary CDF "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ."
+            },
+            {
+              "type": "text",
+              "content": " , then use the empirical CDF as an approximation for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F"
+            },
+            {
+              "type": "text",
+              "content": " . The law of large numbers is what assures us that this approximation is valid in the limit as we collect more and more samples: at every value of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x ,"
+            },
+            {
+              "type": "text",
+              "content": " the empirical CDF converges to the true CDF. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.105,
+            0.646,
+            0.441,
+            0.667
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "10.3 Central limit theorem"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.684,
+            0.896,
+            0.779
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As in the previous section, let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , X _ { 2 } , X _ { 3 } , \\ldots"
+            },
+            {
+              "type": "text",
+              "content": " be i.i.d. with mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": " and variance "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " . The law of large numbers says that as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\to \\infty ,   \\bar { X } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " converges to the constant "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": " (with probability 1). But what is its distribution along the way to becoming a constant? This is addressed by the central limit theorem (CLT), which, as its name suggests, is a limit theorem of central importance in statistics."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.787,
+            0.895,
+            0.845
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The CLT states that for large "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n ,"
+            },
+            {
+              "type": "text",
+              "content": " the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " after standardization approaches a standard Normal distribution. By standardization, we mean that we subtract "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu ,"
+            },
+            {
+              "type": "text",
+              "content": " the mean of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " , and divide by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma / \\sqrt { n }"
+            },
+            {
+              "type": "text",
+              "content": " , the standard deviation of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.853,
+            0.637,
+            0.872
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 10.3.1 (Central limit theorem). As "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\to \\infty"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.299,
+            0.881,
+            0.699,
+            0.924
+          ],
+          "image_path": "images/page_487_equation_10.jpg",
+          "content": "\\sqrt {n} \\left(\\frac {\\bar {X} _ {n} - \\mu}{\\sigma}\\right) \\to \\mathcal {N} (0, 1) \\text {in distribution.}"
+        }
+      ]
+    },
+    {
+      "page_idx": 488,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "472"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.895,
+            0.105
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In words, this means that the CDF of the left-hand side converges to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Phi ,"
+            },
+            {
+              "type": "text",
+              "content": " the CDF of the standard Normal distribution."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.127,
+            0.897,
+            0.221
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. We will prove the CLT assuming that the MGF of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " exists, though the theorem holds much more generally. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M ( t ) = E ( e ^ { t X _ { j } } )"
+            },
+            {
+              "type": "text",
+              "content": " , and without loss of generality let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu = 0 ,   \\sigma ^ { 2 } = 1"
+            },
+            {
+              "type": "text",
+              "content": " (since we end up standardizing "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " for the theorem, we might as well standardize the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " in the first place). Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M(0) = 1,   M'(0) = \\mu = 0"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M ^ { \\prime \\prime } ( 0 ) = \\sigma ^ { 2 } = 1"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.231,
+            0.897,
+            0.363
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We wish to show that the MGF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sqrt { n } \\bar { X } _ { n } = ( X _ { 1 } + \\cdots + X _ { n } ) / \\sqrt { n }"
+            },
+            {
+              "type": "text",
+              "content": " converges to the MGF of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " distribution, which is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "e ^ { t ^ { 2 } / 2 }"
+            },
+            {
+              "type": "text",
+              "content": " . This is a valid strategy because of a theorem that says that if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { 1 } , Z _ { 2 } , \\ldots"
+            },
+            {
+              "type": "text",
+              "content": " . are r.v.s whose MGFs converge to the MGF of a continuous r.v. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z ,"
+            },
+            {
+              "type": "text",
+              "content": " then the CDF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " converges to the CDF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z ."
+            },
+            {
+              "type": "text",
+              "content": " (We omit the proof of this result since it requires some difficult analysis. But it should at least seem plausible, in view of the fact that the MGF of an r.v. determines its distribution.)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.373,
+            0.336,
+            0.392
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "By properties of MGFs,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.214,
+            0.402,
+            0.785,
+            0.476
+          ],
+          "image_path": "images/page_488_equation_6.jpg",
+          "content": "\\begin{array}{l} E (e ^ {t (X _ {1} + \\dots + X _ {n}) / \\sqrt {n}}) = E (e ^ {t X _ {1} / \\sqrt {n}}) E (e ^ {t X _ {2} / \\sqrt {n}}) \\dots E (e ^ {t X _ {n} / \\sqrt {n}}) \\\\ = \\left(M \\left(\\frac {t}{\\sqrt {n}}\\right)\\right) ^ {n}. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.486,
+            0.896,
+            0.529
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Letting "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": " , we get the indeterminate form "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 ^ { \\infty }"
+            },
+            {
+              "type": "text",
+              "content": " , so instead we should take the limit of the logarithm, n log "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle M ( { \\frac { t } { \\sqrt { n } } } )"
+            },
+            {
+              "type": "text",
+              "content": " , and then exponentiate at the end. This gives"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.185,
+            0.54,
+            0.814,
+            0.749
+          ],
+          "image_path": "images/page_488_equation_8.jpg",
+          "content": "\\begin{array}{l} \\lim _ {n \\to \\infty} n \\log M \\left(\\frac {t}{\\sqrt {n}}\\right) = \\lim _ {y \\to 0} \\frac {\\log M (y t)}{y ^ {2}} \\quad \\text {where} y = 1 / \\sqrt {n} \\\\ = \\lim _ {y \\rightarrow 0} \\frac {t M ^ {\\prime} (y t)}{2 y M (y t)} \\quad \\text {by L'Hôpital's rule} \\\\ = \\frac {t}{2} \\lim _ {y \\to 0} \\frac {M ^ {\\prime} (y t)}{y} \\quad \\text {since} M (y t) \\to 1 \\\\ = \\frac {t ^ {2}}{2} \\lim _ {y \\rightarrow 0} M ^ {\\prime \\prime} (y t) \\quad \\text {by L'Hôpital's rule} \\\\ = \\frac {t ^ {2}}{2}. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.76,
+            0.856,
+            0.791
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Therefore "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle { \\left( M ( { \\frac { t } { \\sqrt { n } } } ) \\right) ^ { n } }"
+            },
+            {
+              "type": "text",
+              "content": " , the MGF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\sqrt { n } } { \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " , approaches "
+            },
+            {
+              "type": "equation_inline",
+              "content": "e ^ { t ^ { 2 } / 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " MGF."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.81,
+            0.896,
+            0.867
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The CLT is an asymptotic result, telling us about the limiting distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": " , but it also suggests an approximation for the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " when n is large but finite."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.877,
+            0.896,
+            0.916
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Approximation 10.3.2 (Central limit theorem, approximation form). For large "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n ,"
+            },
+            {
+              "type": "text",
+              "content": " the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " is approximately "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { N } ( \\mu , \\sigma ^ { 2 } / n )"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 489,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.038,
+            0.378,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Inequalities and limit theorems"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "473"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.068,
+            0.843,
+            0.087
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. Change the arrow in the CLT to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\dot { \\sim } ,"
+            },
+            {
+              "type": "text",
+              "content": " an approximate distribution sign:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.374,
+            0.099,
+            0.624,
+            0.141
+          ],
+          "image_path": "images/page_489_equation_3.jpg",
+          "content": "\\sqrt {n} \\left(\\frac {\\bar {X} _ {n} - \\mu}{\\sigma}\\right) \\dot {\\sim} \\mathcal {N} (0, 1)."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.105,
+            0.153,
+            0.496,
+            0.171
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Then by a location-scale transformation,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.41,
+            0.185,
+            0.587,
+            0.208
+          ],
+          "image_path": "images/page_489_equation_5.jpg",
+          "content": "\\bar {X} _ {n} \\dot {\\sim} \\mathcal {N} (\\mu , \\sigma^ {2} / n)."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.232,
+            0.895,
+            0.289
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Of course, we already knew from properties of expectation and variance that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " has mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": " and variance "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ^ { 2 } / n ;"
+            },
+            {
+              "type": "text",
+              "content": " the central limit theorem gives us the additional information that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " is approximately Normal with said mean and variance."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.298,
+            0.896,
+            0.451
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s take a moment to admire the generality of this result. The distribution of the individual "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " can be anything in the world, as long as the mean and variance are finite. We could have a discrete distribution like the Binomial, a bounded distribution like the Beta, a skewed distribution like the Log-Normal, or a distribution with multiple peaks and valleys. No matter what, the act of averaging will cause Normality to emerge. In Figure 10.5 we show histograms of the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " for 4 different starting distributions and for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n = 1 , 5 , 3 0 , 1 0 0"
+            },
+            {
+              "type": "text",
+              "content": " . As n increases, the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " starts to look Normal, regardless of the distribution of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.459,
+            0.897,
+            0.572
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This does not mean that the distribution of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " is irrelevant, however. If the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " have a highly skewed or multimodal distribution, we may need "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n"
+            },
+            {
+              "type": "text",
+              "content": " to be very large before the Normal approximation becomes accurate; at the other extreme, if the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " are already i.i.d. Normals, the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " is exactly "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { N } ( \\mu , \\sigma ^ { 2 } / n )"
+            },
+            {
+              "type": "text",
+              "content": " for all n. Since there are no infinite datasets in the real world, the quality of the Normal approximation for finite n is an important consideration."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.582,
+            0.896,
+            0.658
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 10.3.3 (Running proportion of Heads, revisited). As in Example 10.2.3, let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , X _ { 2 } , \\ldots"
+            },
+            {
+              "type": "text",
+              "content": " . be i.i.d. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { B e r n } ( 1 / 2 )"
+            },
+            {
+              "type": "text",
+              "content": " . Before, we used the law of large numbers to conclude that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\bar { X } _ { n } \\rightarrow 1 / 2"
+            },
+            {
+              "type": "text",
+              "content": " as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": " . Now, using the central limit theorem, we can say more: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( \\bar { X } _ { n } ) = 1 / 2"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { V a r } ( { \\bar { X } } _ { n } ) = 1 / ( 4 n )"
+            },
+            {
+              "type": "text",
+              "content": " , so for large "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n ,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.406,
+            0.67,
+            0.591,
+            0.712
+          ],
+          "image_path": "images/page_489_equation_10.jpg",
+          "content": "\\bar {X} _ {n} \\dot {\\sim} \\mathcal {N} \\left(\\frac {1}{2}, \\frac {1}{4 n}\\right)."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.723,
+            0.896,
+            0.8
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This additional information allows us to quantify what kind of deviation from the mean is typical for a given n. For example, when "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n = 1 0 0 ,   \\mathrm { S D } ( \\bar { X } _ { n } ) = 1 / 2 0 = 0 . 0 5"
+            },
+            {
+              "type": "text",
+              "content": " so if the Normal approximation is valid, then by the 68-95-99.7% rule there’s a 95% chance that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " will be in the interval [0.40, 0.60]. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.808,
+            0.896,
+            0.884
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The CLT says that the sample mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " is approximately Normal, but since the sum "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W _ { n } = X _ { 1 }   +   \\cdots   +   X _ { n } = n \\bar { X } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " is just a scaled version of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " , the CLT also implies "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " is approximately Normal. If the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " have mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": " and variance "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ^ { 2 } ,   W _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " has mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\mu"
+            },
+            {
+              "type": "text",
+              "content": " and variance "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\sigma ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " . The CLT then states that for large "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n ."
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.406,
+            0.898,
+            0.591,
+            0.92
+          ],
+          "image_path": "images/page_489_equation_13.jpg",
+          "content": "W _ {n} \\dot {\\sim} \\mathcal {N} (n \\mu , n \\sigma^ {2})."
+        }
+      ]
+    },
+    {
+      "page_idx": 490,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.14,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "474"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 2,
+          "bbox": [
+            0.117,
+            0.253,
+            0.862,
+            0.598
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 2,
+              "bbox": [
+                0.117,
+                0.253,
+                0.862,
+                0.598
+              ],
+              "image_path": "images/page_490_chart_2.jpg",
+              "content": "| Method | n | Bin(10, 0.9) Range | n=1 Frequency | n=5 Frequency | n=30 Frequency | n=100 Frequency |\n| --- | --- | --- | --- | --- | --- | --- |\n| Bin(10, 0.9) | 1 | ~5.0 ~10.0 | N/A | N/A | N/A | N/A |\n| Pois(2) | 2 | ~0.0 ~8.5 | N/A | N/A | N/A | N/A |\n| Expo(1) | 1 | ~0.0 ~10.0 | N/A | N/A | N/A | N/A |\n| Beta(0.8, 0.8) | 0.8 | ~0.0 ~9.5 | N/A | N/A | N/A | N/A |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 3,
+              "bbox": [
+                0.104,
+                0.62,
+                0.248,
+                0.635
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 10.5"
+                }
+              ]
+            }
+          ],
+          "sub_type": "histogram"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.637,
+            0.897,
+            0.731
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Central limit theorem. Histograms of the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " for different starting distributions of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " (indicated by the rows) and increasing values of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n"
+            },
+            {
+              "type": "text",
+              "content": " (indicated by the columns). Each histogram is based on 10,000 simulated values of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " . Regardless of the starting distribution of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " , the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " approaches a Normal distribution as n grows."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 491,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.038,
+            0.378,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Inequalities and limit theorems"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "475"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.894,
+            0.126
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This is completely equivalent to the approximation for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " , but it can be useful to write it in this form because many of the named distributions we have studied can be considered as a sum of i.i.d. r.v.s. Here are three quick examples."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.103,
+            0.134,
+            0.896,
+            0.173
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 10.3.4 (Poisson convergence to Normal). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y \\sim \\mathrm { P o i s } ( n )"
+            },
+            {
+              "type": "text",
+              "content": " . By Theorem 4.8.1, we can consider Y to be a sum of n i.i.d. Pois(1) r.v.s. Therefore, for large n,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.434,
+            0.182,
+            0.564,
+            0.203
+          ],
+          "image_path": "images/page_491_equation_4.jpg",
+          "content": "Y \\dot {\\sim} \\mathcal {N} (n, n)."
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.211,
+            0.896,
+            0.267
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 10.3.5 (Gamma convergence to Normal). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y   \\sim   \\mathrm { G a m m a } ( n , \\lambda )"
+            },
+            {
+              "type": "text",
+              "content": " . By Theorem 8.4.3, we can consider Y to be a sum of n i.i.d. Expo(λ) r.v.s. Therefore, for large n,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.415,
+            0.266,
+            0.582,
+            0.299
+          ],
+          "image_path": "images/page_491_equation_6.jpg",
+          "content": "Y \\dot {\\sim} \\mathcal {N} \\left(\\frac {n}{\\lambda}, \\frac {n}{\\lambda^ {2}}\\right)."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.303,
+            0.896,
+            0.359
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 10.3.6 (Binomial convergence to Normal). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y \\sim \\mathrm { B i n } ( n , p )"
+            },
+            {
+              "type": "text",
+              "content": " . By Theorem 3.8.8, we can consider "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " to be a sum of n i.i.d. Bern(p) r.v.s. Therefore, for large "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n ,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.385,
+            0.36,
+            0.612,
+            0.381
+          ],
+          "image_path": "images/page_491_equation_8.jpg",
+          "content": "Y \\dot {\\sim} \\mathcal {N} (n p, n p (1 - p))."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.385,
+            0.897,
+            0.499
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This is probably the most widely used Normal approximation in statistics. To account for the discreteness of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " , we write the probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( Y = k )"
+            },
+            {
+              "type": "text",
+              "content": " (which would be exactly 0 under the Normal approximation) as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(k - 1/2 < Y < k + 1/2)"
+            },
+            {
+              "type": "text",
+              "content": " (so that it becomes an interval of non-zero width) and apply the Normal approximation to the latter. This is known as the continuity correction, and it yields the following approximation for the PMF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y ;"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.104,
+            0.505,
+            0.894,
+            0.556
+          ],
+          "image_path": "images/page_491_equation_10.jpg",
+          "content": "P (Y = k) = P (k - 1 / 2 <   Y <   k + 1 / 2) \\approx \\Phi \\left(\\frac {k + 1 / 2 - n p}{\\sqrt {n p (1 - p)}}\\right) - \\Phi \\left(\\frac {k - 1 / 2 - n p}{\\sqrt {n p (1 - p)}}\\right)."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.561,
+            0.896,
+            0.637
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Normal approximation to the Binomial distribution is complementary to the Poisson approximation discussed in Chapter 4. The Poisson approximation works best when "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " is small, while the Normal approximation works best when "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n"
+            },
+            {
+              "type": "text",
+              "content": " is large and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " is around "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 2 ,"
+            },
+            {
+              "type": "text",
+              "content": " , so that the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " is symmetric or nearly so."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.104,
+            0.646,
+            0.776,
+            0.665
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We’ll conclude with an example that uses both the LLN and the CLT."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.103,
+            0.673,
+            0.894,
+            0.731
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 10.3.7 (Volatile stock). Each day, a very volatile stock rises "
+            },
+            {
+              "type": "equation_inline",
+              "content": "7 0 \\%"
+            },
+            {
+              "type": "text",
+              "content": " or drops 50% in price, with equal probabilities and with different days independent. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " be the stock price after n days, starting from an initial value of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { 0 } = 1 0 0"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 14,
+          "bbox": [
+            0.103,
+            0.739,
+            0.892,
+            0.815
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 15,
+              "bbox": [
+                0.103,
+                0.74,
+                0.892,
+                0.759
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) Explain why log "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Y _ { n }"
+                },
+                {
+                  "type": "text",
+                  "content": " is approximately Normal for n large, and state its parameters."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 16,
+              "bbox": [
+                0.104,
+                0.768,
+                0.49,
+                0.787
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) What happens to "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "E ( Y _ { n } )"
+                },
+                {
+                  "type": "text",
+                  "content": " as "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "n \\rightarrow \\infty ?"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 17,
+              "bbox": [
+                0.103,
+                0.796,
+                0.831,
+                0.815
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(c) Use the law of large numbers to find out what happens to "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Y _ { n }"
+                },
+                {
+                  "type": "text",
+                  "content": " as "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "n \\to \\infty"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.105,
+            0.825,
+            0.195,
+            0.841
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.103,
+            0.851,
+            0.897,
+            0.89
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) We can write "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { n } = Y _ { 0 } ( 0 . 5 ) ^ { n - U _ { n } } ( 1 . 7 ) ^ { U _ { n } }"
+            },
+            {
+              "type": "text",
+              "content": " where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U _ { n } \\sim \\operatorname { B i n } ( n , { \\textstyle { \\frac { 1 } { 2 } } } )"
+            },
+            {
+              "type": "text",
+              "content": " is the number of times the stock rises in the first n days. This gives"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 20,
+          "bbox": [
+            0.321,
+            0.9,
+            0.676,
+            0.92
+          ],
+          "image_path": "images/page_491_equation_20.jpg",
+          "content": "\\log Y _ {n} = \\log Y _ {0} - n \\log 2 + U _ {n} \\log 3. 4,"
+        }
+      ]
+    },
+    {
+      "page_idx": 492,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "476"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.107
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "which is a location-scale transformation of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " . By the CLT, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " is approximately "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { N } ( \\textstyle { \\frac { n } { 2 } } , \\textstyle { \\frac { n } { 4 } } )"
+            },
+            {
+              "type": "text",
+              "content": " for large n, so log "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " is approximately Normal with mean"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.182,
+            0.12,
+            0.819,
+            0.141
+          ],
+          "image_path": "images/page_492_equation_3.jpg",
+          "content": "E (\\log Y _ {n}) = \\log 1 0 0 - n \\log 2 + (\\log 3. 4) \\cdot E (U _ {n}) \\approx \\log 1 0 0 - 0. 0 8 1 n"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.155,
+            0.231,
+            0.171
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "and variance"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.29,
+            0.171,
+            0.709,
+            0.193
+          ],
+          "image_path": "images/page_492_equation_5.jpg",
+          "content": "\\mathrm{Var} (\\log Y _ {n}) = (\\log 3. 4) ^ {2} \\cdot \\mathrm{Var} (U _ {n}) \\approx 0. 3 7 4 n."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.104,
+            0.209,
+            0.604,
+            0.229
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) We have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(Y_{1}) = (170 + 50)/2 = 110"
+            },
+            {
+              "type": "text",
+              "content": " . Similarly,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.286,
+            0.24,
+            0.714,
+            0.277
+          ],
+          "image_path": "images/page_492_equation_7.jpg",
+          "content": "E (Y _ {n + 1} | Y _ {n}) = \\frac {1}{2} (1. 7 Y _ {n}) + \\frac {1}{2} (0. 5 Y _ {n}) = 1. 1 Y _ {n},"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.104,
+            0.287,
+            0.131,
+            0.3
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "so"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.31,
+            0.301,
+            0.689,
+            0.322
+          ],
+          "image_path": "images/page_492_equation_9.jpg",
+          "content": "E (Y _ {n + 1}) = E (E (Y _ {n + 1} | Y _ {n})) = 1. 1 E (Y _ {n})."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.104,
+            0.329,
+            0.743,
+            0.348
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Thus "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(Y_{n}) = 1.1^{n}E(Y_{0}) = 100 \\cdot 1.1^{n}"
+            },
+            {
+              "type": "text",
+              "content": " , which goes to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\infty"
+            },
+            {
+              "type": "text",
+              "content": " as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\to \\infty"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.357,
+            0.896,
+            0.489
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(c) As in (a), let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U _ { n } \\sim \\operatorname { B i n } ( n , { \\textstyle { \\frac { 1 } { 2 } } } )"
+            },
+            {
+              "type": "text",
+              "content": " be the number of times the stock rises in the first n days. Note that even though "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y _ { n } ) \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": " , if the stock goes up 70% one day and then drops 50% the next day, then overall it has dropped 15% since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 . 7 \\cdot 0 . 5 = 0 . 8 5"
+            },
+            {
+              "type": "text",
+              "content": " So after many days, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " will be very small if about half the time the stock rose 70% and about half the time the stock dropped 50%—and the law of large numbers ensures that this will be the case! Writing "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " in terms of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U _ { n } / n"
+            },
+            {
+              "type": "text",
+              "content": " in order to apply the LLN, we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.28,
+            0.501,
+            0.719,
+            0.545
+          ],
+          "image_path": "images/page_492_equation_12.jpg",
+          "content": "Y _ {n} = Y _ {0} (0. 5) ^ {n - U _ {n}} (1. 7) ^ {U _ {n}} = Y _ {0} \\left(\\frac {(3 . 4) ^ {U _ {n} / n}}{2}\\right) ^ {n}."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.557,
+            0.895,
+            0.596
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U _ { n } / n \\to 0 . 5"
+            },
+            {
+              "type": "text",
+              "content": " with probability 1, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 3 . 4 ) ^ { U _ { n } / n } \\rightarrow \\sqrt { 3 . 4 } < 2"
+            },
+            {
+              "type": "text",
+              "content": " with probability 1, so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { n } \\to 0"
+            },
+            {
+              "type": "text",
+              "content": " with probability 1."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.605,
+            0.896,
+            0.757
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Paradoxically, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y _ { n } ) \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": " but "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { n } \\to 0"
+            },
+            {
+              "type": "text",
+              "content": " with probability 1. To gain some intuition for this result, consider the extreme example where a gambler starts with $100 and each day either quadruples their money or loses their entire fortune, with equal probabilities. Then on average the gambler’s wealth doubles each day, which sounds good until one notices that eventually there will be a day when the gambler goes broke. The gambler’s actual fortune goes to 0 with probability 1, whereas the expected value goes to infinity due to tiny probabilities of getting extremely large amounts of money, as in the St. Petersburg paradox. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.102,
+            0.765,
+            0.896,
+            0.917
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "h 10.3.8 (The evil Cauchy). The central limit theorem requires that the mean and variance of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " be finite, and our proof of the WLLN relied on the same conditions. The Cauchy distribution introduced in Example 7.1.25 has no mean or variance, so the Cauchy distribution obeys neither the law of large numbers nor the central limit theorem. It can be shown that the sample mean of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n"
+            },
+            {
+              "type": "text",
+              "content": " Cauchys is still Cauchy, no matter how large n gets. So the sample mean never approaches a Normal distribution, contrary to the behavior seen in the CLT. There is also no true mean for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\bar { X } } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " to converge to, so the LLN does not apply either."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 493,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.038,
+            0.378,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Inequalities and limit theorems"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.895,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "477"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.11,
+            0.486,
+            0.131
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "10.4 Chi-Square and Student-t"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.149,
+            0.895,
+            0.187
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We’ll round out the chapter by introducing the last two continuous distributions in this book, both of which are closely related to the Normal distribution."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.197,
+            0.897,
+            0.256
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition 10.4.1 (Chi-Square distribution). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V = Z _ { 1 } ^ { 2 }   +   \\cdots   +   Z _ { n } ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { 1 } , Z _ { 2 } , \\ldots , Z _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " are i.i.d. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " . Then V is said to have the Chi-Square distribution with n degrees of freedom. We write this as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V \\sim \\chi _ { n } ^ { 2 }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.264,
+            0.752,
+            0.285
+          ],
+          "content": [
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { A s }"
+            },
+            {
+              "type": "text",
+              "content": " it turns out, the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\chi _ { n } ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " distribution is a special case of the Gamma."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.104,
+            0.293,
+            0.805,
+            0.316
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 10.4.2. The "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\chi _ { n } ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " distribution is the Gamma "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( \\frac { n } { 2 } , \\frac { 1 } { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " distribution."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.336,
+            0.895,
+            0.377
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. First, we verify that the PDF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { 1 } ^ { 2 } \\sim \\chi _ { 1 } ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " equals the PDF of the Gamma "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( \\frac { 1 } { 2 } , \\frac { 1 } { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " : for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x > 0"
+            },
+            {
+              "type": "text",
+              "content": " ,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.124,
+            0.39,
+            0.875,
+            0.413
+          ],
+          "image_path": "images/page_493_equation_8.jpg",
+          "content": "F (x) = P (Z _ {1} ^ {2} \\leq x) = P (- \\sqrt {x} \\leq Z _ {1} \\leq \\sqrt {x}) = \\Phi (\\sqrt {x}) - \\Phi (- \\sqrt {x}) = 2 \\Phi (\\sqrt {x}) - 1,"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.104,
+            0.432,
+            0.131,
+            0.445
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "so"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.265,
+            0.443,
+            0.734,
+            0.483
+          ],
+          "image_path": "images/page_493_equation_10.jpg",
+          "content": "f (x) = \\frac {d}{d x} F (x) = 2 \\varphi (\\sqrt {x}) \\frac {1}{2} x ^ {- 1 / 2} = \\frac {1}{\\sqrt {2 \\pi x}} e ^ {- x / 2},"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.104,
+            0.491,
+            0.895,
+            0.533
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "which is indeed the Gamma "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( \\frac { 1 } { 2 } , \\frac { 1 } { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " PDF. Then, because "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V = Z _ { 1 } ^ { 2 } + \\cdots + Z _ { n } ^ { 2 } \\sim \\chi _ { n } ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " is the sum of n independent "
+            },
+            {
+              "type": "equation_inline",
+              "content": "$\\mathrm { \\overset { \\cdot } { G a m m a } } ( \\frac { 1 } { 2 } , \\frac { 1 } { 2 } )$ r.v.s"
+            },
+            {
+              "type": "text",
+              "content": " , we have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle V \\sim \\operatorname { G a m m a } ( { \\frac { n } { 2 } } , { \\frac { 1 } { 2 } } )"
+            },
+            {
+              "type": "text",
+              "content": " \u0004"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.104,
+            0.553,
+            0.895,
+            0.629
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "From our knowledge of the mean and variance of a Gamma distribution, we have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( V ) = n"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { V a r } ( V ) = 2 n"
+            },
+            {
+              "type": "text",
+              "content": " . We can also obtain the mean and variance using the fact that V is the sum of i.i.d. squared Normals, along with the Normal moments derived in Chapter 6:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.226,
+            0.645,
+            0.435,
+            0.667
+          ],
+          "image_path": "images/page_493_equation_13.jpg",
+          "content": "E (V) = n E (Z _ {1} ^ {2}) = n,"
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.212,
+            0.669,
+            0.789,
+            0.692
+          ],
+          "image_path": "images/page_493_equation_14.jpg",
+          "content": "\\mathrm{Var} (V) = n \\mathrm{Var} (Z _ {1} ^ {2}) = n \\left(E (Z _ {1} ^ {4}) - (E Z _ {1} ^ {2}) ^ {2}\\right) = n (3 - 1) = 2 n."
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.104,
+            0.706,
+            0.895,
+            0.772
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To get the MGF of the Chi-Square distribution, just plug "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n / 2"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 2"
+            },
+            {
+              "type": "text",
+              "content": " into the more general Gamma "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( a , \\lambda )"
+            },
+            {
+              "type": "text",
+              "content": " MGF, which we found in Theorem 8.4.3 to be "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left( { \\frac { \\lambda } { \\lambda { - } t } } \\right) ^ { a }"
+            },
+            {
+              "type": "text",
+              "content": " for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t < \\lambda"
+            },
+            {
+              "type": "text",
+              "content": " . This gives"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.335,
+            0.785,
+            0.664,
+            0.831
+          ],
+          "image_path": "images/page_493_equation_16.jpg",
+          "content": "M _ {V} (t) = \\left(\\frac {1}{1 - 2 t}\\right) ^ {n / 2}, \\quad t <   1 / 2."
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.102,
+            0.843,
+            0.897,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Chi-Square distribution is important in statistics because it is related to the distribution of the sample variance, which can be used to estimate the true variance of a distribution. When our random variables are i.i.d. Normals, the distribution of the sample variance after appropriate scaling is Chi-Square."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 494,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "478"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.106
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 10.4.3 (Distribution of sample variance). For i.i.d. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , \\ldots , X _ { n } \\sim"
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { N } ( \\mu , \\sigma ^ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " , the sample variance is the r.v."
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.366,
+            0.121,
+            0.632,
+            0.171
+          ],
+          "image_path": "images/page_494_equation_3.jpg",
+          "content": "S _ {n} ^ {2} = \\frac {1}{n - 1} \\sum_ {j = 1} ^ {n} (X _ {j} - \\bar {X} _ {n}) ^ {2}."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.184,
+            0.206,
+            0.2
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Show that"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.409,
+            0.197,
+            0.592,
+            0.235
+          ],
+          "image_path": "images/page_494_equation_5.jpg",
+          "content": "\\frac {(n - 1) S _ {n} ^ {2}}{\\sigma^ {2}} \\sim \\chi_ {n - 1} ^ {2}."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.105,
+            0.241,
+            0.195,
+            0.257
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.268,
+            0.896,
+            0.344
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "First let’s show that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\begin{array} { r } { \\sum _ { j = 1 } ^ { n } ( Z _ { j } - \\bar { Z } _ { n } ) ^ { 2 } \\sim \\chi _ { n - 1 } ^ { 2 } } \\end{array}"
+            },
+            {
+              "type": "text",
+              "content": " for standard Normal r.v.s "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { 1 } , \\ldots , Z _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " this is consistent with the more general result we are asked to prove and also serves as a useful stepping stone. Let’s start with the following useful identity, which is a special case of the identity from the proof of Theorem 6.3.4:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.347,
+            0.358,
+            0.651,
+            0.408
+          ],
+          "image_path": "images/page_494_equation_8.jpg",
+          "content": "\\sum_ {j = 1} ^ {n} Z _ {j} ^ {2} = \\sum_ {j = 1} ^ {n} (Z _ {j} - \\bar {Z} _ {n}) ^ {2} + n \\bar {Z} _ {n} ^ {2}."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.422,
+            0.896,
+            0.461
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Now take the MGF of both sides. By Example 7.5.9, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\begin{array} { r } { \\sum _ { j = 1 } ^ { n } ( Z _ { j } - \\bar { Z } _ { n } ) ^ { 2 } } \\end{array}"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\bar { Z } _ { n } ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " are independent, so the MGF of their sum is the product of the individual MGFs. Also,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.364,
+            0.475,
+            0.635,
+            0.524
+          ],
+          "image_path": "images/page_494_equation_10.jpg",
+          "content": "\\sum_ {j = 1} ^ {n} Z _ {j} ^ {2} \\sim \\chi_ {n} ^ {2} \\mathrm{and} n \\bar {Z} _ {n} ^ {2} \\sim \\chi_ {1} ^ {2},"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.104,
+            0.537,
+            0.13,
+            0.549
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "so"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.221,
+            0.547,
+            0.779,
+            0.606
+          ],
+          "image_path": "images/page_494_equation_12.jpg",
+          "content": "\\left(\\frac {1}{1 - 2 t}\\right) ^ {n / 2} = \\left(\\text {MGF of} \\sum_ {j = 1} ^ {n} (Z _ {j} - \\bar {Z} _ {n}) ^ {2}\\right) \\cdot \\left(\\frac {1}{1 - 2 t}\\right) ^ {1 / 2}."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.104,
+            0.612,
+            0.227,
+            0.63
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This implies"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.273,
+            0.628,
+            0.729,
+            0.688
+          ],
+          "image_path": "images/page_494_equation_14.jpg",
+          "content": "\\left(\\text {MGF of} \\sum_ {j = 1} ^ {n} (Z _ {j} - \\bar {Z} _ {n}) ^ {2}\\right) = \\left(\\frac {1}{1 - 2 t}\\right) ^ {(n - 1) / 2},"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.104,
+            0.695,
+            0.848,
+            0.715
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "which is the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\chi _ { n - 1 } ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " MGF. Since the MGF determines the distribution, we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.387,
+            0.73,
+            0.61,
+            0.78
+          ],
+          "image_path": "images/page_494_equation_16.jpg",
+          "content": "\\sum_ {j = 1} ^ {n} (Z _ {j} - \\bar {Z} _ {n}) ^ {2} \\sim \\chi_ {n - 1} ^ {2}."
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.102,
+            0.803,
+            0.896,
+            0.859
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For general "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , \\ldots , X _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " , use a location-scale transformation to write "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j } = \\mu + \\sigma Z _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\bar { X } _ { n }   =   \\mu + \\sigma \\bar { Z } _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " . When we express "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle \\sum _ { j = 1 } ^ { n } ( X _ { j } - { \\bar { X } } _ { n } ) ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " in terms of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " , the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": " cancels and the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma"
+            },
+            {
+              "type": "text",
+              "content": " comes out squared:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 18,
+          "bbox": [
+            0.183,
+            0.873,
+            0.813,
+            0.923
+          ],
+          "image_path": "images/page_494_equation_18.jpg",
+          "content": "\\sum_ {j = 1} ^ {n} (X _ {j} - \\bar {X} _ {n}) ^ {2} = \\sum_ {j = 1} ^ {n} (\\mu + \\sigma Z _ {j} - (\\mu + \\sigma \\bar {Z} _ {n})) ^ {2} = \\sigma^ {2} \\sum_ {j = 1} ^ {n} (Z _ {j} - \\bar {Z} _ {n}) ^ {2}."
+        }
+      ]
+    },
+    {
+      "page_idx": 495,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.038,
+            0.378,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Inequalities and limit theorems"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "479"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.068,
+            0.2,
+            0.086
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "All in all,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.192,
+            0.098,
+            0.809,
+            0.149
+          ],
+          "image_path": "images/page_495_equation_3.jpg",
+          "content": "\\frac {(n - 1) S _ {n} ^ {2}}{\\sigma^ {2}} = \\frac {1}{\\sigma^ {2}} \\sum_ {j = 1} ^ {n} (X _ {j} - \\bar {X} _ {n}) ^ {2} = \\frac {1}{\\sigma^ {2}} \\cdot \\sigma^ {2} \\sum_ {j = 1} ^ {n} (Z _ {j} - \\bar {Z} _ {n}) ^ {2} \\sim \\chi_ {n - 1} ^ {2},"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.161,
+            0.896,
+            0.216
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "which is what we wanted. This also implies that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( S _ { n } ^ { 2 } )   =   \\sigma ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , which agrees with what we showed in Theorem 6.3.4: the sample variance is unbiased for estimating the true variance. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.228,
+            0.895,
+            0.266
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Student-t distribution is defined by representing it in terms of a standard Normal r.v. and a "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\chi _ { n } ^ { 2 } \\mathrm {  ~ r . v . }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.104,
+            0.274,
+            0.573,
+            0.293
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition 10.4.4 (Student-t distribution). Let"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.437,
+            0.304,
+            0.56,
+            0.348
+          ],
+          "image_path": "images/page_495_equation_7.jpg",
+          "content": "T = \\frac {Z}{\\sqrt {V / n}},"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.104,
+            0.358,
+            0.896,
+            0.415
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z \\sim \\mathcal { N } ( 0 , 1 ) ,   V \\sim \\chi _ { n } ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , and Z is independent of V . Then T is said to have the Student-t distribution with n degrees of freedom. We write this as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T \\sim t _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " . Often “Student-t distribution” is abbreviated to “t distribution”."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.104,
+            0.424,
+            0.896,
+            0.538
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Student-t distribution was introduced in 1908 by William Gosset, a Master Brewer at Guinness, while working on quality control for beer. He was required by the company to publish his work under a pseudonym, and he chose the name Student. The t distribution forms the basis for hypothesis testing procedures known as t-tests, which are extremely widely used in practice (we do not introduce the details of t-tests here since they are better left for a course on statistical inference)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.104,
+            0.547,
+            0.896,
+            0.603
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The PDF of the Student-t distribution with n degrees of freedom looks similar to that of a standard Normal, except with heavier tails (much heavier if n is small, and not much heavier if n is large). The formula for the PDF is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.306,
+            0.615,
+            0.693,
+            0.656
+          ],
+          "image_path": "images/page_495_equation_11.jpg",
+          "content": "f _ {T} (t) = \\frac {\\Gamma ((n + 1) / 2)}{\\sqrt {n \\pi} \\Gamma (n / 2)} (1 + t ^ {2} / n) ^ {- (n + 1) / 2},"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.104,
+            0.666,
+            0.896,
+            0.741
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "though we will not prove this since the derivation is messy and anyway many of the most important properties of the Student-t distribution are easier to understand by thinking about how we defined it in terms of a Normal and a "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\chi _ { n } ^ { 2 } \\mathrm {  ~ r . v . }"
+            },
+            {
+              "type": "text",
+              "content": " , rather than by doing tedious calculations with the PDF. Here are some of these properties."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.104,
+            0.75,
+            0.896,
+            0.788
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 10.4.5 (Student-t properties). The Student-t distribution "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " has the following properties."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 14,
+          "bbox": [
+            0.167,
+            0.803,
+            0.873,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 15,
+              "bbox": [
+                0.176,
+                0.806,
+                0.621,
+                0.824
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. Symmetry: If "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "T \\sim t _ { n }"
+                },
+                {
+                  "type": "text",
+                  "content": " , then "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "- T \\sim t _ { n }"
+                },
+                {
+                  "type": "text",
+                  "content": " as well."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 16,
+              "bbox": [
+                0.167,
+                0.834,
+                0.868,
+                0.871
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. Cauchy as special case: The "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "t _ { 1 }"
+                },
+                {
+                  "type": "text",
+                  "content": " distribution is the same as the Cauchy distribution, introduced in Example 7.1.25."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 17,
+              "bbox": [
+                0.167,
+                0.881,
+                0.868,
+                0.917
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "3. Convergence to Normal: As "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "n \\to \\infty"
+                },
+                {
+                  "type": "text",
+                  "content": " , the "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "t _ { n }"
+                },
+                {
+                  "type": "text",
+                  "content": " distribution approaches the standard Normal distribution."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

@@ -1,0 +1,6524 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Probability, Second Edition",
+      "authors": [
+        "Joseph K. Blitzstein;Jessica Hwang;"
+      ],
+      "created_at": "2019-01-18T11:22:30+05:30",
+      "modified_at": "2019-02-04T21:29:14+05:30",
+      "creator_application": "LaTeX with hyperref",
+      "producer_application": "pdfTeX-1.40.19",
+      "page_count": 636,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 576,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 577,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 578,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 579,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 580,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 581,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 582,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 583,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 584,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 585,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 586,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 587,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 588,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 589,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 590,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 591,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 576,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "560"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.163
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Consider a Poisson process on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , \\infty )"
+            },
+            {
+              "type": "text",
+              "content": " . Departing slightly from our notation in pre-vious chapters, let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N ( t )"
+            },
+            {
+              "type": "text",
+              "content": " be the number of arrivals in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , t ]"
+            },
+            {
+              "type": "text",
+              "content": " . Then the number of arrivals in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( t _ { 1 } , t _ { 2 } ]"
+            },
+            {
+              "type": "text",
+              "content": " is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N ( t _ { 2 } ) - N ( t _ { 1 } )"
+            },
+            {
+              "type": "text",
+              "content": " , for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 < t _ { 1 } < t _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " . Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " be the time of the jth arrival. Since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { 1 } > t"
+            },
+            {
+              "type": "text",
+              "content": " is the same event as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N ( t ) = 0"
+            },
+            {
+              "type": "text",
+              "content": " (by the count-time duality, as discussed in Section 5.6),"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.339,
+            0.18,
+            0.66,
+            0.202
+          ],
+          "image_path": "images/page_576_equation_3.jpg",
+          "content": "P (T _ {1} > t) = P (N (t) = 0) = e ^ {- \\lambda t},"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.219,
+            0.896,
+            0.257
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { 1 } \\sim \\operatorname { E x p o } ( \\lambda )"
+            },
+            {
+              "type": "text",
+              "content": " . Next let’s condition on the first arrival time "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " and look at the additional time "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { 2 } - T _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " until the second arrival. Then"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.384,
+            0.276,
+            0.615,
+            0.297
+          ],
+          "image_path": "images/page_576_equation_5.jpg",
+          "content": "(T _ {2} - T _ {1}) | T _ {1} \\sim \\mathrm{Expo} (\\lambda)"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.315,
+            0.896,
+            0.372
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "by the same argument as above, since we have a fresh Poisson process starting at "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " . Since the conditional distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( T _ { 2 }   -   T _ { 1 } ) | T _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " does not depend on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " , we have that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { 2 } - T _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " is independent of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " , so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { 2 } - T _ { 1 } \\sim \\mathrm { E x p o } ( \\lambda )"
+            },
+            {
+              "type": "text",
+              "content": " unconditionally too."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.383,
+            0.836,
+            0.403
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Continuing in this way, the interarrival times "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { j }   -   T _ { j - 1 }"
+            },
+            {
+              "type": "text",
+              "content": " are independent, with"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.392,
+            0.42,
+            0.605,
+            0.443
+          ],
+          "image_path": "images/page_576_equation_8.jpg",
+          "content": "T _ {j} - T _ {j - 1} \\sim \\mathrm{Expo} (\\lambda)."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.459,
+            0.896,
+            0.517
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "So a Poisson process can be described dually as a process in which arrival counts are Poissons or a process in which interarrival times are Exponentials. Also note that since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " is the sum of j i.i.d. Expo(λ) r.v.s,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.405,
+            0.534,
+            0.593,
+            0.556
+          ],
+          "image_path": "images/page_576_equation_10.jpg",
+          "content": "T _ {j} \\sim \\mathrm{Gamma} (j, \\lambda)."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.573,
+            0.896,
+            0.611
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The connection with the Exponential gives us a simple way to generate n arrivals from a Poisson process."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.622,
+            0.896,
+            0.661
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Story 13.1.2 (Generative story for 1D Poisson process). To generate n arrivals from a Poisson process on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , \\infty )"
+            },
+            {
+              "type": "text",
+              "content": " with rate λ:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 15,
+          "bbox": [
+            0.175,
+            0.683,
+            0.612,
+            0.734
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 13,
+              "bbox": [
+                0.175,
+                0.683,
+                0.612,
+                0.703
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. Generate n i.i.d. Expo(λ) r.v.s "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X _ { 1 } , \\ldots , X _ { n } ."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 14,
+              "bbox": [
+                0.175,
+                0.714,
+                0.59,
+                0.734
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. For j = 1, . . . , n, set Tj = X"
+                },
+                {
+                  "type": "text",
+                  "content": "1",
+                  "styles": [
+                    "subscript"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": " + · · · + Xj ."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.103,
+            0.756,
+            0.606,
+            0.775
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Then we can take "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { 1 } , \\ldots , T _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " to be the arrival times."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.102,
+            0.787,
+            0.896,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Figure 13.1 depicts three realizations of Poisson processes with rates 1, 2, and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "^ { 5 , }"
+            },
+            {
+              "type": "text",
+              "content": " respectively, plotted up to time 10. In all three cases, we can see that despite the interarrival times being i.i.d., the arrivals are not evenly spaced. Rather, there is a lot of variability in the interarrival times, which produces clumps of arrivals. This phenomenon is known as Poisson clumping. It might seem like an amazing coincidence to observe a cluster of several arrivals that are close together in time, but Poisson clumping says that having such clusters is common with Poisson processes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 577,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.264,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Poisson processes"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "561"
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 2,
+          "bbox": [
+            0.111,
+            0.075,
+            0.889,
+            0.265
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 2,
+              "bbox": [
+                0.111,
+                0.075,
+                0.889,
+                0.265
+              ],
+              "image_path": "images/page_577_chart_2.jpg",
+              "content": "| \\(\\lambda\\) | X-axis Position |\n| --- | --- |\n| 1 | ~0.5, ~1.5, ~2.5, ~3.5, ~4.5, ~5.5, ~6.5, ~7.5, ~8.5, ~9.5 |\n| 2 | ~0.5, ~1.5, ~2.5, ~3.5, ~4.5, ~5.5, ~6.5, ~7.5, ~8.5, ~9.5 |\n| 5 | ~0.5, ~1.5, ~2.5, ~3.5, ~4.5, ~5.5, ~6.5, ~7.5, ~8.5, ~9.5 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 3,
+              "bbox": [
+                0.103,
+                0.289,
+                0.248,
+                0.305
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 13.1"
+                }
+              ]
+            }
+          ],
+          "sub_type": "scatter"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.307,
+            0.897,
+            0.346
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Simulated Poisson process in one dimension, for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda   =   1 , 2 , 5 ."
+            },
+            {
+              "type": "text",
+              "content": " The arrivals are far from evenly spaced from each other, and in fact they sometimes clump together,"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.415,
+            0.676,
+            0.436
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "13.2 Conditioning, superposition, and thinning"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.454,
+            0.896,
+            0.51
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The three most important properties to understand about the Poisson process are conditioning, superposition, and thinning. These correspond to properties we’ve already seen about the Poisson distribution, so they should already be plausible."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.544,
+            0.341,
+            0.563
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "13.2.1 Conditioning"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.582,
+            0.897,
+            0.676
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "What happens when we take a Poisson process and condition on the total number of events in an interval? Our first result is that conditional on the total number of events in an interval, the number of events in a fixed subinterval is Binomial. This follows from Theorem 4.8.2, where we showed that we can get from the Poisson to the Binomial by conditioning."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.686,
+            0.896,
+            0.725
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 13.2.1 (Conditional counts). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( N ( t )   :   t   >   0 )"
+            },
+            {
+              "type": "text",
+              "content": " be a Poisson process with rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda ,"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t _ { 1 } < t _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " . The conditional distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N ( t _ { 1 } )"
+            },
+            {
+              "type": "text",
+              "content": " given "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N ( t _ { 2 } ) = n"
+            },
+            {
+              "type": "text",
+              "content": " is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.335,
+            0.739,
+            0.664,
+            0.78
+          ],
+          "image_path": "images/page_577_equation_10.jpg",
+          "content": "N (t _ {1}) \\mid N (t _ {2}) = n \\sim \\mathrm{Bin} \\left(n, \\frac {t _ {1}}{t _ {2}}\\right)."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.814,
+            0.896,
+            0.872
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. Figure 13.2 illustrates the setup. The claim is that conditional on having a total of n arrivals in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , t _ { 2 } ]"
+            },
+            {
+              "type": "text",
+              "content": " , the number of arrivals in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , t _ { 1 } ]"
+            },
+            {
+              "type": "text",
+              "content": " is Binomial, with n trials and success probability proportional to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t _ { 1 }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.881,
+            0.896,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , t _ { 1 } ]"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( t _ { 1 } , t _ { 2 } ]"
+            },
+            {
+              "type": "text",
+              "content": " are disjoint, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N ( t _ { 1 } )"
+            },
+            {
+              "type": "text",
+              "content": " is independent of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N ( t _ { 2 } )   -   N ( t _ { 1 } )"
+            },
+            {
+              "type": "text",
+              "content": " . The first is distributed "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { P o i s } ( \\lambda t _ { 1 } )"
+            },
+            {
+              "type": "text",
+              "content": " , the second is distributed "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Pois (\\lambda(t_{2}-t_{1}))"
+            },
+            {
+              "type": "text",
+              "content": " , and their sum is"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 578,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "562"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.146,
+            0.073,
+            0.855,
+            0.158
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.146,
+                0.073,
+                0.855,
+                0.158
+              ],
+              "image_path": "images/page_578_image_2.jpg",
+              "content": "0\nN(t₁)\nt₁\nN(t₂) - N(t₁)\nt₂"
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.177,
+            0.249,
+            0.193
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 13.2"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.195,
+            0.896,
+            0.233
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Conditioning. Given that n arrivals occurred in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , t _ { 2 } ]"
+            },
+            {
+              "type": "text",
+              "content": " , the conditional distribution of the number of arrivals in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , t _ { 1 } ]"
+            },
+            {
+              "type": "text",
+              "content": " is Binomial with parameters n and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t _ { 1 } / t _ { 2 }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.262,
+            0.738,
+            0.281
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "the number of arrivals in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , t _ { 2 } ]"
+            },
+            {
+              "type": "text",
+              "content": " , namely "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N ( t _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " . By Theorem 4.8.2,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.27,
+            0.296,
+            0.728,
+            0.337
+          ],
+          "image_path": "images/page_578_equation_6.jpg",
+          "content": "N (t _ {1}) \\mid N (t _ {2}) = n \\sim \\mathrm{Bin} \\left(n, \\frac {\\lambda t _ {1}}{\\lambda t _ {1} + \\lambda (t _ {2} - t _ {1})}\\right),"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.35,
+            0.521,
+            0.368
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "which is precisely what we wanted to show."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.392,
+            0.896,
+            0.448
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Carrying the idea of conditioning on the number of arrivals further, we have the following striking result: in a Poisson process, given that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N ( t ) = n"
+            },
+            {
+              "type": "text",
+              "content": " , the arrival times are distributed as if we threw down n i.i.d. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { U n i f } ( 0 , t )"
+            },
+            {
+              "type": "text",
+              "content": " points."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.459,
+            0.781,
+            0.477
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "First let’s look at a simple case, where there has been only one arrival."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.488,
+            0.896,
+            0.525
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proposition 13.2.2. In a Poisson process of rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda ,"
+            },
+            {
+              "type": "text",
+              "content": " conditional on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N ( t ) = 1"
+            },
+            {
+              "type": "text",
+              "content": " , the first arrival time "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " has the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { U n i f } ( 0 , t )"
+            },
+            {
+              "type": "text",
+              "content": " distribution."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.104,
+            0.548,
+            0.662,
+            0.567
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 < s < t"
+            },
+            {
+              "type": "text",
+              "content": " . By a form of the count-time duality,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.242,
+            0.58,
+            0.757,
+            0.741
+          ],
+          "image_path": "images/page_578_equation_12.jpg",
+          "content": "\\begin{array}{l} P (T _ {1} \\leq s | N (t) = 1) = \\frac {P (T _ {1} \\leq s , N (t) = 1)}{P (N (t) = 1)} \\\\ = \\frac {P (N (s) = 1 , N (t) - N (s) = 0)}{P (N (t) = 1)} \\\\ = \\frac {(e ^ {- \\lambda s} \\lambda s) (e ^ {- \\lambda (t - s)})}{e ^ {- \\lambda t} \\lambda t} \\\\ = \\frac {s}{t}. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.103,
+            0.754,
+            0.781,
+            0.773
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Thus, the conditional CDF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " given "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N ( t ) = 1"
+            },
+            {
+              "type": "text",
+              "content": " is the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { U n i f } ( 0 , t )"
+            },
+            {
+              "type": "text",
+              "content": " CDF."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.795,
+            0.896,
+            0.852
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "More generally, given that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N ( t ) = n"
+            },
+            {
+              "type": "text",
+              "content": " , the arrival times "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " look like the order statistics of n i.i.d. Unif(0, t) r.v.s. We omit the proof since in introducing order statistics in Chapter 8, we focused on their marginal distributions."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.102,
+            0.863,
+            0.896,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 13.2.3 (Conditional times). In a Poisson process of rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda ,"
+            },
+            {
+              "type": "text",
+              "content": " conditional on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N ( t ) = n ,"
+            },
+            {
+              "type": "text",
+              "content": " the joint distribution of the arrival times "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { 1 } , \\ldots , T _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " is the same as the joint distribution of the order statistics of n i.i.d. Unif(0, t) r.v.s."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 579,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.263,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Poisson processes"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "563"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.894,
+            0.126
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "From Chapter 8, we know that the order statistics of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { U n i f } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " r.v.s are Betas, so the conditional distributions of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " are scaled Betas; to get Beta distributions, we can just divide the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " by t so that their support is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , 1 )"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.316,
+            0.132,
+            0.682,
+            0.153
+          ],
+          "image_path": "images/page_579_equation_3.jpg",
+          "content": "t ^ {- 1} T _ {j} \\mid N (t) = n \\sim \\mathrm{Beta} (j, n - j + 1)."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.16,
+            0.894,
+            0.198
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We now have another way to generate arrivals from a Poisson process, this time for a specific interval instead of a specific number of arrivals."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.206,
+            0.894,
+            0.245
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Story 13.2.4 (Generative story for Poisson process, take 2). To generate arrivals from a Poisson process with rate λ in an interval "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , t ]"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 9,
+          "bbox": [
+            0.175,
+            0.262,
+            0.86,
+            0.34
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.175,
+                0.262,
+                0.86,
+                0.281
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. Generate the total number of events in the interval, "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "N ( t ) \\sim \\mathrm { P o i s } ( \\lambda t )"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.175,
+                0.29,
+                0.77,
+                0.309
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. Given "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "N ( t ) = n"
+                },
+                {
+                  "type": "text",
+                  "content": " , generate n i.i.d. Unif "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathrm { f } ( 0 , t ) \\mathrm { ~ r . v . s ~ } U _ { 1 } , \\ldots , U _ { n }"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.175,
+                0.319,
+                0.495,
+                0.34
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "3. For "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "j = 1 , \\ldots , n , \\mathrm { s e t } T _ { j } = U _ { ( j ) } ."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.103,
+            0.355,
+            0.894,
+            0.393
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This is actually the generative story we used to create Figure 13.1, since we knew we wanted to simulate in the interval (0, 10]."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.402,
+            0.894,
+            0.496
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 13.2.5 (Users on a website). Users visit a certain website according to a Poisson process with rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " users per minute, where an “arrival” at a certain time means that at that time someone starts browsing the site. After arriving at the site, each user browses the site for an "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { E x p o } ( \\lambda _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " amount of time (and then leaves), independent of other users."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.103,
+            0.506,
+            0.894,
+            0.562
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Suppose that at time 0, no one is using the site. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N _ { t }"
+            },
+            {
+              "type": "text",
+              "content": " be the number of users who arrive in the interval "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , t ]"
+            },
+            {
+              "type": "text",
+              "content": " , and let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "C _ { t }"
+            },
+            {
+              "type": "text",
+              "content": " be the number of users who are currently browsing the site at time t."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.103,
+            0.572,
+            0.894,
+            0.61
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " be the time of arrival and Y be the time of departure for a user who arrives at a Uniform time point in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ 0 , t ]"
+            },
+            {
+              "type": "text",
+              "content": " . Find the joint PDF of X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.103,
+            0.619,
+            0.894,
+            0.657
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { t }"
+            },
+            {
+              "type": "text",
+              "content": " be the probability that a user who arrives at a Uniform time point in (0, t] is still browsing the site at time t. Find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { t }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.104,
+            0.666,
+            0.638,
+            0.685
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(c) Find the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "C _ { t }"
+            },
+            {
+              "type": "text",
+              "content": " in terms of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 1 } , \\lambda _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , and t."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.104,
+            0.694,
+            0.722,
+            0.713
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(d) Little’s law is a very general result, which says the following:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.103,
+            0.722,
+            0.894,
+            0.761
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The long-run average number of customers in a stable system is the long-term average arrival rate multiplied by the average time a customer spends in the system."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.103,
+            0.769,
+            0.894,
+            0.806
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Explain what happens to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( C _ { t } )"
+            },
+            {
+              "type": "text",
+              "content": " for t large, and how this can be interpreted in terms of Little’s law."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 19,
+          "bbox": [
+            0.104,
+            0.816,
+            0.195,
+            0.833
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.103,
+            0.844,
+            0.894,
+            0.883
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) We have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathrm { U n i f } ( 0 , t )"
+            },
+            {
+              "type": "text",
+              "content": " . Given "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = x ,   Y"
+            },
+            {
+              "type": "text",
+              "content": " is an "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { E x p o } ( \\lambda _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " shifted to start at "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x ."
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i.e.,   (Y - x)|(X = x) \\sim  Expo (\\lambda_2)"
+            },
+            {
+              "type": "text",
+              "content": " . So the joint PDF of X and Y is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 21,
+          "bbox": [
+            0.18,
+            0.888,
+            0.816,
+            0.924
+          ],
+          "image_path": "images/page_579_equation_21.jpg",
+          "content": "f (x, y) = f _ {X} (x) f _ {Y | X} (y | x) = \\frac {\\lambda_ {2}}{t} e ^ {- \\lambda_ {2} (y - x)}, \\text {   for   } 0 <   x <   t \\text {   and   } x <   y."
+        }
+      ]
+    },
+    {
+      "page_idx": 580,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "564"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.896,
+            0.106
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) With notation as in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( \\mathrm { a } )"
+            },
+            {
+              "type": "text",
+              "content": " , we want to find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { t } = P ( Y > t )"
+            },
+            {
+              "type": "text",
+              "content": " . This can be done by integrating the joint PDF over all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( x , y )"
+            },
+            {
+              "type": "text",
+              "content": " with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y > t \\cdot"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.292,
+            0.117,
+            0.709,
+            0.287
+          ],
+          "image_path": "images/page_580_equation_3.jpg",
+          "content": "\\begin{array}{l} P (Y > t) = \\frac {1}{t} \\int_ {0} ^ {t} \\int_ {t} ^ {\\infty} \\lambda_ {2} e ^ {- \\lambda_ {2} (y - x)} d y d x \\\\ = \\frac {1}{t} \\int_ {0} ^ {t} e ^ {\\lambda_ {2} x} \\left(\\int_ {t} ^ {\\infty} \\lambda_ {2} e ^ {- \\lambda_ {2} y} d y\\right) d x \\\\ = \\frac {e ^ {- \\lambda_ {2} t}}{t} \\int_ {0} ^ {t} e ^ {\\lambda_ {2} x} d x \\\\ = \\frac {1 - e ^ {- \\lambda_ {2} t}}{\\lambda_ {2} t}. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.305,
+            0.896,
+            0.362
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(c) By Theorem 13.2.3, given "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N _ { t } = n"
+            },
+            {
+              "type": "text",
+              "content": " we have that the n arrival times in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , t ]"
+            },
+            {
+              "type": "text",
+              "content": " are "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { i . i . d . }"
+            },
+            {
+              "type": "text",
+              "content": " . and uniform in that interval. Therefore, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "C _ { t } | N _ { t } \\sim \\operatorname { B i n } ( N _ { t } , p _ { t } )"
+            },
+            {
+              "type": "text",
+              "content": " , with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { t }"
+            },
+            {
+              "type": "text",
+              "content": " as above, and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N _ { t } \\sim \\operatorname { P o i s } ( \\lambda _ { 1 } t )"
+            },
+            {
+              "type": "text",
+              "content": " . So by the chicken-egg story (Story 7.1.9),"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.415,
+            0.375,
+            0.582,
+            0.394
+          ],
+          "image_path": "images/page_580_equation_5.jpg",
+          "content": "C _ {t} \\sim \\mathrm{Pois} (\\lambda_ {1} p _ {t} t)."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.104,
+            0.407,
+            0.184,
+            0.424
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "That is,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.363,
+            0.423,
+            0.635,
+            0.465
+          ],
+          "image_path": "images/page_580_equation_7.jpg",
+          "content": "C _ {t} \\sim \\mathrm{Pois} \\left(\\frac {\\lambda_ {1} (1 - e ^ {- \\lambda_ {2} t})}{\\lambda_ {2}}\\right)."
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.479,
+            0.896,
+            0.536
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(d) As "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t \\to \\infty,   E(C_t) \\to \\lambda_1/\\lambda_2"
+            },
+            {
+              "type": "text",
+              "content": " . This agrees with Little’s law since it says the longrun average number of users in the system (browsing the site) is the rate at which users arrive "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left( \\lambda _ { 1 } \\right)"
+            },
+            {
+              "type": "text",
+              "content": " times the average time a user browses in a session "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 1 / \\lambda _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " \u0003"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.105,
+            0.569,
+            0.349,
+            0.588
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "13.2.2 Superposition"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.606,
+            0.896,
+            0.681
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The next property we will examine is superposition: if we take two independent Poisson processes and overlay them, we get another Poisson process. (The combined process is a Poisson process in its own right, but we can imagine that the arrivals are tagged to indicate which of the underlying processes they came from.)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.69,
+            0.896,
+            0.747
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 13.2.6 (Superposition). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( N _ { 1 } ( t )   :   t   >   0 )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( N _ { 2 } ( t )   :   t   >   0 )"
+            },
+            {
+              "type": "text",
+              "content": " b e independent Poisson processes with rates "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , respectively. Then the combined process "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N ( t ) = N _ { 1 } ( t ) + N _ { 2 } ( t )"
+            },
+            {
+              "type": "text",
+              "content": " is a Poisson process with rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 1 } + \\lambda _ { 2 }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.104,
+            0.764,
+            0.807,
+            0.783
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. Let’s verify the two properties in the definition of Poisson process."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.793,
+            0.896,
+            0.849
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "1. For all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t > 0,   N_1(t) \\sim  Pois (\\lambda_1 t)"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N _ { 2 } ( t ) \\sim \\operatorname { P o i s } ( \\lambda _ { 2 } t )"
+            },
+            {
+              "type": "text",
+              "content": " , independently, so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N ( t ) \\sim"
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { P o i s } ( ( \\lambda _ { 1 } + \\lambda _ { 2 } ) t )"
+            },
+            {
+              "type": "text",
+              "content": " , by Theorem 4.8.1. The same argument applies for any interval of length t, not just intervals of the form "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , t ]"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.863,
+            0.894,
+            0.918
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2. Arrivals in disjoint intervals are independent in the combined process because they are independent in the two individual processes, and the individual processes are independent of each other. \u0004"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 581,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.264,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Poisson processes"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "565"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.069,
+            0.643,
+            0.087
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "There is a very natural way to generate a superposition."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.099,
+            0.897,
+            0.155
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Story 13.2.7 (Generative story for superposition). To generate the superposition of two independent Poisson processes, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( N _ { 1 } ( t ) : t > 0 )"
+            },
+            {
+              "type": "text",
+              "content": " with rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( N _ { 2 } ( t ) : t > 0 )"
+            },
+            {
+              "type": "text",
+              "content": " with rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " :"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 4,
+          "bbox": [
+            0.175,
+            0.177,
+            0.757,
+            0.258
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.176,
+                0.177,
+                0.757,
+                0.197
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. Generate arrivals from the Poisson process "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "( N _ { 1 } ( t ) : t > 0 )"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.176,
+                0.208,
+                0.757,
+                0.227
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. Generate arrivals from the Poisson process "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "( N _ { 2 } ( t ) : t > 0 )"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.176,
+                0.239,
+                0.573,
+                0.258
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "3. Superpose the results of steps 1 and 2."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "chart",
+          "index": 8,
+          "bbox": [
+            0.11,
+            0.287,
+            0.891,
+            0.433
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 8,
+              "bbox": [
+                0.11,
+                0.287,
+                0.891,
+                0.433
+              ],
+              "image_path": "images/page_581_chart_8.jpg",
+              "content": "| Function | Segment 1 (X) | Segment 2 (Y) |\n| --- | --- | --- |\n| \\(\\lambda_{1} = 0.5\\) | ~3.5, ~7.5, ~8.5 | N/A |\n| \\(\\lambda_{2} = 0.5\\) | ~1.5, ~4.5, ~5.5, ~6.5, ~7.5, ~8.5 | N/A |\n| \\(\\lambda_{1} + \\lambda_{2} = 1\\) | ~1.5, ~3.5, ~4.5, ~5.5, ~6.5, ~7.5, ~8.5 | N/A |"
+            }
+          ],
+          "sub_type": "wireframe"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.455,
+            0.248,
+            0.47
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 13.3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.473,
+            0.896,
+            0.548
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Superposition. The superposition of independent Poisson processes is a Poisson process, and the rates add. The top two timelines are independent Poisson processes, each with rate 0.5. The bottom timeline is the superposition of the top two Poisson processes and is itself a Poisson process with rate 1."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.567,
+            0.896,
+            0.625
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Figure 13.3 depicts a superposed Poisson process consisting of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\times   ^ { \\prime } \\mathrm { s }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\diamondsuit } ^ { \\flat } \\mathbf { S } ."
+            },
+            {
+              "type": "text",
+              "content": " Let’s call the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\times   ^ { \\prime } \\mathrm { s }"
+            },
+            {
+              "type": "text",
+              "content": " “type-1 events” and the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\diamondsuit ^ { \\prime } \\mathrm { S }"
+            },
+            {
+              "type": "text",
+              "content": " “type-2 events”. A natural question to ask is: what is the probability of observing a type-1 event before a type-2 event?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.636,
+            0.896,
+            0.713
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 13.2.8 (Probability of type-1 event before type-2 event). Consider two independent Poisson processes: a Poisson process of type-1 arrivals, with rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " and a Poisson process of type-2 arrivals, with rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " . In the superposition of these two processes, the probability of the first arrival being type-1 is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 1 } / ( \\lambda _ { 1 } + \\lambda _ { 2 } )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.737,
+            0.896,
+            0.813
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T"
+            },
+            {
+              "type": "text",
+              "content": " be the time until the first type-1 event and let V be the time until the first type-2 event. We seek "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( T   \\leq   V )"
+            },
+            {
+              "type": "text",
+              "content": " . We could do this with 2D LOTUS, integrating the joint PDF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T"
+            },
+            {
+              "type": "text",
+              "content": " and V over the region of interest in the 2D plane. But it turns out we can avoid calculus altogether."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.103,
+            0.825,
+            0.801,
+            0.844
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T \\sim \\mathrm{Exp}(\\lambda_1)"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V \\sim \\mathrm{Exp}(\\lambda_2)"
+            },
+            {
+              "type": "text",
+              "content": " , independently. Rescaling, let"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.402,
+            0.86,
+            0.595,
+            0.881
+          ],
+          "image_path": "images/page_581_equation_15.jpg",
+          "content": "\\tilde {T} = \\lambda_ {1} T, \\tilde {V} = \\lambda_ {2} V."
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.103,
+            0.898,
+            0.386,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\tilde { T } , \\tilde { V }"
+            },
+            {
+              "type": "text",
+              "content": " are i.i.d. Expo(1)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 582,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "566"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.104,
+            0.066,
+            0.424,
+            0.087
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Letting "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U = \\tilde { T } / ( \\tilde { T } + \\tilde { V } )"
+            },
+            {
+              "type": "text",
+              "content": " , we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.305,
+            0.099,
+            0.691,
+            0.287
+          ],
+          "image_path": "images/page_582_equation_3.jpg",
+          "content": "\\begin{array}{l} P (T \\leq V) = P \\left(\\frac {\\tilde {T}}{\\lambda_ {1}} \\leq \\frac {\\tilde {V}}{\\lambda_ {2}}\\right) \\\\ = P \\left(\\frac {\\tilde {T}}{\\tilde {T} + \\tilde {V}} \\leq \\frac {\\tilde {V}}{\\tilde {T} + \\tilde {V}} \\cdot \\frac {\\lambda_ {1}}{\\lambda_ {2}}\\right) \\\\ = P \\left(U \\leq (1 - U) \\cdot \\frac {\\lambda_ {1}}{\\lambda_ {2}}\\right) \\\\ = P \\left(U \\leq \\frac {\\lambda_ {1}}{\\lambda_ {1} + \\lambda_ {2}}\\right). \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.299,
+            0.896,
+            0.357
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\tilde { T } , \\tilde { V } \\sim \\mathrm { E x p o ( 1 ) }"
+            },
+            {
+              "type": "text",
+              "content": " , the bank–post office story tells us that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U \\sim \\mathrm { B e t a } ( 1 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " . In other words, U is standard Uniform! Thus, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( T   \\leq   V )   =   \\lambda _ { 1 } / ( \\lambda _ { 1 } + \\lambda _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " . Note that when "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 1 } = \\lambda _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " this reduces to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 2"
+            },
+            {
+              "type": "text",
+              "content": " , as it should by symmetry. \u0004"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.375,
+            0.896,
+            0.508
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The above result applies to the first arrival in the combined Poisson process. After the first arrival, however, the same reasoning applies to the second arrival: by the memoryless property, the time to the next type-1 event is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{Exp}(\\lambda_1)"
+            },
+            {
+              "type": "text",
+              "content": " and the time to the next type-2 event is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { E x p o } ( \\lambda _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " , independent of the past. Therefore the second arrival is a type-1 arrival with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 1 } / ( \\lambda _ { 1 } + \\lambda _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " , independent of the first arrival. Similarly, all of the arrival types can be viewed as i.i.d. coin tosses with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 1 } / ( \\lambda _ { 1 } + \\lambda _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " of Heads, where Heads corresponds to type-1."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.516,
+            0.894,
+            0.591
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This yields an alternative generative story for the superposition of two independent Poisson processes: we can first generate an "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{Exp}(\\lambda_1 + \\lambda_2)"
+            },
+            {
+              "type": "text",
+              "content": " r.v. to decide when the next arrival occurs, and then independently flip a coin with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 1 } / ( \\lambda _ { 1 }   +   \\lambda _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " of Heads to decide what kind of arrival it is."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.601,
+            0.894,
+            0.639
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Story 13.2.9 (Generative story for superposition, take 2). To generate the superposition of two independent Poisson processes, with rates "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 2 } !"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 10,
+          "bbox": [
+            0.167,
+            0.656,
+            0.872,
+            0.741
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.167,
+                0.656,
+                0.87,
+                0.695
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. Generate i.i.d. "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathrm{Exp}(\\lambda_1 + \\lambda_2)"
+                },
+                {
+                  "type": "text",
+                  "content": " r.v.s "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X _ { 1 } , X _ { 2 } , \\ldots"
+                },
+                {
+                  "type": "text",
+                  "content": " , and let the jth arrival be at time "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "T _ { j } = X _ { 1 } + \\cdots + X _ { j }"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.168,
+                0.703,
+                0.872,
+                0.741
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. Generate i.i.d. r.v.s "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "I _ { 1 } , I _ { 2 } , \\cdots \\sim"
+                },
+                {
+                  "type": "text",
+                  "content": " Bern "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "( \\lambda _ { 1 } / ( \\lambda _ { 1 } + \\lambda _ { 2 } ) )"
+                },
+                {
+                  "type": "text",
+                  "content": " , independent of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X _ { 1 } , X _ { 2 } , \\ldots ."
+                },
+                {
+                  "type": "text",
+                  "content": " Let the jth arrival be type-1 if "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "I _ { j } = 1"
+                },
+                {
+                  "type": "text",
+                  "content": " , and type-2 otherwise."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.849,
+            0.742,
+            0.871,
+            0.757
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "\u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.778,
+            0.896,
+            0.835
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This story provides us with a quick proof of a result known as the competing risks theorem, which seems like a surprising independence result when stated on its own but becomes very intuitive when viewed in the context of Poisson processes."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.844,
+            0.897,
+            0.921
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 13.2.10 (Competing risks). The lifetime of Fred’s refrigerator is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { 1 } \\sim"
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{Exp}(\\lambda_1)"
+            },
+            {
+              "type": "text",
+              "content": " , and the lifetime of his dishwasher is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { 2 } \\; \\sim \\; \\mathrm { E x p o } ( \\lambda _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " , independent of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " . Show that min "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( Y _ { 1 } , Y _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " , the time of the first appliance failure, is independent of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I ( Y _ { 1 } < Y _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " , the indicator that the refrigerator failed first. This may seem surprising."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 583,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.264,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Poisson processes"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "567"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.101,
+            0.068,
+            0.896,
+            0.162
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For example, if the average lifetime of his refrigerator is 15 years and the average lifetime of his dishwasher is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "7"
+            },
+            {
+              "type": "text",
+              "content": " years, and then one of these appliances fails after "
+            },
+            {
+              "type": "equation_inline",
+              "content": "7"
+            },
+            {
+              "type": "text",
+              "content": " years, it would be natural to guess that it was the dishwasher that failed. But in fact, we will show that knowing the time of the first appliance failure provides no information about which appliance failed."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.172,
+            0.896,
+            0.286
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution: We will use an embedding strategy, using Poisson process ideas even though this problem doesn’t mention Poisson processes anywhere! We will embed the r.v.s "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " into a Poisson process that we ourselves invent, in order to take advantage of the properties of Poisson processes. So let’s imagine there is an entire Poisson process of refrigerator failures with rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " and a Poisson process of dishwasher failures with rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 2 }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.294,
+            0.894,
+            0.389
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can interpret "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " as the waiting time for the first arrival in the refrigerator process and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " as the waiting time for the first arrival in the dishwasher process. This approach is valid since (min "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( Y _ { 1 } , Y _ { 2 } ) , I ( Y _ { 1 } { < } Y _ { 2 } ) )"
+            },
+            {
+              "type": "text",
+              "content": " is a function of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( Y _ { 1 } , Y _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " , so what matters is the joint distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( Y _ { 1 } , Y _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " , and the way we construct "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( Y _ { 1 } , Y _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " does have the correct joint distribution."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.398,
+            0.894,
+            0.513
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Furthermore, min "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( Y _ { 1 } , Y _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " is the waiting time for the first arrival in the superposition of the two Poisson processes, and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I ( Y _ { 1 } < Y _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " is the indicator of this arrival being a type-1 event. But in the above generative story, the arrival times and event types in the superposed Poisson process are generated completely independently! Hence, min "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( Y _ { 1 } , Y _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I ( Y _ { 1 } < Y _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " are independent, with min "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( Y _ { 1 } , Y _ { 2 } ) \\sim \\operatorname { E x p o } ( \\lambda _ { 1 } + \\lambda _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I ( Y _ { 1 } < Y _ { 2 } ) \\sim \\operatorname { B e r n } ( \\lambda _ { 1 } / ( \\lambda _ { 1 } + \\lambda _ { 2 } ) )"
+            },
+            {
+              "type": "text",
+              "content": " \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.521,
+            0.894,
+            0.633
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A direct consequence of Story 13.2.9 is that if we project a superposed Poisson process into discrete time, keeping the sequence of type-1 and type-2 arrivals but not the arrival times themselves, we are left with i.i.d. Bern "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( \\lambda _ { 1 } / ( \\lambda _ { 1 } { + } \\lambda _ { 2 } ) )"
+            },
+            {
+              "type": "text",
+              "content": " r.v.s "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { 1 } , I _ { 2 } , \\ldots ,"
+            },
+            {
+              "type": "text",
+              "content": " where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " is the indicator of the jth arrival being type-1. Figure 13.4 illustrates what it means to remove the continuous-time information from the Poisson process, and Theorem 13.2.11 states the result formally."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 7,
+          "bbox": [
+            0.134,
+            0.647,
+            0.887,
+            0.735
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 7,
+              "bbox": [
+                0.134,
+                0.647,
+                0.887,
+                0.735
+              ],
+              "image_path": "images/page_583_image_7.jpg",
+              "content": "```mermaid\ngraph LR\n  A[\"Initial Step\"] --> B[\"Path with Diamonds\"]\n  B --> C[\"Path with Crosses\"]\n  C --> D[\"Final State\"]\n```"
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.755,
+            0.249,
+            0.77
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 13.4"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.773,
+            0.894,
+            0.83
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Projection into discrete time. Stripping out the continuous-time information from a superposed Poisson process produces a sequence of i.i.d. indicators of type-1 versus type-2 events. Here × represents type-1 events and \u0005 represents type-2 events."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.844,
+            0.896,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 13.2.11 (Projection of superposition into discrete time). Consider the superposition "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( N ( t ) : t > 0 )"
+            },
+            {
+              "type": "text",
+              "content": " of two independent Poisson processes with rates "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " . For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j = 1 , 2 , \\ldots ,"
+            },
+            {
+              "type": "text",
+              "content": " let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " be the indicator of the jth event being from the Poisson process with rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " . Then the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " are i.i.d. Bern "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( \\lambda _ { 1 } / ( \\lambda _ { 1 } + \\lambda _ { 2 } ) )"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 584,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "568"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.068,
+            0.895,
+            0.125
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Using this result, we can prove with a story that a Gamma mixture of Poissons is Negative Binomial, which we first learned from Fred’s adventures in Blotchville (Story 8.4.5). We’ll consider a special case first."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.105,
+            0.134,
+            0.895,
+            0.173
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 13.2.12 (Exponential mixture of Poissons is Geometric). Suppose that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { E x p o } ( \\lambda )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y | X = x \\sim \\operatorname { P o i s } ( x )"
+            },
+            {
+              "type": "text",
+              "content": " . Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y \\sim \\operatorname { G e o m } ( \\lambda / ( \\lambda + 1 ) )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.105,
+            0.192,
+            0.895,
+            0.305
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { A s }"
+            },
+            {
+              "type": "text",
+              "content": " with the competing risks theorem, we embed X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " into Poisson processes. Consider two independent Poisson processes, a process of failures arriving at rate 1 and another of successes arriving at rate λ. Let X be the time of the first success; then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { E x p o } ( \\lambda )"
+            },
+            {
+              "type": "text",
+              "content": " . Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " be the number of failures before the time of the first success. By the definition of a Poisson process with rate 1, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y | X = x \\sim \\operatorname { P o i s } ( x )"
+            },
+            {
+              "type": "text",
+              "content": " Therefore X and Y satisfy the conditions of the theorem."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.105,
+            0.315,
+            0.895,
+            0.391
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To get the marginal distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y ,"
+            },
+            {
+              "type": "text",
+              "content": " strip out the continuous-time information! In discrete time we have i.i.d. Bernoulli trials with success probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda / ( \\lambda + 1 )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " is defined as the number of failures before the first success, so by the story of the Geometric distribution, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y \\sim \\operatorname { G e o m } ( \\lambda / ( \\lambda + 1 ) )"
+            },
+            {
+              "type": "text",
+              "content": " \u0004"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.105,
+            0.41,
+            0.562,
+            0.429
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The reasoning for the general case is analogous."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.105,
+            0.439,
+            0.895,
+            0.478
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 13.2.13 (Gamma mixture of Poissons is Negative Binomial). Suppose that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim  Gamma (r, \\lambda)"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y | X = x \\sim \\operatorname { P o i s } ( x )"
+            },
+            {
+              "type": "text",
+              "content": " . Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y \\sim \\mathrm { N B i n } ( r , \\lambda / ( \\lambda + 1 ) )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.105,
+            0.497,
+            0.895,
+            0.611
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. Consider two independent Poisson processes, a process of failures arriving at rate 1 and another of successes arriving at rate λ. Let X be the time of the rth success, so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim  Gamma (r, \\lambda)"
+            },
+            {
+              "type": "text",
+              "content": " . Let Y be the number of failures before the time of the rth success. Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y | X = x \\sim \\operatorname { P o i s } ( x )"
+            },
+            {
+              "type": "text",
+              "content": " by definition of Poisson process. We have that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " is the number of failures before the rth success in a sequence of i.i.d. Bernoulli trials with success probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda / ( \\lambda + 1 )"
+            },
+            {
+              "type": "text",
+              "content": " , so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y \\sim \\mathrm { N B i n } ( r , \\lambda / ( \\lambda + 1 ) )"
+            },
+            {
+              "type": "text",
+              "content": " \u0004"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.105,
+            0.644,
+            0.298,
+            0.664
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "13.2.3 Thinning"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.105,
+            0.681,
+            0.895,
+            0.738
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The last property of Poisson processes we will discuss is thinning: if we take a Poisson process and, for each arrival, independently flip a coin to decide whether it is a type-1 event or type-2 event, we end up with two independent Poisson processes."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.105,
+            0.747,
+            0.895,
+            0.861
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 13.2.14 (Thinning). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( N ( t ) : t > 0 )"
+            },
+            {
+              "type": "text",
+              "content": " be a Poisson process with rate λ, and classify each arrival as a type-1 event with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " and a type-2 event with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 - p ,"
+            },
+            {
+              "type": "text",
+              "content": " where these classifications are independent of each other and independent of the arrival times. Then the type-1 events form a Poisson process with rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda p ,"
+            },
+            {
+              "type": "text",
+              "content": " the type-2 events form a Poisson process with rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda ( 1 - p )"
+            },
+            {
+              "type": "text",
+              "content": " , and these two processes are independent."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.105,
+            0.88,
+            0.895,
+            0.918
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { \\mathrm { 1 } }   =   \\lambda p"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda _ { 2 }   =   \\lambda ( 1   -   p )"
+            },
+            {
+              "type": "text",
+              "content": " , so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda   =   \\lambda _ { \\mathrm { 1 } }   +   \\lambda _ { \\mathrm { 2 } }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p   =   \\lambda _ { 1 } / ( \\lambda _ { 1 }   +   \\lambda _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " Then we find ourselves in Story 13.2.9. But Story 13.2.7 and Story 13.2.9 are two"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 585,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.264,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Poisson processes"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "569"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.165
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "equivalent generative stories for superposition! The probabilistic structures of the outputs of the two stories are identical, thinking of the arrivals in Story 13.2.7 from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( N _ { i } ( t ) : t > 0 )"
+            },
+            {
+              "type": "text",
+              "content": " as being type-i. So we can assume instead that Story 13.2.7 was used to generate the process. Happily, in this story we know from the beginning that the type-1 process is independent of the type-2 process. \u0004"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.184,
+            0.896,
+            0.26
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Thus we can superpose independent Poisson processes to get a combined Poisson process, or we can split a single Poisson process into independent Poisson processes. Figure 13.5 is an illustration of thinning. We simply flipped Figure 13.3 upside-down, which is appropriate because thinning is the flip side of superposition!"
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 4,
+          "bbox": [
+            0.11,
+            0.279,
+            0.892,
+            0.419
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 4,
+              "bbox": [
+                0.11,
+                0.279,
+                0.892,
+                0.419
+              ],
+              "image_path": "images/page_585_chart_4.jpg",
+              "content": "| Parameter | Segment 1 | Segment 2 | Segment 3 | Segment 4 | Segment 5 |\n| --- | --- | --- | --- | --- | --- |\n| \\(\\lambda = 1\\) | Diamond | Cross | Diamond | Diamond | Cross |\n| \\(\\lambda(1 - p) = 0.5\\) | Diamond | — | Diamond | Diamond | — |\n| \\(\\lambda p = 0.5\\) | — | Cross | — | — | Cross |"
+            }
+          ],
+          "sub_type": "wireframe"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.439,
+            0.248,
+            0.455
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 13.5"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.458,
+            0.896,
+            0.534
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Thinning. Starting with a single Poisson process, if we let each arrival be type-1 with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " and type-2 with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 - p ,"
+            },
+            {
+              "type": "text",
+              "content": " we obtain two independent Poisson processes with rates "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda p"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda ( 1 - p )"
+            },
+            {
+              "type": "text",
+              "content": " . Here × represents type-1 events and \u0005 represents type-2 events, and we take "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p = 0 . 5"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.55,
+            0.896,
+            0.646
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Thinning is the Poisson process analog of the chicken-egg story. Suppose that we thin a Poisson process "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( N ( t ) : t > 0 )"
+            },
+            {
+              "type": "text",
+              "content": " of rate λ as in the statement of Theorem 13.2.14, and let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( N _ { i } ( t ) : t > 0 )"
+            },
+            {
+              "type": "text",
+              "content": " be the process of type-i arrivals. Thinking of type-1 arrivals as eggs that hatch, it follows immediately from the chicken-egg story that we have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N _ { 1 } ( t ) \\sim \\operatorname { P o i s } ( \\lambda p t ) ,   N _ { 2 } ( t ) \\sim \\operatorname { P o i s } ( \\lambda ( 1 - p ) t )"
+            },
+            {
+              "type": "text",
+              "content": " , with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N _ { 1 } ( t )"
+            },
+            {
+              "type": "text",
+              "content": " independent of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N _ { 2 } ( t )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.654,
+            0.894,
+            0.711
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For practice and as an example of the elegance of thinning, let’s find the distribution of a random sum in two different ways: using MGFs and conditional expectation, and using thinning."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.721,
+            0.896,
+            0.775
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 13.2.15 (First Success sum of Exponentials). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , X _ { 2 } , \\ldots"
+            },
+            {
+              "type": "text",
+              "content": " be i.i.d. Expo(λ) and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N   \\sim   \\mathrm { F S } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " , independent of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " . Find the distribution of the random sum"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.438,
+            0.775,
+            0.56,
+            0.827
+          ],
+          "image_path": "images/page_585_equation_10.jpg",
+          "content": "Y = \\sum_ {j = 1} ^ {N} X _ {j}."
+        },
+        {
+          "type": "paragraph_title",
+          "index": 11,
+          "bbox": [
+            0.105,
+            0.834,
+            0.196,
+            0.85
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.862,
+            0.897,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We’ll solve this problem twice, first with tools from Chapter 9 and then with a Poisson process story that uses thinning. For the first method, we recognize "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " as the sum of a random number of random variables, so we can find the MGF of"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 586,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "570"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.067,
+            0.895,
+            0.106
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Y using Adam’s law, conditioning on N. Recalling that the MGF of the Expo(λ) distribution is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda / ( \\lambda - t )"
+            },
+            {
+              "type": "text",
+              "content": " for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t < \\lambda"
+            },
+            {
+              "type": "text",
+              "content": " , we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.271,
+            0.119,
+            0.728,
+            0.282
+          ],
+          "image_path": "images/page_586_equation_3.jpg",
+          "content": "\\begin{array}{l} E \\left(e ^ {t Y}\\right) = E \\left(E \\left(e ^ {t \\sum_ {j = 1} ^ {N} X _ {j}} | N\\right)\\right) \\\\ = E \\left(E \\left(e ^ {t X _ {1}}\\right) E \\left(e ^ {t X _ {2}}\\right) \\dots E \\left(e ^ {t X _ {N}}\\right) | N\\right) \\\\ = E \\left(E \\left(e ^ {t X _ {1}}\\right) ^ {N}\\right) \\\\ = E \\left(\\left(\\frac {\\lambda}{\\lambda - t}\\right) ^ {N}\\right). \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.105,
+            0.293,
+            0.553,
+            0.313
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Now we can use LOTUS with the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { F S } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " PMF,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.335,
+            0.326,
+            0.664,
+            0.348
+          ],
+          "image_path": "images/page_586_equation_5.jpg",
+          "content": "P (N = k) = q ^ {k - 1} p \\text {for} k = 1, 2, \\dots"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.105,
+            0.362,
+            0.297,
+            0.38
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The LOTUS sum is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.309,
+            0.391,
+            0.691,
+            0.443
+          ],
+          "image_path": "images/page_586_equation_7.jpg",
+          "content": "E \\left(\\left(\\frac {\\lambda}{\\lambda - t}\\right) ^ {N}\\right) = \\sum_ {k = 1} ^ {\\infty} \\left(\\frac {\\lambda}{\\lambda - t}\\right) ^ {k} q ^ {k - 1} p,"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.105,
+            0.455,
+            0.895,
+            0.494
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "which simplifies to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda p / ( \\lambda p - t )"
+            },
+            {
+              "type": "text",
+              "content": " for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t < \\lambda p"
+            },
+            {
+              "type": "text",
+              "content": " , after doing some algebra and summing a geometric series. This is the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { E x p o } ( \\lambda p )"
+            },
+            {
+              "type": "text",
+              "content": " MGF, so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y \\sim \\mathrm{Exp}(\\lambda p)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.105,
+            0.502,
+            0.896,
+            0.673
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Now let’s see how Poisson processes can spare us from algebra while also providing insight into why "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " is Exponential. Using the embedding strategy, since the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " are i.i.d. Expo(λ) we are free to interpret the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " as interarrival times in a Poisson process with rate λ. So let’s imagine such a Poisson process, and let’s further imagine that each of the arrivals is a special arrival with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p ,"
+            },
+            {
+              "type": "text",
+              "content": " independently. Then we can interpret N as the number of arrivals until the first special arrival and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " as the waiting time for the first special arrival. But by the thinning property, the special arrivals form a Poisson process with rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda p"
+            },
+            {
+              "type": "text",
+              "content": " . The waiting time for the first special arrival is thus distributed "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { E x p o } ( \\lambda p )"
+            },
+            {
+              "type": "text",
+              "content": " \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.105,
+            0.682,
+            0.895,
+            0.72
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Thinning works analogously with more than 2 types. In this setting, thinning is sometimes called the coloring theorem."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.105,
+            0.729,
+            0.896,
+            0.862
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 13.2.16 (Coloring). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( N ( t ) : t > 0 )"
+            },
+            {
+              "type": "text",
+              "content": " be a Poisson process with rate λ, and C be a finite set of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "`` colors''"
+            },
+            {
+              "type": "text",
+              "content": " , labeled from 1 through c. Suppose that each arrival gets randomly assigned a color from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "C ,"
+            },
+            {
+              "type": "text",
+              "content": " with color i having probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " The color assignments are independent of each other and independent of the arrival times. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( N _ { i } ( t ) : t > 0 )"
+            },
+            {
+              "type": "text",
+              "content": " be the color i process, i.e., "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N _ { i } ( t )"
+            },
+            {
+              "type": "text",
+              "content": " is the number of arrivals with color i in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , t ]"
+            },
+            {
+              "type": "text",
+              "content": " . Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( N _ { i } ( t )   :   t   >   0 )"
+            },
+            {
+              "type": "text",
+              "content": " is a Poisson process with rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda p _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " , for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i = 1 , 2 , \\ldots , c ,"
+            },
+            {
+              "type": "text",
+              "content": " and these c monochromatic processes are independent."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.105,
+            0.88,
+            0.895,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. We will induct on c. For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c = 1"
+            },
+            {
+              "type": "text",
+              "content": " there is nothing to show. For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c = 2"
+            },
+            {
+              "type": "text",
+              "content": " the result is the thinning theorem that we already proved. Now assume that the result holds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 587,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.263,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Poisson processes"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.892,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "571"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.182
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for c colors, and show it when there are "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c + 1"
+            },
+            {
+              "type": "text",
+              "content": " colors. Let’s call color 1 green. Use thinning to assign each arrival to be green with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " and non-green with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 - p _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " . This splits the Poisson process into 2 independent processes: a green process of rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda p _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " and a non-green process of rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda ( 1   -   p _ { 1 } )"
+            },
+            {
+              "type": "text",
+              "content": " . By the inductive hypothesis, we can then split the non-green process into c independent processes, one for each of colors "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 , 3 , \\ldots , c + 1"
+            },
+            {
+              "type": "text",
+              "content": " , where color "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j"
+            },
+            {
+              "type": "text",
+              "content": " now gets probability"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.325,
+            0.19,
+            0.672,
+            0.227
+          ],
+          "image_path": "images/page_587_equation_3.jpg",
+          "content": "\\tilde {p} _ {j} = \\frac {p _ {j}}{1 - p _ {1}} = \\frac {p _ {j}}{p _ {2} + p _ {3} + \\cdots + p _ {c + 1}},"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.235,
+            0.896,
+            0.274
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j = 2 , 3 , \\ldots , c + 1"
+            },
+            {
+              "type": "text",
+              "content": " . We then have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c + 1"
+            },
+            {
+              "type": "text",
+              "content": " independent Poisson processes, one for each color, such that the process for color "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j"
+            },
+            {
+              "type": "text",
+              "content": " has rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda p _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j = 1 , 2 , \\ldots , c + 1"
+            },
+            {
+              "type": "text",
+              "content": " \u0004"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.291,
+            0.894,
+            0.329
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The next example shows how coloring can help us decompose a complicated Poisson process into more manageable components."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.338,
+            0.897,
+            0.45
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 13.2.17 (Cars on a highway). Suppose cars enter a one-way highway from a common entrance, following a Poisson process with rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda ."
+            },
+            {
+              "type": "text",
+              "content": " The ith car has velocity "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " and travels at this velocity forever; no time is lost when one car overtakes another car. Assume the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " are i.i.d. discrete r.v.s whose support is a finite set of positive values. The process starts at time 0, and we’ll consider the highway entrance to be at location 0."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.46,
+            0.897,
+            0.573
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For fixed locations a and b on the highway with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 < a < b"
+            },
+            {
+              "type": "text",
+              "content": " , let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { t }"
+            },
+            {
+              "type": "text",
+              "content": " be the number of cars located in the interval "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ a , b ]"
+            },
+            {
+              "type": "text",
+              "content": " at time t. (For instance, on an interstate highway running west to east through the midwestern United States, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a"
+            },
+            {
+              "type": "text",
+              "content": " could be Kansas City and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b"
+            },
+            {
+              "type": "text",
+              "content": " could be St. Louis; then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { t }"
+            },
+            {
+              "type": "text",
+              "content": " would be the number of cars on the highway that are in the state of Missouri at time t.) Figure 13.6 illustrates the setup of the problem and the definition of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { t }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.582,
+            0.894,
+            0.621
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Assume that t is large enough that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t > b / V _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " for all possible values of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " . Show that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { t }"
+            },
+            {
+              "type": "text",
+              "content": " has a Poisson distribution with mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda ( b - a ) E ( V _ { i } ^ { - 1 } )"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.106,
+            0.63,
+            0.195,
+            0.646
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.658,
+            0.896,
+            0.79
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Since the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " are discrete with finite support, we can enumerate the set of possible velocities "
+            },
+            {
+              "type": "equation_inline",
+              "content": "v _ { 1 } , \\ldots , v _ { m }"
+            },
+            {
+              "type": "text",
+              "content": " and their probabilities "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 1 } , \\ldots , p _ { m }"
+            },
+            {
+              "type": "text",
+              "content": " . After doing so, we realize that the cars entering the highway represent m types of arrivals, each corresponding to a different velocity. This suggests breaking up our overall Poisson process into simpler ones. Let’s color the Poisson process m ways according to the velocity of the cars, resulting in a Poisson process with rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda p _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " for cars of velocity "
+            },
+            {
+              "type": "equation_inline",
+              "content": "v _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " , a Poisson process with rate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda p _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " for cars of velocity "
+            },
+            {
+              "type": "equation_inline",
+              "content": "v _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , and so forth."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.799,
+            0.896,
+            0.855
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For each of these m separate Poisson processes, we can ask: within what time interval do cars from this process have to enter the highway in order to be in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ a , b ]"
+            },
+            {
+              "type": "text",
+              "content": " at time "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t ?"
+            },
+            {
+              "type": "text",
+              "content": " This is a matter of physics, not statistics:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.374,
+            0.869,
+            0.624,
+            0.887
+          ],
+          "image_path": "images/page_587_equation_12.jpg",
+          "content": "\\text {distance} = \\text {velocity} \\cdot \\text {time},"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.901,
+            0.894,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "so a car that enters the highway at time s with velocity v will be at position "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( t - s ) v"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 588,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "572"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 2,
+          "bbox": [
+            0.217,
+            0.069,
+            0.782,
+            0.317
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 2,
+              "bbox": [
+                0.217,
+                0.069,
+                0.782,
+                0.317
+              ],
+              "image_path": "images/page_588_chart_2.jpg",
+              "content": "| Time | Distance along highway |\n| --- | --- |\n| 0 | 0 |\n| ~0.25 | 0 |\n| ~0.4 | 0 |\n| ~0.6 | 0 |\n| ~0.8 | 0 |\n| t | b |\n| t | a |\n| t | a |\n| t | b |"
+            }
+          ],
+          "sub_type": "scatter"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.34,
+            0.25,
+            0.357
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 13.6"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.358,
+            0.897,
+            0.451
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Cars enter a highway. Their entrance times form a Poisson process and are indicated by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\times   ^ { \\prime } \\mathrm { s }"
+            },
+            {
+              "type": "text",
+              "content": " on the time axis. The ith car has velocity "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " , represented by the slope of the line emanating from the ith × symbol. We are interested in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { t }"
+            },
+            {
+              "type": "text",
+              "content": " , the number of cars located in the interval "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ a , b ]"
+            },
+            {
+              "type": "text",
+              "content": " at time t. Here we observe "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { t } = 3"
+            },
+            {
+              "type": "text",
+              "content": " , depicted by the three stars."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.476,
+            0.896,
+            0.571
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "at time t. Thus, in order for the car’s position to be between "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b ,"
+            },
+            {
+              "type": "text",
+              "content": " we require its arrival time to be between "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t - b / v"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t - a / v"
+            },
+            {
+              "type": "text",
+              "content": " . (By our assumption that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t"
+            },
+            {
+              "type": "text",
+              "content": " is sufficiently large, we don’t need to worry about "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t - b / v"
+            },
+            {
+              "type": "text",
+              "content": " being negative.) If the car arrives prior to time "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t   -   b / v"
+            },
+            {
+              "type": "text",
+              "content": " , it will already have passed b by time "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t ;"
+            },
+            {
+              "type": "text",
+              "content": " if the car arrives after time "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t - a / v"
+            },
+            {
+              "type": "text",
+              "content": " , it won’t have reached a by time t."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.58,
+            0.894,
+            0.658
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We now have the answer for each of the separate Poisson processes. Within the process where cars have velocity "
+            },
+            {
+              "type": "equation_inline",
+              "content": "v _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " , the number of cars arriving between "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t - b / v _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t - a / v _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " , which we’ll call "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { t j }"
+            },
+            {
+              "type": "text",
+              "content": " , is distributed "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { P o i s } ( \\lambda p _ { j } ( b - a ) / v _ { j } )"
+            },
+            {
+              "type": "text",
+              "content": " : the rate of the process is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda p _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " , and the length of the interval "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ t - b / v _ { j } , t - a / v _ { j } ]"
+            },
+            {
+              "type": "text",
+              "content": " is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( b - a ) / v _ { j }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.665,
+            0.894,
+            0.703
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Since the separate processes are independent, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { t 1 }"
+            },
+            {
+              "type": "text",
+              "content": " through "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { t m }"
+            },
+            {
+              "type": "text",
+              "content": " are independent Poisson r.v.s. Thus,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.268,
+            0.715,
+            0.731,
+            0.773
+          ],
+          "image_path": "images/page_588_equation_8.jpg",
+          "content": "Z _ {t} = Z _ {t 1} + \\dots + Z _ {t m} \\sim \\mathrm{Pois} \\left(\\lambda (b - a) \\sum_ {j = 1} ^ {m} \\frac {p _ {j}}{v _ {j}}\\right),"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.787,
+            0.894,
+            0.811
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle \\sum _ { j = 1 } ^ { m } p _ { j } / v _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " is the expectation of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V _ { i } ^ { - 1 }"
+            },
+            {
+              "type": "text",
+              "content": " by LOTUS. This is what we wanted. \u0003"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 589,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.264,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Poisson processes"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "573"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.126
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To wrap up this section, here is a table describing the correspondences between properties of the Poisson process and properties of the Poisson distribution. In the second column, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { 1 } \\sim \\operatorname { P o i s } ( \\lambda _ { 1 } )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { 2 } \\sim \\operatorname { P o i s } ( \\lambda _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " are independent."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 3,
+          "bbox": [
+            0.212,
+            0.142,
+            0.79,
+            0.239
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 3,
+              "bbox": [
+                0.212,
+                0.142,
+                0.79,
+                0.239
+              ],
+              "image_path": "images/page_589_table_3.jpg",
+              "content": "<table><tr><td>Poisson process</td><td>Poisson distribution</td></tr><tr><td>conditioning</td><td><eq>Y_1|Y_1 + Y_2 = n \\sim \\text{Bin}(n, \\lambda_1/(\\lambda_1 + \\lambda_2))</eq></td></tr><tr><td>superposition</td><td><eq>Y_1 + Y_2 \\sim \\text{Pois}(\\lambda_1 + \\lambda_2)</eq></td></tr><tr><td>thinning</td><td>chicken-egg story</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.324,
+            0.664,
+            0.344
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "13.3 Poisson processes in multiple dimensions"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.362,
+            0.896,
+            0.437
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Poisson processes in multiple dimensions are defined analogously to the 1D Poisson process: we just replace the notion of length with the notion of area or volume. For concreteness, we will now define 2D Poisson processes, after which it should also be clear by analogy how to define Poisson processes in higher dimensions."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.447,
+            0.897,
+            0.484
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition 13.3.1 (2D Poisson process). Events in the plane "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbb { R } ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " are a 2D Poisson process with intensity λ if the following conditions hold:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 9,
+          "bbox": [
+            0.175,
+            0.502,
+            0.868,
+            0.549
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.175,
+                0.502,
+                0.848,
+                0.52
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. The number of events in a region A is distributed "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Pois (\\lambda \\cdot  area (A))"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.175,
+                0.531,
+                0.868,
+                0.549
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. The numbers of events in disjoint regions are independent of each other."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.103,
+            0.567,
+            0.896,
+            0.623
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As one might guess, conditioning, superposition, and thinning properties apply to 2D Poisson processes. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N ( A )"
+            },
+            {
+              "type": "text",
+              "content": " be the number of events in a region A, and let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B \\subseteq A"
+            },
+            {
+              "type": "text",
+              "content": " . Given "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N ( A ) = n"
+            },
+            {
+              "type": "text",
+              "content": " , the conditional distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N ( B )"
+            },
+            {
+              "type": "text",
+              "content": " is Binomial:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.314,
+            0.629,
+            0.685,
+            0.671
+          ],
+          "image_path": "images/page_589_equation_11.jpg",
+          "content": "N (B) | N (A) = n \\sim \\mathrm{Bin} \\left(n, \\frac {\\mathrm{area} (B)}{\\mathrm{area} (A)}\\right)."
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.674,
+            0.897,
+            0.789
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Conditional on the total number of events in the larger region "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A ,"
+            },
+            {
+              "type": "text",
+              "content": " the probability of an event falling into a subregion is proportional to the area of the subregion; thus the locations of the events are conditionally Uniform, and we can generate a 2D Poisson process in A by first generating the number of events "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N ( A ) \\sim \\operatorname { P o i s } ( \\lambda \\cdot \\operatorname { a r e a } ( A ) )"
+            },
+            {
+              "type": "text",
+              "content": " and then placing the events uniformly at random in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A ."
+            },
+            {
+              "type": "text",
+              "content": " Figure 13.7 shows simulated 2D Poisson processes in the square "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ 0 , 5 ] \\times [ 0 , 5 ]"
+            },
+            {
+              "type": "text",
+              "content": " for intensities "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda = 1 , 2 , 5"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.797,
+            0.896,
+            0.854
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As in the 1D case, the superposition of independent 2D Poisson processes is a 2D Poisson process, and the intensities add. We can also thin a 2D Poisson process to get independent 2D Poisson processes."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.863,
+            0.896,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "One property of 1D Poisson processes for which we haven’t asserted a higherdimensional analog is the count-time duality. The next example, the last in this chapter, will lead us to a spatial analog: a count-distance duality."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 590,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "574"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.118,
+            0.074,
+            0.888,
+            0.26
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.118,
+                0.074,
+                0.888,
+                0.26
+              ],
+              "image_path": "images/page_590_image_2.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.285,
+            0.249,
+            0.301
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 13.7"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.303,
+            0.79,
+            0.323
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Simulated 2D Poisson process in the square "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ 0 , 5 ] \\times [ 0 , 5 ]"
+            },
+            {
+              "type": "text",
+              "content": " , for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda = 1 , 2 , 5 ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.351,
+            0.895,
+            0.406
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 13.3.2 (Nearest star). Stars in a certain universe are distributed according to a 3D Poisson process with intensity λ. If you live in this universe, what is the distribution of the distance from you to the nearest star?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.105,
+            0.418,
+            0.196,
+            0.433
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.446,
+            0.897,
+            0.56
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In a 3D Poisson process with intensity λ, the number of events in a region of space V is Poisson with mean λ·volume(V ). Let R be the distance from you to the nearest star. The key observation is that in order for the event "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R > r"
+            },
+            {
+              "type": "text",
+              "content": " to occur, there must be no stars within a sphere of radius r around you; in fact, these two events are equivalent. For any "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r > 0"
+            },
+            {
+              "type": "text",
+              "content": " , let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N _ { r }"
+            },
+            {
+              "type": "text",
+              "content": " be the number of events within radius r of you, so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\begin{array} { r } { N _ { r } \\sim \\mathrm { P o i s } ( \\lambda \\cdot \\frac { 4 } { 3 } \\pi r ^ { 3 } ) } \\end{array}"
+            },
+            {
+              "type": "text",
+              "content": " . Then we have a count-distance duality:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.33,
+            0.576,
+            0.669,
+            0.594
+          ],
+          "image_path": "images/page_590_equation_8.jpg",
+          "content": "R > r \\text {is the same event as} N _ {r} = 0,"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.104,
+            0.611,
+            0.206,
+            0.628
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Therefore,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.333,
+            0.627,
+            0.666,
+            0.65
+          ],
+          "image_path": "images/page_590_equation_10.jpg",
+          "content": "P (R > r) = P (N _ {r} = 0) = e ^ {- \\frac {4}{3} \\lambda \\pi r ^ {3}},"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.104,
+            0.659,
+            0.429,
+            0.677
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "which gives that the CDF of R is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.38,
+            0.69,
+            0.619,
+            0.713
+          ],
+          "image_path": "images/page_590_equation_12.jpg",
+          "content": "P (R \\leq r) = 1 - e ^ {- \\frac {4}{3} \\lambda \\pi r ^ {3}},"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.729,
+            0.859,
+            0.748
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r > 0"
+            },
+            {
+              "type": "text",
+              "content": " (and 0 otherwise). This is a Weibull (see Example 6.5.5). Specifically,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.401,
+            0.762,
+            0.597,
+            0.803
+          ],
+          "image_path": "images/page_590_equation_14.jpg",
+          "content": "R \\sim \\mathrm{Wei} \\left(\\frac {4 \\pi \\lambda}{3}, 3\\right)."
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.102,
+            0.825,
+            0.897,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Poisson processes have numerous extensions, some of which are explored in the exercises. We can allow λ to vary as a function of time or space instead of remaining constant; this is called an inhomogeneous Poisson process. We can allow λ to be a random variable; this is called a Cox process. Finally, we can allow the rate to increase by λ after each successive arrival; this is called a Yule process."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 591,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.264,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Poisson processes"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "575"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.112,
+            0.258,
+            0.132
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "13.4 Recap"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.152,
+            0.896,
+            0.304
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A Poisson process in one dimension is a sequence of arrivals such that the number of arrivals in any interval is Poisson (with mean proportional to the length of the interval) and disjoint intervals have independent numbers of arrivals. Some operations that we can perform with Poisson processes are conditioning, superposition, and thinning. Conditioning on the total number of arrivals in an interval allows us to view the arrivals as independent Uniforms on the interval. Superposition and thinning are complementary, and they allow us to split and merge Poisson processes when convenient. All of these properties have analogs for higher dimensions."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.314,
+            0.895,
+            0.351
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Poisson processes tie together many of the named distributions we have studied in this book:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 5,
+          "bbox": [
+            0.099,
+            0.364,
+            0.892,
+            0.506
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.099,
+                0.364,
+                0.41,
+                0.382
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Poisson for the arrival counts,"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.099,
+                0.395,
+                0.779,
+                0.413
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Exponential and Gamma for the interarrival times and arrival times,"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.099,
+                0.426,
+                0.469,
+                0.444
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Binomial for the conditional counts,"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.099,
+                0.456,
+                0.694,
+                0.475
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Uniform and (scaled) Beta for the conditional arrival times,"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 10,
+              "bbox": [
+                0.099,
+                0.487,
+                0.892,
+                0.506
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Geometric and Negative Binomial for the discrete waiting times for special arrivals."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.518,
+            0.895,
+            0.593
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Poisson processes are also especially amenable to story proofs. A problem-solving strategy we used several times in this chapter is to embed r.v.s into a Poisson process in the hopes of discovering a story proof, even when the original problem appears to be unrelated to Poisson processes."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.605,
+            0.895,
+            0.662
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Poisson processes unite two of the important themes of this book, named distributions and stories, in a natural way. We think it is fitting to end with a topic that weaves together the story threads from throughout the book."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 13,
+          "bbox": [
+            0.105,
+            0.746,
+            0.206,
+            0.764
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "13.5 R"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 14,
+          "bbox": [
+            0.105,
+            0.786,
+            0.32,
+            0.805
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "1D Poisson process"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.102,
+            0.825,
+            0.897,
+            0.921
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In Chapter 5, we discussed how to simulate a specified number of arrivals from a one-dimensional Poisson process by using the fact that the interarrival times are i.i.d. Exponentials. In this chapter, Story 13.2.4 tells us how to simulate a Poisson process within a specified interval (0, L]. We first generate the number of arrivals N(L), which is distributed Pois(λL). Conditional on N(L) = n, the arrival times"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

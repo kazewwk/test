@@ -1,0 +1,2537 @@
+{
+  "pages": [
+    {
+      "page_idx": 528,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "512"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.069,
+            0.895,
+            0.106
+          ],
+          "content": "the importance of a page not only by how many pages link to it, but also by the importance of those pages."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.117,
+            0.896,
+            0.193
+          ],
+          "content": "Consider the web as a directed network—which is what it is. Each page on the web is a node, and links between nodes represent links between pages. For example, suppose for simplicity that the web only has 4 pages, connected as shown in the figure below."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.391,
+            0.206,
+            0.612,
+            0.336
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  1[\"1\"] <--> 2[\"2\"]\n  1[\"1\"] <--> 3[\"3\"]\n  2[\"2\"] <--> 3[\"3\"]\n  2[\"2\"] <--> 4[\"4\"]\n  3[\"3\"] --> 4[\"4\"]\n```",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_528_image_4.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.354,
+            0.248,
+            0.369
+          ],
+          "level": 2,
+          "content": "FIGURE 11.5"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.372,
+            0.347,
+            0.388
+          ],
+          "content": "It’s a small web after all."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.406,
+            0.896,
+            0.482
+          ],
+          "content": "Imagine someone randomly surfing the web, starting at some page and then randomly clicking links to go from one page to the next (with equal probabilities for all links on the current page). The idea of PageRank is to measure the importance of a page by the long-run fraction of time spent at that page."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.492,
+            0.897,
+            0.585
+          ],
+          "content": "Of course, some pages may have no outgoing links at all, such as page 4 above. When the web surfer encounters such a page, rather than despairing they open up a new browser window and visits a uniformly random page. Thus a page with no links is converted to a page that links to every page, including itself. For the example above, the resulting transition matrix is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.353,
+            0.6,
+            0.645,
+            0.68
+          ],
+          "content": "Q = \\left( \\begin{array}{c c c c} 0 & 1 / 2 & 0 & 1 / 2 \\\\ 1 / 2 & 0 & 1 / 2 & 0 \\\\ 0 & 0 & 0 & 1 \\\\ 1 / 4 & 1 / 4 & 1 / 4 & 1 / 4 \\end{array} \\right).",
+          "image_source": "images/page_528_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.703,
+            0.896,
+            0.778
+          ],
+          "content": "In general, let M be the number of pages on the web, let $Q$ be the M by M transition matrix of the chain described above, and let s be the stationary distribution (assuming it exists and is unique). Think of $s _ { j }$ as a measure of how important page $j$ is. Intuitively, the equation"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.434,
+            0.779,
+            0.564,
+            0.817
+          ],
+          "content": "s _ {j} = \\sum_ {i} s _ {i} q _ {i j}",
+          "image_source": "images/page_528_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.825,
+            0.897,
+            0.921
+          ],
+          "content": "says that the score of page $j$ should be based not only on how many other pages link to it, but on their scores. Furthermore, the “voting power” of a page gets diluted if it has a lot of outgoing links: it counts for more if page i’s only link is to page $j$ (so that $q _ { i j } = 1 )$ than if page i has thousands of links, one of which happens to be to page j."
+        }
+      ]
+    },
+    {
+      "page_idx": 529,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.039,
+            0.238,
+            0.053
+          ],
+          "content": "Markov chains"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "513"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.201
+          ],
+          "content": "It is not clear that a unique stationary distribution exists for this chain, since it may not be irreducible and aperiodic. Even if it is irreducible and aperiodic, convergence to the stationary distribution could be very slow since the web is so immense. To address these issues, suppose that before each move, the web surfer flips a coin with probability α of Heads. If Heads, the web surfer clicks a random link from the current page; if Tails, the web surfer teleports to a uniformly random page. The resulting chain has the Google transition matrix"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.393,
+            0.215,
+            0.607,
+            0.253
+          ],
+          "content": "G = \\alpha Q + (1 - \\alpha) \\frac {J}{M},",
+          "image_source": "images/page_529_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.266,
+            0.897,
+            0.417
+          ],
+          "content": "where J is the M by M matrix of all 1’s. Note that the row sums of G are 1 and that all entries are positive, so G is a valid transition matrix for an irreducible, aperiodic Markov chain. This means there is a unique stationary distribution s, called PageRank, and the chain will converge to it! The choice of α is an important consideration; choosing α close to 1 makes sense to respect the structure of the web as much as possible, but there is a tradeoff since it turns out that smaller values of α make the chain converge much faster. As a compromise, the original recommendation of Brin and Page was α = 0.85."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.428,
+            0.896,
+            0.522
+          ],
+          "content": "PageRank is conceptually nice, but computing it sounds extremely difficult, considering that sG = s could be a system of 100 billion equations in 100 billion unknowns. Instead of thinking of this as a massive algebra problem, we can use the Markov chain interpretation: for any starting distribution t, $\\mathbf { t } G ^ { n } \\to \\mathbf { s } { \\mathrm { ~ a s ~ } } n \\to \\infty$ . And tG is easier to compute than it might seem at first:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.374,
+            0.537,
+            0.625,
+            0.573
+          ],
+          "content": "\\mathbf {t} G = \\alpha (\\mathbf {t} Q) + \\frac {1 - \\alpha}{M} (\\mathbf {t} J),",
+          "image_source": "images/page_529_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.587,
+            0.896,
+            0.702
+          ],
+          "content": "where computing the first term isn’t too hard since Q is very sparse (mostly $\\mathrm { 0 ^ { \\circ } s ) }$ and computing the second term is easy since tJ is a vector of all 1’s. Then tG becomes the new t, and we can compute $\\mathbf { t } G ^ { 2 } = ( \\mathbf { t } G ) G$ , etc., until the sequence appears to have converged (though it is hard to know that it has converged). This gives an approximation to PageRank, and has an intuitive interpretation as the distribution of where the web surfer is after a large number of steps."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.785,
+            0.332,
+            0.806
+          ],
+          "level": 2,
+          "content": "11.4 Reversibility"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.825,
+            0.896,
+            0.92
+          ],
+          "content": "We have seen that the stationary distribution of a Markov chain is extremely useful for understanding its long-run behavior. Unfortunately, in general it may be computationally difficult to find the stationary distribution when the state space is large. This section addresses an important special case where working with eigenvalue equations for large matrices can be avoided."
+        }
+      ]
+    },
+    {
+      "page_idx": 530,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "514"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.067,
+            0.896,
+            0.107
+          ],
+          "content": "Definition 11.4.1 (Reversibility). Let $Q   =   ( q _ { i j } )$ be the transition matrix of a Markov chain. Suppose there is $\\mathbf { s } = ( s _ { 1 } , \\ldots , s _ { M } )$ with $\\textstyle s _ { i } \\geq 0 , \\sum _ { i } s _ { i } = 1$ , such that"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.44,
+            0.123,
+            0.559,
+            0.141
+          ],
+          "content": "s _ {i} q _ {i j} = s _ {j} q _ {j i}",
+          "image_source": "images/page_530_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.152,
+            0.896,
+            0.19
+          ],
+          "content": "for all states $i$ and $j .$ This equation is called the reversibility or detailed balance condition, and we say that the chain is reversible with respect to s if it holds."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.199,
+            0.896,
+            0.313
+          ],
+          "content": "The term “reversible” comes from the fact that a reversible chain, started according to its stationary distribution, behaves in the same way regardless of whether time is run forwards or backwards. If you record a video of a reversible chain, started according to its stationary distribution, and then show the video to a friend, either in the normal way or with time reversed, your friend will not be able to determine from watching the video whether time is running forwards or backwards."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.321,
+            0.897,
+            0.473
+          ],
+          "content": "As discussed after Definition 11.3.1, we can think about the stationary distribution of a Markov chain intuitively in terms of a system consisting of a large number of particles independently bouncing around according to the transition probabilities. In the long run, the proportion of particles in any state $j$ is the stationary probability of state $j ,$ and the flow of particles out of state $j$ is counterbalanced by the flow of particles into state $j .$ To see this in more detail, let $n$ be the number of particles and s be a probability vector such that $s _ { j }$ is the current proportion of particles at state $j .$ . By definition, s is the stationary distribution of the chain if and only if"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.34,
+            0.483,
+            0.659,
+            0.525
+          ],
+          "content": "s _ {j} = \\sum_ {i} s _ {i} q _ {i j} = s _ {j} q _ {j j} + \\sum_ {i: i \\neq j} s _ {i} q _ {i j},",
+          "image_source": "images/page_530_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.535,
+            0.58,
+            0.554
+          ],
+          "content": "for all states $j .$ This equation can be rewritten as"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.566,
+            0.622,
+            0.607
+          ],
+          "content": "n s _ {j} (1 - q _ {j j}) = \\sum_ {i: i \\neq j} n s _ {i} q _ {i j}.",
+          "image_source": "images/page_530_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.617,
+            0.896,
+            0.751
+          ],
+          "content": "The left-hand side is the approximate number of particles that will exit from state $j$ on the next step, since there are $n s _ { j }$ particles at state $j ,$ each of which will stay at $j$ with probability $q _ { j j }$ and leave with probability $1 - q _ { j j }$ . The right-hand side is the approximate number of particles that will enter state $j$ on the next step, since for each $i \\neq j$ there are $n s _ { i }$ particles at state $i ,$ each of which will enter state $j$ with probability $q _ { i j }$ . So there is a balance between particles leaving state $j$ and particles entering state $j$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.758,
+            0.896,
+            0.835
+          ],
+          "content": "The reversibility condition imposes a much more stringent form of balance, in which for each pair of states $i , j$ with $i \\neq j$ , the flow of particles from state $i$ to state $j$ is counterbalanced by the flow of particles from state $j$ to state i. To see this, write the reversibility equation for states $i$ and $j$ as"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.424,
+            0.851,
+            0.575,
+            0.869
+          ],
+          "content": "n s _ {i} q _ {i j} = n s _ {j} q _ {j i}.",
+          "image_source": "images/page_530_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.881,
+            0.896,
+            0.919
+          ],
+          "content": "The left-hand side is the approximate number of particles that will go from state $i$ to state $j$ on the next step, since there are $n s _ { i }$ particles at state $i ,$ each of which"
+        }
+      ]
+    },
+    {
+      "page_idx": 531,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.039,
+            0.237,
+            0.053
+          ],
+          "content": "Markov chains"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "515"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.067,
+            0.896,
+            0.144
+          ],
+          "continues_prev": true,
+          "content": "has probability $q _ { i j }$ of going to state $j$ . Similarly, the right-hand side is the approximate number of particles that will go from state $i$ to state $j$ on the next step. So reversibility says that there is a balance between particles going from state i to state $j .$ , and particles going from state $j$ to state $i .$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.152,
+            0.896,
+            0.209
+          ],
+          "content": "Given a transition matrix, if we can find a probability vector s that satisfies the reversibility condition, then s is automatically a stationary distribution. This should not be surprising, in light of the above discussion."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.217,
+            0.896,
+            0.293
+          ],
+          "content": "Proposition 11.4.2 (Reversible implies stationary). Suppose that $Q   =   ( q _ { i j } )$ is the transition matrix of a Markov chain that is reversible with respect to a nonnegative vector $\\mathbf { s } = ( s _ { 1 } , \\ldots , s _ { M } )$ whose components sum to 1. Then s is a stationary distribution of the chain."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.311,
+            0.259,
+            0.33
+          ],
+          "content": "Proof. We have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.321,
+            0.327,
+            0.677,
+            0.366
+          ],
+          "content": "\\sum_ {i} s _ {i} q _ {i j} = \\sum_ {i} s _ {j} q _ {j i} = s _ {j} \\sum_ {i} q _ {j i} = s _ {j},",
+          "image_source": "images/page_531_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.372,
+            0.836,
+            0.392
+          ],
+          "content": "where the last equality is because each row sum of $Q$ is 1. So s is stationary."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.408,
+            0.896,
+            0.54
+          ],
+          "content": "This is a powerful result because it is often easier to verify the reversibility condition than it is to solve the entire system of equations $\\mathbf { s } Q = \\mathbf { s }$ . However, in general we may not know in advance whether it is possible to find s satisfying the reversibility condition, and even when it is possible, it may take a lot of effort to find an s that works. In the remainder of this section, we look at three types of Markov chains where it is possible to find an s that satisfies the reversibility condition. Such Markov chains are called reversible."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.55,
+            0.896,
+            0.608
+          ],
+          "content": "First, if $Q$ is a symmetric matrix, then the stationary distribution is uniform over the state space: $\\mathbf { s } = ( 1 / M , 1 / M , \\ldots , 1 / M )$ . It is easy to see that if $q _ { i j } = q _ { j i }$ , then the reversibility condition $s _ { i } q _ { i j } = s _ { j } q _ { j i }$ is satisfied when $s _ { i } = s _ { j }$ for all i and $j$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.615,
+            0.896,
+            0.654
+          ],
+          "content": "This is a special case of a more general fact, stated below: if each column of $Q$ sums to 1, then the stationary distribution is uniform over the state space."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.662,
+            0.896,
+            0.739
+          ],
+          "content": "Proposition 11.4.3. If each column of the transition matrix $Q$ sums to 1, then the uniform distribution over all states, $( 1 / M , 1 / M , \\ldots , 1 / M )$ , is a stationary distribution. (A nonnegative matrix such that the row sums and the column sums are all equal to 1 is called a doubly stochastic matrix.)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.755,
+            0.896,
+            0.794
+          ],
+          "content": "Proof. Assuming each column sums to 1, the row vector $\\mathbf { v } = ( 1 , 1 , \\ldots , 1 )$ satisfies $\\mathbf { v } Q = \\mathbf { v }$ . It follows that $( 1 / M , 1 / M , \\ldots , 1 / M )$ is stationary. \u0004"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.811,
+            0.896,
+            0.849
+          ],
+          "content": "Second, if the Markov chain is a random walk on an undirected network, then there is a simple formula for the stationary distribution."
+        }
+      ]
+    },
+    {
+      "page_idx": 532,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "516"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.201
+          ],
+          "content": "Example 11.4.4 (Random walk on an undirected network). A network is a collection of nodes joined by edges; the network is undirected if edges can be traversed in either direction, meaning there are no one-way streets. Suppose a wanderer randomly traverses the edges of an undirected network. From a node $i ,$ the wanderer randomly picks any of the edges at $i ,$ with equal probabilities, and then traverses the chosen edge. For example, in the network shown below, from node 3 the wanderer goes to node 1 or node 2, with probability 1/2 each."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.396,
+            0.219,
+            0.6,
+            0.427
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph TD\n  1[\"1\"] --> 2[\"2\"]\n  3[\"3\"] --> 4[\"4\"]\n  5[\"5\"] --> n4[\"4\"]\n  4[\"4\"] --> n1[\"1\"]\n```",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_532_image_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.458,
+            0.897,
+            0.534
+          ],
+          "content": "The degree of a node is the number of edges attached to it, and the degree sequence of a network with nodes $1 , 2 , \\ldots , n$ is the vector $( d _ { 1 } , \\ldots , d _ { n } )$ listing all the degrees, where $d _ { j }$ is the degree of node $j .$ An edge from a node to itself is allowed (such an edge is called a self-loop), and counts 1 toward the degree of that node."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.543,
+            0.876,
+            0.562
+          ],
+          "content": "For example, the network above has degree sequence d = (4, 3, 2, 3, 2). Note that"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.437,
+            0.577,
+            0.56,
+            0.598
+          ],
+          "content": "d _ {i} q _ {i j} = d _ {j} q _ {j i}",
+          "image_source": "images/page_532_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.611,
+            0.896,
+            0.705
+          ],
+          "content": "for all $i , j ,$ , since $q _ { i j }$ is $1 / d _ { i } { \\mathrm { ~ i f ~ } } \\{ i , j \\}$ is an edge and 0 otherwise, for $i \\neq j$ . Therefore, by Proposition 11.4.2, the stationary distribution is proportional to the degree sequence. Intuitively, the nodes with the highest degrees are the most well-connected, so it makes sense that the chain spends the most time in these states in the long run. In the example above, this says that"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.374,
+            0.716,
+            0.622,
+            0.758
+          ],
+          "content": "\\mathbf {s} = \\left(\\frac {4}{1 4}, \\frac {3}{1 4}, \\frac {2}{1 4}, \\frac {3}{1 4}, \\frac {2}{1 4}\\right)",
+          "image_source": "images/page_532_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.77,
+            0.589,
+            0.788
+          ],
+          "content": "is the stationary distribution for the random walk."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.798,
+            0.897,
+            0.892
+          ],
+          "content": "Exercise 20 explores random walk on a weighted undirected network; each edge has a weight assigned to it, and the wanderer chooses where to go from i with probabilities proportional to the weights on the available edges. It turns out that this is a reversible Markov chain. More surprisingly, every reversible Markov chain can be represented as random walk on a weighted undirected network! \u0003"
+        }
+      ]
+    },
+    {
+      "page_idx": 533,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.109,
+            0.039,
+            0.236,
+            0.053
+          ],
+          "content": "Markov chains"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.862,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": "517"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.068,
+            0.793,
+            0.086
+          ],
+          "content": "Here is a concrete example of a random walk on an undirected network."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.096,
+            0.896,
+            0.133
+          ],
+          "content": "Example 11.4.5 (Knight on a chessboard). Consider a knight randomly moving around on $\\mathrm { ~ a ~ } 4 \\times 4$ chessboard."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.348,
+            0.147,
+            0.648,
+            0.351
+          ],
+          "sub_type": "text_image",
+          "content": "4\n3\n2\n1\nA\tB\tC\tD",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_533_image_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.38,
+            0.894,
+            0.493
+          ],
+          "content": "The 16 squares are labeled in a grid, e.g., the knight is currently at the square B3, and the upper left square is A4. Each move of the knight is an L-shaped jump: the knight moves two squares horizontally followed by one square vertically, or vice versa. For example, from B3 the knight can move to A1, C1, D2, or D4; from A4 it can move to B2 or C3. Note that from a light square, the knight always moves to a dark square and vice versa."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.502,
+            0.894,
+            0.558
+          ],
+          "content": "Suppose that at each step, the knight moves randomly, with each possibility equally likely. This creates a Markov chain where the states are the 16 squares. Compute the stationary distribution of the chain."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.108,
+            0.569,
+            0.194,
+            0.586
+          ],
+          "level": 2,
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.596,
+            0.894,
+            0.728
+          ],
+          "content": "There are only three types of squares on the board: 4 center squares, 4 corner squares (such as A4), and 8 edge squares (such as B4; exclude corner squares from being considered edge squares). We can consider the board to be an undirected network where two squares are connected by an edge if they are accessible via a single knight’s move. Then a center square has degree 4, a corner square has degree 2, and an edge square has degree 3, so their stationary probabilities are 4a, 2a, 3a respectively for some a."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.738,
+            0.894,
+            0.813
+          ],
+          "content": "To find $a ,$ count the number of squares of each type to get $4 a \\cdot 4 + 2 a \\cdot 4 + 3 a \\cdot 8 = 1$ giving $a = 1 / 4 8$ . Thus, each center square has stationary probability $4 / 4 8 = 1 / 1 2$ each corner square has stationary probability $2 / 4 8 = 1 / 2 4$ , and each edge square has stationary probability $3 / 4 8 = 1 / 1 6$ \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.822,
+            0.894,
+            0.877
+          ],
+          "content": "Third and finally, if in each time period a Markov chain can only move one step to the left, one step to the right, or stay in place, then it is called a birth-death chain. All birth-death chains are reversible."
+        }
+      ]
+    },
+    {
+      "page_idx": 534,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "518"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.201
+          ],
+          "content": "Example 11.4.6 (Birth-death chain). A birth-death chain on states $\\{ 1 , 2 , \\ldots , M \\}$ is a Markov chain with transition matrix $Q = ( q _ { i j } )$ such that $q_{ij} > 0   if   |i - j| = 1$ and $q _ { i j }   =   0   \\mathrm { ~ i f ~ }   | i   -   j |   \\geq   2$ . This says it’s possible to go one step to the left and possible to go one step to the right (except at boundaries) but impossible to jump further in one step. The name stems from applications to the growth or decline of a population, where a step to the right is thought of as a birth and a step to the left is thought of as a death in the population."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.21,
+            0.896,
+            0.267
+          ],
+          "content": "For example, the chain shown below is a birth-death chain if the labeled transitions have positive probabilities, except for the loops from a state to itself, which are allowed to have 0 probability."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.169,
+            0.324,
+            0.892,
+            0.398
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  1[\"1\"] -->|\"q1,1\"| 2[\"2\"]\n  n2[\"2\"] -->|\"q2,1\"| n1[\"1\"]\n  n2 -->|\"q1,2\"| 3[\"3\"]\n  n3[\"3\"] -->|\"q3,2\"| n2\n  n3 -->|\"q2,3\"| 4[\"4\"]\n  n4[\"4\"] -->|\"q4,3\"| n3\n  n4 -->|\"q3,4\"| 5[\"5\"]\n  n5[\"5\"] -->|\"q5,4\"| n4\n  n5 -->|\"q4,5\"| n4\n  n5 -->|\"q5,5\"| n5\n```",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_534_image_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.467,
+            0.896,
+            0.524
+          ],
+          "content": "We will now show that any birth-death chain is reversible, and construct the stationary distribution. Let $s _ { 1 }$ be a positive number, to be specified later. Since we want $s _ { \\mathrm { 1 } } q _ { \\mathrm { 1 2 } } = s _ { \\mathrm { 2 } } q _ { \\mathrm { 2 1 } }$ , let"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.426,
+            0.525,
+            0.572,
+            0.544
+          ],
+          "content": "s _ {2} = s _ {1} q _ {1 2} / q _ {2 1}.",
+          "image_source": "images/page_534_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.549,
+            0.467,
+            0.568
+          ],
+          "content": "Then since we want $s _ { \\mathrm { 2 } } q _ { \\mathrm { 2 3 } } = s _ { \\mathrm { 3 } } q _ { \\mathrm { 3 2 } }$ , let"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.332,
+            0.578,
+            0.666,
+            0.598
+          ],
+          "content": "s _ {3} = s _ {2} q _ {2 3} / q _ {3 2} = s _ {1} q _ {1 2} q _ {2 3} / (q _ {3 2} q _ {2 1}).",
+          "image_source": "images/page_534_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.607,
+            0.363,
+            0.625
+          ],
+          "content": "Continuing in this way, let"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.374,
+            0.632,
+            0.625,
+            0.669
+          ],
+          "content": "s _ {j} = \\frac {s _ {1} q _ {1 2} q _ {2 3} \\dots q _ {j - 1 , j}}{q _ {j , j - 1} q _ {j - 1 , j - 2} \\dots q _ {2 1}},",
+          "image_source": "images/page_534_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.674,
+            0.896,
+            0.734
+          ],
+          "content": "for all states $j$ with $2 \\leq j \\leq M$ . Choose $s _ { 1 }$ so that the $s _ { j }$ sum to 1. Then the chain is reversible with respect to s, since $q_{ij} = q_{ji} = 0   if   |i - j| \\geq 2$ and by construction $s_{i}q_{ij} = s_{j}q_{ji}   if   |i - j| = 1$ . Thus, s is the stationary distribution. \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.74,
+            0.896,
+            0.796
+          ],
+          "content": "The Ehrenfest chain is a birth-death chain that can be used as a simple model for the diffusion of gas molecules. The stationary distribution turns out to be a Binomial distribution."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.806,
+            0.896,
+            0.921
+          ],
+          "content": "Example 11.4.7 (Ehrenfest). There are two containers with a total of M distinguishable particles. Transitions are made by choosing a random particle and moving it from its current container into the other container. Initially, all of the particles are in the second container. Let $X _ { n }$ be the number of particles in the first container at time $n ,$ so $X _ { 0 } = 0$ and the transition from $X _ { n }$ to $X _ { n + 1 }$ is done as described above. This is a periodic Markov chain with state space $\\{ 0 , 1 , \\ldots , M \\}$"
+        }
+      ]
+    },
+    {
+      "page_idx": 535,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.039,
+            0.238,
+            0.053
+          ],
+          "content": "Markov chains"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "519"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.316,
+            0.09,
+            0.688,
+            0.248
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_535_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.27,
+            0.894,
+            0.325
+          ],
+          "content": "As illustrated above, the first container has $X _ { n }$ particles and the second has $M   -   X _ { n }$ particles. We will use the reversibility condition to show that $\\mathbf { s } = ( s _ { 0 } , s _ { 1 } , \\ldots , s _ { M } )$ with"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.41,
+            0.329,
+            0.589,
+            0.373
+          ],
+          "content": "s _ {i} = \\binom{M}{i} \\left(\\frac {1}{2}\\right) ^ {M}",
+          "image_source": "images/page_535_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.389,
+            0.774,
+            0.408
+          ],
+          "content": "is the stationary distribution. Note that this is the $\\mathrm { B i n } ( M , 1 / 2 )$ PMF."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.424,
+            0.884,
+            0.444
+          ],
+          "content": "Let $s _ { i }$ be as claimed, and check that $s _ { i } q _ { i j } = s _ { j } q _ { j i }$ . If $j = i + 1$ (with $i < M )$ , then"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.13,
+            0.464,
+            0.864,
+            0.511
+          ],
+          "content": "s _ {i} q _ {i j} = \\binom{M}{i} \\left(\\frac {1}{2}\\right) ^ {M} \\frac {M - i}{M} = \\frac {M !}{(M - i) ! i !} \\left(\\frac {1}{2}\\right) ^ {M} \\frac {M - i}{M} = \\binom{M - 1}{i} \\left(\\frac {1}{2}\\right) ^ {M},",
+          "image_source": "images/page_535_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.13,
+            0.523,
+            0.868,
+            0.569
+          ],
+          "content": "s _ {j} q _ {j i} = \\binom{M}{j} \\left(\\frac {1}{2}\\right) ^ {M} \\frac {j}{M} = \\frac {M !}{(M - j) ! j !} \\left(\\frac {1}{2}\\right) ^ {M} \\frac {j}{M} = \\binom{M - 1}{j - 1} \\left(\\frac {1}{2}\\right) ^ {M} = s _ {i} q _ {i j}.",
+          "image_source": "images/page_535_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.59,
+            0.894,
+            0.629
+          ],
+          "content": "By a similar calculation, if $j = i - 1$ (with $i > 0 )$ , then $s _ { i } q _ { i j } = s _ { j } q _ { j i }$ . For all other values of i and $j ,   q _ { i j } = q _ { j i } = 0$ . Therefore, s is stationary."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.642,
+            0.895,
+            0.734
+          ],
+          "content": "The Binomial was a natural guess for the stationary distribution because after running the Markov chain for a long time, each particle is about equally likely to be in either container. However, the PMF does not converge to a Binomial since the chain has period 2, with $X _ { n }$ guaranteed to be even when n is even, and odd when n is odd."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.752,
+            0.894,
+            0.825
+          ],
+          "content": "Happily, it turns out that another interpretation of the stationary distribution remains valid here: $s _ { i }$ is the long-run proportion of time that the chain spends in state i. More precisely, letting $I _ { k }$ be the indicator of the chain being in state i at time k, it can be shown that"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.434,
+            0.831,
+            0.567,
+            0.881
+          ],
+          "content": "\\frac {1}{n} \\sum_ {k = 0} ^ {n - 1} I _ {k} \\rightarrow s _ {i}",
+          "image_source": "images/page_535_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.898,
+            0.394,
+            0.916
+          ],
+          "content": "as $n \\to \\infty$ , with probability 1."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.873,
+            0.898,
+            0.894,
+            0.913
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_535_image_14.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 536,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "520"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.109,
+            0.257,
+            0.129
+          ],
+          "level": 2,
+          "content": "11.5 Recap"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.147,
+            0.895,
+            0.202
+          ],
+          "content": "A Markov chain is a sequence of r.v.s $X _ { 0 } , X _ { 1 } , X _ { 2 } , \\ldots$ . satisfying the Markov property, which states that given the present, the past and future are conditionally independent:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.131,
+            0.216,
+            0.868,
+            0.237
+          ],
+          "content": "P (X _ {n + 1} = j | X _ {n} = i, X _ {n - 1} = i _ {n - 1}, \\dots , X _ {0} = i _ {0}) = P (X _ {n + 1} = j | X _ {n} = i) = q _ {i j}.",
+          "image_source": "images/page_536_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.248,
+            0.896,
+            0.344
+          ],
+          "content": "The transition matrix $Q = ( q _ { i j } )$ gives the probabilities of moving from any state to any other state in one step. The ith row of the transition matrix is the conditional PMF of $X _ { n + 1 }$ given $X _ { n } = i .$ The nth power of the transition matrix gives the $n -$ step transition probabilities. If we specify initial conditions $s _ { i } = P ( X _ { 0 } = i )$ and let $\\mathbf { s } = ( s _ { 1 } , \\ldots , s _ { M } )$ , then the marginal PMF of $X _ { n }$ is $\\mathbf { s } Q ^ { n }$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.352,
+            0.896,
+            0.466
+          ],
+          "content": "States of a Markov chain can be classified as recurrent or transient: recurrent if the chain will return to the state over and over, and transient if it will eventually leave forever. States can also be classified according to their periods; the period of state i is the greatest common divisor of the numbers of steps it can take to return to $i ,$ starting from i. A chain is irreducible if it is possible to get from any state to any state in a finite number of steps, and aperiodic if each state has period 1."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.474,
+            0.896,
+            0.569
+          ],
+          "content": "A stationary distribution for a finite Markov chain is a PMF s such that $\\mathbf { s } Q = \\mathbf { s } .$ Under various conditions, the stationary distribution of a finite Markov chain exists and is unique, and the PMF of $X _ { n }$ converges to s as $n \\to \\infty$ . If state i has stationary probability $s _ { i } .$ then the expected time for the chain to return to $i ,$ starting from $i ,$ is $r _ { i } = 1 / s _ { i }$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.578,
+            0.896,
+            0.654
+          ],
+          "content": "If a PMF s satisfies the reversibility condition $s _ { i } q _ { i j } \\; = \\; s _ { j } q _ { j i }$ for all $i$ and $j ,$ it guarantees that s is a stationary distribution of the Markov chain with transition matrix $Q = ( q _ { i j } )$ . Markov chains for which there exists s satisfying the reversibility condition are called reversible. We discussed three types of reversible chains:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.671,
+            0.868,
+            0.705
+          ],
+          "content": "1. If the transition matrix is symmetric, then the stationary distribution is uniform over all states."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.718,
+            0.868,
+            0.753
+          ],
+          "content": "2. If the chain is a random walk on an undirected network, then the stationary distribution is proportional to the degree sequence, i.e.,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.461,
+            0.766,
+            0.579,
+            0.807
+          ],
+          "content": "s _ {j} = \\frac {d _ {j}}{\\sum_ {i} d _ {i}}.",
+          "image_source": "images/page_536_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.825,
+            0.87,
+            0.843
+          ],
+          "content": "3. If the chain is a birth-death chain, then the stationary distribution satisfies"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.397,
+            0.853,
+            0.642,
+            0.891
+          ],
+          "content": "s _ {j} = \\frac {s _ {1} q _ {1 2} q _ {2 3} \\cdots q _ {j - 1 , j}}{q _ {j , j - 1} q _ {j - 1 , j - 2} \\cdots q _ {2 1}}",
+          "image_source": "images/page_536_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.9,
+            0.842,
+            0.919
+          ],
+          "content": "for $j > 1$ , where $s _ { 1 }$ is solved for at the end to make $s _ { 1 } + \\dots + s _ { M } = 1$"
+        }
+      ]
+    },
+    {
+      "page_idx": 537,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.039,
+            0.238,
+            0.053
+          ],
+          "content": "Markov chains"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "521"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.107,
+            0.074,
+            0.896,
+            0.396
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"any distribution t for the initial state\"] -->|generate| B[\"X₀, X₁, X₂, ...\"]\n  C[\"stationary distribution s for the initial state\"] -->|generate| D[\"Y₀, Y₁, Y₂, ...\"]\n  B --> E[\"Xₙ = i\\n(given this event, past and future are independent)\"]\n  D --> F[\"Yₙ = i\\n(given this event, past and future are independent)\"]\n  E --> G[\"P(Xₙ = i) = (tQⁿ)i\"]\n  F --> H[\"P(Yₙ = i) = sᵢ\"]\n  G --> I[\"converges to sᵢ as n → ∞\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.104,
+                0.412,
+                0.249,
+                0.427
+              ],
+              "content": "FIGURE 11.6"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_537_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.431,
+            0.897,
+            0.562
+          ],
+          "content": "Given a transition matrix Q and a distribution t over the states, we can generate a Markov chain $X _ { 0 } , X _ { 1 } , \\ldots$ by choosing $X _ { 0 }$ according to t and then running the chain according to the transition probabilities. An important event is $X _ { n } = i$ , the event that the chain is visiting state i at time n. We can then find the PMF of $X _ { n }$ in terms of $Q$ and t, and (under conditions discussed in the chapter) the PMF will converge to the stationary distribution s. If instead we start the chain out according to s, then the chain will stay stationary forever."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.591,
+            0.896,
+            0.704
+          ],
+          "content": "Figure 11.6 compares two ways to run a Markov chain with transition matrix $Q ;$ choosing the initial state according to an arbitrary distribution t over the states, or choosing the initial state according to the stationary distribution s. In the former case, the exact PMF after n steps can be found in terms of $Q$ and t, and the PMF converges to s (under some very general conditions discussed in this chapter). In the latter case, the chain is stationary forever."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.787,
+            0.205,
+            0.804
+          ],
+          "level": 2,
+          "content": "11.6 R"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.825,
+            0.321,
+            0.842
+          ],
+          "level": 2,
+          "content": "Matrix calculations"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.863,
+            0.896,
+            0.919
+          ],
+          "content": "Let’s do some calculations for the 4-state Markov chain in Example 11.1.5, as an example of working with transition matrices in R. First, we need to specify the transition matrix $Q .$ This is done with the matrix command: we type in the entries"
+        }
+      ]
+    },
+    {
+      "page_idx": 538,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "522"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.126
+          ],
+          "continues_prev": true,
+          "content": "of the matrix, row by row, as a long vector, and then we tell R the number of rows and columns in the matrix (nrow and ncol), as well as the fact that we typed in the entries by row (byrow=TRUE):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.104,
+            0.136,
+            0.702,
+            0.212
+          ],
+          "sub_type": "algorithm",
+          "content": "Q <- matrix(c(1/3,1/3,1/3,0,\n           0,0,1/2,1/2,\n           0,1,0,0,\n           1/2,0,0,1/2),nrow=4,ncol=4,byrow=TRUE)",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.222,
+            0.895,
+            0.26
+          ],
+          "content": "To obtain higher order transition probabilities, we can multiply Q by itself repeatedly. The matrix multiplication command in R is $\\% * \\%$ (not just \\*). So"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.104,
+            0.27,
+            0.286,
+            0.345
+          ],
+          "sub_type": "algorithm",
+          "content": "Q2 <- Q %\\*% Q\nQ3 <- Q2 %\\*% Q\nQ4 <- Q2 %\\*% Q2\nQ5 <- Q3 %\\*% Q2",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.356,
+            0.895,
+            0.395
+          ],
+          "content": "produces $Q ^ { 2 }$ through $Q ^ { 5 }$ . If we want to know the probability of going from state 3 to state 4 in exactly 5 steps, we can extract the (3, 4) entry of $Q ^ { 5 }$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.405,
+            0.187,
+            0.423
+          ],
+          "content": "Q5[3,4]"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.434,
+            0.807,
+            0.453
+          ],
+          "content": "This gives 0.229, agreeing with the value 11/48 shown in Example 11.1.5."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.464,
+            0.896,
+            0.558
+          ],
+          "content": "To compute a power $Q ^ { n }$ without directly doing repeated matrix multiplications, we can use the command Q $\\% \\sim \\%$ n after installing and loading the expm package. For example, Q %^% 42 yields $Q ^ { 4 2 }$ . By exploring the behavior of $Q ^ { n }$ as n grows, we can see Theorem 11.3.6 in action (and get a sense of how long it takes for the chain to get very close to its stationary distribution)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.569,
+            0.895,
+            0.626
+          ],
+          "content": "In particular, for n large each row of $Q ^ { n }$ is approximately (0.214, 0.286, 0.214, 0.286), so this is approximately the stationary distribution. Another way to obtain the stationary distribution numerically is to use"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.636,
+            0.233,
+            0.656
+          ],
+          "content": "eigen(t(Q))"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.666,
+            0.895,
+            0.722
+          ],
+          "content": "to compute the eigenvalues and eigenvectors of the transpose of $Q ;$ then the eigenvector corresponding to the eigenvalue 1 can be selected and normalized so that the components sum to 1."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.757,
+            0.275,
+            0.775
+          ],
+          "level": 2,
+          "content": "Gambler’s ruin"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.795,
+            0.895,
+            0.852
+          ],
+          "content": "To simulate from the gambler’s ruin chain from Example 11.2.6, we start by deciding the total amount of money N, the probability p of gambler A winning a given round, and the number of time periods nsim that we wish to simulate."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.103,
+            0.863,
+            0.224,
+            0.917
+          ],
+          "sub_type": "algorithm",
+          "content": "N <- 10\np <- 1/2\nnsim <- 80",
+          "captions": [],
+          "footnotes": []
+        }
+      ]
+    },
+    {
+      "page_idx": 539,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.109,
+            0.039,
+            0.236,
+            0.053
+          ],
+          "content": "Markov chains"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.862,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "523"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.068,
+            0.895,
+            0.125
+          ],
+          "content": "Next, we allocate a vector of length nsim called x, which will store the values of the Markov chain. For the initial condition, we set the first entry of x equal to 5; this gives both gamblers \\$5 to start with."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.105,
+            0.136,
+            0.29,
+            0.171
+          ],
+          "sub_type": "code",
+          "content": "```r\nx <- rep(0,nsim)\nx[1] <- 5\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.182,
+            0.895,
+            0.22
+          ],
+          "content": "Now we are ready to simulate the subsequent values of the Markov chain. This is achieved with the following block of code, which we will explain step by step."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.104,
+            0.231,
+            0.768,
+            0.38
+          ],
+          "sub_type": "code",
+          "content": "```txt\nfor (i in 2:nsim){\n    if (x[i-1]==0 || x[i-1]==N){\n        x[i] <- x[i-1]\n    }\n    else{\n        x[i] <- x[i-1] + sample(c(1,-1), 1, prob=c(p,1-p))\n    }\n}\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.391,
+            0.895,
+            0.466
+          ],
+          "content": "The first line and the outer set of braces constitute a for loop: for (i in 2:nsim) means that all the code inside the for loop will be executed over and over, with the value of i set to 2, then set to 3, then set to 4, all the way until i reaches the value nsim. Each pass through the loop represents one step of the Markov chain."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.476,
+            0.895,
+            0.59
+          ],
+          "content": "Inside the for loop, we first check to see whether the chain is already at one of the endpoints, 0 or N; we do this with an if statement. If the chain is already at 0 or N, then we set its new value equal to its previous value, since the chain is not allowed to escape 0 or N. Otherwise, if the chain is not at 0 or N, it is free to move left or right. We use the sample command to move to the right 1 unit or to the left 1 unit, with probabilities p and 1-p, respectively."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.6,
+            0.895,
+            0.636
+          ],
+          "content": "To see what path was taken by the Markov chain during our simulation, we can plot the values of x as a function of time:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.106,
+            0.648,
+            0.424,
+            0.667
+          ],
+          "sub_type": "code",
+          "content": "```txt\nplot(x, type='l', ylim=c(0,N))\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.676,
+            0.895,
+            0.712
+          ],
+          "content": "You should see a path that starts at 5 and bounces up and down before being absorbed into state 0 or state N."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.106,
+            0.748,
+            0.588,
+            0.766
+          ],
+          "level": 2,
+          "content": "Simulating from a finite-state Markov chain"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.786,
+            0.895,
+            0.841
+          ],
+          "content": "With a few modifications, we can simulate from an arbitrary Markov chain on a finite state space. For concreteness, we will illustrate how to simulate from the 4-state Markov chain in Example 11.1.5."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.853,
+            0.322,
+            0.871
+          ],
+          "content": "As above, we can type"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.106,
+            0.882,
+            0.424,
+            0.918
+          ],
+          "sub_type": "code",
+          "content": "```txt\nQ <- matrix(c(1/3,1/3,1/3,0,\n0,0,1/2,1/2,\n```",
+          "captions": [],
+          "footnotes": []
+        }
+      ]
+    },
+    {
+      "page_idx": 540,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "524"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.263,
+            0.069,
+            0.702,
+            0.106
+          ],
+          "sub_type": "code",
+          "content": "```csv\n0,1,0,0,\n1/2,0,0,1/2),nrow=4,ncol=4,byrow=TRUE)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.122,
+            0.439,
+            0.141
+          ],
+          "content": "to specify the transition matrix Q."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.156,
+            0.896,
+            0.23
+          ],
+          "content": "Next, we choose the number of states and the number of time periods to simulate, we allocate space for the results of the simulation, and we choose initial conditions for the chain. In this example, x[1] <- sample(1:M,1) says the initial distribution of the chain is uniform over all states."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.103,
+            0.247,
+            0.348,
+            0.322
+          ],
+          "sub_type": "code",
+          "content": "```r\nM <- nrow(Q)\nnsim <- 10^4\nx <- rep(0,nsim)\nx[1] <- sample(1:M,1)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.337,
+            0.897,
+            0.412
+          ],
+          "content": "For the simulation itself, we again use sample to choose a number from 1 to M. At time i, the chain was previously at state x[i-1], so we must use row x[i-1] of the transition matrix to determine the probabilities of sampling 1, 2, . . . , M. The notation Q[x[i-1],] denotes row x[i-1] of the matrix Q."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.103,
+            0.428,
+            0.577,
+            0.482
+          ],
+          "sub_type": "code",
+          "content": "```txt\nfor (i in 2:nsim){\n    x[i] <- sample(M, 1, prob=Q[x[i-1],])\n}\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.5,
+            0.896,
+            0.575
+          ],
+          "content": "Since we set nsim to a large number, it may be reasonable to believe that the chain is close to stationarity during the latter portion of the simulation. To check this, we eliminate the first half of the simulations to give the chain time to reach stationarity:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.103,
+            0.591,
+            0.348,
+            0.609
+          ],
+          "sub_type": "code",
+          "content": "```r\nx <- x[-(1:(nsim/2))]\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.625,
+            0.896,
+            0.681
+          ],
+          "content": "We then use the table command to calculate the number of times the chain visited each state; dividing by length(x) converts the counts into proportions. The result is an approximation to the stationary distribution."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.104,
+            0.697,
+            0.314,
+            0.715
+          ],
+          "sub_type": "code",
+          "content": "```txt\ntable(x)/length(x)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.731,
+            0.895,
+            0.768
+          ],
+          "content": "For comparison, the true stationary distribution of the chain is approximately (0.214, 0.286, 0.214, 0.286). Is this close to what you obtained via simulation?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.857,
+            0.292,
+            0.874
+          ],
+          "level": 2,
+          "content": "11.7 Exercises"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.901,
+            0.819,
+            0.92
+          ],
+          "content": "Exercises marked with s have detailed solutions at [http://stat110.net](http://stat110.net)."
+        }
+      ]
+    },
+    {
+      "page_idx": 541,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.039,
+            0.238,
+            0.053
+          ],
+          "content": "Markov chains"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "525"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.169,
+            0.069,
+            0.362,
+            0.087
+          ],
+          "level": 2,
+          "content": "Markov property"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.098,
+            0.871,
+            0.13
+          ],
+          "content": "1. s Let $X _ { 0 } , X _ { 1 } , X _ { 2 } , \\ldots$ . be a Markov chain. Show that $X _ { 0 } , X _ { 2 } , X _ { 4 } , X _ { 6 } , \\ldots$ . is also a Markov chain, and explain why this makes sense intuitively."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.139,
+            0.871,
+            0.186
+          ],
+          "content": "2. s Let $X _ { 0 } , X _ { 1 } , X _ { 2 } , \\ldots$ . be an irreducible Markov chain with state space $\\{ 1 , 2 , \\ldots , M \\}$ $M \\geq 3$ , transition matrix $Q = ( q _ { i j } )$ , and stationary distribution $\\mathbf { s } = ( s _ { 1 } , \\ldots , s _ { M } )$ . Let the initial state $X _ { 0 }$ follow the stationary distribution, i.e., $P ( X _ { 0 } = i ) = s _ { i }$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.195,
+            0.806,
+            0.212
+          ],
+          "content": "(a) On average, how many of $X _ { 0 } , X _ { 1 } , \\ldots , X _ { 9 }$ equal 3? (In terms of s; simplify.)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.226,
+            0.871,
+            0.288
+          ],
+          "content": "(b) Let $Y _ { n } = ( X _ { n } - 1 ) ( X _ { n } - 2 )$ . For $M = 3$ , find an example of $Q$ (the transition matrix for the original chain $X _ { 0 } , X _ { 1 } , \\dots )$ where $Y _ { 0 } , Y _ { 1 } , \\ldots$ . is Markov, and another example of Q where $Y _ { 0 } , Y _ { 1 } , \\ldots$ . is not Markov. In your examples, make $q _ { i i } > 0$ for at least one i and make sure it is possible to get from any state to any other state eventually."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.298,
+            0.729,
+            0.313
+          ],
+          "content": "3. A Markov chain has two states, A and B, with transitions as follows:"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.327,
+            0.337,
+            0.677,
+            0.42
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"A\"] -->|\"0.5\"| B[\"B\"]\n  B[\"B\"] -->|\"1\"| A\n```",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_541_image_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.461,
+            0.871,
+            0.507
+          ],
+          "content": "Suppose we do not get to observe this Markov chain, which we’ll call $X _ { 0 } , X _ { 1 } , X _ { 2 } , \\ldots .$ Instead, whenever the chain transitions from A back to $A ,$ we observe a 0, and whenever it changes states, we observe a 1. Let the sequence of 0’s and 1’s be called $Y _ { 0 } , Y _ { 1 } , Y _ { 2 } , \\ldots .$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.511,
+            0.506,
+            0.526
+          ],
+          "content": "For example, if the X chain starts out as"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.429,
+            0.541,
+            0.61,
+            0.556
+          ],
+          "content": "A, A, B, A, B, A, A, \\dots",
+          "image_source": "images/page_541_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.571,
+            0.418,
+            0.584
+          ],
+          "content": "then the Y chain starts out as"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.449,
+            0.587,
+            0.589,
+            0.602
+          ],
+          "content": "0, 1, 1, 1, 1, 0, \\dots",
+          "image_source": "images/page_541_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.615,
+            0.584,
+            0.631
+          ],
+          "content": "(a) Show that $Y _ { 0 } , Y _ { 1 } , Y _ { 2 } , \\ldots$ . is not a Markov chain."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.647,
+            0.871,
+            0.693
+          ],
+          "content": "(b) In Example 11.1.3, we dealt with a violation of the Markov property by enlarging the state space to incorporate second-order dependence. Show that such a trick will not work for $Y _ { 0 } , Y _ { 1 } , Y _ { 2 } , \\ldots .$ That is, no matter how large m is,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.309,
+            0.707,
+            0.726,
+            0.723
+          ],
+          "content": "Z _ {n} = (Y _ {n - m + 1}, Y _ {n - m + 2}, \\dots , Y _ {n}), n = m - 1, m, \\dots",
+          "image_source": "images/page_541_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.736,
+            0.39,
+            0.751
+          ],
+          "content": "is still not a Markov chain."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.762,
+            0.871,
+            0.853
+          ],
+          "content": "4. There are three blocks, floating in a sea of lava. Label the blocks 1, 2, 3, from left to right. Mark the Kangaroo, a video game character, is standing on block 1. To reach safety, he must get to block 3. He can’t jump directly from block 1 to block 3; his only hope is to jump from block 1 to block 2, then jump from block 2 to block 3. Each time he jumps, he has probability $1 / 2$ of success and probability $1 / 2$ of “dying” by falling into the lava. If he “dies”, he starts again at block 1."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.857,
+            0.845,
+            0.873
+          ],
+          "content": "Let J be the total number of jumps that Mark will make in order to get to block 3."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.168,
+            0.877,
+            0.814,
+            0.919
+          ],
+          "sub_type": "text",
+          "content": "(a) Find $E ( J )$ , using the Markov property and conditional expectation.\n(b) Explain how this problem relates to a coin tossing problem from Chapter 9."
+        }
+      ]
+    },
+    {
+      "page_idx": 542,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "526"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.169,
+            0.069,
+            0.426,
+            0.086
+          ],
+          "level": 2,
+          "content": "Stationary distribution"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.096,
+            0.871,
+            0.126
+          ],
+          "content": "5. s Consider the Markov chain shown below, where $0   <   p   <   1$ and the labels on the arrows indicate transition probabilities."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.383,
+            0.148,
+            0.661,
+            0.231
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  1[\"1\"] -->|\"1-p\"| 2[\"2\"]\n  n2[\"2\"] -->|\"1-p\"| 1[\"1\"]\n  n1[\"1\"] -->|\"p\"| n1\n```",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_542_image_4.jpg"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.168,
+            0.275,
+            0.608,
+            0.338
+          ],
+          "sub_type": "text",
+          "content": "(a) Write down the transition matrix Q for this chain.\n(b) Find the stationary distribution of the chain.\n(c) What is the limit of $Q ^ { n }$ as $n \\to \\infty ?$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.343,
+            0.871,
+            0.374
+          ],
+          "content": "6. s Consider the Markov chain shown below, where the state space is {1, 2, 3, 4} and the labels to the right of arrows indicate transition probabilities."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.33,
+            0.389,
+            0.673,
+            0.523
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_542_image_10.jpg"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.168,
+            0.543,
+            0.784,
+            0.606
+          ],
+          "sub_type": "text",
+          "content": "(a) Write down the transition matrix $Q$ for this chain.\n(b) Which states (if any) are recurrent? Which states (if any) are transient?\n(c) Find two different stationary distributions for the chain."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.612,
+            0.871,
+            0.718
+          ],
+          "content": "7. s Daenerys has three dragons: Drogon, Rhaegal, and Viserion. Each dragon independently explores the world in search of tasty morsels. Let $X _ { n } , Y _ { n } , Z _ { n }$ be the locations at time n of Drogon, Rhaegal, Viserion respectively, where time is assumed to be discrete and the number of possible locations is a finite number M. Their paths $X _ { 0 } , X _ { 1 } , X _ { 2 } , \\ldots ;$ $Y _ { 0 } , Y _ { 1 } , Y _ { 2 } , \\ldots ;$ and $Z _ { 0 } , Z _ { 1 } , Z _ { 2 } , \\ldots$ . are independent Markov chains with the same stationary distribution s. Each dragon starts out at a random location generated according to the stationary distribution."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.727,
+            0.868,
+            0.772
+          ],
+          "content": "(a) Let state 0 be home (so s0 is the stationary probability of the home state). Find the expected number of times that Drogon is at home, up to time 24, i.e., the expected number of how many of $X _ { 0 } , X _ { 1 } , \\ldots , X _ { 2 4 }$ are state 0 (in terms of s0)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.781,
+            0.868,
+            0.87
+          ],
+          "content": "(b) If we want to track all 3 dragons simultaneously, we need to consider the vector of positions, $( X _ { n } , Y _ { n } , Z _ { n } )$ . There are $M ^ { 3 }$ possible values for this vector; assume that each is assigned a number from 1 to $M ^ { 3 } , \\; \\mathrm { e . g . , \\; i f } \\; M   =   2$ we could encode the states $( 0 , 0 , 0 ) , ( 0 , 0 , 1 ) , ( 0 , 1 , 0 ) , \\ldots , ( 1 , 1 , 1 )$ as $1 , 2 , 3 , \\ldots , 8$ respectively. Let $W _ { n }$ be the number between 1 and $M ^ { 3 }$ representing $( X _ { n } , Y _ { n } , Z _ { n } )$ . Determine whether $W _ { 0 } , W _ { 1 } , \\ldots$ . is a Markov chain."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.881,
+            0.868,
+            0.911
+          ],
+          "content": "(c) Given that all 3 dragons start at home at time 0, find the expected time it will take for all 3 to be at home again at the same time."
+        }
+      ]
+    },
+    {
+      "page_idx": 543,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.039,
+            0.238,
+            0.053
+          ],
+          "content": "Markov chains"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "527"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.07,
+            0.873,
+            0.133
+          ],
+          "content": "8. Consider the following Markov chain with $5 2 !   \\approx   8   \\times   1 0 ^ { 6 7 }$ states. The states are the possible orderings of a standard 52-card deck. To run one step of the chain, pick 2 different cards from the deck, with all pairs equally likely, and swap the 2 cards. Find the stationary distribution of the chain."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.169,
+            0.159,
+            0.313,
+            0.177
+          ],
+          "level": 2,
+          "content": "Reversibility"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.185,
+            0.873,
+            0.262
+          ],
+          "content": "9. s A Markov chain $X _ { 0 } , X _ { 1 } , \\ldots$ with state space $\\{ - 3 , - 2 , - 1 , 0 , 1 , 2 , 3 \\}$ proceeds as follows. The chain starts at $X _ { 0 }   =   0$ . If $X _ { n }$ is not an endpoint $( - 3   \\mathrm { ~ o r ~ }   3 )$ , then $X _ { n + 1 }$ is $X _ { n } - 1$ or $X _ { n } + 1$ , each with probability $1 / 2$ . Otherwise, the chain gets reflected off the endpoint, i.e., from 3 it always goes to 2 and from −3 it always goes to −2. A diagram of the chain is shown below."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.212,
+            0.274,
+            0.791,
+            0.312
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"-3\"] <--> B[\"-2\"]\n  B <--> C[\"-1\"]\n  C <--> D[\"0\"]\n  D <--> E[\"1\"]\n  E <--> F[\"2\"]\n  F <--> G[\"3\"]\n```",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_543_image_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.33,
+            0.621,
+            0.346
+          ],
+          "content": "(a) Is $| X _ { 0 } | , | X _ { 1 } | , | X _ { 2 } | , \\ldots$ . also a Markov chain? Explain."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.349,
+            0.869,
+            0.381
+          ],
+          "content": "Hint: For both (a) and (b), think about whether the past and future are conditionally independent given the present; don’t do calculations with a $7$ by $7$ transition matrix!"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.387,
+            0.869,
+            0.418
+          ],
+          "content": "(b) Let sgn be the sign function: sgn $\\operatorname { l } ( x )   =   1   \\operatorname { i f }   x   >   0 ,   \\operatorname { s g n } ( x )   =   - 1   \\operatorname { i f }   x   <   0$ , and $\\mathrm { s g n } ( 0 ) = 0$ . Is $\\operatorname { s g n } ( X _ { 0 } ) , \\operatorname { s g n } ( X _ { 1 } ) , \\operatorname { s g n } ( X _ { 2 } ) , \\ldots$ a Markov chain? Explain."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.425,
+            0.691,
+            0.441
+          ],
+          "content": "(c) Find the stationary distribution of the chain $X _ { 0 } , X _ { 1 } , X _ { 2 } , \\ldots .$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.447,
+            0.868,
+            0.478
+          ],
+          "content": "(d) Find a simple way to modify some of the transition probabilities $q _ { i j }$ for $i \\in \\{ - 3 , 3 \\}$ to make the stationary distribution of the modified chain uniform over the states."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.482,
+            0.873,
+            0.574
+          ],
+          "content": "10. s Let $G$ be an undirected network with nodes labeled $1 , 2 , \\ldots , M$ (edges from a node to itself are not allowed), where $M \\geq 2$ and random walk on this network is irreducible. Let $d _ { j }$ be the degree of node $j$ for each $j .$ Create a Markov chain on the state space $1 , 2 , \\ldots , M$ , with transitions as follows. From state $i ,$ generate a proposal $j$ by choosing a uniformly random $j$ such that there is an edge between i and $j$ in $G ;$ then $\\mathbf { g } \\mathbf { o }$ to j with probability min $( d _ { i } / d _ { j } , 1 )$ , and stay at i otherwise."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.581,
+            0.826,
+            0.597
+          ],
+          "content": "(a) Find the transition probability $q _ { i j }$ from i to $j$ for this chain, for all states $i , j$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.603,
+            0.57,
+            0.619
+          ],
+          "content": "(b) Find the stationary distribution of this chain."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.623,
+            0.873,
+            0.7
+          ],
+          "content": "11. s (a) Consider a Markov chain on the state space $\\{ 1 , 2 , \\ldots , 7 \\}$ with the states arranged in a “circle” as shown below, and transitions given by moving one step clockwise or counterclockwise with equal probabilities. For example, from state $6 ,$ the chain moves to state $7$ or state 5 with probability $1 / 2$ each; from state $^ { 7 , }$ the chain moves to state 1 or state 6 with probability $1 / 2$ each. The chain starts at state 1."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.379,
+            0.712,
+            0.661,
+            0.912
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph TD\n  1[\"1\"] --> 2[\"2\"]\n  n2[\"2\"] --> 3[\"3\"]\n  n3[\"3\"] --> 4[\"4\"]\n  n4[\"4\"] --> 5[\"5\"]\n  n5[\"5\"] --> 6[\"6\"]\n  n6[\"6\"] --> 7[\"7\"]\n  n7[\"7\"] --> n1[\"1\"]\n```",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_543_image_15.jpg"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Probability, Second Edition",
+      "authors": [
+        "Joseph K. Blitzstein;Jessica Hwang;"
+      ],
+      "created_at": "2019-01-18T11:22:30+05:30",
+      "modified_at": "2019-02-04T21:29:14+05:30",
+      "creator_application": "LaTeX with hyperref",
+      "producer_application": "pdfTeX-1.40.19",
+      "page_count": 636,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 528,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 529,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 530,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 531,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 532,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 533,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 534,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 535,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 536,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 537,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 538,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 539,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 540,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 541,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 542,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 543,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

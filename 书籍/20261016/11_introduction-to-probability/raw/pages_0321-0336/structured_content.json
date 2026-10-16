@@ -1,0 +1,2645 @@
+{
+  "pages": [
+    {
+      "page_idx": 320,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "304"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.108,
+            0.547,
+            0.129
+          ],
+          "level": 2,
+          "content": "7.1 Joint, marginal, and conditional"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.146,
+            0.897,
+            0.315
+          ],
+          "content": "The three key concepts for this section are joint, marginal, and conditional distributions. Recall that the distribution of a single r.v. X provides complete information about the probability of X falling into any subset of the real line. Analogously, the joint distribution of two r.v.s X and Y provides complete information about the probability of the vector (X, Y ) falling into any subset of the plane. The marginal distribution of X is the individual distribution of X, ignoring the value of Y , and the conditional distribution of X given $Y   =   y$ is the updated distribution for X after observing $Y = y$ . We’ll look at these concepts in the discrete case first, then extend them to the continuous case."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.349,
+            0.277,
+            0.367
+          ],
+          "level": 2,
+          "content": "7.1.1 Discrete"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.385,
+            0.894,
+            0.423
+          ],
+          "content": "The most general description of the joint distribution of two r.v.s is the joint CDF, which applies to discrete and continuous r.v.s alike."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.432,
+            0.894,
+            0.47
+          ],
+          "content": "Definition 7.1.1 (Joint CDF). The joint CDF of r.v.s X and Y is the function $F _ { X , Y }$ given by"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.35,
+            0.47,
+            0.65,
+            0.491
+          ],
+          "content": "F _ {X, Y} (x, y) = P (X \\leq x, Y \\leq y).",
+          "image_source": "images/page_320_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.496,
+            0.562,
+            0.515
+          ],
+          "content": "The joint CDF of n r.v.s is defined analogously."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.524,
+            0.894,
+            0.599
+          ],
+          "content": "Unfortunately, the joint CDF of discrete r.v.s is not a well-behaved function; as in the univariate case, it consists of jumps and flat regions. For this reason, with discrete r.v.s we usually work with the joint PMF, which also determines the joint distribution and is much easier to visualize."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.608,
+            0.894,
+            0.648
+          ],
+          "content": "Definition 7.1.2 (Joint PMF). The joint PMF of discrete r.v.s X and Y is the function $p _ { X , Y }$ given by"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.35,
+            0.659,
+            0.649,
+            0.679
+          ],
+          "content": "p _ {X, Y} (x, y) = P (X = x, Y = y).",
+          "image_source": "images/page_320_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.689,
+            0.643,
+            0.709
+          ],
+          "content": "The joint PMF of n discrete r.v.s is defined analogously."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.717,
+            0.894,
+            0.771
+          ],
+          "content": "Just as univariate PMFs must be nonnegative and sum to 1, we require valid joint PMFs to be nonnegative and sum to 1, where the sum is taken over all possible values of X and Y :"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.358,
+            0.771,
+            0.64,
+            0.809
+          ],
+          "content": "\\sum_ {x} \\sum_ {y} P (X = x, Y = y) = 1.",
+          "image_source": "images/page_320_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.814,
+            0.894,
+            0.871
+          ],
+          "content": "The joint PMF determines the distribution because we can use it to find the probability of the event $( X , Y ) \\in A$ for any set A of points in the support of $( X , Y )$ . All we have to do is sum the joint PMF over A:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.292,
+            0.88,
+            0.706,
+            0.922
+          ],
+          "content": "P ((X, Y) \\in A) = \\sum_ {(x, y) \\in A} P (X = x, Y = y).",
+          "image_source": "images/page_320_equation_16.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 321,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": "Joint distributions"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "305"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.239,
+            0.171,
+            0.731,
+            0.407
+          ],
+          "sub_type": "scatter",
+          "content": "| Category | X (range) | Y (range) |\n| --- | --- | --- |\n| Data Points | 0~100 | 0~100 |",
+          "captions": [
+            {
+              "bbox": [
+                0.103,
+                0.068,
+                0.894,
+                0.125
+              ],
+              "content": "Figure 7.1 shows a sketch of what the joint PMF of two discrete r.v.s could look like. The height of a vertical bar at $( x , y )$ represents the probability $P ( X = x , Y = y )$ For the joint PMF to be valid, the total height of the vertical bars must be 1."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_321_chart_3.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.446,
+            0.236,
+            0.46
+          ],
+          "level": 2,
+          "content": "FIGURE 7.1"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.463,
+            0.466,
+            0.48
+          ],
+          "content": "Joint PMF of discrete r.v.s X and Y ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.497,
+            0.896,
+            0.59
+          ],
+          "content": "From the joint distribution of X and $Y ,$ we can get the distribution of X alone by summing over the possible values of Y . This gives us the familiar PMF of X that we have seen in previous chapters. In the context of joint distributions, we will call it the marginal or unconditional distribution of $X$ , to make it clear that we are referring to the distribution of X alone, without regard for the value of $Y$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.601,
+            0.898,
+            0.636
+          ],
+          "content": "Definition 7.1.3 (Marginal PMF). For discrete r.v.s X and $Y .$ the marginal PMF of X is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.332,
+            0.636,
+            0.666,
+            0.675
+          ],
+          "content": "P (X = x) = \\sum_ {y} P (X = x, Y = y).",
+          "image_source": "images/page_321_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.683,
+            0.896,
+            0.779
+          ],
+          "content": "The marginal PMF of X is the PMF of $X ,$ viewing X individually rather than jointly with Y . The above equation follows from the axioms of probability (we are summing over disjoint cases). The operation of summing over the possible values of $Y$ in order to convert the joint PMF into the marginal PMF of X is known as marginalizing out $Y$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.787,
+            0.896,
+            0.92
+          ],
+          "content": "The process of obtaining the marginal PMF from the joint PMF is illustrated in Figure 7.2. Here we take a bird’s-eye view of the joint PMF for a clearer perspective; each column of the joint PMF corresponds to a fixed x and each row corresponds to a fixed $y .$ For any x, the probability $P ( X = x )$ is the total height of the bars in the corresponding column of the joint PMF: we can imagine taking all the bars in that column and stacking them on top of each other to get the marginal probability. Repeating this for all $x ,$ we arrive at the marginal PMF, depicted in bold."
+        }
+      ]
+    },
+    {
+      "page_idx": 322,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "306"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.307,
+            0.068,
+            0.681,
+            0.374
+          ],
+          "sub_type": "text_image",
+          "content": "P(X = x)\ny\nx",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_322_image_2.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.396,
+            0.239,
+            0.411
+          ],
+          "level": 2,
+          "content": "FIGURE 7.2"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.414,
+            0.897,
+            0.451
+          ],
+          "content": "Bird’s-eye view of the joint PMF from Figure 7.1. The marginal PMF $P ( X = x )$ is obtained by summing over the joint PMF in the y-direction."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.475,
+            0.896,
+            0.587
+          ],
+          "content": "Similarly, the marginal PMF of Y is obtained by summing over all possible values of X. So given the joint PMF, we can marginalize out Y to get the PMF of $X .$ , or marginalize out X to get the PMF of Y . But if we only know the marginal PMFs of X and Y , there is no way to recover the joint PMF without further assumptions. It is clear how to stack the bars in Figure 7.2, but very unclear how to unstack the bars after they have been stacked!"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.597,
+            0.894,
+            0.634
+          ],
+          "content": "Another way to go from joint to marginal distributions is via the joint CDF. In that case, we take a limit rather than a sum: the marginal CDF of X is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.196,
+            0.644,
+            0.802,
+            0.671
+          ],
+          "content": "F _ {X} (x) = P (X \\leq x) = \\lim _ {y \\to \\infty} P (X \\leq x, Y \\leq y) = \\lim _ {y \\to \\infty} F _ {X, Y} (x, y).",
+          "image_source": "images/page_322_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.679,
+            0.818,
+            0.698
+          ],
+          "content": "However, as mentioned above it is usually easier to work with joint PMFs."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.707,
+            0.896,
+            0.8
+          ],
+          "content": "Now suppose that we observe the value of X and want to update our distribution of $Y$ to reflect this information. Instead of using the marginal PMF $P ( Y   =   y )$ which does not take into account any information about $X$ , we should use a PMF that conditions on the event $X = x$ , where x is the value we observed for X. This naturally leads us to consider conditional PMFs."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.81,
+            0.898,
+            0.847
+          ],
+          "content": "Definition 7.1.4 (Conditional PMF). For discrete r.v.s X and $Y$ , the conditional PMF of $Y$ given $X = x$ is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.315,
+            0.854,
+            0.682,
+            0.894
+          ],
+          "content": "P (Y = y | X = x) = \\frac {P (X = x , Y = y)}{P (X = x)}.",
+          "image_source": "images/page_322_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.901,
+            0.53,
+            0.919
+          ],
+          "content": "This is viewed as a function of $y$ for fixed $x .$"
+        }
+      ]
+    },
+    {
+      "page_idx": 323,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": "Joint distributions"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "307"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.895,
+            0.143
+          ],
+          "content": "Note that the conditional PMF (for fixed x) is a valid PMF. So we can define the conditional expectation of Y given $X = x ,$ denoted by $E ( Y | X = x )$ , in the same way that we defined $E ( Y )$ except that we replace the PMF of Y with the conditional PMF of $Y$ . Chapter 9 is devoted to conditional expectation."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.154,
+            0.897,
+            0.342
+          ],
+          "content": "Figure 7.3 illustrates the definition of conditional PMF. To condition on the event $X = x$ , we first take the joint PMF and focus in on the vertical bars where X takes on the value $x ;$ in the figure, these are shown in bold. All of the other vertical bars are irrelevant because they are inconsistent with the knowledge that $X = x$ occurred. Since the total height of the bold bars is the marginal probability $P ( X \\; = \\; x )$ we then renormalize the conditional PMF by dividing by $P ( X = x )$ ; this ensures that the conditional PMF will sum to 1. Therefore conditional PMFs are PMFs, just as conditional probabilities are probabilities. Notice that there is a different conditional PMF of Y for every possible value of X; Figure 7.3 highlights just one of these conditional PMFs."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.179,
+            0.377,
+            0.86,
+            0.579
+          ],
+          "sub_type": "text_image",
+          "content": "X = x\nrenormalize",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_323_image_4.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.613,
+            0.238,
+            0.628
+          ],
+          "level": 2,
+          "content": "FIGURE 7.3"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.631,
+            0.896,
+            0.686
+          ],
+          "content": "Conditional PMF of $Y$ given $X   =   x$ . The conditional PMF $P ( Y   =   y | X   =   x )$ is obtained by renormalizing the column of the joint PMF that is compatible with the event $X = x$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.705,
+            0.895,
+            0.743
+          ],
+          "content": "We can also relate the conditional distribution of $Y$ given $X = x$ to that of X given $Y = y$ , using Bayes’ rule:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.271,
+            0.757,
+            0.726,
+            0.798
+          ],
+          "content": "P (Y = y | X = x) = \\frac {P (X = x | Y = y) P (Y = y)}{P (X = x)}.",
+          "image_source": "images/page_323_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.81,
+            0.896,
+            0.868
+          ],
+          "content": "And using LOTP, we have another way of getting the marginal PMF: the marginal PMF of $X$ is a weighted average of the conditional PMFs $P ( X = x | Y = y )$ , where the weights are the probabilities $P ( Y = y )$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.288,
+            0.883,
+            0.71,
+            0.922
+          ],
+          "content": "P (X = x) = \\sum_ {y} P (X = x | Y = y) P (Y = y).",
+          "image_source": "images/page_323_equation_10.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 324,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "308"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.068,
+            0.893,
+            0.105
+          ],
+          "content": "Let’s work through a numerical example to complement the graphs we’ve been looking at."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.115,
+            0.894,
+            0.208
+          ],
+          "content": "Example 7.1.5 (2 × 2 table). The simplest example of a discrete joint distribution is when X and Y are both Bernoulli r.v.s. In this case, the joint PMF is fully specified by the four values $P(X = 1,Y = 1),   P(X = 0,Y = 1),   P(X = 1,Y = 0)$ and $P ( X = 0 , Y = 0 )$ , so we can represent the joint PMF of X and Y using a $2 \\times 2$ table."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.218,
+            0.894,
+            0.293
+          ],
+          "content": "This very simple scenario actually has an important place in statistics, as these socalled contingency tables are often used to study whether a treatment is associated with a particular outcome. In such scenarios, X may be the indicator of receiving the treatment, and Y may be the indicator of the outcome of interest."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.303,
+            0.894,
+            0.397
+          ],
+          "content": "For example, suppose we randomly sample an adult male from the United States population. Let X be the indicator of the sampled individual being a current smoker, and let Y be the indicator of his developing lung cancer at some point in his life. Suppose the joint PMF is as follows (these numbers are for illustrative purposes; they are not estimated from real data)."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.38,
+            0.411,
+            0.62,
+            0.507
+          ],
+          "content": "|  | $Y = 1$ | $Y = 0$ |\n| --- | --- | --- |\n| $X = 1$ | $\\frac{5}{100}$ | $\\frac{20}{100}$ |\n| $X = 0$ | $\\frac{3}{100}$ | $\\frac{72}{100}$ |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_324_table_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.519,
+            0.894,
+            0.595
+          ],
+          "content": "To get the marginal probability $P ( Y = 1 )$ , we add the probabilities in the two cells of the table where $Y = 1$ . We do the same for $P(Y = 0),   P(X = 1)$ , and $P ( X = 0 )$ and write these probabilities in the margins of the table (making “marginal” an appropriate name!)."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.342,
+            0.609,
+            0.658,
+            0.741
+          ],
+          "content": "|  | $Y = 1$ | $Y = 0$ | Total |\n| --- | --- | --- | --- |\n| $X = 1$ | $\\frac{5}{100}$ | $\\frac{20}{100}$ | $\\frac{25}{100}$ |\n| $X = 0$ | $\\frac{3}{100}$ | $\\frac{72}{100}$ | $\\frac{75}{100}$ |\n| Total | $\\frac{8}{100}$ | $\\frac{92}{100}$ | $\\frac{100}{100}$ |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_324_table_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.754,
+            0.894,
+            0.829
+          ],
+          "content": "This shows that the marginal distribution of X is Bern(0.25) and the marginal distribution of Y is $\\mathrm { B e r n } ( 0 . 0 8 )$ . In words, the unconditional probability that the individual is a current smoker is 0.25, and the unconditional probability of his developing lung cancer is 0.08."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.839,
+            0.893,
+            0.876
+          ],
+          "content": "Now suppose we observe X = 1, i.e., the individual is a current smoker. We can then update our beliefs about his risk for lung cancer."
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.24,
+            0.883,
+            0.757,
+            0.922
+          ],
+          "content": "P (Y = 1 | X = 1) = \\frac {P (X = 1 , Y = 1)}{P (X = 1)} = \\frac {5 / 1 0 0}{2 5 / 1 0 0} = 0. 2,",
+          "image_source": "images/page_324_equation_11.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 325,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": "Joint distributions"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "309"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.143
+          ],
+          "content": "so the conditional distribution of Y given X = 1 is Bern(0.2). By a similar calculation, the conditional distribution of Y given X = 0 is Bern(0.04). This tells us that the probability of developing lung cancer is 0.2 for current smokers but only 0.04 for non-smokers. \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.153,
+            0.897,
+            0.248
+          ],
+          "content": "h 7.1.6. The word “marginal” has opposite meanings in economics and statistics. In economics it refers to a derivative, e.g., marginal revenue is the derivative of revenue with respect to quantity sold. In statistics it refers to an integral or sum, which can be thought of intuitively by writing totals in the margins of a table, as in the above example."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.257,
+            0.896,
+            0.294
+          ],
+          "content": "Armed with an understanding of joint, marginal, and conditional distributions, we can revisit the definition of independence that we introduced in Chapter 3."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.304,
+            0.896,
+            0.341
+          ],
+          "content": "Definition 7.1.7 (Independence of discrete r.v.s). Random variables X and Y are independent if for all x and $y ,$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.371,
+            0.351,
+            0.627,
+            0.371
+          ],
+          "content": "F _ {X, Y} (x, y) = F _ {X} (x) F _ {Y} (y).",
+          "image_source": "images/page_325_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.38,
+            0.668,
+            0.397
+          ],
+          "content": "If X and Y are discrete, this is equivalent to the condition"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.307,
+            0.407,
+            0.692,
+            0.427
+          ],
+          "content": "P (X = x, Y = y) = P (X = x) P (Y = y)",
+          "image_source": "images/page_325_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.436,
+            0.606,
+            0.454
+          ],
+          "content": "for all $x , y ,$ , and it is also equivalent to the condition"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.356,
+            0.464,
+            0.642,
+            0.484
+          ],
+          "content": "P (Y = y | X = x) = P (Y = y)",
+          "image_source": "images/page_325_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.492,
+            0.452,
+            0.511
+          ],
+          "content": "for all x, y such that $P(X = x) > 0$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.521,
+            0.897,
+            0.653
+          ],
+          "content": "Using the terminology from this chapter, the definition says that for independent r.v.s, the joint CDF factors into the product of the marginal CDFs, or that the joint PMF factors into the product of the marginal PMFs. Remember that in general, the marginal distributions do not determine the joint distribution: this is the reason why we wanted to study joint distributions in the first place! But in the special case of independence, the marginal distributions are all we need in order to specify the joint distribution; we can get the joint PMF by multiplying the marginal PMFs."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.662,
+            0.896,
+            0.718
+          ],
+          "content": "Another way of looking at independence is that all the conditional PMFs are the same as the marginal PMF. That is, starting with the marginal PMF of Y , no updating is necessary when we condition on $X = x$ , regardless of what x is."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.728,
+            0.896,
+            0.784
+          ],
+          "content": "Example 7.1.8 (Independence in the $2 \\times 2$ table). Returning to the table from the previous example, we can use these two views of independence to see why X and Y are not independent."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.342,
+            0.791,
+            0.66,
+            0.923
+          ],
+          "content": "|  | Y = 1 | Y = 0 | Total |\n| --- | --- | --- | --- |\n| X = 1 | $\\frac{5}{100}$ | $\\frac{20}{100}$ | $\\frac{25}{100}$ |\n| X = 0 | $\\frac{3}{100}$ | $\\frac{72}{100}$ | $\\frac{75}{100}$ |\n| Total | $\\frac{8}{100}$ | $\\frac{92}{100}$ | $\\frac{100}{100}$ |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_325_table_15.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 326,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "310"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.068,
+            0.837,
+            0.087
+          ],
+          "content": "First, the joint PMF is not the product of the marginal PMFs. For example,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.307,
+            0.104,
+            0.692,
+            0.124
+          ],
+          "content": "P (X = 1, Y = 1) \\neq P (X = 1) P (Y = 1).",
+          "image_source": "images/page_326_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.141,
+            0.584,
+            0.159
+          ],
+          "content": "Finding even one pair of values x and $y$ such that"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.307,
+            0.177,
+            0.692,
+            0.197
+          ],
+          "content": "P (X = x, Y = y) \\neq P (X = x) P (Y = y)",
+          "image_source": "images/page_326_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.214,
+            0.447,
+            0.232
+          ],
+          "content": "is enough to rule out independence."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.243,
+            0.896,
+            0.356
+          ],
+          "content": "Second, we found that the marginal distribution of Y is Bern(0.08), whereas the conditional distribution of Y given $X = 1$ is Bern(0.2) and the conditional distribution of $Y$ given $X = 0$ is Bern(0.04). Since conditioning on the value of X alters the distribution of Y , X and $Y$ are not independent: learning whether or not the sampled individual is a current smoker gives us information about the probability that he will develop lung cancer."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.367,
+            0.896,
+            0.442
+          ],
+          "content": "Although we have found that X and $Y$ are dependent, we cannot make conclusions about whether smoking causes lung cancer based on this association alone. As we learned from Simpson’s paradox, misleading associations can arise when we fail to account for confounding variables. \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.452,
+            0.894,
+            0.509
+          ],
+          "content": "We’ll do one more example of a discrete joint distribution to round out this section. We’ve named it the chicken-egg story; in it, we use wishful thinking to find a joint PMF, and our efforts land us a surprising independence result."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.52,
+            0.896,
+            0.596
+          ],
+          "content": "Story 7.1.9 (Chicken-egg). Suppose a chicken lays a random number of eggs, $N ,$ where $N \\sim  Pois (\\lambda)$ . Each egg independently hatches with probability $p$ and fails to hatch with probability $q = 1 - p$ . Let X be the number of eggs that hatch and $Y$ the number that do not hatch, so $X + Y = N$ . What is the joint PMF of $X$ and $Y ?$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.607,
+            0.195,
+            0.623
+          ],
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.636,
+            0.896,
+            0.75
+          ],
+          "content": "We seek the joint PMF $P ( X   =   i , Y   =   j )$ for nonnegative integers $i$ and $j .$ Conditional on the total number of eggs N, the eggs are independent Bernoulli trials with probability of success $p ,$ so by the story of the Binomial, the conditional distributions of $X$ and $Y$ are $X | N = n \\sim \\mathrm { B i n } ( n , p )$ and $Y | N = n \\sim \\mathrm { B i n } ( n , q )$ . Since our lives would be easier if only we knew the total number of eggs, let’s use wishful thinking: condition on $N$ and apply the law of total probability. This gives"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.223,
+            0.764,
+            0.776,
+            0.812
+          ],
+          "content": "P (X = i, Y = j) = \\sum_ {n = 0} ^ {\\infty} P (X = i, Y = j | N = n) P (N = n).",
+          "image_source": "images/page_326_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.826,
+            0.896,
+            0.883
+          ],
+          "content": "The sum is over all possible values of $n ,$ holding $i$ and $j$ fixed. But unless $n = i + j$ it is impossible for $X$ to equal $i$ and Y to equal $j .$ For example, the only way there can be 5 hatched eggs and $6$ unhatched eggs is if there are 11 eggs in total. So"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.365,
+            0.899,
+            0.637,
+            0.92
+          ],
+          "content": "P (X = i, Y = j | N = n) = 0",
+          "image_source": "images/page_326_equation_15.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 327,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": "Joint distributions"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "311"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.068,
+            0.812,
+            0.087
+          ],
+          "content": "unless $n = i + j$ , which means all other terms in the sum can be dropped:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.21,
+            0.109,
+            0.789,
+            0.13
+          ],
+          "content": "P (X = i, Y = j) = P (X = i, Y = j | N = i + j) P (N = i + j).",
+          "image_source": "images/page_327_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.151,
+            0.896,
+            0.228
+          ],
+          "content": "Conditional on $N = i + j$ , the events $X = i$ and $Y = j$ are exactly the same event, so keeping both is redundant. We’ll keep $X   =   i ;$ the rest is a matter of plugging in the Binomial PMF to get $P ( X   =   i | N   =   i   +   j )$ and the Poisson PMF to get $P ( N = i + j )$ . Thus,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.244,
+            0.247,
+            0.756,
+            0.36
+          ],
+          "content": "\\begin{array}{l} P (X = i, Y = j) = P (X = i | N = i + j) P (N = i + j) \\\\ = \\binom{i + j}{i} p ^ {i} q ^ {j} \\cdot \\frac {e ^ {- \\lambda} \\lambda^ {i + j}}{(i + j) !} \\\\ = \\frac {e ^ {- \\lambda p} (\\lambda p) ^ {i}}{i !} \\cdot \\frac {e ^ {- \\lambda q} (\\lambda q) ^ {j}}{j !}. \\\\ \\end{array}",
+          "image_source": "images/page_327_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.377,
+            0.896,
+            0.454
+          ],
+          "content": "The joint PMF factors into the product of the $\\operatorname { P o i s } ( \\lambda p )$ PMF (as a function of i) and the $\\operatorname { P o i s } ( \\lambda q )$ PMF (as a function of j). This tells us two elegant facts: (1) X and $Y$ are independent, since their joint PMF is the product of their marginal PMFs, and (2) $X \\sim  Pois (\\lambda p)$ and $Y \\sim  Pois (\\lambda q)$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.466,
+            0.896,
+            0.6
+          ],
+          "content": "At first it may seem deeply counterintuitive that X is independent of Y . Doesn’t knowing that a lot of eggs hatched mean that there are probably not so many that didn’t hatch? For a fixed number of eggs, this independence would be impossible: knowing the number of hatched eggs would perfectly determine the number of unhatched eggs. But in this example, the number of eggs is random, following a Poisson distribution, and this happens to be the right kind of randomness to make X and Y unconditionally independent. This is a very special property of the Poisson. \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.613,
+            0.792,
+            0.632
+          ],
+          "content": "The chicken-egg story supplements the following result from Chapter 4:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.646,
+            0.894,
+            0.685
+          ],
+          "content": "Theorem 7.1.10. If $X \\sim  Pois (\\lambda p),   Y \\sim  Pois (\\lambda q)$ , and X and Y are independent, then $N = X + Y \\sim  Pois (\\lambda)$ and $X | N = n \\sim \\mathrm { B i n } ( n , p )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.699,
+            0.757,
+            0.718
+          ],
+          "content": "By the chicken-egg story, we now have the converse to this theorem."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.731,
+            0.894,
+            0.77
+          ],
+          "content": "Theorem 7.1.11. If $N \\sim  Pois (\\lambda)$ and $X | N = n \\sim \\mathrm { B i n } ( n , p )$ , then $X \\sim  Pois (\\lambda p)$ $Y = N - X \\sim \\mathrm{Poisson}(\\lambda q)$ , and X and Y are independent."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.784,
+            0.896,
+            0.917
+          ],
+          "content": "h 7.1.12. In the chicken-egg story, it is not valid to say $^ { \\backsim } P ( X   =   x | N   =   n )   =$ $P ( X   =   x | X   +   Y   =   n )   =   P ( X   =   x | Y   =   n   -   x )$ , since in $P ( X   =   x | N   =   n )$ we are not conditioning on $X = x$ . Indeed, $P ( X   =   x | N   =   n )$ is the $\\operatorname { B i n } ( n , p )$ PMF, whereas $P ( X = x | Y = n - x ) = P ( X = x )$ is the $\\operatorname { P o i s } ( \\lambda p )$ PMF. This blunder of plugging in x for X on the right side of the conditioning bar illustrates how crucial it is to carefully distinguish between X and $x ,$ and between the left side and the right side of the conditioning bar."
+        }
+      ]
+    },
+    {
+      "page_idx": 328,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "312"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.068,
+            0.309,
+            0.085
+          ],
+          "level": 2,
+          "content": "7.1.2 Continuous"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.104,
+            0.894,
+            0.179
+          ],
+          "content": "Once we have a handle on discrete joint distributions, it isn’t much harder to consider continuous joint distributions. We simply make the now-familiar substitutions of integrals for sums and PDFs for PMFs, remembering that the probability of any individual point is now 0."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.189,
+            0.894,
+            0.226
+          ],
+          "content": "Formally, in order for X and Y to have a continuous joint distribution, we require that the joint CDF"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.352,
+            0.227,
+            0.646,
+            0.247
+          ],
+          "content": "F _ {X, Y} (x, y) = P (X \\leq x, Y \\leq y)",
+          "image_source": "images/page_328_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.254,
+            0.894,
+            0.311
+          ],
+          "content": "be differentiable with respect to x and y. The partial derivative with respect to x and $y$ is called the joint PDF. The joint PDF determines the joint distribution, as does the joint CDF."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.319,
+            0.894,
+            0.359
+          ],
+          "content": "Definition 7.1.13 (Joint PDF). If X and Y are continuous with joint CDF $F _ { X , Y }$ their joint PDF is the derivative of the joint CDF with respect to x and $y ;$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.356,
+            0.369,
+            0.642,
+            0.412
+          ],
+          "content": "f _ {X, Y} (x, y) = \\frac {\\partial^ {2}}{\\partial x \\partial y} F _ {X, Y} (x, y).",
+          "image_source": "images/page_328_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.431,
+            0.736,
+            0.45
+          ],
+          "content": "We require valid joint PDFs to be nonnegative and integrate to 1:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.258,
+            0.461,
+            0.741,
+            0.503
+          ],
+          "content": "f _ {X, Y} (x, y) \\geq 0, \\text {and} \\int_ {- \\infty} ^ {\\infty} \\int_ {- \\infty} ^ {\\infty} f _ {X, Y} (x, y) d x d y = 1.",
+          "image_source": "images/page_328_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.513,
+            0.894,
+            0.571
+          ],
+          "content": "In the univariate case, the PDF was the function we integrated to get the probability of an interval. Similarly, the joint PDF of two r.v.s is the function we integrate to get the probability of a two-dimensional region. For example,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.264,
+            0.581,
+            0.734,
+            0.625
+          ],
+          "content": "P (X <   3, 1 <   Y <   4) = \\int_ {1} ^ {4} \\int_ {- \\infty} ^ {3} f _ {X, Y} (x, y) d x d y.",
+          "image_source": "images/page_328_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.637,
+            0.384,
+            0.657
+          ],
+          "content": "For a general region $A \\subseteq \\mathbb { R } ^ { 2 }$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.319,
+            0.668,
+            0.68,
+            0.72
+          ],
+          "content": "P ((X, Y) \\in A) = \\iint_ {A} f _ {X, Y} (x, y) d x d y.",
+          "image_source": "images/page_328_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.739,
+            0.894,
+            0.854
+          ],
+          "content": "Figure 7.4 shows a sketch of what a joint PDF of two r.v.s could look like. As usual with continuous r.v.s, we need to keep in mind that the height of the surface $f _ { X , Y } ( x , y )$ at a single point does not represent a probability. The probability of any specific point in the plane is 0. Now that we’ve gone up a dimension, the probability of any line or curve in the plane is also 0. The only way we can get nonzero probability is by integrating over a region of positive area in the xy-plane."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.861,
+            0.894,
+            0.919
+          ],
+          "content": "When we integrate the joint PDF over a region A, we are calculating the volume under the surface of the joint PDF and above A. Thus, probability is represented by volume under the joint PDF. The total volume under a valid joint PDF is 1."
+        }
+      ]
+    },
+    {
+      "page_idx": 329,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": "Joint distributions"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "313"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.299,
+            0.071,
+            0.709,
+            0.262
+          ],
+          "sub_type": "text_image",
+          "content": "f_{X,Y}(x,y)\ny\nx",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_329_image_2.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.287,
+            0.239,
+            0.302
+          ],
+          "level": 2,
+          "content": "FIGURE 7.4"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.305,
+            0.49,
+            0.321
+          ],
+          "content": "Joint PDF of continuous r.v.s X and Y ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.343,
+            0.897,
+            0.4
+          ],
+          "content": "In the discrete case, we get the marginal PMF of X by summing over all possible values of Y in the joint PMF. In the continuous case, we get the marginal PDF of X by integrating over all possible values of Y in the joint PDF."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.409,
+            0.896,
+            0.448
+          ],
+          "content": "Definition 7.1.14 (Marginal PDF). For continuous r.v.s X and Y with joint PDF $f _ { X , Y }$ , the marginal PDF of X is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.368,
+            0.455,
+            0.63,
+            0.495
+          ],
+          "content": "f _ {X} (x) = \\int_ {- \\infty} ^ {\\infty} f _ {X, Y} (x, y) d y.",
+          "image_source": "images/page_329_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.501,
+            0.814,
+            0.52
+          ],
+          "content": "This is the PDF of X, viewing X individually rather than jointly with Y ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.529,
+            0.896,
+            0.604
+          ],
+          "content": "To simplify notation, we have mainly been looking at the joint distribution of two r.v.s rather than n r.v.s, but marginalization works analogously with any number of variables. For example, if we have the joint PDF of X, Y, Z, W but want the joint PDF of X, W, we just have to integrate over all possible values of Y and Z:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.268,
+            0.61,
+            0.729,
+            0.65
+          ],
+          "content": "f _ {X, W} (x, w) = \\int_ {- \\infty} ^ {\\infty} \\int_ {- \\infty} ^ {\\infty} f _ {X, Y, Z, W} (x, y, z, w) d y d z.",
+          "image_source": "images/page_329_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.658,
+            0.894,
+            0.695
+          ],
+          "content": "Conceptually this is easy—just integrate over the unwanted variables to get the joint PDF of the wanted variables—but computing it may or may not be easy."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.704,
+            0.896,
+            0.759
+          ],
+          "content": "Returning to the case of the joint distribution of two r.v.s X and Y , let’s consider how to update our distribution for Y after observing the value of X, using the conditional PDF."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.77,
+            0.894,
+            0.808
+          ],
+          "content": "Definition 7.1.15 (Conditional PDF). For continuous r.v.s X and Y with joint PDF $f _ { X , Y }$ , the conditional PDF of Y given $X = x$ is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.382,
+            0.816,
+            0.617,
+            0.856
+          ],
+          "content": "f _ {Y \\mid X} (y \\mid x) = \\frac {f _ {X , Y} (x , y)}{f _ {X} (x)},",
+          "image_source": "images/page_329_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.862,
+            0.896,
+            0.919
+          ],
+          "content": "for all x with $f _ { X } ( x )   >   0$ . This is considered as a function of y for fixed x. As a convention, in order to make $f _ { Y | X } ( y | x )$ well-defined for all real $x ,$ let $f _ { Y | X } ( y | x ) = 0$ for all x with $f _ { X } ( x ) = 0$"
+        }
+      ]
+    },
+    {
+      "page_idx": 330,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.105,
+            0.039,
+            0.14,
+            0.053
+          ],
+          "content": "314"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.162
+          ],
+          "content": "Notation 7.1.16. The subscripts that we place on all the $f ^ { \\prime } \\mathrm { s }$ are just to remind us that we have three different functions on our plate. We could just as well write $g ( y | x ) = f ( x , y ) / h ( x )$ , where f is the joint PDF, h is the marginal PDF of X, and g is the conditional PDF of Y given $X   =   x$ , but that makes it more difficult to remember which letter stands for which function."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.172,
+            0.897,
+            0.268
+          ],
+          "content": "Figure 7.5 illustrates the definition of conditional PDF. We take a vertical slice of the joint PDF corresponding to the observed value of X. Since the total area under this slice is $f _ { X } ( x )$ , we then divide by $f _ { X } ( x )$ to ensure that the conditional PDF will have an area of 1. So the conditional PDF of $Y$ given $X = x$ satisfies the properties of a valid PDF, for any x in the support of X."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.125,
+            0.314,
+            0.889,
+            0.48
+          ],
+          "sub_type": "text_image",
+          "content": "X = x\nrenormalize",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_330_image_4.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.506,
+            0.236,
+            0.52
+          ],
+          "level": 2,
+          "content": "FIGURE 7.5"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.523,
+            0.896,
+            0.561
+          ],
+          "content": "Conditional PDF of Y given $X = x$ . The conditional PDF $f _ { Y | X } ( y | x )$ is obtained by renormalizing the slice of the joint PDF at the fixed value x."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.579,
+            0.896,
+            0.692
+          ],
+          "content": "h 7.1.17. How can we speak of conditioning on $X = x$ for X a continuous $\\mathbf { r } . \\mathbf { V } .$ considering that this event has probability 0? Rigorously speaking, we are actually conditioning on the event that X falls within a small interval containing x, say $X \\in ( x - \\epsilon , x + \\epsilon )$ , and then taking a limit as \u000f approaches 0 from the right. We will not fuss over this technicality; fortunately, many important results such as Bayes rule work in the continuous case exactly as one would hope."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.702,
+            0.894,
+            0.74
+          ],
+          "content": "Note that we can recover the joint PDF $f _ { X , Y }$ if we have the conditional PDF $f _ { Y | X }$ and the corresponding marginal $f _ { X }$ :"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.356,
+            0.757,
+            0.64,
+            0.777
+          ],
+          "content": "f _ {X, Y} (x, y) = f _ {Y | X} (y | x) f _ {X} (x).",
+          "image_source": "images/page_330_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.792,
+            0.722,
+            0.812
+          ],
+          "content": "Similarly, we can recover the joint PDF if we have $f _ { X | Y }$ and $f _ { Y }$ :"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.358,
+            0.827,
+            0.639,
+            0.848
+          ],
+          "content": "f _ {X, Y} (x, y) = f _ {X | Y} (x | y) f _ {Y} (y).",
+          "image_source": "images/page_330_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.862,
+            0.894,
+            0.919
+          ],
+          "content": "This allows us to develop continuous versions of Bayes’ rule and LOTP. The continuous versions are analogous to the discrete versions, with probability density functions in place of probabilities and integrals in place of sums."
+        }
+      ]
+    },
+    {
+      "page_idx": 331,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": "Joint distributions"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "315"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.068,
+            0.896,
+            0.106
+          ],
+          "content": "Theorem 7.1.18 (Continuous form of Bayes’ rule and LOTP). For continuous r.v.s X and $Y .$ we have the following continuous form of Bayes’ rule:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.285,
+            0.117,
+            0.714,
+            0.16
+          ],
+          "content": "f _ {Y \\mid X} (y \\mid x) = \\frac {f _ {X \\mid Y} (x \\mid y) f _ {Y} (y)}{f _ {X} (x)}, \\text {for} f _ {X} (x) > 0.",
+          "image_source": "images/page_331_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.17,
+            0.816,
+            0.189
+          ],
+          "content": "And we have the following continuous form of the law of total probability:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.343,
+            0.199,
+            0.655,
+            0.241
+          ],
+          "content": "f _ {X} (x) = \\int_ {- \\infty} ^ {\\infty} f _ {X | Y} (x | y) f _ {Y} (y) d y.",
+          "image_source": "images/page_331_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.255,
+            0.589,
+            0.273
+          ],
+          "content": "Proof. By definition of conditional PDFs, we have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.271,
+            0.287,
+            0.728,
+            0.31
+          ],
+          "content": "f _ {Y \\mid X} (y \\mid x) f _ {X} (x) = f _ {X, Y} (x, y) = f _ {X \\mid Y} (x \\mid y) f _ {Y} (y).",
+          "image_source": "images/page_331_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.321,
+            0.894,
+            0.376
+          ],
+          "content": "The continuous version of Bayes’ rule follows immediately from dividing by $f _ { X } ( x )$ The continuous version of LOTP follows immediately from integrating with respect to $y ;$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.247,
+            0.376,
+            0.751,
+            0.415
+          ],
+          "content": "f _ {X} (x) = \\int_ {- \\infty} ^ {\\infty} f _ {X, Y} (x, y) d y = \\int_ {- \\infty} ^ {\\infty} f _ {X | Y} (x | y) f _ {Y} (y) d y.",
+          "image_source": "images/page_331_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.429,
+            0.894,
+            0.468
+          ],
+          "content": "Out of curiosity, let’s see what would have happened if we had plugged in the other expression for $f _ { X , Y } ( x , y )$ instead in the proof of LOTP:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.12,
+            0.479,
+            0.879,
+            0.52
+          ],
+          "content": "f _ {X} (x) = \\int_ {- \\infty} ^ {\\infty} f _ {X, Y} (x, y) d y = \\int_ {- \\infty} ^ {\\infty} f _ {Y | X} (y | x) f _ {X} (x) d y = f _ {X} (x) \\int_ {- \\infty} ^ {\\infty} f _ {Y | X} (y | x) d y.",
+          "image_source": "images/page_331_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.532,
+            0.547,
+            0.552
+          ],
+          "content": "This just says that, for any x with $f _ { X } ( x ) > 0$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.393,
+            0.562,
+            0.606,
+            0.603
+          ],
+          "content": "\\int_ {- \\infty} ^ {\\infty} f _ {Y | X} (y | x) d y = 1,",
+          "image_source": "images/page_331_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.615,
+            0.704,
+            0.634
+          ],
+          "content": "confirming the fact that conditional PDFs must integrate to 1."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.643,
+            0.896,
+            0.756
+          ],
+          "content": "We now have versions of Bayes’ rule and LOTP for two discrete r.v.s and for two continuous r.v.s. Better yet, there are also versions when we have one discrete r.v. and one continuous r.v. After understanding the discrete versions, it is easy to remember and use the other versions since they are analogous, replacing probabilities by PDFs when appropriate. For example, for X discrete and $Y$ continuous, we have the following version of LOTP:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.767,
+            0.709,
+            0.808
+          ],
+          "content": "P (X = x) = \\int_ {- \\infty} ^ {\\infty} P (X = x | Y = y) f _ {Y} (y) d y.",
+          "image_source": "images/page_331_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.818,
+            0.894,
+            0.857
+          ],
+          "content": "Taking $X$ to be the indicator r.v. of an event $A$ and $x = 1$ , we have an expression for a general probability $P ( A )$ based on conditioning on a continuous r.v. $Y ;$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.335,
+            0.868,
+            0.664,
+            0.909
+          ],
+          "content": "P (A) = \\int_ {- \\infty} ^ {\\infty} P (A | Y = y) f _ {Y} (y) d y.",
+          "image_source": "images/page_331_equation_18.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 332,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "316"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.069,
+            0.72,
+            0.086
+          ],
+          "content": "Here are the four versions of Bayes’ rule, summarized in a table."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.123,
+            0.098,
+            0.878,
+            0.209
+          ],
+          "content": "|  | Y discrete | Y continuous |\n| --- | --- | --- |\n| X discrete | $P(Y = y\\|X = x) = \\frac{P(X=x\\|Y=y)P(Y=y)}{P(X=x)}$ | $f_{Y}(y\\|X = x) = \\frac{P(X=x\\|Y=y)f_{Y}(y)}{P(X=x)}$ |\n| X continuous | $P(Y = y\\|X = x) = \\frac{f_{X}(x\\|Y=y)P(Y=y)}{f_{X}(x)}$ | $f_{Y\\|X}(y\\|x) = \\frac{f_{X\\|Y}(x\\|y)f_{Y}(y)}{f_{X}(x)}$ |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_332_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.23,
+            0.895,
+            0.268
+          ],
+          "content": "And here are the four versions of LOTP, summarized in a table. The top row gives expressions for $P ( X = x )$ , while the bottom row gives expressions for $f _ { X } ( x )$"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.171,
+            0.279,
+            0.832,
+            0.394
+          ],
+          "content": "|  | Y discrete | Y continuous |\n| --- | --- | --- |\n| X discrete | $\\sum_{y} P(X = x \\| Y = y)P(Y = y)$ | $\\int_{-\\infty}^{\\infty} P(X = x \\| Y = y)f_Y(y)dy$ |\n| X continuous | $\\sum_{y} f_X(x \\| Y = y)P(Y = y)$ | $\\int_{-\\infty}^{\\infty} f_{X\\|Y}(x \\| y)f_Y(y)dy$ |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_332_table_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.408,
+            0.897,
+            0.522
+          ],
+          "content": "Finally, let’s discuss the definition of independence for continuous r.v.s; then we’ll turn to concrete examples. As in the discrete case, we can view independence of continuous r.v.s in two ways. One is that the joint CDF factors into the product of the marginal CDFs, or the joint PDF factors into the product of the marginal PDFs. The other is that the conditional PDF of Y given $X = x$ is the same as the marginal PDF of Y , so conditioning on X provides no information about Y ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.53,
+            0.896,
+            0.569
+          ],
+          "content": "Definition 7.1.19 (Independence of continuous r.v.s). Random variables X and Y are independent if for all x and $y ,$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.372,
+            0.582,
+            0.627,
+            0.602
+          ],
+          "content": "F _ {X, Y} (x, y) = F _ {X} (x) F _ {Y} (y).",
+          "image_source": "images/page_332_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.616,
+            0.894,
+            0.635
+          ],
+          "content": "If X and Y are continuous with joint PDF $f _ { X , Y }$ , this is equivalent to the condition"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.379,
+            0.649,
+            0.619,
+            0.67
+          ],
+          "content": "f _ {X, Y} (x, y) = f _ {X} (x) f _ {Y} (y)",
+          "image_source": "images/page_332_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.683,
+            0.606,
+            0.701
+          ],
+          "content": "for all $x , y ,$ and it is also equivalent to the condition"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.409,
+            0.716,
+            0.589,
+            0.737
+          ],
+          "content": "f _ {Y \\mid X} (y \\mid x) = f _ {Y} (y)",
+          "image_source": "images/page_332_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.75,
+            0.414,
+            0.768
+          ],
+          "content": "for all x, y such that $f _ { X } ( x ) > 0$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.778,
+            0.896,
+            0.836
+          ],
+          "content": "h 7.1.20. The marginal PDF of $Y ,   f _ { Y } ( y )$ , is a function of $y$ only; it cannot depend on x in any way. The conditional PDF $f _ { Y | X } ( y | x )$ can depend on x in general. Only in the special case of independence is $f _ { Y | X } ( y | x )$ free of x."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.844,
+            0.896,
+            0.918
+          ],
+          "content": "Sometimes we have a joint PDF for X and Y that factors as a function of x times a function of $y ,$ without knowing in advance whether these functions are the marginal PDFs, or even whether they are valid PDFs. The next result addresses this situation."
+        }
+      ]
+    },
+    {
+      "page_idx": 333,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": "Joint distributions"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": "317"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.067,
+            0.859,
+            0.087
+          ],
+          "content": "Proposition 7.1.21. Suppose that the joint PDF $f _ { X , Y }$ of X and Y factors as"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.394,
+            0.099,
+            0.605,
+            0.121
+          ],
+          "content": "f _ {X, Y} (x, y) = g (x) h (y)",
+          "image_source": "images/page_333_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.131,
+            0.896,
+            0.207
+          ],
+          "content": "for all x and $y ,$ where g and h are nonnegative functions. Then $X$ and $Y$ are independent. Also, if either $g$ or h is a valid PDF, then the other one is a valid PDF too and $g$ and $h$ are the marginal PDFs of X and $Y$ , respectively. (The analogous result in the discrete case also holds.)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.223,
+            0.795,
+            0.245
+          ],
+          "content": "Proof. Let $\\begin{array} { r } { c = \\int _ { - \\infty } ^ { \\infty } h ( y ) d y } \\end{array}$ . Multiplying and dividing by $c _ { \\gamma }$ we can write"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.257,
+            0.622,
+            0.294
+          ],
+          "content": "f _ {X, Y} (x, y) = c g (x) \\cdot \\frac {h (y)}{c}.",
+          "image_source": "images/page_333_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.303,
+            0.889,
+            0.323
+          ],
+          "content": "(The point of this is that $h ( y ) / c$ is a valid PDF.) Then the marginal PDF of $X$ is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.23,
+            0.343,
+            0.768,
+            0.385
+          ],
+          "content": "f _ {X} (x) = \\int_ {- \\infty} ^ {\\infty} f _ {X, Y} (x, y) d y = c g (x) \\int_ {- \\infty} ^ {\\infty} \\frac {h (y)}{c} d y = c g (x).",
+          "image_source": "images/page_333_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.39,
+            0.895,
+            0.429
+          ],
+          "content": "It follows that $\\begin{array} { r } { \\int _ { - \\infty } ^ { \\infty } c g ( x ) d x = 1 } \\end{array}$ since a marginal PDF is a valid PDF (knowing the integral of h gave us the integral of $g$ for free!). Then the marginal PDF of $Y$ is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.233,
+            0.438,
+            0.767,
+            0.481
+          ],
+          "content": "f _ {Y} (y) = \\int_ {- \\infty} ^ {\\infty} f _ {X, Y} (x, y) d x = \\frac {h (y)}{c} \\int_ {- \\infty} ^ {\\infty} c g (x) d x = \\frac {h (y)}{c}.",
+          "image_source": "images/page_333_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.49,
+            0.895,
+            0.528
+          ],
+          "content": "Thus, X and Y are independent with PDFs $c g ( x )$ and $h ( y ) / c ,$ respectively. If $g$ or h is already a valid PDF, then $c = 1$ , so the other one is also a valid PDF. \u0004"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.537,
+            0.895,
+            0.595
+          ],
+          "content": "h 7.1.22. In the above proposition, we need the joint PDF to factor as a function of x times a function of $y$ for all $( x , y )$ in the plane $\\mathbb { R } ^ { 2 }$ , not just for $( x , y )$ with $f _ { X , Y } ( x , y ) > 0$ . The reason for this is illustrated in the next example."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.603,
+            0.894,
+            0.66
+          ],
+          "content": "A simple case of a continuous joint distribution is when the joint PDF is constant over some region in the plane. In the following example, we’ll compare a joint PDF that is constant on a square to a joint PDF that is constant on a disk."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.669,
+            0.895,
+            0.726
+          ],
+          "content": "Example 7.1.23 (Uniform on a region in the plane). Let $( X , Y )$ be a completely random point in the square $\\{ ( x , y ) : x , y \\in [ 0 , 1 ] \\}$ , in the sense that the joint PDF of $X$ and $Y$ is constant over the square and 0 outside of it:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.335,
+            0.736,
+            0.652,
+            0.778
+          ],
+          "content": "f _ {X, Y} (x, y) = \\left\\{ \\begin{array}{l l} 1 & \\text {if} x, y \\in [ 0, 1 ], \\\\ 0 & \\text {otherwise}. \\end{array} \\right.",
+          "image_source": "images/page_333_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.786,
+            0.894,
+            0.825
+          ],
+          "content": "The constant 1 is chosen so that the joint PDF will integrate to 1. This distribution is called the Uniform distribution on the square."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.833,
+            0.894,
+            0.872
+          ],
+          "content": "Intuitively, it makes sense that X and $Y$ should be $\\mathrm { U n i f } ( 0 , 1 )$ marginally. We can check this by computing"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.305,
+            0.881,
+            0.694,
+            0.924
+          ],
+          "content": "f _ {X} (x) = \\int_ {0} ^ {1} f _ {X, Y} (x, y) d y = \\int_ {0} ^ {1} 1 d y = 1,",
+          "image_source": "images/page_333_equation_18.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 334,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.105,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "318"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.145
+          ],
+          "content": "and similarly for $f _ { Y }$ . Furthermore, X and Y are independent, since the joint PDF factors into the product of the marginal PDFs (this just reduces to $1 = 1 \\cdot 1$ , but it’s important to note that the value of X does not constrain the possible values of Y ). So the conditional distribution of Y given $X = x$ is $\\mathrm { U n i f } ( 0 , 1 )$ , regardless of $x .$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.153,
+            0.895,
+            0.189
+          ],
+          "content": "Now let $( X , Y )$ be a completely random point in the unit disk $\\{ ( x , y ) : x ^ { 2 }   +   y ^ { 2 } \\leq 1 \\}$ with joint PDF"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.329,
+            0.189,
+            0.656,
+            0.23
+          ],
+          "content": "f _ {X, Y} (x, y) = \\left\\{ \\begin{array}{l l} \\frac {1}{\\pi} & \\text {if} x ^ {2} + y ^ {2} \\leq 1, \\\\ 0 & \\text {otherwise.} \\end{array} \\right.",
+          "image_source": "images/page_334_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.236,
+            0.896,
+            0.293
+          ],
+          "content": "Again, the constant $1 / \\pi$ is chosen to make the joint PDF integrate to 1; the value follows from the fact that the integral of 1 over some region in the plane is the area of that region."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.302,
+            0.897,
+            0.435
+          ],
+          "content": "Note that X and Y are not independent, since in general, knowing the value of X constrains the possible values of $Y ;$ larger values of $\\left| X \\right|$ restrict Y to be in a smaller range. It would fall into h 7.1.22 disastrously to conclude independence from the fact that $f _ { X , Y } ( x , y )   =   g ( x ) h ( y )$ for all $( x , y )$ in the disk, where $g ( x )   =   1 / \\pi$ and $h ( y ) = 1$ are constant functions. To see from the definition that X and Y are not independent, note that, for example, $f _ { X , Y } ( 0 . 9 , 0 . 9 ) = 0$ since $( 0 . 9 , 0 . 9 )$ is not in the unit disk, but $f _ { X } ( 0 . 9 ) f _ { Y } ( 0 . 9 ) \\neq 0$ since 0.9 is in the supports of both X and $Y$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.443,
+            0.476,
+            0.46
+          ],
+          "content": "The marginal distribution of X is now"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.253,
+            0.469,
+            0.744,
+            0.515
+          ],
+          "content": "f _ {X} (x) = \\int_ {- \\sqrt {1 - x ^ {2}}} ^ {\\sqrt {1 - x ^ {2}}} \\frac {1}{\\pi} d y = \\frac {2}{\\pi} \\sqrt {1 - x ^ {2}}, \\quad - 1 \\leq x \\leq 1.",
+          "image_source": "images/page_334_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.524,
+            0.896,
+            0.58
+          ],
+          "content": "By symmetry, $\\begin{array} { r } { f _ { Y } ( y )   =   \\frac { 2 } { \\pi } \\sqrt { 1 - y ^ { 2 } } } \\end{array}$ . Note that the marginal distributions of $X$ and $Y$ are not Uniform on $[ - 1 , 1 ]$ ; rather, X and $Y$ are more likely to fall near 0 than near $\\pm 1$"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.322,
+            0.597,
+            0.675,
+            0.804
+          ],
+          "sub_type": "text_image",
+          "content": "(x,\\u221a1-x²)\n(x,-\\u221a1-x²)",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_334_image_10.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.827,
+            0.238,
+            0.843
+          ],
+          "level": 2,
+          "content": "FIGURE 7.6"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.845,
+            0.895,
+            0.884
+          ],
+          "content": "Bird’s-eye view of the Uniform joi<u>nt PD</u>F o<u>n the</u> unit disk. Conditional on $X = x$ $Y$ is restricted to the interval $[ - \\sqrt { 1 - x ^ { 2 } } , \\sqrt { 1 - x ^ { 2 } } ]$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.9,
+            0.896,
+            0.92
+          ],
+          "content": "Suppose we observe $X   =   x$ . As illustrated in Figure 7.6, this constrains $Y$ to lie"
+        }
+      ]
+    },
+    {
+      "page_idx": 335,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.039,
+            0.269,
+            0.053
+          ],
+          "content": "Joint distributions"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "319"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.067,
+            0.894,
+            0.105
+          ],
+          "continues_prev": true,
+          "content": "in the interval $[ - \\sqrt { 1 - x ^ { 2 } } , \\sqrt { 1 - x ^ { 2 } } ]$ . Specifically, the conditional distribution of $Y$ given $X = x$ is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.261,
+            0.116,
+            0.737,
+            0.164
+          ],
+          "content": "f _ {Y | X} (y | x) = \\frac {f _ {X , Y} (x , y)}{f _ {X} (x)} = \\frac {\\frac {1}{\\pi}}{\\frac {2}{\\pi} \\sqrt {1 - x ^ {2}}} = \\frac {1}{2 \\sqrt {1 - x ^ {2}}}",
+          "image_source": "images/page_335_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.174,
+            0.896,
+            0.251
+          ],
+          "content": "for $- { \\sqrt { 1 - x ^ { 2 } } }   \\leq   y   \\leq   { \\sqrt { 1 - x ^ { 2 } } }$ , and 0 otherwise. This conditional PDF is constant as a function of $y$ , <u>which</u> tell<u>s us th</u>at the conditional distribution of Y is Uniform on the interval $[ - \\sqrt { 1 - x ^ { 2 } } , \\sqrt { 1 - x ^ { 2 } } ]$ The fact that the conditional PDF is not free of x confirms the fact that X and $Y$ are not independent."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.259,
+            0.897,
+            0.373
+          ],
+          "content": "In general, for a region R in the plane, the Uniform distribution on R is defined to have joint PDF that is constant inside R and 0 outside R. The constant is the reciprocal of the area of R. If R is the rectangle $\\{ ( x , y ) : a \\leq x \\leq b , c \\leq y \\leq d \\}$ , then X and Y will be independent; unlike for a disk, the vertical slices of a rectangle all look the same. But for any region where the value of $X$ constrains the possible values of $Y$ or vice versa, X and $Y$ will not be independent. \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.382,
+            0.896,
+            0.421
+          ],
+          "content": "As another example of working with joint PDFs, let’s consider a question that comes up often when dealing with Exponentials of different rates."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.429,
+            0.897,
+            0.562
+          ],
+          "content": "Example 7.1.24 (Comparing Exponentials of different rates). Let $T _ { 1 } \\sim \\mathrm { E x p o } ( \\lambda _ { 1 } )$ and $T _ { 2 }   \\sim   \\mathrm { E x p o } ( \\lambda _ { 2 } )$ be independent. Find $P ( T _ { 1 }   <   T _ { 2 } )$ . For example, $T _ { 1 }$ could be the lifetime of a refrigerator and $T _ { 2 }$ could be the lifetime of a stove (if we are willing to assume Exponential distributions for these), and then $P ( T _ { 1 } < T _ { 2 } )$ is the probability that the refrigerator fails before the stove. We know from Chapter 5 that min $\\underline { { { { } } } } ( T _ { 1 } , T _ { 2 } ) \\sim \\operatorname { E x p o } ( \\lambda _ { 1 } + \\lambda _ { 2 } )$ , which tells us about when the first appliance failure will occur, but we may also want to know about which appliance will fail first."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.57,
+            0.195,
+            0.587
+          ],
+          "level": 2,
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.599,
+            0.894,
+            0.637
+          ],
+          "content": "We just need to integrate the joint PDF of $T _ { 1 }$ and $T _ { 2 }$ over the appropriate region, which is all $( t _ { 1 } , t _ { 2 } )$ with $t _ { 1 } > 0 , t _ { 2 } > 0$ , and $t _ { 1 } < t _ { 2 }$ . This yields"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.26,
+            0.644,
+            0.74,
+            0.894
+          ],
+          "content": "\\begin{array}{l} P (T _ {1} <   T _ {2}) = \\int_ {0} ^ {\\infty} \\int_ {0} ^ {t _ {2}} \\lambda_ {1} e ^ {- \\lambda_ {1} t _ {1}} \\lambda_ {2} e ^ {- \\lambda_ {2} t _ {2}} d t _ {1} d t _ {2} \\\\ = \\int_ {0} ^ {\\infty} \\left(\\int_ {0} ^ {t _ {2}} \\lambda_ {1} e ^ {- \\lambda_ {1} t _ {1}} d t _ {1}\\right) \\lambda_ {2} e ^ {- \\lambda_ {2} t _ {2}} d t _ {2} \\\\ = \\int_ {0} ^ {\\infty} (1 - e ^ {- \\lambda_ {1} t _ {2}}) \\lambda_ {2} e ^ {- \\lambda_ {2} t _ {2}} d t _ {2} \\\\ = 1 - \\int_ {0} ^ {\\infty} \\lambda_ {2} e ^ {- (\\lambda_ {1} + \\lambda_ {2}) t _ {2}} d t _ {2} \\\\ = 1 - \\frac {\\lambda_ {2}}{\\lambda_ {1} + \\lambda_ {2}} \\\\ = \\frac {\\lambda_ {1}}{\\lambda_ {1} + \\lambda_ {2}}. \\\\ \\end{array}",
+          "image_source": "images/page_335_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.9,
+            0.894,
+            0.92
+          ],
+          "content": "This result makes sense intuitively if we interpret $\\lambda _ { 1 }$ and $\\lambda _ { 2 }$ as rates. For example,"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Probability, Second Edition",
+      "authors": [
+        "Joseph K. Blitzstein;Jessica Hwang;"
+      ],
+      "created_at": "2019-01-18T11:22:30+05:30",
+      "modified_at": "2019-02-04T21:29:14+05:30",
+      "creator_application": "LaTeX with hyperref",
+      "producer_application": "pdfTeX-1.40.19",
+      "page_count": 636,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 320,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 321,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 322,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 323,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 324,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 325,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 326,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 327,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 328,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 329,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 330,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 331,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 332,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 333,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 334,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 335,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

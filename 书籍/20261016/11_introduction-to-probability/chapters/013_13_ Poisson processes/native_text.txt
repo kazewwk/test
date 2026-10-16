@@ -1,0 +1,2598 @@
+--- PDF page 576 ---
+13
+Poisson processes
+Poisson processes serve as a simple model for events occurring in time or space: in
+one dimension, cars passing by a highway checkpoint; in two dimensions, ﬂowers in
+a meadow; in three dimensions, stars in a region of the galaxy. Poisson processes are
+a primary building block for more complicated processes in time and space, which
+are the focus of a branch of statistics called spatial statistics.
+Poisson processes are also useful in probability, as they tie together many of the
+named distributions and provide us with insightful story proofs for results that
+might otherwise be tedious to show. This leads to a new problem-solving strategy,
+which we will demonstrate: even when a problem makes no mention of Poisson
+processes, there are sometimes ways to pretend the r.v.s are coming from a Poisson
+process so that we can use convenient Poisson process properties.
+In this chapter, we’ll review the already familiar deﬁnition of the 1D Poisson process,
+derive and discuss three important properties of the 1D Poisson process, and then
+extend these properties to Poisson processes in higher dimensions.
+13.1
+Poisson processes in one dimension
+In Section 5.6, we deﬁned a one-dimensional Poisson process and showed that the
+interarrival times are i.i.d. Exponentials. In Chapter 8 we showed that the time of
+the jth arrival (relative to some ﬁxed starting time) is Gamma. Let’s review these
+results, with notation that will help us generalize to higher dimensions.
+Deﬁnition 13.1.1 (1D Poisson process). A sequence of arrivals in continuous time
+is a Poisson process with rate λ if the following conditions hold:
+1. The number of arrivals in an interval of length t is distributed Pois(λt).
+2. The numbers of arrivals in disjoint time intervals are independent.
+Usually we will assume that the timeline starts at t = 0, in which case we have a
+Poisson process on (0, ∞), but we can use the same conditions to deﬁne a Poisson
+process on (−∞, ∞) if we want the timeline to be inﬁnite in both directions.
+559
+
+
+--- PDF page 577 ---
+560
+Introduction to Probability
+Consider a Poisson process on (0, ∞). Departing slightly from our notation in pre-
+vious chapters, let N(t) be the number of arrivals in (0, t]. Then the number of
+arrivals in (t1, t2] is N(t2) −N(t1), for 0 < t1 < t2. Let Tj be the time of the jth
+arrival. Since T1 > t is the same event as N(t) = 0 (by the count-time duality, as
+discussed in Section 5.6),
+P(T1 > t) = P(N(t) = 0) = e−λt,
+so T1 ∼Expo(λ). Next let’s condition on the ﬁrst arrival time T1 and look at the
+additional time T2 −T1 until the second arrival. Then
+(T2 −T1)|T1 ∼Expo(λ)
+by the same argument as above, since we have a fresh Poisson process starting at
+T1. Since the conditional distribution of (T2−T1)|T1 does not depend on T1, we have
+that T2 −T1 is independent of T1, so T2 −T1 ∼Expo(λ) unconditionally too.
+Continuing in this way, the interarrival times Tj −Tj−1 are independent, with
+Tj −Tj−1 ∼Expo(λ).
+So a Poisson process can be described dually as a process in which arrival counts
+are Poissons or a process in which interarrival times are Exponentials. Also note
+that since Tj is the sum of j i.i.d. Expo(λ) r.v.s,
+Tj ∼Gamma(j, λ).
+The connection with the Exponential gives us a simple way to generate n arrivals
+from a Poisson process.
+Story 13.1.2 (Generative story for 1D Poisson process). To generate n arrivals
+from a Poisson process on (0, ∞) with rate λ:
+1. Generate n i.i.d. Expo(λ) r.v.s X1, . . . , Xn.
+2. For j = 1, . . . , n, set Tj = X1 + · · · + Xj.
+Then we can take T1, . . . , Tn to be the arrival times.
+□
+Figure 13.1 depicts three realizations of Poisson processes with rates 1, 2, and 5,
+respectively, plotted up to time 10. In all three cases, we can see that despite the in-
+terarrival times being i.i.d., the arrivals are not evenly spaced. Rather, there is a lot
+of variability in the interarrival times, which produces clumps of arrivals. This phe-
+nomenon is known as Poisson clumping. It might seem like an amazing coincidence
+to observe a cluster of several arrivals that are close together in time, but Poisson
+clumping says that having such clusters is common with Poisson processes.
+
+
+--- PDF page 578 ---
+Poisson processes
+561
+0
+10
+λ = 1
+λ = 2
+λ = 5
+FIGURE 13.1
+Simulated Poisson process in one dimension, for λ = 1, 2, 5. The arrivals are far
+from evenly spaced from each other, and in fact they sometimes clump together,
+13.2
+Conditioning, superposition, and thinning
+The three most important properties to understand about the Poisson process are
+conditioning, superposition, and thinning. These correspond to properties we’ve al-
+ready seen about the Poisson distribution, so they should already be plausible.
+13.2.1
+Conditioning
+What happens when we take a Poisson process and condition on the total number
+of events in an interval? Our ﬁrst result is that conditional on the total number of
+events in an interval, the number of events in a ﬁxed subinterval is Binomial. This
+follows from Theorem 4.8.2, where we showed that we can get from the Poisson to
+the Binomial by conditioning.
+Theorem 13.2.1 (Conditional counts). Let (N(t) : t > 0) be a Poisson process
+with rate λ, and t1 < t2. The conditional distribution of N(t1) given N(t2) = n is
+N(t1) | N(t2) = n ∼Bin
+
+n, t1
+t2
+
+.
+Proof. Figure 13.2 illustrates the setup. The claim is that conditional on having a
+total of n arrivals in (0, t2], the number of arrivals in (0, t1] is Binomial, with n trials
+and success probability proportional to t1.
+Since (0, t1] and (t1, t2] are disjoint, N(t1) is independent of N(t2)−N(t1). The ﬁrst
+is distributed Pois(λt1), the second is distributed Pois(λ(t2 −t1)), and their sum is
+
+
+--- PDF page 579 ---
+562
+Introduction to Probability
+0
+t1
+t2
+N(t1)
+N(t2) - N(t1)
+FIGURE 13.2
+Conditioning. Given that n arrivals occurred in (0, t2], the conditional distribution
+of the number of arrivals in (0, t1] is Binomial with parameters n and t1/t2.
+the number of arrivals in (0, t2], namely N(t2). By Theorem 4.8.2,
+N(t1) | N(t2) = n ∼Bin
+
+n,
+λt1
+λt1 + λ(t2 −t1)
+
+,
+which is precisely what we wanted to show.
+■
+Carrying the idea of conditioning on the number of arrivals further, we have the
+following striking result: in a Poisson process, given that N(t) = n, the arrival times
+are distributed as if we threw down n i.i.d. Unif(0, t) points.
+First let’s look at a simple case, where there has been only one arrival.
+Proposition 13.2.2. In a Poisson process of rate λ, conditional on N(t) = 1, the
+ﬁrst arrival time T1 has the Unif(0, t) distribution.
+Proof. Let 0 < s < t. By a form of the count-time duality,
+P(T1 ≤s|N(t) = 1) = P(T1 ≤s, N(t) = 1)
+P(N(t) = 1)
+= P(N(s) = 1, N(t) −N(s) = 0)
+P(N(t) = 1)
+= (e−λsλs)(e−λ(t−s))
+e−λtλt
+= s
+t .
+Thus, the conditional CDF of T1 given N(t) = 1 is the Unif(0, t) CDF.
+■
+More generally, given that N(t) = n, the arrival times Tj look like the order statistics
+of n i.i.d. Unif(0, t) r.v.s. We omit the proof since in introducing order statistics in
+Chapter 8, we focused on their marginal distributions.
+Theorem 13.2.3 (Conditional times). In a Poisson process of rate λ, conditional
+on N(t) = n, the joint distribution of the arrival times T1, . . . , Tn is the same as the
+joint distribution of the order statistics of n i.i.d. Unif(0, t) r.v.s.
+
+
+--- PDF page 580 ---
+Poisson processes
+563
+From Chapter 8, we know that the order statistics of Unif(0, 1) r.v.s are Betas, so
+the conditional distributions of the Tj are scaled Betas; to get Beta distributions,
+we can just divide the Tj by t so that their support is (0, 1):
+t−1Tj | N(t) = n ∼Beta(j, n −j + 1).
+We now have another way to generate arrivals from a Poisson process, this time for
+a speciﬁc interval instead of a speciﬁc number of arrivals.
+Story 13.2.4 (Generative story for Poisson process, take 2). To generate arrivals
+from a Poisson process with rate λ in an interval (0, t]:
+1. Generate the total number of events in the interval, N(t) ∼Pois(λt).
+2. Given N(t) = n, generate n i.i.d. Unif(0, t) r.v.s U1, . . . , Un.
+3. For j = 1, . . . , n, set Tj = U(j).
+□
+This is actually the generative story we used to create Figure 13.1, since we knew
+we wanted to simulate in the interval (0, 10].
+Example 13.2.5 (Users on a website). Users visit a certain website according to
+a Poisson process with rate λ1 users per minute, where an “arrival” at a certain
+time means that at that time someone starts browsing the site. After arriving at the
+site, each user browses the site for an Expo(λ2) amount of time (and then leaves),
+independent of other users.
+Suppose that at time 0, no one is using the site. Let Nt be the number of users
+who arrive in the interval (0, t], and let Ct be the number of users who are currently
+browsing the site at time t.
+(a) Let X be the time of arrival and Y be the time of departure for a user who
+arrives at a Uniform time point in [0, t]. Find the joint PDF of X and Y .
+(b) Let pt be the probability that a user who arrives at a Uniform time point in
+(0, t] is still browsing the site at time t. Find pt.
+(c) Find the distribution of Ct in terms of λ1, λ2, and t.
+(d) Little’s law is a very general result, which says the following:
+The long-run average number of customers in a stable system is the long-term av-
+erage arrival rate multiplied by the average time a customer spends in the system.
+Explain what happens to E(Ct) for t large, and how this can be interpreted in terms
+of Little’s law.
+Solution:
+(a) We have X ∼Unif(0, t). Given X = x, Y is an Expo(λ2) shifted to start at x,
+i.e., (Y −x)|(X = x) ∼Expo(λ2). So the joint PDF of X and Y is
+f(x, y) = fX(x)fY |X(y|x) = λ2
+t e−λ2(y−x), for 0 < x < t and x < y.
+
+
+--- PDF page 581 ---
+564
+Introduction to Probability
+(b) With notation as in (a), we want to ﬁnd pt = P(Y > t). This can be done by
+integrating the joint PDF over all (x, y) with y > t:
+P(Y > t) = 1
+t
+Z t
+0
+Z ∞
+t
+λ2e−λ2(y−x)dydx
+= 1
+t
+Z t
+0
+eλ2x
+Z ∞
+t
+λ2e−λ2ydy
+
+dx
+= e−λ2t
+t
+Z t
+0
+eλ2xdx
+= 1 −e−λ2t
+λ2t
+.
+(c) By Theorem 13.2.3, given Nt = n we have that the n arrival times in (0, t] are
+i.i.d. and uniform in that interval. Therefore, Ct|Nt ∼Bin(Nt, pt), with pt as above,
+and Nt ∼Pois(λ1t). So by the chicken-egg story (Story 7.1.9),
+Ct ∼Pois(λ1ptt).
+That is,
+Ct ∼Pois
+λ1(1 −e−λ2t)
+λ2
+
+.
+(d) As t →∞, E(Ct) →λ1/λ2. This agrees with Little’s law since it says the long-
+run average number of users in the system (browsing the site) is the rate at which
+users arrive (λ1) times the average time a user browses in a session (1/λ2).
+□
+13.2.2
+Superposition
+The next property we will examine is superposition: if we take two independent
+Poisson processes and overlay them, we get another Poisson process. (The combined
+process is a Poisson process in its own right, but we can imagine that the arrivals
+are tagged to indicate which of the underlying processes they came from.)
+Theorem 13.2.6 (Superposition). Let (N1(t) : t > 0) and (N2(t) : t > 0) be
+independent Poisson processes with rates λ1 and λ2, respectively. Then the combined
+process N(t) = N1(t) + N2(t) is a Poisson process with rate λ1 + λ2.
+Proof. Let’s verify the two properties in the deﬁnition of Poisson process.
+1. For all t > 0, N1(t) ∼Pois(λ1t) and N2(t) ∼Pois(λ2t), independently, so N(t) ∼
+Pois((λ1 + λ2)t), by Theorem 4.8.1. The same argument applies for any interval of
+length t, not just intervals of the form (0, t].
+2. Arrivals in disjoint intervals are independent in the combined process because
+they are independent in the two individual processes, and the individual processes
+are independent of each other.
+■
+
+
+--- PDF page 582 ---
+Poisson processes
+565
+There is a very natural way to generate a superposition.
+Story 13.2.7 (Generative story for superposition). To generate the superposition of
+two independent Poisson processes, (N1(t) : t > 0) with rate λ1 and (N2(t) : t > 0)
+with rate λ2:
+1. Generate arrivals from the Poisson process (N1(t) : t > 0).
+2. Generate arrivals from the Poisson process (N2(t) : t > 0).
+3. Superpose the results of steps 1 and 2.
+□
+0
+10
+λ1 = 0.5
+λ2 = 0.5
+λ1 + λ2 = 1
+FIGURE 13.3
+Superposition. The superposition of independent Poisson processes is a Poisson
+process, and the rates add. The top two timelines are independent Poisson processes,
+each with rate 0.5. The bottom timeline is the superposition of the top two Poisson
+processes and is itself a Poisson process with rate 1.
+Figure 13.3 depicts a superposed Poisson process consisting of ×’s and ⋄’s. Let’s
+call the ×’s “type-1 events” and the ⋄’s “type-2 events”. A natural question to ask
+is: what is the probability of observing a type-1 event before a type-2 event?
+Theorem 13.2.8 (Probability of type-1 event before type-2 event). Consider two
+independent Poisson processes: a Poisson process of type-1 arrivals, with rate λ1,
+and a Poisson process of type-2 arrivals, with rate λ2. In the superposition of these
+two processes, the probability of the ﬁrst arrival being type-1 is λ1/(λ1 + λ2).
+Proof. Let T be the time until the ﬁrst type-1 event and let V be the time until
+the ﬁrst type-2 event. We seek P(T ≤V ). We could do this with 2D LOTUS,
+integrating the joint PDF of T and V over the region of interest in the 2D plane.
+But it turns out we can avoid calculus altogether.
+We have T ∼Expo(λ1) and V ∼Expo(λ2), independently. Rescaling, let
+˜T = λ1T, ˜V = λ2V.
+Then ˜T, ˜V are i.i.d. Expo(1).
+
+
+--- PDF page 583 ---
+566
+Introduction to Probability
+Letting U = ˜T/( ˜T + ˜V ), we have
+P(T ≤V ) = P
+ ˜T
+λ1
+≤
+˜V
+λ2
+!
+= P
+ 
+˜T
+˜T + ˜V
+≤
+˜V
+˜T + ˜V
+· λ1
+λ2
+!
+= P
+
+U ≤(1 −U) · λ1
+λ2
+
+= P
+
+U ≤
+λ1
+λ1 + λ2
+
+.
+Since ˜T, ˜V ∼Expo(1), the bank–post oﬃce story tells us that U ∼Beta(1, 1). In
+other words, U is standard Uniform! Thus, P(T ≤V ) = λ1/(λ1 + λ2). Note that
+when λ1 = λ2 this reduces to 1/2, as it should by symmetry.
+■
+The above result applies to the ﬁrst arrival in the combined Poisson process. After
+the ﬁrst arrival, however, the same reasoning applies to the second arrival: by the
+memoryless property, the time to the next type-1 event is Expo(λ1) and the time
+to the next type-2 event is Expo(λ2), independent of the past. Therefore the second
+arrival is a type-1 arrival with probability λ1/(λ1 + λ2), independent of the ﬁrst
+arrival. Similarly, all of the arrival types can be viewed as i.i.d. coin tosses with
+probability λ1/(λ1 + λ2) of Heads, where Heads corresponds to type-1.
+This yields an alternative generative story for the superposition of two independent
+Poisson processes: we can ﬁrst generate an Expo(λ1 + λ2) r.v. to decide when the
+next arrival occurs, and then independently ﬂip a coin with probability λ1/(λ1+λ2)
+of Heads to decide what kind of arrival it is.
+Story 13.2.9 (Generative story for superposition, take 2). To generate the super-
+position of two independent Poisson processes, with rates λ1 and λ2:
+1. Generate i.i.d. Expo(λ1 + λ2) r.v.s X1, X2, . . . , and let the jth arrival
+be at time Tj = X1 + · · · + Xj.
+2. Generate i.i.d. r.v.s I1, I2, · · · ∼Bern(λ1/(λ1 + λ2)), independent of
+X1, X2, . . . . Let the jth arrival be type-1 if Ij = 1, and type-2 otherwise.
+□
+This story provides us with a quick proof of a result known as the competing risks
+theorem, which seems like a surprising independence result when stated on its own
+but becomes very intuitive when viewed in the context of Poisson processes.
+Example 13.2.10 (Competing risks). The lifetime of Fred’s refrigerator is Y1 ∼
+Expo(λ1), and the lifetime of his dishwasher is Y2 ∼Expo(λ2), independent of
+Y1. Show that min(Y1, Y2), the time of the ﬁrst appliance failure, is independent of
+I(Y1 < Y2), the indicator that the refrigerator failed ﬁrst. This may seem surprising.
+
+
+--- PDF page 584 ---
+Poisson processes
+567
+For example, if the average lifetime of his refrigerator is 15 years and the average
+lifetime of his dishwasher is 7 years, and then one of these appliances fails after 7
+years, it would be natural to guess that it was the dishwasher that failed. But in
+fact, we will show that knowing the time of the ﬁrst appliance failure provides no
+information about which appliance failed.
+Solution: We will use an embedding strategy, using Poisson process ideas even though
+this problem doesn’t mention Poisson processes anywhere! We will embed the r.v.s
+Y1 and Y2 into a Poisson process that we ourselves invent, in order to take advantage
+of the properties of Poisson processes. So let’s imagine there is an entire Poisson
+process of refrigerator failures with rate λ1 and a Poisson process of dishwasher
+failures with rate λ2.
+We can interpret Y1 as the waiting time for the ﬁrst arrival in the refrigerator
+process and Y2 as the waiting time for the ﬁrst arrival in the dishwasher process.
+This approach is valid since (min(Y1, Y2), I(Y1 < Y2)) is a function of (Y1, Y2), so
+what matters is the joint distribution of (Y1, Y2), and the way we construct (Y1, Y2)
+does have the correct joint distribution.
+Furthermore, min(Y1, Y2) is the waiting time for the ﬁrst arrival in the superposition
+of the two Poisson processes, and I(Y1 < Y2) is the indicator of this arrival being a
+type-1 event. But in the above generative story, the arrival times and event types
+in the superposed Poisson process are generated completely independently! Hence,
+min(Y1, Y2) and I(Y1 < Y2) are independent, with min(Y1, Y2) ∼Expo(λ1 +λ2) and
+I(Y1 < Y2) ∼Bern(λ1/(λ1 + λ2)).
+□
+A direct consequence of Story 13.2.9 is that if we project a superposed Poisson
+process into discrete time, keeping the sequence of type-1 and type-2 arrivals but not
+the arrival times themselves, we are left with i.i.d. Bern(λ1/(λ1+λ2)) r.v.s I1, I2, . . . ,
+where Ij is the indicator of the jth arrival being type-1. Figure 13.4 illustrates what
+it means to remove the continuous-time information from the Poisson process, and
+Theorem 13.2.11 states the result formally.
+...
+FIGURE 13.4
+Projection into discrete time. Stripping out the continuous-time information from a
+superposed Poisson process produces a sequence of i.i.d. indicators of type-1 versus
+type-2 events. Here × represents type-1 events and ⋄represents type-2 events.
+Theorem 13.2.11 (Projection of superposition into discrete time). Consider the
+superposition (N(t) : t > 0) of two independent Poisson processes with rates λ1 and
+λ2. For j = 1, 2, . . . , let Ij be the indicator of the jth event being from the Poisson
+process with rate λ1. Then the Ij are i.i.d. Bern(λ1/(λ1 + λ2)).
+
+
+--- PDF page 585 ---
+568
+Introduction to Probability
+Using this result, we can prove with a story that a Gamma mixture of Poissons
+is Negative Binomial, which we ﬁrst learned from Fred’s adventures in Blotchville
+(Story 8.4.5). We’ll consider a special case ﬁrst.
+Theorem 13.2.12 (Exponential mixture of Poissons is Geometric). Suppose that
+X ∼Expo(λ) and Y |X = x ∼Pois(x). Then Y ∼Geom(λ/(λ + 1)).
+Proof. As with the competing risks theorem, we embed X and Y into Poisson
+processes. Consider two independent Poisson processes, a process of failures arriving
+at rate 1 and another of successes arriving at rate λ. Let X be the time of the ﬁrst
+success; then X ∼Expo(λ). Let Y be the number of failures before the time of the
+ﬁrst success. By the deﬁnition of a Poisson process with rate 1, Y |X = x ∼Pois(x).
+Therefore X and Y satisfy the conditions of the theorem.
+To get the marginal distribution of Y , strip out the continuous-time information!
+In discrete time we have i.i.d. Bernoulli trials with success probability λ/(λ + 1),
+and Y is deﬁned as the number of failures before the ﬁrst success, so by the story
+of the Geometric distribution, Y ∼Geom(λ/(λ + 1)).
+■
+The reasoning for the general case is analogous.
+Theorem 13.2.13 (Gamma mixture of Poissons is Negative Binomial). Suppose
+that X ∼Gamma(r, λ) and Y |X = x ∼Pois(x). Then Y ∼NBin(r, λ/(λ + 1)).
+Proof. Consider two independent Poisson processes, a process of failures arriving
+at rate 1 and another of successes arriving at rate λ. Let X be the time of the rth
+success, so X ∼Gamma(r, λ). Let Y be the number of failures before the time of the
+rth success. Then Y |X = x ∼Pois(x) by deﬁnition of Poisson process. We have that
+Y is the number of failures before the rth success in a sequence of i.i.d. Bernoulli
+trials with success probability λ/(λ + 1), so Y ∼NBin(r, λ/(λ + 1)).
+■
+13.2.3
+Thinning
+The last property of Poisson processes we will discuss is thinning: if we take a Poisson
+process and, for each arrival, independently ﬂip a coin to decide whether it is a type-
+1 event or type-2 event, we end up with two independent Poisson processes.
+Theorem 13.2.14 (Thinning). Let (N(t) : t > 0) be a Poisson process with rate
+λ, and classify each arrival as a type-1 event with probability p and a type-2 event
+with probability 1−p, where these classiﬁcations are independent of each other and
+independent of the arrival times. Then the type-1 events form a Poisson process
+with rate λp, the type-2 events form a Poisson process with rate λ(1−p), and these
+two processes are independent.
+Proof. Let λ1 = λp and λ2 = λ(1 −p), so λ = λ1 + λ2 and p = λ1/(λ1 + λ2).
+Then we ﬁnd ourselves in Story 13.2.9. But Story 13.2.7 and Story 13.2.9 are two
+
+
+--- PDF page 586 ---
+Poisson processes
+569
+equivalent generative stories for superposition! The probabilistic structures of the
+outputs of the two stories are identical, thinking of the arrivals in Story 13.2.7 from
+(Ni(t) : t > 0) as being type-i. So we can assume instead that Story 13.2.7 was used
+to generate the process. Happily, in this story we know from the beginning that the
+type-1 process is independent of the type-2 process.
+■
+Thus we can superpose independent Poisson processes to get a combined Poisson
+process, or we can split a single Poisson process into independent Poisson processes.
+Figure 13.5 is an illustration of thinning. We simply ﬂipped Figure 13.3 upside-down,
+which is appropriate because thinning is the ﬂip side of superposition!
+λp = 0.5
+λ(1 - p) = 0.5
+λ = 1
+0
+10
+FIGURE 13.5
+Thinning. Starting with a single Poisson process, if we let each arrival be type-1
+with probability p and type-2 with probability 1 −p, we obtain two independent
+Poisson processes with rates λp and λ(1 −p). Here × represents type-1 events and
+⋄represents type-2 events, and we take p = 0.5.
+Thinning is the Poisson process analog of the chicken-egg story. Suppose that we thin
+a Poisson process (N(t) : t > 0) of rate λ as in the statement of Theorem 13.2.14,
+and let (Ni(t) : t > 0) be the process of type-i arrivals. Thinking of type-1 arrivals
+as eggs that hatch, it follows immediately from the chicken-egg story that we have
+N1(t) ∼Pois(λpt), N2(t) ∼Pois(λ(1 −p)t), with N1(t) independent of N2(t).
+For practice and as an example of the elegance of thinning, let’s ﬁnd the distribution
+of a random sum in two diﬀerent ways: using MGFs and conditional expectation,
+and using thinning.
+Example 13.2.15 (First Success sum of Exponentials). Let X1, X2, . . .
+be
+i.i.d. Expo(λ) and N ∼FS(p), independent of the Xj. Find the distribution of
+the random sum
+Y =
+N
+X
+j=1
+Xj.
+Solution:
+We’ll solve this problem twice, ﬁrst with tools from Chapter 9 and then with a
+Poisson process story that uses thinning. For the ﬁrst method, we recognize Y as
+the sum of a random number of random variables, so we can ﬁnd the MGF of
+
+
+--- PDF page 587 ---
+570
+Introduction to Probability
+Y using Adam’s law, conditioning on N. Recalling that the MGF of the Expo(λ)
+distribution is λ/(λ −t) for t < λ, we have
+E
+ etY 
+= E
+
+E
+
+et PN
+j=1 XjN
+
+= E
+ E
+ etX1
+E
+ etX2
+. . . E
+ etXN
+|N
+
+= E
+
+E
+ etX1N
+= E
+ 
+λ
+λ −t
+N!
+.
+Now we can use LOTUS with the FS(p) PMF,
+P(N = k) = qk−1p for k = 1, 2, . . .
+The LOTUS sum is
+E
+ 
+λ
+λ −t
+N!
+=
+∞
+X
+k=1
+
+λ
+λ −t
+k
+qk−1p,
+which simpliﬁes to λp/(λp −t) for t < λp, after doing some algebra and summing a
+geometric series. This is the Expo(λp) MGF, so Y ∼Expo(λp).
+Now let’s see how Poisson processes can spare us from algebra while also providing
+insight into why Y is Exponential. Using the embedding strategy, since the Xj
+are i.i.d. Expo(λ) we are free to interpret the Xj as interarrival times in a Poisson
+process with rate λ. So let’s imagine such a Poisson process, and let’s further imagine
+that each of the arrivals is a special arrival with probability p, independently. Then
+we can interpret N as the number of arrivals until the ﬁrst special arrival and Y
+as the waiting time for the ﬁrst special arrival. But by the thinning property, the
+special arrivals form a Poisson process with rate λp. The waiting time for the ﬁrst
+special arrival is thus distributed Expo(λp).
+□
+Thinning works analogously with more than 2 types. In this setting, thinning is
+sometimes called the coloring theorem.
+Theorem 13.2.16 (Coloring). Let (N(t) : t > 0) be a Poisson process with rate
+λ, and C be a ﬁnite set of “colors”, labeled from 1 through c. Suppose that each
+arrival gets randomly assigned a color from C, with color i having probability pi.
+The color assignments are independent of each other and independent of the arrival
+times. Let (Ni(t) : t > 0) be the color i process, i.e., Ni(t) is the number of arrivals
+with color i in (0, t]. Then (Ni(t) : t > 0) is a Poisson process with rate λpi, for
+i = 1, 2, . . . , c, and these c monochromatic processes are independent.
+Proof. We will induct on c. For c = 1 there is nothing to show. For c = 2 the result
+is the thinning theorem that we already proved. Now assume that the result holds
+
+
+--- PDF page 588 ---
+Poisson processes
+571
+for c colors, and show it when there are c + 1 colors. Let’s call color 1 green. Use
+thinning to assign each arrival to be green with probability p1 and non-green with
+probability 1 −p1. This splits the Poisson process into 2 independent processes: a
+green process of rate λp1 and a non-green process of rate λ(1−p1). By the inductive
+hypothesis, we can then split the non-green process into c independent processes,
+one for each of colors 2, 3, . . . , c + 1, where color j now gets probability
+˜pj =
+pj
+1 −p1
+=
+pj
+p2 + p3 + · · · + pc+1
+,
+for j = 2, 3, . . . , c + 1. We then have c + 1 independent Poisson processes, one for
+each color, such that the process for color j has rate λpj for j = 1, 2, . . . , c + 1.
+■
+The next example shows how coloring can help us decompose a complicated Poisson
+process into more manageable components.
+Example 13.2.17 (Cars on a highway). Suppose cars enter a one-way highway
+from a common entrance, following a Poisson process with rate λ. The ith car has
+velocity Vi and travels at this velocity forever; no time is lost when one car overtakes
+another car. Assume the Vi are i.i.d. discrete r.v.s whose support is a ﬁnite set of
+positive values. The process starts at time 0, and we’ll consider the highway entrance
+to be at location 0.
+For ﬁxed locations a and b on the highway with 0 < a < b, let Zt be the number of
+cars located in the interval [a, b] at time t. (For instance, on an interstate highway
+running west to east through the midwestern United States, a could be Kansas
+City and b could be St. Louis; then Zt would be the number of cars on the highway
+that are in the state of Missouri at time t.) Figure 13.6 illustrates the setup of the
+problem and the deﬁnition of Zt.
+Assume that t is large enough that t > b/Vi for all possible values of Vi. Show that
+Zt has a Poisson distribution with mean λ(b −a)E(V −1
+i
+).
+Solution:
+Since the Vi are discrete with ﬁnite support, we can enumerate the set of possible
+velocities v1, . . . , vm and their probabilities p1, . . . , pm. After doing so, we realize that
+the cars entering the highway represent m types of arrivals, each corresponding to a
+diﬀerent velocity. This suggests breaking up our overall Poisson process into simpler
+ones. Let’s color the Poisson process m ways according to the velocity of the cars,
+resulting in a Poisson process with rate λp1 for cars of velocity v1, a Poisson process
+with rate λp2 for cars of velocity v2, and so forth.
+For each of these m separate Poisson processes, we can ask: within what time interval
+do cars from this process have to enter the highway in order to be in [a, b] at time
+t? This is a matter of physics, not statistics:
+distance = velocity · time,
+so a car that enters the highway at time s with velocity v will be at position (t−s)v
+
+
+--- PDF page 589 ---
+572
+Introduction to Probability
+0
++
++
++
++
++
++
++
++
+time
+t
+distance along highway
+a
+b
+0
+FIGURE 13.6
+Cars enter a highway. Their entrance times form a Poisson process and are indicated
+by ×’s on the time axis. The ith car has velocity Vi, represented by the slope of
+the line emanating from the ith × symbol. We are interested in Zt, the number of
+cars located in the interval [a, b] at time t. Here we observe Zt = 3, depicted by the
+three stars.
+at time t. Thus, in order for the car’s position to be between a and b, we require
+its arrival time to be between t −b/v and t −a/v. (By our assumption that t is
+suﬃciently large, we don’t need to worry about t −b/v being negative.) If the car
+arrives prior to time t−b/v, it will already have passed b by time t; if the car arrives
+after time t −a/v, it won’t have reached a by time t.
+We now have the answer for each of the separate Poisson processes. Within the
+process where cars have velocity vj, the number of cars arriving between t −b/vj
+and t −a/vj, which we’ll call Ztj, is distributed Pois(λpj(b −a)/vj): the rate of the
+process is λpj, and the length of the interval [t −b/vj, t −a/vj] is (b −a)/vj.
+Since the separate processes are independent, Zt1 through Ztm are independent
+Poisson r.v.s. Thus,
+Zt = Zt1 + · · · + Ztm ∼Pois
+
+λ(b −a)
+m
+X
+j=1
+pj
+vj
+
+,
+and Pm
+j=1 pj/vj is the expectation of V −1
+i
+by LOTUS. This is what we wanted.
+□
+
+
+--- PDF page 590 ---
+Poisson processes
+573
+To wrap up this section, here is a table describing the correspondences between
+properties of the Poisson process and properties of the Poisson distribution. In the
+second column, Y1 ∼Pois(λ1) and Y2 ∼Pois(λ2) are independent.
+Poisson process
+Poisson distribution
+conditioning
+Y1|Y1 + Y2 = n ∼Bin(n, λ1/(λ1 + λ2))
+superposition
+Y1 + Y2 ∼Pois(λ1 + λ2)
+thinning
+chicken-egg story
+13.3
+Poisson processes in multiple dimensions
+Poisson processes in multiple dimensions are deﬁned analogously to the 1D Poisson
+process: we just replace the notion of length with the notion of area or volume. For
+concreteness, we will now deﬁne 2D Poisson processes, after which it should also be
+clear by analogy how to deﬁne Poisson processes in higher dimensions.
+Deﬁnition 13.3.1 (2D Poisson process). Events in the plane R2 are a 2D Poisson
+process with intensity λ if the following conditions hold:
+1. The number of events in a region A is distributed Pois(λ · area(A)).
+2. The numbers of events in disjoint regions are independent of each other.
+As one might guess, conditioning, superposition, and thinning properties apply to
+2D Poisson processes. Let N(A) be the number of events in a region A, and let
+B ⊆A. Given N(A) = n, the conditional distribution of N(B) is Binomial:
+N(B)|N(A) = n ∼Bin
+
+n, area(B)
+area(A)
+
+.
+Conditional on the total number of events in the larger region A, the probability of
+an event falling into a subregion is proportional to the area of the subregion; thus the
+locations of the events are conditionally Uniform, and we can generate a 2D Poisson
+process in A by ﬁrst generating the number of events N(A) ∼Pois(λ · area(A)) and
+then placing the events uniformly at random in A. Figure 13.7 shows simulated 2D
+Poisson processes in the square [0, 5] × [0, 5] for intensities λ = 1, 2, 5.
+As in the 1D case, the superposition of independent 2D Poisson processes is a 2D
+Poisson process, and the intensities add. We can also thin a 2D Poisson process to
+get independent 2D Poisson processes.
+One property of 1D Poisson processes for which we haven’t asserted a higher-
+dimensional analog is the count-time duality. The next example, the last in this
+chapter, will lead us to a spatial analog: a count-distance duality.
+
+
+--- PDF page 591 ---
+574
+Introduction to Probability
+FIGURE 13.7
+Simulated 2D Poisson process in the square [0, 5] × [0, 5], for λ = 1, 2, 5.
+Example 13.3.2 (Nearest star). Stars in a certain universe are distributed accord-
+ing to a 3D Poisson process with intensity λ. If you live in this universe, what is
+the distribution of the distance from you to the nearest star?
+Solution:
+In a 3D Poisson process with intensity λ, the number of events in a region of space
+V is Poisson with mean λ·volume(V ). Let R be the distance from you to the nearest
+star. The key observation is that in order for the event R > r to occur, there must
+be no stars within a sphere of radius r around you; in fact, these two events are
+equivalent. For any r > 0, let Nr be the number of events within radius r of you,
+so Nr ∼Pois(λ · 4
+3πr3). Then we have a count-distance duality:
+R > r is the same event as Nr = 0,
+Therefore,
+P(R > r) = P(Nr = 0) = e−4
+3λπr3,
+which gives that the CDF of R is
+P(R ≤r) = 1 −e−4
+3λπr3,
+for r > 0 (and 0 otherwise). This is a Weibull (see Example 6.5.5). Speciﬁcally,
+R ∼Wei
+4πλ
+3 , 3
+
+.
+□
+Poisson processes have numerous extensions, some of which are explored in the
+exercises. We can allow λ to vary as a function of time or space instead of remaining
+constant; this is called an inhomogeneous Poisson process. We can allow λ to be a
+random variable; this is called a Cox process. Finally, we can allow the rate to
+increase by λ after each successive arrival; this is called a Yule process.
+
+
+--- PDF page 592 ---
+Poisson processes
+575
+13.4
+Recap
+A Poisson process in one dimension is a sequence of arrivals such that the number
+of arrivals in any interval is Poisson (with mean proportional to the length of the
+interval) and disjoint intervals have independent numbers of arrivals. Some opera-
+tions that we can perform with Poisson processes are conditioning, superposition,
+and thinning. Conditioning on the total number of arrivals in an interval allows
+us to view the arrivals as independent Uniforms on the interval. Superposition and
+thinning are complementary, and they allow us to split and merge Poisson processes
+when convenient. All of these properties have analogs for higher dimensions.
+Poisson processes tie together many of the named distributions we have studied in
+this book:
+• Poisson for the arrival counts,
+• Exponential and Gamma for the interarrival times and arrival times,
+• Binomial for the conditional counts,
+• Uniform and (scaled) Beta for the conditional arrival times,
+• Geometric and Negative Binomial for the discrete waiting times for special arrivals.
+Poisson processes are also especially amenable to story proofs. A problem-solving
+strategy we used several times in this chapter is to embed r.v.s into a Poisson process
+in the hopes of discovering a story proof, even when the original problem appears
+to be unrelated to Poisson processes.
+Poisson processes unite two of the important themes of this book, named distribu-
+tions and stories, in a natural way. We think it is ﬁtting to end with a topic that
+weaves together the story threads from throughout the book.
+13.5
+R
+1D Poisson process
+In Chapter 5, we discussed how to simulate a speciﬁed number of arrivals from a
+one-dimensional Poisson process by using the fact that the interarrival times are
+i.i.d. Exponentials. In this chapter, Story 13.2.4 tells us how to simulate a Poisson
+process within a speciﬁed interval (0, L]. We ﬁrst generate the number of arrivals
+N(L), which is distributed Pois(λL). Conditional on N(L) = n, the arrival times
+
+
+--- PDF page 593 ---
+576
+Introduction to Probability
+are distributed as the order statistics of n i.i.d. Unif(0, L) r.v.s. The following code
+simulates arrivals from a Poisson process with rate 10 in the interval (0, 5]:
+L <- 5
+lambda <- 10
+n <- rpois(1,lambda*L)
+t <- sort(runif(n,0,L))
+To visualize the Poisson process we have generated, we can plot the cumulative
+number of arrivals N(t) as a function of t:
+plot(t,1:n,type="s")
+This produces a staircase plot as in Figure 13.8.
+0
+1
+2
+3
+4
+5
+0
+10
+20
+30
+40
+50
+t
+N(t)
+FIGURE 13.8
+Number of arrivals in a Poisson process with rate 10 in the interval (0, 5].
+Thinning
+It is straightforward to thin a Poisson process in R. The following code starts with a
+vector of arrival times t and the corresponding number of arrivals n from a Poisson
+process of rate λ on some interval, generated as above. For each arrival, we ﬂip a coin
+with probability p of Heads; these coin tosses are stored in the vector y. Finally,
+the arrivals for which the coin landed Heads are labeled as type-1; the rest are
+labeled as type-2. The resulting vectors of arrival times, t1 and t2, are realizations
+of independent Poisson processes of rates λp and λ(1−p), by Theorem 13.2.14.
+
+
+--- PDF page 594 ---
+Poisson processes
+577
+We can carry out this procedure for p = 0.3 as follows:
+p <- 0.3
+y <- rbinom(n,1,p)
+t1 <- t[y==1]
+t2 <- t[y==0]
+2D Poisson process
+Simulating a 2D Poisson process of rate λ on a square is nearly as easy as simu-
+lating a 1D Poisson process. In the square (0, L] × (0, L], the number of arrivals is
+distributed Pois(λL2). Conditional on the number of arrivals, the locations of the
+arrivals are i.i.d. Uniform points in the square. By Example 7.1.23, the coordinates
+for each of these points are i.i.d. Unif(0, L). So for L = 5, λ = 10, we can type:
+L <- 5
+lambda <- 10
+n <- rpois(1,lambda*L^2)
+x <- runif(n,0,L)
+y <- runif(n,0,L)
+13.6
+Exercises
+1.
+Passengers arrive at a bus stop according to a Poisson process with rate λ. The arrivals
+of buses are exactly t minutes apart. Show that on average, the sum of the waiting times
+of the riders on one of the buses is 1
+2λt2.
+2.
+Earthquakes occur over time according to a Poisson process with rate λ. The jth earth-
+quake has intensity Zj, where the Zj are i.i.d. with mean µ and variance σ2. Find the
+mean and variance of the cumulative intensity of all the earthquakes up to time t.
+3.
+Alice receives phone calls according to a Poisson process with rate λ. Unfortunately she
+has lost her cell phone charger. The battery’s remaining life is a random variable T with
+mean µ and variance σ2. Let N(T) be the number of phone calls she receives before the
+battery dies; ﬁnd E(N(T)), Var(N(T)), and Cov(T, N(T)).
+4.
+Emails arrive in Bob’s inbox according to a Poisson process with rate λ, measured
+in emails per hour; each email is work-related with probability p and personal with
+probability 1 −p. The amount of time it takes to answer a work-related email is a
+random variable with mean µW and variance σ2
+W , the amount of time it takes to answer
+a personal email has mean µP and variance σ2
+P , and the response times for diﬀerent
+emails are independent.
+What is the average amount of time Bob has to spend answering all the emails that
+arrive in a t-hour interval? What about the variance?
+5.
+In an endless soccer match, goals are scored according to a Poisson process with rate λ.
+Each goal is made by team A with probability p and team B with probability 1 −p. For
+j > 1, the jth goal is a turnaround if it is made by a diﬀerent team than the (j −1)st
+goal; for example, in the sequence AABBA. . . , the 3rd and 5th goals are turnarounds.
+
+
+--- PDF page 595 ---
+578
+Introduction to Probability
+(a) In n goals, what is the expected number of turnarounds?
+(b) If an A-to-B turnaround has just occurred, what is the expected time until the next
+B-to-A turnaround?
+6.
+Let Nt be the number of arrivals up until time t in a Poisson process of rate λ, and let
+Tn be the time of the nth arrival. Consider statements of the form
+P (Nt ≶1 n) = P (Tn ≶2 t) ,
+where ≶1 and ≶2 are replaced by symbols from the list <, ≤, ≥, >. Which of these
+statements are true?
+7.
+Claims against an insurance company follow a Poisson process with rate λ > 0. A total
+of N claims were received over two disjoint time periods of combined length t = t1 + t2,
+with ti the length of period i.
+(a) Given this information, derive the conditional probability distribution of N1, the
+number of claims made in the ﬁrst period, given N.
+(b) The amount paid for the ith claim is Xi, with X1, X2, . . . i.i.d. and independent
+of the claims process. Let E(Xi) = µ, Var(Xi) = σ2, for i = 1, . . . , N. Given N, ﬁnd
+the mean and variance of the total claims paid in period 1. That is, ﬁnd these two
+conditional moments of the quantity
+W1 =
+N1
+X
+i=1
+Xi,
+where (by convention) W1 = 0 if N1 = 0.
+8.
+On a certain question-and-answer website, N ∼Pois(λ1) questions will be posted to-
+morrow, with λ1 measured in questions/day. Given N, the post times are i.i.d. and
+uniformly distributed over the day (a day begins and ends at midnight). When a ques-
+tion is posted, it takes an Expo(λ2) amount of time (in days) for an answer to be posted,
+independent of what happens with other questions.
+(a) Find the probability that a question posted at a uniformly random time tomorrow
+will not yet have been answered by the end of that day.
+(b) Find the joint distribution of how many answered and unanswered questions posted
+tomorrow there will be at the end of that day.
+9.
+An inhomogeneous Poisson process in one dimension is a Poisson process whose rate,
+instead of being constant, is a nonnegative function λ(t) of time. Formally, we require
+that the number of arrivals in the interval [t1, t2) be Poisson-distributed with mean
+R t2
+t1 λ(t)dt and that disjoint intervals be independent. When λ(t) is constant, this reduces
+to the deﬁnition of the ordinary or homogeneous Poisson process.
+(a) Show that we can generate arrivals from an inhomogeneous Poisson process in the
+interval [t1, t2) using the following procedure.
+1. Let λmax be the maximum value of λ(t) in the interval [t1, t2). Create a 2D rectangle
+[t1, t2) × [0, λmax], and plot the function λ(t) in the rectangle.
+2. Generate N ∼Pois(λmax(t2 −t1)), and place N points uniformly at random in the
+rectangle.
+3. For each of the N points: if the point falls below the curve λ(t), accept it as an
+arrival in the process, and take its horizontal coordinate to be its arrival time. If the
+point falls above the curve λ(t), reject it.
+Hint: Verify that the two conditions in the deﬁnition are satisﬁed.
+(b) Suppose we have an inhomogeneous Poisson process with rate function λ(t). Let
+
+
+--- PDF page 596 ---
+Poisson processes
+579
+N(t) be the number of arrivals up to time t and Tj be the time of the jth arrival.
+Explain why the hybrid joint PDF of N(t) and T1, . . . , TN(t), which constitute all the
+data observed up to time t, is given by
+f(n, t1, . . . , tn) = e−λtotalλn
+total
+n!
+· n!λ(t1) . . . λ(tn)
+λn
+total
+= e−λtotalλ(t1) . . . λ(tn)
+for 0 < t1 < t2 < · · · < tn and nonnegative integer n, where λtotal =
+R t
+0 λ(u)du.
+10.
+A Cox process is a generalization of a Poisson process, where the rate λ is a random
+variable. That is, λ is generated according to some distribution on (0, ∞) and then,
+given that value of λ, a Poisson process with that rate is generated.
+(a) Explain intuitively why disjoint intervals in a 1D Cox process are not independent.
+(b) In a 1D Cox process where λ ∼Gamma(α, β), ﬁnd the covariance between the
+number of arrivals in [0, t) and the number of arrivals in [t, t + s).
+Hint: Condition on λ.
+11.
+In a Yule process with rate λ, the rate of arrivals increases after each new arrival, so
+that the time of the ﬁrst arrival is Expo(λ) and the time between the (j −1)st and jth
+arrivals is Expo(jλ) for j = 2, 3, . . . . So interarrival times are independent but not i.i.d.
+(a) Show that the superposition of two independent Yule processes with the
+same rate λ is a Yule process, except shifted so that the interarrival times are
+Expo(2λ), Expo(3λ), Expo(4λ), . . . rather than Expo(λ), Expo(2λ), Expo(3λ), . . . .
+(b) Show that if we project the process from Part (a) into discrete time, the resulting
+sequence of type-1 and type-2 arrivals is equivalent to the following discrete-time process:
+1. Start with two balls in an urn, labeled 1 and 2.
+2. Draw a ball out of the urn at random, note its number, and replace it along with
+another ball with the same number.
+3. Repeat step 2 over and over.
+12.
+Consider the coupon collector problem: there are n toy types, and toys are collected
+one by one, sampling with replacement from the set of toy types each time. We solved
+this problem in Chapter 4, assuming that all toy types are equally likely. Now suppose
+that at each stage, the jth toy type is collected with probability pj, where the pj are
+not necessarily equal. Let N be the number of toys needed until we have a full set; we
+wish to ﬁnd E(N). This problem outlines an embedding method for calculating E(N).
+(a) Suppose that the toys arrive according to a Poisson process with rate 1, so that the
+interarrival times between toys are i.i.d. Xj ∼Expo(1). For j = 1, . . . , n, let Yj be the
+waiting time until the ﬁrst toy of type j. What are the distributions of the Yj? Are the
+Yj independent?
+(b) Explain why T = max(Y1, . . . , Yn), the waiting time until all toy types are collected,
+can also be written as X1 + · · · + XN, where the Xj are deﬁned as in Part (a). Use this
+to show that E(T) = E(N).
+(c) Show that E(T), and hence E(N), can be found by computing the integral
+Z ∞
+0
+ 
+1 −
+n
+Y
+j=1
+(1 −e−pjt)
+!
+dt.
+Hint: Use the identity E(T) =
+R ∞
+0
+P(T > t)dt, which was shown in Example 5.3.8.
+
+
+--- PDF page 597 ---
+
+
+--- PDF page 598 ---
+A
+Math
+A.1
+Sets
+A set is a Many that allows itself to be thought of as a One.
+– Georg Cantor
+A set is a collection of objects. The objects can be anything: numbers, people,
+cats, courses, even other sets! The language of sets allows us to talk precisely about
+events. If S is a set, then the notation x ∈S indicates that x is an element or
+member of the set S (and x /∈S indicates that x is not in S). We can think of the
+set as a club, with precisely deﬁned criteria for membership. For example:
+1.
+{1, 3, 5, 7, . . . } is the set of all odd numbers;
+2.
+R is the set of all real numbers;
+3.
+{Worf, Jack, Tobey} is the set of Joe’s cats;
+4.
+[3, 7] is the closed interval consisting of all real numbers between 3 and 7;
+5.
+{HH, HT, TH, TT} is the set of all possible outcomes if a coin is ﬂipped
+twice (where, for example, HT means the ﬁrst ﬂip lands Heads and the
+second lands Tails).
+To describe a set (when it’s tedious or impossible to list out its elements), we can
+give a rule that says whether each possible object is or isn’t in the set. For example,
+{(x, y) ∈R2 : x2 + y2 ≤1} is the disk of radius 1 in the plane R2, centered at the
+origin. In this expression, the “:” is read as “such that”.
+A.1.1
+The empty set
+The smallest set, which is both subtle and important, is the empty set, which is the
+set that has no elements whatsoever. It is denoted by ∅or by {}. Make sure not to
+confuse ∅with {∅}. The former has no elements, while the latter has one element.
+If we visualize the empty set as an empty paper bag, then we can visualize {∅} as
+a paper bag inside of a paper bag.
+581
+
+
+--- PDF page 599 ---
+582
+Introduction to Probability
+A.1.2
+Subsets
+If A and B are sets, then we say A is a subset of B (and write A ⊆B) if every
+element of A is also an element of B. For example, the set of all integers is a subset
+of the set of all real numbers. It is always true that ∅and A itself are subsets of A;
+these are the extreme cases for subsets. A general strategy for showing that A ⊆B
+is to let x be an arbitrary element of A, and then show that x must also be an
+element of B. A general strategy for showing that A = B for two sets A and B is
+to show that each is a subset of the other.
+A.1.3
+Unions, intersections, and complements
+The union of two sets A and B, written as A ∪B, is the set of all objects that are
+in A or B (or both). The intersection of A and B, written as A ∩B, is the set of all
+objects that are in both A and B. We say that A and B are disjoint if A ∩B = ∅.
+For n sets A1, . . . , An, the union A1 ∪A2 ∪· · · ∪An is the set of all objects that are
+in at least one of the Aj’s, while the intersection A1 ∩A2 ∩· · · ∩An is the set of all
+objects that are in all of the Aj’s.
+In many applications, all the sets we’re working with are subsets of some set S (in
+probability, this may be the set of all possible outcomes of some experiment). When
+S is clear from the context, we deﬁne the complement of a set A to be the set of all
+objects in S that are not in A; this is denoted by Ac.
+Unions, intersections, and complements can be visualized easily using Venn dia-
+grams, such as the one shown below. The union is the entire shaded region, while
+the intersection is the football-shaped region of points that are in both A and B.
+The complement of A is all points in the rectangle that are outside of A.
+S
+A
+B
+A ∩ B
+FIGURE A.1
+A Venn diagram.
+Note that the area of the region A ∪B is the area of A plus the area of B, minus
+the area of A ∩B (this is a basic form of the inclusion-exclusion principle).
+
+
+--- PDF page 600 ---
+Math
+583
+De Morgan’s laws give an elegant, useful duality between unions and intersec-
+tions:
+(A1 ∪A2 ∪· · · ∪An)c = Ac
+1 ∩Ac
+2 ∩· · · ∩Ac
+n
+(A1 ∩A2 ∩· · · ∩An)c = Ac
+1 ∪Ac
+2 ∪· · · ∪Ac
+n
+It is much more important to understand De Morgan’s laws than to memorize them!
+The ﬁrst law says that not being in at least one of the Aj is the same thing as not
+being in A1, nor being in A2, nor being in A3, etc.
+For example, let Aj be the set of people who like the jth Star Wars prequel, for
+j ∈{1, 2, 3}. Then (A1 ∪A2 ∪A3)c is the set of people for whom it is not the case
+that they like at least one of the prequels, but that is the same as Ac
+1 ∩Ac
+2 ∩Ac
+3, the
+set of people who don’t like The Phantom Menace, don’t like Attack of the Clones,
+and don’t like Revenge of the Sith.
+The second law says that not being in all of the Aj is the same thing as being
+outside at least one of the Aj. For example, let the Aj be deﬁned as in the previous
+paragraph. If it is not the case that you like all of the Star Wars prequels (making
+you a member of the set (A1∩A2∩A3)c), then there must be at least one prequel that
+you don’t like (making you a member of the set Ac
+1 ∪Ac
+2 ∪Ac
+3), and vice versa.
+Proving the following facts about sets (not just drawing Venn diagrams, though
+they are very helpful for building intuition) is good practice:
+1.
+A ∩B and A ∩Bc are disjoint, with (A ∩B) ∪(A ∩Bc) = A.
+2.
+A ∩B = A if and only if A ⊆B.
+3.
+A ⊆B if and only if Bc ⊆Ac.
+A.1.4
+Partitions
+A collection of subsets A1, . . . , An of a set S is a partition of S if A1 ∪· · · ∪An = S
+and Ai ∩Aj = ∅for all i̸ = j. In words, a partition of a set is a collection of
+disjoint subsets whose union is the entire set. For example, the set of even numbers
+{0, 2, 4, . . . } and the set of odd numbers {1, 3, 5, . . . } form a partition of the set of
+nonnegative integers.
+A.1.5
+Cardinality
+A set may be ﬁnite or inﬁnite. If A is a ﬁnite set, we write |A| for the number of
+elements in A, which is called its size or cardinality. For example, |{2, 4, 6, 8, 10}| = 5
+since there are 5 elements in this set. A very useful fact is that A and B are ﬁnite
+sets, then
+|A ∪B| = |A| + |B| −|A ∩B|.
+
+
+--- PDF page 601 ---
+584
+Introduction to Probability
+This is a form of the inclusion-exclusion theorem from Chapter 1. It says that to
+count how many elements are in the union of A and B, we can add the separate
+counts for each, and then adjust for the fact that we have double-counted the ele-
+ments (if any) that are in both A and B.
+Two sets A and B are said to have the same size or same cardinality if they can be
+put into one-to-one correspondence, i.e., if each element of A can be paired up with
+exactly one element of B, with no unpaired elements in either set. We say that A is
+smaller than B if there is not a one-to-one correspondence between A and B, but
+there is a one-to-one correspondence between A and some subset of B.
+For example, suppose that we want to count the number of people in a movie theater
+with 100 seats. Assume that no one in the theater is standing, and no seat has more
+than one person in it. The obvious thing to do is to go around counting people
+one by one (though it’s surprisingly easy to miss someone or accidentally count
+someone twice). But if every seat is occupied, then a much easier method is to note
+that there must be 100 people, since there are 100 seats and there is a one-to-one
+correspondence between people and seats. If some seats are empty, then there must
+be fewer than 100 people there.
+This idea of looking at one-to-one correspondences makes sense both for ﬁnite and
+for inﬁnite sets. Consider the perfect squares 12, 22, 32, . . . . Galileo pointed out the
+paradoxical result that on the one hand it seems like there are fewer perfect squares
+than positive integers (since every perfect square is a positive integer, but lots of
+positive integers aren’t perfect squares), but on the other hand it seems like these
+two sets have the same size since they can be put into one-to-one correspondence:
+pair 12 with 1, pair 22 with 2, pair 32 with 3, etc.
+The resolution of Galileo’s paradox is to realize that intuitions about ﬁnite sets don’t
+necessarily carry over to inﬁnite sets. By deﬁnition, the set of all perfect squares and
+the set of all positive integers do have the same size. Another famous example of
+this is Hilbert’s hotel. For any hotel in the real world the number of rooms is ﬁnite.
+If every room is occupied, there is no way to accommodate more guests, other than
+by cramming more people into already occupied rooms.
+Now consider an imaginary hotel with an inﬁnite sequence of rooms, numbered
+1, 2, 3, . . . . Assume that all the rooms are occupied, and that a weary traveler arrives,
+looking for a room. Can the hotel give the traveler a room, without leaving any of
+the current guests without a room? Yes, one way is to have the guest in room n
+move to room n + 1, for all n = 1, 2, 3, . . . . This frees up room 1, so the traveler can
+stay there.
+What if inﬁnitely many travelers arrive at the same time, such that their cardinality
+is the same as that of the positive integers (so we can label the travelers as traveler
+1, traveler 2, . . . )? The hotel could ﬁt them in one by one by repeating the above
+procedure over and over again, but it would take forever (inﬁnitely many moves) to
+accommodate everyone, and it would be bad for business to make the current guests
+keep moving over and over again. Can the room assignments be updated just once
+
+
+--- PDF page 602 ---
+Math
+585
+so that everyone has a room? Yes, one way is to have the guest in room n move to
+room to 2n for all n = 1, 2, 3, . . . , and then have traveler n move into room 2n −1.
+In this way, the current guests occupy all the even-numbered rooms, and the new
+guests occupy all the odd-numbered rooms.
+An inﬁnite set is called countably inﬁnite if it has the same cardinality as the set
+of all positive integers. A set is called countable if it is ﬁnite or countably inﬁnite,
+and uncountable otherwise. The mathematician Cantor showed that not all inﬁnite
+sets are the same size. In particular, the set of all real numbers is uncountable, as
+is any interval in the real line of positive length.
+A.1.6
+Cartesian product
+The Cartesian product of two sets A and B is the set
+A × B = {(a, b) : a ∈A, b ∈B}.
+For example, [0, 1] × [0, 1] is the square {(x, y) : x, y ∈[0, 1]}, and R × R = R2 is
+two-dimensional Euclidean space.
+A.2
+Functions
+Let A and B be sets. A function from A to B is a deterministic rule that, given an
+element of A as input, provides an element of B as an output. That is, a function
+from A to B is a machine that takes an x in A and “maps” it to some y in B. Diﬀerent
+x’s can map to the same y, but each x only maps to one y. Here A is called the
+domain and B is called the target. The notation f : A →B says that f is a function
+mapping A into B. The range of f is {y ∈B : f(x) = y for some x ∈A}.
+It is important to distinguish between f (the function) and f(x) (the value of the
+function when evaluated at x). That is, f is a rule, while f(x) is a number for each
+number x. The function g given by g(x) = e−x2/2 is exactly the same as the function
+g given by g(t) = e−t2/2; what matters is the rule, not the name we use for the input.
+For this example, the rule is that x gets mapped to e−x2/2; this rule is also denoted
+by x 7→e−x2/2.
+A function f from the real line to the real line is continuous if f(x) →f(a) as x →a,
+for any value of a. It is called right-continuous if this is true when approaching from
+the right, i.e., f(x) →f(a) as x →a while ranging over values with x > a.
+The set A may not be a set of numbers. In probability, it is extremely common and
+useful to consider functions whose domains are the set of all possible outcomes of
+some experiment. It may be diﬃcult to write down a formula for the function, but
+the function is still valid as long as it’s deﬁned unambiguously.
+
+
+--- PDF page 603 ---
+586
+Introduction to Probability
+A.2.1
+One-to-one functions
+Let f be a function from A to B. Then f is a one-to-one function if f(x)̸ = f(y)
+whenever x̸ = y. That is, any two distinct inputs in A get mapped to two distinct
+outputs in B; for each y in B, there can be at most one x in A that maps to it.
+Let f be a one-to-one function from A to B, and let C be the range of f, i.e.,
+C = {b ∈B : f(a) = b for some x ∈A}.
+Then there is an inverse function f−1 : C →A, deﬁned by letting f−1(y) be the
+unique element x ∈A such that f(x) = y. A function that has an inverse is called
+an invertible function.
+For example, let f(x) = x2 for all real x. This is not a one-to-one function since,
+for example, f(3) = f(−3). But now assume instead that the domain of f is chosen
+to be [0, ∞), so we are deﬁning f as a function from [0, ∞) to [0, ∞). Then f is
+one-to-one, and its inverse function is given by f−1(y) = √y for all y ∈[0, ∞).
+The pigeonhole principle says that if A and B are ﬁnite sets with |A| > |B|, then
+there does not exist a one-to-one function from A to B. In other words, if k objects
+are placed into n boxes, where k > n, then there must be at least one box that
+contains more than one object.
+For example, in the birthday problem from Chapter 1 (assuming there are 365 days
+in a year), with 366 or more people there is guaranteed to be at least one birthday
+match. There is no one-to-one function assigning a birthday to each of the people,
+when there are more people than there are days in a year.
+A.2.2
+Increasing and decreasing functions
+Let f : A →R, where A is a set of real numbers. Then f is an increasing function if
+x ≤y implies f(x) ≤f(y) (for all x, y ∈A). Note that this deﬁnition allows there to
+be regions where f is ﬂat, e.g., the constant function that is equal to 42 everywhere
+is an increasing function, and any CDF (see Section 3.6) is an increasing function.
+We say that f is strictly increasing if x < y implies f(x) < f(y). For example,
+f : R →R with f(x) = x3 is a strictly increasing function.
+Similarly, f is a decreasing function if x ≤y implies f(x) ≥f(y), and is a strictly
+decreasing function if x < y implies f(x) > f(y). For example, f : (0, ∞) →(0, ∞)
+with f(x) = 1/x is a strictly decreasing function.
+A monotone function is a function that is either increasing or decreasing. A strictly
+monotone function is a function that is either strictly increasing or strictly decreas-
+ing. Note that any strictly monotone function is one-to-one.
+
+
+--- PDF page 604 ---
+Math
+587
+A.2.3
+Even and odd functions
+Let f be a function from R to R. We say f is an even function if f(x) = f(−x) for
+all x, and we say f is an odd function if −f(x) = f(−x) for all x. If neither of these
+conditions is satisﬁed, then f is neither even nor odd. Figure A.2 shows the graphs
+of two even functions and two odd functions.
+−2
+−1
+0
+1
+2
+0
+1
+2
+3
+4
+−2
+−1
+0
+1
+2
+0.2
+0.4
+0.6
+0.8
+1.0
+−2
+−1
+0
+1
+2
+−5
+0
+5
+−2
+−1
+0
+1
+2
+−0.6
+−0.4
+−0.2
+0.0
+0.2
+0.4
+0.6
+FIGURE A.2
+Even and odd functions. The graphs on the left are even functions: f(x) = x2 on the
+top and f(x) = e−x2/2 on the bottom. The graphs on the right are odd functions:
+f(x) = x3 on the top and f(x) = xe−x2/2 on the bottom.
+Even and odd functions have nice symmetry properties. The graph of an even func-
+tion remains the same if you reﬂect it about the vertical axis, and the graph of an
+odd function remains the same if you rotate it 180 degrees around the origin.
+
+
+--- PDF page 605 ---
+588
+Introduction to Probability
+Even functions have the property that for any a,
+Z a
+−a
+f(x)dx = 2
+Z a
+0
+f(x)dx,
+assuming the integral exists. This is because the area under the function from −a
+to 0 is equal to the area under the function from 0 to a. Odd functions have the
+property that for any a,
+Z a
+−a
+f(x)dx = 0,
+again assuming the integral exists. This is because the area under the function from
+−a to 0 cancels the area under the function from 0 to a.
+A.2.4
+Convex and concave functions
+A function g whose domain is an interval I is convex if
+g(px1 + (1 −p)x2) ≤pg(x1) + (1 −p)g(x2)
+for all x1, x2 ∈I and p ∈(0, 1). Geometrically, this says that if we draw a line
+segment connecting two points on the graph of g, then the line segment lies above
+the graph of g. If the derivative g′ exists, then an equivalent deﬁnition is that every
+tangent line to the graph of g lies below the graph. If g′′ exists, then an equivalent
+deﬁnition is that g′′(x) ≥0 for all x ∈I. An example is shown in Figure A.3. A
+simple example is g(x) = x2, whose second derivative is g′′(x) = 2 > 0.
+y = g(x)
+FIGURE A.3
+Graph of a convex function g. We have g′′(x) ≥0. Any line segment connecting two
+points on the curve lies above the curve. Any tangent line lies below the curve.
+A function g is concave if −g is convex. If g′′ exists, then g is concave if and only
+if g′′(x) ≤0 for all x in the domain. For example, g(x) = log(x) deﬁnes a concave
+function on (0, ∞) since g′′(x) = −1/x2 < 0 for all x ∈(0, ∞).
+
+
+--- PDF page 606 ---
+Math
+589
+A.2.5
+Exponential and logarithmic functions
+An exponential function is a function of the form f(x) = ax for some number a > 0.
+If a > 1, the function is increasing, and if 0 < a < 1, the function is decreasing. The
+most common exponential function we’ll work with is f(x) = ex, and a very useful
+limit result to know is that
+
+1 + x
+n
+n
+→ex
+as n →∞, for any real number x. This has an interpretation in terms of a bank
+paying compound interest on a deposit: as compounding occurs more and more
+times per year, the growth rate approaches exponential growth.
+Here are some properties of exponential functions:
+1.
+axay = ax+y.
+2.
+axbx = (ab)x.
+3.
+(ax)y = axy.
+The inverse of an exponential function is a logarithmic function: for positive y, loga y
+is deﬁned to be the number x such that ax = y. Throughout this book, when we
+write log y without explicitly specifying the base, we are referring to the natural
+logarithm (base e).
+Here are some properties of logarithms:
+1.
+loga x + loga y = loga xy.
+2.
+loga xn = n loga x.
+3.
+loga x = log x
+log a.
+A.2.6
+Floor function and ceiling function
+The ﬂoor function is deﬁned by letting ⌊x⌋be the greatest integer less than or
+equal to x. That is, it says to round down to an integer. For example, ⌊3.14⌋= 3,
+⌊−1.3⌋= −2, and ⌊5⌋= 5. (Some books denote the ﬂoor function by [x] but this
+is bad notation since it does not suggest a corresponding notation for the ceiling
+function, and since square brackets are also used for other purposes.)
+The ceiling function is deﬁned by letting ⌈x⌉be the smallest integer greater than
+or equal to x. For example, ⌈3.14⌉= 4, ⌈−1.3⌉= −1, and ⌈5⌉= 5.
+
+
+--- PDF page 607 ---
+590
+Introduction to Probability
+A.2.7
+Factorial function and gamma function
+The factorial function takes a positive integer n and returns the product of the
+integers from 1 to n, denoted n! and read “n factorial”:
+n! = n(n −1)(n −2) · · · 1.
+Also, we deﬁne 0! = 1. This convention makes sense since if we think of n! as the
+number of ways in which n people can line up, there is 1 way for n = 0 (this just
+means there is no one there, so the line is empty). It is also very helpful since, for
+example, we can then say that n!/(n −1)! = n for all positive integers n without
+running into trouble when n = 1.
+The factorial function grows extremely quickly as n grows. A famous, useful ap-
+proximation for factorials is Stirling’s formula,
+n! ≈
+√
+2πn
+n
+e
+n
+.
+The ratio of the two sides converges to 1 as n →∞. For example, direct calculation
+gives 52! ≈8.066 × 1067, while Stirling’s formula says 52! ≈8.053 × 1067.
+The gamma function Γ generalizes the factorial function to positive real numbers;
+it is deﬁned by
+Γ(a) =
+Z ∞
+0
+xae−x dx
+x ,
+a > 0,
+and has the property that
+Γ(n) = (n −1)!
+for all positive integers n. Also, Γ(1/2) = √π.
+An important property of the gamma function, which generalizes the fact that
+n! = n · (n −1)!, is that
+Γ(a + 1) = aΓ(a)
+for all a > 0. See Chapter 8 for more about the gamma function.
+A.3
+Matrices
+Neo: What is the Matrix?
+Trinity: The answer is out there, Neo, and it’s looking for you, and it will ﬁnd
+you if you want it to.
+– The Matrix (ﬁlm from 1999)
+A matrix is a rectangular array of numbers, such as
+ 3
+1/e
+2π
+1
+
+or
+1
+1
+0
+1
+2
+3
+
+. We
+
+
+--- PDF page 608 ---
+Math
+591
+say that the dimensions of a matrix are m by n (also written m × n) if it has m
+rows and n columns (so the former example is 2 by 2, while the latter is 2 by 3).
+The matrix is called square if m = n. If m = 1, we have a row vector; if n = 1, we
+have a column vector. We write A = (aij) to indicate that the row i, column j entry
+of A is aij.
+A.3.1
+Matrix addition and multiplication
+To add two matrices A and B with the same dimensions, just add the corresponding
+entries, e.g.,
+1
+1
+0
+1
+1
+1
+
++
+1
+0
+0
+1
+1
+0
+
+=
+2
+1
+0
+2
+2
+1
+
+.
+When we multiply an m × n matrix A by an n × r matrix B, we obtain an m × r
+matrix AB. The product AB is undeﬁned if the number of columns of A does not
+equal the number of rows of B.
+The row i, column j entry of AB is Pn
+k=1 aikbkj, where aij and bij are the row i,
+column j entries of A and B, respectively. For example, here is how to multiply a
+2 × 3 matrix by a 3 × 1 vector:
+1
+2
+3
+4
+5
+6
+ 
+
+7
+8
+9
+
+=
+1 · 7 + 2 · 8 + 3 · 9
+4 · 7 + 5 · 8 + 6 · 9
+
+=
+ 50
+122
+
+.
+Note that AB may not equal BA, even if both are deﬁned. To multiply a matrix A
+by a scalar, just multiply each entry by that scalar.
+The transpose of a matrix A is the matrix whose row i, column j entry is the row
+j, column i entry of A. It is denoted by A′ and read as “A transpose”. The rows of
+A are the columns of A′, and the columns of A are the rows of A′. A square matrix
+A is symmetric if A′ = A. A useful property of transposes is that if A and B are
+matrices such that the product AB is deﬁned, then (AB)′ = B′A′.
+The determinant of a 2 × 2 matrix is deﬁned by
+
+a
+b
+c
+d
+ = ad −bc.
+Determinants can also be deﬁned for n × n matrices, in a recursive manner not
+reviewed here.
+A.3.2
+Eigenvalues and eigenvectors
+An eigenvalue of an n × n matrix A is a number λ such that
+Av = λv
+
+
+--- PDF page 609 ---
+592
+Introduction to Probability
+for some n×1 column vector v, where the elements of v are not all zero. The vector
+v is called an eigenvector of A, or a right eigenvector. (Similarly, a left eigenvector
+of A is a row vector w satisfying wA = λw for some λ.) This deﬁnition says that
+when A and v are multiplied, v just gets stretched by the constant λ.
+Some matrices have no real eigenvalues, but the Perron-Frobenius theorem tells us
+that in a special case that is of particular interest to us in Chapter 11, eigenvalues
+exist and have nice properties. Let A be a square matrix whose entries are nonnega-
+tive and whose rows sum to 1. Further assume that for all i and j, there exists k ≥1
+such that the row i, column j entry of Ak is positive. Then the Perron-Frobenius
+theorem says that 1 is an eigenvalue of A, which is in fact the largest eigenvalue of
+A, and there is a corresponding eigenvector whose entries are all positive.
+A.4
+Diﬀerence equations
+A diﬀerence equation describes a sequence of numbers recursively in terms of earlier
+terms in the sequence. For example, a0, a1, . . . is a Fibonacci sequence if
+ai = ai−1 + ai−2
+for all i ≥2. There are inﬁnitely many Fibonacci sequences, but such a sequence
+is uniquely determined after a0 and a1 are speciﬁed (these are called the initial
+conditions or boundary conditions). For example, a0 = 0, a1 = 1 yields the Fibonacci
+sequence 0, 1, 1, 2, 3, 5, 8, 13, . . . .
+Diﬀerence equations often arise in probability, especially when applying LOTP. In
+this section, we will show how to solve diﬀerence equations of the form
+pi = p · pi+1 + q · pi−1,
+where p̸ = 0 and q = 1−p. (This equation comes up in the gambler’s ruin problem.)
+The ﬁrst step is to guess a solution of the form pi = xi. Plugging this into the above,
+we have
+xi = p · xi+1 + q · xi−1,
+which reduces to px2 −x + q = 0. This is called the characteristic equation, and the
+solution to the diﬀerence equation depends on whether the characteristic equation
+has one or two distinct roots. If there are two distinct roots r1 and r2, then the
+solution is of the form
+pi = ari
+1 + bri
+2,
+for some constants a and b. If there is only one distinct root r, then the solution is
+of the form
+pi = ari + biri.
+
+
+--- PDF page 610 ---
+Math
+593
+In our case, the characteristic equation has roots 1 and q/p, since
+1 ±
+p
+1 −4p(1 −p)
+2p
+= 1 ±
+p
+(2p −1)2
+2p
+= 1 ± |2p −1|
+2p
+is (1 + 2p −1)/(2p) = 1 or (2 −2p)/(2p) = q/p. The roots are distinct if p̸ = q and
+are both equal to 1 if p = q. So we have
+pi =
+
+
+
+a + b
+q
+p
+i
+,
+p̸ = q,
+a + bi,
+p = q.
+This is called the general solution of the diﬀerence equation, since we have not yet
+speciﬁed the constants a and b. To get a speciﬁc solution, we need to know two
+points in the sequence in order to solve for a and b.
+A.5
+Diﬀerential equations
+Diﬀerential equations are the continuous version of diﬀerence equations. A diﬀeren-
+tial equation uses derivatives to describe a function or collection of functions. For
+example, the diﬀerential equation
+dy
+dx = 3y
+describes a collection of functions that have the following property: the instanta-
+neous rate of change of the function at any point (x, y) is equal to 3y. This is an
+example of a separable diﬀerential equation because we can separate the x’s and
+y’s, putting them on opposite sides of the equation:
+dy
+y = 3dx.
+Now we can integrate both sides, giving log y = 3x + c, or equivalently,
+y = Ce3x,
+where C is any constant. This is called the general solution of the diﬀerential equa-
+tion, and it tells us that all functions satisfying the diﬀerential equation are of the
+form y = Ce3x for some C. To get a speciﬁc solution, we need to specify one point
+on the graph, which allows us to solve for C.
+
+
+--- PDF page 611 ---
+594
+Introduction to Probability
+A.6
+Partial derivatives
+If you can do ordinary derivatives, you can do partial derivatives: just hold all the
+other input variables constant except for the one you’re diﬀerentiating with respect
+to. For example, let f(x, y) = y sin(x2+y3). Then the partial derivative with respect
+to x is
+∂f(x, y)
+∂x
+= 2xy cos(x2 + y3),
+and the partial derivative with respect to y is
+∂f(x, y)
+∂y
+= sin(x2 + y3) + 3y3 cos(x2 + y3).
+These are ﬁrst order partial derivatives. If we take a partial derivative of a ﬁrst
+order partial derivative, we get a second order partial derivative, such as
+∂2f(x, y)
+∂y∂x
+= ∂
+∂y
+∂f(x, y)
+∂x
+
+= 2x(cos(x2 + y3) −3y3 sin(x2 + y3)).
+We get the same result if we take the partial derivatives in the opposite order (with
+respect to y and then with respect to x):
+∂2f(x, y)
+∂x∂y
+= ∂
+∂x
+∂f(x, y)
+∂y
+
+= 2x(cos(x2 + y3) −3y3 sin(x2 + y3)).
+Under mild technical assumptions, it is also true for general f that
+∂2f(x, y)
+∂x∂y
+= ∂2f(x, y)
+∂y∂x
+.
+The Jacobian of a transformation which maps (x1, . . . , xn) to (y1, . . . , yn) is the
+n × n matrix of all possible ﬁrst order partial derivatives, given by
+∂y
+∂x =
+
+
+
+∂y1
+∂x1
+∂y1
+∂x2
+. . .
+∂y1
+∂xn
+...
+...
+...
+∂yn
+∂x1
+∂yn
+∂x2
+. . .
+∂yn
+∂xn
+
+
+.
+A.7
+Multiple integrals
+If you can do single integrals, you can do multiple integrals: just do more than one
+integral, holding variables other than the current variable of integration constant.
+
+
+--- PDF page 612 ---
+Math
+595
+For example,
+Z 1
+0
+Z y
+0
+(x −y)2dxdy =
+Z 1
+0
+Z y
+0
+(x2 −2xy + y2)dxdy
+=
+Z 1
+0
+
+(x3/3 −x2y + xy2)
+
+y
+0
+
+dy
+=
+Z 1
+0
+(y3/3 −y3 + y3)dy
+= 1
+12.
+A.7.1
+Change of order of integration
+We can also integrate in the other order, dydx rather than dxdy, as long as we are
+careful about the limits of integration. Since we’re integrating over all (x, y) with x
+and y between 0 and 1 such that x ≤y, to integrate the other way we write
+Z 1
+0
+Z 1
+x
+(x −y)2dydx =
+Z 1
+0
+Z 1
+x
+(x2 −2xy + y2)dydx
+=
+Z 1
+0
+ 
+(x2y −xy2 + y3/3)
+
+1
+x
+!
+dx
+=
+Z 1
+0
+(x2 −x + 1/3 −x3 + x3 −x3/3)dx
+= 1
+12.
+A.7.2
+Change of variables
+In making a change of variables with multiple integrals, a Jacobian is needed. To
+simplify notation, we will discuss the two-dimensional version; the n-dimensional
+version is analogous. Suppose we make an invertible transformation from (x, y) to
+(u, v), where the inverse transformation is given by
+x = g(u, v), y = h(u, v).
+Let A be a region in the (x, y)-plane and B be the corresponding region in the
+(u, v)-plane. Then the change of variables formulas says that
+ZZ
+A
+f(x, y)dxdy =
+ZZ
+B
+f(g(u, v), h(u, v)) · |
+
+∂(x, y)
+∂(u, v)
+ | dudv,
+where |
+ ∂(x,y)
+∂(u,v)
+ | is the absolute value of the determinant of the Jacobian matrix.
+A few technical assumptions are needed for this result, such as that the partial
+
+
+--- PDF page 613 ---
+596
+Introduction to Probability
+derivatives that appear in the Jacobian matrix exist and are continuous, and that
+the determinant of the Jacobian matrix is never 0.
+For example, let’s ﬁnd the area of a circle of radius 1. To ﬁnd the area of a region,
+we just need to integrate 1 over that region (so the part that may be tricky is the
+limits of integration; the integrand is just 1). So the area is
+ZZ
+x2+y2≤1
+1dxdy =
+Z 1
+−1
+Z √1−y2
+−√1−y2 1dxdy = 2
+Z 1
+−1
+p
+1 −y2 dy.
+Note that the limits for the inner variable (x) of the double integral can depend on
+the outer variable (y), while the outer limits are constants. The last integral can be
+done with a trigonometric substitution, but instead let’s simplify the problem by
+transforming to polar coordinates: let
+x = r cos θ, y = r sin θ,
+where r is the distance from (x, y) to the origin and θ ∈[0, 2π) is the angle. The
+Jacobian matrix of this transformation is
+∂(x, y)
+∂(r, θ) =
+cos θ
+−r sin θ
+sin θ
+r cos θ,
+
+so the absolute value of the determinant of the Jacobian is r(cos2 θ + sin2 θ) = r.
+That is, dxdy becomes rdrdθ. So the area of the circle is
+Z 2π
+0
+Z 1
+0
+rdrdθ =
+Z 2π
+0
+1
+2dθ = π.
+For a circle of radius r, it follows immediately that the area is πr2 since we can
+convert our units of measurement to the unit for which the radius is 1.
+This may seem like a lot of work just to get such a familiar result, but it served as
+illustration and with similar methods we can get the volume of a ball in any number
+of dimensions! It turns out that the volume of a ball of radius 1 in Rn is
+Vn =
+πn/2
+Γ(n/2 + 1),
+where Γ is the gamma function (see Section A.2.7).
+A.8
+Sums
+There are several kinds of sums that come up frequently in probability.
+
+
+--- PDF page 614 ---
+Math
+597
+A.8.1
+Binomial theorem
+The binomial theorem states that
+(x + y)n =
+n
+X
+k=0
+n
+k
+
+xkyn−k,
+for any nonnegative integer n. Here
+ n
+k
+
+is a binomial coeﬃcient, deﬁned as the
+number of ways to choose k objects out of n, with order not mattering. An explicit
+formula for
+ n
+k
+
+in terms of factorials for 0 ≤k ≤n is
+n
+k
+
+=
+n!
+(n −k)!k!.
+A proof of the binomial theorem is given in Example 1.4.19.
+Sometimes 00 is said to be undeﬁned, but there are several strong arguments for
+deﬁning it to be 1, and we will take 00 = 1 in this book. For one simple reason for
+doing so, consider the case x = 0, y = 1 in the binomial theorem. Then the left-hand
+side is 1n = 1, and we need to have 00 = 1 in order to make the right-hand side also
+equal to 1.
+A.8.2
+Geometric series
+A series of the form P∞
+n=0 xn is called a geometric series. For |x| < 1, the series
+converges and we have
+∞
+X
+n=0
+xn =
+1
+1 −x.
+The series diverges if |x| ≥1. A series of the same form except with ﬁnitely many
+terms is called a ﬁnite geometric series. For x̸ = 1, the sum is
+n
+X
+k=0
+xk = 1 −xn+1
+1 −x
+.
+Note that the n + 1 in the exponent is the number of terms in the sum. If the sum
+starts at k = m rather than k = 0 (where m is an integer with 0 ≤m ≤n), then
+we can easily reduce to the case where the sum starts at 0. Making the substitution
+j = k −m, we have
+n
+X
+k=m
+xk =
+n−m
+X
+j=0
+xj+m = xm
+n−m
+X
+j=0
+xj = xm · 1 −xn−m+1
+1 −x
+.
+
+
+--- PDF page 615 ---
+598
+Introduction to Probability
+A.8.3
+Taylor series for ex
+The Taylor series for ex is
+∞
+X
+n=0
+xn
+n! = ex, for all x.
+A.8.4
+Harmonic series and other sums with a ﬁxed exponent
+It is also useful to know that P∞
+n=1 1/nc converges for c > 1 and diverges for c ≤1.
+For c = 1, this is called the harmonic series. The sum of the ﬁrst n terms of the
+harmonic series can be approximated using
+n
+X
+k=1
+1
+k ≈log(n) + γ
+for n large, where γ ≈0.577 is the Euler-Mascheroni constant.
+The sum of the ﬁrst n positive integers is
+n
+X
+k=1
+k = n(n + 1)/2 =
+n + 1
+2
+
+.
+It follows from this identity, for example, that the sum of the ﬁrst n odd positive
+integers is
+n
+X
+k=1
+(2k −1) = 2
+n
+X
+k=1
+k −
+n
+X
+k=1
+1 = n(n + 1) −n = n2.
+For squares of integers, we have
+n
+X
+k=1
+k2 = n(n + 1)(2n + 1)/6.
+For cubes of integers, amazingly, the sum is the square of the sum of the ﬁrst n
+positive integers! That is,
+n
+X
+k=1
+k3 = (n(n + 1)/2)2.
+Exercise 22 from Chapter 1 asks for a story proof of this result.
+
+
+--- PDF page 616 ---
+Math
+599
+A.9
+Pattern recognition
+Much of math and statistics is really about pattern recognition: seeing the essential
+structure of a problem, recognizing when one problem is essentially the same as
+another problem (just in a diﬀerent guise), noticing symmetry, and so on. We will
+see many examples of this kind of thinking in this book. For example, suppose we
+have the series P∞
+k=0 etke−λλk/k!, with λ a positive constant. The e−λ can be taken
+out from the sum, and then the structure of the series exactly matches up with the
+structure of the Taylor series for ex. Therefore
+∞
+X
+k=0
+etke−λλk
+k!
+= e−λ
+∞
+X
+k=0
+(λet)k
+k!
+= e−λeλet = eλ(et−1),
+valid for all real t.
+Similarly, suppose we want the Taylor series for 1/(1−x3) about x = 0. It would be
+tedious to start taking derivatives of this function. Instead, note that this function
+is reminiscent of the result of summing a geometric series. Therefore
+1
+1 −x3 =
+∞
+X
+n=0
+x3n,
+for |x3| < 1 (which is equivalent to |x| < 1). What matters is the structure, not
+what names we use for variables!
+A.10
+Common sense and checking answers
+It is very easy to make mistakes in probability, so checking answers is especially
+important. Some useful strategies for checking answers are:
+• seeing whether the answer makes sense intuitively (though as we have often seen
+in this book, probability has many results that seem counterintuitive at ﬁrst);
+• making sure your answer isn’t a category error;
+• making sure you’re avoiding biohazards;
+• trying out simple cases;
+• trying out extreme cases;
+• looking for alternative methods to solve the problem (including methods that may
+only give a bound or approximation, such as applying one of the inequalities from
+Chapter 10 or using R to run a simulation).
+
+
+--- PDF page 617 ---
+
+
+--- PDF page 618 ---
+B
+R
+B.1
+Vectors
+Command
+What it does
+c(1,1,0,2.7,3.1)
+creates the vector (1, 1, 0, 2.7, 3.1)
+1:100
+creates the vector (1, 2, . . . , 100)
+(1:100)^3
+creates the vector (13, 23, . . . , 1003)
+rep(0,50)
+creates the vector (0, 0, . . . , 0) of length 50
+seq(0,99,3)
+creates the vector (0, 3, 6, 9, . . . , 99)
+v[5]
+5th entry of vector v (index starts at 1)
+v[-5]
+all but the 5th entry of v
+v[c(3,1,4)]
+3rd, 1st, 4th entries of vector v
+v[v>2]
+entries of v that exceed 2
+which(v>2)
+indices of v such that entry exceeds 2
+which(v==7)
+indices of v such that entry equals 7
+min(v)
+minimum of v
+max(v)
+maximum of v
+which.max(v)
+indices where max(v) is achieved
+sum(v)
+sum of the entries in v
+cumsum(v)
+cumulative sums of the entries in v
+prod(v)
+product of the entries in v
+rank(v)
+ranks of the entries in v
+length(v)
+length of vector v
+sort(v)
+sorts vector v (in increasing order)
+unique(v)
+lists each element of v once, without duplicates
+tabulate(v)
+tallies how many times each element of v occurs
+table(v)
+same as tabulate(v), except in table format
+c(v,w)
+concatenates vectors v and w
+union(v,w)
+union of v and w as sets
+intersect(v,w)
+intersection of v and w as sets
+v+w
+adds v and w entrywise (recycling if needed)
+v*w
+multiplies v and w entrywise (recycling if needed)
+601
+
+
+--- PDF page 619 ---
+602
+Introduction to Probability
+B.2
+Matrices
+Command
+What it does
+matrix(c(1,3,5,7), nrow=2, ncol=2)
+creates the matrix
+1
+5
+3
+7
+
+dim(A)
+gives the dimensions of matrix A
+diag(A)
+extracts the diagonal of matrix A
+diag(c(1,7))
+creates the diagonal matrix
+1
+0
+0
+7
+
+rbind(u,v,w)
+binds vectors u, v, w into a matrix, as rows
+cbind(u,v,w)
+binds vectors u, v, w into a matrix, as columns
+t(A)
+transpose of matrix A
+A[2,3]
+row 2, column 3 entry of matrix A
+A[2,]
+row 2 of matrix A (as a vector)
+A[,3]
+column 3 of matrix A (as a vector)
+A[c(1,3),c(2,4)]
+submatrix of A, keeping rows 1, 3 and columns 2, 4
+rowSums(A)
+row sums of matrix A
+rowMeans(A)
+row averages of matrix A
+colSums(A)
+column averages of matrix A
+colMeans(A)
+column means of matrix A
+eigen(A)
+eigenvalues and eigenvectors of matrix A
+solve(A)
+A−1
+solve(A,b)
+solves Ax = b for x (where b is a column vector)
+A %*% B
+matrix multiplication AB
+A %^% k
+matrix power Ak (using expm package)
+B.3
+Math
+Command
+What it does
+abs(x)
+|x|
+exp(x)
+ex
+log(x)
+log(n)
+log(x,b)
+logb(n)
+sqrt(x)
+√x
+floor(x)
+⌊x⌋
+ceiling(x)
+⌈x⌉
+factorial(n)
+n!
+lfactorial(n)
+log(n!) (helps prevent overﬂow)
+gamma(a)
+Γ(a)
+lgamma(a)
+log(Γ(a)) (helps prevent overﬂow)
+choose(n,k)
+binomial coeﬃcient
+ n
+k
+
+pbirthday(k)
+solves birthday problem for k people
+if (x>0) x^2 else x^3
+x2 if x > 0, x3 otherwise (piecewise)
+f <- function(x) exp(-x)
+deﬁnes the function f by f(x) = e−x
+integrate(f, lower=0, upper=Inf)
+ﬁnds
+R ∞
+0
+f(x)dx numerically
+optimize(f,lower=0,upper=5,maximum=TRUE)
+maximizes f numerically on [0, 5]
+uniroot(f, lower=0, upper=5)
+searches numerically for a zero of f in [0, 5]
+
+
+--- PDF page 620 ---
+R
+603
+B.4
+Sampling and simulation
+Command
+What it does
+sample(7)
+random permutation of 1, 2, . . . , 7
+sample(52,5)
+picks 5 times from 1, 2, . . . , 52 (don’t replace)
+sample(letters,5)
+picks 5 random letters of the alphabet (don’t replace)
+sample(3,5,replace=TRUE,prob=p)
+picks 5 times from 1, 2, 3 with probabilities p (replace)
+replicate(10^4,experiment)
+simulates 104 runs of experiment
+B.5
+Plotting
+Command
+What it does
+curve(f, from=a, to=b)
+graphs the function f from a to b
+plot(x,y)
+creates scatter plot of the points (xi, yi)
+plot(x,y,type="l")
+creates line plot of the points (xi, yi)
+points(x,y)
+adds the points (xi, yi) to the plot
+lines(x,y)
+adds line segments through the (xi, yi) to the plot
+abline(a,b)
+adds the line with intercept a, slope b to the plot
+hist(x, breaks=b, col="blue")
+blue histogram of the values in x, with b bins suggested
+par(new=TRUE)
+tells R not to clear the palette when we make our next plot
+par(mfrow=c(1,2))
+tells R we want 2 side-by-side plots (a 1 by 2 array of plots)
+B.6
+Programming
+Command
+What it does
+x <- pi
+sets x equal to π
+x>3 && x<5
+Is x > 3 and x < 5? (TRUE/FALSE)
+x>3 || x<5
+Is x > 3 or x < 5? (TRUE/FALSE)
+if (n>3) x <- x+1
+adds 1 to x if n > 3
+if (n==0) x <- x+1 else x <- x+2
+adds 1 to x if n = 0, else adds 2
+v<-rep(0,50); for (k in 1:50) v[k]<-pbirthday(k)
+solves birthday problem up to 50 people
+
+
+--- PDF page 621 ---
+604
+Introduction to Probability
+B.7
+Summary statistics
+Command
+What it does
+mean(v)
+sample mean of vector v
+var(v)
+sample variance of vector v
+sd(v)
+sample standard deviation of vector v
+median(v)
+sample median of vector v
+summary(v)
+min, 1st quartile, median, mean, 3rd quartile, max of v
+quantile(v,p)
+pth sample quantile of vector v
+cov(v,w)
+sample covariance of vectors v and w
+cor(v,w)
+sample correlation of vectors v and w
+B.8
+Distributions
+Command
+What it does
+help(distributions)
+shows documentation on distributions
+dbinom(k,n,p)
+PMF P(X = k) for X ∼Bin(n, p)
+pbinom(x,n,p)
+CDF P(X ≤x) for X ∼Bin(n, p)
+qbinom(a,n,p)
+quantile min{x : P(X ≤x) ≥a} for X ∼Bin(n, p)
+rbinom(r,n,p)
+vector of r i.i.d. Bin(n, p) r.v.s
+dgeom(k,p)
+PMF P(X = k) for X ∼Geom(p)
+dhyper(k,w,b,n)
+PMF P(X = k) for X ∼HGeom(w, b, n)
+dnbinom(k,r,p)
+PMF P(X = k) for X ∼NBin(r, p)
+dpois(k,r)
+PMF P(X = k) for X ∼Pois(r)
+dbeta(x,a,b)
+PDF f(x) for X ∼Beta(a, b)
+dcauchy(x)
+PDF f(x) for X ∼Cauchy
+dchisq(x,n)
+PDF f(x) for X ∼χ2
+n
+dexp(x,r)
+PDF f(x) for X ∼Expo(r)
+dgamma(x,a,r)
+PDF f(x) for X ∼Gamma(a, r)
+dlnorm(x,m,s)
+PDF f(x) for X ∼LN(m, s2)
+dnorm(x,m,s)
+PDF f(x) for X ∼N(m, s2)
+dt(x,n)
+PDF f(x) for X ∼tn
+dunif(x,a,b)
+PDF f(x) for X ∼Unif(a, b)
+dweibull(x,a,b)
+PDF f(x) for X ∼Weibull(b−a, a)
+There are commands that are completely analogous to pbinom, qbinom, and rbinom
+for the other distributions appearing in the above table. For example, pnorm, qnorm,
+and rnorm can be used to get the CDF, the quantiles, and random generation for
+the Normal (note that the mean and standard deviation need to be provided as the
+parameters, rather than the mean and variance).
+For the Multinomial, dmultinom can be used for calculating the joint PMF and
+rmultinom can be used for generating random vectors. For the Multivariate Nor-
+mal, after installing and loading the mvtnorm package, dmvnorm can be used for
+calculating the joint PDF and rmvnorm can be used for random generation.
+
+
+--- PDF page 622 ---
+C
+Table of distributions
+Name
+Param.
+PMF or PDF
+Mean
+Variance
+Bernoulli
+p
+P(X = 1) = p, P(X = 0) = q
+p
+pq
+Binomial
+n, p
+ n
+k
+
+pkqn−k, k ∈{0, 1, . . . , n}
+np
+npq
+FS
+p
+pqk−1, k ∈{1, 2, . . . }
+1/p
+q/p2
+Geom
+p
+pqk, k ∈{0, 1, 2, . . . }
+q/p
+q/p2
+NBin
+r, p
+ r+k−1
+r−1
+
+prqk, k ∈{0, 1, 2, . . . }
+rq/p
+rq/p2
+HGeom
+w, b, n
+(w
+k)(
+b
+n−k)
+(w+b
+n )
+, k ∈{0, 1, . . . , n}
+µ =
+nw
+w+b
+( w+b−n
+w+b−1 )µ(1 −µ
+n)
+NHGeom
+w, b, r
+(r+k−1
+r−1 )(w+b−r−k
+w−r
+)
+(w+b
+w )
+, k ∈{0, 1, . . . , b}
+rb
+w+1
+rb(w+b+1)(w−r+1)
+(w+1)2(w+2)
+Poisson
+λ
+e−λλk
+k!
+, k ∈{0, 1, 2, . . . }
+λ
+λ
+Uniform
+a < b
+1
+b−a, x ∈(a, b)
+a+b
+2
+(b−a)2
+12
+Normal
+µ, σ2
+1
+σ
+√
+2π e−(x−µ)2/(2σ2)
+µ
+σ2
+Log-Normal
+µ, σ2
+1
+xσ
+√
+2π e−(log x−µ)2/(2σ2), x > 0
+θ = eµ+σ2/2
+θ2(eσ2 −1)
+Expo
+λ
+λe−λx, x > 0
+1/λ
+1/λ2
+Weibull
+λ, γ
+γλe−λxγxγ−1, x > 0
+µ = Γ(1+1/γ)
+λ1/γ
+Γ(1+2/γ)
+λ2/γ
+−µ2
+Gamma
+a, λ
+Γ(a)−1(λx)ae−λxx−1, x > 0
+a/λ
+a/λ2
+Beta
+a, b
+Γ(a+b)
+Γ(a)Γ(b)xa−1(1 −x)b−1, 0 < x < 1
+µ =
+a
+a+b
+µ(1−µ)
+a+b+1
+Chi-Square
+n
+1
+2n/2Γ(n/2)xn/2−1e−x/2, x > 0
+n
+2n
+Student-t
+n
+Γ((n+1)/2)
+√nπΓ(n/2)(1 + x2/n)−(n+1)/2
+0 if n > 1
+n
+n−2 if n > 2
+605
+
+
+--- PDF page 623 ---
+
+
+--- PDF page 624 ---
+References
+[1] Donald J. Albers and Gerald L. Alexanderson. More Mathematical People:
+Contemporary Conversations. Academic Press, 1990.
+[2] Steve Brooks, Andrew Gelman, Galin Jones, and Xiao-Li Meng. Handbook of
+Markov Chain Monte Carlo. CRC Press, 2011.
+[3] Jian Chen and Jeﬀrey S. Rosenthal.
+Decrypting classical cipher text using
+Markov chain Monte Carlo. Statistics and Computing, 22(2):397–413, 2012.
+[4] William G. Cochran. The eﬀectiveness of adjustment by subclassiﬁcation in
+removing bias in observational studies. Biometrics, 1968.
+[5] Persi Diaconis. Statistical problems in ESP research. Science, 201(4351):131–
+136, 1978.
+[6] Persi Diaconis. The Markov chain Monte Carlo revolution. Bulletin of the
+American Mathematical Society, 46(2):179–205, 2009.
+[7] Persi Diaconis, Susan Holmes, and Richard Montgomery. Dynamical bias in
+the coin toss. SIAM Review, 49(2):211–235, 2007.
+[8] Bradley Efron and Ronald Thisted. Estimating the number of unseen species:
+How many words did Shakespeare know? Biometrika, 63(3):435, 1976.
+[9] Bradley Efron and Ronald Thisted. Did Shakespeare write a newly-discovered
+poem? Biometrika, 74:445–455, 1987.
+[10] Andrew Gelman, John B. Carlin, Hal S. Stern, David B. Dunson, Aki Vehtari,
+and Donald B. Rubin. Bayesian Data Analysis. CRC Press, 2013.
+[11] Andrew Gelman and Deborah Nolan. You can load a die, but you can’t bias a
+coin. The American Statistician, 56(4):308–311, 2002.
+[12] Andrew Gelman, Boris Shor, Joseph Bafumi, and David K. Park. Red State,
+Blue State, Rich State, Poor State: Why Americans Vote the Way They Do
+(Expanded Edition). Princeton University Press, 2009.
+[13] Gerd Gigerenzer and Ulrich Hoﬀrage. How to improve Bayesian reasoning with-
+out instruction: Frequency formats. Psychological Review, 102(4):684, 1995.
+[14] Prakash Gorroochurn. Classic Problems of Probability. John Wiley & Sons,
+2012.
+607
+
+
+--- PDF page 625 ---
+608
+References
+[15] Richard Hamming.
+You and your research.
+IEEE Potentials, pages 37–40,
+October 1993.
+[16] David P. Harrington. The randomized clinical trial. Journal of the American
+Statistical Association, 95(449):312–315, 2000.
+[17] David J.C. MacKay. Information Theory, Inference, and Learning Algorithms.
+Cambridge University Press, 2003.
+[18] Richard McElreath. Statistical Rethinking: A Bayesian Course with Examples
+in R and Stan. Chapman & Hall/CRC Press, 2015.
+[19] Pierre R´emond de Montmort. Essay d’Analyse sur les Jeux de Hazard. Quilau,
+Paris, 1708.
+[20] John Allen Paulos. Innumeracy: Mathematical Illiteracy and Its Consequences.
+Macmillan, 1988.
+[21] Horst Rinne. The Weibull Distribution: A Handbook. CRC Press, 2008.
+[22] James G. Sanderson. Testing ecological patterns. American Scientist, 88:332–
+339, 2000.
+[23] Tom W. Smith, Peter Marsden, Michael Hout, and Jibum Kim. General so-
+cial surveys, 1972–2012. Sponsored by National Science Foundation. NORC,
+Chicago: National Opinion Research Center, 2013.
+[24] Stephen M. Stigler.
+Isaac Newton as a probabilist.
+Statistical Science,
+21(3):400–403, 2006.
+[25] Tom Stoppard. Rosencrantz & Guildenstern Are Dead. Samuel French, Inc.,
+1967.
+[26] R.J. Stroeker. On the sum of consecutive cubes being a perfect square. Com-
+positio Mathematica, 97:295–307, 1995.
+[27] Amos Tversky and Daniel Kahneman. Causal schemas in judgments under un-
+certainty. In Daniel Kahneman, Paul Slovic, and Amos Tversky, editors, Judg-
+ment under Uncertainty: Heuristics and Biases. Cambridge University Press,
+1982.
+[28] Herbert S. Wilf. generatingfunctionology. A K Peters/CRC Press, 3rd edition,
+2005.
+[29] Elizabeth Wrigley-Field. Length-biased sampling. Online article at https:
+//www.edge.org/response-detail/27022, 2017.
+[30] Lisa Zyga.
+Why too much evidence can be a bad thing.
+Online article at
+https://phys.org/news/2016-01-evidence-bad.html, 2016.

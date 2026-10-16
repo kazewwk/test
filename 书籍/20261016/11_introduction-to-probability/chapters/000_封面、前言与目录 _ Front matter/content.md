@@ -1,0 +1,506 @@
+# 封面、前言与目录 / Front matter
+
+原始 PDF 第 1–17 页。
+
+Texts in Statistical Science
+
+# Introduction to Probability
+
+Second Edition
+
+![](../../raw/pages_0001-0016/images/page_0_image_3.jpg)
+
+<details>
+<summary>natural_image</summary>
+
+Abstract 3D surface visualization with two distinct peaks in blue and purple against a black background (no text or symbols)
+</details>
+
+Joseph K. Blitzstein Jessica Hwang
+
+CRC
+
+CRC Press
+
+Taylor & Francis Group
+
+A CHAPMAN & HALL BOOK
+
+---
+
+## Introduction to Probability
+
+## Second Edition
+
+---
+
+## CHAPMAN & HALL/CRC
+
+## Texts in Statistical Science Series
+
+Joseph K. Blitzstein, Harvard University, USA
+
+Julian J. Faraway, University of Bath, UK
+
+Martin Tanner, Northwestern University, USA
+
+Jim Zidek, University of British Columbia, Canada
+
+Recently Published Titles
+
+## Extending the Linear Model with R
+
+Generalized Linear, Mixed Effects and Nonparametric Regression Models, Second Edition J.J. Faraway
+
+## Modeling and Analysis of Stochastic Systems, Third Edition
+
+V.G. Kulkarni
+
+## Pragmatics of Uncertainty
+
+J.B. Kadane
+
+## Stochastic Processes
+
+From Applications to Theory
+
+P.D. Moral and S. Penev
+
+## Modern Data Science with R
+
+B.S. Baumer, D.T. Kaplan, and N.J. Horton
+
+## Generalized Additive Models
+
+An Introduction with R, Second Edition
+
+S. Wood
+
+## Design of Experiments
+
+An Introduction Based on Linear Models
+
+Max Morris
+
+## Introduction to Statistical Methods for Financial Models
+
+T.A. Severini
+
+## Statistical Regression and Classification
+
+From Linear Models to Machine Learning
+
+Norman Matloff
+
+## Introduction to Functional Data Analysis
+
+Piotr Kokoszka and Matthew Reimherr
+
+## Stochastic Processes
+
+An Introduction, Third Edition
+
+P.W. Jones and P. Smith
+
+## Theory of Stochastic Objects
+
+Probability, Stochastic Processes and Inference
+
+Athanasios Christou Micheas
+
+## Linear Models and the Relevant Distributions and Matrix Algebra
+
+David A. Harville
+
+---
+
+**An Introduction to Generalized Linear Models, Fourth Edition**
+
+Annette J. Dobson and Adrian G. Barnett
+
+**Graphics for Statistics and Data Analysis with R**
+
+Kevin J. Keen
+
+**Statistics in Engineering, Second Edition**
+
+With Examples in MATLAB and R
+
+Andrew Metcalfe, David A. Green, Tony Greenfield, Mahayaudin Mansor, Andrew Smith, and Jonathan Tuke
+
+**Introduction to Probability, Second Edition**
+
+Joseph K. Blitzstein and Jessica Hwang
+
+For more information about this series, please visit: [https://www.crcpress.com/go/textsseries](https://www.crcpress.com)
+
+---
+
+![](../../raw/pages_0001-0016/images/page_4_image_0.jpg)
+
+## Taylor & Francis
+
+Taylor & Francis Group
+
+http://taylorandfrancis.com
+
+---
+
+# Introduction to Probability
+
+Second Edition
+
+Joseph K. Blitzstein
+
+Harvard University
+
+Cambridge, Massachusetts
+
+Jessica Hwang
+
+Stanford University
+
+Stanford, California
+
+(CRC)
+
+CRC Press
+
+Taylor & Francis Group
+
+Boca Raton London New York
+
+CRC Press is an imprint of the
+
+Taylor & Francis Group, an informa business
+
+A CHAPMAN & HALL BOOK
+
+---
+
+CRC Press
+
+Taylor & Francis Group
+
+6000 Broken Sound Parkway NW, Suite 300
+
+Boca Raton, FL 33487-2742
+
+© 2019 by Taylor & Francis Group, LLC
+
+CRC Press is an imprint of Taylor & Francis Group, an Informa business
+
+No claim to original U.S. Government works
+
+Printed on acid-free paper
+
+Version Date: 20190116
+
+International Standard Book Number-13: 978-1-1383-6991-7 (Hardback)
+
+This book contains information obtained from authentic and highly regarded sources. Reasonable efforts have been made to publish reliable data and information, but the author and publisher cannot assume responsibility for the validity of all materials or the consequences of their use. The authors and publishers have attempted to trace the copyright holders of all material reproduced in this publication and apologize to copyright holders if permission to publish in this form has not been obtained. If any copyright material has not been acknowledged please write and let us know so we may rectify in any future reprint.
+
+Except as permitted under U.S. Copyright Law, no part of this book may be reprinted, reproduced, transmitted, or utilized in any form by any electronic, mechanical, or other means, now known or hereafter invented, including photocopying, microfilming, and recording, or in any information storage or retrieval system, without written permission from the publishers.
+
+For permission to photocopy or use material electronically from this work, please access [www.copyright.com(http://www.copyright.com/](http://www.copyright.com)) or contact the Copyright Clearance Center, Inc. (CCC), 222 Rosewood Drive, Danvers, MA 01923, 978-750-8400. CCC is a not-for-profit organization that provides licenses and registration for a variety of users. For organizations that have been granted a photocopy license by the CCC, a separate system of payment has been arranged.
+
+**Trademark Notice:** Product or corporate names may be trademarks or registered trademarks, and are used only for identification and explanation without intent to infringe.
+
+**Visit the Taylor & Francis Web site at**
+
+[**http://www.taylorandfrancis.com**](http://www.taylorandfrancis.com)
+
+**and the CRC Press Web site at**
+
+[**http://www.crcpress.com**](http://www.crcpress.com)
+
+---
+
+To our mothers, Steffi and Min
+
+---
+
+![](../../raw/pages_0001-0016/images/page_8_image_0.jpg)
+
+## Taylor & Francis
+
+Taylor & Francis Group
+
+http://taylorandfrancis.com
+
+---
+
+## Contents
+
+## Preface xiii
+
+## 1 Probability and counting 1
+
+1.1 Why study probability? . 1
+1.2 Sample spaces and Pebble World 3
+1.3 Naive definition of probability 6
+1.4 How to count . . . 8
+1.5 Story proofs 20
+1.6 Non-naive definition of probability 21
+1.7 Recap . . . 26
+1.8 R . . . 29
+1.9 Exercises 33
+
+## 2 Conditional probability 45
+
+2.1 The importance of thinking conditionally . 45
+2.2 Definition and intuition 46
+2.3 Bayes’ rule and the law of total probability 52
+2.4 Conditional probabilities are probabilities 59
+2.5 Independence of events 63
+2.6 Coherency of Bayes’ rule 67
+2.7 Conditioning as a problem-solving tool 68
+2.8 Pitfalls and paradoxes . . . 74
+2.9 Recap . . . . 79
+2.10 R 80
+2.11 Exercises 83
+
+## 3 Random variables and their distributions 103
+
+3.1 Random variables 103
+3.2 Distributions and probability mass functions 106
+3.3 Bernoulli and Binomial 112
+3.4 Hypergeometric . 115
+3.5 Discrete Uniform . . . 118
+3.6 Cumulative distribution functions 120
+3.7 Functions of random variables 123
+3.8 Independence of r.v.s 129
+3.9 Connections between Binomial and Hypergeometric . 133
+3.10 Recap 136
+
+ix
+
+---
+
+x
+
+Contents
+
+3.11 R . . . . . . 138
+3.12 Exercises . . . 140
+
+## 4 Expectation 149
+
+4.1 Definition of expectation 149
+4.2 Linearity of expectation . 152
+4.3 Geometric and Negative Binomial 157
+4.4 Indicator r.v.s and the fundamental bridge . 164
+4.5 Law of the unconscious statistician (LOTUS) 170
+4.6 Variance 171
+4.7 Poisson . . 174
+4.8 Connections between Poisson and Binomial 181
+4.9 \*Using probability and expectation to prove existence . . . 184
+4.10 Recap . . . . 189
+4.11 R . . . 192
+4.12 Exercises . . . 194
+
+## 5 Continuous random variables 213
+
+5.1 Probability density functions . 213
+5.2 Uniform . . . . . 220
+5.3 Universality of the Uniform 224
+5.4 Normal 231
+5.5 Exponential 238
+5.6 Poisson processes 244
+5.7 Symmetry of i.i.d. continuous r.v.s 248
+5.8 Recap . . . . 250
+5.9 R . 253
+5.10 Exercises 255
+
+## 6 Moments 267
+
+6.1 Summaries of a distribution 267
+6.2 Interpreting moments 272
+6.3 Sample moments . . . 276
+6.4 Moment generating functions 279
+6.5 Generating moments with MGFs 283
+6.6 Sums of independent r.v.s via MGFs 286
+6.7 \*Probability generating functions 287
+6.8 Recap . . . . 292
+6.9 R . 293
+6.10 Exercises . 298
+
+## 7 Joint distributions 303
+
+7.1 Joint, marginal, and conditional . 304
+7.2 2D LOTUS 324
+7.3 Covariance and correlation 326
+
+---
+
+## Contents
+
+xi
+
+7.4 Multinomial . 332
+7.5 Multivariate Normal 337
+7.6 Recap . . . . . . 343
+7.7 R . . . 346
+7.8 Exercises . 348
+
+## 8 Transformations 367
+
+8.1 Change of variables 369
+8.2 Convolutions 375
+8.3 Beta . . . . . . . 379
+8.4 Gamma . . . . 387
+8.5 Beta-Gamma connections 396
+8.6 Order statistics . . . 398
+8.7 Recap . . . 402
+8.8 R . . 404
+8.9 Exercises 407
+
+## 9 Conditional expectation 415
+
+9.1 Conditional expectation given an event 415
+9.2 Conditional expectation given an r.v. 424
+9.3 Properties of conditional expectation 426
+9.4 \*Geometric interpretation of conditional expectation . . . 431
+9.5 Conditional variance . . 432
+9.6 Adam and Eve examples 436
+9.7 Recap . . . 439
+9.8 R . . 441
+9.9 Exercises 443
+
+## 10 Inequalities and limit theorems 457
+
+10.1 Inequalities . 458
+10.2 Law of large numbers 467
+10.3 Central limit theorem 471
+10.4 Chi-Square and Student-t . . 477
+10.5 Recap 480
+10.6 R 483
+10.7 Exercises 486
+
+## 11 Markov chains 497
+
+11.1 Markov property and transition matrix 497
+11.2 Classification of states . . 502
+11.3 Stationary distribution 506
+11.4 Reversibility 513
+11.5 Recap . . . 520
+11.6 R 521
+11.7 Exercises 524
+
+---
+
+xii
+
+Contents
+
+## 12 Markov chain Monte Carlo 535
+
+12.1 Metropolis-Hastings 536
+12.2 Gibbs sampling 548
+12.3 Recap 554
+12.4 R 555
+12.5 Exercises 557
+
+## 13 Poisson processes 559
+
+13.1 Poisson processes in one dimension 559
+13.2 Conditioning, superposition, and thinning 561
+13.3 Poisson processes in multiple dimensions 573
+13.4 Recap 575
+13.5 R . 575
+13.6 Exercises 577
+
+## A Math 581
+
+A.1 Sets . . . 581
+A.2 Functions . . . 585
+A.3 Matrices . 590
+A.4 Difference equations 592
+A.5 Differential equations 593
+A.6 Partial derivatives 594
+A.7 Multiple integrals 594
+A.8 Sums . 596
+A.9 Pattern recognition 599
+A.10 Common sense and checking answers 599
+
+## B R 601
+
+B.1 Vectors 601
+B.2 Matrices 602
+B.3 Math 602
+B.4 Sampling and simulation 603
+B.5 Plotting . . . 603
+B.6 Programming . . . 603
+B.7 Summary statistics 604
+B.8 Distributions . 604
+
+## C Table of distributions 605
+
+## References 607
+
+## Index 609
+
+---
+
+## Preface
+
+This book provides a modern introduction to probability and develops a foundation for understanding statistics, randomness, and uncertainty. A variety of applications and examples are explored, from basic coin-tossing and the study of coincidences to Google PageRank and Markov chain Monte Carlo. As probability is often considered to be a counterintuitive subject, many intuitive explanations, diagrams, and practice problems are given. Each chapter ends with a section showing how to explore the ideas of that chapter in R, a free software environment for statistical calculations and simulations.
+
+Lecture videos from Stat 110 at Harvard, the course which gave rise to this book, are freely available at [http://stat110.net](http://stat110.net). Additional supplementary materials such as R code, animations, and solutions to the exercises marked with s , are also available at this site.
+
+Calculus is a prerequisite for this book; there is no statistics prerequisite. The main mathematical challenge lies not in performing technical calculus derivations, but in translating between abstract concepts and concrete examples. Some major themes and features are listed below.
+
+1. Stories. Throughout this book, definitions, theorems, and proofs are pre-sented through stories: real-world interpretations that preserve mathematical precision and generality. We explore probability distributions using the generative stories that make them widely used in statistical modeling. When possible, we refrain from tedious derivations and instead aim to give interpretations and intuitions for why key results are true. Our experience is that this approach promotes long-term retention of the material by providing insight instead of demanding rote memorization.
+2. Pictures. Since pictures are thousand-word stories, we supplement definitions with illustrations so that key concepts are associated with memorable diagrams. In many fields, the difference between a novice and an expert has been described as follows: the novice struggles to memorize a large number of seemingly disconnected facts and formulas, whereas the expert sees a unified structure in which a few principles and ideas connect these facts coherently. To help students see the structure of probability, we emphasize the connections between ideas (both verbally and visually), and at the end of most chapters we present recurring, ever-expanding maps of concepts and distributions.
+
+xiii
+
+---
+
+xiv
+
+Preface
+
+3. Dual teaching of concepts and strategies. Our intent is that in reading this book, students will learn not only the concepts of probability, but also a set of problem-solving strategies that are widely applicable outside of probability. In the worked examples, we explain each step of the solution but also comment on how we knew to take the approach we did. Often we present multiple solutions to the same problem.
+
+We explicitly identify and name important strategies such as symmetry and pattern recognition, and we proactively dispel common misunderstandings, which are marked with the h (biohazard) symbol.
+
+4. Practice problems. The book contains about 600 exercises of varying difficulty. The exercises are intended to reinforce understanding of the material and strengthen problem-solving skills instead of requiring repetitive calculations. Some are strategic practice problems, grouped by theme to facilitate practice of a particular topic, while others are mixed practice, in which several earlier topics may need to be synthesized. About 250 exercises have detailed online solutions for practice and self-study.
+
+5. Simulation, Monte Carlo, and R. Many probability problems are too difficult to solve exactly, and in any case it is important to be able to check one’s answer. We introduce techniques for exploring probability via simulation, and show that often a few lines of R code suffice to create a simulation for a seemingly complicated problem.
+
+6. Focus on real-world relevance and statistical thinking. Examples and exercises in this book have a clear real-world motivation, with a particular focus on building a strong foundation for further study of statistical inference and modeling. We preview important statistical ideas such as sampling, simulation, Bayesian inference, and Markov chain Monte Carlo; other application areas include genetics, medicine, computer science, and information theory. Our choice of examples and exercises is intended to highlight the power, applicability, and beauty of probabilistic thinking.
+
+The second edition benefits from hundreds of comments, questions, and reviews from students who took courses using the book, faculty who taught with the book, and readers using the book for self-study. We have added many new examples, exercises, and explanations based on our experience teaching with the book and the feedback we have received.
+
+New supplementary materials have also been added at [http://stat110.net](http://stat110.net),including animations and interactive visualizations that were created in connection with the edX online version of Stat 110. These are intended to help make probability feel more intuitive, visual, and tangible.
+
+---
+
+Preface
+
+xv
+
+## Acknowledgments
+
+We thank our colleagues, the Stat 110 teaching assistants, and several thousand Stat 110 students for their comments and ideas related to the course and the book. In particular, we thank Alvin Siu, Angela Fan, Anji Tang, Anqi Zhao, Arman Sabbaghi, Carolyn Stein, David Jones, David Rosengarten, David Watson, Dennis Sun, Hyungsuk Tak, Johannes Ruf, Kari Lock, Keli Liu, Kelly Bodwin, Kevin Bartz, Lazhi Wang, Martin Lysy, Michele Zemplenyi, Miles Ott, Peng Ding, Rob Phillips, Sam Fisher, Sebastian Chiu, Sofia Hou, Sushmit Roy, Theresa Gebert, Valeria Espinosa, Viktoriia Liublinska, Viviana Garcia, William Chen, and Xander Marcus.
+
+We also thank Ella Maru Studio for helping to create the cover image for the second edition. The image illustrates the interplay between two-dimensional and one-dimensional probability distributions.
+
+We especially thank Bo Jiang, Raj Bhuptani, Shira Mitchell, Winston Lin, and the anonymous reviewers for their detailed comments, and Andrew Gelman, Carl Morris, Persi Diaconis, Stephen Blyth, Susan Holmes, and Xiao-Li Meng for countless insightful discussions about probability.
+
+John Kimmel at Chapman & Hall/CRC Press provided wonderful editorial expertise throughout the writing of this book. We greatly appreciate his support.
+
+Finally, we would like to express our deepest gratitude to our families for their love and encouragement.
+
+Joe Blitzstein and Jessica Hwang Cambridge, MA and Stanford, CA January 2019
+
+---
+
+![](../../raw/pages_0017-0032/images/page_16_image_0.jpg)
+
+## Taylor & Francis
+
+Taylor & Francis Group
+
+http://taylorandfrancis.com

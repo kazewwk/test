@@ -1,0 +1,5839 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Probability, Second Edition",
+      "authors": [
+        "Joseph K. Blitzstein;Jessica Hwang;"
+      ],
+      "created_at": "2019-01-18T11:22:30+05:30",
+      "modified_at": "2019-02-04T21:29:14+05:30",
+      "creator_application": "LaTeX with hyperref",
+      "producer_application": "pdfTeX-1.40.19",
+      "page_count": 636,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 160,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 161,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 162,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 163,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 164,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 165,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 166,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 167,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 168,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 169,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 170,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 171,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 172,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 173,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 174,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 175,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 160,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.139,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "144"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.125,
+            0.07,
+            0.871,
+            0.133
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "32. In Evan’s history class, 10 out of 100 key terms will be randomly selected to appear on the final exam; Evan must then choose 7 of those 10 to define. Since he knows the format of the exam in advance, Evan is trying to decide how many key terms he should study."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 5,
+          "bbox": [
+            0.167,
+            0.143,
+            0.869,
+            0.228
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 3,
+              "bbox": [
+                0.167,
+                0.143,
+                0.868,
+                0.186
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) Suppose that Evan decides to study s key terms, where s is an integer between 0 and 100. Let X be the number of key terms appearing on the exam that he has studied. What is the distribution of X? Give the name and parameters, in terms of s."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.167,
+                0.2,
+                0.869,
+                0.228
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) Using R or other software, calculate the probability that Evan knows at least "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "7"
+                },
+                {
+                  "type": "text",
+                  "content": " o f the 10 key terms that appear on the exam, assuming that he studies "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "s = 7 5"
+                },
+                {
+                  "type": "text",
+                  "content": " key terms."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.125,
+            0.237,
+            0.871,
+            0.314
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "33. A book has n typos. Two proofreaders, Prue and Frida, independently read the book. Prue catches each typo with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " and misses it with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q _ { 1 } = 1 - p _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " independently, and likewise for Frida, who has probabilities "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " of catching and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q _ { 2 } = 1   -   p _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " of missing each typo. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " be the number of typos caught by Prue, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " be the number caught by Frida, and X be the number caught by at least one of the two proofreaders."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 9,
+          "bbox": [
+            0.167,
+            0.324,
+            0.867,
+            0.38
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.169,
+                0.324,
+                0.42,
+                0.338
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) Find the distribution of X."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.167,
+                0.351,
+                0.867,
+                0.38
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) For this part only, assume that "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "p _ { 1 }   =   p _ { 2 }"
+                },
+                {
+                  "type": "text",
+                  "content": " . Find the conditional distribution of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X _ { 1 }"
+                },
+                {
+                  "type": "text",
+                  "content": " given that "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X _ { 1 } + X _ { 2 } = t"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.125,
+            0.388,
+            0.871,
+            0.435
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "34. There are n students at a certain school, of whom "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { B i n } ( n , p )"
+            },
+            {
+              "type": "text",
+              "content": " are Statistics majors. A simple random sample of size m is drawn (“simple random sample” means sampling without replacement, with all subsets of the given size equally likely)."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 13,
+          "bbox": [
+            0.167,
+            0.445,
+            0.868,
+            0.545
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 11,
+              "bbox": [
+                0.167,
+                0.445,
+                0.868,
+                0.504
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) Find the "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathrm { P M F }"
+                },
+                {
+                  "type": "text",
+                  "content": " of the number of Statistics majors in the sample, using the law of total probability (don’t forget to say what the support is). You can leave your answer as a sum (though with some algebra it can be simplified, by writing the binomial coefficients in terms of factorials and using the binomial theorem)."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.167,
+                0.517,
+                0.868,
+                0.545
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) Give a story proof derivation of the distribution of the number of Statistics majors in the sample; simplify fully."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.167,
+            0.555,
+            0.868,
+            0.585
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Hint: Does it matter whether the students declare their majors before or after the random sample is drawn?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.125,
+            0.592,
+            0.871,
+            0.639
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "35. s Players A and B take turns in answering trivia questions, starting with player A answering the first question. Each time A answers a question, she has probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " getting it right. Each time B plays, he has probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " of getting it right."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 19,
+          "bbox": [
+            0.167,
+            0.648,
+            0.868,
+            0.79
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 16,
+              "bbox": [
+                0.167,
+                0.648,
+                0.868,
+                0.678
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) If A answers m questions, what is the PMF of the number of questions she gets right?"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 17,
+              "bbox": [
+                0.167,
+                0.69,
+                0.868,
+                0.733
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) If A answers m times and B answers n times, what is the PMF of the total number of questions they get right (you can leave your answer as a sum)? Describe exactly when/whether this is a Binomial distribution."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 18,
+              "bbox": [
+                0.167,
+                0.747,
+                0.868,
+                0.79
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(c) Suppose that the first player to answer correctly wins the game (with no predetermined maximum number of questions that can be asked). Find the probability that A wins the game."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.125,
+            0.8,
+            0.871,
+            0.876
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "36. There are n voters in an upcoming election in a certain country, where n is a large, even number. There are two candidates: Candidate A (from the Unite Party) and Candidate B (from the Untie Party). Let X be the number of people who vote for Candidate A. Suppose that each voter chooses randomly whom to vote for, independently and with equal probabilities."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 21,
+          "bbox": [
+            0.167,
+            0.887,
+            0.868,
+            0.917
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) Find an exact expression for the probability of a tie in the election (so the candidates end up with the same number of votes)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 161,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.464,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Random variables and their distributions"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.862,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "145"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.168,
+            0.07,
+            0.804,
+            0.087
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) Use Stirling’s approximation, which approximates the factorial function as"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.443,
+            0.095,
+            0.597,
+            0.124
+          ],
+          "image_path": "images/page_161_equation_3.jpg",
+          "content": "n! \\approx \\sqrt {2 \\pi n} \\left(\\frac {n}{e}\\right) ^ {n},"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.167,
+            0.131,
+            0.871,
+            0.164
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "to find a simple approximation to the probability of a tie. Your answer should be of the form "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / { \\sqrt { c n } } ,"
+            },
+            {
+              "type": "text",
+              "content": " with c a constant (which you should specify)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.125,
+            0.169,
+            0.874,
+            0.263
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "37. s A message is sent over a noisy channel. The message is a sequence x1, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x _ { 2 } , \\ldots , x _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " of n bits "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( x _ { i } \\in \\{ 0 , 1 \\} )"
+            },
+            {
+              "type": "text",
+              "content": " . Since the channel is noisy, there is a chance that any bit might be corrupted, resulting in an error (a 0 becomes a 1 or vice versa). Assume that the error events are independent. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " be the probability that an individual bit has an error "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 < p < 1 / 2 )"
+            },
+            {
+              "type": "text",
+              "content": " . Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y _ { 1 } , y _ { 2 } , \\ldots , y _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " be the received message (so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y _ { i } = x _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " if there is no error in that bit, but "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y _ { i } = 1 - x _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " if there is an error there)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.167,
+            0.272,
+            0.874,
+            0.35
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To help detect errors, the nth bit is reserved for a parity check: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " is defined to be 0 if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x _ { 1 } + x _ { 2 } + \\cdots + x _ { n - 1 }"
+            },
+            {
+              "type": "text",
+              "content": " is even, and 1 if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x _ { 1 } + x _ { 2 } + \\cdots + x _ { n - 1 }"
+            },
+            {
+              "type": "text",
+              "content": " is odd. When the message is received, the recipient checks whether "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " has the same parity as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y _ { 1 } + y _ { 2 } + \\cdots + y _ { n - 1 }"
+            },
+            {
+              "type": "text",
+              "content": " . If the parity is wrong, the recipient knows that at least one error occurred; otherwise, the recipient assumes that there were no errors."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 7,
+          "bbox": [
+            0.167,
+            0.362,
+            0.868,
+            0.477
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.168,
+                0.362,
+                0.868,
+                0.392
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) For "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "n   =   5 , p   =   0 . 1"
+                },
+                {
+                  "type": "text",
+                  "content": " , what is the probability that the received message has errors which go undetected?"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.168,
+                0.404,
+                0.868,
+                0.435
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) For general n and p, write down an expression (as a sum) for the probability that the received message has errors which go undetected."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 10,
+              "bbox": [
+                0.168,
+                0.447,
+                0.868,
+                0.478
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(c) Give a simplified expression, not involving a sum of a large number of terms, for the probability that the received message has errors which go undetected."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.168,
+            0.485,
+            0.337,
+            0.501
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Hint for (c): Letting"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.237,
+            0.51,
+            0.801,
+            0.555
+          ],
+          "image_path": "images/page_161_equation_12.jpg",
+          "content": "a = \\sum_ {k \\text {even}, k \\geq 0} \\binom {n} {k} p ^ {k} (1 - p) ^ {n - k} \\text {and} b = \\sum_ {k \\text {odd}, k \\geq 1} \\binom {n} {k} p ^ {k} (1 - p) ^ {n - k},"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.167,
+            0.563,
+            0.871,
+            0.594
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "the binomial theorem makes it possible to find simple expressions for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a + b"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a - b ,"
+            },
+            {
+              "type": "text",
+              "content": " which then makes it possible to obtain a and b."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 14,
+          "bbox": [
+            0.168,
+            0.622,
+            0.409,
+            0.64
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Independence of r.v.s"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.124,
+            0.65,
+            0.775,
+            0.666
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "38. (a) Give an example of dependent r.v.s X and Y such that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(X < Y) = 1"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.168,
+            0.677,
+            0.791,
+            0.693
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) Give an example of independent r.v.s X and Y such that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(X < Y) = 1"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.124,
+            0.7,
+            0.871,
+            0.761
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "39. Give an example of two discrete random variables X and Y on the same sample space such that X and Y have the same distribution, with support "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{ 1 , 2 , \\ldots , 1 0 \\}"
+            },
+            {
+              "type": "text",
+              "content": " , but the event "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = Y"
+            },
+            {
+              "type": "text",
+              "content": " never occurs. If X and Y are independent, is it still possible to construct such an example?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.124,
+            0.765,
+            0.871,
+            0.795
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "40. Suppose X and Y are discrete r.v.s such that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(X = Y) = 1"
+            },
+            {
+              "type": "text",
+              "content": " . This means that X and Y always take on the same value."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 19,
+          "bbox": [
+            0.168,
+            0.807,
+            0.572,
+            0.85
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 20,
+              "bbox": [
+                0.168,
+                0.807,
+                0.482,
+                0.822
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) Do X and Y have the same PMF?"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 21,
+              "bbox": [
+                0.168,
+                0.834,
+                0.572,
+                0.85
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) Is it possible for X and Y to be independent?"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 22,
+          "bbox": [
+            0.124,
+            0.857,
+            0.871,
+            0.889
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "41. If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X , Y , Z"
+            },
+            {
+              "type": "text",
+              "content": " are r.v.s such that X and Y are independent and Y and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z"
+            },
+            {
+              "type": "text",
+              "content": " are independent, does it follow that X and Z are independent?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 23,
+          "bbox": [
+            0.168,
+            0.896,
+            0.568,
+            0.912
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Hint: Think about simple and extreme examples."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 162,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.139,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "146"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.125,
+            0.07,
+            0.871,
+            0.133
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "42. s Let X be a random day of the week, coded so that Monday is 1, Tuesday is 2, etc. (so X takes values "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 , 2 , \\ldots , 7 ,"
+            },
+            {
+              "type": "text",
+              "content": " with equal probabilities). Let Y be the next day after X (again represented as an integer between 1 and 7). Do X and Y have the same distribution? What is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(X < Y)?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.125,
+            0.136,
+            0.871,
+            0.168
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "43. (a) Is it possible to have two r.v.s X and Y such that X and Y have the same distribution but "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X < Y ) \\geq p ,"
+            },
+            {
+              "type": "text",
+              "content": " where:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 4,
+          "bbox": [
+            0.194,
+            0.169,
+            0.393,
+            0.234
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.195,
+                0.17,
+                0.282,
+                0.183
+              ],
+              "content": [
+                {
+                  "type": "equation_inline",
+                  "content": "p = 0 . 9 7"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.195,
+                0.186,
+                0.29,
+                0.2
+              ],
+              "content": [
+                {
+                  "type": "equation_inline",
+                  "content": "p = 0 . 9 9 ?"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.195,
+                0.203,
+                0.391,
+                0.217
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• p = 0.9999999999999?"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.196,
+                0.22,
+                0.267,
+                0.234
+              ],
+              "content": [
+                {
+                  "type": "equation_inline",
+                  "content": "p = 1 ?"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.168,
+            0.237,
+            0.764,
+            0.252
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For each, give an example showing it is possible, or prove it is impossible."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.168,
+            0.254,
+            0.464,
+            0.269
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Hint: Do the previous question first."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.167,
+            0.276,
+            0.871,
+            0.307
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) Consider the same question as in Part (a), but now assume that X and Y are independent. Do your answers change?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.125,
+            0.311,
+            0.871,
+            0.343
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "44. For x and y binary digits (0 or 1), let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x \\oplus y"
+            },
+            {
+              "type": "text",
+              "content": " be 0 if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x = y"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 { \\mathrm { ~ i f ~ } } x \\neq y"
+            },
+            {
+              "type": "text",
+              "content": " (this operation is called exclusive or (often abbreviated to XOR), or addition mod 2 )."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 13,
+          "bbox": [
+            0.167,
+            0.349,
+            0.871,
+            0.444
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 14,
+              "bbox": [
+                0.168,
+                0.35,
+                0.871,
+                0.38
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) Let "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X   \\sim   \\mathrm { B e r n } ( p )"
+                },
+                {
+                  "type": "text",
+                  "content": " and "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Y \\sim \\operatorname { B e r n } ( 1 / 2 )"
+                },
+                {
+                  "type": "text",
+                  "content": " , independently. What is the distribution of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X \\oplus Y ?"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 15,
+              "bbox": [
+                0.168,
+                0.388,
+                0.871,
+                0.419
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) With notation as in (a), is "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X \\oplus Y"
+                },
+                {
+                  "type": "text",
+                  "content": " independent of X? Is "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X \\oplus Y"
+                },
+                {
+                  "type": "text",
+                  "content": " independent of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Y ?"
+                },
+                {
+                  "type": "text",
+                  "content": " Be sure to consider both the case "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "p = 1 / 2"
+                },
+                {
+                  "type": "text",
+                  "content": " and the case "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "p \\neq 1 / 2"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 16,
+              "bbox": [
+                0.168,
+                0.427,
+                0.871,
+                0.443
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(c) Let "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X _ { 1 } , \\ldots , X _ { n }"
+                },
+                {
+                  "type": "text",
+                  "content": " be i.i.d. Bern(1/2). For each nonempty subset J of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\{ 1 , 2 , \\ldots , n \\}"
+                },
+                {
+                  "type": "text",
+                  "content": " , let"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.465,
+            0.448,
+            0.574,
+            0.481
+          ],
+          "image_path": "images/page_162_equation_17.jpg",
+          "content": "Y _ {J} = \\bigoplus_ {j \\in J} X _ {j},"
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.167,
+            0.486,
+            0.871,
+            0.563
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where the notation means to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\" \\mathrm{add''}"
+            },
+            {
+              "type": "text",
+              "content": " in the ⊕ sense all the elements of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "J ;"
+            },
+            {
+              "type": "text",
+              "content": " the order in which this is done doesn’t matter since x ⊕ "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y = y \\oplus x"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( x \\oplus y ) \\oplus z = x \\oplus ( y \\oplus z )"
+            },
+            {
+              "type": "text",
+              "content": " Show that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { J }   \\sim   \\mathrm { B e r n } ( 1 / 2 )"
+            },
+            {
+              "type": "text",
+              "content": " and that these "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 ^ { n } - 1"
+            },
+            {
+              "type": "text",
+              "content": " r.v.s are pairwise independent, but not independent. For example, we can use this to simulate 1023 pairwise independent fair coin tosses using only 10 independent fair coin tosses."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.167,
+            0.567,
+            0.873,
+            0.673
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Hint: Apply the previous parts with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p = 1 / 2"
+            },
+            {
+              "type": "text",
+              "content": " . Show that if J and K are two different nonempty subsets of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{ 1 , 2 , \\ldots , n \\}"
+            },
+            {
+              "type": "text",
+              "content": " , then we can write "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { J } = A   \\oplus   B , Y _ { K } = A   \\oplus   C ,"
+            },
+            {
+              "type": "text",
+              "content": " where A consists of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i \\in J \\cap K"
+            },
+            {
+              "type": "text",
+              "content": " , B consists of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i \\in J \\cap K ^ { c }"
+            },
+            {
+              "type": "text",
+              "content": " , and C consists of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i \\in J ^ { c } \\cap K"
+            },
+            {
+              "type": "text",
+              "content": " . Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A , B , C"
+            },
+            {
+              "type": "text",
+              "content": " are independent since they are based on disjoint sets of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { i } ."
+            },
+            {
+              "type": "text",
+              "content": " Also, at most one of these sets of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " can be empty. If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "J \\cap K   =   \\emptyset"
+            },
+            {
+              "type": "text",
+              "content": " , then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { J } = B , Y _ { K } = C"
+            },
+            {
+              "type": "text",
+              "content": " . Otherwise, compute "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(Y_{J} = y,Y_{K} = z)"
+            },
+            {
+              "type": "text",
+              "content": " by conditioning on whether "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A = 1"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 20,
+          "bbox": [
+            0.168,
+            0.701,
+            0.339,
+            0.719
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Mixed practice"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 21,
+          "bbox": [
+            0.125,
+            0.728,
+            0.871,
+            0.806
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "45. s A new treatment for a disease is being tested, to see whether it is better than the standard treatment. The existing treatment is effective on 50% of patients. It is believed initially that there is a "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 / 3"
+            },
+            {
+              "type": "text",
+              "content": " chance that the new treatment is effective on 60% of patients, and a "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 3"
+            },
+            {
+              "type": "text",
+              "content": " chance that the new treatment is effective on 50% of patients. In a pilot study, the new treatment is given to 20 random patients, and is effective for 15 of them."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 22,
+          "bbox": [
+            0.167,
+            0.812,
+            0.871,
+            0.913
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 23,
+              "bbox": [
+                0.167,
+                0.812,
+                0.871,
+                0.843
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) Given this information, what is the probability that the new treatment is better than the standard treatment?"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 24,
+              "bbox": [
+                0.167,
+                0.85,
+                0.871,
+                0.913
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) A second study is done later, giving the new treatment to 20 new random patients. Given the results of the first study, what is the PMF for how many of the new patients the new treatment is effective on? (Letting p be the answer to (a), your answer can be left in terms of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "p . )"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        }
+      ]
+    },
+    {
+      "page_idx": 163,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.463,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Random variables and their distributions"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.862,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "147"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.125,
+            0.07,
+            0.871,
+            0.146
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "46. Independent Bernoulli trials are performed, with success probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 2"
+            },
+            {
+              "type": "text",
+              "content": " for each trial. An important question that often comes up in such settings is how many trials to perform. Many controversies have arisen in statistics over the issue of how to analyze data coming from an experiment where the number of trials can depend on the data collected so far."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.167,
+            0.158,
+            0.871,
+            0.25
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For example, if we can follow the rule “keep performing trials until there are more than twice as many failures as successes, and then stop”, then naively looking at the ratio of failures to successes (if and when the process stops) will give more than 2:1 rather than the true theoretical 1:1 ratio; this could be a very misleading result! However, it might never happen that there are more than twice as many failures as successes; in this problem, you will find the probability of that happening."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.167,
+            0.26,
+            0.871,
+            0.352
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) Two gamblers, A and B, make a series of bets, where each has probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 2"
+            },
+            {
+              "type": "text",
+              "content": " of winning a bet, but A gets $2 for each win and loses $1 for each loss (a very favorable game for A!). Assume that the gamblers are allowed to borrow money, so they can and do gamble forever. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { k }"
+            },
+            {
+              "type": "text",
+              "content": " be the probability that A, starting with $k, will ever reach $0, for each "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k \\geq 0"
+            },
+            {
+              "type": "text",
+              "content": " . Explain how this story relates to the original problem, and how the original problem can be solved if we can find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { k }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.169,
+            0.363,
+            0.272,
+            0.379
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) Find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { k }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.167,
+            0.385,
+            0.871,
+            0.461
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Hint: As in the gambler’s ruin, set up and solve a difference equation for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { k }"
+            },
+            {
+              "type": "text",
+              "content": " . We have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { k } \\to 0"
+            },
+            {
+              "type": "text",
+              "content": " as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": " (you don’t need to prove this, but it should make sense since the game is so favorable to A, which will result in A’s fortune going to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\infty ;   \\mathrm { a }"
+            },
+            {
+              "type": "text",
+              "content": " formal proof, not required here, could be done using the law of large numbers, an important theorem from Chapter 10). The solution can be written neatly in terms of the golden ratio."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.168,
+            0.472,
+            0.87,
+            0.503
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(c) Find the probability of ever having more than twice as many failures as successes with independent "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { B e r n } ( 1 / 2 )"
+            },
+            {
+              "type": "text",
+              "content": " trials, as originally desired."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.125,
+            0.51,
+            0.871,
+            0.571
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "47. A copy machine is used to make n pages of copies per day. The machine has two trays in which paper gets loaded, and each page used is taken randomly and independently from one of the trays. At the beginning of the day, the trays are refilled so that they each have m pages."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.167,
+            0.581,
+            0.871,
+            0.657
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) Let pbinom "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( x , n , p )"
+            },
+            {
+              "type": "text",
+              "content": " be the CDF of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { B i n } ( n , p )"
+            },
+            {
+              "type": "text",
+              "content": " distribution, evaluated at "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x ."
+            },
+            {
+              "type": "text",
+              "content": " In terms of pbinom, find a simple expression for the probability that both trays have enough paper on any particular day, when this probability is strictly between 0 and 1 (also specify the values of m for which the probability is 0 and the values for which it is 1)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.168,
+            0.665,
+            0.848,
+            0.68
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Hint: Be careful about whether inequalities are strict, since the Binomial is discrete."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.167,
+            0.69,
+            0.871,
+            0.735
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) Using a computer, find the smallest value of m for which there is at least a 95% chance that both trays have enough paper on a particular day, for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n = 1 0 , n = 1 0 0 , n = 1 0 0 0"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n = 1 0 0 0 0"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.168,
+            0.743,
+            0.692,
+            0.758
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Hint: If you use R, you may find the following commands useful:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.167,
+            0.759,
+            0.871,
+            0.819
+          ],
+          "content": [
+            {
+              "type": "equation_inline",
+              "content": "\\tt g \\; \\textless - \\; f u n c t i o n ( m , n )"
+            },
+            {
+              "type": "text",
+              "content": " [your answer from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( a ) J"
+            },
+            {
+              "type": "text",
+              "content": " defines a function g such that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( m , n )"
+            },
+            {
+              "type": "text",
+              "content": " is your answer from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(a), \\mathrm{g}(1:100,100)"
+            },
+            {
+              "type": "text",
+              "content": " gives the vector "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( g ( 1 , 1 0 0 ) , \\ldots , g ( 1 0 0 , 1 0 0 ) )"
+            },
+            {
+              "type": "text",
+              "content": " which "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(v>0.95)"
+            },
+            {
+              "type": "text",
+              "content": " gives the indices of the components of vector v that exceed 0.95, and min(w) gives the minimum of a vector "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { w }"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 164,
+      "blocks": [
+        {
+          "type": "image",
+          "index": 0,
+          "bbox": [
+            0.288,
+            0.291,
+            0.393,
+            0.364
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 0,
+              "bbox": [
+                0.288,
+                0.291,
+                0.393,
+                0.364
+              ],
+              "image_path": "images/page_164_image_0.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.403,
+            0.3,
+            0.717,
+            0.336
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Taylor & Francis"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.405,
+            0.337,
+            0.635,
+            0.355
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Taylor & Francis Group"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.405,
+            0.357,
+            0.598,
+            0.371
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "http://taylorandfrancis.com"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 165,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.061,
+            0.139,
+            0.089
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.106,
+            0.115,
+            0.289,
+            0.143
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Expectation"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.26,
+            0.462,
+            0.28
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.1 Definition of expectation"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.3,
+            0.896,
+            0.412
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In the previous chapter, we introduced the distribution of a random variable, which gives us full information about the probability that the r.v. will fall into any particular set. For example, we can say how likely it is that the r.v. will exceed 1000, that it will equal 5, or that it will be in the interval [0, 7]. It can be unwieldy to manage so many probabilities though, so often we want just one number summarizing the “average” value of the r.v."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.424,
+            0.897,
+            0.556
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "There are several senses in which the word “average” is used, but by far the most commonly used is the mean of an r.v., also known as its expected value. In addition, much of statistics is about understanding variability in the world, so it is often important to know how “spread out” the distribution is; we will formalize this with the concepts of variance and standard deviation. As we’ll see, variance and standard deviation are defined in terms of expected values, so the uses of expected values go far beyond just computing averages."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.567,
+            0.896,
+            0.605
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Given a list of numbers "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x _ { 1 } , x _ { 2 } , \\ldots , x _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " , the familiar way to average them is to add them up and divide by n. This is called the arithmetic mean, and is defined by"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.434,
+            0.62,
+            0.564,
+            0.67
+          ],
+          "image_path": "images/page_165_equation_6.jpg",
+          "content": "\\bar {x} = \\frac {1}{n} \\sum_ {j = 1} ^ {n} x _ {j}."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.685,
+            0.707,
+            0.704
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "More generally, we can define a weighted mean of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x _ { 1 } , \\ldots , x _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " as"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.355,
+            0.719,
+            0.645,
+            0.768
+          ],
+          "image_path": "images/page_165_equation_8.jpg",
+          "content": "\\text {weighted - mean} (x) = \\sum_ {j = 1} ^ {n} x _ {j} p _ {j},"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.784,
+            0.895,
+            0.823
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where the weights "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 1 } , \\ldots , p _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " are pre-specified nonnegative numbers that add up to 1 (so the unweighted mean ¯x is obtained when "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { j } = 1 / n"
+            },
+            {
+              "type": "text",
+              "content": " for all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.833,
+            0.896,
+            0.871
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The definition of expectation for a discrete r.v. is inspired by the weighted mean of a list of numbers, with weights given by probabilities."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.881,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition 4.1.1 (Expectation of a discrete r.v.). The expected value (also called the expectation or mean) of a discrete r.v. X whose distinct possible values are"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 12,
+          "bbox": [
+            0.862,
+            0.935,
+            0.895,
+            0.95
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "149"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 166,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "150"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.069,
+            0.329,
+            0.087
+          ],
+          "content": [
+            {
+              "type": "equation_inline",
+              "content": "x _ { 1 } , x _ { 2 } , \\ldots"
+            },
+            {
+              "type": "text",
+              "content": " is defined by"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.372,
+            0.086,
+            0.627,
+            0.135
+          ],
+          "image_path": "images/page_166_equation_3.jpg",
+          "content": "E (X) = \\sum_ {j = 1} ^ {\\infty} x _ {j} P (X = x _ {j})."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.141,
+            0.857,
+            0.16
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If the support is finite, then this is replaced by a finite sum. We can also write"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.366,
+            0.172,
+            0.635,
+            0.218
+          ],
+          "image_path": "images/page_166_equation_5.jpg",
+          "content": "E (X) = \\sum_ {x} \\underbrace {x} _ {\\text {value}} \\underbrace {P (X = x)} _ {\\text {PMF at} x},"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.23,
+            0.896,
+            0.304
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where the sum is over the support of X (in any case, x "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X = x )"
+            },
+            {
+              "type": "text",
+              "content": " is 0 for any x not in the support). The expectation is undefined if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle \\sum _ { j = 1 } ^ { \\infty } | x _ { j } | { \\stackrel { \\cdot } { P } } ( X = x _ { j } )"
+            },
+            {
+              "type": "text",
+              "content": " diverges, since then the series for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X )"
+            },
+            {
+              "type": "text",
+              "content": " diverges or its value depends on the order in which the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " are listed."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.314,
+            0.896,
+            0.371
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In words, the expected value of X is a weighted average of the possible values that X can take on, weighted by their probabilities. Let’s check that the definition makes sense in a few simple examples:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.133,
+            0.388,
+            0.875,
+            0.464
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "1. Let X be the result of rolling a fair 6-sided die, so X takes on the values 1, 2, 3, 4, 5, 6, with equal probabilities. Intuitively, we should be able to get the average by adding up these values and dividing by 6. Using the definition, the expected value is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.359,
+            0.476,
+            0.682,
+            0.511
+          ],
+          "image_path": "images/page_166_equation_9.jpg",
+          "content": "E (X) = \\frac {1}{6} (1 + 2 + \\dots + 6) = 3. 5,"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.166,
+            0.522,
+            0.872,
+            0.596
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "as we expected. Note that X never equals its mean in this example. This is similar to the fact that the average number of children per household in some country could be 1.8, but that doesn’t mean that a typical household has 1.8 children!"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.133,
+            0.606,
+            0.538,
+            0.625
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathrm { B e r n } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q = 1 - p ."
+            },
+            {
+              "type": "text",
+              "content": " Then"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.418,
+            0.64,
+            0.623,
+            0.66
+          ],
+          "image_path": "images/page_166_equation_12.jpg",
+          "content": "E (X) = 1 p + 0 q = p,"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.166,
+            0.674,
+            0.872,
+            0.769
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "which makes sense intuitively since it is between the two possible values of X, compromising between 0 and 1 based on how likely each is. This is illustrated in Figure 4.1 for a case with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p   <   1 / 2 { : }"
+            },
+            {
+              "type": "text",
+              "content": " two pebbles are being balanced on a seesaw. For the seesaw to balance, the fulcrum (shown as a triangle) must be at "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p ,"
+            },
+            {
+              "type": "text",
+              "content": " which in physics terms is the center of mass."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.166,
+            0.778,
+            0.872,
+            0.873
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The frequentist interpretation would be to consider a large number of independent Bernoulli trials, each with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " of success. Writing 1 for “success” and 0 for “failure”, in the long run we would expect to have data consisting of a list of numbers where the proportion of 1’s is very close to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p ."
+            },
+            {
+              "type": "text",
+              "content": " The average of a list of 0’s and 1’s is the proportion of 1’s."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.132,
+            0.881,
+            0.872,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3. Let X have 3 distinct possible values, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { 1 } , a _ { 2 } , a _ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " , with probabilities "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 1 } , p _ { 2 } , p _ { 3 }"
+            },
+            {
+              "type": "text",
+              "content": " respectively. Imagine running a simulation where n independent draws"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 167,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.211,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Expectation"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.862,
+            0.039,
+            0.892,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "151"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.257,
+            0.071,
+            0.744,
+            0.201
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.257,
+                0.071,
+                0.744,
+                0.201
+              ],
+              "image_path": "images/page_167_image_2.jpg",
+              "content": "q\n0\np\n0.5\n1\np"
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.103,
+            0.226,
+            0.236,
+            0.241
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 4.1"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.243,
+            0.897,
+            0.281
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Center of mass of two pebbles, depicting that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X ) = p"
+            },
+            {
+              "type": "text",
+              "content": " for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathrm { B e r n } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " . Here "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " denote the masses of the two pebbles."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.166,
+            0.308,
+            0.871,
+            0.403
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "from the distribution of X are generated. For n large, we would expect to have about "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 1 } n \\; a _ { 1 }  \\mathrm { ' s , } \\; p _ { 2 } n \\; a _ { 2 }  \\mathrm { ' s }"
+            },
+            {
+              "type": "text",
+              "content": " , and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 3 } n ~ { a _ { 3 } } ^ { \\mathrm { { ' } } } \\mathrm { { s } } ."
+            },
+            {
+              "type": "text",
+              "content": " . (We will look at a more mathematical version of this example when we study the law of large numbers in Chapter 10.) If the simulation results are close to these expected results, then the arithmetic mean of the simulation results is approximately"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.235,
+            0.414,
+            0.805,
+            0.449
+          ],
+          "image_path": "images/page_167_equation_6.jpg",
+          "content": "\\frac {p _ {1} n \\cdot a _ {1} + p _ {2} n \\cdot a _ {2} + p _ {3} n \\cdot a _ {3}}{n} = p _ {1} a _ {1} + p _ {2} a _ {2} + p _ {3} a _ {3} = E (X)."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.469,
+            0.895,
+            0.507
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X )"
+            },
+            {
+              "type": "text",
+              "content": " depends only on the distribution of X. This follows directly from the definition, but is worth recording since it is fundamental."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.516,
+            0.895,
+            0.556
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proposition 4.1.2. If X and Y are discrete r.v.s with the same distribution, then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(X) = E(Y)"
+            },
+            {
+              "type": "text",
+              "content": " (if either side exists)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.104,
+            0.572,
+            0.788,
+            0.59
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. In the definition of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X )"
+            },
+            {
+              "type": "text",
+              "content": " , we only need to know the PMF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.608,
+            0.896,
+            0.703
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The converse of the above proposition is false since the expected value is just a onenumber summary, not nearly enough to specify the entire distribution; it’s a measure of where the “center” is but does not determine, for example, how spread out the distribution is or how likely the r.v. is to be positive. Figure 4.2 shows an example of two different PMFs with the same expected value (balancing point)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.712,
+            0.896,
+            0.807
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "h 4.1.3 (Replacing an r.v. by its expectation). For any discrete r.v. X, the expected value "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X )"
+            },
+            {
+              "type": "text",
+              "content": " is a number (if it exists). A common mistake is to replace an r.v. by its expectation without justification, which is wrong both mathematically (X is a function, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X )"
+            },
+            {
+              "type": "text",
+              "content": " is a constant) and statistically (it ignores the variability of X), except in the degenerate case where X is a constant."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.103,
+            0.815,
+            0.895,
+            0.854
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Notation 4.1.4. We often abbreviate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X )"
+            },
+            {
+              "type": "text",
+              "content": " to EX. Similarly, we often abbreviate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X ^ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E X ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X ^ { n } )"
+            },
+            {
+              "type": "text",
+              "content": " to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E X ^ { n }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.863,
+            0.897,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "h 4.1.5. Paying attention to the order of operations is crucial when working with expectation. As stated above, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E X ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " is the expectation of the random variable "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , not the square of the number EX. Unless the parentheses explicitly indicate otherwise,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 168,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "152"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.212,
+            0.067,
+            0.785,
+            0.255
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.212,
+                0.067,
+                0.785,
+                0.255
+              ],
+              "image_path": "images/page_168_image_2.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.103,
+            0.275,
+            0.239,
+            0.29
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 4.2"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.292,
+            0.895,
+            0.331
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The expected value does not determine the distribution: different PMFs can have the same balancing point."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.353,
+            0.895,
+            0.393
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for the expectation of an r.v. raised to a power, first we take the power and then we take the expectation. For example, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X - 1 ) ^ { 4 }"
+            },
+            {
+              "type": "text",
+              "content": " is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E\\left( (X - 1)^{4} \\right)"
+            },
+            {
+              "type": "text",
+              "content": " , not "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(E(X - 1))^4"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.103,
+            0.473,
+            0.452,
+            0.493
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.2 Linearity of expectation"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.511,
+            0.895,
+            0.548
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The most important property of expectation is linearity: the expected value of a sum of r.v.s is the sum of the individual expected values."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.558,
+            0.895,
+            0.577
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 4.2.1 (Linearity of expectation). For any r.v.s "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X , Y"
+            },
+            {
+              "type": "text",
+              "content": " and any constant "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c _ { \\gamma }"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.363,
+            0.585,
+            0.635,
+            0.605
+          ],
+          "image_path": "images/page_168_equation_9.jpg",
+          "content": "E (X + Y) = E (X) + E (Y),"
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.4,
+            0.607,
+            0.567,
+            0.629
+          ],
+          "image_path": "images/page_168_equation_10.jpg",
+          "content": "E (c X) = c E (X)."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.645,
+            0.897,
+            0.779
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The second equation says that we can take out constant factors from an expectation; this is both intuitively reasonable and easily verified from the definition. The first equation, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X + Y ) = E ( X ) + E ( Y )"
+            },
+            {
+              "type": "text",
+              "content": " , also seems reasonable when X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " are independent. What may be surprising is that it holds even if X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " are dependent! To build intuition for this, consider the extreme case where X always equals "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y ."
+            },
+            {
+              "type": "text",
+              "content": " Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X + Y = 2 X"
+            },
+            {
+              "type": "text",
+              "content": " , and both sides of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(X + Y) = E(X) + E(Y)"
+            },
+            {
+              "type": "text",
+              "content": " are equal to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 E ( X )"
+            },
+            {
+              "type": "text",
+              "content": " , so linearity still holds even in the most extreme case of dependence."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.786,
+            0.896,
+            0.883
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Linearity is true for all r.v.s, not just discrete r.v.s, but in this chapter we will prove it only for discrete r.v.s. Before proving linearity, it is worthwhile to recall some basic facts about averages. If we have a list of numbers, say "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 1 , 1 , 1 , 1 , 1 , 3 , 3 , 5 )"
+            },
+            {
+              "type": "text",
+              "content": " , we can calculate their mean by adding all the values and dividing by the length of the list, so that each element of the list gets a weight of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac{1}{8}"
+            },
+            {
+              "type": "text",
+              "content": " :"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.32,
+            0.888,
+            0.679,
+            0.925
+          ],
+          "image_path": "images/page_168_equation_13.jpg",
+          "content": "\\frac {1}{8} (1 + 1 + 1 + 1 + 1 + 3 + 3 + 5) = 2."
+        }
+      ]
+    },
+    {
+      "page_idx": 169,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.211,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Expectation"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.862,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "153"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.069,
+            0.894,
+            0.122
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "But another way to calculate the mean is to group together all the 1’s, all the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { 3 ^ { \\prime } s } ,"
+            },
+            {
+              "type": "text",
+              "content": " and all the 5’s, and then take a weighted average, giving appropriate weights to 1’s, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "3 ^ { \\flat } \\mathrm { s } ,"
+            },
+            {
+              "type": "text",
+              "content": " and 5’s:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.384,
+            0.123,
+            0.617,
+            0.16
+          ],
+          "image_path": "images/page_169_equation_3.jpg",
+          "content": "\\frac {5}{8} \\cdot 1 + \\frac {2}{8} \\cdot 3 + \\frac {1}{8} \\cdot 5 = 2."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.178,
+            0.897,
+            0.329
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This insight—that averages can be calculated in two ways, ungrouped or grouped— is all that is needed to prove linearity! Recall that X is a function which assigns a real number to every outcome s in the sample space. The r.v. X may assign the same value to multiple sample outcomes. When this happens, our definition of expectation groups all these outcomes together into a super-pebble whose weight, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X   =   x )"
+            },
+            {
+              "type": "text",
+              "content": " , is the total weight of the constituent pebbles. This grouping process is illustrated in Figure 4.3 for a hypothetical r.v. taking values in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{ 0 , 1 , 2 \\}"
+            },
+            {
+              "type": "text",
+              "content": " . So our definition of expectation corresponds to the grouped way of taking averages."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 5,
+          "bbox": [
+            0.225,
+            0.349,
+            0.778,
+            0.472
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 5,
+              "bbox": [
+                0.225,
+                0.349,
+                0.778,
+                0.472
+              ],
+              "image_path": "images/page_169_image_5.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.104,
+            0.502,
+            0.239,
+            0.517
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 4.3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.52,
+            0.896,
+            0.577
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Left: X assigns a number to each pebble in the sample space. Right: Grouping the pebbles by the value that X assigns to them, the 9 pebbles become 3 super-pebbles. The weight of a super-pebble is the sum of the weights of the constituent pebbles."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.594,
+            0.897,
+            0.71
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The advantage of this definition is that it allows us to work with the distribution of X directly, without returning to the sample space. The disadvantage comes when we have to prove theorems like this one, for if we have another r.v. Y on the same sample space, the super-pebbles created by Y are different from those created from X, with different weights "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( Y = y )"
+            },
+            {
+              "type": "text",
+              "content": " ; this makes it difficult to combine "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle \\sum _ { x } x P ( X = x )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle \\sum _ { y } y P ( Y = y )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.718,
+            0.896,
+            0.775
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Fortunately, we know there’s another equally valid way to calculate an average: we can take a weighted average of the values of individual pebbles. In other words, if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X ( s )"
+            },
+            {
+              "type": "text",
+              "content": " is the value that X assigns to pebble s, we can take the weighted average"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.378,
+            0.791,
+            0.622,
+            0.827
+          ],
+          "image_path": "images/page_169_equation_10.jpg",
+          "content": "E (X) = \\sum_ {s} X (s) P (\\{s \\}),"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.844,
+            0.897,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( \\{ s \\} )"
+            },
+            {
+              "type": "text",
+              "content": " is the weight of pebble s. This corresponds to the ungrouped way of taking averages. The advantage of this definition is that it breaks down the sample space into the smallest possible units, so we are now using the same weights "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( \\{ s \\} )"
+            },
+            {
+              "type": "text",
+              "content": " for every random variable defined on this sample space. If Y is another random"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 170,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "154"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.104,
+            0.069,
+            0.239,
+            0.086
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "variable, then"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.38,
+            0.085,
+            0.619,
+            0.122
+          ],
+          "image_path": "images/page_170_equation_3.jpg",
+          "content": "E (Y) = \\sum_ {s} Y (s) P (\\{s \\})."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.128,
+            0.74,
+            0.15
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can combine "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle \\sum _ { s } X ( s ) P ( \\{ s \\} )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle \\sum _ { s } Y ( s ) P ( \\{ s \\} )"
+            },
+            {
+              "type": "text",
+              "content": " , which gives"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.162,
+            0.918,
+            0.201
+          ],
+          "image_path": "images/page_170_equation_5.jpg",
+          "content": "E (X) + E (Y) = \\sum_ {s} X (s) P (\\{s \\}) + \\sum_ {s} Y (s) P (\\{s \\}) = \\sum_ {s} (X + Y) (s) P (\\{s \\}) = E (X + Y)."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.222,
+            0.897,
+            0.336
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Another intuition for linearity of expectation is via the concept of simulation. If we simulate many, many times from the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X ,"
+            },
+            {
+              "type": "text",
+              "content": " the histogram of the simulated values will look very much like the true PMF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " . In particular, the arithmetic mean of the simulated values will be very close to the true value of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X )"
+            },
+            {
+              "type": "text",
+              "content": " (the precise nature of this convergence is described by the law of large numbers, an important theorem that we will discuss in detail in Chapter 10)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.344,
+            0.897,
+            0.475
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let X and Y be r.v.s summarizing a certain experiment. Suppose we perform the experiment n times, where n is a very large number, and we write down the values realized by X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " each time. For each repetition of the experiment, we obtain an X value, a Y value, and (by adding them) an "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X + Y"
+            },
+            {
+              "type": "text",
+              "content": " value. In Figure 4.4, each row represents a repetition of the experiment. The left column contains the draws of X, the middle column contains the draws of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y ,"
+            },
+            {
+              "type": "text",
+              "content": " and the right column contains the draws of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X + Y"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.485,
+            0.896,
+            0.56
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "There are two ways to calculate the sum of all the numbers in the last column. The straightforward way is just to add all the numbers in that column. But an equally valid way is to add all the numbers in the first column, add all the numbers in the second column, and then add the two column sums."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.57,
+            0.894,
+            0.608
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Dividing by n everywhere, what we’ve argued is that the following procedures are equivalent:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 10,
+          "bbox": [
+            0.099,
+            0.617,
+            0.896,
+            0.722
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 11,
+              "bbox": [
+                0.099,
+                0.617,
+                0.896,
+                0.655
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Taking the arithmetic mean of all the numbers in the last column. By the law of large numbers, this is very close to "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "E ( X + Y )"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.099,
+                0.664,
+                0.894,
+                0.721
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Taking the arithmetic mean of the first column and the arithmetic mean of the second column, then adding the two column means. By the law of large numbers, this is very close to "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "E ( X ) + E ( Y )"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.73,
+            0.897,
+            0.88
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Linearity of expectation thus emerges as a simple fact about arithmetic (we’re just adding numbers in two different orders)! Notice that nowhere in our argument did we rely on whether X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " were independent. In fact, in Figure 4.4, X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " appear to be dependent: Y tends to be large when X is large, and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " tends to be small when "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " is small (in the language of Chapter 7, we say that X and Y are positively correlated). But this dependence is irrelevant: shuffling the draws of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " could completely alter the pattern of dependence between X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y ,"
+            },
+            {
+              "type": "text",
+              "content": " but would have no effect on the column sums."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 171,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.211,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Expectation"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.862,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "155"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 2,
+          "bbox": [
+            0.29,
+            0.26,
+            0.71,
+            0.474
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 2,
+              "bbox": [
+                0.29,
+                0.26,
+                0.71,
+                0.474
+              ],
+              "image_path": "images/page_171_table_2.jpg",
+              "content": "<table><tr><td>X</td><td>Y</td><td><eq>X + Y</eq></td></tr><tr><td>3</td><td>4</td><td>7</td></tr><tr><td>2</td><td>2</td><td>4</td></tr><tr><td>6</td><td>8</td><td>14</td></tr><tr><td>10</td><td>23</td><td>33</td></tr><tr><td>1</td><td>-3</td><td>-2</td></tr><tr><td>1</td><td>0</td><td>1</td></tr><tr><td>5</td><td>9</td><td>14</td></tr><tr><td>4</td><td>1</td><td>5</td></tr><tr><td>⋮</td><td>⋮</td><td>⋮</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.3,
+            0.493,
+            0.7,
+            0.543
+          ],
+          "image_path": "images/page_171_equation_3.jpg",
+          "content": "\\frac {1}{n} \\sum_ {i = 1} ^ {n} x _ {i} + \\frac {1}{n} \\sum_ {i = 1} ^ {n} y _ {i} = \\frac {1}{n} \\sum_ {i = 1} ^ {n} (x _ {i} + y _ {i})"
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.321,
+            0.558,
+            0.7,
+            0.58
+          ],
+          "image_path": "images/page_171_equation_4.jpg",
+          "content": "E (X) + E (Y) = E (X + Y)"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.59,
+            0.239,
+            0.605
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 4.4"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.608,
+            0.896,
+            0.721
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Intuitive view of linearity of expectation. Each row represents a repetition of the experiment; the three columns are the realized values of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X ,   Y"
+            },
+            {
+              "type": "text",
+              "content": " , and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X + Y"
+            },
+            {
+              "type": "text",
+              "content": " , respectively. Adding all the numbers in the last column is equivalent to summing the first column and the second column separately, then adding the two column sums. So the mean of the last column is the sum of the first and second column means; this is linearity of expectation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 172,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "156"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.896,
+            0.126
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Linearity is an extremely handy tool for calculating expected values, often allowing us to bypass the definition of expected value altogether. Let’s use linearity to find the expectations of the Binomial and Hypergeometric distributions."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.103,
+            0.134,
+            0.896,
+            0.173
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 4.2.2 (Binomial expectation). For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathrm { B i n } ( n , p )"
+            },
+            {
+              "type": "text",
+              "content": " , let’s find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X )"
+            },
+            {
+              "type": "text",
+              "content": " in two ways. By definition of expectation,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.29,
+            0.185,
+            0.712,
+            0.233
+          ],
+          "image_path": "images/page_172_equation_4.jpg",
+          "content": "E (X) = \\sum_ {k = 0} ^ {n} k P (X = k) = \\sum_ {k = 0} ^ {n} k \\binom {n} {k} p ^ {k} q ^ {n - k}."
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.246,
+            0.574,
+            0.269
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "From Example 1.5.2, we know "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\begin{array} { r } { k \\binom { n } { k } = n \\binom { n - 1 } { k - 1 } } \\end{array}"
+            },
+            {
+              "type": "text",
+              "content": " , so"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.285,
+            0.279,
+            0.714,
+            0.462
+          ],
+          "image_path": "images/page_172_equation_6.jpg",
+          "content": "\\begin{array}{l} \\sum_ {k = 0} ^ {n} k \\binom {n} {k} p ^ {k} q ^ {n - k} = n \\sum_ {k = 0} ^ {n} \\binom {n - 1} {k - 1} p ^ {k} q ^ {n - k} \\\\ = n p \\sum_ {k = 1} ^ {n} \\binom {n - 1} {k - 1} p ^ {k - 1} q ^ {n - k} \\\\ = n p \\sum_ {j = 0} ^ {n - 1} \\binom {n - 1} {j} p ^ {j} q ^ {n - 1 - j} \\\\ = n p. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.473,
+            0.894,
+            0.512
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The sum in the penultimate line equals 1 because it is the sum of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { B i n } ( n - 1 , p )"
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { P M F }"
+            },
+            {
+              "type": "text",
+              "content": " (or by the binomial theorem). Therefore, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X ) = n p ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.52,
+            0.896,
+            0.578
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This proof required us to remember combinatorial identities and manipulate binomial coefficients. Using linearity of expectation, we obtain a much shorter path to the same result. Let’s write X as the sum of n independent "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { B e r n } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " r.v.s:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.411,
+            0.592,
+            0.589,
+            0.611
+          ],
+          "image_path": "images/page_172_equation_9.jpg",
+          "content": "X = I _ {1} + \\dots + I _ {n},"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.103,
+            0.625,
+            0.724,
+            0.646
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where each "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " has expectation "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( I _ { j } ) = 1 p + 0 q = p"
+            },
+            {
+              "type": "text",
+              "content": " . By linearity,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.334,
+            0.658,
+            0.666,
+            0.679
+          ],
+          "image_path": "images/page_172_equation_11.jpg",
+          "content": "E (X) = E (I _ {1}) + \\dots + E (I _ {n}) = n p."
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.103,
+            0.692,
+            0.896,
+            0.768
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 4.2.3 (Hypergeometric expectation). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X   \\sim   \\operatorname { H G e o m } ( w , b , n )"
+            },
+            {
+              "type": "text",
+              "content": " , interpreted as the number of white balls in a sample of size n drawn without replacement from an urn with w white and b black balls. As in the Binomial case, we can write X as a sum of Bernoulli random variables,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.412,
+            0.782,
+            0.589,
+            0.802
+          ],
+          "image_path": "images/page_172_equation_13.jpg",
+          "content": "X = I _ {1} + \\dots + I _ {n},"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.103,
+            0.815,
+            0.896,
+            0.872
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " equals 1 if the jth ball in the sample is white and 0 otherwise. By symmetry, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j } \\sim \\mathrm { B e r n } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p = w / ( w   +   b )"
+            },
+            {
+              "type": "text",
+              "content": " , since unconditionally the jth ball drawn is equally likely to be any of the balls."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.103,
+            0.881,
+            0.896,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Unlike in the Binomial case, the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " are not independent, since the sampling is without replacement: given that a ball in the sample is white, there is a lower"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 173,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.21,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Expectation"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.862,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "157"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.894,
+            0.105
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "chance that another ball in the sample is white. However, linearity still holds for dependent random variables! Thus,"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.397,
+            0.117,
+            0.602,
+            0.138
+          ],
+          "image_path": "images/page_173_equation_3.jpg",
+          "content": "E (X) = n w / (w + b)."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.158,
+            0.894,
+            0.196
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As another example of the power of linearity, we can give a quick proof of the intuitive idea that “bigger r.v.s have bigger expectations”."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.204,
+            0.894,
+            0.261
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proposition 4.2.4 (Monotonicity of expectation). Let X and Y be r.v.s such that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\geq Y"
+            },
+            {
+              "type": "text",
+              "content": " with probability 1. Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X ) \\geq E ( Y )"
+            },
+            {
+              "type": "text",
+              "content": " , with equality holding if and only if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = Y"
+            },
+            {
+              "type": "text",
+              "content": " with probability 1."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.278,
+            0.894,
+            0.353
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. This result holds for all r.v.s, but we will prove it only for discrete r.v.s since this chapter focuses on discrete r.v.s. The r.v. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z   =   X - Y"
+            },
+            {
+              "type": "text",
+              "content": " is nonnegative (with probability 1), so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Z ) \\geq 0"
+            },
+            {
+              "type": "text",
+              "content": " since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Z )"
+            },
+            {
+              "type": "text",
+              "content": " is defined as a sum of nonnegative terms. By linearity,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.344,
+            0.354,
+            0.655,
+            0.374
+          ],
+          "image_path": "images/page_173_equation_7.jpg",
+          "content": "E (X) - E (Y) = E (X - Y) \\geq 0,"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.38,
+            0.894,
+            0.436
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "as desired. If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(X) = E(Y)"
+            },
+            {
+              "type": "text",
+              "content": " , then by linearity we also have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Z ) = 0"
+            },
+            {
+              "type": "text",
+              "content": " , which implies that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(X = Y) = P(Z = 0) = 1"
+            },
+            {
+              "type": "text",
+              "content": " since if even one term in the sum defining "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Z )"
+            },
+            {
+              "type": "text",
+              "content": " is positive, then the whole sum is positive. \u0004"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.519,
+            0.57,
+            0.539
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4.3 Geometric and Negative Binomial"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.557,
+            0.893,
+            0.594
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We now introduce two more famous discrete distributions, the Geometric and Negative Binomial, and calculate their expected values."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.603,
+            0.894,
+            0.698
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Story 4.3.1 (Geometric distribution). Consider a sequence of independent Bernoulli trials, each with the same success probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p \\in ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " , with trials performed until a success occurs. Let X be the number of failures before the first successful trial. Then X has the Geometric distribution with parameter "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p ;"
+            },
+            {
+              "type": "text",
+              "content": " we denote this by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { G e o m } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.707,
+            0.893,
+            0.746
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For example, if we flip a fair coin until it lands Heads for the first time, then the number of Tails before the first occurrence of Heads is distributed as Geom(1/2)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.754,
+            0.894,
+            0.83
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To get the Geometric PMF from the story, imagine the Bernoulli trials as a string of 0’s (failures) ending in a single 1 (success). Each 0 has probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q = 1 - p"
+            },
+            {
+              "type": "text",
+              "content": " and the final 1 has probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p ,"
+            },
+            {
+              "type": "text",
+              "content": " so a string of k failures followed by one success has probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q ^ { k } p"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.838,
+            0.84,
+            0.858
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 4.3.2 (Geometric PMF). If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { G e o m } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " , then the PMF of X is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.419,
+            0.867,
+            0.582,
+            0.889
+          ],
+          "image_path": "images/page_173_equation_15.jpg",
+          "content": "P (X = k) = q ^ {k} p"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.102,
+            0.9,
+            0.444,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k = 0 , 1 , 2 , \\ldots ,"
+            },
+            {
+              "type": "text",
+              "content": " where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q = 1 - p"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 174,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "158"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.106
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This is a valid PMF because, summing a geometric series (see the math appendix for a review of geometric series), we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.334,
+            0.12,
+            0.664,
+            0.169
+          ],
+          "image_path": "images/page_174_equation_3.jpg",
+          "content": "\\sum_ {k = 0} ^ {\\infty} q ^ {k} p = p \\sum_ {k = 0} ^ {\\infty} q ^ {k} = p \\cdot \\frac {1}{1 - q} = 1."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.182,
+            0.896,
+            0.237
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Just as the binomial theorem shows that the Binomial PMF is valid, a geometric series shows that the Geometric PMF is valid! A geometric series can also be used to obtain the Geometric CDF."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.248,
+            0.836,
+            0.267
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 4.3.3 (Geometric CDF). If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { G e o m } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " , then the CDF of X is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.343,
+            0.28,
+            0.632,
+            0.331
+          ],
+          "image_path": "images/page_174_equation_6.jpg",
+          "content": "F (x) = \\left\\{ \\begin{array}{l} 1 - q ^ {\\lfloor x \\rfloor + 1}, \\text {if} x \\geq 0; \\\\ 0, \\text {if} x <   0, \\end{array} \\right."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.344,
+            0.782,
+            0.363
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q = 1 - p"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ x ]"
+            },
+            {
+              "type": "text",
+              "content": " is the greatest integer less than or equal to x."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.382,
+            0.897,
+            0.457
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. Let F be the CDF of X. We will find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( x )"
+            },
+            {
+              "type": "text",
+              "content": " first for the case "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x < 0"
+            },
+            {
+              "type": "text",
+              "content": " , then for the case that x is a nonnegative integer, and lastly for the case that x is a nonnegative real number. For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x < 0,   F(x) = 0"
+            },
+            {
+              "type": "text",
+              "content": " since X can’t be negative. For n a nonnegative integer,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.215,
+            0.471,
+            0.784,
+            0.52
+          ],
+          "image_path": "images/page_174_equation_9.jpg",
+          "content": "F (n) = \\sum_ {k = 0} ^ {n} P (X = k) = p \\sum_ {k = 0} ^ {n} q ^ {k} = p \\cdot \\frac {1 - q ^ {n + 1}}{1 - q} = 1 - q ^ {n + 1}."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.103,
+            0.533,
+            0.896,
+            0.569
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can also get the same result from the fact that the event "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\geq n + 1"
+            },
+            {
+              "type": "text",
+              "content": " means that the first "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n + 1"
+            },
+            {
+              "type": "text",
+              "content": " trials were failures:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.234,
+            0.584,
+            0.764,
+            0.606
+          ],
+          "image_path": "images/page_174_equation_11.jpg",
+          "content": "F (n) = 1 - P (X > n) = 1 - P (X \\geq n + 1) = 1 - q ^ {n + 1}."
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.103,
+            0.621,
+            0.248,
+            0.639
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For real "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x \\geq 0"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.337,
+            0.64,
+            0.662,
+            0.661
+          ],
+          "image_path": "images/page_174_equation_13.jpg",
+          "content": "F (x) = P (X \\leq x) = P (X \\leq \\lfloor x \\rfloor),"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.669,
+            0.61,
+            0.688
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "since X always takes on integer values. For example,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.227,
+            0.703,
+            0.771,
+            0.724
+          ],
+          "image_path": "images/page_174_equation_15.jpg",
+          "content": "P (X \\leq 3. 7) = P (X \\leq 3) + P (3 <   X \\leq 3. 7) = P (X \\leq 3)."
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.103,
+            0.739,
+            0.364,
+            0.757
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Therefore, F is as claimed."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.102,
+            0.777,
+            0.896,
+            0.833
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Figure 4.3 displays the Geom(0.5) PMF and CDF from 0 to 6. All Geometric PMFs have a similar shape; the greater the success probability p, the more quickly the PMF decays to 0."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.102,
+            0.844,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "h 4.3.4 (Conventions for the Geometric). There are differing conventions for the definition of the Geometric distribution; some sources define the Geometric as the total number of trials, including the success. In this book, the Geometric distribution excludes the success, and the First Success distribution includes the success."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 175,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.211,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Expectation"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.862,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "159"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.14,
+            0.082,
+            0.849,
+            0.317
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.14,
+                0.082,
+                0.849,
+                0.317
+              ],
+              "image_path": "images/page_175_image_2.jpg",
+              "content": ""
+            },
+            {
+              "type": "image_caption",
+              "index": 3,
+              "bbox": [
+                0.103,
+                0.337,
+                0.239,
+                0.352
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 4.5"
+                }
+              ]
+            },
+            {
+              "type": "image_footnote",
+              "index": 4,
+              "bbox": [
+                0.103,
+                0.354,
+                0.368,
+                0.373
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Geom(0.5) PMF and CDF."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.401,
+            0.897,
+            0.477
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition 4.3.5 (First Success distribution). In a sequence of independent Bernoulli trials with success probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p ,"
+            },
+            {
+              "type": "text",
+              "content": " let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " be the number of trials until the first successful trial, including the success. Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " has the First Success distribution with parameter "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p ;"
+            },
+            {
+              "type": "text",
+              "content": " we denote this by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y \\sim \\mathrm { F S } ( p )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.486,
+            0.896,
+            0.543
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It is easy to convert back and forth between the two but important to be careful about which convention is being used. If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y \\sim \\mathrm { F S } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y - 1 \\sim \\mathrm { G e o m } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " , and we can convert between the PMFs of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y - 1"
+            },
+            {
+              "type": "text",
+              "content": " by writing"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.349,
+            0.557,
+            0.651,
+            0.577
+          ],
+          "image_path": "images/page_175_equation_7.jpg",
+          "content": "P (Y = k) = P (Y - 1 = k - 1)."
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.59,
+            0.586,
+            0.61
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Conversely, if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { G e o m } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " , then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X + 1 \\sim \\mathrm { F S } ( p )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.619,
+            0.836,
+            0.638
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 4.3.6 (Geometric expectation). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { G e o m } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " . By definition,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.412,
+            0.651,
+            0.589,
+            0.699
+          ],
+          "image_path": "images/page_175_equation_10.jpg",
+          "content": "E (X) = \\sum_ {k = 0} ^ {\\infty} k q ^ {k} p,"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.71,
+            0.897,
+            0.767
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q = 1 - p"
+            },
+            {
+              "type": "text",
+              "content": " . This sum looks unpleasant; it’s not a geometric series because of the extra k multiplying each term. But we notice that each term looks similar to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k q ^ { k - 1 }"
+            },
+            {
+              "type": "text",
+              "content": " , the derivative of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q ^ { k }"
+            },
+            {
+              "type": "text",
+              "content": " (with respect to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q )"
+            },
+            {
+              "type": "text",
+              "content": " , so let’s start there:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.423,
+            0.78,
+            0.575,
+            0.829
+          ],
+          "image_path": "images/page_175_equation_12.jpg",
+          "content": "\\sum_ {k = 0} ^ {\\infty} q ^ {k} = \\frac {1}{1 - q}."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.84,
+            0.896,
+            0.876
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This geometric series converges since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0   <   q   <   1"
+            },
+            {
+              "type": "text",
+              "content": " . Differentiating both sides with respect to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q ,"
+            },
+            {
+              "type": "text",
+              "content": " we get"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.393,
+            0.876,
+            0.606,
+            0.924
+          ],
+          "image_path": "images/page_175_equation_14.jpg",
+          "content": "\\sum_ {k = 0} ^ {\\infty} k q ^ {k - 1} = \\frac {1}{(1 - q) ^ {2}}."
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

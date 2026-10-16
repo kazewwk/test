@@ -1,0 +1,6626 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Probability, Second Edition",
+      "authors": [
+        "Joseph K. Blitzstein;Jessica Hwang;"
+      ],
+      "created_at": "2019-01-18T11:22:30+05:30",
+      "modified_at": "2019-02-04T21:29:14+05:30",
+      "creator_application": "LaTeX with hyperref",
+      "producer_application": "pdfTeX-1.40.19",
+      "page_count": 636,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 432,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 433,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 434,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 435,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 436,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 437,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 438,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 439,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 440,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 441,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 442,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 443,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 444,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 445,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 446,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 447,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 432,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "416"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.104,
+            0.067,
+            0.896,
+            0.145
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Similarly, if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " is continuous, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y )"
+            },
+            {
+              "type": "text",
+              "content": " is still a weighted average of the possible values of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " , with an integral in place of a sum and the PDF value "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( y )"
+            },
+            {
+              "type": "text",
+              "content": " in place of a PMF value. If we learn that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A"
+            },
+            {
+              "type": "text",
+              "content": " occurred, we update the expectation for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " by replacing "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( y )"
+            },
+            {
+              "type": "text",
+              "content": " with the conditional PDF "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( y | A )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.153,
+            0.899,
+            0.209
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition 9.1.1 (Conditional expectation given an event). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A"
+            },
+            {
+              "type": "text",
+              "content": " be an event with positive probability. If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " is a discrete r.v., then the conditional expectation of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " given A is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.363,
+            0.21,
+            0.637,
+            0.247
+          ],
+          "image_path": "images/page_432_equation_4.jpg",
+          "content": "E (Y | A) = \\sum_ {y} y P (Y = y | A),"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.255,
+            0.896,
+            0.274
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where the sum is over the support of Y . If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " is a continuous r.v. with PDF "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ,"
+            },
+            {
+              "type": "text",
+              "content": " then"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.37,
+            0.286,
+            0.63,
+            0.327
+          ],
+          "image_path": "images/page_432_equation_6.jpg",
+          "content": "E (Y | A) = \\int_ {- \\infty} ^ {\\infty} y f (y | A) d y,"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.34,
+            0.896,
+            0.395
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where the conditional PDF "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( y | A )"
+            },
+            {
+              "type": "text",
+              "content": " is defined as the derivative of the conditional CDF "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( y | A )   =   P ( Y   \\leq   y | A )"
+            },
+            {
+              "type": "text",
+              "content": " , and can also be computed by a hybrid version of Bayes’ rule:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.368,
+            0.395,
+            0.632,
+            0.434
+          ],
+          "image_path": "images/page_432_equation_8.jpg",
+          "content": "f (y | A) = \\frac {P (A | Y = y) f (y)}{P (A)}."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.104,
+            0.441,
+            0.896,
+            0.535
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Intuition 9.1.2. To gain intuition for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | A )"
+            },
+            {
+              "type": "text",
+              "content": " , let’s consider approximating it via simulation (or via the frequentist perspective, based on repeating the same experiment many times). Imagine generating a large number n of replications of the experiment for which "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " is a numerical summary. We then have Y -values "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y _ { 1 } , \\ldots , y _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " and we can approximate"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.416,
+            0.536,
+            0.584,
+            0.584
+          ],
+          "image_path": "images/page_432_equation_10.jpg",
+          "content": "E (Y) \\approx \\frac {1}{n} \\sum_ {j = 1} ^ {n} y _ {j}."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.104,
+            0.602,
+            0.894,
+            0.639
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To approximate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | A )"
+            },
+            {
+              "type": "text",
+              "content": " , we restrict to the replications where A occurred, and average only those Y -values. This can be written as"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.39,
+            0.652,
+            0.61,
+            0.699
+          ],
+          "image_path": "images/page_432_equation_12.jpg",
+          "content": "E (Y | A) \\approx \\frac {\\sum_ {j = 1} ^ {n} y _ {j} I _ {j}}{\\sum_ {j = 1} ^ {n} I _ {j}},"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.104,
+            0.71,
+            0.896,
+            0.806
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " is the indicator of A occurring in the jth replication. This is undefined if A never occurred in the simulation, which makes sense since then there is no simulation data about what the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "^ { \\circ } A"
+            },
+            {
+              "type": "text",
+              "content": " occurred” scenario is like. We would like to have n large enough so that there are many occurrences of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A"
+            },
+            {
+              "type": "text",
+              "content": " (if A is a rare event, more sophisticated techniques for approximating "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | A )"
+            },
+            {
+              "type": "text",
+              "content": " may be needed)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.104,
+            0.814,
+            0.896,
+            0.852
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The principle is simple though: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | A )"
+            },
+            {
+              "type": "text",
+              "content": " is approximately the average of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " in a large number of simulation runs in which A occurred. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.104,
+            0.862,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "h 9.1.3. Confusing conditional expectation and unconditional expectation is a dangerous mistake. More generally, not keeping careful track of what you should be conditioning on and what you are conditioning on is a recipe for disaster."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 433,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.108,
+            0.038,
+            0.313,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Conditional expectation"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "417"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.106,
+            0.068,
+            0.834,
+            0.087
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For a life-or-death example of the previous biohazard, consider life expectancy."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.105,
+            0.096,
+            0.896,
+            0.19
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 9.1.4 (Life expectancy). Fred is 30 years old, and he hears that the average life expectancy in his country is 80 years. Should he conclude that, on average, he has 50 years of life left? No, there is a crucial piece of information that he must condition on: the fact that he has lived to age 30 already. Letting T be Fred’s lifespan, we have the cheerful news that"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.396,
+            0.206,
+            0.605,
+            0.227
+          ],
+          "image_path": "images/page_433_equation_4.jpg",
+          "content": "E (T) <   E (T | T \\geq 3 0)."
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.105,
+            0.241,
+            0.894,
+            0.298
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The left-hand side is Fred’s life expectancy at birth (it implicitly conditions on the fact that he is born), and the right-hand side is Fred’s life expectancy given that he reaches age 30."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.105,
+            0.307,
+            0.896,
+            0.477
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A harder question is how to decide on an appropriate estimate to use for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( T )"
+            },
+            {
+              "type": "text",
+              "content": " . Is it just 80, the overall average for his country? In almost every country, women have a longer average life expectancy than men, so it makes sense to condition on Fred being a man. But should we also condition on what city he was born in? Should we condition on racial and financial information about his parents, or the time of day when he was born? Intuitively, we would like estimates that are both accurate and relevant for Fred, but there is a tradeoff since if we condition on more characteristics of Fred, then there are fewer people who match those characteristics to use as data for estimating the life expectancy."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.105,
+            0.486,
+            0.894,
+            0.618
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Now consider some specific numbers for the United States. A Social Security Administration study estimated that between 1900 and 2000, the average life expectancy at birth in the U.S. for men increased from 46 to 74, and for women increased from 49 to 79. Tremendous gains! But much of the gain is due to decreases in child mortality. For a 30-year-old person in 1900, the average number of years remaining was 35 for a man and 36 for a woman; in 2000, the corresponding numbers were 46 for a man and 50 for a woman."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.105,
+            0.628,
+            0.894,
+            0.704
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "There are some subtle statistical issues in obtaining these estimates. For example, how were estimates for life expectancy for someone born in 2000 obtained without waiting at least until the year 2100? Estimating survival distributions is a very important topic in biostatistics and actuarial science. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.105,
+            0.713,
+            0.894,
+            0.77
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The law of total probability allows us to get unconditional probabilities by slicing up the sample space and computing conditional probabilities in each slice. The same idea works for computing unconditional expectations."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.105,
+            0.78,
+            0.894,
+            0.835
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 9.1.5 (Law of total expectation). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { 1 } , \\ldots , A _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " be a partition of a sample space, with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( A _ { i } )   >   0"
+            },
+            {
+              "type": "text",
+              "content": " for all i, and let Y be a random variable on this sample space. Then"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.368,
+            0.836,
+            0.632,
+            0.883
+          ],
+          "image_path": "images/page_433_equation_11.jpg",
+          "content": "E (Y) = \\sum_ {i = 1} ^ {n} E (Y | A _ {i}) P (A _ {i})."
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.105,
+            0.899,
+            0.894,
+            0.918
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In fact, since all probabilities are expectations by the fundamental bridge, the law"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 434,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "418"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.893,
+            0.106
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "of total probability is a special case of the law of total expectation. To see this, let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = I _ { B }"
+            },
+            {
+              "type": "text",
+              "content": " for an event "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B ;"
+            },
+            {
+              "type": "text",
+              "content": " then the above theorem says"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.219,
+            0.116,
+            0.78,
+            0.164
+          ],
+          "image_path": "images/page_434_equation_3.jpg",
+          "content": "P (B) = E (I _ {B}) = \\sum_ {i = 1} ^ {n} E (I _ {B} | A _ {i}) P (A _ {i}) = \\sum_ {i = 1} ^ {n} P (B | A _ {i}) P (A _ {i}),"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.172,
+            0.895,
+            0.21
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "which is exactly LOTP. The law of total expectation is, in turn, a special case of a major result called Adam’s law (Theorem 9.3.7), so we will not prove it yet."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.219,
+            0.895,
+            0.295
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "There are many interesting examples of using wishful thinking to break up an unconditional expectation into conditional expectations. We begin with two cautionary tales about the importance of conditioning carefully and not destroying information without justification."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.304,
+            0.896,
+            0.435
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 9.1.6 (Two-envelope paradox). A stranger presents you with two identical-looking, sealed envelopes, each of which contains a check for some positive amount of money. You are informed that one of the envelopes contains exactly twice as much money as the other. You can choose either envelope. Which do you prefer: the one on the left or the one on the right? (Assume that the expected amount of money in each envelope is finite—certainly a good assumption in the real world!)"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 7,
+          "bbox": [
+            0.284,
+            0.448,
+            0.717,
+            0.541
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 7,
+              "bbox": [
+                0.284,
+                0.448,
+                0.717,
+                0.541
+              ],
+              "image_path": "images/page_434_image_7.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.566,
+            0.236,
+            0.581
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 9.1"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.584,
+            0.895,
+            0.622
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Two envelopes, where one contains twice as much money as the other. Either "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y ="
+            },
+            {
+              "type": "text",
+              "content": " 2X or "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = X / 2"
+            },
+            {
+              "type": "text",
+              "content": " , with equal probabilities. Which would you prefer?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 10,
+          "bbox": [
+            0.104,
+            0.637,
+            0.195,
+            0.654
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.665,
+            0.896,
+            0.76
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let X and Y be the amounts in the left and right envelopes, respectively. By symmetry, there is no reason to prefer one envelope over the other (we are assuming there is no prior information that the stranger is left-handed and left-handed people prefer putting more money on the left). Concluding by symmetry that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(X)   ="
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y )"
+            },
+            {
+              "type": "text",
+              "content": " , it seems that you should not care which envelope you get."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.769,
+            0.896,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "But as you daydream about what’s inside the envelopes, another argument occurs to you: suppose that the left envelope has $100. Then the right envelope either has $50 or $200. The average of $50 and $200 is $125, so it seems then that the right envelope is better. But there was nothing special about $100 here; for any value x for the left envelope, the average of 2x and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x / 2"
+            },
+            {
+              "type": "text",
+              "content": " is greater than "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x ,"
+            },
+            {
+              "type": "text",
+              "content": " suggesting that the right envelope is better. This is bizarre though, since not only does it contradict the symmetry argument, but also the same reasoning could be applied starting with the right envelope, leading to switching back and forth forever!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 435,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.108,
+            0.038,
+            0.313,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Conditional expectation"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "419"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.068,
+            0.895,
+            0.105
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let us try to formalize this argument to see what’s going on. We have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = 2 X"
+            },
+            {
+              "type": "text",
+              "content": " or "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = X / 2 ,"
+            },
+            {
+              "type": "text",
+              "content": " , with equal probabilities. By Theorem 9.1.5,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.271,
+            0.119,
+            0.731,
+            0.154
+          ],
+          "image_path": "images/page_435_equation_3.jpg",
+          "content": "E (Y) = E (Y | Y = 2 X) \\cdot \\frac {1}{2} + E \\bigl (Y | Y = X / 2 \\bigr) \\cdot \\frac {1}{2}."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.105,
+            0.165,
+            0.429,
+            0.182
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "One might then think that this is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.331,
+            0.195,
+            0.671,
+            0.232
+          ],
+          "image_path": "images/page_435_equation_5.jpg",
+          "content": "E (2 X) \\cdot \\frac {1}{2} + E (X / 2) \\cdot \\frac {1}{2} = \\frac {5}{4} E (X),"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.104,
+            0.242,
+            0.895,
+            0.299
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "suggesting a 25% gain from switching from the left to the right envelope. But there is a blunder in that calculation: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | Y = 2 X ) = E ( 2 X | Y = 2 X )"
+            },
+            {
+              "type": "text",
+              "content": " , but there is no justification for dropping the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = 2 X"
+            },
+            {
+              "type": "text",
+              "content": " condition after plugging in 2X for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.307,
+            0.896,
+            0.477
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To put it another way, let I be the indicator of the event "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = 2 X"
+            },
+            {
+              "type": "text",
+              "content": " , so that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | Y ="
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 X ) = E ( 2 X | I = 1 )"
+            },
+            {
+              "type": "text",
+              "content": " . If we know that X is independent of I, then we can drop the condition "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I = 1"
+            },
+            {
+              "type": "text",
+              "content": " . But in fact we have just proven that X and I can’t be independent: if they were, we’d have a paradox! Surprisingly, observing X gives information about whether X is the bigger value or the smaller value. If we learn that X is very large, we might guess that X is larger than "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " , but what is considered very large? Is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 0 ^ { 1 2 }"
+            },
+            {
+              "type": "text",
+              "content": " very large, even though it is tiny compared with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 0 ^ { 1 0 0 } ?"
+            },
+            {
+              "type": "text",
+              "content": " The two-envelope paradox says that no matter what the distribution of X is, there are reasonable ways to define “very large” relative to that distribution."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.104,
+            0.487,
+            0.895,
+            0.563
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In Exercise 8 you will look at a related problem, in which the amounts of money in the two envelopes are i.i.d. random variables. You’ll show that if you are allowed to look inside one of the envelopes and then decide whether to switch, there is a strategy that allows you to get the better envelope more than 50% of the time! \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.104,
+            0.571,
+            0.894,
+            0.627
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The next example vividly illustrates the importance of conditioning on all the information. The phenomenon revealed here arises in many real-life decisions about what to buy and what investments to make."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.104,
+            0.637,
+            0.895,
+            0.732
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 9.1.7 (Mystery prize). You are approached by another stranger, who gives you an opportunity to bid on a mystery box containing a mystery prize! The value of the prize is completely unknown, except that it is worth at least nothing, and at most a million dollars. So the true value "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V"
+            },
+            {
+              "type": "text",
+              "content": " of the prize is considered to be Uniform on [0,1] (measured in millions of dollars)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.104,
+            0.741,
+            0.895,
+            0.854
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "You can choose to bid any amount b (in millions of dollars). You have the chance to get the prize for considerably less than it is worth, but you could also lose money if you bid too much. Specifically, if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b < 2 V / 3"
+            },
+            {
+              "type": "text",
+              "content": " , then the bid is rejected and nothing is gained or lost. If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b \\geq 2 V / 3"
+            },
+            {
+              "type": "text",
+              "content": " , then the bid is accepted and your net payoff is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V - b"
+            },
+            {
+              "type": "text",
+              "content": " (since you pay b to get a prize worth V ). What is your optimal bid "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b ,"
+            },
+            {
+              "type": "text",
+              "content": " to maximize the expected payoff?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 12,
+          "bbox": [
+            0.106,
+            0.872,
+            0.195,
+            0.888
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.105,
+            0.899,
+            0.895,
+            0.918
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Your bid "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b   \\geq   0"
+            },
+            {
+              "type": "text",
+              "content": " must be a predetermined constant (not based on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V ,"
+            },
+            {
+              "type": "text",
+              "content": " since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V"
+            },
+            {
+              "type": "text",
+              "content": " is"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 436,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.14,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "420"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.269,
+            0.068,
+            0.725,
+            0.341
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.269,
+                0.068,
+                0.725,
+                0.341
+              ],
+              "image_path": "images/page_436_image_2.jpg",
+              "content": "Bid $250,000? If it's rejected, I lose nothing. If it's accepted, I get a prize worth $500,000 on average!\nmystery box"
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.365,
+            0.239,
+            0.38
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 9.2"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.383,
+            0.895,
+            0.419
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "When bidding on an unknown asset, beware the winner’s curse, and condition on the relevant information."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.445,
+            0.893,
+            0.482
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "unknown!). To find the expected payoff W, condition on whether the bid is accepted. The payoff is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V - b"
+            },
+            {
+              "type": "text",
+              "content": " if the bid is accepted and 0 if the bid is rejected. So"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.169,
+            0.495,
+            0.831,
+            0.571
+          ],
+          "image_path": "images/page_436_equation_6.jpg",
+          "content": "\\begin{array}{l} E (W) = E (W | b \\geq 2 V / 3) P (b \\geq 2 V / 3) + E (W | b <   2 V / 3) P (b <   2 V / 3) \\\\ = E (V - b | b \\geq 2 V / 3) P (b \\geq 2 V / 3) + 0 \\\\ = (E (V | V \\leq 3 b / 2) - b) P (V \\leq 3 b / 2). \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.584,
+            0.895,
+            0.643
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b \\geq 2 / 3 ,"
+            },
+            {
+              "type": "text",
+              "content": " , the event "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V \\leq 3 b / 2"
+            },
+            {
+              "type": "text",
+              "content": " has probability 1, so the right-hand side is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 2 - b ,"
+            },
+            {
+              "type": "text",
+              "content": " which is negative. Now assume "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b < 2 / 3"
+            },
+            {
+              "type": "text",
+              "content": " . Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V \\leq 3 b / 2"
+            },
+            {
+              "type": "text",
+              "content": " has probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "3 b / 2"
+            },
+            {
+              "type": "text",
+              "content": " . Given that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V \\leq 3 b / 2"
+            },
+            {
+              "type": "text",
+              "content": " , the conditional distribution of V is Uniform on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ 0 , 3 b / 2 ]"
+            },
+            {
+              "type": "text",
+              "content": " . Therefore,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.146,
+            0.655,
+            0.852,
+            0.675
+          ],
+          "image_path": "images/page_436_equation_8.jpg",
+          "content": "E (W) = \\left(E (V | V \\leq 3 b / 2) - b\\right) P (V \\leq 3 b / 2) = (3 b / 4 - b) (3 b / 2) = - 3 b ^ {2} / 8."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.691,
+            0.895,
+            0.729
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The above expression is negative except at "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b   =   0 ."
+            },
+            {
+              "type": "text",
+              "content": " so the optimal bid is 0: you shouldn’t play this game!"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.103,
+            0.738,
+            0.895,
+            0.777
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Alternatively, condition on which of the following events occurs: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A = \\{ V < b / 2 \\}"
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B = \\{ b / 2 \\leq V \\leq 3 b / 2 \\} ,   C = \\{ V > 3 b / 2 \\}"
+            },
+            {
+              "type": "text",
+              "content": " . We have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.249,
+            0.791,
+            0.748,
+            0.812
+          ],
+          "image_path": "images/page_436_equation_11.jpg",
+          "content": "E (W | A) = E (V - b | A) <   E (b / 2 - b | A) = - b / 2 \\leq 0,"
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.31,
+            0.824,
+            0.689,
+            0.865
+          ],
+          "image_path": "images/page_436_equation_12.jpg",
+          "content": "E (W | B) = E \\left(\\frac {b / 2 + 3 b / 2}{2} - b | B\\right) = 0,"
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.435,
+            0.871,
+            0.566,
+            0.891
+          ],
+          "image_path": "images/page_436_equation_13.jpg",
+          "content": "E (W | C) = 0,"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.901,
+            0.514,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "so we should just set "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b = 0"
+            },
+            {
+              "type": "text",
+              "content": " and walk away."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 437,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.108,
+            0.038,
+            0.313,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Conditional expectation"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.892,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "421"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.104,
+            0.068,
+            0.896,
+            0.276
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The moral of this story is to condition on all the information. It is crucial in the above calculation to use "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( V | V \\leq 3 b / 2 )"
+            },
+            {
+              "type": "text",
+              "content": " rather than "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( V ) = 1 / 2 ;"
+            },
+            {
+              "type": "text",
+              "content": " knowing that the bid was accepted gives information about how much the mystery prize is worth, so we shouldn’t destroy that information. This problem is related to the so-called win-"
+            },
+            {
+              "type": "equation_inline",
+              "content": "n e r   ^ { \\prime } s"
+            },
+            {
+              "type": "text",
+              "content": " curse, which says that the winner in an auction with incomplete information tends to profit less than they expect (unless they understand probability!). This is because in many settings, the expected value of the item that they bid on given that they won the bid is less than the unconditional expected value they originally had in mind. For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b \\geq 2 / 3"
+            },
+            {
+              "type": "text",
+              "content": " , conditioning on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V \\leq 3 b / 2"
+            },
+            {
+              "type": "text",
+              "content": " does nothing since we know in advance that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V \\leq 1"
+            },
+            {
+              "type": "text",
+              "content": " , but such a bid is ludicrously high. For any "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b < 2 / 3"
+            },
+            {
+              "type": "text",
+              "content": " , finding out that your bid is accepted lowers your expectation:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.381,
+            0.29,
+            0.617,
+            0.31
+          ],
+          "image_path": "images/page_437_equation_3.jpg",
+          "content": "E (V | V \\leq 3 b / 2) <   E (V)."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.334,
+            0.895,
+            0.39
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The remaining examples use first-step analysis to calculate unconditional expectations. First, as promised in Chapter 4, we derive the expectation of the Geometric distribution using first-step analysis."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.399,
+            0.896,
+            0.494
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 9.1.8 (Geometric expectation redux). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { G e o m } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " . Interpret X as the number of Tails before the first Heads in a sequence of coin flips with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " of Heads. To get "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X )"
+            },
+            {
+              "type": "text",
+              "content": " , we condition on the outcome of the first toss: if it lands Heads, then X is 0 and we’re done; if it lands Tails, then we’ve wasted one toss and are back to where we started, by memorylessness. Therefore,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.248,
+            0.507,
+            0.75,
+            0.554
+          ],
+          "image_path": "images/page_437_equation_6.jpg",
+          "content": "\\begin{array}{l} E (X) = E (X | \\text {first toss} H) \\cdot p + E (X | \\text {first toss} T) \\cdot q \\\\ = 0 \\cdot p + (1 + E (X)) \\cdot q, \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.566,
+            0.345,
+            0.586
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "which gives "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X ) = q / p ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.104,
+            0.595,
+            0.893,
+            0.632
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The next example derives expected waiting times for some more complicated patterns, using two steps of conditioning."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.104,
+            0.641,
+            0.895,
+            0.698
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 9.1.9 (Time until HH vs. HT). You toss a fair coin repeatedly. What is the expected number of tosses until the pattern HT appears for the first time? What about the expected number of tosses until HH appears for the first time?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 10,
+          "bbox": [
+            0.106,
+            0.712,
+            0.194,
+            0.729
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.104,
+            0.74,
+            0.896,
+            0.835
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W _ { H T }"
+            },
+            {
+              "type": "text",
+              "content": " be the number of tosses until HT appears. As we can see from Figure "
+            },
+            {
+              "type": "equation_inline",
+              "content": "9 . 3 , ~ W _ { H T }"
+            },
+            {
+              "type": "text",
+              "content": " is the waiting time for the first Heads, which we’ll call "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " , plus the additional waiting time for the first Tails after the first Heads, which we’ll call "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " By the story of the First Success distribution, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " are i.i.d. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { F S } ( 1 / 2 )"
+            },
+            {
+              "type": "text",
+              "content": " , so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( W _ { 1 } ) = E ( W _ { 2 } ) = 2 { \\mathrm { ~ a n d ~ } } E ( W _ { H T } ) = 4"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.104,
+            0.843,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Finding the expected waiting time for HH, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( W _ { H H } )"
+            },
+            {
+              "type": "text",
+              "content": " , is more complicated. We can’t apply the same logic as for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( W _ { H T } )"
+            },
+            {
+              "type": "text",
+              "content": " : as shown in Figure 9.4, if the first Heads is immediately followed by Tails, our progress is destroyed and we must start from scratch. But this is progress for us in solving the problem, since the fact that the"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 438,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "422"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.359,
+            0.066,
+            0.64,
+            0.187
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.359,
+                0.066,
+                0.64,
+                0.187
+              ],
+              "image_path": "images/page_438_image_2.jpg",
+              "content": "TTTHHHHTHHT...\nW₁ W₂"
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.103,
+            0.208,
+            0.237,
+            0.223
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 9.3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.225,
+            0.895,
+            0.263
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Waiting time for HT is the waiting time for the first Heads, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " , plus the additional waiting time for the next Tails, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " . Durable partial progress is possible!"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.101,
+            0.291,
+            0.896,
+            0.327
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "system can get reset suggests the strategy of first-step analysis. Let’s condition on the outcome of the first toss:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.208,
+            0.338,
+            0.79,
+            0.374
+          ],
+          "image_path": "images/page_438_equation_6.jpg",
+          "content": "E (W _ {H H}) = E (W _ {H H} | \\text {first toss} H) \\frac {1}{2} + E (W _ {H H} | \\text {first toss} T) \\frac {1}{2}."
+        },
+        {
+          "type": "image",
+          "index": 7,
+          "bbox": [
+            0.375,
+            0.405,
+            0.625,
+            0.521
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 7,
+              "bbox": [
+                0.375,
+                0.405,
+                0.625,
+                0.521
+              ],
+              "image_path": "images/page_438_image_7.jpg",
+              "content": "THTTTTHHHH...\n↑\nstart over"
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.104,
+            0.543,
+            0.238,
+            0.558
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 9.4"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.562,
+            0.707,
+            0.58
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "When waiting for HH, partial progress can easily be destroyed."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.594,
+            0.896,
+            0.687
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For the second term, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( W _ { H H } |"
+            },
+            {
+              "type": "text",
+              "content": " first toss "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { T ) } = 1 + E ( W _ { H H } )"
+            },
+            {
+              "type": "text",
+              "content": " by memorylessness. For the first term, we compute "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( W _ { H H } |"
+            },
+            {
+              "type": "text",
+              "content": " 1st toss H) by further conditioning on the outcome of the second toss. If the second toss is Heads, we have obtained HH in two tosses. If the second toss is Tails, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { w e } ^ { \\mathfrak { z } } \\mathrm { v e }"
+            },
+            {
+              "type": "text",
+              "content": " wasted two tosses and have to start all over! This gives"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.258,
+            0.687,
+            0.741,
+            0.722
+          ],
+          "image_path": "images/page_438_equation_11.jpg",
+          "content": "E (W _ {H H} | \\text {first toss} H) = 2 \\cdot \\frac {1}{2} + (2 + E (W _ {H H})) \\cdot \\frac {1}{2}."
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.104,
+            0.728,
+            0.206,
+            0.745
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Therefore,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.199,
+            0.76,
+            0.8,
+            0.801
+          ],
+          "image_path": "images/page_438_equation_13.jpg",
+          "content": "E (W _ {H H}) = \\left(2 \\cdot \\frac {1}{2} + (2 + E (W _ {H H})) \\cdot \\frac {1}{2}\\right) \\frac {1}{2} + (1 + E (W _ {H H})) \\frac {1}{2}."
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.814,
+            0.518,
+            0.833
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solving for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( W _ { H H } )"
+            },
+            {
+              "type": "text",
+              "content": " , we get "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( W _ { H H } ) = 6"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.101,
+            0.844,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It might seem surprising at first that the expected waiting time for HH is greater than the expected waiting time for HT. How do we reconcile this with the fact that in two tosses of the coin, HH and HT both have a "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 4"
+            },
+            {
+              "type": "text",
+              "content": " chance of appearing? Why aren’t the average waiting times the same by symmetry?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 439,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.314,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Conditional expectation"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "423"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.069,
+            0.896,
+            0.239
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As we solved this problem, we in fact noticed an important asymmetry. When waiting for HT, once we get the first Heads, we’ve achieved partial progress that cannot be destroyed: if the Heads is followed by another Heads, we’re in the same position as before, and if the Heads is followed by a Tails, we’re done. By contrast, when waiting for HH, even after getting the first Heads, we could be sent back to square one if the Heads is followed by a Tails. This suggests the average waiting time for HH should be longer. Symmetry implies that the average waiting time for HH is the same as that for TT, and that for HT is the same as that for TH, but it does not imply that the average waiting times for HH and HT are the same."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.249,
+            0.897,
+            0.364
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "More intuition into what’s going on can be obtained by considering a long string of coin flips, as in Figure 9.5. We notice right away that appearances of HH can overlap, while appearances of HT must be disjoint. For example, HHHHHH has 5 occurrences of HH, but HTHTHT has only 3 occurrences of HT. Since there are the same average number of HH s and HTs, but HH s sometimes clump together, the average waiting time for HH must be larger than that of HT to compensate."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 4,
+          "bbox": [
+            0.245,
+            0.378,
+            0.756,
+            0.478
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 4,
+              "bbox": [
+                0.245,
+                0.378,
+                0.756,
+                0.478
+              ],
+              "image_path": "images/page_439_image_4.jpg",
+              "content": "Sequence of HHTHHTTHHHHHTHTHTTHTT with overlapping circles, likely representing a DNA or protein sequence"
+            }
+          ],
+          "sub_type": "chemical"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.498,
+            0.239,
+            0.514
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 9.5"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.516,
+            0.896,
+            0.553
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Clumping. (a) Appearances of HH can overlap. (b) Appearances of HT must be disjoint."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.572,
+            0.896,
+            0.611
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Related problems occur in information theory when compressing a message, and in genetics when looking for recurring patterns (called motifs) in DNA sequences. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.62,
+            0.894,
+            0.658
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Our final example in this section uses wishful thinking for both probabilities and expectations to study a question about a random walk."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.669,
+            0.896,
+            0.746
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 9.1.10 (Random walk on the integers). An immortal drunk man wanders around randomly on the integers. He starts at the origin, and at each step he moves 1 unit to the right or 1 unit to the left, with equal probabilities, independently of all his previous steps. Let b be a googolplex (this is 10"
+            },
+            {
+              "type": "text",
+              "content": "g",
+              "styles": [
+                "superscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g = 1 0 ^ { 1 0 0 }"
+            },
+            {
+              "type": "text",
+              "content": " is a googol)."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.755,
+            0.896,
+            0.841
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 11,
+              "bbox": [
+                0.102,
+                0.755,
+                0.896,
+                0.793
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) Find a simple expression for the probability that the immortal drunk visits b before returning to the origin for the first time."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.102,
+                0.803,
+                0.894,
+                0.84
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) Find the expected number of times that the immortal drunk visits b before returning to the origin for the first time."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 13,
+          "bbox": [
+            0.105,
+            0.852,
+            0.195,
+            0.868
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.881,
+            0.896,
+            0.918
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) Let B be the event that the drunk man visits b before returning to the origin for the first time and let L be the event that his first move is to the left. Then"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 440,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "424"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.896,
+            0.126
+          ],
+          "content": [
+            {
+              "type": "equation_inline",
+              "content": "P ( B | L ) = 0"
+            },
+            {
+              "type": "text",
+              "content": " since any path from −1 to b must pass through 0. For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( B | L ^ { c } )"
+            },
+            {
+              "type": "text",
+              "content": " , we are exactly in the setting of the gambler’s ruin problem, where player A starts with $1, player B starts with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\S ( b - 1 )"
+            },
+            {
+              "type": "text",
+              "content": " , and the rounds are fair. Applying that result, we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.246,
+            0.134,
+            0.754,
+            0.171
+          ],
+          "image_path": "images/page_440_equation_3.jpg",
+          "content": "P (B) = P (B | L) P (L) + P (B | L ^ {c}) P (L ^ {c}) = \\frac {1}{b} \\cdot \\frac {1}{2} = \\frac {1}{2 b}."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.187,
+            0.895,
+            0.225
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) Let N be the number of visits to b before returning to the origin for the first time, and let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p = 1 / ( 2 b )"
+            },
+            {
+              "type": "text",
+              "content": " be the probability found in (a). Then"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.146,
+            0.235,
+            0.854,
+            0.257
+          ],
+          "image_path": "images/page_440_equation_5.jpg",
+          "content": "E (N) = E (N | N = 0) P (N = 0) + E (N | N \\geq 1) P (N \\geq 1) = p E (N | N \\geq 1)."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.103,
+            0.266,
+            0.896,
+            0.38
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The conditional distribution of N given "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N \\geq 1"
+            },
+            {
+              "type": "text",
+              "content": " is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { F S } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " : given that the man reaches b, by symmetry there is probability p of returning to the origin before visiting b again (call this “success”) and probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 - p"
+            },
+            {
+              "type": "text",
+              "content": " of returning to b again before returning to the origin (call this “failure”). Note that the trials are independent since the situation is the same each time he is at "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b ,"
+            },
+            {
+              "type": "text",
+              "content": " independent of the past history. Thus "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( N | N \\geq 1 ) = 1 / p ,"
+            },
+            {
+              "type": "text",
+              "content": " and"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.331,
+            0.389,
+            0.668,
+            0.427
+          ],
+          "image_path": "images/page_440_equation_7.jpg",
+          "content": "E (N) = p E (N | N \\geq 1) = p \\cdot \\frac {1}{p} = 1."
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.434,
+            0.896,
+            0.473
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Surprisingly, the result doesn’t depend on the value of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b ,"
+            },
+            {
+              "type": "text",
+              "content": " and our proof didn’t require knowing the value of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p ."
+            },
+            {
+              "type": "text",
+              "content": " \u0003"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.555,
+            0.606,
+            0.575
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.2 Conditional expectation given an r.v."
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.103,
+            0.592,
+            0.896,
+            0.668
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In this section we introduce conditional expectation given a random variable. That is, we want to understand what it means to write "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " for an r.v. X. We will see that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " is a random variable that is, in a certain sense, our best prediction of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " , assuming we get to know X."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.676,
+            0.895,
+            0.734
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The key to understanding "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " is first to understand "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X = x )"
+            },
+            {
+              "type": "text",
+              "content": " . Since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = x"
+            },
+            {
+              "type": "text",
+              "content": " is an event, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X = x )"
+            },
+            {
+              "type": "text",
+              "content": " is just the conditional expectation of Y given this event, and it can be computed using the conditional distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " given "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = x"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.103,
+            0.742,
+            0.895,
+            0.781
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " is discrete, we use the conditional PMF "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( Y   =   y | X   =   x )"
+            },
+            {
+              "type": "text",
+              "content": " in place of the unconditional PMF "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( Y = y )"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.316,
+            0.79,
+            0.682,
+            0.83
+          ],
+          "image_path": "images/page_440_equation_13.jpg",
+          "content": "E (Y | X = x) = \\sum_ {y} y P (Y = y | X = x)."
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.103,
+            0.839,
+            0.896,
+            0.877
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Analogously, if Y is continuous, we use the conditional PDF "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f _ { Y | X } ( y | x )"
+            },
+            {
+              "type": "text",
+              "content": " in place of the unconditional PDF:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.333,
+            0.882,
+            0.667,
+            0.923
+          ],
+          "image_path": "images/page_440_equation_15.jpg",
+          "content": "E (Y | X = x) = \\int_ {- \\infty} ^ {\\infty} y f _ {Y | X} (y | x) d y."
+        }
+      ]
+    },
+    {
+      "page_idx": 441,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.108,
+            0.038,
+            0.314,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Conditional expectation"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "425"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.067,
+            0.896,
+            0.144
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Notice that because we sum or integrate over y, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X   =   x )"
+            },
+            {
+              "type": "text",
+              "content": " is a function of x only. We can give this function a name, like "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ;"
+            },
+            {
+              "type": "text",
+              "content": " let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x ) = E ( Y | X = x )"
+            },
+            {
+              "type": "text",
+              "content": " . We define "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " as the random variable obtained by finding the form of the function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x )"
+            },
+            {
+              "type": "text",
+              "content": " then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p l u g g i n g"
+            },
+            {
+              "type": "text",
+              "content": " in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\; f o r \\; x"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.105,
+            0.152,
+            0.896,
+            0.229
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition 9.2.1 (Conditional expectation given an "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { r . v . ) }"
+            },
+            {
+              "type": "text",
+              "content": " . Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x ) = E ( Y | X = x )"
+            },
+            {
+              "type": "text",
+              "content": " Then the conditional expectation of Y given "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " , denoted "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " , is defined to be the random variable "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X )"
+            },
+            {
+              "type": "text",
+              "content": " . In other words, if after doing the experiment X crystallizes into x, then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " crystallizes into "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.105,
+            0.237,
+            0.897,
+            0.333
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "h 9.2.2. The notation in this definition sometimes causes confusion. It does not say "
+            },
+            {
+              "type": "equation_inline",
+              "content": "^ { \\backprime \\backprime } g ( x )   =   E ( Y | X   =   x )"
+            },
+            {
+              "type": "text",
+              "content": " , so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X )   =   E ( Y | X   =   X )"
+            },
+            {
+              "type": "text",
+              "content": " , which equals "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y )"
+            },
+            {
+              "type": "text",
+              "content": " because "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = X"
+            },
+            {
+              "type": "text",
+              "content": " is always true”. Rather, we should first compute the function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x )"
+            },
+            {
+              "type": "text",
+              "content": " , then plug in X for x. For example, if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x ) = x ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X ) = X ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " . A similar biohazard is h 5.3.2, about the meaning of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( X )"
+            },
+            {
+              "type": "text",
+              "content": " in the universality of the Uniform."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.105,
+            0.341,
+            0.897,
+            0.512
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "h 9.2.3. By definition, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " is a function of X, so it is a random variable. (This does not mean there are no examples where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " is a constant. A constant is a degenerate "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { r } . \\mathbf { V } ."
+            },
+            {
+              "type": "text",
+              "content": " , and a constant function of X. For example, if X and Y are independent then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X ) \\; = \\; E ( Y )"
+            },
+            {
+              "type": "text",
+              "content": " , which is a constant.) Thus it makes sense to compute quantities like "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( E ( Y | X ) )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { V a r } ( E ( Y | X ) )"
+            },
+            {
+              "type": "text",
+              "content": " , the mean and variance of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r.v.   E(Y|X)"
+            },
+            {
+              "type": "text",
+              "content": " . It is easy to be ensnared by category errors when working with conditional expectation, so it is important to keep in mind that conditional expectations of the form "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | A )"
+            },
+            {
+              "type": "text",
+              "content": " are numbers, while those of the form "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " are random variables."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.105,
+            0.521,
+            0.896,
+            0.578
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Here are some quick examples of how to calculate conditional expectation. In both examples, we don’t need to do a sum or integral to get "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X = x )"
+            },
+            {
+              "type": "text",
+              "content": " because a more direct approach is available."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.105,
+            0.587,
+            0.896,
+            0.645
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 9.2.4. A stick of length 1 is broken at a point X chosen uniformly at random. Given that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = x"
+            },
+            {
+              "type": "text",
+              "content": " , we then choose another breakpoint "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " uniformly on the interval "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[ 0 , x ]"
+            },
+            {
+              "type": "text",
+              "content": " . Find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " , and its mean and variance."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.108,
+            0.655,
+            0.195,
+            0.672
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.105,
+            0.683,
+            0.894,
+            0.722
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "From the description of the experiment, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathrm { U n i f } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y | X = x \\sim \\operatorname { U n i f } ( 0 , x )"
+            },
+            {
+              "type": "text",
+              "content": " Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X = x ) = x / 2"
+            },
+            {
+              "type": "text",
+              "content": " , so by plugging in X for x, we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.422,
+            0.736,
+            0.579,
+            0.757
+          ],
+          "image_path": "images/page_441_equation_10.jpg",
+          "content": "E (Y | X) = X / 2."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.105,
+            0.771,
+            0.427,
+            0.791
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The expected value of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.356,
+            0.806,
+            0.643,
+            0.827
+          ],
+          "image_path": "images/page_441_equation_12.jpg",
+          "content": "E (E (Y | X)) = E (X / 2) = 1 / 4."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.105,
+            0.841,
+            0.896,
+            0.898
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(We will show in the next section that a general property of conditional expectation is that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( E ( Y | X ) ) = E ( Y )"
+            },
+            {
+              "type": "text",
+              "content": " , so it also follows that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y ) = 1 / 4 . )"
+            },
+            {
+              "type": "text",
+              "content": " The variance of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.334,
+            0.899,
+            0.665,
+            0.92
+          ],
+          "image_path": "images/page_441_equation_14.jpg",
+          "content": "\\mathrm{Var} (E (Y | X)) = \\mathrm{Var} (X / 2) = 1 / 4 8."
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.873,
+            0.901,
+            0.894,
+            0.916
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "\u0003"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 442,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "426"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.066,
+            0.796,
+            0.09
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 9.2.5. For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X , Y \\stackrel { \\mathrm { i . i . d . } } { \\sim } \\mathrm { E x p o } ( \\lambda )"
+            },
+            {
+              "type": "text",
+              "content": " , find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( \\operatorname* { m a x } ( X , Y ) | \\operatorname* { m i n } ( X , Y ) )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.105,
+            0.099,
+            0.195,
+            0.116
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.126,
+            0.896,
+            0.165
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M = \\operatorname* { m a x } ( X , Y )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "L = \\operatorname* { m i n } ( X , Y )"
+            },
+            {
+              "type": "text",
+              "content": " . By the memoryless property, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M - L"
+            },
+            {
+              "type": "text",
+              "content": " is independent of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "L ,"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M - L \\sim \\mathrm{Exp}(\\lambda)"
+            },
+            {
+              "type": "text",
+              "content": " (see Example 7.3.6). Therefore"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.157,
+            0.176,
+            0.843,
+            0.213
+          ],
+          "image_path": "images/page_442_equation_5.jpg",
+          "content": "E (M | L = l) = E (L | L = l) + E (M - L | L = l) = l + E (M - L) = l + \\frac {1}{\\lambda},"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.103,
+            0.223,
+            0.322,
+            0.246
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\begin{array} { r } { E ( M | L ) = L + \\frac { 1 } { \\lambda } } \\end{array}"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.325,
+            0.606,
+            0.346
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.3 Properties of conditional expectation"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.363,
+            0.647,
+            0.382
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Conditional expectation has some very useful properties."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 9,
+          "bbox": [
+            0.096,
+            0.391,
+            0.896,
+            0.487
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 10,
+              "bbox": [
+                0.096,
+                0.391,
+                0.892,
+                0.411
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Dropping what’s independent: If X and "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Y"
+                },
+                {
+                  "type": "text",
+                  "content": " are independent, then "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "E ( Y | X ) = E ( Y )"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 11,
+              "bbox": [
+                0.096,
+                0.419,
+                0.856,
+                0.439
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Taking out what’s known: For any function h, "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "E ( h ( X ) Y | X ) = h ( X ) E ( Y | X )"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.096,
+                0.448,
+                0.894,
+                0.486
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Linearity: "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "E ( Y _ { 1 } + Y _ { 2 } | X ) = E ( Y _ { 1 } | X ) + E ( Y _ { 2 } | X )"
+                },
+                {
+                  "type": "text",
+                  "content": " , and "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "E ( c Y | X ) = c E ( Y | X )"
+                },
+                {
+                  "type": "text",
+                  "content": " for c a constant (the latter is a special case of taking out what’s known)."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.097,
+            0.495,
+            0.445,
+            0.514
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "• Adam’s law: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( E ( Y | X ) ) = E ( Y )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.096,
+            0.523,
+            0.894,
+            0.561
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "• Projection interpretation: The "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r.v.   Y - E(Y|X)"
+            },
+            {
+              "type": "text",
+              "content": " , which is called the residual from using "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " to predict "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y ."
+            },
+            {
+              "type": "text",
+              "content": " , is uncorrelated with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h ( X )"
+            },
+            {
+              "type": "text",
+              "content": " for any function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.103,
+            0.57,
+            0.489,
+            0.589
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s discuss each property individually."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.103,
+            0.598,
+            0.894,
+            0.637
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 9.3.1 (Dropping what’s independent). If X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " are independent, then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X ) = E ( Y )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.103,
+            0.645,
+            0.894,
+            0.721
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This is true because independence implies "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X   =   x )   =   E ( Y )"
+            },
+            {
+              "type": "text",
+              "content": " for all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x ,"
+            },
+            {
+              "type": "text",
+              "content": " hence "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(Y|X)=E(Y)"
+            },
+            {
+              "type": "text",
+              "content": " . Intuitively, if X provides no information about "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " , then our best guess for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " , even if we get to know "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " , is still the unconditional mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y )"
+            },
+            {
+              "type": "text",
+              "content": " . However, the converse is false: a counterexample is given in Example 9.3.3 below."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.103,
+            0.73,
+            0.734,
+            0.749
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 9.3.2 (Taking out what’s known). For any function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h ."
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 19,
+          "bbox": [
+            0.352,
+            0.762,
+            0.646,
+            0.784
+          ],
+          "image_path": "images/page_442_equation_19.jpg",
+          "content": "E (h (X) Y | X) = h (X) E (Y | X)."
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.102,
+            0.805,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Intuitively, when we take expectations given "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " , we are treating "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " as if it has crystallized into a known constant. Then any function of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " , say "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h ( X )"
+            },
+            {
+              "type": "text",
+              "content": " , also acts like a known constant while we are conditioning on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " . Taking out what’s known is the conditional version of the unconditional fact that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( c Y ) = c E ( Y )"
+            },
+            {
+              "type": "text",
+              "content": " . The difference is that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( c Y ) = c E ( Y )"
+            },
+            {
+              "type": "text",
+              "content": " asserts that two numbers are equal, while taking out what’s known asserts that two random variables are equal."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 443,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.108,
+            0.038,
+            0.314,
+            0.054
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Conditional expectation"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "427"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.067,
+            0.823,
+            0.087
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 9.3.3. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z \\sim \\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = Z ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " . Find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | Z )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Z | Y )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.095,
+            0.896,
+            0.173
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution: Since Y is a function of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z ,   E ( Y | Z ) = E ( Z ^ { 2 } | Z ) = Z ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " by taking out what’s known. To get "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Z | Y )"
+            },
+            {
+              "type": "text",
+              "content": " , notice that conditional on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = y ,   Z"
+            },
+            {
+              "type": "text",
+              "content": " equals "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\sqrt { y } } { \\mathrm { ~ o r ~ } } { - { \\sqrt { y } } }"
+            },
+            {
+              "type": "text",
+              "content": " with equal probabilities by the symmetry of the standard Normal, so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\dot { E } ( Z | Y = y ) = 0"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Z | Y ) = 0"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.181,
+            0.896,
+            0.256
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In this case, although Y provides a lot of information about "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z ,"
+            },
+            {
+              "type": "text",
+              "content": " narrowing down the possible values of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z \\mathrm { ~ t o ~ }"
+            },
+            {
+              "type": "text",
+              "content": " just two values, Y only tells us about the magnitude of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z"
+            },
+            {
+              "type": "text",
+              "content": " and not its sign. For this reason, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Z | Y ) = E ( Z )"
+            },
+            {
+              "type": "text",
+              "content": " despite the dependence between "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " . This example illustrates that the converse of Theorem 9.3.1 is false. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.105,
+            0.265,
+            0.75,
+            0.285
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 9.3.4 (Linearity). "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y _ { 1 } + Y _ { 2 } | X ) = E ( Y _ { 1 } | X ) + E ( Y _ { 2 } | X )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.105,
+            0.294,
+            0.896,
+            0.333
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This result is the conditional version of the unconditional fact that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(Y_{1} + Y_{2}) ="
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y _ { 1 } ) + E ( Y _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " , and is true since conditional probabilities are probabilities."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.105,
+            0.34,
+            0.896,
+            0.379
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "h 9.3.5. It is incorrect to write "
+            },
+            {
+              "type": "equation_inline",
+              "content": "`` E ( Y | X _ { 1 } + X _ { 2 } ) = E ( Y | X _ { 1 } ) + E ( Y | X _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " ; linearity applies on the left side of the conditioning bar, not on the right side!"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.105,
+            0.387,
+            0.894,
+            0.408
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 9.3.6. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , \\ldots , X _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " be i.i.d., and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S _ { n } = X _ { 1 }   + \\cdots + X _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " . Find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X _ { 1 } | S _ { n } )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.106,
+            0.417,
+            0.195,
+            0.434
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.106,
+            0.445,
+            0.242,
+            0.464
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "By symmetry,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.3,
+            0.463,
+            0.7,
+            0.484
+          ],
+          "image_path": "images/page_443_equation_11.jpg",
+          "content": "E (X _ {1} | S _ {n}) = E (X _ {2} | S _ {n}) = \\dots = E (X _ {n} | S _ {n}),"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.105,
+            0.491,
+            0.264,
+            0.51
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "and by linearity,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.277,
+            0.524,
+            0.723,
+            0.545
+          ],
+          "image_path": "images/page_443_equation_13.jpg",
+          "content": "E (X _ {1} | S _ {n}) + \\dots + E (X _ {n} | S _ {n}) = E (S _ {n} | S _ {n}) = S _ {n}."
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.106,
+            0.558,
+            0.206,
+            0.575
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Therefore,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.381,
+            0.575,
+            0.619,
+            0.597
+          ],
+          "image_path": "images/page_443_equation_15.jpg",
+          "content": "E (X _ {1} | S _ {n}) = S _ {n} / n = \\bar {X} _ {n},"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.104,
+            0.604,
+            0.896,
+            0.68
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "the sample mean of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j } { } ^ { \\prime } \\mathrm { s } ."
+            },
+            {
+              "type": "text",
+              "content": " This is an intuitive result: if we have 2 i.i.d. r.v.s "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } , X _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " and learn that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 } + X _ { 2 } = 1 0"
+            },
+            {
+              "type": "text",
+              "content": " , it makes sense to guess that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " is 5 (accounting for half of the total). Similarly, if we have n i.i.d. r.v.s and get to know their sum, our best guess for any one of them is the sample mean. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.104,
+            0.688,
+            0.896,
+            0.803
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The next theorem connects conditional expectation to unconditional expectation. It goes by many names, including the law of total expectation, the law of iterated expectation (which has a terrible acronym for something glowing with truth), and the tower property. We call it Adam’s law because it is used so frequently that it deserves a pithy name, and since it is often used in conjunction with another law we’ll encounter soon, which has a complementary name."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.105,
+            0.81,
+            0.641,
+            0.83
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 9.3.7 (Adam’s law). For any r.v.s X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y ."
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 19,
+          "bbox": [
+            0.398,
+            0.843,
+            0.601,
+            0.865
+          ],
+          "image_path": "images/page_443_equation_19.jpg",
+          "content": "E (E (Y | X)) = E (Y)."
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.105,
+            0.881,
+            0.896,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. We present the proof in the case where X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " are both discrete (the proofs for other cases are analogous). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X ) = g ( X )"
+            },
+            {
+              "type": "text",
+              "content": " . We proceed by applying"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 444,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "428"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.896,
+            0.104
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "LOTUS, expanding the definition of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x )"
+            },
+            {
+              "type": "text",
+              "content": " to get a double sum, and then swapping the order of summation:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.255,
+            0.113,
+            0.749,
+            0.334
+          ],
+          "image_path": "images/page_444_equation_3.jpg",
+          "content": "\\begin{array}{l} E (g (X)) = \\sum_ {x} g (x) P (X = x) \\\\ = \\sum_ {x} \\left(\\sum_ {y} y P (Y = y | X = x)\\right) P (X = x) \\\\ = \\sum_ {x} \\sum_ {y} y P (X = x) P (Y = y | X = x) \\\\ = \\sum_ {y} y \\sum_ {x} P (X = x, Y = y) \\\\ = \\sum_ {y} y P (Y = y) = E (Y). \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.352,
+            0.894,
+            0.388
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Adam’s law is a more compact, more general version of the law of total expectation (Theorem 9.1.5). For X discrete, the statements"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.331,
+            0.4,
+            0.667,
+            0.436
+          ],
+          "image_path": "images/page_444_equation_5.jpg",
+          "content": "E (Y) = \\sum_ {x} E (Y | X = x) P (X = x)"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.104,
+            0.447,
+            0.147,
+            0.462
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "and"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.401,
+            0.464,
+            0.597,
+            0.484
+          ],
+          "image_path": "images/page_444_equation_7.jpg",
+          "content": "E (Y) = E (E (Y | X))"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.491,
+            0.704,
+            0.51
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "mean the same thing, since if we let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X = x ) = g ( x )"
+            },
+            {
+              "type": "text",
+              "content": " , then"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.143,
+            0.52,
+            0.855,
+            0.557
+          ],
+          "image_path": "images/page_444_equation_9.jpg",
+          "content": "E (E (Y | X)) = E (g (X)) = \\sum_ {x} g (x) P (X = x) = \\sum_ {x} E (Y | X = x) P (X = x)."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.103,
+            0.575,
+            0.896,
+            0.651
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Armed with Adam’s law, we have a powerful strategy for finding an expectation "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y )"
+            },
+            {
+              "type": "text",
+              "content": " , by conditioning on an r.v. X that we wish we knew. First obtain "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " by treating X as known, and then take the expectation of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " . We will see various examples of this later in the chapter."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.66,
+            0.894,
+            0.698
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Just as there are forms of Bayes’ rule and LOTP with extra conditioning, as discussed in Chapter 2, there is a version of Adam’s law with extra conditioning."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.103,
+            0.726,
+            0.852,
+            0.745
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 9.3.8 (Adam’s law with extra conditioning). For any r.v.s "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X , Y , Z ,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.363,
+            0.756,
+            0.637,
+            0.777
+          ],
+          "image_path": "images/page_444_equation_13.jpg",
+          "content": "E (E (Y | X, Z) | Z) = E (Y | Z)."
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.797,
+            0.896,
+            0.872
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The above equation is Adam’s law, except with extra conditioning on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z"
+            },
+            {
+              "type": "text",
+              "content": " inserted everywhere. It is true because conditional probabilities are probabilities. So we are free to use Adam’s law to help us find both unconditional expectations and conditional expectations."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.102,
+            0.881,
+            0.897,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Using Adam’s law, we can also prove the last item on our list of properties of conditional expectation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 445,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.038,
+            0.314,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Conditional expectation"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "429"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.894,
+            0.106
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 9.3.9 (Projection interpretation). For any function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h ,"
+            },
+            {
+              "type": "text",
+              "content": " the random variable "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y - E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " is uncorrelated with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h ( X )"
+            },
+            {
+              "type": "text",
+              "content": " . Equivalently,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.362,
+            0.122,
+            0.637,
+            0.143
+          ],
+          "image_path": "images/page_445_equation_3.jpg",
+          "content": "E ((Y - E (Y | X)) h (X)) = 0."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.158,
+            0.837,
+            0.178
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(This is equivalent since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y - E ( Y | X ) ) = 0"
+            },
+            {
+              "type": "text",
+              "content": " , by linearity and Adam’s law.)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.199,
+            0.26,
+            0.217
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. We have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.227,
+            0.234,
+            0.773,
+            0.278
+          ],
+          "image_path": "images/page_445_equation_6.jpg",
+          "content": "\\begin{array}{l} E ((Y - E (Y | X)) h (X)) = E (h (X) Y) - E (h (X) E (Y | X)) \\\\ = E (h (X) Y) - E (E (h (X) Y | X)) \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.293,
+            0.894,
+            0.332
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "by Theorem 9.3.2 (here we’re “putting back what’s known” in the inner expectation). By Adam’s law, the second term is equal to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( h ( X ) Y )"
+            },
+            {
+              "type": "text",
+              "content": " \u0004"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 8,
+          "bbox": [
+            0.299,
+            0.361,
+            0.685,
+            0.515
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 8,
+              "bbox": [
+                0.299,
+                0.361,
+                0.685,
+                0.515
+              ],
+              "image_path": "images/page_445_image_8.jpg",
+              "content": "Y\n}Y - E(Y | X)\nE(Y | X)"
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.534,
+            0.238,
+            0.549
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 9.6"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.552,
+            0.897,
+            0.609
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The conditional expectation "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " is the projection of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " onto the space of all functions of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " , shown here as a plane. The residual "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y - E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " is orthogonal to the plane: it’s perpendicular to (uncorrelated with) any function of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.626,
+            0.896,
+            0.74
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "From a geometric perspective, we can visualize Theorem 9.3.9 as in Figure 9.6. In a certain sense (described below), "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " is the function of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " that is closest to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y ;"
+            },
+            {
+              "type": "text",
+              "content": " we say that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " is the projection of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " into the space of all functions of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " The “line” from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " in the figure is orthogonal (perpendicular) to the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "``  plane"
+            },
+            {
+              "type": "text",
+              "content": " since any other route from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " would be longer. This orthogonality turns out to be the geometric interpretation of Theorem 9.3.9."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.749,
+            0.897,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The details of this perspective are given in the next section, which is starred since it requires knowledge of linear algebra. But even without delving into the linear algebra, the projection picture gives some useful intuition. As mentioned earlier, we can think of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " as a prediction for Y based on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " . This is an extremely common problem in statistics: predict or estimate the future observations or unknown parameters based on data. The projection interpretation of conditional expectation implies that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " is the best predictor of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " based on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " , in the sense that it is the function of X with the lowest mean squared error (expected squared difference between "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " and the prediction of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y )"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 446,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "430"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.896,
+            0.143
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 9.3.10 (Linear regression). An extremely widely used method for data analysis in statistics is linear regression. In its most basic form, the linear regression model uses a single explanatory variable X to predict a response variable "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y ."
+            },
+            {
+              "type": "text",
+              "content": " and it assumes that the conditional expectation of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " is linear in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.408,
+            0.157,
+            0.592,
+            0.177
+          ],
+          "image_path": "images/page_446_equation_3.jpg",
+          "content": "E (Y | X) = a + b X."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.199,
+            0.669,
+            0.218
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) Show that an equivalent way to express this is to write"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.419,
+            0.232,
+            0.58,
+            0.251
+          ],
+          "image_path": "images/page_446_equation_5.jpg",
+          "content": "Y = a + b X + \\epsilon ,"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.103,
+            0.264,
+            0.616,
+            0.283
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where \u000f is an r.v. (called the error ) with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( \\epsilon | X ) = 0"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.296,
+            0.893,
+            0.316
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) Solve for the constants a and b in terms of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(X),E(Y),\\mathrm{Cov}(X,Y)"
+            },
+            {
+              "type": "text",
+              "content": " , and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { V a r } ( X )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.105,
+            0.325,
+            0.195,
+            0.342
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.104,
+            0.353,
+            0.686,
+            0.373
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = a + b X + \\epsilon"
+            },
+            {
+              "type": "text",
+              "content": " , with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( \\epsilon | X ) = 0"
+            },
+            {
+              "type": "text",
+              "content": " . Then by linearity,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.251,
+            0.385,
+            0.747,
+            0.406
+          ],
+          "image_path": "images/page_446_equation_10.jpg",
+          "content": "E (Y | X) = E (a | X) + E (b X | X) + E (\\epsilon | X) = a + b X."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.418,
+            0.638,
+            0.437
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Conversely, suppose that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X ) = a + b X"
+            },
+            {
+              "type": "text",
+              "content": " , and define"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.41,
+            0.451,
+            0.587,
+            0.47
+          ],
+          "image_path": "images/page_446_equation_12.jpg",
+          "content": "\\epsilon = Y - (a + b X)."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.103,
+            0.483,
+            0.373,
+            0.501
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = a + b X + \\epsilon"
+            },
+            {
+              "type": "text",
+              "content": " , with"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.201,
+            0.515,
+            0.798,
+            0.536
+          ],
+          "image_path": "images/page_446_equation_14.jpg",
+          "content": "E (\\epsilon | X) = E (Y | X) - E (a + b X | X) = E (Y | X) - (a + b X) = 0."
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.104,
+            0.562,
+            0.755,
+            0.581
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) First, by Adam’s law, taking the expectation of both sides gives"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.402,
+            0.594,
+            0.597,
+            0.614
+          ],
+          "image_path": "images/page_446_equation_16.jpg",
+          "content": "E (Y) = a + b E (X)."
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.103,
+            0.627,
+            0.682,
+            0.645
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that \u000f has mean 0 and X and \u000f are uncorrelated, since"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 18,
+          "bbox": [
+            0.352,
+            0.659,
+            0.649,
+            0.68
+          ],
+          "image_path": "images/page_446_equation_18.jpg",
+          "content": "E (\\epsilon) = E (E (\\epsilon | X)) = E (0) = 0"
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.104,
+            0.693,
+            0.147,
+            0.708
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "and"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 20,
+          "bbox": [
+            0.254,
+            0.71,
+            0.745,
+            0.731
+          ],
+          "image_path": "images/page_446_equation_20.jpg",
+          "content": "E (\\epsilon X) = E (E (\\epsilon X | X)) = E (X E (\\epsilon | X)) = E (0) = 0."
+        },
+        {
+          "type": "text",
+          "index": 21,
+          "bbox": [
+            0.103,
+            0.738,
+            0.792,
+            0.756
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Taking the covariance with X of both sides in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = a + b X + \\epsilon ,"
+            },
+            {
+              "type": "text",
+              "content": " we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 22,
+          "bbox": [
+            0.195,
+            0.77,
+            0.802,
+            0.79
+          ],
+          "image_path": "images/page_446_equation_22.jpg",
+          "content": "\\operatorname{Cov} (X, Y) = \\operatorname{Cov} (X, a) + b \\operatorname{Cov} (X, X) + \\operatorname{Cov} (X, \\epsilon) = b \\operatorname{Var} (X)."
+        },
+        {
+          "type": "text",
+          "index": 23,
+          "bbox": [
+            0.104,
+            0.803,
+            0.163,
+            0.82
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Thus,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 24,
+          "bbox": [
+            0.261,
+            0.832,
+            0.418,
+            0.873
+          ],
+          "image_path": "images/page_446_equation_24.jpg",
+          "content": "b = \\frac {\\operatorname{Cov} (X , Y)}{\\operatorname{Var} (X)},"
+        },
+        {
+          "type": "equation",
+          "index": 25,
+          "bbox": [
+            0.26,
+            0.883,
+            0.739,
+            0.923
+          ],
+          "image_path": "images/page_446_equation_25.jpg",
+          "content": "a = E (Y) - b   E (X) = E (Y) - \\frac {\\operatorname{Cov} (X , Y)}{\\operatorname{Var} (X)} \\cdot E (X)."
+        },
+        {
+          "type": "text",
+          "index": 26,
+          "bbox": [
+            0.873,
+            0.895,
+            0.894,
+            0.909
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "\u0003"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 447,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.038,
+            0.314,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Conditional expectation"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.892,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "431"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.109,
+            0.79,
+            0.13
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9.4 *Geometric interpretation of conditional expectation"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.147,
+            0.895,
+            0.26
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This section explains in more detail the geometric perspective shown in Figure 9.6, using some concepts from linear algebra. Consider the vector space consisting of all random variables on a certain probability space, such that the random variables all have finite variance. Each vector or point in the space is a random variable (here we are using “vector” in the linear algebra sense, not in the sense of a random vector from Chapter "
+            },
+            {
+              "type": "equation_inline",
+              "content": "7 )"
+            },
+            {
+              "type": "text",
+              "content": " . Define the inner product of two r.v.s U and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V"
+            },
+            {
+              "type": "text",
+              "content": " to be"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.415,
+            0.275,
+            0.584,
+            0.297
+          ],
+          "image_path": "images/page_447_equation_4.jpg",
+          "content": "\\langle U, V \\rangle = E (U V)."
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.311,
+            0.895,
+            0.349
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(For this definition to satisfy the axioms for an inner product, we need the convention that two r.v.s are considered the same if they are equal with probability 1.)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.103,
+            0.359,
+            0.438,
+            0.377
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The squared length of an r.v. X is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.382,
+            0.391,
+            0.617,
+            0.414
+          ],
+          "image_path": "images/page_447_equation_7.jpg",
+          "content": "| | X | | ^ {2} = \\langle X, X \\rangle = E X ^ {2},"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.428,
+            0.634,
+            0.446
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "and the squared distance between two r.v.s "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V"
+            },
+            {
+              "type": "text",
+              "content": " is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.379,
+            0.461,
+            0.619,
+            0.484
+          ],
+          "image_path": "images/page_447_equation_9.jpg",
+          "content": "| | U - V | | ^ {2} = E (U - V) ^ {2}."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.103,
+            0.497,
+            0.827,
+            0.517
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The interpretations become especially nice if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( U ) = E ( V ) = 0"
+            },
+            {
+              "type": "text",
+              "content": " , since then:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 11,
+          "bbox": [
+            0.096,
+            0.526,
+            0.892,
+            0.603
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.096,
+                0.526,
+                0.465,
+                0.545
+              ],
+              "content": [
+                {
+                  "type": "equation_inline",
+                  "content": "| | U | | ^ { 2 } = \\operatorname { V a r } ( U )"
+                },
+                {
+                  "type": "text",
+                  "content": " , and "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "| | U | | = \\operatorname { S D } ( U )"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 13,
+              "bbox": [
+                0.096,
+                0.555,
+                0.891,
+                0.573
+              ],
+              "content": [
+                {
+                  "type": "equation_inline",
+                  "content": "\\langle U , V \\rangle = \\mathrm { C o v } ( U , V )"
+                },
+                {
+                  "type": "text",
+                  "content": " , and the cosine of the “angle” between U and V is "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\operatorname { C o r r } ( U , V )"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 14,
+              "bbox": [
+                0.096,
+                0.585,
+                0.86,
+                0.602
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "U"
+                },
+                {
+                  "type": "text",
+                  "content": " and V are orthogonal "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "( \\mathrm { i . e . , } ~ \\langle U , V \\rangle = 0 )"
+                },
+                {
+                  "type": "text",
+                  "content": " if and only if they are uncorrelated."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.101,
+            0.612,
+            0.896,
+            0.747
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To interpret "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " geometrically, consider the space of all random variables (with finite variance) that can be expressed as functions of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " . This is a subspace of the vector space. In Figure "
+            },
+            {
+              "type": "equation_inline",
+              "content": "9 . 6 ,"
+            },
+            {
+              "type": "text",
+              "content": " the subspace of random variables of the form "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h ( X )"
+            },
+            {
+              "type": "text",
+              "content": " is represented by a plane. To get "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " , we project "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " onto the plane. Then the residual "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y - E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " is orthogonal to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h ( X )"
+            },
+            {
+              "type": "text",
+              "content": " for all functions "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h ,"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | X )"
+            },
+            {
+              "type": "text",
+              "content": " is the function of X that best predicts "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y ."
+            },
+            {
+              "type": "text",
+              "content": " where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "`` \\mathrm{best''}"
+            },
+            {
+              "type": "text",
+              "content": " here means that the mean squared error "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y - g ( X ) ) ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " is minimized by choosing "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X ) = E ( Y | X )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.102,
+            0.755,
+            0.895,
+            0.812
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The projection interpretation is a helpful way to think about many of the properties of conditional expectation. For example, if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = h ( X )"
+            },
+            {
+              "type": "text",
+              "content": " is a function of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " , then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " itself is already in the plane, so it is its own projection; this explains why"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.399,
+            0.827,
+            0.599,
+            0.848
+          ],
+          "image_path": "images/page_447_equation_17.jpg",
+          "content": "E (h (X) | X) = h (X)."
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.102,
+            0.862,
+            0.895,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can think of unconditional expectation as a projection too: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y )"
+            },
+            {
+              "type": "text",
+              "content": " can be thought of as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y | 0 )"
+            },
+            {
+              "type": "text",
+              "content": " , the projection of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " onto the space of all constants (and indeed, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y )"
+            },
+            {
+              "type": "text",
+              "content": " is the constant c that minimizes "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y - c ) ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , as we proved in Theorem 6.1.4)."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

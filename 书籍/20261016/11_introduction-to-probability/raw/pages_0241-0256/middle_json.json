@@ -1,0 +1,5577 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Probability, Second Edition",
+      "authors": [
+        "Joseph K. Blitzstein;Jessica Hwang;"
+      ],
+      "created_at": "2019-01-18T11:22:30+05:30",
+      "modified_at": "2019-02-04T21:29:14+05:30",
+      "creator_application": "LaTeX with hyperref",
+      "producer_application": "pdfTeX-1.40.19",
+      "page_count": 636,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 240,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 241,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 242,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 243,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 244,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 245,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 246,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 247,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 248,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 249,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 250,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 251,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 252,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 253,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 254,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 255,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 240,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "224"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.111,
+            0.496,
+            0.132
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.3 Universality of the Uniform"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.151,
+            0.896,
+            0.303
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In this section, we will discuss a remarkable property of the Uniform distribution: given a Unif(0, 1) r.v., we can construct an r.v. with any continuous distribution we want. Conversely, given an r.v. with an arbitrary continuous distribution, we can create a Unif(0, 1) r.v. We call this the universality of the Uniform, because it tells us the Uniform is a universal starting point for building r.v.s with other distributions. Universality of the Uniform also goes by many other names, such as the probability integral transform, inverse transform sampling, the quantile transformation, and even the fundamental theorem of simulation."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.314,
+            0.894,
+            0.372
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To keep the proofs simple, we will state universality of the Uniform for a case where we know the inverse of the desired CDF exists. Similar ideas can be used to simulate a random draw from any desired CDF as a function of a Unif(0, 1) r.v."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.382,
+            0.894,
+            0.459
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 5.3.1 (Universality of the Uniform). Let F be a CDF which is a continuous function and strictly increasing on the support of the distribution. This ensures that the inverse function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ^ { - 1 }"
+            },
+            {
+              "type": "text",
+              "content": " exists, as a function from (0, 1) to R. We then have the following results."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 8,
+          "bbox": [
+            0.175,
+            0.482,
+            0.862,
+            0.532
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.175,
+                0.482,
+                0.862,
+                0.501
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. Let "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "U \\sim \\mathrm { U n i f } ( 0 , 1 )"
+                },
+                {
+                  "type": "text",
+                  "content": " and "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X = F ^ { - 1 } ( U )"
+                },
+                {
+                  "type": "text",
+                  "content": " . Then X is an r.v. with CDF F."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.175,
+                0.514,
+                0.735,
+                0.532
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. Let X be an r.v. with CDF F. Then "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "F ( X ) \\sim \\operatorname { U n i f } ( 0 , 1 )"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.104,
+            0.555,
+            0.894,
+            0.65
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s make sure we understand what each part of the theorem is saying. The first part says that if we start with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U \\sim \\mathrm { U n i f } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " and a CDF F, then we can create an r.v. whose CDF is F by plugging U into the inverse CDF "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ^ { - 1 }"
+            },
+            {
+              "type": "text",
+              "content": " . Since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ^ { - 1 }"
+            },
+            {
+              "type": "text",
+              "content": " is a function (known as the quantile function), U is an r.v., and a function of an r.v. is an r.v., "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ^ { - 1 } ( U )"
+            },
+            {
+              "type": "text",
+              "content": " is an r.v.; universality of the Uniform says its CDF is F."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.104,
+            0.661,
+            0.894,
+            0.757
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The second part of the theorem goes in the reverse direction, starting from an r.v. X whose CDF is F and then creating a Unif(0, 1) r.v. Again, F is a function, X is an r.v., and a function of an r.v. is an r.v., so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( X )"
+            },
+            {
+              "type": "text",
+              "content": " is an r.v. Since any CDF is between 0 and 1 everywhere, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( X )"
+            },
+            {
+              "type": "text",
+              "content": " must take values between 0 and 1. Universality of the Uniform says that the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( X )"
+            },
+            {
+              "type": "text",
+              "content": " is Uniform on (0, 1)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.104,
+            0.767,
+            0.896,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "h 5.3.2. The second part of universality of the Uniform involves plugging a random variable X into its own CDF F. This may seem strangely self-referential, but it makes sense because F is just a function (that satisfies the properties of a valid CDF), and a function of an r.v. is an r.v. There is a potential notational confusion, however: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x) = P(X \\leq x)"
+            },
+            {
+              "type": "text",
+              "content": " by definition, but it would be incorrect to say "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\text{\" }F(X)="
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X   \\leq   X )   =   1"
+            },
+            {
+              "type": "text",
+              "content": " Rather, we should first find an expression for the CDF as a function of x, then replace x with X to obtain an r.v. For example, if the CDF of X is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( x ) = 1 - e ^ { - x }"
+            },
+            {
+              "type": "text",
+              "content": " for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x > 0"
+            },
+            {
+              "type": "text",
+              "content": " , then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( X ) = 1 - e ^ { - X }"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 241,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.038,
+            0.364,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Continuous random variables"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "225"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.896,
+            0.105
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Understanding the statement of the theorem is the difficult part; the proof is just a couple of lines for each direction."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.105,
+            0.124,
+            0.168,
+            0.142
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.151,
+            0.624,
+            0.17
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "1. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U \\sim \\mathrm { U n i f } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = F ^ { - 1 } ( U )"
+            },
+            {
+              "type": "text",
+              "content": " . For all real "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x ."
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.242,
+            0.184,
+            0.757,
+            0.205
+          ],
+          "image_path": "images/page_241_equation_5.jpg",
+          "content": "P (X \\leq x) = P (F ^ {- 1} (U) \\leq x) = P (U \\leq F (x)) = F (x),"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.103,
+            0.219,
+            0.895,
+            0.257
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "so the CDF of X is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ,"
+            },
+            {
+              "type": "text",
+              "content": " as claimed. For the last equality, we used the fact that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( U \\leq u ) = u"
+            },
+            {
+              "type": "text",
+              "content": " for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "u \\in ( 0 , 1 )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.269,
+            0.896,
+            0.308
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2. Let X have CDF "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ,"
+            },
+            {
+              "type": "text",
+              "content": " and find the CDF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = F ( X )"
+            },
+            {
+              "type": "text",
+              "content": " . Since Y takes values in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( Y \\leq y )"
+            },
+            {
+              "type": "text",
+              "content": " equals 0 for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y \\leq 0"
+            },
+            {
+              "type": "text",
+              "content": " and equals 1 for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y \\geq 1"
+            },
+            {
+              "type": "text",
+              "content": " . For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y \\in ( 0 , 1 )"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.194,
+            0.32,
+            0.806,
+            0.342
+          ],
+          "image_path": "images/page_241_equation_8.jpg",
+          "content": "P (Y \\leq y) = P (F (X) \\leq y) = P (X \\leq F ^ {- 1} (y)) = F (F ^ {- 1} (y)) = y."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.355,
+            0.414,
+            0.374
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Thus Y has the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { U n i f } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " CDF."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.103,
+            0.391,
+            0.896,
+            0.448
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To gain more insight into what the quantile function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ^ { - 1 }"
+            },
+            {
+              "type": "text",
+              "content": " and universality of the Uniform mean, let’s consider an example that is familiar to millions of students: percentiles on an exam."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.457,
+            0.896,
+            0.59
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 5.3.3 (Percentiles). A large number of students take a certain exam, graded on a scale from 0 to 100. Let X be the score of a random student. Continuous distributions are easier to deal with here, so let’s approximate the discrete distribution of scores using a continuous distribution. Suppose that X is continuous, with a CDF F that is strictly increasing on (0, 100). In reality, there are only finitely many students and only finitely many possible scores, but a continuous distribution may be a good approximation."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.103,
+            0.599,
+            0.896,
+            0.675
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Suppose that the median score on the exam is 60, i.e., half of the students score above 60 and the other half score below 60 (a convenient aspect of assuming a continuous distribution is that we don’t need to worry about how many students had scores equal to 60). That is, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( 6 0 ) = 1 / 2"
+            },
+            {
+              "type": "text",
+              "content": " , or, equivalently, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ^ { - 1 } ( 1 / 2 ) = 6 0"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.103,
+            0.683,
+            0.896,
+            0.815
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If Fred scores a 72 on the exam, then his percentile is the fraction of students who score below a 72. This is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( 7 2 )"
+            },
+            {
+              "type": "text",
+              "content": " , which is some number in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 1 / 2 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " since 72 is above the median. In general, a student with score x has percentile "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( x )"
+            },
+            {
+              "type": "text",
+              "content": " . Going the other way, if we start with a percentile, say 0.95, then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ^ { - 1 } ( 0 . 9 5 )"
+            },
+            {
+              "type": "text",
+              "content": " is the score that has that percentile. A percentile is also called a quantile, which is why "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ^ { - 1 }"
+            },
+            {
+              "type": "text",
+              "content": " is called the quantile function. The function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F"
+            },
+            {
+              "type": "text",
+              "content": " converts scores to quantiles, and the function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ^ { - 1 }"
+            },
+            {
+              "type": "text",
+              "content": " converts quantiles to scores."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.103,
+            0.824,
+            0.896,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The strange operation of plugging X into its own CDF now has a natural interpretation: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( X )"
+            },
+            {
+              "type": "text",
+              "content": " is the percentile attained by a random student. It often happens that the distribution of scores on an exam looks very non-Uniform. For example, there is no reason to think that 10% of the scores are between "
+            },
+            {
+              "type": "equation_inline",
+              "content": "7 0"
+            },
+            {
+              "type": "text",
+              "content": " and 80, even though (70, 80) covers 10% of the range of possible scores."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 242,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "226"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.182
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "On the other hand, the distribution of percentiles of the students is Uniform: the universality property says that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( X ) \\sim \\operatorname { U n i f } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " . For example, 50% of the students have a percentile of at least 0.5. Universality of the Uniform is expressing the fact that 10% of the students have a percentile between 0 and 0.1, 10% have a percentile between 0.1 and 0.2, 10% have a percentile between 0.2 and 0.3, and so on—a fact that is clear from the definition of percentile. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.191,
+            0.896,
+            0.229
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To illustrate universality of the Uniform, we will apply it to the two distributions we encountered in the previous section, the Logistic and Rayleigh."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.238,
+            0.747,
+            0.256
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 5.3.4 (Universality with Logistic). The Logistic CDF is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.382,
+            0.269,
+            0.617,
+            0.306
+          ],
+          "image_path": "images/page_242_equation_5.jpg",
+          "content": "F (x) = \\frac {e ^ {x}}{1 + e ^ {x}}, \\quad x \\in \\mathbb {R}."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.318,
+            0.896,
+            0.373
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Suppose we have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U \\sim \\mathrm { U n i f } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " and wish to generate a Logistic r.v. Part 1 of the universality property says that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ^ { - 1 } ( U ) \\sim"
+            },
+            {
+              "type": "text",
+              "content": " Logistic, so we first invert the CDF to get "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ^ { - 1 }"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.384,
+            0.373,
+            0.615,
+            0.413
+          ],
+          "image_path": "images/page_242_equation_7.jpg",
+          "content": "F ^ {- 1} (u) = \\log \\left(\\frac {u}{1 - u}\\right)."
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.104,
+            0.418,
+            0.348,
+            0.436
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Then we plug in U for u:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.379,
+            0.448,
+            0.619,
+            0.489
+          ],
+          "image_path": "images/page_242_equation_9.jpg",
+          "content": "F ^ {- 1} (U) = \\log \\left(\\frac {U}{1 - U}\\right)."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.103,
+            0.502,
+            0.414,
+            0.533
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Therefore log "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\begin{array} { r } { \\left( \\frac { U } { 1 - U } \\right) \\sim \\mathrm { L o g i s t i c } } \\end{array}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.542,
+            0.896,
+            0.624
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can verify directly that log "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left( { \\frac { U } { 1 { - } U } } \\right)"
+            },
+            {
+              "type": "text",
+              "content": " has the required CDF: start from the definition of CDF, do some algebra to isolate U on one side of the inequality, and then use the CDF of the Uniform distribution. Let’s work through these calculations once for practice:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.285,
+            0.633,
+            0.714,
+            0.799
+          ],
+          "image_path": "images/page_242_equation_12.jpg",
+          "content": "\\begin{array}{l} P \\left(\\log \\left(\\frac {U}{1 - U}\\right) \\leq x\\right) = P \\left(\\frac {U}{1 - U} \\leq e ^ {x}\\right) \\\\ = P \\left(U \\leq e ^ {x} (1 - U)\\right) \\\\ = P \\left(U \\leq \\frac {e ^ {x}}{1 + e ^ {x}}\\right) \\\\ = \\frac {e ^ {x}}{1 + e ^ {x}}, \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.103,
+            0.808,
+            0.434,
+            0.827
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "which is indeed the Logistic CDF."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.837,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can also use simulation to visualize how universality of the Uniform works. To this end, we generated 1 million Unif(0, 1) random variables. We then transformed each of these values u into log "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left( { \\frac { u } { 1 - u } } \\right)"
+            },
+            {
+              "type": "text",
+              "content": " ; if the universality of the Uniform is correct, the transformed numbers should follow a Logistic distribution."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 243,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.364,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Continuous random variables"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "227"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.234,
+            0.069,
+            0.782,
+            0.422
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.234,
+                0.069,
+                0.782,
+                0.422
+              ],
+              "image_path": "images/page_243_image_2.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.447,
+            0.238,
+            0.462
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 5.7"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.464,
+            0.893,
+            0.511
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Top: Histogram of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 0 ^ { 6 }"
+            },
+            {
+              "type": "text",
+              "content": " draws of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U \\sim \\mathrm { U n i f } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " , with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { U n i f } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " PDF for comparison. Bottom: Histogram of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 0 ^ { 6 }"
+            },
+            {
+              "type": "text",
+              "content": " draws of log "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left( { \\frac { U } { 1 { - } U } } \\right)"
+            },
+            {
+              "type": "text",
+              "content": " , with Logistic PDF for comparison."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.54,
+            0.896,
+            0.643
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Figure 5.7 displays a histogram of the realizations of U alongside the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { U n i f } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " PDF; below that, we have a histogram of the realizations of log "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left( { \\frac { U } { 1 { - } U } } \\right)"
+            },
+            {
+              "type": "text",
+              "content": " next to the Logistic PDF. As we can see, the second histogram looks very much like the Logistic PDF. Thus, by applying "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ^ { - 1 }"
+            },
+            {
+              "type": "text",
+              "content": " , we were able to transform our Uniform draws into Logistic draws, exactly as claimed by the universality of the Uniform."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.103,
+            0.651,
+            0.867,
+            0.671
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Conversely, Part 2 of the universality property states that if X ∼ Logistic, then"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.358,
+            0.682,
+            0.639,
+            0.722
+          ],
+          "image_path": "images/page_243_equation_7.jpg",
+          "content": "F (X) = \\frac {e ^ {X}}{1 + e ^ {X}} \\sim \\mathrm{Unif} (0, 1)."
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.104,
+            0.734,
+            0.763,
+            0.754
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 5.3.5 (Universality with Rayleigh). The Rayleigh CDF is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.365,
+            0.766,
+            0.633,
+            0.789
+          ],
+          "image_path": "images/page_243_equation_9.jpg",
+          "content": "F (x) = 1 - e ^ {- x ^ {2} / 2}, \\quad x > 0."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.104,
+            0.803,
+            0.582,
+            0.822
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The quantile function (the inverse of the CDF) is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.37,
+            0.835,
+            0.629,
+            0.858
+          ],
+          "image_path": "images/page_243_equation_11.jpg",
+          "content": "F ^ {- 1} (u) = \\sqrt {- 2 \\log (1 - u)},"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.871,
+            0.726,
+            0.893
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "so if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U \\sim \\mathrm { U n i f } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " , then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ^ { - 1 } ( U ) = { \\sqrt { - 2 \\log ( 1 - U ) } } \\sim \\mathrm { R a y l e i g h }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.103,
+            0.9,
+            0.894,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We again generated 1 million realizations of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U \\sim \\mathrm { U n i f } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " and transformed them"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 244,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "228"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.249,
+            0.067,
+            0.778,
+            0.419
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.249,
+                0.067,
+                0.778,
+                0.419
+              ],
+              "image_path": "images/page_244_image_2.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.447,
+            0.239,
+            0.462
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 5.8"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.465,
+            0.897,
+            0.522
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Top: Histogram of 1 million draws from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U \\sim \\mathrm { U n i f } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " , with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { U n i f } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " PDF for comparison. Bottom: Histogram of 1 million draws from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sqrt { - 2 \\log ( 1 - U ) }"
+            },
+            {
+              "type": "text",
+              "content": " , with Rayleigh PDF for comparison."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.55,
+            0.896,
+            0.608
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "to produce 1 million realizations of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sqrt { - 2 \\log ( 1 - U ) }"
+            },
+            {
+              "type": "text",
+              "content": " . As Figure 5.8 shows, the realizations of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sqrt { - 2 \\log ( 1 - U ) }"
+            },
+            {
+              "type": "text",
+              "content": " look very similar to the Rayleigh PDF, as predicted by the universality of the Uniform."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.103,
+            0.619,
+            0.744,
+            0.641
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Conversely, if X ∼ Rayleigh, then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( X ) = 1 - e ^ { - X ^ { 2 } / 2 } \\sim \\mathrm { U n i f } ( 0 , 1 )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.651,
+            0.896,
+            0.764
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Next, let us consider the extent to which universality of the Uniform holds for discrete random variables. The CDF F of a discrete r.v. has jumps and flat regions, so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ^ { - 1 }"
+            },
+            {
+              "type": "text",
+              "content": " does not exist (in the usual sense). But Part 1 still holds in the sense that given a Uniform random variable, we can construct an r.v. with any discrete distribution we want. The difference is that instead of working with the CDF, which is not invertible, it is more straightforward to work with the PMF."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.775,
+            0.896,
+            0.87
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Suppose we want to use "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U   \\sim   \\mathrm { U n i f } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " to construct a discrete r.v. X with PMF "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { j } = P ( X = j )"
+            },
+            {
+              "type": "text",
+              "content": " for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j = 0 , 1 , 2 , \\ldots , n"
+            },
+            {
+              "type": "text",
+              "content": " . As illustrated in Figure 5.9, we can chop up the interval "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " into pieces of lengths "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 0 } , p _ { 1 } , \\ldots , p _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " . By the properties of a valid PMF, the sum of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ p _ { j } } ^ { \\prime } \\mathrm { s }"
+            },
+            {
+              "type": "text",
+              "content": " is 1, so this perfectly divides up the interval, without overshooting or undershooting."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.881,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Now define X to be the r.v. which equals 0 if U falls into the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 0 }"
+            },
+            {
+              "type": "text",
+              "content": " interval, 1 if U falls into the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " interval, 2 if U falls into the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " interval, and so on. Then X is a discrete"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 245,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.038,
+            0.364,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Continuous random variables"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "229"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.229,
+            0.07,
+            0.775,
+            0.165
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.229,
+                0.07,
+                0.775,
+                0.165
+              ],
+              "image_path": "images/page_245_image_2.jpg",
+              "content": "0 1 2 ... n-1 n\n| | | | | | | |\np₀ p₁ p₂ pₙ₋₁ pₙ"
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.103,
+            0.186,
+            0.237,
+            0.201
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 5.9"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.204,
+            0.893,
+            0.24
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Given a PMF, chop up the interval (0, 1) into pieces, with lengths given by the PMF values."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.268,
+            0.897,
+            0.326
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "r.v. taking on values 0 through n. The probability that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = j"
+            },
+            {
+              "type": "text",
+              "content": " is the probability that U falls into the interval of length "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " . But for a Unif(0, 1) r.v., probability is length, so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X = j )"
+            },
+            {
+              "type": "text",
+              "content": " is precisely "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " , as desired!"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.335,
+            0.895,
+            0.392
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The same trick will work for a discrete r.v. that can take on infinitely many values, such as a Poisson; we’ll need to chop (0, 1) into infinitely many pieces, but the total length of the pieces is still 1."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.403,
+            0.895,
+            0.459
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We now know how to take an arbitrary PMF and create an r.v. with that PMF. This fulfills our promise from Chapter 3 that any function with the properties given in Theorem 3.2.7 is the PMF of some r.v."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.471,
+            0.895,
+            0.547
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "h 5.3.6. Part 2 of universality of the Uniform, on the other hand, fails for discrete r.v.s. A function of a discrete r.v. is still discrete, so if X is discrete, then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( X )"
+            },
+            {
+              "type": "text",
+              "content": " is still discrete. So "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( X )"
+            },
+            {
+              "type": "text",
+              "content": " doesn’t have a Uniform distribution. For example, if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathrm { B e r n } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " then F(X) has only two possible values: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( 0 ) = 1 - p"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( 1 ) = 1"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.558,
+            0.896,
+            0.764
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The upshot of universality is that we can use a Uniform r.v. U to generate r.v.s from both continuous and discrete distributions: in the continuous case, we can plug U into the inverse CDF, and in the discrete case, we can chop up the unit interval according to the desired PMF. Part 1 of universality of the Uniform is often useful in practice when running simulations (since the software being used may know how to generate Uniform r.v.s but not know how to generate r.v.s with the distribution of interest), though the extent to which it is useful depends on how tractable it is to compute the inverse CDF. Part 2 is important for certain widely used techniques in statistical inference, by providing a transformation that converts an r.v. with an unknown distribution to an r.v. with a known, simple distribution: the Uniform."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.776,
+            0.897,
+            0.87
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Using our analogy of distributions as blueprints and r.v.s as houses, the beauty of the universality property is that the Uniform distribution is a very simple blueprint, and it’s easy to create a house from that blueprint; universality of the Uniform then gives us a simple rule for remodeling the Uniform house into a house with any other blueprint, no matter how complicated!"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.881,
+            0.895,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To conclude this section, we give an elegant identity that is often useful for finding the expectation of a nonnegative r.v. The identity also has a neat visual interpreta-"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 246,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "230"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.893,
+            0.105
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "tion related to universality of the Uniform, LOTUS, and the relationship between CDFs and quantile functions."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.103,
+            0.116,
+            0.894,
+            0.154
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition 5.3.7. The survival function of an r.v. X with CDF F is the function G given by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "G(x)=1-F(x)=P(X>x)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.164,
+            0.894,
+            0.202
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 5.3.8 (Expectation by integrating the survival function). Let X be a nonnegative r.v. Its expectation can be found by integrating its survival function:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.371,
+            0.215,
+            0.627,
+            0.255
+          ],
+          "image_path": "images/page_246_equation_5.jpg",
+          "content": "E (X) = \\int_ {0} ^ {\\infty} P (X > x) d x."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.103,
+            0.279,
+            0.894,
+            0.354
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This result is the continuous analog of Theorem 4.4.8 (note though that it holds for any nonnegative r.v., not just for continuous nonnegative r.v.s). Actuaries sometimes call it the Darth Vader rule, for obscure reasons; statisticians are more likely to refer to it as finding the expectation by integrating the survival function."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.376,
+            0.524,
+            0.394
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. For any number "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x \\geq 0"
+            },
+            {
+              "type": "text",
+              "content": " , we can write"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.36,
+            0.407,
+            0.638,
+            0.448
+          ],
+          "image_path": "images/page_246_equation_8.jpg",
+          "content": "x = \\int_ {0} ^ {x} d t = \\int_ {0} ^ {\\infty} I (x > t) d t,"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.46,
+            0.56,
+            0.479
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I ( x > t )"
+            },
+            {
+              "type": "text",
+              "content": " is 1 if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x \\geq t"
+            },
+            {
+              "type": "text",
+              "content": " and 0 otherwise. So"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.368,
+            0.494,
+            0.63,
+            0.533
+          ],
+          "image_path": "images/page_246_equation_10.jpg",
+          "content": "X (s) = \\int_ {0} ^ {\\infty} I (X (s) > t) d t,"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.546,
+            0.761,
+            0.565
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for each s in the sample space. We can write this more compactly as"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.395,
+            0.578,
+            0.602,
+            0.618
+          ],
+          "image_path": "images/page_246_equation_12.jpg",
+          "content": "X = \\int_ {0} ^ {\\infty} I (X > t) d t."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.103,
+            0.631,
+            0.894,
+            0.669
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Taking the expectation of both sides and swapping the E with the integral (which can be justified using results from real analysis), we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.155,
+            0.683,
+            0.843,
+            0.725
+          ],
+          "image_path": "images/page_246_equation_14.jpg",
+          "content": "E (X) = E \\left(\\int_ {0} ^ {\\infty} I (X > t) d t\\right) = \\int_ {0} ^ {\\infty} E (I (X > t)) d t = \\int_ {0} ^ {\\infty} P (X > t) d t."
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.102,
+            0.748,
+            0.894,
+            0.804
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For a visual explanation of this identity, we can graph a CDF and interpret a certain area in two different ways: as the integral of the survival function, and as the integral of the quantile function."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.102,
+            0.814,
+            0.894,
+            0.889
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A prototypical CDF of a nonnegative, continuous r.v. with CDF F is shown in Figure 5.10, with the area between the CDF curve and the horizontal line "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p = 1"
+            },
+            {
+              "type": "text",
+              "content": " shaded. This area can be found by integrating "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 - F ( x )"
+            },
+            {
+              "type": "text",
+              "content": " , the difference between the line and the curve, from 0 to ∞."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.103,
+            0.9,
+            0.894,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "But another way to find this area is to turn your head sideways and integrate with"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 247,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.038,
+            0.364,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Continuous random variables"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "231"
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 2,
+          "bbox": [
+            0.223,
+            0.069,
+            0.784,
+            0.397
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 2,
+              "bbox": [
+                0.223,
+                0.069,
+                0.784,
+                0.397
+              ],
+              "image_path": "images/page_247_chart_2.jpg",
+              "content": "| Point | X | Y |\n| --- | --- | --- |\n| Intersection of Curve | ~35 | ~0.75 |"
+            }
+          ],
+          "sub_type": "area"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.418,
+            0.249,
+            0.433
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 5.10"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.436,
+            0.897,
+            0.491
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The area above a certain CDF and below the line "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p = 1"
+            },
+            {
+              "type": "text",
+              "content": " is shaded. This area can be interpreted in two ways: as the integral of the survival function, or as the integral of the quantile function."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.516,
+            0.896,
+            0.556
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "respect to the vertical axis variable p rather than the horizontal axis variable "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x ."
+            },
+            {
+              "type": "text",
+              "content": " This gives the integral of the quantile function, which, letting "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U \\sim \\mathrm { U n i f } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " , is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.32,
+            0.562,
+            0.679,
+            0.605
+          ],
+          "image_path": "images/page_247_equation_6.jpg",
+          "content": "\\int_ {0} ^ {1} F ^ {- 1} (p) d p = E (F ^ {- 1} (U)) = E (X),"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.61,
+            0.7,
+            0.629
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "by LOTUS and universality of the Uniform. So again we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.292,
+            0.636,
+            0.706,
+            0.679
+          ],
+          "image_path": "images/page_247_equation_8.jpg",
+          "content": "\\int_ {0} ^ {\\infty} (1 - F (x)) d x = \\int_ {0} ^ {1} F ^ {- 1} (p) d p = E (X)."
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.104,
+            0.75,
+            0.26,
+            0.768
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.4 Normal"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.787,
+            0.897,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Normal distribution is a famous continuous distribution with a bell-shaped PDF. It is extremely widely used in statistics because of a theorem, the central limit theorem, which says that under very weak assumptions, the sum of a large number of i.i.d. random variables has an approximately Normal distribution, regardless of the distribution of the individual r.v.s. This means we can start with independent r.v.s from almost any distribution, discrete or continuous, but once we add up a bunch of them, the distribution of the resulting r.v. looks like a Normal distribution."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 248,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "232"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.201
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The central limit theorem is a topic for Chapter 10, but in the meantime, we’ll introduce the properties of the Normal PDF and CDF and derive the expectation and variance of the Normal distribution. To do this, we will again use the strategy of location-scale transformation by starting with the simplest Normal distribution, the standard Normal, which is centered at 0 and has variance 1. After deriving the properties of the standard Normal, we’ll be able to get to any Normal distribution we want by shifting and scaling."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.21,
+            0.896,
+            0.248
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition 5.4.1 (Standard Normal distribution). A continuous r.v. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z"
+            },
+            {
+              "type": "text",
+              "content": " is said to have the standard Normal distribution if its PDF "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varphi"
+            },
+            {
+              "type": "text",
+              "content": " is given by"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.325,
+            0.26,
+            0.673,
+            0.3
+          ],
+          "image_path": "images/page_248_equation_4.jpg",
+          "content": "\\varphi (z) = \\frac {1}{\\sqrt {2 \\pi}} e ^ {- z ^ {2} / 2}, \\quad - \\infty <   z <   \\infty ."
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.313,
+            0.894,
+            0.332
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We write this as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z \\sim \\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " since, as we will show, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z"
+            },
+            {
+              "type": "text",
+              "content": " has mean 0 and variance 1."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.341,
+            0.896,
+            0.438
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The constant "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac { 1 } { \\sqrt { 2 \\pi } }"
+            },
+            {
+              "type": "text",
+              "content": " in front of the PDF may look surprising (why is something with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\pi"
+            },
+            {
+              "type": "text",
+              "content": " needed in front of something with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "e _ { \\gamma }"
+            },
+            {
+              "type": "text",
+              "content": " when there are no circles in sight?), but it’s exactly what is needed to make the PDF integrate to 1. Such constants are called normalizing constants because they normalize the total area under the PDF to 1. We’ll verify soon that this is a valid PDF."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.449,
+            0.782,
+            0.466
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The standard Normal CDF Φ is the accumulated area under the PDF:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.305,
+            0.477,
+            0.693,
+            0.518
+          ],
+          "image_path": "images/page_248_equation_8.jpg",
+          "content": "\\Phi (z) = \\int_ {- \\infty} ^ {z} \\varphi (t) d t = \\int_ {- \\infty} ^ {z} \\frac {1}{\\sqrt {2 \\pi}} e ^ {- t ^ {2} / 2} d t."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.531,
+            0.896,
+            0.663
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Some people, upon seeing the function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Phi"
+            },
+            {
+              "type": "text",
+              "content": " for the first time, express dismay that it is left in terms of an integral. Unfortunately, we have little choice in the matter: it turns out to be mathematically impossible to find a closed-form expression for the antiderivative of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varphi ,"
+            },
+            {
+              "type": "text",
+              "content": " meaning that we cannot express "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Phi"
+            },
+            {
+              "type": "text",
+              "content": " as a finite sum of more familiar functions like polynomials or exponentials. But closed-form or no, it’s still a well-defined function: if we give Φ an input "
+            },
+            {
+              "type": "equation_inline",
+              "content": "z ,"
+            },
+            {
+              "type": "text",
+              "content": " it returns the accumulated area under the PDF from −∞ up to z."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.672,
+            0.896,
+            0.747
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Notation 5.4.2. We can tell the Normal distribution must be special because the standard Normal PDF and CDF get their own Greek letters. By convention, we use "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varphi"
+            },
+            {
+              "type": "text",
+              "content": " for the standard Normal PDF and Φ for the CDF. We will often use "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z"
+            },
+            {
+              "type": "text",
+              "content": " to denote a standard Normal random variable."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.757,
+            0.896,
+            0.834
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The standard Normal PDF and CDF are plotted in Figure 5.11. The PDF is bellshaped and symmetric about 0, and the CDF is S-shaped. These have the same general shape as the Logistic PDF and CDF that we saw Example 5.1.6, but the Normal PDF decays to 0 much more quickly."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.844,
+            0.894,
+            0.881
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "There are several important symmetry properties that can be deduced from the standard Normal PDF and CDF."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.132,
+            0.9,
+            0.856,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "1. Symmetry of PDF: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varphi"
+            },
+            {
+              "type": "text",
+              "content": " satisfies "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varphi ( z ) = \\varphi ( - z )"
+            },
+            {
+              "type": "text",
+              "content": " , i.e., "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varphi"
+            },
+            {
+              "type": "text",
+              "content": " is an even function."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 249,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.038,
+            0.364,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Continuous random variables"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "233"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.14,
+            0.081,
+            0.848,
+            0.317
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.14,
+                0.081,
+                0.848,
+                0.317
+              ],
+              "image_path": "images/page_249_image_2.jpg",
+              "content": ""
+            },
+            {
+              "type": "image_caption",
+              "index": 3,
+              "bbox": [
+                0.103,
+                0.337,
+                0.596,
+                0.374
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 5.11 Standard Normal PDF "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\varphi"
+                },
+                {
+                  "type": "text",
+                  "content": " (left) and CDF Φ (right)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.132,
+            0.4,
+            0.871,
+            0.457
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2. Symmetry of tail areas: The area under the PDF curve to the left of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "- 2 ,"
+            },
+            {
+              "type": "text",
+              "content": " which is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( Z \\leq - 2 ) = \\Phi ( - 2 )"
+            },
+            {
+              "type": "text",
+              "content": " by definition, equals the area to the right of 2, which is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( Z \\geq 2 ) = 1 - \\Phi ( 2 )"
+            },
+            {
+              "type": "text",
+              "content": " . In general, we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.431,
+            0.469,
+            0.608,
+            0.489
+          ],
+          "image_path": "images/page_249_equation_5.jpg",
+          "content": "\\Phi (z) = 1 - \\Phi (- z)"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.166,
+            0.502,
+            0.871,
+            0.557
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "之 ."
+            },
+            {
+              "type": "text",
+              "content": " This can be seen visually by looking at the PDF curve, and mathematically by substituting "
+            },
+            {
+              "type": "equation_inline",
+              "content": "u   =   - t"
+            },
+            {
+              "type": "text",
+              "content": " below and using the fact that PDFs integrate to 1:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.2,
+            0.569,
+            0.838,
+            0.61
+          ],
+          "image_path": "images/page_249_equation_7.jpg",
+          "content": "\\Phi (- z) = \\int_ {- \\infty} ^ {- z} \\varphi (t) d t = \\int_ {z} ^ {\\infty} \\varphi (u) d u = 1 - \\int_ {- \\infty} ^ {z} \\varphi (u) d u = 1 - \\Phi (z)."
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.132,
+            0.63,
+            0.871,
+            0.667
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3. Symmetry of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "- Z ;"
+            },
+            {
+              "type": "text",
+              "content": " If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z \\sim \\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " , then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "- Z \\sim \\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " as well. To see this, note that the CDF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "- Z"
+            },
+            {
+              "type": "text",
+              "content": " is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.328,
+            0.68,
+            0.711,
+            0.7
+          ],
+          "image_path": "images/page_249_equation_9.jpg",
+          "content": "P (- Z \\leq z) = P (Z \\geq - z) = 1 - \\Phi (- z),"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.167,
+            0.713,
+            0.855,
+            0.732
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "but that is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Phi ( z )"
+            },
+            {
+              "type": "text",
+              "content": " , according to what we just argued. So "
+            },
+            {
+              "type": "equation_inline",
+              "content": "- Z"
+            },
+            {
+              "type": "text",
+              "content": " has CDF Φ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.75,
+            0.894,
+            0.806
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We need to prove three key facts about the standard Normal, and then we’ll be ready to handle general Normal distributions: we need to show that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varphi"
+            },
+            {
+              "type": "text",
+              "content": " is a valid PDF, that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Z ) = 0"
+            },
+            {
+              "type": "text",
+              "content": " , and that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { V a r } ( Z ) = 1"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.814,
+            0.894,
+            0.891
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To verify the validity of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varphi ,"
+            },
+            {
+              "type": "text",
+              "content": " we’ll show that the total area under "
+            },
+            {
+              "type": "equation_inline",
+              "content": "e ^ { - z ^ { 2 } / 2 }"
+            },
+            {
+              "type": "text",
+              "content": " is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sqrt { 2 \\pi }"
+            },
+            {
+              "type": "text",
+              "content": " However, we can’t find the antiderivative of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "e ^ { - z ^ { 2 } / 2 }"
+            },
+            {
+              "type": "text",
+              "content": " directly, again because of the annoying fact that the antiderivative isn’t expressible in closed form. But this doesn’t mean we can’t do definite integrals, with some ingenuity."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.103,
+            0.901,
+            0.894,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "An amazing trick saves the day here: write down the integral twice. Usually, writing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 250,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "234"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.895,
+            0.123
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "down the same problem repeatedly is more a sign of frustration than a problemsolving strategy. But in this case, it allows a neat conversion to polar coordinates:"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.161,
+            0.136,
+            0.837,
+            0.265
+          ],
+          "image_path": "images/page_250_equation_3.jpg",
+          "content": "\\begin{array}{l} \\left(\\int_ {- \\infty} ^ {\\infty} e ^ {- z ^ {2} / 2} d z\\right) \\left(\\int_ {- \\infty} ^ {\\infty} e ^ {- z ^ {2} / 2} d z\\right) = \\left(\\int_ {- \\infty} ^ {\\infty} e ^ {- x ^ {2} / 2} d x\\right) \\left(\\int_ {- \\infty} ^ {\\infty} e ^ {- y ^ {2} / 2} d y\\right) \\\\ = \\int_ {- \\infty} ^ {\\infty} \\int_ {- \\infty} ^ {\\infty} e ^ {- \\frac {x ^ {2} + y ^ {2}}{2}} d x d y \\\\ = \\int_ {0} ^ {2 \\pi} \\int_ {0} ^ {\\infty} e ^ {- r ^ {2} / 2} r d r d \\theta . \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.28,
+            0.897,
+            0.392
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In the first step, we used the fact that z is just a dummy variable in each integral, so we are allowed to give it a different name (or two different names, one for each integral). The extra "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r"
+            },
+            {
+              "type": "text",
+              "content": " that appears in the final step comes from the Jacobian of the transformation to polar coordinates, as explained in Section A.7.2 of the math appendix. That "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r"
+            },
+            {
+              "type": "text",
+              "content": " is also what saves us from the impossibility of the original integral, since we can now use the substitution "
+            },
+            {
+              "type": "equation_inline",
+              "content": "u = r ^ { 2 } / 2 ,   d u = r d r"
+            },
+            {
+              "type": "text",
+              "content": " . This gives"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.284,
+            0.411,
+            0.717,
+            0.495
+          ],
+          "image_path": "images/page_250_equation_5.jpg",
+          "content": "\\begin{array}{l} \\int_ {0} ^ {2 \\pi} \\int_ {0} ^ {\\infty} e ^ {- r ^ {2} / 2} r d r d \\theta = \\int_ {0} ^ {2 \\pi} \\left(\\int_ {0} ^ {\\infty} e ^ {- u} d u\\right) d \\theta \\\\ = \\int_ {0} ^ {2 \\pi} 1 d \\theta = 2 \\pi . \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.104,
+            0.511,
+            0.206,
+            0.528
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Therefore,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.395,
+            0.531,
+            0.606,
+            0.57
+          ],
+          "image_path": "images/page_250_equation_7.jpg",
+          "content": "\\int_ {- \\infty} ^ {\\infty} e ^ {- z ^ {2} / 2} d z = \\sqrt {2 \\pi},"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.582,
+            0.321,
+            0.598
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "as we wanted to show."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.612,
+            0.896,
+            0.669
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The expectation of the standard Normal has to be 0, by the symmetry of the PDF; no other balancing point would make sense. We can also see this symmetry by looking at the definition of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Z )"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.36,
+            0.685,
+            0.64,
+            0.726
+          ],
+          "image_path": "images/page_250_equation_10.jpg",
+          "content": "E (Z) = \\frac {1}{\\sqrt {2 \\pi}} \\int_ {- \\infty} ^ {\\infty} z e ^ {- z ^ {2} / 2} d z,"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.744,
+            0.896,
+            0.821
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "and since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( z ) = z e ^ { - z ^ { 2 } / 2 }"
+            },
+            {
+              "type": "text",
+              "content": " is an odd function (see Section A.2.3 of the math appendix for more on even and odd functions), the area under "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g"
+            },
+            {
+              "type": "text",
+              "content": " from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "- \\infty"
+            },
+            {
+              "type": "text",
+              "content": " to 0 cancels the area under g from 0 to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\infty ."
+            },
+            {
+              "type": "text",
+              "content": " . Therefore "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Z ) = 0"
+            },
+            {
+              "type": "text",
+              "content": " . In fact, the same argument shows that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Z ^ { n } ) = 0"
+            },
+            {
+              "type": "text",
+              "content": " for any odd positive integer "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n ."
+            },
+            {
+              "type": "text",
+              "content": " 1"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.103,
+            0.833,
+            0.896,
+            0.852
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Getting the mean was easy (one might even say it was EZ), but the variance"
+            }
+          ]
+        },
+        {
+          "type": "page_footnote",
+          "index": 13,
+          "bbox": [
+            0.103,
+            0.869,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "1"
+            },
+            {
+              "type": "text",
+              "content": "A",
+              "styles": [
+                "subscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " subtlety is that ∞ − ∞ is undefined, so we also want to check that the area under the curve z"
+            },
+            {
+              "type": "text",
+              "content": "n",
+              "styles": [
+                "superscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "e",
+              "styles": [
+                "subscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "−z"
+            },
+            {
+              "type": "text",
+              "content": "2",
+              "styles": [
+                "superscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "/2from 0 to ∞ is finite. But this is true since e−z"
+            },
+            {
+              "type": "text",
+              "content": "2",
+              "styles": [
+                "superscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "/2goes to 0 extremely quickly (faster than exponential decay), more than offsetting the growth of the polynomial z"
+            },
+            {
+              "type": "text",
+              "content": "n",
+              "styles": [
+                "superscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 251,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.038,
+            0.364,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Continuous random variables"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "235"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.553,
+            0.086
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "calculation is a bit more involved. By LOTUS,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.334,
+            0.097,
+            0.665,
+            0.201
+          ],
+          "image_path": "images/page_251_equation_3.jpg",
+          "content": "\\begin{array}{l} \\mathrm{Var} (Z) = E (Z ^ {2}) - (E Z) ^ {2} = E (Z ^ {2}) \\\\ = \\frac {1}{\\sqrt {2 \\pi}} \\int_ {- \\infty} ^ {\\infty} z ^ {2} e ^ {- z ^ {2} / 2} d z \\\\ = \\frac {2}{\\sqrt {2 \\pi}} \\int_ {0} ^ {\\infty} z ^ {2} e ^ {- z ^ {2} / 2} d z \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.212,
+            0.895,
+            0.25
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The last step uses the fact that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "z ^ { 2 } e ^ { - z ^ { 2 } / 2 }"
+            },
+            {
+              "type": "text",
+              "content": " is an even function. Now we use integration by parts with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "u = z"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "d v = z e ^ { - z ^ { 2 } / 2 } d z"
+            },
+            {
+              "type": "text",
+              "content": " , so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "d u = d z"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "v = - e ^ { - z ^ { 2 } / 2 }"
+            },
+            {
+              "type": "text",
+              "content": " :"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.279,
+            0.259,
+            0.716,
+            0.363
+          ],
+          "image_path": "images/page_251_equation_5.jpg",
+          "content": "\\begin{array}{l} \\operatorname{Var} (Z) = \\frac {2}{\\sqrt {2 \\pi}} \\left(- z e ^ {- z ^ {2} / 2} \\bigg | _ {0} ^ {\\infty} + \\int_ {0} ^ {\\infty} e ^ {- z ^ {2} / 2} d z\\right) \\\\ = \\frac {2}{\\sqrt {2 \\pi}} \\left(0 + \\frac {\\sqrt {2 \\pi}}{2}\\right) \\\\ = 1. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.378,
+            0.896,
+            0.453
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The first term of the integration by parts equals 0 because "
+            },
+            {
+              "type": "equation_inline",
+              "content": "e ^ { - z ^ { 2 } / 2 }"
+            },
+            {
+              "type": "text",
+              "content": " decays much faster than z grows, and the second term is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sqrt { 2 \\pi } / 2"
+            },
+            {
+              "type": "text",
+              "content": " because it’s half of the total area under "
+            },
+            {
+              "type": "equation_inline",
+              "content": "e ^ { - z ^ { 2 } / 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , which we’ve already proved is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sqrt { 2 \\pi }"
+            },
+            {
+              "type": "text",
+              "content": " . So indeed, the standard Normal distribution has mean 0 and variance 1."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.463,
+            0.896,
+            0.557
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The general Normal distribution has two parameters, denoted "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , which correspond to the mean and variance (so the standard Normal is the special case where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu = 0"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ^ { 2 } = 1 )"
+            },
+            {
+              "type": "text",
+              "content": " . Starting with a standard Normal r.v. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z \\sim \\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " , we can get a Normal r.v. with any mean and variance by a location-scale transformation (shifting and scaling)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.567,
+            0.701,
+            0.586
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition 5.4.3 (Normal distribution). If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z \\sim \\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " , then"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.438,
+            0.597,
+            0.562,
+            0.615
+          ],
+          "image_path": "images/page_251_equation_9.jpg",
+          "content": "X = \\mu + \\sigma Z"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.626,
+            0.895,
+            0.664
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "is said to have the Normal distribution with mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": " and variance "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , for any real "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma > 0"
+            },
+            {
+              "type": "text",
+              "content": " . We denote this by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathcal { N } ( \\mu , \\sigma ^ { 2 } )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.673,
+            0.895,
+            0.71
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It’s clear by properties of expectation and variance that X does in fact have mean "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": " and variance "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " :"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.298,
+            0.723,
+            0.703,
+            0.765
+          ],
+          "image_path": "images/page_251_equation_12.jpg",
+          "content": "\\begin{array}{l} E (\\mu + \\sigma Z) = E (\\mu) + \\sigma E (Z) = \\mu , \\\\ \\operatorname{Var} (\\mu + \\sigma Z) = \\operatorname{Var} (\\sigma Z) = \\sigma^ {2} \\operatorname{Var} (Z) = \\sigma^ {2}. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.776,
+            0.895,
+            0.814
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that we multiply "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z"
+            },
+            {
+              "type": "text",
+              "content": " by the standard deviation "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ,"
+            },
+            {
+              "type": "text",
+              "content": " not "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " ; else the units would be wrong and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " would have variance "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ^ { 4 }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.823,
+            0.895,
+            0.88
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Of course, if we can get from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z"
+            },
+            {
+              "type": "text",
+              "content": " to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X ."
+            },
+            {
+              "type": "text",
+              "content": " , then we can get from X back to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z ."
+            },
+            {
+              "type": "text",
+              "content": " The process of getting a standard Normal from a non-standard Normal is called, appropriately enough, standardization. For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathcal { N } ( \\mu , \\sigma ^ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " , the standardized version of X is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.414,
+            0.888,
+            0.586,
+            0.924
+          ],
+          "image_path": "images/page_251_equation_15.jpg",
+          "content": "\\frac {X - \\mu}{\\sigma} \\sim \\mathcal {N} (0, 1)."
+        }
+      ]
+    },
+    {
+      "page_idx": 252,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.105,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "236"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.895,
+            0.105
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can use standardization to find the CDF and PDF of X in terms of the standard Normal CDF and PDF."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.115,
+            0.895,
+            0.15
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 5.4.4 (Normal CDF and PDF). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathcal { N } ( \\mu , \\sigma ^ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " . Then the CDF of X is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.4,
+            0.148,
+            0.598,
+            0.188
+          ],
+          "image_path": "images/page_252_equation_4.jpg",
+          "content": "F (x) = \\Phi \\left(\\frac {x - \\mu}{\\sigma}\\right),"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.19,
+            0.309,
+            0.207
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "and the PDF of X is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.393,
+            0.203,
+            0.606,
+            0.244
+          ],
+          "image_path": "images/page_252_equation_6.jpg",
+          "content": "f (x) = \\varphi \\left(\\frac {x - \\mu}{\\sigma}\\right) \\frac {1}{\\sigma}."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.259,
+            0.895,
+            0.295
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. For the CDF, we start from the definition "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( x ) = P ( X \\leq x )"
+            },
+            {
+              "type": "text",
+              "content": " , standardize, and use the CDF of the standard Normal:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.221,
+            0.301,
+            0.776,
+            0.341
+          ],
+          "image_path": "images/page_252_equation_8.jpg",
+          "content": "F (x) = P (X \\leq x) = P \\left(\\frac {X - \\mu}{\\sigma} \\leq \\frac {x - \\mu}{\\sigma}\\right) = \\Phi \\left(\\frac {x - \\mu}{\\sigma}\\right)."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.348,
+            0.831,
+            0.366
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Then we differentiate to get the PDF, remembering to apply the chain rule:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.39,
+            0.371,
+            0.607,
+            0.457
+          ],
+          "image_path": "images/page_252_equation_10.jpg",
+          "content": "\\begin{array}{l} f (x) = \\frac {d}{d x} \\Phi \\left(\\frac {x - \\mu}{\\sigma}\\right) \\\\ = \\varphi \\left(\\frac {x - \\mu}{\\sigma}\\right) \\frac {1}{\\sigma}. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.104,
+            0.462,
+            0.435,
+            0.479
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can also write out the PDF as"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.339,
+            0.484,
+            0.658,
+            0.526
+          ],
+          "image_path": "images/page_252_equation_12.jpg",
+          "content": "f (x) = \\frac {1}{\\sqrt {2 \\pi} \\sigma} \\exp \\left(- \\frac {(x - \\mu) ^ {2}}{2 \\sigma^ {2}}\\right)."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.103,
+            0.542,
+            0.895,
+            0.598
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Finally, three important benchmarks for the Normal distribution are the probabilities of falling within one, two, and three standard deviations of the mean. The 68-95-99.7% rule tells us that these probabilities are what the name suggests."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.104,
+            0.607,
+            0.677,
+            0.626
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 5.4.5 (68-95-99.7% rule). If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathcal { N } ( \\mu , \\sigma ^ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " , then"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.375,
+            0.635,
+            0.622,
+            0.702
+          ],
+          "image_path": "images/page_252_equation_15.jpg",
+          "content": "\\begin{array}{l} P (| X - \\mu | <   \\sigma) \\approx 0. 6 8, \\\\ P (| X - \\mu | <   2 \\sigma) \\approx 0. 9 5, \\\\ P (| X - \\mu | <   3 \\sigma) \\approx 0. 9 9 7. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.103,
+            0.72,
+            0.895,
+            0.757
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can use this rule to get quick approximations of Normal probabilities."
+            },
+            {
+              "type": "text",
+              "content": "2",
+              "styles": [
+                "superscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " Often it is easier to apply the rule after standardizing, in which case we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.4,
+            0.765,
+            0.598,
+            0.834
+          ],
+          "image_path": "images/page_252_equation_17.jpg",
+          "content": "\\begin{array}{l} P (| Z | <   1) \\approx 0. 6 8, \\\\ P (| Z | <   2) \\approx 0. 9 5, \\\\ P (| Z | <   3) \\approx 0. 9 9 7. \\\\ \\end{array}"
+        },
+        {
+          "type": "page_footnote",
+          "index": 18,
+          "bbox": [
+            0.102,
+            0.841,
+            0.897,
+            0.918
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2",
+              "styles": [
+                "superscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "The 68-95-99.7% rule says that 95% of the time, a Normal random variable will fall within ±2 standard deviations of its mean. An even more accurate approximation says that 95% of the time, a Normal r.v. is within ±1.96 SDs of its mean. This explains why the number 1.96 comes up very often in statistics in the context of 95% confidence intervals, which are often created by taking an estimate and putting a buffer zone of 1.96 SDs on either side."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 253,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.038,
+            0.364,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Continuous random variables"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "237"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.893,
+            0.106
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 5.4.6 (Practice with the standard Normal CDF). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathcal { N } ( - 1 , 4 )"
+            },
+            {
+              "type": "text",
+              "content": " What is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( | X | < 3 )"
+            },
+            {
+              "type": "text",
+              "content": " , exactly (in terms of Φ) and approximately?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.105,
+            0.116,
+            0.195,
+            0.132
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.144,
+            0.896,
+            0.199
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The event "
+            },
+            {
+              "type": "equation_inline",
+              "content": "| X | < 3"
+            },
+            {
+              "type": "text",
+              "content": " is the same as the event "
+            },
+            {
+              "type": "equation_inline",
+              "content": "- 3 < X < 3"
+            },
+            {
+              "type": "text",
+              "content": " . We use standardization to express this event in terms of the standard Normal r.v. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z = ( X - ( - 1 ) ) / 2"
+            },
+            {
+              "type": "text",
+              "content": " , then apply the 68-95-99.7% rule to get an approximation. The exact answer is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.117,
+            0.209,
+            0.88,
+            0.251
+          ],
+          "image_path": "images/page_253_equation_5.jpg",
+          "content": "P (- 3 <   X <   3) = P \\left(\\frac {- 3 - (- 1)}{2} <   \\frac {X - (- 1)}{2} <   \\frac {3 - (- 1)}{2}\\right) = P (- 1 <   Z <   2),"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.26,
+            0.896,
+            0.354
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "which is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Phi ( 2 ) - \\Phi ( - 1 )"
+            },
+            {
+              "type": "text",
+              "content": " . The "
+            },
+            {
+              "type": "equation_inline",
+              "content": "68 - 95 - 99.7\\%"
+            },
+            {
+              "type": "text",
+              "content": " rule tells us that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( - 1 < Z < 1 ) \\approx 0 . 6 8"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( - 2 < Z < 2 ) \\approx 0 . 9 5"
+            },
+            {
+              "type": "text",
+              "content": " . In other words, going from ±1 standard deviation to ±2 standard deviations adds approximately "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 . 9 5 - 0 . 6 8 = 0 . 2 7"
+            },
+            {
+              "type": "text",
+              "content": " to the area under the curve. By symmetry, this is evenly divided between the areas "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(-2 < Z < -1)"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( 1 < Z < 2 )"
+            },
+            {
+              "type": "text",
+              "content": " . Therefore,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.145,
+            0.364,
+            0.851,
+            0.4
+          ],
+          "image_path": "images/page_253_equation_7.jpg",
+          "content": "P (- 1 <   Z <   2) = P (- 1 <   Z <   1) + P (1 <   Z <   2) \\approx 0. 6 8 + \\frac {0 . 2 7}{2} = 0. 8 1 5."
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.409,
+            0.657,
+            0.427
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This is close to the correct value, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Phi ( 2 ) - \\Phi ( - 1 ) \\approx 0 . 8 1 8 6 ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.437,
+            0.894,
+            0.512
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As we will see later in the book, several important distributions can be obtained through transforming Normal r.v.s in natural ways, e.g., squaring or exponentiating. Chapter 8 delves into transformations in depth, but meanwhile there is a lot that we can do just using LOTUS and properties of CDFs."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.521,
+            0.896,
+            0.616
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 5.4.7 (Folded Normal). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = | Z |"
+            },
+            {
+              "type": "text",
+              "content": " with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z \\sim \\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " The distribution of Y is called a Folded Normal with parameters "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu = 0"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ^ { 2 } = 1"
+            },
+            {
+              "type": "text",
+              "content": " . In this example, we will derive the mean, variance, and distribution of Y . At first sight, Y may seem tricky to deal with since the absolute value function is not differentiable at 0 (due to its sharp corner), but Y has a perfectly valid continuous distribution."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 11,
+          "bbox": [
+            0.1,
+            0.626,
+            0.433,
+            0.714
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.104,
+                0.629,
+                0.253,
+                0.648
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) Find "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "E ( Y )"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 13,
+              "bbox": [
+                0.104,
+                0.66,
+                0.27,
+                0.68
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) Find Var(Y )."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 14,
+              "bbox": [
+                0.104,
+                0.692,
+                0.427,
+                0.711
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(c) Find the CDF and PDF of Y ."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 15,
+          "bbox": [
+            0.105,
+            0.722,
+            0.195,
+            0.738
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.102,
+            0.753,
+            0.896,
+            0.79
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) We will derive the PDF of Y later in this example, but to find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( Y )"
+            },
+            {
+              "type": "text",
+              "content": " , LOTUS says we can work directly with the PDF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z ;"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.17,
+            0.801,
+            0.828,
+            0.845
+          ],
+          "image_path": "images/page_253_equation_17.jpg",
+          "content": "E (Y) = E | Z | = \\int_ {- \\infty} ^ {\\infty} | z | \\frac {1}{\\sqrt {2 \\pi}} e ^ {- z ^ {2} / 2} d z = 2 \\int_ {0} ^ {\\infty} z \\frac {1}{\\sqrt {2 \\pi}} e ^ {- z ^ {2} / 2} d z = \\sqrt {\\frac {2}{\\pi}}."
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.103,
+            0.868,
+            0.822,
+            0.887
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) Note that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y ^ { 2 } = Z ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , so we do not need to do another integral! We have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 19,
+          "bbox": [
+            0.35,
+            0.898,
+            0.648,
+            0.92
+          ],
+          "image_path": "images/page_253_equation_19.jpg",
+          "content": "E (Y ^ {2}) = E (Z ^ {2}) = \\mathrm{Var} (Z) = 1,"
+        }
+      ]
+    },
+    {
+      "page_idx": 254,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.105,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "238"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.104,
+            0.072,
+            0.13,
+            0.084
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "so"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.319,
+            0.081,
+            0.679,
+            0.117
+          ],
+          "image_path": "images/page_254_equation_3.jpg",
+          "content": "\\mathrm{Var} (Y) = E (Y ^ {2}) - (E (Y)) ^ {2} = 1 - \\frac {2}{\\pi}."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.133,
+            0.85,
+            0.153
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(c) For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y \\leq 0"
+            },
+            {
+              "type": "text",
+              "content": " , the CDF of Y is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F_Y(y) = P(Y \\leq y) = 0"
+            },
+            {
+              "type": "text",
+              "content": " . For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y > 0"
+            },
+            {
+              "type": "text",
+              "content": " , the CDF is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.109,
+            0.165,
+            0.888,
+            0.186
+          ],
+          "image_path": "images/page_254_equation_5.jpg",
+          "content": "F _ {Y} (y) = P (Y \\leq y) = P (| Z | \\leq y) = P (- y \\leq Z \\leq y) = \\Phi (y) - \\Phi (- y) = 2 \\Phi (y) - 1."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.197,
+            0.893,
+            0.217
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "So the PDF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 \\varphi ( y )"
+            },
+            {
+              "type": "text",
+              "content": " for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y \\geq 0"
+            },
+            {
+              "type": "text",
+              "content": " , and 0 otherwise, where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varphi"
+            },
+            {
+              "type": "text",
+              "content": " is the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { N } ( 0 , 1 )"
+            },
+            {
+              "type": "text",
+              "content": " PDF."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.23,
+            0.897,
+            0.361
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Sanity check: Note that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 \\Phi ( y ) - 1   \\to   2 - 1   =   1 { \\mathrm { ~ a s ~ } } y   \\to   \\infty ,"
+            },
+            {
+              "type": "text",
+              "content": " as it must, and that the CDF of Y is a continuous function since Φ is continuous and at 0 there is not a jump: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2\\Phi(0) - 1 = 0"
+            },
+            {
+              "type": "text",
+              "content": " . Also, the PDF of Y makes sense since taking the absolute value of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z { \\mathrm { ~ ` f o l d s  } }"
+            },
+            {
+              "type": "text",
+              "content": " the probability mass of a negative range of values of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z"
+            },
+            {
+              "type": "text",
+              "content": " over to the positive side, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { e . g . }"
+            },
+            {
+              "type": "text",
+              "content": " , the probability for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z"
+            },
+            {
+              "type": "text",
+              "content": " values between −2 and −1 contributes to the probability for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " values between 1 and 2. This results in zero density for negative values and double the density for positive values. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.104,
+            0.444,
+            0.311,
+            0.464
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.5 Exponential"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.481,
+            0.897,
+            0.631
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Exponential distribution is the continuous counterpart to the Geometric distribution. Recall that a Geometric random variable counts the number of failures before the first success in a sequence of Bernoulli trials. The story of the Exponential distribution is analogous, but we are now waiting for a success in continuous time, where successes arrive at a rate of λ successes per unit of time. The average number of successes in a time interval of length t is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda t ,"
+            },
+            {
+              "type": "text",
+              "content": " though the actual number of successes varies randomly. An Exponential random variable represents the waiting time until the first arrival of a success."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.641,
+            0.896,
+            0.679
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition 5.5.1 (Exponential distribution). A continuous r.v. X is said to have the Exponential distribution with parameter λ, where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda > 0 ."
+            },
+            {
+              "type": "text",
+              "content": " if its PDF is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.387,
+            0.69,
+            0.61,
+            0.712
+          ],
+          "image_path": "images/page_254_equation_11.jpg",
+          "content": "f (x) = \\lambda e ^ {- \\lambda x}, \\quad x > 0."
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.103,
+            0.723,
+            0.424,
+            0.743
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We denote this by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { E x p o } ( \\lambda )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.103,
+            0.752,
+            0.364,
+            0.77
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The corresponding CDF is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.373,
+            0.782,
+            0.625,
+            0.803
+          ],
+          "image_path": "images/page_254_equation_14.jpg",
+          "content": "F (x) = 1 - e ^ {- \\lambda x}, \\quad x > 0."
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.102,
+            0.825,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { E x p o ( 1 ) }"
+            },
+            {
+              "type": "text",
+              "content": " PDF and CDF are plotted in Figure 5.12. Note the resemblance to the Geometric PMF and CDF pictured in Chapter 4. Exercise 43 explores the sense in which the Geometric converges to the Exponential, in the limit where the Bernoulli trials are performed faster and faster but with smaller and smaller success probabilities."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 255,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.038,
+            0.364,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Continuous random variables"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "239"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.14,
+            0.081,
+            0.848,
+            0.317
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.14,
+                0.081,
+                0.848,
+                0.317
+              ],
+              "image_path": "images/page_255_image_2.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.103,
+            0.337,
+            0.249,
+            0.352
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 5.12"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.106,
+            0.355,
+            0.341,
+            0.373
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Expo(1) PDF and CDF."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.404,
+            0.897,
+            0.517
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We’ve seen how all Uniform and Normal distributions are related to one another via location-scale transformations, and we might wonder whether the Exponential distribution allows this too. Exponential r.v.s are defined to have support "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , \\infty )"
+            },
+            {
+              "type": "text",
+              "content": " and shifting would change the left endpoint. But scale transformations work nicely, and we can use scaling to get from the simple Expo(1) to the general Expo(λ): if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathrm { E x p o ( 1 ) }"
+            },
+            {
+              "type": "text",
+              "content": " , then"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.402,
+            0.518,
+            0.597,
+            0.555
+          ],
+          "image_path": "images/page_255_equation_6.jpg",
+          "content": "Y = \\frac {X}{\\lambda} \\sim \\mathrm{Expo} (\\lambda),"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.565,
+            0.158,
+            0.58
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "since"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.21,
+            0.581,
+            0.789,
+            0.622
+          ],
+          "image_path": "images/page_255_equation_8.jpg",
+          "content": "P (Y \\leq y) = P \\left(\\frac {X}{\\lambda} \\leq y\\right) = P (X \\leq \\lambda y) = 1 - e ^ {- \\lambda y}, \\quad y > 0."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.632,
+            0.574,
+            0.652
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Conversely, if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y \\sim \\operatorname { E x p o } ( \\lambda )"
+            },
+            {
+              "type": "text",
+              "content": " , then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda Y \\sim  Expo (1)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.103,
+            0.663,
+            0.896,
+            0.738
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This means that just as we did for the Uniform and the Normal, we can get the mean and variance of the Exponential distribution by starting with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathrm { E x p o ( 1 ) }"
+            },
+            {
+              "type": "text",
+              "content": " . Both "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E ( X )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { V a r } ( X )"
+            },
+            {
+              "type": "text",
+              "content": " are obtained using standard integration by parts calculations. This gives"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.348,
+            0.754,
+            0.652,
+            0.864
+          ],
+          "image_path": "images/page_255_equation_11.jpg",
+          "content": "\\begin{array}{l} E (X) = \\int_ {0} ^ {\\infty} x e ^ {- x} d x = 1, \\\\ E (X ^ {2}) = \\int_ {0} ^ {\\infty} x ^ {2} e ^ {- x} d x = 2, \\\\ \\mathrm{Var} (X) = E (X ^ {2}) - (E X) ^ {2} = 1. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.881,
+            0.895,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In the next chapter we’ll introduce a new tool called the moment generating function, which will let us get these results without integration."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

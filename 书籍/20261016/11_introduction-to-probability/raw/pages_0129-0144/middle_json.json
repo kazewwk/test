@@ -1,0 +1,5545 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Probability, Second Edition",
+      "authors": [
+        "Joseph K. Blitzstein;Jessica Hwang;"
+      ],
+      "created_at": "2019-01-18T11:22:30+05:30",
+      "modified_at": "2019-02-04T21:29:14+05:30",
+      "creator_application": "LaTeX with hyperref",
+      "producer_application": "pdfTeX-1.40.19",
+      "page_count": 636,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 128,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 129,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 130,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 131,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 132,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 133,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 134,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 135,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 136,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 137,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 138,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 139,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 140,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 141,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 142,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 143,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 128,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "112"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.11,
+            0.445,
+            0.129
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.3 Bernoulli and Binomial"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.149,
+            0.896,
+            0.224
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Some distributions are so ubiquitous in probability and statistics that they have their own names. We will introduce these named distributions throughout the book, starting with a very simple but useful case: an r.v. that can take on only two possible values, 0 and 1."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.234,
+            0.897,
+            0.291
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition 3.3.1 (Bernoulli distribution). An r.v. X is said to have the Bernoulli distribution with parameter p if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X   =   1 )   =   p"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X   =   0 )   =   1   -   p ,"
+            },
+            {
+              "type": "text",
+              "content": " where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 < p < 1"
+            },
+            {
+              "type": "text",
+              "content": " . We write this as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathrm { B e r n } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " . The symbol ∼ is read “is distributed "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { a s } ^ { \\prime \\prime }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.301,
+            0.897,
+            0.452
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Any r.v. whose possible values are 0 and 1 has a Bern(p) distribution, with p the probability of the r.v. equaling 1. This number "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " in Bern(p) is called the parameter of the distribution; it determines which specific Bernoulli distribution we have. Thus there is not just one Bernoulli distribution, but rather a family of Bernoulli distributions, indexed by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p ."
+            },
+            {
+              "type": "text",
+              "content": " For example, if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathrm { B e r n } ( 1 / 3 )"
+            },
+            {
+              "type": "text",
+              "content": " , it would be correct but incomplete to say "
+            },
+            {
+              "type": "equation_inline",
+              "content": "^ { \\circ } X"
+            },
+            {
+              "type": "text",
+              "content": " is Bernoulli”; to fully specify the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X ,"
+            },
+            {
+              "type": "text",
+              "content": " we should both say its name (Bernoulli) and its parameter value "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 1 / 3 )"
+            },
+            {
+              "type": "text",
+              "content": " , which is the point of the notation "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathrm { B e r n } ( 1 / 3 )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.462,
+            0.896,
+            0.518
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Any event has a Bernoulli r.v. that is naturally associated with it, equal to 1 if the event happens and 0 otherwise. This is called the indicator random variable of the event; we will see that such r.v.s are extremely useful."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.529,
+            0.897,
+            0.586
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition 3.3.2 (Indicator random variable). The indicator random variable of an event A is the r.v. which equals 1 if A occurs and 0 otherwise. We will denote the indicator r.v. of A by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { A }"
+            },
+            {
+              "type": "text",
+              "content": " or "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I ( A )"
+            },
+            {
+              "type": "text",
+              "content": " . Note that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I _ { A } \\sim \\mathrm { B e r n } ( p )"
+            },
+            {
+              "type": "text",
+              "content": " with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p = P ( A )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.595,
+            0.894,
+            0.634
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We often imagine Bernoulli r.v.s using coin tosses, but this is just convenient language for discussing the following general story."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.643,
+            0.896,
+            0.718
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Story 3.3.3 (Bernoulli trial). An experiment that can result in either a “success” or a “failure” (but not both) is called a Bernoulli trial. A Bernoulli random variable can be thought of as the indicator of success in a Bernoulli trial: it equals 1 if success occurs and 0 if failure occurs in the trial. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.729,
+            0.896,
+            0.785
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Because of this story, the parameter p is often called the success probability of the Bern "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( p )"
+            },
+            {
+              "type": "text",
+              "content": " distribution. Once we start thinking about Bernoulli trials, it’s hard not to start thinking about what happens when we have more than one trial."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.795,
+            0.897,
+            0.89
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Story 3.3.4 (Binomial distribution). Suppose that n independent Bernoulli trials are performed, each with the same success probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p ."
+            },
+            {
+              "type": "text",
+              "content": " Let X be the number of successes. The distribution of X is called the Binomial distribution with parameters n and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p ."
+            },
+            {
+              "type": "text",
+              "content": " We write "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X   \\sim   \\mathrm { B i n } ( n , p )"
+            },
+            {
+              "type": "text",
+              "content": " to mean that X has the Binomial distribution with parameters n and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p ,"
+            },
+            {
+              "type": "text",
+              "content": " where n is a positive integer and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 < p < 1"
+            },
+            {
+              "type": "text",
+              "content": " \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.103,
+            0.9,
+            0.897,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Notice that we define the Binomial distribution not by its PMF, but by a story"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 129,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.038,
+            0.464,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Random variables and their distributions"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.862,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "113"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.894,
+            0.143
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "about the type of experiment that could give rise to a random variable with a Binomial distribution. The most famous distributions in statistics all have stories which explain why they are so often used as models for data, or as the building blocks for more complicated distributions."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.153,
+            0.894,
+            0.267
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Thinking about the named distributions first and foremost in terms of their stories has many benefits. It facilitates pattern recognition, allowing us to see when two problems are essentially identical in structure; it often leads to cleaner solutions that avoid PMF calculations altogether; and it helps us understand how the named distributions are connected to one another. Here it is clear that Bern "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( p )"
+            },
+            {
+              "type": "text",
+              "content": " is the same distribution as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { B i n } ( 1 , p )"
+            },
+            {
+              "type": "text",
+              "content": " : the Bernoulli is a special case of the Binomial."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.275,
+            0.694,
+            0.293
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Using the story definition of the Binomial, let’s find its PMF."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.303,
+            0.829,
+            0.323
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 3.3.5 (Binomial PMF). If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { B i n } ( n , p )"
+            },
+            {
+              "type": "text",
+              "content": " , then the PMF of X is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.352,
+            0.335,
+            0.648,
+            0.376
+          ],
+          "image_path": "images/page_129_equation_6.jpg",
+          "content": "P (X = k) = \\binom {n} {k} p ^ {k} (1 - p) ^ {n - k}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.388,
+            0.58,
+            0.407
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k = 0 , 1 , \\ldots , n"
+            },
+            {
+              "type": "text",
+              "content": " (and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X = k ) = 0 { \\mathrm { ~ o t h e r w i s e } } )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.416,
+            0.897,
+            0.529
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "h 3.3.6. To save writing, it is often left implicit that a PMF is zero wherever it is not specified to be nonzero, but in any case it is important to understand what the support of a random variable is, and good practice to check that PMFs are valid. If two discrete r.v.s have the same PMF, then they also must have the same support. So we sometimes refer to the support of a discrete distribution; this is the support of any r.v. with that distribution."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.547,
+            0.897,
+            0.639
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. An experiment consisting of n independent Bernoulli trials produces a sequence of successes and failures. The probability of any specific sequence of k successes and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n - k"
+            },
+            {
+              "type": "text",
+              "content": " failures is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p ^ { k } ( 1 - p ) ^ { n - k }"
+            },
+            {
+              "type": "text",
+              "content": " . There are "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\binom { n } { k }"
+            },
+            {
+              "type": "text",
+              "content": " such sequences, since we just need to select where the successes are. Therefore, letting "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " be the number of successes,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.352,
+            0.64,
+            0.648,
+            0.679
+          ],
+          "image_path": "images/page_129_equation_10.jpg",
+          "content": "P (X = k) = \\binom {n} {k} p ^ {k} (1 - p) ^ {n - k}"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.685,
+            0.894,
+            0.723
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k = 0 , 1 , \\ldots , n ,"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(X = k) = 0"
+            },
+            {
+              "type": "text",
+              "content": " otherwise. This is a valid PMF because it is nonnegative and it sums to 1 by the binomial theorem. \u0004"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.74,
+            0.894,
+            0.871
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Figure 3.6 shows plots of the Binomial PMF for various values of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p ."
+            },
+            {
+              "type": "text",
+              "content": " Note that the PMF of the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { B i n } ( 1 0 , 1 / 2 )"
+            },
+            {
+              "type": "text",
+              "content": " distribution is symmetric about 5, but when the success probability is not "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / 2 ,"
+            },
+            {
+              "type": "text",
+              "content": " the PMF is skewed. For a fixed number of trials "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n , X"
+            },
+            {
+              "type": "text",
+              "content": " tends to be larger when the success probability is high and lower when the success probability is low, as we would expect from the story of the Binomial distribution. Also recall that in any PMF plot, the sum of the heights of the vertical bars must be 1."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.881,
+            0.893,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We’ve used Story 3.3.4 to find the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { B i n } ( n , p )"
+            },
+            {
+              "type": "text",
+              "content": " PMF. The story also gives us a straightforward proof of the fact that if X is Binomial, then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n - X"
+            },
+            {
+              "type": "text",
+              "content": " is also Binomial."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 130,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.14,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "114"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.139,
+            0.211,
+            0.851,
+            0.704
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.139,
+                0.211,
+                0.851,
+                0.704
+              ],
+              "image_path": "images/page_130_image_2.jpg",
+              "content": ""
+            },
+            {
+              "type": "image_caption",
+              "index": 3,
+              "bbox": [
+                0.104,
+                0.724,
+                0.237,
+                0.739
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 3.6"
+                }
+              ]
+            },
+            {
+              "type": "image_footnote",
+              "index": 4,
+              "bbox": [
+                0.102,
+                0.741,
+                0.897,
+                0.78
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Some Binomial PMFs. In the lower left, we plot the Bin(100, 0.03) PMF between 0 and 10 only, as the probability of more than 10 successes is close to 0."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 131,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.038,
+            0.464,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Random variables and their distributions"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.862,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "115"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.896,
+            0.106
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 3.3.7. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { B i n } ( n , p )"
+            },
+            {
+              "type": "text",
+              "content": " , and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q = 1 - p"
+            },
+            {
+              "type": "text",
+              "content": " (we often use "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q"
+            },
+            {
+              "type": "text",
+              "content": " to denote the failure probability of a Bernoulli trial). Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n - X \\sim \\mathrm { B i n } ( n , q )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.103,
+            0.125,
+            0.897,
+            0.219
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. Using the story of the Binomial, interpret X as the number of successes in n independent Bernoulli trials. Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n - X"
+            },
+            {
+              "type": "text",
+              "content": " is the number of failures in those trials. Interchanging the roles of success and failure, we have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n - X \\sim \\operatorname { B i n } ( n , q )"
+            },
+            {
+              "type": "text",
+              "content": " Alternatively, we can check that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n - X"
+            },
+            {
+              "type": "text",
+              "content": " has the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { B i n } ( n , q )"
+            },
+            {
+              "type": "text",
+              "content": " PMF. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = n - X"
+            },
+            {
+              "type": "text",
+              "content": " . The PMF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.207,
+            0.23,
+            0.795,
+            0.271
+          ],
+          "image_path": "images/page_131_equation_4.jpg",
+          "content": "P (Y = k) = P (X = n - k) = \\binom{n}{n - k} p ^ {n - k} q ^ {k} = \\binom{n}{k} q ^ {k} p ^ {n - k},"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.284,
+            0.282,
+            0.302
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k = 0 , 1 , \\ldots , n"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.103,
+            0.311,
+            0.896,
+            0.369
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Corollary 3.3.8. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { B i n } ( n , p )"
+            },
+            {
+              "type": "text",
+              "content": " with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p = 1 / 2"
+            },
+            {
+              "type": "text",
+              "content": " and n even. Then the distribution of X is symmetric about "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n / 2"
+            },
+            {
+              "type": "text",
+              "content": " , in the sense that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(X = n/2 + j) = P(X = n/2 - j)"
+            },
+            {
+              "type": "text",
+              "content": " for all nonnegative integers "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.388,
+            0.634,
+            0.407
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. By Theorem 3.3.7, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n - X"
+            },
+            {
+              "type": "text",
+              "content": " is also "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { B i n } ( n , 1 / 2 )"
+            },
+            {
+              "type": "text",
+              "content": " , so"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.286,
+            0.423,
+            0.714,
+            0.443
+          ],
+          "image_path": "images/page_131_equation_8.jpg",
+          "content": "P (X = k) = P (n - X = k) = P (X = n - k)"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.458,
+            0.896,
+            0.496
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for all nonnegative integers k. Letting "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k = n / 2 + j"
+            },
+            {
+              "type": "text",
+              "content": " , the desired result follows. This explains why the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { B i n } ( 1 0 , 1 / 2 )"
+            },
+            {
+              "type": "text",
+              "content": " PMF is symmetric about 5 in Figure 3.6. \u0004"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.103,
+            0.505,
+            0.896,
+            0.581
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 3.3.9 (Coin tosses continued). Going back to Example 3.1.2, we now know that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathrm { B i n } ( 2 , 1 / 2 ) ,   Y \\sim \\mathrm { B i n } ( 2 , 1 / 2 )"
+            },
+            {
+              "type": "text",
+              "content": " , and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I \\sim \\mathrm { B e r n } ( 1 / 2 )"
+            },
+            {
+              "type": "text",
+              "content": " . Consistent with Theorem 3.3.7, X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = 2 - X"
+            },
+            {
+              "type": "text",
+              "content": " have the same distribution, and consistent with Corollary 3.3.8, the distribution of X (and of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y )"
+            },
+            {
+              "type": "text",
+              "content": " is symmetric about 1. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 11,
+          "bbox": [
+            0.104,
+            0.664,
+            0.36,
+            0.684
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.4 Hypergeometric"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.701,
+            0.897,
+            0.814
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If we have an urn filled with w white and b black balls, then drawing n balls out of the urn with replacement yields a "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { B i n } ( n , w / ( w + b ) )"
+            },
+            {
+              "type": "text",
+              "content": " distribution for the number of white balls obtained in n trials, since the draws are independent Bernoulli trials, each with probability "
+            },
+            {
+              "type": "equation_inline",
+              "content": "w / ( w   +   b )"
+            },
+            {
+              "type": "text",
+              "content": " of success. If we instead sample without replacement, as illustrated in Figure 3.7, then the number of white balls follows a Hypergeometric distribution."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.824,
+            0.897,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Story 3.4.1 (Hypergeometric distribution). Consider an urn with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "w"
+            },
+            {
+              "type": "text",
+              "content": " white balls and b black balls. We draw n balls out of the urn at random without replacement, such that all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\binom { w + b } { n } }"
+            },
+            {
+              "type": "text",
+              "content": " samples are equally likely. Let X be the number of white balls in the sample. Then X is said to have the Hypergeometric distribution with parameters "
+            },
+            {
+              "type": "equation_inline",
+              "content": "w ,   b ,"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n ;"
+            },
+            {
+              "type": "text",
+              "content": " we denote this by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { H G e o m } ( w , b , n )"
+            },
+            {
+              "type": "text",
+              "content": " \u0003"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 132,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.14,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "116"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.328,
+            0.085,
+            0.685,
+            0.201
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.328,
+                0.085,
+                0.685,
+                0.201
+              ],
+              "image_path": "images/page_132_image_2.jpg",
+              "content": "Diagram illustrating particle distribution in a container with solid black and white particles, showing a transformation or process arrow."
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.103,
+            0.216,
+            0.238,
+            0.231
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 3.7"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.234,
+            0.897,
+            0.29
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Hypergeometric story. An urn contains "
+            },
+            {
+              "type": "equation_inline",
+              "content": "w = 6"
+            },
+            {
+              "type": "text",
+              "content": " white balls and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b = 4"
+            },
+            {
+              "type": "text",
+              "content": " black balls. We sample "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n = 5"
+            },
+            {
+              "type": "text",
+              "content": " without replacement. The number X of white balls in the sample is Hypergeometric; here we observe "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = 3"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.317,
+            0.895,
+            0.355
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As with the Binomial distribution, we can obtain the PMF of the Hypergeometric distribution from the story."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.364,
+            0.895,
+            0.399
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 3.4.2 (Hypergeometric PMF). If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { H G e o m } ( w , b , n )"
+            },
+            {
+              "type": "text",
+              "content": " , then the PMF of X is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.386,
+            0.397,
+            0.615,
+            0.445
+          ],
+          "image_path": "images/page_132_equation_7.jpg",
+          "content": "P (X = k) = \\frac {\\binom {w} {k} \\binom {b} {n - k}}{\\binom {w + b} {n}},"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.451,
+            0.893,
+            0.47
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for integers k satisfying "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 \\leq k \\leq w"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 \\leq n - k \\leq b ."
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X = k ) = 0"
+            },
+            {
+              "type": "text",
+              "content": " otherwise."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.487,
+            0.896,
+            0.604
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. To get "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X = k )"
+            },
+            {
+              "type": "text",
+              "content": " , we first count the number of possible ways to draw exactly k white balls and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n - k"
+            },
+            {
+              "type": "text",
+              "content": " black balls from the urn (without distinguishing between different orderings for getting the same set of balls). If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k > w"
+            },
+            {
+              "type": "text",
+              "content": " or "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n - k > b"
+            },
+            {
+              "type": "text",
+              "content": " , then the draw is impossible. Otherwise, there are "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\binom { w } { k } } { \\binom { \\hat { b } } { n - k } }"
+            },
+            {
+              "type": "text",
+              "content": " ways to draw k white and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n - k"
+            },
+            {
+              "type": "text",
+              "content": " black balls by the multiplication rule, and there are "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\binom { w + b } { n } }"
+            },
+            {
+              "type": "text",
+              "content": " total ways to draw n balls. Since all samples are equally likely, the naive definition of probability gives"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.389,
+            0.615,
+            0.611,
+            0.665
+          ],
+          "image_path": "images/page_132_equation_10.jpg",
+          "content": "P (X = k) = \\frac {\\binom {w} {k} \\binom {b} {n - k}}{\\binom {w + b} {n}}"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.675,
+            0.895,
+            0.732
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for integers k satisfying "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 \\leq k \\leq w"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 \\leq n   -   k \\leq b"
+            },
+            {
+              "type": "text",
+              "content": " This PMF is valid because the numerator, summed over all k, equals "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ w + b \\choose n }"
+            },
+            {
+              "type": "text",
+              "content": " by Vandermonde’s identity (Example 1.5.3), so the PMF sums to 1. \u0004"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.75,
+            0.897,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Hypergeometric distribution comes up in many scenarios which, on the surface, have little in common with white and black balls in an urn. The essential structure of the Hypergeometric story is that items in a population are classified using two sets of tags: in the urn story, each ball is either white or black (this is the first set of tags), and each ball is either sampled or not sampled (this is the second set of tags). Furthermore, at least one of these sets of tags is assigned completely at random (in the urn story, the balls are sampled randomly, with all sets of the correct size equally likely). Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { H G e o m } ( w , b , n )"
+            },
+            {
+              "type": "text",
+              "content": " represents the number of twice-tagged items: in the urn story, balls that are both white and sampled."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 133,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.038,
+            0.465,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Random variables and their distributions"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.862,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "117"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.895,
+            0.106
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The next two examples show seemingly dissimilar scenarios that are nonetheless isomorphic to the urn story."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.116,
+            0.897,
+            0.211
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 3.4.3 (Elk capture-recapture). A forest has N elk. Today, m of the elk are captured, tagged, and released into the wild. At a later date, n elk are recaptured at random. Assume that the recaptured elk are equally likely to be any set of n of the elk, e.g., an elk that has been captured does not learn how to avoid being captured again."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.222,
+            0.897,
+            0.298
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "By the story of the Hypergeometric, the number of tagged elk in the recaptured sample is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{HGecom}(m, N - m, n)"
+            },
+            {
+              "type": "text",
+              "content": " . The m tagged elk in this story correspond to the white balls and the N − m untagged elk correspond to the black balls. Instead of sampling n balls from the urn, we recapture n elk from the forest. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.308,
+            0.896,
+            0.401
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 3.4.4 (Aces in a poker hand). In a five-card hand drawn at random from a well-shuffled standard deck, the number of aces in the hand has the HGeom(4, 48, 5) distribution, which can be seen by thinking of the aces as white balls and the non-aces as black balls. Using the Hypergeometric PMF, the probability that the hand has exactly three aces is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.414,
+            0.402,
+            0.586,
+            0.449
+          ],
+          "image_path": "images/page_133_equation_6.jpg",
+          "content": "\\frac {\\binom {4} {3} \\binom {4 8} {2}}{\\binom {5 2} {5}} \\approx 0. 0 0 1 7."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.466,
+            0.896,
+            0.543
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The following table summarizes how the above examples can be thought of in terms of two sets of tags. In each example, the r.v. of interest is the number of items falling into both the second and the fourth columns: white and sampled, tagged and recaptured, ace and in one’s hand."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 8,
+          "bbox": [
+            0.221,
+            0.55,
+            0.782,
+            0.647
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 8,
+              "bbox": [
+                0.221,
+                0.55,
+                0.782,
+                0.647
+              ],
+              "image_path": "images/page_133_table_8.jpg",
+              "content": "<table><tr><td>Story</td><td colspan=\"2\">First set of tags</td><td colspan=\"2\">Second set of tags</td></tr><tr><td>urn</td><td>white</td><td>black</td><td>sampled</td><td>not sampled</td></tr><tr><td>elk</td><td>tagged</td><td>untagged</td><td>recaptured</td><td>not recaptured</td></tr><tr><td>cards</td><td>ace</td><td>not ace</td><td>in hand</td><td>not in hand</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.658,
+            0.896,
+            0.716
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The next theorem describes a symmetry between two Hypergeometric distributions with different parameters; the proof follows from swapping the two sets of tags in the Hypergeometric story."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.725,
+            0.896,
+            0.782
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 3.4.5. The "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { H G e o m } ( w , b , n )"
+            },
+            {
+              "type": "text",
+              "content": " and HGeom "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left| \\left( n , w + b - n , w \\right) \\right."
+            },
+            {
+              "type": "text",
+              "content": " distributions are identical. That is, if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X   \\sim   \\operatorname { H G e o m } ( w , b , n )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y \\sim"
+            },
+            {
+              "type": "text",
+              "content": " HGeom "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( n , w + b - n , w )"
+            },
+            {
+              "type": "text",
+              "content": " then X and Y have the same distribution."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.102,
+            0.805,
+            0.897,
+            0.921
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. Using the story of the Hypergeometric, imagine an urn with w white balls, b black balls, and a sample of size n made without replacement. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim"
+            },
+            {
+              "type": "text",
+              "content": " HGeom "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( w , b , n )"
+            },
+            {
+              "type": "text",
+              "content": " be the number of white balls in the sample, thinking of white/black as the first set of tags and sampled/not sampled as the second set of tags. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y   \\sim   \\mathrm { H G e o m } ( n , w   +   b   -   n , w )"
+            },
+            {
+              "type": "text",
+              "content": " be the number of sampled balls among the white balls, thinking of sampled/not sampled as the first set of tags and white/black as"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 134,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "118"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.896,
+            0.105
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "the second set of tags. Both X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " count the number of white sampled balls, so they have the same distribution."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.117,
+            0.841,
+            0.135
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Alternatively, we can check algebraically that X and Y have the same PMF:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.181,
+            0.149,
+            0.819,
+            0.255
+          ],
+          "image_path": "images/page_134_equation_4.jpg",
+          "content": "\\begin{array}{l} P (X = k) = \\frac {\\binom {w} {k} \\binom {b} {n - k}}{\\binom {w + b} {n}} = \\frac {w ! b ! n ! (w + b - n) !}{k ! (w + b) ! (w - k) ! (n - k) ! (b - n + k) !}, \\\\ P (Y = k) = \\frac {\\binom {n} {k} \\binom {w + b - n} {w - k}}{\\binom {w + b} {w}} = \\frac {w ! b ! n ! (w + b - n) !}{k ! (w + b) ! (w - k) ! (n - k) ! (b - n + k) !}. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.267,
+            0.803,
+            0.285
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We prefer the story proof because it is less tedious and more memorable."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.103,
+            0.296,
+            0.897,
+            0.466
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "h 3.4.6 (Binomial vs. Hypergeometric). The Binomial and Hypergeometric distributions are often confused. Both are discrete distributions taking on integer values between 0 and n for some n, and both can be interpreted as the number of successes in n Bernoulli trials (for the Hypergeometric, each tagged elk in the recaptured sample can be considered a success and each untagged elk a failure). However, a crucial part of the Binomial story is that the Bernoulli trials involved are independent. The Bernoulli trials in the Hypergeometric story are dependent, since the sampling is done without replacement: knowing that one elk in our sample is tagged decreases the probability that the second elk will also be tagged."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.549,
+            0.375,
+            0.568
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.5 Discrete Uniform"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.588,
+            0.896,
+            0.626
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A very simple story, closely connected to the naive definition of probability, describes picking a random number from some finite set of possibilities."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.636,
+            0.897,
+            0.713
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Story 3.5.1 (Discrete Uniform distribution). Let C be a finite, nonempty set of numbers. Choose one of these numbers uniformly at random (i.e., all values in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "C"
+            },
+            {
+              "type": "text",
+              "content": " are equally likely). Call the chosen number "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " . Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " is said to have the Discrete Uniform distribution with parameter "
+            },
+            {
+              "type": "equation_inline",
+              "content": "C ;"
+            },
+            {
+              "type": "text",
+              "content": " we denote this by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { D U n i f } ( C )"
+            },
+            {
+              "type": "text",
+              "content": " \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.104,
+            0.722,
+            0.4,
+            0.741
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The PMF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { D U n i f } ( C )"
+            },
+            {
+              "type": "text",
+              "content": " is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.418,
+            0.756,
+            0.582,
+            0.795
+          ],
+          "image_path": "images/page_134_equation_11.jpg",
+          "content": "P (X = x) = \\frac {1}{| C |}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.809,
+            0.896,
+            0.883
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x \\in C"
+            },
+            {
+              "type": "text",
+              "content": " (and 0 otherwise), since a PMF must sum to 1. As with questions based on the naive definition of probability, questions based on a Discrete Uniform distribution reduce to counting problems. Specifically, for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\operatorname { D U n i f } ( C )"
+            },
+            {
+              "type": "text",
+              "content": " and any "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A \\subseteq C"
+            },
+            {
+              "type": "text",
+              "content": " , we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.414,
+            0.884,
+            0.586,
+            0.923
+          ],
+          "image_path": "images/page_134_equation_13.jpg",
+          "content": "P (X \\in A) = \\frac {| A |}{| C |}."
+        }
+      ]
+    },
+    {
+      "page_idx": 135,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.038,
+            0.464,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Random variables and their distributions"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.862,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "119"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.104,
+            0.068,
+            0.894,
+            0.125
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 3.5.2 (Random slips of paper). There are 100 slips of paper in a hat, each of which has one of the numbers "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 , 2 , \\ldots , 1 0 0"
+            },
+            {
+              "type": "text",
+              "content": " written on it, with no number appearing more than once. Five of the slips are drawn, one at a time."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.105,
+            0.143,
+            0.827,
+            0.162
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "First consider random sampling with replacement (with equal probabilities)."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.176,
+            0.892,
+            0.269
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.103,
+                0.176,
+                0.892,
+                0.212
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) What is the distribution of how many of the drawn slips have a value of at least 80 written on them?"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.103,
+                0.223,
+                0.806,
+                0.242
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) What is the distribution of the value of the jth draw (for "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "1 \\leq j \\leq 5 ) ?"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.103,
+                0.252,
+                0.794,
+                0.269
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(c) What is the probability that the number 100 is drawn at least once?"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.104,
+            0.281,
+            0.894,
+            0.318
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Now consider random sampling without replacement (with all sets of five slips equally likely to be chosen)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.328,
+            0.892,
+            0.363
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(d) What is the distribution of how many of the drawn slips have a value of at least 80 written on them?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.103,
+            0.375,
+            0.802,
+            0.393
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(e) What is the distribution of the value of the jth draw (for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 \\leq j \\leq 5 ) ?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.404,
+            0.801,
+            0.422
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(f) What is the probability that the number 100 is drawn in the sample?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 12,
+          "bbox": [
+            0.104,
+            0.437,
+            0.194,
+            0.453
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.103,
+            0.465,
+            0.722,
+            0.483
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(a) By the story of the Binomial, the distribution is Bin(5, 0.21)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.494,
+            0.892,
+            0.549
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(b) Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " be the value of the jth draw. By symmetry, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X _ { j } \\sim \\operatorname { D U n i f } ( 1 , 2 , \\ldots , 1 0 0 )"
+            },
+            {
+              "type": "text",
+              "content": " There aren’t certain slips that love being chosen on the jth draw and others that avoid being chosen then; all are equally likely."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.104,
+            0.56,
+            0.343,
+            0.578
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(c) Taking complements,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.185,
+            0.594,
+            0.812,
+            0.614
+          ],
+          "image_path": "images/page_135_equation_16.jpg",
+          "content": "P (X _ {j} = 1 0 0 \\text {for at least one} j) = 1 - P (X _ {1} \\neq 1 0 0, \\dots , X _ {5} \\neq 1 0 0)."
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.104,
+            0.629,
+            0.531,
+            0.648
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "By the naive definition of probability, this is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 18,
+          "bbox": [
+            0.389,
+            0.662,
+            0.609,
+            0.683
+          ],
+          "image_path": "images/page_135_equation_18.jpg",
+          "content": "1 - (9 9 / 1 0 0) ^ {5} \\approx 0. 0 4 9."
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.102,
+            0.699,
+            0.894,
+            0.755
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This solution just uses new notation for concepts from Chapter 1. It is useful to have this new notation since it is compact and flexible. In the above calculation, it is important to see why"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 20,
+          "bbox": [
+            0.209,
+            0.77,
+            0.787,
+            0.79
+          ],
+          "image_path": "images/page_135_equation_20.jpg",
+          "content": "P (X _ {1} \\neq 1 0 0, \\dots , X _ {5} \\neq 1 0 0) = P (X _ {1} \\neq 1 0 0) \\dots P (X _ {5} \\neq 1 0 0)."
+        },
+        {
+          "type": "text",
+          "index": 21,
+          "bbox": [
+            0.102,
+            0.805,
+            0.894,
+            0.86
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This follows from the naive definition in this case, but a more general way to think about such statements is through independence of r.v.s, a concept discussed in detail in Section 3.8."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 24,
+          "bbox": [
+            0.103,
+            0.871,
+            0.892,
+            0.918
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 22,
+              "bbox": [
+                0.103,
+                0.871,
+                0.842,
+                0.889
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(d) By the story of the Hypergeometric, the distribution is HGeom(21, 79, 5)."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 23,
+              "bbox": [
+                0.103,
+                0.9,
+                0.892,
+                0.918
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(e) Let "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Y _ { j }"
+                },
+                {
+                  "type": "text",
+                  "content": " be the value of the jth draw. By symmetry, "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Y _ { j } { \\sim } \\mathrm { D U n i f } ( 1 , 2 , \\ldots , 1 0 0 )"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        }
+      ]
+    },
+    {
+      "page_idx": 136,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "120"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.162
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Learning any "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " gives information about the other values (so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { 1 } , \\ldots , Y _ { 5 }"
+            },
+            {
+              "type": "text",
+              "content": " are not independent, as defined in Section 3.8), but symmetry still holds since, unconditionally, the jth slip drawn is equally likely to be any of the slips. This is the unconditional distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " : we are working from a vantage point before drawing any of the slips."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.172,
+            0.897,
+            0.342
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For further insight into why each of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { 1 } , \\ldots , Y _ { 5 }"
+            },
+            {
+              "type": "text",
+              "content": " is Discrete Uniform and how to think about "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " unconditionally, imagine that instead of one person drawing five slips, one at a time, there are five people who draw one slip each, all reaching into the hat simultaneously, with all possibilities equally likely for who gets which slip. This formulation does not change the problem in any important way, and it helps avoid getting distracted by irrelevant chronological details. Label the five people "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 , 2 , \\ldots , 5"
+            },
+            {
+              "type": "text",
+              "content": " in some way, e.g., from youngest to oldest, and let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " be the value drawn by person "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j ."
+            },
+            {
+              "type": "text",
+              "content": " . By symmetry, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { j } \\sim \\operatorname { D U n i f } ( 1 , 2 , \\ldots , 1 0 0 )"
+            },
+            {
+              "type": "text",
+              "content": " for each "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j ;"
+            },
+            {
+              "type": "text",
+              "content": " the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " ’s are dependent but, looked at individually, each person is drawing a uniformly random slip."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.351,
+            0.896,
+            0.389
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(f) The events "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y _ { 1 } \\: = \\: 1 0 0 , \\ldots , Y _ { 5 } \\: = \\: 1 0 0"
+            },
+            {
+              "type": "text",
+              "content": " are disjoint since we are now sampling without replacement, so"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.177,
+            0.404,
+            0.821,
+            0.425
+          ],
+          "image_path": "images/page_136_equation_5.jpg",
+          "content": "P (Y _ {j} = 1 0 0 \\text {for some} j) = P (Y _ {1} = 1 0 0) + \\dots + P (Y _ {5} = 1 0 0) = 0. 0 5."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.439,
+            0.897,
+            0.515
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Sanity check: This answer makes sense intuitively since we can just as well think of first choosing five random slips out of 100 blank slips and then randomly writing the numbers from 1 to 100 on the slips, which gives a "
+            },
+            {
+              "type": "equation_inline",
+              "content": "5 / 1 0 0"
+            },
+            {
+              "type": "text",
+              "content": " chance that the number 100 is on one of the five chosen slips."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.525,
+            0.896,
+            0.657
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It would be bizarre if the answer to (c) were greater than or equal to the answer to (f), since sampling without replacement makes it easier to find the number 100. (For the same reason, when searching for a lost possession it makes more sense to sample locations without replacement than with replacement.) But it makes sense that the answer to (c) is only slightly less than the answer to (f), since it is unlikely in (c) that the same slip will be sampled more than once (though by the birthday problem it’s less unlikely than many people would guess)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.666,
+            0.896,
+            0.743
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "More generally, if k slips are drawn without replacement, where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 \\leq k \\leq 1 0 0"
+            },
+            {
+              "type": "text",
+              "content": " , then the same reasoning gives that the probability of drawing the number 100 is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k / 1 0 0"
+            },
+            {
+              "type": "text",
+              "content": " Note that this makes sense in the extreme case "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k = 1 0 0"
+            },
+            {
+              "type": "text",
+              "content": " , since in that case we draw all of the slips. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.824,
+            0.567,
+            0.843
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.6 Cumulative distribution functions"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.862,
+            0.896,
+            0.918
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Another function that describes the distribution of an r.v. is the cumulative distribution function (CDF). Unlike the PMF, which only discrete r.v.s possess, the CDF is defined for all r.v.s."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 137,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.465,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Random variables and their distributions"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.862,
+            0.039,
+            0.892,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "121"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.895,
+            0.126
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition 3.6.1. The cumulative distribution function (CDF) of an r.v. X is the function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F _ { X }"
+            },
+            {
+              "type": "text",
+              "content": " given by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F _ { X } ( x ) = P ( X \\leq x )"
+            },
+            {
+              "type": "text",
+              "content": " . When there is no risk of ambiguity, we sometimes drop the subscript and just write F (or some other letter) for a CDF."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.135,
+            0.895,
+            0.172
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The next example demonstrates that for discrete r.v.s, we can freely convert between CDF and PMF."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.183,
+            0.89,
+            0.202
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 3.6.2. Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathrm { B i n } ( 4 , 1 / 2 )"
+            },
+            {
+              "type": "text",
+              "content": " Figure 3.8 shows the PMF and CDF of X."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 5,
+          "bbox": [
+            0.14,
+            0.234,
+            0.847,
+            0.47
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 5,
+              "bbox": [
+                0.14,
+                0.234,
+                0.847,
+                0.47
+              ],
+              "image_path": "images/page_137_image_5.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.103,
+            0.489,
+            0.237,
+            0.504
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "FIGURE 3.8"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.506,
+            0.895,
+            0.543
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Bin(4, 1/2) PMF and CDF. The height of the vertical bar "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X = 2 )"
+            },
+            {
+              "type": "text",
+              "content": " in the PMF is also the height of the jump in the CDF at 2."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.096,
+            0.561,
+            0.895,
+            0.599
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "• From PMF to CDF: To find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X \\leq 1 . 5 )"
+            },
+            {
+              "type": "text",
+              "content": " , which is the CDF evaluated at 1.5, we sum the PMF over all values of the support that are less than or equal to 1.5:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.203,
+            0.612,
+            0.809,
+            0.657
+          ],
+          "image_path": "images/page_137_equation_9.jpg",
+          "content": "P (X \\leq 1. 5) = P (X = 0) + P (X = 1) = \\left(\\frac {1}{2}\\right) ^ {4} + 4 \\left(\\frac {1}{2}\\right) ^ {4} = \\frac {5}{1 6}."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.115,
+            0.67,
+            0.895,
+            0.707
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Similarly, the value of the CDF at an arbitrary point x is the sum of the heights of the vertical bars of the PMF at values less than or equal to x."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.096,
+            0.718,
+            0.896,
+            0.831
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "• From CDF to PMF: The CDF of a discrete r.v. consists of jumps and flat regions. The height of a jump in the CDF at x is equal to the value of the PMF at x. For example, in Figure 3.8, the height of the jump in the CDF at 2 is the same as the height of the corresponding vertical bar in the PMF; this is indicated in the figure with curly braces. The flat regions of the CDF correspond to values outside the support of X, so the PMF is equal to 0 in those regions. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.103,
+            0.841,
+            0.497,
+            0.86
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Valid CDFs satisfy the following criteria."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.871,
+            0.813,
+            0.89
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 3.6.3 (Valid CDFs). Any CDF F has the following properties."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.096,
+            0.9,
+            0.535,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "• Increasing: If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x _ { 1 } \\leq x _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( x _ { 1 } ) \\leq F ( x _ { 2 } )"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 138,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "122"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.097,
+            0.068,
+            0.896,
+            0.125
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "• Right-continuous: As in Figure 3.8, the CDF is continuous except possibly for having some jumps. Wherever there is a jump, the CDF is continuous from the right. That is, for any a, we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.415,
+            0.139,
+            0.597,
+            0.166
+          ],
+          "image_path": "images/page_138_equation_3.jpg",
+          "content": "F (a) = \\lim _ {x \\to a ^ {+}} F (x)."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.096,
+            0.189,
+            0.478,
+            0.206
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "• Convergence to 0 and 1 in the limits:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.333,
+            0.222,
+            0.677,
+            0.248
+          ],
+          "image_path": "images/page_138_equation_5.jpg",
+          "content": "\\lim _ {x \\to - \\infty} F (x) = 0 \\text {and} \\lim _ {x \\to \\infty} F (x) = 1."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.263,
+            0.896,
+            0.415
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Proof. The above criteria are true for all CDFs, but for simplicity we will only prove it for the case where F is the CDF of a discrete r.v. X whose possible values are "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 , 1 , 2 , \\ldots . \\mathrm { A s }"
+            },
+            {
+              "type": "text",
+              "content": " an example of how to visualize the criteria, consider Figure 3.8: the CDF shown there is increasing (with some flat regions), continuous from the right (it is continuous except at jumps, and each jump has an open dot at the bottom and a closed dot at the top), and it converges to 0 as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x \\to - \\infty"
+            },
+            {
+              "type": "text",
+              "content": " and to 1 as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": " (in this example, it reaches 0 and 1; in some examples, one or both of these values may be approached but never reached)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.423,
+            0.894,
+            0.462
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The first criterion is true since the event "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{ X \\leq x _ { 1 } \\}"
+            },
+            {
+              "type": "text",
+              "content": " is a subset of the event "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{ X \\leq x _ { 2 } \\}"
+            },
+            {
+              "type": "text",
+              "content": " so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X \\leq x _ { 1 } ) \\leq P ( X \\leq x _ { 2 } )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.471,
+            0.438,
+            0.488
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For the second criterion, note that"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.374,
+            0.505,
+            0.625,
+            0.526
+          ],
+          "image_path": "images/page_138_equation_9.jpg",
+          "content": "P (X \\leq x) = P (X \\leq \\lfloor x \\rfloor),"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.103,
+            0.539,
+            0.896,
+            0.634
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where bxc is the greatest integer less than or equal to x. For example, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(X \\leq 4.9) ="
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( X \\leq 4 )"
+            },
+            {
+              "type": "text",
+              "content": " since X is integer-valued. So "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( a + b ) = F ( a )"
+            },
+            {
+              "type": "text",
+              "content": " for any "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b > 0"
+            },
+            {
+              "type": "text",
+              "content": " that is small enough so that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a + b < \\lfloor a \\rfloor + 1 ,   \\mathrm { e . g . }"
+            },
+            {
+              "type": "text",
+              "content": " , for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a = 4 . 9"
+            },
+            {
+              "type": "text",
+              "content": " , this holds for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 < b < 0 . 1"
+            },
+            {
+              "type": "text",
+              "content": " . This implies "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\begin{array} { r } { F ( a ) = \\operatorname* { l i m } _ { x \\to a ^ { + } } F ( x ) } \\end{array}"
+            },
+            {
+              "type": "text",
+              "content": " (in fact, it’s much stronger since it says "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( x )"
+            },
+            {
+              "type": "text",
+              "content": " equals "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( a )"
+            },
+            {
+              "type": "text",
+              "content": " when x is close enough to a and on the right)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.643,
+            0.644,
+            0.661
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For the third criterion, we have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F ( x ) = 0 { \\mathrm { ~ f o r ~ } } x < 0 ,"
+            },
+            {
+              "type": "text",
+              "content": " and"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.148,
+            0.676,
+            0.896,
+            0.729
+          ],
+          "image_path": "images/page_138_equation_12.jpg",
+          "content": "\\lim _ {x \\to \\infty} F (x) = \\lim _ {x \\to \\infty} P (X \\leq \\lfloor x \\rfloor) = \\lim _ {x \\to \\infty} \\sum_ {n = 0} ^ {\\lfloor x \\rfloor} P (X = n) = \\sum_ {n = 0} ^ {\\infty} P (X = n) = 1. \\quad \\blacksquare"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.75,
+            0.894,
+            0.787
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The converse is true too: we will show in Chapter 5 that given any function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F"
+            },
+            {
+              "type": "text",
+              "content": " meeting these criteria, we can construct a random variable whose CDF is F."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.796,
+            0.896,
+            0.891
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To recap, we have now seen three equivalent ways of expressing the distribution of a random variable. Two of these are the PMF and the CDF: we know these two functions contain the same information, since we can always figure out the CDF from the PMF and vice versa. Generally the PMF is easier to work with for discrete r.v.s, since evaluating the CDF requires a summation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 139,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.038,
+            0.465,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Random variables and their distributions"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.862,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "123"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.162
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A third way to describe a distribution is with a story that explains (in a precise way) how the distribution can arise. We used the stories of the Binomial and Hypergeometric distributions to derive the corresponding PMFs. Thus the story and the PMF also contain the same information, though we can often achieve more intuitive proofs with the story than with PMF calculations."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.103,
+            0.245,
+            0.523,
+            0.264
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3.7 Functions of random variables"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.282,
+            0.897,
+            0.358
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In this section we will discuss what it means to take a function of a random variable, and we will build understanding for why a function of a random variable is a random variable. That is, if X is a random variable, then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X ^ { 2 } , e ^ { X }"
+            },
+            {
+              "type": "text",
+              "content": " , and sin(X) are also random variables, as is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X )"
+            },
+            {
+              "type": "text",
+              "content": " for any function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g : \\mathbb { R } \\rightarrow \\mathbb { R }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.367,
+            0.897,
+            0.48
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For example, imagine that two basketball teams (A and B) are playing a sevengame match, and let X be the number of wins for team A (so "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim \\mathrm { B i n } ( 7 , 1 / 2 )"
+            },
+            {
+              "type": "text",
+              "content": " if the teams are evenly matched and the games are independent). Let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x ) = 7 - x ,"
+            },
+            {
+              "type": "text",
+              "content": " and let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h ( x ) = 1 { \\mathrm { ~ i f ~ } } x \\geq 4"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h ( x ) = 0 { \\mathrm { ~ i f ~ } } x < 4"
+            },
+            {
+              "type": "text",
+              "content": " . Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X ) = 7 - X"
+            },
+            {
+              "type": "text",
+              "content": " is the number of wins for team B, and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h ( X )"
+            },
+            {
+              "type": "text",
+              "content": " is the indicator of team A winning the majority of the games. Since X is an r.v., both "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h ( X )"
+            },
+            {
+              "type": "text",
+              "content": " are also r.v.s."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.489,
+            0.896,
+            0.584
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To see how to define functions of an r.v. formally, let’s rewind a bit. At the beginning of this chapter, we considered a random variable X defined on a sample space with 6 elements. Figure 3.1 used arrows to illustrate how X maps each pebble in the sample space to a real number, and the left half of Figure 3.2 showed how we can equivalently imagine X writing a real number inside each pebble."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.593,
+            0.896,
+            0.669
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Now we can, if we want, apply the same function g to all the numbers inside the pebbles. Instead of the numbers "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X ( s _ { 1 } )"
+            },
+            {
+              "type": "text",
+              "content": " through "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X ( s _ { 6 } )"
+            },
+            {
+              "type": "text",
+              "content": " , we now have the numbers "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X ( s _ { 1 } ) )"
+            },
+            {
+              "type": "text",
+              "content": " through "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X ( s _ { 6 } ) )"
+            },
+            {
+              "type": "text",
+              "content": " , which gives a new mapping from sample outcomes to real numbers—we’ve created a new random variable, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.677,
+            0.896,
+            0.733
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition 3.7.1 (Function of an r.v.). For an experiment with sample space "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S ,"
+            },
+            {
+              "type": "text",
+              "content": " an "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { r . v . } X"
+            },
+            {
+              "type": "text",
+              "content": " , and a function "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g : \\mathbb { R } \\to \\mathbb { R } ,   g ( X )"
+            },
+            {
+              "type": "text",
+              "content": " is the r.v. that maps s to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X ( s ) )"
+            },
+            {
+              "type": "text",
+              "content": " for all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "s \\in S"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.743,
+            0.896,
+            0.82
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Taking "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x ) = { \\sqrt { x } }"
+            },
+            {
+              "type": "text",
+              "content": " for concreteness, Figure 3.9 shows that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X )"
+            },
+            {
+              "type": "text",
+              "content": " is the composition of the functions X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ,"
+            },
+            {
+              "type": "text",
+              "content": " saying “first apply X, then apply "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ^ { \\flat }"
+            },
+            {
+              "type": "text",
+              "content": " . Figure 3.10 represents "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X )"
+            },
+            {
+              "type": "text",
+              "content": " more succinctly by directly labeling the sample outcomes. Both figures show us that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X )"
+            },
+            {
+              "type": "text",
+              "content": " is an r.v.; if X crystallizes to 4, then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X )"
+            },
+            {
+              "type": "text",
+              "content": " crystallizes to 2."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.828,
+            0.896,
+            0.885
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Given a discrete r.v. X with a known PMF, how can we find the PMF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = g(X) ?"
+            },
+            {
+              "type": "text",
+              "content": " In the case where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g"
+            },
+            {
+              "type": "text",
+              "content": " is a one-to-one function, the answer is straightforward: the support of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " is the set of all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x )"
+            },
+            {
+              "type": "text",
+              "content": " with x in the support of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " , and"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.28,
+            0.899,
+            0.719,
+            0.921
+          ],
+          "image_path": "images/page_139_equation_11.jpg",
+          "content": "P (Y = g (x)) = P (g (X) = g (x)) = P (X = x)."
+        }
+      ]
+    },
+    {
+      "page_idx": 140,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.14,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "124"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.146,
+            0.174,
+            0.862,
+            0.403
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.146,
+                0.174,
+                0.862,
+                0.403
+              ],
+              "image_path": "images/page_140_image_2.jpg",
+              "content": "```mermaid\ngraph LR\n  s1[\"s1\"] --> X[\"X\"]\n  s2[\"s2\"] --> X[\"X\"]\n  s3[\"s3\"] --> X[\"X\"]\n  s4[\"s4\"] --> X[\"X\"]\n  s5[\"s5\"] --> X[\"X\"]\n  s6[\"s6\"] --> X[\"X\"]\n  X --> Output1[\"Output: 0, 1, 4, 0, 1, 2\"]\n  Output1 --> Output2[\"Output: g\"]\n  Output2 --> Output3[\"Output: g\"]\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 3,
+              "bbox": [
+                0.104,
+                0.419,
+                0.239,
+                0.435
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 3.9"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.437,
+            0.897,
+            0.496
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The r.v. X is defined on a sample space with 6 elements, and has possible values 0, 1, and 4. The function g is the square root function. Composing X and g gives the random variable "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X ) = { \\sqrt { X } }"
+            },
+            {
+              "type": "text",
+              "content": " , which has possible values 0, 1, and 2."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 5,
+          "bbox": [
+            0.316,
+            0.553,
+            0.688,
+            0.733
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 5,
+              "bbox": [
+                0.316,
+                0.553,
+                0.688,
+                0.733
+              ],
+              "image_path": "images/page_140_image_5.jpg",
+              "content": "1\ns₁ 0 s₂ s₃ 1\n0\ns₄ 2 s₅ s₆ 1"
+            },
+            {
+              "type": "image_caption",
+              "index": 6,
+              "bbox": [
+                0.104,
+                0.769,
+                0.249,
+                0.784
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 3.10"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.787,
+            0.725,
+            0.806
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Since "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X ) = { \\sqrt { X } }"
+            },
+            {
+              "type": "text",
+              "content": " labels each pebble with a number, it is an r.v."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 141,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.038,
+            0.465,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Random variables and their distributions"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.862,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "125"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.143
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The case where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = g ( X )"
+            },
+            {
+              "type": "text",
+              "content": " with g one-to-one is illustrated in the following tables; the idea is that if the distinct possible values of X are "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x _ { 1 } , x _ { 2 } , \\ldots"
+            },
+            {
+              "type": "text",
+              "content": " . with probabilities "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 1 } , p _ { 2 } , \\ldots"
+            },
+            {
+              "type": "text",
+              "content": " (respectively), then the distinct possible values of Y are "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x _ { 1 } ) , g ( x _ { 2 } )"
+            },
+            {
+              "type": "text",
+              "content": " with the same list "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { 1 } , p _ { 2 } , \\ldots"
+            },
+            {
+              "type": "text",
+              "content": " of probabilities."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 3,
+          "bbox": [
+            0.199,
+            0.15,
+            0.462,
+            0.274
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 3,
+              "bbox": [
+                0.199,
+                0.15,
+                0.462,
+                0.274
+              ],
+              "image_path": "images/page_141_table_3.jpg",
+              "content": "<table><tr><td>x</td><td><eq>P(X = x)</eq></td></tr><tr><td><eq>x_{1}</eq></td><td><eq>p_{1}</eq></td></tr><tr><td><eq>x_{2}</eq></td><td><eq>p_{2}</eq></td></tr><tr><td><eq>x_{3}</eq></td><td><eq>p_{3}</eq></td></tr><tr><td><eq>\\vdots</eq></td><td><eq>\\vdots</eq></td></tr></table>"
+            },
+            {
+              "type": "table_caption",
+              "index": 4,
+              "bbox": [
+                0.207,
+                0.289,
+                0.451,
+                0.307
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "PMF of X, in table form"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 5,
+          "bbox": [
+            0.541,
+            0.15,
+            0.805,
+            0.274
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 5,
+              "bbox": [
+                0.541,
+                0.15,
+                0.805,
+                0.274
+              ],
+              "image_path": "images/page_141_table_5.jpg",
+              "content": "<table><tr><td>y</td><td><eq>P(Y = y)</eq></td></tr><tr><td><eq>g(x_1)</eq></td><td><eq>p_1</eq></td></tr><tr><td><eq>g(x_2)</eq></td><td><eq>p_2</eq></td></tr><tr><td><eq>g(x_3)</eq></td><td><eq>p_3</eq></td></tr><tr><td><eq>\\vdots</eq></td><td><eq>\\vdots</eq></td></tr></table>"
+            },
+            {
+              "type": "table_caption",
+              "index": 6,
+              "bbox": [
+                0.55,
+                0.289,
+                0.792,
+                0.307
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "PMF of Y , in table form"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.316,
+            0.896,
+            0.372
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This suggests a strategy for finding the PMF of an r.v. with an unfamiliar distribution: try to express the r.v. as a one-to-one function of an r.v. with a known distribution. The next example illustrates this method."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.382,
+            0.897,
+            0.457
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 3.7.2 (Random walk). A particle moves n steps on a number line. The particle starts at 0, and at each step it moves 1 unit to the right or to the left, with equal probabilities. Assume all steps are independent. Let Y be the particle’s position after n steps. Find the PMF of Y ."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.105,
+            0.467,
+            0.195,
+            0.484
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.495,
+            0.897,
+            0.627
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Consider each step to be a Bernoulli trial, where right is considered a success and left is considered a failure. Then the number of steps the particle takes to the right is a "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname { B i n } ( n , 1 / 2 )"
+            },
+            {
+              "type": "text",
+              "content": " random variable, which we can name X. If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = j"
+            },
+            {
+              "type": "text",
+              "content": " , then the particle has taken j steps to the right and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n - j"
+            },
+            {
+              "type": "text",
+              "content": " steps to the left, giving a final position of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j - (n - j) = 2j - n"
+            },
+            {
+              "type": "text",
+              "content": " . So we can express Y as a one-to-one function of X, namely, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = 2X - n"
+            },
+            {
+              "type": "text",
+              "content": " . Since X takes values in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{ 0 , 1 , 2 , \\ldots , n \\}"
+            },
+            {
+              "type": "text",
+              "content": " , Y takes values in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{ - n , 2 - n , 4 - n , \\ldots , n \\}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.636,
+            0.637,
+            0.654
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The PMF of Y can then be found from the PMF of X:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.176,
+            0.663,
+            0.821,
+            0.706
+          ],
+          "image_path": "images/page_141_equation_12.jpg",
+          "content": "P (Y = k) = P (2 X - n = k) = P (X = (n + k) / 2) = \\binom{n}{\\frac {n + k}{2}} \\left(\\frac {1}{2}\\right) ^ {n},"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.717,
+            0.896,
+            0.736
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "if k is an integer between −n and n (inclusive) such that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n { + } k"
+            },
+            {
+              "type": "text",
+              "content": " is an even number. \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.745,
+            0.896,
+            0.801
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If g is not one-to-one, then for a given y, there may be multiple values of x such that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x ) = y"
+            },
+            {
+              "type": "text",
+              "content": " . To compute "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P ( g ( X ) = y )"
+            },
+            {
+              "type": "text",
+              "content": " , we need to sum up the probabilities of X taking on any of these candidate values of x."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.102,
+            0.811,
+            0.896,
+            0.868
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Theorem 3.7.3 (PMF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X ) )"
+            },
+            {
+              "type": "text",
+              "content": " . Let X be a discrete r.v. and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g : \\mathbb { R } \\rightarrow \\mathbb { R }"
+            },
+            {
+              "type": "text",
+              "content": " . Then the support of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X )"
+            },
+            {
+              "type": "text",
+              "content": " is the set of all y such that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( x ) = y"
+            },
+            {
+              "type": "text",
+              "content": " for at least one x in the support of X, and the PMF of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X )"
+            },
+            {
+              "type": "text",
+              "content": " is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.334,
+            0.88,
+            0.665,
+            0.922
+          ],
+          "image_path": "images/page_141_equation_16.jpg",
+          "content": "P (g (X) = y) = \\sum_ {x: g (x) = y} P (X = x),"
+        }
+      ]
+    },
+    {
+      "page_idx": 142,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.139,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "126"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.068,
+            0.414,
+            0.088
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for all y in the support of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.105,
+            0.098,
+            0.896,
+            0.136
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 3.7.4. Continuing as in the previous example, let D be the particle’s distance from the origin after n steps. Assume that n is even. Find the PMF of D."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.106,
+            0.148,
+            0.195,
+            0.165
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Solution:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.105,
+            0.177,
+            0.896,
+            0.235
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can write "
+            },
+            {
+              "type": "equation_inline",
+              "content": "D = | Y | ;"
+            },
+            {
+              "type": "text",
+              "content": " this is a function of Y , but it isn’t one-to-one. The event "
+            },
+            {
+              "type": "equation_inline",
+              "content": "D = 0"
+            },
+            {
+              "type": "text",
+              "content": " is the same as the event "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = 0"
+            },
+            {
+              "type": "text",
+              "content": " . For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k = 2 , 4 , \\ldots , n"
+            },
+            {
+              "type": "text",
+              "content": " , the event "
+            },
+            {
+              "type": "equation_inline",
+              "content": "D = k"
+            },
+            {
+              "type": "text",
+              "content": " is the same as the event "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{ Y = k \\} \\cup \\{ Y = - k \\}"
+            },
+            {
+              "type": "text",
+              "content": " . So the PMF of D is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.23,
+            0.249,
+            0.77,
+            0.339
+          ],
+          "image_path": "images/page_142_equation_6.jpg",
+          "content": "\\begin{array}{l} P (D = 0) = \\binom{n}{\\frac {n}{2}} \\left(\\frac {1}{2}\\right) ^ {n}, \\\\ P (D = k) = P (Y = k) + P (Y = - k) = 2 \\binom{n}{\\frac {n + k}{2}} \\left(\\frac {1}{2}\\right) ^ {n}, \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.105,
+            0.352,
+            0.896,
+            0.409
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k = 2 , 4 , \\ldots , n"
+            },
+            {
+              "type": "text",
+              "content": " . In the final step we used symmetry (imagine a new random walk that moves left each time our random walk moves right, and vice versa) to see that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(Y = k) = P(Y = -k)"
+            },
+            {
+              "type": "text",
+              "content": " \u0003"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.105,
+            0.42,
+            0.896,
+            0.515
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The same reasoning we have used to handle functions of one random variable can be extended to deal with functions of multiple random variables. We have already seen an example of this with the addition function (which maps two numbers x, y to their sum "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x + y )"
+            },
+            {
+              "type": "text",
+              "content": " : in Example 3.2.5, we saw how to view "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T = X + Y"
+            },
+            {
+              "type": "text",
+              "content": " as an r.v. in its own right, where X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " are obtained by rolling dice."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.105,
+            0.525,
+            0.896,
+            0.584
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Definition 3.7.5 (Function of two r.v.s). Given an experiment with sample space S, if X and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " are r.v.s that map "
+            },
+            {
+              "type": "equation_inline",
+              "content": "s \\in S"
+            },
+            {
+              "type": "text",
+              "content": " to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X ( s )"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y ( s )"
+            },
+            {
+              "type": "text",
+              "content": " respectively, then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X , Y )"
+            },
+            {
+              "type": "text",
+              "content": " is the r.v. that maps s to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(X(s),Y(s))"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.105,
+            0.593,
+            0.896,
+            0.709
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that we are assuming that X and Y are defined on the same sample space S. Usually we assume that S is chosen to be rich enough to encompass whatever r.v.s we wish to work with. For example, if X is based on a coin flip and Y is based on a die roll, and we initially were using the sample space "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S _ { 1 } = \\{ H , T \\}"
+            },
+            {
+              "type": "text",
+              "content": " for X and the sample space "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S _ { 2 } = \\{ 1 , 2 , 3 , 4 , 5 , 6 \\}"
+            },
+            {
+              "type": "text",
+              "content": " for Y , we can easily redefine X and Y so that both are defined on the richer space "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S = S _ { 1 } \\times S _ { 2 } = \\{ ( s _ { 1 } , s _ { 2 } ) : s _ { 1 } \\in S _ { 1 } , s _ { 2 } \\in S _ { 2 } \\}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.105,
+            0.718,
+            0.896,
+            0.833
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "One way to understand the mapping from S to R represented by the r.v. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X , Y )"
+            },
+            {
+              "type": "text",
+              "content": " is with a table displaying the values of X, Y , and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g ( X , Y )"
+            },
+            {
+              "type": "text",
+              "content": " under various possible outcomes. Interpreting "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X   +   Y"
+            },
+            {
+              "type": "text",
+              "content": " as an r.v. is intuitive: if we observe "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = x"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = y"
+            },
+            {
+              "type": "text",
+              "content": " then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X   +   Y"
+            },
+            {
+              "type": "text",
+              "content": " crystallizes to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x   +   y"
+            },
+            {
+              "type": "text",
+              "content": " . For a less familiar example like max "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( X , Y )"
+            },
+            {
+              "type": "text",
+              "content": " , students often are unsure how to interpret it as an r.v. But the idea is the same: if we observe "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X = x { \\mathrm { ~ a n d ~ } } Y = y"
+            },
+            {
+              "type": "text",
+              "content": " , then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname* { m a x } ( X , Y )"
+            },
+            {
+              "type": "text",
+              "content": " crystallizes to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname* { m a x } ( x , y )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.105,
+            0.842,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 3.7.6 (Maximum of two die rolls). We roll two fair 6-sided dice. Let X be the number on the first die and Y the number on the second die. The following table gives the values of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X ,   Y"
+            },
+            {
+              "type": "text",
+              "content": " , and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname* { m a x } ( X , Y )"
+            },
+            {
+              "type": "text",
+              "content": " under "
+            },
+            {
+              "type": "equation_inline",
+              "content": "7"
+            },
+            {
+              "type": "text",
+              "content": " of the 36 outcomes in the sample space, analogously to the table in Example 3.2.5."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 143,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.038,
+            0.465,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Random variables and their distributions"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.862,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "127"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 2,
+          "bbox": [
+            0.356,
+            0.065,
+            0.645,
+            0.235
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 2,
+              "bbox": [
+                0.356,
+                0.065,
+                0.645,
+                0.235
+              ],
+              "image_path": "images/page_143_table_2.jpg",
+              "content": "<table><tr><td>s</td><td>X</td><td>Y</td><td>max(X,Y)</td></tr><tr><td>(1,2)</td><td>1</td><td>2</td><td>2</td></tr><tr><td>(1,6)</td><td>1</td><td>6</td><td>6</td></tr><tr><td>(2,5)</td><td>2</td><td>5</td><td>5</td></tr><tr><td>(3,1)</td><td>3</td><td>1</td><td>3</td></tr><tr><td>(4,3)</td><td>4</td><td>3</td><td>4</td></tr><tr><td>(5,4)</td><td>5</td><td>4</td><td>5</td></tr><tr><td>(6,6)</td><td>6</td><td>6</td><td>6</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.245,
+            0.854,
+            0.264
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "So "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname* { m a x } ( X , Y )"
+            },
+            {
+              "type": "text",
+              "content": " assigns a numerical value to each sample outcome. The PMF is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.368,
+            0.284,
+            0.622,
+            0.3
+          ],
+          "image_path": "images/page_143_equation_4.jpg",
+          "content": "P (\\max (X, Y) = 1) = 1 / 3 6,"
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.368,
+            0.307,
+            0.622,
+            0.323
+          ],
+          "image_path": "images/page_143_equation_5.jpg",
+          "content": "P (\\max (X, Y) = 2) = 3 / 3 6,"
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.368,
+            0.33,
+            0.622,
+            0.346
+          ],
+          "image_path": "images/page_143_equation_6.jpg",
+          "content": "P (\\max (X, Y) = 3) = 5 / 3 6,"
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.368,
+            0.353,
+            0.622,
+            0.369
+          ],
+          "image_path": "images/page_143_equation_7.jpg",
+          "content": "P (\\max (X, Y) = 4) = 7 / 3 6,"
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.368,
+            0.376,
+            0.622,
+            0.392
+          ],
+          "image_path": "images/page_143_equation_8.jpg",
+          "content": "P (\\max (X, Y) = 5) = 9 / 3 6,"
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.368,
+            0.399,
+            0.632,
+            0.415
+          ],
+          "image_path": "images/page_143_equation_9.jpg",
+          "content": "P (\\max (X, Y) = 6) = 1 1 / 3 6."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.435,
+            0.897,
+            0.49
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "These probabilities can be obtained by tabulating the values of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname* { m a x } ( x , y )"
+            },
+            {
+              "type": "text",
+              "content": " in a "
+            },
+            {
+              "type": "equation_inline",
+              "content": "6 \\times 6"
+            },
+            {
+              "type": "text",
+              "content": " grid and counting how many times each value appears in the grid, or with calculations such as"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.132,
+            0.511,
+            0.868,
+            0.574
+          ],
+          "image_path": "images/page_143_equation_11.jpg",
+          "content": "\\begin{array}{l} P (\\max (X, Y) = 5) = P (X = 5, Y \\leq 4) + P (X \\leq 4, Y = 5) + P (X = 5, Y = 5) \\\\ = 2 P (X = 5, Y \\leq 4) + 1 / 3 6 \\\\ = 2 (4 / 3 6) + 1 / 3 6 = 9 / 3 6. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.594,
+            0.896,
+            0.781
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "h 3.7.7 (Category errors and sympathetic magic). Many common mistakes in probability can be traced to confusing two of the following fundamental objects with each other: distributions, random variables, events, and numbers. Such mistakes are examples of category errors. In general, a category error is a mistake that doesn’t just happen to be wrong, but in fact is necessarily wrong since it is based on the wrong category of object. For example, answering the question “How many people live in Boston?” with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\text{\" } -42 \\text{\" }"
+            },
+            {
+              "type": "text",
+              "content": " or "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { \\pi }"
+            },
+            {
+              "type": "text",
+              "content": " or “pink elephants” would be a category error—we may not know the population size of a city, but we do know that it is a nonnegative integer at any point in time. To help avoid being categorically wrong, always think about what category an answer should have."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.794,
+            0.896,
+            0.886
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "An especially common category error is to confuse a random variable with its distribution. We call this error sympathetic magic; this term comes from anthropology, where it is used for the belief that one can influence an object by manipulating a representation of that object. The following saying sheds light on the distinction between a random variable and its distribution:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.15,
+            0.901,
+            0.871,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The word is not the thing; the map is not the territory. – Alfred Korzybski"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

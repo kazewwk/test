@@ -1,0 +1,2851 @@
+{
+  "pages": [
+    {
+      "page_idx": 432,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.052
+          ],
+          "content": "416"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.067,
+            0.896,
+            0.145
+          ],
+          "content": "Similarly, if $Y$ is continuous, $E ( Y )$ is still a weighted average of the possible values of $Y$ , with an integral in place of a sum and the PDF value $f ( y )$ in place of a PMF value. If we learn that $A$ occurred, we update the expectation for $Y$ by replacing $f ( y )$ with the conditional PDF $f ( y | A )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.153,
+            0.899,
+            0.209
+          ],
+          "content": "Definition 9.1.1 (Conditional expectation given an event). Let $A$ be an event with positive probability. If $Y$ is a discrete r.v., then the conditional expectation of $Y$ given A is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.363,
+            0.21,
+            0.637,
+            0.247
+          ],
+          "content": "E (Y | A) = \\sum_ {y} y P (Y = y | A),",
+          "image_source": "images/page_432_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.255,
+            0.896,
+            0.274
+          ],
+          "content": "where the sum is over the support of Y . If $Y$ is a continuous r.v. with PDF $f ,$ then"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.37,
+            0.286,
+            0.63,
+            0.327
+          ],
+          "content": "E (Y | A) = \\int_ {- \\infty} ^ {\\infty} y f (y | A) d y,",
+          "image_source": "images/page_432_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.34,
+            0.896,
+            0.395
+          ],
+          "content": "where the conditional PDF $f ( y | A )$ is defined as the derivative of the conditional CDF $F ( y | A )   =   P ( Y   \\leq   y | A )$ , and can also be computed by a hybrid version of Bayes’ rule:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.368,
+            0.395,
+            0.632,
+            0.434
+          ],
+          "content": "f (y | A) = \\frac {P (A | Y = y) f (y)}{P (A)}.",
+          "image_source": "images/page_432_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.441,
+            0.896,
+            0.535
+          ],
+          "content": "Intuition 9.1.2. To gain intuition for $E ( Y | A )$ , let’s consider approximating it via simulation (or via the frequentist perspective, based on repeating the same experiment many times). Imagine generating a large number n of replications of the experiment for which $Y$ is a numerical summary. We then have Y -values $y _ { 1 } , \\ldots , y _ { n }$ and we can approximate"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.416,
+            0.536,
+            0.584,
+            0.584
+          ],
+          "content": "E (Y) \\approx \\frac {1}{n} \\sum_ {j = 1} ^ {n} y _ {j}.",
+          "image_source": "images/page_432_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.602,
+            0.894,
+            0.639
+          ],
+          "content": "To approximate $E ( Y | A )$ , we restrict to the replications where A occurred, and average only those Y -values. This can be written as"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.39,
+            0.652,
+            0.61,
+            0.699
+          ],
+          "content": "E (Y | A) \\approx \\frac {\\sum_ {j = 1} ^ {n} y _ {j} I _ {j}}{\\sum_ {j = 1} ^ {n} I _ {j}},",
+          "image_source": "images/page_432_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.71,
+            0.896,
+            0.806
+          ],
+          "content": "where $I _ { j }$ is the indicator of A occurring in the jth replication. This is undefined if A never occurred in the simulation, which makes sense since then there is no simulation data about what the $^ { \\circ } A$ occurred” scenario is like. We would like to have n large enough so that there are many occurrences of $A$ (if A is a rare event, more sophisticated techniques for approximating $E ( Y | A )$ may be needed)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.814,
+            0.896,
+            0.852
+          ],
+          "content": "The principle is simple though: $E ( Y | A )$ is approximately the average of $Y$ in a large number of simulation runs in which A occurred. \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.862,
+            0.896,
+            0.919
+          ],
+          "content": "h 9.1.3. Confusing conditional expectation and unconditional expectation is a dangerous mistake. More generally, not keeping careful track of what you should be conditioning on and what you are conditioning on is a recipe for disaster."
+        }
+      ]
+    },
+    {
+      "page_idx": 433,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.038,
+            0.313,
+            0.054
+          ],
+          "content": "Conditional expectation"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": "417"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.068,
+            0.834,
+            0.087
+          ],
+          "content": "For a life-or-death example of the previous biohazard, consider life expectancy."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.096,
+            0.896,
+            0.19
+          ],
+          "content": "Example 9.1.4 (Life expectancy). Fred is 30 years old, and he hears that the average life expectancy in his country is 80 years. Should he conclude that, on average, he has 50 years of life left? No, there is a crucial piece of information that he must condition on: the fact that he has lived to age 30 already. Letting T be Fred’s lifespan, we have the cheerful news that"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.396,
+            0.206,
+            0.605,
+            0.227
+          ],
+          "content": "E (T) <   E (T | T \\geq 3 0).",
+          "image_source": "images/page_433_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.241,
+            0.894,
+            0.298
+          ],
+          "content": "The left-hand side is Fred’s life expectancy at birth (it implicitly conditions on the fact that he is born), and the right-hand side is Fred’s life expectancy given that he reaches age 30."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.307,
+            0.896,
+            0.477
+          ],
+          "content": "A harder question is how to decide on an appropriate estimate to use for $E ( T )$ . Is it just 80, the overall average for his country? In almost every country, women have a longer average life expectancy than men, so it makes sense to condition on Fred being a man. But should we also condition on what city he was born in? Should we condition on racial and financial information about his parents, or the time of day when he was born? Intuitively, we would like estimates that are both accurate and relevant for Fred, but there is a tradeoff since if we condition on more characteristics of Fred, then there are fewer people who match those characteristics to use as data for estimating the life expectancy."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.486,
+            0.894,
+            0.618
+          ],
+          "content": "Now consider some specific numbers for the United States. A Social Security Administration study estimated that between 1900 and 2000, the average life expectancy at birth in the U.S. for men increased from 46 to 74, and for women increased from 49 to 79. Tremendous gains! But much of the gain is due to decreases in child mortality. For a 30-year-old person in 1900, the average number of years remaining was 35 for a man and 36 for a woman; in 2000, the corresponding numbers were 46 for a man and 50 for a woman."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.628,
+            0.894,
+            0.704
+          ],
+          "content": "There are some subtle statistical issues in obtaining these estimates. For example, how were estimates for life expectancy for someone born in 2000 obtained without waiting at least until the year 2100? Estimating survival distributions is a very important topic in biostatistics and actuarial science. \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.713,
+            0.894,
+            0.77
+          ],
+          "content": "The law of total probability allows us to get unconditional probabilities by slicing up the sample space and computing conditional probabilities in each slice. The same idea works for computing unconditional expectations."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.78,
+            0.894,
+            0.835
+          ],
+          "content": "Theorem 9.1.5 (Law of total expectation). Let $A _ { 1 } , \\ldots , A _ { n }$ be a partition of a sample space, with $P ( A _ { i } )   >   0$ for all i, and let Y be a random variable on this sample space. Then"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.368,
+            0.836,
+            0.632,
+            0.883
+          ],
+          "content": "E (Y) = \\sum_ {i = 1} ^ {n} E (Y | A _ {i}) P (A _ {i}).",
+          "image_source": "images/page_433_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.899,
+            0.894,
+            0.918
+          ],
+          "content": "In fact, since all probabilities are expectations by the fundamental bridge, the law"
+        }
+      ]
+    },
+    {
+      "page_idx": 434,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "418"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.068,
+            0.893,
+            0.106
+          ],
+          "continues_prev": true,
+          "content": "of total probability is a special case of the law of total expectation. To see this, let $Y = I _ { B }$ for an event $B ;$ then the above theorem says"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.219,
+            0.116,
+            0.78,
+            0.164
+          ],
+          "content": "P (B) = E (I _ {B}) = \\sum_ {i = 1} ^ {n} E (I _ {B} | A _ {i}) P (A _ {i}) = \\sum_ {i = 1} ^ {n} P (B | A _ {i}) P (A _ {i}),",
+          "image_source": "images/page_434_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.172,
+            0.895,
+            0.21
+          ],
+          "content": "which is exactly LOTP. The law of total expectation is, in turn, a special case of a major result called Adam’s law (Theorem 9.3.7), so we will not prove it yet."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.219,
+            0.895,
+            0.295
+          ],
+          "content": "There are many interesting examples of using wishful thinking to break up an unconditional expectation into conditional expectations. We begin with two cautionary tales about the importance of conditioning carefully and not destroying information without justification."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.304,
+            0.896,
+            0.435
+          ],
+          "content": "Example 9.1.6 (Two-envelope paradox). A stranger presents you with two identical-looking, sealed envelopes, each of which contains a check for some positive amount of money. You are informed that one of the envelopes contains exactly twice as much money as the other. You can choose either envelope. Which do you prefer: the one on the left or the one on the right? (Assume that the expected amount of money in each envelope is finite—certainly a good assumption in the real world!)"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.284,
+            0.448,
+            0.717,
+            0.541
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_434_image_7.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.566,
+            0.236,
+            0.581
+          ],
+          "level": 2,
+          "content": "FIGURE 9.1"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.584,
+            0.895,
+            0.622
+          ],
+          "content": "Two envelopes, where one contains twice as much money as the other. Either $Y =$ 2X or $Y = X / 2$ , with equal probabilities. Which would you prefer?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.637,
+            0.195,
+            0.654
+          ],
+          "level": 2,
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.665,
+            0.896,
+            0.76
+          ],
+          "content": "Let X and Y be the amounts in the left and right envelopes, respectively. By symmetry, there is no reason to prefer one envelope over the other (we are assuming there is no prior information that the stranger is left-handed and left-handed people prefer putting more money on the left). Concluding by symmetry that $E(X)   =$ $E ( Y )$ , it seems that you should not care which envelope you get."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.769,
+            0.896,
+            0.92
+          ],
+          "content": "But as you daydream about what’s inside the envelopes, another argument occurs to you: suppose that the left envelope has \\$100. Then the right envelope either has \\$50 or \\$200. The average of \\$50 and \\$200 is \\$125, so it seems then that the right envelope is better. But there was nothing special about \\$100 here; for any value x for the left envelope, the average of 2x and $x / 2$ is greater than $x ,$ suggesting that the right envelope is better. This is bizarre though, since not only does it contradict the symmetry argument, but also the same reasoning could be applied starting with the right envelope, leading to switching back and forth forever!"
+        }
+      ]
+    },
+    {
+      "page_idx": 435,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.038,
+            0.313,
+            0.054
+          ],
+          "content": "Conditional expectation"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": "419"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.068,
+            0.895,
+            0.105
+          ],
+          "content": "Let us try to formalize this argument to see what’s going on. We have $Y = 2 X$ or $Y = X / 2 ,$ , with equal probabilities. By Theorem 9.1.5,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.271,
+            0.119,
+            0.731,
+            0.154
+          ],
+          "content": "E (Y) = E (Y | Y = 2 X) \\cdot \\frac {1}{2} + E \\bigl (Y | Y = X / 2 \\bigr) \\cdot \\frac {1}{2}.",
+          "image_source": "images/page_435_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.165,
+            0.429,
+            0.182
+          ],
+          "content": "One might then think that this is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.195,
+            0.671,
+            0.232
+          ],
+          "content": "E (2 X) \\cdot \\frac {1}{2} + E (X / 2) \\cdot \\frac {1}{2} = \\frac {5}{4} E (X),",
+          "image_source": "images/page_435_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.242,
+            0.895,
+            0.299
+          ],
+          "content": "suggesting a 25% gain from switching from the left to the right envelope. But there is a blunder in that calculation: $E ( Y | Y = 2 X ) = E ( 2 X | Y = 2 X )$ , but there is no justification for dropping the $Y = 2 X$ condition after plugging in 2X for $Y .$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.307,
+            0.896,
+            0.477
+          ],
+          "content": "To put it another way, let I be the indicator of the event $Y = 2 X$ , so that $E ( Y | Y =$ $2 X ) = E ( 2 X | I = 1 )$ . If we know that X is independent of I, then we can drop the condition $I = 1$ . But in fact we have just proven that X and I can’t be independent: if they were, we’d have a paradox! Surprisingly, observing X gives information about whether X is the bigger value or the smaller value. If we learn that X is very large, we might guess that X is larger than $Y$ , but what is considered very large? Is $1 0 ^ { 1 2 }$ very large, even though it is tiny compared with $1 0 ^ { 1 0 0 } ?$ The two-envelope paradox says that no matter what the distribution of X is, there are reasonable ways to define “very large” relative to that distribution."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.487,
+            0.895,
+            0.563
+          ],
+          "content": "In Exercise 8 you will look at a related problem, in which the amounts of money in the two envelopes are i.i.d. random variables. You’ll show that if you are allowed to look inside one of the envelopes and then decide whether to switch, there is a strategy that allows you to get the better envelope more than 50% of the time! \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.571,
+            0.894,
+            0.627
+          ],
+          "content": "The next example vividly illustrates the importance of conditioning on all the information. The phenomenon revealed here arises in many real-life decisions about what to buy and what investments to make."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.637,
+            0.895,
+            0.732
+          ],
+          "content": "Example 9.1.7 (Mystery prize). You are approached by another stranger, who gives you an opportunity to bid on a mystery box containing a mystery prize! The value of the prize is completely unknown, except that it is worth at least nothing, and at most a million dollars. So the true value $V$ of the prize is considered to be Uniform on [0,1] (measured in millions of dollars)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.741,
+            0.895,
+            0.854
+          ],
+          "content": "You can choose to bid any amount b (in millions of dollars). You have the chance to get the prize for considerably less than it is worth, but you could also lose money if you bid too much. Specifically, if $b < 2 V / 3$ , then the bid is rejected and nothing is gained or lost. If $b \\geq 2 V / 3$ , then the bid is accepted and your net payoff is $V - b$ (since you pay b to get a prize worth V ). What is your optimal bid $b ,$ to maximize the expected payoff?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.106,
+            0.872,
+            0.195,
+            0.888
+          ],
+          "level": 2,
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.899,
+            0.895,
+            0.918
+          ],
+          "content": "Your bid $b   \\geq   0$ must be a predetermined constant (not based on $V ,$ since $V$ is"
+        }
+      ]
+    },
+    {
+      "page_idx": 436,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.14,
+            0.053
+          ],
+          "content": "420"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.269,
+            0.068,
+            0.725,
+            0.341
+          ],
+          "sub_type": "text_image",
+          "content": "Bid $250,000? If it's rejected, I lose nothing. If it's accepted, I get a prize worth $500,000 on average!\nmystery box",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_436_image_2.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.365,
+            0.239,
+            0.38
+          ],
+          "level": 2,
+          "content": "FIGURE 9.2"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.383,
+            0.895,
+            0.419
+          ],
+          "content": "When bidding on an unknown asset, beware the winner’s curse, and condition on the relevant information."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.445,
+            0.893,
+            0.482
+          ],
+          "content": "unknown!). To find the expected payoff W, condition on whether the bid is accepted. The payoff is $V - b$ if the bid is accepted and 0 if the bid is rejected. So"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.169,
+            0.495,
+            0.831,
+            0.571
+          ],
+          "content": "\\begin{array}{l} E (W) = E (W | b \\geq 2 V / 3) P (b \\geq 2 V / 3) + E (W | b <   2 V / 3) P (b <   2 V / 3) \\\\ = E (V - b | b \\geq 2 V / 3) P (b \\geq 2 V / 3) + 0 \\\\ = (E (V | V \\leq 3 b / 2) - b) P (V \\leq 3 b / 2). \\\\ \\end{array}",
+          "image_source": "images/page_436_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.584,
+            0.895,
+            0.643
+          ],
+          "content": "For $b \\geq 2 / 3 ,$ , the event $V \\leq 3 b / 2$ has probability 1, so the right-hand side is $1 / 2 - b ,$ which is negative. Now assume $b < 2 / 3$ . Then $V \\leq 3 b / 2$ has probability $3 b / 2$ . Given that $V \\leq 3 b / 2$ , the conditional distribution of V is Uniform on $[ 0 , 3 b / 2 ]$ . Therefore,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.146,
+            0.655,
+            0.852,
+            0.675
+          ],
+          "content": "E (W) = \\left(E (V | V \\leq 3 b / 2) - b\\right) P (V \\leq 3 b / 2) = (3 b / 4 - b) (3 b / 2) = - 3 b ^ {2} / 8.",
+          "image_source": "images/page_436_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.691,
+            0.895,
+            0.729
+          ],
+          "content": "The above expression is negative except at $b   =   0 .$ so the optimal bid is 0: you shouldn’t play this game!"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.738,
+            0.895,
+            0.777
+          ],
+          "content": "Alternatively, condition on which of the following events occurs: $A = \\{ V < b / 2 \\}$ $B = \\{ b / 2 \\leq V \\leq 3 b / 2 \\} ,   C = \\{ V > 3 b / 2 \\}$ . We have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.249,
+            0.791,
+            0.748,
+            0.812
+          ],
+          "content": "E (W | A) = E (V - b | A) <   E (b / 2 - b | A) = - b / 2 \\leq 0,",
+          "image_source": "images/page_436_equation_11.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.31,
+            0.824,
+            0.689,
+            0.865
+          ],
+          "content": "E (W | B) = E \\left(\\frac {b / 2 + 3 b / 2}{2} - b | B\\right) = 0,",
+          "image_source": "images/page_436_equation_12.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.435,
+            0.871,
+            0.566,
+            0.891
+          ],
+          "content": "E (W | C) = 0,",
+          "image_source": "images/page_436_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.901,
+            0.514,
+            0.919
+          ],
+          "content": "so we should just set $b = 0$ and walk away."
+        }
+      ]
+    },
+    {
+      "page_idx": 437,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.038,
+            0.313,
+            0.054
+          ],
+          "content": "Conditional expectation"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.892,
+            0.052
+          ],
+          "content": "421"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.068,
+            0.896,
+            0.276
+          ],
+          "content": "The moral of this story is to condition on all the information. It is crucial in the above calculation to use $E ( V | V \\leq 3 b / 2 )$ rather than $E ( V ) = 1 / 2 ;$ knowing that the bid was accepted gives information about how much the mystery prize is worth, so we shouldn’t destroy that information. This problem is related to the so-called win-$n e r   ^ { \\prime } s$ curse, which says that the winner in an auction with incomplete information tends to profit less than they expect (unless they understand probability!). This is because in many settings, the expected value of the item that they bid on given that they won the bid is less than the unconditional expected value they originally had in mind. For $b \\geq 2 / 3$ , conditioning on $V \\leq 3 b / 2$ does nothing since we know in advance that $V \\leq 1$ , but such a bid is ludicrously high. For any $b < 2 / 3$ , finding out that your bid is accepted lowers your expectation:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.381,
+            0.29,
+            0.617,
+            0.31
+          ],
+          "content": "E (V | V \\leq 3 b / 2) <   E (V).",
+          "image_source": "images/page_437_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.334,
+            0.895,
+            0.39
+          ],
+          "content": "The remaining examples use first-step analysis to calculate unconditional expectations. First, as promised in Chapter 4, we derive the expectation of the Geometric distribution using first-step analysis."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.399,
+            0.896,
+            0.494
+          ],
+          "content": "Example 9.1.8 (Geometric expectation redux). Let $X \\sim \\operatorname { G e o m } ( p )$ . Interpret X as the number of Tails before the first Heads in a sequence of coin flips with probability $p$ of Heads. To get $E ( X )$ , we condition on the outcome of the first toss: if it lands Heads, then X is 0 and we’re done; if it lands Tails, then we’ve wasted one toss and are back to where we started, by memorylessness. Therefore,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.248,
+            0.507,
+            0.75,
+            0.554
+          ],
+          "content": "\\begin{array}{l} E (X) = E (X | \\text {first toss} H) \\cdot p + E (X | \\text {first toss} T) \\cdot q \\\\ = 0 \\cdot p + (1 + E (X)) \\cdot q, \\\\ \\end{array}",
+          "image_source": "images/page_437_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.566,
+            0.345,
+            0.586
+          ],
+          "content": "which gives $E ( X ) = q / p .$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.595,
+            0.893,
+            0.632
+          ],
+          "content": "The next example derives expected waiting times for some more complicated patterns, using two steps of conditioning."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.641,
+            0.895,
+            0.698
+          ],
+          "content": "Example 9.1.9 (Time until HH vs. HT). You toss a fair coin repeatedly. What is the expected number of tosses until the pattern HT appears for the first time? What about the expected number of tosses until HH appears for the first time?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.106,
+            0.712,
+            0.194,
+            0.729
+          ],
+          "level": 2,
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.74,
+            0.896,
+            0.835
+          ],
+          "content": "Let $W _ { H T }$ be the number of tosses until HT appears. As we can see from Figure $9 . 3 , ~ W _ { H T }$ is the waiting time for the first Heads, which we’ll call $W _ { 1 }$ , plus the additional waiting time for the first Tails after the first Heads, which we’ll call $W _ { 2 }$ By the story of the First Success distribution, $W _ { 1 }$ and $W _ { 2 }$ are i.i.d. $\\mathrm { F S } ( 1 / 2 )$ , so $E ( W _ { 1 } ) = E ( W _ { 2 } ) = 2 { \\mathrm { ~ a n d ~ } } E ( W _ { H T } ) = 4$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.843,
+            0.896,
+            0.919
+          ],
+          "content": "Finding the expected waiting time for HH, $E ( W _ { H H } )$ , is more complicated. We can’t apply the same logic as for $E ( W _ { H T } )$ : as shown in Figure 9.4, if the first Heads is immediately followed by Tails, our progress is destroyed and we must start from scratch. But this is progress for us in solving the problem, since the fact that the"
+        }
+      ]
+    },
+    {
+      "page_idx": 438,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "422"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.359,
+            0.066,
+            0.64,
+            0.187
+          ],
+          "sub_type": "text_image",
+          "content": "TTTHHHHTHHT...\nW₁ W₂",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_438_image_2.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.208,
+            0.237,
+            0.223
+          ],
+          "level": 2,
+          "content": "FIGURE 9.3"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.225,
+            0.895,
+            0.263
+          ],
+          "content": "Waiting time for HT is the waiting time for the first Heads, $W _ { 1 }$ , plus the additional waiting time for the next Tails, $W _ { 2 }$ . Durable partial progress is possible!"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.291,
+            0.896,
+            0.327
+          ],
+          "content": "system can get reset suggests the strategy of first-step analysis. Let’s condition on the outcome of the first toss:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.208,
+            0.338,
+            0.79,
+            0.374
+          ],
+          "content": "E (W _ {H H}) = E (W _ {H H} | \\text {first toss} H) \\frac {1}{2} + E (W _ {H H} | \\text {first toss} T) \\frac {1}{2}.",
+          "image_source": "images/page_438_equation_6.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.375,
+            0.405,
+            0.625,
+            0.521
+          ],
+          "sub_type": "text_image",
+          "content": "THTTTTHHHH...\n↑\nstart over",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_438_image_7.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.543,
+            0.238,
+            0.558
+          ],
+          "level": 2,
+          "content": "FIGURE 9.4"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.562,
+            0.707,
+            0.58
+          ],
+          "content": "When waiting for HH, partial progress can easily be destroyed."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.594,
+            0.896,
+            0.687
+          ],
+          "content": "For the second term, $E ( W _ { H H } |$ first toss $\\mathrm { T ) } = 1 + E ( W _ { H H } )$ by memorylessness. For the first term, we compute $E ( W _ { H H } |$ 1st toss H) by further conditioning on the outcome of the second toss. If the second toss is Heads, we have obtained HH in two tosses. If the second toss is Tails, $\\mathrm { w e } ^ { \\mathfrak { z } } \\mathrm { v e }$ wasted two tosses and have to start all over! This gives"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.258,
+            0.687,
+            0.741,
+            0.722
+          ],
+          "content": "E (W _ {H H} | \\text {first toss} H) = 2 \\cdot \\frac {1}{2} + (2 + E (W _ {H H})) \\cdot \\frac {1}{2}.",
+          "image_source": "images/page_438_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.728,
+            0.206,
+            0.745
+          ],
+          "content": "Therefore,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.199,
+            0.76,
+            0.8,
+            0.801
+          ],
+          "content": "E (W _ {H H}) = \\left(2 \\cdot \\frac {1}{2} + (2 + E (W _ {H H})) \\cdot \\frac {1}{2}\\right) \\frac {1}{2} + (1 + E (W _ {H H})) \\frac {1}{2}.",
+          "image_source": "images/page_438_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.814,
+            0.518,
+            0.833
+          ],
+          "content": "Solving for $E ( W _ { H H } )$ , we get $E ( W _ { H H } ) = 6$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.844,
+            0.896,
+            0.919
+          ],
+          "content": "It might seem surprising at first that the expected waiting time for HH is greater than the expected waiting time for HT. How do we reconcile this with the fact that in two tosses of the coin, HH and HT both have a $1 / 4$ chance of appearing? Why aren’t the average waiting times the same by symmetry?"
+        }
+      ]
+    },
+    {
+      "page_idx": 439,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.039,
+            0.314,
+            0.054
+          ],
+          "content": "Conditional expectation"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "423"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.069,
+            0.896,
+            0.239
+          ],
+          "content": "As we solved this problem, we in fact noticed an important asymmetry. When waiting for HT, once we get the first Heads, we’ve achieved partial progress that cannot be destroyed: if the Heads is followed by another Heads, we’re in the same position as before, and if the Heads is followed by a Tails, we’re done. By contrast, when waiting for HH, even after getting the first Heads, we could be sent back to square one if the Heads is followed by a Tails. This suggests the average waiting time for HH should be longer. Symmetry implies that the average waiting time for HH is the same as that for TT, and that for HT is the same as that for TH, but it does not imply that the average waiting times for HH and HT are the same."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.249,
+            0.897,
+            0.364
+          ],
+          "content": "More intuition into what’s going on can be obtained by considering a long string of coin flips, as in Figure 9.5. We notice right away that appearances of HH can overlap, while appearances of HT must be disjoint. For example, HHHHHH has 5 occurrences of HH, but HTHTHT has only 3 occurrences of HT. Since there are the same average number of HH s and HTs, but HH s sometimes clump together, the average waiting time for HH must be larger than that of HT to compensate."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.245,
+            0.378,
+            0.756,
+            0.478
+          ],
+          "sub_type": "chemical",
+          "content": "Sequence of HHTHHTTHHHHHTHTHTTHTT with overlapping circles, likely representing a DNA or protein sequence",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_439_image_4.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.498,
+            0.239,
+            0.514
+          ],
+          "level": 2,
+          "content": "FIGURE 9.5"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.516,
+            0.896,
+            0.553
+          ],
+          "content": "Clumping. (a) Appearances of HH can overlap. (b) Appearances of HT must be disjoint."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.572,
+            0.896,
+            0.611
+          ],
+          "content": "Related problems occur in information theory when compressing a message, and in genetics when looking for recurring patterns (called motifs) in DNA sequences. \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.62,
+            0.894,
+            0.658
+          ],
+          "content": "Our final example in this section uses wishful thinking for both probabilities and expectations to study a question about a random walk."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.669,
+            0.896,
+            0.746
+          ],
+          "content": "Example 9.1.10 (Random walk on the integers). An immortal drunk man wanders around randomly on the integers. He starts at the origin, and at each step he moves 1 unit to the right or 1 unit to the left, with equal probabilities, independently of all his previous steps. Let b be a googolplex (this is 10<sup>g</sup>, where $g = 1 0 ^ { 1 0 0 }$ is a googol)."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.102,
+            0.755,
+            0.896,
+            0.841
+          ],
+          "sub_type": "text",
+          "content": "(a) Find a simple expression for the probability that the immortal drunk visits b before returning to the origin for the first time.\n(b) Find the expected number of times that the immortal drunk visits b before returning to the origin for the first time."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.852,
+            0.195,
+            0.868
+          ],
+          "level": 2,
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.881,
+            0.896,
+            0.918
+          ],
+          "content": "(a) Let B be the event that the drunk man visits b before returning to the origin for the first time and let L be the event that his first move is to the left. Then"
+        }
+      ]
+    },
+    {
+      "page_idx": 440,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "424"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.068,
+            0.896,
+            0.126
+          ],
+          "content": "$P ( B | L ) = 0$ since any path from −1 to b must pass through 0. For $P ( B | L ^ { c } )$ , we are exactly in the setting of the gambler’s ruin problem, where player A starts with \\$1, player B starts with $\\S ( b - 1 )$ , and the rounds are fair. Applying that result, we have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.246,
+            0.134,
+            0.754,
+            0.171
+          ],
+          "content": "P (B) = P (B | L) P (L) + P (B | L ^ {c}) P (L ^ {c}) = \\frac {1}{b} \\cdot \\frac {1}{2} = \\frac {1}{2 b}.",
+          "image_source": "images/page_440_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.187,
+            0.895,
+            0.225
+          ],
+          "content": "(b) Let N be the number of visits to b before returning to the origin for the first time, and let $p = 1 / ( 2 b )$ be the probability found in (a). Then"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.146,
+            0.235,
+            0.854,
+            0.257
+          ],
+          "content": "E (N) = E (N | N = 0) P (N = 0) + E (N | N \\geq 1) P (N \\geq 1) = p E (N | N \\geq 1).",
+          "image_source": "images/page_440_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.266,
+            0.896,
+            0.38
+          ],
+          "content": "The conditional distribution of N given $N \\geq 1$ is $\\operatorname { F S } ( p )$ : given that the man reaches b, by symmetry there is probability p of returning to the origin before visiting b again (call this “success”) and probability $1 - p$ of returning to b again before returning to the origin (call this “failure”). Note that the trials are independent since the situation is the same each time he is at $b ,$ independent of the past history. Thus $E ( N | N \\geq 1 ) = 1 / p ,$ and"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.389,
+            0.668,
+            0.427
+          ],
+          "content": "E (N) = p E (N | N \\geq 1) = p \\cdot \\frac {1}{p} = 1.",
+          "image_source": "images/page_440_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.434,
+            0.896,
+            0.473
+          ],
+          "content": "Surprisingly, the result doesn’t depend on the value of $b ,$ and our proof didn’t require knowing the value of $p .$ \u0003"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.555,
+            0.606,
+            0.575
+          ],
+          "level": 2,
+          "content": "9.2 Conditional expectation given an r.v."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.592,
+            0.896,
+            0.668
+          ],
+          "content": "In this section we introduce conditional expectation given a random variable. That is, we want to understand what it means to write $E ( Y | X )$ for an r.v. X. We will see that $E ( Y | X )$ is a random variable that is, in a certain sense, our best prediction of $Y$ , assuming we get to know X."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.676,
+            0.895,
+            0.734
+          ],
+          "content": "The key to understanding $E ( Y | X )$ is first to understand $E ( Y | X = x )$ . Since $X = x$ is an event, $E ( Y | X = x )$ is just the conditional expectation of Y given this event, and it can be computed using the conditional distribution of $Y$ given $X = x$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.742,
+            0.895,
+            0.781
+          ],
+          "content": "If $Y$ is discrete, we use the conditional PMF $P ( Y   =   y | X   =   x )$ in place of the unconditional PMF $P ( Y = y )$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.316,
+            0.79,
+            0.682,
+            0.83
+          ],
+          "content": "E (Y | X = x) = \\sum_ {y} y P (Y = y | X = x).",
+          "image_source": "images/page_440_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.839,
+            0.896,
+            0.877
+          ],
+          "content": "Analogously, if Y is continuous, we use the conditional PDF $f _ { Y | X } ( y | x )$ in place of the unconditional PDF:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.333,
+            0.882,
+            0.667,
+            0.923
+          ],
+          "content": "E (Y | X = x) = \\int_ {- \\infty} ^ {\\infty} y f _ {Y | X} (y | x) d y.",
+          "image_source": "images/page_440_equation_15.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 441,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.038,
+            0.314,
+            0.054
+          ],
+          "content": "Conditional expectation"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "425"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.067,
+            0.896,
+            0.144
+          ],
+          "content": "Notice that because we sum or integrate over y, $E ( Y | X   =   x )$ is a function of x only. We can give this function a name, like $g ;$ let $g ( x ) = E ( Y | X = x )$ . We define $E ( Y | X )$ as the random variable obtained by finding the form of the function $g ( x )$ then $p l u g g i n g$ in $X \\; f o r \\; x$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.152,
+            0.896,
+            0.229
+          ],
+          "content": "Definition 9.2.1 (Conditional expectation given an $\\mathrm { r . v . ) }$ . Let $g ( x ) = E ( Y | X = x )$ Then the conditional expectation of Y given $X$ , denoted $E ( Y | X )$ , is defined to be the random variable $g ( X )$ . In other words, if after doing the experiment X crystallizes into x, then $E ( Y | X )$ crystallizes into $g ( x )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.237,
+            0.897,
+            0.333
+          ],
+          "content": "h 9.2.2. The notation in this definition sometimes causes confusion. It does not say $^ { \\backprime \\backprime } g ( x )   =   E ( Y | X   =   x )$ , so $g ( X )   =   E ( Y | X   =   X )$ , which equals $E ( Y )$ because $X = X$ is always true”. Rather, we should first compute the function $g ( x )$ , then plug in X for x. For example, if $g ( x ) = x ^ { 2 }$ , then $g ( X ) = X ^ { 2 }$ . A similar biohazard is h 5.3.2, about the meaning of $F ( X )$ in the universality of the Uniform."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.341,
+            0.897,
+            0.512
+          ],
+          "content": "h 9.2.3. By definition, $E ( Y | X )$ is a function of X, so it is a random variable. (This does not mean there are no examples where $E ( Y | X )$ is a constant. A constant is a degenerate $\\mathbf { r } . \\mathbf { V } .$ , and a constant function of X. For example, if X and Y are independent then $E ( Y | X ) \\; = \\; E ( Y )$ , which is a constant.) Thus it makes sense to compute quantities like $E ( E ( Y | X ) )$ and $\\operatorname { V a r } ( E ( Y | X ) )$ , the mean and variance of the $r.v.   E(Y|X)$ . It is easy to be ensnared by category errors when working with conditional expectation, so it is important to keep in mind that conditional expectations of the form $E ( Y | A )$ are numbers, while those of the form $E ( Y | X )$ are random variables."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.521,
+            0.896,
+            0.578
+          ],
+          "content": "Here are some quick examples of how to calculate conditional expectation. In both examples, we don’t need to do a sum or integral to get $E ( Y | X = x )$ because a more direct approach is available."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.587,
+            0.896,
+            0.645
+          ],
+          "content": "Example 9.2.4. A stick of length 1 is broken at a point X chosen uniformly at random. Given that $X = x$ , we then choose another breakpoint $Y$ uniformly on the interval $[ 0 , x ]$ . Find $E ( Y | X )$ , and its mean and variance."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.655,
+            0.195,
+            0.672
+          ],
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.683,
+            0.894,
+            0.722
+          ],
+          "content": "From the description of the experiment, $X \\sim \\mathrm { U n i f } ( 0 , 1 )$ and $Y | X = x \\sim \\operatorname { U n i f } ( 0 , x )$ Then $E ( Y | X = x ) = x / 2$ , so by plugging in X for x, we have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.422,
+            0.736,
+            0.579,
+            0.757
+          ],
+          "content": "E (Y | X) = X / 2.",
+          "image_source": "images/page_441_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.771,
+            0.427,
+            0.791
+          ],
+          "content": "The expected value of $E ( Y | X )$ is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.356,
+            0.806,
+            0.643,
+            0.827
+          ],
+          "content": "E (E (Y | X)) = E (X / 2) = 1 / 4.",
+          "image_source": "images/page_441_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.841,
+            0.896,
+            0.898
+          ],
+          "content": "(We will show in the next section that a general property of conditional expectation is that $E ( E ( Y | X ) ) = E ( Y )$ , so it also follows that $E ( Y ) = 1 / 4 . )$ The variance of $E ( Y | X )$ is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.334,
+            0.899,
+            0.665,
+            0.92
+          ],
+          "content": "\\mathrm{Var} (E (Y | X)) = \\mathrm{Var} (X / 2) = 1 / 4 8.",
+          "image_source": "images/page_441_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.873,
+            0.901,
+            0.894,
+            0.916
+          ],
+          "content": "\u0003"
+        }
+      ]
+    },
+    {
+      "page_idx": 442,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.052
+          ],
+          "content": "426"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.066,
+            0.796,
+            0.09
+          ],
+          "content": "Example 9.2.5. For $X , Y \\stackrel { \\mathrm { i . i . d . } } { \\sim } \\mathrm { E x p o } ( \\lambda )$ , find $E ( \\operatorname* { m a x } ( X , Y ) | \\operatorname* { m i n } ( X , Y ) )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.099,
+            0.195,
+            0.116
+          ],
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.126,
+            0.896,
+            0.165
+          ],
+          "content": "Let $M = \\operatorname* { m a x } ( X , Y )$ and $L = \\operatorname* { m i n } ( X , Y )$ . By the memoryless property, $M - L$ is independent of $L ,$ and $M - L \\sim \\mathrm{Exp}(\\lambda)$ (see Example 7.3.6). Therefore"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.157,
+            0.176,
+            0.843,
+            0.213
+          ],
+          "content": "E (M | L = l) = E (L | L = l) + E (M - L | L = l) = l + E (M - L) = l + \\frac {1}{\\lambda},",
+          "image_source": "images/page_442_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.223,
+            0.322,
+            0.246
+          ],
+          "content": "and $\\begin{array} { r } { E ( M | L ) = L + \\frac { 1 } { \\lambda } } \\end{array}$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.325,
+            0.606,
+            0.346
+          ],
+          "level": 2,
+          "content": "9.3 Properties of conditional expectation"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.363,
+            0.647,
+            0.382
+          ],
+          "content": "Conditional expectation has some very useful properties."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.096,
+            0.391,
+            0.896,
+            0.487
+          ],
+          "sub_type": "text",
+          "content": "• Dropping what’s independent: If X and $Y$ are independent, then $E ( Y | X ) = E ( Y )$\n• Taking out what’s known: For any function h, $E ( h ( X ) Y | X ) = h ( X ) E ( Y | X )$\n• Linearity: $E ( Y _ { 1 } + Y _ { 2 } | X ) = E ( Y _ { 1 } | X ) + E ( Y _ { 2 } | X )$ , and $E ( c Y | X ) = c E ( Y | X )$ for c a constant (the latter is a special case of taking out what’s known)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.495,
+            0.445,
+            0.514
+          ],
+          "content": "• Adam’s law: $E ( E ( Y | X ) ) = E ( Y )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.523,
+            0.894,
+            0.561
+          ],
+          "content": "• Projection interpretation: The $r.v.   Y - E(Y|X)$ , which is called the residual from using $X$ to predict $Y .$ , is uncorrelated with $h ( X )$ for any function $h .$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.57,
+            0.489,
+            0.589
+          ],
+          "content": "Let’s discuss each property individually."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.598,
+            0.894,
+            0.637
+          ],
+          "content": "Theorem 9.3.1 (Dropping what’s independent). If X and $Y$ are independent, then $E ( Y | X ) = E ( Y )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.645,
+            0.894,
+            0.721
+          ],
+          "content": "This is true because independence implies $E ( Y | X   =   x )   =   E ( Y )$ for all $x ,$ hence $E(Y|X)=E(Y)$ . Intuitively, if X provides no information about $Y$ , then our best guess for $Y$ , even if we get to know $X$ , is still the unconditional mean $E ( Y )$ . However, the converse is false: a counterexample is given in Example 9.3.3 below."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.73,
+            0.734,
+            0.749
+          ],
+          "content": "Theorem 9.3.2 (Taking out what’s known). For any function $h .$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.352,
+            0.762,
+            0.646,
+            0.784
+          ],
+          "content": "E (h (X) Y | X) = h (X) E (Y | X).",
+          "image_source": "images/page_442_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.805,
+            0.896,
+            0.919
+          ],
+          "content": "Intuitively, when we take expectations given $X$ , we are treating $X$ as if it has crystallized into a known constant. Then any function of $X$ , say $h ( X )$ , also acts like a known constant while we are conditioning on $X$ . Taking out what’s known is the conditional version of the unconditional fact that $E ( c Y ) = c E ( Y )$ . The difference is that $E ( c Y ) = c E ( Y )$ asserts that two numbers are equal, while taking out what’s known asserts that two random variables are equal."
+        }
+      ]
+    },
+    {
+      "page_idx": 443,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.038,
+            0.314,
+            0.054
+          ],
+          "content": "Conditional expectation"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": "427"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.067,
+            0.823,
+            0.087
+          ],
+          "content": "Example 9.3.3. Let $Z \\sim \\mathcal { N } ( 0 , 1 )$ and $Y = Z ^ { 2 }$ . Find $E ( Y | Z )$ and $E ( Z | Y )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.095,
+            0.896,
+            0.173
+          ],
+          "content": "Solution: Since Y is a function of $Z ,   E ( Y | Z ) = E ( Z ^ { 2 } | Z ) = Z ^ { 2 }$ by taking out what’s known. To get $E ( Z | Y )$ , notice that conditional on $Y = y ,   Z$ equals ${ \\sqrt { y } } { \\mathrm { ~ o r ~ } } { - { \\sqrt { y } } }$ with equal probabilities by the symmetry of the standard Normal, so $\\dot { E } ( Z | Y = y ) = 0$ and $E ( Z | Y ) = 0$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.181,
+            0.896,
+            0.256
+          ],
+          "content": "In this case, although Y provides a lot of information about $Z ,$ narrowing down the possible values of $Z \\mathrm { ~ t o ~ }$ just two values, Y only tells us about the magnitude of $Z$ and not its sign. For this reason, $E ( Z | Y ) = E ( Z )$ despite the dependence between $Z$ and $Y$ . This example illustrates that the converse of Theorem 9.3.1 is false. \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.265,
+            0.75,
+            0.285
+          ],
+          "content": "Theorem 9.3.4 (Linearity). $E ( Y _ { 1 } + Y _ { 2 } | X ) = E ( Y _ { 1 } | X ) + E ( Y _ { 2 } | X )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.294,
+            0.896,
+            0.333
+          ],
+          "content": "This result is the conditional version of the unconditional fact that $E(Y_{1} + Y_{2}) =$ $E ( Y _ { 1 } ) + E ( Y _ { 2 } )$ , and is true since conditional probabilities are probabilities."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.34,
+            0.896,
+            0.379
+          ],
+          "content": "h 9.3.5. It is incorrect to write $`` E ( Y | X _ { 1 } + X _ { 2 } ) = E ( Y | X _ { 1 } ) + E ( Y | X _ { 2 } )$ ; linearity applies on the left side of the conditioning bar, not on the right side!"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.387,
+            0.894,
+            0.408
+          ],
+          "content": "Example 9.3.6. Let $X _ { 1 } , \\ldots , X _ { n }$ be i.i.d., and $S _ { n } = X _ { 1 }   + \\cdots + X _ { n }$ . Find $E ( X _ { 1 } | S _ { n } )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.417,
+            0.195,
+            0.434
+          ],
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.445,
+            0.242,
+            0.464
+          ],
+          "content": "By symmetry,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.463,
+            0.7,
+            0.484
+          ],
+          "content": "E (X _ {1} | S _ {n}) = E (X _ {2} | S _ {n}) = \\dots = E (X _ {n} | S _ {n}),",
+          "image_source": "images/page_443_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.491,
+            0.264,
+            0.51
+          ],
+          "content": "and by linearity,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.277,
+            0.524,
+            0.723,
+            0.545
+          ],
+          "content": "E (X _ {1} | S _ {n}) + \\dots + E (X _ {n} | S _ {n}) = E (S _ {n} | S _ {n}) = S _ {n}.",
+          "image_source": "images/page_443_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.558,
+            0.206,
+            0.575
+          ],
+          "content": "Therefore,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.381,
+            0.575,
+            0.619,
+            0.597
+          ],
+          "content": "E (X _ {1} | S _ {n}) = S _ {n} / n = \\bar {X} _ {n},",
+          "image_source": "images/page_443_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.604,
+            0.896,
+            0.68
+          ],
+          "content": "the sample mean of the $X _ { j } { } ^ { \\prime } \\mathrm { s } .$ This is an intuitive result: if we have 2 i.i.d. r.v.s $X _ { 1 } , X _ { 2 }$ and learn that $X _ { 1 } + X _ { 2 } = 1 0$ , it makes sense to guess that $X _ { 1 }$ is 5 (accounting for half of the total). Similarly, if we have n i.i.d. r.v.s and get to know their sum, our best guess for any one of them is the sample mean. \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.688,
+            0.896,
+            0.803
+          ],
+          "content": "The next theorem connects conditional expectation to unconditional expectation. It goes by many names, including the law of total expectation, the law of iterated expectation (which has a terrible acronym for something glowing with truth), and the tower property. We call it Adam’s law because it is used so frequently that it deserves a pithy name, and since it is often used in conjunction with another law we’ll encounter soon, which has a complementary name."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.81,
+            0.641,
+            0.83
+          ],
+          "content": "Theorem 9.3.7 (Adam’s law). For any r.v.s X and $Y .$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.398,
+            0.843,
+            0.601,
+            0.865
+          ],
+          "content": "E (E (Y | X)) = E (Y).",
+          "image_source": "images/page_443_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.881,
+            0.896,
+            0.92
+          ],
+          "content": "Proof. We present the proof in the case where X and $Y$ are both discrete (the proofs for other cases are analogous). Let $E ( Y | X ) = g ( X )$ . We proceed by applying"
+        }
+      ]
+    },
+    {
+      "page_idx": 444,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.052
+          ],
+          "content": "428"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.068,
+            0.896,
+            0.104
+          ],
+          "content": "LOTUS, expanding the definition of $g ( x )$ to get a double sum, and then swapping the order of summation:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.255,
+            0.113,
+            0.749,
+            0.334
+          ],
+          "content": "\\begin{array}{l} E (g (X)) = \\sum_ {x} g (x) P (X = x) \\\\ = \\sum_ {x} \\left(\\sum_ {y} y P (Y = y | X = x)\\right) P (X = x) \\\\ = \\sum_ {x} \\sum_ {y} y P (X = x) P (Y = y | X = x) \\\\ = \\sum_ {y} y \\sum_ {x} P (X = x, Y = y) \\\\ = \\sum_ {y} y P (Y = y) = E (Y). \\\\ \\end{array}",
+          "image_source": "images/page_444_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.352,
+            0.894,
+            0.388
+          ],
+          "content": "Adam’s law is a more compact, more general version of the law of total expectation (Theorem 9.1.5). For X discrete, the statements"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.4,
+            0.667,
+            0.436
+          ],
+          "content": "E (Y) = \\sum_ {x} E (Y | X = x) P (X = x)",
+          "image_source": "images/page_444_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.447,
+            0.147,
+            0.462
+          ],
+          "content": "and"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.401,
+            0.464,
+            0.597,
+            0.484
+          ],
+          "content": "E (Y) = E (E (Y | X))",
+          "image_source": "images/page_444_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.491,
+            0.704,
+            0.51
+          ],
+          "content": "mean the same thing, since if we let $E ( Y | X = x ) = g ( x )$ , then"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.143,
+            0.52,
+            0.855,
+            0.557
+          ],
+          "content": "E (E (Y | X)) = E (g (X)) = \\sum_ {x} g (x) P (X = x) = \\sum_ {x} E (Y | X = x) P (X = x).",
+          "image_source": "images/page_444_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.575,
+            0.896,
+            0.651
+          ],
+          "content": "Armed with Adam’s law, we have a powerful strategy for finding an expectation $E ( Y )$ , by conditioning on an r.v. X that we wish we knew. First obtain $E ( Y | X )$ by treating X as known, and then take the expectation of $E ( Y | X )$ . We will see various examples of this later in the chapter."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.66,
+            0.894,
+            0.698
+          ],
+          "content": "Just as there are forms of Bayes’ rule and LOTP with extra conditioning, as discussed in Chapter 2, there is a version of Adam’s law with extra conditioning."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.726,
+            0.852,
+            0.745
+          ],
+          "content": "Theorem 9.3.8 (Adam’s law with extra conditioning). For any r.v.s $X , Y , Z ,$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.363,
+            0.756,
+            0.637,
+            0.777
+          ],
+          "content": "E (E (Y | X, Z) | Z) = E (Y | Z).",
+          "image_source": "images/page_444_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.797,
+            0.896,
+            0.872
+          ],
+          "content": "The above equation is Adam’s law, except with extra conditioning on $Z$ inserted everywhere. It is true because conditional probabilities are probabilities. So we are free to use Adam’s law to help us find both unconditional expectations and conditional expectations."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.881,
+            0.897,
+            0.919
+          ],
+          "content": "Using Adam’s law, we can also prove the last item on our list of properties of conditional expectation."
+        }
+      ]
+    },
+    {
+      "page_idx": 445,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.038,
+            0.314,
+            0.055
+          ],
+          "content": "Conditional expectation"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "429"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.894,
+            0.106
+          ],
+          "content": "Theorem 9.3.9 (Projection interpretation). For any function $h ,$ the random variable $Y - E ( Y | X )$ is uncorrelated with $h ( X )$ . Equivalently,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.362,
+            0.122,
+            0.637,
+            0.143
+          ],
+          "content": "E ((Y - E (Y | X)) h (X)) = 0.",
+          "image_source": "images/page_445_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.158,
+            0.837,
+            0.178
+          ],
+          "content": "(This is equivalent since $E ( Y - E ( Y | X ) ) = 0$ , by linearity and Adam’s law.)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.199,
+            0.26,
+            0.217
+          ],
+          "content": "Proof. We have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.227,
+            0.234,
+            0.773,
+            0.278
+          ],
+          "content": "\\begin{array}{l} E ((Y - E (Y | X)) h (X)) = E (h (X) Y) - E (h (X) E (Y | X)) \\\\ = E (h (X) Y) - E (E (h (X) Y | X)) \\\\ \\end{array}",
+          "image_source": "images/page_445_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.293,
+            0.894,
+            0.332
+          ],
+          "content": "by Theorem 9.3.2 (here we’re “putting back what’s known” in the inner expectation). By Adam’s law, the second term is equal to $E ( h ( X ) Y )$ \u0004"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.299,
+            0.361,
+            0.685,
+            0.515
+          ],
+          "sub_type": "text_image",
+          "content": "Y\n}Y - E(Y | X)\nE(Y | X)",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_445_image_8.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.534,
+            0.238,
+            0.549
+          ],
+          "level": 2,
+          "content": "FIGURE 9.6"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.552,
+            0.897,
+            0.609
+          ],
+          "content": "The conditional expectation $E ( Y | X )$ is the projection of $Y$ onto the space of all functions of $X$ , shown here as a plane. The residual $Y - E ( Y | X )$ is orthogonal to the plane: it’s perpendicular to (uncorrelated with) any function of $X$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.626,
+            0.896,
+            0.74
+          ],
+          "content": "From a geometric perspective, we can visualize Theorem 9.3.9 as in Figure 9.6. In a certain sense (described below), $E ( Y | X )$ is the function of $X$ that is closest to $Y ;$ we say that $E ( Y | X )$ is the projection of $Y$ into the space of all functions of $X$ The “line” from $Y$ to $E ( Y | X )$ in the figure is orthogonal (perpendicular) to the $``  plane$ since any other route from $Y$ to $E ( Y | X )$ would be longer. This orthogonality turns out to be the geometric interpretation of Theorem 9.3.9."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.749,
+            0.897,
+            0.92
+          ],
+          "content": "The details of this perspective are given in the next section, which is starred since it requires knowledge of linear algebra. But even without delving into the linear algebra, the projection picture gives some useful intuition. As mentioned earlier, we can think of $E ( Y | X )$ as a prediction for Y based on $X$ . This is an extremely common problem in statistics: predict or estimate the future observations or unknown parameters based on data. The projection interpretation of conditional expectation implies that $E ( Y | X )$ is the best predictor of $Y$ based on $X$ , in the sense that it is the function of X with the lowest mean squared error (expected squared difference between $Y$ and the prediction of $Y )$"
+        }
+      ]
+    },
+    {
+      "page_idx": 446,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "430"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.068,
+            0.896,
+            0.143
+          ],
+          "content": "Example 9.3.10 (Linear regression). An extremely widely used method for data analysis in statistics is linear regression. In its most basic form, the linear regression model uses a single explanatory variable X to predict a response variable $Y .$ and it assumes that the conditional expectation of $Y$ is linear in $X$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.408,
+            0.157,
+            0.592,
+            0.177
+          ],
+          "content": "E (Y | X) = a + b X.",
+          "image_source": "images/page_446_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.199,
+            0.669,
+            0.218
+          ],
+          "content": "(a) Show that an equivalent way to express this is to write"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.419,
+            0.232,
+            0.58,
+            0.251
+          ],
+          "content": "Y = a + b X + \\epsilon ,",
+          "image_source": "images/page_446_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.264,
+            0.616,
+            0.283
+          ],
+          "content": "where \u000f is an r.v. (called the error ) with $E ( \\epsilon | X ) = 0$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.296,
+            0.893,
+            0.316
+          ],
+          "content": "(b) Solve for the constants a and b in terms of $E(X),E(Y),\\mathrm{Cov}(X,Y)$ , and $\\operatorname { V a r } ( X )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.325,
+            0.195,
+            0.342
+          ],
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.353,
+            0.686,
+            0.373
+          ],
+          "content": "(a) Let $Y = a + b X + \\epsilon$ , with $E ( \\epsilon | X ) = 0$ . Then by linearity,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.385,
+            0.747,
+            0.406
+          ],
+          "content": "E (Y | X) = E (a | X) + E (b X | X) + E (\\epsilon | X) = a + b X.",
+          "image_source": "images/page_446_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.418,
+            0.638,
+            0.437
+          ],
+          "content": "Conversely, suppose that $E ( Y | X ) = a + b X$ , and define"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.41,
+            0.451,
+            0.587,
+            0.47
+          ],
+          "content": "\\epsilon = Y - (a + b X).",
+          "image_source": "images/page_446_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.483,
+            0.373,
+            0.501
+          ],
+          "content": "Then $Y = a + b X + \\epsilon$ , with"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.201,
+            0.515,
+            0.798,
+            0.536
+          ],
+          "content": "E (\\epsilon | X) = E (Y | X) - E (a + b X | X) = E (Y | X) - (a + b X) = 0.",
+          "image_source": "images/page_446_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.562,
+            0.755,
+            0.581
+          ],
+          "content": "(b) First, by Adam’s law, taking the expectation of both sides gives"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.402,
+            0.594,
+            0.597,
+            0.614
+          ],
+          "content": "E (Y) = a + b E (X).",
+          "image_source": "images/page_446_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.627,
+            0.682,
+            0.645
+          ],
+          "content": "Note that \u000f has mean 0 and X and \u000f are uncorrelated, since"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.352,
+            0.659,
+            0.649,
+            0.68
+          ],
+          "content": "E (\\epsilon) = E (E (\\epsilon | X)) = E (0) = 0",
+          "image_source": "images/page_446_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.693,
+            0.147,
+            0.708
+          ],
+          "content": "and"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.254,
+            0.71,
+            0.745,
+            0.731
+          ],
+          "content": "E (\\epsilon X) = E (E (\\epsilon X | X)) = E (X E (\\epsilon | X)) = E (0) = 0.",
+          "image_source": "images/page_446_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.738,
+            0.792,
+            0.756
+          ],
+          "content": "Taking the covariance with X of both sides in $Y = a + b X + \\epsilon ,$ we have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.195,
+            0.77,
+            0.802,
+            0.79
+          ],
+          "content": "\\operatorname{Cov} (X, Y) = \\operatorname{Cov} (X, a) + b \\operatorname{Cov} (X, X) + \\operatorname{Cov} (X, \\epsilon) = b \\operatorname{Var} (X).",
+          "image_source": "images/page_446_equation_22.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.803,
+            0.163,
+            0.82
+          ],
+          "content": "Thus,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.261,
+            0.832,
+            0.418,
+            0.873
+          ],
+          "content": "b = \\frac {\\operatorname{Cov} (X , Y)}{\\operatorname{Var} (X)},",
+          "image_source": "images/page_446_equation_24.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.26,
+            0.883,
+            0.739,
+            0.923
+          ],
+          "content": "a = E (Y) - b   E (X) = E (Y) - \\frac {\\operatorname{Cov} (X , Y)}{\\operatorname{Var} (X)} \\cdot E (X).",
+          "image_source": "images/page_446_equation_25.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.873,
+            0.895,
+            0.894,
+            0.909
+          ],
+          "content": "\u0003"
+        }
+      ]
+    },
+    {
+      "page_idx": 447,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.038,
+            0.314,
+            0.055
+          ],
+          "content": "Conditional expectation"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.892,
+            0.053
+          ],
+          "content": "431"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.102,
+            0.109,
+            0.79,
+            0.13
+          ],
+          "level": 2,
+          "content": "9.4 \\*Geometric interpretation of conditional expectation"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.147,
+            0.895,
+            0.26
+          ],
+          "content": "This section explains in more detail the geometric perspective shown in Figure 9.6, using some concepts from linear algebra. Consider the vector space consisting of all random variables on a certain probability space, such that the random variables all have finite variance. Each vector or point in the space is a random variable (here we are using “vector” in the linear algebra sense, not in the sense of a random vector from Chapter $7 )$ . Define the inner product of two r.v.s U and $V$ to be"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.415,
+            0.275,
+            0.584,
+            0.297
+          ],
+          "content": "\\langle U, V \\rangle = E (U V).",
+          "image_source": "images/page_447_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.311,
+            0.895,
+            0.349
+          ],
+          "content": "(For this definition to satisfy the axioms for an inner product, we need the convention that two r.v.s are considered the same if they are equal with probability 1.)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.359,
+            0.438,
+            0.377
+          ],
+          "content": "The squared length of an r.v. X is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.382,
+            0.391,
+            0.617,
+            0.414
+          ],
+          "content": "| | X | | ^ {2} = \\langle X, X \\rangle = E X ^ {2},",
+          "image_source": "images/page_447_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.428,
+            0.634,
+            0.446
+          ],
+          "content": "and the squared distance between two r.v.s $U$ and $V$ is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.379,
+            0.461,
+            0.619,
+            0.484
+          ],
+          "content": "| | U - V | | ^ {2} = E (U - V) ^ {2}.",
+          "image_source": "images/page_447_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.497,
+            0.827,
+            0.517
+          ],
+          "content": "The interpretations become especially nice if $E ( U ) = E ( V ) = 0$ , since then:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.096,
+            0.526,
+            0.892,
+            0.603
+          ],
+          "sub_type": "text",
+          "content": "$| | U | | ^ { 2 } = \\operatorname { V a r } ( U )$ , and $| | U | | = \\operatorname { S D } ( U )$\n$\\langle U , V \\rangle = \\mathrm { C o v } ( U , V )$ , and the cosine of the “angle” between U and V is $\\operatorname { C o r r } ( U , V )$\n• $U$ and V are orthogonal $( \\mathrm { i . e . , } ~ \\langle U , V \\rangle = 0 )$ if and only if they are uncorrelated."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.612,
+            0.896,
+            0.747
+          ],
+          "content": "To interpret $E ( Y | X )$ geometrically, consider the space of all random variables (with finite variance) that can be expressed as functions of $X$ . This is a subspace of the vector space. In Figure $9 . 6 ,$ the subspace of random variables of the form $h ( X )$ is represented by a plane. To get $E ( Y | X )$ , we project $Y$ onto the plane. Then the residual $Y - E ( Y | X )$ is orthogonal to $h ( X )$ for all functions $h ,$ and $E ( Y | X )$ is the function of X that best predicts $Y .$ where $`` \\mathrm{best''}$ here means that the mean squared error $E ( Y - g ( X ) ) ^ { 2 }$ is minimized by choosing $g ( X ) = E ( Y | X )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.755,
+            0.895,
+            0.812
+          ],
+          "content": "The projection interpretation is a helpful way to think about many of the properties of conditional expectation. For example, if $Y = h ( X )$ is a function of $X$ , then $Y$ itself is already in the plane, so it is its own projection; this explains why"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.399,
+            0.827,
+            0.599,
+            0.848
+          ],
+          "content": "E (h (X) | X) = h (X).",
+          "image_source": "images/page_447_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.862,
+            0.895,
+            0.919
+          ],
+          "content": "We can think of unconditional expectation as a projection too: $E ( Y )$ can be thought of as $E ( Y | 0 )$ , the projection of $Y$ onto the space of all constants (and indeed, $E ( Y )$ is the constant c that minimizes $E ( Y - c ) ^ { 2 }$ , as we proved in Theorem 6.1.4)."
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Probability, Second Edition",
+      "authors": [
+        "Joseph K. Blitzstein;Jessica Hwang;"
+      ],
+      "created_at": "2019-01-18T11:22:30+05:30",
+      "modified_at": "2019-02-04T21:29:14+05:30",
+      "creator_application": "LaTeX with hyperref",
+      "producer_application": "pdfTeX-1.40.19",
+      "page_count": 636,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 432,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 433,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 434,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 435,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 436,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 437,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 438,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 439,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 440,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 441,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 442,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 443,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 444,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 445,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 446,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 447,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

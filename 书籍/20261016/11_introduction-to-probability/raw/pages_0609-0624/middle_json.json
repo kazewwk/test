@@ -1,0 +1,3807 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Probability, Second Edition",
+      "authors": [
+        "Joseph K. Blitzstein;Jessica Hwang;"
+      ],
+      "created_at": "2019-01-18T11:22:30+05:30",
+      "modified_at": "2019-02-04T21:29:14+05:30",
+      "creator_application": "LaTeX with hyperref",
+      "producer_application": "pdfTeX-1.40.19",
+      "page_count": 636,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 608,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 609,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 610,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 611,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 612,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 613,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 614,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 615,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 616,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 617,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 618,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 619,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 620,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 621,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 622,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 623,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 608,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "592"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.145
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for some "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\times 1"
+            },
+            {
+              "type": "text",
+              "content": " column vector v, where the elements of v are not all zero. The vector v is called an eigenvector of A, or a right eigenvector. (Similarly, a left eigenvector of A is a row vector w satisfying "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { w } A = \\lambda \\mathbf { w }"
+            },
+            {
+              "type": "text",
+              "content": " for some λ.) This definition says that when A and v are multiplied, v just gets stretched by the constant λ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.154,
+            0.897,
+            0.286
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Some matrices have no real eigenvalues, but the Perron-Frobenius theorem tells us that in a special case that is of particular interest to us in Chapter 11, eigenvalues exist and have nice properties. Let A be a square matrix whose entries are nonnegative and whose rows sum to 1. Further assume that for all i and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j ,"
+            },
+            {
+              "type": "text",
+              "content": " there exists "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k \\geq 1"
+            },
+            {
+              "type": "text",
+              "content": " such that the row i, column "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j"
+            },
+            {
+              "type": "text",
+              "content": " entry of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A ^ { k }"
+            },
+            {
+              "type": "text",
+              "content": " is positive. Then the Perron-Frobenius theorem says that 1 is an eigenvalue of A, which is in fact the largest eigenvalue of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A ,"
+            },
+            {
+              "type": "text",
+              "content": " and there is a corresponding eigenvector whose entries are all positive."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.369,
+            0.416,
+            0.389
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.4 Difference equations"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.407,
+            0.896,
+            0.445
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A difference equation describes a sequence of numbers recursively in terms of earlier terms in the sequence. For example, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { 0 } , a _ { 1 } , \\ldots"
+            },
+            {
+              "type": "text",
+              "content": " is a Fibonacci sequence if"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.419,
+            0.464,
+            0.579,
+            0.48
+          ],
+          "image_path": "images/page_608_equation_6.jpg",
+          "content": "a _ {i} = a _ {i - 1} + a _ {i - 2}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.496,
+            0.897,
+            0.572
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i \\geq 2"
+            },
+            {
+              "type": "text",
+              "content": " . There are infinitely many Fibonacci sequences, but such a sequence is uniquely determined after "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { 0 }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " are specified (these are called the initial conditions or boundary conditions). For example, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a_{0}=0,a_{1}=1"
+            },
+            {
+              "type": "text",
+              "content": " yields the Fibonacci sequence 0, 1, 1, 2, 3, 5, 8, 13, . . . ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.103,
+            0.581,
+            0.896,
+            0.619
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Difference equations often arise in probability, especially when applying LOTP. In this section, we will show how to solve difference equations of the form"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.389,
+            0.638,
+            0.609,
+            0.656
+          ],
+          "image_path": "images/page_608_equation_9.jpg",
+          "content": "p _ {i} = p \\cdot p _ {i + 1} + q \\cdot p _ {i - 1},"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.67,
+            0.896,
+            0.723
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p \\neq 0"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q = 1 - p ."
+            },
+            {
+              "type": "text",
+              "content": " (This equation comes up in the gambler’s ruin problem.) The first step is to guess a solution of the form "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p _ { i } = x ^ { i }"
+            },
+            {
+              "type": "text",
+              "content": " . Plugging this into the above, we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.388,
+            0.725,
+            0.61,
+            0.747
+          ],
+          "image_path": "images/page_608_equation_11.jpg",
+          "content": "x ^ {i} = p \\cdot x ^ {i + 1} + q \\cdot x ^ {i - 1},"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.756,
+            0.896,
+            0.829
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "which reduces to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p x ^ { 2 } - x + q = 0"
+            },
+            {
+              "type": "text",
+              "content": " . This is called the characteristic equation, and the solution to the difference equation depends on whether the characteristic equation has one or two distinct roots. If there are two distinct roots "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , then the solution is of the form"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.425,
+            0.831,
+            0.572,
+            0.853
+          ],
+          "image_path": "images/page_608_equation_13.jpg",
+          "content": "p _ {i} = a r _ {1} ^ {i} + b r _ {2} ^ {i},"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.862,
+            0.896,
+            0.897
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for some constants a and b. If there is only one distinct root "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r ,"
+            },
+            {
+              "type": "text",
+              "content": " then the solution is of the form"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.423,
+            0.899,
+            0.573,
+            0.92
+          ],
+          "image_path": "images/page_608_equation_15.jpg",
+          "content": "p _ {i} = a r ^ {i} + b i r ^ {i}."
+        }
+      ]
+    },
+    {
+      "page_idx": 609,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.038,
+            0.155,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Math"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "593"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.734,
+            0.087
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In our case, the characteristic equation has roots 1 and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q / p ,"
+            },
+            {
+              "type": "text",
+              "content": " since"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.243,
+            0.106,
+            0.757,
+            0.149
+          ],
+          "image_path": "images/page_609_equation_3.jpg",
+          "content": "\\frac {1 \\pm \\sqrt {1 - 4 p (1 - p)}}{2 p} = \\frac {1 \\pm \\sqrt {(2 p - 1) ^ {2}}}{2 p} = \\frac {1 \\pm | 2 p - 1 |}{2 p}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.102,
+            0.166,
+            0.896,
+            0.204
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 1 + 2 p - 1 ) / ( 2 p ) = 1 { \\mathrm { ~ o r ~ } } ( 2 - 2 p ) / ( 2 p ) = q / p ."
+            },
+            {
+              "type": "text",
+              "content": " The roots are distinct if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p \\neq q"
+            },
+            {
+              "type": "text",
+              "content": " and are both equal to 1 if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p = q"
+            },
+            {
+              "type": "text",
+              "content": " . So we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.354,
+            0.223,
+            0.632,
+            0.284
+          ],
+          "image_path": "images/page_609_equation_5.jpg",
+          "content": "p _ {i} = \\left\\{ \\begin{array}{l l} a + b \\left(\\frac {q}{p}\\right) ^ {i}, & p \\neq q, \\\\ a + b i, & p = q. \\end{array} \\right."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.303,
+            0.896,
+            0.359
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This is called the general solution of the difference equation, since we have not yet specified the constants a and b. To get a specific solution, we need to know two points in the sequence in order to solve for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a"
+            },
+            {
+              "type": "text",
+              "content": " and b."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.104,
+            0.445,
+            0.429,
+            0.466
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.5 Differential equations"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.486,
+            0.895,
+            0.543
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Differential equations are the continuous version of difference equations. A differential equation uses derivatives to describe a function or collection of functions. For example, the differential equation"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.456,
+            0.561,
+            0.543,
+            0.598
+          ],
+          "image_path": "images/page_609_equation_9.jpg",
+          "content": "\\frac {d y}{d x} = 3 y"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.614,
+            0.896,
+            0.69
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "describes a collection of functions that have the following property: the instantaneous rate of change of the function at any point "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( x , y )"
+            },
+            {
+              "type": "text",
+              "content": " is equal to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "3 y"
+            },
+            {
+              "type": "text",
+              "content": " . This is an example of a separable differential equation because we can separate the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x ^ { \\prime } \\mathrm { s }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y ^ { \\flat } \\mathrm { S } _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " , putting them on opposite sides of the equation:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.449,
+            0.707,
+            0.55,
+            0.746
+          ],
+          "image_path": "images/page_609_equation_11.jpg",
+          "content": "\\frac {d y}{y} = 3 d x."
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.103,
+            0.764,
+            0.784,
+            0.783
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Now we can integrate both sides, giving log "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y = 3 x + c ,"
+            },
+            {
+              "type": "text",
+              "content": " or equivalently,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.449,
+            0.801,
+            0.548,
+            0.823
+          ],
+          "image_path": "images/page_609_equation_13.jpg",
+          "content": "y = C e ^ {3 x},"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.102,
+            0.844,
+            0.896,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "C"
+            },
+            {
+              "type": "text",
+              "content": " is any constant. This is called the general solution of the differential equation, and it tells us that all functions satisfying the differential equation are of the form "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y = C e ^ { 3 x }"
+            },
+            {
+              "type": "text",
+              "content": " for some "
+            },
+            {
+              "type": "equation_inline",
+              "content": "C ."
+            },
+            {
+              "type": "text",
+              "content": " To get a specific solution, we need to specify one point on the graph, which allows us to solve for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "C ."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 610,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "594"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.109,
+            0.392,
+            0.128
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.6 Partial derivatives"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.148,
+            0.896,
+            0.22
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If you can do ordinary derivatives, you can do partial derivatives: just hold all the other input variables constant except for the one you’re differentiating with respect to. For example, let "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f ( x , y ) = y \\sin ( x ^ { 2 }   +   y ^ { 3 } )"
+            },
+            {
+              "type": "text",
+              "content": " . Then the partial derivative with respect to x is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.363,
+            0.219,
+            0.639,
+            0.255
+          ],
+          "image_path": "images/page_610_equation_4.jpg",
+          "content": "\\frac {\\partial f (x , y)}{\\partial x} = 2 x y \\cos (x ^ {2} + y ^ {3}),"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.261,
+            0.545,
+            0.279
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "and the partial derivative with respect to y is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.294,
+            0.292,
+            0.706,
+            0.331
+          ],
+          "image_path": "images/page_610_equation_6.jpg",
+          "content": "\\frac {\\partial f (x , y)}{\\partial y} = \\sin (x ^ {2} + y ^ {3}) + 3 y ^ {3} \\cos (x ^ {2} + y ^ {3})."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.344,
+            0.895,
+            0.382
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "These are first order partial derivatives. If we take a partial derivative of a first order partial derivative, we get a second order partial derivative, such as"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.182,
+            0.394,
+            0.819,
+            0.436
+          ],
+          "image_path": "images/page_610_equation_8.jpg",
+          "content": "\\frac {\\partial^ {2} f (x , y)}{\\partial y \\partial x} = \\frac {\\partial}{\\partial y} \\left(\\frac {\\partial f (x , y)}{\\partial x}\\right) = 2 x (\\cos (x ^ {2} + y ^ {3}) - 3 y ^ {3} \\sin (x ^ {2} + y ^ {3}))."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.102,
+            0.449,
+            0.895,
+            0.486
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We get the same result if we take the partial derivatives in the opposite order (with respect to y and then with respect to x):"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.182,
+            0.501,
+            0.819,
+            0.543
+          ],
+          "image_path": "images/page_610_equation_10.jpg",
+          "content": "\\frac {\\partial^ {2} f (x , y)}{\\partial x \\partial y} = \\frac {\\partial}{\\partial x} \\left(\\frac {\\partial f (x , y)}{\\partial y}\\right) = 2 x (\\cos (x ^ {2} + y ^ {3}) - 3 y ^ {3} \\sin (x ^ {2} + y ^ {3}))."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.104,
+            0.555,
+            0.747,
+            0.573
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Under mild technical assumptions, it is also true for general f that"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.389,
+            0.586,
+            0.611,
+            0.628
+          ],
+          "image_path": "images/page_610_equation_12.jpg",
+          "content": "\\frac {\\partial^ {2} f (x , y)}{\\partial x \\partial y} = \\frac {\\partial^ {2} f (x , y)}{\\partial y \\partial x}."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.102,
+            0.65,
+            0.896,
+            0.688
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Jacobian of a transformation which maps "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( x _ { 1 } , \\ldots , x _ { n } )"
+            },
+            {
+              "type": "text",
+              "content": " to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( y _ { 1 } , \\ldots , y _ { n } )"
+            },
+            {
+              "type": "text",
+              "content": " is the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\times n"
+            },
+            {
+              "type": "text",
+              "content": " matrix of all possible first order partial derivatives, given by"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.34,
+            0.7,
+            0.658,
+            0.776
+          ],
+          "image_path": "images/page_610_equation_14.jpg",
+          "content": "\\frac {\\partial \\mathbf {y}}{\\partial \\mathbf {x}} = \\left( \\begin{array}{c c c c} \\frac {\\partial y _ {1}}{\\partial x _ {1}} & \\frac {\\partial y _ {1}}{\\partial x _ {2}} & \\dots & \\frac {\\partial y _ {1}}{\\partial x _ {n}} \\\\ \\vdots & \\vdots & & \\vdots \\\\ \\frac {\\partial y _ {n}}{\\partial x _ {1}} & \\frac {\\partial y _ {n}}{\\partial x _ {2}} & \\dots & \\frac {\\partial y _ {n}}{\\partial x _ {n}} \\end{array} \\right)."
+        },
+        {
+          "type": "paragraph_title",
+          "index": 15,
+          "bbox": [
+            0.104,
+            0.843,
+            0.387,
+            0.864
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.7 Multiple integrals"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.102,
+            0.881,
+            0.895,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If you can do single integrals, you can do multiple integrals: just do more than one integral, holding variables other than the current variable of integration constant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 611,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.156,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Math"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "595"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.104,
+            0.069,
+            0.232,
+            0.087
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For example,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.241,
+            0.097,
+            0.757,
+            0.265
+          ],
+          "image_path": "images/page_611_equation_3.jpg",
+          "content": "\\begin{array}{l} \\int_ {0} ^ {1} \\int_ {0} ^ {y} (x - y) ^ {2} d x d y = \\int_ {0} ^ {1} \\int_ {0} ^ {y} (x ^ {2} - 2 x y + y ^ {2}) d x d y \\\\ = \\int_ {0} ^ {1} \\left(\\left(x ^ {3} / 3 - x ^ {2} y + x y ^ {2}\\right) \\bigg | _ {0} ^ {y}\\right) d y \\\\ = \\int_ {0} ^ {1} (y ^ {3} / 3 - y ^ {3} + y ^ {3}) d y \\\\ = \\frac {1}{1 2}. \\\\ \\end{array}"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.105,
+            0.294,
+            0.525,
+            0.313
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.7.1 Change of order of integration"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.102,
+            0.331,
+            0.897,
+            0.387
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can also integrate in the other order, dydx rather than "
+            },
+            {
+              "type": "equation_inline",
+              "content": "d x d y ,"
+            },
+            {
+              "type": "text",
+              "content": " as long as we are careful about the limits of integration. Since we’re integrating over all "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( x , y )"
+            },
+            {
+              "type": "text",
+              "content": " with x and y between 0 and 1 such that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x \\leq y"
+            },
+            {
+              "type": "text",
+              "content": " , to integrate the other way we write"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.206,
+            0.395,
+            0.793,
+            0.571
+          ],
+          "image_path": "images/page_611_equation_6.jpg",
+          "content": "\\begin{array}{l} \\int_ {0} ^ {1} \\int_ {x} ^ {1} (x - y) ^ {2} d y d x = \\int_ {0} ^ {1} \\int_ {x} ^ {1} (x ^ {2} - 2 x y + y ^ {2}) d y d x \\\\ = \\int_ {0} ^ {1} \\left(\\left(x ^ {2} y - x y ^ {2} + y ^ {3} / 3\\right) \\Bigg | _ {x} ^ {1}\\right) d x \\\\ = \\int_ {0} ^ {1} (x ^ {2} - x + 1 / 3 - x ^ {3} + x ^ {3} - x ^ {3} / 3) d x \\\\ = \\frac {1}{1 2}. \\\\ \\end{array}"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.105,
+            0.6,
+            0.406,
+            0.618
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.7.2 Change of variables"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.637,
+            0.896,
+            0.713
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In making a change of variables with multiple integrals, a Jacobian is needed. To simplify notation, we will discuss the two-dimensional version; the n-dimensional version is analogous. Suppose we make an invertible transformation from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( x , y )"
+            },
+            {
+              "type": "text",
+              "content": " to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( u , v )"
+            },
+            {
+              "type": "text",
+              "content": " , where the inverse transformation is given by"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.384,
+            0.727,
+            0.614,
+            0.747
+          ],
+          "image_path": "images/page_611_equation_9.jpg",
+          "content": "x = g (u, v), y = h (u, v)."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.76,
+            0.895,
+            0.797
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let A be a region in the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(x,y)  -plane"
+            },
+            {
+              "type": "text",
+              "content": " and B be the corresponding region in the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(u, v)  -plane"
+            },
+            {
+              "type": "text",
+              "content": " . Then the change of variables formulas says that"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.219,
+            0.81,
+            0.781,
+            0.86
+          ],
+          "image_path": "images/page_611_equation_11.jpg",
+          "content": "\\iint_ {A} f (x, y) d x d y = \\iint_ {B} f (g (u, v), h (u, v)) \\cdot | \\left| \\frac {\\partial (x , y)}{\\partial (u , v)} \\right| | d u d v,"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.102,
+            0.874,
+            0.895,
+            0.92
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mid \\left[ \\frac { \\partial ( x ,   y ) } { \\partial ( u ,   v ) } \\right] \\mid"
+            },
+            {
+              "type": "text",
+              "content": " is the absolute value of the determinant of the Jacobian matrix. A few technical assumptions are needed for this result, such as that the partial"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 612,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "596"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.103,
+            0.068,
+            0.893,
+            0.105
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "derivatives that appear in the Jacobian matrix exist and are continuous, and that the determinant of the Jacobian matrix is never 0."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.103,
+            0.115,
+            0.894,
+            0.172
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For example, let’s find the area of a circle of radius 1. To find the area of a region, we just need to integrate 1 over that region (so the part that may be tricky is the limits of integration; the integrand is just 1). So the area is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.226,
+            0.185,
+            0.763,
+            0.242
+          ],
+          "image_path": "images/page_612_equation_4.jpg",
+          "content": "\\iint_ {x ^ {2} + y ^ {2} \\leq 1} 1 d x d y = \\int_ {- 1} ^ {1} \\int_ {- \\sqrt {1 - y ^ {2}}} ^ {\\sqrt {1 - y ^ {2}}} 1 d x d y = 2 \\int_ {- 1} ^ {1} \\sqrt {1 - y ^ {2}} d y."
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.255,
+            0.894,
+            0.331
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that the limits for the inner variable "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( x )"
+            },
+            {
+              "type": "text",
+              "content": " of the double integral can depend on the outer variable "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( y )"
+            },
+            {
+              "type": "text",
+              "content": " , while the outer limits are constants. The last integral can be done with a trigonometric substitution, but instead let’s simplify the problem by transforming to polar coordinates: let"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.389,
+            0.347,
+            0.609,
+            0.366
+          ],
+          "image_path": "images/page_612_equation_6.jpg",
+          "content": "x = r \\cos \\theta , y = r \\sin \\theta ,"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.381,
+            0.894,
+            0.418
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r"
+            },
+            {
+              "type": "text",
+              "content": " is the distance from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( x , y )"
+            },
+            {
+              "type": "text",
+              "content": " to the origin and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta \\in [ 0 , 2 \\pi )"
+            },
+            {
+              "type": "text",
+              "content": " is the angle. The Jacobian matrix of this transformation is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.365,
+            0.429,
+            0.632,
+            0.47
+          ],
+          "image_path": "images/page_612_equation_8.jpg",
+          "content": "\\frac {\\partial (x , y)}{\\partial (r , \\theta)} = \\left( \\begin{array}{c c} \\cos \\theta & - r \\sin \\theta \\\\ \\sin \\theta & r \\cos \\theta , \\end{array} \\right)"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.103,
+            0.484,
+            0.893,
+            0.522
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "so the absolute value of the determinant of the Jacobian is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r ( \\cos ^ { 2 } \\theta + \\sin ^ { 2 } \\theta ) = r"
+            },
+            {
+              "type": "text",
+              "content": " That is, dxdy becomes rdrdθ. So the area of the circle is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.35,
+            0.534,
+            0.649,
+            0.578
+          ],
+          "image_path": "images/page_612_equation_10.jpg",
+          "content": "\\int_ {0} ^ {2 \\pi} \\int_ {0} ^ {1} r d r d \\theta = \\int_ {0} ^ {2 \\pi} \\frac {1}{2} d \\theta = \\pi ."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.591,
+            0.894,
+            0.628
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For a circle of radius "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r ,"
+            },
+            {
+              "type": "text",
+              "content": " it follows immediately that the area is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\pi r ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " since we can convert our units of measurement to the unit for which the radius is 1."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.103,
+            0.638,
+            0.894,
+            0.695
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This may seem like a lot of work just to get such a familiar result, but it served as illustration and with similar methods we can get the volume of a ball in any number of dimensions! It turns out that the volume of a ball of radius 1 in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbb { R } ^ { n }"
+            },
+            {
+              "type": "text",
+              "content": " is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.414,
+            0.704,
+            0.586,
+            0.749
+          ],
+          "image_path": "images/page_612_equation_13.jpg",
+          "content": "V _ {n} = \\frac {\\pi^ {n / 2}}{\\Gamma (n / 2 + 1)},"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.103,
+            0.76,
+            0.595,
+            0.779
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where Γ is the gamma function (see Section A.2.7)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 15,
+          "bbox": [
+            0.104,
+            0.862,
+            0.24,
+            0.881
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.8 Sums"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.103,
+            0.899,
+            0.784,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "There are several kinds of sums that come up frequently in probability."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 613,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.155,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Math"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "597"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.068,
+            0.389,
+            0.085
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.8.1 Binomial theorem"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.105,
+            0.109,
+            0.427,
+            0.126
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The binomial theorem states that"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.368,
+            0.143,
+            0.632,
+            0.192
+          ],
+          "image_path": "images/page_613_equation_4.jpg",
+          "content": "(x + y) ^ {n} = \\sum_ {k = 0} ^ {n} \\binom {n} {k} x ^ {k} y ^ {n - k},"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.211,
+            0.896,
+            0.271
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for any nonnegative integer n. Here "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left( \\begin{matrix} { n } \\\\ { k } \\\\ \\end{matrix} \\right)"
+            },
+            {
+              "type": "text",
+              "content": " is a binomial coefficient, defined as the number of ways to choose k objects out of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n ,"
+            },
+            {
+              "type": "text",
+              "content": " with order not mattering. An explicit formula for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left( \\begin{matrix} { n } \\\\ { k } \\\\ \\end{matrix} \\right)"
+            },
+            {
+              "type": "text",
+              "content": " in terms of factorials for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 \\leq k \\leq n"
+            },
+            {
+              "type": "text",
+              "content": " is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.412,
+            0.287,
+            0.592,
+            0.331
+          ],
+          "image_path": "images/page_613_equation_6.jpg",
+          "content": "\\binom{n}{k} = \\frac{n!}{(n - k)!k!}."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.105,
+            0.347,
+            0.68,
+            0.366
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A proof of the binomial theorem is given in Example 1.4.19."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.104,
+            0.378,
+            0.896,
+            0.473
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Sometimes "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 ^ { 0 }"
+            },
+            {
+              "type": "text",
+              "content": " is said to be undefined, but there are several strong arguments for defining it to be 1, and we will take "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 ^ { 0 } = 1"
+            },
+            {
+              "type": "text",
+              "content": " in this book. For one simple reason for doing so, consider the case "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x = 0,   y = 1"
+            },
+            {
+              "type": "text",
+              "content": " in the binomial theorem. Then the left-hand side is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 ^ { n } = 1"
+            },
+            {
+              "type": "text",
+              "content": " , and we need to have "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 ^ { 0 } = 1"
+            },
+            {
+              "type": "text",
+              "content": " in order to make the right-hand side also equal to 1."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.105,
+            0.51,
+            0.375,
+            0.528
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.8.2 Geometric series"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.104,
+            0.55,
+            0.896,
+            0.588
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A series of the form "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle \\sum _ { n = 0 } ^ { \\infty } x ^ { n }"
+            },
+            {
+              "type": "text",
+              "content": " is called a geometric series. For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "| x | < 1"
+            },
+            {
+              "type": "text",
+              "content": " , the series converges and we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.422,
+            0.592,
+            0.577,
+            0.641
+          ],
+          "image_path": "images/page_613_equation_11.jpg",
+          "content": "\\sum_ {n = 0} ^ {\\infty} x ^ {n} = \\frac {1}{1 - x}."
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.104,
+            0.653,
+            0.894,
+            0.691
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The series diverges if "
+            },
+            {
+              "type": "equation_inline",
+              "content": "| x | \\geq 1"
+            },
+            {
+              "type": "text",
+              "content": " . A series of the same form except with finitely many terms is called a finite geometric series. For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x \\neq 1"
+            },
+            {
+              "type": "text",
+              "content": " , the sum is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.406,
+            0.709,
+            0.592,
+            0.759
+          ],
+          "image_path": "images/page_613_equation_13.jpg",
+          "content": "\\sum_ {k = 0} ^ {n} x ^ {k} = \\frac {1 - x ^ {n + 1}}{1 - x}."
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.104,
+            0.776,
+            0.896,
+            0.853
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n + 1"
+            },
+            {
+              "type": "text",
+              "content": " in the exponent is the number of terms in the sum. If the sum starts at "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k = m"
+            },
+            {
+              "type": "text",
+              "content": " rather than "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k = 0"
+            },
+            {
+              "type": "text",
+              "content": " (where m is an integer with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 \\leq m \\leq n )"
+            },
+            {
+              "type": "text",
+              "content": " , then we can easily reduce to the case where the sum starts at 0. Making the substitution "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j = k - m"
+            },
+            {
+              "type": "text",
+              "content": " , we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.246,
+            0.871,
+            0.753,
+            0.922
+          ],
+          "image_path": "images/page_613_equation_15.jpg",
+          "content": "\\sum_ {k = m} ^ {n} x ^ {k} = \\sum_ {j = 0} ^ {n - m} x ^ {j + m} = x ^ {m} \\sum_ {j = 0} ^ {n - m} x ^ {j} = x ^ {m} \\cdot \\frac {1 - x ^ {n - m + 1}}{1 - x}."
+        }
+      ]
+    },
+    {
+      "page_idx": 614,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "598"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.105,
+            0.068,
+            0.398,
+            0.086
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.8.3 Taylor series for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "e ^ { x }"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.108,
+            0.357,
+            0.126
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Taylor series for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "e ^ { x }"
+            },
+            {
+              "type": "text",
+              "content": " is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.389,
+            0.145,
+            0.609,
+            0.193
+          ],
+          "image_path": "images/page_614_equation_4.jpg",
+          "content": "\\sum_ {n = 0} ^ {\\infty} \\frac {x ^ {n}}{n !} = e ^ {x}, \\text {for all} x."
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.254,
+            0.79,
+            0.273
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.8.4 Harmonic series and other sums with a fixed exponent"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.103,
+            0.293,
+            0.896,
+            0.35
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It is also useful to know that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle \\sum _ { n = 1 } ^ { \\infty } 1 / n ^ { c }"
+            },
+            {
+              "type": "text",
+              "content": " converges for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c > 1"
+            },
+            {
+              "type": "text",
+              "content": " and diverges for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c \\leq 1"
+            },
+            {
+              "type": "text",
+              "content": " For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c = 1"
+            },
+            {
+              "type": "text",
+              "content": " , this is called the harmonic series. The sum of the first n terms of the harmonic series can be approximated using"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.406,
+            0.368,
+            0.592,
+            0.416
+          ],
+          "image_path": "images/page_614_equation_7.jpg",
+          "content": "\\sum_ {k = 1} ^ {n} \\frac {1}{k} \\approx \\log (n) + \\gamma"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.104,
+            0.433,
+            0.701,
+            0.451
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for n large, where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\gamma \\approx 0 . 5 7 7"
+            },
+            {
+              "type": "text",
+              "content": " is the Euler-Mascheroni constant."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.104,
+            0.464,
+            0.504,
+            0.482
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The sum of the first n positive integers is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.347,
+            0.501,
+            0.651,
+            0.548
+          ],
+          "image_path": "images/page_614_equation_10.jpg",
+          "content": "\\sum_ {k = 1} ^ {n} k = n (n + 1) / 2 = \\binom{n + 1}{2}."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.103,
+            0.566,
+            0.895,
+            0.603
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It follows from this identity, for example, that the sum of the first n odd positive integers is"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.256,
+            0.605,
+            0.742,
+            0.655
+          ],
+          "image_path": "images/page_614_equation_12.jpg",
+          "content": "\\sum_ {k = 1} ^ {n} (2 k - 1) = 2 \\sum_ {k = 1} ^ {n} k - \\sum_ {k = 1} ^ {n} 1 = n (n + 1) - n = n ^ {2}."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.104,
+            0.679,
+            0.412,
+            0.696
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For squares of integers, we have"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.359,
+            0.715,
+            0.639,
+            0.763
+          ],
+          "image_path": "images/page_614_equation_14.jpg",
+          "content": "\\sum_ {k = 1} ^ {n} k ^ {2} = n (n + 1) (2 n + 1) / 6."
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.103,
+            0.78,
+            0.895,
+            0.817
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For cubes of integers, amazingly, the sum is the square of the sum of the first n positive integers! That is,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.384,
+            0.835,
+            0.612,
+            0.883
+          ],
+          "image_path": "images/page_614_equation_16.jpg",
+          "content": "\\sum_ {k = 1} ^ {n} k ^ {3} = (n (n + 1) / 2) ^ {2}."
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.104,
+            0.9,
+            0.714,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Exercise 22 from Chapter 1 asks for a story proof of this result."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 615,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.155,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Math"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "599"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.104,
+            0.109,
+            0.406,
+            0.129
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.9 Pattern recognition"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.147,
+            0.896,
+            0.278
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Much of math and statistics is really about pattern recognition: seeing the essential structure of a problem, recognizing when one problem is essentially the same as another problem (just in a different guise), noticing symmetry, and so on. We will see many examples of this kind of thinking in this book. For example, suppose we have the series "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\begin{array} { r } { \\sum _ { k = 0 } ^ { \\infty } e ^ { t k } e ^ { - \\lambda } \\lambda ^ { k } / k ! } \\end{array}"
+            },
+            {
+              "type": "text",
+              "content": " , with λ a positive constant. The "
+            },
+            {
+              "type": "equation_inline",
+              "content": "e ^ { - \\lambda }"
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "text",
+              "content": "can",
+              "styles": [
+                "subscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " be taken out from the sum, and then the structure of the series exactly matches up with the structure of the Taylor series for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "e ^ { x }"
+            },
+            {
+              "type": "text",
+              "content": " . Therefore"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.25,
+            0.287,
+            0.748,
+            0.336
+          ],
+          "image_path": "images/page_615_equation_4.jpg",
+          "content": "\\sum_ {k = 0} ^ {\\infty} \\frac {e ^ {t k} e ^ {- \\lambda} \\lambda^ {k}}{k !} = e ^ {- \\lambda} \\sum_ {k = 0} ^ {\\infty} \\frac {(\\lambda e ^ {t}) ^ {k}}{k !} = e ^ {- \\lambda} e ^ {\\lambda e ^ {t}} = e ^ {\\lambda (e ^ {t} - 1)},"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.104,
+            0.345,
+            0.281,
+            0.362
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "valid for all real t."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.102,
+            0.373,
+            0.896,
+            0.429
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Similarly, suppose we want the Taylor series for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 / ( 1 - x ^ { 3 } )"
+            },
+            {
+              "type": "text",
+              "content": " about "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x = 0"
+            },
+            {
+              "type": "text",
+              "content": " . It would be tedious to start taking derivatives of this function. Instead, note that this function is reminiscent of the result of summing a geometric series. Therefore"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.414,
+            0.439,
+            0.586,
+            0.487
+          ],
+          "image_path": "images/page_615_equation_7.jpg",
+          "content": "\\frac {1}{1 - x ^ {3}} = \\sum_ {n = 0} ^ {\\infty} x ^ {3 n},"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.497,
+            0.894,
+            0.534
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "| x ^ { 3 } |   <   1"
+            },
+            {
+              "type": "text",
+              "content": " (which is equivalent to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "| x |   <   1 )"
+            },
+            {
+              "type": "text",
+              "content": " . What matters is the structure, not what names we use for variables!"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.104,
+            0.618,
+            0.627,
+            0.638
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A.10 Common sense and checking answers"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.655,
+            0.894,
+            0.693
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It is very easy to make mistakes in probability, so checking answers is especially important. Some useful strategies for checking answers are:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 11,
+          "bbox": [
+            0.099,
+            0.703,
+            0.892,
+            0.918
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.099,
+                0.703,
+                0.892,
+                0.74
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• seeing whether the answer makes sense intuitively (though as we have often seen in this book, probability has many results that seem counterintuitive at first);"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 13,
+              "bbox": [
+                0.099,
+                0.75,
+                0.576,
+                0.767
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• making sure your answer isn’t a category error;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 14,
+              "bbox": [
+                0.099,
+                0.778,
+                0.507,
+                0.795
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• making sure you’re avoiding biohazards;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 15,
+              "bbox": [
+                0.099,
+                0.807,
+                0.35,
+                0.823
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• trying out simple cases;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 16,
+              "bbox": [
+                0.099,
+                0.836,
+                0.365,
+                0.851
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• trying out extreme cases;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 17,
+              "bbox": [
+                0.099,
+                0.863,
+                0.894,
+                0.918
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• looking for alternative methods to solve the problem (including methods that may only give a bound or approximation, such as applying one of the inequalities from Chapter 10 or using R to run a simulation)."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        }
+      ]
+    },
+    {
+      "page_idx": 616,
+      "blocks": [
+        {
+          "type": "image",
+          "index": 0,
+          "bbox": [
+            0.288,
+            0.291,
+            0.393,
+            0.364
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 0,
+              "bbox": [
+                0.288,
+                0.291,
+                0.393,
+                0.364
+              ],
+              "image_path": "images/page_616_image_0.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.403,
+            0.3,
+            0.717,
+            0.336
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Taylor & Francis"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.405,
+            0.337,
+            0.635,
+            0.355
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Taylor & Francis Group"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.405,
+            0.357,
+            0.598,
+            0.371
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "http://taylorandfrancis.com"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 617,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.061,
+            0.148,
+            0.09
+          ],
+          "content": []
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.107,
+            0.116,
+            0.136,
+            0.139
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "R"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.104,
+            0.302,
+            0.265,
+            0.32
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "B.1 Vectors"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "table",
+          "index": 3,
+          "bbox": [
+            0.202,
+            0.379,
+            0.797,
+            0.915
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 3,
+              "bbox": [
+                0.202,
+                0.379,
+                0.797,
+                0.915
+              ],
+              "image_path": "images/page_617_table_3.jpg",
+              "content": "<table><tr><td>Command</td><td>What it does</td></tr><tr><td>c(1,1,0,2.7,3.1)</td><td>creates the vector (1,1,0,2.7,3.1)</td></tr><tr><td>1:100</td><td>creates the vector (1,2,...,100)</td></tr><tr><td>(1:100)^3</td><td>creates the vector (<eq>1^3</eq>,<eq>2^3</eq>,...,<eq>100^3</eq>)</td></tr><tr><td>rep(0,50)</td><td>creates the vector (0,0,...,0) of length 50</td></tr><tr><td>seq(0,99,3)</td><td>creates the vector (0,3,6,9,...,99)</td></tr><tr><td>v[5]</td><td>5th entry of vector v (index starts at 1)</td></tr><tr><td>v[-5]</td><td>all but the 5th entry of v</td></tr><tr><td>v[c(3,1,4)]</td><td>3rd, 1st, 4th entries of vector v</td></tr><tr><td>v[v&gt;2]</td><td>entries of v that exceed 2</td></tr><tr><td>which(v&gt;2)</td><td>indices of v such that entry exceeds 2</td></tr><tr><td>which(v==7)</td><td>indices of v such that entry equals 7</td></tr><tr><td>min(v)</td><td>minimum of v</td></tr><tr><td>max(v)</td><td>maximum of v</td></tr><tr><td>which.max(v)</td><td>indices where max(v) is achieved</td></tr><tr><td>sum(v)</td><td>sum of the entries in v</td></tr><tr><td>cumsum(v)</td><td>cumulative sums of the entries in v</td></tr><tr><td>prod(v)</td><td>product of the entries in v</td></tr><tr><td>rank(v)</td><td>ranks of the entries in v</td></tr><tr><td>length(v)</td><td>length of vector v</td></tr><tr><td>sort(v)</td><td>sorts vector v (in increasing order)</td></tr><tr><td>unique(v)</td><td>lists each element of v once, without duplicates</td></tr><tr><td>tabulate(v)</td><td>tallies how many times each element of v occurs</td></tr><tr><td>table(v)</td><td>same as tabulate(v), except in table format</td></tr><tr><td>c(v,w)</td><td>concatenates vectors v and w</td></tr><tr><td>union(v,w)</td><td>union of v and w as sets</td></tr><tr><td>intersect(v,w)</td><td>intersection of v and w as sets</td></tr><tr><td>v+w</td><td>adds v and w entrywise (recycling if needed)</td></tr><tr><td>v*w</td><td>multiplies v and w entrywise (recycling if needed)</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 4,
+          "bbox": [
+            0.861,
+            0.936,
+            0.894,
+            0.95
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "601"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 618,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.14,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "602"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 3,
+          "bbox": [
+            0.115,
+            0.152,
+            0.885,
+            0.509
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 2,
+              "bbox": [
+                0.105,
+                0.11,
+                0.279,
+                0.128
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "B.2 Matrices"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 3,
+              "bbox": [
+                0.115,
+                0.152,
+                0.885,
+                0.509
+              ],
+              "image_path": "images/page_618_table_3.jpg",
+              "content": "<table><tr><td>Command</td><td>What it does</td></tr><tr><td>matrix(c(1,3,5,7), nrow=2, ncol=2)</td><td>creates the matrix <eq>\\begin{pmatrix} 1 &amp; 5 \\\\ 3 &amp; 7 \\end{pmatrix}</eq></td></tr><tr><td>dim(A)</td><td>gives the dimensions of matrix A</td></tr><tr><td>diag(A)</td><td>extracts the diagonal of matrix A</td></tr><tr><td>diag(c(1,7))</td><td>creates the diagonal matrix <eq>\\begin{pmatrix} 1 &amp; 0 \\\\ 0 &amp; 7 \\end{pmatrix}</eq></td></tr><tr><td>rbind(u,v,w)</td><td>binds vectors u,v,w into a matrix, as rows</td></tr><tr><td>cbind(u,v,w)</td><td>binds vectors u,v,w into a matrix, as columns</td></tr><tr><td>t(A)</td><td>transpose of matrix A</td></tr><tr><td>A[2,3]</td><td>row 2, column 3 entry of matrix A</td></tr><tr><td>A[2,]</td><td>row 2 of matrix A (as a vector)</td></tr><tr><td>A[,3]</td><td>column 3 of matrix A (as a vector)</td></tr><tr><td>A[c(1,3),c(2,4)]</td><td>submatrix of A, keeping rows 1,3 and columns 2,4</td></tr><tr><td>rowSums(A)</td><td>row sums of matrix A</td></tr><tr><td>rowMeans(A)</td><td>row averages of matrix A</td></tr><tr><td>colSums(A)</td><td>column averages of matrix A</td></tr><tr><td>colMeans(A)</td><td>column means of matrix A</td></tr><tr><td>eigen(A)</td><td>eigenvalues and eigenvectors of matrix A</td></tr><tr><td>solve(A)</td><td><eq>A^{-1}</eq></td></tr><tr><td>solve(A,b)</td><td>solves Ax = b for x (where b is a column vector)</td></tr><tr><td>A %*% B</td><td>matrix multiplication AB</td></tr><tr><td>A %~% k</td><td>matrix power <eq>A^{k}</eq> (using expm package)</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 5,
+          "bbox": [
+            0.117,
+            0.62,
+            0.884,
+            0.916
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 4,
+              "bbox": [
+                0.105,
+                0.578,
+                0.24,
+                0.596
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "B.3 Math"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 5,
+              "bbox": [
+                0.117,
+                0.62,
+                0.884,
+                0.916
+              ],
+              "image_path": "images/page_618_table_5.jpg",
+              "content": "<table><tr><td>Command</td><td>What it does</td></tr><tr><td>abs(x)</td><td><eq>|x|</eq></td></tr><tr><td>exp(x)</td><td><eq>e^{x}</eq></td></tr><tr><td>log(x)</td><td><eq>\\log(n)</eq></td></tr><tr><td>log(x,b)</td><td><eq>\\log_{b}(n)</eq></td></tr><tr><td>sqrt(x)</td><td><eq>\\sqrt{x}</eq></td></tr><tr><td>floor(x)</td><td><eq>\\lfloor x \\rfloor</eq></td></tr><tr><td>ceiling(x)</td><td><eq>\\lceil x \\rceil</eq></td></tr><tr><td>factorial(n)</td><td><eq>n!</eq></td></tr><tr><td>lfactorial(n)</td><td><eq>\\log(n!)</eq> (helps prevent overflow)</td></tr><tr><td>gamma(a)</td><td><eq>\\Gamma(a)</eq></td></tr><tr><td>lgamma(a)</td><td><eq>\\log(\\Gamma(a))</eq> (helps prevent overflow)</td></tr><tr><td>choose(n,k)</td><td>binomial coefficient <eq>\\binom{n}{k}</eq></td></tr><tr><td>pbirthday(k)</td><td>solves birthday problem for k people</td></tr><tr><td>if (x&gt;0) x^2 else x^3</td><td><eq>x^{2}</eq> if <eq>x &gt; 0</eq>, <eq>x^{3}</eq> otherwise (piecewise)</td></tr><tr><td>f &lt;- function(x) exp(-x)</td><td>defines the function f by <eq>f(x) = e^{-x}</eq></td></tr><tr><td>integrate(f, lower=0, upper=Inf)</td><td>finds <eq>\\int_{0}^{\\infty} f(x) dx</eq> numerically</td></tr><tr><td>optimize(f,lower=0,upper=5,maximum=TRUE)</td><td>maximizes f numerically on [0,5]</td></tr><tr><td>uniroot(f, lower=0, upper=5)</td><td>searches numerically for a zero of f in [0,5]</td></tr></table>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 619,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.039,
+            0.127,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "R"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "603"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.104,
+            0.126,
+            0.468,
+            0.146
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "B.4 Sampling and simulation"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "table",
+          "index": 3,
+          "bbox": [
+            0.115,
+            0.201,
+            0.887,
+            0.299
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 3,
+              "bbox": [
+                0.115,
+                0.201,
+                0.887,
+                0.299
+              ],
+              "image_path": "images/page_619_table_3.jpg",
+              "content": "<table><tr><td>Command</td><td>What it does</td></tr><tr><td>sample(7)</td><td>random permutation of 1,2,...,7</td></tr><tr><td>sample(52,5)</td><td>picks 5 times from 1,2,...,52 (don’t replace)</td></tr><tr><td>sample(letters,5)</td><td>picks 5 random letters of the alphabet (don’t replace)</td></tr><tr><td>sample(3,5,replace=TRUE,prob=p)</td><td>picks 5 times from 1,2,3 with probabilities p (replace)</td></tr><tr><td>replicate(10^4,experiment)</td><td>simulates 10^4 runs of experiment</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.384,
+            0.275,
+            0.404
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "B.5 Plotting"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "table",
+          "index": 5,
+          "bbox": [
+            0.107,
+            0.472,
+            0.903,
+            0.63
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 5,
+              "bbox": [
+                0.107,
+                0.472,
+                0.903,
+                0.63
+              ],
+              "image_path": "images/page_619_table_5.jpg",
+              "content": "<table><tr><td>Command</td><td>What it does</td></tr><tr><td>curve(f, from=a, to=b)</td><td>graphs the function f from a to b</td></tr><tr><td>plot(x,y)</td><td>creates scatter plot of the points (xi,yi)</td></tr><tr><td>plot(x,y,type=&quot;l&quot;)</td><td>creates line plot of the points (xi,yi)</td></tr><tr><td>points(x,y)</td><td>adds the points (xi,yi) to the plot</td></tr><tr><td>lines(x,y)</td><td>adds line segments through the (xi,yi) to the plot</td></tr><tr><td>abline(a,b)</td><td>adds the line with intercept a, slope b to the plot</td></tr><tr><td>hist(x, breaks=b, col=&quot;blue&quot;)</td><td>blue histogram of the values in x, with b bins suggested</td></tr><tr><td>par(new=TRUE)</td><td>tells R not to clear the palette when we make our next plot</td></tr><tr><td>par(mfrow=c(1,2))</td><td>tells R we want 2 side-by-side plots (a 1 by 2 array of plots)</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.104,
+            0.715,
+            0.339,
+            0.736
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "B.6 Programming"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "table",
+          "index": 7,
+          "bbox": [
+            0.106,
+            0.803,
+            0.922,
+            0.916
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 7,
+              "bbox": [
+                0.106,
+                0.803,
+                0.922,
+                0.916
+              ],
+              "image_path": "images/page_619_table_7.jpg",
+              "content": "<table><tr><td>Command</td><td>What it does</td></tr><tr><td>x &lt;- pi</td><td>sets x equal to π</td></tr><tr><td>x&gt;3 &amp;&amp; x&lt;5</td><td>Is x &gt; 3 and x &lt; 5? (TRUE/FALSE)</td></tr><tr><td>x&gt;3 || x&lt;5</td><td>Is x &gt; 3 or x &lt; 5? (TRUE/FALSE)</td></tr><tr><td>if (n&gt;3) x &lt;- x+1</td><td>adds 1 to x if n &gt; 3</td></tr><tr><td>if (n==0) x &lt;- x+1 else x &lt;- x+2</td><td>adds 1 to x if n = 0, else adds 2</td></tr><tr><td>v&lt;-rep(0,50); for (k in 1:50) v[k]&lt;-pbirthday(k)</td><td>solves birthday problem up to 50 people</td></tr></table>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 620,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "604"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introduction to Probability"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.104,
+            0.109,
+            0.4,
+            0.129
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "B.7 Summary statistics"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "table",
+          "index": 3,
+          "bbox": [
+            0.195,
+            0.153,
+            0.805,
+            0.296
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 3,
+              "bbox": [
+                0.195,
+                0.153,
+                0.805,
+                0.296
+              ],
+              "image_path": "images/page_620_table_3.jpg",
+              "content": "<table><tr><td>Command</td><td>What it does</td></tr><tr><td>mean(v)</td><td>sample mean of vector v</td></tr><tr><td>var(v)</td><td>sample variance of vector v</td></tr><tr><td>sd(v)</td><td>sample standard deviation of vector v</td></tr><tr><td>median(v)</td><td>sample median of vector v</td></tr><tr><td>summary(v)</td><td>min, 1st quartile, median, mean, 3rd quartile, max of v</td></tr><tr><td>quantile(v,p)</td><td>pth sample quantile of vector v</td></tr><tr><td>cov(v,w)</td><td>sample covariance of vectors v and w</td></tr><tr><td>cor(v,w)</td><td>sample correlation of vectors v and w</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.365,
+            0.331,
+            0.383
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "B.8 Distributions"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "table",
+          "index": 5,
+          "bbox": [
+            0.188,
+            0.405,
+            0.813,
+            0.715
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 5,
+              "bbox": [
+                0.188,
+                0.405,
+                0.813,
+                0.715
+              ],
+              "image_path": "images/page_620_table_5.jpg",
+              "content": "<table><tr><td>Command</td><td>What it does</td></tr><tr><td>help(distributions)</td><td>shows documentation on distributions</td></tr><tr><td>dbinom(k,n,p)</td><td>PMF <eq>P(X = k)</eq> for <eq>X \\sim \\text{Bin}(n, p)</eq></td></tr><tr><td>pbinom(x,n,p)</td><td>CDF <eq>P(X \\leq x)</eq> for <eq>X \\sim \\text{Bin}(n, p)</eq></td></tr><tr><td>qbinom(a,n,p)</td><td>quantile <eq>\\min\\{x : P(X \\leq x) \\geq a\\}</eq> for <eq>X \\sim \\text{Bin}(n, p)</eq></td></tr><tr><td>rbinom(r,n,p)</td><td>vector of r i.i.d. Bin(n,p) r.v.s</td></tr><tr><td>dgeom(k,p)</td><td>PMF <eq>P(X = k)</eq> for <eq>X \\sim \\text{Geom}(p)</eq></td></tr><tr><td>dhyper(k,w,b,n)</td><td>PMF <eq>P(X = k)</eq> for <eq>X \\sim \\text{HGeom}(w, b, n)</eq></td></tr><tr><td>dnbinom(k,r,p)</td><td>PMF <eq>P(X = k)</eq> for <eq>X \\sim \\text{NBin}(r, p)</eq></td></tr><tr><td>dpois(k,r)</td><td>PMF <eq>P(X = k)</eq> for <eq>X \\sim \\text{Pois}(r)</eq></td></tr><tr><td>dbeta(x,a,b)</td><td>PDF <eq>f(x)</eq> for <eq>X \\sim \\text{Beta}(a, b)</eq></td></tr><tr><td>dcauchy(x)</td><td>PDF <eq>f(x)</eq> for <eq>X \\sim \\text{Cauchy}</eq></td></tr><tr><td>dchisq(x,n)</td><td>PDF <eq>f(x)</eq> for <eq>X \\sim \\chi_{n}^{2}</eq></td></tr><tr><td>dexp(x,r)</td><td>PDF <eq>f(x)</eq> for <eq>X \\sim \\text{Expo}(r)</eq></td></tr><tr><td>dgamma(x,a,r)</td><td>PDF <eq>f(x)</eq> for <eq>X \\sim \\text{Gamma}(a, r)</eq></td></tr><tr><td>dlnorm(x,m,s)</td><td>PDF <eq>f(x)</eq> for <eq>X \\sim \\mathcal{LN}(m, s^{2})</eq></td></tr><tr><td>dnorm(x,m,s)</td><td>PDF <eq>f(x)</eq> for <eq>X \\sim \\mathcal{N}(m, s^{2})</eq></td></tr><tr><td>dt(x,n)</td><td>PDF <eq>f(x)</eq> for <eq>X \\sim t_{n}</eq></td></tr><tr><td>dunif(x,a,b)</td><td>PDF <eq>f(x)</eq> for <eq>X \\sim \\text{Unif}(a, b)</eq></td></tr><tr><td>dweibull(x,a,b)</td><td>PDF <eq>f(x)</eq> for <eq>X \\sim \\text{Weibull}(b^{-a}, a)</eq></td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.101,
+            0.73,
+            0.896,
+            0.823
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "There are commands that are completely analogous to pbinom, qbinom, and rbinom for the other distributions appearing in the above table. For example, pnorm, qnorm, and rnorm can be used to get the CDF, the quantiles, and random generation for the Normal (note that the mean and standard deviation need to be provided as the parameters, rather than the mean and variance)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.101,
+            0.833,
+            0.896,
+            0.909
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For the Multinomial, dmultinom can be used for calculating the joint PMF and rmultinom can be used for generating random vectors. For the Multivariate Normal, after installing and loading the mvtnorm package, dmvnorm can be used for calculating the joint PDF and rmvnorm can be used for random generation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 621,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.108,
+            0.061,
+            0.15,
+            0.09
+          ],
+          "content": []
+        },
+        {
+          "type": "table",
+          "index": 2,
+          "bbox": [
+            0.119,
+            0.224,
+            0.88,
+            0.885
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 1,
+              "bbox": [
+                0.107,
+                0.116,
+                0.427,
+                0.14
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Table of distributions"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 2,
+              "bbox": [
+                0.119,
+                0.224,
+                0.88,
+                0.885
+              ],
+              "image_path": "images/page_621_table_2.jpg",
+              "content": "<table><tr><td>Name</td><td>Param.</td><td>PMF or PDF</td><td>Mean</td><td>Variance</td></tr><tr><td>Bernoulli</td><td><eq>p</eq></td><td><eq>P(X = 1) = p, P(X = 0) = q</eq></td><td><eq>p</eq></td><td><eq>pq</eq></td></tr><tr><td>Binomial</td><td><eq>n, p</eq></td><td><eq>\\binom{n}{k} p^{k} q^{n-k}, k \\in \\{0, 1, \\dots, n\\}</eq></td><td><eq>np</eq></td><td><eq>npq</eq></td></tr><tr><td>FS</td><td><eq>p</eq></td><td><eq>pq^{k-1}, k \\in \\{1, 2, \\dots\\}</eq></td><td><eq>1/p</eq></td><td><eq>q/p^{2}</eq></td></tr><tr><td>Geom</td><td><eq>p</eq></td><td><eq>pq^{k}, k \\in \\{0, 1, 2, \\dots\\}</eq></td><td><eq>q/p</eq></td><td><eq>q/p^{2}</eq></td></tr><tr><td>NBin</td><td><eq>r, p</eq></td><td><eq>\\binom{r+k-1}{r-1} p^{r} q^{k}, k \\in \\{0, 1, 2, \\dots\\}</eq></td><td><eq>rq/p</eq></td><td><eq>rq/p^{2}</eq></td></tr><tr><td>HGeom</td><td><eq>w, b, n</eq></td><td><eq>\\frac{\\binom{w}{k}\\binom{b}{n-k}}{\\binom{w+b}{n}}, k \\in \\{0, 1, \\dots, n\\}</eq></td><td><eq>\\mu = \\frac{nw}{w+b}</eq></td><td><eq>(\\frac{w+b-n}{w+b-1}) \\mu (1 - \\frac{\\mu}{n})</eq></td></tr><tr><td>NHGeom</td><td><eq>w, b, r</eq></td><td><eq>\\frac{\\binom{r+k-1}{r-1}\\binom{w+b-r-k}{w-r}}{\\binom{w+b}{w}}, k \\in \\{0, 1, \\dots, b\\}</eq></td><td><eq>\\frac{rb}{w+1}</eq></td><td><eq>\\frac{rb(w+b+1)(w-r+1)}{(w+1)^{2}(w+2)}</eq></td></tr><tr><td>Poisson</td><td><eq>\\lambda</eq></td><td><eq>\\frac{e^{-\\lambda} \\lambda^{k}}{k!}, k \\in \\{0, 1, 2, \\dots\\}</eq></td><td><eq>\\lambda</eq></td><td><eq>\\lambda</eq></td></tr><tr><td>Uniform</td><td><eq>a &lt; b</eq></td><td><eq>\\frac{1}{b-a}, x \\in (a, b)</eq></td><td><eq>\\frac{a+b}{2}</eq></td><td><eq>\\frac{(b-a)^{2}}{12}</eq></td></tr><tr><td>Normal</td><td><eq>\\mu, \\sigma^{2}</eq></td><td><eq>\\frac{1}{\\sigma \\sqrt{2\\pi}} e^{-(x-\\mu)^{2}/(2\\sigma^{2})}</eq></td><td><eq>\\mu</eq></td><td><eq>\\sigma^{2}</eq></td></tr><tr><td>Log-Normal</td><td><eq>\\mu, \\sigma^{2}</eq></td><td><eq>\\frac{1}{x\\sigma\\sqrt{2\\pi}} e^{-(\\log x-\\mu)^{2}/(2\\sigma^{2})}, x &gt; 0</eq></td><td><eq>\\theta = e^{\\mu+\\sigma^{2}/2}</eq></td><td><eq>\\theta^{2}(e^{\\sigma^{2}} - 1)</eq></td></tr><tr><td>Expo</td><td><eq>\\lambda</eq></td><td><eq>\\lambda e^{-\\lambda x}, x &gt; 0</eq></td><td><eq>1/\\lambda</eq></td><td><eq>1/\\lambda^{2}</eq></td></tr><tr><td>Weibull</td><td><eq>\\lambda, \\gamma</eq></td><td><eq>\\gamma \\lambda e^{-\\lambda x^{\\gamma}} x^{\\gamma-1}, x &gt; 0</eq></td><td><eq>\\mu = \\frac{\\Gamma(1+1/\\gamma)}{\\lambda^{1/\\gamma}}</eq></td><td><eq>\\frac{\\Gamma(1+2/\\gamma)}{\\lambda^{2/\\gamma}} - \\mu^{2}</eq></td></tr><tr><td>Gamma</td><td><eq>a, \\lambda</eq></td><td><eq>\\Gamma(a)^{-1}(\\lambda x)^{a} e^{-\\lambda x} x^{-1}, x &gt; 0</eq></td><td><eq>a/\\lambda</eq></td><td><eq>a/\\lambda^{2}</eq></td></tr><tr><td>Beta</td><td><eq>a, b</eq></td><td><eq>\\frac{\\Gamma(a+b)}{\\Gamma(a)\\Gamma(b)} x^{a-1}(1 - x)^{b-1}, 0 &lt; x &lt; 1</eq></td><td><eq>\\mu = \\frac{a}{a+b}</eq></td><td><eq>\\frac{\\mu(1-\\mu)}{a+b+1}</eq></td></tr><tr><td>Chi-Square</td><td><eq>n</eq></td><td><eq>\\frac{1}{2^{n/2}\\Gamma(n/2)} x^{n/2-1} e^{-x/2}, x &gt; 0</eq></td><td><eq>n</eq></td><td><eq>2n</eq></td></tr><tr><td>Student-<eq>t</eq></td><td><eq>n</eq></td><td><eq>\\frac{\\Gamma((n+1)/2)}{\\sqrt{n\\pi}\\Gamma(n/2)} (1 + x^{2}/n)^{-(n+1)/2}</eq></td><td><eq>0</eq> if <eq>n &gt; 1</eq></td><td><eq>\\frac{n}{n-2}</eq> if <eq>n &gt; 2</eq></td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 3,
+          "bbox": [
+            0.861,
+            0.936,
+            0.894,
+            0.949
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "605"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 622,
+      "blocks": [
+        {
+          "type": "image",
+          "index": 0,
+          "bbox": [
+            0.288,
+            0.291,
+            0.393,
+            0.364
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 0,
+              "bbox": [
+                0.288,
+                0.291,
+                0.393,
+                0.364
+              ],
+              "image_path": "images/page_622_image_0.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.403,
+            0.3,
+            0.717,
+            0.336
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Taylor & Francis"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.405,
+            0.337,
+            0.635,
+            0.355
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Taylor & Francis Group"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.405,
+            0.357,
+            0.598,
+            0.371
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "http://taylorandfrancis.com"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 623,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "index": 0,
+          "bbox": [
+            0.107,
+            0.113,
+            0.296,
+            0.136
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "References"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "list",
+          "index": 1,
+          "bbox": [
+            0.103,
+            0.214,
+            0.902,
+            0.919
+          ],
+          "content": [
+            {
+              "type": "ref_text",
+              "index": 2,
+              "bbox": [
+                0.118,
+                0.216,
+                0.895,
+                0.255
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[1] Donald J. Albers and Gerald L. Alexanderson. More Mathematical People: Contemporary Conversations. Academic Press, 1990."
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 3,
+              "bbox": [
+                0.118,
+                0.266,
+                0.899,
+                0.303
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[2] Steve Brooks, Andrew Gelman, Galin Jones, and Xiao-Li Meng. Handbook of Markov Chain Monte Carlo. CRC Press, 2011."
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 4,
+              "bbox": [
+                0.118,
+                0.316,
+                0.895,
+                0.354
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[3] Jian Chen and Jeffrey S. Rosenthal. Decrypting classical cipher text using Markov chain Monte Carlo. Statistics and Computing, 22(2):397–413, 2012."
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 5,
+              "bbox": [
+                0.118,
+                0.366,
+                0.893,
+                0.403
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[4] William G. Cochran. The effectiveness of adjustment by subclassification in removing bias in observational studies. Biometrics, 1968."
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 6,
+              "bbox": [
+                0.118,
+                0.415,
+                0.895,
+                0.452
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[5] Persi Diaconis. Statistical problems in ESP research. Science, 201(4351):131–136, 1978."
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 7,
+              "bbox": [
+                0.118,
+                0.465,
+                0.895,
+                0.503
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[6] Persi Diaconis. The Markov chain Monte Carlo revolution. Bulletin of the American Mathematical Society, 46(2):179–205, 2009."
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 8,
+              "bbox": [
+                0.118,
+                0.514,
+                0.893,
+                0.552
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[7] Persi Diaconis, Susan Holmes, and Richard Montgomery. Dynamical bias in the coin toss. SIAM Review, 49(2):211–235, 2007."
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 9,
+              "bbox": [
+                0.118,
+                0.564,
+                0.893,
+                0.603
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[8] Bradley Efron and Ronald Thisted. Estimating the number of unseen species: How many words did Shakespeare know? Biometrika, 63(3):435, 1976."
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 10,
+              "bbox": [
+                0.118,
+                0.614,
+                0.893,
+                0.651
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[9] Bradley Efron and Ronald Thisted. Did Shakespeare write a newly-discovered poem? Biometrika, 74:445–455, 1987."
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 11,
+              "bbox": [
+                0.106,
+                0.663,
+                0.893,
+                0.701
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[10] Andrew Gelman, John B. Carlin, Hal S. Stern, David B. Dunson, Aki Vehtari, and Donald B. Rubin. Bayesian Data Analysis. CRC Press, 2013."
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 12,
+              "bbox": [
+                0.106,
+                0.713,
+                0.895,
+                0.75
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[11] Andrew Gelman and Deborah Nolan. You can load a die, but you can’t bias a coin. The American Statistician, 56(4):308–311, 2002."
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 13,
+              "bbox": [
+                0.106,
+                0.762,
+                0.895,
+                0.82
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[12] Andrew Gelman, Boris Shor, Joseph Bafumi, and David K. Park. Red State, Blue State, Rich State, Poor State: Why Americans Vote the Way They Do (Expanded Edition). Princeton University Press, 2009."
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 14,
+              "bbox": [
+                0.106,
+                0.831,
+                0.893,
+                0.869
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[13] Gerd Gigerenzer and Ulrich Hoffrage. How to improve Bayesian reasoning without instruction: Frequency formats. Psychological Review, 102(4):684, 1995."
+                }
+              ]
+            },
+            {
+              "type": "ref_text",
+              "index": 15,
+              "bbox": [
+                0.106,
+                0.88,
+                0.893,
+                0.917
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[14] Prakash Gorroochurn. Classic Problems of Probability. John Wiley & Sons, 2012."
+                }
+              ]
+            }
+          ],
+          "sub_type": "ref_text"
+        },
+        {
+          "type": "page_number",
+          "index": 16,
+          "bbox": [
+            0.861,
+            0.936,
+            0.893,
+            0.949
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "607"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

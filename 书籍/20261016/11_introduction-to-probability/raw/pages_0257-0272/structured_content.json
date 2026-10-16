@@ -1,0 +1,2565 @@
+{
+  "pages": [
+    {
+      "page_idx": 256,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.052
+          ],
+          "content": "240"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.068,
+            0.477,
+            0.086
+          ],
+          "content": "For $Y = X / \\lambda \\sim \\operatorname { E x p o } ( \\lambda )$ we then have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.388,
+            0.101,
+            0.593,
+            0.135
+          ],
+          "content": "E (Y) = \\frac {1}{\\lambda} E (X) = \\frac {1}{\\lambda},",
+          "image_source": "images/page_256_equation_3.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.371,
+            0.14,
+            0.628,
+            0.174
+          ],
+          "content": "\\mathrm{Var} (Y) = \\frac {1}{\\lambda^ {2}} \\mathrm{Var} (X) = \\frac {1}{\\lambda^ {2}},",
+          "image_source": "images/page_256_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.186,
+            0.894,
+            0.243
+          ],
+          "content": "so the mean and variance of the Expo(λ) distribution are $1 / \\lambda$ and $1 / \\lambda ^ { 2 }$ , respectively. As we’d expect intuitively, the faster the rate of arrivals λ, the shorter the average waiting time."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.253,
+            0.894,
+            0.328
+          ],
+          "content": "The Exponential distribution has a very special property called the memoryless property, which says that even if you’ve waited for hours or days without success, the success isn’t any more likely to arrive soon. In fact, you might as well have just started waiting 10 seconds ago. The definition formalizes this idea."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.338,
+            0.894,
+            0.375
+          ],
+          "content": "Definition 5.5.2 (Memoryless property). A continuous distribution is said to have the memoryless property if a random variable X from that distribution satisfies"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.341,
+            0.39,
+            0.657,
+            0.411
+          ],
+          "content": "P (X \\geq s + t | X \\geq s) = P (X \\geq t)",
+          "image_source": "images/page_256_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.425,
+            0.245,
+            0.443
+          ],
+          "content": "for all $s , t \\geq 0 .$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.453,
+            0.894,
+            0.566
+          ],
+          "content": "Here s represents the time you’ve already spent waiting; the definition says that after you’ve waited s minutes, the probability you’ll have to wait another t minutes is exactly the same as the probability of having to wait t minutes with no previous waiting time under your belt. Another way to state the memoryless property is that conditional on $X \\geq s .$ , the additional waiting time $X - s$ is still distributed Expo(λ). In particular, this implies"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.334,
+            0.578,
+            0.665,
+            0.614
+          ],
+          "content": "E (X | X \\geq s) = s + E (X) = s + \\frac {1}{\\lambda}.",
+          "image_source": "images/page_256_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.625,
+            0.894,
+            0.701
+          ],
+          "content": "(Conditional expectation is explained in detail in Chapter 9, but the meaning should already be clear: for any r.v. X and event A, $E ( X | A )$ is the expected value of X given A; this can be defined by replacing the unconditional PMF or PDF of X in the definition of $E ( X )$ by the conditional PMF or PDF of X given A.)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.71,
+            0.894,
+            0.748
+          ],
+          "content": "Using the definition of conditional probability, we can directly verify that the Exponential distribution has the memoryless property. Let $X \\sim \\operatorname { E x p o } ( \\lambda )$ . Then"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.17,
+            0.761,
+            0.828,
+            0.803
+          ],
+          "content": "P (X \\geq s + t | X \\geq s) = \\frac {P (X \\geq s + t)}{P (X \\geq s)} = \\frac {e ^ {- \\lambda (s + t)}}{e ^ {- \\lambda s}} = e ^ {- \\lambda t} = P (X \\geq t).",
+          "image_source": "images/page_256_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.824,
+            0.894,
+            0.919
+          ],
+          "content": "What are the implications of the memoryless property? If you’re waiting at a bus stop and the time until the bus arrives has an Exponential distribution, then conditional on your having waited 30 minutes, the bus isn’t due to arrive soon. The distribution simply forgets that you’ve been waiting for half an hour, and your remaining wait time is the same as if you had just shown up to the bus stop. If the"
+        }
+      ]
+    },
+    {
+      "page_idx": 257,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.039,
+            0.364,
+            0.053
+          ],
+          "content": "Continuous random variables"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.892,
+            0.052
+          ],
+          "content": "241"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.894,
+            0.181
+          ],
+          "continues_prev": true,
+          "content": "lifetime of a machine has an Exponential distribution, then no matter how long the machine has been functional, conditional on having lived that long, the machine is as good as new: there is no wear-and-tear effect that makes the machine more likely to break down soon. If human lifetimes were Exponential, then conditional on having survived to the age of 80, your remaining lifetime would have the same distribution as that of a newborn baby!"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.191,
+            0.893,
+            0.229
+          ],
+          "content": "Clearly, the memoryless property is not an appropriate description for human or machine lifetimes. Why then do we care about the Exponential distribution?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.248,
+            0.868,
+            0.302
+          ],
+          "content": "1. Some physical phenomena, such as radioactive decay, truly do exhibit the memoryless property, so the Exponential is an important model in its own right."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.314,
+            0.868,
+            0.386
+          ],
+          "content": "2. The Exponential distribution is well-connected to other named distributions. In the next section, we’ll see how the Exponential and Poisson distributions can be united by a shared story, and we’ll discover many more connections in later chapters."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.399,
+            0.868,
+            0.509
+          ],
+          "content": "3. The Exponential serves as a building block for more flexible distributions, such as the Weibull distribution (introduced in Chapter 6), that allow for a wear-and-tear effect (where older units are due to break down) or a survival-of-the-fittest effect (where the longer you’ve lived, the stronger you get). To understand these distributions, we first have to understand the Exponential."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.531,
+            0.893,
+            0.569
+          ],
+          "content": "The memoryless property is a very special property of the Exponential distribution: no other continuous distribution on $( 0 , \\infty )$ is memoryless! Let’s prove this."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.578,
+            0.893,
+            0.616
+          ],
+          "content": "Theorem 5.5.3. If X is a positive continuous random variable with the memoryless property, then X has an Exponential distribution."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.636,
+            0.894,
+            0.711
+          ],
+          "content": "Proof. Suppose X is a positive continuous r.v. with the memoryless property. Let F be the CDF of X and G be the survival function of X, given by $G ( x ) = 1 - F ( x )$ We will show that $G ( x ) = e ^ { - \\lambda x }$ for some λ, by first showing that $G ( x t ) = G ( t ) ^ { x }$ for all real $x > 0$ . The memoryless property says that"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.4,
+            0.727,
+            0.597,
+            0.747
+          ],
+          "content": "G (s + t) = G (s) G (t)",
+          "image_source": "images/page_257_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.763,
+            0.47,
+            0.78
+          ],
+          "content": "for all $s , t \\geq 0$ . Putting $s = t ,$ we have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.427,
+            0.795,
+            0.571,
+            0.817
+          ],
+          "content": "G (2 t) = G (t) ^ {2},",
+          "image_source": "images/page_257_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.836,
+            0.13,
+            0.847
+          ],
+          "content": "so"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.216,
+            0.85,
+            0.78,
+            0.871
+          ],
+          "content": "G (3 t) = G (2 t + t) = G (2 t) G (t) = G (t) ^ {3}, G (4 t) = G (t) ^ {4}, \\dots",
+          "image_source": "images/page_257_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.881,
+            0.235,
+            0.897
+          ],
+          "content": "We now have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.422,
+            0.899,
+            0.576,
+            0.92
+          ],
+          "content": "G (m t) = G (t) ^ {m}",
+          "image_source": "images/page_257_equation_16.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 258,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "242"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.068,
+            0.896,
+            0.106
+          ],
+          "content": "for m a positive integer. Let’s extend this in stages. Replacing t by $t / 2$ in $G(2t) =$ $G ( t ) ^ { 2 }$ , we have $G ( t / \\dot { 2 } ) = G ( t ) ^ { 1 / 2 }$ . Similarly,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.411,
+            0.12,
+            0.589,
+            0.161
+          ],
+          "content": "G \\left(\\frac {t}{n}\\right) = G (t) ^ {1 / n}",
+          "image_source": "images/page_258_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.173,
+            0.498,
+            0.191
+          ],
+          "content": "for any positive integer n. It follows that"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.203,
+            0.669,
+            0.246
+          ],
+          "content": "G \\left(\\frac {m}{n} t\\right) = \\left(G \\left(\\frac {t}{n}\\right)\\right) ^ {m} = G (t) ^ {m / n}",
+          "image_source": "images/page_258_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.258,
+            0.42,
+            0.276
+          ],
+          "content": "for any positive integers m, n, so"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.428,
+            0.292,
+            0.57,
+            0.312
+          ],
+          "content": "G (x t) = G (t) ^ {x}",
+          "image_source": "images/page_258_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.327,
+            0.896,
+            0.383
+          ],
+          "content": "for all positive rational numbers x. Any positive real number can be written as a limit of positive rational numbers so, using the fact that G is a continuous function, the above equation holds for all positive real numbers $x .$ Taking $t = 1$ , we have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.391,
+            0.398,
+            0.608,
+            0.419
+          ],
+          "content": "G (x) = G (1) ^ {x} = e ^ {- \\lambda x},",
+          "image_source": "images/page_258_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.433,
+            0.896,
+            0.471
+          ],
+          "content": "where $\\lambda = - \\log ( G ( 1 ) ) > 0$ . This is exactly the form we wanted for $G ,$ so $X$ has an Exponential distribution. \u0004"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.491,
+            0.896,
+            0.528
+          ],
+          "content": "The memoryless property is defined analogously for discrete distributions: a discrete distribution is memoryless if for X an r.v. with that distribution,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.337,
+            0.544,
+            0.662,
+            0.565
+          ],
+          "content": "P (X \\geq j + k | X \\geq j) = P (X \\geq k)",
+          "image_source": "images/page_258_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.579,
+            0.896,
+            0.75
+          ],
+          "content": "for all nonnegative integers $j , k .$ In view of the analogy between the Geometric and Exponential stories (or if you have solved Exercise 32 from Chapter 4), you might guess that the Geometric distribution is memoryless. If so, you would be correct! If we’re waiting for the first Heads in a sequence of fair coin tosses, and in a streak of bad luck we happen to get ten Tails in a row, this has no impact on how many additional tosses we’ll need: the coin isn’t due for a Heads, nor conspiring against us to perpetually land Tails. The coin is memoryless. The Geometric is the only memoryless discrete distribution taking values in $\\{ 0 , 1 , 2 , \\ldots \\}$ , and the Exponential is the only memoryless continuous distribution taking values in (0, ∞)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.758,
+            0.894,
+            0.816
+          ],
+          "content": "As practice with the memoryless property, the following example chronicles the adventures of Fred, who experiences firsthand the frustrations of the memoryless property after moving to a town with a memoryless public transportation system."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.824,
+            0.896,
+            0.92
+          ],
+          "content": "Example 5.5.4 (Blissville and Blotchville). Fred lives in Blissville, where buses always arrive exactly on time, with the time between successive buses fixed at 10 minutes. Having lost his watch, he arrives at the bus stop at a uniformly random time on a certain day (assume that buses run 24 hours a day, every day, and that the time that Fred arrives is independent of the bus arrival process)."
+        }
+      ]
+    },
+    {
+      "page_idx": 259,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.039,
+            0.364,
+            0.053
+          ],
+          "content": "Continuous random variables"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "243"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.068,
+            0.893,
+            0.106
+          ],
+          "content": "(a) What is the distribution of how long Fred has to wait for the next bus? What is the average time that Fred has to wait?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.116,
+            0.894,
+            0.153
+          ],
+          "content": "(b) Given that the bus has not yet arrived after 6 minutes, what is the probability that Fred will have to wait at least 3 more minutes?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.163,
+            0.895,
+            0.295
+          ],
+          "content": "(c) Fred moves to Blotchville, a city with inferior urban planning and where buses are much more erratic. Now, when any bus arrives, the time until the next bus arrives is an Exponential random variable with mean 10 minutes. Fred arrives at the bus stop at a random time (assume that Blotchville has followed and will follow this system for all of eternity, and that the time that Fred arrives is independent of the bus arrival process). What is the distribution of Fred’s waiting time for the next bus? What is the average time that Fred has to wait?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.305,
+            0.894,
+            0.4
+          ],
+          "content": "(d) When Fred complains to a friend how much worse transportation is in Blotchville, the friend says: “Stop whining so much! You arrive at a uniform instant between the previous bus arrival and the next bus arrival. The average length of that interval between buses is 10 minutes, but since you are equally likely to arrive at any time in that interval, your average waiting time is only 5 minutes.”"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.409,
+            0.894,
+            0.447
+          ],
+          "content": "Fred disagrees, both from experience and from solving Part (c) while waiting for the bus. Explain what is wrong with the friend’s reasoning."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.106,
+            0.457,
+            0.195,
+            0.473
+          ],
+          "level": 2,
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.485,
+            0.757,
+            0.503
+          ],
+          "content": "(a) The distribution is Uniform on (0, 10), so the mean is 5 minutes."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.514,
+            0.455,
+            0.532
+          ],
+          "content": "(b) Let T be the waiting time. Then"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.182,
+            0.545,
+            0.816,
+            0.587
+          ],
+          "content": "P (T \\geq 6 + 3 | T > 6) = \\frac {P (T \\geq 9 , T > 6)}{P (T > 6)} = \\frac {P (T \\geq 9)}{P (T > 6)} = \\frac {1 / 1 0}{4 / 1 0} = \\frac {1}{4}.",
+          "image_source": "images/page_259_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.599,
+            0.894,
+            0.675
+          ],
+          "content": "In particular, Fred’s waiting time in Blissville is not memoryless; conditional on having waited 6 minutes already, there’s only a $1 / 4$ chance that he’ll have to wait at least another 3 minutes, whereas if he had just showed up, there would be a $P ( T \\geq 3 ) = 7 / 1 0$ chance of having to wait at least 3 minutes."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.684,
+            0.894,
+            0.758
+          ],
+          "content": "(c) By the memoryless property, the distribution is Exponential with parameter $1 / 1 0$ (and mean 10 minutes) regardless of when Fred arrives; how much longer the next bus will take to arrive is independent of how long ago the previous bus arrived. The average time that Fred has to wait is 10 minutes."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.768,
+            0.895,
+            0.919
+          ],
+          "content": "(d) Fred’s friend is making the mistake, explained in h 4.1.3, of replacing a random variable (the time between buses) by its expectation (10 minutes), thereby ignoring the variability in interarrival times. The average length of a time interval between two buses is 10 minutes, but Fred is not equally likely to arrive at any of these intervals: Fred is more likely to arrive during a long interval between buses than to arrive during a short interval between buses. For example, if one interval between buses is 50 minutes and another interval is 5 minutes, then Fred is 10 times more likely to arrive during the 50-minute interval."
+        }
+      ]
+    },
+    {
+      "page_idx": 260,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "244"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.069,
+            0.896,
+            0.219
+          ],
+          "content": "This phenomenon is known as length-biased sampling, and it comes up in many reallife situations. For example, asking randomly chosen mothers how many children they have yields a different distribution from asking randomly chosen people how many siblings they have, including themselves. Asking students the sizes of their classes and averaging those results may give a much higher value than taking a list of classes and averaging the sizes of each; this is called the class size paradox. See exercises 16 and 17 from Chapter 4 for more about the class size paradox and length-biased sampling."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.23,
+            0.896,
+            0.286
+          ],
+          "content": "Fred’s adventures in Blissville and Blotchville continue in the exercises (see also MacKay [17] for more of Fred’s adventures). The bus arrivals in Blotchville follow a Poisson process, which is the topic of the next section. \u0003"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.371,
+            0.377,
+            0.391
+          ],
+          "level": 2,
+          "content": "5.6 Poisson processes"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.41,
+            0.897,
+            0.56
+          ],
+          "content": "The Exponential distribution is closely connected to the Poisson distribution, as suggested by our use of λ for the parameters of both distributions. In this section we will see that the Exponential and Poisson are linked by a common story, which is the story of the Poisson process. A Poisson process is a sequence of arrivals occurring at different points on a timeline, such that the number of arrivals in a particular interval of time has a Poisson distribution. Poisson processes are discussed in much greater detail in Chapter 13, but we already have the tools to understand the definition and basic properties."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.572,
+            0.896,
+            0.61
+          ],
+          "content": "Definition 5.6.1 (Poisson process). A process of arrivals in continuous time is called a Poisson process with rate λ if the following two conditions hold:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.167,
+            0.631,
+            0.868,
+            0.735
+          ],
+          "sub_type": "text",
+          "content": "1. The number of arrivals that occur in an interval of length t is a Pois(λt) random variable.\n2. The numbers of arrivals that occur in disjoint intervals are independent of each other. For example, the numbers of arrivals in the intervals (0, 10), [10, 12), and [15, ∞) are independent."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.757,
+            0.896,
+            0.833
+          ],
+          "content": "In this section, we will focus on Poisson processes on (0, ∞), but we can also define Poisson processes on $( - \\infty , \\infty )$ or other intervals, and in Chapter 13 we will introduce Poisson processes in more than one dimension. A sketch of a Poisson process on (0, ∞) is pictured in Figure 5.13. Each X marks the spot of an arrival."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.844,
+            0.896,
+            0.919
+          ],
+          "content": "For concreteness, suppose that the arrivals are emails landing in an inbox according to a Poisson process with rate λ. There are several things we might want to know about this process. One question we could ask is: in one hour, how many emails will arrive? The answer comes directly from the definition, which tells us that the"
+        }
+      ]
+    },
+    {
+      "page_idx": 261,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.038,
+            0.364,
+            0.053
+          ],
+          "content": "Continuous random variables"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "245"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.146,
+            0.083,
+            0.838,
+            0.155
+          ],
+          "sub_type": "text_image",
+          "content": "0\nT₁\nT₂ T₃\nT₄ T₅",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_261_image_2.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.175,
+            0.249,
+            0.19
+          ],
+          "level": 2,
+          "content": "FIGURE 5.13"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.193,
+            0.709,
+            0.212
+          ],
+          "content": "A Poisson process on $( 0 , \\infty )$ . Each X corresponds to an arrival."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.239,
+            0.894,
+            0.276
+          ],
+          "content": "number of emails in an hour follows a $\\operatorname { P o i s } ( \\lambda )$ distribution. Notice that the number of emails is a nonnegative integer, so a discrete distribution is appropriate."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.285,
+            0.896,
+            0.435
+          ],
+          "content": "But we could also flip the question around and ask: how long does it take until the first email arrives (measured relative to some fixed starting point)? The waiting time for the first email is a positive real number, so a continuous distribution on $( 0 , \\infty )$ is appropriate. Let $T _ { 1 }$ be the time until the first email arrives. To find the distribution of $T _ { 1 }$ , we just need to understand one crucial fact: saying that the waiting time for the first email is greater than t is the same as saying that no emails have arrived between 0 and t. In other words, if $N _ { t }$ is the number of emails that arrive at or before time t, then"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.328,
+            0.436,
+            0.669,
+            0.455
+          ],
+          "content": "T _ {1} > t \\text {is the same event as} N _ {t} = 0.",
+          "image_source": "images/page_261_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.463,
+            0.897,
+            0.52
+          ],
+          "content": "We call this the count-time duality because it connects a discrete $\\mathrm { r . v . , } N _ { t }$ , which counts the number of arrivals, with a continuous r.v., $T _ { 1 }$ , which marks the time of the first arrival. More generally, the count-time duality says that"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.326,
+            0.534,
+            0.671,
+            0.552
+          ],
+          "content": "T _ {n} > t \\text {is the same event as} N _ {t} <   n.",
+          "image_source": "images/page_261_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.566,
+            0.894,
+            0.603
+          ],
+          "content": "Saying that the nth arrival has not happened yet as of time t is equivalent to saying that, up until time t, there have been fewer than n arrivals."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.613,
+            0.894,
+            0.651
+          ],
+          "content": "If two events are the same, they have the same probability. Since $N _ { t } \\sim \\operatorname { P o i s } ( \\lambda t )$ by the definition of Poisson process,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.288,
+            0.661,
+            0.71,
+            0.7
+          ],
+          "content": "P (T _ {1} > t) = P (N _ {t} = 0) = \\frac {e ^ {- \\lambda t} (\\lambda t) ^ {0}}{0 !} = e ^ {- \\lambda t}.",
+          "image_source": "images/page_261_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.711,
+            0.894,
+            0.75
+          ],
+          "content": "Therefore $P ( T _ { 1 } \\leq t ) = 1 - e ^ { - \\lambda t }$ , so $T _ { 1 } \\sim \\operatorname { E x p o } ( \\lambda ) !$ The time until the first arrival in a Poisson process of rate λ has an Exponential distribution with parameter λ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.759,
+            0.894,
+            0.853
+          ],
+          "content": "What about $T _ { 2 } - T _ { 1 }$ , the time between the first and second arrivals? Since disjoint intervals in a Poisson process are independent by definition, the past is irrelevant once the first arrival occurs. Thus $T _ { 2 } - T _ { 1 }$ is independent of the time until the first arrival, and by the same argument as before, $T _ { 2 } - T _ { 1 }$ also has an Exponential distribution with rate λ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.862,
+            0.894,
+            0.919
+          ],
+          "content": "Similarly, $T _ { 3 } { - } T _ { 2 } \\sim \\operatorname { E x p o } ( \\lambda )$ independently of $T _ { 1 }$ and $T _ { 2 } { - } T _ { 1 }$ . Continuing in this way, we deduce that all the interarrival times are i.i.d. Expo(λ) random variables. Thus, Poisson processes tie together two important distributions, one discrete and one"
+        }
+      ]
+    },
+    {
+      "page_idx": 262,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.052
+          ],
+          "content": "246"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.125
+          ],
+          "continues_prev": true,
+          "content": "continuous, and the use of a common symbol λ for both the Poisson and Exponential parameters is felicitous notation, for λ is the arrival rate in the process that unites the two distributions."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.134,
+            0.896,
+            0.191
+          ],
+          "content": "h 5.6.2. The total time until the second arrival, $T _ { 2 }$ , is the sum of two independent $\\mathrm{Expo}(\\lambda) \\text { r.v.s, } T_{1}$ and $T _ { 2 } - T _ { 1 }$ . This does not have an Exponential distribution, but rather a Gamma distribution, which is introduced in Chapter 8."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.2,
+            0.894,
+            0.238
+          ],
+          "content": "The story of the Poisson process provides intuition for the fact, shown below, that the minimum of independent Exponential r.v.s is another Exponential r.v."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.247,
+            0.896,
+            0.304
+          ],
+          "content": "Example 5.6.3 (Minimum of independent Expos). Let $X _ { 1 } , \\ldots , X _ { n }$ be independent, with $X _ { j } \\sim \\operatorname { E x p o } ( \\lambda _ { j } )$ . Let $L = \\operatorname* { m i n } ( X _ { 1 } , \\ldots , X _ { n } )$ . Show that $L \\sim \\operatorname { E x p o } ( \\lambda _ { 1 } + \\cdots + \\lambda _ { n } )$ and interpret this intuitively."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.313,
+            0.195,
+            0.33
+          ],
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.341,
+            0.894,
+            0.379
+          ],
+          "content": "We can find the distribution of L by considering its survival function $P ( L   >   t )$ since the survival function is 1 minus the CDF."
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.164,
+            0.386,
+            0.831,
+            0.432
+          ],
+          "content": "\\begin{array}{l} P (L > t) = P (\\min (X _ {1}, \\dots , X _ {n}) > t) = P (X _ {1} > t, \\dots , X _ {n} > t) \\\\ = P (X _ {1} > t) \\dots P (X _ {n} > t) = e ^ {- \\lambda_ {1} t} \\dots e ^ {- \\lambda_ {n} t} = e ^ {- (\\lambda_ {1} + \\dots + \\lambda_ {n}) t}. \\\\ \\end{array}",
+          "image_source": "images/page_262_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.44,
+            0.896,
+            0.516
+          ],
+          "content": "The second equality holds since saying that the minimum of the $X _ { j }$ is greater than t is the same as saying that all of the $X _ { j }$ are greater than t. The third equality holds by independence of the $X _ { j }$ . Thus, L has the survival function (and the CDF) of an Exponential distribution with parameter $\\lambda _ { 1 } + \\cdots + \\lambda _ { n }$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.525,
+            0.896,
+            0.62
+          ],
+          "content": "Intuitively, we can interpret the $\\lambda _ { j }$ as the rates of n independent Poisson processes. We can imagine, for example, $X _ { 1 }$ as the waiting time for a green car to pass by, $X _ { 2 }$ as the waiting time for a blue car to pass by, and so on, assigning a color to each $X _ { j }$ . Then $L$ is the waiting time for a car with any of these colors to pass by, so it makes sense that $L$ has a combined rate of $\\lambda _ { 1 } + \\cdots + \\lambda _ { n }$ \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.628,
+            0.894,
+            0.704
+          ],
+          "content": "h 5.6.4. The minimum of independent Exponentials is Exponential, but the maximum of independent Exponentials is not Exponential. However, the result about such a minimum turns out to be useful in studying such a maximum, as illustrated in the next two examples."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.713,
+            0.896,
+            0.808
+          ],
+          "content": "Example 5.6.5 (Maximum of 3 independent Exponentials). Three students are working independently on their probability homework. All 3 start at 1 pm on a certain day, and each takes an Exponential time with mean 6 hours to complete the homework. What is the earliest time at which all 3 students will have completed the homework, on average?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.816,
+            0.896,
+            0.89
+          ],
+          "content": "Solution: Label the students as 1, 2, 3, and let $X _ { j }$ be how long it takes student $j$ to finish the homework. Let $\\lambda = 1 / 6 ,$ and let $T$ be the time when all 3 students will have completed the homework, so $T = \\max(X_1, X_2, X_3)$ with $X _ { i } \\sim \\operatorname { E x p o } ( \\lambda )$ . The CDF of T is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.245,
+            0.898,
+            0.752,
+            0.921
+          ],
+          "content": "P (T \\leq t) = P (X _ {1} \\leq t, X _ {2} \\leq t, X _ {3} \\leq t) = (1 - e ^ {- \\lambda t}) ^ {3}.",
+          "image_source": "images/page_262_equation_14.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 263,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.038,
+            0.364,
+            0.053
+          ],
+          "content": "Continuous random variables"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": "247"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.068,
+            0.294,
+            0.085
+          ],
+          "content": "So the PDF of T is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.371,
+            0.085,
+            0.627,
+            0.107
+          ],
+          "content": "f _ {T} (t) = 3 \\lambda e ^ {- \\lambda t} (1 - e ^ {- \\lambda t}) ^ {2}.",
+          "image_source": "images/page_263_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.116,
+            0.448,
+            0.134
+          ],
+          "content": "In particular, T is not Exponential."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.143,
+            0.897,
+            0.2
+          ],
+          "content": "Finding $E ( T )$ by integrating $t f _ { T } ( t )$ is possible but not especially pleasant. A neater approach is to use the memoryless property and the fact that the minimum of independent Exponentials is Exponential. We can decompose"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.41,
+            0.215,
+            0.587,
+            0.235
+          ],
+          "content": "T = T _ {1} + T _ {2} + T _ {3},",
+          "image_source": "images/page_263_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.25,
+            0.896,
+            0.326
+          ],
+          "content": "where $T _ { 1 } { = } \\operatorname* { m i n } ( X _ { 1 } , X _ { 2 } , X _ { 3 } )$ is how long it takes for one student to complete the homework, $T _ { 2 }$ is the additional time it takes for a second student to complete the homework, and $T _ { 3 }$ is the additional time until all 3 have completed the homework. Then $T _ { 1 } \\sim \\mathrm { E x p o } ( 3 \\lambda )$ , by the result of Example 5.6.3."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.335,
+            0.896,
+            0.428
+          ],
+          "content": "By the memoryless property, at the first time when a student completes the homework the other two students are starting from fresh, so $T _ { \\mathrm { 2 } } \\sim \\mathrm { E x p o } ( 2 \\lambda )$ . Again by the memoryless property, $T _ { 3 } \\sim \\mathrm { E x p o } ( \\lambda )$ . The memoryless property also implies that $T _ { 1 } , T _ { 2 } , T _ { 3 }$ are independent (which would be very useful if we were finding Var(T)). By linearity,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.308,
+            0.427,
+            0.691,
+            0.462
+          ],
+          "content": "E (T) = \\frac {1}{3 \\lambda} + \\frac {1}{2 \\lambda} + \\frac {1}{\\lambda} = 2 + 3 + 6 = 1 1,",
+          "image_source": "images/page_263_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.466,
+            0.896,
+            0.504
+          ],
+          "content": "which shows that on average, the 3 students will have all completed the homework at midnight, 11 hours after they started. \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.513,
+            0.896,
+            0.627
+          ],
+          "content": "Example 5.6.6 (Machine repair). A certain machine often breaks down and needs to be fixed. At time 0, the machine is working. It works for an Expo(λ) period of time (measured in days), and then breaks down. It then takes an Expo(λ) amount of time to get it fixed, after which it will work for an Expo(λ) time until it breaks down again, after which it will take an Expo(λ) time to get it fixed, etc. Assume that these Expo(λ) r.v.s are i.i.d."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.636,
+            0.894,
+            0.692
+          ],
+          "content": "(a) A transition occurs when the machine switches from working to being broken, or switches from being broken to working. Find the distribution of the number of transitions that occur in the time interval (0, t)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.702,
+            0.894,
+            0.814
+          ],
+          "content": "(b) Hoping to reduce the frequency of breakdowns, the machine is redesigned so that it can continue to function even if one component has failed. The redesigned machine has 5 components, each of which works for an Expo(λ) amount of time and then fails, independently. The machine works properly if and only if at most one component has failed. Currently, all 5 components are working (none have failed). Find the expected time until the machine breaks down."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.106,
+            0.824,
+            0.195,
+            0.841
+          ],
+          "level": 2,
+          "content": "Solution:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.102,
+            0.853,
+            0.892,
+            0.919
+          ],
+          "sub_type": "text",
+          "content": "(a) The times between transitions are i.i.d. Expo(λ), so the times at which transitions occur follow a Poisson process of rate λ. So the desired distribution is Pois(λt).\n(b) The time until a component fails is Expo(5λ). Then by the memoryless property,"
+        }
+      ]
+    },
+    {
+      "page_idx": 264,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.105,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "248"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.068,
+            0.896,
+            0.104
+          ],
+          "continues_prev": true,
+          "content": "the additional time until another component fails is Expo(4λ). So the expected time until the machine breaks down is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.418,
+            0.11,
+            0.582,
+            0.147
+          ],
+          "content": "\\frac {1}{5 \\lambda} + \\frac {1}{4 \\lambda} = \\frac {9}{2 0 \\lambda}.",
+          "image_source": "images/page_264_equation_3.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.221,
+            0.578,
+            0.24
+          ],
+          "level": 2,
+          "content": "5.7 Symmetry of i.i.d. continuous r.v.s"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.258,
+            0.897,
+            0.41
+          ],
+          "content": "Continuous r.v.s that are independent and identically distributed have an important symmetry property: all possible orderings are equally likely. Intuitively, this is because if all we are told is that $X _ { 1 } , \\ldots , X _ { n }$ are i.i.d., then they are interchangeable, in the sense that we have been given no information that distinguishes one $X _ { i }$ from another $X _ { j }$ . This is reminiscent of the fact that it is common for someone to say “Do you want the good news first or the bad news first?” but rare for someone to say $^ { c } \\mathrm { I }$ have two pieces of news. Which do you want to hear first?”, since in the latter case no distinguishing information has been provided for the two pieces of news."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.418,
+            0.896,
+            0.436
+          ],
+          "content": "Proposition 5.7.1. Let $X _ { 1 } , \\ldots , X _ { n }$ be i.i.d. from a continuous distribution. Then"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.342,
+            0.445,
+            0.657,
+            0.481
+          ],
+          "content": "P (X _ {a _ {1}} <   X _ {a _ {2}} <   \\dots <   X _ {a _ {n}}) = \\frac {1}{n !}",
+          "image_source": "images/page_264_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.488,
+            0.562,
+            0.506
+          ],
+          "content": "for any permutation $a _ { 1 } , a _ { 2 } , \\ldots , a _ { n }$ of $1 , 2 , \\ldots , n$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.523,
+            0.897,
+            0.637
+          ],
+          "content": "Proof. Let F be the CDF of $X _ { j }$ . By symmetry, all orderings of $X _ { 1 } , \\ldots , X _ { n }$ are equally likely. For example, $P ( \\dot { X _ { 3 } } \\: < \\: X _ { 2 } \\: < \\: X _ { 1 } ) \\: = \\: P ( X _ { 1 } \\: < \\: X _ { 2 } \\: < \\: X _ { 3 } )$ since both sides have exactly the same structure: they are both of the form $P ( A < B < C )$ where $A , B , C$ are i.i.d. draws from F. For any i and $j$ with $i \\neq j$ , the probability of the tie $X _ { i } = X _ { j }$ is 0 since $X _ { i }$ and $X _ { j }$ are independent continuous r.v.s. So the probability of there being at least one tie among $X _ { 1 } , \\ldots , X _ { n }$ is also 0, since"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.645,
+            0.71,
+            0.704
+          ],
+          "content": "P \\left(\\bigcup_ {i \\neq j} \\{X _ {i} = X _ {j} \\}\\right) \\leq \\sum_ {i \\neq j} P (X _ {i} = X _ {j}) = 0.",
+          "image_source": "images/page_264_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.711,
+            0.896,
+            0.749
+          ],
+          "content": "Thus, $X _ { 1 } , \\ldots , X _ { n }$ are distinct with probability 1, and the probability of any particular ordering is $1 / n !$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.758,
+            0.897,
+            0.853
+          ],
+          "content": "h 5.7.2. This proposition may fail if the r.v.s are dependent. Let $n \\: = \\: 2$ , and consider the extreme case where $X _ { 1 }$ and $X _ { 2 }$ are so dependent that they are always equal, i.e., $X _ { 1 } = X _ { 2 }$ with probability 1. Then $P ( X _ { 1 } < X _ { 2 } ) = P ( X _ { 2 } < X _ { 1 } ) = 0$ . For dependent $X _ { 1 } , X _ { 2 }$ we can also make $P ( X _ { 1 } < X _ { 2 } ) \\neq P ( X _ { 2 } < X _ { 1 } )$ . For an example, see Exercise 42 from Chapter 3."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.862,
+            0.614,
+            0.88
+          ],
+          "content": "h 5.7.3. If X and Y are i.i.d. continuous r.v.s, then"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.356,
+            0.888,
+            0.644,
+            0.924
+          ],
+          "content": "P (X <   Y) = P (Y <   X) = \\frac {1}{2},",
+          "image_source": "images/page_264_equation_14.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 265,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.038,
+            0.364,
+            0.053
+          ],
+          "content": "Continuous random variables"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": "249"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.145
+          ],
+          "content": "by symmetry and since the probability of a tie is 0. In contrast, if X and Y are i.i.d. discrete r.v.s, it is still true that $P(X < Y) = P(Y < X)$ by symmetry, but this number is less than $1 / 2$ because of the possibility of a tie. For example, if X and $Y$ are i.i.d. nonnegative integer-valued r.v.s with $P ( X = j ) = c _ { j }$ , then"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.164,
+            0.158,
+            0.836,
+            0.179
+          ],
+          "content": "1 = P (X <   Y) + P (X = Y) + P (Y <   X) = 2 P (X <   Y) + P (X = Y),",
+          "image_source": "images/page_265_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.197,
+            0.131,
+            0.21
+          ],
+          "content": "so"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.219,
+            0.207,
+            0.78,
+            0.267
+          ],
+          "content": "P (X <   Y) = \\frac {1}{2} \\cdot (1 - P (X = Y)) = \\frac {1}{2} \\cdot \\left(1 - \\sum_ {j = 0} ^ {\\infty} c _ {j} ^ {2}\\right) <   \\frac {1}{2}.",
+          "image_source": "images/page_265_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.281,
+            0.897,
+            0.414
+          ],
+          "content": "The ranks of a list of distinct numbers are defined by giving the smallest number a rank of 1, the second smallest a rank of 2, and so on. For example, the ranks for 3.14, 2.72, 1.41, 1.62 are 4, 3, 1, 2. Proposition 5.7.1 says that the ranks of i.i.d. continuous $X _ { 1 } , \\ldots , X _ { n }$ are a uniformly random permutation of the numbers $1 , \\ldots , n$ The next example shows how we can use this symmetry property in conjunction with indicator r.v.s in problems involving records, such as the record level of rainfall or the record performance on a high jump."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.423,
+            0.897,
+            0.499
+          ],
+          "content": "Example 5.7.4 (Records). Athletes compete one at a time at the high jump. Let $X _ { j }$ be how high the jth jumper jumped, with $X _ { 1 } , X _ { 2 } , \\ldots { \\mathrm { ~ i . i . d } }$ . with a continuous distribution. We say that the jth jumper sets a record if $X _ { j }$ is greater than all of $X _ { j - 1 } , \\ldots , X _ { 1 }$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.513,
+            0.892,
+            0.549
+          ],
+          "content": "(a) Is the event “the 110th jumper sets a record” independent of the event “the 111th jumper sets a record”?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.564,
+            0.892,
+            0.6
+          ],
+          "content": "(b) Find the mean number of records among the first n jumpers. What happens to the mean as $n \\rightarrow \\infty ?$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.616,
+            0.892,
+            0.671
+          ],
+          "content": "(c) A double record occurs at time j if both the jth and (j −1)st jumpers set records. Find the mean number of double records among the first n jumpers. What happens to the mean as $n \\rightarrow \\infty ?$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.106,
+            0.682,
+            0.195,
+            0.699
+          ],
+          "level": 2,
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.711,
+            0.897,
+            0.767
+          ],
+          "content": "(a) Let $I _ { j }$ be the indicator r.v. for the jth jumper setting a record. By symmetry, $P ( I _ { j } = \\dot { 1 ) } = 1 / j$ (as any of the first $j$ jumps is equally likely to be the highest of those jumps). Also,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.302,
+            0.78,
+            0.697,
+            0.817
+          ],
+          "content": "P (I _ {1 1 0} = 1, I _ {1 1 1} = 1) = \\frac {1 0 9 !}{1 1 1 !} = \\frac {1}{1 1 0 \\cdot 1 1 1},",
+          "image_source": "images/page_265_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.828,
+            0.896,
+            0.884
+          ],
+          "content": "since in order for both the 110th and 111th jumps to be records, we need the highest of the first 111 jumps to be in position 111 and the second highest to be in position 110, and the remaining 109 can be in any order. So"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.271,
+            0.899,
+            0.726,
+            0.92
+          ],
+          "content": "P (I _ {1 1 0} = 1, I _ {1 1 1} = 1) = P (I _ {1 1 0} = 1) P (I _ {1 1 1} = 1),",
+          "image_source": "images/page_265_equation_15.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 266,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "250"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.068,
+            0.896,
+            0.143
+          ],
+          "content": "which shows that the 110th jumper setting a record is independent of the 111th jumper setting a record. Intuitively, this makes sense since learning that the 111th jumper sets a record gives us no information about the “internal” matter of how the first 110 jumps are arranged amongst themselves."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.102,
+            0.159,
+            0.896,
+            0.267
+          ],
+          "sub_type": "text",
+          "content": "(b) By linearity, the expected number of records among the firstn jumpers is $\\textstyle \\sum _ { j = 1 } ^ { n } { \\frac { 1 } { j } }$ , which goes to ∞ as n → ∞ since the harmonic series diverges.\n(c) Let $J _ { j }$ be the indicator r.v. for a double record occurring at time j, for $2 \\leq j \\leq n$ Then $\\begin{array} { r } { \\check { P ( J _ { j } = 1 ) } = \\frac { 1 } { j ( j - 1 ) } } \\end{array}$ , following the logic of Part (a). So the expected number of double records is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.297,
+            0.281,
+            0.701,
+            0.331
+          ],
+          "content": "\\sum_ {j = 2} ^ {n} \\frac {1}{j (j - 1)} = \\sum_ {j = 2} ^ {n} \\left(\\frac {1}{j - 1} - \\frac {1}{j}\\right) = 1 - \\frac {1}{n},",
+          "image_source": "images/page_266_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.345,
+            0.896,
+            0.385
+          ],
+          "content": "since all the other terms cancel out. Thus, the expected number of records goes to ∞ as $n \\to \\infty$ , but the expected number of double records goes to 1. \u0003"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.467,
+            0.244,
+            0.487
+          ],
+          "level": 2,
+          "content": "5.8 Recap"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.506,
+            0.897,
+            0.618
+          ],
+          "content": "A continuous r.v. can take on any value in an interval, although the probability that it equals any particular value is 0. The CDF of a continuous r.v. is differentiable, and the derivative is called the probability density function (PDF). Probability is given by area under the PDF curve, not by the value of the PDF at a point. We must integrate the PDF to get a probability. The table below summarizes and compares some important concepts in the discrete case and the continuous case."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.105,
+            0.632,
+            0.896,
+            0.916
+          ],
+          "content": "<table><tr><td></td><td>Discrete r.v.</td><td>Continuous r.v.</td></tr><tr><td>CDF</td><td> $F(x) = P(X \\leq x)$ </td><td> $F(x) = P(X \\leq x)$ </td></tr><tr><td rowspan=\"2\">PMF/PDF</td><td> $P(X = x)$ </td><td> $f(x) = F'(x)$ </td></tr><tr><td>PMF is height of jump of  $F$  at  $x$ .PMF is nonnegative.PMF sums to 1. $P(X \\in A) = \\sum_{x \\in A} P(X = x)$ .</td><td>PDF is derivative of  $F$ .PDF is nonnegative.PDF integrates to 1. $P(X \\in A) = \\int_{A} f(x) dx$ .</td></tr><tr><td>Expectation</td><td> $E(X) = \\sum_{x} xP(X = x)$ </td><td> $E(X) = \\int_{-\\infty}^{\\infty} xf(x) dx$ </td></tr><tr><td>LOTUS</td><td> $E(g(X)) = \\sum_{x} g(x)P(X = x)$ </td><td> $E(g(X)) = \\int_{-\\infty}^{\\infty} g(x)f(x)dx$ </td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_266_table_10.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 267,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.039,
+            0.364,
+            0.053
+          ],
+          "content": "Continuous random variables"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.892,
+            0.053
+          ],
+          "content": "251"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.067,
+            0.895,
+            0.181
+          ],
+          "content": "Three important continuous distributions are the Uniform, Normal, and Exponential. A $\\operatorname { U n i f } ( a , b )$ r.v. is a “completely random” number in the interval $( a , b )$ , and it has the property that probability is proportional to length. The universality of the Uniform tells us how we can use a $\\mathrm { U n i f } ( 0 , 1 )$ r.v. to construct r.v.s from other distributions we may be interested in; it also says that if we plug a continuous r.v. into its own CDF, the resulting r.v. has a $\\mathrm { U n i f } ( 0 , 1 )$ distribution."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.191,
+            0.895,
+            0.267
+          ],
+          "content": "A $\\mathcal { N } ( \\mu , \\sigma ^ { 2 } )$ r.v. has a symmetric bell-shaped PDF centered at $\\mu ,$ with $\\sigma$ controlling how spread out the curve is. The mean is $\\mu$ and standard deviation is $\\sigma .$ The 68-95-99.7% rule gives important benchmarks for the probability of a Normal r.v. falling within 1, 2, and 3 standard deviations of its mean."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.277,
+            0.895,
+            0.429
+          ],
+          "content": "An Expo(λ) r.v. represents the waiting time for the first success in continuous time, analogous to how a Geometric r.v. represents the number of failures before the first success in discrete time; the parameter $\\lambda$ can be interpreted as the rate at which successes arrive. The Exponential distribution has the memoryless property, which says that conditional on our having waited a certain amount of time without success, the distribution of the remaining wait time is exactly the same as if we hadn’t waited at all. In fact, the Exponential is the only positive continuous distribution with the memoryless property."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.439,
+            0.895,
+            0.515
+          ],
+          "content": "A Poisson process is a sequence of arrivals in continuous time such that the number of arrivals in an interval is Poisson (with mean proportional to the length of the interval) and disjoint intervals have independent numbers of arrivals. The interarrival times in a Poisson process of rate λ are i.i.d. Expo(λ) r.v.s."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.525,
+            0.895,
+            0.62
+          ],
+          "content": "A useful symmetry property of i.i.d. r.v.s $X _ { 1 } , X _ { 2 } , \\ldots , X _ { n }$ is that all orderings are equally likely. For example, $P ( X _ { 1 } \\: < \\: X _ { 2 } \\: < \\: X _ { 3 } ) \\: = \\: P ( X _ { 3 } \\: < \\: X _ { 2 } \\: < \\: X _ { 1 } )$ . If the $X _ { j }$ are continuous in addition to being i.i.d., then we can also conclude, e.g., that $P ( X _ { 1 } < X _ { 2 } < X _ { 3 } ) = 1 / 6$ , whereas in the discrete case we also have to account for the possibility of ties."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.63,
+            0.895,
+            0.742
+          ],
+          "content": "A new strategy that we learned for continuous distributions is location-scale transformation, which says that if shifting and scaling will not take us outside the family of distributions we’re studying, then we can start with the simplest member of the family, find the answer for the simple case, then use shifting and scaling to arrive at the general case. For the three main distributions of this chapter, this approach works as follows."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.099,
+            0.754,
+            0.892,
+            0.851
+          ],
+          "sub_type": "text",
+          "content": "• Uniform: If $U \\sim \\mathrm { U n i f } ( 0 , 1 )$ , then $\\tilde { U } = a + ( b - a ) U \\sim \\mathrm { U n i f } ( a , b )$\n• Normal: If $Z \\sim \\mathcal { N } ( 0 , 1 )$ , then $X = \\mu + \\sigma Z \\sim \\mathcal { N } ( \\mu , \\sigma ^ { 2 } )$\n• Exponential: If $X   \\sim   \\mathrm { E x p o ( 1 ) }$ , then $Y   =   X / \\lambda   \\sim   \\mathrm { E x p o } ( \\lambda )$ . We do not consider shifts here since a nonzero shift would prevent the support from being $( 0 , \\infty )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.861,
+            0.892,
+            0.918
+          ],
+          "content": "We can now add the Exponential and Geometric distributions to our diagram of connections between distributions: the Exponential is a continuous limit of the Geometric, and the Poisson and Exponential are connected by the Poisson process."
+        }
+      ]
+    },
+    {
+      "page_idx": 268,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.14,
+            0.053
+          ],
+          "content": "252"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.197,
+            0.067,
+            0.812,
+            0.419
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph TD\n  A[\"HGeom\"] -->|Limit| B[\"Bin (Bern)\"]\n  B -->|Conditioning| A\n  B -->|Limit| C[\"Pois\"]\n  C -->|Conditioning| B\n  D[\"Expo\"] -->|Poisson process| C\n  E[\"Geom\"] -->|Limit| D\n```",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_268_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.443,
+            0.897,
+            0.482
+          ],
+          "content": "And in our map of the four fundamental objects in probability, we add the PDF as another blueprint for continuous random variables."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.107,
+            0.501,
+            0.896,
+            0.821
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"CDF F\\nPMF (discrete)\\nPDF (continuous)\\nstory name, parameters\"] -->|generate| B[\"X\"]\n  B --> C[\"X ≤ x\\nX = x\"]\n  C --> D[\"P(X ≤ x) = F(x)\\nP(X = x)\"]\n  B --> E[\"E(X), Var(X), SD(X)\"]\n  B --> F[\"X, X², X³, ... g(X)\"]\n  F -->|LOTUS| G[\"E(X), E(X²), E(X³), ... E(g(X))\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.104,
+                0.837,
+                0.25,
+                0.852
+              ],
+              "content": "FIGURE 5.14"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_268_image_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.854,
+            0.897,
+            0.911
+          ],
+          "content": "Four fundamental objects in probability: distributions, random variables, events, and numbers. For a continuous r.v. X, we have $P ( X = x ) = 0$ , so we use the PDF as a blueprint in place of the PMF."
+        }
+      ]
+    },
+    {
+      "page_idx": 269,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.038,
+            0.364,
+            0.053
+          ],
+          "content": "Continuous random variables"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "253"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.11,
+            0.192,
+            0.128
+          ],
+          "level": 2,
+          "content": "5.9 R"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.149,
+            0.895,
+            0.205
+          ],
+          "content": "In this section we will introduce continuous distributions in R, learn how to make basic plots, demonstrate the universality of the Uniform by simulation, and simulate arrival times in a Poisson process."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.24,
+            0.64,
+            0.259
+          ],
+          "level": 2,
+          "content": "Uniform, Normal, and Exponential distributions"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.278,
+            0.897,
+            0.316
+          ],
+          "content": "For continuous distributions, the function that starts with d is the PDF instead of the PMF. Thus, we have the following functions:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.099,
+            0.327,
+            0.896,
+            0.469
+          ],
+          "sub_type": "text",
+          "content": "• dunif, punif, runif. To evaluate the Unif(a, b) PDF at x, we use dunif $( \\mathbf { x } , \\mathbf { a } , \\mathbf { b } )$ For the CDF, we use punif(x,a,b). To generate n realizations from the Unif(a, b) distribution, we use runif(n,a,b).\n• dnorm, pnorm, rnorm. To evaluate the $\\mathcal { N } ( \\mu , \\sigma ^ { 2 } )$ PDF at $x ,$ we use dnorm(x,mu,sigma), where mu is the mean $\\mu$ and sigma is the standard deviation (not variance) σ. For the CDF, we use pnorm(x,mu,sigma). To generate n realizations from the $\\mathcal { N } ( \\mu , \\sigma ^ { 2 } )$ distribution, we use rnorm(n,mu,sigma)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.118,
+            0.479,
+            0.896,
+            0.536
+          ],
+          "content": "h 5.9.1 (Normal parameters in R). Note that we have to input the standard deviation, not the variance! For example, to get the $\\mathcal { N } ( 1 0 , 3 )$ CDF at 12, we use pnorm(12,10,sqrt(3)). Ignoring this is a common, disastrous coding error."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.547,
+            0.895,
+            0.602
+          ],
+          "content": "• dexp, pexp, rexp. To evaluate the Expo(λ) PDF at x, we use dexp(x,lambda). For the CDF, we use pexp(x,lambda). To generate n realizations from the Expo(λ) distribution, we use rexp(n,lambda)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.613,
+            0.897,
+            0.763
+          ],
+          "content": "Due to the importance of location-scale transformations for continuous distributions, R has default parameter settings for each of these three families. The default for the Uniform is Unif(0, 1), the default for the Normal is $\\mathcal { N } ( 0 , 1 )$ , and the default for the Exponential is Expo(1). For example, dunif(0.5), with no additional inputs, evaluates the Unif(0, 1) PDF at 0.5, and rnorm(10), with no additional inputs, generates 10 realizations from the $\\mathcal { N } ( 0 , 1 )$ distribution. This means there are two ways to generate a $\\mathcal { N } ( \\mu , \\sigma ^ { 2 } )$ random variable in R. After choosing our values of $\\mu$ and $\\sigma ,$ such as"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.102,
+            0.776,
+            0.225,
+            0.812
+          ],
+          "sub_type": "code",
+          "content": "```txt\nmu <- 1\nsigma <- 2\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.823,
+            0.424,
+            0.841
+          ],
+          "content": "we can do either of the following:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.102,
+            0.853,
+            0.325,
+            0.889
+          ],
+          "sub_type": "code",
+          "content": "```txt\nrnorm(1,mu,sigma)\nmu + sigma*rnorm(1)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.9,
+            0.803,
+            0.92
+          ],
+          "content": "Either way, we end up generating a draw from the $\\mathcal { N } ( \\mu , \\sigma ^ { 2 } )$ distribution."
+        }
+      ]
+    },
+    {
+      "page_idx": 270,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "254"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.068,
+            0.223,
+            0.085
+          ],
+          "level": 2,
+          "content": "Plots in R"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.108,
+            0.834,
+            0.126
+          ],
+          "content": "A simple way to plot a function in R is with the curve command. For example,"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.139,
+            0.506,
+            0.156
+          ],
+          "content": "curve(dnorm, from=-3, to=3, n=1000)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.168,
+            0.896,
+            0.263
+          ],
+          "content": "creates a plot of the standard Normal PDF from −3 to 3. What is actually happening is that R evaluates the function at a finite number of closely spaced points and connects the points with very short lines to create the illusion of a curve. The input n=1000 tells R to evaluate at 1000 points so that the curve looks very smooth; if we were to choose n=20, the piecewise linearity would become very apparent."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.274,
+            0.897,
+            0.349
+          ],
+          "content": "Another command that creates plots is called, fittingly, plot. This command has many, many possible inputs to customize what the plot looks like; for the sake of demonstration, we’ll plot the standard Normal PDF once again, using plot instead of curve."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.361,
+            0.897,
+            0.437
+          ],
+          "content": "The most important inputs to plot are a vector of x values and a vector of y values to plot. A useful command for this purpose is seq. As introduced in Chapter 1, seq(a,b,d) creates the vector of values ranging from a to b, with successive entries spaced apart by d."
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.103,
+            0.448,
+            0.324,
+            0.466
+          ],
+          "content": "\\mathrm{x} <   - \\operatorname{seq} (- 3, 3, 0. 0 1)",
+          "image_source": "images/page_270_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.103,
+            0.468,
+            0.255,
+            0.485
+          ],
+          "content": "\\mathrm{y} <   - \\mathrm{dnorm} (\\mathrm{x})",
+          "image_source": "images/page_270_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.497,
+            0.896,
+            0.591
+          ],
+          "content": "So x consists of all numbers from −3 to 3, spaced 0.01 apart, and y contains the values of the Normal PDF at each of the points in x. Now we simply plot the two with plot(x,y). The default is a scatterplot. For a line plot, we use $\\tt p l o t ( x , y , t y p e = 1 )$ . We can also set the axis labels and plot title with xlab, ylab, and main."
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.103,
+            0.603,
+            0.804,
+            0.622
+          ],
+          "content": "\\text {plot} (x, y, \\text {type} = \" l\", x \\text {lab} = \" x\", y \\text {lab} = \" d \\text {norm} (x) \", \\text {main} = \" N (0, 1) \\text {PDF}\")",
+          "image_source": "images/page_270_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.633,
+            0.896,
+            0.689
+          ],
+          "content": "The axis limits can be set manually with xlim and ylim. If, for example, you wanted the vertical axis to range from 0 to 1, you would add ylim=c(0,1) inside the plot command."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.702,
+            0.894,
+            0.739
+          ],
+          "content": "Finally, to change the color of the plot, add col=\"orange\" or col=\"green\", or whatever your favorite color is!"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.774,
+            0.393,
+            0.793
+          ],
+          "level": 2,
+          "content": "Universality with Logistic"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.813,
+            0.896,
+            0.869
+          ],
+          "content": "We proved in Example 5.3.4 that for $U \\sim \\mathrm { U n i f } ( 0 , 1 )$ , the r.v. log(U/(1 − U)) follows a Logistic distribution. In R, we can simply generate a large number of Unif(0, 1) realizations and transform them."
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.103,
+            0.882,
+            0.291,
+            0.898
+          ],
+          "content": "\\mathrm{u} <   - \\text {runif} (1 0 ^ {\\wedge} 4)",
+          "image_source": "images/page_270_equation_16.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.103,
+            0.901,
+            0.301,
+            0.919
+          ],
+          "content": "\\mathrm{x} <   - \\log (\\mathrm{u} / (1 - \\mathrm{u}))",
+          "image_source": "images/page_270_equation_17.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 271,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.039,
+            0.364,
+            0.053
+          ],
+          "content": "Continuous random variables"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "255"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.896,
+            0.162
+          ],
+          "content": "Now x contains $1 0 ^ { 4 }$ realizations from the distribution of log $( U / ( 1   -   U ) )$ . We can visualize them with a histogram, using the command hist(x). The histogram resembles a Logistic PDF, which is reassuring. To control how fine-grained the histogram is, we can set the number of breaks in the histogram: hist(x,breaks=100) produces a finer histogram, while hist(x,breaks=10) produces a coarser histogram."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.196,
+            0.401,
+            0.214
+          ],
+          "level": 2,
+          "content": "Poisson process simulation"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.233,
+            0.895,
+            0.269
+          ],
+          "content": "To simulate n arrivals in a Poisson process with rate λ, we first generate the interarrival times as i.i.d. Exponentials and store them in a vector:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.103,
+            0.281,
+            0.325,
+            0.336
+          ],
+          "sub_type": "code",
+          "content": "```r\nn <- 50\nlambda <- 10\nx <- rexp(n,lambda)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.346,
+            0.895,
+            0.381
+          ],
+          "content": "Then we convert the interarrival times into arrival times using the cumsum function, which stands for “cumulative sum”."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.104,
+            0.393,
+            0.267,
+            0.41
+          ],
+          "sub_type": "code",
+          "content": "```r\nt <- cumsum(x)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.421,
+            0.658,
+            0.437
+          ],
+          "content": "The vector t now contains all the simulated arrival times."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.522,
+            0.292,
+            0.539
+          ],
+          "level": 2,
+          "content": "5.10 Exercises"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.56,
+            0.819,
+            0.578
+          ],
+          "content": "Exercises marked with s have detailed solutions at [http://stat110.net](http://stat110.net)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.168,
+            0.605,
+            0.357,
+            0.621
+          ],
+          "level": 2,
+          "content": "PDFs and CDFs"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.633,
+            0.622,
+            0.649
+          ],
+          "content": "1. The Rayleigh distribution from Example 5.1.7 has PDF"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.417,
+            0.657,
+            0.621,
+            0.677
+          ],
+          "content": "f (x) = x e ^ {- x ^ {2} / 2}, \\quad x > 0.",
+          "image_source": "images/page_271_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.686,
+            0.478,
+            0.701
+          ],
+          "content": "Let X have the Rayleigh distribution."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.168,
+            0.711,
+            0.871,
+            0.769
+          ],
+          "sub_type": "text",
+          "content": "(a) Find $P ( 1 < X < 3 )$\n(b) Find the first quartile, median, and third quartile of X; these are defined to be the values $q _ { 1 } , q _ { 2 } , q _ { 3 }$ (respectively) such that $P ( X \\leq q _ { j } ) = j / 4$ for $j = 1 , 2 , 3$"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.132,
+            0.773,
+            0.871,
+            0.845
+          ],
+          "sub_type": "text",
+          "content": "2. (a) Make up a PDF f, with an application for which that PDF would be plausible, where $f ( x ) > 1$ for all x in a certain interval.\n(b) Show that if a PDF f has $f ( x ) > 1$ for all x in a certain interval, then that interval must have length less than 1."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.851,
+            0.692,
+            0.866
+          ],
+          "content": "3. Let F be the CDF of a continuous $\\mathbf { r } . \\mathbf { v } . ,$ and $f = F ^ { \\prime }$ be the PDF."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.168,
+            0.868,
+            0.753,
+            0.911
+          ],
+          "sub_type": "text",
+          "content": "(a) Show that g defined by $g ( x ) = 2 F ( x ) f ( x )$ is also a valid PDF.\n(b) Show that h defined by $\\begin{array} { r } { h ( x ) = \\frac { 1 } { 2 } f ( - x ) + \\frac { 1 } { 2 } f ( x ) } \\end{array}$ is also a valid PDF."
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Probability, Second Edition",
+      "authors": [
+        "Joseph K. Blitzstein;Jessica Hwang;"
+      ],
+      "created_at": "2019-01-18T11:22:30+05:30",
+      "modified_at": "2019-02-04T21:29:14+05:30",
+      "creator_application": "LaTeX with hyperref",
+      "producer_application": "pdfTeX-1.40.19",
+      "page_count": 636,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 256,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 257,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 258,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 259,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 260,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 261,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 262,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 263,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 264,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 265,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 266,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 267,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 268,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 269,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 270,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 271,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

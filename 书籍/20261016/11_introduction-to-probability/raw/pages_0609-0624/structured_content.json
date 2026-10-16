@@ -1,0 +1,1951 @@
+{
+  "pages": [
+    {
+      "page_idx": 608,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "592"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.145
+          ],
+          "content": "for some $n \\times 1$ column vector v, where the elements of v are not all zero. The vector v is called an eigenvector of A, or a right eigenvector. (Similarly, a left eigenvector of A is a row vector w satisfying $\\mathbf { w } A = \\lambda \\mathbf { w }$ for some λ.) This definition says that when A and v are multiplied, v just gets stretched by the constant λ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.154,
+            0.897,
+            0.286
+          ],
+          "content": "Some matrices have no real eigenvalues, but the Perron-Frobenius theorem tells us that in a special case that is of particular interest to us in Chapter 11, eigenvalues exist and have nice properties. Let A be a square matrix whose entries are nonnegative and whose rows sum to 1. Further assume that for all i and $j ,$ there exists $k \\geq 1$ such that the row i, column $j$ entry of $A ^ { k }$ is positive. Then the Perron-Frobenius theorem says that 1 is an eigenvalue of A, which is in fact the largest eigenvalue of $A ,$ and there is a corresponding eigenvector whose entries are all positive."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.369,
+            0.416,
+            0.389
+          ],
+          "level": 2,
+          "content": "A.4 Difference equations"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.407,
+            0.896,
+            0.445
+          ],
+          "content": "A difference equation describes a sequence of numbers recursively in terms of earlier terms in the sequence. For example, $a _ { 0 } , a _ { 1 } , \\ldots$ is a Fibonacci sequence if"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.419,
+            0.464,
+            0.579,
+            0.48
+          ],
+          "content": "a _ {i} = a _ {i - 1} + a _ {i - 2}",
+          "image_source": "images/page_608_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.496,
+            0.897,
+            0.572
+          ],
+          "content": "for all $i \\geq 2$ . There are infinitely many Fibonacci sequences, but such a sequence is uniquely determined after $a _ { 0 }$ and $a _ { 1 }$ are specified (these are called the initial conditions or boundary conditions). For example, $a_{0}=0,a_{1}=1$ yields the Fibonacci sequence 0, 1, 1, 2, 3, 5, 8, 13, . . . ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.581,
+            0.896,
+            0.619
+          ],
+          "content": "Difference equations often arise in probability, especially when applying LOTP. In this section, we will show how to solve difference equations of the form"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.389,
+            0.638,
+            0.609,
+            0.656
+          ],
+          "content": "p _ {i} = p \\cdot p _ {i + 1} + q \\cdot p _ {i - 1},",
+          "image_source": "images/page_608_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.67,
+            0.896,
+            0.723
+          ],
+          "content": "where $p \\neq 0$ and $q = 1 - p .$ (This equation comes up in the gambler’s ruin problem.) The first step is to guess a solution of the form $p _ { i } = x ^ { i }$ . Plugging this into the above, we have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.388,
+            0.725,
+            0.61,
+            0.747
+          ],
+          "content": "x ^ {i} = p \\cdot x ^ {i + 1} + q \\cdot x ^ {i - 1},",
+          "image_source": "images/page_608_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.756,
+            0.896,
+            0.829
+          ],
+          "content": "which reduces to $p x ^ { 2 } - x + q = 0$ . This is called the characteristic equation, and the solution to the difference equation depends on whether the characteristic equation has one or two distinct roots. If there are two distinct roots $r _ { 1 }$ and $r _ { 2 }$ , then the solution is of the form"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.425,
+            0.831,
+            0.572,
+            0.853
+          ],
+          "content": "p _ {i} = a r _ {1} ^ {i} + b r _ {2} ^ {i},",
+          "image_source": "images/page_608_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.862,
+            0.896,
+            0.897
+          ],
+          "content": "for some constants a and b. If there is only one distinct root $r ,$ then the solution is of the form"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.423,
+            0.899,
+            0.573,
+            0.92
+          ],
+          "content": "p _ {i} = a r ^ {i} + b i r ^ {i}.",
+          "image_source": "images/page_608_equation_15.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 609,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.038,
+            0.155,
+            0.052
+          ],
+          "content": "Math"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.052
+          ],
+          "content": "593"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.068,
+            0.734,
+            0.087
+          ],
+          "content": "In our case, the characteristic equation has roots 1 and $q / p ,$ since"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.243,
+            0.106,
+            0.757,
+            0.149
+          ],
+          "content": "\\frac {1 \\pm \\sqrt {1 - 4 p (1 - p)}}{2 p} = \\frac {1 \\pm \\sqrt {(2 p - 1) ^ {2}}}{2 p} = \\frac {1 \\pm | 2 p - 1 |}{2 p}",
+          "image_source": "images/page_609_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.166,
+            0.896,
+            0.204
+          ],
+          "content": "is $( 1 + 2 p - 1 ) / ( 2 p ) = 1 { \\mathrm { ~ o r ~ } } ( 2 - 2 p ) / ( 2 p ) = q / p .$ The roots are distinct if $p \\neq q$ and are both equal to 1 if $p = q$ . So we have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.354,
+            0.223,
+            0.632,
+            0.284
+          ],
+          "content": "p _ {i} = \\left\\{ \\begin{array}{l l} a + b \\left(\\frac {q}{p}\\right) ^ {i}, & p \\neq q, \\\\ a + b i, & p = q. \\end{array} \\right.",
+          "image_source": "images/page_609_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.303,
+            0.896,
+            0.359
+          ],
+          "content": "This is called the general solution of the difference equation, since we have not yet specified the constants a and b. To get a specific solution, we need to know two points in the sequence in order to solve for $a$ and b."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.445,
+            0.429,
+            0.466
+          ],
+          "level": 2,
+          "content": "A.5 Differential equations"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.486,
+            0.895,
+            0.543
+          ],
+          "content": "Differential equations are the continuous version of difference equations. A differential equation uses derivatives to describe a function or collection of functions. For example, the differential equation"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.456,
+            0.561,
+            0.543,
+            0.598
+          ],
+          "content": "\\frac {d y}{d x} = 3 y",
+          "image_source": "images/page_609_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.614,
+            0.896,
+            0.69
+          ],
+          "content": "describes a collection of functions that have the following property: the instantaneous rate of change of the function at any point $( x , y )$ is equal to $3 y$ . This is an example of a separable differential equation because we can separate the $x ^ { \\prime } \\mathrm { s }$ and $y ^ { \\flat } \\mathrm { S } _ { 1 }$ , putting them on opposite sides of the equation:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.449,
+            0.707,
+            0.55,
+            0.746
+          ],
+          "content": "\\frac {d y}{y} = 3 d x.",
+          "image_source": "images/page_609_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.764,
+            0.784,
+            0.783
+          ],
+          "content": "Now we can integrate both sides, giving log $y = 3 x + c ,$ or equivalently,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.449,
+            0.801,
+            0.548,
+            0.823
+          ],
+          "content": "y = C e ^ {3 x},",
+          "image_source": "images/page_609_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.844,
+            0.896,
+            0.919
+          ],
+          "content": "where $C$ is any constant. This is called the general solution of the differential equation, and it tells us that all functions satisfying the differential equation are of the form $y = C e ^ { 3 x }$ for some $C .$ To get a specific solution, we need to specify one point on the graph, which allows us to solve for $C .$"
+        }
+      ]
+    },
+    {
+      "page_idx": 610,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "594"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.109,
+            0.392,
+            0.128
+          ],
+          "level": 2,
+          "content": "A.6 Partial derivatives"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.148,
+            0.896,
+            0.22
+          ],
+          "content": "If you can do ordinary derivatives, you can do partial derivatives: just hold all the other input variables constant except for the one you’re differentiating with respect to. For example, let $f ( x , y ) = y \\sin ( x ^ { 2 }   +   y ^ { 3 } )$ . Then the partial derivative with respect to x is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.363,
+            0.219,
+            0.639,
+            0.255
+          ],
+          "content": "\\frac {\\partial f (x , y)}{\\partial x} = 2 x y \\cos (x ^ {2} + y ^ {3}),",
+          "image_source": "images/page_610_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.261,
+            0.545,
+            0.279
+          ],
+          "content": "and the partial derivative with respect to y is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.294,
+            0.292,
+            0.706,
+            0.331
+          ],
+          "content": "\\frac {\\partial f (x , y)}{\\partial y} = \\sin (x ^ {2} + y ^ {3}) + 3 y ^ {3} \\cos (x ^ {2} + y ^ {3}).",
+          "image_source": "images/page_610_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.344,
+            0.895,
+            0.382
+          ],
+          "content": "These are first order partial derivatives. If we take a partial derivative of a first order partial derivative, we get a second order partial derivative, such as"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.182,
+            0.394,
+            0.819,
+            0.436
+          ],
+          "content": "\\frac {\\partial^ {2} f (x , y)}{\\partial y \\partial x} = \\frac {\\partial}{\\partial y} \\left(\\frac {\\partial f (x , y)}{\\partial x}\\right) = 2 x (\\cos (x ^ {2} + y ^ {3}) - 3 y ^ {3} \\sin (x ^ {2} + y ^ {3})).",
+          "image_source": "images/page_610_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.449,
+            0.895,
+            0.486
+          ],
+          "content": "We get the same result if we take the partial derivatives in the opposite order (with respect to y and then with respect to x):"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.182,
+            0.501,
+            0.819,
+            0.543
+          ],
+          "content": "\\frac {\\partial^ {2} f (x , y)}{\\partial x \\partial y} = \\frac {\\partial}{\\partial x} \\left(\\frac {\\partial f (x , y)}{\\partial y}\\right) = 2 x (\\cos (x ^ {2} + y ^ {3}) - 3 y ^ {3} \\sin (x ^ {2} + y ^ {3})).",
+          "image_source": "images/page_610_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.555,
+            0.747,
+            0.573
+          ],
+          "content": "Under mild technical assumptions, it is also true for general f that"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.389,
+            0.586,
+            0.611,
+            0.628
+          ],
+          "content": "\\frac {\\partial^ {2} f (x , y)}{\\partial x \\partial y} = \\frac {\\partial^ {2} f (x , y)}{\\partial y \\partial x}.",
+          "image_source": "images/page_610_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.65,
+            0.896,
+            0.688
+          ],
+          "content": "The Jacobian of a transformation which maps $( x _ { 1 } , \\ldots , x _ { n } )$ to $( y _ { 1 } , \\ldots , y _ { n } )$ is the $n \\times n$ matrix of all possible first order partial derivatives, given by"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.34,
+            0.7,
+            0.658,
+            0.776
+          ],
+          "content": "\\frac {\\partial \\mathbf {y}}{\\partial \\mathbf {x}} = \\left( \\begin{array}{c c c c} \\frac {\\partial y _ {1}}{\\partial x _ {1}} & \\frac {\\partial y _ {1}}{\\partial x _ {2}} & \\dots & \\frac {\\partial y _ {1}}{\\partial x _ {n}} \\\\ \\vdots & \\vdots & & \\vdots \\\\ \\frac {\\partial y _ {n}}{\\partial x _ {1}} & \\frac {\\partial y _ {n}}{\\partial x _ {2}} & \\dots & \\frac {\\partial y _ {n}}{\\partial x _ {n}} \\end{array} \\right).",
+          "image_source": "images/page_610_equation_14.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.843,
+            0.387,
+            0.864
+          ],
+          "level": 2,
+          "content": "A.7 Multiple integrals"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.881,
+            0.895,
+            0.919
+          ],
+          "content": "If you can do single integrals, you can do multiple integrals: just do more than one integral, holding variables other than the current variable of integration constant."
+        }
+      ]
+    },
+    {
+      "page_idx": 611,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.039,
+            0.156,
+            0.053
+          ],
+          "content": "Math"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "595"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.069,
+            0.232,
+            0.087
+          ],
+          "content": "For example,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.241,
+            0.097,
+            0.757,
+            0.265
+          ],
+          "content": "\\begin{array}{l} \\int_ {0} ^ {1} \\int_ {0} ^ {y} (x - y) ^ {2} d x d y = \\int_ {0} ^ {1} \\int_ {0} ^ {y} (x ^ {2} - 2 x y + y ^ {2}) d x d y \\\\ = \\int_ {0} ^ {1} \\left(\\left(x ^ {3} / 3 - x ^ {2} y + x y ^ {2}\\right) \\bigg | _ {0} ^ {y}\\right) d y \\\\ = \\int_ {0} ^ {1} (y ^ {3} / 3 - y ^ {3} + y ^ {3}) d y \\\\ = \\frac {1}{1 2}. \\\\ \\end{array}",
+          "image_source": "images/page_611_equation_3.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.294,
+            0.525,
+            0.313
+          ],
+          "level": 2,
+          "content": "A.7.1 Change of order of integration"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.331,
+            0.897,
+            0.387
+          ],
+          "content": "We can also integrate in the other order, dydx rather than $d x d y ,$ as long as we are careful about the limits of integration. Since we’re integrating over all $( x , y )$ with x and y between 0 and 1 such that $x \\leq y$ , to integrate the other way we write"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.206,
+            0.395,
+            0.793,
+            0.571
+          ],
+          "content": "\\begin{array}{l} \\int_ {0} ^ {1} \\int_ {x} ^ {1} (x - y) ^ {2} d y d x = \\int_ {0} ^ {1} \\int_ {x} ^ {1} (x ^ {2} - 2 x y + y ^ {2}) d y d x \\\\ = \\int_ {0} ^ {1} \\left(\\left(x ^ {2} y - x y ^ {2} + y ^ {3} / 3\\right) \\Bigg | _ {x} ^ {1}\\right) d x \\\\ = \\int_ {0} ^ {1} (x ^ {2} - x + 1 / 3 - x ^ {3} + x ^ {3} - x ^ {3} / 3) d x \\\\ = \\frac {1}{1 2}. \\\\ \\end{array}",
+          "image_source": "images/page_611_equation_6.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.6,
+            0.406,
+            0.618
+          ],
+          "level": 2,
+          "content": "A.7.2 Change of variables"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.637,
+            0.896,
+            0.713
+          ],
+          "content": "In making a change of variables with multiple integrals, a Jacobian is needed. To simplify notation, we will discuss the two-dimensional version; the n-dimensional version is analogous. Suppose we make an invertible transformation from $( x , y )$ to $( u , v )$ , where the inverse transformation is given by"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.727,
+            0.614,
+            0.747
+          ],
+          "content": "x = g (u, v), y = h (u, v).",
+          "image_source": "images/page_611_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.76,
+            0.895,
+            0.797
+          ],
+          "content": "Let A be a region in the $(x,y)  -plane$ and B be the corresponding region in the $(u, v)  -plane$ . Then the change of variables formulas says that"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.219,
+            0.81,
+            0.781,
+            0.86
+          ],
+          "content": "\\iint_ {A} f (x, y) d x d y = \\iint_ {B} f (g (u, v), h (u, v)) \\cdot | \\left| \\frac {\\partial (x , y)}{\\partial (u , v)} \\right| | d u d v,",
+          "image_source": "images/page_611_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.874,
+            0.895,
+            0.92
+          ],
+          "content": "where $\\mid \\left[ \\frac { \\partial ( x ,   y ) } { \\partial ( u ,   v ) } \\right] \\mid$ is the absolute value of the determinant of the Jacobian matrix. A few technical assumptions are needed for this result, such as that the partial"
+        }
+      ]
+    },
+    {
+      "page_idx": 612,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "596"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.068,
+            0.893,
+            0.105
+          ],
+          "continues_prev": true,
+          "content": "derivatives that appear in the Jacobian matrix exist and are continuous, and that the determinant of the Jacobian matrix is never 0."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.115,
+            0.894,
+            0.172
+          ],
+          "content": "For example, let’s find the area of a circle of radius 1. To find the area of a region, we just need to integrate 1 over that region (so the part that may be tricky is the limits of integration; the integrand is just 1). So the area is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.226,
+            0.185,
+            0.763,
+            0.242
+          ],
+          "content": "\\iint_ {x ^ {2} + y ^ {2} \\leq 1} 1 d x d y = \\int_ {- 1} ^ {1} \\int_ {- \\sqrt {1 - y ^ {2}}} ^ {\\sqrt {1 - y ^ {2}}} 1 d x d y = 2 \\int_ {- 1} ^ {1} \\sqrt {1 - y ^ {2}} d y.",
+          "image_source": "images/page_612_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.255,
+            0.894,
+            0.331
+          ],
+          "content": "Note that the limits for the inner variable $( x )$ of the double integral can depend on the outer variable $( y )$ , while the outer limits are constants. The last integral can be done with a trigonometric substitution, but instead let’s simplify the problem by transforming to polar coordinates: let"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.389,
+            0.347,
+            0.609,
+            0.366
+          ],
+          "content": "x = r \\cos \\theta , y = r \\sin \\theta ,",
+          "image_source": "images/page_612_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.381,
+            0.894,
+            0.418
+          ],
+          "content": "where $r$ is the distance from $( x , y )$ to the origin and $\\theta \\in [ 0 , 2 \\pi )$ is the angle. The Jacobian matrix of this transformation is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.365,
+            0.429,
+            0.632,
+            0.47
+          ],
+          "content": "\\frac {\\partial (x , y)}{\\partial (r , \\theta)} = \\left( \\begin{array}{c c} \\cos \\theta & - r \\sin \\theta \\\\ \\sin \\theta & r \\cos \\theta , \\end{array} \\right)",
+          "image_source": "images/page_612_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.484,
+            0.893,
+            0.522
+          ],
+          "content": "so the absolute value of the determinant of the Jacobian is $r ( \\cos ^ { 2 } \\theta + \\sin ^ { 2 } \\theta ) = r$ That is, dxdy becomes rdrdθ. So the area of the circle is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.35,
+            0.534,
+            0.649,
+            0.578
+          ],
+          "content": "\\int_ {0} ^ {2 \\pi} \\int_ {0} ^ {1} r d r d \\theta = \\int_ {0} ^ {2 \\pi} \\frac {1}{2} d \\theta = \\pi .",
+          "image_source": "images/page_612_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.591,
+            0.894,
+            0.628
+          ],
+          "content": "For a circle of radius $r ,$ it follows immediately that the area is $\\pi r ^ { 2 }$ since we can convert our units of measurement to the unit for which the radius is 1."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.638,
+            0.894,
+            0.695
+          ],
+          "content": "This may seem like a lot of work just to get such a familiar result, but it served as illustration and with similar methods we can get the volume of a ball in any number of dimensions! It turns out that the volume of a ball of radius 1 in $\\mathbb { R } ^ { n }$ is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.414,
+            0.704,
+            0.586,
+            0.749
+          ],
+          "content": "V _ {n} = \\frac {\\pi^ {n / 2}}{\\Gamma (n / 2 + 1)},",
+          "image_source": "images/page_612_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.76,
+            0.595,
+            0.779
+          ],
+          "content": "where Γ is the gamma function (see Section A.2.7)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.862,
+            0.24,
+            0.881
+          ],
+          "level": 2,
+          "content": "A.8 Sums"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.899,
+            0.784,
+            0.919
+          ],
+          "content": "There are several kinds of sums that come up frequently in probability."
+        }
+      ]
+    },
+    {
+      "page_idx": 613,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.039,
+            0.155,
+            0.053
+          ],
+          "content": "Math"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "597"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.068,
+            0.389,
+            0.085
+          ],
+          "level": 2,
+          "content": "A.8.1 Binomial theorem"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.109,
+            0.427,
+            0.126
+          ],
+          "content": "The binomial theorem states that"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.368,
+            0.143,
+            0.632,
+            0.192
+          ],
+          "content": "(x + y) ^ {n} = \\sum_ {k = 0} ^ {n} \\binom {n} {k} x ^ {k} y ^ {n - k},",
+          "image_source": "images/page_613_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.211,
+            0.896,
+            0.271
+          ],
+          "content": "for any nonnegative integer n. Here $\\left( \\begin{matrix} { n } \\\\ { k } \\\\ \\end{matrix} \\right)$ is a binomial coefficient, defined as the number of ways to choose k objects out of $n ,$ with order not mattering. An explicit formula for $\\left( \\begin{matrix} { n } \\\\ { k } \\\\ \\end{matrix} \\right)$ in terms of factorials for $0 \\leq k \\leq n$ is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.412,
+            0.287,
+            0.592,
+            0.331
+          ],
+          "content": "\\binom{n}{k} = \\frac{n!}{(n - k)!k!}.",
+          "image_source": "images/page_613_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.347,
+            0.68,
+            0.366
+          ],
+          "content": "A proof of the binomial theorem is given in Example 1.4.19."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.378,
+            0.896,
+            0.473
+          ],
+          "content": "Sometimes $0 ^ { 0 }$ is said to be undefined, but there are several strong arguments for defining it to be 1, and we will take $0 ^ { 0 } = 1$ in this book. For one simple reason for doing so, consider the case $x = 0,   y = 1$ in the binomial theorem. Then the left-hand side is $1 ^ { n } = 1$ , and we need to have $0 ^ { 0 } = 1$ in order to make the right-hand side also equal to 1."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.51,
+            0.375,
+            0.528
+          ],
+          "level": 2,
+          "content": "A.8.2 Geometric series"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.55,
+            0.896,
+            0.588
+          ],
+          "content": "A series of the form $\\textstyle \\sum _ { n = 0 } ^ { \\infty } x ^ { n }$ is called a geometric series. For $| x | < 1$ , the series converges and we have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.422,
+            0.592,
+            0.577,
+            0.641
+          ],
+          "content": "\\sum_ {n = 0} ^ {\\infty} x ^ {n} = \\frac {1}{1 - x}.",
+          "image_source": "images/page_613_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.653,
+            0.894,
+            0.691
+          ],
+          "content": "The series diverges if $| x | \\geq 1$ . A series of the same form except with finitely many terms is called a finite geometric series. For $x \\neq 1$ , the sum is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.406,
+            0.709,
+            0.592,
+            0.759
+          ],
+          "content": "\\sum_ {k = 0} ^ {n} x ^ {k} = \\frac {1 - x ^ {n + 1}}{1 - x}.",
+          "image_source": "images/page_613_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.776,
+            0.896,
+            0.853
+          ],
+          "content": "Note that the $n + 1$ in the exponent is the number of terms in the sum. If the sum starts at $k = m$ rather than $k = 0$ (where m is an integer with $0 \\leq m \\leq n )$ , then we can easily reduce to the case where the sum starts at 0. Making the substitution $j = k - m$ , we have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.246,
+            0.871,
+            0.753,
+            0.922
+          ],
+          "content": "\\sum_ {k = m} ^ {n} x ^ {k} = \\sum_ {j = 0} ^ {n - m} x ^ {j + m} = x ^ {m} \\sum_ {j = 0} ^ {n - m} x ^ {j} = x ^ {m} \\cdot \\frac {1 - x ^ {n - m + 1}}{1 - x}.",
+          "image_source": "images/page_613_equation_15.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 614,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "598"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.068,
+            0.398,
+            0.086
+          ],
+          "level": 2,
+          "content": "A.8.3 Taylor series for $e ^ { x }$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.108,
+            0.357,
+            0.126
+          ],
+          "content": "The Taylor series for $e ^ { x }$ is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.389,
+            0.145,
+            0.609,
+            0.193
+          ],
+          "content": "\\sum_ {n = 0} ^ {\\infty} \\frac {x ^ {n}}{n !} = e ^ {x}, \\text {for all} x.",
+          "image_source": "images/page_614_equation_4.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.254,
+            0.79,
+            0.273
+          ],
+          "level": 2,
+          "content": "A.8.4 Harmonic series and other sums with a fixed exponent"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.293,
+            0.896,
+            0.35
+          ],
+          "content": "It is also useful to know that $\\textstyle \\sum _ { n = 1 } ^ { \\infty } 1 / n ^ { c }$ converges for $c > 1$ and diverges for $c \\leq 1$ For $c = 1$ , this is called the harmonic series. The sum of the first n terms of the harmonic series can be approximated using"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.406,
+            0.368,
+            0.592,
+            0.416
+          ],
+          "content": "\\sum_ {k = 1} ^ {n} \\frac {1}{k} \\approx \\log (n) + \\gamma",
+          "image_source": "images/page_614_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.433,
+            0.701,
+            0.451
+          ],
+          "content": "for n large, where $\\gamma \\approx 0 . 5 7 7$ is the Euler-Mascheroni constant."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.464,
+            0.504,
+            0.482
+          ],
+          "content": "The sum of the first n positive integers is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.347,
+            0.501,
+            0.651,
+            0.548
+          ],
+          "content": "\\sum_ {k = 1} ^ {n} k = n (n + 1) / 2 = \\binom{n + 1}{2}.",
+          "image_source": "images/page_614_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.566,
+            0.895,
+            0.603
+          ],
+          "content": "It follows from this identity, for example, that the sum of the first n odd positive integers is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.256,
+            0.605,
+            0.742,
+            0.655
+          ],
+          "content": "\\sum_ {k = 1} ^ {n} (2 k - 1) = 2 \\sum_ {k = 1} ^ {n} k - \\sum_ {k = 1} ^ {n} 1 = n (n + 1) - n = n ^ {2}.",
+          "image_source": "images/page_614_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.679,
+            0.412,
+            0.696
+          ],
+          "content": "For squares of integers, we have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.359,
+            0.715,
+            0.639,
+            0.763
+          ],
+          "content": "\\sum_ {k = 1} ^ {n} k ^ {2} = n (n + 1) (2 n + 1) / 6.",
+          "image_source": "images/page_614_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.78,
+            0.895,
+            0.817
+          ],
+          "content": "For cubes of integers, amazingly, the sum is the square of the sum of the first n positive integers! That is,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.835,
+            0.612,
+            0.883
+          ],
+          "content": "\\sum_ {k = 1} ^ {n} k ^ {3} = (n (n + 1) / 2) ^ {2}.",
+          "image_source": "images/page_614_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.9,
+            0.714,
+            0.919
+          ],
+          "content": "Exercise 22 from Chapter 1 asks for a story proof of this result."
+        }
+      ]
+    },
+    {
+      "page_idx": 615,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.039,
+            0.155,
+            0.053
+          ],
+          "content": "Math"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "599"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.109,
+            0.406,
+            0.129
+          ],
+          "level": 2,
+          "content": "A.9 Pattern recognition"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.147,
+            0.896,
+            0.278
+          ],
+          "content": "Much of math and statistics is really about pattern recognition: seeing the essential structure of a problem, recognizing when one problem is essentially the same as another problem (just in a different guise), noticing symmetry, and so on. We will see many examples of this kind of thinking in this book. For example, suppose we have the series $\\begin{array} { r } { \\sum _ { k = 0 } ^ { \\infty } e ^ { t k } e ^ { - \\lambda } \\lambda ^ { k } / k ! } \\end{array}$ , with λ a positive constant. The $e ^ { - \\lambda }$ <sub>can</sub> be taken out from the sum, and then the structure of the series exactly matches up with the structure of the Taylor series for $e ^ { x }$ . Therefore"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.25,
+            0.287,
+            0.748,
+            0.336
+          ],
+          "content": "\\sum_ {k = 0} ^ {\\infty} \\frac {e ^ {t k} e ^ {- \\lambda} \\lambda^ {k}}{k !} = e ^ {- \\lambda} \\sum_ {k = 0} ^ {\\infty} \\frac {(\\lambda e ^ {t}) ^ {k}}{k !} = e ^ {- \\lambda} e ^ {\\lambda e ^ {t}} = e ^ {\\lambda (e ^ {t} - 1)},",
+          "image_source": "images/page_615_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.345,
+            0.281,
+            0.362
+          ],
+          "content": "valid for all real t."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.373,
+            0.896,
+            0.429
+          ],
+          "content": "Similarly, suppose we want the Taylor series for $1 / ( 1 - x ^ { 3 } )$ about $x = 0$ . It would be tedious to start taking derivatives of this function. Instead, note that this function is reminiscent of the result of summing a geometric series. Therefore"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.414,
+            0.439,
+            0.586,
+            0.487
+          ],
+          "content": "\\frac {1}{1 - x ^ {3}} = \\sum_ {n = 0} ^ {\\infty} x ^ {3 n},",
+          "image_source": "images/page_615_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.497,
+            0.894,
+            0.534
+          ],
+          "content": "for $| x ^ { 3 } |   <   1$ (which is equivalent to $| x |   <   1 )$ . What matters is the structure, not what names we use for variables!"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.618,
+            0.627,
+            0.638
+          ],
+          "level": 2,
+          "content": "A.10 Common sense and checking answers"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.655,
+            0.894,
+            0.693
+          ],
+          "content": "It is very easy to make mistakes in probability, so checking answers is especially important. Some useful strategies for checking answers are:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.099,
+            0.703,
+            0.892,
+            0.918
+          ],
+          "sub_type": "text",
+          "content": "• seeing whether the answer makes sense intuitively (though as we have often seen in this book, probability has many results that seem counterintuitive at first);\n• making sure your answer isn’t a category error;\n• making sure you’re avoiding biohazards;\n• trying out simple cases;\n• trying out extreme cases;\n• looking for alternative methods to solve the problem (including methods that may only give a bound or approximation, such as applying one of the inequalities from Chapter 10 or using R to run a simulation)."
+        }
+      ]
+    },
+    {
+      "page_idx": 616,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            0.288,
+            0.291,
+            0.393,
+            0.364
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_616_image_0.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.403,
+            0.3,
+            0.717,
+            0.336
+          ],
+          "level": 2,
+          "content": "Taylor & Francis"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.405,
+            0.337,
+            0.635,
+            0.355
+          ],
+          "content": "Taylor & Francis Group"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.405,
+            0.357,
+            0.598,
+            0.371
+          ],
+          "content": "http://taylorandfrancis.com"
+        }
+      ]
+    },
+    {
+      "page_idx": 617,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.061,
+            0.148,
+            0.09
+          ],
+          "content": ""
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.116,
+            0.136,
+            0.139
+          ],
+          "content": "R"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.302,
+            0.265,
+            0.32
+          ],
+          "level": 2,
+          "content": "B.1 Vectors"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.202,
+            0.379,
+            0.797,
+            0.915
+          ],
+          "content": "| Command | What it does |\n| --- | --- |\n| c(1,1,0,2.7,3.1) | creates the vector (1,1,0,2.7,3.1) |\n| 1:100 | creates the vector (1,2,...,100) |\n| (1:100)^3 | creates the vector ($1^3$,$2^3$,...,$100^3$) |\n| rep(0,50) | creates the vector (0,0,...,0) of length 50 |\n| seq(0,99,3) | creates the vector (0,3,6,9,...,99) |\n| v[5] | 5th entry of vector v (index starts at 1) |\n| v[-5] | all but the 5th entry of v |\n| v[c(3,1,4)] | 3rd, 1st, 4th entries of vector v |\n| v[v>2] | entries of v that exceed 2 |\n| which(v>2) | indices of v such that entry exceeds 2 |\n| which(v==7) | indices of v such that entry equals 7 |\n| min(v) | minimum of v |\n| max(v) | maximum of v |\n| which.max(v) | indices where max(v) is achieved |\n| sum(v) | sum of the entries in v |\n| cumsum(v) | cumulative sums of the entries in v |\n| prod(v) | product of the entries in v |\n| rank(v) | ranks of the entries in v |\n| length(v) | length of vector v |\n| sort(v) | sorts vector v (in increasing order) |\n| unique(v) | lists each element of v once, without duplicates |\n| tabulate(v) | tallies how many times each element of v occurs |\n| table(v) | same as tabulate(v), except in table format |\n| c(v,w) | concatenates vectors v and w |\n| union(v,w) | union of v and w as sets |\n| intersect(v,w) | intersection of v and w as sets |\n| v+w | adds v and w entrywise (recycling if needed) |\n| v*w | multiplies v and w entrywise (recycling if needed) |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_617_table_3.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.936,
+            0.894,
+            0.95
+          ],
+          "content": "601"
+        }
+      ]
+    },
+    {
+      "page_idx": 618,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.14,
+            0.053
+          ],
+          "content": "602"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.115,
+            0.152,
+            0.885,
+            0.509
+          ],
+          "content": "| Command | What it does |\n| --- | --- |\n| matrix(c(1,3,5,7), nrow=2, ncol=2) | creates the matrix $\\begin{pmatrix} 1 & 5 \\\\ 3 & 7 \\end{pmatrix}$ |\n| dim(A) | gives the dimensions of matrix A |\n| diag(A) | extracts the diagonal of matrix A |\n| diag(c(1,7)) | creates the diagonal matrix $\\begin{pmatrix} 1 & 0 \\\\ 0 & 7 \\end{pmatrix}$ |\n| rbind(u,v,w) | binds vectors u,v,w into a matrix, as rows |\n| cbind(u,v,w) | binds vectors u,v,w into a matrix, as columns |\n| t(A) | transpose of matrix A |\n| A[2,3] | row 2, column 3 entry of matrix A |\n| A[2,] | row 2 of matrix A (as a vector) |\n| A[,3] | column 3 of matrix A (as a vector) |\n| A[c(1,3),c(2,4)] | submatrix of A, keeping rows 1,3 and columns 2,4 |\n| rowSums(A) | row sums of matrix A |\n| rowMeans(A) | row averages of matrix A |\n| colSums(A) | column averages of matrix A |\n| colMeans(A) | column means of matrix A |\n| eigen(A) | eigenvalues and eigenvectors of matrix A |\n| solve(A) | $A^{-1}$ |\n| solve(A,b) | solves Ax = b for x (where b is a column vector) |\n| A %*% B | matrix multiplication AB |\n| A %~% k | matrix power $A^{k}$ (using expm package) |",
+          "captions": [
+            {
+              "bbox": [
+                0.105,
+                0.11,
+                0.279,
+                0.128
+              ],
+              "content": "B.2 Matrices"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_618_table_3.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.117,
+            0.62,
+            0.884,
+            0.916
+          ],
+          "content": "| Command | What it does |\n| --- | --- |\n| abs(x) | $\\|x\\|$ |\n| exp(x) | $e^{x}$ |\n| log(x) | $\\log(n)$ |\n| log(x,b) | $\\log_{b}(n)$ |\n| sqrt(x) | $\\sqrt{x}$ |\n| floor(x) | $\\lfloor x \\rfloor$ |\n| ceiling(x) | $\\lceil x \\rceil$ |\n| factorial(n) | $n!$ |\n| lfactorial(n) | $\\log(n!)$ (helps prevent overflow) |\n| gamma(a) | $\\Gamma(a)$ |\n| lgamma(a) | $\\log(\\Gamma(a))$ (helps prevent overflow) |\n| choose(n,k) | binomial coefficient $\\binom{n}{k}$ |\n| pbirthday(k) | solves birthday problem for k people |\n| if (x>0) x^2 else x^3 | $x^{2}$ if $x > 0$, $x^{3}$ otherwise (piecewise) |\n| f &lt;- function(x) exp(-x) | defines the function f by $f(x) = e^{-x}$ |\n| integrate(f, lower=0, upper=Inf) | finds $\\int_{0}^{\\infty} f(x) dx$ numerically |\n| optimize(f,lower=0,upper=5,maximum=TRUE) | maximizes f numerically on [0,5] |\n| uniroot(f, lower=0, upper=5) | searches numerically for a zero of f in [0,5] |",
+          "captions": [
+            {
+              "bbox": [
+                0.105,
+                0.578,
+                0.24,
+                0.596
+              ],
+              "content": "B.3 Math"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_618_table_5.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 619,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.107,
+            0.039,
+            0.127,
+            0.053
+          ],
+          "content": "R"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "603"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.126,
+            0.468,
+            0.146
+          ],
+          "level": 2,
+          "content": "B.4 Sampling and simulation"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.115,
+            0.201,
+            0.887,
+            0.299
+          ],
+          "content": "| Command | What it does |\n| --- | --- |\n| sample(7) | random permutation of 1,2,...,7 |\n| sample(52,5) | picks 5 times from 1,2,...,52 (don’t replace) |\n| sample(letters,5) | picks 5 random letters of the alphabet (don’t replace) |\n| sample(3,5,replace=TRUE,prob=p) | picks 5 times from 1,2,3 with probabilities p (replace) |\n| replicate(10^4,experiment) | simulates 10^4 runs of experiment |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_619_table_3.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.384,
+            0.275,
+            0.404
+          ],
+          "level": 2,
+          "content": "B.5 Plotting"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.107,
+            0.472,
+            0.903,
+            0.63
+          ],
+          "content": "| Command | What it does |\n| --- | --- |\n| curve(f, from=a, to=b) | graphs the function f from a to b |\n| plot(x,y) | creates scatter plot of the points (xi,yi) |\n| plot(x,y,type=\"l\") | creates line plot of the points (xi,yi) |\n| points(x,y) | adds the points (xi,yi) to the plot |\n| lines(x,y) | adds line segments through the (xi,yi) to the plot |\n| abline(a,b) | adds the line with intercept a, slope b to the plot |\n| hist(x, breaks=b, col=\"blue\") | blue histogram of the values in x, with b bins suggested |\n| par(new=TRUE) | tells R not to clear the palette when we make our next plot |\n| par(mfrow=c(1,2)) | tells R we want 2 side-by-side plots (a 1 by 2 array of plots) |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_619_table_5.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.715,
+            0.339,
+            0.736
+          ],
+          "level": 2,
+          "content": "B.6 Programming"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.106,
+            0.803,
+            0.922,
+            0.916
+          ],
+          "content": "| Command | What it does |\n| --- | --- |\n| x &lt;- pi | sets x equal to π |\n| x>3 &amp;&amp; x&lt;5 | Is x > 3 and x &lt; 5? (TRUE/FALSE) |\n| x>3 \\|\\| x&lt;5 | Is x > 3 or x &lt; 5? (TRUE/FALSE) |\n| if (n>3) x &lt;- x+1 | adds 1 to x if n > 3 |\n| if (n==0) x &lt;- x+1 else x &lt;- x+2 | adds 1 to x if n = 0, else adds 2 |\n| v&lt;-rep(0,50); for (k in 1:50) v[k]&lt;-pbirthday(k) | solves birthday problem up to 50 people |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_619_table_7.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 620,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "604"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.109,
+            0.4,
+            0.129
+          ],
+          "level": 2,
+          "content": "B.7 Summary statistics"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.195,
+            0.153,
+            0.805,
+            0.296
+          ],
+          "content": "| Command | What it does |\n| --- | --- |\n| mean(v) | sample mean of vector v |\n| var(v) | sample variance of vector v |\n| sd(v) | sample standard deviation of vector v |\n| median(v) | sample median of vector v |\n| summary(v) | min, 1st quartile, median, mean, 3rd quartile, max of v |\n| quantile(v,p) | pth sample quantile of vector v |\n| cov(v,w) | sample covariance of vectors v and w |\n| cor(v,w) | sample correlation of vectors v and w |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_620_table_3.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.365,
+            0.331,
+            0.383
+          ],
+          "level": 2,
+          "content": "B.8 Distributions"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.188,
+            0.405,
+            0.813,
+            0.715
+          ],
+          "content": "| Command | What it does |\n| --- | --- |\n| help(distributions) | shows documentation on distributions |\n| dbinom(k,n,p) | PMF $P(X = k)$ for $X \\sim \\text{Bin}(n, p)$ |\n| pbinom(x,n,p) | CDF $P(X \\leq x)$ for $X \\sim \\text{Bin}(n, p)$ |\n| qbinom(a,n,p) | quantile $\\min\\{x : P(X \\leq x) \\geq a\\}$ for $X \\sim \\text{Bin}(n, p)$ |\n| rbinom(r,n,p) | vector of r i.i.d. Bin(n,p) r.v.s |\n| dgeom(k,p) | PMF $P(X = k)$ for $X \\sim \\text{Geom}(p)$ |\n| dhyper(k,w,b,n) | PMF $P(X = k)$ for $X \\sim \\text{HGeom}(w, b, n)$ |\n| dnbinom(k,r,p) | PMF $P(X = k)$ for $X \\sim \\text{NBin}(r, p)$ |\n| dpois(k,r) | PMF $P(X = k)$ for $X \\sim \\text{Pois}(r)$ |\n| dbeta(x,a,b) | PDF $f(x)$ for $X \\sim \\text{Beta}(a, b)$ |\n| dcauchy(x) | PDF $f(x)$ for $X \\sim \\text{Cauchy}$ |\n| dchisq(x,n) | PDF $f(x)$ for $X \\sim \\chi_{n}^{2}$ |\n| dexp(x,r) | PDF $f(x)$ for $X \\sim \\text{Expo}(r)$ |\n| dgamma(x,a,r) | PDF $f(x)$ for $X \\sim \\text{Gamma}(a, r)$ |\n| dlnorm(x,m,s) | PDF $f(x)$ for $X \\sim \\mathcal{LN}(m, s^{2})$ |\n| dnorm(x,m,s) | PDF $f(x)$ for $X \\sim \\mathcal{N}(m, s^{2})$ |\n| dt(x,n) | PDF $f(x)$ for $X \\sim t_{n}$ |\n| dunif(x,a,b) | PDF $f(x)$ for $X \\sim \\text{Unif}(a, b)$ |\n| dweibull(x,a,b) | PDF $f(x)$ for $X \\sim \\text{Weibull}(b^{-a}, a)$ |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_620_table_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.73,
+            0.896,
+            0.823
+          ],
+          "content": "There are commands that are completely analogous to pbinom, qbinom, and rbinom for the other distributions appearing in the above table. For example, pnorm, qnorm, and rnorm can be used to get the CDF, the quantiles, and random generation for the Normal (note that the mean and standard deviation need to be provided as the parameters, rather than the mean and variance)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.833,
+            0.896,
+            0.909
+          ],
+          "content": "For the Multinomial, dmultinom can be used for calculating the joint PMF and rmultinom can be used for generating random vectors. For the Multivariate Normal, after installing and loading the mvtnorm package, dmvnorm can be used for calculating the joint PDF and rmvnorm can be used for random generation."
+        }
+      ]
+    },
+    {
+      "page_idx": 621,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.061,
+            0.15,
+            0.09
+          ],
+          "content": ""
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.119,
+            0.224,
+            0.88,
+            0.885
+          ],
+          "content": "| Name | Param. | PMF or PDF | Mean | Variance |\n| --- | --- | --- | --- | --- |\n| Bernoulli | $p$ | $P(X = 1) = p, P(X = 0) = q$ | $p$ | $pq$ |\n| Binomial | $n, p$ | $\\binom{n}{k} p^{k} q^{n-k}, k \\in \\{0, 1, \\dots, n\\}$ | $np$ | $npq$ |\n| FS | $p$ | $pq^{k-1}, k \\in \\{1, 2, \\dots\\}$ | $1/p$ | $q/p^{2}$ |\n| Geom | $p$ | $pq^{k}, k \\in \\{0, 1, 2, \\dots\\}$ | $q/p$ | $q/p^{2}$ |\n| NBin | $r, p$ | $\\binom{r+k-1}{r-1} p^{r} q^{k}, k \\in \\{0, 1, 2, \\dots\\}$ | $rq/p$ | $rq/p^{2}$ |\n| HGeom | $w, b, n$ | $\\frac{\\binom{w}{k}\\binom{b}{n-k}}{\\binom{w+b}{n}}, k \\in \\{0, 1, \\dots, n\\}$ | $\\mu = \\frac{nw}{w+b}$ | $(\\frac{w+b-n}{w+b-1}) \\mu (1 - \\frac{\\mu}{n})$ |\n| NHGeom | $w, b, r$ | $\\frac{\\binom{r+k-1}{r-1}\\binom{w+b-r-k}{w-r}}{\\binom{w+b}{w}}, k \\in \\{0, 1, \\dots, b\\}$ | $\\frac{rb}{w+1}$ | $\\frac{rb(w+b+1)(w-r+1)}{(w+1)^{2}(w+2)}$ |\n| Poisson | $\\lambda$ | $\\frac{e^{-\\lambda} \\lambda^{k}}{k!}, k \\in \\{0, 1, 2, \\dots\\}$ | $\\lambda$ | $\\lambda$ |\n| Uniform | $a < b$ | $\\frac{1}{b-a}, x \\in (a, b)$ | $\\frac{a+b}{2}$ | $\\frac{(b-a)^{2}}{12}$ |\n| Normal | $\\mu, \\sigma^{2}$ | $\\frac{1}{\\sigma \\sqrt{2\\pi}} e^{-(x-\\mu)^{2}/(2\\sigma^{2})}$ | $\\mu$ | $\\sigma^{2}$ |\n| Log-Normal | $\\mu, \\sigma^{2}$ | $\\frac{1}{x\\sigma\\sqrt{2\\pi}} e^{-(\\log x-\\mu)^{2}/(2\\sigma^{2})}, x > 0$ | $\\theta = e^{\\mu+\\sigma^{2}/2}$ | $\\theta^{2}(e^{\\sigma^{2}} - 1)$ |\n| Expo | $\\lambda$ | $\\lambda e^{-\\lambda x}, x > 0$ | $1/\\lambda$ | $1/\\lambda^{2}$ |\n| Weibull | $\\lambda, \\gamma$ | $\\gamma \\lambda e^{-\\lambda x^{\\gamma}} x^{\\gamma-1}, x > 0$ | $\\mu = \\frac{\\Gamma(1+1/\\gamma)}{\\lambda^{1/\\gamma}}$ | $\\frac{\\Gamma(1+2/\\gamma)}{\\lambda^{2/\\gamma}} - \\mu^{2}$ |\n| Gamma | $a, \\lambda$ | $\\Gamma(a)^{-1}(\\lambda x)^{a} e^{-\\lambda x} x^{-1}, x > 0$ | $a/\\lambda$ | $a/\\lambda^{2}$ |\n| Beta | $a, b$ | $\\frac{\\Gamma(a+b)}{\\Gamma(a)\\Gamma(b)} x^{a-1}(1 - x)^{b-1}, 0 < x < 1$ | $\\mu = \\frac{a}{a+b}$ | $\\frac{\\mu(1-\\mu)}{a+b+1}$ |\n| Chi-Square | $n$ | $\\frac{1}{2^{n/2}\\Gamma(n/2)} x^{n/2-1} e^{-x/2}, x > 0$ | $n$ | $2n$ |\n| Student-$t$ | $n$ | $\\frac{\\Gamma((n+1)/2)}{\\sqrt{n\\pi}\\Gamma(n/2)} (1 + x^{2}/n)^{-(n+1)/2}$ | $0$ if $n > 1$ | $\\frac{n}{n-2}$ if $n > 2$ |",
+          "captions": [
+            {
+              "bbox": [
+                0.107,
+                0.116,
+                0.427,
+                0.14
+              ],
+              "content": "Table of distributions"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_621_table_2.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.936,
+            0.894,
+            0.949
+          ],
+          "content": "605"
+        }
+      ]
+    },
+    {
+      "page_idx": 622,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            0.288,
+            0.291,
+            0.393,
+            0.364
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_622_image_0.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.403,
+            0.3,
+            0.717,
+            0.336
+          ],
+          "level": 2,
+          "content": "Taylor & Francis"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.405,
+            0.337,
+            0.635,
+            0.355
+          ],
+          "content": "Taylor & Francis Group"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.405,
+            0.357,
+            0.598,
+            0.371
+          ],
+          "content": "http://taylorandfrancis.com"
+        }
+      ]
+    },
+    {
+      "page_idx": 623,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.107,
+            0.113,
+            0.296,
+            0.136
+          ],
+          "level": 2,
+          "content": "References"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.103,
+            0.214,
+            0.902,
+            0.919
+          ],
+          "sub_type": "ref_text",
+          "content": "[1] Donald J. Albers and Gerald L. Alexanderson. More Mathematical People: Contemporary Conversations. Academic Press, 1990.\n[2] Steve Brooks, Andrew Gelman, Galin Jones, and Xiao-Li Meng. Handbook of Markov Chain Monte Carlo. CRC Press, 2011.\n[3] Jian Chen and Jeffrey S. Rosenthal. Decrypting classical cipher text using Markov chain Monte Carlo. Statistics and Computing, 22(2):397–413, 2012.\n[4] William G. Cochran. The effectiveness of adjustment by subclassification in removing bias in observational studies. Biometrics, 1968.\n[5] Persi Diaconis. Statistical problems in ESP research. Science, 201(4351):131–136, 1978.\n[6] Persi Diaconis. The Markov chain Monte Carlo revolution. Bulletin of the American Mathematical Society, 46(2):179–205, 2009.\n[7] Persi Diaconis, Susan Holmes, and Richard Montgomery. Dynamical bias in the coin toss. SIAM Review, 49(2):211–235, 2007.\n[8] Bradley Efron and Ronald Thisted. Estimating the number of unseen species: How many words did Shakespeare know? Biometrika, 63(3):435, 1976.\n[9] Bradley Efron and Ronald Thisted. Did Shakespeare write a newly-discovered poem? Biometrika, 74:445–455, 1987.\n[10] Andrew Gelman, John B. Carlin, Hal S. Stern, David B. Dunson, Aki Vehtari, and Donald B. Rubin. Bayesian Data Analysis. CRC Press, 2013.\n[11] Andrew Gelman and Deborah Nolan. You can load a die, but you can’t bias a coin. The American Statistician, 56(4):308–311, 2002.\n[12] Andrew Gelman, Boris Shor, Joseph Bafumi, and David K. Park. Red State, Blue State, Rich State, Poor State: Why Americans Vote the Way They Do (Expanded Edition). Princeton University Press, 2009.\n[13] Gerd Gigerenzer and Ulrich Hoffrage. How to improve Bayesian reasoning without instruction: Frequency formats. Psychological Review, 102(4):684, 1995.\n[14] Prakash Gorroochurn. Classic Problems of Probability. John Wiley & Sons, 2012."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.936,
+            0.893,
+            0.949
+          ],
+          "content": "607"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Probability, Second Edition",
+      "authors": [
+        "Joseph K. Blitzstein;Jessica Hwang;"
+      ],
+      "created_at": "2019-01-18T11:22:30+05:30",
+      "modified_at": "2019-02-04T21:29:14+05:30",
+      "creator_application": "LaTeX with hyperref",
+      "producer_application": "pdfTeX-1.40.19",
+      "page_count": 636,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 608,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 609,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 610,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 611,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 612,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 613,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 614,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 615,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 616,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 617,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 618,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 619,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 620,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 621,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 622,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 623,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

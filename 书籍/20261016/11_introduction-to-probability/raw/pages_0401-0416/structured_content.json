@@ -1,0 +1,2485 @@
+{
+  "pages": [
+    {
+      "page_idx": 400,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "384"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.068,
+            0.553,
+            0.087
+          ],
+          "content": "posterior distribution after observing k Heads,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.235,
+            0.1,
+            0.765,
+            0.207
+          ],
+          "content": "\\begin{array}{l} f (p | X = k) = \\frac {P (X = k | p) f (p)}{P (X = k)} \\\\ = \\frac {\\binom {n} {k} p ^ {k} (1 - p) ^ {n - k} \\cdot \\frac {1}{\\beta (a , b)} p ^ {a - 1} (1 - p) ^ {b - 1}}{P (X = k)}. \\\\ \\end{array}",
+          "image_source": "images/page_400_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.219,
+            0.715,
+            0.238
+          ],
+          "content": "The denominator, which is the marginal PMF of $X$ , is given by"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.185,
+            0.251,
+            0.819,
+            0.293
+          ],
+          "content": "P (X = k) = \\int_ {0} ^ {1} P (X = k | p) f (p) d p = \\int_ {0} ^ {1} \\binom{n}{k} p ^ {k} (1 - p) ^ {n - k} f (p) d p.",
+          "image_source": "images/page_400_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.304,
+            0.896,
+            0.399
+          ],
+          "content": "For $a = b = 1$ (which gives a Unif(0, 1) prior on $p )$ , we showed in the Bayes’ billiards story that $P(X = k) = 1 / (n + 1)$ , i.e., X is Discrete Uniform on $\\{ 0 , 1 , \\ldots , n \\}$ . For $a$ and $b$ any positive integers, we can again use $\\mathrm { B a y e s } ^ { \\prime }$ billiards to find $P ( X = k )$ interestingly, $X$ then turns out to have a Negative Hypergeometric distribution (the story and PMF of which we saw in Example 4.4.7)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.408,
+            0.896,
+            0.445
+          ],
+          "content": "But it does not seem easy to find $P ( X = k )$ in general for real $a , b .$ Relatedly, we still have not evaluated $\\beta ( a , b )$ in general. Are we stuck?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.455,
+            0.897,
+            0.549
+          ],
+          "content": "Actually, the calculation is much easier than it appears at first. The conditional PDF $f ( p | X = k )$ is a function of $p ,$ which means everything that doesn’t depend on $p$ is just a constant. We can drop all these constants and find the PDF up to a multiplicative constant (and then the normalizing constant is whatever it needs to be to make the PDF integrate to 1). This gives"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.325,
+            0.562,
+            0.677,
+            0.584
+          ],
+          "content": "f (p | X = k) \\propto p ^ {a + k - 1} (1 - p) ^ {b + n - k - 1},",
+          "image_source": "images/page_400_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.597,
+            0.894,
+            0.636
+          ],
+          "content": "which is the Beta $( a + k , b + n - k )$ PDF, up to a multiplicative constant. Therefore, the posterior distribution of $p$ is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.338,
+            0.651,
+            0.664,
+            0.669
+          ],
+          "content": "p | X = k \\sim \\mathrm{Beta} (a + k, b + n - k).",
+          "image_source": "images/page_400_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.684,
+            0.896,
+            0.779
+          ],
+          "content": "The posterior distribution of $p$ after observing $X = k$ is still a Beta distribution! This is a special relationship between the Beta and Binomial distributions called conjugacy: if we have a Beta prior distribution on $p$ and data that are conditionally Binomial given $p ,$ then when going from prior to posterior, we don’t leave the family of Beta distributions. We say that the Beta is the conjugate prior of the Binomial."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.787,
+            0.897,
+            0.921
+          ],
+          "content": "Furthermore, notice the very simple formula for updating the distribution of $p .$ We just add the number of observed successes, $k ,$ to the first parameter of the Beta distribution, and the number of observed failures, $n - k .$ to the second parameter. So $a$ and $b$ have a concrete interpretation in this context, at least when $a$ and $b$ are positive integers: think of $a - 1$ as the number of prior successes and $b - 1$ as the number of prior failures in earlier experiments (these prior experiments could be real or imagined). Adding on $k$ successes and $n - k$ failures from the current"
+        }
+      ]
+    },
+    {
+      "page_idx": 401,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.039,
+            0.255,
+            0.054
+          ],
+          "content": "Transformations"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "385"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.069,
+            0.895,
+            0.107
+          ],
+          "continues_prev": true,
+          "content": "experiment, we have $a   +   k   -   1$ successes and $b   +   n   -   k   -   1$ failures, and the $\\mathrm { B e t a } ( a , b )$ prior gets updated to a Beta $( a + k , b + n - k )$ posterior."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.116,
+            0.896,
+            0.229
+          ],
+          "content": "As in Section 2.6, we can sequentially update our beliefs as we get more and more evidence: we start with a prior distribution and update it to get a posterior distribution, which becomes the new prior distribution, which we update to get a new posterior distribution, etc. The beauty here is that all of this can be done within the Beta family of distributions, with easy updates to the parameters based on tallying the observed successes and failures."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.24,
+            0.897,
+            0.352
+          ],
+          "content": "For concreteness, Figure 8.6 shows the case where the prior is $\\mathrm { B e t a } ( 1 , 1 )$ (which is equivalent to $\\mathrm { U n i f } ( 0 , 1 )$ , as noted earlier), and we observe $n = 5$ coin tosses, all of which happen to land Heads. Then the posterior is Beta(6, 1), which is plotted on the right half of Figure 8.6. Notice how the posterior distribution incorporates the evidence from the coin tosses: larger values of $p$ have higher density, consistent with the fact that we observed all Heads."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.142,
+            0.386,
+            0.847,
+            0.617
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_401_image_5.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.635,
+            0.239,
+            0.65
+          ],
+          "level": 2,
+          "content": "FIGURE 8.6"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.653,
+            0.896,
+            0.691
+          ],
+          "content": "Beta is conjugate prior of Binomial. Left: prior is Unif(0, 1). Right: after observing 5 Heads in 5 tosses, posterior is Beta(6, 1)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.712,
+            0.896,
+            0.807
+          ],
+          "content": "This model is a continuous analog of Example 2.3.7, our very first example of $\\mathrm { B a y e s } ^ { \\prime }$ rule. In that example, we also had a coin whose probability of Heads $p$ was unknown, but our prior information led us to believe that $p$ could only take on one of two possible values, $1 / 2$ or $3 / 4$ . For this reason, our prior distribution on $p -$ though we didn’t call it that at the time!—was discrete. In particular, our prior PMF was"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.406,
+            0.822,
+            0.59,
+            0.843
+          ],
+          "content": "P (p = 1 / 2) = 1 / 2,",
+          "image_source": "images/page_401_equation_9.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.411,
+            0.845,
+            0.589,
+            0.866
+          ],
+          "content": "P (p = 3 / 4) = 1 / 2.",
+          "image_source": "images/page_401_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.881,
+            0.897,
+            0.919
+          ],
+          "content": "After observing three Heads in a row, we updated this PMF to obtain the posterior PMF, which assigned a probability of 0.23 to $p   =   1 / 2$ and a probability of 0.77"
+        }
+      ]
+    },
+    {
+      "page_idx": 402,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.052
+          ],
+          "content": "386"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.068,
+            0.896,
+            0.125
+          ],
+          "continues_prev": true,
+          "content": "to $p = 3 / 4$ . The same logic applies to the example in this chapter, except that we now give $p$ a continuous prior distribution, which is appropriate if we believe that $p$ could possibly take on any value between 0 and 1. \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.133,
+            0.896,
+            0.19
+          ],
+          "content": "To conclude the section, here are two examples that illustrate how Beta-Binomial conjugacy and Bayes’ billiards can make some seemingly complicated problems much easier."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.199,
+            0.896,
+            0.333
+          ],
+          "content": "Example 8.3.4 (Bayes’ serum). A new treatment, Bayes’ serum, has just been developed for the disease conditionitis. A clinical trial is about to be conducted, to study how effective the treatment is. Bayes’ serum will be applied to n patients who have conditionitis. Given $p ,$ the patients’ outcomes are independent, with each patient having probability $p$ of being cured by the treatment. But $p$ is unknown. To quantify our uncertainty about $p ,$ we model $p$ as a random variable, with prior distribution $p \\sim \\mathrm { U n i f } ( 0 , 1 )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.341,
+            0.892,
+            0.377
+          ],
+          "content": "(a) Find the probability that exactly k out of the n patients will be cured by the treatment (unconditionally, not given p)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.388,
+            0.892,
+            0.442
+          ],
+          "content": "(b) Now suppose that the treatment is extremely effective in the clinical trial: all n patients are cured! Given this information, find the probability that $p$ exceeds $1 / 2$ Your answer should be fully simplified, and expressed only in terms of $n .$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.106,
+            0.454,
+            0.195,
+            0.471
+          ],
+          "level": 2,
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.482,
+            0.892,
+            0.517
+          ],
+          "content": "(a) By LOTP followed by Bayes’ billiards or pattern-matching to a Beta PDF, the probability is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.341,
+            0.518,
+            0.659,
+            0.56
+          ],
+          "content": "\\int_ {0} ^ {1} \\binom{n}{k} p ^ {k} (1 - p) ^ {n - k} d p = \\frac {1}{n + 1}.",
+          "image_source": "images/page_402_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.573,
+            0.894,
+            0.611
+          ],
+          "content": "(b) $\\mathrm { B y }$ Beta-Binomial conjugacy, the posterior distribution of $p$ given the data is Beta $\\l _ { \\cdot } ( 1 + n , 1 )$ , which has PDF $( n + 1 ) p ^ { n }$ for $0 < p < 1$ . Thus,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.24,
+            0.621,
+            0.758,
+            0.664
+          ],
+          "content": "P \\left(p > \\frac {1}{2}\\right) = \\int_ {1 / 2} ^ {1} (n + 1) p ^ {n} d p = p ^ {n + 1} \\Big | _ {1 / 2} ^ {1} = 1 - \\frac {1}{2 ^ {n + 1}}.",
+          "image_source": "images/page_402_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.673,
+            0.896,
+            0.807
+          ],
+          "content": "Example 8.3.5. A basketball player will shoot $N \\; \\sim \\; \\mathrm { P o i s } ( \\lambda )$ free throws in a game tomorrow. Let $X _ { j }$ be the indicator of her making their jth free throw, and $X = X _ { 1 } + \\cdots + X _ { N }$ be the total number of free throws she makes in the game (so $\\overline { { X } } = 0 \\; \\mathrm { i f } \\; N = 0 )$ To model our uncertainty about how good a free throw shooter she is, let $p \\sim \\mathrm { B e t a } ( a , b )$ . Given $p ,$ the player has probability $p$ of making a free throw and probability $q = 1 - p$ of missing it. Assume that $X _ { 1 } , X _ { 2 } , \\ldots$ are conditionally independent given $p ,$ and that N is independent of $p , X _ { 1 } , X _ { 2 } , \\ldots .$"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.103,
+            0.815,
+            0.814,
+            0.918
+          ],
+          "sub_type": "text",
+          "content": "(a) Find the conditional distribution of X given $N , p .$\n(b) Find the conditional distribution of X given $p .$\n(c) Find the conditional distribution of X given N, for the case $a = b = 1$\n(d) Find the conditional distribution of p given X, N."
+        }
+      ]
+    },
+    {
+      "page_idx": 403,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.038,
+            0.254,
+            0.055
+          ],
+          "content": "Transformations"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.895,
+            0.053
+          ],
+          "content": "387"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.069,
+            0.195,
+            0.085
+          ],
+          "content": "Solution:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.104,
+            0.096,
+            0.637,
+            0.172
+          ],
+          "sub_type": "text",
+          "content": "(a) By the story of the Binomial, $X | ( N , p ) \\sim \\mathrm { B i n } ( N , p )$\n(b) By the chicken-egg story, $X | p \\sim \\mathrm { P o i s } ( \\lambda p )$\n(c) For $k = 0 , 1 , \\ldots , n$ , by LOTP and Bayes’ billiards we have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.244,
+            0.184,
+            0.754,
+            0.227
+          ],
+          "content": "P (X = k | N = n) = \\int_ {0} ^ {1} \\binom {n} {k} p ^ {k} (1 - p) ^ {n - k} d p = \\frac {1}{n + 1}.",
+          "image_source": "images/page_403_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.238,
+            0.892,
+            0.258
+          ],
+          "content": "So the conditional distribution of X given N is Discrete Uniform on $\\{ 0 , 1 , \\ldots , N \\}$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.265,
+            0.774,
+            0.285
+          ],
+          "content": "(d) By Beta-Binomial conjugacy, $p | ( X , N ) \\sim \\mathrm { B e t a } ( a + X , b + N - X )$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.368,
+            0.263,
+            0.386
+          ],
+          "level": 2,
+          "content": "8.4 Gamma"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.405,
+            0.895,
+            0.48
+          ],
+          "content": "The Gamma distribution is a continuous distribution on the positive real line; it is a generalization of the Exponential distribution. While an Exponential r.v. represents the waiting time for the first success under conditions of memorylessness, we shall see that a Gamma r.v. represents the total waiting time for multiple successes."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.489,
+            0.896,
+            0.546
+          ],
+          "content": "Before writing down the PDF, we first introduce the gamma function, a very famous function in mathematics that extends the factorial function beyond the realm of nonnegative integers."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.555,
+            0.826,
+            0.575
+          ],
+          "content": "Definition 8.4.1 (Gamma function). The gamma function Γ is defined by"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.39,
+            0.585,
+            0.607,
+            0.626
+          ],
+          "content": "\\Gamma (a) = \\int_ {0} ^ {\\infty} x ^ {a} e ^ {- x} \\frac {d x}{x},",
+          "image_source": "images/page_403_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.636,
+            0.331,
+            0.654
+          ],
+          "content": "for real numbers $a > 0$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.664,
+            0.895,
+            0.741
+          ],
+          "content": "We could also cancel an x and write the integrand as $x ^ { a - 1 } e ^ { - x }$ , but it turns out to be convenient having the $\\frac { d x } { x }$ since it is common to make a transformation of the form $u = c x$ , and then we have the handy fact that $\\begin{array} { r } { \\frac { d u } { u }   =   \\frac { d x } { x } } \\end{array}$ . Here are two important properties of the gamma function."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.75,
+            0.788,
+            0.77
+          ],
+          "content": "$\\Gamma ( a + 1 ) = a \\Gamma ( a )$ for all $a > 0$ . This follows from integration by parts:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.166,
+            0.78,
+            0.845,
+            0.825
+          ],
+          "content": "\\Gamma (a + 1) = \\int_ {0} ^ {\\infty} x ^ {a} e ^ {- x} d x = - x ^ {a} e ^ {- x} \\bigg | _ {0} ^ {\\infty} + a \\int_ {0} ^ {\\infty} x ^ {a - 1} e ^ {- x} d x = 0 + a \\Gamma (a).",
+          "image_source": "images/page_403_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.844,
+            0.896,
+            0.92
+          ],
+          "content": "$\\Gamma ( n ) = ( n - 1 ) ! { \\mathrm { ~ i f ~ } } n$ is a positive integer. This can be proved by induction, starting with $n = 1$ and using the recursive relation $\\Gamma ( a   +   1 ) = a \\Gamma ( a )$ . Thus, if we evaluate the gamma function at positive integer values, we recover the factorial function (albeit shifted by 1)."
+        }
+      ]
+    },
+    {
+      "page_idx": 404,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "388"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.038,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.068,
+            0.896,
+            0.105
+          ],
+          "content": "Now let’s suppose that on a whim, we decide to divide both sides of the above definition by $\\Gamma ( a )$ . We have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.386,
+            0.115,
+            0.614,
+            0.155
+          ],
+          "content": "1 = \\int_ {0} ^ {\\infty} \\frac {1}{\\Gamma (a)} x ^ {a} e ^ {- x} \\frac {d x}{x},",
+          "image_source": "images/page_404_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.164,
+            0.897,
+            0.235
+          ],
+          "content": "so the function under the integral is a valid PDF supported on $( 0 , \\infty )$ . This is the definition of the PDF of the Gamma distribution. Specifically, we say that X has the Gamma distribution with parameters a and 1, denoted $X \\sim \\mathrm { G a m m a } ( a , 1 )$ , if its PDF is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.348,
+            0.233,
+            0.651,
+            0.271
+          ],
+          "content": "f _ {X} (x) = \\frac {1}{\\Gamma (a)} x ^ {a} e ^ {- x} \\frac {1}{x}, \\quad x > 0.",
+          "image_source": "images/page_404_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.276,
+            0.897,
+            0.351
+          ],
+          "content": "From the $\\mathrm { G a m m a } ( a , 1 )$ distribution, we obtain the general Gamma distribution by a scale transformation: if $X \\sim \\mathrm { G a m m a } ( a , 1 )$ and $\\lambda > 0$ , then the distribution of $Y = X / \\lambda$ is called the Gamma $( a , \\lambda )$ distribution. By the change of variables formula with $x = \\lambda y$ and $d x / d y = \\lambda$ , the PDF of Y is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.16,
+            0.361,
+            0.838,
+            0.401
+          ],
+          "content": "f _ {Y} (y) = f _ {X} (x) \\left| \\frac {d x}{d y} \\right| = \\frac {1}{\\Gamma (a)} (\\lambda y) ^ {a} e ^ {- \\lambda y} \\frac {1}{\\lambda y} \\lambda = \\frac {1}{\\Gamma (a)} (\\lambda y) ^ {a} e ^ {- \\lambda y} \\frac {1}{y}, \\quad y > 0.",
+          "image_source": "images/page_404_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.41,
+            0.55,
+            0.428
+          ],
+          "content": "This is summarized in the following definition."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.438,
+            0.897,
+            0.474
+          ],
+          "content": "Definition 8.4.2 (Gamma distribution). An r.v. Y is said to have the Gamma distribution with parameters a and λ, where $a > 0$ and $\\lambda > 0$ , if its PDF is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.338,
+            0.483,
+            0.66,
+            0.522
+          ],
+          "content": "f (y) = \\frac {1}{\\Gamma (a)} (\\lambda y) ^ {a} e ^ {- \\lambda y} \\frac {1}{y}, \\quad y > 0.",
+          "image_source": "images/page_404_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.531,
+            0.381,
+            0.55
+          ],
+          "content": "We write $Y \\sim  Gamma (a, \\lambda)$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.559,
+            0.897,
+            0.692
+          ],
+          "content": "Taking $a = 1$ , the Gamma(1, λ) PDF is $f(y) = \\lambda e^{-\\lambda y}$ for $y > 0$ , so the Gamma $( 1 , \\lambda )$ and $\\operatorname { E x p o } ( \\lambda )$ distributions are the same. The extra parameter a allows Gamma PDFs to have a greater variety of shapes. Figure 8.7 shows four Gamma PDFs. For small values of $a ,$ the PDF is skewed, but as a increases, the PDF starts to look more symmetrical and bell-shaped; we will learn the reason for this in Chapter 10. Increasing λ compresses the PDF toward smaller values, as we can see by comparing the Gamma(3, 1) and Gamma(3, 0.5) PDFs."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.701,
+            0.896,
+            0.776
+          ],
+          "content": "Let’s find the mean, variance, and other moments of the Gamma distribution, starting with $X \\sim \\mathrm { G a m m a } ( a , 1 )$ . We’ll use properties of the gamma function as well as the technique of doing integrals by pattern recognition. For the mean, we write down the definition of $E ( X )$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.353,
+            0.785,
+            0.646,
+            0.825
+          ],
+          "content": "E (X) = \\int_ {0} ^ {\\infty} \\frac {1}{\\Gamma (a)} x ^ {a + 1} e ^ {- x} \\frac {d x}{x},",
+          "image_source": "images/page_404_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.833,
+            0.896,
+            0.886
+          ],
+          "content": "but instead of attempting a gruesome integration by parts, we recognize that after taking out $1 / \\Gamma ( a )$ , what’s left is precisely the gamma function evaluated at $a + 1$ Therefore"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.346,
+            0.884,
+            0.652,
+            0.923
+          ],
+          "content": "E (X) = \\frac {\\Gamma (a + 1)}{\\Gamma (a)} = \\frac {a \\Gamma (a)}{\\Gamma (a)} = a.",
+          "image_source": "images/page_404_equation_16.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 405,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.039,
+            0.253,
+            0.054
+          ],
+          "content": "Transformations"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "389"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.138,
+            0.211,
+            0.851,
+            0.694
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.104,
+                0.723,
+                0.237,
+                0.739
+              ],
+              "content": "FIGURE 8.7"
+            }
+          ],
+          "footnotes": [
+            {
+              "bbox": [
+                0.102,
+                0.741,
+                0.897,
+                0.78
+              ],
+              "content": "Gamma PDFs for various values of a and λ. Clockwise from top left: Gamma(3, 1), Gamma(3, 0.5), Gamma(5, 0.5), Gamma(10, 1)."
+            }
+          ],
+          "image_source": "images/page_405_image_2.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 406,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "390"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.068,
+            0.894,
+            0.104
+          ],
+          "content": "Similarly, for the variance, LOTUS gives us an integral expression for the second moment,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.35,
+            0.105,
+            0.651,
+            0.145
+          ],
+          "content": "E (X ^ {2}) = \\int_ {0} ^ {\\infty} \\frac {1}{\\Gamma (a)} x ^ {a + 2} e ^ {- x} \\frac {d x}{x},",
+          "image_source": "images/page_406_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.153,
+            0.755,
+            0.171
+          ],
+          "content": "and we recognize the gamma function evaluated at $a + 2$ . Therefore"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.28,
+            0.185,
+            0.722,
+            0.226
+          ],
+          "content": "E (X ^ {2}) = \\frac {\\Gamma (a + 2)}{\\Gamma (a)} = \\frac {(a + 1) a \\Gamma (a)}{\\Gamma (a)} = (a + 1) a",
+          "image_source": "images/page_406_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.24,
+            0.148,
+            0.255
+          ],
+          "content": "and"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.361,
+            0.258,
+            0.638,
+            0.279
+          ],
+          "content": "\\mathrm{Var} (X) = (a + 1) a - a ^ {2} = a.",
+          "image_source": "images/page_406_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.289,
+            0.56,
+            0.309
+          ],
+          "content": "So for $X \\sim \\operatorname { G a m m a } ( a , 1 ) ,   E ( X ) = \\operatorname { V a r } ( X ) = a .$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.319,
+            0.895,
+            0.357
+          ],
+          "content": "The cth moment is no harder than the second moment; we just use LOTUS and recognize the definition of $\\Gamma ( a + c )$ . This gives"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.298,
+            0.371,
+            0.702,
+            0.413
+          ],
+          "content": "E (X ^ {c}) = \\int_ {0} ^ {\\infty} \\frac {1}{\\Gamma (a)} x ^ {a + c} e ^ {- x} \\frac {d x}{x} = \\frac {\\Gamma (a + c)}{\\Gamma (a)}",
+          "image_source": "images/page_406_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.426,
+            0.695,
+            0.444
+          ],
+          "content": "for all real c such that the integral converges, i.e., for $c > - a$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.455,
+            0.666,
+            0.474
+          ],
+          "content": "We can now transform to $Y = X / \\lambda \\sim  Gamma (a, \\lambda)$ to get"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.295,
+            0.489,
+            0.501,
+            0.523
+          ],
+          "content": "E (Y) = \\frac {1}{\\lambda} E (X) = \\frac {a}{\\lambda},",
+          "image_source": "images/page_406_equation_13.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.277,
+            0.531,
+            0.535,
+            0.564
+          ],
+          "content": "\\mathrm{Var} (Y) = \\frac {1}{\\lambda^ {2}} \\mathrm{Var} (X) = \\frac {a}{\\lambda^ {2}},",
+          "image_source": "images/page_406_equation_14.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.285,
+            0.573,
+            0.721,
+            0.61
+          ],
+          "content": "E (Y ^ {c}) = \\frac {1}{\\lambda^ {c}} E (X ^ {c}) = \\frac {1}{\\lambda^ {c}} \\cdot \\frac {\\Gamma (a + c)}{\\Gamma (a)}, \\quad c > - a.",
+          "image_source": "images/page_406_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.625,
+            0.894,
+            0.663
+          ],
+          "content": "Looking back at the Gamma PDF plots, they are consistent with our finding that the mean and variance are increasing in a and decreasing in λ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.673,
+            0.896,
+            0.805
+          ],
+          "content": "So far, we’ve been learning about the Gamma distribution using the PDF, which allowed us to discern general patterns from PDF plots and to derive the mean and variance. But the PDF doesn’t provide much insight about why we’d ever use the Gamma distribution, and it doesn’t give us much of an interpretation for the parameters a and λ. For this, we need to connect the Gamma to other named distributions through stories. The rest of this section is devoted to stories for the Gamma distribution."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.816,
+            0.896,
+            0.854
+          ],
+          "content": "In the special case where a is an integer, we can represent a Gamma $( a , \\lambda )$ r.v. as a sum (convolution) of i.i.d. Expo(λ) r.v.s."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.864,
+            0.657,
+            0.883
+          ],
+          "content": "Theorem 8.4.3. Let $X _ { 1 } , \\ldots , X _ { n }$ be i.i.d. Expo(λ). Then"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.348,
+            0.9,
+            0.652,
+            0.92
+          ],
+          "content": "X _ {1} + \\dots + X _ {n} \\sim \\operatorname{Gamma} (n, \\lambda).",
+          "image_source": "images/page_406_equation_20.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 407,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.038,
+            0.254,
+            0.054
+          ],
+          "content": "Transformations"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "391"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.067,
+            0.833,
+            0.089
+          ],
+          "content": "Proof. The Expo(λ) MGF is $\\frac { \\lambda } { \\lambda - t }$ for $t < \\lambda$ , so the MGF of $X _ { 1 } + \\dots + X _ { n }$ is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.406,
+            0.099,
+            0.594,
+            0.141
+          ],
+          "content": "M _ {n} (t) = \\left(\\frac {\\lambda}{\\lambda - t}\\right) ^ {n}",
+          "image_source": "images/page_407_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.151,
+            0.895,
+            0.189
+          ],
+          "content": "for $t < \\lambda$ . Let $Y \\sim  Gamma (n,\\lambda)$ ; we’ll show that the MGF of $Y$ is the same as that of $X _ { 1 } + \\dots + X _ { n }$ . By LOTUS,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.327,
+            0.197,
+            0.675,
+            0.238
+          ],
+          "content": "E (e ^ {t Y}) = \\int_ {0} ^ {\\infty} e ^ {t y} \\frac {1}{\\Gamma (n)} (\\lambda y) ^ {n} e ^ {- \\lambda y} \\frac {d y}{y}.",
+          "image_source": "images/page_407_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.247,
+            0.895,
+            0.284
+          ],
+          "content": "Again, we’ll use pattern recognition to do the integral. We just need to do algebraic manipulations until what’s left inside the integral is a recognizable Gamma PDF:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.255,
+            0.293,
+            0.745,
+            0.375
+          ],
+          "content": "\\begin{array}{l} E (e ^ {t Y}) = \\int_ {0} ^ {\\infty} e ^ {t y} \\frac {1}{\\Gamma (n)} (\\lambda y) ^ {n} e ^ {- \\lambda y} \\frac {d y}{y} \\\\ = \\frac {\\lambda^ {n}}{(\\lambda - t) ^ {n}} \\int_ {0} ^ {\\infty} \\frac {1}{\\Gamma (n)} e ^ {- (\\lambda - t) y} ((\\lambda - t) y) ^ {n} \\frac {d y}{y}. \\\\ \\end{array}",
+          "image_source": "images/page_407_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.384,
+            0.895,
+            0.44
+          ],
+          "content": "We pulled $\\lambda ^ { n }$ out of the integral, then multiplied by $( \\lambda   -   t ) ^ { n }$ on the inside while dividing by it on the outside. Now the expression inside the integral is the $Gamma (n,\\lambda {-} t)$ PDF, assuming $t < \\lambda$ . Since PDFs integrate to 1, we have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.402,
+            0.449,
+            0.597,
+            0.491
+          ],
+          "content": "E (e ^ {t Y}) = \\left(\\frac {\\lambda}{\\lambda - t}\\right) ^ {n}",
+          "image_source": "images/page_407_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.5,
+            0.559,
+            0.519
+          ],
+          "content": "for $t < \\lambda;   if   t \\geq \\lambda$ the integral fails to converge."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.528,
+            0.893,
+            0.566
+          ],
+          "content": "We have shown that $X _ { 1 } + \\dots + X _ { n }$ and $Y \\sim  Gamma (n, \\lambda)$ have the same MGF. Since the MGF determines the distribution, $X _ { 1 } + \\cdots + X _ { n } \\sim \\operatorname { G a m m a } ( n , \\lambda )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.575,
+            0.897,
+            0.708
+          ],
+          "content": "Alternatively, we can compute the convolution integral inductively. It suffices to consider the case $\\lambda = 1$ , since after having done that case we can rescale the r.v.s to prove the result for general λ. Let $T _ { n } = X _ { 1 } + \\cdots + X _ { n }$ . We will show by induction that $T _ { n } \\sim \\mathrm { G a m m a } ( n , 1 )$ for all $n \\geq 1$ . For $n = 1$ , this is true since the Gamma $( 1 , 1 )$ PDF is $e ^ { - x }$ (for $x \\; > \\; 0 )$ , which is the same as the Expo(1) PDF. Now assume that $T _ { n }   \\sim   \\mathrm { G a m m a } ( n , 1 )$ , and show that $T _ { n + 1 } \\sim$ Gamma $( n + 1 , 1 )$ . The PDF of $T _ { n + 1 } = T _ { n } + X _ { n + 1 }$ is given by the convolution integral"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.104,
+            0.717,
+            0.914,
+            0.76
+          ],
+          "content": "\\int_ {0} ^ {\\infty} f _ {T _ {n}} (x) f _ {X _ {n + 1}} (t - x) d x = \\frac {1}{\\Gamma (n)} \\int_ {0} ^ {t} x ^ {n - 1} e ^ {- x} e ^ {- (t - x)} d x = \\frac {e ^ {- t}}{\\Gamma (n)} \\int_ {0} ^ {t} x ^ {n - 1} d x = \\frac {t ^ {n} e ^ {- t}}{\\Gamma (n + 1)}",
+          "image_source": "images/page_407_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.768,
+            0.498,
+            0.786
+          ],
+          "content": "for $t > 0$ , which completes the induction."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.804,
+            0.897,
+            0.842
+          ],
+          "content": "Thus, if $Y   \\sim    Gamma (a, \\lambda)$ with a an integer, we can represent $Y$ as a sum of i.i.d. $\\operatorname { E x p o } ( \\lambda ) { \\mathrm { ~ r . v . s . , ~ } } X _ { 1 } + \\cdots + X _ { a }$ , and get the mean and variance right away:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.265,
+            0.851,
+            0.734,
+            0.918
+          ],
+          "content": "\\begin{array}{l} E (Y) = E (X _ {1} + \\dots + X _ {a}) = a E (X _ {1}) = \\frac {a}{\\lambda}, \\\\ \\mathrm{Var} (Y) = \\mathrm{Var} (X _ {1} + \\dots + X _ {a}) = a \\mathrm{Var} (X _ {1}) = \\frac {a}{\\lambda^ {2}}, \\\\ \\end{array}",
+          "image_source": "images/page_407_equation_16.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 408,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "392"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.069,
+            0.694,
+            0.087
+          ],
+          "content": "in agreement with the results we derived earlier for general a."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.099,
+            0.896,
+            0.231
+          ],
+          "content": "Theorem 8.4.3 also allows us to connect the Gamma distribution to the story of the Poisson process. We showed in Chapter 5 that in a Poisson process of rate λ, the interarrival times are i.i.d. Expo(λ) r.v.s. But the total waiting time $T _ { n }$ for the nth arrival is the sum of the first n interarrival times; for instance, Figure 8.8 illustrates how $T _ { 3 }$ is the sum of the 3 interarrival times $X _ { 1 } , X _ { 2 } , X _ { 3 }$ . Therefore, by the theorem, $T _ { n }   \\sim   \\mathrm { G a m m a } ( n , \\lambda )$ . The interarrival times in a Poisson process are Exponential r.v.s, while the raw arrival times are Gamma r.v.s."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.216,
+            0.261,
+            0.771,
+            0.36
+          ],
+          "sub_type": "text_image",
+          "content": "0\nX₁ T₁ T₂ T₃ ... T₄ T₅",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_408_image_4.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.38,
+            0.239,
+            0.396
+          ],
+          "level": 2,
+          "content": "FIGURE 8.8"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.398,
+            0.895,
+            0.438
+          ],
+          "content": "Poisson process. The interarrival times $X _ { j }$ are i.i.d. Expo(λ), while the raw arrival times $T _ { j }$ are Gamma(j, λ)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.457,
+            0.895,
+            0.495
+          ],
+          "content": "h 8.4.4. Unlike the $X _ { j }$ , the $T _ { j }$ are not independent, since they are constrained to be increasing; nor are they identically distributed."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.506,
+            0.895,
+            0.582
+          ],
+          "content": "At last, we have an interpretation for the parameters of the Gamma $( a , \\lambda )$ distribution. In the Poisson process story, a is the number of successes we are waiting for, and λ is the rate at which successes arrive; $Y \\sim  Gamma (a, \\lambda)$ is the total waiting time for the ath arrival in a Poisson process of rate λ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.594,
+            0.895,
+            0.632
+          ],
+          "content": "A consequence of this story is that a convolution of Gammas with the same λ is still Gamma. Exercise 29 explores this fact from several perspectives."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.643,
+            0.896,
+            0.794
+          ],
+          "content": "When we introduced the Exponential distribution, we viewed it as the continuous analog of the Geometric distribution: the Geometric waits for the first success in discrete time, and the Exponential waits for the first success in continuous time. Likewise, we can now say that the Gamma distribution is the continuous analog of the Negative Binomial distribution: the Negative Binomial is a sum of Geometric waiting times, and the Gamma is a sum of Exponential waiting times. In Exercise 54 you will use MGFs to show that the Gamma distribution can be obtained as a continuous limit of the Negative Binomial distribution."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.806,
+            0.896,
+            0.92
+          ],
+          "content": "A final story about the Gamma is that it shares the same special relationship with the Poisson that the Beta shares with the Binomial: the Gamma is the conjugate prior of the Poisson. Earlier we saw that the Beta distribution can represent an unknown probability of success because its support is (0, 1). The Gamma distribution, on the other hand, can represent an unknown rate in a Poisson process because its support is (0, ∞)."
+        }
+      ]
+    },
+    {
+      "page_idx": 409,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.038,
+            0.254,
+            0.054
+          ],
+          "content": "Transformations"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "393"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.068,
+            0.896,
+            0.163
+          ],
+          "content": "To investigate, we’ll return to Blotchville, where buses arrive in a Poisson process of rate λ. Previously it was assumed that $\\lambda = 1 / 1 0$ , so that the times between buses were i.i.d. Exponentials with mean 10 minutes, but now we’ll assume Fred doesn’t know the rate λ at which buses arrive and needs to figure it out. Fred will follow the Bayesian approach and treat the unknown rate as a random variable."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.173,
+            0.896,
+            0.268
+          ],
+          "content": "Story 8.4.5 (Gamma-Poisson conjugacy). In Blotchville, buses arrive at a certain bus stop according to a Poisson process with rate λ buses per hour, where λ is unknown. Based on his very memorable adventures in Blotchville, Fred quantifies his uncertainty about λ using the prior $\\lambda   \\sim   \\mathrm { G a m m a } ( r _ { 0 } , b _ { 0 } )$ , where $r _ { 0 }$ and $b _ { 0 }$ are known, positive constants with $r _ { 0 }$ an integer."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.277,
+            0.896,
+            0.353
+          ],
+          "content": "To better understand the bus system, Fred wants to learn more about λ. He is a very patient person, and decides that he will sit at the bus stop for t hours and count how many buses arrive in this time interval. Let Y be the number of buses in this time interval, and suppose Fred observes that $Y = y$"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.103,
+            0.363,
+            0.894,
+            0.49
+          ],
+          "sub_type": "text",
+          "content": "(a) Find Fred’s hybrid joint distribution for Y and λ.\n(b) Find Fred’s marginal distribution for $Y .$\n(c) Find Fred’s posterior distribution for λ, i.e., his conditional distribution of λ given the data y.\n(d) Find Fred’s posterior mean $E ( \\lambda | Y = y )$ and posterior variance $\\operatorname { V a r } ( \\lambda | Y = y )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.499,
+            0.896,
+            0.593
+          ],
+          "content": "Solution: Notice the similarities between the structure of this problem and that of the hybrid joint distribution from Example 7.1.26. We know that $\\lambda \\sim \\mathrm { G a m m a } ( r _ { 0 } , b _ { 0 } )$ marginally, and by definition of Poisson process, conditional on knowing the true rate $\\lambda ,$ the number of buses in an interval of length t is distributed Pois(λt). In other words, what we’re given is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.394,
+            0.61,
+            0.605,
+            0.654
+          ],
+          "content": "\\begin{array}{l} \\lambda \\sim \\mathrm{Gamma} (r _ {0}, b _ {0}) \\\\ Y | \\lambda \\sim \\mathrm{Pois} (\\lambda t). \\\\ \\end{array}",
+          "image_source": "images/page_409_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.669,
+            0.896,
+            0.801
+          ],
+          "content": "Then we are asked to flip it around: find the marginal distribution of Y and the conditional distribution of λ given $Y = y$ , which is the posterior distribution. This is characteristic of Bayesian inference: we have a prior distribution for the unknown parameters (in this case, a Gamma distribution for λ) and a model for the data conditional on the unknown parameters (in this case, a Poisson distribution for Y given λ), and we use Bayes’ rule to get the distribution of the unknowns conditional on the observed data. So let’s get started."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.811,
+            0.844,
+            0.831
+          ],
+          "content": "(a) Let $f _ { 0 }$ be the prior PDF of λ. The hybrid joint distribution of $Y$ and λ is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.247,
+            0.844,
+            0.752,
+            0.887
+          ],
+          "content": "f (y, \\lambda) = P (Y = y | \\lambda) f _ {0} (\\lambda) = \\frac {e ^ {- \\lambda t} (\\lambda t) ^ {y}}{y !} \\frac {(b _ {0} \\lambda) ^ {r _ {0}} e ^ {- b _ {0} \\lambda}}{\\lambda \\Gamma (r _ {0})},",
+          "image_source": "images/page_409_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.9,
+            0.894,
+            0.919
+          ],
+          "content": "for $y = 0 , 1 , 2 , \\ldots$ . and $\\lambda > 0$ . The hybrid joint distribution is plotted in Figure 8.9;"
+        }
+      ]
+    },
+    {
+      "page_idx": 410,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "394"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.179,
+            0.086,
+            0.825,
+            0.537
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_410_image_2.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.561,
+            0.236,
+            0.576
+          ],
+          "level": 2,
+          "content": "FIGURE 8.9"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.579,
+            0.895,
+            0.635
+          ],
+          "content": "Hybrid joint distribution of Y and λ. (a) Conditioning on a particular value of $\\lambda ,$ the relative heights form a Poisson PMF. (b) In the other direction, conditioning on $Y = y$ gives the posterior distribution of λ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.66,
+            0.895,
+            0.698
+          ],
+          "content": "there is a conditional PMF of Y for every value of λ and a conditional PDF of λ for every value of $Y$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.707,
+            0.895,
+            0.744
+          ],
+          "content": "(b) To get the marginal PMF of $Y .$ , we integrate out λ from the hybrid joint distribution; this is also a form of LOTP. This gives"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.291,
+            0.753,
+            0.706,
+            0.837
+          ],
+          "content": "\\begin{array}{l} P (Y = y) = \\int_ {0} ^ {\\infty} P (Y = y | \\lambda) f _ {0} (\\lambda) d \\lambda \\\\ = \\int_ {0} ^ {\\infty} \\frac {e ^ {- \\lambda t} (\\lambda t) ^ {y}}{y !} \\frac {(b _ {0} \\lambda) ^ {r _ {0}} e ^ {- b _ {0} \\lambda}}{\\Gamma (r _ {0})} \\frac {d \\lambda}{\\lambda}. \\\\ \\end{array}",
+          "image_source": "images/page_410_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.844,
+            0.897,
+            0.92
+          ],
+          "content": "Let’s do the integral by pattern recognition, focusing in on the terms involving λ. We spot $\\lambda ^ { r _ { 0 } + y }$ and $e ^ { - ( b _ { 0 } + t ) \\lambda }$ lurking in the integrand, which suggests patternmatching to a Gamma $( r _ { 0 }   +   y , b _ { 0 }   +   t )$ PDF. Pull out all the terms that don’t depend on λ, then multiply by whatever it takes to get the desired PDF inside the integral,"
+        }
+      ]
+    },
+    {
+      "page_idx": 411,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.039,
+            0.254,
+            0.054
+          ],
+          "content": "Transformations"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "395"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.068,
+            0.66,
+            0.087
+          ],
+          "continues_prev": true,
+          "content": "remembering to multiply by the reciprocal on the outside:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.136,
+            0.095,
+            0.863,
+            0.238
+          ],
+          "content": "\\begin{array}{l} P (Y = y) = \\frac {t ^ {y} b _ {0} ^ {r _ {0}}}{y ! \\Gamma (r _ {0})} \\int_ {0} ^ {\\infty} e ^ {- (b _ {0} + t) \\lambda} \\lambda^ {r _ {0} + y} \\frac {d \\lambda}{\\lambda} \\\\ = \\frac {\\Gamma (r _ {0} + y)}{y ! \\Gamma (r _ {0})} \\frac {t ^ {y} b _ {0} ^ {r _ {0}}}{(b _ {0} + t) ^ {r _ {0} + y}} \\int_ {0} ^ {\\infty} \\frac {1}{\\Gamma (r _ {0} + y)} e ^ {- (b _ {0} + t) \\lambda} ((b _ {0} + t) \\lambda) ^ {r _ {0} + y} \\frac {d \\lambda}{\\lambda} \\\\ = \\frac {(r _ {0} + y - 1) !}{(r _ {0} - 1) ! y !} \\left(\\frac {t}{b _ {0} + t}\\right) ^ {y} \\left(\\frac {b _ {0}}{b _ {0} + t}\\right) ^ {r _ {0}}. \\\\ \\end{array}",
+          "image_source": "images/page_411_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.244,
+            0.896,
+            0.302
+          ],
+          "content": "In the last step, we used the property $\\Gamma ( n ) = ( n - 1 ) !$ , which is applicable because $r _ { 0 }$ is an integer. This is the NBin $( r _ { 0 } , b _ { 0 } / ( b _ { 0 } + t ) )$ PMF, so the marginal distribution of $Y$ is Negative Binomial with parameters $r _ { 0 }$ and $b _ { 0 } / ( b _ { 0 } + t )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.31,
+            0.624,
+            0.33
+          ],
+          "content": "(c) By Bayes’ rule, the posterior PDF of λ is given by"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.363,
+            0.34,
+            0.637,
+            0.382
+          ],
+          "content": "f _ {1} (\\lambda | y) = \\frac {P (Y = y | \\lambda) f _ {0} (\\lambda)}{P (Y = y)}.",
+          "image_source": "images/page_411_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.392,
+            0.896,
+            0.45
+          ],
+          "content": "We found $P ( Y = y )$ in the previous part, but since it does not depend on $\\lambda ,$ we can just treat it as part of the normalizing constant. Absorbing this and other multiplicative factors that don’t depend on λ into the normalizing constant,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.277,
+            0.46,
+            0.724,
+            0.496
+          ],
+          "content": "f _ {1} (\\lambda | y) \\propto e ^ {- \\lambda t} \\lambda^ {y} \\lambda^ {r _ {0}} e ^ {- b _ {0} \\lambda} \\frac {1}{\\lambda} = e ^ {- (b _ {0} + t) \\lambda} \\lambda^ {r _ {0} + y} \\frac {1}{\\lambda},",
+          "image_source": "images/page_411_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.506,
+            0.812,
+            0.525
+          ],
+          "content": "which shows that the posterior distribution of $\\lambda$ is $\\operatorname { G a m m a } ( r _ { 0 } + y , b _ { 0 } + t )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.534,
+            0.894,
+            0.572
+          ],
+          "content": "When going from prior to posterior, the distribution of $\\lambda$ stays in the Gamma family, so the Gamma is indeed the conjugate prior for the Poisson."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.581,
+            0.894,
+            0.619
+          ],
+          "content": "Now that we have the posterior PDF of $\\lambda ,$ we have a more elegant approach to solving (b). Rearranging Bayes’ rule, the marginal PMF of $Y$ is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.351,
+            0.63,
+            0.649,
+            0.672
+          ],
+          "content": "P (Y = y) = \\frac {P (Y = y | \\lambda) f _ {0} (\\lambda)}{f _ {1} (\\lambda | y)},",
+          "image_source": "images/page_411_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.681,
+            0.894,
+            0.736
+          ],
+          "content": "where we know the numerator from the statement of the problem and the denominator from the calculation we just did. Plugging in these ingredients and simplifying again yields"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.372,
+            0.738,
+            0.625,
+            0.758
+          ],
+          "content": "Y \\sim \\mathrm{NBin} (r _ {0}, b _ {0} / (b _ {0} + t)).",
+          "image_source": "images/page_411_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.774,
+            0.894,
+            0.831
+          ],
+          "content": "(d) Since conditional PDFs are PDFs, it is perfectly fine to calculate the expectation and variance of $\\lambda$ with respect to the posterior distribution. The mean and variance of the Gamma $. ( r _ { 0 } + y , b _ { 0 } + t )$ distribution give us"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.226,
+            0.843,
+            0.773,
+            0.881
+          ],
+          "content": "E (\\lambda | Y = y) = \\frac {r _ {0} + y}{b _ {0} + t} \\quad \\text {and} \\quad \\operatorname{Var} (\\lambda | Y = y) = \\frac {r _ {0} + y}{(b _ {0} + t) ^ {2}}.",
+          "image_source": "images/page_411_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.9,
+            0.894,
+            0.92
+          ],
+          "content": "This example gives another interpretation for the parameters in a Gamma when"
+        }
+      ]
+    },
+    {
+      "page_idx": 412,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "396"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.897,
+            0.163
+          ],
+          "continues_prev": true,
+          "content": "it is being used as a conjugate prior. Fred’s $\\operatorname { G a m m a } ( r _ { 0 } , b _ { 0 } )$ prior got updated to a Gamma $( r _ { 0 }   +   y , b _ { 0 }   +   t )$ posterior after observing y arrivals in t hours. We can imagine that in the past, Fred observed $r _ { 0 }$ buses arrive in $b _ { 0 }$ hours; then after the new data, he has observed $r _ { 0 } + y$ buses in $b _ { 0 } + t$ hours. So we can interpret $r _ { 0 }$ as the number of prior arrivals and $b _ { 0 }$ as the total time required for those prior arrivals. \u0003"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.245,
+            0.471,
+            0.264
+          ],
+          "level": 2,
+          "content": "8.5 Beta-Gamma connections"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.282,
+            0.896,
+            0.357
+          ],
+          "content": "In this section, we will unite the Beta and Gamma distributions with a common story. As an added bonus, the story will give us an expression for the normalizing constant of the Beta $( a , b )$ PDF in terms of gamma functions, and it will allow us to easily find the expectation of the Beta $( a , b )$ distribution."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.367,
+            0.897,
+            0.482
+          ],
+          "content": "Story 8.5.1 (Bank–post office). While running errands, you need to go to the bank, then to the post office. Let $X \\sim  Gamma (a, \\lambda)$ be your waiting time in line at the bank, and let $Y   \\sim    Gamma (b, \\lambda)$ be your waiting time in line at the post office (with the same λ for both). Assume X and $Y$ are independent. What is the joint distribution of $T = X + Y$ (your total wait at the bank and post office) and $\\begin{array} { r } { W = \\frac { X } { X + Y } } \\end{array}$ (the fraction of your waiting time spent at the bank)?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.49,
+            0.195,
+            0.506
+          ],
+          "content": "Solution:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.518,
+            0.894,
+            0.559
+          ],
+          "content": "We’ll do a change of variables in two dimensions to get the joint PDF of $T$ and $W$ Let $\\begin{array} { r } { t = x + y ,   w = \\frac { x } { x + y } } \\end{array}$ . Then $x = t w , y = t ( 1 - w )$ , and"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.37,
+            0.572,
+            0.632,
+            0.613
+          ],
+          "content": "\\frac {\\partial (x , y)}{\\partial (t , w)} = \\left( \\begin{array}{c c} w & t \\\\ 1 - w & - t \\end{array} \\right),",
+          "image_source": "images/page_412_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.624,
+            0.588,
+            0.641
+          ],
+          "content": "which has an absolute determinant of t. Therefore"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.146,
+            0.647,
+            0.853,
+            0.798
+          ],
+          "content": "\\begin{array}{l} f _ {T, W} (t, w) = f _ {X, Y} (x, y) \\cdot | \\left| \\frac {\\partial (x , y)}{\\partial (t , w)} \\right| | \\\\ = f _ {X} (x) f _ {Y} (y) \\cdot t \\\\ = \\frac {1}{\\Gamma (a)} (\\lambda x) ^ {a} e ^ {- \\lambda x} \\frac {1}{x} \\cdot \\frac {1}{\\Gamma (b)} (\\lambda y) ^ {b} e ^ {- \\lambda y} \\frac {1}{y} \\cdot t \\\\ = \\frac {1}{\\Gamma (a)} (\\lambda t w) ^ {a} e ^ {- \\lambda t w} \\frac {1}{t w} \\cdot \\frac {1}{\\Gamma (b)} (\\lambda t (1 - w)) ^ {b} e ^ {- \\lambda t (1 - w)} \\frac {1}{t (1 - w)} \\cdot t. \\\\ \\end{array}",
+          "image_source": "images/page_412_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.806,
+            0.894,
+            0.824
+          ],
+          "content": "Let’s group all the terms involving w together, and all the terms involving t together:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.178,
+            0.836,
+            0.822,
+            0.916
+          ],
+          "content": "\\begin{array}{l} f _ {T, W} (t, w) = \\frac {1}{\\Gamma (a) \\Gamma (b)} w ^ {a - 1} (1 - w) ^ {b - 1} (\\lambda t) ^ {a + b} e ^ {- \\lambda t} \\frac {1}{t} \\\\ = \\left(\\frac {\\Gamma (a + b)}{\\Gamma (a) \\Gamma (b)} w ^ {a - 1} (1 - w) ^ {b - 1}\\right) \\left(\\frac {1}{\\Gamma (a + b)} (\\lambda t) ^ {a + b} e ^ {- \\lambda t} \\frac {1}{t}\\right), \\\\ \\end{array}",
+          "image_source": "images/page_412_equation_12.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 413,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.038,
+            0.254,
+            0.054
+          ],
+          "content": "Transformations"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.861,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "397"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.068,
+            0.893,
+            0.106
+          ],
+          "content": "for $0   <   w   <   1$ and $t \\; > \\; 0$ . The form of the joint PDF, together with Proposition 7.1.21, tells us several things:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.102,
+            0.115,
+            0.896,
+            0.227
+          ],
+          "sub_type": "text",
+          "content": "1. Since the joint PDF factors into a function of t times a function of $w ,$ we have that T and W are independent: the total waiting time is independent of the fraction of time spent at the bank.\n2. We recognize the marginal PDF of T and deduce that $T \\sim  Gamma (a + b, \\lambda)$\n3. The PDF of W is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.266,
+            0.235,
+            0.734,
+            0.275
+          ],
+          "content": "f _ {W} (w) = \\frac {\\Gamma (a + b)}{\\Gamma (a) \\Gamma (b)} w ^ {a - 1} (1 - w) ^ {b - 1}, \\quad 0 <   w <   1,",
+          "image_source": "images/page_413_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.284,
+            0.897,
+            0.359
+          ],
+          "content": "by Proposition 7.1.21 or just by integrating out $T$ from the joint PDF of $T$ and $W$ . This PDF is proportional to the $\\mathrm { B e t a } ( a , b )$ PDF, so it is the $\\mathrm { B e t a } ( a , b )$ PDF! Note that as a byproduct of the calculation we have just done, we have found the normalizing constant of the Beta distribution:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.406,
+            0.368,
+            0.594,
+            0.41
+          ],
+          "content": "\\frac {1}{\\beta (a , b)} = \\frac {\\Gamma (a + b)}{\\Gamma (a) \\Gamma (b)}",
+          "image_source": "images/page_413_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.419,
+            0.642,
+            0.438
+          ],
+          "content": "is the constant that goes in front of the Beta(a, b) PDF."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.447,
+            0.896,
+            0.522
+          ],
+          "content": "To summarize, the bank–post office story tells us that when we add independent Gamma r.v.s X and Y with the same rate λ, the total $X   +   Y$ has a Gamma distribution, the fraction $X / ( X + Y )$ has a Beta distribution, and the total is independent of the fraction."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.532,
+            0.894,
+            0.569
+          ],
+          "content": "We can use this result to find the mean of $W   \\sim   \\mathrm { B e t a } ( a , b )$ without the slightest trace of calculus."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.579,
+            0.896,
+            0.634
+          ],
+          "content": "Example 8.5.2 (Beta expectation). With notation as above, note that since $T$ and $W$ are independent, they are uncorrelated: $E ( T W ) = E ( T ) E ( W )$ . Writing this in terms of X and Y , we have"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.255,
+            0.64,
+            0.746,
+            0.773
+          ],
+          "content": "\\begin{array}{l} E \\left((X + Y) \\cdot \\frac {X}{X + Y}\\right) = E (X + Y) E \\left(\\frac {X}{X + Y}\\right), \\\\ E (X) = E (X + Y) E \\left(\\frac {X}{X + Y}\\right), \\\\ \\frac {E (X)}{E (X + Y)} = E \\left(\\frac {X}{X + Y}\\right). \\\\ \\end{array}",
+          "image_source": "images/page_413_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.779,
+            0.896,
+            0.873
+          ],
+          "content": "Ordinarily, the last equality would be a horrendous blunder: faced with an expectation like $E ( X / ( X + Y ) )$ , we are not generally permitted to move the E into the numerator and denominator as we please. In this case, however, the bank–post office story justifies the move, so finding the expectation of $W$ happily reduces to finding the expectations of $X$ and $X + Y$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.218,
+            0.882,
+            0.781,
+            0.924
+          ],
+          "content": "E (W) = E \\left(\\frac {X}{X + Y}\\right) = \\frac {E (X)}{E (X + Y)} = \\frac {a / \\lambda}{a / \\lambda + b / \\lambda} = \\frac {a}{a + b}.",
+          "image_source": "images/page_413_equation_16.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 414,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.106,
+            0.039,
+            0.139,
+            0.053
+          ],
+          "content": "398"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.039,
+            0.896,
+            0.055
+          ],
+          "content": "Introduction to Probability"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.068,
+            0.743,
+            0.087
+          ],
+          "content": "Another approach is to proceed from the definition of expectation:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.313,
+            0.099,
+            0.689,
+            0.141
+          ],
+          "content": "E (W) = \\int_ {0} ^ {1} \\frac {\\Gamma (a + b)}{\\Gamma (a) \\Gamma (b)} w ^ {a} (1 - w) ^ {b - 1} d w.",
+          "image_source": "images/page_414_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.153,
+            0.896,
+            0.209
+          ],
+          "content": "By pattern recognition, the integrand is a $\\mathrm { B e t a } ( a + 1 , b )$ PDF, up to a normalizing constant. After obtaining an exact match for the PDF, we apply properties of the gamma function:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.194,
+            0.22,
+            0.809,
+            0.348
+          ],
+          "content": "\\begin{array}{l} E (W) = \\frac {\\Gamma (a + b)}{\\Gamma (a)} \\frac {\\Gamma (a + 1)}{\\Gamma (a + b + 1)} \\int_ {0} ^ {1} \\frac {\\Gamma (a + b + 1)}{\\Gamma (a + 1) \\Gamma (b)} w ^ {a} (1 - w) ^ {b - 1} d w \\\\ = \\frac {\\Gamma (a + b)}{\\Gamma (a)} \\frac {a \\Gamma (a)}{(a + b) \\Gamma (a + b)} \\\\ = \\frac {a}{a + b}. \\\\ \\end{array}",
+          "image_source": "images/page_414_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.358,
+            0.896,
+            0.394
+          ],
+          "content": "In Exercise 30, you will use this approach to find the variance and the other moments of the Beta distribution. \u0003"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.405,
+            0.894,
+            0.442
+          ],
+          "content": "Now that we know the Beta normalizing constant, we can also quickly obtain the PMF of the Beta-Binomial distribution."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.451,
+            0.896,
+            0.507
+          ],
+          "content": "Example 8.5.3 (Beta-Binomial PMF). Let $X | p \\sim \\operatorname { B i n } ( n , p )$ , with $p \\sim \\mathrm { B e t a } ( a , b )$ As mentioned in Story 8.3.3, X has a Beta-Binomial distribution. Find the marginal distribution of X."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.518,
+            0.564,
+            0.536
+          ],
+          "content": "Solution: Let $f ( p )$ be the Beta $( a , b )$ PDF. Then"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.219,
+            0.546,
+            0.783,
+            0.734
+          ],
+          "content": "\\begin{array}{l} P (X = k) = \\int_ {0} ^ {1} P (X = k | p) f (p) d p \\\\ = \\frac {1}{\\beta (a , b)} \\int_ {0} ^ {1} \\binom{n}{k} p ^ {k} (1 - p) ^ {n - k} p ^ {a - 1} (1 - p) ^ {b - 1} d p \\\\ = \\frac {\\binom {n} {k}}{\\beta (a , b)} \\int_ {0} ^ {1} p ^ {a + k - 1} (1 - p) ^ {b + n - k - 1} d p \\\\ = \\binom {n} {k} \\frac {\\beta (a + k , b + n - k)}{\\beta (a , b)}, \\\\ \\end{array}",
+          "image_source": "images/page_414_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.743,
+            0.282,
+            0.761
+          ],
+          "content": "for $k = 0 , 1 , \\ldots , n .$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.844,
+            0.352,
+            0.862
+          ],
+          "level": 2,
+          "content": "8.6 Order statistics"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.881,
+            0.896,
+            0.919
+          ],
+          "content": "The final transformation we will consider in this chapter is the transformation that takes n random variables $X _ { 1 } , \\ldots , X _ { n }$ and sorts them in order, producing the"
+        }
+      ]
+    },
+    {
+      "page_idx": 415,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.038,
+            0.255,
+            0.054
+          ],
+          "content": "Transformations"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.86,
+            0.039,
+            0.894,
+            0.053
+          ],
+          "content": "399"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.068,
+            0.895,
+            0.125
+          ],
+          "continues_prev": true,
+          "content": "transformed r.v.s min $( X _ { 1 } , \\ldots , X _ { n } ) , \\ldots , \\operatorname* { m a x } ( X _ { 1 } , \\ldots , X _ { n } )$ . The transformed r.v.s are called the order statistics,<sup>2</sup> and they are often useful when we are concerned with the distribution of extreme values, as we alluded to earlier."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.14,
+            0.896,
+            0.216
+          ],
+          "content": "Furthermore, like the sample mean ${ \\bar { X } } _ { n } ,$ the order statistics serve as useful summaries of an experiment, since we can use them to determine the cutoffs for the worst 5% of observations, the worst 25%, the best 25%, and so forth (such cutoffs are called the quantiles of the sample)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.232,
+            0.896,
+            0.272
+          ],
+          "content": "Definition 8.6.1 (Order statistics). For r.v.s $X _ { 1 } , X _ { 2 } , \\ldots , X _ { n }$ , the order statistics are the random variables $X _ { ( 1 ) } , X _ { ( 2 ) } , \\ldots , X _ { ( n ) }$ , where"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.292,
+            0.296,
+            0.706,
+            0.422
+          ],
+          "content": "\\begin{array}{l} X _ {(1)} = \\min (X _ {1}, \\dots , X _ {n}), \\\\ X _ {(2)} \\text {is the second - smallest of} X _ {1}, \\dots , X _ {n}, \\\\ \\begin{array}{c}\\bullet \\\\ \\bullet \\\\ \\bullet \\end{array} \\\\ X _ {(n - 1)} \\text {   is   the   second - largest   of   } X _ {1}, \\dots , X _ {n}, \\\\ X _ {(n)} = \\max (X _ {1}, \\dots , X _ {n}). \\\\ \\end{array}",
+          "image_source": "images/page_415_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.446,
+            0.897,
+            0.485
+          ],
+          "content": "Note that $X _ { ( 1 ) } \\; \\leq \\; X _ { ( 2 ) } \\; \\leq \\; \\ldots \\; \\leq \\; X _ { ( n ) }$ by definition. We call $X _ { ( j ) }$ the $j t h$ order statistic. If n is odd, $X _ { ( ( n + 1 ) / 2 ) }$ is called the sample median of $X _ { 1 } , \\ldots , X _ { n }$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.499,
+            0.896,
+            0.558
+          ],
+          "content": "h 8.6.2. The order statistics $X _ { ( 1 ) } , \\ldots , X _ { ( n ) }$ are r.v.s, and each $X _ { ( j ) }$ is a function of $X _ { 1 } , \\ldots , X _ { n }$ . Even if the original r.v.s are independent, the order statistics are dependent: if we know that $X _ { ( 1 ) } = 1 0 0$ , then $X _ { ( n ) }$ is forced to be at least 100."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.572,
+            0.896,
+            0.688
+          ],
+          "content": "We will focus our attention on the case where $X _ { 1 } , \\ldots , X _ { n }$ are i.i.d. continuous r.v.s. The reason is that with discrete r.v.s, there is a positive probability of tied values; with continuous r.v.s, the probability of a tie is exactly 0, which makes matters much easier. Thus, for the rest of this section, assume $X _ { 1 } , \\ldots , X _ { n }$ are i.i.d. and continuous, with CDF $F$ and PDF f. We will derive the marginal CDF and PDF of each individual order statistic $X _ { ( j ) }$ , as well as the joint PDF of $( X _ { ( 1 ) } , \\ldots , X _ { ( n ) } )$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.701,
+            0.896,
+            0.795
+          ],
+          "content": "A complication we run into right away is that the transformation to order statistics is not invertible: starting with min $( X , Y )   =   3$ and max $( X , Y )   =   5$ , we can’t tell whether the original values of X and Y were 3 and 5, respectively, or 5 and 3. Therefore the change of variables formula from $\\mathbb { R } ^ { n }$ to $\\mathbb { R } ^ { n }$ does not apply. Instead we will take a direct approach, using pictures to guide us when necessary."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.811,
+            0.896,
+            0.832
+          ],
+          "content": "Let’s start with the CDF of $X _ { ( n ) } { = } \\operatorname* { m a x } ( X _ { 1 } , \\ldots X _ { n } )$ . Since $X _ { ( n ) }$ is less than x if"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.102,
+            0.856,
+            0.896,
+            0.919
+          ],
+          "content": "<sup>2</sup>This term sometimes causes confusion. In statistics (the field of study), any function of the data is called a statistic. If X<sub>1</sub>, . . . , X<sub>n</sub> are the data, then min(X<sub>1</sub>, . . . , X<sub>n</sub>) is a statistic, and so is max(X<sub>1</sub>, . . . , X<sub>n</sub>). They are called order statistics because we get them by sorting the data in order (from smallest to largest)."
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Probability, Second Edition",
+      "authors": [
+        "Joseph K. Blitzstein;Jessica Hwang;"
+      ],
+      "created_at": "2019-01-18T11:22:30+05:30",
+      "modified_at": "2019-02-04T21:29:14+05:30",
+      "creator_application": "LaTeX with hyperref",
+      "producer_application": "pdfTeX-1.40.19",
+      "page_count": 636,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 400,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 401,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 402,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 403,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 404,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 405,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 406,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 407,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 408,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 409,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 410,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 411,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 412,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 413,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 414,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        },
+        {
+          "page_idx": 415,
+          "width_pt": 503.00048065185547,
+          "height_pt": 719.9999122619629
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}
