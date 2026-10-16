@@ -1,0 +1,3144 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "DocHdl1OnVERSA-PPM01tmpTarget",
+      "created_at": "2015-08-17T16:48:25Z",
+      "modified_at": "2018-07-08T15:12:16-07:00",
+      "creator_application": "Prinect Printready",
+      "producer_application": "Mac OS X 10.10.4 Quartz PDFContext",
+      "page_count": 380,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 192,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 193,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 194,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 195,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 196,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 197,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 198,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 199,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 200,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 201,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 202,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 203,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 204,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 205,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 206,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 207,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 192,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.065,
+            0.255,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.167,
+            0.128,
+            0.639,
+            0.148
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "String Spelled by a Gapped Genome Path Problem:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.167,
+            0.149,
+            0.87,
+            0.17
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Reconstruct a sequence of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( k , d )"
+            },
+            {
+              "type": "text",
+              "content": " -mers corresponding to a path in a paired de Bruijn graph."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.205,
+            0.202,
+            0.871,
+            0.244
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Input",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ": A sequence of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( k , d )"
+            },
+            {
+              "type": "text",
+              "content": " -mers "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\left( a _ { 1 } \\middle | b _ { 1 } \\right) } , \\cdots , { \\left( a _ { n } \\middle | b _ { n } \\right) }"
+            },
+            {
+              "type": "text",
+              "content": " such that SUFFIX "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( ( a _ { i } | b _ { i } ) ) = \\mathrm { P R E F I X } ( ( a _ { i + 1 } | b _ { i + 1 } ) )"
+            },
+            {
+              "type": "text",
+              "content": " for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 \\leq i \\leq n - 1"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.205,
+            0.244,
+            0.871,
+            0.287
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Output",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ": A string Text of length "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k + d + k + n - 1"
+            },
+            {
+              "type": "text",
+              "content": " such that the i-th "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( k , d )"
+            },
+            {
+              "type": "text",
+              "content": " -mer of Text is equal to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left( a _ { i } \\middle | b _ { i } \\right)"
+            },
+            {
+              "type": "text",
+              "content": " for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 \\leq i \\leq n"
+            },
+            {
+              "type": "text",
+              "content": " (if such a string exists)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.135,
+            0.32,
+            0.897,
+            0.447
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Our approach to solving this problem will split the given "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( k , d )"
+            },
+            {
+              "type": "text",
+              "content": " -mers "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\left( a _ { 1 } \\middle | b _ { 1 } \\right) } , \\cdots , { \\left( a _ { n } \\middle | b _ { n } \\right) }"
+            },
+            {
+              "type": "text",
+              "content": " into their initial k-mers, First "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P a t t e r n s = \\left( a _ { 1 } , \\cdots , a _ { n } \\right)"
+            },
+            {
+              "type": "text",
+              "content": " , and their terminal k-mers, Second-"
+            },
+            {
+              "type": "equation_inline",
+              "content": "P a t t e r n s = \\left( b _ { 1 } , \\cdots , b _ { n } \\right)"
+            },
+            {
+              "type": "text",
+              "content": " . Assuming that we have implemented an algorithm solving the String Spelled by a Genome Path Problem (denoted "
+            },
+            {
+              "type": "text",
+              "content": "STRINGSPELLEDBYPATTERNS",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "), we can assemble FirstPatterns and SecondPatterns into strings PrefixString and SuffixString, respectively."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.134,
+            0.449,
+            0.897,
+            0.511
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For the first example above, we have that PrefixString = AGCAGCTGCT and SuffixString = AGCTGCTGCA. These strings perfectly overlap starting at the fourth nucleotide of PrefixString:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.352,
+            0.528,
+            0.68,
+            0.589
+          ],
+          "image_path": "images/page_192_equation_7.jpg",
+          "content": "\\begin{array}{l} \\text {PrefixString} = \\text {AGCAGCTGCT} \\\\ \\text {SuffixString} = \\quad \\text {AGCTGCTGCA} \\\\ G e n o m e \\quad = \\quad A G C A G C T G C T G C A \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.606,
+            0.738,
+            0.625
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "However, for the second example above, there is no perfect overlap:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.352,
+            0.642,
+            0.679,
+            0.702
+          ],
+          "image_path": "images/page_192_equation_9.jpg",
+          "content": "\\begin{array}{l} \\text {PrefixString} = \\mathrm{AGCTGCAGCT} \\\\ \\text {SuffixString} = \\mathbf {A G C T G C T G C A} \\\\ \\text {Genome} = \\mathrm{AGC?GC?GCTGCA} \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.136,
+            0.72,
+            0.897,
+            0.848
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The following algorithm, "
+            },
+            {
+              "type": "text",
+              "content": "STRINGSPELLEDBYGAPPEDPATTERNS",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", generalizes this approach to an arbitrary sequence GappedPatterns of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( k , d )"
+            },
+            {
+              "type": "text",
+              "content": " -mers. It constructs strings PrefixString and SuffixString as described above, and checks whether they have perfect overlap (i.e., form the prefix and suffix of a reconstructed string). It also assumes that the number of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( k , d )"
+            },
+            {
+              "type": "text",
+              "content": " -mers in GappedPatterns is at least "
+            },
+            {
+              "type": "equation_inline",
+              "content": "d ;"
+            },
+            {
+              "type": "text",
+              "content": " otherwise, it is impossible to reconstruct a contiguous string."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 11,
+          "bbox": [
+            0.501,
+            0.943,
+            0.534,
+            0.958
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "168"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 193,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.501,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E A S S E M B L E G E N O M E S ?"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.129,
+            0.116,
+            0.818,
+            0.31
+          ],
+          "content": [
+            {
+              "type": "algorithm_body",
+              "index": 1,
+              "bbox": [
+                0.129,
+                0.116,
+                0.818,
+                0.31
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "STRINGSPELLEDBYGAPPEDPATTERNS(GappedPatterns, k, d)\n    FirstPatterns ← the sequence of initial k-mers from GappedPatterns\n    SecondPatterns ← the sequence of terminal k-mers from GappedPatterns\n    PrefixString ← STRINGSPELLEDBYPATTERNS(FirstPatterns, k)\n    SuffixString ← STRINGSPELLEDBYPATTERNS(SecondPatterns, k)\n    for i = k + d + 1 to |PrefixString|\n        if the i-th symbol in PrefixString ≠ the (i - k - d)-th symbol in SuffixString\n            return \"there is no string spelled by the gapped patterns\"\n    return PrefixString concatenated with the last k + d symbols of SuffixString"
+                }
+              ]
+            }
+          ],
+          "sub_type": "algorithm"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.102,
+            0.343,
+            0.451,
+            0.363
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Maximal non-branching paths in a graph"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.1,
+            0.374,
+            0.862,
+            0.501
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A node v in a directed graph Graph is called a "
+            },
+            {
+              "type": "text",
+              "content": "1-in-1-out node",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " if its indegree and outdegree are both equal to 1. We can rephrase the definition of a “maximal non-branching path” from the main text as a path whose internal nodes are 1-in-1-out nodes and whose initial and final nodes are not 1-in-1-out nodes. Also, note that the definition from the main text does not handle the case when Graph has a connected component that is an "
+            },
+            {
+              "type": "text",
+              "content": "isolated cycle",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", in which all nodes are 1-in-1-out nodes (recall Figure 3.38)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.101,
+            0.503,
+            0.861,
+            0.566
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "MAXIMALNONBRANCHINGPATHS",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", shown below, iterates through all nodes of the graph that are not 1-in-1-out nodes and generates all non-branching paths starting at each such node. In a final step, it finds all isolated cycles in the graph."
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 5,
+          "bbox": [
+            0.129,
+            0.587,
+            0.845,
+            0.89
+          ],
+          "content": [
+            {
+              "type": "algorithm_body",
+              "index": 5,
+              "bbox": [
+                0.129,
+                0.587,
+                0.845,
+                0.89
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "MAXIMALNONBRANCHINGPATHS(Graph)\n    Paths ← empty list\n    for each node v in Graph\n        if v is not a 1-in-1-out node\n            if OUT(v) > 0\n                for each outgoing edge (v, w) from v\n                    NonBranchingPath ← the path consisting of the single edge (v, w)\n                    while w is a 1-in-1-out node\n                        extend NonBranchingPath by the outgoing edge (w, u) from w\n                        w ← u\n                    add NonBranchingPath to the set Paths\n    for each isolated cycle Cycle in Graph\n        add Cycle to Paths\n    return Paths"
+                }
+              ]
+            }
+          ],
+          "sub_type": "algorithm"
+        },
+        {
+          "type": "image",
+          "index": 6,
+          "bbox": [
+            0.889,
+            0.179,
+            0.967,
+            0.242
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 6,
+              "bbox": [
+                0.889,
+                0.179,
+                0.967,
+                0.242
+              ],
+              "image_path": "images/page_193_image_6.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 7,
+          "bbox": [
+            0.465,
+            0.944,
+            0.498,
+            0.96
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "169"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 194,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.141,
+            0.067,
+            0.255,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.482,
+            0.112,
+            0.551,
+            0.13
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Detours"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.141,
+            0.148,
+            0.549,
+            0.166
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A short history of DNA sequencing technologies"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.141,
+            0.18,
+            0.894,
+            0.305
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In 1988, Radoje Drmanac, Andrey Mirzabekov, and Edwin Southern simultaneously and independently proposed the futuristic and at the time completely implausible method of "
+            },
+            {
+              "type": "text",
+              "content": "DNA arrays",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " for DNA sequencing. None of these three biologists knew of the work of Euler, Hamilton, and de Bruijn; none could have possibly imagined that the implications of his own experimental research would eventually bring him face-to-face with these mathematical giants."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.141,
+            0.308,
+            0.894,
+            0.518
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A decade earlier, Frederick Sanger had sequenced the tiny 5,386 nucleotide-long genome of the fX174 virus. By the late 1980s, biologists were routinely sequencing viruses containing hundreds of thousands of nucleotides, but the idea of sequencing bacterial (let alone human) genomes remained preposterous, both experimentally and computationally. Indeed, generating a single read in the late 1980s cost more than a dollar, pricing mammalian genome sequences in the billions. DNA arrays were therefore invented with the goal of cheaply generating a genome’s k-mer composition, albeit with a smaller read length k than the original DNA sequencing technology. For example, whereas Sanger’s expensive sequencing technique generated 500 nucleotide-long reads in 1988, the DNA array inventors initially aimed at producing reads of length only 10."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.141,
+            0.52,
+            0.894,
+            0.71
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "DNA arrays work as follows. We first synthesize all 4"
+            },
+            {
+              "type": "text",
+              "content": "k",
+              "styles": [
+                "superscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " possible DNA k-mers and attach them to a DNA array, which is a grid on which each k-mer is assigned a unique location. Next, we fluorescently label a single-stranded DNA fragment (with unknown sequence) and apply a solution containing this labeled DNA to the DNA array. The k-mers in a DNA fragment will hybridize (bind) to their reverse complementary k-mers on the array. All we need to do is use spectroscopy to analyze which sites on the array emit the fluorescence; the reverse complements of k-mers corresponding to these sites must therefore belong to the (unknown) DNA fragment. Thus, the set of fluorescent k-mers on the array reveals the composition of a DNA fragment (Figure 3.42)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.141,
+            0.712,
+            0.894,
+            0.901
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "At first, few believed that DNA arrays would work, because both the biochemical problem of synthesizing millions of short DNA fragments and the algorithmic problem of sequence reconstruction appeared too complicated. In 1988, Science magazine wrote that given the amount of work required to synthesize a DNA array, “using DNA arrays for sequencing would simply be substituting one horrendous task for another”. It turned out that Science was only half right. In the mid-1990s, a number of companies perfected technologies for designing large DNA arrays, but DNA arrays ultimately failed to realize the dream that motivated their inventors because the fidelity of DNA hybridization with the array was too low and because the value of k was too small."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 7,
+          "bbox": [
+            0.503,
+            0.947,
+            0.533,
+            0.96
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "170"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 195,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.501,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E A S S E M B L E G E N O M E S ?"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 1,
+          "bbox": [
+            0.329,
+            0.109,
+            0.635,
+            0.346
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 1,
+              "bbox": [
+                0.329,
+                0.109,
+                0.635,
+                0.346
+              ],
+              "image_path": "images/page_195_table_1.jpg",
+              "content": "<table><tr><td>AAA</td><td>AGA</td><td>CAA</td><td>CGA</td><td>GAA</td><td>GGA</td><td>TAA</td><td>TGA</td></tr><tr><td>AAC</td><td>AGC</td><td>CAC</td><td>CGC</td><td>GAC</td><td>GGC</td><td>TAC</td><td>TGC</td></tr><tr><td>AAG</td><td>AGG</td><td>CAG</td><td>CGG</td><td>GAG</td><td>GGG</td><td>TAG</td><td>TGG</td></tr><tr><td>AAT</td><td>AGT</td><td>CAT</td><td>CGT</td><td>GAT</td><td>GGT</td><td>TAT</td><td>TGT</td></tr><tr><td>ACA</td><td>ATA</td><td>CCA</td><td>CTA</td><td>GCA</td><td>GTA</td><td>TCA</td><td>TTA</td></tr><tr><td>ACC</td><td>ATC</td><td>CCC</td><td>CTC</td><td>GCC</td><td>GTC</td><td>TCC</td><td>TTC</td></tr><tr><td>ACG</td><td>ATG</td><td>CCG</td><td>CTG</td><td>GCG</td><td>GTG</td><td>TCG</td><td>TTG</td></tr><tr><td>ACT</td><td>ATT</td><td>CCT</td><td>CTT</td><td>GCT</td><td>GTT</td><td>TCT</td><td>TTT</td></tr></table>"
+            },
+            {
+              "type": "table_caption",
+              "index": 2,
+              "bbox": [
+                0.155,
+                0.359,
+                0.808,
+                0.445
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 3.42 A toy DNA array containing all possible 3-mers. Taking the reverse complements of the fluorescently labeled 3-mers yields the collection {ACC, ACG, CAC, CCG, CGC, CGT, GCA, GTT, TAC, TTA}, which is the 3-mer composition of the twelve nucleotide-long string CGCACGTTACCG. Note that this DNA array provides no information regarding 3-mer multiplicities."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.101,
+            0.483,
+            0.861,
+            0.609
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Yet the failure of DNA arrays was a spectacular one; while the original goal (DNA sequencing) dangled out of reach, two new unexpected applications of DNA arrays emerged. Today, arrays are used to measure gene expression as well as to analyze genetic variations. These unexpected applications transformed DNA arrays into a multi-billion dollar industry that included Hyseq, founded by Radoje Drmanac, one of the original inventors of DNA arrays."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.101,
+            0.611,
+            0.861,
+            0.799
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "After founding Hyseq, Drmanac did not abandon his dream of inventing an alternative DNA sequencing technology. In 2005, he founded Complete Genomics, one of the first Next Generation Sequencing (NGS) companies. Complete Genomics, Illumina, Life Technologies, and other NGS companies subsequently developed the technology to cheaply generate almost all k-mers from a genome, thus at last enabling the method of Eulerian assembly. While these technologies are quite different from the DNA array technology proposed in 1988, one can still recognize the intellectual legacy of DNA arrays in NGS approaches, a testament to the fact that good ideas never die, even if they fail at first."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.101,
+            0.803,
+            0.861,
+            0.888
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Similarly to DNA arrays, NGS technologies initially generated millions of rather short error-prone reads (of length about 20 nucleotides) when the NGS revolution began in 2005. However, within a span of just a few years, NGS companies were able to increase read length and improve accuracy by an order of magnitude. Moreover, Pacific"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 6,
+          "bbox": [
+            0.466,
+            0.946,
+            0.496,
+            0.96
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "171"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 196,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.141,
+            0.066,
+            0.255,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 3"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.141,
+            0.111,
+            0.895,
+            0.258
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Biosciences and Oxford Nanopore Technologies already generate error-ridden reads containing thousands of nucleotides. Perhaps your own start-up will find a way to generate a single read spanning the entire genome, thus making this chapter a footnote in the history of genome sequencing. Whatever the future brings, recent developments in NGS have already revolutionized genomics, and biologists are preparing to assemble the genomes of all mammalian species on Earth . . . all while relying on a simple idea that Leonhard Euler conceived in 1735."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.141,
+            0.283,
+            0.4,
+            0.301
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Repeats in the human genome"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.141,
+            0.313,
+            0.895,
+            0.46
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A "
+            },
+            {
+              "type": "text",
+              "content": "transposon",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " is a DNA fragment that can change its position within the genome, often resulting in a duplication (repeat). A transposon that inserts itself into a gene will most likely disable that gene. Diseases that are caused by transposons include hemophilia, porphyria, Duchenne muscular dystrophy, and many others. Transposons make up a large fraction of the human genome and are divided into two classes according to their mechanism of transposition, which can be described as either "
+            },
+            {
+              "type": "text",
+              "content": "retrotransposons",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " or "
+            },
+            {
+              "type": "text",
+              "content": "DNA transposons",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.141,
+            0.463,
+            0.895,
+            0.589
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Retrotransposons are copied in two stages: first they are transcribed from DNA to RNA, and the RNA produced is then "
+            },
+            {
+              "type": "text",
+              "content": "reverse transcribed",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " to DNA by a "
+            },
+            {
+              "type": "text",
+              "content": "reverse transcriptase",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ". This copied DNA fragment is then inserted at a new position into the genome. DNA transposons do not involve an RNA intermediate but instead are catalyzed by "
+            },
+            {
+              "type": "text",
+              "content": "transposases",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ". The transposase cuts out the DNA transposon, which is then inserted into a new site in the genome, resulting in a repeat."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.141,
+            0.59,
+            0.895,
+            0.802
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The first transposons were discovered in maize by Barbara McClintock, for which she was awarded a Nobel Prize in 1983. About 85% of the maize genome and 50% of the human genome consist of transposons. The most common transposon in humans is the Alu sequence, which is approximately 300 bases long and accounts for approximately a million repeats (with mutations) in the human genome. The "
+            },
+            {
+              "type": "text",
+              "content": "Mariner sequence",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " is another transposon in the human genome that has about 14,000 repeats, making up 2.6 million base pairs. Mariner-like transposons exist in many species and can even be transmitted from one species to another. The Mariner transposon was used to develop the "
+            },
+            {
+              "type": "text",
+              "content": "Sleeping Beauty transposon system",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", a synthetic DNA transposon constructed for the purposes of introducing new traits in animals and for gene therapy."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 6,
+          "bbox": [
+            0.503,
+            0.947,
+            0.533,
+            0.96
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "172"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 197,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.501,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E A S S E M B L E G E N O M E S ?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.103,
+            0.112,
+            0.17,
+            0.13
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Graphs"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.1,
+            0.143,
+            0.859,
+            0.205
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The use of the word “graph” in this book is different from its use in high school mathematics; we do not mean a chart of data. You can think of a graph as a diagram showing cities connected by roads."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.101,
+            0.207,
+            0.861,
+            0.313
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The first panel in Figure 3.43 shows a 4 ⇥ 4 chessboard with the four corner squares removed. A knight can move two steps in any of four directions (left, right, up, and down) followed by one step in a perpendicular direction. For example, a knight at square 1 can move to square 7 (two down and one left), square 9 (two down and one right), or square 6 (two right and one down)."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 4,
+          "bbox": [
+            0.156,
+            0.344,
+            0.797,
+            0.482
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 4,
+              "bbox": [
+                0.156,
+                0.344,
+                0.797,
+                0.482
+              ],
+              "image_path": "images/page_197_image_4.jpg",
+              "content": ""
+            },
+            {
+              "type": "image_caption",
+              "index": 5,
+              "bbox": [
+                0.154,
+                0.496,
+                0.808,
+                0.566
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 3.43 (Left) A hypothetical chessboard. (Middle) The Knight Graph represents each square by a node and connects two nodes with an edge if a knight can travel between the respective squares in a single move. (Right) An equivalent representation of the Knight Graph."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.128,
+            0.594,
+            0.833,
+            0.636
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "STOP and Think:",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " Can a knight travel around this board, pass through each square exactly once, and return to the same square it started on?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.101,
+            0.658,
+            0.861,
+            0.741
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The second panel in Figure 3.43 represents each of the chessboard’s twelve squares as a node. Two nodes are connected by an edge if a knight can move between them in a single step. For example, node 1 is connected to nodes 6, 7, and 9. Connecting nodes in this manner produces a “Knight Graph” consisting of twelve nodes and sixteen edges."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.101,
+            0.744,
+            0.861,
+            0.806
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can describe a graph by its set of nodes and edges, where every edge is written as the pair of nodes that it connects. The graph in the second panel of Figure 3.43 is described by the node set"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.345,
+            0.823,
+            0.618,
+            0.842
+          ],
+          "image_path": "images/page_197_equation_9.jpg",
+          "content": "1, 2, 3, 4, 5, 6, 7, 8, 9, 1 0, 1 1, 1 2,"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.102,
+            0.86,
+            0.347,
+            0.88
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "and the following edge set:"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 11,
+          "bbox": [
+            0.889,
+            0.584,
+            0.967,
+            0.646
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 11,
+              "bbox": [
+                0.889,
+                0.584,
+                0.967,
+                0.646
+              ],
+              "image_path": "images/page_197_image_11.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 12,
+          "bbox": [
+            0.465,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "173"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 198,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.065,
+            0.259,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 3"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 1,
+          "bbox": [
+            0.195,
+            0.111,
+            0.836,
+            0.152
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 1,
+              "bbox": [
+                0.195,
+                0.111,
+                0.836,
+                0.152
+              ],
+              "image_path": "images/page_198_table_1.jpg",
+              "content": "<table><tr><td>1—6</td><td>1—7</td><td>1—9</td><td>2—3</td><td>2—8</td><td>2—10</td><td>3—9</td><td>3—11</td></tr><tr><td>4—10</td><td>4—12</td><td>5—7</td><td>5—11</td><td>6—8</td><td>6—12</td><td>7—12</td><td>10—11</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.136,
+            0.168,
+            0.895,
+            0.272
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A "
+            },
+            {
+              "type": "text",
+              "content": "path",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " in a graph is a sequence of edges, where each successive edge begins at the node where the previous edge ends. For example, the path "
+            },
+            {
+              "type": "equation_inline",
+              "content": "8 \\rightarrow 6 \\rightarrow 1 \\rightarrow 9"
+            },
+            {
+              "type": "text",
+              "content": " in Figure 3.43 starts at node 8, ends at node 9, and consists of 3 edges. Paths that start and end at the same node are referred to as "
+            },
+            {
+              "type": "text",
+              "content": "cycles",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ". The cycle "
+            },
+            {
+              "type": "equation_inline",
+              "content": "3 \\rightarrow 2 \\rightarrow 1 0 \\rightarrow 1 1 \\rightarrow 3"
+            },
+            {
+              "type": "text",
+              "content": " starts and ends at node 3 and consists of 4 edges."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.136,
+            0.275,
+            0.897,
+            0.402
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The way a graph is drawn is irrelevant; two graphs with the same node and edge sets are equivalent, even if the particular pictures that represent the graph are different. The only thing that is important is which nodes are connected and which are not. Therefore, the graph in the second panel of Figure 3.43 is identical to the graph in the third panel. This graph reveals a cycle that visits every node in the Knight Graph once and describes a sequence of knight moves that visit every square exactly once."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 4,
+          "bbox": [
+            0.041,
+            0.416,
+            0.102,
+            0.46
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 4,
+              "bbox": [
+                0.041,
+                0.416,
+                0.102,
+                0.46
+              ],
+              "image_path": "images/page_198_image_4.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.165,
+            0.419,
+            0.873,
+            0.458
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "EXERCISE BREAK:",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " How many knight’s tours exist for the chessboard in Figure 3.43?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.136,
+            0.481,
+            0.897,
+            0.567
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The number of edges incident to a given node v is called the "
+            },
+            {
+              "type": "text",
+              "content": "degree",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " of v. For example, node 1 in the Knight Graph has degree 3, while node 5 has degree 2. The sum of degrees of all twelve nodes is, in this case, 32 (eight nodes have degree 3 and four nodes have degree 2), which is twice the number of edges in the graph."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 7,
+          "bbox": [
+            0.031,
+            0.575,
+            0.11,
+            0.636
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 7,
+              "bbox": [
+                0.031,
+                0.575,
+                0.11,
+                0.636
+              ],
+              "image_path": "images/page_198_image_7.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.164,
+            0.584,
+            0.869,
+            0.625
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "STOP and Think:",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " Can you connect seven phones in such a way that each is connected to exactly three others?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.136,
+            0.648,
+            0.896,
+            0.754
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Many bioinformatics problems analyze "
+            },
+            {
+              "type": "text",
+              "content": "directed graphs",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", in which every edge is directed from one node to another, as shown by the arrows in Figure 3.44. You can think of a directed graph as a diagram showing cities connected by one-way roads. Every node in a directed graph is characterized by indegree (the number of incoming edges) and outdegree (the number of outgoing edges)."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 10,
+          "bbox": [
+            0.031,
+            0.762,
+            0.11,
+            0.824
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 10,
+              "bbox": [
+                0.031,
+                0.762,
+                0.11,
+                0.824
+              ],
+              "image_path": "images/page_198_image_10.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.164,
+            0.772,
+            0.869,
+            0.813
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "STOP and Think:",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " Prove that for every directed graph, the sum of indegrees of all nodes is equal to the sum of outdegrees of all nodes."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.137,
+            0.836,
+            0.897,
+            0.879
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "An undirected graph is "
+            },
+            {
+              "type": "text",
+              "content": "connected",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " if every two nodes have a path connecting them. Disconnected graphs can be partitioned into disjoint connected components."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 13,
+          "bbox": [
+            0.501,
+            0.946,
+            0.535,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "174"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 199,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.501,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E A S S E M B L E G E N O M E S ?"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 1,
+          "bbox": [
+            0.348,
+            0.108,
+            0.615,
+            0.263
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 1,
+              "bbox": [
+                0.348,
+                0.108,
+                0.615,
+                0.263
+              ],
+              "image_path": "images/page_199_image_1.jpg",
+              "content": "```mermaid\ngraph LR\n  A[\"Node 1\"] --> B[\"Node 2\"]\n  A --> C[\"Node 3\"]\n  A --> D[\"Node 4\"]\n  B --> E[\"Node 5\"]\n  B --> F[\"Node 6\"]\n  C --> G[\"Node 7\"]\n  C --> H[\"Node 8\"]\n  D --> I[\"Node 9\"]\n  D --> J[\"Node 10\"]\n  E --> K[\"Node 11\"]\n  F --> L[\"Node 12\"]\n  G --> M[\"Node 13\"]\n  H --> N[\"Node 14\"]\n  I --> O[\"Node 15\"]\n  J --> P[\"Node 16\"]\n  K --> Q[\"Node 17\"]\n  L --> R[\"Node 18\"]\n  M --> S[\"Node 19\"]\n  N --> T[\"Node 20\"]\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 2,
+              "bbox": [
+                0.361,
+                0.277,
+                0.601,
+                0.294
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 3.44 A directed graph."
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.104,
+            0.335,
+            0.257,
+            0.353
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The icosian game"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.101,
+            0.366,
+            0.862,
+            0.556
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We make an historical detour to Dublin, with the creation in 1857 of the "
+            },
+            {
+              "type": "text",
+              "content": "icosian game",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " by the Irish mathematician William Hamilton. This “game”, which was a commercial flop, consisted of a wooden board with twenty pegholes and some lines connecting the holes, as well as twenty numbered pegs (Figure 3.45 (left)). The objective was to place the numbered pegs in the holes in such a way that peg 1 would be connected by a line on the board to peg 2, which would in turn be connected by a line to peg 3, and so on, until finally peg 20 would be connected by a line back to peg 1. In other words, if we follow the lines on the board from peg to peg in ascending order, we reach every peg exactly once and then arrive back at our starting peg."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 5,
+          "bbox": [
+            0.156,
+            0.588,
+            0.807,
+            0.783
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 5,
+              "bbox": [
+                0.156,
+                0.588,
+                0.807,
+                0.783
+              ],
+              "image_path": "images/page_199_image_5.jpg",
+              "content": ""
+            },
+            {
+              "type": "image_caption",
+              "index": 6,
+              "bbox": [
+                0.154,
+                0.791,
+                0.806,
+                0.86
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 3.45 (Left) Hamilton’s icosian game, with a winning placement of the pegs shown. (Right) The winning placement of the pegs can be represented as a Hamiltonian cycle in a graph. Each node in this graph represents a peghole on the board, and an edge connects two pegholes that are connected by a line segment on the board."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 7,
+          "bbox": [
+            0.466,
+            0.946,
+            0.498,
+            0.96
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "175"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 200,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 3"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.136,
+            0.113,
+            0.895,
+            0.239
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can model the icosian game using a graph if we represent each peghole by a node and then transform lines that connect pegholes into edges that connect the corresponding nodes. This graph does have a Hamiltonian cycle solving the icosian game; one of them is shown in Figure 3.45 (right). Although a brute force approach to the Hamiltonian Cycle Problem works for these small graphs, it quickly becomes infeasible for large graphs."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.139,
+            0.26,
+            0.439,
+            0.279
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Tractable and intractable problems"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.136,
+            0.291,
+            0.896,
+            0.459
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Inspired by Euler’s Theorem, you probably are wondering whether there exists such a simple result leading to a fast algorithm for the Hamiltonian Cycle Problem. The key challenge is that while we are guided by Euler’s Theorem in solving the Eulerian Cycle Problem, an analogous simple condition for the Hamiltonian Cycle Problem remains unknown. Of course, you could always explore all walks through the graph and report back if you find a Hamiltonian cycle. The problem with this brute force method is that for a graph on just a thousand nodes, there may be more walks through the graph than there are atoms in the universe!"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.136,
+            0.462,
+            0.897,
+            0.693
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For years, the Hamiltonian Cycle Problem eluded all attempts to solve it by some of the world’s most brilliant researchers. After years of fruitless effort, computer scientists began to wonder whether this problem is "
+            },
+            {
+              "type": "text",
+              "content": "intractable",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", i.e., that their failure to find a polynomial-time algorithm was not attributable to a lack of insight, but rather because such an algorithm for solving the Hamiltonian Cycle Problem simply does not exist. In the 1970s, computer scientists discovered thousands more algorithmic problems with the same fate as the Hamiltonian Cycle Problem. While these problems may appear to be simple, no one has been able to find fast algorithms for solving them. A large subset of these problems, including the Hamiltonian Cycle Problem, are now collectively known as "
+            },
+            {
+              "type": "text",
+              "content": "NP-complete",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ". A formal definition of NP-completeness is beyond the scope of this text."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.136,
+            0.696,
+            0.897,
+            0.905
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "All the NP-complete problems are equivalent to each other: an instance of any NP-complete problem can be transformed into an instance of any other NP-complete problem in polynomial time. Thus, if you find a fast algorithm for one NP-complete problem, you will automatically be able to use this algorithm to design a fast algorithm for any other NP-complete problem! The problem of efficiently solving NP-complete problems, or finally proving that they are intractable, is so fundamental that it was named one of seven “Millennium Problems” by the Clay Mathematics Institute in 2000. Find an efficient algorithm for any NP-complete problem, or show that one of these problems is intractable, and the Clay Institute will award you a prize of one million dollars."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 6,
+          "bbox": [
+            0.501,
+            0.945,
+            0.534,
+            0.96
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "176"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 201,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.501,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E A S S E M B L E G E N O M E S ?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.1,
+            0.113,
+            0.859,
+            0.215
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Think twice before you embark on solving an NP-complete problem. So far, only one of the seven Millennium Problems has been solved; in 2003, Grigori Perelman proved the Poincaré Conjecture. A true mathematician, Perelman would later turn down the million-dollar prize, believing that the purity and beauty of mathematics is above all worldly compensation."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.1,
+            0.218,
+            0.861,
+            0.388
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "NP-complete problems fall within a larger class of difficult computational problems. A problem A is "
+            },
+            {
+              "type": "text",
+              "content": "NP-hard",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " if there is some NP-complete problem that can be reduced to A in polynomial time. Because NP-complete problems can be reduced to each other in polynomial time, all NP-complete problems are NP-hard. However, not every NP-hard problem is NP-complete (meaning that the former are “at least as difficult” to solve as the latter). One example of an NP-hard problem that is not NP-complete is the "
+            },
+            {
+              "type": "text",
+              "content": "Traveling Salesman Problem",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", in which we are given a graph with weighted edges and we must produce a Hamiltonian cycle of minimum total weight."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.103,
+            0.41,
+            0.411,
+            0.429
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "From Euler to Hamilton to de Bruijn"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.1,
+            0.44,
+            0.86,
+            0.504
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Euler’s presented his solution of the Bridges of Königsberg Problem to the Imperial Russian Academy of Sciences in St. Petersburg in 1735. Figure 3.46 shows Euler’s drawing of the Seven Bridges of Königsberg."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 5,
+          "bbox": [
+            0.158,
+            0.532,
+            0.776,
+            0.768
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 5,
+              "bbox": [
+                0.158,
+                0.532,
+                0.776,
+                0.768
+              ],
+              "image_path": "images/page_201_image_5.jpg",
+              "content": "Comment Acad. Sc.Tom VIII Tab.VIII p.198\nA\nC\nD\nFig. 1."
+            },
+            {
+              "type": "image_caption",
+              "index": 6,
+              "bbox": [
+                0.154,
+                0.781,
+                0.808,
+                0.833
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 3.46 Euler’s illustration of Königsberg, showing each of the four parts of the city labeled A, B, C, and D, along with the seven bridges crossing the different arms of the Pregel river."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.101,
+            0.864,
+            0.86,
+            0.906
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Euler was the most prolific mathematician of all time; besides graph theory, he first introduced the notation f(x) to represent a function, i for the square root of -1, and p for"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.465,
+            0.946,
+            0.499,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "177"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 202,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 3"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.135,
+            0.112,
+            0.895,
+            0.195
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "the circular constant. Working very hard throughout his entire life, he became blind in his right eye in 1735. He kept working. In 1766, he lost the use of his left eye and commented: “Now I will have fewer distractions.” He kept working. Even after going completely blind, he published hundreds of papers."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.139,
+            0.197,
+            0.897,
+            0.41
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In this chapter, we have met three mathematicians of three different centuries, Euler, Hamilton, and de Bruijn, spread out across Europe (Figure 3.47). We might be inclined to feel a sense of adventure at their work and how it converged to this singular point in modern biology. Yet the first biologists who worked on DNA sequencing had no idea of how graph theory could be applied to this subject. What’s more, the first paper applying the three mathematicians’ ideas to genome assembly was published lifetimes after the deaths of Euler and Hamilton, when de Bruijn was in his seventies. So perhaps we might think of these three men not as adventurers, but instead as lonely wanderers. As is so often the mathematician’s curse, each of the three passionately pursued abstract questions while having no idea where the answers might one day lead without him."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 3,
+          "bbox": [
+            0.197,
+            0.44,
+            0.839,
+            0.642
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 3,
+              "bbox": [
+                0.197,
+                0.44,
+                0.839,
+                0.642
+              ],
+              "image_path": "images/page_202_image_3.jpg",
+              "content": ""
+            },
+            {
+              "type": "image_caption",
+              "index": 4,
+              "bbox": [
+                0.191,
+                0.648,
+                0.841,
+                0.684
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 3.47 Leonhard Euler (left), William Hamilton (center), and Nicolaas de Bruijn (right)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.139,
+            0.716,
+            0.419,
+            0.736
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The seven bridges of Kaliningrad"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.136,
+            0.747,
+            0.895,
+            0.808
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Königsberg was largely destroyed during World War II; its ruins were captured by the Soviet army. The city was renamed Kaliningrad in 1946 in honor of Soviet revolutionary Mikhail Kalinin."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.136,
+            0.811,
+            0.896,
+            0.895
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Since the 18th Century, much has changed in the layout of Königsberg, and it just so happens that the bridge graph drawn today for the city of Kaliningrad still does not contain an Eulerian cycle. However, this graph does contain an Eulerian path, which means that Kaliningrad residents can walk crossing every bridge exactly once, but"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.501,
+            0.944,
+            0.534,
+            0.96
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "178"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 203,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.5,
+            0.065,
+            0.857,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E A S S E M B L E G E N O M E S ?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.1,
+            0.112,
+            0.862,
+            0.239
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "cannot do so and return to where they started. Thus, the citizens of Kaliningrad finally achieved at least a small part of the goal set by the citizens of Königsberg (although they have to take a taxi home). Yet strolling around Kaliningrad is not as pleasant as it would have been in 1735, since the beautiful old Königsberg was ravaged by the combination of Allied bombing in 1944 and dreadful Soviet architecture in the years following World War II."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.104,
+            0.261,
+            0.269,
+            0.279
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The BEST Theorem"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.101,
+            0.292,
+            0.862,
+            0.356
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Given an adjacency matrix "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A ( G )"
+            },
+            {
+              "type": "text",
+              "content": " of a directed Eulerian graph "
+            },
+            {
+              "type": "equation_inline",
+              "content": "G _ { r }"
+            },
+            {
+              "type": "text",
+              "content": " we define the matrix "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A ^ { * } ( G )"
+            },
+            {
+              "type": "text",
+              "content": " by replacing the i-th diagonal entry of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "- A ( G )"
+            },
+            {
+              "type": "text",
+              "content": " by INDEGREE(i) for each node i in G (Figure 3.48)."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 4,
+          "bbox": [
+            0.158,
+            0.386,
+            0.811,
+            0.519
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 4,
+              "bbox": [
+                0.158,
+                0.386,
+                0.811,
+                0.519
+              ],
+              "image_path": "images/page_203_image_4.jpg",
+              "content": "```mermaid\ngraph LR\n  a[\"a\"] --> b[\"b\"]\n  d[\"d\"] --> c[\"c\"]\n  b --> A[\"A(G)\"]\n  c --> A[\"A(G)\"]\n  A --> B[\"a b c d\"]\n  A --> C[\"a b c d\"]\n  A --> D[\"a b c d\"]\n  A --> E[\"b 0 1 0 0\"]\n  A --> F[\"b 0 0 1 1\"]\n  A --> G[\"c 1 1 0 0\"]\n  A --> H[\"d 0 0 1 0\"]\n  B --> I[\"a b c d\"]\n  C --> J[\"a b c d\"]\n  D --> K[\"b 0 2 -1 -1\"]\n  E --> L[\"b 0 2 -1 -1\"]\n  F --> M[\"c -1 -1 2 0\"]\n  G --> N[\"c -1 -1 2 0\"]\n  H --> O[\"d 0 0 -1 1\"]\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 5,
+              "bbox": [
+                0.154,
+                0.527,
+                0.808,
+                0.58
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 3.48 (Left) A graph G with two Eulerian cycles. (Middle) The adjacency matrix A(G) of G. (Right) The matrix "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "A ^ { * } ( C )"
+                },
+                {
+                  "type": "text",
+                  "content": " . Each i-cofactor of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "A ^ { * }"
+                },
+                {
+                  "type": "text",
+                  "content": " is equal to 2. Thus, the BEST theorem computes the number of Eulerian cycles as "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "2 \\cdot 0! \\cdot 1! \\cdot 1! \\cdot 1! = 2"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.101,
+            0.612,
+            0.862,
+            0.674
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The "
+            },
+            {
+              "type": "text",
+              "content": "i-cofactor",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " of a matrix M is the determinant of the matrix obtained from M by deleting its i-th row and i-th column. It can be shown that for a given Eulerian graph "
+            },
+            {
+              "type": "equation_inline",
+              "content": "G ,"
+            },
+            {
+              "type": "text",
+              "content": " all i-cofactors of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A ^ { * } ( G )"
+            },
+            {
+              "type": "text",
+              "content": " have the same value, which we denote as "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c ( G )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.101,
+            0.676,
+            0.862,
+            0.737
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The following theorem provides a formula computing the number of Eulerian cycles in a graph. Its name is an acronym of its discoverers: de Bruijn, van Aardenne-Ehrenfest, Smith, and Tutte."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.752,
+            0.76,
+            0.772
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "BEST Theorem:",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " The number of Eulerian cycles in an Eulerian graph is equal to"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.286,
+            0.783,
+            0.677,
+            0.822
+          ],
+          "image_path": "images/page_203_equation_9.jpg",
+          "content": "c (G) \\cdot \\prod_ {\\text {all nodes $v$ in graph $G$}} (\\text {INDEGREE} (v) - 1)!"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.101,
+            0.832,
+            0.859,
+            0.874
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The proof of the BEST Theorem, which is beyond the scope of this text, provides us with an alternative way to construct all Eulerian cycles in an Eulerian directed graph."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 11,
+          "bbox": [
+            0.465,
+            0.946,
+            0.499,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "179"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 204,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.435,
+            0.112,
+            0.6,
+            0.131
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Bibliography Notes"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.14,
+            0.148,
+            0.894,
+            0.253
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "After Euler’s work on the Königsberg Bridge Problem (Euler, 1758), graph theory was forgotten for over a hundred years but was revived in the second half of the 19th Century. Graph theory flourished in the 20th Century, when it became an important area of mathematics with many practical applications. The de Bruijn graph was introduced independently by Nicolaas de Bruijn (de Bruijn, 1946) and I. J. Good (Good, 1946)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.14,
+            0.255,
+            0.894,
+            0.38
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "DNA sequencing methods were invented independently and simultaneously in 1977 by groups led by Frederick Sanger (Sanger, Nicklen, and Coulson, 1977) and Walter Gilbert (Maxam and Gilbert, 1977). DNA arrays were proposed simultaneously and independently in 1988 by Radoje Drmanac (Drmanac et al., 1989), Andrey Mirzabekov (Lysov et al., 1988) and Edwin Southern (Southern, 1988). The Eulerian approach to DNA arrays was described in 1989 (Pevzner, 1989)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.14,
+            0.383,
+            0.894,
+            0.507
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Eulerian approach to DNA sequencing was described by Idury and Waterman, 1995 and further developed by Pevzner, Tang, and Waterman, 2001. To address the challenge of assembly from short reads produced by next generation sequencing technologies, a number of assembly tools that are based on de Bruijn graphs have been developed (Zerbino and Birney, 2008, Butler et al., 2008). Paired de Bruijn graphs were introduced by Medvedev et al., 2011."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.171,
+            0.51,
+            0.831,
+            0.53
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Sleeping Beauty transposon system was developed by Ivics et al., 1997."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 6,
+          "bbox": [
+            0.503,
+            0.945,
+            0.533,
+            0.957
+          ],
+          "content": []
+        }
+      ]
+    },
+    {
+      "page_idx": 205,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.501,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E A S S E M B L E G E N O M E S ?"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 1,
+          "bbox": [
+            0.718,
+            0.818,
+            0.856,
+            0.89
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 1,
+              "bbox": [
+                0.718,
+                0.818,
+                0.856,
+                0.89
+              ],
+              "image_path": "images/page_205_image_1.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 2,
+          "bbox": [
+            0.466,
+            0.944,
+            0.496,
+            0.958
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "181"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 206,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "index": 0,
+          "bbox": [
+            0.03,
+            0.02,
+            0.85,
+            0.063
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "HOWDO WE SEQUENCEANTIBIOTICS?"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.035,
+            0.072,
+            0.349,
+            0.099
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Brute Force Algorithms"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.0,
+            0.065,
+            0.891,
+            0.945
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.0,
+                0.065,
+                0.891,
+                0.945
+              ],
+              "image_path": "images/page_206_image_2.jpg",
+              "content": "Brute Force Algorithms\n147·119·128"
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.03,
+            0.952,
+            0.861,
+            0.977
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "TWO MEN AND ONE MONKEY ON THE MOST FANTASTIC JOURNEY OF THEIR LIVES..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 207,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.463,
+            0.065,
+            0.858,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E S E Q U E N C E A N T I B I O T I C S ?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.356,
+            0.112,
+            0.605,
+            0.131
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Discovery of Antibiotics"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.1,
+            0.148,
+            0.862,
+            0.273
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In August 1928, before leaving for vacation, Scottish microbiologist Alexander Fleming stacked his cultures of infection-causing Staphylococcus bacteria on a laboratory bench. When he returned to work a few weeks later, Fleming noticed that one culture had been contaminated with Penicillium fungus, and that the colony of Staphylococcus surrounding it had been destroyed! Fleming named the bacteria-killing substance "
+            },
+            {
+              "type": "text",
+              "content": "penicillin",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", and he suggested that it could be used to treat bacterial infections in humans."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.101,
+            0.276,
+            0.861,
+            0.382
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "When Fleming published his discovery in 1929, his article had little immediate impact. Subsequent experiments struggled to isolate the "
+            },
+            {
+              "type": "text",
+              "content": "antibiotic",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " agent (i.e., the compound that actually killed bacteria) from the fungus. As a result, Fleming eventually concluded that penicillin could not be practically applied to treat bacterial infections and abandoned his antibiotics research."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.101,
+            0.383,
+            0.862,
+            0.488
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Searching for new drugs to treat wounded soldiers, the American and British governments intensified their search for antibiotics after the start of World War II; however, the challenge of mass-producing antibiotics remained. In March 1942, half of the total supply of penicillin owned by pharmaceutical giant Merck was used to treat a single infected patient."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.101,
+            0.489,
+            0.861,
+            0.595
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Also in 1942, Russian biologists Georgy Gause and Maria Brazhnikova noticed that the Bacillus brevis bacterium killed the pathogenic bacterium Staphylococcus aureus. In contrast to Fleming’s efforts with penicillin, they successfully isolated the antibiotic compound from Bacillus brevis and named it Gramicidin Soviet. Within a year, this antibiotic was distributed to Soviet military hospitals."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.101,
+            0.596,
+            0.861,
+            0.7
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Meanwhile, American scientists were scouring various food markets for rotten groceries and finally found a moldy cantaloupe in Illinois with a high concentration of penicillin. This mundane discovery allowed the United States to produce 2 million doses of penicillin in time for the Allied invasion of Normandy in 1944, thus saving thousands of wounded soldiers’ lives."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.101,
+            0.702,
+            0.862,
+            0.894
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Gause continued his research into Gramicidin Soviet after World War II but failed to elucidate its chemical structure. Taking the torch from Gause, English biochemist Richard Synge studied Gramicidin Soviet and a wide array of other antibiotics produced by Bacillus brevis. A few years after World War II ended, he demonstrated that they represent short amino acid sequences (i.e., mini-proteins) called "
+            },
+            {
+              "type": "text",
+              "content": "peptides",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ". Gause received the Stalin Prize in 1946, and Synge won the Nobel Prize in 1952. The former award proved more valuable as it protected Gause from execution during the period of "
+            },
+            {
+              "type": "text",
+              "content": "Lysenkoism",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", the Soviet campaign against “bourgeois” geneticists that intensified in the postwar era. See "
+            },
+            {
+              "type": "text",
+              "content": "DETOUR: Gause and Lysenkoism",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.871,
+            0.873,
+            0.964,
+            0.89
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "PAGE 215"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 9,
+          "bbox": [
+            0.466,
+            0.944,
+            0.498,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "183"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

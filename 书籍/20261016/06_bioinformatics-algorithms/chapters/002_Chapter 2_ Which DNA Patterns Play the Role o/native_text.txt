@@ -1,0 +1,2822 @@
+--- PDF page 91 ---
+
+
+--- PDF page 92 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+Do We Have a “Clock” Gene?
+The daily schedules of animals, plants, and even bacteria are controlled by an internal
+timekeeper called the circadian clock. Anyone who has experienced the misery of jet
+lag knows that this clock never stops ticking. Rats and research volunteers alike, when
+placed in a bunker, naturally maintain a roughly 24-hour cycle of activity and rest in
+total darkness. And, like any timepiece, the circadian clock can malfunction, resulting
+in a genetic disease known as delayed sleep-phase syndrome (DSPS).
+The circadian clock must have some basis on the molecular level, which presents
+many questions. How do individual cells in animals and plants (let alone bacteria) know
+when they should slow down or increase the production of certain proteins? Is there
+a “clock gene”? Can we explain why heart attacks occur more often in the morning,
+while asthma attacks are more common at night? And can we identify genes that are
+responsible for “breaking” the circadian clock to cause DSPS?
+In the early 1970s, Ron Konopka and Seymour Benzer identiﬁed mutant ﬂies with
+abnormal circadian patterns and traced the ﬂies’ mutations to a single gene. Biologists
+needed two more decades to discover a similar clock gene in mammals, which was just
+the ﬁrst piece of the puzzle. Today, many more circadian genes have been discovered;
+these genes, having names like timeless, clock, and cycle, orchestrate the behavior of
+hundreds of other genes and display a high degree of evolutionary conservation across
+species.
+We will ﬁrst focus on plants, since maintaining the circadian clock in plants is a
+matter of life and death. Consider how many plant genes should pay attention to the
+time when the sun rises and sets; indeed, biologists estimate that over a thousand plant
+genes are circadian, including the genes related to photosynthesis, photo reception, and
+ﬂowering. These genes must somehow know what time it is in order to change their
+gene transcript production, or gene expression, throughout the day (see DETOUR:
+PAGE
+PAGE 108
+108
+Gene Expression).
+It turns out that every plant cell keeps track of day and night independently of other
+cells, and that just three plant genes, called LCY, CCA1, and TOC1, are the clock’s master
+timekeepers. Such regulatory genes, and the regulatory proteins that they encode, are
+often controlled by external factors (e.g., nutrient availability or sunlight) in order to
+allow organisms to adjust their gene expression.
+For example, regulatory proteins controlling the circadian clock in plants coordinate
+circadian activity as follows. TOC1 promotes the expression of LCY and CCA1, whereas
+LCY and CCA1 repress the expression of TOC1, resulting in a negative feedback loop.
+In the morning, sunlight activates the transcription of LCY and CCA1, triggering the
+67
+
+
+--- PDF page 93 ---
+C H A P T E R 2
+repression of TOC1 transcription. As light diminishes, so does the production of LCY
+and CCA1, which in turn do not repress TOC1 any more. Transcription of TOC1 peaks
+at night and starts promoting the transcription of LCY and CCA1, which in turn repress
+the transcription of TOC1, and the cycle begins again.
+LCY, CCA1, and TOC1 are able to control the transcription of other genes because
+the regulatory proteins that they encode are transcription factors, or master regulatory
+proteins that turn other genes on and off. A transcription factor regulates a gene by bind-
+ing to a speciﬁc short DNA interval called a regulatory motif, or transcription factor
+binding site, in the gene’s upstream region, a 600-1000 nucleotide-long region preced-
+ing the start of the gene. For example, CCA1 binds to AAAAAATCT in the upstream
+region of many genes regulated by CCA1.
+The life of a bioinformatician would be easy if regulatory motifs were completely
+conserved, but the reality is more complex, as regulatory motifs may vary at some
+positions, e.g., CCA1 may instead bind to AAGAACTCT. But how can we locate these
+regulatory motifs without knowing what they look like in advance? We need to develop
+algorithms for motif ﬁnding, the problem of discovering a “hidden message” shared
+by a collection of strings.
+Motif Finding Is More Diﬃcult Than You Think
+Identifying the evening element
+In 2000, Steve Kay used DNA arrays (see DETOUR: DNA Arrays) to determine which
+PAGE 108
+genes in the plant Arabidopsis thaliana are activated at different times of the day. He then
+extracted the upstream regions of nearly 500 genes that exhibited circadian behavior
+and looked for frequently appearing patterns in their upstream regions. If you concate-
+nated these upstream regions into a single string, you would ﬁnd that AAAATATCT is a
+surprisingly frequent word, appearing 46 times.
+EXERCISE BREAK: What is the expected number of occurrences of a 9-mer in
+500 random DNA strings, each of length 1000?
+Kay named AAAATATCT the evening element and performed a simple experiment to
+prove that it is indeed the regulatory motif responsible for circadian gene expression in
+Arabidopsis thaliana. After he mutated the evening element in the upstream region of
+one gene, the gene no longer exhibited circadian behavior.
+68
+
+
+--- PDF page 94 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+Whereas the evening element in plants is very conserved, and thus easy to ﬁnd,
+motifs having many mutations are more elusive. For example, if you infect a ﬂy with
+a bacterium, the ﬂy will switch on its immunity genes to ﬁght the infection. Thus,
+some of the genes with elevated expression levels after the infection are likely to be
+immunity genes. Indeed, some of these genes have 12-mers similar to TCGGGGATTTCC
+in their upstream regions, the binding site of a transcription factor called NF-kB that
+activates various immunity genes in ﬂies. However, NF-kB binding sites are nowhere
+near as conserved as the evening element. Figure 2.1 shows ten NF-kB binding sites
+from the Drosophila melanogaster genome; the most popular nucleotides in every column
+are shown by upper case colored letters.
+1
+T C G G G G g T T T t t
+2
+c C G G t G A c T T a C
+3
+a C G G G G A T T T t C
+4
+T t G G G G A c T T t t
+5
+a a G G G G A c T T C C
+6
+T t G G G G A c T T C C
+7
+T C G G G G A T T c a t
+8
+T C G G G G A T T c C t
+9
+T a G G G G A a c T a C
+10
+T C G G G t A T a a C C
+FIGURE 2.1 The ten candidate NF-kB binding sites appearing in the Drosophila
+melanogaster genome. The upper case colored letters indicate the most frequent
+nucleotide in each column.
+Hide and seek with motifs
+Our aim is to turn the biological challenge of ﬁnding regulatory motifs into a compu-
+tational problem. Below, we have implanted a 15-mer hidden message at a randomly
+selected position in each of ten randomly generated DNA strings. This example mimics
+a transcription factor binding site hiding in the upstream regions of ten genes.
+1
+atgaccgggatactgataaaaaaaagggggggggcgtacacattagataaacgtatgaagtacgttagactcggcgccgccg
+2
+acccctattttttgagcagatttagtgacctggaaaaaaaatttgagtacaaaacttttccgaataaaaaaaaaggggggga
+3
+tgagtatccctgggatgacttaaaaaaaagggggggtgctctcccgatttttgaatatgtaggatcattcgccagggtccga
+4
+gctgagaattggatgaaaaaaaagggggggtccacgcaatcgcgaaccaacgcggacccaaaggcaagaccgataaaggaga
+5
+tcccttttgcggtaatgtgccgggaggctggttacgtagggaagccctaacggacttaataaaaaaaagggggggcttatag
+6
+gtcaatcatgttcttgtgaatggatttaaaaaaaaggggggggaccgcttggcgcacccaaattcagtgtgggcgagcgcaa
+7
+cggttttggcccttgttagaggcccccgtaaaaaaaagggggggcaattatgagagagctaatctatcgcgtgcgtgttcat
+8
+aacttgagttaaaaaaaagggggggctggggcacatacaagaggagtcttccttatcagttaatgctgtatgacactatgta
+9
+ttggcccattggctaaaagcccaacttgacaaatggaagatagaatccttgcataaaaaaaagggggggaccgaaagggaag
+10
+ctggtgagcaacgacagattcttacgtgcattagctcgcttccggggatctaatagcacgaagcttaaaaaaaaggggggga
+69
+
+
+--- PDF page 95 ---
+C H A P T E R 2
+STOP and Think: Can you ﬁnd the implanted hidden message?
+This is a simple problem: applying an algorithm for the Frequent Words Problem to the
+concatenation of these strings will immediately reveal the most frequent 15-mer shown
+below as the implanted pattern. Since these short strings were randomly generated, it
+is unlikely that they contain other frequent 15-mers.
+1
+atgaccgggatactgatAAAAAAAAGGGGGGGggcgtacacattagataaacgtatgaagtacgttagactcggcgccgccg
+2
+acccctattttttgagcagatttagtgacctggaaaaaaaatttgagtacaaaacttttccgaataAAAAAAAAGGGGGGGa
+3
+tgagtatccctgggatgacttAAAAAAAAGGGGGGGtgctctcccgatttttgaatatgtaggatcattcgccagggtccga
+4
+gctgagaattggatgAAAAAAAAGGGGGGGtccacgcaatcgcgaaccaacgcggacccaaaggcaagaccgataaaggaga
+5
+tcccttttgcggtaatgtgccgggaggctggttacgtagggaagccctaacggacttaatAAAAAAAAGGGGGGGcttatag
+6
+gtcaatcatgttcttgtgaatggatttAAAAAAAAGGGGGGGgaccgcttggcgcacccaaattcagtgtgggcgagcgcaa
+7
+cggttttggcccttgttagaggcccccgtAAAAAAAAGGGGGGGcaattatgagagagctaatctatcgcgtgcgtgttcat
+8
+aacttgagttAAAAAAAAGGGGGGGctggggcacatacaagaggagtcttccttatcagttaatgctgtatgacactatgta
+9
+ttggcccattggctaaaagcccaacttgacaaatggaagatagaatccttgcatAAAAAAAAGGGGGGGaccgaaagggaag
+10
+ctggtgagcaacgacagattcttacgtgcattagctcgcttccggggatctaatagcacgaagcttAAAAAAAAGGGGGGGa
+Now imagine that instead of implanting exactly the same pattern into all sequences,
+we mutate the pattern before inserting it into each sequence by randomly changing
+the nucleotides at four randomly selected positions within each implanted 15-mer, as
+shown below.
+1
+atgaccgggatactgatAgAAgAAAGGttGGGggcgtacacattagataaacgtatgaagtacgttagactcggcgccgccg
+2
+acccctattttttgagcagatttagtgacctggaaaaaaaatttgagtacaaaacttttccgaatacAAtAAAAcGGcGGGa
+3
+tgagtatccctgggatgacttAAAAtAAtGGaGtGGtgctctcccgatttttgaatatgtaggatcattcgccagggtccga
+4
+gctgagaattggatgcAAAAAAAGGGattGtccacgcaatcgcgaaccaacgcggacccaaaggcaagaccgataaaggaga
+5
+tcccttttgcggtaatgtgccgggaggctggttacgtagggaagccctaacggacttaatAtAAtAAAGGaaGGGcttatag
+6
+gtcaatcatgttcttgtgaatggatttAAcAAtAAGGGctGGgaccgcttggcgcacccaaattcagtgtgggcgagcgcaa
+7
+cggttttggcccttgttagaggcccccgtAtAAAcAAGGaGGGccaattatgagagagctaatctatcgcgtgcgtgttcat
+8
+aacttgagttAAAAAAtAGGGaGccctggggcacatacaagaggagtcttccttatcagttaatgctgtatgacactatgta
+9
+ttggcccattggctaaaagcccaacttgacaaatggaagatagaatccttgcatActAAAAAGGaGcGGaccgaaagggaag
+10
+ctggtgagcaacgacagattcttacgtgcattagctcgcttccggggatctaatagcacgaagcttActAAAAAGGaGcGGa
+The Frequent Words Problem is not going to help us, since AAAAAAAAGGGGGGG does
+not even appear in the sequences above. Perhaps, then, we could apply our solution to
+the Frequent Words with Mismatches Problem. However, in Chapter 1, we implemented
+an algorithm for the Frequent Words with Mismatches Problem aimed at ﬁnding hidden
+messages with a small number of mismatches and a small k-mer size (e.g., one or two
+mismatches for DnaA boxes of length 9). This algorithm will become too slow when
+searching for the implanted motif above, which is longer and has more mutations.
+Furthermore, concatenating all the sequences into a single string is inadequate
+because it does not correctly model the biological problem of motif ﬁnding. A DnaA
+box is a pattern that clumps, or appears frequently, within a relatively short interval
+of the genome. In contrast, a regulatory motif is a pattern that appears at least once
+(perhaps with variation) in each of many different regions that are scattered throughout
+the genome.
+70
+
+
+--- PDF page 96 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+A brute force algorithm for motif ﬁnding
+Given a collection of strings Dna and an integer d, a k-mer is a (k, d)-motif if it appears
+in every string from Dna with at most d mismatches. For example, the implanted 15-mer
+in the strings above represents a (15, 4)-motif.
+Implanted Motif Problem:
+Find all (k, d)-motifs in a collection of strings.
+Input: A collection of strings Dna, and integers k and d.
+Output: All (k, d)-motifs in Dna.
+Brute force search (also known as exhaustive search) is a general problem-solving tech-
+nique that explores all possible candidate solutions and checks whether each candidate
+solves the problem. Such algorithms require little effort to design and are guaranteed to
+produce a correct solution, but they may take an enormous amount of time, and the
+number of candidates may be too large to check.
+A brute force approach for solving the Implanted Motif Problem is based on the
+observation that any (k, d)-motif must be at most d mismatches apart from some k-mer
+appearing in one of the strings of Dna. Therefore, we can generate all such k-mers and
+then check which of them are (k, d)-motifs. If you have forgotten how to generate these
+k-mers, recall CHARGING STATION: Generating the Neighborhood of a String.
+PAGE
+49
+MOTIFENUMERATION(Dna, k, d)
+Patterns an empty set
+for each k-mer Pattern in Dna
+for each k-mer Pattern’ diﬀering from Pattern by at most d mismatches
+if Pattern’ appears in each string from Dna with at most d mismatches
+add Pattern’ to Patterns
+remove duplicates from Patterns
+return Patterns
+2A
+MOTIFENUMERATION is unfortunately rather slow for large values of k and d, and so
+we will try a different approach instead. Maybe we can detect an implanted pattern sim-
+ply by identifying the two most similar k-mers between each pair of strings in Dna? How-
+ever, consider the implanted 15-mers AgAAgAAAGGttGGG and cAAtAAAAcGGGGcG,
+each of which differs from AAAAAAAAGGGGGGG by four mismatches. Although these
+71
+
+
+--- PDF page 97 ---
+C H A P T E R 2
+15-mers look similar to the correct motif AAAAAAAAGGGGGGG, they are not so similar
+when compared to each other, having eight mismatches:
+AgAAgAAAGGttGGG
+|| ||
+| || |
+cAAtAAAAcGGGGcG
+Since these two implanted patterns are so different, we should be concerned whether
+we will be able to ﬁnd them by searching for the most similar k-mers among pairs of
+strings in Dna.
+In the rest of the chapter, we will benchmark our motif ﬁnding algorithms by using
+a particularly challenging instance of the Implanted Motif Problem. The Subtle Motif
+Problem refers to implanting a 15-mer with four random mutations in ten randomly
+generated 600 nucleotide-long strings (the typical length of many upstream regulatory
+regions). The instance of the Subtle Motif Problem that we will use has the implanted
+15-mer AAAAAAAAGGGGGGG.
+It turns out that thousands of pairs of randomly occurring 15-mers in our dataset for
+the Subtle Motif Problem are fewer than 8 nucleotides apart from each other, preventing
+us from identifying the true implanted motifs by pairwise comparisons.
+Scoring Motifs
+From motifs to proﬁle matrices and consensus strings
+Although the Implanted Motif Problem offers a useful abstraction of the biological
+problem of motif ﬁnding, it has some limitations. For example, when Steve Kay used
+a DNA array to infer the set of circadian genes in plants, he did not expect that all
+genes in the resulting set would have the evening element (or its variants) in their
+upstream regions. Similarly, biologists do not expect that all genes with an elevated
+expression level in infected ﬂies must be regulated by NF-kB. DNA array experiments
+are inherently noisy, and some genes identiﬁed by these experiments have nothing to
+do with the circadian clock in plants or immunity genes in ﬂies. For such noisy datasets,
+any algorithm for the Implanted Motif Problem would fail, because as long as a single
+sequence does not contain the transcription factor binding site, a (k, d)-motif does not
+exist!
+A more appropriate problem formulation would score individual instances of motifs
+depending on how similar they are to an “ideal” motif (i.e., a transcription factor
+binding site that binds the best to the transcription factor). However, since the ideal
+72
+
+
+--- PDF page 98 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+motif is unknown, we attempt to select a k-mer from each string and score these k-mers
+depending on how similar they are to each other.
+To deﬁne scoring, consider t DNA strings, each of length n, and select a k-mer from
+each string to form a collection Motifs, which we represent as a t ⇥k motif matrix. In
+Figure 2.2, which shows the motif matrix for the NF-kB binding sites from Figure 2.1, we
+indicate the most frequent nucleotide in each column of the motif matrix by upper case
+letters. If there are multiple most popular nucleotides in a column, then we arbitrarily
+select one of them to break the tie. Note that positions 2 and 3 are the most conserved
+(nucleotide G is completely conserved in these positions), whereas position 10 is the
+least conserved.
+By varying the choice of k-mers in each string, we can construct a large number
+of different motif matrices from a given sample of DNA strings. Our goal is to select
+k-mers resulting in the most “conserved” motif matrix, meaning the matrix with the
+most upper case letters (and thus the fewest number of lower case letters). Leaving
+aside the question of how we select such k-mers, we will ﬁrst focus on how to score the
+resulting motif matrices, deﬁning SCORE(Motifs) as the number of unpopular (lower
+case) letters in the motif matrix Motifs. Our goal is to ﬁnd a collection of k-mers that
+minimizes this score.
+EXERCISE BREAK: The minimum possible value of SCORE(Motifs) is 0 (if all
+rows in the t ⇥k matrix Motifs are the same). What is the maximum possible
+value of SCORE(Motifs) in terms of t and k?
+We can construct the 4 ⇥k count matrix COUNT(Motifs) counting the number of oc-
+currences of each nucleotide in each column of the motif matrix; the (i, j)-th element
+of COUNT(Motifs) stores the number of times that nucleotide i appears in column j of
+Motifs. We will further divide all of the elements in the count matrix by t, the number
+of rows in Motifs. This results in a proﬁle matrix P = PROFILE(Motifs) for which Pi,j is
+the frequency of the i-th nucleotide in the j-th column of the motif matrix. Note that the
+elements of any column of the proﬁle matrix sum to 1.
+Finally, we form a consensus string, denoted CONSENSUS(Motifs), from the most
+popular nucleotides in each column of the motif matrix (ties are broken arbitrarily). If we
+select Motifs correctly from the collection of upstream regions, then CONSENSUS(Motifs)
+provides an ideal candidate regulatory motif for these regions. For example, the consen-
+sus string for the NF-kB binding sites in Figure 2.2 is TCGGGGATTTCC.
+73
+
+
+--- PDF page 99 ---
+C H A P T E R 2
+Motifs
+T
+C
+G
+G
+G
+G
+g
+T
+T
+T
+t
+t
+c
+C
+G
+G
+t
+G
+A
+c
+T
+T
+a
+C
+a
+C
+G
+G
+G
+G
+A
+T
+T
+T
+t
+C
+T
+t
+G
+G
+G
+G
+A
+c
+T
+T
+t
+t
+a
+a
+G
+G
+G
+G
+A
+c
+T
+T
+C
+C
+T
+t
+G
+G
+G
+G
+A
+c
+T
+T
+C
+C
+T
+C
+G
+G
+G
+G
+A
+T
+T
+c
+a
+t
+T
+C
+G
+G
+G
+G
+A
+T
+T
+c
+C
+t
+T
+a
+G
+G
+G
+G
+A
+a
+c
+T
+a
+C
+T
+C
+G
+G
+G
+t
+A
+T
+a
+a
+C
+C
+SCORE(Motifs)
+3 + 4 + 0 + 0 + 1 + 1 + 1 + 5 + 2 + 3 + 6 + 4 = 30
+COUNT(Motifs)
+A:
+2
+2
+0
+0
+0
+0
+9
+1
+1
+1
+3
+0
+C:
+1
+6
+0
+0
+0
+0
+0
+4
+1
+2
+4
+6
+G:
+0
+0
+10
+10
+9
+9
+1
+0
+0
+0
+0
+0
+T:
+7
+2
+0
+0
+1
+1
+0
+5
+8
+7
+3
+4
+PROFILE(Motifs)
+A: .2
+.2
+0
+0
+0
+0
+.9
+.1
+.1
+.1
+.3
+0
+C: .1
+.6
+0
+0
+0
+0
+0
+.4
+.1
+.2
+.4
+.6
+G:
+0
+0
+1
+1
+.9
+.9
+.1
+0
+0
+0
+0
+0
+T: .7
+.2
+0
+0
+.1
+.1
+0
+.5
+.8
+.7
+.3
+.4
+CONSENSUS(Motifs)
+T
+C
+G
+G
+G
+G
+A
+T
+T
+T
+C
+C
+weblogo.berkeley.edu
+0
+1
+2
+bits
+5v
+1
+C
+A
+T
+2
+T
+A
+C
+3
+G
+4
+G
+5
+TG
+6
+TG
+7
+GA
+8
+A
+C
+T
+9
+C
+AT
+10
+A
+C
+T
+11
+T
+A
+C
+12
+T
+C
+3v
+FIGURE 2.2 From motif matrix to count matrix to proﬁle matrix to consensus string to
+motif logo. The NF-kB binding sites form a 10 ⇥12 motif matrix, with the most frequent
+nucleotide in each column shown in upper case letters and all other nucleotides shown
+in lower case letters. SCORE(Motifs) counts the total number of unpopular (lower case)
+symbols in the motif matrix. The motif matrix results in a 4 ⇥12 count matrix holding
+the nucleotide counts in every column of the motif matrix; a proﬁle matrix holding the
+frequencies of nucleotides in every column of the motif matrix; and a consensus string
+formed by the most frequent nucleotide in each column of the count matrix. Finally, the
+motif logo is a common way to visualize the conservation of various positions within a
+motif. The total height of the letters depicts the information content of the position.
+74
+
+
+--- PDF page 100 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+Towards a more adequate motif scoring function
+Consider the second column (containing 6 C, 2 A, and 2 T) and the ﬁnal column (contain-
+ing 6 C and 4 T) in the motif matrix from Figure 2.2. Both of these columns contribute 4
+to SCORE(Motifs).
+STOP and Think: Does scoring these two columns equally make sense biologi-
+cally?
+For many biological motifs, certain positions feature two nucleotides with roughly the
+same ability to bind to a transcription factor. For example, the sixteen nucleotide-long
+CSRE transcription factor binding site in the yeast S. cerevisiae consists of ﬁve strongly
+conserved positions in addition to eleven weakly conserved positions, each of which
+features two nucleotides with similar frequencies (Figure 2.3).
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+C
+G/C G/T T/A C/T G/C C/G
+A
+T
+G/T C/G
+A
+T
+C/T C/T G/T
+FIGURE 2.3 The CSRE transcription factor binding site in S. cerevisiae is 16 nucleotides
+long, but only ﬁve of these positions (1, 8, 9, 12, 13) are strongly conserved. The
+remaining 11 positions can take one of two diﬀerent nucleotides.
+Following this example, a more appropriate representation of the consensus string
+TCGGGGATTTCC for the NF-kB binding sites should include viable alternatives to the
+most popular nucleotides in each column (see Figure 2.4). In this sense, the last column
+(6 C, 4 T) in the motif matrix from Figure 2.2 is “more conserved” than the second
+column (6 C, 2 A, 2 T) and should receive a lower score.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+T
+C
+G
+G
+G
+G
+A
+T/C
+T
+T
+C
+C/T
+FIGURE 2.4 Taking nucleotides in each column of the NF-kB binding site motif matrix
+from Figure 2.2 with frequency at least 0.4 yields a representation of the NF-kB binding
+sites with ten strongly conserved positions and two weakly conserved positions (8 and
+12).
+75
+
+
+--- PDF page 101 ---
+C H A P T E R 2
+Entropy and the motif logo
+Every column of PROFILE(Motifs) corresponds to a probability distribution, or a col-
+lection of nonnegative numbers that sum to 1. For example, the second column in
+Figure 2.2 corresponds to the probabilities 0.2, 0.6, 0.0, and 0.2 for A, C, G, and T,
+respectively.
+Entropy is a measure of the uncertainty of a probability distribution (p1, . . . , pN),
+and is deﬁned as
+H(p1, . . . , pN) = −
+N
+Â
+i=1
+pi · log2 (pi) .
+For example, the entropy of the probability distribution (0.2, 0.6, 0.0, 0.2) corresponding
+to the second column of the proﬁle matrix in Figure 2.2 is
+−(0.2 log2 0.2 + 0.6 log2 0.6 + 0.0 log2 0.0 + 0.2 log2 0.2) ⇡1.371 ,
+whereas the entropy of the more conserved ﬁnal column (0.0, 0.6, 0.0, 0.4) is
+−(0.0 log2 0.0 + 0.6 log2 0.6 + 0.0 log2 0.0 + 0.4 log2 0.4) ⇡0.971 ,
+and the entropy of the very conserved 5th column (0.0, 0.0, 0.9, 0.1) is
+−(0.0 log2 0.0 + 0.0 log2 0.0 + 0.9 log2 0.9 + 0.1 log2 0.1) ⇡0.467 .
+Note that technically, log2 0 is not deﬁned, but in the computation of entropy, we assume
+that 0 · log2 0 is equal to 0.
+STOP and Think: What are the maximum and minimum possible values for the
+entropy of a probability distribution containing four values?
+The entropy of the completely conserved third column of the proﬁle matrix in Fig-
+ure 2.2 is 0, which is the minimum possible entropy. On the other hand, a column
+with equally-likely nucleotides (all probabilities equal to 1/4) has maximum possible
+entropy −4 · 1/4 · log2 (1/4) = 2. In general, the more conserved the column, the
+smaller its entropy. Thus, entropy offers an improved method of scoring motif matrices:
+the entropy of a motif matrix is deﬁned as the sum of the entropies of its columns. In
+this book, we will continue to use SCORE(Motifs) for simplicity, but the entropy score is
+used more often in practice.
+76
+
+
+--- PDF page 102 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+EXERCISE BREAK: Compute the entropy of the NF-kB motif matrix from Fig-
+ure 2.2.
+Another application of entropy is the motif logo, a diagram for visualizing motif con-
+servation that consists of a stack of letters at each position (see the bottom of Figure 2.2).
+The relative sizes of letters indicate their frequency in the column. The total height of
+the letters in each column is based on the information content of the column, which is
+deﬁned as 2 −H(p1, . . . , pN). The lower the entropy, the higher the information content,
+meaning that tall columns in the motif logo are highly conserved.
+From Motif Finding to Finding a Median String
+The Motif Finding Problem
+Now that we have a good grasp of scoring a collection of k-mers, we are ready to
+formulate the Motif Finding Problem.
+Motif Finding Problem:
+Given a collection of strings, ﬁnd a set of k-mers, one from each string, that minimizes
+the score of the resulting motif.
+Input: A collection of strings Dna and an integer k.
+Output: A collection Motifs of k-mers, one from each string in Dna, minimiz-
+ing SCORE(Motifs) among all possible choices of k-mers.
+A brute force algorithm for the Motif Finding Problem, BRUTEFORCEMOTIFSEARCH,
+considers every possible choice of k-mers Motifs from Dna (one k-mer from each string
+of n nucleotides) and returns the collection Motifs having minimum score. Because there
+are n −k + 1 choices of k-mers in each of t sequences, there are (n −k + 1)t different ways
+to form Motifs. For each choice of Motifs, the algorithm calculates SCORE(Motifs), which
+requires k · t steps. Thus, assuming that k is much smaller than n, the overall running
+time of the algorithm is O
+!
+nt · k · t
+"
+. We need to come up with a faster algorithm!
+Reformulating the Motif Finding Problem
+Because BRUTEFORCEMOTIFSEARCH is inefﬁcient, we will think about motif ﬁnding
+in a different way. Instead of exploring all Motifs in Dna and deriving the consensus
+77
+
+
+--- PDF page 103 ---
+C H A P T E R 2
+string from Motifs afterwards,
+Motifs ! CONSENSUS(Motifs) ,
+we will explore all potential k-mer consensus strings ﬁrst and then ﬁnd the best possible
+collection Motifs for each consensus string,
+CONSENSUS(Motifs) ! Motifs .
+To reformulate the Motif Finding Problem, we need to devise an alternative way of
+computing SCORE(Motifs). Until now, we have computed SCORE(Motifs), the number
+of lower case letters in the motif matrix, column-by-column. For example, in Figure 2.2,
+we computed SCORE(Motifs) for the NF-kB motif matrix as
+3 + 4 + 0 + 0 + 1 + 1 + 1 + 5 + 2 + 3 + 6 + 4 = 30 .
+Figure 2.5 illustrates that SCORE(Motifs) can just as easily be computed row-by-row as
+3 + 4 + 2 + 4 + 3 + 2 + 3 + 2 + 4 + 3 = 30 .
+Note that each element in the latter sum represents the number of mismatches between
+the consensus string TCGGGGATTTCC and a motif in the corresponding row of the motif
+matrix, i.e., the Hamming distance between these strings. For the ﬁrst row of the motif
+matrix in Figure 2.5, d(TCGGGGATTTCC, TCGGGGgTTTtt) = 3.
+Given a collection of k-mers Motifs = {Motif1, ..., Motift} and a k-mer Pattern, we
+now deﬁne d(Pattern, Motifs) as the sum of Hamming distances between Pattern and
+each Motifi,
+d(Pattern, Motifs) =
+t
+Â
+i=1
+HAMMINGDISTANCE(Pattern, Motifi) .
+Because SCORE(Motifs) corresponds to counting the lower case elements of Motifs
+column-by-column and d(CONSENSUS(Motifs), Motifs) corresponds to counting these
+elements row-by-row, we obtain that
+SCORE(Motifs) = d(CONSENSUS(Motifs), Motifs) .
+78
+
+
+--- PDF page 104 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+Motifs
+T
+C
+G
+G
+G
+G
+g
+T
+T
+T
+t
+t
+3
+c
+C
+G
+G
+t
+G
+A
+c
+T
+T
+a
+C
+4
+a
+C
+G
+G
+G
+G
+A
+T
+T
+T
+t
+C
+2
+T
+t
+G
+G
+G
+G
+A
+c
+T
+T
+t
+t
+4
+a
+a
+G
+G
+G
+G
+A
+c
+T
+T
+C
+C
+3
+T
+t
+G
+G
+G
+G
+A
+c
+T
+T
+C
+C
+2
+T
+C
+G
+G
+G
+G
+A
+T
+T
+c
+a
+t
+3
+T
+C
+G
+G
+G
+G
+A
+T
+T
+c
+C
+t
+2
+T
+a
+G
+G
+G
+G
+A
+a
+c
+T
+a
+C
+4
+T
+C
+G
+G
+G
+t
+A
+T
+a
+a
+C
+C
++ 3
+SCORE(Motifs)
+3 + 4 + 0 + 0 + 1 + 1 + 1 + 5 + 2 + 3 + 6 + 4 = 30
+CONSENSUS(Motifs)
+T
+C
+G
+G
+G
+G
+A
+T
+T
+T
+C
+C
+FIGURE 2.5 The motif and score matrices in addition to the consensus string for the
+NF-kB binding sites, reproduced from Figure 2.2. Rather than count the non-consensus
+elements (i.e., lower case nucleotides) column-by-column, we can count them row-by-
+row, as highlighted on the right of the motifs matrix. Each value at the end of a row
+corresponds to the Hamming distance between that row and the consensus string.
+This equation gives us an idea. Instead of searching for a collection of k-mers Motifs
+minimizing SCORE(Motifs), let’s instead search for a potential consensus string Pattern
+minimizing d(Pattern, Motifs) among all possible k-mers Pattern and all possible choices
+of k-mers Motifs in Dna. This problem is equivalent to the Motif Finding Problem.
+Equivalent Motif Finding Problem:
+Given a collection of strings, ﬁnd a pattern and a collection of k-mers (one from each string)
+that minimizes the distance between all possible patterns and all possible collections of
+k-mers.
+Input: A collection of strings Dna and an integer k.
+Output: A k-mer Pattern and a collection of k-mers Motifs, one from each
+string in Dna, minimizing d(Pattern, Motifs) among all possible choices of
+Pattern and Motifs.
+79
+
+
+--- PDF page 105 ---
+C H A P T E R 2
+The Median String Problem
+But wait a second — have we not just made our task more difﬁcult? Instead of having
+to search for all Motifs, we now have to search all Motifs as well as all k-mers Pattern.
+The key observation for solving the Equivalent Motif Finding Problem is that, given
+Pattern, we don’t need to explore all possible collections Motifs in order to minimize
+d(Pattern, Motifs).
+To explain how this can be done, we deﬁne MOTIFS(Pattern, Dna) as a collection
+of k-mers that minimizes d(Pattern, Motifs) for a given Pattern and all possible sets of
+k-mers Motifs in Dna. For example, for the strings Dna shown below, the ﬁve colored
+3-mers represent MOTIFS(AAA, Dna).
+ttaccttAAC
+gATAtctgtc
+Dna
+ACGgcgttcg
+ccctAAAgag
+cgtcAGAggt
+STOP and Think: Given a collection of strings Dna and a k-mer Pattern, design a
+fast algorithm for generating MOTIFS(Pattern, Dna).
+The reason why we don’t need to consider all possible collections Motifs in Dna =
+{Dna1, ..., Dnat} is that we can generate the k-mers in MOTIFS(Pattern, Dna) one at a
+time; that is, we can select a k-mer in Dnai independently of selecting k-mers in all other
+strings in Dna. Given a k-mer Pattern and a longer string Text, we use d(Pattern, Text) to
+denote the minimum Hamming distance between Pattern and any k-mer in Text,
+d(Pattern, Text) =
+min
+all k-mers Pattern’ in Text HAMMINGDISTANCE(Pattern, Pattern’) .
+For example,
+d(GATTCTCA, gcaaaGACGCTGAccaa) = 3 .
+A k-mer in Text that achieves the minimum Hamming distance with Pattern is denoted
+MOTIF(Pattern, Text). For the above example,
+MOTIF(GATTCTCA, gcaaaGACGCTGAccaa) = GACGCTGA .
+80
+
+
+--- PDF page 106 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+We note that the notation MOTIF(Pattern, Text) is ambiguous because there may be
+multiple k-mers in Text that achieve the minimum Hamming distance with Pattern. For
+example, MOTIF(AAG, gcAATcctCAGc) could be either AAT or CAG. However, this
+ambiguity does not affect the following analysis.
+Given a k-mer Pattern and a set of strings Dna = {Dna1, ..., Dnat}, we deﬁne
+d(Pattern, Dna) as the sum of distances between Pattern and all strings in Dna,
+d(Pattern, Dna) =
+t
+Â
+i=1
+d(Pattern, Dnai).
+For example, for the strings Dna shown below, d(AAA, Dna) = 1 + 1 + 2 + 0 + 1 = 5 .
+ttaccttAAC
+1
+gATAtctgtc
+1
+Dna
+ACGgcgttcg
+2
+ccctAAAgag
+0
+cgtcAGAggt
+1
+Our goal is to ﬁnd a k-mer Pattern that minimizes d(Pattern, Dna) over all k-mers Pattern,
+the same task that the Equivalent Motif Finding Problem is trying to achieve. We call
+such a k-mer a median string for Dna.
+Median String Problem:
+Find a median string.
+Input: A collection of strings Dna and an integer k.
+Output: A k-mer Pattern minimizing d(Pattern, Dna) among all k-mers Pat-
+tern.
+2B
+Notice that ﬁnding a median string requires solving a double minimization problem.
+We must ﬁnd a k-mer Pattern that minimizes d(Pattern, Dna), where this function is
+itself computed by taking a minimum over all choices of k-mers from each string in Dna.
+The pseudocode for a brute-force algorithm, MEDIANSTRING, is given below.
+81
+
+
+--- PDF page 107 ---
+C H A P T E R 2
+MEDIANSTRING(Dna, k)
+distance 1
+for each k-mer Pattern from AA...AA to TT...TT
+if distance > d(Pattern, Dna)
+distance d(Pattern, Dna)
+Median Pattern
+return Median
+CHARGING STATION (Solving the Median String Problem): Although this
+pseudocode is short, it is not without potential pitfalls. Check out this Charging
+Station if you fall into one of them.
+PAGE
+107
+STOP and Think: Instead of making a time-consuming search through all pos-
+sible k-mers in MEDIANSTRING, can you only search through all k-mers that
+appear in Dna?
+Why have we reformulated the Motif Finding Problem?
+To see why we reformulated the Motif Finding Problem as the equivalent Median String
+Problem, consider the runtimes of MEDIANSTRING and BRUTEFORCEMOTIFS. The
+former algorithm computes d(Pattern, Dna) for each of the 4k k-mers Pattern. Each
+computation of d(Pattern, Dna) requires a single pass over each string in Dna, which
+requires approximately k · n · t operations for t strings of length n in Dna. Therefore,
+MEDIANSTRING has a running time of O
+⇣
+4k · n · k · t
+⌘
+, which in practice compares
+favorably with the O
+!
+nt · k · t
+"
+running time of BRUTEFORCEMOTIFSEARCH because
+the length of a motif (k) typically does not exceed 20 nucleotides, whereas t is measured
+in the thousands.
+The Median String Problem teaches an important lesson, which is that sometimes
+rethinking how a problem is formulated can lead to dramatic improvements in the
+runtime required to solve it. In this case, our simple observation that SCORE(Motifs)
+could just as easily be computed row-by-row as column-by-column produced the faster
+MEDIANSTRING algorithm.
+Of course, the ultimate test of a bioinformatics algorithm is how it performs in
+practice. Unfortunately, since MEDIANSTRING has to consider 4k k-mers, it becomes
+too slow for the Subtle Motif Problem, for which k = 15. We will run MEDIANSTRING
+82
+
+
+--- PDF page 108 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+with k = 13 in the hope that it will capture a substring of the correct 15-mer motif. The
+algorithm still requires half a day to run on our computer and returns the median string
+AAAAAtAGaGGGG (with distance 29). This 13-mer is not a substring of the implanted
+pattern AAAAAAAAGGGGGGG, but it does come close.
+STOP and Think: How can a slightly incorrect median string of length 13 help
+us ﬁnd the correct median string of length 15?
+We have thus far assumed that the value of k is known in advance, which is not the case
+in practice. As a result, we are forced to run our motif ﬁnding algorithms for different
+values of k and then try to deduce the correct motif length. Since some regulatory motifs
+are rather long — later in the chapter, we will search for a biologically important motif
+of length 20 — MEDIANSTRING may be too slow to ﬁnd them.
+Greedy Motif Search
+Using the proﬁle matrix to roll dice
+Many algorithms are iterative procedures that must choose among many alternatives at
+each iteration. Some of these alternatives may lead to correct solutions, whereas others
+may not. Greedy algorithms select the “most attractive” alternative at each iteration.
+For example, a greedy algorithm in chess might attempt to capture an opponent’s most
+valuable piece at every move. Yet anyone who has played chess knows that this strategy
+of looking only one move ahead will likely produce disastrous results. In general, most
+greedy algorithms typically fail to ﬁnd an exact solution of the problem; instead, they
+are often fast heuristics that trade accuracy for speed in order to ﬁnd an approximate
+solution. Nevertheless, for many biological problems that we will study in this book,
+greedy algorithms will prove quite useful.
+In this section, we will explore a greedy approach to motif ﬁnding. Again, let Motifs
+be a collection of k-mers taken from t strings Dna. Recall from our discussion of entropy
+that we can view each column of PROFILE(Motifs) as a four-sided biased die. Thus, a
+proﬁle matrix with k columns can be viewed as a collection of k dice, which we will roll
+to randomly generate a k-mer. For example, if the ﬁrst column of the proﬁle matrix is
+(0.2, 0.1, 0.0, 0.7), then we generate A as the ﬁrst nucleotide with probability 0.2, C with
+probability 0.1, G with probability 0.0, and T with probability 0.7.
+In Figure 2.6, we reproduce the proﬁle matrix for the NF-kB binding sites from
+Figure 2.2, where the lone colored entry in the i-th column corresponds to the i-th
+83
+
+
+--- PDF page 109 ---
+C H A P T E R 2
+nucleotide in ACGGGGATTACC. The probability Pr(ACGGGGATTACC|Proﬁle) that Proﬁle
+generates ACGGGGATTACC is computed by simply multiplying the highlighted entries
+in the proﬁle matrix.
+Proﬁle
+A: .2 .2 .0 .0 .0 .0 .9 .1 .1 .1 .3 .0
+C: .1 .6 .0 .0 .0 .0 .0 .4 .1 .2 .4 .6
+G: .0 .0 1
+1
+.9 .9 .1 .0 .0 .0 .0 .0
+T: .7 .2 .0 .0 .1 .1 .0 .5 .8 .7 .3 .4
+Pr(ACGGGGATTACC|Proﬁle) = .2·.6 ·1 ·1 ·.9 ·.9 ·.9 ·.5 ·.8 ·.1 ·.4 ·.6 = 0.000839808
+FIGURE 2.6 We can generate a random string based on a proﬁle matrix by selecting
+the i-th nucleotide in the string with the probability corresponding to that nucleotide in
+the i-th column of the proﬁle matrix. The probability that a proﬁle matrix will produce
+a given string is given by the product of individual nucleotide probabilities.
+A k-mer tends to have a higher probability when it is more similar to the consensus
+string of a proﬁle. For example, for the NF-kB proﬁle matrix shown in Figure 2.6 and its
+consensus string TCGGGGATTTCC,
+Pr(TCGGGGATTTCC|Proﬁle) = 0.7 · 0.6 · 1.0 · 1.0 · 0.9 · 0.9 · 0.9 · 0.5 · 0.8 · 0.7 · 0.4 · 0.6
+= 0.0205753 ,
+which is larger than the value of Pr(ACGGGGATTACC|Proﬁle) = 0.000839808 that we
+computed in Figure 2.6.
+EXERCISE BREAK: Compute Pr(TCGTGGATTTCC|Proﬁle), where Proﬁle is the
+matrix shown in Figure 2.6.
+Given a proﬁle matrix Proﬁle, we can evaluate the probability of every k-mer in a string
+Text and ﬁnd a Proﬁle-most probable k-mer in Text, i.e., a k-mer that was most likely to
+have been generated by Proﬁle among all k-mers in Text. For the NF-kB proﬁle matrix,
+ACGGGGATTACC is the Proﬁle-most probable 12-mer in ggtACGGGGATTACCt. Indeed,
+every other 12-mer in this string has probability 0. In general, if there are multiple
+Proﬁle-most probable k-mers in Text, then we select the ﬁrst such k-mer occurring in
+Text.
+84
+
+
+--- PDF page 110 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+Proﬁle-most Probable k-mer Problem:
+Find a Proﬁle-most probable k-mer in a string.
+Input: A string Text, an integer k, and a 4 ⇥k matrix Proﬁle.
+Output: A Proﬁle-most probable k-mer in Text.
+2C
+Our proposed greedy motif search algorithm, GREEDYMOTIFSEARCH, tries each of
+the k-mers in Dna1 as the ﬁrst motif. For a given choice of k-mer Motif1 in Dna1, it
+then builds a proﬁle matrix Proﬁle for this lone k-mer, and sets Motif2 equal to the
+Proﬁle-most probable k-mer in Dna2. It then iterates by updating Proﬁle as the proﬁle
+matrix formed from Motif1 and Motif2, and sets Motif2 equal to the Proﬁle-most probable
+k-mer in Dna3. In general, after ﬁnding i −1 k-mers Motifs in the ﬁrst i −1 strings
+of Dna, GREEDYMOTIFSEARCH constructs Proﬁle(Motifs) and selects the Proﬁle-most
+probable k-mer from Dnai based on this proﬁle matrix. After obtaining a k-mer from
+each string to generate a collection Motifs, GREEDYMOTIFSEARCH tests to see whether
+Motifs outscores the current best scoring collection of motifs and then moves Motif1 one
+symbol over in Dna1, beginning the entire process of generating Motifs again.
+GREEDYMOTIFSEARCH(Dna, k, t)
+BestMotifs motif matrix formed by ﬁrst k-mers in each string from Dna
+for each k-mer Motif in the ﬁrst string from Dna
+Motif1 Motif
+for i = 2 to t
+form Proﬁle from motifs Motif1, ..., Motifi−1
+Motifi Proﬁle-most probable k-mer in the i-th string in Dna
+Motifs (Motif1, ..., Motift)
+if SCORE(Motifs) < SCORE(BestMotifs)
+BestMotifs Motifs
+return BestMotifs
+2D
+If you are not satisﬁed with the performance of GREEDYMOTIFSEARCH — even if you
+implemented it correctly — then wait until we discuss this algorithm in the next section.
+Analyzing greedy motif ﬁnding
+In contrast to MEDIANSTRING, GREEDYMOTIFSEARCH is fast and can be run with
+k = 15 to solve the Subtle Motif Problem (recall that we settled for k = 13 in the
+85
+
+
+--- PDF page 111 ---
+C H A P T E R 2
+case of MEDIANSTRING). However, it trades speed for accuracy and returns the 15-
+mer gtAAAtAgaGatGtG (total distance: 58), which is very different from the true
+implanted motif AAAAAAAAGGGGGGG.
+STOP and Think: Why does GREEDYMOTIFSEARCH perform so poorly?
+At ﬁrst glance, GREEDYMOTIFSEARCH may seem like a reasonable algorithm, but
+it is not! Let’s see whether GREEDYMOTIFSEARCH will ﬁnd the (4, 1)-motif ACGT
+implanted in the following strings Dna:
+ttACCTtaac
+gATGTctgtc
+acgGCGTtag
+ccctaACGAg
+cgtcagAGGT
+We will assume that the algorithm has already correctly chosen the implanted 4-mer
+ACCT from the ﬁrst string in Dna and constructed the corresponding Proﬁle:
+A:
+1
+0
+0
+0
+C:
+0
+1
+1
+0
+G:
+0
+0
+0
+0
+T:
+0
+0
+0
+1
+The algorithm is now ready to search for a Proﬁle-most probable 4-mer in the second
+sequence. The issue, however, is that there are so many zeros in the proﬁle matrix that
+the probability of every 4-mer but ACCT is zero! Thus, unless ACCT is present in every
+string in Dna, there is little chance that GREEDYMOTIFSEARCH will ﬁnd the implanted
+motif. Zeroes in the proﬁle matrix are not just a minor annoyance but rather a persistent
+problem that we must address.
+Motif Finding Meets Oliver Cromwell
+What is the probability that the sun will not rise tomorrow?
+In 1650, after the Scots proclaimed Charles II as king during the English Civil War,
+Oliver Cromwell made a famous appeal to the Church of Scotland. Urging them to see
+the error of their royal alliance, he pleaded,
+86
+
+
+--- PDF page 112 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+I beseech you, in the bowels of Christ, think it possible that you may be mistaken.
+The Scots rejected the appeal, and Cromwell invaded Scotland in response. His quota-
+tion later inspired the statistical maxim called Cromwell’s rule, which states that we
+should not use probabilities of 0 or 1 unless we are talking about logical statements
+that can only be true or false. In other words, we should allow a small probability for
+extremely unlikely events, such as “this book was written by aliens” or “the sun will
+not rise tomorrow”. We cannot speak to the likelihood of the former event, but in the
+18th Century, the French mathematician Pierre-Simon Laplace actually estimated the
+probability that the sun will not rise tomorrow (1/1826251), given that it has risen every
+day for the past 5000 years. Although this estimate was ridiculed by his contemporaries,
+Laplace’s approach to this question now plays an important role in statistics.
+In any observed data set, there is the possibility, especially with low-probability
+events or small data sets, that an event with nonzero probability does not occur. Its
+observed frequency is therefore zero; however, setting the empirical probability of the
+event equal to zero represents an inaccurate oversimpliﬁcation that may cause problems.
+By artiﬁcially adjusting the probability of rare events, these problems can be mitigated.
+Laplace’s Rule of Succession
+Cromwell’s rule is relevant to the calculation of the probability of a string based on a
+proﬁle matrix. For example, consider the following Proﬁle:
+Proﬁle
+A:
+.2 .2 .0 .0 .0 .0 .9 .1 .1 .1 .3 .0
+C:
+.1 .6 .0 .0 .0 .0 .0 .4 .1 .2 .4 .6
+G:
+.0 .0 1
+1
+.9 .9 .1 .0 .0 .0 .0 .0
+T:
+.7 .2 .0 .0 .1 .1 .0 .5 .8 .7 .3 .4
+Pr(TCGTGGATTTCC|Proﬁle)
+=
+.7 · .6 · 1 · .0 · .9 · .9 · .9 · .5 · .8 · .7 · .4 · .6 = 0
+The fourth symbol of TCGTGGATTTCC causes Pr(TCGTGGATTTCC|Proﬁle) to equal zero.
+As a result, the entire string is assigned a zero probability, even though TCGTGGATTTCC
+differs from the consensus string at only one position. For that matter, TCGTGGATTTCC
+has the same low probability as AAATCTTGGAA, which is very different from the con-
+, which is very different from the con-
+sensus string.
+In order to improve this unfair scoring, bioinformaticians often substitute zeroes
+with small numbers called pseudocounts. The simplest approach to introducing pseu-
+docounts, called Laplace’s Rule of Succession, is similar to the principle that Laplace
+87
+
+
+--- PDF page 113 ---
+C H A P T E R 2
+used to calculate the probability that the sun will not rise tomorrow. In the case of
+motifs, pseudocounts often amount to adding 1 (or some other small number) to each
+element of COUNT(Motifs). For example, say that we have the following motif, count,
+and proﬁle matrices:
+Motifs
+T A A C
+G T C T
+A C T A
+A G G T
+COUNT(Motifs)
+A:
+2
+1
+1
+1
+PROFILE(Motifs)
+2/4 1/4 1/4 1/4
+C:
+0
+1
+1
+1
+0
+1/4 1/4 1/4
+G:
+1
+1
+1
+0
+1/4 1/4 1/4
+0
+T:
+1
+1
+1
+2
+1/4 1/4 1/4 2/4
+Laplace’s Rule of Succession adds 1 to each element of COUNT(Motifs), updating the
+two matrices to the following:
+COUNT(Motifs)
+A: 2+1 1+1 1+1 1+1
+PROFILE(Motifs)
+3/8 2/8 2/8 2/8
+C: 0+1 1+1 1+1 1+1
+1/8 2/8 2/8 2/8
+G: 1+1 1+1 1+1 0+1
+2/8 2/8 2/8 1/8
+T: 1+1 1+1 1+1 2+1
+2/8 2/8 2/8 3/8
+STOP and Think: How would you use Laplace’s Rule of Succession to address
+the shortcomings of GREEDYMOTIFSEARCH?
+An improved greedy motif search
+The only change we need to introduce to GREEDYMOTIFSEARCH in order to eliminate
+zeroes from the proﬁle matrices that it constructs is to replace line 6 of the pseudocode
+for GREEDYMOTIFSEARCH:
+form Proﬁle from motifs Motif1, ... Motifi−1
+with the following line:
+88
+
+
+--- PDF page 114 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+apply Laplace’s Rule of Succession to form Proﬁle from motifs Motif1, ... Motifi−1
+We now will apply Laplace’s Rule of Succession to search for the (4, 1)-motif ACGT
+implanted in the following strings Dna:
+ttACCTtaac
+gATGTctgtc
+Dna
+acgGCGTtag
+ccctaACGAg
+cgtcagAGGT
+Again, let’s assume that the algorithm has already chosen the implanted 4-mer ACCT
+from the ﬁrst sequence. We can construct the corresponding count and proﬁle matrices
+using Laplace’s Rule of Succession:
+Motifs
+ACCT
+COUNT(Motifs)
+A: 1+1 0+1 0+1 0+1
+PROFILE(Motifs)
+2/5 1/5 1/5 1/5
+C: 0+1 1+1 1+1 0+1
+1/5 2/5 2/5 1/5
+G: 0+1 0+1 0+1 0+1
+1/5 1/5 1/5 1/5
+T: 0+1 0+1 0+1 1+1
+1/5 1/5 1/5 2/5
+We use this proﬁle matrix to compute the probabilities of all 4-mers in the second string
+from Dna:
+gATG
+ATGT
+TGTc
+GTct
+Tctg
+ctgt
+tgtc
+1/54
+4/54
+1/54
+4/54
+2/54
+2/54
+1/54
+There are two Proﬁle-most probable 4-mers in the second sequence (ATGT and GTct);
+let’s assume that we get lucky again and choose the implanted 4-mer ATGT. We now
+have the following motif, count, and proﬁle matrices:
+Motifs
+ACCT
+ATGT
+COUNT(Motifs)
+A: 2+1 0+1 0+1 0+1
+PROFILE(Motifs)
+3/6 1/6 1/6 1/6
+C: 0+1 1+1 1+1 0+1
+1/6 2/6 2/6 1/6
+G: 0+1 0+1 1+1 0+1
+1/6 1/6 2/6 1/6
+T: 0+1 1+1 0+1 2+1
+1/6 2/6 1/6 3/6
+89
+
+
+--- PDF page 115 ---
+C H A P T E R 2
+We use this proﬁle matrix to compute the probabilities of all 4-mers in the third string
+from Dna:
+acgG
+cgGC
+gGCG
+GCGT
+CGTt
+GTta
+Ttag
+12/64
+2/64
+2/64
+12/64
+3/64
+2/64
+2/64
+Again, there are two Proﬁle-most probable 4-mers in the second sequence (acgG and
+GCGT). This time, we will assume that acgG is selected instead of the implanted 4-mer
+GCGT. We now have the following motif, count, and proﬁle matrices:
+Motifs
+ACCT
+ATGT
+acgG
+COUNT(Motifs)
+A: 3+1 0+1 0+1 1+1
+PROFILE(Motifs)
+4/7 1/7 1/7 1/7
+C: 0+1 2+1 1+1 0+1
+1/7 3/7 2/7 1/7
+G: 0+1 0+1 2+1 1+1
+1/7 1/7 3/7 2/7
+T: 0+1 1+1 0+1 2+1
+1/7 2/7 1/7 3/7
+We use this proﬁle matrix to compute probabilities of all 4-mers in the fourth string
+from Dna:
+ccct
+ccta
+ctaA
+taAC
+aACG
+ACGA
+CGAg
+18/74
+3/74
+2/74
+1/74
+16/74
+36/74
+2/74
+Despite the fact that we missed the implanted 4-mer in the third sequence, we have
+now found the implanted 4-mer in the fourth string in Dna as the Proﬁle-most probable
+4-mer ACGA. This provides us with the following motif, count, and proﬁle matrices:
+Motifs
+ACCT
+ATGT
+acgG
+ACGA
+COUNT(Motifs)
+A: 4+1 0+1 0+1 0+1
+PROFILE(Motifs)
+5/8 1/8 1/8 2/8
+C: 0+1 3+1 1+1 0+1
+1/8 4/8 2/8 1/8
+G: 0+1 0+1 3+1 1+1
+1/8 1/8 4/8 2/8
+T: 0+1 1+1 0+1 2+1
+1/8 2/8 1/8 3/8
+We now use this proﬁle to compute the probabilities of all 4-mers in the ﬁfth string in
+Dna:
+90
+
+
+--- PDF page 116 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+cgtc
+gtca
+tcag
+cagA
+agAG
+gAGG
+AGGT
+1/84
+8/84
+8/84
+8/84
+10/84
+8/84
+60/84
+The Proﬁle-most probable 4-mer of the ﬁfth string in Dna is AGGT, the implanted 4-mer.
+As a result, GREEDYMOTIFSEARCH has produced the following motif matrix, which
+implies the correct consensus string ACGT:
+Motifs
+ACCT
+ATGT
+acgG
+ACGA
+AGGT
+CONSENSUS(Motifs)
+ACGT
+You have now seen the power of pseudocounts illustrated on a small example. Run-
+ning GREEDYMOTIFSEARCH with pseudocounts to solve the Subtle Motif Problem
+returns a collection of 15-mers Motifs with SCORE(Motifs) = 41 and CONSENSUS(Motifs)
+= AAAAAtAgaGGGGtt. Thus, Laplace’s Rule of Succession has provided a great im-
+provement over the original GREEDYMOTIFSEARCH, which returned the consensus
+string gTtAAAtAgaGatGtG with SCORE(Motifs) = 58.
+2E
+You may be satisﬁed with the performance of GREEDYMOTIFSEARCH, but you
+should know by now that your authors are never satisﬁed. Can we design an even
+more accurate motif ﬁnding algorithm?
+Randomized Motif Search
+Rolling dice to ﬁnd motifs
+We will now turn to randomized algorithms that ﬂip coins and roll dice in order to
+search for motifs. Making random algorithmic decisions may sound like a disastrous
+idea — just imagine a chess game in which every move would be decided by rolling a
+die. However, an 18th Century French mathematician and naturalist, Comte de Buffon,
+ﬁrst proved that randomized algorithms are useful by randomly dropping needles
+onto parallel strips of wood and using the results of this experiment to accurately
+approximate the constant p (see DETOUR: Buffon’s Needle).
+PAGE 109
+Randomized algorithms may be nonintuitive because they lack the control of tra-
+ditional algorithms. Some randomized algorithms are Las Vegas algorithms, which
+91
+
+
+--- PDF page 117 ---
+C H A P T E R 2
+deliver solutions that are guaranteed to be exact, despite the fact that they rely on mak-
+ing random decisions. Yet most randomized algorithms, including the motif ﬁnding
+algorithms that we will consider in this chapter, are Monte Carlo algorithms. These
+algorithms are not guaranteed to return exact solutions, but they do quickly ﬁnd ap-
+proximate solutions. Because of their speed, they can be run many times, allowing us to
+choose the best approximation from thousands of runs.
+We previously deﬁned PROFILE(Motifs) as the proﬁle matrix constructed from a
+collection of k-mers Motifs in Dna. Now, given a collection of strings Dna and an
+arbitrary 4 ⇥k matrix Proﬁle, we deﬁne MOTIFS(Proﬁle, Dna) as the collection of k-mers
+formed by the Proﬁle-most probable k-mers in each sequence from Dna. For example,
+consider the following Proﬁle and Dna:
+Proﬁle
+A: 4/5
+0
+0
+1/5
+Dna
+ttaccttaac
+C:
+0
+3/5 1/5
+0
+gatgtctgtc
+G: 1/5 1/5 4/5
+0
+acggcgttag
+T:
+0
+1/5
+0
+4/5
+ccctaacgag
+cgtcagaggt
+Taking the Proﬁle-most probable 4-mer from each row of Dna produces the following
+4-mers (shown in red):
+ttaccttaac
+gatgtctgtc
+MOTIFS(Proﬁle, Dna)
+acggcgttag
+ccctaacgag
+cgtcagaggt
+In general, we can begin from a collection of randomly chosen k-mers Motifs in Dna,
+construct PROFILE(Motifs), and use this proﬁle to generate a new collection of k-mers:
+MOTIFS(PROFILE(Motifs),Dna)
+Why would we do this? Because our hope is that MOTIFS(PROFILE(Motifs), Dna) has a
+better score than the original collection of k-mers Motifs. We can then form the proﬁle
+matrix of these k-mers,
+PROFILE(MOTIFS(PROFILE(Motifs), Dna)) ,
+and use it to form the most probable k-mers,
+92
+
+
+--- PDF page 118 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+MOTIFS(PROFILE(MOTIFS(PROFILE(Motifs), Dna)), Dna) .
+We can continue to iterate...
+. . . PROFILE(MOTIFS(PROFILE(MOTIFS(PROFILE(Motifs), Dna)), Dna))...
+for as long as the score of the constructed motifs keeps improving, which is exactly what
+RANDOMIZEDMOTIFSEARCH does. To implement this algorithm, you will need to
+randomly select the initial collection of k-mers that form the motif matrix Motifs. To do
+so, you will need a random number generator (denoted RANDOM(N)) that is equally
+likely to return any integer from 1 to N. You might like to think about this random
+number generator as an unbiased N-sided die.
+RANDOMIZEDMOTIFSEARCH(Dna, k, t)
+randomly select k-mers Motifs = (Motif1, . . . , Motift) in each string from Dna
+BestMotifs Motifs
+while forever
+Proﬁle PROFILE(Motifs)
+Motifs MOTIFS(Proﬁle, Dna)
+if SCORE(Motifs) < SCORE(BestMotifs)
+BestMotifs Motifs
+else
+return BestMotifs
+2F
+EXERCISE BREAK: Prove that RANDOMIZEDMOTIFSEARCH will eventually
+terminate.
+Since a single run of RANDOMIZEDMOTIFSEARCH may generate a rather poor set of
+motifs, bioinformaticians usually run this algorithm thousands of times. On each run,
+they begin from a new randomly selected set of k-mers, selecting the best set of k-mers
+found in all these runs.
+Why randomized motif search works
+At ﬁrst glance, RANDOMIZEDMOTIFSEARCH appears to be doomed. How can this
+algorithm, which starts from a random guess, possibly ﬁnd anything useful? To explore
+RANDOMIZEDMOTIFSEARCH, let’s run it on ﬁve short strings with the implanted
+(4, 1)-motif ACGT (shown in upper case letters below) and imagine that it chooses the
+93
+
+
+--- PDF page 119 ---
+C H A P T E R 2
+following 4-mers Motifs (shown in red) at the ﬁrst iteration. As expected, it misses the
+implanted motif in nearly every string.
+ttACCTtaac
+gATGTctgtc
+Dna
+ccgGCGTtag
+cactaACGAg
+cgtcagAGGT
+Below, we construct the proﬁle matrix PROFILE(Motifs) of the chosen 4-mers.
+Motifs
+PROFILE(Motifs)
+t
+a
+a
+c
+A:
+0.4
+0.2
+0.2
+0.2
+G
+T
+c
+t
+C:
+0.2
+0.4
+0.2
+0.2
+c
+c
+g
+G
+G:
+0.2
+0.2
+0.4
+0.2
+a
+c
+t
+a
+T:
+0.2
+0.2
+0.2
+0.4
+A
+G
+G
+T
+We can now compute the probabilities of every 4-mer in Dna based on this proﬁle
+matrix. For example, the probability of the ﬁrst 4-mer in the ﬁrst string of Dna is
+PR(ttAC|Proﬁle) = 0.2 · 0.2 · 0.2 · 0.2 = 0.0016. The maximum probabilities in every
+row are shown in red below.
+ttAC
+tACC
+ACCT
+CCTt
+CTta
+Ttaa
+taac
+.0016
+.0016
+.0128
+.0064
+.0016
+.0016
+.0016
+gATG
+ATGT
+TGTc
+GTct
+Tctg
+ctgt
+tgtc
+.0016
+.0128
+.0016
+.0032
+.0032
+.0032
+.0016
+ccgG
+cgGC
+gGCG
+GCGT
+CGTt
+GTta
+Ttag
+.0064
+.0036
+.0016
+.0128
+.0032
+.0016
+.0016
+cact
+acta
+ctaA
+taAC
+aACG
+ACGA
+CGAg
+.0032
+.0064
+.0016
+.0016
+.0032
+.0128
+.0016
+cgtc
+gtca
+tcag
+cagA
+agAG
+gAGG
+AGGT
+.0016
+.0016
+.0016
+.0032
+.0032
+.0032
+.0128
+We select the most probable 4-mer in each row above as our new collection Motifs
+(shown below). Notice that this collection has captured all ﬁve implanted motifs in Dna!
+94
+
+
+--- PDF page 120 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+ttACCTtaac
+gATGTctgtc
+Dna
+ccgGCGTtag
+cactaACGAg
+cgtcagAGGT
+STOP and Think: How is it possible that randomly chosen k-mers have led us to
+the correct implanted k-mer? If you think we manufactured this example, select
+your own initial 4-mers and see what happens.
+For the Subtle Motif Problem with implanted 15-mer AAAAAAAAGGGGGGG, when we
+run RANDOMIZEDMOTIFSEARCH 100,000 times (each time with new randomly se-
+lected k-mers), it returns the 15-mers shown in Figure 2.7 as the lowest scoring collection
+Motifs across all iterations, resulting in the consensus string AAAAAAAAacaGGGG with
+score 43. These strings are only slightly less conserved than the collection of im-
+planted (15, 4)-motifs with score 40 (or the motif returned by GREEDYMOTIFSEARCH
+with score 41), and it largely captures the implanted motif. Furthermore, unlike
+GREEDYMOTIFSEARCH, RANDOMIZEDMOTIFSEARCH can be run for a larger num-
+ber of iterations to discover better and better motifs.
+Score
+Motifs
+AAAtAcAgACAGcGt
+5
+AAAAAAtAgCAGGGt
+3
+tAAAAtAAACAGcGG
+3
+AcAgAAAAAaAGGGG
+3
+AAAAtAAAACtGcGa
+4
+AtAgAcgAACAcGGt
+6
+cAAAAAgAgaAGGGG
+4
+AtAgAAAAggAaGGG
+5
+AAgAAAAAAgAGaGG
+3
+cAtAAtgAACtGtGa
+7
+CONSENSUS(Motifs)
+AAAAAAAAACAGGGG
+43
+FIGURE 2.7 The lowest scoring collection of strings Motifs produced by 100,000 runs
+of RANDOMIZEDMOTIFSEARCH, along with their consensus string and score for the
+Subtle Motif Problem.
+95
+
+
+--- PDF page 121 ---
+C H A P T E R 2
+STOP and Think:
+Does your run of RANDOMIZEDMOTIFSEARCH re-
+turn a similar consensus string?
+How many times do you need to run
+RANDOMIZEDMOTIFSEARCH to obtain the implanted (15, 4)-motif with dis-
+tance 40?
+Although the motifs returned by RANDOMIZEDMOTIFSEARCH are slightly less con-
+served than the motifs returned by MEDIANSTRING, RANDOMIZEDMOTIFSEARCH
+has the advantage of being able to ﬁnd longer motifs (since MEDIANSTRING becomes
+too slow for longer motifs). In the epilogue, we will see that this feature is important in
+practice.
+How Can a Randomized Algorithm Perform So Well?
+In the previous section, we began with a collection of implanted motifs (with consensus
+ACGT) that resulted in the following proﬁle matrix.
+A:
+0.8
+0.0
+0.0
+0.2
+C:
+0.0
+0.6
+0.2
+0.0
+G:
+0.2
+0.2
+0.8
+0.0
+T:
+0.0
+0.2
+0.0
+0.8
+If the strings in Dna were truly random, then we would expect that all nucleotides
+in the selected k-mers would be equally likely, resulting in an expected Proﬁle in which
+every entry is approximately 0.25:
+A:
+0.25
+0.25
+0.25
+0.25
+C:
+0.25
+0.25
+0.25
+0.25
+G:
+0.25
+0.25
+0.25
+0.25
+T:
+0.25
+0.25
+0.25
+0.25
+Such a uniform proﬁle is essentially useless for motif ﬁnding because no string is more
+probable than any other according to this proﬁle and because it does not provide any
+clues on what an implanted motif looks like.
+At the opposite end of the spectrum, if we were incredibly lucky, we would choose
+the implanted k-mers Motifs from the very beginning, resulting in the ﬁrst of the two
+proﬁle matrices above. In practice, we are likely to obtain a proﬁle somewhere in
+between these two extremes, such as the following:
+96
+
+
+--- PDF page 122 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+A:
+0.4
+0.2
+0.2
+0.2
+C:
+0.2
+0.4
+0.2
+0.2
+G:
+0.2
+0.2
+0.4
+0.2
+T:
+0.2
+0.2
+0.2
+0.4
+This proﬁle matrix has already started to point us toward the implanted motif ACGT,
+i.e., ACGT is the most likely 4-mer that can be generated by this proﬁle. Fortunately,
+RANDOMIZEDMOTIFSEARCH is designed so that subsequent steps have a good chance
+of leading us toward this implanted motif (although it is not certain).
+If you still doubt the efﬁcacy of randomized algorithms, consider the following
+argument. We have already noticed that if the strings in Dna were random, then
+RANDOMIZEDMOTIFSEARCH would start from a nearly uniform proﬁle, and there
+would be nothing to work with. However, the key observation is that the strings in Dna
+are not random because they include the implanted motif! These multiple occurrences
+of the same motif may create a bias in the proﬁle matrix, directing it away from the
+uniform proﬁle and toward the implanted motif. For example, consider again the
+original randomly selected k-mers Motifs (shown in red):
+ttACCTtaac
+gATGTctgtc
+Dna
+ccgGCGTtag
+cactaACGAg
+cgtcagAGGT
+You will see that the 4-mer AGGT in the last string happened to capture the implanted
+motif simply by chance. In fact, the proﬁle formed from the remaining 4-mers (taac,
+GTct, ccgG, and acta) is uniform.
+EXERCISE BREAK: Compute the probability that ten randomly selected 15-
+mers from ten 600-nucleotide long strings (such as in the Subtle Motif Problem)
+capture at least one implanted 15-mer.
+Although the probability that randomly selected k-mers match all implanted motifs is
+negligible, the probability that they capture at least one implanted motif is signiﬁcant.
+Even in the case of difﬁcult motif ﬁnding problems for which this probability is small,
+we can run RANDOMIZEDMOTIFSEARCH many times, so that it will almost certainly
+catch at least one implanted motif, thus creating a statistical bias pointing toward the
+correct motif.
+97
+
+
+--- PDF page 123 ---
+C H A P T E R 2
+Unfortunately, capturing a single implanted motif is often insufﬁcient to steer
+RANDOMIZEDMOTIFSEARCH to an optimal solution. Therefore, since the number
+of starting positions of k-mers is huge, the strategy of randomly selecting motifs is
+often not as successful as in the simple example above. The chance that these randomly
+selected k-mers will be able to guide us to the optimal solution is relatively small.
+EXERCISE BREAK: Compute the probability that ten randomly selected 15-
+mers from the ten 600-nucleotide long strings in the Subtle Motif Problem capture
+at least two implanted 15-mers.
+Gibbs Sampling
+Note that RANDOMIZEDMOTIFSEARCH may change all t strings in Motifs in a single
+iteration. This strategy may prove reckless, since some correct motifs (captured in
+Motifs) may potentially be discarded at the next iteration. GIBBSSAMPLER is a more
+cautious iterative algorithm that discards a single k-mer from the current set of motifs at
+each iteration and decides to either keep it or replace it with a new one. This algorithm
+thus moves with more caution in the space of all motifs, as illustrated below.
+ttaccttaac
+ttaccttaac
+ttaccttaac
+ttaccttaac
+gatatctgtc
+gatatctgtc
+gatatctgtc
+gatatctgtc
+acggcgttcg
+!
+acggcgttcg
+acggcgttcg
+!
+acggcgttcg
+ccctaaagag
+ccctaaagag
+ccctaaagag
+ccctaaagag
+cgtcagaggt
+cgtcagaggt
+cgtcagaggt
+cgtcagaggt
+RANDOMIZEDMOTIFSEARCH
+GIBBSSAMPLER
+(may change all k-mers in one step)
+(changes one k-mer in one step)
+Like RANDOMIZEDMOTIFSEARCH, GIBBSSAMPLER starts with randomly chosen
+k-mers in each of t DNA sequences, but it makes a random rather than a deterministic
+choice at each iteration. It uses randomly selected k-mers Motifs = (Motif1, . . . , Motift)
+to come up with another (hopefully better scoring) set of k-mers. In contrast with
+RANDOMIZEDMOTIFSEARCH, which deterministically deﬁnes new motifs as
+MOTIFS(PROFILE(Motifs), Dna) ,
+98
+
+
+--- PDF page 124 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+GIBBSSAMPLER randomly selects an integer i between 1 and t and then randomly
+changes a single k-mer Motifi.
+To describe how GIBBSSAMPLER updates Motifs, we will need a slightly more
+advanced random number generator. Given a probability distribution (p1, . . . , pn), this
+random number generator, denoted RANDOM(p1, . . . , pn), models an n-sided biased
+die and returns integer i with probability pi. For example, the standard six-sided fair
+die represents the random number generator
+RANDOM(1/6, 1/6, 1/6, 1/6, 1/6, 1/6) ,
+whereas a biased die might represent the random number generator
+RANDOM(0.1, 0.2, 0.3, 0.05, 0.1, 0.25) .
+GIBBSSAMPLER further generalizes the random number generator by using the
+function RANDOM(p1, . . . , pn) deﬁned for any set of non-negative numbers, i.e., not
+necessarily satisfying the condition Ân
+i=1 pi = 1. Speciﬁcally, if Ân
+i=1 pi = C > 0, then
+RANDOM(p1, . . . , pn) is deﬁned as RANDOM(p1/C, . . . , pn/C), where (p1/C, . . . , pn/C)
+is a probability distribution. For example, given the values (p1, p2, p3) = (0.1, 0.2, 0.3)
+with 0.1 + 0.2 + 0.3 = 0.6,
+RANDOM(0.1, 0.2, 0.3) = RANDOM(0.1/0.6, 0.2/0.6, 0.3/0.6)
+= RANDOM(1/6, 1/3, 1/2) .
+STOP and Think: Implement RANDOM(p1, . . . , pn) so that it uses RANDOM(X)
+(for an appropriately chosen integer X) as a subroutine.
+We have previously deﬁned the notion of a Proﬁle-most probable k-mer in a string. We
+now deﬁne a Proﬁle-randomly generated k-mer in a string Text. For each k-mer Pattern
+in Text, compute the probability Pr(Pattern|Proﬁle), resulting in n = |Text| −k + 1 proba-
+bilities (p1, . . . , pn). These probabilities do not necessarily sum to 1, but we can still form
+the random number generator RANDOM(p1, . . . , pn) based on them. GIBBSSAMPLER
+uses this random number generator to select a Proﬁle-randomly generated k-mer at each
+step: if the die rolls the number i, then we deﬁne the Proﬁle-randomly generated k-mer
+as the i-th k-mer in Text. While the pseudocode below repeats this procedure N times, in
+practice GIBBSSAMPLER depends on various stopping rules that are beyond the scope
+of this chapter.
+99
+
+
+--- PDF page 125 ---
+C H A P T E R 2
+GIBBSSAMPLER(Dna, k, t, N)
+randomly select k-mers Motifs = (Motif1, ..., Motift) in each string from Dna
+BestMotifs Motifs
+for j 1 to N
+i RANDOM(t)
+Proﬁle proﬁle matrix formed from all strings in Motifs except for Motifi
+Motifi Proﬁle-randomly generated k-mer in the i-th sequence
+if SCORE(Motifs) < SCORE(BestMotifs)
+BestMotifs Motifs
+return BestMotifs
+2G
+STOP and Think: Note that in contrast to RANDOMIZEDMOTIFSEARCH, which
+always moves from higher to lower scoring Motifs, GIBBSSAMPLER may move
+from lower to higher scoring Motifs. Why is this reasonable?
+Gibbs Sampling in Action
+We illustrate how GIBBSSAMPLER works on the same strings Dna that we considered
+before. Imagine that, at the initial step, the algorithm has chosen the following 4-mers
+(shown in red) and has randomly selected the third string for removal.
+ttACCTtaac
+ttACCTtaac
+gATGTctgtc
+gATGTctgtc
+Dna
+ccgGCGTtag
+−!
+----------
+cactaACGAg
+cactaACGAg
+cgtcagAGGT
+cgtcagAGGT
+This results in the following motif, count, and proﬁle matrices.
+t a a c
+Motifs
+G T c t
+a c t a
+A G G T
+COUNT(Motifs)
+A: 2 1 1 1
+PROFILE(Motifs)
+A: 2/4 1/4 1/4 1/4
+C: 0 1 1 1
+C:
+0
+1/4 1/4 1/4
+G: 1 1 1 0
+G: 1/4 1/4 1/4
+0
+T: 1 1 1 2
+T: 1/4 1/4 1/4 2/4
+100
+
+
+--- PDF page 126 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+Note that the proﬁle matrix is only slightly more conserved than the uniform proﬁle,
+making us wonder whether we have any chance to be steered toward the implanted
+motif. We now use this proﬁle matrix to compute the probabilities of all 4-mers in the
+deleted string ccgGCGTtag:
+ccgG
+cgGC
+gGCG
+GCGT
+CGTt
+GTta
+Ttag
+0
+0
+0
+1/128
+0
+1/256
+0
+Note that all but two of these probabilities are zero. This situation is similar to the one
+we encountered with GREEDYMOTIFSEARCH, and as before, we need to augment zero
+probabilities with small pseudocounts to avoid disastrous results.
+Application of Laplace’s Rule of Succession to the count matrix above yields the
+following updated count and proﬁle matrices:
+COUNT(Motifs)
+A: 3 2 2 2
+PROFILE(Motifs)
+A: 3/8 2/8 2/8 2/8
+C: 1 2 2 2
+C: 1/8 2/8 2/8 2/8
+G: 2 2 2 1
+G: 2/8 2/8 2/8 1/8
+T: 2 2 2 3
+T: 2/8 2/8 2/8 3/8
+After adding pseudocounts, the 4-mer probabilities in the deleted string ccgGCGTtag
+are recomputed as follows:
+ccgG
+cgGC
+gGCG
+GCGT
+CGTt
+GTta
+Ttag
+4/84
+8/84
+8/84
+24/84
+12/84
+16/84
+8/84
+Since these probabilities sum to C = 80/84, our hypothetical seven-sided die is repre-
+sented by the random number generator
+RANDOM
+✓4/84
+80/84 , 8/84
+80/84 , 8/84
+80/84 , 24/84
+80/84 , 12/84
+80/84 , 16/84
+80/84 , 8/84
+80/84
+◆
+= RANDOM
+✓4
+80, 8
+80, 8
+80, 24
+80, 12
+80, 16
+80, 8
+80
+◆
+.
+Let’s assume that after rolling this seven-sided die, we arrive at the Proﬁle-randomly
+generated 4-mer GCGT (the fourth 4-mer in the deleted sequence). The deleted string
+ccgGCGTtag is now added back to the collection of motifs, and GCGT substitutes the
+previously chosen ccgG in the third string in Dna, as shown below. We then roll a fair
+ﬁve-sided die and randomly select the ﬁrst string from Dna for removal.
+101
+
+
+--- PDF page 127 ---
+C H A P T E R 2
+ttACCTtaac
+----------
+gATGTctgtc
+gATGTctgtc
+Dna
+ccgGCGTtag
+−!
+ccgGCGTtag
+cactaACGAg
+cactaACGAg
+cgtcagAGGT
+cgtcagAGGT
+After constructing the motif and proﬁle matrices, we obtain the following:
+Motifs
+G T c t
+PROFILE(Motifs)
+A: 2/4
+0
+0
+1/4
+G C G T
+C:
+0
+2/4 1/4
+0
+a c t a
+G: 2/4 1/4 2/4
+0
+A G G T
+T:
+0
+1/4 1/4 3/4
+Note that the proﬁle matrix looks more biased toward the implanted motif than the
+previous proﬁle matrix did. We update the count and proﬁle matrices with pseudo-
+counts:
+COUNT(Motifs)
+A: 3 1 1 2
+PROFILE(Motifs)
+A: 3/8 1/8 1/8 2/8
+C: 1 3 2 1
+C: 1/8 3/8 2/8 1/8
+G: 3 2 3 1
+G: 3/8 2/8 3/8 1/8
+T: 1 2 2 4
+T: 1/8 2/8 2/8 4/8
+Then, we compute the probabilities of all 4-mers in the deleted string ttACCTtaac:
+ttAC
+tACC
+ACCT
+CCTt
+CTta
+Ttaa
+taac
+2/84
+2/84
+72/84
+24/84
+8/84
+4/84
+1/84
+When we roll a seven-sided die, we arrive at the Proﬁle-randomly generated k-mer
+ACCT, which we add to the collection Motifs. After rolling the ﬁve-sided die once again,
+we randomly select the fourth string for removal.
+ttACCTtaac
+ttACCTtaac
+gATGTctgtc
+gATGTctgtc
+Dna
+ccgGCGTtag
+−!
+ccgGCGTtag
+cactaACGAg
+----------
+cgtcagAGGT
+cgtcagAGGT
+We further add pseudocounts and construct the resulting count and proﬁle matrices:
+102
+
+
+--- PDF page 128 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+A C C T
+Motifs
+G T c t
+G C G T
+A G G T
+COUNT(Motifs)
+A: 3 1 1 1
+PROFILE(Motifs)
+A: 3/8 1/8 1/8 1/8
+C: 1 3 3 1
+C: 1/8 3/8 3/8 1/8
+G: 3 2 3 1
+G: 3/8 2/8 3/8 1/8
+T: 1 2 1 5
+T: 1/8 2/8 1/8 5/8
+We now compute the probabilities of all 4-mers in the deleted string cactaACGAg:
+cact
+acta
+ctaA
+taAC
+aACG
+ACGA
+CGAg
+15/84
+9/84
+2/84
+1/84
+9/84
+27/84
+2/84
+We need to roll a seven-sided die to produce a Proﬁle-randomly generated 4-mer. As-
+suming the most probable scenario in which we select ACGA, we update the selected
+4-mers as follows:
+ttACCTtaac
+gATGTctgtc
+Dna
+ccgGCGTtag
+cactaACGAg
+cgtcagAGGT
+You can see that the algorithm is beginning to converge. Rest assured that a subse-
+quent iteration will produce all implanted motifs after we select the second string in Dna
+(when the incorrect 4-mer GTct will likely change into the implanted (4, 1)-motif ATGT).
+STOP and Think: Run GIBBSSAMPLER on the Subtle Motif Problem. What do
+you ﬁnd?
+Although GIBBSSAMPLER performs well in many cases, it may converge to a subop-
+timal solution, particularly for difﬁcult search problems with elusive motifs. A local
+optimum is a solution that is optimal within a small neighboring set of solutions, which
+is in contrast to a global optimum, or the optimal solution among all possible solutions.
+Since GIBBSSAMPLER explores just a small subset of solutions, it may “get stuck” in a
+local optimum. For this reason, similarly to RANDOMIZEDMOTIFSEARCH, it should
+be run many times with the hope that one of these runs will produce the best-scoring
+103
+
+
+--- PDF page 129 ---
+C H A P T E R 2
+motifs. Yet convergence to a local optimum is just one of many issues we must con-
+sider in motif ﬁnding; see DETOUR: Complications in Motif Finding for some other
+PAGE
+PAGE 112
+112
+challenges.
+When we run GIBBSSAMPLER 2,000 times on the Subtle Motif Problem with im-
+planted 15-mer AAAAAAAAGGGGGGG (each time with new randomly selected k-mers for
+N = 200 iterations), it returns a collection Motifs with consensus AAAAAAgAGGGGGGt
+and SCORE(Motifs) equal to 38. This score is even lower than the score of 40 expected
+from the implanted motifs!
+Epilogue: How Does Tuberculosis Hibernate to Hide from Antibiotics?
+Tuberculosis (TB) is an infectious disease that is caused by the Mycobacterium tuberculo-
+sis bacterium (MTB) and is responsible for over a million deaths each year. Although the
+spread of TB has been greatly reduced due to antibiotics, strains that resist all available
+treatments are now emerging. MTB is successful as a pathogen because it can persist in
+humans for decades without causing disease; in fact, one-third of the world population
+has latent MTB infections, in which MTB lies dormant within the host’s body and may
+or may not reactivate at a later time. The widespread prevalence of latent infections
+makes it difﬁcult to control TB epidemics. Biologists are therefore interested in ﬁnding
+out what makes the disease latent and how MTB activates itself within a host.
+It remains unclear why MTB can stay latent for so long and how it survives during
+latency. The resistance of latent TB to antibiotics implies that MTB may have an ability
+to shut down expression of most genes and stay dormant, not unlike bears hibernating
+in the winter. Hibernation in bacteria is called sporulation because many bacteria
+form protective and metabolically dormant spores that can survive in tough conditions,
+allowing the bacteria to persist in the environment until conditions improve.
+Hypoxia, or oxygen shortage, is often associated with latent forms of TB. Biologists
+have found that MTB becomes dormant in low-oxygen environments, presumably with
+the idea that the host’s lungs will recover enough to potentially spread the disease in
+the future. Since MTB shows a remarkable ability to survive for years without oxygen,
+it is important to identify MTB genes responsible for the development of the latent state
+under hypoxic conditions. Biologists are interested in ﬁnding a transcription factor that
+“senses” the shortage of oxygen and starts a genetic program that affects the expression
+of many genes, allowing MTB to adapt to hypoxia.
+In 2003, biologists found the dormancy survival regulator (DosR), a transcription
+factor that regulates many genes whose expression dramatically changes under hypoxic
+104
+
+
+--- PDF page 130 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+conditions. However, it remained unclear how DosR regulates these genes, and its
+transcription factor binding site remained unknown. In an attempt to resolve this
+puzzle, biologists performed a DNA array experiment and found 25 genes whose
+expression levels signiﬁcantly changed in hypoxic conditions. Given the upstream
+regions of these genes, each of which is 250 nucleotides long, we would like to discover
+the “hidden message” that DosR uses to control the expression of these genes.
+To simplify the problem a bit, we have selected just 10 of the 25 genes, resulting
+in the DosR dataset. We will try to identify motifs in this dataset using the arsenal of
+motif ﬁnding tools that we have developed. However, we will not give you a hint about
+the DosR motif.
+What k-mer size should we choose in order to analyze the DosR dataset using
+MEDIANSTRING and RANDOMIZEDMOTIFSEARCH? Taking a wild guess and run-
+ning these algorithms for k from 8 to 12 returns the consensus strings shown below.
+MEDIANSTRING
+RANDOMIZEDMOTIFSEARCH
+k
+Consensus
+Score
+k
+Consensus
+Score
+8
+CATCGGCC
+11
+8
+CCGACGGG
+13
+9
+GGCGGGGAC
+16
+9
+CCATCGGCC
+16
+10
+GGTGGCCACC
+19
+10
+CCATCGGCCC
+21
+11
+GGACTTCCGGC
+20
+11
+ACCTTCGGCCC
+25
+12
+GGACTTCCGGCC
+23
+12
+GGACCAACGGCC
+28
+STOP and Think: Can you infer the DosR binding site from these median strings?
+What do you think is the length of the binding site?
+Note that although the consensus strings returned by RANDOMIZEDMOTIFSEARCH
+generally deviate from the median strings, the consensus 12-mer (GGACCAACGGCC,
+with score 28) is very similar to the median string (GGACTTCCGGCC, with score 23).
+While the motifs returned by RANDOMIZEDMOTIFSEARCH are slightly less con-
+served than the motifs returned by MEDIANSTRING, the former algorithm has the
+advantage of being able to ﬁnd longer motifs (since MEDIANSTRING becomes too slow
+for longer motifs). The motif of length 20 returned by RANDOMIZEDMOTIFSEARCH is
+CGGGACCTACGTCCCTAGCC (with score 57). As shown below, the consensus strings of
+length 12 found by RANDOMIZEDMOTIFSEARCH and MEDIANSTRING are “embed-
+ded” with small variations in the longer motif of length 20:
+105
+
+
+--- PDF page 131 ---
+C H A P T E R 2
+GGACCAACGGCC
+CGGGACCTACGTCCCTAGCC
+GGACTTCCGGCC
+Finally, in 2,000 runs with N = 200, GIBBSSAMPLER returned the same consensus
+string of length 20 for the DosR dataset as RANDOMIZEDMOTIFSEARCH but generated
+a different collection of motifs with a smaller score of 55.
+As you have seen in this chapter, different motif ﬁnding algorithms generate some-
+what different results, and it remains unclear how to identify the DosR motif in MTB.
+Try to answer this question and ﬁnd all putative DosR motifs in MTB as well as all
+genes that they regulate. We will provide the upstream regions of all 25 genes identiﬁed
+in the DosR study to help you address the following problem.
+CHALLENGE PROBLEM: Infer the proﬁle of the DosR motif and ﬁnd all its
+Infer the proﬁle of the DosR motif and ﬁnd all its
+putative occurrences in
+putative occurrences in Mycobacterium tuberculosis.
+Mycobacterium tuberculosis.
+106
+
+
+--- PDF page 132 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+Charging Stations
+Solving the Median String Problem
+The ﬁrst potential issue with implementing MEDIANSTRING is writing a function to
+compute d(Pattern, Dna) = Ât
+i=1 d(Pattern, Dnai), the sum of distances between Pattern
+and each string in Dna = {Dna1, . . . , Dnat}. This task is achieved by the following
+pseudocode.
+DISTANCEBETWEENPATTERNANDSTRINGS(Pattern, Dna)
+k |Pattern|
+distance 0
+for each string Text in Dna
+HammingDistance 1
+for each k-mer Pattern’ in Text
+if HammingDistance > HAMMINGDISTANCE(Pattern, Pattern’)
+HammingDistance HAMMINGDISTANCE(Pattern, Pattern’)
+distance distance + HammingDistance
+return distance
+2H
+To solve the Median String Problem, we need to iterate through all possible 4k k-
+mers Pattern before computing d(Pattern, Dna). The pseudocode below is a modiﬁ-
+cation of MEDIANSTRING using the function NUMBERTOPATTERN (implemented in
+CHARGING STATION: Converting Patterns Into Numbers and Vice-Versa), which
+PAGE
+41
+is applied to convert all integers from 0 to 4k −1 into all possible k-mers.
+MEDIANSTRING(Dna, k)
+distance 1
+for i 0 to 4k −1
+Pattern NUMBERTOPATTERN(i, k)
+if distance > DISTANCEBETWEENPATTERNANDSTRINGS(Pattern, Dna)
+distance DISTANCEBETWEENPATTERNANDSTRINGS(Pattern, Dna)
+Median Pattern
+return Median
+107
+
+
+--- PDF page 133 ---
+C H A P T E R 2
+Detours
+Gene expression
+Genes encode proteins, and proteins dictate cell function. To respond to changes in their
+environment, cells must therefore control their protein levels. The ﬂow of information
+from DNA to RNA to protein means that the cell can adjust the amount of proteins that
+it produces during both transcription (DNA to RNA) and translation (RNA to protein).
+Transcription begins when an RNA polymerase binds to a promoter sequence on
+the DNA molecule, which is often located just upstream from the starting point for
+transcription. The initiation of transcription is a convenient control point for the cell
+to regulate gene expression since it is at the very beginning of the protein production
+process. The genes transcribed in a cell are controlled by various transcription regulators
+that may increase or suppress transcription.
+DNA arrays
+A DNA array is a collection of DNA molecules attached to a solid surface. Each spot on
+the array is assigned a unique DNA sequence called a probe that measures the expres-
+sion level of a speciﬁc gene, known as a target. In most arrays, probes are synthesized
+and then attached to a glass or silicon chip (Figure 2.8).
+FIGURE 2.8 Fluorescently labeled DNA binds to a complementary probe on a DNA
+array.
+Fluorescently labeled targets then bind to their corresponding probe (e.g., when
+their sequences are complementary), generating a ﬂuorescent signal. The strength of
+this signal depends upon the amount of target sample that binds to the probe at a given
+spot. Thus, the higher the expression level of a gene, the higher the intensity of its
+ﬂuorescent signal on the array. Since an array may contain millions of probes, biologists
+can measure the expression of many genes in a single array experiment. The DNA array
+108
+
+
+--- PDF page 134 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+experiment that identiﬁed the evening element in Arabidopsis thaliana measured the
+expression of 8,000 genes.
+Buﬀon’s needle
+Comte de Buffon was a proliﬁc 18th Century naturalist whose writings on natural
+history were popular at the time. However, his ﬁrst paper was in mathematics; in 1733,
+he wrote an essay on a Medieval French game called “Le jeu de franc carreau”. In this
+game, a single player ﬂips a coin into the air, and the coin lands on a checkerboard.
+The player wins if the coin lands completely within one of the squares on the board,
+and loses otherwise (Figure 2.9 (left)). Buffon asked a natural question: what is the
+probability that the player wins?
+1 
+r 
+r 
+r 
+FIGURE 2.9 (Left) A game of “franc carreau” with four coins. Two of the coins have
+landed within one of the squares of the checkerboard and are considered winners,
+whereas the other two have landed on a boundary and are considered losers. (Right)
+Three coins shown on a single square of the checkerboard (the green outside square);
+one coin is a loser, another is a winner, and the third corresponds to a boundary case.
+You can see that if the coin has radius r, then the probability of winning the game
+corresponds to the probability that the center of the coin (shown as a red dot) lands
+within the blue square, which has side length 1 −2r. This probability is the ratio of the
+squares’ areas, which is (1 −2r)2.
+Let’s assume that the checkerboard consists of just a single square with side length 1,
+that the coin has radius r < 1/2, and that the center of the coin always lands within the
+square. Then the player can only win if the center of the circle falls within an imaginary
+109
+
+
+--- PDF page 135 ---
+C H A P T E R 2
+central square of side length 1 −2r (Figure 2.9 (right)). Assuming that the coin lands
+anywhere on the larger square with uniform probability, then the probability that the
+coin falls completely within the smaller square is given by the ratio of the areas of the
+two squares, or (1 −2r)2.
+Four decades later, Buffon published a paper describing a similar game in which the
+player uniformly drops a needle onto a ﬂoor covered by long wooden panels of equal
+width. In this game, which has become known as Buffon’s needle, the player wins if
+the needle falls entirely within one of the panels. Note that computing the probability
+of a win is now complicated by the fact that the needle is described by an orientation
+in addition to its position. Nevertheless, the ﬁrst game gives us an idea for how to
+solve this problem: once we ﬁx a position for the center of the needle, its collection of
+different possible orientations sweep out a circle (Figure 2.10 (left)).
+(x, y) 
+(x) 
+1 – x 
+1 
+x 
+y 
+FIGURE 2.10 (Left) Once we ﬁx a point for the center of the needle (shown as a red
+dot), its collection of possible orientations sweep out a circle. In the circle on the left,
+the needle will always lie within the dark brown panel, regardless of its orientation.
+In the circle on the right, one of the two needles lies within the dark brown panel,
+whereas another is shown crossing over into the adjacent panel. (Right) Once we ﬁx a
+point (x, y) for the center of the needle, there is a critical angle a(x) such that all angles
+between −a(x) and a(x) will cause the needle to cross over into the next panel. In this
+ﬁgure, the length of the needle is equal to the width of the panel.
+The probability that the player wins depends on the length of the needle with respect
+to the distance between wooden panels. We will assume that both of these lengths are
+110
+
+
+--- PDF page 136 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+equal to 2, and we will ﬁnd the probability of a loss instead of a win. To this end, we
+ﬁrst ask a simpler question: if the center of the needle were to land in the same place
+every time, then what is the likelihood that the needle crosses a panel?
+To address this question, let’s map the panel into which the needle falls onto a
+coordinate plane, with the y-axis dividing the panel into two smaller panels of width
+1 (Figure 2.10 (right)). If the center of the needle lands at position (x, y) with x > 0,
+then its orientation can be described by an angle q, where q ranges from −p/2 to p/2
+radians. If q = 0, then the needle will cross the line y = 1; if q = p/2, then the needle
+will not cross the line y = 1. Yet more importantly, since the needle’s center position is
+ﬁxed, there must be some critical angle a(x) such that the needle always touches this
+line if −a(x) q a(x) . If the needle is dropped randomly, then any value of q is
+equally likely, and so we obtain that the probability of a loss given this position of the
+needle is equal to 2 · a(x)/p.
+Following the same reasoning, the needle can take any position x with equal proba-
+bility. To ﬁnd the probability of a loss, Pr(loss), we must therefore compute an “average”
+of the values 2 · a(x)/p as x continuously ranges from −1 to 1. This average can be
+represented using an integral,
+Pr(loss) =
+R 1
+−1
+2 · a(x)
+p
+dx
+1 −(−1)
+= R 1
+−1
+a(x)
+p
+dx = 2R 1
+0
+a(x)
+p
+dx .
+Revisiting Figure 2.10 (right), applying some basic trigonometry tells us that cos a(x)
+is equal to 1 −x, so that a(x) = arccos(1 −x). After making this substitution into the
+above equation — and consulting our dusty calculus textbook — Pr(loss) must be equal
+to 2/p. It is not difﬁcult to see that this probability will be the same when the needle is
+dropped onto any number of wooden panels.
+But what does Buffon’s needle have to do with randomized algorithms? In 1812,
+none other than Laplace pointed out that Buffon’s needle could be used to approxi-
+mate p, and the world’s ﬁrst Monte Carlo algorithm was born. Speciﬁcally, we can
+approximate the probability Pe of a loss empirically by dully ﬂipping a needle into the air
+thousands of times (or asking a computer to do it for us). Once we have computed this
+empirical probability, we can conclude that Pe is approximately equal to 2/p, and thus
+p ⇡2
+Pe
+.
+111
+
+
+--- PDF page 137 ---
+C H A P T E R 2
+STOP and Think: How does this approximation change in the following cases?
+1. The needle is shorter than the width between panels.
+2. The needle is longer than the width between panels.
+Complications in motif ﬁnding
+Motif ﬁnding becomes difﬁcult if the background nucleotide distribution in the sam-
+ple is skewed. In this case, searching for k-mers with the minimum score or entropy may
+lead to a biologically irrelevant motif composed from the most frequent nucleotides in
+the sample. For example, if A has frequency 85% and T, G, and C have frequencies of
+5%, then k-mer AA...AA may represent a motif with minimum score, thus disguising
+biologically relevant motifs. For example, the relevant motif GCCG with score 5 in the
+example below loses out to the motif aaaa with score 1.
+taaaaGTCGa
+acGCTGaaaa
+Dna
+aaaaGCCTat
+aCCCGaataa
+agaaaaGGCG
+To ﬁnd biologically relevant motifs in samples with biased nucleotide frequencies, you
+may therefore want to use a generalization of entropy called “relative entropy” (see
+DETOUR: Relative Entropy).
+PAGE 112
+Another complication in motif ﬁnding is that many motifs are best represented
+in a different alphabet than the alphabet of 4 nucleotides. Let W denote either A or
+T, S denote either G or C, K denote either G or T, and Y denote either C or T. Now,
+consider the motif CSKWYWWATKWATYYK, which represents the CSRE motif in yeast
+(recall Figure 2.3 from page 75). This strong motif in a hybrid alphabet corresponds to
+211 different motifs in the standard 4-letter alphabet of nucleotides. However, each of
+these 211 motifs is too weak to be found by the algorithms we have considered in this
+chapter.
+Relative entropy
+Given a collection of strings Dna, the relative entropy of a 4 ⇥k proﬁle matrix P = (pr,j)
+is deﬁned as
+112
+
+
+--- PDF page 138 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+k
+Â
+j=1
+Â
+r2{A,C,G,T}
+pr,j · log2(pr,j/br) =
+k
+Â
+j=1
+Â
+r2{A,C,G,T}
+pr,j · log2(pr,j) −
+k
+Â
+j=1
+Â
+r2{A,C,G,T}
+pr,j · log2(br) ,
+where br is the frequency of nucleotide r in Dna. Note that the sum in the expression for
+entropy is preceded by a negative sign (−Âk
+j=1 Âr2{A,C,G,T} pr,j · log2(pr,j)), whereas the
+sum on the left side of the relative entropy equation does not have this negative sign.
+Therefore, although we minimized the entropy of a motif matrix, we will now attempt
+to maximize the relative entropy.
+The term −Âk
+j=1 Âr2{A,C,G,T} pr,j · log2(br) is called the cross-entropy of the proﬁle
+matrix P; note that the relative entropy of a proﬁle matrix is simply the difference
+between the proﬁle’s cross-entropy and its entropy. For example, the relative entropy
+for the motif GCCG in the example from DETOUR: Complications in Motif Finding
+PAGE
+PAGE 112
+112
+is equal to 9.85 −3.53 = 6.32, as shown below. In this example, bA = 0.5, bC = 0.18,
+bG = 0.2, and bT = 0.12.
+G
+T
+C
+G
+G
+C
+T
+G
+Motifs
+G
+C
+C
+T
+c
+C
+C
+G
+G
+G
+C
+G
+PROFILE(Motifs)
+A:
+0.0
+0.0
+0.0
+0.0
+C:
+0.2
+0.6
+0.8
+0.0
+G:
+0.8
+0.2
+0.0
+0.8
+T:
+0.0
+0.2
+0.2
+0.2
+Entropy
+0.72 + 1.37 + 0.72 + 0.72 = 3.53
+Cross-entropy
+2.35 + 2.56 + 2.47 + 2.47 = 9.85
+For the more conserved but irrelevant motif aaaa, the relative entropy is equal to
+4.18 −0.72 = 3.46, as shown below. Thus, GCCG loses to aaaa with respect to entropy
+but wins with respect to relative entropy.
+113
+
+
+--- PDF page 139 ---
+C H A P T E R 2
+a
+a
+a
+a
+a
+a
+a
+a
+Motifs
+a
+a
+a
+a
+a
+t
+a
+a
+a
+a
+a
+a
+PROFILE(Motifs)
+A:
+1.0
+0.8
+1.0
+1.0
+C:
+0.0
+0.0
+0.0
+0.0
+G:
+0.0
+0.0
+0.0
+0.0
+T:
+0.0
+0.2
+0.0
+0.0
+Entropy
+0.0 + 0.72 + 0.0 + 0.0 = 0.72
+Cross-entropy
+0.94 + 1.36 + 0.94 + 0.94 = 4.18
+114
+
+
+--- PDF page 140 ---
+W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S?
+Bibliography Notes
+Konopka and Benzer, 1971 bred ﬂies with abnormally short (19 hours) and long (28
+hours) circadian rhythms and then traced these abnormalities to a single gene. Harmer
+et al., 2000 discovered the evening transcription factor binding site that orchestrates the
+circadian clock in plants. Excellent coverage of this discovery is given by Cristianini
+and Hahn, 2006. Park et al., 2003 found a transcription factor that mediates the hypoxic
+response of Mycobacterium tuberculosis.
+Hertz and Stormo, 1999 described the ﬁrst greedy algorithm for motif ﬁnding. The
+general framework for Gibbs sampling was described by Geman and Geman, 1984
+and was named Gibbs sampling in reference to its similarities with some approaches
+in statistical mechanics (Josiah Willard Gibbs was one of the founders of statistical
+mechanics). Lawrence et al., 1993 adapted Gibbs sampling for motif ﬁnding.
+115

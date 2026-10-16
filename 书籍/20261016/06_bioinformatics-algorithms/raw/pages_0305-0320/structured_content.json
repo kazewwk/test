@@ -1,0 +1,1831 @@
+{
+  "pages": [
+    {
+      "page_idx": 304,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.256,
+            0.082
+          ],
+          "content": "C H A P T E R 5"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.113,
+            0.47,
+            0.131
+          ],
+          "content": "A greedy multiple alignment algorithm"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.144,
+            0.433,
+            0.163
+          ],
+          "content": "Note that the multiple alignment"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.457,
+            0.177,
+            0.576,
+            0.192
+          ],
+          "content": "**AT-GTTaTA**"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.458,
+            0.196,
+            0.575,
+            0.212
+          ],
+          "content": "**AgCGaTC-A**"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.458,
+            0.215,
+            0.574,
+            0.23
+          ],
+          "content": "**ATCGT-CTc**"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.244,
+            0.448,
+            0.264
+          ],
+          "content": "induces three pairwise alignments:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.281,
+            0.386,
+            0.297
+          ],
+          "content": "**AT-GTTaTA**"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.268,
+            0.303,
+            0.385,
+            0.32
+          ],
+          "content": "**AgCGaTC-A**"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.458,
+            0.282,
+            0.575,
+            0.297
+          ],
+          "content": "**AT-GTTaTA**"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.459,
+            0.303,
+            0.574,
+            0.318
+          ],
+          "content": "**ATCGT-CTc**"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.649,
+            0.282,
+            0.765,
+            0.299
+          ],
+          "content": "**C-AAgCGaT**"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.649,
+            0.303,
+            0.764,
+            0.318
+          ],
+          "content": "**ATCGT-CTc**"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.336,
+            0.895,
+            0.378
+          ],
+          "content": "But can we work in the opposite direction, combining optimal pairwise alignments into a multiple alignment?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.165,
+            0.396,
+            0.331,
+            0.414
+          ],
+          "level": 2,
+          "content": "STOP and Think:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.189,
+            0.429,
+            0.867,
+            0.504
+          ],
+          "sub_type": "text",
+          "content": "1. Does an optimal multiple alignment induce optimal pairwise alignments?\n2. Try combining the pairwise alignments below into a multiple alignment of the strings **CCCCTTTT**, **TTTTGGGG**, and **GGGGCCCC**."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.254,
+            0.52,
+            0.41,
+            0.536
+          ],
+          "content": "**CCCCTTTT**-"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.255,
+            0.542,
+            0.41,
+            0.558
+          ],
+          "content": "----**TTTTGGGG**"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.482,
+            0.521,
+            0.636,
+            0.536
+          ],
+          "content": "----**CCCCTTTT**"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.482,
+            0.542,
+            0.636,
+            0.558
+          ],
+          "content": "**GGGGCCCC**- ---"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.709,
+            0.521,
+            0.862,
+            0.536
+          ],
+          "content": "**TTTTGGGG**"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.71,
+            0.542,
+            0.863,
+            0.558
+          ],
+          "content": "----**GGGGCCCC**"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.597,
+            0.896,
+            0.764
+          ],
+          "content": "Unfortunately, we cannot always combine optimal pairwise alignments into a multiple alignment because some pairwise alignments may be incompatible. Indeed, the first pairwise alignment in the above question implies that **CCCC** occurs before **TTTT** in the multiple alignment constructed from these three pairwise alignments. The third pairwise alignment implies that **TTTT** occurs before **GGGG** in the multiple alignment. But the second pairwise alignment implies that **GGGG** occurs before **CCCC** in the multiple alignment. Thus, **CCCC** must occur before **TTTT**, which must occur before **GGGG**, which must occur before **CCCC**, a contradiction."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.768,
+            0.897,
+            0.895
+          ],
+          "content": "To avoid incompatibility, some multiple alignment algorithms attempt to greedily construct a multiple alignment from pairwise alignments that are not necessarily optimal. The greedy heuristic starts by selecting the two strings having the highest scoring pairwise alignment (among all possible pairs of strings) and then uses this pairwise alignment as a building block for iteratively adding one string at a time to the growing multiple alignment. We align the two closest strings at the first step because they often"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.032,
+            0.455,
+            0.11,
+            0.516
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_304_image_26.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.944,
+            0.534,
+            0.958
+          ],
+          "content": "280"
+        }
+      ]
+    },
+    {
+      "page_idx": 305,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.435,
+            0.065,
+            0.858,
+            0.081
+          ],
+          "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.113,
+            0.862,
+            0.174
+          ],
+          "continues_prev": true,
+          "content": "provide the best chance of building a reliable multiple alignment. For the same reason, we then select the string having maximum score against the current alignment at each stage. But what does it mean to align a string against an alignment of other strings?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.177,
+            0.864,
+            0.324
+          ],
+          "content": "An alignment of nucleotide sequences with k columns can be represented as a $4 \\times k$ profile matrix like the one in Figure 5.32, which holds the nucleotide frequencies from each column (amino acid alignments are represented by $2 0 \\times k$ profile matrices). The greedy multiple alignment heuristic adds a string to the current alignment by constructing a pairwise alignment between the string and the profile of the current alignment. As a result, the problem of constructing a multiple alignment of t sequences is reduced to constructing t \u0000 1 pairwise alignments."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.184,
+            0.355,
+            0.785,
+            0.637
+          ],
+          "sub_type": "text_image",
+          "content": "Alignment\nProfile\nA: .2 .1 0 0 0 0 .8 .1 .1 .1 .2 0\nC: .1 .5 0 0 0 0 0 .3 .1 .2 .4 .5\nG: 0 0 .7 .6 .8 .6 .1 0 0 0 0 0\nT: .6 .2 0 0 .1 .1 0 .5 .8 .6 .2 .3",
+          "captions": [
+            {
+              "bbox": [
+                0.154,
+                0.659,
+                0.808,
+                0.711
+              ],
+              "content": "FIGURE 5.32 A profile matrix for a multiple alignment of ten sequences. Each column of the profile matrix sums to 1 minus the frequency of the space symbol. The most popular nucleotides in each column are shown as uppercase colored letters."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_305_image_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.739,
+            0.833,
+            0.78
+          ],
+          "content": "**STOP and Think:** Design an algorithm for aligning a string against a profile matrix. How would you score the columns in such an alignment?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.803,
+            0.862,
+            0.888
+          ],
+          "content": "Although greedy multiple alignment algorithms work well for similar sequences, their performance deteriorates for dissimilar sequences because greedy methods may be misled by a spurious pairwise alignment. If the first two sequences picked for building a multiple alignment are aligned in a way that is incompatible with the optimal multiple"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.89,
+            0.729,
+            0.966,
+            0.79
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_305_image_7.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.465,
+            0.944,
+            0.496,
+            0.958
+          ],
+          "content": "281"
+        }
+      ]
+    },
+    {
+      "page_idx": 306,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.082
+          ],
+          "content": "C H A P T E R 5"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.112,
+            0.895,
+            0.152
+          ],
+          "continues_prev": true,
+          "content": "alignment, then the error in this initial pairwise alignment will propagate all the way through to the final multiple alignment."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.155,
+            0.897,
+            0.215
+          ],
+          "content": "After learning how to align multiple sequences, you are now ready to solve a challenge problem that is comparable to the task that Marahiel and his collaborators faced in 1999."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.235,
+            0.875,
+            0.406
+          ],
+          "content": "**CHALLENGE PROBLEM:** In 1999, Marahiel derived the non-ribosomal code for only 14 of the 20 proteinogenic amino acids (Ala, Asn, Asp, Cys, Gln, Glu, Ile, Leu, Phe, Pro, Ser, Thr, Tyr, Val) because he lacked A-domain sequences for the remaining 6 amino acids. With the availability of many more A-domains, you now have the chance to fill in the gaps in Marahiel’s original paper. Construct the multiple alignment of 397 A-domains, reveal the conservative columns in this alignment, and make your best guess about the signatures encoding all 20 proteinogenic amino acids based on Marahiel’s alignment."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.48,
+            0.462,
+            0.553,
+            0.479
+          ],
+          "level": 2,
+          "content": "Detours"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.497,
+            0.452,
+            0.515
+          ],
+          "content": "Fireflies and the non-ribosomal code"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.529,
+            0.895,
+            0.612
+          ],
+          "content": "When Marahiel started his groundbreaking work on decoding the non-ribosomal code in the late 1990s, 160 A-domains had already been sequenced, and the amino acids that they encode had been experimentally identified. However, it was still not clear exactly how each A-domain encoded a specific amino acid."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.614,
+            0.895,
+            0.698
+          ],
+          "content": "We showed an alignment of three A-domain intervals in the main chapter, but Marahiel actually aligned all of the 160 identified A-domains in order to reveal the conservative core. Yet it still remained unclear which columns in this alignment defined the non-ribosomal signatures."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.7,
+            0.897,
+            0.783
+          ],
+          "content": "Help came from an unusual ally: Photinus pyralis, the most common species of firefly. Fireflies produce an enzyme called **luciferase** that helps them emit light to attract mates at night. Different species have different glow patterns, and females respond to males from the same species by identifying the color, duration, and intensity of their flash."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.785,
+            0.897,
+            0.89
+          ],
+          "content": "What do fireflies have to do with the non-ribosomal code? Firefly luciferase belongs to a class of enzymes called **adenylate-forming enzymes**, which share similarities with adenylation domains. For this reason, when Peter Brick published the three-dimensional structure of firefly luciferase in 1996, Marahiel was quick to take notice. In 1997, he and Brick joined forces and used firefly luciferase as a scaffold to reconstruct the first"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.501,
+            0.944,
+            0.534,
+            0.958
+          ],
+          "content": "282"
+        }
+      ]
+    },
+    {
+      "page_idx": 307,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.435,
+            0.065,
+            0.856,
+            0.081
+          ],
+          "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.112,
+            0.859,
+            0.174
+          ],
+          "continues_prev": true,
+          "content": "three-dimensional structure of an A-domain, which coded for phenylalanine (Phe); it is worth noting that this A-domain belonged to an NRP synthetase encoding Gramicidin Soviet, the first mass-produced antibiotic."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.176,
+            0.861,
+            0.324
+          ],
+          "content": "Marahiel and Brick actually constructed the three-dimensional structure of a larger complex containing both the A-domain and Phe. This three-dimensional structure provided information about amino acid residues in the A-domain located close to Phe, a hypothetical **active pocket** of the A-domain. Marahiel further demonstrated experimentally and computationally that amino acids in this active pocket define the non-ribosomal code, thus producing the 8 purple columns in the 3-way alignment that we showed at the beginning of the chapter."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.325,
+            0.861,
+            0.43
+          ],
+          "content": "Figure 5.33 shows the partial non-ribosomal code deduced by Marahiel. Although he was able to deduce some signatures, the non-ribosomal code is very **redundant**, meaning that multiple mutated variants of a signature all code for the same amino acid. For some amino acids, this redundancy is pronounced, e.g., Marahiel identified three very different signatures AWMFAAVL, AFWIGGTF, and FESTAAVY coding for Val."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.212,
+            0.462,
+            0.752,
+            0.7
+          ],
+          "content": "| Amino acid | Signature | Amino acid | Signature |\n| --- | --- | --- | --- |\n| Ala | LLFGIAVL | Leu | AFMLGMVF |\n| Asn | LTKLGEVG | Orn | MENLGLIN |\n| Asp | LTKVGHIG | Orn | VGEIGSID |\n| Cys | HESDVGIT | Phe | AWTIAAVC |\n| Cys | LYNLSLIW | Pro | VQLIAHVV |\n| Gln | AQDLGVVD | Ser | VWHLSLID |\n| Glu | AWHFGGVD | Thr | FWNIGMVH |\n| Glu | AKDLGVVD | Tyr | GTITAEVA |\n| Ile | GFFLGVVY | Tyr | ALVTGAVV |\n| Ile | AFFYGITF | Tyr | ASTVAAVC |\n| Leu | AWFLGNVV | Val | AFWIGGTF |\n| Leu | AWLYGAVM | Val | FESTAAVY |\n| Leu | GAYTGEVV | Val | AWMFAAVL |",
+          "captions": [
+            {
+              "bbox": [
+                0.155,
+                0.709,
+                0.807,
+                0.743
+              ],
+              "content": "FIGURE 5.33 Marahiel’s partial non-ribosomal code. Some proteinogenic amino acids are missing from this table because they were not present in Marahiel’s dataset."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_307_table_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.798,
+            0.643,
+            0.817
+          ],
+          "content": "Finding a longest common subsequence without building a city"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.829,
+            0.862,
+            0.896
+          ],
+          "content": "Define the **i-prefix** of a string as the substring formed by its first i letters and the **j-prefix** of a string as the substring formed by its final j letters. Also, given strings v and w, let $L C S _ { i , j }$ denote an LCS between the i-prefix of v and the j-prefix of $w ,$ and let $s _ { i , j }$ be"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.465,
+            0.944,
+            0.498,
+            0.961
+          ],
+          "content": ""
+        }
+      ]
+    },
+    {
+      "page_idx": 308,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.082
+          ],
+          "content": "C H A P T E R 5"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.112,
+            0.897,
+            0.26
+          ],
+          "continues_prev": true,
+          "content": "the length of $L C S _ { i , j }$ . By definition, $s _ { i ,   0 } = s _ { 0 ,   j } = 0$ for all values of i and j. Next, $L C S _ { i , j }$ could contain both $v _ { i }$ and $w _ { j } ,$ in which case these symbols match, and $L C S _ { i , j }$ extends an LCS of the shorter prefixes $v _ { 1 } \\dots v _ { i - 1 }$ and $w _ { 1 } \\dots w _ { j - 1 }$ . Otherwise, either $v _ { i }$ or $w _ { j }$ is not present in $L C S _ { i , j }$ . If $v _ { i }$ is not present in $L C S _ { i , j } ,$ then this LCS is therefore also an LCS of $v _ { 1 } \\dots v _ { i - 1 }$ and $w _ { 1 } \\ldots w _ { j }$ . A similar argument applies to the case when $w _ { j }$ is not present in $L C S _ { i , j } .$ Therefore, $s _ { i , j }$ satisfies the following recurrence, the same one we derived in the main text using a Manhattan-like grid:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.348,
+            0.274,
+            0.672,
+            0.345
+          ],
+          "content": "s _ {i, j} = \\max \\left\\{ \\begin{array}{l l} s _ {i - 1, j} \\\\ s _ {i, j - 1} \\\\ s _ {i - 1, j - 1} + 1, \\text {if} v _ {i} = w _ {j} \\end{array} \\right.",
+          "image_source": "images/page_308_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.382,
+            0.443,
+            0.402
+          ],
+          "content": "Constructing a topological ordering"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.413,
+            0.895,
+            0.496
+          ],
+          "content": "The first applications of topological ordering resulted from large management projects in an attempt to schedule a sequence of tasks based on their dependencies (such as the Dressing Challenge). In these projects, tasks are represented by nodes, and an edge connects node a to node b if task a must be completed before task b can be started."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.031,
+            0.506,
+            0.11,
+            0.567
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_308_image_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.515,
+            0.869,
+            0.557
+          ],
+          "content": "**STOP and Think:** Prove that every DAG has a node with no incoming edges and a node with no outgoing edges."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.58,
+            0.897,
+            0.75
+          ],
+          "content": "The following algorithm for constructing a topological ordering is based on the observation that every DAG has at least one node with no incoming edges. We will label one of these nodes as $v _ { 1 }$ and then remove this node from the graph along with all its outgoing edges. The resulting graph is also a DAG, which in turn must have a node with no incoming edges; we label this node $v _ { 2 } ,$ , and again remove it from the graph along with its outgoing edges. The resulting algorithm proceeds until all nodes have been removed, producing a topological order $v _ { 1 } , \\ldots , v _ { n }$ . This algorithm runs in time proportional to the number of edges in the input DAG."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.944,
+            0.534,
+            0.961
+          ],
+          "content": "284"
+        }
+      ]
+    },
+    {
+      "page_idx": 309,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.435,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.157,
+            0.138,
+            0.702,
+            0.411
+          ],
+          "sub_type": "algorithm",
+          "content": "List ← empty list\nCandidates ← set of all nodes in Graph with no incoming edges\nwhile Candidates is non-empty\n    select an arbitrary node a from Candidates\n    add a to the end of List and remove it from Candidates\n    for each outgoing edge from a to another node b\n        remove edge (a, b) from Graph\n        if b has no incoming edges\n            add b to Candidates\nif Graph has edges that have not been removed\n    return \"the input graph is not a DAG\"\nelse\n    return List",
+          "captions": [
+            {
+              "bbox": [
+                0.129,
+                0.116,
+                0.411,
+                0.135
+              ],
+              "content": "TOPOLOGICALORDERING(Graph)"
+            }
+          ],
+          "footnotes": []
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.456,
+            0.289,
+            0.474
+          ],
+          "level": 2,
+          "content": "PAM scoring matrices"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.487,
+            0.862,
+            0.699
+          ],
+          "content": "Mutations of a gene’s nucleotide sequence often change the amino acid sequence of the translated protein. Some of these mutations impair the protein’s ability to function, making them rare events in molecular evolution. Asn, Asp, Glu, and Ser are the most “mutable” amino acids, whereas Cys and Trp are the least mutable. Knowledge of the likelihood of each possible mutation allows biologists to construct amino acid scoring matrices for biologically sound sequence alignments in which different substitutions are penalized differently. The (i, j)-th entry of the amino acid scoring matrix Score usually reflects how often the i-th amino acid substitutes the j-th amino acid in alignments of related protein sequences. As a result, optimal alignments of amino acid sequences may have very few matches but still represent biologically adequate alignments."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.7,
+            0.861,
+            0.804
+          ],
+          "content": "How do biologists know which mutations are more likely than others? If we know a large set of pairwise alignments of related sequences (e.g., sharing at least 90% of amino acids), then computing Score(i, j) is based on counting how many times the corresponding amino acids are aligned. However, we need to know the scoring matrix in advance in order to build this set of starter alignments — a catch-22!"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.806,
+            0.861,
+            0.891
+          ],
+          "content": "Fortunately, the correct alignment of very similar sequences is so obvious that it can be constructed even with a primitive scoring scheme that does not account for varying mutation propensities (such as +1 for matches and -1 for mismatches and indels), thus resolving the conundrum. After constructing these obvious alignments, we can use"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.889,
+            0.233,
+            0.967,
+            0.296
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_309_image_7.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.465,
+            0.944,
+            0.498,
+            0.961
+          ],
+          "content": ""
+        }
+      ]
+    },
+    {
+      "page_idx": 310,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.082
+          ],
+          "content": "C H A P T E R 5"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.113,
+            0.895,
+            0.152
+          ],
+          "continues_prev": true,
+          "content": "them to compute a new scoring matrix that we can use iteratively to form less and less obvious alignments."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.155,
+            0.896,
+            0.365
+          ],
+          "content": "This simplified description hides some details. For example, the probability of Ser mutating into Phe in species that diverged 1 million years ago is smaller than the probability of the same mutation in species that diverged 100 million years ago. This observation implies that scoring matrices for protein comparison should depend on the similarity of the organisms and the speed of evolution of the proteins of interest. In practice, the proteins that biologists use to create an initial alignment are extremely similar, having 99% of their amino acids conserved (e.g., most proteins shared by humans and chimpanzees). Sequences that are 99% similar are said to be 1 **PAM unit** diverged $\\left( \\mathrm{PAM}^{\\prime \\prime} \\right.$ stands for “point accepted mutation”). You can think of a PAM unit as the amount of time in which an “average” protein mutates 1% of its amino acids."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.368,
+            0.897,
+            0.513
+          ],
+          "content": "The $\\mathbf { P A M _ { 1 } }$ **scoring matrix** is defined as follows from many pairwise alignments of $9 9 \\%$ similar proteins. Given a set of pairwise alignments, let $M ( i , j )$ be the number of times that the i-th and $j \\mathrm { - t h }$ amino acids appear in the same column, divided by the total number of times that the i-th amino acid appears in all sequences. Let $f ( j )$ be the frequency of the j-th amino acid in the sequences, or the number of times it appears across all sequences divided by the combined lengths of the two sequences. The $( i , j )$ -th entry of the $\\mathrm { P A M _ { 1 } }$ matrix is defined as"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.447,
+            0.528,
+            0.586,
+            0.571
+          ],
+          "content": "\\log \\left(\\frac {M (i , j)}{f (j)}\\right).",
+          "image_source": "images/page_310_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.583,
+            0.895,
+            0.667
+          ],
+          "content": "For a larger number of PAM units $n ,$ the $\\mathrm { P A M } _ { n }$ matrix is computed based on the observation that the matrix $M ^ { n }$ (the result of multiplying M by itself n times) holds the empirical probabilities that one amino acid mutates to another during n PAM units. The $( i , j )$ -th entry of the $\\mathrm { P A M } _ { n }$ scoring matrix is thus given by"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.442,
+            0.679,
+            0.591,
+            0.722
+          ],
+          "content": "\\log \\left(\\frac {M ^ {n} (i , j)}{f (j)}\\right).",
+          "image_source": "images/page_310_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.735,
+            0.591,
+            0.754
+          ],
+          "content": "The $\\mathrm { P A M } _ { 2 5 0 }$ scoring matrix is shown in Figure 5.34."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.756,
+            0.895,
+            0.839
+          ],
+          "content": "This approach assumes that the frequencies of the amino acids $f ( j )$ remain constant over time, and that the mutational processes in an interval of 1 PAM unit operate consistently over long periods. For large $n ,$ the resulting PAM matrices often allow us to find related proteins, even when the alignment has few matches."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.501,
+            0.944,
+            0.534,
+            0.958
+          ],
+          "content": "286"
+        }
+      ]
+    },
+    {
+      "page_idx": 311,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.435,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.156,
+            0.109,
+            0.809,
+            0.593
+          ],
+          "content": "|  | A | C | D | E | F | G | H | I | K | L | M | N | P | Q | R | S | T | V | W | Y | - |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| A | 2 | -2 | 0 | 0 | -3 | 1 | -1 | -1 | -1 | -2 | -1 | 0 | 1 | 0 | -2 | 1 | 1 | 0 | -6 | -3 | -8 |\n| C | -2 | 12 | -5 | -5 | -4 | -3 | -3 | -2 | -5 | -6 | -5 | -4 | -3 | -5 | -4 | 0 | -2 | -2 | -8 | 0 | -8 |\n| D | 0 | -5 | 4 | 3 | -6 | 1 | 1 | -2 | 0 | -4 | -3 | 2 | -1 | 2 | -1 | 0 | 0 | -2 | -7 | -4 | -8 |\n| E | 0 | -5 | 3 | 4 | -5 | 0 | 1 | -2 | 0 | -3 | -2 | 1 | -1 | 2 | -1 | 0 | 0 | -2 | -7 | -4 | -8 |\n| F | -3 | -4 | -6 | -5 | 9 | -5 | -2 | 1 | -5 | 2 | 0 | -3 | -5 | -5 | -4 | -3 | -3 | -1 | 0 | 7 | -8 |\n| G | 1 | -3 | 1 | 0 | -5 | 5 | -2 | -3 | -2 | -4 | -3 | 0 | 0 | -1 | -3 | 1 | 0 | -1 | -7 | -5 | -8 |\n| H | -1 | -3 | 1 | 1 | -2 | -2 | 6 | -2 | 0 | -2 | -2 | 2 | 0 | 3 | 2 | -1 | -1 | -2 | -3 | 0 | -8 |\n| I | -1 | -2 | -2 | -2 | 1 | -3 | -2 | 5 | -2 | 2 | 2 | -2 | -2 | -2 | -2 | -1 | 0 | 4 | -5 | -1 | -8 |\n| K | -1 | -5 | 0 | 0 | -5 | -2 | 0 | -2 | 5 | -3 | 0 | 1 | -1 | 1 | 3 | 0 | 0 | -2 | -3 | -4 | -8 |\n| L M N P Q R S T V W Y - A B C D E F G H I J K L M N O P Q R S T U V W X Y Z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z A B C D E F G H I J K L M N O P Q R S T U V W X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |",
+          "captions": [
+            {
+              "bbox": [
+                0.16,
+                0.601,
+                0.802,
+                0.62
+              ],
+              "content": "FIGURE 5.34 The $\\mathsf { P A M } _ { 2 5 0 }$ scoring matrix for protein alignment with indel penalty 8."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_311_table_1.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.658,
+            0.371,
+            0.677
+          ],
+          "level": 2,
+          "content": "Divide-and-conquer algorithms"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.689,
+            0.862,
+            0.816
+          ],
+          "content": "We will use the problem of sorting a list of integers as an example of a divide-and-conquer algorithm. We begin from the problem of **merging**, in which we want to combine two sorted lists $L i s t _ { 1 }$ and $L i s t _ { 2 }$ into a single sorted list (Figure 5.35). The **MERGE** algorithm combines two sorted lists into a single sorted list in $\\mathcal { O } \\big ( \\big | L i s t _ { 1 } \\big | + \\big | L i s t _ { 2 } \\big | \\big )$ time by iteratively choosing the smallest remaining element in $L i s t _ { 1 }$ and $L i s t _ { 2 }$ and moving it to the growing sorted list."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.464,
+            0.944,
+            0.498,
+            0.961
+          ],
+          "content": "287"
+        }
+      ]
+    },
+    {
+      "page_idx": 312,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.065,
+            0.259,
+            0.082
+          ],
+          "content": "C H A P T E R 5"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.207,
+            0.114,
+            0.831,
+            0.174
+          ],
+          "content": "| $List_1$ | 2 5 7 8 | 2 5 7 8 | 2 5 7 8 | 2 5 7 8 | 2 5 7 8 | 2 5 7 8 |\n| --- | --- | --- | --- | --- | --- | --- |\n| $List_2$ | 3 4 6 | 3 4 6 | 3 4 6 | 3 4 6 | 3 4 6 | 3 4 6 |\n| SortedList | 2 | 3 | 4 | 5 | 6 | 7 8 |",
+          "captions": [
+            {
+              "bbox": [
+                0.191,
+                0.181,
+                0.842,
+                0.215
+              ],
+              "content": "FIGURE 5.35 Merging the sorted lists (2, 5, 7, 8) and (3, 4, 6) results in the sorted list (2, 3, 4, 5, 6, 7, 8)."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_312_table_1.jpg"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.164,
+            0.249,
+            0.86,
+            0.442
+          ],
+          "sub_type": "algorithm",
+          "content": "MERGE($List_1$, $List_2$)\n    $SortedList \\leftarrow$ empty list\n    while both $List_1$ and $List_2$ are non-empty\n        if the smallest element in $List_1$ is smaller than the smallest element in $List_2$\n            move the smallest element from $List_1$ to the end of $SortedList$\n        else\n            move the smallest element from $List_2$ to the end of $SortedList$\n        move any remaining elements from either $List_1$ or $List_2$ to the end of $SortedList$\n    return $SortedList$",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.464,
+            0.897,
+            0.61
+          ],
+          "content": "**MERGE** would be useful for sorting an arbitrary list if we knew how to divide an arbitrary (unsorted) list into two already sorted half-sized lists. However, it may seem that we are back to where we started, except now we have to sort two smaller lists instead of one big one. Yet sorting two smaller lists is a preferable computational problem. To see why, let’s consider the **MERGESORT** algorithm, which **divides** an unsorted list into two parts and then recursively **conquers** each smaller sorting problem before merging the sorted lists."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.165,
+            0.634,
+            0.67,
+            0.822
+          ],
+          "sub_type": "code",
+          "content": "```python\nMERGESORT(List)\n    if List consists of a single element\n        return List\n    FirstHalf ← first half of List\n    SecondHalf ← second half of List\n    SortedFirstHalf ← MERGESORT(FirstHalf)\n    SortedSecondHalf ← MERGESORT(SecondHalf)\n    SortedList ← MERGE(SortedFirstHalf, SortedSecondHalf)\n    return SortedList\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.85,
+            0.666,
+            0.869
+          ],
+          "content": "**STOP and Think:** What is the runtime of **MERGESORT**?"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.031,
+            0.828,
+            0.11,
+            0.891
+          ],
+          "content": "STOP"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.943,
+            0.534,
+            0.958
+          ],
+          "content": "288"
+        }
+      ]
+    },
+    {
+      "page_idx": 313,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.434,
+            0.065,
+            0.858,
+            0.081
+          ],
+          "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.112,
+            0.862,
+            0.304
+          ],
+          "content": "Figure 5.36 shows the **recursion tree** of **MERGESORT**, consisting of $\\mathrm { l o g } _ { 2 }$ n levels, where n is the size of the original unsorted list. At the bottom level, we must merge two sorted lists of approximately $n / 2$ elements each, requiring $\\mathcal { O } ( n / 2 + n / 2 ) = \\mathcal { O } ( n )$ time. At the next highest level, we must merge four lists of $n / 4$ elements, requiring $\\mathcal { O } \\big ( n / 4 + n / 4 + n / 4 + n / 4 \\big ) = \\mathcal { O } \\big ( n \\big )$ time. This pattern can be generalized: the i-th level contains $2 ^ { i }$ lists, each having approximately $n / 2 ^ { i }$ elements, and requires $\\mathcal { O } ( n )$ time to merge. Since there are $\\mathrm { l o g } _ { 2 }$ n levels in the recursion tree, MERGESORT therefore requires $\\mathcal { O } \\big ( n \\cdot \\log _ { 2 } n \\big )$ runtime overall, which offers a speedup over naive $\\mathcal { O } \\big ( n ^ { 2 } \\big )$ sorting algorithms."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.182,
+            0.336,
+            0.8,
+            0.658
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  subgraph Left Branch\n    direction TB\n  A[\"divide\"] --> B[\"9\"]\n  A --> C[\"4\"]\n  A --> D[\"7\"]\n  A --> E[\"6\"]\n  F[\"divide\"] --> G[\"9\"]\n  F --> H[\"4\"]\n  G --> I[\"9\"]\n  H --> J[\"4\"]\n  I --> K[\"7\"]\n  J --> L[\"6\"]\n  M[\"conquer\"] --> N[\"4\"]\n  M --> O[\"9\"]\n  N --> P[\"4\"]\n  O --> Q[\"6\"]\n  P --> R[\"7\"]\n  Q --> S[\"9\"]\n  R --> T[\"conquer\"]\n  end\n\n  subgraph Right Branch\n    direction TB\n  B --> U[\"1\"]\n  U --> V[\"3\"]\n  U --> W[\"8\"]\n  U --> X[\"5\"]\n  V --> Y[\"1\"]\n  W --> Z[\"3\"]\n  X --> AA[\"8\"]\n  Y --> AB[\"5\"]\n  Z --> AC[\"5\"]\n  AA --> AD[\"8\"]\n  AB --> AE[\"5\"]\n  AC --> AF[\"5\"]\n  AD --> AG[\"8\"]\n  AE --> AH[\"5\"]\n  end\n\n  style Left Branch fill:#f9f,stroke:#333,stroke-width:2px\n  style Right Branch fill:#f9f,stroke:#333,stroke-width:2px\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.154,
+                0.674,
+                0.808,
+                0.743
+              ],
+              "content": "FIGURE 5.36 The recursion tree for sorting an 8-element list with MERGESORT. The divide (upper) steps consist of $\\log _ { 2 } 8 = 3$ levels, where the input list is split into smaller and smaller sublists. The conquer (lower) steps consist of the same number of levels, as the sorted sublists are merged back together."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_313_image_2.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.102,
+            0.793,
+            0.344,
+            0.813
+          ],
+          "level": 2,
+          "content": "Scoring multiple alignments"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.824,
+            0.862,
+            0.909
+          ],
+          "content": "The choice of scoring function can drastically affect the quality of a multiple alignment. In the main chapter, we described a way to score t-way alignments by using a tdimensional scoring matrix. Below, we describe more practical approaches to scoring alignments."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.464,
+            0.944,
+            0.498,
+            0.96
+          ],
+          "content": ""
+        }
+      ]
+    },
+    {
+      "page_idx": 314,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.256,
+            0.082
+          ],
+          "content": "C H A P T E R 5"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.112,
+            0.895,
+            0.237
+          ],
+          "content": "The columns of a t-way alignment describe a path in a t-dimensional alignment graph whose edge weights are defined by the scoring function. Using the statistically motivated entropy score, the score of a multiple alignment is defined as the sum of the entropies of its columns. Recall from Chapter 2 that the entropy of a column is equal to $\\begin{array} { r } { - \\sum p _ { x } \\cdot \\log _ { 2 } p _ { x } } \\end{array}$ , where the sum is taken over all symbols x present in the column, and $p _ { x }$ is the frequency of symbol x in the column."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.24,
+            0.897,
+            0.345
+          ],
+          "content": "In Chapter 2, we saw that more highly conserved columns will have lower entropy scores. Because we wish to maximize the alignment score, we use the negative of entropy in order to ensure that more highly conserved columns receive higher scores. Finding a longest path in the t-dimensional alignment graph therefore corresponds to finding a multiple alignment with minimal entropy."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.347,
+            0.895,
+            0.43
+          ],
+          "content": "Another popular scoring approach is the **Sum-of-Pairs score** (**SP-score**). A multiple alignment Alignment of t sequences induces a pairwise alignment between the i-th and j-th sequences, having score $s ( A l i g n m e n t , i , j )$ . The SP-score for a multiple alignment simply adds the scores of each induced pairwise alignment:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.295,
+            0.45,
+            0.735,
+            0.489
+          ],
+          "content": "\\text {SP - SCORE} (\\text {Alignment}) = \\sum_ {1 \\leq i <   j \\leq t} s (\\text {Alignment}, i, j).",
+          "image_source": "images/page_314_equation_4.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.041,
+            0.511,
+            0.102,
+            0.557
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_314_image_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.512,
+            0.869,
+            0.554
+          ],
+          "content": "**EXERCISE BREAK:** Compute the entropy score and SP-score of Marahiel’s 3-way alignment, reproduced below."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.203,
+            0.581,
+            0.837,
+            0.628
+          ],
+          "sub_type": "code",
+          "content": "```powershell\nYAFDLGYTCMFPVLLGGGELHIVQKETYTAPDEIAHYIKEHGITYIKLTPSLFHTIVNTA\n-AFDVSAGDFARALLTGGQLIVCPNEVKMDPASLYAIKKYDITIFEATPALVIPLMEYI\nIAFDASSWEIYAPLLNGGTVVCIDYYTTIDIKALEAVFKQHHIRGAMLPPALLKQCLVSA\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.204,
+            0.64,
+            0.753,
+            0.687
+          ],
+          "sub_type": "code",
+          "content": "```txt\nSFAFDANFESLRLIVLGGEKIIIPIDVIAFRKMYGHTE-FINHYGPTEATIGA-YEQKLDISQLQILIVGSDSCSMEDFKTLVSRFGSTIRIVNSYGVTEACIDS----PTMISSLEILFAAGDRLSSQDAILARRAVGSGV-Y-NAYGPTENTVLS\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.946,
+            0.534,
+            0.96
+          ],
+          "content": "290"
+        }
+      ]
+    },
+    {
+      "page_idx": 315,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.435,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.397,
+            0.112,
+            0.566,
+            0.132
+          ],
+          "level": 2,
+          "content": "Bibliography Notes"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.148,
+            0.861,
+            0.294
+          ],
+          "content": "Edit distance was introduced by Levenshtein, 1966. The local alignment algorithm described in the text was proposed by Smith and Waterman, 1981. When Doolittle et al., 1983 revealed the similarities between oncogenes and PDGF, they did not know about the Smith-Waterman algorithm. The 3-D structures of firefly luciferase and the A-domain from Bacilus brevis were published by Conti, Franks, and Brick, 1996 as well as Conti et al., 1997. The non-ribosomal code was first presented by Stachelhaus, Mootz, and Marahiel, 1999."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.718,
+            0.818,
+            0.856,
+            0.89
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_315_image_3.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.465,
+            0.946,
+            0.496,
+            0.96
+          ],
+          "content": "291"
+        }
+      ]
+    },
+    {
+      "page_idx": 316,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.029,
+            0.02,
+            0.855,
+            0.053
+          ],
+          "content": "ARE THERE FRA<ILE RECIONS IN THE HUMAN GENOME?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.029,
+            0.065,
+            0.377,
+            0.093
+          ],
+          "content": "Combinatorial Algorithms"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.0,
+            0.152,
+            0.891,
+            0.999
+          ],
+          "sub_type": "natural_image",
+          "content": "Illustration of a giant pyramid with molasses and a camel running on a cracked ground, surrounded by ancient pyramids and palm trees (no text or symbols)",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_316_image_2.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 317,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.278,
+            0.065,
+            0.858,
+            0.08
+          ],
+          "content": "A R E T H E R E F R A G I L E R E G I O N S I N T H E H U M A N G E N O M E ?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.402,
+            0.112,
+            0.561,
+            0.13
+          ],
+          "level": 2,
+          "content": "Of Mice and Men"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.148,
+            0.808,
+            0.21
+          ],
+          "content": "“I have further been told,” said the cat, “that you can also transform yourself into the smallest of animals, for example, a rat or a mouse. But I can scarcely believe that. I must admit to you that I think it would be quite impossible.”"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.218,
+            0.517,
+            0.239
+          ],
+          "content": "“Impossible!” cried the ogre. “You shall see!”"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.246,
+            0.808,
+            0.286
+          ],
+          "content": "He immediately changed himself into a mouse and began to run about the floor. As soon as the cat saw this, he fell upon him and ate him up."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.31,
+            0.542,
+            0.329
+          ],
+          "content": "How different are the human and mouse genomes?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.341,
+            0.861,
+            0.486
+          ],
+          "content": "When Charles Perrault described the transformation of an ogre into a mouse in “Puss in Boots”, he could hardly have anticipated that three centuries later, research would show that the human and mouse genomes are surprisingly similar. Nearly every human gene has a mouse counterpart, although mice greatly outperform us when it comes to the olfactory genes responsible for smell. We are essentially mice without tails — we even have the genes needed to make a tail, but these genes have been “silenced” during our evolution."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.491,
+            0.861,
+            0.574
+          ],
+          "content": "We started with a fairy tale question: “How can an ogre transform into a mouse?” Since we share most of the same genes with mice, we now ask a question about mammalian evolution: “What evolutionary forces have transformed the genome of the human-mouse ancestor into the present-day human and mouse genomes?”"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.576,
+            0.861,
+            0.723
+          ],
+          "content": "If a precocious child had grown out of reading fairy tales and wanted to learn about how the human and mouse genomes differ, then here is what we would tell her. You can cut the 23 human chromosomes into 280 pieces, shuffle these DNA fragments, and then glue the pieces together in a new order to form the 20 mouse chromosomes. The truth, however, is that evolution has not employed a single dramatic cut-and-paste operation; instead, it applies smaller changes known as **genome rearrangements**, which will be our focus in this chapter."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.725,
+            0.861,
+            0.852
+          ],
+          "content": "Unfortunately, our bioinformatics time machine won’t take us more than a few centuries into the past. If it did, we could travel 75 million years back in time, watching humans slowly change into a small, furry animal that lived with dinosaurs. Then, we could travel back to the present, watching how this animal evolved into the mouse. In this chapter, we hope to understand the genome rearrangements that have separated the human and mouse genomes without having to revamp our time machine."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.464,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": "293"
+        }
+      ]
+    },
+    {
+      "page_idx": 318,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.065,
+            0.259,
+            0.08
+          ],
+          "content": "C H A P T E R 6"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.014,
+            0.187,
+            0.107,
+            0.204
+          ],
+          "content": "PAGE 340"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.112,
+            0.271,
+            0.132
+          ],
+          "level": 2,
+          "content": "Synteny blocks"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.143,
+            0.897,
+            0.269
+          ],
+          "content": "To simplify genome comparison, we will first focus on the X chromosome, which is one of the two sex-determining chromosomes in mammals and has retained nearly all its genes throughout mammalian evolution (see **DETOUR: Why is the Gene Content of Mammalian X Chromosomes So Conserved?**). We can therefore view the X chromosome as a “mini-genome” when comparing mice to humans, since this chromosome’s genes have not jumped around onto different chromosomes (and vice-versa)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.271,
+            0.897,
+            0.378
+          ],
+          "content": "It turns out not only that most human genes have mouse counterparts, but also that hundreds of similar genes often line up one after another in the same order in the two species genomes. Each of the eleven colored segments in Figure 6.1 represents such a procession of similar genes and is called a **synteny block**. Later, we will explain how to construct synteny blocks and what the left and right **directions** of the blocks signify."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.193,
+            0.398,
+            0.851,
+            0.548
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"Unknown ancestor (~75 million years ago)\"] --> B[\"Mouse\"]\n  A --> C[\"Human\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.19,
+                0.563,
+                0.842,
+                0.598
+              ],
+              "content": "FIGURE 6.1 Mouse and human X chromosomes represented as eleven colored, directed segments (synteny blocks)."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_318_image_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.626,
+            0.897,
+            0.753
+          ],
+          "content": "Synteny blocks simplify the comparison of the mouse and human X chromosomes from about 150 million base pairs to only eleven units. This simplification is analogous to comparing two similar photographs. If we compare the images one pixel at a time, we may be overwhelmed by the scale of the problem; instead, we need to zoom out in order to notice higher-level patterns. It is no accident that biologists use the term “resolution” to discuss the level at which genomes are analyzed."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.776,
+            0.222,
+            0.793
+          ],
+          "level": 2,
+          "content": "Reversals"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.807,
+            0.897,
+            0.894
+          ],
+          "content": "You have probably been wondering how the genome changes when it undergoes a genome rearrangement. Genome rearrangements were discovered 90 years ago when Alfred Sturtevant was studying fruit fly mutants with scarlet- and peach-colored eyes as well as abnormally shaped deltoid wings. Sturtevant analyzed the genes coding"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.946,
+            0.534,
+            0.961
+          ],
+          "content": "294"
+        }
+      ]
+    },
+    {
+      "page_idx": 319,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.277,
+            0.065,
+            0.858,
+            0.08
+          ],
+          "content": "A R E T H E R E F R A G I L E R E G I O N S I N T H E H U M A N G E N O M E ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.112,
+            0.862,
+            0.281
+          ],
+          "continues_prev": true,
+          "content": "for these traits, called **scarlet**, **peach**, and **delta**, and he was amazed to find that the arrangement of these genes in Drosophila melanogaster (**scarlet**, **peach**, **delta**) differed from their arrangement in Drosophila simulans (**scarlet**, **delta**, **peach**). He immediately conjectured that the chromosomal segment containing **peach** and **delta** must have been flipped around (see **DETOUR: Discovery of Genome Rearrangements**). Sturtevant had witnessed the most common form of genome rearrangement, called a **reversal**, which flips around an interval of a chromosome and inverts the directions of any synteny blocks within the interval."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.283,
+            0.861,
+            0.43
+          ],
+          "content": "Figure 6.2 shows a series of seven reversals transforming the mouse X chromosome into the human X chromosome. If this scenario is correct, then the X chromosome of the human-mouse ancestor must be represented by one of the intermediate synteny block orderings. Unfortunately, this series of seven reversals offers only one of 1,070 different seven-step scenarios transforming the mouse X chromosome into the human X chromosome. We have no clue which scenario is correct, or even whether the correct scenario had exactly seven reversals."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.449,
+            0.833,
+            0.49
+          ],
+          "content": "**STOP and Think:** Can you convert the mouse X chromosome into the human X chromosome using only six reversals?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.513,
+            0.861,
+            0.66
+          ],
+          "content": "Regardless of how many reversals separate the human and mouse X chromosomes, reversals must be rare genomic events. Indeed, genome rearrangements typically cause the death or sterility of the mutated organism, thus preventing it from passing the rearrangement on to the next generation. However, a tiny fraction of genome rearrangements may have a positive effect on survival and propagate through a species as the result of natural selection. When a population becomes isolated from the rest of its species for long enough, rearrangements can even create a new species."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.684,
+            0.312,
+            0.703
+          ],
+          "level": 2,
+          "content": "Rearrangement hotspots"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.714,
+            0.861,
+            0.82
+          ],
+          "content": "Geology provides a thought-provoking analogy for thinking about genome evolution. You might like to think of genome rearrangements as “genomic earthquakes” that dramatically change the chromosomal architecture of an organism. Genome rearrangements contrast with much more frequent point mutations, which work slowly and are analogous to “genomic erosion”."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.821,
+            0.861,
+            0.884
+          ],
+          "content": "You can visualize a reversal as breaking the genome on both sides of a chromosomal interval, flipping the interval, and then gluing the resulting segments in a new order. Keeping in mind that earthquakes occur more frequently along fault lines, we wonder"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.871,
+            0.199,
+            0.964,
+            0.214
+          ],
+          "content": "PAGE 340"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.889,
+            0.44,
+            0.966,
+            0.5
+          ],
+          "content": "STOP"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.465,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": "295"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "DocHdl1OnVERSA-PPM01tmpTarget",
+      "created_at": "2015-08-17T16:48:25Z",
+      "modified_at": "2018-07-08T15:12:16-07:00",
+      "creator_application": "Prinect Printready",
+      "producer_application": "Mac OS X 10.10.4 Quartz PDFContext",
+      "page_count": 380,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 304,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 305,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 306,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 307,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 308,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 309,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 310,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 311,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 312,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 313,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 314,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 315,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 316,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 317,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 318,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 319,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

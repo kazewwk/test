@@ -1,0 +1,2011 @@
+{
+  "pages": [
+    {
+      "page_idx": 64,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.08
+          ],
+          "content": "C H A P T E R 1"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.036,
+            0.093,
+            0.104,
+            0.183
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_64_image_1.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.165,
+            0.108,
+            0.861,
+            0.127
+          ],
+          "level": 2,
+          "content": "CHARGING STATION (Converting Patterns Into Numbers and Vice-Versa):"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.129,
+            0.867,
+            0.168
+          ],
+          "content": "Check out this Charging Station to see how to implement PATTERNTONUMBER and NUMBERTOPATTERN."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.189,
+            0.895,
+            0.294
+          ],
+          "content": "The pseudocode below generates a frequency array by first initializing every element in the frequency array to zero $( 4 ^ { k }$ operations) and then making a single pass down Text (approximately $\\left| T e x t \\right| \\cdot k$ operations). For each k-mer Pattern that we encounter, we add 1 to the value of the frequency array corresponding to Pattern. As before, we refer to the k-mer beginning at position i of Text as Text $( i , k )$"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.031,
+            0.37,
+            0.11,
+            0.432
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_64_image_5.jpg"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.165,
+            0.316,
+            0.648,
+            0.493
+          ],
+          "sub_type": "code",
+          "content": "```python\nCOMPUTINGFREQUENCIES(Text, k)\n    for i ← 0 to 4^k - 1\n        FREQUENCYARRAY(i) ← 0\n    for i ← 0 to |Text| - k\n        Pattern ← Text(i, k)\n        j ← PATTERNNUMBER(Pattern)\n        FREQUENCYARRAY(j) ← FREQUENCYARRAY(j) + 1\n    return FREQUENCYARRAY\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.517,
+            0.895,
+            0.58
+          ],
+          "content": "We now have a faster algorithm for the Frequent Words Problem. After generating the frequency array, we can find all most frequent k-mers by simply finding all k-mers corresponding to the maximum element(s) in the frequency array."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.165,
+            0.602,
+            0.675,
+            0.794
+          ],
+          "sub_type": "code",
+          "content": "```python\nFASTERFREQUENTWORDS(Text, k)\n    FrequentPatterns ← an empty set\n    FREQUENCYARRAY ← COMPUTINGFREQUENCIES(Text, k)\n    maxCount ← maximal value in FREQUENCYARRAY\n    for i ← 0 to 4^k - 1\n        if FREQUENCYARRAY(i) = maxCount\n            Pattern ← NUMBERTOPATTERN(i, k)\n            add Pattern to the set FrequentPatterns\n    return FrequentPatterns\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.506,
+            0.946,
+            0.528,
+            0.961
+          ],
+          "content": "40"
+        }
+      ]
+    },
+    {
+      "page_idx": 65,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.268,
+            0.065,
+            0.858,
+            0.08
+          ],
+          "content": "W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.112,
+            0.834,
+            0.219
+          ],
+          "content": "**CHARGING STATION (Finding Frequent Words by Sorting):** Although **FASTERFREQUENTWORDS** is fast for small k (i.e., you can use it to find DnaA boxes in an oriC region), it becomes impractical when k is large. If you are familiar with sorting algorithms and are interested in seeing a faster algorithm, check out this Charging Station."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.246,
+            0.837,
+            0.351
+          ],
+          "content": "**EXERCISE BREAK:** Our claim that **FASTERFREQUENTWORDS** is faster than **FREQUENTWORDS** is only correct for certain values of |Text| and k. Estimate the running time of **FASTERFREQUENTWORDS** and characterize the values of |Text| and k when **FASTERFREQUENTWORDS** is indeed faster than **FREQUENTWORDS**."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.394,
+            0.498,
+            0.412
+          ],
+          "content": "Converting patterns to numbers and vice-versa"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.424,
+            0.862,
+            0.53
+          ],
+          "content": "Our approach to computing PATTERNTONUMBER(Pattern) is based on a simple observation. If we remove the final symbol from all lexicographically ordered k-mers, the resulting list is still ordered lexicographically (think about removing the final letter from every word in a dictionary). In the case of DNA strings, every (k \u0000 1)-mer in the resulting list is repeated four times (Figure 1.20)."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.217,
+            0.562,
+            0.744,
+            0.709
+          ],
+          "content": "| AAA | AAC | AAG | AAT | ACA | ACC | ACG | ACT |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| AGA | AGC | AGG | AGT | ATA | ATC | ATG | ATT |\n| CAA | CAC | CAG | CAT | CCA | CCC | CCG | CCT |\n| CGA | CGC | CGG | CGT | CTA | CTC | CTG | CTT |\n| GAA | GAC | GAG | GAT | GCA | GCC | GCG | GCT |\n| GGA | GGC | GGG | GGT | GTA | GTC | GTG | GTT |\n| TAA | TAC | TAG | TAT | TCA | TCC | TCG | TCT |\n| TGA | TGC | TGG | TGT | TTA | TTC | TTG | TTT |",
+          "captions": [
+            {
+              "bbox": [
+                0.155,
+                0.718,
+                0.808,
+                0.768
+              ],
+              "content": "FIGURE 1.20 If we remove the final symbol from all lexicographically ordered DNA 3-mers, we obtain a lexicographic order of (red) 2-mers, where each 2-mer is repeated four times."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_65_table_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.799,
+            0.862,
+            0.84
+          ],
+          "content": "Thus, the number of 3-mers occurring before **AG**T is equal to four times the number of 2-mers occurring before **AG** plus the number of 1-mers occurring before T. Therefore,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.102,
+            0.853,
+            0.861,
+            0.898
+          ],
+          "content": "\\begin{array}{l} \\text {PATTERNTONUMBER} (\\mathbf {A G T}) = 4 \\cdot \\text {PATTERNTONUMBER} (\\mathbf {A G}) + \\text {SYMBOLTONUMBER} (\\mathrm{T}) \\\\ = 8 + 3 = 1 1, \\\\ \\end{array}",
+          "image_source": "images/page_65_equation_8.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.892,
+            0.12,
+            0.964,
+            0.212
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_65_image_9.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.897,
+            0.276,
+            0.957,
+            0.321
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_65_image_10.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.469,
+            0.946,
+            0.492,
+            0.961
+          ],
+          "content": "41"
+        }
+      ]
+    },
+    {
+      "page_idx": 66,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.08
+          ],
+          "content": "C H A P T E R 1"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.014,
+            0.309,
+            0.126,
+            0.343
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_66_image_1.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.112,
+            0.895,
+            0.152
+          ],
+          "content": "where SYMBOLTONUMBER(symbol) is the function transforming symbols $\\mathbb { A } ,   \\mathbb { C } ,   \\mathbb { G } ,$ and T into the respective integers 0, 1, 2, and 3."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.154,
+            0.895,
+            0.216
+          ],
+          "content": "If we remove the final symbol of Pattern, denoted LASTSYMBOL(Pattern), then we will obtain a (k \u0000 1)-mer that we denote as PREFIX(Pattern). The preceding observation therefore generalizes to the formula"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.153,
+            0.233,
+            0.894,
+            0.282
+          ],
+          "content": "\\begin{array}{r l} \\text {PATTERNTONUMBER} (\\text {Pattern}) & = 4 \\cdot \\text {PATTERNTONUMBER} (\\text {PREFIX} (\\text {Pattern})) + \\\\ & \\quad \\text {SYMBOLTONUMBER} (\\text {LASTSYMBOL} (\\text {Pattern})). \\end{array} (*)",
+          "image_source": "images/page_66_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.296,
+            0.897,
+            0.357
+          ],
+          "content": "This equation leads to the following **recursive algorithm**, i.e., a program that calls itself. If you want to learn more about recursive algorithms, see **DETOUR: The Towers of Hanoi**."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.031,
+            0.414,
+            0.111,
+            0.476
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_66_image_6.jpg"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.165,
+            0.38,
+            0.783,
+            0.508
+          ],
+          "sub_type": "code",
+          "content": "```cmake\nPATTERNNUMBER(Pattern)\n    if Pattern contains no symbols\n        return 0\n    symbol ← LASTSYMBOL(Pattern)\n    Prefix ← PREFIX(Pattern)\n    return 4 · PATTERNNUMBER(Prefix) + SYMBOLNUMBER(symbol)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.532,
+            0.897,
+            0.638
+          ],
+          "content": "In order to compute the inverse function NUMBERTOPATTERN(index, k), we return to (\\*) above, which implies that when we divide index = PATTERNTONUMBER(Pattern) by 4, the remainder will be equal to SYMBOLTONUMBER(symbol), and the quotient will be equal to PATTERNTONUMBER(PREFIX(Pattern)). Thus, we can use this fact to peel away symbols at the end of Pattern one at a time, as shown in Figure 1.21."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.031,
+            0.647,
+            0.111,
+            0.707
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_66_image_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.656,
+            0.869,
+            0.698
+          ],
+          "content": "**STOP and Think:** Once we have computed NUMBERTOPATTERN(9904, 7) in Figure 1.21, how would you compute NUMBERTOPATTERN(9904, 8)?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.72,
+            0.897,
+            0.826
+          ],
+          "content": "In the pseudocode below, we denote the quotient and the remainder when dividing integer n by integer m as QUOTIENT $( n , m )$ and REMAINDER $( n , m )$ , respectively. For example, QUOTIENT $(11,4)  = 2$ and REMAINDER $( 11,4 ) =3.$ . This pseudocode uses the function NUMBERTOSYMBOL(index), which is the inverse of SYMBOLTONUMBER and transforms the integers 0, 1, 2, and 3 into the respective symbols $\\mathbb { A } ,   \\mathbb { C } ,   \\mathbb { G } ,$ and T."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.506,
+            0.947,
+            0.528,
+            0.96
+          ],
+          "content": "42"
+        }
+      ]
+    },
+    {
+      "page_idx": 67,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.268,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": "W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N ?"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.16,
+            0.11,
+            0.805,
+            0.264
+          ],
+          "content": "| n | QUOTIENT(n, 4) | REMAINDER(n, 4) | NUMBERTO SYMBOL |\n| --- | --- | --- | --- |\n| 9904 | 2476 | 0 | A |\n| 2476 | 619 | 0 | A |\n| 619 | 154 | 3 | T |\n| 154 | 38 | 2 | G |\n| 38 | 9 | 2 | G |\n| 9 | 2 | 1 | C |\n| 2 | 0 | 2 | G |",
+          "captions": [
+            {
+              "bbox": [
+                0.154,
+                0.285,
+                0.808,
+                0.387
+              ],
+              "content": "FIGURE 1.21 When computing Pattern = NUMBERTOPATTERN(9904, 7), we divide 9904 by 4 to obtain a quotient of 2476 and a remainder of 0. This remainder represents the final nucleotide of Pattern, or NUMBERTOSYMBOL(0) = A. We then iterate this process, dividing each subsequent quotient by 4, until we obtain a quotient of 0. The symbols in the nucleotide column, read upward from the bottom, yield Pattern = GCGGTAA."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_67_table_1.jpg"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.129,
+            0.425,
+            0.635,
+            0.598
+          ],
+          "sub_type": "code",
+          "content": "```python\nNUMBERTOPATTERN(index , k)\n    if k = 1\n        return NUMBERTOSYMBOL(index)\n    prefixIndex ← QUOTIENT(index, 4)\n    r ← REMAINDER(index, 4)\n    symbol ← NUMBERTOSYMBOL(r)\n    PrefixPattern ← NUMBERTOPATTERN(prefixIndex, k - 1)\n    return concatenation of PrefixPattern with symbol\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.634,
+            0.393,
+            0.653
+          ],
+          "level": 2,
+          "content": "Finding frequent words by sorting"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.664,
+            0.862,
+            0.749
+          ],
+          "content": "To see how sorting can help us find frequent k-mers, we will consider a motivating example when k = 2. Given a string Text = AAGCAAAGGTGGG, list all its 2-mers in the order they appear in Text, and convert each 2-mer into an integer using PATTERNTONUMBER to produce an array INDEX, as shown below."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.161,
+            0.765,
+            0.803,
+            0.806
+          ],
+          "content": "| 2-mer | AA | AG | GC | CA | AA | AA | AG | GG | GT | TG | GG | GG |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| INDEX | 0 | 2 | 9 | 4 | 0 | 0 | 2 | 10 | 11 | 14 | 10 | 10 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_67_table_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.82,
+            0.85,
+            0.84
+          ],
+          "content": "We will now sort INDEX to generate an array SORTEDINDEX, as shown in Figure 1.22."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.858,
+            0.833,
+            0.898
+          ],
+          "content": "**STOP and Think:** How can the sorted array in Figure 1.22 help us find frequent words?"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.889,
+            0.48,
+            0.967,
+            0.542
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_67_image_9.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.89,
+            0.847,
+            0.966,
+            0.908
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_67_image_10.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.469,
+            0.946,
+            0.493,
+            0.961
+          ],
+          "content": "43"
+        }
+      ]
+    },
+    {
+      "page_idx": 68,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.079
+          ],
+          "content": "C H A P T E R 1"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.164,
+            0.109,
+            0.87,
+            0.165
+          ],
+          "content": "| 2-mer | AA | AA | AA | AG | AG | CA | GC | GG | GG | GG | GT | TG |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| SORTEDINDEX | 0 | 0 | 0 | 2 | 2 | 4 | 9 | 10 | 10 | 10 | 11 | 14 |\n| COUNT | 1 | 2 | 3 | 1 | 2 | 1 | 1 | 1 | 2 | 3 | 1 | 1 |",
+          "captions": [
+            {
+              "bbox": [
+                0.19,
+                0.174,
+                0.84,
+                0.208
+              ],
+              "content": "FIGURE 1.22 Lexicographically sorted 2-mers in AAGCAAAGGTGG (top), along with arrays SORTEDINDEX (middle) and COUNT (bottom)."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_68_table_1.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.238,
+            0.897,
+            0.407
+          ],
+          "content": "Since identical k-mers clump together in the sorted array (like (0, 0, 0) for AA or (10, 10, 10) for GG in Figure 1.22), frequent k-mers are the longest runs of identical integers in SORTEDINDEX. This insight leads to **FINDINGFREQUENTWORDSBYSORTING**, whose pseudocode is shown below. This algorithm uses an array COUNT for which COUNT(i) computes the number of times that the integer at position i in the array SORTEDINDEX appears in the first i elements of this array (Figure 1.22 (bottom)). In the pseudocode for **FINDINGFREQUENTWORDSBYSORTING**, we assume that you already know how to sort an array using an algorithm **SORT**."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.164,
+            0.428,
+            0.692,
+            0.78
+          ],
+          "sub_type": "code",
+          "content": "```python\nFINDINGFREQUENTWORDSBYSORTING(Text , k)\n    FrequentPatterns ← an empty set\n    for i ← 0 to |Text| - k\n        Pattern ← Text(i, k)\n        INDEX(i) ← PATTERNNUMBER(Pattern)\n        COUNT(i) ← 1\n    SORTEDINDEX ← SORT(INDEX)\n    for i ← 1 to |Text| - k\n        if SORTEDINDEX(i) = SORTEDINDEX(i - 1)\n            COUNT(i) = COUNT(i - 1) + 1\n    maxCount ← maximum value in the array COUNT\n    for i ← 0 to |Text| - k\n        if COUNT(i) = maxCount\n            Pattern ← NUMBERTOPATTERN(SORTEDINDEX(i), k)\n            add Pattern to the set FrequentPatterns\n    return FrequentPatterns\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.036,
+            0.811,
+            0.107,
+            0.904
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_68_image_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.815,
+            0.442,
+            0.834
+          ],
+          "content": "Solving the Clump Finding Problem"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.847,
+            0.894,
+            0.888
+          ],
+          "content": "**Note:** This Charging Station assumes that you have read **CHARGING STATION: The Frequency Array**."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.506,
+            0.947,
+            0.528,
+            0.961
+          ],
+          "content": "44"
+        }
+      ]
+    },
+    {
+      "page_idx": 69,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.268,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": "W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.112,
+            0.862,
+            0.239
+          ],
+          "content": "The pseudocode below slides a window of length L down Genome. After computing the frequency array for the current window, it identifies $( L , t )$ -clumps simply by finding which k-mers occur at least t times within the window. To keep track of these clumps, our algorithm uses an array CLUMP of length $4 ^ { k }$ whose values are all initialized to zero. For each value of i between 0 and $4 ^ { k } - 1$ , we will set CLUMP(i) equal to 1 if NUMBERTOPATTERN $( i , k )$ forms an $( L , t )$ -clump in Genome."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.127,
+            0.259,
+            0.701,
+            0.59
+          ],
+          "sub_type": "algorithm",
+          "content": "CLUMPFINDING(Genome, k, t, L)\n    FrequentPatterns ← an empty set\n    for i ← 0 to $4^k - 1$\n        CLUMP(i) ← 0\n    for i ← 0 to |Genome| - L\n        Text ← the string of length L starting at position i in Genome\n        FREQUENCYARRAY ← COMPUTINGFREQUENCIES(Text, k)\n        for index ← 0 to $4^k - 1$\n            if FREQUENCYARRAY(index) ≥ t\n                CLUMP(index) ← 1\n    for i ← 0 to $4^k - 1$\n        if CLUMP(i) = 1\n            Pattern ← NUMBERTOPATTERN(i, k)\n            add Pattern to the set FrequentPatterns\n    return FrequentPatterns",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.13,
+            0.619,
+            0.733,
+            0.639
+          ],
+          "level": 2,
+          "content": "EXERCISE BREAK: Estimate the running time of CLUMPFINDING."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.662,
+            0.862,
+            0.77
+          ],
+          "content": "CLUMPFINDING makes $\\big | G e n o m e \\big | - L + 1$ iterations, generating a frequency array for a string of length L at each iteration. Since this task takes roughly $4 ^ { k } + L   .$ · k time, the overall running time of CLUMPFINDING is $\\mathcal { O } \\Big ( \\big | G e n o m e \\big | \\cdot \\big ( 4 ^ { k } + L \\cdot k \\big ) \\Big )$ . As a result, when searching for DnaA boxes $( k = 9 )$ in a typical bacterial genome (|Genome| $> 1 0 0 0 0 0 0 )$ **CLUMPFINDING** becomes too slow."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.79,
+            0.833,
+            0.832
+          ],
+          "content": "**STOP and Think:** Can you speed up **CLUMPFINDING** by eliminating the need to generate a new frequency array at every iteration?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.855,
+            0.861,
+            0.896
+          ],
+          "content": "To improve **CLUMPFINDING**, we observe that when we slide our window of length L one symbol to the right, the frequency array does not change much, and so regener-"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.889,
+            0.781,
+            0.965,
+            0.842
+          ],
+          "content": "STOP"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.469,
+            0.947,
+            0.493,
+            0.961
+          ],
+          "content": "45"
+        }
+      ]
+    },
+    {
+      "page_idx": 70,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.079
+          ],
+          "content": "C H A P T E R 1"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.112,
+            0.897,
+            0.281
+          ],
+          "continues_prev": true,
+          "content": "ating the frequency array from scratch is inefficient. For example, Figure 1.23 shows the frequency arrays (k = 2) for the 13-mers Text = **AA**GCAAAGGTGGG and Text<sup>0</sup> = AGCAAAGGTGG**GC** starting at positions 0 and 1 of the 14-mer **AA**GCAAAGGTGG**GC**. These two frequency arrays differ in only two elements corresponding to the first k-mer in Text (**AA**) and the last k-mer in Text’ (**GC**). Specifically, the frequency array value corresponding to the **first** k-mer of Text is **reduced** by 1 in the frequency array of Text’, and the frequency array value corresponding to the **last** k-mer of Text is **increased** by 1 in the frequency array of Text’."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.282,
+            0.895,
+            0.346
+          ],
+          "content": "This observation helps us modify **CLUMPFINDING** as shown below. Note that we now only call **COMPUTINGFREQUENCIES** once, updating the frequency array as we go along."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.165,
+            0.365,
+            0.731,
+            0.87
+          ],
+          "sub_type": "code",
+          "content": "```txt\nBETTERCLUMPFINDING(Genome, k, t, L)\n    FrequentPatterns ← an empty set\n    for i ← 0 to 4^k - 1\n        CLUMP(i) ← 0\n    Text ← Genome(0, L)\n    FREQUENCYARRAY ← COMPUTINGFREQUENCIES(Text, k)\n    for i ← 0 to 4^k - 1\n        if FREQUENCYARRAY(i) ≥ t\n            CLUMP(i) ← 1\n    for i ← 1 to |Genome| - L\n        FirstPattern ← Genome(i - 1, k)\n        index ← PATTERNNUMBER(FirstPattern)\n        FREQUENCYARRAY(index) ← FREQUENCYARRAY(index) - 1\n        LastPattern ← Genome(i + L - k, k)\n        index ← PATTERNNUMBER(LastPattern)\n        FREQUENCYARRAY(index) ← FREQUENCYARRAY(index) + 1\n        if FREQUENCYARRAY(index) ≥ t\n            CLUMP(index) ← 1\n    for i ← 0 to 4^k - 1\n        if CLUMP(i) = 1\n            Pattern ← NUMBERTOPATTERN(i, k)\n            add Pattern to the set FrequentPatterns\n    return FrequentPatterns\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.506,
+            0.944,
+            0.529,
+            0.961
+          ],
+          "content": "46"
+        }
+      ]
+    },
+    {
+      "page_idx": 71,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.268,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": "W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N ?"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.11,
+            0.835,
+            0.185
+          ],
+          "content": "| k-mer | AA | AC | AG | AT | CA | CC | CG | CT | GA | GC | GG | GT | TA | TC | TG | TT |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| INDEX | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 |\n| frequency | 3 | 0 | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 1 | 3 | 1 | 0 | 0 | 1 | 0 |\n| $frequency'$ | 2 | 0 | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 2 | 3 | 1 | 0 | 0 | 1 | 0 |",
+          "captions": [
+            {
+              "bbox": [
+                0.155,
+                0.194,
+                0.805,
+                0.228
+              ],
+              "content": "FIGURE 1.23 The frequency arrays for two consecutive substrings of length 13 starting at positions 0 and 1 of AAGCAAAGGTGGGC are very similar to each other."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_71_table_1.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.266,
+            0.562,
+            0.284
+          ],
+          "content": "Solving the Frequent Words with Mismatches Problem"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.297,
+            0.859,
+            0.338
+          ],
+          "content": "**Note:** This Charging Station uses some notation from **CHARGING STATION: The Frequency Array**."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.34,
+            0.86,
+            0.445
+          ],
+          "content": "To prevent having to generate all $4 ^ { k }   k { \\mathrm { - m e r s } }$ in order to solve the Frequent Words with Mismatches Problem, our goal is to consider only those k-mers that are **close** to a k-mer in Text, i.e., those with Hamming distance at most d from this k-mer. Given a k-mer Pattern, we therefore define its **d-neighborhood** NEIGHBORS(Pattern, d) as the set of all k-mers that are close to Pattern. For example, NEIGHBORS(ACG, 1) consists of ten 3-mers:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.469,
+            0.78,
+            0.487
+          ],
+          "content": "ACG CCG GCG TCG AAG AGG ATG ACA ACC ACT"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.13,
+            0.51,
+            0.704,
+            0.53
+          ],
+          "content": "**EXERCISE BREAK:** Estimate the size of NEIGHBORS(Pattern, d)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.552,
+            0.86,
+            0.659
+          ],
+          "content": "We will also use an array CLOSE of size $4 ^ { k }$ whose values we initialize to zero. In the **FREQUENTWORDSWITHMISMATCHES** pseudocode below, we set CLOSE(i) = 1 whenever Pattern = NUMBERTOPATTERN(i, k) is close to some k-mer in Text. This allows us to apply **APPROXIMATEPATTERNCOUNT** only to close k-mers, a smarter approach than applying it to all k-mers."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.677,
+            0.833,
+            0.761
+          ],
+          "content": "**CHARGING STATION (Generating the Neighborhood of a String): FREQUENTWORDSWITHMISMATCHES** also calls **NEIGHBORS**(Pattern, d), a function that generates the d-neighborhood of a k-mer Pattern. Check out this Charging Station to learn how to implement this function."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.789,
+            0.833,
+            0.895
+          ],
+          "content": "**STOP and Think:** Although **FREQUENTWORDSWITHMISMATCHES** is faster than the naive algorithm described in the main text for the typical parameters used in oriC searches, it is not necessarily faster for all parameter values. For which parameter values is **FREQUENTWORDSWITHMISMATCHES** slower than the naive algorithm?"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.892,
+            0.263,
+            0.962,
+            0.354
+          ],
+          "content": "PAGE 39"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.892,
+            0.675,
+            0.962,
+            0.765
+          ],
+          "content": "PAGE 49"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.889,
+            0.812,
+            0.966,
+            0.873
+          ],
+          "content": "STOP"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.469,
+            0.946,
+            0.493,
+            0.961
+          ],
+          "content": "47"
+        }
+      ]
+    },
+    {
+      "page_idx": 72,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.079
+          ],
+          "content": "C H A P T E R 1"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.036,
+            0.577,
+            0.107,
+            0.667
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_72_image_1.jpg"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.164,
+            0.11,
+            0.859,
+            0.551
+          ],
+          "sub_type": "code",
+          "content": "```python\nFREQUENTWORDSWITHMISMATCHES(Text, k, d)\n    FrequentPatterns ← an empty set\n    for i ← 0 to 4^k - 1\n        CLOSE(i) ← 0\n        FREQUENCYARRAY ← 0\n    for i ← 0 to |Text| - k\n        Neighborhood ← NEIGHBORS(Text(i, k), d)\n        for each Pattern from Neighborhood\n            index ← PATTERNNUMBER(Pattern)\n            CLOSE(index) ← 1\n    for i ← 0 to 4^k - 1\n        if CLOSE(i) = 1\n            Pattern ← NUMBERTOPATTERN(i, k)\n            FREQUENCYARRAY(i) ← APPROXIMATEPATTERNCOUNT(Text, Pattern, d)\n    maxCount ← maximal value in FREQUENCYARRAY\n    for i ← 0 to 4^k - 1\n        if FREQUENCYARRAY(i) = maxCount\n            Pattern ← NUMBERTOPATTERN(i, k)\n            add Pattern to the set FrequentPatterns\n    return FrequentPatterns\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.579,
+            0.87,
+            0.663
+          ],
+          "content": "**CHARGING STATION (Finding Frequent Words with Mismatches by Sorting):** If you are familiar with sorting and are interested in seeing an even faster algorithm for the Frequent Words with Mismatches Problem, check out this Charging Station."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.506,
+            0.944,
+            0.528,
+            0.961
+          ],
+          "content": "48"
+        }
+      ]
+    },
+    {
+      "page_idx": 73,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.268,
+            0.065,
+            0.858,
+            0.08
+          ],
+          "content": "W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N ?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.112,
+            0.445,
+            0.132
+          ],
+          "level": 2,
+          "content": "Generating the neighborhood of a string"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.143,
+            0.86,
+            0.207
+          ],
+          "content": "Our goal is to generate the d-neighborhood NEIGHBORS(Pattern, d), the set of all k-mers whose Hamming distance from Pattern does not exceed d. We will first generate the 1-neigborhood of Pattern using the following pseudocode."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.129,
+            0.227,
+            0.731,
+            0.4
+          ],
+          "sub_type": "algorithm",
+          "content": "IMMEDIATENEIGHBORS(Pattern)\n    Neighborhood ← the set consisting of the single string Pattern\n    for i = 1 to |Pattern|\n        symbol ← i-th nucleotide of Pattern\n        for each nucleotide x different from symbol\n            Neighbor ← Pattern with the i-th nucleotide substituted by x\n            add Neighbor to Neighborhood\n    return Neighborhood",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.425,
+            0.86,
+            0.489
+          ],
+          "content": "Our idea for generating NEIGHBORS(Pattern, d) is as follows. If we remove the first symbol of Pattern (denoted FIRSTSYMBOL(Pattern)), then we will obtain a (k \u0000 1)-mer that we denote by SUFFIX(Pattern)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.507,
+            0.833,
+            0.548
+          ],
+          "content": "**STOP and Think:** If we know NEIGHBORS(SUFFIX(Pattern), d), how does it help us construct NEIGHBORS(Pattern, d)?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.57,
+            0.861,
+            0.717
+          ],
+          "content": "Now, consider a (k \u0000 1)-mer Pattern’ belonging to NEIGHBORS(SUFFIX(Pattern), d). By the definition of the d-neighborhood NEIGHBORS(SUFFIX(Pattern), d), we know that HAMMINGDISTANCE(Pattern<sup>0</sup>, SUFFIX(Pattern)) is either equal to d or less than d. In the first case, we can add FIRSTSYMBOL(Pattern) to the beginning of Pattern in order to obtain a k-mer belonging to NEIGHBORS(Pattern, d). In the second case, we can add any symbol to the beginning of Pattern’ and obtain a k-mer belonging to NEIGHBORS(Pattern, d)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.72,
+            0.859,
+            0.78
+          ],
+          "content": "In the following pseudocode for **NEIGHBORS**, we use the notation symbol • Text to denote the concatenation of a character symbol and a string Text, e.g., A • GCATG = AGCATG."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.89,
+            0.497,
+            0.966,
+            0.559
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_73_image_8.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.469,
+            0.946,
+            0.493,
+            0.961
+          ],
+          "content": "49"
+        }
+      ]
+    },
+    {
+      "page_idx": 74,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.08
+          ],
+          "content": "C H A P T E R 1"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.032,
+            0.238,
+            0.111,
+            0.301
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_74_image_1.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.032,
+            0.498,
+            0.11,
+            0.56
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_74_image_2.jpg"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.164,
+            0.115,
+            0.689,
+            0.427
+          ],
+          "sub_type": "code",
+          "content": "```python\nNEIGHBORS(Pattern, d)\n    if d = 0\n        return {Pattern}\n    if |Pattern| = 1\n        return {A, C, G, T}\n    Neighborhood ← an empty set\n    SuffixNeighbors ← NEIGHBORS(SUFFIX(Pattern), d)\n    for each string Text from SuffixNeighbors\n        if HAMMINGDISTANCE(SUFFIX(Pattern), Text) < d\n            for each nucleotide x\n                add x • Text to Neighborhood\n        else\n            add FIRSTSYMBOL(Pattern) • Text to Neighborhood\n    return Neighborhood\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.457,
+            0.631,
+            0.476
+          ],
+          "content": "**STOP and Think:** Consider the following questions."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.189,
+            0.49,
+            0.868,
+            0.586
+          ],
+          "sub_type": "text",
+          "content": "1. What is the running time of **NEIGHBORS**?\n2. **NEIGHBORS** generates all k-mers of Hamming distance at most d from Pattern. Modify **NEIGHBORS** to generate all k-mers of Hamming distance exactly d from Pattern."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.621,
+            0.895,
+            0.662
+          ],
+          "content": "If you are still learning how recursive algorithms (like **NEIGHBORS**) work, you may want to implement an iterative version of **NEIGHBORS** instead, shown below."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.165,
+            0.685,
+            0.725,
+            0.835
+          ],
+          "sub_type": "code",
+          "content": "```python\nITERATIVENEIGHBORS(Pattern, d)\n    Neighborhood ← set consisting of single string Pattern\n    for j = 1 to d\n        for each string Pattern' in Neighborhood\n            add IMMEDIATEVENEIGHBORS(Pattern') to Neighborhood\n            remove duplicates from Neighborhood\n    return Neighborhood\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.506,
+            0.946,
+            0.528,
+            0.961
+          ],
+          "content": "50"
+        }
+      ]
+    },
+    {
+      "page_idx": 75,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.268,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": "W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.112,
+            0.538,
+            0.132
+          ],
+          "content": "Finding frequent words with mismatches by sorting"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.143,
+            0.859,
+            0.184
+          ],
+          "content": "**Note:** This Charging Station uses some notation from **CHARGING STATION: Finding Frequent Words by Sorting**."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.186,
+            0.858,
+            0.227
+          ],
+          "content": "The following pseudocode reduces the Frequent Words with Mismatches Problem to sorting."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.129,
+            0.248,
+            0.793,
+            0.689
+          ],
+          "sub_type": "code",
+          "content": "```txt\nFINDINGFREQUENTWORDSWITHMISMATCHESBYSORTING(Text, k, d)\n    FrequentPatterns ← an empty set\n    Neighborhoods ← an empty list\n    for i ← 0 to |Text| - k\n        add NEIGHBORS(Text(i, k), d) to Neighborhoods\n    form an array NEIGHBORHOODARRAY holding all strings in Neighborhoods\n    for i ← 0 to |Neighborhoods| - 1\n        Pattern ← NEIGHBORHOODARRAY(i)\n        INDEX(i) ← PATTERNNUMBER(Pattern)\n        COUNT(i) ← 1\n    SORTEDINDEX ← SORT(INDEX)\n    for i ← 0 to |Neighborhoods| - 1\n        if SORTEDINDEX(i) = SORTEDINDEX(i + 1)\n            COUNT(i + 1) ← COUNT(i) + 1\n    maxCount ← maximum value in array COUNT\n    for i ← 0 to |Neighborhoods| - 1\n        if COUNT(i) = maxCount\n            Pattern ← NUMBERTOPATTERN(SORTEDINDEX(i), k)\n            add Pattern to FrequentPatterns\n    return FrequentPatterns\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.892,
+            0.108,
+            0.962,
+            0.2
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_75_image_5.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.47,
+            0.947,
+            0.491,
+            0.96
+          ],
+          "content": "51"
+        }
+      ]
+    },
+    {
+      "page_idx": 76,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.079
+          ],
+          "content": "C H A P T E R 1"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.48,
+            0.113,
+            0.553,
+            0.13
+          ],
+          "level": 2,
+          "content": "Detours"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.149,
+            0.27,
+            0.167
+          ],
+          "level": 2,
+          "content": "Big-O notation"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.18,
+            0.897,
+            0.283
+          ],
+          "content": "Computer scientists typically measure an algorithm’s efficiency in terms of its **worstcase running time**, which is the largest amount of time an algorithm can take for the most difficult input of a given size. The advantage to considering the worst-case running time is that we are guaranteed that our algorithm will never behave worse than our worst-case estimate."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.286,
+            0.897,
+            0.519
+          ],
+          "content": "**Big-O notation** compactly describes the running time of an algorithm. For example, if your algorithm for sorting an array of n numbers takes roughly $n ^ { 2 }$ operations for the most difficult dataset, then we say that the running time of your algorithm is $\\mathcal { O } \\big ( n ^ { 2 } \\big )$ In reality, depending on your implementation, it may use any number of operations, such as $1 . 5 n ^ { 2 } ,   n ^ { 2 } + n + 2 ,$ or $0 . 5 n ^ { 2 } + 1 ;$ all these algorithms are $\\mathcal { O } \\big ( n ^ { 2 } \\big )$ because big-O notation only cares about the term that grows the fastest with respect to the size of the input. This is because as n grows very large, the difference in behavior between two $\\mathcal { O } \\big ( n ^ { 2 } \\big )$ functions, like $9 9 9 \\cdot n ^ { 2 }$ and $n ^ { 2 } + 3 n + 9 9 9 9 9 9 9 ,$ , is negligible when compared to the behavior of functions from different classes, say $\\mathcal { O } \\big ( n ^ { 2 } \\big )$ and $\\mathcal { O } \\big ( n ^ { 6 } \\big )$ . Of course, we would prefer an algorithm requiring $1 / 2 \\cdot n ^ { 2 }$ steps to an algorithm requiring $1 0 0 0 \\cdot n ^ { 2 }$ steps."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.52,
+            0.895,
+            0.605
+          ],
+          "content": "When we write that the running time of an algorithm is $\\mathcal { O } \\big ( n ^ { 2 } \\big )$ , we technically mean that it does not grow faster than a function with a leading term of $\\left[ c \\cdot n ^ { 2 } \\right]$ , for some constant c. Formally, a function $f ( n )$ is Big-O of function $g ( n )$ , or $\\mathcal { O } ( g ( n ) )$ , when $f ( n ) \\leq c \\cdot g ( n )$ for some constant c and sufficiently large n."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.626,
+            0.431,
+            0.646
+          ],
+          "level": 2,
+          "content": "Probabilities of patterns in a string"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.657,
+            0.895,
+            0.783
+          ],
+          "content": "We mentioned that the probability that some 9-mer appears 3 or more times in a random DNA string of length 500 is approximately 1/1300. We assure you that this calculation does not appear out of thin air. Specifically, we can generate a **random string** modeling a DNA strand by choosing each nucleotide for any position with probability $1 / 4 .$ . The construction of random strings can be generalized to an arbitrary alphabet with A symbols, where each symbol is chosen with probability $1 / A$"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.041,
+            0.801,
+            0.102,
+            0.845
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_76_image_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.802,
+            0.867,
+            0.843
+          ],
+          "content": "**EXERCISE BREAK:** What is the probability that two randomly generated strings of length n in an A-letter alphabet are identical?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.866,
+            0.897,
+            0.909
+          ],
+          "content": "We now ask a simple question: what is the probability that a specific k-mer Pattern will appear (at least once) as a substring of a random string of length N? For example,"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.506,
+            0.947,
+            0.528,
+            0.96
+          ],
+          "content": "52"
+        }
+      ]
+    },
+    {
+      "page_idx": 77,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.268,
+            0.065,
+            0.858,
+            0.08
+          ],
+          "content": "W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.113,
+            0.862,
+            0.154
+          ],
+          "continues_prev": true,
+          "content": "say that we want to find the probability that \"01\" appears in a random **binary string** (A = 2) of length 4. Here are all possible such strings."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.275,
+            0.165,
+            0.686,
+            0.207
+          ],
+          "content": "| 0000 | 0001 | 0010 | 0011 | 0100 | 0101 | 0110 | 0111 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 1000 | 1001 | 1010 | 1011 | 1100 | 1101 | 1110 | 1111 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_77_table_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.218,
+            0.862,
+            0.281
+          ],
+          "content": "Because \"01\" is a substring of 11 of these 4-mers, and because each 4-mer could be generated with probability 1/16, the probability that \"01\" appears in a random binary 4-mer is 11/16."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.299,
+            0.837,
+            0.341
+          ],
+          "content": "**STOP and Think:** What is the probability that $P a t t e r n = 1 1$ appears as a substring of a random binary 4-mer?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.364,
+            0.862,
+            0.406
+          ],
+          "content": "Surprisingly, changing Pattern from \"01\" to \"11\" changes the probability that it appears as a substring of a random binary string. Indeed, \"**11**\" appears in only 8 binary 4-mers:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.275,
+            0.416,
+            0.686,
+            0.46
+          ],
+          "content": "| 0000 | 0001 | 0010 | 0011 | 0100 | 0101 | 0110 | 0111 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 1000 | 1001 | 1010 | 1011 | 1100 | 1101 | 1110 | 1111 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_77_table_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.47,
+            0.862,
+            0.51
+          ],
+          "content": "As a result, the probability of \"11\" appearing in a random binary string of length 4 is $8 / 1 6 = 1 / 2$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.53,
+            0.835,
+            0.572
+          ],
+          "content": "**STOP and Think:** Why do you think that \"11\" is less likely than \"01\" to appear as a substring of a random binary 4-mer?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.594,
+            0.862,
+            0.763
+          ],
+          "content": "Let $\\operatorname* { P r } \\bigl ( N , A , P a t t e r n , t \\bigr )$ denote the probability that a string Pattern appears t or more times in a random string of length N formed from an alphabet of A letters. We saw that $Pr(4,2, 01,1)  = 11/16$ while $Pr(4,2, 11,1)  = 1/2$ . Interestingly, when we make t greater than 1, we see that \"01\" is less likely to appear multiple times than \"11\". For example, the probability of finding \"01\" twice or more in a random binary 4-mer is given by $Pr(4,2, 01,2) =1/16$ because \"0101\" is the only binary 4-mer containing \"01\" twice, and yet $Pr(4,2, 11,2) = 3/16$ because binary 4-mers \"0111\", \"1110\" and \"1111\" all have at least two occurrences of \"11\"."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.13,
+            0.786,
+            0.569,
+            0.807
+          ],
+          "content": "**EXERCISE BREAK:** Compute Pr(100, 2, \"01\", 1)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.829,
+            0.862,
+            0.892
+          ],
+          "content": "We have seen that different k-mers have different probabilities of occurring multiple times as a substring of a random string. In general, this phenomenon is called the **overlapping words paradox** because different substring occurrences of Pattern can"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.889,
+            0.29,
+            0.967,
+            0.352
+          ],
+          "content": "STOP"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.889,
+            0.521,
+            0.967,
+            0.582
+          ],
+          "content": "STOP"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.469,
+            0.947,
+            0.493,
+            0.961
+          ],
+          "content": "53"
+        }
+      ]
+    },
+    {
+      "page_idx": 78,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.08
+          ],
+          "content": "C H A P T E R 1"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.014,
+            0.111,
+            0.096,
+            0.13
+          ],
+          "content": "PAGE 62"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.112,
+            0.895,
+            0.152
+          ],
+          "continues_prev": true,
+          "content": "overlap each other for some choices of Pattern but not others (see **DETOUR: The Overlapping Words Paradox**)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.154,
+            0.895,
+            0.302
+          ],
+          "content": "For example, there are two overlapping occurrences of $``11$ in $`` 1110 '' ,$ , and three overlapping occurrences of $``11$ in \"1111\"; yet occurrences of \"01\" can never overlap with each other, and so \"01\" can never occur more than twice in a binary 4-mer. The overlapping words paradox makes computing $\\operatorname* { P r } \\bigl ( N , A , P a t t e r n , t \\bigr )$ a rather complex problem because this probability depends heavily on the particular choice of Pattern. In light of the complications presented by the overlapping words paradox, we will try to approximate $\\operatorname* { P r } \\bigl ( A , N , P a t t e r n , t \\bigr )$ rather than compute it exactly."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.304,
+            0.895,
+            0.429
+          ],
+          "content": "To approximate $\\operatorname* { P r } \\bigl ( N , A , P a t t e r n , t \\bigr )$ , we will assume that the k-mer Pattern is not overlapping. As a toy example, say we we wish to count the number of **ternary strings** $( A = 3 )$ of length $7$ that contain \"01\" at least twice. Apart from the two occurrences of $01$ , we have three remaining symbols in the string. Let’s assume that these symbols are all $^ { \\cdot \\cdot } 2 ^ { \\cdot \\cdot }$ . The two occurrences of \"**01**\" can be inserted into \"222\" in ten different ways to form a $7 \\mathrm { - m e r } ,$ as shown below."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.269,
+            0.441,
+            0.763,
+            0.485
+          ],
+          "content": "| 0101222 | 0120122 | 0122012 | 0122201 | 2010122 |\n| --- | --- | --- | --- | --- |\n| 2012012 | 2012201 | 2201012 | 2201201 | 2220101 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_78_table_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.495,
+            0.895,
+            0.601
+          ],
+          "content": "We inserted these two occurrences of $01$ into \"222\", but we could have inserted them into any other ternary 3-mer. Because there are $3 ^ { 3 } = 2 7$ ternary 3-mers, we obtain an approximation of $1 0 \\cdot 2 7 = 2 7 0$ for the number of ternary 7-mers that contain two or more instances of \"01\". Because there are $3 ^ { 7 } = 2 1 8 7$ ternary $7 - \\mathrm { m e r s } ,$ we estimate the probability $Pr (7,3, 01,2)$ as 270/2187."
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.031,
+            0.61,
+            0.11,
+            0.671
+          ],
+          "content": "STOP"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.619,
+            0.869,
+            0.661
+          ],
+          "content": "**STOP and Think:** Is 270/2187 a good approximation for $Pr(7,3, 01,2)?$ Is the true probability $Pr (7,3, 01,2)$ larger or smaller than 270/2187?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.684,
+            0.897,
+            0.81
+          ],
+          "content": "To generalize the above method to approximate $\\operatorname* { P r } \\bigl ( N , A , P a t t e r n , t \\bigr )$ for arbitrary parameter values, consider a string Text of length N having at least t occurrences of a k-mer Pattern. If we select exactly t of these occurrences, then we can think about Text as a sequence of $n = N - t \\cdot k$ symbols interrupted by t insertions of the k-mer Pattern. If we fix these n symbols, then we wish to count the number of different strings Text that can be formed by inserting t occurrences of Pattern into a string formed by these n symbols."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.812,
+            0.895,
+            0.872
+          ],
+          "content": "For example, consider again the problem of embedding two occurrences of $01$ into $222 \\left( n = 3 \\right)$ , and note that we have added five copies of a capital $\\mathrm { { \\bf X } }$ below each 7-mer."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.505,
+            0.946,
+            0.528,
+            0.961
+          ],
+          "content": "54"
+        }
+      ]
+    },
+    {
+      "page_idx": 79,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.268,
+            0.065,
+            0.858,
+            0.08
+          ],
+          "content": "W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N ?"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.233,
+            0.106,
+            0.728,
+            0.193
+          ],
+          "content": "| 0101222 | 0120122 | 0122012 | 0122201 | 2010122 |\n| --- | --- | --- | --- | --- |\n| X X XXX | X XX XX | X XXX X | X XXXX | XX X XX |\n| 2012012 | 2012201 | 2201012 | 2201201 | 2220101 |\n| XX XX X | XX XXX | XXX X X | XXX XX | XXXX X |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_79_table_1.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.204,
+            0.862,
+            0.264
+          ],
+          "content": "What do the $\\mathrm { { } ^ { \\prime } X ^ { \\prime \\prime } }$ mean? Instead of counting the number of ways to insert two occurrences of \"01\" into \"222\", we can count the number of ways to select two of the five $\\mathrm { { \\bf X } }$ to color blue."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.326,
+            0.278,
+            0.635,
+            0.295
+          ],
+          "content": "**XX**XXX XXXXX XXXXX XXXXX X**XX**XX"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.329,
+            0.304,
+            0.634,
+            0.32
+          ],
+          "content": "XXXXX XXXXX XX**XX**X XXXXX XXX**XX**"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.332,
+            0.861,
+            0.415
+          ],
+          "content": "In other words, we are counting the number of ways to choose 2 out of 5 objects, which can be counted by the binomial coefficient ${ \\binom { 5 } { 2 } }   =   1 0 .$ . More generally, the binomial coefficient ${m \\choose k}$ represents the number of ways to choose k out of m objects and is equal to $m! \\big/ k! \\big(m - k\\big)$ !"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.434,
+            0.837,
+            0.476
+          ],
+          "content": "**STOP and Think:** How many ways are there to implant t instances of a (nonoverlapping) k-mer into a string of length n to produce a string of length $n + t \\cdot k ?$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.498,
+            0.862,
+            0.646
+          ],
+          "content": "To approximate $\\operatorname* { P r } \\bigl ( N , A , P a t t e r n , t \\bigr )$ , we want to count the number of ways to insert t instances of a k-mer Pattern into a fixed string of length $n = N - t \\cdot k .$ We will therefore have $n + t$ occurrences of $\\mathrm { { \\bf X } }$ , from which we must select t for the placements of Pattern, giving a total of ${ \\binom { n + t } { t } }$ . We then need to multiply ${ \\binom { n + t } { t } }$ by the number of strings of length n into which we can insert t instances of Pattern to have an approximate total of ${ \\binom { n + t } { t } } \\cdot A ^ { n }$ (the actual number will be smaller because of over-counting). Dividing by the number of strings of length N, we have our desired approximation,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.272,
+            0.657,
+            0.693,
+            0.701
+          ],
+          "content": "\\Pr (N, A, P a t t e r n, t) \\approx \\frac {\\binom {n + t} {t} \\cdot A ^ {n}}{A ^ {N}} = \\frac {\\binom {N - t \\cdot (k - 1)} {t}}{A ^ {t \\cdot k}}.",
+          "image_source": "images/page_79_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.711,
+            0.862,
+            0.773
+          ],
+          "content": "We will now compute the probability that the specific 5-mer ACTAT occurs at least $t = 3$ times in a random DNA string $( A = 4 )$ of length $N = 3 0$ . Since $n = N - t \\cdot k = 1 5$ our estimated probability is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.215,
+            0.784,
+            0.748,
+            0.827
+          ],
+          "content": "\\Pr (3 0, 4, \\text {ACTAT}, 3) \\approx \\frac {\\binom {3 0 - 3 \\cdot 4} {3}}{4 ^ {1 5}} = \\frac {8 1 6}{1 0 7 3 7 4 1 8 2 4} \\approx 7. 5 9 9 \\cdot 1 0 ^ {- 7}.",
+          "image_source": "images/page_79_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.839,
+            0.861,
+            0.902
+          ],
+          "content": "The exact probability is closer to $7 . 5 7 2 \\cdot 1 0 ^ { - 7 }$ , illustrating that our approximation is relatively accurate for non-overlapping patterns. However, it becomes inaccurate for overlapping patterns, e.g., $\\operatorname* { P r } \\bigl ( 3 0 , 4 , \\mathbb { A } \\mathbb { A } \\mathbb { A } \\mathbb { A } , 3 \\bigr ) \\approx 1 . 1 4 8 \\cdot 1 0 ^ { - 3 }$"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.889,
+            0.425,
+            0.967,
+            0.486
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_79_image_12.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.469,
+            0.947,
+            0.493,
+            0.961
+          ],
+          "content": "55"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "DocHdl1OnVERSA-PPM01tmpTarget",
+      "created_at": "2015-08-17T16:48:25Z",
+      "modified_at": "2018-07-08T15:12:16-07:00",
+      "creator_application": "Prinect Printready",
+      "producer_application": "Mac OS X 10.10.4 Quartz PDFContext",
+      "page_count": 380,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 64,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 65,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 66,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 67,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 68,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 69,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 70,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 71,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 72,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 73,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 74,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 75,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 76,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 77,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 78,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 79,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

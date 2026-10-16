@@ -1,0 +1,2638 @@
+--- PDF page 27 ---
+
+
+--- PDF page 28 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+A Journey of a Thousand Miles...
+Genome replication is one of the most important tasks carried out in the cell. Before
+a cell can divide, it must ﬁrst replicate its genome so that each of the two daughter
+cells inherits its own copy. In 1953, James Watson and Francis Crick completed their
+landmark paper on the DNA double helix with a now-famous phrase:
+It has not escaped our notice that the speciﬁc pairing we have postulated immediately
+suggests a possible copying mechanism for the genetic material.
+They conjectured that the two strands of the parent DNA molecule unwind during
+replication, and then each parent strand acts as a template for the synthesis of a new
+strand. As a result, the replication process begins with a pair of complementary strands
+of DNA and ends with two pairs of complementary strands, as shown in Figure 1.1.
+FIGURE 1.1 A naive view of DNA replication. Nucleotides adenine (A) and thymine (T)
+are complements of each other, as are cytosine (C) and guanine (G). Complementary
+nucleotides bind to each other in DNA.
+Although Figure 1.1 models DNA replication on a simple level, the details of replica-
+tion turned out to be much more intricate than Watson and Crick imagined; as we will
+see, an astounding amount of molecular logistics is required to ensure DNA replication.
+At ﬁrst glance, a computer scientist might not imagine that these details have any
+computational relevance. To mimic the process in Figure 1.1 algorithmically, we only
+need to take a string representing the genome and return a copy of it! Yet if we take
+3
+
+
+--- PDF page 29 ---
+C H A P T E R 1
+the time to review the underlying biological process, we will be rewarded with new
+algorithmic insights into analyzing replication.
+Replication begins in a genomic region called the replication origin (denoted oriC)
+and is performed by molecular copy machines called DNA polymerases. Locating
+oriC presents an important task not only for understanding how cells replicate but
+also for various biomedical problems. For example, some gene therapy methods use
+genetically engineered mini-genomes, which are called viral vectors because they are
+able to penetrate cell walls (just like real viruses). Viral vectors carrying artiﬁcial genes
+have been used in agriculture to engineer frost-resistant tomatoes and pesticide-resistant
+corn. In 1990, gene therapy was ﬁrst successfully performed on humans when it saved
+the life of a four-year-old girl suffering from Severe Combined Immunodeﬁciency
+Disorder; the girl had been so vulnerable to infections that she was forced to live in a
+sterile environment.
+The idea of gene therapy is to intentionally infect a patient who lacks a crucial
+gene with a viral vector containing an artiﬁcial gene that encodes a therapeutic protein.
+Once inside the cell, the vector replicates and eventually produces many copies of the
+therapeutic protein, which in turn treats the patient’s disease. To ensure that the vector
+actually replicates inside the cell, biologists must know where oriC is in the vector’s
+genome and ensure that the genetic manipulations that they perform do not affect it.
+In the following problem, we assume that a genome has a single oriC and is rep-
+resented as a DNA string, or a string of nucleotides from the four-letter alphabet
+{A, C, G, T}.
+Finding Origin of Replication Problem:
+Input: A DNA string Genome.
+Output: The location of oriC in Genome.
+STOP and Think: Does this biological problem represent a clearly stated compu-
+tational problem?
+Although the Finding Origin of Replication Problem asks a legitimate biological ques-
+tion, it does not present a well-deﬁned computational problem. Indeed, biologists
+would immediately plan an experiment to locate oriC: for example, they might delete
+various short segments from the genome in an effort to ﬁnd a segment whose deletion
+4
+
+
+--- PDF page 30 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+stops replication. Computer scientists, on the other hand, would shake their heads and
+demand more information before they can even start thinking about the problem.
+Why should biologists care what computer scientists think? Computational meth-
+ods are now the only realistic way to answer many questions in modern biology. First,
+these methods are much faster than experimental approaches; second, the results of
+many experiments cannot be interpreted without computational analysis. In particular,
+existing experimental approaches to oriC prediction are rather time consuming. As
+a result, oriC has only been experimentally located in a handful of species. Thus, we
+would like to design a computational approach to ﬁnd oriC so that biologists are free to
+spend their time and money on other tasks.
+Hidden Messages in the Replication Origin
+DnaA boxes
+In the rest of this chapter, we will focus on the relatively easy case of ﬁnding oriC in
+bacterial genomes, most of which consist of a single circular chromosome. Research has
+shown that the region of the bacterial genome encoding oriC is typically a few hundred
+nucleotides long. Our plan is to begin with a bacterium in which oriC is known, and
+then determine what makes this genomic region special in order to design a computa-
+tional approach for ﬁnding oriC in other bacteria. Our example is Vibrio cholerae, the
+bacterium that causes cholera; here is the nucleotide sequence appearing in its oriC:
+atcaatgatcaacgtaagcttctaagcatgatcaaggtgctcacacagtttatccacaac
+ctgagtggatgacatcaagataggtcgttgtatctccttcctctcgtactctcatgacca
+cggaaagatgatcaagagaggatgatttcttggccatatcgcaatgaatacttgtgactt
+gtgcttccaattgacatcttcagcgccatattgcgctggccaaggtgacggagcgggatt
+acgaaagcatgatcatggctgttgttctgtttatcttgttttgactgagacttgttagga
+tagacggtttttcatcactgactagccaaagccttactctgcctgacatcgaccgtaaat
+tgataatgaatttacatgcttccgcgacgatttacctcttgatcatcgatccgattgaag
+atcttcaattgttaattctcttgcctcgactcatagccatgatgagctcttgatcatgtt
+tccttaaccctctattttttacggaagaatgatcaagctgctgctcttgatcatcgtttc
+How does the bacterial cell know to begin replication exactly in this short region
+within the much larger Vibrio cholerae chromosome, which consists of 1,108,250 nu-
+cleotides? There must be some “hidden message” in the oriC region ordering the cell to
+begin replication here. Indeed, we know that the initiation of replication is mediated
+by DnaA, a protein that binds to a short segment within the oriC known as a DnaA
+box. You can think of the DnaA box as a message within the DNA sequence telling the
+5
+
+
+--- PDF page 31 ---
+C H A P T E R 1
+DnaA protein: “bind here!” The question is how to ﬁnd this hidden message without
+knowing what it looks like in advance — can you ﬁnd it? In other words, can you
+ﬁnd something that stands out in oriC? This discussion motivates the following problem.
+Hidden Message Problem:
+Find a “hidden message” in the replication origin.
+Input: A string Text (representing the replication origin of a genome).
+Output: A hidden message in Text.
+STOP and Think: Does this problem represent a clearly stated computational
+problem?
+Hidden messages in “The Gold-Bug”
+Although the Hidden Message Problem poses a legitimate intuitive question, it again
+makes absolutely no sense to a computer scientist because the notion of a “hidden
+message” is not precisely deﬁned. The oriC region of Vibrio cholerae is currently just as
+puzzling as the parchment discovered by William Legrand in Edgar Allan Poe’s story
+“The Gold-Bug”. Written on the parchment was the following:
+53++!305))6*;4826)4+.)4+);806*;48!8‘60))85;1+(;:+*8
+!83(88)5*!;46(;88*96*?;8)*+(;485);5*!2:*+(;4956*2(5
+*-4)8‘8*;4069285);)6!8)4++;1(+9;48081;8:8+1;48!85:4
+)485!528806*81(+9;48;(88;4(+?34;48)4+;161;:188;+?;
+Upon seeing the parchment, the narrator remarks, “Were all the jewels of Golconda
+awaiting me upon my solution of this enigma, I am quite sure that I should be unable
+to earn them”. Legrand retorts, “It may well be doubted whether human ingenuity can
+construct an enigma of the kind which human ingenuity may not, by proper application,
+resolve”. He reasons that the three consecutive symbols ";48" appear with surprising
+frequency on the parchment:
+53++!305))6*;4826)4+.)4+);806*;48!8‘60))85;1+(;:+*8
+!83(88)5*!;46(;88*96*?;8)*+(;485);5*!2:*+(;4956*2(5
+*-4)8‘8*;4069285);)6!8)4++;1(+9;48081;8:8+1;48!85;4
+)485!528806*81(+9;48;(88;4(+?34;48)4+;161;:188;+?;
+6
+
+
+--- PDF page 32 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+Legrand had already deduced that the pirates spoke English; he therefore assumed
+that the high frequency of ";48" implied that it encodes the most frequent English
+word, "THE". Substituting each symbol, Legrand had a slightly easier text to decipher,
+which would eventually lead him to the buried treasure. Can you decode this message
+too?
+53++!305))6*THE26)H+.)H+)TE06*THE!E‘60))E5T1+(T:+*E
+!E3(EE)5*!TH6(TEE*96*?TE)*+(THE5)T5*!2:*+(TH956*2(5
+*-H)E‘E*TH0692E5)T)6!E)H++T1(+9THE0E1TE:E+1THE!E5TH
+)HE5!52EE06*E1(+9THET(EETH(+?3HTHE)H+T161T:1EET+?T
+Counting words
+Operating under the assumption that DNA is a language of its own, let’s borrow
+Legrand’s method and see if we can ﬁnd any surprisingly frequent “words” within
+the oriC of Vibrio cholerae. We have added reason to look for frequent words in the
+oriC because for various biological processes, certain nucleotide strings often appear
+surprisingly often in small regions of the genome. For example, ACTAT is a surprisingly
+frequent substring of
+ACAACTATGCATACTATCGGGAACTATCCT.
+We use the term k-mer to refer to a string of length k and deﬁne COUNT(Text, Pattern)
+as the number of times that a k-mer Pattern appears as a substring of Text. Following
+the above example,
+COUNT(ACAACTATGCATACTATCGGGAACTATCCT, ACTAT) = 3.
+Note that COUNT(CGATATATCCATAG, ATA) is equal to 3 (not 2) since we should ac-
+count for overlapping occurrences of Pattern in Text.
+To compute COUNT(Text, Pattern), our plan is to “slide a window” down Text, check-
+ing whether each k-mer substring of Text matches Pattern. We will therefore refer to
+the k-mer starting at position i of Text as Text(i, k). Throughout this book, we will often
+use 0-based indexing, meaning that we count starting at 0 instead of 1. In this case,
+Text begins at position 0 and ends at position |Text| −1 (|Text| denotes the number of
+symbols in Text). For example, if Text = GACCATACTG, then Text(4, 3) = ATA. Note that
+the last k-mer of Text begins at position |Text| −k, e.g., the last 3-mer of GACCATACTG
+starts at position 10 −3 = 7. This discussion results in the following pseudocode for
+computing COUNT(Text, Pattern).
+7
+
+
+--- PDF page 33 ---
+C H A P T E R 1
+PATTERNCOUNT(Text, Pattern)
+count 0
+for i 0 to |Text| −|Pattern|
+if Text(i, |Pattern|) = Pattern
+count count + 1
+return count
+1A
+The Frequent Words Problem
+We say that Pattern is a most frequent k-mer in Text if it maximizes COUNT(Text, Pattern)
+among all k-mers.
+You can see that ACTAT is a most frequent 5-mer for Text =
+ACAACTATGCATACTATCGGGAACTATCCT, and ATA is a most frequent 3-mer for Text =
+CGATATATCCATAG.
+STOP and Think: Can a string have multiple most frequent k-mers?
+We now have a rigorously deﬁned computational problem.
+Frequent Words Problem:
+Find the most frequent k-mers in a string.
+Input: A string Text and an integer k.
+Output: All most frequent k-mers in Text.
+1B
+A straightforward algorithm for ﬁnding the most frequent k-mers in a string Text checks
+all k-mers appearing in this string (there are |Text| −k + 1 such k-mers) and then com-
+putes how many times each k-mer appears in Text. To implement this algorithm, called
+FREQUENTWORDS, we will need to generate an array COUNT, where COUNT(i) stores
+COUNT(Text, Pattern) for Pattern = Text(i, k) (see Figure 1.2).
+Text
+A
+C
+T
+G
+A
+C
+T
+C
+C
+C
+A
+C
+C
+C
+C
+COUNT
+2
+1
+1
+1
+2
+1
+1
+3
+1
+1
+1
+3
+3
+FIGURE 1.2 The array COUNT for Text = ACTGACTCCCACCCC and k = 3. For exam-
+ple, COUNT(0) = COUNT(4) = 2 because ACT (shown in boldface) appears twice in
+Text at positions 0 and 4.
+8
+
+
+--- PDF page 34 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+FREQUENTWORDS(Text, k)
+FrequentPatterns an empty set
+for i 0 to |Text| −k
+Pattern the k-mer Text(i, k)
+COUNT(i) PATTERNCOUNT(Text, Pattern)
+maxCount maximum value in array COUNT
+for i 0 to |Text| −k
+if COUNT(i) = maxCount
+add Text(i, k) to FrequentPatterns
+remove duplicates from FrequentPatterns
+return FrequentPatterns
+STOP and Think: How fast is FREQUENTWORDS?
+Although FREQUENTWORDS ﬁnds most frequent k-mers, it is not very efﬁcient. Each
+call to PATTERNCOUNT(Text, Pattern) checks whether the k-mer Pattern appears in posi-
+tion 0 of Text, position 1 of Text, and so on. Since each k-mer requires |Text| −k + 1 such
+checks, each one requiring as many as k comparisons, the overall number of steps of
+PATTERNCOUNT(Text, Pattern) is (|Text| −k + 1) · k. Furthermore, FREQUENTWORDS
+must call PATTERNCOUNT |Text| −k + 1 times (once for each k-mer of Text), so that its
+overall number of steps is (|Text| −k + 1) · (|Text| −k + 1) · k. To simplify the matter,
+computer scientists often say that the runtime of FREQUENTWORDS has an upper
+bound of |Text|2 · k steps and refer to the complexity of this algorithm as O
+!|Text|2 · k
+"
+(see DETOUR: Big-O Notation).
+PAGE 52
+CHARGING STATION (The Frequency Array):
+If |Text| and k are small, as
+is the case when looking for DnaA boxes in the typical bacterial oriC, then an
+algorithm with running time of O
+!|Text|2 · k
+"
+is perfectly acceptable. But once
+we ﬁnd some new biological application requiring us to solve the Frequent
+Words Problem for a very long Text, we will quickly run into trouble. Check
+out this Charging Station to learn about solving the Frequent Words Problem
+using a frequency array, a data structure that will also help us solve new coding
+challenges later in the chapter.
+PAGE
+39
+9
+
+
+--- PDF page 35 ---
+C H A P T E R 1
+Frequent words in Vibrio cholerae
+Figure 1.3 reveals the most frequent k-mers in the oriC region from Vibrio cholerae.
+k
+3
+4
+5
+6
+7
+8
+9
+count
+25
+12
+8
+8
+5
+4
+3
+k-mers tga atga gatca tgatca atgatca atgatcaa atgatcaag
+tgatc
+cttgatcat
+tcttgatca
+ctcttgatc
+FIGURE 1.3 The most frequent k-mers in the oriC region of Vibrio cholerae for k from
+3 to 9, along with the number of times that each k-mer occurs.
+STOP and Think: Do any of the counts in Figure 1.3 seem surprisingly large?
+For example, the 9-mer ATGATCAAG appears three times in the oriC region of Vibrio
+cholerae — is it surprising?
+atcaatgatcaacgtaagcttctaagcATGATCAAGgtgctcacacagtttatccacaac
+ctgagtggatgacatcaagataggtcgttgtatctccttcctctcgtactctcatgacca
+cggaaagATGATCAAGagaggatgatttcttggccatatcgcaatgaatacttgtgactt
+gtgcttccaattgacatcttcagcgccatattgcgctggccaaggtgacggagcgggatt
+acgaaagcatgatcatggctgttgttctgtttatcttgttttgactgagacttgttagga
+tagacggtttttcatcactgactagccaaagccttactctgcctgacatcgaccgtaaat
+tgataatgaatttacatgcttccgcgacgatttacctcttgatcatcgatccgattgaag
+atcttcaattgttaattctcttgcctcgactcatagccatgatgagctcttgatcatgtt
+tccttaaccctctattttttacggaagaATGATCAAGctgctgctcttgatcatcgtttc
+We highlight a most frequent 9-mer instead of using some other value of k because
+experiments have revealed that bacterial DnaA boxes are usually nine nucleotides long.
+The probability that there exists a 9-mer appearing three or more times in a randomly
+generated DNA string of length 500 is approximately 1/1300 (see DETOUR: Probabili-
+PAGE 52
+ties of Patterns in a String). In fact, there are four different 9-mers repeated three or
+more times in this region: ATGATCAAG, CTTGATCAT, TCTTGATCA, and CTCTTGATC.
+The low likelihood of witnessing even one repeated 9-mer in the oriC region of Vibrio
+cholerae leads us to the working hypothesis that one of these four 9-mers may represent
+a potential DnaA box that, when appearing multiple times in a short region, jump-starts
+replication. But which one?
+10
+
+
+--- PDF page 36 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+STOP and Think: Is any one of the four most frequent 9-mers in the oriC of Vibrio
+cholerae “more surprising” than the others?
+Some Hidden Messages are More Surprising than Others
+Recall that nucleotides A and T are complements of each other, as are C and G. Having
+one strand of DNA and a supply of “free ﬂoating” nucleotides as shown in Figure 1.1,
+one can imagine the synthesis of a complementary strand on a template strand. This
+model of replication was conﬁrmed by Meselson and Stahl in 1958 (see DETOUR:
+PAGE 57
+The Most Beautiful Experiment in Biology). Figure 1.4 shows a template strand
+AGTCGCATAGT and its complementary strand ACTATGCGACT.
+At this point, you may think that we have made a mistake, since the comple-
+mentary strand in Figure 1.4 reads out TCAGCGTATCA from left to right rather than
+ACTATGCGACT. We have not: each DNA strand has a direction, and the complementary
+strand runs in the opposite direction to the template strand, as shown by the arrows in
+Figure 1.4. Each strand is read in the 5’ ! 3’ direction (see DETOUR: Directionality
+PAGE 59
+of DNA Strands to learn why biologists refer to the beginning and end of a strand of
+DNA using the terms 5’ and 3’).
+T 
+C 
+A 
+G 
+C 
+G 
+T 
+A 
+T 
+C 
+A 
+A 
+G 
+T 
+C 
+G 
+C 
+A 
+T 
+A 
+G 
+T 
+3 
+3 
+5 
+5 
+FIGURE 1.4 Complementary strands run in opposite directions.
+Given a nucleotide p, we denote its complementary nucleotide as p. The reverse
+complement of a string Pattern = p1 · · · pn is the string Pattern = pn · · · p1 formed by
+taking the complement of each nucleotide in Pattern, then reversing the resulting string.
+We will need the solution to the following problem throughout this chapter.
+11
+
+
+--- PDF page 37 ---
+C H A P T E R 1
+Reverse Complement Problem:
+Find the reverse complement of a DNA string.
+Input: A DNA string Pattern.
+Output: Pattern, the reverse complement of Pattern.
+1C
+STOP and Think: Look again at the four most frequent 9-mers in the oriC region
+of Vibrio cholerae from Figure 1.3. Now do you notice anything surprising?
+Interestingly, among the four most frequent 9-mers in the oriC region of Vibrio cholerae,
+ATGATCAAG and CTTGATCAT are reverse complements of each other, resulting in the
+following six occurrences of these strings.
+atcaatgatcaacgtaagcttctaagcATGATCAAGgtgctcacacagtttatccacaac
+ctgagtggatgacatcaagataggtcgttgtatctccttcctctcgtactctcatgacca
+cggaaagATGATCAAGagaggatgatttcttggccatatcgcaatgaatacttgtgactt
+gtgcttccaattgacatcttcagcgccatattgcgctggccaaggtgacggagcgggatt
+acgaaagcatgatcatggctgttgttctgtttatcttgttttgactgagacttgttagga
+tagacggtttttcatcactgactagccaaagccttactctgcctgacatcgaccgtaaat
+tgataatgaatttacatgcttccgcgacgatttacctCTTGATCATcgatccgattgaag
+atcttcaattgttaattctcttgcctcgactcatagccatgatgagctCTTGATCATgtt
+tccttaaccctctattttttacggaagaATGATCAAGctgctgctCTTGATCATcgtttc
+Finding a 9-mer that appears six times (either as itself or as its reverse complement) in
+a DNA string of length 500 is far more surprising than ﬁnding a 9-mer that appears three
+times (as itself). This observation leads us to the working hypothesis that ATGATCAAG
+and its reverse complement CTTGATCAT indeed represent DnaA boxes in Vibrio cholerae.
+This computational conclusion makes sense biologically because the DnaA protein that
+binds to DnaA boxes and initiates replication does not care which of the two strands it
+binds to. Thus, for our purposes, both ATGATCAAG and CTTGATCAT represent DnaA
+boxes.
+However, before concluding that we have found the DnaA box of Vibrio cholerae,
+the careful bioinformatician should check if there are other short regions in the Vibrio
+cholerae genome exhibiting multiple occurrences of ATGATCAAG (or CTTGATCAT). Af-
+ter all, maybe these strings occur as repeats throughout the entire Vibrio cholerae genome,
+rather than just in the oriC region. To this end, we need to solve the following problem.
+12
+
+
+--- PDF page 38 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+Pattern Matching Problem:
+Find all occurrences of a pattern in a string.
+Input: Strings Pattern and Genome.
+Output: All starting positions in Genome where Pattern appears as a sub-
+string.
+1D
+After solving the Pattern Matching Problem, we discover that ATGATCAAG appears 17
+times in the following positions of the Vibrio cholerae genome:
+116556, 149355, 151913, 152013, 152394, 186189, 194276, 200076, 224527,
+307692, 479770, 610980, 653338, 679985, 768828, 878903, 985368
+With the exception of the three occurrences of ATGATCAAG in oriC at starting positions
+151913, 152013, and 152394, no other instances of ATGATCAAG form clumps, i.e., ap-
+pear close to each other in a small region of the genome. You may check that the same
+conclusion is reached when searching for CTTGATCAT. We now have strong statistical
+evidence that ATGATCAAG/CTTGATCAT may represent the hidden message to DnaA
+to start replication.
+STOP and Think: Can we conclude that ATGATCAAG/CTTGATCAT also repre-
+sents a DnaA box in other bacterial genomes?
+An Explosion of Hidden Messages
+Looking for hidden messages in multiple genomes
+We should not jump to the conclusion that ATGATCAAG/CTTGATCAT is a hidden
+message for all bacterial genomes without ﬁrst checking whether it even appears
+in known oriC regions from other bacteria. After all, maybe the clumping effect of
+ATGATCAAG/CTTGATCAT in the oriC region of Vibrio cholerae is simply a statistical
+ﬂuke that has nothing to do with replication. Or maybe different bacteria have different
+DnaA boxes . . .
+Let’s check the proposed oriC region of Thermotoga petrophila, a bacterium that thrives
+in extremely hot environments; its name derives from its discovery in the water beneath
+oil reservoirs, where temperatures can exceed 80◦Celsius.
+13
+
+
+--- PDF page 39 ---
+C H A P T E R 1
+aactctatacctcctttttgtcgaatttgtgtgatttatagagaaaatcttattaactga
+aactaaaatggtaggtttggtggtaggttttgtgtacattttgtagtatctgatttttaa
+ttacataccgtatattgtattaaattgacgaacaattgcatggaattgaatatatgcaaa
+acaaacctaccaccaaactctgtattgaccattttaggacaacttcagggtggtaggttt
+ctgaagctctcatcaatagactattttagtctttacaaacaatattaccgttcagattca
+agattctacaacgctgttttaatgggcgttgcagaaaacttaccacctaaaatccagtat
+ccaagccgatttcagagaaacctaccacttacctaccacttacctaccacccgggtggta
+agttgcagacattattaaaaacctcatcagaagcttgttcaaaaatttcaatactcgaaa
+cctaccacctgcgtcccctattatttactactactaataatagcagtataattgatctga
+This region does not contain a single occurrence of ATGATCAAG or CTTGATCAT! Thus,
+different bacteria may use different DnaA boxes as “hidden messages” to the DnaA
+protein.
+Application of the Frequent Words Problem to the oriC region above reveals that the
+following six 9-mers appear in this region three or more times:
+AACCTACCA
+AAACCTACC
+ACCTACCAC
+CCTACCACC
+GGTAGGTTT
+TGGTAGGTT
+Something peculiar must be happening because it is extremely unlikely that six different
+9-mers will occur so frequently within a short region in a random string. We will cheat
+a little and consult with Ori-Finder, a software tool for ﬁnding replication origins in
+DNA sequences. This software chooses CCTACCACC (along with its reverse comple-
+ment GGTGGTAGG) as a working hypothesis for the DnaA box in Thermotoga petrophila.
+Together, these two complementary 9-mers appear ﬁve times in the replication origin:
+aactctatacctcctttttgtcgaatttgtgtgatttatagagaaaatcttattaactga
+aactaaaatggtaggtttGGTGGTAGGttttgtgtacattttgtagtatctgatttttaa
+ttacataccgtatattgtattaaattgacgaacaattgcatggaattgaatatatgcaaa
+acaaaCCTACCACCaaactctgtattgaccattttaggacaacttcagGGTGGTAGGttt
+ctgaagctctcatcaatagactattttagtctttacaaacaatattaccgttcagattca
+agattctacaacgctgttttaatgggcgttgcagaaaacttaccacctaaaatccagtat
+ccaagccgatttcagagaaacctaccacttacctaccacttaCCTACCACCcgggtggta
+agttgcagacattattaaaaacctcatcagaagcttgttcaaaaatttcaatactcgaaa
+CCTACCACCtgcgtcccctattatttactactactaataatagcagtataattgatctga
+The Clump Finding Problem
+Now imagine that you are trying to ﬁnd oriC in a newly sequenced bacterial genome.
+Searching for “clumps” of ATGATCAAG/CTTGATCAT or CCTACCACC/GGTGGTAGG is
+unlikely to help, since this new genome may use a completely different hidden message!
+Before we lose all hope, let’s change our computational focus: instead of ﬁnding clumps
+of a speciﬁc k-mer, let’s try to ﬁnd every k-mer that forms a clump in the genome.
+Hopefully, the locations of these clumps will shed light on the location of oriC.
+14
+
+
+--- PDF page 40 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+Our plan is to slide a window of ﬁxed length L along the genome, looking for a
+region where a k-mer appears several times in short succession. The parameter value
+L = 500 reﬂects the typical length of oriC in bacterial genomes.
+We deﬁned a k-mer as a “clump” if it appears many times within a short interval of
+the genome. More formally, given integers L and t, a k-mer Pattern forms an (L, t)-clump
+inside a (longer) string Genome if there is an interval of Genome of length L in which this
+k-mer appears at least t times. (This deﬁnition assumes that the k-mer completely ﬁts
+within the interval.) For example, TGCA forms a (25, 3)-clump in the following Genome:
+gatcagcataagggtccCTGCAATGCATGACAAGCCTGCAGTtgttttac
+From our previous examples of oriC regions, ATGATCAAG forms a (500, 3)-clump in
+the Vibrio cholerae genome, and CCTACCACC forms a (500, 3)-clump in the Thermotoga
+petrophila genome. We are now ready to formulate the following problem.
+Clump Finding Problem:
+Find patterns forming clumps in a string.
+Input: A string Genome, and integers k, L, and t.
+Output: All distinct k-mers forming (L, t)-clumps in Genome.
+1E
+CHARGING STATION (Solving the Clump Finding Problem): You can solve
+the Clump Finding Problem by simply applying your algorithm for the Frequent
+Words Problem to each window of length L in Genome. However, if your algorithm
+for the Frequent Words Problem is not very efﬁcient, then such an approach may
+be impractical. For example, recall that FREQUENTWORDS has O
+!
+L2 · k
+"
+running
+time. Applying this algorithm to each window of length L in Genome will result
+in an algorithm with O
+!
+L2 · k · |Genome|
+"
+running time. Moreover, even if we
+use a faster algorithm for the Frequent Words Problem (like the one described
+when we introduce a frequency array on page 39), the running time remains high
+when we try to analyze a bacterial — let alone human — genome. Check out this
+Charging Station to learn about a more efﬁcient approach for solving the Clump
+Finding Problem.
+PAGE
+44
+Let’s look for clumps in the Escherichia coli (E. coli) genome, the workhorse of bacterial
+genomics. We ﬁnd hundreds of different 9-mers forming (500, 3)-clumps in the E. coli
+15
+
+
+--- PDF page 41 ---
+C H A P T E R 1
+genome, and it is absolutely unclear which of these 9-mers might represent a DnaA box
+in the bacterium’s oriC region.
+STOP and Think: Should we give up? If not, what would you do now?
+At this point, an unseasoned researcher might give up, since it appears that we do not
+have enough information to locate oriC in E. coli. But a fearless veteran bioinformatician
+would try to learn more about the details of replication in the hope that they provide
+new algorithmic insights into ﬁnding oriC.
+The Simplest Way to Replicate DNA
+We are now ready to discuss the replication process in more detail. As illustrated in
+Figure 1.5 (top), the two complementary DNA strands running in opposite directions
+around a circular chromosome unravel, starting at oriC. As the strands unwind, they
+create two replication forks, which expand in both directions around the chromosome
+until the strands completely separate at the replication terminus (denoted terC). The
+replication terminus is located roughly opposite to oriC in the chromosome.
+An important thing to know about replication is that a DNA polymerase does not
+wait for the two parent strands to completely separate before initiating replication;
+instead, it starts copying while the strands are unraveling. Thus, just four DNA poly-
+merases, each responsible for one half-strand, can all start at oriC and replicate the
+entire chromosome. To start replication, a DNA polymerase needs a primer, a short
+complementary segment (shown in red in Figure 1.5) that binds to the parent strand
+and jump starts the DNA polymerase. After the strands start separating, each of the
+four DNA polymerases starts replication by adding nucleotides, beginning with the
+primer and proceeding around the chromosome from oriC to terC in either the clockwise
+or counterclockwise direction. When all four DNA polymerases have reached terC, the
+chromosome’s DNA will have been completely replicated, resulting in two pairs of
+complementary strands (Figure 1.5 (bottom)), and the cell is ready to divide.
+Yet while you were reading the description above, biology professors were writing a
+petition to have us ﬁred and sent back to Biology 101. And they would be right, because
+our exposition suffers from a major ﬂaw; we only described the replication process in
+this way so that you can better appreciate what we are about to reveal.
+The problem with our current description is that it assumes that DNA polymerases
+can copy DNA in either direction along a strand of DNA (i.e., both 50 ! 30 and 30 ! 50).
+16
+
+
+--- PDF page 42 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+oriC 
+oriC 
+terC
+terC
+3’ 
+5’ 
+3’ 
+5’ 
+FIGURE 1.5 (Top) Four imaginary DNA polymerases at work replicating a chromosome
+as the replication forks extend from oriC to terC. The blue strand is directed clockwise,
+and the green strand is directed counterclockwise. (Bottom) Replication is complete.
+However, nature has not yet equipped DNA polymerases with this ability, as they are
+unidirectional, meaning that they can only traverse a template strand of DNA in the
+30 ! 50 direction. Notice that this is opposite from the 50 ! 30 direction of DNA.
+STOP and Think: If you were a unidirectional DNA polymerase, how would
+you replicate DNA? How many DNA polymerases would be needed to complete
+this task?
+17
+
+
+--- PDF page 43 ---
+C H A P T E R 1
+The unidirectionality of DNA polymerase requires a major revision to our naive model
+of replication. Imagine that you decided to walk along DNA from oriC to terC. There
+are four different half-strands of parent DNA connecting oriC to terC, as highlighted
+in Figure 1.6. Two of these half-strands are traversed from oriC to terC in the 50 ! 30
+direction and are thus called forward half-strands (represented by thin blue and green
+lines in Figure 1.6). The other two half-strands are traversed from oriC to terC in the
+30 ! 50 direction and are thus called reverse half-strands (represented by thick blue
+and green lines in Figure 1.6).
+3’ 
+5’ 
+oriC 
+terC 
+oriC 
+terC 
+3’ 
+5’ 
+Reverse
+half-strand 
+Forward
+half-strand 
+Forward
+half-strand 
+Reverse
+half-strand 
+FIGURE 1.6 Complementary DNA strands with forward and reverse half-strands shown
+as thin and thick lines, respectively.
+Asymmetry of Replication
+While biologists will feel at home with the following description of DNA replication,
+computer scientists may ﬁnd it overloaded with new terms. If it seems too biologically
+complex, then feel free to skim this section, as long as you believe us that the replication
+process is asymmetric, i.e., that forward and reverse half-strands have very different
+fates with respect to replication.
+18
+
+
+--- PDF page 44 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+Since a DNA polymerase can only move in the reverse (30 ! 50) direction, it can
+copy nucleotides non-stop from oriC to terC along reverse half-strands. However, repli-
+cation on forward half-strands is very different because a DNA polymerase cannot
+move in the forward (50 ! 30) direction; on these half-strands, a DNA polymerase must
+replicate backwards toward oriC. Take a look at Figure 1.7 to see why this must be the case.
+3’ 
+5’ 
+3’ 
+5’ 
+FIGURE 1.7 Replication begins at oriC (primers shown in red) with the synthesis of
+fragments on the reverse half-strands (shown by thick lines). A DNA polymerase must
+wait until the replication fork has opened some (small) distance before it starts copying
+the forward half-strands (shown by thin lines) back toward oriC.
+On a forward half-strand, in order to replicate DNA, a DNA polymerase must wait
+for the replication fork to open a little (approximately 2,000 nucleotides) until a new
+primer is formed at the end of the replication fork; afterwards, the DNA polymerase
+starts replicating a small chunk of DNA starting from this primer and moving backward
+in the direction of oriC. When the two DNA polymerases on forward half-strands reach
+oriC, we have the situation shown in Figure 1.8. Note the contrast between this ﬁgure
+and Figure 1.5.
+After this point, replication on each reverse half-strand progresses continuously;
+however, a DNA polymerase on a forward half-strand has no choice but to wait again
+until the replication fork has opened another 2,000 nucleotides or so. It then requires a
+new primer to begin synthesizing another fragment back toward oriC. On the whole,
+replication on a forward half-strand requires occasional stopping and restarting, which
+19
+
+
+--- PDF page 45 ---
+C H A P T E R 1
+3’ 
+5’ 
+3’ 
+5’ 
+FIGURE 1.8 The daughter fragments are now synthesized (with some delay) on the
+forward half-strands (shown by thin lines).
+results in the synthesis of short Okazaki fragments that are complementary to intervals
+on the forward half-strand. You can see these fragments forming in Figure 1.9 (top).
+When the replication fork reaches terC, the replication process is almost complete,
+but gaps still remain between the disconnected Okazaki fragments (Figure 1.9 (middle)).
+Finally, consecutive Okazaki fragments are sewn together by an enzyme called DNA
+ligase, resulting in two intact daughter chromosomes, each consisting of one parent
+strand and one newly synthesized daughter strand, as shown in Figure 1.9 (bottom).
+In reality, DNA ligase does not wait until after all the Okazaki fragments have been
+replicated to start sewing them together.
+Biologists call a reverse half-strand a leading half-strand since a single DNA poly-
+merase traverses this half-strand non-stop, and they call a forward half-strand a lagging
+half-strand since it is used as a template by many DNA polymerases stopping and
+starting replication. If you are confused about the differences between the leading and
+lagging half-strands, you are not alone — we and legions of biology students are also
+confused. The confusion is exacerbated by the fact that different textbooks use different
+terminology depending on whether the authors intend to refer to a leading template
+half-strand or a leading half-strand that is being synthesized from a (lagging) template
+half-strand. You hopefully see why we have chosen the terms “reverse” and “forward”
+half-strands in an attempt to mitigate some of this confusion.
+20
+
+
+--- PDF page 46 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+3’ 
+5’ 
+3’ 
+5’ 
+Okazaki fragments 
+FIGURE 1.9 (Top) The replication fork continues growing. Only one primer is needed
+for each of the reverse half-strands (shown by thick lines), while the forward half-strands
+(shown by thin lines) require multiple primers in order to synthesize Okazaki fragments.
+Two of these primers are shown in red on each forward half-strand. (Middle) Replication
+is nearly complete, as all daughter DNA is synthesized. However, half of each daughter
+chromosome contains disconnected Okazaki fragments. (Bottom) Okazaki fragments
+have been sewn together, resulting in two intact daughter chromosomes.
+21
+
+
+--- PDF page 47 ---
+C H A P T E R 1
+Peculiar Statistics of the Forward and Reverse Half-Strands
+Deamination
+In the last section, we saw that as the replication fork expands, DNA polymerase syn-
+thesizes DNA quickly on the reverse half-strand but suffers delays on the forward
+half-strand. We will explore the asymmetry of DNA replication to design a new algo-
+rithm for ﬁnding oriC.
+How in the world can the asymmetry of replication possibly help us locate oriC?
+Notice that since the replication of a reverse half-strand proceeds quickly, it lives double-
+stranded for most of its life. Conversely, a forward half-strand spends a much larger
+amount of its life single-stranded, waiting to be used as a template for replication.
+This discrepancy between the forward and reverse half-strands is important because
+single-stranded DNA has a much higher mutation rate than double-stranded DNA. In
+particular, if one of the four nucleotides in single-stranded DNA has a greater tendency
+than other nucleotides to mutate in single-stranded DNA, then we should observe a
+shortage of this nucleotide on the forward half-strand.
+Following up on this thought, let’s compare the nucleotide counts of the reverse
+and forward half-strands. If these counts differ substantially, then we will design an
+algorithm that attempts to track down these differences in genomes for which oriC is
+unknown. The nucleotide counts for Thermotoga petrophila are shown in Figure 1.10.
+#C
+#G
+#A
+#T
+Entire strand
+427419
+413241
+491488
+491363
+Reverse half-strand
+219518
+201634
+243963
+246641
+Forward half-strand
+207901
+211607
+247525
+244722
+Diﬀerence
++11617
+-9973
+-3562
++1919
+FIGURE 1.10 Counting nucleotides in the Thermotoga petrophila genome on the for-
+ward and reverse half-strands.
+STOP and Think: Do you notice anything interesting about the nucleotide counts
+in Figure 1.10?
+Although the frequencies of A and T are practically identical on the two half-strands, C
+is more frequent on the reverse half-strand than on the forward half-strand, resulting
+in a difference of 219518 −207901 = +11617. Its complementary nucleotide G is less
+22
+
+
+--- PDF page 48 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+frequent on the reverse half-strand than on the forward half-strand, resulting in a
+difference of 201634 −211607 = −9973.
+It turns out that we observe these discrepancies because cytosine (C) has a tendency
+to mutate into thymine (T) through a process called deamination. Deamination rates
+rise 100-fold when DNA is single-stranded, which leads to a decrease in cytosine on
+the forward half-strand, thus forming mismatched base pairs T-G. These mismatched
+pairs can further mutate into T-A pairs when the bond is repaired in the next round
+of replication, which accounts for the observed decrease in guanine (G) on the reverse
+half-strand (recall that a forward parent half-strand synthesizes a reverse daughter
+half-strand, and vice-versa).
+STOP and Think: If deamination changes cytosine to thymine, why do you think
+that the forward half-strand still has some cytosine?
+The skew diagram
+Let’s see if we can take advantage of these peculiar statistics caused by deamina-
+tion to locate oriC. As Figure 1.10 illustrates, the difference between the total amount
+of guanine and the total amount of cytosine is negative on the reverse half-strand
+(211607 −207901 = 3706) and positive on the forward half-strand (201634 −219518 =
+−17884). Thus, our idea is to traverse the genome, keeping a running total of the
+difference between the counts of G and C. If this difference starts increasing, then we
+guess that we are on the forward half-strand; on the other hand, if this difference starts
+decreasing, then we guess that we are on the reverse half-strand. See Figure 1.11.
+STOP and Think: Imagine that you are reading through the genome (in the
+50 ! 30 direction) and notice that the difference between the guanine and cytosine
+counts just switched its behavior from decreasing to increasing. Where in the
+genome are you?
+Since we don’t know the location of oriC in a circular genome, let’s linearize it (i.e., select
+an arbitrary position and pretend that the genome begins here), resulting in a linear
+string Genome. We deﬁne SKEWi(Genome) as the difference between the total number
+of occurrences of G and the total number of occurrences of C in the ﬁrst i nucleotides
+of Genome. The skew diagram is deﬁned by plotting SKEWi(Genome) as i ranges from
+0 to |Genome|, where SKEW0(Genome) is set equal to zero. Figure 1.12 shows a skew
+diagram for a short DNA string.
+23
+
+
+--- PDF page 49 ---
+C H A P T E R 1
+3’ 
+5’ 
+oriC 
+terC 
+oriC 
+terC 
+3’ 
+5’ 
+#G – #C
+decreasing 
+#G – #C
+increasing 
+#G low 
+#C high  
+#G high 
+#C low  
+FIGURE 1.11 Because of deamination, each forward half-strand has a shortage of
+cytosine compared to guanine, and each reverse half-strand has a shortage of guanine
+compared to cytosine. The dashed blue line illustrates an imaginary walk along the
+outer strand of the genome counting the diﬀerence between the counts of G and C. We
+assume that the diﬀerence between these counts is positive on the forward half-strand
+and negative on the reverse half-strand.
+Note that we can compute SKEWi+1(Genome) from SKEWi(Genome) according to the
+nucleotide in position i of Genome. If this nucleotide is G, then SKEWi+1(Genome) =
+SKEWi(Genome) + 1; if this nucleotide is C, then SKEWi+1(Genome) = SKEWi(Genome) −
+1; otherwise, SKEWi+1(Genome) = SKEWi(Genome).
+C
+A
+T
+G
+G
+G
+C
+A
+T
+C
+G
+G
+C
+C
+A
+T
+A
+C
+G
+C
+C
+skew 
+position 
+0 
+5 
+10 
+15 
+20 
+-2 
+-1 
+0 
+1 
+2 
+FIGURE 1.12 The skew diagram for Genome = CATGGGCATCGGCCATACGCC.
+Figure 1.13 depicts the skew diagram for a linearized E. coli genome. Notice the
+very clear pattern! It turns out that the skew diagram for many bacterial genomes has a
+24
+
+
+--- PDF page 50 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+similar characteristic shape.
+STOP and Think: After looking at the skew diagram in Figure 1.13, where do
+you think that oriC is located in E. coli?
+position 
+skew 
+1000000 
+2000000 
+3000000 
+4000000 
+5000000 
+0 
+0 
+-5000 
+-10000 
+-15000 
+15000 
+10000 
+20000 
+25000 
+30000 
+5000 
+FIGURE 1.13 The skew diagram for E. coli achieves a maximum and minimum at
+positions 1550413 and 3923620, respectively.
+Let’s follow the 50 ! 30 direction of DNA and walk along the chromosome from
+terC to oriC (along a reverse half-strand), then continue on from oriC to terC (along
+a forward half-strand). In Figure 1.11, we saw that the skew is decreasing along the
+reverse half-strand and increasing along the forward half-strand. Thus, the skew should
+achieve a minimum at the position where the reverse half-strand ends and the forward
+half-strand begins, which is exactly the location of oriC! We have just developed an
+algorithm for locating oriC: it should be found where the skew attains a minimum.
+Minimum Skew Problem:
+Find a position in a genome where the skew diagram attains a minimum.
+Input: A DNA string Genome.
+Output: All integer(s) i minimizing SKEWi(Genome) among all values of i
+(from 0 to |Genome|).
+1F
+25
+
+
+--- PDF page 51 ---
+C H A P T E R 1
+STOP and Think: Note that the skew diagram changes depending on where we
+start our walk along the circular chromosome. Do you think that the minimum of
+the skew diagram points to the same position in the genome regardless of where
+we begin walking to generate the skew diagram?
+Some Hidden Messages are More Elusive than Others
+Solving the Minimum Skew Problem now provides us with an approximate location of
+oriC at position 3923620 in E. coli. In an attempt to conﬁrm this hypothesis, let’s look
+for a hidden message representing a potential DnaA box near this location. Solving the
+Frequent Words Problem in a window of length 500 starting at position 3923620 (shown
+below) reveals no 9-mers (along with their reverse complements) that appear three or
+more times! Even if we have located oriC in E. coli, it appears that we still have not
+found the DnaA boxes that jump-start replication in this bacterium ...
+aatgatgatgacgtcaaaaggatccggataaaacatggtgattgcctcgcataacgcggt
+atgaaaatggattgaagcccgggccgtggattctactcaactttgtcggcttgagaaaga
+cctgggatcctgggtattaaaaagaagatctatttatttagagatctgttctattgtgat
+ctcttattaggatcgcactgccctgtggataacaaggatccggcttttaagatcaacaac
+ctggaaaggatcattaactgtgaatgatcggtgatcctggaccgtataagctgggatcag
+aatgaggggttatacacaactcaaaaactgaacaacagttgttctttggataactaccgg
+ttgatccaagcttcctgacagagttatccacagtagatcgcacgatctgtatacttattt
+gagtaaattaacccacgatcccagccattcttctgccggatcttccggaatgtcgtgatc
+aagaatgttgatcttcagtg
+STOP and Think: What would you do next?
+Before we give up, let’s examine the oriC of Vibrio cholerae one more time to see if it
+provides us with any insights on how to alter our algorithm to ﬁnd DnaA boxes in E.
+coli. You may have noticed that in addition to the three occurrences of ATGATCAAG
+and three occurrences of its reverse complement CTTGATCAT, the Vibrio cholerae oriC
+contains additional occurrences of ATGATCAAC and CATGATCAT, which differ from
+ATGATCAAG and CTTGATCAT in only a single nucleotide:
+26
+
+
+--- PDF page 52 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+atcaATGATCAACgtaagcttctaagcATGATCAAGgtgctcacacagtttatccacaac
+ctgagtggatgacatcaagataggtcgttgtatctccttcctctcgtactctcatgacca
+cggaaagATGATCAAGagaggatgatttcttggccatatcgcaatgaatacttgtgactt
+gtgcttccaattgacatcttcagcgccatattgcgctggccaaggtgacggagcgggatt
+acgaaagCATGATCATggctgttgttctgtttatcttgttttgactgagacttgttagga
+tagacggtttttcatcactgactagccaaagccttactctgcctgacatcgaccgtaaat
+tgataatgaatttacatgcttccgcgacgatttacctCTTGATCATcgatccgattgaag
+atcttcaattgttaattctcttgcctcgactcatagccatgatgagctCTTGATCATgtt
+tccttaaccctctattttttacggaagaATGATCAAGctgctgctCTTGATCATcgtttc
+Finding eight approximate occurrences of our target 9-mer and its reverse comple-
+ment in a short region is even more statistically surprising than ﬁnding the six exact
+occurrences of ATGATCAAG and its reverse complement CTTGATCAT that we stumbled
+upon in the beginning of our investigation. Furthermore, the discovery of these approx-
+imate 9-mers makes sense biologically, since DnaA can bind not only to “perfect” DnaA
+boxes but to their slight variations as well.
+We say that position i in k-mers p1 · · · pk and q1 · · · qk is a mismatch if pi 6= qi. The
+number of mismatches between strings p and q is called the Hamming distance be-
+tween these strings and is denoted HAMMINGDISTANCE(p, q).
+Hamming Distance Problem:
+Compute the Hamming distance between two strings.
+Input: Two strings of equal length.
+Output: The Hamming distance between these strings.
+1G
+We say that a k-mer Pattern appears as a substring of Text with at most d mismatches
+if there is some k-mer substring Pattern’ of Text having d or fewer mismatches with
+Pattern, i.e., HAMMINGDISTANCE(Pattern, Pattern0) d. Our observation that a DnaA
+box may appear with slight variations leads to the following generalization of the
+Pattern Matching Problem.
+Approximate Pattern Matching Problem:
+Find all approximate occurrences of a pattern in a string.
+Input: Strings Pattern and Text along with an integer d.
+Output: All starting positions where Pattern appears as a substring of Text
+with at most d mismatches.
+1H
+27
+
+
+--- PDF page 53 ---
+C H A P T E R 1
+Our goal now is to modify our previous algorithm for the Frequent Words Problem in
+order to ﬁnd DnaA boxes by identifying frequent k-mers, possibly with mismatches.
+Given strings Text and Pattern as well as an integer d, we deﬁne COUNTd(Text, Pattern)
+as the number of occurrences of Pattern in Text with at most d mismatches. For example,
+COUNT1(AACAAGCATAAACATTAAAGAG, AAAAA) = 4
+because AAAAA appears four times in this string with at most one mismatch: AACAA,
+ATAAA, AAACA, and AAAGA. Notice that two of these occurrences overlap.
+EXERCISE BREAK: Compute COUNT2(AACAAGCATAAACATTAAAGAG, AAAAA).
+Computing COUNTd(Text, Pattern) simply requires us to compute the Hamming dis-
+tance between Pattern and every k-mer substring of Text, as follows.
+APPROXIMATEPATTERNCOUNT(Text, Pattern, d)
+count 0
+for i 0 to |Text| −|Pattern|
+Pattern’ Text(i, |Pattern|)
+if HAMMINGDISTANCE(Pattern, Pattern’) d
+count count + 1
+return count
+EXERCISE BREAK: Implement APPROXIMATEPATTERNCOUNT. What is its
+running time?
+A most frequent k-mer with up to d mismatches in Text is simply a string Pattern max-
+imizing COUNTd(Text, Pattern) among all k-mers. Note that Pattern does not need to
+actually appear as a substring of Text; for example, as we saw above, AAAAA is the most
+frequent 5-mer with 1 mismatch in AACAAGCATAAACATTAAAGAG, even though it does
+not appear exactly in this string. Keep this in mind while solving the following problem.
+Frequent Words with Mismatches Problem:
+Find the most frequent k-mers with mismatches in a string.
+Input: A string Text as well as integers k and d.
+Output: All most frequent k-mers with up to d mismatches in Text.
+1I
+28
+
+
+--- PDF page 54 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+CHARGING STATION (Solving the Frequent Words with Mismatches Prob-
+lem): One way to solve the above problem is to generate all 4k k-mers Pattern,
+compute COUNTd(Text, Pattern, d) for each k-mer, and then output k-mers with
+the maximum number of approximate occurrences. This is an inefﬁcient approach
+in practice, since many of the 4k k-mers that this method analyzes should not
+be considered because neither they nor their mutated versions (with up to d
+mismatches) appear in Text. Check out this Charging Station to learn about a
+better approach that avoids analyzing such hopeless k-mers.
+PAGE
+47
+We now redeﬁne the Frequent Words Problem to account for both mismatches and
+reverse complements. Recall that Pattern refers to the reverse complement of Pattern.
+Frequent Words with Mismatches and Reverse Complements Problem:
+Find the most frequent k-mers (with mismatches and reverse complements) in a string.
+Input: A DNA string Text as well as integers k and d.
+Output: All k-mers Pattern that maximize the sum COUNTd(Text, Pattern) +
+COUNTd(Text, Pattern) over all possible k-mers.
+1J
+A Final Attempt at Finding DnaA Boxes in E. coli
+We now make a ﬁnal attempt to ﬁnd DnaA boxes in E. coli by ﬁnding the most frequent
+9-mers with mismatches and reverse complements in the region suggested by the
+minimum skew as oriC. Although the minimum of the skew diagram for E. coli is found
+at position 3923620, we should not assume that its oriC is found exactly at this position
+due to random ﬂuctuations in the skew. To remedy this issue, we could choose a larger
+window size (e.g., L = 1000), but expanding the window introduces the risk that we
+may bring in other clumped 9-mers that do not represent DnaA boxes but appear in this
+window more often than the true DnaA box. It makes more sense to try a small window
+either starting, ending, or centered at the position of minimum skew.
+Let’s cross our ﬁngers and identify the most frequent 9-mers (with 1 mismatch and re-
+verse complements) within a window of length 500 starting at position 3923620 of the E.
+coli genome. Bingo! The experimentally conﬁrmed DnaA box in E. coli (TTATCCACA) is a
+most frequent 9-mer with 1 mismatch, along with its reverse complement TGTGGATAA:
+29
+
+
+--- PDF page 55 ---
+C H A P T E R 1
+aatgatgatgacgtcaaaaggatccggataaaacatggtgattgcctcgcataacgcggt
+atgaaaatggattgaagcccgggccgtggattctactcaactttgtcggcttgagaaaga
+cctgggatcctgggtattaaaaagaagatctatttatttagagatctgttctattgtgat
+ctcttattaggatcgcactgcccTGTGGATAAcaaggatccggcttttaagatcaacaac
+ctggaaaggatcattaactgtgaatgatcggtgatcctggaccgtataagctgggatcag
+aatgaggggTTATACACAactcaaaaactgaacaacagttgttcTTTGGATAActaccgg
+ttgatccaagcttcctgacagagTTATCCACAgtagatcgcacgatctgtatacttattt
+gagtaaattaacccacgatcccagccattcttctgccggatcttccggaatgtcgtgatc
+aagaatgttgatcttcagtg
+You will notice that we highlighted an interior interval of this sequence with darker text.
+This region is the experimentally veriﬁed oriC of E. coli, which starts 37 nucleotides after
+position 3923620, where the skew reaches its minimum value.
+We were fortunate that the DnaA boxes of E. coli are captured in the window that
+we chose. Moreover, while TTATCCACA represents a most frequent 9-mer with 1 mis-
+match and reverse complements in this 500-nucleotide window, it is not the only one:
+GGATCCTGG, GATCCCAGC, GTTATCCAC, AGCTGGGAT, and CTGGGATCA also appear
+four times with 1 mismatch and reverse complements.
+STOP and Think: In this chapter, every time we ﬁnd oriC, we seem to ﬁnd some
+other surprisingly frequent 9-mers. Why do you think this is?
+We do not know what purpose — if any — these other 9-mers serve in the E. coli genome,
+but we do know that there are many different types of hidden messages in genomes; these
+hidden messages have a tendency to cluster within a genome, and most of them have
+nothing to do with replication. One example is the regulatory DNA motifs responsible
+for gene expression that we will study in Chapter 2. The important lesson is that existing
+approaches to oriC prediction remain imperfect and sometimes inconclusive. However,
+even providing biologists with a small collection of 9-mers as candidate DnaA boxes is
+a great aid as long as one of these 9-mers is correct.
+Thus, the moral of this chapter is that even though computational predictions can
+be powerful, bioinformaticians should collaborate with biologists to verify their compu-
+tational predictions. Or improve these predictions: the next question hints at how oriC
+predictions can be carried out using comparative genomics, a bioinformatics approach
+that uses evolutionary similarities to answer difﬁcult questions about genomes.
+STOP and Think: Salmonella enterica is a close relative of E. coli that causes
+typhoid fever and foodborne illness. After having learned what DnaA boxes look
+like in E. coli, how would you search for DnaA boxes in Salmonella enterica?
+30
+
+
+--- PDF page 56 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+You will have an opportunity to look for DnaA boxes in Salmonella enterica in the epi-
+logue, which will feature a “Challenge Problem” asking you to apply what you have
+learned to a real dataset. Some chapters also have an “Open Problems” section outlining
+unanswered research questions.
+Epilogue: Complications in oriC Predictions
+In this chapter, we have considered three genomes and found three different hypoth-
+esized 9-mers encoding DnaA boxes: ATGATCAAG in Vibrio cholerae, CCTACCACC in
+Thermotoga petrophila, and TTATCCACA in E. coli. We must warn you that ﬁnding oriC
+is often more complex than in the three examples we considered. Some bacteria have
+even fewer DnaA boxes than E. coli, making it difﬁcult to identify them. The terC region
+is often located not directly opposite to oriC but may be signiﬁcantly shifted, resulting
+in reverse and forward half-strands having substantially different lengths. The position
+of the skew minimum is often only a rough indicator of oriC position, which forces
+researchers to expand their windows when searching for DnaA boxes, bringing in extra-
+neous repeated substrings. Finally, skew diagrams do not always look as nice as that
+of E. coli; for example, the skew diagram for Thermotoga petrophila is shown in Figure 1.14.
+skew 
+position 
+-15000 
+-20000 
+-10000 
+-5000 
+5000 
+0 
+500000 
+1000000 
+1500000 
+2000000 
+FIGURE 1.14 The skew diagram for Thermotoga petrophila achieves a minimum at
+position 787199 but does not have the same nice shape as the skew diagram for E. coli.
+STOP and Think: What evolutionary process could possibly explain the shape
+of the skew diagram for Thermotoga petrophila?
+31
+
+
+--- PDF page 57 ---
+C H A P T E R 1
+Since the skew diagram for Thermotoga petrophila is complex and the oriC for this genome
+has not even been experimentally veriﬁed, there is a chance that the region predicted
+by Ori-Finder as the oriC region for Thermotoga petrophila (or even for Vibrio cholerae) is
+actually incorrect!
+You now should have a good sense of how to locate oriC and DnaA boxes compu-
+tationally. We will take the training wheels off and ask you to solve a challenge problem.
+CHALLENGE PROBLEM: Find
+Find DnaA
+DnaA boxes in
+boxes in Salmonella enterica
+Salmonella enterica.
+32
+
+
+--- PDF page 58 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+Open Problems
+Multiple replication origins in a bacterial genome
+Biologists long believed that each bacterial chromosome has only one oriC. Wang et al.,
+2011 genetically modiﬁed E. coli by inserting a synthetic oriC a million nucleotides away
+from the bacterium’s known oriC. To their surprise, E. coli continued business as usual,
+starting replication at both locations!
+Following the publication of this paper, the search for naturally occurring bacteria
+with multiple oriCs immediately started. In 2012, Xia raised doubts about the “single
+oriC” postulate and gave examples of bacteria with highly unusual skews. In fact,
+having more than one oriC makes sense in the light of evolution: if the genome is long
+and replication is slow, then multiple replication origins would decrease the amount of
+time that the bacterium must spend replicating its DNA.
+For example, Wigglesworthia glossinidia, a symbiotic bacterium living in the intestines
+of tsetse ﬂies, has the atypical skew diagram shown in Figure 1.15. Since this diagram
+has at least two pronounced local minima, Xia argued that this bacterium may have
+two or more oriC regions.
+We should be careful with Xia’s hypothesis that this bacterium has two oriCs, as
+there may be alternative explanations for multiple local minima in the skew. For
+example, genome rearrangements (which we will study in Chapter 6) move genes
+within a genome and often reposition them from the forward to the reverse half-strand
+and vice-versa, thus resulting in irregularities in the skew diagram. One example of a
+genome rearrangement is a reversal, which ﬂips around a segment of chromosome and
+switches it to the opposite strand; Figure 1.16 shows what happens to the skew diagram
+after a reversal.
+Another difﬁculty is presented by the fact that different species of bacteria may
+exchange genetic material in horizontal gene transfer. If a gene from the forward
+half-strand of one bacterium is transferred to the reverse half-strand of another (or
+vice-versa), then we will observe an irregularity in the skew diagram. As a result, the
+question about the number of oriCs of Wigglesworthia glossinidia remains unresolved.
+However, if you could demonstrate that there exist two sets of identical DnaA boxes
+in the vicinity of two local minima in the skew diagram of Wigglesworthia glossinidia,
+then you would have the ﬁrst solid evidence in favor of multiple bacterial oriCs. Maybe
+simply applying your solution for the Frequent Words with Mismatches and Reverse
+Complements Problem will reveal these DnaA boxes. Can you ﬁnd other bacterial
+genomes where a single oriC is in doubt and check whether they indeed have multiple
+oriCs?
+33
+
+
+--- PDF page 59 ---
+C H A P T E R 1
+skew 
+position 
+3500 
+3000 
+2500 
+2000 
+1500 
+1000 
+500 
+0 
+-500 
+100000 
+0 
+200000 300000 400000 500000 600000 700000 800000 
+FIGURE 1.15 The skew diagram for Wigglesworthia glossinidia.
+position 
+skew 
+ reversal 
+terC                   oriC                   terC 
+skew 
+position 
+terC                   oriC                  terC 
+FIGURE 1.16 (Left) An “ideal” V-shaped skew diagram that achieves minimum skew at
+oriC. The skew diagram decreases along the reverse half-strand (shown by a thick line)
+and increases along the forward half-strand (shown by a thin line). We assume that a
+circular chromosome was cut at terC, resulting in a linear chromosome that starts and
+ends at terC. (Right) A skew diagram after a reversal that switches segments between the
+reverse and forward strands and alters the skew diagram. As before, the skew diagram
+still decreases along the segments of the genome shown by thick lines and increases
+along the segments shown by thin lines.
+34
+
+
+--- PDF page 60 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+Finding replication origins in archaea
+Archaea are unicellular organisms so distinct from other life forms that biologists have
+placed them into their own domain of life separate from bacteria and eukaryotes. Al-
+though archaea are visually similar to bacteria, they have some genomic features that are
+more closely related to eukaryotes. In particular, the replication machinery of archaea
+is more similar to eukaryotes than bacteria. Yet archaea use a much greater variety of
+energy sources than eukaryotes, feeding on ammonia, metals, or even hydrogen gas.
+Figure 1.17 shows the skew diagram of Sulfolobus solfataricus, a species of archaea
+growing in acidic volcanic springs in temperatures over 80◦C. In its skew diagram, you
+can see at least three local minima, represented by deep valleys, in addition to many
+more shallow valleys.
+skew 
+position 
+-6000 
+-4000 
+2000 
+0 
+2000 
+4000 
+6000 
+8000 
+10000 
+0 
+500000 
+1000000 
+1500000 
+2000000 
+2500000 
+3000000 
+FIGURE 1.17 The skew diagram of Sulfolobus solfataricus.
+Lundgren et al., 2004 demonstrated experimentally that Sulfolobus solfataricus indeed
+has three oriCs. Since then, multiple oriCs have been identiﬁed in many other archaea.
+However, no accurate computational approach has been developed to identify multiple
+oriCs in a newly sequenced archaea genome. For example, the methane-producing
+archaea Methanococcus jannaschii is considered the workhorse of archaea genomics, but
+its oriC(s) still remain unidentiﬁed! Its skew diagram (shown in Figure 1.18) suggests
+that it may have multiple oriCs: can you ﬁnd them?
+35
+
+
+--- PDF page 61 ---
+C H A P T E R 1
+skew 
+position 
+-8000 
+-6000 
+-4000 
+-200 
+0 
+2000 
+4000 
+6000 
+8000 
+0 
+400000 
+800000 
+1200000 
+1600000 
+FIGURE 1.18 The skew diagram for Methanococcus jannaschii.
+Finding replication origins in yeast
+If you think that ﬁnding replication origins in bacteria is a complex problem, wait until
+you analyze replication origins in more complex organisms like yeast or humans, which
+have hundreds of replication origins. Among various yeast species, the yeast Saccha-
+romyces cerevisiae has the best characterized replication origins. It has approximately 400
+different oriCs, many of which may be used during the replication of any single yeast
+cell.
+Having a large number of oriCs results in dozens of replication forks hurtling
+towards each other from different locations in the genome in ways that are not yet
+completely understood. However, researchers have discovered that the replication
+origins of S. cerevisiae share a (somewhat variable) pattern called the ARS Consensus
+Sequence (ACS). The ACS is the binding site for the so-called Origin Recognition
+Complex, which initiates the loading of additional proteins required for origin ﬁring.
+Many ACSs correspond to the following canonical thymine-rich pattern of length 11.
+TTTAT(G/A)TTT(T/A)(G/T)
+Here, the notation (X/Y) indicates that either nucleotide X or nucleotide Y may appear
+in that position.
+However, various ACSs may differ from this canonical pattern, with lengths varying
+from 11 to 17 nucleotides. For example, the 11-nucleotide long pattern shown above is
+often part of a 17-nucleotide pattern:
+36
+
+
+--- PDF page 62 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+(T/A)(T/A)(T/A)(T/A)TTTAT(G/A)TTT(T/A)(G/T)(T/G)(T/C)
+Recently, some progress has been made in characterizing the ACS in a few other
+yeast species. In some species like S. bayanus, the ACS is almost identical to that of S.
+cerevisiae, while in others such as K. lactis, it is very different. More alarmingly, at least
+for bioinformaticians, in some yeast species such as S. pombe, the Origin Recognition
+Complex binds to loosely deﬁned AT-rich regions, which makes it next to impossible to
+ﬁnd replication origins based on sequence analysis alone.
+Despite recent efforts, ﬁnding oriCs in yeast remains an open problem, and no
+accurate software exists for predicting origins of replication from the sequence of yeast
+genomes. Can you explore this problem and devise an algorithm to predict replication
+origins in yeast?
+Computing probabilities of patterns in a string
+In the main text, we told you that the probability that a random DNA string of length 500
+contains a 9-mer appearing three or more times is approximately 1/1300. In DETOUR:
+PAGE
+PAGE 52
+52
+Probabilities of Patterns in a String, we describe a method to estimate this probability,
+but it is rather inaccurate. This open problem is aimed at ﬁnding better approximations
+or even deriving exact formulas for probabilities of patterns in strings.
+We start by asking a question: what is the probability that a speciﬁc k-mer Pattern
+will appear (at least once) as a substring of a random string of length N? This question
+proved to be not so simple and was ﬁrst addressed by Solov’ev, 1966 (see also Sedgewick
+and Flajolet, 2013).
+The ﬁrst surprise is that different k-mers may have different probabilities of appear-
+ing in a random string. For example, the probability that Pattern = "01" appears in a
+random binary string of length 4 is 11/16, while the probability that Pattern = "11"
+appears in a random binary string of length 4 is 8/16. This phenomenon is called
+the overlapping words paradox because different occurrences of Pattern can overlap
+each other for some patterns (e.g., "11") but not others (e.g., "01"). See DETOUR: The
+PAGE
+PAGE 62
+62
+Overlapping Words Paradox.
+We are interested in computing the following probabilities for a random N-letter
+string in an A-letter alphabet:
+• Pr(N, A, Pattern, t), the probability that a string Pattern appears at least t times in
+a random string;
+• Pr⇤(N, A, Pattern, t), the probability that a string Pattern and its reverse comple-
+ment Pattern appear at least t total times in a random string.
+37
+
+
+--- PDF page 63 ---
+C H A P T E R 1
+Note that the above two probabilities are relatively straightforward to compute.
+Several variants of these questions are open:
+• Prd(N, A, Pattern, t), the probability that a string Pattern approximately appears
+at least t times in a random string (with at most d mismatches);
+• Pr(N, A, k, t), the probability that there exists any k-mer appearing at least t times
+in a random string;
+• Prd(N, A, k, t), the probability that there exists any k-mer with at least t approxi-
+mate occurrences in a random string (with at most d mismatches).
+38
+
+
+--- PDF page 64 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+Charging Stations
+The frequency array
+To make FREQUENTWORDS faster, we will think about why this algorithm is slow in
+the ﬁrst place. It slides a window of length k down Text, identifying a k-mer Pattern of
+Text at each step. For each such k-mer, it must slide a window down the entire length
+of Text in order to compute PATTERNCOUNT(Text, Pattern). Instead of doing all this
+sliding, we aspire to slide a window down Text only once. As we slide this window, we
+will keep track of the number of times that each k-mer Pattern has already appeared in
+Text, updating these numbers as we proceed.
+To achieve this goal, we will ﬁrst order all 4k k-mers lexicographically (i.e., accord-
+ing to how they would appear in the dictionary) and then convert them into the 4k
+different integers between 0 and 4k −1. Given an integer k, we deﬁne the frequency
+array of a string Text as an array of length 4k, where the i-th element of the array holds
+the number of times that the i-th k-mer (in the lexicographic order) appears in Text
+(Figure 1.19).
+k-mer AA AC AG AT CA CC CG CT GA GC GG GT TA TC TG TT
+index
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10 11 12 13 14 15
+frequency
+3
+0
+2
+0
+1
+0
+0
+0
+0
+1
+3
+1
+0
+0
+1
+0
+FIGURE 1.19 The lexicographic order of DNA 2-mers (top), along with the index of each
+2-mer in this order (middle), and the frequency array for AAGCAAAGGTGGG (bottom).
+For example, the frequency array at index 10 is equal to 3 because GG, the tenth DNA
+2-mer according to lexicographic order, occurs three times in AAGCAAAGGTGGG.
+To compute the frequency array, we need to determine how to transform a k-mer
+Pattern into an integer using a function PATTERNTONUMBER(Pattern). We also should
+know how to reverse this process, transforming an integer between 0 and 4k −1 into
+a k-mer using a function NUMBERTOPATTERN(index, k). Figure 1.19 illustrates that
+PATTERNTONUMBER(GT) = 11 and NUMBERTOPATTERN(11, 2) = GT.
+EXERCISE BREAK: Compute the following:
+1. PATTERNTONUMBER(ATGCAA)
+2. NUMBERTOPATTERN(5437, 7)
+3. NUMBERTOPATTERN(5437, 8)
+39
+
+
+--- PDF page 65 ---
+C H A P T E R 1
+CHARGING STATION (Converting Patterns Into Numbers and Vice-Versa):
+Check out this Charging Station to see how to implement PATTERNTONUMBER
+and NUMBERTOPATTERN.
+PAGE
+41
+The pseudocode below generates a frequency array by ﬁrst initializing every element in
+the frequency array to zero (4k operations) and then making a single pass down Text
+(approximately |Text| · k operations). For each k-mer Pattern that we encounter, we add
+1 to the value of the frequency array corresponding to Pattern. As before, we refer to the
+k-mer beginning at position i of Text as Text(i, k).
+COMPUTINGFREQUENCIES(Text, k)
+for i 0 to 4k −1
+FREQUENCYARRAY(i) 0
+for i 0 to |Text| −k
+Pattern Text(i, k)
+j PATTERNTONUMBER(Pattern)
+FREQUENCYARRAY(j) FREQUENCYARRAY(j) + 1
+return FREQUENCYARRAY
+1K
+We now have a faster algorithm for the Frequent Words Problem. After generating
+the frequency array, we can ﬁnd all most frequent k-mers by simply ﬁnding all k-mers
+corresponding to the maximum element(s) in the frequency array.
+FASTERFREQUENTWORDS(Text , k)
+FrequentPatterns an empty set
+FREQUENCYARRAY COMPUTINGFREQUENCIES(Text, k)
+maxCount maximal value in FREQUENCYARRAY
+for i 0 to 4k −1
+if FREQUENCYARRAY(i) = maxCount
+Pattern NUMBERTOPATTERN(i, k)
+add Pattern to the set FrequentPatterns
+return FrequentPatterns
+40
+
+
+--- PDF page 66 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+CHARGING STATION (Finding Frequent Words by Sorting):
+Although
+FASTERFREQUENTWORDS is fast for small k (i.e., you can use it to ﬁnd DnaA
+boxes in an oriC region), it becomes impractical when k is large. If you are familiar
+with sorting algorithms and are interested in seeing a faster algorithm, check out
+this Charging Station.
+PAGE
+43
+EXERCISE BREAK: Our claim that FASTERFREQUENTWORDS is faster than
+FREQUENTWORDS is only correct for certain values of |Text| and k.
+Esti-
+mate the running time of FASTERFREQUENTWORDS and characterize the val-
+ues of |Text| and k when FASTERFREQUENTWORDS is indeed faster than
+FREQUENTWORDS.
+Converting patterns to numbers and vice-versa
+Our approach to computing PATTERNTONUMBER(Pattern) is based on a simple obser-
+vation. If we remove the ﬁnal symbol from all lexicographically ordered k-mers, the
+resulting list is still ordered lexicographically (think about removing the ﬁnal letter
+from every word in a dictionary). In the case of DNA strings, every (k −1)-mer in the
+resulting list is repeated four times (Figure 1.20).
+AAA
+AAC
+AAG
+AAT
+ACA
+ACC
+ACG
+ACT
+AGA
+AGC
+AGG
+AGT
+ATA
+ATC
+ATG
+ATT
+CAA
+CAC
+CAG
+CAT
+CCA
+CCC
+CCG
+CCT
+CGA
+CGC
+CGG
+CGT
+CTA
+CTC
+CTG
+CTT
+GAA
+GAC
+GAG
+GAT
+GCA
+GCC
+GCG
+GCT
+GGA
+GGC
+GGG
+GGT
+GTA
+GTC
+GTG
+GTT
+TAA
+TAC
+TAG
+TAT
+TCA
+TCC
+TCG
+TCT
+TGA
+TGC
+TGG
+TGT
+TTA
+TTC
+TTG
+TTT
+FIGURE 1.20 If we remove the ﬁnal symbol from all lexicographically ordered DNA
+3-mers, we obtain a lexicographic order of (red) 2-mers, where each 2-mer is repeated
+four times.
+Thus, the number of 3-mers occurring before AGT is equal to four times the number
+of 2-mers occurring before AG plus the number of 1-mers occurring before T. Therefore,
+PATTERNTONUMBER(AGT) = 4 · PATTERNTONUMBER(AG) + SYMBOLTONUMBER(T)
+= 8 + 3 = 11 ,
+41
+
+
+--- PDF page 67 ---
+C H A P T E R 1
+where SYMBOLTONUMBER(symbol) is the function transforming symbols A, C, G, and T
+into the respective integers 0, 1, 2, and 3.
+If we remove the ﬁnal symbol of Pattern, denoted LASTSYMBOL(Pattern), then we
+will obtain a (k −1)-mer that we denote as PREFIX(Pattern). The preceding observation
+therefore generalizes to the formula
+PATTERNTONUMBER(Pattern) = 4 · PATTERNTONUMBER(PREFIX(Pattern))+
+SYMBOLTONUMBER(LASTSYMBOL(Pattern)) .
+(*)
+This equation leads to the following recursive algorithm, i.e., a program that calls itself.
+If you want to learn more about recursive algorithms, see DETOUR: The Towers of
+PAGE 60
+Hanoi.
+PATTERNTONUMBER(Pattern)
+if Pattern contains no symbols
+return 0
+symbol LASTSYMBOL(Pattern)
+Preﬁx PREFIX(Pattern)
+return 4 · PATTERNTONUMBER(Preﬁx) + SYMBOLTONUMBER(symbol)
+1L
+In order to compute the inverse function NUMBERTOPATTERN(index, k), we return to
+(*) above, which implies that when we divide index = PATTERNTONUMBER(Pattern)
+by 4, the remainder will be equal to SYMBOLTONUMBER(symbol), and the quotient will
+be equal to PATTERNTONUMBER(PREFIX(Pattern)). Thus, we can use this fact to peel
+away symbols at the end of Pattern one at a time, as shown in Figure 1.21.
+STOP and Think: Once we have computed NUMBERTOPATTERN(9904, 7) in
+Figure 1.21, how would you compute NUMBERTOPATTERN(9904, 8)?
+In the pseudocode below, we denote the quotient and the remainder when dividing
+integer n by integer m as QUOTIENT(n, m) and REMAINDER(n, m), respectively. For
+example, QUOTIENT(11, 4) = 2 and REMAINDER(11, 4) = 3. This pseudocode uses the
+function NUMBERTOSYMBOL(index), which is the inverse of SYMBOLTONUMBER and
+transforms the integers 0, 1, 2, and 3 into the respective symbols A, C, G, and T.
+42
+
+
+--- PDF page 68 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+n
+QUOTIENT(n, 4)
+REMAINDER(n, 4)
+NUMBERTOSYMBOL
+9904
+2476
+0
+A
+2476
+619
+0
+A
+619
+154
+3
+T
+154
+38
+2
+G
+38
+9
+2
+G
+9
+2
+1
+C
+2
+0
+2
+G
+⇠
+⇠
+⇠
+⇠
+9
+⇠
+⇠
+⇠
+⇠
+9
+⇠
+⇠
+⇠
+⇠
+9
+⇠
+⇠
+⇠
+⇠
+9
+⇠
+⇠
+⇠
+⇠
+9
+⇠
+⇠
+⇠
+⇠
+9
+FIGURE 1.21 When computing Pattern = NUMBERTOPATTERN(9904, 7), we divide
+9904 by 4 to obtain a quotient of 2476 and a remainder of 0. This remainder represents
+the ﬁnal nucleotide of Pattern, or NUMBERTOSYMBOL(0) = A. We then iterate this
+process, dividing each subsequent quotient by 4, until we obtain a quotient of 0. The
+symbols in the nucleotide column, read upward from the bottom, yield Pattern =
+GCGGTAA.
+NUMBERTOPATTERN(index , k)
+if k = 1
+return NUMBERTOSYMBOL(index)
+preﬁxIndex QUOTIENT(index, 4)
+r REMAINDER(index, 4)
+symbol NUMBERTOSYMBOL(r)
+PreﬁxPattern NUMBERTOPATTERN(preﬁxIndex, k −1)
+return concatenation of PreﬁxPattern with symbol
+1M
+Finding frequent words by sorting
+To see how sorting can help us ﬁnd frequent k-mers, we will consider a motivating exam-
+ple when k = 2. Given a string Text = AAGCAAAGGTGGG, list all its 2-mers in the order
+they appear in Text, and convert each 2-mer into an integer using PATTERNTONUMBER
+to produce an array INDEX, as shown below.
+2-mer
+AA
+AG
+GC
+CA
+AA
+AA
+AG
+GG
+GT
+TG
+GG
+GG
+INDEX
+0
+2
+9
+4
+0
+0
+2
+10
+11
+14
+10
+10
+We will now sort INDEX to generate an array SORTEDINDEX, as shown in Figure 1.22.
+STOP and Think: How can the sorted array in Figure 1.22 help us ﬁnd frequent
+words?
+43
+
+
+--- PDF page 69 ---
+C H A P T E R 1
+2-mer
+AA
+AA
+AA
+AG
+AG
+CA
+GC
+GG
+GG
+GG
+GT
+TG
+SORTEDINDEX
+0
+0
+0
+2
+2
+4
+9
+10
+10
+10
+11
+14
+COUNT
+1
+2
+3
+1
+2
+1
+1
+1
+2
+3
+1
+1
+FIGURE 1.22 Lexicographically sorted 2-mers in AAGCAAAGGTGG (top), along with
+arrays SORTEDINDEX (middle) and COUNT (bottom).
+Since identical k-mers clump together in the sorted array (like (0, 0, 0) for AA or
+(10, 10, 10) for GG in Figure 1.22), frequent k-mers are the longest runs of identical inte-
+gers in SORTEDINDEX. This insight leads to FINDINGFREQUENTWORDSBYSORTING,
+whose pseudocode is shown below. This algorithm uses an array COUNT for which
+COUNT(i) computes the number of times that the integer at position i in the array
+SORTEDINDEX appears in the ﬁrst i elements of this array (Figure 1.22 (bottom)). In the
+pseudocode for FINDINGFREQUENTWORDSBYSORTING, we assume that you already
+know how to sort an array using an algorithm SORT.
+FINDINGFREQUENTWORDSBYSORTING(Text , k)
+FrequentPatterns an empty set
+for i 0 to |Text| −k
+Pattern Text(i, k)
+INDEX(i) PATTERNTONUMBER(Pattern)
+COUNT(i) 1
+SORTEDINDEX SORT(INDEX)
+for i 1 to |Text| −k
+if SORTEDINDEX(i) = SORTEDINDEX(i −1)
+COUNT(i) = COUNT(i −1) + 1
+maxCount maximum value in the array COUNT
+for i 0 to |Text| −k
+if COUNT(i) = maxCount
+Pattern NUMBERTOPATTERN(SORTEDINDEX(i), k)
+add Pattern to the set FrequentPatterns
+return FrequentPatterns
+Solving the Clump Finding Problem
+Note: This Charging Station assumes that you have read CHARGING STATION: The
+PAGE
+39
+Frequency Array.
+44
+
+
+--- PDF page 70 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+The pseudocode below slides a window of length L down Genome. After computing
+the frequency array for the current window, it identiﬁes (L, t)-clumps simply by ﬁnding
+which k-mers occur at least t times within the window. To keep track of these clumps,
+our algorithm uses an array CLUMP of length 4k whose values are all initialized to
+zero. For each value of i between 0 and 4k −1, we will set CLUMP(i) equal to 1 if
+NUMBERTOPATTERN(i, k) forms an (L, t)-clump in Genome.
+CLUMPFINDING(Genome, k, t, L)
+FrequentPatterns an empty set
+for i 0 to 4k −1
+CLUMP(i) 0
+for i 0 to |Genome| −L
+Text the string of length L starting at position i in Genome
+FREQUENCYARRAY COMPUTINGFREQUENCIES(Text, k)
+for index 0 to 4k −1
+if FREQUENCYARRAY(index) ≥t
+CLUMP(index) 1
+for i 0 to 4k −1
+if CLUMP(i) = 1
+Pattern NUMBERTOPATTERN(i, k)
+add Pattern to the set FrequentPatterns
+return FrequentPatterns
+EXERCISE BREAK: Estimate the running time of CLUMPFINDING.
+CLUMPFINDING makes |Genome| −L + 1 iterations, generating a frequency array for a
+string of length L at each iteration. Since this task takes roughly 4k + L · k time, the over-
+all running time of CLUMPFINDING is O
+⇣
+|Genome| · (4k + L · k)
+⌘
+. As a result, when
+searching for DnaA boxes (k = 9) in a typical bacterial genome (|Genome| > 1000000),
+CLUMPFINDING becomes too slow.
+STOP and Think: Can you speed up CLUMPFINDING by eliminating the need
+to generate a new frequency array at every iteration?
+To improve CLUMPFINDING, we observe that when we slide our window of length L
+one symbol to the right, the frequency array does not change much, and so regener-
+45
+
+
+--- PDF page 71 ---
+C H A P T E R 1
+ating the frequency array from scratch is inefﬁcient. For example, Figure 1.23 shows
+the frequency arrays (k = 2) for the 13-mers Text = AAGCAAAGGTGGG and Text0 =
+AGCAAAGGTGGGC starting at positions 0 and 1 of the 14-mer AAGCAAAGGTGGGC. These
+two frequency arrays differ in only two elements corresponding to the ﬁrst k-mer in
+Text (AA) and the last k-mer in Text’ (GC). Speciﬁcally, the frequency array value corre-
+sponding to the ﬁrst k-mer of Text is reduced by 1 in the frequency array of Text’, and
+the frequency array value corresponding to the last k-mer of Text is increased by 1 in
+the frequency array of Text’.
+This observation helps us modify CLUMPFINDING as shown below. Note that we
+now only call COMPUTINGFREQUENCIES once, updating the frequency array as we go
+along.
+BETTERCLUMPFINDING(Genome, k, t, L)
+FrequentPatterns an empty set
+for i 0 to 4k −1
+CLUMP(i) 0
+Text Genome(0, L)
+FREQUENCYARRAY COMPUTINGFREQUENCIES(Text, k)
+for i 0 to 4k −1
+if FREQUENCYARRAY(i) ≥t
+CLUMP(i) 1
+for i 1 to |Genome| −L
+FirstPattern Genome(i −1, k)
+index PATTERNTONUMBER(FirstPattern)
+FREQUENCYARRAY(index) FREQUENCYARRAY(index) −1
+LastPattern Genome(i + L −k, k)
+index PATTERNTONUMBER(LastPattern)
+FREQUENCYARRAY(index) FREQUENCYARRAY(index) + 1
+if FREQUENCYARRAY(index) ≥t
+CLUMP(index) 1
+for i 0 to 4k −1
+if CLUMP(i) = 1
+Pattern NUMBERTOPATTERN(i, k)
+add Pattern to the set FrequentPatterns
+return FrequentPatterns
+46
+
+
+--- PDF page 72 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+k-mer AA AC AG AT CA CC CG CT GA GC GG GT TA TC TG TT
+INDEX
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+frequency
+3
+0
+2
+0
+1
+0
+0
+0
+0
+1
+3
+1
+0
+0
+1
+0
+frequency’
+2
+0
+2
+0
+1
+0
+0
+0
+0
+2
+3
+1
+0
+0
+1
+0
+FIGURE 1.23 The frequency arrays for two consecutive substrings of length 13 starting
+at positions 0 and 1 of AAGCAAAGGTGGGC are very similar to each other.
+Solving the Frequent Words with Mismatches Problem
+Note: This Charging Station uses some notation from CHARGING STATION: The
+PAGE
+39
+Frequency Array.
+To prevent having to generate all 4k k-mers in order to solve the Frequent Words with
+Mismatches Problem, our goal is to consider only those k-mers that are close to a k-mer
+in Text, i.e., those with Hamming distance at most d from this k-mer. Given a k-mer
+Pattern, we therefore deﬁne its d-neighborhood NEIGHBORS(Pattern, d) as the set of all
+k-mers that are close to Pattern. For example, NEIGHBORS(ACG, 1) consists of ten 3-mers:
+ACG
+CCG
+GCG
+TCG
+AAG
+AGG
+ATG
+ACA
+ACC
+ACT
+EXERCISE BREAK: Estimate the size of NEIGHBORS(Pattern, d).
+We will also use an array CLOSE of size 4k whose values we initialize to zero. In
+the FREQUENTWORDSWITHMISMATCHES pseudocode below, we set CLOSE(i) = 1
+whenever Pattern = NUMBERTOPATTERN(i, k) is close to some k-mer in Text. This
+allows us to apply APPROXIMATEPATTERNCOUNT only to close k-mers, a smarter
+approach than applying it to all k-mers.
+CHARGING STATION (Generating the Neighborhood of a String):
+FREQUENTWORDSWITHMISMATCHES also calls NEIGHBORS(Pattern, d), a
+function that generates the d-neighborhood of a k-mer Pattern. Check out this
+Charging Station to learn how to implement this function.
+PAGE
+49
+STOP and Think: Although FREQUENTWORDSWITHMISMATCHES is faster
+than the naive algorithm described in the main text for the typical parameters
+used in oriC searches, it is not necessarily faster for all parameter values. For
+which parameter values is FREQUENTWORDSWITHMISMATCHES slower than
+the naive algorithm?
+47
+
+
+--- PDF page 73 ---
+C H A P T E R 1
+FREQUENTWORDSWITHMISMATCHES(Text, k, d)
+FrequentPatterns an empty set
+for i 0 to 4k −1
+CLOSE(i) 0
+FREQUENCYARRAY 0
+for i 0 to |Text| −k
+Neighborhood NEIGHBORS(Text(i, k), d)
+for each Pattern from Neighborhood
+index PATTERNTONUMBER(Pattern)
+CLOSE(index) 1
+for i 0 to 4k −1
+if CLOSE(i) = 1
+Pattern NUMBERTOPATTERN(i, k)
+FREQUENCYARRAY(i) APPROXIMATEPATTERNCOUNT(Text, Pattern, d)
+maxCount maximal value in FREQUENCYARRAY
+for i 0 to 4k −1
+if FREQUENCYARRAY(i) = maxCount
+Pattern NUMBERTOPATTERN(i, k)
+add Pattern to the set FrequentPatterns
+return FrequentPatterns
+CHARGING STATION (Finding Frequent Words with Mismatches by Sort-
+ing): If you are familiar with sorting and are interested in seeing an even faster
+algorithm for the Frequent Words with Mismatches Problem, check out this
+Charging Station.
+PAGE
+51
+48
+
+
+--- PDF page 74 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+Generating the neighborhood of a string
+Our goal is to generate the d-neighborhood NEIGHBORS(Pattern, d), the set of all k-mers
+whose Hamming distance from Pattern does not exceed d. We will ﬁrst generate the
+1-neigborhood of Pattern using the following pseudocode.
+IMMEDIATENEIGHBORS(Pattern)
+Neighborhood the set consisting of the single string Pattern
+for i = 1 to |Pattern|
+symbol i-th nucleotide of Pattern
+for each nucleotide x diﬀerent from symbol
+Neighbor Pattern with the i-th nucleotide substituted by x
+add Neighbor to Neighborhood
+return Neighborhood
+Our idea for generating NEIGHBORS(Pattern, d) is as follows. If we remove the ﬁrst
+symbol of Pattern (denoted FIRSTSYMBOL(Pattern)), then we will obtain a (k −1)-mer
+that we denote by SUFFIX(Pattern).
+STOP and Think: If we know NEIGHBORS(SUFFIX(Pattern), d), how does it help
+us construct NEIGHBORS(Pattern, d)?
+Now, consider a (k −1)-mer Pattern’ belonging to NEIGHBORS(SUFFIX(Pattern), d).
+By the deﬁnition of the d-neighborhood NEIGHBORS(SUFFIX(Pattern), d), we know
+that HAMMINGDISTANCE(Pattern0, SUFFIX(Pattern)) is either equal to d or less than
+d. In the ﬁrst case, we can add FIRSTSYMBOL(Pattern) to the beginning of Pattern’
+in order to obtain a k-mer belonging to NEIGHBORS(Pattern, d). In the second case,
+we can add any symbol to the beginning of Pattern’ and obtain a k-mer belonging to
+NEIGHBORS(Pattern, d).
+In the following pseudocode for NEIGHBORS, we use the notation symbol • Text to
+denote the concatenation of a character symbol and a string Text, e.g., A • GCATG =
+AGCATG.
+49
+
+
+--- PDF page 75 ---
+C H A P T E R 1
+NEIGHBORS(Pattern, d)
+if d = 0
+return {Pattern}
+if |Pattern| = 1
+return {A, C, G, T}
+Neighborhood an empty set
+SuﬃxNeighbors NEIGHBORS(SUFFIX(Pattern), d)
+for each string Text from SuﬃxNeighbors
+if HAMMINGDISTANCE(SUFFIX(Pattern), Text) < d
+for each nucleotide x
+add x • Text to Neighborhood
+else
+add FIRSTSYMBOL(Pattern) • Text to Neighborhood
+return Neighborhood
+1N
+STOP and Think: Consider the following questions.
+1. What is the running time of NEIGHBORS?
+2. NEIGHBORS generates all k-mers of Hamming distance at most d from
+Pattern. Modify NEIGHBORS to generate all k-mers of Hamming distance
+exactly d from Pattern.
+If you are still learning how recursive algorithms (like NEIGHBORS) work, you may
+want to implement an iterative version of NEIGHBORS instead, shown below.
+ITERATIVENEIGHBORS(Pattern, d)
+Neighborhood set consisting of single string Pattern
+for j = 1 to d
+for each string Pattern’ in Neighborhood
+add IMMEDIATENEIGHBORS(Pattern0) to Neighborhood
+remove duplicates from Neighborhood
+return Neighborhood
+50
+
+
+--- PDF page 76 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+Finding frequent words with mismatches by sorting
+Note: This Charging Station uses some notation from CHARGING STATION: Finding
+PAGE
+43
+Frequent Words by Sorting.
+The following pseudocode reduces the Frequent Words with Mismatches Problem
+to sorting.
+FINDINGFREQUENTWORDSWITHMISMATCHESBYSORTING(Text, k, d)
+FrequentPatterns an empty set
+Neighborhoods an empty list
+for i 0 to |Text| −k
+add NEIGHBORS(Text(i, k), d) to Neighborhoods
+form an array NEIGHBORHOODARRAY holding all strings in Neighborhoods
+for i 0 to |Neighborhoods| −1
+Pattern NEIGHBORHOODARRAY(i)
+INDEX(i) PATTERNTONUMBER(Pattern)
+COUNT(i) 1
+SORTEDINDEX SORT(INDEX)
+for i 0 to |Neighborhoods| −1
+if SORTEDINDEX(i) = SORTEDINDEX(i + 1)
+COUNT(i + 1) COUNT(i) + 1
+maxCount maximum value in array COUNT
+for i 0 to |Neighborhoods| −1
+if COUNT(i) = maxCount
+Pattern NUMBERTOPATTERN(SORTEDINDEX(i), k)
+add Pattern to FrequentPatterns
+return FrequentPatterns
+51
+
+
+--- PDF page 77 ---
+C H A P T E R 1
+Detours
+Big-O notation
+Computer scientists typically measure an algorithm’s efﬁciency in terms of its worst-
+case running time, which is the largest amount of time an algorithm can take for the
+most difﬁcult input of a given size. The advantage to considering the worst-case running
+time is that we are guaranteed that our algorithm will never behave worse than our
+worst-case estimate.
+Big-O notation compactly describes the running time of an algorithm. For example,
+if your algorithm for sorting an array of n numbers takes roughly n2 operations for the
+most difﬁcult dataset, then we say that the running time of your algorithm is O
+!
+n2"
+.
+In reality, depending on your implementation, it may use any number of operations,
+such as 1.5n2, n2 + n + 2, or 0.5n2 + 1; all these algorithms are O
+!
+n2"
+because big-O
+notation only cares about the term that grows the fastest with respect to the size of the
+input. This is because as n grows very large, the difference in behavior between two
+O
+!
+n2"
+functions, like 999 · n2 and n2 + 3n + 9999999, is negligible when compared to
+the behavior of functions from different classes, say O
+!
+n2"
+and O
+!
+n6"
+. Of course, we
+would prefer an algorithm requiring 1/2 · n2 steps to an algorithm requiring 1000 · n2
+steps.
+When we write that the running time of an algorithm is O
+!
+n2"
+, we technically
+mean that it does not grow faster than a function with a leading term of c · n2, for
+some constant c. Formally, a function f (n) is Big-O of function g(n), or O(g(n)), when
+f (n) c · g(n) for some constant c and sufﬁciently large n.
+Probabilities of patterns in a string
+We mentioned that the probability that some 9-mer appears 3 or more times in a random
+DNA string of length 500 is approximately 1/1300. We assure you that this calculation
+does not appear out of thin air. Speciﬁcally, we can generate a random string modeling
+a DNA strand by choosing each nucleotide for any position with probability 1/4. The
+construction of random strings can be generalized to an arbitrary alphabet with A
+symbols, where each symbol is chosen with probability 1/A.
+EXERCISE BREAK: What is the probability that two randomly generated strings
+of length n in an A-letter alphabet are identical?
+We now ask a simple question: what is the probability that a speciﬁc k-mer Pattern
+will appear (at least once) as a substring of a random string of length N? For example,
+52
+
+
+--- PDF page 78 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+say that we want to ﬁnd the probability that "01" appears in a random binary string
+(A = 2) of length 4. Here are all possible such strings.
+0000 0001 0010 0011 0100 0101 0110 0111
+1000 1001 1010 1011 1100 1101 1110 1111
+Because "01" is a substring of 11 of these 4-mers, and because each 4-mer could be
+generated with probability 1/16, the probability that "01" appears in a random binary
+4-mer is 11/16.
+STOP and Think: What is the probability that Pattern = "11" appears as a sub-
+string of a random binary 4-mer?
+Surprisingly, changing Pattern from "01" to "11" changes the probability that it appears
+as a substring of a random binary string. Indeed, "11" appears in only 8 binary 4-mers:
+0000 0001 0010 0011 0100 0101 0110 0111
+1000 1001 1010 1011 1100 1101 1110 1111
+As a result, the probability of "11" appearing in a random binary string of length 4 is
+8/16 = 1/2.
+STOP and Think: Why do you think that "11" is less likely than "01" to appear
+as a substring of a random binary 4-mer?
+Let Pr(N, A, Pattern, t) denote the probability that a string Pattern appears t or more
+times in a random string of length N formed from an alphabet of A letters. We saw that
+Pr(4, 2, "01", 1) = 11/16 while Pr(4, 2, "11", 1) = 1/2. Interestingly, when we make t
+greater than 1, we see that "01" is less likely to appear multiple times than "11". For
+example, the probability of ﬁnding "01" twice or more in a random binary 4-mer is
+given by Pr(4, 2, "01", 2) = 1/16 because "0101" is the only binary 4-mer containing
+"01" twice, and yet Pr(4, 2, "11", 2) = 3/16 because binary 4-mers "0111", "1110" and
+"1111" all have at least two occurrences of "11".
+EXERCISE BREAK: Compute Pr(100, 2, "01", 1).
+We have seen that different k-mers have different probabilities of occurring multiple
+times as a substring of a random string. In general, this phenomenon is called the
+overlapping words paradox because different substring occurrences of Pattern can
+53
+
+
+--- PDF page 79 ---
+C H A P T E R 1
+overlap each other for some choices of Pattern but not others (see DETOUR: The
+PAGE 62
+Overlapping Words Paradox).
+For example, there are two overlapping occurrences of "11" in "1110", and three
+overlapping occurrences of "11" in "1111"; yet occurrences of "01" can never overlap
+with each other, and so "01" can never occur more than twice in a binary 4-mer. The
+overlapping words paradox makes computing Pr(N, A, Pattern, t) a rather complex
+problem because this probability depends heavily on the particular choice of Pattern. In
+light of the complications presented by the overlapping words paradox, we will try to
+approximate Pr(A, N, Pattern, t) rather than compute it exactly.
+To approximate Pr(N, A, Pattern, t), we will assume that the k-mer Pattern is not
+overlapping. As a toy example, say we we wish to count the number of ternary strings
+(A = 3) of length 7 that contain "01" at least twice. Apart from the two occurrences of
+"01", we have three remaining symbols in the string. Let’s assume that these symbols
+are all "2". The two occurrences of "01" can be inserted into "222" in ten different ways
+to form a 7-mer, as shown below.
+0101222
+0120122
+0122012
+0122201
+2010122
+2012012
+2012201
+2201012
+2201201
+2220101
+We inserted these two occurrences of "01" into "222", but we could have inserted
+them into any other ternary 3-mer. Because there are 33 = 27 ternary 3-mers, we obtain
+an approximation of 10 · 27 = 270 for the number of ternary 7-mers that contain two or
+more instances of "01". Because there are 37 = 2187 ternary 7-mers, we estimate the
+probability Pr(7, 3, "01", 2) as 270/2187.
+STOP and Think: Is 270/2187 a good approximation for Pr(7, 3, "01", 2)? Is the
+true probability Pr(7, 3, "01", 2) larger or smaller than 270/2187?
+To generalize the above method to approximate Pr(N, A, Pattern, t) for arbitrary param-
+eter values, consider a string Text of length N having at least t occurrences of a k-mer
+Pattern. If we select exactly t of these occurrences, then we can think about Text as a
+sequence of n = N −t · k symbols interrupted by t insertions of the k-mer Pattern. If we
+ﬁx these n symbols, then we wish to count the number of different strings Text that can
+be formed by inserting t occurrences of Pattern into a string formed by these n symbols.
+For example, consider again the problem of embedding two occurrences of "01"
+into "222" (n = 3), and note that we have added ﬁve copies of a capital "X" below each
+7-mer.
+54
+
+
+--- PDF page 80 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+0101222
+0120122
+0122012
+0122201
+2010122
+X X XXX
+X XX XX
+X XXX X
+X XXXX
+XX X XX
+2012012
+2012201
+2201012
+2201201
+2220101
+XX XX X
+XX XXX
+XXX X X
+XXX XX
+XXXX X
+What do the "X" mean? Instead of counting the number of ways to insert two occur-
+rences of "01" into "222", we can count the number of ways to select two of the ﬁve
+"X" to color blue.
+XXXXX XXXXX XXXXX XXXXX XXXXX
+XXXXX XXXXX XXXXX XXXXX XXXXX
+In other words, we are counting the number of ways to choose 2 out of 5 objects, which
+can be counted by the binomial coefﬁcient (5
+2) = 10. More generally, the binomial
+coefﬁcient (m
+k) represents the number of ways to choose k out of m objects and is equal
+to m!
+%
+k!(m −k)!
+STOP and Think: How many ways are there to implant t instances of a (nonover-
+lapping) k-mer into a string of length n to produce a string of length n + t · k?
+To approximate Pr(N, A, Pattern, t), we want to count the number of ways to insert t
+instances of a k-mer Pattern into a ﬁxed string of length n = N −t · k. We will therefore
+have n + t occurrences of "X", from which we must select t for the placements of Pattern,
+giving a total of (n+t
+t ). We then need to multiply (n+t
+t ) by the number of strings of
+length n into which we can insert t instances of Pattern to have an approximate total of
+(n+t
+t ) · An (the actual number will be smaller because of over-counting). Dividing by
+the number of strings of length N, we have our desired approximation,
+Pr(N, A, Pattern, t) ⇡(n+t
+t ) · An
+AN
+= (N−t·(k−1)
+t
+)
+At·k
+.
+We will now compute the probability that the speciﬁc 5-mer ACTAT occurs at least
+t = 3 times in a random DNA string (A = 4) of length N = 30. Since n = N −t · k = 15,
+our estimated probability is
+Pr(30, 4, ACTAT, 3) ⇡(30−3·4
+3
+)
+415
+=
+816
+1073741824 ⇡7.599 · 10−7 .
+The exact probability is closer to 7.572 · 10−7, illustrating that our approximation is
+relatively accurate for non-overlapping patterns. However, it becomes inaccurate for
+overlapping patterns, e.g., Pr(30, 4, AAAAA, 3) ⇡1.148 · 10−3.
+55
+
+
+--- PDF page 81 ---
+C H A P T E R 1
+We should not be surprised that the probability of ﬁnding ACTAT in a random
+DNA string of length 30 is so low. However, remember that our original goal was to
+approximate the probability that there exists some 5-mer appearing three or more times.
+In general, the probability that some k-mer appears t or more times in a random string
+of length N formed over an A-letter alphabet is written Pr(N, A, k, t).
+We approximated Pr(N, A, Pattern, t) as
+p = (N−t·(k−1)
+t
+)
+At·k
+.
+Notice that the approximate probability that Pattern does not appear t or more times is
+therefore 1 −p. Thus, the probability that all Ak patterns appear fewer than t times in a
+random string of length N can be approximated as
+(1 −p)Ak .
+Moreover, the probability that there exists a k-mer appearing t or more times should be
+1 minus this value, which gives us the following approximation:
+Pr(N, A, k, t) ⇡1 −(1 −p)Ak.
+Your calculator may have difﬁculty with this formula, which requires raising a
+number close to 1 to a very large power and can cause round-off errors. To avoid
+this, if we assume that p is about the same for any Pattern, then we can approximate
+Pr(N, A, k, t) by multiplying p by the total number of k-mers Ak,
+Pr(N, A, k, t) ⇡p · Ak = (N−t·(k−1)
+t
+)
+At·k
+· Ak = (N−t·(k−1)
+t
+)
+A(t−1)·k
+.
+We acknowledge again that this approximation is a gross over-simpliﬁcation, since the
+probability Pr(N, A, Pattern, t) varies across different choices of k-mers and because it
+assumes that occurrences of different k-mers are independent events. For example, in
+the main text, we wish to approximate Pr(500, 4, 9, 3), and the above formula results in
+the approximation
+Pr(500, 4, 9, 3) ⇡(500−3·8
+3
+)
+4(3−1)·9 =
+17861900
+68719476736 ⇡
+1
+3847 .
+Because of overlapping strings, this approximation deviates from the true value of
+Pr(500, 4, 9, 3), which is closer to 1/1300.
+56
+
+
+--- PDF page 82 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+The most beautiful experiment in biology
+The Meselson-Stahl experiment, conducted in 1958 by Matthew Meselson and Franklin
+Stahl, is sometimes called “the most beautiful experiment in biology”. In the late 1950s,
+biologists debated three conﬂicting models of DNA replication, illustrated in Figure 1.24.
+The semiconservative hypothesis (recall Figure 1.1 from page 3), suggested that each
+parent strand acts as a template for the synthesis of a daughter strand. As a result, each
+of the two daughter molecules contains one parent strand and one newly synthesized
+strand. The conservative hypothesis proposed that the entire double-stranded parent
+DNA molecule serves as a template for the synthesis of a new daughter molecule, result-
+ing in one molecule with two parent strands and another with two newly synthesized
+strands. The dispersive hypothesis proposed that some mechanism breaks the DNA
+backbone into pieces and splices intervals of synthesized DNA, so that each of the
+daughter molecules is a patchwork of old and new double-stranded DNA.
+Semiconservative 
+Conservative 
+Dispersive 
+Parental 
+DNA 
+After 1 round 
+of replication 
+After 2 rounds 
+of replication 
+FIGURE 1.24 Semiconservative, conservative, and dispersive models of DNA replication
+make diﬀerent predictions about the distribution of DNA strands after replication. Yellow
+strands indicate 15N (heavy) segments of DNA, and black strands indicate 14N (light)
+segments. The Meselson-Stahl experiment began with DNA consisting of 100% 15N.
+Meselson and Stahl’s insight was that one isotope of nitrogen, Nitrogen-14 (14N),
+is lighter and more abundant than Nitrogen-15 (15N). Knowing that DNA naturally
+contains 14N , Meselson and Stahl grew E. coli for many rounds of replication in a 15N
+medium, which caused the bacteria to gain weight as they absorbed the heavier isotope
+into their DNA. When they were conﬁdent that the bacterial DNA was saturated with
+15N, they transferred the heavy E. coli cells to a less dense 14N medium.
+57
+
+
+--- PDF page 83 ---
+C H A P T E R 1
+STOP and Think: What do you think happened when the “heavy” E. coli repli-
+cated in the “light” 14N medium?
+The brilliance of the Meselson-Stahl experiment is that all newly synthesized DNA
+would contain exclusively 14N, and the three existing hypotheses for DNA replication
+predicted different outcomes for how this 14N isotope would be incorporated into DNA.
+Speciﬁcally, after one round of replication, the conservative model predicted that half
+the E. coli DNA would still have only 15N and therefore be heavier whereas the other
+half would have only 14N and be lighter. Yet when they attempted to separate the E. coli
+DNA according to weight by using a centrifuge after one round of replication, all of the
+DNA had the same density! Just like that, they had refuted the conservative hypothesis
+once and for all.
+Unfortunately, this experiment was not able to eliminate either of the other two
+models, as both the dispersive and semiconservative hypotheses predicted that all of
+the DNA after one round of replication would have the same density.
+STOP and Think: What would the dispersive and semiconservative models
+predict about the density of E. coli DNA after two rounds of replication?
+Let’s ﬁrst consider the dispersive model, which says that each daughter strand of DNA
+is formed by half mashed up pieces of the parent strand, and half new DNA. If this
+hypothesis were true, then after two replication cycles, any daughter strand of DNA
+should contain about 25% 15N and about 75% 14N. In other words, all the DNA should
+still have the same density. And yet when Meselson and Stahl spun the centrifuge after
+two rounds of E. coli replication, this is not what they observed!
+Instead, they found that the DNA divided into two different densities. This is exactly
+what the semiconservative model predicted: after one cycle, every cell should possess
+one 14N strand and one 15N strand; after two cycles, half of the DNA molecules should
+have one 14N strand and one 15N strand, while the other half should have two 14N
+strands, producing the two different densities they noticed.
+STOP and Think: What does the semi-conservative model predict about the
+density of E. coli DNA after three rounds of replication?
+Meselson and Stahl had rejected the conservative and dispersive hypotheses of repli-
+cation, and yet they wanted to make sure that the semiconservative hypothesis was
+conﬁrmed by further E. coli replication. This model predicted that after three rounds of
+58
+
+
+--- PDF page 84 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+replication, one-quarter of the DNA molecules should still have a 15N strand, causing
+25% of the DNA to have an intermediate density, whereas the remaining 75% should be
+lighter, having only 14N. This is indeed what Meselson and Stahl witnessed in the lab,
+and the semiconservative hypothesis has stood strong to this day.
+Directionality of DNA strands
+The sugar component of a nucleotide has a ring of ﬁve carbon atoms, which are labeled
+as 10, 20, 30, 40, and 50 in Figure 1.25 (left). The 50 atom is joined onto the phosphate
+group in the nucleotide and eventually to the 30 end of the neighboring nucleotide. The
+30 atom is joined onto another neighboring nucleotide in the nucleic acid chain. As a
+result, we call the two ends of the nucleotide the 5’-end and the 3’-end (pronounced
+“ﬁve prime end” and "three prime end”, respectively).
+Base 
+H 
+OH 
+OH 
+O 
+O 
+O 
+O 
+P 
+4’ 
+5’ 
+3’ 
+2’ 
+1’ 
+FIGURE 1.25 A nucleotide with sugar ring carbon atoms labeled 1’, 2’, 3’, 4’, and 5’.
+When we zoom out to the level of the double helix, we can see in Figure 1.25 (right)
+that any DNA fragment is oriented with a 30 atom on one end and a 50 atom on the
+other end. As a standard, a DNA strand is always read in the 50 ! 30 direction. Note
+that the orientations run opposite to each other in complementary strands.
+59
+
+
+--- PDF page 85 ---
+C H A P T E R 1
+The Towers of Hanoi
+The Towers of Hanoi puzzle consists of three vertical pegs and a number of disks of
+different sizes, each with a hole in its center so that it ﬁts on the pegs. The disks are
+initially stacked on the left peg (peg 1) so that disks increase in size from the top down
+(Figure 1.26). The puzzle is played by moving one disk at a time between pegs, with the
+goal of moving all disks from the left peg (peg 1) to the right peg (peg 3). However, you
+are not allowed to place a disk on top of a smaller disk.
+FIGURE 1.26 The Towers of Hanoi puzzle.
+Towers of Hanoi Problem:
+Solve the Towers of Hanoi puzzle.
+Input: An integer n.
+Output: A sequence of moves that will solve the Towers of Hanoi puzzle
+with n disks.
+STOP and Think: What is the minimum number of steps needed to solve the
+Towers of Hanoi Problem for three disks?
+Let’s see how many steps are required to solve the Towers of Hanoi Problem for four
+disks. The ﬁrst important observation is that sooner or later you will have to move the
+largest disk to the right peg. However, in order to move the largest disk, we ﬁrst have
+to move all three smallest disks off the ﬁrst peg. Furthermore, these three smallest disks
+60
+
+
+--- PDF page 86 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+must all be on the same peg because the largest disk cannot be placed on top of another
+disk. Thus, we ﬁrst have to move the top three disks to the middle peg (7 moves), then
+move the largest disk to the right peg (1 move), then again move the three smallest
+disks from the middle peg to the top of the largest disk on the right peg (another 7
+moves), for a total of 15 moves.
+More generally, let T(n) denote the minimum number of steps required to solve the
+Towers of Hanoi puzzle with n disks. To move n disks from the left peg to the right
+peg, you ﬁrst need to move the n −1 smallest disks from the left peg to the middle peg
+(T(n −1) steps), then move the largest disk to the right peg (1 step), and ﬁnally move
+the n −1 smallest disks from the middle peg to the right peg (T(n −1) steps). This
+yields the recurrence relation
+T(n) = 2T(n −1) + 1 .
+STOP and Think: Using the above recurrence relation, can you ﬁnd a formula
+for T(n) that does not require recursion?
+We now have a recursive algorithm to move n disks from the left peg to the right peg.
+We will use three variables (each taking a different value from 1, 2, and 3) to denote
+the three pegs: startPeg, destinationPeg, and transitPeg. These three variables always
+represent different pegs, and so startPeg + destinationPeg + transitPeg is always equal to
+1 + 2 + 3 = 6. HANOITOWERS(n, startPeg, destinationPeg) moves n disks from startPeg
+to destinationPeg (using transitPeg as a temporary destination).
+HANOITOWERS(n, startPeg, destinationPeg)
+if n = 1
+Move top disk from startPeg to destinationPeg
+return
+transitPeg = 6 −startPeg −destinationPeg
+HANOITOWERS(n −1, startPeg, transitPeg)
+Move top disk from startPeg to destinationPeg
+HANOITOWERS(n −1, transitPeg, destinationPeg)
+return
+Even though this algorithm may seem straightforward, moving a 100-disk tower would
+require more steps than the number of atoms in the universe! The fast growth of the
+number of moves required by HANOITOWERS is explained by the fact that every time
+61
+
+
+--- PDF page 87 ---
+C H A P T E R 1
+HANOITOWERS is called for n disks, it calls itself twice for n −1, which in turn trig-
+gers four calls for n −2, and so on. For example, a call to HANOITOWERS(4, 1, 3)
+results in calls HANOITOWERS(3, 1, 2) and HANOITOWERS(3, 2, 3); these calls, in
+turn, call HANOITOWERS(2, 1, 3), HANOITOWERS(2, 3, 2), HANOITOWERS(2, 2, 1),
+and HANOITOWERS(2, 1, 3).
+The overlapping words paradox
+We illustrate the overlapping words paradox with a two-player game called “Best Bet
+for Simpletons”. Player 1 selects a binary k-mer A, and Player 2, knowing what A is,
+selects a different binary k-mer B. The two players then ﬂip a coin multiple times, with
+coin ﬂips represented by strings of "1" (“heads”) and "0" (“tails”); the game ends when
+A or B appears as a block of k consecutive coin ﬂips.
+STOP and Think: Do the two players always have the same chance of winning?
+At ﬁrst glance, you might guess that every k-mer has an equal chance of winning. Yet
+suppose that Player 1 chooses "00" and Player 2 chooses "10". After two ﬂips, either
+Player 1 wins ("00"), Player 2 wins ("10"), or the game continues ("01" or "11"). If
+the game continues, then Player 1 should surrender, since Player 2 will win as soon as
+“tails” ("0") is next ﬂipped. Player 2 is therefore three times more likely to win!
+It may seem that Player 1 should have the advantage by simply selecting the
+“strongest” k-mer. However, an intriguing feature of Best Bet for Simpletons is that if
+k > 2, then Player 2 can always choose a k-mer B that beats A, regardless of Player 1’s
+choice of A. Another surprise is that Best Bet for Simpletons is a non-transitive game:
+if A defeats B, and B defeats C, then we cannot automatically conclude that A defeats C
+(c.f. rock-paper-scissors).
+The analysis of Best Bet for Simpletons is based on the notion of a correlation
+polynomial. We say that B i-overlaps with A if the last i digits of A coincide with the
+ﬁrst i digits of B. For example, "110110" 1-overlaps, 2-overlaps, and 5-overlaps with
+"011011", as shown in Figure 1.27.
+Given two k-mers A and B, the correlation of A and B, denoted CORR(A, B) =
+(c0, . . . , ck−1), is a k-letter binary word such that ci = 1 if B (k −i)-overlaps with A, and
+0 otherwise. The correlation polynomial of A and B is deﬁned as
+KA,B(t) = c0 + c1 · t + c2 · t2 + · · · + ck−1 · tk−1 .
+62
+
+
+--- PDF page 88 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+CORR(A, B)
+B = 110110
+0
+B =
+110110
+1
+B =
+110110
+0
+B =
+110110
+0
+B =
+110110
+1
+B =
+110110
+1
+A = 011011
+FIGURE 1.27 The correlation of k-mers A = "011011" and B = "110110" is the string
+"010011".
+For the strings A and B in Figure 1.27, their correlation is "010011" and their correlation
+polynomial is KA,B(t) = t + t4 + t5.
+Next, we write KA,B as shorthand for KA,B(1/2). For the example in Figure 1.27,
+KA,B = 1
+2 + 1
+16 + 1
+32 = 19
+32. John Conway suggested the following deceivingly simple
+formula to compute the odds that B will defeat A:
+KA,A −KA,B
+KB,B −KB,A
+Conway never published a proof of this formula, and Martin Gardner, a leading popular
+mathematics writer, said the following about the formula:
+I have no idea why it works. It just cranks out the answer as if by magic, like so
+many of Conway’s other algorithms.
+63
+
+
+--- PDF page 89 ---
+C H A P T E R 1
+Bibliography Notes
+Using the skew to ﬁnd replication origins was ﬁrst proposed by Lobry, 1996 and
+also described in Grigoriev, 1998. Grigoriev, 2011 provides an excellent introduction
+to the skew approach, and Sernova and Gelfand, 2008 gave a review of algorithms
+and software tools for ﬁnding replication origins in bacteria. Lundgren et al., 2004
+demonstrated that archaea may have multiple oriCs. Wang et al., 2011 inserted an
+artiﬁcial oriC into the E. coli genome and showed that it triggers replication. Xia, 2012
+was the ﬁrst to conjecture that bacteria may have multiple replication origins. Gao and
+Zhang, 2008 developed the Ori-Finder software program for ﬁnding bacterial replication
+origins.
+Liachko et al., 2013 provided the most comprehensive description of the replication
+origins of yeast. Solov’ev, 1966 was the ﬁrst to derive accurate formulas for approx-
+imating the probabilities of patterns in a string. Gardner, 1974 wrote an excellent
+introductory article about the Best Bet for Simpletons paradox. Guibas and Odlyzko,
+1981 provided an excellent coverage of the overlapping words paradox that illustrates
+the complexity of computing the probabilities of patterns in a random text. They also
+derived a rather complicated proof of Conway’s formula for Best Bet for Simpletons.
+Sedgewick and Flajolet, 2013 gave an overview of various approaches for computing
+the probabilities of patterns in a string.
+64
+
+
+--- PDF page 90 ---
+W H E R E I N T H E G E N O M E D O E S D N A R E P L I C AT I O N B E G I N?
+65

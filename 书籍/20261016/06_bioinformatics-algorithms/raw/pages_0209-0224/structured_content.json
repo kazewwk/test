@@ -1,0 +1,2202 @@
+{
+  "pages": [
+    {
+      "page_idx": 208,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.082
+          ],
+          "content": "C H A P T E R 4"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.113,
+            0.895,
+            0.3
+          ],
+          "content": "The mass-production of antibiotics initiated an arms race between pharmaceutical companies and pathogenic bacteria. The former worked to develop new antibiotic drugs, while the latter acquired resistance against these drugs. Although modern medicine won every battle for six decades, the last ten years have witnessed an alarming rise in antibiotic-resistant bacterial infections that cannot be treated even by the most powerful antibiotics. In particular, the Staphylococcus aureus bacterium that Gause had studied in 1942 mutated into a resistant strain known as **Methicillin-resistant Staphylococcus aureus** (**MRSA**). MRSA is now the leading cause of death from infections in hospitals; its death rate has even passed that of AIDS in the United States."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.304,
+            0.895,
+            0.388
+          ],
+          "content": "With the rise of MRSA at hand, developing new antibiotics represents a central challenge to modern medicine. A difficult problem in antibiotics research is that of **sequencing** newly discovered antibiotics, or determining the order of amino acids making up the antibiotic peptide."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.36,
+            0.434,
+            0.673,
+            0.451
+          ],
+          "level": 2,
+          "content": "How Do Bacteria Make Antibiotics?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.47,
+            0.502,
+            0.489
+          ],
+          "content": "How peptides are encoded by the genome"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.501,
+            0.893,
+            0.584
+          ],
+          "content": "Let’s begin by considering **Tyrocidine B1**, one of many antibiotics produced by Bacillus brevis. Tyrocidine B1 is defined by the 10 amino acid-long sequence shown below (using both the one-letter and three-letter notations for amino acids). Our goal in this section is to figure out how Bacillus brevis could have made this antibiotic."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.173,
+            0.607,
+            0.861,
+            0.648
+          ],
+          "content": "| Three-letter notation | Val-Lys-Leu-Phe-Pro-Trp-Phe-Asn-Gln-Tyr |\n| --- | --- |\n| One-letter notation | V K L F P W F N Q Y |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_208_table_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.67,
+            0.895,
+            0.817
+          ],
+          "content": "The **Central Dogma of Molecular Biology** states that “DNA makes RNA makes protein.” According to the Central Dogma, a gene from a genome is first **transcribed** into a strand of RNA composed of four **ribonucleotides**: adenine, cytosine, guanine, and uracil. A strand of RNA can be represented as an **RNA string**, formed over the four-letter alphabet {A, C, G, U}. You can think of the genome as a large cookbook, in which case the gene and its RNA transcript form a recipe in this cookbook. Then, the RNA transcript is **translated** into an amino acid sequence of a protein."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.819,
+            0.897,
+            0.882
+          ],
+          "content": "Much like replication, the chemical machinery underlying transcription and translation is fascinating, but from a computational perspective, both processes are straightforward. Transcription simply transforms a DNA string into an RNA string by replacing"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.501,
+            0.944,
+            0.534,
+            0.961
+          ],
+          "content": "184"
+        }
+      ]
+    },
+    {
+      "page_idx": 209,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.463,
+            0.065,
+            0.856,
+            0.081
+          ],
+          "content": "H O W D O W E S E Q U E N C E A N T I B I O T I C S ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.112,
+            0.862,
+            0.325
+          ],
+          "continues_prev": true,
+          "content": "all occurrences of T with U. The resulting strand of RNA is translated into an amino acid sequence as follows. During translation, the RNA strand is partitioned into non-overlapping 3-mers called **codons**. Then, each codon is converted into one of 20 amino acids via the **genetic code**; the resulting sequence can be represented as an **amino acid string** over a 20-letter alphabet. As illustrated in Figure 4.1, each of the 64 RNA codons encodes its own amino acid (some codons encode the same amino acid), with the exception of three **stop codons** that do not translate into amino acids and serve to halt translation (see **DETOUR: Discovery of Codons**). For example, the DNA string **TATACGAAA** transcribes into the RNA string **UAUACGAAA**, which in turn translates into the amino acid string **YTK**."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.871,
+            0.253,
+            0.984,
+            0.289
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_209_image_2.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.223,
+            0.354,
+            0.741,
+            0.755
+          ],
+          "sub_type": "donut",
+          "content": "| Nucleotide | Amino Acid |\n| --- | --- |\n| A | His |\n| A | Glutamine |\n| A | Proline |\n| A | Arginine |\n| A | Leucine |\n| A | Aspartic acid |\n| A | Glutamic acid |\n| A | Alanine |\n| A | Glycine |\n| A | Valine |\n| A | Tyr |\n| A | Val |\n| A | Met |\n| A | Histidine |\n| A | Gln |\n| A | C |\n| A | U |\n| A | C |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | C |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | G |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | C |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |\n| A | U |",
+          "captions": [
+            {
+              "bbox": [
+                0.155,
+                0.768,
+                0.808,
+                0.87
+              ],
+              "content": "FIGURE 4.1 The genetic code describes the translation of an RNA 3-mer (codon) into one of 20 amino acids. The first three circles, moving from the inside out, represent the first, second, and third nucleotides of a codon. The fourth, fifth, and sixth circles define the translated amino acid in three ways: the amino acid’s full name, its 3-letter abbreviation, and its single-letter abbreviation. Three of the 64 total RNA codons are stop codons, which halt translation."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_209_chart_3.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.466,
+            0.944,
+            0.498,
+            0.961
+          ],
+          "content": "185"
+        }
+      ]
+    },
+    {
+      "page_idx": 210,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.256,
+            0.082
+          ],
+          "content": "C H A P T E R 4"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.112,
+            0.897,
+            0.175
+          ],
+          "content": "We will represent the genetic code as an array GENETICCODE containing 64 ele ments, as shown in Figure 4.2. The following problem asks you to find the translation of an RNA string into an amino acid string."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.031,
+            0.221,
+            0.11,
+            0.284
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_210_image_2.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.168,
+            0.209,
+            0.433,
+            0.226
+          ],
+          "level": 2,
+          "content": "Protein Translation Problem:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.23,
+            0.581,
+            0.251
+          ],
+          "content": "Translate an RNA string into an amino acid string."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.207,
+            0.262,
+            0.736,
+            0.281
+          ],
+          "content": "**Input**: An RNA string Pattern and the array GENETICCODE."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.207,
+            0.283,
+            0.802,
+            0.304
+          ],
+          "content": "**Output**: The translation of Pattern into an amino acid string Peptide."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.042,
+            0.343,
+            0.101,
+            0.388
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_210_image_7.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.206,
+            0.418,
+            0.831,
+            0.715
+          ],
+          "content": "| 0 | AAA | K | 16 | CAA | Q | 32 | GAA | E | 48 | UAA | * |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 1 | AAC | N | 17 | CAC | H | 33 | GAC | D | 49 | UAC | Y |\n| 2 | AAG | K | 18 | CAG | Q | 34 | GAG | E | 50 | UAG | * |\n| 3 | AAU | N | 19 | CAU | H | 35 | GAU | D | 51 | UAU | Y |\n| 4 | ACA | T | 20 | CCA | P | 36 | GCA | A | 52 | UCA | S |\n| 5 | ACC | T | 21 | CCC | P | 37 | GCC | A | 53 | UCC | S |\n| 6 | ACG | T | 22 | CCG | P | 38 | GCG | A | 54 | UCG | S |\n| 7 | ACU | T | 23 | CCU | P | 39 | GCU | A | 55 | UCU | S |\n| 8 | AGA | R | 24 | CGA | R | 40 | GGA | G | 56 | UGA | * |\n| 9 | AGC | S | 25 | CGC | R | 41 | GGC | G | 57 | UGC | C |\n| 10 | AGG | R | 26 | CGG | R | 42 | GGG | G | 58 | UGG | W |\n| 11 | AGU | S | 27 | CGU | R | 43 | GGU | G | 59 | UGU | C |\n| 12 | AUA | I | 28 | CUA | L | 44 | GUA | V | 60 | UUA | L |\n| 13 | AUC | I | 29 | CUC | L | 45 | GUC | V | 61 | UUC | F |\n| 14 | AUG | M | 30 | CUG | L | 46 | GUG | V | 62 | UUG | L |\n| 15 | AUU | I | 31 | CUU | L | 47 | GUU | V | 63 | UUU | F |",
+          "captions": [
+            {
+              "bbox": [
+                0.165,
+                0.344,
+                0.87,
+                0.385
+              ],
+              "content": "EXERCISE BREAK: How many DNA strings of length 30 transcribe and translate into Tyrocidine B1?"
+            },
+            {
+              "bbox": [
+                0.19,
+                0.723,
+                0.84,
+                0.759
+              ],
+              "content": "FIGURE 4.2 The array GENETICCODE contains 64 elements, each of which is an amino acid or a stop codon (represented by \\*)."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_210_table_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.801,
+            0.651,
+            0.82
+          ],
+          "content": "Where is Tyrocidine encoded in the Bacillus brevis genome?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.832,
+            0.897,
+            0.896
+          ],
+          "content": "Thousands of different DNA 30-mers could code for Tyrocidine B1, and we would like to know which one appears in the Bacillus brevis genome. There are three different ways to divide a DNA string into codons for translation, one starting at each of the first three"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.501,
+            0.944,
+            0.534,
+            0.958
+          ],
+          "content": "186"
+        }
+      ]
+    },
+    {
+      "page_idx": 211,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.463,
+            0.065,
+            0.856,
+            0.081
+          ],
+          "content": "H O W D O W E S E Q U E N C E A N T I B I O T I C S ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.112,
+            0.861,
+            0.175
+          ],
+          "continues_prev": true,
+          "content": "positions of the string. These different ways of dividing a DNA string into codons are called **reading frames**. Since DNA is double-stranded, a genome has six reading frames (three on each strand), as shown in Figure 4.3."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.156,
+            0.206,
+            0.806,
+            0.499
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"Translated peptides\"] --> B[\"GluThrPheSerLeuValSTPSerIle\\nSTPAsnPhePheLeuGlyLeuIleAsn\\nValLysLeuPheProTrpPheAsnGlnTyr\"]\n  C[\"Transcribed RNA\"] --> D[\"GUGAAACUUUUUCCUUGGUUUAAUCAAUAU\"]\n  E[\"DNA\"] --> F[\"5' GTGAAACTTTTTCCTTGGTTTAATCAATAT 3'\"]\n  F --> G[\"3' CACTTTGAAAAAGGAACCAAATTAGTTATA 5'\"]\n  H[\"Transcribed RNA\"] --> I[\"CACUUUGAAAAAGGAACCAAAUUAGUUAUA\"]\n  I --> J[\"HisPheLysLysArgProLysIleLeuIle\\nSerValLysGluLysThrSTPAspIle\\nPheSerLysGlyGlnAsnLeuSTPTyr\"]\n  K[\"Translated peptides\"] --> L[\"←\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.154,
+                0.51,
+                0.808,
+                0.596
+              ],
+              "content": "FIGURE 4.3 Six different reading frames give six different ways for the same fragment of DNA to be transcribed and translated (three from each strand). The top three amino acid strings are read from left to right, whereas the bottom three strings are read from right to left. The highlighted amino acid string spells out the sequence of Tyrocidine B1. Stop codons are represented by STP."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_211_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.628,
+            0.861,
+            0.734
+          ],
+          "content": "We say that a DNA string Pattern **encodes** an amino acid string Peptide if the RNA string transcribed from either Pattern or its reverse complement Pattern translates into Peptide. For example, the DNA string GAAACT is transcribed into GAAACU and translated into ET. The reverse complement of this DNA string, AGTTTC, is transcribed into AGUUUC and translated into SF. Thus, GAAACT encodes both ET and SF."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.131,
+            0.768,
+            0.384,
+            0.787
+          ],
+          "level": 2,
+          "content": "Peptide Encoding Problem:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.789,
+            0.672,
+            0.809
+          ],
+          "content": "Find substrings of a genome encoding a given amino acid sequence."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.17,
+            0.821,
+            0.693,
+            0.841
+          ],
+          "content": "**Input**: A DNA string Text and an amino acid string Peptide."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.842,
+            0.836,
+            0.862
+          ],
+          "content": "**Output**: All substrings of Text encoding Peptide (if any such substrings exist)."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.89,
+            0.78,
+            0.966,
+            0.843
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_211_image_9.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.465,
+            0.944,
+            0.499,
+            0.961
+          ],
+          "content": "187"
+        }
+      ]
+    },
+    {
+      "page_idx": 212,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.259,
+            0.082
+          ],
+          "content": "C H A P T E R 4"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.031,
+            0.103,
+            0.11,
+            0.165
+          ],
+          "content": "STOP"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.031,
+            0.226,
+            0.11,
+            0.288
+          ],
+          "content": "STOP"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.111,
+            0.868,
+            0.155
+          ],
+          "content": "**STOP and Think:** Solve the Peptide Encoding Problem for Bacillus brevis and Tyrocidine B1. Which starting positions in Bacillus brevis encode this peptide?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.176,
+            0.895,
+            0.218
+          ],
+          "content": "By solving the Peptide Encoding Problem for Tyrocidine B1, we should find a 30-mer in the Bacillus brevis genome encoding Tyrocidine B1, and yet no such 30-mer exists!"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.236,
+            0.868,
+            0.279
+          ],
+          "content": "**STOP and Think:** How could a bacterium produce a peptide that is not encoded by the bacterium’s genome?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.311,
+            0.393,
+            0.33
+          ],
+          "content": "From linear to cyclic peptides"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.341,
+            0.897,
+            0.49
+          ],
+          "content": "Neither Gause nor Synge was aware of it, but tyrocidines and gramicidins are actually **cyclic peptides**. The cyclic representation for Tyrocidine B1 is shown in Figure 4.4 (left). Thus, Tyrocidine B1 has ten different linear representations, and we should run the Peptide Encoding Problem on every one of these sequences to find potential 30-mers coding for Tyrocidine B1. Yet when we solve the Peptide Encoding Problem for each of the ten strings in Figure 4.4 (right), we find no 30-mer in the Bacillus brevis genome encoding Tyrocidine B1!"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.175,
+            0.531,
+            0.41,
+            0.707
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph TD\n  Lys[\"Lys\"] --> Val[\"Val\"]\n  Leu[\"Leu\"] --> Phe[\"Phe\"]\n  Phe[\"Phe\"] --> Pro[\"Pro\"]\n  Pro --> Trp[\"Trp\"]\n  Trp[\"Trp\"] --> Phe[\"Phe\"]\n  Phe[\"Phe\"] --> Asn[\"Asn\"]\n  Asn[\"Asn\"] --> Gln[\"Gln\"]\n  Gln[\"Gln\"] --> Tyr[\"Tyr\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.19,
+                0.732,
+                0.842,
+                0.768
+              ],
+              "content": "FIGURE 4.4 Tyrocidine B1 is a cyclic peptide (left), and so it has ten different linear representations (right)."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_212_image_8.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.3,
+            0.829,
+            0.733,
+            0.848
+          ],
+          "level": 2,
+          "content": "Dodging the Central Dogma of Molecular Biology"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.866,
+            0.897,
+            0.907
+          ],
+          "content": "Hopefully, you are perplexed, because the Central Dogma of Molecular Biology implies that all peptides must be encoded by the genome. Nobel laureate Edward Tatum was"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.501,
+            0.944,
+            0.534,
+            0.958
+          ],
+          "content": "188"
+        }
+      ]
+    },
+    {
+      "page_idx": 213,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.463,
+            0.065,
+            0.858,
+            0.082
+          ],
+          "content": "H O W D O W E S E Q U E N C E A N T I B I O T I C S ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.112,
+            0.862,
+            0.239
+          ],
+          "continues_prev": true,
+          "content": "just as confused, and in 1963, he devised an ingenious experiment. Protein translation is carried out by a molecular machine called a **ribosome**, and so Tatum reasoned that if he inhibited the ribosome, all protein production in Bacillus brevis should grind to a halt. To his amazement, all proteins did indeed shut down — except for tyrocidines and gramicidins! His experiment led Tatum to hypothesize that some yet unknown non-ribosomal mechanism must assemble these peptides."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.24,
+            0.861,
+            0.365
+          ],
+          "content": "In 1969, Fritz Lipmann (another Nobel laureate) demonstrated that tyrocidines and gramicidins are **non-ribosomal peptides** (**NRPs**), synthesized not by the ribosome, but by a giant protein called **NRP synthetase**. This enzyme pieces together antibiotic peptides without any reliance on RNA or the genetic code! We now know that every NRP synthetase assembles peptides by growing them one amino acid at a time, as shown in Figure 4.5."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.367,
+            0.861,
+            0.495
+          ],
+          "content": "The reason why many NRPs have pharmaceutical applications is that they have been optimized by eons of evolution as “molecular bullets” that bacteria and fungi use to kill their enemies. If these enemies happen to be pathogens, researchers are eager to borrow these bullets as antibacterial drugs. However, NRPs are not limited to antibiotics: many of them represent anti-tumor agents and immunosuppressors, while others are used by bacteria to communicate with other cells (see **DETOUR: Quorum Sensing**)."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.871,
+            0.466,
+            0.984,
+            0.501
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_213_image_4.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.179,
+            0.522,
+            0.789,
+            0.796
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"Module 1\"] --> B[\"Intermediate\"]\n  B --> C[\"Module 2\"]\n  C --> D[\"Module 3\"]\n  D --> E[\"Module 4\"]\n  E --> F[\"Module 5\"]\n  F --> G[\"Modules 6-10\"]\n  H[\"Linear Tyrocidine B1 before circularization\"] --> I[\"Completed cyclic Tyrocidine B1\"]\n  I --> J[\"Final Product\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.154,
+                0.807,
+                0.808,
+                0.877
+              ],
+              "content": "FIGURE 4.5 NRP synthetase is a giant multi-module protein that assembles a cyclic peptide one amino acid at a time. Each of ten different modules (shown by different colors) adds a single amino acid to the peptide, which in the figure is one of many tyrocidines produced by Bacillus brevis. In a final step, the peptide is circularized."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_213_image_5.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.466,
+            0.944,
+            0.499,
+            0.961
+          ],
+          "content": "189"
+        }
+      ]
+    },
+    {
+      "page_idx": 214,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.082
+          ],
+          "content": "C H A P T E R 4"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.281,
+            0.112,
+            0.753,
+            0.132
+          ],
+          "level": 2,
+          "content": "Sequencing Antibiotics by Shattering Them into Pieces"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.149,
+            0.434,
+            0.167
+          ],
+          "content": "Introduction to mass spectrometry"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.18,
+            0.897,
+            0.284
+          ],
+          "content": "Since NRPs do not adhere to the Central Dogma, we cannot infer them from the genome, which brings us back to where we started. What makes sequencing these peptides even more difficult is that many NRPs (including tyrocidines and gramicidins) are cyclic. Thus, the standard tools for sequencing linear peptides, which we will describe later, are not applicable to NRP analysis."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.287,
+            0.897,
+            0.37
+          ],
+          "content": "The workhorse of peptide sequencing is the **mass spectrometer**, an expensive molecular scale that shatters molecules into pieces and then weighs the resulting fragments. The mass spectrometer measures the mass of a molecule in **daltons** (**Da**); 1 Da is approximately equal to the mass of a single nuclear particle (i.e., a proton or neutron)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.371,
+            0.897,
+            0.603
+          ],
+          "content": "We will approximate the mass of a molecule by simply adding the number of protons and neutrons found in the molecule’s constituent atoms, which yields the molecule’s **integer mass**. For example, the amino acid glycine, which has chemical formula $C_{2} H _{3} ON ,$ has an integer mass of 57, since $2 \\cdot 12 + 3 \\cdot 1 + 1 \\cdot 16 + 1 \\cdot 14 = 57$ . Yet 1 Da is not exactly equal to the mass of a proton/neutron, and we may need to account for different naturally occurring isotopes of each atom when weighing a molecule (see **DETOUR: Molecular Mass**). As a result, amino acids typically have non-integer masses (e.g., glycine has total integer mass equal to approximately 57.02 Da); for simplicity, however, we will work with the integer mass table given in Figure 4.6. Tyrocidine B1, which is represented by VKLFPWFNQY, has total mass 1322 Da (99 $+ 128 + 113 + 147 +$ $97+186+147+114+128+163=1322)$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.157,
+            0.629,
+            0.877,
+            0.665
+          ],
+          "content": "\\begin{array}{ccccccccccccccccc}G & A & S & P & V & T & C & I & L & N & D & K & Q & E & M & H & F & R & Y & W \\\\ 57 & 71 & 87 & 97 & 99 & 101 & 103 & 113 & 113 & 114 & 115 & 128 & 128 & 129 & 131 & 137 & 147 & 156 & 163 & 186 \\end{array}",
+          "image_source": "images/page_214_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.675,
+            0.842,
+            0.709
+          ],
+          "content": "**FIGURE 4.6** Integer masses of amino acids. The integer mass of each amino acid is computed by adding the number of protons and neutrons in the amino acid molecule."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.732,
+            0.897,
+            0.88
+          ],
+          "content": "The mass spectrometer can break each molecule of Tyrocidine B1 into two linear fragments, and it analyzes samples that may contain billions of identical copies of the peptide, with each copy breaking in its own way. One copy may break into LFP and WFNQYVK (with respective masses 357 and 965), whereas another may break into PWFN and QYVKLF. Our goal is to use the masses of these and other fragments to sequence the peptide. The collection of all the fragment masses generated by the mass spectrometer is called an **experimental spectrum**."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.014,
+            0.491,
+            0.126,
+            0.526
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_214_image_9.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.501,
+            0.946,
+            0.534,
+            0.96
+          ],
+          "content": "190"
+        }
+      ]
+    },
+    {
+      "page_idx": 215,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.463,
+            0.065,
+            0.856,
+            0.081
+          ],
+          "content": "H O W D O W E S E Q U E N C E A N T I B I O T I C S ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.112,
+            0.833,
+            0.154
+          ],
+          "content": "**STOP and Think:** How can we use the experimental spectrum to sequence a peptide?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.187,
+            0.434,
+            0.206
+          ],
+          "level": 2,
+          "content": "The Cyclopeptide Sequencing Problem"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.218,
+            0.862,
+            0.366
+          ],
+          "content": "For now, we will assume for simplicity that the mass spectrometer breaks the copies of a cyclic peptide at every possible two bonds, so that the resulting experimental spectrum contains the masses of all possible linear fragments of the peptide, which are called **subpeptides**. For example, the cyclic peptide NQEL has 12 subpeptides: N, Q, E, L, NQ, QE, EL, LN, NQE, QEL, ELN, and LNQ. We will also assume that subpeptides may occur more than once if an amino acid occurs multiple times in the peptide; for example, ELEL also has 12 subpeptides: E, L, E, L, EL, LE, EL, LE, ELE, LEL, ELE, and LEL."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.384,
+            0.833,
+            0.424
+          ],
+          "content": "**EXERCISE BREAK:** How many subpeptides does a cyclic peptide of length n have?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.447,
+            0.861,
+            0.571
+          ],
+          "content": "The **theoretical spectrum** of a cyclic peptide Peptide is the collection of all of the masses of its subpeptides, in addition to the mass 0 and the mass of the entire peptide, with masses ordered from smallest to largest. We will denote the theoretical spectrum of Peptide by CYCLOSPECTRUM(Peptide) and assume that this theoretical spectrum can contain duplicate elements, as is the case for NQEL (shown below), where **NQ** and **EL** have the same mass."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.139,
+            0.59,
+            0.825,
+            0.631
+          ],
+          "content": "|  | L | N | Q | E | LN | NQ | EL | QE | LNQ | ELN | QEL | NQE | NQEL |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 0 | 113 | 114 | 128 | 129 | 227 | 242 | 242 | 257 | 355 | 356 | 370 | 371 | 484 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_215_table_6.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.132,
+            0.663,
+            0.525,
+            0.681
+          ],
+          "level": 2,
+          "content": "Generating Theoretical Spectrum Problem:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.683,
+            0.553,
+            0.703
+          ],
+          "content": "Generate the theoretical spectrum of a cyclic peptide."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.715,
+            0.492,
+            0.735
+          ],
+          "content": "**Input**: An amino acid string Peptide."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.173,
+            0.737,
+            0.492,
+            0.757
+          ],
+          "content": "**Output**: CYCLOSPECTRUM(Peptide)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.128,
+            0.798,
+            0.824,
+            0.817
+          ],
+          "level": 2,
+          "content": "CHARGING STATION (Generating the Theoretical Spectrum of a Peptide):"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.819,
+            0.831,
+            0.903
+          ],
+          "content": "One way to solve the Generating Theoretical Spectrum Problem is to construct a list containing all subpeptides of Peptide, then find the mass of each subpeptide by adding the integer masses of its constituent amino acids. This approach will work, but check out this Charging Station to see a more elegant algorithm."
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.89,
+            0.103,
+            0.966,
+            0.164
+          ],
+          "content": "STOP"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.889,
+            0.674,
+            0.966,
+            0.737
+          ],
+          "content": "[4C](http://rosalind.info/problems/4c)"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.893,
+            0.806,
+            0.962,
+            0.897
+          ],
+          "content": "PAGE 211"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.466,
+            0.946,
+            0.496,
+            0.96
+          ],
+          "content": "191"
+        }
+      ]
+    },
+    {
+      "page_idx": 216,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.256,
+            0.082
+          ],
+          "content": "C H A P T E R 4"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.031,
+            0.215,
+            0.11,
+            0.276
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_216_image_1.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.112,
+            0.897,
+            0.198
+          ],
+          "content": "Generating the theoretical spectrum of a known peptide is easy, but our aim is to solve the reverse problem of reconstructing an unknown peptide from its experimental spectrum. We will start by assuming that a biologist is lucky enough to generate an **ideal spectrum**, which is one coinciding with the peptide’s theoretical spectrum."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.2,
+            0.306,
+            0.839,
+            0.455
+          ],
+          "content": "| 0 | 97 | 99 | 113 | 114 | 128 | 128 | 147 | 147 | 163 | 186 | 227 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 241 | 242 | 244 | 260 | 261 | 262 | 283 | 291 | 333 | 340 | 357 | 388 |\n| 389 | 390 | 390 | 405 | 430 | 430 | 447 | 485 | 487 | 503 | 504 | 518 |\n| 543 | 544 | 552 | 575 | 577 | 584 | 631 | 632 | 650 | 651 | 671 | 672 |\n| 690 | 691 | 738 | 745 | 747 | 770 | 778 | 779 | 804 | 818 | 819 | 835 |\n| 837 | 875 | 892 | 892 | 917 | 932 | 932 | 933 | 934 | 965 | 982 | 989 |\n| 1031 | 1039 | 1060 | 1061 | 1062 | 1078 | 1080 | 1081 | 1095 | 1136 | 1159 | 1175 |\n| 1175 | 1194 | 1194 | 1208 | 1209 | 1223 | 1225 | 1322 |  |  |  |  |",
+          "captions": [
+            {
+              "bbox": [
+                0.163,
+                0.214,
+                0.87,
+                0.277
+              ],
+              "content": "STOP and Think: Consider the theoretical spectrum for Tyrocidine B1 shown in Figure 4.7. If an experiment produced this spectrum, how would you reconstruct the amino acid sequence of Tyrocidine B1?"
+            },
+            {
+              "bbox": [
+                0.191,
+                0.464,
+                0.842,
+                0.499
+              ],
+              "content": "FIGURE 4.7 The theoretical spectrum for Tyrocidine B1 (VKLFPWFNQY), whose integer representation is 99-128-113-147-97-186-147-114-128-163."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_216_table_4.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.167,
+            0.542,
+            0.492,
+            0.562
+          ],
+          "level": 2,
+          "content": "Cyclopeptide Sequencing Problem:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.563,
+            0.871,
+            0.605
+          ],
+          "content": "Given an ideal spectrum, find a cyclic peptide whose theoretical spectrum matches the experimental spectrum."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.206,
+            0.616,
+            0.871,
+            0.657
+          ],
+          "content": "**Input**: A collection of (possibly repeated) integers Spectrum corresponding to an ideal spectrum."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.206,
+            0.659,
+            0.869,
+            0.7
+          ],
+          "content": "**Output**: An amino acid string Peptide such that CYCLOSPECTRUM(Peptide) = Spectrum (if such a string exists)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.735,
+            0.897,
+            0.861
+          ],
+          "content": "From now on, we will sometimes work directly with amino acid masses, taking the liberty to represent a peptide by a sequence of integers denoting the peptide’s constituent amino acid masses. For example, we represent NQEL as 114-128-129-113 and Tyrocidine B1 (VKLFPWFNQY) as 99-128-113-147-97-186-147-114-128-163. We have therefore replaced an alphabet of 20 amino acids with an alphabet of only 18 integers because, recalling Figure 4.6, two amino acid pairs (I/L and K/Q) have the same integer mass."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.863,
+            0.897,
+            0.905
+          ],
+          "content": "Note that in the general case that we are not restricted to the amino acid alphabet, the Cyclopeptide Sequencing Problem could have multiple solutions. For example, “pep-"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.501,
+            0.946,
+            0.534,
+            0.96
+          ],
+          "content": "192"
+        }
+      ]
+    },
+    {
+      "page_idx": 217,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.463,
+            0.065,
+            0.856,
+            0.081
+          ],
+          "content": "H O W D O W E S E Q U E N C E A N T I B I O T I C S ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.112,
+            0.856,
+            0.132
+          ],
+          "continues_prev": true,
+          "content": "tides” 1-1-3-3 and 1-2-1-4 have the same theoretical spectrum {1, 1, 2, 3, 3, 4, 4, 5, 5, 6, 7, 7}."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.15,
+            0.83,
+            0.192
+          ],
+          "content": "**STOP and Think:** Can you find two peptides (in the alphabet of 18 amino acid masses) with identical theoretical spectra?"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.889,
+            0.141,
+            0.966,
+            0.202
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_217_image_3.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.246,
+            0.238,
+            0.713,
+            0.259
+          ],
+          "level": 2,
+          "content": "A Brute Force Algorithm for Cyclopeptide Sequencing"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.274,
+            0.859,
+            0.336
+          ],
+          "content": "We first encountered brute force algorithms when looking for motifs in Chapter 2. In this chapter, we will discuss how to speed up brute force algorithms for peptide sequencing to make them practical."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.339,
+            0.862,
+            0.422
+          ],
+          "content": "Let’s design a straightforward brute force algorithm for the Cyclopeptide Sequencing Problem. We denote the total mass of an amino acid string Peptide as MASS(Peptide). In mass spectrometry experiments, whereas the peptide that generated Spectrum is unknown, the peptide’s mass is typically known and is denoted PARENTMASS(Spectrum)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.424,
+            0.861,
+            0.528
+          ],
+          "content": "For the sake of simplicity, we will also assume that for all experimental spectra, PARENTMASS(Spectrum) is equal to the largest mass in Spectrum. The following brute force cyclopeptide sequencing algorithm generates all possible peptides whose mass is equal to PARENTMASS(Spectrum) and then checks which of these peptides has theoretical spectra matching Spectrum."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.129,
+            0.549,
+            0.768,
+            0.634
+          ],
+          "sub_type": "code",
+          "content": "```python\nBFCYCLOPEPTIDESEQUENCING(Spectrum)\n    for every Peptide with MASS(Peptide) equal to PARENTMASS(Spectrum)\n        if Spectrum = CYCLOSPECTRUM(Peptide)\n            output Peptide\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.656,
+            0.861,
+            0.72
+          ],
+          "content": "There should be no question that **BFCYCLOPEPTIDESEQUENCING** will solve the Cyclopeptide Sequencing Problem. However, we should be concerned about its running time: how many peptides are there having mass equal to PARENTMASS(Spectrum)?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.131,
+            0.753,
+            0.552,
+            0.773
+          ],
+          "level": 2,
+          "content": "Counting Peptides with Given Mass Problem:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.775,
+            0.512,
+            0.794
+          ],
+          "content": "Compute the number of peptides of given mass."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.807,
+            0.358,
+            0.826
+          ],
+          "content": "**Input**: An integer m."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.827,
+            0.725,
+            0.848
+          ],
+          "content": "**Output**: The number of linear peptides having integer mass m."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.89,
+            0.765,
+            0.966,
+            0.827
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_217_image_14.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.465,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": "193"
+        }
+      ]
+    },
+    {
+      "page_idx": 218,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.082
+          ],
+          "content": "C H A P T E R 4"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.112,
+            0.897,
+            0.217
+          ],
+          "content": "If you have difficulty solving this problem or getting the runtime down, please return to it after learning more about dynamic programming algorithms in Chapter 5. It turns out that there are trillions of peptides having the same integer mass (1322) as Tyrocidine B1 (Figure 4.8). Therefore, **BFCYCLOPEPTIDESEQUENCING** is completely impractical, and we will not even bother asking you to implement it."
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.292,
+            0.254,
+            0.744,
+            0.483
+          ],
+          "sub_type": "line",
+          "content": "| Integer mass | Number of peptides |\n| --- | --- |\n| ~100 | 10^0 |\n| ~200 | 10^1 |\n| ~300 | 10^2 |\n| ~400 | 10^3 |\n| ~500 | 10^4 |\n| ~600 | 10^5 |\n| ~700 | 10^6 |\n| ~800 | 10^7 |\n| ~900 | 10^8 |\n| ~1000 | 10^9 |\n| ~1100 | 10^10 |\n| ~1200 | 10^11 |\n| ~1300 | 10^12 |\n| ~1400 | 10^13 |\n| ~1500 | 10^14 |",
+          "captions": [
+            {
+              "bbox": [
+                0.206,
+                0.505,
+                0.828,
+                0.523
+              ],
+              "content": "FIGURE 4.8 The number of peptides with given integer mass grows exponentially."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_218_chart_2.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.033,
+            0.55,
+            0.11,
+            0.613
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_218_image_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.55,
+            0.869,
+            0.611
+          ],
+          "content": "**STOP and Think:** Figure 4.8 suggests that for large m, the number of peptides with given integer mass m can be approximated as $k \\cdot C ^ { m }$ where k and C are constants. Can you find these constants?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.252,
+            0.657,
+            0.78,
+            0.677
+          ],
+          "level": 2,
+          "content": "A Branch-and-Bound Algorithm for Cyclopeptide Sequencing"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.694,
+            0.895,
+            0.754
+          ],
+          "content": "Just because the algorithm from the previous section failed miserably does not mean that all brute force approaches are doomed. Can we design a faster brute force algorithm based on a different idea?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.758,
+            0.895,
+            0.82
+          ],
+          "content": "Instead of checking all cyclic peptides with a given mass, our new approach to solving the Cyclopeptide Sequencing Problem will “grow” candidate linear peptides whose theoretical spectra are “consistent” with the experimental spectrum."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.033,
+            0.84,
+            0.11,
+            0.902
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_218_image_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.839,
+            0.869,
+            0.901
+          ],
+          "content": "**STOP and Think:** What should it mean for a linear peptide to be consistent with an experimental spectrum? Would you classify VKF as consistent with the spectrum shown in Figure 4.7? What about VKY?"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.501,
+            0.946,
+            0.534,
+            0.961
+          ],
+          "content": "194"
+        }
+      ]
+    },
+    {
+      "page_idx": 219,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.463,
+            0.065,
+            0.858,
+            0.082
+          ],
+          "content": "H O W D O W E S E Q U E N C E A N T I B I O T I C S ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.112,
+            0.862,
+            0.237
+          ],
+          "content": "Given an experimental spectrum Spectrum, we will form a collection Peptides of candidate linear peptides initially consisting of the **empty peptide**, which is just an empty string (denoted \"\") having mass 0. At the next step, we will expand Peptides to contain all linear peptides of length 1. We continue this process, creating 18 new peptides of length k + 1 for each amino acid string Peptide of length k in Peptides by appending every possible amino acid mass to the end of Peptide."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.24,
+            0.861,
+            0.345
+          ],
+          "content": "To prevent the number of candidate peptides from increasing exponentially, every time we expand Peptides, we trim it by keeping only those linear peptides that remain consistent with the experimental spectrum. We then check if any of these new linear peptides has mass equal to MASS(Spectrum). If so, we circularize this peptide and check whether it provides a solution to the Cyclopeptide Sequencing Problem."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.346,
+            0.861,
+            0.514
+          ],
+          "content": "More generally, brute force algorithms that enumerate all candidate solutions but discard large subsets of hopeless candidates by using various consistency conditions are known as **branch-and-bound algorithms**. Each such algorithm consists of a **branching step** to increase the number of candidate solutions, followed by a **bounding step** to remove hopeless candidates. In our branch-and-bound algorithm for the Cyclopeptide Sequencing Problem, the branching step will extend each candidate peptide of length k into 18 peptides of length k + 1, and the bounding step will remove inconsistent peptides from consideration."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.517,
+            0.862,
+            0.664
+          ],
+          "content": "Note that the spectrum of a linear peptide does not contain as many masses as the spectrum of a cyclic peptide with the same amino acid sequence. For instance, the theoretical spectrum of the cyclic peptide NQEL contains 14 masses (corresponding to \"\", N, Q, E, L, LN, NQ, QW, EL, ELN, LNQ, NQE, QEL, and NQEL). However, the theoretical spectrum of the linear peptide NQEL, shown in Figure 4.9, does not contain masses corresponding to LN, LNQ, or ELN, since these subpeptides “wrap around” the end of the linear peptide."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.191,
+            0.696,
+            0.773,
+            0.735
+          ],
+          "sub_type": "text_image",
+          "content": "0 113 114 128 129 242 242 257 370 371 484\n\"\" L N Q E NQ EL QE QEL NQE NQEL",
+          "captions": [
+            {
+              "bbox": [
+                0.229,
+                0.744,
+                0.733,
+                0.761
+              ],
+              "content": "FIGURE 4.9 The theoretical spectrum for the linear peptide NQEL."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_219_image_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.129,
+            0.79,
+            0.833,
+            0.829
+          ],
+          "content": "**EXERCISE BREAK:** How many subpeptides does a linear peptide of length n have?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.852,
+            0.862,
+            0.893
+          ],
+          "content": "Given an experimental spectrum Spectrum of a cyclic peptide, a linear peptide is **consistent** with Spectrum if every mass in its theoretical spectrum is contained in Spectrum. If"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.897,
+            0.786,
+            0.957,
+            0.832
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_219_image_9.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.465,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": "195"
+        }
+      ]
+    },
+    {
+      "page_idx": 220,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.256,
+            0.082
+          ],
+          "content": "C H A P T E R 4"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.112,
+            0.895,
+            0.236
+          ],
+          "continues_prev": true,
+          "content": "a mass appears more than once in the theoretical spectrum of the linear peptide, then it must appear at least that many times in Spectrum in order for the linear peptide to be consistent with Spectrum. For example, a linear peptide can still be consistent with the theoretical spectrum of NQEL if the peptide’s spectrum contains 242 twice. But a peptide cannot be consistent with the theoretical spectrum of NQEL if its spectrum contains 113 twice."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.24,
+            0.897,
+            0.409
+          ],
+          "content": "The key to our new algorithm is that every linear subpeptide of a cyclic peptide Peptide is consistent with CYCLOSPECTRUM(Peptide). Thus, to solve the Cyclopep tide Sequencing Problem for Spectrum, we can safely ban all peptides that are inconsistent with Spectrum from the growing set Peptides, which powers the bounding step that we described above. For example, the linear peptide VKF (with spectrum {0, 99, 128, 147, 227, 275, 374}) will be banned because it is inconsistent with Tyrocidine B1’s spectrum in Figure 4.7. But the linear peptide VKY will not be banned because every mass in its theoretical spectrum ({0, 99, 128, 163, 227, 291, 390}) is present in Figure 4.7."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.41,
+            0.897,
+            0.495
+          ],
+          "content": "What about the branching step? Given the current collection of linear peptides Peptides, define EXPAND(Peptides) as a new collection containing all possible extensions of peptides in Peptides by a single amino acid mass. We can now provide the pseudocode for the branch-and-bound algorithm, called **CYCLOPEPTIDESEQUENCING**."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.031,
+            0.597,
+            0.11,
+            0.66
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_220_image_4.jpg"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.165,
+            0.515,
+            0.645,
+            0.751
+          ],
+          "sub_type": "code",
+          "content": "```python\nCYCLOPEPTIDESEQUENCING(Spectrum)\n    Peptides ← a set containing only the empty peptide\n    while Peptides is nonempty\n        Peptides ← EXPAND(Peptides)\n        for each peptide Peptide in Peptides\n            if MASS(Peptide) = PARENTMASS(Spectrum)\n                if CYCLOSPECTRUM(Peptide) = Spectrum\n                    output Peptide\n                remove Peptide from Peptides\n            else if Peptide is not consistent with Spectrum\n                remove Peptide from Peptides\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.034,
+            0.799,
+            0.106,
+            0.891
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_220_image_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.78,
+            0.871,
+            0.907
+          ],
+          "content": "**CHARGING STATION (How Fast is CYCLOPEPTIDESEQUENCING?):** After the failure of **BFCYCLOPEPTIDESEQUENCING**, you may be hesitant to implement **CYCLOPEPTIDESEQUENCING**. The potential problem with this algorithm is that it may generate incorrect k-mers at intermediate stages (i.e., k-mers that are not subpeptides of a correct solution). In practice, however, this is not a concern. Check out this Charging Station to see an example."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.501,
+            0.944,
+            0.534,
+            0.96
+          ],
+          "content": "196"
+        }
+      ]
+    },
+    {
+      "page_idx": 221,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.463,
+            0.065,
+            0.858,
+            0.082
+          ],
+          "content": "H O W D O W E S E Q U E N C E A N T I B I O T I C S ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.113,
+            0.862,
+            0.304
+          ],
+          "content": "It is hard to imagine a worst-case scenario in which **CYCLOPEPTIDESEQUENCING** takes a long time to run, but no one has been able to guarantee that this algorithm will not generate many incorrect k-mers at intermediate stages. **BFCYCLOPEPTIDESEQUENCING** is exponential, and although in practice, **CYCLOPEPTIDESEQUENCING** is much faster, this algorithm has not been proven to be polynomial. Thus, from the perspective of an introductory algorithms course focusing on theoretical computer science, the practical **CYCLOPEPTIDESEQUENCING** is just as inefficient as **BFCYCLOPEPTIDESEQUENCING**, since neither algorithm’s running time can be bounded by a polynomial. See the Open Problems section to learn more about the algorithmic challenges related to this problem."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.345,
+            0.348,
+            0.618,
+            0.368
+          ],
+          "level": 2,
+          "content": "Mass Spectrometry Meets Golf"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.384,
+            0.373,
+            0.403
+          ],
+          "content": "From theoretical to real spectra"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.415,
+            0.862,
+            0.588
+          ],
+          "content": "Although **CYCLOPEPTIDESEQUENCING** successfully reconstructed Tyrocidine B1, this algorithm only works in the case of an ideal spectrum, i.e., when the experimental spectrum of a peptide coincides exactly with its theoretical spectrum. This inflexibility of **CYCLOPEPTIDESEQUENCING** presents a practical barrier, since mass spectrometers generate “noisy” spectra that are far from ideal — they are characterized by having both **false masses** and **missing masses**. A false mass is present in the experimental spectrum but absent from the theoretical spectrum; a missing mass is present in the theoretical spectrum but absent from the experimental spectrum (Figure 4.10)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.615,
+            0.831,
+            0.634
+          ],
+          "content": "**Theoretical**: 0 113 114 128 **129** 227 **242 242** 257 355 356 370 371 484"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.642,
+            0.83,
+            0.66
+          ],
+          "content": "**Experimental**: 0 **99** 113 114 128 227 257 **299** 355 356 370 371 484"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.154,
+            0.669,
+            0.808,
+            0.721
+          ],
+          "content": "**FIGURE 4.10** Theoretical and simulated experimental spectra for NQEL. Masses that are missing from the experimental spectrum are shown in blue, and false masses in the experimental spectrum are shown in green."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.753,
+            0.862,
+            0.88
+          ],
+          "content": "What is particularly worrisome about the example in Figure 4.10 is that the mass of the amino acid E (**129**) is missing, and the mass of the amino acid V (**99**) is false; as a result, the first step of **CYCLOPEPTIDESEQUENCING** would establish {V, L, N, Q} as the amino acid composition of our candidate peptides, which is incorrect. In fact, any false or missing mass will cause **CYCLOPEPTIDESEQUENCING** to throw out the correct peptide, because its theoretical spectrum differs from the experimental spectrum."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.465,
+            0.946,
+            0.499,
+            0.961
+          ],
+          "content": "197"
+        }
+      ]
+    },
+    {
+      "page_idx": 222,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.065,
+            0.259,
+            0.082
+          ],
+          "content": "C H A P T E R 4"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.033,
+            0.103,
+            0.11,
+            0.164
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_222_image_1.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.112,
+            0.868,
+            0.154
+          ],
+          "content": "**STOP and Think:** How would you reformulate the Cyclopeptide Sequencing Problem to handle experimental spectra with errors?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.187,
+            0.623,
+            0.206
+          ],
+          "content": "Adapting cyclopeptide sequencing for spectra with errors"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.217,
+            0.897,
+            0.366
+          ],
+          "content": "To generalize the Cyclopeptide Sequencing Problem to handle noisy spectra, we need to relax the requirement that a candidate peptide’s theoretical spectrum must match the experimental spectrum exactly, and instead incorporate a **scoring function** that will select the peptide whose theoretical spectrum matches the given experimental spectrum the most closely. Given a cyclic peptide Peptide and a spectrum Spectrum, we define SCORE(Peptide, Spectrum) as the number of masses shared between CYCLOSPECTRUM(Peptide) and Spectrum. Recalling our example above, if"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.218,
+            0.378,
+            0.816,
+            0.399
+          ],
+          "content": "\\text {Spectrum} = \\{0, 9 9, 1 1 3, 1 1 4, 1 2 8, 2 2 7, 2 5 7, 2 9 9, 3 5 5, 3 5 6, 3 7 0, 3 7 1, 4 8 4 \\},",
+          "image_source": "images/page_222_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.412,
+            0.451,
+            0.431
+          ],
+          "content": "then SCORE(NQEL, Spectrum) = 11."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.433,
+            0.897,
+            0.56
+          ],
+          "content": "The scoring function should take into account the **multiplicities** of shared masses, i.e., how many times they occur in each spectrum. For example, suppose that Spectrum is the theoretical spectrum of NQEL (Figure 4.7); for this spectrum, mass 242 has multiplicity 2. If 242 has multiplicity 1 in the theoretical spectrum of Peptide, then 242 contributes 1 to SCORE(Peptide, Spectrum). If 242 has larger multiplicity in the theoretical spectrum of Peptide, then 242 contributes 2 to SCORE(Peptide, Spectrum)."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.031,
+            0.605,
+            0.11,
+            0.668
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_222_image_8.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.167,
+            0.594,
+            0.456,
+            0.613
+          ],
+          "level": 2,
+          "content": "Cyclopeptide Scoring Problem:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.615,
+            0.625,
+            0.635
+          ],
+          "content": "Compute the score of a cyclic peptide against a spectrum."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.206,
+            0.647,
+            0.848,
+            0.666
+          ],
+          "content": "**Input**: An amino acid string Peptide and a collection of integers Spectrum."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.207,
+            0.668,
+            0.844,
+            0.688
+          ],
+          "content": "**Output**: The score of Peptide against Spectrum, SCORE(Peptide, Spectrum)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.723,
+            0.821,
+            0.743
+          ],
+          "content": "We now can redefine the Cyclopeptide Sequencing Problem for noisy spectra."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.167,
+            0.777,
+            0.71,
+            0.796
+          ],
+          "level": 2,
+          "content": "Cyclopeptide Sequencing Problem (for spectra with errors):"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.799,
+            0.805,
+            0.818
+          ],
+          "content": "Find a cyclic peptide having maximum score against an experimental spectrum."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.206,
+            0.83,
+            0.564,
+            0.85
+          ],
+          "content": "**Input**: A collection of integers Spectrum."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.206,
+            0.851,
+            0.869,
+            0.893
+          ],
+          "content": "**Output**: A cyclic peptide Peptide maximizing SCORE(Peptide, Spectrum) over all peptides Peptide with mass equal to PARENTMASS(Spectrum)."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.501,
+            0.944,
+            0.534,
+            0.96
+          ],
+          "content": "198"
+        }
+      ]
+    },
+    {
+      "page_idx": 223,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.463,
+            0.065,
+            0.858,
+            0.082
+          ],
+          "content": "H O W D O W E S E Q U E N C E A N T I B I O T I C S ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.112,
+            0.862,
+            0.283
+          ],
+          "content": "Our goal is to adapt the **CYCLOPEPTIDESEQUENCING** algorithm to find a peptide with maximum score. Remember that this algorithm had a stringent bounding step in which all candidate linear peptides having inconsistent spectra were thrown out. For example, we saw that the linear peptide VKF is inconsistent with the theoretical spectrum in Figure 4.7. However, we perhaps should not ban VKF in the case of experimental spectra, since they can have missing masses. Thus, we need to revise the bounding step to include more candidate linear peptides, while still ensuring that the number of peptides that we consider does not grow out of control."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.299,
+            0.835,
+            0.341
+          ],
+          "content": "**STOP and Think:** How can we limit the growth of the list of candidate linear peptides in the case of experimental spectra?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.364,
+            0.861,
+            0.512
+          ],
+          "content": "To limit the number of candidate linear peptides under consideration, we will replace the list Peptides with the list Leaderboard, which holds the N highest scoring candidate peptides for further extension. At each step, we will expand all candidate peptides found in Leaderboard, then eliminate those peptides whose newly calculated scores are not high enough to keep them on the Leaderboard. This idea is similar to the notion of a “cut” in a golf tournament; after the cut, only the top N golfers are allowed to play in the next round, since they are the only players who have a reasonable chance of winning."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.513,
+            0.861,
+            0.64
+          ],
+          "content": "To be fair, a cut should include anyone who is tied with the Nth-place competitor. Thus, Leaderboard should be trimmed down to the “N highest-scoring linear peptides including ties”, which may include more than N peptides. Given a list of peptides Leaderboard, a spectrum Spectrum, and an integer N, define TRIM(Leaderboard, Spectrum, N) as the collection of the top N highest-scoring linear peptides in Leaderboard (including ties) with respect to Spectrum."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.658,
+            0.833,
+            0.721
+          ],
+          "content": "**STOP and Think:** Our peptide scoring function currently assumes that peptides are circular, but peptides should technically be scored as linear peptides until the final step. How would you score a linear peptide against a spectrum?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.743,
+            0.862,
+            0.89
+          ],
+          "content": "Note that SCORE(Peptide, Spectrum) currently only scores Peptide against Spectrum if Peptide is cyclic. However, to generalize this scoring function when Peptide is linear, we simply exclude those subpeptides of Peptide that wrap around the end of the string, resulting in a function LINEARSCORE(Peptide, Spectrum). For example, if Spectrum is the experimental spectrum of NQEL from Figure 4.10, then you can verify that LINEARSCORE(NQEL, Spectrum) = 8. This brings us to the pseudocode for **LEADERBOARDCYCLOPEPTIDESEQUENCING**."
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.889,
+            0.291,
+            0.967,
+            0.352
+          ],
+          "content": "STOP"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.889,
+            0.659,
+            0.966,
+            0.72
+          ],
+          "content": "STOP"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.465,
+            0.946,
+            0.499,
+            0.961
+          ],
+          "content": "199"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "DocHdl1OnVERSA-PPM01tmpTarget",
+      "created_at": "2015-08-17T16:48:25Z",
+      "modified_at": "2018-07-08T15:12:16-07:00",
+      "creator_application": "Prinect Printready",
+      "producer_application": "Mac OS X 10.10.4 Quartz PDFContext",
+      "page_count": 380,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 208,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 209,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 210,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 211,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 212,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 213,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 214,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 215,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 216,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 217,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 218,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 219,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 220,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 221,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 222,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 223,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

@@ -1,0 +1,1827 @@
+{
+  "pages": [
+    {
+      "page_idx": 352,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.065,
+            0.259,
+            0.08
+          ],
+          "content": "C H A P T E R 6"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.112,
+            0.895,
+            0.174
+          ],
+          "content": "The E. coli and S. enterica genomes are both about five million nucleotides long. It can be shown that the expected number of shared 30-mers between two random 5 million nucleotide-long sequences is approximately $2 \\cdot { \\left( 5 \\cdot 1 0 ^ { 6 } \\right) } ^ { 2 } { \\big / } 4 ^ { 3 0 } \\approx 1 / 2 0 , 0 0 0 .$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.176,
+            0.897,
+            0.324
+          ],
+          "content": "Yet solving the Shared k-mers Problem for E. coli and S. enterica yields over 200,000 pairs $( x , y )$ corresponding to shared 30-mers. The surprisingly large number of shared 30-mers indicates that E. coli and S. enterica are close relatives that have retained many similar genes inherited from their common ancestor. However, these genes may be arranged in a different order in the two species: how can we infer synteny blocks from these genomes’ shared k-mers? The genomic dot-plot plot for E. coli and S. enterica is shown in Figure 6.21."
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.207,
+            0.362,
+            0.831,
+            0.744
+          ],
+          "sub_type": "scatter",
+          "content": "| Series | X (range) | Y (range) |\n| --- | --- | --- |\n| Red (+a) | 0~4600 | 100~4800 |\n| Blue (-b) | 200~4500 | 500~4700 |\n| Red (-c) | 200~4500 | 1500~4500 |",
+          "captions": [
+            {
+              "bbox": [
+                0.19,
+                0.763,
+                0.845,
+                0.834
+              ],
+              "content": "FIGURE 6.21 Genomic dot-plot of E. coli (horizontal axis) and S. enterica (vertical axis) for $k   =   3 0$ . Each point $( x , y )$ corresponds to a k-mer shared by the two genomes. Red points indicate identical shared k-mers, whereas blue points indicate reverse complementary k-mers. Each axis is measured in kilobases (thousands of base pairs)."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_352_chart_3.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.031,
+            0.849,
+            0.11,
+            0.91
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.163,
+                0.858,
+                0.869,
+                0.901
+              ],
+              "content": "STOP and Think: Can you see the synteny blocks in the genomic dot-plot in Figure 6.21?"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_352_image_5.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.944,
+            0.534,
+            0.961
+          ],
+          "content": "328"
+        }
+      ]
+    },
+    {
+      "page_idx": 353,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.277,
+            0.065,
+            0.858,
+            0.08
+          ],
+          "content": "A R E T H E R E F R A G I L E R E G I O N S I N T H E H U M A N G E N O M E ?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.112,
+            0.513,
+            0.131
+          ],
+          "level": 2,
+          "content": "Constructing synteny blocks from shared k-mers"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.143,
+            0.861,
+            0.375
+          ],
+          "content": "The genomic dot-plot in Figure 6.21 indicates five regions of similarity in the form of points that clump together into approximately diagonal segments. These segments are labeled by $a ,   b ,   c ,   d ,$ and e according to the order in which they appear in the E. coli genome. We ignore smaller diagonals such as the short blue diagonal starting around position 1.3 million in E. coli and around position 1.9 million in S. enterica. For example, while a corresponds to a long diagonal segment of slope 1 that covers approximately the first 3.5 million positions in both genomes, b corresponds to a shorter diagonal segment of slope \u00001 that starts shortly before position 3.5 million in $E .$ coli and shortly after position 4 million in S. enterica. Although b appears small in Figure 6.21, don’t be fooled by the scale of the figure; b is over 100,000 nucleotides long and contains nearly 100 genes."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.378,
+            0.861,
+            0.568
+          ],
+          "content": "The segments $a , b , c , d ,$ and e give us the synteny blocks that we have been looking for. If we project these blocks onto the x- and y-axes, then the ordering of blocks on each axis corresponds to the ordering of synteny blocks in the respective bacterium. The ordering of synteny blocks in E. coli (plotted on the x-axis) is $( + a + b + c + d + e )$ and the ordering in S. enterica (y-axis) is $( + a - c - d - b + e )$ . Note that the blue letters in S. enterica are assigned a negative sign because these blocks were constructed from reverse complementary k-mers. Figure 6.21 also illustrates what the directions of blocks are — they respectively correspond to diagonals in the dot-plot with slope 1 (blocks with $a $ '' + '' $$ sign) and slope \u00001 (blocks with a “\u0000” sign)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.57,
+            0.859,
+            0.653
+          ],
+          "content": "We have therefore represented the relationship between two bacterial genomes using just five synteny blocks. Of course, this simplification required us to throw out some points in the dot plot, corresponding to tiny regions of similarity that did not surpass a threshold length in order to be considered synteny blocks."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.655,
+            0.861,
+            0.824
+          ],
+          "content": "We are now ready to construct the eleven human-mouse synteny blocks originally presented in Figure 6.1 (page 294), but since the human and mouse X chromosomes are rather long, we will instead provide you with all positions $( x , y )$ where they share significant similarities. Figure 6.22 (top left) presents the resulting genomic dot-plot for the human and mouse X chromosomes, where each point represents a long similar region rather than a shared k-mer. Our eyes immediately find eleven diagonals in this plot corresponding to the human-mouse X chromosome synteny blocks — problem solved! We state this problem as the Synteny Blocks Problem."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.464,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": "329"
+        }
+      ]
+    },
+    {
+      "page_idx": 354,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.141,
+            0.065,
+            0.256,
+            0.079
+          ],
+          "content": "C H A P T E R 6"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.174,
+            0.123,
+            0.861,
+            0.667
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.19,
+                0.7,
+                0.845,
+                0.87
+              ],
+              "content": "FIGURE 6.22 From local similarities to synteny blocks. (Top left) The genomic dot-plot for the human and mouse X chromosomes, representing all positions $( x , y )$ where they share significant similarities. In contrast with Figure 6.21, we do not distinguish between red and blue dots. (Top right) Clusters (connected components) of points in the genomic dot-plot are formed by constructing the synteny graph. (Bottom left) Rectified clusters from the synteny graph transform each cluster into an exact diagonal of slope $\\pm 1$ . (Bottom right) Aggregated synteny blocks. Projection of the synteny blocks to the x-and y-axes results in the arrangements of synteny blocks in the respective human and mouse genomes $\\left( + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 \\right)$ and $+ 1 - 7 + 6 - 10$ $+ 9 - 8 + 2 - 11 - 3 + 5 + 4$"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_354_image_1.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.946,
+            0.534,
+            0.961
+          ],
+          "content": "330"
+        }
+      ]
+    },
+    {
+      "page_idx": 355,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.278,
+            0.065,
+            0.858,
+            0.08
+          ],
+          "content": "A R E T H E R E F R A G I L E R E G I O N S I N T H E H U M A N G E N O M E ?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.132,
+            0.129,
+            0.365,
+            0.147
+          ],
+          "level": 2,
+          "content": "Synteny Blocks Problem:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.15,
+            0.449,
+            0.169
+          ],
+          "content": "Find diagonals in the genomic dot-plot."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.181,
+            0.549,
+            0.201
+          ],
+          "content": "**Input**: A set of points DotPlot in the plane."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.203,
+            0.757,
+            0.223
+          ],
+          "content": "**Output**: A set of diagonals in DotPlot representing synteny blocks."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.257,
+            0.862,
+            0.406
+          ],
+          "content": "Unfortunately, it remains unclear how to write a program to do what our eyes found to be so easy; we hope you have already noticed that the Synteny Blocks Problem is not a well-formulated computational problem. As we have mentioned, the diagonals in Figure 6.22 (top left) are not perfect. Moreover, there are many gaps within diagonals that cannot be seen by the human eye but will become apparent if we zoom into the genome plot. It is therefore unclear what method the human brain is using to transform the dots into the eleven diagonals in the genomic dot-plot."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.423,
+            0.835,
+            0.485
+          ],
+          "content": "**STOP and Think:** How can we translate the brain’s ability to construct the diagonals that you see in Figure 6.22 (top left) into an algorithm that a computer can understand?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.102,
+            0.514,
+            0.542,
+            0.534
+          ],
+          "level": 2,
+          "content": "Synteny blocks as connected components in graphs"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.545,
+            0.861,
+            0.67
+          ],
+          "content": "The reason why you can easily see the synteny blocks in a genomic dot-plot is that your brain is good at clustering nearby points in an image. To mimic this process with a computer, we therefore need a precise notion of clustering. Given a set of points DotPlot in the plane as well as a parameter maxDistance, we will construct the (undirected) **synteny graph** SYNTENYGRAPH(DotPlot, maxDistance) by connecting two points in DotPlot with an edge if the distance between them does not exceed maxDistance."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.673,
+            0.862,
+            0.886
+          ],
+          "content": "Every graph can be divided into disjoint connected subgraphs called **connected components**. The connected components in SYNTENYGRAPH(DotPlot, maxDistance) represent candidate synteny blocks between the two genomes (Figure 6.23). When we construct the synteny graph for the human and mouse X chromosomes, we find a huge number of small connected components (the exact number depends on our choice of the maxDistance parameter). However, we will ignore these small connected components, since they may represent spurious similarities. We thus introduce the parameter minSize representing the minimum number of points in a connected component that we will consider as forming a synteny block. Our goal is to return all connected components having at least minSize nodes."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.889,
+            0.422,
+            0.967,
+            0.484
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_355_image_10.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.464,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": "331"
+        }
+      ]
+    },
+    {
+      "page_idx": 356,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.065,
+            0.259,
+            0.08
+          ],
+          "content": "C H A P T E R 6"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.328,
+            0.109,
+            0.709,
+            0.413
+          ],
+          "sub_type": "scatter",
+          "content": "| Position | Nucleotide |\n| --- | --- |\n| 1 | A-T |\n| 2 | G-C |\n| 3 | G-C |\n| 4 | T-A |\n| 5 | T-A |\n| 6 | A-T |\n| 7 | T-A |\n| 8 | C-G |\n| 9 | T-A |\n| 10 | G-C |\n| 11 | C-G |\n| 12 | T-A |\n| 13 | G-C |\n| 14 | G-C |\n| 15 | G-C |\n| 16 | G-C |\n| 17 | G-C |\n| 18 | G-C |\n| 19 | T-A |\n| 20 | T-A |\n| 21 | T-A |\n| 22 | T-A |\n| 23 | T-A |\n| 24 | T-A |\n| 25 | T-A |\n| 26 | T-A |\n| 27 | T-A |\n| 28 | T-A |\n| 29 | T-A |\n| 30 | T-A |\n| 31 | T-A |\n| 32 | T-A |\n| 33 | T-A |\n| 34 | T-A |\n| 35 | T-A |\n| 36 | T-A |\n| 37 | T-A |\n| 38 | T-A |\n| 39 | T-A |\n| 40 | T-A |\n| 41 | T-A |\n| 42 | T-A |\n| 43 | T-A |\n| 44 | T-A |\n| 45 | T-A |\n| 46 | T-A |\n| 47 | T-A |\n| 48 | T-A |\n| 49 | T-A |\n| 50 | T-A |\n| 51 | T-A |\n| 52 | T-A |\n| 53 | T-A |\n| 54 | T-A |\n| 55 | T-A |\n| 56 | T-A |\n| 57 | T-A |\n| 58 | T-A |\n| 59 | T-A |\n| 60 | T-A |\n| 61 | T-A |\n| 62 | T-A |\n| 63 | T-A |\n| 64 | T-A |\n| 65 | T-A |\n| 66 | T-A |\n| 67 | T-A |\n| 68 | T-A |\n| 69 | T-A |\n| 70 | T-A |\n| 71 | T-A |\n| 72 | T-A |\n| 73 | T-A |\n| 74 | T-A |\n| 75 | T-A |\n| 76 | T-A |\n| 77 | T-A |\n| 78 | T-A |\n| 79 | T-A |\n| 80 | T-A |\n| 81 | T-A |\n| 82 | T-A |\n| 83 | T-A |\n| 84 | T-A |\n| 85 | T-A |\n| 86 | T-A |\n| 87 | T-A |\n| 88 | T-A |\n| 89 | T-A |\n| 90 | T-A |\n| 91 | T-A |\n| 92 | T-A |\n| 93 | T-A |\n| 94 | T-A |\n| 95 | T-A |\n| 96 | T-A |\n| 97 | T-A |\n| 98 | T-A |\n| 99 | T-A |\n| 100 | T-A |",
+          "captions": [
+            {
+              "bbox": [
+                0.19,
+                0.425,
+                0.845,
+                0.496
+              ],
+              "content": "FIGURE 6.23 The graph SYNTENYGRAPH(DotPlot, 4) constructed from the genomic dot-plot of AGCAGGTTATCTCCCTGT and AGCAGGAGATAACCCTGT for k = 3. Note that the three synteny blocks (all of which have four nodes) correspond to diagonals in the genomic dot-plot. We ignore the two smaller, noisy synteny blocks."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_356_chart_1.jpg"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.165,
+            0.536,
+            0.856,
+            0.643
+          ],
+          "sub_type": "code",
+          "content": "```txt\nSYNTENYBLOCKS(DotPlot, maxDistance, minSize)\n    construct SYNTENYGRAPH(DotPlot, maxDistance)\n    find the connected components in SYNTENYGRAPH(DotPlot, maxDistance)\n    output connected components containing at least minSize nodes as candidate\n    synteny blocks\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.666,
+            0.897,
+            0.77
+          ],
+          "content": "As Figure 6.22 (top right) illustrates, **SYNTENYBLOCKS** has the tendency to partition a single diagonal (as perceived by the human eye) into multiple diagonals due to gaps that exceed the parameter maxDistance. However, this partitioning is not a problem, since the broken diagonals can be combined later into a single (aggregated) synteny block."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.031,
+            0.802,
+            0.11,
+            0.864
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_356_image_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.79,
+            0.875,
+            0.876
+          ],
+          "content": "**STOP and Think:** We have defined synteny blocks as large connected components in SYNTENYGRAPH(DotPlot, maxDistance) but have not described how to determine where these synteny blocks are located in the original genomes. Using Figure 6.22 as a hint, design an algorithm for finding this information."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.946,
+            0.535,
+            0.961
+          ],
+          "content": "332"
+        }
+      ]
+    },
+    {
+      "page_idx": 357,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.277,
+            0.065,
+            0.858,
+            0.08
+          ],
+          "content": "A R E T H E R E F R A G I L E R E G I O N S I N T H E H U M A N G E N O M E ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.112,
+            0.862,
+            0.153
+          ],
+          "content": "You should now be ready to solve the challenge problem and discover that the choice of parameters is one of the dark secrets of bioinformatics research."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.171,
+            0.837,
+            0.275
+          ],
+          "content": "**CHALLENGE PROBLEM:** Construct the synteny blocks for the human and mouse X chromosomes and compute the 2-break distance between the circularized human and mouse X chromosomes using the synteny blocks that you constructed. How does this distance change depending on the parameters maxDistance and minSize?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.171,
+            0.329,
+            0.792,
+            0.349
+          ],
+          "level": 2,
+          "content": "Open Problem: Can Rearrangements Shed Light on Bacterial Evolution?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.366,
+            0.862,
+            0.555
+          ],
+          "content": "Although there exist efficient algorithms for analyzing pairwise genome rearrangements, constructing rearrangement scenarios for multiple genomes remains an open problem. For example, we now know how to find a most parsimonious rearrangement scenario transforming the mouse X chromosome into the human X chromosome. However, the problem of finding a most parsimonious rearrangement scenario for the human, mouse, and rat X chromosomes — let alone for their entire genomes — is a more difficult problem. The difficulties further amplify when we attempt to reconstruct a rearrangement history for dozens of mammalian genomes. To address this challenge, we start from the simpler (but still unsolved) case of bacterial genomes."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.558,
+            0.861,
+            0.66
+          ],
+          "content": "Let Tree be a tree (i.e., a connected acyclic undirected graph) with nodes labeled by some genomes. In the case of bacterial genomes, we assume that every node (genome) is labeled by a circular permutation on n elements. Given an edge e connecting nodes v and w in Tree, we define DISTANCE(v, w) as the 2-break distance between genomes v and w. The **tree distance** DISTANCE(Tree) is the sum"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.332,
+            0.677,
+            0.633,
+            0.716
+          ],
+          "content": "\\sum_ {\\text {all edges} (v, w) \\text {in Tree}} \\text {DISTANCE} (v, w).",
+          "image_source": "images/page_357_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.731,
+            0.861,
+            0.816
+          ],
+          "content": "Given a set of genomes $P_{1}, \\cdots, P_{n}$ and an evolutionary tree Tree with n leaves labeled by $P _ { 1 } , \\cdots , P _ { n } ,$ the Ancestral Genome Reconstruction Problem attempts to reconstruct genomes at the internal nodes of the tree such that DISTANCE(Tree) is minimized across all possible reconstructions of genomes at internal nodes."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.464,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": "333"
+        }
+      ]
+    },
+    {
+      "page_idx": 358,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.065,
+            0.259,
+            0.081
+          ],
+          "content": "C H A P T E R 6"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.167,
+            0.129,
+            0.57,
+            0.146
+          ],
+          "level": 2,
+          "content": "Ancestral Genome Reconstruction Problem:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.15,
+            0.871,
+            0.189
+          ],
+          "content": "Given a tree with leaves labeled by genomes, reconstruct ancestral genomes that minimize the tree distance."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.207,
+            0.203,
+            0.68,
+            0.221
+          ],
+          "content": "**Input**: A tree Tree with each leaf labeled by a genome."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.206,
+            0.224,
+            0.871,
+            0.283
+          ],
+          "content": "**Output**: Genomes AncestralGenomes assigned to the internal nodes of Tree such that DISTANCE(Tree) is minimized across all possible choices of AncestralGenomes."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.321,
+            0.772,
+            0.341
+          ],
+          "content": "In the case when Tree is not given, we need to infer it from the genomes."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.167,
+            0.376,
+            0.566,
+            0.394
+          ],
+          "level": 2,
+          "content": "Multiple Genome Rearrangement Problem:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.397,
+            0.871,
+            0.436
+          ],
+          "content": "Given a set of genomes, reconstruct a tree with leaves labeled by these genomes and minimum tree distance."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.207,
+            0.451,
+            0.431,
+            0.469
+          ],
+          "content": "**Input**: A set of genomes."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.206,
+            0.471,
+            0.871,
+            0.533
+          ],
+          "content": "**Output**: A tree Tree with leaves labeled by these genomes and internal nodes labeled by (unknown) genomes AncestralGenomes such that DISTANCE(Tree) is minimal among all possible choices of Tree and AncestralGenomes."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.568,
+            0.897,
+            0.713
+          ],
+          "content": "Although many heuristics have been proposed for the Multiple Genome Rearrangement Problem, they have mainly been applied to analyze mammalian evolution. However, there have been hardly any applications of the Multiple Genome Rearrangement Problem for analyzing bacterial evolution. The fact that bacterial genomes are approximately 1,000 times smaller than mammalian genomes does not make this problem 1,000 times easier. In fact, there are unique challenges and opportunities in bacterial evolutionary research."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.717,
+            0.897,
+            0.887
+          ],
+          "content": "Consider 100 genomes from three closely related bacterial genera, Salmonella, Shigella, and Escherichia, whose various species are responsible for dysentery, typhoid fever, and a variety of foodborne illnesses. After you construct synteny blocks shared by all these genomes, you will see that there are relatively few (usually fewer than 10) rearrangements between every pair of genomes. However, solving the Multiple Genome Rearrangement Problem even in the case of closely related genomes presents a formidable challenge, and nobody has been able to construct a rearrangement scenario for more than a couple dozen — let alone 100! — species yet."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.946,
+            0.534,
+            0.961
+          ],
+          "content": "334"
+        }
+      ]
+    },
+    {
+      "page_idx": 359,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.277,
+            0.065,
+            0.858,
+            0.08
+          ],
+          "content": "A R E T H E R E F R A G I L E R E G I O N S I N T H E H U M A N G E N O M E ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.112,
+            0.862,
+            0.281
+          ],
+          "content": "After you solve this puzzle, you will be able to address the question of whether there are fragile regions in bacterial genomes. Answering this question for a pair of bacterial genomes, like we did for the human and mouse genomes, may not be possible because there are typically fewer than 10 rearrangements between them. But answering this question for 100 bacterial genomes may be possible if we witness the same breakage occurring independently on many branches of the evolutionary tree. However, you will need to develop algorithms to analyze fragile regions in multiple (rather than pairwise) genomes."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.283,
+            0.862,
+            0.43
+          ],
+          "content": "After you construct the evolutionary tree, you will also be in a position to analyze the question of what triggers rearrangements. While many authors have discussed the causes of fragility, this question remains open, with no shortage of hypotheses. Many rearrangements are flanked by **matching duplications**, a pair of long similar regions located within a pair of breakpoint regions corresponding to a rearrangement event. However, it remains unclear what triggers rearrangements in bacteria; can you answer this question?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.402,
+            0.476,
+            0.56,
+            0.495
+          ],
+          "level": 2,
+          "content": "Charging Stations"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.512,
+            0.434,
+            0.532
+          ],
+          "content": "From genomes to the breakpoint graph"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.543,
+            0.86,
+            0.691
+          ],
+          "content": "Our goal is to count the number of cycles in the breakpoint graph and therefore solve the 2-Break Distance Problem. First, however, we will need to obtain a convenient graph representation of genomes. In the main text, we represented a circular chromosome by converting each synteny block into a directed edge, and then connected adjacent synteny blocks in the chromosome with red edges. Although this provided us with a way of visualizing genomes, it is not immediately clear how to represent this graph with an adjacency list."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.693,
+            0.862,
+            0.884
+          ],
+          "content": "Given a genome $P ,$ we will represent its synteny blocks not as letters but as integers from 1 to $n = | P |$ . For example, $( + a - b - c + d )$ will be represented as $(+1 - 2 - 3 + 4)$ (Figure 6.24 (left)). Then, we will convert the directed black edges of $P$ into undirected edges as follows. Given a directed edge labeled by integer $x ,$ we assign the node at the “head” of this edge as $x _ { h }$ and the node at the “tail” of this edge as $x _ { t }$ . For example, we replace the directed edge labeled $\\text{\" }2 \"$ in Figure 6.24 (left) with an undirected edge connecting nodes $2 _ { t }$ and $2 _ { h }$ (Figure 6.24 (middle)). This results in the cyclic sequence of nodes $\\left( 1 _ { t } , 1 _ { h } , 2 _ { h } , 2 _ { t } , 3 _ { h } , 3 _ { t } , 4 _ { t } , 4 _ { h } \\right)$ . Finally, to simplify analysis of this graph even further, instead of using $x _ { h }$ and $x _ { t }$ to denote the head and tail of synteny block $x ,$ we will"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.464,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": "335"
+        }
+      ]
+    },
+    {
+      "page_idx": 360,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.065,
+            0.259,
+            0.081
+          ],
+          "content": "C H A P T E R 6"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.112,
+            0.897,
+            0.175
+          ],
+          "continues_prev": true,
+          "content": "use the integers 2x and 2x \u0000 1, respectively (Figure 6.24 (right)). With this encoding, the original genome $(+1 - 2 - 3 + 4)$ is transformed into the cyclic sequence of nodes (1, 2, 4, 3, 6, 5, 7, 8)."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.202,
+            0.208,
+            0.365,
+            0.334
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  1[\"Step 1\"] --> 2[\"Step 2\"]\n  n2[\"2\"] --> 3[\"Step 3\"]\n  n3[\"3\"] --> 4[\"Step 4\"]\n  n4[\"4\"] --> 1[\"End Node\"]\n  n1[\"1\"] --> n2\n  n2 --> n3\n  n3 --> n4\n```",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_360_image_2.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.443,
+            0.209,
+            0.6,
+            0.332
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"1_h\"] --> B[\"2_h\"]\n  B --> C[\"2_t\"]\n  C --> D[\"3_h\"]\n  D --> E[\"3_t\"]\n  E --> F[\"4_h\"]\n  F --> G[\"4_t\"]\n  G --> H[\"1_t\"]\n```",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_360_image_3.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.687,
+            0.21,
+            0.844,
+            0.332
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph TD\n  A[\"Node 1\"] --> B[\"Node 2\"]\n  B --> C[\"Node 3\"]\n  C --> D[\"Node 4\"]\n  D --> E[\"Node 5\"]\n  E --> F[\"Node 6\"]\n  F --> G[\"Node 7\"]\n  G --> H[\"Node 8\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.19,
+                0.351,
+                0.845,
+                0.456
+              ],
+              "content": "FIGURE 6.24 (Left) The circular chromosome $(+a $-b $-c $+d)$ can be represented as $(+1 $- 2$ $- 3$ +4)$ using integers. (Middle) Representing this chromosome by replacing the black directed edges with undirected edges connecting “heads” and “tails” of each synteny block. (Right) Encoding head and tail nodes as integers. $1 _ { t }$ and $1 _ { h }$ are converted into 1 and $2 ;   2 _ { t }$ and $2 _ { h }$ are converted into 3 and $4 ;$ and so on. The original chromosome has been converted into the alternating cycle (1, 2, 4, 3, 6, 5, 7, 8)."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_360_image_4.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.031,
+            0.491,
+            0.11,
+            0.553
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_360_image_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.481,
+            0.871,
+            0.562
+          ],
+          "content": "**STOP and Think:** Is the transformation illustrated in Figure 6.24 invertible? In other words, if we were to give you a cyclic sequence of nodes labeled from 1 to $2 n ,$ could you reconstruct the chromosome with n synteny blocks from which it derives?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.583,
+            0.897,
+            0.669
+          ],
+          "content": "The following pseudocode bypasses the intermediate step in Figure 6.24 (middle) of assigning “head” and “tail” nodes in order to transform a single circular chromosome Chromosome = (Chromosome<sub>1</sub>, . . . , Chromosome<sub>n</sub>) into a cycle represented as a sequence of integers $\\mathit { N o d e s } = \\left( \\mathit { N o d e s } _ { 1 } , \\cdots , \\mathit { N o d e s } _ { 2 n } \\right)$"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.191,
+            0.711,
+            0.498,
+            0.904
+          ],
+          "sub_type": "algorithm",
+          "content": "for $j \\leftarrow 1$ to $|Chromosome|$\n    $i \\leftarrow Chromosome_j$\n    if $i > 0$\n        $Node_{2j-1} \\leftarrow 2i - 1$\n        $Node_{2j} \\leftarrow 2i$\n    else\n        $Node_{2j-1} \\leftarrow -2i$\n        $Node_{2j} \\leftarrow -2i - 1$\nreturn Nodes",
+          "captions": [
+            {
+              "bbox": [
+                0.165,
+                0.689,
+                0.497,
+                0.707
+              ],
+              "content": "CHROMOSOMETOCYCLE(Chromosome)"
+            }
+          ],
+          "footnotes": []
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.031,
+            0.762,
+            0.11,
+            0.824
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_360_image_11.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.944,
+            0.534,
+            0.961
+          ],
+          "content": "336"
+        }
+      ]
+    },
+    {
+      "page_idx": 361,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.277,
+            0.065,
+            0.858,
+            0.08
+          ],
+          "content": "A R E T H E R E F R A G I L E R E G I O N S I N T H E H U M A N G E N O M E ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.112,
+            0.766,
+            0.133
+          ],
+          "content": "This process is in fact invertible, as described by the following pseudocode."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.129,
+            0.154,
+            0.496,
+            0.306
+          ],
+          "sub_type": "algorithm",
+          "content": "CYCLETOCHROMOSOME(Nodes)\n    for $j \\leftarrow 1$ to $|Nodes|/2$\n        if $Node_{2j-1} < Node_{2j}$\n            $Chromosome_j \\leftarrow Node_{2j}/2$\n        else\n            $Chromosome_j \\leftarrow -Node_{2j-1}/2$\n    return Chromosome",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.329,
+            0.861,
+            0.391
+          ],
+          "content": "**CHROMOSOMETOCYCLE** generates the sequence of nodes of a chromosome, but it does not explicitly add the edges. Any genome P with n synteny blocks will have the black undirected edges BLACKEDGES $\\left( P \\right) = { \\big ( } 1 , 2 { \\big ) } , { \\big ( } 3 , 4 { \\big ) } , { \\cdots } , { \\big ( } 2 n - 1 , 2 n { \\big ) }$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.392,
+            0.862,
+            0.454
+          ],
+          "content": "We now define COLOREDEDGES(P) as the set of colored edges in the graph of P. For the example in Figure 6.24, the set COLOREDEDGES(P) contains the edges (2, 4), (3, 6), (5, 7), and (8, 1)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.456,
+            0.862,
+            0.52
+          ],
+          "content": "The following algorithm constructs COLOREDEDGES(P) for a genome P. In this pseudocode, we will assume that an n-element array $\\left( a _ { 1 } , \\cdots , a _ { n } \\right)$ has an invisible (n + 1)- th element that is equal to its first element, i.e., $a _ { n + 1 } = a _ { 1 }$"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.129,
+            0.54,
+            0.613,
+            0.694
+          ],
+          "sub_type": "algorithm",
+          "content": "COLOREDEDGES(P)\n    Edges ← an empty set\n    for each chromosome Chromosome in P\n        Nodes ← CHROMOSOMETOCYCLE(Chromosome)\n        for j ← 1 to |Chromosome|\n            add the edge (Nodes2j, Nodes2j+1) to Edges\n    return Edges",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.717,
+            0.859,
+            0.779
+          ],
+          "content": "The colored edges in the breakpoint graph of P and Q are given by COLOREDEDGES(P) together with COLOREDEDGES(Q). Note that some edges in these two sets may connect the same two nodes, which results in trivial cycles."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.781,
+            0.859,
+            0.824
+          ],
+          "content": "Although we are now ready to solve the 2-Break Distance Problem, we will later find it helpful to implement a function converting a genome graph back into a genome."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.889,
+            0.194,
+            0.967,
+            0.256
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_361_image_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.909,
+            0.606,
+            0.945,
+            0.625
+          ],
+          "content": "[6H](http://rosalind.info/problems/6h)"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.464,
+            0.946,
+            0.499,
+            0.961
+          ],
+          "content": "337"
+        }
+      ]
+    },
+    {
+      "page_idx": 362,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.065,
+            0.259,
+            0.08
+          ],
+          "content": "C H A P T E R 6"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.031,
+            0.144,
+            0.11,
+            0.208
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_362_image_1.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.034,
+            0.281,
+            0.106,
+            0.373
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_362_image_2.jpg"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.165,
+            0.116,
+            0.648,
+            0.241
+          ],
+          "sub_type": "code",
+          "content": "```txt\nGRAPHTOGENOME(GenomeGraph)\n    P ← an empty set of chromosomes\n    for each cycle Nodes in GenomeGraph\n        Chromosome ← CYCLETOCHROMOSOME(Nodes)\n        add Chromosome to P\n    return P\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.285,
+            0.448,
+            0.305
+          ],
+          "content": "Solving the 2-Break Sorting Problem"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.317,
+            0.895,
+            0.357
+          ],
+          "content": "**Note:** This Charging Station uses some notation from **CHARGING STATION: From Genomes to the Breakpoint Graph**."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.36,
+            0.897,
+            0.465
+          ],
+          "content": "Figure 6.25 (top) illustrates how a 2-break replaces colored edges (1, 6) and (3, 8) in a genome graph with two new colored edges (1, 3) and (6, 8). We will denote this operation as $2 -BREAK(1,6,3,8)$ . Note that the order of the nodes in this function matter, since the operation 2-BREAK(1, 6, 8, 3) would represent a different 2-break that replaces (1, 6) and (3, 8) with (1, 8) and (6, 3) (Figure 6.25 (bottom))."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.298,
+            0.495,
+            0.74,
+            0.83
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"Node 1\"] -->|\"2-BREAK1,6,3,8\"| B[\"Node 2\"]\n  B -->|\"2-BREAK1,6,8,3\"| C[\"Node 3\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.19,
+                0.841,
+                0.842,
+                0.876
+              ],
+              "content": "FIGURE 6.25 Operations 2-BREAK(1, 6, 3, 8) (top) and 2-BREAK(1, 6, 8, 3) (bottom) on the genome (+1 \u00002 \u00003 +4) from Figure 6.24."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_362_image_7.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.944,
+            0.534,
+            0.961
+          ],
+          "content": "338"
+        }
+      ]
+    },
+    {
+      "page_idx": 363,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.277,
+            0.065,
+            0.858,
+            0.08
+          ],
+          "content": "A R E T H E R E F R A G I L E R E G I O N S I N T H E H U M A N G E N O M E ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.112,
+            0.859,
+            0.154
+          ],
+          "content": "The following pseudocode describes how $2 -BREAK(i,i',j,j')$ transforms a genome graph."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.129,
+            0.175,
+            0.655,
+            0.259
+          ],
+          "sub_type": "code",
+          "content": "```txt\n2-BREAKONGENOMEGRAPH(GenomeGraph, i, i', j, j')\nremove colored edges (i, i') and (j, j') from GenomeGraph\nadd colored edges (i, j) and (i', j') to GenomeGraph\nreturn GenomeGraph\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.283,
+            0.685,
+            0.304
+          ],
+          "content": "We can extend this pseudocode to a 2-break defined on genome P."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.129,
+            0.324,
+            0.763,
+            0.427
+          ],
+          "sub_type": "code",
+          "content": "```txt\n2-BREAKONGENOME(P, i, i', j, j')\n    GenomeGraph ← BLACKEDGES(P) and COLOREDEDGES(P)\n    GenomeGraph ← 2-BREAKONGENOMEGRAPH(GenomeGraph, i, i', j, j')\n    P ← GRAPHTOGENOME(GenomeGraph)\n    return P\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.452,
+            0.86,
+            0.577
+          ],
+          "content": "We are now ready to find a series of intermediate genomes in a shortest transformation of P into Q by 2-breaks. The idea of our algorithm is to find a 2-break that will increase the number of red-blue cycles in the breakpoint graph by 1. To do so, as illustrated in Figure 6.26, we select an arbitrary blue edge in a non-trivial alternating red-blue cycle and perform the 2-break on the two red edges flanking this blue edge in order to split the red-blue cycle into two cycles (at least one of which is trivial)."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.129,
+            0.599,
+            0.797,
+            0.895
+          ],
+          "sub_type": "code",
+          "content": "```txt\nSHORTESTREARRANGEMENTSCENARIO(P, Q)\noutput P\nRedEdges ← COLOREDEDGES(P)\nBlueEdges ← COLOREDEDGES(Q)\nBreakpointGraph ← the graph formed by RedEdges and BlueEdges\nwhile BreakpointGraph has a non-trivial cycle Cycle\n    (j, i') ← an arbitrary edge from BlueEdges in a nontrivial red-blue cycle\n    (i, j) ← an edge from RedEdges originating at node j\n    (i', j') ← an edge from RedEdges originating at node i'\n    RedEdges ← RedEdges with edges (i, j) and (i', j') removed\n    RedEdges ← RedEdges with edges (j, i') and (j', i) added\n    BreakpointGraph ← the graph formed by RedEdges and BlueEdges\n    P ← 2-BREAKONGENOME(P, i, i', j, j')\noutput P\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.889,
+            0.187,
+            0.966,
+            0.25
+          ],
+          "content": "[6J](http://rosalind.info/problems/6j)"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.889,
+            0.343,
+            0.967,
+            0.406
+          ],
+          "content": "[6K](http://rosalind.info/problems/6k)"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.464,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": "339"
+        }
+      ]
+    },
+    {
+      "page_idx": 364,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.065,
+            0.259,
+            0.08
+          ],
+          "content": "C H A P T E R 6"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.191,
+            0.106,
+            0.845,
+            0.212
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.19,
+                0.22,
+                0.845,
+                0.29
+              ],
+              "content": "FIGURE 6.26 A shortest 2-break transformation (from left to right) of the breakpoint graph of $P = \\left( + a   - b   - c   + d \\right)$ and $Q = ( + a + b - d - c )$ . The arbitrary blue edge selected by SHORTESTREARRANGEMENTSCENARIO at each step is shown in bold, and the red edges on either side of it are dashed (with stars indicating 2-breaks)."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_364_image_1.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.48,
+            0.337,
+            0.554,
+            0.354
+          ],
+          "level": 2,
+          "content": "Detours"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.373,
+            0.738,
+            0.393
+          ],
+          "content": "Why is the gene content of mammalian X chromosomes so conserved?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.404,
+            0.896,
+            0.572
+          ],
+          "content": "While mammalian X chromosomes are enriched in genes related to sexual reproduction, most of the approximately 1,000 genes on the X chromosome have nothing to do with gender. Ideally, they should be expressed (i.e., transcribed and eventually translated) in roughly the same quantities in females and males. But since females have two X chromosomes and males have only one, it would seem that all the genes on the X chromosome should have twice the expression level in females. This imbalance would lead to a problem in the complex cellular system of checks and balances underlying gene expression."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.575,
+            0.897,
+            0.701
+          ],
+          "content": "The need to balance gene expression in males and females led to the evolution of **dosage compensation**, or the inactivation of one X chromosome in females to equalize gene expression between the sexes. Because of dosage compensation, the gene content of the X chromosome is highly conserved between mammalian species because if a gene jumps off the X chromosome, then its expression may double, thus creating a genetic imbalance."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.724,
+            0.458,
+            0.743
+          ],
+          "level": 2,
+          "content": "Discovery of genome rearrangements"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.755,
+            0.897,
+            0.883
+          ],
+          "content": "After Sturtevant discovered genome rearrangements in Drosophila in 1921, another breakthrough occurred with the discovery that the salivary glands of Drosophila contain **polytene cells**. In normal cellular division, each daughter cell receives one copy of the genome. However, in the nuclei of polytene cells, DNA replication occurs repeatedly in the absence of cell division. The resulting chromosomes then knit themselves together into much larger “superchromosomes” called **polytene chromosomes**."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.946,
+            0.535,
+            0.961
+          ],
+          "content": "340"
+        }
+      ]
+    },
+    {
+      "page_idx": 365,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.277,
+            0.065,
+            0.858,
+            0.08
+          ],
+          "content": "A R E T H E R E F R A G I L E R E G I O N S I N T H E H U M A N G E N O M E ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.113,
+            0.862,
+            0.3
+          ],
+          "content": "Polytene chromosomes serve a practical purpose for the fruit fly, which uses the extra DNA to boost the production of gene transcripts, producing lots of sticky saliva. But the human value of polytene chromosomes is perhaps greater. When Sturtevant and his collaborator, Theodosius Dobzhansky, looked at polytene chromosomes under a microscope, they were able to witness the work of rearrangements firsthand in tangled mutant chromosomes. In 1938, Sturtevant and Dobzhansky published a milestone paper with an evolutionary tree presenting a rearrangement scenario with seventeen reversals for various species of Drosophila, the first evolutionary tree in history to be constructed based on molecular data."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.325,
+            0.346,
+            0.344
+          ],
+          "level": 2,
+          "content": "The exponential distribution"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.356,
+            0.862,
+            0.439
+          ],
+          "content": "A **Bernoulli trial** is a random experiment with two possible outcomes, “success” (having probability $p )$ and “failure” (having probability $1 - p )$ . The **geometric distribution** is the probability distribution underlying the random variable X representing the number of Bernoulli trials needed to obtain the first success:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.365,
+            0.455,
+            0.6,
+            0.479
+          ],
+          "content": "\\Pr (X = k) = (1 - p) ^ {k - 1} p.",
+          "image_source": "images/page_365_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.495,
+            0.862,
+            0.663
+          ],
+          "content": "A **Poisson process** is a continuous-time probabilistic process counting the number of events in a given time interval, if we assume that the events occur independently and at a constant rate. For example, the Poisson process offers a good model of time points for passengers arriving to a large train station. If we assume that the number of passengers arriving during a very small time interval e is $\\lambda \\cdot \\epsilon$ (where l is a constant), then we are interested in the probability $F ( X )$ that nobody will arrive to the station during a time interval X. The **exponential distribution** describes the time between events in a Poisson process."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.682,
+            0.833,
+            0.725
+          ],
+          "content": "**STOP and Think:** Do you see any similarities between the Poisson process and the Bernoulli trials or between the exponential and geometric distributions?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.747,
+            0.862,
+            0.83
+          ],
+          "content": "The exponential distribution is merely the continuous analogue of the geometric distribution. More precisely, the Poisson process is characterized by a **rate parameter** $\\lambda ,$ such that the number of events k in the time interval of duration e follows the **Poisson probability distribution**:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.408,
+            0.845,
+            0.553,
+            0.876
+          ],
+          "content": "e ^ {- \\lambda \\cdot \\epsilon} (\\lambda \\cdot \\epsilon) ^ {k} \\Big / k!",
+          "image_source": "images/page_365_equation_8.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.89,
+            0.674,
+            0.966,
+            0.735
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_365_image_9.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.464,
+            0.946,
+            0.496,
+            0.961
+          ],
+          "content": "341"
+        }
+      ]
+    },
+    {
+      "page_idx": 366,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.065,
+            0.259,
+            0.08
+          ],
+          "content": "C H A P T E R 6"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.111,
+            0.895,
+            0.155
+          ],
+          "content": "The probability density function of the exponential distribution is $\\lambda e ^ { - \\lambda \\cdot X }$ (compare with the geometric distribution shown in Figure 6.27)."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.182,
+            0.187,
+            0.852,
+            0.381
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.19,
+                0.39,
+                0.842,
+                0.425
+              ],
+              "content": "FIGURE 6.27 The probability density functions of the geometric (left) and exponential (right) distributions, each provided for three different parameter values."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_366_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.468,
+            0.517,
+            0.488
+          ],
+          "content": "Bill Gates and David X. Cohen flip pancakes"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.5,
+            0.897,
+            0.56
+          ],
+          "content": "Before biologists faced genome rearrangement problems, mathematicians posed the **Pancake Flipping Problem**, arising from the following hypothetical waiter’s conundrum."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.58,
+            0.848,
+            0.728
+          ],
+          "content": "The chef in our place is sloppy, and when he prepares a stack of pancakes they come out all different sizes. Therefore, when I deliver them to a customer, on the way to a table I rearrange them (so that the smallest winds up on top, and so on, down to the largest at the bottom) by grabbing several from the top and flipping them over, repeating this (varying the number I flip) as many times as necessary. If there are n pancakes, what is the maximum number of flips that I will ever have to use to rearrange them?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.745,
+            0.897,
+            0.871
+          ],
+          "content": "Formally, a **prefix reversal** is a reversal that flips a prefix, or initial interval, of a permutation. The **Pancake Flipping Problem** corresponds to sorting unsigned permutations by prefix reversals. For example, the series of prefix reversals shown below ignores signs and represents the sorting of the **unsigned permutation**, (1 7 6 10 9 8 2 11 3 5 4), into the **identity unsigned permutation**, (1 2 3 4 5 6 7 8 9 10 11). The inverted interval is shown in red, and sorted intervals at the end of the permutation are shown in blue."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.946,
+            0.534,
+            0.961
+          ],
+          "content": "342"
+        }
+      ]
+    },
+    {
+      "page_idx": 367,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.277,
+            0.065,
+            0.858,
+            0.08
+          ],
+          "content": "A R E T H E R E F R A G I L E R E G I O N S I N T H E H U M A N G E N O M E ?"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.272,
+            0.109,
+            0.692,
+            0.386
+          ],
+          "content": "| (1 | 7 | 6 | 10 | 9 | 8 | 2 | 11 | 3 | 5 | 4) |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| (11 | 2 | 8 | 9 | 10 | 6 | 7 | 1 | 3 | 5 | 4) |\n| (4 | 5 | 3 | 1 | 7 | 6 | 10 | 9 | 8 | 2 | 11) |\n| (10 | 6 | 7 | 1 | 3 | 5 | 4 | 9 | 8 | 2 | 11) |\n| (2 | 8 | 9 | 4 | 5 | 3 | 1 | 7 | 6 | 10 | 11) |\n| (9 | 8 | 2 | 4 | 5 | 3 | 1 | 7 | 6 | 10 | 11) |\n| (6 | 7 | 1 | 3 | 5 | 4 | 2 | 8 | 9 | 10 | 11) |\n| (7 | 6 | 1 | 3 | 5 | 4 | 2 | 8 | 9 | 10 | 11) |\n| (2 | 4 | 5 | 3 | 1 | 6 | 7 | 8 | 9 | 10 | 11) |\n| (5 | 4 | 2 | 3 | 1 | 6 | 7 | 8 | 9 | 10 | 11) |\n| (1 | 3 | 2 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11) |\n| (3 | 1 | 2 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11) |\n| (2 | 1 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11) |\n| (1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11) |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_367_table_1.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.4,
+            0.862,
+            0.463
+          ],
+          "content": "When we search for a shortest series of prefix reversals sorting a signed permutation, the problem is called the **Burnt Pancake Flipping Problem** (each pancake is “burnt” on one side, giving it two possible orientations)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.48,
+            0.837,
+            0.545
+          ],
+          "content": "**STOP and Think:** Prove that every unsigned permutation of length n can be sorted using at most 2 · (n \u0000 1) prefix reversals. Prove that every signed permutation of length n can be sorted using at most 3 · (n \u0000 1) + 1 prefix reversals."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.565,
+            0.862,
+            0.734
+          ],
+          "content": "In the mid-1970s, Bill Gates, an undergraduate student at Harvard, and Christos Papadimitriou, Gates’s professor, made the first attempt to solve the Pancake Flipping Problem and proved that any permutation of length n can be sorted with at most 5/3 · (n + 1) prefix reversals, a result that would not be improved for three decades. David X. Cohen worked on the Burnt Pancake Flipping Problem at Berkeley before he left computer science to become a writer for The Simpsons and eventually producer of Futurama. Along with Manuel Blum, he demonstrated that the Burnt Pancake Flipping Problem can be solved with at most 2 · (n \u0000 1) prefix reversals."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.102,
+            0.758,
+            0.441,
+            0.777
+          ],
+          "level": 2,
+          "content": "Sorting linear permutations by reversals"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.789,
+            0.861,
+            0.875
+          ],
+          "content": "In the main text, we defined the breakpoint graph for circular chromosomes, but this structure can easily be extended to linear chromosomes. Figure 6.28 depicts the human and the mouse X chromosomes as alternating red-black and blue-black paths (first and second panels). These two paths are superimposed in the third panel to form the"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.889,
+            0.482,
+            0.966,
+            0.543
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_367_image_7.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.464,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": "343"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "DocHdl1OnVERSA-PPM01tmpTarget",
+      "created_at": "2015-08-17T16:48:25Z",
+      "modified_at": "2018-07-08T15:12:16-07:00",
+      "creator_application": "Prinect Printready",
+      "producer_application": "Mac OS X 10.10.4 Quartz PDFContext",
+      "page_count": 380,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 352,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 353,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 354,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 355,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 356,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 357,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 358,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 359,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 360,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 361,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 362,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 363,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 364,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 365,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 366,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 367,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

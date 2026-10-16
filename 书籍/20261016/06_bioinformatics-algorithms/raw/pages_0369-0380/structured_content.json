@@ -1,0 +1,600 @@
+{
+  "pages": [
+    {
+      "page_idx": 368,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.065,
+            0.259,
+            0.08
+          ],
+          "content": "C H A P T E R 6"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.031,
+            0.152,
+            0.11,
+            0.213
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_368_image_1.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.112,
+            0.677,
+            0.133
+          ],
+          "content": "breakpoint graph, which has five alternating red-blue cycles."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.15,
+            0.873,
+            0.214
+          ],
+          "content": "**STOP and Think:** Prove the following analogue of the Cycle Theorem for permutations: Given permutations P and $Q ,$ any reversal applied to P can increase CYCLES $( P , Q )$ by at most 1."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.193,
+            0.257,
+            0.847,
+            0.569
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  subgraph Top Chart\n  A[\"1\"] --> B[\"2\"]\n  B --> C[\"3\"]\n  C --> D[\"4\"]\n  D --> E[\"5\"]\n  E --> F[\"6\"]\n  F --> G[\"7\"]\n  G --> H[\"8\"]\n  H --> I[\"9\"]\n  I --> J[\"10\"]\n  J --> K[\"11\"]\n  end\n\n  subgraph Middle Chart\n  L[\"1\"] --> M[\"2\"]\n  M --> N[\"3\"]\n  N --> O[\"4\"]\n  O --> P[\"5\"]\n  P --> Q[\"6\"]\n  Q --> R[\"7\"]\n  R --> S[\"8\"]\n  S --> T[\"9\"]\n  T --> U[\"10\"]\n  U --> V[\"11\"]\n  end\n\n  subgraph Bottom Chart\n  W[\"1\"] --> X[\"2\"]\n  X --> Y[\"3\"]\n  Y --> Z[\"4\"]\n  Z --> AA[\"5\"]\n  AA --> AB[\"6\"]\n  AB --> AC[\"7\"]\n  AC --> AD[\"8\"]\n  AD --> AE[\"9\"]\n  AE --> AF[\"10\"]\n  AF --> AG[\"11\"]\n  end\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.19,
+                0.578,
+                0.845,
+                0.698
+              ],
+              "content": "FIGURE 6.28 (1st panel) An alternating red-black path representing the human X chromosome $( + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 1 0 + 1 1 )$ . (2nd panel) An alternating blue-black path representing the mouse X chromosome $(+1 -7 +6 -10 +9 -8 +2$ $-11 - 3 + 5 + 4 )$ (3rd panel) The breakpoint graph of the mouse and human X chromosomes is obtained by superimposing red-black and blue-black paths from the first two panels. (4th panel) To highlight the five alternating red-blue cycles in the breakpoint graph, black edges are removed."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_368_image_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.73,
+            0.9,
+            0.878
+          ],
+          "content": "Whereas the number of trivial cycles is equal to $\\scriptstyle \\mathrm { B L O C K S } \\left( Q , Q \\right)$ in the trivial breakpoint graph of a circular permutation, the trivial breakpoint graph of a linear permutation has $\\mathrm { B L O C K S } \\big ( Q , Q \\big ) + 1$ trivial cycles. Since the Cycle Theorem holds for linear permutations, perhaps the reversal distance $d _ { \\mathrm { r e v } } \\big ( P , Q \\big )$ is equal to BLOCKS $\\left( P , Q \\right) + 1 -$ CYCLES $( P , Q )$ for linear chromosomes? After all, for the human and mouse X chromosomes, BLOCKS $( P , Q ) + 1 - \\mathsf { C Y C L E S } \\big ( P , Q \\big )$ is equal to $1 1 + 1 - 5 = 7 ,$ , which we already know to be the reversal distance between the human and mouse X chromosomes."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.946,
+            0.535,
+            0.961
+          ],
+          "content": "344"
+        }
+      ]
+    },
+    {
+      "page_idx": 369,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.277,
+            0.065,
+            0.858,
+            0.08
+          ],
+          "content": "A R E T H E R E F R A G I L E R E G I O N S I N T H E H U M A N G E N O M E ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.112,
+            0.837,
+            0.175
+          ],
+          "content": "**STOP and Think:** Can you modify the proof of the 2-Break Distance Theorem to prove that $d_{\\mathrm{rev}}(P, Q) = \\mathrm{BLOCKS}(P, Q) + 1 - \\mathrm{CYCLES}(P, Q)$ for linear permutations P and Q?"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.889,
+            0.113,
+            0.967,
+            0.175
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_369_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.195,
+            0.867,
+            0.258
+          ],
+          "content": "You can verify that if $P = ( + 2   +   1 )$ and $Q = ( + 1   +   2 )$ , then $d _ { \\mathrm { r e v } } \\big ( P , Q \\big ) \\neq \\mathrm { B L O C K S } \\big ( P , Q \\big ) +$ $1 - \\operatorname { C Y C L E S } ( P , Q )$ . This makes it unlikely that we will be able to develop a simple algorithm for the computation of reversal distance."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.26,
+            0.865,
+            0.43
+          ],
+          "content": "However, the lower bound $d_{\\mathrm{rev}}(P, Q) \\geq \\mathrm{BLOCKS}(P, Q) + 1 - \\mathrm{CYCLES}(P, Q)$ approximates the reversal distance between linear permutations extremely well. This intriguing performance raised the question of whether this bound is close to an exact formula. In 1999, Hannenhalli and Pevzner found this formula by defining two special types of breakpoint graph structures called “hurdles” and “fortresses”. Denoting the number of hurdles and fortresses in BREAKPOINTGRAPH $( P , Q )$ by HURDLES $( P , Q )$ and FORTRESSES $( P , Q )$ , respectively, they proved that the reversal distance $d _ { \\mathrm { r e v } } \\big ( P , Q \\big )$ is given by"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.147,
+            0.446,
+            0.819,
+            0.466
+          ],
+          "content": "\\text {BLOCKS} (P, Q) + 1 - \\text {CYCLES} (P, Q) + \\text {HURDLES} (P, Q) + \\text {FORTRESSES} (P, Q).",
+          "image_source": "images/page_369_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.483,
+            0.859,
+            0.505
+          ],
+          "content": "Using this formula, they developed a polynomial algorithm for computing $d _ { \\mathrm { r e v } } \\big ( P , Q \\big )$"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.464,
+            0.946,
+            0.499,
+            0.961
+          ],
+          "content": "345"
+        }
+      ]
+    },
+    {
+      "page_idx": 370,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.142,
+            0.066,
+            0.255,
+            0.079
+          ],
+          "content": "C H A P T E R 6"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.435,
+            0.112,
+            0.6,
+            0.131
+          ],
+          "level": 2,
+          "content": "Bibliography Notes"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.148,
+            0.895,
+            0.274
+          ],
+          "content": "Alfred Sturtevant was the first to discover rearrangements while comparing gene orders in fruit flies (Sturtevant, 1921). Together with Theodosius Dobzhansky, Sturtevant pioneered the analysis of genome rearrangements, publishing a milestone paper that presented a rearrangement scenario for many fruit fly species (Sturtevant and Dobzhansky, 1936). The Random Breakage Model was proposed by Ohno, 1973, further developed by Nadeau and Taylor, 1984, and refuted by Pevzner and Tesler, 2003b."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.276,
+            0.895,
+            0.381
+          ],
+          "content": "The notion of the breakpoint graph was proposed by Bafna and Pevzner, 1996. The polynomial algorithm for sorting by reversals was developed by Hannenhalli and Pevzner, 1999. The synteny block construction algorithm presented in this chapter was described by Pevzner and Tesler, 2003a. The 2-break operation was introduced in Yancopoulos, Attie, and Friedberg, 2005 under the name of “double cut and join”"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.383,
+            0.894,
+            0.445
+          ],
+          "content": "The first algorithmic analysis of the Pancake Flipping problem was described by Gates and Papadimitriou, 1979. The first algorithmic analysis of the Burnt Pancake Flipping problem was described by Cohen and Blum, 1995."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.447,
+            0.894,
+            0.509
+          ],
+          "content": "The Multiple Genome Rearrangement problem was addressed by Ma et al., 2008 and Alekseyev and Pevzner, 2009. Zhao and Bourque, 2009 observed that matching duplications may trigger genome rearrangements."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.501,
+            0.945,
+            0.532,
+            0.96
+          ],
+          "content": ""
+        }
+      ]
+    },
+    {
+      "page_idx": 371,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.278,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": "A R E T H E R E F R A G I L E R E G I O N S I N T H E H U M A N G E N O M E ?"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.718,
+            0.818,
+            0.856,
+            0.89
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_371_image_1.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.464,
+            0.947,
+            0.498,
+            0.961
+          ],
+          "content": "347"
+        }
+      ]
+    },
+    {
+      "page_idx": 372,
+      "blocks": []
+    },
+    {
+      "page_idx": 373,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.671,
+            0.248,
+            0.861,
+            0.28
+          ],
+          "level": 2,
+          "content": "Bibliography"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.096,
+            0.33,
+            0.873,
+            0.885
+          ],
+          "sub_type": "ref_text",
+          "content": "- Alekseyev, M. A. and P. A. Pevzner (2009). “Breakpoint graphs and ancestral genome reconstructions”. Genome Research Vol. 19: 943–957.\n- Bafna, V. and P. A. Pevzner (1996). “Genome Rearrangements and Sorting by Reversals”. SIAM Journal on Computing Vol. 25: 272–289.\n- Butler, J., I MacCallum, M. Kleber, I. A. Shlyakhter, M. Belmonte, E. S. Lander, C. Nusbaum, and D. B. Jaffe (2008). “ALLPATHS: de novo assembly of whole-genome shotgun microreads.” Genome Research Vol. 18: 810–820.\n- Cohen, D. S. and M. Blum (1995). “On the Problem of Sorting Burnt Pancakes”. Discrete Applied Mathematics Vol. 61: 105–120.\n- Conti, E., T. Stachelhaus, M. A. Marahiel, and P. Brick (1997). “Structural basis for the activation of phenylalanine in the non-ribosomal biosynthesis of gramicidin S”. The EMBO Journal Vol. 16: 4174–4183.\n- Conti, E., N. P. Franks, and P. Brick (1996). “Crystal structure of firefly luciferase throws light on a superfamily of adenylate-forming enzymes”. Structure Vol. 4: 287–298.\n- Cristianini, N. and M. W. Hahn (2006). Introduction to Computational Genomics: A Case Studies Approach. Cambridge University Press.\n- de Bruijn, N. (1946). “A Combinatorial Problem”. In: Proceedings of the Section of Sciences, Koninklijke Akademie van Wetenschappen te Amsterdam. Vol. 49: 758–764.\n- Doolittle, R. F., M. W. Hunkapiller, L. E. Hood, S. G. Devare, K. C. Robbins, S. A. Aaronson, and H. N. Antoniades (1983). “Simian sarcoma virus onc gene, v-sis, is derived from the gene (or genes) encoding a platelet-derived growth factor”. Science Vol. 221: 275–277."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.464,
+            0.943,
+            0.498,
+            0.958
+          ],
+          "content": "349"
+        }
+      ]
+    },
+    {
+      "page_idx": 374,
+      "blocks": [
+        {
+          "type": "list",
+          "bbox": [
+            0.134,
+            0.106,
+            0.903,
+            0.863
+          ],
+          "sub_type": "ref_text",
+          "continues_prev": true,
+          "content": "- Drmanac, R., I. Labat, I. Brukner, and R. Crkvenjakov (1989). “Sequencing of megabase plus DNA by hybridization: Theory of the method”. Genomics Vol. 4: 114–128.\n- Euler, L. (1758). “Solutio Problematis ad Geometriam Situs Pertinentis”. Novi Commentarii Academiae Scientarium Imperialis Petropolitanque, 9–28.\n- Gao, F. and C.-T. Zhang (2008). “Ori-Finder: A web-based system for finding oriCs in unannotated bacterial genomes”. BMC Bioinformatics Vol. 9: 79.\n- Gardner, M. (1974). “Mathematical Games”. Scientific American Vol. 230: 120–125.\n- Gates, W. H. and C. H. Papadimitriou (1979). “Bounds for sorting by prefix reversal”. Discrete Mathematics Vol. 27: 47–57.\n- Geman, S. and D. Geman (1984). “Stochastic Relaxation, Gibbs Distributions, and the Bayesian Restoration of Images”. IEEE Transactions on Pattern Analysis and Machine Intelligence Vol. PAMI-6: 721–741.\n- Good, I. J. (1946). “Normal Recurring Decimals”. Journal of the London Mathematical Society Vol. 21: 167–169.\n- Grigoriev, A. (1998). “Analyzing genomes with cumulative skew diagrams”. Nucleic Acids Research Vol. 26: 2286–2290.\n- Grigoriev, A. (2011). “How do replication and transcription change genomes?” In: Bioinformatics for Biologists. Ed. by P. A. Pevzner and R. Shamir. Cambridge University Press, 111–125.\n- Guibas, L. and A. Odlyzko (1981). “String overlaps, pattern matching, and nontransitive games”. Journal of Combinatorial Theory, Series A Vol. 30: 183 –208.\n- Hannenhalli, S. and P. A. Pevzner (1999). “Transforming Cabbage into Turnip: Polynomial Algorithm for Sorting Signed Permutations by Reversals”. Journal of the ACM Vol. 46: 1–27.\n- Harmer, S. L., J. B. Hogenesch, M. Straume, H. S. Chang, B. Han, T. Zhu, X. Wang, J. A. Kreps, and S. A. Kay (2000). “Orchestrated transcription of key pathways in Arabidopsis by the circadian clock”. Science Vol. 290: 2110–2113.\n- Hertz, G. Z. and G. D. Stormo (1999). “Identifying DNA and protein patterns with statistically significant alignments of multiple sequences.” Bioinformatics Vol. 15: 563–577."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.946,
+            0.534,
+            0.961
+          ],
+          "content": "350"
+        }
+      ]
+    },
+    {
+      "page_idx": 375,
+      "blocks": [
+        {
+          "type": "list",
+          "bbox": [
+            0.099,
+            0.106,
+            0.869,
+            0.845
+          ],
+          "sub_type": "ref_text",
+          "continues_prev": true,
+          "content": "- Idury, R. M. and M. S. Waterman (1995). “A New Algorithm for DNA Sequence Assembly.” Journal of Computational Biology Vol. 2: 291–306.\n- Ivics, Z., P. Hackett, R. Plasterk, and Z. Izsvák (1997). “Molecular reconstruction of Sleeping Beauty, a Tc1-like transposon from fish, and its transposition in human cells”. Cell Vol. 91: 501–510.\n- Konopka, R. J. and S. Benzer (1971). “Clock mutants of Drosophila melanogaster”. Proceedings of the National Academy of Sciences of the United States of America Vol. 68: 2112–2116.\n- Lawrence, C. E., S. F. Altschul, M. S. Boguski, J. S. Liu, A. F. Neuwald, and J. C. Wootton (1993). “Detecting subtle sequence signals: a Gibbs sampling strategy for multiple alignment”. Science Vol. 262: 208–214.\n- Levenshtein, V. I. (1966). “Binary codes capable of correcting deletions, insertions, and reversals”. Soviet Physics Doklady Vol. 10: 707–710.\n- Liachko, I., R. A. Youngblood, U. Keich, and M. J. Dunham (2013). “High-resolution mapping, characterization, and optimization of autonomously replicating sequences in yeast”. Genome Research Vol. 23: 698–704.\n- Lobry, J. R. (1996). “Asymmetric substitution patterns in the two DNA strands of bacteria”. Molecular Biology and Evolution Vol. 13: 660–665.\n- Lundgren, M., A. Andersson, L. Chen, P. Nilsson, and R. Bernander (2004). “Three replication origins in Sulfolobus species: Synchronous initiation of chromosome replication and asynchronous termination”. Proceedings of the National Academy of Sciences of the United States of America Vol. 101: 7046–7051.\n- Lysov, Y., V. Florent’ev, A. Khorlin, K. Khrapko, V. Shik, and A. Mirzabekov (1988). “DNA sequencing by hybridization with oligonucleotides”. Doklady Academy Nauk USSR Vol. 303: 1508–1511.\n- Ma, J., A. Ratan, B. J. Raney, B. B. Suh, W. Miller, and D. Haussler (2008). “The infinite sites model of genome evolution”. Proceedings of the National Academy of Sciences of the United States of America Vol. 105: 14254–14261.\n- Maxam, A. M. and W. Gilbert (1977). “A new method for sequencing DNA.” Proceedings of the National Academy of Sciences of the United States of America Vol. 74: 560–564."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.465,
+            0.946,
+            0.496,
+            0.961
+          ],
+          "content": "351"
+        }
+      ]
+    },
+    {
+      "page_idx": 376,
+      "blocks": [
+        {
+          "type": "list",
+          "bbox": [
+            0.134,
+            0.106,
+            0.903,
+            0.898
+          ],
+          "sub_type": "ref_text",
+          "continues_prev": true,
+          "content": "- Medvedev, P., S. K. Pham, M. Chaisson, G. Tesler, and P. A. Pevzner (2011). “Paired de Bruijn Graphs: A Novel Approach for Incorporating Mate Pair Information into Genome Assemblers.” Journal of Computational Biology Vol. 18: 1625–1634.\n- Nadeau, J. H. and B. A. Taylor (1984). “Lengths of chromosomal segments conserved since divergence of man and mouse”. Proceedings of the National Academy of Sciences of the United States of America Vol. 81: 814–818.\n- Ng, J., N. Bandeira, W.-T. Liu, M. Ghassemian, T. L. Simmons, W. H. Gerwick, R. Linington, P. Dorrestein, and P. A. Pevzner (2009). “Dereplication and de novo sequencing of nonribosomal peptides”. Nature Methods Vol. 6: 596–599.\n- Ohno, S. (1973). “Ancient linkage groups and frozen accidents”. Nature Vol. 244: 259–262.\n- Park, H. D., K. M. Guinn, M. I. Harrell, R. Liao, M. I. Voskuil, M. Tompa, G. K. Schoolnik, and D. R. Sherman (2003). “Rv3133c/dosR is a transcription factor that mediates the hypoxic response of Mycobacterium tuberculosis”. Molecular Microbiology Vol. 48: 833–843.\n- Pevzner, P. and G. Tesler (2003a). “Genome rearrangements in mammalian evolution: lessons from human and mouse genomes”. Genome Research Vol. 13: 37–45.\n- Pevzner, P. and G. Tesler (2003b). “Human and mouse genomic sequences reveal extensive breakpoint reuse in mammalian evolution”. Proceedings of the National Academy of Sciences of the United States of America Vol. 100: 7672–7677.\n- Pevzner, P. A. (1989). “1-Tuple DNA sequencing: computer analysis”. Journal of Biomolecular Structure and Dynamics Vol. 7: 63–73.\n- Pevzner, P. A., H Tang, and M. S. Waterman (2001). “An Eulerian path approach to DNA fragment assembly”. Proceedings of the National Academy of Sciences of the United States of America Vol. 98: 9748–53.\n- Rosenblatt, J. and P. Seymour (1982). “The Structure of Homometric Sets”. SIAM Journal on Algebraic Discrete Methods Vol. 3: 343–350.\n- Sanger, F, S Nicklen, and A. Coulson (1977). “DNA sequencing with chain-terminating inhibitors”. Proceedings of The National Academy of Sciences of The United States Of America Vol. 74: 5463–5467.\n- Sedgewick, R. and P. Flajolet (2013). An Introduction to the Analysis of Algorithms. Addison-Wesley."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.946,
+            0.533,
+            0.961
+          ],
+          "content": "352"
+        }
+      ]
+    },
+    {
+      "page_idx": 377,
+      "blocks": [
+        {
+          "type": "list",
+          "bbox": [
+            0.096,
+            0.106,
+            0.87,
+            0.876
+          ],
+          "sub_type": "ref_text",
+          "continues_prev": true,
+          "content": "- Sernova, N. V. and M. S. Gelfand (2008). “Identification of replication origins in prokaryotic genomes”. Briefings in Bioinformatics Vol. 9: 376–391.\n- Smith, T. F. and M. S. Waterman (1981). “Identification of common molecular subsequences.” Journal of Molecular Biology Vol. 147: 195–197.\n- Solov’ev, A. (1966). “A combinatorial identity and its application to the problem about the first occurence of a rare event”. Theory of Probability and its Applications Vol. 11: 276–282.\n- Southern, E. (1988). “Analysing Polynucleotide Sequences”. Patent (United Kingdom).\n- Stachelhaus, T., H. D. Mootz, and M. A. Marahiel (1999). “The specificity-conferring code of adenylation domains in nonribosomal peptide synthetases.” Chemistry & Biology Vol. 6: 493–505.\n- Sturtevant, A. H. (1921). “A Case of Rearrangement of Genes in Drosophila”. Proceedings of the National Academy of Sciences of the United States of America Vol. 7: 235–237.\n- Sturtevant, A. H. and T. Dobzhansky (1936). “Inversions in the Third Chromosome of Wild Races of Drosophila Pseudoobscura, and Their Use in the Study of the History of the Species”. Proceedings of the National Academy of Sciences of the United States of America Vol. 22: 448–450.\n- Tang, Y. Q., J. Yuan, G. Osapay, K. Osapay, D. Tran, C. J. Miller, A. J. Ouellette, and M. E. Selsted (1999). “A cyclic antimicrobial peptide produced in primate leukocytes by the ligation of two truncated alpha-defensins”. Science Vol. 286: 498–502.\n- Venkataraman, N., A. L. Cole, P. Ruchala, A. J. Waring, R. I. Lehrer, O. Stuchlik, J. Pohl, and A. M. Cole (2009). “Reawakening retrocyclins: ancestral human defensins active against HIV-1”. PLoS Biology Vol. 7: e95.\n- Wang, X., C. Lesterlin, R. Reyes-Lamothe, G. Ball, and D. J. Sherratt (2011). “Replication and segregation of an Escherichia coli chromosome with two replication origins”. Proceedings of the National Academy of Sciences Vol. 108: E243–E250.\n- Xia, X. (2012). “DNA replication and strand asymmetry in prokaryotic and mitochondrial genomes”. Current Genomics Vol. 13: 16–27.\n- Yancopoulos, S., O. Attie, and R. Friedberg (2005). “Efficient sorting of genomic permutations by translocation, inversion and block interchange”. Bioinformatics Vol. 21: 3340–3346."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.465,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": "353"
+        }
+      ]
+    },
+    {
+      "page_idx": 378,
+      "blocks": [
+        {
+          "type": "list",
+          "bbox": [
+            0.139,
+            0.111,
+            0.896,
+            0.205
+          ],
+          "sub_type": "ref_text",
+          "continues_prev": true,
+          "content": "- Zerbino, D. R. and E. Birney (2008). “Velvet: Algorithms for de novo short read assembly using de Bruijn graphs”. Genome Research Vol. 18: 821–829.\n- Zhao, H. and G. Bourque (2009). “Recovering genome rearrangements in the mammalian phylogeny”. Genome Research Vol. 19: 934–942."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.946,
+            0.534,
+            0.961
+          ],
+          "content": "354"
+        }
+      ]
+    },
+    {
+      "page_idx": 379,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.605,
+            0.249,
+            0.859,
+            0.279
+          ],
+          "level": 2,
+          "content": "Image Courtesies"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.101,
+            0.339,
+            0.538,
+            0.594
+          ],
+          "sub_type": "text",
+          "content": "**Figure 1.26:** Ævar Arnfjörð Bjarmason\n**Figure 3.5:** Dan Gilbert\n**Figure 3.45 (left):** Royal Irish Academy\n**Figure 4.1:** Open Clip Art\n**Figure 6.27:** Wikimedia Commons user Skbkekas\n**Figure 6.1:** Glenn Tesler\n**Figure 6.2:** Glenn Tesler\n**Figure 6.3:** Max Alekseyev\n**Figure 6.4:** Max Alekseyev\n**Figure 6.5:** Glenn Tesler\n**Figure 6.6:** Glenn Tesler\n**Figure 6.22:** Glenn Tesler"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.464,
+            0.942,
+            0.498,
+            0.958
+          ],
+          "content": "355"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "DocHdl1OnVERSA-PPM01tmpTarget",
+      "created_at": "2015-08-17T16:48:25Z",
+      "modified_at": "2018-07-08T15:12:16-07:00",
+      "creator_application": "Prinect Printready",
+      "producer_application": "Mac OS X 10.10.4 Quartz PDFContext",
+      "page_count": 380,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 368,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 369,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 370,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 371,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 372,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 373,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 374,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 375,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 376,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 377,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 378,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 379,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

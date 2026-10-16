@@ -1,0 +1,4116 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "DocHdl1OnVERSA-PPM01tmpTarget",
+      "created_at": "2015-08-17T16:48:25Z",
+      "modified_at": "2018-07-08T15:12:16-07:00",
+      "creator_application": "Prinect Printready",
+      "producer_application": "Mac OS X 10.10.4 Quartz PDFContext",
+      "page_count": 380,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 224,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 225,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 226,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 227,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 228,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 229,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 230,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 231,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 232,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 233,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 234,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 235,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 236,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 237,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 238,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 239,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 224,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.066,
+            0.259,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 4"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 1,
+          "bbox": [
+            0.031,
+            0.215,
+            0.112,
+            0.279
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 1,
+              "bbox": [
+                0.031,
+                0.215,
+                0.112,
+                0.279
+              ],
+              "image_path": "images/page_224_image_1.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.034,
+            0.421,
+            0.107,
+            0.515
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.034,
+                0.421,
+                0.107,
+                0.515
+              ],
+              "image_path": "images/page_224_image_2.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.165,
+            0.114,
+            0.837,
+            0.393
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.165,
+                0.114,
+                0.837,
+                0.393
+              ],
+              "content": "LEADERBOARDCYCLOPEPTIDESEQUENCING(Spectrum, N)\n    Leaderboard ← set containing only the empty peptide\n    LeaderPeptide ← empty peptide\n    while Leaderboard is non-empty\n        Leaderboard ← EXPAND(Leaderboard)\n        for each Peptide in Leaderboard\n            if MASS(Peptide) = PARENTMASS(Spectrum)\n                if SCORE(Peptide, Spectrum) > SCORE(LeaderPeptide, Spectrum)\n                    LeaderPeptide ← Peptide\n            else if MASS(Peptide) > PARENTMASS(Spectrum)\n                remove Peptide from Leaderboard\n        Leaderboard ← TRIM(Leaderboard, Spectrum, N)\n    output LeaderPeptide"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "python"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.163,
+            0.424,
+            0.873,
+            0.508
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "CHARGING STATION (Trimming the Peptide Leaderboard):",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " The tricky aspect of implementing "
+            },
+            {
+              "type": "text",
+              "content": "LEADERBOARDCYCLOPEPTIDESEQUENCING",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " is making sure that the TRIM function is implemented correctly. Check out this Charging Station for some help with trimming Leaderboard."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.136,
+            0.531,
+            0.897,
+            0.697
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We point out that because a linear peptide giving rise to the highest-scoring cyclic peptide may be trimmed early on, "
+            },
+            {
+              "type": "text",
+              "content": "LEADERBOARDCYCLOPEPTIDESEQUENCING",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " is a heuristic, not guaranteed to correctly solve the Cyclopeptide Sequencing Problem. When we develop a heuristic, we must ask: how accurate is it? Consider the simulated spectrum "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S p e c t r u m _ { 1 0 }"
+            },
+            {
+              "type": "text",
+              "content": " of Tyrocidine B1 shown in Figure 4.11 (top), with approximately 10% "
+            },
+            {
+              "type": "text",
+              "content": "missing",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "/"
+            },
+            {
+              "type": "text",
+              "content": "false",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " masses. Applying "
+            },
+            {
+              "type": "text",
+              "content": "LEADERBOARDCYCLOPEPTIDESEQUENCING",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " to this spectrum (with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N = 1 0 0 0 )"
+            },
+            {
+              "type": "text",
+              "content": " results in the correct cyclic peptide VKLFPWFNQY, which has a score of 86."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.136,
+            0.701,
+            0.897,
+            0.805
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "So far, "
+            },
+            {
+              "type": "text",
+              "content": "LEADERBOARDCYCLOPEPTIDESEQUENCING",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " has worked well, but as the number of errors increases, so does the likelihood that this algorithm will return an incorrect peptide. Let’s see how this algorithm performs on a noisier simulated spectrum; in Figure 4.11 (bottom), we show "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S p e c t r u m _ { 2 5 }"
+            },
+            {
+              "type": "text",
+              "content": " for Tyrocidine B1, which has 25% "
+            },
+            {
+              "type": "text",
+              "content": "missing",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "/"
+            },
+            {
+              "type": "text",
+              "content": "false",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " masses."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.808,
+            0.897,
+            0.892
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "When run on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S p e c t r u m _ { 2 5 } ,"
+            },
+            {
+              "type": "text",
+              "content": " , "
+            },
+            {
+              "type": "text",
+              "content": "LEADERBOARDCYCLOPEPTIDESEQUENCING",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " (with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N ="
+            },
+            {
+              "type": "text",
+              "content": " 1000) identifies VKLFP"
+            },
+            {
+              "type": "text",
+              "content": "AD",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "FNQY (score: 83) as a highest-scoring cyclic peptide instead of the correct peptide VKLFPWFNQY (score: 82). These two peptides are similar, owing to the fact that the combined mass of A (71) and D (115) is equal to the mass of W (186)."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.5,
+            0.946,
+            0.535,
+            0.958
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "200"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 225,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.463,
+            0.065,
+            0.856,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E S E Q U E N C E A N T I B I O T I C S ?"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 1,
+          "bbox": [
+            0.156,
+            0.107,
+            0.812,
+            0.442
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 1,
+              "bbox": [
+                0.156,
+                0.107,
+                0.812,
+                0.442
+              ],
+              "image_path": "images/page_225_table_1.jpg",
+              "content": "<table><tr><td>0</td><td>97</td><td>99</td><td>113</td><td>114</td><td>128</td><td>128</td><td>147</td><td>147</td><td>163</td><td>186</td><td>227</td></tr><tr><td>241</td><td>242</td><td>244</td><td>260</td><td>261</td><td>262</td><td>283</td><td>291</td><td>333</td><td>340</td><td>357</td><td>385</td></tr><tr><td>388</td><td>389</td><td>390</td><td>390</td><td>405</td><td>430</td><td>430</td><td>447</td><td>485</td><td>487</td><td>503</td><td>504</td></tr><tr><td>518</td><td>543</td><td>544</td><td>552</td><td>575</td><td>577</td><td>584</td><td>631</td><td>632</td><td>650</td><td>651</td><td>671</td></tr><tr><td>672</td><td>690</td><td>691</td><td>738</td><td>745</td><td>747</td><td>770</td><td>778</td><td>779</td><td>804</td><td>818</td><td>819</td></tr><tr><td>820</td><td>835</td><td>837</td><td>875</td><td>892</td><td>892</td><td>917</td><td>932</td><td>932</td><td>933</td><td>934</td><td>965</td></tr><tr><td>982</td><td>989</td><td>1030</td><td>1031</td><td>1039</td><td>1060</td><td>1061</td><td>1062</td><td>1078</td><td>1080</td><td>1081</td><td>1095</td></tr><tr><td>1136</td><td>1159</td><td>1175</td><td>1175</td><td>1194</td><td>1194</td><td>1208</td><td>1209</td><td>1223</td><td>1225</td><td>1322</td><td></td></tr><tr><td>0</td><td>97</td><td>99</td><td>113</td><td>114</td><td>115</td><td>128</td><td>128</td><td>147</td><td>147</td><td>163</td><td>186</td></tr><tr><td>227</td><td>241</td><td>242</td><td>244</td><td>244</td><td>256</td><td>260</td><td>261</td><td>262</td><td>283</td><td>291</td><td>309</td></tr><tr><td>330</td><td>333</td><td>340</td><td>347</td><td>357</td><td>385</td><td>388</td><td>389</td><td>390</td><td>390</td><td>405</td><td>430</td></tr><tr><td>430</td><td>435</td><td>447</td><td>485</td><td>487</td><td>503</td><td>504</td><td>518</td><td>543</td><td>544</td><td>552</td><td>575</td></tr><tr><td>577</td><td>584</td><td>599</td><td>608</td><td>631</td><td>632</td><td>650</td><td>651</td><td>653</td><td>671</td><td>672</td><td>690</td></tr><tr><td>691</td><td>717</td><td>738</td><td>745</td><td>747</td><td>770</td><td>778</td><td>779</td><td>804</td><td>818</td><td>819</td><td>827</td></tr><tr><td>835</td><td>837</td><td>875</td><td>892</td><td>892</td><td>917</td><td>932</td><td>932</td><td>933</td><td>934</td><td>965</td><td>982</td></tr><tr><td>989</td><td>1031</td><td>1039</td><td>1060</td><td>1061</td><td>1062</td><td>1078</td><td>1080</td><td>1081</td><td>1095</td><td>1136</td><td>1159</td></tr><tr><td>1175</td><td>1175</td><td>1194</td><td>1194</td><td>1208</td><td>1209</td><td>1223</td><td>1225</td><td>1322</td><td></td><td></td><td></td></tr></table>"
+            },
+            {
+              "type": "table_caption",
+              "index": 2,
+              "bbox": [
+                0.154,
+                0.452,
+                0.808,
+                0.538
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 4.11 (Top) A simulated experimental spectrum "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "S p e c t r u m _ { 1 0 }"
+                },
+                {
+                  "type": "text",
+                  "content": " of Tyrocidine B1. This spectrum has approximately 10% missing (blue) and false (green) masses. Note that the blue masses are not actually in the spectrum, but we show them so that it is clear which masses are missing. (Bottom) A simulated experimental spectrum "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "S p e c t r u m _ { 2 5 }"
+                },
+                {
+                  "type": "text",
+                  "content": " of Tyrocidine B1, with approximately 25% missing and false masses."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.128,
+            0.577,
+            0.833,
+            0.62
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "STOP and Think:",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " How could we have eliminated the incorrect peptide VKLFP"
+            },
+            {
+              "type": "text",
+              "content": "AD",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "FNQY from consideration for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S p e c t r u m _ { 2 5 } ?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.101,
+            0.642,
+            0.86,
+            0.747
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Notice that although the correct and incorrect peptides are similar, their amino acid compositions differ. If we could figure out the amino acid composition of Tyrocidine B1 from its spectrum alone and run "
+            },
+            {
+              "type": "text",
+              "content": "LEADERBOARDCYCLOPEPTIDESEQUENCING",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " on this smaller alphabet (rather than on the alphabet of all amino acids), then we could eliminate the incorrect peptide VKLFP"
+            },
+            {
+              "type": "text",
+              "content": "AD",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "FNQY from consideration."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.306,
+            0.793,
+            0.655,
+            0.811
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "From 20 to More than 100 Amino Acids"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.101,
+            0.829,
+            0.862,
+            0.896
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Until now, we have assumed that just 20 amino acids form the building blocks of proteins; these building blocks are called "
+            },
+            {
+              "type": "text",
+              "content": "proteinogenic amino acids",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ". There are actually two additional proteinogenic amino acids, called "
+            },
+            {
+              "type": "text",
+              "content": "selenocysteine",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "text",
+              "content": "pyrrolysine",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ","
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 7,
+          "bbox": [
+            0.889,
+            0.568,
+            0.966,
+            0.629
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 7,
+              "bbox": [
+                0.889,
+                0.568,
+                0.966,
+                0.629
+              ],
+              "image_path": "images/page_225_image_7.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.465,
+            0.946,
+            0.496,
+            0.958
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "201"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 226,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.066,
+            0.259,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 4"
+            }
+          ]
+        },
+        {
+          "type": "aside_text",
+          "index": 1,
+          "bbox": [
+            0.014,
+            0.111,
+            0.107,
+            0.131
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "PAGE 218"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.136,
+            0.112,
+            0.897,
+            0.195
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "which are incorporated into proteins by special biosynthetic mechanisms (see "
+            },
+            {
+              "type": "text",
+              "content": "DETOUR: Selenocysteine and Pyrrolysine",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "). Yet in addition to the 22 proteinogenic amino acids, NRPs contain "
+            },
+            {
+              "type": "text",
+              "content": "non-proteinogenic amino acids",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", which expand the number of possible building blocks for antibiotic peptides from 20 to over 100."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.136,
+            0.197,
+            0.897,
+            0.281
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Enlarging the amino acid alphabet spells trouble for our current approach to cyclopeptide sequencing. Indeed, the correct peptide now must “compete” with many more incorrect ones for a place on the leaderboard, increasing the chance that the correct peptide will be cut along the way."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.136,
+            0.282,
+            0.897,
+            0.409
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For example, although Tyrocidine B1 contains only proteinogenic amino acids, its close relative, Tyrocidine B (Val-"
+            },
+            {
+              "type": "text",
+              "content": "Orn",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "-Leu-Phe-Pro-Trp-Phe-Asn-Gln-Tyr), contains a non-proteinogenic amino acid called "
+            },
+            {
+              "type": "text",
+              "content": "ornithine",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " ("
+            },
+            {
+              "type": "text",
+              "content": "Orn",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "). Because so many non-proteinogenic amino acids exist, bioinformaticians often assume that any integer between 57 and 200 may represent the mass of an amino acid; the “lightest” amino acid, Gly, has mass 57 Da, and most amino acids have masses smaller than 200 Da."
+            }
+          ]
+        },
+        {
+          "type": "aside_text",
+          "index": 5,
+          "bbox": [
+            0.033,
+            0.429,
+            0.11,
+            0.49
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "STOP"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.163,
+            0.427,
+            0.871,
+            0.492
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "STOP and Think:",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " Apply "
+            },
+            {
+              "type": "text",
+              "content": "LEADERBOARDCYCLOPEPTIDESEQUENCING",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " on the extended amino acid alphabet (containing the 144 integers between 57 and 200) to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S p e c t r u m _ { 1 0 } ,"
+            },
+            {
+              "type": "text",
+              "content": " and identify the highest-scoring peptides."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.136,
+            0.513,
+            0.897,
+            0.725
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "When we apply "
+            },
+            {
+              "type": "text",
+              "content": "LEADERBOARDCYCLOPEPTIDESEQUENCING",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " for the extended alphabet to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S p e c t r u m _ { 1 0 } ,"
+            },
+            {
+              "type": "text",
+              "content": " one of the highest-scoring peptides is VKLFPWFNQ"
+            },
+            {
+              "type": "text",
+              "content": "XZ",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", where X has mass 98 and Z has mass 65. Apparently, non-standard amino acids successfully competed with standard amino acids for the limited number of positions on the leaderboard, resulting in VKLFPWFNQ"
+            },
+            {
+              "type": "text",
+              "content": "XZ",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " winning over the correct peptide VKLFPWFNQY. Since "
+            },
+            {
+              "type": "text",
+              "content": "LEADERBOARDCYCLOPEPTIDESEQUENCING",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " fails to identify the correct peptide even with only 10% false and missing masses, our stated aim from the previous section is now even more important. We must determine the amino acid composition of a peptide from its spectrum so that we may run "
+            },
+            {
+              "type": "text",
+              "content": "LEADERBOARDCYCLOPEPTIDESEQUENCING",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " on this smaller alphabet of amino acids."
+            }
+          ]
+        },
+        {
+          "type": "aside_text",
+          "index": 8,
+          "bbox": [
+            0.033,
+            0.734,
+            0.11,
+            0.795
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "STOP"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.163,
+            0.743,
+            0.869,
+            0.786
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "STOP and Think:",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " How can we determine which amino acids are present in an unknown peptide using only an experimental spectrum?"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 10,
+          "bbox": [
+            0.5,
+            0.946,
+            0.534,
+            0.958
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "202"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 227,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.463,
+            0.065,
+            0.858,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E S E Q U E N C E A N T I B I O T I C S ?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.307,
+            0.112,
+            0.655,
+            0.132
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Spectral Convolution Saves the Day"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.1,
+            0.148,
+            0.859,
+            0.231
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "One way to determine the amino acid composition of a peptide from its experimental spectrum would be to take the smallest masses present in the spectrum (between 57 and 200 Da). However, even if only a single amino acid mass is missing, then this approach will fail to reconstruct the peptide’s amino acid composition."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.101,
+            0.234,
+            0.861,
+            0.337
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s take a different approach. Say that our experimental spectrum contains the masses of subpeptides NQE and NQ. If we subtract these two masses, then we will obtain the mass E for free, even if it was not present in the experimental spectrum! If the underlying peptide is NQEL, then we can also find the mass of E by subtracting the masses of QE and Q or NQEL and LNQ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.1,
+            0.34,
+            0.861,
+            0.403
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Following this example, we define the "
+            },
+            {
+              "type": "text",
+              "content": "convolution",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " of a spectrum by taking all positive differences of masses in the spectrum. Figure 4.12 shows the convolutions of the theoretical (top) and simulated (bottom) spectra of NQEL from Figure 4.10."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.101,
+            0.404,
+            0.861,
+            0.529
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As predicted, some of the values in Figure 4.12 appear more frequently than others. For example, "
+            },
+            {
+              "type": "text",
+              "content": "113",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " (the mass of L) has multiplicity 8. Six of the eight occurrences of "
+            },
+            {
+              "type": "text",
+              "content": "113",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " correspond to subpeptide pairs differing in an L: L and \"\"; LN and N; EL and E; LNQ and NQ; QEL and QE; NQEL and NQE. Interestingly, "
+            },
+            {
+              "type": "text",
+              "content": "129",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " (the mass of E) pops up three times in the convolution of the simulated spectrum, even though "
+            },
+            {
+              "type": "text",
+              "content": "129",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " was missing from the spectrum itself."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.101,
+            0.532,
+            0.861,
+            0.616
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We now should feel confident about using the most frequently appearing integers in the convolution as a guess for the amino acid composition of an unknown peptide. In our simulated spectrum for NQEL, the most frequent elements of the convolution in the range from 57 to 200 are (multiplicities in parentheses):"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.306,
+            0.633,
+            0.658,
+            0.652
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "113",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " (4), "
+            },
+            {
+              "type": "text",
+              "content": "114",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " (4), "
+            },
+            {
+              "type": "text",
+              "content": "128",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " (4), "
+            },
+            {
+              "type": "text",
+              "content": "99",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " (3), "
+            },
+            {
+              "type": "text",
+              "content": "129",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " (3) ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.102,
+            0.67,
+            0.782,
+            0.69
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that these most frequent elements capture all four amino acids in NQEL."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.132,
+            0.725,
+            0.418,
+            0.743
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Spectral Convolution Problem:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.132,
+            0.746,
+            0.454,
+            0.765
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Generate the convolution of a spectrum."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.17,
+            0.778,
+            0.528,
+            0.797
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Input",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ": A collection of integers Spectrum."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.17,
+            0.799,
+            0.834,
+            0.84
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Output",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ": The list of elements in the convolution of Spectrum in decreasing order of their multiplicities."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 13,
+          "bbox": [
+            0.89,
+            0.755,
+            0.966,
+            0.817
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 13,
+              "bbox": [
+                0.89,
+                0.755,
+                0.966,
+                0.817
+              ],
+              "image_path": "images/page_227_image_13.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 14,
+          "bbox": [
+            0.465,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "203"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 228,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.066,
+            0.256,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 4"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 1,
+          "bbox": [
+            0.194,
+            0.124,
+            0.84,
+            0.424
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 1,
+              "bbox": [
+                0.194,
+                0.124,
+                0.84,
+                0.424
+              ],
+              "image_path": "images/page_228_table_1.jpg",
+              "content": "<table><tr><td></td><td>&quot;&quot;0</td><td>L113</td><td>N114</td><td>Q128</td><td>E129</td><td>LN227</td><td>NQ242</td><td>EL242</td><td>QE257</td><td>LNQ355</td><td>ELN356</td><td>QEL370</td><td>NQE371</td></tr><tr><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>113</td><td>113</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>114</td><td>114</td><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>128</td><td>128</td><td>15</td><td>14</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>129</td><td>129</td><td>16</td><td>15</td><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>227</td><td>227</td><td>114</td><td>113</td><td>99</td><td>98</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>242</td><td>242</td><td>129</td><td>128</td><td>114</td><td>113</td><td>15</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>242</td><td>242</td><td>129</td><td>128</td><td>114</td><td>113</td><td>15</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>257</td><td>257</td><td>144</td><td>143</td><td>129</td><td>128</td><td>30</td><td>15</td><td>15</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>355</td><td>355</td><td>242</td><td>241</td><td>227</td><td>226</td><td>128</td><td>113</td><td>113</td><td>98</td><td></td><td></td><td></td><td></td></tr><tr><td>356</td><td>356</td><td>243</td><td>242</td><td>228</td><td>227</td><td>129</td><td>114</td><td>114</td><td>99</td><td>1</td><td></td><td></td><td></td></tr><tr><td>370</td><td>370</td><td>257</td><td>256</td><td>242</td><td>241</td><td>143</td><td>128</td><td>128</td><td>113</td><td>15</td><td>14</td><td></td><td></td></tr><tr><td>371</td><td>371</td><td>258</td><td>257</td><td>243</td><td>242</td><td>144</td><td>129</td><td>129</td><td>114</td><td>16</td><td>15</td><td>1</td><td></td></tr><tr><td>484</td><td>484</td><td>371</td><td>370</td><td>356</td><td>355</td><td>257</td><td>242</td><td>242</td><td>227</td><td>129</td><td>128</td><td>114</td><td>113</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 2,
+          "bbox": [
+            0.194,
+            0.476,
+            0.841,
+            0.755
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 2,
+              "bbox": [
+                0.194,
+                0.476,
+                0.841,
+                0.755
+              ],
+              "image_path": "images/page_228_table_2.jpg",
+              "content": "<table><tr><td></td><td>&quot; &quot;0</td><td>false99</td><td>L113</td><td>N114</td><td>Q128</td><td>LN227</td><td>QE257</td><td>false299</td><td>LNQ355</td><td>ELN356</td><td>QEL370</td><td>NQE371</td></tr><tr><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>99</td><td>99</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>113</td><td>113</td><td>14</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>114</td><td>114</td><td>15</td><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>128</td><td>128</td><td>29</td><td>15</td><td>14</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>227</td><td>227</td><td>128</td><td>114</td><td>113</td><td>99</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>257</td><td>257</td><td>158</td><td>144</td><td>143</td><td>129</td><td>30</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>299</td><td>299</td><td>200</td><td>186</td><td>185</td><td>171</td><td>72</td><td>42</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>355</td><td>355</td><td>256</td><td>242</td><td>241</td><td>227</td><td>128</td><td>98</td><td>56</td><td></td><td></td><td></td><td></td></tr><tr><td>356</td><td>356</td><td>257</td><td>243</td><td>242</td><td>228</td><td>129</td><td>99</td><td>57</td><td>1</td><td></td><td></td><td></td></tr><tr><td>370</td><td>370</td><td>271</td><td>257</td><td>256</td><td>242</td><td>143</td><td>113</td><td>71</td><td>15</td><td>14</td><td></td><td></td></tr><tr><td>371</td><td>371</td><td>272</td><td>258</td><td>257</td><td>243</td><td>144</td><td>114</td><td>72</td><td>16</td><td>15</td><td>1</td><td></td></tr><tr><td>484</td><td>484</td><td>385</td><td>371</td><td>370</td><td>356</td><td>257</td><td>227</td><td>185</td><td>129</td><td>128</td><td>114</td><td>113</td></tr></table>"
+            },
+            {
+              "type": "table_caption",
+              "index": 3,
+              "bbox": [
+                0.19,
+                0.764,
+                0.842,
+                0.866
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 4.12 (Top) Spectral convolution for the theoretical spectrum of NQEL. The most frequent elements in the convolution between 57 and 200 are (multiplicities in parentheses): 113 (8), 114 (8), 128 (8), 129 (8). (Bottom) Spectral convolution for the simulated spectrum of NQEL. The most frequent elements in the convolution between 57 and 200 are (multiplicities in parentheses): 113 (4), 114 (4), 128 (4), 99 (3), 129 (3)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 4,
+          "bbox": [
+            0.5,
+            0.946,
+            0.534,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "204"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 229,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.463,
+            0.065,
+            0.858,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E S E Q U E N C E A N T I B I O T I C S ?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.101,
+            0.113,
+            0.862,
+            0.196
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Recall that "
+            },
+            {
+              "type": "text",
+              "content": "LEADERBOARDCYCLOPEPTIDESEQUENCING",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " failed to reconstruct Tyrocidine B1 from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S p e c t r u m _ { 1 0 }"
+            },
+            {
+              "type": "text",
+              "content": " when using the extended alphabet of amino acids. The ten most frequent elements of its spectral convolution in the range from 57 to 200 are (multiplicities in parentheses):"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 2,
+          "bbox": [
+            0.182,
+            0.212,
+            0.782,
+            0.253
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 2,
+              "bbox": [
+                0.182,
+                0.212,
+                0.782,
+                0.253
+              ],
+              "image_path": "images/page_229_table_2.jpg",
+              "content": "<table><tr><td>147 (35)</td><td>128 (31)</td><td>97 (28)</td><td>113 (28)</td><td>114 (26)</td></tr><tr><td>186 (23)</td><td>57 (21)</td><td>163 (21)</td><td>99 (18)</td><td>145 (18)</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.268,
+            0.85,
+            0.287
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Every mass in this list except for 57 and 145 captures an amino acid in Tyrocidine B1!"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.101,
+            0.289,
+            0.862,
+            0.436
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We now have the outline for a new cyclopeptide sequencing algorithm. Given an experimental spectrum, we first compute the convolution of an experimental spectrum. We then select the M most frequent elements between 57 and 200 in the convolution to form an extended alphabet of amino acid masses. In order to be fair, we should include the top M elements of the convolution “with ties”. Finally, we run "
+            },
+            {
+              "type": "text",
+              "content": "LEADERBOARDCYCLOPEPTIDESEQUENCING",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", where amino acid masses are restricted to this alphabet. We call this algorithm "
+            },
+            {
+              "type": "text",
+              "content": "CONVOLUTIONCYCLOPEPTIDESEQUENCING",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.127,
+            0.455,
+            0.837,
+            0.518
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "STOP and Think:",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " Run "
+            },
+            {
+              "type": "text",
+              "content": "CONVOLUTIONCYCLOPEPTIDESEQUENCING",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " on the simulated spectra "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S p e c t r u m _ { 1 0 }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S p e c t r u m _ { 2 5 }"
+            },
+            {
+              "type": "text",
+              "content": " with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N = 1 0 0 0"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M = 2 0"
+            },
+            {
+              "type": "text",
+              "content": " Identify the highest scoring peptides."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.101,
+            0.54,
+            0.862,
+            0.646
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "CONVOLUTIONCYCLOPEPTIDESEQUENCING (with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N = 1 0 0 0"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M = 2 0 )"
+            },
+            {
+              "type": "text",
+              "content": " now correctly reconstructs Tyrocidine B1 from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S p e c t r u m _ { 1 0 }"
+            },
+            {
+              "type": "text",
+              "content": " . The true test of this algorithm is whether it will work on a noisier spectrum. Recall that our previous algorithm failed on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S p e c t r u m _ { 2 5 } ;"
+            },
+            {
+              "type": "text",
+              "content": " in contrast, "
+            },
+            {
+              "type": "text",
+              "content": "CONVOLUTIONCYCLOPEPTIDESEQUENCING",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " (with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N = 1 0 0 0"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M = 2 0 )"
+            },
+            {
+              "type": "text",
+              "content": " now correctly identifies Tyrocidine B1 from this spectrum!"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.3,
+            0.691,
+            0.66,
+            0.71
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Epilogue: From Simulated to Real Spectra"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.101,
+            0.728,
+            0.861,
+            0.897
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In this chapter, we have sheltered you from the gruesome realities of mass spectrometry by providing simulated spectra that are relatively easy to sequence (even those with false and missing masses). We committed a sin of omission by loosely describing the mass spectrometer as a “scale” and assuming that this complex machine simply weighs tiny peptide fragments one at a time. In truth, the mass spectrometer first converts subpeptides into ions "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( \\mathrm { i . e . } ,"
+            },
+            {
+              "type": "text",
+              "content": " charged particles). Ionization of particles helps the mass spectrometer sort the ions by using an electromagnetic field; ions are separated not by their mass, but rather according to their "
+            },
+            {
+              "type": "text",
+              "content": "mass/charge ratio",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ". If fragment ion NQY"
+            }
+          ]
+        },
+        {
+          "type": "aside_text",
+          "index": 9,
+          "bbox": [
+            0.889,
+            0.363,
+            0.967,
+            0.518
+          ],
+          "content": [
+            {
+              "type": "hyperlink",
+              "url": "http://rosalind.info/problems/4i",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "4I"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": "\nSTOP"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 10,
+          "bbox": [
+            0.465,
+            0.946,
+            0.498,
+            0.96
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "205"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 230,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 4"
+            }
+          ]
+        },
+        {
+          "type": "aside_text",
+          "index": 1,
+          "bbox": [
+            0.014,
+            0.194,
+            0.126,
+            0.224
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "PAGE 217"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.135,
+            0.112,
+            0.897,
+            0.237
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(integer mass: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 1 4 + 1 2 8 + 1 6 3 = 4 0 5 )"
+            },
+            {
+              "type": "text",
+              "content": " has charge +1, then it contains one additional proton, resulting in a total integer mass of 406 and a mass/charge ratio of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "4 0 6 / 1 ="
+            },
+            {
+              "type": "text",
+              "content": " 406. To be more precise, the monoisotopic mass of NQY is approximately "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 1 4 . 0 4 3 \\pm"
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "equation_inline",
+              "content": "128.058 + 163.063 = 405.164;"
+            },
+            {
+              "type": "text",
+              "content": " , and the mass of a proton is 1.007 Da, which makes the mass charge/ratio more closely equal to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left( 4 0 5 . 1 6 4 + 1 . 0 0 7 \\right) / 1 = 4 0 6 . 1 7 1"
+            },
+            {
+              "type": "text",
+              "content": " (see "
+            },
+            {
+              "type": "text",
+              "content": "DETOUR: Molecular Mass",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ")."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.135,
+            0.24,
+            0.897,
+            0.386
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The mass spectrometer outputs a collection of "
+            },
+            {
+              "type": "text",
+              "content": "peaks",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", which are shown in Figure 4.13 for a real Tyrocidine B1 spectrum. Each peak’s x-coordinate represents an ion’s mass/charge ratio, and its height represents the "
+            },
+            {
+              "type": "text",
+              "content": "intensity",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " (i.e., relative abundance) of ions having that mass/charge ratio. For example, in the experimental spectrum of Tyrocidine B1 shown in Figure 4.13, you will find a small (almost invisible) peak with a mass/charge ratio of 406.30, which corresponds to the fragment ion NQY having mass/charge ratio 406.171, with an error of approximately 0.13 Da."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.136,
+            0.389,
+            0.897,
+            0.515
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As you can imagine, we must navigate a few practical barriers in order to analyze real spectra. First, the charge of each peak is unknown, often forcing researchers to try all possible charges from 1 to some parameter maxCharge, where the particular choice of maxCharge depends on the fragmentation technology used. This procedure generates maxCharge masses for each peak, so that the larger the value of maxCharge, the more false masses in the spectrum."
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 5,
+          "bbox": [
+            0.278,
+            0.545,
+            0.756,
+            0.731
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 5,
+              "bbox": [
+                0.278,
+                0.545,
+                0.756,
+                0.731
+              ],
+              "image_path": "images/page_230_chart_5.jpg",
+              "content": "| X | Y |\n| --- | --- |\n| ~430 | ~0.1 |\n| ~540 | ~0.2 |\n| ~670 | ~0.3 |\n| ~820 | ~0.4 |\n| ~920 | ~0.3 |\n| ~1060 | ~0.6 |\n| ~1170 | ~0.4 |\n| ~1280 | ~0.8 |\n| ~1300 | ~1.0 |\n| ~1370 | ~0.3 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 6,
+              "bbox": [
+                0.19,
+                0.746,
+                0.842,
+                0.796
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 4.13 A real spectrum for Tyrocidine B1. A peak’s x-coordinate represents its mass/charge ratio, and its height represents the intensity of ions having that mass/charge ratio."
+                }
+              ]
+            }
+          ],
+          "sub_type": "spectrogram"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.136,
+            0.828,
+            0.897,
+            0.892
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Second, the spectrum in Figure 4.13 has nearly 1,000 peaks, most of which are "
+            },
+            {
+              "type": "text",
+              "content": "false peaks",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", meaning that their mass/charge ratio does not correspond to any subpeptide’s mass/charge ratio (for any charge value). Fortunately, false peaks typically have low"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.5,
+            0.944,
+            0.534,
+            0.958
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "206"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 231,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.463,
+            0.065,
+            0.856,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E S E Q U E N C E A N T I B I O T I C S ?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.101,
+            0.113,
+            0.862,
+            0.239
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "intensities, necessitating a pre-processing step that removes low-intensity peaks before applying an algorithm. Figure 4.14 shows the list of the 95 mass/charge ratios for peaks that survived this preprocessing step for the Tyrocidine B1 spectrum in Figure 4.13. Their intensities may nevertheless vary by 2-3 orders of magnitude; for example, the intensity of the peak having mass/charge ratio 372.2 is 300 times smaller than the intensity of the peak with mass/charge ratio 1306.5."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "table",
+          "index": 2,
+          "bbox": [
+            0.156,
+            0.264,
+            0.809,
+            0.468
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 2,
+              "bbox": [
+                0.156,
+                0.264,
+                0.809,
+                0.468
+              ],
+              "image_path": "images/page_231_table_2.jpg",
+              "content": "<table><tr><td>372.2</td><td>397.2</td><td>402.0</td><td>406.3</td><td>415.1</td><td>431.2</td><td>448.3</td><td>449.3</td><td>452.2</td></tr><tr><td>471.3</td><td>486.3</td><td>488.2</td><td>500.5</td><td>505.3</td><td>516.1</td><td>536.1</td><td>544.2</td><td>545.3</td></tr><tr><td>562.5</td><td>571.3</td><td>599.2</td><td>614.4</td><td>615.4</td><td>616.4</td><td>618.2</td><td>632.0</td><td>655.5</td></tr><tr><td>656.3</td><td>672.5</td><td>673.3</td><td>677.3</td><td>691.4</td><td>692.4</td><td>712.1</td><td>722.3</td><td>746.5</td></tr><tr><td>760.4</td><td>761.6</td><td>762.5</td><td>771.6</td><td>788.4</td><td>802.3</td><td>803.3</td><td>818.5</td><td>819.4</td></tr><tr><td>831.4</td><td>836.3</td><td>853.3</td><td>875.5</td><td>876.5</td><td>901.5</td><td>915.9</td><td>916.5</td><td>917.8</td></tr><tr><td>918.4</td><td>933.4</td><td>934.7</td><td>935.5</td><td>949.4</td><td>966.2</td><td>995.4</td><td>1015.6</td><td>1027.5</td></tr><tr><td>1029.5</td><td>1031.5</td><td>1044.5</td><td>1046.5</td><td>1061.5</td><td>1063.4</td><td>1079.2</td><td>1083.7</td><td></td></tr><tr><td>1088.4</td><td>1093.5</td><td>1096.5</td><td>1098.4</td><td>1158.5</td><td>1159.5</td><td>1176.6</td><td>1177.7</td><td></td></tr><tr><td>1178.6</td><td>1192.7</td><td>1195.4</td><td>1207.5</td><td>1210.4</td><td>1224.6</td><td>1252.5</td><td>1270.5</td><td></td></tr><tr><td>1271.5</td><td>1278.6</td><td>1279.6</td><td>1295.6</td><td>1305.6</td><td>1306.5</td><td>1307.5</td><td>1309.6</td><td></td></tr></table>"
+            },
+            {
+              "type": "table_caption",
+              "index": 3,
+              "bbox": [
+                0.154,
+                0.477,
+                0.808,
+                0.529
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 4.14 The 95 mass/charge ratios having the highest intensity in Figure 4.13. The values shown in bold correspond to masses of subpeptides of Tyrocidine B1, if we allow a mass discrepancy of up to 0.3 Da (see Figure 4.15)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 4,
+          "bbox": [
+            0.153,
+            0.571,
+            0.809,
+            0.794
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 4,
+              "bbox": [
+                0.153,
+                0.571,
+                0.809,
+                0.794
+              ],
+              "image_path": "images/page_231_table_4.jpg",
+              "content": "<table><tr><td>Mass</td><td>Subpeptide</td><td>Mass</td><td>Subpeptide</td><td>Mass</td><td>Subpeptide</td></tr><tr><td>406.2</td><td>NQY</td><td>431.2</td><td>FPW</td><td>448.2</td><td>WFN</td></tr><tr><td>486.2</td><td>KLFP</td><td>488.2</td><td>VKLF</td><td>505.2</td><td>NQYV</td></tr><tr><td>544.2</td><td>LFPW</td><td>545.2</td><td>PWFN</td><td>632.3</td><td>QYVKL</td></tr><tr><td>672.3</td><td>KLFPW</td><td>673.3</td><td>PWFNQ</td><td>691.3</td><td>LFPWF</td></tr><tr><td>692.3</td><td>FPWFN</td><td>746.3</td><td>NQYVKL</td><td>771.3</td><td>VKLFPW</td></tr><tr><td>819.4</td><td>KLFPWF</td><td>836.4</td><td>PWFNQY</td><td>876.4</td><td>QYVKLFP</td></tr><tr><td>918.4</td><td>VKLFPWF</td><td>933.4</td><td>LFPWFNQ</td><td>934.4</td><td>YVKLFPW</td></tr><tr><td>935.4</td><td>PWFNQYV</td><td>966.4</td><td>WFNQYVK</td><td>1061.5</td><td>KLFPWFNQ</td></tr><tr><td>1063.5</td><td>PWFNQYVK</td><td>1079.5</td><td>WFNQYVKL</td><td>1096.5</td><td>LFPWFNQY</td></tr><tr><td>1176.5</td><td>NQYVKLFPW</td><td>1195.6</td><td>LFPWFNQYV</td><td>1210.6</td><td>FPWFNQYVK</td></tr><tr><td>1224.6</td><td>KLFPWFNQY</td><td></td><td></td><td></td><td></td></tr></table>"
+            },
+            {
+              "type": "table_caption",
+              "index": 5,
+              "bbox": [
+                0.154,
+                0.803,
+                0.808,
+                0.873
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 4.15 Values from Figure 4.14 corresponding to masses of subpeptides of Tyrocidine B1, with maxCharge = 1 and an allowable discrepancy of up to 0.3 Da. These 31 masses represent less than a third of the 95 subpeptides in the theoretical spectrum of Tyrocidine B1."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 6,
+          "bbox": [
+            0.465,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "207"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 232,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 4"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.112,
+            0.895,
+            0.152
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Only 31 of these 95 mass/charge ratios (shown in bold in Figure 4.14) can be matched to subpeptides of Tyrocidine B1, as illustrated in Figure 4.15."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.155,
+            0.897,
+            0.26
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "You can now see that sequencing Tyrocidine B1 from a real spectrum, for which twothirds of all masses are false, presents a much more difficult problem than sequencing this peptide from the simulated Spectrum"
+            },
+            {
+              "type": "text",
+              "content": "25",
+              "styles": [
+                "subscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ". In the following challenge problem, you will need to further develop the methods we studied in this chapter to analyze a real spectrum."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.163,
+            0.278,
+            0.871,
+            0.426
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "CHALLENGE PROBLEM:",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " Tyrocidine B1 is just one of many known NRPs produced by Bacillus brevis. A single bacterial species may produce dozens of different antibiotics, and even after 70 years of research, there are likely undiscovered antibiotics produced by Bacillus brevis. Try to sequence the tyrocidine corresponding to the real experimental spectrum below. Since the fragmentation technology used for generating this spectrum tends to produce ions with charge +1, you can safely assume that all charges are +1."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 4,
+          "bbox": [
+            0.186,
+            0.438,
+            0.856,
+            0.628
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 4,
+              "bbox": [
+                0.186,
+                0.438,
+                0.856,
+                0.628
+              ],
+              "image_path": "images/page_232_table_4.jpg",
+              "content": "<table><tr><td>371.5</td><td>375.4</td><td>390.4</td><td>392.2</td><td>409.0</td><td>420.2</td><td>427.2</td><td>443.3</td><td>446.4</td><td>461.3</td></tr><tr><td>471.4</td><td>477.4</td><td>491.3</td><td>505.3</td><td>506.4</td><td>519.2</td><td>536.1</td><td>546.5</td><td>553.3</td><td>562.3</td></tr><tr><td>588.2</td><td>600.3</td><td>616.2</td><td>617.4</td><td>618.3</td><td>633.4</td><td>634.4</td><td>636.2</td><td>651.5</td><td>652.4</td></tr><tr><td>702.5</td><td>703.4</td><td>712.5</td><td>718.3</td><td>721.0</td><td>730.3</td><td>749.4</td><td>762.6</td><td>763.4</td><td>764.4</td></tr><tr><td>779.6</td><td>780.4</td><td>781.4</td><td>782.4</td><td>797.3</td><td>862.4</td><td>876.4</td><td>877.4</td><td>878.6</td><td>879.4</td></tr><tr><td>893.4</td><td>894.4</td><td>895.4</td><td>896.5</td><td>927.4</td><td>944.4</td><td>975.5</td><td>976.5</td><td>977.4</td><td>979.4</td></tr><tr><td>1005.5</td><td>1007.5</td><td>1022.5</td><td>1023.7</td><td>1024.5</td><td>1039.5</td><td>1040.3</td><td>1042.5</td><td>1043.4</td><td>1057.5</td></tr><tr><td>1119.6</td><td>1120.6</td><td>1137.6</td><td>1138.6</td><td>1139.5</td><td>1156.5</td><td>1157.6</td><td>1168.6</td><td>1171.6</td><td>1185.4</td></tr><tr><td>1220.6</td><td>1222.5</td><td>1223.6</td><td>1239.6</td><td>1240.6</td><td>1250.5</td><td>1256.5</td><td>1266.5</td><td>1267.5</td><td>1268.6</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.164,
+            0.64,
+            0.871,
+            0.682
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Hint",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ": since the peptide from which this spectrum was generated is in the tyrocidine family, this peptide should be similar to Tyrocidine B1."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.446,
+            0.727,
+            0.587,
+            0.746
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Open Problems"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.139,
+            0.764,
+            0.447,
+            0.782
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Beltway and Turnpike Problems"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.795,
+            0.897,
+            0.9
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In the case of the alphabet of arbitrary integers, the Cyclopeptide Sequencing Problem corresponds to a computer science problem known as the "
+            },
+            {
+              "type": "text",
+              "content": "Beltway Problem",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ". The Beltway Problem asks you to find a set of points on a circle such that the distances between all pairs of points (where distance is measured around the circle) match a given collection of integers."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 9,
+          "bbox": [
+            0.5,
+            0.944,
+            0.534,
+            0.958
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "208"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 233,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.463,
+            0.065,
+            0.858,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E S E Q U E N C E A N T I B I O T I C S ?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.1,
+            0.113,
+            0.862,
+            0.239
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Beltway Problem’s analogue in the case when the points lie along a line segment instead of on a circle is called the "
+            },
+            {
+              "type": "text",
+              "content": "Turnpike Problem",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ". The terms “beltway” and “turnpike” arise from an analogy with exits on circular and linear roads, respectively. In the case of n points on a circle and line, the inputs for the Beltway and Turnpike Problems consist of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n ( n - 1 ) + 2"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac{n(n - 1)}{2} + 2"
+            },
+            {
+              "type": "text",
+              "content": " distances, respectively (these formulas include the distance 0 as well as the length of the entire segment)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.1,
+            0.242,
+            0.861,
+            0.475
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Various attempts to design polynomial algorithms for the Beltway and Turnpike Problems (or to prove that they are intractable) have failed. However, there is a "
+            },
+            {
+              "type": "text",
+              "content": "pseudo",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "polynomial algorithm for the Turnpike Problem (see "
+            },
+            {
+              "type": "text",
+              "content": "DETOUR: Pseudo-polynomial Algorithm for the Turnpike Problem",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "). In contrast to a truly polynomial algorithm, which can be bounded by a polynomial in the length of the input, a pseudo-polynomial algorithm for the Turnpike Problem is polynomial in the total length of the line segment. For example, if n points are separated by huge distances, say on the order of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 ^ { 1 0 0 }"
+            },
+            {
+              "type": "text",
+              "content": " , then a polynomial algorithm would still be fast, whereas a pseudo-polynomial algorithm would be prohibitively slow. Note that although the distances themselves will be huge, each distance can be stored using only about 100 bits, implying that the length of the input is small even for such large distances."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.1,
+            0.476,
+            0.861,
+            0.583
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Pseudo-polynomial algorithms are useful in practice because practical instances of the problems typically do not include huge distances. Interestingly, although a pseudo-polynomial algorithm exists for the Turnpike Problem, such an algorithm for the seemingly similar Beltway Problem remains undiscovered. Can you develop such an algorithm?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.103,
+            0.604,
+            0.434,
+            0.623
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Sequencing cyclic peptides in primates"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.1,
+            0.635,
+            0.861,
+            0.74
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Bacteria and fungi do not have a monopoly on producing cyclic peptides; animals and plants make them too (albeit through a completely different mechanism). The first cyclic peptide found in animals (called ✓"
+            },
+            {
+              "type": "text",
+              "content": "-defensin",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ") was discovered in 1999 in macaques. ✓-defensin prevents viruses from entering cells and has strong anti-HIV activity. Yet the question of how primates make ✓-defensin remains a mystery."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.1,
+            0.742,
+            0.861,
+            0.847
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Needless to say, there is no 54-mer in the macaque genome encoding the 18 amino acid-long ✓-defensin. Instead, this cyclic peptide is formed by concatenating two 9 amino acid-long peptides excised from two different proteins called RTD1a and RTD1b, as shown in Figure 4.16. It remains unclear which enzymes do this elaborate cutting and pasting."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.101,
+            0.848,
+            0.859,
+            0.889
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Interestingly, macaques and baboons produce ✓-defensin, whereas humans and chimpanzees do not. This discrepancy makes us wonder whether a mutation occurred"
+            }
+          ]
+        },
+        {
+          "type": "aside_text",
+          "index": 8,
+          "bbox": [
+            0.871,
+            0.277,
+            0.984,
+            0.311
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "PAGE 219"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 9,
+          "bbox": [
+            0.465,
+            0.946,
+            0.498,
+            0.96
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "209"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 234,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.066,
+            0.256,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 4"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 1,
+          "bbox": [
+            0.394,
+            0.113,
+            0.668,
+            0.171
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 1,
+              "bbox": [
+                0.394,
+                0.113,
+                0.668,
+                0.171
+              ],
+              "image_path": "images/page_234_image_1.jpg",
+              "content": "```mermaid\ngraph LR\n  A[\"RTD1a\"] --> B[\"...KGLRCICTRGFCRLL\"]\n  B --> C[\"...RGLRCLCRRGVCQLL\"]\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 2,
+              "bbox": [
+                0.365,
+                0.214,
+                0.448,
+                0.23
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "-defensin"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "image",
+          "index": 3,
+          "bbox": [
+            0.521,
+            0.193,
+            0.627,
+            0.253
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 3,
+              "bbox": [
+                0.521,
+                0.193,
+                0.627,
+                0.253
+              ],
+              "image_path": "images/page_234_image_3.jpg",
+              "content": ""
+            },
+            {
+              "type": "image_caption",
+              "index": 4,
+              "bbox": [
+                0.191,
+                0.268,
+                0.842,
+                0.337
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 4.16 The 18 amino acid-long ✓-defensin peptide is formed by cutting two 9 amino acid-long peptides RCICTRGFC and RCLCRRGVC from the RTD1a and RTD1b proteins, concatenating them, and then circularizing the resulting peptide (along with introducing three disulfide bridges that form bonds across the peptide)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.136,
+            0.376,
+            0.896,
+            0.481
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "in the human-chimpanzee ancestor that resulted in the loss of this very useful peptide. Interestingly, genes very similar to RTD1a and RTD1b do exist in humans, but a codon in one of these genes mutated into a stop codon, thus shortening the encoded protein. Since this stop codon is located before the 9 amino acid-long peptide contributing to ✓-defensin, humans do not produce this peptide and thus cannot produce ✓-defensin."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.136,
+            0.484,
+            0.897,
+            0.631
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In a remarkable experiment, Alexander Cole demonstrated that humans could get ✓- defensin back! Certain drugs can force the ribosome to ignore stop codons and continue translating RNA, even after encountering a stop codon. The researchers demonstrated that after treatment with such a drug, human cells began producing the human version of ✓-defensin. The surprising conclusion of this experiment is that although humans and chimpanzees lost ✓-defensin millions of years ago, we still possess the mysterious enzymes required to cut and paste its constituent peptides."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.136,
+            0.632,
+            0.897,
+            0.844
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Some biologists believe that since the enzymes making ✓-defensin still work in humans, they must be needed for something else. If these enzymes did not provide some selective advantage, then over time, mutations would cause their genes to become "
+            },
+            {
+              "type": "text",
+              "content": "pseudogenes",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", or non-functional remnants of previously working genes. The most natural explanation for why these enzymes are still functional is that humans produce still undiscovered cyclic peptides, and that the enzymes needed for ✓-defensin are also used to “cut-and-paste” other (still undiscovered) cyclic peptides. The hypothesis that we may possess undiscovered cyclic peptides is not as improbable as you might think because biologists still lack robust algorithms for cyclopeptide discovery from the billions of spectra generated in hundreds of labs analyzing the human proteome."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.845,
+            0.895,
+            0.887
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "By default, researchers assume that all spectra ever acquired in human proteome studies originated from linear peptides. Could they be wrong? Can you devise a fast"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 9,
+          "bbox": [
+            0.501,
+            0.946,
+            0.534,
+            0.958
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "210"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 235,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.463,
+            0.065,
+            0.858,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E S E Q U E N C E A N T I B I O T I C S ?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.101,
+            0.112,
+            0.861,
+            0.155
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "cyclopeptide sequencing algorithm that can analyze all these spectra and hopefully discover human cyclopeptides?"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.402,
+            0.199,
+            0.561,
+            0.218
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Charging Stations"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.102,
+            0.235,
+            0.519,
+            0.255
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Generating the theoretical spectrum of a peptide"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.101,
+            0.267,
+            0.862,
+            0.435
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Given an amino acid string Peptide, we will begin by assuming that it represents a linear peptide. Our approach to generating its theoretical spectrum is based on the assumption that the mass of any subpeptide is equal to the difference between the masses of two prefixes of Peptide. We can compute an array PREFIXMASS storing the masses of each prefix of Peptide in increasing order, e.g., for Peptide = NQEL, PREFIXMASS = (0, 114, 242, 371, 484). Then, the mass of the subpeptide of Peptide beginning at position i + 1 and ending at position j can be computed as PREFIXMASS(j) \u0000 PREFIXMASS(i). For example, when Peptide = NQEL,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.177,
+            0.451,
+            0.785,
+            0.471
+          ],
+          "image_path": "images/page_235_equation_5.jpg",
+          "content": "\\mathrm{MASS} (\\mathrm{QE}) = \\mathrm{PREFIXMASS} (3) - \\mathrm{PREFIXMASS} (1) = 3 7 1 - 1 1 4 = 2 5 7."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.101,
+            0.487,
+            0.862,
+            0.571
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The following pseudocode implements this idea. It also represents the alphabet of 20 amino acids and their integer masses as a pair of 20-element arrays AMINOACID and AMINOACIDMASS, corresponding to the top and bottom rows of Figure 4.6, respectively."
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 7,
+          "bbox": [
+            0.129,
+            0.592,
+            0.763,
+            0.834
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 7,
+              "bbox": [
+                0.129,
+                0.592,
+                0.763,
+                0.834
+              ],
+              "content": "LINEARSPECTRUM(Peptide, AMINOACID, AMINOACIDMASS)\n    PREFIXMASS(0) ← 0\n    for i ← 1 to |Peptide|\n        for j ← 1 to 20\n            if AMINOACID(j) = i-th amino acid in Peptide\n                PREFIXMASS(i) ← PREFIXMASS(i - 1) + AMINOACIDMASS(j)\n    LinearSpectrum ← a list consisting of the single integer 0\n    for i ← 0 to |Peptide| - 1\n        for j ← i + 1 to |Peptide|\n            add PREFIXMASS(j) - PREFIXMASS(i) to LinearSpectrum\n    return the sorted list LinearSpectrum"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "python"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.101,
+            0.858,
+            0.861,
+            0.898
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If the amino acid string Peptide represents a cyclic peptide instead, then the masses in its theoretical spectrum can be divided into those found by "
+            },
+            {
+              "type": "text",
+              "content": "LINEARSPECTRUM",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " and those"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 9,
+          "bbox": [
+            0.89,
+            0.674,
+            0.966,
+            0.736
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 9,
+              "bbox": [
+                0.89,
+                0.674,
+                0.966,
+                0.736
+              ],
+              "image_path": "images/page_235_image_9.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 10,
+          "bbox": [
+            0.465,
+            0.946,
+            0.496,
+            0.958
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "211"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 236,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.066,
+            0.256,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 4"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.135,
+            0.112,
+            0.897,
+            0.195
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "corresponding to subpeptides wrapping around the end of the linearized version of Peptide. Furthermore, each such subpeptide has mass equal to the difference between MASS(Peptide) and a subpeptide mass identified by "
+            },
+            {
+              "type": "text",
+              "content": "LINEARSPECTRUM",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ". For example, when Peptide = "
+            },
+            {
+              "type": "text",
+              "content": "NQEL",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ","
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "equation",
+          "index": 2,
+          "bbox": [
+            0.247,
+            0.213,
+            0.785,
+            0.234
+          ],
+          "image_path": "images/page_236_equation_2.jpg",
+          "content": "\\mathrm{MASS} (\\mathbf {L N}) = \\mathrm{MASS} (\\mathbf {N Q E L}) - \\mathrm{MASS} (\\mathbf {Q E}) = 4 8 4 - 2 5 7 = 2 2 7."
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.135,
+            0.251,
+            0.895,
+            0.291
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Thus, we can generate a cyclic spectrum by making only a small modification to the pseudocode of "
+            },
+            {
+              "type": "text",
+              "content": "LINEARSPECTRUM",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 4,
+          "bbox": [
+            0.164,
+            0.313,
+            0.889,
+            0.62
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 4,
+              "bbox": [
+                0.164,
+                0.313,
+                0.889,
+                0.62
+              ],
+              "content": "CYCLICSPECTRUM(Peptide, AMINOACID, AMINOACIDMASS)\n    PREFIXMASS(0) ← 0\n    for i ← 1 to Peptide\n        for j ← 1 to 20\n            if AMINOACID(j) = i-th amino acid in Peptide\n                PREFIXMASS(i) ← PREFIXMASS(i - 1) + AMINOACIDMASS(j)\n    peptideMass ← PREFIXMASS(|Peptide|)\n    CyclicSpectrum ← a list consisting of the single integer 0\n    for i ← 0 to |Peptide| - 1\n        for j ← i + 1 to |Peptide|\n            add PREFIXMASS(j) - PREFIXMASS(i) to CyclicSpectrum\n            if i > 0 and j < |Peptide|\n                add peptideMass - (PREFIXMASS(j) - PREFIXMASS(i)) to CyclicSpectrum\n    return sorted list CyclicSpectrum"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "python"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.655,
+            0.489,
+            0.673
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "How fast is "
+            },
+            {
+              "type": "text",
+              "content": "CYCLOPEPTIDESEQUENCING",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.686,
+            0.726,
+            0.706
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s run "
+            },
+            {
+              "type": "text",
+              "content": "CYCLOPEPTIDESEQUENCING",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " on the following Spectrum:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 7,
+          "bbox": [
+            0.214,
+            0.722,
+            0.819,
+            0.77
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 7,
+              "bbox": [
+                0.214,
+                0.722,
+                0.819,
+                0.77
+              ],
+              "image_path": "images/page_236_table_7.jpg",
+              "content": "<table><tr><td>0</td><td>97</td><td>97</td><td>99</td><td>101</td><td>103</td><td>196</td><td>198</td><td>198</td><td>200</td><td>202</td></tr><tr><td>295</td><td>297</td><td>299</td><td>299</td><td>301</td><td>394</td><td>396</td><td>398</td><td>400</td><td>400</td><td>497</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.136,
+            0.786,
+            0.895,
+            0.827
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "CYCLOPEPTIDESEQUENCING",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " first expands the set Peptides into the set of all 1-mers consistent with Spectrum:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 9,
+          "bbox": [
+            0.398,
+            0.844,
+            0.632,
+            0.883
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 9,
+              "bbox": [
+                0.398,
+                0.844,
+                0.632,
+                0.883
+              ],
+              "image_path": "images/page_236_table_9.jpg",
+              "content": "<table><tr><td>97</td><td>99</td><td>101</td><td>103</td></tr><tr><td>P</td><td>V</td><td>T</td><td>C</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 10,
+          "bbox": [
+            0.5,
+            0.946,
+            0.534,
+            0.958
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "212"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 237,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.463,
+            0.065,
+            0.856,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E S E Q U E N C E A N T I B I O T I C S ?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.101,
+            0.112,
+            0.861,
+            0.175
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The algorithm next appends each of the 18 amino acid masses to each of the 1-mers above. The resulting set Peptides containing 4 · 18 = 72 peptides of length 2 is then trimmed to keep only the 10 peptides that are consistent with Spectrum:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 2,
+          "bbox": [
+            0.208,
+            0.189,
+            0.756,
+            0.284
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 2,
+              "bbox": [
+                0.208,
+                0.189,
+                0.756,
+                0.284
+              ],
+              "image_path": "images/page_237_table_2.jpg",
+              "content": "<table><tr><td>97-99</td><td>97-101</td><td>97-103</td><td>99-97</td><td>99-101</td></tr><tr><td>PV</td><td>PT</td><td>PC</td><td>VP</td><td>VT</td></tr><tr><td>99-103</td><td>101-97</td><td>101-99</td><td>103-97</td><td>103-99</td></tr><tr><td>VC</td><td>TP</td><td>TV</td><td>CP</td><td>CV</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.101,
+            0.301,
+            0.859,
+            0.339
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "After expansion and trimming in the next iteration, the set Peptides contains 15 consistent 3-mers:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 4,
+          "bbox": [
+            0.141,
+            0.354,
+            0.825,
+            0.501
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 4,
+              "bbox": [
+                0.141,
+                0.354,
+                0.825,
+                0.501
+              ],
+              "image_path": "images/page_237_table_4.jpg",
+              "content": "<table><tr><td>97-99-103</td><td>97-99-101</td><td>97-101-97</td><td>97-101-99</td><td>97-103-99</td></tr><tr><td>PVC</td><td>PVT</td><td>PTP</td><td>PTV</td><td>PCV</td></tr><tr><td>99-97-103</td><td>99-97-101</td><td>99-101-97</td><td>99-103-97</td><td>101-97-99</td></tr><tr><td>VPC</td><td>VPT</td><td>VTP</td><td>VCP</td><td>TPV</td></tr><tr><td>101-97-103</td><td>101-99-97</td><td>103-97-101</td><td>103-97-99</td><td>103-99-97</td></tr><tr><td>TPC</td><td>TVP</td><td>CPT</td><td>CPV</td><td>CVP</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.1,
+            0.519,
+            0.86,
+            0.601
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "With one more iteration, the set Peptides contains ten consistent 4-mers. Observe that the six 3-mers highlighted in red above failed to expand into any 4-mers below, and so we now know that "
+            },
+            {
+              "type": "text",
+              "content": "CYCLOPEPTIDESEQUENCING",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " may generate some incorrect k-mers at intermediate iterations."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 6,
+          "bbox": [
+            0.148,
+            0.614,
+            0.814,
+            0.761
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 6,
+              "bbox": [
+                0.148,
+                0.614,
+                0.814,
+                0.761
+              ],
+              "image_path": "images/page_237_table_6.jpg",
+              "content": "<table><tr><td>97-99-103-97</td><td>97-101-97-99</td><td>97-101-97-103</td><td>97-103-99-97</td></tr><tr><td>PVCP</td><td>PTPV</td><td>PTPC</td><td>PCVP</td></tr><tr><td>99-97-101-97</td><td>99-103-97-101</td><td>101-97-99-103</td><td>101-97-103-99</td></tr><tr><td>VPTP</td><td>VCPT</td><td>TPVC</td><td>TPCV</td></tr><tr><td></td><td>103-97-101-97</td><td>103-99-97-101</td><td></td></tr><tr><td></td><td>CPTP</td><td>CVPT</td><td></td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.102,
+            0.778,
+            0.592,
+            0.798
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In the final iteration, we generate ten consistent 5-mers:"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.464,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "213"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 238,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.065,
+            0.259,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 4"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 1,
+          "bbox": [
+            0.224,
+            0.11,
+            0.81,
+            0.31
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 1,
+              "bbox": [
+                0.224,
+                0.11,
+                0.81,
+                0.31
+              ],
+              "image_path": "images/page_238_table_1.jpg",
+              "content": "<table><tr><td>97-99-103-97-101PVCPT</td><td>97-101-97-99-103PTPVC</td><td>97-101-97-103-99PTPCV</td></tr><tr><td>97-103-99-97-101PCVPT</td><td>99-97-101-97-103VPTPC</td><td>99-103-97-101-97VCPTP</td></tr><tr><td>101-97-99-103-97TPVCP</td><td>101-97-103-99-97TPCVP</td><td>103-97-101-97-99CPTPV</td></tr><tr><td></td><td>103-99-97-101-97CVPTP</td><td></td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.136,
+            0.328,
+            0.895,
+            0.391
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "All these linear peptides correspond to the same cyclic peptide PVCPT, thus solving the Cyclopeptide Sequencing Problem. You can verify that "
+            },
+            {
+              "type": "text",
+              "content": "CYCLOPEPTIDESEQUENCING",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " also quickly reconstructs Tyrocidine B1 from the spectrum in Figure 4.7."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.139,
+            0.413,
+            0.432,
+            0.433
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Trimming the peptide leaderboard"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.136,
+            0.444,
+            0.897,
+            0.486
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note: This Charging Station uses some notation from CHARGING STATION: Gener"
+            },
+            {
+              "type": "text",
+              "content": "ating the Theoretical Spectrum of a Peptide",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.136,
+            0.487,
+            0.897,
+            0.571
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To implement the TRIM function in "
+            },
+            {
+              "type": "text",
+              "content": "LEADERBOARDCYCLOPEPTIDESEQUENCING",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", we first will generate the theoretical spectra of all linear peptides from Leaderboard. Then, we will compute the scores of each theoretical spectrum against an experimental spectrum Spectrum. This requires implementing LINEARSCORE(Peptide, Spectrum)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.572,
+            0.897,
+            0.614
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Figure 4.17 shows a leaderboard of ten linear peptides represented as a list Leaderboard along with a ten-element array LINEARSCORES containing their scores."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 7,
+          "bbox": [
+            0.188,
+            0.646,
+            0.845,
+            0.684
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 7,
+              "bbox": [
+                0.188,
+                0.646,
+                0.845,
+                0.684
+              ],
+              "image_path": "images/page_238_table_7.jpg",
+              "content": "<table><tr><td>Leaderboard</td><td>PVT</td><td>PTP</td><td>PTV</td><td>PCP</td><td>VPC</td><td>VTP</td><td>VCP</td><td>TPV</td><td>TPC</td><td>TVP</td></tr><tr><td>LINEARSCORES</td><td>6</td><td>2</td><td>4</td><td>6</td><td>5</td><td>2</td><td>5</td><td>4</td><td>4</td><td>3</td></tr></table>"
+            },
+            {
+              "type": "table_caption",
+              "index": 8,
+              "bbox": [
+                0.19,
+                0.693,
+                0.842,
+                0.727
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 4.17 A collection of peptides Leaderboard (top) along with an array LINEARSCORES (bottom) holding the score of each peptide."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.136,
+            0.76,
+            0.897,
+            0.844
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The "
+            },
+            {
+              "type": "text",
+              "content": "TRIM",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " algorithm, shown below, sorts all peptides in Leaderboard according to their scores, resulting in a sorted Leaderboard (Figure 4.18). "
+            },
+            {
+              "type": "text",
+              "content": "TRIM",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " then retains the top N scoring peptides including ties (e.g., for N = 5, the seven top-scoring peptides shown in blue will be retained), and removes all other peptides from Leaderboard."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 10,
+          "bbox": [
+            0.034,
+            0.409,
+            0.108,
+            0.503
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 10,
+              "bbox": [
+                0.034,
+                0.409,
+                0.108,
+                0.503
+              ],
+              "image_path": "images/page_238_image_10.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 11,
+          "bbox": [
+            0.031,
+            0.528,
+            0.11,
+            0.59
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 11,
+              "bbox": [
+                0.031,
+                0.528,
+                0.11,
+                0.59
+              ],
+              "image_path": "images/page_238_image_11.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 12,
+          "bbox": [
+            0.5,
+            0.946,
+            0.534,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "214"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 239,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.463,
+            0.065,
+            0.856,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E S E Q U E N C E A N T I B I O T I C S ?"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.129,
+            0.115,
+            0.822,
+            0.351
+          ],
+          "content": [
+            {
+              "type": "algorithm_body",
+              "index": 1,
+              "bbox": [
+                0.129,
+                0.115,
+                0.822,
+                0.351
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "TRIM(Leaderboard, Spectrum, N, AMINOACID, AMINOACIDMASS)\n    for "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "j \\leftarrow 1"
+                },
+                {
+                  "type": "text",
+                  "content": " to |Leaderboard|\n        Peptide "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\leftarrow j"
+                },
+                {
+                  "type": "text",
+                  "content": "-th peptide in Leaderboard\n        LINEARSCORES("
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "j"
+                },
+                {
+                  "type": "text",
+                  "content": ") "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\leftarrow"
+                },
+                {
+                  "type": "text",
+                  "content": " LINEARSCORE(Peptide, Spectrum)\n    sort Leaderboard according to the decreasing order of scores in LINEARSCORES\n    sort LINEARSCORES in decreasing order\n    for "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "j \\leftarrow N + 1"
+                },
+                {
+                  "type": "text",
+                  "content": " to |Leaderboard|\n        if LINEARSCORES("
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "j"
+                },
+                {
+                  "type": "text",
+                  "content": ") < LINEARSCORES(N)\n            remove all peptides starting from the "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "j"
+                },
+                {
+                  "type": "text",
+                  "content": "-th peptide from Leaderboard\n            return Leaderboard\n    return Leaderboard"
+                }
+              ]
+            }
+          ],
+          "sub_type": "algorithm"
+        },
+        {
+          "type": "table",
+          "index": 2,
+          "bbox": [
+            0.153,
+            0.405,
+            0.809,
+            0.442
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 2,
+              "bbox": [
+                0.153,
+                0.405,
+                0.809,
+                0.442
+              ],
+              "image_path": "images/page_239_table_2.jpg",
+              "content": "<table><tr><td>Leaderboard</td><td>PVT</td><td>PCP</td><td>VPC</td><td>VCP</td><td>PTV</td><td>TPV</td><td>TPC</td><td>TVP</td><td>PTP</td><td>VTP</td></tr><tr><td>LINEARSCORES</td><td>6</td><td>6</td><td>5</td><td>5</td><td>4</td><td>4</td><td>4</td><td>3</td><td>2</td><td>2</td></tr></table>"
+            },
+            {
+              "type": "table_caption",
+              "index": 3,
+              "bbox": [
+                0.154,
+                0.452,
+                0.807,
+                0.52
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 4.18 Arrays Leaderboard and LINEARSCORES from Figure 4.17 sorted according to score. The seven highest-scoring peptides, which will be retained after applying TRIM with N = 5, are shown in blue; remaining peptides are shown in red and will be removed from the leaderboard."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.444,
+            0.575,
+            0.519,
+            0.591
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Detours"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.103,
+            0.611,
+            0.3,
+            0.629
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Gause and Lysenkoism"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.1,
+            0.642,
+            0.86,
+            0.723
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The term "
+            },
+            {
+              "type": "text",
+              "content": "Lysenkoism",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " refers to the politicization of genetics in the Soviet Union that began in the late 1920s and lasted for three decades until the death of Stalin. Lysenkoism was built on theories of inheritance by acquired characteristics, which ran counter to Mendelian laws."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.099,
+            0.727,
+            0.861,
+            0.875
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In 1928, Trofim Lysenko, the son of Ukrainian peasants, claimed to have found a way to vastly increase the crop yield of wheat. During Stalin’s rule, Soviet propaganda focused on inspirational stories of working class citizens, and it portrayed Lysenko as a genius, even though he had manufactured his experimental data. Empowered by his sudden hero status, Lysenko denounced genetics and started promoting his own “scientific” views. He called geneticists “fly lovers and people haters” and claimed that they were trying to undermine the onward march of Soviet agriculture."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 8,
+          "bbox": [
+            0.889,
+            0.2,
+            0.966,
+            0.263
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 8,
+              "bbox": [
+                0.889,
+                0.2,
+                0.966,
+                0.263
+              ],
+              "image_path": "images/page_239_image_8.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 9,
+          "bbox": [
+            0.464,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "215"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

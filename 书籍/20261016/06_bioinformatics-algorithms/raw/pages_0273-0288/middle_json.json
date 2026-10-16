@@ -1,0 +1,4759 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "DocHdl1OnVERSA-PPM01tmpTarget",
+      "created_at": "2015-08-17T16:48:25Z",
+      "modified_at": "2018-07-08T15:12:16-07:00",
+      "creator_application": "Prinect Printready",
+      "producer_application": "Mac OS X 10.10.4 Quartz PDFContext",
+      "page_count": 380,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 272,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 273,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 274,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 275,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 276,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 277,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 278,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 279,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 280,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 281,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 282,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 283,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 284,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 285,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 286,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 287,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 272,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.066,
+            0.256,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 5"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 1,
+          "bbox": [
+            0.195,
+            0.109,
+            0.84,
+            0.394
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 1,
+              "bbox": [
+                0.195,
+                0.109,
+                0.84,
+                0.394
+              ],
+              "image_path": "images/page_272_image_1.jpg",
+              "content": "```mermaid\ngraph TD\n  A[\"tights\"] --> B(\"leotard\")\n  B --> C(\"cape\")\n  B --> D(\"shorts\")\n  D --> E(\"boots\")\n  C --> F(\"gloves\")\n  C --> G(\"hood\")\n  E --> H(\"belt\")\n  H --> I(\"MUST REMEMBER-FIRST TIGHTS THEN BOOTS\")\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 2,
+              "bbox": [
+                0.19,
+                0.407,
+                0.842,
+                0.458
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 5.13 The DAG associated with the Dressing Challenge Problem. If a directed edge connects two items of clothing, then the first item must be put on before the second item."
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.136,
+            0.495,
+            0.892,
+            0.577
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To solve the Dressing Challenge Problem, we need to arrange the nodes in the DAG in Figure 5.13 along a line so that every directed edge connects a node to a node on its right (Figure 5.14). To get dressed without any mishaps, you can simply visit nodes from left to right."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.58,
+            0.893,
+            0.664
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To find a longest path in an arbitrary DAG, we first need to order the nodes of the DAG so that every node falls after all its predecessors. Formally, an ordering of nodes "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left( a _ { 1 } , \\cdots , a _ { k } \\right)"
+            },
+            {
+              "type": "text",
+              "content": " in a DAG is called a "
+            },
+            {
+              "type": "text",
+              "content": "topological ordering",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " if every edge "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left( a _ { i } , a _ { j } \\right)"
+            },
+            {
+              "type": "text",
+              "content": " of the DAG connects a node with a smaller index to a node with a larger index, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { i . e . } , i < j"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.165,
+            0.686,
+            0.87,
+            0.706
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "EXERCISE BREAK:",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " Construct a topological ordering of the DAG in Figure 5.12."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.164,
+            0.735,
+            0.87,
+            0.777
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "EXERCISE BREAK:",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " How many topological orderings does the Dressing Challenge DAG have?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.136,
+            0.8,
+            0.897,
+            0.884
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The reason why "
+            },
+            {
+              "type": "text",
+              "content": "MANHATTANTOURIST",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " is able to find a longest path in a rectangular grid is that its pseudocode implicitly orders nodes according to the “column-by-column” topological ordering shown in Figure 5.15 (left). The “row-by-row” ordering (Figure 5.15 (right)) gives another topological ordering of a rectangular grid."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 8,
+          "bbox": [
+            0.041,
+            0.674,
+            0.102,
+            0.783
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 8,
+              "bbox": [
+                0.041,
+                0.674,
+                0.102,
+                0.783
+              ],
+              "image_path": "images/page_272_image_8.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 9,
+          "bbox": [
+            0.5,
+            0.944,
+            0.534,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "248"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 273,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.435,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 1,
+          "bbox": [
+            0.159,
+            0.109,
+            0.805,
+            0.468
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 1,
+              "bbox": [
+                0.159,
+                0.109,
+                0.805,
+                0.468
+              ],
+              "image_path": "images/page_273_image_1.jpg",
+              "content": "This diagram illustrates the classification of various body parts (such as tights, leotard, boots, and gloves) into two distinct groups based on their relative positioning."
+            },
+            {
+              "type": "image_caption",
+              "index": 2,
+              "bbox": [
+                0.156,
+                0.479,
+                0.804,
+                0.517
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 5.14 Two different topological orderings of the Dressing Challenge DAG from Figure 5.13."
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "image",
+          "index": 3,
+          "bbox": [
+            0.175,
+            0.56,
+            0.778,
+            0.768
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 3,
+              "bbox": [
+                0.175,
+                0.56,
+                0.778,
+                0.768
+              ],
+              "image_path": "images/page_273_image_3.jpg",
+              "content": "```mermaid\ngraph LR\n  subgraph Left Diagram\n  V1[\"V1\"] --> V2[\"V2\"]\n  V2 --> V3[\"V3\"]\n  V3 --> V4[\"V4\"]\n  V4 --> V5[\"V5\"]\n  V6[\"V6\"] --> V7[\"V7\"]\n  V7 --> V8[\"V8\"]\n  V8 --> V9[\"V9\"]\n  V9 --> V10[\"V10\"]\n  V10 --> V11[\"V11\"]\n  V11 --> V12[\"V12\"]\n  V12 --> V13[\"V13\"]\n  V13 --> V14[\"V14\"]\n  V14 --> V15[\"V15\"]\n  V16[\"V16\"] --> V17[\"V17\"]\n  V17 --> V18[\"V18\"]\n  V18 --> V19[\"V19\"]\n  V19 --> V20[\"V20\"]\n  V20 --> V21[\"V21\"]\n  V21 --> V22[\"V22\"]\n  V22 --> V23[\"V23\"]\n  V23 --> V24[\"V24\"]\n  V24 --> V25[\"V25\"]\n  end\n\n  subgraph Right Diagram\n  V1 --> V2_1[\"V1\"] --> V2_2[\"V2\"] --> V3_1[\"V3\"] --> V4_1[\"V4\"] --> V5_1[\"V5\"]\n    V6 <--> V7_1[\"V6\"] --> V8_1[\"V8\"] --> V9_1[\"V9\"] --> V10_1[\"V10\"]\n    V11 <--> V12_1[\"V11\"] --> V13_1[\"V13\"] --> V14_1[\"V14\"] --> V15_1[\"V15\"]\n    V16 <--> V17_1[\"V16\"] --> V18_1[\"V18\"] --> V19_1[\"V19\"] --> V20_1[\"V20\"]\n    V21 <--> V22_1[\"V21\"] --> V23_1[\"V23\"] --> V24_1[\"V24\"] --> V25_1[\"V25\"]\n  end\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 4,
+              "bbox": [
+                0.155,
+                0.778,
+                0.804,
+                0.816
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 5.15 The column-by-column (left) and row-by-row (right) topological orderings of a rectangular grid."
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.129,
+            0.844,
+            0.833,
+            0.886
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "STOP and Think:",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " Rewrite the "
+            },
+            {
+              "type": "text",
+              "content": "MANHATTANTOURIST",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " pseudocode based on the topological ordering shown in Figure 5.16."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 6,
+          "bbox": [
+            0.89,
+            0.835,
+            0.965,
+            0.896
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 6,
+              "bbox": [
+                0.89,
+                0.835,
+                0.965,
+                0.896
+              ],
+              "image_path": "images/page_273_image_6.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 7,
+          "bbox": [
+            0.465,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "249"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 274,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.065,
+            0.256,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 5"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 1,
+          "bbox": [
+            0.384,
+            0.141,
+            0.648,
+            0.346
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 1,
+              "bbox": [
+                0.384,
+                0.141,
+                0.648,
+                0.346
+              ],
+              "image_path": "images/page_274_image_1.jpg",
+              "content": "```mermaid\ngraph LR\n  V1[\"V1\"] --> V2[\"V2\"]\n  V2 --> V3[\"V3\"]\n  V3 --> V4[\"V4\"]\n  V4 --> V10[\"V10\"]\n  V10 --> V11[\"V11\"]\n  V6[\"V6\"] --> V7[\"V7\"]\n  V7 --> V8[\"V8\"]\n  V8 --> V9[\"V9\"]\n  V9 --> V12[\"V12\"]\n  V12 --> V19[\"V19\"]\n  V19 --> V20[\"V20\"]\n  V15[\"V15\"] --> V16[\"V16\"]\n  V16 --> V17[\"V17\"]\n  V17 --> V21[\"V21\"]\n  V21 --> V24[\"V24\"]\n  V24 --> V25[\"V25\"]\n  V22[\"V22\"] --> V23[\"V23\"]\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 2,
+              "bbox": [
+                0.199,
+                0.363,
+                0.835,
+                0.382
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 5.16 Another topological ordering of the rectangular grid from Figure 5.15."
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.136,
+            0.411,
+            0.897,
+            0.558
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It can be proven that any DAG has a topological ordering, and that this topological ordering can be constructed in time proportional to the number of edges in the graph (see "
+            },
+            {
+              "type": "text",
+              "content": "DETOUR: Constructing a Topological Ordering",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "). Once we have a topological ordering, we can compute the length of the longest path from source to sink by visiting the nodes of the DAG in the order dictated by the topological ordering, which is achieved by the following algorithm. For simplicity, we assume that the source node is the only node with indegree 0 in Graph."
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 4,
+          "bbox": [
+            0.165,
+            0.581,
+            0.773,
+            0.753
+          ],
+          "content": [
+            {
+              "type": "algorithm_body",
+              "index": 4,
+              "bbox": [
+                0.165,
+                0.581,
+                0.773,
+                0.753
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "LONGESTPATH(Graph, source, sink)\n    for each node b in Graph\n        "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "s_b \\leftarrow -\\infty"
+                },
+                {
+                  "type": "text",
+                  "content": "\n    "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "s_{source} \\leftarrow 0"
+                },
+                {
+                  "type": "text",
+                  "content": "\n    topologically order Graph\n    for each node b in Graph (following the topological order)\n        "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "s_b \\leftarrow \\max_{\\text{all predecessors a of node } b} \\{s_a + \\text{weight of edge from } a \\text{ to } b\\}"
+                },
+                {
+                  "type": "text",
+                  "content": "\n    return "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "s_{sink}"
+                }
+              ]
+            }
+          ],
+          "sub_type": "algorithm"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.136,
+            0.778,
+            0.895,
+            0.818
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Since every edge participates in only a single recurrence, the runtime of "
+            },
+            {
+              "type": "text",
+              "content": "LONGESTPATH",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " is proportional to the number of edges in the DAG Graph."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.136,
+            0.82,
+            0.897,
+            0.906
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can now efficiently compute the length of a longest path in an arbitrary DAG, but we do not yet know how to convert "
+            },
+            {
+              "type": "text",
+              "content": "LONGESTPATH",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " into an algorithm that will construct this longest path. In the next section, we will use the Longest Common Subsequence Problem to explain how to construct a longest path in a DAG."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 7,
+          "bbox": [
+            0.016,
+            0.455,
+            0.107,
+            0.471
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "PAGE 284"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.5,
+            0.946,
+            0.534,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "250"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 275,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.435,
+            0.065,
+            0.858,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.319,
+            0.112,
+            0.646,
+            0.132
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Backtracking in the Alignment Graph"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.1,
+            0.148,
+            0.872,
+            0.278
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In Figure 5.11 (bottom left), we highlighted each edge selected by "
+            },
+            {
+              "type": "text",
+              "content": "MANHATTANTOURIST",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ". To form a longest path, we simply need to find a path from source to sink formed by highlighted edges (more than one such path may exist). However, if we were to walk from source to sink along the highlighted edges, we might reach a dead end, such as the node "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 1 , 2 )"
+            },
+            {
+              "type": "text",
+              "content": " . In contrast, every path from the sink will bring us back to the source if we "
+            },
+            {
+              "type": "text",
+              "content": "backtrack",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " in the direction opposite to each highlighted edge (Figure 5.17)."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 3,
+          "bbox": [
+            0.325,
+            0.309,
+            0.639,
+            0.55
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 3,
+              "bbox": [
+                0.325,
+                0.309,
+                0.639,
+                0.55
+              ],
+              "image_path": "images/page_275_image_3.jpg",
+              "content": "```mermaid\ngraph LR\n  Start((0)) -->|1| Step1((1))\n  Step1 -->|3| Step2((3))\n  Step2 -->|2| Step3((5))\n  Step3 -->|4| Step4((9))\n  Step4 -->|0| End((9))\n  Step3 -->|2| Step7((7))\n  Step4 -->|4| Step13((13))\n  Step13 -->|2| End\n  Step3 -->|2| Step15((15))\n  Step1 -->|4| Step5((5))\n  Step5 -->|4| Step9((9))\n  Step9 -->|5| End\n  Step1 -->|3| Step4((4))\n  Step4 -->|6| Step10((10))\n  Step10 -->|7| Step17((17))\n  Step17 -->|3| Step20((20))\n  Step20 -->|4| End\n  Step1 -->|4| Step14((14))\n  Step14 -->|6| End\n  Step20 -->|2| Step22((22))\n  Step22 -->|0| End\n  Step20 -->|5| Step22\n  Step22 -->|8| Step30((30))\n  Step30 -->|2| End\n  Step30 -->|2| Step32((32))\n  Step32 -->|2| End\n  End --> End\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 4,
+              "bbox": [
+                0.155,
+                0.561,
+                0.808,
+                0.596
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 5.17 Following edges from the sink backwards to the source produces the red path in the DAG above, which highlights a longest path from the source to sink."
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.101,
+            0.629,
+            0.865,
+            0.776
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can use this backtracking idea to construct an LCS of strings v and w. We know that if we assign a weight of 1 to the edges in ALIGNMENTGRAPH "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( v , w )"
+            },
+            {
+              "type": "text",
+              "content": " corresponding to matches and assign a weight of 0 to all other edges, then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "s _ { | v | ,   | w | }"
+            },
+            {
+              "type": "text",
+              "content": " gives the length of an LCS. The following algorithm maintains a record of which edge in ALIGNMENTGRAPH "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( v , w )"
+            },
+            {
+              "type": "text",
+              "content": " was used to compute each value "
+            },
+            {
+              "type": "equation_inline",
+              "content": "s _ { i , j }"
+            },
+            {
+              "type": "text",
+              "content": " by utilizing backtrack"
+            },
+            {
+              "type": "text",
+              "content": "ing pointers",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", which take one of the three values "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\mathrm { ~  ~ { ~  ~ } ~ } } , { \\mathrm { ~  ~ { ~  ~ } ~ } } , { \\mathrm { ~ o r ~ \\textquotedblleft ~ { ~  ~ } ~ } } \\rangle"
+            },
+            {
+              "type": "text",
+              "content": " . Backtracking pointers are stored in a matrix Backtrack."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.128,
+            0.794,
+            0.833,
+            0.836
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "STOP and Think:",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " How does changing the order of the three "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\text{\" }  if  \\text{\" }"
+            },
+            {
+              "type": "text",
+              "content": " statements in the "
+            },
+            {
+              "type": "text",
+              "content": "LCSBACKTRACK",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " pseudocode affect the computation of Backtrack?"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 7,
+          "bbox": [
+            0.889,
+            0.785,
+            0.967,
+            0.846
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 7,
+              "bbox": [
+                0.889,
+                0.785,
+                0.967,
+                0.846
+              ],
+              "image_path": "images/page_275_image_7.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.465,
+            0.946,
+            0.496,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "251"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 276,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 5"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.164,
+            0.114,
+            0.574,
+            0.509
+          ],
+          "content": [
+            {
+              "type": "algorithm_body",
+              "index": 1,
+              "bbox": [
+                0.164,
+                0.114,
+                0.574,
+                0.509
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "LCSBACKTRACK(v, w)\n    for "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "i \\leftarrow 0"
+                },
+                {
+                  "type": "text",
+                  "content": " to "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "|v|"
+                },
+                {
+                  "type": "text",
+                  "content": "\n        "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "s_{i,0} \\leftarrow 0"
+                },
+                {
+                  "type": "text",
+                  "content": "\n    for "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "j \\leftarrow 0"
+                },
+                {
+                  "type": "text",
+                  "content": " to "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "|w|"
+                },
+                {
+                  "type": "text",
+                  "content": "\n        "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "s_{0,j} \\leftarrow 0"
+                },
+                {
+                  "type": "text",
+                  "content": "\n    for "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "i \\leftarrow 1"
+                },
+                {
+                  "type": "text",
+                  "content": " to "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "|v|"
+                },
+                {
+                  "type": "text",
+                  "content": "\n        for "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "j \\leftarrow 1"
+                },
+                {
+                  "type": "text",
+                  "content": " to "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "|w|"
+                },
+                {
+                  "type": "text",
+                  "content": "\n\n        "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "s_{i,j} \\leftarrow \\max \\begin{cases} s_{i-1,j} \\\\ s_{i,j-1} \\\\ s_{i-1,j-1} + 1, \\text{ if } v_i = w_j \\end{cases}"
+                },
+                {
+                  "type": "text",
+                  "content": "\n\n        if "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "s_{i,j} = s_{i-1,j}"
+                },
+                {
+                  "type": "text",
+                  "content": "\n            "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Backtrack_{i,j} \\leftarrow '' \\downarrow''"
+                },
+                {
+                  "type": "text",
+                  "content": "\n    else if "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "s_{i,j} = s_{i,j-1}"
+                },
+                {
+                  "type": "text",
+                  "content": "\n        "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Backtrack_{i,j} \\leftarrow '' \\rightarrow''"
+                },
+                {
+                  "type": "text",
+                  "content": "\n    else if "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "s_{i,j} = s_{i-1,j-1} + 1"
+                },
+                {
+                  "type": "text",
+                  "content": " and "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "v_i = w_j"
+                },
+                {
+                  "type": "text",
+                  "content": "\n        "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Backtrack_{i,j} \\leftarrow '' \\searrow''"
+                },
+                {
+                  "type": "text",
+                  "content": "\nreturn Backtrack"
+                }
+              ]
+            }
+          ],
+          "sub_type": "algorithm"
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.136,
+            0.533,
+            0.897,
+            0.639
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We now need to find a path from the source to the sink formed by the highlighted edges. The algorithm below solves the Longest Common Subsequence Problem by using the information in Backtrack. "
+            },
+            {
+              "type": "text",
+              "content": "OUTPUTLCS",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "(Backtrack, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "v , i , j )"
+            },
+            {
+              "type": "text",
+              "content": " outputs an LCS between the i-prefix of v and the j-prefix of w. The initial invocation that outputs an LCS of v and w is "
+            },
+            {
+              "type": "text",
+              "content": "OUTPUTLCS",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "(Backtrack, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "v , | v | , | w | )"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.164,
+            0.659,
+            0.549,
+            0.873
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.164,
+                0.659,
+                0.549,
+                0.873
+              ],
+              "content": "OUTPUTLCS(Backtrack, v, i, j)\n    if i = 0 or j = 0\n        return\n    if Backtrack_{i,j} = ↓\n        OUTPUTLCS(Backtrack, v, i - 1, j)\n    else if Backtrack_{i,j} = →\n        OUTPUTLCS(Backtrack, v, i, j - 1)\n    else\n        OUTPUTLCS(Backtrack, v, i - 1, j - 1)\n        output v_i"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "matlab"
+        },
+        {
+          "type": "image",
+          "index": 4,
+          "bbox": [
+            0.031,
+            0.731,
+            0.11,
+            0.796
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 4,
+              "bbox": [
+                0.031,
+                0.731,
+                0.11,
+                0.796
+              ],
+              "image_path": "images/page_276_image_4.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 5,
+          "bbox": [
+            0.5,
+            0.946,
+            0.534,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "252"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 277,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.434,
+            0.065,
+            0.858,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.128,
+            0.112,
+            0.833,
+            0.175
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "STOP and Think: OUTPUTLCS",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " is a recursive algorithm, but it is efficient. What makes it different from the inefficient recursive algorithms for making change and finding a longest path in a DAG?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.1,
+            0.197,
+            0.862,
+            0.239
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The backtracking method can be generalized to construct a longest path in any DAG. Whenever we compute "
+            },
+            {
+              "type": "equation_inline",
+              "content": "s _ { b }"
+            },
+            {
+              "type": "text",
+              "content": " as"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.217,
+            0.256,
+            0.745,
+            0.286
+          ],
+          "image_path": "images/page_277_equation_3.jpg",
+          "content": "s _ {b} = \\max _ {\\text { all   predecessors   } a \\text {   of   node   } b} \\{s _ {a} + \\text { weight   of   edge   from   } a \\text {   to   } b \\},"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.1,
+            0.301,
+            0.861,
+            0.364
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "we simply need to store a predecessor of b that was used in the computation of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "s _ { b }"
+            },
+            {
+              "type": "text",
+              "content": " so that we can backtrack later on. You are now ready to use backtracking to find the longest path in an arbitrary DAG."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.128,
+            0.386,
+            0.835,
+            0.429
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "EXERCISE BREAK:",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " Currently, "
+            },
+            {
+              "type": "text",
+              "content": "OUTPUTLCS",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " finds a single LCS of two strings. Modify "
+            },
+            {
+              "type": "text",
+              "content": "OUTPUTLCS",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " (and "
+            },
+            {
+              "type": "text",
+              "content": "LCSBACKTRACK",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ") to find every LCS of two strings."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.395,
+            0.474,
+            0.567,
+            0.493
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Scoring Alignments"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.51,
+            0.473,
+            0.529
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "What is wrong with the LCS scoring model?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.101,
+            0.542,
+            0.859,
+            0.581
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Recall Marahiel’s alignment of the A-domains coding for Asp and Orn, which had "
+            },
+            {
+              "type": "text",
+              "content": "19",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " + "
+            },
+            {
+              "type": "text",
+              "content": "10",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " matches:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.132,
+            0.605,
+            0.831,
+            0.625
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": "AFD",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "LGYTCMFPV"
+            },
+            {
+              "type": "text",
+              "content": "LL",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "G"
+            },
+            {
+              "type": "text",
+              "content": "GG",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "ELHIVQKETYTAPDEIAHY"
+            },
+            {
+              "type": "text",
+              "content": "IK",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "EHG"
+            },
+            {
+              "type": "text",
+              "content": "IT",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "YIKL"
+            },
+            {
+              "type": "text",
+              "content": "TP",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "SLFHTIVNTASFAFDANFESLRLIVLGGEKIIPIDVIAFRKMYGHTE-FINH"
+            },
+            {
+              "type": "text",
+              "content": "YG",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "P"
+            },
+            {
+              "type": "text",
+              "content": "TEA",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "TIGA -"
+            },
+            {
+              "type": "text",
+              "content": "AFD",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "VSAGDFARA"
+            },
+            {
+              "type": "text",
+              "content": "LL",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "T"
+            },
+            {
+              "type": "text",
+              "content": "GG",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "QLIVCPNEVKMDPASLYAI"
+            },
+            {
+              "type": "text",
+              "content": "IK",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "KYD"
+            },
+            {
+              "type": "text",
+              "content": "IT",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "IFEA"
+            },
+            {
+              "type": "text",
+              "content": "TP",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "ALVIPLMEYI-YEQKLDISQLQILIVGSDSCSMEDFKTLVSRFGSTIRIVNS"
+            },
+            {
+              "type": "text",
+              "content": "YG",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "V"
+            },
+            {
+              "type": "text",
+              "content": "TEA",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "CIDS"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.101,
+            0.648,
+            0.86,
+            0.774
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It is not difficult to construct an alignment having even more matches at the expense of introducing more indels. Yet the more indels we add, the less biologically relevant the alignment becomes, as it diverges further and further from the biologically correct alignment found by Marahiel. Below is the alignment with the maximum number of matches, representing an LCS of length "
+            },
+            {
+              "type": "equation_inline",
+              "content": "19+8+19=46."
+            },
+            {
+              "type": "text",
+              "content": " . This alignment is so long that we cannot fit it on a single line."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.13,
+            0.795,
+            0.835,
+            0.863
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": "AFD",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "L--G-YTCMFP--V"
+            },
+            {
+              "type": "text",
+              "content": "LL",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "-"
+            },
+            {
+              "type": "text",
+              "content": "GG",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "GELH"
+            },
+            {
+              "type": "text",
+              "content": "IV",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "---Q-K-E--T-YTAPDEIAHY"
+            },
+            {
+              "type": "text",
+              "content": "IK",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "--EHG"
+            },
+            {
+              "type": "text",
+              "content": "IT",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "YI---KL"
+            },
+            {
+              "type": "text",
+              "content": "TP",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "SL-FHT -"
+            },
+            {
+              "type": "text",
+              "content": "AFD",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "VSAGD----FARA-"
+            },
+            {
+              "type": "text",
+              "content": "LL",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "T"
+            },
+            {
+              "type": "text",
+              "content": "GG",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "-QL-"
+            },
+            {
+              "type": "text",
+              "content": "IV",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "CPNEVKMDPASLY-A---I---"
+            },
+            {
+              "type": "text",
+              "content": "IK",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "KYD--"
+            },
+            {
+              "type": "text",
+              "content": "IT",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "-IFEA--"
+            },
+            {
+              "type": "text",
+              "content": "TP",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "ALV--- IVNTASFAFDANFE-----S-LR-"
+            },
+            {
+              "type": "text",
+              "content": "LIV",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "LGG-----EKIIPIDVIAFRK-M---YGHTEFI---NH"
+            },
+            {
+              "type": "text",
+              "content": "YG",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "P"
+            },
+            {
+              "type": "text",
+              "content": "TEA",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "TIGA IPLMEYIY-----EQKLDISQLQI"
+            },
+            {
+              "type": "text",
+              "content": "LIV",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "-GSDSCSME-----D---F-KTLVSRFGST--IRIVNS"
+            },
+            {
+              "type": "text",
+              "content": "YG",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "V"
+            },
+            {
+              "type": "text",
+              "content": "TEA",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "CIDS"
+            }
+          ]
+        },
+        {
+          "type": "aside_text",
+          "index": 12,
+          "bbox": [
+            0.889,
+            0.114,
+            0.967,
+            0.175
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "STOP"
+            }
+          ]
+        },
+        {
+          "type": "aside_text",
+          "index": 13,
+          "bbox": [
+            0.889,
+            0.301,
+            0.966,
+            0.363
+          ],
+          "content": [
+            {
+              "type": "hyperlink",
+              "url": "http://rosalind.info/problems/5d",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "5D"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 14,
+          "bbox": [
+            0.465,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "253"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 278,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.066,
+            0.259,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 5"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 1,
+          "bbox": [
+            0.031,
+            0.103,
+            0.11,
+            0.165
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 1,
+              "bbox": [
+                0.031,
+                0.103,
+                0.11,
+                0.165
+              ],
+              "image_path": "images/page_278_image_1.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.163,
+            0.112,
+            0.873,
+            0.155
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "STOP and Think:",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " If Marahiel had constructed this alignment, would he have been able to infer the eight amino acid-long signatures of the non-ribosomal code?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.136,
+            0.177,
+            0.897,
+            0.263
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Below, we highlight the purple amino acids representing the non-ribosomal signatures. Although these signatures are grouped in eight conserved columns in Marahiel’s alignment from the beginning of the chapter, only five of these columns have “survived” in the LCS alignment above, making it impossible to infer the non-ribosomal signatures:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 4,
+          "bbox": [
+            0.166,
+            0.274,
+            0.868,
+            0.303
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 4,
+              "bbox": [
+                0.166,
+                0.274,
+                0.868,
+                0.303
+              ],
+              "content": "YAFDL--G-YTCMFP--VLL-GGGELHIV---Q-K-E--T-YTAPDEIAHYIK--EHGITYI---KLTPSL-FHT-AFDVSAGD----FARA-LLTGG-QL-IVCPNEVKMDPASLY-A---I----IKKYD--IT-IFEA--TPALV---"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "css"
+        },
+        {
+          "type": "code",
+          "index": 5,
+          "bbox": [
+            0.166,
+            0.312,
+            0.868,
+            0.34
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 5,
+              "bbox": [
+                0.166,
+                0.312,
+                0.868,
+                0.34
+              ],
+              "content": "IVNTASFAFDANFE-----S-LR-LIVLGG-----EKIIPIDVIAFRK-M---YGHTEFI---NHYGPTEATIGA\nIPLMEYIY-----EQKLDISQLQILIV-GSDSCSME-----D---F-KTLVSRFGST--IRIVNSYGVTEACIDS"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.136,
+            0.354,
+            0.897,
+            0.503
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The frivolous matches hiding the real evolutionary scenario have appeared because nothing stopped us from introducing an excessive number of indels when building an LCS. Recalling our original alignment game in which we rewarded matched symbols, we need some way of penalizing indels and mismatches. First, let’s handle indels. Say that in addition to assigning matches a premium of +1, we assess each indel a penalty of - 4. The top-scoring alignment of the A-domains gets closer to the biologically correct alignment, with six of the columns corresponding to correctly aligned signatures."
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 7,
+          "bbox": [
+            0.17,
+            0.515,
+            0.861,
+            0.544
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 7,
+              "bbox": [
+                0.17,
+                0.515,
+                0.861,
+                0.544
+              ],
+              "content": "YAFDLGYTCMFP-VLL-GGGELHIV-QKETYTAPDEI-AHYIKEHGITYI-KLTPSLFHTIVNTASFAFDANFE-AFDVS-AGDFARALLTGG-QL-IVCPNEVKMDPASLYA-IIKKYDIT-IFEATPAL--VIPLME-YIYEQKLD"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "powershell"
+        },
+        {
+          "type": "code",
+          "index": 8,
+          "bbox": [
+            0.171,
+            0.553,
+            0.631,
+            0.581
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 8,
+              "bbox": [
+                0.171,
+                0.553,
+                0.631,
+                0.581
+              ],
+              "content": "-S-LR-LIVLGGEKIIPIDVIAFRKM---YGHTE-FINHYGPTEATIGA\nISQLQILIV-GSDSC-SME--DFKTLVSRFGSTIRIVNSYGVTEACIDS"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.138,
+            0.61,
+            0.283,
+            0.628
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Scoring matrices"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.136,
+            0.641,
+            0.896,
+            0.725
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To generalize the alignment scoring model, we still award +1 for matches, but we also penalize mismatches by some positive constant µ (the "
+            },
+            {
+              "type": "text",
+              "content": "mismatch penalty",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ") and indels by some positive constant s (the "
+            },
+            {
+              "type": "text",
+              "content": "indel penalty",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "). As a result, the "
+            },
+            {
+              "type": "text",
+              "content": "score",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " of an alignment is equal to"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.322,
+            0.742,
+            0.712,
+            0.761
+          ],
+          "image_path": "images/page_278_equation_11.jpg",
+          "content": "\\# \\text {matches} - \\mu \\cdot \\# \\text {mismatches} - \\sigma \\cdot \\# \\text {indels}."
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.136,
+            0.778,
+            0.895,
+            0.819
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For example, with the parameters "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu   =   1"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma   =   2 ,"
+            },
+            {
+              "type": "text",
+              "content": " , the alignment below will be assigned a score of -4:"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 13,
+          "bbox": [
+            0.365,
+            0.835,
+            0.668,
+            0.896
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 13,
+              "bbox": [
+                0.365,
+                0.835,
+                0.668,
+                0.896
+              ],
+              "image_path": "images/page_278_image_13.jpg",
+              "content": "A T - G T T A T A\nA T C G T - C - C\n+1 +1 -2 +1 +1 -2 -1 -2 -1"
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "page_number",
+          "index": 14,
+          "bbox": [
+            0.5,
+            0.946,
+            0.534,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "254"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 279,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.434,
+            0.065,
+            0.858,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.101,
+            0.112,
+            0.862,
+            0.26
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Biologists have further refined this cost function to allow for the fact that some mutations may be more likely than others, which calls for mismatches and indel penalties that differ depending on the specific symbols involved. We will extend the k-letter alphabet to include the space symbol and then construct a "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( k + 1 ) \\times ( k + 1 )"
+            },
+            {
+              "type": "text",
+              "content": " "
+            },
+            {
+              "type": "text",
+              "content": "scoring matrix",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " Score holding the score of aligning every pair of symbols. The scoring matrix for comparing DNA sequences "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( k = 4 )"
+            },
+            {
+              "type": "text",
+              "content": " when all mismatches are penalized by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": " and all indels are penalized by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma"
+            },
+            {
+              "type": "text",
+              "content": " is shown below."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 2,
+          "bbox": [
+            0.367,
+            0.275,
+            0.596,
+            0.4
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 2,
+              "bbox": [
+                0.367,
+                0.275,
+                0.596,
+                0.4
+              ],
+              "image_path": "images/page_279_table_2.jpg",
+              "content": "<table><tr><td></td><td>A</td><td>C</td><td>G</td><td>T</td><td>-</td></tr><tr><td>A</td><td>+1</td><td>-μ</td><td>-μ</td><td>-μ</td><td>-σ</td></tr><tr><td>C</td><td>-μ</td><td>+1</td><td>-μ</td><td>-μ</td><td>-σ</td></tr><tr><td>G</td><td>-μ</td><td>-μ</td><td>+1</td><td>-μ</td><td>-σ</td></tr><tr><td>T</td><td>-μ</td><td>-μ</td><td>-μ</td><td>+1</td><td>-σ</td></tr><tr><td>-</td><td>-σ</td><td>-σ</td><td>-σ</td><td>-σ</td><td></td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.101,
+            0.414,
+            0.861,
+            0.499
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Although scoring matrices for DNA sequence comparison are usually defined only by the parameters "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ,"
+            },
+            {
+              "type": "text",
+              "content": " scoring matrices for protein sequence comparison weight different mutations differently and become quite involved (see DETOUR: PAM Scor"
+            },
+            {
+              "type": "text",
+              "content": "ing Matrices",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ")."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 4,
+          "bbox": [
+            0.871,
+            0.45,
+            0.984,
+            0.484
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 4,
+              "bbox": [
+                0.871,
+                0.45,
+                0.984,
+                0.484
+              ],
+              "image_path": "images/page_279_image_4.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.34,
+            0.544,
+            0.622,
+            0.563
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "From Global to Local Alignment"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.103,
+            0.58,
+            0.257,
+            0.599
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Global alignment"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.101,
+            0.611,
+            0.861,
+            0.655
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "You should now be ready to modify the alignment graph to solve a generalized form of the alignment problem that takes a scoring matrix as input."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.131,
+            0.688,
+            0.391,
+            0.706
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Global Alignment Problem:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.131,
+            0.709,
+            0.766,
+            0.73
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Find a highest-scoring alignment of two strings as defined by a scoring matrix."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.17,
+            0.741,
+            0.578,
+            0.76
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Input",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ": Two strings and a scoring matrix Score."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.17,
+            0.762,
+            0.834,
+            0.803
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Output",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ": An alignment of the strings whose alignment score (as defined by Score) is maximized among all possible alignments of the strings."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 12,
+          "bbox": [
+            0.889,
+            0.718,
+            0.967,
+            0.782
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 12,
+              "bbox": [
+                0.889,
+                0.718,
+                0.967,
+                0.782
+              ],
+              "image_path": "images/page_279_image_12.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.101,
+            0.837,
+            0.861,
+            0.88
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To solve the Global Alignment Problem, we still must find a longest path in the alignment graph after updating the edge weights to reflect the values in the scoring matrix"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 14,
+          "bbox": [
+            0.464,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "255"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 280,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.066,
+            0.256,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 5"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.112,
+            0.897,
+            0.198
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(Figure 5.18). Recalling that deletions correspond to vertical edges (#), insertions correspond to horizontal edges (!), and matches/mismatches correspond to diagonal edges "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( \\searrow / \\searrow )"
+            },
+            {
+              "type": "text",
+              "content": " , we obtain the following recurrence for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "s _ { i , j } ,"
+            },
+            {
+              "type": "text",
+              "content": " the length of a longest path from (0, 0) to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( i , j )"
+            },
+            {
+              "type": "text",
+              "content": " :"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "equation",
+          "index": 2,
+          "bbox": [
+            0.35,
+            0.211,
+            0.677,
+            0.281
+          ],
+          "image_path": "images/page_280_equation_2.jpg",
+          "content": "s _ {i, j} = \\max \\left\\{ \\begin{array}{l l} s _ {i - 1, j} & + S c o r e (v _ {i}, -) \\\\ s _ {i, j - 1} & + S c o r e (-, w _ {j}) \\\\ s _ {i - 1, j - 1} & + S c o r e (v _ {i}, w _ {j}). \\end{array} \\right."
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.297,
+            0.895,
+            0.339
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "When the match reward is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "+ 1 ,"
+            },
+            {
+              "type": "text",
+              "content": " , the mismatch penalty is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu ,"
+            },
+            {
+              "type": "text",
+              "content": " and the indel penalty is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma ,"
+            },
+            {
+              "type": "text",
+              "content": " the alignment recurrence can be written as follows:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.346,
+            0.354,
+            0.685,
+            0.444
+          ],
+          "image_path": "images/page_280_equation_4.jpg",
+          "content": "s _ {i, j} = \\max \\left\\{ \\begin{array}{l l} s _ {i - 1, j} & - \\sigma \\\\ s _ {i, j - 1} & - \\sigma \\\\ s _ {i - 1, j - 1} + 1, & \\text {if} v _ {i} = w _ {j} \\\\ s _ {i - 1, j - 1} - \\mu , & \\text {if} v _ {i} \\neq w _ {j}. \\end{array} \\right."
+        },
+        {
+          "type": "image",
+          "index": 5,
+          "bbox": [
+            0.348,
+            0.474,
+            0.688,
+            0.786
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 5,
+              "bbox": [
+                0.348,
+                0.474,
+                0.688,
+                0.786
+              ],
+              "image_path": "images/page_280_image_5.jpg",
+              "content": "```mermaid\ngraph LR\n  T[\"T\"] -->|\"T\\n-σ\"| C[\"C\"]\n  C -->|\"C\\n-σ\"| G[\"G\"]\n  G -->|\"G\\n-σ\"| T[\"T\"]\n  T -->|\"T\\n-σ\"| A[\"A\"]\n  A -->|\"A\\n-σ\"| C\n  C -->|\"C\\n-μ\"| G\n  G -->|\"G\\n-μ\"| C\n  C -->|\"G\\n-σ\"| T\n  T -->|\"T\\n-σ\"| A\n  A -->|\"T\\n-σ\"| C\n  C -->|\"C\\n-σ\"| G\n  G -->|\"C\\n-σ\"| T\n  T -->|\"C\\n-μ\"| A\n  A -->|\"C\\n-μ\"| C\n  C -->|\"C\\n-σ\"| G\n  G -->|\"C\\n-σ\"| T\n  T -->|\"C\\n-σ\"| A\n  A -->|\"C\\n-σ\"| C\n  C -->|\"G\"| G\n  G -->|\"G\"| T\n  T -->|\"G\"| C\n  T -->|\"G\"| G\n  G -->|\"G\"| C\n  C -->|\"G\"| A\n  A -->|\"G\"| C\n  G -->|\"G\"| A\n  A -->|\"G\"| C\n  G -->|\"G\"| A\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 6,
+              "bbox": [
+                0.19,
+                0.796,
+                0.842,
+                0.832
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 5.18 ALIGNMENTGRAPH(TGTTA, TCGT), with each edge colored according to whether it represents a match, mismatch, insertion, or deletion."
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "page_number",
+          "index": 7,
+          "bbox": [
+            0.5,
+            0.944,
+            0.534,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "256"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 281,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.434,
+            0.065,
+            0.858,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.103,
+            0.112,
+            0.373,
+            0.132
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Limitations of global alignment"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.1,
+            0.143,
+            0.862,
+            0.269
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Analysis of "
+            },
+            {
+              "type": "text",
+              "content": "homeobox genes",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " offers an example of a problem for which global alignment may fail to reveal biologically relevant similarities. These genes regulate embryonic development and are present in a large variety of species, from flies to humans. Homeobox genes are long, and they differ greatly between species, but an approximately 60 amino acid-long region in each gene, called the "
+            },
+            {
+              "type": "text",
+              "content": "homeodomain",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", is highly conserved. For instance, consider the mouse and human homeodomains below."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.451,
+            0.289,
+            0.513,
+            0.304
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Mouse"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "list",
+          "index": 4,
+          "bbox": [
+            0.139,
+            0.306,
+            0.831,
+            0.337
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.14,
+                0.306,
+                0.829,
+                0.321
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "..."
+                },
+                {
+                  "type": "text",
+                  "content": "AR",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": "RSRTHFTKFQTDILIE"
+                },
+                {
+                  "type": "text",
+                  "content": "AFE",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": "KNR"
+                },
+                {
+                  "type": "text",
+                  "content": "FP",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": "GIV"
+                },
+                {
+                  "type": "text",
+                  "content": "TR",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": "E"
+                },
+                {
+                  "type": "text",
+                  "content": "KLA",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": "Q"
+                },
+                {
+                  "type": "text",
+                  "content": "QTG",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": "IP"
+                },
+                {
+                  "type": "text",
+                  "content": "ESRI",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": "HI"
+                },
+                {
+                  "type": "text",
+                  "content": "WFQ",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": "NRRARHPDPG..."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.14,
+                0.322,
+                0.829,
+                0.337
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "..."
+                },
+                {
+                  "type": "text",
+                  "content": "AR",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": "QKQTFITWTQKNRLVQ"
+                },
+                {
+                  "type": "text",
+                  "content": "AFE",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": "RNP"
+                },
+                {
+                  "type": "text",
+                  "content": "FP",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": "DTA"
+                },
+                {
+                  "type": "text",
+                  "content": "TR",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": "K"
+                },
+                {
+                  "type": "text",
+                  "content": "KLA",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": "E"
+                },
+                {
+                  "type": "text",
+                  "content": "QTG",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": "LQ"
+                },
+                {
+                  "type": "text",
+                  "content": "ESRI",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": "QM"
+                },
+                {
+                  "type": "text",
+                  "content": "WFQ",
+                  "styles": [
+                    "bold"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": "KQRSLYLKKS..."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.451,
+            0.34,
+            0.518,
+            0.355
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Human"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.1,
+            0.375,
+            0.862,
+            0.522
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The immediate question is how to find this conserved segment within the much longer genes and ignore the flanking areas, which exhibit little similarity. Global alignment seeks similarities between two strings across their entire length; however, when searching for homeodomains, we are looking for smaller, local regions of similarity and do not need to align the entire strings. For example, the global alignment below has 22 matches, 18 indels, and 2 mismatches, resulting in the score 22 \u0000 18 \u0000 2 = 2 (if s = µ = 1):"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.21,
+            0.538,
+            0.738,
+            0.573
+          ],
+          "image_path": "images/page_281_equation_9.jpg",
+          "content": "\\begin{array}{l} \\text {GCC - C - AGTC - TATGT - CAGGGGGCACG--A - GCATGCACA-} \\\\ \\text {GCCGCC - GTCGT - T - TTCAG----CA - GTTATGT - T - CAGAT} \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.1,
+            0.588,
+            0.861,
+            0.648
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "However, these sequences can be aligned differently (with 17 matches and 32 indels) based on a highly conserved interval represented by the substrings CAGTCTATGTCAG and CAGTTATGTTCAG:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.168,
+            0.666,
+            0.78,
+            0.701
+          ],
+          "image_path": "images/page_281_equation_11.jpg",
+          "content": "\\begin{array}{l} \\text {---G---C---C--CAGTCTATG-TCAGGGGGCACGAGCATGCACA} \\\\ \\text {GCCGCCGTCGTTTTCAGCAGT-TATGTTCAG----A----T----} \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.1,
+            0.715,
+            0.859,
+            0.775
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This alignment has fewer matches and a lower score of 17 \u0000 32 = \u000015, even though the conserved region of the alignment contributes a score of 12 \u0000 2 = 10, which is hardly an accident."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.1,
+            0.78,
+            0.861,
+            0.884
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Figure 5.19 shows the two alignment paths corresponding to these two different alignments. The upper path, corresponding to the second alignment above, loses out because it contains many heavily penalized indels on either side of the diagonal corresponding to the conserved interval. As a result, global alignment outputs the biologically irrelevant lower path."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 14,
+          "bbox": [
+            0.464,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "257"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 282,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 5"
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 1,
+          "bbox": [
+            0.219,
+            0.106,
+            0.819,
+            0.598
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 1,
+              "bbox": [
+                0.219,
+                0.106,
+                0.819,
+                0.598
+              ],
+              "image_path": "images/page_282_chart_1.jpg",
+              "content": "| Nucleotide Position | Alignment Type |\n| --- | --- |\n| G | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 2,
+              "bbox": [
+                0.19,
+                0.613,
+                0.842,
+                0.667
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 5.19 Global and local alignments of two DNA strings that share a highly conserved interval. The relevant alignment that captures this interval (upper path) loses to an irrelevant alignment (lower path), since the former incurs heavy indel penalties."
+                }
+              ]
+            }
+          ],
+          "sub_type": "line"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.136,
+            0.704,
+            0.897,
+            0.81
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "When biologically significant similarities are present in some parts of sequences v and w and absent from others, biologists attempt to ignore global alignment and instead align substrings of v and w, which yields a "
+            },
+            {
+              "type": "text",
+              "content": "local alignment",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " of the two strings. The problem of finding substrings that maximize the global alignment score over all substrings of v and w is called the "
+            },
+            {
+              "type": "text",
+              "content": "Local Alignment Problem",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 4,
+          "bbox": [
+            0.5,
+            0.944,
+            0.534,
+            0.96
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "258"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 283,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.435,
+            0.065,
+            0.858,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.132,
+            0.129,
+            0.376,
+            0.147
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Local Alignment Problem:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.132,
+            0.15,
+            0.628,
+            0.169
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Find the highest-scoring local alignment between two strings."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.17,
+            0.182,
+            0.662,
+            0.2
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Input",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ": Strings v and w as well as a scoring matrix Score."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.17,
+            0.203,
+            0.834,
+            0.245
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Output",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ": Substrings of v and w whose global alignment score (as defined by Score) is maximized among all substrings of v and w."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.1,
+            0.278,
+            0.862,
+            0.364
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The straightforward way to solve the Local Alignment Problem is to find the longest path connecting every pair of nodes in the alignment graph (rather than just those connecting the source and sink, as in the Global Alignment Problem), and then to select the path having maximum weight over all these longest paths."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.129,
+            0.384,
+            0.631,
+            0.406
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "STOP and Think:",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " What is the runtime of this approach?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.438,
+            0.421,
+            0.459
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Free taxi rides in the alignment graph"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.1,
+            0.469,
+            0.862,
+            0.659
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For a faster local alignment approach, imagine a “free taxi ride” from the source (0, 0) to the node representing the start node of the conserved (red) interval in Figure 5.19. Imagine also a free taxi ride from the end node of the conserved interval to the sink. If such rides were available (Figure 5.20), then you could reach the starting node of the conserved interval for free, instead of incurring heavy penalties as in global alignment. Then, you could travel along the conserved interval to its end node, accumulating positive match scores. Finally, you could take another free ride from the end node of the conserved interval to the sink. The resulting score of this ride is equal to the alignment score of only the conserved intervals, as desired."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.1,
+            0.661,
+            0.861,
+            0.766
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Connecting the source (0, 0) to every other node by adding a zero-weight edge and connecting every node to the sink "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( n , m )"
+            },
+            {
+              "type": "text",
+              "content": " by a zero-weight edge will result in a DAG perfectly suited for solving the Local Alignment Problem (Figure 5.21). Because of free taxi rides, we no longer need to construct a longest path between every pair of nodes in the graph — the longest path from source to sink yields an optimal local alignment!"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.1,
+            0.768,
+            0.862,
+            0.875
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The total number of edges in the graph in Figure 5.21 is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { O } ( | v | \\cdot | w | )"
+            },
+            {
+              "type": "text",
+              "content": " , which is still small. Since the runtime of finding a longest path in a DAG is defined by the number of edges in the graph, the resulting local alignment algorithm will be fast. As for computing the values "
+            },
+            {
+              "type": "equation_inline",
+              "content": "s _ { i , j } ,"
+            },
+            {
+              "type": "text",
+              "content": " adding zero-weight edges from (0, 0) to every node has made the source node "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , 0 )"
+            },
+            {
+              "type": "text",
+              "content": " a predecessor of every node "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( i , j )"
+            },
+            {
+              "type": "text",
+              "content": " . Therefore, there are now four"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 11,
+          "bbox": [
+            0.889,
+            0.364,
+            0.967,
+            0.426
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 11,
+              "bbox": [
+                0.889,
+                0.364,
+                0.967,
+                0.426
+              ],
+              "image_path": "images/page_283_image_11.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 12,
+          "bbox": [
+            0.465,
+            0.946,
+            0.499,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "259"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 284,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.066,
+            0.256,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 5"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.136,
+            0.112,
+            0.895,
+            0.152
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "edges entering "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( i , j )"
+            },
+            {
+              "type": "text",
+              "content": " , which adds only one new term to the longest path recurrence relation:"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.031,
+            0.179,
+            0.11,
+            0.242
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.031,
+                0.179,
+                0.11,
+                0.242
+              ],
+              "image_path": "images/page_284_image_2.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.348,
+            0.169,
+            0.66,
+            0.258
+          ],
+          "image_path": "images/page_284_equation_3.jpg",
+          "content": "s _ {i, j} = \\max \\left\\{ \\begin{array}{l l} 0 \\\\ s _ {i - 1, j} & + S c o r e (v _ {i}, -) \\\\ s _ {i, j - 1} & + S c o r e (-, w _ {j}) \\\\ s _ {i - 1, j - 1} & + S c o r e (v _ {i}, w _ {j}) \\end{array} \\right."
+        },
+        {
+          "type": "chart",
+          "index": 4,
+          "bbox": [
+            0.221,
+            0.309,
+            0.816,
+            0.786
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 4,
+              "bbox": [
+                0.221,
+                0.309,
+                0.816,
+                0.786
+              ],
+              "image_path": "images/page_284_chart_4.jpg",
+              "content": "| Position | Sequence |\n| --- | --- |\n| 1 | G |\n| 2 | C |\n| 3 | C |\n| 4 | C |\n| 5 | C |\n| 6 | A |\n| 7 | G |\n| 8 | T |\n| 9 | C |\n| 10 | T |\n| 11 | A |\n| 12 | T |\n| 13 | G |\n| 14 | T |\n| 15 | C |\n| 16 | A |\n| 17 | G |\n| 18 | G |\n| 19 | G |\n| 20 | G |\n| 21 | G |\n| 22 | C |\n| 23 | A |\n| 24 | C |\n| 25 | G |\n| 26 | A |\n| 27 | G |\n| 28 | A |\n| 29 | G |\n| 30 | C |\n| 31 | A |\n| 32 | T |\n| 33 | G |\n| 34 | C |\n| 35 | A |\n| 36 | C |\n| 37 | A |\n| 38 | C |\n| 39 | A |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 5,
+              "bbox": [
+                0.19,
+                0.804,
+                0.845,
+                0.873
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 5.20 Modifying Figure 5.19 by adding “free taxi ride” edges (having weight 0) connecting the source to the start node of the conserved interval and connecting the end node of the conserved interval to the sink. These new edges allow us to score only the local alignment containing the conserved interval."
+                }
+              ]
+            }
+          ],
+          "sub_type": "line"
+        },
+        {
+          "type": "page_number",
+          "index": 6,
+          "bbox": [
+            0.5,
+            0.944,
+            0.534,
+            0.958
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "260"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 285,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.434,
+            0.065,
+            0.858,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.101,
+            0.113,
+            0.859,
+            0.155
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Also, because node "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( n , m )"
+            },
+            {
+              "type": "text",
+              "content": " now has every other node as a predecessor, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "s _ { n , m }"
+            },
+            {
+              "type": "text",
+              "content": " will be equal to the largest value of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "s _ { i , j }"
+            },
+            {
+              "type": "text",
+              "content": " over the entire alignment graph."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.328,
+            0.184,
+            0.637,
+            0.374
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.328,
+                0.184,
+                0.637,
+                0.374
+              ],
+              "image_path": "images/page_285_image_2.jpg",
+              "content": "This diagram illustrates a network flow or data processing workflow, showing multiple input nodes connected by directional arrows to produce output nodes via directional arrows."
+            },
+            {
+              "type": "image_caption",
+              "index": 3,
+              "bbox": [
+                0.155,
+                0.386,
+                0.808,
+                0.454
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "FIGURE 5.21 The local alignment algorithm introduces zero-weight edges (shown by blue dashed lines) connecting the source (0, 0) to every other node in the alignment graph, as well as zero-weight edges (shown by red dashed lines) connecting every node to the sink node."
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.101,
+            0.485,
+            0.862,
+            0.633
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "You might still be wondering why we are allowed to free taxi rides through the alignment graph. The point is that you are in charge of designing whatever Manhattanlike DAG you like, as long as it adequately models the specific alignment problem at hand. Transformations like free taxi rides will become a common theme in this chapter. Various alignment problems can be solved by constructing an appropriate DAG with as few edges as possible (to minimize runtime), assigning edge weights to model the requirements of the problem, and then finding a longest path in this DAG."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.291,
+            0.679,
+            0.67,
+            0.699
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Changing Faces of Sequence Alignment"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.101,
+            0.715,
+            0.861,
+            0.777
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In this section, we will describe three sequence comparison problems and let you apply what you have already learned to solve them. Hint: the idea is to frame each problem as an instance of the Longest Path in a DAG Problem."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.103,
+            0.8,
+            0.216,
+            0.817
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Edit distance"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.101,
+            0.831,
+            0.862,
+            0.896
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In 1966, Vladimir Levenshtein introduced the notion of the "
+            },
+            {
+              "type": "text",
+              "content": "edit distance",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " between two strings as the minimum number of "
+            },
+            {
+              "type": "text",
+              "content": "edit operations",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " needed to transform one string into another. Here, an edit operation is the insertion, deletion, or substitution of a"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 9,
+          "bbox": [
+            0.465,
+            0.944,
+            0.496,
+            0.958
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "261"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 286,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.14,
+            0.066,
+            0.256,
+            0.082
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "C H A P T E R 5"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.112,
+            0.895,
+            0.154
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "single symbol. For example, TGCATAT can be transformed into ATCCGAT with five edit operations, implying that the edit distance between these strings is at most 5."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.257,
+            0.178,
+            0.777,
+            0.359
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.257,
+                0.178,
+                0.777,
+                0.359
+              ],
+              "image_path": "images/page_286_image_2.jpg",
+              "content": "```mermaid\ngraph TD\n  A[\"TGCATAT\"] -->|↓| B[\"TGCATA\"]\n  B -->|↓| C[\"TGCAT\"]\n  C -->|↓| D[\"ATGCAT\"]\n  D -->|↓| E[\"ATCCAT\"]\n  E -->|↓| F[\"ATCCGAT\"]\n  G[\"delete last nucleotide\"] --> H[\"delete last nucleotide\"]\n  I[\"insert A at the front\"] --> J[\"substitute G for C in the 3rd position\"]\n  K[\"insert G after the 4th position\"] --> L[\"substitute G for C in the 3rd position\"]\n  M[\"downarrow\"] --> N[\"downarrow\"]\n```"
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "image",
+          "index": 3,
+          "bbox": [
+            0.031,
+            0.375,
+            0.11,
+            0.436
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 3,
+              "bbox": [
+                0.031,
+                0.375,
+                0.11,
+                0.436
+              ],
+              "image_path": "images/page_286_image_3.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.163,
+            0.385,
+            0.869,
+            0.426
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "STOP and Think:",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " Can you transform TGCATAT into ATCCGAT using a smaller number of operations?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.45,
+            0.691,
+            0.468
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In fact, the edit distance between TGCATAT and ATCCGAT is 4:"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 6,
+          "bbox": [
+            0.257,
+            0.492,
+            0.777,
+            0.64
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 6,
+              "bbox": [
+                0.257,
+                0.492,
+                0.777,
+                0.64
+              ],
+              "image_path": "images/page_286_image_6.jpg",
+              "content": "```mermaid\ngraph TD\n  A[\"TGCATAT\"] --> B[\"↓\"]\n  C[\"ATGCATAT\"] --> D[\"↓\"]\n  E[\"ATGCAAT\"] --> F[\"↓\"]\n  G[\"ATGCGAT\"] --> H[\"↓\"]\n  I[\"ATCCGAT\"] --> J[\"↓\"]\n  K[\"insert A at the front\"] --> L[\"delete the 6th nucleotide\"]\n  M[\"substitute A for G in the 5th position\"] --> N[\"substitute G for C in the 3rd position\"]\n```"
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.673,
+            0.897,
+            0.714
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Levenshtein introduced edit distance but did not describe an algorithm for computing it, which we leave to you."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 8,
+          "bbox": [
+            0.031,
+            0.76,
+            0.11,
+            0.824
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 8,
+              "bbox": [
+                0.031,
+                0.76,
+                0.11,
+                0.824
+              ],
+              "image_path": "images/page_286_image_8.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.168,
+            0.748,
+            0.382,
+            0.765
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Edit Distance Problem:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.168,
+            0.77,
+            0.513,
+            0.79
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Find the edit distance between two strings."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.207,
+            0.802,
+            0.381,
+            0.821
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Input",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ": Two strings."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.207,
+            0.823,
+            0.636,
+            0.843
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Output",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ": The edit distance between these strings."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 13,
+          "bbox": [
+            0.5,
+            0.944,
+            0.534,
+            0.958
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "262"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 287,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.434,
+            0.065,
+            0.858,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.103,
+            0.113,
+            0.251,
+            0.131
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Fitting alignment"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.1,
+            0.143,
+            0.862,
+            0.309
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Say that we wish to compare the approximately 20,000 amino acid-long NRP synthetase from Bacillus brevis with the approximately 600 amino acid-long A-domain from Strepto myces roseosporus, the bacterium that produces the powerful antibiotic Daptomycin. We hope to find a region within the longer protein sequence v that has high similarity with all of the shorter sequence w. Global alignment will not work because it tries to align all of v to all of w; local alignment will not work because it tries to align substrings of both v and w. Thus, we have a distinct alignment application called the "
+            },
+            {
+              "type": "text",
+              "content": "Fitting Alignment Problem",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.101,
+            0.313,
+            0.861,
+            0.398
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "“Fitting” w to v requires finding a substring v"
+            },
+            {
+              "type": "text",
+              "content": "0",
+              "styles": [
+                "superscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " of v that maximizes the global alignment score between "
+            },
+            {
+              "type": "equation_inline",
+              "content": "v ^ { \\prime }"
+            },
+            {
+              "type": "text",
+              "content": " and w among all substrings of v. For example, the best global, local, and fitting alignments of v = GTAGGCTTAAGGTTA and w = TAGATA are shown below (with mismatch and indel penalties equal to 1)."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 4,
+          "bbox": [
+            0.104,
+            0.413,
+            0.859,
+            0.487
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 4,
+              "bbox": [
+                0.104,
+                0.413,
+                0.859,
+                0.487
+              ],
+              "image_path": "images/page_287_table_4.jpg",
+              "content": "<table><tr><td>Global</td><td>Local</td><td>Fitting</td></tr><tr><td>GTAGGCTTAAGGTTA</td><td>GTAGGCTTAAGGTTA</td><td>GTAGGCTTAAGGTTA</td></tr><tr><td>-TAG----A---T-A</td><td>TAGATA</td><td>TAGA--TA</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.101,
+            0.507,
+            0.859,
+            0.571
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that the optimal local alignment (with score 3) is not a valid fitting alignment. On the other hand, the score of the optimal global alignment (6 \u0000 9 = \u00003) is smaller than that of the best fitting alignment (5 \u0000 1 \u0000 2 = +2)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.132,
+            0.605,
+            0.388,
+            0.623
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Fitting Alignment Problem:"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.131,
+            0.626,
+            0.669,
+            0.646
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Construct a highest-scoring fitting alignment between two strings."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.17,
+            0.658,
+            0.66,
+            0.677
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Input",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ": Strings v and w as well as a scoring matrix Score."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.171,
+            0.679,
+            0.831,
+            0.699
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Output",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ": A highest-scoring fitting alignment of v and w as defined by Score."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 10,
+          "bbox": [
+            0.103,
+            0.754,
+            0.267,
+            0.773
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Overlap alignment"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.1,
+            0.785,
+            0.859,
+            0.848
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In Chapter 3, we discussed how to use overlapping reads to assemble a genome, a problem that was complicated by errors in reads. Aligning the ends of the hypothetical reads shown below offers a way to find overlaps between error-prone reads."
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 12,
+          "bbox": [
+            0.384,
+            0.863,
+            0.577,
+            0.901
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "T-CC-GAAAC"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 13,
+          "bbox": [
+            0.889,
+            0.617,
+            0.966,
+            0.678
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 13,
+              "bbox": [
+                0.889,
+                0.617,
+                0.966,
+                0.678
+              ],
+              "image_path": "images/page_287_image_13.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 14,
+          "bbox": [
+            0.465,
+            0.944,
+            0.498,
+            0.961
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "263"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

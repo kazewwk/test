@@ -1,0 +1,2230 @@
+{
+  "pages": [
+    {
+      "page_idx": 112,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.257,
+            0.08
+          ],
+          "content": "C H A P T E R 2"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.112,
+            0.897,
+            0.196
+          ],
+          "content": "used to calculate the probability that the sun will not rise tomorrow. In the case of motifs, pseudocounts often amount to adding 1 (or some other small number) to each element of COUNT(Motifs). For example, say that we have the following motif, count, and profile matrices:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.434,
+            0.214,
+            0.6,
+            0.294
+          ],
+          "content": "<table><tr><td rowspan=\"4\">Motifs</td><td>T</td><td>A</td><td>A</td><td>C</td></tr><tr><td>G</td><td>T</td><td>C</td><td>T</td></tr><tr><td>A</td><td>C</td><td>T</td><td>A</td></tr><tr><td>A</td><td>G</td><td>G</td><td>T</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_112_table_2.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.164,
+            0.313,
+            0.862,
+            0.397
+          ],
+          "content": "<table><tr><td rowspan=\"4\">COUNT(Motifs)</td><td>A:</td><td>2</td><td>1</td><td>1</td><td>1</td><td rowspan=\"4\">PROFILE(Motifs)</td><td>2/4</td><td>1/4</td><td>1/4</td><td>1/4</td></tr><tr><td>C:</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1/4</td><td>1/4</td><td>1/4</td></tr><tr><td>G:</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1/4</td><td>1/4</td><td>1/4</td><td>0</td></tr><tr><td>T:</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1/4</td><td>1/4</td><td>1/4</td><td>2/4</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_112_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.42,
+            0.89,
+            0.463
+          ],
+          "content": "Laplace’s Rule of Succession adds 1 to each element of COUNT(Motifs), updating the two matrices to the following:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.164,
+            0.483,
+            0.861,
+            0.567
+          ],
+          "content": "<table><tr><td rowspan=\"4\">COUNT(Motifs)</td><td>A: 2+1 1+1 1+1 1+1</td><td rowspan=\"4\">PROFILE(Motifs)</td><td>3/8 2/8 2/8 2/8</td></tr><tr><td>C: 0+1 1+1 1+1 1+1</td><td>1/8 2/8 2/8 2/8</td></tr><tr><td>G: 1+1 1+1 1+1 0+1</td><td>2/8 2/8 2/8 1/8</td></tr><tr><td>T: 1+1 1+1 1+1 2+1</td><td>2/8 2/8 2/8 3/8</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_112_table_5.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.031,
+            0.599,
+            0.11,
+            0.66
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_112_image_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.609,
+            0.869,
+            0.65
+          ],
+          "content": "**STOP and Think:** How would you use Laplace’s Rule of Succession to address the shortcomings of **GREEDYMOTIFSEARCH**?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.684,
+            0.424,
+            0.703
+          ],
+          "content": "An improved greedy motif search"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.715,
+            0.897,
+            0.775
+          ],
+          "content": "The only change we need to introduce to **GREEDYMOTIFSEARCH** in order to eliminate zeroes from the profile matrices that it constructs is to replace line 6 of the pseudocode for **GREEDYMOTIFSEARCH**:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.169,
+            0.8,
+            0.538,
+            0.82
+          ],
+          "content": "form Profile from motifs Motif<sub>1</sub>, ... Motif<sub>i</sub>\u00001"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.843,
+            0.348,
+            0.863
+          ],
+          "content": "with the following line:"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.505,
+            0.943,
+            0.528,
+            0.958
+          ],
+          "content": "88"
+        }
+      ]
+    },
+    {
+      "page_idx": 113,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.188,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": "W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.112,
+            0.826,
+            0.133
+          ],
+          "content": "**apply Laplace’s Rule of Succession** to form Profile from motifs Motif<sub>1</sub>, ... Motif<sub>i</sub>\u00001"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.156,
+            0.859,
+            0.196
+          ],
+          "content": "We now will apply Laplace’s Rule of Succession to search for the (4, 1)-motif **ACGT** implanted in the following strings Dna:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.389,
+            0.214,
+            0.573,
+            0.318
+          ],
+          "sub_type": "algorithm",
+          "content": "ttACCTtaac\ngATGTctgtc\nDna acgGCGTtag\nccctaACGAg\ncgtcagAGGT",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.334,
+            0.86,
+            0.396
+          ],
+          "content": "Again, let’s assume that the algorithm has already chosen the implanted 4-mer **ACCT** from the first sequence. We can construct the corresponding count and profile matrices using Laplace’s Rule of Succession:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.126,
+            0.45,
+            0.839,
+            0.535
+          ],
+          "content": "<table><tr><td rowspan=\"4\">COUNT(Motifs)</td><td>A: 1+1 0+1 0+1 0+1</td><td rowspan=\"4\">PROFILE(Motifs)</td><td>2/5 1/5 1/5 1/5</td></tr><tr><td>C: 0+1 1+1 1+1 0+1</td><td>1/5 2/5 2/5 1/5</td></tr><tr><td>G: 0+1 0+1 0+1 0+1</td><td>1/5 1/5 1/5 1/5</td></tr><tr><td>T: 0+1 0+1 0+1 1+1</td><td>1/5 1/5 1/5 2/5</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.417,
+                0.414,
+                0.544,
+                0.432
+              ],
+              "content": "Motifs ACCT"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_113_table_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.55,
+            0.859,
+            0.588
+          ],
+          "content": "We use this profile matrix to compute the probabilities of all 4-mers in the second string from Dna:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.186,
+            0.604,
+            0.775,
+            0.643
+          ],
+          "content": "| gATG | ATGT | TGTc | GTct | Tctg | ctgt | tgtc |\n| --- | --- | --- | --- | --- | --- | --- |\n| $1/5^{4}$ | $4/5^{4}$ | $1/5^{4}$ | $4/5^{4}$ | $2/5^{4}$ | $2/5^{4}$ | $1/5^{4}$ |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_113_table_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.66,
+            0.86,
+            0.722
+          ],
+          "content": "There are two Profile-most probable 4-mers in the second sequence (**ATGT** and **GT**ct); let’s assume that we get lucky again and choose the implanted 4-mer **ATGT**. We now have the following motif, count, and profile matrices:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.796,
+            0.839,
+            0.88
+          ],
+          "content": "<table><tr><td rowspan=\"4\">COUNT(Motifs)</td><td>A: 2+1 0+1 0+1 0+1</td><td rowspan=\"4\">PROFILE(Motifs)</td><td>3/6 1/6 1/6 1/6</td></tr><tr><td>C: 0+1 1+1 1+1 0+1</td><td>1/6 2/6 2/6 1/6</td></tr><tr><td>G: 0+1 0+1 1+1 0+1</td><td>1/6 1/6 2/6 1/6</td></tr><tr><td>T: 0+1 1+1 0+1 2+1</td><td>1/6 2/6 1/6 3/6</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_113_table_10.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.469,
+            0.944,
+            0.493,
+            0.96
+          ],
+          "content": "89"
+        }
+      ]
+    },
+    {
+      "page_idx": 114,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.256,
+            0.08
+          ],
+          "content": "C H A P T E R 2"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.112,
+            0.895,
+            0.152
+          ],
+          "content": "We use this profile matrix to compute the probabilities of all 4-mers in the third string from Dna:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.22,
+            0.165,
+            0.813,
+            0.203
+          ],
+          "content": "| acgG | cgGC | gGCG | GCGT | CGTt | GTta | Ttag |\n| --- | --- | --- | --- | --- | --- | --- |\n| $12/6^{4}$ | $2/6^{4}$ | $2/6^{4}$ | $12/6^{4}$ | $3/6^{4}$ | $2/6^{4}$ | $2/6^{4}$ |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_114_table_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.218,
+            0.897,
+            0.281
+          ],
+          "content": "Again, there are two Profile-most probable 4-mers in the second sequence (acgG and **GCGT**). This time, we will assume that acgG is selected instead of the implanted 4-mer **GCGT**. We now have the following motif, count, and profile matrices:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.45,
+            0.296,
+            0.585,
+            0.358
+          ],
+          "content": "<table><tr><td rowspan=\"3\">Motifs</td><td>ACCT</td></tr><tr><td>ATGT</td></tr><tr><td>acgG</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_114_table_4.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.161,
+            0.381,
+            0.875,
+            0.466
+          ],
+          "content": "<table><tr><td rowspan=\"4\">COUNT(Motifs)</td><td>A: 3+1 0+1 0+1 1+1</td><td rowspan=\"4\">PROFILE(Motifs)</td><td>4/7 1/7 1/7 1/7</td></tr><tr><td>C: 0+1 2+1 1+1 0+1</td><td>1/7 3/7 2/7 1/7</td></tr><tr><td>G: 0+1 0+1 2+1 1+1</td><td>1/7 1/7 3/7 2/7</td></tr><tr><td>T: 0+1 1+1 0+1 2+1</td><td>1/7 2/7 1/7 3/7</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_114_table_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.479,
+            0.895,
+            0.518
+          ],
+          "content": "We use this profile matrix to compute probabilities of all 4-mers in the fourth string from Dna:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.22,
+            0.532,
+            0.813,
+            0.571
+          ],
+          "content": "| ccct | ccta | ctaA | taAC | aACG | ACGA | CGAg |\n| --- | --- | --- | --- | --- | --- | --- |\n| $18/7^{4}$ | $3/7^{4}$ | $2/7^{4}$ | $1/7^{4}$ | $16/7^{4}$ | $36/7^{4}$ | $2/7^{4}$ |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_114_table_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.585,
+            0.895,
+            0.649
+          ],
+          "content": "Despite the fact that we missed the implanted 4-mer in the third sequence, we have now found the implanted 4-mer in the fourth string in Dna as the Profile-most probable 4-mer **ACGA**. This provides us with the following motif, count, and profile matrices:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.451,
+            0.663,
+            0.583,
+            0.743
+          ],
+          "content": "<table><tr><td rowspan=\"4\">Motifs</td><td>ACCT</td></tr><tr><td>ATGT</td></tr><tr><td>acgG</td></tr><tr><td>ACGA</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_114_table_9.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.161,
+            0.763,
+            0.873,
+            0.845
+          ],
+          "content": "<table><tr><td rowspan=\"4\">COUNT(Motifs)</td><td>A: 4+1 0+1 0+1 0+1</td><td rowspan=\"4\">PROFILE(Motifs)</td><td>5/8 1/8 1/8 2/8</td></tr><tr><td>C: 0+1 3+1 1+1 0+1</td><td>1/8 4/8 2/8 1/8</td></tr><tr><td>G: 0+1 0+1 3+1 1+1</td><td>1/8 1/8 4/8 2/8</td></tr><tr><td>T: 0+1 1+1 0+1 2+1</td><td>1/8 2/8 1/8 3/8</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_114_table_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.86,
+            0.895,
+            0.898
+          ],
+          "content": "We now use this profile to compute the probabilities of all 4-mers in the fifth string in Dna:"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.506,
+            0.946,
+            0.529,
+            0.96
+          ],
+          "content": "90"
+        }
+      ]
+    },
+    {
+      "page_idx": 115,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.188,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": "W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S ?"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.186,
+            0.113,
+            0.778,
+            0.152
+          ],
+          "content": "| cgtc | gtca | tcag | cagA | agAG | gAGG | AGGT |\n| --- | --- | --- | --- | --- | --- | --- |\n| $1/8^{4}$ | $8/8^{4}$ | $8/8^{4}$ | $8/8^{4}$ | $10/8^{4}$ | $8/8^{4}$ | $60/8^{4}$ |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_115_table_1.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.168,
+            0.862,
+            0.23
+          ],
+          "content": "The Profile-most probable 4-mer of the fifth string in Dna is **AGGT**, the implanted 4-mer. As a result, **GREEDYMOTIFSEARCH** has produced the following motif matrix, which implies the correct consensus string **ACGT**:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.354,
+            0.248,
+            0.61,
+            0.381
+          ],
+          "content": "<table><tr><td rowspan=\"2\"></td><td>ACCT</td></tr><tr><td>ATGT</td></tr><tr><td rowspan=\"3\">Motifs</td><td>acgG</td></tr><tr><td>ACGA</td></tr><tr><td>AGGT</td></tr><tr><td>CONSENSUS(Motifs)</td><td>ACGT</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_115_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.396,
+            0.862,
+            0.522
+          ],
+          "content": "You have now seen the power of pseudocounts illustrated on a small example. Running **GREEDYMOTIFSEARCH** with pseudocounts to solve the Subtle Motif Problem returns a collection of 15-mers Motifs with SCORE(Motifs) = 41 and CONSENSUS(Motifs) = **AAAAAtAgaGGGGtt**. Thus, Laplace’s Rule of Succession has provided a great improvement over the original **GREEDYMOTIFSEARCH**, which returned the consensus string **gTtAAAtAgaGatGtG** with SCORE(Motifs) = 58."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.524,
+            0.859,
+            0.586
+          ],
+          "content": "You may be satisfied with the performance of **GREEDYMOTIFSEARCH**, but you should know by now that your authors are never satisfied. Can we design an even more accurate motif finding algorithm?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.367,
+            0.632,
+            0.595,
+            0.649
+          ],
+          "level": 2,
+          "content": "Randomized Motif Search"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.668,
+            0.327,
+            0.687
+          ],
+          "content": "Rolling dice to find motifs"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.699,
+            0.861,
+            0.846
+          ],
+          "content": "We will now turn to **randomized algorithms** that flip coins and roll dice in order to search for motifs. Making random algorithmic decisions may sound like a disastrous idea — just imagine a chess game in which every move would be decided by rolling a die. However, an 18th Century French mathematician and naturalist, Comte de Buffon, first proved that randomized algorithms are useful by randomly dropping needles onto parallel strips of wood and using the results of this experiment to accurately approximate the constant p (see **DETOUR: Buffon’s Needle**)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.849,
+            0.861,
+            0.89
+          ],
+          "content": "Randomized algorithms may be nonintuitive because they lack the control of traditional algorithms. Some randomized algorithms are **Las Vegas algorithms**, which"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.892,
+            0.429,
+            0.966,
+            0.492
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_115_image_10.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.871,
+            0.82,
+            0.984,
+            0.854
+          ],
+          "content": "PAGE 109"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.469,
+            0.946,
+            0.492,
+            0.96
+          ],
+          "content": "91"
+        }
+      ]
+    },
+    {
+      "page_idx": 116,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.079
+          ],
+          "content": "C H A P T E R 2"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.113,
+            0.897,
+            0.237
+          ],
+          "continues_prev": true,
+          "content": "deliver solutions that are guaranteed to be exact, despite the fact that they rely on making random decisions. Yet most randomized algorithms, including the motif finding algorithms that we will consider in this chapter, are **Monte Carlo algorithms**. These algorithms are not guaranteed to return exact solutions, but they do quickly find ap proximate solutions. Because of their speed, they can be run many times, allowing us to choose the best approximation from thousands of runs."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.24,
+            0.897,
+            0.344
+          ],
+          "content": "We previously defined PROFILE(Motifs) as the profile matrix constructed from a collection of k-mers Motifs in Dna. Now, given a collection of strings Dna and an arbitrary 4 ⇥ k matrix Profile, we define MOTIFS(Profile, Dna) as the collection of k-mers formed by the Profile-most probable k-mers in each sequence from Dna. For example, consider the following Profile and Dna:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.263,
+            0.361,
+            0.773,
+            0.467
+          ],
+          "content": "<table><tr><td rowspan=\"5\">Profile</td><td>A: 4/5</td><td>0</td><td>0</td><td>1/5</td><td></td><td>ttaccttaac</td></tr><tr><td>C: 0</td><td>3/5</td><td>1/5</td><td>0</td><td></td><td>gatgtctgtc</td></tr><tr><td>G: 1/5</td><td>1/5</td><td>4/5</td><td>0</td><td>Dna</td><td>acggcgttag</td></tr><tr><td>T: 0</td><td>1/5</td><td>0</td><td>4/5</td><td></td><td>ccctaacgag</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td>cgtcagaggt</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_116_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.482,
+            0.893,
+            0.522
+          ],
+          "content": "Taking the Profile-most probable 4-mer from each row of Dna produces the following 4-mers (shown in red):"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.351,
+            0.537,
+            0.681,
+            0.64
+          ],
+          "content": "|  | ttaccttaac |\n| --- | --- |\n|  | gatgtctgtc |\n| Motifs(Profile, Dna) | acggcgttag |\n|  | ccctaacgag |\n|  | cgtcagaggt |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_116_table_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.652,
+            0.897,
+            0.693
+          ],
+          "content": "In general, we can begin from a collection of randomly chosen k-mers Motifs in Dna, construct PROFILE(Motifs), and use this profile to generate a new collection of k-mers:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.748,
+            0.895,
+            0.809
+          ],
+          "content": "Why would we do this? Because our hope is that MOTIFS(PROFILE(Motifs), Dna) has a better score than the original collection of k-mers Motifs. We can then form the profile matrix of these k-mers,"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.865,
+            0.531,
+            0.884
+          ],
+          "content": "and use it to form the most probable k-mers,"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.505,
+            0.946,
+            0.528,
+            0.96
+          ],
+          "content": "92"
+        }
+      ]
+    },
+    {
+      "page_idx": 117,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.188,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": "W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.228,
+            0.112,
+            0.735,
+            0.132
+          ],
+          "content": "MOTIFS(PROFILE(MOTIFS(PROFILE(Motifs), Dna)), Dna) ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.15,
+            0.355,
+            0.167
+          ],
+          "content": "We can continue to iterate. . ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.183,
+            0.797,
+            0.202
+          ],
+          "content": ". . PROFILE(MOTIFS(PROFILE(MOTIFS(PROFILE(Motifs), Dna)), Dna)). . ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.217,
+            0.861,
+            0.343
+          ],
+          "content": "for as long as the score of the constructed motifs keeps improving, which is exactly what **RANDOMIZEDMOTIFSEARCH** does. To implement this algorithm, you will need to randomly select the initial collection of k-mers that form the motif matrix Motifs. To do so, you will need a **random number generator** (denoted RANDOM(N)) that is equally likely to return any integer from 1 to N. You might like to think about this random number generator as an unbiased N-sided die."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.129,
+            0.365,
+            0.815,
+            0.576
+          ],
+          "sub_type": "code",
+          "content": "```python\nRANDOMIZEDMOTIFSEARCH(Dna, k, t)\n    randomly select k-mers Motifs = (Motif₁, ..., Motifₜ) in each string from Dna\n    BestMotifs ← Motifs\n    while forever\n        Profile ← PROFILE(Motifs)\n        Motifs ← MOTIFS(Profile, Dna)\n        if SCORE(Motifs) < SCORE(BestMotifs)\n            BestMotifs ← Motifs\n        else\n            return BestMotifs\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.129,
+            0.604,
+            0.833,
+            0.643
+          ],
+          "content": "**EXERCISE BREAK:** Prove that **RANDOMIZEDMOTIFSEARCH** will eventually terminate."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.667,
+            0.861,
+            0.749
+          ],
+          "content": "Since a single run of **RANDOMIZEDMOTIFSEARCH** may generate a rather poor set of motifs, bioinformaticians usually run this algorithm thousands of times. On each run, they begin from a new randomly selected set of k-mers, selecting the best set of k-mers found in all these runs."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.773,
+            0.416,
+            0.792
+          ],
+          "content": "Why randomized motif search works"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.805,
+            0.861,
+            0.889
+          ],
+          "content": "At first glance, **RANDOMIZEDMOTIFSEARCH** appears to be doomed. How can this algorithm, which starts from a random guess, possibly find anything useful? To explore **RANDOMIZEDMOTIFSEARCH**, let’s run it on five short strings with the implanted (4, 1)-motif ACGT (shown in upper case letters below) and imagine that it chooses the"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.889,
+            0.437,
+            0.966,
+            0.5
+          ],
+          "content": "[2F](http://rosalind.info/problems/2f)"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.469,
+            0.946,
+            0.492,
+            0.961
+          ],
+          "content": "93"
+        }
+      ]
+    },
+    {
+      "page_idx": 118,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.256,
+            0.08
+          ],
+          "content": "C H A P T E R 2"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.112,
+            0.895,
+            0.153
+          ],
+          "continues_prev": true,
+          "content": "following 4-mers Motifs (shown in red) at the first iteration. As expected, it misses the implanted motif in nearly every string."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.424,
+            0.17,
+            0.61,
+            0.274
+          ],
+          "content": "<table><tr><td rowspan=\"2\"></td><td>ttACCTtaac</td></tr><tr><td>gATGTctgtc</td></tr><tr><td rowspan=\"3\">Dna</td><td>ccgGCGTtag</td></tr><tr><td>cactaACGAg</td></tr><tr><td>cgtcagAGGT</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_118_table_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.288,
+            0.843,
+            0.309
+          ],
+          "content": "Below, we construct the profile matrix PROFILE(Motifs) of the chosen 4-mers."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.317,
+            0.323,
+            0.737,
+            0.449
+          ],
+          "content": "<table><tr><td colspan=\"4\">Motifs</td><td colspan=\"5\">PROFILE(Motifs)</td></tr><tr><td>t</td><td>a</td><td>a</td><td>c</td><td>A:</td><td>0.4</td><td>0.2</td><td>0.2</td><td>0.2</td></tr><tr><td>G</td><td>T</td><td>c</td><td>t</td><td>C:</td><td>0.2</td><td>0.4</td><td>0.2</td><td>0.2</td></tr><tr><td>c</td><td>c</td><td>g</td><td>G</td><td>G:</td><td>0.2</td><td>0.2</td><td>0.4</td><td>0.2</td></tr><tr><td>a</td><td>c</td><td>t</td><td>a</td><td>T:</td><td>0.2</td><td>0.2</td><td>0.2</td><td>0.4</td></tr><tr><td>A</td><td>G</td><td>G</td><td>T</td><td></td><td></td><td></td><td></td><td></td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_118_table_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.479,
+            0.897,
+            0.56
+          ],
+          "content": "We can now compute the probabilities of every 4-mer in Dna based on this profile matrix. For example, the probability of the first 4-mer in the first string of Dna is $\\mathrm{PR}(\\mathrm{ttt\\&AC}|\\mathrm{Proflle}) = 0.2 \\cdot 0.2 \\cdot 0.2 \\cdot 0.2 = 0.0016$ . The maximum probabilities in every row are shown in red below."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.221,
+            0.574,
+            0.811,
+            0.844
+          ],
+          "content": "| ttAC | tACC | ACCT | CCTt | CTta | Ttaa | taac |\n| --- | --- | --- | --- | --- | --- | --- |\n| .0016 | .0016 | .0128 | .0064 | .0016 | .0016 | .0016 |\n| gATG | ATGT | TGTc | GTct | Tctg | ctgt | tgtc |\n| .0016 | .0128 | .0016 | .0032 | .0032 | .0032 | .0016 |\n| ccgG | cgGC | gGCG | GCGT | CGTt | GTta | Ttag |\n| .0064 | .0036 | .0016 | .0128 | .0032 | .0016 | .0016 |\n| cact | acta | ctaA | taAC | aACG | ACGA | CGAg |\n| .0032 | .0064 | .0016 | .0016 | .0032 | .0128 | .0016 |\n| cgtc | gtca | tcag | cagA | agAG | gAGG | AGGT |\n| .0016 | .0016 | .0016 | .0032 | .0032 | .0032 | .0128 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_118_table_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.858,
+            0.897,
+            0.898
+          ],
+          "content": "We select the most probable 4-mer in each row above as our new collection Motifs (shown below). Notice that this collection has captured all five implanted motifs in Dna!"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.505,
+            0.947,
+            0.528,
+            0.961
+          ],
+          "content": "94"
+        }
+      ]
+    },
+    {
+      "page_idx": 119,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.188,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": "W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S ?"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.389,
+            0.113,
+            0.573,
+            0.215
+          ],
+          "sub_type": "algorithm",
+          "content": "ttACCTtaac\ngATGTctgtc\nDna ccgGCGTtag\ncactaACGAg\ncgtcagAGGT",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.236,
+            0.834,
+            0.3
+          ],
+          "content": "**STOP and Think:** How is it possible that randomly chosen k-mers have led us to the correct implanted k-mer? If you think we manufactured this example, select your own initial 4-mers and see what happens."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.889,
+            0.237,
+            0.966,
+            0.298
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_119_image_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.322,
+            0.862,
+            0.51
+          ],
+          "content": "For the Subtle Motif Problem with implanted 15-mer **AAAAAAAAGGGGGGG**, when we run **RANDOMIZEDMOTIFSEARCH** 100,000 times (each time with new randomly selected k-mers), it returns the 15-mers shown in Figure 2.7 as the lowest scoring collection Motifs across all iterations, resulting in the consensus string **AAAAAAAAacaGGGG** with score 43. These strings are only slightly less conserved than the collection of implanted (15, 4)-motifs with score 40 (or the motif returned by **GREEDYMOTIFSEARCH** with score 41), and it largely captures the implanted motif. Furthermore, unlike **GREEDYMOTIFSEARCH**, **RANDOMIZEDMOTIFSEARCH** can be run for a larger number of iterations to discover better and better motifs."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.244,
+            0.544,
+            0.72,
+            0.778
+          ],
+          "content": "<table><tr><td></td><td></td><td>Score</td></tr><tr><td rowspan=\"10\">Motifs</td><td>AAAtAcAgACAGcGt</td><td>5</td></tr><tr><td>AAAAAAtAgCAGGGt</td><td>3</td></tr><tr><td>tAAAAtAAACAGcGG</td><td>3</td></tr><tr><td>AcAgAAAAAaAGGGG</td><td>3</td></tr><tr><td>AAAAtAAAACTcGcGa</td><td>4</td></tr><tr><td>AtAgAcgAACACGGt</td><td>6</td></tr><tr><td>cAAAAAgAgaAGGGG</td><td>4</td></tr><tr><td>AtAgAAAAggAaGGG</td><td>5</td></tr><tr><td>AAgAAAAAaAGaGG</td><td>3</td></tr><tr><td>cAtAAtgAACTcGtGa</td><td>7</td></tr><tr><td>CONSENSUS(Motifs)</td><td>AAAAAAAAACAGGGG</td><td>43</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.155,
+                0.786,
+                0.808,
+                0.837
+              ],
+              "content": "FIGURE 2.7 The lowest scoring collection of strings Motifs produced by 100,000 runs of RANDOMIZEDMOTIFSEARCH, along with their consensus string and score for the Subtle Motif Problem."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_119_table_5.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.469,
+            0.946,
+            0.493,
+            0.961
+          ],
+          "content": "95"
+        }
+      ]
+    },
+    {
+      "page_idx": 120,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.259,
+            0.081
+          ],
+          "content": "C H A P T E R 2"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.031,
+            0.121,
+            0.112,
+            0.186
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_120_image_1.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.112,
+            0.877,
+            0.195
+          ],
+          "content": "**STOP and Think:** Does your run of **RANDOMIZEDMOTIFSEARCH** return a similar consensus string? How many times do you need to run **RANDOMIZEDMOTIFSEARCH** to obtain the implanted (15, 4)-motif with distance 40?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.214,
+            0.9,
+            0.321
+          ],
+          "content": "Although the motifs returned by **RANDOMIZEDMOTIFSEARCH** are slightly less conserved than the motifs returned by **MEDIANSTRING**, **RANDOMIZEDMOTIFSEARCH** has the advantage of being able to find longer motifs (since **MEDIANSTRING** becomes too slow for longer motifs). In the epilogue, we will see that this feature is important in practice."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.288,
+            0.366,
+            0.747,
+            0.385
+          ],
+          "level": 2,
+          "content": "How Can a Randomized Algorithm Perform So Well?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.402,
+            0.897,
+            0.444
+          ],
+          "content": "In the previous section, we began with a collection of implanted motifs (with consensus ACGT) that resulted in the following profile matrix."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.406,
+            0.46,
+            0.627,
+            0.543
+          ],
+          "content": "| A: | 0.8 | 0.0 | 0.0 | 0.2 |\n| --- | --- | --- | --- | --- |\n| C: | 0.0 | 0.6 | 0.2 | 0.0 |\n| G: | 0.2 | 0.2 | 0.8 | 0.0 |\n| T: | 0.0 | 0.2 | 0.0 | 0.8 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_120_table_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.559,
+            0.897,
+            0.622
+          ],
+          "content": "If the strings in Dna were truly random, then we would expect that all nucleotides in the selected k-mers would be equally likely, resulting in an expected Profile in which every entry is approximately 0.25:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.387,
+            0.638,
+            0.648,
+            0.721
+          ],
+          "content": "| A: | 0.25 | 0.25 | 0.25 | 0.25 |\n| --- | --- | --- | --- | --- |\n| C: | 0.25 | 0.25 | 0.25 | 0.25 |\n| G: | 0.25 | 0.25 | 0.25 | 0.25 |\n| T: | 0.25 | 0.25 | 0.25 | 0.25 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_120_table_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.737,
+            0.895,
+            0.8
+          ],
+          "content": "Such a **uniform profile** is essentially useless for motif finding because no string is more probable than any other according to this profile and because it does not provide any clues on what an implanted motif looks like."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.801,
+            0.896,
+            0.886
+          ],
+          "content": "At the opposite end of the spectrum, if we were incredibly lucky, we would choose the implanted k-mers Motifs from the very beginning, resulting in the first of the two profile matrices above. In practice, we are likely to obtain a profile somewhere in between these two extremes, such as the following:"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.506,
+            0.944,
+            0.529,
+            0.96
+          ],
+          "content": "96"
+        }
+      ]
+    },
+    {
+      "page_idx": 121,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.188,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": "W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S ?"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.371,
+            0.112,
+            0.592,
+            0.193
+          ],
+          "content": "| A: | 0.4 | 0.2 | 0.2 | 0.2 |\n| --- | --- | --- | --- | --- |\n| C: | 0.2 | 0.4 | 0.2 | 0.2 |\n| G: | 0.2 | 0.2 | 0.4 | 0.2 |\n| T: | 0.2 | 0.2 | 0.2 | 0.4 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_121_table_1.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.21,
+            0.862,
+            0.294
+          ],
+          "content": "This profile matrix has already started to point us toward the implanted motif ACGT, i.e., ACGT is the most likely 4-mer that can be generated by this profile. Fortunately, **RANDOMIZEDMOTIFSEARCH** is designed so that subsequent steps have a good chance of leading us toward this implanted motif (although it is not certain)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.296,
+            0.861,
+            0.465
+          ],
+          "content": "If you still doubt the efficacy of randomized algorithms, consider the following argument. We have already noticed that if the strings in Dna were random, then **RANDOMIZEDMOTIFSEARCH** would start from a nearly uniform profile, and there would be nothing to work with. However, the key observation is that the strings in Dna are not random because they include the implanted motif! These multiple occurrences of the same motif may create a bias in the profile matrix, directing it away from the uniform profile and toward the implanted motif. For example, consider again the original randomly selected k-mers Motifs (shown in red):"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.389,
+            0.483,
+            0.573,
+            0.585
+          ],
+          "content": "|  | ttACCTtaac |\n| --- | --- |\n|  | gATGTctgtc |\n| Dna | ccgGCGTtag |\n|  | cactaACGAg |\n|  | cgtcagAGGT |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_121_table_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.602,
+            0.861,
+            0.663
+          ],
+          "content": "You will see that the 4-mer **AGGT** in the last string happened to capture the implanted motif simply by chance. In fact, the profile formed from the remaining 4-mers (**taac**, **GTct**, **ccgG**, and **acta**) is uniform."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.683,
+            0.838,
+            0.745
+          ],
+          "content": "**EXERCISE BREAK:** Compute the probability that ten randomly selected 15- mers from ten 600-nucleotide long strings (such as in the Subtle Motif Problem) capture at least one implanted 15-mer."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.768,
+            0.862,
+            0.892
+          ],
+          "content": "Although the probability that randomly selected k-mers match all implanted motifs is negligible, the probability that they capture at least one implanted motif is significant. Even in the case of difficult motif finding problems for which this probability is small, we can run **RANDOMIZEDMOTIFSEARCH** many times, so that it will almost certainly catch at least one implanted motif, thus creating a statistical bias pointing toward the correct motif."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.897,
+            0.691,
+            0.957,
+            0.736
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_121_image_8.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.469,
+            0.946,
+            0.493,
+            0.96
+          ],
+          "content": "97"
+        }
+      ]
+    },
+    {
+      "page_idx": 122,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.259,
+            0.081
+          ],
+          "content": "C H A P T E R 2"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.113,
+            0.897,
+            0.219
+          ],
+          "content": "Unfortunately, capturing a single implanted motif is often insufficient to steer **RANDOMIZEDMOTIFSEARCH** to an optimal solution. Therefore, since the number of starting positions of k-mers is huge, the strategy of randomly selecting motifs is often not as successful as in the simple example above. The chance that these randomly selected k-mers will be able to guide us to the optimal solution is relatively small."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.041,
+            0.245,
+            0.102,
+            0.29
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_122_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.235,
+            0.873,
+            0.298
+          ],
+          "content": "**EXERCISE BREAK:** Compute the probability that ten randomly selected 15- mers from the ten 600-nucleotide long strings in the Subtle Motif Problem capture at least two implanted 15-mers."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.446,
+            0.344,
+            0.588,
+            0.364
+          ],
+          "level": 2,
+          "content": "Gibbs Sampling"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.38,
+            0.897,
+            0.507
+          ],
+          "content": "Note that **RANDOMIZEDMOTIFSEARCH** may change all t strings in Motifs in a single iteration. This strategy may prove reckless, since some correct motifs (captured in Motifs) may potentially be discarded at the next iteration. **GIBBSSAMPLER** is a more cautious iterative algorithm that discards a single k-mer from the current set of motifs at each iteration and decides to either keep it or replace it with a new one. This algorithm thus moves with more caution in the space of all motifs, as illustrated below."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.153,
+            0.529,
+            0.473,
+            0.637
+          ],
+          "sub_type": "code",
+          "content": "```txt\nttaccttaac        ttaccttaac\ngatatctgtc       gatatctgtc\nacggcgttcg  → acggcgttcg\nccctaaagag            ccctaaagag\ncgtcagaggt          cgtcagaggt\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.561,
+            0.529,
+            0.877,
+            0.637
+          ],
+          "sub_type": "code",
+          "content": "```txt\nttaccttaac        ttaccttaac\ngatatctgtc       gatatctgtc\nacggcgttcg  → acggcgttcg\nccctaaagag          ccctaaagag\ncgtcagaggt          cgtcagaggt\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.191,
+            0.658,
+            0.435,
+            0.673
+          ],
+          "level": 2,
+          "content": "RANDOMIZEDMOTIFSEARCH"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.678,
+            0.466,
+            0.698
+          ],
+          "content": "(may change all k-mers in one step)"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.653,
+            0.658,
+            0.784,
+            0.673
+          ],
+          "level": 2,
+          "content": "GIBBSSAMPLER"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.582,
+            0.678,
+            0.856,
+            0.698
+          ],
+          "content": "(changes one k-mer in one step)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.723,
+            0.897,
+            0.828
+          ],
+          "content": "Like **RANDOMIZEDMOTIFSEARCH**, **GIBBSSAMPLER** starts with randomly chosen k-mers in each of t DNA sequences, but it makes a random rather than a deterministic choice at each iteration. It uses randomly selected k-mers $\\mathit { M o t i f s } = \\left( M o t i f _ { 1 } , \\cdots , M o t i f _ { t } \\right)$ to come up with another (hopefully better scoring) set of k-mers. In contrast with **RANDOMIZEDMOTIFSEARCH**, which deterministically defines new motifs as"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.505,
+            0.944,
+            0.529,
+            0.96
+          ],
+          "content": "98"
+        }
+      ]
+    },
+    {
+      "page_idx": 123,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.188,
+            0.065,
+            0.858,
+            0.08
+          ],
+          "content": "W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.112,
+            0.859,
+            0.152
+          ],
+          "content": "**GIBBSSAMPLER** randomly selects an integer i between 1 and t and then randomly changes a single k-mer $M o t i f _ { i }$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.155,
+            0.861,
+            0.26
+          ],
+          "content": "To describe how **GIBBSSAMPLER** updates Motifs, we will need a slightly more advanced random number generator. Given a probability distribution $\\left( p _ { 1 } , \\cdots , p _ { n } \\right)$ , this random number generator, denoted RANDOM $\\left( p _ { 1 } , \\cdots , p _ { n } \\right)$ , models an n-sided biased die and returns integer i with probability $p _ { i } .$ . For example, the standard six-sided fair die represents the random number generator"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.306,
+            0.276,
+            0.658,
+            0.295
+          ],
+          "content": "\\text {RANDOM} (1 / 6, 1 / 6, 1 / 6, 1 / 6, 1 / 6, 1 / 6),",
+          "image_source": "images/page_123_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.313,
+            0.704,
+            0.332
+          ],
+          "content": "whereas a biased die might represent the random number generator"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.32,
+            0.348,
+            0.644,
+            0.367
+          ],
+          "content": "\\text {RANDOM} (0. 1, 0. 2, 0. 3, 0. 0 5, 0. 1, 0. 2 5).",
+          "image_source": "images/page_123_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.385,
+            0.862,
+            0.51
+          ],
+          "content": "**GIBBSSAMPLER** further generalizes the random number generator by using the function RANDOM $\\left( p _ { 1 } , \\cdots , p _ { n } \\right)$ defined for any set of non-negative numbers, i.e., not necessarily satisfying the condition $\\textstyle \\sum _ { i = 1 } ^ { n } p _ { i } = 1$ . Specifically, if $\\begin{array} { r } { \\sum _ { i = 1 } ^ { n } p _ { i } = C > 0 , } \\end{array}$ , then RANDOM $\\left( p _ { 1 } , \\cdots , p _ { n } \\right)$ is defined as RANDOM $\\left( p _ { 1 } / C , \\cdots , p _ { n } / C \\right)$ , where $\\left( p _ { 1 } / C , \\cdots , p _ { n } / C \\right)$ is a probability distribution. For example, given the values $\\left( p _ { 1 } , p _ { 2 } , p _ { 3 } \\right) = \\left( 0 . 1 , 0 . 2 , 0 . 3 \\right)$ with $0 . 1 + 0 . 2 + 0 . 3 = 0 . 6 ,$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.214,
+            0.536,
+            0.744,
+            0.581
+          ],
+          "content": "\\begin{array}{l} \\text {RANDOM} (0. 1, 0. 2, 0. 3) = \\text {RANDOM} (0. 1 / 0. 6, 0. 2 / 0. 6, 0. 3 / 0. 6) \\\\ = \\text { RANDOM } (1 / 6, 1 / 3, 1 / 2). \\\\ \\end{array}",
+          "image_source": "images/page_123_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.601,
+            0.833,
+            0.642
+          ],
+          "content": "**STOP and Think:** Implement RANDOM $\\left( p _ { 1 } , \\cdots , p _ { n } \\right)$ so that it uses RANDOM(X) (for an appropriately chosen integer X) as a subroutine."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.665,
+            0.862,
+            0.877
+          ],
+          "content": "We have previously defined the notion of a Profile-most probable k-mer in a string. We now define a **Profile-randomly generated k-mer** in a string Text. For each k-mer Pattern in Text, compute the probability $\\mathrm { P r ( } P a t t e r n | P r o f i l e \\mathrm { ) }$ , resulting in $n = \\left| T e x t \\right| - k + 1$ probabilities $\\left( p _ { 1 } , \\cdots , p _ { n } \\right)$ . These probabilities do not necessarily sum to 1, but we can still form the random number generator RANDOM $\\left( p _ { 1 } , \\cdots , p _ { n } \\right)$ based on them. **GIBBSSAMPLER** uses this random number generator to select a Profile-randomly generated k-mer at each step: if the die rolls the number $i ,$ then we define the Profile-randomly generated k-mer as the i-th k-mer in Text. While the pseudocode below repeats this procedure N times, in practice **GIBBSSAMPLER** depends on various stopping rules that are beyond the scope of this chapter."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.89,
+            0.591,
+            0.966,
+            0.652
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_123_image_10.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.469,
+            0.946,
+            0.493,
+            0.96
+          ],
+          "content": "99"
+        }
+      ]
+    },
+    {
+      "page_idx": 124,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.259,
+            0.081
+          ],
+          "content": "C H A P T E R 2"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.031,
+            0.187,
+            0.112,
+            0.251
+          ],
+          "content": "[2G](http://rosalind.info/problems/2g)"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.031,
+            0.357,
+            0.112,
+            0.419
+          ],
+          "content": "STOP"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.164,
+            0.116,
+            0.845,
+            0.327
+          ],
+          "sub_type": "code",
+          "content": "```txt\nGIBBSSAMPLER(Dna, k, t, N)\nrandomly select k-mers Motifs = (Motif₁, ..., Motifₜ) in each string from Dna\nBestMotifs ← Motifs\nfor j ← 1 to N\n    i ← RANDOM(t)\n    Profile ← profile matrix formed from all strings in Motifs except for Motifi\n    Motifi ← Profile-randomly generated k-mer in the i-th sequence\n    if SCORE(Motifs) < SCORE(BestMotifs)\n        BestMotifs ← Motifs\nreturn BestMotifs\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.355,
+            0.87,
+            0.419
+          ],
+          "content": "**STOP and Think:** Note that in contrast to **RANDOMIZEDMOTIFSEARCH**, which always moves from higher to lower scoring Motifs, **GIBBSSAMPLER** may move from lower to higher scoring Motifs. Why is this reasonable?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.404,
+            0.463,
+            0.63,
+            0.483
+          ],
+          "level": 2,
+          "content": "Gibbs Sampling in Action"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.5,
+            0.897,
+            0.562
+          ],
+          "content": "We illustrate how **GIBBSSAMPLER** works on the same strings Dna that we considered before. Imagine that, at the initial step, the algorithm has chosen the following 4-mers (shown in red) and has randomly selected the third string for removal."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.325,
+            0.575,
+            0.71,
+            0.68
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"Dna\"] --> B[\"ttACCTtaac\"]\n  A --> C[\"gATGTctgtc\"]\n  A --> D[\"ccgGCGTtag\"]\n  B --> E[\"ttACCTtaac\"]\n  C --> F[\"gATGTctgtc\"]\n  D --> G[\"cactaACGAg\"]\n  D --> H[\"cgtcagAGGT\"]\n  E --> I[\"--------\"]\n  F --> J[\"cactaACGAg\"]\n  G --> K[\"cgtcagAGGT\"]\n```",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_124_image_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.69,
+            0.691,
+            0.71
+          ],
+          "content": "This results in the following motif, count, and profile matrices."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.428,
+            0.725,
+            0.605,
+            0.804
+          ],
+          "sub_type": "text_image",
+          "content": "Motifs\nt a a c\nG T c t\na c t a\nA G G T",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_124_image_9.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.19,
+            0.823,
+            0.845,
+            0.907
+          ],
+          "content": "| COUNT(Motifs) | A: 2 1 1 1C: 0 1 1 1G: 1 1 1 0T: 1 1 1 2 | PROFILE(Motifs) | A: 2/4 1/4 1/4 1/4C: 0 1/4 1/4 1/4G: 1/4 1/4 1/4 0T: 1/4 1/4 1/4 2/4 |\n| --- | --- | --- | --- |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_124_table_10.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.501,
+            0.946,
+            0.535,
+            0.958
+          ],
+          "content": "100"
+        }
+      ]
+    },
+    {
+      "page_idx": 125,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.188,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": "W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.113,
+            0.862,
+            0.196
+          ],
+          "content": "Note that the profile matrix is only slightly more conserved than the uniform profile, making us wonder whether we have any chance to be steered toward the implanted motif. We now use this profile matrix to compute the probabilities of all 4-mers in the deleted string ccgGCGTtag:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.183,
+            0.213,
+            0.78,
+            0.253
+          ],
+          "content": "| ccgG | cgGC | gGCG | GCGT | CGTt | GTta | Ttag |\n| --- | --- | --- | --- | --- | --- | --- |\n| 0 | 0 | 0 | 1/128 | 0 | 1/256 | 0 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_125_table_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.269,
+            0.859,
+            0.331
+          ],
+          "content": "Note that all but two of these probabilities are zero. This situation is similar to the one we encountered with **GREEDYMOTIFSEARCH**, and as before, we need to augment zero probabilities with small pseudocounts to avoid disastrous results."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.333,
+            0.859,
+            0.374
+          ],
+          "content": "Application of Laplace’s Rule of Succession to the count matrix above yields the following updated count and profile matrices:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.153,
+            0.39,
+            0.808,
+            0.474
+          ],
+          "content": "| COUNT(Motifs) | A: 3 2 2 2C: 1 2 2 2G: 2 2 2 1T: 2 2 2 3 | PROFILE(Motifs) | A: 3/8 2/8 2/8 2/8C: 1/8 2/8 2/8 2/8G: 2/8 2/8 2/8 1/8T: 2/8 2/8 2/8 3/8 |\n| --- | --- | --- | --- |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_125_table_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.49,
+            0.859,
+            0.53
+          ],
+          "content": "After adding pseudocounts, the 4-mer probabilities in the deleted string ccgGCGTtag are recomputed as follows:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.183,
+            0.548,
+            0.778,
+            0.589
+          ],
+          "content": "| ccgG | cgGC | gGCG | GCGT | CGTt | GTta | Ttag |\n| --- | --- | --- | --- | --- | --- | --- |\n| $4/8^4$ | $8/8^4$ | $8/8^4$ | $24/8^4$ | $12/8^4$ | $16/8^4$ | $8/8^4$ |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_125_table_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.607,
+            0.862,
+            0.648
+          ],
+          "content": "Since these probabilities sum to $C = 8 0 / 8 ^ { 4 }$ , our hypothetical seven-sided die is represented by the random number generator"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.192,
+            0.66,
+            0.773,
+            0.749
+          ],
+          "content": "\\begin{array}{l} \\text {RANDOM} \\left(\\frac {4 / 8 ^ {4}}{8 0 / 8 ^ {4}}, \\frac {8 / 8 ^ {4}}{8 0 / 8 ^ {4}}, \\frac {8 / 8 ^ {4}}{8 0 / 8 ^ {4}}, \\frac {2 4 / 8 ^ {4}}{8 0 / 8 ^ {4}}, \\frac {1 2 / 8 ^ {4}}{8 0 / 8 ^ {4}}, \\frac {1 6 / 8 ^ {4}}{8 0 / 8 ^ {4}}, \\frac {8 / 8 ^ {4}}{8 0 / 8 ^ {4}}\\right) \\\\ = \\operatorname{RANDOM} \\left(\\frac {4}{8 0}, \\frac {8}{8 0}, \\frac {8}{8 0}, \\frac {2 4}{8 0}, \\frac {1 2}{8 0}, \\frac {1 6}{8 0}, \\frac {8}{8 0}\\right). \\\\ \\end{array}",
+          "image_source": "images/page_125_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.759,
+            0.862,
+            0.865
+          ],
+          "content": "Let’s assume that after rolling this seven-sided die, we arrive at the Profile-randomly generated 4-mer GCGT (the fourth 4-mer in the deleted sequence). The deleted string ccgGCGTtag is now added back to the collection of motifs, and **GCGT** substitutes the previously chosen ccgG in the third string in Dna, as shown below. We then roll a fair five-sided die and randomly select the first string from Dna for removal."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.465,
+            0.946,
+            0.496,
+            0.958
+          ],
+          "content": "101"
+        }
+      ]
+    },
+    {
+      "page_idx": 126,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.257,
+            0.08
+          ],
+          "content": "C H A P T E R 2"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.325,
+            0.113,
+            0.709,
+            0.219
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"Dna\"] --> B[\"ttACCTtaac\"]\n  A --> C[\"gATGTctgtc\"]\n  A --> D[\"ccgGCGTtag\"]\n  A --> E[\"cactaACGAg\"]\n  A --> F[\"cgtcagAGGT\"]\n  B --> G[\"----\"]\n  C --> H[\"gATGTctgtc\"]\n  D --> I[\"ccgGCGTtag\"]\n  E --> J[\"cactaACGAg\"]\n  F --> K[\"cgtcagAGGT\"]\n```",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_126_image_1.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.232,
+            0.79,
+            0.252
+          ],
+          "content": "After constructing the motif and profile matrices, we obtain the following:"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.24,
+            0.268,
+            0.794,
+            0.352
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"Motifs\"] --> B[\"G T C t\"]\n  B --> C[\"G C G T\"]\n  C --> D[\"a c t a\"]\n  D --> E[\"A G G T\"]\n  E --> F[\"PROFILE(Motifs)\"]\n  F --> G[\"A: 2/4 0 0 1/4\"]\n  G --> H[\"C: 0 2/4 1/4 0\"]\n  H --> I[\"G: 2/4 1/4 2/4 0\"]\n  I --> J[\"T: 0 1/4 1/4 3/4\"]\n```",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_126_image_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.367,
+            0.897,
+            0.428
+          ],
+          "content": "Note that the profile matrix looks more biased toward the implanted motif than the previous profile matrix did. We update the count and profile matrices with pseudocounts:"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.195,
+            0.442,
+            0.841,
+            0.527
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"COUNT(Motifs)\"] --> B[\"A: 3 1 1 2\"]\n  A --> C[\"C: 1 3 2 1\"]\n  A --> D[\"G: 3 2 3 1\"]\n  A --> E[\"T: 1 2 2 4\"]\n  B --> F[\"PROFILE(Motifs)\"]\n  C --> F\n  D --> F\n  E --> F\n```",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_126_image_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.542,
+            0.879,
+            0.562
+          ],
+          "content": "Then, we compute the probabilities of all 4-mers in the deleted string ttACCTtaac:"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.22,
+            0.579,
+            0.813,
+            0.619
+          ],
+          "sub_type": "text_image",
+          "content": "ttAC tACC ACCT CCTt CTta Ttaa taac\n2/8^4 2/8^4 72/8^4 24/8^4 8/8^4 4/8^4 1/8^4",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_126_image_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.635,
+            0.897,
+            0.698
+          ],
+          "content": "When we roll a seven-sided die, we arrive at the Profile-randomly generated k-mer **ACCT**, which we add to the collection Motifs. After rolling the five-sided die once again, we randomly select the fourth string for removal."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.325,
+            0.715,
+            0.709,
+            0.82
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"Dna\"] --> B[\"ttACCTtaac\"]\n  A --> C[\"gATGTctgtc\"]\n  A --> D[\"ccgGCGTtag\"]\n  A --> E[\"cactaACGAg\"]\n  A --> F[\"cgtcagAGGT\"]\n  B --> G[\"ttACCTtaac\"]\n  C --> H[\"gATGTctgtc\"]\n  D --> I[\"ccgGCGTtag\"]\n  E --> J[\"--------\"]\n  F --> K[\"cgtcagAGGT\"]\n```",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_126_image_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.835,
+            0.88,
+            0.855
+          ],
+          "content": "We further add pseudocounts and construct the resulting count and profile matrices:"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.501,
+            0.946,
+            0.534,
+            0.958
+          ],
+          "content": "102"
+        }
+      ]
+    },
+    {
+      "page_idx": 127,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.188,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": "W H I C H D N A PAT T E R N S P L AY T H E R O L E O F M O L E C U L A R C L O C K S ?"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.394,
+            0.112,
+            0.57,
+            0.193
+          ],
+          "content": "<table><tr><td rowspan=\"4\">Motifs</td><td>A C C T</td></tr><tr><td>G T c t</td></tr><tr><td>G C G T</td></tr><tr><td>A G G T</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_127_table_1.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.16,
+            0.212,
+            0.805,
+            0.295
+          ],
+          "content": "| COUNT(Motifs) | A: 3 1 1 1C: 1 3 3 1G: 3 2 3 1T: 1 2 1 5 | PROFILE(Motifs) | A: 3/8 1/8 1/8 1/8C: 1/8 3/8 3/8 1/8G: 3/8 2/8 3/8 1/8T: 1/8 2/8 1/8 5/8 |\n| --- | --- | --- | --- |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_127_table_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.312,
+            0.834,
+            0.332
+          ],
+          "content": "We now compute the probabilities of all 4-mers in the deleted string cactaACGAg:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.185,
+            0.35,
+            0.778,
+            0.389
+          ],
+          "content": "| cact | acta | ctaA | taAC | aACG | ACGA | CGAg |\n| --- | --- | --- | --- | --- | --- | --- |\n| $15/8^4$ | $9/8^4$ | $2/8^4$ | $1/8^4$ | $9/8^4$ | $27/8^4$ | $2/8^4$ |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_127_table_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.404,
+            0.862,
+            0.465
+          ],
+          "content": "We need to roll a seven-sided die to produce a Profile-randomly generated 4-mer. Assuming the most probable scenario in which we select **ACGA**, we update the selected 4-mers as follows:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.389,
+            0.481,
+            0.573,
+            0.585
+          ],
+          "content": "<table><tr><td rowspan=\"2\"></td><td>ttACCTtaac</td></tr><tr><td>gATGTctgtc</td></tr><tr><td rowspan=\"3\">Dna</td><td>ccgGCGTtag</td></tr><tr><td>cactaACGAg</td></tr><tr><td>cgtcagAGGT</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_127_table_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.6,
+            0.861,
+            0.664
+          ],
+          "content": "You can see that the algorithm is beginning to converge. Rest assured that a subsequent iteration will produce all implanted motifs after we select the second string in Dna (when the incorrect 4-mer GTct will likely change into the implanted (4, 1)-motif ATGT)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.681,
+            0.833,
+            0.723
+          ],
+          "content": "**STOP and Think:** Run **GIBBSSAMPLER** on the Subtle Motif Problem. What do you find?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.745,
+            0.862,
+            0.894
+          ],
+          "content": "Although **GIBBSSAMPLER** performs well in many cases, it may converge to a suboptimal solution, particularly for difficult search problems with elusive motifs. A **local optimum** is a solution that is optimal within a small neighboring set of solutions, which is in contrast to a **global optimum**, or the optimal solution among all possible solutions. Since **GIBBSSAMPLER** explores just a small subset of solutions, it may “get stuck” in a local optimum. For this reason, similarly to **RANDOMIZEDMOTIFSEARCH**, it should be run many times with the hope that one of these runs will produce the best-scoring"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.889,
+            0.672,
+            0.966,
+            0.733
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_127_image_10.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.465,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": "103"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "DocHdl1OnVERSA-PPM01tmpTarget",
+      "created_at": "2015-08-17T16:48:25Z",
+      "modified_at": "2018-07-08T15:12:16-07:00",
+      "creator_application": "Prinect Printready",
+      "producer_application": "Mac OS X 10.10.4 Quartz PDFContext",
+      "page_count": 380,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 112,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 113,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 114,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 115,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 116,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 117,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 118,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 119,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 120,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 121,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 122,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 123,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 124,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 125,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 126,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 127,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

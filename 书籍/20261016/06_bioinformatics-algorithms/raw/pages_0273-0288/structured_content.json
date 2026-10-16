@@ -1,0 +1,2049 @@
+{
+  "pages": [
+    {
+      "page_idx": 272,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.256,
+            0.082
+          ],
+          "content": "C H A P T E R 5"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.195,
+            0.109,
+            0.84,
+            0.394
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph TD\n  A[\"tights\"] --> B(\"leotard\")\n  B --> C(\"cape\")\n  B --> D(\"shorts\")\n  D --> E(\"boots\")\n  C --> F(\"gloves\")\n  C --> G(\"hood\")\n  E --> H(\"belt\")\n  H --> I(\"MUST REMEMBER-FIRST TIGHTS THEN BOOTS\")\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.19,
+                0.407,
+                0.842,
+                0.458
+              ],
+              "content": "FIGURE 5.13 The DAG associated with the Dressing Challenge Problem. If a directed edge connects two items of clothing, then the first item must be put on before the second item."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_272_image_1.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.495,
+            0.892,
+            0.577
+          ],
+          "content": "To solve the Dressing Challenge Problem, we need to arrange the nodes in the DAG in Figure 5.13 along a line so that every directed edge connects a node to a node on its right (Figure 5.14). To get dressed without any mishaps, you can simply visit nodes from left to right."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.58,
+            0.893,
+            0.664
+          ],
+          "content": "To find a longest path in an arbitrary DAG, we first need to order the nodes of the DAG so that every node falls after all its predecessors. Formally, an ordering of nodes $\\left( a _ { 1 } , \\cdots , a _ { k } \\right)$ in a DAG is called a **topological ordering** if every edge $\\left( a _ { i } , a _ { j } \\right)$ of the DAG connects a node with a smaller index to a node with a larger index, $\\mathrm { i . e . } , i < j$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.686,
+            0.87,
+            0.706
+          ],
+          "content": "**EXERCISE BREAK:** Construct a topological ordering of the DAG in Figure 5.12."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.735,
+            0.87,
+            0.777
+          ],
+          "content": "**EXERCISE BREAK:** How many topological orderings does the Dressing Challenge DAG have?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.8,
+            0.897,
+            0.884
+          ],
+          "content": "The reason why **MANHATTANTOURIST** is able to find a longest path in a rectangular grid is that its pseudocode implicitly orders nodes according to the “column-by-column” topological ordering shown in Figure 5.15 (left). The “row-by-row” ordering (Figure 5.15 (right)) gives another topological ordering of a rectangular grid."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.041,
+            0.674,
+            0.102,
+            0.783
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_272_image_8.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.944,
+            0.534,
+            0.961
+          ],
+          "content": "248"
+        }
+      ]
+    },
+    {
+      "page_idx": 273,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.435,
+            0.065,
+            0.856,
+            0.08
+          ],
+          "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.159,
+            0.109,
+            0.805,
+            0.468
+          ],
+          "sub_type": "flowchart",
+          "content": "This diagram illustrates the classification of various body parts (such as tights, leotard, boots, and gloves) into two distinct groups based on their relative positioning.",
+          "captions": [
+            {
+              "bbox": [
+                0.156,
+                0.479,
+                0.804,
+                0.517
+              ],
+              "content": "FIGURE 5.14 Two different topological orderings of the Dressing Challenge DAG from Figure 5.13."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_273_image_1.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.175,
+            0.56,
+            0.778,
+            0.768
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  subgraph Left Diagram\n  V1[\"V1\"] --> V2[\"V2\"]\n  V2 --> V3[\"V3\"]\n  V3 --> V4[\"V4\"]\n  V4 --> V5[\"V5\"]\n  V6[\"V6\"] --> V7[\"V7\"]\n  V7 --> V8[\"V8\"]\n  V8 --> V9[\"V9\"]\n  V9 --> V10[\"V10\"]\n  V10 --> V11[\"V11\"]\n  V11 --> V12[\"V12\"]\n  V12 --> V13[\"V13\"]\n  V13 --> V14[\"V14\"]\n  V14 --> V15[\"V15\"]\n  V16[\"V16\"] --> V17[\"V17\"]\n  V17 --> V18[\"V18\"]\n  V18 --> V19[\"V19\"]\n  V19 --> V20[\"V20\"]\n  V20 --> V21[\"V21\"]\n  V21 --> V22[\"V22\"]\n  V22 --> V23[\"V23\"]\n  V23 --> V24[\"V24\"]\n  V24 --> V25[\"V25\"]\n  end\n\n  subgraph Right Diagram\n  V1 --> V2_1[\"V1\"] --> V2_2[\"V2\"] --> V3_1[\"V3\"] --> V4_1[\"V4\"] --> V5_1[\"V5\"]\n    V6 <--> V7_1[\"V6\"] --> V8_1[\"V8\"] --> V9_1[\"V9\"] --> V10_1[\"V10\"]\n    V11 <--> V12_1[\"V11\"] --> V13_1[\"V13\"] --> V14_1[\"V14\"] --> V15_1[\"V15\"]\n    V16 <--> V17_1[\"V16\"] --> V18_1[\"V18\"] --> V19_1[\"V19\"] --> V20_1[\"V20\"]\n    V21 <--> V22_1[\"V21\"] --> V23_1[\"V23\"] --> V24_1[\"V24\"] --> V25_1[\"V25\"]\n  end\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.155,
+                0.778,
+                0.804,
+                0.816
+              ],
+              "content": "FIGURE 5.15 The column-by-column (left) and row-by-row (right) topological orderings of a rectangular grid."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_273_image_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.129,
+            0.844,
+            0.833,
+            0.886
+          ],
+          "content": "**STOP and Think:** Rewrite the **MANHATTANTOURIST** pseudocode based on the topological ordering shown in Figure 5.16."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.89,
+            0.835,
+            0.965,
+            0.896
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_273_image_6.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.465,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": "249"
+        }
+      ]
+    },
+    {
+      "page_idx": 274,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.065,
+            0.256,
+            0.082
+          ],
+          "content": "C H A P T E R 5"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.384,
+            0.141,
+            0.648,
+            0.346
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  V1[\"V1\"] --> V2[\"V2\"]\n  V2 --> V3[\"V3\"]\n  V3 --> V4[\"V4\"]\n  V4 --> V10[\"V10\"]\n  V10 --> V11[\"V11\"]\n  V6[\"V6\"] --> V7[\"V7\"]\n  V7 --> V8[\"V8\"]\n  V8 --> V9[\"V9\"]\n  V9 --> V12[\"V12\"]\n  V12 --> V19[\"V19\"]\n  V19 --> V20[\"V20\"]\n  V15[\"V15\"] --> V16[\"V16\"]\n  V16 --> V17[\"V17\"]\n  V17 --> V21[\"V21\"]\n  V21 --> V24[\"V24\"]\n  V24 --> V25[\"V25\"]\n  V22[\"V22\"] --> V23[\"V23\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.199,
+                0.363,
+                0.835,
+                0.382
+              ],
+              "content": "FIGURE 5.16 Another topological ordering of the rectangular grid from Figure 5.15."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_274_image_1.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.411,
+            0.897,
+            0.558
+          ],
+          "content": "It can be proven that any DAG has a topological ordering, and that this topological ordering can be constructed in time proportional to the number of edges in the graph (see **DETOUR: Constructing a Topological Ordering**). Once we have a topological ordering, we can compute the length of the longest path from source to sink by visiting the nodes of the DAG in the order dictated by the topological ordering, which is achieved by the following algorithm. For simplicity, we assume that the source node is the only node with indegree 0 in Graph."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.165,
+            0.581,
+            0.773,
+            0.753
+          ],
+          "sub_type": "algorithm",
+          "content": "LONGESTPATH(Graph, source, sink)\n    for each node b in Graph\n        $s_b \\leftarrow -\\infty$\n    $s_{source} \\leftarrow 0$\n    topologically order Graph\n    for each node b in Graph (following the topological order)\n        $s_b \\leftarrow \\max_{\\text{all predecessors a of node } b} \\{s_a + \\text{weight of edge from } a \\text{ to } b\\}$\n    return $s_{sink}$",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.778,
+            0.895,
+            0.818
+          ],
+          "content": "Since every edge participates in only a single recurrence, the runtime of **LONGESTPATH** is proportional to the number of edges in the DAG Graph."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.82,
+            0.897,
+            0.906
+          ],
+          "content": "We can now efficiently compute the length of a longest path in an arbitrary DAG, but we do not yet know how to convert **LONGESTPATH** into an algorithm that will construct this longest path. In the next section, we will use the Longest Common Subsequence Problem to explain how to construct a longest path in a DAG."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.016,
+            0.455,
+            0.107,
+            0.471
+          ],
+          "content": "PAGE 284"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.946,
+            0.534,
+            0.961
+          ],
+          "content": "250"
+        }
+      ]
+    },
+    {
+      "page_idx": 275,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.435,
+            0.065,
+            0.858,
+            0.081
+          ],
+          "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.319,
+            0.112,
+            0.646,
+            0.132
+          ],
+          "level": 2,
+          "content": "Backtracking in the Alignment Graph"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.148,
+            0.872,
+            0.278
+          ],
+          "content": "In Figure 5.11 (bottom left), we highlighted each edge selected by **MANHATTANTOURIST**. To form a longest path, we simply need to find a path from source to sink formed by highlighted edges (more than one such path may exist). However, if we were to walk from source to sink along the highlighted edges, we might reach a dead end, such as the node $( 1 , 2 )$ . In contrast, every path from the sink will bring us back to the source if we **backtrack** in the direction opposite to each highlighted edge (Figure 5.17)."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.325,
+            0.309,
+            0.639,
+            0.55
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  Start((0)) -->|1| Step1((1))\n  Step1 -->|3| Step2((3))\n  Step2 -->|2| Step3((5))\n  Step3 -->|4| Step4((9))\n  Step4 -->|0| End((9))\n  Step3 -->|2| Step7((7))\n  Step4 -->|4| Step13((13))\n  Step13 -->|2| End\n  Step3 -->|2| Step15((15))\n  Step1 -->|4| Step5((5))\n  Step5 -->|4| Step9((9))\n  Step9 -->|5| End\n  Step1 -->|3| Step4((4))\n  Step4 -->|6| Step10((10))\n  Step10 -->|7| Step17((17))\n  Step17 -->|3| Step20((20))\n  Step20 -->|4| End\n  Step1 -->|4| Step14((14))\n  Step14 -->|6| End\n  Step20 -->|2| Step22((22))\n  Step22 -->|0| End\n  Step20 -->|5| Step22\n  Step22 -->|8| Step30((30))\n  Step30 -->|2| End\n  Step30 -->|2| Step32((32))\n  Step32 -->|2| End\n  End --> End\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.155,
+                0.561,
+                0.808,
+                0.596
+              ],
+              "content": "FIGURE 5.17 Following edges from the sink backwards to the source produces the red path in the DAG above, which highlights a longest path from the source to sink."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_275_image_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.629,
+            0.865,
+            0.776
+          ],
+          "content": "We can use this backtracking idea to construct an LCS of strings v and w. We know that if we assign a weight of 1 to the edges in ALIGNMENTGRAPH $( v , w )$ corresponding to matches and assign a weight of 0 to all other edges, then $s _ { | v | ,   | w | }$ gives the length of an LCS. The following algorithm maintains a record of which edge in ALIGNMENTGRAPH $( v , w )$ was used to compute each value $s _ { i , j }$ by utilizing backtrack**ing pointers**, which take one of the three values ${ \\mathrm { ~  ~ { ~  ~ } ~ } } , { \\mathrm { ~  ~ { ~  ~ } ~ } } , { \\mathrm { ~ o r ~ \\textquotedblleft ~ { ~  ~ } ~ } } \\rangle$ . Backtracking pointers are stored in a matrix Backtrack."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.794,
+            0.833,
+            0.836
+          ],
+          "content": "**STOP and Think:** How does changing the order of the three $\\text{\" }  if  \\text{\" }$ statements in the **LCSBACKTRACK** pseudocode affect the computation of Backtrack?"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.889,
+            0.785,
+            0.967,
+            0.846
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_275_image_7.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.465,
+            0.946,
+            0.496,
+            0.961
+          ],
+          "content": "251"
+        }
+      ]
+    },
+    {
+      "page_idx": 276,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.082
+          ],
+          "content": "C H A P T E R 5"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.164,
+            0.114,
+            0.574,
+            0.509
+          ],
+          "sub_type": "algorithm",
+          "content": "LCSBACKTRACK(v, w)\n    for $i \\leftarrow 0$ to $|v|$\n        $s_{i,0} \\leftarrow 0$\n    for $j \\leftarrow 0$ to $|w|$\n        $s_{0,j} \\leftarrow 0$\n    for $i \\leftarrow 1$ to $|v|$\n        for $j \\leftarrow 1$ to $|w|$\n\n        $s_{i,j} \\leftarrow \\max \\begin{cases} s_{i-1,j} \\\\ s_{i,j-1} \\\\ s_{i-1,j-1} + 1, \\text{ if } v_i = w_j \\end{cases}$\n\n        if $s_{i,j} = s_{i-1,j}$\n            $Backtrack_{i,j} \\leftarrow '' \\downarrow''$\n    else if $s_{i,j} = s_{i,j-1}$\n        $Backtrack_{i,j} \\leftarrow '' \\rightarrow''$\n    else if $s_{i,j} = s_{i-1,j-1} + 1$ and $v_i = w_j$\n        $Backtrack_{i,j} \\leftarrow '' \\searrow''$\nreturn Backtrack",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.533,
+            0.897,
+            0.639
+          ],
+          "content": "We now need to find a path from the source to the sink formed by the highlighted edges. The algorithm below solves the Longest Common Subsequence Problem by using the information in Backtrack. **OUTPUTLCS**(Backtrack, $v , i , j )$ outputs an LCS between the i-prefix of v and the j-prefix of w. The initial invocation that outputs an LCS of v and w is **OUTPUTLCS**(Backtrack, $v , | v | , | w | )$"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.164,
+            0.659,
+            0.549,
+            0.873
+          ],
+          "sub_type": "code",
+          "content": "```matlab\nOUTPUTLCS(Backtrack, v, i, j)\n    if i = 0 or j = 0\n        return\n    if Backtrack_{i,j} = ↓\n        OUTPUTLCS(Backtrack, v, i - 1, j)\n    else if Backtrack_{i,j} = →\n        OUTPUTLCS(Backtrack, v, i, j - 1)\n    else\n        OUTPUTLCS(Backtrack, v, i - 1, j - 1)\n        output v_i\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.031,
+            0.731,
+            0.11,
+            0.796
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_276_image_4.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.946,
+            0.534,
+            0.961
+          ],
+          "content": "252"
+        }
+      ]
+    },
+    {
+      "page_idx": 277,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.434,
+            0.065,
+            0.858,
+            0.081
+          ],
+          "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.112,
+            0.833,
+            0.175
+          ],
+          "content": "**STOP and Think: OUTPUTLCS** is a recursive algorithm, but it is efficient. What makes it different from the inefficient recursive algorithms for making change and finding a longest path in a DAG?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.197,
+            0.862,
+            0.239
+          ],
+          "content": "The backtracking method can be generalized to construct a longest path in any DAG. Whenever we compute $s _ { b }$ as"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.217,
+            0.256,
+            0.745,
+            0.286
+          ],
+          "content": "s _ {b} = \\max _ {\\text { all   predecessors   } a \\text {   of   node   } b} \\{s _ {a} + \\text { weight   of   edge   from   } a \\text {   to   } b \\},",
+          "image_source": "images/page_277_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.301,
+            0.861,
+            0.364
+          ],
+          "content": "we simply need to store a predecessor of b that was used in the computation of $s _ { b }$ so that we can backtrack later on. You are now ready to use backtracking to find the longest path in an arbitrary DAG."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.386,
+            0.835,
+            0.429
+          ],
+          "content": "**EXERCISE BREAK:** Currently, **OUTPUTLCS** finds a single LCS of two strings. Modify **OUTPUTLCS** (and **LCSBACKTRACK**) to find every LCS of two strings."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.395,
+            0.474,
+            0.567,
+            0.493
+          ],
+          "level": 2,
+          "content": "Scoring Alignments"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.51,
+            0.473,
+            0.529
+          ],
+          "content": "What is wrong with the LCS scoring model?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.542,
+            0.859,
+            0.581
+          ],
+          "content": "Recall Marahiel’s alignment of the A-domains coding for Asp and Orn, which had **19** + **10** matches:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.605,
+            0.831,
+            0.625
+          ],
+          "content": "Y**AFD**LGYTCMFPV**LL**G**GG**ELHIVQKETYTAPDEIAHY**IK**EHG**IT**YIKL**TP**SLFHTIVNTASFAFDANFESLRLIVLGGEKIIPIDVIAFRKMYGHTE-FINH**YG**P**TEA**TIGA -**AFD**VSAGDFARA**LL**T**GG**QLIVCPNEVKMDPASLYAI**IK**KYD**IT**IFEA**TP**ALVIPLMEYI-YEQKLDISQLQILIVGSDSCSMEDFKTLVSRFGSTIRIVNS**YG**V**TEA**CIDS"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.648,
+            0.86,
+            0.774
+          ],
+          "content": "It is not difficult to construct an alignment having even more matches at the expense of introducing more indels. Yet the more indels we add, the less biologically relevant the alignment becomes, as it diverges further and further from the biologically correct alignment found by Marahiel. Below is the alignment with the maximum number of matches, representing an LCS of length $19+8+19=46.$ . This alignment is so long that we cannot fit it on a single line."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.13,
+            0.795,
+            0.835,
+            0.863
+          ],
+          "content": "Y**AFD**L--G-YTCMFP--V**LL**-**GG**GELH**IV**---Q-K-E--T-YTAPDEIAHY**IK**--EHG**IT**YI---KL**TP**SL-FHT -**AFD**VSAGD----FARA-**LL**T**GG**-QL-**IV**CPNEVKMDPASLY-A---I---**IK**KYD--**IT**-IFEA--**TP**ALV--- IVNTASFAFDANFE-----S-LR-**LIV**LGG-----EKIIPIDVIAFRK-M---YGHTEFI---NH**YG**P**TEA**TIGA IPLMEYIY-----EQKLDISQLQI**LIV**-GSDSCSME-----D---F-KTLVSRFGST--IRIVNS**YG**V**TEA**CIDS"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.889,
+            0.114,
+            0.967,
+            0.175
+          ],
+          "content": "STOP"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.889,
+            0.301,
+            0.966,
+            0.363
+          ],
+          "content": "[5D](http://rosalind.info/problems/5d)"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.465,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": "253"
+        }
+      ]
+    },
+    {
+      "page_idx": 278,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.259,
+            0.082
+          ],
+          "content": "C H A P T E R 5"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.031,
+            0.103,
+            0.11,
+            0.165
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_278_image_1.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.112,
+            0.873,
+            0.155
+          ],
+          "content": "**STOP and Think:** If Marahiel had constructed this alignment, would he have been able to infer the eight amino acid-long signatures of the non-ribosomal code?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.177,
+            0.897,
+            0.263
+          ],
+          "content": "Below, we highlight the purple amino acids representing the non-ribosomal signatures. Although these signatures are grouped in eight conserved columns in Marahiel’s alignment from the beginning of the chapter, only five of these columns have “survived” in the LCS alignment above, making it impossible to infer the non-ribosomal signatures:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.166,
+            0.274,
+            0.868,
+            0.303
+          ],
+          "sub_type": "code",
+          "content": "```css\nYAFDL--G-YTCMFP--VLL-GGGELHIV---Q-K-E--T-YTAPDEIAHYIK--EHGITYI---KLTPSL-FHT-AFDVSAGD----FARA-LLTGG-QL-IVCPNEVKMDPASLY-A---I----IKKYD--IT-IFEA--TPALV---\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.166,
+            0.312,
+            0.868,
+            0.34
+          ],
+          "sub_type": "code",
+          "content": "```txt\nIVNTASFAFDANFE-----S-LR-LIVLGG-----EKIIPIDVIAFRK-M---YGHTEFI---NHYGPTEATIGA\nIPLMEYIY-----EQKLDISQLQILIV-GSDSCSME-----D---F-KTLVSRFGST--IRIVNSYGVTEACIDS\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.354,
+            0.897,
+            0.503
+          ],
+          "content": "The frivolous matches hiding the real evolutionary scenario have appeared because nothing stopped us from introducing an excessive number of indels when building an LCS. Recalling our original alignment game in which we rewarded matched symbols, we need some way of penalizing indels and mismatches. First, let’s handle indels. Say that in addition to assigning matches a premium of +1, we assess each indel a penalty of - 4. The top-scoring alignment of the A-domains gets closer to the biologically correct alignment, with six of the columns corresponding to correctly aligned signatures."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.515,
+            0.861,
+            0.544
+          ],
+          "sub_type": "code",
+          "content": "```powershell\nYAFDLGYTCMFP-VLL-GGGELHIV-QKETYTAPDEI-AHYIKEHGITYI-KLTPSLFHTIVNTASFAFDANFE-AFDVS-AGDFARALLTGG-QL-IVCPNEVKMDPASLYA-IIKKYDIT-IFEATPAL--VIPLME-YIYEQKLD\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.553,
+            0.631,
+            0.581
+          ],
+          "sub_type": "code",
+          "content": "```txt\n-S-LR-LIVLGGEKIIPIDVIAFRKM---YGHTE-FINHYGPTEATIGA\nISQLQILIV-GSDSC-SME--DFKTLVSRFGSTIRIVNSYGVTEACIDS\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.61,
+            0.283,
+            0.628
+          ],
+          "level": 2,
+          "content": "Scoring matrices"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.641,
+            0.896,
+            0.725
+          ],
+          "content": "To generalize the alignment scoring model, we still award +1 for matches, but we also penalize mismatches by some positive constant µ (the **mismatch penalty**) and indels by some positive constant s (the **indel penalty**). As a result, the **score** of an alignment is equal to"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.322,
+            0.742,
+            0.712,
+            0.761
+          ],
+          "content": "\\# \\text {matches} - \\mu \\cdot \\# \\text {mismatches} - \\sigma \\cdot \\# \\text {indels}.",
+          "image_source": "images/page_278_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.778,
+            0.895,
+            0.819
+          ],
+          "content": "For example, with the parameters $\\mu   =   1$ and $\\sigma   =   2 ,$ , the alignment below will be assigned a score of -4:"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.365,
+            0.835,
+            0.668,
+            0.896
+          ],
+          "sub_type": "text_image",
+          "content": "A T - G T T A T A\nA T C G T - C - C\n+1 +1 -2 +1 +1 -2 -1 -2 -1",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_278_image_13.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.946,
+            0.534,
+            0.961
+          ],
+          "content": "254"
+        }
+      ]
+    },
+    {
+      "page_idx": 279,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.434,
+            0.065,
+            0.858,
+            0.081
+          ],
+          "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.112,
+            0.862,
+            0.26
+          ],
+          "content": "Biologists have further refined this cost function to allow for the fact that some mutations may be more likely than others, which calls for mismatches and indel penalties that differ depending on the specific symbols involved. We will extend the k-letter alphabet to include the space symbol and then construct a $( k + 1 ) \\times ( k + 1 )$ **scoring matrix** Score holding the score of aligning every pair of symbols. The scoring matrix for comparing DNA sequences $( k = 4 )$ when all mismatches are penalized by $\\mu$ and all indels are penalized by $\\sigma$ is shown below."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.367,
+            0.275,
+            0.596,
+            0.4
+          ],
+          "content": "|  | A | C | G | T | - |\n| --- | --- | --- | --- | --- | --- |\n| A | +1 | -μ | -μ | -μ | -σ |\n| C | -μ | +1 | -μ | -μ | -σ |\n| G | -μ | -μ | +1 | -μ | -σ |\n| T | -μ | -μ | -μ | +1 | -σ |\n| - | -σ | -σ | -σ | -σ |  |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_279_table_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.414,
+            0.861,
+            0.499
+          ],
+          "content": "Although scoring matrices for DNA sequence comparison are usually defined only by the parameters $\\mu$ and $\\sigma ,$ scoring matrices for protein sequence comparison weight different mutations differently and become quite involved (see DETOUR: PAM Scor**ing Matrices**)."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.871,
+            0.45,
+            0.984,
+            0.484
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_279_image_4.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.34,
+            0.544,
+            0.622,
+            0.563
+          ],
+          "level": 2,
+          "content": "From Global to Local Alignment"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.58,
+            0.257,
+            0.599
+          ],
+          "content": "Global alignment"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.611,
+            0.861,
+            0.655
+          ],
+          "content": "You should now be ready to modify the alignment graph to solve a generalized form of the alignment problem that takes a scoring matrix as input."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.131,
+            0.688,
+            0.391,
+            0.706
+          ],
+          "level": 2,
+          "content": "Global Alignment Problem:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.709,
+            0.766,
+            0.73
+          ],
+          "content": "Find a highest-scoring alignment of two strings as defined by a scoring matrix."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.17,
+            0.741,
+            0.578,
+            0.76
+          ],
+          "content": "**Input**: Two strings and a scoring matrix Score."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.17,
+            0.762,
+            0.834,
+            0.803
+          ],
+          "content": "**Output**: An alignment of the strings whose alignment score (as defined by Score) is maximized among all possible alignments of the strings."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.889,
+            0.718,
+            0.967,
+            0.782
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_279_image_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.837,
+            0.861,
+            0.88
+          ],
+          "content": "To solve the Global Alignment Problem, we still must find a longest path in the alignment graph after updating the edge weights to reflect the values in the scoring matrix"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.464,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": "255"
+        }
+      ]
+    },
+    {
+      "page_idx": 280,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.256,
+            0.082
+          ],
+          "content": "C H A P T E R 5"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.112,
+            0.897,
+            0.198
+          ],
+          "continues_prev": true,
+          "content": "(Figure 5.18). Recalling that deletions correspond to vertical edges (#), insertions correspond to horizontal edges (!), and matches/mismatches correspond to diagonal edges $( \\searrow / \\searrow )$ , we obtain the following recurrence for $s _ { i , j } ,$ the length of a longest path from (0, 0) to $( i , j )$ :"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.35,
+            0.211,
+            0.677,
+            0.281
+          ],
+          "content": "s _ {i, j} = \\max \\left\\{ \\begin{array}{l l} s _ {i - 1, j} & + S c o r e (v _ {i}, -) \\\\ s _ {i, j - 1} & + S c o r e (-, w _ {j}) \\\\ s _ {i - 1, j - 1} & + S c o r e (v _ {i}, w _ {j}). \\end{array} \\right.",
+          "image_source": "images/page_280_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.297,
+            0.895,
+            0.339
+          ],
+          "content": "When the match reward is $+ 1 ,$ , the mismatch penalty is $\\mu ,$ and the indel penalty is $\\sigma ,$ the alignment recurrence can be written as follows:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.346,
+            0.354,
+            0.685,
+            0.444
+          ],
+          "content": "s _ {i, j} = \\max \\left\\{ \\begin{array}{l l} s _ {i - 1, j} & - \\sigma \\\\ s _ {i, j - 1} & - \\sigma \\\\ s _ {i - 1, j - 1} + 1, & \\text {if} v _ {i} = w _ {j} \\\\ s _ {i - 1, j - 1} - \\mu , & \\text {if} v _ {i} \\neq w _ {j}. \\end{array} \\right.",
+          "image_source": "images/page_280_equation_4.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.348,
+            0.474,
+            0.688,
+            0.786
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  T[\"T\"] -->|\"T\\n-σ\"| C[\"C\"]\n  C -->|\"C\\n-σ\"| G[\"G\"]\n  G -->|\"G\\n-σ\"| T[\"T\"]\n  T -->|\"T\\n-σ\"| A[\"A\"]\n  A -->|\"A\\n-σ\"| C\n  C -->|\"C\\n-μ\"| G\n  G -->|\"G\\n-μ\"| C\n  C -->|\"G\\n-σ\"| T\n  T -->|\"T\\n-σ\"| A\n  A -->|\"T\\n-σ\"| C\n  C -->|\"C\\n-σ\"| G\n  G -->|\"C\\n-σ\"| T\n  T -->|\"C\\n-μ\"| A\n  A -->|\"C\\n-μ\"| C\n  C -->|\"C\\n-σ\"| G\n  G -->|\"C\\n-σ\"| T\n  T -->|\"C\\n-σ\"| A\n  A -->|\"C\\n-σ\"| C\n  C -->|\"G\"| G\n  G -->|\"G\"| T\n  T -->|\"G\"| C\n  T -->|\"G\"| G\n  G -->|\"G\"| C\n  C -->|\"G\"| A\n  A -->|\"G\"| C\n  G -->|\"G\"| A\n  A -->|\"G\"| C\n  G -->|\"G\"| A\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.19,
+                0.796,
+                0.842,
+                0.832
+              ],
+              "content": "FIGURE 5.18 ALIGNMENTGRAPH(TGTTA, TCGT), with each edge colored according to whether it represents a match, mismatch, insertion, or deletion."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_280_image_5.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.944,
+            0.534,
+            0.961
+          ],
+          "content": "256"
+        }
+      ]
+    },
+    {
+      "page_idx": 281,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.434,
+            0.065,
+            0.858,
+            0.081
+          ],
+          "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.112,
+            0.373,
+            0.132
+          ],
+          "level": 2,
+          "content": "Limitations of global alignment"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.143,
+            0.862,
+            0.269
+          ],
+          "content": "Analysis of **homeobox genes** offers an example of a problem for which global alignment may fail to reveal biologically relevant similarities. These genes regulate embryonic development and are present in a large variety of species, from flies to humans. Homeobox genes are long, and they differ greatly between species, but an approximately 60 amino acid-long region in each gene, called the **homeodomain**, is highly conserved. For instance, consider the mouse and human homeodomains below."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.451,
+            0.289,
+            0.513,
+            0.304
+          ],
+          "level": 2,
+          "content": "Mouse"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.139,
+            0.306,
+            0.831,
+            0.337
+          ],
+          "sub_type": "text",
+          "content": "...**AR**RSRTHFTKFQTDILIE**AFE**KNR**FP**GIV**TR**E**KLA**Q**QTG**IP**ESRI**HI**WFQ**NRRARHPDPG...\n...**AR**QKQTFITWTQKNRLVQ**AFE**RNP**FP**DTA**TR**K**KLA**E**QTG**LQ**ESRI**QM**WFQ**KQRSLYLKKS..."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.451,
+            0.34,
+            0.518,
+            0.355
+          ],
+          "level": 2,
+          "content": "Human"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.375,
+            0.862,
+            0.522
+          ],
+          "content": "The immediate question is how to find this conserved segment within the much longer genes and ignore the flanking areas, which exhibit little similarity. Global alignment seeks similarities between two strings across their entire length; however, when searching for homeodomains, we are looking for smaller, local regions of similarity and do not need to align the entire strings. For example, the global alignment below has 22 matches, 18 indels, and 2 mismatches, resulting in the score 22 \u0000 18 \u0000 2 = 2 (if s = µ = 1):"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.21,
+            0.538,
+            0.738,
+            0.573
+          ],
+          "content": "\\begin{array}{l} \\text {GCC - C - AGTC - TATGT - CAGGGGGCACG--A - GCATGCACA-} \\\\ \\text {GCCGCC - GTCGT - T - TTCAG----CA - GTTATGT - T - CAGAT} \\end{array}",
+          "image_source": "images/page_281_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.588,
+            0.861,
+            0.648
+          ],
+          "content": "However, these sequences can be aligned differently (with 17 matches and 32 indels) based on a highly conserved interval represented by the substrings CAGTCTATGTCAG and CAGTTATGTTCAG:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.168,
+            0.666,
+            0.78,
+            0.701
+          ],
+          "content": "\\begin{array}{l} \\text {---G---C---C--CAGTCTATG-TCAGGGGGCACGAGCATGCACA} \\\\ \\text {GCCGCCGTCGTTTTCAGCAGT-TATGTTCAG----A----T----} \\end{array}",
+          "image_source": "images/page_281_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.715,
+            0.859,
+            0.775
+          ],
+          "content": "This alignment has fewer matches and a lower score of 17 \u0000 32 = \u000015, even though the conserved region of the alignment contributes a score of 12 \u0000 2 = 10, which is hardly an accident."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.78,
+            0.861,
+            0.884
+          ],
+          "content": "Figure 5.19 shows the two alignment paths corresponding to these two different alignments. The upper path, corresponding to the second alignment above, loses out because it contains many heavily penalized indels on either side of the diagonal corresponding to the conserved interval. As a result, global alignment outputs the biologically irrelevant lower path."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.464,
+            0.946,
+            0.498,
+            0.961
+          ],
+          "content": "257"
+        }
+      ]
+    },
+    {
+      "page_idx": 282,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.255,
+            0.082
+          ],
+          "content": "C H A P T E R 5"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.219,
+            0.106,
+            0.819,
+            0.598
+          ],
+          "sub_type": "line",
+          "content": "| Nucleotide Position | Alignment Type |\n| --- | --- |\n| G | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| C | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| T | Local |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |\n| A | Global |",
+          "captions": [
+            {
+              "bbox": [
+                0.19,
+                0.613,
+                0.842,
+                0.667
+              ],
+              "content": "FIGURE 5.19 Global and local alignments of two DNA strings that share a highly conserved interval. The relevant alignment that captures this interval (upper path) loses to an irrelevant alignment (lower path), since the former incurs heavy indel penalties."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_282_chart_1.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.704,
+            0.897,
+            0.81
+          ],
+          "content": "When biologically significant similarities are present in some parts of sequences v and w and absent from others, biologists attempt to ignore global alignment and instead align substrings of v and w, which yields a **local alignment** of the two strings. The problem of finding substrings that maximize the global alignment score over all substrings of v and w is called the **Local Alignment Problem**."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.944,
+            0.534,
+            0.96
+          ],
+          "content": "258"
+        }
+      ]
+    },
+    {
+      "page_idx": 283,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.435,
+            0.065,
+            0.858,
+            0.082
+          ],
+          "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.132,
+            0.129,
+            0.376,
+            0.147
+          ],
+          "level": 2,
+          "content": "Local Alignment Problem:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.15,
+            0.628,
+            0.169
+          ],
+          "content": "Find the highest-scoring local alignment between two strings."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.17,
+            0.182,
+            0.662,
+            0.2
+          ],
+          "content": "**Input**: Strings v and w as well as a scoring matrix Score."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.17,
+            0.203,
+            0.834,
+            0.245
+          ],
+          "content": "**Output**: Substrings of v and w whose global alignment score (as defined by Score) is maximized among all substrings of v and w."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.278,
+            0.862,
+            0.364
+          ],
+          "content": "The straightforward way to solve the Local Alignment Problem is to find the longest path connecting every pair of nodes in the alignment graph (rather than just those connecting the source and sink, as in the Global Alignment Problem), and then to select the path having maximum weight over all these longest paths."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.129,
+            0.384,
+            0.631,
+            0.406
+          ],
+          "content": "**STOP and Think:** What is the runtime of this approach?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.438,
+            0.421,
+            0.459
+          ],
+          "content": "Free taxi rides in the alignment graph"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.469,
+            0.862,
+            0.659
+          ],
+          "content": "For a faster local alignment approach, imagine a “free taxi ride” from the source (0, 0) to the node representing the start node of the conserved (red) interval in Figure 5.19. Imagine also a free taxi ride from the end node of the conserved interval to the sink. If such rides were available (Figure 5.20), then you could reach the starting node of the conserved interval for free, instead of incurring heavy penalties as in global alignment. Then, you could travel along the conserved interval to its end node, accumulating positive match scores. Finally, you could take another free ride from the end node of the conserved interval to the sink. The resulting score of this ride is equal to the alignment score of only the conserved intervals, as desired."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.661,
+            0.861,
+            0.766
+          ],
+          "content": "Connecting the source (0, 0) to every other node by adding a zero-weight edge and connecting every node to the sink $( n , m )$ by a zero-weight edge will result in a DAG perfectly suited for solving the Local Alignment Problem (Figure 5.21). Because of free taxi rides, we no longer need to construct a longest path between every pair of nodes in the graph — the longest path from source to sink yields an optimal local alignment!"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.768,
+            0.862,
+            0.875
+          ],
+          "content": "The total number of edges in the graph in Figure 5.21 is $\\mathcal { O } ( | v | \\cdot | w | )$ , which is still small. Since the runtime of finding a longest path in a DAG is defined by the number of edges in the graph, the resulting local alignment algorithm will be fast. As for computing the values $s _ { i , j } ,$ adding zero-weight edges from (0, 0) to every node has made the source node $( 0 , 0 )$ a predecessor of every node $( i , j )$ . Therefore, there are now four"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.889,
+            0.364,
+            0.967,
+            0.426
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_283_image_11.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.465,
+            0.946,
+            0.499,
+            0.961
+          ],
+          "content": "259"
+        }
+      ]
+    },
+    {
+      "page_idx": 284,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.256,
+            0.082
+          ],
+          "content": "C H A P T E R 5"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.112,
+            0.895,
+            0.152
+          ],
+          "continues_prev": true,
+          "content": "edges entering $( i , j )$ , which adds only one new term to the longest path recurrence relation:"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.031,
+            0.179,
+            0.11,
+            0.242
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_284_image_2.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.348,
+            0.169,
+            0.66,
+            0.258
+          ],
+          "content": "s _ {i, j} = \\max \\left\\{ \\begin{array}{l l} 0 \\\\ s _ {i - 1, j} & + S c o r e (v _ {i}, -) \\\\ s _ {i, j - 1} & + S c o r e (-, w _ {j}) \\\\ s _ {i - 1, j - 1} & + S c o r e (v _ {i}, w _ {j}) \\end{array} \\right.",
+          "image_source": "images/page_284_equation_3.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.221,
+            0.309,
+            0.816,
+            0.786
+          ],
+          "sub_type": "line",
+          "content": "| Position | Sequence |\n| --- | --- |\n| 1 | G |\n| 2 | C |\n| 3 | C |\n| 4 | C |\n| 5 | C |\n| 6 | A |\n| 7 | G |\n| 8 | T |\n| 9 | C |\n| 10 | T |\n| 11 | A |\n| 12 | T |\n| 13 | G |\n| 14 | T |\n| 15 | C |\n| 16 | A |\n| 17 | G |\n| 18 | G |\n| 19 | G |\n| 20 | G |\n| 21 | G |\n| 22 | C |\n| 23 | A |\n| 24 | C |\n| 25 | G |\n| 26 | A |\n| 27 | G |\n| 28 | A |\n| 29 | G |\n| 30 | C |\n| 31 | A |\n| 32 | T |\n| 33 | G |\n| 34 | C |\n| 35 | A |\n| 36 | C |\n| 37 | A |\n| 38 | C |\n| 39 | A |",
+          "captions": [
+            {
+              "bbox": [
+                0.19,
+                0.804,
+                0.845,
+                0.873
+              ],
+              "content": "FIGURE 5.20 Modifying Figure 5.19 by adding “free taxi ride” edges (having weight 0) connecting the source to the start node of the conserved interval and connecting the end node of the conserved interval to the sink. These new edges allow us to score only the local alignment containing the conserved interval."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_284_chart_4.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.944,
+            0.534,
+            0.958
+          ],
+          "content": "260"
+        }
+      ]
+    },
+    {
+      "page_idx": 285,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.434,
+            0.065,
+            0.858,
+            0.081
+          ],
+          "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.113,
+            0.859,
+            0.155
+          ],
+          "content": "Also, because node $( n , m )$ now has every other node as a predecessor, $s _ { n , m }$ will be equal to the largest value of $s _ { i , j }$ over the entire alignment graph."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.328,
+            0.184,
+            0.637,
+            0.374
+          ],
+          "sub_type": "flowchart",
+          "content": "This diagram illustrates a network flow or data processing workflow, showing multiple input nodes connected by directional arrows to produce output nodes via directional arrows.",
+          "captions": [
+            {
+              "bbox": [
+                0.155,
+                0.386,
+                0.808,
+                0.454
+              ],
+              "content": "FIGURE 5.21 The local alignment algorithm introduces zero-weight edges (shown by blue dashed lines) connecting the source (0, 0) to every other node in the alignment graph, as well as zero-weight edges (shown by red dashed lines) connecting every node to the sink node."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_285_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.485,
+            0.862,
+            0.633
+          ],
+          "content": "You might still be wondering why we are allowed to free taxi rides through the alignment graph. The point is that you are in charge of designing whatever Manhattanlike DAG you like, as long as it adequately models the specific alignment problem at hand. Transformations like free taxi rides will become a common theme in this chapter. Various alignment problems can be solved by constructing an appropriate DAG with as few edges as possible (to minimize runtime), assigning edge weights to model the requirements of the problem, and then finding a longest path in this DAG."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.291,
+            0.679,
+            0.67,
+            0.699
+          ],
+          "level": 2,
+          "content": "The Changing Faces of Sequence Alignment"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.715,
+            0.861,
+            0.777
+          ],
+          "content": "In this section, we will describe three sequence comparison problems and let you apply what you have already learned to solve them. Hint: the idea is to frame each problem as an instance of the Longest Path in a DAG Problem."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.8,
+            0.216,
+            0.817
+          ],
+          "level": 2,
+          "content": "Edit distance"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.831,
+            0.862,
+            0.896
+          ],
+          "content": "In 1966, Vladimir Levenshtein introduced the notion of the **edit distance** between two strings as the minimum number of **edit operations** needed to transform one string into another. Here, an edit operation is the insertion, deletion, or substitution of a"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.465,
+            0.944,
+            0.496,
+            0.958
+          ],
+          "content": "261"
+        }
+      ]
+    },
+    {
+      "page_idx": 286,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.14,
+            0.066,
+            0.256,
+            0.082
+          ],
+          "content": "C H A P T E R 5"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.112,
+            0.895,
+            0.154
+          ],
+          "continues_prev": true,
+          "content": "single symbol. For example, TGCATAT can be transformed into ATCCGAT with five edit operations, implying that the edit distance between these strings is at most 5."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.257,
+            0.178,
+            0.777,
+            0.359
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph TD\n  A[\"TGCATAT\"] -->|↓| B[\"TGCATA\"]\n  B -->|↓| C[\"TGCAT\"]\n  C -->|↓| D[\"ATGCAT\"]\n  D -->|↓| E[\"ATCCAT\"]\n  E -->|↓| F[\"ATCCGAT\"]\n  G[\"delete last nucleotide\"] --> H[\"delete last nucleotide\"]\n  I[\"insert A at the front\"] --> J[\"substitute G for C in the 3rd position\"]\n  K[\"insert G after the 4th position\"] --> L[\"substitute G for C in the 3rd position\"]\n  M[\"downarrow\"] --> N[\"downarrow\"]\n```",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_286_image_2.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.031,
+            0.375,
+            0.11,
+            0.436
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_286_image_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.385,
+            0.869,
+            0.426
+          ],
+          "content": "**STOP and Think:** Can you transform TGCATAT into ATCCGAT using a smaller number of operations?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.45,
+            0.691,
+            0.468
+          ],
+          "content": "In fact, the edit distance between TGCATAT and ATCCGAT is 4:"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.257,
+            0.492,
+            0.777,
+            0.64
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph TD\n  A[\"TGCATAT\"] --> B[\"↓\"]\n  C[\"ATGCATAT\"] --> D[\"↓\"]\n  E[\"ATGCAAT\"] --> F[\"↓\"]\n  G[\"ATGCGAT\"] --> H[\"↓\"]\n  I[\"ATCCGAT\"] --> J[\"↓\"]\n  K[\"insert A at the front\"] --> L[\"delete the 6th nucleotide\"]\n  M[\"substitute A for G in the 5th position\"] --> N[\"substitute G for C in the 3rd position\"]\n```",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_286_image_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.673,
+            0.897,
+            0.714
+          ],
+          "content": "Levenshtein introduced edit distance but did not describe an algorithm for computing it, which we leave to you."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.031,
+            0.76,
+            0.11,
+            0.824
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_286_image_8.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.168,
+            0.748,
+            0.382,
+            0.765
+          ],
+          "level": 2,
+          "content": "Edit Distance Problem:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.77,
+            0.513,
+            0.79
+          ],
+          "content": "Find the edit distance between two strings."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.207,
+            0.802,
+            0.381,
+            0.821
+          ],
+          "content": "**Input**: Two strings."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.207,
+            0.823,
+            0.636,
+            0.843
+          ],
+          "content": "**Output**: The edit distance between these strings."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.5,
+            0.944,
+            0.534,
+            0.958
+          ],
+          "content": "262"
+        }
+      ]
+    },
+    {
+      "page_idx": 287,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.434,
+            0.065,
+            0.858,
+            0.081
+          ],
+          "content": "H O W D O W E C O M PA R E D N A S E Q U E N C E S ?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.113,
+            0.251,
+            0.131
+          ],
+          "level": 2,
+          "content": "Fitting alignment"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.143,
+            0.862,
+            0.309
+          ],
+          "content": "Say that we wish to compare the approximately 20,000 amino acid-long NRP synthetase from Bacillus brevis with the approximately 600 amino acid-long A-domain from Strepto myces roseosporus, the bacterium that produces the powerful antibiotic Daptomycin. We hope to find a region within the longer protein sequence v that has high similarity with all of the shorter sequence w. Global alignment will not work because it tries to align all of v to all of w; local alignment will not work because it tries to align substrings of both v and w. Thus, we have a distinct alignment application called the **Fitting Alignment Problem**."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.313,
+            0.861,
+            0.398
+          ],
+          "content": "“Fitting” w to v requires finding a substring v<sup>0</sup> of v that maximizes the global alignment score between $v ^ { \\prime }$ and w among all substrings of v. For example, the best global, local, and fitting alignments of v = GTAGGCTTAAGGTTA and w = TAGATA are shown below (with mismatch and indel penalties equal to 1)."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.104,
+            0.413,
+            0.859,
+            0.487
+          ],
+          "content": "| Global | Local | Fitting |\n| --- | --- | --- |\n| GTAGGCTTAAGGTTA | GTAGGCTTAAGGTTA | GTAGGCTTAAGGTTA |\n| -TAG----A---T-A | TAGATA | TAGA--TA |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_287_table_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.507,
+            0.859,
+            0.571
+          ],
+          "content": "Note that the optimal local alignment (with score 3) is not a valid fitting alignment. On the other hand, the score of the optimal global alignment (6 \u0000 9 = \u00003) is smaller than that of the best fitting alignment (5 \u0000 1 \u0000 2 = +2)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.132,
+            0.605,
+            0.388,
+            0.623
+          ],
+          "level": 2,
+          "content": "Fitting Alignment Problem:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.626,
+            0.669,
+            0.646
+          ],
+          "content": "Construct a highest-scoring fitting alignment between two strings."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.17,
+            0.658,
+            0.66,
+            0.677
+          ],
+          "content": "**Input**: Strings v and w as well as a scoring matrix Score."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.679,
+            0.831,
+            0.699
+          ],
+          "content": "**Output**: A highest-scoring fitting alignment of v and w as defined by Score."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.754,
+            0.267,
+            0.773
+          ],
+          "level": 2,
+          "content": "Overlap alignment"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.785,
+            0.859,
+            0.848
+          ],
+          "content": "In Chapter 3, we discussed how to use overlapping reads to assemble a genome, a problem that was complicated by errors in reads. Aligning the ends of the hypothetical reads shown below offers a way to find overlaps between error-prone reads."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.384,
+            0.863,
+            0.577,
+            0.901
+          ],
+          "content": "T-CC-GAAAC"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.889,
+            0.617,
+            0.966,
+            0.678
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_287_image_13.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.465,
+            0.944,
+            0.498,
+            0.961
+          ],
+          "content": "263"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "DocHdl1OnVERSA-PPM01tmpTarget",
+      "created_at": "2015-08-17T16:48:25Z",
+      "modified_at": "2018-07-08T15:12:16-07:00",
+      "creator_application": "Prinect Printready",
+      "producer_application": "Mac OS X 10.10.4 Quartz PDFContext",
+      "page_count": 380,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 272,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 273,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 274,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 275,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 276,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 277,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 278,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 279,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 280,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 281,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 282,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 283,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 284,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 285,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 286,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        },
+        {
+          "page_idx": 287,
+          "width_pt": 504.0,
+          "height_pt": 648.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}
