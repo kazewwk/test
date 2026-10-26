@@ -1,0 +1,37 @@
+{
+  "reviewer": "Codex: visual inspection and comparison of model outputs; no human listening review",
+  "full_pilot_approved": false,
+  "observations": [
+    {
+      "source_interval": [
+        150,
+        180
+      ],
+      "issue": "Secondary ASR lacks English clauses present in primary; requires listening review",
+      "primary_example": "He goes to a private school",
+      "status": "unresolved"
+    },
+    {
+      "source_time": 150,
+      "issue": "OCR joined go to as goto; phonetic notation requires manual inspection",
+      "status": "flagged"
+    },
+    {
+      "source_time": 150,
+      "issue": "Visual description focuses on clothing and omits visible blue circles, underlines and check marks",
+      "status": "failed_quality_check"
+    },
+    {
+      "source_time": 150,
+      "issue": "Visual model emits table rows but says document OCR is unnecessary; selector now forces document OCR when tables/formulas are present",
+      "status": "code_fixed_not_yet_full_pilot_validated"
+    },
+    {
+      "source_time": 150,
+      "issue": "Targeted annotation follow-up exited with illegal CPU instruction on the old Xeon after the first visual benchmark had succeeded",
+      "status": "runtime_compatibility_unresolved",
+      "no_output_invented": true
+    }
+  ],
+  "next_step": "Refined visual prompt and complex document extraction need a fresh complete pilot before batch."
+}

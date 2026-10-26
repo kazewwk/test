@@ -175,6 +175,9 @@ def onnx_ocr_worker(job):
 
 
 VISUAL_PROMPT = """客观记录当前教学截图中的信息，不概括教师语音，不补充截图外知识。
+描述只涉及教学内容，不要描述教师衣着、面貌、座椅或背景装饰。
+必须逐项记录手写圈画、下划线、勾号、箭头及其指向；看不清时明确写[无法确认]，不能省略标注。
+表格保留行列和合并格关系，不能仅输出一列文字冒充原表结构。
 保持画面中英文和中文原文。逐项描述可见图表、箭头、步骤、公式和演示操作；不确定写[无法确认]。
 若有前一帧，仅说明两帧间可见变化，不能把推测的运动过程写成事实。
 只返回 JSON: {"kind":"slide|diagram|table|formula|demonstration|screen|other",
@@ -208,12 +211,12 @@ def visual_worker(job):
         if previous is not None:
             images.insert(0, Image.open(previous).convert("RGB"))
         messages = [{"role": "user", "content": [{"type": "image"} for _ in images]
-                     + [{"type": "text", "text": VISUAL_PROMPT}]}]
+                     + [{"type": "text", "text": job.get('prompt',VISUAL_PROMPT)}]}]
         prompt = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
         inputs = processor(text=[prompt], images=images, padding=True, return_tensors="pt").to(device)
         started = time.perf_counter()
         with torch.inference_mode():
-            ids = model.generate(**inputs, max_new_tokens=1536, do_sample=False)
+            ids = model.generate(**inputs, max_new_tokens=job.get('max_new_tokens',1536), do_sample=False)
         raw = processor.batch_decode(ids[:, inputs.input_ids.shape[1]:], skip_special_tokens=True,
                                      clean_up_tokenization_spaces=False)[0]
         try:
@@ -223,6 +226,7 @@ def visual_worker(job):
                       "needs_document_ocr": True, "kind": "other"}
         write_json(out, {"path": frame["path"], "time": frame["time"], "image_sha256": frame["sha256"], "cache_fingerprint": job.get('cache_fingerprint'),
                          "model": "Qwen/Qwen2.5-VL-3B-Instruct", "model_revisions": revisions,
+                         "device":device,"dtype":"float32" if device=='cpu' else 'float16',
                          "raw": raw, "parsed": parsed, "verification": "model_observation_unverified",
                          "elapsed_seconds": time.perf_counter() - started})
         previous = image_path

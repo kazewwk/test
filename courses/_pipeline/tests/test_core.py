@@ -7,6 +7,7 @@ from course_pipeline.media import audio_windows, choose_events
 from course_pipeline.inventory import lesson_directory
 from course_pipeline.fusion import core_text, interval_union, disagreement, srt_time
 from course_pipeline.fusion import needs_asr_review
+from course_pipeline.fusion import needs_document_ocr
 
 
 def test_audio_windows_cover_tail_and_overlap_without_loss():
@@ -87,3 +88,15 @@ def test_saved_webp_preserves_decoded_pixels(tmp_path):
     dest=tmp_path/'frame.webp'
     assert cv2.imwrite(str(dest),image,[cv2.IMWRITE_WEBP_QUALITY,101])
     assert np.array_equal(image,cv2.imread(str(dest)))
+
+
+def test_table_cannot_silently_skip_document_ocr_due_to_model_boolean():
+    assert needs_document_ocr({'parsed':{'kind':'slide','needs_document_ocr':False,'tables':[{'rows':[['a']]}]}})
+
+
+def test_completed_speech_survives_hardware_and_ocr_changes():
+    from course_pipeline.cli import inference_fingerprint
+    job=dict(source_sha256='source',model_revisions={'Qwen/Qwen3-ASR-1.7B':'a','Qwen/Qwen3-ForcedAligner-0.6B':'b'},windows=audio_windows(60),device='cpu',ocr_engine='onnx')
+    original=inference_fingerprint('qwen',job)
+    assert original==inference_fingerprint('qwen',{**job,'device':'cuda:0','ocr_engine':'paddle'})
+    assert original!=inference_fingerprint('qwen',{**job,'source_sha256':'changed'})

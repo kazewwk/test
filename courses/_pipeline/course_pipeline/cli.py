@@ -13,7 +13,7 @@ import soundfile as sf
 from .common import load, write_json, digest, run, retry, utcnow, atomic_text
 from .drive import Drive
 from .media import probe, verify_decode, extract_audio, audio_windows, silence_intervals, extract_frames
-from .fusion import assemble, validate_lesson, needs_asr_review, overlap
+from .fusion import assemble, validate_lesson, needs_asr_review, needs_document_ocr, overlap, core_text
 from .monitor import Monitor
 
 
@@ -30,7 +30,28 @@ class State:
         self.db.commit()
 
 
+def inference_fingerprint(stage,job):
+    kind=stage.removeprefix('review_')
+    from .models import VISUAL_PROMPT
+    names={'qwen':['Qwen/Qwen3-ASR-1.7B','Qwen/Qwen3-ForcedAligner-0.6B'],
+           'whisper':['Systran/faster-whisper-large-v3'],
+           'visual':['Qwen/Qwen2.5-VL-3B-Instruct']}.get(kind,[])
+    data={'adapter_version':1,'stage':stage,'source_sha256':job['source_sha256'],
+          'model_revisions':{k:job['model_revisions'][k] for k in names}}
+    if kind in ('qwen','whisper'):
+        data.update(windows=job['windows'],audio_format='16kHz-mono-pcm16-v1',
+                    beam_size=job.get('beam_size',5) if kind=='whisper' else None)
+    else:
+        data['frames']=[(f['sha256'],f['time']) for f in job['frames']]
+        if kind=='ocr':data['ocr_engine']=job.get('ocr_engine','paddle')
+        if kind=='visual':data.update(prompt=job.get('prompt',VISUAL_PROMPT),max_tokens=job.get('max_new_tokens',1536))
+    # Hardware choice is recorded in each result; completed hypotheses can be
+    # reused when moving the remaining stages between CPU and GPU.
+    return hashlib.sha256(json.dumps(data,sort_keys=True).encode()).hexdigest()
+
+
 def worker(stage, job, job_dir, ocr_python):
+    job={**job,'cache_fingerprint':inference_fingerprint(stage,job)}
     path = job_dir / (stage + '.json')
     write_json(path, job)
     python = ocr_python if stage in ('ocr','document') else sys.executable
@@ -72,7 +93,7 @@ def process(source, args):
         old=load(out/'manifest.json')
         if old['source']['video_sha256']==source['video_sha256'] and old.get('config_sha256')==fingerprint and not validate_lesson(out):
             return out
-    work=cache/'jobs'/source['drive_file_id']/source['video_sha256'][:16]/fingerprint[:16]
+    work=cache/'jobs'/source['drive_file_id']/source['video_sha256'][:16]/'media-v1'
     work.mkdir(parents=True,exist_ok=True)
     write_json(work/'source.json',source)
     write_json(work/'settings.json',settings)
@@ -95,16 +116,17 @@ def process(source, args):
             windows=audio_windows(duration)
             # Key frames are verified by content hashes before reusing extraction.
             frame_record=work/'frames.complete.json'
+            frame_key=hashlib.sha256(json.dumps({'ignore_regions':args.ignore_regions,'image_encoding':'lossless WebP','detector_version':1},sort_keys=True).encode()).hexdigest()
             valid_frames=False
             if frame_record.exists() and (out/'frames.json').exists():
                 old=load(frame_record)
-                valid_frames=old.get('source_sha256')==source['video_sha256'] and old.get('config_sha256')==fingerprint
+                valid_frames=old.get('source_sha256')==source['video_sha256'] and old.get('frame_key')==frame_key
                 if valid_frames:
                     valid_frames=all((out/f['path']).exists() and digest(out/f['path'])==f['sha256']
                                      for f in load(out/'frames.json')['frames'])
             if not valid_frames:
                 extract_frames(video,out,m,args.ignore_regions)
-                write_json(frame_record,dict(source_sha256=source['video_sha256'],config_sha256=fingerprint))
+                write_json(frame_record,dict(source_sha256=source['video_sha256'],frame_key=frame_key))
             frames=load(out/'frames.json')['frames']
             if args.prepare_only:
                 write_json(out/'preparation_status.json',dict(state='prepared_only',source=source,media=m,
@@ -130,10 +152,28 @@ def process(source, args):
                 state.set(source,fingerprint,'review')
                 for stage in ('review_qwen','review_whisper'):
                     worker(stage,{**base,'windows':review_windows,'beam_size':7,'output':str(out/'evidence'/stage)},work,args.ocr_python)
+            if getattr(args,'asr_only',False):
+                raw='# '+source['title']+'：语音阶段草稿\n\n本文件仅完成语音阶段，画面融合和完整质量验收尚未完成。\n\n'
+                checked=raw
+                for win in windows:
+                    q=load(out/'evidence/qwen'/f"chunk_{win['id']:05d}.json")
+                    w=load(out/'evidence/whisper'/f"chunk_{win['id']:05d}.json")
+                    raw+=f"## {win['start']+origin:.3f}–{win['end']+origin:.3f} 秒\n\n{q['text']}\n\n"
+                    text,flags=core_text(q)
+                    if needs_asr_review(q['text'],w['text']):flags.append('asr_disagreement')
+                    checked+=f"## {win['core_start']+origin:.3f}–{win['core_end']+origin:.3f} 秒\n\n{text}\n\n"
+                    if flags:checked+='待复核：'+', '.join(flags)+'。\n\nWhisper 候选：'+w['text']+'\n\n'
+                atomic_text(out/'audio_stage_raw.md',raw)
+                atomic_text(out/'audio_stage_checked.md',checked)
+                write_json(out/'partial_manifest.json',dict(state='asr_complete_visual_pending',source=source,
+                           audio=ainfo,windows=len(windows),review_windows=review_windows,keyframes=len(frames),
+                           not_completed=['OCR','visual_description','document_OCR','fusion','full_pilot_review']))
+                state.set(source,fingerprint,'asr_complete_visual_pending')
+                return out
             for stage in ('ocr','visual'):
                 state.set(source,fingerprint,stage)
                 worker(stage,{**base,'output':str(out/'evidence'/stage)},work,args.ocr_python)
-            document_frames=[f for f in frames if load(out/'evidence/visual'/(Path(f['path']).stem+'.json'))['parsed'].get('needs_document_ocr')]
+            document_frames=[f for f in frames if needs_document_ocr(load(out/'evidence/visual'/(Path(f['path']).stem+'.json')))]
             if document_frames:
                 state.set(source,fingerprint,'document_ocr')
                 worker('document',{**base,'frames':document_frames,'output':str(out/'evidence/document')},work,args.ocr_python)
@@ -170,6 +210,7 @@ def main():
     s.add_argument('--ocr-engine',choices=['paddle','onnx'],default='paddle')
     s.add_argument('--ignore-regions',type=json.loads,default=[])
     s.add_argument('--prepare-only',action='store_true')
+    s.add_argument('--asr-only',action='store_true',help='Checkpoint complete speech passes and reviews; do not claim full lesson completion')
     v=sub.add_parser('validate')
     v.add_argument('directory')
     args=p.parse_args()
@@ -180,7 +221,7 @@ def main():
     rows=load(args.inventory)
     source=next(x for x in rows if x['drive_file_id']==args.file_id)
     out=process(source,args)
-    print(json.dumps({'output':str(out),'prepare_only':args.prepare_only},ensure_ascii=False))
+    print(json.dumps({'output':str(out),'prepare_only':args.prepare_only,'asr_only':args.asr_only},ensure_ascii=False))
 
 
 if __name__=='__main__':

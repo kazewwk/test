@@ -23,6 +23,12 @@ def needs_asr_review(a, b):
     return disagreement(a,b)>0.12 or omitted>=12
 
 
+def needs_document_ocr(visual):
+    p=visual.get('parsed',visual)
+    return bool(p.get('needs_document_ocr') or p.get('tables') or p.get('formulas')
+                or p.get('kind') in ('table','formula'))
+
+
 def core_text(record):
     """Trim only duplicated context outside the ownership interval, never repeated speech.
 
@@ -134,6 +140,9 @@ def assemble(lesson_dir, source, media, audio_info, windows):
             issues.append({'type':'phonetic_symbols_need_review','start':frame['time'],'end':frame['end'],'frame':frame['path']})
         if visual["parsed"].get("uncertain"):
             issues.append({"type": "uncertain_visual_description", "start": frame["time"], "end": frame["end"], "frame": frame["path"]})
+        description=visual['parsed'].get('description','')
+        if ocr['texts'] and re.search('穿着|裤子|男性|衬衫',description) and not re.search('教学|课件|下划线|圈|表格|单词',description):
+            issues.append({'type':'visual_description_misses_instructional_content','start':frame['time'],'end':frame['end'],'frame':frame['path']})
         other_text = visual["parsed"].get("visible_text", "")
         if other_text and disagreement(" ".join(ocr["texts"]), other_text) > 0.6:
             issues.append({"type": "ocr_visual_text_disagreement", "start": frame["time"], "end": frame["end"], "frame": frame["path"]})

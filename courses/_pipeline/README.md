@@ -4,7 +4,7 @@
 
 ## 当前验收状态
 
-代码已实现，基础测试通过；Qwen3-ASR、ForcedAligner、Whisper 和 PP-OCRv5 已完成真实 CPU 片段测试，见[样本与耗时](../_benchmarks/local_cpu_sample/README.md)。整节样课尚未完成，不能把源码和清单当作已完成课程解析。实际完成状态以系列索引、每节 `manifest.json` 和 `qc_report.json` 为准。
+代码已实现，18 项基础测试通过；Qwen3-ASR、ForcedAligner、Whisper、PP-OCRv5 和视觉模型已完成真实 CPU 片段测试，见[样本与耗时](../_benchmarks/local_cpu_sample/README.md)。视觉输出存在教学标注遗漏，后续标注复查还出现旧 CPU 非法指令，未放行批处理。整节样课尚未完成，不能把源码和清单当作已完成课程解析。实际完成状态以系列索引、每节 `manifest.json` 和 `qc_report.json` 为准。
 
 本机旧 Xeon 的 DyNet 日语分词依赖触发非法指令，安装脚本将其改为按需导入，不改变中英文处理。PaddlePaddle 3.2.1 在该旧 CPU 上仍存在二进制指令兼容问题；CPU 可显式选用 `--ocr-engine onnx`，运行同版本 PP-OCRv5 server 的 RapidAI 转换权重。该后端已真实验证；复杂文档 PaddleOCR-VL 阶段仍需在兼容硬件上验证。
 
@@ -43,6 +43,8 @@ python -m course_pipeline.cli process \
 ```
 
 已有本地完整视频时，用 `--video /path/to/video.mp4` 代替 `--rclone-config`。`--prepare-only` 仅做媒体检查和关键帧提取，明确标为未转写，不生成假完成记录。
+
+`--asr-only` 完成两遍完整语音及分歧复查后保存中间检查点，不运行视觉阶段，也不生成冒充完整交付的 `manifest.json`。随后去掉此选项可继续。已完成的语音结果按模型版本、源 SHA256、窗口参数复用，不因把后续阶段切到 GPU 或更换 OCR 后端而重跑。
 
 样课已观察到教师位于画面右下角。该样课可设置 `--ignore-regions '[[0.64,0.25,1.0,1.0]]'`，仅忽略该区域对抽帧触发的影响，保存的截图仍为原始全画面。不得未经检查将此区域套用于其他版式。
 
@@ -104,6 +106,8 @@ python -m pytest -q tests
 ## 费用和生命周期
 
 本任务 Colab 初始余额为 108.21 计算单元。标准 CPU 实测费率为 0.08 单元／小时，并不免费。首次 CPU 连接测试遇到 WebSocket 断开，未执行模型，实例已释放；停止后显示 0 个活动实例、余额仍为 108.21，显示精度以下用量不可据此断言为零。
+
+本机 60 秒语音样本：Qwen3-ASR + Aligner 145.68 秒，Whisper 188.69 秒。PP-OCRv5 单张 29.13 秒，Qwen2.5-VL-3B 单张 291.22 秒，视觉进程峰值 RAM 为 17.68 GiB。因此云 CPU 内存也需要实际核对，不能假设任意标准 CPU 实例都能容纳完整视觉模型。
 
 目前没有启动 GPU，没有完成 T4/L4 吞吐量测试；不能仅凭小时单价宣布某卡更便宜。比较公式为 `总单元 = 计算小时 × 实际单元/小时`，并计入模型初始化、复查和 OCR/VLM 时间。新增消费、购买或充值遵循用户预算授权。
 
