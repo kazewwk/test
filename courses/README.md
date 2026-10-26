@@ -13,3 +13,5 @@
 [完整来源清单](inventory.json) · [安装、续跑、质检与发布说明](_pipeline/README.md)
 
 用户已授权公开完整逐字稿和截图。原视频不上传此仓库。未处理条目不生成空白逐字稿冒充结果。
+
+[本机 CPU 真实样本、模型输出与性能报告](_benchmarks/local_cpu_sample/README.md)。该测试仅覆盖 60 秒音频和一张课件，不计为整节完成。

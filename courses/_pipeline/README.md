@@ -4,9 +4,9 @@
 
 ## 当前验收状态
 
-代码已实现，基础测试通过；模型推理和整节样课尚在实测，不能把本仓库中的源码和清单当作已完成课程解析。实际完成状态以系列索引、每节 `manifest.json` 和 `qc_report.json` 为准。
+代码已实现，基础测试通过；Qwen3-ASR、ForcedAligner、Whisper 和 PP-OCRv5 已完成真实 CPU 片段测试，见[样本与耗时](../_benchmarks/local_cpu_sample/README.md)。整节样课尚未完成，不能把源码和清单当作已完成课程解析。实际完成状态以系列索引、每节 `manifest.json` 和 `qc_report.json` 为准。
 
-本机旧 Xeon 的 DyNet 日语分词依赖触发非法指令，安装脚本将其改为按需导入，不改变中英文处理。PaddlePaddle 3.2.1 在该旧 CPU 上仍存在二进制指令兼容问题；普通 CPU 环境需先通过真实样例验证。
+本机旧 Xeon 的 DyNet 日语分词依赖触发非法指令，安装脚本将其改为按需导入，不改变中英文处理。PaddlePaddle 3.2.1 在该旧 CPU 上仍存在二进制指令兼容问题；CPU 可显式选用 `--ocr-engine onnx`，运行同版本 PP-OCRv5 server 的 RapidAI 转换权重。该后端已真实验证；复杂文档 PaddleOCR-VL 阶段仍需在兼容硬件上验证。
 
 ## 安装
 
@@ -68,7 +68,7 @@ segments.jsonl          含来源、时间、证据和核验标记
 manifest.json          SHA256、配置、产物校验表
 qc_report.json         覆盖范围、异常区间及遗漏风险
 frames.json
-frames/
+frames/                 原始分辨率无损 WebP
 evidence/              两模型及复查候选、OCR 原始结构
 ```
 
@@ -108,6 +108,8 @@ python -m pytest -q tests
 目前没有启动 GPU，没有完成 T4/L4 吞吐量测试；不能仅凭小时单价宣布某卡更便宜。比较公式为 `总单元 = 计算小时 × 实际单元/小时`，并计入模型初始化、复查和 OCR/VLM 时间。新增消费、购买或充值遵循用户预算授权。
 
 Colab 会中断或回收运行时，不能视为有固定 CPU/RAM 保证的永久服务器。结束后使用 `colab stop -s SESSION` 并再次查询 `colab sessions`、`colab usage`。
+
+`scripts/colab_budget_run.py` 提供需明确预算授权的启动、计费轮询、超额提前停止和异常释放包装；尚未完成云端端到端验收，不能把源码存在当作已验证云任务完成。它不购买、充值或擅自选择其他 GPU。
 
 ## 模型和官方参考
 

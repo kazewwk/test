@@ -115,6 +115,8 @@ def whisper_worker(job):
 
 
 def ocr_worker(job):
+    if job.get('ocr_engine') == 'onnx':
+        return onnx_ocr_worker(job)
     from paddleocr import PaddleOCR
     device = "cpu" if job.get("device") == "cpu" else "gpu:0"
     model = PaddleOCR(ocr_version="PP-OCRv5", lang="ch", device=device,
@@ -142,6 +144,36 @@ def ocr_worker(job):
         print(json.dumps({"stage": "ocr", "frame": frame["path"]}), flush=True)
 
 
+def onnx_ocr_worker(job):
+    import rapidocr
+    from rapidocr import RapidOCR, EngineType, ModelType, OCRVersion, LangDet, LangRec
+    from .common import digest
+    engine = RapidOCR(params={
+        'Det.engine_type': EngineType.ONNXRUNTIME, 'Det.lang_type': LangDet.CH,
+        'Det.model_type': ModelType.SERVER, 'Det.ocr_version': OCRVersion.PPOCRV5,
+        'Rec.engine_type': EngineType.ONNXRUNTIME, 'Rec.lang_type': LangRec.CH,
+        'Rec.model_type': ModelType.SERVER, 'Rec.ocr_version': OCRVersion.PPOCRV5,
+        'Global.use_cls': False,
+    })
+    artifacts={p.name:digest(p) for p in (Path(rapidocr.__file__).parent/'models').glob('*.onnx')}
+    for frame in job['frames']:
+        out=Path(job['output'])/(Path(frame['path']).stem+'.json')
+        if reusable(out,job,'image_sha256',frame['sha256']):
+            continue
+        started=time.perf_counter()
+        result=engine(str(Path(job['lesson_dir'])/frame['path']))
+        write_json(out,{'path':frame['path'],'time':frame['time'],'image_sha256':frame['sha256'],
+                       'cache_fingerprint':job.get('cache_fingerprint'),'model':'PP-OCRv5_server',
+                       'runtime':'ONNX Runtime / RapidOCR 3.9.2',
+                       'conversion_source':'https://github.com/RapidAI/RapidOCR',
+                       'model_artifact_sha256':artifacts,
+                       'texts':jsonable(result.txts) if result.txts is not None else [],
+                       'scores':jsonable(result.scores) if result.scores is not None else [],
+                       'boxes':jsonable(result.boxes) if result.boxes is not None else [],
+                       'elapsed_seconds':time.perf_counter()-started})
+        print(json.dumps({'stage':'ocr','frame':frame['path']}),flush=True)
+
+
 VISUAL_PROMPT = """客观记录当前教学截图中的信息，不概括教师语音，不补充截图外知识。
 保持画面中英文和中文原文。逐项描述可见图表、箭头、步骤、公式和演示操作；不确定写[无法确认]。
 若有前一帧，仅说明两帧间可见变化，不能把推测的运动过程写成事实。
@@ -157,11 +189,13 @@ def visual_worker(job):
     from transformers import AutoProcessor, Qwen2_5_VLForConditionalGeneration
     device = job.get("device", "cuda:0")
     torch.set_num_threads(job.get("threads", 8))
+    if device == 'cpu':
+        torch.backends.mkldnn.enabled = False
     revisions = job.setdefault("model_revisions", {})
     path = model_path("Qwen/Qwen2.5-VL-3B-Instruct", revisions)
     model = Qwen2_5_VLForConditionalGeneration.from_pretrained(path,
         torch_dtype=torch.float32 if device == "cpu" else torch.float16, device_map=device)
-    processor = AutoProcessor.from_pretrained(path, min_pixels=256 * 28 * 28, max_pixels=1280 * 28 * 28)
+    processor = AutoProcessor.from_pretrained(path, use_fast=False, min_pixels=256 * 28 * 28, max_pixels=1280 * 28 * 28)
     write_json(Path(job["output"]) / "model_revisions.json", revisions)
     previous = None
     for frame in job["frames"]:

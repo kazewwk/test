@@ -15,7 +15,7 @@ def git_blob_sha(path):
 
 
 def publish_lesson(lesson, checkout, repository='kazewwk/test', branch='main', *, public_authorized=False,
-                   max_lesson_bytes=512*1024**2):
+                   max_lesson_bytes=512*1024**2, series_files=()):
     lesson=Path(lesson).resolve()
     errors=validate_lesson(lesson)
     if errors:
@@ -41,13 +41,19 @@ def publish_lesson(lesson, checkout, repository='kazewwk/test', branch='main', *
     run(['git','-C',checkout,'pull','--ff-only','origin',branch])
     source=load(lesson/'manifest.json')['source']
     rel=Path('courses')/source['series']/source['directory']
+    delivery={str(rel/p.relative_to(lesson)):p for p in files}
+    for p in series_files:
+        p=Path(p).resolve()
+        if p.parent!=lesson.parent or p.name not in ['README.md','index.md','quality_summary.json']:
+            raise ValueError('Unexpected series index path')
+        delivery[str(Path('courses')/source['series']/p.name)]=p
     target=checkout/rel
     target.mkdir(parents=True,exist_ok=True)
-    for p in files:
-        dest=target/p.relative_to(lesson)
+    for name,p in delivery.items():
+        dest=checkout/name
         dest.parent.mkdir(parents=True,exist_ok=True)
         shutil.copy2(p,dest)
-    run(['git','-C',checkout,'add','--',rel])
+    run(['git','-C',checkout,'add','--',*delivery])
     if run(['git','-C',checkout,'diff','--cached','--name-only']).strip():
         run(['git','-C',checkout,'commit','-m',f"courses: extract {source['series']} / {source['title']}"])
         # Never force push; a concurrent update is rebased or reported.
@@ -64,16 +70,15 @@ def publish_lesson(lesson, checkout, repository='kazewwk/test', branch='main', *
         run(['git','-C',checkout,'merge-base','--is-ancestor',commit,f'origin/{branch}'])
     # The remote commit's content-addressed tree must match each local delivery byte stream.
     run(['git','-C',checkout,'fetch','origin',commit])
-    listing=run(['git','-C',checkout,'ls-tree','-rz','--full-tree',commit,'--',rel])
+    listing=run(['git','-C',checkout,'ls-tree','-rz','--full-tree',commit,'--',Path('courses')/source['series']])
     blobs={}
     for row in listing.split('\0'):
         if row:
             info,path=row.split('\t',1)
             blobs[path]=info.split()[2]
-    for p in files:
-        path=str(rel/p.relative_to(lesson))
+    for path,p in delivery.items():
         if blobs.get(path)!=git_blob_sha(p):
             raise RuntimeError('Remote blob mismatch: '+path)
     return dict(commit=commit,url=f'https://github.com/{repository}/tree/{commit}/{rel}',
-                verified_files=len(files),verified_bytes=sum(p.stat().st_size for p in files),
+                verified_files=len(delivery),verified_bytes=sum(p.stat().st_size for p in delivery.values()),
                 verification='Every remote Git blob SHA checked against local bytes',time=utcnow())

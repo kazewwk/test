@@ -8,6 +8,7 @@ from course_pipeline.cli import process
 from course_pipeline.common import load,write_json,digest
 from course_pipeline.fusion import validate_lesson
 from course_pipeline.publish import publish_lesson
+from course_pipeline.indexes import update_series_index
 
 p=argparse.ArgumentParser(description='Sequential resumable processing; requires a verified pilot.')
 p.add_argument('--inventory',required=True)
@@ -20,6 +21,7 @@ p.add_argument('--remote',default='bili_drive')
 p.add_argument('--device',choices=['cpu','cuda:0'],default='cpu')
 p.add_argument('--threads',type=int,default=8)
 p.add_argument('--ocr-python',required=True)
+p.add_argument('--ocr-engine',choices=['paddle','onnx'],default='paddle')
 p.add_argument('--public-authorized',action='store_true')
 p.add_argument('--limit',type=int)
 a=p.parse_args()
@@ -44,7 +46,8 @@ for row in rows:
             if manifest['source'].get('drive_md5')==row.get('drive_md5'):
                 continue
     out=process(row,a)
-    receipt=publish_lesson(out,a.checkout,public_authorized=a.public_authorized)
+    indexes=update_series_index(rows,a.output,row['series'])
+    receipt=publish_lesson(out,a.checkout,public_authorized=a.public_authorized,series_files=indexes)
     write_json(record,receipt)
     completed+=1
     print(json.dumps({'completed_this_run':completed,'drive_file_id':row['drive_file_id'],**receipt},ensure_ascii=False),flush=True)

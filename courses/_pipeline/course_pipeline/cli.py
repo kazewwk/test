@@ -13,7 +13,7 @@ import soundfile as sf
 from .common import load, write_json, digest, run, retry, utcnow, atomic_text
 from .drive import Drive
 from .media import probe, verify_decode, extract_audio, audio_windows, silence_intervals, extract_frames
-from .fusion import assemble, validate_lesson, disagreement, overlap
+from .fusion import assemble, validate_lesson, needs_asr_review, overlap
 from .monitor import Monitor
 
 
@@ -60,8 +60,12 @@ def process(source, args):
     if source.get('drive_sha256') and source['drive_sha256'] != source['video_sha256']:
         raise ValueError('Downloaded video SHA256 differs from Drive')
     model_revisions = load(Path(__file__).resolve().parents[1] / 'model_revisions.json')
+    code_hash=hashlib.sha256()
+    for module in sorted(Path(__file__).resolve().parent.glob('*.py')):
+        code_hash.update(module.name.encode());code_hash.update(module.read_bytes())
     settings = dict(device=args.device,threads=args.threads,core_seconds=30,overlap_seconds=2,
-                    ignore_regions=args.ignore_regions,model_revisions=model_revisions)
+                    pipeline_code_sha256=code_hash.hexdigest(),frame_encoding='lossless WebP',
+                    ignore_regions=args.ignore_regions,model_revisions=model_revisions,ocr_engine=args.ocr_engine)
     fingerprint=hashlib.sha256(json.dumps(settings,sort_keys=True).encode()).hexdigest()
     state=State(cache/'state.sqlite')
     if (out/'manifest.json').exists():
@@ -108,6 +112,7 @@ def process(source, args):
                 state.set(source,fingerprint,'prepared_only')
                 return out
             base=dict(audio=str(audio),source_sha256=source['video_sha256'],device=args.device,
+                      ocr_engine=args.ocr_engine,
                       threads=args.threads,windows=windows,model_revisions=model_revisions,
                       cache_fingerprint=fingerprint,lesson_dir=str(out),frames=frames)
             for stage in ('qwen','whisper'):
@@ -119,7 +124,7 @@ def process(source, args):
                 w=load(out/'evidence/whisper'/f"chunk_{win['id']:05d}.json")
                 silence=sum(overlap([win['core_start'],win['core_end']],s) for s in ainfo['silence_intervals'])
                 length=win['core_end']-win['core_start']
-                if disagreement(q['text'],w['text'])>.22 or (not q['text'].strip() and length-silence>1) or (q['text'].strip() and silence>length*.95):
+                if needs_asr_review(q['text'],w['text']) or (not q['text'].strip() and length-silence>1) or (q['text'].strip() and silence>length*.95):
                     review_windows.append({**win,'start':max(0,win['start']-3),'end':min(duration,win['end']+3)})
             if review_windows:
                 state.set(source,fingerprint,'review')
@@ -132,6 +137,7 @@ def process(source, args):
             if document_frames:
                 state.set(source,fingerprint,'document_ocr')
                 worker('document',{**base,'frames':document_frames,'output':str(out/'evidence/document')},work,args.ocr_python)
+            (out/'preparation_status.json').unlink(missing_ok=True)
             quality=assemble(out,source,m,ainfo,windows)
             manifest=load(out/'manifest.json')
             manifest.update(config_sha256=fingerprint,settings=settings,
@@ -161,6 +167,7 @@ def main():
     s.add_argument('--device',choices=['cpu','cuda:0'],default='cpu')
     s.add_argument('--threads',type=int,default=8)
     s.add_argument('--ocr-python',required=True)
+    s.add_argument('--ocr-engine',choices=['paddle','onnx'],default='paddle')
     s.add_argument('--ignore-regions',type=json.loads,default=[])
     s.add_argument('--prepare-only',action='store_true')
     v=sub.add_parser('validate')

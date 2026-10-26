@@ -16,6 +16,13 @@ def disagreement(a, b):
     return 1 - difflib.SequenceMatcher(None, a, b, autojunk=False).ratio() if a or b else 0.0
 
 
+def needs_asr_review(a, b):
+    aa, bb = normalized(a), normalized(b)
+    matcher = difflib.SequenceMatcher(None, aa, bb, autojunk=False)
+    omitted = max((max(i2-i1,j2-j1) for tag,i1,i2,j1,j2 in matcher.get_opcodes() if tag!='equal'),default=0)
+    return disagreement(a,b)>0.12 or omitted>=12
+
+
 def core_text(record):
     """Trim only duplicated context outside the ownership interval, never repeated speech.
 
@@ -74,7 +81,7 @@ def assemble(lesson_dir, source, media, audio_info, windows):
         w = load(root / "evidence/whisper" / f"chunk_{win['id']:05d}.json")
         text, flags = core_text(q)
         score = disagreement(q["text"], w["text"])
-        if score > 0.22:
+        if needs_asr_review(q['text'],w['text']):
             flags.append("asr_disagreement")
         silence = sum(overlap([win["core_start"], win["core_end"]], s)
                       for s in audio_info["silence_intervals"])
@@ -123,6 +130,8 @@ def assemble(lesson_dir, source, media, audio_info, windows):
             issues.append({"type": "empty_ocr_needs_image_review", "start": frame["time"], "end": frame["end"], "frame": frame["path"]})
         if any(s < 0.8 for s in ocr["scores"]):
             issues.append({"type": "low_confidence_ocr", "start": frame["time"], "end": frame["end"], "frame": frame["path"]})
+        if any(re.search(r'/[^/\n]{2,50}/', text) for text in ocr['texts']):
+            issues.append({'type':'phonetic_symbols_need_review','start':frame['time'],'end':frame['end'],'frame':frame['path']})
         if visual["parsed"].get("uncertain"):
             issues.append({"type": "uncertain_visual_description", "start": frame["time"], "end": frame["end"], "frame": frame["path"]})
         other_text = visual["parsed"].get("visible_text", "")

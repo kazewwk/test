@@ -177,8 +177,10 @@ def extract_frames(video, output, metadata, ignore_regions=()):
         if frame_num in selected:
             e = selected[frame_num]
             e["time"] = max(0.0, pts[frame_num] - format_origin)
-            name = f"frame_{frame_num:08d}_{round(e['time'] * 1000):010d}.png"
-            if not cv2.imwrite(str(frames_dir / name), image, [cv2.IMWRITE_PNG_COMPRESSION, 6]):
+            name = f"frame_{frame_num:08d}_{round(e['time'] * 1000):010d}.webp"
+            # OpenCV uses lossless WebP when quality > 100; original decoded pixels
+            # are preserved, reducing repository storage without OCR blur.
+            if not cv2.imwrite(str(frames_dir / name), image, [cv2.IMWRITE_WEBP_QUALITY, 101]):
                 raise RuntimeError("Cannot save key frame")
             e["path"] = "frames/" + name
             e["sha256"] = digest(frames_dir / name)
@@ -192,6 +194,7 @@ def extract_frames(video, output, metadata, ignore_regions=()):
     for i, e in enumerate(events):
         e["end"] = events[i + 1]["time"] if i + 1 < len(events) else metadata["duration_seconds"]
     result = {"frames": events, "decoded_frames": frame_num, "source_timestamp_count": len(pts),
+              "image_encoding": "lossless WebP, full source resolution",
               "trigger_ignore_regions": ignore_regions,
               "video_start_time": video_origin, "format_start_time": format_origin,
               "method": "all-frame global and local tile changes, settling, motion states, audit hold",

@@ -7,9 +7,9 @@ python3 -m venv "$PIPELINE_ENV"
 "$PIPELINE_ENV/bin/python" -m pip install --upgrade pip
 if [ "$PIPELINE_DEVICE" = cuda ]; then
   nvidia-smi
-  "$PIPELINE_ENV/bin/pip" install torch==2.8.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128
+  "$PIPELINE_ENV/bin/pip" install torch==2.8.0 torchaudio==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cu128
 elif [ "$PIPELINE_DEVICE" = cpu ]; then
-  "$PIPELINE_ENV/bin/pip" install torch==2.8.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+  "$PIPELINE_ENV/bin/pip" install torch==2.8.0 torchaudio==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cpu
 else
   echo 'Usage: install.sh cpu|cuda [venv-path]' >&2
   exit 2

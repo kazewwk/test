@@ -6,6 +6,7 @@ from course_pipeline.common import digest, write_json, load, checkpoint_valid
 from course_pipeline.media import audio_windows, choose_events
 from course_pipeline.inventory import lesson_directory
 from course_pipeline.fusion import core_text, interval_union, disagreement, srt_time
+from course_pipeline.fusion import needs_asr_review
 
 
 def test_audio_windows_cover_tail_and_overlap_without_loss():
@@ -72,3 +73,17 @@ def test_disagreement_and_srt_rounding():
     assert disagreement('Private, 私人的','private 私人的')==0
     assert disagreement('a','b')==1
     assert srt_time(59.9999)=='00:01:00,000'
+
+
+def test_missing_english_clause_is_flagged_even_in_long_chinese_context():
+    context='这里保留完整的中文讲解。'*30
+    assert needs_asr_review(context+'He goes to a private school.',context)
+
+
+def test_saved_webp_preserves_decoded_pixels(tmp_path):
+    import cv2
+    rng=np.random.default_rng(31)
+    image=rng.integers(0,256,(32,64,3),dtype=np.uint8)
+    dest=tmp_path/'frame.webp'
+    assert cv2.imwrite(str(dest),image,[cv2.IMWRITE_WEBP_QUALITY,101])
+    assert np.array_equal(image,cv2.imread(str(dest)))
