@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "course-multimodal-pipeline"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "opencv-python-headless>=4.10", "soundfile>=0.12", "requests>=2.32", "psutil>=6"]
+
+[project.scripts]
+course-pipeline = "course_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
