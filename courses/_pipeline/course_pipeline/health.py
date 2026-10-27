@@ -38,12 +38,20 @@ def inspect_runtime(root):
         for stage in ['qwen','whisper','review_qwen','review_whisper','ocr','document','mineru','visual']:
             pattern='*/complete.json' if stage in ('document','mineru') else 'chunk_*.json' if 'qwen' in stage or 'whisper' in stage else '*.json'
             files=list((lesson/'evidence'/stage).glob(pattern));counts[stage]=len(files)
+            if stage=='visual':
+                records=[read_json(path) or {} for path in files]
+                counts['visual']=sum(bool(record.get('model')) and record.get('status')!='not_requested' for record in records)
+                counts['visual_not_requested']=sum(record.get('status')=='not_requested' for record in records)
             for path in files:
                 try:latest=max(latest,path.stat().st_mtime)
                 except OSError:pass
         selection=read_json(lesson/'mineru_selection.json') or {}
+        visual_selection=read_json(lesson/'visual_selection.json') or {}
+        frames=read_json(lesson/'frames.json') or {}
         result['progress'].append({'drive_file_id':identity,'series':source['series'],'title':source['title'],
                                    'counts':counts,'mineru_selected':selection.get('selected'),
+                                   'keyframes':len(frames.get('frames',[])),
+                                   'visual_selected':visual_selection.get('selected'),
                                    'latest_artifact_mtime':latest})
     if result.get('checkpoint'):
         result['checkpoint_age_seconds']=max(0,time.time()-result['checkpoint'].get('time',0))

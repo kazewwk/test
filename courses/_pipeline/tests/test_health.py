@@ -39,3 +39,18 @@ def test_empty_runtime_probe_is_safe_during_bootstrap(tmp_path):
     status=inspect_runtime(tmp_path)
     assert not status['driver_exists'] and not status['driver_alive']
     assert status['progress']==[]
+
+
+def test_unrequested_visual_placeholder_is_not_reported_as_model_completion(tmp_path):
+    import json
+    cache=tmp_path/'cache';cache.mkdir()
+    (cache/'gpu_status.json').write_text(json.dumps({'source':{'drive_file_id':'source','series':'series','directory':'lesson','title':'lesson'}}))
+    lesson=tmp_path/'courses/series/lesson';visual=lesson/'evidence/visual';visual.mkdir(parents=True)
+    (visual/'skipped.json').write_text(json.dumps({'status':'not_requested','model':None}))
+    (visual/'processed.json').write_text(json.dumps({'model':'gpt-6.1-terra','parsed':{}}))
+    (visual/'pending.json').write_text('{}')
+    (lesson/'visual_selection.json').write_text(json.dumps({'selected':2}))
+    report=inspect_runtime(tmp_path)['progress'][0]
+    assert report['counts']['visual']==1
+    assert report['counts']['visual_not_requested']==1
+    assert report['visual_selected']==2
