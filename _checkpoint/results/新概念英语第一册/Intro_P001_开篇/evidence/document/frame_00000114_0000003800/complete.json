@@ -1,0 +1,162 @@
+{
+  "artifacts": {
+    "1793117476_6426.md": "3d4827e29bd655782c793ea7122afc84806608b0fb124649624d31bd8029fd79",
+    "1793117476_6426_res.json": "f6fcf614576eedbd190acfc39beb160276ea03f8c271080fc36e2d4377dddaec",
+    "imgs/img_in_header_image_box_1650_33_1889_100.jpg": "eb8e8f78c3f63f39ad2ce212d635b455f239f1d7c36d9a0ba35dd030f4c17002",
+    "imgs/img_in_image_box_821_444_1100_565.jpg": "5b6cf9e2c782584fbd882467411bb1418db29461a59c0edf96d0848aaf6a2c37",
+    "region_repairs.md": "20c0a22583853d1c83fa8a425f068d2eeaafdefc835d96a8f6c48428f179b803",
+    "repairs/region_000/1793117476_3561.md": "1c1e1fe6cb66c4090e4c848b10c3083593bdd7d0944167f052136ff51fcacc37",
+    "repairs/region_000/1793117476_3561_res.json": "1e07a602690e1ea950158e4183f2d54e39267f4f2287b5f294ceadd83830bfd8",
+    "repairs/region_000/source.png": "9d63db2d869947abaf23ab0f19963f171d2de2e90c6857f9f3954f9527f1b154",
+    "repairs/region_001/1793117477_4350.md": "23717bfdc9776792319c209a34b64f28353e02c6ddb8df65d9b63a7bac600e13",
+    "repairs/region_001/1793117477_4350_res.json": "756394be0dbe307329a649f202e4d4787a1e4ce03f66ffb033e61881413dba32",
+    "repairs/region_001/source.png": "f57c80f168af43a7b6901e09a50c4ec49a358771651ede72e1f51abb62cce0bd"
+  },
+  "input_fingerprint": "b108b74bd4a9a7cdc5a9665db01d14c2027620988f0415e6e2c55f2abb4f1928",
+  "image_sha256": "382c07daf75e9b43090f9c8f970b1116965a8e9e7c0365f15707a43210141ce5",
+  "cache_fingerprint": "641454f3f95e26210dfa50f2586aade2998042aeb106033b2b449ce36e560b73",
+  "elapsed_seconds": 1.9774693050057977,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1650,
+        33,
+        1889,
+        100
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1650.0,
+          33.0
+        ],
+        [
+          1889.0,
+          33.0
+        ],
+        [
+          1889.0,
+          100.0
+        ],
+        [
+          1650.0,
+          100.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "CAPSULE ACADEMY",
+      "block_bbox": [
+        821,
+        444,
+        1100,
+        565
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          821.0,
+          444.0
+        ],
+        [
+          1100.0,
+          444.0
+        ],
+        [
+          1100.0,
+          565.0
+        ],
+        [
+          821.0,
+          565.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "胶囊助学计划",
+      "block_bbox": [
+        772,
+        653,
+        1151,
+        701
+      ],
+      "block_id": 2,
+      "block_order": 1,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          772.0,
+          653.0
+        ],
+        [
+          1151.0,
+          653.0
+        ],
+        [
+          1151.0,
+          701.0
+        ],
+        [
+          772.0,
+          701.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1636,
+        20,
+        1903,
+        114
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "CAPSULE ACADEMY",
+      "block_bbox": [
+        838,
+        522,
+        987,
+        557
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1636,
+        20,
+        1903,
+        114
+      ],
+      "ppocr_candidate": "胶学bibli",
+      "recovered_text": "胶学 bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        838,
+        522,
+        987,
+        557
+      ],
+      "ppocr_candidate": "CAPSULEACADIMN",
+      "recovered_text": "CAPSULE ACADEMY",
+      "source_crop": "repairs/region_001/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}
