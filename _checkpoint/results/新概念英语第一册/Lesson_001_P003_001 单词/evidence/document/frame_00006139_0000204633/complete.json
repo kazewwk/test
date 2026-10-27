@@ -1,0 +1,200 @@
+{
+  "artifacts": {
+    "1793145236_4158.md": "a1f622578ece68147b214d65cf563ae1030657ca9642ad7fd513ab304689e975",
+    "1793145236_4158_res.json": "dc9b9897e0e516f33433ca40c38c252e7006c58e9e225cca4e86a42912433d37",
+    "imgs/img_in_header_image_box_1651_30_1887_101.jpg": "04b668988d67221270e2f24a5470b09fc3887f6bb1504440c1b18d5284d7d0b5",
+    "imgs/img_in_image_box_1173_294_1778_1078.jpg": "94ae36cc374bc33bdf076da5093d45f197e9baa2dd9d217cb8925ec7e1df3550",
+    "imgs/img_in_image_box_1_0_603_1079.jpg": "35bd34567f8fcd9d5beb92882043fd2369c0eddc84127d6efe422e07d2f53d47",
+    "region_repairs.md": "376165aca6067ad1f299cba5def4ed1779615cc5421800c54c659721459161fe",
+    "repairs/region_009/1793145237_7886.md": "a4ed7b0ff1a604e1fc0f92abd13720b0f2a9157daa385ac20546a9311d9a2e37",
+    "repairs/region_009/1793145237_7886_res.json": "32a8f54714ac9e3fb1af352be40f8c47e969bbed53b087884d3d28358c673f86",
+    "repairs/region_009/source.png": "f7e4ddfc7d33b61df4edc7172764ef7a1366c465a2700f7f4838f7003160b569"
+  },
+  "input_fingerprint": "dd34480e0a8216513832f9b3238aacf55923917d0b8358883eed32cd6d633aca",
+  "image_sha256": "ee0ae0e2b302cdaa7640dd1110e024ed2d44eefb40ba9b7a8502fa838553e00c",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 4.817284029999428,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1651,
+        30,
+        1887,
+        101
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1651.0,
+          30.0
+        ],
+        [
+          1887.0,
+          30.0
+        ],
+        [
+          1887.0,
+          101.0
+        ],
+        [
+          1651.0,
+          101.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "We Buy\nWe Sell\nWe Trade\n\n老友记\n20:52",
+      "block_bbox": [
+        1,
+        0,
+        603,
+        1079
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          1.0,
+          -1.0
+        ],
+        [
+          603.0,
+          -1.0
+        ],
+        [
+          603.0,
+          1079.0
+        ],
+        [
+          1.0,
+          1079.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "excuse me\n打扰一下",
+      "block_bbox": [
+        648,
+        493,
+        964,
+        616
+      ],
+      "block_id": 2,
+      "block_order": 1,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          648.0,
+          493.0
+        ],
+        [
+          964.0,
+          493.0
+        ],
+        [
+          964.0,
+          616.0
+        ],
+        [
+          648.0,
+          616.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "老友记 Friends S3E10 (1996) 20:52",
+      "block_bbox": [
+        501,
+        929,
+        922,
+        1006
+      ],
+      "block_id": 3,
+      "block_order": 2,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          501.0,
+          929.0
+        ],
+        [
+          922.0,
+          929.0
+        ],
+        [
+          922.0,
+          1006.0
+        ],
+        [
+          501.0,
+          1006.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1173,
+        294,
+        1778,
+        1078
+      ],
+      "block_id": 4,
+      "block_order": null,
+      "group_id": 4,
+      "block_polygon_points": [
+        [
+          1173.0,
+          294.0
+        ],
+        [
+          1778.0,
+          294.0
+        ],
+        [
+          1778.0,
+          1078.0
+        ],
+        [
+          1173.0,
+          1078.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "老友记 Friends S3E10 (1996)",
+      "block_bbox": [
+        500,
+        926,
+        927,
+        972
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        500,
+        926,
+        927,
+        972
+      ],
+      "ppocr_candidate": "老友记Friends S3E1O(1996)",
+      "recovered_text": "老友记 Friends S3E10 (1996)",
+      "source_crop": "repairs/region_009/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}
