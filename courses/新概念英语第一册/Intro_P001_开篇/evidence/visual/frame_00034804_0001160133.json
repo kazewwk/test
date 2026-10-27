@@ -1,0 +1,100 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [],\n  \"description\": \"画面整体泛白，右侧隐约可见一人及其前方的桌面和支架上的矩形设备。\",\n  \"annotations\": [],\n  \"checkmarks_count\": null,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"画面过于泛白，无法确认是否存在其他教学文字或标记。\"\n  ]\n}",
+  "parsed": {
+    "kind": "screen",
+    "text_lines": [],
+    "description": "画面整体泛白，右侧隐约可见一人及其前方的桌面和支架上的矩形设备。",
+    "annotations": [],
+    "checkmarks_count": null,
+    "circled_text": [],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "画面过于泛白，无法确认是否存在其他教学文字或标记。"
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": ""
+  },
+  "usage": {
+    "completion_tokens": 154,
+    "total_tokens": 2834,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 39
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 4.738937587000692,
+  "image_sha256": "6f3a3d143095847e73061454c450b875fa397db5e94460bfe45629fcd60763bd",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\"kind\":\"screen\",\"text_lines\":[],\"description\":\"画面整体近乎全白；右侧隐约可见一名人物坐在桌子后方，右上角有极淡的标识。\",\"annotations\":[],\"checkmarks_count\":null,\"circled_text\":[],\"tables\":[],\"formulas\":[],\"uncertain\":[\"右上角标识文字过淡，无法确认。\"]}",
+    "parsed": {
+      "kind": "screen",
+      "text_lines": [],
+      "description": "画面整体近乎全白；右侧隐约可见一名人物坐在桌子后方，右上角有极淡的标识。",
+      "annotations": [],
+      "checkmarks_count": null,
+      "circled_text": [],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "右上角标识文字过淡，无法确认。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": ""
+    },
+    "usage": {
+      "completion_tokens": 281,
+      "total_tokens": 2961,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 191
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 5.481557128001441,
+    "image_sha256": "6f3a3d143095847e73061454c450b875fa397db5e94460bfe45629fcd60763bd",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00034804_0001160133.webp",
+  "time": 1160.133313,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "low_confidence_instructional_ocr"
+  ]
+}

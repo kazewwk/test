@@ -1,0 +1,110 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"slide\",\n  \"text_lines\": [\n    \"CAPSULE ACADEMY\",\n    \"胶 囊 助 学 计 划\",\n    \"小红书\",\n    \"bilibili\"\n  ],\n  \"description\": \"白色背景。上方中央有一枚横向胶囊形图案，左半为灰蓝色，右半为灰粉色，中间有竖向浅色分隔。左下方有灰粉色横向长方形。右下区域有四个黑白码图案，呈两行两列排列，每个下方有彩色图标；右上码为圆形，其余为方形。\",\n  \"annotations\": [],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"右上角浅色水印中，bilibili 左侧的内容无法确认。\"\n  ]\n}",
+  "parsed": {
+    "kind": "slide",
+    "text_lines": [
+      "CAPSULE ACADEMY",
+      "胶 囊 助 学 计 划",
+      "小红书",
+      "bilibili"
+    ],
+    "description": "白色背景。上方中央有一枚横向胶囊形图案，左半为灰蓝色，右半为灰粉色，中间有竖向浅色分隔。左下方有灰粉色横向长方形。右下区域有四个黑白码图案，呈两行两列排列，每个下方有彩色图标；右上码为圆形，其余为方形。",
+    "annotations": [],
+    "checkmarks_count": 0,
+    "circled_text": [],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "右上角浅色水印中，bilibili 左侧的内容无法确认。"
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "CAPSULE ACADEMY\n胶 囊 助 学 计 划\n小红书\nbilibili"
+  },
+  "usage": {
+    "completion_tokens": 304,
+    "total_tokens": 2984,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 84
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 8.182565756000258,
+  "image_sha256": "c74657f7cf2bf28fc6268e82a36ad7445c4f5d9dd38e587937e608b633dfc8c2",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\"kind\":\"slide\",\"text_lines\":[\"CAPSULE ACADEMY\",\"胶囊助学计划\",\"小红书\",\"[无法确认]（右上角淡色水印）\"],\"description\":\"白色背景。上方中央有左右双色的胶囊形图案；右侧分两排排列四个二维码及平台图标；左下方有一条横向浅灰紫色矩形色块。\",\"annotations\":[],\"checkmarks_count\":0,\"circled_text\":[],\"tables\":[],\"formulas\":[],\"uncertain\":[\"右上角淡色水印文字无法确认。\"]}",
+    "parsed": {
+      "kind": "slide",
+      "text_lines": [
+        "CAPSULE ACADEMY",
+        "胶囊助学计划",
+        "小红书",
+        "[无法确认]（右上角淡色水印）"
+      ],
+      "description": "白色背景。上方中央有左右双色的胶囊形图案；右侧分两排排列四个二维码及平台图标；左下方有一条横向浅灰紫色矩形色块。",
+      "annotations": [],
+      "checkmarks_count": 0,
+      "circled_text": [],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "右上角淡色水印文字无法确认。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": "CAPSULE ACADEMY\n胶囊助学计划\n小红书\n[无法确认]（右上角淡色水印）"
+    },
+    "usage": {
+      "completion_tokens": 730,
+      "total_tokens": 3410,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 594
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 11.437606339000922,
+    "image_sha256": "c74657f7cf2bf28fc6268e82a36ad7445c4f5d9dd38e587937e608b633dfc8c2",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00035009_0001166967.webp",
+  "time": 1166.966688,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "low_confidence_instructional_ocr"
+  ]
+}

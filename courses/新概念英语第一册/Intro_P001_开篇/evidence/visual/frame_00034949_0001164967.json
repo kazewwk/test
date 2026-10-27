@@ -1,0 +1,113 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"slide\",\n  \"text_lines\": [\n    \"CAPSULE ACADEMY\",\n    \"胶囊助学计划\",\n    \"小红书\",\n    \"[无法确认]\"\n  ],\n  \"description\": \"白色背景。上方中央有灰蓝色与灰粉色组成的胶囊形标志。右侧有四个码，排列为两行两列，各码下方有平台图标。左下方有一块灰粉色矩形，底部露出部分被截断的黑色文字。右上角有浅色水印。\",\n  \"annotations\": [],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"左下方黑色文字只露出上部，无法确认完整内容。\",\n    \"右上角水印颜色很浅，文字无法完整确认。\"\n  ]\n}",
+  "parsed": {
+    "kind": "slide",
+    "text_lines": [
+      "CAPSULE ACADEMY",
+      "胶囊助学计划",
+      "小红书",
+      "[无法确认]"
+    ],
+    "description": "白色背景。上方中央有灰蓝色与灰粉色组成的胶囊形标志。右侧有四个码，排列为两行两列，各码下方有平台图标。左下方有一块灰粉色矩形，底部露出部分被截断的黑色文字。右上角有浅色水印。",
+    "annotations": [],
+    "checkmarks_count": 0,
+    "circled_text": [],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "左下方黑色文字只露出上部，无法确认完整内容。",
+      "右上角水印颜色很浅，文字无法完整确认。"
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "CAPSULE ACADEMY\n胶囊助学计划\n小红书\n[无法确认]"
+  },
+  "usage": {
+    "completion_tokens": 251,
+    "total_tokens": 2931,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 38
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 6.072579610001412,
+  "image_sha256": "d44ec9798b97e57f3cc844d31aa4dd5e360513a98a6aacfb541329644b07b6fd",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\"kind\":\"screen\",\"text_lines\":[\"CAPSULE ACADEMY\",\"胶囊助学计划\",\"小红书\",\"Edi[无法确认]\",\"[无法确认]\"],\"description\":\"白色背景，上方偏中有由灰绿色和灰粉色两部分组成的胶囊形图案；右侧有四个二维码及对应的平台图标。左下方有一块被画面边缘截断的灰粉色矩形。\",\"annotations\":[],\"checkmarks_count\":null,\"circled_text\":[],\"tables\":[],\"formulas\":[],\"uncertain\":[\"左下方矩形内的黑色文字只露出“Edi”开头，后续内容被遮挡或截断。\",\"右上角有非常浅的水印文字，无法确认具体内容。\"]}",
+    "parsed": {
+      "kind": "screen",
+      "text_lines": [
+        "CAPSULE ACADEMY",
+        "胶囊助学计划",
+        "小红书",
+        "Edi[无法确认]",
+        "[无法确认]"
+      ],
+      "description": "白色背景，上方偏中有由灰绿色和灰粉色两部分组成的胶囊形图案；右侧有四个二维码及对应的平台图标。左下方有一块被画面边缘截断的灰粉色矩形。",
+      "annotations": [],
+      "checkmarks_count": null,
+      "circled_text": [],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "左下方矩形内的黑色文字只露出“Edi”开头，后续内容被遮挡或截断。",
+        "右上角有非常浅的水印文字，无法确认具体内容。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": "CAPSULE ACADEMY\n胶囊助学计划\n小红书\nEdi[无法确认]\n[无法确认]"
+    },
+    "usage": {
+      "completion_tokens": 592,
+      "total_tokens": 3272,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 413
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 9.353967726998235,
+    "image_sha256": "d44ec9798b97e57f3cc844d31aa4dd5e360513a98a6aacfb541329644b07b6fd",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00034949_0001164967.webp",
+  "time": 1164.966688,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "low_confidence_instructional_ocr"
+  ]
+}

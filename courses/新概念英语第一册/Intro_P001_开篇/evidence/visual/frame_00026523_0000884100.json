@@ -1,0 +1,154 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"slide\",\n  \"text_lines\": [\n    \"使用指南\",\n    \"Contents\",\n    \"Acknowledgements vii\",\n    \"To the student viii\",\n    \"To the teacher x\",\n    \"Present\",\n    \"1 am/is/are\",\n    \"2 am/is/are (questions)\",\n    \"3 I am doing (present continuous)\",\n    \"4 are you doing? (present continuous questions)\",\n    \"5 I do/work/like etc. (present simple)\",\n    \"6 I d[无法确认]n’t ... (present simple negative)\",\n    \"7 D[无法确认] you ... ? (present simple questions)\",\n    \"8 I am doing (present continuous) and I do (present simple)\",\n    \"9 I have ... and I’ve got ...\"\n  ],\n  \"description\": \"左侧是蓝色标题条和一张目录页面，目录页顶部为红色横条。右侧一人坐在桌后，桌上放有支架托着的平板。\",\n  \"annotations\": [\n    {\n      \"type\": \"光点\",\n      \"color\": \"红色，中心白色\",\n      \"target\": \"第6行“I d[无法确认]n’t ...”与第7行“D[无法确认] you ... ?”的开头区域\",\n      \"position\": \"目录页左下部，第6、7行交界处\",\n      \"uncertain\": false\n    }\n  ],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"红色光点遮挡了第6、7行开头的部分文字。\"\n  ]\n}",
+  "parsed": {
+    "kind": "slide",
+    "text_lines": [
+      "使用指南",
+      "Contents",
+      "Acknowledgements vii",
+      "To the student viii",
+      "To the teacher x",
+      "Present",
+      "1 am/is/are",
+      "2 am/is/are (questions)",
+      "3 I am doing (present continuous)",
+      "4 are you doing? (present continuous questions)",
+      "5 I do/work/like etc. (present simple)",
+      "6 I d[无法确认]n’t ... (present simple negative)",
+      "7 D[无法确认] you ... ? (present simple questions)",
+      "8 I am doing (present continuous) and I do (present simple)",
+      "9 I have ... and I’ve got ..."
+    ],
+    "description": "左侧是蓝色标题条和一张目录页面，目录页顶部为红色横条。右侧一人坐在桌后，桌上放有支架托着的平板。",
+    "annotations": [
+      {
+        "type": "光点",
+        "color": "红色，中心白色",
+        "target": "第6行“I d[无法确认]n’t ...”与第7行“D[无法确认] you ... ?”的开头区域",
+        "position": "目录页左下部，第6、7行交界处",
+        "uncertain": false,
+        "requires_review": false,
+        "grounding": "api_visual_observation_not_human_verified"
+      }
+    ],
+    "checkmarks_count": 0,
+    "circled_text": [],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "红色光点遮挡了第6、7行开头的部分文字。"
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "使用指南\nContents\nAcknowledgements vii\nTo the student viii\nTo the teacher x\nPresent\n1 am/is/are\n2 am/is/are (questions)\n3 I am doing (present continuous)\n4 are you doing? (present continuous questions)\n5 I do/work/like etc. (present simple)\n6 I d[无法确认]n’t ... (present simple negative)\n7 D[无法确认] you ... ? (present simple questions)\n8 I am doing (present continuous) and I do (present simple)\n9 I have ... and I’ve got ..."
+  },
+  "usage": {
+    "completion_tokens": 429,
+    "total_tokens": 3109,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 59
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 10.304483395000716,
+  "image_sha256": "aa735546f30bc44a134beea9ce79fb03fbff2ce6a5dac17a2b1aef927cc142cf",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"使用指南\",\n    \"Contents\",\n    \"Acknowledgements vii\",\n    \"To the student viii\",\n    \"To the teacher x\",\n    \"Present\",\n    \"1 am/is/are\",\n    \"2 am/is/are (questions)\",\n    \"3 I am doing (present continuous)\",\n    \"4 are you doing? (present continuous questions)\",\n    \"5 I do/work/like etc. (present simple)\",\n    \"6 I don't ... (present simple negative)\",\n    \"7 Do you ... ? (present simple questions)\",\n    \"8 I am doing (present continuous) and I do (present simple)\",\n    \"9 I have ... and I've got ...\"\n  ],\n  \"description\": \"画面左侧显示一页目录，右侧是一名坐在圆桌旁、桌上放着平板电脑的人。目录第7项附近有红色圆形指示光点。\",\n  \"annotations\": [\n    {\n      \"type\": \"圆形指示光点\",\n      \"color\": \"红色\",\n      \"target\": \"第7项“Do you ... ? (present simple questions)”\",\n      \"position\": \"目录左下区域，第7项文字左侧并部分覆盖其开头\",\n      \"uncertain\": false\n    }\n  ],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"红色指示光点部分遮挡第7项开头；该行可见文字辨认为“Do you ... ? (present simple questions)”。\"\n  ]\n}",
+    "parsed": {
+      "kind": "screen",
+      "text_lines": [
+        "使用指南",
+        "Contents",
+        "Acknowledgements vii",
+        "To the student viii",
+        "To the teacher x",
+        "Present",
+        "1 am/is/are",
+        "2 am/is/are (questions)",
+        "3 I am doing (present continuous)",
+        "4 are you doing? (present continuous questions)",
+        "5 I do/work/like etc. (present simple)",
+        "6 I don't ... (present simple negative)",
+        "7 Do you ... ? (present simple questions)",
+        "8 I am doing (present continuous) and I do (present simple)",
+        "9 I have ... and I've got ..."
+      ],
+      "description": "画面左侧显示一页目录，右侧是一名坐在圆桌旁、桌上放着平板电脑的人。目录第7项附近有红色圆形指示光点。",
+      "annotations": [
+        {
+          "type": "圆形指示光点",
+          "color": "红色",
+          "target": "第7项“Do you ... ? (present simple questions)”",
+          "position": "目录左下区域，第7项文字左侧并部分覆盖其开头",
+          "uncertain": false,
+          "requires_review": false,
+          "grounding": "api_visual_observation_not_human_verified"
+        }
+      ],
+      "checkmarks_count": 0,
+      "circled_text": [],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "红色指示光点部分遮挡第7项开头；该行可见文字辨认为“Do you ... ? (present simple questions)”。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": "使用指南\nContents\nAcknowledgements vii\nTo the student viii\nTo the teacher x\nPresent\n1 am/is/are\n2 am/is/are (questions)\n3 I am doing (present continuous)\n4 are you doing? (present continuous questions)\n5 I do/work/like etc. (present simple)\n6 I don't ... (present simple negative)\n7 Do you ... ? (present simple questions)\n8 I am doing (present continuous) and I do (present simple)\n9 I have ... and I've got ..."
+    },
+    "usage": {
+      "completion_tokens": 839,
+      "total_tokens": 3519,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 480
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 10.253603418001148,
+    "image_sha256": "aa735546f30bc44a134beea9ce79fb03fbff2ce6a5dac17a2b1aef927cc142cf",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00026523_0000884100.webp",
+  "time": 884.1,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "nontext_instructional_image_or_demonstration",
+    "low_confidence_instructional_ocr",
+    "visible_annotation_change_or_changed_target_text"
+  ]
+}
