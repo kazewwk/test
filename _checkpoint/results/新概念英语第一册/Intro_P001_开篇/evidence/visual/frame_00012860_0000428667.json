@@ -1,0 +1,111 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"slide\",\n  \"text_lines\": [\n    \"使用指南\",\n    \"[无法确认]\",\n    \"What\"\n  ],\n  \"description\": \"左上方是蓝色横幅。左侧偏下有一个浅灰紫色圆形，内有深紫色文字，下方带阴影。右侧一人坐在圆桌旁，桌上放有平板设备，手持白色笔状物。\",\n  \"annotations\": [],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"左侧边缘蓝色区域有一个被画面裁切的汉字，无法确认。\"\n  ]\n}",
+  "parsed": {
+    "kind": "slide",
+    "text_lines": [
+      "使用指南",
+      "[无法确认]",
+      "What"
+    ],
+    "description": "左上方是蓝色横幅。左侧偏下有一个浅灰紫色圆形，内有深紫色文字，下方带阴影。右侧一人坐在圆桌旁，桌上放有平板设备，手持白色笔状物。",
+    "annotations": [],
+    "checkmarks_count": 0,
+    "circled_text": [],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "左侧边缘蓝色区域有一个被画面裁切的汉字，无法确认。"
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "使用指南\n[无法确认]\nWhat"
+  },
+  "usage": {
+    "completion_tokens": 227,
+    "total_tokens": 2907,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 61
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 6.239732861999073,
+  "image_sha256": "6df51b4daddeec587b5856f014c43395cafb9adc8e84290563cd0d17355524a8",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"使用指南\",\n    \"朵\",\n    \"What\",\n    \"[无法确认]\"\n  ],\n  \"description\": \"白色背景。左侧有蓝色横幅和一个浅紫灰色圆形图案。右侧有一人坐在圆桌旁，桌上放着平板电脑。\",\n  \"annotations\": [],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"左侧下方蓝色区域仅露出一个疑似“朵”的字，画面被裁切。\",\n    \"右上角有浅色水印样文字，无法确认其内容。\"\n  ]\n}",
+    "parsed": {
+      "kind": "screen",
+      "text_lines": [
+        "使用指南",
+        "朵",
+        "What",
+        "[无法确认]"
+      ],
+      "description": "白色背景。左侧有蓝色横幅和一个浅紫灰色圆形图案。右侧有一人坐在圆桌旁，桌上放着平板电脑。",
+      "annotations": [],
+      "checkmarks_count": 0,
+      "circled_text": [],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "左侧下方蓝色区域仅露出一个疑似“朵”的字，画面被裁切。",
+        "右上角有浅色水印样文字，无法确认其内容。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": "使用指南\n朵\nWhat\n[无法确认]"
+    },
+    "usage": {
+      "completion_tokens": 612,
+      "total_tokens": 3292,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 438
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 8.69314929599932,
+    "image_sha256": "6df51b4daddeec587b5856f014c43395cafb9adc8e84290563cd0d17355524a8",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00012860_0000428667.webp",
+  "time": 428.666688,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "low_confidence_instructional_ocr",
+    "visible_annotation_change_or_changed_target_text"
+  ]
+}
