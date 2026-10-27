@@ -58,6 +58,17 @@ def inference_fingerprint(stage,job):
 
 def worker(stage, job, job_dir, ocr_python,visual_python=None,mineru_python=None):
     job={**job,'cache_fingerprint':inference_fingerprint(stage,job)}
+    kind=stage.removeprefix('review_')
+    output=Path(job['output'])
+    if kind in ('qwen','whisper'):
+        targets=[(output/f"chunk_{w['id']:05d}.json",'source_sha256',job['source_sha256']) for w in job['windows']]
+    else:
+        targets=[(output/(Path(f['path']).stem+'.json') if kind in ('ocr','visual') else output/Path(f['path']).stem/'complete.json',
+                  'image_sha256',f['sha256']) for f in job['frames']]
+    from .models import reusable
+    if targets and all(reusable(p,job,key,value) for p,key,value in targets):
+        print(json.dumps({'stage':stage,'state':'reused_complete','records':len(targets)}),flush=True)
+        return
     path = job_dir / (stage + '.json')
     write_json(path, job)
     python = (ocr_python if stage in ('ocr','document') else

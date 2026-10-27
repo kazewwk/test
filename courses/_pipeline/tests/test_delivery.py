@@ -24,3 +24,15 @@ def test_fusion_delivers_traceable_files_and_detects_tampering(tmp_path):
     assert '![教学画面](frames/f.webp)' in (root/'lecture_full.md').read_text()
     frame.write_bytes(b'corrupted')
     assert 'hash:frames/f.webp' in validate_lesson(root)
+
+
+def test_subtitles_use_word_times_preserve_repeated_speech_and_offset():
+    from course_pipeline.fusion import aligned_subtitles,normalized
+    record=dict(core_start=0,core_end=12,text='Go, go! 再说一次。',
+                words=[dict(text='Go',start=.2,end=.8),dict(text='go',start=1.1,end=1.7),
+                       dict(text='再',start=7,end=7.4),dict(text='说',start=7.5,end=8),
+                       dict(text='一',start=8.2,end=8.5),dict(text='次',start=8.6,end=9)])
+    cues=aligned_subtitles(record,2)
+    assert len(cues)==2 and cues[0]['start']==2.2 and cues[-1]['end']==11
+    assert normalized(''.join(c['text'] for c in cues))==normalized(record['text'])
+    assert cues[0]['text']=='Go, go!'

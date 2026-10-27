@@ -118,6 +118,35 @@ def srt_time(value):
     return f"{ms//3600000:02d}:{ms//60000%60:02d}:{ms//1000%60:02d},{ms%1000:03d}"
 
 
+
+def aligned_subtitles(record,offset=0):
+    text,flags=core_text(record)
+    if not text.strip():return []
+    fallback=[{'start':record['core_start']+offset,'end':record['core_end']+offset,'text':text,'alignment':'window_fallback'}]
+    words=record.get('words',[])
+    if flags or not words:return fallback
+    selected=[i for i,w in enumerate(words) if record['core_start']<=(w['start']+w['end'])/2<record['core_end']]
+    if any(words[i]['end']<=words[i]['start'] for i in selected):return fallback
+    raw=record['text'];positions=[i for i,c in enumerate(raw) if c.isalnum()];prefix=[0]
+    for word in words:prefix.append(prefix[-1]+len(normalized(word['text'])))
+    groups=[];current=[]
+    for i in selected:
+        if current and (words[i]['end']-words[current[0]]['start']>6 or sum(len(words[j]['text']) for j in current)>70):
+            groups.append(current);current=[]
+        current.append(i)
+    if current:groups.append(current)
+    cues=[]
+    for group in groups:
+        lo=prefix[group[0]];hi=prefix[group[-1]+1]
+        start=positions[lo] if lo<len(positions) else len(raw)
+        end=positions[hi] if hi<len(positions) else len(raw)
+        a=max(record['core_start'],words[group[0]]['start'])+offset
+        b=min(record['core_end'],words[group[-1]]['end'])+offset
+        if a>=b or (cues and a<cues[-1]['end']-.01):return fallback
+        cues.append({'start':a,'end':b,'text':raw[start:end].strip(),'alignment':'Qwen3-ForcedAligner'})
+    if normalized(''.join(c['text'] for c in cues))!=normalized(text):return fallback
+    return cues
+
 def inline_document(root,relative):
     path=Path(root)/relative
     text=path.read_text(encoding='utf-8')
@@ -148,7 +177,9 @@ def assemble(lesson_dir, source, media, audio_info, windows):
         text, flags, chosen,selection = select_checked(q,w,qr,wr,lr)
         score = disagreement(q["text"], w["text"])
         if needs_asr_review(q['text'],w['text']):
-            flags.append("asr_disagreement")
+            flags.append("raw_asr_disagreement")
+        if needs_asr_review(text,whisper_core(wr or w)):
+            flags.append("asr_disagreement_unresolved")
         silence = sum(overlap([win["core_start"], win["core_end"]], s)
                       for s in audio_info["silence_intervals"])
         length = win["core_end"] - win["core_start"]
@@ -184,7 +215,8 @@ def assemble(lesson_dir, source, media, audio_info, windows):
                    "speech": {"text": text, "raw_primary": q["text"], "cross_check": w["text"],
                               "primary_words": q.get("words", []), "word_timebase": "extracted_audio",
                               "checked_words":chosen.get('words',[]),'selection':selection,
-                              "audio_source_offset": offset, "language": q.get("language"),
+                              "audio_source_offset": offset, "language": chosen.get("language"),
+                              "primary_language":q.get("language"),"subtitle_cues":aligned_subtitles(chosen,offset),
                               "disagreement": score, "verification": "automatic_cross_check_only",
                               "review_hypothesis": qr,'review_cross_check':wr,'language_review':lr},
                    "frames": visual_records, "flags": sorted(set(flags))}
@@ -276,8 +308,8 @@ def assemble(lesson_dir, source, media, audio_info, windows):
                 full += f"#### PaddleOCR-VL 原文与结构\n\n[独立结果]({path})\n\n"+inline_document(root,path)+'\n\n'
             for path in f['mineru_markdown']:
                 full += f"#### MinerU 独立解析\n\n[独立结果]({path})\n\n"+inline_document(root,path)+'\n\n'
-        if s["speech"]["text"].strip():
-            subtitles.append(f"{len(subtitles)+1}\n{srt_time(s['start'])} --> {srt_time(s['end'])}\n{s['speech']['text']}\n")
+        for cue in s["speech"]["subtitle_cues"]:
+            subtitles.append(f"{len(subtitles)+1}\n{srt_time(cue['start'])} --> {srt_time(cue['end'])}\n{cue['text']}\n")
     atomic_text(root / "transcript_raw.md", raw_md)
     atomic_text(root / "transcript_checked.md", checked)
     atomic_text(root / "lecture_full.md", full)
