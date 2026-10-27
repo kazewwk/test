@@ -1,0 +1,77 @@
+{
+  "path": "frames/frame_00031102_0001036733.webp",
+  "time": 1036.733313,
+  "image_sha256": "e7c75e5e70af34c328ca53b8242af25e0ccb4c6c9e6ac849dfddad29d2f4064d",
+  "cache_fingerprint": "4b2091e19d68fa99de5bb3c73bd968c2d0da01c6dd472c056495e1e27d8179ef",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "dtype": "bfloat16",
+  "quantized": false,
+  "backend": "vllm",
+  "raw": "```json\n{\n\"kind\":\"slide\",\n\"description\":\"教学课件，展示单词attention的发音、词性及用法，包含手写标注和示例句子。\",\n\"annotations\":[\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"pay attention\",\n\"meaning\":\"强调短语pay attention\"\n},\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"They did not pay any attention.\",\n\"meaning\":\"强调句子中的pay any attention部分\"\n},\n{\n\"type\":\"手写符号\",\n\"color\":\"蓝色\",\n\"target\":\"attention\",\n\"meaning\":\"手写符号n.，表示名词\"\n}\n],\n\"ocr_missing_text\":[],\n\"ocr_disagreements\":[],\n\"table_present\":false,\n\"formula_present\":false,\n\"formulas\":[],\n\"tables\":[],\n\"uncertain\":[]\n}\n```",
+  "parsed": {
+    "kind": "slide",
+    "description": "教学课件，展示单词attention的发音、词性及用法，包含手写标注和示例句子。",
+    "annotations": [
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "pay attention",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          104,
+          664,
+          462,
+          729
+        ],
+        "matching_color_pixels": 188,
+        "meaning_original_model": "强调短语pay attention"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "They did not pay any attention.",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          146,
+          728,
+          886,
+          788
+        ],
+        "matching_color_pixels": 799,
+        "meaning_original_model": "强调句子中的pay any attention部分"
+      },
+      {
+        "type": "手写符号",
+        "color": "蓝色",
+        "target": "attention",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "手写符号n.，表示名词"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": []
+  },
+  "generated_tokens": 196,
+  "finish_reason": "stop",
+  "elapsed_seconds": 5.75350540943748,
+  "batch_size": 32,
+  "verification": "model_observation_with_color_grounding_not_human_verified"
+}
