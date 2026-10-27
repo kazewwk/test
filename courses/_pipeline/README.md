@@ -104,6 +104,17 @@ Drive 源文件始终保留。下载支持 Range 续传、失败重试、字节�
 
 `runtime_driver.py` 负责环境、GitHub 断点恢复和批处理；`colab_controller.py` 使用同一 SSH ControlPath 监控、在运行时回收后重建、完成后释放资源，余额到 1 CU 预留线时停止，绝不充值。需要显式提供现有余额授权、私有凭据文件及已验收样课记录。用 `--help` 查看参数。运行时控制错误会记录为待修复，不能记为课程完成。
 
+监控每 45 秒检查真实进程与落盘产物，分开记录语音窗口、两套 OCR、MinerU 和图像 API 的完成数。状态心跳不会被当成解析进度。任务进程退出或连续 30 分钟没有新产物时，从已有文件续跑；同一小时最多自动恢复三次，连续失败保存诊断后释放资源。SSH 中断先重连，不因监控链路短暂失败而终止仍在计算的实例。恢复时保留较新的本地成果，不用旧的文本检查点覆盖它们。
+
+本机用 systemd 用户服务托管监控，异常退出后 10 秒自动启动；已完成或余额触及预留线的正常退出不会被反复拉起。安装命令如下，任务目录中的 `private/` 文件名与本项目约定一致，凭据内容不写入服务文件：
+
+```bash
+python3 scripts/install_watch_service.py --task-root /your/task --session YOUR_SESSION --accelerator L4
+systemctl --user status nce-course-watch.service
+```
+
+用户服务需在本机持续运行；`loginctl show-user "$USER" -p Linger` 可确认退出登录后是否继续托管。本次运行环境已启用 Linger。最新进度和恢复记录分别在任务私有目录 `controller/controller_status.json`、`controller/recoveries.jsonl`，不把“守护正常”当成“课程已完成”。
+
 ```bash
 /work/env/bin/python -m course_pipeline.cli validate /work/courses/series/lesson
 /work/env/bin/python -m pytest -q tests
