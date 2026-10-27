@@ -1,0 +1,192 @@
+{
+  "artifacts": {
+    "1793117595_9099.md": "48ff978f586a5df05592a3a04bba6058278fd65d191f860d1cccdf146f742686",
+    "1793117595_9099_res.json": "8ea718ef46ddf024586ef031bce6fd7ba6d39bf4459374ad3a0968f4d0ec59bd",
+    "imgs/img_in_image_box_1039_287_1793_1078.jpg": "812898db5c57124223ed0be08b280ffabb025469ef0d4cbf2753970eff321d06",
+    "region_repairs.md": "d98a937adb64c9152a61ed2869bcfd3d522797fcd32331c3c40691d960d8e24e",
+    "repairs/region_000/1793117596_4588.md": "59ecba6d22485d72d63b00a458a5d24de0efb859f95b0f1cba4b5b3ed1bd582f",
+    "repairs/region_000/1793117596_4588_res.json": "e1a3e33a0aecd5ec4c2ccffcc021aedb77aab29363731ad93db489a90fd9ca7e",
+    "repairs/region_000/source.png": "a48c7d84ff2dd1a94e6e788fe94fc043de340a5169ab536851c650cc129329e5",
+    "repairs/region_004/1793117596_5442.md": "23794d91c53ae875c8e247d72561e35d9d06ee07c70c9e0dbcc977a6d161504a",
+    "repairs/region_004/1793117596_5442_res.json": "79a2eb0925cbd485b2ec08a6fe7d21c43b79a09e9c72ca79f7a253b0b50b76d8",
+    "repairs/region_004/source.png": "c32b7de2fe7e3a72592a8e7814354cb0ac773049d40d5fe82719e3f1d7c22234"
+  },
+  "input_fingerprint": "4cc711af36a571cac77f00dd2bbe5ad69348dc67631924938ae6d99bbeb16556",
+  "image_sha256": "5302dd74dcefc3b641b6279f37d51e9a52b458f7ad19beb7458dfe946c330356",
+  "cache_fingerprint": "641454f3f95e26210dfa50f2586aade2998042aeb106033b2b449ce36e560b73",
+  "elapsed_seconds": 4.117078215997026,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "教学 bilibili",
+      "block_bbox": [
+        1647,
+        33,
+        1888,
+        100
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1647.0,
+          33.0
+        ],
+        [
+          1888.0,
+          33.0
+        ],
+        [
+          1888.0,
+          100.0
+        ],
+        [
+          1647.0,
+          100.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "自我介绍",
+      "block_bbox": [
+        99,
+        138,
+        348,
+        192
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          99.0,
+          138.0
+        ],
+        [
+          348.0,
+          138.0
+        ],
+        [
+          348.0,
+          192.0
+        ],
+        [
+          99.0,
+          192.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "·奥克兰大学教育学研究生（入学时QS专业全球排名17）·前北京新东方英语学习部优秀教师（2012-2018）",
+      "block_bbox": [
+        93,
+        281,
+        1101,
+        381
+      ],
+      "block_id": 2,
+      "block_order": 2,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          93.0,
+          281.0
+        ],
+        [
+          1101.0,
+          281.0
+        ],
+        [
+          1101.0,
+          381.0
+        ],
+        [
+          93.0,
+          381.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "17)",
+      "block_bbox": [
+        1039,
+        287,
+        1793,
+        1078
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1039.0,
+          287.0
+        ],
+        [
+          1793.0,
+          287.0
+        ],
+        [
+          1793.0,
+          1078.0
+        ],
+        [
+          1039.0,
+          1078.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "教学 lab",
+      "block_bbox": [
+        1638,
+        21,
+        1902,
+        114
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "NO",
+      "block_bbox": [
+        1571,
+        599,
+        1611,
+        630
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1638,
+        21,
+        1902,
+        114
+      ],
+      "ppocr_candidate": "胶学",
+      "recovered_text": "教学 lab",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        1571,
+        599,
+        1611,
+        630
+      ],
+      "ppocr_candidate": "NO",
+      "recovered_text": "NO",
+      "source_crop": "repairs/region_004/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

@@ -1,0 +1,192 @@
+{
+  "artifacts": {
+    "1793117510_7365.md": "51fc0538fa5af5f5fe70dc69d2ead291b059185ed2882e3596220a95faed46a0",
+    "1793117510_7365_res.json": "e07a43ef6c3e365d33914d3918c36d2adba346923c980fd02348b1a16faf8d65",
+    "imgs/img_in_image_box_1050_272_1771_1080.jpg": "69f2c64a53010f72dcd0c7ad5b98f27f5ee69387ce4f50a86f39f31f8ce6cf8b",
+    "region_repairs.md": "161af72ad4ecf10977454cae21f764da27de0efa4a20fed81c6dbcac422e8958",
+    "repairs/region_000/1793117510_3986.md": "a604b3f936aeeec446d926b80a2ba4a09180ece57f3dec46c0c82c6bc0215a47",
+    "repairs/region_000/1793117510_3986_res.json": "55d6fb60e3f917d65c7c0c8ac15f72cb30c050f48965b833b216f25a8e3b752a",
+    "repairs/region_000/source.png": "601cc7e60a0dab08e176ce465dbacf727f392b8e726b43382b3a830592ae0699",
+    "repairs/region_003/1793117511_1467.md": "84654d4144ed8cf5e15dc0eaa6b51b9acba1d5cfc66ea3d409ee3ae36c2fa124",
+    "repairs/region_003/1793117511_1467_res.json": "1874adbc4f14c46704b684053bd4faf3b95cdec4a4c5ed76d67f25a2ea60b0cb",
+    "repairs/region_003/source.png": "c79449efcea212a32f64a45e1837bcebc008e3d057ef3d70a49d290439311063"
+  },
+  "input_fingerprint": "efff9bcc374b81ac01151ebc0ff8d57ec54b74b7ef25394aaf2425093ce025f2",
+  "image_sha256": "af9ff9bf62239da13fedb622f76280942d2fb54761cda63820bfcaa64e9c2b87",
+  "cache_fingerprint": "641454f3f95e26210dfa50f2586aade2998042aeb106033b2b449ce36e560b73",
+  "elapsed_seconds": 3.0609060030037654,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "教学 bilibili",
+      "block_bbox": [
+        1646,
+        29,
+        1890,
+        104
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1646.0,
+          29.0
+        ],
+        [
+          1890.0,
+          29.0
+        ],
+        [
+          1890.0,
+          104.0
+        ],
+        [
+          1646.0,
+          104.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "NCE BOOKI",
+      "block_bbox": [
+        23,
+        209,
+        489,
+        310
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          23.0,
+          209.0
+        ],
+        [
+          489.0,
+          209.0
+        ],
+        [
+          489.0,
+          310.0
+        ],
+        [
+          23.0,
+          310.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "①\n自我介绍",
+      "block_bbox": [
+        438,
+        657,
+        513,
+        1027
+      ],
+      "block_id": 2,
+      "block_order": 2,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          438.0,
+          657.0
+        ],
+        [
+          513.0,
+          657.0
+        ],
+        [
+          513.0,
+          1027.0
+        ],
+        [
+          438.0,
+          1027.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1050,
+        272,
+        1771,
+        1080
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1050.0,
+          272.0
+        ],
+        [
+          1771.0,
+          272.0
+        ],
+        [
+          1771.0,
+          1081.0
+        ],
+        [
+          1050.0,
+          1081.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "医学 bmbii",
+      "block_bbox": [
+        1639,
+        22,
+        1902,
+        112
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "开篇",
+      "block_bbox": [
+        494,
+        524,
+        690,
+        639
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1639,
+        22,
+        1902,
+        112
+      ],
+      "ppocr_candidate": "胶学",
+      "recovered_text": "医学 bmbii",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        494,
+        524,
+        690,
+        639
+      ],
+      "ppocr_candidate": "开篇",
+      "recovered_text": "开篇",
+      "source_crop": "repairs/region_003/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}
