@@ -1,0 +1,193 @@
+{
+  "artifacts": {
+    "1793144500_8668.md": "32ed63419f40b39fbb7557bc859b2ad1dd7763835fbdd98650ad8a7fd20adb64",
+    "1793144500_8668_res.json": "6eb6bb9b3da1afc249fbe894a8f6a6a7acee43be8013f14e68025407167c7d26",
+    "imgs/img_in_header_image_box_1652_31_1889_101.jpg": "07c33aff2f697e45ea19f55e4ea4c4d3129e27a0236ebdd83e411ba64189f000",
+    "imgs/img_in_image_box_1170_291_1766_1077.jpg": "2dc780be321e55dad4d9dcbb68d8b9b6b879026816fc266fc5686c98ba9d2b4f",
+    "region_repairs.md": "a29102704c2bae9c90fcd4cf15e0cff5b236c14ebc8d79e589667d218371437d",
+    "repairs/region_000/1793144500_3696.md": "c0da297ea0775b4b2fb0b815deca12c12c4dbd1a2a7679b60f22e2199773a72e",
+    "repairs/region_000/1793144500_3696_res.json": "37734a9f0998f983b80a863c288d357e38c33bd3570ea2753a80d51b3604b767",
+    "repairs/region_000/source.png": "e65053b50efb705e09bd59401382154cfbac545b62daca339447959be9cfe7b8",
+    "repairs/region_003/1793144501_7945.md": "722b19596c96f33e6746b6558efdf5be452c02d28c3dd8686f703dea86c5e379",
+    "repairs/region_003/1793144501_7945_res.json": "04ffb147feaacd6fb6688f4dd7773a59df92f0edf31f59a01c36aa8863483218",
+    "repairs/region_003/source.png": "75fb2dac74c663ccf7e6964557ae099dd919777bdfb75243cd21d81dc1c6ef84"
+  },
+  "input_fingerprint": "97f025f0396522abbf0bacfbefa1d280363d747a66020c58d4c90a3152bc6dde",
+  "image_sha256": "85aa283af3398f148e14a03ba2ca346881e15d27a406553d3a8e9ab8b9dda525",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 4.1137087710012565,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1652,
+        31,
+        1889,
+        101
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1652.0,
+          31.0
+        ],
+        [
+          1889.0,
+          31.0
+        ],
+        [
+          1889.0,
+          101.0
+        ],
+        [
+          1652.0,
+          101.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "NCE BOOK1\nLesson 1",
+      "block_bbox": [
+        24,
+        210,
+        490,
+        389
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          24.0,
+          210.0
+        ],
+        [
+          490.0,
+          210.0
+        ],
+        [
+          490.0,
+          389.0
+        ],
+        [
+          24.0,
+          389.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "Words",
+      "block_bbox": [
+        417,
+        537,
+        675,
+        619
+      ],
+      "block_id": 2,
+      "block_order": 2,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          417.0,
+          537.0
+        ],
+        [
+          675.0,
+          537.0
+        ],
+        [
+          675.0,
+          619.0
+        ],
+        [
+          417.0,
+          619.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1170,
+        291,
+        1766,
+        1077
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1170.0,
+          291.0
+        ],
+        [
+          1766.0,
+          291.0
+        ],
+        [
+          1766.0,
+          1077.0
+        ],
+        [
+          1170.0,
+          1077.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "学 bilibili",
+      "block_bbox": [
+        1703,
+        21,
+        1901,
+        113
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "BOOKI",
+      "block_bbox": [
+        251,
+        235,
+        489,
+        309
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1703,
+        21,
+        1901,
+        113
+      ],
+      "ppocr_candidate": "bilbil",
+      "recovered_text": "学 bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        251,
+        235,
+        489,
+        309
+      ],
+      "ppocr_candidate": "BOOKI",
+      "recovered_text": "BOOKI",
+      "source_crop": "repairs/region_003/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

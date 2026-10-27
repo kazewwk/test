@@ -1,0 +1,112 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"slide\",\n  \"text_lines\": [\n    \"CAPSULE ACADEMY\",\n    \"胶囊助学计划\",\n    \"Photographer\",\n    \"Berlin\",\n    \"小红书\"\n  ],\n  \"description\": \"白色背景。上方中央有灰蓝色与灰粉色的胶囊形图案。左下方两行文字分别置于灰粉色和灰蓝色矩形底色上。右侧有两行两列共四个码图及其下方的彩色图标，其中右上为圆形码，其余为方形码。右上角有很淡的水印。\",\n  \"annotations\": [],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"右上角水印过淡，无法完整确认其文字。\"\n  ]\n}",
+  "parsed": {
+    "kind": "slide",
+    "text_lines": [
+      "CAPSULE ACADEMY",
+      "胶囊助学计划",
+      "Photographer",
+      "Berlin",
+      "小红书"
+    ],
+    "description": "白色背景。上方中央有灰蓝色与灰粉色的胶囊形图案。左下方两行文字分别置于灰粉色和灰蓝色矩形底色上。右侧有两行两列共四个码图及其下方的彩色图标，其中右上为圆形码，其余为方形码。右上角有很淡的水印。",
+    "annotations": [],
+    "checkmarks_count": 0,
+    "circled_text": [],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "右上角水印过淡，无法完整确认其文字。"
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "CAPSULE ACADEMY\n胶囊助学计划\nPhotographer\nBerlin\n小红书"
+  },
+  "usage": {
+    "completion_tokens": 206,
+    "total_tokens": 2886,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 4.405935275000957,
+  "image_sha256": "e8594bb981d8f0f13a644edee3d1a92d30c9f3b987ffc5ab7723162472fdfc33",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\"kind\":\"slide\",\"text_lines\":[\"CAPSULE ACADEMY\",\"胶囊助学计划\",\"Photographer\",\"Berlin\",\"小红书\"],\"description\":\"白色背景。上方中央有灰绿色与浅粉色组成的胶囊形图案，图案内有“CAPSULE ACADEMY”。右侧有四个二维码及社交平台图标；左上方另有一处很淡的水印。\",\"annotations\":[],\"checkmarks_count\":null,\"circled_text\":[],\"tables\":[],\"formulas\":[],\"uncertain\":[\"左上方淡色水印文字：[无法确认]\"]}",
+    "parsed": {
+      "kind": "slide",
+      "text_lines": [
+        "CAPSULE ACADEMY",
+        "胶囊助学计划",
+        "Photographer",
+        "Berlin",
+        "小红书"
+      ],
+      "description": "白色背景。上方中央有灰绿色与浅粉色组成的胶囊形图案，图案内有“CAPSULE ACADEMY”。右侧有四个二维码及社交平台图标；左上方另有一处很淡的水印。",
+      "annotations": [],
+      "checkmarks_count": null,
+      "circled_text": [],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "左上方淡色水印文字：[无法确认]"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": "CAPSULE ACADEMY\n胶囊助学计划\nPhotographer\nBerlin\n小红书"
+    },
+    "usage": {
+      "completion_tokens": 412,
+      "total_tokens": 3092,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 272
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 8.054530429999431,
+    "image_sha256": "e8594bb981d8f0f13a644edee3d1a92d30c9f3b987ffc5ab7723162472fdfc33",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00034919_0001163967.webp",
+  "time": 1163.966688,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "low_confidence_instructional_ocr"
+  ]
+}
