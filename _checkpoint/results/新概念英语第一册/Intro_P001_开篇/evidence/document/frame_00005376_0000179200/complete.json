@@ -1,0 +1,161 @@
+{
+  "artifacts": {
+    "1793118456_6973.md": "a0924ffd234aeffd69c1271522bf1a0400660b1a6e25f0a11778fa051c0dca90",
+    "1793118456_6973_res.json": "f0a6aabd55b081806b5a873ba84f1f29e471e55a6a5fba131d30554886b9d645",
+    "imgs/img_in_image_box_1012_287_1812_1080.jpg": "55d3933bddd84a194bff711c1241ec2b02257889b1e621b409239b473564bc98",
+    "region_repairs.md": "c78dd365167eded79259c52108acd276ac76f1dd0ae3151c8c2e5ee1c76c0576",
+    "repairs/region_001/1793118457_2246.md": "1fcebe6913bfb2ad01030ef5df8d74abd31591db7645fb12600af942368bbba0",
+    "repairs/region_001/1793118457_2246_res.json": "38211abab7a8789d8cf3730f2651423c8d5766d65dc0eb7f569e47c21e5af17a",
+    "repairs/region_001/source.png": "704827f8b2a8bac6dce09c5ae343b6db234c932b5e479398955f0b0020b2da3b",
+    "repairs/region_003/1793118457_6678.md": "cc05c6f4296b14240279b9858e121dd04d9a46bf3196dbeddfac33cfa9e3ca7a",
+    "repairs/region_003/1793118457_6678_res.json": "5af572abe6cbbd1306408cfb68f207bd10425eb0170ee04258f8f2a55230ec94",
+    "repairs/region_003/source.png": "211d43b1e939ff16283ecf3b593a52a32cd22fbd0ed070717371ddd766eb45b3"
+  },
+  "input_fingerprint": "0c6e8ecf432123e58e20544ed696b38e9d169b3bfa2824003f68d86ad5fe5838",
+  "image_sha256": "27df2a399d1a93cb6da31341e25d0a1871905f9a33b5dd7d4369495ff4ecd43a",
+  "cache_fingerprint": "641454f3f95e26210dfa50f2586aade2998042aeb106033b2b449ce36e560b73",
+  "elapsed_seconds": 3.1117403709940845,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "W = 1.31141",
+      "block_bbox": [
+        1648,
+        29,
+        1891,
+        102
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1648.0,
+          29.0
+        ],
+        [
+          1891.0,
+          29.0
+        ],
+        [
+          1891.0,
+          102.0
+        ],
+        [
+          1648.0,
+          102.0
+        ]
+      ]
+    },
+    {
+      "block_label": "header",
+      "block_content": "课前准备",
+      "block_bbox": [
+        93,
+        135,
+        350,
+        194
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          93.0,
+          135.0
+        ],
+        [
+          350.0,
+          135.0
+        ],
+        [
+          350.0,
+          194.0
+        ],
+        [
+          93.0,
+          194.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "NO\nWIR",
+      "block_bbox": [
+        1012,
+        287,
+        1812,
+        1080
+      ],
+      "block_id": 2,
+      "block_order": null,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          1012.0,
+          287.0
+        ],
+        [
+          1812.0,
+          287.0
+        ],
+        [
+          1812.0,
+          1081.0
+        ],
+        [
+          1012.0,
+          1081.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "W = | x | | y",
+      "block_bbox": [
+        1642,
+        27,
+        1897,
+        109
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "NO\nWHR",
+      "block_bbox": [
+        1567,
+        620,
+        1621,
+        658
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1642,
+        27,
+        1897,
+        109
+      ],
+      "ppocr_candidate": "胶学",
+      "recovered_text": "W = | x | | y",
+      "source_crop": "repairs/region_001/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        1567,
+        620,
+        1621,
+        658
+      ],
+      "ppocr_candidate": "WHR",
+      "recovered_text": "NO\nWHR",
+      "source_crop": "repairs/region_003/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

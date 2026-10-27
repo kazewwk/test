@@ -1,0 +1,192 @@
+{
+  "artifacts": {
+    "1793118506_7268.md": "386bae217b68f25232d459ba819230833a4a187a783f253d1b75be0790a575a8",
+    "1793118506_7268_res.json": "c1faf084ebe627b433ae6f2128183ce0669b0bda6e916710d407284634974a7b",
+    "imgs/img_in_image_box_1037_294_1788_1079.jpg": "8165df421e020736d070c355fd8b9dacd6308f13f7540d66c6fb50ae81c2e84f",
+    "region_repairs.md": "8cd21d44b54675fbf44e4698c05d181080d1b3843e44a24b9e3a07e9d34471ef",
+    "repairs/region_000/1793118506_6245.md": "53f0a2d6322c7aff819d9a028b3d4bfc1f3de6dd171c0114c372727a8560df66",
+    "repairs/region_000/1793118506_6245_res.json": "15fcb1445f177b89c237e59aa219b69f4da07958d27e57b35edc83700eb813af",
+    "repairs/region_000/source.png": "f5f92fd8fc86cc8bd389475bc97367bdc66b602021ca9b93ab71e29e4be6b7ce",
+    "repairs/region_004/1793118507_4663.md": "063439358edc03ffea9fe50735b5d12ca0cb7d7f64d406e06d73c6fd22006e8c",
+    "repairs/region_004/1793118507_4663_res.json": "c58083bcdf48737c2d2a479b8e9351d110df54ab017394c942dc7e30a4105dc5",
+    "repairs/region_004/source.png": "6de5187dee60fe20fc9dd06d4422372dff80652b7f6114d4a4da5c54a743bccc"
+  },
+  "input_fingerprint": "055d81bb0a0d0a9521f69fe08ac96ece8b7f10634cb9b1283d9ab71dd8845fe5",
+  "image_sha256": "331ac1fff6bd3ef2f7fe7cf71f108a881b663afdc721b986fb00bec16148d1fc",
+  "cache_fingerprint": "641454f3f95e26210dfa50f2586aade2998042aeb106033b2b449ce36e560b73",
+  "elapsed_seconds": 3.196958787004405,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "教学 bilibili",
+      "block_bbox": [
+        1648,
+        31,
+        1888,
+        100
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1648.0,
+          31.0
+        ],
+        [
+          1888.0,
+          31.0
+        ],
+        [
+          1888.0,
+          100.0
+        ],
+        [
+          1648.0,
+          100.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "课前准备",
+      "block_bbox": [
+        97,
+        136,
+        347,
+        193
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          97.0,
+          136.0
+        ],
+        [
+          347.0,
+          136.0
+        ],
+        [
+          347.0,
+          193.0
+        ],
+        [
+          97.0,
+          193.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "① 新概念第一册教材",
+      "block_bbox": [
+        94,
+        291,
+        583,
+        347
+      ],
+      "block_id": 2,
+      "block_order": 2,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          94.0,
+          291.0
+        ],
+        [
+          583.0,
+          291.0
+        ],
+        [
+          583.0,
+          347.0
+        ],
+        [
+          94.0,
+          347.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "NO\nWIR",
+      "block_bbox": [
+        1037,
+        294,
+        1788,
+        1079
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1037.0,
+          294.0
+        ],
+        [
+          1788.0,
+          294.0
+        ],
+        [
+          1788.0,
+          1079.0
+        ],
+        [
+          1037.0,
+          1079.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "文学 bilibil",
+      "block_bbox": [
+        1639,
+        23,
+        1902,
+        112
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "NU\nWUP",
+      "block_bbox": [
+        1568,
+        612,
+        1606,
+        644
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1639,
+        23,
+        1902,
+        112
+      ],
+      "ppocr_candidate": "胶学",
+      "recovered_text": "文学 bilibil",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        1568,
+        612,
+        1606,
+        644
+      ],
+      "ppocr_candidate": "NU",
+      "recovered_text": "NU\nWUP",
+      "source_crop": "repairs/region_004/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}
