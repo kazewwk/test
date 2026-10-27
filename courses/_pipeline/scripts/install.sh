@@ -3,6 +3,7 @@ set -euo pipefail
 PIPELINE_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 PIPELINE_DEVICE="${1:-cuda}"
 PIPELINE_ENV="${2:-$PIPELINE_ROOT/.venv}"
+PIPELINE_VISION="${3:-api}"
 PIPELINE_PYTHON="${PIPELINE_PYTHON:-python3.12}"
 command -v ffmpeg >/dev/null
 command -v ffprobe >/dev/null
@@ -34,11 +35,19 @@ else
   "$PIPELINE_ENV-ocr/bin/pip" install paddlepaddle==3.3.0
 fi
 "$PIPELINE_ENV-ocr/bin/pip" install 'paddleocr[doc-parser]==3.7.0' -e "$PIPELINE_ROOT"
-make_pipeline_env "$PIPELINE_ENV-vlm"
-"$PIPELINE_ENV-vlm/bin/pip" install torch==2.11.0 torchvision==0.26.0 transformers==5.20.2 accelerate pillow qwen-vl-utils -e "$PIPELINE_ROOT"
+if [ "$PIPELINE_VISION" = local ]; then
+  make_pipeline_env "$PIPELINE_ENV-vlm"
+  "$PIPELINE_ENV-vlm/bin/pip" install torch==2.11.0 torchvision==0.26.0 transformers==5.20.2 accelerate pillow qwen-vl-utils -e "$PIPELINE_ROOT"
+elif [ "$PIPELINE_VISION" != api ]; then
+  echo 'Vision backend must be api or local' >&2
+  exit 2
+fi
+make_pipeline_env "$PIPELINE_ENV-mineru"
 if [ "$PIPELINE_DEVICE" = cuda ]; then
-  make_pipeline_env "$PIPELINE_ENV-mineru"
   "$PIPELINE_ENV-mineru/bin/pip" install 'mineru[full]==4.0.12' -e "$PIPELINE_ROOT"
+else
+  "$PIPELINE_ENV-mineru/bin/pip" install torch==2.13.0 torchvision==0.28.0 --index-url https://download.pytorch.org/whl/cpu
+  "$PIPELINE_ENV-mineru/bin/pip" install mineru==4.0.12 transformers==5.21.0 accelerate -e "$PIPELINE_ROOT"
 fi
 for PIPELINE_SUFFIX in '' '-ocr' '-vlm' '-mineru'; do
   if [ -x "$PIPELINE_ENV$PIPELINE_SUFFIX/bin/python" ]; then

@@ -208,13 +208,16 @@ def assemble(lesson_dir, source, media, audio_info, windows):
         for frame in associated:
             name = Path(frame["path"]).stem + ".json"
             ocr = load(root / "evidence/ocr" / name)
-            visual = load(root / "evidence/visual" / name)
+            api_path=root/"evidence/visual_api"/name
+            visual_path=api_path if api_path.exists() else root/"evidence/visual"/name
+            visual = load(visual_path)
+            if visual.get("image_sha256") not in (None,frame["sha256"]):raise ValueError("Visual evidence image hash mismatch: "+name)
             # Keep the complete hypotheses in their evidence files. Avoid
             # embedding a second copy of the same raw JSON in every segment.
             ocr = {k:v for k,v in ocr.items() if k != 'raw'}
             ocr['raw_evidence'] = 'evidence/ocr/' + name
             visual = {k:v for k,v in visual.items() if k not in ('raw','model_revisions')}
-            visual['raw_evidence'] = 'evidence/visual/' + name
+            visual['raw_evidence'] = str(visual_path.relative_to(root))
             document_dir = root / "evidence/document" / Path(frame["path"]).stem
             docs = [str(p.relative_to(root)) for p in document_dir.glob("*.md")]
             mineru_dir=root/'evidence/mineru'/Path(frame['path']).stem
@@ -243,6 +246,8 @@ def assemble(lesson_dir, source, media, audio_info, windows):
             for doc in frame['document_ocr_markdown']+frame['mineru_markdown']:
                 rag_parts.append(inline_document(root,doc))
             rag_parts.append('视觉观察（模型候选，见核验字段）：'+frame['visual']['parsed'].get('description',''))
+            if frame['visual']['parsed'].get('text_lines'):
+                rag_parts.append('视觉接口逐字读图候选：\n'+'\n'.join(frame['visual']['parsed']['text_lines']))
             if frame['visual']['parsed'].get('annotations'):
                 rag_parts.append(json.dumps([{k:v for k,v in a.items() if not k.endswith('_original_model')} for a in frame['visual']['parsed']['annotations']],ensure_ascii=False))
             if frame['visual']['parsed'].get('uncertain'):
@@ -260,7 +265,8 @@ def assemble(lesson_dir, source, media, audio_info, windows):
     for frame in frames:
         name = Path(frame["path"]).stem + ".json"
         ocr = load(root / "evidence/ocr" / name)
-        visual = load(root / "evidence/visual" / name)
+        api_path=root/"evidence/visual_api"/name
+        visual = load(api_path if api_path.exists() else root/"evidence/visual"/name)
         if not ocr["texts"]:
             issues.append({"type": "empty_ocr_needs_image_review", "start": frame["time"], "end": frame["end"], "frame": frame["path"]})
         if any(s < 0.8 for s in ocr["scores"]):
@@ -323,8 +329,10 @@ def assemble(lesson_dir, source, media, audio_info, windows):
         full += body
         for f in s["frames"]:
             full += f"### 画面 {seconds_label(f['time'])}\n\n![教学画面]({f['path']})\n\n"
-            full += f"[OCR 原始输出](evidence/ocr/{Path(f['path']).stem}.json) · [视觉原始输出](evidence/visual/{Path(f['path']).stem}.json)\n\n"
+            full += f"[OCR 原始输出](evidence/ocr/{Path(f['path']).stem}.json) · [视觉原始输出]({f['visual']['raw_evidence']})\n\n"
             full += "OCR 原文：\n\n```text\n" + "\n".join(f["ocr"]["texts"]) + "\n```\n\n"
+            if f['visual']['parsed'].get('text_lines'):
+                full+='视觉接口逐字读图候选：\n\n```text\n'+'\n'.join(f['visual']['parsed']['text_lines'])+'\n```\n\n'
             full += "视觉观察（机器输出，未人工核验）：\n\n" + f["visual"]["parsed"].get("description", "[无法确认]") + "\n\n"
             observations={k:f['visual']['parsed'][k] for k in ['annotations','ocr_missing_text','ocr_disagreements','formulas','tables','uncertain'] if f['visual']['parsed'].get(k)}
             if observations:

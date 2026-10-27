@@ -83,11 +83,39 @@ def test_missing_english_clause_is_flagged_even_in_long_chinese_context():
 
 def test_saved_webp_preserves_decoded_pixels(tmp_path):
     import cv2
+    from PIL import Image
     rng=np.random.default_rng(31)
     image=rng.integers(0,256,(32,64,3),dtype=np.uint8)
     dest=tmp_path/'frame.webp'
-    assert cv2.imwrite(str(dest),image,[cv2.IMWRITE_WEBP_QUALITY,101])
+    Image.fromarray(cv2.cvtColor(image,cv2.COLOR_BGR2RGB)).save(dest,lossless=True,method=0)
     assert np.array_equal(image,cv2.imread(str(dest)))
+
+
+def test_whisper_hardware_migration_reuses_only_matching_unquantized_results(tmp_path):
+    from course_pipeline.models import reusable
+    from course_pipeline.cli import inference_fingerprint
+    import json
+    job=dict(source_sha256='video',model_revisions={'Systran/faster-whisper-large-v3':'rev'},windows=audio_windows(60),device='cpu')
+    cpu=inference_fingerprint('whisper',job)
+    gpu=inference_fingerprint('whisper',{**job,'device':'cuda:0'})
+    job.update(cache_fingerprint=cpu,accepted_cache_fingerprints=[gpu])
+    record=tmp_path/'chunk.json'
+    record.write_text(json.dumps(dict(source_sha256='video',cache_fingerprint=gpu)))
+    assert reusable(record,job,'source_sha256','video')
+    assert not reusable(record,job,'source_sha256','different-video')
+    record.write_text(json.dumps(dict(source_sha256='video',cache_fingerprint='old-int8')))
+    assert not reusable(record,job,'source_sha256','video')
+
+
+def test_vectorized_change_detector_preserves_original_tile_thresholds():
+    import cv2
+    from course_pipeline.media import difference
+    rng=np.random.default_rng(71)
+    for shape in [(216,384),(60,80),(61,81)]:
+        left=rng.integers(0,256,shape,dtype=np.uint8);right=rng.integers(0,256,shape,dtype=np.uint8)
+        diff=cv2.absdiff(left,right);mask=diff>18
+        largest=max(float(x.mean()) for row in np.array_split(mask,12,axis=0) for x in np.array_split(row,16,axis=1))
+        assert difference(left,right)==(float(mask.mean()),largest,float(diff.mean()))
 
 
 def test_table_cannot_silently_skip_document_ocr_due_to_model_boolean():

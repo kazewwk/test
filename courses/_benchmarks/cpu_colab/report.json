@@ -1,0 +1,53 @@
+{
+  "hardware": "Colab CPU high RAM: 8 vCPU, 51 GiB",
+  "rate_cu_per_hour": 0.26,
+  "stages": {
+    "qwen": {
+      "state": "complete",
+      "wall_seconds": 151.6088317010001,
+      "model_inference_seconds": 136.42951582699993,
+      "sampled_peak_process_tree_rss_bytes": 12780056576
+    },
+    "whisper": {
+      "state": "complete",
+      "wall_seconds": 150.62361329600003,
+      "model_inference_seconds": 144.323810761,
+      "sampled_peak_process_tree_rss_bytes": 7233691648
+    },
+    "ocr": {
+      "state": "complete",
+      "wall_seconds": 73.8686666399999,
+      "model_inference_seconds": 46.19249989299988,
+      "sampled_peak_process_tree_rss_bytes": 8214454272
+    },
+    "document": {
+      "state": "stopped_cost_test",
+      "wall_seconds": 303.79164385795593,
+      "note": "No complete document output within bounded cost test; not a model accuracy failure"
+    },
+    "mineru": {
+      "state": "not_run_after_cpu_cost_exceeded_existing_balance_projection"
+    }
+  },
+  "audio_seconds": 60,
+  "image_source_time": 160.4,
+  "decision": "CPU ASR functional; full CPU batch not economical at measured native precision and current balance",
+  "cpu_model": "AMD EPYC 7B12 (AVX2; no AVX512/BF16 hardware)",
+  "source_drive_file_id": "1196B0og7aLMR9Lstfz3ceRGQ3N9ojkKR",
+  "audio_source_interval": [
+    120,
+    180
+  ],
+  "source_frame_sha256": "1c0ffa4028e54ff916ecf38e3252acefaaa763dc7e5b110767ef207a58c60315",
+  "source_audio_sha256": "22bc84b0b89721e7c48f38bcac2eab8733f31349af5baf1f6c689ba561f49a20",
+  "linear_projection": {
+    "all_source_hours": 127.51689083333332,
+    "cpu_audio_only_hours": 596.6798549602861,
+    "cpu_audio_only_CU": 155.13676228967438,
+    "limitations": [
+      "Single 60-second sample, not a workload guarantee",
+      "Excludes model loading, disagreement reviews, OCR, MinerU, downloads, API and publication",
+      "FP32 on CPU, original model weights; no integer quantization"
+    ]
+  }
+}

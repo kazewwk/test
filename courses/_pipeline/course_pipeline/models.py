@@ -17,7 +17,8 @@ def reusable(path, job, source_key, source_value):
         return False
     try:r = load(path)
     except (ValueError,OSError):return False
-    if r.get(source_key)!=source_value or r.get('cache_fingerprint')!=job.get('cache_fingerprint'):return False
+    accepted={job.get('cache_fingerprint'),*job.get('accepted_cache_fingerprints',[])}
+    if r.get(source_key)!=source_value or r.get('cache_fingerprint') not in accepted:return False
     expected=job.get('frame_input_fingerprints',{}).get(source_value)
     if expected is not None and r.get('input_fingerprint')!=expected:return False
     if path.name=='complete.json':
@@ -116,7 +117,8 @@ def whisper_worker(job):
     device = "cpu" if job.get("device") == "cpu" else "cuda"
     revisions = job.setdefault("model_revisions", {})
     path = model_path("Systran/faster-whisper-large-v3", revisions)
-    model = WhisperModel(path, device=device, compute_type="int8" if device == "cpu" else "float16",
+    compute_type = "float32" if device == "cpu" else "float16"
+    model = WhisperModel(path, device=device, compute_type=compute_type,
                          cpu_threads=job.get("threads", 8), num_workers=1)
     write_json(Path(job["output"]) / "model_revisions.json", revisions)
     audio, sr = sf.read(job["audio"], dtype="float32")
@@ -142,7 +144,7 @@ def whisper_worker(job):
                   "model_revisions": revisions, "language": info.language,
                   "language_probability": info.language_probability,
                   "segments": segments, "text": "".join(s["text"] for s in segments),
-                  "elapsed_seconds": time.perf_counter() - started, "device": device,
+                  "elapsed_seconds": time.perf_counter() - started, "device": device, "compute_type": compute_type,
                   "completed_at": utcnow()}
         write_json(out, record)
         print(json.dumps({"stage": "whisper", "chunk": win["id"], "seconds": record["elapsed_seconds"]}), flush=True)
@@ -229,6 +231,9 @@ OCR候选另行完整保存，下面候选仅帮助定位，不是可靠答案�
 
 
 def visual_worker(job):
+    if job.get('visual_backend')=='api':
+        from .vision_api import run
+        return run(job)
     if job.get('visual_backend')=='vllm':
         from .vision_vllm import run
         return run(job)

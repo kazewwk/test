@@ -48,3 +48,14 @@ def test_document_checkpoint_requires_all_original_crop_bytes(tmp_path):
     assert not reusable(marker,job,'image_sha256','source')
     marker.write_text('{interrupted')
     assert not reusable(marker,job,'image_sha256','source')
+
+
+def test_api_result_uses_visible_text_and_preserves_uncertainty():
+    from course_pipeline.vision_api import visible_content,parse_visible
+    response={'choices':[{'finish_reason':'stop','message':{'reasoning_content':'private reasoning is not an artifact',
+              'content':'{"text_lines":["private adj. + n."],"handwritten_marks":[{"type":"圈","target":"+ n","uncertain":true}],"uncertain":["bounds unclear"]}'}}]}
+    text,_=visible_content(response)
+    assert 'private reasoning' not in text
+    parsed=parse_visible(text)
+    assert parsed['text_lines']==['private adj. + n.']
+    assert parsed['annotations'][0]['requires_review'] is True

@@ -21,6 +21,23 @@ def mineru_worker(job):
         dest=pinned/item.name
         if not dest.exists():dest.symlink_to(item,target_is_directory=item.is_dir())
     (pinned/MODEL_COMPLETE_MARKER).touch()
+    cpu=job.get('device')=='cpu'
+    if cpu:
+        # MinerU 4.0.12 includes a native Transformers backend but omits it from
+        # the public engine selector. Select that existing backend in this
+        # isolated worker, retaining original weights instead of GGUF quantization.
+        from importlib.metadata import version
+        if version('mineru')!='4.0.12':raise RuntimeError('Revalidate the CPU MinerU adapter for this version')
+        from mineru.model.vlm import selector
+        from mineru_vl_utils import transformers_loading
+        import torch
+        torch.set_num_threads(job.get('threads',8))
+        config.model.small_backend='onnx'
+        selector.get_vlm_engine=lambda *args,**kwargs:'transformers'
+        original_loader=transformers_loading.load_transformers_model
+        def cpu_model(*args,**kwargs):
+            return original_loader(*args,**kwargs).to(device='cpu',dtype=torch.float32)
+        transformers_loading.load_transformers_model=cpu_model
     for frame in job['frames']:
         out=Path(job['output'])/Path(frame['path']).stem
         marker=out/'complete.json'
@@ -31,9 +48,11 @@ def mineru_worker(job):
             image=Path(directory)/(Path(frame['path']).stem+'.png')
             Image.open(Path(job['lesson_dir'])/frame['path']).convert('RGB').save(image,compress_level=1)
             result=parse(image,tier='advanced',ocr_mode='ocr',image_analysis=True,
-                         vlm_config=VlmConfig(engine='vllm',max_concurrency=4))
+                         vlm_config=VlmConfig(engine='auto' if cpu else 'vllm',max_concurrency=1 if cpu else 4))
             result.save(FileBasedDataWriter(str(out)))
         write_json(marker,{'artifacts':{k:v for k,v in artifact_hashes(out).items() if k!='complete.json'},'image_sha256':frame['sha256'],'source_frame':frame['path'],'source_time':frame['time'],
                            'cache_fingerprint':job.get('cache_fingerprint'),'tier':'advanced',
-                           'model':'MinerU2.5-Pro-2605-1.2B','model_revision':revision,'elapsed_seconds':time.perf_counter()-started})
+                           'model':'MinerU2.5-Pro-2605-1.2B','model_revision':revision,
+                           'backend':'transformers-float32-cpu' if cpu else 'vllm-native-gpu',
+                           'elapsed_seconds':time.perf_counter()-started})
         print(json.dumps({'stage':'mineru','frame':frame['path']}),flush=True)

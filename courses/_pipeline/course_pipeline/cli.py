@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import fcntl
 import json
 import os
 import shutil
@@ -35,7 +36,7 @@ def inference_fingerprint(stage,job):
     from .models import VISUAL_PROMPT,ASR_CONTEXT
     names={'qwen':['Qwen/Qwen3-ASR-1.7B','Qwen/Qwen3-ForcedAligner-0.6B'],
            'whisper':['Systran/faster-whisper-large-v3'],
-           'visual':[job.get('visual_model','Qwen/Qwen3.5-9B')],
+           'visual':[] if job.get('visual_backend')=='api' else [job.get('visual_model','Qwen/Qwen3.5-9B')],
            'document':['PaddlePaddle/PaddleOCR-VL-1.6'],
            'mineru':['opendatalab/MinerU2.5-Pro-2605-1.2B']}.get(kind,[])
     data={'adapter_version':2,'stage':stage,'source_sha256':job['source_sha256'],
@@ -44,12 +45,15 @@ def inference_fingerprint(stage,job):
         data.update(windows=job['windows'],audio_format='16kHz-mono-pcm16-v1',
                     beam_size=job.get('beam_size',5) if kind=='whisper' else None)
         if kind=='qwen':data.update(context=job.get('context',ASR_CONTEXT),language=job.get('language'))
-        if kind=='whisper':data['compute_type']='int8' if job.get('device')=='cpu' else 'float16'
+        if kind=='whisper':data['compute_type']='float32' if job.get('device')=='cpu' else 'float16'
     else:
         data['adapter_version']=3
         data['input_encoding']='full-source-resolution-image'
         if kind=='ocr':data['ocr_engine']=job.get('ocr_engine','paddle')
         if kind=='visual':
+            if job.get('visual_backend')=='api':
+                from .vision_api import PROMPT
+                data.update(api_model=job.get('api_model','gpt-6.1-terra'),api_prompt=PROMPT)
             data.update(prompt=job.get('prompt',VISUAL_PROMPT),max_tokens=job.get('max_new_tokens',2048))
 
     # Hardware choice is recorded in each result; completed hypotheses can be
@@ -59,6 +63,10 @@ def inference_fingerprint(stage,job):
 
 def worker(stage, job, job_dir, ocr_python,visual_python=None,mineru_python=None):
     job={**job,'cache_fingerprint':inference_fingerprint(stage,job),'archive_root':str(job_dir/'invalidated_evidence')}
+    if stage.removeprefix('review_')=='whisper':
+        # Preserve completed, unquantized hypotheses across hardware migration.
+        # Each record retains its actual precision; old int8 results are excluded.
+        job['accepted_cache_fingerprints']=[inference_fingerprint(stage,{**job,'device':d}) for d in ('cpu','cuda:0')]
     if stage in ('document','visual'):
         inputs={}
         for frame in job['frames']:
@@ -88,8 +96,14 @@ def worker(stage, job, job_dir, ocr_python,visual_python=None,mineru_python=None
     library_dirs=sorted(Path(python).parent.parent.glob('lib/python*/site-packages/nvidia/*/lib'))
     if library_dirs:env['LD_LIBRARY_PATH']=':'.join(map(str,library_dirs))+':'+env.get('LD_LIBRARY_PATH','')
     # Model processes run sequentially; their GPU/CPU memory is released on exit.
-    retry(lambda: run([python,'-m','course_pipeline.models', stage.removeprefix('review_'),path],
-                      timeout=86400,log=log,env=env), tries=2)
+    def execute_model():
+        if job.get('device')!='cpu' and not (stage=='visual' and job.get('visual_backend')=='api'):
+            lock_path=Path(job.get('gpu_lock_path',job_dir/'gpu.lock'));lock_path.parent.mkdir(parents=True,exist_ok=True)
+            with lock_path.open('w') as lock:
+                fcntl.flock(lock,fcntl.LOCK_EX)
+                return run([python,'-m','course_pipeline.models',stage.removeprefix('review_'),path],timeout=86400,log=log,env=env)
+        return run([python,'-m','course_pipeline.models',stage.removeprefix('review_'),path],timeout=86400,log=log,env=env)
+    retry(execute_model,tries=2)
 
 
 def process(source, args):
@@ -98,6 +112,9 @@ def process(source, args):
         env_root=Path(sys.prefix)
         for key,suffix in [('visual_python','-vlm'),('mineru_python','-mineru')]:
             if not getattr(args,key,None):
+                if key=='visual_python' and getattr(args,'visual_backend',None)=='api':
+                    args.visual_python=sys.executable
+                    continue
                 candidate=Path(str(env_root)+suffix)/'bin/python'
                 if not candidate.exists():raise ValueError(f'Missing {key}: supply its interpreter path')
                 setattr(args,key,str(candidate))
@@ -125,6 +142,7 @@ def process(source, args):
         code_hash.update(module.name.encode());code_hash.update(module.read_bytes())
     settings = dict(device=args.device,threads=args.threads,core_seconds=30,overlap_seconds=2,
                     pipeline_code_sha256=code_hash.hexdigest(),frame_encoding='lossless WebP',
+                    visual_backend=getattr(args,'visual_backend','transformers'),api_model=getattr(args,'api_model',None),
                     ignore_regions=args.ignore_regions,model_revisions=model_revisions,ocr_engine=args.ocr_engine)
     fingerprint=hashlib.sha256(json.dumps(settings,sort_keys=True).encode()).hexdigest()
     state=State(cache/'state.sqlite')
@@ -163,17 +181,19 @@ def process(source, args):
                 if valid_frames:
                     valid_frames=all((out/f['path']).exists() and digest(out/f['path'])==f['sha256']
                                      for f in load(out/'frames.json')['frames'])
-            if not valid_frames:
+            if not valid_frames and not getattr(args,'asr_only',False):
                 extract_frames(video,out,m,args.ignore_regions)
                 write_json(frame_record,dict(source_sha256=source['video_sha256'],frame_key=frame_key))
-            frames=load(out/'frames.json')['frames']
+            frames=load(out/'frames.json')['frames'] if (out/'frames.json').exists() else []
             if args.prepare_only:
                 write_json(out/'preparation_status.json',dict(state='prepared_only',source=source,media=m,
                            audio=ainfo,keyframes=len(frames),not_run=['ASR','cross_check','OCR','VLM','fusion']))
                 state.set(source,fingerprint,'prepared_only')
                 return out
-            base=dict(audio=str(audio),source_sha256=source['video_sha256'],device=args.device,
+            base=dict(gpu_lock_path=str(cache/'gpu_model.lock'),audio=str(audio),source_sha256=source['video_sha256'],device=args.device,
                       ocr_engine=args.ocr_engine,visual_backend=getattr(args,'visual_backend','transformers'),
+                      api_config_path=getattr(args,'api_config',None),api_model=getattr(args,'api_model','gpt-6.1-terra'),
+                      api_concurrency=getattr(args,'api_concurrency',2),
                       threads=args.threads,windows=windows,model_revisions=model_revisions,
                       cache_fingerprint=fingerprint,lesson_dir=str(out),frames=frames)
             for stage in ('qwen','whisper'):
@@ -216,9 +236,28 @@ def process(source, args):
                            not_completed=['OCR','visual_description','document_OCR','fusion','full_pilot_review']))
                 state.set(source,fingerprint,'asr_complete_visual_pending')
                 return out
-            for stage in ('ocr','document','mineru','visual'):
+            for stage in ('ocr','document'):
                 state.set(source,fingerprint,stage)
                 worker(stage,{**base,'output':str(out/'evidence'/stage)},work,args.ocr_python,
+                       getattr(args,'visual_python',None),getattr(args,'mineru_python',None))
+            from .document_selection import select_mineru_frames
+            mineru_frames=select_mineru_frames(out,frames)
+            if mineru_frames:
+                state.set(source,fingerprint,'mineru')
+                worker('mineru',{**base,'frames':mineru_frames,'output':str(out/'evidence/mineru')},work,args.ocr_python,
+                       getattr(args,'visual_python',None),getattr(args,'mineru_python',None))
+            if getattr(args,'gpu_only',False):
+                write_json(out/'partial_manifest.json',dict(state='gpu_complete_visual_api_pending',source=source,media=m,audio=ainfo,windows=windows,keyframes=len(frames),config_sha256=fingerprint))
+                state.set(source,fingerprint,'gpu_complete_visual_api_pending')
+                return out
+            visual_frames=frames
+            if base['visual_backend']=='api':
+                if not base['api_config_path']:raise ValueError('API backend requires --api-config')
+                from .visual_selection import select_frames,not_requested_records
+                visual_frames,decisions=select_frames(out,frames);not_requested_records(out,decisions)
+            state.set(source,fingerprint,'visual')
+            if visual_frames:
+                worker('visual',{**base,'frames':visual_frames,'output':str(out/'evidence/visual')},work,args.ocr_python,
                        getattr(args,'visual_python',None),getattr(args,'mineru_python',None))
             (out/'preparation_status.json').unlink(missing_ok=True)
             for name in ['partial_manifest.json','audio_stage_raw.md','audio_stage_checked.md']:
@@ -254,11 +293,15 @@ def main():
     s.add_argument('--threads',type=int,default=8)
     s.add_argument('--ocr-python',required=True)
     s.add_argument('--visual-python')
-    s.add_argument('--visual-backend',choices=['transformers','vllm'],default='transformers')
+    s.add_argument('--visual-backend',choices=['transformers','vllm','api'],default='api')
+    s.add_argument('--api-config')
+    s.add_argument('--api-model',default='gpt-6.1-terra')
+    s.add_argument('--api-concurrency',type=int,default=2)
     s.add_argument('--mineru-python')
     s.add_argument('--ocr-engine',choices=['paddle','onnx'],default='paddle')
     s.add_argument('--ignore-regions',type=json.loads,default=[])
     s.add_argument('--prepare-only',action='store_true')
+    s.add_argument('--gpu-only',action='store_true',help='Prepare complete local-model results for the API/fusion publisher queue')
     s.add_argument('--asr-only',action='store_true',help='Checkpoint complete speech passes and reviews; do not claim full lesson completion')
     v=sub.add_parser('validate')
     v.add_argument('directory')

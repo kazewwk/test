@@ -6,6 +6,7 @@ import subprocess
 from pathlib import Path
 import cv2
 import numpy as np
+from PIL import Image
 from .common import run, write_json, digest
 
 
@@ -65,9 +66,13 @@ def difference(a, b):
     diff = cv2.absdiff(a, b)
     mask = diff > 18
     # Local tiles detect small additions to handwriting or slide text.
-    tiles = [float(x.mean()) for row in np.array_split(mask, 12, axis=0)
-             for x in np.array_split(row, 16, axis=1)]
-    return float(mask.mean()), max(tiles), float(diff.mean())
+    h,w=mask.shape
+    if h%12==0 and w%16==0:
+        largest=float(mask.reshape(12,h//12,16,w//16).mean(axis=(1,3)).max())
+    else:
+        largest=max(float(x.mean()) for row in np.array_split(mask,12,axis=0)
+                    for x in np.array_split(row,16,axis=1))
+    return float(mask.mean()), largest, float(diff.mean())
 
 
 def choose_events(samples, fps, *, global_threshold=0.003, tile_threshold=0.02,
@@ -171,17 +176,23 @@ def extract_frames(video, output, metadata, ignore_regions=()):
     cap = cv2.VideoCapture(str(video))
     frame_num = 0
     while True:
-        ok, image = cap.read()
+        ok = cap.grab()
         if not ok:
             break
         if frame_num in selected:
+            ok,image=cap.retrieve()
+            if not ok:raise RuntimeError('Cannot decode selected key frame')
             e = selected[frame_num]
             e["time"] = max(0.0, pts[frame_num] - format_origin)
             name = f"frame_{frame_num:08d}_{round(e['time'] * 1000):010d}.webp"
-            # OpenCV uses lossless WebP when quality > 100; original decoded pixels
-            # are preserved, reducing repository storage without OCR blur.
-            if not cv2.imwrite(str(frames_dir / name), image, [cv2.IMWRITE_WEBP_QUALITY, 101]):
-                raise RuntimeError("Cannot save key frame")
+            destination=frames_dir/name
+            previous=cv2.imread(str(destination)) if destination.exists() else None
+            if previous is None or not np.array_equal(previous,image):
+                # Lower encoder effort changes file size, never decoded pixels.
+                # Reuse a partial run's image only after exact pixel comparison.
+                temporary=destination.with_suffix('.partial.webp')
+                Image.fromarray(cv2.cvtColor(image,cv2.COLOR_BGR2RGB)).save(temporary,format='WEBP',lossless=True,method=0)
+                temporary.replace(destination)
             e["path"] = "frames/" + name
             e["sha256"] = digest(frames_dir / name)
             e["width"], e["height"] = image.shape[1], image.shape[0]
