@@ -100,3 +100,18 @@ def test_completed_speech_survives_hardware_and_ocr_changes():
     original=inference_fingerprint('qwen',job)
     assert original==inference_fingerprint('qwen',{**job,'device':'cuda:0','ocr_engine':'paddle'})
     assert original!=inference_fingerprint('qwen',{**job,'source_sha256':'changed'})
+
+
+def test_thin_handwritten_stroke_is_captured_before_later_slide_text():
+    frames=[np.full((216,384),255,np.uint8) for _ in range(50)]
+    for frame in frames[10:]:frame[50,50:62]=40
+    events=choose_events(iter(frames),10)
+    assert any(1<=event['time']<2 for event in events)
+
+
+def test_adding_keyframes_does_not_invalidate_processed_independent_images():
+    from course_pipeline.cli import inference_fingerprint
+    job=dict(source_sha256='same-video',model_revisions={},frames=[{'sha256':'first','time':0}],ocr_engine='paddle')
+    before=inference_fingerprint('ocr',job)
+    job['frames'].append({'sha256':'new-added-frame','time':1})
+    assert before==inference_fingerprint('ocr',job)

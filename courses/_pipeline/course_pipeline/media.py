@@ -65,12 +65,12 @@ def difference(a, b):
     diff = cv2.absdiff(a, b)
     mask = diff > 18
     # Local tiles detect small additions to handwriting or slide text.
-    tiles = [float(x.mean()) for row in np.array_split(mask, 6, axis=0)
-             for x in np.array_split(row, 8, axis=1)]
+    tiles = [float(x.mean()) for row in np.array_split(mask, 12, axis=0)
+             for x in np.array_split(row, 16, axis=1)]
     return float(mask.mean()), max(tiles), float(diff.mean())
 
 
-def choose_events(samples, fps, *, global_threshold=0.012, tile_threshold=0.16,
+def choose_events(samples, fps, *, global_threshold=0.003, tile_threshold=0.02,
                   settle_seconds=0.28, motion_interval=1.0, maximum_hold=60.0,
                   timestamps=None, ignore_regions=()):
     """Consume every decoded low-resolution frame. Intervals are safeguards only.
@@ -97,9 +97,9 @@ def choose_events(samples, fps, *, global_threshold=0.012, tile_threshold=0.16,
             events.append({"frame_number": n, "time": t, "reason": "first", "global_change": 1.0})
             continue
         global_change, local_change, _ = difference(reference, gray)
-        step_change, _, _ = difference(previous, gray)
+        step_change, step_local, _ = difference(previous, gray)
         changed = global_change >= global_threshold or local_change >= tile_threshold
-        if step_change > 0.003:
+        if step_change > 0.0007 or step_local > 0.01:
             stable_since = t
         pending = pending or changed
         settled = pending and t - stable_since >= settle_seconds
@@ -112,7 +112,7 @@ def choose_events(samples, fps, *, global_threshold=0.012, tile_threshold=0.16,
             reference = gray.copy()
             last_image = gray.copy()
             last_time = t
-            pending = False
+            pending = not settled and not heartbeat
         previous = gray
     end_time = timestamps[last_n] if timestamps is not None and previous is not None else last_n / fps
     if previous is not None and end_time - last_time > 0.1:
@@ -196,6 +196,9 @@ def extract_frames(video, output, metadata, ignore_regions=()):
     result = {"frames": events, "decoded_frames": frame_num, "source_timestamp_count": len(pts),
               "image_encoding": "lossless WebP, full source resolution",
               "trigger_ignore_regions": ignore_regions,
+              "detector_version":2,"analysis_resolution":[384,216],
+              "change_thresholds":{"gray_delta":18,"global_fraction":0.003,"local_fraction":0.02,"grid":[16,12],
+                                   "settle_seconds":0.28,"motion_interval_seconds":1.0,"audit_hold_seconds":60.0},
               "video_start_time": video_origin, "format_start_time": format_origin,
               "method": "all-frame global and local tile changes, settling, motion states, audit hold",
               "limitations": ["Small or low-contrast changes below thresholds may be missed",

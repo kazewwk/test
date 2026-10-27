@@ -67,7 +67,7 @@ def run(job):
                 doc_blocks=load(doc_marker).get('blocks',[]) if doc_marker.exists() else []
                 checked,flags=ground_annotations(pixels,annotations,ocr,doc_blocks)
                 parsed['annotations']=checked;parsed.setdefault('uncertain',[]).extend(flags)
-            record={'path':frame['path'],'time':frame['time'],'image_sha256':frame['sha256'],
+            record={'path':frame['path'],'time':frame['time'],'image_sha256':frame['sha256'],'input_fingerprint':job.get('frame_input_fingerprints',{}).get(frame['sha256']),
                     'cache_fingerprint':job.get('cache_fingerprint'),'model':name,'model_revisions':revision,
                     'device':device,'dtype':str(dtype),'quantized':False,'raw':raw,'parsed':parsed,
                     'generated_tokens':generated_tokens,

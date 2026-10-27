@@ -6,7 +6,15 @@ PIPELINE_ENV="${2:-$PIPELINE_ROOT/.venv}"
 PIPELINE_PYTHON="${PIPELINE_PYTHON:-python3.12}"
 command -v ffmpeg >/dev/null
 command -v ffprobe >/dev/null
-"$PIPELINE_PYTHON" -m venv "$PIPELINE_ENV"
+make_pipeline_env() {
+  if [ -x "$1/bin/python" ]; then return; fi
+  if command -v uv >/dev/null; then
+    uv venv --python "$PIPELINE_PYTHON" --seed "$1"
+  else
+    "$PIPELINE_PYTHON" -m venv "$1"
+  fi
+}
+make_pipeline_env "$PIPELINE_ENV"
 "$PIPELINE_ENV/bin/python" -m pip install --upgrade pip
 if [ "$PIPELINE_DEVICE" = cuda ]; then
   nvidia-smi
@@ -19,17 +27,17 @@ else
 fi
 "$PIPELINE_ENV/bin/pip" install -r "$PIPELINE_ROOT/requirements-asr.txt" -e "$PIPELINE_ROOT"
 "$PIPELINE_ENV/bin/python" "$PIPELINE_ROOT/scripts/patch_optional_japanese_import.py" > "$PIPELINE_ENV/compatibility-patch.json"
-"$PIPELINE_PYTHON" -m venv "$PIPELINE_ENV-ocr"
+make_pipeline_env "$PIPELINE_ENV-ocr"
 if [ "$PIPELINE_DEVICE" = cuda ]; then
   "$PIPELINE_ENV-ocr/bin/pip" install paddlepaddle-gpu==3.3.0 -i https://www.paddlepaddle.org.cn/packages/stable/cu126/
 else
   "$PIPELINE_ENV-ocr/bin/pip" install paddlepaddle==3.3.0
 fi
 "$PIPELINE_ENV-ocr/bin/pip" install 'paddleocr[doc-parser]==3.7.0' -e "$PIPELINE_ROOT"
-"$PIPELINE_PYTHON" -m venv "$PIPELINE_ENV-vlm"
+make_pipeline_env "$PIPELINE_ENV-vlm"
 "$PIPELINE_ENV-vlm/bin/pip" install torch==2.11.0 torchvision==0.26.0 transformers==5.20.2 accelerate pillow qwen-vl-utils -e "$PIPELINE_ROOT"
 if [ "$PIPELINE_DEVICE" = cuda ]; then
-  "$PIPELINE_PYTHON" -m venv "$PIPELINE_ENV-mineru"
+  make_pipeline_env "$PIPELINE_ENV-mineru"
   "$PIPELINE_ENV-mineru/bin/pip" install 'mineru[full]==4.0.12' -e "$PIPELINE_ROOT"
 fi
 for PIPELINE_SUFFIX in '' '-ocr' '-vlm' '-mineru'; do

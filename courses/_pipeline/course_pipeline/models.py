@@ -7,7 +7,7 @@ import json
 import os
 import time
 from pathlib import Path
-from .common import load, write_json, utcnow
+from .common import load, write_json, utcnow, digest, artifact_hashes
 
 ASR_CONTEXT='This is a Chinese-English teaching recording. Transcribe the exact words in their original spoken languages. Never translate. Preserve repetitions, questions and examples.'
 
@@ -15,8 +15,30 @@ ASR_CONTEXT='This is a Chinese-English teaching recording. Transcribe the exact 
 def reusable(path, job, source_key, source_value):
     if not path.exists():
         return False
-    r = load(path)
-    return r.get(source_key) == source_value and r.get('cache_fingerprint') == job.get('cache_fingerprint')
+    try:r = load(path)
+    except (ValueError,OSError):return False
+    if r.get(source_key)!=source_value or r.get('cache_fingerprint')!=job.get('cache_fingerprint'):return False
+    expected=job.get('frame_input_fingerprints',{}).get(source_value)
+    if expected is not None and r.get('input_fingerprint')!=expected:return False
+    if path.name=='complete.json':
+        if not r.get('artifacts'):return False
+        for name,sha in r['artifacts'].items():
+            item=(path.parent/name).resolve()
+            if not item.is_relative_to(path.parent.resolve()) or not item.is_file() or digest(item)!=sha:return False
+    return True
+
+
+
+def fresh_artifact_directory(folder,job):
+    """Keep invalidated/partial evidence outside the validated delivery tree."""
+    import shutil,tempfile
+    folder=Path(folder)
+    if folder.exists() and any(folder.iterdir()):
+        root=Path(job.get('archive_root',Path(tempfile.gettempdir())/'course-evidence-archive'))
+        destination=root/folder.parent.name/(folder.name+'-'+str(time.time_ns()))
+        destination.parent.mkdir(parents=True,exist_ok=True)
+        shutil.move(str(folder),str(destination))
+    folder.mkdir(parents=True,exist_ok=True)
 
 
 def jsonable(value):
@@ -47,38 +69,45 @@ def qwen_worker(job):
     import soundfile as sf
     import torch
     from qwen_asr import Qwen3ASRModel
-    device = job.get("device", "cuda:0")
-    torch.set_num_threads(job.get("threads", 8))
-    dtype = torch.float32 if device == "cpu" else torch.float16
-    revisions = job.setdefault("model_revisions", {})
-    model = Qwen3ASRModel.from_pretrained(
-        model_path("Qwen/Qwen3-ASR-1.7B", revisions), dtype=dtype, device_map=device,
-        max_inference_batch_size=1, max_new_tokens=2048,
-        forced_aligner=model_path("Qwen/Qwen3-ForcedAligner-0.6B", revisions),
-        forced_aligner_kwargs={"dtype": dtype, "device_map": device})
-    write_json(Path(job["output"]) / "model_revisions.json", revisions)
-    audio, sr = sf.read(job["audio"], dtype="float32")
-    if sr != 16000 or audio.ndim != 1:
-        raise ValueError("Expected mono 16 kHz audio")
-    for win in job["windows"]:
-        out = Path(job["output"]) / f"chunk_{win['id']:05d}.json"
-        if reusable(out, job, "source_sha256", job["source_sha256"]):
+    device=job.get('device','cuda:0')
+    torch.set_num_threads(job.get('threads',8))
+    dtype=torch.float32 if device=='cpu' else torch.float16
+    batch_size=1 if device=='cpu' else job.get('qwen_batch_size',4)
+    revisions=job.setdefault('model_revisions',{})
+    model=Qwen3ASRModel.from_pretrained(
+        model_path('Qwen/Qwen3-ASR-1.7B',revisions),dtype=dtype,device_map=device,
+        max_inference_batch_size=batch_size,max_new_tokens=2048,
+        forced_aligner=model_path('Qwen/Qwen3-ForcedAligner-0.6B',revisions),
+        forced_aligner_kwargs={'dtype':dtype,'device_map':device})
+    write_json(Path(job['output'])/'model_revisions.json',revisions)
+    audio,sr=sf.read(job['audio'],dtype='float32')
+    if sr!=16000 or audio.ndim!=1:raise ValueError('Expected mono 16 kHz audio')
+    pending=[w for w in job['windows'] if not reusable(Path(job['output'])/f"chunk_{w['id']:05d}.json",job,'source_sha256',job['source_sha256'])]
+    cursor=0;context=job.get('context',ASR_CONTEXT)
+    while cursor<len(pending):
+        batch=pending[cursor:cursor+batch_size]
+        clips=[(audio[round(w['start']*sr):round(w['end']*sr)],sr) for w in batch]
+        languages=[w.get('language_hint',job.get('language')) for w in batch]
+        started=time.perf_counter()
+        try:
+            results=model.transcribe(audio=clips,language=languages,context=context,return_time_stamps=True)
+        except torch.cuda.OutOfMemoryError:
+            torch.cuda.empty_cache()
+            if batch_size==1:raise
+            batch_size=max(1,batch_size//2);model.max_inference_batch_size=batch_size
             continue
-        started = time.perf_counter()
-        clip = audio[round(win["start"] * sr):round(win["end"] * sr)]
-        language_hint=win.get('language_hint',job.get('language'))
-        context=job.get('context',ASR_CONTEXT)
-        result = model.transcribe(audio=(clip, sr), language=language_hint, context=context, return_time_stamps=True)[0]
-        words = [{"text": w.text, "start": float(w.start_time) + win["start"],
-                  "end": float(w.end_time) + win["start"]} for w in result.time_stamps or []]
-        record = {**win, "source_sha256": job["source_sha256"], "cache_fingerprint": job.get('cache_fingerprint'), "model": "Qwen/Qwen3-ASR-1.7B",
-                  "aligner": "Qwen/Qwen3-ForcedAligner-0.6B", "model_revisions": revisions,
-                  "language": result.language, "text": result.text, "words": words,
-                  "language_hint":language_hint,"context":context,
-                  "elapsed_seconds": time.perf_counter() - started, "device": device,
-                  "dtype": str(dtype), "completed_at": utcnow()}
-        write_json(out, record)
-        print(json.dumps({"stage": "qwen", "chunk": win["id"], "seconds": record["elapsed_seconds"]}), flush=True)
+        elapsed=time.perf_counter()-started
+        if len(results)!=len(batch):raise RuntimeError('ASR batch returned a different number of records')
+        for win,result,language_hint in zip(batch,results,languages):
+            words=[{'text':w.text,'start':float(w.start_time)+win['start'],'end':float(w.end_time)+win['start']}
+                   for w in result.time_stamps or []]
+            record={**win,'source_sha256':job['source_sha256'],'cache_fingerprint':job.get('cache_fingerprint'),
+                    'model':'Qwen/Qwen3-ASR-1.7B','aligner':'Qwen/Qwen3-ForcedAligner-0.6B','model_revisions':revisions,
+                    'language':result.language,'text':result.text,'words':words,'language_hint':language_hint,'context':context,
+                    'elapsed_seconds':elapsed/len(batch),'batch_size':len(batch),'device':device,'dtype':str(dtype),'completed_at':utcnow()}
+            write_json(Path(job['output'])/f"chunk_{win['id']:05d}.json",record)
+            print(json.dumps({'stage':'qwen','chunk':win['id'],'seconds':record['elapsed_seconds'],'batch_size':len(batch)}),flush=True)
+        cursor+=len(batch)
 
 
 def whisper_worker(job):
@@ -200,6 +229,9 @@ OCR候选另行完整保存，下面候选仅帮助定位，不是可靠答案�
 
 
 def visual_worker(job):
+    if job.get('visual_backend')=='vllm':
+        from .vision_vllm import run
+        return run(job)
     if job.get('visual_model','Qwen/Qwen3.5-9B')=='Qwen/Qwen3.5-9B':
         from .vision_modern import run
         return run(job)
@@ -273,7 +305,7 @@ def document_worker(job):
         marker = folder / "complete.json"
         if reusable(marker, job, "image_sha256", frame["sha256"]):
             continue
-        folder.mkdir(parents=True, exist_ok=True)
+        fresh_artifact_directory(folder,job)
         started = time.perf_counter()
         pixels=cv2.imread(str(Path(job['lesson_dir'])/frame['path']))
         if pixels is None:raise RuntimeError('Key frame cannot be decoded: '+frame['path'])
@@ -324,7 +356,9 @@ def document_worker(job):
                 md+=f"原图位置：{item['source_bbox']}；PP-OCRv5 候选：{item['ppocr_candidate']}\n\n"
                 md+=f"![复查区域]({item['source_crop']})\n\n{item['recovered_text'] or '[无法确认]'}\n\n"
             atomic_text(folder/'region_repairs.md',md)
-        write_json(marker, {"image_sha256": frame["sha256"], "cache_fingerprint": job.get('cache_fingerprint'), "elapsed_seconds": time.perf_counter() - started,
+        write_json(marker, {
+            "artifacts":{k:v for k,v in artifact_hashes(folder).items() if k!="complete.json"},
+            "input_fingerprint":job.get("frame_input_fingerprints",{}).get(frame["sha256"]),"image_sha256": frame["sha256"], "cache_fingerprint": job.get('cache_fingerprint'), "elapsed_seconds": time.perf_counter() - started,
                             "model": "PaddleOCR-VL-1.6",'blocks':blocks,'region_repairs':repairs,
                             "verification": "machine_extracted_unverified"})
         print(json.dumps({"stage": "document_ocr", "frame": frame["path"]}), flush=True)

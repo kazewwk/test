@@ -36,3 +36,15 @@ def test_subtitles_use_word_times_preserve_repeated_speech_and_offset():
     assert len(cues)==2 and cues[0]['start']==2.2 and cues[-1]['end']==11
     assert normalized(''.join(c['text'] for c in cues))==normalized(record['text'])
     assert cues[0]['text']=='Go, go!'
+
+
+def test_document_checkpoint_requires_all_original_crop_bytes(tmp_path):
+    from course_pipeline.models import reusable
+    crop=tmp_path/'crop.png';crop.write_bytes(b'original crop fixture')
+    marker=tmp_path/'complete.json';job={'cache_fingerprint':'config'}
+    write_json(marker,{'image_sha256':'source','cache_fingerprint':'config','artifacts':{'crop.png':digest(crop)}})
+    assert reusable(marker,job,'image_sha256','source')
+    crop.unlink()
+    assert not reusable(marker,job,'image_sha256','source')
+    marker.write_text('{interrupted')
+    assert not reusable(marker,job,'image_sha256','source')

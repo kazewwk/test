@@ -55,6 +55,30 @@ def ground_annotations(image, annotations, ocr, document_blocks=()):
             item['grounding']='circle_target_requires_review';item['requires_review']=True
             uncertain.append('圈选的精确对象尚需核对：'+target)
             checked.append(item);continue
+        if ('underline' in typ or '下划线' in typ) and ('blue' in color or '蓝' in color):
+            candidates=[(1.0 if len(norm(target))>=3 and norm(target) in norm(text) else difflib.SequenceMatcher(None,norm(text),norm(target),autojunk=False).ratio(),box,text)
+                        for text,box in zip(ocr.get('texts',[]),ocr.get('boxes',[]))]
+            if not candidates or max(c[0] for c in candidates)<.65:
+                item.update(grounding='underline_location_unresolved',requires_review=True)
+                uncertain.append('下划线的对应文字位置未确认：'+target)
+            else:
+                _,box,text=max(candidates,key=lambda c:c[0]);points=np.asarray(box).reshape(-1,2)
+                x1,y1=points.min(axis=0);x2,y2=points.max(axis=0)
+                full,part=norm(text),norm(target)
+                if part and part in full and len(part)<len(full):
+                    begin=full.index(part);span=x2-x1
+                    x1,x2=x1+span*begin/len(full),x1+span*(begin+len(part))/len(full)
+                xa=max(0,int(x1)-5);xb=min(width,int(x2)+5)
+                ya=max(0,int(y1+(y2-y1)*.6));yb=min(height,int(y2+max(10,(y2-y1)*.6)))
+                line_mask=blue.copy()
+                if rings:cv2.drawContours(line_mask,rings,-1,0,cv2.FILLED)
+                count=int(np.count_nonzero(line_mask[ya:yb,xa:xb]))
+                item.update(grounding='underline_color_evidence_present' if count>=8 else 'underline_color_evidence_not_found',
+                            tested_region=[xa,ya,xb,yb],matching_color_pixels=count)
+                if count<8:
+                    item['requires_review']=True
+                    uncertain.append('未在对应文字下方检出足够蓝色下划线像素：'+target)
+            checked.append(item);continue
         if not (('check' in typ or '勾' in typ or '钩' in typ) and ('blue' in color or '蓝' in color)):
             item['grounding']='not_automatically_verified';checked.append(item);continue
         candidates=[]
@@ -79,4 +103,11 @@ def ground_annotations(image, annotations, ocr, document_blocks=()):
             item['requires_review']=True
             uncertain.append('未在对应文字旁检出足够蓝色勾号像素，请核对原图：'+target)
         checked.append(item)
+    for item in checked:
+        if item.get('meaning'):
+            item['meaning_original_model']=item['meaning']
+        if item.get('requires_review'):
+            item['meaning']='[无法确认：标注位置、范围或形状需要核对原图]'
+        else:
+            item['meaning']='画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。'
     return checked,uncertain

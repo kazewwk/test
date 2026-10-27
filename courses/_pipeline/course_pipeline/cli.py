@@ -46,18 +46,26 @@ def inference_fingerprint(stage,job):
         if kind=='qwen':data.update(context=job.get('context',ASR_CONTEXT),language=job.get('language'))
         if kind=='whisper':data['compute_type']='int8' if job.get('device')=='cpu' else 'float16'
     else:
-        data['frames']=[(f['sha256'],f['time']) for f in job['frames']]
+        data['adapter_version']=3
+        data['input_encoding']='full-source-resolution-image'
         if kind=='ocr':data['ocr_engine']=job.get('ocr_engine','paddle')
         if kind=='visual':
             data.update(prompt=job.get('prompt',VISUAL_PROMPT),max_tokens=job.get('max_new_tokens',2048))
-            data['ocr_inputs']=[digest(Path(job['lesson_dir'])/'evidence/ocr'/(Path(f['path']).stem+'.json')) for f in job['frames']]
+
     # Hardware choice is recorded in each result; completed hypotheses can be
     # reused when moving the remaining stages between CPU and GPU.
     return hashlib.sha256(json.dumps(data,sort_keys=True).encode()).hexdigest()
 
 
 def worker(stage, job, job_dir, ocr_python,visual_python=None,mineru_python=None):
-    job={**job,'cache_fingerprint':inference_fingerprint(stage,job)}
+    job={**job,'cache_fingerprint':inference_fingerprint(stage,job),'archive_root':str(job_dir/'invalidated_evidence')}
+    if stage in ('document','visual'):
+        inputs={}
+        for frame in job['frames']:
+            ocr=load(Path(job['lesson_dir'])/'evidence/ocr'/(Path(frame['path']).stem+'.json'))
+            keys=['texts'] if stage=='visual' else ['texts','boxes','scores']
+            inputs[frame['sha256']]=hashlib.sha256(json.dumps({k:ocr.get(k) for k in keys},sort_keys=True,ensure_ascii=False).encode()).hexdigest()
+        job['frame_input_fingerprints']=inputs
     kind=stage.removeprefix('review_')
     output=Path(job['output'])
     if kind in ('qwen','whisper'):
@@ -110,6 +118,7 @@ def process(source, args):
     source['video_sha256'] = digest(video)
     if source.get('drive_sha256') and source['drive_sha256'] != source['video_sha256']:
         raise ValueError('Downloaded video SHA256 differs from Drive')
+    write_json(out/'source.json',source)
     model_revisions = load(Path(__file__).resolve().parents[1] / 'model_revisions.json')
     code_hash=hashlib.sha256()
     for module in sorted(Path(__file__).resolve().parent.glob('*.py')):
@@ -146,7 +155,7 @@ def process(source, args):
             windows=audio_windows(duration)
             # Key frames are verified by content hashes before reusing extraction.
             frame_record=work/'frames.complete.json'
-            frame_key=hashlib.sha256(json.dumps({'ignore_regions':args.ignore_regions,'image_encoding':'lossless WebP','detector_version':1},sort_keys=True).encode()).hexdigest()
+            frame_key=hashlib.sha256(json.dumps({'ignore_regions':args.ignore_regions,'image_encoding':'lossless WebP','detector_version':2},sort_keys=True).encode()).hexdigest()
             valid_frames=False
             if frame_record.exists() and (out/'frames.json').exists():
                 old=load(frame_record)
@@ -164,7 +173,7 @@ def process(source, args):
                 state.set(source,fingerprint,'prepared_only')
                 return out
             base=dict(audio=str(audio),source_sha256=source['video_sha256'],device=args.device,
-                      ocr_engine=args.ocr_engine,
+                      ocr_engine=args.ocr_engine,visual_backend=getattr(args,'visual_backend','transformers'),
                       threads=args.threads,windows=windows,model_revisions=model_revisions,
                       cache_fingerprint=fingerprint,lesson_dir=str(out),frames=frames)
             for stage in ('qwen','whisper'):
@@ -214,6 +223,7 @@ def process(source, args):
             (out/'preparation_status.json').unlink(missing_ok=True)
             for name in ['partial_manifest.json','audio_stage_raw.md','audio_stage_checked.md']:
                 (out/name).unlink(missing_ok=True)
+            if (work/'resources.jsonl').exists():shutil.copy2(work/'resources.jsonl',out/'resources.jsonl')
             quality=assemble(out,source,m,ainfo,windows)
             manifest=load(out/'manifest.json')
             manifest.update(config_sha256=fingerprint,settings=settings,
@@ -244,6 +254,7 @@ def main():
     s.add_argument('--threads',type=int,default=8)
     s.add_argument('--ocr-python',required=True)
     s.add_argument('--visual-python')
+    s.add_argument('--visual-backend',choices=['transformers','vllm'],default='transformers')
     s.add_argument('--mineru-python')
     s.add_argument('--ocr-engine',choices=['paddle','onnx'],default='paddle')
     s.add_argument('--ignore-regions',type=json.loads,default=[])

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Resumable New Concept batch; every completed video is committed and verified."""
-import argparse,json,sys,shutil,traceback,time
+import argparse,json,sys,shutil,traceback,time,uuid
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from course_pipeline.cli import process
@@ -26,6 +26,7 @@ def main():
     p.add_argument('--remote',default='bili_drive')
     p.add_argument('--device',choices=['cpu','cuda:0'],default='cuda:0')
     p.add_argument('--threads',type=int,default=10)
+    p.add_argument('--visual-backend',choices=['transformers','vllm'],default='vllm')
     p.add_argument('--ocr-engine',choices=['paddle','onnx'],default='paddle')
     p.add_argument('--public-authorized',action='store_true')
     p.add_argument('--limit',type=int)
@@ -50,12 +51,17 @@ def main():
             out=process(row,a)
             indexes=update_series_index(rows,a.output,row['series'])
             catalog=update_catalog(rows,a.output)
-            receipt=publish_lesson(out,a.checkout,public_authorized=a.public_authorized,series_files=indexes,catalog_files=catalog)
+            publish_checkout=Path(a.checkout).parent/(Path(a.checkout).name+'-uploads')/(row['drive_file_id']+'-'+uuid.uuid4().hex[:8])
+            receipt=publish_lesson(out,publish_checkout,public_authorized=a.public_authorized,series_files=indexes,catalog_files=catalog)
             write_json(record,receipt)
+            write_json(Path(a.output)/'_publication'/(row['drive_file_id']+'.json'),receipt)
+            if (publish_checkout/'.git/course_pipeline_owned').exists():shutil.rmtree(publish_checkout)
             completed+=1
             print(json.dumps({'completed_this_run':completed,'drive_file_id':row['drive_file_id'],**receipt},ensure_ascii=False),flush=True)
             video=cache/'downloads'/(row['drive_file_id']+'.mp4')
             if video.exists() and digest(video)==receipt['source_video_sha256']:video.unlink()
+            job_cache=cache/'jobs'/row['drive_file_id']
+            if job_cache.exists() and not a.retain_completed:shutil.rmtree(job_cache)
             if not a.retain_completed and out.resolve()!=pilot.resolve():
                 # GitHub has every byte and the receipt above. Retain local provenance
                 # and QC for series indexes; free only this task's uploaded artifacts.

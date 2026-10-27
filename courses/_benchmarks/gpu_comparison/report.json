@@ -1,0 +1,31 @@
+{
+  "source_drive_file_id": "1196B0og7aLMR9Lstfz3ceRGQ3N9ojkKR",
+  "frames": 32,
+  "model": "Qwen/Qwen3.5-9B",
+  "dtype": "bfloat16",
+  "quantized": false,
+  "L4": {
+    "hourly_cu": 1.54,
+    "batch_size": 4,
+    "inference_seconds": 316.1936773440002,
+    "generated_tokens": 7616,
+    "inference_only_estimated_cu": 0.1352606286416001
+  },
+  "G4": {
+    "hourly_cu": 8.9,
+    "batch_size": 16,
+    "inference_seconds": 74.11450567999998,
+    "generated_tokens": 7314,
+    "inference_only_estimated_cu": 0.18322752793111108
+  },
+  "test_budget_cu": 3,
+  "observed_account_balance_reduction_during_test_cu": 2.09,
+  "includes_concurrent_L4_usage": true,
+  "G4_released": true,
+  "decision": "Continue L4; this tested G4 configuration did not lower inference cost",
+  "limitations": [
+    "These are the tested batch configurations, not every possible GPU optimization",
+    "Compute-unit estimates use inference time; initialization and setup also consume units",
+    "This does not measure transcription or visual accuracy"
+  ]
+}

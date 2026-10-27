@@ -165,6 +165,8 @@ def assemble(lesson_dir, source, media, audio_info, windows):
     frames = load(root / "frames.json")["frames"]
     offset = audio_info.get("source_start_seconds", 0)
     segments, issues = [], []
+    gap_file=root/"evidence/audio_gap_review.json"
+    gap_reviews=load(gap_file).get("reviews",[]) if gap_file.exists() else []
     for win in windows:
         q = load(root / "evidence/qwen" / f"chunk_{win['id']:05d}.json")
         w = load(root / "evidence/whisper" / f"chunk_{win['id']:05d}.json")
@@ -175,11 +177,15 @@ def assemble(lesson_dir, source, media, audio_info, windows):
         wr=load(review_w_path) if review_w_path.exists() else None
         lr=load(language_path) if language_path.exists() else None
         text, flags, chosen,selection = select_checked(q,w,qr,wr,lr)
+        extra_audio=[g for g in gap_reviews if overlap([win["core_start"],win["core_end"]],[g["start"],g["end"]])>0]
+        if extra_audio:flags.append("voiced_alignment_gap_reviewed")
         score = disagreement(q["text"], w["text"])
         if needs_asr_review(q['text'],w['text']):
             flags.append("raw_asr_disagreement")
         if needs_asr_review(text,whisper_core(wr or w)):
             flags.append("asr_disagreement_unresolved")
+        if re.search(r'音标|发音|读音|重音|音节|口型|连读|弱读|元音|辅音|舌头|嘴唇|pronunci|phoneme|syllable',text,re.I):
+            flags.append('pronunciation_demonstration_requires_original_audio_review')
         silence = sum(overlap([win["core_start"], win["core_end"]], s)
                       for s in audio_info["silence_intervals"])
         length = win["core_end"] - win["core_start"]
@@ -203,6 +209,12 @@ def assemble(lesson_dir, source, media, audio_info, windows):
             name = Path(frame["path"]).stem + ".json"
             ocr = load(root / "evidence/ocr" / name)
             visual = load(root / "evidence/visual" / name)
+            # Keep the complete hypotheses in their evidence files. Avoid
+            # embedding a second copy of the same raw JSON in every segment.
+            ocr = {k:v for k,v in ocr.items() if k != 'raw'}
+            ocr['raw_evidence'] = 'evidence/ocr/' + name
+            visual = {k:v for k,v in visual.items() if k not in ('raw','model_revisions')}
+            visual['raw_evidence'] = 'evidence/visual/' + name
             document_dir = root / "evidence/document" / Path(frame["path"]).stem
             docs = [str(p.relative_to(root)) for p in document_dir.glob("*.md")]
             mineru_dir=root/'evidence/mineru'/Path(frame['path']).stem
@@ -218,16 +230,21 @@ def assemble(lesson_dir, source, media, audio_info, windows):
                               "audio_source_offset": offset, "language": chosen.get("language"),
                               "primary_language":q.get("language"),"subtitle_cues":aligned_subtitles(chosen,offset),
                               "disagreement": score, "verification": "automatic_cross_check_only",
-                              "review_hypothesis": qr,'review_cross_check':wr,'language_review':lr},
+                              "review_hypothesis": qr,'review_cross_check':wr,'language_review':lr,'gap_reviews':extra_audio},
                    "frames": visual_records, "flags": sorted(set(flags))}
         rag_parts=[text]
+        unresolved=[f for f in flags if f not in ('checked_uses_context_review','raw_asr_disagreement','primary_language_mismatch')]
+        if unresolved:
+            rag_parts.append('语音待复核：'+', '.join(unresolved)+'\n独立转写候选：'+whisper_core(wr or w))
+        for g in extra_audio:
+            rag_parts.append(f"有声/对齐疑点复查 {g['start']:.3f}–{g['end']:.3f} 秒（含前后上下文，未直接补入主稿）：\nQwen：{g['qwen']['text']}\nWhisper：{g['whisper']['text']}")
         for frame in visual_records:
             rag_parts.append(f"画面 {seconds_label(frame['time'])}\n"+'\n'.join(frame['ocr']['texts']))
             for doc in frame['document_ocr_markdown']+frame['mineru_markdown']:
                 rag_parts.append(inline_document(root,doc))
-            rag_parts.append('视觉观察（机器核验）：'+frame['visual']['parsed'].get('description',''))
+            rag_parts.append('视觉观察（模型候选，见核验字段）：'+frame['visual']['parsed'].get('description',''))
             if frame['visual']['parsed'].get('annotations'):
-                rag_parts.append(json.dumps(frame['visual']['parsed']['annotations'],ensure_ascii=False))
+                rag_parts.append(json.dumps([{k:v for k,v in a.items() if not k.endswith('_original_model')} for a in frame['visual']['parsed']['annotations']],ensure_ascii=False))
             if frame['visual']['parsed'].get('uncertain'):
                 rag_parts.append('视觉待核验：'+json.dumps(frame['visual']['parsed']['uncertain'],ensure_ascii=False))
         segment['id']=segment['segment_id']
@@ -238,6 +255,8 @@ def assemble(lesson_dir, source, media, audio_info, windows):
         segments.append(segment)
         for flag in segment["flags"]:
             issues.append({"type": flag, "start": start, "end": end, "segment_id": segment["segment_id"]})
+    for g in gap_reviews:
+        issues.append({"type":"voiced_word_alignment_gap_reviewed","start":g["start"]+offset,"end":g["end"]+offset,"review":"evidence/audio_gap_review.json","status":g["status"]})
     for frame in frames:
         name = Path(frame["path"]).stem + ".json"
         ocr = load(root / "evidence/ocr" / name)
@@ -279,6 +298,7 @@ def assemble(lesson_dir, source, media, audio_info, windows):
                                "ASR models can agree on the same error",
                                "OCR and visual descriptions may contain unrecognized errors",
                                "Forced alignment does not validate spoken words",
+                               "ASR may normalize deliberately nonstandard pronunciations; pronunciation demonstrations require source-audio review",
                                "Visual sampling can miss changes below its configured threshold"]}
     write_jsonl(root / "segments.jsonl", segments)
     write_json(root / "qc_report.json", quality)
@@ -295,10 +315,15 @@ def assemble(lesson_dir, source, media, audio_info, windows):
         if s["flags"]:
             body += "待复核：" + ", ".join(s["flags"]) + "。\n\n"
             body += "Whisper 原始候选：\n\n" + s["speech"]["cross_check"] + "\n\n"
+        for g in s['speech'].get('gap_reviews',[]):
+            body+=f"### 原音疑点复查 {seconds_label(g['start']+offset)}–{seconds_label(g['end']+offset)}\n\n"
+            body+="下列候选含前后上下文，可能对应发音示范、对齐间隙或遗漏；没有直接当作新增原文插入主稿。\n\n"
+            body+='Qwen 候选：'+g['qwen']['text']+'\n\nWhisper 候选：'+g['whisper']['text']+'\n\n'
         checked += body
         full += body
         for f in s["frames"]:
             full += f"### 画面 {seconds_label(f['time'])}\n\n![教学画面]({f['path']})\n\n"
+            full += f"[OCR 原始输出](evidence/ocr/{Path(f['path']).stem}.json) · [视觉原始输出](evidence/visual/{Path(f['path']).stem}.json)\n\n"
             full += "OCR 原文：\n\n```text\n" + "\n".join(f["ocr"]["texts"]) + "\n```\n\n"
             full += "视觉观察（机器输出，未人工核验）：\n\n" + f["visual"]["parsed"].get("description", "[无法确认]") + "\n\n"
             observations={k:f['visual']['parsed'][k] for k in ['annotations','ocr_missing_text','ocr_disagreements','formulas','tables','uncertain'] if f['visual']['parsed'].get(k)}
