@@ -1,0 +1,159 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"slide\",\n  \"text_lines\": [\n    \"使用指南\",\n    \"Appendices\",\n    \"Appendix 1  Active and passive  243\",\n    \"Appendix 2  List of irregular verbs  244\",\n    \"Appendix 3  Irregular verbs in groups  245\",\n    \"Appendix 4  Short forms  (he’s / I’d / don’t etc.)  246\",\n    \"Appendix 5  Spelling  248\",\n    \"Appendix 6  Phrasal verbs  (take off / give up etc.)  250\",\n    \"Appendix 7  Phrasal verbs + object  (put out a fire / give up your job\",\n    \"Additional exercises  252\",\n    \"Study guide  271\",\n    \"Key to Exercises  283\",\n    \"Key to Additional exercises  310\",\n    \"Key to Study guide  313\",\n    \"Index  315\"\n  ],\n  \"description\": \"左侧是蓝色标题条和一块浅色的书页目录截图；右侧一人坐在圆桌旁，桌上有平板及支架，手持白色笔状物。\",\n  \"annotations\": [\n    {\n      \"type\": \"圈画\",\n      \"color\": \"橙色\",\n      \"target\": \"Index  315\",\n      \"position\": \"左侧目录截图底部，围绕整行文字\",\n      \"uncertain\": false\n    }\n  ],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [\n    \"Index  315\"\n  ],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"Appendix 7 一行在目录截图右侧被截断，后续内容不可见。\"\n  ]\n}",
+  "parsed": {
+    "kind": "slide",
+    "text_lines": [
+      "使用指南",
+      "Appendices",
+      "Appendix 1  Active and passive  243",
+      "Appendix 2  List of irregular verbs  244",
+      "Appendix 3  Irregular verbs in groups  245",
+      "Appendix 4  Short forms  (he’s / I’d / don’t etc.)  246",
+      "Appendix 5  Spelling  248",
+      "Appendix 6  Phrasal verbs  (take off / give up etc.)  250",
+      "Appendix 7  Phrasal verbs + object  (put out a fire / give up your job",
+      "Additional exercises  252",
+      "Study guide  271",
+      "Key to Exercises  283",
+      "Key to Additional exercises  310",
+      "Key to Study guide  313",
+      "Index  315"
+    ],
+    "description": "左侧是蓝色标题条和一块浅色的书页目录截图；右侧一人坐在圆桌旁，桌上有平板及支架，手持白色笔状物。",
+    "annotations": [
+      {
+        "type": "圈画",
+        "color": "橙色",
+        "target": "Index  315",
+        "position": "左侧目录截图底部，围绕整行文字",
+        "uncertain": false,
+        "requires_review": false,
+        "grounding": "api_visual_observation_not_human_verified"
+      }
+    ],
+    "checkmarks_count": 0,
+    "circled_text": [
+      "Index  315"
+    ],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "Appendix 7 一行在目录截图右侧被截断，后续内容不可见。",
+      "Independent image models disagree on circled_text; both candidates retained in source evidence."
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "使用指南\nAppendices\nAppendix 1  Active and passive  243\nAppendix 2  List of irregular verbs  244\nAppendix 3  Irregular verbs in groups  245\nAppendix 4  Short forms  (he’s / I’d / don’t etc.)  246\nAppendix 5  Spelling  248\nAppendix 6  Phrasal verbs  (take off / give up etc.)  250\nAppendix 7  Phrasal verbs + object  (put out a fire / give up your job\nAdditional exercises  252\nStudy guide  271\nKey to Exercises  283\nKey to Additional exercises  310\nKey to Study guide  313\nIndex  315"
+  },
+  "usage": {
+    "completion_tokens": 396,
+    "total_tokens": 3076,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 5.51607720100219,
+  "image_sha256": "4a1c98ec4df8f5f4d68ed197bec21248f11f126efd4abf9721dce74da4f16aa4",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\n  \"kind\": \"slide\",\n  \"text_lines\": [\n    \"使用指南\",\n    \"Appendices\",\n    \"Appendix 1  Active and passive  243\",\n    \"Appendix 2  List of irregular verbs  244\",\n    \"Appendix 3  Irregular verbs in groups  245\",\n    \"Appendix 4  Short forms (he’s / I’d / don’t etc.)  246\",\n    \"Appendix 5  Spelling  248\",\n    \"Appendix 6  Phrasal verbs (take off / give up etc.)  250\",\n    \"Appendix 7  Phrasal verbs + object (put out a fire / give up your job\",\n    \"Additional exercises  252\",\n    \"Study guide  271\",\n    \"Key to Exercises  283\",\n    \"Key to Additional exercises  310\",\n    \"Key to Study guide  313\",\n    \"Index  315\"\n  ],\n  \"description\": \"左侧显示一页英文目录，右侧有一名坐在圆桌旁、桌上放着平板电脑的人。右上方有浅色水印。\",\n  \"annotations\": [\n    {\n      \"type\": \"圈线\",\n      \"color\": \"橙色\",\n      \"target\": \"Index 315\",\n      \"position\": \"目录页左下方，围住“Index”和页码“315”\",\n      \"uncertain\": false\n    }\n  ],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [\n    \"Index 315\"\n  ],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"Appendix 7这一行在画面右侧可见文字止于“job”；其后内容无法确认。\"\n  ]\n}",
+    "parsed": {
+      "kind": "slide",
+      "text_lines": [
+        "使用指南",
+        "Appendices",
+        "Appendix 1  Active and passive  243",
+        "Appendix 2  List of irregular verbs  244",
+        "Appendix 3  Irregular verbs in groups  245",
+        "Appendix 4  Short forms (he’s / I’d / don’t etc.)  246",
+        "Appendix 5  Spelling  248",
+        "Appendix 6  Phrasal verbs (take off / give up etc.)  250",
+        "Appendix 7  Phrasal verbs + object (put out a fire / give up your job",
+        "Additional exercises  252",
+        "Study guide  271",
+        "Key to Exercises  283",
+        "Key to Additional exercises  310",
+        "Key to Study guide  313",
+        "Index  315"
+      ],
+      "description": "左侧显示一页英文目录，右侧有一名坐在圆桌旁、桌上放着平板电脑的人。右上方有浅色水印。",
+      "annotations": [
+        {
+          "type": "圈线",
+          "color": "橙色",
+          "target": "Index 315",
+          "position": "目录页左下方，围住“Index”和页码“315”",
+          "uncertain": false,
+          "requires_review": false,
+          "grounding": "api_visual_observation_not_human_verified"
+        }
+      ],
+      "checkmarks_count": 0,
+      "circled_text": [
+        "Index 315"
+      ],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "Appendix 7这一行在画面右侧可见文字止于“job”；其后内容无法确认。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": "使用指南\nAppendices\nAppendix 1  Active and passive  243\nAppendix 2  List of irregular verbs  244\nAppendix 3  Irregular verbs in groups  245\nAppendix 4  Short forms (he’s / I’d / don’t etc.)  246\nAppendix 5  Spelling  248\nAppendix 6  Phrasal verbs (take off / give up etc.)  250\nAppendix 7  Phrasal verbs + object (put out a fire / give up your job\nAdditional exercises  252\nStudy guide  271\nKey to Exercises  283\nKey to Additional exercises  310\nKey to Study guide  313\nIndex  315"
+    },
+    "usage": {
+      "completion_tokens": 893,
+      "total_tokens": 3573,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 500
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 8.47792705000029,
+    "image_sha256": "4a1c98ec4df8f5f4d68ed197bec21248f11f126efd4abf9721dce74da4f16aa4",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00027003_0000900100.webp",
+  "time": 900.1,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "nontext_instructional_image_or_demonstration",
+    "low_confidence_instructional_ocr",
+    "visible_annotation_change_or_changed_target_text"
+  ]
+}
