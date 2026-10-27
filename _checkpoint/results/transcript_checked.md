@@ -18,11 +18,19 @@ Hello everyone, welcome to Capsule Academy, this is LeoToday we are going to lea
 
 好，那上来我们先看新概念二册的第一个单词，跟我一起读一下，来叫 private，private，private，OK。那我看上面，我们一起看一下上面叫做单词造句指南，很有意思啊，我们一起一起看一下。第一个叫做往动词加动词的变化，其实很简单，我现在以非常快的速度简单带大家过一下，我们学新
 
-待复核：asr_disagreement_unresolved, raw_asr_disagreement。
+待复核：asr_disagreement_unresolved, raw_asr_disagreement, voiced_alignment_gap_reviewed。
 
 Whisper 原始候选：
 
 好那上来我们先看新概念二册的第一个单词跟我一起读一下来叫privateprivateprivateOK那我看上面我们一起看一下上面叫做单词造句指南很有意思啊我们一起一起看一下第一个叫做网动词加动词的变化其实很简单我现在以非常快的速度简单带大家过一下我们学新一的过程当中遇到了哪些
+
+### 原音疑点复查 00:00:40–00:00:42
+
+下列候选含前后上下文，可能对应发音示范、对齐间隙或遗漏；没有直接当作新增原文插入主稿。
+
+Qwen 候选：Private, private, private. Okay,那我看上面，我们一起看一下上面叫做单。
+
+Whisper 候选：privateprivateOK那我看上面我们一起看一下上面叫做单
 
 ## 00:01:00–00:01:30
 
@@ -42,11 +50,19 @@ Whisper 原始候选：
 
 性。好，我们一起看一下。首先，private这个单词它本身是一个形容词。那形容词我想造句，我先把它变成一个小的短语，加一个小的名词。比如说，private life，private school，private hospital。OK，那我们在这儿摘一个叫private school，叫做私立学校。那大家都知道去学校叫go to school，go to school，对吧？那我说go to a private school，就是我去的是一
 
-待复核：asr_disagreement_unresolved, raw_asr_disagreement。
+待复核：asr_disagreement_unresolved, raw_asr_disagreement, voiced_alignment_gap_reviewed。
 
 Whisper 原始候选：
 
 然后其他单词加词性好 我们一起看一下首先private这个单词它本身是一个形容词那形容词我想造句我先把它变成一个小的短语加一个小的名词比如说private lifeprivate schoolprivate hospitalOK 那我们在这摘一个叫private school叫做私立学校那大家都知道去学校叫go to schoolgo to school 对吧那我说go to a private school就是我去的是一个私立学校接下来
+
+### 原音疑点复查 00:02:15–00:02:16
+
+下列候选含前后上下文，可能对应发音示范、对齐间隙或遗漏；没有直接当作新增原文插入主稿。
+
+Qwen 候选：Private school, private hospital. Okay,那我们在这儿摘一个叫private school叫。
+
+Whisper 候选：那我们在这摘一个叫private school
 
 ## 00:02:30–00:03:00
 
@@ -86,11 +102,35 @@ Whisper 原始候选：
 
 我们一起读 conversation，conversation，conversation，very good，好，它指的是对话或者谈话或者交流。那很有意思的是，我们注意现在它是一个名词。那我先从词性的这个角度去思考，我想把它造一个小的短语出来。那要么是前面加个形容词，要么是来个动词跟它去进行配合，对吧？这是词性上的变化。那我们先来一个小的叫做 have a
 
-待复核：asr_disagreement_unresolved, raw_asr_disagreement。
+待复核：asr_disagreement_unresolved, raw_asr_disagreement, voiced_alignment_gap_reviewed。
 
 Whisper 原始候选：
 
 接下来我们看下一个单词跟我一起读conversationconversationconversationvery good它指的是对话或者谈话或者交流那很有意思的是我们注意现在它是一个名词那我先从词性的这个角度去思考我想把它造一个小的短语出来那要么是前面加个形容词要么是来个动词跟它去进行配合对吧这是词性上的变化我们先来一个小的叫做have a conversation这实际上
+
+### 原音疑点复查 00:04:32–00:04:34
+
+下列候选含前后上下文，可能对应发音示范、对齐间隙或遗漏；没有直接当作新增原文插入主稿。
+
+Qwen 候选：下一个单词，跟我一起读，conversation，conversation，conversation，very。
+
+Whisper 候选：下一个单词我们一起读conversationconversationconversation
+
+### 原音疑点复查 00:04:34–00:04:36
+
+下列候选含前后上下文，可能对应发音示范、对齐间隙或遗漏；没有直接当作新增原文插入主稿。
+
+Qwen 候选：Conversation, conversation, conversation. Very good. Oh, it refers to.
+
+Whisper 候选：conversationvery good它指的是
+
+### 原音疑点复查 00:04:36–00:04:37
+
+下列候选含前后上下文，可能对应发音示范、对齐间隙或遗漏；没有直接当作新增原文插入主稿。
+
+Qwen 候选：Conversation, conversation, conversation. Very good. 好，它指的是对话或者谈话。
+
+Whisper 候选：它指的是对话或者谈话
 
 ## 00:05:00–00:05:30
 
@@ -210,11 +250,19 @@ Whisper 原始候选：
 
 taken?这个座位让人拿走了吗？不是，这个座位有人坐吗？OK，我们一起看一下。Is this seat taken? It is now. My name is Annabelle Bransford. What did they call you? I'm Brett Maverick, ma'am. I'm pleased to meet you.好，你想坐在这个地方要问一下，叫做Is this seat taken? Very good.好，接下来我们看下一个单词，跟一起读Play。大
 
-待复核：asr_disagreement_unresolved, raw_asr_disagreement, review_shorter_content_preserved_for_audit。
+待复核：asr_disagreement_unresolved, raw_asr_disagreement, review_shorter_content_preserved_for_audit, voiced_alignment_gap_reviewed。
 
 Whisper 原始候选：
 
 这个座位让人拿走了吗不是这个座位有人坐吗OK 我们一起看一下好 你想坐在这个地方要问一下叫做好 接下来我们看下一单词恭喜读play大家都了解这个单词是这个单词
+
+### 原音疑点复查 00:11:06–00:11:07
+
+下列候选含前后上下文，可能对应发音示范、对齐间隙或遗漏；没有直接当作新增原文插入主稿。
+
+Qwen 候选：座位有人坐吗？Okay，我们一起看一下。Is this seat taken？
+
+Whisper 候选：这个座位有人坐吗?OK,我们一起看一下
 
 ## 00:11:30–00:12:00
 
@@ -234,11 +282,19 @@ Whisper 原始候选：
 
 又变成了一个特殊疑问句啊？OK，这就是我们造句的一些最本质的思路，所有单词都可以以这种方式进行造句。Let's continue，下一个单词，恭喜读，loudly，loudly。OK，so this is，大家看他们在对它做什么？Shhh，loudly，声音太大了。OK，这儿一个注意，它是一个副词哦，adv点，我们在新一讲过。那副词最主要造句的时候配合的其实也是动词，叫做talk
 
-待复核：asr_disagreement_unresolved, raw_asr_disagreement。
+待复核：asr_disagreement_unresolved, raw_asr_disagreement, voiced_alignment_gap_reviewed。
 
 Whisper 原始候选：
 
 Tonight进行提问是不是又变成了一个特殊语文句OK这就是我们造句的一些最本质的思路所有单词都可以以这种方式进行造句Let's continue下一个单词供应系读LoudlyLoudlyOKSo this is大家看他们在对他做什么Loudly声音太大了OK注意它是一个副词ADV点我们在新一讲过那副词最主要造句的时候配合的其实也是动词叫做talk loudly新英语我们就学过talk
+
+### 原音疑点复查 00:12:43–00:12:44
+
+下列候选含前后上下文，可能对应发音示范、对齐间隙或遗漏；没有直接当作新增原文插入主稿。
+
+Qwen 候选：Loudly, loudly. Okay, so this is. 大家看他们在对他做什么。
+
+Whisper 候选：loudlyloudlyokso this is大家看他们在对他做什么
 
 ## 00:13:00–00:13:30
 

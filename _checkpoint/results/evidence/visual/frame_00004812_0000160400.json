@@ -25,11 +25,12 @@
       {
         "type": "圈",
         "color": "蓝色",
-        "target": "private adj. + n.",
-        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
-        "grounding": "circle_target_requires_review",
-        "requires_review": true,
-        "meaning_original_model": "圈出单词词性及用法结构"
+        "target": "+ n",
+        "meaning": "蓝色圈线围住“+ n”部分。",
+        "grounding": "assistant_inspection_of_exact_source_image",
+        "requires_review": false,
+        "meaning_original_model": "圈出单词词性及用法结构",
+        "target_original_model": "private adj. + n."
       },
       {
         "type": "下划线",
@@ -135,7 +136,16 @@
         ],
         "matching_color_pixels": 730,
         "meaning_original_model": "表示该知识点已掌握或完成"
-      },
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": [],
+    "rejected_annotations": [
       {
         "type": "勾",
         "color": "蓝色",
@@ -150,23 +160,16 @@
         ],
         "matching_color_pixels": 0,
         "requires_review": true,
-        "meaning_original_model": "表示该知识点已掌握或完成"
+        "meaning_original_model": "表示该知识点已掌握或完成",
+        "reason": "Codex inspected this exact source image: the claimed mark is not present",
+        "review_type": "assistant_image_inspection_not_human"
       }
-    ],
-    "ocr_missing_text": [],
-    "ocr_disagreements": [],
-    "table_present": false,
-    "formula_present": false,
-    "formulas": [],
-    "tables": [],
-    "uncertain": [
-      "圈选的精确对象尚需核对：private adj. + n.",
-      "未在对应文字旁检出足够蓝色勾号像素，请核对原图：原文摘抄+变"
     ]
   },
   "generated_tokens": 419,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 17.501499009500094,
   "batch_size": 4,
-  "postprocessing_version": "objective-and-pixel-grounding-2"
+  "postprocessing_version": "objective-and-pixel-grounding-2",
+  "assistant_review_reference": "evidence/assistant_image_review.json"
 }

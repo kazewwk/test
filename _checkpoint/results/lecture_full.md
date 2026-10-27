@@ -18,6 +18,8 @@ Hello everyone, welcome to Capsule Academy, this is LeoToday we are going to lea
 
 ![教学画面](frames/frame_00000000_0000000000.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00000000_0000000000.json) · [视觉原始输出](evidence/visual/frame_00000000_0000000000.json)
+
 OCR 原文：
 
 ```text
@@ -92,6 +94,8 @@ Man sitting on a wooden table with a tablet and a small white card, wearing glas
 
 ![教学画面](frames/frame_00000246_0000008200.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00000246_0000008200.json) · [视觉原始输出](evidence/visual/frame_00000246_0000008200.json)
+
 OCR 原文：
 
 ```text
@@ -136,6 +140,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:00:08
 
 ![教学画面](frames/frame_00000255_0000008500.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00000255_0000008500.json) · [视觉原始输出](evidence/visual/frame_00000255_0000008500.json)
 
 OCR 原文：
 
@@ -183,6 +189,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00000304_0000010133.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00000304_0000010133.json) · [视觉原始输出](evidence/visual/frame_00000304_0000010133.json)
+
 OCR 原文：
 
 ```text
@@ -229,6 +237,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:00:10
 
 ![教学画面](frames/frame_00000305_0000010167.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00000305_0000010167.json) · [视觉原始输出](evidence/visual/frame_00000305_0000010167.json)
 
 OCR 原文：
 
@@ -299,6 +309,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00000334_0000011133.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00000334_0000011133.json) · [视觉原始输出](evidence/visual/frame_00000334_0000011133.json)
+
 OCR 原文：
 
 ```text
@@ -349,6 +361,8 @@ Man sitting at a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00000335_0000011167.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00000335_0000011167.json) · [视觉原始输出](evidence/visual/frame_00000335_0000011167.json)
+
 OCR 原文：
 
 ```text
@@ -398,6 +412,8 @@ Man sitting at a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:00:11
 
 ![教学画面](frames/frame_00000341_0000011367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00000341_0000011367.json) · [视觉原始输出](evidence/visual/frame_00000341_0000011367.json)
 
 OCR 原文：
 
@@ -450,6 +466,8 @@ Man sitting at a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00000577_0000019233.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00000577_0000019233.json) · [视觉原始输出](evidence/visual/frame_00000577_0000019233.json)
+
 OCR 原文：
 
 ```text
@@ -499,6 +517,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:00:19
 
 ![教学画面](frames/frame_00000578_0000019267.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00000578_0000019267.json) · [视觉原始输出](evidence/visual/frame_00000578_0000019267.json)
 
 OCR 原文：
 
@@ -574,6 +594,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00000607_0000020233.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00000607_0000020233.json) · [视觉原始输出](evidence/visual/frame_00000607_0000020233.json)
+
 OCR 原文：
 
 ```text
@@ -627,6 +649,8 @@ Man sitting at a wooden table with a tablet and microphone, wearing glasses and 
 ### 画面 00:00:20
 
 ![教学画面](frames/frame_00000608_0000020267.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00000608_0000020267.json) · [视觉原始输出](evidence/visual/frame_00000608_0000020267.json)
 
 OCR 原文：
 
@@ -682,6 +706,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00000614_0000020467.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00000614_0000020467.json) · [视觉原始输出](evidence/visual/frame_00000614_0000020467.json)
+
 OCR 原文：
 
 ```text
@@ -735,6 +761,8 @@ Man sitting on a wooden table using a tablet device, speaking into a microphone 
 ### 画面 00:00:22
 
 ![教学画面](frames/frame_00000677_0000022567.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00000677_0000022567.json) · [视觉原始输出](evidence/visual/frame_00000677_0000022567.json)
 
 OCR 原文：
 
@@ -803,6 +831,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:00:22
 
 ![教学画面](frames/frame_00000679_0000022633.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00000679_0000022633.json) · [视觉原始输出](evidence/visual/frame_00000679_0000022633.json)
 
 OCR 原文：
 
@@ -877,6 +907,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:00:23
 
 ![教学画面](frames/frame_00000707_0000023567.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00000707_0000023567.json) · [视觉原始输出](evidence/visual/frame_00000707_0000023567.json)
 
 OCR 原文：
 
@@ -953,6 +985,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00000709_0000023633.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00000709_0000023633.json) · [视觉原始输出](evidence/visual/frame_00000709_0000023633.json)
+
 OCR 原文：
 
 ```text
@@ -1025,6 +1059,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:00:23
 
 ![教学画面](frames/frame_00000714_0000023800.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00000714_0000023800.json) · [视觉原始输出](evidence/visual/frame_00000714_0000023800.json)
 
 OCR 原文：
 
@@ -1106,6 +1142,8 @@ Man sitting on a wooden table with a tablet and microphone, wearing glasses and 
 
 ![教学画面](frames/frame_00000854_0000028467.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00000854_0000028467.json) · [视觉原始输出](evidence/visual/frame_00000854_0000028467.json)
+
 OCR 原文：
 
 ```text
@@ -1136,6 +1174,8 @@ OCR 原文：
 ### 画面 00:00:29
 
 ![教学画面](frames/frame_00000882_0000029400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00000882_0000029400.json) · [视觉原始输出](evidence/visual/frame_00000882_0000029400.json)
 
 OCR 原文：
 
@@ -1181,6 +1221,8 @@ Blank white circle with no text, numbers, or symbols
 
 ![教学画面](frames/frame_00000898_0000029933.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00000898_0000029933.json) · [视觉原始输出](evidence/visual/frame_00000898_0000029933.json)
+
 OCR 原文：
 
 ```text
@@ -1221,15 +1263,25 @@ OCR 原文：
 
 好，那上来我们先看新概念二册的第一个单词，跟我一起读一下，来叫 private，private，private，OK。那我看上面，我们一起看一下上面叫做单词造句指南，很有意思啊，我们一起一起看一下。第一个叫做往动词加动词的变化，其实很简单，我现在以非常快的速度简单带大家过一下，我们学新
 
-待复核：asr_disagreement_unresolved, raw_asr_disagreement。
+待复核：asr_disagreement_unresolved, raw_asr_disagreement, voiced_alignment_gap_reviewed。
 
 Whisper 原始候选：
 
 好那上来我们先看新概念二册的第一个单词跟我一起读一下来叫privateprivateprivateOK那我看上面我们一起看一下上面叫做单词造句指南很有意思啊我们一起一起看一下第一个叫做网动词加动词的变化其实很简单我现在以非常快的速度简单带大家过一下我们学新一的过程当中遇到了哪些
 
+### 原音疑点复查 00:00:40–00:00:42
+
+下列候选含前后上下文，可能对应发音示范、对齐间隙或遗漏；没有直接当作新增原文插入主稿。
+
+Qwen 候选：Private, private, private. Okay,那我看上面，我们一起看一下上面叫做单。
+
+Whisper 候选：privateprivateOK那我看上面我们一起看一下上面叫做单
+
 ### 画面 00:00:29
 
 ![教学画面](frames/frame_00000898_0000029933.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00000898_0000029933.json) · [视觉原始输出](evidence/visual/frame_00000898_0000029933.json)
 
 OCR 原文：
 
@@ -1270,6 +1322,8 @@ OCR 原文：
 ### 画面 00:00:30
 
 ![教学画面](frames/frame_00000905_0000030167.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00000905_0000030167.json) · [视觉原始输出](evidence/visual/frame_00000905_0000030167.json)
 
 OCR 原文：
 
@@ -1332,6 +1386,8 @@ CAPSULE KCADEMY
 ### 画面 00:00:30
 
 ![教学画面](frames/frame_00000923_0000030767.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00000923_0000030767.json) · [视觉原始输出](evidence/visual/frame_00000923_0000030767.json)
 
 OCR 原文：
 
@@ -1399,6 +1455,8 @@ CAPSULE ACADEMY
 ### 画面 00:00:30
 
 ![教学画面](frames/frame_00000928_0000030933.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00000928_0000030933.json) · [视觉原始输出](evidence/visual/frame_00000928_0000030933.json)
 
 OCR 原文：
 
@@ -1473,6 +1531,8 @@ CAPSILE ACADEMY
 
 ![教学画面](frames/frame_00000933_0000031100.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00000933_0000031100.json) · [视觉原始输出](evidence/visual/frame_00000933_0000031100.json)
+
 OCR 原文：
 
 ```text
@@ -1539,6 +1599,8 @@ CAPSULE ACADEMY
 ### 画面 00:00:31
 
 ![教学画面](frames/frame_00000953_0000031767.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00000953_0000031767.json) · [视觉原始输出](evidence/visual/frame_00000953_0000031767.json)
 
 OCR 原文：
 
@@ -1613,6 +1675,8 @@ CAPSULE ACADEMY
 
 ![教学画面](frames/frame_00000956_0000031867.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00000956_0000031867.json) · [视觉原始输出](evidence/visual/frame_00000956_0000031867.json)
+
 OCR 原文：
 
 ```text
@@ -1654,6 +1718,8 @@ CAPSULE ACADEMY
 ### 画面 00:00:31
 
 ![教学画面](frames/frame_00000958_0000031933.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00000958_0000031933.json) · [视觉原始输出](evidence/visual/frame_00000958_0000031933.json)
 
 OCR 原文：
 
@@ -1712,6 +1778,8 @@ CAPSHILE ACQUISITIONS
 
 ![教学画面](frames/frame_00000963_0000032100.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00000963_0000032100.json) · [视觉原始输出](evidence/visual/frame_00000963_0000032100.json)
+
 OCR 原文：
 
 ```text
@@ -1766,6 +1834,8 @@ OCR 原文：
 ### 画面 00:00:32
 
 ![教学画面](frames/frame_00000964_0000032133.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00000964_0000032133.json) · [视觉原始输出](evidence/visual/frame_00000964_0000032133.json)
 
 OCR 原文：
 
@@ -1823,6 +1893,8 @@ OCR 原文：
 
 ![教学画面](frames/frame_00000968_0000032267.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00000968_0000032267.json) · [视觉原始输出](evidence/visual/frame_00000968_0000032267.json)
+
 OCR 原文：
 
 ```text
@@ -1859,6 +1931,8 @@ OCR 原文：
 ### 画面 00:00:32
 
 ![教学画面](frames/frame_00000972_0000032400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00000972_0000032400.json) · [视觉原始输出](evidence/visual/frame_00000972_0000032400.json)
 
 OCR 原文：
 
@@ -1910,6 +1984,8 @@ Q
 
 ![教学画面](frames/frame_00000973_0000032433.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00000973_0000032433.json) · [视觉原始输出](evidence/visual/frame_00000973_0000032433.json)
+
 OCR 原文：
 
 ```text
@@ -1957,6 +2033,8 @@ OCR 原文：
 ### 画面 00:00:32
 
 ![教学画面](frames/frame_00000986_0000032867.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00000986_0000032867.json) · [视觉原始输出](evidence/visual/frame_00000986_0000032867.json)
 
 OCR 原文：
 
@@ -2065,6 +2143,8 @@ Man sitting at a wooden table using a tablet with a pen, no visible text or symb
 ### 画面 00:00:38
 
 ![教学画面](frames/frame_00001146_0000038200.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00001146_0000038200.json) · [视觉原始输出](evidence/visual/frame_00001146_0000038200.json)
 
 OCR 原文：
 
@@ -2183,6 +2263,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:00:38
 
 ![教学画面](frames/frame_00001159_0000038633.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00001159_0000038633.json) · [视觉原始输出](evidence/visual/frame_00001159_0000038633.json)
 
 OCR 原文：
 
@@ -2303,6 +2385,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00001177_0000039233.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00001177_0000039233.json) · [视觉原始输出](evidence/visual/frame_00001177_0000039233.json)
+
 OCR 原文：
 
 ```text
@@ -2417,6 +2501,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:00:45
 
 ![教学画面](frames/frame_00001356_0000045200.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00001356_0000045200.json) · [视觉原始输出](evidence/visual/frame_00001356_0000045200.json)
 
 OCR 原文：
 
@@ -2545,6 +2631,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:00:46
 
 ![教学画面](frames/frame_00001386_0000046200.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00001386_0000046200.json) · [视觉原始输出](evidence/visual/frame_00001386_0000046200.json)
 
 OCR 原文：
 
@@ -2689,6 +2777,8 @@ Man sitting at a wooden table using a tablet with a USB flash, no visible text o
 ### 画面 00:00:46
 
 ![教学画面](frames/frame_00001391_0000046367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00001391_0000046367.json) · [视觉原始输出](evidence/visual/frame_00001391_0000046367.json)
 
 OCR 原文：
 
@@ -2857,6 +2947,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00001418_0000047267.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00001418_0000047267.json) · [视觉原始输出](evidence/visual/frame_00001418_0000047267.json)
+
 OCR 原文：
 
 ```text
@@ -2971,6 +3063,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:00:50
 
 ![教学画面](frames/frame_00001502_0000050067.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00001502_0000050067.json) · [视觉原始输出](evidence/visual/frame_00001502_0000050067.json)
 
 OCR 原文：
 
@@ -3124,6 +3218,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00001513_0000050433.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00001513_0000050433.json) · [视觉原始输出](evidence/visual/frame_00001513_0000050433.json)
+
 OCR 原文：
 
 ```text
@@ -3264,6 +3360,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00001513_0000050433.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00001513_0000050433.json) · [视觉原始输出](evidence/visual/frame_00001513_0000050433.json)
+
 OCR 原文：
 
 ```text
@@ -3398,6 +3496,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00001513_0000050433.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00001513_0000050433.json) · [视觉原始输出](evidence/visual/frame_00001513_0000050433.json)
+
 OCR 原文：
 
 ```text
@@ -3528,6 +3628,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00002786_0000092867.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00002786_0000092867.json) · [视觉原始输出](evidence/visual/frame_00002786_0000092867.json)
+
 OCR 原文：
 
 ```text
@@ -3654,6 +3756,8 @@ Man wearing glasses and a light-colored shirt, sitting at a wooden table with a 
 ### 画面 00:01:40
 
 ![教学画面](frames/frame_00003003_0000100100.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00003003_0000100100.json) · [视觉原始输出](evidence/visual/frame_00003003_0000100100.json)
 
 OCR 原文：
 
@@ -3806,6 +3910,8 @@ Man sitting at a wooden table using a tablet with a smartphone, focused on her e
 
 ![教学画面](frames/frame_00003013_0000100433.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00003013_0000100433.json) · [视觉原始输出](evidence/visual/frame_00003013_0000100433.json)
+
 OCR 原文：
 
 ```text
@@ -3952,6 +4058,8 @@ Man using a tablet at a wooden table, focused on eye makeup (no visible text or 
 
 ![教学画面](frames/frame_00003306_0000110200.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00003306_0000110200.json) · [视觉原始输出](evidence/visual/frame_00003306_0000110200.json)
+
 OCR 原文：
 
 ```text
@@ -4097,6 +4205,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:01:50
 
 ![教学画面](frames/frame_00003317_0000110567.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00003317_0000110567.json) · [视觉原始输出](evidence/visual/frame_00003317_0000110567.json)
 
 OCR 原文：
 
@@ -4269,6 +4379,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:01:54
 
 ![教学画面](frames/frame_00003420_0000114000.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00003420_0000114000.json) · [视觉原始输出](evidence/visual/frame_00003420_0000114000.json)
 
 OCR 原文：
 
@@ -4444,6 +4556,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:01:54
 
 ![教学画面](frames/frame_00003430_0000114333.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00003430_0000114333.json) · [视觉原始输出](evidence/visual/frame_00003430_0000114333.json)
 
 OCR 原文：
 
@@ -4635,6 +4749,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00003525_0000117500.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00003525_0000117500.json) · [视觉原始输出](evidence/visual/frame_00003525_0000117500.json)
+
 OCR 原文：
 
 ```text
@@ -4820,6 +4936,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:01:57
 
 ![教学画面](frames/frame_00003539_0000117967.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00003539_0000117967.json) · [视觉原始输出](evidence/visual/frame_00003539_0000117967.json)
 
 OCR 原文：
 
@@ -5048,15 +5166,25 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 性。好，我们一起看一下。首先，private这个单词它本身是一个形容词。那形容词我想造句，我先把它变成一个小的短语，加一个小的名词。比如说，private life，private school，private hospital。OK，那我们在这儿摘一个叫private school，叫做私立学校。那大家都知道去学校叫go to school，go to school，对吧？那我说go to a private school，就是我去的是一
 
-待复核：asr_disagreement_unresolved, raw_asr_disagreement。
+待复核：asr_disagreement_unresolved, raw_asr_disagreement, voiced_alignment_gap_reviewed。
 
 Whisper 原始候选：
 
 然后其他单词加词性好 我们一起看一下首先private这个单词它本身是一个形容词那形容词我想造句我先把它变成一个小的短语加一个小的名词比如说private lifeprivate schoolprivate hospitalOK 那我们在这摘一个叫private school叫做私立学校那大家都知道去学校叫go to schoolgo to school 对吧那我说go to a private school就是我去的是一个私立学校接下来
 
+### 原音疑点复查 00:02:15–00:02:16
+
+下列候选含前后上下文，可能对应发音示范、对齐间隙或遗漏；没有直接当作新增原文插入主稿。
+
+Qwen 候选：Private school, private hospital. Okay,那我们在这儿摘一个叫private school叫。
+
+Whisper 候选：那我们在这摘一个叫private school
+
 ### 画面 00:01:57
 
 ![教学画面](frames/frame_00003539_0000117967.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00003539_0000117967.json) · [视觉原始输出](evidence/visual/frame_00003539_0000117967.json)
 
 OCR 原文：
 
@@ -5285,6 +5413,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00003664_0000122133.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00003664_0000122133.json) · [视觉原始输出](evidence/visual/frame_00003664_0000122133.json)
+
 OCR 原文：
 
 ```text
@@ -5430,6 +5560,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:02:03
 
 ![教学画面](frames/frame_00003690_0000123000.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00003690_0000123000.json) · [视觉原始输出](evidence/visual/frame_00003690_0000123000.json)
 
 OCR 原文：
 
@@ -5685,6 +5817,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00003723_0000124100.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00003723_0000124100.json) · [视觉原始输出](evidence/visual/frame_00003723_0000124100.json)
+
 OCR 原文：
 
 ```text
@@ -5892,6 +6026,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00003732_0000124400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00003732_0000124400.json) · [视觉原始输出](evidence/visual/frame_00003732_0000124400.json)
+
 OCR 原文：
 
 ```text
@@ -6044,6 +6180,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:02:09
 
 ![教学画面](frames/frame_00003875_0000129167.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00003875_0000129167.json) · [视觉原始输出](evidence/visual/frame_00003875_0000129167.json)
 
 OCR 原文：
 
@@ -6309,6 +6447,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00003894_0000129800.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00003894_0000129800.json) · [视觉原始输出](evidence/visual/frame_00003894_0000129800.json)
+
 OCR 原文：
 
 ```text
@@ -6547,6 +6687,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00003912_0000130400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00003912_0000130400.json) · [视觉原始输出](evidence/visual/frame_00003912_0000130400.json)
+
 OCR 原文：
 
 ```text
@@ -6594,16 +6736,17 @@ private adj.+ n
       "type": "圈",
       "color": "蓝色",
       "target": "+ n",
-      "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+      "meaning": "蓝色圈线围住“+ n”部分。",
       "target_original_model": "adj. + n.",
-      "grounding": "closed_blue_region_and_document_ocr",
+      "grounding": "assistant_inspection_of_exact_source_image",
       "enclosure_bbox": [
         438,
         496,
         154,
         116
       ],
-      "meaning_original_model": "强调形容词加名词的搭配结构"
+      "meaning_original_model": "强调形容词加名词的搭配结构",
+      "requires_review": false
     },
     {
       "type": "勾",
@@ -6679,26 +6822,7 @@ private adj.+ n
       ],
       "matching_color_pixels": 727,
       "meaning_original_model": "表示该知识点已掌握或完成"
-    },
-    {
-      "type": "勾",
-      "color": "蓝色",
-      "target": "原文摘抄+变",
-      "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
-      "grounding": "color_evidence_not_found",
-      "tested_region": [
-        417,
-        358,
-        659,
-        436
-      ],
-      "matching_color_pixels": 0,
-      "requires_review": true,
-      "meaning_original_model": "表示该知识点已掌握或完成"
     }
-  ],
-  "uncertain": [
-    "未在对应文字旁检出足够蓝色勾号像素，请核对原图：原文摘抄+变"
   ]
 }
 ```
@@ -6792,6 +6916,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:02:10
 
 ![教学画面](frames/frame_00003921_0000130700.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00003921_0000130700.json) · [视觉原始输出](evidence/visual/frame_00003921_0000130700.json)
 
 OCR 原文：
 
@@ -7050,6 +7176,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:02:25
 
 ![教学画面](frames/frame_00004375_0000145833.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00004375_0000145833.json) · [视觉原始输出](evidence/visual/frame_00004375_0000145833.json)
 
 OCR 原文：
 
@@ -7312,6 +7440,8 @@ Man sitting at a wooden table using a tablet with a screen, no visible text or s
 ### 画面 00:02:26
 
 ![教学画面](frames/frame_00004384_0000146133.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00004384_0000146133.json) · [视觉原始输出](evidence/visual/frame_00004384_0000146133.json)
 
 OCR 原文：
 
@@ -7585,6 +7715,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00004384_0000146133.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00004384_0000146133.json) · [视觉原始输出](evidence/visual/frame_00004384_0000146133.json)
+
 OCR 原文：
 
 ```text
@@ -7847,6 +7979,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00004582_0000152733.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00004582_0000152733.json) · [视觉原始输出](evidence/visual/frame_00004582_0000152733.json)
+
 OCR 原文：
 
 ```text
@@ -8028,6 +8162,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:02:33
 
 ![教学画面](frames/frame_00004598_0000153267.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00004598_0000153267.json) · [视觉原始输出](evidence/visual/frame_00004598_0000153267.json)
 
 OCR 原文：
 
@@ -8222,6 +8358,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00004812_0000160400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00004812_0000160400.json) · [视觉原始输出](evidence/visual/frame_00004812_0000160400.json)
+
 OCR 原文：
 
 ```text
@@ -8255,11 +8393,12 @@ o He goes to a private school.
     {
       "type": "圈",
       "color": "蓝色",
-      "target": "private adj. + n.",
-      "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
-      "grounding": "circle_target_requires_review",
-      "requires_review": true,
-      "meaning_original_model": "圈出单词词性及用法结构"
+      "target": "+ n",
+      "meaning": "蓝色圈线围住“+ n”部分。",
+      "grounding": "assistant_inspection_of_exact_source_image",
+      "requires_review": false,
+      "meaning_original_model": "圈出单词词性及用法结构",
+      "target_original_model": "private adj. + n."
     },
     {
       "type": "下划线",
@@ -8365,27 +8504,7 @@ o He goes to a private school.
       ],
       "matching_color_pixels": 730,
       "meaning_original_model": "表示该知识点已掌握或完成"
-    },
-    {
-      "type": "勾",
-      "color": "蓝色",
-      "target": "原文摘抄+变",
-      "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
-      "grounding": "color_evidence_not_found",
-      "tested_region": [
-        417,
-        358,
-        659,
-        436
-      ],
-      "matching_color_pixels": 0,
-      "requires_review": true,
-      "meaning_original_model": "表示该知识点已掌握或完成"
     }
-  ],
-  "uncertain": [
-    "圈选的精确对象尚需核对：private adj. + n.",
-    "未在对应文字旁检出足够蓝色勾号像素，请核对原图：原文摘抄+变"
   ]
 }
 ```
@@ -8492,6 +8611,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 ### 画面 00:02:40
 
 ![教学画面](frames/frame_00004821_0000160700.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00004821_0000160700.json) · [视觉原始输出](evidence/visual/frame_00004821_0000160700.json)
 
 OCR 原文：
 
@@ -8764,6 +8885,8 @@ Man wearing glasses and a beige shirt sitting on a wooden table with a tablet an
 
 ![教学画面](frames/frame_00005117_0000170567.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00005117_0000170567.json) · [视觉原始输出](evidence/visual/frame_00005117_0000170567.json)
+
 OCR 原文：
 
 ```text
@@ -9032,6 +9155,8 @@ Man sitting on a wooden table using a tablet device, gesturing with his hand (no
 
 ![教学画面](frames/frame_00005126_0000170867.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00005126_0000170867.json) · [视觉原始输出](evidence/visual/frame_00005126_0000170867.json)
+
 OCR 原文：
 
 ```text
@@ -9241,6 +9366,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:02:57
 
 ![教学画面](frames/frame_00005324_0000177467.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00005324_0000177467.json) · [视觉原始输出](evidence/visual/frame_00005324_0000177467.json)
 
 OCR 原文：
 
@@ -9528,6 +9655,8 @@ Man wearing glasses and a beige jacket sitting on a wooden table with a tablet, 
 
 ![教学画面](frames/frame_00005354_0000178467.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00005354_0000178467.json) · [视觉原始输出](evidence/visual/frame_00005354_0000178467.json)
+
 OCR 原文：
 
 ```text
@@ -9729,6 +9858,8 @@ Man wearing glasses and a beige jacket sitting on a wooden table with a tablet, 
 ### 画面 00:02:58
 
 ![教学画面](frames/frame_00005361_0000178700.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00005361_0000178700.json) · [视觉原始输出](evidence/visual/frame_00005361_0000178700.json)
 
 OCR 原文：
 
@@ -10034,6 +10165,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00005361_0000178700.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00005361_0000178700.json) · [视觉原始输出](evidence/visual/frame_00005361_0000178700.json)
+
 OCR 原文：
 
 ```text
@@ -10328,6 +10461,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 
 ![教学画面](frames/frame_00005452_0000181733.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00005452_0000181733.json) · [视觉原始输出](evidence/visual/frame_00005452_0000181733.json)
+
 OCR 原文：
 
 ```text
@@ -10613,6 +10748,8 @@ Man sitting on a wooden table with a tablet and microphone, gesturing while spea
 
 ![教学画面](frames/frame_00005474_0000182467.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00005474_0000182467.json) · [视觉原始输出](evidence/visual/frame_00005474_0000182467.json)
+
 OCR 原文：
 
 ```text
@@ -10810,6 +10947,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:03:04
 
 ![教学画面](frames/frame_00005538_0000184600.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00005538_0000184600.json) · [视觉原始输出](evidence/visual/frame_00005538_0000184600.json)
 
 OCR 原文：
 
@@ -11072,6 +11211,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 
 ![教学画面](frames/frame_00005549_0000184967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00005549_0000184967.json) · [视觉原始输出](evidence/visual/frame_00005549_0000184967.json)
+
 OCR 原文：
 
 ```text
@@ -11262,6 +11403,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:03:18
 
 ![教学画面](frames/frame_00005968_0000198933.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00005968_0000198933.json) · [视觉原始输出](evidence/visual/frame_00005968_0000198933.json)
 
 OCR 原文：
 
@@ -11554,6 +11697,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:03:19
 
 ![教学画面](frames/frame_00005978_0000199267.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00005978_0000199267.json) · [视觉原始输出](evidence/visual/frame_00005978_0000199267.json)
 
 OCR 原文：
 
@@ -11867,6 +12012,8 @@ Man sitting on a wooden table using a tablet with a whiteboard and earphones, no
 
 ![教学画面](frames/frame_00005978_0000199267.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00005978_0000199267.json) · [视觉原始输出](evidence/visual/frame_00005978_0000199267.json)
+
 OCR 原文：
 
 ```text
@@ -12174,6 +12321,8 @@ Man sitting on a wooden table using a tablet with a whiteboard and earphones, no
 ### 画面 00:03:30
 
 ![教学画面](frames/frame_00006321_0000210700.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00006321_0000210700.json) · [视觉原始输出](evidence/visual/frame_00006321_0000210700.json)
 
 OCR 原文：
 
@@ -12483,6 +12632,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:03:31
 
 ![教学画面](frames/frame_00006333_0000211100.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00006333_0000211100.json) · [视觉原始输出](evidence/visual/frame_00006333_0000211100.json)
 
 OCR 原文：
 
@@ -12801,6 +12952,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:03:38
 
 ![教学画面](frames/frame_00006554_0000218467.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00006554_0000218467.json) · [视觉原始输出](evidence/visual/frame_00006554_0000218467.json)
 
 OCR 原文：
 
@@ -13128,6 +13281,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00006563_0000218767.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00006563_0000218767.json) · [视觉原始输出](evidence/visual/frame_00006563_0000218767.json)
+
 OCR 原文：
 
 ```text
@@ -13450,6 +13605,8 @@ Man sitting at a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00006612_0000220400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00006612_0000220400.json) · [视觉原始输出](evidence/visual/frame_00006612_0000220400.json)
+
 OCR 原文：
 
 ```text
@@ -13770,6 +13927,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00006711_0000223700.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00006711_0000223700.json) · [视觉原始输出](evidence/visual/frame_00006711_0000223700.json)
+
 OCR 原文：
 
 ```text
@@ -13999,6 +14158,8 @@ Man sitting at a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:03:58
 
 ![教学画面](frames/frame_00007160_0000238667.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00007160_0000238667.json) · [视觉原始输出](evidence/visual/frame_00007160_0000238667.json)
 
 OCR 原文：
 
@@ -14245,6 +14406,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:03:58
 
 ![教学画面](frames/frame_00007169_0000238967.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00007169_0000238967.json) · [视觉原始输出](evidence/visual/frame_00007169_0000238967.json)
 
 OCR 原文：
 
@@ -14566,6 +14729,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00007169_0000238967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00007169_0000238967.json) · [视觉原始输出](evidence/visual/frame_00007169_0000238967.json)
+
 OCR 原文：
 
 ```text
@@ -14876,6 +15041,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00007306_0000243533.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00007306_0000243533.json) · [视觉原始输出](evidence/visual/frame_00007306_0000243533.json)
+
 OCR 原文：
 
 ```text
@@ -15159,6 +15326,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00007318_0000243933.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00007318_0000243933.json) · [视觉原始输出](evidence/visual/frame_00007318_0000243933.json)
+
 OCR 原文：
 
 ```text
@@ -15435,6 +15604,8 @@ Man sitting on a wooden stool using a tablet device (no visible text or symbols)
 ### 画面 00:04:05
 
 ![教学画面](frames/frame_00007361_0000245367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00007361_0000245367.json) · [视觉原始输出](evidence/visual/frame_00007361_0000245367.json)
 
 OCR 原文：
 
@@ -15729,6 +15900,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:04:05
 
 ![教学画面](frames/frame_00007373_0000245767.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00007373_0000245767.json) · [视觉原始输出](evidence/visual/frame_00007373_0000245767.json)
 
 OCR 原文：
 
@@ -16112,6 +16285,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00007668_0000255600.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00007668_0000255600.json) · [视觉原始输出](evidence/visual/frame_00007668_0000255600.json)
+
 OCR 原文：
 
 ```text
@@ -16371,6 +16546,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:04:16
 
 ![教学画面](frames/frame_00007681_0000256033.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00007681_0000256033.json) · [视觉原始输出](evidence/visual/frame_00007681_0000256033.json)
 
 OCR 原文：
 
@@ -16730,6 +16907,8 @@ Man sitting on a wooden table using a tablet device, gesturing with her hand (no
 ### 画面 00:04:16
 
 ![教学画面](frames/frame_00007698_0000256600.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00007698_0000256600.json) · [视觉原始输出](evidence/visual/frame_00007698_0000256600.json)
 
 OCR 原文：
 
@@ -17102,6 +17281,8 @@ Man sitting at a wooden table with a tablet and microphone, gesturing while spea
 
 ![教学画面](frames/frame_00007709_0000256967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00007709_0000256967.json) · [视觉原始输出](evidence/visual/frame_00007709_0000256967.json)
+
 OCR 原文：
 
 ```text
@@ -17419,6 +17600,8 @@ Man sitting on a wooden table using a tablet with a screen, gesturing while spea
 
 ![教学画面](frames/frame_00007749_0000258300.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00007749_0000258300.json) · [视觉原始输出](evidence/visual/frame_00007749_0000258300.json)
+
 OCR 原文：
 
 ```text
@@ -17693,6 +17876,8 @@ Man sitting on a wooden table using a tablet device, gesturing with her hand (no
 
 ![教学画面](frames/frame_00007758_0000258600.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00007758_0000258600.json) · [视觉原始输出](evidence/visual/frame_00007758_0000258600.json)
+
 OCR 原文：
 
 ```text
@@ -17956,6 +18141,8 @@ Man sitting on a wooden table using a tablet device, speaking into a microphone 
 
 ![教学画面](frames/frame_00007906_0000263533.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00007906_0000263533.json) · [视觉原始输出](evidence/visual/frame_00007906_0000263533.json)
+
 OCR 原文：
 
 ```text
@@ -18089,6 +18276,8 @@ Man sitting on a wooden table using a tablet with a screen, connected by wires (
 
 ![教学画面](frames/frame_00007917_0000263900.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00007917_0000263900.json) · [视觉原始输出](evidence/visual/frame_00007917_0000263900.json)
+
 OCR 原文：
 
 ```text
@@ -18200,6 +18389,8 @@ B站搜:刘羽Leo
 ### 画面 00:04:28
 
 ![教学画面](frames/frame_00008058_0000268600.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00008058_0000268600.json) · [视觉原始输出](evidence/visual/frame_00008058_0000268600.json)
 
 OCR 原文：
 
@@ -18319,6 +18510,8 @@ Man wearing glasses and a light-colored shirt sitting on a wooden table using a 
 ### 画面 00:04:28
 
 ![教学画面](frames/frame_00008067_0000268900.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00008067_0000268900.json) · [视觉原始输出](evidence/visual/frame_00008067_0000268900.json)
 
 OCR 原文：
 
@@ -18440,15 +18633,41 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 我们一起读 conversation，conversation，conversation，very good，好，它指的是对话或者谈话或者交流。那很有意思的是，我们注意现在它是一个名词。那我先从词性的这个角度去思考，我想把它造一个小的短语出来。那要么是前面加个形容词，要么是来个动词跟它去进行配合，对吧？这是词性上的变化。那我们先来一个小的叫做 have a
 
-待复核：asr_disagreement_unresolved, raw_asr_disagreement。
+待复核：asr_disagreement_unresolved, raw_asr_disagreement, voiced_alignment_gap_reviewed。
 
 Whisper 原始候选：
 
 接下来我们看下一个单词跟我一起读conversationconversationconversationvery good它指的是对话或者谈话或者交流那很有意思的是我们注意现在它是一个名词那我先从词性的这个角度去思考我想把它造一个小的短语出来那要么是前面加个形容词要么是来个动词跟它去进行配合对吧这是词性上的变化我们先来一个小的叫做have a conversation这实际上
 
+### 原音疑点复查 00:04:32–00:04:34
+
+下列候选含前后上下文，可能对应发音示范、对齐间隙或遗漏；没有直接当作新增原文插入主稿。
+
+Qwen 候选：下一个单词，跟我一起读，conversation，conversation，conversation，very。
+
+Whisper 候选：下一个单词我们一起读conversationconversationconversation
+
+### 原音疑点复查 00:04:34–00:04:36
+
+下列候选含前后上下文，可能对应发音示范、对齐间隙或遗漏；没有直接当作新增原文插入主稿。
+
+Qwen 候选：Conversation, conversation, conversation. Very good. Oh, it refers to.
+
+Whisper 候选：conversationvery good它指的是
+
+### 原音疑点复查 00:04:36–00:04:37
+
+下列候选含前后上下文，可能对应发音示范、对齐间隙或遗漏；没有直接当作新增原文插入主稿。
+
+Qwen 候选：Conversation, conversation, conversation. Very good. 好，它指的是对话或者谈话。
+
+Whisper 候选：它指的是对话或者谈话
+
 ### 画面 00:04:28
 
 ![教学画面](frames/frame_00008067_0000268900.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00008067_0000268900.json) · [视觉原始输出](evidence/visual/frame_00008067_0000268900.json)
 
 OCR 原文：
 
@@ -18569,6 +18788,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:04:32
 
 ![教学画面](frames/frame_00008163_0000272100.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00008163_0000272100.json) · [视觉原始输出](evidence/visual/frame_00008163_0000272100.json)
 
 OCR 原文：
 
@@ -18694,6 +18915,8 @@ Man sitting at a wooden table with a tablet and microphone, no visible text or s
 ### 画面 00:04:32
 
 ![教学画面](frames/frame_00008174_0000272467.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00008174_0000272467.json) · [视觉原始输出](evidence/visual/frame_00008174_0000272467.json)
 
 OCR 原文：
 
@@ -18844,6 +19067,8 @@ Man sitting at a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00008191_0000273033.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00008191_0000273033.json) · [视觉原始输出](evidence/visual/frame_00008191_0000273033.json)
+
 OCR 原文：
 
 ```text
@@ -18991,6 +19216,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00008211_0000273700.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00008211_0000273700.json) · [视觉原始输出](evidence/visual/frame_00008211_0000273700.json)
+
 OCR 原文：
 
 ```text
@@ -19134,6 +19361,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:04:34
 
 ![教学画面](frames/frame_00008229_0000274300.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00008229_0000274300.json) · [视觉原始输出](evidence/visual/frame_00008229_0000274300.json)
 
 OCR 原文：
 
@@ -19327,6 +19556,8 @@ Man sitting at a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00008514_0000283800.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00008514_0000283800.json) · [视觉原始输出](evidence/visual/frame_00008514_0000283800.json)
+
 OCR 原文：
 
 ```text
@@ -19507,6 +19738,8 @@ Man sitting on a wooden table using a tablet device, gesturing with her hand (no
 ### 画面 00:04:44
 
 ![教学画面](frames/frame_00008526_0000284200.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00008526_0000284200.json) · [视觉原始输出](evidence/visual/frame_00008526_0000284200.json)
 
 OCR 原文：
 
@@ -19695,6 +19928,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:04:45
 
 ![教学画面](frames/frame_00008565_0000285500.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00008565_0000285500.json) · [视觉原始输出](evidence/visual/frame_00008565_0000285500.json)
 
 OCR 原文：
 
@@ -19924,6 +20159,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00008584_0000286133.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00008584_0000286133.json) · [视觉原始输出](evidence/visual/frame_00008584_0000286133.json)
+
 OCR 原文：
 
 ```text
@@ -20133,6 +20370,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00008881_0000296033.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00008881_0000296033.json) · [视觉原始输出](evidence/visual/frame_00008881_0000296033.json)
+
 OCR 原文：
 
 ```text
@@ -20334,6 +20573,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 ### 画面 00:04:56
 
 ![教学画面](frames/frame_00008890_0000296333.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00008890_0000296333.json) · [视觉原始输出](evidence/visual/frame_00008890_0000296333.json)
 
 OCR 原文：
 
@@ -20549,6 +20790,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00008890_0000296333.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00008890_0000296333.json) · [视觉原始输出](evidence/visual/frame_00008890_0000296333.json)
+
 OCR 原文：
 
 ```text
@@ -20752,6 +20995,8 @@ Man sitting on a wooden table using a tablet device, with hands resting on his h
 ### 画面 00:05:16
 
 ![教学画面](frames/frame_00009501_0000316700.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00009501_0000316700.json) · [视觉原始输出](evidence/visual/frame_00009501_0000316700.json)
 
 OCR 原文：
 
@@ -20998,6 +21243,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00009504_0000316800.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00009504_0000316800.json) · [视觉原始输出](evidence/visual/frame_00009504_0000316800.json)
+
 OCR 原文：
 
 ```text
@@ -21202,6 +21449,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:05:17
 
 ![教学画面](frames/frame_00009515_0000317167.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00009515_0000317167.json) · [视觉原始输出](evidence/visual/frame_00009515_0000317167.json)
 
 OCR 原文：
 
@@ -21426,6 +21675,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:05:18
 
 ![教学画面](frames/frame_00009545_0000318167.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00009545_0000318167.json) · [视觉原始输出](evidence/visual/frame_00009545_0000318167.json)
 
 OCR 原文：
 
@@ -21671,6 +21922,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00009550_0000318333.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00009550_0000318333.json) · [视觉原始输出](evidence/visual/frame_00009550_0000318333.json)
+
 OCR 原文：
 
 ```text
@@ -21914,6 +22167,8 @@ Man speaking at a wooden table with a tablet and microphone (no visible text or 
 ### 画面 00:05:20
 
 ![教学画面](frames/frame_00009616_0000320533.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00009616_0000320533.json) · [视觉原始输出](evidence/visual/frame_00009616_0000320533.json)
 
 OCR 原文：
 
@@ -22168,6 +22423,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00009629_0000320967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00009629_0000320967.json) · [视觉原始输出](evidence/visual/frame_00009629_0000320967.json)
+
 OCR 原文：
 
 ```text
@@ -22410,6 +22667,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:05:21
 
 ![教学画面](frames/frame_00009659_0000321967.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00009659_0000321967.json) · [视觉原始输出](evidence/visual/frame_00009659_0000321967.json)
 
 OCR 原文：
 
@@ -22661,6 +22920,8 @@ Man using a tablet device on a wooden table, no visible text or symbols on the d
 
 ![教学画面](frames/frame_00009664_0000322133.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00009664_0000322133.json) · [视觉原始输出](evidence/visual/frame_00009664_0000322133.json)
+
 OCR 原文：
 
 ```text
@@ -22867,6 +23128,8 @@ Man sitting on a wooden table using a tablet with a pen, no visible text or symb
 ### 画面 00:05:23
 
 ![教学画面](frames/frame_00009708_0000323600.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00009708_0000323600.json) · [视觉原始输出](evidence/visual/frame_00009708_0000323600.json)
 
 OCR 原文：
 
@@ -23093,6 +23356,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols 
 ### 画面 00:05:23
 
 ![教学画面](frames/frame_00009712_0000323733.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00009712_0000323733.json) · [视觉原始输出](evidence/visual/frame_00009712_0000323733.json)
 
 OCR 原文：
 
@@ -23359,6 +23624,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:05:24
 
 ![教学画面](frames/frame_00009725_0000324167.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00009725_0000324167.json) · [视觉原始输出](evidence/visual/frame_00009725_0000324167.json)
 
 OCR 原文：
 
@@ -23877,6 +24144,8 @@ Be quiet,请您安静一些Continue,这是31课接下来新概念一课71课的�
 
 ![教学画面](frames/frame_00009725_0000324167.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00009725_0000324167.json) · [视觉原始输出](evidence/visual/frame_00009725_0000324167.json)
+
 OCR 原文：
 
 ```text
@@ -24384,6 +24653,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols 
 
 ![教学画面](frames/frame_00009957_0000331900.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00009957_0000331900.json) · [视觉原始输出](evidence/visual/frame_00009957_0000331900.json)
+
 OCR 原文：
 
 ```text
@@ -24652,6 +24923,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols 
 
 ![教学画面](frames/frame_00009966_0000332200.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00009966_0000332200.json) · [视觉原始输出](evidence/visual/frame_00009966_0000332200.json)
+
 OCR 原文：
 
 ```text
@@ -24910,6 +25183,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols 
 ### 画面 00:05:36
 
 ![教学画面](frames/frame_00010108_0000336933.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00010108_0000336933.json) · [视觉原始输出](evidence/visual/frame_00010108_0000336933.json)
 
 OCR 原文：
 
@@ -25249,6 +25524,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00010121_0000337367.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00010121_0000337367.json) · [视觉原始输出](evidence/visual/frame_00010121_0000337367.json)
+
 OCR 原文：
 
 ```text
@@ -25541,6 +25818,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols 
 ### 画面 00:05:37
 
 ![教学画面](frames/frame_00010135_0000337833.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00010135_0000337833.json) · [视觉原始输出](evidence/visual/frame_00010135_0000337833.json)
 
 OCR 原文：
 
@@ -25835,6 +26114,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:05:41
 
 ![教学画面](frames/frame_00010247_0000341567.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00010247_0000341567.json) · [视觉原始输出](evidence/visual/frame_00010247_0000341567.json)
 
 OCR 原文：
 
@@ -26144,6 +26425,8 @@ Man using a tablet device on a wooden table, no visible text or symbols on the d
 
 ![教学画面](frames/frame_00010256_0000341867.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00010256_0000341867.json) · [视觉原始输出](evidence/visual/frame_00010256_0000341867.json)
+
 OCR 原文：
 
 ```text
@@ -26426,6 +26709,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols 
 ### 画面 00:05:44
 
 ![教学画面](frames/frame_00010321_0000344033.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00010321_0000344033.json) · [视觉原始输出](evidence/visual/frame_00010321_0000344033.json)
 
 OCR 原文：
 
@@ -26717,6 +27002,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:05:44
 
 ![教学画面](frames/frame_00010334_0000344467.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00010334_0000344467.json) · [视觉原始输出](evidence/visual/frame_00010334_0000344467.json)
 
 OCR 原文：
 
@@ -27048,6 +27335,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 
 ![教学画面](frames/frame_00010363_0000345433.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00010363_0000345433.json) · [视觉原始输出](evidence/visual/frame_00010363_0000345433.json)
+
 OCR 原文：
 
 ```text
@@ -27314,6 +27603,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:05:53
 
 ![教学画面](frames/frame_00010619_0000353967.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00010619_0000353967.json) · [视觉原始输出](evidence/visual/frame_00010619_0000353967.json)
 
 OCR 原文：
 
@@ -27657,6 +27948,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols 
 
 ![教学画面](frames/frame_00010629_0000354300.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00010629_0000354300.json) · [视觉原始输出](evidence/visual/frame_00010629_0000354300.json)
+
 OCR 原文：
 
 ```text
@@ -27983,6 +28276,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols 
 
 ![教学画面](frames/frame_00010629_0000354300.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00010629_0000354300.json) · [视觉原始输出](evidence/visual/frame_00010629_0000354300.json)
+
 OCR 原文：
 
 ```text
@@ -28305,6 +28600,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols 
 
 ![教学画面](frames/frame_00010996_0000366533.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00010996_0000366533.json) · [视觉原始输出](evidence/visual/frame_00010996_0000366533.json)
+
 OCR 原文：
 
 ```text
@@ -28557,6 +28854,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols 
 ### 画面 00:06:06
 
 ![教学画面](frames/frame_00011009_0000366967.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00011009_0000366967.json) · [视觉原始输出](evidence/visual/frame_00011009_0000366967.json)
 
 OCR 原文：
 
@@ -28883,6 +29182,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols 
 
 ![教学画面](frames/frame_00011155_0000371833.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00011155_0000371833.json) · [视觉原始输出](evidence/visual/frame_00011155_0000371833.json)
+
 OCR 原文：
 
 ```text
@@ -29169,6 +29470,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols 
 
 ![教学画面](frames/frame_00011165_0000372167.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00011165_0000372167.json) · [视觉原始输出](evidence/visual/frame_00011165_0000372167.json)
+
 OCR 原文：
 
 ```text
@@ -29441,6 +29744,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols 
 ### 画面 00:06:21
 
 ![教学画面](frames/frame_00011436_0000381200.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00011436_0000381200.json) · [视觉原始输出](evidence/visual/frame_00011436_0000381200.json)
 
 OCR 原文：
 
@@ -29768,6 +30073,8 @@ Man sitting on a wooden table using a tablet device, with no visible text or sym
 
 ![教学画面](frames/frame_00011445_0000381500.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00011445_0000381500.json) · [视觉原始输出](evidence/visual/frame_00011445_0000381500.json)
+
 OCR 原文：
 
 ```text
@@ -30044,6 +30351,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00011445_0000381500.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00011445_0000381500.json) · [视觉原始输出](evidence/visual/frame_00011445_0000381500.json)
+
 OCR 原文：
 
 ```text
@@ -30309,6 +30618,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 ### 画面 00:06:34
 
 ![教学画面](frames/frame_00011828_0000394267.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00011828_0000394267.json) · [视觉原始输出](evidence/visual/frame_00011828_0000394267.json)
 
 OCR 原文：
 
@@ -30588,6 +30899,8 @@ Man sitting at a wooden table using a tablet device, with no visible text or sym
 ### 画面 00:06:34
 
 ![教学画面](frames/frame_00011832_0000394400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00011832_0000394400.json) · [视觉原始输出](evidence/visual/frame_00011832_0000394400.json)
 
 OCR 原文：
 
@@ -30915,6 +31228,8 @@ Man sitting on a wooden table using a tablet device, with no visible text or sym
 
 ![教学画面](frames/frame_00011846_0000394867.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00011846_0000394867.json) · [视觉原始输出](evidence/visual/frame_00011846_0000394867.json)
+
 OCR 原文：
 
 ```text
@@ -31234,6 +31549,8 @@ Man sitting at a wooden table using a tablet device, with no visible text or sym
 
 ![教学画面](frames/frame_00012240_0000408000.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00012240_0000408000.json) · [视觉原始输出](evidence/visual/frame_00012240_0000408000.json)
+
 OCR 原文：
 
 ```text
@@ -31536,6 +31853,8 @@ et.
 ### 画面 00:06:48
 
 ![教学画面](frames/frame_00012247_0000408233.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00012247_0000408233.json) · [视觉原始输出](evidence/visual/frame_00012247_0000408233.json)
 
 OCR 原文：
 
@@ -31891,6 +32210,8 @@ et.
 
 ![教学画面](frames/frame_00012277_0000409233.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00012277_0000409233.json) · [视觉原始输出](evidence/visual/frame_00012277_0000409233.json)
+
 OCR 原文：
 
 ```text
@@ -32164,6 +32485,8 @@ iet.
 ### 画面 00:06:49
 
 ![教学画面](frames/frame_00012282_0000409400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00012282_0000409400.json) · [视觉原始输出](evidence/visual/frame_00012282_0000409400.json)
 
 OCR 原文：
 
@@ -32477,6 +32800,8 @@ jet.
 
 ![教学画面](frames/frame_00012300_0000410000.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00012300_0000410000.json) · [视觉原始输出](evidence/visual/frame_00012300_0000410000.json)
+
 OCR 原文：
 
 ```text
@@ -32785,6 +33110,8 @@ jet.
 ### 画面 00:06:57
 
 ![教学画面](frames/frame_00012519_0000417300.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00012519_0000417300.json) · [视觉原始输出](evidence/visual/frame_00012519_0000417300.json)
 
 OCR 原文：
 
@@ -33111,6 +33438,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00012519_0000417300.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00012519_0000417300.json) · [视觉原始输出](evidence/visual/frame_00012519_0000417300.json)
+
 OCR 原文：
 
 ```text
@@ -33425,6 +33754,8 @@ et.
 ### 画面 00:07:06
 
 ![教学画面](frames/frame_00012798_0000426600.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00012798_0000426600.json) · [视觉原始输出](evidence/visual/frame_00012798_0000426600.json)
 
 OCR 原文：
 
@@ -33766,6 +34097,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 ### 画面 00:07:06
 
 ![教学画面](frames/frame_00012807_0000426900.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00012807_0000426900.json) · [视觉原始输出](evidence/visual/frame_00012807_0000426900.json)
 
 OCR 原文：
 
@@ -34112,6 +34445,8 @@ Man sitting on a wooden table using a tablet device, with no visible text or sym
 ### 画面 00:07:16
 
 ![教学画面](frames/frame_00013100_0000436667.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00013100_0000436667.json) · [视觉原始输出](evidence/visual/frame_00013100_0000436667.json)
 
 OCR 原文：
 
@@ -34501,6 +34836,8 @@ jet.
 
 ![教学画面](frames/frame_00013117_0000437233.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00013117_0000437233.json) · [视觉原始输出](evidence/visual/frame_00013117_0000437233.json)
+
 OCR 原文：
 
 ```text
@@ -34806,6 +35143,8 @@ jet.
 ### 画面 00:07:18
 
 ![教学画面](frames/frame_00013146_0000438200.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00013146_0000438200.json) · [视觉原始输出](evidence/visual/frame_00013146_0000438200.json)
 
 OCR 原文：
 
@@ -35237,6 +35576,8 @@ jet.
 
 ![教学画面](frames/frame_00013147_0000438233.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00013147_0000438233.json) · [视觉原始输出](evidence/visual/frame_00013147_0000438233.json)
+
 OCR 原文：
 
 ```text
@@ -35611,6 +35952,8 @@ jet.
 
 ![教学画面](frames/frame_00013155_0000438500.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00013155_0000438500.json) · [视觉原始输出](evidence/visual/frame_00013155_0000438500.json)
+
 OCR 原文：
 
 ```text
@@ -35982,6 +36325,8 @@ jet.
 
 ![教学画面](frames/frame_00013467_0000448900.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00013467_0000448900.json) · [视觉原始输出](evidence/visual/frame_00013467_0000448900.json)
+
 OCR 原文：
 
 ```text
@@ -36140,6 +36485,8 @@ QR code with embedded logo in center, likely for digital linking or authenticati
 ### 画面 00:07:29
 
 ![教学画面](frames/frame_00013476_0000449200.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00013476_0000449200.json) · [视觉原始输出](evidence/visual/frame_00013476_0000449200.json)
 
 OCR 原文：
 
@@ -36310,6 +36657,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00013476_0000449200.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00013476_0000449200.json) · [视觉原始输出](evidence/visual/frame_00013476_0000449200.json)
+
 OCR 原文：
 
 ```text
@@ -36469,6 +36818,8 @@ QR code with embedded logo in center, likely for digital linking or authenticati
 
 ![教学画面](frames/frame_00013617_0000453900.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00013617_0000453900.json) · [视觉原始输出](evidence/visual/frame_00013617_0000453900.json)
+
 OCR 原文：
 
 ```text
@@ -36547,6 +36898,8 @@ Forrest Gump
 ### 画面 00:07:34
 
 ![教学画面](frames/frame_00013626_0000454200.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00013626_0000454200.json) · [视觉原始输出](evidence/visual/frame_00013626_0000454200.json)
 
 OCR 原文：
 
@@ -36633,6 +36986,8 @@ Forrest Gump
 
 ![教学画面](frames/frame_00013872_0000462400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00013872_0000462400.json) · [视觉原始输出](evidence/visual/frame_00013872_0000462400.json)
+
 OCR 原文：
 
 ```text
@@ -36711,6 +37066,8 @@ Forrest Gump
 ### 画面 00:07:43
 
 ![教学画面](frames/frame_00013902_0000463400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00013902_0000463400.json) · [视觉原始输出](evidence/visual/frame_00013902_0000463400.json)
 
 OCR 原文：
 
@@ -36819,6 +37176,8 @@ Forrest Gump
 
 ![教学画面](frames/frame_00013932_0000464400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00013932_0000464400.json) · [视觉原始输出](evidence/visual/frame_00013932_0000464400.json)
+
 OCR 原文：
 
 ```text
@@ -36903,6 +37262,8 @@ Forrest Gump
 ### 画面 00:07:45
 
 ![教学画面](frames/frame_00013962_0000465400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00013962_0000465400.json) · [视觉原始输出](evidence/visual/frame_00013962_0000465400.json)
 
 OCR 原文：
 
@@ -36992,6 +37353,8 @@ Forrest Gump
 ### 画面 00:07:46
 
 ![教学画面](frames/frame_00013992_0000466400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00013992_0000466400.json) · [视觉原始输出](evidence/visual/frame_00013992_0000466400.json)
 
 OCR 原文：
 
@@ -37086,6 +37449,8 @@ Forrest Gump
 
 ![教学画面](frames/frame_00014022_0000467400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00014022_0000467400.json) · [视觉原始输出](evidence/visual/frame_00014022_0000467400.json)
+
 OCR 原文：
 
 ```text
@@ -37179,6 +37544,8 @@ Forrest Gump
 
 ![教学画面](frames/frame_00014052_0000468400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00014052_0000468400.json) · [视觉原始输出](evidence/visual/frame_00014052_0000468400.json)
+
 OCR 原文：
 
 ```text
@@ -37271,6 +37638,8 @@ Forrest Gump
 ### 画面 00:07:49
 
 ![教学画面](frames/frame_00014082_0000469400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00014082_0000469400.json) · [视觉原始输出](evidence/visual/frame_00014082_0000469400.json)
 
 OCR 原文：
 
@@ -37371,6 +37740,8 @@ Forrest Gump
 
 ![教学画面](frames/frame_00014112_0000470400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00014112_0000470400.json) · [视觉原始输出](evidence/visual/frame_00014112_0000470400.json)
+
 OCR 原文：
 
 ```text
@@ -37463,6 +37834,8 @@ Forrest Gump
 ### 画面 00:07:51
 
 ![教学画面](frames/frame_00014142_0000471400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00014142_0000471400.json) · [视觉原始输出](evidence/visual/frame_00014142_0000471400.json)
 
 OCR 原文：
 
@@ -37557,6 +37930,8 @@ Forrest Gump
 
 ![教学画面](frames/frame_00014172_0000472400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00014172_0000472400.json) · [视觉原始输出](evidence/visual/frame_00014172_0000472400.json)
+
 OCR 原文：
 
 ```text
@@ -37647,6 +38022,8 @@ Forrest Gump
 
 ![教学画面](frames/frame_00014202_0000473400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00014202_0000473400.json) · [视觉原始输出](evidence/visual/frame_00014202_0000473400.json)
+
 OCR 原文：
 
 ```text
@@ -37730,6 +38107,8 @@ Forrest Gump
 ### 画面 00:07:54
 
 ![教学画面](frames/frame_00014228_0000474267.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00014228_0000474267.json) · [视觉原始输出](evidence/visual/frame_00014228_0000474267.json)
 
 OCR 原文：
 
@@ -37831,6 +38210,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00014228_0000474267.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00014228_0000474267.json) · [视觉原始输出](evidence/visual/frame_00014228_0000474267.json)
+
 OCR 原文：
 
 ```text
@@ -37920,6 +38301,8 @@ Forrest Gump
 ### 画面 00:08:01
 
 ![教学画面](frames/frame_00014454_0000481800.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00014454_0000481800.json) · [视觉原始输出](evidence/visual/frame_00014454_0000481800.json)
 
 OCR 原文：
 
@@ -38045,6 +38428,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 
 ![教学画面](frames/frame_00014463_0000482100.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00014463_0000482100.json) · [视觉原始输出](evidence/visual/frame_00014463_0000482100.json)
+
 OCR 原文：
 
 ```text
@@ -38169,6 +38554,8 @@ Man sitting on a wooden table using a tablet device, gesturing with his hand (no
 ### 画面 00:08:12
 
 ![教学画面](frames/frame_00014777_0000492567.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00014777_0000492567.json) · [视觉原始输出](evidence/visual/frame_00014777_0000492567.json)
 
 OCR 原文：
 
@@ -38344,6 +38731,8 @@ Man sitting on a wooden table using a tablet device, gesturing with his hand (no
 
 ![教学画面](frames/frame_00014789_0000492967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00014789_0000492967.json) · [视觉原始输出](evidence/visual/frame_00014789_0000492967.json)
+
 OCR 原文：
 
 ```text
@@ -38515,6 +38904,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 
 ![教学画面](frames/frame_00014902_0000496733.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00014902_0000496733.json) · [视觉原始输出](evidence/visual/frame_00014902_0000496733.json)
+
 OCR 原文：
 
 ```text
@@ -38668,6 +39059,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 ### 画面 00:08:17
 
 ![教学画面](frames/frame_00014911_0000497033.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00014911_0000497033.json) · [视觉原始输出](evidence/visual/frame_00014911_0000497033.json)
 
 OCR 原文：
 
@@ -38840,6 +39233,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:08:22
 
 ![教学画面](frames/frame_00015083_0000502767.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00015083_0000502767.json) · [视觉原始输出](evidence/visual/frame_00015083_0000502767.json)
 
 OCR 原文：
 
@@ -39018,6 +39413,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:08:23
 
 ![教学画面](frames/frame_00015093_0000503100.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00015093_0000503100.json) · [视觉原始输出](evidence/visual/frame_00015093_0000503100.json)
 
 OCR 原文：
 
@@ -39220,6 +39617,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00015093_0000503100.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00015093_0000503100.json) · [视觉原始输出](evidence/visual/frame_00015093_0000503100.json)
+
 OCR 原文：
 
 ```text
@@ -39411,6 +39810,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 
 ![教学画面](frames/frame_00015410_0000513667.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00015410_0000513667.json) · [视觉原始输出](evidence/visual/frame_00015410_0000513667.json)
+
 OCR 原文：
 
 ```text
@@ -39581,6 +39982,8 @@ Man wearing glasses and a beige shirt sitting on a wooden table using a tablet d
 ### 画面 00:08:33
 
 ![教学画面](frames/frame_00015419_0000513967.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00015419_0000513967.json) · [视觉原始输出](evidence/visual/frame_00015419_0000513967.json)
 
 OCR 原文：
 
@@ -39770,6 +40173,8 @@ Man sitting at a wooden table using a tablet with a screen and microphone, no vi
 ### 画面 00:08:41
 
 ![教学画面](frames/frame_00015659_0000521967.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00015659_0000521967.json) · [视觉原始输出](evidence/visual/frame_00015659_0000521967.json)
 
 OCR 原文：
 
@@ -39973,6 +40378,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 
 ![教学画面](frames/frame_00015668_0000522267.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00015668_0000522267.json) · [视觉原始输出](evidence/visual/frame_00015668_0000522267.json)
+
 OCR 原文：
 
 ```text
@@ -40152,6 +40559,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:08:52
 
 ![教学画面](frames/frame_00015970_0000532333.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00015970_0000532333.json) · [视觉原始输出](evidence/visual/frame_00015970_0000532333.json)
 
 OCR 原文：
 
@@ -40362,6 +40771,8 @@ Man sitting on a wooden table using a tablet device, gesturing with her hand (no
 
 ![教学画面](frames/frame_00015985_0000532833.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00015985_0000532833.json) · [视觉原始输出](evidence/visual/frame_00015985_0000532833.json)
+
 OCR 原文：
 
 ```text
@@ -40540,6 +40951,8 @@ Man sitting on a wooden table using a tablet device, gesturing with her hand (no
 
 ![教学画面](frames/frame_00015994_0000533133.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00015994_0000533133.json) · [视觉原始输出](evidence/visual/frame_00015994_0000533133.json)
+
 OCR 原文：
 
 ```text
@@ -40715,6 +41128,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:08:54
 
 ![教学画面](frames/frame_00016024_0000534133.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00016024_0000534133.json) · [视觉原始输出](evidence/visual/frame_00016024_0000534133.json)
 
 OCR 原文：
 
@@ -40915,6 +41330,8 @@ Man sitting on a wooden table using a tablet device, gesturing with her hand (no
 ### 画面 00:08:55
 
 ![教学画面](frames/frame_00016050_0000535000.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00016050_0000535000.json) · [视觉原始输出](evidence/visual/frame_00016050_0000535000.json)
 
 OCR 原文：
 
@@ -41148,6 +41565,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00016050_0000535000.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00016050_0000535000.json) · [视觉原始输出](evidence/visual/frame_00016050_0000535000.json)
+
 OCR 原文：
 
 ```text
@@ -41370,6 +41789,8 @@ Man sitting on a wooden table using a tablet device, gesturing with her hand (no
 
 ![教学画面](frames/frame_00016379_0000545967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00016379_0000545967.json) · [视觉原始输出](evidence/visual/frame_00016379_0000545967.json)
+
 OCR 原文：
 
 ```text
@@ -41504,6 +41925,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 
 ![教学画面](frames/frame_00016389_0000546300.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00016389_0000546300.json) · [视觉原始输出](evidence/visual/frame_00016389_0000546300.json)
+
 OCR 原文：
 
 ```text
@@ -41618,6 +42041,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:09:11
 
 ![教学画面](frames/frame_00016539_0000551300.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00016539_0000551300.json) · [视觉原始输出](evidence/visual/frame_00016539_0000551300.json)
 
 OCR 原文：
 
@@ -41789,6 +42214,8 @@ Man sitting at a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00016556_0000551867.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00016556_0000551867.json) · [视觉原始输出](evidence/visual/frame_00016556_0000551867.json)
+
 OCR 原文：
 
 ```text
@@ -41914,6 +42341,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:09:16
 
 ![教学画面](frames/frame_00016705_0000556833.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00016705_0000556833.json) · [视觉原始输出](evidence/visual/frame_00016705_0000556833.json)
 
 OCR 原文：
 
@@ -42051,6 +42480,8 @@ Man sitting at a wooden table using a tablet with a screen and cable, no visible
 ### 画面 00:09:17
 
 ![教学画面](frames/frame_00016714_0000557133.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00016714_0000557133.json) · [视觉原始输出](evidence/visual/frame_00016714_0000557133.json)
 
 OCR 原文：
 
@@ -42200,6 +42631,8 @@ Man sitting on a wooden table using a tablet with a screen and cable, no visible
 ### 画面 00:09:20
 
 ![教学画面](frames/frame_00016822_0000560733.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00016822_0000560733.json) · [视觉原始输出](evidence/visual/frame_00016822_0000560733.json)
 
 OCR 原文：
 
@@ -42363,6 +42796,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:09:21
 
 ![教学画面](frames/frame_00016835_0000561167.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00016835_0000561167.json) · [视觉原始输出](evidence/visual/frame_00016835_0000561167.json)
 
 OCR 原文：
 
@@ -42531,6 +42966,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:09:22
 
 ![教学画面](frames/frame_00016872_0000562400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00016872_0000562400.json) · [视觉原始输出](evidence/visual/frame_00016872_0000562400.json)
 
 OCR 原文：
 
@@ -42722,6 +43159,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00016892_0000563067.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00016892_0000563067.json) · [视觉原始输出](evidence/visual/frame_00016892_0000563067.json)
+
 OCR 原文：
 
 ```text
@@ -42884,6 +43323,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00016935_0000564500.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00016935_0000564500.json) · [视觉原始输出](evidence/visual/frame_00016935_0000564500.json)
+
 OCR 原文：
 
 ```text
@@ -43026,6 +43467,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:09:24
 
 ![教学画面](frames/frame_00016944_0000564800.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00016944_0000564800.json) · [视觉原始输出](evidence/visual/frame_00016944_0000564800.json)
 
 OCR 原文：
 
@@ -43194,6 +43637,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:09:27
 
 ![教学画面](frames/frame_00017021_0000567367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00017021_0000567367.json) · [视觉原始输出](evidence/visual/frame_00017021_0000567367.json)
 
 OCR 原文：
 
@@ -43387,6 +43832,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:09:27
 
 ![教学画面](frames/frame_00017030_0000567667.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00017030_0000567667.json) · [视觉原始输出](evidence/visual/frame_00017030_0000567667.json)
 
 OCR 原文：
 
@@ -43599,6 +44046,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00017030_0000567667.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00017030_0000567667.json) · [视觉原始输出](evidence/visual/frame_00017030_0000567667.json)
+
 OCR 原文：
 
 ```text
@@ -43800,6 +44249,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 
 ![教学画面](frames/frame_00017319_0000577300.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00017319_0000577300.json) · [视觉原始输出](evidence/visual/frame_00017319_0000577300.json)
+
 OCR 原文：
 
 ```text
@@ -43994,6 +44445,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 
 ![教学画面](frames/frame_00017331_0000577700.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00017331_0000577700.json) · [视觉原始输出](evidence/visual/frame_00017331_0000577700.json)
+
 OCR 原文：
 
 ```text
@@ -44176,6 +44629,8 @@ Man wearing glasses and a beige shirt sitting on a wooden table with a tablet an
 ### 画面 00:09:43
 
 ![教学画面](frames/frame_00017494_0000583133.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00017494_0000583133.json) · [视觉原始输出](evidence/visual/frame_00017494_0000583133.json)
 
 OCR 原文：
 
@@ -44405,6 +44860,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00017505_0000583500.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00017505_0000583500.json) · [视觉原始输出](evidence/visual/frame_00017505_0000583500.json)
+
 OCR 原文：
 
 ```text
@@ -44626,6 +45083,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:09:45
 
 ![教学画面](frames/frame_00017566_0000585533.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00017566_0000585533.json) · [视觉原始输出](evidence/visual/frame_00017566_0000585533.json)
 
 OCR 原文：
 
@@ -44852,6 +45311,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 
 ![教学画面](frames/frame_00017575_0000585833.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00017575_0000585833.json) · [视觉原始输出](evidence/visual/frame_00017575_0000585833.json)
+
 OCR 原文：
 
 ```text
@@ -45053,6 +45514,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 ### 画面 00:09:48
 
 ![教学画面](frames/frame_00017650_0000588333.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00017650_0000588333.json) · [视觉原始输出](evidence/visual/frame_00017650_0000588333.json)
 
 OCR 原文：
 
@@ -45283,6 +45746,8 @@ Man sitting on a wooden table with a tablet and microphone, gesturing while spea
 
 ![教学画面](frames/frame_00017666_0000588867.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00017666_0000588867.json) · [视觉原始输出](evidence/visual/frame_00017666_0000588867.json)
+
 OCR 原文：
 
 ```text
@@ -45454,6 +45919,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:09:49
 
 ![教学画面](frames/frame_00017678_0000589267.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00017678_0000589267.json) · [视觉原始输出](evidence/visual/frame_00017678_0000589267.json)
 
 OCR 原文：
 
@@ -45627,6 +46094,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:09:54
 
 ![教学画面](frames/frame_00017847_0000594900.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00017847_0000594900.json) · [视觉原始输出](evidence/visual/frame_00017847_0000594900.json)
 
 OCR 原文：
 
@@ -45846,6 +46315,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00017867_0000595567.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00017867_0000595567.json) · [视觉原始输出](evidence/visual/frame_00017867_0000595567.json)
+
 OCR 原文：
 
 ```text
@@ -46024,6 +46495,8 @@ Man sitting on a wooden stool using a tablet device (no visible text or symbols)
 ### 画面 00:09:56
 
 ![教学画面](frames/frame_00017908_0000596933.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00017908_0000596933.json) · [视觉原始输出](evidence/visual/frame_00017908_0000596933.json)
 
 OCR 原文：
 
@@ -46270,6 +46743,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00017925_0000597500.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00017925_0000597500.json) · [视觉原始输出](evidence/visual/frame_00017925_0000597500.json)
+
 OCR 原文：
 
 ```text
@@ -46500,6 +46975,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00017925_0000597500.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00017925_0000597500.json) · [视觉原始输出](evidence/visual/frame_00017925_0000597500.json)
+
 OCR 原文：
 
 ```text
@@ -46719,6 +47196,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:10:01
 
 ![教学画面](frames/frame_00018043_0000601433.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00018043_0000601433.json) · [视觉原始输出](evidence/visual/frame_00018043_0000601433.json)
 
 OCR 原文：
 
@@ -46958,6 +47437,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00018052_0000601733.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00018052_0000601733.json) · [视觉原始输出](evidence/visual/frame_00018052_0000601733.json)
+
 OCR 原文：
 
 ```text
@@ -47191,6 +47672,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:10:08
 
 ![教学画面](frames/frame_00018259_0000608633.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00018259_0000608633.json) · [视觉原始输出](evidence/visual/frame_00018259_0000608633.json)
 
 OCR 原文：
 
@@ -47441,6 +47924,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00018262_0000608733.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00018262_0000608733.json) · [视觉原始输出](evidence/visual/frame_00018262_0000608733.json)
+
 OCR 原文：
 
 ```text
@@ -47689,6 +48174,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00018272_0000609067.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00018272_0000609067.json) · [视觉原始输出](evidence/visual/frame_00018272_0000609067.json)
+
 OCR 原文：
 
 ```text
@@ -47877,6 +48364,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:10:12
 
 ![教学画面](frames/frame_00018372_0000612400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00018372_0000612400.json) · [视觉原始输出](evidence/visual/frame_00018372_0000612400.json)
 
 OCR 原文：
 
@@ -48130,6 +48619,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:10:12
 
 ![教学画面](frames/frame_00018381_0000612700.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00018381_0000612700.json) · [视觉原始输出](evidence/visual/frame_00018381_0000612700.json)
 
 OCR 原文：
 
@@ -48395,6 +48886,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00018523_0000617433.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00018523_0000617433.json) · [视觉原始输出](evidence/visual/frame_00018523_0000617433.json)
+
 OCR 原文：
 
 ```text
@@ -48626,6 +49119,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:10:17
 
 ![教学画面](frames/frame_00018535_0000617833.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00018535_0000617833.json) · [视觉原始输出](evidence/visual/frame_00018535_0000617833.json)
 
 OCR 原文：
 
@@ -48885,6 +49380,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 
 ![教学画面](frames/frame_00018798_0000626600.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00018798_0000626600.json) · [视觉原始输出](evidence/visual/frame_00018798_0000626600.json)
+
 OCR 原文：
 
 ```text
@@ -49070,6 +49567,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00018800_0000626667.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00018800_0000626667.json) · [视觉原始输出](evidence/visual/frame_00018800_0000626667.json)
+
 OCR 原文：
 
 ```text
@@ -49142,6 +49641,8 @@ The Matrix
 ### 画面 00:10:26
 
 ![教学画面](frames/frame_00018809_0000626967.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00018809_0000626967.json) · [视觉原始输出](evidence/visual/frame_00018809_0000626967.json)
 
 OCR 原文：
 
@@ -49225,6 +49726,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00018809_0000626967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00018809_0000626967.json) · [视觉原始输出](evidence/visual/frame_00018809_0000626967.json)
+
 OCR 原文：
 
 ```text
@@ -49296,6 +49799,8 @@ The Matrix
 ### 画面 00:10:34
 
 ![教学画面](frames/frame_00019031_0000634367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019031_0000634367.json) · [视觉原始输出](evidence/visual/frame_00019031_0000634367.json)
 
 OCR 原文：
 
@@ -49382,6 +49887,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019037_0000634567.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019037_0000634567.json) · [视觉原始输出](evidence/visual/frame_00019037_0000634567.json)
+
 OCR 原文：
 
 ```text
@@ -49453,6 +49960,8 @@ The Matrix
 ### 画面 00:10:35
 
 ![教学画面](frames/frame_00019061_0000635367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019061_0000635367.json) · [视觉原始输出](evidence/visual/frame_00019061_0000635367.json)
 
 OCR 原文：
 
@@ -49532,6 +50041,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019067_0000635567.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019067_0000635567.json) · [视觉原始输出](evidence/visual/frame_00019067_0000635567.json)
+
 OCR 原文：
 
 ```text
@@ -49609,6 +50120,8 @@ The Matrix
 ### 画面 00:10:36
 
 ![教学画面](frames/frame_00019091_0000636367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019091_0000636367.json) · [视觉原始输出](evidence/visual/frame_00019091_0000636367.json)
 
 OCR 原文：
 
@@ -49709,6 +50222,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019097_0000636567.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019097_0000636567.json) · [视觉原始输出](evidence/visual/frame_00019097_0000636567.json)
+
 OCR 原文：
 
 ```text
@@ -49793,6 +50308,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019121_0000637367.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019121_0000637367.json) · [视觉原始输出](evidence/visual/frame_00019121_0000637367.json)
+
 OCR 原文：
 
 ```text
@@ -49871,6 +50388,8 @@ The Matrix
 ### 画面 00:10:37
 
 ![教学画面](frames/frame_00019127_0000637567.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019127_0000637567.json) · [视觉原始输出](evidence/visual/frame_00019127_0000637567.json)
 
 OCR 原文：
 
@@ -49963,6 +50482,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019151_0000638367.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019151_0000638367.json) · [视觉原始输出](evidence/visual/frame_00019151_0000638367.json)
+
 OCR 原文：
 
 ```text
@@ -50039,6 +50560,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019157_0000638567.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019157_0000638567.json) · [视觉原始输出](evidence/visual/frame_00019157_0000638567.json)
+
 OCR 原文：
 
 ```text
@@ -50114,6 +50637,8 @@ The Matrix
 ### 画面 00:10:39
 
 ![教学画面](frames/frame_00019181_0000639367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019181_0000639367.json) · [视觉原始输出](evidence/visual/frame_00019181_0000639367.json)
 
 OCR 原文：
 
@@ -50208,6 +50733,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019187_0000639567.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019187_0000639567.json) · [视觉原始输出](evidence/visual/frame_00019187_0000639567.json)
+
 OCR 原文：
 
 ```text
@@ -50287,6 +50814,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019211_0000640367.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019211_0000640367.json) · [视觉原始输出](evidence/visual/frame_00019211_0000640367.json)
+
 OCR 原文：
 
 ```text
@@ -50360,6 +50889,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019217_0000640567.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019217_0000640567.json) · [视觉原始输出](evidence/visual/frame_00019217_0000640567.json)
+
 OCR 原文：
 
 ```text
@@ -50432,6 +50963,8 @@ The Matrix
 ### 画面 00:10:41
 
 ![教学画面](frames/frame_00019241_0000641367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019241_0000641367.json) · [视觉原始输出](evidence/visual/frame_00019241_0000641367.json)
 
 OCR 原文：
 
@@ -50520,6 +51053,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019247_0000641567.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019247_0000641567.json) · [视觉原始输出](evidence/visual/frame_00019247_0000641567.json)
+
 OCR 原文：
 
 ```text
@@ -50599,6 +51134,8 @@ The Matrix
 ### 画面 00:10:42
 
 ![教学画面](frames/frame_00019271_0000642367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019271_0000642367.json) · [视觉原始输出](evidence/visual/frame_00019271_0000642367.json)
 
 OCR 原文：
 
@@ -50685,6 +51222,8 @@ The Matrix
 ### 画面 00:10:42
 
 ![教学画面](frames/frame_00019277_0000642567.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019277_0000642567.json) · [视觉原始输出](evidence/visual/frame_00019277_0000642567.json)
 
 OCR 原文：
 
@@ -50773,6 +51312,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019301_0000643367.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019301_0000643367.json) · [视觉原始输出](evidence/visual/frame_00019301_0000643367.json)
+
 OCR 原文：
 
 ```text
@@ -50855,6 +51396,8 @@ The Matrix
 ### 画面 00:10:43
 
 ![教学画面](frames/frame_00019307_0000643567.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019307_0000643567.json) · [视觉原始输出](evidence/visual/frame_00019307_0000643567.json)
 
 OCR 原文：
 
@@ -50943,6 +51486,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019331_0000644367.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019331_0000644367.json) · [视觉原始输出](evidence/visual/frame_00019331_0000644367.json)
+
 OCR 原文：
 
 ```text
@@ -51020,6 +51565,8 @@ The Matrix
 ### 画面 00:10:44
 
 ![教学画面](frames/frame_00019337_0000644567.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019337_0000644567.json) · [视觉原始输出](evidence/visual/frame_00019337_0000644567.json)
 
 OCR 原文：
 
@@ -51100,6 +51647,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019361_0000645367.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019361_0000645367.json) · [视觉原始输出](evidence/visual/frame_00019361_0000645367.json)
+
 OCR 原文：
 
 ```text
@@ -51175,6 +51724,8 @@ The Matrix
 ### 画面 00:10:45
 
 ![教学画面](frames/frame_00019364_0000645467.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019364_0000645467.json) · [视觉原始输出](evidence/visual/frame_00019364_0000645467.json)
 
 OCR 原文：
 
@@ -51266,6 +51817,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019391_0000646367.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019391_0000646367.json) · [视觉原始输出](evidence/visual/frame_00019391_0000646367.json)
+
 OCR 原文：
 
 ```text
@@ -51331,6 +51884,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019394_0000646467.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019394_0000646467.json) · [视觉原始输出](evidence/visual/frame_00019394_0000646467.json)
+
 OCR 原文：
 
 ```text
@@ -51394,6 +51949,8 @@ The Matrix
 ### 画面 00:10:47
 
 ![教学画面](frames/frame_00019421_0000647367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019421_0000647367.json) · [视觉原始输出](evidence/visual/frame_00019421_0000647367.json)
 
 OCR 原文：
 
@@ -51475,6 +52032,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019424_0000647467.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019424_0000647467.json) · [视觉原始输出](evidence/visual/frame_00019424_0000647467.json)
+
 OCR 原文：
 
 ```text
@@ -51555,6 +52114,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019451_0000648367.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019451_0000648367.json) · [视觉原始输出](evidence/visual/frame_00019451_0000648367.json)
+
 OCR 原文：
 
 ```text
@@ -51633,6 +52194,8 @@ The Matrix
 ### 画面 00:10:48
 
 ![教学画面](frames/frame_00019454_0000648467.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019454_0000648467.json) · [视觉原始输出](evidence/visual/frame_00019454_0000648467.json)
 
 OCR 原文：
 
@@ -51713,6 +52276,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019475_0000649167.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019475_0000649167.json) · [视觉原始输出](evidence/visual/frame_00019475_0000649167.json)
+
 OCR 原文：
 
 ```text
@@ -51790,6 +52355,8 @@ The Matrix
 ### 画面 00:10:49
 
 ![教学画面](frames/frame_00019481_0000649367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019481_0000649367.json) · [视觉原始输出](evidence/visual/frame_00019481_0000649367.json)
 
 OCR 原文：
 
@@ -51869,6 +52436,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019482_0000649400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019482_0000649400.json) · [视觉原始输出](evidence/visual/frame_00019482_0000649400.json)
+
 OCR 原文：
 
 ```text
@@ -51947,6 +52516,8 @@ The Matrix
 ### 画面 00:10:50
 
 ![教学画面](frames/frame_00019511_0000650367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019511_0000650367.json) · [视觉原始输出](evidence/visual/frame_00019511_0000650367.json)
 
 OCR 原文：
 
@@ -52041,6 +52612,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019512_0000650400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019512_0000650400.json) · [视觉原始输出](evidence/visual/frame_00019512_0000650400.json)
+
 OCR 原文：
 
 ```text
@@ -52119,6 +52692,8 @@ The Matrix
 ### 画面 00:10:51
 
 ![教学画面](frames/frame_00019541_0000651367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019541_0000651367.json) · [视觉原始输出](evidence/visual/frame_00019541_0000651367.json)
 
 OCR 原文：
 
@@ -52210,6 +52785,8 @@ The Matrix
 ### 画面 00:10:51
 
 ![教学画面](frames/frame_00019542_0000651400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019542_0000651400.json) · [视觉原始输出](evidence/visual/frame_00019542_0000651400.json)
 
 OCR 原文：
 
@@ -52303,6 +52880,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019571_0000652367.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019571_0000652367.json) · [视觉原始输出](evidence/visual/frame_00019571_0000652367.json)
+
 OCR 原文：
 
 ```text
@@ -52373,6 +52952,8 @@ The Matrix
 ### 画面 00:10:52
 
 ![教学画面](frames/frame_00019572_0000652400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019572_0000652400.json) · [视觉原始输出](evidence/visual/frame_00019572_0000652400.json)
 
 OCR 原文：
 
@@ -52458,6 +53039,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019576_0000652533.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019576_0000652533.json) · [视觉原始输出](evidence/visual/frame_00019576_0000652533.json)
+
 OCR 原文：
 
 ```text
@@ -52536,6 +53119,8 @@ The Matrix
 
 ![教学画面](frames/frame_00019695_0000656500.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019695_0000656500.json) · [视觉原始输出](evidence/visual/frame_00019695_0000656500.json)
+
 OCR 原文：
 
 ```text
@@ -52611,6 +53196,8 @@ Maverick
 ### 画面 00:10:56
 
 ![教学画面](frames/frame_00019704_0000656800.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019704_0000656800.json) · [视觉原始输出](evidence/visual/frame_00019704_0000656800.json)
 
 OCR 原文：
 
@@ -52688,15 +53275,25 @@ Maverick
 
 taken?这个座位让人拿走了吗？不是，这个座位有人坐吗？OK，我们一起看一下。Is this seat taken? It is now. My name is Annabelle Bransford. What did they call you? I'm Brett Maverick, ma'am. I'm pleased to meet you.好，你想坐在这个地方要问一下，叫做Is this seat taken? Very good.好，接下来我们看下一个单词，跟一起读Play。大
 
-待复核：asr_disagreement_unresolved, raw_asr_disagreement, review_shorter_content_preserved_for_audit。
+待复核：asr_disagreement_unresolved, raw_asr_disagreement, review_shorter_content_preserved_for_audit, voiced_alignment_gap_reviewed。
 
 Whisper 原始候选：
 
 这个座位让人拿走了吗不是这个座位有人坐吗OK 我们一起看一下好 你想坐在这个地方要问一下叫做好 接下来我们看下一单词恭喜读play大家都了解这个单词是这个单词
 
+### 原音疑点复查 00:11:06–00:11:07
+
+下列候选含前后上下文，可能对应发音示范、对齐间隙或遗漏；没有直接当作新增原文插入主稿。
+
+Qwen 候选：座位有人坐吗？Okay，我们一起看一下。Is this seat taken？
+
+Whisper 候选：这个座位有人坐吗?OK,我们一起看一下
+
 ### 画面 00:10:56
 
 ![教学画面](frames/frame_00019704_0000656800.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019704_0000656800.json) · [视觉原始输出](evidence/visual/frame_00019704_0000656800.json)
 
 OCR 原文：
 
@@ -52773,6 +53370,8 @@ Maverick
 ### 画面 00:11:00
 
 ![教学画面](frames/frame_00019821_0000660700.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019821_0000660700.json) · [视觉原始输出](evidence/visual/frame_00019821_0000660700.json)
 
 OCR 原文：
 
@@ -52852,6 +53451,8 @@ Maverick
 
 ![教学画面](frames/frame_00019838_0000661267.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019838_0000661267.json) · [视觉原始输出](evidence/visual/frame_00019838_0000661267.json)
+
 OCR 原文：
 
 ```text
@@ -52930,6 +53531,8 @@ Maverick
 
 ![教学画面](frames/frame_00019855_0000661833.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019855_0000661833.json) · [视觉原始输出](evidence/visual/frame_00019855_0000661833.json)
+
 OCR 原文：
 
 ```text
@@ -53003,6 +53606,8 @@ Maverick
 ### 画面 00:11:03
 
 ![教学画面](frames/frame_00019897_0000663233.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019897_0000663233.json) · [视觉原始输出](evidence/visual/frame_00019897_0000663233.json)
 
 OCR 原文：
 
@@ -53081,6 +53686,8 @@ Maverick
 
 ![教学画面](frames/frame_00019927_0000664233.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019927_0000664233.json) · [视觉原始输出](evidence/visual/frame_00019927_0000664233.json)
+
 OCR 原文：
 
 ```text
@@ -53155,6 +53762,8 @@ Maverick
 
 ![教学画面](frames/frame_00019932_0000664400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019932_0000664400.json) · [视觉原始输出](evidence/visual/frame_00019932_0000664400.json)
+
 OCR 原文：
 
 ```text
@@ -53228,6 +53837,8 @@ Maverick
 ### 画面 00:11:06
 
 ![教学画面](frames/frame_00019996_0000666533.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00019996_0000666533.json) · [视觉原始输出](evidence/visual/frame_00019996_0000666533.json)
 
 OCR 原文：
 
@@ -53342,6 +53953,8 @@ Maverick
 
 ![教学画面](frames/frame_00019999_0000666633.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00019999_0000666633.json) · [视觉原始输出](evidence/visual/frame_00019999_0000666633.json)
+
 OCR 原文：
 
 ```text
@@ -53418,6 +54031,8 @@ Maverick
 ### 画面 00:11:07
 
 ![教学画面](frames/frame_00020026_0000667533.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020026_0000667533.json) · [视觉原始输出](evidence/visual/frame_00020026_0000667533.json)
 
 OCR 原文：
 
@@ -53508,6 +54123,8 @@ Maverick
 
 ![教学画面](frames/frame_00020029_0000667633.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020029_0000667633.json) · [视觉原始输出](evidence/visual/frame_00020029_0000667633.json)
+
 OCR 原文：
 
 ```text
@@ -53586,6 +54203,8 @@ Maverick
 ### 画面 00:11:08
 
 ![教学画面](frames/frame_00020048_0000668267.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020048_0000668267.json) · [视觉原始输出](evidence/visual/frame_00020048_0000668267.json)
 
 OCR 原文：
 
@@ -53666,6 +54285,8 @@ Maverick
 
 ![教学画面](frames/frame_00020056_0000668533.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020056_0000668533.json) · [视觉原始输出](evidence/visual/frame_00020056_0000668533.json)
+
 OCR 原文：
 
 ```text
@@ -53745,6 +54366,8 @@ Maverick
 ### 画面 00:11:08
 
 ![教学画面](frames/frame_00020060_0000668667.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020060_0000668667.json) · [视觉原始输出](evidence/visual/frame_00020060_0000668667.json)
 
 OCR 原文：
 
@@ -53831,6 +54454,8 @@ Maverick
 ### 画面 00:11:09
 
 ![教学画面](frames/frame_00020076_0000669200.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020076_0000669200.json) · [视觉原始输出](evidence/visual/frame_00020076_0000669200.json)
 
 OCR 原文：
 
@@ -53924,6 +54549,8 @@ Maverick
 
 ![教学画面](frames/frame_00020086_0000669533.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020086_0000669533.json) · [视觉原始输出](evidence/visual/frame_00020086_0000669533.json)
+
 OCR 原文：
 
 ```text
@@ -53996,6 +54623,8 @@ Maverick
 ### 画面 00:11:10
 
 ![教学画面](frames/frame_00020101_0000670033.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020101_0000670033.json) · [视觉原始输出](evidence/visual/frame_00020101_0000670033.json)
 
 OCR 原文：
 
@@ -54070,6 +54699,8 @@ Maverick
 
 ![教学画面](frames/frame_00020106_0000670200.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020106_0000670200.json) · [视觉原始输出](evidence/visual/frame_00020106_0000670200.json)
+
 OCR 原文：
 
 ```text
@@ -54139,6 +54770,8 @@ Maverick
 ### 画面 00:11:10
 
 ![教学画面](frames/frame_00020116_0000670533.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020116_0000670533.json) · [视觉原始输出](evidence/visual/frame_00020116_0000670533.json)
 
 OCR 原文：
 
@@ -54214,6 +54847,8 @@ Maverick
 
 ![教学画面](frames/frame_00020118_0000670600.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020118_0000670600.json) · [视觉原始输出](evidence/visual/frame_00020118_0000670600.json)
+
 OCR 原文：
 
 ```text
@@ -54287,6 +54922,8 @@ Maverick
 ### 画面 00:11:10
 
 ![教学画面](frames/frame_00020127_0000670900.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020127_0000670900.json) · [视觉原始输出](evidence/visual/frame_00020127_0000670900.json)
 
 OCR 原文：
 
@@ -54364,6 +55001,8 @@ Maverick
 
 ![教学画面](frames/frame_00020146_0000671533.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020146_0000671533.json) · [视觉原始输出](evidence/visual/frame_00020146_0000671533.json)
+
 OCR 原文：
 
 ```text
@@ -54439,6 +55078,8 @@ Maverick
 ### 画面 00:11:11
 
 ![教学画面](frames/frame_00020157_0000671900.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020157_0000671900.json) · [视觉原始输出](evidence/visual/frame_00020157_0000671900.json)
 
 OCR 原文：
 
@@ -54516,6 +55157,8 @@ Maverick
 
 ![教学画面](frames/frame_00020176_0000672533.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020176_0000672533.json) · [视觉原始输出](evidence/visual/frame_00020176_0000672533.json)
+
 OCR 原文：
 
 ```text
@@ -54591,6 +55234,8 @@ Maverick
 ### 画面 00:11:12
 
 ![教学画面](frames/frame_00020187_0000672900.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020187_0000672900.json) · [视觉原始输出](evidence/visual/frame_00020187_0000672900.json)
 
 OCR 原文：
 
@@ -54669,6 +55314,8 @@ Maverick
 
 ![教学画面](frames/frame_00020203_0000673433.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020203_0000673433.json) · [视觉原始输出](evidence/visual/frame_00020203_0000673433.json)
+
 OCR 原文：
 
 ```text
@@ -54740,6 +55387,8 @@ Maverick
 ### 画面 00:11:13
 
 ![教学画面](frames/frame_00020206_0000673533.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020206_0000673533.json) · [视觉原始输出](evidence/visual/frame_00020206_0000673533.json)
 
 OCR 原文：
 
@@ -54830,6 +55479,8 @@ Maverick
 ### 画面 00:11:14
 
 ![教学画面](frames/frame_00020233_0000674433.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020233_0000674433.json) · [视觉原始输出](evidence/visual/frame_00020233_0000674433.json)
 
 OCR 原文：
 
@@ -54925,6 +55576,8 @@ Maverick
 
 ![教学画面](frames/frame_00020236_0000674533.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020236_0000674533.json) · [视觉原始输出](evidence/visual/frame_00020236_0000674533.json)
+
 OCR 原文：
 
 ```text
@@ -55019,6 +55672,8 @@ Maverick
 
 ![教学画面](frames/frame_00020242_0000674733.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020242_0000674733.json) · [视觉原始输出](evidence/visual/frame_00020242_0000674733.json)
+
 OCR 原文：
 
 ```text
@@ -55099,6 +55754,8 @@ Maverick
 ### 画面 00:11:15
 
 ![教学画面](frames/frame_00020263_0000675433.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020263_0000675433.json) · [视觉原始输出](evidence/visual/frame_00020263_0000675433.json)
 
 OCR 原文：
 
@@ -55181,6 +55838,8 @@ Maverick
 
 ![教学画面](frames/frame_00020266_0000675533.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020266_0000675533.json) · [视觉原始输出](evidence/visual/frame_00020266_0000675533.json)
+
 OCR 原文：
 
 ```text
@@ -55261,6 +55920,8 @@ Maverick
 ### 画面 00:11:16
 
 ![教学画面](frames/frame_00020284_0000676133.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020284_0000676133.json) · [视觉原始输出](evidence/visual/frame_00020284_0000676133.json)
 
 OCR 原文：
 
@@ -55357,6 +56018,8 @@ Maverick
 
 ![教学画面](frames/frame_00020296_0000676533.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020296_0000676533.json) · [视觉原始输出](evidence/visual/frame_00020296_0000676533.json)
+
 OCR 原文：
 
 ```text
@@ -55449,6 +56112,8 @@ Maverick
 
 ![教学画面](frames/frame_00020313_0000677100.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020313_0000677100.json) · [视觉原始输出](evidence/visual/frame_00020313_0000677100.json)
+
 OCR 原文：
 
 ```text
@@ -55523,6 +56188,8 @@ Maverick
 ### 画面 00:11:17
 
 ![教学画面](frames/frame_00020322_0000677400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020322_0000677400.json) · [视觉原始输出](evidence/visual/frame_00020322_0000677400.json)
 
 OCR 原文：
 
@@ -55614,6 +56281,8 @@ Maverick
 
 ![教学画面](frames/frame_00020326_0000677533.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020326_0000677533.json) · [视觉原始输出](evidence/visual/frame_00020326_0000677533.json)
+
 OCR 原文：
 
 ```text
@@ -55686,6 +56355,8 @@ Maverick
 ### 画面 00:11:18
 
 ![教学画面](frames/frame_00020344_0000678133.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020344_0000678133.json) · [视觉原始输出](evidence/visual/frame_00020344_0000678133.json)
 
 OCR 原文：
 
@@ -55768,6 +56439,8 @@ Maverick
 
 ![教学画面](frames/frame_00020353_0000678433.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020353_0000678433.json) · [视觉原始输出](evidence/visual/frame_00020353_0000678433.json)
+
 OCR 原文：
 
 ```text
@@ -55848,6 +56521,8 @@ Maverick
 ### 画面 00:11:18
 
 ![教学画面](frames/frame_00020356_0000678533.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020356_0000678533.json) · [视觉原始输出](evidence/visual/frame_00020356_0000678533.json)
 
 OCR 原文：
 
@@ -55930,6 +56605,8 @@ Maverick
 
 ![教学画面](frames/frame_00020383_0000679433.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020383_0000679433.json) · [视觉原始输出](evidence/visual/frame_00020383_0000679433.json)
+
 OCR 原文：
 
 ```text
@@ -56010,6 +56687,8 @@ Maverick
 ### 画面 00:11:19
 
 ![教学画面](frames/frame_00020386_0000679533.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020386_0000679533.json) · [视觉原始输出](evidence/visual/frame_00020386_0000679533.json)
 
 OCR 原文：
 
@@ -56092,6 +56771,8 @@ Maverick
 
 ![教学画面](frames/frame_00020398_0000679933.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020398_0000679933.json) · [视觉原始输出](evidence/visual/frame_00020398_0000679933.json)
+
 OCR 原文：
 
 ```text
@@ -56173,6 +56854,8 @@ Maverick
 
 ![教学画面](frames/frame_00020402_0000680067.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020402_0000680067.json) · [视觉原始输出](evidence/visual/frame_00020402_0000680067.json)
+
 OCR 原文：
 
 ```text
@@ -56253,6 +56936,8 @@ Maverick
 ### 画面 00:11:21
 
 ![教学画面](frames/frame_00020442_0000681400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020442_0000681400.json) · [视觉原始输出](evidence/visual/frame_00020442_0000681400.json)
 
 OCR 原文：
 
@@ -56349,6 +57034,8 @@ Maverick
 
 ![教学画面](frames/frame_00020462_0000682067.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020462_0000682067.json) · [视觉原始输出](evidence/visual/frame_00020462_0000682067.json)
+
 OCR 原文：
 
 ```text
@@ -56429,6 +57116,8 @@ Maverick
 ### 画面 00:11:23
 
 ![教学画面](frames/frame_00020492_0000683067.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020492_0000683067.json) · [视觉原始输出](evidence/visual/frame_00020492_0000683067.json)
 
 OCR 原文：
 
@@ -56525,6 +57214,8 @@ Maverick
 
 ![教学画面](frames/frame_00020522_0000684067.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020522_0000684067.json) · [视觉原始输出](evidence/visual/frame_00020522_0000684067.json)
+
 OCR 原文：
 
 ```text
@@ -56605,6 +57296,8 @@ Maverick
 ### 画面 00:11:25
 
 ![教学画面](frames/frame_00020552_0000685067.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020552_0000685067.json) · [视觉原始输出](evidence/visual/frame_00020552_0000685067.json)
 
 OCR 原文：
 
@@ -56687,6 +57380,8 @@ Maverick
 
 ![教学画面](frames/frame_00020574_0000685800.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020574_0000685800.json) · [视觉原始输出](evidence/visual/frame_00020574_0000685800.json)
+
 OCR 原文：
 
 ```text
@@ -56767,6 +57462,8 @@ Maverick
 ### 画面 00:11:26
 
 ![教学画面](frames/frame_00020596_0000686533.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020596_0000686533.json) · [视觉原始输出](evidence/visual/frame_00020596_0000686533.json)
 
 OCR 原文：
 
@@ -56879,6 +57576,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:11:26
 
 ![教学画面](frames/frame_00020604_0000686800.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020604_0000686800.json) · [视觉原始输出](evidence/visual/frame_00020604_0000686800.json)
 
 OCR 原文：
 
@@ -57005,6 +57704,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 
 ![教学画面](frames/frame_00020609_0000686967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020609_0000686967.json) · [视觉原始输出](evidence/visual/frame_00020609_0000686967.json)
+
 OCR 原文：
 
 ```text
@@ -57128,6 +57829,8 @@ Man sitting on a wooden table using a tablet device, gesturing with his hand (no
 
 ![教学画面](frames/frame_00020609_0000686967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00020609_0000686967.json) · [视觉原始输出](evidence/visual/frame_00020609_0000686967.json)
+
 OCR 原文：
 
 ```text
@@ -57246,6 +57949,8 @@ Man sitting on a wooden table using a tablet device, gesturing with his hand (no
 ### 画面 00:11:38
 
 ![教学画面](frames/frame_00020958_0000698600.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020958_0000698600.json) · [视觉原始输出](evidence/visual/frame_00020958_0000698600.json)
 
 OCR 原文：
 
@@ -57379,6 +58084,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:11:38
 
 ![教学画面](frames/frame_00020968_0000698933.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00020968_0000698933.json) · [视觉原始输出](evidence/visual/frame_00020968_0000698933.json)
 
 OCR 原文：
 
@@ -57517,6 +58224,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00021001_0000700033.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00021001_0000700033.json) · [视觉原始输出](evidence/visual/frame_00021001_0000700033.json)
+
 OCR 原文：
 
 ```text
@@ -57653,6 +58362,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:11:40
 
 ![教学画面](frames/frame_00021012_0000700400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00021012_0000700400.json) · [视觉原始输出](evidence/visual/frame_00021012_0000700400.json)
 
 OCR 原文：
 
@@ -57791,6 +58502,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:11:42
 
 ![教学画面](frames/frame_00021069_0000702300.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00021069_0000702300.json) · [视觉原始输出](evidence/visual/frame_00021069_0000702300.json)
 
 OCR 原文：
 
@@ -57935,6 +58648,8 @@ Man sitting on a wooden table with a tablet and microphone, gesturing while spea
 
 ![教学画面](frames/frame_00021082_0000702733.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00021082_0000702733.json) · [视觉原始输出](evidence/visual/frame_00021082_0000702733.json)
+
 OCR 原文：
 
 ```text
@@ -58071,6 +58786,8 @@ Man speaking at a wooden table with a tablet and microphone, wearing glasses and
 ### 画面 00:11:46
 
 ![教学画面](frames/frame_00021197_0000706567.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00021197_0000706567.json) · [视觉原始输出](evidence/visual/frame_00021197_0000706567.json)
 
 OCR 原文：
 
@@ -58226,6 +58943,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 ### 画面 00:11:46
 
 ![教学画面](frames/frame_00021206_0000706867.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00021206_0000706867.json) · [视觉原始输出](evidence/visual/frame_00021206_0000706867.json)
 
 OCR 原文：
 
@@ -58409,6 +59128,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00021393_0000713100.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00021393_0000713100.json) · [视觉原始输出](evidence/visual/frame_00021393_0000713100.json)
+
 OCR 原文：
 
 ```text
@@ -58576,6 +59297,8 @@ Man sitting on a wooden table using a tablet with a microphone, no visible text 
 ### 画面 00:11:53
 
 ![教学画面](frames/frame_00021402_0000713400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00021402_0000713400.json) · [视觉原始输出](evidence/visual/frame_00021402_0000713400.json)
 
 OCR 原文：
 
@@ -58769,6 +59492,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols 
 ### 画面 00:11:54
 
 ![教学画面](frames/frame_00021446_0000714867.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00021446_0000714867.json) · [视觉原始输出](evidence/visual/frame_00021446_0000714867.json)
 
 OCR 原文：
 
@@ -58983,6 +59708,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00021476_0000715867.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00021476_0000715867.json) · [视觉原始输出](evidence/visual/frame_00021476_0000715867.json)
+
 OCR 原文：
 
 ```text
@@ -59186,6 +59913,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols 
 
 ![教学画面](frames/frame_00021481_0000716033.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00021481_0000716033.json) · [视觉原始输出](evidence/visual/frame_00021481_0000716033.json)
+
 OCR 原文：
 
 ```text
@@ -59364,6 +60093,8 @@ Man sitting on a wooden table with a tablet and microphone, wearing glasses (no 
 ### 画面 00:11:57
 
 ![教学画面](frames/frame_00021511_0000717033.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00021511_0000717033.json) · [视觉原始输出](evidence/visual/frame_00021511_0000717033.json)
 
 OCR 原文：
 
@@ -59576,6 +60307,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols 
 
 ![教学画面](frames/frame_00021527_0000717567.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00021527_0000717567.json) · [视觉原始输出](evidence/visual/frame_00021527_0000717567.json)
+
 OCR 原文：
 
 ```text
@@ -59769,6 +60502,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00021527_0000717567.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00021527_0000717567.json) · [视觉原始输出](evidence/visual/frame_00021527_0000717567.json)
+
 OCR 原文：
 
 ```text
@@ -59951,6 +60686,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:12:03
 
 ![教学画面](frames/frame_00021710_0000723667.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00021710_0000723667.json) · [视觉原始输出](evidence/visual/frame_00021710_0000723667.json)
 
 OCR 原文：
 
@@ -60160,6 +60897,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols 
 
 ![教学画面](frames/frame_00021740_0000724667.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00021740_0000724667.json) · [视觉原始输出](evidence/visual/frame_00021740_0000724667.json)
+
 OCR 原文：
 
 ```text
@@ -60367,6 +61106,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:12:04
 
 ![教学画面](frames/frame_00021746_0000724867.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00021746_0000724867.json) · [视觉原始输出](evidence/visual/frame_00021746_0000724867.json)
 
 OCR 原文：
 
@@ -60578,6 +61319,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols 
 
 ![教学画面](frames/frame_00021776_0000725867.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00021776_0000725867.json) · [视觉原始输出](evidence/visual/frame_00021776_0000725867.json)
+
 OCR 原文：
 
 ```text
@@ -60777,6 +61520,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols 
 ### 画面 00:12:06
 
 ![教学画面](frames/frame_00021781_0000726033.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00021781_0000726033.json) · [视觉原始输出](evidence/visual/frame_00021781_0000726033.json)
 
 OCR 原文：
 
@@ -60990,6 +61735,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols 
 ### 画面 00:12:11
 
 ![教学画面](frames/frame_00021932_0000731067.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00021932_0000731067.json) · [视觉原始输出](evidence/visual/frame_00021932_0000731067.json)
 
 OCR 原文：
 
@@ -61218,6 +61965,8 @@ Man sitting on a wooden table using a tablet device, gesturing with her hand (no
 ### 画面 00:12:11
 
 ![教学画面](frames/frame_00021947_0000731567.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00021947_0000731567.json) · [视觉原始输出](evidence/visual/frame_00021947_0000731567.json)
 
 OCR 原文：
 
@@ -61465,6 +62214,8 @@ Man sitting on a wooden table using a tablet device, gesturing with her hand (no
 
 ![教学画面](frames/frame_00022005_0000733500.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00022005_0000733500.json) · [视觉原始输出](evidence/visual/frame_00022005_0000733500.json)
+
 OCR 原文：
 
 ```text
@@ -61685,6 +62436,8 @@ hen)
 
 ![教学画面](frames/frame_00022016_0000733867.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00022016_0000733867.json) · [视觉原始输出](evidence/visual/frame_00022016_0000733867.json)
+
 OCR 原文：
 
 ```text
@@ -61887,6 +62640,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:12:17
 
 ![教学画面](frames/frame_00022127_0000737567.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00022127_0000737567.json) · [视觉原始输出](evidence/visual/frame_00022127_0000737567.json)
 
 OCR 原文：
 
@@ -62097,6 +62852,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:12:17
 
 ![教学画面](frames/frame_00022132_0000737733.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00022132_0000737733.json) · [视觉原始输出](evidence/visual/frame_00022132_0000737733.json)
 
 OCR 原文：
 
@@ -62355,6 +63112,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 
 ![教学画面](frames/frame_00022144_0000738133.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00022144_0000738133.json) · [视觉原始输出](evidence/visual/frame_00022144_0000738133.json)
+
 OCR 原文：
 
 ```text
@@ -62606,6 +63365,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:12:21
 
 ![教学画面](frames/frame_00022237_0000741233.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00022237_0000741233.json) · [视觉原始输出](evidence/visual/frame_00022237_0000741233.json)
 
 OCR 原文：
 
@@ -62924,6 +63685,8 @@ Man sitting on a wooden table using a tablet device, with a blue logo and partia
 
 ![教学画面](frames/frame_00022248_0000741600.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00022248_0000741600.json) · [视觉原始输出](evidence/visual/frame_00022248_0000741600.json)
+
 OCR 原文：
 
 ```text
@@ -63177,6 +63940,8 @@ Man sitting on a wooden table using a tablet device, with no visible text or sym
 ### 画面 00:12:24
 
 ![教学画面](frames/frame_00022348_0000744933.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00022348_0000744933.json) · [视觉原始输出](evidence/visual/frame_00022348_0000744933.json)
 
 OCR 原文：
 
@@ -63456,6 +64221,8 @@ Man sitting on a wooden table with a tablet and microphone, gesturing while spea
 
 ![教学画面](frames/frame_00022361_0000745367.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00022361_0000745367.json) · [视觉原始输出](evidence/visual/frame_00022361_0000745367.json)
+
 OCR 原文：
 
 ```text
@@ -63732,6 +64499,8 @@ Man sitting on a wooden table with a tablet and microphone, wearing glasses (no 
 ### 画面 00:12:27
 
 ![教学画面](frames/frame_00022419_0000747300.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00022419_0000747300.json) · [视觉原始输出](evidence/visual/frame_00022419_0000747300.json)
 
 OCR 原文：
 
@@ -64047,6 +64816,8 @@ Man sitting on a wooden table using a tablet device, with no visible text or sym
 
 ![教学画面](frames/frame_00022430_0000747667.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00022430_0000747667.json) · [视觉原始输出](evidence/visual/frame_00022430_0000747667.json)
+
 OCR 原文：
 
 ```text
@@ -64317,15 +65088,25 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 又变成了一个特殊疑问句啊？OK，这就是我们造句的一些最本质的思路，所有单词都可以以这种方式进行造句。Let's continue，下一个单词，恭喜读，loudly，loudly。OK，so this is，大家看他们在对它做什么？Shhh，loudly，声音太大了。OK，这儿一个注意，它是一个副词哦，adv点，我们在新一讲过。那副词最主要造句的时候配合的其实也是动词，叫做talk
 
-待复核：asr_disagreement_unresolved, raw_asr_disagreement。
+待复核：asr_disagreement_unresolved, raw_asr_disagreement, voiced_alignment_gap_reviewed。
 
 Whisper 原始候选：
 
 Tonight进行提问是不是又变成了一个特殊语文句OK这就是我们造句的一些最本质的思路所有单词都可以以这种方式进行造句Let's continue下一个单词供应系读LoudlyLoudlyOKSo this is大家看他们在对他做什么Loudly声音太大了OK注意它是一个副词ADV点我们在新一讲过那副词最主要造句的时候配合的其实也是动词叫做talk loudly新英语我们就学过talk
 
+### 原音疑点复查 00:12:43–00:12:44
+
+下列候选含前后上下文，可能对应发音示范、对齐间隙或遗漏；没有直接当作新增原文插入主稿。
+
+Qwen 候选：Loudly, loudly. Okay, so this is. 大家看他们在对他做什么。
+
+Whisper 候选：loudlyloudlyokso this is大家看他们在对他做什么
+
 ### 画面 00:12:27
 
 ![教学画面](frames/frame_00022430_0000747667.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00022430_0000747667.json) · [视觉原始输出](evidence/visual/frame_00022430_0000747667.json)
 
 OCR 原文：
 
@@ -64597,6 +65378,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00022724_0000757467.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00022724_0000757467.json) · [视觉原始输出](evidence/visual/frame_00022724_0000757467.json)
+
 OCR 原文：
 
 ```text
@@ -64738,6 +65521,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols 
 ### 画面 00:12:37
 
 ![教学画面](frames/frame_00022734_0000757800.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00022734_0000757800.json) · [视觉原始输出](evidence/visual/frame_00022734_0000757800.json)
 
 OCR 原文：
 
@@ -64889,6 +65674,8 @@ Man sitting on a wooden table using a tablet with a screen, connected by wires (
 
 ![教学画面](frames/frame_00022906_0000763533.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00022906_0000763533.json) · [视觉原始输出](evidence/visual/frame_00022906_0000763533.json)
+
 OCR 原文：
 
 ```text
@@ -65019,6 +65806,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:12:44
 
 ![教学画面](frames/frame_00022930_0000764333.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00022930_0000764333.json) · [视觉原始输出](evidence/visual/frame_00022930_0000764333.json)
 
 OCR 原文：
 
@@ -65172,6 +65961,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:12:45
 
 ![教学画面](frames/frame_00022962_0000765400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00022962_0000765400.json) · [视觉原始输出](evidence/visual/frame_00022962_0000765400.json)
 
 OCR 原文：
 
@@ -65341,6 +66132,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00022971_0000765700.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00022971_0000765700.json) · [视觉原始输出](evidence/visual/frame_00022971_0000765700.json)
+
 OCR 原文：
 
 ```text
@@ -65482,6 +66275,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:12:46
 
 ![教学画面](frames/frame_00022998_0000766600.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00022998_0000766600.json) · [视觉原始输出](evidence/visual/frame_00022998_0000766600.json)
 
 OCR 原文：
 
@@ -65651,6 +66446,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:12:47
 
 ![教学画面](frames/frame_00023014_0000767133.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00023014_0000767133.json) · [视觉原始输出](evidence/visual/frame_00023014_0000767133.json)
 
 OCR 原文：
 
@@ -65844,6 +66641,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:12:51
 
 ![教学画面](frames/frame_00023137_0000771233.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00023137_0000771233.json) · [视觉原始输出](evidence/visual/frame_00023137_0000771233.json)
 
 OCR 原文：
 
@@ -66049,6 +66848,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00023149_0000771633.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00023149_0000771633.json) · [视觉原始输出](evidence/visual/frame_00023149_0000771633.json)
+
 OCR 原文：
 
 ```text
@@ -66232,6 +67033,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:12:53
 
 ![教学画面](frames/frame_00023191_0000773033.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00023191_0000773033.json) · [视觉原始输出](evidence/visual/frame_00023191_0000773033.json)
 
 OCR 原文：
 
@@ -66425,6 +67228,8 @@ Man sitting on a wooden table using a tablet with a screen, connected by wires (
 
 ![教学画面](frames/frame_00023200_0000773333.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00023200_0000773333.json) · [视觉原始输出](evidence/visual/frame_00023200_0000773333.json)
+
 OCR 原文：
 
 ```text
@@ -66598,6 +67403,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00023280_0000776000.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00023280_0000776000.json) · [视觉原始输出](evidence/visual/frame_00023280_0000776000.json)
+
 OCR 原文：
 
 ```text
@@ -66766,6 +67573,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:12:56
 
 ![教学画面](frames/frame_00023292_0000776400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00023292_0000776400.json) · [视觉原始输出](evidence/visual/frame_00023292_0000776400.json)
 
 OCR 原文：
 
@@ -66946,6 +67755,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00023292_0000776400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00023292_0000776400.json) · [视觉原始输出](evidence/visual/frame_00023292_0000776400.json)
+
 OCR 原文：
 
 ```text
@@ -67114,6 +67925,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:13:01
 
 ![教学画面](frames/frame_00023434_0000781133.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00023434_0000781133.json) · [视觉原始输出](evidence/visual/frame_00023434_0000781133.json)
 
 OCR 原文：
 
@@ -67313,6 +68126,8 @@ Man wearing glasses and a beige shirt sitting on a wooden table with a tablet an
 
 ![教学画面](frames/frame_00023447_0000781567.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00023447_0000781567.json) · [视觉原始输出](evidence/visual/frame_00023447_0000781567.json)
+
 OCR 原文：
 
 ```text
@@ -67505,6 +68320,8 @@ Man wearing glasses and a beige shirt sitting on a wooden table with a tablet an
 ### 画面 00:13:02
 
 ![教学画面](frames/frame_00023483_0000782767.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00023483_0000782767.json) · [视觉原始输出](evidence/visual/frame_00023483_0000782767.json)
 
 OCR 原文：
 
@@ -67726,6 +68543,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 ### 画面 00:13:03
 
 ![教学画面](frames/frame_00023492_0000783067.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00023492_0000783067.json) · [视觉原始输出](evidence/visual/frame_00023492_0000783067.json)
 
 OCR 原文：
 
@@ -67977,6 +68796,8 @@ Man sitting on a wooden table using a tablet with a screen, connected by a cable
 
 ![教学画面](frames/frame_00023564_0000785467.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00023564_0000785467.json) · [视觉原始输出](evidence/visual/frame_00023564_0000785467.json)
+
 OCR 原文：
 
 ```text
@@ -68195,6 +69016,8 @@ Man wearing glasses and a beige shirt sitting on a wooden table with a tablet, g
 ### 画面 00:13:05
 
 ![教学画面](frames/frame_00023578_0000785933.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00023578_0000785933.json) · [视觉原始输出](evidence/visual/frame_00023578_0000785933.json)
 
 OCR 原文：
 
@@ -68447,6 +69270,8 @@ Man wearing glasses and a beige shirt sitting on a wooden table with a tablet an
 
 ![教学画面](frames/frame_00023677_0000789233.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00023677_0000789233.json) · [视觉原始输出](evidence/visual/frame_00023677_0000789233.json)
+
 OCR 原文：
 
 ```text
@@ -68653,6 +69478,8 @@ Man speaking at a wooden table with a tablet and microphone, wearing glasses and
 ### 画面 00:13:09
 
 ![教学画面](frames/frame_00023687_0000789567.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00023687_0000789567.json) · [视觉原始输出](evidence/visual/frame_00023687_0000789567.json)
 
 OCR 原文：
 
@@ -68899,6 +69726,8 @@ Man speaking at a wooden table with a tablet and microphone, wearing glasses and
 
 ![教学画面](frames/frame_00023735_0000791167.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00023735_0000791167.json) · [视觉原始输出](evidence/visual/frame_00023735_0000791167.json)
+
 OCR 原文：
 
 ```text
@@ -69127,6 +69956,8 @@ Man speaking at a wooden table with a tablet and microphone, wearing glasses and
 
 ![教学画面](frames/frame_00023745_0000791500.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00023745_0000791500.json) · [视觉原始输出](evidence/visual/frame_00023745_0000791500.json)
+
 OCR 原文：
 
 ```text
@@ -69353,6 +70184,8 @@ Man wearing glasses and a beige shirt sitting on a wooden table with a tablet an
 ### 画面 00:13:14
 
 ![教学画面](frames/frame_00023831_0000794367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00023831_0000794367.json) · [视觉原始输出](evidence/visual/frame_00023831_0000794367.json)
 
 OCR 原文：
 
@@ -69601,6 +70434,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00023843_0000794767.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00023843_0000794767.json) · [视觉原始输出](evidence/visual/frame_00023843_0000794767.json)
+
 OCR 原文：
 
 ```text
@@ -69841,6 +70676,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:13:17
 
 ![教学画面](frames/frame_00023930_0000797667.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00023930_0000797667.json) · [视觉原始输出](evidence/visual/frame_00023930_0000797667.json)
 
 OCR 原文：
 
@@ -70092,6 +70929,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00023949_0000798300.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00023949_0000798300.json) · [视觉原始输出](evidence/visual/frame_00023949_0000798300.json)
+
 OCR 原文：
 
 ```text
@@ -70327,6 +71166,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:13:21
 
 ![教学画面](frames/frame_00024047_0000801567.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00024047_0000801567.json) · [视觉原始输出](evidence/visual/frame_00024047_0000801567.json)
 
 OCR 原文：
 
@@ -70572,6 +71413,8 @@ Man wearing glasses and a beige jacket sitting on a wooden table with a tablet d
 ### 画面 00:13:21
 
 ![教学画面](frames/frame_00024059_0000801967.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00024059_0000801967.json) · [视觉原始输出](evidence/visual/frame_00024059_0000801967.json)
 
 OCR 原文：
 
@@ -70859,6 +71702,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00024153_0000805100.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00024153_0000805100.json) · [视觉原始输出](evidence/visual/frame_00024153_0000805100.json)
+
 OCR 原文：
 
 ```text
@@ -71126,6 +71971,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00024162_0000805400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00024162_0000805400.json) · [视觉原始输出](evidence/visual/frame_00024162_0000805400.json)
+
 OCR 原文：
 
 ```text
@@ -71388,6 +72235,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 ### 画面 00:13:27
 
 ![教学画面](frames/frame_00024228_0000807600.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00024228_0000807600.json) · [视觉原始输出](evidence/visual/frame_00024228_0000807600.json)
 
 OCR 原文：
 
@@ -71664,6 +72513,8 @@ Man speaking at a wooden table with a tablet and microphone, gesturing while spe
 ### 画面 00:13:28
 
 ![教学画面](frames/frame_00024241_0000808033.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00024241_0000808033.json) · [视觉原始输出](evidence/visual/frame_00024241_0000808033.json)
 
 OCR 原文：
 
@@ -71958,6 +72809,8 @@ talking so loudly这其实各位看这两句话之间的逻辑关系你为什么
 
 ![教学画面](frames/frame_00024241_0000808033.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00024241_0000808033.json) · [视觉原始输出](evidence/visual/frame_00024241_0000808033.json)
+
 OCR 原文：
 
 ```text
@@ -72241,6 +73094,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00024342_0000811400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00024342_0000811400.json) · [视觉原始输出](evidence/visual/frame_00024342_0000811400.json)
+
 OCR 原文：
 
 ```text
@@ -72514,6 +73369,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00024372_0000812400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00024372_0000812400.json) · [视觉原始输出](evidence/visual/frame_00024372_0000812400.json)
+
 OCR 原文：
 
 ```text
@@ -72774,6 +73631,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:13:32
 
 ![教学画面](frames/frame_00024377_0000812567.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00024377_0000812567.json) · [视觉原始输出](evidence/visual/frame_00024377_0000812567.json)
 
 OCR 原文：
 
@@ -73049,6 +73908,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00024707_0000823567.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00024707_0000823567.json) · [视觉原始输出](evidence/visual/frame_00024707_0000823567.json)
+
 OCR 原文：
 
 ```text
@@ -73302,6 +74163,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 ### 画面 00:13:43
 
 ![教学画面](frames/frame_00024716_0000823867.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00024716_0000823867.json) · [视觉原始输出](evidence/visual/frame_00024716_0000823867.json)
 
 OCR 原文：
 
@@ -73564,6 +74427,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:13:46
 
 ![教学画面](frames/frame_00024801_0000826700.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00024801_0000826700.json) · [视觉原始输出](evidence/visual/frame_00024801_0000826700.json)
 
 OCR 原文：
 
@@ -73849,6 +74714,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00024819_0000827300.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00024819_0000827300.json) · [视觉原始输出](evidence/visual/frame_00024819_0000827300.json)
+
 OCR 原文：
 
 ```text
@@ -74110,6 +74977,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:13:48
 
 ![教学画面](frames/frame_00024855_0000828500.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00024855_0000828500.json) · [视觉原始输出](evidence/visual/frame_00024855_0000828500.json)
 
 OCR 原文：
 
@@ -74413,6 +75282,8 @@ Man speaking at a wooden table with a tablet and microphone, no visible text or 
 ### 画面 00:13:53
 
 ![教学画面](frames/frame_00024992_0000833067.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00024992_0000833067.json) · [视觉原始输出](evidence/visual/frame_00024992_0000833067.json)
 
 OCR 原文：
 
@@ -74726,6 +75597,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00025009_0000833633.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00025009_0000833633.json) · [视觉原始输出](evidence/visual/frame_00025009_0000833633.json)
+
 OCR 原文：
 
 ```text
@@ -75004,6 +75877,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00025039_0000834633.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00025039_0000834633.json) · [视觉原始输出](evidence/visual/frame_00025039_0000834633.json)
+
 OCR 原文：
 
 ```text
@@ -75280,6 +76155,8 @@ Man sitting on a wooden table using a tablet device, speaking into a microphone 
 ### 画面 00:13:55
 
 ![教学画面](frames/frame_00025069_0000835633.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00025069_0000835633.json) · [视觉原始输出](evidence/visual/frame_00025069_0000835633.json)
 
 OCR 原文：
 
@@ -75780,6 +76657,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00025086_0000836200.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00025086_0000836200.json) · [视觉原始输出](evidence/visual/frame_00025086_0000836200.json)
+
 OCR 原文：
 
 ```text
@@ -76094,6 +76973,8 @@ Man sitting at a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00025197_0000839900.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00025197_0000839900.json) · [视觉原始输出](evidence/visual/frame_00025197_0000839900.json)
+
 OCR 原文：
 
 ```text
@@ -76405,6 +77286,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00025197_0000839900.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00025197_0000839900.json) · [视觉原始输出](evidence/visual/frame_00025197_0000839900.json)
+
 OCR 原文：
 
 ```text
@@ -76705,6 +77588,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:14:00
 
 ![教学画面](frames/frame_00025221_0000840700.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00025221_0000840700.json) · [视觉原始输出](evidence/visual/frame_00025221_0000840700.json)
 
 OCR 原文：
 
@@ -77045,6 +77930,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00025289_0000842967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00025289_0000842967.json) · [视觉原始输出](evidence/visual/frame_00025289_0000842967.json)
+
 OCR 原文：
 
 ```text
@@ -77326,6 +78213,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:14:03
 
 ![教学画面](frames/frame_00025298_0000843267.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00025298_0000843267.json) · [视觉原始输出](evidence/visual/frame_00025298_0000843267.json)
 
 OCR 原文：
 
@@ -77668,6 +78557,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00025312_0000843733.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00025312_0000843733.json) · [视觉原始输出](evidence/visual/frame_00025312_0000843733.json)
+
 OCR 原文：
 
 ```text
@@ -77952,6 +78843,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:14:05
 
 ![教学画面](frames/frame_00025373_0000845767.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00025373_0000845767.json) · [视觉原始输出](evidence/visual/frame_00025373_0000845767.json)
 
 OCR 原文：
 
@@ -78295,6 +79188,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:14:06
 
 ![教学画面](frames/frame_00025402_0000846733.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00025402_0000846733.json) · [视觉原始输出](evidence/visual/frame_00025402_0000846733.json)
 
 OCR 原文：
 
@@ -78716,6 +79611,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00025432_0000847733.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00025432_0000847733.json) · [视觉原始输出](evidence/visual/frame_00025432_0000847733.json)
+
 OCR 原文：
 
 ```text
@@ -79040,6 +79937,8 @@ Man sitting at a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00025508_0000850267.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00025508_0000850267.json) · [视觉原始输出](evidence/visual/frame_00025508_0000850267.json)
+
 OCR 原文：
 
 ```text
@@ -79179,6 +80078,8 @@ Man sitting on a wooden table using a tablet with a screen and cable, wearing gl
 
 ![教学画面](frames/frame_00025510_0000850333.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00025510_0000850333.json) · [视觉原始输出](evidence/visual/frame_00025510_0000850333.json)
+
 OCR 原文：
 
 ```text
@@ -79300,6 +80201,8 @@ Man sitting on a wooden table using a tablet with a screen and cable, wearing gl
 
 ![教学画面](frames/frame_00025519_0000850633.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00025519_0000850633.json) · [视觉原始输出](evidence/visual/frame_00025519_0000850633.json)
+
 OCR 原文：
 
 ```text
@@ -79420,6 +80323,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 ### 画面 00:14:13
 
 ![教学画面](frames/frame_00025604_0000853467.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00025604_0000853467.json) · [视觉原始输出](evidence/visual/frame_00025604_0000853467.json)
 
 OCR 原文：
 
@@ -79569,6 +80474,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:14:13
 
 ![教学画面](frames/frame_00025616_0000853867.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00025616_0000853867.json) · [视觉原始输出](evidence/visual/frame_00025616_0000853867.json)
 
 OCR 原文：
 
@@ -79724,6 +80631,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:14:14
 
 ![教学画面](frames/frame_00025646_0000854867.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00025646_0000854867.json) · [视觉原始输出](evidence/visual/frame_00025646_0000854867.json)
 
 OCR 原文：
 
@@ -79889,6 +80798,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:14:15
 
 ![教学画面](frames/frame_00025661_0000855367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00025661_0000855367.json) · [视觉原始输出](evidence/visual/frame_00025661_0000855367.json)
 
 OCR 原文：
 
@@ -80059,6 +80970,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:14:20
 
 ![教学画面](frames/frame_00025808_0000860267.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00025808_0000860267.json) · [视觉原始输出](evidence/visual/frame_00025808_0000860267.json)
 
 OCR 原文：
 
@@ -80235,6 +81148,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:14:20
 
 ![教学画面](frames/frame_00025817_0000860567.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00025817_0000860567.json) · [视觉原始输出](evidence/visual/frame_00025817_0000860567.json)
 
 OCR 原文：
 
@@ -80425,6 +81340,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00026057_0000868567.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00026057_0000868567.json) · [视觉原始输出](evidence/visual/frame_00026057_0000868567.json)
+
 OCR 原文：
 
 ```text
@@ -80608,6 +81525,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:14:28
 
 ![教学画面](frames/frame_00026066_0000868867.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00026066_0000868867.json) · [视觉原始输出](evidence/visual/frame_00026066_0000868867.json)
 
 OCR 原文：
 
@@ -80828,6 +81747,8 @@ OK continue那我们造一个句子叫做He was very angry yesterday你想一下
 
 ![教学画面](frames/frame_00026066_0000868867.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00026066_0000868867.json) · [视觉原始输出](evidence/visual/frame_00026066_0000868867.json)
+
 OCR 原文：
 
 ```text
@@ -81037,6 +81958,8 @@ Man sitting at a wooden table using a tablet with a microphone, no visible text 
 
 ![教学画面](frames/frame_00026227_0000874233.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00026227_0000874233.json) · [视觉原始输出](evidence/visual/frame_00026227_0000874233.json)
+
 OCR 原文：
 
 ```text
@@ -81222,6 +82145,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00026239_0000874633.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00026239_0000874633.json) · [视觉原始输出](evidence/visual/frame_00026239_0000874633.json)
+
 OCR 原文：
 
 ```text
@@ -81396,6 +82321,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:14:44
 
 ![教学画面](frames/frame_00026521_0000884033.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00026521_0000884033.json) · [视觉原始输出](evidence/visual/frame_00026521_0000884033.json)
 
 OCR 原文：
 
@@ -81596,6 +82523,8 @@ Man sitting at a wooden table using a tablet device, gesturing with his hand (no
 
 ![教学画面](frames/frame_00026530_0000884333.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00026530_0000884333.json) · [视觉原始输出](evidence/visual/frame_00026530_0000884333.json)
+
 OCR 原文：
 
 ```text
@@ -81795,6 +82724,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:14:47
 
 ![教学画面](frames/frame_00026622_0000887400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00026622_0000887400.json) · [视觉原始输出](evidence/visual/frame_00026622_0000887400.json)
 
 OCR 原文：
 
@@ -82033,6 +82964,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 
 ![教学画面](frames/frame_00026652_0000888400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00026652_0000888400.json) · [视觉原始输出](evidence/visual/frame_00026652_0000888400.json)
+
 OCR 原文：
 
 ```text
@@ -82260,6 +83193,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 
 ![教学画面](frames/frame_00026659_0000888633.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00026659_0000888633.json) · [视觉原始输出](evidence/visual/frame_00026659_0000888633.json)
+
 OCR 原文：
 
 ```text
@@ -82480,6 +83415,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:14:49
 
 ![教学画面](frames/frame_00026681_0000889367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00026681_0000889367.json) · [视觉原始输出](evidence/visual/frame_00026681_0000889367.json)
 
 OCR 原文：
 
@@ -82702,6 +83639,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 
 ![教学画面](frames/frame_00026696_0000889867.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00026696_0000889867.json) · [视觉原始输出](evidence/visual/frame_00026696_0000889867.json)
+
 OCR 原文：
 
 ```text
@@ -82922,6 +83861,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:14:50
 
 ![教学画面](frames/frame_00026726_0000890867.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00026726_0000890867.json) · [视觉原始输出](evidence/visual/frame_00026726_0000890867.json)
 
 OCR 原文：
 
@@ -83240,6 +84181,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 
 ![教学画面](frames/frame_00026747_0000891567.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00026747_0000891567.json) · [视觉原始输出](evidence/visual/frame_00026747_0000891567.json)
+
 OCR 原文：
 
 ```text
@@ -83503,6 +84446,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 
 ![教学画面](frames/frame_00026756_0000891867.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00026756_0000891867.json) · [视觉原始输出](evidence/visual/frame_00026756_0000891867.json)
+
 OCR 原文：
 
 ```text
@@ -83718,6 +84663,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 
 ![教学画面](frames/frame_00026777_0000892567.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00026777_0000892567.json) · [视觉原始输出](evidence/visual/frame_00026777_0000892567.json)
+
 OCR 原文：
 
 ```text
@@ -83931,6 +84878,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:14:53
 
 ![教学画面](frames/frame_00026805_0000893500.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00026805_0000893500.json) · [视觉原始输出](evidence/visual/frame_00026805_0000893500.json)
 
 OCR 原文：
 
@@ -84177,6 +85126,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 
 ![教学画面](frames/frame_00026958_0000898600.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00026958_0000898600.json) · [视觉原始输出](evidence/visual/frame_00026958_0000898600.json)
+
 OCR 原文：
 
 ```text
@@ -84417,6 +85368,8 @@ Man sitting on a wooden table with a tablet and microphone, gesturing while spea
 
 ![教学画面](frames/frame_00026958_0000898600.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00026958_0000898600.json) · [视觉原始输出](evidence/visual/frame_00026958_0000898600.json)
+
 OCR 原文：
 
 ```text
@@ -84652,6 +85605,8 @@ Man sitting on a wooden table with a tablet and microphone, gesturing while spea
 ### 画面 00:15:12
 
 ![教学画面](frames/frame_00027376_0000912533.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00027376_0000912533.json) · [视觉原始输出](evidence/visual/frame_00027376_0000912533.json)
 
 OCR 原文：
 
@@ -84930,6 +85885,8 @@ Man sitting at a wooden table using a tablet with a pen, no visible text or symb
 
 ![教学画面](frames/frame_00027385_0000912833.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00027385_0000912833.json) · [视觉原始输出](evidence/visual/frame_00027385_0000912833.json)
+
 OCR 原文：
 
 ```text
@@ -85160,6 +86117,8 @@ Man sitting at a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:15:15
 
 ![教学画面](frames/frame_00027466_0000915533.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00027466_0000915533.json) · [视觉原始输出](evidence/visual/frame_00027466_0000915533.json)
 
 OCR 原文：
 
@@ -85401,6 +86360,8 @@ Man sitting on a wooden table using a tablet device, gesturing with her hand (no
 ### 画面 00:15:15
 
 ![教学画面](frames/frame_00027478_0000915933.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00027478_0000915933.json) · [视觉原始输出](evidence/visual/frame_00027478_0000915933.json)
 
 OCR 原文：
 
@@ -85644,6 +86605,8 @@ Man sitting on a wooden table using a tablet device, gesturing with her hand (no
 
 ![教学画面](frames/frame_00027490_0000916333.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00027490_0000916333.json) · [视觉原始输出](evidence/visual/frame_00027490_0000916333.json)
+
 OCR 原文：
 
 ```text
@@ -85885,6 +86848,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:15:18
 
 ![教学画面](frames/frame_00027549_0000918300.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00027549_0000918300.json) · [视觉原始输出](evidence/visual/frame_00027549_0000918300.json)
 
 OCR 原文：
 
@@ -86146,6 +87111,8 @@ Man wearing glasses and a beige shirt sitting on a wooden table with a tablet an
 
 ![教学画面](frames/frame_00027561_0000918700.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00027561_0000918700.json) · [视觉原始输出](evidence/visual/frame_00027561_0000918700.json)
+
 OCR 原文：
 
 ```text
@@ -86397,6 +87364,8 @@ Man wearing glasses and a beige shirt sitting on a wooden table with a tablet an
 ### 画面 00:15:23
 
 ![教学画面](frames/frame_00027713_0000923767.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00027713_0000923767.json) · [视觉原始输出](evidence/visual/frame_00027713_0000923767.json)
 
 OCR 原文：
 
@@ -86676,6 +87645,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00027730_0000924333.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00027730_0000924333.json) · [视觉原始输出](evidence/visual/frame_00027730_0000924333.json)
+
 OCR 原文：
 
 ```text
@@ -86929,6 +87900,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00027760_0000925333.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00027760_0000925333.json) · [视觉原始输出](evidence/visual/frame_00027760_0000925333.json)
+
 OCR 原文：
 
 ```text
@@ -87162,6 +88135,8 @@ Man sitting on a wooden table with a tablet and microphone, wearing glasses (no 
 
 ![教学画面](frames/frame_00027780_0000926000.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00027780_0000926000.json) · [视觉原始输出](evidence/visual/frame_00027780_0000926000.json)
+
 OCR 原文：
 
 ```text
@@ -87346,6 +88321,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:15:26
 
 ![教学画面](frames/frame_00027800_0000926667.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00027800_0000926667.json) · [视觉原始输出](evidence/visual/frame_00027800_0000926667.json)
 
 OCR 原文：
 
@@ -87536,6 +88513,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00027809_0000926967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00027809_0000926967.json) · [视觉原始输出](evidence/visual/frame_00027809_0000926967.json)
+
 OCR 原文：
 
 ```text
@@ -87721,6 +88700,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 ### 画面 00:15:29
 
 ![教学画面](frames/frame_00027877_0000929233.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00027877_0000929233.json) · [视觉原始输出](evidence/visual/frame_00027877_0000929233.json)
 
 OCR 原文：
 
@@ -87929,6 +88910,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00027877_0000929233.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00027877_0000929233.json) · [视觉原始输出](evidence/visual/frame_00027877_0000929233.json)
+
 OCR 原文：
 
 ```text
@@ -88125,6 +89108,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:15:30
 
 ![教学画面](frames/frame_00027907_0000930233.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00027907_0000930233.json) · [视觉原始输出](evidence/visual/frame_00027907_0000930233.json)
 
 OCR 原文：
 
@@ -88338,6 +89323,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00027921_0000930700.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00027921_0000930700.json) · [视觉原始输出](evidence/visual/frame_00027921_0000930700.json)
+
 OCR 原文：
 
 ```text
@@ -88533,6 +89520,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:15:32
 
 ![教学画面](frames/frame_00027983_0000932767.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00027983_0000932767.json) · [视觉原始输出](evidence/visual/frame_00027983_0000932767.json)
 
 OCR 原文：
 
@@ -88732,6 +89721,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:15:33
 
 ![教学画面](frames/frame_00027997_0000933233.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00027997_0000933233.json) · [视觉原始输出](evidence/visual/frame_00027997_0000933233.json)
 
 OCR 原文：
 
@@ -88962,6 +89953,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00028124_0000937467.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00028124_0000937467.json) · [视觉原始输出](evidence/visual/frame_00028124_0000937467.json)
+
 OCR 原文：
 
 ```text
@@ -89179,6 +90172,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:15:37
 
 ![教学画面](frames/frame_00028138_0000937933.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00028138_0000937933.json) · [视觉原始输出](evidence/visual/frame_00028138_0000937933.json)
 
 OCR 原文：
 
@@ -89410,6 +90405,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:15:40
 
 ![教学画面](frames/frame_00028217_0000940567.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00028217_0000940567.json) · [视觉原始输出](evidence/visual/frame_00028217_0000940567.json)
 
 OCR 原文：
 
@@ -89676,6 +90673,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00028238_0000941267.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00028238_0000941267.json) · [视觉原始输出](evidence/visual/frame_00028238_0000941267.json)
+
 OCR 原文：
 
 ```text
@@ -89885,6 +90884,8 @@ Man sitting on a wooden stool using a tablet device (no visible text or symbols)
 ### 画面 00:15:45
 
 ![教学画面](frames/frame_00028357_0000945233.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00028357_0000945233.json) · [视觉原始输出](evidence/visual/frame_00028357_0000945233.json)
 
 OCR 原文：
 
@@ -90180,6 +91181,8 @@ Man sitting on a wooden table using a tablet with a microphone, no visible text 
 
 ![教学画面](frames/frame_00028366_0000945533.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00028366_0000945533.json) · [视觉原始输出](evidence/visual/frame_00028366_0000945533.json)
+
 OCR 原文：
 
 ```text
@@ -90470,6 +91473,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00028366_0000945533.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00028366_0000945533.json) · [视觉原始输出](evidence/visual/frame_00028366_0000945533.json)
+
 OCR 原文：
 
 ```text
@@ -90749,6 +91754,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:16:11
 
 ![教学画面](frames/frame_00029136_0000971200.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00029136_0000971200.json) · [视觉原始输出](evidence/visual/frame_00029136_0000971200.json)
 
 OCR 原文：
 
@@ -91052,6 +92059,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:16:11
 
 ![教学画面](frames/frame_00029148_0000971600.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00029148_0000971600.json) · [视觉原始输出](evidence/visual/frame_00029148_0000971600.json)
 
 OCR 原文：
 
@@ -91379,6 +92388,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00029194_0000973133.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00029194_0000973133.json) · [视觉原始输出](evidence/visual/frame_00029194_0000973133.json)
+
 OCR 原文：
 
 ```text
@@ -91698,6 +92709,8 @@ Man wearing glasses and a beige shirt sitting on a wooden table with a tablet de
 
 ![教学画面](frames/frame_00029221_0000974033.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00029221_0000974033.json) · [视觉原始输出](evidence/visual/frame_00029221_0000974033.json)
+
 OCR 原文：
 
 ```text
@@ -91975,6 +92988,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:16:16
 
 ![教学画面](frames/frame_00029298_0000976600.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00029298_0000976600.json) · [视觉原始输出](evidence/visual/frame_00029298_0000976600.json)
 
 OCR 原文：
 
@@ -92267,6 +93282,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:16:16
 
 ![教学画面](frames/frame_00029305_0000976833.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00029305_0000976833.json) · [视觉原始输出](evidence/visual/frame_00029305_0000976833.json)
 
 OCR 原文：
 
@@ -92811,6 +93828,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00029348_0000978267.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00029348_0000978267.json) · [视觉原始输出](evidence/visual/frame_00029348_0000978267.json)
+
 OCR 原文：
 
 ```text
@@ -93122,6 +94141,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00029378_0000979267.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00029378_0000979267.json) · [视觉原始输出](evidence/visual/frame_00029378_0000979267.json)
+
 OCR 原文：
 
 ```text
@@ -93395,6 +94416,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:16:19
 
 ![教学画面](frames/frame_00029388_0000979600.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00029388_0000979600.json) · [视觉原始输出](evidence/visual/frame_00029388_0000979600.json)
 
 OCR 原文：
 
@@ -93684,6 +94707,8 @@ Man sitting on a wooden table with a tablet and microphone, wearing glasses and 
 
 ![教学画面](frames/frame_00029414_0000980467.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00029414_0000980467.json) · [视觉原始输出](evidence/visual/frame_00029414_0000980467.json)
+
 OCR 原文：
 
 ```text
@@ -93945,6 +94970,8 @@ Man sitting on a wooden table with a tablet and microphone, wearing glasses and 
 ### 画面 00:16:21
 
 ![教学画面](frames/frame_00029444_0000981467.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00029444_0000981467.json) · [视觉原始输出](evidence/visual/frame_00029444_0000981467.json)
 
 OCR 原文：
 
@@ -94208,6 +95235,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:16:22
 
 ![教学画面](frames/frame_00029468_0000982267.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00029468_0000982267.json) · [视觉原始输出](evidence/visual/frame_00029468_0000982267.json)
 
 OCR 原文：
 
@@ -94526,6 +95555,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00029474_0000982467.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00029474_0000982467.json) · [视觉原始输出](evidence/visual/frame_00029474_0000982467.json)
+
 OCR 原文：
 
 ```text
@@ -94814,6 +95845,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:16:22
 
 ![教学画面](frames/frame_00029480_0000982667.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00029480_0000982667.json) · [视觉原始输出](evidence/visual/frame_00029480_0000982667.json)
 
 OCR 原文：
 
@@ -95155,6 +96188,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00029480_0000982667.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00029480_0000982667.json) · [视觉原始输出](evidence/visual/frame_00029480_0000982667.json)
+
 OCR 原文：
 
 ```text
@@ -95485,6 +96520,8 @@ Man sitting on a wooden table with a tablet and microphone, wearing glasses and 
 
 ![教学画面](frames/frame_00029821_0000994033.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00029821_0000994033.json) · [视觉原始输出](evidence/visual/frame_00029821_0000994033.json)
+
 OCR 原文：
 
 ```text
@@ -95649,6 +96686,8 @@ Man sitting on a wooden table using a tablet with a screen, connected by wires (
 
 ![教学画面](frames/frame_00029831_0000994367.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00029831_0000994367.json) · [视觉原始输出](evidence/visual/frame_00029831_0000994367.json)
+
 OCR 原文：
 
 ```text
@@ -95761,6 +96800,8 @@ Man sitting on a wooden table using a tablet with a screen, connected by a cable
 ### 画面 00:16:40
 
 ![教学画面](frames/frame_00030018_0001000600.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00030018_0001000600.json) · [视觉原始输出](evidence/visual/frame_00030018_0001000600.json)
 
 OCR 原文：
 
@@ -95878,6 +96919,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00030027_0001000900.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00030027_0001000900.json) · [视觉原始输出](evidence/visual/frame_00030027_0001000900.json)
+
 OCR 原文：
 
 ```text
@@ -95994,6 +97037,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00030065_0001002167.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00030065_0001002167.json) · [视觉原始输出](evidence/visual/frame_00030065_0001002167.json)
+
 OCR 原文：
 
 ```text
@@ -96109,6 +97154,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:16:42
 
 ![教学画面](frames/frame_00030081_0001002700.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00030081_0001002700.json) · [视觉原始输出](evidence/visual/frame_00030081_0001002700.json)
 
 OCR 原文：
 
@@ -96249,6 +97296,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:16:43
 
 ![教学画面](frames/frame_00030105_0001003500.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00030105_0001003500.json) · [视觉原始输出](evidence/visual/frame_00030105_0001003500.json)
 
 OCR 原文：
 
@@ -96396,6 +97445,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00030111_0001003700.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00030111_0001003700.json) · [视觉原始输出](evidence/visual/frame_00030111_0001003700.json)
+
 OCR 原文：
 
 ```text
@@ -96540,6 +97591,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:16:43
 
 ![教学画面](frames/frame_00030116_0001003867.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00030116_0001003867.json) · [视觉原始输出](evidence/visual/frame_00030116_0001003867.json)
 
 OCR 原文：
 
@@ -96696,6 +97749,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:16:51
 
 ![教学画面](frames/frame_00030338_0001011267.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00030338_0001011267.json) · [视觉原始输出](evidence/visual/frame_00030338_0001011267.json)
 
 OCR 原文：
 
@@ -96889,6 +97944,8 @@ Man sitting at a wooden table using a tablet with a screen and microphone, no vi
 ### 画面 00:16:51
 
 ![教学画面](frames/frame_00030347_0001011567.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00030347_0001011567.json) · [视觉原始输出](evidence/visual/frame_00030347_0001011567.json)
 
 OCR 原文：
 
@@ -97089,6 +98146,8 @@ Man sitting on a wooden table using a tablet with a microphone, no visible text 
 ### 画面 00:16:54
 
 ![教学画面](frames/frame_00030425_0001014167.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00030425_0001014167.json) · [视觉原始输出](evidence/visual/frame_00030425_0001014167.json)
 
 OCR 原文：
 
@@ -97310,6 +98369,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00030455_0001015167.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00030455_0001015167.json) · [视觉原始输出](evidence/visual/frame_00030455_0001015167.json)
+
 OCR 原文：
 
 ```text
@@ -97517,6 +98578,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:16:55
 
 ![教学画面](frames/frame_00030471_0001015700.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00030471_0001015700.json) · [视觉原始输出](evidence/visual/frame_00030471_0001015700.json)
 
 OCR 原文：
 
@@ -97732,6 +98795,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00030524_0001017467.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00030524_0001017467.json) · [视觉原始输出](evidence/visual/frame_00030524_0001017467.json)
+
 OCR 原文：
 
 ```text
@@ -97926,6 +98991,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00030533_0001017767.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00030533_0001017767.json) · [视觉原始输出](evidence/visual/frame_00030533_0001017767.json)
+
 OCR 原文：
 
 ```text
@@ -98118,6 +99185,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00030560_0001018667.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00030560_0001018667.json) · [视觉原始输出](evidence/visual/frame_00030560_0001018667.json)
+
 OCR 原文：
 
 ```text
@@ -98282,6 +99351,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:16:59
 
 ![教学画面](frames/frame_00030591_0001019700.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00030591_0001019700.json) · [视觉原始输出](evidence/visual/frame_00030591_0001019700.json)
 
 OCR 原文：
 
@@ -98539,6 +99610,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:16:59
 
 ![教学画面](frames/frame_00030599_0001019967.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00030599_0001019967.json) · [视觉原始输出](evidence/visual/frame_00030599_0001019967.json)
 
 OCR 原文：
 
@@ -99097,6 +100170,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00030599_0001019967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00030599_0001019967.json) · [视觉原始输出](evidence/visual/frame_00030599_0001019967.json)
+
 OCR 原文：
 
 ```text
@@ -99644,6 +100719,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00030615_0001020500.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00030615_0001020500.json) · [视觉原始输出](evidence/visual/frame_00030615_0001020500.json)
+
 OCR 原文：
 
 ```text
@@ -99809,6 +100886,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:17:01
 
 ![教学画面](frames/frame_00030645_0001021500.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00030645_0001021500.json) · [视觉原始输出](evidence/visual/frame_00030645_0001021500.json)
 
 OCR 原文：
 
@@ -100014,6 +101093,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00030675_0001022500.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00030675_0001022500.json) · [视觉原始输出](evidence/visual/frame_00030675_0001022500.json)
+
 OCR 原文：
 
 ```text
@@ -100211,6 +101292,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00030682_0001022733.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00030682_0001022733.json) · [视觉原始输出](evidence/visual/frame_00030682_0001022733.json)
+
 OCR 原文：
 
 ```text
@@ -100381,6 +101464,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:17:03
 
 ![教学画面](frames/frame_00030712_0001023733.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00030712_0001023733.json) · [视觉原始输出](evidence/visual/frame_00030712_0001023733.json)
 
 OCR 原文：
 
@@ -100582,6 +101667,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00030721_0001024033.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00030721_0001024033.json) · [视觉原始输出](evidence/visual/frame_00030721_0001024033.json)
+
 OCR 原文：
 
 ```text
@@ -100763,6 +101850,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:17:04
 
 ![教学画面](frames/frame_00030731_0001024367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00030731_0001024367.json) · [视觉原始输出](evidence/visual/frame_00030731_0001024367.json)
 
 OCR 原文：
 
@@ -100946,6 +102035,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:17:05
 
 ![教学画面](frames/frame_00030761_0001025367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00030761_0001025367.json) · [视觉原始输出](evidence/visual/frame_00030761_0001025367.json)
 
 OCR 原文：
 
@@ -101146,6 +102237,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00030776_0001025867.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00030776_0001025867.json) · [视觉原始输出](evidence/visual/frame_00030776_0001025867.json)
+
 OCR 原文：
 
 ```text
@@ -101342,6 +102435,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:17:06
 
 ![教学画面](frames/frame_00030797_0001026567.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00030797_0001026567.json) · [视觉原始输出](evidence/visual/frame_00030797_0001026567.json)
 
 OCR 原文：
 
@@ -101549,6 +102644,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00031102_0001036733.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00031102_0001036733.json) · [视觉原始输出](evidence/visual/frame_00031102_0001036733.json)
+
 OCR 原文：
 
 ```text
@@ -101738,6 +102835,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:17:17
 
 ![教学画面](frames/frame_00031115_0001037167.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00031115_0001037167.json) · [视觉原始输出](evidence/visual/frame_00031115_0001037167.json)
 
 OCR 原文：
 
@@ -101953,6 +103052,8 @@ Man wearing glasses and a beige jacket sitting on a wooden table with a tablet d
 ### 画面 00:17:18
 
 ![教学画面](frames/frame_00031148_0001038267.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00031148_0001038267.json) · [视觉原始输出](evidence/visual/frame_00031148_0001038267.json)
 
 OCR 原文：
 
@@ -102190,6 +103291,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00031157_0001038567.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00031157_0001038567.json) · [视觉原始输出](evidence/visual/frame_00031157_0001038567.json)
+
 OCR 原文：
 
 ```text
@@ -102394,6 +103497,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 
 ![教学画面](frames/frame_00031438_0001047933.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00031438_0001047933.json) · [视觉原始输出](evidence/visual/frame_00031438_0001047933.json)
+
 OCR 原文：
 
 ```text
@@ -102540,6 +103645,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00031439_0001047967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00031439_0001047967.json) · [视觉原始输出](evidence/visual/frame_00031439_0001047967.json)
+
 OCR 原文：
 
 ```text
@@ -102664,6 +103771,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:17:28
 
 ![教学画面](frames/frame_00031448_0001048267.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00031448_0001048267.json) · [视觉原始输出](evidence/visual/frame_00031448_0001048267.json)
 
 OCR 原文：
 
@@ -102800,6 +103909,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00031448_0001048267.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00031448_0001048267.json) · [视觉原始输出](evidence/visual/frame_00031448_0001048267.json)
+
 OCR 原文：
 
 ```text
@@ -102924,6 +104035,8 @@ Man sitting on a wooden table using a tablet with a screen, connected by wires (
 ### 画面 00:17:31
 
 ![教学画面](frames/frame_00031546_0001051533.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00031546_0001051533.json) · [视觉原始输出](evidence/visual/frame_00031546_0001051533.json)
 
 OCR 原文：
 
@@ -103079,6 +104192,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00031560_0001052000.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00031560_0001052000.json) · [视觉原始输出](evidence/visual/frame_00031560_0001052000.json)
+
 OCR 原文：
 
 ```text
@@ -103225,6 +104340,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:17:34
 
 ![教学画面](frames/frame_00031640_0001054667.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00031640_0001054667.json) · [视觉原始输出](evidence/visual/frame_00031640_0001054667.json)
 
 OCR 原文：
 
@@ -103421,6 +104538,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00031645_0001054833.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00031645_0001054833.json) · [视觉原始输出](evidence/visual/frame_00031645_0001054833.json)
+
 OCR 原文：
 
 ```text
@@ -103584,6 +104703,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:17:35
 
 ![教学画面](frames/frame_00031675_0001055833.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00031675_0001055833.json) · [视觉原始输出](evidence/visual/frame_00031675_0001055833.json)
 
 OCR 原文：
 
@@ -103756,6 +104877,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00031680_0001056000.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00031680_0001056000.json) · [视觉原始输出](evidence/visual/frame_00031680_0001056000.json)
+
 OCR 原文：
 
 ```text
@@ -103927,6 +105050,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:17:43
 
 ![教学画面](frames/frame_00031893_0001063100.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00031893_0001063100.json) · [视觉原始输出](evidence/visual/frame_00031893_0001063100.json)
 
 OCR 原文：
 
@@ -104101,6 +105226,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:17:43
 
 ![教学画面](frames/frame_00031902_0001063400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00031902_0001063400.json) · [视觉原始输出](evidence/visual/frame_00031902_0001063400.json)
 
 OCR 原文：
 
@@ -104281,6 +105408,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00031994_0001066467.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00031994_0001066467.json) · [视觉原始输出](evidence/visual/frame_00031994_0001066467.json)
+
 OCR 原文：
 
 ```text
@@ -104424,6 +105553,8 @@ Man sitting on a wooden table using a tablet device, focused on their hand (no v
 ### 画面 00:17:46
 
 ![教学画面](frames/frame_00032004_0001066800.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00032004_0001066800.json) · [视觉原始输出](evidence/visual/frame_00032004_0001066800.json)
 
 OCR 原文：
 
@@ -104615,6 +105746,8 @@ Man sitting on a wooden table using a tablet device, focused on their hand (no v
 
 ![教学画面](frames/frame_00032046_0001068200.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00032046_0001068200.json) · [视觉原始输出](evidence/visual/frame_00032046_0001068200.json)
+
 OCR 原文：
 
 ```text
@@ -104769,6 +105902,8 @@ Man sitting on a wooden table using a tablet device, focused on eyes (no visible
 ### 画面 00:17:55
 
 ![教学画面](frames/frame_00032250_0001075000.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00032250_0001075000.json) · [视觉原始输出](evidence/visual/frame_00032250_0001075000.json)
 
 OCR 原文：
 
@@ -104938,6 +106073,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:17:56
 
 ![教学画面](frames/frame_00032280_0001076000.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00032280_0001076000.json) · [视觉原始输出](evidence/visual/frame_00032280_0001076000.json)
 
 OCR 原文：
 
@@ -105120,6 +106257,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:17:56
 
 ![教学画面](frames/frame_00032303_0001076767.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00032303_0001076767.json) · [视觉原始输出](evidence/visual/frame_00032303_0001076767.json)
 
 OCR 原文：
 
@@ -105309,6 +106448,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00032347_0001078233.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00032347_0001078233.json) · [视觉原始输出](evidence/visual/frame_00032347_0001078233.json)
+
 OCR 原文：
 
 ```text
@@ -105486,6 +106627,8 @@ Man sitting on a wooden table using a tablet with a screen, connected by a cable
 ### 画面 00:17:58
 
 ![教学画面](frames/frame_00032356_0001078533.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00032356_0001078533.json) · [视觉原始输出](evidence/visual/frame_00032356_0001078533.json)
 
 OCR 原文：
 
@@ -105665,6 +106808,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00032356_0001078533.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00032356_0001078533.json) · [视觉原始输出](evidence/visual/frame_00032356_0001078533.json)
+
 OCR 原文：
 
 ```text
@@ -105832,6 +106977,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 ### 画面 00:18:00
 
 ![教学画面](frames/frame_00032403_0001080100.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00032403_0001080100.json) · [视觉原始输出](evidence/visual/frame_00032403_0001080100.json)
 
 OCR 原文：
 
@@ -106009,6 +107156,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00032421_0001080700.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00032421_0001080700.json) · [视觉原始输出](evidence/visual/frame_00032421_0001080700.json)
+
 OCR 原文：
 
 ```text
@@ -106172,6 +107321,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:18:01
 
 ![教学画面](frames/frame_00032433_0001081100.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00032433_0001081100.json) · [视觉原始输出](evidence/visual/frame_00032433_0001081100.json)
 
 OCR 原文：
 
@@ -106348,6 +107499,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:18:01
 
 ![教学画面](frames/frame_00032439_0001081300.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00032439_0001081300.json) · [视觉原始输出](evidence/visual/frame_00032439_0001081300.json)
 
 OCR 原文：
 
@@ -106550,6 +107703,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00032497_0001083233.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00032497_0001083233.json) · [视觉原始输出](evidence/visual/frame_00032497_0001083233.json)
+
 OCR 原文：
 
 ```text
@@ -106732,6 +107887,8 @@ Man sitting on a wooden table with a tablet and microphone, wearing glasses and 
 
 ![教学画面](frames/frame_00032513_0001083767.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00032513_0001083767.json) · [视觉原始输出](evidence/visual/frame_00032513_0001083767.json)
+
 OCR 原文：
 
 ```text
@@ -106913,6 +108070,8 @@ Man sitting on a wooden table with a tablet and microphone, gesturing with his h
 ### 画面 00:18:15
 
 ![教学画面](frames/frame_00032857_0001095233.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00032857_0001095233.json) · [视觉原始输出](evidence/visual/frame_00032857_0001095233.json)
 
 OCR 原文：
 
@@ -107099,6 +108258,8 @@ Man sitting on a wooden table using a tablet device, gesturing with her hand (no
 
 ![教学画面](frames/frame_00032866_0001095533.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00032866_0001095533.json) · [视觉原始输出](evidence/visual/frame_00032866_0001095533.json)
+
 OCR 原文：
 
 ```text
@@ -107282,6 +108443,8 @@ Man sitting on a wooden table using a tablet device, gesturing with her hand (no
 
 ![教学画面](frames/frame_00032925_0001097500.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00032925_0001097500.json) · [视觉原始输出](evidence/visual/frame_00032925_0001097500.json)
+
 OCR 原文：
 
 ```text
@@ -107463,6 +108626,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 
 ![教学画面](frames/frame_00032937_0001097900.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00032937_0001097900.json) · [视觉原始输出](evidence/visual/frame_00032937_0001097900.json)
+
 OCR 原文：
 
 ```text
@@ -107642,6 +108807,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:18:18
 
 ![教学画面](frames/frame_00032965_0001098833.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00032965_0001098833.json) · [视觉原始输出](evidence/visual/frame_00032965_0001098833.json)
 
 OCR 原文：
 
@@ -107851,6 +109018,8 @@ Man sitting on a wooden table using a tablet with a microphone, gesturing while 
 
 ![教学画面](frames/frame_00032995_0001099833.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00032995_0001099833.json) · [视觉原始输出](evidence/visual/frame_00032995_0001099833.json)
+
 OCR 原文：
 
 ```text
@@ -108051,6 +109220,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:18:20
 
 ![教学画面](frames/frame_00033000_0001100000.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00033000_0001100000.json) · [视觉原始输出](evidence/visual/frame_00033000_0001100000.json)
 
 OCR 原文：
 
@@ -108263,6 +109434,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00033000_0001100000.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00033000_0001100000.json) · [视觉原始输出](evidence/visual/frame_00033000_0001100000.json)
+
 OCR 原文：
 
 ```text
@@ -108463,6 +109636,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:18:43
 
 ![教学画面](frames/frame_00033693_0001123100.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00033693_0001123100.json) · [视觉原始输出](evidence/visual/frame_00033693_0001123100.json)
 
 OCR 原文：
 
@@ -108716,6 +109891,8 @@ Man sitting at a wooden table using a tablet with a screen, no visible text or s
 
 ![教学画面](frames/frame_00033702_0001123400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00033702_0001123400.json) · [视觉原始输出](evidence/visual/frame_00033702_0001123400.json)
+
 OCR 原文：
 
 ```text
@@ -108935,6 +110112,8 @@ Man sitting at a wooden table using a tablet with a pen, no visible text or symb
 
 ![教学画面](frames/frame_00034110_0001137000.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00034110_0001137000.json) · [视觉原始输出](evidence/visual/frame_00034110_0001137000.json)
+
 OCR 原文：
 
 ```text
@@ -109146,6 +110325,8 @@ Man sitting on a wooden table using a tablet device, gesturing with his hand (no
 ### 画面 00:18:57
 
 ![教学画面](frames/frame_00034119_0001137300.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00034119_0001137300.json) · [视觉原始输出](evidence/visual/frame_00034119_0001137300.json)
 
 OCR 原文：
 
@@ -109368,6 +110549,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:18:59
 
 ![教学画面](frames/frame_00034188_0001139600.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00034188_0001139600.json) · [视觉原始输出](evidence/visual/frame_00034188_0001139600.json)
 
 OCR 原文：
 
@@ -109658,6 +110841,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00034188_0001139600.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00034188_0001139600.json) · [视觉原始输出](evidence/visual/frame_00034188_0001139600.json)
+
 OCR 原文：
 
 ```text
@@ -109937,6 +111122,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00034211_0001140367.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00034211_0001140367.json) · [视觉原始输出](evidence/visual/frame_00034211_0001140367.json)
+
 OCR 原文：
 
 ```text
@@ -110190,6 +111377,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:19:01
 
 ![教学画面](frames/frame_00034230_0001141000.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00034230_0001141000.json) · [视觉原始输出](evidence/visual/frame_00034230_0001141000.json)
 
 OCR 原文：
 
@@ -110454,6 +111643,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:19:10
 
 ![教学画面](frames/frame_00034511_0001150367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00034511_0001150367.json) · [视觉原始输出](evidence/visual/frame_00034511_0001150367.json)
 
 OCR 原文：
 
@@ -110723,6 +111914,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:19:11
 
 ![教学画面](frames/frame_00034541_0001151367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00034541_0001151367.json) · [视觉原始输出](evidence/visual/frame_00034541_0001151367.json)
 
 OCR 原文：
 
@@ -111009,6 +112202,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00034566_0001152200.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00034566_0001152200.json) · [视觉原始输出](evidence/visual/frame_00034566_0001152200.json)
+
 OCR 原文：
 
 ```text
@@ -111275,6 +112470,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00034597_0001153233.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00034597_0001153233.json) · [视觉原始输出](evidence/visual/frame_00034597_0001153233.json)
+
 OCR 原文：
 
 ```text
@@ -111534,6 +112731,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00034627_0001154233.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00034627_0001154233.json) · [视觉原始输出](evidence/visual/frame_00034627_0001154233.json)
+
 OCR 原文：
 
 ```text
@@ -111772,6 +112971,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:19:15
 
 ![教学画面](frames/frame_00034657_0001155233.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00034657_0001155233.json) · [视觉原始输出](evidence/visual/frame_00034657_0001155233.json)
 
 OCR 原文：
 
@@ -112037,6 +113238,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00034666_0001155533.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00034666_0001155533.json) · [视觉原始输出](evidence/visual/frame_00034666_0001155533.json)
+
 OCR 原文：
 
 ```text
@@ -112229,6 +113432,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:19:16
 
 ![教学画面](frames/frame_00034700_0001156667.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00034700_0001156667.json) · [视觉原始输出](evidence/visual/frame_00034700_0001156667.json)
 
 OCR 原文：
 
@@ -112513,6 +113718,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00034725_0001157500.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00034725_0001157500.json) · [视觉原始输出](evidence/visual/frame_00034725_0001157500.json)
+
 OCR 原文：
 
 ```text
@@ -112715,6 +113922,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:19:17
 
 ![教学画面](frames/frame_00034730_0001157667.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00034730_0001157667.json) · [视觉原始输出](evidence/visual/frame_00034730_0001157667.json)
 
 OCR 原文：
 
@@ -112933,6 +114142,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00034738_0001157933.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00034738_0001157933.json) · [视觉原始输出](evidence/visual/frame_00034738_0001157933.json)
+
 OCR 原文：
 
 ```text
@@ -113124,6 +114335,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:19:18
 
 ![教学画面](frames/frame_00034746_0001158200.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00034746_0001158200.json) · [视觉原始输出](evidence/visual/frame_00034746_0001158200.json)
 
 OCR 原文：
 
@@ -113351,6 +114564,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00034776_0001159200.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00034776_0001159200.json) · [视觉原始输出](evidence/visual/frame_00034776_0001159200.json)
+
 OCR 原文：
 
 ```text
@@ -113552,6 +114767,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:19:19
 
 ![教学画面](frames/frame_00034793_0001159767.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00034793_0001159767.json) · [视觉原始输出](evidence/visual/frame_00034793_0001159767.json)
 
 OCR 原文：
 
@@ -113794,6 +115011,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00034805_0001160167.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00034805_0001160167.json) · [视觉原始输出](evidence/visual/frame_00034805_0001160167.json)
+
 OCR 原文：
 
 ```text
@@ -114018,6 +115237,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00034823_0001160767.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00034823_0001160767.json) · [视觉原始输出](evidence/visual/frame_00034823_0001160767.json)
+
 OCR 原文：
 
 ```text
@@ -114234,6 +115455,8 @@ Man wearing glasses and a beige shirt sitting on a wooden table using a tablet d
 ### 画面 00:19:21
 
 ![教学画面](frames/frame_00034830_0001161000.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00034830_0001161000.json) · [视觉原始输出](evidence/visual/frame_00034830_0001161000.json)
 
 OCR 原文：
 
@@ -114460,6 +115683,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00035065_0001168833.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00035065_0001168833.json) · [视觉原始输出](evidence/visual/frame_00035065_0001168833.json)
+
 OCR 原文：
 
 ```text
@@ -114674,6 +115899,8 @@ Man sitting on a wooden table using a tablet device, gesturing with her hand (no
 ### 画面 00:19:29
 
 ![教学画面](frames/frame_00035095_0001169833.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00035095_0001169833.json) · [视觉原始输出](evidence/visual/frame_00035095_0001169833.json)
 
 OCR 原文：
 
@@ -114918,6 +116145,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00035100_0001170000.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00035100_0001170000.json) · [视觉原始输出](evidence/visual/frame_00035100_0001170000.json)
+
 OCR 原文：
 
 ```text
@@ -115155,6 +116384,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:19:32
 
 ![教学画面](frames/frame_00035186_0001172867.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00035186_0001172867.json) · [视觉原始输出](evidence/visual/frame_00035186_0001172867.json)
 
 OCR 原文：
 
@@ -115406,6 +116637,8 @@ Man wearing glasses and a beige shirt sitting on a wooden table with a tablet an
 
 ![教学画面](frames/frame_00035202_0001173400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00035202_0001173400.json) · [视觉原始输出](evidence/visual/frame_00035202_0001173400.json)
+
 OCR 原文：
 
 ```text
@@ -115630,6 +116863,8 @@ Man wearing glasses and a beige shirt sitting at a wooden table with a tablet an
 ### 画面 00:19:35
 
 ![教学画面](frames/frame_00035271_0001175700.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00035271_0001175700.json) · [视觉原始输出](evidence/visual/frame_00035271_0001175700.json)
 
 OCR 原文：
 
@@ -115875,6 +117110,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00035288_0001176267.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00035288_0001176267.json) · [视觉原始输出](evidence/visual/frame_00035288_0001176267.json)
+
 OCR 原文：
 
 ```text
@@ -116094,6 +117331,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:19:43
 
 ![教学画面](frames/frame_00035502_0001183400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00035502_0001183400.json) · [视觉原始输出](evidence/visual/frame_00035502_0001183400.json)
 
 OCR 原文：
 
@@ -116315,6 +117554,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00035511_0001183700.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00035511_0001183700.json) · [视觉原始输出](evidence/visual/frame_00035511_0001183700.json)
+
 OCR 原文：
 
 ```text
@@ -116534,6 +117775,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:19:44
 
 ![教学画面](frames/frame_00035541_0001184700.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00035541_0001184700.json) · [视觉原始输出](evidence/visual/frame_00035541_0001184700.json)
 
 OCR 原文：
 
@@ -116759,6 +118002,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:19:44
 
 ![教学画面](frames/frame_00035547_0001184900.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00035547_0001184900.json) · [视觉原始输出](evidence/visual/frame_00035547_0001184900.json)
 
 OCR 原文：
 
@@ -116987,6 +118232,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:19:46
 
 ![教学画面](frames/frame_00035583_0001186100.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00035583_0001186100.json) · [视觉原始输出](evidence/visual/frame_00035583_0001186100.json)
 
 OCR 原文：
 
@@ -117263,6 +118510,8 @@ Man speaking at a wooden table with a tablet and microphone, gesturing with hand
 
 ![教学画面](frames/frame_00035596_0001186533.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00035596_0001186533.json) · [视觉原始输出](evidence/visual/frame_00035596_0001186533.json)
+
 OCR 原文：
 
 ```text
@@ -117520,6 +118769,8 @@ Man wearing glasses and a beige jacket sitting on a wooden table with a tablet a
 
 ![教学画面](frames/frame_00035621_0001187367.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00035621_0001187367.json) · [视觉原始输出](evidence/visual/frame_00035621_0001187367.json)
+
 OCR 原文：
 
 ```text
@@ -117700,6 +118951,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00035626_0001187533.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00035626_0001187533.json) · [视觉原始输出](evidence/visual/frame_00035626_0001187533.json)
+
 OCR 原文：
 
 ```text
@@ -117795,6 +119048,8 @@ Man sitting on a wooden table using a tablet with a microphone, no visible text 
 ### 画面 00:19:47
 
 ![教学画面](frames/frame_00035631_0001187700.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00035631_0001187700.json) · [视觉原始输出](evidence/visual/frame_00035631_0001187700.json)
 
 OCR 原文：
 
@@ -117896,6 +119151,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 ### 画面 00:19:54
 
 ![教学画面](frames/frame_00035829_0001194300.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00035829_0001194300.json) · [视觉原始输出](evidence/visual/frame_00035829_0001194300.json)
 
 OCR 原文：
 
@@ -118004,6 +119261,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:19:54
 
 ![教学画面](frames/frame_00035838_0001194600.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00035838_0001194600.json) · [视觉原始输出](evidence/visual/frame_00035838_0001194600.json)
 
 OCR 原文：
 
@@ -118128,6 +119387,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00035838_0001194600.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00035838_0001194600.json) · [视觉原始输出](evidence/visual/frame_00035838_0001194600.json)
+
 OCR 原文：
 
 ```text
@@ -118241,6 +119502,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00036094_0001203133.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00036094_0001203133.json) · [视觉原始输出](evidence/visual/frame_00036094_0001203133.json)
+
 OCR 原文：
 
 ```text
@@ -118348,6 +119611,8 @@ Man wearing glasses and a beige shirt sitting on a wooden table with a tablet an
 
 ![教学画面](frames/frame_00036103_0001203433.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00036103_0001203433.json) · [视觉原始输出](evidence/visual/frame_00036103_0001203433.json)
+
 OCR 原文：
 
 ```text
@@ -118449,6 +119714,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:20:04
 
 ![教学画面](frames/frame_00036148_0001204933.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00036148_0001204933.json) · [视觉原始输出](evidence/visual/frame_00036148_0001204933.json)
 
 OCR 原文：
 
@@ -118554,6 +119821,8 @@ Man sitting on a wooden stool using a tablet device, no visible text or symbols
 ### 画面 00:20:05
 
 ![教学画面](frames/frame_00036169_0001205633.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00036169_0001205633.json) · [视觉原始输出](evidence/visual/frame_00036169_0001205633.json)
 
 OCR 原文：
 
@@ -118687,6 +119956,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00036178_0001205933.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00036178_0001205933.json) · [视觉原始输出](evidence/visual/frame_00036178_0001205933.json)
+
 OCR 原文：
 
 ```text
@@ -118818,6 +120089,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:20:06
 
 ![教学画面](frames/frame_00036208_0001206933.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00036208_0001206933.json) · [视觉原始输出](evidence/visual/frame_00036208_0001206933.json)
 
 OCR 原文：
 
@@ -118962,6 +120235,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00036234_0001207800.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00036234_0001207800.json) · [视觉原始输出](evidence/visual/frame_00036234_0001207800.json)
+
 OCR 原文：
 
 ```text
@@ -119095,6 +120370,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00036829_0001227633.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00036829_0001227633.json) · [视觉原始输出](evidence/visual/frame_00036829_0001227633.json)
+
 OCR 原文：
 
 ```text
@@ -119205,6 +120482,8 @@ Man sitting at a wooden table using a tablet with a USB flash, no visible text o
 ### 画面 00:20:27
 
 ![教学画面](frames/frame_00036830_0001227667.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00036830_0001227667.json) · [视觉原始输出](evidence/visual/frame_00036830_0001227667.json)
 
 OCR 原文：
 
@@ -119335,6 +120614,8 @@ Man sitting at a wooden table using a tablet with a USB flash, no visible text o
 
 ![教学画面](frames/frame_00036839_0001227967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00036839_0001227967.json) · [视觉原始输出](evidence/visual/frame_00036839_0001227967.json)
+
 OCR 原文：
 
 ```text
@@ -119464,6 +120745,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00036839_0001227967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00036839_0001227967.json) · [视觉原始输出](evidence/visual/frame_00036839_0001227967.json)
+
 OCR 原文：
 
 ```text
@@ -119582,6 +120865,8 @@ Man sitting on a wooden table using a tablet with a microphone, no visible text 
 ### 画面 00:20:30
 
 ![教学画面](frames/frame_00036910_0001230333.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00036910_0001230333.json) · [视觉原始输出](evidence/visual/frame_00036910_0001230333.json)
 
 OCR 原文：
 
@@ -119725,6 +121010,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:20:30
 
 ![教学画面](frames/frame_00036923_0001230767.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00036923_0001230767.json) · [视觉原始输出](evidence/visual/frame_00036923_0001230767.json)
 
 OCR 原文：
 
@@ -119875,6 +121162,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:20:33
 
 ![教学画面](frames/frame_00036991_0001233033.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00036991_0001233033.json) · [视觉原始输出](evidence/visual/frame_00036991_0001233033.json)
 
 OCR 原文：
 
@@ -120040,6 +121329,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00037004_0001233467.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00037004_0001233467.json) · [视觉原始输出](evidence/visual/frame_00037004_0001233467.json)
+
 OCR 原文：
 
 ```text
@@ -120203,6 +121494,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:20:34
 
 ![教学画面](frames/frame_00037045_0001234833.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00037045_0001234833.json) · [视觉原始输出](evidence/visual/frame_00037045_0001234833.json)
 
 OCR 原文：
 
@@ -120369,6 +121662,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:20:35
 
 ![教学画面](frames/frame_00037054_0001235133.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00037054_0001235133.json) · [视觉原始输出](evidence/visual/frame_00037054_0001235133.json)
 
 OCR 原文：
 
@@ -120559,6 +121854,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:20:36
 
 ![教学画面](frames/frame_00037091_0001236367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00037091_0001236367.json) · [视觉原始输出](evidence/visual/frame_00037091_0001236367.json)
 
 OCR 原文：
 
@@ -120779,6 +122076,8 @@ Man sitting on a wooden table using a tablet with a screen, gesturing while spea
 
 ![教学画面](frames/frame_00037100_0001236667.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00037100_0001236667.json) · [视觉原始输出](evidence/visual/frame_00037100_0001236667.json)
+
 OCR 原文：
 
 ```text
@@ -120967,6 +122266,8 @@ Man sitting on a wooden table using a tablet with a microphone, gesturing while 
 ### 画面 00:20:39
 
 ![教学画面](frames/frame_00037172_0001239067.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00037172_0001239067.json) · [视觉原始输出](evidence/visual/frame_00037172_0001239067.json)
 
 OCR 原文：
 
@@ -121206,6 +122507,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:20:39
 
 ![教学画面](frames/frame_00037182_0001239400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00037182_0001239400.json) · [视觉原始输出](evidence/visual/frame_00037182_0001239400.json)
 
 OCR 原文：
 
@@ -121451,6 +122754,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00037269_0001242300.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00037269_0001242300.json) · [视觉原始输出](evidence/visual/frame_00037269_0001242300.json)
+
 OCR 原文：
 
 ```text
@@ -121665,6 +122970,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:20:42
 
 ![教学画面](frames/frame_00037274_0001242467.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00037274_0001242467.json) · [视觉原始输出](evidence/visual/frame_00037274_0001242467.json)
 
 OCR 原文：
 
@@ -121883,6 +123190,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00037283_0001242767.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00037283_0001242767.json) · [视觉原始输出](evidence/visual/frame_00037283_0001242767.json)
+
 OCR 原文：
 
 ```text
@@ -122100,6 +123409,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00037317_0001243900.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00037317_0001243900.json) · [视觉原始输出](evidence/visual/frame_00037317_0001243900.json)
+
 OCR 原文：
 
 ```text
@@ -122299,6 +123610,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:20:44
 
 ![教学画面](frames/frame_00037326_0001244200.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00037326_0001244200.json) · [视觉原始输出](evidence/visual/frame_00037326_0001244200.json)
 
 OCR 原文：
 
@@ -122541,6 +123854,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00037579_0001252633.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00037579_0001252633.json) · [视觉原始输出](evidence/visual/frame_00037579_0001252633.json)
+
 OCR 原文：
 
 ```text
@@ -122757,6 +124072,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 ### 画面 00:20:53
 
 ![教学画面](frames/frame_00037607_0001253567.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00037607_0001253567.json) · [视觉原始输出](evidence/visual/frame_00037607_0001253567.json)
 
 OCR 原文：
 
@@ -123003,6 +124320,8 @@ Man speaking at a wooden table with a tablet and microphone, wearing glasses and
 
 ![教学画面](frames/frame_00037725_0001257500.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00037725_0001257500.json) · [视觉原始输出](evidence/visual/frame_00037725_0001257500.json)
+
 OCR 原文：
 
 ```text
@@ -123210,6 +124529,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 ### 画面 00:20:57
 
 ![教学画面](frames/frame_00037734_0001257800.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00037734_0001257800.json) · [视觉原始输出](evidence/visual/frame_00037734_0001257800.json)
 
 OCR 原文：
 
@@ -123434,6 +124755,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00037734_0001257800.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00037734_0001257800.json) · [视觉原始输出](evidence/visual/frame_00037734_0001257800.json)
+
 OCR 原文：
 
 ```text
@@ -123646,6 +124969,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:21:06
 
 ![教学画面](frames/frame_00037999_0001266633.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00037999_0001266633.json) · [视觉原始输出](evidence/visual/frame_00037999_0001266633.json)
 
 OCR 原文：
 
@@ -123882,6 +125207,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00038010_0001267000.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00038010_0001267000.json) · [视觉原始输出](evidence/visual/frame_00038010_0001267000.json)
+
 OCR 原文：
 
 ```text
@@ -124117,6 +125444,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00038124_0001270800.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00038124_0001270800.json) · [视觉原始输出](evidence/visual/frame_00038124_0001270800.json)
+
 OCR 原文：
 
 ```text
@@ -124316,6 +125645,8 @@ Man wearing glasses and a beige shirt sitting on a wooden table using a tablet d
 
 ![教学画面](frames/frame_00038133_0001271100.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00038133_0001271100.json) · [视觉原始输出](evidence/visual/frame_00038133_0001271100.json)
+
 OCR 原文：
 
 ```text
@@ -124514,6 +125845,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:21:17
 
 ![教学画面](frames/frame_00038329_0001277633.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00038329_0001277633.json) · [视觉原始输出](evidence/visual/frame_00038329_0001277633.json)
 
 OCR 原文：
 
@@ -124741,6 +126074,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:21:18
 
 ![教学画面](frames/frame_00038340_0001278000.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00038340_0001278000.json) · [视觉原始输出](evidence/visual/frame_00038340_0001278000.json)
 
 OCR 原文：
 
@@ -124983,6 +126318,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:21:26
 
 ![教学画面](frames/frame_00038602_0001286733.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00038602_0001286733.json) · [视觉原始输出](evidence/visual/frame_00038602_0001286733.json)
 
 OCR 原文：
 
@@ -125255,6 +126592,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:21:27
 
 ![教学画面](frames/frame_00038622_0001287400.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00038622_0001287400.json) · [视觉原始输出](evidence/visual/frame_00038622_0001287400.json)
 
 OCR 原文：
 
@@ -125546,6 +126885,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00038622_0001287400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00038622_0001287400.json) · [视觉原始输出](evidence/visual/frame_00038622_0001287400.json)
+
 OCR 原文：
 
 ```text
@@ -125825,6 +127166,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:21:31
 
 ![教学画面](frames/frame_00038730_0001291000.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00038730_0001291000.json) · [视觉原始输出](evidence/visual/frame_00038730_0001291000.json)
 
 OCR 原文：
 
@@ -126263,6 +127606,8 @@ Man sitting on a wooden table using a tablet with a microphone, gesturing while 
 
 ![教学画面](frames/frame_00038739_0001291300.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00038739_0001291300.json) · [视觉原始输出](evidence/visual/frame_00038739_0001291300.json)
+
 OCR 原文：
 
 ```text
@@ -126535,6 +127880,8 @@ Man sitting on a wooden table using a tablet device, gesturing with hands (no vi
 
 ![教学画面](frames/frame_00038997_0001299900.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00038997_0001299900.json) · [视觉原始输出](evidence/visual/frame_00038997_0001299900.json)
+
 OCR 原文：
 
 ```text
@@ -126722,6 +128069,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00038999_0001299967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00038999_0001299967.json) · [视觉原始输出](evidence/visual/frame_00038999_0001299967.json)
+
 OCR 原文：
 
 ```text
@@ -126798,6 +128147,8 @@ Finding Nemo
 ### 画面 00:21:40
 
 ![教学画面](frames/frame_00039008_0001300267.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00039008_0001300267.json) · [视觉原始输出](evidence/visual/frame_00039008_0001300267.json)
 
 OCR 原文：
 
@@ -126888,6 +128239,8 @@ Finding Nemo
 ### 画面 00:21:47
 
 ![教学画面](frames/frame_00039224_0001307467.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00039224_0001307467.json) · [视觉原始输出](evidence/visual/frame_00039224_0001307467.json)
 
 OCR 原文：
 
@@ -126984,6 +128337,8 @@ Finding Nemo
 
 ![教学画面](frames/frame_00039239_0001307967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00039239_0001307967.json) · [视觉原始输出](evidence/visual/frame_00039239_0001307967.json)
+
 OCR 原文：
 
 ```text
@@ -127060,6 +128415,8 @@ Finding Nemo
 ### 画面 00:21:48
 
 ![教学画面](frames/frame_00039254_0001308467.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00039254_0001308467.json) · [视觉原始输出](evidence/visual/frame_00039254_0001308467.json)
 
 OCR 原文：
 
@@ -127138,6 +128495,8 @@ Finding Nemo
 
 ![教学画面](frames/frame_00039269_0001308967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00039269_0001308967.json) · [视觉原始输出](evidence/visual/frame_00039269_0001308967.json)
+
 OCR 原文：
 
 ```text
@@ -127214,6 +128573,8 @@ Finding Nemo
 ### 画面 00:21:49
 
 ![教学画面](frames/frame_00039279_0001309300.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00039279_0001309300.json) · [视觉原始输出](evidence/visual/frame_00039279_0001309300.json)
 
 OCR 原文：
 
@@ -127305,6 +128666,8 @@ Finding Nemo
 
 ![教学画面](frames/frame_00039284_0001309467.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00039284_0001309467.json) · [视觉原始输出](evidence/visual/frame_00039284_0001309467.json)
+
 OCR 原文：
 
 ```text
@@ -127389,6 +128752,8 @@ Finding Nemo
 
 ![教学画面](frames/frame_00039303_0001310100.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00039303_0001310100.json) · [视觉原始输出](evidence/visual/frame_00039303_0001310100.json)
+
 OCR 原文：
 
 ```text
@@ -127465,6 +128830,8 @@ Finding Nemo
 ### 画面 00:21:50
 
 ![教学画面](frames/frame_00039314_0001310467.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00039314_0001310467.json) · [视觉原始输出](evidence/visual/frame_00039314_0001310467.json)
 
 OCR 原文：
 
@@ -127550,6 +128917,8 @@ Finding Nemo
 
 ![教学画面](frames/frame_00039320_0001310667.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00039320_0001310667.json) · [视觉原始输出](evidence/visual/frame_00039320_0001310667.json)
+
 OCR 原文：
 
 ```text
@@ -127634,6 +129003,8 @@ Finding Nemo
 
 ![教学画面](frames/frame_00039335_0001311167.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00039335_0001311167.json) · [视觉原始输出](evidence/visual/frame_00039335_0001311167.json)
+
 OCR 原文：
 
 ```text
@@ -127711,6 +129082,8 @@ Finding Nemo
 
 ![教学画面](frames/frame_00039344_0001311467.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00039344_0001311467.json) · [视觉原始输出](evidence/visual/frame_00039344_0001311467.json)
+
 OCR 原文：
 
 ```text
@@ -127780,6 +129153,8 @@ Finding Nemo
 ### 画面 00:21:52
 
 ![教学画面](frames/frame_00039365_0001312167.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00039365_0001312167.json) · [视觉原始输出](evidence/visual/frame_00039365_0001312167.json)
 
 OCR 原文：
 
@@ -127852,6 +129227,8 @@ Finding Nemo
 ### 画面 00:21:52
 
 ![教学画面](frames/frame_00039374_0001312467.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00039374_0001312467.json) · [视觉原始输出](evidence/visual/frame_00039374_0001312467.json)
 
 OCR 原文：
 
@@ -127934,6 +129311,8 @@ Finding Nemo
 
 ![教学画面](frames/frame_00039395_0001313167.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00039395_0001313167.json) · [视觉原始输出](evidence/visual/frame_00039395_0001313167.json)
+
 OCR 原文：
 
 ```text
@@ -128007,6 +129386,8 @@ Finding Nemo
 
 ![教学画面](frames/frame_00039404_0001313467.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00039404_0001313467.json) · [视觉原始输出](evidence/visual/frame_00039404_0001313467.json)
+
 OCR 原文：
 
 ```text
@@ -128079,6 +129460,8 @@ Finding Nemo
 ### 画面 00:21:54
 
 ![教学画面](frames/frame_00039425_0001314167.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00039425_0001314167.json) · [视觉原始输出](evidence/visual/frame_00039425_0001314167.json)
 
 OCR 原文：
 
@@ -128167,6 +129550,8 @@ Finding Nemo
 
 ![教学画面](frames/frame_00039433_0001314433.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00039433_0001314433.json) · [视觉原始输出](evidence/visual/frame_00039433_0001314433.json)
+
 OCR 原文：
 
 ```text
@@ -128239,6 +129624,8 @@ Finding Nemo
 ### 画面 00:21:54
 
 ![教学画面](frames/frame_00039434_0001314467.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00039434_0001314467.json) · [视觉原始输出](evidence/visual/frame_00039434_0001314467.json)
 
 OCR 原文：
 
@@ -128315,6 +129702,8 @@ Finding Nemo
 
 ![教学画面](frames/frame_00039463_0001315433.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00039463_0001315433.json) · [视觉原始输出](evidence/visual/frame_00039463_0001315433.json)
+
 OCR 原文：
 
 ```text
@@ -128385,6 +129774,8 @@ Finding Nemo
 
 ![教学画面](frames/frame_00039464_0001315467.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00039464_0001315467.json) · [视觉原始输出](evidence/visual/frame_00039464_0001315467.json)
+
 OCR 原文：
 
 ```text
@@ -128454,6 +129845,8 @@ Finding Nemo
 ### 画面 00:21:56
 
 ![教学画面](frames/frame_00039493_0001316433.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00039493_0001316433.json) · [视觉原始输出](evidence/visual/frame_00039493_0001316433.json)
 
 OCR 原文：
 
@@ -128526,6 +129919,8 @@ Finding Nemo
 
 ![教学画面](frames/frame_00039494_0001316467.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00039494_0001316467.json) · [视觉原始输出](evidence/visual/frame_00039494_0001316467.json)
+
 OCR 原文：
 
 ```text
@@ -128596,6 +129991,8 @@ Finding Nemo
 ### 画面 00:21:56
 
 ![教学画面](frames/frame_00039504_0001316800.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00039504_0001316800.json) · [视觉原始输出](evidence/visual/frame_00039504_0001316800.json)
 
 OCR 原文：
 
@@ -128681,6 +130078,8 @@ Finding Nemo
 
 ![教学画面](frames/frame_00039569_0001318967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00039569_0001318967.json) · [视觉原始输出](evidence/visual/frame_00039569_0001318967.json)
+
 OCR 原文：
 
 ```text
@@ -128760,6 +130159,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00039578_0001319267.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00039578_0001319267.json) · [视觉原始输出](evidence/visual/frame_00039578_0001319267.json)
+
 OCR 原文：
 
 ```text
@@ -128830,6 +130231,8 @@ say hi别这么无礼要自己去说那不要无礼don't be rude座位有人吗i
 
 ![教学画面](frames/frame_00039578_0001319267.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00039578_0001319267.json) · [视觉原始输出](evidence/visual/frame_00039578_0001319267.json)
+
 OCR 原文：
 
 ```text
@@ -128889,6 +130292,8 @@ Man sitting at a wooden table using a tablet device, connected by wires (no visi
 ### 画面 00:22:02
 
 ![教学画面](frames/frame_00039662_0001322067.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00039662_0001322067.json) · [视觉原始输出](evidence/visual/frame_00039662_0001322067.json)
 
 OCR 原文：
 
@@ -128970,6 +130375,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:22:02
 
 ![教学画面](frames/frame_00039675_0001322500.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00039675_0001322500.json) · [视觉原始输出](evidence/visual/frame_00039675_0001322500.json)
 
 OCR 原文：
 
@@ -129068,6 +130475,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00039699_0001323300.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00039699_0001323300.json) · [视觉原始输出](evidence/visual/frame_00039699_0001323300.json)
+
 OCR 原文：
 
 ```text
@@ -129165,6 +130574,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:22:07
 
 ![教学画面](frames/frame_00039810_0001327000.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00039810_0001327000.json) · [视觉原始输出](evidence/visual/frame_00039810_0001327000.json)
 
 OCR 原文：
 
@@ -129300,6 +130711,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00039832_0001327733.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00039832_0001327733.json) · [视觉原始输出](evidence/visual/frame_00039832_0001327733.json)
+
 OCR 原文：
 
 ```text
@@ -129434,6 +130847,8 @@ Man sitting at a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00040068_0001335600.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00040068_0001335600.json) · [视觉原始输出](evidence/visual/frame_00040068_0001335600.json)
+
 OCR 原文：
 
 ```text
@@ -129506,6 +130921,8 @@ Man wearing glasses and a beige shirt sitting on a wooden table with a tablet an
 ### 画面 00:22:15
 
 ![教学画面](frames/frame_00040069_0001335633.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00040069_0001335633.json) · [视觉原始输出](evidence/visual/frame_00040069_0001335633.json)
 
 OCR 原文：
 
@@ -129590,6 +131007,8 @@ Man sitting on a wooden table using a tablet with a screen, wearing glasses and 
 ### 画面 00:22:15
 
 ![教学画面](frames/frame_00040078_0001335933.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00040078_0001335933.json) · [视觉原始输出](evidence/visual/frame_00040078_0001335933.json)
 
 OCR 原文：
 
@@ -129681,6 +131100,8 @@ Man sitting at a wooden table using a tablet with a screen, no visible text or s
 
 ![教学画面](frames/frame_00040138_0001337933.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00040138_0001337933.json) · [视觉原始输出](evidence/visual/frame_00040138_0001337933.json)
+
 OCR 原文：
 
 ```text
@@ -129766,6 +131187,8 @@ Man wearing glasses and a beige shirt sitting at a wooden table with a tablet an
 ### 画面 00:22:18
 
 ![教学画面](frames/frame_00040151_0001338367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00040151_0001338367.json) · [视觉原始输出](evidence/visual/frame_00040151_0001338367.json)
 
 OCR 原文：
 
@@ -129867,6 +131290,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:22:19
 
 ![教学画面](frames/frame_00040181_0001339367.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00040181_0001339367.json) · [视觉原始输出](evidence/visual/frame_00040181_0001339367.json)
 
 OCR 原文：
 
@@ -129972,6 +131397,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:22:20
 
 ![教学画面](frames/frame_00040204_0001340133.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00040204_0001340133.json) · [视觉原始输出](evidence/visual/frame_00040204_0001340133.json)
 
 OCR 原文：
 
@@ -130090,6 +131517,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00040378_0001345933.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00040378_0001345933.json) · [视觉原始输出](evidence/visual/frame_00040378_0001345933.json)
+
 OCR 原文：
 
 ```text
@@ -130173,6 +131602,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00040379_0001345967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00040379_0001345967.json) · [视觉原始输出](evidence/visual/frame_00040379_0001345967.json)
+
 OCR 原文：
 
 ```text
@@ -130228,6 +131659,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:22:26
 
 ![教学画面](frames/frame_00040388_0001346267.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00040388_0001346267.json) · [视觉原始输出](evidence/visual/frame_00040388_0001346267.json)
 
 OCR 原文：
 
@@ -130299,6 +131732,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00040409_0001346967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00040409_0001346967.json) · [视觉原始输出](evidence/visual/frame_00040409_0001346967.json)
+
 OCR 原文：
 
 ```text
@@ -130365,6 +131800,8 @@ Man sitting at a wooden table using a tablet with a screen, no visible text or s
 
 ![教学画面](frames/frame_00040417_0001347233.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00040417_0001347233.json) · [视觉原始输出](evidence/visual/frame_00040417_0001347233.json)
+
 OCR 原文：
 
 ```text
@@ -130430,6 +131867,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 ### 画面 00:22:29
 
 ![教学画面](frames/frame_00040496_0001349867.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00040496_0001349867.json) · [视觉原始输出](evidence/visual/frame_00040496_0001349867.json)
 
 OCR 原文：
 
@@ -130524,6 +131963,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00040496_0001349867.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00040496_0001349867.json) · [视觉原始输出](evidence/visual/frame_00040496_0001349867.json)
+
 OCR 原文：
 
 ```text
@@ -130613,6 +132054,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00040501_0001350033.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00040501_0001350033.json) · [视觉原始输出](evidence/visual/frame_00040501_0001350033.json)
+
 OCR 原文：
 
 ```text
@@ -130700,6 +132143,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:22:30
 
 ![教学画面](frames/frame_00040519_0001350633.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00040519_0001350633.json) · [视觉原始输出](evidence/visual/frame_00040519_0001350633.json)
 
 OCR 原文：
 
@@ -130804,6 +132249,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 
 ![教学画面](frames/frame_00040644_0001354800.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00040644_0001354800.json) · [视觉原始输出](evidence/visual/frame_00040644_0001354800.json)
+
 OCR 原文：
 
 ```text
@@ -130907,6 +132354,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 ### 画面 00:22:35
 
 ![教学画面](frames/frame_00040654_0001355133.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00040654_0001355133.json) · [视觉原始输出](evidence/visual/frame_00040654_0001355133.json)
 
 OCR 原文：
 
@@ -131024,6 +132473,8 @@ Man wearing glasses and a beige shirt sitting on a wooden table using a tablet d
 ### 画面 00:22:48
 
 ![教学画面](frames/frame_00041049_0001368300.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00041049_0001368300.json) · [视觉原始输出](evidence/visual/frame_00041049_0001368300.json)
 
 OCR 原文：
 
@@ -131144,6 +132595,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 
 ![教学画面](frames/frame_00041058_0001368600.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00041058_0001368600.json) · [视觉原始输出](evidence/visual/frame_00041058_0001368600.json)
+
 OCR 原文：
 
 ```text
@@ -131262,6 +132715,8 @@ Man sitting on a wooden table using a tablet device (no visible text or symbols)
 ### 画面 00:22:51
 
 ![教学画面](frames/frame_00041131_0001371033.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00041131_0001371033.json) · [视觉原始输出](evidence/visual/frame_00041131_0001371033.json)
 
 OCR 原文：
 
@@ -131387,6 +132842,8 @@ Man sitting on a wooden table using a tablet device, gesturing with one hand (no
 ### 画面 00:22:51
 
 ![教学画面](frames/frame_00041140_0001371333.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00041140_0001371333.json) · [视觉原始输出](evidence/visual/frame_00041140_0001371333.json)
 
 OCR 原文：
 
@@ -131522,6 +132979,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00041140_0001371333.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00041140_0001371333.json) · [视觉原始输出](evidence/visual/frame_00041140_0001371333.json)
+
 OCR 原文：
 
 ```text
@@ -131646,6 +133105,8 @@ Man sitting on a wooden table using a tablet with a screen, no visible text or s
 
 ![教学画面](frames/frame_00041608_0001386933.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00041608_0001386933.json) · [视觉原始输出](evidence/visual/frame_00041608_0001386933.json)
+
 OCR 原文：
 
 ```text
@@ -131718,6 +133179,8 @@ Man sitting on a wooden table using a tablet with a screen, connected by wires (
 
 ![教学画面](frames/frame_00041609_0001386967.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00041609_0001386967.json) · [视觉原始输出](evidence/visual/frame_00041609_0001386967.json)
+
 OCR 原文：
 
 ```text
@@ -131762,6 +133225,8 @@ Man sitting on a wooden table using a tablet with a screen and cable, wearing gl
 ### 画面 00:23:07
 
 ![教学画面](frames/frame_00041619_0001387300.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00041619_0001387300.json) · [视觉原始输出](evidence/visual/frame_00041619_0001387300.json)
 
 OCR 原文：
 
@@ -131822,6 +133287,8 @@ Man sitting on a wooden table using a tablet with a screen, connected by wires (
 ### 画面 00:23:08
 
 ![教学画面](frames/frame_00041642_0001388067.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00041642_0001388067.json) · [视觉原始输出](evidence/visual/frame_00041642_0001388067.json)
 
 OCR 原文：
 
@@ -131903,6 +133370,8 @@ Man wearing glasses and a beige shirt sitting at a wooden table with a tablet an
 ### 画面 00:23:08
 
 ![教学画面](frames/frame_00041666_0001388867.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00041666_0001388867.json) · [视觉原始输出](evidence/visual/frame_00041666_0001388867.json)
 
 OCR 原文：
 
@@ -131989,6 +133458,8 @@ Man sitting on a wooden table using a tablet device, no visible text or symbols
 
 ![教学画面](frames/frame_00041982_0001399400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00041982_0001399400.json) · [视觉原始输出](evidence/visual/frame_00041982_0001399400.json)
+
 OCR 原文：
 
 ```text
@@ -132057,6 +133528,8 @@ Man wearing glasses and a white shirt sitting at a wooden table with a tablet an
 
 ![教学画面](frames/frame_00041987_0001399567.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00041987_0001399567.json) · [视觉原始输出](evidence/visual/frame_00041987_0001399567.json)
+
 OCR 原文：
 
 ```text
@@ -132121,6 +133594,8 @@ Man wearing glasses and a white shirt, standing at a wooden table with a tablet 
 
 ![教学画面](frames/frame_00041992_0001399733.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00041992_0001399733.json) · [视觉原始输出](evidence/visual/frame_00041992_0001399733.json)
+
 OCR 原文：
 
 ```text
@@ -132176,6 +133651,8 @@ Man in lab coat gesturing while seated at a table with laptop (no visible text o
 ### 画面 00:23:19
 
 ![教学画面](frames/frame_00041995_0001399833.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00041995_0001399833.json) · [视觉原始输出](evidence/visual/frame_00041995_0001399833.json)
 
 OCR 原文：
 
@@ -132238,6 +133715,8 @@ Silhouette of a person standing in front of a table, possibly at a table with bo
 
 ![教学画面](frames/frame_00041997_0001399900.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00041997_0001399900.json) · [视觉原始输出](evidence/visual/frame_00041997_0001399900.json)
+
 OCR 原文：
 
 ```text
@@ -132292,6 +133771,8 @@ Completely blank white image with no visible content, text, or symbols.
 ### 画面 00:23:20
 
 ![教学画面](frames/frame_00042025_0001400833.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00042025_0001400833.json) · [视觉原始输出](evidence/visual/frame_00042025_0001400833.json)
 
 OCR 原文：
 
@@ -132475,6 +133956,8 @@ Lost
 
 ![教学画面](frames/frame_00042027_0001400900.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00042027_0001400900.json) · [视觉原始输出](evidence/visual/frame_00042027_0001400900.json)
+
 OCR 原文：
 
 ```text
@@ -132644,6 +134127,8 @@ Lecture
 ### 画面 00:23:21
 
 ![教学画面](frames/frame_00042055_0001401833.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00042055_0001401833.json) · [视觉原始输出](evidence/visual/frame_00042055_0001401833.json)
 
 OCR 原文：
 
@@ -132815,6 +134300,8 @@ QR code image containing encoded data, no visible human-readable text
 ### 画面 00:23:21
 
 ![教学画面](frames/frame_00042056_0001401867.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00042056_0001401867.json) · [视觉原始输出](evidence/visual/frame_00042056_0001401867.json)
 
 OCR 原文：
 
@@ -132990,6 +134477,8 @@ QR code image containing encoded data, no visible human-readable text
 
 ![教学画面](frames/frame_00042085_0001402833.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00042085_0001402833.json) · [视觉原始输出](evidence/visual/frame_00042085_0001402833.json)
+
 OCR 原文：
 
 ```text
@@ -133154,6 +134643,8 @@ QR code image containing encoded data, no visible human-readable text
 
 ![教学画面](frames/frame_00042086_0001402867.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00042086_0001402867.json) · [视觉原始输出](evidence/visual/frame_00042086_0001402867.json)
+
 OCR 原文：
 
 ```text
@@ -133316,6 +134807,8 @@ QR code image containing encoded data, no visible human-readable text
 ### 画面 00:23:23
 
 ![教学画面](frames/frame_00042115_0001403833.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00042115_0001403833.json) · [视觉原始输出](evidence/visual/frame_00042115_0001403833.json)
 
 OCR 原文：
 
@@ -133488,6 +134981,8 @@ QR code image containing encoded data, no visible human-readable text
 ### 画面 00:23:23
 
 ![教学画面](frames/frame_00042116_0001403867.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00042116_0001403867.json) · [视觉原始输出](evidence/visual/frame_00042116_0001403867.json)
 
 OCR 原文：
 
@@ -133662,6 +135157,8 @@ QR code image containing encoded data, no visible human-readable text
 
 ![教学画面](frames/frame_00042121_0001404033.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00042121_0001404033.json) · [视觉原始输出](evidence/visual/frame_00042121_0001404033.json)
+
 OCR 原文：
 
 ```text
@@ -133835,6 +135332,8 @@ QR code image containing encoded data, no visible human-readable text
 
 ![教学画面](frames/frame_00042145_0001404833.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00042145_0001404833.json) · [视觉原始输出](evidence/visual/frame_00042145_0001404833.json)
+
 OCR 原文：
 
 ```text
@@ -134000,6 +135499,8 @@ QR code image containing encoded data, no visible human-readable text
 ### 画面 00:23:25
 
 ![教学画面](frames/frame_00042151_0001405033.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00042151_0001405033.json) · [视觉原始输出](evidence/visual/frame_00042151_0001405033.json)
 
 OCR 原文：
 
@@ -134171,6 +135672,8 @@ Edi.
 ### 画面 00:23:25
 
 ![教学画面](frames/frame_00042175_0001405833.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00042175_0001405833.json) · [视觉原始输出](evidence/visual/frame_00042175_0001405833.json)
 
 OCR 原文：
 
@@ -134353,6 +135856,8 @@ QR code image containing encoded data, no visible human-readable text
 
 ![教学画面](frames/frame_00042181_0001406033.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00042181_0001406033.json) · [视觉原始输出](evidence/visual/frame_00042181_0001406033.json)
+
 OCR 原文：
 
 ```text
@@ -134531,6 +136036,8 @@ QR code image containing encoded data, no visible human-readable text
 ### 画面 00:23:26
 
 ![教学画面](frames/frame_00042186_0001406200.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00042186_0001406200.json) · [视觉原始输出](evidence/visual/frame_00042186_0001406200.json)
 
 OCR 原文：
 
@@ -134713,6 +136220,8 @@ QR code image containing encoded data, no visible human-readable text
 
 ![教学画面](frames/frame_00042205_0001406833.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00042205_0001406833.json) · [视觉原始输出](evidence/visual/frame_00042205_0001406833.json)
+
 OCR 原文：
 
 ```text
@@ -134894,6 +136403,8 @@ Berlin
 
 ![教学画面](frames/frame_00042216_0001407200.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00042216_0001407200.json) · [视觉原始输出](evidence/visual/frame_00042216_0001407200.json)
+
 OCR 原文：
 
 ```text
@@ -135070,6 +136581,8 @@ Creator
 
 ![教学画面](frames/frame_00042244_0001408133.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00042244_0001408133.json) · [视觉原始输出](evidence/visual/frame_00042244_0001408133.json)
+
 OCR 原文：
 
 ```text
@@ -135244,6 +136757,8 @@ QR code image containing encoded data, no visible human-readable text
 
 ![教学画面](frames/frame_00042246_0001408200.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00042246_0001408200.json) · [视觉原始输出](evidence/visual/frame_00042246_0001408200.json)
+
 OCR 原文：
 
 ```text
@@ -135417,6 +136932,8 @@ QR code image containing encoded data, no visible human-readable text
 
 ![教学画面](frames/frame_00042274_0001409133.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00042274_0001409133.json) · [视觉原始输出](evidence/visual/frame_00042274_0001409133.json)
+
 OCR 原文：
 
 ```text
@@ -135587,6 +137104,8 @@ QR code image containing encoded data, no visible human-readable text
 ### 画面 00:23:29
 
 ![教学画面](frames/frame_00042276_0001409200.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00042276_0001409200.json) · [视觉原始输出](evidence/visual/frame_00042276_0001409200.json)
 
 OCR 原文：
 
@@ -135759,6 +137278,8 @@ QR code image containing encoded data, no visible human-readable text
 
 ![教学画面](frames/frame_00042281_0001409367.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00042281_0001409367.json) · [视觉原始输出](evidence/visual/frame_00042281_0001409367.json)
+
 OCR 原文：
 
 ```text
@@ -135930,6 +137451,8 @@ QR code image containing encoded data, no visible human-readable text
 
 ![教学画面](frames/frame_00042292_0001409733.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00042292_0001409733.json) · [视觉原始输出](evidence/visual/frame_00042292_0001409733.json)
+
 OCR 原文：
 
 ```text
@@ -136092,6 +137615,8 @@ QR code image containing encoded data, no visible human-readable text
 ### 画面 00:23:29
 
 ![教学画面](frames/frame_00042297_0001409900.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00042297_0001409900.json) · [视觉原始输出](evidence/visual/frame_00042297_0001409900.json)
 
 OCR 原文：
 
@@ -136257,6 +137782,8 @@ Whisper 原始候选：
 
 ![教学画面](frames/frame_00042297_0001409900.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00042297_0001409900.json) · [视觉原始输出](evidence/visual/frame_00042297_0001409900.json)
+
 OCR 原文：
 
 ```text
@@ -136411,6 +137938,8 @@ QR code image containing encoded data, no visible human-readable text
 
 ![教学画面](frames/frame_00042302_0001410067.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00042302_0001410067.json) · [视觉原始输出](evidence/visual/frame_00042302_0001410067.json)
+
 OCR 原文：
 
 ```text
@@ -136561,6 +138090,8 @@ QR code image containing encoded data, no visible human-readable text
 
 ![教学画面](frames/frame_00042307_0001410233.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00042307_0001410233.json) · [视觉原始输出](evidence/visual/frame_00042307_0001410233.json)
+
 OCR 原文：
 
 ```text
@@ -136709,6 +138240,8 @@ QR code image containing encoded data, no visible human-readable text
 
 ![教学画面](frames/frame_00042312_0001410400.webp)
 
+[OCR 原始输出](evidence/ocr/frame_00042312_0001410400.json) · [视觉原始输出](evidence/visual/frame_00042312_0001410400.json)
+
 OCR 原文：
 
 ```text
@@ -136745,6 +138278,8 @@ Scanned image containing multiple QR codes and a central logo, likely for digita
 ### 画面 00:23:32
 
 ![教学画面](frames/frame_00042373_0001412433.webp)
+
+[OCR 原始输出](evidence/ocr/frame_00042373_0001412433.json) · [视觉原始输出](evidence/visual/frame_00042373_0001412433.json)
 
 OCR 原文：
 
