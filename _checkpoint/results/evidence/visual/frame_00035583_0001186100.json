@@ -1,0 +1,142 @@
+{
+  "path": "frames/frame_00035583_0001186100.webp",
+  "time": 1186.1,
+  "image_sha256": "a791f4c13504e3bfb51a422922303bbc87d928ee3dc686e2fe8bbe8912cb9766",
+  "cache_fingerprint": "4b2091e19d68fa99de5bb3c73bd968c2d0da01c6dd472c056495e1e27d8179ef",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "dtype": "bfloat16",
+  "quantized": false,
+  "backend": "vllm",
+  "raw": "```json\n{\n\"kind\": \"slide\",\n\"description\": \"英语单词 'bear' 的教学幻灯片，包含词形变化、例句及手写标注\",\n\"annotations\": [\n  {\n    \"type\": \"圈\",\n    \"color\": \"蓝色\",\n    \"target\": \"单词造句指南表格中的第一行内容\",\n    \"meaning\": \"圈出表格第一行，包含'网'、'v.+v.变化'等文字\"\n  },\n  {\n    \"type\": \"圈\",\n    \"color\": \"蓝色\",\n    \"target\": \"单词造句指南表格中的最后一行内容\",\n    \"meaning\": \"圈出表格最后一行，包含'原文摘抄+变'等文字\"\n  },\n  {\n    \"type\": \"下划线\",\n    \"color\": \"蓝色\",\n    \"target\": \"单词 'bear-bore-borne'\",\n    \"meaning\": \"对单词及其变体进行下划线标注\"\n  },\n  {\n    \"type\": \"圈\",\n    \"color\": \"蓝色\",\n    \"target\": \"例句 'I could not bear it.'\",\n    \"meaning\": \"圈出例句，强调该句子\"\n  },\n  {\n    \"type\": \"圈\",\n    \"color\": \"蓝色\",\n    \"target\": \"例句 'How can you bear that?'\",\n    \"meaning\": \"圈出例句，强调该句子\"\n  },\n  {\n    \"type\": \"箭头\",\n    \"color\": \"蓝色\",\n    \"target\": \"从 'I could not bear it.' 指向 'Can you bear that?'\",\n    \"meaning\": \"表示句子之间的转换关系\"\n  },\n  {\n    \"type\": \"箭头\",\n    \"color\": \"蓝色\",\n    \"target\": \"从 'I could not bear it.' 指向 'How can you bear that?'\",\n    \"meaning\": \"表示句子之间的转换关系\"\n  }\n],\n\"ocr_missing_text\": [],\n\"ocr_disagreements\": [],\n\"table_present\": true,\n\"formula_present\": false,\n\"formulas\": [],\n\"tables\": [\n  {\n    \"content\": \"单词造句指南\",\n    \"rows\": [\n      \"网：v.+v.变化\",\n      \"四句型转换\",\n      \"方式/地点/时间\",\n      \"结合习惯用法\",\n      \"其他单词+词性\",\n      \"原文摘抄+变\"\n    ]\n  }\n],\n\"uncertain\": []\n}\n```",
+  "parsed": {
+    "kind": "slide",
+    "description": "英语单词 'bear' 的教学幻灯片，包含词形变化、例句及手写标注",
+    "annotations": [
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "① [Story]: I could not bear it.",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "target_original_model": "单词造句指南表格中的第一行内容",
+        "grounding": "closed_blue_region_and_document_ocr",
+        "enclosure_bbox": [
+          290,
+          594,
+          490,
+          216
+        ],
+        "meaning_original_model": "圈出表格第一行，包含'网'、'v.+v.变化'等文字"
+      },
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "① [Story]: I could not bear it.",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "target_original_model": "单词造句指南表格中的最后一行内容",
+        "grounding": "closed_blue_region_and_document_ocr",
+        "enclosure_bbox": [
+          290,
+          594,
+          490,
+          216
+        ],
+        "meaning_original_model": "圈出表格最后一行，包含'原文摘抄+变'等文字"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "单词 'bear-bore-borne'",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          75,
+          553,
+          694,
+          624
+        ],
+        "matching_color_pixels": 1826,
+        "meaning_original_model": "对单词及其变体进行下划线标注"
+      },
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "① [Story]: I could not bear it.",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "target_original_model": "例句 'I could not bear it.'",
+        "grounding": "closed_blue_region_and_document_ocr",
+        "enclosure_bbox": [
+          290,
+          594,
+          490,
+          216
+        ],
+        "meaning_original_model": "圈出例句，强调该句子"
+      },
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "① [Story]: I could not bear it.",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "target_original_model": "例句 'How can you bear that?'",
+        "grounding": "closed_blue_region_and_document_ocr",
+        "enclosure_bbox": [
+          290,
+          594,
+          490,
+          216
+        ],
+        "meaning_original_model": "圈出例句，强调该句子"
+      },
+      {
+        "type": "箭头",
+        "color": "蓝色",
+        "target": "从 'I could not bear it.' 指向 'Can you bear that?'",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "表示句子之间的转换关系"
+      },
+      {
+        "type": "箭头",
+        "color": "蓝色",
+        "target": "从 'I could not bear it.' 指向 'How can you bear that?'",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "表示句子之间的转换关系"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": true,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [
+      {
+        "content": "单词造句指南",
+        "rows": [
+          "网：v.+v.变化",
+          "四句型转换",
+          "方式/地点/时间",
+          "结合习惯用法",
+          "其他单词+词性",
+          "原文摘抄+变"
+        ]
+      }
+    ],
+    "uncertain": []
+  },
+  "generated_tokens": 563,
+  "finish_reason": "stop",
+  "elapsed_seconds": 5.1353035490938055,
+  "batch_size": 32,
+  "verification": "model_observation_with_color_grounding_not_human_verified"
+}
