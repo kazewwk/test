@@ -1,0 +1,145 @@
+{
+  "path": "frames/frame_00022237_0000741233.webp",
+  "time": 741.233313,
+  "image_sha256": "d154eab5da19b7ba99571479468e5df0bf84c674f1904feaecb8fa9c8a1b8c4b",
+  "cache_fingerprint": "4b2091e19d68fa99de5bb3c73bd968c2d0da01c6dd472c056495e1e27d8179ef",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "quantized": false,
+  "raw": "```json\n{\n\"kind\": \"slide\",\n\"description\": \"英语单词教学课件，展示单词play的用法，包含图片、表格、例句及手写标注\",\n\"annotations\": [\n{\n\"type\": \"圈\",\n\"color\": \"蓝色\",\n\"target\": \"单词play\",\n\"meaning\": \"强调单词拼写\"\n},\n{\n\"type\": \"圈\",\n\"color\": \"蓝色\",\n\"target\": \"I am going to watch a play with my Mum.\",\n\"meaning\": \"圈出完整例句\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"I am going to\",\n\"meaning\": \"强调将来时态结构\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"watch a play\",\n\"meaning\": \"强调核心短语\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"with my Mum\",\n\"meaning\": \"强调介词短语\"\n},\n{\n\"type\": \"圈\",\n\"color\": \"蓝色\",\n\"target\": \"单词造句指南\",\n\"meaning\": \"强调学习指南板块\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"网\",\n\"meaning\": \"强调网络相关用法\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"v.+v.变化\",\n\"meaning\": \"强调动词变化规则\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"四句型转换\",\n\"meaning\": \"强调句型转换方法\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"方式/地点/时间\",\n\"meaning\": \"强调状语类型\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"其他单词+词性\",\n\"meaning\": \"强调其他单词搭配\"\n}\n],\n\"ocr_missing_text\": [],\n\"ocr_disagreements\": [],\n\"table_present\": true,\n\"formula_present\": false,\n\"formulas\": [],\n\"tables\": [\n{\n\"content\": \"单词造句指南\",\n\"rows\": [\n\"网：v.+v.变化\",\n\"四句型转换\",\n\"方式/地点/时间\",\n\"结合习惯用法\",\n\"其他单词+词性\",\n\"原文摘抄+变\"\n]\n}\n],\n\"uncertain\": []\n}\n```\n",
+  "parsed": {
+    "kind": "slide",
+    "description": "英语单词教学课件，展示单词play的用法，包含图片、表格、例句及手写标注",
+    "annotations": [
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "单词play",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "circle_target_requires_review",
+        "requires_review": true,
+        "meaning_original_model": "强调单词拼写"
+      },
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "I am going to watch a play with my Mum.",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "circle_target_requires_review",
+        "requires_review": true,
+        "meaning_original_model": "圈出完整例句"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "I am going to",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "强调将来时态结构"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "watch a play",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "强调核心短语"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "with my Mum",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "强调介词短语"
+      },
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "单词造句指南",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "circle_target_requires_review",
+        "requires_review": true,
+        "meaning_original_model": "强调学习指南板块"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "网",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "强调网络相关用法"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "v.+v.变化",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "强调动词变化规则"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "四句型转换",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "强调句型转换方法"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "方式/地点/时间",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "强调状语类型"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "其他单词+词性",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "强调其他单词搭配"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": true,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [
+      {
+        "content": "单词造句指南",
+        "rows": [
+          "网：v.+v.变化",
+          "四句型转换",
+          "方式/地点/时间",
+          "结合习惯用法",
+          "其他单词+词性",
+          "原文摘抄+变"
+        ]
+      }
+    ],
+    "uncertain": [
+      "圈选的精确对象尚需核对：单词play",
+      "圈选的精确对象尚需核对：I am going to watch a play with my Mum.",
+      "圈选的精确对象尚需核对：单词造句指南"
+    ]
+  },
+  "generated_tokens": 577,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "elapsed_seconds": 12.88482445650061,
+  "batch_size": 4
+}
