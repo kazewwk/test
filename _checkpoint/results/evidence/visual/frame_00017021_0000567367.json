@@ -26,16 +26,25 @@
         "type": "圈",
         "color": "蓝色",
         "target": "图片中的米色椅子",
-        "meaning": "强调该物体为单词seat的指代对象",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
         "grounding": "circle_target_requires_review",
-        "requires_review": true
+        "requires_review": true,
+        "meaning_original_model": "强调该物体为单词seat的指代对象"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "表格中的文字“其他单词+词性”",
-        "meaning": "强调该条目为当前讲解重点",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          666,
+          335,
+          942,
+          379
+        ],
+        "matching_color_pixels": 1322,
+        "meaning_original_model": "强调该条目为当前讲解重点"
       }
     ],
     "ocr_missing_text": [],
@@ -80,5 +89,6 @@
   "generated_tokens": 275,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 10.039938656999993,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

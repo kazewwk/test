@@ -27,7 +27,14 @@
         "color": "蓝色",
         "target": "音标 /kpnva'seifən/ 下方",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          84,
+          482,
+          498,
+          524
+        ],
+        "matching_color_pixels": 2614,
         "meaning_original_model": "标注音标位置"
       },
       {
@@ -35,15 +42,23 @@
         "color": "蓝色",
         "target": "单词 conversation 下方",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          73,
+          556,
+          587,
+          634
+        ],
+        "matching_color_pixels": 609,
         "meaning_original_model": "标注单词位置"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "表格第一行 v.+v.变化",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "标注表格内容"
       },
       {
@@ -51,7 +66,14 @@
         "color": "蓝色",
         "target": "表格第五行 其他单词+词性",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          664,
+          334,
+          944,
+          380
+        ],
+        "matching_color_pixels": 2111,
         "meaning_original_model": "标注表格内容"
       },
       {
@@ -74,8 +96,9 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "例句 We are having a conversation 中 having a conversation",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调短语"
       },
       {
@@ -83,7 +106,14 @@
         "color": "蓝色",
         "target": "例句 I had a conversation with him yesterday 中 yesterday",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          114,
+          787,
+          1086,
+          843
+        ],
+        "matching_color_pixels": 1875,
         "meaning_original_model": "强调时间状语"
       }
     ],
@@ -98,12 +128,15 @@
       }
     ],
     "uncertain": [
+      "下划线的对应文字位置未确认：表格第一行 v.+v.变化",
       "标注对象定位未确认：表格第二行 四句型转换 左侧",
-      "标注对象定位未确认：表格第三行 方式/地点/时间 左侧"
+      "标注对象定位未确认：表格第三行 方式/地点/时间 左侧",
+      "下划线的对应文字位置未确认：例句 We are having a conversation 中 having a conversation"
     ]
   },
   "generated_tokens": 492,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 16.833392898250167,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

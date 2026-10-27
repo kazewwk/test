@@ -27,7 +27,14 @@
         "color": "蓝色",
         "target": "音标 /kpnvaseifan/ 下方",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          84,
+          484,
+          499,
+          530
+        ],
+        "matching_color_pixels": 2622,
         "meaning_original_model": "强调音标部分"
       },
       {
@@ -35,15 +42,23 @@
         "color": "蓝色",
         "target": "单词 conversation 下方",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          73,
+          558,
+          586,
+          635
+        ],
+        "matching_color_pixels": 605,
         "meaning_original_model": "强调单词拼写"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "表格第一行 v.+v.变化",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调该条目"
       },
       {
@@ -51,7 +66,14 @@
         "color": "蓝色",
         "target": "表格第五行 其他单词+词性",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          664,
+          334,
+          944,
+          380
+        ],
+        "matching_color_pixels": 2124,
         "meaning_original_model": "强调该条目"
       },
       {
@@ -59,7 +81,14 @@
         "color": "蓝色",
         "target": "例句 NCE1L31 & L71 下方",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          636,
+          663,
+          1006,
+          708
+        ],
+        "matching_color_pixels": 1903,
         "meaning_original_model": "强调例句出处"
       }
     ],
@@ -93,10 +122,13 @@
         ]
       }
     ],
-    "uncertain": []
+    "uncertain": [
+      "下划线的对应文字位置未确认：表格第一行 v.+v.变化"
+    ]
   },
   "generated_tokens": 352,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 13.032232321749689,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

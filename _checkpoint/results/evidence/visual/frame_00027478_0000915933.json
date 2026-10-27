@@ -26,44 +26,78 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "angry",
-        "meaning": "强调单词angry",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          72,
+          562,
+          274,
+          649
+        ],
+        "matching_color_pixels": 153,
+        "meaning_original_model": "强调单词angry"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "angrily",
-        "meaning": "强调单词angrily",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          418,
+          562,
+          697,
+          649
+        ],
+        "matching_color_pixels": 2168,
+        "meaning_original_model": "强调单词angrily"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "He was very angry yesterday",
-        "meaning": "强调整个句子",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          107,
+          666,
+          815,
+          734
+        ],
+        "matching_color_pixels": 2206,
+        "meaning_original_model": "强调整个句子"
       },
       {
         "type": "圈",
         "color": "蓝色",
         "target": "When was he very angry?",
-        "meaning": "标记该问句为错误示例",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
         "grounding": "circle_target_requires_review",
-        "requires_review": true
+        "requires_review": true,
+        "meaning_original_model": "标记该问句为错误示例"
       },
       {
         "type": "叉号",
         "color": "蓝色",
         "target": "When was he very angry?",
-        "meaning": "表示否定或错误",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "表示否定或错误"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "Why was he very angry yesterday?",
-        "meaning": "强调该问句为正确示例",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          146,
+          790,
+          962,
+          857
+        ],
+        "matching_color_pixels": 4536,
+        "meaning_original_model": "强调该问句为正确示例"
       }
     ],
     "ocr_missing_text": [],
@@ -79,5 +113,6 @@
   "generated_tokens": 342,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 10.152241699249998,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

@@ -35,8 +35,9 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "I am going to",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调be going to结构"
       },
       {
@@ -44,7 +45,14 @@
         "color": "蓝色",
         "target": "watch a play",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          103,
+          664,
+          443,
+          736
+        ],
+        "matching_color_pixels": 2438,
         "meaning_original_model": "强调核心短语"
       },
       {
@@ -52,7 +60,14 @@
         "color": "蓝色",
         "target": "with my Mum",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          824,
+          730,
+          1142,
+          798
+        ],
+        "matching_color_pixels": 3258,
         "meaning_original_model": "强调介词短语"
       },
       {
@@ -60,7 +75,14 @@
         "color": "蓝色",
         "target": "网",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          666,
+          68,
+          718,
+          109
+        ],
+        "matching_color_pixels": 133,
         "meaning_original_model": "表格中强调'网'字"
       },
       {
@@ -68,7 +90,14 @@
         "color": "蓝色",
         "target": "v.+v.变化",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          742,
+          69,
+          838,
+          105
+        ],
+        "matching_color_pixels": 769,
         "meaning_original_model": "表格中强调'v.+v.变化'部分"
       },
       {
@@ -76,7 +105,14 @@
         "color": "蓝色",
         "target": "其他单词+词性",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          666,
+          335,
+          942,
+          378
+        ],
+        "matching_color_pixels": 884,
         "meaning_original_model": "表格中强调'其他单词+词性'部分"
       }
     ],
@@ -96,11 +132,13 @@
       }
     ],
     "uncertain": [
-      "圈选的精确对象尚需核对：I am going to watch a play with my Mum"
+      "圈选的精确对象尚需核对：I am going to watch a play with my Mum",
+      "下划线的对应文字位置未确认：I am going to"
     ]
   },
   "generated_tokens": 448,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 11.890529882999544,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

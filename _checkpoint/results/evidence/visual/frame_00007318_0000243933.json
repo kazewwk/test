@@ -58,8 +58,9 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "音标中的 'ai' 和 'i' 部分",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调发音部位"
       },
       {
@@ -76,15 +77,23 @@
         "color": "蓝色",
         "target": "短语 'go to a private school'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          154,
+          788,
+          860,
+          844
+        ],
+        "matching_color_pixels": 829,
         "meaning_original_model": "强调核心短语"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "短语 'NCE1L55'",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调教材出处"
       },
       {
@@ -92,7 +101,14 @@
         "color": "蓝色",
         "target": "句子 'He goes to a private school.' 中的 'goes'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          154,
+          788,
+          860,
+          844
+        ],
+        "matching_color_pixels": 829,
         "meaning_original_model": "强调动词"
       },
       {
@@ -100,7 +116,14 @@
         "color": "蓝色",
         "target": "句子 'Why does he go to a private school?' 中的 'Why'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          152,
+          912,
+          1056,
+          975
+        ],
+        "matching_color_pixels": 771,
         "meaning_original_model": "强调疑问词"
       }
     ],
@@ -113,11 +136,14 @@
     "uncertain": [
       "标注对象定位未确认：左侧列表项：v.+v.变化、四句型转换、方式/地点/时间、结合习惯用法、其他单词+词性、原文摘抄+变",
       "圈选的精确对象尚需核对：单词 'private' 的音标部分",
-      "圈选的精确对象尚需核对：词性标注 '+ n.'"
+      "下划线的对应文字位置未确认：音标中的 'ai' 和 'i' 部分",
+      "圈选的精确对象尚需核对：词性标注 '+ n.'",
+      "下划线的对应文字位置未确认：短语 'NCE1L55'"
     ]
   },
   "generated_tokens": 571,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 14.920826264499738,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

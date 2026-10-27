@@ -26,7 +26,7 @@
         "type": "圈",
         "color": "蓝色",
         "target": "+ n",
-        "meaning": "圈出左侧列表标题",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "target_original_model": "单词造句指南",
         "grounding": "closed_blue_region_and_document_ocr",
         "enclosure_bbox": [
@@ -34,13 +34,14 @@
           496,
           154,
           116
-        ]
+        ],
+        "meaning_original_model": "圈出左侧列表标题"
       },
       {
         "type": "勾",
         "color": "蓝色",
         "target": "网：v.+v.变化",
-        "meaning": "在列表第一行打勾",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "grounding": "color_evidence_present",
         "tested_region": [
           436,
@@ -48,13 +49,14 @@
           678,
           110
         ],
-        "matching_color_pixels": 873
+        "matching_color_pixels": 873,
+        "meaning_original_model": "在列表第一行打勾"
       },
       {
         "type": "勾",
         "color": "蓝色",
         "target": "四句型转换",
-        "meaning": "在列表第二行打勾",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "grounding": "color_evidence_present",
         "tested_region": [
           390,
@@ -62,13 +64,14 @@
           632,
           169
         ],
-        "matching_color_pixels": 626
+        "matching_color_pixels": 626,
+        "meaning_original_model": "在列表第二行打勾"
       },
       {
         "type": "勾",
         "color": "蓝色",
         "target": "方式/地点/时间",
-        "meaning": "在列表第三行打勾",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "grounding": "color_evidence_present",
         "tested_region": [
           460,
@@ -76,13 +79,14 @@
           702,
           237
         ],
-        "matching_color_pixels": 902
+        "matching_color_pixels": 902,
+        "meaning_original_model": "在列表第三行打勾"
       },
       {
         "type": "勾",
         "color": "蓝色",
         "target": "结合习惯用法",
-        "meaning": "在列表第四行打勾",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "grounding": "color_evidence_present",
         "tested_region": [
           432,
@@ -90,13 +94,14 @@
           674,
           306
         ],
-        "matching_color_pixels": 930
+        "matching_color_pixels": 930,
+        "meaning_original_model": "在列表第四行打勾"
       },
       {
         "type": "勾",
         "color": "蓝色",
         "target": "其他单词+词性",
-        "meaning": "在列表第五行打勾",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "grounding": "color_evidence_present",
         "tested_region": [
           458,
@@ -104,13 +109,14 @@
           700,
           371
         ],
-        "matching_color_pixels": 723
+        "matching_color_pixels": 723,
+        "meaning_original_model": "在列表第五行打勾"
       },
       {
         "type": "勾",
         "color": "蓝色",
         "target": "原文摘抄+变",
-        "meaning": "在列表第六行打勾",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
         "grounding": "color_evidence_not_found",
         "tested_region": [
           417,
@@ -119,13 +125,14 @@
           436
         ],
         "matching_color_pixels": 0,
-        "requires_review": true
+        "requires_review": true,
+        "meaning_original_model": "在列表第六行打勾"
       },
       {
         "type": "勾",
         "color": "蓝色",
         "target": "private adj.",
-        "meaning": "在单词词性旁打勾",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "grounding": "color_evidence_present",
         "tested_region": [
           427,
@@ -133,13 +140,14 @@
           669,
           625
         ],
-        "matching_color_pixels": 3782
+        "matching_color_pixels": 3782,
+        "meaning_original_model": "在单词词性旁打勾"
       },
       {
         "type": "圈",
         "color": "蓝色",
         "target": "+ n",
-        "meaning": "圈出词性组合中的名词部分",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "target_original_model": "+n.",
         "grounding": "closed_blue_region_and_document_ocr",
         "enclosure_bbox": [
@@ -147,35 +155,69 @@
           496,
           154,
           116
-        ]
+        ],
+        "meaning_original_model": "圈出词性组合中的名词部分"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "goes",
-        "meaning": "在例句 'He goes to a private school.' 中下划线动词",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          248,
+          788,
+          378,
+          842
+        ],
+        "matching_color_pixels": 728,
+        "meaning_original_model": "在例句 'He goes to a private school.' 中下划线动词"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "Does",
-        "meaning": "在疑问句 'Does he go to a private school?' 中下划线助动词",
-        "grounding": "not_automatically_verified"
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          180,
+          848,
+          316,
+          903
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
+        "meaning_original_model": "在疑问句 'Does he go to a private school?' 中下划线助动词"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "Why",
-        "meaning": "在特殊疑问句 'Why does he go to a private school?' 中下划线疑问词",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          183,
+          912,
+          289,
+          975
+        ],
+        "matching_color_pixels": 512,
+        "meaning_original_model": "在特殊疑问句 'Why does he go to a private school?' 中下划线疑问词"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "NCE1L55",
-        "meaning": "在教材出处标注下划线",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          686,
+          727,
+          909,
+          786
+        ],
+        "matching_color_pixels": 3339,
+        "meaning_original_model": "在教材出处标注下划线"
       }
     ],
     "ocr_missing_text": [],
@@ -185,11 +227,13 @@
     "formulas": [],
     "tables": [],
     "uncertain": [
-      "未在对应文字旁检出足够蓝色勾号像素，请核对原图：原文摘抄+变"
+      "未在对应文字旁检出足够蓝色勾号像素，请核对原图：原文摘抄+变",
+      "未在对应文字下方检出足够蓝色下划线像素：Does"
     ]
   },
   "generated_tokens": 637,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 17.501499009500094,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

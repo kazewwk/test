@@ -27,7 +27,14 @@
         "color": "蓝色",
         "target": "cinema",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          404,
+          556,
+          665,
+          630
+        ],
+        "matching_color_pixels": 1794,
         "meaning_original_model": "强调或关联cinema与theatre的关系"
       }
     ],
@@ -66,5 +73,6 @@
   "generated_tokens": 191,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 6.0908314980001705,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

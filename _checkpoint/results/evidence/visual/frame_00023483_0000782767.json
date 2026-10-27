@@ -26,23 +26,40 @@
         "type": "圈",
         "color": "蓝色",
         "target": "电影截图中的女性角色",
-        "meaning": "圈出该角色作为loudly的语境示例",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
         "grounding": "circle_target_requires_review",
-        "requires_review": true
+        "requires_review": true,
+        "meaning_original_model": "圈出该角色作为loudly的语境示例"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "loudly",
-        "meaning": "强调单词loudly",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          72,
+          561,
+          323,
+          650
+        ],
+        "matching_color_pixels": 360,
+        "meaning_original_model": "强调单词loudly"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "talk",
-        "meaning": "强调动词talk",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          101,
+          664,
+          226,
+          733
+        ],
+        "matching_color_pixels": 743,
+        "meaning_original_model": "强调动词talk"
       }
     ],
     "ocr_missing_text": [],
@@ -82,5 +99,6 @@
   "generated_tokens": 278,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 10.627802599999995,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

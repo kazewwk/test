@@ -26,37 +26,70 @@
         "type": "圈",
         "color": "蓝色",
         "target": "图片中的米色椅子",
-        "meaning": "圈出椅子作为单词seat的视觉示例",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
         "grounding": "circle_target_requires_review",
-        "requires_review": true
+        "requires_review": true,
+        "meaning_original_model": "圈出椅子作为单词seat的视觉示例"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "表格中的'四句型转换'",
-        "meaning": "强调该句型转换方法",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          666,
+          135,
+          880,
+          180
+        ],
+        "matching_color_pixels": 864,
+        "meaning_original_model": "强调该句型转换方法"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "表格中的'方式/地点/时间'",
-        "meaning": "强调造句时的修饰成分",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          666,
+          202,
+          943,
+          246
+        ],
+        "matching_color_pixels": 777,
+        "meaning_original_model": "强调造句时的修饰成分"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "表格中的'其他单词+词性'",
-        "meaning": "强调词性搭配",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          666,
+          335,
+          942,
+          378
+        ],
+        "matching_color_pixels": 1305,
+        "meaning_original_model": "强调词性搭配"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "例句'② take a seat'",
-        "meaning": "强调该短语用法",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          142,
+          847,
+          405,
+          902
+        ],
+        "matching_color_pixels": 1908,
+        "meaning_original_model": "强调该短语用法"
       }
     ],
     "ocr_missing_text": [],
@@ -96,5 +129,6 @@
   "generated_tokens": 338,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 10.039938656999993,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

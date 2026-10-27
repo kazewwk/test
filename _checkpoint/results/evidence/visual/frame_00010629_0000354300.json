@@ -26,8 +26,9 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "网：v.+v.变化",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调该条目"
       },
       {
@@ -51,7 +52,14 @@
         "color": "蓝色",
         "target": "其他单词+词性",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          665,
+          334,
+          943,
+          377
+        ],
+        "matching_color_pixels": 2102,
         "meaning_original_model": "强调该条目"
       },
       {
@@ -59,7 +67,14 @@
         "color": "蓝色",
         "target": "/kpnvə'seifən/",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          83,
+          482,
+          498,
+          524
+        ],
+        "matching_color_pixels": 2617,
         "meaning_original_model": "标注音标"
       },
       {
@@ -67,7 +82,14 @@
         "color": "蓝色",
         "target": "conversation n.",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          75,
+          555,
+          582,
+          623
+        ],
+        "matching_color_pixels": 569,
         "meaning_original_model": "标注单词及词性"
       },
       {
@@ -75,7 +97,14 @@
         "color": "蓝色",
         "target": "have a conversation",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          142,
+          662,
+          690,
+          712
+        ],
+        "matching_color_pixels": 381,
         "meaning_original_model": "标注短语"
       },
       {
@@ -83,7 +112,14 @@
         "color": "蓝色",
         "target": "NCE1L31 & L71",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          680,
+          662,
+          1008,
+          712
+        ],
+        "matching_color_pixels": 1631,
         "meaning_original_model": "标注参考来源"
       },
       {
@@ -91,15 +127,30 @@
         "color": "蓝色",
         "target": "We are having a conversation",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          142,
+          726,
+          855,
+          783
+        ],
+        "matching_color_pixels": 1911,
         "meaning_original_model": "标注例句中的短语"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "yesterday",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          820,
+          788,
+          1085,
+          846
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
         "meaning_original_model": "标注时间状语"
       }
     ],
@@ -139,11 +190,14 @@
       }
     ],
     "uncertain": [
-      "未在对应文字旁检出足够蓝色勾号像素，请核对原图：方式/地点/时间"
+      "下划线的对应文字位置未确认：网：v.+v.变化",
+      "未在对应文字旁检出足够蓝色勾号像素，请核对原图：方式/地点/时间",
+      "未在对应文字下方检出足够蓝色下划线像素：yesterday"
     ]
   },
   "generated_tokens": 481,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 14.791777339999953,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

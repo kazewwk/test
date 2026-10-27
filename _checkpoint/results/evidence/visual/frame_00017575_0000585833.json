@@ -35,24 +35,27 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "单词造句指南表格中的'四句型转换'",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调该句型转换方法"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "单词造句指南表格中的'方式/地点/时间'",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调造句时的修饰成分"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "单词造句指南表格中的'其他单词+词性'",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调扩展单词用法"
       }
     ],
@@ -75,11 +78,15 @@
       }
     ],
     "uncertain": [
-      "圈选的精确对象尚需核对：左侧图片中的米色椅子"
+      "圈选的精确对象尚需核对：左侧图片中的米色椅子",
+      "下划线的对应文字位置未确认：单词造句指南表格中的'四句型转换'",
+      "下划线的对应文字位置未确认：单词造句指南表格中的'方式/地点/时间'",
+      "下划线的对应文字位置未确认：单词造句指南表格中的'其他单词+词性'"
     ]
   },
   "generated_tokens": 342,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 9.388098578499921,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

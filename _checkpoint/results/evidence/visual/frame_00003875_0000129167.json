@@ -27,31 +27,55 @@
         "color": "蓝色",
         "target": "/praivit/",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          85,
+          483,
+          312,
+          526
+        ],
+        "matching_color_pixels": 1496,
         "meaning_original_model": "强调单词拼写"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "private",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          77,
+          559,
+          406,
+          635
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
         "meaning_original_model": "强调单词拼写"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "adj.",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          396,
+          559,
+          543,
+          635
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
         "meaning_original_model": "强调词性"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "n.",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调词性"
       },
       {
@@ -153,11 +177,15 @@
     "formulas": [],
     "tables": [],
     "uncertain": [
+      "未在对应文字下方检出足够蓝色下划线像素：private",
+      "未在对应文字下方检出足够蓝色下划线像素：adj.",
+      "下划线的对应文字位置未确认：n.",
       "未在对应文字旁检出足够蓝色勾号像素，请核对原图：原文摘抄+变"
     ]
   },
   "generated_tokens": 427,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 12.94965610349982,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

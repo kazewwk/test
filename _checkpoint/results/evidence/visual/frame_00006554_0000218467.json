@@ -142,15 +142,30 @@
         "color": "蓝色",
         "target": "/'praivit/",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          81,
+          483,
+          312,
+          527
+        ],
+        "matching_color_pixels": 1513,
         "meaning_original_model": "音标下方的波浪线标注"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "go to a private school",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          141,
+          728,
+          662,
+          785
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
         "meaning_original_model": "例句上方的波浪线标注"
       },
       {
@@ -158,7 +173,14 @@
         "color": "蓝色",
         "target": "NCE1L55",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          655,
+          723,
+          907,
+          770
+        ],
+        "matching_color_pixels": 3468,
         "meaning_original_model": "教材出处下方的波浪线标注"
       },
       {
@@ -166,7 +188,14 @@
         "color": "蓝色",
         "target": "He goes to a private school.",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          186,
+          788,
+          861,
+          845
+        ],
+        "matching_color_pixels": 824,
         "meaning_original_model": "句子中'goes'下方的波浪线标注"
       }
     ],
@@ -178,11 +207,13 @@
     "tables": [],
     "uncertain": [
       "未在对应文字旁检出足够蓝色勾号像素，请核对原图：原文摘抄+变",
-      "圈选的精确对象尚需核对：private adj.+ n"
+      "圈选的精确对象尚需核对：private adj.+ n",
+      "未在对应文字下方检出足够蓝色下划线像素：go to a private school"
     ]
   },
   "generated_tokens": 565,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 16.17944599149996,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

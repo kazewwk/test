@@ -26,57 +26,97 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "音标 /kən'veɪsən/ 中的音节部分",
-        "meaning": "划分音节",
-        "grounding": "not_automatically_verified"
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "划分音节"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "单词 conversation 中的音节部分",
-        "meaning": "划分音节",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          73,
+          558,
+          587,
+          638
+        ],
+        "matching_color_pixels": 615,
+        "meaning_original_model": "划分音节"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "单词 conversation 末尾的 n.",
-        "meaning": "强调词性",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          73,
+          558,
+          587,
+          638
+        ],
+        "matching_color_pixels": 615,
+        "meaning_original_model": "强调词性"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "例句中的 having",
-        "meaning": "强调动词进行时态",
-        "grounding": "not_automatically_verified"
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "强调动词进行时态"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "例句中的 conversation",
-        "meaning": "强调核心词汇",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          73,
+          558,
+          587,
+          638
+        ],
+        "matching_color_pixels": 615,
+        "meaning_original_model": "强调核心词汇"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "NCE1L31 & L71",
-        "meaning": "标注教材出处",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          672,
+          661,
+          1008,
+          715
+        ],
+        "matching_color_pixels": 1720,
+        "meaning_original_model": "标注教材出处"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "单词造句指南表格中的 v.+v.变化",
-        "meaning": "强调造词规则",
-        "grounding": "not_automatically_verified"
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "强调造词规则"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "单词造句指南表格中的其他单词+词性",
-        "meaning": "强调造词规则",
-        "grounding": "not_automatically_verified"
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "强调造词规则"
       }
     ],
     "ocr_missing_text": [],
@@ -97,10 +137,16 @@
         ]
       }
     ],
-    "uncertain": []
+    "uncertain": [
+      "下划线的对应文字位置未确认：音标 /kən'veɪsən/ 中的音节部分",
+      "下划线的对应文字位置未确认：例句中的 having",
+      "下划线的对应文字位置未确认：单词造句指南表格中的 v.+v.变化",
+      "下划线的对应文字位置未确认：单词造句指南表格中的其他单词+词性"
+    ]
   },
   "generated_tokens": 490,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 26.433823253499895,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

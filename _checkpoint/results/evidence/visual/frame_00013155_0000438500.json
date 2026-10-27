@@ -27,7 +27,14 @@
         "color": "蓝色",
         "target": "单词 'conversation' 的音标部分",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          72,
+          557,
+          590,
+          636
+        ],
+        "matching_color_pixels": 638,
         "meaning_original_model": "强调发音"
       },
       {
@@ -35,15 +42,23 @@
         "color": "蓝色",
         "target": "单词 'conversation' 的拼写部分",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          72,
+          557,
+          590,
+          636
+        ],
+        "matching_color_pixels": 638,
         "meaning_original_model": "强调拼写"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "短语 'have a conversation' 中的 'have' 和 'conversation'",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调核心短语"
       },
       {
@@ -51,7 +66,14 @@
         "color": "蓝色",
         "target": "例句 'We are having a conversation. Please be quiet.' 中的 'having a conversation'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          109,
+          725,
+          1240,
+          787
+        ],
+        "matching_color_pixels": 1931,
         "meaning_original_model": "强调短语用法"
       },
       {
@@ -59,7 +81,14 @@
         "color": "蓝色",
         "target": "例句 'I had a conversation with him yesterday.' 中的 'had a conversation' 和 'yesterday'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          107,
+          788,
+          1091,
+          852
+        ],
+        "matching_color_pixels": 2134,
         "meaning_original_model": "强调短语用法和时间状语"
       },
       {
@@ -67,23 +96,39 @@
         "color": "蓝色",
         "target": "例句 'When did you have a conversation with him?' 中的 'have a conversation'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          110,
+          848,
+          1199,
+          910
+        ],
+        "matching_color_pixels": 123,
         "meaning_original_model": "强调短语用法"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "短语 'a private conversation' 中的 'private'",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          115,
+          971,
+          849,
+          1028
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
         "meaning_original_model": "强调形容词修饰"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "短语 'a private conversation' 中的 'conversation'",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调核心名词"
       },
       {
@@ -129,7 +174,14 @@
         "color": "蓝色",
         "target": "表格第五行 '其他单词+词性'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          665,
+          332,
+          943,
+          378
+        ],
+        "matching_color_pixels": 2113,
         "meaning_original_model": "标记重点"
       }
     ],
@@ -152,11 +204,15 @@
       }
     ],
     "uncertain": [
+      "下划线的对应文字位置未确认：短语 'have a conversation' 中的 'have' 和 'conversation'",
+      "未在对应文字下方检出足够蓝色下划线像素：短语 'a private conversation' 中的 'private'",
+      "下划线的对应文字位置未确认：短语 'a private conversation' 中的 'conversation'",
       "标注对象定位未确认：表格第一行 '网：v.+v.变化'"
     ]
   },
   "generated_tokens": 707,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 20.622845354499987,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

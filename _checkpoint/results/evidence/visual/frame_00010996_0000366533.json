@@ -26,8 +26,9 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "单词造句指南列表中的'网'、'四句型转换'、'方式/地点/时间'、'结合习惯用法'、'其他单词+词性'、'原文摘抄+变'等条目",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "标记单词造句指南的各个步骤"
       },
       {
@@ -35,7 +36,14 @@
         "color": "蓝色",
         "target": "音标 /kpnva'seifən/ 中的各个音节部分",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          84,
+          482,
+          497,
+          524
+        ],
+        "matching_color_pixels": 2600,
         "meaning_original_model": "标记音节的划分"
       },
       {
@@ -43,7 +51,14 @@
         "color": "蓝色",
         "target": "单词 conversation 中的'convers'部分",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          73,
+          557,
+          588,
+          636
+        ],
+        "matching_color_pixels": 617,
         "meaning_original_model": "标记单词的拼写"
       },
       {
@@ -51,7 +66,14 @@
         "color": "蓝色",
         "target": "例句'We are having a conversation. Please be quiet.'中的'having'和'conversation'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          113,
+          726,
+          1238,
+          783
+        ],
+        "matching_color_pixels": 1920,
         "meaning_original_model": "标记例句中的关键词汇"
       },
       {
@@ -59,15 +81,23 @@
         "color": "蓝色",
         "target": "例句'I had a conversation with him yesterday.'中的'had'和'yesterday'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          114,
+          788,
+          1085,
+          846
+        ],
+        "matching_color_pixels": 273,
         "meaning_original_model": "标记例句中的关键词汇"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "例句'NCE1L31 & L71'中的'NCE1L31'和'L71'",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "标记例句对应的课程编号"
       },
       {
@@ -86,11 +116,14 @@
     "formulas": [],
     "tables": [],
     "uncertain": [
+      "下划线的对应文字位置未确认：单词造句指南列表中的'网'、'四句型转换'、'方式/地点/时间'、'结合习惯用法'、'其他单词+词性'、'原文摘抄+变'等条目",
+      "下划线的对应文字位置未确认：例句'NCE1L31 & L71'中的'NCE1L31'和'L71'",
       "标注对象定位未确认：单词造句指南列表中的'方式/地点/时间'条目"
     ]
   },
   "generated_tokens": 492,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 13.79193429850011,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

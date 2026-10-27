@@ -26,8 +26,9 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "音标 /kən'veɪsən/ 中的音节部分",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调音节划分"
       },
       {
@@ -35,7 +36,14 @@
         "color": "蓝色",
         "target": "单词 conversation 中的 'sation' 部分",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          74,
+          556,
+          585,
+          630
+        ],
+        "matching_color_pixels": 594,
         "meaning_original_model": "强调词根或拼写"
       },
       {
@@ -43,15 +51,23 @@
         "color": "蓝色",
         "target": "单词 conversation 中的 'n.'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          74,
+          556,
+          585,
+          630
+        ],
+        "matching_color_pixels": 594,
         "meaning_original_model": "强调词性"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "短语 have a conversation 中的 'have' 和 'conversation'",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调搭配中的动词和名词"
       },
       {
@@ -59,23 +75,32 @@
         "color": "蓝色",
         "target": "例句中的 'having' 和 'conversation'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          74,
+          556,
+          585,
+          630
+        ],
+        "matching_color_pixels": 594,
         "meaning_original_model": "强调例句中的动词形式和名词"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "例句中的 'Please' 和 'quiet'",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调礼貌用语和形容词"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "表格中的 'v.+v.变化' 和 '其他单词+词性'",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调造句子型中的动词变化和词性搭配"
       }
     ],
@@ -97,10 +122,16 @@
         ]
       }
     ],
-    "uncertain": []
+    "uncertain": [
+      "下划线的对应文字位置未确认：音标 /kən'veɪsən/ 中的音节部分",
+      "下划线的对应文字位置未确认：短语 have a conversation 中的 'have' 和 'conversation'",
+      "下划线的对应文字位置未确认：例句中的 'Please' 和 'quiet'",
+      "下划线的对应文字位置未确认：表格中的 'v.+v.变化' 和 '其他单词+词性'"
+    ]
   },
   "generated_tokens": 496,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 13.032232321749689,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

@@ -26,51 +26,87 @@
         "type": "圈",
         "color": "蓝色",
         "target": "左上角图片中的女性人物",
-        "meaning": "圈出图片中的人物",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
         "grounding": "circle_target_requires_review",
-        "requires_review": true
+        "requires_review": true,
+        "meaning_original_model": "圈出图片中的人物"
       },
       {
         "type": "线",
         "color": "蓝色",
         "target": "左上角图片中的人物",
-        "meaning": "在图片中的人物身上画线",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "在图片中的人物身上画线"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "loudly",
-        "meaning": "强调单词loudly",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          72,
+          560,
+          322,
+          646
+        ],
+        "matching_color_pixels": 349,
+        "meaning_original_model": "强调单词loudly"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "talk loudly",
-        "meaning": "强调短语talk loudly",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          131,
+          663,
+          395,
+          722
+        ],
+        "matching_color_pixels": 868,
+        "meaning_original_model": "强调短语talk loudly"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "You are talking too loudly.",
-        "meaning": "强调整句",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          152,
+          727,
+          772,
+          789
+        ],
+        "matching_color_pixels": 2878,
+        "meaning_original_model": "强调整句"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "Why are you talking so loudly?",
-        "meaning": "强调整句",
-        "grounding": "not_automatically_verified"
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          133,
+          788,
+          877,
+          859
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
+        "meaning_original_model": "强调整句"
       },
       {
         "type": "箭头",
         "color": "蓝色",
         "target": "talk loudly",
-        "meaning": "从talk loudly指向下方的例句",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "从talk loudly指向下方的例句"
       }
     ],
     "ocr_missing_text": [],
@@ -80,11 +116,13 @@
     "formulas": [],
     "tables": [],
     "uncertain": [
-      "圈选的精确对象尚需核对：左上角图片中的女性人物"
+      "圈选的精确对象尚需核对：左上角图片中的女性人物",
+      "未在对应文字下方检出足够蓝色下划线像素：Why are you talking so loudly?"
     ]
   },
   "generated_tokens": 362,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 10.627802599999995,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

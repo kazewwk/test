@@ -56,8 +56,16 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "private life; private school; private hospital",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          136,
+          666,
+          1125,
+          723
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
         "meaning_original_model": "强调短语搭配"
       },
       {
@@ -65,7 +73,14 @@
         "color": "蓝色",
         "target": "NCE1L55",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          686,
+          727,
+          908,
+          786
+        ],
+        "matching_color_pixels": 3360,
         "meaning_original_model": "标注教材出处"
       },
       {
@@ -73,7 +88,14 @@
         "color": "蓝色",
         "target": "goes",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          247,
+          788,
+          377,
+          844
+        ],
+        "matching_color_pixels": 717,
         "meaning_original_model": "强调动词"
       }
     ],
@@ -88,10 +110,13 @@
     "formula_present": false,
     "formulas": [],
     "tables": [],
-    "uncertain": []
+    "uncertain": [
+      "未在对应文字下方检出足够蓝色下划线像素：private life; private school; private hospital"
+    ]
   },
   "generated_tokens": 313,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 16.17944599149996,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

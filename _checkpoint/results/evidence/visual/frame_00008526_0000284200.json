@@ -27,7 +27,14 @@
         "color": "蓝色",
         "target": "/kpnvaseifan/",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          84,
+          484,
+          498,
+          529
+        ],
+        "matching_color_pixels": 2601,
         "meaning_original_model": "标注音标"
       },
       {
@@ -35,15 +42,23 @@
         "color": "蓝色",
         "target": "conversation",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          76,
+          557,
+          544,
+          627
+        ],
+        "matching_color_pixels": 249,
         "meaning_original_model": "标注单词"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "n.",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "标注词性"
       }
     ],
@@ -53,10 +68,13 @@
     "formula_present": false,
     "formulas": [],
     "tables": [],
-    "uncertain": []
+    "uncertain": [
+      "下划线的对应文字位置未确认：n."
+    ]
   },
   "generated_tokens": 187,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 8.29840234150015,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

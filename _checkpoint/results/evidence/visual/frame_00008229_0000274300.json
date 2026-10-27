@@ -27,15 +27,30 @@
         "color": "蓝色",
         "target": "/kpnvaseifn/",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          84,
+          483,
+          498,
+          526
+        ],
+        "matching_color_pixels": 2613,
         "meaning_original_model": "对单词音标进行分段标注"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "conversation",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          76,
+          554,
+          538,
+          618
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
         "meaning_original_model": "对单词拼写进行标注"
       }
     ],
@@ -69,10 +84,13 @@
         ]
       }
     ],
-    "uncertain": []
+    "uncertain": [
+      "未在对应文字下方检出足够蓝色下划线像素：conversation"
+    ]
   },
   "generated_tokens": 225,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 8.29840234150015,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

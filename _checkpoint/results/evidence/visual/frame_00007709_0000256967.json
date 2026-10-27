@@ -102,7 +102,14 @@
         "color": "蓝色",
         "target": "短语 'private school'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          158,
+          788,
+          859,
+          842
+        ],
+        "matching_color_pixels": 1121,
         "meaning_original_model": "强调该短语"
       },
       {
@@ -110,7 +117,14 @@
         "color": "蓝色",
         "target": "短语 'private school'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          158,
+          788,
+          859,
+          842
+        ],
+        "matching_color_pixels": 1121,
         "meaning_original_model": "强调该短语"
       },
       {
@@ -118,7 +132,14 @@
         "color": "蓝色",
         "target": "短语 'private school'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          158,
+          788,
+          859,
+          842
+        ],
+        "matching_color_pixels": 1121,
         "meaning_original_model": "强调该短语"
       },
       {
@@ -141,8 +162,9 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "疑问词 'Why'",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调疑问词"
       }
     ],
@@ -168,11 +190,13 @@
       "标注对象定位未确认：左侧列表第六行 '原文摘抄+变'",
       "圈选的精确对象尚需核对：单词 'private' 的音标 '/praivɪt/'",
       "圈选的精确对象尚需核对：词性标注 'adj.' 和 '+ n.'",
-      "未在对应文字旁检出足够蓝色勾号像素，请核对原图：句子 'Does he go to a private school?'"
+      "未在对应文字旁检出足够蓝色勾号像素，请核对原图：句子 'Does he go to a private school?'",
+      "下划线的对应文字位置未确认：疑问词 'Why'"
     ]
   },
   "generated_tokens": 747,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 19.131833634999566,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

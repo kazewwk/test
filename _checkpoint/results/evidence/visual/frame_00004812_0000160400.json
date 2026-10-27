@@ -26,29 +26,46 @@
         "type": "圈",
         "color": "蓝色",
         "target": "private adj. + n.",
-        "meaning": "圈出单词词性及用法结构",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
         "grounding": "circle_target_requires_review",
-        "requires_review": true
+        "requires_review": true,
+        "meaning_original_model": "圈出单词词性及用法结构"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "/'praivit/",
-        "meaning": "标注音标",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          82,
+          484,
+          312,
+          534
+        ],
+        "matching_color_pixels": 1518,
+        "meaning_original_model": "标注音标"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "NCE1L55",
-        "meaning": "标注教材出处",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          679,
+          727,
+          914,
+          801
+        ],
+        "matching_color_pixels": 1448,
+        "meaning_original_model": "标注教材出处"
       },
       {
         "type": "勾",
         "color": "蓝色",
         "target": "网：v.+v.变化",
-        "meaning": "表示该知识点已掌握或完成",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "grounding": "color_evidence_present",
         "tested_region": [
           436,
@@ -56,13 +73,14 @@
           678,
           108
         ],
-        "matching_color_pixels": 881
+        "matching_color_pixels": 881,
+        "meaning_original_model": "表示该知识点已掌握或完成"
       },
       {
         "type": "勾",
         "color": "蓝色",
         "target": "四句型转换",
-        "meaning": "表示该知识点已掌握或完成",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "grounding": "color_evidence_present",
         "tested_region": [
           390,
@@ -70,13 +88,14 @@
           632,
           169
         ],
-        "matching_color_pixels": 633
+        "matching_color_pixels": 633,
+        "meaning_original_model": "表示该知识点已掌握或完成"
       },
       {
         "type": "勾",
         "color": "蓝色",
         "target": "方式/地点/时间",
-        "meaning": "表示该知识点已掌握或完成",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "grounding": "color_evidence_present",
         "tested_region": [
           460,
@@ -84,13 +103,14 @@
           702,
           237
         ],
-        "matching_color_pixels": 903
+        "matching_color_pixels": 903,
+        "meaning_original_model": "表示该知识点已掌握或完成"
       },
       {
         "type": "勾",
         "color": "蓝色",
         "target": "结合习惯用法",
-        "meaning": "表示该知识点已掌握或完成",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "grounding": "color_evidence_present",
         "tested_region": [
           433,
@@ -98,13 +118,14 @@
           675,
           306
         ],
-        "matching_color_pixels": 934
+        "matching_color_pixels": 934,
+        "meaning_original_model": "表示该知识点已掌握或完成"
       },
       {
         "type": "勾",
         "color": "蓝色",
         "target": "其他单词+词性",
-        "meaning": "表示该知识点已掌握或完成",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "grounding": "color_evidence_present",
         "tested_region": [
           458,
@@ -112,13 +133,14 @@
           700,
           370
         ],
-        "matching_color_pixels": 730
+        "matching_color_pixels": 730,
+        "meaning_original_model": "表示该知识点已掌握或完成"
       },
       {
         "type": "勾",
         "color": "蓝色",
         "target": "原文摘抄+变",
-        "meaning": "表示该知识点已掌握或完成",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
         "grounding": "color_evidence_not_found",
         "tested_region": [
           417,
@@ -127,7 +149,8 @@
           436
         ],
         "matching_color_pixels": 0,
-        "requires_review": true
+        "requires_review": true,
+        "meaning_original_model": "表示该知识点已掌握或完成"
       }
     ],
     "ocr_missing_text": [],
@@ -144,5 +167,6 @@
   "generated_tokens": 419,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 17.501499009500094,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

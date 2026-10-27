@@ -44,8 +44,9 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "I am going to",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调将来时态结构"
       },
       {
@@ -53,7 +54,14 @@
         "color": "蓝色",
         "target": "watch a play",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          103,
+          664,
+          443,
+          736
+        ],
+        "matching_color_pixels": 2435,
         "meaning_original_model": "强调核心短语"
       },
       {
@@ -61,7 +69,14 @@
         "color": "蓝色",
         "target": "with my Mum",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          824,
+          730,
+          1142,
+          796
+        ],
+        "matching_color_pixels": 3244,
         "meaning_original_model": "强调介词短语"
       },
       {
@@ -78,7 +93,14 @@
         "color": "蓝色",
         "target": "网",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          666,
+          68,
+          718,
+          109
+        ],
+        "matching_color_pixels": 134,
         "meaning_original_model": "强调网络相关用法"
       },
       {
@@ -86,7 +108,14 @@
         "color": "蓝色",
         "target": "v.+v.变化",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          744,
+          69,
+          837,
+          105
+        ],
+        "matching_color_pixels": 744,
         "meaning_original_model": "强调动词变化规则"
       },
       {
@@ -94,7 +123,14 @@
         "color": "蓝色",
         "target": "四句型转换",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          665,
+          134,
+          877,
+          176
+        ],
+        "matching_color_pixels": 273,
         "meaning_original_model": "强调句型转换方法"
       },
       {
@@ -102,7 +138,14 @@
         "color": "蓝色",
         "target": "方式/地点/时间",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          665,
+          200,
+          947,
+          246
+        ],
+        "matching_color_pixels": 730,
         "meaning_original_model": "强调状语类型"
       },
       {
@@ -110,7 +153,14 @@
         "color": "蓝色",
         "target": "其他单词+词性",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          666,
+          335,
+          943,
+          378
+        ],
+        "matching_color_pixels": 890,
         "meaning_original_model": "强调其他单词搭配"
       }
     ],
@@ -135,11 +185,13 @@
     "uncertain": [
       "圈选的精确对象尚需核对：单词play",
       "圈选的精确对象尚需核对：I am going to watch a play with my Mum.",
+      "下划线的对应文字位置未确认：I am going to",
       "圈选的精确对象尚需核对：单词造句指南"
     ]
   },
   "generated_tokens": 577,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 12.88482445650061,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

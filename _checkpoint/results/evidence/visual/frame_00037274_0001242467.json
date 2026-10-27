@@ -26,43 +26,73 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "rudely",
-        "meaning": "强调单词rudely",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          73,
+          561,
+          338,
+          643
+        ],
+        "matching_color_pixels": 1663,
+        "meaning_original_model": "强调单词rudely"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "rude",
-        "meaning": "强调单词rude",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          73,
+          561,
+          253,
+          643
+        ],
+        "matching_color_pixels": 1619,
+        "meaning_original_model": "强调单词rude"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "Don't be rude",
-        "meaning": "强调短语Don't be rude",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          145,
+          663,
+          478,
+          720
+        ],
+        "matching_color_pixels": 2063,
+        "meaning_original_model": "强调短语Don't be rude"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "词性adv.",
-        "meaning": "强调词性adv.",
-        "grounding": "not_automatically_verified"
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "强调词性adv."
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "词性adj.",
-        "meaning": "强调词性adj.",
-        "grounding": "not_automatically_verified"
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "强调词性adj."
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "词性词性",
-        "meaning": "强调词性",
-        "grounding": "not_automatically_verified"
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "强调词性"
       }
     ],
     "ocr_missing_text": [],
@@ -75,10 +105,15 @@
         "content": "单词造句指南\n网：v.+v.变化\n四句型转换\n方式/地点/时间\n结合习惯用法\n其他单词+词性\n原文摘抄+变"
       }
     ],
-    "uncertain": []
+    "uncertain": [
+      "下划线的对应文字位置未确认：词性adv.",
+      "下划线的对应文字位置未确认：词性adj.",
+      "下划线的对应文字位置未确认：词性词性"
+    ]
   },
   "generated_tokens": 374,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 10.898649578249888,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

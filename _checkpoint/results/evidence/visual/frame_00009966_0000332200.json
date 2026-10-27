@@ -26,8 +26,9 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "/kən'veɪsən/",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "标注音标中的重读音节"
       },
       {
@@ -35,7 +36,14 @@
         "color": "蓝色",
         "target": "conversation",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          74,
+          556,
+          547,
+          630
+        ],
+        "matching_color_pixels": 281,
         "meaning_original_model": "标注单词"
       },
       {
@@ -43,7 +51,14 @@
         "color": "蓝色",
         "target": "NCE1L31 & L71",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          681,
+          663,
+          1010,
+          721
+        ],
+        "matching_color_pixels": 1643,
         "meaning_original_model": "标注教材出处"
       },
       {
@@ -51,15 +66,30 @@
         "color": "蓝色",
         "target": "having",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          288,
+          725,
+          474,
+          783
+        ],
+        "matching_color_pixels": 1614,
         "meaning_original_model": "标注例句中的动词"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "yesterday",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          820,
+          788,
+          1085,
+          848
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
         "meaning_original_model": "标注例句中的时间状语"
       },
       {
@@ -67,7 +97,14 @@
         "color": "蓝色",
         "target": "v.+v.变化",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          736,
+          68,
+          922,
+          119
+        ],
+        "matching_color_pixels": 1233,
         "meaning_original_model": "标注单词造句指南中的语法点"
       },
       {
@@ -75,7 +112,14 @@
         "color": "蓝色",
         "target": "其他单词+词性",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          664,
+          334,
+          943,
+          380
+        ],
+        "matching_color_pixels": 2107,
         "meaning_original_model": "标注单词造句指南中的扩展用法"
       }
     ],
@@ -85,10 +129,14 @@
     "formula_present": false,
     "formulas": [],
     "tables": [],
-    "uncertain": []
+    "uncertain": [
+      "下划线的对应文字位置未确认：/kən'veɪsən/",
+      "未在对应文字下方检出足够蓝色下划线像素：yesterday"
+    ]
   },
   "generated_tokens": 375,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 51.979774824500055,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

@@ -159,7 +159,14 @@
         "color": "蓝色",
         "target": "句子'He goes to a private school.'中的'goes'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          158,
+          788,
+          859,
+          842
+        ],
+        "matching_color_pixels": 1120,
         "meaning_original_model": "强调动词"
       },
       {
@@ -167,7 +174,14 @@
         "color": "蓝色",
         "target": "句子'Does he go to a private school?'中的'Does'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          143,
+          848,
+          945,
+          903
+        ],
+        "matching_color_pixels": 18,
         "meaning_original_model": "强调助动词"
       },
       {
@@ -175,15 +189,23 @@
         "color": "蓝色",
         "target": "句子'Why does he go to a private school?'中的'Why'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          153,
+          912,
+          1055,
+          972
+        ],
+        "matching_color_pixels": 761,
         "meaning_original_model": "强调疑问词"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "文本'NCE1L55'",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "标记教材出处"
       },
       {
@@ -227,11 +249,13 @@
       "圈选的精确对象尚需核对：左上角棕色列表区域",
       "圈选的精确对象尚需核对：单词'private'的音标部分",
       "圈选的精确对象尚需核对：词性标注'adj.'和'+n.'",
+      "下划线的对应文字位置未确认：文本'NCE1L55'",
       "未在对应文字旁检出足够蓝色勾号像素，请核对原图：句子'Does he go to a private school?'"
     ]
   },
   "generated_tokens": 1101,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 27.856323131749832,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

@@ -77,7 +77,14 @@
         "color": "蓝色",
         "target": "短语'private school'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          154,
+          788,
+          860,
+          844
+        ],
+        "matching_color_pixels": 827,
         "meaning_original_model": "强调重点词汇"
       },
       {
@@ -85,7 +92,14 @@
         "color": "蓝色",
         "target": "短语'private school'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          154,
+          788,
+          860,
+          844
+        ],
+        "matching_color_pixels": 827,
         "meaning_original_model": "强调重点词汇"
       },
       {
@@ -93,23 +107,32 @@
         "color": "蓝色",
         "target": "短语'private school'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          154,
+          788,
+          860,
+          844
+        ],
+        "matching_color_pixels": 827,
         "meaning_original_model": "强调重点词汇"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "单词'goes'",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调动词变化"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "单词'Why'",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调疑问词"
       }
     ],
@@ -123,11 +146,14 @@
       "标注对象定位未确认：左侧列表项：v.+v.变化、四句型转换、方式/地点/时间、结合习惯用法、其他单词+词性、原文摘抄+变",
       "圈选的精确对象尚需核对：单词'private'的音标部分",
       "圈选的精确对象尚需核对：单词'private'的音标部分",
-      "圈选的精确对象尚需核对：语法结构'adj. + n.'"
+      "圈选的精确对象尚需核对：语法结构'adj. + n.'",
+      "下划线的对应文字位置未确认：单词'goes'",
+      "下划线的对应文字位置未确认：单词'Why'"
     ]
   },
   "generated_tokens": 520,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 14.920826264499738,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

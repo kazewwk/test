@@ -34,8 +34,9 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "音标 /'praivit/ 中的 'praiv'",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调发音部分"
       },
       {
@@ -52,7 +53,14 @@
         "color": "蓝色",
         "target": "例句 'He goes to a private school.' 中的 'goes'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          158,
+          788,
+          859,
+          842
+        ],
+        "matching_color_pixels": 1121,
         "meaning_original_model": "强调动词"
       },
       {
@@ -60,7 +68,14 @@
         "color": "蓝色",
         "target": "例句 'Does he go to a private school?' 中的 'Does'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          147,
+          848,
+          945,
+          904
+        ],
+        "matching_color_pixels": 18,
         "meaning_original_model": "强调助动词"
       },
       {
@@ -68,15 +83,23 @@
         "color": "蓝色",
         "target": "例句 'Why does he go to a private school?' 中的 'Why'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          154,
+          912,
+          1054,
+          972
+        ],
+        "matching_color_pixels": 757,
         "meaning_original_model": "强调疑问词"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "教材出处 'NCE1L55'",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调来源"
       }
     ],
@@ -114,11 +137,14 @@
     "tables": [],
     "uncertain": [
       "标注对象定位未确认：指南列表中的每一项（网、单词、造句、指南）",
-      "圈选的精确对象尚需核对：词性标注 '+ n.'"
+      "下划线的对应文字位置未确认：音标 /'praivit/ 中的 'praiv'",
+      "圈选的精确对象尚需核对：词性标注 '+ n.'",
+      "下划线的对应文字位置未确认：教材出处 'NCE1L55'"
     ]
   },
   "generated_tokens": 614,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 19.131833634999566,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

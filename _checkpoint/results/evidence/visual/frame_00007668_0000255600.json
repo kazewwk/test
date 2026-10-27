@@ -42,8 +42,9 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "音标 /'praivit/ 中的 'praiv",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调发音部分"
       },
       {
@@ -51,7 +52,14 @@
         "color": "蓝色",
         "target": "音标 /'praivit/ 中的 it",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          81,
+          484,
+          312,
+          529
+        ],
+        "matching_color_pixels": 1500,
         "meaning_original_model": "强调发音部分"
       },
       {
@@ -68,7 +76,14 @@
         "color": "蓝色",
         "target": "例句：He goes to a private school.",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          158,
+          788,
+          859,
+          842
+        ],
+        "matching_color_pixels": 1126,
         "meaning_original_model": "强调句子"
       },
       {
@@ -92,7 +107,14 @@
         "color": "蓝色",
         "target": "问句：Why does he go to a private school?",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          152,
+          912,
+          1056,
+          975
+        ],
+        "matching_color_pixels": 759,
         "meaning_original_model": "强调疑问词"
       }
     ],
@@ -105,6 +127,7 @@
     "uncertain": [
       "标注对象定位未确认：左侧大纲列表项：网、单词、造句、指南",
       "标注对象定位未确认：左侧大纲列表项：v.+v.变化、四句型转换、方式/地点/时间、结合习惯用法、其他单词+词性、原文摘抄+变",
+      "下划线的对应文字位置未确认：音标 /'praivit/ 中的 'praiv",
       "圈选的精确对象尚需核对：单词讲解部分：+ n.",
       "未在对应文字旁检出足够蓝色勾号像素，请核对原图：问句：Does he go to a private school?"
     ]
@@ -112,5 +135,6 @@
   "generated_tokens": 430,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 27.856323131749832,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

@@ -26,57 +26,116 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "/kən'veɪsɪfən/",
-        "meaning": "标注音标",
-        "grounding": "not_automatically_verified"
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "标注音标"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "conversation",
-        "meaning": "标注单词",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          75,
+          556,
+          545,
+          627
+        ],
+        "matching_color_pixels": 259,
+        "meaning_original_model": "标注单词"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "NCE1L31 & L71",
-        "meaning": "标注教材出处",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          681,
+          662,
+          1009,
+          712
+        ],
+        "matching_color_pixels": 1649,
+        "meaning_original_model": "标注教材出处"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "having",
-        "meaning": "标注例句中的动词",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          289,
+          726,
+          475,
+          782
+        ],
+        "matching_color_pixels": 1613,
+        "meaning_original_model": "标注例句中的动词"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "had",
-        "meaning": "标注例句中的动词",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          169,
+          789,
+          264,
+          849
+        ],
+        "matching_color_pixels": 466,
+        "meaning_original_model": "标注例句中的动词"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "yesterday",
-        "meaning": "标注例句中的时间状语",
-        "grounding": "not_automatically_verified"
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          821,
+          789,
+          1086,
+          849
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
+        "meaning_original_model": "标注例句中的时间状语"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "v.+v.变化",
-        "meaning": "标注表格中的内容",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          744,
+          69,
+          838,
+          105
+        ],
+        "matching_color_pixels": 764,
+        "meaning_original_model": "标注表格中的内容"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "其他单词+词性",
-        "meaning": "标注表格中的内容",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          664,
+          334,
+          944,
+          380
+        ],
+        "matching_color_pixels": 2104,
+        "meaning_original_model": "标注表格中的内容"
       }
     ],
     "ocr_missing_text": [],
@@ -97,10 +156,14 @@
         ]
       }
     ],
-    "uncertain": []
+    "uncertain": [
+      "下划线的对应文字位置未确认：/kən'veɪsɪfən/",
+      "未在对应文字下方检出足够蓝色下划线像素：yesterday"
+    ]
   },
   "generated_tokens": 535,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 26.433823253499895,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

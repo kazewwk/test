@@ -26,14 +26,22 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "/praivit/",
-        "meaning": "标注音标中的重读音节",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          85,
+          484,
+          312,
+          528
+        ],
+        "matching_color_pixels": 1515,
+        "meaning_original_model": "标注音标中的重读音节"
       },
       {
         "type": "圈",
         "color": "蓝色",
         "target": "+ n",
-        "meaning": "强调形容词加名词的搭配结构",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "target_original_model": "adj. + n.",
         "grounding": "closed_blue_region_and_document_ocr",
         "enclosure_bbox": [
@@ -41,13 +49,14 @@
           496,
           154,
           116
-        ]
+        ],
+        "meaning_original_model": "强调形容词加名词的搭配结构"
       },
       {
         "type": "勾",
         "color": "蓝色",
         "target": "网：v.+v.变化",
-        "meaning": "表示该知识点已掌握或完成",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "grounding": "color_evidence_present",
         "tested_region": [
           435,
@@ -55,13 +64,14 @@
           677,
           106
         ],
-        "matching_color_pixels": 889
+        "matching_color_pixels": 889,
+        "meaning_original_model": "表示该知识点已掌握或完成"
       },
       {
         "type": "勾",
         "color": "蓝色",
         "target": "四句型转换",
-        "meaning": "表示该知识点已掌握或完成",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "grounding": "color_evidence_present",
         "tested_region": [
           390,
@@ -69,13 +79,14 @@
           632,
           169
         ],
-        "matching_color_pixels": 626
+        "matching_color_pixels": 626,
+        "meaning_original_model": "表示该知识点已掌握或完成"
       },
       {
         "type": "勾",
         "color": "蓝色",
         "target": "方式/地点/时间",
-        "meaning": "表示该知识点已掌握或完成",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "grounding": "color_evidence_present",
         "tested_region": [
           460,
@@ -83,13 +94,14 @@
           702,
           236
         ],
-        "matching_color_pixels": 891
+        "matching_color_pixels": 891,
+        "meaning_original_model": "表示该知识点已掌握或完成"
       },
       {
         "type": "勾",
         "color": "蓝色",
         "target": "结合习惯用法",
-        "meaning": "表示该知识点已掌握或完成",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "grounding": "color_evidence_present",
         "tested_region": [
           432,
@@ -97,13 +109,14 @@
           674,
           306
         ],
-        "matching_color_pixels": 942
+        "matching_color_pixels": 942,
+        "meaning_original_model": "表示该知识点已掌握或完成"
       },
       {
         "type": "勾",
         "color": "蓝色",
         "target": "其他单词+词性",
-        "meaning": "表示该知识点已掌握或完成",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "grounding": "color_evidence_present",
         "tested_region": [
           458,
@@ -111,13 +124,14 @@
           700,
           371
         ],
-        "matching_color_pixels": 727
+        "matching_color_pixels": 727,
+        "meaning_original_model": "表示该知识点已掌握或完成"
       },
       {
         "type": "勾",
         "color": "蓝色",
         "target": "原文摘抄+变",
-        "meaning": "表示该知识点已掌握或完成",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
         "grounding": "color_evidence_not_found",
         "tested_region": [
           417,
@@ -126,7 +140,8 @@
           436
         ],
         "matching_color_pixels": 0,
-        "requires_review": true
+        "requires_review": true,
+        "meaning_original_model": "表示该知识点已掌握或完成"
       }
     ],
     "ocr_missing_text": [],
@@ -142,5 +157,6 @@
   "generated_tokens": 386,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 17.501499009500094,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

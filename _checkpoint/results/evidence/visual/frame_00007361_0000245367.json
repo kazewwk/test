@@ -68,7 +68,14 @@
         "color": "蓝色",
         "target": "NCE1L55",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          686,
+          727,
+          908,
+          786
+        ],
+        "matching_color_pixels": 3348,
         "meaning_original_model": "标记教材出处"
       },
       {
@@ -76,15 +83,30 @@
         "color": "蓝色",
         "target": "He goes to a private school.",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          185,
+          788,
+          860,
+          844
+        ],
+        "matching_color_pixels": 836,
         "meaning_original_model": "标记陈述句"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "Does he go to a private school?",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          181,
+          848,
+          945,
+          906
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
         "meaning_original_model": "标记疑问句"
       },
       {
@@ -92,7 +114,14 @@
         "color": "蓝色",
         "target": "Why does he go to a private school?",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          183,
+          912,
+          1055,
+          975
+        ],
+        "matching_color_pixels": 771,
         "meaning_original_model": "标记特殊疑问句"
       }
     ],
@@ -121,11 +150,13 @@
     "uncertain": [
       "标注对象定位未确认：左侧列表项：v.+v.变化、四句型转换、方式/地点/时间、结合习惯用法、其他单词+词性、原文摘抄+变",
       "圈选的精确对象尚需核对：音标 /'praivit/ 中的 'iv'",
-      "圈选的精确对象尚需核对：词性标注 adj. + n."
+      "圈选的精确对象尚需核对：词性标注 adj. + n.",
+      "未在对应文字下方检出足够蓝色下划线像素：Does he go to a private school?"
     ]
   },
   "generated_tokens": 548,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 27.856323131749832,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

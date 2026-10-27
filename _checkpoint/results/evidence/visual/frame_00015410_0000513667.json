@@ -26,14 +26,22 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "cinema",
-        "meaning": "强调单词cinema",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          404,
+          554,
+          663,
+          622
+        ],
+        "matching_color_pixels": 1783,
+        "meaning_original_model": "强调单词cinema"
       },
       {
         "type": "勾号",
         "color": "蓝色",
         "target": "其他单词+词性",
-        "meaning": "表示该条目已确认或完成",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "grounding": "color_evidence_present",
         "tested_region": [
           926,
@@ -41,7 +49,8 @@
           1168,
           374
         ],
-        "matching_color_pixels": 856
+        "matching_color_pixels": 856,
+        "meaning_original_model": "表示该条目已确认或完成"
       }
     ],
     "ocr_missing_text": [],
@@ -55,5 +64,6 @@
   "generated_tokens": 164,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 6.294585856999902,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

@@ -36,15 +36,30 @@
         "color": "蓝色",
         "target": "/praivit/",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          89,
+          483,
+          312,
+          527
+        ],
+        "matching_color_pixels": 1508,
         "meaning_original_model": "标注音标部分"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "private",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          77,
+          560,
+          407,
+          642
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
         "meaning_original_model": "标注单词拼写部分"
       }
     ],
@@ -55,12 +70,14 @@
     "formulas": [],
     "tables": [],
     "uncertain": [
-      "圈选的精确对象尚需核对：单词造句指南"
+      "圈选的精确对象尚需核对：单词造句指南",
+      "未在对应文字下方检出足够蓝色下划线像素：private"
     ],
     "bilibili": "右上角水印"
   },
   "generated_tokens": 202,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 7.600407184249889,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

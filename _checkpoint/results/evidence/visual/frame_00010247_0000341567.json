@@ -26,8 +26,9 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "音标 /kən'veɪsən/ 中的音节部分",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "划分音节"
       },
       {
@@ -35,7 +36,14 @@
         "color": "蓝色",
         "target": "单词 conversation 中的字母组合",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          73,
+          557,
+          587,
+          636
+        ],
+        "matching_color_pixels": 611,
         "meaning_original_model": "强调发音部位"
       },
       {
@@ -43,7 +51,14 @@
         "color": "蓝色",
         "target": "单词 conversation 末尾的 n.",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          73,
+          557,
+          587,
+          636
+        ],
+        "matching_color_pixels": 611,
         "meaning_original_model": "强调词性"
       },
       {
@@ -51,31 +66,41 @@
         "color": "蓝色",
         "target": "短语 have a conversation 中的 have",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          142,
+          661,
+          1009,
+          712
+        ],
+        "matching_color_pixels": 1943,
         "meaning_original_model": "强调动词"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "短语 have a conversation 中的 conversation",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调核心词"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "例句 NCE1L31 & L71 中的 NCE1L31",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "标注教材出处"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "例句 NCE1L31 & L71 中的 L71",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "标注教材出处"
       },
       {
@@ -83,7 +108,14 @@
         "color": "蓝色",
         "target": "例句 We are having a conversation. Please be quiet. 中的 having",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          112,
+          725,
+          1239,
+          783
+        ],
+        "matching_color_pixels": 1924,
         "meaning_original_model": "强调动词进行时态"
       },
       {
@@ -91,15 +123,30 @@
         "color": "蓝色",
         "target": "例句 We are having a conversation. Please be quiet. 中的 conversation",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          112,
+          725,
+          1239,
+          783
+        ],
+        "matching_color_pixels": 1924,
         "meaning_original_model": "强调核心词"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "例句 I had a conversation with him yesterday. 中的 yesterday",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          114,
+          788,
+          1085,
+          846
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
         "meaning_original_model": "强调时间状语"
       }
     ],
@@ -121,10 +168,17 @@
         ]
       }
     ],
-    "uncertain": []
+    "uncertain": [
+      "下划线的对应文字位置未确认：音标 /kən'veɪsən/ 中的音节部分",
+      "下划线的对应文字位置未确认：短语 have a conversation 中的 conversation",
+      "下划线的对应文字位置未确认：例句 NCE1L31 & L71 中的 NCE1L31",
+      "下划线的对应文字位置未确认：例句 NCE1L31 & L71 中的 L71",
+      "未在对应文字下方检出足够蓝色下划线像素：例句 I had a conversation with him yesterday. 中的 yesterday"
+    ]
   },
   "generated_tokens": 609,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 15.76009769275015,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

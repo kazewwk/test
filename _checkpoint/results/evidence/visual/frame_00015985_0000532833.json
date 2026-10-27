@@ -26,15 +26,16 @@
         "type": "圈",
         "color": "蓝色",
         "target": "NCE1L85",
-        "meaning": "圈出该文本，表示强调或标记重点",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
         "grounding": "circle_target_requires_review",
-        "requires_review": true
+        "requires_review": true,
+        "meaning_original_model": "圈出该文本，表示强调或标记重点"
       },
       {
         "type": "勾",
         "color": "蓝色",
         "target": "单词造句指南列表右侧",
-        "meaning": "勾选列表，表示确认或完成",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
         "grounding": "color_evidence_not_found",
         "tested_region": [
           619,
@@ -43,7 +44,8 @@
           576
         ],
         "matching_color_pixels": 0,
-        "requires_review": true
+        "requires_review": true,
+        "meaning_original_model": "勾选列表，表示确认或完成"
       }
     ],
     "ocr_missing_text": [],
@@ -60,5 +62,6 @@
   "generated_tokens": 185,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 6.294585856999902,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

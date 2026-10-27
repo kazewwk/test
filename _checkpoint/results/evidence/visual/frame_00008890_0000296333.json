@@ -27,7 +27,14 @@
         "color": "蓝色",
         "target": "/kpnvaseifan/",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          86,
+          484,
+          498,
+          527
+        ],
+        "matching_color_pixels": 2612,
         "meaning_original_model": "标注音标中的元音部分"
       },
       {
@@ -35,15 +42,23 @@
         "color": "蓝色",
         "target": "conversation",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          74,
+          557,
+          545,
+          631
+        ],
+        "matching_color_pixels": 258,
         "meaning_original_model": "标注单词拼写"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "n.",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "标注词性"
       },
       {
@@ -51,7 +66,14 @@
         "color": "蓝色",
         "target": "其他单词+词性",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          664,
+          334,
+          944,
+          380
+        ],
+        "matching_color_pixels": 2115,
         "meaning_original_model": "标注单词造句指南中的某一项"
       }
     ],
@@ -61,10 +83,13 @@
     "formula_present": false,
     "formulas": [],
     "tables": [],
-    "uncertain": []
+    "uncertain": [
+      "下划线的对应文字位置未确认：n."
+    ]
   },
   "generated_tokens": 234,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 9.056758403000003,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

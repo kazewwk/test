@@ -26,37 +26,70 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "angry",
-        "meaning": "强调单词angry",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          71,
+          563,
+          284,
+          653
+        ],
+        "matching_color_pixels": 184,
+        "meaning_original_model": "强调单词angry"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "angrily",
-        "meaning": "强调单词angrily",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          396,
+          563,
+          691,
+          653
+        ],
+        "matching_color_pixels": 2290,
+        "meaning_original_model": "强调单词angrily"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "He was very angry yesterday.",
-        "meaning": "强调整个句子",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          107,
+          666,
+          816,
+          734
+        ],
+        "matching_color_pixels": 2040,
+        "meaning_original_model": "强调整个句子"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "When was he very angry?",
-        "meaning": "强调疑问句",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          150,
+          727,
+          762,
+          791
+        ],
+        "matching_color_pixels": 4364,
+        "meaning_original_model": "强调疑问句"
       },
       {
         "type": "圈",
         "color": "蓝色",
         "target": "?",
-        "meaning": "圈出问号",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
         "grounding": "circle_target_requires_review",
-        "requires_review": true
+        "requires_review": true,
+        "meaning_original_model": "圈出问号"
       }
     ],
     "ocr_missing_text": [],
@@ -72,5 +105,6 @@
   "generated_tokens": 266,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 10.152241699249998,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

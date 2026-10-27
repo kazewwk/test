@@ -45,7 +45,14 @@
         "color": "蓝色",
         "target": "句子'Why did you have a good seat?'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          255,
+          789,
+          898,
+          854
+        ],
+        "matching_color_pixels": 5479,
         "meaning_original_model": "对整句进行下划线标注"
       }
     ],
@@ -63,5 +70,6 @@
   "generated_tokens": 217,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 9.90647719924982,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

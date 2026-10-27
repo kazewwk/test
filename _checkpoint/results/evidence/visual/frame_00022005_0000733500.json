@@ -26,8 +26,9 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "网：v.+v.变化",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调该短语或概念"
       },
       {
@@ -35,7 +36,14 @@
         "color": "蓝色",
         "target": "其他单词+词性",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          667,
+          335,
+          941,
+          375
+        ],
+        "matching_color_pixels": 885,
         "meaning_original_model": "强调该短语或概念"
       },
       {
@@ -52,7 +60,14 @@
         "color": "蓝色",
         "target": "watch a play with my Mum",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          482,
+          730,
+          1142,
+          798
+        ],
+        "matching_color_pixels": 6426,
         "meaning_original_model": "下划线强调该短语或概念"
       }
     ],
@@ -92,11 +107,13 @@
       }
     ],
     "uncertain": [
+      "下划线的对应文字位置未确认：网：v.+v.变化",
       "圈选的精确对象尚需核对：I am going to"
     ]
   },
   "generated_tokens": 329,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 11.890529882999544,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

@@ -26,14 +26,22 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "bear-bore-borne v.",
-        "meaning": "强调单词及其变形",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          74,
+          553,
+          694,
+          625
+        ],
+        "matching_color_pixels": 1823,
+        "meaning_original_model": "强调单词及其变形"
       },
       {
         "type": "圈",
         "color": "蓝色",
         "target": "① [Story]: I could not bear it.",
-        "meaning": "圈出例句",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "target_original_model": "I could not bear it.",
         "grounding": "closed_blue_region_and_document_ocr",
         "enclosure_bbox": [
@@ -41,13 +49,14 @@
           594,
           490,
           186
-        ]
+        ],
+        "meaning_original_model": "圈出例句"
       },
       {
         "type": "圈",
         "color": "蓝色",
         "target": "① [Story]: I could not bear it.",
-        "meaning": "圈出疑问句例句",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
         "target_original_model": "How can you bear that?",
         "grounding": "closed_blue_region_and_document_ocr",
         "enclosure_bbox": [
@@ -55,14 +64,16 @@
           594,
           490,
           186
-        ]
+        ],
+        "meaning_original_model": "圈出疑问句例句"
       },
       {
         "type": "箭头",
         "color": "蓝色",
         "target": "从I could not bear it.指向Can you bear that?",
-        "meaning": "表示句子转换关系",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "表示句子转换关系"
       }
     ],
     "ocr_missing_text": [],
@@ -76,5 +87,6 @@
   "generated_tokens": 252,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 7.94133227049997,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

@@ -26,8 +26,9 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "音标 /kən'veɪsən/ 中的音节部分",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调单词的音节划分"
       },
       {
@@ -35,7 +36,14 @@
         "color": "蓝色",
         "target": "单词 conversation 中的 'conver' 部分",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          74,
+          556,
+          586,
+          629
+        ],
+        "matching_color_pixels": 601,
         "meaning_original_model": "强调单词拼写或发音重点"
       },
       {
@@ -43,7 +51,14 @@
         "color": "蓝色",
         "target": "单词 conversation 中的 'sation' 部分",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          74,
+          556,
+          586,
+          629
+        ],
+        "matching_color_pixels": 601,
         "meaning_original_model": "强调单词拼写或发音重点"
       },
       {
@@ -51,31 +66,48 @@
         "color": "蓝色",
         "target": "单词 conversation 中的 'sation' 部分",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          74,
+          556,
+          586,
+          629
+        ],
+        "matching_color_pixels": 601,
         "meaning_original_model": "强调单词拼写或发音重点"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "例句 'We are having a conversation' 中的 'having a conversation'",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调短语搭配"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "例句 'I had a conversation with him yesterday' 中的 'yesterday'",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          114,
+          789,
+          1086,
+          848
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
         "meaning_original_model": "强调时间状语"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "右侧橙色表格中的 '网：v.+v.变化' 和 '其他单词+词性'",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调记忆方法或相关知识点"
       }
     ],
@@ -97,10 +129,16 @@
         ]
       }
     ],
-    "uncertain": []
+    "uncertain": [
+      "下划线的对应文字位置未确认：音标 /kən'veɪsən/ 中的音节部分",
+      "下划线的对应文字位置未确认：例句 'We are having a conversation' 中的 'having a conversation'",
+      "未在对应文字下方检出足够蓝色下划线像素：例句 'I had a conversation with him yesterday' 中的 'yesterday'",
+      "下划线的对应文字位置未确认：右侧橙色表格中的 '网：v.+v.变化' 和 '其他单词+词性'"
+    ]
   },
   "generated_tokens": 507,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 51.979774824500055,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

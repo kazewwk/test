@@ -35,8 +35,9 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "单词造句指南列表中的'四句型转换'、'方式/地点/时间'、'其他单词+词性'",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调列表中的特定条目"
       },
       {
@@ -44,7 +45,14 @@
         "color": "蓝色",
         "target": "例句'② take a seat'",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          142,
+          847,
+          411,
+          902
+        ],
+        "matching_color_pixels": 2134,
         "meaning_original_model": "强调短语take a seat"
       }
     ],
@@ -55,11 +63,13 @@
     "formulas": [],
     "tables": [],
     "uncertain": [
-      "圈选的精确对象尚需核对：图片中的米色椅子"
+      "圈选的精确对象尚需核对：图片中的米色椅子",
+      "下划线的对应文字位置未确认：单词造句指南列表中的'四句型转换'、'方式/地点/时间'、'其他单词+词性'"
     ]
   },
   "generated_tokens": 241,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 9.347516783250285,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

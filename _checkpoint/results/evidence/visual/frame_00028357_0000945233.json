@@ -26,45 +26,80 @@
         "type": "圈",
         "color": "蓝色",
         "target": "angrily adv.",
-        "meaning": "强调副词形式",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
         "grounding": "circle_target_requires_review",
-        "requires_review": true
+        "requires_review": true,
+        "meaning_original_model": "强调副词形式"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "angry",
-        "meaning": "强调形容词形式",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          71,
+          563,
+          310,
+          651
+        ],
+        "matching_color_pixels": 427,
+        "meaning_original_model": "强调形容词形式"
       },
       {
         "type": "圈",
         "color": "蓝色",
         "target": "v.+v.变化",
-        "meaning": "强调词性变化",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
         "grounding": "circle_target_requires_review",
-        "requires_review": true
+        "requires_review": true,
+        "meaning_original_model": "强调词性变化"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "其他单词+词性",
-        "meaning": "强调其他单词和词性",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          665,
+          333,
+          942,
+          376
+        ],
+        "matching_color_pixels": 1420,
+        "meaning_original_model": "强调其他单词和词性"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "look at her angrily",
-        "meaning": "强调短语",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          132,
+          850,
+          569,
+          907
+        ],
+        "matching_color_pixels": 1336,
+        "meaning_original_model": "强调短语"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "angrily this morning",
-        "meaning": "强调副词短语",
-        "grounding": "not_automatically_verified"
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          514,
+          912,
+          1036,
+          971
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
+        "meaning_original_model": "强调副词短语"
       }
     ],
     "ocr_missing_text": [],
@@ -100,11 +135,13 @@
     ],
     "uncertain": [
       "圈选的精确对象尚需核对：angrily adv.",
-      "圈选的精确对象尚需核对：v.+v.变化"
+      "圈选的精确对象尚需核对：v.+v.变化",
+      "未在对应文字下方检出足够蓝色下划线像素：angrily this morning"
     ]
   },
   "generated_tokens": 462,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 14.177365753000004,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

@@ -27,7 +27,14 @@
         "color": "蓝色",
         "target": "音标 /kpnv∂seifən/ 下方",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          83,
+          482,
+          497,
+          525
+        ],
+        "matching_color_pixels": 2608,
         "meaning_original_model": "标注音标位置"
       },
       {
@@ -35,7 +42,14 @@
         "color": "蓝色",
         "target": "单词 conversation 下方",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          72,
+          556,
+          587,
+          632
+        ],
+        "matching_color_pixels": 602,
         "meaning_original_model": "标注单词位置"
       },
       {
@@ -43,7 +57,14 @@
         "color": "蓝色",
         "target": "短语 have a conversation 下方",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          142,
+          662,
+          667,
+          716
+        ],
+        "matching_color_pixels": 179,
         "meaning_original_model": "标注核心短语"
       },
       {
@@ -51,7 +72,14 @@
         "color": "蓝色",
         "target": "例句 NCE1L31 & L71 下方",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          632,
+          662,
+          1006,
+          707
+        ],
+        "matching_color_pixels": 1931,
         "meaning_original_model": "标注参考来源"
       },
       {
@@ -59,7 +87,14 @@
         "color": "蓝色",
         "target": "例句 We are having a conversation. Please be quiet. 中 having a conversation",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          109,
+          725,
+          1240,
+          787
+        ],
+        "matching_color_pixels": 1949,
         "meaning_original_model": "标注例句中的核心短语"
       },
       {
@@ -67,7 +102,14 @@
         "color": "蓝色",
         "target": "例句 I had a conversation with him yesterday. 中 yesterday",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          108,
+          787,
+          1090,
+          848
+        ],
+        "matching_color_pixels": 2057,
         "meaning_original_model": "标注时间状语"
       },
       {
@@ -75,7 +117,14 @@
         "color": "蓝色",
         "target": "例句 When did you have a conversation with him? 中 When",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          113,
+          848,
+          1198,
+          907
+        ],
+        "matching_color_pixels": 125,
         "meaning_original_model": "标注疑问词"
       },
       {
@@ -98,8 +147,9 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "单词记忆指南表格中 其他单词+词性 整行",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
         "meaning_original_model": "强调该知识点"
       }
     ],
@@ -123,11 +173,13 @@
     ],
     "uncertain": [
       "标注对象定位未确认：单词记忆指南表格中 四句型转换 左侧",
-      "标注对象定位未确认：单词记忆指南表格中 方式/地点/时间 左侧"
+      "标注对象定位未确认：单词记忆指南表格中 方式/地点/时间 左侧",
+      "下划线的对应文字位置未确认：单词记忆指南表格中 其他单词+词性 整行"
     ]
   },
   "generated_tokens": 631,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 18.988266024750374,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

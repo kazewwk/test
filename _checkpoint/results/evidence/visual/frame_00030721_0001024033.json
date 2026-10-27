@@ -26,15 +26,24 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "pay attention",
-        "meaning": "强调短语pay attention",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          147,
+          663,
+          416,
+          709
+        ],
+        "matching_color_pixels": 2750,
+        "meaning_original_model": "强调短语pay attention"
       },
       {
         "type": "方括号",
         "color": "蓝色",
         "target": "They did not",
-        "meaning": "标注句子中的否定部分",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "标注句子中的否定部分"
       }
     ],
     "ocr_missing_text": [],
@@ -48,5 +57,6 @@
   "generated_tokens": 162,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 6.42657107375021,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

@@ -26,23 +26,40 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "bear-bore-borne v.",
-        "meaning": "强调单词及其变形",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          73,
+          553,
+          696,
+          626
+        ],
+        "matching_color_pixels": 2208,
+        "meaning_original_model": "强调单词及其变形"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "I could not bear it.",
-        "meaning": "强调例句中的核心动词短语",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          266,
+          667,
+          754,
+          739
+        ],
+        "matching_color_pixels": 4149,
+        "meaning_original_model": "强调例句中的核心动词短语"
       },
       {
         "type": "圈",
         "color": "蓝色",
         "target": "原文摘抄+变",
-        "meaning": "高亮显示单词造句指南中的最后一条建议",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
         "grounding": "circle_target_requires_review",
-        "requires_review": true
+        "requires_review": true,
+        "meaning_original_model": "高亮显示单词造句指南中的最后一条建议"
       }
     ],
     "ocr_missing_text": [],
@@ -58,5 +75,6 @@
   "generated_tokens": 221,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 7.94133227049997,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

@@ -26,75 +26,106 @@
         "type": "圈",
         "color": "蓝色",
         "target": "单词造句指南",
-        "meaning": "圈出该标题",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
         "grounding": "circle_target_requires_review",
-        "requires_review": true
+        "requires_review": true,
+        "meaning_original_model": "圈出该标题"
       },
       {
         "type": "圈",
         "color": "蓝色",
         "target": "网 v.+v.变化",
-        "meaning": "圈出该条目",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
         "grounding": "circle_target_requires_review",
-        "requires_review": true
+        "requires_review": true,
+        "meaning_original_model": "圈出该条目"
       },
       {
         "type": "圈",
         "color": "蓝色",
         "target": "四句型转换",
-        "meaning": "圈出该条目",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
         "grounding": "circle_target_requires_review",
-        "requires_review": true
+        "requires_review": true,
+        "meaning_original_model": "圈出该条目"
       },
       {
         "type": "圈",
         "color": "蓝色",
         "target": "其他单词+词性",
-        "meaning": "圈出该条目",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
         "grounding": "circle_target_requires_review",
-        "requires_review": true
+        "requires_review": true,
+        "meaning_original_model": "圈出该条目"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "angrily adv.",
-        "meaning": "下划线标注副词形式",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          397,
+          562,
+          817,
+          653
+        ],
+        "matching_color_pixels": 5450,
+        "meaning_original_model": "下划线标注副词形式"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "look at her angrily",
-        "meaning": "下划线标注短语",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          139,
+          851,
+          572,
+          912
+        ],
+        "matching_color_pixels": 1462,
+        "meaning_original_model": "下划线标注短语"
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "He looked at her angrily this morning.",
-        "meaning": "下划线标注完整句子",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          145,
+          915,
+          1047,
+          999
+        ],
+        "matching_color_pixels": 4460,
+        "meaning_original_model": "下划线标注完整句子"
       },
       {
         "type": "箭头",
         "color": "蓝色",
         "target": "look at her angrily",
-        "meaning": "箭头指向该短语",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "箭头指向该短语"
       },
       {
         "type": "手写标注",
         "color": "蓝色",
         "target": "look at her angrily",
-        "meaning": "手写标注How",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "手写标注How"
       },
       {
         "type": "手写标注",
         "color": "蓝色",
         "target": "look at her angrily",
-        "meaning": "手写标注When",
-        "grounding": "not_automatically_verified"
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "手写标注When"
       }
     ],
     "ocr_missing_text": [],
@@ -118,5 +149,6 @@
   "generated_tokens": 503,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 14.177365753000004,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

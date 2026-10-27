@@ -27,7 +27,14 @@
         "color": "蓝色",
         "target": "/praivit/",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          86,
+          484,
+          312,
+          529
+        ],
+        "matching_color_pixels": 1514,
         "meaning_original_model": "标注音标中的重读音节"
       },
       {
@@ -49,8 +56,16 @@
         "type": "下划线",
         "color": "蓝色",
         "target": "四句型转换",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          197,
+          135,
+          408,
+          180
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
         "meaning_original_model": "表示该知识点为当前讲解重点"
       }
     ],
@@ -60,10 +75,13 @@
     "formula_present": false,
     "formulas": [],
     "tables": [],
-    "uncertain": []
+    "uncertain": [
+      "未在对应文字下方检出足够蓝色下划线像素：四句型转换"
+    ]
   },
   "generated_tokens": 206,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 8.465404097749797,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }

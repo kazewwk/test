@@ -27,15 +27,30 @@
         "color": "蓝色",
         "target": "play n.",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          70,
+          565,
+          309,
+          661
+        ],
+        "matching_color_pixels": 516,
         "meaning_original_model": "强调单词play及其词性n."
       },
       {
         "type": "下划线",
         "color": "蓝色",
         "target": "watch a play",
-        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          108,
+          664,
+          442,
+          729
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
         "meaning_original_model": "强调短语watch a play"
       },
       {
@@ -43,7 +58,14 @@
         "color": "蓝色",
         "target": "其他单词+词性",
         "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
-        "grounding": "not_automatically_verified",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          666,
+          334,
+          942,
+          377
+        ],
+        "matching_color_pixels": 885,
         "meaning_original_model": "强调列表中的这一项"
       }
     ],
@@ -76,10 +98,13 @@
         ]
       }
     ],
-    "uncertain": []
+    "uncertain": [
+      "未在对应文字下方检出足够蓝色下划线像素：watch a play"
+    ]
   },
   "generated_tokens": 362,
   "verification": "model_observation_with_color_grounding_not_human_verified",
   "elapsed_seconds": 9.854525805500089,
-  "batch_size": 4
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
 }
