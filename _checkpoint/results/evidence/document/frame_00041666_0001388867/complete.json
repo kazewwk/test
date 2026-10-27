@@ -1,0 +1,129 @@
+{
+  "artifacts": {
+    "1793090158_6687.md": "9064e24bd3e8e385370e04cbbce09bf6301c8a7123198fe850a569a3b6317e7d",
+    "1793090158_6687_res.json": "06029c8be2e2fe439cf0e6d4450e8974b766a8ff9b3f4382880999ff64d9ba77",
+    "imgs/img_in_image_box_1159_336_1834_1080.jpg": "c5c205587fcc12b2764663786e4f779b91e66b056a1fe1695f7568af7234a775",
+    "region_repairs.md": "d5645d64ad7e069471bc667cfa4452ae45501202ba5bc946edf586cf676b50a0",
+    "repairs/region_000/1793090158_2446.md": "1c1e1fe6cb66c4090e4c848b10c3083593bdd7d0944167f052136ff51fcacc37",
+    "repairs/region_000/1793090158_2446_res.json": "ae1bebff9162699e54789f73609ec7a1cbe5bc186d48873b496fc16db5bbdb86",
+    "repairs/region_000/source.png": "ec131390482ab03a74f33413ba6e4ebf8e6d8ffc086d5cd72b0453a2ca8539dd",
+    "repairs/region_001/1793090159_1576.md": "b02dfe2160c687c22f0762f388d6e2bca93d7bca18f55ca9b5ab9ae920de4f62",
+    "repairs/region_001/1793090159_1576_res.json": "32a86849d5549b0e57cbe6bf35d40b1176298ce9df8553adaa1ca1441a41aad8",
+    "repairs/region_001/source.png": "c959d0ecdbda700c6022960e33bec5839e69439fede0074df645d080d9080cfe"
+  },
+  "image_sha256": "1a505eadc1433a67a5d564ced47bbafaecf060c6fddc8c0b0e4a517fc53b6b98",
+  "cache_fingerprint": "e2abb5e02d9eabaa39ee8ae630e9302743998b20947fe98039aabaea9a0288ce",
+  "elapsed_seconds": 2.249133408999114,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1645,
+        28,
+        1899,
+        106
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1645.0,
+          28.0
+        ],
+        [
+          1899.0,
+          28.0
+        ],
+        [
+          1899.0,
+          106.0
+        ],
+        [
+          1645.0,
+          106.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1159,
+        336,
+        1834,
+        1080
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          1159.0,
+          336.0
+        ],
+        [
+          1834.0,
+          336.0
+        ],
+        [
+          1834.0,
+          1080.0
+        ],
+        [
+          1159.0,
+          1080.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1638,
+        20,
+        1903,
+        113
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "不",
+      "block_bbox": [
+        357,
+        505,
+        424,
+        573
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1638,
+        20,
+        1903,
+        113
+      ],
+      "ppocr_candidate": "胶学iili",
+      "recovered_text": "胶学 bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        357,
+        505,
+        424,
+        573
+      ],
+      "ppocr_candidate": "不",
+      "recovered_text": "不",
+      "source_crop": "repairs/region_001/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}
