@@ -1,0 +1,74 @@
+{
+  "artifacts": {
+    "1793134804_5986.md": "3053b7114b40be0a2add12fb11799ae691a677f63203e8b19626b70a070def51",
+    "1793134804_5986_res.json": "3b6700384fe575c8e6327434d8df2f1eb9987500b5b88a337c876b8de9a9ccc9",
+    "imgs/img_in_header_image_box_1646_31_1894_103.jpg": "ca6f4122316c8a7f78bb587916367919da5b64ab3bfe4c2990b6229c8dac5972",
+    "region_repairs.md": "3b471eddf50a916811587886bd4df18d24067694a90ba09e1c4392cd518233c3",
+    "repairs/region_000/1793134804_8905.md": "766ce15f8439c4b912575ffd51f140d789dd58ac6fa19bc310b48b9398d92b53",
+    "repairs/region_000/1793134804_8905_res.json": "f18af3f1325f96835bd420a19824f8cb28501658718b70d101842a4a327d7a47",
+    "repairs/region_000/source.png": "929778032ba3aa28ea01cfb130abaa6ccb3ef824571756d440309d1a4fb629a6"
+  },
+  "input_fingerprint": "c3d8a1cc5854eeed03599f85ae7f8d549add222d6895956b837b000722c636b9",
+  "image_sha256": "da5f4ff360ae2b92051ccb1d77cb3c5cdfc76f4fde316347947e6fc0d4b6da47",
+  "cache_fingerprint": "641454f3f95e26210dfa50f2586aade2998042aeb106033b2b449ce36e560b73",
+  "elapsed_seconds": 1.0947510200003308,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "学bilibili",
+      "block_bbox": [
+        1646,
+        31,
+        1894,
+        103
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1656.0,
+          31.0
+        ],
+        [
+          1893.0,
+          31.0
+        ],
+        [
+          1893.0,
+          101.99998474121094
+        ],
+        [
+          1656.0,
+          101.99998474121094
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "办学 bilibili",
+      "block_bbox": [
+        1643,
+        22,
+        1900,
+        112
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1643,
+        22,
+        1900,
+        112
+      ],
+      "ppocr_candidate": "梦学b山bli",
+      "recovered_text": "办学 bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

@@ -1,0 +1,129 @@
+{
+  "artifacts": {
+    "1793134776_3511.md": "9ca72360ebd237230aefa7097dae1f822364f4058bd57917859b345acbb3c8d1",
+    "1793134776_3511_res.json": "6b5c7ff4b8149fe8fc56de75e94fff2903150ed6fc86b73f565fa9b573c306c1",
+    "region_repairs.md": "087c1b00aa1623655908f19f4b8eb9098884686330cf146bced1274c7ceb5995",
+    "repairs/region_001/1793134777_9188.md": "0ab42c374fa71877e309e32d59263ff428523417eb2e15d4b62bd4dc9c3cee5b",
+    "repairs/region_001/1793134777_9188_res.json": "8c5d4513cfb1f770d7f89b37994c6b26110207e1dc30d54f460d8b825517192f",
+    "repairs/region_001/source.png": "2bb562a3e21c55e151c64ca7ee25e2584e259ddaefa4b488d53be616b421b56c",
+    "repairs/region_002/1793134777_1007.md": "69b3f08df4a839289232fe76038a13e44976280b7bb68a7890a3bbad1dd3eb3b",
+    "repairs/region_002/1793134777_1007_res.json": "7a3618103d087a94167d0a8a2f837cbcc3c2529e44516221a03c52f0fd25a216",
+    "repairs/region_002/source.png": "3baf5cc365dcb4848d76950058c12b247235621f43183166ab14a5a098560094"
+  },
+  "input_fingerprint": "ff2aff65322289a335cc2362e6d56aa9210095ded1917ad2522f5c2cc472df9d",
+  "image_sha256": "ed9d208c87a54fd89a37bad547f5b522e77fb41b27f411c30480380af4558b06",
+  "cache_fingerprint": "641454f3f95e26210dfa50f2586aade2998042aeb106033b2b449ce36e560b73",
+  "elapsed_seconds": 2.5868359380001493,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "教学 bilibili",
+      "block_bbox": [
+        1645,
+        28,
+        1898,
+        105
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1645.0,
+          28.0
+        ],
+        [
+          1888.0,
+          28.0
+        ],
+        [
+          1888.0,
+          104.0
+        ],
+        [
+          1645.0,
+          104.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "NO WAR",
+      "block_bbox": [
+        1052,
+        285,
+        1777,
+        1080
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          1052.0,
+          285.0
+        ],
+        [
+          1777.0,
+          285.0
+        ],
+        [
+          1777.0,
+          1080.0
+        ],
+        [
+          1052.0,
+          1080.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "文学 bilingual",
+      "block_bbox": [
+        1639,
+        22,
+        1901,
+        111
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "NU\nWUR",
+      "block_bbox": [
+        1567,
+        589,
+        1606,
+        619
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1639,
+        22,
+        1901,
+        111
+      ],
+      "ppocr_candidate": "胶学",
+      "recovered_text": "文学 bilingual",
+      "source_crop": "repairs/region_001/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        1567,
+        589,
+        1606,
+        619
+      ],
+      "ppocr_candidate": "NU",
+      "recovered_text": "NU\nWUR",
+      "source_crop": "repairs/region_002/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

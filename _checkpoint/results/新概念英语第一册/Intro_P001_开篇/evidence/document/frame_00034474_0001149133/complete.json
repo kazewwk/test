@@ -1,0 +1,104 @@
+{
+  "artifacts": {
+    "1793134779_5663.md": "e88ab8ccac10603cb788603d41eaac7ce45badfd6977eb4608f986f6d42c6b96",
+    "1793134779_5663_res.json": "29d0f8acddfb1e509668106d5a0bb2ce09120a4a52cbea905cbdcdc8374b7d91",
+    "region_repairs.md": "06bc78fc5cde2e4a1e9bf0dd5d28797dce54c7512bf2e01bc942c6744e38707e",
+    "repairs/region_001/1793134779_2720.md": "0ab42c374fa71877e309e32d59263ff428523417eb2e15d4b62bd4dc9c3cee5b",
+    "repairs/region_001/1793134779_2720_res.json": "8c5d4513cfb1f770d7f89b37994c6b26110207e1dc30d54f460d8b825517192f",
+    "repairs/region_001/source.png": "dd31d645a51085c27ca7d2f0f70a5de6054729590dab2202fc97d91ca7637fe2"
+  },
+  "input_fingerprint": "11273593ac8b3392b9b7b128972640bcab3f6bd91998c2412aa06f37f19f490f",
+  "image_sha256": "95c7bcc5170e31350afee6e3d666bbfae9b4121140b0488bf90eb2590620a4af",
+  "cache_fingerprint": "641454f3f95e26210dfa50f2586aade2998042aeb106033b2b449ce36e560b73",
+  "elapsed_seconds": 2.0358117730011145,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "教学 bilibil",
+      "block_bbox": [
+        1644,
+        27,
+        1900,
+        106
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1644.0,
+          27.0
+        ],
+        [
+          1899.0,
+          27.0
+        ],
+        [
+          1899.0,
+          100.0
+        ],
+        [
+          1644.0,
+          100.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "",
+      "block_bbox": [
+        1052,
+        272,
+        1798,
+        1080
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          1062.3260498046875,
+          290.9703369140625
+        ],
+        [
+          1791.2493896484375,
+          300.4615478515625
+        ],
+        [
+          1780.9234619140625,
+          1093.4912109375
+        ],
+        [
+          1052.0001220703125,
+          1084.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "文学 bilingual",
+      "block_bbox": [
+        1639,
+        22,
+        1901,
+        111
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1639,
+        22,
+        1901,
+        111
+      ],
+      "ppocr_candidate": "胶学",
+      "recovered_text": "文学 bilingual",
+      "source_crop": "repairs/region_001/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

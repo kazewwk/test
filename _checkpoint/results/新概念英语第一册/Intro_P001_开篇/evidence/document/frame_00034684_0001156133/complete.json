@@ -1,0 +1,129 @@
+{
+  "artifacts": {
+    "1793134795_5997.md": "aa6d9be5a7cf8d93ec0c8eccd6c50f7477b4c7619ca5a18adaeefdc68ffac7a8",
+    "1793134795_5997_res.json": "7c56cb1846d6cc966f31b74362d49d33010323ec3047bdd9fd7e21753b73d101",
+    "region_repairs.md": "ffe074965c010ffdc73b27a8719f7cc1c7ab00c2a5694e498830dfd413a14b58",
+    "repairs/region_000/1793134795_6772.md": "51e8aaf6b9383911877594390a4d6e13ba01c1ba863f6af172a63808a58673e7",
+    "repairs/region_000/1793134795_6772_res.json": "39e4f859e1c3114cdbc7488139bcb0775ebbc0b3faef6565bf411c2a75b11542",
+    "repairs/region_000/source.png": "10bf686a08f96e9c39537c8af9d72de29a992026adeaee5a3793b23fec651853",
+    "repairs/region_001/1793134796_4893.md": "f406ea3e85c019f66d52b76a5f6fd2b6f395528eed544759cefad5f0eb6b5137",
+    "repairs/region_001/1793134796_4893_res.json": "5b4a45c3b93087ba2beec48c3a70b3a2d7c002627fe76e320d11c1df053b58ed",
+    "repairs/region_001/source.png": "94f4a824cb524c28166f69c33657250cdab457d674c85589e529e4ebf4bf0571"
+  },
+  "input_fingerprint": "6d219708f6e3ab70f73069f615a6c6b17cd628c37a56e05b0342d431eacf2536",
+  "image_sha256": "9c845c4a869228b7045d303c0b2a51d026952b200b893d7dd616dadab9ddae19",
+  "cache_fingerprint": "641454f3f95e26210dfa50f2586aade2998042aeb106033b2b449ce36e560b73",
+  "elapsed_seconds": 2.4730379969987553,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "教学 bilibili",
+      "block_bbox": [
+        1644,
+        27,
+        1898,
+        105
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1644.0,
+          27.0
+        ],
+        [
+          1898.0,
+          27.0
+        ],
+        [
+          1898.0,
+          105.0
+        ],
+        [
+          1644.0,
+          105.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "",
+      "block_bbox": [
+        1051,
+        275,
+        1793,
+        1080
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          1051.0,
+          275.0
+        ],
+        [
+          1793.0,
+          275.0
+        ],
+        [
+          1793.0,
+          1080.0
+        ],
+        [
+          1051.0,
+          1080.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "de学 bilibil",
+      "block_bbox": [
+        1640,
+        22,
+        1901,
+        112
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "NU",
+      "block_bbox": [
+        1566,
+        603,
+        1607,
+        634
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1640,
+        22,
+        1901,
+        112
+      ],
+      "ppocr_candidate": "胶学",
+      "recovered_text": "de学 bilibil",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        1566,
+        603,
+        1607,
+        634
+      ],
+      "ppocr_candidate": "NU",
+      "recovered_text": "NU",
+      "source_crop": "repairs/region_001/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}
