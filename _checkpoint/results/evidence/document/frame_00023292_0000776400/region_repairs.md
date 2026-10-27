@@ -1,0 +1,14 @@
+# 布局遗漏区域的独立复查
+
+原图位置：[575, 41, 639, 420]；PP-OCRv5 候选：单词造句指南
+
+![复查区域](repairs/region_001/source.png)
+
+单词造句指南
+
+原图位置：[68, 614, 401, 705]；PP-OCRv5 候选：① talk loudly
+
+![复查区域](repairs/region_013/source.png)
+
+①  $ \underline{\text{talk}} $ loudly
+
