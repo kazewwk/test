@@ -1,0 +1,186 @@
+{
+  "artifacts": {
+    "1793090026_5368.md": "8cbf13fcc83c54ef6e63d04ebe48861453deccabf1cbe5e0634795fdedf0ea1f",
+    "1793090026_5368_res.json": "01dc5aab627f843e77eefe86b2b088b78fbf51e56022e92b1050ed4aa9f7cf9c",
+    "imgs/img_in_header_image_box_1650_30_1889_102.jpg": "fa1d921db15746c0387d337c37f9da0acb8aa3632387479fe37c3ea48aaceb74",
+    "imgs/img_in_image_box_1102_246_1848_1080.jpg": "29a6422f758750289c219ac476aeb5bbbd6261d72603ca22019ac10cd65e7f9e",
+    "region_repairs.md": "eeb38fcfebb171acdaf4f92c8234d243b9df76de83b880819344021eabf13277",
+    "repairs/region_001/1793090027_7271.md": "5acb7efa8ac5b65dad2fe9e8132b5f6d04d059b38fef010b1630a238a1fa8fb0",
+    "repairs/region_001/1793090027_7271_res.json": "3cf4948291e2e021969f31fc944809fbf9322b17d87ef8a474a1dc263e7d1c60",
+    "repairs/region_001/source.png": "f7f7c23435c96abd145b28168e435cc0f3fab4dfd01ce14084f0e587336ecf13",
+    "repairs/region_004/1793090027_7498.md": "78584b37194a0f8c9578824e32c4cf69844541d6caeb0f036f14698adc46213d",
+    "repairs/region_004/1793090027_7498_res.json": "b529f7273a4db8a10a9be1cf97248d1473c2d12b811ba372005ffe013792caac",
+    "repairs/region_004/source.png": "426d0d1d2ff124da88aaa5b47fb372721b3e53219cf089ea11c2ddee534fcb93",
+    "repairs/region_007/1793090028_3584.md": "c161a7b889174e6a9fec6e5fcb0d49b345b2dcf70e4c640387a760780d351c99",
+    "repairs/region_007/1793090028_3584_res.json": "d6dae26ccb8841ddfb8baecd970d919a3e4be59796d884a0bc148887b25b91ec",
+    "repairs/region_007/source.png": "30f85a600b5c3ba3ca27039b4c1a550ee55c714ffc24ff4e9f4ae36447f36ef2"
+  },
+  "image_sha256": "0061c1b3730e93ea374a42b4f1ff950533e4af55bb5cae28bc2f3b5f9d913372",
+  "cache_fingerprint": "e2abb5e02d9eabaa39ee8ae630e9302743998b20947fe98039aabaea9a0288ce",
+  "elapsed_seconds": 3.9582131759998447,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "Don't be rude",
+      "block_bbox": [
+        318,
+        30,
+        776,
+        104
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          318.0,
+          30.0
+        ],
+        [
+          776.0,
+          30.0
+        ],
+        [
+          776.0,
+          104.0
+        ],
+        [
+          318.0,
+          104.0
+        ]
+      ]
+    },
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1650,
+        30,
+        1889,
+        102
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          1650.0,
+          30.0
+        ],
+        [
+          1889.0,
+          30.0
+        ],
+        [
+          1889.0,
+          102.0
+        ],
+        [
+          1650.0,
+          102.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "海底总动员\n\nFinding Nemo\n(2003)",
+      "block_bbox": [
+        1102,
+        246,
+        1848,
+        1080
+      ],
+      "block_id": 2,
+      "block_order": null,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          1102.0,
+          246.0
+        ],
+        [
+          1848.0,
+          246.0
+        ],
+        [
+          1848.0,
+          1082.0
+        ],
+        [
+          1102.0,
+          1082.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "bilibili",
+      "block_bbox": [
+        1730,
+        22,
+        1901,
+        112
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "打扰了！小家伙？",
+      "block_bbox": [
+        399,
+        765,
+        704,
+        825
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "Excuse me! Whoo-hoo! Little fella?",
+      "block_bbox": [
+        353,
+        814,
+        751,
+        854
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1730,
+        22,
+        1901,
+        112
+      ],
+      "ppocr_candidate": "bibili",
+      "recovered_text": "bilibili",
+      "source_crop": "repairs/region_001/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        399,
+        765,
+        704,
+        825
+      ],
+      "ppocr_candidate": "打扰了！小家伙？",
+      "recovered_text": "打扰了！小家伙？",
+      "source_crop": "repairs/region_004/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        353,
+        814,
+        751,
+        854
+      ],
+      "ppocr_candidate": "Excuse me!Whoo-hoo! Little fella?",
+      "recovered_text": "Excuse me! Whoo-hoo! Little fella?",
+      "source_crop": "repairs/region_007/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

@@ -1,0 +1,193 @@
+{
+  "artifacts": {
+    "1793090097_1313.md": "71303dbe51a7954ba37cd7752c18ff637704454405b54e39e7d324c310e4910e",
+    "1793090097_1313_res.json": "60d746c86dfcfc8e517cca4fcb4f797545d71c8e0c2fccc0d38d1afb4f37d648",
+    "imgs/img_in_header_image_box_110_1_268_172.jpg": "a000dbfb07fb8bf30feb4c26f55788db60af69cf12077ce75e9b80e40b7f5ba5",
+    "imgs/img_in_header_image_box_1650_30_1891_103.jpg": "3768d0970d53038373885f6a6c6c758bd5a412c6457acf30cac94eee1cd4b5bd",
+    "imgs/img_in_image_box_1147_331_1831_1080.jpg": "388697af8dd2f0c4bbbfc600f004e4b610bc579f42ce29213f7e5a567c52558b",
+    "region_repairs.md": "ebe1a4c2ac2630de79138ecc23563f96d76d8c068e70c3164d6ed5b61482a276",
+    "repairs/region_000/1793090098_8921.md": "5acb7efa8ac5b65dad2fe9e8132b5f6d04d059b38fef010b1630a238a1fa8fb0",
+    "repairs/region_000/1793090098_8921_res.json": "0accbf564de0803e5ce8b4aba9f08bf5a89f48d0665be1cbb3dd4106da1d0277",
+    "repairs/region_000/source.png": "9b35d65b25daf6e4907421fa389fa9e962994f6945304d0b2d414780954d1bb8",
+    "repairs/region_012/1793090098_7380.md": "82bc33b689bef25c5740cb8b936afdf315afdec752059c4a75fe0102f6afee37",
+    "repairs/region_012/1793090098_7380_res.json": "4e08671d2e6daa0362e2826e369d66aa3e0e5499980e3fa33a9ba743bb281035",
+    "repairs/region_012/source.png": "f224c01e7ef6309ced3aa02703806e39cd0c139019f5af541a744ef2411ec9ee"
+  },
+  "image_sha256": "a1b9494dd0d3c04764ff9de3b5e1d7ee4a40676160f8a13aeedc08b1db24fe9b",
+  "cache_fingerprint": "e2abb5e02d9eabaa39ee8ae630e9302743998b20947fe98039aabaea9a0288ce",
+  "elapsed_seconds": 4.567296814000656,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "Recap",
+      "block_bbox": [
+        110,
+        1,
+        268,
+        172
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          110.0,
+          1.0
+        ],
+        [
+          268.0,
+          1.0
+        ],
+        [
+          268.0,
+          172.0
+        ],
+        [
+          110.0,
+          172.0
+        ]
+      ]
+    },
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1650,
+        30,
+        1891,
+        103
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          1650.0,
+          30.0
+        ],
+        [
+          1891.0,
+          30.0
+        ],
+        [
+          1891.0,
+          103.0
+        ],
+        [
+          1650.0,
+          103.0
+        ]
+      ]
+    },
+    {
+      "block_label": "table",
+      "block_content": "<table><tr><td>Words</td><td></td></tr><tr><td>Expression</td><td>have a conversation take a seat Is the seat taken? pay attention How can you bear that? Don&#x27;t be rude</td></tr></table>",
+      "block_bbox": [
+        111,
+        252,
+        1014,
+        891
+      ],
+      "block_id": 2,
+      "block_order": null,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          111.0,
+          252.0
+        ],
+        [
+          1014.0,
+          252.0
+        ],
+        [
+          1014.0,
+          891.0
+        ],
+        [
+          111.0,
+          891.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1147,
+        331,
+        1831,
+        1080
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1147.0,
+          331.0
+        ],
+        [
+          1831.0,
+          331.0
+        ],
+        [
+          1831.0,
+          1080.0
+        ],
+        [
+          1147.0,
+          1080.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "bilibili",
+      "block_bbox": [
+        1730,
+        22,
+        1902,
+        112
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "Don't be rude",
+      "block_bbox": [
+        415,
+        822,
+        693,
+        883
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1730,
+        22,
+        1902,
+        112
+      ],
+      "ppocr_candidate": "bilbili",
+      "recovered_text": "bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        415,
+        822,
+        693,
+        883
+      ],
+      "ppocr_candidate": "Don't be rude",
+      "recovered_text": "Don't be rude",
+      "source_crop": "repairs/region_012/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}
