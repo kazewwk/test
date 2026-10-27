@@ -1,0 +1,192 @@
+{
+  "artifacts": {
+    "1793124296_3121.md": "127a20c8133a2bb479e167e979abc1cbfe69fe812dd88e01027037421f14ce20",
+    "1793124296_3121_res.json": "c902280496c8f0ed4a5e2a7f9082b5e8180a0a9e307702de4fe049265ec1e84b",
+    "imgs/img_in_image_box_1050_290_1786_1079.jpg": "9ce816ab3d5e2333277d886181d7a0401827162d902bc943ada719b083b257b8",
+    "region_repairs.md": "8503d5687cae77dcc0c137edbe639fd464fa8056c670e2bb205b4c5e063be579",
+    "repairs/region_000/1793124296_9254.md": "61a2cda8c76c23e010b95b7a5f82732b3b28a700459a281802d9852cf9d28358",
+    "repairs/region_000/1793124296_9254_res.json": "6e329d82d108fd771525375b00d634e34b2cb2cf036bc8368d153341ba0510a3",
+    "repairs/region_000/source.png": "1b50f5435a76464eead276a941e046f633b5ccdab26407b1cf60224d4511d7bf",
+    "repairs/region_006/1793124297_8504.md": "41655eedd001560ed78d870589b77906ff0c179ec307059f32e8808149f116f9",
+    "repairs/region_006/1793124297_8504_res.json": "079d48b31339202a0273bd6563c519f00568f0d0ec1578f6c664f76712336352",
+    "repairs/region_006/source.png": "b72895ad49c8a08b93fa6302480b71a5c6c7dee14916d55d7b7e204f6aad97c7"
+  },
+  "input_fingerprint": "51635f0fdf11725f51bbb14ddb4e017c218b19788ceaf467ec40c8e7a65508cc",
+  "image_sha256": "50bcfc42185a3b0b42b7bfebae0763c15dfbd89993a9220a62935acec503c0a9",
+  "cache_fingerprint": "641454f3f95e26210dfa50f2586aade2998042aeb106033b2b449ce36e560b73",
+  "elapsed_seconds": 3.132852875000026,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "教学 bilibili",
+      "block_bbox": [
+        1647,
+        31,
+        1889,
+        102
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1647.0,
+          31.0
+        ],
+        [
+          1889.0,
+          31.0
+        ],
+        [
+          1889.0,
+          102.0
+        ],
+        [
+          1647.0,
+          102.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "使用指南\n跟读 & 泡耳朵",
+      "block_bbox": [
+        96,
+        136,
+        346,
+        278
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          96.0,
+          136.0
+        ],
+        [
+          346.0,
+          136.0
+        ],
+        [
+          346.0,
+          278.0
+        ],
+        [
+          96.0,
+          278.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "听 & 说",
+      "block_bbox": [
+        426,
+        388,
+        562,
+        440
+      ],
+      "block_id": 2,
+      "block_order": 2,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          426.0,
+          388.0
+        ],
+        [
+          562.0,
+          388.0
+        ],
+        [
+          562.0,
+          440.0
+        ],
+        [
+          426.0,
+          440.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "NO WAR",
+      "block_bbox": [
+        1050,
+        290,
+        1786,
+        1079
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1050.0,
+          290.0
+        ],
+        [
+          1786.0,
+          290.0
+        ],
+        [
+          1786.0,
+          1079.0
+        ],
+        [
+          1050.0,
+          1079.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "教学",
+      "block_bbox": [
+        1639,
+        22,
+        1901,
+        112
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "NO WAR",
+      "block_bbox": [
+        1565,
+        617,
+        1617,
+        656
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1639,
+        22,
+        1901,
+        112
+      ],
+      "ppocr_candidate": "胶学山",
+      "recovered_text": "教学",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        1565,
+        617,
+        1617,
+        656
+      ],
+      "ppocr_candidate": "WIR",
+      "recovered_text": "NO WAR",
+      "source_crop": "repairs/region_006/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

@@ -1,0 +1,104 @@
+{
+  "artifacts": {
+    "1793134781_5815.md": "c3144e65e90ada3e4caaa26d593d0e1482349a293071a6202d664e5bf863d162",
+    "1793134781_5815_res.json": "4a268f0b4eafde51ab6db706b7a298d97ee427d0b0824dc6fc9e2cd3f3acb40b",
+    "region_repairs.md": "fa5ca58a172156e48b4607c61b0d335181f50d982b9ec47db17e27dc7e17a557",
+    "repairs/region_000/1793134781_1113.md": "a2065f2e11e6668ba240e0fb50d3bf66cb7ecfa7fb0aaa1d2e621965824c6398",
+    "repairs/region_000/1793134781_1113_res.json": "d07d600ddb8a972f25ffc2441671396304d02d317fff6394f4ff43ef14a6c657",
+    "repairs/region_000/source.png": "6ac683b7317c35b4a156e4110b2733b8975bf7e3da158157a271f18fb5a9a066"
+  },
+  "input_fingerprint": "586876951a9a7c10bb04f6b2fbad734e8528b0ea11a7f14aae3eae91b48d57e8",
+  "image_sha256": "55074a670ed6b13c9da104936df7eb1311064d872b9401c35879f6e2947f2d23",
+  "cache_fingerprint": "641454f3f95e26210dfa50f2586aade2998042aeb106033b2b449ce36e560b73",
+  "elapsed_seconds": 1.917761632001202,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "教学 bilibili",
+      "block_bbox": [
+        1644,
+        27,
+        1898,
+        105
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1644.0,
+          27.0
+        ],
+        [
+          1898.0,
+          27.0
+        ],
+        [
+          1898.0,
+          105.0
+        ],
+        [
+          1644.0,
+          105.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "A",
+      "block_bbox": [
+        1050,
+        290,
+        1785,
+        1080
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          1050.0,
+          290.0
+        ],
+        [
+          1785.0,
+          290.0
+        ],
+        [
+          1785.0,
+          1081.0
+        ],
+        [
+          1050.0,
+          1081.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "法学 bilibili",
+      "block_bbox": [
+        1640,
+        24,
+        1900,
+        110
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1640,
+        24,
+        1900,
+        110
+      ],
+      "ppocr_candidate": "胶学",
+      "recovered_text": "法学 bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

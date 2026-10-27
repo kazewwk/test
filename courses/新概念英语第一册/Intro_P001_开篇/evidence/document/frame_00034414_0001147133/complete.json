@@ -1,0 +1,130 @@
+{
+  "artifacts": {
+    "1793134774_9811.md": "9c5a79d1c7d00188f23eb472911a22aa7d31ec63e56592196ebf74261d159cec",
+    "1793134774_9811_res.json": "b067de6e7cf05ae7c4a83fd6311046285444ca801d546c59ca460ff14a329759",
+    "imgs/img_in_image_box_1048_282_1811_1080.jpg": "b20c8cedabd2ad5bf06c33af3853de7610b19f76c886da060fb62733c885242c",
+    "region_repairs.md": "313ccbc2266b567d946547b67269482d1e6cb3b233b108817ba297b0034fe7eb",
+    "repairs/region_000/1793134774_2164.md": "0ab42c374fa71877e309e32d59263ff428523417eb2e15d4b62bd4dc9c3cee5b",
+    "repairs/region_000/1793134774_2164_res.json": "8c5d4513cfb1f770d7f89b37994c6b26110207e1dc30d54f460d8b825517192f",
+    "repairs/region_000/source.png": "870bb9d6162d2fcec60e6b3d2c2d6e292023c15f6c593c65ac37143f9e3014e8",
+    "repairs/region_003/1793134775_7680.md": "b4a73fc27b71f3220ac793c51b76bcf4eca9220f58138ffa10dcd488a9041fc4",
+    "repairs/region_003/1793134775_7680_res.json": "64b759ff8e13f0b154c1bbd95dbfc5c00d47bc62c8a1fb0581c17d8d95e14027",
+    "repairs/region_003/source.png": "d148971443dc6a57417abcd398cc46067328f480cf4043ddd75124017c3f3749"
+  },
+  "input_fingerprint": "f0f1abd95c462ef7ac73bdcc4662c2ec0eef15b18606734fa6536c8dff99cfd8",
+  "image_sha256": "0076b8573bba8696713b73a3514e18ad5f91673c9fc4a93de0e3b0c09666232e",
+  "cache_fingerprint": "641454f3f95e26210dfa50f2586aade2998042aeb106033b2b449ce36e560b73",
+  "elapsed_seconds": 2.5876869630010333,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "教学 bilibil",
+      "block_bbox": [
+        1645,
+        28,
+        1893,
+        105
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1645.0,
+          28.0
+        ],
+        [
+          1893.0,
+          28.0
+        ],
+        [
+          1893.0,
+          105.0
+        ],
+        [
+          1645.0,
+          105.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "NO\nWAR",
+      "block_bbox": [
+        1048,
+        282,
+        1811,
+        1080
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          1048.0,
+          282.0
+        ],
+        [
+          1811.0,
+          282.0
+        ],
+        [
+          1811.0,
+          1080.0
+        ],
+        [
+          1048.0,
+          1080.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "文学 bilingual",
+      "block_bbox": [
+        1639,
+        22,
+        1901,
+        111
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "NO\nWAR",
+      "block_bbox": [
+        1569,
+        625,
+        1620,
+        659
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1639,
+        22,
+        1901,
+        111
+      ],
+      "ppocr_candidate": "胶学",
+      "recovered_text": "文学 bilingual",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        1569,
+        625,
+        1620,
+        659
+      ],
+      "ppocr_candidate": "WIR",
+      "recovered_text": "NO\nWAR",
+      "source_crop": "repairs/region_003/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

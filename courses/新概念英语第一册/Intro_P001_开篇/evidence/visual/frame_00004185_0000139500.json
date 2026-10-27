@@ -1,0 +1,175 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"slide\",\n  \"text_lines\": [\n    \"自我介绍\",\n    \"•奥克兰大学教育学研究生（入学时QS专业全球排名17）\",\n    \"•前北京新东方英语学习部优秀教师（2012-2018）\",\n    \"•TKT英语教学能力证书（剑桥大学颁发）\",\n    \"•6年线下，4年线上教龄\",\n    \"•TOEFL 托福 102分（阅读听力接近满分）\",\n    \"•IELTS 雅思7.5 (World: Top88% – 93%, China: Top98%)\",\n    \"•高考 英语 138 分\"\n  ],\n  \"description\": \"左上方是蓝色横幅。右侧有一人坐在圆桌后，手持白色笔状物，桌上放有一台带支架的设备。\",\n  \"annotations\": [\n    {\n      \"type\": \"弧形括线\",\n      \"color\": \"橙色\",\n      \"target\": \"•IELTS 雅思7.5 (World: Top88% – 93%, China: Top98%)；•高考 英语 138 分\",\n      \"position\": \"两行文字左侧\",\n      \"uncertain\": false\n    },\n    {\n      \"type\": \"弧形括线\",\n      \"color\": \"橙色\",\n      \"target\": \"•TOEFL 托福 102分（阅读听力接近满分）；•IELTS 雅思7.5 (World: Top88% – 93%, China: Top98%)\",\n      \"position\": \"文字区域右侧，约从TOEFL行上方延伸至IELTS行\",\n      \"uncertain\": true\n    },\n    {\n      \"type\": \"弧形括线\",\n      \"color\": \"橙色\",\n      \"target\": \"•高考 英语 138 分\",\n      \"position\": \"该行文字右侧\",\n      \"uncertain\": false\n    }\n  ],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"右侧较大的橙色弧线位于TOEFL和IELTS两行右方，具体对应范围不完全明确。\"\n  ]\n}",
+  "parsed": {
+    "kind": "slide",
+    "text_lines": [
+      "自我介绍",
+      "•奥克兰大学教育学研究生（入学时QS专业全球排名17）",
+      "•前北京新东方英语学习部优秀教师（2012-2018）",
+      "•TKT英语教学能力证书（剑桥大学颁发）",
+      "•6年线下，4年线上教龄",
+      "•TOEFL 托福 102分（阅读听力接近满分）",
+      "•IELTS 雅思7.5 (World: Top88% – 93%, China: Top98%)",
+      "•高考 英语 138 分"
+    ],
+    "description": "左上方是蓝色横幅。右侧有一人坐在圆桌后，手持白色笔状物，桌上放有一台带支架的设备。",
+    "annotations": [
+      {
+        "type": "弧形括线",
+        "color": "橙色",
+        "target": "•IELTS 雅思7.5 (World: Top88% – 93%, China: Top98%)；•高考 英语 138 分",
+        "position": "两行文字左侧",
+        "uncertain": false,
+        "requires_review": false,
+        "grounding": "api_visual_observation_not_human_verified"
+      },
+      {
+        "type": "弧形括线",
+        "color": "橙色",
+        "target": "•TOEFL 托福 102分（阅读听力接近满分）；•IELTS 雅思7.5 (World: Top88% – 93%, China: Top98%)",
+        "position": "文字区域右侧，约从TOEFL行上方延伸至IELTS行",
+        "uncertain": true,
+        "requires_review": true,
+        "grounding": "api_visual_observation_not_human_verified"
+      },
+      {
+        "type": "弧形括线",
+        "color": "橙色",
+        "target": "•高考 英语 138 分",
+        "position": "该行文字右侧",
+        "uncertain": false,
+        "requires_review": false,
+        "grounding": "api_visual_observation_not_human_verified"
+      }
+    ],
+    "checkmarks_count": 0,
+    "circled_text": [],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "右侧较大的橙色弧线位于TOEFL和IELTS两行右方，具体对应范围不完全明确。"
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "自我介绍\n•奥克兰大学教育学研究生（入学时QS专业全球排名17）\n•前北京新东方英语学习部优秀教师（2012-2018）\n•TKT英语教学能力证书（剑桥大学颁发）\n•6年线下，4年线上教龄\n•TOEFL 托福 102分（阅读听力接近满分）\n•IELTS 雅思7.5 (World: Top88% – 93%, China: Top98%)\n•高考 英语 138 分"
+  },
+  "usage": {
+    "completion_tokens": 521,
+    "total_tokens": 3201,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 12.002313567001693,
+  "image_sha256": "0d5fad04ad0740c989fe794629ab616c5d135124f9c69e15dad34dcc879e8f1a",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\"kind\":\"slide\",\"text_lines\":[\"自我介绍\",\"• 奥克兰大学教育学研究生（入学时QS专业全球排名17）\",\"• 前北京新东方英语学习部优秀教师（2012-2018）\",\"• TKT英语教学能力证书（剑桥大学颁发）\",\"• 6年线下，4年线上教龄\",\"• TOEFL 托福 102分（阅读听力接近满分）\",\"• IELTS 雅思7.5 (World: Top88% – 93%, China: Top98%)\",\"• 高考 英语 138 分\"],\"description\":\"画面右侧是一名戴眼镜、穿深色上衣的人坐在圆桌旁，桌上有平板电脑。\",\"annotations\":[{\"type\":\"弧形笔迹，类似括号\",\"color\":\"橙色\",\"target\":\"位于“高考 英语 138 分”左侧，纵向靠近该行及上一行\",\"position\":\"文字列表左侧下方\",\"uncertain\":true},{\"type\":\"弧形笔迹，类似括号\",\"color\":\"橙色\",\"target\":\"“高考 英语 138 分”行末右侧\",\"position\":\"文字列表下方偏中\",\"uncertain\":false},{\"type\":\"弧形笔迹\",\"color\":\"橙色\",\"target\":\"位于“IELTS 雅思7.5 (World: Top88% – 93%, China: Top98%)”右侧附近\",\"position\":\"文字列表右侧中部\",\"uncertain\":true}],\"checkmarks_count\":0,\"circled_text\":[],\"tables\":[],\"formulas\":[],\"uncertain\":[\"右上角有浅色水印样式的字样，内容无法确认；未列入教学文字。\",\"橙色弧形笔迹与具体文字行的对应关系不完全明确。\"]}",
+    "parsed": {
+      "kind": "slide",
+      "text_lines": [
+        "自我介绍",
+        "• 奥克兰大学教育学研究生（入学时QS专业全球排名17）",
+        "• 前北京新东方英语学习部优秀教师（2012-2018）",
+        "• TKT英语教学能力证书（剑桥大学颁发）",
+        "• 6年线下，4年线上教龄",
+        "• TOEFL 托福 102分（阅读听力接近满分）",
+        "• IELTS 雅思7.5 (World: Top88% – 93%, China: Top98%)",
+        "• 高考 英语 138 分"
+      ],
+      "description": "画面右侧是一名戴眼镜、穿深色上衣的人坐在圆桌旁，桌上有平板电脑。",
+      "annotations": [
+        {
+          "type": "弧形笔迹，类似括号",
+          "color": "橙色",
+          "target": "位于“高考 英语 138 分”左侧，纵向靠近该行及上一行",
+          "position": "文字列表左侧下方",
+          "uncertain": true,
+          "requires_review": true,
+          "grounding": "api_visual_observation_not_human_verified"
+        },
+        {
+          "type": "弧形笔迹，类似括号",
+          "color": "橙色",
+          "target": "“高考 英语 138 分”行末右侧",
+          "position": "文字列表下方偏中",
+          "uncertain": false,
+          "requires_review": false,
+          "grounding": "api_visual_observation_not_human_verified"
+        },
+        {
+          "type": "弧形笔迹",
+          "color": "橙色",
+          "target": "位于“IELTS 雅思7.5 (World: Top88% – 93%, China: Top98%)”右侧附近",
+          "position": "文字列表右侧中部",
+          "uncertain": true,
+          "requires_review": true,
+          "grounding": "api_visual_observation_not_human_verified"
+        }
+      ],
+      "checkmarks_count": 0,
+      "circled_text": [],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "右上角有浅色水印样式的字样，内容无法确认；未列入教学文字。",
+        "橙色弧形笔迹与具体文字行的对应关系不完全明确。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": "自我介绍\n• 奥克兰大学教育学研究生（入学时QS专业全球排名17）\n• 前北京新东方英语学习部优秀教师（2012-2018）\n• TKT英语教学能力证书（剑桥大学颁发）\n• 6年线下，4年线上教龄\n• TOEFL 托福 102分（阅读听力接近满分）\n• IELTS 雅思7.5 (World: Top88% – 93%, China: Top98%)\n• 高考 英语 138 分"
+    },
+    "usage": {
+      "completion_tokens": 1019,
+      "total_tokens": 3699,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 612
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 15.30594727100106,
+    "image_sha256": "0d5fad04ad0740c989fe794629ab616c5d135124f9c69e15dad34dcc879e8f1a",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00004185_0000139500.webp",
+  "time": 139.5,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "visible_annotation_change_or_changed_target_text"
+  ]
+}

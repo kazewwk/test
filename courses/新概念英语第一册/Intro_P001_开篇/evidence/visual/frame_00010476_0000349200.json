@@ -1,0 +1,143 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"slide\",\n  \"text_lines\": [\n    \"课前准备\",\n    \"① 新概念第一册教材\",\n    \"② 新概念一册英语语法练习\",\n    \"③ 剑桥初级英语语法\",\n    \"④ 手机词典\",\n    \"⑤ 手机App: 新概念文章音频\",\n    \"新概念英语\",\n    \"NCE Grammar Practice\",\n    \"1\",\n    \"语法练习\",\n    \"First Things First\",\n    \"英语初阶\",\n    \"[无法确认]\",\n    \"CAMBRIDGE\",\n    \"剑桥初级\",\n    \"英语语法\",\n    \"ESSENTIAL GRAMMAR IN USE\",\n    \"（英）Raymond Murphy 著\",\n    \"英语在用\",\n    \"[无法确认]\",\n    \"胶学 bilibili\"\n  ],\n  \"description\": \"左上方是蓝色横幅。左下方并排显示两本书的封面：左侧封面以黄、绿、蓝色为主，右侧封面以红色为主。右侧一人坐在圆桌后，桌上有带支架的平板电脑，手中有一支白色笔。\",\n  \"annotations\": [],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"两本书封面上的部分小字及书脊文字分辨率不足，无法逐字确认。\",\n    \"右上角水印中的“胶学”辨识不清。\"\n  ]\n}",
+  "parsed": {
+    "kind": "slide",
+    "text_lines": [
+      "课前准备",
+      "① 新概念第一册教材",
+      "② 新概念一册英语语法练习",
+      "③ 剑桥初级英语语法",
+      "④ 手机词典",
+      "⑤ 手机App: 新概念文章音频",
+      "新概念英语",
+      "NCE Grammar Practice",
+      "1",
+      "语法练习",
+      "First Things First",
+      "英语初阶",
+      "[无法确认]",
+      "CAMBRIDGE",
+      "剑桥初级",
+      "英语语法",
+      "ESSENTIAL GRAMMAR IN USE",
+      "（英）Raymond Murphy 著",
+      "英语在用",
+      "[无法确认]",
+      "胶学 bilibili"
+    ],
+    "description": "左上方是蓝色横幅。左下方并排显示两本书的封面：左侧封面以黄、绿、蓝色为主，右侧封面以红色为主。右侧一人坐在圆桌后，桌上有带支架的平板电脑，手中有一支白色笔。",
+    "annotations": [],
+    "checkmarks_count": 0,
+    "circled_text": [],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "两本书封面上的部分小字及书脊文字分辨率不足，无法逐字确认。",
+      "右上角水印中的“胶学”辨识不清。"
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "课前准备\n① 新概念第一册教材\n② 新概念一册英语语法练习\n③ 剑桥初级英语语法\n④ 手机词典\n⑤ 手机App: 新概念文章音频\n新概念英语\nNCE Grammar Practice\n1\n语法练习\nFirst Things First\n英语初阶\n[无法确认]\nCAMBRIDGE\n剑桥初级\n英语语法\nESSENTIAL GRAMMAR IN USE\n（英）Raymond Murphy 著\n英语在用\n[无法确认]\n胶学 bilibili"
+  },
+  "usage": {
+    "completion_tokens": 390,
+    "total_tokens": 3070,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 40
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 6.688780876000237,
+  "image_sha256": "6ff5396147b05bee44aa3bee3a2c027090c7d96391c4bfe24046913565a1353e",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\n  \"kind\": \"slide\",\n  \"text_lines\": [\n    \"课前准备\",\n    \"① 新概念第一册教材\",\n    \"② 新概念一册英语语法练习\",\n    \"③ 剑桥初级英语语法\",\n    \"④ 手机词典\",\n    \"⑤ 手机App: 新概念文章音频\",\n    \"新概念英语\",\n    \"NCE Grammar Practice 1\",\n    \"语法练习\",\n    \"First things First\",\n    \"剑桥初级英语语法\",\n    \"ESSENTIAL GRAMMAR IN USE\",\n    \"（Third Edition）\",\n    \"Raymond Murphy\",\n    \"英语在用\"\n  ],\n  \"description\": \"画面右侧是一名戴眼镜的人坐在圆桌旁，桌上放着平板电脑；左下方展示两本书的封面。\",\n  \"annotations\": [],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"左侧书封面圆形图案内的小字及作者等细小文字无法确认。\",\n    \"右侧书封面上的细小说明文字无法确认。\",\n    \"右上角浅色水印文字无法确认。\"\n  ]\n}",
+    "parsed": {
+      "kind": "slide",
+      "text_lines": [
+        "课前准备",
+        "① 新概念第一册教材",
+        "② 新概念一册英语语法练习",
+        "③ 剑桥初级英语语法",
+        "④ 手机词典",
+        "⑤ 手机App: 新概念文章音频",
+        "新概念英语",
+        "NCE Grammar Practice 1",
+        "语法练习",
+        "First things First",
+        "剑桥初级英语语法",
+        "ESSENTIAL GRAMMAR IN USE",
+        "（Third Edition）",
+        "Raymond Murphy",
+        "英语在用"
+      ],
+      "description": "画面右侧是一名戴眼镜的人坐在圆桌旁，桌上放着平板电脑；左下方展示两本书的封面。",
+      "annotations": [],
+      "checkmarks_count": 0,
+      "circled_text": [],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "左侧书封面圆形图案内的小字及作者等细小文字无法确认。",
+        "右侧书封面上的细小说明文字无法确认。",
+        "右上角浅色水印文字无法确认。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": "课前准备\n① 新概念第一册教材\n② 新概念一册英语语法练习\n③ 剑桥初级英语语法\n④ 手机词典\n⑤ 手机App: 新概念文章音频\n新概念英语\nNCE Grammar Practice 1\n语法练习\nFirst things First\n剑桥初级英语语法\nESSENTIAL GRAMMAR IN USE\n（Third Edition）\nRaymond Murphy\n英语在用"
+    },
+    "usage": {
+      "completion_tokens": 714,
+      "total_tokens": 3394,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 429
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 9.247471479000524,
+    "image_sha256": "6ff5396147b05bee44aa3bee3a2c027090c7d96391c4bfe24046913565a1353e",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00010476_0000349200.webp",
+  "time": 349.2,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "nontext_instructional_image_or_demonstration",
+    "low_confidence_instructional_ocr",
+    "visible_annotation_change_or_changed_target_text"
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "artifacts": {
+    "1793118500_3086.md": "02de1149c833a970b244093aab2872ac42ad3239ece595425ca04aff5b373eb7",
+    "1793118500_3086_res.json": "721eadcd3bb55c47e48601152226a7e9c5415a5fa0b225eda1fbdd97628228bd",
+    "imgs/img_in_image_box_1044_282_1771_1080.jpg": "738d9980ba98b3067aa7aa3f525e65b918abdd31e826cec6f2d9535056f804a6",
+    "region_repairs.md": "bc07f7459dbe9101d0eaa289fee26a86367d89094c996676899e396a8a759e77",
+    "repairs/region_000/1793118500_2515.md": "3e0beba5bfd85768b6db9d5e211ccd3af9280bb7126d3f56a11a1821d36370b8",
+    "repairs/region_000/1793118500_2515_res.json": "f3b0e15b54e346170313021c54f235b345cccfc4a9a21999b3c9d06cfdebb379",
+    "repairs/region_000/source.png": "8a65390f261c8f81b1eeff9619d76665e545296b7b94b9fb4ebc9182034bc22b",
+    "repairs/region_002/1793118501_8512.md": "31f180d336c4c877f70cea4c82d0d1b204b188edf736de87617271fa63bc9b1c",
+    "repairs/region_002/1793118501_8512_res.json": "1c548d9e27c6342e63c33441aabf044b6a132976b9174928e258637c5eea44b4",
+    "repairs/region_002/source.png": "e34aa8c786a3eed2478decc9d3e2fad9441b3d4718248ed2b7bf66ed1a4a0790"
+  },
+  "input_fingerprint": "70be8e2f8975ea95e62a020d7606668a0b6ddcc5b0b22f467bcfaa449de807e2",
+  "image_sha256": "4a516cfd7f755d992b8fae5cbe3b319ad69103e914331a6dff93bf6c5af91ff7",
+  "cache_fingerprint": "641454f3f95e26210dfa50f2586aade2998042aeb106033b2b449ce36e560b73",
+  "elapsed_seconds": 3.0585586079978384,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "教学 bilibili",
+      "block_bbox": [
+        1648,
+        31,
+        1888,
+        100
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1648.0,
+          31.0
+        ],
+        [
+          1888.0,
+          31.0
+        ],
+        [
+          1888.0,
+          100.0
+        ],
+        [
+          1648.0,
+          100.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "课前准备",
+      "block_bbox": [
+        97,
+        136,
+        347,
+        193
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          97.0,
+          136.0
+        ],
+        [
+          347.0,
+          136.0
+        ],
+        [
+          347.0,
+          193.0
+        ],
+        [
+          97.0,
+          193.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "① 新概念第一册教材",
+      "block_bbox": [
+        94,
+        291,
+        583,
+        347
+      ],
+      "block_id": 2,
+      "block_order": 2,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          94.0,
+          291.0
+        ],
+        [
+          583.0,
+          291.0
+        ],
+        [
+          583.0,
+          347.0
+        ],
+        [
+          94.0,
+          347.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "NO WIN",
+      "block_bbox": [
+        1044,
+        282,
+        1771,
+        1080
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1044.0,
+          282.0
+        ],
+        [
+          1771.0,
+          282.0
+        ],
+        [
+          1771.0,
+          1080.0
+        ],
+        [
+          1044.0,
+          1080.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "K学 bilih",
+      "block_bbox": [
+        1640,
+        23,
+        1902,
+        112
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "① 亲",
+      "block_bbox": [
+        88,
+        284,
+        206,
+        352
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1640,
+        23,
+        1902,
+        112
+      ],
+      "ppocr_candidate": "胶学",
+      "recovered_text": "K学 bilih",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        88,
+        284,
+        206,
+        352
+      ],
+      "ppocr_candidate": "①亲",
+      "recovered_text": "① 亲",
+      "source_crop": "repairs/region_002/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

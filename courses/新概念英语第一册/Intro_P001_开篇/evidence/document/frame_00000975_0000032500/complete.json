@@ -1,0 +1,192 @@
+{
+  "artifacts": {
+    "1793117569_1938.md": "37ba0be304a9b937053f8ab188698483999fbc23b129b879fff5258317520b33",
+    "1793117569_1938_res.json": "32fedf4a9a767f161f22cc9c9e6ac40f2bc09ef33f1eb59f5c5ca06ea6c56ba4",
+    "imgs/img_in_image_box_1032_284_1763_1079.jpg": "826bb7dde2ad4813e8318cbb658543f42124edb352801af6f28dd727b85635f6",
+    "region_repairs.md": "3d1e50bfe0e7af2d472d38b963c5666311a286aea48ca6f37ccd4c899e2221bf",
+    "repairs/region_000/1793117569_9445.md": "fe8bd15b5024cd36831aac96e783a1d9dace348b50a3e63783ae8b0ce2f97e8b",
+    "repairs/region_000/1793117569_9445_res.json": "88da3538989204eeba4800fd8db12978d45077ae8b769b2cae5eadea5937779e",
+    "repairs/region_000/source.png": "ddcbb959c5533fc25fb7e1db02e6a1fb091bd5284df5813bf31aeb52bb6e236c",
+    "repairs/region_003/1793117570_6318.md": "ef1124c28e1f5e910fecc3463aa943b3672bb0097114263b9c95523d0787ac3e",
+    "repairs/region_003/1793117570_6318_res.json": "ea6fab9059aa38d48fdbd4423496ffbceaaa7d71241015f841c022cb22256d3b",
+    "repairs/region_003/source.png": "bd83a1692e49f11caf77fcbe8d2faeea522561aa07d818e37298f639ac2fc25c"
+  },
+  "input_fingerprint": "d270a2c2bd2c983ecea98f0988dbc7d8092319ef84700dba1f237e3a0b400121",
+  "image_sha256": "b25d1ea879369fc0426a78b660f6392b0128d351a3f36666aa2b0301722f1644",
+  "cache_fingerprint": "641454f3f95e26210dfa50f2586aade2998042aeb106033b2b449ce36e560b73",
+  "elapsed_seconds": 3.3687064110054052,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "教学 bilibili",
+      "block_bbox": [
+        1647,
+        32,
+        1888,
+        100
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1647.0,
+          32.0
+        ],
+        [
+          1888.0,
+          32.0
+        ],
+        [
+          1888.0,
+          100.0
+        ],
+        [
+          1647.0,
+          100.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "自我介绍",
+      "block_bbox": [
+        98,
+        138,
+        348,
+        192
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          98.0,
+          138.0
+        ],
+        [
+          348.0,
+          138.0
+        ],
+        [
+          348.0,
+          192.0
+        ],
+        [
+          98.0,
+          192.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "·奥克兰大学教育学研究生（入学时QS专业全球排名17）",
+      "block_bbox": [
+        92,
+        281,
+        1100,
+        329
+      ],
+      "block_id": 2,
+      "block_order": 2,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          92.0,
+          281.0
+        ],
+        [
+          1100.0,
+          281.0
+        ],
+        [
+          1100.0,
+          329.0
+        ],
+        [
+          92.0,
+          329.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "17)",
+      "block_bbox": [
+        1032,
+        284,
+        1763,
+        1079
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1032.0,
+          284.0
+        ],
+        [
+          1763.0,
+          284.0
+        ],
+        [
+          1763.0,
+          1079.0
+        ],
+        [
+          1032.0,
+          1079.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "医学�批",
+      "block_bbox": [
+        1639,
+        22,
+        1901,
+        112
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "NO\nWITH",
+      "block_bbox": [
+        1564,
+        604,
+        1605,
+        637
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1639,
+        22,
+        1901,
+        112
+      ],
+      "ppocr_candidate": "胶学",
+      "recovered_text": "医学�批",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        1564,
+        604,
+        1605,
+        637
+      ],
+      "ppocr_candidate": "NU",
+      "recovered_text": "NO\nWITH",
+      "source_crop": "repairs/region_003/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

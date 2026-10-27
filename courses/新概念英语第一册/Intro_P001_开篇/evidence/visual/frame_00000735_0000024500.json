@@ -1,0 +1,94 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"slide\",\n  \"text_lines\": [\n    \"NCE BOOK I\",\n    \"开篇\",\n    \"③\",\n    \"②\",\n    \"①\",\n    \"使用指南\",\n    \"课前准备\",\n    \"自我介绍\"\n  ],\n  \"description\": \"左侧为蓝色矩形标题区，下方有三列竖排文字；右侧一人坐在圆桌后，桌上有支架和平板设备。\",\n  \"annotations\": [\n    {\n      \"type\": \"圆圈\",\n      \"color\": \"黑色\",\n      \"target\": \"3\",\n      \"position\": \"左下方“使用指南”上方\",\n      \"uncertain\": false\n    },\n    {\n      \"type\": \"圆圈\",\n      \"color\": \"黑色\",\n      \"target\": \"2\",\n      \"position\": \"左下方“课前准备”上方\",\n      \"uncertain\": false\n    },\n    {\n      \"type\": \"圆圈\",\n      \"color\": \"黑色\",\n      \"target\": \"1\",\n      \"position\": \"左下方“自我介绍”上方\",\n      \"uncertain\": false\n    }\n  ],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [\"3\", \"2\", \"1\"],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": []\n}",
+  "parsed": {
+    "kind": "slide",
+    "text_lines": [
+      "NCE BOOK I",
+      "开篇",
+      "③",
+      "②",
+      "①",
+      "使用指南",
+      "课前准备",
+      "自我介绍"
+    ],
+    "description": "左侧为蓝色矩形标题区，下方有三列竖排文字；右侧一人坐在圆桌后，桌上有支架和平板设备。",
+    "annotations": [
+      {
+        "type": "圆圈",
+        "color": "黑色",
+        "target": "3",
+        "position": "左下方“使用指南”上方",
+        "uncertain": false,
+        "requires_review": false,
+        "grounding": "api_visual_observation_not_human_verified"
+      },
+      {
+        "type": "圆圈",
+        "color": "黑色",
+        "target": "2",
+        "position": "左下方“课前准备”上方",
+        "uncertain": false,
+        "requires_review": false,
+        "grounding": "api_visual_observation_not_human_verified"
+      },
+      {
+        "type": "圆圈",
+        "color": "黑色",
+        "target": "1",
+        "position": "左下方“自我介绍”上方",
+        "uncertain": false,
+        "requires_review": false,
+        "grounding": "api_visual_observation_not_human_verified"
+      }
+    ],
+    "checkmarks_count": 0,
+    "circled_text": [
+      "3",
+      "2",
+      "1"
+    ],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "NCE BOOK I\n开篇\n③\n②\n①\n使用指南\n课前准备\n自我介绍"
+  },
+  "usage": {
+    "completion_tokens": 359,
+    "total_tokens": 3039,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 55
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 6.06566890600152,
+  "image_sha256": "697913ac28dbead2293f471d16d24f87e94122e295948f83e35e007a58d160ed",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "path": "frames/frame_00000735_0000024500.webp",
+  "time": 24.5,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "nontext_instructional_image_or_demonstration",
+    "low_confidence_instructional_ocr",
+    "visible_annotation_change_or_changed_target_text"
+  ]
+}

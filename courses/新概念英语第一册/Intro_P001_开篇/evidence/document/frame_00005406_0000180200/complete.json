@@ -1,0 +1,161 @@
+{
+  "artifacts": {
+    "1793118460_4858.md": "c3957e87ad424df9b1e35adf9fd6e60ed880cbf2b31d5fa5baa552116ae21b5a",
+    "1793118460_4858_res.json": "ef52a406faec7ef8cc19bea7cea8a851f0ed72f4df828b13679db0456b8c8fc3",
+    "imgs/img_in_image_box_1016_281_1835_1080.jpg": "c9df2e5a3493c6d2d0c26dcee6a839c108476397a6b29f0651b5f3eb88feb55a",
+    "region_repairs.md": "e816a9dbb61b6b68dc1b90bd5f75d16619e98df9d78663d06901efbc4d1b58df",
+    "repairs/region_001/1793118460_1834.md": "aca6fec7a33eeecad28409ae30ec14746c6bd33f9175f2f8339d7bdf88896b82",
+    "repairs/region_001/1793118460_1834_res.json": "e1f6174eadfc7136e0927c2b492a4f9e644d10004f2e43a26ecb10bb4eae406e",
+    "repairs/region_001/source.png": "9915921b79fcad720b69e7a23e9a7cfeb12ab857de310917d598290e2be750a6",
+    "repairs/region_003/1793118461_2221.md": "cc05c6f4296b14240279b9858e121dd04d9a46bf3196dbeddfac33cfa9e3ca7a",
+    "repairs/region_003/1793118461_2221_res.json": "0530e917261c3f537b116949b81d4675e2541d370f0261f0b1d0a21ff037c73d",
+    "repairs/region_003/source.png": "761bf4084292632ef5047400bc22a5097033ae52fcce441d97f0c0a3ba2a50d0"
+  },
+  "input_fingerprint": "4b79948515b2fefa1de8c41abeb3ce94d9be2b78396075a4f9d14b2a1783c393",
+  "image_sha256": "c8dc7640dba28c0e3421a7017a6f9989b6dbd699b2f03a95d12130cec7511804",
+  "cache_fingerprint": "641454f3f95e26210dfa50f2586aade2998042aeb106033b2b449ce36e560b73",
+  "elapsed_seconds": 3.179193451003812,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "m=1.5km/h",
+      "block_bbox": [
+        1647,
+        29,
+        1890,
+        103
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1647.0,
+          29.0
+        ],
+        [
+          1890.0,
+          29.0
+        ],
+        [
+          1890.0,
+          103.0
+        ],
+        [
+          1647.0,
+          103.0
+        ]
+      ]
+    },
+    {
+      "block_label": "header",
+      "block_content": "课前准备",
+      "block_bbox": [
+        93,
+        135,
+        350,
+        194
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          93.0,
+          135.0
+        ],
+        [
+          350.0,
+          135.0
+        ],
+        [
+          350.0,
+          194.0
+        ],
+        [
+          93.0,
+          194.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "NO\nWIIR",
+      "block_bbox": [
+        1016,
+        281,
+        1835,
+        1080
+      ],
+      "block_id": 2,
+      "block_order": null,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          1016.0,
+          281.0
+        ],
+        [
+          1835.0,
+          281.0
+        ],
+        [
+          1835.0,
+          1080.0
+        ],
+        [
+          1016.0,
+          1080.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "WS-130H",
+      "block_bbox": [
+        1640,
+        24,
+        1900,
+        110
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "NO\nWHR",
+      "block_bbox": [
+        1569,
+        610,
+        1621,
+        648
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1640,
+        24,
+        1900,
+        110
+      ],
+      "ppocr_candidate": "胶学",
+      "recovered_text": "WS-130H",
+      "source_crop": "repairs/region_001/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        1569,
+        610,
+        1621,
+        648
+      ],
+      "ppocr_candidate": "WIR",
+      "recovered_text": "NO\nWHR",
+      "source_crop": "repairs/region_003/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

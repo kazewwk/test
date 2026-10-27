@@ -1,0 +1,105 @@
+{
+  "artifacts": {
+    "1793117480_2024.md": "e9c6e3c50169b2d06b7e58743f70ac514635b97afe48dd916ff15770565f9ba2",
+    "1793117480_2024_res.json": "cc7b7c5a6b7c627487216fd05ac7658f222527b827a795e8130b89f9573c8f68",
+    "imgs/img_in_header_image_box_1646_30_1904_101.jpg": "2ef63125aa552e59132834537d7a701ee115562fae41060b99e7f4bf0492732d",
+    "region_repairs.md": "d6c1157a9416d04b2515adfa7285bff176b55ff117bc4e8f8265bf6e10e0682a",
+    "repairs/region_000/1793117480_9665.md": "0cd20ea40b9a58c92d13e86e72ed1b2b41688a55e1a2ab416a62eaaa313cd3b8",
+    "repairs/region_000/1793117480_9665_res.json": "fe4dda84a1d66e5ba768dae15b6ef401352616f68e8509e7eb87811751ab8093",
+    "repairs/region_000/source.png": "794d1ba5b81344177cd28e991fe090b5d3b9263587c8b7587ce1444d74b3aab3"
+  },
+  "input_fingerprint": "8d808974ba42086506f90f0eb6da84b6f6f8019f19de9d3b703b615ba6e060ef",
+  "image_sha256": "377667ade82308cbdc4aa38149ad8402a7744ce2290ddc4a5c9a8c5eeb50e148",
+  "cache_fingerprint": "641454f3f95e26210dfa50f2586aade2998042aeb106033b2b449ce36e560b73",
+  "elapsed_seconds": 1.1621106970051187,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "数学おかん",
+      "block_bbox": [
+        1646,
+        30,
+        1904,
+        101
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1646.0,
+          30.0
+        ],
+        [
+          1904.0,
+          30.0
+        ],
+        [
+          1904.0,
+          101.0
+        ],
+        [
+          1646.0,
+          101.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "胶囊助学计划",
+      "block_bbox": [
+        767,
+        651,
+        1154,
+        703
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          767.0,
+          651.0
+        ],
+        [
+          1154.0,
+          651.0
+        ],
+        [
+          1154.0,
+          703.0
+        ],
+        [
+          767.0,
+          703.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "留学 bilibili",
+      "block_bbox": [
+        1640,
+        20,
+        1903,
+        113
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1640,
+        20,
+        1903,
+        113
+      ],
+      "ppocr_candidate": "胶学",
+      "recovered_text": "留学 bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

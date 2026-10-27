@@ -1,0 +1,112 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"slide\",\n  \"text_lines\": [\n    \"使用指南\",\n    \"Why\"\n  ],\n  \"description\": \"左上方有蓝色横幅，右端呈凹口形；左侧中部有一个浅灰紫色圆形，带下方阴影，圆内是深色文字“Why”。画面右侧一人坐在圆桌后，手持白色笔，桌上有平板设备。\",\n  \"annotations\": [],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [\n    \"Why\"\n  ],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"右上角有浅色水印，部分文字无法确认。\"\n  ]\n}",
+  "parsed": {
+    "kind": "slide",
+    "text_lines": [
+      "使用指南",
+      "Why"
+    ],
+    "description": "左上方有蓝色横幅，右端呈凹口形；左侧中部有一个浅灰紫色圆形，带下方阴影，圆内是深色文字“Why”。画面右侧一人坐在圆桌后，手持白色笔，桌上有平板设备。",
+    "annotations": [],
+    "checkmarks_count": 0,
+    "circled_text": [
+      "Why"
+    ],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "右上角有浅色水印，部分文字无法确认。",
+      "Independent image models disagree on circled_text; both candidates retained in source evidence."
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "使用指南\nWhy"
+  },
+  "usage": {
+    "completion_tokens": 227,
+    "total_tokens": 2907,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 57
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 16.030771986999753,
+  "image_sha256": "be1b67843efbef331aa79d67773487a341bed88b770b31a51a23cbf407f727d8",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\"kind\":\"slide\",\"text_lines\":[\"使用指南\",\"Why\",\"[无法确认]\"],\"description\":\"浅色背景；左上方有蓝色横幅，中央偏左有一个浅灰色圆形，内写“Why”；右侧一名坐在圆桌旁的人，桌上放着平板电脑。\",\"annotations\":[],\"checkmarks_count\":0,\"circled_text\":[],\"tables\":[],\"formulas\":[],\"uncertain\":[\"右上角有浅色水印文字，但无法确认具体内容。\"]}",
+    "parsed": {
+      "kind": "slide",
+      "text_lines": [
+        "使用指南",
+        "Why",
+        "[无法确认]"
+      ],
+      "description": "浅色背景；左上方有蓝色横幅，中央偏左有一个浅灰色圆形，内写“Why”；右侧一名坐在圆桌旁的人，桌上放着平板电脑。",
+      "annotations": [],
+      "checkmarks_count": 0,
+      "circled_text": [],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "右上角有浅色水印文字，但无法确认具体内容。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": "使用指南\nWhy\n[无法确认]"
+    },
+    "usage": {
+      "completion_tokens": 303,
+      "total_tokens": 2983,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 186
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 7.08096064900019,
+    "image_sha256": "be1b67843efbef331aa79d67773487a341bed88b770b31a51a23cbf407f727d8",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00011385_0000379500.webp",
+  "time": 379.5,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "nontext_instructional_image_or_demonstration",
+    "low_confidence_instructional_ocr",
+    "visible_annotation_change_or_changed_target_text"
+  ]
+}

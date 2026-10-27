@@ -1,0 +1,192 @@
+{
+  "artifacts": {
+    "1793124044_2856.md": "a3c851a2520a06918819be50aa16356a5e2267a28cee0338090d30f6b0982ea9",
+    "1793124044_2856_res.json": "6f3ce3a6ab92d76f7d41ec31f2e1ac2da4b9224cba3b43699fb26987b1801498",
+    "imgs/img_in_image_box_1058_291_1765_1079.jpg": "189cd98fbb36d1a3840b21f6bba8528eb96c13eaf5b0f627867cabf5bff54549",
+    "region_repairs.md": "4b38662a27259b994511a165ca661a8dd74a3349a2ba7758eb39f3030c2e1012",
+    "repairs/region_000/1793124045_7068.md": "6580dadbb1c9cd8e35e53061c271016201ca1a405c3437d3266c5259a9ddc0f8",
+    "repairs/region_000/1793124045_7068_res.json": "29a9411124e4ad8ed08c069df490a61f1ef552be0ff7e4aeb4a5efe8b2c37135",
+    "repairs/region_000/source.png": "b844bd4d40e783b0d3ccb7f31380b904482169c5dfbb781f1c4d6201265bc984",
+    "repairs/region_005/1793124045_3985.md": "6b684a28e49b25f6996807483a9d8fbdef42446204d71541f38e285e5d6d6c4d",
+    "repairs/region_005/1793124045_3985_res.json": "37c79171b3fb0e5de25feefde228d5bd3602829e300ea5a2f0973065b40f709c",
+    "repairs/region_005/source.png": "e8ed4bd93044ed07e70801826eea9a5d5a8f9c1aea00f2b25b7ee8af9472ed10"
+  },
+  "input_fingerprint": "1c32af6298e1b3e14f465cf5f85e06d78aa2f8c7874de84f227921b9d44ac7e4",
+  "image_sha256": "a8b26e94ede676746018db82935645fe6d4b8ae1a6f10184e3c8eaa3f6c8b386",
+  "cache_fingerprint": "641454f3f95e26210dfa50f2586aade2998042aeb106033b2b449ce36e560b73",
+  "elapsed_seconds": 2.8694777110003997,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "paragraph_title",
+      "block_content": "使用指南",
+      "block_bbox": [
+        96,
+        135,
+        350,
+        194
+      ],
+      "block_id": 0,
+      "block_order": 1,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          96.0,
+          135.0
+        ],
+        [
+          350.0,
+          135.0
+        ],
+        [
+          350.0,
+          194.0
+        ],
+        [
+          96.0,
+          194.0
+        ]
+      ]
+    },
+    {
+      "block_label": "header",
+      "block_content": "政学 | 洲洲",
+      "block_bbox": [
+        1646,
+        30,
+        1889,
+        103
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          1646.0,
+          30.0
+        ],
+        [
+          1889.0,
+          30.0
+        ],
+        [
+          1889.0,
+          103.0
+        ],
+        [
+          1646.0,
+          103.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "Why",
+      "block_bbox": [
+        521,
+        601,
+        657,
+        677
+      ],
+      "block_id": 2,
+      "block_order": 2,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          521.0,
+          601.0
+        ],
+        [
+          657.0,
+          601.0
+        ],
+        [
+          657.0,
+          677.0
+        ],
+        [
+          521.0,
+          677.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "NO\nWRI",
+      "block_bbox": [
+        1058,
+        291,
+        1765,
+        1079
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1058.0,
+          291.0
+        ],
+        [
+          1765.0,
+          291.0
+        ],
+        [
+          1765.0,
+          1079.0
+        ],
+        [
+          1058.0,
+          1079.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "文学",
+      "block_bbox": [
+        1639,
+        23,
+        1901,
+        112
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "NO\nWOR",
+      "block_bbox": [
+        1549,
+        586,
+        1603,
+        626
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1639,
+        23,
+        1901,
+        112
+      ],
+      "ppocr_candidate": "胶学",
+      "recovered_text": "文学",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        1549,
+        586,
+        1603,
+        626
+      ],
+      "ppocr_candidate": "WAR",
+      "recovered_text": "NO\nWOR",
+      "source_crop": "repairs/region_005/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

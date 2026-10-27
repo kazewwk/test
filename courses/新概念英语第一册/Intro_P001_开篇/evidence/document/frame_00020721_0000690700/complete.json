@@ -1,0 +1,223 @@
+{
+  "artifacts": {
+    "1793125032_9468.md": "a6b3895c37531256a4b32181a9023d2063b2cfb9b6a1075d40b4aeda8208ecbe",
+    "1793125032_9468_res.json": "b22ab4f1b681879863ccc991a16db98e06fc3ad3cfc63653f14790ce7d16f81f",
+    "imgs/img_in_image_box_1056_289_1815_1080.jpg": "9d7439470575e9b816941591bd6ebab7bf794ec76a09e98b64ab8799e21ec2c1",
+    "region_repairs.md": "9150a86ba2768ffec48755444508d6b5e5bea47bff57854a811a62a5c0447631",
+    "repairs/region_000/1793125032_3083.md": "84a0a79cc1718bb4fa6e9eb5e9a366f06fbdfe102c51cfd4ce157c8e3c018c68",
+    "repairs/region_000/1793125032_3083_res.json": "624eb817f237c35cc913b51162ad7c6260e7f13dabd117aea8c077f54a33ebc5",
+    "repairs/region_000/source.png": "f7b11045da24232f7c99492e983aac80f466d272521465d54c949b38baed20f3",
+    "repairs/region_004/1793125033_2399.md": "23794d91c53ae875c8e247d72561e35d9d06ee07c70c9e0dbcc977a6d161504a",
+    "repairs/region_004/1793125033_2399_res.json": "b2f1ea819e84f120a6632ae13e66e26e94144116283b1df665d693ffc34900dc",
+    "repairs/region_004/source.png": "7209a6c203263c46bc6bea51d7436f4398cfca73f1481a2404b38c44d9e55ddd"
+  },
+  "input_fingerprint": "7ae94ffbfc2c7984d950a4d779ee15c6a9203731ecd3dca103bcf9ec0337892d",
+  "image_sha256": "a8cc1bb32339036e6bb57d76e5dafb59273052f98323bec7f899fb6592aa9c5a",
+  "cache_fingerprint": "641454f3f95e26210dfa50f2586aade2998042aeb106033b2b449ce36e560b73",
+  "elapsed_seconds": 3.3056536200001574,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "教学 bilibili",
+      "block_bbox": [
+        1647,
+        30,
+        1889,
+        102
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1647.0,
+          30.0
+        ],
+        [
+          1889.0,
+          30.0
+        ],
+        [
+          1889.0,
+          102.0
+        ],
+        [
+          1647.0,
+          102.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "使用指南",
+      "block_bbox": [
+        98,
+        136,
+        349,
+        194
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          98.0,
+          136.0
+        ],
+        [
+          349.0,
+          136.0
+        ],
+        [
+          349.0,
+          194.0
+        ],
+        [
+          98.0,
+          194.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "跟读 & 泡耳朵",
+      "block_bbox": [
+        98,
+        234,
+        330,
+        278
+      ],
+      "block_id": 2,
+      "block_order": 2,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          98.0,
+          234.0
+        ],
+        [
+          330.0,
+          234.0
+        ],
+        [
+          330.0,
+          278.0
+        ],
+        [
+          98.0,
+          278.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "How",
+      "block_bbox": [
+        522,
+        606,
+        655,
+        668
+      ],
+      "block_id": 3,
+      "block_order": 3,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          522.0,
+          606.0
+        ],
+        [
+          655.0,
+          606.0
+        ],
+        [
+          655.0,
+          668.0
+        ],
+        [
+          522.0,
+          668.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "NO WHI",
+      "block_bbox": [
+        1056,
+        289,
+        1815,
+        1080
+      ],
+      "block_id": 4,
+      "block_order": null,
+      "group_id": 4,
+      "block_polygon_points": [
+        [
+          1056.0,
+          289.0
+        ],
+        [
+          1815.0,
+          289.0
+        ],
+        [
+          1815.0,
+          1080.0
+        ],
+        [
+          1056.0,
+          1080.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "de学 bilbil",
+      "block_bbox": [
+        1640,
+        22,
+        1901,
+        112
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "NO",
+      "block_bbox": [
+        1571,
+        588,
+        1608,
+        617
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1640,
+        22,
+        1901,
+        112
+      ],
+      "ppocr_candidate": "胶学",
+      "recovered_text": "de学 bilbil",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        1571,
+        588,
+        1608,
+        617
+      ],
+      "ppocr_candidate": "NU",
+      "recovered_text": "NO",
+      "source_crop": "repairs/region_004/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}
