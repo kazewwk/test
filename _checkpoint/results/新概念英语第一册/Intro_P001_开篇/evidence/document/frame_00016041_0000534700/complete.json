@@ -1,0 +1,192 @@
+{
+  "artifacts": {
+    "1793124376_3807.md": "b38f190026c7961e75e01f7bb28b44c9761178c9511c422ca26cd1742a8946c2",
+    "1793124376_3807_res.json": "0cd579d6086e2056fae2a3dac0fa904c7859932d8b550b9958f5c165f1816cfa",
+    "imgs/img_in_image_box_1051_289_1716_1080.jpg": "304d15053819fed04af62bb4c89f51d987f6768d1a1c4d7e165b58883d8aa27c",
+    "region_repairs.md": "a63c2eff69b71ef4ab973a318407292076b0735466f215ca2322f10c3a83da5c",
+    "repairs/region_000/1793124377_5472.md": "53f0a2d6322c7aff819d9a028b3d4bfc1f3de6dd171c0114c372727a8560df66",
+    "repairs/region_000/1793124377_5472_res.json": "34c60a6c217009d9c78075e46d0e0a06e8b64f08bc5e4fb14580b9c227f2f4c0",
+    "repairs/region_000/source.png": "f633d090d86b08f8eea0abf7eadec4a41f3e31bb0b27fbdcc3f8d98afb10c2c1",
+    "repairs/region_005/1793124377_6488.md": "cc05c6f4296b14240279b9858e121dd04d9a46bf3196dbeddfac33cfa9e3ca7a",
+    "repairs/region_005/1793124377_6488_res.json": "82ce870c4b4a74b863720f048807bae9f97c31fc58771fa8b8753c2dd70aa695",
+    "repairs/region_005/source.png": "da22f66b609bf7848617847af66c950672d231db8c1ed5f77fb31533288df3f3"
+  },
+  "input_fingerprint": "109352b6ca387b89a5293cb6b766c7f2d87a30ea56883a56f926b96e644886dd",
+  "image_sha256": "85e39cbd9085bc09e5de3261be145ff01db60bf870ce9bba7b60c17658cd90be",
+  "cache_fingerprint": "641454f3f95e26210dfa50f2586aade2998042aeb106033b2b449ce36e560b73",
+  "elapsed_seconds": 3.061212030999741,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "教学 bilibili",
+      "block_bbox": [
+        1647,
+        31,
+        1888,
+        101
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1647.0,
+          31.0
+        ],
+        [
+          1888.0,
+          31.0
+        ],
+        [
+          1888.0,
+          101.0
+        ],
+        [
+          1647.0,
+          101.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "使用指南\n跟读 & 泡耳朵",
+      "block_bbox": [
+        96,
+        136,
+        345,
+        278
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          96.0,
+          136.0
+        ],
+        [
+          345.0,
+          136.0
+        ],
+        [
+          345.0,
+          278.0
+        ],
+        [
+          96.0,
+          278.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "听 & 说",
+      "block_bbox": [
+        426,
+        388,
+        562,
+        441
+      ],
+      "block_id": 2,
+      "block_order": 2,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          426.0,
+          388.0
+        ],
+        [
+          562.0,
+          388.0
+        ],
+        [
+          562.0,
+          441.0
+        ],
+        [
+          426.0,
+          441.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "NO\nWHR",
+      "block_bbox": [
+        1051,
+        289,
+        1716,
+        1080
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1051.0,
+          289.0
+        ],
+        [
+          1716.0,
+          289.0
+        ],
+        [
+          1716.0,
+          1080.0
+        ],
+        [
+          1051.0,
+          1080.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "文学 bilibil",
+      "block_bbox": [
+        1639,
+        22,
+        1901,
+        112
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "NO\nWHR",
+      "block_bbox": [
+        1533,
+        598,
+        1586,
+        637
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1639,
+        22,
+        1901,
+        112
+      ],
+      "ppocr_candidate": "胶学",
+      "recovered_text": "文学 bilibil",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        1533,
+        598,
+        1586,
+        637
+      ],
+      "ppocr_candidate": "WIR",
+      "recovered_text": "NO\nWHR",
+      "source_crop": "repairs/region_005/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

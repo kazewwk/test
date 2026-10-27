@@ -1,0 +1,192 @@
+{
+  "artifacts": {
+    "1793124332_4985.md": "060fafa8b8f15529d434e92552b40dcef13a15234a545a5986bd5304add4e224",
+    "1793124332_4985_res.json": "10df2a28f5fcb44e9443c6862bc2ac5ccd184383a82c4c89437d931ec133208b",
+    "imgs/img_in_image_box_1051_286_1776_1079.jpg": "32fa7e6af2e7a2757cf4117ae5de0b75e12a3d7755b90bbc6fcb1aaa795e539c",
+    "region_repairs.md": "dac16cf03519fd00bc7bcfdc1a6884e2b7fea8bce9350621a13e5d6c3c22dc5c",
+    "repairs/region_000/1793124333_1564.md": "59ecba6d22485d72d63b00a458a5d24de0efb859f95b0f1cba4b5b3ed1bd582f",
+    "repairs/region_000/1793124333_1564_res.json": "e1a3e33a0aecd5ec4c2ccffcc021aedb77aab29363731ad93db489a90fd9ca7e",
+    "repairs/region_000/source.png": "b639d1e242cfcbf3d35e58f5bf77af92b0356c316750a6570433289e338c2676",
+    "repairs/region_007/1793124333_9807.md": "3820d556a948156d840f77527d9d3c29b7809b293c4fd7cdc76c20b28589e4dd",
+    "repairs/region_007/1793124333_9807_res.json": "21f83d9cd33412f4888785438cf9a54948cd0126e746ab22417c4130cd175e43",
+    "repairs/region_007/source.png": "378c15b757546f372daa7ef2cec6582fa7cbfd44a74223ac743ca29621708af4"
+  },
+  "input_fingerprint": "3f8c8ec757720057e3d82cd25fae47980177790ed7e00f984096aa77511c1fb2",
+  "image_sha256": "cfe0c385d888fa3f6d734729f6354c7e3dd91aa59a5cce63e519f3774a1eacc4",
+  "cache_fingerprint": "641454f3f95e26210dfa50f2586aade2998042aeb106033b2b449ce36e560b73",
+  "elapsed_seconds": 3.166620675000104,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "教学 bilibili",
+      "block_bbox": [
+        1647,
+        31,
+        1888,
+        102
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1647.0,
+          31.0
+        ],
+        [
+          1888.0,
+          31.0
+        ],
+        [
+          1888.0,
+          102.0
+        ],
+        [
+          1647.0,
+          102.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "使用指南\n跟读 & 泡耳朵",
+      "block_bbox": [
+        96,
+        136,
+        345,
+        278
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          96.0,
+          136.0
+        ],
+        [
+          345.0,
+          136.0
+        ],
+        [
+          345.0,
+          278.0
+        ],
+        [
+          96.0,
+          278.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "听 & 说",
+      "block_bbox": [
+        426,
+        389,
+        562,
+        440
+      ],
+      "block_id": 2,
+      "block_order": 2,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          426.0,
+          389.0
+        ],
+        [
+          562.0,
+          389.0
+        ],
+        [
+          562.0,
+          440.0
+        ],
+        [
+          426.0,
+          440.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "NU WHI",
+      "block_bbox": [
+        1051,
+        286,
+        1776,
+        1079
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1051.0,
+          286.0
+        ],
+        [
+          1776.0,
+          286.0
+        ],
+        [
+          1776.0,
+          1079.0
+        ],
+        [
+          1051.0,
+          1079.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "教学 lab",
+      "block_bbox": [
+        1638,
+        21,
+        1902,
+        114
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "NU\nWHR",
+      "block_bbox": [
+        1570,
+        601,
+        1618,
+        636
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1638,
+        21,
+        1902,
+        114
+      ],
+      "ppocr_candidate": "胶学",
+      "recovered_text": "教学 lab",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        1570,
+        601,
+        1618,
+        636
+      ],
+      "ppocr_candidate": "WIR",
+      "recovered_text": "NU\nWHR",
+      "source_crop": "repairs/region_007/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

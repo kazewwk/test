@@ -1,0 +1,192 @@
+{
+  "artifacts": {
+    "1793124373_4547.md": "cc7d7cecf30381daf749b316151764054861438a93b704bab33b6464d732a84f",
+    "1793124373_4547_res.json": "99afac92aa6a7d9b0a199249a28a86337336f162d6ad7ee3d9dd1ce02f83ae43",
+    "imgs/img_in_image_box_1055_282_1737_1079.jpg": "fea419b0431ea65c5b48de1fe955727561cb66063aa98eb0027e964466901bd3",
+    "region_repairs.md": "b3cd16f8e5d24f01647f33ed65d3a2ff6b45ca3ef8445f408ed00a44f1aea566",
+    "repairs/region_000/1793124374_2294.md": "65fd8c029a330747dac85134c12c04745342d37f434f42f8e70c2595d65a7ffd",
+    "repairs/region_000/1793124374_2294_res.json": "65309c1710b7f4248f35eb022d794695f2ad9bc996117d13d2a36263b0ccee5f",
+    "repairs/region_000/source.png": "30a6db120ff7a693a22ea6ff310450bc3a0534d7ea46b54a202f3f79a968615d",
+    "repairs/region_007/1793124374_9581.md": "3820d556a948156d840f77527d9d3c29b7809b293c4fd7cdc76c20b28589e4dd",
+    "repairs/region_007/1793124374_9581_res.json": "6f61ad7eb145b99a06a0f293f30a3f2d22e9de1915c9cf3e47b36063e9bda0d1",
+    "repairs/region_007/source.png": "681ba0318f520a4ae20d5ea1abf2f4eedf2093df799298b833170c696b5d99aa"
+  },
+  "input_fingerprint": "4711675c08e5c8b89a5b3237b27ee07fcaed73910d52a41d9e632277fb51abbe",
+  "image_sha256": "b8335aaab10fd834b594f99914ae46cad51708ef809437e0417918246393154c",
+  "cache_fingerprint": "641454f3f95e26210dfa50f2586aade2998042aeb106033b2b449ce36e560b73",
+  "elapsed_seconds": 3.0173824410003363,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "教学 bilibili",
+      "block_bbox": [
+        1647,
+        30,
+        1889,
+        102
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1647.0,
+          30.0
+        ],
+        [
+          1889.0,
+          30.0
+        ],
+        [
+          1889.0,
+          102.0
+        ],
+        [
+          1647.0,
+          102.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "使用指南\n跟读 & 泡耳朵",
+      "block_bbox": [
+        96,
+        136,
+        345,
+        278
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          96.0,
+          136.0
+        ],
+        [
+          345.0,
+          136.0
+        ],
+        [
+          345.0,
+          278.0
+        ],
+        [
+          96.0,
+          278.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "听 & 说",
+      "block_bbox": [
+        426,
+        388,
+        562,
+        440
+      ],
+      "block_id": 2,
+      "block_order": 2,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          426.0,
+          388.0
+        ],
+        [
+          562.0,
+          388.0
+        ],
+        [
+          562.0,
+          440.0
+        ],
+        [
+          426.0,
+          440.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "NO WHR",
+      "block_bbox": [
+        1055,
+        282,
+        1737,
+        1079
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1055.0,
+          282.0
+        ],
+        [
+          1737.0,
+          282.0
+        ],
+        [
+          1737.0,
+          1079.0
+        ],
+        [
+          1055.0,
+          1079.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "成学 biling",
+      "block_bbox": [
+        1640,
+        22,
+        1901,
+        112
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "NU\nWHR",
+      "block_bbox": [
+        1551,
+        599,
+        1603,
+        638
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1640,
+        22,
+        1901,
+        112
+      ],
+      "ppocr_candidate": "胶学",
+      "recovered_text": "成学 biling",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        1551,
+        599,
+        1603,
+        638
+      ],
+      "ppocr_candidate": "WIR",
+      "recovered_text": "NU\nWHR",
+      "source_crop": "repairs/region_007/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}
