@@ -1,0 +1,179 @@
+{
+  "image_sha256": "a7b1c6818736e56074f7232b2c07cf47a3fb02134445a37a160261bb569b7b83",
+  "cache_fingerprint": "1e202af46b527b982023ff7d99bf7513bd78b47651ef29d41bf921b25a28796b",
+  "elapsed_seconds": 5.012939751999966,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "Is this seat taken?",
+      "block_bbox": [
+        244,
+        33,
+        817,
+        108
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          244.0,
+          33.0
+        ],
+        [
+          817.0,
+          33.0
+        ],
+        [
+          817.0,
+          108.0
+        ],
+        [
+          244.0,
+          108.0
+        ]
+      ]
+    },
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1650,
+        29,
+        1888,
+        102
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          1650.0,
+          29.0
+        ],
+        [
+          1888.0,
+          29.0
+        ],
+        [
+          1888.0,
+          102.0
+        ],
+        [
+          1650.0,
+          102.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "这座位有人吗？",
+      "block_bbox": [
+        0,
+        196,
+        1102,
+        873
+      ],
+      "block_id": 2,
+      "block_order": null,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          -1.0,
+          196.0
+        ],
+        [
+          1102.0,
+          196.0
+        ],
+        [
+          1102.0,
+          873.0
+        ],
+        [
+          -1.0,
+          873.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "赠侠马华力\nMaverick\n(1994)",
+      "block_bbox": [
+        1107,
+        274,
+        1840,
+        1080
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1119.8431396484375,
+          279.00140380859375
+        ],
+        [
+          1840.0281982421875,
+          302.536865234375
+        ],
+        [
+          1813.7027587890625,
+          1108.0947265625
+        ],
+        [
+          1093.5177001953125,
+          1084.559326171875
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1637,
+        22,
+        1901,
+        112
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "赌侠马华力",
+      "block_bbox": [
+        1106,
+        765,
+        1274,
+        816
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1637,
+        22,
+        1901,
+        112
+      ],
+      "ppocr_candidate": "胶学ili",
+      "recovered_text": "胶学 bilibili",
+      "source_crop": "repairs/region_001/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        1106,
+        765,
+        1274,
+        816
+      ],
+      "ppocr_candidate": "赌侠马华力",
+      "recovered_text": "赌侠马华力",
+      "source_crop": "repairs/region_003/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

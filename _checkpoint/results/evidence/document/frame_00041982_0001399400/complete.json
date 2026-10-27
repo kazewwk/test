@@ -1,0 +1,117 @@
+{
+  "image_sha256": "b7213e7827eb1f860c62d6e1d25971fb577dd371e6549226b6f30a0673fee670",
+  "cache_fingerprint": "1e202af46b527b982023ff7d99bf7513bd78b47651ef29d41bf921b25a28796b",
+  "elapsed_seconds": 2.4097695369996472,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "胶学 bilily",
+      "block_bbox": [
+        1645,
+        27,
+        1897,
+        103
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1645.0,
+          27.0
+        ],
+        [
+          1897.0,
+          27.0
+        ],
+        [
+          1897.0,
+          103.0
+        ],
+        [
+          1645.0,
+          103.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1144,
+        325,
+        1896,
+        1079
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          1144.0,
+          325.0
+        ],
+        [
+          1896.0,
+          325.0
+        ],
+        [
+          1896.0,
+          1079.0
+        ],
+        [
+          1144.0,
+          1079.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "胶学 biling",
+      "block_bbox": [
+        1638,
+        19,
+        1882,
+        113
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "不",
+      "block_bbox": [
+        358,
+        505,
+        423,
+        573
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1638,
+        19,
+        1882,
+        113
+      ],
+      "ppocr_candidate": "胶学レ",
+      "recovered_text": "胶学 biling",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        358,
+        505,
+        423,
+        573
+      ],
+      "ppocr_candidate": "不",
+      "recovered_text": "不",
+      "source_crop": "repairs/region_001/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

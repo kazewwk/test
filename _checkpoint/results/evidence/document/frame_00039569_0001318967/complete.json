@@ -1,0 +1,210 @@
+{
+  "image_sha256": "812e546f421ea9f741039a5511d91db77083826bfc421bc948265adb91d4d4c2",
+  "cache_fingerprint": "1e202af46b527b982023ff7d99bf7513bd78b47651ef29d41bf921b25a28796b",
+  "elapsed_seconds": 3.335157624999738,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1650,
+        31,
+        1889,
+        101
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1650.0,
+          31.0
+        ],
+        [
+          1889.0,
+          31.0
+        ],
+        [
+          1889.0,
+          101.0
+        ],
+        [
+          1650.0,
+          101.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "① 如何自己用单词造句？",
+      "block_bbox": [
+        37,
+        213,
+        587,
+        274
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          37.0,
+          213.0
+        ],
+        [
+          587.0,
+          213.0
+        ],
+        [
+          587.0,
+          274.0
+        ],
+        [
+          37.0,
+          274.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "② 如何表达“这个座位有人吗”？",
+      "block_bbox": [
+        36,
+        368,
+        737,
+        429
+      ],
+      "block_id": 2,
+      "block_order": 2,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          36.0,
+          368.0
+        ],
+        [
+          737.0,
+          368.0
+        ],
+        [
+          737.0,
+          429.0
+        ],
+        [
+          36.0,
+          429.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "③ 如何表达“不要无理”？",
+      "block_bbox": [
+        37,
+        524,
+        586,
+        582
+      ],
+      "block_id": 3,
+      "block_order": 3,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          37.0,
+          524.0
+        ],
+        [
+          586.0,
+          524.0
+        ],
+        [
+          586.0,
+          582.0
+        ],
+        [
+          37.0,
+          582.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1169,
+        340,
+        1818,
+        1078
+      ],
+      "block_id": 4,
+      "block_order": null,
+      "group_id": 4,
+      "block_polygon_points": [
+        [
+          1169.0,
+          340.0
+        ],
+        [
+          1818.0,
+          340.0
+        ],
+        [
+          1818.0,
+          1078.0
+        ],
+        [
+          1169.0,
+          1078.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1637,
+        19,
+        1902,
+        113
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "③",
+      "block_bbox": [
+        42,
+        523,
+        93,
+        582
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1637,
+        19,
+        1902,
+        113
+      ],
+      "ppocr_candidate": "胶学bibli",
+      "recovered_text": "胶学 bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        42,
+        523,
+        93,
+        582
+      ],
+      "ppocr_candidate": "3",
+      "recovered_text": "③",
+      "source_crop": "repairs/region_003/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

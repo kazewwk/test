@@ -1,0 +1,95 @@
+{
+  "image_sha256": "6fc2531b7ab24551f7d4fdb656c7e7af13037e97fbf63d04852c1e4542d5facf",
+  "cache_fingerprint": "1e202af46b527b982023ff7d99bf7513bd78b47651ef29d41bf921b25a28796b",
+  "elapsed_seconds": 1.2224528530000498,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1650,
+        32,
+        1890,
+        101
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1650.0,
+          32.0
+        ],
+        [
+          1890.0,
+          32.0
+        ],
+        [
+          1890.0,
+          101.0
+        ],
+        [
+          1650.0,
+          101.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "CAPSULE KCADEMY",
+      "block_bbox": [
+        803,
+        468,
+        1118,
+        604
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          803.0,
+          468.0
+        ],
+        [
+          1118.0,
+          468.0
+        ],
+        [
+          1118.0,
+          604.0
+        ],
+        [
+          803.0,
+          604.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "CAPSULE ACADEMY",
+      "block_bbox": [
+        823,
+        553,
+        993,
+        597
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        823,
+        553,
+        993,
+        597
+      ],
+      "ppocr_candidate": "CAPSULEACADEMY",
+      "recovered_text": "CAPSULE ACADEMY",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

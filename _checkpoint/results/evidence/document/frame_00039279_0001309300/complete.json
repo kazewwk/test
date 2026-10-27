@@ -1,0 +1,148 @@
+{
+  "image_sha256": "ee50aa051fa5abad46763877556f286c9599d0206d34a84cade9cbaf58f5f63f",
+  "cache_fingerprint": "1e202af46b527b982023ff7d99bf7513bd78b47651ef29d41bf921b25a28796b",
+  "elapsed_seconds": 5.8813812980001785,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "Don't be rude",
+      "block_bbox": [
+        319,
+        29,
+        777,
+        104
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          319.0,
+          29.0
+        ],
+        [
+          777.0,
+          29.0
+        ],
+        [
+          777.0,
+          104.0
+        ],
+        [
+          319.0,
+          104.0
+        ]
+      ]
+    },
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1650,
+        29,
+        1889,
+        102
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          1650.0,
+          29.0
+        ],
+        [
+          1889.0,
+          29.0
+        ],
+        [
+          1889.0,
+          102.0
+        ],
+        [
+          1650.0,
+          102.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "打扰了！小家伙？\nExcuse me! Whoo-hoo! Little f $ \\underline{\\text{ella}} $?\n海底总动员\nFinding N $ \\underline{\\text{emo}} $\n(2003)",
+      "block_bbox": [
+        5,
+        224,
+        1811,
+        1076
+      ],
+      "block_id": 2,
+      "block_order": null,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          5.0,
+          224.0
+        ],
+        [
+          1811.0,
+          224.0
+        ],
+        [
+          1811.0,
+          1076.0
+        ],
+        [
+          5.0,
+          1076.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "Finding Nemo",
+      "block_bbox": [
+        1103,
+        767,
+        1319,
+        821
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "Excuse me! Whoo-hoo! Little fella?",
+      "block_bbox": [
+        353,
+        814,
+        751,
+        854
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1103,
+        767,
+        1319,
+        821
+      ],
+      "ppocr_candidate": "Finding Nemo",
+      "recovered_text": "Finding Nemo",
+      "source_crop": "repairs/region_005/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        353,
+        814,
+        751,
+        854
+      ],
+      "ppocr_candidate": "Excuse me!Whoo-hoo! Little fella?",
+      "recovered_text": "Excuse me! Whoo-hoo! Little fella?",
+      "source_crop": "repairs/region_007/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}
