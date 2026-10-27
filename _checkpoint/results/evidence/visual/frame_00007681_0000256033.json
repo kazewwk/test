@@ -1,0 +1,195 @@
+{
+  "path": "frames/frame_00007681_0000256033.webp",
+  "time": 256.033313,
+  "image_sha256": "23e8521e1c0ed5924010431878e2b61991ca305bb737e5c955c24015b0308b28",
+  "cache_fingerprint": "4f41ed236eaff883a8411ad18df2d7dd1df7dbe61c10222dbe092720a4eff334",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "quantized": false,
+  "raw": "```json\n{\n\"kind\": \"slide\",\n\"description\": \"英语单词 'private' 的教学课件，包含词性、例句及句型转换，配有蓝色手写标注。\",\n\"annotations\": [\n{\n\"type\": \"圈\",\n\"color\": \"蓝色\",\n\"target\": \"单词造句指南\",\n\"meaning\": \"圈出左侧列表标题\"\n},\n{\n\"type\": \"勾\",\n\"color\": \"蓝色\",\n\"target\": \"网：v.+v.变化\",\n\"meaning\": \"在列表第一行打勾\"\n},\n{\n\"type\": \"勾\",\n\"color\": \"蓝色\",\n\"target\": \"四句型转换\",\n\"meaning\": \"在列表第二行打勾\"\n},\n{\n\"type\": \"勾\",\n\"color\": \"蓝色\",\n\"target\": \"方式/地点/时间\",\n\"meaning\": \"在列表第三行打勾\"\n},\n{\n\"type\": \"勾\",\n\"color\": \"蓝色\",\n\"target\": \"结合习惯用法\",\n\"meaning\": \"在列表第四行打勾\"\n},\n{\n\"type\": \"勾\",\n\"color\": \"蓝色\",\n\"target\": \"其他单词+词性\",\n\"meaning\": \"在列表第五行打勾\"\n},\n{\n\"type\": \"勾\",\n\"color\": \"蓝色\",\n\"target\": \"原文摘抄+变\",\n\"meaning\": \"在列表第六行打勾\"\n},\n{\n\"type\": \"勾\",\n\"color\": \"蓝色\",\n\"target\": \"private adj.\",\n\"meaning\": \"在单词词性旁打勾\"\n},\n{\n\"type\": \"圈\",\n\"color\": \"蓝色\",\n\"target\": \"+n.\",\n\"meaning\": \"圈出词性组合中的名词部分\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"goes\",\n\"meaning\": \"在例句 'He goes to a private school.' 中下划线动词\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"Does\",\n\"meaning\": \"在疑问句 'Does he go to a private school?' 中下划线助动词\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"Why\",\n\"meaning\": \"在特殊疑问句 'Why does he go to a private school?' 中下划线疑问词\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"NCE1L55\",\n\"meaning\": \"在教材出处标注下划线\"\n}\n],\n\"ocr_missing_text\": [],\n\"ocr_disagreements\": [],\n\"table_present\": false,\n\"formula_present\": false,\n\"formulas\": [],\n\"tables\": [],\n\"uncertain\": []\n}\n```\n",
+  "parsed": {
+    "kind": "slide",
+    "description": "英语单词 'private' 的教学课件，包含词性、例句及句型转换，配有蓝色手写标注。",
+    "annotations": [
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "+ n",
+        "meaning": "圈出左侧列表标题",
+        "target_original_model": "单词造句指南",
+        "grounding": "closed_blue_region_and_document_ocr",
+        "enclosure_bbox": [
+          438,
+          496,
+          154,
+          116
+        ]
+      },
+      {
+        "type": "勾",
+        "color": "蓝色",
+        "target": "网：v.+v.变化",
+        "meaning": "在列表第一行打勾",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          436,
+          16,
+          678,
+          110
+        ],
+        "matching_color_pixels": 873
+      },
+      {
+        "type": "勾",
+        "color": "蓝色",
+        "target": "四句型转换",
+        "meaning": "在列表第二行打勾",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          390,
+          91,
+          632,
+          169
+        ],
+        "matching_color_pixels": 626
+      },
+      {
+        "type": "勾",
+        "color": "蓝色",
+        "target": "方式/地点/时间",
+        "meaning": "在列表第三行打勾",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          460,
+          156,
+          702,
+          237
+        ],
+        "matching_color_pixels": 902
+      },
+      {
+        "type": "勾",
+        "color": "蓝色",
+        "target": "结合习惯用法",
+        "meaning": "在列表第四行打勾",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          432,
+          221,
+          674,
+          306
+        ],
+        "matching_color_pixels": 930
+      },
+      {
+        "type": "勾",
+        "color": "蓝色",
+        "target": "其他单词+词性",
+        "meaning": "在列表第五行打勾",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          458,
+          290,
+          700,
+          371
+        ],
+        "matching_color_pixels": 723
+      },
+      {
+        "type": "勾",
+        "color": "蓝色",
+        "target": "原文摘抄+变",
+        "meaning": "在列表第六行打勾",
+        "grounding": "color_evidence_not_found",
+        "tested_region": [
+          417,
+          358,
+          659,
+          436
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true
+      },
+      {
+        "type": "勾",
+        "color": "蓝色",
+        "target": "private adj.",
+        "meaning": "在单词词性旁打勾",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          427,
+          480,
+          669,
+          625
+        ],
+        "matching_color_pixels": 3782
+      },
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "+ n",
+        "meaning": "圈出词性组合中的名词部分",
+        "target_original_model": "+n.",
+        "grounding": "closed_blue_region_and_document_ocr",
+        "enclosure_bbox": [
+          438,
+          496,
+          154,
+          116
+        ]
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "goes",
+        "meaning": "在例句 'He goes to a private school.' 中下划线动词",
+        "grounding": "not_automatically_verified"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "Does",
+        "meaning": "在疑问句 'Does he go to a private school?' 中下划线助动词",
+        "grounding": "not_automatically_verified"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "Why",
+        "meaning": "在特殊疑问句 'Why does he go to a private school?' 中下划线疑问词",
+        "grounding": "not_automatically_verified"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "NCE1L55",
+        "meaning": "在教材出处标注下划线",
+        "grounding": "not_automatically_verified"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": [
+      "未在对应文字旁检出足够蓝色勾号像素，请核对原图：原文摘抄+变"
+    ]
+  },
+  "generated_tokens": 637,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "elapsed_seconds": 17.501499009500094,
+  "batch_size": 4
+}
