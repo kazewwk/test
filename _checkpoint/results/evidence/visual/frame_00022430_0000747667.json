@@ -1,0 +1,145 @@
+{
+  "path": "frames/frame_00022430_0000747667.webp",
+  "time": 747.666687,
+  "image_sha256": "4b3c159725950b2cc9bdacaa50464b549ba6788723c41f726b6855d3140dac2c",
+  "cache_fingerprint": "4b2091e19d68fa99de5bb3c73bd968c2d0da01c6dd472c056495e1e27d8179ef",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "dtype": "bfloat16",
+  "quantized": false,
+  "backend": "vllm",
+  "raw": "```json\n{\n\"kind\": \"slide\",\n\"description\": \"英语单词教学课件，展示单词play的用法，包含左侧舞台图片、右侧教师演示、中间单词列表及造句示例。\",\n\"annotations\": [\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"单词play\",\n\"meaning\": \"强调单词拼写\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"网：v.+v.变化\",\n\"meaning\": \"强调记忆方法\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"四句型转换\",\n\"meaning\": \"强调句型转换方法\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"方式/地点/时间\",\n\"meaning\": \"强调造句要素\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"其他单词+词性\",\n\"meaning\": \"强调扩展用法\"\n},\n{\n\"type\": \"圈\",\n\"color\": \"蓝色\",\n\"target\": \"I am going to watch a play with my Mum.\",\n\"meaning\": \"圈出完整例句\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"I am going to watch a play with my Mum.\",\n\"meaning\": \"下划线强调句子结构\"\n},\n{\n\"type\": \"圈\",\n\"color\": \"蓝色\",\n\"target\": \"(when)\",\n\"meaning\": \"圈出括号内的提示词\"\n}\n],\n\"ocr_missing_text\": [],\n\"ocr_disagreements\": [],\n\"table_present\": false,\n\"formula_present\": false,\n\"formulas\": [],\n\"tables\": [],\n\"uncertain\": []\n}\n```",
+  "parsed": {
+    "kind": "slide",
+    "description": "英语单词教学课件，展示单词play的用法，包含左侧舞台图片、右侧教师演示、中间单词列表及造句示例。",
+    "annotations": [
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "单词play",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          69,
+          566,
+          310,
+          665
+        ],
+        "matching_color_pixels": 514,
+        "meaning_original_model": "强调单词拼写"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "网：v.+v.变化",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "强调记忆方法"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "四句型转换",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          665,
+          134,
+          877,
+          176
+        ],
+        "matching_color_pixels": 1344,
+        "meaning_original_model": "强调句型转换方法"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "方式/地点/时间",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          665,
+          201,
+          947,
+          244
+        ],
+        "matching_color_pixels": 726,
+        "meaning_original_model": "强调造句要素"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "其他单词+词性",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          666,
+          335,
+          943,
+          378
+        ],
+        "matching_color_pixels": 878,
+        "meaning_original_model": "强调扩展用法"
+      },
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "I am going to watch a play with my Mum.",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "circle_target_requires_review",
+        "requires_review": true,
+        "meaning_original_model": "圈出完整例句"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "I am going to watch a play with my Mum.",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          107,
+          731,
+          1282,
+          800
+        ],
+        "matching_color_pixels": 11746,
+        "meaning_original_model": "下划线强调句子结构"
+      },
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "(when)",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "circle_target_requires_review",
+        "requires_review": true,
+        "meaning_original_model": "圈出括号内的提示词"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": [
+      "下划线的对应文字位置未确认：网：v.+v.变化",
+      "圈选的精确对象尚需核对：I am going to watch a play with my Mum.",
+      "圈选的精确对象尚需核对：(when)"
+    ]
+  },
+  "generated_tokens": 414,
+  "finish_reason": "stop",
+  "elapsed_seconds": 7.193825008562612,
+  "batch_size": 32,
+  "verification": "model_observation_with_color_grounding_not_human_verified"
+}
