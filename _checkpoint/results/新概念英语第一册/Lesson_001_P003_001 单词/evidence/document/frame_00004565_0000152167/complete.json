@@ -1,0 +1,135 @@
+{
+  "artifacts": {
+    "1793145076_6474.md": "e8e94c81bc285cc9e099eafec18d0dd0a85f8822de0286d08abcae8837b36069",
+    "1793145076_6474_res.json": "3822c68281c9a59948fcab523486035d9418c33c0383e4606bd41ac64535efe4",
+    "region_repairs.md": "03184353daabd9d8ebab90919c21819b12666a1da2a3c206c6634042054b2735",
+    "repairs/region_006/1793145077_6707.md": "acad9c156ff45cbbacf4b9dd1b0205247c18c1f68ee90135c29d12f2f67adf8b",
+    "repairs/region_006/1793145077_6707_res.json": "33e8dee9dcd43ab8dd35db5a39490300dbd515bfa7854944217ce619a89e5bea",
+    "repairs/region_006/source.png": "160bc84ec9571be250dbe4de31063f50559b95c7111c600ee8bd02213dc29353"
+  },
+  "input_fingerprint": "36a15887fb886391db1a92e33cc2b834403ffb65467dc3785132b2a562c67a06",
+  "image_sha256": "1d3f6ebd0006bd947f80a459d5ad0b413866f6a63837f99b97a8b8ab46d816fd",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 2.228194043000258,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1653,
+        30,
+        1891,
+        101
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1653.0,
+          30.0
+        ],
+        [
+          1891.0,
+          30.0
+        ],
+        [
+          1891.0,
+          101.0
+        ],
+        [
+          1653.0,
+          101.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "抱歉打扰了 这是你的吧 肯定是弄掉了",
+      "block_bbox": [
+        420,
+        913,
+        1485,
+        987
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          419.650634765625,
+          919.002197265625
+        ],
+        [
+          1484.0001220703125,
+          913.0001220703125
+        ],
+        [
+          1484.38330078125,
+          980.9471435546875
+        ],
+        [
+          420.0338134765625,
+          986.94921875
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "Excuse me, I think this is yours? You must've dropped it.",
+      "block_bbox": [
+        443,
+        989,
+        1466,
+        1039
+      ],
+      "block_id": 2,
+      "block_order": 2,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          443.0,
+          989.0
+        ],
+        [
+          1466.0,
+          989.0
+        ],
+        [
+          1466.0,
+          1039.0
+        ],
+        [
+          443.0,
+          1039.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "Excuse me, I think this is yours? You must've dropped it.",
+      "block_bbox": [
+        443,
+        980,
+        1465,
+        1045
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        443,
+        980,
+        1465,
+        1045
+      ],
+      "ppocr_candidate": "Excuse me, I hink this is yours? You must've droped it.",
+      "recovered_text": "Excuse me, I think this is yours? You must've dropped it.",
+      "source_crop": "repairs/region_006/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

@@ -1,0 +1,162 @@
+{
+  "artifacts": {
+    "1793145036_1278.md": "e28db70765d05240f89174b094ef0511ba83b114a039e901131d509cb5e15ae9",
+    "1793145036_1278_res.json": "b2f5d1e031f58671aa156f03206d41dee03671e424b4f238050ea1e0a916c798",
+    "imgs/img_in_header_image_box_1652_29_1891_103.jpg": "87200135b5da14685067eded40dbf82a962914ea80023e0451497f1f9470004d",
+    "imgs/img_in_image_box_17_155_1851_964.jpg": "56e70252cf9ad3606f07cccaca8b68f719c8a3c41f5ccd4d5a17234a7f4d5c5e",
+    "region_repairs.md": "ac54071e8f0fd5f4f4978d9b96efafcdfea73eed6dd376cd340c8ee12686aa3d",
+    "repairs/region_004/1793145037_7111.md": "fa6e73c549c6fe699bb161b448b58cddb7c3e4e63e26c8a06a504e4aae07cd7d",
+    "repairs/region_004/1793145037_7111_res.json": "ff41aba427f0a39ec80179626f15540a3bb35a2b810cbb8cdd339bbefcb91d52",
+    "repairs/region_004/source.png": "890c951d44f743bfc6b5995fda8ba8205514eb3c61f4c90b0337ad02a11f9ee0",
+    "repairs/region_005/1793145037_3449.md": "1bf7ac688560d3b0f11d5d80686020760300e0b0c57fd0b83b5a9aacc67d4037",
+    "repairs/region_005/1793145037_3449_res.json": "18da3a1bbe7806c6c434260955e0a2707a6f938598ccc731bd40f8f012e90f27",
+    "repairs/region_005/source.png": "bb3488f75de1d252aba37e93750d798d95d2ad1241a89ab46cac18874f73f2d2"
+  },
+  "input_fingerprint": "5bf77bfaf7e4a43eee03f7673500e3380d70d4d3d25daf7d7db5c23816497554",
+  "image_sha256": "b215c0a92bd041514f9e93db162e7d2fa0fcf630b0ecc94f54bdbf8b651f0fa1",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 4.10548935299812,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1652,
+        29,
+        1891,
+        103
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1652.0,
+          29.0
+        ],
+        [
+          1891.0,
+          29.0
+        ],
+        [
+          1891.0,
+          103.0
+        ],
+        [
+          1652.0,
+          103.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        17,
+        155,
+        1851,
+        964
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          17.0,
+          155.0
+        ],
+        [
+          1851.0,
+          155.0
+        ],
+        [
+          1851.0,
+          964.0
+        ],
+        [
+          17.0,
+          964.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "Umm... thank you.",
+      "block_bbox": [
+        755,
+        1032,
+        1099,
+        1078
+      ],
+      "block_id": 2,
+      "block_order": 1,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          755.0,
+          1032.0
+        ],
+        [
+          1099.0,
+          1032.0
+        ],
+        [
+          1099.0,
+          1078.0
+        ],
+        [
+          755.0,
+          1078.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "那个",
+      "block_bbox": [
+        778,
+        948,
+        935,
+        1034
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "谢谢",
+      "block_bbox": [
+        913,
+        946,
+        1079,
+        1037
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        778,
+        948,
+        935,
+        1034
+      ],
+      "ppocr_candidate": "那个",
+      "recovered_text": "那个",
+      "source_crop": "repairs/region_004/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        913,
+        946,
+        1079,
+        1037
+      ],
+      "ppocr_candidate": "谢谢",
+      "recovered_text": "谢谢",
+      "source_crop": "repairs/region_005/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}
