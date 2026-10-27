@@ -1,0 +1,14 @@
+# 布局遗漏区域的独立复查
+
+原图位置：[104, 40, 172, 422]；PP-OCRv5 候选：单词造句指南
+
+![复查区域](repairs/region_002/source.png)
+
+单词造句指南
+
+原图位置：[135, 452, 363, 502]；PP-OCRv5 候选：brznIs/
+
+![复查区域](repairs/region_009/source.png)
+
+b iz n i s /
+
