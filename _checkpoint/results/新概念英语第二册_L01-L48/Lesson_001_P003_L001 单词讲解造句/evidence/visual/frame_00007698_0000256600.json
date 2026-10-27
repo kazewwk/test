@@ -1,0 +1,261 @@
+{
+  "path": "frames/frame_00007698_0000256600.webp",
+  "time": 256.6,
+  "image_sha256": "7867bbe7ab3a268a8972e805e9f279574a45e883892b0bf442afa6a495a47be7",
+  "cache_fingerprint": "4b2091e19d68fa99de5bb3c73bd968c2d0da01c6dd472c056495e1e27d8179ef",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "quantized": false,
+  "raw": "```json\n{\n\"kind\": \"slide\",\n\"description\": \"英语单词 'private' 的教学课件，包含左上角的分类指南列表和下方的例句演示。\",\n\"annotations\": [\n    {\n        \"type\": \"圈\",\n        \"color\": \"蓝色\",\n        \"target\": \"左上角棕色列表区域\",\n        \"meaning\": \"圈出包含'单词造句指南'等分类的列表\"\n    },\n    {\n        \"type\": \"勾\",\n        \"color\": \"蓝色\",\n        \"target\": \"列表项'网：v.+v.变化'\",\n        \"meaning\": \"表示该项已掌握或完成\"\n    },\n    {\n        \"type\": \"勾\",\n        \"color\": \"蓝色\",\n        \"target\": \"列表项'四句型转换'\",\n        \"meaning\": \"表示该项已掌握或完成\"\n    },\n    {\n        \"type\": \"勾\",\n        \"color\": \"蓝色\",\n        \"target\": \"列表项'方式/地点/时间'\",\n        \"meaning\": \"表示该项已掌握或完成\"\n    },\n    {\n        \"type\": \"勾\",\n        \"color\": \"蓝色\",\n        \"target\": \"列表项'结合习惯用法'\",\n        \"meaning\": \"表示该项已掌握或完成\"\n    },\n    {\n        \"type\": \"勾\",\n        \"color\": \"蓝色\",\n        \"target\": \"列表项'其他单词+词性'\",\n        \"meaning\": \"表示该项已掌握或完成\"\n    },\n    {\n        \"type\": \"勾\",\n        \"color\": \"蓝色\",\n        \"target\": \"列表项'原文摘抄+变'\",\n        \"meaning\": \"表示该项已掌握或完成\"\n    },\n    {\n        \"type\": \"勾\",\n        \"color\": \"蓝色\",\n        \"target\": \"列表项'单词造句指南'左侧\",\n        \"meaning\": \"表示该分类已掌握或完成\"\n    },\n    {\n        \"type\": \"圈\",\n        \"color\": \"蓝色\",\n        \"target\": \"单词'private'的音标部分\",\n        \"meaning\": \"圈出音标 /'praɪvɪt/ 中的重音符号\"\n    },\n    {\n        \"type\": \"圈\",\n        \"color\": \"蓝色\",\n        \"target\": \"词性标注'adj.'和'+n.'\",\n        \"meaning\": \"圈出形容词和名词用法\"\n    },\n    {\n        \"type\": \"下划线\",\n        \"color\": \"蓝色\",\n        \"target\": \"句子'He goes to a private school.'中的'goes'\",\n        \"meaning\": \"强调动词\"\n    },\n    {\n        \"type\": \"下划线\",\n        \"color\": \"蓝色\",\n        \"target\": \"句子'Does he go to a private school?'中的'Does'\",\n        \"meaning\": \"强调助动词\"\n    },\n    {\n        \"type\": \"下划线\",\n        \"color\": \"蓝色\",\n        \"target\": \"句子'Why does he go to a private school?'中的'Why'\",\n        \"meaning\": \"强调疑问词\"\n    },\n    {\n        \"type\": \"下划线\",\n        \"color\": \"蓝色\",\n        \"target\": \"文本'NCE1L55'\",\n        \"meaning\": \"标记教材出处\"\n    },\n    {\n        \"type\": \"勾\",\n        \"color\": \"蓝色\",\n        \"target\": \"句子'Does he go to a private school?'\",\n        \"meaning\": \"表示该句型已掌握或完成\"\n    }\n],\n\"ocr_missing_text\": [\n    \"音标中的重音符号（位于'pra'上方）\",\n    \"音标中的字母'i'（在'pra'之后）\",\n    \"音标中的字母'i'（在'v'之后）\",\n    \"音标中的字母't'（在'v'之后）\",\n    \"音标中的字母'/'（在'pra'之前）\",\n    \"音标中的字母'/'（在't'之后）\"\n],\n\"ocr_disagreements\": [\n    \"OCR将音标识别为'/praivnt'，实际应为'/praɪvɪt/'\",\n    \"OCR将单词'private'识别为'private'，但漏掉了音标中的重音符号\",\n    \"OCR将'adj.'识别为'adj.'，但漏掉了'+n.'中的'+'号\",\n    \"OCR将'goes'识别为'goto'，实际应为'goes'\",\n    \"OCR将'Does'识别为'6'，实际应为'Does'\",\n    \"OCR将'Why'识别为'o'，实际应为'Why'\"\n],\n\"table_present\": false,\n\"formula_present\": false,\n\"formulas\": [],\n\"tables\": [],\n\"uncertain\": []\n}\n```\n",
+  "parsed": {
+    "kind": "slide",
+    "description": "英语单词 'private' 的教学课件，包含左上角的分类指南列表和下方的例句演示。",
+    "annotations": [
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "左上角棕色列表区域",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "circle_target_requires_review",
+        "requires_review": true,
+        "meaning_original_model": "圈出包含'单词造句指南'等分类的列表"
+      },
+      {
+        "type": "勾",
+        "color": "蓝色",
+        "target": "列表项'网：v.+v.变化'",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          435,
+          18,
+          677,
+          108
+        ],
+        "matching_color_pixels": 2562,
+        "meaning_original_model": "表示该项已掌握或完成"
+      },
+      {
+        "type": "勾",
+        "color": "蓝色",
+        "target": "列表项'四句型转换'",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          390,
+          91,
+          632,
+          169
+        ],
+        "matching_color_pixels": 1526,
+        "meaning_original_model": "表示该项已掌握或完成"
+      },
+      {
+        "type": "勾",
+        "color": "蓝色",
+        "target": "列表项'方式/地点/时间'",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          460,
+          156,
+          702,
+          237
+        ],
+        "matching_color_pixels": 1670,
+        "meaning_original_model": "表示该项已掌握或完成"
+      },
+      {
+        "type": "勾",
+        "color": "蓝色",
+        "target": "列表项'结合习惯用法'",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          431,
+          225,
+          673,
+          303
+        ],
+        "matching_color_pixels": 1677,
+        "meaning_original_model": "表示该项已掌握或完成"
+      },
+      {
+        "type": "勾",
+        "color": "蓝色",
+        "target": "列表项'其他单词+词性'",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          458,
+          290,
+          700,
+          371
+        ],
+        "matching_color_pixels": 1694,
+        "meaning_original_model": "表示该项已掌握或完成"
+      },
+      {
+        "type": "勾",
+        "color": "蓝色",
+        "target": "列表项'原文摘抄+变'",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          417,
+          358,
+          659,
+          436
+        ],
+        "matching_color_pixels": 1160,
+        "meaning_original_model": "表示该项已掌握或完成"
+      },
+      {
+        "type": "勾",
+        "color": "蓝色",
+        "target": "列表项'单词造句指南'左侧",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          154,
+          0,
+          396,
+          580
+        ],
+        "matching_color_pixels": 6154,
+        "meaning_original_model": "表示该分类已掌握或完成"
+      },
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "单词'private'的音标部分",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "circle_target_requires_review",
+        "requires_review": true,
+        "meaning_original_model": "圈出音标 /'praɪvɪt/ 中的重音符号"
+      },
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "词性标注'adj.'和'+n.'",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "circle_target_requires_review",
+        "requires_review": true,
+        "meaning_original_model": "圈出形容词和名词用法"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "句子'He goes to a private school.'中的'goes'",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          158,
+          788,
+          859,
+          842
+        ],
+        "matching_color_pixels": 1120,
+        "meaning_original_model": "强调动词"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "句子'Does he go to a private school?'中的'Does'",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          143,
+          848,
+          945,
+          903
+        ],
+        "matching_color_pixels": 18,
+        "meaning_original_model": "强调助动词"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "句子'Why does he go to a private school?'中的'Why'",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          153,
+          912,
+          1055,
+          972
+        ],
+        "matching_color_pixels": 761,
+        "meaning_original_model": "强调疑问词"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "文本'NCE1L55'",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "标记教材出处"
+      },
+      {
+        "type": "勾",
+        "color": "蓝色",
+        "target": "句子'Does he go to a private school?'",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "color_evidence_not_found",
+        "tested_region": [
+          928,
+          791,
+          1170,
+          894
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
+        "meaning_original_model": "表示该句型已掌握或完成"
+      }
+    ],
+    "ocr_missing_text": [
+      "音标中的重音符号（位于'pra'上方）",
+      "音标中的字母'i'（在'pra'之后）",
+      "音标中的字母'i'（在'v'之后）",
+      "音标中的字母't'（在'v'之后）",
+      "音标中的字母'/'（在'pra'之前）",
+      "音标中的字母'/'（在't'之后）"
+    ],
+    "ocr_disagreements": [
+      "OCR将音标识别为'/praivnt'，实际应为'/praɪvɪt/'",
+      "OCR将单词'private'识别为'private'，但漏掉了音标中的重音符号",
+      "OCR将'adj.'识别为'adj.'，但漏掉了'+n.'中的'+'号",
+      "OCR将'goes'识别为'goto'，实际应为'goes'",
+      "OCR将'Does'识别为'6'，实际应为'Does'",
+      "OCR将'Why'识别为'o'，实际应为'Why'"
+    ],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": [
+      "圈选的精确对象尚需核对：左上角棕色列表区域",
+      "圈选的精确对象尚需核对：单词'private'的音标部分",
+      "圈选的精确对象尚需核对：词性标注'adj.'和'+n.'",
+      "下划线的对应文字位置未确认：文本'NCE1L55'",
+      "未在对应文字旁检出足够蓝色勾号像素，请核对原图：句子'Does he go to a private school?'"
+    ]
+  },
+  "generated_tokens": 1101,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "elapsed_seconds": 27.856323131749832,
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
+}

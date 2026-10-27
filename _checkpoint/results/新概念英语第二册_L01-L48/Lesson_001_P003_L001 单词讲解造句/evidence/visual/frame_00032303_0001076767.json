@@ -1,0 +1,90 @@
+{
+  "path": "frames/frame_00032303_0001076767.webp",
+  "time": 1076.766687,
+  "image_sha256": "6be360564d2d3ef0ce1bcd4c6df04c4e58fe46a3232361bac100fa3b578347d6",
+  "cache_fingerprint": "4b2091e19d68fa99de5bb3c73bd968c2d0da01c6dd472c056495e1e27d8179ef",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "dtype": "bfloat16",
+  "quantized": false,
+  "backend": "vllm",
+  "raw": "```json\n{\n\"kind\":\"slide\",\n\"description\":\"教学课件，展示单词bear-bore-borne的发音、词性及造句指南列表，包含插图和手写标注\",\n\"annotations\":[\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"bear-bore-borne v.\",\n\"meaning\":\"强调单词及其词性\"\n},\n{\n\"type\":\"圈\",\n\"color\":\"蓝色\",\n\"target\":\"原文摘抄+变\",\n\"meaning\":\"突出该造句指南条目\"\n}\n],\n\"ocr_missing_text\":[],\n\"ocr_disagreements\":[],\n\"table_present\":true,\n\"formula_present\":false,\n\"formulas\":[],\n\"tables\":[\n{\n\"content\":[\n[\"单词造句指南\", \"网：v.+v.变化\"],\n[\"四句型转换\"],\n[\"方式/地点/时间\"],\n[\"结合习惯用法\"],\n[\"其他单词+词性\"],\n[\"原文摘抄+变\"]\n]\n}\n],\n\"uncertain\":[]\n}\n```",
+  "parsed": {
+    "kind": "slide",
+    "description": "教学课件，展示单词bear-bore-borne的发音、词性及造句指南列表，包含插图和手写标注",
+    "annotations": [
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "bear-bore-borne v.",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          75,
+          554,
+          693,
+          622
+        ],
+        "matching_color_pixels": 2192,
+        "meaning_original_model": "强调单词及其词性"
+      },
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "原文摘抄+变",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "circle_target_requires_review",
+        "requires_review": true,
+        "meaning_original_model": "突出该造句指南条目"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": true,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [
+      {
+        "content": [
+          [
+            "单词造句指南",
+            "网：v.+v.变化"
+          ],
+          [
+            "四句型转换"
+          ],
+          [
+            "方式/地点/时间"
+          ],
+          [
+            "结合习惯用法"
+          ],
+          [
+            "其他单词+词性"
+          ],
+          [
+            "原文摘抄+变"
+          ]
+        ]
+      }
+    ],
+    "uncertain": [
+      "圈选的精确对象尚需核对：原文摘抄+变"
+    ]
+  },
+  "generated_tokens": 227,
+  "finish_reason": "stop",
+  "elapsed_seconds": 5.75350540943748,
+  "batch_size": 32,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "postprocessing_version": "objective-and-pixel-grounding-2"
+}

@@ -1,0 +1,32 @@
+# 布局遗漏区域的独立复查
+
+原图位置：[573, 40, 640, 421]；PP-OCRv5 候选：单词造句指南
+
+![复查区域](repairs/region_002/source.png)
+
+单词造句指南
+
+原图位置：[736, 29, 923, 99]；PP-OCRv5 候选：V.+V.变化
+
+![复查区域](repairs/region_004/source.png)
+
+V.tV变化
+
+原图位置：[653, 96, 880, 159]；PP-OCRv5 候选：1四句型转换
+
+![复查区域](repairs/region_005/source.png)
+
+四句型转换
+
+原图位置：[79, 451, 294, 501]；PP-OCRv5 候选：/'ru:dli/
+
+![复查区域](repairs/region_010/source.png)
+
+/ 'ruːdli/
+
+原图位置：[109, 745, 826, 820]；PP-OCRv5 候选：O He was talking to her rudely.
+
+![复查区域](repairs/region_017/source.png)
+
+O He was talking to her  $ \underline{\text{rudely}} $.
+

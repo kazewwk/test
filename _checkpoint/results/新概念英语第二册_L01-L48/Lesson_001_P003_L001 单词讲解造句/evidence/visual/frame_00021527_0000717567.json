@@ -1,0 +1,84 @@
+{
+  "path": "frames/frame_00021527_0000717567.webp",
+  "time": 717.566688,
+  "image_sha256": "b798fa946137ad36a81334c34d1e8e24ff43900f445fd2d814e25a77fd39093a",
+  "cache_fingerprint": "4b2091e19d68fa99de5bb3c73bd968c2d0da01c6dd472c056495e1e27d8179ef",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "quantized": false,
+  "raw": "```json\n{\n\"kind\": \"slide\",\n\"description\": \"教学课件展示单词play的名词用法，包含例句及手写标注\",\n\"annotations\": [\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"I am going to watch a play with my Mum\",\n\"meaning\": \"强调该句为当前讲解的例句\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"play\",\n\"meaning\": \"强调单词play在句中的名词用法\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"with my Mum\",\n\"meaning\": \"强调介词短语作状语\"\n}\n],\n\"ocr_missing_text\": [],\n\"ocr_disagreements\": [],\n\"table_present\": false,\n\"formula_present\": false,\n\"formulas\": [],\n\"tables\": [],\n\"uncertain\": []\n}\n```\n",
+  "parsed": {
+    "kind": "slide",
+    "description": "教学课件展示单词play的名词用法，包含例句及手写标注",
+    "annotations": [
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "I am going to watch a play with my Mum",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          116,
+          729,
+          1277,
+          788
+        ],
+        "matching_color_pixels": 7301,
+        "meaning_original_model": "强调该句为当前讲解的例句"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "play",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          69,
+          565,
+          263,
+          663
+        ],
+        "matching_color_pixels": 398,
+        "meaning_original_model": "强调单词play在句中的名词用法"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "with my Mum",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          826,
+          729,
+          1141,
+          788
+        ],
+        "matching_color_pixels": 1930,
+        "meaning_original_model": "强调介词短语作状语"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": []
+  },
+  "generated_tokens": 216,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "elapsed_seconds": 9.854525805500089,
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
+}

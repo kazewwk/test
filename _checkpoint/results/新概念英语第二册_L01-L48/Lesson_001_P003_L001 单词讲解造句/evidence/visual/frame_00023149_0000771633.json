@@ -1,0 +1,110 @@
+{
+  "path": "frames/frame_00023149_0000771633.webp",
+  "time": 771.633312,
+  "image_sha256": "5880d3ac1b14ddfb3aa899fca6c97592117332f595c79fe81ea209ec42329b49",
+  "cache_fingerprint": "4b2091e19d68fa99de5bb3c73bd968c2d0da01c6dd472c056495e1e27d8179ef",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "dtype": "bfloat16",
+  "quantized": false,
+  "backend": "vllm",
+  "raw": "```json\n{\n\"kind\":\"slide\",\n\"description\":\"教学课件，展示单词loudly的讲解，包含左侧教学插图、中间文字列表和右侧教师演示画面\",\n\"annotations\":[\n{\n\"type\":\"圈\",\n\"color\":\"蓝色\",\n\"target\":\"左侧插图中穿黑色衣服的女性\",\n\"meaning\":\"强调该人物\"\n},\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"左侧插图中穿黑色衣服男性的手臂\",\n\"meaning\":\"强调该部位\"\n},\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"左侧插图中穿红色衣服女性的手臂\",\n\"meaning\":\"强调该部位\"\n},\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"左侧插图中金发女性的手臂\",\n\"meaning\":\"强调该部位\"\n},\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"单词loudly\",\n\"meaning\":\"强调该单词\"\n}\n],\n\"ocr_missing_text\":[],\n\"ocr_disagreements\":[],\n\"table_present\":false,\n\"formula_present\":false,\n\"formulas\":[],\n\"tables\":[],\n\"uncertain\":[],\n\"ocr_candidates\":[\"v.+v.变化\", \"胶学bilibili\", \"单词造句指南\", \"网：\", \"四句型转换\", \"方式/地点/时间\", \"结合习惯用法\", \"其他单词+词性\", \"原文摘抄+变\", \"/'laodli/\", \"loudly adv.\", \"H\"]\n}\n```",
+  "parsed": {
+    "kind": "slide",
+    "description": "教学课件，展示单词loudly的讲解，包含左侧教学插图、中间文字列表和右侧教师演示画面",
+    "annotations": [
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "左侧插图中穿黑色衣服的女性",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "circle_target_requires_review",
+        "requires_review": true,
+        "meaning_original_model": "强调该人物"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "左侧插图中穿黑色衣服男性的手臂",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "强调该部位"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "左侧插图中穿红色衣服女性的手臂",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "强调该部位"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "左侧插图中金发女性的手臂",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "强调该部位"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "单词loudly",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          72,
+          561,
+          443,
+          648
+        ],
+        "matching_color_pixels": 1311,
+        "meaning_original_model": "强调该单词"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": [
+      "圈选的精确对象尚需核对：左侧插图中穿黑色衣服的女性",
+      "下划线的对应文字位置未确认：左侧插图中穿黑色衣服男性的手臂",
+      "下划线的对应文字位置未确认：左侧插图中穿红色衣服女性的手臂",
+      "下划线的对应文字位置未确认：左侧插图中金发女性的手臂"
+    ],
+    "ocr_candidates": [
+      "v.+v.变化",
+      "胶学bilibili",
+      "单词造句指南",
+      "网：",
+      "四句型转换",
+      "方式/地点/时间",
+      "结合习惯用法",
+      "其他单词+词性",
+      "原文摘抄+变",
+      "/'laodli/",
+      "loudly adv.",
+      "H"
+    ]
+  },
+  "generated_tokens": 342,
+  "finish_reason": "stop",
+  "elapsed_seconds": 7.193825008562612,
+  "batch_size": 32,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "postprocessing_version": "objective-and-pixel-grounding-2"
+}

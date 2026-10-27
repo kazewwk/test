@@ -1,0 +1,36 @@
+![](images/page_0_image_0.jpg)
+
+<details>
+<summary>natural_image</summary>
+
+Two men in conversation, one gesturing with hands while the other holds a book (no visible text or symbols)
+</details>
+
+单网:v.+v.变化
+
+词√四句型转换
+
+造√方式/地点/时间
+
+句 结合习惯用法
+
+指 其他单词+词性
+
+南 原文摘抄+变
+
+/ kɒnveˈseɪʃən/
+
+## conversation n.
+
+① have a conversation NCE1L31 & L71
+
+- We are having a conversation. Please be quiet.
+o I had a conversation with him yesterday.
+
+![](images/page_0_image_15.jpg)
+
+<details>
+<summary>natural_image</summary>
+
+Man sitting on a wooden table using a tablet device, no visible text or symbols on the device or background.
+</details>

@@ -1,0 +1,74 @@
+{
+  "path": "frames/frame_00016944_0000564800.webp",
+  "time": 564.8,
+  "image_sha256": "5f77fe85e0b4675647685b54db122029d460de2d27d4b21444bb3428fdf27ae7",
+  "cache_fingerprint": "4b2091e19d68fa99de5bb3c73bd968c2d0da01c6dd472c056495e1e27d8179ef",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "quantized": false,
+  "raw": "```json\n{\n\"kind\":\"slide\",\n\"description\":\"教学课件，展示单词seat的讲解，包含左侧图片、右侧表格及下方例句\",\n\"annotations\":[\n{\n\"type\":\"圈\",\n\"color\":\"蓝色\",\n\"target\":\"图片中的米色椅子\",\n\"meaning\":\"圈出单词seat对应的实物图片\"\n}\n],\n\"ocr_missing_text\":[],\n\"ocr_disagreements\":[],\n\"table_present\":true,\n\"formula_present\":false,\n\"formulas\":[],\n\"tables\":[\n{\n\"content\":[\n[\"单词造句指南\", \"网：v.+v.变化\"],\n[\"四句型转换\"],\n[\"方式/地点/时间\"],\n[\"结合习惯用法\"],\n[\"其他单词+词性\"],\n[\"原文摘抄+变\"]\n]\n}\n],\n\"uncertain\":[]\n}\n```\n",
+  "parsed": {
+    "kind": "slide",
+    "description": "教学课件，展示单词seat的讲解，包含左侧图片、右侧表格及下方例句",
+    "annotations": [
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "图片中的米色椅子",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "circle_target_requires_review",
+        "requires_review": true,
+        "meaning_original_model": "圈出单词seat对应的实物图片"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": true,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [
+      {
+        "content": [
+          [
+            "单词造句指南",
+            "网：v.+v.变化"
+          ],
+          [
+            "四句型转换"
+          ],
+          [
+            "方式/地点/时间"
+          ],
+          [
+            "结合习惯用法"
+          ],
+          [
+            "其他单词+词性"
+          ],
+          [
+            "原文摘抄+变"
+          ]
+        ]
+      }
+    ],
+    "uncertain": [
+      "圈选的精确对象尚需核对：图片中的米色椅子"
+    ]
+  },
+  "generated_tokens": 188,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "elapsed_seconds": 8.310690804999922,
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
+}

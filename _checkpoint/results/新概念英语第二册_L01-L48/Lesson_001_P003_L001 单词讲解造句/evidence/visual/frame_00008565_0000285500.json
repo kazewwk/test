@@ -1,0 +1,119 @@
+{
+  "path": "frames/frame_00008565_0000285500.webp",
+  "time": 285.5,
+  "image_sha256": "2b38ad5b526394d1f79583d72c38384b8746910254d6e6890ed6403d341b58c6",
+  "cache_fingerprint": "4b2091e19d68fa99de5bb3c73bd968c2d0da01c6dd472c056495e1e27d8179ef",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "quantized": false,
+  "raw": "```json\n{\n\"kind\":\"slide\",\n\"description\":\"教学课件，展示单词conversation的发音、词性及造句指南列表，左侧配有两人交谈的插图，右侧教师正在讲解。\",\n\"annotations\":[\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"/kpnvaseifan/\",\n\"meaning\":\"标注音标中的重读音节位置\"\n},\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"conversation\",\n\"meaning\":\"标注单词拼写\"\n},\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"n.\",\n\"meaning\":\"标注词性缩写\"\n},\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"其他单词+词性\",\n\"meaning\":\"列表项中的重点标注\"\n}\n],\n\"ocr_missing_text\":[],\n\"ocr_disagreements\":[],\n\"table_present\":true,\n\"formula_present\":false,\n\"formulas\":[],\n\"tables\":[\n{\n\"content\":[\n[\"单词造句指南\", \"网：v.+v.变化\"],\n[\"四句型转换\"],\n[\"方式/地点/时间\"],\n[\"结合习惯用法\"],\n[\"其他单词+词性\"],\n[\"原文摘抄+变\"]\n]\n}\n],\n\"uncertain\":[]\n}\n```\n",
+  "parsed": {
+    "kind": "slide",
+    "description": "教学课件，展示单词conversation的发音、词性及造句指南列表，左侧配有两人交谈的插图，右侧教师正在讲解。",
+    "annotations": [
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "/kpnvaseifan/",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          84,
+          484,
+          498,
+          529
+        ],
+        "matching_color_pixels": 2629,
+        "meaning_original_model": "标注音标中的重读音节位置"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "conversation",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          77,
+          557,
+          544,
+          622
+        ],
+        "matching_color_pixels": 245,
+        "meaning_original_model": "标注单词拼写"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "n.",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "标注词性缩写"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "其他单词+词性",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          665,
+          335,
+          942,
+          378
+        ],
+        "matching_color_pixels": 348,
+        "meaning_original_model": "列表项中的重点标注"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": true,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [
+      {
+        "content": [
+          [
+            "单词造句指南",
+            "网：v.+v.变化"
+          ],
+          [
+            "四句型转换"
+          ],
+          [
+            "方式/地点/时间"
+          ],
+          [
+            "结合习惯用法"
+          ],
+          [
+            "其他单词+词性"
+          ],
+          [
+            "原文摘抄+变"
+          ]
+        ]
+      }
+    ],
+    "uncertain": [
+      "下划线的对应文字位置未确认：n."
+    ]
+  },
+  "generated_tokens": 297,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "elapsed_seconds": 8.29840234150015,
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
+}

@@ -1,0 +1,169 @@
+{
+  "path": "frames/frame_00010121_0000337367.webp",
+  "time": 337.366688,
+  "image_sha256": "cc61c720ab73f883751bea18f8e059e9b2987a9873ef6fc737f9a0bd9766d3c3",
+  "cache_fingerprint": "4f41ed236eaff883a8411ad18df2d7dd1df7dbe61c10222dbe092720a4eff334",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "quantized": false,
+  "raw": "```json\n{\n\"kind\": \"slide\",\n\"description\": \"英语单词教学课件，展示单词 conversation 的发音、词性及例句，包含手写标注和插图。\",\n\"annotations\": [\n  {\n    \"type\": \"下划线\",\n    \"color\": \"蓝色\",\n    \"target\": \"/kən'veɪsɪfən/\",\n    \"meaning\": \"标注音标\"\n  },\n  {\n    \"type\": \"下划线\",\n    \"color\": \"蓝色\",\n    \"target\": \"conversation\",\n    \"meaning\": \"标注单词\"\n  },\n  {\n    \"type\": \"下划线\",\n    \"color\": \"蓝色\",\n    \"target\": \"NCE1L31 & L71\",\n    \"meaning\": \"标注教材出处\"\n  },\n  {\n    \"type\": \"下划线\",\n    \"color\": \"蓝色\",\n    \"target\": \"having\",\n    \"meaning\": \"标注例句中的动词\"\n  },\n  {\n    \"type\": \"下划线\",\n    \"color\": \"蓝色\",\n    \"target\": \"had\",\n    \"meaning\": \"标注例句中的动词\"\n  },\n  {\n    \"type\": \"下划线\",\n    \"color\": \"蓝色\",\n    \"target\": \"yesterday\",\n    \"meaning\": \"标注例句中的时间状语\"\n  },\n  {\n    \"type\": \"下划线\",\n    \"color\": \"蓝色\",\n    \"target\": \"v.+v.变化\",\n    \"meaning\": \"标注表格中的内容\"\n  },\n  {\n    \"type\": \"下划线\",\n    \"color\": \"蓝色\",\n    \"target\": \"其他单词+词性\",\n    \"meaning\": \"标注表格中的内容\"\n  }\n],\n\"ocr_missing_text\": [],\n\"ocr_disagreements\": [],\n\"table_present\": true,\n\"formula_present\": false,\n\"formulas\": [],\n\"tables\": [\n  {\n    \"content\": \"单词造句指南\",\n    \"rows\": [\n      \"网：v.+v.变化\",\n      \"四句型转换\",\n      \"方式/地点/时间\",\n      \"结合习惯用法\",\n      \"其他单词+词性\",\n      \"原文摘抄+变\"\n    ]\n  }\n],\n\"uncertain\": []\n}\n```\n",
+  "parsed": {
+    "kind": "slide",
+    "description": "英语单词教学课件，展示单词 conversation 的发音、词性及例句，包含手写标注和插图。",
+    "annotations": [
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "/kən'veɪsɪfən/",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "标注音标"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "conversation",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          75,
+          556,
+          545,
+          627
+        ],
+        "matching_color_pixels": 259,
+        "meaning_original_model": "标注单词"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "NCE1L31 & L71",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          681,
+          662,
+          1009,
+          712
+        ],
+        "matching_color_pixels": 1649,
+        "meaning_original_model": "标注教材出处"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "having",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          289,
+          726,
+          475,
+          782
+        ],
+        "matching_color_pixels": 1613,
+        "meaning_original_model": "标注例句中的动词"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "had",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          169,
+          789,
+          264,
+          849
+        ],
+        "matching_color_pixels": 466,
+        "meaning_original_model": "标注例句中的动词"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "yesterday",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          821,
+          789,
+          1086,
+          849
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
+        "meaning_original_model": "标注例句中的时间状语"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "v.+v.变化",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          744,
+          69,
+          838,
+          105
+        ],
+        "matching_color_pixels": 764,
+        "meaning_original_model": "标注表格中的内容"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "其他单词+词性",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          664,
+          334,
+          944,
+          380
+        ],
+        "matching_color_pixels": 2104,
+        "meaning_original_model": "标注表格中的内容"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": true,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [
+      {
+        "content": "单词造句指南",
+        "rows": [
+          "网：v.+v.变化",
+          "四句型转换",
+          "方式/地点/时间",
+          "结合习惯用法",
+          "其他单词+词性",
+          "原文摘抄+变"
+        ]
+      }
+    ],
+    "uncertain": [
+      "下划线的对应文字位置未确认：/kən'veɪsɪfən/",
+      "未在对应文字下方检出足够蓝色下划线像素：yesterday"
+    ]
+  },
+  "generated_tokens": 535,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "elapsed_seconds": 26.433823253499895,
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
+}

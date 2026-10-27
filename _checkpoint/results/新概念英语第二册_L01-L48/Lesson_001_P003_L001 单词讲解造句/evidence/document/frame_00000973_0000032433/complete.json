@@ -1,0 +1,104 @@
+{
+  "artifacts": {
+    "1793087114_8430.md": "57af229a1a49a7a6f584212642d068bb6c2220f36aac8e867b36597880a8013d",
+    "1793087114_8430_res.json": "6a21ff8e3aa364a0f3b236183dcdabf0da313303c4896cfd3ec2b0b6c35ea190",
+    "imgs/img_in_header_image_box_1649_30_1902_102.jpg": "cb7ec9da87f33f0c36a4f22cd3aa98b1a3d4cd10b27ccfeae64fc4d538719176",
+    "region_repairs.md": "1665957f18a1939eafb58ee5e6b220cef286b5ea6ab4c03f12aafe76c9118df7",
+    "repairs/region_000/1793087114_6260.md": "8cff79bb4f07ca8c144e13b0ad5a4bf3bc79332b3037c18a40e7ba51dd29e3a7",
+    "repairs/region_000/1793087114_6260_res.json": "82c04cfc0c9b5a35821b7418185f1967a61716f88af7b7e73c295787aae7ec42",
+    "repairs/region_000/source.png": "8bc9b218c8f76d58dae1ed99c121dc1de3c31f0bf6f0d4263d966eb8a3ef16cc"
+  },
+  "image_sha256": "f89aeb5e357ea4bfdd411ca31c7c415f4e974380c87511b548f65cbaf74366b7",
+  "cache_fingerprint": "e2abb5e02d9eabaa39ee8ae630e9302743998b20947fe98039aabaea9a0288ce",
+  "elapsed_seconds": 1.0981849640011205,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "教学 bilibili",
+      "block_bbox": [
+        1649,
+        30,
+        1902,
+        102
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1649.0,
+          30.0
+        ],
+        [
+          1902.0,
+          30.0
+        ],
+        [
+          1902.0,
+          102.0
+        ],
+        [
+          1649.0,
+          102.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "胶囊学院",
+      "block_bbox": [
+        836,
+        652,
+        1088,
+        703
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          836.0,
+          652.0
+        ],
+        [
+          1088.0,
+          652.0
+        ],
+        [
+          1088.0,
+          703.0
+        ],
+        [
+          836.0,
+          703.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "医学",
+      "block_bbox": [
+        1640,
+        19,
+        1903,
+        113
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1640,
+        19,
+        1903,
+        113
+      ],
+      "ppocr_candidate": "胶学ト",
+      "recovered_text": "医学",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

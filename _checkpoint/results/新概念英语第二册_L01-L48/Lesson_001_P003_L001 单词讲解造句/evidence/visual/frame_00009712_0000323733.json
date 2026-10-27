@@ -1,0 +1,152 @@
+{
+  "path": "frames/frame_00009712_0000323733.webp",
+  "time": 323.733313,
+  "image_sha256": "a7ff3519c636b00e18e2f69f5f3a0cb0803779da2c620a31d76b649615d61c0d",
+  "cache_fingerprint": "4f41ed236eaff883a8411ad18df2d7dd1df7dbe61c10222dbe092720a4eff334",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "quantized": false,
+  "raw": "```json\n{\n\"kind\": \"slide\",\n\"description\": \"英语单词教学课件，展示单词 conversation 的发音、词性及例句，右侧有教师演示画面。\",\n\"annotations\": [\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"音标 /kən'veɪsən/ 中的音节部分\",\n\"meaning\": \"划分音节\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"单词 conversation 中的音节部分\",\n\"meaning\": \"划分音节\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"单词 conversation 末尾的 n.\",\n\"meaning\": \"强调词性\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"例句中的 having\",\n\"meaning\": \"强调动词进行时态\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"例句中的 conversation\",\n\"meaning\": \"强调核心词汇\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"NCE1L31 & L71\",\n\"meaning\": \"标注教材出处\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"单词造句指南表格中的 v.+v.变化\",\n\"meaning\": \"强调造词规则\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"单词造句指南表格中的其他单词+词性\",\n\"meaning\": \"强调造词规则\"\n}\n],\n\"ocr_missing_text\": [],\n\"ocr_disagreements\": [],\n\"table_present\": true,\n\"formula_present\": false,\n\"formulas\": [],\n\"tables\": [\n{\n\"title\": \"单词造句指南\",\n\"content\": [\n\"网：v.+v.变化\",\n\"四句型转换\",\n\"方式/地点/时间\",\n\"结合习惯用法\",\n\"其他单词+词性\",\n\"原文摘抄+变\"\n]\n}\n],\n\"uncertain\": []\n}\n```\n",
+  "parsed": {
+    "kind": "slide",
+    "description": "英语单词教学课件，展示单词 conversation 的发音、词性及例句，右侧有教师演示画面。",
+    "annotations": [
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "音标 /kən'veɪsən/ 中的音节部分",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "划分音节"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "单词 conversation 中的音节部分",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          73,
+          558,
+          587,
+          638
+        ],
+        "matching_color_pixels": 615,
+        "meaning_original_model": "划分音节"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "单词 conversation 末尾的 n.",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          73,
+          558,
+          587,
+          638
+        ],
+        "matching_color_pixels": 615,
+        "meaning_original_model": "强调词性"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "例句中的 having",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "强调动词进行时态"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "例句中的 conversation",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          73,
+          558,
+          587,
+          638
+        ],
+        "matching_color_pixels": 615,
+        "meaning_original_model": "强调核心词汇"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "NCE1L31 & L71",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          672,
+          661,
+          1008,
+          715
+        ],
+        "matching_color_pixels": 1720,
+        "meaning_original_model": "标注教材出处"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "单词造句指南表格中的 v.+v.变化",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "强调造词规则"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "单词造句指南表格中的其他单词+词性",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "强调造词规则"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": true,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [
+      {
+        "title": "单词造句指南",
+        "content": [
+          "网：v.+v.变化",
+          "四句型转换",
+          "方式/地点/时间",
+          "结合习惯用法",
+          "其他单词+词性",
+          "原文摘抄+变"
+        ]
+      }
+    ],
+    "uncertain": [
+      "下划线的对应文字位置未确认：音标 /kən'veɪsən/ 中的音节部分",
+      "下划线的对应文字位置未确认：例句中的 having",
+      "下划线的对应文字位置未确认：单词造句指南表格中的 v.+v.变化",
+      "下划线的对应文字位置未确认：单词造句指南表格中的其他单词+词性"
+    ]
+  },
+  "generated_tokens": 490,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "elapsed_seconds": 26.433823253499895,
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
+}

@@ -1,0 +1,20 @@
+# 布局遗漏区域的独立复查
+
+原图位置：[1728, 23, 1896, 112]；PP-OCRv5 候选：bilbi
+
+![复查区域](repairs/region_001/source.png)
+
+bilibili
+
+原图位置：[144, 807, 948, 879]；PP-OCRv5 候选：6 Does he go to a private school?
+
+![复查区域](repairs/region_017/source.png)
+
+∀ Does he go to a private school?
+
+原图位置：[150, 867, 1058, 946]；PP-OCRv5 候选：o Why does he go to a private school?
+
+![复查区域](repairs/region_018/source.png)
+
+o  $ \underline{\text{Why}} $ does he go to a private school?
+

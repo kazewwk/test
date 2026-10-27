@@ -1,0 +1,128 @@
+{
+  "image_sha256": "6249b895e0caf60036c566ae13bc9191f35798d03f7cc85bd86c04e9eb4a142e",
+  "cache_fingerprint": "1e202af46b527b982023ff7d99bf7513bd78b47651ef29d41bf921b25a28796b",
+  "elapsed_seconds": 2.2711333859997467,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "教学培训",
+      "block_bbox": [
+        1639,
+        27,
+        1907,
+        105
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1639.0,
+          27.0
+        ],
+        [
+          1907.0,
+          27.0
+        ],
+        [
+          1907.0,
+          105.0
+        ],
+        [
+          1639.0,
+          105.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "",
+      "block_bbox": [
+        1153,
+        321,
+        1895,
+        1079
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          1153.0,
+          321.0
+        ],
+        [
+          1895.0,
+          321.0
+        ],
+        [
+          1895.0,
+          1079.0
+        ],
+        [
+          1153.0,
+          1079.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "教学 预测",
+      "block_bbox": [
+        1640,
+        26,
+        1865,
+        110
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "下",
+      "block_bbox": [
+        358,
+        505,
+        423,
+        573
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1640,
+        26,
+        1865,
+        110
+      ],
+      "ppocr_candidate": "胶学刷",
+      "recovered_text": "教学 预测",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        358,
+        505,
+        423,
+        573
+      ],
+      "ppocr_candidate": "不",
+      "recovered_text": "下",
+      "source_crop": "repairs/region_001/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified",
+  "artifacts": {
+    "1793082192_6994.md": "6e653d851ac94f3ec9cbb87255f57c79a9e480127c38d988b9597fe68465badf",
+    "1793082192_6994_res.json": "b5e438fe2cc9c0c0da8d22f84cc564c7d005e2e3ea319e651dcc69cedc33a459",
+    "region_repairs.md": "562c64dace9a497a1d24dbbd1862b79aa53913a8b37d4f385585bcd7226f2ec6",
+    "repairs/region_000/1793082192_7042.md": "7feefcfa4894753919f47776ec62935720bc5bb5d63bad85d902b2741c0f821f",
+    "repairs/region_000/1793082192_7042_res.json": "f5e038901879f7e9427e391efbb20fbeaf0cafcee70f60ba5bbfbd745a58ce4f",
+    "repairs/region_000/source.png": "eb7f0836c7343b615aa4b093e811873b04da2bd684908a86fff41e7b1348c63f",
+    "repairs/region_001/1793082193_7363.md": "13c12b064b635e069c22d29d1decf8e952332e9492e17515705d7904c003a147",
+    "repairs/region_001/1793082193_7363_res.json": "f0768f809b03886151ea1cdb133bb7f427c3b4d67236de18d85dd0d9385622b0",
+    "repairs/region_001/source.png": "da32f0fcb3b021147d57fb3786450391039314e96396d1248a231e3ec42db956"
+  }
+}
