@@ -4,6 +4,7 @@ import difflib
 import json
 import re
 from pathlib import Path
+from urllib.parse import unquote
 from .common import load, write_json, write_jsonl, atomic_text, seconds_label, artifact_hashes, utcnow
 
 
@@ -20,12 +21,13 @@ def needs_asr_review(a, b):
     aa, bb = normalized(a), normalized(b)
     matcher = difflib.SequenceMatcher(None, aa, bb, autojunk=False)
     omitted = max((max(i2-i1,j2-j1) for tag,i1,i2,j1,j2 in matcher.get_opcodes() if tag!='equal'),default=0)
-    return disagreement(a,b)>0.12 or omitted>=12
+    english=lambda s:[x.lower() for x in re.findall(r"[A-Za-z]+(?:['’][A-Za-z]+)*",s)]
+    return disagreement(a,b)>0.12 or omitted>=12 or english(a)!=english(b)
 
 
 def needs_document_ocr(visual):
     p=visual.get('parsed',visual)
-    return bool(p.get('needs_document_ocr') or p.get('tables') or p.get('formulas')
+    return bool(p.get('needs_document_ocr') or p.get('table_present') or p.get('formula_present') or p.get('tables') or p.get('formulas')
                 or p.get('kind') in ('table','formula'))
 
 
@@ -56,6 +58,45 @@ def core_text(record):
     return raw[start:end].strip(), []
 
 
+def whisper_core(record):
+    words=[word for segment in record.get('segments',[]) for word in segment.get('words') or []]
+    if words:
+        return ''.join(w['word'] for w in words if record['core_start'] <= (w['start']+w['end'])/2 < record['core_end']).strip()
+    return record.get('text','')
+
+
+def cjk_fraction(text):
+    chars=[c for c in text if c.isalnum()]
+    return sum('\u4e00'<=c<='\u9fff' for c in chars)/max(1,len(chars))
+
+
+def language_mismatch(primary,secondary):
+    return cjk_fraction(primary.get('text',''))<.08 and cjk_fraction(secondary.get('text',''))>.35
+
+
+def select_checked(primary,secondary,review=None,review_secondary=None,language_review=None):
+    text,flags=core_text(primary)
+    reference=whisper_core(review_secondary or secondary)
+    score=disagreement(text,reference)
+    selected='qwen';chosen=primary
+    rejected=[]
+    for name,candidate in [('review_qwen',review),('language_review_qwen',language_review)]:
+        if not candidate:continue
+        proposed,proposed_flags=core_text(candidate)
+        proposed_score=disagreement(proposed,reference)
+        # A cross-check model may omit an English example. Agreement alone must
+        # not reward deleting a substantial part of the primary hypothesis.
+        if not language_mismatch(primary,secondary) and len(normalized(proposed))<len(normalized(text))*.85:
+            rejected.append(name+':possible_content_omission');continue
+        if proposed.strip() and not proposed_flags and proposed_score+.04<score:
+            chosen=candidate;text=proposed;flags=proposed_flags;score=proposed_score;selected=name
+    if selected!='qwen':flags.append('checked_uses_context_review')
+    if language_mismatch(primary,secondary):flags.append('primary_language_mismatch')
+    if rejected:flags.append('review_shorter_content_preserved_for_audit')
+    return text,flags,chosen,{'selected':selected,'agreement_with_cross_check':1-score,
+                            'primary_agreement':1-disagreement(core_text(primary)[0],reference),'rejected_candidates':rejected}
+
+
 def overlap(a, b):
     return max(0.0, min(a[1], b[1]) - max(a[0], b[0]))
 
@@ -77,6 +118,19 @@ def srt_time(value):
     return f"{ms//3600000:02d}:{ms//60000%60:02d}:{ms//1000%60:02d},{ms%1000:03d}"
 
 
+def inline_document(root,relative):
+    path=Path(root)/relative
+    text=path.read_text(encoding='utf-8')
+    prefix=Path(relative).parent
+    def target(value):
+        if '://' in value or value.startswith(('data:','#')):return value
+        return str(prefix/value)
+    text=re.sub(r'(!?\[[^\]]*\]\()([^)]+)(\))',lambda m:m[1]+target(m[2])+m[3],text)
+    text=re.sub(r'(<img\b[^>]*\bsrc=["\'])([^"\']+)(["\'])',lambda m:m[1]+target(m[2])+m[3],text)
+    text=re.sub(r'(?m)^(#{1,4}) ',lambda m:'####'+m[1]+' ',text)
+    return text
+
+
 def assemble(lesson_dir, source, media, audio_info, windows):
     root = Path(lesson_dir)
     frames = load(root / "frames.json")["frames"]
@@ -85,7 +139,13 @@ def assemble(lesson_dir, source, media, audio_info, windows):
     for win in windows:
         q = load(root / "evidence/qwen" / f"chunk_{win['id']:05d}.json")
         w = load(root / "evidence/whisper" / f"chunk_{win['id']:05d}.json")
-        text, flags = core_text(q)
+        review_path=root/'evidence/review_qwen'/f"chunk_{win['id']:05d}.json"
+        review_w_path=root/'evidence/review_whisper'/f"chunk_{win['id']:05d}.json"
+        language_path=root/'evidence/language_review_qwen'/f"chunk_{win['id']:05d}.json"
+        qr=load(review_path) if review_path.exists() else None
+        wr=load(review_w_path) if review_w_path.exists() else None
+        lr=load(language_path) if language_path.exists() else None
+        text, flags, chosen,selection = select_checked(q,w,qr,wr,lr)
         score = disagreement(q["text"], w["text"])
         if needs_asr_review(q['text'],w['text']):
             flags.append("asr_disagreement")
@@ -114,17 +174,35 @@ def assemble(lesson_dir, source, media, audio_info, windows):
             visual = load(root / "evidence/visual" / name)
             document_dir = root / "evidence/document" / Path(frame["path"]).stem
             docs = [str(p.relative_to(root)) for p in document_dir.glob("*.md")]
+            mineru_dir=root/'evidence/mineru'/Path(frame['path']).stem
+            mineru_docs=[str(p.relative_to(root)) for p in mineru_dir.glob('*.md')]
             visual_records.append({**frame, "ocr": ocr, "visual": visual,
-                                   "document_ocr_markdown": docs})
+                                   "document_ocr_markdown": docs,'mineru_markdown':mineru_docs})
         segment = {"schema_version": "1.0", "segment_id": f"{source['drive_file_id']}:{win['id']:05d}",
                    "source_drive_file_id": source["drive_file_id"], "source_sha256": source["video_sha256"],
                    "start": start, "end": end,
                    "speech": {"text": text, "raw_primary": q["text"], "cross_check": w["text"],
                               "primary_words": q.get("words", []), "word_timebase": "extracted_audio",
+                              "checked_words":chosen.get('words',[]),'selection':selection,
                               "audio_source_offset": offset, "language": q.get("language"),
                               "disagreement": score, "verification": "automatic_cross_check_only",
-                              "review_hypothesis": load(review) if review.exists() else None},
+                              "review_hypothesis": qr,'review_cross_check':wr,'language_review':lr},
                    "frames": visual_records, "flags": sorted(set(flags))}
+        rag_parts=[text]
+        for frame in visual_records:
+            rag_parts.append(f"画面 {seconds_label(frame['time'])}\n"+'\n'.join(frame['ocr']['texts']))
+            for doc in frame['document_ocr_markdown']+frame['mineru_markdown']:
+                rag_parts.append(inline_document(root,doc))
+            rag_parts.append('视觉观察（机器核验）：'+frame['visual']['parsed'].get('description',''))
+            if frame['visual']['parsed'].get('annotations'):
+                rag_parts.append(json.dumps(frame['visual']['parsed']['annotations'],ensure_ascii=False))
+            if frame['visual']['parsed'].get('uncertain'):
+                rag_parts.append('视觉待核验：'+json.dumps(frame['visual']['parsed']['uncertain'],ensure_ascii=False))
+        segment['id']=segment['segment_id']
+        segment['text']='\n\n'.join(rag_parts)
+        segment['metadata']={'series':source.get('series'),'lesson':source['title'],'drive_file_id':source['drive_file_id'],
+                             'video_sha256':source['video_sha256'],'start':start,'end':end,
+                             'image_paths':[f['path'] for f in associated],'uncertainty_flags':segment['flags']}
         segments.append(segment)
         for flag in segment["flags"]:
             issues.append({"type": flag, "start": start, "end": end, "segment_id": segment["segment_id"]})
@@ -140,6 +218,8 @@ def assemble(lesson_dir, source, media, audio_info, windows):
             issues.append({'type':'phonetic_symbols_need_review','start':frame['time'],'end':frame['end'],'frame':frame['path']})
         if visual["parsed"].get("uncertain"):
             issues.append({"type": "uncertain_visual_description", "start": frame["time"], "end": frame["end"], "frame": frame["path"]})
+        if visual['parsed'].get('ocr_missing_text') or visual['parsed'].get('ocr_disagreements'):
+            issues.append({'type':'ocr_omission_or_disagreement','start':frame['time'],'end':frame['end'],'frame':frame['path']})
         description=visual['parsed'].get('description','')
         if ocr['texts'] and re.search('穿着|裤子|男性|衬衫',description) and not re.search('教学|课件|下划线|圈|表格|单词',description):
             issues.append({'type':'visual_description_misses_instructional_content','start':frame['time'],'end':frame['end'],'frame':frame['path']})
@@ -189,8 +269,13 @@ def assemble(lesson_dir, source, media, audio_info, windows):
             full += f"### 画面 {seconds_label(f['time'])}\n\n![教学画面]({f['path']})\n\n"
             full += "OCR 原文：\n\n```text\n" + "\n".join(f["ocr"]["texts"]) + "\n```\n\n"
             full += "视觉观察（机器输出，未人工核验）：\n\n" + f["visual"]["parsed"].get("description", "[无法确认]") + "\n\n"
+            observations={k:f['visual']['parsed'][k] for k in ['annotations','ocr_missing_text','ocr_disagreements','formulas','tables','uncertain'] if f['visual']['parsed'].get(k)}
+            if observations:
+                full+='标注、结构与待核验文字：\n\n```json\n'+json.dumps(observations,ensure_ascii=False,indent=2)+'\n```\n\n'
             for path in f["document_ocr_markdown"]:
-                full += f"[表格／公式结构化提取]({path})\n\n"
+                full += f"#### PaddleOCR-VL 原文与结构\n\n[独立结果]({path})\n\n"+inline_document(root,path)+'\n\n'
+            for path in f['mineru_markdown']:
+                full += f"#### MinerU 独立解析\n\n[独立结果]({path})\n\n"+inline_document(root,path)+'\n\n'
         if s["speech"]["text"].strip():
             subtitles.append(f"{len(subtitles)+1}\n{srt_time(s['start'])} --> {srt_time(s['end'])}\n{s['speech']['text']}\n")
     atomic_text(root / "transcript_raw.md", raw_md)
@@ -227,10 +312,12 @@ def validate_lesson(directory):
             p = (root / f["path"]).resolve()
             if not p.is_relative_to(root.resolve()) or not p.is_file():
                 errors.append("image:" + f["path"])
-    for md in root.glob("*.md"):
-        for target in re.findall(r"!?\[[^\]]*\]\(([^)]+)\)", md.read_text()):
-            if "://" not in target and not target.startswith("#"):
-                p = (md.parent / target.split("#")[0]).resolve()
+    for md in root.rglob("*.md"):
+        content=md.read_text()
+        targets=re.findall(r"!?\[[^\]]*\]\(([^)]+)\)",content)+re.findall(r'<img\b[^>]*\bsrc=["\']([^"\']+)',content)
+        for target in targets:
+            if "://" not in target and not target.startswith(("#",'data:')):
+                p = (md.parent / unquote(target.split("#")[0])).resolve()
                 if not p.is_relative_to(root.resolve()) or not p.exists():
                     errors.append("markdown_link:" + target)
     return errors

@@ -48,16 +48,16 @@ def read_jsonl(path):
     return [json.loads(x) for x in Path(path).read_text(encoding="utf-8").splitlines() if x.strip()]
 
 
-def run(argv, *, timeout=3600, log=None):
+def run(argv, *, timeout=3600, log=None, env=None):
     if log:
         Path(log).parent.mkdir(parents=True, exist_ok=True)
         with Path(log).open("ab") as stream:
-            p = subprocess.run([str(x) for x in argv], stdout=stream, stderr=stream, timeout=timeout)
+            p = subprocess.run([str(x) for x in argv], stdout=stream, stderr=stream, timeout=timeout,env=env)
         if p.returncode:
             raise RuntimeError(f"{Path(str(argv[0])).name} exited {p.returncode}; see {log}")
         return ""
     return subprocess.run([str(x) for x in argv], check=True, capture_output=True,
-                          text=True, timeout=timeout).stdout
+                          text=True, timeout=timeout,env=env).stdout
 
 
 def retry(operation, tries=3):

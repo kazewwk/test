@@ -13,7 +13,7 @@ import soundfile as sf
 from .common import load, write_json, digest, run, retry, utcnow, atomic_text
 from .drive import Drive
 from .media import probe, verify_decode, extract_audio, audio_windows, silence_intervals, extract_frames
-from .fusion import assemble, validate_lesson, needs_asr_review, needs_document_ocr, overlap, core_text
+from .fusion import assemble, validate_lesson, needs_asr_review, needs_document_ocr, overlap, core_text,language_mismatch
 from .monitor import Monitor
 
 
@@ -32,37 +32,56 @@ class State:
 
 def inference_fingerprint(stage,job):
     kind=stage.removeprefix('review_')
-    from .models import VISUAL_PROMPT
+    from .models import VISUAL_PROMPT,ASR_CONTEXT
     names={'qwen':['Qwen/Qwen3-ASR-1.7B','Qwen/Qwen3-ForcedAligner-0.6B'],
            'whisper':['Systran/faster-whisper-large-v3'],
-           'visual':['Qwen/Qwen2.5-VL-3B-Instruct']}.get(kind,[])
-    data={'adapter_version':1,'stage':stage,'source_sha256':job['source_sha256'],
+           'visual':[job.get('visual_model','Qwen/Qwen3.5-9B')],
+           'document':['PaddlePaddle/PaddleOCR-VL-1.6'],
+           'mineru':['opendatalab/MinerU2.5-Pro-2605-1.2B']}.get(kind,[])
+    data={'adapter_version':2,'stage':stage,'source_sha256':job['source_sha256'],
           'model_revisions':{k:job['model_revisions'][k] for k in names}}
     if kind in ('qwen','whisper'):
         data.update(windows=job['windows'],audio_format='16kHz-mono-pcm16-v1',
                     beam_size=job.get('beam_size',5) if kind=='whisper' else None)
+        if kind=='qwen':data.update(context=job.get('context',ASR_CONTEXT),language=job.get('language'))
+        if kind=='whisper':data['compute_type']='int8' if job.get('device')=='cpu' else 'float16'
     else:
         data['frames']=[(f['sha256'],f['time']) for f in job['frames']]
         if kind=='ocr':data['ocr_engine']=job.get('ocr_engine','paddle')
-        if kind=='visual':data.update(prompt=job.get('prompt',VISUAL_PROMPT),max_tokens=job.get('max_new_tokens',1536))
+        if kind=='visual':
+            data.update(prompt=job.get('prompt',VISUAL_PROMPT),max_tokens=job.get('max_new_tokens',2048))
+            data['ocr_inputs']=[digest(Path(job['lesson_dir'])/'evidence/ocr'/(Path(f['path']).stem+'.json')) for f in job['frames']]
     # Hardware choice is recorded in each result; completed hypotheses can be
     # reused when moving the remaining stages between CPU and GPU.
     return hashlib.sha256(json.dumps(data,sort_keys=True).encode()).hexdigest()
 
 
-def worker(stage, job, job_dir, ocr_python):
+def worker(stage, job, job_dir, ocr_python,visual_python=None,mineru_python=None):
     job={**job,'cache_fingerprint':inference_fingerprint(stage,job)}
     path = job_dir / (stage + '.json')
     write_json(path, job)
-    python = ocr_python if stage in ('ocr','document') else sys.executable
+    python = (ocr_python if stage in ('ocr','document') else
+              visual_python if stage=='visual' and visual_python else
+              mineru_python if stage=='mineru' and mineru_python else sys.executable)
     log = job_dir / (stage + '.log')
+    env=os.environ.copy()
+    env['PATH']=str(Path(python).parent)+os.pathsep+env.get('PATH','')
+    library_dirs=sorted(Path(python).parent.parent.glob('lib/python*/site-packages/nvidia/*/lib'))
+    if library_dirs:env['LD_LIBRARY_PATH']=':'.join(map(str,library_dirs))+':'+env.get('LD_LIBRARY_PATH','')
     # Model processes run sequentially; their GPU/CPU memory is released on exit.
     retry(lambda: run([python,'-m','course_pipeline.models', stage.removeprefix('review_'),path],
-                      timeout=86400,log=log), tries=2)
+                      timeout=86400,log=log,env=env), tries=2)
 
 
 def process(source, args):
     source = dict(source)
+    if not args.prepare_only and not getattr(args,'asr_only',False):
+        env_root=Path(sys.prefix)
+        for key,suffix in [('visual_python','-vlm'),('mineru_python','-mineru')]:
+            if not getattr(args,key,None):
+                candidate=Path(str(env_root)+suffix)/'bin/python'
+                if not candidate.exists():raise ValueError(f'Missing {key}: supply its interpreter path')
+                setattr(args,key,str(candidate))
     cache = Path(args.cache).resolve()
     cache.mkdir(parents=True,exist_ok=True)
     out = Path(args.output).resolve() / source['series'] / source['directory']
@@ -152,6 +171,13 @@ def process(source, args):
                 state.set(source,fingerprint,'review')
                 for stage in ('review_qwen','review_whisper'):
                     worker(stage,{**base,'windows':review_windows,'beam_size':7,'output':str(out/'evidence'/stage)},work,args.ocr_python)
+            language_windows=[]
+            for win in review_windows:
+                q=load(out/'evidence/qwen'/f"chunk_{win['id']:05d}.json")
+                w=load(out/'evidence/whisper'/f"chunk_{win['id']:05d}.json")
+                if language_mismatch(q,w):language_windows.append({**win,'language_hint':'Chinese'})
+            if language_windows:
+                worker('review_qwen',{**base,'windows':language_windows,'output':str(out/'evidence/language_review_qwen')},work,args.ocr_python)
             if getattr(args,'asr_only',False):
                 raw='# '+source['title']+'：语音阶段草稿\n\n本文件仅完成语音阶段，画面融合和完整质量验收尚未完成。\n\n'
                 checked=raw
@@ -170,14 +196,13 @@ def process(source, args):
                            not_completed=['OCR','visual_description','document_OCR','fusion','full_pilot_review']))
                 state.set(source,fingerprint,'asr_complete_visual_pending')
                 return out
-            for stage in ('ocr','visual'):
+            for stage in ('ocr','document','mineru','visual'):
                 state.set(source,fingerprint,stage)
-                worker(stage,{**base,'output':str(out/'evidence'/stage)},work,args.ocr_python)
-            document_frames=[f for f in frames if needs_document_ocr(load(out/'evidence/visual'/(Path(f['path']).stem+'.json')))]
-            if document_frames:
-                state.set(source,fingerprint,'document_ocr')
-                worker('document',{**base,'frames':document_frames,'output':str(out/'evidence/document')},work,args.ocr_python)
+                worker(stage,{**base,'output':str(out/'evidence'/stage)},work,args.ocr_python,
+                       getattr(args,'visual_python',None),getattr(args,'mineru_python',None))
             (out/'preparation_status.json').unlink(missing_ok=True)
+            for name in ['partial_manifest.json','audio_stage_raw.md','audio_stage_checked.md']:
+                (out/name).unlink(missing_ok=True)
             quality=assemble(out,source,m,ainfo,windows)
             manifest=load(out/'manifest.json')
             manifest.update(config_sha256=fingerprint,settings=settings,
@@ -207,6 +232,8 @@ def main():
     s.add_argument('--device',choices=['cpu','cuda:0'],default='cpu')
     s.add_argument('--threads',type=int,default=8)
     s.add_argument('--ocr-python',required=True)
+    s.add_argument('--visual-python')
+    s.add_argument('--mineru-python')
     s.add_argument('--ocr-engine',choices=['paddle','onnx'],default='paddle')
     s.add_argument('--ignore-regions',type=json.loads,default=[])
     s.add_argument('--prepare-only',action='store_true')
