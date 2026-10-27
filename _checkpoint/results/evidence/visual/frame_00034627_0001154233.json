@@ -1,0 +1,112 @@
+{
+  "path": "frames/frame_00034627_0001154233.webp",
+  "time": 1154.233313,
+  "image_sha256": "6540cf897c63fc0c4c8a96a9486311eb516336ffc46d5ff7db696154fba77fa9",
+  "cache_fingerprint": "4b2091e19d68fa99de5bb3c73bd968c2d0da01c6dd472c056495e1e27d8179ef",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "dtype": "bfloat16",
+  "quantized": false,
+  "backend": "vllm",
+  "raw": "```json\n{\n\"kind\": \"slide\",\n\"description\": \"英语单词教学课件，展示单词bear的变体及造句指南，包含插图、列表和例句。\",\n\"annotations\": [\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"网：v.+v.变化\",\n\"meaning\": \"强调单词变化规则\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"原文摘抄+变\",\n\"meaning\": \"强调学习方法\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"bear-bore-borne v.\",\n\"meaning\": \"强调单词及其变体\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"I could not bear it.\",\n\"meaning\": \"强调例句\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"I can't bear that.\",\n\"meaning\": \"强调例句\"\n}\n],\n\"ocr_missing_text\": [],\n\"ocr_disagreements\": [],\n\"table_present\": false,\n\"formula_present\": false,\n\"formulas\": [],\n\"tables\": [],\n\"uncertain\": []\n}\n```",
+  "parsed": {
+    "kind": "slide",
+    "description": "英语单词教学课件，展示单词bear的变体及造句指南，包含插图、列表和例句。",
+    "annotations": [
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "网：v.+v.变化",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "强调单词变化规则"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "原文摘抄+变",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          666,
+          402,
+          904,
+          447
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
+        "meaning_original_model": "强调学习方法"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "bear-bore-borne v.",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          72,
+          554,
+          696,
+          628
+        ],
+        "matching_color_pixels": 2178,
+        "meaning_original_model": "强调单词及其变体"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "I could not bear it.",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          266,
+          667,
+          753,
+          739
+        ],
+        "matching_color_pixels": 4065,
+        "meaning_original_model": "强调例句"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "I can't bear that.",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          116,
+          724,
+          544,
+          777
+        ],
+        "matching_color_pixels": 545,
+        "meaning_original_model": "强调例句"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": [
+      "下划线的对应文字位置未确认：网：v.+v.变化",
+      "未在对应文字下方检出足够蓝色下划线像素：原文摘抄+变"
+    ]
+  },
+  "generated_tokens": 288,
+  "finish_reason": "stop",
+  "elapsed_seconds": 5.522748006156235,
+  "batch_size": 32,
+  "verification": "model_observation_with_color_grounding_not_human_verified"
+}
