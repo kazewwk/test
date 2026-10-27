@@ -1,0 +1,168 @@
+{
+  "path": "frames/frame_00003894_0000129800.webp",
+  "time": 129.8,
+  "image_sha256": "5a239f2a110357889bc39ea1a1601f6e875a3847702b0f4e024715b6a8e269a3",
+  "cache_fingerprint": "4b2091e19d68fa99de5bb3c73bd968c2d0da01c6dd472c056495e1e27d8179ef",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "quantized": false,
+  "raw": "```json\n{\n\"kind\":\"slide\",\n\"description\":\"教学课件，左侧为单词造句指南列表及单词private的讲解，右侧为教师演示画面\",\n\"annotations\":[\n{\n\"type\":\"勾\",\n\"color\":\"蓝色\",\n\"target\":\"网：v.+v.变化\",\n\"meaning\":\"表示已完成或确认\"\n},\n{\n\"type\":\"勾\",\n\"color\":\"蓝色\",\n\"target\":\"四句型转换\",\n\"meaning\":\"表示已完成或确认\"\n},\n{\n\"type\":\"勾\",\n\"color\":\"蓝色\",\n\"target\":\"方式/地点/时间\",\n\"meaning\":\"表示已完成或确认\"\n},\n{\n\"type\":\"勾\",\n\"color\":\"蓝色\",\n\"target\":\"结合习惯用法\",\n\"meaning\":\"表示已完成或确认\"\n},\n{\n\"type\":\"勾\",\n\"color\":\"蓝色\",\n\"target\":\"其他单词+词性\",\n\"meaning\":\"表示已完成或确认\"\n},\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"praivit\",\n\"meaning\":\"强调单词拼写或发音\"\n},\n{\n\"type\":\"圈\",\n\"color\":\"蓝色\",\n\"target\":\"n.\",\n\"meaning\":\"强调名词词性\"\n}\n],\n\"ocr_missing_text\":[],\n\"ocr_disagreements\":[],\n\"table_present\":false,\n\"formula_present\":false,\n\"formulas\":[],\n\"tables\":[],\n\"uncertain\":[],\n\"table_data\":[\n{\n\"row\":1,\n\"col1\":\"单词造句指南\",\n\"col2\":\"网：v.+v.变化\"\n},\n{\n\"row\":2,\n\"col1\":\"\",\n\"col2\":\"四句型转换\"\n},\n{\n\"row\":3,\n\"col1\":\"\",\n\"col2\":\"方式/地点/时间\"\n},\n{\n\"row\":4,\n\"col1\":\"\",\n\"col2\":\"结合习惯用法\"\n},\n{\n\"row\":5,\n\"col1\":\"\",\n\"col2\":\"其他单词+词性\"\n},\n{\n\"row\":6,\n\"col1\":\"\",\n\"col2\":\"原文摘抄+变\"\n}\n]\n}\n```\n",
+  "parsed": {
+    "kind": "slide",
+    "description": "教学课件，左侧为单词造句指南列表及单词private的讲解，右侧为教师演示画面",
+    "annotations": [
+      {
+        "type": "勾",
+        "color": "蓝色",
+        "target": "网：v.+v.变化",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          435,
+          18,
+          677,
+          107
+        ],
+        "matching_color_pixels": 881,
+        "meaning_original_model": "表示已完成或确认"
+      },
+      {
+        "type": "勾",
+        "color": "蓝色",
+        "target": "四句型转换",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          390,
+          91,
+          632,
+          169
+        ],
+        "matching_color_pixels": 624,
+        "meaning_original_model": "表示已完成或确认"
+      },
+      {
+        "type": "勾",
+        "color": "蓝色",
+        "target": "方式/地点/时间",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          460,
+          156,
+          702,
+          237
+        ],
+        "matching_color_pixels": 906,
+        "meaning_original_model": "表示已完成或确认"
+      },
+      {
+        "type": "勾",
+        "color": "蓝色",
+        "target": "结合习惯用法",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          433,
+          221,
+          675,
+          306
+        ],
+        "matching_color_pixels": 944,
+        "meaning_original_model": "表示已完成或确认"
+      },
+      {
+        "type": "勾",
+        "color": "蓝色",
+        "target": "其他单词+词性",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          458,
+          290,
+          700,
+          371
+        ],
+        "matching_color_pixels": 739,
+        "meaning_original_model": "表示已完成或确认"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "praivit",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "强调单词拼写或发音"
+      },
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "+ n",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "target_original_model": "n.",
+        "grounding": "closed_blue_region_and_document_ocr",
+        "enclosure_bbox": [
+          438,
+          496,
+          154,
+          116
+        ],
+        "meaning_original_model": "强调名词词性"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": [],
+    "table_data": [
+      {
+        "row": 1,
+        "col1": "单词造句指南",
+        "col2": "网：v.+v.变化"
+      },
+      {
+        "row": 2,
+        "col1": "",
+        "col2": "四句型转换"
+      },
+      {
+        "row": 3,
+        "col1": "",
+        "col2": "方式/地点/时间"
+      },
+      {
+        "row": 4,
+        "col1": "",
+        "col2": "结合习惯用法"
+      },
+      {
+        "row": 5,
+        "col1": "",
+        "col2": "其他单词+词性"
+      },
+      {
+        "row": 6,
+        "col1": "",
+        "col2": "原文摘抄+变"
+      }
+    ]
+  },
+  "generated_tokens": 493,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "elapsed_seconds": 12.94965610349982,
+  "batch_size": 4
+}

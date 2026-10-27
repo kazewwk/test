@@ -1,0 +1,163 @@
+{
+  "path": "frames/frame_00003875_0000129167.webp",
+  "time": 129.166687,
+  "image_sha256": "e329ad2135590eb8beb0809849dafa66dded8efe10b317af5679b55964ac2b90",
+  "cache_fingerprint": "4b2091e19d68fa99de5bb3c73bd968c2d0da01c6dd472c056495e1e27d8179ef",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "quantized": false,
+  "raw": "```json\n{\n\"kind\":\"slide\",\n\"description\":\"教学课件，左侧为单词造句指南列表及单词private的拼写和词性标注，右侧为教师演示画面\",\n\"annotations\":[\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"/praivit/\",\n\"meaning\":\"强调单词拼写\"\n},\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"private\",\n\"meaning\":\"强调单词拼写\"\n},\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"adj.\",\n\"meaning\":\"强调词性\"\n},\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"n.\",\n\"meaning\":\"强调词性\"\n},\n{\n\"type\":\"勾号\",\n\"color\":\"蓝色\",\n\"target\":\"网：v.+v.变化\",\n\"meaning\":\"表示已完成或确认\"\n},\n{\n\"type\":\"勾号\",\n\"color\":\"蓝色\",\n\"target\":\"四句型转换\",\n\"meaning\":\"表示已完成或确认\"\n},\n{\n\"type\":\"勾号\",\n\"color\":\"蓝色\",\n\"target\":\"方式/地点/时间\",\n\"meaning\":\"表示已完成或确认\"\n},\n{\n\"type\":\"勾号\",\n\"color\":\"蓝色\",\n\"target\":\"结合习惯用法\",\n\"meaning\":\"表示已完成或确认\"\n},\n{\n\"type\":\"勾号\",\n\"color\":\"蓝色\",\n\"target\":\"其他单词+词性\",\n\"meaning\":\"表示已完成或确认\"\n},\n{\n\"type\":\"勾号\",\n\"color\":\"蓝色\",\n\"target\":\"原文摘抄+变\",\n\"meaning\":\"表示已完成或确认\"\n}\n],\n\"ocr_missing_text\":[],\n\"ocr_disagreements\":[],\n\"table_present\":false,\n\"formula_present\":false,\n\"formulas\":[],\n\"tables\":[],\n\"uncertain\":[]\n}\n```\n",
+  "parsed": {
+    "kind": "slide",
+    "description": "教学课件，左侧为单词造句指南列表及单词private的拼写和词性标注，右侧为教师演示画面",
+    "annotations": [
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "/praivit/",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "强调单词拼写"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "private",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "强调单词拼写"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "adj.",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "强调词性"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "n.",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "强调词性"
+      },
+      {
+        "type": "勾号",
+        "color": "蓝色",
+        "target": "网：v.+v.变化",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          435,
+          18,
+          677,
+          107
+        ],
+        "matching_color_pixels": 877,
+        "meaning_original_model": "表示已完成或确认"
+      },
+      {
+        "type": "勾号",
+        "color": "蓝色",
+        "target": "四句型转换",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          390,
+          91,
+          632,
+          169
+        ],
+        "matching_color_pixels": 629,
+        "meaning_original_model": "表示已完成或确认"
+      },
+      {
+        "type": "勾号",
+        "color": "蓝色",
+        "target": "方式/地点/时间",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          460,
+          155,
+          702,
+          236
+        ],
+        "matching_color_pixels": 900,
+        "meaning_original_model": "表示已完成或确认"
+      },
+      {
+        "type": "勾号",
+        "color": "蓝色",
+        "target": "结合习惯用法",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          431,
+          224,
+          673,
+          302
+        ],
+        "matching_color_pixels": 855,
+        "meaning_original_model": "表示已完成或确认"
+      },
+      {
+        "type": "勾号",
+        "color": "蓝色",
+        "target": "其他单词+词性",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          458,
+          285,
+          700,
+          374
+        ],
+        "matching_color_pixels": 739,
+        "meaning_original_model": "表示已完成或确认"
+      },
+      {
+        "type": "勾号",
+        "color": "蓝色",
+        "target": "原文摘抄+变",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "color_evidence_not_found",
+        "tested_region": [
+          417,
+          358,
+          659,
+          436
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
+        "meaning_original_model": "表示已完成或确认"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": [
+      "未在对应文字旁检出足够蓝色勾号像素，请核对原图：原文摘抄+变"
+    ]
+  },
+  "generated_tokens": 427,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "elapsed_seconds": 12.94965610349982,
+  "batch_size": 4
+}
