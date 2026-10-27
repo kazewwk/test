@@ -1,0 +1,14 @@
+# 布局遗漏区域的独立复查
+
+原图位置：[1731, 23, 1900, 112]；PP-OCRv5 候选：bilbili
+
+![复查区域](repairs/region_000/source.png)
+
+bilibili
+
+原图位置：[45, 1006, 115, 1039]；PP-OCRv5 候选：SYNCOPY
+
+![复查区域](repairs/region_013/source.png)
+
+STACOIPY
+

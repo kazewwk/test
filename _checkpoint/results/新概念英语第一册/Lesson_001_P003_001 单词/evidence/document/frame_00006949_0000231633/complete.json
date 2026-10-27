@@ -1,0 +1,200 @@
+{
+  "artifacts": {
+    "1793145335_9275.md": "394f52199f16f9f202e9229564029c7906fc244d2f41ce226e8c40c7c9f91b06",
+    "1793145335_9275_res.json": "6abb5d3304eb11be4504b2785d38749b83f21f2ffe8716070f039f53ebf9b176",
+    "imgs/img_in_header_image_box_1651_32_1889_101.jpg": "726ae1d3c4f41b7c57e7fb011c9233e91f61a8004a2afdbe679e7ad522175f89",
+    "imgs/img_in_image_box_1177_297_1771_1078.jpg": "072bbac05c4dec18c244d9f59d69c271dd0dbde81f42fb8e806e0ea40dddc6e4",
+    "imgs/img_in_image_box_2_0_594_1072.jpg": "aa1d560b387b90e0bf14128e7b399232fa5575393fa0b1a4a3d0a4fd86f3fda4",
+    "region_repairs.md": "7c13aa1a08c40e0069e8f74b54272fc942d55aa12350f7fd606cd518676d9720",
+    "repairs/region_007/1793145335_1815.md": "ca4ceb3436b3a70813a2604a815471a991362905fd938dbb8ab9ccc3f8666e83",
+    "repairs/region_007/1793145335_1815_res.json": "046293e9f1d62a254fff8de8221e766ef9b1de644a1e2c13914bb92d53c7b170",
+    "repairs/region_007/source.png": "be6e3f88d4467782c0e9f66b4368f99f9f7433f88929107f08ebfc6ee4dabce2"
+  },
+  "input_fingerprint": "df5cd63ddf511e8204e374029b192206eed542976d6af2f938197437549785c7",
+  "image_sha256": "2734bfe259ce55150746a5035e3a3ef5574a993e4b6dc531949715977332361a",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 6.2552896099987265,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1651,
+        32,
+        1889,
+        101
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1651.0,
+          32.0
+        ],
+        [
+          1889.0,
+          32.0
+        ],
+        [
+          1889.0,
+          101.0
+        ],
+        [
+          1651.0,
+          101.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "WELCOME TO A WORLD WITHOUT RULES.\nMICHAEL HEATH GARY AARON MAGGIE\nCAINE LEDGER OLDMAN ECKHART GYLLENHAAL\nTHE DARK KNID\nSYNCOPY JULY\n蝙蝠侠：1:40:56",
+      "block_bbox": [
+        2,
+        0,
+        594,
+        1072
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          2.0,
+          -8.0
+        ],
+        [
+          594.0,
+          -8.0
+        ],
+        [
+          594.0,
+          1072.0
+        ],
+        [
+          2.0,
+          1072.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "excuse me\n借过；让一下",
+      "block_bbox": [
+        630,
+        477,
+        947,
+        599
+      ],
+      "block_id": 2,
+      "block_order": 1,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          630.0,
+          477.0
+        ],
+        [
+          947.0,
+          477.0
+        ],
+        [
+          947.0,
+          599.0
+        ],
+        [
+          630.0,
+          599.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "蝙蝠侠：黑暗骑士 The Dark Knight (2008) 1:40:56",
+      "block_bbox": [
+        460,
+        911,
+        1034,
+        986
+      ],
+      "block_id": 3,
+      "block_order": 2,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          460.0,
+          911.0
+        ],
+        [
+          1034.0,
+          911.0
+        ],
+        [
+          1034.0,
+          986.0
+        ],
+        [
+          460.0,
+          986.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1177,
+        297,
+        1771,
+        1078
+      ],
+      "block_id": 4,
+      "block_order": null,
+      "group_id": 4,
+      "block_polygon_points": [
+        [
+          1177.0,
+          297.0
+        ],
+        [
+          1771.0,
+          297.0
+        ],
+        [
+          1771.0,
+          1078.0
+        ],
+        [
+          1177.0,
+          1078.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "MIOHAEL CAINE",
+      "block_bbox": [
+        2,
+        760,
+        61,
+        786
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        2,
+        760,
+        61,
+        786
+      ],
+      "ppocr_candidate": "MOHAE",
+      "recovered_text": "MIOHAEL CAINE",
+      "source_crop": "repairs/region_007/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

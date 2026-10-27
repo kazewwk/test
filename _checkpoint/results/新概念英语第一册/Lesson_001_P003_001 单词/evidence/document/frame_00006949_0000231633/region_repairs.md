@@ -1,0 +1,8 @@
+# 布局遗漏区域的独立复查
+
+原图位置：[2, 760, 61, 786]；PP-OCRv5 候选：MOHAE
+
+![复查区域](repairs/region_007/source.png)
+
+MIOHAEL CAINE
+
