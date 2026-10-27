@@ -1,0 +1,124 @@
+{
+  "path": "frames/frame_00007758_0000258600.webp",
+  "time": 258.6,
+  "image_sha256": "a1d7a0e091dda6c3b76706359e4e78e4dfa2a0a3ace689a09c77abb9414bec4c",
+  "cache_fingerprint": "4b2091e19d68fa99de5bb3c73bd968c2d0da01c6dd472c056495e1e27d8179ef",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "quantized": false,
+  "raw": "```json\n{\n\"kind\": \"slide\",\n\"description\": \"英语单词 'private' 的教学课件，包含左上角的指南列表、单词词性及例句，以及右侧教师演示画面。\",\n\"annotations\": [\n{\n\"type\": \"勾\",\n\"color\": \"蓝色\",\n\"target\": \"指南列表中的每一项（网、单词、造句、指南）\",\n\"meaning\": \"表示已完成或已讲解\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"音标 /'praivit/ 中的 'praiv'\",\n\"meaning\": \"强调发音部分\"\n},\n{\n\"type\": \"圈\",\n\"color\": \"蓝色\",\n\"target\": \"词性标注 '+ n.'\",\n\"meaning\": \"强调该词可作定语修饰名词\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"例句 'He goes to a private school.' 中的 'goes'\",\n\"meaning\": \"强调动词\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"例句 'Does he go to a private school?' 中的 'Does'\",\n\"meaning\": \"强调助动词\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"例句 'Why does he go to a private school?' 中的 'Why'\",\n\"meaning\": \"强调疑问词\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"教材出处 'NCE1L55'\",\n\"meaning\": \"强调来源\"\n}\n],\n\"ocr_missing_text\": [],\n\"ocr_disagreements\": [\n{\n\"ocr_text\": \"bibi\",\n\"correct_text\": \"bilibili\",\n\"location\": \"右上角水印\"\n},\n{\n\"ocr_text\": \"6 Does he go to a private school?\",\n\"correct_text\": \"Does he go to a private school?\",\n\"location\": \"第二句例句\"\n},\n{\n\"ocr_text\": \"o He goes to a private school.\",\n\"correct_text\": \"o He goes to a private school.\",\n\"location\": \"第一句例句\"\n},\n{\n\"ocr_text\": \"o Why does he go to a private school?\",\n\"correct_text\": \"o Why does he go to a private school?\",\n\"location\": \"第三句例句\"\n},\n{\n\"ocr_text\": \"gotoa private school\",\n\"correct_text\": \"go to a private school\",\n\"location\": \"第二点标题\"\n}\n],\n\"table_present\": false,\n\"formula_present\": false,\n\"formulas\": [],\n\"tables\": [],\n\"uncertain\": []\n}\n```\n",
+  "parsed": {
+    "kind": "slide",
+    "description": "英语单词 'private' 的教学课件，包含左上角的指南列表、单词词性及例句，以及右侧教师演示画面。",
+    "annotations": [
+      {
+        "type": "勾",
+        "color": "蓝色",
+        "target": "指南列表中的每一项（网、单词、造句、指南）",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "target_ocr_location_unresolved",
+        "meaning_original_model": "表示已完成或已讲解"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "音标 /'praivit/ 中的 'praiv'",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "强调发音部分"
+      },
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "词性标注 '+ n.'",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "circle_target_requires_review",
+        "requires_review": true,
+        "meaning_original_model": "强调该词可作定语修饰名词"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "例句 'He goes to a private school.' 中的 'goes'",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "强调动词"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "例句 'Does he go to a private school?' 中的 'Does'",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "强调助动词"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "例句 'Why does he go to a private school?' 中的 'Why'",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "强调疑问词"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "教材出处 'NCE1L55'",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "强调来源"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [
+      {
+        "ocr_text": "bibi",
+        "correct_text": "bilibili",
+        "location": "右上角水印"
+      },
+      {
+        "ocr_text": "6 Does he go to a private school?",
+        "correct_text": "Does he go to a private school?",
+        "location": "第二句例句"
+      },
+      {
+        "ocr_text": "o He goes to a private school.",
+        "correct_text": "o He goes to a private school.",
+        "location": "第一句例句"
+      },
+      {
+        "ocr_text": "o Why does he go to a private school?",
+        "correct_text": "o Why does he go to a private school?",
+        "location": "第三句例句"
+      },
+      {
+        "ocr_text": "gotoa private school",
+        "correct_text": "go to a private school",
+        "location": "第二点标题"
+      }
+    ],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": [
+      "标注对象定位未确认：指南列表中的每一项（网、单词、造句、指南）",
+      "圈选的精确对象尚需核对：词性标注 '+ n.'"
+    ]
+  },
+  "generated_tokens": 614,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "elapsed_seconds": 19.131833634999566,
+  "batch_size": 4
+}
