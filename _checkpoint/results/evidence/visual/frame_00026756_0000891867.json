@@ -1,0 +1,76 @@
+{
+  "path": "frames/frame_00026756_0000891867.webp",
+  "time": 891.866688,
+  "image_sha256": "e91533ff707879d954bea5b9ede026647e3001b477a846fef7c2d2489361f9c7",
+  "cache_fingerprint": "4f41ed236eaff883a8411ad18df2d7dd1df7dbe61c10222dbe092720a4eff334",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "quantized": false,
+  "raw": "```json\n{\n\"kind\":\"slide\",\n\"description\":\"英语单词教学课件，展示单词'angry'的用法及句型转换，包含一张愤怒男子的黑白照片、单词列表、例句以及手写标注。\",\n\"annotations\":[\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"angry\",\n\"meaning\":\"强调单词angry\"\n},\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"angrily\",\n\"meaning\":\"强调单词angrily\"\n},\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"He was very angry yesterday.\",\n\"meaning\":\"强调整个句子\"\n},\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"When was he very angry?\",\n\"meaning\":\"强调疑问句\"\n},\n{\n\"type\":\"圈\",\n\"color\":\"蓝色\",\n\"target\":\"?\",\n\"meaning\":\"圈出问号\"\n}\n],\n\"ocr_missing_text\":[],\n\"ocr_disagreements\":[],\n\"table_present\":false,\n\"formula_present\":false,\n\"formulas\":[],\n\"tables\":[],\n\"uncertain\":[]\n}\n```\n",
+  "parsed": {
+    "kind": "slide",
+    "description": "英语单词教学课件，展示单词'angry'的用法及句型转换，包含一张愤怒男子的黑白照片、单词列表、例句以及手写标注。",
+    "annotations": [
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "angry",
+        "meaning": "强调单词angry",
+        "grounding": "not_automatically_verified"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "angrily",
+        "meaning": "强调单词angrily",
+        "grounding": "not_automatically_verified"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "He was very angry yesterday.",
+        "meaning": "强调整个句子",
+        "grounding": "not_automatically_verified"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "When was he very angry?",
+        "meaning": "强调疑问句",
+        "grounding": "not_automatically_verified"
+      },
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "?",
+        "meaning": "圈出问号",
+        "grounding": "circle_target_requires_review",
+        "requires_review": true
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": [
+      "圈选的精确对象尚需核对：?"
+    ]
+  },
+  "generated_tokens": 266,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "elapsed_seconds": 10.152241699249998,
+  "batch_size": 4
+}
