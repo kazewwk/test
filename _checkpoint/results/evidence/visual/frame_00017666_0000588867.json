@@ -1,0 +1,55 @@
+{
+  "path": "frames/frame_00017666_0000588867.webp",
+  "time": 588.866688,
+  "image_sha256": "4b9170da67217057d0732dd91a81dfc50b2950ca9ceda5ba37fbaac34a9cfef0",
+  "cache_fingerprint": "4f41ed236eaff883a8411ad18df2d7dd1df7dbe61c10222dbe092720a4eff334",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "quantized": false,
+  "raw": "```json\n{\n\"kind\":\"slide\",\n\"description\":\"教学课件，包含单词seat的讲解，左侧有图片、音标、词性及例句，右侧有教师演示。\",\n\"annotations\":[\n{\n\"type\":\"圈\",\n\"color\":\"蓝色\",\n\"target\":\"图片中的米色椅子\",\n\"meaning\":\"圈出椅子作为seat的视觉示例\"\n},\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"Why did you have a good seat?\",\n\"meaning\":\"强调该疑问句\"\n}\n],\n\"ocr_missing_text\":[],\n\"ocr_disagreements\":[],\n\"table_present\":false,\n\"formula_present\":false,\n\"formulas\":[],\n\"tables\":[],\n\"uncertain\":[]\n}\n```\n",
+  "parsed": {
+    "kind": "slide",
+    "description": "教学课件，包含单词seat的讲解，左侧有图片、音标、词性及例句，右侧有教师演示。",
+    "annotations": [
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "图片中的米色椅子",
+        "meaning": "圈出椅子作为seat的视觉示例",
+        "grounding": "circle_target_requires_review",
+        "requires_review": true
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "Why did you have a good seat?",
+        "meaning": "强调该疑问句",
+        "grounding": "not_automatically_verified"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": [
+      "圈选的精确对象尚需核对：图片中的米色椅子"
+    ]
+  },
+  "generated_tokens": 171,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "elapsed_seconds": 10.039938656999993,
+  "batch_size": 4
+}
