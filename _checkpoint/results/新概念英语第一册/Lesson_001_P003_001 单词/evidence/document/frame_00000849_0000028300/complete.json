@@ -1,0 +1,136 @@
+{
+  "artifacts": {
+    "1793144572_2011.md": "b21d3759e3c6ccbb0e2d0125edc5af48ad103d631e6128c01d1a979cf9f2d011",
+    "1793144572_2011_res.json": "d97998d35541e5d23b99f3c6b61b14c43deb655eecd24286d4b9bf153b8eb785",
+    "imgs/img_in_image_box_820_444_1101_565.jpg": "2cdbb83899ed2f658600062cccbd3d82f3268163b15a5cbf4406ca8bec0a9cc1",
+    "region_repairs.md": "770c5b3d7bb13eddb8d0363e227abf656a106e36db1a12d8f71810b90eb057de",
+    "repairs/region_000/1793144572_7484.md": "8a6949a38384ceae41a21fb3cdfef2024d335d847a892ce0d476e9759173cb28",
+    "repairs/region_000/1793144572_7484_res.json": "66db9398eb44abd6c2c7585c82289488229322461d09d55575373e0488f85e09",
+    "repairs/region_000/source.png": "63a8022c6cdb1a5da6f6a0b4edc173496e0ae09a2b8d0ce9a07df97a0fdbd20a"
+  },
+  "input_fingerprint": "376077d8a28f3321a7cf3b15252838605102acbb96db8f80ec26a06e8919f895",
+  "image_sha256": "f417412be22b7fac713be29c2b47e09b4a05355baa1a3e27cac3c93982a36cb5",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 1.3375413230023696,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "字 bì bì",
+      "block_bbox": [
+        1651,
+        29,
+        1900,
+        103
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1651.0,
+          29.0
+        ],
+        [
+          1900.0,
+          29.0
+        ],
+        [
+          1900.0,
+          103.0
+        ],
+        [
+          1651.0,
+          103.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "☐",
+      "block_bbox": [
+        820,
+        444,
+        1101,
+        565
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          820.0,
+          444.0
+        ],
+        [
+          1101.0,
+          444.0
+        ],
+        [
+          1101.0,
+          565.0
+        ],
+        [
+          820.0,
+          565.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "胶囊学院",
+      "block_bbox": [
+        835,
+        651,
+        1089,
+        703
+      ],
+      "block_id": 2,
+      "block_order": 1,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          835.0,
+          651.0
+        ],
+        [
+          1089.0,
+          651.0
+        ],
+        [
+          1089.0,
+          703.0
+        ],
+        [
+          835.0,
+          703.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "学",
+      "block_bbox": [
+        1639,
+        18,
+        1903,
+        115
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1639,
+        18,
+        1903,
+        115
+      ],
+      "ppocr_candidate": "胶学ト",
+      "recovered_text": "学",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}
