@@ -1,0 +1,167 @@
+{
+  "path": "frames/frame_00011155_0000371833.webp",
+  "time": 371.833313,
+  "image_sha256": "dd559fa77581dc37a2a1de350ffb880cce83cf76ed0f5ab5361a511ba83869e7",
+  "cache_fingerprint": "4b2091e19d68fa99de5bb3c73bd968c2d0da01c6dd472c056495e1e27d8179ef",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "quantized": false,
+  "raw": "```json\n{\n\"kind\": \"slide\",\n\"description\": \"英语单词教学课件，包含单词发音、释义、搭配短语及例句，右侧有教师演示画面。\",\n\"annotations\": [\n  {\n    \"type\": \"下划线\",\n    \"color\": \"蓝色\",\n    \"target\": \"网：v.+v.变化\",\n    \"meaning\": \"强调该短语搭配\"\n  },\n  {\n    \"type\": \"勾号\",\n    \"color\": \"蓝色\",\n    \"target\": \"四句型转换\",\n    \"meaning\": \"表示该步骤已完成或重点\"\n  },\n  {\n    \"type\": \"勾号\",\n    \"color\": \"蓝色\",\n    \"target\": \"方式/地点/时间\",\n    \"meaning\": \"表示该步骤已完成或重点\"\n  },\n  {\n    \"type\": \"下划线\",\n    \"color\": \"蓝色\",\n    \"target\": \"其他单词+词性\",\n    \"meaning\": \"强调该步骤\"\n  },\n  {\n    \"type\": \"下划线\",\n    \"color\": \"蓝色\",\n    \"target\": \"/kən'veɪsən/\",\n    \"meaning\": \"强调音标\"\n  },\n  {\n    \"type\": \"下划线\",\n    \"color\": \"蓝色\",\n    \"target\": \"conversation n.\",\n    \"meaning\": \"强调单词拼写和词性\"\n  },\n  {\n    \"type\": \"下划线\",\n    \"color\": \"蓝色\",\n    \"target\": \"NCE1L31 & L71\",\n    \"meaning\": \"强调教材出处\"\n  },\n  {\n    \"type\": \"下划线\",\n    \"color\": \"蓝色\",\n    \"target\": \"We are having a conversation\",\n    \"meaning\": \"强调例句中的短语搭配\"\n  },\n  {\n    \"type\": \"下划线\",\n    \"color\": \"蓝色\",\n    \"target\": \"yesterday\",\n    \"meaning\": \"强调时间状语\"\n  }\n],\n\"ocr_missing_text\": [],\n\"ocr_disagreements\": [],\n\"table_present\": false,\n\"formula_present\": false,\n\"formulas\": [],\n\"tables\": [],\n\"uncertain\": []\n}\n```\n",
+  "parsed": {
+    "kind": "slide",
+    "description": "英语单词教学课件，包含单词发音、释义、搭配短语及例句，右侧有教师演示画面。",
+    "annotations": [
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "网：v.+v.变化",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "强调该短语搭配"
+      },
+      {
+        "type": "勾号",
+        "color": "蓝色",
+        "target": "四句型转换",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          860,
+          91,
+          1102,
+          169
+        ],
+        "matching_color_pixels": 213,
+        "meaning_original_model": "表示该步骤已完成或重点"
+      },
+      {
+        "type": "勾号",
+        "color": "蓝色",
+        "target": "方式/地点/时间",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "color_evidence_not_found",
+        "tested_region": [
+          926,
+          156,
+          1168,
+          237
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
+        "meaning_original_model": "表示该步骤已完成或重点"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "其他单词+词性",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          663,
+          334,
+          944,
+          380
+        ],
+        "matching_color_pixels": 2126,
+        "meaning_original_model": "强调该步骤"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "/kən'veɪsən/",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "强调音标"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "conversation n.",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          73,
+          557,
+          586,
+          636
+        ],
+        "matching_color_pixels": 603,
+        "meaning_original_model": "强调单词拼写和词性"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "NCE1L31 & L71",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          680,
+          661,
+          1008,
+          712
+        ],
+        "matching_color_pixels": 1645,
+        "meaning_original_model": "强调教材出处"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "We are having a conversation",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          142,
+          726,
+          855,
+          783
+        ],
+        "matching_color_pixels": 1912,
+        "meaning_original_model": "强调例句中的短语搭配"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "yesterday",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          820,
+          788,
+          1084,
+          843
+        ],
+        "matching_color_pixels": 1867,
+        "meaning_original_model": "强调时间状语"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": [
+      "下划线的对应文字位置未确认：网：v.+v.变化",
+      "未在对应文字旁检出足够蓝色勾号像素，请核对原图：方式/地点/时间",
+      "下划线的对应文字位置未确认：/kən'veɪsən/"
+    ]
+  },
+  "generated_tokens": 516,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "elapsed_seconds": 13.79193429850011,
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
+}

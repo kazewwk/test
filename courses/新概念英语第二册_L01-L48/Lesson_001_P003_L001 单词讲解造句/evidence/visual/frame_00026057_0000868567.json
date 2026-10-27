@@ -1,0 +1,84 @@
+{
+  "path": "frames/frame_00026057_0000868567.webp",
+  "time": 868.566688,
+  "image_sha256": "4bbebf1c6a1995a78751a4475d5168f7acbb016c83e2c67793961cb5c4ba0a76",
+  "cache_fingerprint": "4f41ed236eaff883a8411ad18df2d7dd1df7dbe61c10222dbe092720a4eff334",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "quantized": false,
+  "raw": "```json\n{\n\"kind\":\"slide\",\n\"description\":\"英语单词教学课件，展示单词'angry'及其形容词和副词形式，包含例句和手写标注。\",\n\"annotations\":[\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"angry\",\n\"meaning\":\"标注单词angry\"\n},\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"angrily\",\n\"meaning\":\"标注单词angrily\"\n},\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"angry\",\n\"meaning\":\"标注例句中的单词angry\"\n}\n],\n\"ocr_missing_text\":[],\n\"ocr_disagreements\":[],\n\"table_present\":false,\n\"formula_present\":false,\n\"formulas\":[],\n\"tables\":[],\n\"uncertain\":[]\n}\n```\n",
+  "parsed": {
+    "kind": "slide",
+    "description": "英语单词教学课件，展示单词'angry'及其形容词和副词形式，包含例句和手写标注。",
+    "annotations": [
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "angry",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          70,
+          563,
+          284,
+          657
+        ],
+        "matching_color_pixels": 185,
+        "meaning_original_model": "标注单词angry"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "angrily",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          396,
+          563,
+          692,
+          657
+        ],
+        "matching_color_pixels": 2302,
+        "meaning_original_model": "标注单词angrily"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "angry",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          70,
+          563,
+          284,
+          657
+        ],
+        "matching_color_pixels": 185,
+        "meaning_original_model": "标注例句中的单词angry"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": []
+  },
+  "generated_tokens": 196,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "elapsed_seconds": 10.152241699249998,
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
+}

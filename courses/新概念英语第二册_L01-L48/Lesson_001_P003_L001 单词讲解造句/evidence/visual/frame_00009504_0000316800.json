@@ -1,0 +1,116 @@
+{
+  "path": "frames/frame_00009504_0000316800.webp",
+  "time": 316.8,
+  "image_sha256": "ad48b992c11e53ea37c16a12df8fca221d074c5069abc6719f704d7a5f3e93e4",
+  "cache_fingerprint": "4f41ed236eaff883a8411ad18df2d7dd1df7dbe61c10222dbe092720a4eff334",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "quantized": false,
+  "raw": "```json\n{\n\"kind\":\"slide\",\n\"description\":\"教学课件，展示单词conversation的讲解，包含左侧教学插图、中间单词造句指南列表、下方音标及例句，右侧教师演示。\",\n\"annotations\":[\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"/kpnvaseifan/\",\n\"meaning\":\"标注音标\"\n},\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"conversation n.\",\n\"meaning\":\"标注单词及词性\"\n},\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"NCE1L31\",\n\"meaning\":\"标注教材页码\"\n},\n{\n\"type\":\"下划线\",\n\"color\":\"蓝色\",\n\"target\":\"其他单词+词性\",\n\"meaning\":\"强调列表项\"\n}\n],\n\"ocr_missing_text\":[],\n\"ocr_disagreements\":[],\n\"table_present\":false,\n\"formula_present\":false,\n\"formulas\":[],\n\"tables\":[],\n\"uncertain\":[],\n\"ocr_candidates\":[\"v.+v.变化\", \"biibil\", \"单词造句指南\", \"网：\", \"胶学\", \"四句型转换\", \"方式/地点/时间\", \"结合习惯用法\", \"其他单词+词性\", \"原文摘抄+变\", \"/kpnvaseifan/\", \"conversation n.\", \"①\", \"have a conversation\", \"NCE1L31&L71\"]\n}\n```\n",
+  "parsed": {
+    "kind": "slide",
+    "description": "教学课件，展示单词conversation的讲解，包含左侧教学插图、中间单词造句指南列表、下方音标及例句，右侧教师演示。",
+    "annotations": [
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "/kpnvaseifan/",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          83,
+          484,
+          499,
+          530
+        ],
+        "matching_color_pixels": 2605,
+        "meaning_original_model": "标注音标"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "conversation n.",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          75,
+          557,
+          581,
+          627
+        ],
+        "matching_color_pixels": 563,
+        "meaning_original_model": "标注单词及词性"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "NCE1L31",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          638,
+          662,
+          896,
+          706
+        ],
+        "matching_color_pixels": 958,
+        "meaning_original_model": "标注教材页码"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "其他单词+词性",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          664,
+          334,
+          944,
+          380
+        ],
+        "matching_color_pixels": 2105,
+        "meaning_original_model": "强调列表项"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": [],
+    "ocr_candidates": [
+      "v.+v.变化",
+      "biibil",
+      "单词造句指南",
+      "网：",
+      "胶学",
+      "四句型转换",
+      "方式/地点/时间",
+      "结合习惯用法",
+      "其他单词+词性",
+      "原文摘抄+变",
+      "/kpnvaseifan/",
+      "conversation n.",
+      "①",
+      "have a conversation",
+      "NCE1L31&L71"
+    ]
+  },
+  "generated_tokens": 329,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "elapsed_seconds": 9.878653751750107,
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
+}

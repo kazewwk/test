@@ -1,0 +1,19 @@
+## Is this seat taken?
+
+![](images/page_0_image_2.jpg)
+
+<details>
+<summary>natural_image</summary>
+
+Interior scene of a vintage-style room with a man in a suit and two masked individuals wearing hats, no visible text or symbols.
+</details>
+
+![](images/page_0_image_3.jpg)
+
+<details>
+<summary>text_image</summary>
+
+赌侠马华力
+Maverick
+(1994)
+</details>

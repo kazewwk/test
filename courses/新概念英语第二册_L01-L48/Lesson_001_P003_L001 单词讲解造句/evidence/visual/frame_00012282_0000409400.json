@@ -1,0 +1,187 @@
+{
+  "path": "frames/frame_00012282_0000409400.webp",
+  "time": 409.4,
+  "image_sha256": "f561163933d9a56709382b884dccc285e8d2c690372cee9f14704ae19151f6ac",
+  "cache_fingerprint": "4b2091e19d68fa99de5bb3c73bd968c2d0da01c6dd472c056495e1e27d8179ef",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "quantized": false,
+  "raw": "```json\n{\n\"kind\": \"slide\",\n\"description\": \"英语单词 'conversation' 的教学课件，包含词性、音标、搭配短语及例句，右侧有教师演示画面。\",\n\"annotations\": [\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"单词 'conversation' 的音标 /kpnv∂'seifən/ 下方\",\n\"meaning\": \"强调发音\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"单词 'conversation' 下方\",\n\"meaning\": \"强调单词拼写\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"短语 'have a conversation' 下方\",\n\"meaning\": \"强调核心搭配\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"短语 'NCE1L31 & L71' 下方\",\n\"meaning\": \"标注教材出处\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"句子 'We are having a conversation' 中 'having a conversation' 下方\",\n\"meaning\": \"强调进行时态用法\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"句子 'I had a conversation with him yesterday' 中 'yesterday' 下方\",\n\"meaning\": \"强调时间状语\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"句子 'When did you have a conversation with him?' 中 'When' 下方\",\n\"meaning\": \"强调疑问词\"\n},\n{\n\"type\": \"勾号\",\n\"color\": \"蓝色\",\n\"target\": \"表格中 '四句型转换' 左侧\",\n\"meaning\": \"表示已掌握或重点\"\n},\n{\n\"type\": \"勾号\",\n\"color\": \"蓝色\",\n\"target\": \"表格中 '方式/地点/时间' 左侧\",\n\"meaning\": \"表示已掌握或重点\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"表格中 '其他单词+词性' 整行\",\n\"meaning\": \"强调该知识点\"\n}\n],\n\"ocr_missing_text\": [],\n\"ocr_disagreements\": [],\n\"table_present\": true,\n\"formula_present\": false,\n\"formulas\": [],\n\"tables\": [\n{\n\"content\": \"单词造句指南\",\n\"rows\": [\n\"网：v.+v.变化\",\n\"四句型转换\",\n\"方式/地点/时间\",\n\"结合习惯用法\",\n\"其他单词+词性\",\n\"原文摘抄+变\"\n]\n}\n],\n\"uncertain\": []\n}\n```\n",
+  "parsed": {
+    "kind": "slide",
+    "description": "英语单词 'conversation' 的教学课件，包含词性、音标、搭配短语及例句，右侧有教师演示画面。",
+    "annotations": [
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "单词 'conversation' 的音标 /kpnv∂'seifən/ 下方",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "强调发音"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "单词 'conversation' 下方",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          74,
+          556,
+          584,
+          628
+        ],
+        "matching_color_pixels": 581,
+        "meaning_original_model": "强调单词拼写"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "短语 'have a conversation' 下方",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          143,
+          662,
+          1009,
+          712
+        ],
+        "matching_color_pixels": 1932,
+        "meaning_original_model": "强调核心搭配"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "短语 'NCE1L31 & L71' 下方",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "标注教材出处"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "句子 'We are having a conversation' 中 'having a conversation' 下方",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "强调进行时态用法"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "句子 'I had a conversation with him yesterday' 中 'yesterday' 下方",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          108,
+          787,
+          1088,
+          848
+        ],
+        "matching_color_pixels": 2045,
+        "meaning_original_model": "强调时间状语"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "句子 'When did you have a conversation with him?' 中 'When' 下方",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          116,
+          847,
+          1197,
+          898
+        ],
+        "matching_color_pixels": 124,
+        "meaning_original_model": "强调疑问词"
+      },
+      {
+        "type": "勾号",
+        "color": "蓝色",
+        "target": "表格中 '四句型转换' 左侧",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          860,
+          91,
+          1102,
+          169
+        ],
+        "matching_color_pixels": 214,
+        "meaning_original_model": "表示已掌握或重点"
+      },
+      {
+        "type": "勾号",
+        "color": "蓝色",
+        "target": "表格中 '方式/地点/时间' 左侧",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "color_evidence_present",
+        "tested_region": [
+          926,
+          159,
+          1168,
+          235
+        ],
+        "matching_color_pixels": 105,
+        "meaning_original_model": "表示已掌握或重点"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "表格中 '其他单词+词性' 整行",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          665,
+          333,
+          943,
+          376
+        ],
+        "matching_color_pixels": 2103,
+        "meaning_original_model": "强调该知识点"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": true,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [
+      {
+        "content": "单词造句指南",
+        "rows": [
+          "网：v.+v.变化",
+          "四句型转换",
+          "方式/地点/时间",
+          "结合习惯用法",
+          "其他单词+词性",
+          "原文摘抄+变"
+        ]
+      }
+    ],
+    "uncertain": [
+      "下划线的对应文字位置未确认：单词 'conversation' 的音标 /kpnv∂'seifən/ 下方",
+      "下划线的对应文字位置未确认：短语 'NCE1L31 & L71' 下方",
+      "下划线的对应文字位置未确认：句子 'We are having a conversation' 中 'having a conversation' 下方"
+    ]
+  },
+  "generated_tokens": 638,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "elapsed_seconds": 17.75448513975016,
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
+}

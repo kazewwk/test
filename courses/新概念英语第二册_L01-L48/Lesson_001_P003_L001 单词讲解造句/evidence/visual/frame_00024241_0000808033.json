@@ -1,0 +1,158 @@
+{
+  "path": "frames/frame_00024241_0000808033.webp",
+  "time": 808.033312,
+  "image_sha256": "56a4d5884353e26878141462345049affa29d7f696fd216b5b43647353259da4",
+  "cache_fingerprint": "4b2091e19d68fa99de5bb3c73bd968c2d0da01c6dd472c056495e1e27d8179ef",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "dtype": "bfloat16",
+  "quantized": false,
+  "backend": "vllm",
+  "raw": "```json\n{\n\"kind\": \"slide\",\n\"description\": \"英语单词教学课件，包含左侧单词讲解区域、中间橙色教学指南列表、左上角电影场景插图以及右侧教师演示区域。\",\n\"annotations\": [\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"loudly\",\n\"meaning\": \"标注单词词性\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"talk\",\n\"meaning\": \"标注核心动词\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"talking too loudly\",\n\"meaning\": \"标注例句中的核心短语\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"talking so loudly\",\n\"meaning\": \"标注例句中的核心短语\"\n},\n{\n\"type\": \"圈\",\n\"color\": \"蓝色\",\n\"target\": \"左上角图片中的女性角色\",\n\"meaning\": \"圈出图片中正在看手机的人物\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"左上角图片中的男性角色\",\n\"meaning\": \"标注图片中正在交谈的男性\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"左上角图片中的女性角色\",\n\"meaning\": \"标注图片中正在交谈的女性\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"左上角图片中的女性角色\",\n\"meaning\": \"标注图片中背对镜头的女性\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"v.+v.变化\",\n\"meaning\": \"强调该教学点\"\n}\n],\n\"ocr_missing_text\": [],\n\"ocr_disagreements\": [],\n\"table_present\": false,\n\"formula_present\": false,\n\"formulas\": [],\n\"tables\": [],\n\"uncertain\": []\n}\n```",
+  "parsed": {
+    "kind": "slide",
+    "description": "英语单词教学课件，包含左侧单词讲解区域、中间橙色教学指南列表、左上角电影场景插图以及右侧教师演示区域。",
+    "annotations": [
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "loudly",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          72,
+          560,
+          322,
+          645
+        ],
+        "matching_color_pixels": 353,
+        "meaning_original_model": "标注单词词性"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "talk",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          100,
+          664,
+          226,
+          734
+        ],
+        "matching_color_pixels": 724,
+        "meaning_original_model": "标注核心动词"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "talking too loudly",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          311,
+          726,
+          772,
+          784
+        ],
+        "matching_color_pixels": 2424,
+        "meaning_original_model": "标注例句中的核心短语"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "talking so loudly",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          414,
+          788,
+          874,
+          849
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
+        "meaning_original_model": "标注例句中的核心短语"
+      },
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "左上角图片中的女性角色",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "circle_target_requires_review",
+        "requires_review": true,
+        "meaning_original_model": "圈出图片中正在看手机的人物"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "左上角图片中的男性角色",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "标注图片中正在交谈的男性"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "左上角图片中的女性角色",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "标注图片中正在交谈的女性"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "左上角图片中的女性角色",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "标注图片中背对镜头的女性"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "v.+v.变化",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          738,
+          67,
+          922,
+          115
+        ],
+        "matching_color_pixels": 1291,
+        "meaning_original_model": "强调该教学点"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": [
+      "未在对应文字下方检出足够蓝色下划线像素：talking so loudly",
+      "圈选的精确对象尚需核对：左上角图片中的女性角色",
+      "下划线的对应文字位置未确认：左上角图片中的男性角色",
+      "下划线的对应文字位置未确认：左上角图片中的女性角色",
+      "下划线的对应文字位置未确认：左上角图片中的女性角色"
+    ]
+  },
+  "generated_tokens": 460,
+  "finish_reason": "stop",
+  "elapsed_seconds": 11.78833909753132,
+  "batch_size": 32,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "postprocessing_version": "objective-and-pixel-grounding-2"
+}

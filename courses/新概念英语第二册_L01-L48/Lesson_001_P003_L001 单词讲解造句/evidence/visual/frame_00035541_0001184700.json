@@ -1,0 +1,94 @@
+{
+  "path": "frames/frame_00035541_0001184700.webp",
+  "time": 1184.7,
+  "image_sha256": "2ba905cac778eb7c4b49302a70de3f1f0d0c67ae95eb25ee7f1ac792774d1bab",
+  "cache_fingerprint": "4b2091e19d68fa99de5bb3c73bd968c2d0da01c6dd472c056495e1e27d8179ef",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "dtype": "bfloat16",
+  "quantized": false,
+  "backend": "vllm",
+  "raw": "```json\n{\n\"kind\": \"slide\",\n\"description\": \"英语单词 'bear' 的讲解幻灯片，包含词形变化、发音、例句及造句指南列表。\",\n\"annotations\": [\n  {\n    \"type\": \"圈\",\n    \"color\": \"蓝色\",\n    \"target\": \"单词造句指南列表中的'网'和'原文摘抄+变'两行\",\n    \"meaning\": \"强调这两个学习步骤\"\n  },\n  {\n    \"type\": \"下划线\",\n    \"color\": \"蓝色\",\n    \"target\": \"单词 'bear-bore-borne'\",\n    \"meaning\": \"标记词形变化\"\n  },\n  {\n    \"type\": \"圈\",\n    \"color\": \"蓝色\",\n    \"target\": \"例句 'I could not bear it.'\",\n    \"meaning\": \"标记核心例句\"\n  },\n  {\n    \"type\": \"圈\",\n    \"color\": \"蓝色\",\n    \"target\": \"例句 'How can you bear that?'\",\n    \"meaning\": \"标记疑问句例句\"\n  },\n  {\n    \"type\": \"箭头\",\n    \"color\": \"蓝色\",\n    \"target\": \"从 'I could not bear it.' 指向 'Can you bear that?' 和 'How can you bear that?'\",\n    \"meaning\": \"表示从陈述句转换为疑问句的句式变化\"\n  }\n],\n\"ocr_missing_text\": [],\n\"ocr_disagreements\": [],\n\"table_present\": false,\n\"formula_present\": false,\n\"formulas\": [],\n\"tables\": [],\n\"uncertain\": []\n}\n```",
+  "parsed": {
+    "kind": "slide",
+    "description": "英语单词 'bear' 的讲解幻灯片，包含词形变化、发音、例句及造句指南列表。",
+    "annotations": [
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "单词造句指南列表中的'网'和'原文摘抄+变'两行",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "circle_target_requires_review",
+        "requires_review": true,
+        "meaning_original_model": "强调这两个学习步骤"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "单词 'bear-bore-borne'",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          76,
+          553,
+          694,
+          622
+        ],
+        "matching_color_pixels": 1834,
+        "meaning_original_model": "标记词形变化"
+      },
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "例句 'I could not bear it.'",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "circle_target_requires_review",
+        "requires_review": true,
+        "meaning_original_model": "标记核心例句"
+      },
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "例句 'How can you bear that?'",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "circle_target_requires_review",
+        "requires_review": true,
+        "meaning_original_model": "标记疑问句例句"
+      },
+      {
+        "type": "箭头",
+        "color": "蓝色",
+        "target": "从 'I could not bear it.' 指向 'Can you bear that?' 和 'How can you bear that?'",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "表示从陈述句转换为疑问句的句式变化"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": [
+      "圈选的精确对象尚需核对：单词造句指南列表中的'网'和'原文摘抄+变'两行",
+      "圈选的精确对象尚需核对：例句 'I could not bear it.'",
+      "圈选的精确对象尚需核对：例句 'How can you bear that?'"
+    ]
+  },
+  "generated_tokens": 368,
+  "finish_reason": "stop",
+  "elapsed_seconds": 5.1353035490938055,
+  "batch_size": 32,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "postprocessing_version": "objective-and-pixel-grounding-2"
+}

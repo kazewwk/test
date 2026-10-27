@@ -1,0 +1,128 @@
+{
+  "path": "frames/frame_00024707_0000823567.webp",
+  "time": 823.566688,
+  "image_sha256": "e0536b919c706faf51721cbb743d5942758b2b3ca28b127d8400b523681797d2",
+  "cache_fingerprint": "4f41ed236eaff883a8411ad18df2d7dd1df7dbe61c10222dbe092720a4eff334",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "quantized": false,
+  "raw": "```json\n{\n\"kind\": \"slide\",\n\"description\": \"英语单词教学课件，展示单词loudly的用法及例句，包含图片插图和手写标注\",\n\"annotations\": [\n{\n\"type\": \"圈\",\n\"color\": \"蓝色\",\n\"target\": \"左上角图片中的女性人物\",\n\"meaning\": \"圈出图片中的人物\"\n},\n{\n\"type\": \"线\",\n\"color\": \"蓝色\",\n\"target\": \"左上角图片中的人物\",\n\"meaning\": \"在图片中的人物身上画线\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"loudly\",\n\"meaning\": \"强调单词loudly\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"talk loudly\",\n\"meaning\": \"强调短语talk loudly\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"You are talking too loudly.\",\n\"meaning\": \"强调整句\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"Why are you talking so loudly?\",\n\"meaning\": \"强调整句\"\n},\n{\n\"type\": \"箭头\",\n\"color\": \"蓝色\",\n\"target\": \"talk loudly\",\n\"meaning\": \"从talk loudly指向下方的例句\"\n}\n],\n\"ocr_missing_text\": [],\n\"ocr_disagreements\": [],\n\"table_present\": false,\n\"formula_present\": false,\n\"formulas\": [],\n\"tables\": [],\n\"uncertain\": []\n}\n```\n",
+  "parsed": {
+    "kind": "slide",
+    "description": "英语单词教学课件，展示单词loudly的用法及例句，包含图片插图和手写标注",
+    "annotations": [
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "左上角图片中的女性人物",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "circle_target_requires_review",
+        "requires_review": true,
+        "meaning_original_model": "圈出图片中的人物"
+      },
+      {
+        "type": "线",
+        "color": "蓝色",
+        "target": "左上角图片中的人物",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "在图片中的人物身上画线"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "loudly",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          72,
+          560,
+          322,
+          646
+        ],
+        "matching_color_pixels": 349,
+        "meaning_original_model": "强调单词loudly"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "talk loudly",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          131,
+          663,
+          395,
+          722
+        ],
+        "matching_color_pixels": 868,
+        "meaning_original_model": "强调短语talk loudly"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "You are talking too loudly.",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          152,
+          727,
+          772,
+          789
+        ],
+        "matching_color_pixels": 2878,
+        "meaning_original_model": "强调整句"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "Why are you talking so loudly?",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          133,
+          788,
+          877,
+          859
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
+        "meaning_original_model": "强调整句"
+      },
+      {
+        "type": "箭头",
+        "color": "蓝色",
+        "target": "talk loudly",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "从talk loudly指向下方的例句"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": [
+      "圈选的精确对象尚需核对：左上角图片中的女性人物",
+      "未在对应文字下方检出足够蓝色下划线像素：Why are you talking so loudly?"
+    ]
+  },
+  "generated_tokens": 362,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "elapsed_seconds": 10.627802599999995,
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
+}

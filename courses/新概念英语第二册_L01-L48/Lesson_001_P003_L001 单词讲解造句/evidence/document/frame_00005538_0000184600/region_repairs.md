@@ -1,0 +1,8 @@
+# 布局遗漏区域的独立复查
+
+原图位置：[155, 747, 864, 819]；PP-OCRv5 候选：o He goes to a private school.
+
+![复查区域](repairs/region_015/source.png)
+
+O He goes to a private school.
+

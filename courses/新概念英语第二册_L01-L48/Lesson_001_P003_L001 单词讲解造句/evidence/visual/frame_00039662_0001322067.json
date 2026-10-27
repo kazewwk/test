@@ -1,0 +1,51 @@
+{
+  "path": "frames/frame_00039662_0001322067.webp",
+  "time": 1322.066687,
+  "image_sha256": "505a4f0c049cab59a4fdd072ef195cb7ed3204b1d97c4cb6c1d28809c20662d5",
+  "cache_fingerprint": "4b2091e19d68fa99de5bb3c73bd968c2d0da01c6dd472c056495e1e27d8179ef",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "dtype": "bfloat16",
+  "quantized": false,
+  "backend": "vllm",
+  "raw": "```json\n{\n\"kind\":\"slide\",\n\"description\":\"左侧展示三个棕色横幅，分别列出三个关于英语表达的问题，右侧为教师演示区域。\",\n\"annotations\":[\n{\n\"type\":\"圈/线/勾/箭头\",\n\"color\":\"蓝色\",\n\"target\":\"③ 如何表达“不要无理”？\",\n\"meaning\":\"在问题③的下方有一个蓝色的小标记，可能用于指示当前讲解的重点。\"\n}\n],\n\"ocr_missing_text\":[],\n\"ocr_disagreements\":[],\n\"table_present\":false,\n\"formula_present\":false,\n\"formulas\":[],\n\"tables\":[],\n\"uncertain\":[]\n}\n```",
+  "parsed": {
+    "kind": "slide",
+    "description": "左侧展示三个棕色横幅，分别列出三个关于英语表达的问题，右侧为教师演示区域。",
+    "annotations": [
+      {
+        "type": "圈/线/勾/箭头",
+        "color": "蓝色",
+        "target": "③ 如何表达“不要无理”？",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "circle_target_requires_review",
+        "requires_review": true,
+        "meaning_original_model": "在问题③的下方有一个蓝色的小标记，可能用于指示当前讲解的重点。"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": [
+      "圈选的精确对象尚需核对：③ 如何表达“不要无理”？"
+    ]
+  },
+  "generated_tokens": 150,
+  "finish_reason": "stop",
+  "elapsed_seconds": 3.3336402280312996,
+  "batch_size": 32,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "postprocessing_version": "objective-and-pixel-grounding-2"
+}

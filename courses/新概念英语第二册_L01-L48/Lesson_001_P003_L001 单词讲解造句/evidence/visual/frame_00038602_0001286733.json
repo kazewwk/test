@@ -1,0 +1,159 @@
+{
+  "path": "frames/frame_00038602_0001286733.webp",
+  "time": 1286.733313,
+  "image_sha256": "3e5f243b7c40d051b60b792794d432f37be1f1e81cd6de3c119442df06ec09d6",
+  "cache_fingerprint": "4b2091e19d68fa99de5bb3c73bd968c2d0da01c6dd472c056495e1e27d8179ef",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "dtype": "bfloat16",
+  "quantized": false,
+  "backend": "vllm",
+  "raw": "```json\n{\n\"kind\": \"slide\",\n\"description\": \"英语单词教学课件，包含左上角情境插图、中间单词讲解区、右侧教师演示区。\",\n\"annotations\": [\n    {\n        \"type\": \"下划线\",\n        \"color\": \"蓝色\",\n        \"target\": \"单词 rudely\",\n        \"meaning\": \"强调单词拼写\"\n    },\n    {\n        \"type\": \"下划线\",\n        \"color\": \"蓝色\",\n        \"target\": \"单词 rude\",\n        \"meaning\": \"强调单词拼写\"\n    },\n    {\n        \"type\": \"下划线\",\n        \"color\": \"蓝色\",\n        \"target\": \"句子 Don't be rude\",\n        \"meaning\": \"强调例句中的形容词用法\"\n    },\n    {\n        \"type\": \"下划线\",\n        \"color\": \"蓝色\",\n        \"target\": \"代码 NCE1L117\",\n        \"meaning\": \"标注教材出处\"\n    },\n    {\n        \"type\": \"下划线\",\n        \"color\": \"蓝色\",\n        \"target\": \"单词 rudely\",\n        \"meaning\": \"强调例句中的副词用法\"\n    },\n    {\n        \"type\": \"下划线\",\n        \"color\": \"蓝色\",\n        \"target\": \"表格行 方式/地点/时间\",\n        \"meaning\": \"强调造句指南中的修饰成分\"\n    },\n    {\n        \"type\": \"下划线\",\n        \"color\": \"蓝色\",\n        \"target\": \"表格行 其他单词+词性\",\n        \"meaning\": \"强调造句指南中的搭配规则\"\n    }\n],\n\"ocr_missing_text\": [],\n\"ocr_disagreements\": [],\n\"table_present\": true,\n\"formula_present\": false,\n\"formulas\": [],\n\"tables\": [\n    {\n        \"content\": \"单词造句指南\",\n        \"rows\": [\n            \"网：v.+v.变化\",\n            \"四句型转换\",\n            \"方式/地点/时间\",\n            \"结合习惯用法\",\n            \"其他单词+词性\",\n            \"原文摘抄+变\"\n        ]\n    }\n],\n\"uncertain\": []\n}\n```",
+  "parsed": {
+    "kind": "slide",
+    "description": "英语单词教学课件，包含左上角情境插图、中间单词讲解区、右侧教师演示区。",
+    "annotations": [
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "单词 rudely",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          136,
+          725,
+          405,
+          783
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
+        "meaning_original_model": "强调单词拼写"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "单词 rude",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_location_unresolved",
+        "requires_review": true,
+        "meaning_original_model": "强调单词拼写"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "句子 Don't be rude",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          143,
+          662,
+          737,
+          719
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
+        "meaning_original_model": "强调例句中的形容词用法"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "代码 NCE1L117",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          389,
+          724,
+          708,
+          774
+        ],
+        "matching_color_pixels": 1215,
+        "meaning_original_model": "标注教材出处"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "单词 rudely",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          136,
+          725,
+          405,
+          783
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
+        "meaning_original_model": "强调例句中的副词用法"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "表格行 方式/地点/时间",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          664,
+          201,
+          960,
+          247
+        ],
+        "matching_color_pixels": 586,
+        "meaning_original_model": "强调造句指南中的修饰成分"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "表格行 其他单词+词性",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          666,
+          335,
+          942,
+          379
+        ],
+        "matching_color_pixels": 721,
+        "meaning_original_model": "强调造句指南中的搭配规则"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": true,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [
+      {
+        "content": "单词造句指南",
+        "rows": [
+          "网：v.+v.变化",
+          "四句型转换",
+          "方式/地点/时间",
+          "结合习惯用法",
+          "其他单词+词性",
+          "原文摘抄+变"
+        ]
+      }
+    ],
+    "uncertain": [
+      "未在对应文字下方检出足够蓝色下划线像素：单词 rudely",
+      "下划线的对应文字位置未确认：单词 rude",
+      "未在对应文字下方检出足够蓝色下划线像素：句子 Don't be rude",
+      "未在对应文字下方检出足够蓝色下划线像素：单词 rudely"
+    ]
+  },
+  "generated_tokens": 503,
+  "finish_reason": "stop",
+  "elapsed_seconds": 7.989143321093707,
+  "batch_size": 32,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "postprocessing_version": "objective-and-pixel-grounding-2"
+}

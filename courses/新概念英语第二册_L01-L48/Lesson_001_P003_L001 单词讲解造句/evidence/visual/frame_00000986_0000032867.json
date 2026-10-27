@@ -1,0 +1,61 @@
+{
+  "path": "frames/frame_00000986_0000032867.webp",
+  "time": 32.866687,
+  "image_sha256": "42979bf7a9584aeef1c6b172c1001f547206f49c1774e8687d9a5f896d27a1b4",
+  "cache_fingerprint": "4f41ed236eaff883a8411ad18df2d7dd1df7dbe61c10222dbe092720a4eff334",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "quantized": false,
+  "raw": "```json\n{\n\"kind\":\"slide\",\n\"description\":\"教学课件，左侧展示单词造句指南列表及单词private的音标和词性，右侧教师手持笔指向平板屏幕\",\n\"annotations\":[\n{\n\"type\":\"圈/线/勾/箭头\",\n\"color\":\"白色\",\n\"target\":\"private adj. + n.\",\n\"meaning\":\"教师手持笔指向单词private及其词性标注\"\n}\n],\n\"ocr_missing_text\":[],\n\"ocr_disagreements\":[],\n\"table_present\":false,\n\"formula_present\":false,\n\"formulas\":[],\n\"tables\":[],\n\"uncertain\":[],\n\"ocr_candidate\":[\"网：v.+v.变化\", \"bilibili\", \"单词造句指南\", \"胶学\", \"四句型转换\", \"方式/地点/时间\", \"结合习惯用法\", \"其他单词+词性\", \"原文摘抄+变\", \"/'praivit/\", \"H\", \"private adj. + n.\"]\n}\n```\n",
+  "parsed": {
+    "kind": "slide",
+    "description": "教学课件，左侧展示单词造句指南列表及单词private的音标和词性，右侧教师手持笔指向平板屏幕",
+    "annotations": [
+      {
+        "type": "圈/线/勾/箭头",
+        "color": "白色",
+        "target": "private adj. + n.",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "教师手持笔指向单词private及其词性标注"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": [],
+    "ocr_candidate": [
+      "网：v.+v.变化",
+      "bilibili",
+      "单词造句指南",
+      "胶学",
+      "四句型转换",
+      "方式/地点/时间",
+      "结合习惯用法",
+      "其他单词+词性",
+      "原文摘抄+变",
+      "/'praivit/",
+      "H",
+      "private adj. + n."
+    ]
+  },
+  "generated_tokens": 215,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "elapsed_seconds": 6.9776504067499445,
+  "batch_size": 4,
+  "postprocessing_version": "objective-and-pixel-grounding-2"
+}

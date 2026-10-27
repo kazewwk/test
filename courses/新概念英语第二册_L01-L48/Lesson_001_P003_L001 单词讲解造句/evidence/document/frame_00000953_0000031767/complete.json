@@ -1,0 +1,161 @@
+{
+  "artifacts": {
+    "1793087108_6190.md": "bd56960b850d0059280cbb4b306ab5438ae1b0bbf110cbab7d964eb06f7b5e0c",
+    "1793087108_6190_res.json": "cadb0da25697e91d5b2bafb341ecca6c024bcb7efe152317cdd557f58bedea45",
+    "imgs/img_in_header_image_box_1652_33_1889_100.jpg": "569b6e867f6497c7864019c7ea141faa63b0d72d6674b2e4a801a584a6dc17e7",
+    "imgs/img_in_image_box_821_444_1099_565.jpg": "903836be827195bffbeb417f9fb3194739d58a04238ecdb233e74644d5fd9f42",
+    "region_repairs.md": "ce61f880a5dfed61df985773d5391cf619e25048311f96082a7af213bcb867ba",
+    "repairs/region_000/1793087109_8703.md": "1c1e1fe6cb66c4090e4c848b10c3083593bdd7d0944167f052136ff51fcacc37",
+    "repairs/region_000/1793087109_8703_res.json": "8d5d76d386af8cf5de226129ea70ac35b2b86fa6b1e8213c24e267b01c89e585",
+    "repairs/region_000/source.png": "6380a3ee4040a8253513310e07334bfda9fa9475f931dd365f95474a877f7a7a",
+    "repairs/region_001/1793087109_2435.md": "23717bfdc9776792319c209a34b64f28353e02c6ddb8df65d9b63a7bac600e13",
+    "repairs/region_001/1793087109_2435_res.json": "9d38868110764ebf446f7fa19fcd4a2ead0dd69cc71a906c2532d30e68261f11",
+    "repairs/region_001/source.png": "1e54182093c535fa4e1838e6c12f4e3449d81238d236e8f06f26f68c411e9635"
+  },
+  "image_sha256": "1921bbe32afc4ca34efb775c60fc9143de0ff16e795c2450f5faf55bcd57b27b",
+  "cache_fingerprint": "e2abb5e02d9eabaa39ee8ae630e9302743998b20947fe98039aabaea9a0288ce",
+  "elapsed_seconds": 1.9212899370013474,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1652,
+        33,
+        1889,
+        100
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1652.0,
+          33.0
+        ],
+        [
+          1889.0,
+          33.0
+        ],
+        [
+          1889.0,
+          100.0
+        ],
+        [
+          1652.0,
+          100.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "CAPSULE ACADEMY",
+      "block_bbox": [
+        821,
+        444,
+        1099,
+        565
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          821.0,
+          444.0
+        ],
+        [
+          1099.0,
+          444.0
+        ],
+        [
+          1099.0,
+          565.0
+        ],
+        [
+          821.0,
+          565.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "胶囊学院",
+      "block_bbox": [
+        839,
+        653,
+        1087,
+        701
+      ],
+      "block_id": 2,
+      "block_order": 1,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          839.0,
+          653.0
+        ],
+        [
+          1087.0,
+          653.0
+        ],
+        [
+          1087.0,
+          701.0
+        ],
+        [
+          839.0,
+          701.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1635,
+        18,
+        1904,
+        115
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "CAPSULE ACADEMY",
+      "block_bbox": [
+        838,
+        523,
+        986,
+        557
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1635,
+        18,
+        1904,
+        115
+      ],
+      "ppocr_candidate": "胶学bilbl",
+      "recovered_text": "胶学 bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        838,
+        523,
+        986,
+        557
+      ],
+      "ppocr_candidate": "CAPSLILEACADEMY",
+      "recovered_text": "CAPSULE ACADEMY",
+      "source_crop": "repairs/region_001/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

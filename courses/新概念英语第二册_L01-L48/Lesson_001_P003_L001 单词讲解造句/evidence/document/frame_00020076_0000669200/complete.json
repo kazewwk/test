@@ -1,0 +1,193 @@
+{
+  "image_sha256": "a7b1c6818736e56074f7232b2c07cf47a3fb02134445a37a160261bb569b7b83",
+  "cache_fingerprint": "1e202af46b527b982023ff7d99bf7513bd78b47651ef29d41bf921b25a28796b",
+  "elapsed_seconds": 5.012939751999966,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "Is this seat taken?",
+      "block_bbox": [
+        244,
+        33,
+        817,
+        108
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          244.0,
+          33.0
+        ],
+        [
+          817.0,
+          33.0
+        ],
+        [
+          817.0,
+          108.0
+        ],
+        [
+          244.0,
+          108.0
+        ]
+      ]
+    },
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1650,
+        29,
+        1888,
+        102
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          1650.0,
+          29.0
+        ],
+        [
+          1888.0,
+          29.0
+        ],
+        [
+          1888.0,
+          102.0
+        ],
+        [
+          1650.0,
+          102.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "这座位有人吗？",
+      "block_bbox": [
+        0,
+        196,
+        1102,
+        873
+      ],
+      "block_id": 2,
+      "block_order": null,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          -1.0,
+          196.0
+        ],
+        [
+          1102.0,
+          196.0
+        ],
+        [
+          1102.0,
+          873.0
+        ],
+        [
+          -1.0,
+          873.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "赠侠马华力\nMaverick\n(1994)",
+      "block_bbox": [
+        1107,
+        274,
+        1840,
+        1080
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1119.8431396484375,
+          279.00140380859375
+        ],
+        [
+          1840.0281982421875,
+          302.536865234375
+        ],
+        [
+          1813.7027587890625,
+          1108.0947265625
+        ],
+        [
+          1093.5177001953125,
+          1084.559326171875
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1637,
+        22,
+        1901,
+        112
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "赌侠马华力",
+      "block_bbox": [
+        1106,
+        765,
+        1274,
+        816
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1637,
+        22,
+        1901,
+        112
+      ],
+      "ppocr_candidate": "胶学ili",
+      "recovered_text": "胶学 bilibili",
+      "source_crop": "repairs/region_001/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        1106,
+        765,
+        1274,
+        816
+      ],
+      "ppocr_candidate": "赌侠马华力",
+      "recovered_text": "赌侠马华力",
+      "source_crop": "repairs/region_003/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified",
+  "artifacts": {
+    "1793081849_2449.md": "b36a08d0297cb339936ecda6a788262b70298e95ae2efb13c23ce59c30ea58d7",
+    "1793081849_2449_res.json": "c074a32f7c8c22e081e287cc1ba77ac61c811b92fda823d4072a776d4340f7dd",
+    "imgs/img_in_header_image_box_1650_29_1888_102.jpg": "a658fb6c2232d2ea971b418373d658170b023451eb143294b7c9e255cfeafa63",
+    "imgs/img_in_image_box_0_196_1102_873.jpg": "64e9b650f4ac8ab8fd1fced55726c2c08a8868851d4c0485b2f15b477a23f752",
+    "imgs/img_in_image_box_1107_274_1840_1080.jpg": "b6c7caf4a9bc7cdef2d681e9bd76459231344e8cb3bdf0e932d6b972b5953fc9",
+    "region_repairs.md": "05be085f8c8c40bfb45cade653539690860455a4c04c83d0e6419f75ebd08fb9",
+    "repairs/region_001/1793081849_2461.md": "1c1e1fe6cb66c4090e4c848b10c3083593bdd7d0944167f052136ff51fcacc37",
+    "repairs/region_001/1793081849_2461_res.json": "39f2ec8792b09fdd3cba766b7997ab350d7718d140b11d70401b3ab48861bf23",
+    "repairs/region_001/source.png": "58fc1a0b6c7c91c5a677b098f4befa6df1265b2068b8f27818bfe0ed3d81aae3",
+    "repairs/region_003/1793081850_9300.md": "3f64ee1f2309251104d752d84a3248c7f1e3213cef103c2781a516bb0a5ae4b3",
+    "repairs/region_003/1793081850_9300_res.json": "de4d6bf3a88134294636876a4740b2c25e664ea3953c8e9f32b5655646c3fcda",
+    "repairs/region_003/source.png": "cc7d609f70f9bcfb975879174c24db423ccc598056a20f86c01865b7183a481a"
+  }
+}

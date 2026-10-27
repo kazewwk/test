@@ -1,0 +1,137 @@
+{
+  "path": "frames/frame_00024162_0000805400.webp",
+  "time": 805.4,
+  "image_sha256": "34e0e44c6805c60825b4a7a703f137bb076c09a2c4b30695284f334344ad9c32",
+  "cache_fingerprint": "4b2091e19d68fa99de5bb3c73bd968c2d0da01c6dd472c056495e1e27d8179ef",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revisions": {
+    "Qwen/Qwen3-ASR-1.7B": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "Qwen/Qwen3-ForcedAligner-0.6B": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+    "Systran/faster-whisper-large-v3": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "Qwen/Qwen3-VL-4B-Instruct": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "PaddlePaddle/PaddleOCR-VL-1.6": "c5630abae1d940eafe0697512a0325494b02ab42",
+    "opendatalab/MinerU2.5-Pro-2605-1.2B": "08aaea840498d49ce16247b6263196cf02814885"
+  },
+  "dtype": "bfloat16",
+  "quantized": false,
+  "backend": "vllm",
+  "raw": "```json\n{\n\"kind\": \"slide\",\n\"description\": \"教学课件，包含左上角电影截图、中间单词讲解区域、右侧教师演示区域。\",\n\"annotations\": [\n{\n\"type\": \"圈\",\n\"color\": \"蓝色\",\n\"target\": \"左上角电影截图中穿黑色衣服的女性\",\n\"meaning\": \"圈出人物\"\n},\n{\n\"type\": \"线\",\n\"color\": \"蓝色\",\n\"target\": \"左上角电影截图中穿黑色衣服男性的手臂\",\n\"meaning\": \"指向人物\"\n},\n{\n\"type\": \"线\",\n\"color\": \"蓝色\",\n\"target\": \"左上角电影截图中穿红色衣服女性的手臂\",\n\"meaning\": \"指向人物\"\n},\n{\n\"type\": \"线\",\n\"color\": \"蓝色\",\n\"target\": \"左上角电影截图中穿灰色衣服女性的手臂\",\n\"meaning\": \"指向人物\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"单词 loudly\",\n\"meaning\": \"强调词性\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"talk loudly\",\n\"meaning\": \"强调短语\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"talking too loudly\",\n\"meaning\": \"强调句子部分\"\n},\n{\n\"type\": \"下划线\",\n\"color\": \"蓝色\",\n\"target\": \"talking so loudly\",\n\"meaning\": \"强调句子部分\"\n}\n],\n\"ocr_missing_text\": [],\n\"ocr_disagreements\": [],\n\"table_present\": false,\n\"formula_present\": false,\n\"formulas\": [],\n\"tables\": [],\n\"uncertain\": []\n}\n```",
+  "parsed": {
+    "kind": "slide",
+    "description": "教学课件，包含左上角电影截图、中间单词讲解区域、右侧教师演示区域。",
+    "annotations": [
+      {
+        "type": "圈",
+        "color": "蓝色",
+        "target": "左上角电影截图中穿黑色衣服的女性",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "circle_target_requires_review",
+        "requires_review": true,
+        "meaning_original_model": "圈出人物"
+      },
+      {
+        "type": "线",
+        "color": "蓝色",
+        "target": "左上角电影截图中穿黑色衣服男性的手臂",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "指向人物"
+      },
+      {
+        "type": "线",
+        "color": "蓝色",
+        "target": "左上角电影截图中穿红色衣服女性的手臂",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "指向人物"
+      },
+      {
+        "type": "线",
+        "color": "蓝色",
+        "target": "左上角电影截图中穿灰色衣服女性的手臂",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "not_automatically_verified",
+        "meaning_original_model": "指向人物"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "单词 loudly",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          73,
+          559,
+          443,
+          642
+        ],
+        "matching_color_pixels": 1304,
+        "meaning_original_model": "强调词性"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "talk loudly",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          100,
+          664,
+          399,
+          734
+        ],
+        "matching_color_pixels": 839,
+        "meaning_original_model": "强调短语"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "talking too loudly",
+        "meaning": "画面中的可见标注，位置与对象见对应字段；不据此推断学习状态或教学意图。",
+        "grounding": "underline_color_evidence_present",
+        "tested_region": [
+          311,
+          726,
+          771,
+          784
+        ],
+        "matching_color_pixels": 2436,
+        "meaning_original_model": "强调句子部分"
+      },
+      {
+        "type": "下划线",
+        "color": "蓝色",
+        "target": "talking so loudly",
+        "meaning": "[无法确认：标注位置、范围或形状需要核对原图]",
+        "grounding": "underline_color_evidence_not_found",
+        "tested_region": [
+          413,
+          787,
+          871,
+          845
+        ],
+        "matching_color_pixels": 0,
+        "requires_review": true,
+        "meaning_original_model": "强调句子部分"
+      }
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "formulas": [],
+    "tables": [],
+    "uncertain": [
+      "圈选的精确对象尚需核对：左上角电影截图中穿黑色衣服的女性",
+      "未在对应文字下方检出足够蓝色下划线像素：talking so loudly"
+    ]
+  },
+  "generated_tokens": 400,
+  "finish_reason": "stop",
+  "elapsed_seconds": 11.78833909753132,
+  "batch_size": 32,
+  "verification": "model_observation_with_color_grounding_not_human_verified",
+  "postprocessing_version": "objective-and-pixel-grounding-2"
+}
