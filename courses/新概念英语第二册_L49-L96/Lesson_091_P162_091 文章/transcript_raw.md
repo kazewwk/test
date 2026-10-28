@@ -1,0 +1,144 @@
+# 091 文章
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn new concept English Book Two Lesson Ninety One Story. Hope you gonna enjoy. We,们先看文章标题叫 Three Men and Basket. 如果你不看图，只看 basket，你其实有点怪。 basket 叫篮子，三个男人在一个篮子里边，就不太懂什么意思。它其实就是热气球，上面是那热气球，底下是热气球成人的那个篮子啊，它是这个意思啊。
+
+## 00:00:28–00:01:02
+
+是热气球成人的那个篮子啊，它是这个意思啊。问的问题是 Where was the station's commanding officer? 这个这个这个站啊，什么站呢？就是那个 Royal Air Force Station 啊，皇家空军站的那个 commanding officer CO 啊缩写，就是这个指挥官在哪啊？那我们看文章吧。A pilot noticed a balloon which seemed to be making for a Royal Air Force Station nearby. 很简单，基本上有 which。
+
+## 00:00:58–00:01:32
+
+Station nearby.很简单，基本上有 which，前后句子一拆已经清楚了。A pilot noticed balloon.啊，简单的，一二三，是吧？一个飞行员注意到了一个气球。Which，指的就是这个气球，就是 it，对吧？这个气球怎么样呢？Seem to be making for.好了，这地方有两个习惯用法，我们本课都要造句。第一个叫，其实它的原型叫 seem to do，似乎是啊，但是这里用的是 seem to be doing，似乎是正在做某。
+
+## 00:01:28–00:02:02
+
+这里用的是 seem to be doing，似乎是正在做某事儿，是 seem to do 的一个变体啊，呃也不难，似乎是正在做，似乎是正在干什么呢？呃，这个这个 balloon 就是这个气球，似乎是正在热气球正在干什么呢？ Make for 一个习惯用法， make for 如果是热气球，那就是飞向；如果是人，就是走向。听见了吧？如果汽车就是开向，反正就是朝向某个地方过去了啊，其实就是类似于 go，呃 to 啊 go to 对吧？类似的，说 which seem to be。
+
+## 00:01:58–00:02:32
+
+To ah go to, right? Similar ah, is which seemed to be making for.哎，似乎是正在朝哪儿飞呢？一个皇家空军基地附近飞，对吧？He informed the station at once, but no one there was able to explain the mystery.他通知了这个呃空军站，立刻at once，立刻马上啊。但是呢，没有人在那里，那里没有人怎么样呢？Was able to能explain.
+
+## 00:02:28–00:03:02
+
+Able to,能explain the mystery,解释这个什么呢？啊，这个谜题或者说这个疑惑，没有人能解释清楚。The officer in the control tower was very angry when he heard the news because balloons can be a great danger to aircraft.这句话看着挺长，一个because，一个问句子，瞬间就被拆成了小短句。第一句话叫做 officer in the control tower was very angry。那你注意 in the control tower.
+
+## 00:02:58–00:03:32
+
+Control tower was very angry. 那你注意 in the control tower这个地方实际上是介词引导短语后置修饰 officer，什么样的长官呢？呃，基地当中长官多了，对吧？啊，什么长官呢？In the control tower，在控制塔当中的那个长官 was very angry，非常生气。When he heard the news，当第二句话，当他听到消息的时候，第三句话，because因为 balloons可以是一个巨大的威胁对于 aircraft。
+
+## 00:03:28–00:04:02
+
+是一个巨大的威胁对于 aircraft，其实就是 airplane，就是 plane，就是对于这些战斗机来说，可能是一个巨大的威胁。过去了，下一句。 He said that someone might be spying on the station, and the pilot was ordered to keep track of the strange object. 还是你要做，要要该断句断句，因为这个 that，因为这个前面啊主谓就俩单词，太简单了，咱就不把宾语从句单独拉出来了。咱这个 and 看他一眼。
+
+## 00:03:58–00:04:32
+
+就不把宾语从句单独拉出来了，咱这个 and 看他一眼，其实就差不多了。为什么呢？看啊，他说说某个人也许正在做某事儿，might be doing 十九课表推测表某人也许正在做某件事儿，be doing 对吧？其实它分很多，我在这顺便说一句，你自己感受一下。如果是 am is are doing 是现在正在做，was were doing 是过去正在做，will be doing 是将来正在做，must be doing 是表推测一定正在做，can't be doing 是表。
+
+## 00:04:28–00:05:02
+
+Doing是表推测，一定正在做；can't be doing是表推测，一定没有正在做；maybe doing或might be doing表示的是也许正在做。那你也可以是might not be doing，就是也许没有正在做，对吧？其实都是十九课那些东西啊。说也许正在干嘛呢？Spying on the station，也许正在监视哎这个基地，对吧？那这个spy on讲单词部分我们说过，不多说了。你看第一句话就结束了，第二句话and开始。The pilot was out.
+
+## 00:04:58–00:05:32
+
+就结束了。第二句话，and开始。The pilot was ordered to四十三课咱们学的南极南北极探险那课，对吧？Somebody be ordered to do something，或者order somebody to do something，对吧？被命令去做某件事情。说这个飞行员被命令干嘛呢？Keep track of the strange object。在这就是追踪嘛，你就去记录它的航行，追踪它，追踪什么呢？这个奇怪的物体，就是这个热气球啊，因为他们不知道它是啥嘛，所以用的是一个strange object。The pilot managed to circle.
+
+## 00:05:28–00:06:02
+
+This is a strange object. The pilot managed to circle the balloon for some time. This is a very simple sentence. It says that the pilot managed to circle the balloon for some time. This is a very simple sentence. It says that the pilot managed to circle the balloon for some time. This is a very simple sentence. It says that the pilot managed to circle the balloon for some time. This is a very simple sentence. It says that the pilot managed to circle the balloon for some time.
+
+## 00:05:58–00:06:32
+
+的又出来了，对吧？告诉你啊，不是画叉，应该是画一个斜线。告诉你要断句，说他能这个make out啊，make out其实意思还挺多的。它可以指，比如说口语当中其实特别常用的一句话，反而指的是男女之间亲热、搂搂抱抱啊、亲亲吻吻的这个make out。但是在这儿呢，明显不是。口语当中很常用的是刚才我说的那个意思，你不凡也可以去查一下。当然，那个不是我们今天讲的重点啊。想起来随口说一句，那这里的make out是什么呢？就是辨别出、看出。
+
+## 00:06:28–00:07:02
+
+Make out是什么呢？就是辨别出、看出。其实这地方你完全可以，我们换的话，如果让我们写，它可以完全写成 he could see，他能看到，明白了吧？啊，或者 tell，辨别出 tell the difference，那个 tell，对吧？讲述区别。它可以辨别看到说三个男的在一个呃篮子里边 under it，这个 it 指的是这个 balloon，啊，这个气球。你注意，它不是那个小气球，咱小孩玩的那个氢气球，它指的是那个、那个、那个大的那个。
+
+## 00:06:58–00:07:32
+
+玩的那个氢气球，他指的是那个、那个、那个大的那个啊热气球，在这个热气球里也有个篮子，篮子里边有三个男的，他看到了这个。然后呢，one of them有这么他们当中有一个人 was holding a pair of binoculars，哎，正在怎么样呢？正在 hold hold 就是拿着嘛，正在拿着一副望远镜，a pair of glasses， a pair of binoculars， binoculars 很容易理解啊，正在拿着一副望远镜，图里边的这个人嘛。 Continue， when the balloon
+
+## 00:07:28–00:08:02
+
+Continue. When the balloon was over the station, the pilot saw one of the men taking photographs. 好，其实这地方的一个问和这儿的一个逗号就帮您断句了。第一句话叫做，当这个热气球在这个呃这个 station，在这个空军站上方的时候呢， the pilot，飞行员 saw one of the men taking photographs. saw somebody doing something. 三十五课咱学了，当时还学了一个 see somebody do something.
+
+## 00:07:58–00:08:32
+
+三十五课咱学了，当时还学了一个 see somebody do something，还记得区别吗？一个是全程，一个是正在进行。看到了其中一个人正在 taking photographs，正在拍照片儿啊，这个空军基地，你在空军基地上面拍照片儿就很危险了嘛，可能会泄露一些什么机密啊。然后他说 soon afterwards the balloon began to descend and it landed near an airfield，说很快啊，soon afterwards，很快啊，the balloon began to descend，说这个。
+
+## 00:08:28–00:09:02
+
+很快啊，The balloon began to descend.说这个热气球开始begin to do something，很简单的一个习惯用法，我都没标。Descent下降啊，这是一个超纲的词，你可以单独记它，但是出现频率也蛮高的啊。Descent，然后呢，就是帮你断句的句，断连词嘛。看到它应该都很亲切。It landed near an airfield.说这个热气球啊，降落在landed，降落在这个airfield，在的这这个这个停机坪。
+
+## 00:08:58–00:09:32
+
+This is a Chinese-English teaching recording. Transcribe the exact words in their original spoken languages. Never translate. Preserve repetitions, questions and examples.
+
+## 00:09:28–00:10:02
+
+警察可以被 call in，呃，医生可以被 call in，呃，fireman，你比如说，呃，FBI可以被 call in，就是被紧急召唤了，被召唤了啊，呃，往往处理的是一种特别困难、特别麻烦的场景啊。保安可以被 call in，明白了吧？说这个警察呀被 call in了，被召唤了，但是呢， they could not arrest anyone，但是他们又不能逮捕任何人，could not 表示过去，能不能，对吧？你不能用 can，为什么？这事儿发生在过去嘛。
+
+## 00:09:58–00:10:32
+
+过去能不能对吧？你不能用 could，为什么这事儿发生在过去嘛？你用 wasn't able to 也可以，因为 the basket contained，因为这个篮子里边啊 contained 包含了，就是呃这个这个载了或者说那个载具的那个载是吧？载了什么呢？ Two members of parliaments，说两个议会的成员，国会成员，然后以及 the commanding officer of the station，乌龙了吧？以及整个这个空军基地的什么呢？
+
+## 00:10:28–00:11:02
+
+以及整个这个空军基地的什么呢？Commanding officer，指挥官啊，总指挥官。对，最后一个说，as the commanding officer explained later，说as单看不到啥意思，没事，我们先往后翻译。说这个commanding officer explained later，说这个指挥官呢，稍后解释到，说one half of the station did not know what the other half was doing。说这个空军站的一半不知道这个空军站的另一半正在做什么。Did not know后边连了一个。
+
+## 00:10:58–00:11:32
+
+另一半正在做什么？Did not know后边连了一个连词，特殊疑问词啊，这个叫特殊疑问句引导的宾语从句。新概念一册、新概念二册咱都学过，对吧？那这个as怎么翻译呢？你翻译成问和because就不太对了，是吧？这儿我又让各位要复习了。反正翻译就是正如怎么怎么样啊，可以这样翻译没有任何问题。如果您忘了七十七课木乃伊那课，回去直接看语法文章什么都不用看，直接看语法就可以了啊。正像他稍后解释的那样，对吧？
+
+## 00:11:28–00:12:02
+
+法就可以了啊，正像他稍后解释的那样，对吧？基地的一半不知道基地另一半正在干啥，联系的不够好。那接下来习惯的话造句，咱老习惯啊。第一个 seem to be doing 似乎是正在做某事儿，跟我来读。 The brakes don't seem to be working。哎，我买辆车，然后呢，它这个刹车呀，似乎是没有在工作。啊，我正开着开着，感觉它好像突然不在工作了。 They seem to be telling a story right now。哎，他们似乎是正在现在正在讲一个。
+
+## 00:11:58–00:12:32
+
+Seem to be telling a story right now.哎，他们似乎是正在现在正在讲一个故事。再来，You seem to be taking a risk.你似乎是正在冒险呢，对吧？Okay, 四十四课 take a risk, seem to be doing啊。那注意力集中，咱们看一下这电影片段。Whatever this illness, the drugs seem to be doing their work. Okay.接下来呢，make for somewhere。刚才我说了嘛，如果是飞机，那就是飞过去；如果车就是开过去，人就是走过去或跑过去，对吧？比如说，It's getting late. We better go.
+
+## 00:12:28–00:13:02
+
+就是走过去或跑过去，对吧？比如说，it's getting late, we better go and make for home.什么意思呢？晚了，我们最好走吧。应该那一测还背那儿九十五课，咱学的，希望你还记得。Make for home就是回家，go home没区别，听见了吧？Okay, next one，你不能翻译成飞回家，是吧？We should have made for the bank of the river.说我们本应该去这个河边溜达溜达的。Next one, he was able to make for the car in the.
+
+## 00:12:58–00:13:32
+
+Next one, he was able to make for the car in the end. 说他能怎么样 make for the car，走到车旁边 in the end 最后啊，最后还是成功的走到了这个车旁边啊。嗯，注意力集中，就这么几个单词，您都认 woods 森林啊。 You must make for the woods. Hey, must make for the woods. Next one, make out. 刚才我说了 make out 在口语当中有很常见的意思，那本课咱们 make out 就是看出辨别。
+
+## 00:13:28–00:14:02
+
+见的意思。那本课咱们 make out 就是看出辨别出。那跟我读一下这个句子，说 I can read most of this, but I can't make out the last part. Last part 最后一部分，每个部分单词都是咱学过。Can you 你能吗？ Next one, I can't make out your writing. If we turn it up, we may be able to make out what they are saying. 如果咱们把这声调大点，也许咱们就能分辨出他们正在说什么。比如说你正在 spy。
+
+## 00:13:58–00:14:32
+
+咱们就能分辨出他们正在说什么了。比如说，你正在 spy on somebody，监听，对吧？ Next one, soon afterwards, 哎，很快，很快啊。说 she had her supper and went out soon afterwards. 在那之后，很快，在那之后，怎么样呢？说她吃完饭，然后很快在那之后就怎么样，出去了，很快就出去了。 Next one, soon afterwards, he moved to London. 在那之后，很快他就怎么样了，搬去伦敦了。四句型转换都是。
+
+## 00:14:28–00:15:02
+
+就怎么样了？搬去伦敦了。四句型转换都是很好的句子啊。比如说 When did he move to London? 啊 Why did he move to London soon afterwards? 张嘴就要来，这个我们一定要练。最后一个 Soon afterwards, they removed the gate from the front yard. 啊说最终啊，在那之后很快怎么样了？他把这个大门从前前院还是给卸走了啊。五十九课 Be called in. 我刚才在呃文章部分说。
+
+## 00:14:58–00:15:32
+
+Called in,我刚才在呃文章部分说了，我说可以被 called in 的有很多，保安呐、医生啊、兽医啊，对吧？反正就是紧急的要求别人帮你处理一个事儿。比如说，呃，被就是他，但但是你不能纯由汉语这么去决定。刚才我说的那些是最保险的啊。然后他说的是 to ask someone to come to help in a difficult situation，说寻求某人的帮助，在一个特别困难的这个场景之下，对吧？OK，比如说。
+
+## 00:15:28–00:16:02
+
+This is a Chinese-English teaching recording. Transcribe the exact words in their original spoken languages. Never translate. Preserve repetitions, questions and examples.
+
+## 00:15:58–00:16:32
+
+没有办法保持这个城市的怎么样稳定了啊？你像美国对吧？这个 Black Matter、Black Lives Matter 的时候对吧？这个国民警卫队啊，就是他们的 military，类似于 military 的一个组织，不就被 were called in to help 对吧？被召唤来去帮忙了，做的是什么事呢？叫在 in a difficult situation 被召唤来对吧？好，那 recap 本课习惯用法这么多，咱们造句对吧？这些是。
+
+## 00:16:28–00:17:02
+
+习惯用法这么多，咱们造句对吧？这些是将来听说读写都用得到的习惯用法啊，都很常用。文章呢，咱们跟读、熟读成诵，然后置顶留言找重复间隔的学习材料。那以上呢就是本期视频的全部内容了。如果各位喜欢我们的课程呢，欢迎各位关注、订阅、一键三连，分享给那些需要的朋友，来帮助我们快速成长。See you next time.
+
+## 00:16:58–00:17:08
+
+
+

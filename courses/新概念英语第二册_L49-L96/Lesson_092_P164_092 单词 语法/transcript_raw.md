@@ -1,0 +1,84 @@
+# 092 单词 语法
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Liu. Today we're going to learn New Concept English Book Two, Lesson Ninety Two Words and Grammar. Old习惯，进入正式课程之前呢，咱们看几个问题啊。首先，如何表达熟睡啊？第二，如何表达你在讽刺我吗？第三，最后一个问题，如何表达说别用那种口气语气和我说话？带着这三个问题，Hope you gonna enjoy it.
+
+## 00:00:28–00:01:02
+
+第一个单词 fast，这个单词对于各位来说做形容词的含义非常熟悉，对吧？叫快嘛。那 fast 在这个地方呢，它其实跟 asleep 连到一起，指的是那个睡得很熟的那个熟，啊，对吧？Fast asleep，睡得很熟，放到一起去用。那我们造个句子，比如说 When he went upstairs, five minutes later, he was fast asleep. 第七课的语法 when，对吧？Next one，说 I was fast.
+
+## 00:00:58–00:01:32
+
+第七课的语法，when对吧？Next one说，I was fast asleep when my bedside phone began to ring。说，当我这个床边的这个电话开始响的时候，我怎么样呢？正在熟睡呢。OK。Next one，下一个单词啊，本课生词也很少，和上一课一样，叫做ladder，ladder啊，ladder梯子。OK，那想拿它去造句，首先立刻想找动词，对吧？找之前学过的习惯用法、语法，哐哐往一块儿，哎，这个揉啊，比如说。
+
+## 00:01:28–00:02:02
+
+哐哐往一块儿，哎，这个揉啊，比如说 the police knocked him to the ground with a ladder，用一个梯子把他给打倒在地了，对吧？Next one，说 I'm used to climbing the ladder up and down，说我习惯于怎么样呢？哎，上上下下爬这个梯子了，没事儿不用担心，是吧？没有危险。然后下一个叫 my wife urged me to buy a new ladder，哎，怂恿我或者督促我或者催促我去买一个新的梯子，这都坏了，赶紧。
+
+## 00:01:58–00:02:32
+
+或者催促我去买一个新的梯子，这些都坏了，赶紧买个新的，再读一遍。Ladder, very good. Next one, shed. Shed是什么呢？就是如果你在西方居住过啊，或者租过房子呀，有房子呀，这种house它有一个特点是里面要么前面要么后边会有院子，院子里边呢，你可能自己种了各种各样的东西，也许是当然外国人种菜的少啊，当然如果你是中国人，可能你就种了菜，外国人你可能就种了各种各样的园艺花朵呀。
+
+## 00:02:28–00:03:02
+
+可能你就种了菜，外国人你可能就种了各种各样的园艺花朵呀，对吧？这个树木，那你可能就需要这样一个小的 shed，这样的一个小棚子啊，或者这样一个小屋子啊，在我们这个 garden 里面的干什么用呢？放上各种各样的什么，当然可大可小啊。这个 shed 啊，那大了就是放上手推车啊，然后什么锤子呀，啊，斧头啊，啊，就是你干农业活的这些东西都放到这个里边，就这样的一个小棚子叫做 shed。 OK，好，比如说那我们造个句子。
+
+## 00:02:58–00:03:32
+
+叫做 shed, OK.好，比如说，那我们造个句子叫 They intended to build a shed in their garden.说他们怎么样呢？他们哎想计划打算要建造一个棚子在他们的这个花园当中，对吧？Next one,说 I look forward to seeing your new shed. Look forward to doing something.哎，正好也是本课咱们要复习的一个知识点，第二十课了。我各位学的很快，动名词，对吧？Next one,说 He managed to build a shed by himself.刚刚我们
+
+## 00:03:28–00:04:02
+
+One said he managed to build a shed by himself.刚刚我们上一课复习过的啊，六十七课的叫 manage to do something very good. 接下来下一个单词叫 sarcastic. Sarcastic, sarcastic 就是讽刺的啊，讥讽的。比如说很常用口语当中有这么一句话，我直接给各位放到这儿了，对吧？你可以多读几遍，期冀于把它记下来，以后在看电影的时候会用得到。叫做 Are you being sarcastic? 说你是在讽刺我呢吗？Are you being sarcastic? Okay.
+
+## 00:03:58–00:04:32
+
+讽刺我呢吗？Are you being sarcastic? Okay, next one.你看啊，他说，Oh yes, that would be really easy.说She said in a sarcastic voice.咱们之前十五科学的是in a weak voice.那我们现在给它变成了sarcastic voice，就是用一种讽刺的语音嗓音说道啊，是的，这是啊，对对对，对吧？说那会非常简单啊，讽刺的口音。Okay, next one.说Why are you always so sarcastic?为什么你总是这么的爱讽刺别人？
+
+## 00:04:28–00:05:02
+
+So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic. Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is
+
+## 00:04:58–00:05:32
+
+也可以叫 body language 啊，对，我们的身体语言。比如说 I don't like your tone ，我不喜欢你跟我说话的语气，对吧？很简单，是 You must be Annie ， he said in a friendly voice 。哎，说你一定就是 Annie 了，对吧？面带微笑啊，然后他用一个特别友好的这个语调语气说道。那再然后呢？这个是口语当中很常用的一句话，我直接给各位摘出来了。一会儿电影片段咱们还会再看，跟我一起读一下，叫 Don't take that tone with me 。 tone 这个单词。
+
+## 00:05:28–00:06:02
+
+读一下，叫 Don't take that tone with me. Tone 这个单词很常用的一个短句子嘛，你可以理解为就别用那个语气跟我说话，对吧？啊，好。比如说，我们听一下这个电影片段。Hey, don't take that tone with me, young lady. 啊，别用这语气跟我说话，是吧？OK。呃，单词很快。Pattern只有本课语法呢，其实就是二十课的动名词。动名词呢，要么就是动词后边加名词，要么做主语。啊，这些东西呢，大多数二十课我们都讲过了，在这儿也不多说。
+
+## 00:05:58–00:06:32
+
+啊，这些东西呢，大多数二十课我们都讲过了，在这儿也不多说了。所以很多的时候其实都是各种各样的。到后来我们其实动名词提的少，都是直接当做一个短语了。比如说 enjoy doing something，咱们就不提那个 doing 是动名词了，其实没有太大必要。你只要记住 enjoy doing 就可以了，对吧？所以在这儿呢，基本上咱们就是借着这些句子顺便回顾一下。比如说 eating between meals is bad for you，你看这就是 eating eat 这个动词变成动名词了之后，可以放在六一二三四五六一。
+
+## 00:06:28–00:07:02
+
+变成动名词了之后，可以放在六一二三四五六一主语的位置去做主语，对吧？好，呃，在在两个餐之间吃东西对你身体不好。But I like eating between meals.但是我喜欢呢，like doing something，做了主谓宾宾语，对吧？往里边去带，这是第一个。第二个，Would you mind checking these figures?你介不介意检查一下这些数据啊？So it's no use asking me to check your figures. I'm busy checking my own.所以你这个
+
+## 00:06:58–00:07:32
+
+Check your figures. I'm busy checking my own. So you this requirement I do to do something is no use doing something, right? You require I to check your this data is useless. Why? I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data. I'm busy checking my own data.
+
+## 00:07:28–00:08:02
+
+See somebody doing something. 上一课文章见过是吧？I didn't see him getting into the car, but I saw him driving it. 我没有看见他正在进车，但是我看见他正在开车了，对吧？See somebody doing something. 最后一个说，You must be used to giving speeches now. 这个地方其实是 be used to doing something. 当时我讲过，迅速再复习一下，比较常用的 be used to do something 被用来使用去做某件事情，be used to doing something 习惯于。第三个，三十一课咱学。
+
+## 00:07:58–00:08:32
+
+Doing something,习惯于第三个三十一课咱学的used to do something啊，叫做过去常常对吧？所以这里实际上是一个十七课的一定式和be used to doing something的一个连体，叫做你一定是习惯于演讲了吧？现在对吧？哎，是的，呃，但是呢，我总是look forward to doing something，期待于给哎期待于再讲一个再讲一个对吧？就是我总是期待下一个。OK，这第四个没什么说的了。那Recap本课习惯用法就这么几个。
+
+## 00:08:28–00:09:02
+
+那 recap 本课习惯用法就这么几个，加上作业呢，单词造句、电影片段、指定留言。那因为语法放到一起了，pattern drill 你也写一下。然后二十课的这个动名词，对吧？哎，包括六十八课最重要的，哎，四十四课，哎，也要去写一下，然也要去复习一下。然后其实主要都是各种各样的习惯用法，四十四课、六十八课是习惯用法特别多的那两课，对吧？包括二十课，其实红皮书呢，其实就是你去看各种动词后边加 i n g 这些。
+
+## 00:08:58–00:09:32
+
+书呢，其实就是你去看各种动词后边加ing这些，基本就够了，对吧？这些其实是我们没有办，只能日积月累的，不可能一口气儿讲完的东西。就像动词后边加个介词或加个副词那种短语，只能日积月累，没有任何办法能一口气儿全背完，那是不可能。直到今天我还有不会的，所以我们就坚持往后去学英语，坚持往后去用英语，哎，见一个记一个就好了，好吧？所以也帮我们放松了一些我们这个焦虑的心情。那以上呢，就是本期。
+
+## 00:09:28–00:09:56
+
+一些我们这个焦虑的心情。那以上呢就是本期视频的全部内容了。如果各位喜欢我们的课程呢，欢迎各位关注、订阅、一键三连，分享给那些需要的朋友，来帮助我们快速成长。See you next time.
+

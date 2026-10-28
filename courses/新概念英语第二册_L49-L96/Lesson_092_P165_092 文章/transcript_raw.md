@@ -1,0 +1,112 @@
+# 092 文章
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn New Concept English Book Two Lesson Ninety Two Story. Hope you gonna enjoy it.好，呃，本文不难，呃，我们直接看一下这个文章的标题叫 Asking for Trouble，啊，就是自己找麻烦，自己寻求麻烦，就自找麻烦，是吧？问的问题是 Why did the policeman ask the rider to come to the police
+
+## 00:00:28–00:01:02
+
+问题是 why did the policeman ask the rider to come to the police station? 那这肯定有麻烦了，因为警察要求作者去警察局，这肯定是有麻烦了呗。我们看一下什么麻烦啊？进入文章，文章还好，没有过多的长难句啊，更多的是非常多之前学过的语法和习惯用法，特别多。我们一个一个看。It must have been about two in the morning when I returned home. 你看 must have been 这地方就出现了一个十七个学，叫当时一定是，当时一定是大概两点。
+
+## 00:00:58–00:01:32
+
+出现了一个十七个雪，叫当时一定是，当时一定是大概两点钟早晨。什么叫早？凌晨两点钟。当我回家的时候，第一句话结束。第二句话，I tried to wake up my wife by ringing the doorbell, but she was fast asleep. So I got a ladder from the shed in the garden, put it against the wall, and began climbing towards the bedroom window. 哎呀，好长的一句话。但事实上，你把 but so and
+
+## 00:01:28–00:02:02
+
+事实上，你把 but so and 都摘出来之后，其实这句话就那么回事儿。所以，其实对于各位来说，你完全不需要像我这样从头读到尾，然后再摘一遍。就您正常，我还原一下。如果您水平还可以了之后，正常读这句话的逻辑是什么？就是我尝试着叫 wake up 二十七个，咱学过叫醒我老婆。通过什么方式呢？介词后边加 I N G，对吧？这是二十个学的。 Without 后边加 I N G， instead of 后边加 I N G，对吧？
+
+## 00:01:58–00:02:32
+
+Without后边加ing, instead of后边加ing,对吧? By后边加ing,通过什么方式呢?通过ringing the doorbell,通过按这个门铃。好, by doing something.那ring the doorbell,五十一课咱学的。第一句话结束了。看到but了吗?我尝试叫醒我老婆，通过按门铃的方式。但是呢, she was fastly,她熟睡着。所以呢,于是呢, I got a ladder from the shed in the garden,说我去拿了一个梯子从什么地方。
+
+## 00:02:28–00:03:02
+
+Garden. So I went and took a ladder from什么地方呢？从这个shed里边，这个shed什么棚子？从这个棚子里边，哪儿的棚子呢？In the garden，在院子里边的棚子里边，拿了个梯子。Put it against the wall.放置它against倚靠啊倚靠啊the wall against the wall against the wall倚靠着墙，就是你想吧，把梯子这样搭在墙上，对吧？好，第三句话要结束了。And然后你能看到为什么它其实虽然句子很长，但我基本不管它。
+
+## 00:02:58–00:03:32
+
+你能看到为什么它其实虽然句子很长，但我基本不管它叫长难句嘛，因为它没有从句套从句，它基本全是并列句，就是二十五课咱们学的 and but so 啊这些并列连词，所以并处理并列连词不用专门处理，从第一句话慢慢读读到最后一句话就可以了，因为含义是顺接着下来的，对吧？所以它不能叫长难句，虽然很长啊，但不难。然后呢， began climbing，主语一致，所以肯定是 I began climbing，直接删除了。 began doing something 啊，开始做某事儿，开始爬。
+
+## 00:03:28–00:04:02
+
+熟了. Begin doing something. Ah,开始做某事儿，开始爬. Towards the bedroom window,朝向这个卧室的窗户就爬过去了，对吧？就没什么可说的，很简单. I was almost there when a sarcastic voice below said, "I don't think the windows need cleaning at this time of the night." 结束啊，咱们在这儿给你画一道，告诉你结束了。我马上就要到那里了。啊，虽然有个连词，但是这句子很简单，所以没什么可说的。那包括这儿，其实。
+
+## 00:03:58–00:04:32
+
+言辞，但是这句子很简单，所以没什么可说的。那包括这儿其实用过引号，还对吧？引号还告诉你这是一句话。第一句话就是我快到那里了，哪里了？刚才说了 bedroom window。当 a sarcastic voice below said，一个特别讽刺的嗓音在底下说道：“啊，警察嘛，讽刺还讽刺，而没有说不许动啊，举起手来啊，你给我下来。”没有啊，还挺搞笑，逗了逗他。这说的是什么呢？I don't think the windows，我不认为这个窗户怎么样呢？Need cleaning。
+
+## 00:04:28–00:05:02
+
+The windows. I don't think this window is how. Need cleaning. This is the one we just reviewed in the previous class. This is something that you might forget. Need doing something. Need this word is a special usage. It means that doing something is equal to need to be done. What does it mean? It means that it needs to be cleaned. It is a passive sentence. So this sentence means that I don't think the window needs to be cleaned. At this time of the night, it means that at two o'clock in the morning, it needs to be cleaned. It means that it needs to be cleaned.
+
+## 00:04:58–00:05:32
+
+需要被清凌晨两点需要被清理，就那意思是说你是你肯定不是清理窗户嘛。I looked down and nearly fell off the ladder when I saw policeman.啊，是这不能叫长难句，因为都是就像这样的句子，从第一个单词你慢点读，读到最后一个单词都能读懂。我朝下看，然后几乎 fell off the ladder，几乎从这个梯子上掉下去了啊。fell 就摔倒嘛，off 就离开嘛，就摔下这个梯子。当 I saw policeman，当我看到
+
+## 00:05:28–00:06:02
+
+这个梯子。当 I saw policeman，当我看到一个警察的时候，那就没做坏事。凌晨两点，爬爬这个梯子也不太是回事儿，是吧？I immediately regretted saying answering in the way I did， but I said I enjoy cleaning windows at night。啊，这句话真的是很欠，也不是长难句啊。但是呢，这地方有一个小的语法要简单提一句。以前我们学过啊，我迅速的后悔了。
+
+## 00:05:58–00:06:32
+
+前我们学过啊，我迅速的后悔了回答。In the way I did, in the way就以这样的方式，什么方式呢？I did叫做我回答的方式。所以这句话翻译成叫我迅速的就后悔了，以我回答这个问题的方式去回答这个问题，就是我以什么方式回答的这个问题呢？这个事儿呢，我后悔了这个方式了。其实就是我后悔了我回答的内容。说的是什么呢？啊，这个是咱们哪课学的呢？呃，首先。
+
+## 00:06:28–00:07:02
+
+说的是什么呢？啊，这个是咱们哪课学的呢？呃，首先这个 as 和 in the way，我们管它方式状语从句嘛。其实这个地方我们在婚有一课婚礼那课我们学过，对吧？包括新三我们还会学啊。The way，但是 I said 我说到，你看他怎么回答的？I enjoy cleaning windows at night. 啊，枪火说，我就喜欢擦玻璃啊，就喜欢擦玻璃 at night 在晚上啊，就是有钱难买爷乐意，对吧？我就喜欢大晚上擦玻璃。
+
+## 00:06:58–00:07:32
+
+就是有钱难买爷乐意，对吧？我就喜欢大碗擦玻璃。接着看，So do I。这是新新学的，没什么说的了。我也是。如果您不知道这个语法的话，直接翻红皮书是吧？初级、中级直接去翻啊。So 和 Neither 放到句首的这个，我也是怎么怎么来？这是咱们新新学的。Answer the policeman in the same town。回答到这个警察回答到 in the same town，就是用完全相同的语气回答到。接下来，Excuse my interrupting you。
+
+## 00:07:28–00:08:02
+
+接下来, excuse my interrupting you. I hate to interrupt a man when he's busy working, but would you mind coming with me to the station?啊，这句话很很长，但它是口语句型，所以基本上口语当中大多数不会说长难句啊。那我们一个一个看，那为什么这么多下划线呢？习惯用法非常多。原谅我怎么样呢? Interrupting you,这是六十八课咱学的。Would you mind my opening the window? Would you mind opening the window? Would you mind me open
+
+## 00:07:58–00:08:32
+
+Would you mind opening the window? Would you mind me opening opening the window? 对吧？接着说，Would you mind Leo's opening the window? Would you mind Leo opening the window? 我刚才说这句话，如果你迅速反应过来，六十八课您掌握的非常好。没反应过来，你相信我，先去回去学一遍。那我在这儿先带着各位回顾一下。Would you mind opening the window? 问的是你介不介意把窗户开开。但如果我说的是 Would you mind my opening the window? 就是你介不介意我把窗户开开？那
+
+## 00:08:28–00:09:02
+
+My opening the window,就是你介不介意我把窗户开开？那这儿为啥用my呢？英语习惯，对吧？你不用管什么逻辑主语，这个什么那个那，你不用管这些，你就记住它的习惯是这样的。考试一定要加这个my或者lils，但是呢，生活当中完全可以用，就非正式状态下完全可以用me呀，lils啊这样的一个单词没有问题啊。所以这句话呢，就是请原谅我打扰了你，哎，打断了你，对吧？然后呢，I hate to interrupt.
+
+## 00:08:58–00:09:32
+
+问了你，对吧？然后呢？I hate to interrupt, man. 我特别不愿意，特别讨厌打扰一个人，打扰别人。当 be busy doing something，对吧？当他忙于工作的时候，我特别不愿意打。你看这俩人斗闷子呢，对吧？原来你不愿意下来，反正我也不说破。我说抱歉了，但我不得不打扰你。虽然我不愿意打扰，但是你介不介意 coming with me to the station？你介不介意？Would you mind doing something？对吧？这六十八课咱学的，在这复习。你介不介意和我一起回趟？
+
+## 00:09:28–00:10:02
+
+六十八课咱学的，在这复习，你介不介意和我一起回趟局子？哈，对吧？和我回趟警察局。你看他又逗闷子，他说我要好吧。I'd prefer to stay here。五十二课咱们学了prefer这个单词的好多好多用法，回去我相信您基本上可能会忘了，回去复习一下，就当今天家庭作业，好吧？说我宁愿待在这儿，谢谢。I said，哎，终于嘴软了，说You see, I've forgotten my key。他说你瞧，我忘了我的钥匙了。
+
+## 00:09:58–00:10:32
+
+My key. He said, "You see, I forgot my key." So, two people chatted for so long, teasing for so long. The girl finally said, "The reason is that you see, I'm not here to steal anything. I just forgot my key. This is my house." You what? He called. "What? What?
+
+## 00:10:28–00:11:02
+
+Unfortunately,前两篇文章刚出现了unfortunately。哎，这篇文章就是fortunately。很幸运的是，那un就是不幸运的是。The shouting wake up my wife, who opened the window just as the policeman had started to climb towards me。说这个叫喊声，看它做主语，shout是动词加ing变成名词动名词，叫醒了我媳妇儿，我老婆。然后这儿就出现了一个特别大的。
+
+## 00:10:58–00:11:32
+
+老婆，然后这儿就出现了一个特别大的乌龙，就是我们的原文，我不知道后面，因为它这个新概念总在改版，虽然它每次改的地方都很小很小，甚至不改，但是它总修订，是吧？我不知道各位现在拿的那个这个有没有逗号，高概率应该是没有这个逗号了。这是新概念这个书可能目前为止我观察到唯一的一个知道的唯一的一个错误，就是这个逗号应该加上，不加上就是限定了，限定意味着潜台词就是我不是一个。
+
+## 00:11:28–00:12:02
+
+加上就是限定了，限定意味着潜台词就是我不是一个媳妇儿。按照他们这个装束，高概率不是阿拉伯国家，对吧？不是那个能呃一夫多妻制的，是吧？所以可能就是一个媳妇儿。那所以你要加个逗号，非限定性定语从句嘛，你不能限定嘛，对吧？所以这个可能是他的一个错误啊。说然后我老婆怎么样了呢？Opened the window,打开了这个窗户。Just as正当the policeman started to climb towards me，这都很平铺直叙了。说警察开始。
+
+## 00:11:58–00:12:32
+
+I'm towards me. This is very straightforward. So, the police start, start how? They crawl towards me. This police looks quite chubby, right? Crawling up is quite tiring, right? Okay, the habit usage has one: hate to do something. Two sentences are done. It's similar to like to do, love to do. I hate to see birds in cages. I don't like to see birds in cages. I hate to see birds in cages. I don't like to see birds in cages. I hate to see birds in cages. I don't like to see birds in cages.
+
+## 00:12:28–00:13:02
+
+两个习惯用法串一块儿去了，hate to do，hate to see。第二个是 see somebody doing something。哎呀，我是三个习惯用法。第三个是 laugh at somebody，对吧？我很痛恨看见他们嘲笑你，我不喜欢看这件事儿，对吧？嗯，那本课呢习惯用法就一个，对吧？文章还好，并不难，也没有什么长难句，基本上以复习为主。前面学的越好，这课越简单。习惯用法造句吧，文章熟读成诵。然后置顶留言找重复间隔学习材料，包括课堂笔记那些，对吧？
+
+## 00:12:58–00:13:27
+
+会员找重复间隔学习材料，包括课堂笔记那些，对吧？呃，那以上呢就是本期视频的全部内容了。如果各位喜欢我们的课程呢，欢迎各位关注、订阅、一键三连，分享给那些需要的朋友，来帮助我们快速成长。See you next time.
+
