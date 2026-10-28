@@ -1,0 +1,52 @@
+# 096 单词
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello, everyone. Welcome to Capsule Academy. This is Leo. Today, we're going to learn new concept English, second volume, last lesson, lesson ninety-six. Uh, congratulate everyone. Finally, we have learned the last lesson. Ah, let's look at the words. Old habit. How to express making a fool of oneself, embarrassing oneself. With this question, study hard. Uh, congratulate everyone. Again, congratulate everyone. We have learned the last lesson of new two. According to my experience in offline teaching.
+
+## 00:00:28–00:01:02
+
+最后一课，根据我原来线下教学的经验啊，能认认真真把作业也写完，学到这一课的人真的是凤毛麟角，人很少。如果您学到这儿了，嗯嗯，弹幕留个言什么的，证明一下你曾经来过，很牛很牛了，这是一个特别很好很大的成就啊，祝贺你！咱们还是耐下心来把这几个单词看完，最后一课也没什么东西了，咱们一起看一遍啊。第一个单词 festival festival。
+
+## 00:00:58–00:01:32
+
+一遍啊，第一个单词 festival festival 这个单词可能你从小就见过，尤其像 spring festival 对吧？春节，那我就说 the spring festival lasted for fifteen days last year. Next one 四句型转换，然后呢， I saw her talking to Leo at the festival 在这个节日上，对吧？我看他跟他正在说话呢。 Next one 四句型转换啊， festival，呃，那。
+
+## 00:01:28–00:02:02
+
+呃，那注意力集中，咱听一个电影片段。 Well, in that case, I'll see you this evening at the festival, Emmet. 好，接下来下一个单词 lantern, lantern 就灯笼啊，灯笼。那咱们造句子呗，它是名词，找动词嘛。 They tried to set all the lanterns on fire last night. 九十五课咱刚学的 set something on fire. Next one, 说 this kind of lantern is very popular with little kids. 小孩儿。
+
+## 00:01:58–00:02:32
+
+This kind of lantern is very popular with little kid.小孩儿很受小孩儿欢迎，对吧？最后一个，He claimed to have seen lots of lanterns in the sky.他声称他在天上看见了很多的灯笼。Okay,海市蜃楼吗？啊，lantern.下一个单词，spectacle. Spectacle呢？景象、景色，对吧？像这种图当中很美的景象、景色，全可以叫spectacle.那我们就不学它了。我们学一个它的常见的习惯用法，make a spectacle a spectacle of.
+
+## 00:02:28–00:03:02
+
+习惯用法 make a spectacle a spectacle of oneself什么意思呢？哎，英文叫 to behave foolish foolishly or improperly in public。那汉语的意思就是出洋相，丢人了，对吧？哎，丢人现眼了。那 foolishly 就是愚蠢的， improper improperly 就是不合适的，对吧？OK，造个句子嘛，口语当中很常用。Don't make a spectacle of yourself。你别让你自己在这丢人现眼，对吧？好，再来说，He got drunk and made a spectacle.
+
+## 00:02:58–00:03:32
+
+再来说, he got drunk and made a spectacle of himself in the club, 对吧？他喝多了，然后在这个俱乐部里边怎么样？哎呀，丢人丢大发了。Make a spectacle of oneself. Okay, 那咱注意力集中，咱听个电影片段. I must have made a spectacle of myself, running away like yeah yeah. 哎，你看这里，实际上 make must have made 复习了十七课 must have done，对吧？就各位一定要知道，我们二册学完了，接下来的路是什么？首先肯定是三册。接
+
+## 00:03:28–00:04:02
+
+我们二册学完了，接下来的路是什么？首先肯定是三册。接下来呢，我们看很多的电影美剧当中，你会发现里面有非常非常多的语法结构，因为咱们语法基本学完了，你几乎全看得懂了。如果你耐下心来，对吧？看一句，暂停一句，你仔细去分析，你会发现哇，好多句子我们都看懂了。这就是我们认认真真学新二的回报啊！最后呢，我补了一个单词，是我们原文当中出现的啊，叫moving。这个单词呢，咱们原来会，但你会的不是这个。
+
+## 00:03:58–00:04:32
+
+这个单词呢，咱们原来会，但你会的不是这个单词，你会的是 move 那个单词的 I N G，也叫 moving。只不过那个单词表示移动啊，这俩单词长相是一样的，对吧？只不过 moving 这个单词形容词表示很感动啊，很感动。比如说我们造句子嘛，比如说 I find that music very moving. Ah, whenever I heard it, I couldn't style, I couldn't help but cry. Ah,忍不住的流泪，哎，觉得非常的令人感动。 Next one, say only then. 其实就课咱学的倒装。
+
+## 00:04:28–00:05:02
+
+令人感动. Next one is only then. 其实九课咱学的倒装. Did I hear a very moving story from him? 只有在那个状态下，只有在那个时候，我才从他那儿听到了一个故事啊，特别感人的故事。最后一个, people from all over the world know this moving story. 哎，全世界的人都知道，呃，这个卖火柴的小女孩，这个 moving story，对吧？OK. 那 recap 除了单词以外，习惯用法就这一个 make a spectacle of oneself. 你以后在电影当中一定见得到，好吧？
+
+## 00:04:58–00:05:32
+
+A spectacle of oneself. You'll see it in the movie. Okay, homework? Words, sentences. We'll take the last shift, right? If you've written all 95 lessons, this one won't be bad. We'll write it carefully, and we'll finish it. We'll have a beginning and an end. A movie clip, and then repeat the interval. That's all for this video. If you like our course, please follow us, subscribe, and share it with those who need it to help us grow faster. See you next time.
+
+## 00:05:28–00:05:41
+
+
+
