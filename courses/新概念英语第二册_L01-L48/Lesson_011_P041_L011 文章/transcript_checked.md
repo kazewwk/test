@@ -1,0 +1,128 @@
+# L011 文章
+
+快速模式：仅按词时间去除重叠，未经第二模型或人工校对。
+
+## 00:00:00–00:00:30
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn new concept in English book two, lesson eleven, story. Hope you can enjoy.好，那我们直接看文章啊。说 I was having dinner. 好，注意提一个小点，十一课不存在新的语法，十一课是对前十课的一个复
+
+## 00:00:30–00:01:00
+
+习啊，每个单元都是如此。每到这一课，我就会提醒各位，这课我们就是复习前面咱们学到的一些关键的语法。比如说 was having dinner，这是咱们第七课学过的，对吧？过去进行时。When 当什么什么时候？说我当时啊正在吃晚餐。At a restaurant，在一家餐厅。When 当什么呢？Tony still came in。当他进来的时候，我正在吃晚餐。Tony
+
+## 00:01:00–00:01:30
+
+说：“这个Tony老师啊，worked in a lawyer's office years ago。说他在哪？他工作在什么地方工作呢？A lawyer's office, lawyer's office叫律师的办公室啊，其实就是律所了。各位可以理解为years ago，许多年前啊，多年前。But但是呢，he is now他现在呢working at a bank。注意，他现阶段正在银行工作，
+
+## 00:01:30–00:02:00
+
+并不是指他现在人正在银行工作。这我们第二课学过，be doing可以有一个用法，叫表示现阶段，对吧？比如说，我可以说我最近在学日语，那叫做 I'm learning Japanese these days。但我现在实际上正在给大家上英语课，但是呢，进阶现阶段我正在学习日语，叫做 I'm learning Japanese these days。这很好的复习了第二课咱们学过的一个现在进行时的用法。Okay, he gets
+
+## 00:02:00–00:02:30
+
+a good salary. 好了，立刻又转了一个时态，变成了什么时态呢？一般现在时。我就陈述一个客观事实，说他呀，薪水还不错。Get a good salary. 在讲单词那个部分，我们提到了。But但是，he always他总是怎么样呢？注意看，它放在动词的前面，这个也是我们之前第二课就学过的，对吧？好，他总是怎么样呢？Borrows money from his friends. 好，借
+
+## 00:02:30–00:03:00
+
+钱从他朋友那里借钱，不是借钱给他的朋友啊，是从他朋友那里借钱借出来，借到他自己手里啊。这个习惯用法一会儿我们就会造句，叫 borrow something from somebody。然后注意一下它的时态，依旧是陈述客观事实，描述的是一个他的其实是生活习惯了，类似于对吧？就自己有钱，但是呢，总找别人借啊，这是描述这样一个生活习惯。And never pays it back.然
+
+## 00:03:00–00:03:30
+
+
+
+## 00:03:30–00:04:00
+
+来了。再然后呢？他用了一段文字去给你交代说 Tony 之前是干什么的，他的生活习惯是什么样的，陈述了一些客观事实。借总借钱，但总不还，对吧？然后又回到了这个场景当中。这个场景是 Tony saw me, Tony 看见我了, and came, 然后过来了, and sat at the same table, 然后坐在了一个桌子上。又又转化成了一般过去时，因为我在陈述过去的事情了，对吧？
+
+## 00:04:00–00:04:30
+
+He has never borrowed money from me.他呀一直都没从我这儿借过钱，从过去持续到现在就从来没借过钱。你看，典型的现在完成时，对吧？He has never borrowed money from me.当然了，如果在美式英语当中，你可以直接把它变成He never borrowed money from me.啊，美式英语当中大多数情况下可以直接用一般过去时去替代现在完成时。Okay, While he was eating,
+
+## 00:04:30–00:05:00
+
+说当他正在吃饭的时候，当他正吃的时候，啊，这个写文章的这个男主啊，赵倩儿啊，他就开始做了一件事，说I asked him to lend me twenty pounds.说我呀要他去借给我二十磅啊，我开始要求他去借给我二十磅啊，他不是总找别人借钱吗？我故意逗着他玩，我要让他借我二十磅。OK，所以这有一个习惯用法叫ask somebody to do something，
+
+## 00:05:00–00:05:30
+
+要某人去做某件事情. Very good. To my surprise, 这个习惯用法我们之前见过了，叫 to somebody's surprise. 令某人感到惊讶的是, he gave me the money immediately. 他把钱给我 immediately, 立刻啊. 所以刚才我们讲到了嘛，对吧？副词最主要的作用之一就是说这个句子当中的动词的状态形式方式的，对吧？比如说
+
+## 00:05:30–00:06:00
+
+give 叫做给，那立刻就给和给这个感受不太一样，对吧？就是你看他虽然经常找别人借钱，但是呢，当我找他借钱的时候呢，他没犹豫没含糊，直接就借给我了啊，就能起到这样一个小的作用。有没有 immediately 就会出现这样一点小的作用，对吧？那你如果语感特别好，在这儿你可能想到的问题就是，哎，这个人他总找别人借钱，为什么他我一管他一借钱，他立刻就借给我了呢？对吧？文章当中这个我了呢，你就会继
+
+## 00:06:00–00:06:30
+
+继续往下读了，解决这个问题。然后 Tony 说了一句话啊，注意引号，I have never borrowed any money from you. 我从来都没向管你借过钱，没向你借过钱。 Tony said. Tony 说道，哎，这是是实话。 So 所以呢，Now 现在 you can pay for my dinner. 现在呀，你可以支付我晚餐的账单了，你可以为我的晚餐买单
+
+## 00:06:30–00:07:00
+
+了，OK, very good,哈，很有意思。就为什么立刻给借你这钱了呢？你你再想一下标题啊，礼尚往来，我借了你二十块钱，你请我吃顿饭，不过分吧？对吧？OK, so pay for my dinner, pay for something叫做支付某一个东西啊，就是花钱去买某个东西啊。当然，它指的是支付的意思，它并不是买啊，它是付款的意思。OK, 那接下来呢，我们就看把本课的习惯用法摘出来，然后
+
+## 00:07:00–00:07:30
+
+我们尝试拿这些习惯用法去造句啊。我们一个一个来。第一个，get a good salary。单词部分我们讲过了，我们接下来再讲一下啊。比如说，我们结合第七课的，I got a good salary a few years earlier。张嘴跟我读啊，我几年前获得了一个很好的收入。Continue，变成一般疑问句，Did you get a good salary a few years earlier？以及Why did you get a good salary a few years
+
+## 00:07:30–00:08:00
+
+years earlier. Okay, there you go.下一个习惯用法叫 borrow something from somebody，从某人那个地方借来某个东西。Okay，注意这个点。那比如说我们结合第十课和第十三课，好，呃，第三课的单词。注意，你看在这儿我结合的不是其他习惯用法了，我结合的是其他单词，叫做 I borrowed some musical instruments。第十课的单词 from that friendly waiter。第三课的单词，
+
+## 00:08:00–00:08:30
+
+在这儿我想提什么呢？大家最容易忘了的，其实就是单词和习惯用法这种东西。语法是课课都出现，你倒是不那么容易忘，对吧？单词总忘怎么办？有几个好的办法。除了你经常往前去翻，另一个就是接下来再去造句的时候，习惯用法造句，或单接下来单词造句的时候，你记着不停的结合前面学过的单词或习惯用法，当然还有语法，
+
+## 00:08:30–00:09:00
+
+你不停的拉着它，对吧？你你 musical instrument 在那课你印象不是特别深，到第十课的时候，说我借了一些东西，借什么呢？你就开始往前翻，别自己去查新的单词，咱就把之前的单词先背下来，对吧？过犹不及啊，先掌握之前的就可以了。来一个，那接下来我还可以造一个句子，叫做 Did you borrow anything from that detective？你看第七课的 detective，我又给他拉过来造一下句，所以在这儿其实给大家顺道
+
+## 00:09:00–00:09:30
+
+分享了一下如何去背单词，就是接下来造句的时候把之前的单词拉过来，一起去放在一个句子当中。OK，Very good。那接下来呢，我们看一个小的电影片段，它出现了叫做 I'm gonna borrow a car from 啊，注意 gonna 指的是口语 be going to do 的 gonna do。OK，意思是一样的，叫做我要我打算啊借一辆车从谁那个地方。
+
+## 00:09:30–00:10:00
+
+Wow, the way to Del Rio. We'll borrow a car from Roberto. You can't afford one. I don't want to register. Look, I'll call you in a couple days. Promise. Yes, I do. Okay, we're going to borrow a car from somebody. From某人那个地方借一辆车。来一个，Kanini，接下来下一个习惯用法叫做要求某人去做某件事情。啊，我们尝试去结合之前学过的各种习惯用法，对吧？其实
+
+## 00:10:00–00:10:30
+
+跟刚才如何背单词思路是一样的。您如何把那些习惯用法背下来呢？接下来造句的时候，不停的拉着他们。OK，比如说我们结合第十课的 play jazz，跟我一起读。My grandfather asked me to play jazz yesterday. Next one，结合第六课的 stand on my head. My father asked me to stand on my head yesterday. 啊，每个人对对我做出了一些要求。Continue，
+
+## 00:10:30–00:11:00
+
+哎, lend somebody something,借给某人某物,对吧?然后呢, pay it back,哎,把它还回来。这个我们在文章当中提过了,对吧?就是还钱啊。在这个地方理解为,来跟我读,My girlfriend lent me some money, and asked me to pay it back a few days earlier.你看, a few days earlier也是我们之前学过的习惯用法。OK, one more,最后一个,My best friend
+
+## 00:11:00–00:11:30
+
+asked me to send a postcard to him last month. 注意 send something to somebody. 第三课咱们学的习惯用法，来一个。那在这儿还是总结一下，都放在一起。思路就是把之前的习惯用法拉过来，和本课的习惯用法进行一个结合。 Continue. 接下来我们看一个小的电影片段，出现了叫 ask somebody to do something，叫做要你坐下来啊，让
+
+## 00:11:30–00:12:00
+
+你坐下来啊，来了。 Yeah, I'd ask you to sit down, but you're not going to anyway. And don't worry about the vase. What is? That vase. I'm sorry. I said don't worry about it. I'll get one of my kids to fix it. How did you know? Okay,再来一遍。
+
+## 00:12:00–00:12:30
+
+好，下一个小的习惯用法叫 pay back，还回来，对吧？它最基本的意思就还回来。那我们经常还的是钱，对吧？Pay back, very good.跟我读，I gave him some money and asked him to never pay it back.你注意，你看啊，我们结合了多少个习惯用法？Give somebody something，给某人某物；ask somebody to do something，对吧？I never pay it back，啊，是吧？我给他了一些钱，然后要求他永远不用还这
+
+## 00:12:30–00:13:00
+
+些钱，你永远不用把这些钱还给我了。Okay, very good.那还我还可以说就don't pay it back啊，不用还回来了，没事儿，没多少，对吧？Don't pay it back. Okay,接下来我们看一个小电影片段，叫I'm not paying this back.那it this都OK了，是吧？小的代词I'm not paying this back，就我不会把这个还回来了。Okay, take this money and get on this bus, and I promise you I will never bother you again. Shut up! Please get
+
+## 00:13:00–00:13:30
+
+on the bus. Please get on the bus. Why are you doing this? Because they think you're some kind of a threat. I I can't explain it right now. Just trust me. If I see where you're going, you will not be safe. I'm not paying this back. I consider it asshole tax. It's fine. Remember, stay out of major cities for at least a couple of days, okay? Okay, I'm not paying this back.啊，我不还这个钱了。来一个，接下来 pay for something，支付某个东西，比如说 the dinner was paid for
+
+## 00:13:30–00:14:00
+
+
+
+## 00:14:00–00:14:30
+
+我们如何才能啊这个支付得起这个东西啊？I don't know. OK，那一个好。Recap本课关键点，当然除了文章以外啊，您要读熟。那老习惯就是这些非常关键的习惯用法，这是比我们新一多了很多的东西，对吧？OK，那家庭作业呢？习惯用法，各位要去造句。我上课给大家造了一些句子，讲了一些思路，对吧？您模仿我这些思路，自己再去造一些句
+
+## 00:14:30–00:15:00
+
+子，老习惯五个文章呢，跟读至熟读成诵，对我们的作用是内化单词、语法和习惯用法，并且提升大家的听力、口语和写作啊，不不是提升了，是我们接下来的练习啊，需要文章各位读的非常熟，我们才能做这些练习，对吧？那当然也同时是提升。OK，那以上呢就是本期视频的全部内容了。See you next time。
+
+## 00:15:00–00:15:07
+
+
+

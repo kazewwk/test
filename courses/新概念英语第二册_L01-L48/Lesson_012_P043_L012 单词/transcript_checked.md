@@ -1,0 +1,124 @@
+# L012 单词
+
+快速模式：仅按词时间去除重叠，未经第二模型或人工校对。
+
+## 00:00:00–00:00:30
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn New Concept English Book Two, Lesson Twelve, Words. That old habit. Before entering the formal class, we will first look at a few questions. First, how to express a lucky person. Second, how to express feeling proud of you. Feeling proud of you. That with these two questions, hope you can enjoy. Good. Then we will first look at the first small word. We will look at the phonetic. Please read with me. It is
+
+## 00:00:30–00:01:00
+
+叫做 luck luck，就是好运气啊，好运气。最简单，我们去祝福别人啊，祝你好运，就是 good luck 这样的一个小的短语。那 luck 这个单词，其实我们可以把它做几个小的扩充，比如说我们现在看到 good luck 的这个 luck，它是一个名词，它最常见的另一个 lucky，对吧？OK，啊，就表示的是形容词，幸运的。OK，那你注意 unlucky，U
+
+## 00:01:00–00:01:30
+
+N这个早在新概念一册untidy是吧？早在二十九课我们就讲过，U N表示一个否定。比如说tidy表示的是干净整洁的，那untidy就是不干净不整洁的。Lucky指的是幸运的，那unlucky就是不幸运的。我们不妨把这三个单词其实放到一起去背，对于大家来说反而可能记得更容易一些。OK，好，接下来呢，那我们说如何表示一个幸运
+
+## 00:01:30–00:02:00
+
+儿呢？你就能看到西方世界是非常喜欢狗的。他不说 lucky son, OK, 他不说幸运的儿子，不是这个意思。他用的是 lucky dog, 啊, you lucky dog, 啊，你这个幸运儿啊。OK, 好，那 you lucky dog, 刚才我们说了叫幸运儿。接下来我们在这个小的电影片段当中一起去看一下他如何去使用这个 you lucky dog, 啊，你这个幸运儿的。 This is a very nice specimen. OK, what's a Magdalena? A later
+
+## 00:02:00–00:02:30
+
+Cromagnon, without getting technical, it's the final culture of the Upper Paleolithic. Stones can speak, eh? So we get that time. Believe it or not, from a thrift shop, a quarter. You lucky dog! Me, I gotta go digging for this kind of stuff. Okay, you lucky dog!啊，你这个你运气太好了，是吧？就指的其实就是你是个幸运儿。Okay, here we go.接下来下一个单词啊，我们还是看一下音标，然后分一下音节。来，
+
+## 00:02:30–00:03:00
+
+captain captain连起来啊，captain there you go，那它指的是船长啊，a captain my captain啊，OK好，那既然它是，你看它现在是一个名词，你回想一下，第三课我们学过一个单词叫waiter，对吧？第六课我们学过一个单词叫做beggar，第七课我们学过一个单词叫detective，它本质上都是一码事儿，对吧？不管你是乞丐也好，你是船长也好啊，你是侦探也好，你是服务员也好，
+
+## 00:03:00–00:03:30
+
+你想拿它去造句，其实接下来无非就那么几招。最快的思思路就是你找一个动词，对吧？往前翻去找这些动词，或者找一个包含动词的习惯用法，造出来肯定句，然后再做别的句型的一些调整。那我在这儿给大家举一些小的例子，比如说，The captain has just asked me to help him，是吧？这个船长啊，刚刚询问我，要求我去帮他一下，是
+
+## 00:03:30–00:04:00
+
+吧？要要让我去帮他一下，ask somebody to do something. 十一课我们刚刚学过。接下来呢？I borrowed some money from our captain. 我找 I borrow something from somebody, 对吧？十一课咱们学了，复习这一课，找他借了一些钱。And he told me not to pay it back. 好，pay it back，也是我们十一课学的，就还钱啊。我找他要一些钱，然后 captain 说不用还了。OK，very good. 那你看这两句话肯定句出来了。
+
+## 00:04:00–00:04:30
+
+各位，如果想再往下去深耕一下，您做的事情是前两步，要么比如说你换一个时态，比如说 I'm going to, I'm gonna, I'm gonna borrow some money from our captain, 是吧？我准备要去管他借一些钱，我计划打算是这个样子的。你也可以再进行哎纵向的深耕，所谓的四句型的转换。OK，这儿一个。接下来下一个单词跟我一起读，叫做 sale。最后舌尖是要放在沙音上的
+
+## 00:04:30–00:05:00
+
+那它表示的意思是航行啊，往往比如说指的是这种船啊，帆船啊，在海上的航行，我们管它叫做sail。那拿它去造句呢？我们回顾一个小点，叫原文摘抄再加上变，就是您自己去看到这个单词，你不太会用啊，或者说你不太敢去用啊，不知道怎么去用的时候，回到原文，原文给了一句话叫Charles Ellison will sail from Portsmouth tomorrow.
+
+## 00:05:00–00:05:30
+
+好, Charles Ellison, C A大写,一看是一个人将航行从从后边那就是一个地名了,对吧?从 Portsmouth这个地方,您不需要知道它是哪,你只需要知道还是一个地方就可以了. OK,然后tomorrow叫做明天,那怎么变呢?变其实是跟四句型连在一起的,变个一般疑问句,Will Charles Ellison sail from Portsmouth tomorrow? OK, one一个.接下来,那我也可以用特殊疑问词when叫做When
+
+## 00:05:30–00:06:00
+
+will Charles Allison sail from Portsmouth? 他什么时候要从这个地方开航啊？ OK，来一个。 Next one，下一个单词跟我读一下，看一下音标啊。来，叫做 harbor， harbor。 OK，注意一下这两个单词，你看它们的拼写稍有不同。其实，在新一我们就提过叫 color，对吧？ C O L O U R 还是 C O L O R？有没有这个 U 这个字母？区别就是一个是英式写法，一个是
+
+## 00:06:00–00:06:30
+
+美式写法，但是差别没有那么的大。OK，好，那它们含义是一样的，都表示的是港口。各位两个单词，呃，会一个基本上就没有问题了。在英文世界大部分状态下，您会一个就随便用了。OK，您不用担心说，前比如说我给大家举个例子啊，前面是英式英英式的，后边是美式的，你说我在美国要用英式的，别人是不是看不懂？不用担心看得懂啊。OK，这是一个。那接
+
+## 00:06:30–00:07:00
+
+下来，那注意一小圈儿。如果它指的是港口的话，我们就结合六一二三四五六，先思考一下它在句子当中能做什么成分。六时间是不行的，主语没有问题，但是它去做主语的时候，你可能就要跟第十课的语法连起来。第十课我们讲的是被动，对不对？就是一定是这个港口被怎么怎么样了。港口它不是个人，它没法做出主动的动作，那它经常是被怎么怎么样了，对吧？那它没法，它不是
+
+## 00:07:00–00:07:30
+
+动词，它不能做二。那它可以做三，对吧？啊，就是这个港口被建啊建，他们建造了一个港口，对吧？那这个港口就是个宾语。当然了，它不能做四。四这个地方往往是一个副词，指的是动作的方式。你这个港口肯定不是个方式。五呢，做一个地点，地点是没问题的。完，我在港口散步，对吧？就我们随便一举一个例子就可以了，它肯定是可以地点的。那我们就造一个一，造一个三，造一个五。比如说，
+
+## 00:07:30–00:08:00
+
+this harbor was built many years ago。好，注意几个小点。首先，我们判断它是一的位置，对吧？然后 was built 是二，然后 many years ago 是一个六，是一个非常简单的 一、二、六，对吧？OK，主谓再加上一个时间。然后呢，它用的这个 was built 实际上是我们所谓的叫动词加动词的变化。第十课咱们学的，对吧？各位要整理一下，总结一下这些被动，以后造句子我们用得到。接
+
+## 00:08:00–00:08:30
+
+接下来，我们再造一个它在三的位置，叫做把它其实换成主动就好了呀。 They built this harbor many years ago, 是吧？那你看 they 一、二、三、六，对吧？他们许多年前建造的这个港口。好，最后呢，我们再来一个它处于五的位置，叫 I met your mom at the harbor many years ago. 那这可能是一个父亲给他的孩子去讲，对吧？他的恋爱史，说我在哪个地方见到你的
+
+## 00:08:30–00:09:00
+
+母亲的呢？叫 I met your mom 一二三，at the harbor。在哪个地方 met 这个动作发生了呢？在港口这个地方，时间是 many years ago。OK，那我给大家，哎，把思路讲清楚了，造了三个肯定句。各位在这地方，要么您暂停屏幕，要么课下去造句的时候翻回到这个地方去，把它做动词的变化，换个时态，或者是四句型肯定句、否定句、一般疑问句。
+
+## 00:09:00–00:09:30
+
+不多说了。下一个单词跟我读啊，看一下音标。来，proud，嘴可能要变化稍微大一点，你可以就是您张开嘴啊。我们汉语说话可以不张嘴，英语说话嘴型变化故意夸张一点。proud，OK，那proud这个单词它往往不单独使用，它往往是跟这个句型连在一起。这个习惯用法叫做be proud of，叫做我对什么什么感到骄傲。那比如说我们举个例子，
+
+## 00:09:30–00:10:00
+
+叫做 The captain is very proud of me. 好，你看前面是个主语，然后 be proud of somebody，对吧？某人啊啊。 The captain is very proud of me. 船长因为我而感到骄傲或自豪。或者说，我们结合一个之前的习惯用法，叫 I won a prize for the best lawyer in New York. 我会获得了纽约市啊或纽约州最棒的律
+
+## 00:10:00–00:10:30
+
+师啊，这样的一个奖项，and my parents are very proud of me. 然后呢，我的父母就因此而对我感到非常的骄傲和自豪。注意一下时态的转换，获得这个奖项，陈述的是过去的事情。那他们因为我而骄傲和自豪呢？你要用的是一般现在时，陈述客观事实。如果你用一般过去时了呢，它当然就会有不同的语言效果了。Was very proud of me. 那可能指的是当时
+
+## 00:10:30–00:11:00
+
+我得的时候吧，他们得这个奖项的时候，他们还挺因为我感到自豪的。后来呢，就又不行了，对吧？或者呢，这有另一种可能性，就是他的父母过世了，所以才用 was proud of me，因为他们人已经不在了。 Okay，好，那这是我们用的第八课的叫 win a prize for。 Okay，接下来我们看一个小的电影片段，当中出出现了叫做 he's proud of you，他因为你而骄傲，因为你而
+
+## 00:11:00–00:11:30
+
+of you, proud. Okay. Feel bad. Let him down. Oh, that's crap, kid. He's proud of you. We've been friends a long time, so I know him as good as anybody. Smart fella, ain't he? Okay, he's proud of you. Ah, very simple. He's proud of you. Ah, he's proud of you. He's proud of you.
+
+## 00:11:30–00:12:00
+
+连起来important, important好重要的，它是个形容词。我们想造句一定要看词性，你要带着一个名词。光有名词还不够，还要再去找动词，对吧？就是形容词要是这么想，形容词找一个名词，不一定非找名词。当然，如果是be的话，对吧？那大部分情况下找一个名词，然后还要再找一个动词。OK，比如说，接下来我会给大家找一个电影片段啊，我们马上会看到，
+
+## 00:12:00–00:12:30
+
+其中有一句话叫做 I got a very important question to ask you. 我有一个非常重要的问题要问你一下。这个一会儿我们进入电影一起看啊。这个跟我们之前学的习惯用法没有关系。接下来，比如说我们配合一个第三课的习惯用法叫 make a decision. Decision是一个名词，我只不过现在把它变成叫做 make a important decision，是吧？你比如说 last night I made a very important decision.
+
+## 00:12:30–00:13:00
+
+你看，我们无非就是把 make a decision 前面加了一个 very important，对吧？肯定句出来了，四句型转换，各位自己去做。接下来第四课 find something 形容词。你看 find something 形容词 important，恰好就是形容词，完美的放进去了。叫 I find this message very important. 我呀发现这个信息这个消息啊非常的重要。Find something 形容词。那把它变成一般疑问句，再变
+
+## 00:13:00–00:13:30
+
+成特殊疑问句，叫做 Why do you find this message very important? 为什么你认为这个消息非常重要呢？好，同理，各位要自己去变啊。 Okay,接下来我们看这个电影片段. Hey, folks, something I've been thinking about. I got a very important question to ask you. How would you like to go into the shrimping business with me? Okay.
+
+## 00:13:30–00:14:00
+
+Okay. I got a very important question to ask you. I got a very important question to ask you, man. Okay. Good. Very good. That. Next, recap. This class, ah, this video, we mainly learned. Of course, besides this class' words, there are also some small ones, whether it's phrases, or sentences, or collocations. Lucky dog, lucky dog. Lucky dog.
+
+## 00:14:00–00:14:30
+
+以及最后一句话叫做“我有一个非常重要的问题想问你一下”。好，那我们看一下本课的家庭作业。第一个老习惯，单词造句或者对话结合的是我们单词造句指南，依旧是造五个句子。接下来反复听电影片段，直到能听出这些关键的句子或者是短语。这个是一个非常好的实战类的听力训练。OK，呃，那如果大家喜欢我们的课程呢，欢迎大家关
+
+## 00:14:30–00:14:49
+
+注、订阅、一键三连，分享给那些需要的朋友。以上就是本期视频的全部内容了。See you next time.
+

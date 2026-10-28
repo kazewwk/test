@@ -1,0 +1,124 @@
+# L011 单词
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn New Concept English Book Two Lesson Eleven Words. 那老习惯进入正式课程之前，我们先看三个问题。第一，如何表达轮到你了。第二，如何表达收入不错。最后一个，如何表达礼尚往来。那带着这三个问题，Hope you guys enjoy. 好，那我们呢，先看第一个小的单词啊，跟我一起读一下，看着音标来。
+
+## 00:00:28–00:01:02
+
+我们呢，先看第一个小的单词啊，跟我一起读一下，看着音标，来加个儿化音，对吧？来，turn，turn，好，它其实有两个词性，一个是名词词性，一个是动词词性。名词词性呢，本文在标题当中出现了，它的意思叫做行为或者说举止。那动词词性呢，其实也有很多啊，比如说我们之前应该就见过了。那一会儿呢，我们再提一个，它叫变得啊，变化变得怎么怎么样。下一个单词跟我一起读一下，叫做deserve，然后注意重音符号。
+
+## 00:00:58–00:01:32
+
+读一下，叫做 deserve，然后注意重音符号，所以音节重音音节在第二个音节上。跟我一起读一下，叫 deserve，deserve，OK，叫做值得或者说应该怎么怎么样，OK，好，比如说文章的标题就是一个非常好的 American slang 啊，美国俚语或者说他们的一种习惯表达，就类似于我们说胸有成竹这样的一些成语或者歇后语一样。他说的叫 one good turn deserves another，它的字面意思啊，说说。
+
+## 00:01:28–00:02:02
+
+Deserves another. Its literal meaning, ah, says that a good behavior deserves another good behavior. You see, this literal meaning, you actually don't understand what it means. What he really wants to express is actually the question we asked at the beginning: How to express courtesy in English? Ah, a good behavior deserves another good behavior to give it feedback. Ah, one good turn deserves another. This is a relatively good habit usage. Please remember it. Next, turn. I just mentioned that there are also the meanings of verbs, for example.
+
+## 00:01:58–00:02:32
+
+来，接下来呢？ Turn，刚才我讲了，还有动词的意思，比如说它可以有一个意思叫做变得，比如说我们说 the sky turned black，啊，天空变黑了， and it began to rain，然后呢，开始下雨了。 Okay， I'm talking about yesterday，是吧？我现在正在聊昨天的事情啊，昨天天空逐渐变黑了，然后开始下雨。 Okay，变得。再然后呢？ Turn，还有这个次序的意思，比如说轮到谁了，我可以用英文说说轮到你了，叫做 is your turn，啊，轮到你了，次。
+
+## 00:02:28–00:03:02
+
+说轮到你了，叫做 is your turn 啊，轮到你了，次序到你了。那你说轮到我了，怎么说呢？那就说 is my turn. Okay, 这儿一个。接下来，那我们讲完了 turn，我们再说一下 deserve 这个单词。我们刚才讲了，对吧？它叫做值得啊。比如说 you deserve that，那这是口语当中非常常见的一句话，或者 you deserve it，对吧？deserve it 啊，连起来读叫 deserve it. Okay，那它的意思叫做你值得拥有这个东西，你值得。其
+
+## 00:02:58–00:03:32
+
+叫做你值得拥有这个东西，你值得。其实我们看我后面给大家标了一个叫做 good or bad，对吧？就你应该得到这个东西。如果是好的事情呢，那就是你值得拥有啊！你付出了足够多的努力，然后你现在比如说呃考了一个很好的成绩，或者说你得到了一个什么样的奖牌啊，那我们可以这个跟别人说 you deserve that 啊，说这个别害羞是吧？你付出了那么多的努力，你值得拥有这个东西。那还有一种情况呢，就是 bad things，就是不。
+
+## 00:03:28–00:04:02
+
+有这个东西，那还有一种情况呢，就是 bad things，就是不好的事情发生了。比如说别的人啊，这个做了一堆伤天害理的事儿，然后呢被关进去了。那你就可以说，就你活该，就是 you deserve it，啊，你值得拥有这件东西。为什么呢？就你应该得到这个东西。为什么？因为你之前做了那么多不好的东西，所以它一般翻译成就你活该，叫 you deserve that。由情况去决定 you deserve that，或者说 I deserve it，啊，怎么去翻译？OK，好，那接下来我们看一个小的电影片段。
+
+## 00:03:58–00:04:32
+
+怎么去翻译？OK，好，那接下来我们看一个小的电影片段，当中出现了叫做 one good turn deserves another 礼尚往来来了，注意力集中。 That's a nice thing you're doing for Norma. Thank you, sir. One good turn deserves another. This just arrived for you, certified mail from the astronaut. OK，那在这儿我想提一个小点，你看他的。
+
+## 00:04:28–00:05:02
+
+Okay,那在这儿我想提一个小点，你看他的翻译叫One good turn deserves another，他说的是好人有好报也没有问题。为什么你要由这个场景去判断，对吧？他不是说这个男人啊，这个老爷子给了他一个好的回馈啊，实际上是另一个机构给了他一个回信或者回执。那这个里面很可能是好消息，所以他说One good turn deserves another啊，你为别人做了一件好事，哎，那这个轮到你了，别人为你也做了一件好事。
+
+## 00:04:58–00:05:32
+
+那这个轮到你了，别人为你也做了一件好事，叫 one good turn deserves another. Okay, very good. 接下来我们看下一个小的单词，是一个职业啊。我们其实在新一就提过了。那跟我读一下，叫做 lawyer lawyer 啊。我们把这个 e r 去掉啊。学到今天，各位应该知道 e r 往往表示做某件事情的人。那 law 指的是法律，做跟法律事务相关的人，我们管它叫律师。跟我读一下，叫做 lawyer。好，那它是一个名词，你实际上想去造句。
+
+## 00:05:28–00:06:02
+
+好，那它是一个名词。你实际上想去造句的时候啊，最开始立刻想到的就是结合其他的习惯用法和其他的词性。那其他的词性就是找动词。其他的习惯用法呢，你也最好直接去找那些包含动词的习惯用法。比如说，我们举个例子啊，这对于各位来说应该不是很难造句的。A few days earlier, a lawyer knocked at my door. Okay,你看我在这儿其实用了两个习惯用法啊，第七和第六课我们分别学过的一个叫a few days earlier，对吧？
+
+## 00:05:58–00:06:32
+
+第七课第六课我们分别学过的，一个叫 a few days earlier，对吧？几个月前啊，几天前。Knock at somebody's door，啊，这是我们在学乞丐那一课学过的，叫做敲门。那你看 knock at somebody's door，这叫敲某人的门。主语是谁？其实你不管他是 lawyer 也好，还是我们之前学过的 detectives 也好，还是 a friendly waiter 也好，您是随便往那放的，对不对？这就是我们造句的一个思路。那这个肯定句出来了，接下来你可以暂停啊，立刻进行一些口语的转化，比如说把它变成一般。
+
+## 00:06:28–00:07:02
+
+进行一些口语的转化，比如说把它变成一般疑问句、否定句和各种特殊疑问句啊。各位的这个基础就是这样一点一点打造出来的。Continue, say he wins a prize for the best lawyer in the town.啊，这是我们在第八课比较级那课学到的。Win a prize for,对吧？The worst garden in the town.那课是这么说的。那我们现在说的是他获得了一个奖项，这个奖项是小镇上最棒的律师这个奖项。依旧老习惯，各位看一下我造句。
+
+## 00:06:58–00:07:32
+
+的律师这个奖项依旧老习惯，各位看一下我造句的思路，其实就是结合了第八课的一个带动词的习惯用法，非常简单。OK， next one，跟我一起读来 bank bank，新一我们学过它的意思有河岸的意思，对吧？但它其实也许更常见的一个意思指的是银行。OK，那它既然是一个名词，它又是一个银行，其实拿它去造句，你就可以去想一下它在六一二三四五六当中能做什么成分，对吧？能不能做？
+
+## 00:07:28–00:08:02
+
+一二三四五六当中能做什么成分，对吧？能不能做六时间几乎不太可能，能不能做主语？哎，之前还不能，但我们学完第十课之后知道被动这个东西了，那它就可以去做主语了。我们可以说银行被怎么怎么样了，对不对？好，它不是动词，不能做二，能做宾语没问题，对吧？呃，最简单，I like this bank，对吧？灌水的一句话，我喜欢这家银行啊，这就是一个宾语了。能不能做副词啊？表示这个动动作发生时候的这个状态呢？方式呢？是不
+
+## 00:07:58–00:08:32
+
+这个动动作发生时候的这个状态呢，方式呢是不能的，不能做四，能不能做地点？当然可以做地点了。In the bank,对吧？Okay，玩一个。那接下来我们尝试去结合一些习惯用法，拿它去造句。跟我一起读。He is working for a big bank at the moment.他现在正在为一个大银行工作，现阶段，对吧？Okay，玩一个。Next one，说The bank is cleaned every night after work.啊，那银行每天下班之后啊，每晚都会被
+
+## 00:08:28–00:09:02
+
+啊，那银行每天下班之后啊，每晚都会被打扫清洁。注意，它是一般现在时的被动的结构，对吧？OK，continue说，The bank is being cleaned at the moment. Sorry, can't come in.啊，The bank is being cleaned at the moment.说不好意思，你现在还真不能进，是吧？刚刚比如说有人在里面吐了，或者说有人在里面不知道怎么样了，对吧？弄得非常的乱，非常的脏。说您现在不能进，The bank is being cleaned.现在进行时的被动。第十课我们刚刚学过。
+
+## 00:08:58–00:09:32
+
+playing，现在进行时的被动，第十课我们刚刚学过，这是最基础的一些语法。M is are being done。OK，好，那各位在这儿想给大家总结的就是，我们之前我们管它就叫做动词加动词的变化，这些大的结构学完一定要把它整理下来，并且把它记住。接下来造句的时候不停的用它，您才能越用越熟啊。OK，田丽丽，下一个单词，我们先分一下音节，一二三，三个音节，一个两个元音中间一个辅音辅音给后。
+
+## 00:09:28–00:10:02
+
+三个音节，一个两个元音中间一个辅音辅音给后面，对吧？我们在专门给大家录制的音标课程当中有去讲过。那跟我张嘴读一下，叫做 salary salary，啊，薪水啊，您发的薪水，每个月的薪水，哎，就叫做 salary。文章当中给了一个非常好的习惯用法，我们直接拿过来用一下，叫做 he gets a good salary。 get 这个单词啊，万金油，大多数情况下，它它最首先它最基本的含义有获得的意思啊，比如说。
+
+## 00:09:58–00:10:32
+
+它它最首先它最基本的含义有获得的意思啊，比如说他获得了一个很好的薪水是没问题的。其次呢，您把它翻译成汉语的时候啊，就 get 这个单词，汉语怎么舒服怎么翻译，几乎永远是对的。比如说他这个赚的赚的还挺多啊，你在这儿的这个赚这个动词就可以用 get 去做一个翻译。OK，那肯定句出来了，我们从原文摘抄的，那原文摘抄加变，所谓的变就是四句型转换，对吧？叫做 Does he get a good salary? Who
+
+## 00:10:28–00:11:02
+
+换对吧？叫做 Does he get a good salary? Who gets a good salary? 对主语提问直接替代就可以了，就这么简单。 OK，那我依旧可以结合第七课的语法，比如说 When I was young，当我还很小的时候，My father got a very good salary。啊，那个时候他赚的钱还真不少啊，薪水还真的挺高的。 OK， When I was young，第七课咱们学过的对吧？当什么什么时候？ OK，好，接下来下一个单词，你看这个单词就有点长了。
+
+## 00:10:58–00:11:32
+
+接下来下一个单词，你看这个单词就有点长了。我们先给它把元音音标标一下。OK，好，接下来分音节，无非就是两个元音，看中间有几个辅音，一个辅音给后面两个辅音一边一个，三个辅音具体情况具体看了。这个单词我带大家读一下啊，immediately，OK，immediately，边一个就指的是立即马上啊，有点像advance。
+
+## 00:11:28–00:12:02
+
+就指的是立即马上啊，有点像 at once 啊，立刻马上就去做一件事情。注意，它是一个副词。那副词我们讲过了，它最主要的功能啊，功能之一就是修饰动词，说这个动词是立刻发生的。比如说，我们造造一句话，说 he began to play jazz immediately。注意，这我结合了两个习惯用法，第一个叫 began to do something，第二个叫做 play jazz，分别在第九课、第十课咱们学过。那我们就可以造一句话，说他立刻。
+
+## 00:11:58–00:12:32
+
+第九课、第十课咱们学过，那我们就可以造一句话，说他立刻就开始弹绝弹奏爵士乐。He began to play jazz immediately.肯定句给各位了，因为我们地方有限，时间有限，各位下课要做的事情是把它变成各种各样的句型，甚至您能不能尝试换一个时态？那这句话就变成您自己的了，也就是您的造句。OK, continue.那我在这个地方给大家变了一下，叫做Did he begin to play jazz immediately? Very good.啊，那接下来。
+
+## 00:12:28–00:13:02
+
+To play jazz immediately. Very good. Ah,那接下来呢，我们看一个小的电影片段啊。这个单词还挺常见的，但是不是很好读。我带着各位再读一遍，然后我们在文章当中再听，在这个这个电影当中再听一遍啊。来跟我读 immediately，连起来 immediately, immediately. Okay, very good.那接下来我们看一下这个电影片段. Tommy Williams came to Shawshank in 1965 on a two-year stretch for B and E. That's break.
+
+## 00:12:58–00:13:32
+
+1965 on a two-year stretch for B and E. That's breaking and entering to you. Cops caught him sneaking TV sets out the back door of a JC Penney. Young punk, Mr. Rock and Roll, cocky as hell. Hey, come on, old boys! Moving like molasses. Make me look bad. We liked him immediately. We liked him immediately. There you go. We立刻就喜欢上了他。这个副词在说喜欢，对吧？花了多长时间？那接下来呢？我们就
+
+## 00:13:28–00:14:02
+
+对吧？花了多长时间？啊，一个。那接下来呢？我们就简单 recap 复习一下本课的。除了当然，本课的单词啊，我们一般都不会打出来了，除非它很特殊。那 expression 在这儿，各位多学了几个。第一个是标题，礼尚往来。第二个是赚的还不错的一个薪水，可以当做一个习惯用法了。第三个呢，It's your turn, It's my turn，轮到谁谁谁了？OK，玩一个。那我们看一下本课的家庭作业。首先，单词造句或者对话，各位一定要配合。
+
+## 00:13:58–00:14:31
+
+首先，单词造句或者对话，各位一定要配合这些单词造句指南。每个单词，各位造五句话。接下来呢，你要去反复听这些电影片段，直到能听出这些关键的短语或者说句子。OK，那以上呢就是本期视频的全部内容了。See you next time.
+
+## 00:14:28–00:14:31
+
+
+
