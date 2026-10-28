@@ -1,0 +1,200 @@
+{
+  "artifacts": {
+    "1793148207_4530.md": "32a16c0f070dc357c7681c895d10b4797e389f63840ad95f0fda32737196dbbf",
+    "1793148207_4530_res.json": "f27931be328e9eb790ea52df9e4113616106ba6842305e739990b13cd8f019e0",
+    "imgs/img_in_header_image_box_1650_29_1889_103.jpg": "938818c1315e786ee3c55469171e38795a9e8441ad68e2e3a6736b35d43b46c2",
+    "imgs/img_in_image_box_1184_287_1769_1077.jpg": "54fb44ba08a1d7e7beef1f8e341dfe579fe660c6e808d04e7d3f257bbc296c60",
+    "imgs/img_in_image_box_76_68_472_468.jpg": "8c81d3b5335945e54c575cea7cfc6b4469deca994268cc20c3431eb5be1e554e",
+    "region_repairs.md": "f212dd8a203834930ce6ba7ff759cf157c2f2cad32111e56cc95627556880a8e",
+    "repairs/region_003/1793148207_4435.md": "90bf9f848d810eb32ac05eb740e0fe7bfd8abd9cfd7dc3b4a58ec3f666eabbb9",
+    "repairs/region_003/1793148207_4435_res.json": "4b786a1ec4c2bfbcb6100ba70b71e5a962219f4a812f86da55cd08bb7cc89fb0",
+    "repairs/region_003/source.png": "2689451c099309269667a08bb2bbceea619d230cf12d2eaef8326a87f9b4e1d0"
+  },
+  "input_fingerprint": "1b5607b62299272ae6a814dbafc12ea8d6c23102d6a93da8f3098e672ce39957",
+  "image_sha256": "b66fd3ebf7e441d4273e3043cce4ec2a392d129049d4923e51d88c54fa02ecff",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 2.5604160799994133,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1650,
+        29,
+        1889,
+        103
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1650.0,
+          29.0
+        ],
+        [
+          1889.0,
+          29.0
+        ],
+        [
+          1889.0,
+          103.0
+        ],
+        [
+          1650.0,
+          103.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "Thank you very(so) much",
+      "block_bbox": [
+        512,
+        64,
+        1374,
+        148
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          512.0,
+          64.0
+        ],
+        [
+          1374.0,
+          64.0
+        ],
+        [
+          1374.0,
+          148.0
+        ],
+        [
+          512.0,
+          148.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        76,
+        68,
+        472,
+        468
+      ],
+      "block_id": 2,
+      "block_order": null,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          76.0,
+          68.0
+        ],
+        [
+          472.0,
+          68.0
+        ],
+        [
+          472.0,
+          468.0
+        ],
+        [
+          76.0,
+          468.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "① th /θ/ /ð/",
+      "block_bbox": [
+        518,
+        262,
+        821,
+        326
+      ],
+      "block_id": 3,
+      "block_order": 2,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          518.0,
+          262.0
+        ],
+        [
+          821.0,
+          262.0
+        ],
+        [
+          821.0,
+          326.0
+        ],
+        [
+          518.0,
+          326.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1184,
+        287,
+        1769,
+        1077
+      ],
+      "block_id": 4,
+      "block_order": null,
+      "group_id": 4,
+      "block_polygon_points": [
+        [
+          1184.0,
+          287.0
+        ],
+        [
+          1769.0,
+          287.0
+        ],
+        [
+          1769.0,
+          1077.0
+        ],
+        [
+          1184.0,
+          1077.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "th /θ/ /ð/",
+      "block_bbox": [
+        558,
+        256,
+        810,
+        327
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        558,
+        256,
+        810,
+        327
+      ],
+      "ppocr_candidate": "th/0//d/",
+      "recovered_text": "th /θ/ /ð/",
+      "source_crop": "repairs/region_003/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}
