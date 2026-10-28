@@ -1,0 +1,135 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"学前测试\",\n    \"[无法确认].h5.xet.citv.cn\",\n    \"00:00\",\n    \"T\",\n    \"1/108\",\n    \"单选题/1分\",\n    \"What were you doing when he arrived?\",\n    \"I was ________.\",\n    \"A  having a bath\",\n    \"B  had a bath\",\n    \"C  have a bath\",\n    \"下一题\",\n    \"胶学 bilibili\"\n  ],\n  \"description\": \"画面中央是竖向测试界面，三个选项字母分别位于浅灰色圆形框内；题干第二行有一条空白横线。界面顶部有关闭、计时、图钉等图标，底部“下一题”右侧有向右图标。画面右下方有黑白二维码，中央有小图案。\",\n  \"annotations\": [],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"顶部网址的前半部分无法确认。\",\n    \"题干空白横线以连续下划线表示，下划线数量无法确认。\",\n    \"右上角水印中的中文“胶学”辨识不确定。\"\n  ]\n}",
+  "parsed": {
+    "kind": "screen",
+    "text_lines": [
+      "学前测试",
+      "[无法确认].h5.xet.citv.cn",
+      "00:00",
+      "T",
+      "1/108",
+      "单选题/1分",
+      "What were you doing when he arrived?",
+      "I was ________.",
+      "A  having a bath",
+      "B  had a bath",
+      "C  have a bath",
+      "下一题",
+      "胶学 bilibili"
+    ],
+    "description": "画面中央是竖向测试界面，三个选项字母分别位于浅灰色圆形框内；题干第二行有一条空白横线。界面顶部有关闭、计时、图钉等图标，底部“下一题”右侧有向右图标。画面右下方有黑白二维码，中央有小图案。",
+    "annotations": [],
+    "checkmarks_count": 0,
+    "circled_text": [],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "顶部网址的前半部分无法确认。",
+      "题干空白横线以连续下划线表示，下划线数量无法确认。",
+      "右上角水印中的中文“胶学”辨识不确定。"
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "学前测试\n[无法确认].h5.xet.citv.cn\n00:00\nT\n1/108\n单选题/1分\nWhat were you doing when he arrived?\nI was ________.\nA  having a bath\nB  had a bath\nC  have a bath\n下一题\n胶学 bilibili"
+  },
+  "usage": {
+    "completion_tokens": 369,
+    "total_tokens": 3049,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 67
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 6.681195846002083,
+  "image_sha256": "5b19e9d25484e4cfdc8734e12f7db3635f6d7aef6669adb704f2bb7c0e871db6",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"学前测试\",\n    \"appmprxxtlw1092.h5.xet.citv.cn\",\n    \"00:00\",\n    \"1/108\",\n    \"单选题/1分\",\n    \"What were you doing when he arrived?\",\n    \"I was ________.\",\n    \"A\",\n    \"having a bath\",\n    \"B\",\n    \"had a bath\",\n    \"C\",\n    \"have a bath\",\n    \"下一题\",\n    \"胶学\",\n    \"bilibili\"\n  ],\n  \"description\": \"画面中央为竖屏手机网页界面，右下方有二维码；背景为浅灰色。\",\n  \"annotations\": [],\n  \"checkmarks_count\": null,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"右上角水印文字辨认为“胶学 bilibili”，字形较淡。\",\n    \"二维码中央覆盖的小图案文字无法确认。\"\n  ]\n}",
+    "parsed": {
+      "kind": "screen",
+      "text_lines": [
+        "学前测试",
+        "appmprxxtlw1092.h5.xet.citv.cn",
+        "00:00",
+        "1/108",
+        "单选题/1分",
+        "What were you doing when he arrived?",
+        "I was ________.",
+        "A",
+        "having a bath",
+        "B",
+        "had a bath",
+        "C",
+        "have a bath",
+        "下一题",
+        "胶学",
+        "bilibili"
+      ],
+      "description": "画面中央为竖屏手机网页界面，右下方有二维码；背景为浅灰色。",
+      "annotations": [],
+      "checkmarks_count": null,
+      "circled_text": [],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "右上角水印文字辨认为“胶学 bilibili”，字形较淡。",
+        "二维码中央覆盖的小图案文字无法确认。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": "学前测试\nappmprxxtlw1092.h5.xet.citv.cn\n00:00\n1/108\n单选题/1分\nWhat were you doing when he arrived?\nI was ________.\nA\nhaving a bath\nB\nhad a bath\nC\nhave a bath\n下一题\n胶学\nbilibili"
+    },
+    "usage": {
+      "completion_tokens": 437,
+      "total_tokens": 3117,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 204
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 8.272926248002477,
+    "image_sha256": "5b19e9d25484e4cfdc8734e12f7db3635f6d7aef6669adb704f2bb7c0e871db6",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00009364_0000312133.webp",
+  "time": 312.133312,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "low_confidence_instructional_ocr",
+    "visible_annotation_change_or_changed_target_text"
+  ]
+}

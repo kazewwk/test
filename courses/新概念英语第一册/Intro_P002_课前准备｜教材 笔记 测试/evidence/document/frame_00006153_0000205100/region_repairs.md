@@ -1,0 +1,80 @@
+# 布局遗漏区域的独立复查
+
+原图位置：[550, 45, 643, 82]；PP-OCRv5 候选：/ti:tfe1
+
+![复查区域](repairs/region_007/source.png)
+
+/ti:t/
+
+原图位置：[208, 62, 289, 103]；PP-OCRv5 候选：suit n.
+
+![复查区域](repairs/region_010/source.png)
+
+/suːt/ suit n.
+
+原图位置：[549, 88, 697, 124]；PP-OCRv5 候选：recap: /i:/ /ə/t/t/
+
+![复查区域](repairs/region_015/source.png)
+
+recap: /iː/ /ə/ t/t/
+
+原图位置：[1024, 140, 1332, 178]；PP-OCRv5 候选：1 ls this my school or your school?
+
+![复查区域](repairs/region_022/source.png)
+
+1 Is this my school or your school?
+
+原图位置：[1362, 140, 1533, 179]；PP-OCRv5 候选：1 ls this your son?
+
+![复查区域](repairs/region_023/source.png)
+
+1 Is this your son?
+
+原图位置：[550, 172, 695, 202]；PP-OCRv5 候选：/sn//do:te/
+
+![复查区域](repairs/region_025/source.png)
+
+/san/ /'dɔːtəl/
+
+原图位置：[210, 190, 293, 222]；PP-OCRv5 候选：/sku:1/
+
+![复查区域](repairs/region_028/source.png)
+
+/sku:/
+
+原图位置：[1025, 189, 1223, 225]；PP-OCRv5 候选：3 This is your schooll.
+
+![复查区域](repairs/region_030/source.png)
+
+3 This is your school.
+
+原图位置：[208, 432, 470, 470]；PP-OCRv5 候选：1 ls this my pen or your pen?
+
+![复查区域](repairs/region_043/source.png)
+
+1 Is this my pen or your pen?
+
+原图位置：[548, 433, 839, 469]；PP-OCRv5 候选：1ls this my dress or your dress?
+
+![复查区域](repairs/region_044/source.png)
+
+1 Is this my dress or your dress?
+
+原图位置：[547, 550, 819, 586]；PP-OCRv5 候选：1ls this my skirt or your skirt?
+
+![复查区域](repairs/region_052/source.png)
+
+1 Is this my skirt or your skirt?
+
+原图位置：[210, 787, 509, 823]；PP-OCRv5 候选：1 ls this my watch or your watch?
+
+![复查区域](repairs/region_068/source.png)
+
+1 Is this my watch or your watch?
+
+原图位置：[548, 905, 847, 941]；PP-OCRv5 候选：1 ls this my house or your house?
+
+![复查区域](repairs/region_077/source.png)
+
+1 Is this my house or your house?
+

@@ -1,0 +1,136 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"学前测试\",\n    \"[无法确认].h5.xet.citv.cn\",\n    \"00:00:04\",\n    \"2/108\",\n    \"单选题/1分\",\n    \"I haven’t got any money. I have got\",\n    \"________ money.\",\n    \"A  not\",\n    \"B  no\",\n    \"C  none\",\n    \"上一题\",\n    \"下一题\",\n    \"胶学 bilibili\"\n  ],\n  \"description\": \"画面中央为竖向测试页面。题干下方的三个选项纵向排列，选项字母各位于浅灰色圆圈内，三个圆圈均未见选中标记。画面右下方有一个黑白二维码。\",\n  \"annotations\": [],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"页面标题下方网址的前半部分无法确认。\",\n    \"右上角水印中的中文“胶学”辨认不完全确定。\"\n  ]\n}",
+  "parsed": {
+    "kind": "screen",
+    "text_lines": [
+      "学前测试",
+      "[无法确认].h5.xet.citv.cn",
+      "00:00:04",
+      "2/108",
+      "单选题/1分",
+      "I haven’t got any money. I have got",
+      "________ money.",
+      "A  not",
+      "B  no",
+      "C  none",
+      "上一题",
+      "下一题",
+      "胶学 bilibili"
+    ],
+    "description": "画面中央为竖向测试页面。题干下方的三个选项纵向排列，选项字母各位于浅灰色圆圈内，三个圆圈均未见选中标记。画面右下方有一个黑白二维码。",
+    "annotations": [],
+    "checkmarks_count": 0,
+    "circled_text": [],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "页面标题下方网址的前半部分无法确认。",
+      "右上角水印中的中文“胶学”辨认不完全确定。"
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "学前测试\n[无法确认].h5.xet.citv.cn\n00:00:04\n2/108\n单选题/1分\nI haven’t got any money. I have got\n________ money.\nA  not\nB  no\nC  none\n上一题\n下一题\n胶学 bilibili"
+  },
+  "usage": {
+    "completion_tokens": 363,
+    "total_tokens": 3043,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 107
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 6.278103224001825,
+  "image_sha256": "b1378f39d26409e1e090a397e8abf31c9cad51aef98235c4f63d30c45b943c28",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"学前测试\",\n    \"appmprxxtlw1092.h5.zet.citv.cn\",\n    \"00:00:04\",\n    \"2/108\",\n    \"单选题/1分\",\n    \"I haven’t got any money. I have got\",\n    \"________ money.\",\n    \"A\",\n    \"not\",\n    \"B\",\n    \"no\",\n    \"C\",\n    \"none\",\n    \"上一题\",\n    \"下一题\",\n    \"胶学\",\n    \"bilibili\"\n  ],\n  \"description\": \"浅灰背景中央是一块竖向手机测验页面；页面右下方有二维码，右上方有浅色水印。页面顶部及题目区域有若干界面图标。\",\n  \"annotations\": [],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"顶部网址的字符较小，读作“appmprxxtlw1092.h5.zet.citv.cn”，其中部分字符无法确认。\",\n    \"右上角水印后半部分为图形化字样，读作“bilibili”但无法确认。\",\n    \"二维码中央有极小文字或图案，无法确认。\"\n  ]\n}",
+    "parsed": {
+      "kind": "screen",
+      "text_lines": [
+        "学前测试",
+        "appmprxxtlw1092.h5.zet.citv.cn",
+        "00:00:04",
+        "2/108",
+        "单选题/1分",
+        "I haven’t got any money. I have got",
+        "________ money.",
+        "A",
+        "not",
+        "B",
+        "no",
+        "C",
+        "none",
+        "上一题",
+        "下一题",
+        "胶学",
+        "bilibili"
+      ],
+      "description": "浅灰背景中央是一块竖向手机测验页面；页面右下方有二维码，右上方有浅色水印。页面顶部及题目区域有若干界面图标。",
+      "annotations": [],
+      "checkmarks_count": 0,
+      "circled_text": [],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "顶部网址的字符较小，读作“appmprxxtlw1092.h5.zet.citv.cn”，其中部分字符无法确认。",
+        "右上角水印后半部分为图形化字样，读作“bilibili”但无法确认。",
+        "二维码中央有极小文字或图案，无法确认。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": "学前测试\nappmprxxtlw1092.h5.zet.citv.cn\n00:00:04\n2/108\n单选题/1分\nI haven’t got any money. I have got\n________ money.\nA\nnot\nB\nno\nC\nnone\n上一题\n下一题\n胶学\nbilibili"
+    },
+    "usage": {
+      "completion_tokens": 663,
+      "total_tokens": 3343,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 363
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 11.448130284999934,
+    "image_sha256": "b1378f39d26409e1e090a397e8abf31c9cad51aef98235c4f63d30c45b943c28",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00009492_0000316400.webp",
+  "time": 316.4,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "low_confidence_instructional_ocr",
+    "visible_annotation_change_or_changed_target_text"
+  ]
+}

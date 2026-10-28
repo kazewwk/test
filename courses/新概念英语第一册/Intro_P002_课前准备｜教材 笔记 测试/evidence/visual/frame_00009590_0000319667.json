@@ -1,0 +1,127 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"学前测试\",\n    \"[无法确认].h5.xet.citv.cn\",\n    \"00:00:08\",\n    \"3/108\",\n    \"单选题/1分\",\n    \"Whose _____ is blue?\",\n    \"A brothers\",\n    \"B tie\",\n    \"C sisters\",\n    \"上一题\",\n    \"下一题\",\n    \"[无法确认] bilibili\"\n  ],\n  \"description\": \"画面中央是竖向测试页面，三组选项字母分别位于浅灰色圆形边框内，未见选项被选中。页面底部左右各有一个导航箭头图标。画面右下方有黑白二维码。\",\n  \"annotations\": [],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"页面顶部网址的前半部分无法确认。\",\n    \"右上角水印中的中文无法确认。\"\n  ]\n}",
+  "parsed": {
+    "kind": "screen",
+    "text_lines": [
+      "学前测试",
+      "[无法确认].h5.xet.citv.cn",
+      "00:00:08",
+      "3/108",
+      "单选题/1分",
+      "Whose _____ is blue?",
+      "A brothers",
+      "B tie",
+      "C sisters",
+      "上一题",
+      "下一题",
+      "[无法确认] bilibili"
+    ],
+    "description": "画面中央是竖向测试页面，三组选项字母分别位于浅灰色圆形边框内，未见选项被选中。页面底部左右各有一个导航箭头图标。画面右下方有黑白二维码。",
+    "annotations": [],
+    "checkmarks_count": 0,
+    "circled_text": [],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "页面顶部网址的前半部分无法确认。",
+      "右上角水印中的中文无法确认。"
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "学前测试\n[无法确认].h5.xet.citv.cn\n00:00:08\n3/108\n单选题/1分\nWhose _____ is blue?\nA brothers\nB tie\nC sisters\n上一题\n下一题\n[无法确认] bilibili"
+  },
+  "usage": {
+    "completion_tokens": 312,
+    "total_tokens": 2992,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 77
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 5.1726772649999475,
+  "image_sha256": "6daceebf9183d2b54530b070eeecfb64f353e78ef0fc96cf05a59480fa877bdb",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"学前测试\",\n    \"appmprxxtlw1092.h5.xet.citv.cn\",\n    \"00:00:08\",\n    \"3/108\",\n    \"单选题/1分\",\n    \"Whose _____ is blue?\",\n    \"A brothers\",\n    \"B tie\",\n    \"C sisters\",\n    \"上一题\",\n    \"下一题\"\n  ],\n  \"description\": \"浅灰背景中央显示竖版手机答题页面，右下方有二维码，右上方有浅色水印。\",\n  \"annotations\": [],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"二维码中心覆盖的小图案文字无法确认。\",\n    \"右上方水印中的字样无法确认。\"\n  ]\n}",
+    "parsed": {
+      "kind": "screen",
+      "text_lines": [
+        "学前测试",
+        "appmprxxtlw1092.h5.xet.citv.cn",
+        "00:00:08",
+        "3/108",
+        "单选题/1分",
+        "Whose _____ is blue?",
+        "A brothers",
+        "B tie",
+        "C sisters",
+        "上一题",
+        "下一题"
+      ],
+      "description": "浅灰背景中央显示竖版手机答题页面，右下方有二维码，右上方有浅色水印。",
+      "annotations": [],
+      "checkmarks_count": 0,
+      "circled_text": [],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "二维码中心覆盖的小图案文字无法确认。",
+        "右上方水印中的字样无法确认。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": "学前测试\nappmprxxtlw1092.h5.xet.citv.cn\n00:00:08\n3/108\n单选题/1分\nWhose _____ is blue?\nA brothers\nB tie\nC sisters\n上一题\n下一题"
+    },
+    "usage": {
+      "completion_tokens": 676,
+      "total_tokens": 3356,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 474
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 10.180130022999947,
+    "image_sha256": "6daceebf9183d2b54530b070eeecfb64f353e78ef0fc96cf05a59480fa877bdb",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00009590_0000319667.webp",
+  "time": 319.666688,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "low_confidence_instructional_ocr"
+  ]
+}

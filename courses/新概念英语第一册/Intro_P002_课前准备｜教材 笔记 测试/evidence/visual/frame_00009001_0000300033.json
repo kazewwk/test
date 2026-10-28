@@ -1,0 +1,206 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"考试介绍\",\n    \"appmprxxtlw1092.h5.xet.citv.cn\",\n    \"NEW CONCEPT ENGLISH 1\",\n    \"新概念英语\",\n    \"第①册\",\n    \"学前测试\",\n    \"学前测试\",\n    \"等18341人参与\",\n    \"考试信息\",\n    \"不限\",\n    \"时长(分钟)\",\n    \"108\",\n    \"题目量\",\n    \"115\",\n    \"考试总分\",\n    \"共5个\",\n    \"学前测试\",\n    \"考试\",\n    \"学间测试L1—L30\",\n    \"考试\",\n    \"[无法确认]\",\n    \"成绩\",\n    \"再次考试\",\n    \"胶学 bilibili\"\n  ],\n  \"description\": \"浅灰色背景中央是一张竖向手机网页截图。上方灰色横幅中有两本书状图案；参与人数旁有一排小头像。页面下部有两个并排的考试卡片，左侧卡片带蓝色边框。底部有蓝色长条按钮，右侧有竖向滚动条。画面右下方是黑白二维码，中心有小图案；右上角有白色水印。\",\n  \"annotations\": [\n    {\n      \"type\": \"勾\",\n      \"color\": \"白色，蓝色圆形底\",\n      \"target\": \"学前测试\",\n      \"position\": \"页面下部左侧卡片标题左边\",\n      \"uncertain\": false\n    },\n    {\n      \"type\": \"勾\",\n      \"color\": \"白色，蓝色圆形底\",\n      \"target\": \"学间测试L1—L30\",\n      \"position\": \"页面下部右侧卡片标题左边\",\n      \"uncertain\": false\n    }\n  ],\n  \"checkmarks_count\": 2,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"网址字符较小，读取结果可能有误。\",\n    \"横幅顶部英文末尾的“1”较小。\",\n    \"右侧卡片标题中的“学间”及连接符较小，读取可能有误。\",\n    \"页面底部按钮上方有一行文字被遮挡，无法完整确认。\",\n    \"右上角水印中的中文读取可能有误。\"\n  ]\n}",
+  "parsed": {
+    "kind": "screen",
+    "text_lines": [
+      "考试介绍",
+      "appmprxxtlw1092.h5.xet.citv.cn",
+      "NEW CONCEPT ENGLISH 1",
+      "新概念英语",
+      "第①册",
+      "学前测试",
+      "学前测试",
+      "等18341人参与",
+      "考试信息",
+      "不限",
+      "时长(分钟)",
+      "108",
+      "题目量",
+      "115",
+      "考试总分",
+      "共5个",
+      "学前测试",
+      "考试",
+      "学间测试L1—L30",
+      "考试",
+      "[无法确认]",
+      "成绩",
+      "再次考试",
+      "胶学 bilibili"
+    ],
+    "description": "浅灰色背景中央是一张竖向手机网页截图。上方灰色横幅中有两本书状图案；参与人数旁有一排小头像。页面下部有两个并排的考试卡片，左侧卡片带蓝色边框。底部有蓝色长条按钮，右侧有竖向滚动条。画面右下方是黑白二维码，中心有小图案；右上角有白色水印。",
+    "annotations": [
+      {
+        "type": "勾",
+        "color": "白色，蓝色圆形底",
+        "target": "学前测试",
+        "position": "页面下部左侧卡片标题左边",
+        "uncertain": false,
+        "requires_review": false,
+        "grounding": "api_visual_observation_not_human_verified"
+      },
+      {
+        "type": "勾",
+        "color": "白色，蓝色圆形底",
+        "target": "学间测试L1—L30",
+        "position": "页面下部右侧卡片标题左边",
+        "uncertain": false,
+        "requires_review": false,
+        "grounding": "api_visual_observation_not_human_verified"
+      }
+    ],
+    "checkmarks_count": 2,
+    "circled_text": [],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "网址字符较小，读取结果可能有误。",
+      "横幅顶部英文末尾的“1”较小。",
+      "右侧卡片标题中的“学间”及连接符较小，读取可能有误。",
+      "页面底部按钮上方有一行文字被遮挡，无法完整确认。",
+      "右上角水印中的中文读取可能有误。"
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "考试介绍\nappmprxxtlw1092.h5.xet.citv.cn\nNEW CONCEPT ENGLISH 1\n新概念英语\n第①册\n学前测试\n学前测试\n等18341人参与\n考试信息\n不限\n时长(分钟)\n108\n题目量\n115\n考试总分\n共5个\n学前测试\n考试\n学间测试L1—L30\n考试\n[无法确认]\n成绩\n再次考试\n胶学 bilibili"
+  },
+  "usage": {
+    "completion_tokens": 570,
+    "total_tokens": 3250,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 35
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 7.914825816002121,
+  "image_sha256": "57977b1d8371d6721a1dd10db01c8e4ad3c45931619cc5a4323fdeb474faaa40",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"考试介绍\",\n    \"appmprxxtlw1092.h5.xet.citv.cn\",\n    \"NEW CONCEPT ENGLISH I\",\n    \"新概念英语\",\n    \"第①册\",\n    \"学前测试\",\n    \"学前测试\",\n    \"等18341人参与\",\n    \"考试信息\",\n    \"不限\",\n    \"时长(分钟)\",\n    \"108\",\n    \"题目量\",\n    \"115\",\n    \"考试总分\",\n    \"共5个 >\",\n    \"学前测试\",\n    \"考试\",\n    \"学间测试L1—L30\",\n    \"考试\",\n    \"店铺主页 | 个人中心 | 店铺信息 | 投诉建议\",\n    \"A+\",\n    \"成绩\",\n    \"再次考试\",\n    \"胶学 bilibili\"\n  ],\n  \"description\": \"手机网页界面居中显示在浅色背景上；页面上方有书本图案，参与人数旁有一排圆形头像；右下方有二维码。页面右侧有一条竖向滚动条。\",\n  \"annotations\": [\n    {\n      \"type\": \"勾\",\n      \"color\": \"蓝色圆形底、白色勾\",\n      \"target\": \"学前测试\",\n      \"position\": \"页面下部左侧卡片标题左边\",\n      \"uncertain\": false\n    },\n    {\n      \"type\": \"勾\",\n      \"color\": \"蓝色圆形底、白色勾\",\n      \"target\": \"学间测试L1—L30\",\n      \"position\": \"页面下部右侧卡片标题左边\",\n      \"uncertain\": false\n    },\n    {\n      \"type\": \"箭头\",\n      \"color\": \"灰色\",\n      \"target\": \"共5个\",\n      \"position\": \"页面中下部右侧，文字之后\",\n      \"uncertain\": false\n    }\n  ],\n  \"checkmarks_count\": 2,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"页面地址中的字符可能为“appmprxxtlw1092.h5.xet.citv.cn”，部分字符较小，无法完全确认。\",\n    \"右侧卡片标题可见为“学间测试L1—L30”，其中“学间测试”字样较小。\",\n    \"底部导航文字较小，读取为“店铺主页 | 个人中心 | 店铺信息 | 投诉建议”。\",\n    \"右上角水印读取为“胶学 bilibili”，中文部分无法确认。\"\n  ]\n}",
+    "parsed": {
+      "kind": "screen",
+      "text_lines": [
+        "考试介绍",
+        "appmprxxtlw1092.h5.xet.citv.cn",
+        "NEW CONCEPT ENGLISH I",
+        "新概念英语",
+        "第①册",
+        "学前测试",
+        "学前测试",
+        "等18341人参与",
+        "考试信息",
+        "不限",
+        "时长(分钟)",
+        "108",
+        "题目量",
+        "115",
+        "考试总分",
+        "共5个 >",
+        "学前测试",
+        "考试",
+        "学间测试L1—L30",
+        "考试",
+        "店铺主页 | 个人中心 | 店铺信息 | 投诉建议",
+        "A+",
+        "成绩",
+        "再次考试",
+        "胶学 bilibili"
+      ],
+      "description": "手机网页界面居中显示在浅色背景上；页面上方有书本图案，参与人数旁有一排圆形头像；右下方有二维码。页面右侧有一条竖向滚动条。",
+      "annotations": [
+        {
+          "type": "勾",
+          "color": "蓝色圆形底、白色勾",
+          "target": "学前测试",
+          "position": "页面下部左侧卡片标题左边",
+          "uncertain": false,
+          "requires_review": false,
+          "grounding": "api_visual_observation_not_human_verified"
+        },
+        {
+          "type": "勾",
+          "color": "蓝色圆形底、白色勾",
+          "target": "学间测试L1—L30",
+          "position": "页面下部右侧卡片标题左边",
+          "uncertain": false,
+          "requires_review": false,
+          "grounding": "api_visual_observation_not_human_verified"
+        },
+        {
+          "type": "箭头",
+          "color": "灰色",
+          "target": "共5个",
+          "position": "页面中下部右侧，文字之后",
+          "uncertain": false,
+          "requires_review": false,
+          "grounding": "api_visual_observation_not_human_verified"
+        }
+      ],
+      "checkmarks_count": 2,
+      "circled_text": [],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "页面地址中的字符可能为“appmprxxtlw1092.h5.xet.citv.cn”，部分字符较小，无法完全确认。",
+        "右侧卡片标题可见为“学间测试L1—L30”，其中“学间测试”字样较小。",
+        "底部导航文字较小，读取为“店铺主页 | 个人中心 | 店铺信息 | 投诉建议”。",
+        "右上角水印读取为“胶学 bilibili”，中文部分无法确认。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": "考试介绍\nappmprxxtlw1092.h5.xet.citv.cn\nNEW CONCEPT ENGLISH I\n新概念英语\n第①册\n学前测试\n学前测试\n等18341人参与\n考试信息\n不限\n时长(分钟)\n108\n题目量\n115\n考试总分\n共5个 >\n学前测试\n考试\n学间测试L1—L30\n考试\n店铺主页 | 个人中心 | 店铺信息 | 投诉建议\nA+\n成绩\n再次考试\n胶学 bilibili"
+    },
+    "usage": {
+      "completion_tokens": 1100,
+      "total_tokens": 3780,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 516
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 30.548208811000222,
+    "image_sha256": "57977b1d8371d6721a1dd10db01c8e4ad3c45931619cc5a4323fdeb474faaa40",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00009001_0000300033.webp",
+  "time": 300.033313,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "low_confidence_instructional_ocr",
+    "visible_annotation_change_or_changed_target_text"
+  ]
+}

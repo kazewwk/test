@@ -1,0 +1,208 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"考试介绍\",\n    \"[无法确认].h5.xet.citv.cn\",\n    \"NEW CONCEPT ENGLISH 1\",\n    \"新概念英语\",\n    \"第①册\",\n    \"学前测试\",\n    \"学前测试\",\n    \"等18341人参与\",\n    \"考试信息\",\n    \"不限\",\n    \"108\",\n    \"115\",\n    \"时长(分钟)\",\n    \"题目量\",\n    \"考试总分\",\n    \"共5个\",\n    \"学前测试\",\n    \"学间测试L1—L30\",\n    \"考试\",\n    \"考试\",\n    \"成绩\",\n    \"再次考试\",\n    \"[无法确认] bilibili\"\n  ],\n  \"description\": \"浅色背景中央是一张竖向考试介绍页面截图。页面顶部的黑白横幅含书本图形；标题下方有一排重叠的小头像。页面下部有两个并排的考试卡片，左侧卡片带蓝色边框。底部有蓝色长条按钮。画面右下方有黑白二维码，右上方有浅色水印。\",\n  \"annotations\": [\n    {\n      \"type\": \"勾\",\n      \"color\": \"白色勾，蓝色圆形底\",\n      \"target\": \"学前测试\",\n      \"position\": \"页面下部左侧卡片内，文字左侧\",\n      \"uncertain\": false\n    },\n    {\n      \"type\": \"勾\",\n      \"color\": \"白色勾，蓝色圆形底\",\n      \"target\": \"学间测试L1—L30\",\n      \"position\": \"页面下部右侧卡片内，文字左侧\",\n      \"uncertain\": false\n    }\n  ],\n  \"checkmarks_count\": 2,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"页面顶部网址的域名前半部分不清晰。\",\n    \"右上角水印中 bilibili 左侧的中文不清晰。\",\n    \"右侧考试卡片中的“学间测试L1—L30”字样较小，读取不完全确定。\"\n  ]\n}",
+  "parsed": {
+    "kind": "screen",
+    "text_lines": [
+      "考试介绍",
+      "[无法确认].h5.xet.citv.cn",
+      "NEW CONCEPT ENGLISH 1",
+      "新概念英语",
+      "第①册",
+      "学前测试",
+      "学前测试",
+      "等18341人参与",
+      "考试信息",
+      "不限",
+      "108",
+      "115",
+      "时长(分钟)",
+      "题目量",
+      "考试总分",
+      "共5个",
+      "学前测试",
+      "学间测试L1—L30",
+      "考试",
+      "考试",
+      "成绩",
+      "再次考试",
+      "[无法确认] bilibili"
+    ],
+    "description": "浅色背景中央是一张竖向考试介绍页面截图。页面顶部的黑白横幅含书本图形；标题下方有一排重叠的小头像。页面下部有两个并排的考试卡片，左侧卡片带蓝色边框。底部有蓝色长条按钮。画面右下方有黑白二维码，右上方有浅色水印。",
+    "annotations": [
+      {
+        "type": "勾",
+        "color": "白色勾，蓝色圆形底",
+        "target": "学前测试",
+        "position": "页面下部左侧卡片内，文字左侧",
+        "uncertain": false,
+        "requires_review": false,
+        "grounding": "api_visual_observation_not_human_verified"
+      },
+      {
+        "type": "勾",
+        "color": "白色勾，蓝色圆形底",
+        "target": "学间测试L1—L30",
+        "position": "页面下部右侧卡片内，文字左侧",
+        "uncertain": false,
+        "requires_review": false,
+        "grounding": "api_visual_observation_not_human_verified"
+      }
+    ],
+    "checkmarks_count": 2,
+    "circled_text": [],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "页面顶部网址的域名前半部分不清晰。",
+      "右上角水印中 bilibili 左侧的中文不清晰。",
+      "右侧考试卡片中的“学间测试L1—L30”字样较小，读取不完全确定。"
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "考试介绍\n[无法确认].h5.xet.citv.cn\nNEW CONCEPT ENGLISH 1\n新概念英语\n第①册\n学前测试\n学前测试\n等18341人参与\n考试信息\n不限\n108\n115\n时长(分钟)\n题目量\n考试总分\n共5个\n学前测试\n学间测试L1—L30\n考试\n考试\n成绩\n再次考试\n[无法确认] bilibili"
+  },
+  "usage": {
+    "completion_tokens": 555,
+    "total_tokens": 3235,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 60
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 7.808859961998678,
+  "image_sha256": "78287f4f5f69fd60b70cec1939905aa40f5fd7e0a63bd3e3e7b85080cfd98cd3",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"考试介绍\",\n    \"appmprxxtlw1092.h5.zet.citv.cn\",\n    \"NEW CONCEPT ENGLISH I\",\n    \"新概念英语\",\n    \"第①册\",\n    \"学前测试\",\n    \"学前测试\",\n    \"等18341人参与\",\n    \"考试信息\",\n    \"不限\",\n    \"时长(分钟)\",\n    \"108\",\n    \"题目量\",\n    \"115\",\n    \"考试总分\",\n    \"共5个 >\",\n    \"学前测试\",\n    \"考试\",\n    \"学间测试1—L30\",\n    \"考试\",\n    \"成绩\",\n    \"再次考试\",\n    \"[无法确认]\"\n  ],\n  \"description\": \"画面中央是一张纵向手机页面截图，页面上方有黑白书封面图案；其下方有多个人像头像。画面右下方有二维码，二维码中央叠有小图案。背景为浅灰色，右上方有白色水印文字。\",\n  \"annotations\": [\n    {\n      \"type\": \"蓝色圆形勾选图标\",\n      \"color\": \"蓝色\",\n      \"target\": \"学前测试\",\n      \"position\": \"手机页面下半部左侧卡片标题左侧\",\n      \"uncertain\": false\n    },\n    {\n      \"type\": \"蓝色圆形勾选图标\",\n      \"color\": \"蓝色\",\n      \"target\": \"学间测试1—L30\",\n      \"position\": \"手机页面下半部右侧卡片标题左侧\",\n      \"uncertain\": false\n    }\n  ],\n  \"checkmarks_count\": 2,\n  \"circled_text\": [],\n  \"tables\": [\n    {\n      \"rows\": [\n        [\"不限\", \"108\", \"115\"],\n        [\"时长(分钟)\", \"题目量\", \"考试总分\"]\n      ]\n    }\n  ],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"二维码中央的小字或图案无法确认。\",\n    \"右上角白色水印文字无法确认。\",\n    \"网址中个别字符可能无法确认。\",\n    \"第二张卡片标题读作“学间测试1—L30”，其中“间”及连接符无法确认。\"\n  ]\n}",
+    "parsed": {
+      "kind": "screen",
+      "text_lines": [
+        "考试介绍",
+        "appmprxxtlw1092.h5.zet.citv.cn",
+        "NEW CONCEPT ENGLISH I",
+        "新概念英语",
+        "第①册",
+        "学前测试",
+        "学前测试",
+        "等18341人参与",
+        "考试信息",
+        "不限",
+        "时长(分钟)",
+        "108",
+        "题目量",
+        "115",
+        "考试总分",
+        "共5个 >",
+        "学前测试",
+        "考试",
+        "学间测试1—L30",
+        "考试",
+        "成绩",
+        "再次考试",
+        "[无法确认]"
+      ],
+      "description": "画面中央是一张纵向手机页面截图，页面上方有黑白书封面图案；其下方有多个人像头像。画面右下方有二维码，二维码中央叠有小图案。背景为浅灰色，右上方有白色水印文字。",
+      "annotations": [
+        {
+          "type": "蓝色圆形勾选图标",
+          "color": "蓝色",
+          "target": "学前测试",
+          "position": "手机页面下半部左侧卡片标题左侧",
+          "uncertain": false,
+          "requires_review": false,
+          "grounding": "api_visual_observation_not_human_verified"
+        },
+        {
+          "type": "蓝色圆形勾选图标",
+          "color": "蓝色",
+          "target": "学间测试1—L30",
+          "position": "手机页面下半部右侧卡片标题左侧",
+          "uncertain": false,
+          "requires_review": false,
+          "grounding": "api_visual_observation_not_human_verified"
+        }
+      ],
+      "checkmarks_count": 2,
+      "circled_text": [],
+      "tables": [
+        {
+          "rows": [
+            [
+              "不限",
+              "108",
+              "115"
+            ],
+            [
+              "时长(分钟)",
+              "题目量",
+              "考试总分"
+            ]
+          ]
+        }
+      ],
+      "formulas": [],
+      "uncertain": [
+        "二维码中央的小字或图案无法确认。",
+        "右上角白色水印文字无法确认。",
+        "网址中个别字符可能无法确认。",
+        "第二张卡片标题读作“学间测试1—L30”，其中“间”及连接符无法确认。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": true,
+      "formula_present": false,
+      "visible_text": "考试介绍\nappmprxxtlw1092.h5.zet.citv.cn\nNEW CONCEPT ENGLISH I\n新概念英语\n第①册\n学前测试\n学前测试\n等18341人参与\n考试信息\n不限\n时长(分钟)\n108\n题目量\n115\n考试总分\n共5个 >\n学前测试\n考试\n学间测试1—L30\n考试\n成绩\n再次考试\n[无法确认]"
+    },
+    "usage": {
+      "completion_tokens": 1195,
+      "total_tokens": 3875,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 683
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 13.671672101001604,
+    "image_sha256": "78287f4f5f69fd60b70cec1939905aa40f5fd7e0a63bd3e3e7b85080cfd98cd3",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00008885_0000296167.webp",
+  "time": 296.166688,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "structured_table_chart_or_formula",
+    "low_confidence_instructional_ocr",
+    "visible_annotation_change_or_changed_target_text"
+  ]
+}

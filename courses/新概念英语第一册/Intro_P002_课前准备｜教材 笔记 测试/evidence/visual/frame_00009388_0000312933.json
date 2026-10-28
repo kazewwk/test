@@ -1,0 +1,134 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"学前测试\",\n    \"[无法确认].h5.xet.citv.cn\",\n    \"00:00:01\",\n    \"1/108\",\n    \"单选题/1分\",\n    \"What were you doing when he arrived?\",\n    \"I was ________.\",\n    \"A having a bath\",\n    \"B had a bath\",\n    \"C have a bath\",\n    \"下一题\",\n    \"[无法确认] bilibili\"\n  ],\n  \"description\": \"画面中央是竖向测试页面，三个选项字母分别位于浅灰色圆形边框内；右下方有黑白二维码，右上方有白色水印。\",\n  \"annotations\": [],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"页面标题下方网址的前半部分无法确认。\",\n    \"右上角水印中的中文无法确认。\",\n    \"题干空白横线的下划线字符数量无法确认。\"\n  ]\n}",
+  "parsed": {
+    "kind": "screen",
+    "text_lines": [
+      "学前测试",
+      "[无法确认].h5.xet.citv.cn",
+      "00:00:01",
+      "1/108",
+      "单选题/1分",
+      "What were you doing when he arrived?",
+      "I was ________.",
+      "A having a bath",
+      "B had a bath",
+      "C have a bath",
+      "下一题",
+      "[无法确认] bilibili"
+    ],
+    "description": "画面中央是竖向测试页面，三个选项字母分别位于浅灰色圆形边框内；右下方有黑白二维码，右上方有白色水印。",
+    "annotations": [],
+    "checkmarks_count": 0,
+    "circled_text": [],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "页面标题下方网址的前半部分无法确认。",
+      "右上角水印中的中文无法确认。",
+      "题干空白横线的下划线字符数量无法确认。"
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "学前测试\n[无法确认].h5.xet.citv.cn\n00:00:01\n1/108\n单选题/1分\nWhat were you doing when he arrived?\nI was ________.\nA having a bath\nB had a bath\nC have a bath\n下一题\n[无法确认] bilibili"
+  },
+  "usage": {
+    "completion_tokens": 308,
+    "total_tokens": 2988,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 58
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 5.852659524996852,
+  "image_sha256": "eb2f7d134e244b6a6926c55322ea82fb4299263d03f42f1b18c3c61003d2c716",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"学前测试\",\n    \"appmprxxtlw1092.h5.xet.citv.cn\",\n    \"00:00:01\",\n    \"1/108\",\n    \"单选题/1分\",\n    \"What were you doing when he arrived?\",\n    \"I was ______.\",\n    \"A\",\n    \"having a bath\",\n    \"B\",\n    \"had a bath\",\n    \"C\",\n    \"have a bath\",\n    \"下一题\",\n    \"胶学\",\n    \"哔哩哔哩\"\n  ],\n  \"description\": \"浅色背景上居中显示竖屏测试页面，右下方有二维码；页面顶部有关闭、计时、文本、图钉和网格样式图标。\",\n  \"annotations\": [],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"右上角浅色水印文字疑似“胶学 哔哩哔哩”，无法完全确认。\",\n    \"页面顶部网址中的字符较小，读取为“appmprxxtlw1092.h5.xet.citv.cn”，无法完全确认。\"\n  ]\n}",
+    "parsed": {
+      "kind": "screen",
+      "text_lines": [
+        "学前测试",
+        "appmprxxtlw1092.h5.xet.citv.cn",
+        "00:00:01",
+        "1/108",
+        "单选题/1分",
+        "What were you doing when he arrived?",
+        "I was ______.",
+        "A",
+        "having a bath",
+        "B",
+        "had a bath",
+        "C",
+        "have a bath",
+        "下一题",
+        "胶学",
+        "哔哩哔哩"
+      ],
+      "description": "浅色背景上居中显示竖屏测试页面，右下方有二维码；页面顶部有关闭、计时、文本、图钉和网格样式图标。",
+      "annotations": [],
+      "checkmarks_count": 0,
+      "circled_text": [],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "右上角浅色水印文字疑似“胶学 哔哩哔哩”，无法完全确认。",
+        "页面顶部网址中的字符较小，读取为“appmprxxtlw1092.h5.xet.citv.cn”，无法完全确认。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": "学前测试\nappmprxxtlw1092.h5.xet.citv.cn\n00:00:01\n1/108\n单选题/1分\nWhat were you doing when he arrived?\nI was ______.\nA\nhaving a bath\nB\nhad a bath\nC\nhave a bath\n下一题\n胶学\n哔哩哔哩"
+    },
+    "usage": {
+      "completion_tokens": 676,
+      "total_tokens": 3356,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 392
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 9.100408955000603,
+    "image_sha256": "eb2f7d134e244b6a6926c55322ea82fb4299263d03f42f1b18c3c61003d2c716",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00009388_0000312933.webp",
+  "time": 312.933312,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "low_confidence_instructional_ocr",
+    "visible_annotation_change_or_changed_target_text"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"全文翻译\",\n    \"00:00:13\",\n    \"5/108\",\n    \"单选题/1分\",\n    \"If it _____ tomorrow, we will play\",\n    \"football.\",\n    \"A doesn’t rain\",\n    \"B won’t rain\",\n    \"C didn’t rain\",\n    \"上一题\",\n    \"下一题\",\n    \"胶学 bilibili\"\n  ],\n  \"description\": \"画面中央是竖向答题界面，三个选项前各有一个浅灰色圆形，圆内分别为A、B、C。右下方有黑白二维码，右上方有白色水印。\",\n  \"annotations\": [],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"题干中的空格为横线，无法确定对应的下划线字符数量。\",\n    \"右上角水印中的中文辨认为“胶学”，清晰度较低。\"\n  ]\n}",
+  "parsed": {
+    "kind": "screen",
+    "text_lines": [
+      "全文翻译",
+      "00:00:13",
+      "5/108",
+      "单选题/1分",
+      "If it _____ tomorrow, we will play",
+      "football.",
+      "A doesn’t rain",
+      "B won’t rain",
+      "C didn’t rain",
+      "上一题",
+      "下一题",
+      "胶学 bilibili"
+    ],
+    "description": "画面中央是竖向答题界面，三个选项前各有一个浅灰色圆形，圆内分别为A、B、C。右下方有黑白二维码，右上方有白色水印。",
+    "annotations": [],
+    "checkmarks_count": 0,
+    "circled_text": [],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "题干中的空格为横线，无法确定对应的下划线字符数量。",
+      "右上角水印中的中文辨认为“胶学”，清晰度较低。"
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "全文翻译\n00:00:13\n5/108\n单选题/1分\nIf it _____ tomorrow, we will play\nfootball.\nA doesn’t rain\nB won’t rain\nC didn’t rain\n上一题\n下一题\n胶学 bilibili"
+  },
+  "usage": {
+    "completion_tokens": 243,
+    "total_tokens": 2923,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 4.289455178000935,
+  "image_sha256": "319fef590b151704e426d60867fb49e6976b03c405052256c1f786e6601c8a09",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\"kind\":\"screen\",\"text_lines\":[\"全文翻译\",\"00:00:13\",\"5/108\",\"单选题/1分\",\"If it ______ tomorrow, we will play\",\"football.\",\"A doesn’t rain\",\"B won’t rain\",\"C didn’t rain\",\"上一题\",\"下一题\",\"[无法确认]\"],\"description\":\"画面中央为手机竖屏式选择题界面，右下方有二维码；右上角有浅色水印。\",\"annotations\":[],\"checkmarks_count\":0,\"circled_text\":[],\"tables\":[],\"formulas\":[],\"uncertain\":[\"右上角水印文字不清晰。\",\"二维码中央覆盖的小图案或文字无法确认。\"]}",
+    "parsed": {
+      "kind": "screen",
+      "text_lines": [
+        "全文翻译",
+        "00:00:13",
+        "5/108",
+        "单选题/1分",
+        "If it ______ tomorrow, we will play",
+        "football.",
+        "A doesn’t rain",
+        "B won’t rain",
+        "C didn’t rain",
+        "上一题",
+        "下一题",
+        "[无法确认]"
+      ],
+      "description": "画面中央为手机竖屏式选择题界面，右下方有二维码；右上角有浅色水印。",
+      "annotations": [],
+      "checkmarks_count": 0,
+      "circled_text": [],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "右上角水印文字不清晰。",
+        "二维码中央覆盖的小图案或文字无法确认。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": "全文翻译\n00:00:13\n5/108\n单选题/1分\nIf it ______ tomorrow, we will play\nfootball.\nA doesn’t rain\nB won’t rain\nC didn’t rain\n上一题\n下一题\n[无法确认]"
+    },
+    "usage": {
+      "completion_tokens": 439,
+      "total_tokens": 3119,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 286
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 7.668843264000316,
+    "image_sha256": "319fef590b151704e426d60867fb49e6976b03c405052256c1f786e6601c8a09",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00009768_0000325600.webp",
+  "time": 325.6,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "low_confidence_instructional_ocr",
+    "visible_annotation_change_or_changed_target_text"
+  ]
+}

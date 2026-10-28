@@ -1,0 +1,197 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"考试介绍\",\n    \"[无法确认].h5.xet.citv.cn\",\n    \"新概念英语\",\n    \"第①册\",\n    \"学前测试\",\n    \"学前测试\",\n    \"等18341人参与\",\n    \"考试信息\",\n    \"不限\",\n    \"108\",\n    \"115\",\n    \"时长(分钟)\",\n    \"题目量\",\n    \"考试总分\",\n    \"共5个\",\n    \"学前测试\",\n    \"学间测试L1—L30\",\n    \"考试\",\n    \"考试\",\n    \"店铺主页\",\n    \"个人中心\",\n    \"店铺信息\",\n    \"投诉建议\",\n    \"小鹅通提供技术支持\",\n    \"成绩\",\n    \"再次考试\",\n    \"[无法确认] bilibili\"\n  ],\n  \"description\": \"浅灰色背景中央是一张竖向网页界面截图。顶部横幅内有书本图案；页面中部有两张并排的卡片，底部有蓝色长条按钮。画面右下方有黑白二维码，右上角有白色水印。\",\n  \"annotations\": [\n    {\n      \"type\": \"勾\",\n      \"color\": \"白色，蓝色圆形底\",\n      \"target\": \"学前测试\",\n      \"position\": \"页面中部左侧卡片标题左边\",\n      \"uncertain\": false\n    },\n    {\n      \"type\": \"勾\",\n      \"color\": \"白色，蓝色圆形底\",\n      \"target\": \"学间测试L1—L30\",\n      \"position\": \"页面中部右侧卡片标题左边\",\n      \"uncertain\": false\n    }\n  ],\n  \"checkmarks_count\": 2,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"顶部网址的前半部分无法确认。\",\n    \"横幅顶部的“新概念英语”上部被截去。\",\n    \"右上角水印中的中文无法确认。\"\n  ]\n}",
+  "parsed": {
+    "kind": "screen",
+    "text_lines": [
+      "考试介绍",
+      "[无法确认].h5.xet.citv.cn",
+      "新概念英语",
+      "第①册",
+      "学前测试",
+      "学前测试",
+      "等18341人参与",
+      "考试信息",
+      "不限",
+      "108",
+      "115",
+      "时长(分钟)",
+      "题目量",
+      "考试总分",
+      "共5个",
+      "学前测试",
+      "学间测试L1—L30",
+      "考试",
+      "考试",
+      "店铺主页",
+      "个人中心",
+      "店铺信息",
+      "投诉建议",
+      "小鹅通提供技术支持",
+      "成绩",
+      "再次考试",
+      "[无法确认] bilibili"
+    ],
+    "description": "浅灰色背景中央是一张竖向网页界面截图。顶部横幅内有书本图案；页面中部有两张并排的卡片，底部有蓝色长条按钮。画面右下方有黑白二维码，右上角有白色水印。",
+    "annotations": [
+      {
+        "type": "勾",
+        "color": "白色，蓝色圆形底",
+        "target": "学前测试",
+        "position": "页面中部左侧卡片标题左边",
+        "uncertain": false,
+        "requires_review": false,
+        "grounding": "api_visual_observation_not_human_verified"
+      },
+      {
+        "type": "勾",
+        "color": "白色，蓝色圆形底",
+        "target": "学间测试L1—L30",
+        "position": "页面中部右侧卡片标题左边",
+        "uncertain": false,
+        "requires_review": false,
+        "grounding": "api_visual_observation_not_human_verified"
+      }
+    ],
+    "checkmarks_count": 2,
+    "circled_text": [],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "顶部网址的前半部分无法确认。",
+      "横幅顶部的“新概念英语”上部被截去。",
+      "右上角水印中的中文无法确认。"
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "考试介绍\n[无法确认].h5.xet.citv.cn\n新概念英语\n第①册\n学前测试\n学前测试\n等18341人参与\n考试信息\n不限\n108\n115\n时长(分钟)\n题目量\n考试总分\n共5个\n学前测试\n学间测试L1—L30\n考试\n考试\n店铺主页\n个人中心\n店铺信息\n投诉建议\n小鹅通提供技术支持\n成绩\n再次考试\n[无法确认] bilibili"
+  },
+  "usage": {
+    "completion_tokens": 539,
+    "total_tokens": 3219,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 74
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 9.521585571001197,
+  "image_sha256": "a80d0d8cbd944c02745a6096b66d1a8d20d2a472b3029bd18c8dd906e4346d63",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"考试介绍\",\n    \"appmprxxtlw1092.h5.xet.citv.cn\",\n    \"新概念英语\",\n    \"第①册\",\n    \"学前测试\",\n    \"学前测试\",\n    \"等18341人参与\",\n    \"考试信息\",\n    \"不限\",\n    \"时长(分钟)\",\n    \"108\",\n    \"题目量\",\n    \"115\",\n    \"考试总分\",\n    \"共5个 >\",\n    \"学前测试\",\n    \"考试\",\n    \"学间测试L1—L30\",\n    \"考试\",\n    \"店铺主页 | 个人中心 | 店铺信息 | 投诉建议\",\n    \"小鹅通提供技术支持\",\n    \"成绩\",\n    \"再次考试\",\n    \"皮学 bilibili\"\n  ],\n  \"description\": \"灰色背景中央是一张纵向手机网页截图，右下方有二维码，二维码中央覆盖一小块图案。页面上方有书本图标，底部有成绩图标和蓝色圆角按钮。\",\n  \"annotations\": [\n    {\n      \"type\": \"勾选图标\",\n      \"color\": \"蓝色圆形、白色勾\",\n      \"target\": \"学前测试\",\n      \"position\": \"页面中部左侧卡片标题左边\",\n      \"uncertain\": false\n    },\n    {\n      \"type\": \"勾选图标\",\n      \"color\": \"蓝色圆形、白色勾\",\n      \"target\": \"学间测试L1—L30\",\n      \"position\": \"页面中部右侧卡片标题左边\",\n      \"uncertain\": false\n    }\n  ],\n  \"checkmarks_count\": 2,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"顶部“新概念英语”在截图中上缘处被截切。\",\n    \"页面地址中的字符较小，读取为“appmprxxtlw1092.h5.xet.citv.cn”，其中个别字符无法确认。\",\n    \"右下二维码中央覆盖图案上的文字无法确认。\",\n    \"右上角水印读取为“皮学 bilibili”，字样较淡。\"\n  ]\n}",
+    "parsed": {
+      "kind": "screen",
+      "text_lines": [
+        "考试介绍",
+        "appmprxxtlw1092.h5.xet.citv.cn",
+        "新概念英语",
+        "第①册",
+        "学前测试",
+        "学前测试",
+        "等18341人参与",
+        "考试信息",
+        "不限",
+        "时长(分钟)",
+        "108",
+        "题目量",
+        "115",
+        "考试总分",
+        "共5个 >",
+        "学前测试",
+        "考试",
+        "学间测试L1—L30",
+        "考试",
+        "店铺主页 | 个人中心 | 店铺信息 | 投诉建议",
+        "小鹅通提供技术支持",
+        "成绩",
+        "再次考试",
+        "皮学 bilibili"
+      ],
+      "description": "灰色背景中央是一张纵向手机网页截图，右下方有二维码，二维码中央覆盖一小块图案。页面上方有书本图标，底部有成绩图标和蓝色圆角按钮。",
+      "annotations": [
+        {
+          "type": "勾选图标",
+          "color": "蓝色圆形、白色勾",
+          "target": "学前测试",
+          "position": "页面中部左侧卡片标题左边",
+          "uncertain": false,
+          "requires_review": false,
+          "grounding": "api_visual_observation_not_human_verified"
+        },
+        {
+          "type": "勾选图标",
+          "color": "蓝色圆形、白色勾",
+          "target": "学间测试L1—L30",
+          "position": "页面中部右侧卡片标题左边",
+          "uncertain": false,
+          "requires_review": false,
+          "grounding": "api_visual_observation_not_human_verified"
+        }
+      ],
+      "checkmarks_count": 2,
+      "circled_text": [],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "顶部“新概念英语”在截图中上缘处被截切。",
+        "页面地址中的字符较小，读取为“appmprxxtlw1092.h5.xet.citv.cn”，其中个别字符无法确认。",
+        "右下二维码中央覆盖图案上的文字无法确认。",
+        "右上角水印读取为“皮学 bilibili”，字样较淡。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": "考试介绍\nappmprxxtlw1092.h5.xet.citv.cn\n新概念英语\n第①册\n学前测试\n学前测试\n等18341人参与\n考试信息\n不限\n时长(分钟)\n108\n题目量\n115\n考试总分\n共5个 >\n学前测试\n考试\n学间测试L1—L30\n考试\n店铺主页 | 个人中心 | 店铺信息 | 投诉建议\n小鹅通提供技术支持\n成绩\n再次考试\n皮学 bilibili"
+    },
+    "usage": {
+      "completion_tokens": 1276,
+      "total_tokens": 3956,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 772
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 15.222251737002807,
+    "image_sha256": "a80d0d8cbd944c02745a6096b66d1a8d20d2a472b3029bd18c8dd906e4346d63",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00008978_0000299267.webp",
+  "time": 299.266687,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "low_confidence_instructional_ocr",
+    "visible_annotation_change_or_changed_target_text"
+  ]
+}

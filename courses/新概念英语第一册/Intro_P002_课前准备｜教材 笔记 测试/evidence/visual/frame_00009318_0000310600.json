@@ -1,0 +1,196 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"考试介绍\",\n    \"[无法确认].h5.xet.citv.cn\",\n    \"NEW CONCEPT ENGLISH 1\",\n    \"新概念英语\",\n    \"第①册\",\n    \"学前测试\",\n    \"学前测试\",\n    \"等18341人参与\",\n    \"考试信息\",\n    \"不限\",\n    \"时长(分钟)\",\n    \"108\",\n    \"题目量\",\n    \"115\",\n    \"考试总分\",\n    \"共5个\",\n    \"学前测试\",\n    \"考试\",\n    \"学间测试L1—L30\",\n    \"考试\",\n    \"[无法确认]\",\n    \"成绩\",\n    \"再次考试\",\n    \"[无法确认] bilibili\"\n  ],\n  \"description\": \"浅灰色背景中央是一幅竖向手机页面截图。页面上方有黑白书本图案，学前测试标题下有一排小头像。页面下部有两个并排的测试卡片，左侧卡片带蓝色边框。画面右下方有黑白二维码，中央有小图案。\",\n  \"annotations\": [\n    {\n      \"type\": \"勾\",\n      \"color\": \"白色，蓝色圆形背景\",\n      \"target\": \"学前测试\",\n      \"position\": \"左侧测试卡片标题左边\",\n      \"uncertain\": false\n    },\n    {\n      \"type\": \"勾\",\n      \"color\": \"白色，蓝色圆形背景\",\n      \"target\": \"学间测试L1—L30\",\n      \"position\": \"右侧测试卡片标题左边\",\n      \"uncertain\": false\n    }\n  ],\n  \"checkmarks_count\": 2,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"网址前半部分字母较小，无法确认。\",\n    \"页面底部一行文字被下方栏遮挡，无法完整确认。\",\n    \"右上角水印中的中文无法确认。\"\n  ]\n}",
+  "parsed": {
+    "kind": "screen",
+    "text_lines": [
+      "考试介绍",
+      "[无法确认].h5.xet.citv.cn",
+      "NEW CONCEPT ENGLISH 1",
+      "新概念英语",
+      "第①册",
+      "学前测试",
+      "学前测试",
+      "等18341人参与",
+      "考试信息",
+      "不限",
+      "时长(分钟)",
+      "108",
+      "题目量",
+      "115",
+      "考试总分",
+      "共5个",
+      "学前测试",
+      "考试",
+      "学间测试L1—L30",
+      "考试",
+      "[无法确认]",
+      "成绩",
+      "再次考试",
+      "[无法确认] bilibili"
+    ],
+    "description": "浅灰色背景中央是一幅竖向手机页面截图。页面上方有黑白书本图案，学前测试标题下有一排小头像。页面下部有两个并排的测试卡片，左侧卡片带蓝色边框。画面右下方有黑白二维码，中央有小图案。",
+    "annotations": [
+      {
+        "type": "勾",
+        "color": "白色，蓝色圆形背景",
+        "target": "学前测试",
+        "position": "左侧测试卡片标题左边",
+        "uncertain": false,
+        "requires_review": false,
+        "grounding": "api_visual_observation_not_human_verified"
+      },
+      {
+        "type": "勾",
+        "color": "白色，蓝色圆形背景",
+        "target": "学间测试L1—L30",
+        "position": "右侧测试卡片标题左边",
+        "uncertain": false,
+        "requires_review": false,
+        "grounding": "api_visual_observation_not_human_verified"
+      }
+    ],
+    "checkmarks_count": 2,
+    "circled_text": [],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "网址前半部分字母较小，无法确认。",
+      "页面底部一行文字被下方栏遮挡，无法完整确认。",
+      "右上角水印中的中文无法确认。"
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "考试介绍\n[无法确认].h5.xet.citv.cn\nNEW CONCEPT ENGLISH 1\n新概念英语\n第①册\n学前测试\n学前测试\n等18341人参与\n考试信息\n不限\n时长(分钟)\n108\n题目量\n115\n考试总分\n共5个\n学前测试\n考试\n学间测试L1—L30\n考试\n[无法确认]\n成绩\n再次考试\n[无法确认] bilibili"
+  },
+  "usage": {
+    "completion_tokens": 520,
+    "total_tokens": 3200,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 62
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 8.973787479000748,
+  "image_sha256": "0aaf20497d610c436dbf125ab72bf7a9bb335b6c7db269b5897ccd6838e9e4ba",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\"kind\":\"screen\",\"text_lines\":[\"考试介绍\",\"appmprxxtlw1092.h5.xet.citv.cn\",\"NEW CONCEPT ENGLISH I\",\"新概念英语\",\"第①册\",\"学前测试\",\"学前测试\",\"等18341人参与\",\"考试信息\",\"不限\",\"时长(分钟)\",\"108\",\"题目量\",\"115\",\"考试总分\",\"共5个\",\"学前测试\",\"考试\",\"学间测试L1—L30\",\"考试\",\"店铺主页\",\"个人中心\",\"店铺信息\",\"投诉建议\",\"A+\",\"成绩\",\"再次考试\"],\"description\":\"浅灰背景中央显示一张竖屏网页截图，右侧有黑白二维码；右上方有浅色水印。网页上方是《新概念英语》封面图，封面右侧有大号数字“1”，标题下方有书本图案；页面下方是考试信息、考试卡片和蓝色按钮。\",\"annotations\":[{\"type\":\"勾选图标\",\"color\":\"蓝色\",\"target\":\"学前测试卡片\",\"position\":\"卡片标题左侧\",\"uncertain\":false},{\"type\":\"勾选图标\",\"color\":\"蓝色\",\"target\":\"学间测试L1—L30卡片\",\"position\":\"卡片标题左侧\",\"uncertain\":false}],\"checkmarks_count\":2,\"circled_text\":[],\"tables\":[],\"formulas\":[],\"uncertain\":[\"封面顶部英文末尾字符较小，读取为“NEW CONCEPT ENGLISH I”。\",\"底部导航文字较浅，读取为“店铺主页 | 个人中心 | 店铺信息 | 投诉建议”。\",\"第二张考试卡片标题读取为“学间测试L1—L30”。\"]}",
+    "parsed": {
+      "kind": "screen",
+      "text_lines": [
+        "考试介绍",
+        "appmprxxtlw1092.h5.xet.citv.cn",
+        "NEW CONCEPT ENGLISH I",
+        "新概念英语",
+        "第①册",
+        "学前测试",
+        "学前测试",
+        "等18341人参与",
+        "考试信息",
+        "不限",
+        "时长(分钟)",
+        "108",
+        "题目量",
+        "115",
+        "考试总分",
+        "共5个",
+        "学前测试",
+        "考试",
+        "学间测试L1—L30",
+        "考试",
+        "店铺主页",
+        "个人中心",
+        "店铺信息",
+        "投诉建议",
+        "A+",
+        "成绩",
+        "再次考试"
+      ],
+      "description": "浅灰背景中央显示一张竖屏网页截图，右侧有黑白二维码；右上方有浅色水印。网页上方是《新概念英语》封面图，封面右侧有大号数字“1”，标题下方有书本图案；页面下方是考试信息、考试卡片和蓝色按钮。",
+      "annotations": [
+        {
+          "type": "勾选图标",
+          "color": "蓝色",
+          "target": "学前测试卡片",
+          "position": "卡片标题左侧",
+          "uncertain": false,
+          "requires_review": false,
+          "grounding": "api_visual_observation_not_human_verified"
+        },
+        {
+          "type": "勾选图标",
+          "color": "蓝色",
+          "target": "学间测试L1—L30卡片",
+          "position": "卡片标题左侧",
+          "uncertain": false,
+          "requires_review": false,
+          "grounding": "api_visual_observation_not_human_verified"
+        }
+      ],
+      "checkmarks_count": 2,
+      "circled_text": [],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "封面顶部英文末尾字符较小，读取为“NEW CONCEPT ENGLISH I”。",
+        "底部导航文字较浅，读取为“店铺主页 | 个人中心 | 店铺信息 | 投诉建议”。",
+        "第二张考试卡片标题读取为“学间测试L1—L30”。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": "考试介绍\nappmprxxtlw1092.h5.xet.citv.cn\nNEW CONCEPT ENGLISH I\n新概念英语\n第①册\n学前测试\n学前测试\n等18341人参与\n考试信息\n不限\n时长(分钟)\n108\n题目量\n115\n考试总分\n共5个\n学前测试\n考试\n学间测试L1—L30\n考试\n店铺主页\n个人中心\n店铺信息\n投诉建议\nA+\n成绩\n再次考试"
+    },
+    "usage": {
+      "completion_tokens": 893,
+      "total_tokens": 3573,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 516
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 9.427573480999854,
+    "image_sha256": "0aaf20497d610c436dbf125ab72bf7a9bb335b6c7db269b5897ccd6838e9e4ba",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00009318_0000310600.webp",
+  "time": 310.6,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "structured_table_chart_or_formula",
+    "visible_annotation_change_or_changed_target_text"
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"[无法确认]\",\n    \"00:00:13\",\n    \"T\",\n    \"5/108\",\n    \"单选题/1分\",\n    \"If it ______ tomorrow, we will play\",\n    \"football.\",\n    \"A  doesn’t rain\",\n    \"B  won’t rain\",\n    \"C  didn’t rain\",\n    \"上一题\",\n    \"下一题\",\n    \"胶学 bilibili\"\n  ],\n  \"description\": \"画面中央是竖向答题界面。题目下方有三个纵向排列的选项，字母A、B、C分别位于浅灰色圆框内。界面底部有左右翻页图标。画面右下方有黑白二维码，中央有小图案。\",\n  \"annotations\": [],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"答题界面顶部的文字及网址相互重叠、模糊，无法完整确认。\",\n    \"右上角水印中的中文辨识不完全确定。\"\n  ]\n}",
+  "parsed": {
+    "kind": "screen",
+    "text_lines": [
+      "[无法确认]",
+      "00:00:13",
+      "T",
+      "5/108",
+      "单选题/1分",
+      "If it ______ tomorrow, we will play",
+      "football.",
+      "A  doesn’t rain",
+      "B  won’t rain",
+      "C  didn’t rain",
+      "上一题",
+      "下一题",
+      "胶学 bilibili"
+    ],
+    "description": "画面中央是竖向答题界面。题目下方有三个纵向排列的选项，字母A、B、C分别位于浅灰色圆框内。界面底部有左右翻页图标。画面右下方有黑白二维码，中央有小图案。",
+    "annotations": [],
+    "checkmarks_count": 0,
+    "circled_text": [],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "答题界面顶部的文字及网址相互重叠、模糊，无法完整确认。",
+      "右上角水印中的中文辨识不完全确定。"
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "[无法确认]\n00:00:13\nT\n5/108\n单选题/1分\nIf it ______ tomorrow, we will play\nfootball.\nA  doesn’t rain\nB  won’t rain\nC  didn’t rain\n上一题\n下一题\n胶学 bilibili"
+  },
+  "usage": {
+    "completion_tokens": 312,
+    "total_tokens": 2992,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 46
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 6.5370283010015555,
+  "image_sha256": "672e6dd1e7a837a88c86916cadcbae2b1dc04c57202cff325bf409c891b1cd10",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\"kind\":\"screen\",\"text_lines\":[\"学堂测课\",\"[无法确认]\",\"00:00:13\",\"5/108\",\"单选题/1分\",\"If it ______ tomorrow, we will play\",\"football.\",\"A  doesn’t rain\",\"B  won’t rain\",\"C  didn’t rain\",\"上一题\",\"下一题\",\"[无法确认]\"],\"description\":\"画面中央是竖屏答题界面，背景为浅灰色。右下方有二维码，右上方有白色水印文字。\",\"annotations\":[],\"checkmarks_count\":0,\"circled_text\":[],\"tables\":[],\"formulas\":[],\"uncertain\":[\"顶部标题及其下方的小字被图标和重影遮挡，无法确认。\",\"右上角水印文字无法完整确认。\"]}",
+    "parsed": {
+      "kind": "screen",
+      "text_lines": [
+        "学堂测课",
+        "[无法确认]",
+        "00:00:13",
+        "5/108",
+        "单选题/1分",
+        "If it ______ tomorrow, we will play",
+        "football.",
+        "A  doesn’t rain",
+        "B  won’t rain",
+        "C  didn’t rain",
+        "上一题",
+        "下一题",
+        "[无法确认]"
+      ],
+      "description": "画面中央是竖屏答题界面，背景为浅灰色。右下方有二维码，右上方有白色水印文字。",
+      "annotations": [],
+      "checkmarks_count": 0,
+      "circled_text": [],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "顶部标题及其下方的小字被图标和重影遮挡，无法确认。",
+        "右上角水印文字无法完整确认。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": "学堂测课\n[无法确认]\n00:00:13\n5/108\n单选题/1分\nIf it ______ tomorrow, we will play\nfootball.\nA  doesn’t rain\nB  won’t rain\nC  didn’t rain\n上一题\n下一题\n[无法确认]"
+    },
+    "usage": {
+      "completion_tokens": 569,
+      "total_tokens": 3249,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 393
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 7.682381673999771,
+    "image_sha256": "672e6dd1e7a837a88c86916cadcbae2b1dc04c57202cff325bf409c891b1cd10",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00009757_0000325233.webp",
+  "time": 325.233313,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "low_confidence_instructional_ocr"
+  ]
+}

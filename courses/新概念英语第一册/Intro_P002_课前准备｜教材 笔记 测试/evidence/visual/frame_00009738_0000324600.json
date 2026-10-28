@@ -1,0 +1,130 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"学前测试\",\n    \"[无法确认].h5.xet.citv.cn\",\n    \"00:00:12\",\n    \"4/108\",\n    \"单选题/1分\",\n    \"Is someone knocking at the door?\",\n    \"No, ________ is knocking at the door.\",\n    \"A  someone\",\n    \"B  anyone\",\n    \"C  no one\",\n    \"上一题\",\n    \"下一题\",\n    \"胶学 bilibili\"\n  ],\n  \"description\": \"画面中央为白色测试页面，三个选项字母分别位于浅灰色圆圈内，均未见选中标记。页面右下方有黑白二维码。\",\n  \"annotations\": [],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"页面顶部网址的前半部分较小，无法确认。\",\n    \"右上角水印中的中文辨认为“胶学”，不完全确定。\"\n  ]\n}",
+  "parsed": {
+    "kind": "screen",
+    "text_lines": [
+      "学前测试",
+      "[无法确认].h5.xet.citv.cn",
+      "00:00:12",
+      "4/108",
+      "单选题/1分",
+      "Is someone knocking at the door?",
+      "No, ________ is knocking at the door.",
+      "A  someone",
+      "B  anyone",
+      "C  no one",
+      "上一题",
+      "下一题",
+      "胶学 bilibili"
+    ],
+    "description": "画面中央为白色测试页面，三个选项字母分别位于浅灰色圆圈内，均未见选中标记。页面右下方有黑白二维码。",
+    "annotations": [],
+    "checkmarks_count": 0,
+    "circled_text": [],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "页面顶部网址的前半部分较小，无法确认。",
+      "右上角水印中的中文辨认为“胶学”，不完全确定。"
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "学前测试\n[无法确认].h5.xet.citv.cn\n00:00:12\n4/108\n单选题/1分\nIs someone knocking at the door?\nNo, ________ is knocking at the door.\nA  someone\nB  anyone\nC  no one\n上一题\n下一题\n胶学 bilibili"
+  },
+  "usage": {
+    "completion_tokens": 297,
+    "total_tokens": 2977,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 53
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 5.082206719001988,
+  "image_sha256": "dafee43e4ff461ffa79c976bd4f41a67dc5648cea43ede21c2b074a8dde10e19",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"胶学 bilibili\",\n    \"学前测试\",\n    \"appmprxxtlw1092.h5.zet.citv.cn\",\n    \"00:00:12\",\n    \"4/108\",\n    \"单选题/1分\",\n    \"Is someone knocking at the door?\",\n    \"No, ________ is knocking at the door.\",\n    \"A someone\",\n    \"B anyone\",\n    \"C no one\",\n    \"上一题\",\n    \"下一题\"\n  ],\n  \"description\": \"画面中央为竖屏测试页面，右下方有一个二维码。页面顶部和底部有若干图标按钮。\",\n  \"annotations\": [],\n  \"checkmarks_count\": null,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"右上角白色水印可辨为“胶学 bilibili”，其中部分字形较淡。\",\n    \"二维码中央的小图案或文字无法确认。\"\n  ]\n}",
+    "parsed": {
+      "kind": "screen",
+      "text_lines": [
+        "胶学 bilibili",
+        "学前测试",
+        "appmprxxtlw1092.h5.zet.citv.cn",
+        "00:00:12",
+        "4/108",
+        "单选题/1分",
+        "Is someone knocking at the door?",
+        "No, ________ is knocking at the door.",
+        "A someone",
+        "B anyone",
+        "C no one",
+        "上一题",
+        "下一题"
+      ],
+      "description": "画面中央为竖屏测试页面，右下方有一个二维码。页面顶部和底部有若干图标按钮。",
+      "annotations": [],
+      "checkmarks_count": null,
+      "circled_text": [],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "右上角白色水印可辨为“胶学 bilibili”，其中部分字形较淡。",
+        "二维码中央的小图案或文字无法确认。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": "胶学 bilibili\n学前测试\nappmprxxtlw1092.h5.zet.citv.cn\n00:00:12\n4/108\n单选题/1分\nIs someone knocking at the door?\nNo, ________ is knocking at the door.\nA someone\nB anyone\nC no one\n上一题\n下一题"
+    },
+    "usage": {
+      "completion_tokens": 528,
+      "total_tokens": 3208,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 293
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 12.345731588997296,
+    "image_sha256": "dafee43e4ff461ffa79c976bd4f41a67dc5648cea43ede21c2b074a8dde10e19",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00009738_0000324600.webp",
+  "time": 324.6,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "low_confidence_instructional_ocr"
+  ]
+}

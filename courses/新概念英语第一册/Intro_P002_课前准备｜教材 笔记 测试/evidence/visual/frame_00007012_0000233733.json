@@ -1,0 +1,128 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"slide\",\n  \"text_lines\": [\n    \"新概念英语 第一册\",\n    \"FIRST THINGS FIRST\",\n    \"课堂笔记&课后练习\",\n    \"New\",\n    \"Concept\",\n    \"English\",\n    \"1\",\n    \"[无法确认]\",\n    \"新概念英语 第一册（.pdf）\",\n    \"课堂笔记&课后练习\",\n    \"出品方  胶学\",\n    \"胶学 bilibili\"\n  ],\n  \"description\": \"浅色背景。左上方是一张白色封面图，封面下半部为蓝色矩形，内有四个蓝色圆形图案。左下方文字之间有一条黑色水平线。右下方是黑白二维码，中心有一幅小图。右上角有浅色水印。\",\n  \"annotations\": [],\n  \"checkmarks_count\": 0,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"封面底部的多行小字过小，无法确认。\"\n  ]\n}",
+  "parsed": {
+    "kind": "slide",
+    "text_lines": [
+      "新概念英语 第一册",
+      "FIRST THINGS FIRST",
+      "课堂笔记&课后练习",
+      "New",
+      "Concept",
+      "English",
+      "1",
+      "[无法确认]",
+      "新概念英语 第一册（.pdf）",
+      "课堂笔记&课后练习",
+      "出品方  胶学",
+      "胶学 bilibili"
+    ],
+    "description": "浅色背景。左上方是一张白色封面图，封面下半部为蓝色矩形，内有四个蓝色圆形图案。左下方文字之间有一条黑色水平线。右下方是黑白二维码，中心有一幅小图。右上角有浅色水印。",
+    "annotations": [],
+    "checkmarks_count": 0,
+    "circled_text": [],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "封面底部的多行小字过小，无法确认。"
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "新概念英语 第一册\nFIRST THINGS FIRST\n课堂笔记&课后练习\nNew\nConcept\nEnglish\n1\n[无法确认]\n新概念英语 第一册（.pdf）\n课堂笔记&课后练习\n出品方  胶学\n胶学 bilibili"
+  },
+  "usage": {
+    "completion_tokens": 280,
+    "total_tokens": 2960,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 31
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 5.121564843997476,
+  "image_sha256": "90a31c3e5ebb5d5d008e5ea060199779f6d197161b74a364362c0eb0d46aabec",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"新概念英语 第一册\",\n    \"FIRST THINGS FIRST\",\n    \"课堂笔记&课后练习\",\n    \"New\",\n    \"Concept\",\n    \"English\",\n    \"1\",\n    \"新概念英语 第一册（.pdf）\",\n    \"课堂笔记&课后练习\",\n    \"出品方\",\n    \"胶学\",\n    \"胶学\"\n  ],\n  \"description\": \"浅灰背景。左侧上方显示一本白色封面的书，封面中有蓝色区域和四个球形图案；右下方有一个二维码，二维码中央有小图案。右上角有浅色标识。\",\n  \"annotations\": [],\n  \"checkmarks_count\": null,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"书封面底部有一行极小文字，无法确认。\",\n    \"右上角浅色标识中的“胶学”之后是否还有文字，无法确认。\",\n    \"标题文件名括号的字形看起来为“（.pdf）”，括号样式无法完全确认。\"\n  ]\n}",
+    "parsed": {
+      "kind": "screen",
+      "text_lines": [
+        "新概念英语 第一册",
+        "FIRST THINGS FIRST",
+        "课堂笔记&课后练习",
+        "New",
+        "Concept",
+        "English",
+        "1",
+        "新概念英语 第一册（.pdf）",
+        "课堂笔记&课后练习",
+        "出品方",
+        "胶学",
+        "胶学"
+      ],
+      "description": "浅灰背景。左侧上方显示一本白色封面的书，封面中有蓝色区域和四个球形图案；右下方有一个二维码，二维码中央有小图案。右上角有浅色标识。",
+      "annotations": [],
+      "checkmarks_count": null,
+      "circled_text": [],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "书封面底部有一行极小文字，无法确认。",
+        "右上角浅色标识中的“胶学”之后是否还有文字，无法确认。",
+        "标题文件名括号的字形看起来为“（.pdf）”，括号样式无法完全确认。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": "新概念英语 第一册\nFIRST THINGS FIRST\n课堂笔记&课后练习\nNew\nConcept\nEnglish\n1\n新概念英语 第一册（.pdf）\n课堂笔记&课后练习\n出品方\n胶学\n胶学"
+    },
+    "usage": {
+      "completion_tokens": 549,
+      "total_tokens": 3229,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 278
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 7.964442491997033,
+    "image_sha256": "90a31c3e5ebb5d5d008e5ea060199779f6d197161b74a364362c0eb0d46aabec",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00007012_0000233733.webp",
+  "time": 233.733313,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "visible_annotation_change_or_changed_target_text"
+  ]
+}
