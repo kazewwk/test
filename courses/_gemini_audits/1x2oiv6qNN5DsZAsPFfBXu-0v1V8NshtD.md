@@ -4,6 +4,8 @@
 
 本结果只覆盖上述片段，机器转写、画面标记和时间码可能有误，不能代替整节课全文或人工复核。
 
+与 Qwen 机器转写的文字一致度：96.3%；这不是人工准确率。
+
 [结构化数据](1x2oiv6qNN5DsZAsPFfBXu-0v1V8NshtD.json) · [完整课程](../%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%86%8C_L01-L48/Lesson_011_P042_L011%20%E5%90%AC%E8%AF%B4%E8%AF%BB%E5%86%99%E5%A4%8D%E8%BF%B0%E7%BB%83%E4%B9%A0/lecture_full.md)
 
 ---
