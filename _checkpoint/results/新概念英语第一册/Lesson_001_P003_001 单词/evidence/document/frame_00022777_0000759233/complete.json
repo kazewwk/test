@@ -1,0 +1,99 @@
+{
+  "artifacts": {
+    "1793147856_2717.md": "86938bbfe02e9944116e812000343233af8a04c6a5ada4f6f6fa5e6cfa1e912b",
+    "1793147856_2717_res.json": "63b31e6c74c40b1fb68a44084d5ddb362583ccb2a4acf36a54ab837ea35d238e",
+    "imgs/img_in_header_image_box_1654_28_1913_102.jpg": "d871ec780ee08146decf84d6e89e5b6ed26a19eeea98ba5034922c5aa4e3e130",
+    "region_repairs.md": "2c88a5d9aadaa9c299a72b832a76d5be80d0dbae7d9afd93aa56be56bb2ffc3c",
+    "repairs/region_002/1793147856_8312.md": "9f52f5e7f130e984bbd747f778daf727ec9a1a377e98f8186a4d41b060f3f8b6",
+    "repairs/region_002/1793147856_8312_res.json": "b48b2c7ec89c2e320acda378337d05ce485224f3fb8ac6d34f0aba327a9398ae",
+    "repairs/region_002/source.png": "7dd235a3692881a218255ac61961fc8ff904dde664112594fd943a7952ff2337",
+    "repairs/region_003/1793147857_2660.md": "74a049dcf778ed5b66180a21c95ae056f2780844274b8cc34b035bb0b467905e",
+    "repairs/region_003/1793147857_2660_res.json": "791f775aef409326a1058a9443a0c4d66924381b1bc045d7a5b25c935262d012",
+    "repairs/region_003/source.png": "e331694ea09d4c2dc006f55274f6c3c79c13773646902bd04c8cc0c42e1fcd83"
+  },
+  "input_fingerprint": "e57a59ce6d3f2d14e454b2f6398cae3fd9845d008dcbfdb73f95bd1c2c89add9",
+  "image_sha256": "bf8fd9bf32bb33396523e94cbf34f34897763756a8f0918a0806c7fd2753d159",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 1.6091816619991732,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1654,
+        28,
+        1913,
+        102
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1654.0,
+          28.0
+        ],
+        [
+          1913.0,
+          28.0
+        ],
+        [
+          1913.0,
+          102.0
+        ],
+        [
+          1654.0,
+          102.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "他男人",
+      "block_bbox": [
+        821,
+        948,
+        1089,
+        1052
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "He's a he?",
+      "block_bbox": [
+        828,
+        1025,
+        1080,
+        1080
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        821,
+        948,
+        1089,
+        1052
+      ],
+      "ppocr_candidate": "他男人",
+      "recovered_text": "他男人",
+      "source_crop": "repairs/region_002/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        828,
+        1025,
+        1080,
+        1080
+      ],
+      "ppocr_candidate": "He's a he?",
+      "recovered_text": "He's a he?",
+      "source_crop": "repairs/region_003/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

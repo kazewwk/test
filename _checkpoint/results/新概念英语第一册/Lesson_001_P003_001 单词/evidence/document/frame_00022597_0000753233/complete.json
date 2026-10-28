@@ -1,0 +1,123 @@
+{
+  "artifacts": {
+    "1793147818_4631.md": "1c1e1fe6cb66c4090e4c848b10c3083593bdd7d0944167f052136ff51fcacc37",
+    "1793147818_4631_res.json": "9bbeb42205d6bf2d1dcd7b2b9bef0507756776cf00d6efc7ded9e22cf417b26b",
+    "region_repairs.md": "ce81355c4a5a20d3fe99aa933284228c08fab0b29eb40fb0ed4cb02f3b195e8c",
+    "repairs/region_003/1793147819_7919.md": "52bdeef81d138d36bb53c9b2abe87f0c250e1f9c43383ef0500e9d7e46184a83",
+    "repairs/region_003/1793147819_7919_res.json": "ae3143d8d4f630fde8e92940c96e1b9483a49e37596b19bfd072dbec0414c10a",
+    "repairs/region_003/source.png": "2ced721cadf3588063ed7319c2c1b079884f4144323f1409171d45c45b9c4990",
+    "repairs/region_004/1793147819_4129.md": "e2861894f065ab75433a07f7a17a9b8df3ffdc01ff29e8723ba0d9ff8c2ec437",
+    "repairs/region_004/1793147819_4129_res.json": "8ea2e992bd8a80ae429cf6925ae3f74202a808ea1aa838448de36fb54b9491c4",
+    "repairs/region_004/source.png": "e12d6259393aa0825bcbb81acb057a1616208c51a67e908431e4200135fbbc0d",
+    "repairs/region_005/1793147820_8430.md": "0329af45a36cb96779c613bdac691864ee8edd5f0b537c82bccbb6c1c63f2567",
+    "repairs/region_005/1793147820_8430_res.json": "aa25ae8dd91ee6975ac2d6413bd848d88abb9a11f93340e9214411931185e558",
+    "repairs/region_005/source.png": "91ca16a2e4dc72b59d7d60ea0cff8e620d1fc0bc0ee6fb4a9e694f95eb8a72c9"
+  },
+  "input_fingerprint": "707e79c930c0de4641d55eb277aee346c4f3c7b924d4a10d84afbfe5cb6c8079",
+  "image_sha256": "86d2740ee8ecd5f81e89758c6fb680c79a96285903452b7faa0e884ba6cf2bc5",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 2.1135033009995823,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1651,
+        28,
+        1894,
+        105
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1651.0,
+          28.0
+        ],
+        [
+          1894.0,
+          28.0
+        ],
+        [
+          1894.0,
+          105.0
+        ],
+        [
+          1651.0,
+          105.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "当然拜托了",
+      "block_bbox": [
+        776,
+        953,
+        1128,
+        1045
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "Instant",
+      "block_bbox": [
+        65,
+        1014,
+        157,
+        1057
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "Yes please.",
+      "block_bbox": [
+        815,
+        1024,
+        1090,
+        1080
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        776,
+        953,
+        1128,
+        1045
+      ],
+      "ppocr_candidate": "当然拜托了",
+      "recovered_text": "当然拜托了",
+      "source_crop": "repairs/region_003/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        65,
+        1014,
+        157,
+        1057
+      ],
+      "ppocr_candidate": "Mstont",
+      "recovered_text": "Instant",
+      "source_crop": "repairs/region_004/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        815,
+        1024,
+        1090,
+        1080
+      ],
+      "ppocr_candidate": "Yes please.",
+      "recovered_text": "Yes please.",
+      "source_crop": "repairs/region_005/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

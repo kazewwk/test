@@ -1,0 +1,193 @@
+{
+  "artifacts": {
+    "1793147769_8652.md": "1a7ee12bc8cc882bd3ee53a385a6c4651cd7248b2f68d952bcf10fcfd3447b16",
+    "1793147769_8652_res.json": "2128fe1250c4a325f5508b1dbcd5c3bf4e45e9cbf636e65267b399172eb497cc",
+    "imgs/img_in_image_box_1170_301_1826_1078.jpg": "395594833c4b06b3d53fbb3c87aee41577c51ff52acd14fe187f60126e214526",
+    "imgs/img_in_image_box_1_0_602_1074.jpg": "8a2dc85da732c591c3019133bcaea4d5ece2d579c10b1844169aa9633d28500f",
+    "region_repairs.md": "d47881892848e0edf7239021ec0c5052ca98ac20bb339a774fc2d6bc8c1aa5ad",
+    "repairs/region_000/1793147769_9478.md": "5acb7efa8ac5b65dad2fe9e8132b5f6d04d059b38fef010b1630a238a1fa8fb0",
+    "repairs/region_000/1793147769_9478_res.json": "68149bdb8a737ebf444ec9951250626dadd3b73652e2463a683e9f1e0bea3a4a",
+    "repairs/region_000/source.png": "e867d4a9744b32ee0096bfc99ea88b2abf8133e6881e0f8644dfea078a6dbb69",
+    "repairs/region_005/1793147770_6451.md": "77818b14f08f1b08e5d71013b241dabe255e2478a92031a17f64b3fff421f0e3",
+    "repairs/region_005/1793147770_6451_res.json": "3d5873a207741388dc0f18d0284e4064e222d4b6b274d308352e73935533ec2c",
+    "repairs/region_005/source.png": "003f8fc9e31541327f2c6bbc9e50a46a69f849741e405413422c039a151223c3"
+  },
+  "input_fingerprint": "2bf3a20de3fac5281e99af3897ad0c1616412316ee739d785bd9d0e0d5f40ccb",
+  "image_sha256": "97f0d99cb12f2480242f7a743d5737fb4fd08e113ef2c2fd214d4f2b3be9b36d",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 4.96223806800117,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1646,
+        29,
+        1890,
+        103
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1646.0,
+          29.0
+        ],
+        [
+          1890.0,
+          29.0
+        ],
+        [
+          1890.0,
+          103.0
+        ],
+        [
+          1646.0,
+          103.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "FRIEND\n\nWe Buy\nWe Sell\nWe Trade\n\n老友记\n0:30",
+      "block_bbox": [
+        1,
+        0,
+        602,
+        1074
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          1.0,
+          -6.0
+        ],
+        [
+          602.0,
+          -6.0
+        ],
+        [
+          602.0,
+          1074.0
+        ],
+        [
+          1.0,
+          1074.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "老友记 Friends S1E08 (1994) 0:30",
+      "block_bbox": [
+        505,
+        908,
+        910,
+        986
+      ],
+      "block_id": 2,
+      "block_order": 1,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          505.0,
+          908.0
+        ],
+        [
+          910.0,
+          908.0
+        ],
+        [
+          910.0,
+          986.0
+        ],
+        [
+          505.0,
+          986.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1170,
+        301,
+        1826,
+        1078
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1170.0,
+          301.0
+        ],
+        [
+          1826.0,
+          301.0
+        ],
+        [
+          1826.0,
+          1078.0
+        ],
+        [
+          1170.0,
+          1078.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "bilibili",
+      "block_bbox": [
+        1730,
+        22,
+        1899,
+        112
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "he? or she?",
+      "block_bbox": [
+        645,
+        499,
+        998,
+        576
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1730,
+        22,
+        1899,
+        112
+      ],
+      "ppocr_candidate": "bilbil",
+      "recovered_text": "bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        645,
+        499,
+        998,
+        576
+      ],
+      "ppocr_candidate": "he? or she?",
+      "recovered_text": "he? or she?",
+      "source_crop": "repairs/region_005/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

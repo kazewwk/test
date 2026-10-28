@@ -1,0 +1,148 @@
+{
+  "artifacts": {
+    "1793147853_9162.md": "1c1e1fe6cb66c4090e4c848b10c3083593bdd7d0944167f052136ff51fcacc37",
+    "1793147853_9162_res.json": "5b9f20443d0b69dcc72ac7113e49d3725c536a6e44fc0d518d46b846259967ee",
+    "region_repairs.md": "068c6c9d058e5599befa17cf7faed60e6b73e68b247583c03bdeca0de5c81d25",
+    "repairs/region_003/1793147854_6865.md": "ee2ddb0014a1c6768ec8ec43094d533073cce3b0470e774fc9c4ba184d153f98",
+    "repairs/region_003/1793147854_6865_res.json": "a2066e8d7d2350f2fb0cf9821df7c150a95a21cd8e45be9e194ead92bd30b688",
+    "repairs/region_003/source.png": "3696d1cff0fbe3af21caee926514f010531c25bfadfd31f326d0df34c1f12fd8",
+    "repairs/region_004/1793147854_9335.md": "c2f4af46de257d3ac689ce7f3f0d1b2b3c3367d82d307e7c3f2f27ad52764907",
+    "repairs/region_004/1793147854_9335_res.json": "0fb7a89aa30b5096ae7769d3eadc5998f26a7a5d09f323d476dcc83d86474518",
+    "repairs/region_004/source.png": "e8f2fc34c5ca4870212c2c7bb199c7dafdbde0ecf5f6ca6ca177aa17c4ecc825",
+    "repairs/region_005/1793147855_9791.md": "1e3821afae3f1eaf8154788d41d5267bd82ab74e40f6e143377ade2e9aefc567",
+    "repairs/region_005/1793147855_9791_res.json": "4ccbb93affb327abe1fc84025a28884d8f0d887650e969a463b53aa625bf5c24",
+    "repairs/region_005/source.png": "491ae8c1e62a4875b1bc5847f0f07e713d3b26497fcbf960ced7ba6a67d6bfed",
+    "repairs/region_006/1793147855_8484.md": "9ea57247d27feea7f70e8f3c524345f366656dd0c991822a51fa102fd8487f7b",
+    "repairs/region_006/1793147855_8484_res.json": "fd58015d83e113a62fc04e5bd315f07d5df2eae5539876e3daf75b9d8c525716",
+    "repairs/region_006/source.png": "9d0e2396214f71b0298a7825db56de61826f1650fc0aa0190e3a571bd93a0685"
+  },
+  "input_fingerprint": "09e0797a68d3c7ea7c9b110fd44fd34b1353990318bc1ae2cca0571d48023f56",
+  "image_sha256": "fc4803a9be402530bfcd14ce9228da3b2edab3d2405dc28d3c942bfabc6ae59b",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 2.7762580839989823,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1653,
+        30,
+        1901,
+        101
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1653.0,
+          30.0
+        ],
+        [
+          1901.0,
+          30.0
+        ],
+        [
+          1901.0,
+          101.0
+        ],
+        [
+          1653.0,
+          101.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "他人很帅",
+      "block_bbox": [
+        608,
+        952,
+        898,
+        1044
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "又风趣",
+      "block_bbox": [
+        910,
+        954,
+        1137,
+        1044
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "他还",
+      "block_bbox": [
+        1142,
+        951,
+        1305,
+        1046
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "Okay. He's cute, he's funny, he's.",
+      "block_bbox": [
+        566,
+        1023,
+        1308,
+        1080
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        608,
+        952,
+        898,
+        1044
+      ],
+      "ppocr_candidate": "他人很帅",
+      "recovered_text": "他人很帅",
+      "source_crop": "repairs/region_003/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        910,
+        954,
+        1137,
+        1044
+      ],
+      "ppocr_candidate": "又风趣",
+      "recovered_text": "又风趣",
+      "source_crop": "repairs/region_004/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        1142,
+        951,
+        1305,
+        1046
+      ],
+      "ppocr_candidate": "他还",
+      "recovered_text": "他还",
+      "source_crop": "repairs/region_005/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        566,
+        1023,
+        1308,
+        1080
+      ],
+      "ppocr_candidate": "Okay. He's cute, he's funny, he's.",
+      "recovered_text": "Okay. He's cute, he's funny, he's.",
+      "source_crop": "repairs/region_006/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}
