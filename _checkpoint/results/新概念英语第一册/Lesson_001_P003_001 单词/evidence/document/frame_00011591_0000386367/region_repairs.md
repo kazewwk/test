@@ -1,0 +1,14 @@
+# 布局遗漏区域的独立复查
+
+原图位置：[1732, 23, 1896, 113]；PP-OCRv5 候选：bilibil
+
+![复查区域](repairs/region_000/source.png)
+
+bilibili
+
+原图位置：[479, 366, 1188, 469]；PP-OCRv5 候选：③ h/h/, d/d/, n/n/, b/b/ g/g/
+
+![复查区域](repairs/region_006/source.png)
+
+③ h/h/, d/d/, n/n/, b/b/, g/g/
+
