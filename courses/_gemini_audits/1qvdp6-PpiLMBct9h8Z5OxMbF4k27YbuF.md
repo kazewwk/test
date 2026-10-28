@@ -1,0 +1,62 @@
+# L026 文章 · Gemini 音画复核
+
+原视频片段：00:02:36–00:04:36。
+
+正文中的时间是相对于片段开头的时间；换算到原视频时需加上 00:02:36。
+
+本结果只覆盖上述片段，机器转写、画面标记和时间码可能有误，不能代替整节课全文或人工复核。
+
+与 Qwen 机器转写的文字一致度：66.1%；这不是人工准确率。
+
+[结构化数据](1qvdp6-PpiLMBct9h8Z5OxMbF4k27YbuF.json) · [完整课程](../%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%86%8C_L01-L48/Lesson_026_P094_L026%20%E6%96%87%E7%AB%A0/lecture_full.md)
+
+---
+
+以下为根据视频内容整理的逐字语音转写与画面内容：
+
+### 一、逐字语音转写
+
+喜欢那些漂亮的——我们说家里边的这个窗帘、这些材料，是吧，和你这些东西，日常的壁纸没有任何区别，啊，OK。
+
+I think that，好，that 后面一句话又是一个宾语从句，还是陈述客观事实，一般现在时。
+
+Young children，小孩，often appreciate modern pictures，说经常啊，你看在原文当中我们给的是，呃，介绍，我跟大家拓展了一个单词——拓展了它的意思，叫做欣赏，对吧。
+
+说很多小孩子经常呢，更加的说去能欣赏这个现代艺术，啊现代这些图片，better than anyone else，比，比更好，比谁呢，比其他的任何人。else 就是其他的，anyone else 就是其他的，所有人、任何人。啊，鉴赏能力都更强。为什么？我们接着看，说 They notice more. 他们注意到的更多。
+
+接下来行文的习惯就是给你去解释为什么他们注意到的更多，或者说他们如何注意到了更多，给你一些具体的小的例子，很有意思，我们接着往下看啊。
+
+说 My sister is only seven. 说我妹妹啊只有七岁，but she always tells me，但是她总是告诉我，whether my pictures are good or not. 说是是否啊，说我的这个——哎注意啊，首先这个 whether 是以后我们会学到，但新一其实我们学过，我没有记错139课咱们学的，宾语从句是吧。
+
+是否，她总是告诉我，说是否我的这个图画呀，是好还是不好，啊 whether or not，好还是不好，是吧，是否好。
+
+She came into my room yesterday. 时态转换了，给你讲了一个具体的
+
+---
+
+### 二、画面内容变化
+
+- **常驻内容**：
+  - 右上角：灰白色文字“胶囊助学计划”。
+  - 左上角：黑白漫画插图（一位穿风衣的男子双手插兜看着墙上的抽象画）。
+  - 左侧英文课文（黑色字体）：
+    ```text
+    We like them in the same way
+    that we like pretty curtain material.
+    I think that young children often appreciate modern
+    pictures better than anyone else.
+    They notice more.
+    My sister is only seven, but she always tells me whether
+    my pictures are good or not.
+    She came into my room yesterday.
+    ```
+  - 右侧：讲师坐在高脚凳上，桌上放着平板电脑进行讲解。
+
+- **动态光标指示变化**：
+  - **00:11 - 00:13**：讲师使用红色激光笔圆点指向第3行的单词 `that`。
+  - **00:26 - 00:46**：红色光点移动并悬停在第3行单词 `appreciate` 上。
+  - **00:46 - 00:53**：红色光点移至第4行的短语 `better than anyone else` 上进行指引。
+  - **01:19 - 01:21**：红色光点指向倒数第3行的 `My sister is only seven`。
+  - **01:33 - 01:35**：红色光点指向倒数第3行末尾的 `whether`。
+  - **01:50 - 01:52**：红色光点指向倒数第2行的 `or not`。
+  - **01:55 - 01:56**：红色光点短暂停留在最后一行 `She came into my room yesterday.` 的 `She came` 处。
