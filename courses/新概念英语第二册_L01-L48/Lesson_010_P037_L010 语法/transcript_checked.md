@@ -1,0 +1,196 @@
+# L010 语法
+
+快速模式：仅按词时间去除重叠，未经第二模型或人工校对。
+
+## 00:00:00–00:00:30
+
+Hello everyone, welcome to Capsule Academy. This is Will. Today we're going to learn New Concept English Book Two, Lesson Ten, Grammar. 那老习惯，我们进入正式课程之前，先看几个问题。第一，英语啊，它是有被动的。那这个被动有没有时态呢？第二，那被动它的结构长成什么样子？带着这两个问题，Hope you guys enjoy. 好，那我们上来先解决第
+
+## 00:00:30–00:01:00
+
+一个问题啊，被动到底有没有时态这件事情啊？首先呢，我们看一些汉语啊，我们拿汉语尝试去猜测一下，昨天被打了，天天都挨打，和刚刚被打了，这明显就是我们刚刚学过的，对吧？前十课学过的时态，昨天被打了，一边一般过去时，天天都挨打，一般现在时，陈述一个生活习惯，只不过这个生活习惯是被动的，对吧？然后刚
+
+## 00:01:00–00:01:30
+
+刚被打了，你现在完成时，这个事情刚刚结束，对现在有一个影响，鼻青脸肿，对吧？OK，所以呢，各位要注意，首先我们的答案是被动是有时态的，那被动的结构在上面我给大家标出来了，be加但，在这儿呢，我又告诉各位说，be实际上表示的是时态，但表示的是被动。我们先看一下be和但这两个单词，我们熟不熟悉啊？我们先看一
+
+## 00:01:30–00:02:00
+
+下 be， be 实际上我们很熟悉。我们现在至少应该知道它有如下几个情况。如果您学完前十课了的话，首先，am is are，其次，was were，再然后，be，这些单词都是 be 的某一种时态下的形式，对不对？那我们讲了 be 加但
+
+## 00:02:00–00:02:30
+
+是被动的基本结构， be 表示的是时态， but 表示的是被动。但我们既然学的是被动，各位记住啊， but 几乎就是永远不变的。那 but 在 have but 这个地方，过去分词我们学过了，那 be 就是要产生变化的。英文时态变化一定包含着结构上的变化，对吧？那我们接下来就一起看一下它有哪些结构上的变化。比如说，我们看第一个， am is are 加 but，
+
+## 00:02:30–00:03:00
+
+你看dan不变，dan表被动，be表时态，M is R是什么时态之下用的？就是这个关键问题了，是不是一般现在时才用的？M is R陈述客观事实，对吧？I am a teacher，陈述客观事实，一般现在时，所以它就是一般现在时的被动，就是天天都挨打那句话。OK，那接下来第二个说What's word dan，dan
+
+## 00:03:00–00:03:30
+
+但你发没发现还是不变，还是过去分词，它在这个地方表示的是被动。OK，那 was were 你要想 be 对吧，表示的是时态，什么时态之下用 was were 表时态对吧？什么情情况下用 was were？一般过去时，它就是一般过去时的被动，叫昨天挨打了，对吧？好，那你看啊， is 加 being 这个是各位不常见的，但最后还是有一个 but，但依旧表被动。然后下一个问
+
+## 00:03:30–00:04:00
+
+题就是 M S R 加 being，这是个什么时态？你看 M S R 加 being，你如果不熟悉，我把 being 给它换成 doing， M S R 加 doing，你可就熟了。这个叫什么时态？现在进行时，叫正在挨打呢，对吧？这个正在挨打是吧？ M S R 加 doing，只不过你想一下， be 这个单词这儿指的是动词的 I N G，对吧？那 be
+
+## 00:04:00–00:04:30
+
+这个单词，实际上它也有现在分词，就长成的叫做 being，放在这个句子当中永远不变。如果您在这儿听的有点懵，没事儿，一会儿我带着各位练啊，我只是尝试给大家推理一下这些结构是怎么来的，好吧？接下来我们再看最后一个叫 have has 加 been 再加待，那 have has been 这个可是常见了，对吧？I have been here for two hours. 我在这儿已经待了两个小
+
+## 00:04:30–00:05:00
+
+了。Have加been，典型的现在完成时。那为什么还有一个has呢？由主语决定嘛。主语如果是he，那就是he has been there, has been here for two hours。这个是主动，后边你再去加一个than，就变成了现在完成时的被动。OK，这是我们这个视频当中重点要学习的四个结构。那这四个结构，各位注意，它都是非常关键的语法。六一二三四五六当中的二，动词加动
+
+## 00:05:00–00:05:30
+
+词的变化，那接下来我们就进行一些造句和它的讲解练习啊。首先，am is are加但叫做，首先确定时态，它叫做陈述客观事实，只不过是被动的或生活习惯，只不过是被动的，对吧？每天都挨揍，这个也是被动的，虽然不是你的主动习惯了。OK，好，那接下来呢，我们尝试去造一些句子。我们先给大家一个肯定句啊，主动的叫 somebody cleans the office every day，说有这么一些人
+
+## 00:05:30–00:06:00
+
+people who clean the office every day. Every day, they clean the office every day. Every day, they clean the office every day. Every day, they clean the office every day. Every day, they clean the office every day. Every day, they clean the office every day. Every day, they clean the office every day. Every day, they clean the office every day. Every day, they clean the office every day. Every day, they clean the office every day. Every day, they clean the office every day. Every day, they clean the office every day. Every day, they clean the office every day. Every day, they clean the office every day. Every day, they clean the office every day. Every day, they clean the office every day. Every day, they clean the office every
+
+## 00:06:00–00:06:30
+
+调到了一这个位置，从语序上对吧？就是 the office。其次，接下来说它每天被打扫，你就不能用 cleans 了，你要用的是它的被动，叫 am is r 加 but 这个结构。于是这句话就变成了叫做 the office is cleaned every day。 is 加 cleaned，陈述的就是一个客观事实或生活习惯，一般现在时的被动 am is r 加
+
+## 00:06:30–00:07:00
+
+但，但你要注意主语这个地方一定是办公室了，不是某人每天被打扫了，对吧？OK，那每天吧，它的否定和一般疑问句其实特别的简单，因为各位学到今天见到am is are这三个单词，你已经没有别的想法了，见到它就是在它后边加not变否定，把它提到句首变一般疑问句，被动也并不例外。比如说，the office is not cleaned every day，并不是每
+
+## 00:07:00–00:07:30
+
+天都被打扫的，或者是我想问叫做 is提前 is the office cleaned every day? Okay, is加cleaned被动，非常的舒服。Okay,好 continue我们说 stamps in the post office都是新意单词 post office邮局 stamps邮票。那在这个地方我给了你一个单词叫做 sell叫做卖，那肯定是被卖对吧？啊，我们说邮局卖邮票，或邮
+
+## 00:07:30–00:08:00
+
+票在邮局可以买。汉语这其实也是被动，只不过我们不用把“被”这个字儿总带着。英文呢，注意它是结构上的语言，所以第一个肯定是M A Z选一个，第二个肯定是动词的“done”这个结构，对吧？那M A Z选谁呢？这个就不用我教了，新一咱们学过太多次了。复数把“r”放在这个地方，对吧？好，接下来的“done”就是“sail”的“done”，就是“sold”，对吧？叫做“stamps are sold in a post office”。
+
+## 00:08:00–00:08:30
+
+there you go. This is the simplest. Next, the next one is not difficult. It's called was were added. It's just that we replaced the "amazar" with "was were." So this becomes the simple past passive. Okay, let's make a sentence. Here we go. They built this house in 1921. They built this house in 1921. They built this house in 1921. They built this house in 1921. They built this house in 1921. They built this house in 1921. They built this house in 1921. They built this house in 1921. They built this house in 1921. They built this
+
+## 00:08:30–00:09:00
+
+谁被建造？一定是这个房子被建造，叫做 this house，对吧？接下来我们确定它的时态是一般过去时，那选择的结构就是 was were 加 but。于是我们看一下这句话，叫做 this house was built。注意 was were 加动词，注意啊，这儿是过去分词，上面是过去式，只是他们俩长得一样。这个房子被建造在一九二一
+
+## 00:09:00–00:09:30
+
+年，注意后边专门给大家又多了两个小单词，叫做 by the，这个 by 指的是被他们啊。我们再翻译一下这句话，叫做这个房子是被建造于一九二一年的，被他们建造的。OK，跟我们汉语语序稍有不同，老习惯。那你说它的否定句怎么办？和一般疑问句怎么办？见到 was/were，我相信各位没有别的想法了，就是 was/were 后边加 not，was/were 提
+
+## 00:09:30–00:10:00
+
+前对吧？没有别的想法了。 Okay, 那 was 提前叫做 was this house built in 1921? 以及 this house was not built in 1921. 好，和我们之前学的是保持一致的，所以我没有专门的去给大家罗列出来。 Okay, continue. 我们接着造句. Someone cleaned the office yesterday. 第一步找到主语，第二步公式带进去，剩下照抄就行了，就这么简单。张嘴跟我读.
+
+## 00:10:00–00:10:30
+
+The office was cleaned yesterday. Continue.说I to the party.我，你注意，invite叫做邀请。我邀请去了这个聚会，party。那就我被邀请，对吧？我被邀请之前的事情就是I was invited to the party. Okay, there you go.接下来我们再
+
+## 00:10:30–00:11:00
+
+再看现在进行时。首先这两个合起来就是现在进行了，后边加上一个蛋，叫被动。Okay,注意am is are由主语确定，蛋换成动词的蛋，being永远保持不变。我们看一下如何变的啊？说Somebody is painting the room.某个人正在刷这个门。把它想变成叫做这个门正在被刷。门主语the door，
+
+## 00:11:00–00:11:30
+
+后边 M S R 选谁？这很容易，being 不变，现在是 painting，你要把它换成 painted，也就是 paint 的 and 的这个形式，过去分词。于是这句话就变成了 the door 主语 is being painted， is 在这儿挑出来的 being 保持不变，painted 表示的是动词的过去分词，但它指的是这个门现在正在被
+
+## 00:11:30–00:12:00
+
+上漆，OK，请勿入内。Is being painted表示现在一个动作正在被进行。Continue想变一般疑问句和否定句，还是见到is二，各位没有别的想法，is提前就可以了。跟我读，Is the door being painted? OK，那说否定，The door is not being painted，就这么简单。There you go. Continue说They are
+
+## 00:12:00–00:12:30
+
+are building a bridge. 这是现在进行时的主动。那我现在想说这个桥正在被建造。A bridge 提到句首，剩下就是套公式了。am is are 选谁？Being 不变，动词要变成过去分词。这句话就变成了 a bridge is being built. Be being done, 对吧？非常舒服这个结构。这个桥正在被建造。Here we go. Continue.
+
+## 00:12:30–00:13:00
+
+Say my car is at the garage. 在这个修理车库呢，它正在被修理，正在被修理。 It选谁？Is对吧？Being不变。Repair再加上done，二者结合变成了repaired. Very good. Repair的过去分词. Continue. Say we are building a new rain road around around the city. 我们正在建
+
+## 00:13:00–00:13:30
+
+ring road. Ring指的是我们说这个戒指啊，环形。那 ring road，五环、六环啊，北京的五环、四环、三环是吧？这个我们管它叫 ring road. Around the city,就是围绕着这个城市正在建造。那我们也可以说一个新的呃环环线正在被建造，对吧？主语先确定，叫做 a new ring road. 它往前一提，然后
+
+## 00:13:30–00:14:00
+
+are building 就变成了 am is are being，但这个结构我们看一下，叫做 a new railroad is being built，对吧？正在被建造。玩一个 continue，说 someone is using the computer at the moment，有个人啊正在使用这个电脑。现在我们不知道是谁，于是我们说电脑正在被使用就行了。叫做 the computer
+
+## 00:14:00–00:14:30
+
+is being used at the moment. There you go. Continue. 接下来我们看一个小的电影片段，当中就出现了叫做 are being overwritten，正在被覆盖，优先级正在被降低。 Okay. Sir, the telephone. I'm afraid my protocols are being overwritten. Stark, we need to talk. You have reached the life model decoy of Tony Stark. Please leave a message. This is urgent. Then leave it urgent.
+
+## 00:14:30–00:15:00
+
+breach. Okay, are being overwritten.而一个，接下来我们看最后一个关键的结构，叫 have has been 再加上 that，现在完成时的被动。我们先看一个句子，说 This room looks nice. Someone has cleaned it. 好，某个人已经把它打扫过了。那叫做这个先想被动，主语是这个房间已经被打扫过了，对吧？叫做 This room looks nice. It 指
+
+## 00:15:00–00:15:30
+
+的是这个房间，往里带就行了。Have还是has呢？Has been不变，但，是这个动作的过去分词。动作指的是clean，往里一放就行了。叫做It has been clean. Very good. 变成一般疑问句，各位看到Have has，你也没有别的太多想法了，把它提前就行了。叫做Has it been clean？和否定句叫做It hasn't been clean.
+
+## 00:15:30–00:16:00
+
+There you go. Okay, that this lesson, actually, want to learn this lesson. You see, why it is put in the tenth lesson? It has several prerequisites. First, if our tense of active learn well, at least these four tenses: simple past tense, simple present tense, present continuous tense and present perfect tense. You active tense learn well, then passive is just a formula, right? Secondly, you see their negative and general questions are all by these four tenses. Active, if you learn well, passive is exactly the same. OK.
+
+## 00:16:00–00:16:30
+
+一模一样。OK，不多说了，我们再造一个句子。They have built a new hospital near the airport. Have built已经建造了，那我们变成被动就是把它提前，对不对？对吧？OK，叫做啊，应该应该提不到这儿是吧？应该提到这儿啊，提主语。A new hospital has been built near the airport. 已经被建造了，玩
+
+## 00:16:30–00:17:00
+
+Very good。接下来我们还是看一个小电影片段，叫做《I have been told》，叫做我已经被别人告诉了这么一件事儿。I have been told of a certain sea snake which has a very unusual method of attracting its prey. It will lie at the bottom of the ocean as if wounded. Then its enemies will approach, and yet it will lie quite still. And then its enemies will take
+
+## 00:17:00–00:17:30
+
+I have been told. 现在完成时的被动。 Okay, 我已经被告知了。 接下来我们做一些小的口语听力练习，全是包含 be 加 done， 当然是上面那四个不同的时态的 be 加 done， 被动的。 啊，来，我们稍微快一点。 Tell me about the new road. Are they building it outside
+
+## 00:17:30–00:18:00
+
+your house?等我讲讲这条新的路吧。我们先看一下这个思路啊，我慢慢给大家说三个，剩下的会快一点。他们正在建造它在你的房子外面吗？你要做的口语回答是，我先说汉语啊，叫做一条新的马路正在被建造，在我的房子外面。我们看一下是不是这样啊？一条新的马路 is being built，正在被建造，outside
+
+## 00:18:00–00:18:30
+
+my house, 在我的房子外面，看到了吧？由上面给的两句话推导出来第三句话。上面两句话给的是主动，底下第三句话用的是被动回答。继续. Tell me about the newspapers. Do they deliver them every morning? 每天早上都寄送吗？先确定时态，再确定主语，这句话就出来了。报纸是主语，每天都被寄送，对吧？每天都被送啊，送
+
+## 00:18:30–00:19:00
+
+达，递送。那注意这个地方的动词是 deliver，时态是一般现在时。于是答案叫做，跟我读，The newspapers are delivered every morning，是不是很舒服，对吧？Continue，再来一个，Tell me about his work. Has he finished it？他已经完成了吗？那你要把它做出来的句子叫做，这个工作已经被他完成了，工作已经被完成了，对吧？叫做 his work
+
+## 00:19:00–00:19:30
+
+has been finished. How do we judge that this is the passive of the present perfect? Because the question is the present perfect, right? Good. Next, our thinking is the same. We just speed up a little bit. Here we go. Tell me about the letter. Did he bring it this morning? Yes, the letter was brought this morning. Tell
+
+## 00:19:30–00:20:00
+
+about the bridge. Did they build it in 1942? Yes, the bridge was built in 1942. 各位张开嘴跟我一起读啊，或者您暂停，然后自己去想下边这句话被动应该怎么说。 Tell me about your watch. Have they damaged it? Yes, my watch has been damaged. Continue. Tell me about these books. Do they send them by post?
+
+## 00:20:00–00:20:30
+
+Yes, these books are sent by post. Continue. Tell me about your car. Are they repairing it? Yes, my car is being repaired. Next one. Tell me about your telephone. Has he repaired it? Yes, my telephone has been repaired. Continue. Tell me about those trees.
+
+## 00:20:30–00:21:00
+
+Are they cutting them down? Yes, those trees are being cut down. 正在被砍倒。玩一个，接下来 pattern drill 练习的还是 be 加 done 的句子，练习的依旧是我们的准确性，可以慢，不能错啊，往里去带。来，来了。 Who was the hovercraft invented by? 注意 was invented，
+
+## 00:21:00–00:21:30
+
+过去被动对吧？Hovercraft，哎，叫气垫船。不知道气垫船长什么样的，各位自己去搜索引擎看一下啊。说这个气垫船是被谁发明出来的呢？一般过去时的被动。I think，我认为 it was invented by an Englishman。它被发明出来，被一个英国人。OK，注意底下的往上去带就好了。这是第一题，练的是一般过去时的被动。Next one，
+
+## 00:21:30–00:22:00
+
+who built this bridge?谁建造的这座桥？这这座桥呢？哎，build this bridge，往里去带就行了，对吧？It was built in 1930, ah, 37.它被建造在1937年. That's all I know.我只知道这么多了。注意，这是一般过去时的主动，这是一般过去时的被动。各各位把底下往上面去带。Jimmy, has
+
+## 00:22:00–00:22:30
+
+the house been painted yet?说这个房子已经被喷上，已经被刷好了吗？注意现在完成时的被动。而底下回答的是is being painted now，现在正在被刷漆。注意啊，现在进行时的被动。各位要做的是把底下带到上面来。Jenny, when was the house last painted?说这个房子上一次
+
+## 00:22:30–00:23:00
+
+被这个刷漆啊是什么时候？注意一般过去时的被动。说 It was painted two years ago. Was 加 but 一般过去时的被动，底下往上带就好了。 Okay, recap. 本课的关键点就是这四个结构，这四个结构是非常重要的。各种时态啊，目前是四个时态的被动结构长成什么样子？ Okay, 好，那接下来我们看一下家庭作业。 Head and drill. 先写，保证
+
+## 00:23:00–00:23:30
+
+对了之后，大声给他朗读出来，啊，专栏当中可以找到四乘四老习惯，尝试回忆，给自己讲解一遍今天的核心语法，提升我们自己的吸收效率。OK，那尝试翻阅红皮书中级，通过目录和索引找到本课的语法。如果您有业余的时间，除了看左边的讲解以外，右边的练习可以试着做一做，做完了之后不要忘了对答案。如果大家喜欢我们的课程呢，欢迎
+
+## 00:23:30–00:23:48
+
+大家关注、订阅、一键三连，分享给那些需要的朋友。 See you next time.
+

@@ -1,0 +1,148 @@
+# L010 单词
+
+快速模式：仅按词时间去除重叠，未经第二模型或人工校对。
+
+## 00:00:00–00:00:30
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn New Concept English Book Two Lesson Ten Words. 那老习惯进入正式课程之前呢，我们先看两个问题。第一，如何表达震惊了？第二，如何表达被允许去做某件事情？那带着这两个问题，Hope you can enjoy. 好，OK，那我们上来先看第一个小的单词，跟我一起读一下啊。
+
+## 00:00:30–00:01:00
+
+来，jazz，jazz，OK，我们管它叫爵士乐，OK，so who is this？啊，来，明明是爵士乐，为什么配了这样一张图呢？So this is Louis Armstrong. So who is Louis Armstrong？那 Louis Armstrong 这个人又是谁呢？OK，so 那我们给大家造了一句话，说 he began to play jazz when he was very young. 那 L 九这个小的规则告诉大家一下，L
+
+## 00:01:00–00:01:30
+
+指的是lesson九，就是第九课出现的习惯用法。比如说begin to do something，对吧？他开始演奏或者说练习爵士乐，当他很小很小的时候就开始了。比如说我们之前放过他的一首歌叫What a Wonderful World，非常好听，不知道各位还记不记得啊？我们在讲感叹句的时候，英文啊听过这首歌。Okay, so this is Louis Armstrong. Okay,那我们继续。那你还可以说
+
+## 00:01:30–00:02:00
+
+听爵士乐叫listen to jazz. Okay,那我们造一个句子说He listens to jazz almost every day.我们看一下这句话有多费劲吗？应该不是很难，对吧？Listen to music，这我们新一就学过。我们只不过把music换成了jazz。其次呢，在动词加动词变化这个地方，我们选择的是用一般现在时，第二课学过，陈述客观事实，对吧？Okay，他每天都听嘛，或者一个生活的习惯。那在这儿
+
+## 00:02:00–00:02:30
+
+就是一个生活习惯。各位下课要去做的事情是把它做一个四句型的转换，OK？好，那就是肯定句、否定句、一般疑问句、特殊疑问句啊。OK，continue。接下来两个单词，第一个单词您看上去应该特别熟悉，比如说 music，对吧？我们现在后边加了个 a l，把它就变成了叫做 musical 啊。注意啊，现在给后面了，叫做 musical，叫做音乐的，现在变成
+
+## 00:02:30–00:03:00
+
+了一个形容词，原来是音乐，现在是音乐的。其次呢，后面这个单词叫做 instrument， instrument， OK，管它其实 instrument 其实有很多的意思，有设备、器材的意思，它也有指乐器的意思。那 musical instrument 就更指的是乐器了，比如说我们图中出现的这些乐器统称为 musical instrument，乐器啊，musical 你可以理解为是乐是吧？musical 啊，这个
+
+## 00:03:00–00:03:30
+
+instrument你可以理解为叫做器材啊器啊，乐器。Very good，又是拿它去造句。我们用了一下第五课的习惯用法。本课我故意加了很多之前学到的习惯用法。我们看一下啊，说My parents got all this musical instrument for me many years ago。注意got something for somebody。第五课我们学到对吧？应该是呃得到某物。He cannot get a telephone for his
+
+## 00:03:30–00:04:00
+
+new garage. 应该是这一课我们学的，对吧？ Okay, continue. Say he refused to lend me his musical instrument. 我们实际上是把两个习惯用法加在一起了。第一个叫 lend somebody something，这是第三课学的。第二个呢是 refuse to do something，对吧？ Say the big clock refused to welcome the new year. 拒绝去做某件事情。那我们就造了一句话，说他呀拒绝借给我
+
+## 00:04:00–00:04:30
+
+的这些乐器，OK，那这都是肯定句，对吧？我们重点在这儿是要明白我是怎么造出来这个肯定句，无非就是选了个时态，加了几个我们之前学过的习惯用法，用到了这一点和底下的这一点。然后您自己课下可以是做词性转换，OK， continue，下一个单词，默读一下叫做 clavichord， clavichord，我们管它叫古钢
+
+## 00:04:30–00:05:00
+
+琴，你注意它不是我们原来说那个 piano 啊，那是现代钢琴，这个指的是古钢琴，叫做 clavichord。 OK，好，那接下来它你甭管它是古的还是金的，它本质上就是个名词，对吧？名词该怎么造句？还是第一步要想词性，找动词或形容词，对不对？关键的还是动词啊。那接下来我们造一句话，说 Listen， someone is playing the clavichord。 听啊，有一个人正在弹这个古钢琴。 be 加
+
+## 00:05:00–00:05:30
+
+doing，动词加动词的变化。Okay, continue.接下来我们结合一个第七课我们学过的连词while，以及第七课我们学过的was were加doing，过去进行时，我们造这样一个句子出来，说While I was doing my homework, my sister was playing the clavichord.当我正在做家庭作业的时候，我的姐姐正在弹这艘这这个古钢琴，对吧？
+
+## 00:05:30–00:06:00
+
+Okay, there you go. Continue.那第八课呢，我们学到了动词的最高级和比较级。我们拿那个句型，不知道各位还记不记得，让各位下课做过造过很多句子的那三个关键句型。我们造一个句子说，This is the most beautiful clavicord. 这是最漂亮的古钢琴。后面加一句话叫做I've ever seen，叫做我所看见过的最美的古钢琴。Okay，好，continue。接下来又是两个单词，我们放到一起去讲。
+
+## 00:06:00–00:06:30
+
+首先，第一个叫做 damage，damage 叫做损坏或者损毁、破坏都可以。下一个单词叫做 recently，recently 它们是一个副词，叫做最近，对吧？最近怎么怎么样？比如说，那我们拿它合起来去造一个句子，叫做 recently a visitor damaged the clavicle。好，你看一下啊，我们这句话是怎么造出来的？
+
+## 00:06:30–00:07:00
+
+各位，记它不是重点，我怎么把它造出来？这个思路才是重要的。这个思路您学会，自己就可以造了。看一下 recently，实际上在六一二三四五六当中，你是不是可以理解为它是个时间，叫做最近，对吧？最近，但是这个事儿肯定是发生在过去，它只不过是最近的过去。OK，所以我们的时态呢，damage选的是一般过去时。主语您选谁都行啊，我只不过随便选了一个叫做 a visitor，为了跟我们的文章相保持一致。
+
+## 00:07:00–00:07:30
+
+你说 Leo, Tom, Jerry, 对吧？ Snoopy, 啊，你愿意选 Superman，你爱选谁选谁，主语随便。他损坏了什么东西呢？只不过这个地方我用的是 clavichord。那你用，比如说 musical instrument，你用 piano，啊，你用 volleyball，啊，理论上都是可以的。目前为止， OK，所以这个就很简单。那然后呢，你要把它变成一个一般疑问句，这个肯定句造出来了，剩下的思路就水到渠成了，叫做
+
+## 00:07:30–00:08:00
+
+一般疑问句。Did a visitor好，注意这个地方有一个小的 typo，一定要把它换回原形，而不能用动词的过去式，好吧？这个地方大家要注意啊。叫做 Did a visitor damage the heavy core？ OK， there you go。那我们还可以用如下的这些特殊疑问词去提问，比如说他是如何损毁的？他的直接加句首就行了。Who？你对主语提问，变不变一
+
+## 00:08:00–00:08:30
+
+般疑问句不变对吧？直接替代主语叫做 Who damaged the clavichord recently? OK，问，那你可以对 recently 提问了，对不对？以及 what 那肯定是对 the clavichord 提问，我们就不多说了，接着往下走。Next one 下一个单词跟我读一下 key，新一见过很多次这个单词对吧？它有好好几个意思，比如说我们最常用的一个意思就是钥匙对吧？那在这个地方它指的不是钥
+
+## 00:08:30–00:09:00
+
+匙，指的是什么呢？有点类似于 keyboard。不知道各位还记不记得我们新一很早前二十课就学过的一个单词，叫 keyboard operator，然后 keyboard 键盘。那 key 它动词就是键入，对吧？它在这个地方做名词的时候，指的就是这些琴键啊，叫做 key。 Okay，那又是名词造句又来了。比如说，我结合了第五课，叫做 send a request for something，啊，寄出一个请求要什么东西，对吧？发出一个请
+
+## 00:09:00–00:09:30
+
+求，寻呃字啊，要什么东西？比如说，I've just sent a request for some keys. 我刚刚发送了一个请求，要一些这个琴键，对吧？Okay, very good. Continue. 说He refused to repair the keys for me. 他拒绝把把帮我把这个琴键修一下。这还是第九课，refuse to do something，肯定句给各位了，剩下的句型各位自己处理，以及能不能换个时态，换个结构呢？我相
+
+## 00:09:30–00:10:00
+
+信是可以的。OK， continue 下一个单词跟我读，注意这地方要有一个浊化，不读 strain，读的是 strain，straw 啊 strain，它指的是我们这个 guitar 啊这个琴的这个琴弦。OK， guitar 这个 strain。OK，那跟我读，This is the best strain I've ever used。这是我用过最棒的琴弦了。注意这是第八课的关键句型，对吧？您有没有遗
+
+## 00:10:00–00:10:30
+
+忘？我们刚刚学过了两课，如果您遗忘了，应该立刻翻回去复习一下了。OK， continue 说 this string 说这个琴弦 is better than that one 比那个要好一点点，也是第八课我们学的那个关键句型。 Continue next one 动词先跟我读一下，叫做 shock shock 就震惊了，对吧？震惊。然后呢，你注意一个很好玩的，就是这个动词啊，首先
+
+## 00:10:30–00:11:00
+
+如果非要说它有过去式，它是有的，过去分词也是有的，就是加 e d。但是因为动词加 e d 啊， shock 这个动词加 e d 经常出现在句子当中，它甚至产生出来了一种词性，叫做形容词词性啊，你可以这么去理解。目前对吧？等我们以后再学复杂的语法了，我们到那个时候再去解释，叫做震惊的。比如说我震惊了，叫做 I'm shocked，或者说我父亲昨天震惊了，叫做 He was shocked，没有问题，
+
+## 00:11:00–00:11:30
+
+都是可以的啊。好，那接下来我们用动词去造句，比如说This shocked my father.说这件事情震惊了我的父亲。那当然是之前震惊了，对吧？OK，肯定句给大家了，又是你课下要做的事情，对吧？叫做Did this shock your father?注意动词换回原形了。这边我没有typo. OK, typo就是打打字出现错误了，就我们管它叫typo. OK,
+
+## 00:11:30–00:12:00
+
+下一个单词，哎，本课的一个小精髓，跟我读一下，allow允许啊，来allow allow，那允许某人去做某事儿怎么说呢？给大家两个习惯用法，第一个叫做be allowed to do something，这也是我们本课的一个小的语法重点，我们管它叫做被动，be allowed叫做被允许去做某
+
+## 00:12:00–00:12:30
+
+件事情。如果我们把它换回主动呢，叫做 allow somebody to do something，叫做允许某人去做某件事情。OK，好啊，我再说一下，第二个是不需要学到本课被动，您就能会的，就告诉各位有这么一个习惯用法就行了。然后我们往里去造句。上边那个是我们进入文章会讲到的语法上的被动啊，我们到时候再去处理。好，比如说 allow somebody to do
+
+## 00:12:30–00:13:00
+
+something，我们造一句话说我们往里去带嘛，某人允许某人去做某件事情，对吧？我们往里去带，我们看一下我是怎么带出来的。我们结合第二个习惯用法啊，my parents，这个很容易啊。你说 my parents，你说任何一个人都行。Allow me，允许某人 to do something to watch TV，去看电影 every Friday，每个周五。When I
+
+## 00:13:00–00:13:30
+
+was young，当我很小的时候，你注意，所以用的是一般过去时，allowed，对吧？当我很小的时候，我父母允许我呀，每个周五晚上看会儿电视啊。That's true, that's true.这是我们第七课学到的一个 when，是吧？这就是 allow somebody to do something。那第一个 be allowed to do 呢？我们在这只是简单提一句，叫做被允许去做某件事情。看啊，
+
+## 00:13:30–00:14:00
+
+be allowed to do something 叫做被允许，你加一个否定就是不被允许。OK，那关于这个语法呢，我们马上在下一个视频当中会给大家讲到。我们到这儿先看一下就行了。这句话的意思是 I am not allowed to bet. Bet 这个单词我们不认的，叫做下注啊，赌博啊，我不允许下注。我们接下来看一下。 Thirty seconds.
+
+## 00:14:00–00:14:30
+
+I'm not allowed to bet, but if I could, I'd bet on you. Okay, I'm not allowed to bet.啊，我不被允许去下注。Be allowed to do something.进入文章，我们会继续进行讲解。Continue.下一个单词叫 touch.啊，叫做触碰
+
+## 00:14:30–00:15:00
+
+啊，触摸啊，碰或摸，对吧？OK，那最常见你在电影当中会听到这样一句话叫做"Don't touch me"啊，别碰我，对吧？跟我保持距离，别碰我"Don't touch me"啊，或者说别碰那个东西啊，比如说科幻电影、悬疑电影当中经常出现"Don't touch that"啊，别碰那个玩意儿，是吧？你又不知道它是什么"Don't touch that"， there you go。好，接下来呢，那我们还可以尝试去造一个句子，我们就结合"be allowed to do something"，比如说"
+
+## 00:15:00–00:15:30
+
+we are not allowed to touch anything in the museums.好，首先主语，这对于您来说随便选。后面的这个地点，理论上你也是可以随便选的，但你不能瞎说。你比如说，你去别人家不允许碰任何东西，这个听上去就比较极端，对吧？你比如说，你来我家，你什么都不许碰啊，不是说这个句子不行，但是使用情况会少很多。但是 museums，你不允许碰任何的东西，这个使用情
+
+## 00:15:30–00:16:00
+
+况是很常见的，对不对？好，我们看一下，be not allowed to touch. Very good.肯定啊，否定句，对吧？给大家了。那我们就把它立刻变成了一个特殊疑问句，叫做Why aren't we allowed to touch anything in the museums?为什么我们不被允许去触碰东西，在这个这个museums博博物馆当中啊？为什么不允许呢？Very good.好，接下来我们看一个小的电影片
+
+## 00:16:00–00:16:30
+
+段，当中就出现了 Don't touch me，别碰我。 OK， Continue。 Continue。 Continue。
+
+## 00:16:30–00:17:00
+
+Okay, don't touch me. Ah,各位把这记下来，是吧？别碰我啊，尤其发生口角的时候，对吧？保持距离啊。Don't touch me. Okay,好，那本课的 recap 除了本课的单词以外，各位还要记住非常关键的两个习惯用法：be allowed to do something 和 allow somebody to do something. Okay,好，那我们看一下本课家庭作业。首先，单词造句，各位可以去搞定了。每个单词尝试造五句，
+
+## 00:17:00–00:17:30
+
+有一些我故意放在一起的单词，比如说 recently，让各位自己去造句子，可能你稍微费点劲，那你就把 recently 和 damage 放在一起造五个句子啊就行了。您不用 recently 造五个，说 damage 造五个，不需要啊。其次呢，反复听我们的一个电影片段，把那些关键的呃短语和句子给它听出来，我们进行一个听力练习。OK，好，如果大家喜欢我们的课程呢，欢迎大家关注、订阅、一键三连支持，并
+
+## 00:17:30–00:17:46
+
+分享给那些需要的朋友。See you next time.
+
