@@ -1,0 +1,133 @@
+{
+  "artifacts": {
+    "1793159351_3537.md": "ead9186096eba85c8fa6b3d42b3258f38e3106baf3b7a084d14840a5d070d1a7",
+    "1793159351_3537_res.json": "bc4ea2a065e14a5f0ed1dbdbd4f9d8984e69dba0382f548c92db97d46c428198",
+    "imgs/img_in_image_box_1176_283_1811_1080.jpg": "0d418b9263a9dbadf9c9f75f48b33f70e1f8b00dfa151f10f01c2e4a7f3eca0a",
+    "region_repairs.md": "62d8e296100261e04104cfda8019612f4e14709c2ec2546892976513b6fcd2a0",
+    "repairs/region_000/1793159362_6466.md": "5acb7efa8ac5b65dad2fe9e8132b5f6d04d059b38fef010b1630a238a1fa8fb0",
+    "repairs/region_000/1793159362_6466_res.json": "5bd7298e57d0bac2719883ee70eb38dee823391d8abb6bafe65470c2429c6d80",
+    "repairs/region_000/source.png": "8b45e2fecf4e422fcee826b17dd7fa6beacefe47a0fe046ec36b703a2cbb9200",
+    "repairs/region_002/1793159373_6636.md": "b02dfe2160c687c22f0762f388d6e2bca93d7bca18f55ca9b5ab9ae920de4f62",
+    "repairs/region_002/1793159373_6636_res.json": "100a6cd341e6cd8da4bf91f199074c76e1559c79f245edf3cebaff57bbf5b7b6",
+    "repairs/region_002/source.png": "6f92207ef7a2b958aa8b97f23ce6bde20f2a58f62386a2ad9cabdaba7e7332a1"
+  },
+  "input_fingerprint": "4236438fde766ca30ce5ab4f6857b4f6f693707afbd30ec212d0d9fc391b989a",
+  "image_sha256": "c4401c3fb1c6ba5c32fa1dcd77016c71c433ebd8734c5da55492672c20967d3d",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 87.40103044500574,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "胶学 billibil",
+      "block_bbox": [
+        1647,
+        29,
+        1896,
+        104
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1647.0,
+          29.0
+        ],
+        [
+          1896.0,
+          29.0
+        ],
+        [
+          1896.0,
+          104.0
+        ],
+        [
+          1647.0,
+          104.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1176,
+        283,
+        1811,
+        1080
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          1176.0,
+          283.0
+        ],
+        [
+          1811.0,
+          283.0
+        ],
+        [
+          1811.0,
+          1080.0
+        ],
+        [
+          1176.0,
+          1080.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "bilibili",
+      "block_bbox": [
+        1727,
+        23,
+        1899,
+        112
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "不",
+      "block_bbox": [
+        357,
+        505,
+        425,
+        572
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1727,
+        23,
+        1899,
+        112
+      ],
+      "ppocr_candidate": "bilibil",
+      "recovered_text": "bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        357,
+        505,
+        425,
+        572
+      ],
+      "ppocr_candidate": "不",
+      "recovered_text": "不",
+      "source_crop": "repairs/region_002/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "engine": "transformers",
+  "device": "cpu",
+  "dtype": "float32",
+  "verification": "machine_extracted_unverified"
+}
