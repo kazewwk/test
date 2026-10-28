@@ -1,0 +1,116 @@
+# L009 语法
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we are going to learn New Concept English Book Two Lesson Nine Grammar.老习惯，进入正式课程之前，我们先看一个问题：如何使用 on, in, at 这样非常简单的三个小的介词？So hope you gonna enjoy it.好，那我们先看一下本课我们要学的 on, in, at 是不管地点的啊，不不不去学习它做地点。
+
+## 00:00:28–00:01:02
+
+是不管地点的啊，不不不去学习它做地点的时候怎么用，我们只管它如何加时间。所以既然都已经给大家讲了如何加时间，那我们就知道本课学的语法在六一二三四五六这个非常关键的英语语序当中，主要我们现在处理的是六的一部分。听一下啊，它不是六的全部，对吧？In the morning，它只是负责了一部分，是用in，是用at还是用on？OK，好，这实际上大多数这些语法。
+
+## 00:00:58–00:01:32
+
+还是用 on, OK. 好，这实际上大多数这些语法我们在新一的时候都应该是或多或少的有学过或者有见过啊。那我们今天呢，带着大家统一的去整理一下。好，首先我们先看一下 on 这个单词。各位要注意 on 往往加的是具体的某一天这个时间。比如说，给大家几个例句，比如说 Goodbye, see you on Friday. 咱拜拜，咱周五见。On Friday, 具体的某一天，对吧？所以那举一反。
+
+## 00:01:28–00:02:02
+
+Friday,具体的某一天，对吧？所以那举一反三，周五用on，你我希望各位能理解啊。那周一到周日全用on，对不对？啊，举一反三吧。好，接下来I'm meeting Jill on Monday morning。你看，还是具体某一天啊。On Monday morning，周一早晨，对吧？还是具体的某一天。注意，同理，他还用了一个叫做I'm meeting，用了一个现在进行时表将来。我们在第二课，对吧？It was dark outside. I'm coming to see you.在那一刻。
+
+## 00:01:58–00:02:32
+
+Dark outside, I'm coming to see you.在那一刻，我们学过be doing加上将来的时间可以表示计划打算，对吧？说我打算啊，周一早晨去见一下Jill这个人。Very good.好，再接下来呢，比如说The concert is on twenty second November. Okay,那具体的某一个月的某一天，它依旧是用on这个小的介词。那希望各位把它记下来。接下来我们看一下in。
+
+## 00:02:28–00:03:02
+
+各位把它记下来。接下来我们看一下 in in呢常见的加的就是这三个叫做年季月，具体的年份、具体的季节和具体的月份都可以这么去用。那我们看一些小的例句，比如说 I'm going on holiday in October, September, October. 十月份 in October 月份，那也就是说十二个月都用 in 这个小的时间介词。 Continue. 说 Emma left school in nine in nineteen.
+
+## 00:02:58–00:03:32
+
+Emma left school in nine in nineteen ninety three nineteen ninety three. 在一九九三年，具体的某一年份还是用 in. Continue. Say the garden is lovely in spring. 花园呢，非常的棒啊，非常的可爱。但是可爱就不好，就说非常美丽啊， beautiful in spring. 在春天，那春夏秋冬全用 in. 再回顾一遍，年份、季节、月份，经常前面加的时间。
+
+## 00:03:28–00:04:02
+
+季节、月份，经常前面加的时间介词就是 in。那我加蓝的这个部分在句子当中六一二三四五六起到的就是六，OK。好，最后呢，我们看一下 at，at 一般加的是一个时间点，比如说 I start work at eight o'clock。比如我在后面再加一个 every day 啊，我每天都是早晨八点开始办公 at eight o'clock。看见了啊，比如说。
+
+## 00:03:58–00:04:32
+
+办公 at eight o'clock,看见了啊？比如说 the shops close at five thirty. 这一排商店啊，为什么翻译成这一排 shops 对吧？几点关门呢？五点半关门，其实跟上边是一样的，只不过上边用用的是 eight o'clock，底下用的是 five thirty，对吧？都是时间点。还可以怎么样呢？比如说 at midnight，在午夜时分，还是一个相对于准确一点的时间点，它用的叫做 at midnight. Okay, they.
+
+## 00:04:28–00:05:02
+
+它用的叫做 at midnight. Okay, they were still studying. Ah,昨天，比如说我们就说昨天午夜啊，他们当时啊依旧正在学习。过去进行时第七课我们刚学过，还是全是时间点。那在这地方我想提这么几句，就是各位要注意啊，on in at。我刚才讲的是他们接时间所有用法当中的一些核心用法，还有一些是超出这些核心用法的。这些我们怎么办呢？我们
+
+## 00:04:58–00:05:32
+
+是超出这些核心用法的，这些我们怎么办呢？我们不用一口气儿把规则都给大家，各位回去开始哐哐背，你一定背的头昏脑胀的。你相信啊，英语是母语的那帮人也不是从小背下来的，他就是不停的见到输入正确的，天天说 in the morning in the morning in the morning，说习惯了之后，突然有一天你跟他说 at the morning on the morning，他会觉得很别扭。怎么能让各位也养成这种习惯呢？就是持续的输入正确的，这个输入包括。
+
+## 00:05:28–00:06:02
+
+就是持续的输入正确的这个输入包括了听跟阅读啊，持续输入正确的英文就能让各位养成我们所谓的英文语感。叫当你读到 on the morning 你就不舒服的时候，这个语感就养成了。那必须配合着大量的输入。OK，好，那我们往下走，接下来做一些小的 repetition drill 听力口语练习，包含了 on in at，练习的是我们的准确性，可以慢，不能错。来了。
+
+## 00:05:58–00:06:32
+
+可以慢，不能错。来了，第一题，When did he leave？他什么时候离开的？给了一个时间，eight o'clock。各位要结合问和答，给我造一句。我们用口语啊，不用写，造一句肯定句出来。他什么时候离开的？八点。那我的回答就是他八点钟离开的，对吧？那你再配合英文的六一二三四五六语序，你要知道叫他离开在八点钟。那他 he 离开 left 在八点钟 on in。
+
+## 00:06:28–00:07:02
+
+那他 he 离开 left 在八点钟 on in at 选谁？结合刚才我们学到的用 at 对吧？那叫做 at eight o'clock。我们看一下答案是不是这样？他离开在八点钟 he left at eight o'clock。所以接下来我们所有的流程都是我说这句话给这个东西给这个时间，各位张嘴想一下，把这个答案用口语的形式给它读出来，好吧？来了啊。 When did you visit your grandmother?
+
+## 00:06:58–00:07:32
+
+When did you visit your grandmother? 1996. Answer: I visited my grandmother in 1996. Next one. When did he arrive? This morning. He arrived in the morning. Continue. When did you see him? Wednesday. I saw him on Wednesday.
+
+## 00:07:28–00:08:02
+
+Wednesday. I saw him on Wednesday. 你看，六一二三四五六当中的一二三，然后来个六，可前可后，对不对？还是符合那个语序的啊。 When did she come here? August the twenty fourth. 八月二十四号。 She came here on August the twenty fourth. 具体的某一天用 on，别忘了，这是原形，这要换成一般过去式。
+
+## 00:07:58–00:08:32
+
+别忘了，这是原型，这儿要换成一般过去式。 Continue. When did you meet him? This afternoon. I met him in the afternoon. Continue. When did he go to the office? Half past eight. Eight点半. He went to the office at half past eight. Continue. When did you buy that dress? Friday.
+
+## 00:08:28–00:09:02
+
+Buy that dress. Friday. I bought that dress on Friday. Continue. When did he teach you English? 1994. He taught me English in 1994. Taught teach somebody something, right? We learned in the postcard class, the third class. Continue. When did you lend him that book? 借给他那本书啊，这也是第三课学的习惯用法。
+
+## 00:08:58–00:09:32
+
+借给他那本书啊，这也是第三课学的习惯用法。The thirteenth of April, 四月十三号。I lent him that book on the thirteenth of April. 具体某一天用 on. OK, very good. 刚才是口语听力练习，接下来 repetition drill 写作口语练习练的还是包含 on in at 的句子，依旧是 accuracy 语言的准确性，可以慢，可以磕磕绊绊，但不能错啊。好，来了，第一题。
+
+## 00:09:28–00:10:02
+
+啊，不能错啊！好，来了，第一题。When was your grandmother born? 好，这个地方我先提一个小点，叫做 was 加 born 啊。基础好的也许知道，基础不好的不可能不知道。我简单提一下，它的意思叫做生生下来啊，生于。所以这句话叫做她生于一三一九三四年。注意前面用的是 in，对吧？因为接下来全是年代，这儿可以不变。那你祖母哪年生下来的？注意这是一般过去时，对吧？她是。
+
+## 00:09:58–00:10:32
+
+你祖母哪年生下来的？注意，这是一般过去时，对吧？她是一九三四年生下来的。 Continue next one. When's your grandmother's birthday? 啊，你祖母啊，姥姥奶奶，对吧？外公啊，外婆啊，她的生日是哪一天？ It's on August tenth. 注意具体的某一天，十月十号是具体某一天，后边全是具体的某一天，要用 on. 同理啊，同样，这是还。
+
+## 00:10:28–00:11:02
+
+的某一天要用 on，同理啊，同样，这还有一个关键点叫做用的是一般现在时，因为我陈述的是客观事实，对吧？接下来第三题说 John came to see me at four o'clock，在四点钟的时候他来见的我。But I thought 啊，我原来以为啊，You were never at home，你从来都不在家。At tea time，在茶的时间，什么叫茶的时间呢？这个单词还挺英国的，就各位要知道的是英国人。
+
+## 00:10:58–00:11:32
+
+茶的时间呢？这个单词还挺英国的，就各位要知道的是，英国人非常爱喝茶，极其喜欢喝茶，他们专门有一个所谓的叫下午茶的时间啊。所以这个 tea time 就是一个所谓的下午茶的时间。那各位要做的事情是把这些时间带进来啊，把这些时间带进来，剩下其实是一样的。OK，最后一题，John's arriving on Sunday afternoon. 具体某一天下午还是具体某一天用 on？
+
+## 00:11:28–00:12:02
+
+具体某一天下午还是具体某一天用 on. Jones arriving be doing. 第二课学过，现在进行时表示将来，加一个将来的时间，对吧？他打算什么时候到？ Oh, I thought he was arriving in the morning. Oh, 我以为他是早晨到。各位要做的事情是把后面这些带到 in the morning，把前面的这些时间带到 on Sunday afternoon. Okay, 啊，还老习惯写完了之后呢，还是要大声朗读的。
+
+## 00:11:58–00:12:32
+
+啊，还老习惯写完了之后呢，还是要大声朗读的。我们本课 recap 关键点就是这三个 on 具体某一天 in 年季月 at 加上一个关键的时间点，它只是核心用法，在它之外还有很多 on in at 接时间的用法，我们见一个见招拆招，好吧？好，看一下家庭作业 pattern drill 写和朗读，各位专栏当中可以找到四乘四老习惯带入。
+
+## 00:12:28–00:13:02
+
+专栏当中可以找到四乘四老习惯，代入四个啊，每道题代入四个，一共写四道题。先写，保证对了之后，再大声把它朗读出来，二者缺一不可。OK，下一个尝试回忆，给自己讲解核心知识点。这是我们基于两个学习理论，告诉大家这样去做，您吸收效率是高的，事半功倍。OK，最后呢，尝试翻阅红皮书中级啊，通过目录索引找到本课的语法。
+
+## 00:12:58–00:13:32
+
+红皮书中级啊，通过目录索引找到本课的语法。中级红皮书还不知道是什么的，请去参看新概念二册开篇内容。OK，好，那以上呢就是本期视频的全部内容了。如果大家喜欢我们的课程，欢迎大家关注、订阅、一键三连，分享给那些需要的朋友。See you next time.
+
+## 00:13:28–00:13:32
+
+
+
