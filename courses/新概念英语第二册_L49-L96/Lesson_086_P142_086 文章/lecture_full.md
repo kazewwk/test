@@ -1,0 +1,1008 @@
+# 086 文章
+
+快速机器解析：语音为单模型转写，未进行独立交叉校对或人工复核；画面每秒采样并按变化选帧，短时文字和标记可能遗漏。截图时间约有 1 秒误差。图片有损压缩；遇到疑点请按时间查看 Google Drive 原视频。
+
+## 00:00:00–00:00:30
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn the Concept English Book Two Lesson Eighty Six Story. Hope you can enjoy.好，我们上来先看文章的标题，叫 Out of Control啊，失去控制了，对吧？Out of Control啊，突然也想起来了，Out of Breath，还记得吗？四十四课在学的是吧？What was the danger? 危险是什么？
+
+### 画面 00:00:00
+
+![课件截图](frames/frame_000000.webp)
+
+文字识别：NCE / BOOKⅡI / Lesson 86 / Story
+
+### 画面 00:00:02
+
+![课件截图](frames/frame_000001.webp)
+
+文字识别：NCE / BOOKⅡI / Lesson 86 / Story
+
+### 画面 00:00:04
+
+![课件截图](frames/frame_000002.webp)
+
+文字识别：NCE / BOOKⅡI / Lesson 86 / Story
+
+### 画面 00:00:06
+
+![课件截图](frames/frame_000003.webp)
+
+文字识别：NCE / BOOKⅡI / Lesson 86 / Story
+
+### 画面 00:00:10
+
+![课件截图](frames/frame_000004.webp)
+
+文字识别：胶囊助学计划 bii / •
+
+### 画面 00:00:14
+
+![课件截图](frames/frame_000005.webp)
+
+### 画面 00:00:16
+
+![课件截图](frames/frame_000006.webp)
+
+文字识别：Out of control / What was the danger?
+
+## 00:00:30–00:01:00
+
+进入文章看吧，就单看肯定不知道了。第一句话，As the man tried to swing the speedboat round, the steering wheel came away in his hands。这句话并不难，基本上就是两句话组成的一句话一句话来就行了。As这样单看，你没有人能知道，只看这一个单词，它到底翻译成啥？必须，尤其是像它连接两个句子的时候，你基本上必须把两个句子看完才能明白。那咱先看
+
+### 画面 00:00:31
+
+![课件截图](frames/frame_000007.webp)
+
+文字识别：As the man tried to swing the speedboat / round, the steering wheel came away in his / hands. He / L14. / 'waved desperately to his / companion, who had been water sking for / the last fifteen minutes. Both men had / 138 / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+### 画面 00:00:33
+
+![课件截图](frames/frame_000008.webp)
+
+文字识别：As the man tried to swing the speedboat / round, the steering wheel came away in his / hands. He / L14. / 'waved desperately to his / companion, who had been water sking for / the last fifteen minutes. Both men had / L38 / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+### 画面 00:00:35
+
+![课件截图](frames/frame_000009.webp)
+
+文字识别：As the man tried to swing the speedboat / round, the steering wheel came away in his / hands. He / L14. / 'waved desperately to his / companion, who had been water sking for / the last fifteen minutes. Both men had / L38 / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+## 00:01:00–00:01:30
+
+吧。啊，其实换一句话来说，这给大家一个小的语言技巧，就是因为它必须要看完才能回来判断它，所以大多数时候你其实不管它是没有问题的。你仔细想一下这个我说的逻辑啊。说 the man tried to swing the speedboat round，这个我们讲单词部分说过了，说这个男人尝试着去转向这个 speedboat 快艇。然后 the steering wheel， steering wheel 是什么呢？就是方向盘。这个短语啊，或者短
+
+### 画面 00:01:05
+
+![课件截图](frames/frame_000010.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He / -14. / 'waved desperately to his / companion, who had been water sking for / the last fifteen minutes. Both men had / L38 / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+## 00:01:30–00:02:00
+
+语组成的单词，您把它单独记住。Came away in his hands, in his hands叫在他手中。Came away字面意思啊，走开。什么叫方向盘在他手里边走开？就是脱落，脱离，对吧？脱落，脱离。从字面意思，你如果理解不了是脱落脱离，就是你猜不出来。但我觉得你蒙也能蒙出来是什么意思，啊？方向盘和他的手离开了，是吧？回到这个地方啊，说一下这个as是什么意思，就是当嘛在这儿啊。当他尝试
+
+### 画面 00:01:35
+
+![课件截图](frames/frame_000011.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He / L14. / 'waved desperately to his / companion, who had been water sking for / the last fifteen minutes. Both men had / L38Y / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+## 00:02:00–00:02:30
+
+转向的时候，方向盘从他手里边脱离了。He waved desperate desperately to his companion who had been water skiing for the last fifteen minutes.说他呀非常绝望的冲他的这个同伴挥了挥手。那wave to somebody十四课咱们学过大便车那课嘛，这儿给了个逗号。七十七课咱们学的非限定性定语从句，迅速回顾一下，二十八课学的限定性定语从句，七十七课学的非限定性定语从句，
+
+### 画面 00:02:05
+
+![课件截图](frames/frame_000012.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He / L14. / 'waved desperately to his / companion, who had been water sking for / the last fifteen minutes. Both men had / L38 / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+## 00:02:30–00:03:00
+
+它俩的区别就在于，它，比如说我们都只说名词，先不说短语或句子啊，它修饰或者限定的那个名词到底有没有必要被限定？在这篇文章当中，整篇文章就一个 companion，就只有一个 companion 跟他在一起玩这个 speedboat，所以他认为不需要，于是加了个逗号，补充一下信息就完事儿了。所以像这种非限定性定语从句，完全可以给它变成叫做 and，
+
+### 画面 00:02:35
+
+![课件截图](frames/frame_000013.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He / L14. / 'waved desperately to his / companion, who had been water sking for / the ast fifteen minutes. Both men had / L38 / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+### 画面 00:02:58
+
+![课件截图](frames/frame_000014.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He / L14. / 'waved desperately to his / companion, who had been water sking for / the ast fifteen minutes. Both men had / L38 / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+## 00:03:00–00:03:30
+
+直接来个 and 这样的并列连词就够了，是吧？当然，人家用非非线性也没有错啊。说他他的这个 companion 怎么样了呢？Had been water skiing for the last fifteen minutes. 过去的十五分钟内一直都在怎么样滑水，对吧？哎，所以一直在做一件事儿，并且这个事儿是发生在过去的过去，对吧？好，所以他用的是 had been doing, continuing. Both men had hardly had time to
+
+### 画面 00:03:02
+
+![课件截图](frames/frame_000015.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He / L14. / 'waved desperately to his / companion, who had been water sking for / the last fifteen minutes. Both men had / L38 / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+### 画面 00:03:04
+
+![课件截图](frames/frame_000016.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He / L14. / 'waved desperately to his / companion, who had been water sking for / the last fifteen minutes. Both men had / L38 / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+## 00:03:30–00:04:00
+
+realize what was happening when they were thrown violently into the sea.这句话其实乍一看好像挺难的，因为挺长，还有什么各种连词是吧？各种连词，但是实际上只要是你前面基础好，这里边不管是单词，从单词到语法全是之前学过的，所以完全取决于就是你读这句话难和简单，完全取决于前面的基础，前面的课学没学的好。比如
+
+### 画面 00:03:34
+
+![课件截图](frames/frame_000017.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He /  4waved desperately to his / L14. / companion, who had been water sking for / the last fifteen minutes. Both men had / L38 / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+### 画面 00:03:42
+
+![课件截图](frames/frame_000018.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He / L14. / 'waved desperately to his / companion, who had been water sking for / the last fifteen minutes. / Both men had / L38V / ard /  had time to realize what was / happening whe they were thrown violently / into the sea.
+
+### 画面 00:03:44
+
+![课件截图](frames/frame_000019.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He' / L14. / 'waved desperately to his / companion, who had been water sking for / the last fifteen minutes. / s.Both men had / 138hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+## 00:04:00–00:04:30
+
+说，我举个例子，说两个男人都怎么样呢？Hardly win三十八课咱们学的，对吧？就是几乎是刚有时间反应过来就怎么怎么样，就类似于as soon as，有点像，不完全像啊，就一怎么怎么样就怎么怎么样。说这两个男人都几乎是刚刚有时间去弄明白或者realize叫做意识到what was happening叫正在发生什么，两个人都是刚有时间弄明白正在发生什么，就就是他其实想表达这两个事儿
+
+### 画面 00:04:14
+
+![课件截图](frames/frame_000020.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He' / L14. / L14waved desperately to his / companion, who had been water sking for / the last fifteen minutes. / Both men had / L38 / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+### 画面 00:04:29
+
+![课件截图](frames/frame_000021.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He' /  L4waved desperately to his / L14. / companion, who had been water sking for / the last fifteen minutes. / s.Both men had / L38 / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+## 00:04:30–00:05:00
+
+的这个联系啊，非常的紧密，对吧？就怎么样了呢？They were thrown violently. 注意，这是个被动，叫他们被扔。哎，被扔怎么样了？Violently into the sea,进入海里边去了。那这个violently什么意思嘛？首先violent指的是暴力，violently指的是暴力地，对吧？但是你在这儿说他们被暴力的扔进了海里边，这个跟汉语语言不太一样。但是我个人的感觉就是这个样子，挺好啊。我们在学习的语言的过程当中，
+
+### 画面 00:04:33
+
+![课件截图](frames/frame_000022.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He /  L4waved desperately to his / L14. / companion, who had been water sking for / Both men had / the last fifteen minutes. / L38 / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+### 画面 00:04:44
+
+![课件截图](frames/frame_000023.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He / L14. / 1waved desperately to his / companion, who had been water sking for / the last fifteen minutes. / s.Both men had / L38 / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+### 画面 00:04:51
+
+![课件截图](frames/frame_000024.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He / L14. / 'waved desperately to his / companion, who had been water sking for / the last fifteen minutes. / s.Both men had / L38 / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+## 00:05:00–00:05:30
+
+你几乎最开始不可能把所有单词的所有含义都记住，但是你可以凭你的汉语感去猜。我就想问你，什么叫他们被暴力的扔进了海里边？就是，其实就是你能想到啊，结合上下文场景，就这方向盘突然间从手里边脱落了，然后人出于惯性，嗡，就给甩出去了，对吧？就是嗡这一下，就是 violently。那我们要给它变成语言上，这是翻译学要做的事儿。你听明白了吧？
+
+### 画面 00:05:13
+
+![课件截图](frames/frame_000025.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He / L14. / 'waved desperately to his / companion, who had been water sking for / Both men had / the last fifteen minutes. / L38 / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+### 画面 00:05:19
+
+![课件截图](frames/frame_000026.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He' /  L4waved desperately to his / L14. / companion, who had been water sking for / the last fifteen minutes. / s.Both men had / L38 / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+### 画面 00:05:22
+
+![课件截图](frames/frame_000027.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He' /  L14waved desperately to his / L14. / companion, who had been water sking for / the last fifteen minutes. / s.Both men had / L38H / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+### 画面 00:05:25
+
+![课件截图](frames/frame_000028.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He' /  L14waved desperately to his / L14. / companion, who had been water sking for / the last fifteen minutes. / Both men had / L38 / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+## 00:05:30–00:06:00
+
+对于你而言，你只要说读到这句话叫 they were thrown violently into the sea，然后 violently 在你脑海当中有一个概念叫暴力的，然后你就能反应过来哦。结合上下文，它这个地方 violently 的意思就是嗯这一下，听明白了吧？好，这句话你就已经读懂了。至于说你想把它读的更懂，那你可能要去查一下，说 violently 还有猛的，对吧？猛的啊，给扔出去了，其实也很容易理解，对吧？就就他们被扔成猛的，就扔进了海里
+
+### 画面 00:05:37
+
+![课件截图](frames/frame_000029.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He / L14. / 'waved desperately to his / companion, who had been water sking for / the last fifteen minutes. / s.Both men had / L38 / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+### 画面 00:05:43
+
+![课件截图](frames/frame_000030.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He' / L14. / 'waved desperately to his / companion, who had been water sking for / the last fifteen minutes. / s.Both men had / L38 / 'hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+## 00:06:00–00:06:30
+
+边去，对吧？Okay, the speedboat had struck a buoy, but it continued to move very quickly across the water.那个快艇撞上了一个浮漂，但是呢，它继续移动非常的快，across the water在水面上穿梭，对吧？继续移动非常快，continue to do something四十二个咱学的习惯用法啊。Both men had just begun to swim
+
+### 画面 00:06:01
+
+![课件截图](frames/frame_000031.webp)
+
+文字识别：As the man tried to swing the speedboat / round/the steering wheel came away in his / hands. He' /  4waved desperately to his / L14. / companion, who had been water sking for / the last fifteen minutes. / s.Both men had / L38hardly had time to realize what was / happening when they were thrown violently / into the sea.
+
+### 画面 00:06:03
+
+![课件截图](frames/frame_000032.webp)
+
+文字识别：The speedboat had struck a buoy, but it / 42 / continued to move very quickly across the / water. Both men had just '"begun to swim / towards the shore, when they noticed with / dismay that the speedboat was moving in a / circle. It now came straight towards them at / tremendous speed. In less than a minute, it / roared past them only a few feet away.
+
+### 画面 00:06:25
+
+![课件截图](frames/frame_000033.webp)
+
+文字识别：The speedboat had struck a buoy, but it / L42 / 'continued to move very quickly across the / water. Both men had just '"begun to swim / towards the shore, when they noticed with / dismay that the speedboat was moving in a / circle. Ilt now came straight towards them at / tremendous speed. In less than a minute, it / roared past them only a few feet away.
+
+## 00:06:30–00:07:00
+
+toward the shore when they noticed with dismay that the speedboat was moving in a circle.我的天，这一看又猴长，啊，还是那句话，不过还好啊。你首先，你看这儿有个连词，有个逗号，咱先给它拆一句，是吧？接下来这儿有一个 that，咱再给它拆一句，三小句，哎，放到你这儿就每一句都很简单了。Both men,两个男人都怎么样呢？Had just begun to swim towards shore,就刚刚开始游泳，
+
+### 画面 00:06:37
+
+![课件截图](frames/frame_000034.webp)
+
+文字识别：The speedboat had struck a buoy, but it / 142 / 'continued to move very quickly across the / water. Both men had just '"begun to swim / towards the shore, when they noticed with / dismay that the speedboat was moving in a / circle. It now came straight towards them at / tremendous speed. In less than a minute, it / roared past them only a few feet away.
+
+### 画面 00:06:46
+
+![课件截图](frames/frame_000035.webp)
+
+文字识别：The speedboat had struck a buoy, but it / L42 / 'continued to move very quickly across the / waterBoth men had just 'begun to swim / towards the shore, when they noticed with / dismay that the speedboat was moving in a / circle / It now came straight towards them at / tremlendous speed. In less than a minute, it / roared past them only a few feet away.
+
+## 00:07:00–00:07:30
+
+冲着哪儿呢？冲着这个海岸游。这是第一句话。第二句话，当 they noticed with dismay that 他们沮丧的意识到。第二句话，意识到的是什么呢？ The speedboat was moving in a circle. 说这个快艇啊，正在移动 in a circle，转圈儿，以一个圈儿的形式移动。就是说白了，这个快艇正在自己画圈圈，对吧？转圈圈。 It now
+
+### 画面 00:07:16
+
+![课件截图](frames/frame_000036.webp)
+
+文字识别：The speedboat had struck a buoy, but it / L42 / 'continued to move very quickly across the / waterBoth men had just 'begun to swim / towards the shore, when they noticed with / dismay thatthe speedboat was moving in a / circle| /  It now came straight towards them at / tremlendous speed. In less than a minute, it / roared past them only a few feet away.
+
+## 00:07:30–00:08:00
+
+came straight towards them at tremendous speed.这句话并不难说。它这个快艇现在怎么样呢？Came.如果我们不加straight, came towards him就是冲着他们就来了。那straight之前咱们学过，就是径直的冲着他们就来了，对吧？这应该是四十四课咱们见过straight这个单词。说这个一个女的，她的包被两个人从森林边缘抢走了。然后呢，这个女的冲着就追进去了，然后径直冲着他们俩就冲过去了，对吧？好，
+
+### 画面 00:07:46
+
+![课件截图](frames/frame_000037.webp)
+
+文字识别：The speedboat had struck a buoy, but it / 142 / 'continued to move very quickly across the / waterBoth men had just 'begun to swim / towards the shore, when they noticed with / dismay thatthe speedboat was moving in a / circle| /  It now came straight towards them at / tremlendous speed. In less than a minute, it / roared past them only a few feet away.
+
+### 画面 00:07:51
+
+![课件截图](frames/frame_000038.webp)
+
+文字识别：The speedboat had struck a buoy, but it / L42 / continued to move very quickly across the / waterBoth men had just 'begun to swim / towards the shore,when they noticed with / dismay thatthe speedboat was moving in a / circle| / It now came straight towards them at / tremendous speed. In less than a minute, it / roared past them only a few feet away.
+
+### 画面 00:07:57
+
+![课件截图](frames/frame_000039.webp)
+
+文字识别：The speedboat had struck a buoy, but it / L42 / continued to move very quickly across the / waterBoth men had just 'begun to swim / towards the shore, when they noticed with / dismay thatthe speedboat was moving in a / circle| /  It now came straight towards them at / tremlendous speed. In less than a minute, it / roared past them only a few feet away.
+
+### 画面 00:07:59
+
+![课件截图](frames/frame_000040.webp)
+
+文字识别：The speedboat had struck a buoy, but it / L42 / 'continued to move very quickly across the / waterBoth men had just 'begun to swim / towards the shore, when they noticed with / dismay thatthe speedboat was moving in a / circle| / It now came straight towards them at / tremlendous speed. In less than a minute, it / roared past them only a few feet away.
+
+## 00:08:00–00:08:30
+
+这个 straight，静止。包括后来还有一课，我们学这个有一个司机从出租车司机变成公交车司机了，之后开着车静止的撞向了那两个贼的屁股，对吧？哎， straight。好，所以就是静止的冲他们就来了。这个快艇 at tremendous speed，单词部分我们讲过了，就极快的速度。 Continue. In less than a minute, it rolled past them, only a few feet away.
+
+### 画面 00:08:23
+
+![课件截图](frames/frame_000041.webp)
+
+文字识别：The speedboat had struck a buoy, but it / L42 / 'continued to move very quickly across the / waterBoth men had just 'begun to swim / towards the shore, when they noticed with / dismay thatthe speedboat was moving in a / circle| / It now came straight towards them at / tremlendous speed. In less than a minute, it / roared past them only a few feet away.
+
+## 00:08:30–00:09:00
+
+in less than a minute. In a minute,叫一分钟之后，less than就少于一分钟，就是不到一分钟啊。这个快艇怎么样呢？Roared past. Roared有一个含义就是怒吼着。什么叫怒吼着？其实就是轰鸣着，对吧？嗡就冲过来了，就是这样一个拟声词，类似于啊。其实，然后说，其实就是呃，来是come，去是go这样的一个最简单的动词，它只不过加上了一些拟声词的感觉啊。说这个
+
+### 画面 00:08:48
+
+![课件截图](frames/frame_000042.webp)
+
+文字识别：The speedboat had struck a buoy, but it / L42 / 'continued to move very quickly across the / waterBoth men had just 'begun to swim / towards the shore, when they noticed with / dismay thatthe speedboat was moving in a / circle| / It now came straight towards them at / tremlendous speed. In less than a minute, it / roared past them only a few feet away.
+
+## 00:09:00–00:09:30
+
+个快艇啊，轰鸣着 passed them，还好不是 hit them，哈，不是 at them啊，是轰鸣着从他们身边就穿过去了。Only a few feet away，只有几英尺远。哎，比如说我现在在这儿啊，几英尺远，这个船在这儿就轰鸣着冲过去了，对吧？挺吓人的。Continue. After it had passed，说在它通过之后呢，
+
+### 画面 00:09:12
+
+![课件截图](frames/frame_000043.webp)
+
+文字识别：The speedboat had struck a buoy, but it / 142 / 'continued to move very quickly across the / waterBoth men had just 'begun to swim / towards the shore, when they noticed with / dismay thatthe speedboat was moving in a / circle| / It now came straight towards them at / tremlendous speed. In less than a minute, it / roared past them only a few feet away.
+
+### 画面 00:09:18
+
+![课件截图](frames/frame_000044.webp)
+
+文字识别：The speedboat had struck a buoy, but it / 142 / continued to move very quickly across the / waterBoth men had just 'begun to swim / towards the shore, when they noticed with / dismay thatthe speedboat was moving in a / circle| /  It now came straight towards them at / tremlendous speed. In less than a minute, it / roared past them only a few feet away.
+
+### 画面 00:09:20
+
+![课件截图](frames/frame_000045.webp)
+
+文字识别：The speedboat had struck a buoy, but it / L42 / continued to move very quickly across the / waterBoth men had just 'begun to swim / towards the shore, when they noticed with / dismay thatthe speedboat was moving in a / circle| /  It now came straight towards them at / tremlendous speed. In less than a minute, it / roared past them only a few feet away.
+
+### 画面 00:09:23
+
+![课件截图](frames/frame_000046.webp)
+
+文字识别：The speedboat had struck a buoy, but it / L42 / continued to move very quickly across the / waterBoth men had just 'begun to swim / towards the shore, when they noticed with / dismay thatthe speedboat was moving in a / circle| / It now came straight towards them at / tremlendous speed. In less than a minute, it / roared past them only a few feet away.
+
+### 画面 00:09:25
+
+![课件截图](frames/frame_000047.webp)
+
+文字识别：Afterit had passed, they swam lon as / quickly as they could because they knew / that the boat would soon return. They had / just had enough time to swim out of danger / when the boat again completed a circle.
+
+## 00:09:30–00:10:00
+
+They swam on as quickly as they could because they knew that the boat would soon return. 又是一个看着有点长的句子，咱们给它稍微断一断，是吧？稍微断一断。好啊，咱们看一下啊。第一个叫 after it had passed，说在这个飞艇已经通过了之后，怎么样呢？They swam on as quickly as they could. 两个知识点我们都分别讲过，我带
+
+### 画面 00:09:47
+
+![课件截图](frames/frame_000048.webp)
+
+文字识别：Afterit had passed,they swam 4on as / quickly as they couldbecause they knew / thaythe boat would'soon return.They had / just had enough time to swim out of danger / when the boat again completed a circle.
+
+## 00:10:00–00:10:30
+
+你提醒一下。第一个 on，我们早在十四课就学过，就十四课开车在法国开车搭便车的那一课，对吧？好，他开车呢，叫做 drive on to the next town，对吧？那这个 on 就是继续啊，比如 my heart will go on，啊，我心永恒，对吧？说他们继续往前游，然后 as quickly as they could 这个短语我之前跟各位说过了，你不要分析，给他硬记下来，速度是最快的。它的变体就那几个，
+
+### 画面 00:10:06
+
+![课件截图](frames/frame_000049.webp)
+
+文字识别：Afterit had passed,they swam 14on as / quickly as they could/because they knew / thaythe boat would'soon return.They had / just had enough time to swim out of danger / when the boat again completed a circle.
+
+### 画面 00:10:24
+
+![课件截图](frames/frame_000050.webp)
+
+文字识别：Afterit had passed,they swam l14on as / quickly as they couldbecause they knew / thatthe boat would'soon return.They had / just had enough time to swim out of danger / when the boat again completed a circle.
+
+### 画面 00:10:28
+
+![课件截图](frames/frame_000051.webp)
+
+文字识别：Afterit had passed,they swam 14on as / quickly as they couldbecause they knew / thatthe boat would'soon return. They had / just had enough time to swim out of danger / when the boat again completed a circle.
+
+## 00:10:30–00:11:00
+
+as soon as they could，as quickly as they could，as quickly as possible，as soon as possible，就这几个变体全翻译成叫尽快，对吧？硬给它记下来，效果是最好的。每次都去分析它，效果是最慢的啊。那他们继续游，最尽快的继续游，因为一个小的连词，they knew，他们知道，后边that又来了一个小的宾从，对吧？从句套从句了，开始啊。说因为
+
+### 画面 00:10:31
+
+![课件截图](frames/frame_000052.webp)
+
+文字识别：After it had passed, they swam L14on as / quickly as they could/because they knew / thatthe boat would'soon return.They had / just had enough time to swim out of danger / when the boat again completed a circle.
+
+## 00:11:00–00:11:30
+
+什么呢？他们知道，不过这个从句跟套从句跟汉语语序一模一样。因为他们知道船将很快的返回。为什么要很返回呢？不是说这个船是 moving circle 吗？ Continue. They had just had enough time to swim out of danger when the boat again completed a circle. 说他们刚刚有足够多的时间去游
+
+### 画面 00:11:01
+
+![课件截图](frames/frame_000053.webp)
+
+文字识别：Afterit had passed,they swam 14on as / quickly as they couldbecause they knew / thaythe boat would'soon return. They had / just had enough time to swim out of danger / when the boat again completed a circle.
+
+### 画面 00:11:11
+
+![课件截图](frames/frame_000054.webp)
+
+文字识别：Afterit had passed,they swam on as / quickly as they could/because they knew / thaythe boat would' soon return. They had / just had enough time to swim out of danger / when the boat again completed a circle.
+
+### 画面 00:11:14
+
+![课件截图](frames/frame_000055.webp)
+
+文字识别：Afterit had passed,they swam 14on as / quickly as they couldbecause they knew / thaythe boat would' soon return.They had / just had enough time to swim out of danger / when the boat again completed a circle.
+
+## 00:11:30–00:12:00
+
+出这个危险，哎，就是脱离危险，游出危险的意思，其实就是翻译成汉语脱离危险，只不过是用游这个动作脱离的危险啊。然后呢，这个船就又一次 completed a circle，完成了一个圈儿，又转了一圈回来了，对吧？On this occasion，十三课咱学过，但这跟这课的 on this occasion 稍有不同。十三课绿林
+
+### 画面 00:11:35
+
+![课件截图](frames/frame_000056.webp)
+
+文字识别：Afterit had passed,they swam 14on as / quickly as they couldbecause they knew / thaythe boat would'soon return.They had / just had enough time to swim out of danger / when the boat again completed a circle.
+
+### 画面 00:11:42
+
+![课件截图](frames/frame_000057.webp)
+
+文字识别：After it had passed, they swam [14on as / quickly as they couldbecause they knew / thaythe boat would'soon return.They had / just had enough time to swim out of danger / when the boat again completed a circle.
+
+### 画面 00:11:48
+
+![课件截图](frames/frame_000058.webp)
+
+文字识别：Afterit had passed,they swam on as / quickly as they couldbecause they knew / thaythe boat would'soon return.They had / just had enough time to swim out of danger / when the boat again completed a circle.
+
+### 画面 00:11:50
+
+![课件截图](frames/frame_000059.webp)
+
+文字识别：After it had passed,/they swam [14on as / quickly as they couldbecause they knew / thaythe boat would'soon return.They had / just had enough time to swim out of danger / when the boat again completed a circle.
+
+### 画面 00:11:52
+
+![课件截图](frames/frame_000060.webp)
+
+文字识别：L13On this occasion, however, it had slowed / down considerably. The petrol had nearly all / been used up. Before long, the noise / dropped completely and the boat began to / drift gently across the water.
+
+## 00:12:00–00:12:30
+
+少年那课，我们学 on this occasion 的时候呢，它的含义是叫在这个场景下，而这里边不是在这个场景下，而是这一次啊，叫 this time。 this time， however，然而呢， it had slowed down considerably，啊，considerably，说它怎么样呢？它已经慢下来了。这个 considerably 是什么意思呢？ consider 这个单词你认的，考虑，但是这个和
+
+### 画面 00:12:22
+
+![课件截图](frames/frame_000061.webp)
+
+文字识别：L13On this occasion, however, it had slowed / down considerably. The petrol had nearly all / been used up. Before long, the noise / dropped completely and the boat began to / drift gently across the water.
+
+### 画面 00:12:27
+
+![课件截图](frames/frame_000062.webp)
+
+文字识别：L13On this occasion, however, it had slowed / down considerably. The petrol had nearly all / been used up. Before long, the noise / dropped completely and the boat began to / drift gently across the water.
+
+## 00:12:30–00:13:00
+
+considerably 的意思完全不一样。它的意思有点像 very 非常，就是那什么叫做它 slow down，然后 considerably 呢？就是它慢，它迅速的慢下来了，它变得无比的慢，变得非常的慢了，就是 very very slow 啊，就是这样一种感觉。The petrol had already all been used up. 本课的习惯用法 used up 用光、使光，比如说热水使完了
+
+### 画面 00:12:30
+
+![课件截图](frames/frame_000063.webp)
+
+文字识别：L13On this occasion, however, it had slowed / down considerably. The petrol had nearly all / been used up. Before long, the noise / dropped completely and the boat began to / drift gently across the water.
+
+## 00:13:00–00:13:30
+
+used up，对吧？钱用完了，used up. Okay. 所以这个石油啊，几啊不是这这个气汽油啊，汽油啊几乎已经都怎么样了呢？被用光了。注意这里是个被动，been used up，因为主语是这个汽油嘛，汽油是被用光了啊。如果是人们用光了这个汽油，那就是主动。Before long，直接旁边写个单词叫做soon，很快。The
+
+### 画面 00:13:00
+
+![课件截图](frames/frame_000064.webp)
+
+文字识别：L13On this occasion, however, it had slowed / down considerably. The petrol had nearly all / been used up. Before long, the noise / dropped completely and the boat began to / drift gently across the water.
+
+### 画面 00:13:26
+
+![课件截图](frames/frame_000065.webp)
+
+文字识别：Soo / L13On this occasion, however, it had slowed / down considerably. The petrol had nearly all / been used up. Before long, the noise / dropped completely and the boat began to / drift gently across the water.
+
+## 00:13:30–00:14:00
+
+noise dropped completely. 声音这个这个声音噪音完全就怎么样了呢？消失了。Dropped下降了嘛，完全就降下来了。然后 the boat began to drift gently across the water. 啊，这句话就很容易了。这个船就开始温柔的飘在这个水面上了。OK，好，本课的四个习惯用法，老习惯，咱们要去造句。第一个 come away，离
+
+### 画面 00:13:54
+
+![课件截图](frames/frame_000066.webp)
+
+文字识别：习惯用法造句 / come away / move in a circle / used up / before long
+
+### 画面 00:13:56
+
+![课件截图](frames/frame_000067.webp)
+
+文字识别：习惯用法造句 / come away / move in a circle / used up / before long
+
+### 画面 00:13:58
+
+![课件截图](frames/frame_000068.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 奏助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / 离开/脱离 / come away
+
+## 00:14:00–00:14:30
+
+开脱离对吧？我们造个句子啊。So the paper has started to come away from the wall. 你看什么意思？叫做就这个墙，这个这个纸啊，开始脱离这个墙了，开始从这个墙上往下掉了，对吧？Next one, the handle 这个把手 came away in my hands 从我手中脱离出来了啊。Next one, it is now known that 现在人们知道了，现在
+
+### 画面 00:14:00
+
+![课件截图](frames/frame_000069.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / 离开/脱离 / come away /  The paper has started to come away from / the walls.
+
+### 画面 00:14:05
+
+![课件截图](frames/frame_000070.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / 离开/脱离 / come away /  The paper has started to come away from / the walls.
+
+### 画面 00:14:07
+
+![课件截图](frames/frame_000071.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / 离开/脱离 / come away /  The paper has started to come away from / the walls.
+
+### 画面 00:14:10
+
+![课件截图](frames/frame_000072.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / 离开/脱离 / come away /  The paper has started to come away from / the walls.
+
+### 画面 00:14:15
+
+![课件截图](frames/frame_000073.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 子计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / 离开/脱离 / come away /  The paper has started to come away from / the walls.
+
+### 画面 00:14:18
+
+![课件截图](frames/frame_000074.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / ■离开/脱离 / come away /  The paper has started to come away from / the walls. /  The handle came away in my hands. did/ / what/how...
+
+### 画面 00:14:20
+
+![课件截图](frames/frame_000075.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / ■离开/脱离 / come away /  The paper has started to come away from / the walls. /  The handle came away in my hands. did/ / what/how...
+
+### 画面 00:14:25
+
+![课件截图](frames/frame_000076.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / ■离开/脱离 / come away /  The paper has started to come away from / the walls. /  The handle came away in my hands. did/ / what/how... /  It is now known that it just came away in / your hands. L82
+
+## 00:14:30–00:15:00
+
+It just came away in your hands. It just came away in your hands. It just came away in your hands. It just came away in your hands. It just came away in your hands. It just came away in your hands. It just came away in your hands. It just came away in your hands. It just came away in your hands. It just came away in your hands. It just came away in your hands. It just came away in your hands. It just came away in your hands. It just came away in your hands. It just came away in your hands. It just came away in your hands. It just came away in your hands. It just came away in your hands. It just came away in your hands. It just came away in your hands. It just came away in your hands. It just came away in your hands. It just came away in your hands. It just
+
+### 画面 00:14:30
+
+![课件截图](frames/frame_000077.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 囊助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / ■离开/脱离 / come away /  The paper has started to come away from / the walls. /  The handle came away in my hands. did/ / what/how... /  It is now known that it just came away in / your hands. L82
+
+### 画面 00:14:35
+
+![课件截图](frames/frame_000078.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / ■离开/脱离 / come away /  The paper has started to come away from / the walls. /  The handle came away in my hands. did/ / what/how... /  It is now known that it just came away in / your hands. L82
+
+### 画面 00:14:40
+
+![课件截图](frames/frame_000079.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / ■离开/脱离 / come away /  The paper has started to come away from / the walls. /  The handle came away in my hands. did/ / what/how... /  It is now known that it just came away in / your hands. L82
+
+### 画面 00:14:43
+
+![课件截图](frames/frame_000080.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 妻助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / move/walk/sit + in a circle
+
+### 画面 00:14:45
+
+![课件截图](frames/frame_000081.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 囊助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / move/walk/sit + in a circle
+
+### 画面 00:14:50
+
+![课件截图](frames/frame_000082.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 辜助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / move/walk/sit + in a circle
+
+### 画面 00:14:54
+
+![课件截图](frames/frame_000083.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 泰助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / move/walk/sit + in a circle
+
+### 画面 00:14:56
+
+![课件截图](frames/frame_000084.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 辜助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / move/walk/sit + in a circle
+
+### 画面 00:14:58
+
+![课件截图](frames/frame_000085.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 喜助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / move/walk/sit + in a circle
+
+## 00:15:00–00:15:30
+
+上，一群人手牵着手啊，在那儿围着火篝火那儿转圈圈，move in a circle。那 walk in a circle 是一样的，sit in a circle 是坐一圈，对吧？造几个句子，repeat after me。 Why did they move in a circle? Next one, come here. Let's sit in a circle on the floor. Next one, the captain ordered us to stand in a circle.
+
+### 画面 00:15:00
+
+![课件截图](frames/frame_000086.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 囊助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / move/walk/sit + in a circle
+
+### 画面 00:15:02
+
+![课件截图](frames/frame_000087.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 壺助字计划国州 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / move/walk/sit + in a circle
+
+### 画面 00:15:04
+
+![课件截图](frames/frame_000088.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 囊助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / move/walk/sit + in a circle
+
+### 画面 00:15:06
+
+![课件截图](frames/frame_000089.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 囊助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / move/walk/sit + in a circle
+
+### 画面 00:15:10
+
+![课件截图](frames/frame_000090.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / move/walk/sit + in a circle /  Why did they move in a circle?
+
+### 画面 00:15:12
+
+![课件截图](frames/frame_000091.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 喜助子计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / move/walk/sit + in a circle /  Why did they move in a circle?
+
+### 画面 00:15:14
+
+![课件截图](frames/frame_000092.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 喜助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / move/walk/sit + in a circle /  Why did they move in a circle?
+
+### 画面 00:15:16
+
+![课件截图](frames/frame_000093.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 妻助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / move/walk/sit + in a circle /  Why did they move in a circle?
+
+### 画面 00:15:18
+
+![课件截图](frames/frame_000094.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / move/walk/sit + in a circle /  Why did they move in a circle? /  Come here, let's sit in a circle on the floor.
+
+### 画面 00:15:20
+
+![课件截图](frames/frame_000095.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / move/walk/sit + in a circle /  Why did they move in a circle? /  Come here, let's sit in a circle on the floor.
+
+### 画面 00:15:23
+
+![课件截图](frames/frame_000096.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / move/walk/sit + in a circle /  Why did they move in a circle? /  Come here, let's sit in a circle on the floor. /  The captain ordered us to stand in a circle. / L43
+
+### 画面 00:15:25
+
+![课件截图](frames/frame_000097.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 学计州 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / move/walk/sit + in a circle /  Why did they move in a circle? /  Come here, let's sit in a circle on the floor. /  The captain ordered us to stand in a circle. / L43
+
+### 画面 00:15:27
+
+![课件截图](frames/frame_000098.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 学计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / move/walk/sit + in a circle /  Why did they move in a circle? /  Come here, let's sit in a circle on the floor. /  The captain ordered us to stand in a circle. / L43
+
+## 00:15:30–00:16:00
+
+Okay, used up. Used up.刚才我们说了，叫被用光了，被用完了啊。我们造个句子，比如说 She's used up all the hot water. 注意，这不是被动啊，这不是 She is used up. 这个是主动现在完成时 She has used up. 她已经使光了所有的热水啊. Next one. It is said that they have used up all their money. 据说他们用光了他们所有的钱，
+
+### 画面 00:15:30
+
+![课件截图](frames/frame_000099.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / move/walk/sit + in a circle /  Why did they move in a circle? /  Come here, let's sit in a circle on the floor. /  The captain ordered us to stand in a circle. / L43
+
+### 画面 00:15:32
+
+![课件截图](frames/frame_000100.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 囊助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / used up
+
+### 画面 00:15:34
+
+![课件截图](frames/frame_000101.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 泰助学计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / used up
+
+### 画面 00:15:36
+
+![课件截图](frames/frame_000102.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / used up /  She's used up all the hot water.
+
+### 画面 00:15:40
+
+![课件截图](frames/frame_000103.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 妻助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / used up /  She's used up all the hot water.
+
+### 画面 00:15:46
+
+![课件截图](frames/frame_000104.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / used up /  She's used up all the hot water.
+
+### 画面 00:15:50
+
+![课件截图](frames/frame_000105.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / used up /  She's used up all the hot water.
+
+### 画面 00:15:54
+
+![课件截图](frames/frame_000106.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / used up /  She's used up all the hot water. /  It is said that they have used up all their / money. L58
+
+### 画面 00:15:56
+
+![课件截图](frames/frame_000107.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / used up /  She's used up all the hot water. /  It is said that they have used up all their / money. L58
+
+### 画面 00:15:58
+
+![课件截图](frames/frame_000108.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / used up /  She's used up all the hot water. /  It is said that they have used up all their / money. L58
+
+## 00:16:00–00:16:30
+
+现金链断了。Next one, how can you use up all the glue in one night?说你如何能在一晚上的时间就把所有的胶水都用完了，对吧？Okay,那注意力集中，咱听这个电影片段吧。They used up all the hot water.哎，他们用光了所有的热水啊。Next one, before long等于 soon，对吧？很快。你造个句子吧。说I hope
+
+### 画面 00:16:00
+
+![课件截图](frames/frame_000109.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / used up /  She's used up all the hot water. /  It is said that they have used up all their / money. L58
+
+### 画面 00:16:03
+
+![课件截图](frames/frame_000110.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / used up /  She's used up all the hot water. /  It is said that they have used up all their / money. L58 / How can you use up all the glue in one / night?
+
+### 画面 00:16:05
+
+![课件截图](frames/frame_000111.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / used up /  She's used up all the hot water. /  It is said that they have used up all their / money. L58 /  How can you use up allthe glue in one / night?
+
+### 画面 00:16:10
+
+![课件截图](frames/frame_000112.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / used up /  She's used up all the hot water. /  It is said that they have used up all their / money. L58 / How can you use up allthe glue in one / night?
+
+### 画面 00:16:15
+
+![课件截图](frames/frame_000113.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / used up /  She's used up all the hot water. /  It is said that they have used up all their / money. L58 / How can you use up all the glue in one / night?
+
+### 画面 00:16:17
+
+![课件截图](frames/frame_000114.webp)
+
+文字识别：They used up allthe hot water. / Avengers: Age of Ultron / (2015)
+
+### 画面 00:16:20
+
+![课件截图](frames/frame_000115.webp)
+
+文字识别：They used up allthe hot water. / Avengers: Age of Ultron / (2015)
+
+### 画面 00:16:24
+
+![课件截图](frames/frame_000116.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 囊助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / before long / = soon
+
+### 画面 00:16:26
+
+![课件截图](frames/frame_000117.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 囊助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / before long / = soon
+
+### 画面 00:16:28
+
+![课件截图](frames/frame_000118.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / before long / . .= sOon / I hope to see you again before long. L36
+
+## 00:16:30–00:17:00
+
+to see you again before long. 说啊， next one 说 We'll finish the work before long. 很快就完成工作。最后一个 before long， 哎，时间最前最后都行，对吧？ The little bird will follow you around， 对吧？这是小鸟的一个特点。如果你从小养它，对吧？它从蛋壳里出来看见的是你，它就天天跟着你，它就认为你是它妈妈，对吧？所以造了个句子 before long， the little bird will follow you around， 就四处跟着你了。 OK，
+
+### 画面 00:16:30
+
+![课件截图](frames/frame_000119.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / before long / ..= soon / I hope to see you again before long. L36
+
+### 画面 00:16:35
+
+![课件截图](frames/frame_000120.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / before long / y ... = sOon / I hope to see you again before long. L36 /  We'll finish the work before long.
+
+### 画面 00:16:37
+
+![课件截图](frames/frame_000121.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / before long /  ...= sOon / I hope to see you again before long. L36 /  We'll finish the work before long. /  Before long, the little bird will follow you / around. L68
+
+### 画面 00:16:40
+
+![课件截图](frames/frame_000122.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / before long .. = soon / I hope to see you again before long. L36 /  We'll finish the work before long. /  Before long, the little bird will follow you / around. L68
+
+### 画面 00:16:50
+
+![课件截图](frames/frame_000123.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / before long / y ..= soon / ■I hope to see you again before long. L36 /  We'llfinish the work before long. /  Before long, the little bird will follow you / around. L68
+
+### 画面 00:16:55
+
+![课件截图](frames/frame_000124.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / before long /  ...= sOon / ■I hope to see you again before long. L36 /  We'll finish the work before long. /  Before long, the little bird will follow you / around. L68
+
+### 画面 00:16:59
+
+![课件截图](frames/frame_000125.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / before long / y . . = soon / I hope to see you again before long. L36 /  We'll finish the work before long. /  Before long, the little bird will follow you / around. L68
+
+## 00:17:00–00:17:30
+
+好。那注意力集中，咱听一下电影片段啊。Thank you, my own man will come and find me before long. OK, recap本课除了文章，四个习惯用法一定要去造句啊。然后呢，文章还是熟读成诵。呃，置顶留言咱找重复间隔的学习材料。那以上呢就是本期视频的全部内容了。如果各位喜欢我们的课程呢，欢迎各位关注、订阅、一键三连，分享给那
+
+### 画面 00:17:01
+
+![课件截图](frames/frame_000126.webp)
+
+文字识别：No, thank you, my own man will / come and find me before long. / The White Countess / (2005)
+
+### 画面 00:17:05
+
+![课件截图](frames/frame_000127.webp)
+
+文字识别：No, thank you, my own man will / come and find me before long. / The White Countess / (2005)
+
+### 画面 00:17:07
+
+![课件截图](frames/frame_000128.webp)
+
+文字识别：No, thank you, my own man will / come and find me before long. / The White Countess / (2005)
+
+### 画面 00:17:09
+
+![课件截图](frames/frame_000129.webp)
+
+文字识别：Recap / come away / move in a circle / Expression / be used up / before long
+
+### 画面 00:17:11
+
+![课件截图](frames/frame_000130.webp)
+
+文字识别：Recap / come away / move in a circle / Expression / be used up / before long
+
+### 画面 00:17:13
+
+![课件截图](frames/frame_000131.webp)
+
+文字识别：Recap / come away / move in a circle / Expression / be used up / before long
+
+### 画面 00:17:15
+
+![课件截图](frames/frame_000132.webp)
+
+文字识别：1. / 习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句 / 文章跟读至熟读成诵 / 内化单词+语法+习惯用法 / 听力+口语+写作练习
+
+### 画面 00:17:17
+
+![课件截图](frames/frame_000133.webp)
+
+文字识别：1. / 习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句 / 文章跟读至熟读成诵 / 内化单词+语法+习惯用法 / 听力+口语+写作练习
+
+### 画面 00:17:19
+
+![课件截图](frames/frame_000134.webp)
+
+文字识别：习惯用法造句/对话 / 1. / 【习惯用法造句指南】 / 每个5句 / 文章跟读至熟读成诵 / 内化单词+语法+习惯用法 / 听力+口语+写作练习 / 3. / 重复间隔（置顶留言）
+
+### 画面 00:17:21
+
+![课件截图](frames/frame_000135.webp)
+
+文字识别：复助字计划一洲 / 👍
+
+### 画面 00:17:25
+
+![课件截图](frames/frame_000136.webp)
+
+文字识别：助字计划国 / 不
+
+## 00:17:30–00:17:47
+
+些需要的朋友，来帮助我们快速成长。See you next time.
+
+### 画面 00:17:31
+
+![课件截图](frames/frame_000137.webp)
+
+文字识别：臺助字计划們
+
+### 画面 00:17:34
+
+![课件截图](frames/frame_000138.webp)
+
+### 画面 00:17:36
+
+![课件截图](frames/frame_000139.webp)
+
+文字识别：CAPSULEACADEMY / 胶囊助学计划 / 『 / 小红书 / Lecturer / □ / Leo / OE
+
+### 画面 00:17:39
+
+![课件截图](frames/frame_000140.webp)
+
+文字识别：CAPSULEACADEMY / 胶囊助学计划 / 『 / 小红书 / □ / 口 / Edit. / OE
+
+### 画面 00:17:42
+
+![课件截图](frames/frame_000141.webp)
+
+文字识别：珈学針物 / CAPSULEACADEMY / 胶囊助学计划 / 『 / 小红书 / Creator / Leo & Berlin / OE
+
+### 画面 00:17:44
+
+![课件截图](frames/frame_000142.webp)
+
+文字识别：bilbili / 胶囊助学计划 / CAPSULEACADEMY / 胶囊助学计划 / 小红书 / OE
+
+### 画面 00:17:46
+
+![课件截图](frames/frame_000143.webp)
+
+文字识别：bilbili / 胶囊助学计划
+
