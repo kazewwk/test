@@ -1,0 +1,196 @@
+{
+  "artifacts": {
+    "1793158812_3615.md": "7246edd2976f6f48b21e900b1fa5631eab63b12c57aeda4acfd206fe0c330e6c",
+    "1793158812_3615_res.json": "282254202dfee3e1faa664415a856a495ad3cb3f8973791a934a73fb016e1ca8",
+    "imgs/img_in_header_image_box_1649_30_1891_102.jpg": "f5da38f668357d96d677f8b48a3d6d14f576a8e8273e7f9f3faa4db0d4f0cab5",
+    "imgs/img_in_image_box_1173_299_1789_1077.jpg": "4789445a13c50df06bb87ea7e66cda9806933b0a3e26f8b4671d0c8745026510",
+    "region_repairs.md": "4ed79d70fa882a3f03b07d16c0815764cc10ed61156f94921492a080a5025c73",
+    "repairs/region_000/1793158823_7375.md": "ab0479a47c250c990f045a0e75d9738f11167dbc002a70c3cf1e004ca7b41ff3",
+    "repairs/region_000/1793158823_7375_res.json": "73d3cfe03acde0f2584255c1ae5717722e3f5c7d2d9e809712665fd0f694d75b",
+    "repairs/region_000/source.png": "1ff1348d175760c6818f0602027b29d55e34085ac63c1bff07224ad704b661a4",
+    "repairs/region_001/1793158834_5683.md": "f9376c98b6cb1cb49f4c6a9ef0efaa60159bac7d5b69003a6514fd7ea91ed90a",
+    "repairs/region_001/1793158834_5683_res.json": "92f07698b7dbceba2b2f785e450b92aa44934831107c686d898535cb138b08a4",
+    "repairs/region_001/source.png": "14e8613bc3c86d4ffe8f614e1f0ffbc1230683013f5b5d30718f773204042c9c"
+  },
+  "input_fingerprint": "26b9464070044bd468db4b05a74108abc5cd847a195c4fb7c39e96b891c27095",
+  "image_sha256": "f429d79816552c2d162ea1b540f0930befe4d9fbbc062e8293e6dcacf7053bdd",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 112.23419158102479,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1649,
+        30,
+        1891,
+        102
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1649.0,
+          30.0
+        ],
+        [
+          1891.0,
+          30.0
+        ],
+        [
+          1891.0,
+          102.0
+        ],
+        [
+          1649.0,
+          102.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "号",
+      "block_bbox": [
+        167,
+        109,
+        254,
+        192
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          167.0,
+          109.0
+        ],
+        [
+          254.0,
+          109.0
+        ],
+        [
+          254.0,
+          192.0
+        ],
+        [
+          167.0,
+          192.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "1. 关闭视频后请回忆刚刚讲解的知识点，看能回忆出多少？基于studytest理论。吸收效率更高。",
+      "block_bbox": [
+        161,
+        233,
+        719,
+        457
+      ],
+      "block_id": 2,
+      "block_order": 2,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          161.0,
+          233.0
+        ],
+        [
+          719.0,
+          233.0
+        ],
+        [
+          719.0,
+          457.0
+        ],
+        [
+          161.0,
+          457.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1173,
+        299,
+        1789,
+        1077
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1173.0,
+          299.0
+        ],
+        [
+          1789.0,
+          299.0
+        ],
+        [
+          1789.0,
+          1077.0
+        ],
+        [
+          1173.0,
+          1077.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "胶学 billibil",
+      "block_bbox": [
+        1636,
+        18,
+        1900,
+        117
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "号",
+      "block_bbox": [
+        159,
+        103,
+        264,
+        201
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1636,
+        18,
+        1900,
+        117
+      ],
+      "ppocr_candidate": "胶学ibil",
+      "recovered_text": "胶学 billibil",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        159,
+        103,
+        264,
+        201
+      ],
+      "ppocr_candidate": "5",
+      "recovered_text": "号",
+      "source_crop": "repairs/region_001/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "engine": "transformers",
+  "device": "cpu",
+  "dtype": "float32",
+  "verification": "machine_extracted_unverified"
+}
