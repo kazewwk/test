@@ -1,0 +1,68 @@
+# 091 单词
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello, everyone. Welcome to the Capsule Academy. This is Leo. Today, we're going to learn new concept in English book two, lesson ninety one words. 老习惯进入正式课程之前，咱们先看几个小的问题。首先，如何表达监视某人？接下来，如何表达记录？OK，那带着这两个问题，我们开始。我们先看第一个单词，跟我一起读一下，叫 balloon。 OK，啊，叫做气球，对吧？
+
+## 00:00:28–00:01:02
+
+读一下，叫 balloon， OK，叫做气球，对吧？ OK，那想拿它去造句，你想，其实它因为是一个名词，你在这个地方肯定是要找动词，或者是结合其他习惯用法。这个习惯用法最好还是呃包含动词的，当然不包含动词也也可以啊，但前提是这个句子当中肯定得找个动词。跟我一起读一下这句话。As a result, his father bought her a total of thirty balloons. OK.
+
+## 00:00:58–00:01:32
+
+Bought her a total of thirty balloons. Okay, next one. The children expressed their gratitude to the man. 好了，首先表达了他们的感激对于这个男人，哪个男人呢？英语从句 who sent the balloons. Okay, very good. Next one. It is known that Lyle sent these balloons to the children. 哎，我把这些气球送给的这些孩子。那 it is known that. 你比如说 it is now known that 就是现在知道了 it is.
+
+## 00:01:28–00:02:02
+
+Known that, you比如说 it is now known that就是现在知道了, it is known that就是这个事儿是被人们知道了,对吧? Okay,也就换一句话来说就是人们知道啊, people know. Next one,下一个单词 royal, royal. Okay,那本文当中出现了一个很长的呃短语吧,你可以理解为叫做 Royal Air Force Station,皇家空军站,是吧? Okay,那当然了你也可以说 Royal Palace,皇宫,对不对?好,比如说我们造一个句子。
+
+## 00:01:58–00:02:32
+
+Palace,皇宫，对不对？好，比如说我们造一个句子叫做 It comes as a surprise to learn that. 记不记得？我讲这个语法的时候，我说我们完全可以不用说，非得去理解后面这是个什么语法成分，对吧？它实际上是真正主语，哎，这不是真正主语，怎么怎么着？不用，你只需要把前面 It comes as a surprise to learn that 给我把它牢牢记住。怎么记住它？多造句子，多读自己造的句子。哎，它的含义就是知道某件事情，感觉还挺惊讶的。什么事儿呢？The royal palace was burned down.
+
+## 00:02:28–00:03:02
+
+什么事儿呢？The royal palace was burned down last night.哎，这个皇宫昨天晚上被焚毁了。Next one,说When they saw their kids' royal palace, they all burst out laughing.说当他们看到他们孩子的这个皇宫的时候，全笑崩了，是吧？就笑屁了，呃，就是一下就呃爆发出来的笑声，是吧？哈哈狂笑，burst out laughing.我加了一个royal palace，加了一个引号啊。好，next one下一个单词浊化。
+
+## 00:02:58–00:03:32
+
+好，next one，下一个单词，着换，spy， spy，那 spy 的意思是什么？就是这个监视啊，监控啊，spy。那我们可以说 spy on somebody or something，监视某事或某物或某人，对吧？比如说，He changed into all black clothes and spy on Lucy，对吧？哎，他穿换上了某套衣服，然后监视某人。Next one， so he has spy on that man for two weeks，他监
+
+## 00:03:28–00:04:02
+
+So he has spied on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks. He has been spying on that man for two weeks.
+
+## 00:03:58–00:04:32
+
+啊，他们要求你监视我，对吧？Next one，下一个单词 track，track，track 有轨迹的意思啊。那 keep track of 是什么意思呢？就是保持什么什么的轨迹，是什么意思呢？就是追踪或者记录啊，都可以。你要由上下文去决定怎么翻译啊。比如说 how do you keep track of time？你如何记录时间，或者如何知道几钟几分几点了啊？If you don't wear a watch，如果你不戴表，你怎么知道几几分几？
+
+## 00:04:28–00:05:02
+
+We're a watch. If you don't wear a watch, how do you know what time it is? Next one. As a doctor, Brooks has to keep track of the latest developments in medicine. 你看说作为一个医生，Brooks怎么样？必须要 keep track of the latest developments in medicine. 那 keep track of 是什么意思？就是保持跟踪，对吧？哎，追踪什么呢？The latest developments in medicine 叫做最新的发展，在
+
+## 00:04:58–00:05:32
+
+Medicine叫做最新的发展在医药当中。Okay, next one. So I can keep track of things without using a computer.说我可以怎么样追踪跟踪事情而不去使用电脑？那什么叫跟踪追踪？就是记录，我能记下这些事情，而不需要干嘛？哎呃，使用一台电脑。那像上一句话当中，你说什么叫跟踪追踪最新的研究成果？就是随时啊跟着它出来，我。
+
+## 00:05:28–00:06:02
+
+研究成果就是随时啊跟着它出来我就看出来我就看对吧？呃，那咱们注意力集中看一下这句话。I just want to keep track of our progress, all right? 哎，我想记录一下我们的这个成果，对吧？我们逐渐进步的这个过程啊，我们进行的这个呃这个进展啊，我们的进展，对吧？Next one, binoculars. Binoculars. 注意这个单词本身是个复数，是吧？Binoculars，望远镜有两个，就跟我们这眼镜一样，两个镜片是吧？两个镜片啊，那。
+
+## 00:05:58–00:06:32
+
+有两个，就跟我们这眼镜一样，两个镜片儿啊，两个镜片儿啊，那 binoculars 有两个镜片儿。造个句子， Armed with my binoculars，五十五课咱们学了， somebody be armed with something。 We went to see a football game。啊，其实到新三当中，我们很快前几课就我又学到 armed with something， armed with a torch，啊， the weaker 怎么怎么样？好，那说 Armed with my binoculars， we went to see a football game。哎，装备着我这个 binoculars，我们去看了一个足球比赛。 Next one， the thing。
+
+## 00:06:28–00:07:02
+
+A football match. Next one. The things that he saw through his binoculars were top secrets.怎么样呢？来，直接来个定语从句。他通过他望远镜看到的那些事情是机密，top secrets啊。一个文件上面大概一个大章，top secrets啊，绝佳的，就是非呃非常重要的机密，是吧？下一句话说，Why do you carry your binoculars to a comedy show?说为什么你要
+
+## 00:06:58–00:07:32
+
+Carry your binoculars to a comedy show. 我说为什么你要带着你的这个望远镜去一个看这个喜剧呢？啊，comedy show，之前咱们八十九课学的 binoculars，再读一遍这个单词。哦，本课生词非常非常的少啊，学起来比较的轻松。习惯用法呢，一共就是有两个，咱们单词造句的时候记得格外关照一下这两个兄弟啊。然后呢，电影片段是咱们老习惯，知识点旁边找重复间隔的学习材料。那以上呢就是本期是。
+
+## 00:07:28–00:07:55
+
+重复间隔的学习材料。那以上呢就是本期视频的全部内容了。如果各位喜欢我们的课程呢，欢迎各位关注、订阅、一键三连，分享给那些需要的朋友，来帮助我们快速成长。See you next time.
+
