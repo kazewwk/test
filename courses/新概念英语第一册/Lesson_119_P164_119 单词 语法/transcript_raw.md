@@ -1,0 +1,184 @@
+# 119 单词 语法
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello, everyone. Welcome to Capsule Academy. This is Leo. Today, we're going to learn New Concept English Book One, Lesson One Hundred and Nineteen, Grammar and Words. That old habit. Enter formal course. Before we look at three questions. First, how to use the past perfect tense. We have seen a new tense. Before we learned the present perfect tense. Today, we look at the past perfect tense. Secondly, how to use after and before these two small words. Finally, how to understand she had.
+
+## 00:00:28–00:01:02
+
+小的单词，最后如何去理解 she happens 这样的一个小的口语表达？那带着这三个问题， hope you guys enjoy it. 好，那我们先说过去完成时啊。一提过去完成时，我们一定绕不开现在完成时，对吧？那我们先迅速的回顾一下现在完成时的基本结构，两个单词 have 再加 done，这个事儿就搞定了，对吧？这叫现在完成时。那如何把它
+
+## 00:00:58–00:01:32
+
+事儿就搞定了，对吧？这叫现在完成时。那如何把它过变成过去完成时呢？我给大家提一个思路，您回想一下。在讲过去进行时的时候，不可避免的我提到了现在进行时。现在进行时是 am is are 这三个单词再加上 doing。然后怎么变过去进行时呢？我们把 am is are 换成了 was were，于是 was were 加 doing 就叫过去进行时。在这里是完全相同的变法。所以呢，从结构上来说。
+
+## 00:01:28–00:02:02
+
+全相同的变法，所以呢，从结构上来说，have其实这个地方还有一个叫has，对吧？三单的情况，have has再去加上done的时候，它是现在完成时。这个结构表示两个用法。八十三课我们学过一个，八十九课我们学过一个。那如果我现在想把现在完成时变成过去完成时，其实就是把have和has这两个单词给它换成它们的过去式就可以了。于是就是在这里显示的叫had加上done，那它。
+
+## 00:01:58–00:02:32
+
+可以显示的叫had加上但，那它就叫做过去完成时。那我们想说学一个时态，除了要学习它的结构，那它的结构包含了肯定句、否定句、一般疑问句和特殊疑问句，对吧？除了结构以外，我们还一定要提到的一个东西叫什么呢？叫它的含义。好，那我们现在直接看一下它的含义。过去完成时强调过去某一个动作发生在另一个动作或者状态之前。我们在
+
+## 00:02:28–00:03:02
+
+在另一个动作或者状态之前，我们再读一遍，强调过去的某一个动作在另一个动作或状态之前。OK，我们看啊，看底下这个时间轴，这里是 now 是现在，这里是 did 是一般过去时，这里是 had 加 done 叫过去完成时，had done 这个时态其中之一的用法就是今天我们要讲到的，强调的是这个动作在另一个动作之。
+
+## 00:02:58–00:03:32
+
+这个动作在另一个动作之前，所以如果过去有两个动作，我在英文当中、汉语当中判断谁前谁后，你必须要把句子完全读懂才行，对吧？那在英文当中呢，某种程度上，你看到 had 加 but，你就能确定了，但这个动作应该是在另一个动作之前发生的啊，至少在这个用法之下，对吧？所以，我们给它简称为叫过去的过去，好吧？你看。
+
+## 00:03:28–00:04:02
+
+我们给它简称为叫过去的过去，好吧？你看 did 是过去，那过去的过去就是 had 加 dan， OK。好，其次呢，它的基本结构刚才我们提到了，肯定句当中肯定是 had 加 dan，那它的否定句怎么办呢？非常的简单，对吧？不管是呃 have has，对吧？还是 had，我们都是，尤其它组成完成时的时候啊，注意不是说见到它就后边加 not 啊，它组成完成时的时候，我们在 had 这个单词后边加上一个 not。
+
+## 00:03:58–00:04:32
+
+完成时的时候，我们在 had 这个单词后边加上一个 not，所以这是它的否定句。我们之前又给大家分享过一个规则，在英文当中几乎是有这样一个规则，就是你在哪个单词后边加 not，就把哪个单词提到句首去变一般疑问句。那在这里同理，您把 had 提到句首去，剩下的照抄，对吧？一般疑问句就出来了，就这么简单。OK，那这个时态最重要的其实不是它本身，是什么呢？是它经常与 after
+
+## 00:04:28–00:05:02
+
+不是它本身，是什么呢？是它经常与 after 与 before 这两个单词连用。这两个单词它的意思其实某种程度上，我相信各位是知道的。 after 叫在什么什么之后，那 before 叫在什么什么之前。那在这个地方呢，它起到了一个另一个词性的作用，我们管它叫连词，对吧？连接一个句子，比如说 after a ，逗号 b 等于 b after a 。我们看一下这两个公式啊，我在这给各位标了一下，前面这个动作叫 a ，后面这个动作叫 b 。那什么叫
+
+## 00:04:58–00:05:32
+
+这个动作叫A，后面这个动作叫B。那什么叫after A逗号B呢？就是在A这个事情结束了之后，after A对吧？在A结束了之后发生了B这个动作，OK没问题，非常舒服对吧？那什么叫B after A呢？注意啊，B after A不是B after再加A，是B after A，所以它其实是完全一样的意思，它只不过先说发生了B这个动作，然后呢after A在A。
+
+## 00:05:28–00:06:02
+
+了B这个动作，然后呢，after A在A这件事情之后发生的B，只不过它的语序稍微调整了一下。这样讲非常的抽象，各位容易懵。那我们直接上例子。好，我们先看第一句汉语啊，叫看完电影之后我就去看书了。这句汉语读完了之后，你一定能判断出来谁在A这个地方，谁在B这个地方。那我们假设这两个动作都发生在过去的话，对吧？那谁发生在A呢？看完。
+
+## 00:05:58–00:06:32
+
+作都发生在过去的话，对吧？那谁发生在 A 呢？看完电影之后，我去看书了。肯定是先看的电视，对吧？或者电影，然后呢，我们才去看的书。那我们先用 after A ,逗号 B。我们看一下，after A 是 I had seen the film。啊，那我们比如说这个电视就是电影吧，好吧？在我看完电影之后，after A , B 是什么呢？I read the book。我读了这本书。after A ,逗号 B。它等于 B after A。啊，我们看一下，是吧？我们给它拿过来。
+
+## 00:06:28–00:07:02
+
+它等于 B after A. Ah, we look at it, right? We take it over. Let's do another one. I read the book. I read the book. Exactly the same. Both are B, right? Then after A, I had seen the film. I had seen the film. These two sentences are exactly the same. I don't know if you guys understand them now, right? I think it's a little bit of a feeling. Secondly, well, these two sentences are completely in line with this formula, right? Ah, let's talk about it this way. Secondly, you guys should pay attention to a small point. After A, if we write it.
+
+## 00:06:58–00:07:32
+
+After A之后，如果我们把它书写出来，这儿一般来说习惯上可能要加一个小的逗号。而如果B这句话在前面，那After A这句话的前面您就不需要再加一个小的逗号了。这是英文的一个小习惯。但是呢，对于大部分情况来说，您可能根本就用不到，是吧？大多数人不会那么那么的严谨，是吧？你放心的去用就好了。好，接下来比如说我们再看，我把旧车卖了，然后买辆新的。你注意，你看啊。
+
+## 00:07:28–00:08:02
+
+卖了，然后买一辆新的。你注意，你看啊，我们为什么要学习今天这个语法？原因是过去两件事情，有的时候谁先发生，谁后发生是不重要的，但有的时候格外的重要。我们举一个例子，比如说在这里，他明明是先把旧车卖了，然后才买了一辆新车。那这和他先买了一辆新车，后来又买一辆旧车，首先事实上是完全不一样的，对吧？其次中间可。
+
+## 00:07:58–00:08:32
+
+说，首先事实上是完全不一样的，对吧？其次中间可能有很多复杂的事情，比如说在这儿如果还不好理解的话，我们举个例子啊，小孩儿经常说的一句话是他先骂我，我才去打他的。虽然这个合理性也不一定对，对吧？但是孩子尝试在告诉你的是，两个动作发生在过去，谁先谁后非常重要，至少在他看来，对吧？他的打人的合理性是因为他先骂了我，这是孩子吵架或者跟爸妈诉苦的时候经常说的一句话，对吧？你先骂了。
+
+## 00:08:28–00:09:02
+
+或者跟爸妈诉苦的时候经常说的一句话，对吧？你先骂了我，所以我才打了你。OK，所以 after a 逗号 b，所以还是那句话，我们要学新的语法，一个非常重要的原因是我们表达上有这个需求。当然了，一个次要的原因是我们考试也会考到，对吧？OK，当然如果你是学生啊，主要的原因可能就是考试能考到。OK，好，我把旧车卖了，然后买一辆新的，所以先卖再买，对吧？好，我们 after a 逗号 b， after I has sold the old car， I bought a new one。
+
+## 00:08:58–00:09:32
+
+After I had sold the old car, I bought a new one. 哎，在我卖了旧车之后，我买了一辆新车。那你再给它反过来，b after a就很正常了，对吧？就很舒服了。I bought a new one after I had sold the old car. Okay. 好，那然后注意还是这个逗号的问题，对吧？这就我们提一点就可以了。再来一个例子，下车之后，他向出租车司机告别了。下车之后告别了，先下车再告别。After a, dot b, very comfortable. After he.
+
+## 00:09:28–00:10:02
+
+别 After A逗号B非常舒服 After he had got out of the car，在他下车之后，A这个动作先发生，然后又发生了另一个动作，叫 He said goodbye to the taxi driver. 他对出租车司机说了拜拜，对吧？好，接下来，刚才我们说到的叫 After A逗号B，对吧？过去完成时，刚才我们也提到了，它跟 After跟 Before都能连用，那我们就再说一下，它跟 Before连用的时候长成什么样子呢？叫 Before B逗号A或
+
+## 00:09:58–00:10:32
+
+长成什么样子呢？叫 before b，逗号 a，或者是 a before b，听上去又懵了是吧？不用着急，我们先看，过去有两个动作 a 与 b，那 before 叫在什么什么之前，所以 before b 我们就可以翻译成叫在 b 这件事情之前 a 发生了 a，很舒服对吧？和我们认知上也是保持一致的 a before b 是什么意思呢？就先发生了 a 这件事情，但是它是发生在 b 之前的，这样讲依旧抽象，我们还是。
+
+## 00:10:28–00:11:02
+
+b之前的这样讲依旧抽象，我们还是直接上例子来了啊。比如说 before b 好 they at the dinner b 就是这里用一般过去式，好吧？然后这是 b 对吧？我们确定了。然后 before b ，逗号 a a 这句话就是这里叫 they had washed their hands，叫做在他们吃晚饭之前，之前哎，他们已经洗好了手，这个很重要对吧？你。
+
+## 00:10:58–00:11:32
+
+他们已经洗好了手，这个很重要，对吧？你吃完晚饭再去洗手，这个感觉又不一样了，对不对？好，饭前便后要洗手，对吧？They had washed their hands before they ate dinner. 好，注意啊，They had washed their hands before they ate the dinner. 各位看到了吧？B啊还是B这句话，然后before A对吧？B先发生啊，后发生了啊。OK，Sorry，这个地方有一个小的问题啊，说错了，应该这里是A。
+
+## 00:11:28–00:12:02
+
+这个地方有一个小的问题啊，说错了，应该这里是A啊，然后后边是B啊。说先发生了A这个动作，叫他们先洗了手，在什么之前呢？在他们吃晚饭之前，对吧？OK，再来再来个例句啊。说Before you knew it, I had already run far away.好，我们先看时态，先确定时态一确定，它就是它，它就是它，对吧？那叫做在你知道之前，我已经跑远了。非常好，在你知道之前。
+
+## 00:11:58–00:12:32
+
+非常好，在你知道之前我已经跑远了。我先跑远了，你才知道，对吧？所以先跑远了，用的是 had 加单啊。OK，好，那你同理可以把它变成 A before B，对吧？叫 I had already run far away before he knew it. OK，注意一下时态就可以了啊。我们再来一个叫 Before we realized it, it had been too late. OK, very good. 那我们先看这儿，realize，不管它，一看到一般过去时就是 B，对吧？好，看到这里就是 A，对吧？叫做
+
+## 00:12:28–00:13:02
+
+时就是B对吧？好，看到这里就是A对吧？叫做在我们意识到这件事情之前，我们意识到是在B这个点发生的，在它之前已经太晚了，对吧？已经很晚了。OK，玩一个好。刚才本课非常重要的语法我们讲完了，接下来呢进入文章和偶数课练习的时候，我们依旧能见得到。接下来呢，我们先处理一下本课的单词啊，各位张嘴跟我读，我们一起去造一点句子。第一故事。
+
+## 00:12:58–00:13:32
+
+读，我们一起去造一点句子。第一，故事别忘了浊化，跟我一起读 story story。 OK，补一个小短语叫 tell a story，叫讲一个故事。新二我们也会见到这个习惯用法。好，再来，那接下来我造句子，各位张嘴跟我读就好了啊。来，My father told us a story last night。我选择用了一般过去式。再来，My father tell us a story every night。每晚都给我们讲一般现在时。好，再来。
+
+## 00:13:28–00:14:02
+
+每晚都给我们讲一般现在时。好，再来，Their father is telling them a story now。啊，他们的父亲正在给他们讲一个故事，现在进行时。三个肯定句造出来了，各位，我让各位再造三句话就不难了，哪怕是十三句话，可能也不费劲了。为什么呢？因为这三个肯定句背后都有至少一个一般疑问句，一个否定句和 n 个特殊疑问句，对吧？这都算上十个句子，很容易。
+
+## 00:13:58–00:14:32
+
+个特殊疑问句，对吧？这都算上十个句子，很容易就出来了，好吧？OK，不多说。接下来我们看一个生活当中、英文当中经常用到很有意思的小短语，叫“shit happens”。那“shit”指的是我们大号排泄物，是吧？“happens”指的是发生。那什么叫便便会发生？它其实指的意思就是什么呢？人生啊，总会有一些不如意的事情，经常会有一些破事儿啊，难很难一帆风顺，总有一。
+
+## 00:14:28–00:15:02
+
+些破事儿啊，难很难一帆风顺，总有一些乱七八糟的事情出来，是吧？屋漏偏偏啊，这个叫什么？屋漏偏逢连日雨，是吧？大概就是这样一种感觉，就祸啊，这个福福不双至，祸不单行，是吧？OK，就是这样一种感觉。所以 shit happens，就是当你遇到一些不好的事情的时候啊，安慰自己，唉，就是人生总是会踩到狗屎的，是吧？总会有这样一种感觉。我们接下来看一下这个电影片段，呃。
+
+## 00:14:58–00:15:32
+
+I'll tell you one thing. You look seriously happy here, man. Oh, that's it. My life is over. Stu, it's okay. Look, shit happens. Come on, Louis is not going to know anything about this.啊，然后你看他说 shit happens，他说没事儿，come on，没事儿是吧？这个谁还没会谁还没点事儿了，这辈子对吧？大概就是这样一种感觉。Shit happens. Okay, 我举个例子啊，比如说您走在马路上，然后突然间哎绊了一跤，摔地上了，哎 shit happens。
+
+## 00:15:28–00:16:02
+
+突然间，哎，绊了一跤，摔地上了，哎，shit happens，OK，好，或者开车剐蹭了一下，shit happens，这事儿就过去了啊。玩一个，下一个单词，跟我们一起读一下，叫做thieves，thieves，这是它的单数，复数呢，这是我们前二十课学的，对吧？一个语法就是名词变复数啊，f变成ves了，来跟我读一下thieves，OK，玩一个，那我们造句，来说That thief was looking at the picture in the living room when someone knocked at the door。没有生词，我就不。
+
+## 00:15:58–00:16:32
+
+Room. When someone knocked at the door,没有生词，我就不解释了，只是提醒一下，这是我们一百一十七课学的两个关键语法。OK，接下来造句说This thief is taller than that one.说这个比那个高。一百零八课的语法。OK，next one, like enter, enter进入，对不对？好，我们造句说When the woman was entering the room, she dropped everything on the floor.说当这个女人进入这个房间的时候，她把手上所有的东西。
+
+## 00:16:28–00:17:02
+
+这个女人进入这个房间的时候，她把手上所有的东西都掉在地板上了。一百一十七克，咱们刚学的，对吧？Next one,说She entered the room two hours ago.非常简单，选择用了一个一般过去时肯定句给各位了。接下来这些事情应该是你手到擒来的了。加上作业，瞬间完成，对吧？OK，您顺手一写就可以了。不要忘了动词换回原形。Next one，下一个单词跟我一起读一下，叫做dark，dark啊，就昏暗的，昏暗的，对吧？比如。
+
+## 00:16:58–00:17:32
+
+Dark, ah,就昏暗的，昏暗的，对吧？比如说, it's dark outside. Be careful, ah,说外面很黑，小心一点。OK, next one,说this room is darker than that one,说这个房间比那个房间还昏暗。OK,一百零八课学的，对吧？Next one,说this is the darkest night I've ever seen,说今晚啊，是最黑的一天晚上，啊，月黑风高是最黑的一晚我所见过的。OK,一百一十一课应该是。
+
+## 00:17:28–00:18:02
+
+最黑的一晚，我所见过的。Okay, 111克应该是咱们学的。Okay,好，next one，再来说，说It's dark enough to see the stars in the sky。你看每个单词我们都认得，并且这个结构是咱们在一百零三课、一百零四课学的。Enough和to那一刻，对吧？Okay, next one，下一个单词，张嘴跟我读，来，torch，torch。好，torch可以指我们这个家用电器，手电筒啊，名词，造句子呗。来，Can you?
+
+## 00:17:58–00:18:32
+
+手电筒啊，名词造句子呗。来，Can you give me a torch, please？你看我在这儿一定是找动词，名词想造句一定是找动词。各位先有这么一个概念，好吧？Next one，说We must buy a new torch tomorrow。我们必须明天要买一个新的手电筒了。Next one，I have had this torch for ten years。说我已经拥有这个手电筒啊十年了。典型的现在完成时第二个用法，八十九。
+
+## 00:18:28–00:19:02
+
+典型的现在完成时第二个用法，八十九课咱学的，您忘了翻回去再看一遍那个语法，好吧？Next one，跟我一起读来，voice，voice啊，嗓音声音对吧？好，我们拿它先来一个小短语叫 hear a voice啊，听到某个人说话了。我们造个句子来，叫 Did you hear a voice？啊，你听到有人说话吗？就 Did you hear a voice？OK，very good。再来，Can you hear a voice？啊，你能听到有人说话吗？这两句话的区别各。
+
+## 00:18:58–00:19:32
+
+Hear a voice?哎，你能听到有人说话吗？这两句话的区别，各位不妨给自己简单讲一下，就从did和can这两个单词入手就可以了，好吧？Next one.接下来我们看一个小的电影片段，当中出现了，It's good to hear your voice.哎，听到你的声音，我非常的开心，感觉非常的好。叫It's good to hear your voice. Okay. Operator, tank. God damn, it's good to hear your voice, sir. Need an exit.
+
+## 00:19:28–00:20:02
+
+Tank, God damn, it's good to hear your voice, sir. Need an exit. Got one ready. Subway station. Staten Island. Very good. Ah, it's good to hear your voice. Uh,这怎么什么时候用呢？非常简单。比如说，你想一下，你什么时候听到别人的声音，你会特别开心。比如说，你老朋友给你打了个电话，你就可以说，Oh my God, it's good to hear your voice. Haven't seen you for quite a long time. Haven't heard from you for quite a long time. Okay. Very good. 接下来下一个单词，注意跟我一起读，叫 parrot，鹦鹉，parrot。
+
+## 00:19:58–00:20:32
+
+注意，跟我一起读，叫 parrot，鹦鹉，parrot，OK，读说 this parrot is too old to fly，太老了，飞不起来了。一百零三课啊，next one说 everybody likes this parrot，这地方为什么加 s 呢？各位不妨留言互相说一下啊，这是我们之前学过的一个语法。next one说 my son wants to buy a parrot，啊，应该是咱们一百零五课学的，说我儿子想怎么怎么样，want to do something，对吧？哎，这样一个小的结构。
+
+## 00:20:28–00:21:02
+
+怎么怎么样？Want to do something,对吧？哎，这样一个小的结构。Recap,本期视频还很重要。我们不仅简单看了一下head加done的结构，更重要的是学会了这两个公式，对吧？After a逗号b和before b逗号a以及后面他们两个小的变体啊，这个在接下来的文章和偶数课当中都是非常重要的东西，也是我们新二也会专门花时间学习的东西，好吧？OK，然后呢，我们补了两个小的短语，一个。
+
+## 00:20:58–00:21:32
+
+好吧，OK。然后呢，我们补了两个小的短语，一个叫 shit happens，对吧？另外一个叫 hear a voice，玩一个。接下来呢，看一下家庭作业。首先单词造句老习惯，红皮书初级，各位试着去查一下过去完成时。有能力的同学啊，您把左边讲解看完，右面做练习，然后对答案啊。不懂的问题您直接留言就好了。Next one，说请给自己讲解一遍今天的核心知识点。那如果大家喜欢我们的课程呢，欢迎大家。
+
+## 00:21:28–00:22:02
+
+核心知识点。那如果大家喜欢我们的课程呢？欢迎大家关注、订阅、一键三连、分享给那些需要的朋友，来帮助我们快速成长。最后，我们再来看一句名人名言。The great thing about social media was how it gave a voice to voiceless people. See you next time.
+
+## 00:21:58–00:22:02
+
+
+
