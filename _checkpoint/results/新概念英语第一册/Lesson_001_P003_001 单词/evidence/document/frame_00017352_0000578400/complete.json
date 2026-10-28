@@ -1,0 +1,193 @@
+{
+  "artifacts": {
+    "1793147190_6969.md": "5410a43c683359c0beef1b1301265daeb9fd921bed62d8e5932d94abfd1efb69",
+    "1793147190_6969_res.json": "aac3255cbcaa938d392e94831f6de737df2366beaf9e873c56183cf1abc43211",
+    "imgs/img_in_image_box_1188_294_1755_1079.jpg": "3ea0d480ee6d02fd60cd11cf6935d6f65b16eb776973e044d469c925e4869161",
+    "imgs/img_in_image_box_71_69_476_472.jpg": "273b5e806e00457814afb62bd7de7d0d73770af9859b5ce3f83a851b13064794",
+    "region_repairs.md": "bc4a6cf8134d261ae39a79aa96434bd2242ba324d50bec000cda7124e2d9516e",
+    "repairs/region_001/1793147190_6574.md": "5acb7efa8ac5b65dad2fe9e8132b5f6d04d059b38fef010b1630a238a1fa8fb0",
+    "repairs/region_001/1793147190_6574_res.json": "a9a60b4f6d1db58235929cb37ed10124e745bf20d02b3938c31f8155fd67c1ab",
+    "repairs/region_001/source.png": "40bed633d9358832b1649f3883e1d78a830a42a5f3d06364e7258c1f01ebf5cb",
+    "repairs/region_002/1793147191_3814.md": "0e82a3aa61f76b5b8954c323b5a275ba22d082be875264e2e8f9f4dbad78f5c9",
+    "repairs/region_002/1793147191_3814_res.json": "9da4cd81a228029786c075568969d4859ad66f5ca7a55b426fe023114b15b538",
+    "repairs/region_002/source.png": "78bc469180270fbcb1faa8a5ce8f430aa970194e6786960a6d1c12d07644c5b0"
+  },
+  "input_fingerprint": "e78556508f9de965ef85187b3c4cf6fa4dd9114d5056400cff366e3ada70e279",
+  "image_sha256": "d679376d2aac74d020236fa581befbf65a253424e89bbf05a1e1a71c05eb211f",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 2.7092276880030113,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "胶学 billibil",
+      "block_bbox": [
+        1649,
+        31,
+        1890,
+        101
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1649.0,
+          31.0
+        ],
+        [
+          1890.0,
+          31.0
+        ],
+        [
+          1890.0,
+          101.0
+        ],
+        [
+          1649.0,
+          101.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        71,
+        69,
+        476,
+        472
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          71.0,
+          69.0
+        ],
+        [
+          476.0,
+          69.0
+        ],
+        [
+          476.0,
+          472.0
+        ],
+        [
+          71.0,
+          472.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "/ 'pa:dn/\npardon",
+      "block_bbox": [
+        520,
+        73,
+        779,
+        214
+      ],
+      "block_id": 2,
+      "block_order": 1,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          520.0,
+          73.0
+        ],
+        [
+          779.0,
+          73.0
+        ],
+        [
+          779.0,
+          214.0
+        ],
+        [
+          520.0,
+          214.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1188,
+        294,
+        1755,
+        1079
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1188.0,
+          294.0
+        ],
+        [
+          1755.0,
+          294.0
+        ],
+        [
+          1755.0,
+          1079.0
+        ],
+        [
+          1188.0,
+          1079.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "bilibili",
+      "block_bbox": [
+        1726,
+        23,
+        1899,
+        112
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "/ 'p a : d n /",
+      "block_bbox": [
+        519,
+        63,
+        779,
+        127
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1726,
+        23,
+        1899,
+        112
+      ],
+      "ppocr_candidate": "bilibil",
+      "recovered_text": "bilibili",
+      "source_crop": "repairs/region_001/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        519,
+        63,
+        779,
+        127
+      ],
+      "ppocr_candidate": "/'pα:dn/",
+      "recovered_text": "/ 'p a : d n /",
+      "source_crop": "repairs/region_002/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}
