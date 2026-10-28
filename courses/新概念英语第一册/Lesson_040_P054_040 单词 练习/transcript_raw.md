@@ -1,0 +1,68 @@
+# 040 单词 练习
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn New Concept English Book One, Lesson Forty, Practices and Words.老习惯呢，进入正式课程之前，我们先看三个问题：第一，如何表达展示某人某物；第二，如何表达寄送某人某物；第三，如何表达带给某人某物。那带着这三个问题，Hope you're gonna enjoy it.好，那我们先看第一个单词。
+
+## 00:00:28–00:01:02
+
+好，那我们先看第一个单词，跟我先一起读一下。Show，双元音 o 和一个辅音 sh 拼起来，show 叫做展示给某人看。比如说，我们可以说叫做 show me your passport，把你的护照给我看一下。比如说在机场的时候，可能就会听到这样的一个句型，叫做 show me your passport。注意啊，你把 show 换成 give，这个句型是不是就特别熟悉了？叫 give somebody something。
+
+## 00:00:58–00:01:32
+
+不是就特别熟悉了，叫 give somebody something。那现在变变成了把 give 换成 show 了嘛，叫做 show somebody something，展示给某人某物。比如说，我们可以说叫做 show me your ticket，给我看一下，给我展示一下你的票，门票，对吧？ Show me your ticket。于是我们再把它这地方抽象总结一下，叫做 show somebody something，叫做展示给某人某物，或者是 show something to somebody。各位能看到它跟 give 几乎是一模一样的，对吧？
+
+## 00:01:28–00:02:02
+
+Somebody,各位能看到它跟 give 几乎是一模一样的，对吧？含义相同，有两个不同的结构可以都表达这个含义。比如说，What are you going to do with your passport? 你怎么处理你的护照？你打算怎么处理你的护照？然后你说，I'm going to show it to Leo. 我打算把它给 Leo 看一下。 Show something to somebody, OK? 叫展示。接下来 send 指的是发送或者说寄送。OK? 那它的用法跟
+
+## 00:01:58–00:02:32
+
+发送或者说寄送，OK，那它的用法跟刚才是一样的，叫 send me a postcard。那 postcard 实际上是我们新二才会学的单词，但也并不难。post 表邮政，card 表卡片，邮政卡片、明信片，OK。那 send me a postcard 就给我寄了一张明信片，也可以说 send me a letter，给我邮寄了一张信啊，OK。那它的用法跟刚才一样，send somebody something 或 send something to somebody，给某人邮寄了。
+
+## 00:02:28–00:03:02
+
+Thing or send something to somebody, give某人邮寄了某物或者发送了某物。那我们继续造句，说跟我读。What are you going to do with the postcard? I'm going to send it to Lyle. 注意这儿有一个小的连读，不是读成 send it，读的是 send it, send it, send it to Lyle, send it to Lyle. Okay, 我打算把它邮寄给 Lyle. Continue, take 叫做拿携带啊。
+
+## 00:02:58–00:03:32
+
+Continue take叫做拿携带啊，OK，那take me some clothes叫做给我拿一些衣服。It's cold outside，外边很冷。OK，那你也可以说叫take me some coffee please。比如说您在办公室让别人帮您拿点咖啡，您说take me some coffee please啊，帮我拿一点咖啡。各位啊，在用这些句子的时候会显得不是那么的礼貌，所以呢，我们要学四十三课。Can you take me some coffee？对吧？所以呢。
+
+## 00:03:28–00:04:02
+
+四十三克. Can you take me some coffee, 对吧？所以呢，我们现在可以加上 please. Can you take me some coffee, please? Okay, there you go. 接下来一样，同理，take somebody something 等于 take something to somebody，啊，完全一一码事儿。那继续说，What are you going to do with the coffee? 啊，这杯咖啡你打算怎么处理啊？说 I'm going to take it to Lyle. Be going to do 结合了 take something to somebody，我打算要把它带给 Lyle，拿给 Lyle。
+
+## 00:03:58–00:04:32
+
+我打算要把它带给 Lil，拿给 Lil。 Okay，接下来我们做一些小的练习。练习当中又有一个很小的语法点，我们接着往下看啊。首先， put on 叫穿戴的意思，对吧？比如说戴上帽子，那我们就说 Are you going to put on your hat? Be going to do，你打算要戴帽子吗？注意，这是 put on your hat。早在二十九课，我们就学过这个短语叫 put on your hat。啊，二十九课、三十课。
+
+## 00:04:28–00:05:02
+
+叫 put on your hat啊，二十九和三十课。今天我们可以把它做一个小的变体。Yes, I'm going to put it on.有一个小的连读 put it on. Okay, 注意它变成了什么？Put on your hat是一个名词。你当把它变成 it 这样的代词的时候，可以把它放中间去，叫做 put it on, put it on 和 put on your hat 是一个意思。Continue, say Are you going to take off your hat?你打算要
+
+## 00:04:58–00:05:32
+
+说 Are you going to take off your hat? 你打算要脱了吗？ No, I'm not going to take it off. 我不打算把它脱下来，对吧？不不打算把它摘下来。 Okay, take it off. 还是注意位置，本来是 your hat 变成 it 的时候可以放到中间去。 Take it off. 接下来我速度会稍微快一点，但思路是完全一样的。来了， Are you going to take off your shoes?
+
+## 00:05:28–00:06:02
+
+Are you going to take off your shoes? Yes, I'm going to take them off. 放中间了。继续 turn on 打开。 Are you going to turn on the light? 你要开灯吗？ Yes, I'm going to turn it on. Are you going to turn off the light? No, I'm not going to turn it off. Okay, 放中间了。 Continue. Are you going to
+
+## 00:05:58–00:06:32
+
+放中间了. Continue. Are you going to turn off the stereo? 哎，音响对吧？车载音响。你打算把它关掉吗？Yes, I'm going to turn it off. 放中间了. It. Are you going to turn on the radio? Stereo. 张嘴跟我一起读啊。No, I'm not going to turn it on. Okay. Continue. Are you going to put on your suit? Yes, I'm going to put it on.
+
+## 00:06:28–00:07:02
+
+Yes, I'm going to put it on. 继续跟着读。好，来一个。那我们复习一下。其实 show, send, take 跟 give 一样，对吧？ Give something to somebody. 这三个单词的用法跟 give 一样，只是含义不同。各位要记住就 OK 了。家庭作业，绿皮书四十课，各位可以去写了。给自己讲解一遍今天的核心知识点。实际上有两个，一个是跟 give 一样。
+
+## 00:06:58–00:07:32
+
+今天的核心知识点实际上有两个，一个是跟 give 一样的那三个小单词，另一个很小，就是 turn on the stereo 可以变成 turn it on 这样的一个小点啊。各位如果认真的跟着我刚才张嘴去做了那些练习，这个知识点您应该已经记起来了。好，如果大家喜欢我们的课程呢，欢迎大家关注、订阅、一键三连支持啊，并分享给身边需要的朋友。最后我们再来看一句名人名言：Friends show their love in times of trouble, not in.
+
+## 00:07:28–00:07:47
+
+Their love in times of trouble, not in happiness. See you next time.
+
