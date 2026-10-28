@@ -1,0 +1,74 @@
+{
+  "artifacts": {
+    "1793150404_1327.md": "c3d545d0cff16bff226bef7ea3d8a7c755110c35f807070c46570cb634b4b118",
+    "1793150404_1327_res.json": "36bec8ffc36db606d1304db1bd72191649c1922d659daf4e3b70386850864e9b",
+    "imgs/img_in_image_box_0_0_1920_1059.jpg": "efa5ef167f9061cdf5402d047d4aac1ed0c4f759dbc01ef86bf0903f7605ba3a",
+    "region_repairs.md": "18d02026b1ed1f9b885fe77d9a60030668650004ba1b47d0489bf0f534b7a45c",
+    "repairs/region_000/1793150405_6373.md": "2284c2ae90eb009173a9ce42971d01526b843e1916e9318526047745c710b768",
+    "repairs/region_000/1793150405_6373_res.json": "96e6ad4158ef7e52be0a3d6b4cbb88ed84b0872a3e127cb90a7ec17f6ba5bf15",
+    "repairs/region_000/source.png": "5099c62ff750ed086ff90b90cdcf438b98dd1dfc40b3907e5f8a872ebdbad3d7"
+  },
+  "input_fingerprint": "e4b25cf339858d30167d586fed43de9400ef37cc01860ab0a54ac4543bbada32",
+  "image_sha256": "f850cb74d633cb9e90542f42b83888016ca54436f23a09be7c40c66384baf23b",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 3.6007166460003646,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "image",
+      "block_content": "胶孚 Bili Bill\nWOW, THANK YOU SO MUCH!",
+      "block_bbox": [
+        0,
+        0,
+        1920,
+        1059
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          0.0,
+          -21.0
+        ],
+        [
+          1920.0,
+          -21.0
+        ],
+        [
+          1920.0,
+          1059.0
+        ],
+        [
+          0.0,
+          1059.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "胶学 biling",
+      "block_bbox": [
+        1638,
+        23,
+        1902,
+        112
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1638,
+        23,
+        1902,
+        112
+      ],
+      "ppocr_candidate": "胶学i山",
+      "recovered_text": "胶学 biling",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

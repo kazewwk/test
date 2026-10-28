@@ -1,0 +1,105 @@
+{
+  "artifacts": {
+    "1793150400_9924.md": "5b7d1273b2b7e10d1aa4c4b27bf266f425219d3604d3f86211cf5b7f8e11bf55",
+    "1793150400_9924_res.json": "2165f3de7ec428c8a18859fc7cba9b6feca5afe86708ddcb121d0dba42f08222",
+    "imgs/img_in_image_box_2_1_1920_840.jpg": "a99c636ff3a14c8f759987296021c4a9d36dedb63570d4311126090622adafb2",
+    "region_repairs.md": "96d5d45014c30470f052e737a43fb1cb2b35b559ad48c46af0e4d97952bc8dc2",
+    "repairs/region_000/1793150400_5852.md": "1c1e1fe6cb66c4090e4c848b10c3083593bdd7d0944167f052136ff51fcacc37",
+    "repairs/region_000/1793150400_5852_res.json": "7da17b8244cda42e142f9b953bdb9534241b26b59170d47d982f3b9e13d65060",
+    "repairs/region_000/source.png": "a637d30e15c255a26f6bf439c8be1e5b3efcc6c02807ef251567eb9fea23f53c"
+  },
+  "input_fingerprint": "9eda3fa32973fe1c99d7baf27ef1b10e8c5e99f65e7dee692643f9252ca5def0",
+  "image_sha256": "a242bd85398dc3807bf03d88bbac94f134b886d7d886f7b611f41db0733fa718",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 3.8300149330025306,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "image",
+      "block_content": "胶学 bilili",
+      "block_bbox": [
+        2,
+        1,
+        1920,
+        840
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          2.0,
+          1.0
+        ],
+        [
+          1922.0,
+          1.0
+        ],
+        [
+          1922.0,
+          840.0
+        ],
+        [
+          2.0,
+          840.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "AND IT'S DUE NEXT WEEK?\nOH YEAH?",
+      "block_bbox": [
+        540,
+        883,
+        1382,
+        1038
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          540.0,
+          883.0
+        ],
+        [
+          1382.0,
+          883.0
+        ],
+        [
+          1382.0,
+          1038.0
+        ],
+        [
+          540.0,
+          1038.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1636,
+        19,
+        1902,
+        113
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1636,
+        19,
+        1902,
+        113
+      ],
+      "ppocr_candidate": "胶学山山",
+      "recovered_text": "胶学 bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

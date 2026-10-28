@@ -1,0 +1,73 @@
+{
+  "artifacts": {
+    "1793150409_8819.md": "77fff8ee1ba85b943fab6161bddf126a8e3aa2b73e47b17ec1f71b968e52179f",
+    "1793150409_8819_res.json": "0b07c4a896cfbd6ba8a0c477ae9a6aeb23efb1406a8747fb4afd32ef5bbc1142",
+    "region_repairs.md": "56f64595006710233d609335773f5e8543b788b1461701f259963d00bd53af7f",
+    "repairs/region_000/1793150409_3717.md": "1c1e1fe6cb66c4090e4c848b10c3083593bdd7d0944167f052136ff51fcacc37",
+    "repairs/region_000/1793150409_3717_res.json": "d886b27485daf914e5fff4c76221b77b1ae58713413b5339fee1c18ebbe07e52",
+    "repairs/region_000/source.png": "d55a7ccfbb0d290c4ed965ad2603547ee2a43609e8c69aa69c7eb2f6ab89d33e"
+  },
+  "input_fingerprint": "d18a58e776570c57a67d64b673300bc5b50751b40623e8ec5545a9599f6ceaaf",
+  "image_sha256": "b13639f193c0b8e54e65390a5e08d9d58e9719cb4e749c547c8144189ae2366b",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 1.193443460000708,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "text",
+      "block_content": "THANK YOU SO MUCH\nI APPRECIATE THAT.",
+      "block_bbox": [
+        627,
+        887,
+        1302,
+        1030
+      ],
+      "block_id": 0,
+      "block_order": 1,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          627.0,
+          887.0
+        ],
+        [
+          1302.0,
+          887.0
+        ],
+        [
+          1302.0,
+          1030.0
+        ],
+        [
+          627.0,
+          1030.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1635,
+        19,
+        1903,
+        113
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1635,
+        19,
+        1903,
+        113
+      ],
+      "ppocr_candidate": "胶学",
+      "recovered_text": "胶学 bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

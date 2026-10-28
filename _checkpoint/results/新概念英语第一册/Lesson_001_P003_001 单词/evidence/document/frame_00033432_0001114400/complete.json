@@ -1,0 +1,130 @@
+{
+  "artifacts": {
+    "1793150426_2708.md": "290ea78ad9d3a8fd69463c6f488c33d2ef934b0b9a40188fa4f644b1f043a7f6",
+    "1793150426_2708_res.json": "f5f6c21692f3b2cd8851c7294d9cdc596b2988a6807f9cc4de75da2590639c39",
+    "imgs/img_in_image_box_0_918_182_1079.jpg": "b7483cedd34729ac2c05f7be9cc773d859ddab5bc1ac927b0791322d6ebc75a9",
+    "region_repairs.md": "e349a6a5b8be8cdae54e2f31f2c86f2c9192b527b2072cbc2d69998e9dd1c007",
+    "repairs/region_000/1793150427_8788.md": "5acb7efa8ac5b65dad2fe9e8132b5f6d04d059b38fef010b1630a238a1fa8fb0",
+    "repairs/region_000/1793150427_8788_res.json": "3cf4948291e2e021969f31fc944809fbf9322b17d87ef8a474a1dc263e7d1c60",
+    "repairs/region_000/source.png": "6dbf1eb7750a4140355617e080703ecdd921f722fca7a8805d619ad0ee407e1a",
+    "repairs/region_001/1793150427_5844.md": "6d4da24d171025c5cc32726c7496a7387a2c9a9cd3177c8a153cbdac5b33d5bb",
+    "repairs/region_001/1793150427_5844_res.json": "2a669acbeded9c72c00a993eb4ec58a203edde3e5c1f4f004599562d553165fb",
+    "repairs/region_001/source.png": "14a958057a3799cf0436ee9827dae1bffe42d7808e4309affbc34e8769de6397"
+  },
+  "input_fingerprint": "5654a4348ee67bfc2fd5fc70bd32af8ca333a71cb2c50898a488cce786a87e14",
+  "image_sha256": "05218c441df4111906c246a3137ecd5ce93b63e9e485ba4b36cb6cf786972f48",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 2.311275033000129,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "image",
+      "block_content": "ㅇ",
+      "block_bbox": [
+        0,
+        918,
+        182,
+        1079
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          0.0,
+          918.0
+        ],
+        [
+          182.0,
+          918.0
+        ],
+        [
+          182.0,
+          1079.0
+        ],
+        [
+          0.0,
+          1079.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "I'VE WATCHED SKYSCRAPER, JUMANJI, RAMPAGE AND ALL OF THEM.",
+      "block_bbox": [
+        352,
+        886,
+        1578,
+        1033
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          352.0,
+          886.0
+        ],
+        [
+          1578.0,
+          886.0
+        ],
+        [
+          1578.0,
+          1033.0
+        ],
+        [
+          352.0,
+          1033.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "bilibili",
+      "block_bbox": [
+        1730,
+        21,
+        1901,
+        111
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "胶学",
+      "block_bbox": [
+        1643,
+        39,
+        1744,
+        105
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1730,
+        21,
+        1901,
+        111
+      ],
+      "ppocr_candidate": "bilb山",
+      "recovered_text": "bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        1643,
+        39,
+        1744,
+        105
+      ],
+      "ppocr_candidate": "胶学",
+      "recovered_text": "胶学",
+      "source_crop": "repairs/region_001/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

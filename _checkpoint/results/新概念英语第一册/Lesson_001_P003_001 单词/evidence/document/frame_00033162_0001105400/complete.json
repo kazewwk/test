@@ -1,0 +1,123 @@
+{
+  "artifacts": {
+    "1793150405_2290.md": "8c83f72b85de4c3adfa71263df0a123dd91fd4caed9d98c3fdbe0f164df621e6",
+    "1793150405_2290_res.json": "de402f1062152819ba3e6da7ebf0608a28d3a55e1354610fe4666f3e8b8fc0fc",
+    "region_repairs.md": "98926583db0d58301e77e2b5f993f68014b0015aeb25d6747756a2550e6bd3aa",
+    "repairs/region_000/1793150406_8892.md": "5acb7efa8ac5b65dad2fe9e8132b5f6d04d059b38fef010b1630a238a1fa8fb0",
+    "repairs/region_000/1793150406_8892_res.json": "066c51cd4291dc3fd07ecc3e177d8e00cb45def1007ec26c6129270be2023012",
+    "repairs/region_000/source.png": "3efaf088a148f038a2dea9beef1d86a952a79e90e104d1f5d93b2a78c7f9d9d9",
+    "repairs/region_001/1793150406_6561.md": "6d4da24d171025c5cc32726c7496a7387a2c9a9cd3177c8a153cbdac5b33d5bb",
+    "repairs/region_001/1793150406_6561_res.json": "3114e0f1b3ab155e0d4fc19771e26fdd66f722286b460e186ded835d2587af4e",
+    "repairs/region_001/source.png": "d3c8bf418c0ae14e4582dc1a7e3c12fa72a713e626412dfdccd8663561cc5cbd",
+    "repairs/region_002/1793150407_7029.md": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+    "repairs/region_002/1793150407_7029_res.json": "d21fdb34d407aafb4ab6f8ce12418978680b28971dd3abe33e144d03cde13c92",
+    "repairs/region_002/source.png": "147ce4d88e82547b22a6db2cb57095ddff626c890828e742f9fd6411f124c174"
+  },
+  "input_fingerprint": "7656fd333c0ce128fcd31c9172185d1045e7b900c9c97579e1a8de56b2cfdcf1",
+  "image_sha256": "ede3c461161774d65b3bb729816096a2929eba8be354b8bc1498222185775d62",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 2.118685330999142,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "paragraph_title",
+      "block_content": "I LOVE ALL YOUR MOVIES.",
+      "block_bbox": [
+        550,
+        887,
+        1366,
+        961
+      ],
+      "block_id": 0,
+      "block_order": 1,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          550.0,
+          887.0
+        ],
+        [
+          1366.0,
+          887.0
+        ],
+        [
+          1366.0,
+          961.0
+        ],
+        [
+          550.0,
+          961.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "bilibili",
+      "block_bbox": [
+        1726,
+        21,
+        1901,
+        111
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "胶学",
+      "block_bbox": [
+        1639,
+        29,
+        1773,
+        109
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "3",
+      "block_bbox": [
+        945,
+        282,
+        1036,
+        370
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1726,
+        21,
+        1901,
+        111
+      ],
+      "ppocr_candidate": "bilibi",
+      "recovered_text": "bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        1639,
+        29,
+        1773,
+        109
+      ],
+      "ppocr_candidate": "胶学",
+      "recovered_text": "胶学",
+      "source_crop": "repairs/region_001/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        945,
+        282,
+        1036,
+        370
+      ],
+      "ppocr_candidate": "学",
+      "recovered_text": "3",
+      "source_crop": "repairs/region_002/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

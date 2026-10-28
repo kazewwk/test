@@ -1,0 +1,73 @@
+{
+  "artifacts": {
+    "1793150408_6118.md": "8c83f72b85de4c3adfa71263df0a123dd91fd4caed9d98c3fdbe0f164df621e6",
+    "1793150408_6118_res.json": "1e283c2148717524deaafd6c80b15fbd6dfab7a4683168abb09a7a2342b15a17",
+    "region_repairs.md": "f1177e100f6ea7de61198fdd9fc56a600886979393cc03bc77c5125d55cd045e",
+    "repairs/region_000/1793150408_9839.md": "1c1e1fe6cb66c4090e4c848b10c3083593bdd7d0944167f052136ff51fcacc37",
+    "repairs/region_000/1793150408_9839_res.json": "d886b27485daf914e5fff4c76221b77b1ae58713413b5339fee1c18ebbe07e52",
+    "repairs/region_000/source.png": "1805970ec5299d245cf29a33be88be6f55240cfcfe7f8e9bcf33613b7f8442af"
+  },
+  "input_fingerprint": "aedb62ae4dae798ac16b1eed822f2950995f281aed94fbed157033b4681d727a",
+  "image_sha256": "da49a57b4f7d5f201f6d98fac36f75dd5b698e5acaba69412bb676ac464f2b91",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 1.1140342819999205,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "paragraph_title",
+      "block_content": "I LOVE ALL YOUR MOVIES.",
+      "block_bbox": [
+        551,
+        887,
+        1375,
+        962
+      ],
+      "block_id": 0,
+      "block_order": 1,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          551.0,
+          887.0
+        ],
+        [
+          1375.0,
+          887.0
+        ],
+        [
+          1375.0,
+          962.0
+        ],
+        [
+          551.0,
+          962.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1635,
+        19,
+        1903,
+        113
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1635,
+        19,
+        1903,
+        113
+      ],
+      "ppocr_candidate": "胶学出",
+      "recovered_text": "胶学 bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

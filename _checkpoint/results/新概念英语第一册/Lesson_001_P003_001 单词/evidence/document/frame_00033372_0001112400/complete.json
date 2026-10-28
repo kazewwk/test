@@ -1,0 +1,105 @@
+{
+  "artifacts": {
+    "1793150421_5037.md": "0f5c2592fbfff601845fbb3934834d8b24d500e325e779fa6f73030d69023ec1",
+    "1793150421_5037_res.json": "a86ee6c3775d5f2a4960a671b033fdef32f64d40baa5345cb3d2025edc87deaa",
+    "imgs/img_in_image_box_0_5_1920_865.jpg": "8669f5e980b3a855c7e59515cdbe4921384daca3503aa1bb31fa802511c34873",
+    "region_repairs.md": "fd01ceae79a2c12e4676497d1b6ce375d84fe5a647dcfd8ca40261c5950f5e30",
+    "repairs/region_000/1793150421_4888.md": "5acb7efa8ac5b65dad2fe9e8132b5f6d04d059b38fef010b1630a238a1fa8fb0",
+    "repairs/region_000/1793150421_4888_res.json": "3cf4948291e2e021969f31fc944809fbf9322b17d87ef8a474a1dc263e7d1c60",
+    "repairs/region_000/source.png": "16b760bd8d259910685e85b9eb8c8ed7c2847b5edb21cb6730bf3fbd1ae4bba5"
+  },
+  "input_fingerprint": "4339b0ce6101937275d4029e9baa782a351ca505df74756abb3e03213b6581bb",
+  "image_sha256": "77fe32a95019af027e9ac994f1ff5ff7a34b2ad7877082186e5622d98c625e21",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 3.6728245000012976,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "image",
+      "block_content": "胶学 bilibit",
+      "block_bbox": [
+        0,
+        5,
+        1920,
+        865
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          0.0,
+          5.0
+        ],
+        [
+          1920.0,
+          5.0
+        ],
+        [
+          1920.0,
+          865.0
+        ],
+        [
+          0.0,
+          865.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "I DON'T REALLY HAVE A FAVORITE...",
+      "block_bbox": [
+        396,
+        887,
+        1533,
+        963
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          395.6916198730469,
+          891.9617309570312
+        ],
+        [
+          1531.6915283203125,
+          886.9617309570312
+        ],
+        [
+          1531.9998779296875,
+          956.9999389648438
+        ],
+        [
+          396.0,
+          961.9999389648438
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "bilibili",
+      "block_bbox": [
+        1730,
+        21,
+        1901,
+        111
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1730,
+        21,
+        1901,
+        111
+      ],
+      "ppocr_candidate": "bilbd",
+      "recovered_text": "bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

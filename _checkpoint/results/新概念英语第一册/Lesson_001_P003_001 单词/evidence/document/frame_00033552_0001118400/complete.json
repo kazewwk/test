@@ -1,0 +1,74 @@
+{
+  "artifacts": {
+    "1793150438_4924.md": "08e73c2ece6e34dfc152ce7c268b4c3a74e67f3a1a6adf973939a6e9b86c1095",
+    "1793150438_4924_res.json": "c20062bf6df138052c63e197c6514fb9917c80e8c255df9e174b1e5f47fef2da",
+    "imgs/img_in_image_box_0_0_1919_1079.jpg": "c05bd24ab9ad50df350724707858f64f30f5dc17ca9af69a2ded5d5e243ad6c3",
+    "region_repairs.md": "b5aa0c1b5027bcb6ba5881c2d26c085b74cda316e09dde68bd9dc41a9f5c2536",
+    "repairs/region_000/1793150439_9107.md": "5acb7efa8ac5b65dad2fe9e8132b5f6d04d059b38fef010b1630a238a1fa8fb0",
+    "repairs/region_000/1793150439_9107_res.json": "0accbf564de0803e5ce8b4aba9f08bf5a89f48d0665be1cbb3dd4106da1d0277",
+    "repairs/region_000/source.png": "311072758893b69603e6d995035632f71fef25f9f6c0ca1417861614e4873863"
+  },
+  "input_fingerprint": "fe26bc24974686265e8ee702a1cadc0b6f8ad4a805857e3c82d8323c6f791d3c",
+  "image_sha256": "ac49f9e2f166409a75b0d89cfb0ebd0050a0b60a0abc0dadddaf5266a62c9c6a",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 3.4299726839999494,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "image",
+      "block_content": "胶学 LiliBili\nOH MY GOSH.",
+      "block_bbox": [
+        0,
+        0,
+        1919,
+        1079
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          -1.0,
+          -1.0
+        ],
+        [
+          1919.0,
+          -1.0
+        ],
+        [
+          1919.0,
+          1079.0
+        ],
+        [
+          -1.0,
+          1079.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "bilibili",
+      "block_bbox": [
+        1729,
+        21,
+        1901,
+        111
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1729,
+        21,
+        1901,
+        111
+      ],
+      "ppocr_candidate": "bilba",
+      "recovered_text": "bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

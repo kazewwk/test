@@ -1,0 +1,73 @@
+{
+  "artifacts": {
+    "1793150390_1470.md": "4f7cebdd5c62c236676a5f42b8c5305e9223e66cc765eb4bdc57211afc02c7b5",
+    "1793150390_1470_res.json": "f7d6097a0815bdfbc9d360ff00538ac9e378a4a5efcfa067e990f2afc35c0962",
+    "region_repairs.md": "ddf95e9d9d10c5c74991f88698713ff37c6ab6aca52c379e9f5b768dc9a54516",
+    "repairs/region_001/1793150390_3628.md": "1c1e1fe6cb66c4090e4c848b10c3083593bdd7d0944167f052136ff51fcacc37",
+    "repairs/region_001/1793150390_3628_res.json": "e7e16a6223a39d791bef903e1bd34bfd6923bf71a4053b2471861ed085d96ed9",
+    "repairs/region_001/source.png": "0f4d9788053bc89b68eefbf0be6017fd084206679731a95ef97c23b94be4f6d6"
+  },
+  "input_fingerprint": "378eb8121025d417bed23ab192b12b27b1fa4925be6bdddf4a95c8c5ab9675b8",
+  "image_sha256": "0994d5adba1633e2e6d1bef4619cca3a2f8c2cc185ab3b5d293ac094938fe4d3",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 1.3237445100021432,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "paragraph_title",
+      "block_content": "DID YOU TELL HIM THAT YOU JUST DID A BOOK REPORT ON HIM",
+      "block_bbox": [
+        420,
+        888,
+        1500,
+        1033
+      ],
+      "block_id": 0,
+      "block_order": 1,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          420.0,
+          888.0
+        ],
+        [
+          1500.0,
+          888.0
+        ],
+        [
+          1500.0,
+          1033.0
+        ],
+        [
+          420.0,
+          1033.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1635,
+        16,
+        1904,
+        115
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1635,
+        16,
+        1904,
+        115
+      ],
+      "ppocr_candidate": "胶学bi出",
+      "recovered_text": "胶学 bilibili",
+      "source_crop": "repairs/region_001/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}
