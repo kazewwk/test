@@ -1,0 +1,136 @@
+# L020 语法 动名词
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello, everyone. Welcome to Capsule Academy. This is Leo. Today, we're going to learn New Concept English Book Two, Lesson Twenty, Grammar. Old习惯进入正式课程之前，我们看两个小的问题。第一，什么是动名词？啊，又是动又是名，到底是什么词？接下来，如何使用动名词？啊，带着这两个问题，Hope you guys enjoy.好了，那我们先说一下动名词的构成。动名词的构成，你看。
+
+## 00:00:28–00:01:02
+
+一下动名词的构成，动名词的构成，你看它又有动又有名，它实际上是一个动词加上 I N G 之后就变成了动名词。这个地方就会让我们有一点奇怪，因为如果各位基础还不错的话，你可能会想到我们曾经学的某一个知识点好像也是动词要加上 I N G 是吧？好，我们先不管它，但是在这个地方要各位清楚意识到一件事情，动名词的名字虽然叫动名词，但它实际上是。
+
+## 00:00:58–00:01:32
+
+情动名词的名字虽然叫动名词，但它实际上是动词变成了名词。我们先回想一下汉语当中有没有这个概念，汉语是有的，但是又不完全类似。但我们不用非常严谨，我们大概去理解一下。比如说睡觉，他正在睡觉的这个睡觉是动词还是名词？这是我们汉语的，对吧？或者说他正在吃饭啊，这个更明显了吧？这是个动词，这个吃饭对不对？说哎，我特别喜欢吃饭，每次吃饭呢，我都感觉特别的开心。
+
+## 00:01:28–00:02:02
+
+吃饭，每次吃饭呢，我都感觉特别的开心。好，你看这里面的啊，或者说哎，按时吃饭对人身体有好处。这里面每一句话当中的吃饭都是一个名词，您仔细想一下，按时吃饭对人身体是有好处的，对吧？OK，那英语也存在这个情况，英语也可以把动词换成名词。我们汉语只是说结合那个语境，我们甚至不用关心它是名词还是动词，在这句话当中，对不对？但是因为英文呢，它在把动词换成。
+
+## 00:01:58–00:02:32
+
+对，但是因为英文呢，它在把动词换成名词的时候，不能直接就用过去，它要加一个 I N G，所以呢，你会要专门花时间简单去学习一下，但也并不是很难啊。刚才我们提到了，我们之前很熟悉的说动词加 I N G 的时候，其实是我们早年在新概念一册，当时新概念二册第二课我们也学过，对吧？新概念一册三十一课，新概念二册第二课，我们都学过，叫做现在进行时的时候叫 be 加 doing，这个 doing 指的是动词加 I N G 的现。
+
+## 00:02:28–00:03:02
+
+加 doing 这个 doing 指的是动词加 ing 的现在分词。那你注意，它本身是个动词，表示一个动作正在进行。今天要告诉各位的是，动词加 ing 的时候，有的时候也可以是名词，我们管它叫动名词，即动词变成的名词。好，我们举一个例子啊，这样单说还是过于抽象了。我们看两句话，I like fishing 和 she is fishing 这两句话，I like fishing 和 she is fishing 这里边的。
+
+## 00:02:58–00:03:32
+
+这句话，I like fishing and she is fishing.这里边的 fishing 都是 fish 这个动词后边加了 I N G，你可以这样去理解，对吧？OK，都是 fishing 写的一样，读音一样，但是区别是底下这个 she is fishing，这明显是现在分词，表示一个动作正在进行，它正在钓鱼，对不对？而 I like fishing，它不是说我做这个动作，它这个动作这个动词在这句话当中是 like，对吧？六一二三四五六当中的二是 like。
+
+## 00:03:28–00:04:02
+
+Like,对吧？六一二三四五六当中的二，是like，而fishing在这个地方，它其实起到了一个宾语的作用。如果这个对于您来说比较麻烦，对吧？您没听过什么主谓宾，你也听不太懂，一听就懵。那你就回想一下，六一二三四五六当中，一是什么？二是什么？三是什么？二在这儿是like，而fishing在这句话当中，它其实做了一个三。那如果涉及到这儿，我们必须就要回来看一下这个表格了。动名词就是在动词后边加了ing，动词后边加了i。
+
+## 00:03:58–00:04:32
+
+名词就是在动词后边加了ing，动词后边加了ing，fishing，sleeping都可以是动名词，但是区别在哪？现在分词本身是一个动词，它只在二这个地方出现，而动名词本身是一个名词，它一般来说在一和三的这个位置出现。接下来我们给大家一些例句，各位找一下感觉，好吧？比如说动名词做主语的时候，sleeping is good for you，说睡觉啊对于你来说是一个好的事。
+
+## 00:04:28–00:05:02
+
+说睡觉啊，对于你来说是一个好的事情。Sleep是动词，我现在想说睡觉对于你来说是个好事儿，你太缺觉了。那我在sleep后边加了ing，对不对？再接下来说Reading is an art。说阅读啊是一个艺术。你看Reading is an art，这里面的is实际上是二，an art实际上是三，而Reading在这儿就是做了一个主语，叫阅读是一门艺术，对吧？再来说Fishing makes me happy。OK，说。
+
+## 00:04:58–00:05:32
+
+再来说, fishing makes me happy. OK,说钓鱼啊让我感到非常的开心。在这儿各位可能意识到了一个问题，当动名词做主语的时候，你看后边用的都是单数还是复数？单数。OK，好，再来最后一个俚语，英文当中经常用到的一个俗话吧，叫做seeing is believing，叫做眼见为实。你看believe和see其实都是动词加ing之后变成动名词seeing。
+
+## 00:05:28–00:06:02
+
+词加 -ing 之后变成动名词，seeing 一 is 二 believing 三，非常舒服。动名词做主语，对吧？那动名词还可以做宾语或表语。还是那句话，如果对于各位来说宾表您分不清楚，对吧？很多的时候其实也没有必要完全分清楚，您就知道它在六二三四五六当中是三那个位置就够了，就这么简单，对吧？比如说 I like sleeping，这里边一二三，OK，再来。
+
+## 00:05:58–00:06:32
+
+这里边，一二三，OK，再来说，I enjoy watching TV. 我很享受看电视这件事儿，对吧？OK, watching TV在这就是一个名词性的一个短语。OK，再来说，I love reading. 我喜欢阅读，love doing something. 所以在这儿我提一个小点，对于您稍微有一点基础的同学，其实你可能在这儿看到的，其实就是我们小时候背过的什么，like doing something, enjoy doing.
+
+## 00:06:28–00:07:02
+
+这就是我们小时候背过的什么 like doing something, enjoy doing something, love doing something, 对吧？所以以后我们再去讲说动名词做宾语或表语的时候，我们往往也不会去讲它是什么动名词这种东西，我们直接就会告诉你说这个动词后边如果再想加另一个动词的时候，它就不能加动词了，它要加 doing。比如说我喜欢看电视，叫 I like，不能说 watch TV，英文要把它变成 I like watching TV，好理解哈。OK，不多说了。
+
+## 00:06:58–00:07:32
+
+I like watching TV.好理解哈。OK，我都说了。最后一个说，His hobby is collecting stamps.啊，这其实就是一个表语啊。如果您基础比较好，或者以前听过不同的老师的课程，那您就知道它是个表语。如果您没听过，也不太清楚什么是表语，那就不管它。你知道，His hobby是一，is是二，collecting stamps是三就可以了，对吧？动名词对于你来说就是一或三。OK，好。那接下来呢，我们做一些小的听力口语练习，练的是without加。
+
+## 00:07:28–00:08:02
+
+小的听力口语练习练的是 without 加动名词，注意这个地方，刚才我讲到了，我说我们的动名词可以做一，可以做三，对不对？它很多的时候，注意还有一个习惯就是在介词 prep 点，这个是我们新概念一册三十五课就学过的词性，对吧？在介词的后边也可以加上动名词。 OK， without 就是一个介词，叫做而没有。好，我们先看一下啊，这样单独去讲，各位可能懵。
+
+## 00:07:58–00:08:32
+
+而没有好，我们先看一下啊，这样单独去讲各位可能懵。我们先看例句。He went into the children's room，第一句话，第二句话，He didn't make a noise，他没有制造出任何声响。那这句话我们把两句话连到一起，就是他进入孩子的房间而没有发出声响。你看主语是一致的，he对吧？Without这个单词自己本身就是什么意思？叫而没有，那didn't就可以删掉了，把。
+
+## 00:08:28–00:09:02
+
+意思叫而没有，那 didn't 就可以删掉了，把 without 放到这个地方来。那我刚才讲到，我说 without 是一个介词，介词后边也要加动名词。您现在知道三个位置，主语、宾语一三，对吧？还有在介词后面的时候要用动名词。于是 make 就要被换成了 making，这句话就变成了 he went into the children's bedroom without making a noise。然后我们再把它变一般疑问句，就出来了如下这句话，叫做 did he go into
+
+## 00:08:58–00:09:32
+
+就出来了如下这句话，叫做 Did he go into the children's bedroom without making a noise? 你看是不是很舒服? Without making a noise, 把 he didn't 删除，这儿来了一个 without，把 make 加了个 ing。 OK，好，我们再来一个，说 He listened to the speech. He didn't interrupt. 听演讲没打断，而没有打断。主语因为是一致的，所以删除 didn't。其实跟 without 含义是重复的，所以这儿加了一个。
+
+## 00:09:28–00:10:02
+
+其实，哥，without含义是重复的，所以这儿加了一个 without，对吧？啊，这个书写太糟糕，我们重新再写一遍啊，without，without，然后把 interrupt，因为前面 without 是介词，后面的 interrupt 就要加 ing，所以就变成了 without interrupting，然后再变一般疑问句，这跟你前面学的没任何区别，叫做 Did he listen to the speech without interrupting？说他是不是听了这个演讲而没有打断呢？Very good.
+
+## 00:09:58–00:10:32
+
+听了这个演讲而没有打断呢？哪一个？好，接下来都是高度一致的。各位快速做头脑风暴，跟上我读，您跟我读，好吧？来了。She arrived last night. She didn't let me know first. Did she arrive last night without letting you know first? Continue. She sat at the table. She didn't speak to anyone. Did she sit at the table without speaking to anyone?
+
+## 00:10:28–00:11:02
+
+Sit at the table without speaking to anyone. Continuing, he fished all day. He didn't catch a thing. 你看重复的部分删掉, without放到这个地方,然后把catch加ing. Did he fish all day without catching anything?他是不是抓了一整天鱼而没有抓到任何东西呢?下一个, continuing,说She looked everywhere. She didn't find it. Did she look everywhere without finding it? Continue.
+
+## 00:10:58–00:11:32
+
+Look everywhere without finding it. Continue. He drove two hundred miles. He didn't stop. Did he drive two hundred miles without stopping? Continue. He left the restaurant. He didn't pay the bill. Did he leave the restaurant without paying the bill? Next one. She walked around the shop. She didn't buy anything. Did she walk around the shop?
+
+## 00:11:28–00:12:02
+
+Anything? Did she walk around the shop without buying anything? Okay, next one. He went to work. He didn't have anything for breakfast. Did he go to work without having anything for breakfast? Very good.好，下一题. Pattern drill.我们去练习包含动名词的短语。我们先看第一题。John这个P.S.是is啊，is keen on walking.各位在这儿不懂。
+
+## 00:11:58–00:12:32
+
+Ah, is keen on walking. 各位在这儿不懂，我直接告诉各位，这个地方要各位记一个短语，叫 be keen on doing something，叫做热衷于做某件事情。所以这句话就变成了叫做 John 热衷于走路，说是吗？I'm keen on walking too. 哦，是吗？我也特别热衷于走路。OK，那接下来底下这些呢，你往里面去带，但是注意一小线儿。你看他说 John is keen.
+
+## 00:12:28–00:13:02
+
+去带，但是注意一小线儿。你看他说 John is keen on walking，这地方其实应该也都是有一个 be 的啊，他们前面都是有一个 be 的。 OK，叫做 John is interested in reading，这叫感兴趣啊。我们在文章当中会出现这句话。是 John is keen on fishing，哎，热衷于钓鱼。 John is capable of doing the job， capable 回去您自己查一下，这个我就不告诉您了啊，有一个小作业。
+
+## 00:12:58–00:13:32
+
+您自己查一下，这个我就不告诉您了啊。有一个小作业，说最后一个叫 John is tired of。好，我告诉各位叫厌倦了做某件事情。比如说 John is tired of staying here，叫做他厌倦了待在这里。各位回去要做的事情是往里带就 OK 了，好吧？下一题，Why don't you give up smoking？文章当中会出现 give up doing something，在这儿提前看一下，叫做放弃抽烟啊，就是戒烟。其实在这就可以理解。
+
+## 00:13:28–00:14:02
+
+放弃抽烟啊，就是戒烟，其实在这就可以理解呗。你为什么不戒烟呢？他说因为 smoking is fine。好，我们不管认不认同啊这句话，但是我们看一下 smoking is fine 的 smoking 就是在做主语，而 give up smoking 这个 up 就是个介词，后面的 smoking 就是介词后边加了一个动名词，对吧？好，下一个，Why don't you listen to him？你为什么不听他的话呢？Because I can't listen to
+
+## 00:13:58–00:14:32
+
+Listen to him. You为什么不听他的话呢？Because I can't listen to him.因为我没办法听他的话. Without没办法听他说话. With而没有怎么样呢？Getting bored.好，我们先不管getting bored，而without doing something，对吧？那get bored是什么意思呢？叫做变得很不耐烦，很无聊。就我没办法听他说话。我就换一个思路，就是我每次听他说话，我都觉得很无聊啊。就我一听他说话，我就很无聊。我没有办法听他说话而不感到无聊。Okay,玩一个，最后一个，congratulate me.
+
+## 00:14:28–00:15:02
+
+Okay, play one.最后一个, congratulate me.哎，快祝贺我! I've just got a job.我刚刚得到了一份工作. Congratulations on getting a job.说祝贺你获得一个新的工作啊。介词后边加doing.玩一个. Recap.本视频最重要的我们就是学习了动名词。简单总结一下，进入文章我们还会再去看三个位置一三介词后玩一个讲作业。
+
+## 00:14:58–00:15:32
+
+位置一三介词后玩一个家庭作业，pattern drill 四乘四啊，先写写完，看着自己写答案，大声朗读，不要偷懒。接下来尝试回忆，给自己讲解一遍今天的核心语法，尤其是动名词，对吧？它是什么？怎么变过来的？它的位置在句子当中处于什么位置？OK，好，那尝试翻阅红皮书，这个对于各位来说就不是那么好找了，但您试试能不能找到我说的接下来这个东西。
+
+## 00:15:28–00:16:02
+
+您试试能不能找到我说的接下来这个东西，叫做动词后面加ing的这些固定搭配，您看能不能找到？一定是能找到的。OK，那以上呢就是本期视频的全部内容了。如果大家喜欢我们的课程，欢迎大家关注、订阅、一键三连，分享给那些需要的朋友。See you next time.
+
+## 00:15:58–00:16:03
+
+
+
