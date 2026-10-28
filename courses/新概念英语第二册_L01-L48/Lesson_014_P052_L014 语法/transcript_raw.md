@@ -1,0 +1,180 @@
+# L014 语法
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn new concept in English book two, lesson fourteen, grammar.那老习惯呢，进入正式课程之前，我们先看几个小的问题啊。第一，我们要学到一个新的时态，虽然新一学过，对吧？叫做过去完成时。第二呢，那跟过去完成时经常连用的几个小的单词，比如说 after 和 before 如何去用，以及 as soon as 到底如何去用啊？那带着这些问题，Hope you gonna enjoy it.
+
+## 00:00:28–00:01:02
+
+啊，那带着这些问题，hope you guys enjoyed.那我们先一起看一下 had done.啊，我们知道了，它叫做现在过，哦叫做过去完成时。它的结构是 had 加上 done。如果各位学过现在完成时，啊，您不是上来直接学的这一课，对吧？那你就应该知道 have 或者 has 再加上 done。啊， have 加 done。我们管它叫做现在完成时。那 had。
+
+## 00:00:58–00:01:32
+
+管它叫做现在完成时，那 have 的过去式又是 had。从现在完成时转成过去完成时这个时态的时候，结构无非就是把 have 换成了 had，而 done 这个过去分词是不变的，是不是就结构上很容易理解了？其次，我们管它叫做时态，那必然是处于谓语这个地方。六一二三四五六当中的二叫动词加动词的变化，这又是一个非常重要的信号，告诉各位这个知识点很重要，对吧？好。
+
+## 00:01:28–00:02:02
+
+信号号告诉各位，这个知识点很重要，对吧？好，那接下来我们就看一下它的用法，一共有三个。第一个跟现在完成时关系不大，剩下两个跟现在完成时关系都非常大啊。那我们先看第一个，这是也是最重要的一个，它表示的叫做过去的过去。其实早在新概念一册一百一十九课我们就学过了，对吧？今天我们迅速的再带大家过一遍啊，练习一遍。什么叫过去的过去？我们看一下底下这个图，这是一个时间轴。
+
+## 00:01:58–00:02:32
+
+去，我们看一下底下这个图，这是一个时间轴。如果这里是现在的话，这就是过去的B时间点，这就是过去的A时间点。那A时间点明显就是更加过去的一个时间，对吧？那如果我们说B这个时间点用的是一般过去时的话，A这个时间点您实际上是有两个选择的。第一个选择，你依旧可以用一般过去时啊。第二，如果你为了有的时候强调这两个动作没有必然的强。
+
+## 00:02:28–00:03:02
+
+二，如果你为了有的时候强调这两个动作没有必然的前后顺序啊，为了强调一个动作在另一个动作之前，所谓叫过去的过去，过去点 B 的过去就是过去的 A， OK，那你就可以用现在完成过去完成时叫做 had 加上的这个时态，看见了吧？这儿可以用一般过去时，这儿有两个选择，一般过去时或过去完成时啊。接下来我们看它的结构，刚才提到。
+
+## 00:02:58–00:03:32
+
+是啊，接下来我们看它的结构。刚才提到了 had 加 done，对吧？动词 e d 啊， done 指的是动词的过去分词。这个您有一个好的手机字典啊，基本就够了，对吧？包括我们新概念一册八十三课，到包括新概念二册，我们都学过了过去分词这件事儿了啊，就不再多提了。好，肯定句，比如说我们看这样一句话，叫做 When Sarah arrive at the party。注意第一个动作出来了，叫做到达，对吧？说当 Sarah 到达这个。
+
+## 00:03:28–00:04:02
+
+叫做到达，对吧？说当 Sarah 到达这个聚会的时候呢，Paul had already gone home. Paul 已经回家了。注意啊，如果这个地方我们不用 had，我们直接用 went home，一般过去时，你就要去反应一下，说 went 和 arrive 是谁先谁到的。这决定的事情是 Paul 和 Sarah 这两个人有没有见到彼此，对吧？如果是他到了，然后他才走的，那可能打了个照面，对吧？见了。
+
+## 00:03:58–00:04:32
+
+是他到了，然后他才走的，那可能打了个照面儿，对吧？见了一面。如果是他到之前他就走了，那两个人怎么也见不到，对吧？但如果用了过去完成时这个时态，had加但，那这个就不用去思考了，一定是gone这个动作发生在前，因为它的用法就叫过去，过去，对吧？而arrive一定是发生在后的，这就是这个时态我们要学习它最重要的一个原因，迅速就能判断出来过去的两个动作谁在前。
+
+## 00:04:28–00:05:02
+
+能判断出来过去的两个动作谁在前谁在后，OK？那它的否定呢？其实很简单，您触类旁通就行了。我教过各位，have加that是have后边加not，对吧？我们现在告诉您是have换成了had，那无非就是had后边加not就完了。一般疑问句同理，把had提到句首就可以了。它有一个小的难点就是什么呢？你首先一定要判断啊动作前后顺序，并且一定都在过去。首先大的前提。
+
+## 00:04:58–00:05:32
+
+并且一定都在过去。首先，大的前提一定是两个动作都是过去发生的，不能是未来发生的，那不能叫过去完成时，对吧？其次，你要做的事情无非就是两个动作，谁在 A 这个位置，谁更靠前一点发生，谁更靠后一点发生，然后靠前一点发生的那个用过去完成时就可以了，就这么简单，对吧？OK，比如说我们看这儿啊，看这儿，我先把这两个给大家打出来，After。
+
+## 00:05:28–00:06:02
+
+我先把这两个给大家打出来。After大家都认的叫在什么什么之后，我这儿写的是 after 点点点 had done，然后点点点 did 点点点。我想说什么呢？就是你看一下啊，这个结构叫做在 a 这件事情发生之后，逗号发生了 b。 After a 逗号 b a 要用的时态是 had 加 done， b 这个点要用的时态是 did，对吧？那 before did 逗号。
+
+## 00:05:58–00:06:32
+
+还是 did，对吧？那 before did 的逗号点点点 had 加但，这个是什么意思呢？ Before 叫在什么什么之前，那就是 before B 这个动作之前发生了 A 这个动作，只不过在 B 这个动作的时候要用的是 did，而 A 这个动作用的是 had but，其实时态是没有变化的，对吧？以及最后一个 as soon as， after 叫在什么什么之后， before 叫在什么什么之前， as soon as 叫一怎么怎么样就。
+
+## 00:06:28–00:07:02
+
+在什么什么之前，as soon as叫一怎么怎么样就怎么怎么样啊！你想一下，就是一这个样子，就后面这个样子啊！一先发生了A这个动作，然后就发生了B这个动作，这样去讲比较抽象。接下来我们拿一些例子代进去，各位仔细跟我一起想一下就行了啊！来，我们试一下，做一些小的练习，包含had加done的句子来了。我们先看这两句话啊，When did the children run away?
+
+## 00:06:58–00:07:32
+
+这句话啊，When did the children run away?孩子们什么时候跑开的？After they had broken the window，在他们打坏这个窗户之后，所以在这个地方实际上是有两个动作，第一个动作叫run away，第二个动作叫做had broken啊，叫做打碎了玻璃。那你要判断的事情是，他们先跑开了再打碎了玻璃，还是先打碎了玻璃再跑开了？这个不需要你们判断，为什么呢？这儿已经通过时态告诉你了，这是had broken，这是run away，这是。
+
+## 00:07:28–00:08:02
+
+他告诉你了，这是 had broken，这是 ran away，这是过去完成时，这是 B 这个时间点是一般过去时，所以它是怎么样固定了的，对吧？谁前谁后？所以您需要做的事情就是回答这个问题，看一下答案啊，叫做 The children ran away，孩子们跑开了，在什么之后呢？在 They had broken the window， after they had broken the window，在他们打碎了这个。
+
+## 00:07:58–00:08:32
+
+After they had broken the window,在他们打碎了这个窗户之后，你看had加broken啊，我给大家标一下had加broken和ran away是吧？After a逗号b，当然也可以变成b，然后after a，那是一样的，对吧？啊，只不过你前后改了，但意思是不变的。接下来下一个我们再试一下啊，比如说When did he ask for a glass of water?他什么时候要了一杯水呢？When he had finished lunch，当他吃完。
+
+## 00:08:28–00:09:02
+
+When he had finished lunch, 当他吃完午餐之后，对吧？好，你看一下，这儿时态已经给大家定了，啊，先是吃完，然后才要的水。那各位要做的事情就是还是把它连到一起，叫做 he asked for a glass of water. 首先，两个动作都发生在过去，这个是没跑了，对吧？哎，要了一杯水，然后 he had finished lunch. 啊，不是然后，就在那，在他什么之后，对吧？
+
+## 00:08:58–00:09:32
+
+Had finished lunch. That's not then. It's in that. In what after, right? In after he finished lunch, he asked for a glass of water. Okay, we come again. For example, when did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel? When did they return to their hotel?
+
+## 00:09:28–00:10:02
+
+动作第一个叫做 had set，一另外一个叫做 return。 had set 时态已经告诉你叫过去的过去，那它一定是先发生，然后 return 是后发生，对吧？所以这个地方就可以造出来一个句子叫 they return to their hotel。他们回到了他们的酒店。 As soon as 一怎么样呢？ The sun had had set。太阳一落山，他们就回到了酒店。所以这句话英文的 as soon as 引导的这句话可以。
+
+## 00:09:58–00:10:32
+
+英文的 as soon as 引导的这句话可以放在前面。如果把它啊叫做句子一，前面这个叫做句子二的话，它们俩可以是二一的前后顺序，也可以是一二的前后顺序。就是把这句话放到前面去，但含义并不变啊。各位不用被这个地方绕懵了，是吧？怎么这么多变化？就两种变化啊。接下来继续。When did the plane take off? 飞机什么时候起飞的？When I have fastened my seat belt. 啊，我把这安全带。
+
+## 00:10:28–00:11:02
+
+起飞的 when I had fastened my seatbelt. 啊，我把这安全带系好了之后，所以先发生的是系好，再然后发生的是 took off，对吧？在这个地方啊，起飞。于是连起来， the plane took off when I had fastened my seatbelt. 啊，这地方就是两句话放到一起了，飞机起飞了。在 had 加 fasten 已经告诉你这个动作先发生了，对吧？在我系好安全带之后， OK，那儿一个 continuing. When did she take a taxi?
+
+## 00:10:58–00:11:32
+
+Continuing. When did she take a taxi? After it had begun to rain. 好，这两句话是给各位的一个答案啊，给各位的一个提示，各位要自己写出来这个答案，对吧？我们要判断的还是谁先谁后。Had began先发生这个，然后再发生took a taxi，往里去带，叫做She took a taxi after it had began to rain. 在下雨之后，她才打了一辆车。你别看她。
+
+## 00:11:28–00:12:02
+
+在下雨之后，他才打了一辆车。你别看他在后边，还可以先翻译啊。Continuing，接下来，When did he arrive after all the guests have left？在所有客人都走了之后，他才来的。先走，后来，对吧？所以他谁也没见到。于是连起来，He arrived after all the guests had left. Continuing. When did she go to the post office？她什么时候去的邮？
+
+## 00:11:58–00:12:32
+
+When did she go to the post office? She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the post office. She went to the
+
+## 00:12:28–00:13:02
+
+了一个小单词叫做 the moment啊，这个其实各位现在知道它什么意思了，就是这一刻啊，我离开房间的这一刻，其实有几乎你可以把它理解为是 as soon as 的同义词啊，一怎么样就怎么样，我一离开房间，它就打开了这个音响，对吧？OK，所以又有一个前后顺序，it turned on the stereo，这儿就是第一句话就可以理解为结束了，后边是 the moment I have left the room，我一离开这个房间，它就打开了这个 stereo 音响，OK，新一。
+
+## 00:12:58–00:13:32
+
+他就打开了这个 stereo 音响。 OK，新一学的单词。下一个，When did you understand the problem？你什么时候意识到这个问题的？After he had explained it，啊，在他解释完之后，所以这句话就变成了，在他解释完之后，我懂得了这个问题。看一下时态，一定是先解释再懂，对吧？先解释再懂啊。 OK，下一个，When did you buy this car？你什么时候买的这辆车？
+
+## 00:13:28–00:14:02
+
+下一个, when did you buy this car? 你什么时候买的这辆车? After I had borrowed some money from the bank, 在我从银行借了一些钱之后, had borrowed 在这儿, bought 在这儿, 一前一后, 对吧? 那就是 I bought this car. 第一句话结束了, 我买了这辆车. After I had borrowed some money from the bank, 在我找银行借了一些钱之后, 我买的这辆车. 来一个, continue. 用法一, 我。
+
+## 00:13:58–00:14:32
+
+来一个，continue用法一，我们提到了，对于各位来说最关键的事情，在这个地方就是第一，两个动作均发生在过去，对吧？这是now嘛，对吧？第二，过去的过去那个动作用的是had done，这是我们最常见的一个用法。那其实啊，还要各位注意一小下儿，我不知道各位记不记得，我在最开始讲的时候就提到了，我说a这个地方您不是只能用had加done的，你也可以用did的，对吧？所以刚才给的那三个公
+
+## 00:14:28–00:15:02
+
+可以用 did 的，对吧？所以刚才给的那三个公式，所有 had done 的地方，理论上来说都可以用 did 去进行一个替代，不是必然只能用 had 加 done。只是你各位想一下，你都用 did 的时候，你是不是要想一下谁前谁后？而用 had done 这个结构就直接告诉你了，你不用想了，我就是先发生的，因为我用的时态叫 had done，对吧？OK，这是注意一下就行了。接下来我们看第二个用法，第二个用法我们讲的就会快一点。
+
+## 00:14:58–00:15:32
+
+接下来我们看第二个用法，第二个用法我们讲的就会快一点了。为什么呢？它跟现在完成时几乎一模一样，只是时间不一样。过去A发生对过去B产生了影响，就是现在完成时的过去式。在A这个地方发生了一个动作，叫做We had just had lunch。我们刚刚吃了饭，对过去B这个时间点的影响是We weren't hungry，对吧？OK，这不跟现在完成时一模一样吗？再往下走。
+
+## 00:15:28–00:16:02
+
+对吧？OK，这不跟现在完成式一模一样吗？再往下走，结构不变，肯定句刚才已经提到了，否定句各位这要提一句，含义随便变，结构是不变的。你含义用法一也好，用法二也好，就是有一万个用法，它的否定句也就是在这个地方后边加 not，一般疑问句也就是提到句首。难点那当然要对比一下 had done 和 have done，这个地方实际上一个图就很好了。各位，我们仔细研究一下这个图，这两个用法您瞬间就能学会了。
+
+## 00:15:58–00:16:32
+
+我们仔细研究一下这个图，这两个用法您瞬间就能学会了。我们先看上面这个，We have just had lunch. 这是什么？现在完成时吧。我们刚刚吃过了午饭，这是发生在过去的，对吧？然后现在呢是 We aren't hungry now. 我们现在不饿。言之过去，意在当下。过去的事儿对现在产生了影响，而过去完成时就是过去的一个动作对过去产生了影响，一个道理嘛。就是你看，你就是把它横着。
+
+## 00:16:28–00:17:02
+
+过去产生了影响，一个道理嘛，就是你看，你就是把它横着推过来了，时间轴上，对不对？叫做 We had just had lunch，然后在 B 这个时间点，就是我们 We weren't hungry，我们当时并不，因为我们在当时之前已经吃了一些东西了。 OK，好，这是用法二，用法三跟现在完成时依旧是一样的，叫做一个动作从过去持续或重复到过去。你想一下，现在完成时从过去持续重复到现在，对吧？好。
+
+## 00:16:58–00:17:32
+
+完成时，从过去持续重复到现在，对吧？好，结构依旧保持不变。我们举一个例子，比如说看这儿，I twenty twenty啊，截止到二零二零年，I have lived in Beijing for nine years。今年是二零二一年，那二零二零年是不是就是过去的一个时间点？B，截止到这个时间点，在那之前我在啊北京住了九年。你看底下这个图，不是持续到现在了啊，是持续到现在是二零二一，对吧？过去是二。
+
+## 00:17:28–00:18:02
+
+现在了啊，是持续到现在是二零二一，对吧？过去是二零二零，持续到二零二零这个事儿持续了九年，一个动作从A持续重复到过去B，A持续重复到过去B，否定句没变化，一般疑问句没变化，难点其实还是对比一下他俩就可以了。那他俩的对比，刚才我已经提到了，对吧？一个无非就是持续到现在，一个是持续到过去，持续到现在，那这个就是现在完成时，持续到去年的这。
+
+## 00:17:58–00:18:32
+
+持续到现在，那这个就是现在完成时。持续到去年的这个时候，就是过去完成时啊，就这么简单。OK，不多提了。接下来我们做一下小的 pattern drill。 Pattern drill 呢，老习惯，我要给大家做的事情只是告诉各位啊，这个地方它如何去翻译是什么知识点，各位课下往里去带。来了，Why was he so angry? 他为什么如此的愤怒啊？I hadn't prepared lunch for him. 我没有。
+
+## 00:18:28–00:19:02
+
+I hadn't prepared lunch for him. 我没有给他准备午餐。好，这个地方各位注意一下。你看，用的是 why was he so angry? Was 指的是这个事儿发生在过去，问他之前为什么这么的愤怒，对吧？在这件事儿之前，我没有给他准备午餐。哎，这儿为什么愤怒？过去，因为在那之前我没有准备午餐。这个事儿对这个事儿产生了影响。用法二，各位自己去想啊，往里带。接下来。
+
+## 00:18:58–00:19:32
+
+自己去想啊，往里带。接下来，Why couldn't you see the film properly？啊，说为什么你不能 see the film 看这个电影 properly？就是合适的、很舒服的、很得体的。你为什么没办法很舒服的看这个电影呢？就看不太舒服呢？I hadn't take my glasses with me。因为什么呀？我没有带着眼镜。你看，还是一个道理。问当时你为什么没办法很舒服的看这个电影？因为在那之前我忘戴眼镜了。对，过去后来的一个动。
+
+## 00:19:28–00:20:02
+
+前我忘戴眼镜了，对过去后来的一个动作产生了影响。用法二，对吧？接下来，Why didn't John tidy the garage yesterday?他为什么昨天没有把这个车库打扫一下呢？Because he'd already done it.说因为啊，他已经把它在那个之前，昨天之前，他已经把它打扫干净了啊。Done it已经完成了。Okay，接下来第四个，Did
+
+## 00:19:58–00:20:32
+
+Okay,接下来第四个，Did you really burn the letter?说你之前真的把这个信给烧了吗？用的是did，对吧？说It was a mistake.这是个错误。I realized it.我意识到这件事情了。As soon as I'd burn it,注意这个遗忘小点，这个撇d是had。两个动作啊，各位仔细去想一下啊，两个动作，这是现在，我先把它烧了，然后我意识到它是个错误。
+
+## 00:20:28–00:21:02
+
+先把它烧了，然后我意识到它是个错误了，对吧？As soon as我一烧了它，就意识到它是个错误了，对吧？Very good. Recap，本课的关键点就是had加and，一共有三个用法，用法二、用法三。现在完成时您会了，没有理由过去完成时是不会的，对吧？一模一样，那只是把时间做了一些改变。在这儿呢，最核心的点就是had加and的表示过去的过去这个用法，对吧？那实际上早在新概念一册我们。
+
+## 00:20:58–00:21:32
+
+是过去的过去这个用法，对吧？那实际上早在新概念一册我们也学过了。OK，今天又花时间带着大家做了一遍练习。家庭作业 pattern drill，各位要去写，写完了之后保证自己写的是对的，然后进行大声的朗读。专栏当中可以找到四乘四四道题，每道题写四个。呃，尝试回忆并给自己讲解一遍今天的这个核心语法。那当然了，您要去查一下红皮书，查的就是 had 加 done 这个时态。当然，如果各位学了一册的话，那您。
+
+## 00:21:28–00:21:59
+
+但这个时态，当然，如果各位学了一册的话，那您实际上初级红皮书和中级的红皮书，您都可以试着查一下，好吧？那以上呢就是本期视频的全部内容了。如果大家喜欢我们的课程呢，欢迎大家关注、订阅、一键三连、分享给那些需要的朋友。See you next time.
+

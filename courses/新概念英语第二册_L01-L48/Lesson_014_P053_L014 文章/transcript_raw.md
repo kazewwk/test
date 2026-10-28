@@ -1,0 +1,128 @@
+# L014 文章
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn new concept English book two lesson fourteen story. Hope you gonna enjoy.好，大家我们看了，I我had哎had和最后的last year一出就告诉你，接下来大部分的时态都是跟过去相关的时态了。跟过去相关的时态，目前我们简单总结一下，学了三个一般。
+
+## 00:00:28–00:01:02
+
+跟过去相关的时态，目前我们简单总结一下，学了三个：一般过去时，以 did 和 was/were 为主；第二呢，刚刚学过的是态叫 had 加 but 过去完成时；第三呢，跟过去相关的时态叫做过去进行时 was/were 加 doing。我们看接下来会出现哪些？I had an amusing experience last year. 讲单词的时候我们已经提到了，哎，我去年经历一个特别有趣的事情，哎，有一个特别有趣的经历。After出来了，想一下，after a : b a 是先发生的，在讲语法。
+
+## 00:00:58–00:01:32
+
+After A,逗号B, A是先发生的。在讲语法的部分，我提到了它很可能接下来后面用的是过去完成时，对吧？看一下Had left，过去完成时，说在什么之后呢？在我离开A small village，一个小村啊，一个小村，in the south of France。哎，这是一个非常简单的A of B结构。In the south，在南部of France，法国，法国的南部，对吧？就早在新概念一册二十五课，我们就学过了。在我离开法。
+
+## 00:01:28–00:02:02
+
+早在新概念一册二十五课我们就学过，在我离开法国南部的一个小村了之后呢，I drove on to the next town. 如果不加 on，我就说 I drove to the next town，叫我开车去了下一个小镇，对吧？那 drove on 是什么呢？就是 drive on。其实 on 这个地方有继续的意思。那 drive on 就是我继续开往下一个小镇啊，就是我开开开开过了一个小村，哎，离开这个村了之后呢，我继续开往下一个小镇啊，就。
+
+## 00:01:58–00:02:32
+
+了之后呢，我继续开往下一个小镇啊，就多加了这么个小的介词，叫所以您说 drive to some place 就开去某地，那 drive on to some place 呢，就是继续开往某地。 On the way 啊，在路上，其实我们新已经见过很多次 on the way 了，比如说 on the way home 啊，在回家的路上，对吧？ A young man waved to me. 一个年轻的男子啊 waved to me，冲我招手。 I stopped. 然后我就停下来了。 And he asked me for.
+
+## 00:02:28–00:03:02
+
+我就停下来了. And he asked me for a lift. Hey, ask somebody for something.你看第六课其实咱也学过，对吧？他向我哎索要了一个什么呢？搭便车啊，其实就是他要求要搭便车，问我行不行？As soon as一怎么怎么样就怎么怎么样。看他后边接的时态had got，我们先不用管含义。再看后边那句话said，是吧？完美符合这个逻辑。这个动作。
+
+## 00:02:58–00:03:32
+
+Said, is吧完美符合这个逻辑，这个动作先发生，这个动作后发生。我们看一下怎么样。他一怎么样呢？Got into the car.他一进入这辆车，先进入这辆车的。我就怎么样了呢？Said good morning.我说了早安to him.对他in French.这是一个小的短语，一会儿我们会练啊，造句练习叫做用某个语言，用法语叫做in French，用英文叫做in English，用日语叫in Japanese，用汉语叫in Chinese。各位应该。
+
+## 00:03:28–00:04:02
+
+用日语叫 in Japanese，用汉语叫 in Chinese。各位应该懂了，对吧？他一进入车，我就对他用法语说了一个早晨好。And然后呢，he replied，他回复了我，回答了我。In the same language，用的是相同的语言啊。其实就是 in the same language，不就是 in French嘛？为了避免重复，对吧？Apart from，纯是一个小的短语，单独记下来就可以了，叫做除了啊。A a few words.
+
+## 00:03:58–00:04:32
+
+记下来就可以了，叫做除了啊，a a few words，除了几个单词，I do not know any French at all，我就不懂法语啊，not at all，新一就见过了，叫一点也不啊，如果不加at all，就是没有那个一点的意思了，对吧？不强调，我一点儿也不懂法语啊。你看时态做了一个小的切换，哎，陈述客观事实叫做I do not know，能不能用？这个地方注意一个小的问题啊，以前我教学的时候，经常有学。
+
+## 00:04:28–00:05:02
+
+能不能用这个地方？注意一个小的问题啊！以前我教学的时候，经常有学生问我问题，说这儿我能不能用一般过去时呢？是可以的。各位注意一下，文章当中选择用哪个时态去表述这句话，有的时候是必须如此的，有的时候只是在众多可以的时态当中选了一个他希望用的时态。这是一个主观的感受，不是说客观必须用这个时态去描述。各位能理解吧？所以这儿您可以用 I didn't.
+
+## 00:04:58–00:05:32
+
+各位能理解吗？所以这儿您可以用 I didn't know any French at all，用一般过去时，但有一点点区别。I do not know，因为他强调的是客观事实，可能是包含了现在也不懂。OK，就是写这个故事的时候也不懂。但如果他用的是 I didn't know French at all，或者 at that time，这个感觉就像是什么呢？就是 now I speak呃French，指的是我现在呀好像会说法语了，是有这样一个。
+
+## 00:05:28–00:06:02
+
+French指的是我现在呀，好像会说法语了，是有这样一个潜台词在里面的，对吧？Okay,继续Neither of us,我们两个人都没有怎么样呢？Spoke during the journey，在这个旅途期间都没有说话。Neither这个小的单词还挺重要的，叫二者都不啊。你看Neither of us就是我们两者都没有这样。那其实我们新一还见过一个叫做Both of, Both of啊Both of就指的是两者都。
+
+## 00:05:58–00:06:32
+
+Both of啊，both of就指的是两者都怎么怎么样了，对吧？那这个我们其实在二十五课会重点去讲这个单词。继续，I had nearly reached town.你注意had加reach一出来这儿来一个逗号，后边还有一个动词叫said，对吧？迅速我给大家定位一下，您就知道先发生的是几乎就要到达小镇了，还没到达，对，但是几乎就要到达了。先发生这个动作，再发生的说话的这件事儿，对吧？我几乎都要到达小镇了，说突然啊。
+
+## 00:06:28–00:07:02
+
+对吧？我几乎都要到达小镇了。说突然啊，the young man suddenly said，这个年轻的男子突然间说到，very slowly，非常的慢。Do you speak English？你说英文吗？就是两个人都以为对方只会说法语而不会说英文，是吧？一路就没聊天，是吧？其实两个人的母语，mother tongue， native language，啊呃，are both English，对吧？都是英文。Okay，as I soon learned，我们先不管as这个as我先放在这儿啊，先不管它。As soon learned，我迅速的。
+
+## 00:06:58–00:07:32
+
+啊，先不管它。As soon learned, 我迅速的 learned. Learned是learn是学习这个单词的过去式。它还有一个意思，非常常用，在这儿各位要自己记一下，叫做意识到，类似于realized. OK, 我迅速的意识到 he was English himself. 他呀，自己呀，就是英国人。那这个地方的as呢，是一个特别罕见并且不常用啊，但是很难的一个语法啊。说难也难，说不难。
+
+## 00:07:28–00:08:02
+
+用啊，但是很难的一个语法啊，说难也难，说不难也不难。它是实际上类似于跟定语从句相关的一个语法，这个呢我们至少要二十八课之后再去讲。但是今天呢，我想提一个小的思路，就是这个语法 as 这个单词您完全就不会，那不会对于我们来说就是不存在呗。我们这么理解行不行？不会嘛，我看见它我也不知道它咋翻译，对吧？就不存在。我就想问你，不会这个语法影不影响这句话的理解？目前为止，as soon as。
+
+## 00:07:58–00:08:32
+
+不影响这句话的理解。目前为止，I soon learned he was English himself. 对于大家来说，这句话好像就有点像宾语从句了，是不是并不影响各位对这句话的理解，对吧？这是我想提的另外一件事情，就是当这句话您的理解准确无误的时候，你自己去思考一下，我为什么还要去研究它的语法？它的目的在于什么地方？不是没有任何理由了啊！我卖一个小的官司，以后再去讲这的时候我再提，但今天先不讲了啊！到这为止，习惯用法早。
+
+## 00:08:28–00:09:02
+
+今天先不讲了啊，到这为止。习惯用法造句来了，drive on to somewhere啊，开车往某地啊。比如说，我们可以先不加to somewhere，直接就用drive on啊，继续开，继续开。We don't have time to stop，我们没有时间停下来。Drive on就是类似于一个小的起始句，对吧？Stop that啊，停下来，或者是drive on继续开啊。当然，我们也可以说After that we drove on to Beijing，在那件事情之后呢，我们继续开往了北京。那
+
+## 00:08:58–00:09:32
+
+在那件事情之后呢，我们继续开往了北京。那那件事是什么呢？那就是之前啊，这个语言要铺垫的内容了。我们先不管，我们只管造句啊。肯定句出来了，我给大家了四句型转化，就是您自己懒不懒的事儿了，对吧？自己下课去做。Next one on the way, on the way叫在路上，对吧？比如说，We'll have plenty of time，十二课学的，have plenty of time，我们将有足够多的时间。然后呢，We can talk about that。
+
+## 00:09:28–00:10:02
+
+足够多的时间，然后呢？ We can talk about that on the way home. 我们可以在路上，回家的路上聊一聊这件事儿。 But not now, 对吧？但是现在先不聊。 Continue. We'll be having a difficult time. 你看，首先十三课 have a difficult time，再加上 will be doing，两个全连在一起了，对吧？我们将会有一段困难的时光。 On the way there，在去那个地方的路上，有一段路啊特别不好走。 OK，叫做 on the way there，在去那儿的。
+
+## 00:09:58–00:10:32
+
+走，OK，叫做 on the way there，在去那儿的路上。Next one， ask somebody for a lift，含义和 ask for a lift 和 give somebody a lift，几乎是类似的啊。前两个几乎是类似的，就是要求搭便车。那后边呢，就是让别人搭便车，对吧？给某人一个搭便车的机会。我们造句说，we can ask somebody for a lift，非常简单。你看，ask somebody for a， ask somebody for a，几乎是照抄，您就多。
+
+## 00:10:28–00:11:02
+
+Ask somebody for a ask somebody for a lift,几乎是照抄，您就多加了两个单词，we跟can，对吧？动词加动词变化，除了时态还有情态动词。Next one，第十课学的被动外加be allowed to do something。说I'm not allowed to ask for a lift啊，我不被允许去向别人要求搭便车啊，我父母不允许啊，我太小了，别人怕这个呃父母怕出现一些安全上的隐患，对吧？所以I'm not allowed to ask for a lift。Okay，以及第七课比。
+
+## 00:10:58–00:11:32
+
+For a lift, okay.以及第七课，比如说 To my surprise, 啊，令我感到很惊讶的是， he asked for a lift. 令我感到很惊讶的是，他竟然怎么样？要求搭便车啊？Okay. 好，接下来呢，我们看一个小的电影片段，语速也挺快的，各位要注意啊，竖起耳朵来听。叫 Can you give me a lift? 而且这个 lift 很有意思啊，这个场景看一下。 Can give me a lift? Right. Better clench up, Legolas. Okay.
+
+## 00:11:28–00:12:02
+
+Okay,那Can you give me a lift?啊，Okay，那就走了，对吧？Okay，下一个In French，我刚才讲到了，对吧？French本身是语言，不是说只能用French。In French，您可以用各种语言。好了，比如说我们比较常用的，I'll try to say that in French. Try to do something.第七课学的啊，我会试着用法语啊Bonjour去说Hello的Hi啊，以及How do you say你如何去。
+
+## 00:11:58–00:12:32
+
+啊，以及 how do you say 你如何去说 I will be away for two weeks in Chinese。说你如何用汉语去表达，说我将离开两周啊。这个实际上呢，我们经常会去说啊，就至少我啊，跟外国人去沟通的时候，我经常会去说。当然，我说的不是 in Chinese，我说的是 in English。我会问他，我说我有点想不起来这个词儿怎么去表达了，然后我就给他解释一下这个词儿的含义，然后我说 how do you。
+
+## 00:12:28–00:13:02
+
+然后我就给他解释一下这个词儿的含义。然后我说，How do you describe someone who is you know你如何尝试去描述一个人，他是这样那样那样的？你如何用呃英文的一个单词去描述这个人来着？啊，毕竟是人家的母语，他就会告诉我啊，是这个单词。我说哦，对，我想起来了，对对对对，就是这个意思啊。OK，那第十课我们学的被动叫做It is written in French啊，这个东西是用法语去写的。And I don't speak it啊，I don't know it，或者是啊，然后我不说，我又不说这门语言。
+
+## 00:12:58–00:13:32
+
+Big it, ah, I don't know it,或者是啊，然后我不说，我又不说这门语言，所以我看不懂，对吧？Okay, next one. Apart from两个单词合起来的意思叫做除了什么什么，对吧？比如说, apart from this watch,说除了这个表, they are all made in China.你看, made in China这对各位来说应该都不算生死了，是吧？应该是挺常见的了。只不过这有一个小的被动，注意一下，他们都是中国制造，他们都是在中国被制造，只不过汉语不这么聊。
+
+## 00:13:28–00:14:02
+
+中国制造，他们都是在中国被制造，只不过汉语不这么聊，但英语要用被动啊。这个是各位出国逛一些商店的时候非常常见的一些事情啊。你进去几乎全是 Made in China，很有意思。OK，好，那接下来我们一起看一下，叫做呃呃一个电影当中出现了一个小的场景，叫 Apart from yous，啊，除了你的，我搞不明白，别人我都能搞明白，是吧？来了， I can read every mind in this room apart from yours.
+
+## 00:13:58–00:14:32
+
+In this room, apart from yours, money, sex, money, sex, cat, and then you, nothing. Apart from yours,是吧？我可以把大家的想法都读出来，但是你的呢？我读不出来，是吧？除了你以外，对吧？ Okay.
+
+## 00:14:28–00:15:02
+
+你的呢？我读不出来，是吧？除了你以外，对吧？OK，那 recap 本课的一些关键的 expression 都在这个地方了。各位，我们要做的事情当然是拿他们去造句了，习惯用法、造句或者对话，每个造五句话。文章要跟读至熟读成诵，帮助我们把单词、语法、习惯用法一口气儿一揽子解决方案，对吧？都搞定，以及下一个视频当中的练习，取决于各位文章能读的有多么熟，对吧？OK，那以上呢就是本期视频的全部内。
+
+## 00:14:58–00:15:23
+
+多么熟，对吧？OK，那以上呢就是本期视频的全部内容了。如果大家喜欢我们的课程呢，欢迎大家关注、订阅、一键三连、分享给那些需要的朋友来支持我们。See you next time.
+
