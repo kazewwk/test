@@ -1,0 +1,678 @@
+{
+  "schema_version": "argon-disagreement-review-1",
+  "generated_at": "2026-10-28T08:24:04Z",
+  "selection_threshold": 0.8,
+  "reviewed": 20,
+  "failed_or_unfinished": [],
+  "skipped": [],
+  "limitations": "Two-minute clips selected by machine disagreement; not human review or overall accuracy.",
+  "reviews": [
+    {
+      "state": "machine_review",
+      "source": {
+        "drive_file_id": "1ceOZB5hsYYZ02_Yusgo3QMS2Es9L3MgQ",
+        "series": "新概念英语第二册_L49-L96",
+        "directory": "Lesson_057_P034_057 语法",
+        "title": "057 语法",
+        "source_sha256": "6cfceadddae7099f1edf7049796b253beef01dc50e32447cc14337da9c02304b",
+        "source_md5": "1848193283959d2ec66514442870de94",
+        "source_duration_seconds": 1301.7
+      },
+      "clip": {
+        "clip_start_seconds": 590.85,
+        "clip_end_seconds": 710.85,
+        "clip_sha256": "f0b0a3dbf4c139f4f383096ea1ef9f0f1c0f7e18c05443118d48135040a48e7b"
+      },
+      "qwen_vs_first_gemini_agreement": 0.585,
+      "selection_rule": "machine text agreement below 0.80; triage only, not measured accuracy",
+      "qwen_input_sha256": "e7638d5cf05add91e1ba8c7f7b972309d4058c0fa143e62c140f4f2f06f8890a",
+      "prior_gemini_input_sha256": "4bb81878bc3d7406764bc4f119b182adba17b0eaa6fa00e9506772509df740ee",
+      "model_requested": "gemini-4-argon-high",
+      "model_returned": "gemini-4-argon-trial",
+      "finish_reason": "STOP",
+      "quality_flags": [],
+      "elapsed_seconds": 103.61,
+      "limitations": "Only this clip; model judgments and timecodes are not human verified.",
+      "review_text": "基于所附视频片段的音频与画面，对两份机器记录的独立复核结果如下：\n\n### 一、具体差异与原视频证据逐项核对\n\n#### 1. 00:00 - 00:11（开篇中文讲解与电影台词）\n* **原视频内容**：\n  * **音频**：00:00 - 00:06 讲师用中文说：“你总告诉我这个世界应该是这样运作的，我拒绝接受，我厌倦于这件事了。注意力集中。”；00:06 - 00:11 播放电影原声：“I'm tired of the way you decide how the world is gonna run.”\n  * **画面**：左上方显示黑色英文句子“I'm tired of the way you decide how the world is gonna run.”（“I'm”上方有蓝色连读弧线，“tired of”下方有蓝色横线）；左下方播放电影片段，右下角有灰色小字“The Judge (2014)”。\n* **候选比对**：\n  * **Qwen 候选**：完全漏掉了 00:00 - 00:09 的所有中文讲解及前半句英文台词，仅从 00:09 左右的“how the world is gonna run?”开始记录。**不吻合。**\n  * **Gemini 候选**：语音转写与画面文字描述均与原视频一致（注：画面中“The Judge (2014)”实为浅灰/深灰色字体位于白底上，Gemini 写为“白色小字”略有偏差，但文字内容准确）。**基本吻合。**\n\n#### 2. 00:12 - 00:14（过渡英文评价）\n* **原视频内容**：\n  * **音频**：00:12 - 00:13 讲师说：“Very good.”\n* **候选比对**：\n  * **Qwen 候选**：误听为“Here we go.”。**不吻合。**\n  * **Gemini 候选**：准确记录为“Very good.”。**吻合。**\n\n#### 3. 00:14 - 00:38（关于《新概念一册》的中文讲解）\n* **原视频内容**：\n  * **音频**：讲师全程使用中文（夹杂英文单词 preposition）讲解：“复习 preposition。新一 35 课，如果各位啊，首先我们本课就复习，其实重点就说两个小的介词。如果各位介词完全就没学过，比如说你新一完全没见过，那我建议你回到新概念一册 35 课和 36 课单独去看一下这课。这课我讲了特别多特别多的介词，在接下来就是其实不停地用了，啊，这是第一个。”\n  * **画面**：00:12 起左上角出现棕色标签“复习 prep.”及下方文字“NCE1 L35”。\n* **候选比对**：\n  * **Qwen 候选**：出现了严重的机器翻译幻觉，将讲师的中文原话全部擅自翻译成了英文（“Review preposition. New One Thirty-Five. If you guys...”），且在末尾无中生有地多出了一句英文“The second one is New Concept Two Thirty-Nine and Thirty-Two.”（原视频对应的是“新概念二册 9 课和 33 课”，不仅语言被翻译，连数字 9 和 33 也被错译为 Thirty-Nine 和 Thirty-Two），紧接着才切回中文“二个呢……”。**严重不吻合。**\n  * **Gemini 候选**：保留了中文原话，但存在一处同音错别字：将 00:19 的“首先我们**本课**就复习”误写为“首先我们**本科**就复习”。画面记录与原视频一致。**除一处同音错字外基本吻合。**\n\n#### 4. 00:38 - 01:59（关于《新概念二册》及介词学习方法的讲解）\n* **原视频内容**：\n  * **音频**：讲师继续用中文讲解：“第二个呢，新概念二册 9 课和 33 课咱们都说过了。介词这个东西呢，实话实说，就是它千变万化，非常的多，用法也非常的细……”直至片段结束。\n  * **画面**：00:38 起左上角在“NCE1 L35”下方新增一行“NCE2 L9 & L33”，保持至片段结束。\n  * **细节核对（01:56 - 01:58）**：讲师原话为“就是我们总结出来的是规律，而**不叫**原因，对吧？”。\n* **候选比对**：\n  * **Qwen 候选**：从“二个呢”（漏了“第”字）开始恢复中文转写，后续文本内容与原视频音频完全一致；在 01:57 处准确记录为“而不叫原因”。但完全没有记录画面信息及时间码。**后半段文本吻合。**\n  * **Gemini 候选**：整体中文转写及时间段划分准确，画面更新记录（00:38 新增“NCE2 L9 & L33”）也完全准确；但在 01:57 处将“而不叫原因”多写了一个字，记为“而不叫做原因”。**基本吻合（存在一处一字之差）。**\n\n---\n\n### 二、总体评估结论\n\n1. **Qwen 机器转写候选**：**前半部分（00:00 - 00:38）严重失真**。存在大段漏转（00:00 - 00:09）、英文误听（Very good 误听为 Here we go），以及将中文语音强制翻译成英文并篡改数字的机器幻觉；00:38 之后的中文转写部分则较为准确（包括准确识别“不叫原因”）。无时间码与画面记录。\n2. **此前 Gemini 音画抽查候选**：**整体高度吻合**。时间码切分、中英文语音转写、左上角板书/标签变化均与原视频音画证据对应良好。仅需修正两处微小文字瑕疵：\n   * 00:19 处：“本科”应为“**本课**”；\n   * 01:57 处：“而不叫做原因”在原音频中实为“而**不叫**原因”。"
+    },
+    {
+      "state": "machine_review",
+      "source": {
+        "drive_file_id": "13BRSdl0UbSJ1j0RLnZS9n4580HOjTAPZ",
+        "series": "新概念英语第二册_L49-L96",
+        "directory": "Lesson_091_P160_091 单词",
+        "title": "091 单词",
+        "source_sha256": "4a97a45d8992c7ab6c7e2387feb3873c775cca416de82e9a3625d1eed22944d7",
+        "source_md5": "cec6df0b8cad5090b56fce91d50703d9",
+        "source_duration_seconds": 475.5
+      },
+      "clip": {
+        "clip_start_seconds": 177.75,
+        "clip_end_seconds": 297.75,
+        "clip_sha256": "26e692b903fcf18f951449a07aa491b9a1013620c5fe50bba101004c3d6c8573"
+      },
+      "qwen_vs_first_gemini_agreement": 0.631,
+      "selection_rule": "machine text agreement below 0.80; triage only, not measured accuracy",
+      "qwen_input_sha256": "7521ea4d2ef50fb849f01a03a366946a2fced53f79b46ccb19716c52d208bf80",
+      "prior_gemini_input_sha256": "7b7e0dc7483079ecc525e86f8c9d40ed47373546402a9cafc74205c0cd64704b",
+      "model_requested": "gemini-4-argon-high",
+      "model_returned": "gemini-4-argon-trial",
+      "finish_reason": "STOP",
+      "quality_flags": [],
+      "elapsed_seconds": 44.6,
+      "limitations": "Only this clip; model judgments and timecodes are not human verified.",
+      "review_text": "根据视频的音频与画面内容，对两份机器记录的独立复核及具体差异对比如下：\n\n### 一、 逐项差异与音画证据核对\n\n#### 1. 00:03 - 00:04 语音词汇识别\n* **原视频内容**：讲师在领读单词 `spy` 之前，提醒发音规则说的是“**浊化**”（/sp/ 浊化为 /sb/）。\n* **Qwen 候选**：记为“**着换**”，属于同音近音错字，**不吻合**。\n* **Gemini 候选**：记为“**浊化**”，**吻合**。\n\n#### 2. 00:22 - 00:23 例句②的动词时态与发音\n* **原视频内容**：画面例句②显示为 `He changed into all black clothes and spied on Lucy. L81`，讲师口中朗读的也是过去式“**spied**”。\n* **Qwen 候选**：记为原形“**spy** on Lucy”，**不吻合**。\n* **Gemini 候选**：记为“**spied** on Lucy”，**吻合**。\n\n#### 3. 00:25 - 00:26 讲师中文释义用词\n* **原视频内容**：讲师口头解释例句②时，原话发音为“他穿、换上了**某套儿**衣服”。\n* **Qwen 候选**：记为“**某套**衣服”，基本**吻合**（仅略去儿化音）。\n* **Gemini 候选**：记为“**那一套**衣服”，与实际发音有出入，**不吻合**。\n\n#### 4. 00:30 - 01:02 大段语音内容与电影片段（严重差异处）\n* **原视频内容**：\n  * **00:30 - 00:36**：讲师说：“**说 He has spied on that man for two weeks. 他监视那个男的已经两周了。**”（画面同步显示例句③ `He has spied on that man for two weeks.`）。\n  * **00:36 - 00:54**：讲师说：“**Continue，I need to spy on her, and we are running out of food. Please go and get some. 说我需要在这儿监视她，那但是我们又没有食物了，我们的食物用光耗尽了，你去买点儿吧，对吧？OK，读一遍这个单词，spy，very good。**”（画面同步显示例句④）。\n  * **00:54 - 00:57**：讲师说：“**那注意力集中，咱们看一个电影片段。**”（画面切入《星球大战前传3：西斯的复仇》电影片段及字幕）。\n  * **00:58 - 01:00**：电影角色原声对白：“**They asked you to spy on me, didn't they?**”\n  * **01:01 - 01:03**：讲师总结：“**哎，他们要求你监视我，对吧？**”\n* **Qwen 候选**：在 00:30 处将“说 He has spied on that man”误听为“so he has spy on thatman”；随后**出现了严重的机器复读幻觉**，连续重复生成了 14 遍视频中根本不存在的句子 `He has been spying on that man for two weeks.`，并**完全漏掉了 00:34 至 01:02 之间的所有中文讲解、例句④、电影引导词及电影原声对白**，直接跳接到了 01:02 的半句话“求你监视我，对吧？”。此段**严重不吻合**。\n* **Gemini 候选**：完整、准确地记录了上述所有中英文讲解、例句朗读及电影角色对白，且时间段划分（00:00-00:54、00:58-01:00、01:01-02:00）与原片高度对应，**完全吻合**。\n\n#### 5. 01:31 - 01:35 例句②后半句的中文翻译讲解\n* **原视频内容**：讲师在读完 `if you don't wear a watch` 后，用中文翻译道：“**如果你不戴表，你怎么知道几分几点了呢？**”\n* **Qwen 候选**：记为中英混杂的“如果你不戴**a watch, how do you know what time it is?**”，将讲师原本说的中文直接脑补篡改为了英文，**不吻合**。\n* **Gemini 候选**：记为“如果你不戴表，你怎么知道几、几分几点了呢？”，与原音频一致，**吻合**。\n\n#### 6. 画面视觉信息与时间码核对（仅 Gemini 候选包含）\n* **原视频内容**：\n  * **00:00 - 00:01**：画面停留在上一个词 `royal adj.` 及其4个例句，右上角有“单词造句指南”橙色框。\n  * **00:01 - 00:54**：画面切换为 `spy v.`，并在 00:10、00:17、00:28、00:36 依次浮现条目①至④（其中例句②的 `changed into` 确有下划线，例句④为缩写 `we're`）。\n  * **00:54 - 01:04**：播放电影片段，上方为台词字幕，下方标注出处 `Star Wars: Episode III - Revenge of the Sith (2005)`。\n  * **01:04 - 02:00**：切换为 `track n.`，依次在 01:10、01:18、01:35 浮现条目①至③。\n  * **激光笔轨迹核实**：在 **01:44 - 01:53** 期间，画面上确实出现了红色激光笔光点，先后在 `Brooks`、`has to` 以及 `keep track of` 处移动点按指引。\n* **Qwen 候选**：无画面信息记录。\n* **Gemini 候选**：对所有画面的切换时间码、板书拼写、下划线细节、电影出处及激光笔互动均做了准确记录，与原视频画面**高度吻合**。\n\n---\n\n### 二、 综合评估结论\n\n1. **Qwen 机器转写候选**：**不吻合，存在严重缺陷**。除“浊化/着换”、“spied/spy”等细节听辨错误外，在 00:34 - 01:02 区间发生了严重的模型重复生成幻觉（连续刷屏同一句错误英文），导致长达近半分钟的核心教学内容和电影原声完全丢失；在 01:32 处还将讲师的中文原话自行篡改成了英文。\n2. **此前 Gemini 音画抽查候选**：**高度吻合**。除 00:25 处将口语“某套儿衣服”轻微误听为“那一套衣服”这一处细微瑕疵外，其余全部中英文语音转写、角色区分、时间码节点以及画面板书变化均与原视频证据一致。"
+    },
+    {
+      "state": "machine_review",
+      "source": {
+        "drive_file_id": "17QysxlK0ozIMbQuVbdOHNwq0RE1rRQRv",
+        "series": "新概念英语第二册_L49-L96",
+        "directory": "Lesson_092_P164_092 单词 语法",
+        "title": "092 单词 语法",
+        "source_sha256": "26220ada082d9a962dffb817934c7be4e7eca6479333e4ec6a5b765be1245792",
+        "source_md5": "d44036fcfa2e7a2709e8e7c10cf44d70",
+        "source_duration_seconds": 595.966
+      },
+      "clip": {
+        "clip_start_seconds": 237.983,
+        "clip_end_seconds": 357.983,
+        "clip_sha256": "9594b8bd9fa2bfe510cf02fdd314116238d9ce6779f3996f8c27a29f1c78e1f0"
+      },
+      "qwen_vs_first_gemini_agreement": 0.634,
+      "selection_rule": "machine text agreement below 0.80; triage only, not measured accuracy",
+      "qwen_input_sha256": "032de3e6a4c00785e398782cbc1d408ae2d3011d46428abff97a54ad030c4ed8",
+      "prior_gemini_input_sha256": "c5e626ef04d9e9e6a17b5f5ff895061947d343bd254c68bd7fdd1d54afa4537a",
+      "model_requested": "gemini-4-argon-high",
+      "model_returned": "gemini-4-argon-trial",
+      "finish_reason": "STOP",
+      "quality_flags": [],
+      "elapsed_seconds": 131.42,
+      "limitations": "Only this clip; model judgments and timecodes are not human verified.",
+      "review_text": "以下是基于视频音频与画面的独立复核结果。\n\n### 一、 具体差异与证据核实\n\n#### 1. 00:00 - 00:01 开篇提问\n*   **原视频内容**：音频清晰读作“讽刺我呢吗？Are you being sarcastic?”。\n*   **候选对比**：\n    *   **Qwen**：记为“讽刺我呢吗？”，与音频吻合（但英文“beingsarcastic”漏了空格）。\n    *   **Gemini**：记为“讽刺我的吗？”，将语气词“呢”误听为“的”。\n\n#### 2. 00:13 - 00:15 课程回顾\n*   **原视频内容**：音频读作“咱们之前十五课学的是 in a weak voice”，对应画面例句末尾标注的“L15”（Lesson 15）。\n*   **候选对比**：\n    *   **Qwen**：记为“十五科学的是”，将“课”同音误写为“科”。\n    *   **Gemini**：记为“15课学的是”，与音画吻合。\n\n#### 3. 00:25 - 00:27 词汇解释\n*   **原视频内容**：讲师口误或特定表达，音频清晰发声为“讽刺的口音，okay”。\n*   **候选对比**：\n    *   **Qwen**：记为“讽刺的口音”，忠实还原了原音频发音。\n    *   **Gemini**：记为“讽刺的口吻”，属于按语境常理进行的修正，与实际发音不符。\n\n#### 4. 00:31 - 01:02 核心教学段落（重大差异）\n*   **原视频内容**：\n    *   **00:31 - 00:39 音频**：“为什么你总是这么的爱讽刺别人呢？be so sarcastic。再读一遍这个单词，sarcastic，very good。”\n    *   **00:39 - 01:02 音频**：“Next one, tone, tone，就是一种语气、语调，啊你可以理解为叫做 body language，我们的身体语言。注意 body language 它的定义并不一定非得是身体做的，只要是 non-verbal 的，只要是这个不是语言类的，都可以叫 body language。Tone，语气、语调，也可以叫 body language。啊，对，我们的身体语言。”\n    *   **00:39 - 01:02 画面**：切换至单词 `tone n.` 及音标 `/təʊn/`，上方配图左起依次为：**灰蓝色大笑表情、橙黄色挑眉担忧表情、灰蓝色闭眼不悦表情**。\n*   **候选对比**：\n    *   **Qwen**：**出现严重机器幻觉与漏记**。从 00:32 起完全丢失原音频，凭空生成并循环重复了5遍英文句子“Why do you always so love to be sarcastic? Ah, in the first sentence, you can see that the word sarcastic is used. So sarcastic.”，直到 01:02 才重新接回“对，我们的身体语言”。整个关于 `tone` 和 `body language` 的讲解全部漏掉。\n    *   **Gemini**：**语音转写完全吻合**，准确记录了该段全部中英文讲解。但**画面描述存在两处细节错误**：① 时间码标为 `00:39 - 01:00`，而实际上第一条例句在 `01:02` 才出现；② 将前两个表情图标错误描述为“蓝色难过、黄色眨眼笑”，与画面实际的“灰蓝大笑、橙黄担忧”相反或不符。\n\n#### 5. 00:00 - 00:02 画面配图色彩\n*   **原视频内容**：画面左上角女性撇嘴照片，可见明显的棕色发色、肤色及粉色唇色，为**彩色照片**。\n*   **候选对比**：\n    *   **Qwen**：未包含画面描述。\n    *   **Gemini**：误判为“黑白照片”，与画面事实不符。\n\n#### 6. 01:08 - 01:13 例句朗读与画面文字差异\n*   **原视频内容**：画面例句 ② 显示为 `'You must be Annie,' he said in a friendly tone. L17`，但讲师在 01:11 - 01:13 朗读时，口误读成了“he said in a friendly **voice**”。\n*   **候选对比**：\n    *   **Qwen & Gemini**：两份记录在语音部分均准确记为 `in a friendly voice`，Gemini 在画面部分也准确记为 `in a friendly tone`，均吻合各自维度的事实。\n\n#### 7. 01:34 - 01:36 讲师口头停顿\n*   **原视频内容**：音频读作“Tone 这个单词很常用的一个短……句子吧”。（讲师原本想说“短语”，说了一半改口为“句子”）。\n*   **候选对比**：\n    *   **Qwen**：记为“短句子嘛”，基本吻合。\n    *   **Gemini**：记为“短短句子吧”，多记了一个“短”字。\n\n#### 8. 01:51 - 01:54 语法部分开场\n*   **原视频内容**：\n    *   **画面**：01:51 切换为 `Pattern drill` 页面。\n    *   **音频**：01:52 - 01:54 讲师读作“呃，单词很快，Pattern drill 本课语法呢……”。\n*   **候选对比**：\n    *   **Qwen**：将“单词很快”记对，但将英文“Pattern drill”同音误听为中文“Pattern只有”。\n    *   **Gemini**：将英文“Pattern drill”记对，但将“单词很快”误听为“单名词很快”。\n\n---\n\n### 二、 综合评估结论\n\n1.  **Qwen 机器转写候选**：**整体不吻合（存在严重缺陷）**。虽然在“讽刺我呢吗”、“口音”、“单词很快”等个别字词上比另一份更贴近原音，但在 **00:32 - 01:02** 期间发生了严重的机器复读幻觉，导致近30秒的核心教学内容完全丢失，且将“Pattern drill”误转写为“Pattern只有”，缺乏画面信息记录。\n2.  **Gemini 音画抽查候选**：**整体高度吻合，仅局部细节有瑕疵**。完整还原了全片语音和画面结构，无漏段或幻觉。仅在个别字词听辨（如“我的吗”、“口吻”、“单名词”）以及两处画面细节描述（00:00 女性照片误判为黑白、00:39 表情图标颜色与情绪对应错误）上与原视频存在细微偏差。"
+    },
+    {
+      "state": "machine_review",
+      "source": {
+        "drive_file_id": "1eZyhDxMG1mBbBZtRKUOvnWso1WU71z6E",
+        "series": "新概念英语第二册_L01-L48",
+        "directory": "Lesson_022_P082_L022 语法 + 单词",
+        "title": "L022 语法 + 单词",
+        "source_sha256": "32e68d63920d9d766643dc628795a1f4c330dcf579826dc36f545f4e48860fdd",
+        "source_md5": "97ba806885f054c228d68ace299c1f3a",
+        "source_duration_seconds": 923.5
+      },
+      "clip": {
+        "clip_start_seconds": 401.75,
+        "clip_end_seconds": 521.75,
+        "clip_sha256": "16a3348026cae9cacabc9d2898c54610683610e58230a30431ea7bfd4c9670cc"
+      },
+      "qwen_vs_first_gemini_agreement": 0.658,
+      "selection_rule": "machine text agreement below 0.80; triage only, not measured accuracy",
+      "qwen_input_sha256": "10d4c757001d1838043279e404451c120231a5de9dc17b1c098a9e81bbd8f9e3",
+      "prior_gemini_input_sha256": "5d0e59ea0c267d540f65ce11e05890161b26574e19ba7bc1fef79e673daf270a",
+      "model_requested": "gemini-4-argon-high",
+      "model_returned": "gemini-4-argon-trial",
+      "finish_reason": "STOP",
+      "quality_flags": [],
+      "elapsed_seconds": 55.95,
+      "limitations": "Only this clip; model judgments and timecodes are not human verified.",
+      "review_text": "依据视频的音频与画面内容，对两份机器记录的具体差异及吻合度复核如下：\n\n### 一、 语音转写具体差异核对\n\n**1. 片段开端（00:00 - 00:19）**\n*   **原视频语音**：“age，啊上了岁数以后在他的这个年龄呢，他起的就会非常的早，啊我们就叫觉少了，对吧？gets up very early。然后注意一个小的时态，在这个地方其实我用到了动词和动词的变化，就是一般现在时，get后边要加一个小的s，非常容易忘啊！我第一遍……”\n*   **Qwen 候选**：将 00:00 - 00:18 的中文讲解误翻成了英文（“age, ah, when he gets older... Behind to add a small as, very easy to forget. Ah, I first.”），且漏译了“我们就叫觉少了，对吧”，随后在 00:18 处突兀接回中文“s，非常容易忘啊！”。**与原音频不吻合。**\n*   **Gemini 候选**：准确记录了中文内容。细微出入在于将三次“小的”（00:09“小的时态”、00:17“小的s”、00:40“小的电影片段”）均写成了“小小的”，且00:25处“我既然都很容易错”漏了“很”字。整体语义与原音频基本吻合。\n\n**2. 电影片段台词（00:48 - 01:03）**\n*   **原视频语音与字幕**：播放《星球大战前传3》片段，包含英文对白及中英字幕：“What kind of nonsense is this? Put me on the council and not make me a master? It's never been done in the history of the Jedi. It's insulting. Calm down, Anakin. You have been given a great honour. To be on the council at your age... it's never happened before.”\n*   **Qwen 候选**：完整转写了这段电影英文对白。**与原音画吻合。**\n*   **Gemini 候选**：在 00:47“OK。”与 01:03“at your age.”之间完全漏掉了整段电影对白。**存在明显漏记。**\n\n**3. 语序与口误细节（01:27 - 01:48）**\n*   **原视频语音**：01:27 为“你结结合上下文”；01:36 为“特指英伦啊，就特指英吉利海峡了”；01:46 为“那你可以管它也叫 channel”。\n*   **Qwen 候选**：忠实保留了“结结合”、“啊，就”以及“你可以管它也叫 channel”的原话语序。**吻合度高。**\n*   **Gemini 候选**：对口误进行了顺滑处理（删去了重复的“结”和语气词“啊”），并将 01:46 语序改写为“那你管它也可以叫channel”。\n\n**4. 英文口语误听（01:52 - 01:54）**\n*   **原视频语音**：老师说“OK, very good.”\n*   **Qwen 候选**：误听并转写为中文“OK，玩一个。”**与原音频不符。**\n*   **Gemini 候选**：准确记录为“OK，very good。”**与原音频吻合。**\n\n---\n\n### 二、 画面内容变动核对（针对 Gemini 候选的视觉记录）\n\nQwen 候选未提供画面描述；对 Gemini 候选的画面变动记录核对如下：\n\n1.  **00:00 - 00:18 顶部方框文字与蓝色勾选**：\n    *   **原视频画面**：橙色方框第一行文字为“**网：v.+v.变化**”。在 00:00 时，仅第四行“结合习惯用法”右侧有蓝色对勾；在 **00:13** 时，第一行“网：v.+v.变化”右侧也画上了一个蓝色对勾。\n    *   **Gemini 候选**：漏掉了第一行的“网：”字，且未记录 00:13 处新增的第一个蓝色对勾。\n2.  **00:09 - 00:37 蓝笔圈画时间与位置**：\n    *   **原视频画面**：例句 ④ “he gets up very early.”下方的蓝色下划线从 00:00 起一直覆盖在“he gets up very early”整句下方（并非仅在“gets up”下方）；老师在 **00:18** 给“gets”的字母 `s` 画上蓝色圆圈。\n    *   **Gemini 候选**：将下划线范围缩窄记为“gets up”，且将画圈时间宽泛记为 00:09 - 00:37（实际动作发生在 00:18）。\n3.  **00:38 - 01:05 电影片段画面**：\n    *   **原视频画面**：00:43 老师用蓝笔圈出顶部的 `at your age`，左侧播放《星球大战前传3：西斯的复仇》片段，右侧有电影中英文片名标注。\n    *   **Gemini 候选**：**记录完全吻合。**\n4.  **01:06 - 01:59 `channel` 页面元素与笔记**：\n    *   **原视频画面**：\n        *   左侧音标写为 `/ˈtʃænəl/`，音标上方并无蓝色短横线；在 **01:09**，老师在音标中的 `tʃæ` 与 `nəl` 下方分别画了两道蓝色短横线（用于划分音节，并非在单词首字母 `c` 下方画线）。\n        *   在 **01:15 - 01:17**，老师在左上角地图的“ENGLISH CHANNEL”处画了一个蓝色圆圈，并在周围点画了几个蓝点；在 **01:37** 又在地图该处画了一道蓝线。\n        *   在 **01:53**，`channel n.` 下方出现 `① across the channel`。\n    *   **Gemini 候选**：将音标误记为 `/ˈtʃænl/`；弄错了 01:09 蓝线的描画位置；完全遗漏了 01:15 - 01:17 及 01:37 在地图上的蓝笔圈画动作；01:53 新增例句项的记录准确。\n\n---\n\n### 三、 综合结论\n\n*   **Qwen 机器转写候选**：包含电影原声对白，且后半段中文口语细节还原较好；但存在两处明显错误（00:00 - 00:18 将中文语音错误翻译为英文，01:53 将“very good”误听为“玩一个”），且无画面信息记录。\n*   **Gemini 音画抽查候选**：全段中文授课语音及“very good”转写准确，但完全漏记了 00:48 - 01:03 的电影英文台词；画面描述大体框架正确，但在板书勾选变化（00:13）、地图圈画（01:15、01:37）以及音标拼写与画线位置（01:09）上存在多处细节偏差。"
+    },
+    {
+      "state": "machine_review",
+      "source": {
+        "drive_file_id": "1qvdp6-PpiLMBct9h8Z5OxMbF4k27YbuF",
+        "series": "新概念英语第二册_L01-L48",
+        "directory": "Lesson_026_P094_L026 文章",
+        "title": "L026 文章",
+        "source_sha256": "a17b061848f097716aad0c3e99fff622601a09f55afa7cd36f79dc3b4cf4a14a",
+        "source_md5": "578baf425c1e3703c970776575d1e408",
+        "source_duration_seconds": 432.866
+      },
+      "clip": {
+        "clip_start_seconds": 156.433,
+        "clip_end_seconds": 276.433,
+        "clip_sha256": "8d81ce826c28517551dc0d0b279b829682bb03f35e6fd136c825cfe19a86c36d"
+      },
+      "qwen_vs_first_gemini_agreement": 0.661,
+      "selection_rule": "machine text agreement below 0.80; triage only, not measured accuracy",
+      "qwen_input_sha256": "e6ecdb88e6ab13b8ce621eb5d35ad0c78200bd485512c3fcb2892817cad780bd",
+      "prior_gemini_input_sha256": "d2ace4fcffb912ce03fdfab02b70655e4aa99b2b6889bf23443aab355a8206e3",
+      "model_requested": "gemini-4-argon-high",
+      "model_returned": "gemini-4-argon-trial",
+      "finish_reason": "STOP",
+      "quality_flags": [],
+      "elapsed_seconds": 304.21,
+      "limitations": "Only this clip; model judgments and timecodes are not human verified.",
+      "review_text": "根据所附视频的音频与画面独立复核，两份机器记录与原视频的具体差异、证据及吻合度判断如下：\n\n### 一、具体差异与原视频证据\n\n#### 1. 00:05 - 00:08 语音内容\n- **原视频内容**：在 00:05-00:06 处，讲师说的是“是吧”（尾音略带合口，但声母为 sh）；在 00:07-00:08 处，讲师说的是“日常的这些东西”（其中“东西”的“西”字吞音，听感接近“日常的这些东”）。\n- **两份记录对比**：\n  - **Qwen 候选**：将“是吧”记为“对吧”（不吻合）；将后半句记为“日常的这些东西”（与原话意图吻合，补全了吞音的“西”）。\n  - **Gemini 候选**：将“是吧”准确记为“是吧”（吻合）；但将“日常的这些东（西）”误听为“日常的壁纸”（不吻合，原音频中完全没有“壁纸”的发音）。\n\n#### 2. 00:24 - 00:53 语音内容（重大差异）\n- **原视频内容**：讲师在此时间段全程使用中文夹杂少量英文单词进行讲解：\n  - 00:24 - 00:35：“说经常啊，你看，在原文当中我们给的是，呃，鉴赏，我跟大家拓展了一个单词，呃拓展了一个它的意思，叫做欣赏，对吧？”（注：00:30 处“鉴赏”与 00:59 处的“鉴赏能力”发音一致）。\n  - 00:35 - 00:47：“说很多小孩子经常呢，更加的说去能欣赏这个现代艺术，啊现代这些图片，better than anyone else。”\n  - 00:47 - 00:53：“比、比更好，比谁呢？比其他的任何人。”\n- **两份记录对比**：\n  - **Qwen 候选**：出现严重的机器转写故障（语种幻觉与死循环）。不仅将 00:24-00:45 的中文讲解错误翻译成了英文（\"Say often, ah, you see, in the original text...\"），还在后面连续重复了 12 次 \"Better than anyone else.\"，并漏掉了 00:47-00:53 的中文讲解“比、比更好，比谁呢？比其他的任何人”。（完全不吻合，但其在英文幻觉中将 00:30 的词译为 appreciation，侧面对应了“鉴赏”的发音）。\n  - **Gemini 候选**：正常记录了中文语音，但存在两处细节偏差：① 将 00:30 处的“鉴赏”误听为“介绍”（不吻合）；② 00:32 处原话为“拓展了一个它的意思”，Gemini 漏掉了“一个”二字（轻微漏字）。其余内容与原视频吻合。\n\n#### 3. 01:31 - 01:33 语音内容\n- **原视频内容**：01:31 读完英文 `good or not` 后，01:32 讲师说的是“说是否啊，说我的这个……”。\n- **两份记录对比**：\n  - **Qwen 候选**：记为“说是否啊？说我的这个啊”（吻合）。\n  - **Gemini 候选**：记为“说是是否啊”（多了一个“是”字，不吻合）。\n\n#### 4. 画面内容与动态光标时间码（仅 Gemini 候选包含，Qwen 候选无画面记录）\n经核对视频画面，Gemini 候选记录的常驻文字（左侧英文课文、右上角“胶囊助学计划”）、插图及讲师状态均与原视频完全吻合。但在“动态光标指示变化”中，有一处位置描述与原视频画面不符：\n- **01:55 - 01:56 光标位置**：\n  - **原视频证据**：01:55 红色圆点光标出现在左下方最后一行 `She` 的正下方，随后向右移动，在 01:56 停留在 `yesterday.` 的下方。\n  - **Gemini 候选**：描述为“短暂停留在最后一行 `She came into my room yesterday.` 的 `She came` 处”，漏掉了光标划向 `yesterday` 的过程及最终停留位置（部分不吻合）。\n- 其余光标时间码（00:11-00:13 指向 `that`、00:26-00:46 停留在 `appreciate`、00:46-00:53 移至 `better than anyone else`、01:19-01:21 指向 `My sister is only seven`、01:33-01:35 指向 `whether`、01:50-01:52 指向 `or not`）均与原视频画面吻合。\n\n---\n\n### 二、总体复核结论\n\n1. **Qwen 机器转写候选**：**部分吻合，存在严重转写故障**。虽准确识别了 00:07 的“这些东西”及 00:30“鉴赏”的语义，但在 00:24-00:53 区间发生了严重的英文翻译幻觉与文本死循环重复，且完全缺失画面信息。\n2. **Gemini 音画抽查候选**：**整体吻合度高，仅存个别听感误判与细节偏差**。语音转写完整流畅，无幻觉与死循环，主要错误是将 00:07 的“这些东（西）”误听为“壁纸”、将 00:30 的“鉴赏”误听为“介绍”；画面与时间码记录基本准确，仅 01:55-01:56 处对光标移动到 `yesterday` 的位置描述不够准确。"
+    },
+    {
+      "state": "machine_review",
+      "source": {
+        "drive_file_id": "1cR0w2YajLPi066nU29iXwf5-TOWgsbqr",
+        "series": "新概念英语第二册_L01-L48",
+        "directory": "Lesson_025_P090_L025 语法",
+        "title": "L025 语法",
+        "source_sha256": "49770637258acbeb10812cd8c6f1f180397685b9e965281cfa06465c3f208529",
+        "source_md5": "99390c8f6f7e5222990c363d11439f38",
+        "source_duration_seconds": 1604.866
+      },
+      "clip": {
+        "clip_start_seconds": 742.433,
+        "clip_end_seconds": 862.433,
+        "clip_sha256": "5bbd85cd34c26d6df91825ea8996a5f2ec3e010cfecc1ab66a36e4874d2357ca"
+      },
+      "qwen_vs_first_gemini_agreement": 0.687,
+      "selection_rule": "machine text agreement below 0.80; triage only, not measured accuracy",
+      "qwen_input_sha256": "d63b4af4c884ed227565adf072f9cfecb9b4f53a2e7a6ce19881caa6439b2a91",
+      "prior_gemini_input_sha256": "ae256faf6cf5d3304067dc541b5d4a48f4bae9fdbb81bdf02e4e818535a6fa8b",
+      "model_requested": "gemini-4-argon-high",
+      "model_returned": "gemini-4-argon-trial",
+      "finish_reason": "STOP",
+      "quality_flags": [],
+      "elapsed_seconds": 182.17,
+      "limitations": "Only this clip; model judgments and timecodes are not human verified.",
+      "review_text": "根据视频的音频与画面内容，对两份记录进行独立复核，具体差异及证据如下：\n\n### 1. 00:05 - 00:07 老师讲解语气与用词\n* **原视频内容**：音频中老师说的是“这是连的还是谓语”（肯定陈述语气），同时 00:05 画面新增文字“连接谓语 2”。\n* **Qwen 候选**：“这是连的还是谓语？”——文字吻合，但误标为问号。\n* **Gemini 候选**：“这儿连的还是谓语，”——将“这是”记为“这儿”，标点吻合陈述语气。\n\n### 2. 00:11 - 00:12 句首连词\n* **原视频内容**：音频在 00:11 处清楚说出“再然后再来一个句子说”。\n* **Qwen 候选**：“再然后再来一个句子说”——完全吻合。\n* **Gemini 候选**：“然后再来一个句子，说”——漏掉了句首的“再”字。\n\n### 3. 00:36 - 00:37 形容词重音/叠词\n* **原视频内容**：音频在 00:36 处说的是“我们看一个小的电影片段”。\n* **Qwen 候选**：“我们看一个小的电影片段”——吻合。\n* **Gemini 候选**：“我们看一个小小的电影片段”——多写了一个“小”字。\n\n### 4. 01:00 - 01:02 副词重读\n* **原视频内容**：音频在 01:00 处说的是“不妨可以再回来看一遍”。\n* **Qwen 候选**：“不妨可以再回来看一遍”——吻合。\n* **Gemini 候选**：“不妨可以再回来再看一遍”——多写了一个“再”字。\n\n### 5. 01:03 - 01:32 电影片段台词与字幕核对\n* **原视频内容**：\n  * **01:04**：台词与英文字幕均为“Who appointed the Batman?”，中文字幕为“谁给蝙蝠侠的权力？”。\n  * **01:06 - 01:08**：中文字幕为“我们给的，我们这些看着恶人肆意横行坐视不管的人”，英文字幕为“...and let scum take control of our city.”。\n  * **01:11 - 01:12**：中文字幕为“当敌军兵临城下的时候…”。\n  * **01:17 - 01:19**：音频台词为“And it wasn't considered an honor, it was considered a public service.”，但画面下方英文字幕显示为“It wasn't considered an honor, it was a public service.”。\n  * **01:21 - 01:23**：01:21 处英文字幕为“Harvey, the last man that they appointed”，01:22 处切换为“to protect the republic was named Caesar,”。\n  * **01:24 - 01:26**：中文字幕为“结果他变成了独裁家 那好”。\n* **Qwen 候选**：\n  * 01:04 漏掉了句首的“Who”，记为“Appointed the Batman.”。\n  * 01:07 将“let scum”误拼写为连词“letscum”。\n  * 01:18 忠实记录了音频中的“considered”（吻合音频）。\n* **Gemini 候选**：\n  * 语音转写部分直接用“（电影片段播放中）”略过，未在第一部分转写英文语音。\n  * 第二部分画面字幕记录中存在多处看错字的情况：01:04 将“谁给”误记为“谁指派了”；01:06 将“肆意横行”误记为“群意横行”；01:11 将“当敌军兵临城下”漏字记为“当敌军临城下”；01:22 将字幕中的“was named Caesar”拆行位置记混；01:24 将“那好”误记为“刚好”。（01:17 字幕记录未带“considered”，与画面字幕吻合）。\n\n### 6. 01:35 - 01:44 老师复述电影台词时的口误与重复\n* **原视频内容**：老师在 01:35 处说“You... You either die a hero”，在 01:41 处说“or living... live long enough to become a villain”。\n* **Qwen 候选**：“You you either die a hero... or live live long enough”——记录了重复词，但将 01:41 处的“living”听成了“live”。\n* **Gemini 候选**：“You either die a hero... or live long enough”——直接润色掉了老师口语中的重复词与自我纠正（“You”和“living”）。\n\n### 7. 01:49 - 01:50 连词连读\n* **原视频内容**：老师在演示两种发音：“either(/ˈiːðər/) or, or either(/ˈaɪðər/) or，发音都OK的”。\n* **Qwen 候选**：“either or, either or”——漏掉了中间表示“或者”的英文连词“or”。\n* **Gemini 候选**：“either... or...，或者either... or...”——将老师说的英文“or”意译成了中文“或者”。\n\n### 8. 01:55 - 01:59 片段结尾口误与截断处\n* **原视频内容**：\n  * **01:55 - 01:56**：老师说“either A or... A or B”（有明显重复口误）。\n  * **01:59**：在片段结束瞬间，老师说出“叫 neither A...”。\n* **Qwen 候选**：准确记录了“either A or A or B”的口误，但结尾停在“neither”，漏掉了最后发出的“A”。\n* **Gemini 候选**：将口误润色为“either A or B”，但结尾准确记录了“叫neither A...”。\n\n---\n\n### 综合评价\n* **Qwen 机器转写候选**：纯音频转写完整度高，包含了电影原声及老师的大部分口语重复（如 01:35、01:55），但在电影台词开头漏了“Who”、将“let scum”连写，且结尾漏了最后一个字母“A”。\n* **Gemini 音画抽查候选**：对老师的口语进行了书面化润色（删去了重复词，增减了个别单字），电影部分未做语音转写；其优势是提供了详细的画面板书时间轴，但在抄录电影中文字幕时出现了多处错别字（如“指派”、“群意”、“刚好”等）。"
+    },
+    {
+      "state": "machine_review",
+      "source": {
+        "drive_file_id": "1esXVgusWwWaGZLspkVuHZgaaOpWs8N6g",
+        "series": "新概念英语第二册_L01-L48",
+        "directory": "Lesson_015_P058_L015 听说读写复述练习",
+        "title": "L015 听说读写复述练习",
+        "source_sha256": "e4f45f803ea8b24ca7227c608e01f577881b2b3dfe47983d86df72871f89f960",
+        "source_md5": "9968efb4c620585d52d1897887e95754",
+        "source_duration_seconds": 545.666
+      },
+      "clip": {
+        "clip_start_seconds": 212.833,
+        "clip_end_seconds": 332.833,
+        "clip_sha256": "47929cda6a535ce15e85b219f873d674047acfcfbc3eed0ab0fa154da3976b8c"
+      },
+      "qwen_vs_first_gemini_agreement": 0.699,
+      "selection_rule": "machine text agreement below 0.80; triage only, not measured accuracy",
+      "qwen_input_sha256": "64abe1782ac18d0b32cfcc889d477a885ee9d309e908cba4e24a109271b3af81",
+      "prior_gemini_input_sha256": "81635d6b2ca8e8655796b0b4d9999aa9fca9cfdbac3b7e418d8565b494cd53ce",
+      "model_requested": "gemini-4-argon-high",
+      "model_returned": "gemini-4-argon-trial",
+      "finish_reason": "STOP",
+      "quality_flags": [],
+      "elapsed_seconds": 242.68,
+      "limitations": "Only this clip; model judgments and timecodes are not human verified.",
+      "review_text": "根据所附视频的音频与画面独立复核后，两份机器记录的具体差异、原视频可辨认的证据及相对时间逐项核对如下：\n\n---\n\n### 一、逐项核对与差异分析\n\n#### 1. 00:15 - 00:17 性别代词用字（同音异字）\n* **原视频内容与证据**：\n  * **语音（00:15 - 00:17）**：老师发音为“tā de mì shū gào su nǐ shén me wèn tí le”。\n  * **画面（00:00 - 00:46）**：屏幕第2题原文为 `2. His secretary told me that he would see me.`，对应代词为 `His`（男性“他的”）。\n* **两份记录对比**：\n  * **Qwen候选**：写为“**他**的秘书告诉你什么问题了？”——与画面英文 `His` 吻合。\n  * **Gemini候选**：写为“**她**的秘书告诉你什么问题了？”——同音字误写，与画面 `His` 不符。\n\n#### 2. 00:19 - 00:21 词语辨析（“决定” vs “确定”）\n* **原视频内容与证据**：\n  * **语音（00:19 - 00:21）**：老师原话发音为“那您自己**决定**吧”（j-ué，舌面音清晰，非 q-uè）。\n* **两份记录对比**：\n  * **Qwen候选**：误写为“那您自己**确定**吧”。\n  * **Gemini候选**：准确记录为“那您自己**决定**吧”。\n\n#### 3. 00:33 - 00:34 词语辨析（“换原形” vs “还原形”）\n* **原视频内容与证据**：\n  * **语音（00:33 - 00:34）**：老师原话发音为“did 提前，动词**换**原形”（四声 huàn）。\n* **两份记录对比**：\n  * **Qwen候选**：准确记录为“动词**换**原形”。\n  * **Gemini候选**：误写为“动词**还**原形”。\n\n#### 4. 00:40 - 00:41 画面笔迹核对（Gemini 画面描述）\n* **原视频内容与证据**：\n  * **画面（00:40 - 00:41）**：老师在读完 `I felt very nervous.` 说“did 提前”时，从第4题的 `I` 下方往题号 `4.` 左侧画了一条**指向句首的蓝色带箭头弧线**（示意将助动词 did 移到句首前面），随后在 00:42 - 00:46 依次在 `(How)`、`very nervous`、`(Why)` 下方画了蓝色下划线。\n* **两份记录对比**：\n  * **Qwen候选**：未记录画面。\n  * **Gemini候选**：描述为“在第 4 题题号‘4.’上画了一个圈/弧线；在‘very nervous’下方画蓝色下划线；在‘(How)’及‘(Why)’下方分别画蓝色下划线”，位置和时间与原视频基本吻合（更准确地说是带箭头的左指弧线）。\n\n#### 5. 00:59 - 01:02 口语卡顿/修正核对\n* **原视频内容与证据**：\n  * **语音（00:59 - 01:02）**：老师说“您先把它……”时中间有一处轻微的吞音/嗓音卡顿，随后接“肯定句，把 not 去掉”。\n* **两份记录对比**：\n  * **Qwen候选**：顺滑处理为“您先把它变肯定句”。\n  * **Gemini候选**：记录了口语卡顿特征“您先把它变成肯——肯定句”。（该处卡顿音节较模糊，无法完全确定具体字词，两份记录对核心语义“肯定句”的捕捉均正确）。\n\n#### 6. 01:26 - 01:57 严重漏转与机器重复幻觉（核心差异点）\n* **原视频内容与证据**：\n  * **语音（01:26 - 01:36）**：“他们能支付得起什么？你把它变成我们新一就讲过的叫做 What couldn't the firm afford to pay?”\n  * **语音（01:37 - 01:45）**：“Why 是一个道理，变成了 Why couldn't the firm 巴拉巴拉巴拉巴拉（blah blah blah...），剩下照抄，OK？变成这个思路啊。”\n  * **语音（01:46 - 01:56）**：“再来，第六个。Twenty people had left. 过去完成时 had 提前，How many，那对 twenty 提问就 How many people had left，对吧？非常简单。”\n  * **画面（01:46 - 01:57）**：01:46 新增显示 `6. Twenty people had left. (How many)`；01:52 - 01:54 在 `Twenty` 下方画蓝色下划线；01:56 新增显示 `7. I thought he would tell me to leave too. (What)`。\n* **两份记录对比**：\n  * **Qwen候选**：**严重失真**。在 01:26“他们能”之后彻底丢失中文，将“Why 是一个道理”误译/幻觉为英文 `Why is a reason?`，随后陷入严重的模型重复循环，连续重复了23遍 `Why couldn't the firm?` 及1个 `Why`，并**完全漏掉了 01:42 - 01:56 的所有讲解及第6题全文**，直接跳到了 01:57 的 `I thought he would tell me to leave too.`。\n  * **Gemini候选**：**高度吻合**。完整且准确地转写了 01:26 - 01:56 的全部中英文讲解及第6题内容，仅在 01:37 处将“Why 是**一个**道理”记为“Why 是**一样的**道理”（原音频 01:37 - 01:38 发音为三声“一个 yī gè”，属于轻微听辨偏差）。\n\n---\n\n### 二、总体核验结论\n\n1. **Qwen 机器转写候选**：\n   * **前半段（00:00 - 01:26）**基本吻合（准确识别了 00:15“他的”和 00:34“换原形”，但在 00:20 误将“决定”听成“确定”）。\n   * **后半段（01:26 - 01:57）严重不合格**：出现严重的机器转写幻觉（英文误译+连续23次重复短语）以及长达30秒的内容漏转（第5题后半部分讲解及第6题全部内容丢失）。\n\n2. **此前 Gemini 音画抽查候选**：\n   * **整体高度吻合**：完整覆盖了 00:00 - 02:00 的全部语音内容与画面PPT/笔迹变化，时间码切分准确，无幻觉、无大段漏字。\n   * **仅存3处细微偏差**：① 00:15“他的”误作“她的”；② 00:34“动词换原形”误作“动词还原形”；③ 01:37“是一个道理”误作“是一样的道理”。"
+    },
+    {
+      "state": "machine_review",
+      "source": {
+        "drive_file_id": "1AcD6j63vaIJpWUGFtO8DjVKiC7AgHUO_",
+        "series": "新概念英语第二册_L49-L96",
+        "directory": "Lesson_066_P070_066 语法",
+        "title": "066 语法",
+        "source_sha256": "23c835ea2bc48ecb35e8e888fba641b0b4bee650048135e3816fa57244a3b28f",
+        "source_md5": "f2006b3edba54480e451ba15468e7671",
+        "source_duration_seconds": 747.133
+      },
+      "clip": {
+        "clip_start_seconds": 313.567,
+        "clip_end_seconds": 433.567,
+        "clip_sha256": "ec35178e19dc7ecea271531e63bb2b966d29fd72f99232a6afd159cd0a5c8f24"
+      },
+      "qwen_vs_first_gemini_agreement": 0.738,
+      "selection_rule": "machine text agreement below 0.80; triage only, not measured accuracy",
+      "qwen_input_sha256": "cc112cdb38bf8bfa71b494c3dd5747e66883675988ab54e8975d3969e761d866",
+      "prior_gemini_input_sha256": "3e35ee9cbaf688ae3020e7f001669d49a0ce38ebe15b4dcda60e789831a14704",
+      "model_requested": "gemini-4-argon-high",
+      "model_returned": "gemini-4-argon-trial",
+      "finish_reason": "STOP",
+      "quality_flags": [],
+      "elapsed_seconds": 186.63,
+      "limitations": "Only this clip; model judgments and timecodes are not human verified.",
+      "review_text": "以下基于所附视频的音频与画面进行独立听看复核，对两份机器记录的具体差异及吻合度进行逐项比对：\n\n### 一、 语音转写逐项核对\n\n1. **00:00 - 00:01**\n   * **原视频音频**：讲师说的是“Next one. 接下来。”\n   * **候选比对**：Qwen 漏掉了开头的“Next”，仅记为“one”；Gemini 记录为“next one”，与原音频吻合。\n\n2. **00:24 - 00:26**\n   * **原视频音频**：讲师说的是“只不过我变成了一般过去时”。\n   * **候选比对**：Qwen 准确记录了“我”字；Gemini 漏掉了“我”字，记为“只不过变成了一般过去时”。\n\n3. **00:46 - 00:50**\n   * **原视频音频**：讲师用中文说：“这个是他们两者的区别，啊，就很简单，今天就学这一个小的结构。”\n   * **候选比对**：\n     * Qwen 从“区别”开始将原音频的中文错误翻译成了英文（“difference, ah, it's very simple. Today we learn this small structure.”），与原语音严重不符。\n     * Gemini 保持了中文记录，但将“这一个小的结构”多记了一个“小”字，写成了“这一个小小的结构”。\n\n4. **00:50 - 01:17**\n   * **原视频音频**：讲师全程用中文夹杂英文例句讲解：“那这个结构呢，它还有一个翻译，它不是说找别人怎么怎么样了，它是另外一个翻译叫意外不幸的遭遇，翻译成被。比如说，Gary had his nose broken in a fight. 首先你看结构是不是 have something done？这是妥妥没问题的。呃，in a fight，在打架当中。那打架当中他找别人把他的鼻子给打、打骨折了？翻译不通，对吧？”\n   * **候选比对**：\n     * Qwen 将 00:50 至 01:10 的中文讲解全部错误翻译成了英文（如“That this structure... Translate into something... First, you see the structure is not have something that...”），且在 01:10 处完全漏掉了“在打架当中。那打架当中他找别人把他的鼻子给打、打骨折了？翻”这一整段话，直接跳到了“译不通”。此段 Qwen 严重失真。\n     * Gemini 完整且准确地记录了上述中文讲解及英文例句（仅省略了 01:08 处的语气词“呃”），与原音频高度吻合。\n\n5. **01:33 - 01:36**\n   * **原视频音频**：讲师说的是“所以我的理解就是你脑海当中有这个信息”。\n   * **候选比对**：Qwen 准确记录为“脑海”；Gemini 误听为“脑袋”。\n\n6. **01:51 - 01:54**\n   * **原视频音频**：讲师说的是“我今儿要把这包丢了”（“今儿”带北京口音儿化音）。\n   * **候选比对**：Qwen 准确识别为“我今儿要把这包丢了”；Gemini 误听为“我这就是要把这包丢了”。\n\n---\n\n### 二、 画面内容及时间码核对\n\n* **Qwen 候选**：完全未包含任何画面文字及板书变化信息。\n* **Gemini 候选**：包含了“画面内容及变化”部分，经核对原视频画面：\n  1. **文字出现与翻页时间码**：\n     * `■ Lisa repaired the roof.` 实际在 **00:05** 出现；\n     * `■ Lisa had the roof repaired.` 实际在 **00:19** 出现（Gemini 记为 00:18，基本吻合）；\n     * 蓝色下划线 `had the roof repaired.` 在 **00:22 - 00:23** 划出；\n     * `■ I made those curtains.` 在 **00:31** 出现（Gemini 记为 00:30，基本吻合）；\n     * `■ I had those curtains made.` 在 **00:38** 出现（Gemini 记为 00:37，基本吻合）；\n     * 蓝色下划线 `had those curtains made.` 在 **00:43 - 00:45** 划出；\n     * 翻页及新文字出现（00:50）、`Gary had his nose broken in a fight.` 出现（00:59）、下划线 `had his nose broken`（01:03 - 01:05）、蓝圈 `in a fight`（01:08 - 01:09）、`I had my bag stolen.` 出现（01:44）的时间节点均与原视频画面证据吻合。\n  2. **画面标点细节差异**：\n     * **00:50 - 02:00** 左侧上方灰色文字，原视频画面实际显示为 **`意外，不幸的遭遇。翻译成被。`**（“意外”后为逗号）。Gemini 将其记录为顿号（`意外、不幸的遭遇。`），存在细微标点差异。\n\n---\n\n### 三、 总结判定\n\n* **Qwen 机器转写候选**：在个别字词（00:25 的“我”、01:34 的“脑海”、01:52 的“今儿”）上识别准确，但在 00:46 - 01:16 期间出现了严重的语种幻觉（将讲师的中文语音直接机器翻译成了英文文本）并伴随整句漏译，且缺失画面信息。\n* **此前 Gemini 音画抽查候选**：整体语音转写完整，未出现语种错乱或整句漏听，画面文字、手写批注动作及相对时间码均与视频证据基本吻合；仅存在三处细微语音字词偏差（漏“我”字、“小的”记为“小小的”、“脑海”记为“脑袋”、“今儿”记为“这就是”）以及一处画面标点符号差异（逗号记为顿号）。"
+    },
+    {
+      "state": "machine_review",
+      "source": {
+        "drive_file_id": "1SDse5QPNm0D152yPo52dIYvrRsRKhaqr",
+        "series": "新概念英语第二册_L01-L48",
+        "directory": "Lesson_004_P016_L004 听说读写复述练习",
+        "title": "L004 听说读写复述练习",
+        "source_sha256": "823d95bb9dc493680b1952d902e44adda031387d3cb7db190eb3c524dd26bc82",
+        "source_md5": "b9532e1d169d5b6f35c95a5e3e41056d",
+        "source_duration_seconds": 482.233
+      },
+      "clip": {
+        "clip_start_seconds": 181.117,
+        "clip_end_seconds": 301.116,
+        "clip_sha256": "8071ff02aec0270dc04a0f3c6e0e9135d960ed007805fb5af065077c8358c987"
+      },
+      "qwen_vs_first_gemini_agreement": 0.739,
+      "selection_rule": "machine text agreement below 0.80; triage only, not measured accuracy",
+      "qwen_input_sha256": "20b1304990452b4d9c1eeb5bdb4be047abfb80d7ff8d58c5e309debf1a59c4ee",
+      "prior_gemini_input_sha256": "c4982b710133a7d8425106b8fee3f8f9d25aafbd6e280303f88f68cbf7695dc6",
+      "model_requested": "gemini-4-argon-high",
+      "model_returned": "gemini-4-argon-trial",
+      "finish_reason": "STOP",
+      "quality_flags": [],
+      "elapsed_seconds": 211.63,
+      "limitations": "Only this clip; model judgments and timecodes are not human verified.",
+      "review_text": "根据视频的音频与画面内容，对两份机器记录的复核结果如下：\n\n### 一、具体差异与原视频证据逐项核对\n\n#### 1. 00:00 - 00:30 语音语言错乱（中译英误转）\n* **原视频内容**：教师在此时间段使用中英夹杂授课，中文部分为：“……啊，Is he an engineer? 这个 What，你要把它变成 What is he，就是有点怪。这道题各位呢，直接把它变成叫 What's his job 就可以了，好吧？我直接给大家答案了。下一题，这个撇 s（'s）是谁？is 了，对吧？is 提前，Who 对主语提问直接替代。其实 Who 呢，也可以对 a big firm 提问，你把它法人，对吧，人，来把它拟人化……”\n* **Qwen 候选评估**：**不吻合**。Qwen 将 00:03 至 00:29 的中文语音错误地翻译成了英文（如 \"This what you have to turn it into...\"），且将 00:00 的语气词“啊”误听为 \"idea\"，将 00:18 的中文“撇 s”（指代缩写 's）误听为 \"PS\"，将 00:26 的 \"firm\" 误作 \"form\"。\n* **Gemini 候选评估**：**基本吻合**。准确记录了中英夹杂的原话，并将“撇 s”规范写为符号 `'s`。仅在 00:29 处漏掉了轻微的连词“来”（原话为“人，来把它拟人化”）。\n\n#### 2. 00:32 - 00:36 句子漏记\n* **原视频内容**：教师说：“Who is he working for? 他现在正在为谁工作？也是没问题的。”\n* **Qwen 候选评估**：**不吻合**。完全漏掉了中文解释“他现在正在为谁工作？也是没问题的。”\n* **Gemini 候选评估**：**吻合**。完整记录了该句。\n\n#### 3. 00:38 - 00:46 符号读法与板书细节\n* **原视频内容**：\n  * 语音（00:38 - 00:41）：教师读题“He's just bought，撇 s（'s），is 还是 has 呢？看 bought，has 提前。”\n  * 画面（00:39 - 00:46）：00:39 教师在 `He's` 的 `'s` 下方画了一个蓝色小勾；00:40 在 `bought` 下方画蓝色横线；00:44 - 00:46 用蓝色笔将 `an Australian car.` 圈框起来。\n* **Qwen 候选评估**：**部分不吻合**。将中文“撇 s”误作英文缩写 \"P.S.\"，且无画面记录。\n* **Gemini 候选评估**：**语音吻合，画面记录不完整**。语音部分准确记录为 `'s`；画面部分仅记录了 00:44 对 \"an Australian car\" 的标注，漏记了 00:39 对 `'s` 和 00:40 对 `bought` 的画线。\n\n#### 4. 00:49 - 00:51 英文读音核对\n* **原视频内容**：00:49 教师看着第 8 题（He's just gone to Alice Springs.）口头读作：“He's gone to，呃，gone 出来了……”\n* **Qwen 候选评估**：**不吻合**。将 \"He's gone to\" 误听为 \"He is going to\"。\n* **Gemini 候选评估**：**吻合**。准确记录为“He's gone to，呃，gone 出来了”。\n\n#### 5. 00:59 - 01:07 语音重复与板书画线范围\n* **原视频内容**：\n  * 语音（00:59）：教师读“It's a small town.”（仅读了一遍 `It's`）。\n  * 画面（01:05 - 01:06）：教师在 `small` 下方画了一条蓝色横线，`town` 下方并无画线。\n* **Qwen 候选评估**：**不吻合**。开头写成了重复的 \"It'sIt's\"。\n* **Gemini 候选评估**：**语音吻合，画面细节有误**。Gemini 在板书部分写“01:07 老师在‘small town’下方画蓝色下划线”，实际画面中下划线仅在 `small` 一词下方，未包含 `town`。\n\n#### 6. 01:35 - 01:41 符号读法核对\n* **原视频内容**：\n  * 语音（01:35 - 01:36）：教师讲解 `He'll` 时说：“撇 l l（指代缩写 'll），will 提前……”；01:41 说了声“OK”。\n  * 画面（01:35 - 01:36）：教师在 `He'll` 的 `ll` 下方画了蓝色下划线。\n* **Qwen 候选评估**：**不吻合**。将中文“撇 l l”误转写为英文字母 \"P L L\"，且漏掉了 01:41 的 \"OK\"。\n* **Gemini 候选评估**：**吻合**。语音准确还原为 `'ll` 并记录了句末的 \"OK\"，画面时间码（01:36）及标记位置均准确。\n\n#### 7. 01:46 - 01:51 细微字词差异\n* **原视频内容**：01:46 教师说“说了很多遍了”；01:48 说“各位一定是文章熟读成诵之后，再去做这个练习”。\n* **Qwen 候选评估**：**吻合**。准确记录为“说了很多遍了”、“一定是”、“再去做”。\n* **Gemini 候选评估**：**基本吻合，有细微同音/近义字偏差**。将“很多遍”写作“好多遍”，将“一定是”写作“一定使”，将“去做”写作“去作”。\n\n---\n\n### 二、总体评估结论\n\n1. **Qwen 机器转写候选**：**质量较差**。前 30 秒出现了严重的机器幻觉（将中文授课直接意译为英文文本），全文多处将中文标点符号读法（“撇 s”、“撇 l l”）误听为英文字母（\"PS\"、\"P L L\"），存在明显的漏句和听音错误，且不包含任何画面板书信息。\n2. **此前 Gemini 音画抽查候选**：**整体准确度很高**。语音转写完整、准确地还原了中英夹杂的授课内容及语法符号读法（仅有个别同音字差异）；板书与时间码切分精准，唯独在第 7 题（漏记两处画线）和第 9 题（画线范围多写了 town）的笔画细节描述上存在轻微偏差。"
+    },
+    {
+      "state": "machine_review",
+      "source": {
+        "drive_file_id": "1RQ1G8_CiGDafx6R-XbUQl34Jy9VWYF1W",
+        "series": "新概念英语第二册_L49-L96",
+        "directory": "Lesson_093_P170_093 练习",
+        "title": "093 练习",
+        "source_sha256": "40084bf528a607beac5235f45218c7b6b32cb1c6f413e3146fbbbc5045517ff5",
+        "source_md5": "ed5acc149f556a65a50242aa8f97176d",
+        "source_duration_seconds": 338.466
+      },
+      "clip": {
+        "clip_start_seconds": 109.233,
+        "clip_end_seconds": 229.233,
+        "clip_sha256": "1660758c88a5df482c0783d7722793d18f84a89383faa5b9d94e832b42654d24"
+      },
+      "qwen_vs_first_gemini_agreement": 0.74,
+      "selection_rule": "machine text agreement below 0.80; triage only, not measured accuracy",
+      "qwen_input_sha256": "18d0af84822cee631d624d25ca95b06e3d119becff404a76c6117a9a462ef94e",
+      "prior_gemini_input_sha256": "f970ae7194d72abdf1d479b80825d764961ee35c8cce7cbc0218a6c0510c3f6e",
+      "model_requested": "gemini-4-argon-high",
+      "model_returned": "gemini-4-argon-trial",
+      "finish_reason": "STOP",
+      "quality_flags": [],
+      "elapsed_seconds": 344.49,
+      "limitations": "Only this clip; model judgments and timecodes are not human verified.",
+      "review_text": "根据所附视频的音频与画面，对两份机器记录进行独立复核，有明确依据的具体差异及证据如下：\n\n### 1. 00:03 - 00:06 口误词汇（site vs side）\n* **原视频内容与证据**：00:00 画面刚展示完上一题 `What site was chosen?`，00:02 画面切换为 `Where was the statue first erected?`。讲师在 00:03 - 00:06 先口误读作 “Where was the site first erected?”（受上一题画面词 `site` 影响），随后在 00:06 - 00:09 自行纠正为 “Where was the statue first erected?”。\n* **吻合度判断**：\n  * **Qwen 候选**：记为 `site`，与讲师口误原意及发音吻合。\n  * **Gemini 候选**：记为 `side`，属于同音/近音误听，不吻合。\n\n### 2. 00:17 - 00:18 复数尾音与画面标题（questions vs question）\n* **原视频内容与证据**：00:17 画面左上角棕褐色标签条白字明确显示为 `Asking questions`，讲师在 00:17 - 00:18 读出的英文也带有复数尾音 `/z/`（“Asking questions”）。\n* **吻合度判断**：\n  * **Qwen 候选**：记为单数 `Asking question`，漏掉复数 `s`，不吻合。\n  * **Gemini 候选**：记为 `Asking questions`，音画均吻合。\n\n### 3. 00:29 - 00:31 中文同音词（提问 vs 替问）\n* **原视频内容与证据**：00:28 - 00:31 讲师讲解对 `world-famous` 进行提问，原话为“那 world-famous 提问呗，对吧？”。\n* **吻合度判断**：\n  * **Qwen 候选**：记为 `提问呗`（但漏了前面的“那”字），核心词吻合。\n  * **Gemini 候选**：记为 `替问呗`，将“提问”误写为同音别字“替问”，不吻合。\n\n### 4. 00:55 - 01:04 专有名词拼写（Bartholdi vs Berthollet）\n* **原视频内容与证据**：00:55 画面出现第 4 题：`4. It was designed by Bartholdi. (Who)`。讲师在 00:58 与 01:02 两次读出该人名。\n* **吻合度判断**：\n  * **Qwen 候选**：两次均记为 `Berthollet`，与画面拼写及实际指向完全不吻合。\n  * **Gemini 候选**：两次均记为 `Bartholdi`，与画面完全吻合。\n\n### 5. 01:10 - 01:41 Qwen 严重漏转与提示词幻觉（Prompt Injection Hallucination）\n* **原视频内容与证据**：\n  * **01:10 - 01:13**：讲师说“啊，What 我们不用它。Next one.”\n  * **01:13 - 01:27**：画面在 01:12 出现 `6. It took ten years to complete. (How long)`，讲师说：“It took ten years... 其实你要用 What 就是 What was his job? 是吧？It took ten years to complete. did 提前，把动词换回原形。那 How long 肯定是对 ten years 提问啊。How long did it take to complete?”（注：01:21 处“换回/往回原形”发音略快，听感介于“换回”与“往回”之间）。\n  * **01:27 - 01:41**：画面在 01:23 出现 `7. The figure was made of copper. (What)`，01:38 出现 `8. It was supported by a metal framework. (How) (What)`。讲师说：“The figure was made of copper. was 提前。然后 What 呢对 the figure 提问可以，对吧？What was made of copper? 或者是 What was the figure made of? 对 copper 提问也行。It was supported by a...”\n* **吻合度判断**：\n  * **Qwen 候选**：从 01:10 的“我们不用它”之后，**完全漏掉了 01:10 至 01:41 长达 31 秒的全部语音内容**，并在该位置凭空插入了一段英文指令幻觉：`recording. Transcribe the exact words in their original spoken languages. Never translate. Preserve repetitions, questions and examples.`，随后直接跳接到 01:41 的 `metal framework.`。严重失真，完全不吻合。\n  * **Gemini 候选**：完整、准确地记录了 01:10 - 01:41 的全部中英文语音及画面新增题号，完全吻合。\n\n### 6. 01:48 - 01:49 与 01:53 - 01:55 英文疑问词误作中文（What/Who vs 我/互）\n* **原视频内容与证据**：\n  * **01:48 - 01:49**：画面第 8 题末尾括号提示 `(How) (What)`，讲师说：“What 对主语提问。”\n  * **01:53 - 01:55**：画面第 9 题末尾括号提示 `(Who)`，讲师说：“然后 who 你对后边的 Eiffel 提问就行了。”\n* **吻合度判断**：\n  * **Qwen 候选**：将 01:48 的英文 `What` 误听写为中文 `我`（“我对主语提问”），将 01:53 的英文 `who` 误听写为中文 `互`（“然后互你对后边的Eiffel提问就行了”），均不吻合。\n  * **Gemini 候选**：分别正确记为 `What 对主语提问` 和 `然后 who 你对后面的 Eiffel 提问就行了`，完全吻合。\n\n### 7. 01:58 - 02:00 片段结尾截断处语音（151 vs one hundred fifty）\n* **原视频内容与证据**：01:56 画面出现 `10. The statue was 151 feet tall. (How tall)`。01:57 - 02:00 讲师读道：“The statue was one hundred... one hundred and fif-”（在读到 fifty 的第一个音节 `fif-` 时视频满 2 分钟截断，未发出完整的 `fifty-one`）。\n* **吻合度判断**：\n  * **Qwen 候选**：记为 `The statue was one hundred one hundred fifty`，补全了未读完的 `fifty` 但漏了 `and`。\n  * **Gemini 候选**：记为 `The statue was 100... 151...`，受画面数字 `151` 影响补写了实际上音频尚未读出的 `1`，与音频截断实况不完全吻合。\n\n---\n\n### 总体评估结论\n* **Qwen 机器转写候选**：仅包含纯文本语音转写，不包含时间码与画面信息；且在 01:10 - 01:41 处出现了致命的**模型提示词泄漏幻觉**，导致长达 31 秒的教学内容完全丢失；另有专有名词拼写错误（`Berthollet`）及中英混杂处的同音误转（`我`、`互`）。\n* **Gemini 音画抽查候选**：时间码、画面文字及排版变化记录非常详尽且高度准确；语音转写完整覆盖了全片，仅在 00:04（`side`）、00:30（`替问`）及结尾 02:00 截断处（`151...`）存在极个别字词偏差，整体质量远高于 Qwen 候选。"
+    },
+    {
+      "state": "machine_review",
+      "source": {
+        "drive_file_id": "1b5S57NTEsuEe5vVN8s9JlillOLtHn3Cd",
+        "series": "新概念英语第二册_L49-L96",
+        "directory": "Lesson_094_P171_094 单词",
+        "title": "094 单词",
+        "source_sha256": "c80a52276573c86e63a61800b6ddb480fc96e58a411cc3af3ccbea2db3f42e1b",
+        "source_md5": "9db792d8971f6616aaac6a2ac07322c1",
+        "source_duration_seconds": 759.366
+      },
+      "clip": {
+        "clip_start_seconds": 319.683,
+        "clip_end_seconds": 439.683,
+        "clip_sha256": "4b65b338f72968514ddbed099b9925b66c9afb56627409bdab983c962c2cac41"
+      },
+      "qwen_vs_first_gemini_agreement": 0.743,
+      "selection_rule": "machine text agreement below 0.80; triage only, not measured accuracy",
+      "qwen_input_sha256": "8bae95f6f2706e4e8920fe8a3dcc91d6502a53503fef3c3d52b972dbb4d3d604",
+      "prior_gemini_input_sha256": "e2f2efe34a9a0d1772eb5ccceaaf13d30c1941841e9f31f37016c7260c04b2cb",
+      "model_requested": "gemini-4-argon-high",
+      "model_returned": "gemini-4-argon-trial",
+      "finish_reason": "STOP",
+      "quality_flags": [],
+      "elapsed_seconds": 45.87,
+      "limitations": "Only this clip; model judgments and timecodes are not human verified.",
+      "review_text": "依据视频的音频与画面，对两份机器记录的具体复核结果如下：\n\n### 1. 00:00 - 00:01 开场口播\n* **视频实际内容**：讲师口播为英文“Next one，下一个单词 tricycle”。\n* **对比判断**：\n  * **Qwen**：记录为“Next one,下一个单词 tricycle”，与原音频**吻合**。\n  * **Gemini**：记录为“来，说一下下一个单词，tricycle”，将英文“Next one”误听为中文“来，说一下”，与原音频**不吻合**。\n\n### 2. 00:12 - 00:17 前缀拼写与语境\n* **视频实际内容**：讲师结合画面中的单词 `tricycle` 讲解前缀，读音为 /traɪ/，并解释“指的是 three，是三的意思，它是一个小的单词的前缀”。\n* **对比判断**：\n  * **Qwen**：写成单词“Try”，不符合此处讲解词缀 `tri-` 的语境。\n  * **Gemini**：记为“tri-”，符合画面单词 `tricycle` 的前缀拼写。\n\n### 3. 00:38 - 00:42 例句 ① 拼写与画面文字\n* **视频实际内容**：00:30 画面左下角出现例句 `① His grandfather seems to be repairing the tricycle. L91`，讲师口播朗读该句。\n* **对比判断**：\n  * **Qwen**：将 `be repairing` 连写成了“berepairing”，拼写有误。\n  * **Gemini**：正确记录为“be repairing”，并在画面记录中准确描述了 00:30 出现的例句及 00:34 讲师在“结合习惯用法”右侧画蓝色勾（√）的动作，与音画**吻合**。\n\n### 4. 00:46 - 00:48 例句 ② 引导词口播\n* **视频实际内容**：讲师在读完“Next one”后，于 00:47 口播了一个中文引导词“说，When I saw him riding a tricycle...”（与后文 00:51“说当我看到……”及 01:07“说他很沮丧……”句式一致）。\n* **对比判断**：\n  * **Qwen**：将中文“说”误听为英文“so”，与原音频**不吻合**。\n  * **Gemini**：记录为“说：When I saw him...”，与原音频**吻合**。\n\n### 5. 00:00 - 01:15 音标细节与 `any more` 分合写（画面文字）\n* **视频实际内容**：\n  * 00:00 - 01:15 画面左侧 `tricycle` 上方的音标实际显示为 `/ˈtraɪsɪkəl/`（含 `ə`）。\n  * 00:59 画面出现的例句 ③ 末尾单词实际分写为 `any more.`。\n* **对比判断**：\n  * **Qwen**：未记录画面文字，仅在口播转写中连写为“anymore”。\n  * **Gemini**：画面记录中将音标写为 `/ 'traɪsɪkl /`（漏了 `ə`），将例句 ③ 末尾写为连写的 `anymore.`，这两处细节与画面文字**不完全吻合**；但其余关于下划线颜色（00:30 `seems to be` 蓝线、00:46 黑线、00:59 黑线）及时间点的描述均与画面**吻合**。\n\n### 6. 01:30 - 01:33 口误重读记录\n* **视频实际内容**：讲师在 01:30 - 01:32 口播时出现轻微卡顿/口误，发音近似“那 com-pɪst，呃 compete against”。\n* **对比判断**：\n  * **Qwen**：记为“那 competed a compete against”，保留了口误及语气词的近似听感。\n  * **Gemini**：记为“那 compete，compete against”，做了顺滑处理，省略了语气词“呃”和口误尾音。\n\n### 7. 01:41 - 02:00 片段后半段语音转写（重大差异）\n* **视频实际内容**：01:41 读完 `We're gonna compete against teams` 后，讲师用中文和英文交替讲解：“我们将会和这些队伍产生一个对抗或者竞争。什么样的队伍呢？后边跟了一个定语从句叫 that have been doing this for years. 你看到，我们在定语从句当中实际上还嵌套了一个 52 课学过的 have been doing 现在完成进行时，从过去做这件事持……”。同时 01:54 画面中讲师在 `have been doing` 下方画了一条蓝色横线。\n* **对比判断**：\n  * **Qwen**：从 01:41 起完全丢失了原视频的真实语音，变成英文“We will compete against these teams.”的机器幻觉重复（连续重复 10 遍），与原视频**严重不符**。\n  * **Gemini**：完整、准确地转写了 01:41 至 02:00 的全部中英文讲解（仅末尾 01:59 音频截断在“持”字，Gemini 补全了“续”字），且准确记录了 01:16 页面切换、01:29 例句出现及 01:54 手绘蓝色下划线的画面信息，与原视频**高度吻合**。"
+    },
+    {
+      "state": "machine_review",
+      "source": {
+        "drive_file_id": "1l8Z5UkNaTOFZg2d9Xu5Qv8eHorCZz0Qg",
+        "series": "新概念英语第二册_L49-L96",
+        "directory": "Lesson_067_P076_067 练习",
+        "title": "067 练习",
+        "source_sha256": "6acad880e3e9c345e17ac169f32ae24ba4a85e1b434d2d065770db7cad7fed1f",
+        "source_md5": "d9e88c46c11d11bf1861cf3afa9fc525",
+        "source_duration_seconds": 417.4
+      },
+      "clip": {
+        "clip_start_seconds": 148.7,
+        "clip_end_seconds": 268.7,
+        "clip_sha256": "8732bc6922d2c9879cb71ccdca6d5c6b259325647a33959737de9099c615662a"
+      },
+      "qwen_vs_first_gemini_agreement": 0.75,
+      "selection_rule": "machine text agreement below 0.80; triage only, not measured accuracy",
+      "qwen_input_sha256": "a4ad284f9631d9ab08035edd79053a0e235191b3f50227ed3518914c276fbd22",
+      "prior_gemini_input_sha256": "b1598906775a23e41a3e0e2f3091be8ffabcd38378984e535293873660e1e63d",
+      "model_requested": "gemini-4-argon-high",
+      "model_returned": "gemini-4-argon-trial",
+      "finish_reason": "STOP",
+      "quality_flags": [],
+      "elapsed_seconds": 45.67,
+      "limitations": "Only this clip; model judgments and timecodes are not human verified.",
+      "review_text": "以下是基于视频音画内容对两份机器记录的复核结果：\n\n### 1. 00:00 - 00:04 句首口误重复\n*   **原视频内容**：讲师口误重复了三次词头，发音为“What, uh, what, uh, what's his job?”。\n*   **两份记录对比**：\n    *   **Qwen**：记为“What？What？What'swhat's his job?”，捕捉到了重复现象，但“What'swhat's”存在连写且多记了一次。\n    *   **Gemini**：记为“What? What's his job?”，省略了一次“what”和语气词。\n\n### 2. 00:28 - 00:31 语法术语“撇s”的识别\n*   **原视频内容**：画面第5题为“5. He's been in all parts of the world.”，讲师说：“这地方的关键点就是**撇s**到底是谁”。\n*   **两份记录对比**：\n    *   **Qwen**：误听为“**P.S.**到底是谁”，与画面“He's”的语法讲解语境不符。\n    *   **Gemini**：准确记为“**撇 s** 到底是谁”，与音画完全吻合。\n\n### 3. 00:36 - 00:38 疑问词“Who”的识别\n*   **原视频内容**：画面第5题末尾括号提示词为“(Where) (Who)”，讲师说：“**Who**对主语提问”。\n*   **两份记录对比**：\n    *   **Qwen**：误听为中文“**后**对主语提问”。\n    *   **Gemini**：准确记为“**Who** 对主语提问”，与音画完全吻合。\n\n### 4. 00:50 - 00:52 第7题句首“It's”的识别\n*   **原视频内容**：画面第7题显示“7. It's in the Congo.”，讲师朗读该句“It's in the Congo.”（发音中/t/音较弱，接近Is）。\n*   **两份记录对比**：\n    *   **Qwen**：按近似发音记为“**Is** in the Congo.”，与画面文本不符。\n    *   **Gemini**：结合画面准确记为“**It's** in the Congo.”。\n\n### 5. 01:09 - 01:11 语气词与“观察”\n*   **原视频内容**：讲师说：“他为啥要去研究啊？**啊**观察。”\n*   **两份记录对比**：\n    *   **Qwen**：准确记为“**啊**观察”。\n    *   **Gemini**：记为“**去**观察”，将语气词“啊”误作“去”。\n\n### 6. 01:30 - 02:00 后半段大面积幻觉、翻译与漏记\n*   **原视频内容**：\n    *   **01:30 - 01:33**：讲师说中文：“他后来给它起名叫什么？叫 Kituro。”\n    *   **01:34 - 01:42**：讲师中英夹杂讲解第10题：“第十个，He was able to set up his camp very close to the volcano. was 提前，那 Where 肯定是 very close to the volcano 提问，对吧？”\n    *   **01:43 - 01:52**：讲师讲解第11题：“第十一个，It was erupting violently. 过去进行时，was 提前，What 对主语提问嘛，什么当时正在剧烈地喷发着，对吧？火山。”\n    *   **01:52 - 02:00**：画面切换为“Tell the story”及8条复述要点，讲师说：“然后 Tell the story 这个我们就不过多说了。啊第一个单元有过很多的示范，各位每节课都要认真去做。”\n*   **两份记录对比**：\n    *   **Qwen**：从 01:31 起出现严重异常，将讲师说的中文全部强行翻译成了英文（如“What is it called? It's called Kitura. The tenth one... Past continuous. The subject question...”），并在末尾陷入“What was erupting violently?”的死循环重复幻觉，完全漏掉了 01:52 - 02:00 的语音内容。\n    *   **Gemini**：01:30 - 02:00 的中英文夹杂语音转写与原视频完全吻合（仅 01:54 处将“不**多**说了”略微记作“不**过多**说了”，01:56 处漏了一个“的”字）；同时其整理的画面文字及时间轴（00:00 - 02:00）也与视频实际画面内容高度一致（仅 01:54 画面第⑦条首字母原图为大写“**T**his time”，Gemini 记为了小写“**t**his time”）。\n\n### 总结\n*   **Qwen 机器转写候选**：前半段存在数处同音误听（如“撇s”误作“P.S.”、“Who”误作“后”），01:31 之后出现把中文语音翻译为英文、死循环重复及末尾漏转的严重机器幻觉，整体不可靠。\n*   **Gemini 音画抽查候选**：语音转写与画面文字记录均高度准确，仅存在极个别口头语气词或大小写的细微偏差，与原视频片段基本完全吻合。"
+    },
+    {
+      "state": "machine_review",
+      "source": {
+        "drive_file_id": "1fnjs5T7ofhhzw-f_wBBThHAXaaHs6eZJ",
+        "series": "新概念英语第二册_L01-L48",
+        "directory": "Lesson_021_P078_L021 单词",
+        "title": "L021 单词",
+        "source_sha256": "0c1a73a1945e6b5845708cbdf2224529f12788de8f4627818f4445e209744ec2",
+        "source_md5": "fd400bbb5af10c93f35d33cf16610cbb",
+        "source_duration_seconds": 536.133
+      },
+      "clip": {
+        "clip_start_seconds": 208.067,
+        "clip_end_seconds": 328.067,
+        "clip_sha256": "af9a2f86f4d72cdc1ee5bb1579c742c9b252762b818d2facaeec642e11876d48"
+      },
+      "qwen_vs_first_gemini_agreement": 0.751,
+      "selection_rule": "machine text agreement below 0.80; triage only, not measured accuracy",
+      "qwen_input_sha256": "6a53f3e4dee80b601f47a3a086df2bb5e0d1f0ce25e459c1ccae8b19f361bcd1",
+      "prior_gemini_input_sha256": "4cecf68f7c2eb5f61b3361ee329a636e85fedde930337e7e0770f50c6b3799c3",
+      "model_requested": "gemini-4-argon-high",
+      "model_returned": "gemini-4-argon-trial",
+      "finish_reason": "STOP",
+      "quality_flags": [],
+      "elapsed_seconds": 53.95,
+      "limitations": "Only this clip; model judgments and timecodes are not human verified.",
+      "review_text": "基于所附视频（00:00 - 02:00）的音频与画面，对两份机器记录的独立复核与差异对比如下：\n\n### 一、 有依据的具体差异与核对\n\n#### 1. 00:00 - 00:35 开篇语言错误（中文被误转为英文）\n*   **原视频内容**：讲师在 00:01 - 00:35 期间主要使用中文讲解，夹杂英文单词及例句。具体原话为：“……说 For some reason，好，第 16 课叫做 you remind me of my father。呃，基于某些原因（或：出于某些原因），你让我想起了我的父亲。You remind me of my father. Okay, very good（或 there you go，发音较含糊）. 接下来，下一个小的单词，也非常简单。注意，这个你看我们基本上不用音标啊，我们知道 s，s 发 /s/ 的音，m 发 /m/ 的音，u，你想一下 but 那个单词，对吧？b-u-t，它发 /ʌ/ 的音……”\n*   **Qwen 记录评估**：**严重不吻合**。Qwen 将 00:03 - 00:34 的中文语音全部错误翻译成了英文（如“Okay, the sixteenth lesson is called... Next, the next little word is also very simple...”），且在 00:02 漏掉了介词“For”（仅写为 `some reason`）。\n*   **Gemini 记录评估**：**基本吻合**。准确记录了中英文夹杂的原话及开头的“For some reason”。（注：00:08 处语音介于“基于”与“出于”之间，00:14 处英语口语连读较快，两份记录的微小差异属于听感模糊范畴，不做强行判定）。\n\n#### 2. 00:36 - 00:40 目标单词拼写：`sum` vs `some`\n*   **原视频内容**：画面左侧主词条明确显示为 `sum n.`（00:15 起）。讲师在 00:37 - 00:40 拼读完 s-u-m 后说：“所以这个单词我们管它叫做 sum，sum。”随后在 00:41 - 00:45 手写 `Some` 并对比说：“它的发音和这个单词的发音几乎是一样的，就是 some, any 那个 some”。\n*   **Qwen 记录评估**：**不吻合**。将 00:37 处的目标单词错误写成了 `some，some`，与画面词条 `sum` 矛盾。\n*   **Gemini 记录评估**：**吻合**。前一个记为 `sum`，后一个对比词记为 `some`，与画面和语境完全一致。\n\n#### 3. 00:50 细微虚词：`小的短语` vs `小短语`\n*   **原视频内容**：00:50 处音频清晰可辨讲师说的是“给它来一个**小的**短语”。\n*   **Qwen 记录评估**：**吻合**（记为“小的短语”）。\n*   **Gemini 记录评估**：**轻微漏字**（漏了“的”字，记为“小短语”）。\n\n#### 4. 01:01 细微口语词：`那你说它和` vs `那你说是它和`\n*   **原视频内容**：01:01 处音频为“那你说它和 a lot of 有什么明显的区别吗”。\n*   **Qwen 记录评估**：**吻合**（记为“那你说它和”）。\n*   **Gemini 记录评估**：**轻微多字**（多了一个“是”字，记为“那你说是它和”）。\n\n#### 5. 01:32 拼写规范：`a lot of` vs `alot of`\n*   **原视频内容**：01:32 讲师口述英文短语“a lot of”。\n*   **Qwen 记录评估**：**拼写瑕疵**，连写成了 `alot of`。\n*   **Gemini 记录评估**：**吻合**，正确写为 `a lot of`。\n\n#### 6. 01:46 核心术语识别：`6123456` vs `六页三四五六`\n*   **原视频内容**：画面上方“单词造句指南”表格最后一行清晰印有数字 `6123456`。01:46 处讲师结合该指南说：“也就是结合 6123456（六一二三四五六）”。\n*   **Qwen 记录评估**：**不吻合**。因纯听音且缺乏画面参考，误听为“六页三四五六”。\n*   **Gemini 记录评估**：**吻合**。准确记录为 `6 1 2 3 4 5 6`。\n\n#### 7. 01:59 结尾完整性：`主` vs `主语`\n*   **原视频内容**：01:58 - 02:00 片段结束前，讲师说：“哎，它就是一个主……”，在“主”字发音刚出时视频于 02:00 截断，“语”字并未在音频中发出。\n*   **Qwen 记录评估**：**吻合**。严格停留在音频截断处的“主”字。\n*   **Gemini 记录评估**：**不吻合（按常识补写）**。将截断的半句话补全为了“主语。”。\n\n#### 8. 画面内容变化核对（仅 Gemini 提供）\n*   **原视频画面证据**：\n    *   00:00 - 00:14：展示 `reason n.` 及 4 个例句，右上角有“胶囊助学计划”水印，左上角有红棕色“单词造句指南”表格（但在 00:15 切换到 `sum n.` 时，“结合习惯用法”右侧的蓝色对勾实际上**已消失**）。\n    *   00:15 - 00:40：切换为 `sum n.`，左上角有美元漩涡插图，00:20 在 `sum` 下画蓝线。\n    *   00:41 - 00:46：手写蓝色 `Some`。\n    *   00:47 - 00:54：`Some` 消失，出现 `① a large sum of money` 并画下划线。\n    *   01:15 - 01:21：出现 `② A large sum of money was stolen last night. L10` 并画下划线。\n    *   01:22 - 01:31：圈出句①的 `money` 并在上方手写 `n.`。\n    *   01:49 - 02:00：圈出句②的 `was`。\n*   **Gemini 记录评估**：除 00:15 处误判“结合习惯用法右侧保持勾选”（实际在 00:15 切换画面时该勾选已消失）外，其余所有时间码、文字内容、手写板书及圈画动作均与原视频画面**高度吻合**。Qwen 未提供画面记录。\n\n---\n\n### 二、 综合结论\n\n1.  **Qwen 机器转写候选**：在 00:01 - 00:35 区间出现严重的语种误判（将中文讲课直接机器翻译成了英文），且存在同音词误判（`sum` 误作 `some`、“六一二三四五六”误作“六页三四五六”），但对 02:00 音频截断处的处理较为忠实（停在“主”字）。\n2.  **Gemini 音画抽查候选**：语音转写整体准确度高，正确结合了画面信息区分 `sum/some` 及 `6123456`，画面板书与时间轴记录详实准确；主要瑕疵在于 02:00 结尾处按常识补写了未发声的“语”字、00:15 画面描述中误判保留了蓝色对勾，以及两处极轻微的口语虚词增删。"
+    },
+    {
+      "state": "machine_review",
+      "source": {
+        "drive_file_id": "10U7Yi6DX5canFAI4tmiXcWaO9BFhtqwQ",
+        "series": "新概念英语第二册_L01-L48",
+        "directory": "Lesson_027_P096_L027 单词",
+        "title": "L027 单词",
+        "source_sha256": "79da44aa69e43d12f66c330a39199a47ce45a0d76903399a31cbd725f62d824f",
+        "source_md5": "4eea4927685b277394c6a4010cc1e91d",
+        "source_duration_seconds": 1012.233
+      },
+      "clip": {
+        "clip_start_seconds": 446.116,
+        "clip_end_seconds": 566.116,
+        "clip_sha256": "bd594f28be0c10f54d5d2a0e55efacf9362799514b4e940f1f476674284eb34a"
+      },
+      "qwen_vs_first_gemini_agreement": 0.772,
+      "selection_rule": "machine text agreement below 0.80; triage only, not measured accuracy",
+      "qwen_input_sha256": "90ae8aae9d2f1a34b7de57a3d4cf6ae3d6f41593bb2a072818ce6ef89b15adcb",
+      "prior_gemini_input_sha256": "c099f1dd70288968786981dd63e2a6e1d3579c3e8b5bb7876834c864adbe2031",
+      "model_requested": "gemini-4-argon-high",
+      "model_returned": "gemini-4-argon-trial",
+      "finish_reason": "STOP",
+      "quality_flags": [],
+      "elapsed_seconds": 91.73,
+      "limitations": "Only this clip; model judgments and timecodes are not human verified.",
+      "review_text": "根据所附视频的音频与画面独立复核，两份机器记录的具体差异、原视频证据及吻合度判断如下：\n\n### 一、 逐项差异与原视频证据比对\n\n1. **片段开头（00:00）**\n   - **差异**：Qwen 记录开头多出一个“one,”，写作“one,说You crept...”；Gemini 记录为“说 You crept...”。\n   - **原视频证据**：00:00 处音频从“说 You crept on the carpet...”开始（承接上一片段尾音“啊”），无“one”的发音。\n   - **判断**：Gemini 吻合；Qwen 开头多字。\n\n2. **语气词与连接词（00:04 - 00:06）**\n   - **差异**：Qwen 记为“Ah, this,比如说”；Gemini 记为“啊这比如说”。\n   - **原视频证据**：00:04 - 00:06 讲师说的中文是“啊这比如说可以是……”，并非英文“Ah, this”。\n   - **判断**：Gemini 吻合；Qwen 误判为英文。\n\n3. **口语细节（00:33 - 00:34）**\n   - **差异**：Qwen 记为“那我们会感觉起来”；Gemini 记为“那我们会是感觉起来”。\n   - **原视频证据**：00:33 处讲师在“会”后有一个轻微的卡顿/塞音（近似“是/sh”的尾音），随后说“感觉起来更舒服一点”。两份记录对核心语义均无影响，Gemini 保留了该口语碎音。\n\n4. **专有简称（00:48 - 00:50）**\n   - **差异**：Qwen 记为“那下一个单词我们新就见过了”；Gemini 记为“那下一个单词我们新一就见过了”。\n   - **原视频证据**：00:48 - 00:50 音频清晰可辨为“我们新一就见过了”（指《新概念英语第一册》简称“新一”）。\n   - **判断**：Gemini 吻合；Qwen 漏了“一”字。\n\n5. **后半段严重复读幻觉与漏记（01:39 - 01:59）**\n   - **差异**：\n     - Qwen 在 01:39“I've ever used.”之后陷入机器复读死循环，连续重复 6 遍“Okay, say this sleeping bag is the most comfortable one I've ever used.”，完全丢失了 01:39 至 01:59 的真实语音内容。\n     - Gemini 记录了：“哦，说这个睡袋是最舒服的一个我曾经所使用过的，OK？好，very good，那叫 comfortable，还结合了第八课咱们说的这个叫做形容词最高级。好，一个句型，啊。Next one。这个单词跟我读一下叫做 soundly。soundly，OK？sound”。\n   - **原视频证据**：\n     - 01:39 - 01:45 语音：“哦，说这个睡袋是最舒服的一个我曾经所使用过的，OK？”\n     - 01:45 - 01:53 语音：“好，very good，那叫 comfortable，还结合了第八课咱们说的这个叫做形容词最高级。好，一个句型，啊。”\n     - 01:54 - 01:59 语音：“Next one。这个单词跟我读一下叫做 soundly，soundly，OK？sound-”（视频在 01:59 结束）。\n   - **判断**：Gemini 完全吻合；Qwen 出现严重的模型复读幻觉并漏掉最后 20 秒内容。\n\n6. **画面内容与板书时间码复核（仅针对包含画面记录的 Gemini 候选）**\n   - **00:00 - 00:29**：左上角婴儿爬行图、橙底白字“单词造句指南”表格、右上角“胶囊助学计划”水印、单词“/kriːp/ /krept/ creep crept v.”及例句①②③均与原画面一致。（注：00:00 时第①句下方已有蓝色下划线，第③句下方无下划线）。\n   - **00:29 - 00:35**：00:29 讲师在“are”下方画横线并划掉“are”，00:30 - 00:31 在上方手写蓝色“were”。（注：Gemini 写“同时 when you are a baby. 下方添加了蓝色下划线”略有偏差，实际蓝色短横线仅画在“are”正下方及划在“are”字上）。\n   - **00:36 - 01:05**：00:36 切换为睡袋图片及“/ˈkʌmftəbl/ sleeping bag n. comfortable adj.”；00:38 在“sleeping”下方画线，00:48 在“comfortable”下方画线。\n   - **01:06 - 01:15**：01:05 出现例句“① She is keen on buying new sleeping bags. L20”；01:07 在“is keen on”下画线，01:09 在“on”后画竖线/括号标记，01:10 从“sleeping bag”画蓝色长箭头指向左上角睡袋图。\n   - **01:16 - 01:32**：01:16 出现例句“② This sleeping bag has to be cleaned. L21”；01:24 - 01:25 在“has to be cleaned”下方画蓝色下划线。\n   - **01:33 - 01:53**：01:32 出现例句“③ This sleeping bag is the most comfortable one I've ever used. L8”；01:48 - 01:49 在“the most comfortable”下方画蓝色下划线。\n   - **01:54 - 01:59**：01:54 切换为熟睡女孩图片及“/ˈsaʊndli/ soundly adv.”，01:56 在“soundly”下方画蓝色下划线。\n\n---\n\n### 二、 综合结论\n\n- **Qwen 机器转写候选**：**不吻合**。除前半段存在“one”、“Ah, this”误听及漏字（“新一”漏“一”）外，在 01:39 后发生严重的英文句子无限复读错误，导致 01:39 - 01:59 的全部中英文讲解及新单词“soundly”完全缺失，且无时间码与画面记录。\n- **Gemini 音画抽查候选**：**高度吻合**。语音转写完整、准确，未发生幻觉或漏记，时间码与原视频高度对齐；画面文字与板书动态记录基本准确（仅个别手写下划线的覆盖单词范围描述存在极细微偏差）。"
+    },
+    {
+      "state": "machine_review",
+      "source": {
+        "drive_file_id": "1ZCc-PYpX1YOSkJE0lPEGSsQA8uFUrXoT",
+        "series": "新概念英语第二册_L49-L96",
+        "directory": "Lesson_091_P162_091 文章",
+        "title": "091 文章",
+        "source_sha256": "7792d1af26515769035b93e719b137ae74674b683723ff923f49d909508e66a8",
+        "source_md5": "fe2c08bc3ac40cd99cd23ee5074b3358",
+        "source_duration_seconds": 1028.366
+      },
+      "clip": {
+        "clip_start_seconds": 454.183,
+        "clip_end_seconds": 574.183,
+        "clip_sha256": "eaf5e301d852d391d2d4d5e93b438c08e45a93deb263d0132d818bf77221808b"
+      },
+      "qwen_vs_first_gemini_agreement": 0.773,
+      "selection_rule": "machine text agreement below 0.80; triage only, not measured accuracy",
+      "qwen_input_sha256": "dd0f7e462466f04914c93b1f02cdd74dfc7ace569ea6a6b9d6a8bc463efeb731",
+      "prior_gemini_input_sha256": "e5647195f336c40b04d1bcecc0a53e1b2211ba856e517ac1f2af03668f5ad2b9",
+      "model_requested": "gemini-4-argon-high",
+      "model_returned": "gemini-4-argon-trial",
+      "finish_reason": "STOP",
+      "quality_flags": [],
+      "elapsed_seconds": 56.1,
+      "limitations": "Only this clip; model judgments and timecodes are not human verified.",
+      "review_text": "基于所附视频的音频与画面，对两份机器记录进行独立复核，具体差异、原视频证据及吻合度判断如下：\n\n### 一、 具体差异与原视频证据逐项核对\n\n1. **00:00 - 00:01 开头的残音**\n   - **原视频证据**：片段在 00:00 切入时，讲师正在朗读上一句的尾部，只能听到“...lot saw one of the men taking photographs.”（对应课件上的“pilot”后半段发音）。\n   - **比对判断**：Qwen 记为“saw one of the men...”（省略了半个词）；Gemini 补全为“the pilot saw one of the men...”。严格按本片段内可听见的语音，开头的“the pi-”并未完整出现在音频中，Gemini 属于结合课件的补写。\n\n2. **00:04 - 00:08 “When”的转写与人称代词**\n   - **原视频证据**：00:04 - 00:08 讲师口述“好，其实这地方的一个 When 和这儿的一个逗号就帮你断句了”，同时在 00:04 - 00:05 用蓝笔圈出课件上的“**When**”。\n   - **比对判断**：Qwen 将英文“When”误听为同音汉字“问”，且将“帮你”误记为“帮您”（不吻合）；Gemini 准确记为“when”和“帮你”（吻合，仅“这地方”多加了一个“个”字）。\n\n3. **00:11 - 00:14 语气停顿词**\n   - **原视频证据**：00:11 - 00:14 讲师说“在这个……呃这个 station”。\n   - **比对判断**：Qwen 保留了口语停顿词“呃这个”（吻合）；Gemini 省略了“呃这个”（漏记）。\n\n4. **00:24 - 00:25 “三十五课咱学的”**\n   - **原视频证据**：00:24 - 00:25 讲师说“三十五课咱学的”。\n   - **比对判断**：Qwen 记为“三十五课咱学了”（“咱”字吻合，句尾助词略有偏差）；Gemini 记为“35课刚学过”（将“咱”误听为“刚”，不吻合）。\n\n5. **00:33 - 00:41 细微口语词差异**\n   - **原视频证据**：00:33 - 00:34 讲师说“看到了其中一个人”（无“的”字）；00:38 - 00:41 讲师说“这个空军基地，你在空军基地上面拍照片儿就很危险了嘛”。\n   - **比对判断**：Qwen 准确记录了“看到了其中一个人”和“这个空军基地……就很危险了嘛”（吻合）；Gemini 记为“看到了其中的一个人”和“这个是空军基地……就很危险吧”（多加了“的”、“是”，将“了嘛”记为“吧”，不完全吻合）。\n\n6. **01:02 - 01:09 英文单词“descend”的拼写**\n   - **原视频证据**：课件文本为“descend”，讲师在 01:02 - 01:09 讲解该动词“descend，下降……”。\n   - **比对判断**：Qwen 在此段将两处独立出现的“descend”均误写为名词“Descent”（不吻合）；Gemini 准确记为“descend”（吻合）。\n\n7. **01:10 - 01:13 断句连词处的口语卡顿**\n   - **原视频证据**：01:08 - 01:09 激光笔红点指在“**and**”上，01:10 - 01:13 讲师说：“然后呢，就是帮你断句的句、但、连词嘛”（讲师自己出现了口误卡顿，并未读出英文“and”）。\n   - **比对判断**：Qwen 记为“就是帮你断句的句，断连词嘛”（基本还原了口误卡顿音，较为吻合）；Gemini 记为“and就是帮你断句的句——连词嘛”（原音频中并未说出“and”，属按画面补写，且漏了卡顿音，不吻合）。\n\n8. **01:25 - 01:57 严重漏转与提示词泄露（核心差异）**\n   - **原视频证据**：\n     - 01:25 - 01:32 讲师说：“在在这这个，这个停机坪附近，对吧，降落。啊，飞机跑道附近降落。”\n     - 01:33 - 01:42 讲师朗读课文：“The police were called in, but they could not arrest anyone, for the basket contained two Members of Parliament and the Commanding Officer of the station!”\n     - 01:42 - 01:56 讲师讲解：“这句话乍着看着是挺长啊，挺唬人，两个连词一标，基本上就差不多了。警察被 called in 了，call in 是什么呢？我跟各位这么说啊，警察可以被 call in……”\n   - **比对判断**：\n     - **Qwen 严重失真**：在 01:25“airfield，”之后，不仅完全漏掉了 01:25 至 01:56 长达 31 秒的全部中英文语音，还直接输出了一段英文系统提示词（`Chinese-English teaching recording. Transcribe the exact words in their original spoken languages. Never translate. Preserve repetitions, questions and examples.`），随后直接跳接到 01:56 的“被 call in”。完全不吻合。\n     - **Gemini 高度吻合**：完整、准确地转写了 01:25 - 01:57 期间的所有中英文口述内容（仅 01:46 将较轻的吞音词或语气词记为“但是两个连词一标”，原音更接近“诶两个连词一标”，整体极度接近原片）。\n\n9. **画面教学内容变化的核对（针对 Gemini 第二部分）**\n   - **原视频证据与比对**：\n     - **课件文本格式（00:00 - 00:03）**：画面左上角确有热气球插图，正文加粗词汇及 `L35` 上标均与 Gemini 描述完全一致；但需指出，原画面中“saw one of the men taking”、“Soon afterwards”、“called in”三处不仅加粗（或突出显示），还带有**下划线**，Gemini 漏提了下划线特征。\n     - **蓝色板书批注**：00:04 - 00:05 讲师用蓝笔圈出“**When**”，00:06 - 00:07 在“station,”后画蓝色斜线“/”。此外，在 **01:44 - 01:47**，讲师还用蓝笔先后圈出了“**but**”和“**for**”两个连词——Gemini 在画面分析的 01:46 - 01:49 仅提到了激光笔红点点在“but”和“for”上，**漏记了用蓝笔给“but”和“for”画蓝圈的板书动作**。\n     - **激光笔红点轨迹**：Gemini 所列出的各个时间段（00:09-00:11、00:19-00:23、00:32-00:37、00:46-00:51、00:55-00:58、01:08-01:09、01:16-01:18、01:33-01:42、01:50-01:52）的红点指示位置，经逐帧核对均与原视频画面吻合。\n\n---\n\n### 二、 总体结论\n\n- **Qwen 机器转写候选**：前半段（00:00 - 01:25）对口语语气词和停顿的保留较好，但存在同音错别字（“When”作“问”）和英文拼写错误（“descend”作“Descent”）；后半段（01:25 - 01:56）发生严重的转写崩溃，遗漏了约半分钟的授课内容并混入了英文提示词指令，整体**不合格**。\n- **此前 Gemini 音画抽查候选**：人声转写完整覆盖了全片 00:00 - 01:59，时间码准确，中英文识别率高（仅个别口语虚词有轻微润色或补全）；画面分析部分准确还原了绝大多数激光笔轨迹与前期的蓝笔断句，仅漏记了 01:44 - 01:47 圈画“but”和“for”的两个蓝色圆圈及课件原有的下划线细节，整体与原视频**高度吻合**。"
+    },
+    {
+      "state": "machine_review",
+      "source": {
+        "drive_file_id": "1mO-Gl2sSud_gmkaNDemWAu8OGM8IB9c5",
+        "series": "新概念英语第二册_L49-L96",
+        "directory": "Lesson_082_P126_082 单词",
+        "title": "082 单词",
+        "source_sha256": "72279ad1ff4cd74794adeea3a1771751d232b9a33c9ae5932577c91f63c26940",
+        "source_md5": "0a6a95e8d16a26ef04964d31ef172acd",
+        "source_duration_seconds": 710.233
+      },
+      "clip": {
+        "clip_start_seconds": 295.116,
+        "clip_end_seconds": 415.116,
+        "clip_sha256": "a487f8d6273df02a74480a6779e1f7d7e34a1077a51bdac1cd6f645892f6cd30"
+      },
+      "qwen_vs_first_gemini_agreement": 0.773,
+      "selection_rule": "machine text agreement below 0.80; triage only, not measured accuracy",
+      "qwen_input_sha256": "14de0f453f4ba1faac299a6ca85a4331cc094ea8d0bcaf1f8856bcc07627605c",
+      "prior_gemini_input_sha256": "4d969db95a09df5282917156fc118be3968de9b706c92b1970e5df6f78c43c7d",
+      "model_requested": "gemini-4-argon-high",
+      "model_returned": "gemini-4-argon-trial",
+      "finish_reason": "STOP",
+      "quality_flags": [],
+      "elapsed_seconds": 62.14,
+      "limitations": "Only this clip; model judgments and timecodes are not human verified.",
+      "review_text": "以下是基于视频音频与画面的独立复核结果。\n\n### 一、 核心差异与具体证据逐项核对\n\n#### 1. 00:02 - 00:03 处口语助词“的”\n*   **原视频内容**：主讲人原话为“那咱们直接来一个小的短语”。\n*   **证据**：00:02 - 00:03 音频清晰发音为“小的短语”。\n*   **两份记录对比**：Qwen 记录为“小的短语”（吻合）；Gemini 漏掉了“的”，记为“小短语”（不吻合）。\n\n#### 2. 00:36 - 00:48 处中文讲解被错误翻译为英文（严重差异）\n*   **原视频内容**：主讲人用中文讲解：“啊，早年的很多所谓马戏团不就是这样吗？弄了一个特别奇奇怪怪的动物，然后带着它全国巡演，然后赚这个门票钱，对吧？哎，make a profit，盈利，获取利润，赚钱。”\n*   **证据**：00:36 - 00:48 音频全程为中文讲解，仅夹杂短语“make a profit”。\n*   **两份记录对比**：\n    *   Qwen 将这段中文直接机器翻译成了英文（\"Ah, early years of many so-called circuses...\"），且在结尾变成了乱码式的“Make a profit, profit, make a”（严重不吻合）。\n    *   Gemini 准确转写了这段中文及英文短语（吻合）。\n\n#### 3. 00:48 - 01:05 处整段语音漏记（严重差异）\n*   **原视频内容**：主讲人讲解例句④：“最后一句（话），Repeat after me，不要忘了。Surprisingly, the creature has a very good temper. 说，哎很神奇的是，这个生物它的脾气还特别好。你别看它长得好像很凶，”\n*   **证据**：00:48 画面出现例句 `④ Surprisingly, the creature has a very good temper. L78`；00:50 - 01:05 主讲人朗读并翻译解释该句。其中 00:50 音频为“最后一句话”（“话”字轻读）。\n*   **两份记录对比**：\n    *   Qwen 完全漏掉了 00:48 - 01:05 的全部内容，直接从 00:48 跳接到了 01:05 的“但是脾气格外的温和”（严重漏记）。\n    *   Gemini 完整记录了该段内容，仅在 00:50 处将“最后一句话”记为“最后一句”，漏了轻读的“话”字（基本吻合）。\n\n#### 4. 01:21 - 01:28 处同音词“本课”与鱼类名称\n*   **原视频内容**：主讲人说“我们本课结合起来……比如说本课学的那个jiǎng鱼啊”。\n*   **证据**：\n    *   这是一节英语课程教学视频，语境为“本课（这一课）”，发音为 `běn kè`。\n    *   01:28 处提到鱼的名称，音频发音清晰为 `jiǎng yú`（新概念英语课文中通常译作“桨鱼”，但画面上方配图为橙色躄鱼/蛙鱼照片，无中文名称板书）。\n*   **两份记录对比**：\n    *   关于“本课”：Qwen 记为“本课”（吻合）；Gemini 误记为同音词“本科”（不吻合）。\n    *   关于鱼名：Qwen 根据发音记为同音字“蒋鱼”；Gemini 结合画面图片记为“躄鱼”，但与主讲人实际发音 `jiǎng yú` 不符。由于视频画面无中文字幕，仅凭音频只能确定发音为 `jiǎng yú`，具体对应哪个汉字（如“桨鱼”）无法仅从本片段画面完全确认，但肯定不读作“躄（bì）鱼”。\n\n#### 5. 01:51 - 01:52 处口误与用词（“不，各式各样”）\n*   **原视频内容**：主讲人说：“特别喜欢什么呢？不，各式各样的奇形怪状的那些怪物”。\n*   **证据**：01:51 音频有一个明显的停顿口误音“不（bù）”，紧接着 01:52 清晰发音为“各式（gè shì）各样”。\n*   **两份记录对比**：Qwen 准确记录了“不，各式各样的”（吻合）；Gemini 漏掉了口误词“不”，并将“各式各样”误听为“各色各样”（不吻合）。\n\n#### 6. 01:56 - 02:00 处同音词（“人画的” vs “人化的” / “真正” vs “真的”）\n*   **原视频内容**：主讲人解释怪物概念：“可以是人huà的，可以是真正，呃，存在过的，或者正在存……”\n*   **证据**：\n    *   01:56 音频发音为 `rén huà de`，结合后半句“或者是真正存在过的”，语境上既可能指“人画（绘制）出来的”，也可能指“拟人化的”，无字幕板书佐证，无法完全确定是哪个“huà”字。\n    *   01:57 音频发音为“真正（zhēn zhèng）”。\n*   **两份记录对比**：Gemini 记为“真正”（吻合），Qwen 记为“真的”（不吻合，且漏了“真正”前的“可以是”后面的停顿衔接细节，不过 Qwen 记了“呃”）。\n\n#### 7. 单词拼写连写问题\n*   **证据与对比**：Qwen 记录中出现了 `wantsto`（00:35）、`Leois`（01:34）的英文单词漏空格连写错误；Gemini 拼写及空格正常。\n\n---\n\n### 二、 画面内容复核（针对 Gemini 第二部分）\n\n视频画面无原生字幕，仅有左侧教学板书课件。经逐帧核对：\n1.  **00:00 - 01:11 板书**：橙底白字卡片文字、音标 `/ˈkriːtʃə/`、词性 `creature n.`，以及 ①至④ 四个例句的出现时间（00:00、00:15、00:30、00:48）、文本内容、尾标（L35、L80、L78）及加粗/下划线格式，**与 Gemini 的记录基本吻合**。\n2.  **01:12 - 02:00 板书**：01:12 切换为 `peculiar adj.` 及音标 `/pɪˈkjuːliə/`，①至③ 三个例句的出现时间（01:20、01:32、01:56）及文本内容**基本准确**。\n    *   **一处细微格式差异**：01:32 出现的例句 `② Leo is such a big fan of various peculiar monsters. L74` 中，画面实际带黑色下划线的部分是 **`is such a big fan of`**（包含介词 `of`），且 **`such`** 并未明显加粗（与例句①②的字体粗细一致，不同于第一页 creature 例句②中明显的粗体 `such`）。Gemini 记为仅“is such a big fan”带下划线且“such”加粗，与画面实际细节略有出入。\n\n---\n\n### 三、 总结判断\n\n*   **Qwen 机器转写候选**：在前半部分和结尾处对口语细节（如“小的短语”、“不，各式各样的”）捕捉较准，但存在**重大缺陷**：将 00:36 - 00:48 的中文讲解擅自翻译成了英文，并**完全漏掉了 00:48 - 01:05 长达 17 秒的整段教学语音**，且完全没有记录画面板书信息。\n*   **Gemini 音画抽查候选**：整体完整度很高，无大段漏记或错译，时间码与画面板书变化记录详实准确；仅在个别同音字词（如将“本课”写为“本科”、将音频的“jiǎng鱼”写为“躄鱼”、将“各式各样”写为“各色各样”）、极个别轻声字（“小的短语”、“最后一句话”）以及一处下划线范围（漏算了 `of`）上存在细微偏差。"
+    },
+    {
+      "state": "machine_review",
+      "source": {
+        "drive_file_id": "1oef51bMCI-K6FxQSnXCTo35qHILjQWwB",
+        "series": "新概念英语第二册_L49-L96",
+        "directory": "Lesson_095_P175_095 文章",
+        "title": "095 文章",
+        "source_sha256": "8dd361309fa036124ae9a8ae88e046f6121d598cc9f3a71fcef2dad58427a059",
+        "source_md5": "22c9a06b0f2894b9f6912857c41e5297",
+        "source_duration_seconds": 713.1
+      },
+      "clip": {
+        "clip_start_seconds": 296.55,
+        "clip_end_seconds": 416.55,
+        "clip_sha256": "de52b0a3f357ba8f7e3f7fcb99aecfb3b99dd3172f725c7d3d31dd54c9f8dd9e"
+      },
+      "qwen_vs_first_gemini_agreement": 0.774,
+      "selection_rule": "machine text agreement below 0.80; triage only, not measured accuracy",
+      "qwen_input_sha256": "eceeb53e302c1deb41cd865ac7e147ad7393aec46f3a64846359d6cdd8fe54bb",
+      "prior_gemini_input_sha256": "1cb239c4ae07e3f7a37fc015301d0fa6673aa88c3138d451db5d2f5c29ff3d44",
+      "model_requested": "gemini-4-argon-high",
+      "model_returned": "gemini-4-argon-trial",
+      "finish_reason": "STOP",
+      "quality_flags": [],
+      "elapsed_seconds": 56.18,
+      "limitations": "Only this clip; model judgments and timecodes are not human verified.",
+      "review_text": "根据所附视频的音频与画面独立复核，两份机器记录与原片均存在具体差异。逐项核对结果如下：\n\n### 1. 00:03 - 00:33 语音大段漏录 vs 正常记录\n* **原视频内容及证据**：在 **00:03 - 00:33** 期间，讲师清晰读出并讲解了第一页课件的后半部分。原音为：“他以为，他当时以为啥呢，我着火了。给我气得够呛。I must definitely get that fellow posted. 这是气话了当然啊。他说我一定要，我必须的，必须必啊，必须的，一定要，啊，就是这个肯定的，怎么样，绝对要怎么样呢，get that fellow posted，把这个家伙给委派到别的地方去，啊找别人把他给委派到别的地方去，对吧，get that fellow posted.”\n* **两份记录比对**：\n  * **Qwen 候选**：**不吻合**。在“他以为，他当”之后直接跳接到了 00:33 的“the ambassador's wife...”，整段漏掉了约 30 秒的语音内容。\n  * **Gemini 候选**：**吻合**。完整记录了该时间段内的中英文讲解。\n\n---\n\n### 2. 00:33 - 00:40 英文朗读与语法短语讲解的误判与添字\n* **原视频内容及证据**：\n  * **00:33 - 00:37**：讲师只朗读了前半句：“The Ambassador's wife went on asking questions.” 随后在 **00:37 - 00:39** 直接开始讲解短语，原音明确为：“**go on** doing something，**本课**习惯用法啊”。（直到 **00:47** 才开始读后半句“when she suddenly...”）。\n* **两份记录比对**：\n  * **Qwen 候选**：**吻合**。准确记录了只读前半句、紧接“Go on doing something. 本课习惯用法啊”，并在后面正确位置（00:47）记录了“When she suddenly...”。\n  * **Gemini 候选**：**不吻合**。存在三处错误：\n    1. 在 00:33 处根据屏幕板书**凭空补写**了讲师当时并未朗读的后半句（`when she suddenly... she asked.`）；\n    2. 将讲师口述的“**go** on doing something”误写为板书上的变形“**went** on doing something”；\n    3. 将“**本课**习惯用法”同音误写成了“**本科**习惯用法”。\n\n---\n\n### 3. 01:12 - 01:26 英文朗读与中文串讲的顺序及字词差异\n* **原视频内容及证据**：\n  * **01:11 - 01:15**：讲师边读边译：“'Oh, that,' 说啊那个呀，said the Ambassador. 他说道。”\n  * **01:16 - 01:22**：讲师朗读英文原句：“'Someone fired a shot through my office window. Accurate, don't you think?'”\n  * **01:23 - 01:26**：讲师开始中文串讲，原音为：“**说**有这么个人呢，**咱**不知道是谁……”\n* **两份记录比对**：\n  * **Qwen 候选**：**基本吻合，仅一字微瑕**。准确还原了“读一句、译一句”的穿插顺序，听出了“咱不知道是谁”；但将 01:23 的开头“**说**有这么个人呢”误听为“**所以**有这么个人呢”。\n  * **Gemini 候选**：**不吻合**。打乱了原音频在 01:11 - 01:15 处中英穿插的实际顺序（把英文全部合并前置），且在 01:23 处漏掉了开头的“说”字和“咱不知道是谁”的“**咱**”字，还将“说啊那个呀”误写为“说了：‘啊，那个呀。’”。\n\n---\n\n### 4. 01:45 - 02:00 结尾处未读文本的幻觉补写与截断字核对\n* **原视频内容及证据**：\n  * **01:46 - 01:50**：讲师仅朗读了第一句：“Fortunately, I wasn't wearing it at the time.” **并未朗读**屏幕下方的第二句（`If I had been, I would not have been able to get home for lunch.`）。\n  * **01:57 - 02:00**：视频结束前最后一句原音为：“I wasn't wearing it，我当时没有**正**……”（话音在“正”字处因视频结束而截断）。\n* **两份记录比对**：\n  * **Qwen 候选**：**吻合**。没有多写未读的英文句子，且如实记录了视频截断处的最后一个字“我当时没有**正**”。\n  * **Gemini 候选**：**不吻合**。在人声转写中**错误补写**了讲师根本没读的 `If I had been... for lunch.` 整句英文；且在结尾处按常识脑补写成了“我当时没有**戴着……**”，与实际发出的“正”字读音不符。\n\n---\n\n### 5. 屏幕画面板书角标文字核对（仅针对 Gemini 候选第二部分）\n* **原视频内容及证据**：\n  * **00:00 - 00:32** 画面左侧文本第一行：`as usual` 左上角的灰色小字角标为 **`L13`**（代表 Lesson 13）。\n  * **01:45 - 02:00** 画面左侧文本第一行：`at the time` 左上角的灰色小字角标为 **`L70`**（代表 Lesson 70）。\n* **两份记录比对**：\n  * **Qwen 候选**：纯语音转写，未包含板书模块。\n  * **Gemini 候选**：**主体板书吻合，但角标识别有误**。将画面中清晰的 `L13` 误判为 `[1]`，将 `L70` 误判为 `[170]`。\n\n---\n\n### 总结判断\n* **Qwen 机器转写候选**：在 **00:33 - 02:00** 区间内的逐字听感准确度较高（能听出未读句子、截断音“正”及口语词“咱”），但存在**致命缺陷**——完全漏掉了 **00:03 - 00:33** 长达半分钟的语音内容。\n* **此前 Gemini 音画抽查候选**：时间轴覆盖完整且包含板书整理，但在人声转写中存在明显的**“照着屏幕板书脑补人声”**现象（多处补写了讲师未朗读的英文句子、按常识篡改结尾截断词），且存在少量同音错别字（“本科”）和画面角标字符识别错误（`L13` 误为 `[1]`，`L70` 误为 `[170]`）。"
+    },
+    {
+      "state": "machine_review",
+      "source": {
+        "drive_file_id": "1EhBbChwzO4nE0AvckJDFumGkwch74EDU",
+        "series": "新概念英语第二册_L01-L48",
+        "directory": "Lesson_002_P008_L002 单词+文章",
+        "title": "L002 单词+文章",
+        "source_sha256": "204934e39bfe8a3e8b6442610a4ad74c2e1786d6c7beb66702cda6caf22a8acb",
+        "source_md5": "203af531a506249482bd2fe73183ced5",
+        "source_duration_seconds": 1444.066
+      },
+      "clip": {
+        "clip_start_seconds": 662.033,
+        "clip_end_seconds": 782.033,
+        "clip_sha256": "7be2f86068001426180aa80129eb266fbcb0ffe2f41b2b4ebdb3b77901b01343"
+      },
+      "qwen_vs_first_gemini_agreement": 0.775,
+      "selection_rule": "machine text agreement below 0.80; triage only, not measured accuracy",
+      "qwen_input_sha256": "3c0e4c3f7346f2aad1c353ba3b8f61c3908c84533f8f08de888f280ae27c4cc0",
+      "prior_gemini_input_sha256": "b60ff7b58b84982a8d6d2ab86680b06d65f2e7e81e0a13f8293a1bdfcc60d2f1",
+      "model_requested": "gemini-4-argon-high",
+      "model_returned": "gemini-4-argon-trial",
+      "finish_reason": "STOP",
+      "quality_flags": [],
+      "elapsed_seconds": 49.35,
+      "limitations": "Only this clip; model judgments and timecodes are not human verified.",
+      "review_text": "以下为基于所附视频音画内容的独立复核结果。\n\n### 一、 有依据的具体差异及原视频证据\n\n#### 1. 音频转写差异\n\n* **00:07 处（儿化音连读 vs 普通叠词）**\n  * **原视频内容**：老师发音为两个带明显儿化音的字“**婶儿、婶儿**”（或“婶儿婶儿”）。\n  * **对比评估**：Gemini 记为“婶儿、婶儿”，与原音吻合；Qwen 记为“婶婶”，未体现老师实际发出的两次儿化音及由此引发的解释“那这是我们土话了啊”。\n\n* **00:10 处（“接着” vs “接”）**\n  * **原视频内容**：老师语速较快，发音为“**接往下走**”（或吞掉了“着”字）。\n  * **对比评估**：Gemini 记为“接往下走”，更贴近实际听感；Qwen 记为“接着往下走”。\n\n* **00:16 与 00:28 处（漏字“的”）**\n  * **原视频内容**：00:16 老师说“先来一个**小的**短语”，00:28 说“那有一个**小的**短语”。\n  * **对比评估**：Qwen 两处均准确记为“小的短语”，与原音吻合；Gemini 两处均漏掉“的”字，误记为“小短语”。\n\n* **00:25 处（同音字问题：“再” vs “在”）**\n  * **原视频内容**：老师解释 `repeat` 词义时说“repeat 就是**再**重复一遍”。\n  * **对比评估**：Qwen 与 Gemini 均写作“在重复一遍”，按语义应为副词“再”。\n\n* **00:48 处（漏字“是”）**\n  * **原视频内容**：老师清晰说出“**但是**我个人觉得啊”。\n  * **对比评估**：Qwen 记为“但是”，与原音吻合；Gemini 漏掉“是”字，记为“但”。\n\n* **01:11 处（多出英文单词“You”）**\n  * **原视频内容**：老师说“或者说 Pardon? **再说一遍**，或者说 What?”，“Pardon?”与“再说一遍”之间无任何英文发音。\n  * **对比评估**：Gemini 记为“Pardon? 再说一遍”，与原音吻合；Qwen 误记为 `Pardon? You再说一遍？`，凭空多出了“You”。\n\n* **01:28 - 02:00 处（电影《狮子王》片段台词）**\n  * **原视频内容**：播放《狮子王》动画原声片段，包含角色对白及唱段。其中 01:30 处画面下方英文字幕虽印为 `Look, kid, bad things happens`，但角色实际英文配音为语法正确的复数动词 `happen`。\n  * **对比评估**：Qwen 完整转写了该段英文原声台词（且按实际发音写为 `happen`），与音频吻合；Gemini 仅标注“（01:28 之后为电影《狮子王》原声片段，老师未再说话）”，未对原声台词进行转写。\n\n---\n\n#### 2. 画面内容及视觉细节差异（针对 Gemini 第二部分）\n\nQwen 未提供画面描述；对 Gemini 的画面抽查记录复核如下：\n\n* **00:00 - 00:08 处（表格标题漏字、衣服文字标点）**\n  * **原视频内容**：\n    1. 画面中间上方棕底白字竖排标题为 6 个字：“**单词造句指南**”。\n    2. 左上角女子 T 恤印字每一行末尾均有句点：`BEST.` / `AUNT.` / `EVER.`。\n  * **对比评估**：Gemini 将竖排标题记为“单词指南”，**漏掉了“造句”二字**；T 恤文字未体现句点。其余左侧文字及出现时间均与画面吻合。\n\n* **00:16 - 00:27 处（文字颜色变化）**\n  * **原视频内容**：00:16 出现 `① repeat after me!` 时确为灰色/黑色，随后在 00:27 新增 `② repeat your question.` 的同时，第一行 `repeat after me!` 变为**橙色高亮**。\n  * **对比评估**：Gemini 的时间码（00:09、00:16、00:27、00:38、00:57）及文本内容完全准确，仅对 00:16 初始颜色与 00:27 变色节点的描述略有先后偏差。\n\n* **00:52 处（红色标记形状描述不准）**\n  * **原视频内容**：00:52 在 `Can you repeat your question?` 右侧出现的是一个**中心带白点的实心红点（或粗红圈）图标**，并非手绘的“圆圈圈画”整句话。\n  * **对比评估**：Gemini 时间码准确，但将其描述为“红色圆圈圈画”不够贴切。\n\n* **01:20 - 02:00 处（电影字幕颜色判定错误）**\n  * **原视频内容**：电影画面底部的双语字幕（中文在上、英文在下）均为**白色字体（带黑色描边/阴影）**，仅在 01:46 - 01:47 画面上方额外浮现的两行科普注释（“斯瓦西里语是……”）中，“斯瓦西里语”五个字为黄色高亮。\n  * **对比评估**：Gemini 称底部字幕为“黄色中文字幕，白色英文字幕”，其中**“黄色中文字幕”与原画面不符**。其余画面布局及右下角片名信息准确。\n\n---\n\n### 二、 综合结论\n\n1. **Qwen 机器转写候选**：包含老师讲课及电影原声的完整文本，抓住了“小的短语”“但是”等细节，但在 01:11 处出现了明显的机器幻觉（多出 `You` 字），且未体现 00:07 处关键的方言儿化音。\n2. **Gemini 音画抽查候选**：对老师口语停顿及“婶儿、婶儿”的记录更准确，时间码与画面文字出现节点高度吻合；但存在两处漏字（“小的短语”漏“的”、“但是”漏“是”）、未转写 01:28 后的电影台词，且画面描述中将“单词造句指南”漏记为“单词指南”、将白色中文字幕误判为黄色。"
+    },
+    {
+      "state": "machine_review",
+      "source": {
+        "drive_file_id": "1aQLxYePZ0xwzeDZ6g6CEk-kxR3J4-Kx_",
+        "series": "新概念英语第二册_L01-L48",
+        "directory": "Lesson_044_P160_L044 单词",
+        "title": "L044 单词",
+        "source_sha256": "6bea69c88fb5d24d1071c103edd6e5cc08f19a2fb25e1a134fd0c4360ef9f266",
+        "source_md5": "e2c1701dfc872ebe84fc664613db0460",
+        "source_duration_seconds": 1094.766
+      },
+      "clip": {
+        "clip_start_seconds": 487.383,
+        "clip_end_seconds": 607.383,
+        "clip_sha256": "d943497cdc58208bc0f3e242a2a5797f3a15f54691ad1d32152c31351742607c"
+      },
+      "qwen_vs_first_gemini_agreement": 0.78,
+      "selection_rule": "machine text agreement below 0.80; triage only, not measured accuracy",
+      "qwen_input_sha256": "711ebd23bf31258ed5f1da8a996d71c33e0848e92ca1285e98690ef9a5eca77a",
+      "prior_gemini_input_sha256": "f3591de98a3fa7f16913919a7069c400be2cf3abd1ac0da521d340713a690550",
+      "model_requested": "gemini-4-argon-high",
+      "model_returned": "gemini-4-argon-trial",
+      "finish_reason": "STOP",
+      "quality_flags": [],
+      "elapsed_seconds": 50.24,
+      "limitations": "Only this clip; model judgments and timecodes are not human verified.",
+      "review_text": "以下是依据视频音频与画面对两份记录的复核结果：\n\n### 一、 核心差异与具体证据核对\n\n**1. 00:15 - 00:17 语气引导词差异**\n* **原视频内容**：音频在 00:16 处，讲师说的是“**你像**这句话至少可以用 what 对 a deer 提问”。\n* **记录对比**：\n  * **Qwen 候选**：记为“你像这句话”，与原音吻合。\n  * **Gemini 候选**：记为“你看这句话”，与原音不符。\n\n**2. 00:26 - 00:28 代词差异**\n* **原视频内容**：音频在 00:27 处，讲师说的是“下一个单词**跟我**一起读一下”（存在连读，但无“们”字音）。\n* **记录对比**：\n  * **Qwen 候选**：记为“跟我们一起读一下”，多出“们”字。\n  * **Gemini 候选**：记为“跟我一起读一下”，与原音吻合。\n\n**3. 00:50 - 00:52 助词漏记/误记**\n* **原视频内容**：音频在 00:50 处，讲师说的是“这我们**用的叫**原文摘抄再加变”。\n* **记录对比**：\n  * **Qwen 候选**：记为“这我们用的叫”，与原音吻合。\n  * **Gemini 候选**：记为“这我们用的是叫”，多出“是”字，且上一句“很简单”处标点错置为“很简，单”。\n\n**4. 01:07 - 01:10 动词形式（音画配合）**\n* **原视频内容**：屏幕板书显示 `③ My mom asks me how the strap broke. L39`，讲师口播读作 `My mom ask(s) me...`。\n* **记录对比**：\n  * **Qwen 候选**：转写为过去式 `asked me`，与板书的 `asks me` 不符。\n  * **Gemini 候选**：转写为 `asks me`，与屏幕板书完全一致。\n\n**5. 01:21 - 01:53 语种严重误判（中翻英错误）**\n* **原视频内容**：\n  * 01:21 - 01:30 讲师用**中文夹杂英文例句**讲解：“Next one，说 This strap was made in Italy。这是一个很简单的句子，第 10 课咱们就学过，对吧？OK。”\n  * 01:31 - 01:43 讲师继续用**中文**讲解：“最后再来一个句子叫 This is the most beautiful strap I've ever seen。这是我们第八课学过的一个句型，叫做这是最美丽的带子我所见过的。OK, very good.”\n  * 01:44 - 01:52 讲师用**中文**讲解：“Next one，下一个单词，看音标跟我一起读一下，叫做 /pə-ˈze-ʃən/，连起来读叫 possession，possession，OK。”\n* **记录对比**：\n  * **Qwen 候选**：在 01:21 至 01:52 期间出现严重的机器幻觉/语种误判，将讲师的所有中文讲解强行翻译成了英文（如转写为 `say this strap was made in Italy. This is a very simple sentence...`），且将 01:42 的 `OK, very good` 错听为 `OK, here is one`。完全偏离原视频音频。\n  * **Gemini 候选**：完整、准确地记录了该时段的中文原话及英文例句。\n\n**6. 01:58 - 02:00 结尾处语音与板书核对**\n* **原视频内容**：音频在 01:59 结束于“最常用的一个短语”，末尾无“叫”字音；同时 01:58 屏幕出现板书 `① in sb's possession`。\n* **记录对比**：\n  * **Qwen 候选**：末尾多出“叫”字，且无任何画面板书记录。\n  * **Gemini 候选**：结尾语音准确，且准确记录了 01:58 出现的板书内容。\n\n**7. 画面板书细节复核（针对 Gemini 候选的板书记录）**\n* **00:00 - 00:24**：顶部表格并非编号“1-6”，而是无编号的6行文字，最后一行数字实为 `6123456`（代表造句步骤顺序），讲师用蓝笔圈出了 `6123456` 并画线指向表格上方的第3、4行，而非 Gemini 所写的“16123456（圈住4和3）”。此外，例句①右侧有一个手写蓝色数字 `5`，例句②圈出的是整句 `were having a picnic at the edge of a forest.` 及 `a deer`（00:18画出）。\n* **01:06 - 01:20**：讲师在例句③中是用蓝笔绘制了一个大型括弧，将整个从句 `(how the strap broke)` 括了起来，而非仅在“how”下方画圈。\n* **01:21 - 01:43**：讲师在 01:23 从例句③的括弧处画了一个蓝色箭头指向例句④，随后在 `was made in Italy` 下画线；在 01:37 在例句⑤的 `L8` 下方画了蓝色下划线，并非 Gemini 所描述的“从⑤指向右侧的折线箭头”。\n* **01:47 - 01:50**：讲师在音标 `/ pəˈzeʃən /` 下方分三段画了蓝色短横线辅助拼读，Gemini 未记录此笔迹。\n\n---\n\n### 二、 综合评估结论\n\n* **Qwen 机器转写候选**：在 00:00 - 01:20 期间的纯文本转写较为准确（准确捕捉到了“你像”、“用的叫”等细节），但在 **01:21 - 01:53 出现灾难性的语种转换错误**，将约 30 秒的中文授课直接机器翻译成了英文，且完全缺失画面板书信息，整体**不吻合**。\n* **Gemini 音画抽查候选**：语音转写部分与原视频高度吻合（仅“你看”、“用的是叫”等极个别字词有微小偏差，标点有一处错位）；画面板书部分成功捕捉了所有时间节点和核心英文文本，但在手写笔迹的细节描述上（如 `6123456` 的数字识别、括弧与箭头的具体位置）存在一定偏差。整体而言，Gemini 候选的语音与核心板书记录可靠度明显更高。"
+    },
+    {
+      "state": "machine_review",
+      "source": {
+        "drive_file_id": "1UhdJBfm-SlpLIfOuvM8RMz0QyRVT_yw2",
+        "series": "新概念英语第二册_L49-L96",
+        "directory": "Lesson_056_P030_056 语法",
+        "title": "056 语法",
+        "source_sha256": "16e08749cad95ad96556223aec84b601de74cd78aafbf6fc83b8ab81a0a60ca5",
+        "source_md5": "1a37126d0811e670509986c13a2f3955",
+        "source_duration_seconds": 461.6
+      },
+      "clip": {
+        "clip_start_seconds": 170.8,
+        "clip_end_seconds": 290.8,
+        "clip_sha256": "c5c8d4473baa13976fc699a9bc3459825f134066a5cde536801f888f4a4c7abd"
+      },
+      "qwen_vs_first_gemini_agreement": 0.794,
+      "selection_rule": "machine text agreement below 0.80; triage only, not measured accuracy",
+      "qwen_input_sha256": "152707ae3527443bb689ab5516812f43ccee61df0732e077aeb649de05f8a018",
+      "prior_gemini_input_sha256": "f33c5d6f284b9cf72d54848cdc045d9383dfbee86ec7092f3add108e59bc919d",
+      "model_requested": "gemini-4-argon-high",
+      "model_returned": "gemini-4-argon-trial",
+      "finish_reason": "STOP",
+      "quality_flags": [],
+      "elapsed_seconds": 44.92,
+      "limitations": "Only this clip; model judgments and timecodes are not human verified.",
+      "review_text": "依据所附视频的音频与画面，对两份机器记录的复核结论如下：\n\n### 一、 总体复核结论\n* **Qwen 机器转写候选**：在 **00:38 - 01:10** 之间存在**大面积的漏转写**（丢失了约32秒的完整讲解语音），并且在英文拼写及末尾字词上存在轻微误差。\n* **此前 Gemini 音画抽查候选**：人声转写完整、准确，补全了 Qwen 漏掉的所有段落；同时其附加的屏幕板书内容、颜色标注及激光笔动态时间码与原视频画面高度吻合（仅一处激光笔位置描述有微小偏差）。\n\n---\n\n### 二、 具体差异逐项核对与证据\n\n#### 1. 00:18 处细微口语词差异\n* **原视频内容**：主讲人说的是“底下**这一些**，对吧？”（“这”字拉长并带有明显的“一”音）。\n* **比对评价**：Qwen 记录为“底下这一些”，更贴近原声；Gemini 记录为“底下这些”，漏了“一”字。\n\n#### 2. 00:38 - 01:10 处大段语音漏转（核心差异）\n* **原视频内容与时间证据**：\n  * **00:38 - 00:43**：主讲人朗读屏幕例句：“My brother is much taller than yours. He isn't! They're about the same height.”\n  * **00:43 - 00:48**：主讲人笑并评述：“呵呵，这个就让我想起那个两个小孩儿，那，比自己哥哥敢干什么那件事儿，是吧？”\n  * **00:48 - 00:57**：主讲人解析句子：“说我的哥哥呀，much taller than yours，啊，这个高得多，啊，比你的哥哥。啊，yours 就是 your brother，对吧？”\n  * **00:57 - 01:10**：主讲人解释语法概念：“那这里面的 much taller 是怎么回事儿呢？就是 taller 就是高，我高一厘米也是高，高十厘米还是高，但高一厘米你就很难，至少我们很难说它是 much taller，叫高得多。”\n* **比对评价**：\n  * **Qwen 候选**：直接从 00:38 的“My brother is”跳接到了“yours.高的多。”，中间**约 32 秒的音频内容完全丢失**，与原视频严重不符。\n  * **Gemini 候选**：完整、准确地记录了上述全部对话及讲解，与原视频完全吻合。\n\n#### 3. 01:24 处口语词辨析\n* **原视频内容（01:24 - 01:25）**：主讲人说：“对吧？这是……你随便，对吧？主观感受”。在“这是”之后有一个轻微的舌尖音/停顿重起（听感接近“这是，ch-，你随便”或吞音）。\n* **比对评价**：Qwen 忽略了该半音节，记为“这是你随便”；Gemini 将其听写为“这是纯，你随便”。此处属于极轻微的口语不完整发音，两份记录的处理均可理解。\n\n#### 4. 01:44 - 01:55 处英文拼写及中英混杂听写差异\n* **原视频内容与画面证据**：\n  * **画面（01:42 - 02:00）**：屏幕板书明确显示单词拼写为 **whisky**（苏格兰威士忌的英式拼法，无字母 e）。\n  * **音频（01:48 - 01:54）**：主讲人说：“啊，由/说苏格兰的这个**威士忌**，特别不一样，和爱尔兰的 **whisky** 相比吗？”（第一处说的是中文“威士忌”，第二处发音接近英文“whisky”）。\n* **比对评价**：\n  * **Qwen 候选**：将英文全部拼作美式拼法“whiskey”（与板书 `whisky` 不符），且漏掉了01:48处的动词（“说/由”），将中文发音的“威士忌”也记作了英文“whiskey”。\n  * **Gemini 候选**：英文例句严格按照板书拼写为 `whisky`，口语解释部分统一写作中文“威士忌”，整体更符合画面证据。\n\n#### 5. 01:59 处视频末尾截断字差异\n* **原视频内容（01:58 - 02:00）**：主讲人说：“这个实际上，呃，语法角度……”音频在“度”字刚落音时截断，并无后续字词。\n* **比对评价**：Gemini 在“语法角度”处结束，准确；Qwen 在末尾多生成了一个不存在的“**我**”字，属于机器幻觉。\n\n#### 6. 屏幕板书与视觉动态核对（针对 Gemini 第二部分）\n* **00:00 - 00:35**：画面文本、橙褐色高亮词（`tall`、`taller`）及 00:15 - 00:19 红色激光笔圆点移动轨迹，Gemini 记录完全属实。\n* **00:36 - 01:41**：画面文本、橙褐色高亮词（`brother`、`taller`）、蓝色高亮词（`height`）完全属实。\n  * *微小偏差指出*：在 **00:56 - 00:58**，虽然主讲人嘴里在解释“yours 就是 your brother”，但画面上的红色激光笔圆点实际上正停留在 **taller** 下方闪烁，并未滑动到 `yours` 处。Gemini 此处记为“在‘yours’处滑动”与画面局部证据不符（受了语音误导）。其余时间码（00:37-00:41、00:49-00:51、01:34-01:37）的激光笔位置均准确。\n* **01:42 - 02:00**：画面文本、高亮颜色（橙褐色 `Scotch whisky`、蓝色 `Irish whisky`）及 01:44 - 01:48 激光笔提示轨迹，Gemini 记录完全属实。"
+    }
+  ],
+  "legacy_reviews": [
+    {
+      "state": "machine_review",
+      "source_title": "L001 单词讲解造句",
+      "source": {
+        "source_drive_file_id": "1196B0og7aLMR9Lstfz3ceRGQ3N9ojkKR",
+        "source_sha256": "249de68bd2e3ebb4894a6f9d9094c35254ca33511e502fd1dba21b53caf3da34",
+        "source_audio_sha256": "fb763927eb8fbd0b1c6dc431483f49c1f10474828ac990627c792ae51d33dcd0",
+        "source_audio_start_seconds": 600,
+        "source_audio_end_seconds": 720,
+        "clip_sha256": "687fb915f771208a760ecc2777aa6db2fe1c3d18a3ac8a1c4e4cce6f96a50513",
+        "frames": [
+          {
+            "source_time_seconds": 601.433313,
+            "sha256": "be4531a3bd1af68228604801ead78b64457e513b7733da613c29a289da3d2e98",
+            "file": "frame_00.webp"
+          },
+          {
+            "source_time_seconds": 612.7,
+            "sha256": "f4149a32b6dc9a4e55347a86d5eef4d22d537aebd079c125920a2ad45d544109",
+            "file": "frame_01.webp"
+          },
+          {
+            "source_time_seconds": 626.966688,
+            "sha256": "3a37cdb38dbe003561b35b5c7ee7a51415571635300a57c2dacff01e6b7e2b3a",
+            "file": "frame_02.webp"
+          },
+          {
+            "source_time_seconds": 645.366688,
+            "sha256": "2b5c11ecb4b9b9a62661a211e0d9dbc24630f985ea8c01030ed3f5ce65f2edf5",
+            "file": "frame_03.webp"
+          },
+          {
+            "source_time_seconds": 660.7,
+            "sha256": "8fe31a25de330aa85b46ec74023e115fd7b217db145087bd8db900a91e0115a4",
+            "file": "frame_04.webp"
+          },
+          {
+            "source_time_seconds": 674.733313,
+            "sha256": "fd40f5ffed886f0154eddc3a131959ce105080afcb340996f20a4cb5a6d6e5c2",
+            "file": "frame_05.webp"
+          },
+          {
+            "source_time_seconds": 686.966688,
+            "sha256": "178388fa2836112bad0fd45c4dafff13c079eacccf230d64f12af58f7775e7e2",
+            "file": "frame_06.webp"
+          },
+          {
+            "source_time_seconds": 706.566688,
+            "sha256": "9ec2b18a90af8107ae365a4eee408b348e2a214e256a76c040694a796d9ce329",
+            "file": "frame_07.webp"
+          }
+        ],
+        "issue_candidates": [
+          {
+            "type": "asr_disagreement_unresolved",
+            "start": 600.0,
+            "end": 630.0
+          },
+          {
+            "type": "asr_disagreement_unresolved",
+            "start": 630.0,
+            "end": 660.0
+          },
+          {
+            "type": "asr_disagreement_unresolved",
+            "start": 660.0,
+            "end": 690.0
+          },
+          {
+            "type": "visual_description_misses_instructional_content",
+            "start": 668.533312,
+            "end": 668.666687
+          },
+          {
+            "type": "visual_description_misses_instructional_content",
+            "start": 668.666687,
+            "end": 669.2
+          },
+          {
+            "type": "visual_description_misses_instructional_content",
+            "start": 669.2,
+            "end": 669.533312
+          },
+          {
+            "type": "visual_description_misses_instructional_content",
+            "start": 670.033312,
+            "end": 670.2
+          },
+          {
+            "type": "visual_description_misses_instructional_content",
+            "start": 670.2,
+            "end": 670.533312
+          }
+        ],
+        "qwen_excerpt_sha256": "0c2949f4f43c22fcfed3f18cb7e4209c1a3980751afd9128904cb8ebf5661a86",
+        "whisper_excerpt_sha256": "84278b7699b218d443dff0516cae8c184245afbb5f897be9d710956da207f64d",
+        "limitation": "Original audio excerpt and sampled still images; not full motion video or a full lesson."
+      },
+      "model_requested": "gemini-4-argon-high",
+      "model_returned": "gemini-4-argon-trial",
+      "finish_reason": "STOP",
+      "elapsed_seconds": 36.97,
+      "review_text": "根据音频与提供的静态截图，对两份转写记录中的差异逐项核查如下：\n\n### 1. 片段开端（00:00 - 00:01）\n* **音频内容**：片段刚开始时，只能听到半个词的尾音“...seat.”，随后是“Continue.”。\n* **截图核对**：原视频 601.43 秒截图中，左侧文本包含例句“Why did you have a good seat?”。\n* **记录比对**：\n  * **Qwen** 记录为“good seat? Continue.”，补全了截断前的“good”。\n  * **Whisper** 记录为“叫why did you have a good seatcontinue”，多出了音频中未包含的前半句“叫why did you have a good”。\n\n### 2. 口头过渡词（00:26 - 00:27）\n* **音频内容**：讲师说的是英文“Very good.”（连读较快）。\n* **记录比对**：\n  * **Qwen** 误听为中文“玩一个”。\n  * **Whisper** 漏记了该词。\n\n### 3. 电影《黑客帝国》引导语及原声片段（00:27 - 00:52）\n* **音频内容**：\n  * 00:27 - 00:34：讲师说“接下来跟我一起看一下在电影《黑客帝国》当中，它是如何用 take a seat 的，注意听哦。”（无重复）。\n  * 00:35 - 00:52：播放电影原声片段，台词依次为：“Tank, are we online?”（注：首词人名发音较含糊，接近 Tank/Mark）、“Almost.”、“Time is always against us. Please, take a seat there.”\n* **截图核对**：原视频 626.96 秒和 645.36 秒截图显示电影《黑客帝国 The Matrix (1999)》画面，645.36 秒字幕为“请坐在这里 Please take a seat there.”。\n* **记录比对**：\n  * **Qwen** 正常记录了引导语，并转写了电影英文台词（首词记为“Hey, Mark.”），与音频基本吻合。\n  * **Whisper** 在引导语处出现了重复文本（“...如何用take a看一下在电影《黑客帝国》当中他是如何用take a seat的...”），且完全漏掉了 00:35 - 00:52 的电影英文台词。\n\n### 4. 口头评价词（00:55 - 00:56）\n* **音频内容**：讲师在“take a seat”之后说的是“Very good.”。\n* **记录比对**：\n  * **Qwen** 误记为“There you go.”。\n  * **Whisper** 记为“Very good”，与音频吻合。\n\n### 5. 第二段电影引导语及《赌侠马华力》原声片段（00:56 - 01:20）\n* **音频内容**：\n  * 00:56 - 01:06：讲师说“Next one, 我们看一下，Is this seat taken? 这个座位让人拿走了吗？不是，这个座位有人坐吗？OK，我们一起看一下。”\n  * 01:07 - 01:20：播放电影原声片段，台词依次为：“Is this seat taken?”、“It is now.”、“My name is Annabelle Bransford. What do they call you?”、“I'm Bret Maverick, ma'am. I'm pleased to meet you.”\n* **截图核对**：原视频 660.7 秒和 674.73 秒截图显示标题“Is this seat taken?”及电影《赌侠马华力 Maverick (1994)》，674.73 秒字幕为“我叫安娜贝尔，布兰斯福”。\n* **记录比对**：\n  * **Qwen** 完整记录了讲师的英文例句“Is this seat taken?”、中文解说及电影英文对白，与音频高度吻合（仅将“What do they”记为“What did they”）。\n  * **Whisper** 漏掉了讲师读的“Is this seat taken?”，将中文解说重复记为“这个座位让人拿走这个座位让人拿走了吗”，且完全漏掉了 01:07 - 01:20 的电影英文对白。\n\n### 6. 造句总结与新单词“play”引入（01:20 - 01:37）\n* **音频内容**：\n  * 01:20 - 01:27：讲师说“好，你想坐在这个地方要问一下，叫做 Is this seat taken? Very good.”\n  * 01:27 - 01:37：讲师说“好，接下来我们看下一个单词，跟我一起读，play。大家都了解这个单词是这个单词的动词，叫做玩儿，对吧？”\n* **截图核对**：原视频 686.96 秒截图左侧显示音标“/pleɪ/”及“play n.”。\n* **记录比对**：\n  * **Qwen** 记录为“...叫做Is this seat taken? Very good.好，接下来我们看下一个单词，跟一起读Play。大家都了解这个单词是这个单词的动词，叫做玩儿，对吧？”，除“跟一起读”漏一“我”字外，与音频完全吻合。\n  * **Whisper** 漏掉了“Is this seat taken? Very good.”；并将后面一句误记且重复为“...看下一单词恭喜读play大家都了解这个单词是这个单词跟我一起做play大家都了解这个单词是这个单词的动词叫做玩对吧”。\n\n### 7. 语法讲解与片段结尾（01:50 - 02:00）\n* **音频内容**：\n  * 01:50 - 01:53：讲师说“接下来结合新概念一册 37 课的语法”。\n  * 01:57 - 02:00：讲师说“我要和我妈”，音频在“妈”字处截断。\n* **截图核对**：原视频 706.56 秒截图显示“① watch a play NCE1L37”。\n* **记录比对**：\n  * **Qwen** 记为“新概念一册三十七课”，结尾记为“我要和我妈”，与音频及截图内容完全吻合。\n  * **Whisper** 将“一册”误作同音字“一侧”，并在结尾处擅自补全了音频中未出现的“妈一起去看一个叫做话剧”。",
+      "limitations": "Only audio from 600–720 seconds and eight still frames; machine judgment, not human review."
+    }
+  ]
+}
