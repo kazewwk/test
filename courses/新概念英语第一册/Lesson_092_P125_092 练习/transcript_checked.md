@@ -1,0 +1,36 @@
+# 092 练习
+
+快速模式：仅按词时间去除重叠，未经第二模型或人工校对。
+
+## 00:00:00–00:00:30
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn New Concept English Book One Lesson Ninety Two Practices. Hope you gonna enjoy it. Okay,那本课我们最重要的练习其实就是对比一下一般过去时和一般将来时啊。全是各位需要做的事情就是看这两句话，大声张嘴跟我朗读就可以了。来
+
+## 00:00:30–00:01:00
+
+了，It rained yesterday. Yes, and it will rain again tomorrow. Continue. He got up late yesterday. Yes, and he'll啊，我们把它如果连起来读就是 he'll，如果不连起来读呢，就是 he will啊，我们尽量接下来我都不连起来读啊，让各位把这个单词多读几遍。He
+
+## 00:01:00–00:01:30
+
+will get up late again tomorrow. Next one. He swept the floor yesterday. Yes. And she will sweep the floor again tomorrow. Next one. It snowed yesterday. Yes. And it it will snow again tomorrow. Next one. He finished work late yesterday. Yes.
+
+## 00:01:30–00:02:00
+
+and he will finish work late again tomorrow. You see, one is about the past, one is about the future, right? Next one, they repaired his car yesterday. Yes, and they will repair his car again tomorrow. Next one, she telephoned him yesterday. Yes, and she'll telephone him again
+
+## 00:02:00–00:02:30
+
+tomorrow. Good. Let's continue. They drove home late yesterday. Yes, and they will drive home late again tomorrow. Shave. He had a shave yesterday. Yes, and he will have a shave again tomorrow. 好，我提一个小点，have a shave. 如果八十一课您学的不错，你应该能回想起来，
+
+## 00:02:30–00:03:00
+
+have a swim，那 have a shave就迎刃而解了，我就不再多说了。OK，好，next one. He made an appointment yesterday. Yes, and he will make an appointment again tomorrow. OK, recap. 本课很简单，就是还是主要带着各位用一下 will。当然了，顺便复习了一下之
+
+## 00:03:00–00:03:30
+
+前学到的一般过去式。讲作业方面呢，绿皮书九十二课各位可以搞定了，给自己讲解一遍今天的核心知识点。然后，如果大家喜欢我们的课程，欢迎关注、订阅、一键三连，分享给那些需要的朋友来帮助我们快速成长。最后，我们再来看一句名人名言：People may hear your words, but they feel your attitude. See you next time.
+
+## 00:03:30–00:03:39
+
+
+
