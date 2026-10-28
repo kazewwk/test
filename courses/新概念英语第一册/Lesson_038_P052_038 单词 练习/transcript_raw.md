@@ -1,0 +1,72 @@
+# 038 单词 练习
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn New Concept English Book One Lesson Thirty Eight Practices and Words. Hope you guys enjoy.我们先看第一个单词，跟我读一下，homework，家里边的工作，家庭作业啊，注意它不是家务劳动啊，指的是家庭作业，homework。那这个地方我们先补一个小的短语，实际上我们在上一期视频当
+
+## 00:00:28–00:01:02
+
+那这个地方我们先补一个小的短语。实际上我们在上一期视频当中刚刚提到，不要用 make，那用什么呢？用的就是 do。 Do my homework. 这是一个小的动词加名词的一个短语，叫做我的家庭作业。那我们造句说 What is he doing? He is doing his homework. Do 这个动词表示的是做啊，他正在做他的家庭作业。 Next one, listen, listen, 听。
+
+## 00:00:58–00:01:32
+
+Listen, listen,听。那我们往往是跟to会加在一起，要么说listen to the stereo，要么说listen to music。那What are they doing? They are listening to music。注意be加doing表示他们正在听，现在进行时。啊，我们顺便复习一下三十一课、三十三课刚刚学过的be加doing现在进行时。Next one dish。注意dish这个单词很有意思。
+
+## 00:01:28–00:02:02
+
+Next one, dish. 注意 dish 这个单词很有意思。 dish 这个单词单数的时候，往往指的是盘子或者碗啊，或者说碟子。当然，你说很多盘子，很多碟子，叫做 dishes 加 es 也没问题。但是它其实一旦加上 es 了之后呢，更常见的一个意思指的是这些锅碗瓢盆，就是说您吃完饭放在水池子里要洗的那些东西，我们都可以统称为叫做 dishes。 OK，好，那我们造句啊。
+
+## 00:01:58–00:02:32
+
+叫做啊，dishes, OK.好，那我们造句啊，说Where is the dish?这盘子碗，盘子在哪儿呢？Give me a dish, please.哎，二十一课学的，对吧？叫做There is a dish on the table.二十五课学的。接下来看底下说He is going to wash the dishes.他要去洗碗了。我们汉语就说洗碗。那你洗的只是碗吗？对吧？你筷子、勺，对吧？盘子是不是也得洗啊？我们汉语统称为叫洗碗，叫做He is going to wash
+
+## 00:02:28–00:03:02
+
+啊，我们汉语统称为叫洗碗，叫做 He is going to wash the dishes。英语是一样的，用盘子的复数表达我们汉语这个洗碗的概念，叫做 wash the dishes。一般疑问句 is 提前，Is he going to wash the dishes? OK，那我们对主语提问，直接替代主语，不用变一般疑问句了，变成了 Who is going to wash the dishes? 谁要去洗盘子、洗碗呢？OK，好，接下来我们看一个小的电影。
+
+## 00:02:58–00:03:32
+
+Okay,好，接下来我们看一个小的电影。这个电影当中呢，出现了大量的 going to do 这样的一个句型，肯定句、否定句、一般疑问句啊，全有，特别好。这个小的片段啊，找了好久。然后呢，它，但是它大多数用的是 gonna gonna。哎，各位还记得吧？Gonna 表示 gonna do，跟 going to do 是一个意思。其次，它也出现了 wash the dishes，洗碗。 What are you gonna do when I'm gone? Who's gonna take care?
+
+## 00:03:28–00:04:02
+
+What are you gonna do when I'm gone? Who's gonna take care of you? What's the matter, mommy? Are you sick or something? I'm an old woman. I'm not gonna live forever. Who's gonna cook for you? Who's gonna wash the dishes? I can wash the dishes. Going to do, gonna do啊和wash the dishes.各位不妨可以多听几遍刚才那个，它的语速是正常语速啊，不是放慢语速的语速。
+
+## 00:03:58–00:04:32
+
+他的语速是正常语速啊，不是放慢语速的语速。我上课一般是放慢语速了。Okay,好，接下来我们做一些小的练习，各位张嘴跟我读就好了，跟读。What are you doing now? Now I'm shaving. What is he doing? He is looking at his homework. What is he going to do? He is going to do his
+
+## 00:04:28–00:05:02
+
+He is going to do his homework. 注意两个不同的时态，前两个是现在进行时，后两个是一般将来时. Continue. What are you doing now? Now we are doing our homework. Listen to. What is he doing? He's turning on the stereo. 正在打开这个音响. What is he going to do? 他要干什么？
+
+## 00:04:58–00:05:32
+
+What is he going to do? He is going to listen to music. Continue. What is she doing now? She is listening to music. Continue. What are they doing? They are walking to the bus stop. They are going to wait for a bus. They are going to wait for a bus.
+
+## 00:05:28–00:06:02
+
+They are going to wait for a bus. 他们要去等公交车。 Next one, what are you doing now? 你们在干嘛呢？ 注意 you 有你们和你的意思啊。 So we are waiting for a bus. 我们正在等公交车呢。 What is he going to do? He is going to paint this wall. What are you doing now?
+
+## 00:05:58–00:06:32
+
+What are you doing now? We are painting this wall. What are you going to do? I'm going to wash the dishes. What are they doing now? They are washing the dishes. 我们现在其实在做两个时态的对比啊，各位要注意时态的转换。
+
+## 00:06:28–00:07:02
+
+做两个时态的对比啊，各位要注意时态的转换。好，begin to do依依旧是begin to do，还有是刚呢。当然，我们还练习了一下三十一课、三十三课刚刚学习到的现在进行时，am/is/are加doing表示一个动作正在进行。目前各位已经学会了两个时态了。OK，好，那看一下家庭作业。第一，绿皮书三十八课，各位可以写了。接下来分别用现在进行时三十一课、三十三课学的和一。
+
+## 00:06:58–00:07:32
+
+现在进行时三十一课、三十三课学的和一般将来时造句，每个都要造四句型，每句型造五句话，也就是说现在进行时各位要造四句型，每个句型五句话，二十个句子。一般将来时四句型造五句话，二十个句子，各位在这儿要造四十句话。现在进行时，您观察您身边的人啊，家人正在做什么，造句子就行了。一般将来时，各位。
+
+## 00:07:28–00:08:02
+
+正在做什么？造句子就行了。一般将来时，各位不妨可以试一下什么呢？比如说，我计划打算要去做什么事儿？你自己想一下，造四十个句子啊，还是四句型啊，合起来四十个句子啊？OK，给自己讲解一遍今天的核心知识点。各位不妨去讲一下现在进行时和一般将来一般将来时它们的四句型都是什么？正好和第二个作业连到了一起。那如果各位喜欢我们的课程呢，欢迎大家关注、订阅、一键三连，并分享给那些。
+
+## 00:07:58–00:08:28
+
+我们的课程呢，欢迎大家关注、订阅、一键三连，并分享给那些需要的朋友，支持我们。最后的最后，我们再看一句名人名言：Believe in yourself, listen to your gut, and do what you love. See you next time.
+
