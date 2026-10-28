@@ -1,0 +1,1026 @@
+# 066 文章
+
+快速机器解析：语音为单模型转写，未进行独立交叉校对或人工复核；画面每秒采样并按变化选帧，短时文字和标记可能遗漏。截图时间约有 1 秒误差。图片有损压缩；遇到疑点请按时间查看 Google Drive 原视频。
+
+## 00:00:00–00:00:30
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn New Concept English Book Two Lesson Sixty Six Story. Hope you're gonna enjoy.好，我们上来先看文章，文章标题叫 Sweet as Honey，和蜂蜜一样甜。我们学了本课的单词是吧？然后再加上这个图啊，隐隐约约觉得这个本课肯定是蜂蜜跟
+
+### 画面 00:00:00
+
+![课件截图](frames/frame_000000.webp)
+
+文字识别：NCE / BOOKI"I / Lesson 66 / Story
+
+### 画面 00:00:02
+
+![课件截图](frames/frame_000001.webp)
+
+文字识别：NCE / BOOKⅡI / Lesson 66 / Story
+
+### 画面 00:00:06
+
+![课件截图](frames/frame_000002.webp)
+
+文字识别：NCE / BOOKⅡI / Lesson 66 / Story
+
+### 画面 00:00:10
+
+![课件截图](frames/frame_000003.webp)
+
+文字识别：胶囊助学计划b出出 / •
+
+### 画面 00:00:14
+
+![课件截图](frames/frame_000004.webp)
+
+### 画面 00:00:16
+
+![课件截图](frames/frame_000005.webp)
+
+文字识别：Sweet as honey! / What was "'sweet as honey' and why?
+
+## 00:00:30–00:01:00
+
+兰卡斯特轰炸机之间某些神秘的联系啊！我们看一下文章啊，包括他问的问题也是 Why was sweet as honey? Ah, what was sweet as honey, and why? 说和蜂蜜一样甜指的是啥？为什么？看完文章咱就知道了。来了啊！呃，文本课文章不是很难。我们先看这儿啊，说 In 1963, a Lancaster bomber crashed on Wallace Island, a remote place
+
+### 画面 00:00:30
+
+![课件截图](frames/frame_000006.webp)
+
+文字识别：Sweet as honey! / What was 'sweet as honey' and why?
+
+### 画面 00:00:46
+
+![课件截图](frames/frame_000007.webp)
+
+文字识别：In 1963 a Lancaster bomber crashed on Wallis / Island, a remote place in the South Pacific, a long / /sa maual / way west of Samoa. The plane wasn't too badly / damaged, but over the years, the crash was / forgotten and the wreck remained undisturbed. / Then in 1989, twenty-six years after the crash, the / plane was accidentally rediscovered in an aerial / survey of the island.
+
+## 00:01:00–00:01:30
+
+in the South Pacific, a long way west of Samoa.哎，你看这个句话就好长好长啊。但其实核心的没什么东西。看啊，一九六三年，兰卡斯特轰炸机坠毁了在Wallace Island上，没了。就这个。那后边那个一个逗号一个逗号这么长这么长都是啥呢？都是在
+
+### 画面 00:01:16
+
+![课件截图](frames/frame_000008.webp)
+
+文字识别：In 1963 a Lancaster bomber crashed on Wallis / Island, a remote place in the South Pacific, a long / /sa maual / way west of Samoa. The plane wasn't too badly / damaged, but over the years, the crash was / forgotten and the wreck remained undisturbed. / Then in 1989, twenty-six years after the crash, the / plane was accidentally rediscovered in an aerial / survey of the island.
+
+## 00:01:30–00:02:00
+
+说跟 Wallis Island 相关的东西。我们先看 a remote place in the South Pacific，南太平洋，remote place 一个很偏远的地方。南太平洋上很偏远地方，换一句话来说，是不是跟 Wallis Island 是同位语？就是我跟你说 Wallis Island，它又没名，它不像斐济岛那么有名，对吧？好，它不像马尔代夫岛那么有名。完，那这没名，没名怎么办呢？我跟你说
+
+### 画面 00:01:46
+
+![课件截图](frames/frame_000009.webp)
+
+文字识别：In 1963 a Lancaster bomber crashed on Wallis / Island, a remote place in the South Pacific, a long / /sa maual / way west of Samoa. The plane wasn't too badly / damaged, but over the years, the crash was / forgotten and the wreck remained undisturbed. / Then in 1989, twenty-six years after the crash, the / plane was accidentally rediscovered in an aerial / survey of the island.
+
+### 画面 00:01:51
+
+![课件截图](frames/frame_000010.webp)
+
+文字识别：In 1963 a Lancaster bomber crashed on Wallis / Island, a remote place in the South Pacific, a long / /sa maual / way west of Samoa. The plane wasn't too badly / damaged, but over the years, the crash was / forgotten and the wreck remained undisturbed. / Then in 1989, twenty-six years after the crash, the / plane was accidentally rediscovered in an aeria / survey of the island.
+
+### 画面 00:01:54
+
+![课件截图](frames/frame_000011.webp)
+
+文字识别：In 1963 a Lancaster bomber crashed on Wallis / Island, a remote place in the South Pacific, a long / /sa maual / way west of Samoa. The plane wasn't too badly / damaged, but over the years, the crash was / forgotten and the wreck remained undisturbed. / Then in 1989, twenty-six years after the crash, the / plane was accidentally rediscovered in an aerial / survey of the island.
+
+## 00:02:00–00:02:30
+
+一下吧，南太平洋上一个偏僻的地方。作者觉得这还不够，又解释了一遍：a long way west of Samoa啊，塞摩亚岛这个地方群岛哪儿呢？a long way很长的距离，west of Samoa在塞摩亚岛很上北下南左西对吧？很西很西的一个地方啊。其实说
+
+### 画面 00:02:24
+
+![课件截图](frames/frame_000012.webp)
+
+文字识别：In 1963 a Lancaster bomber crashed on Wallis / Island, a remote place in the South Pacific, a long / /sa maual / way west of Samoa. The plane wasn't too badly / damaged, but over the years, the crash was / forgotten and the wreck remained undisturbed. / Then in 1989, twenty-six years after the crash, the / plane was accidentally rediscovered in an aerial / survey of the island.
+
+## 00:02:30–00:03:00
+
+来说来说去这么长的两句话，看不看得懂意义？如果我们真的是实战当中啊，如果是考试还是实际应用当中，其实看不看得懂意义不是那么大。为什么？它都是在解释 Wallace Island，对吧？那第一个时间、地点、人物我们都有了，时间一九六三年，当然这没有人物 Lancaster Bomber，对吧？然后怎么样了呢？坠毁在一个小岛上，结束。The plane wasn't too badly damaged, but over the years
+
+### 画面 00:02:54
+
+![课件截图](frames/frame_000013.webp)
+
+文字识别：In 1963 a Lancaster bomber crashed on Wallis / Island, a remote place in the South Pacific, a long / lsa maual / way west of Samoa. The plane wasn't too badly / damaged, but over the years, the crash was / forgotten and the wreck remained undisturbed. / Then in 1989, twenty-six years after the crash, the / plane was accidentally rediscovered in an aerial / survey of the island.
+
+## 00:03:00–00:03:30
+
+the crash was forgotten and the wreck remained undisturbed. 又是好长一句话，但是一个 but 一个 and 这句话其实就容易了。第一句话，The plane wasn't too badly damaged. 飞机并没有特别严重的被毁坏。首先被动 wasn't ah damaged, 对吧？你如果说 wasn't damaged, 那就是坠毁了，但竟然没被没受伤啊，就没有被毁坏啊，这个就很奇怪，不知道为啥，对吧？
+
+### 画面 00:03:24
+
+![课件截图](frames/frame_000014.webp)
+
+文字识别：In 1963 a Lancaster bomber crashed on Wallis / Island, a remote place in the South Pacific, a long / lsa maual / way west of Samoa.The plane wasn't too badly / damaged)but over the years, the crash was / forgotten and the wreck remained undisturbed. / Then in 1989, twenty-six years after the crash, the / plane was accidentally rediscovered in an aerial / survey of the island.
+
+## 00:03:30–00:04:00
+
+Transcribe the exact words in their original spoken languages. Never translate. Preserve repetitions, questions and examples.
+
+### 画面 00:03:51
+
+![课件截图](frames/frame_000015.webp)
+
+文字识别：In 1963 a Lancaster bomber crashed on Wallis / Island, a remote place in the South Pacific, a long / /sa maual / way west of Samoa. The plane wasn'ttoo badly / damaged)but over the years, the crash was / forgotten and the wreck remained undisturbed. / Then in 1989, twenty-six years after the crash, the / plane was accidentally rediscovered in an aerial / survey of the island.
+
+### 画面 00:03:58
+
+![课件截图](frames/frame_000016.webp)
+
+文字识别：In 1963 a Lancaster bomber crashed on Wallis / Island, a remote place in the South Pacific, a long / /sa maual / way west of Samoa. The plane wasn't too badly / damaged)but over the years, the crash was / forgotten and the wreck remained undisturbed. / Then in 1989, twenty-six years after the crash, the / plane was accidentally rediscovered in an aerial / survey of the island.
+
+## 00:04:00–00:04:30
+
+年啊，很多年。The crash was forgotten，说这次坠毁啊，你注意，你看这儿用的是个动词，这儿用的是个名词，对吧？我给它重新标一下，重新标一下。这儿用的是个动词，这儿用的是个名词。这次坠毁怎么样了呢？被人们遗忘了，还是个被动。然后第三句话，The wreck remained undisturbed，说这个残骸，飞机的残骸怎么样呢？Remain, remain in bed，早在新一我
+
+### 画面 00:04:00
+
+![课件截图](frames/frame_000017.webp)
+
+文字识别：In 1963 a Lancaster bomber crashed on Wallis / Island, a remote place in the South Pacific, a long / /sa maual / way west of Samoa. The plane wasn't too badly / damaged, but over the years, the crash was / forgotten and the wreck remained undisturbed. / Then in 1989, twenty-six years after the crash, the / plane was accidentally rediscovered in an aerial / survey of the island.
+
+## 00:04:30–00:05:00
+
+就学过了，保持对吧？保持 undisturbed. 这个 undisturbed 其实前面加了个 u n 后边加了个 e d 啊 disturb 就是打扰 undisturbed 就不打扰。那加了个 e d 变形容词了，就保持没有被打扰。什么叫保持没有被打扰呢？就是没有人去碰它，对吧？挖掘它或者想把它运走，没有做这样的事情。接下来 then in 1989, twenty six years after the crash,
+
+### 画面 00:04:30
+
+![课件截图](frames/frame_000018.webp)
+
+文字识别：V. / In 1963 a Lancaster bomber crashed on Wallis / Island, a remote place in the South Pacific, a long / /sa maual / way west of Samoa. The plane wasn't too badly / damaged, but over the years, the crash was / forgotten andthe wreck remained undisturbed / Then in 1989, twenty-six years after the crash, the / plane was accidentally rediscovered in an aerial / survey of the island.
+
+## 00:05:00–00:05:30
+
+the plane was accidentally rediscovered in an aerial survey of the island.然后在一九八九年，你看来了个同位语。一九八九年是什么样的日子呢？在坠毁之后的第二十六年，对吧？哎，两个是一码事儿。坠毁之后二十六年就是一九八九年。一九八九年就是坠毁之后的第二十六年。飞机 was accidentally rediscovered.飞机被意外的 accidentally 意外的重
+
+### 画面 00:05:00
+
+![课件截图](frames/frame_000019.webp)
+
+文字识别：In 1963 a Lancaster bomber crashed on Wallis / Island, a remote place in the South Pacific, a long / /sa maual / way west of Samoa. The plane wasn't too badly / damaged, but over the years, the crash was / forgotten and the wreck remained undisturbed. / Then in 1989, twenty-six years after the crash, the / plane was accidentally rediscovered in an aerial / survey of the island.
+
+## 00:05:30–00:06:00
+
+新发现了，被重新发现了，又是被动。在什么当中呢？这个你应该就很熟悉了。单词造句，如果你好好听了，好好写家庭作业了，那这个应该就知道了。叫做In an aerial survey of the island，在对这个小岛的一个航空调查当中啊，绘制地理图的时候，哎，被发现了。By this time，截止到这个时候呢，A Lancaster bomber in reasonable condition was rare and worth rescuing。好，这其实是两句
+
+### 画面 00:05:30
+
+![课件截图](frames/frame_000020.webp)
+
+文字识别：In 1963 a Lancaster bomber crashed on Wallis / Island, a remote place in the South Pacific, a long / /sa maual / way west of Samoa. The plane wasn't too badly / damaged, but over the years, the crash was / forgotten and the wreck remained undisturbed. / Then in 1989, twenty-six years after the crash, the / plane was accidentally rediscovered in an aerial / survey of the island.
+
+### 画面 00:05:49
+
+![课件截图](frames/frame_000021.webp)
+
+文字识别：By this time, a Lancaster bomber in reasonable / condition was rare and worth rescuing. The French / authorities had the plane packaged and moved / in parts back to France. Now a group of / enthusiasts are going to have the plane restored. / It has four Rolls-Royce Merlin engines, but the / group will need to have only three of them / rebuilt.
+
+## 00:06:00–00:06:30
+
+啊。第一句话叫截止到这个时候，兰卡斯特轰炸机 in reasonable condition，先不管 was rare，叫很罕见。那什么叫 reasonable condition 呢？这里面就出现了一个两个单词，一个叫 reasonable，一个叫 condition。啊，我先告诉各位，in reasonable condition 合起来的含义叫做在一个合理的状况下，一个不错的还比较良好的状况状态状况下，你要怎么具体去翻译要看主语是谁。
+
+### 画面 00:06:19
+
+![课件截图](frames/frame_000022.webp)
+
+文字识别：By this time, a Lancaster bomber in reasonable / condition was rare and worth rescuing. The French / authorities had the plane packaged and moved / in parts back to France. Now a group of / enthusiasts are going to have the plane restored. / It has four Rolls-Royce Merlin engines, but the / group will need to have only three of them / rebuilt.
+
+## 00:06:30–00:07:00
+
+如果指的是轰炸机，那就是它的状况还不错。所谓什么叫轰炸机状况还不错，就是比如说能看出来是个轰炸机，没有碎成片儿。碎成片儿肯定就不是 reasonable condition 了。而比较常见的 in reasonable condition，这里其实更常见的是把 reasonable 去掉，变成 in good condition， in bad condition， in perfect condition。这三个很常见。一会儿习惯用法造句，我们会在呃这个具体去
+
+### 画面 00:06:49
+
+![课件截图](frames/frame_000023.webp)
+
+文字识别：By this time, a Lancaster bomber in reasonable / condition was rare and worth rescuing. The French / authorities had the plane packaged and moved / in parts back to France. Now a group of / enthusiasts are going to have the plane restored. / It has four Rolls-Royce Merlin engines, but the / group will need to have only three of them / rebuilt.
+
+## 00:07:00–00:07:30
+
+提，对吧？现在您只要知道它的含义就行了。然后怎么样呢？Worth rescuing，第二句话其实就是 be worth rescuing，但是因为前面有 be 了，后边没有必要了，对吧？就这地方也是个习惯用法，be worth doing 值得去做，对吧？那这里的 be worth rescuing 就是值得被抢救、拯救一下，对吧？就还不错，又不是碎成渣了，对吧？我也不可能再拼得起来，了就是有有一些划痕什么的，那当然就 be worth rescuing。The French
+
+### 画面 00:07:19
+
+![课件截图](frames/frame_000024.webp)
+
+文字识别：By this time, a Lancaster bomber in reasonable / condition was rare and worth rescuing. The French / authorities had the plane packaged and moved / in parts back to France. Now a group of / enthusiasts are going to have the plane restored. / It has four Rolls-Royce Merlin engines, but the / group will need to have only three of them / rebuilt.
+
+## 00:07:30–00:08:00
+
+French authorities had the plane packaged and moved in parts back to France. Ah,这个地方and我们先赶紧加个圈儿，前面一句话，后边一句话。法国的authorities哎，在大火那课咱们学过这个单词，对吧？authorities当局，法国当局had the plane packaged，不是法国当局本身自己去的，他要么外包了，要么找了一些人，对吧？政府的人，懂这个事儿的人，把这个飞机给打包了，哎，拆了，打
+
+### 画面 00:07:49
+
+![课件截图](frames/frame_000025.webp)
+
+文字识别：By this time, a Lancaster bomber in reasonable / condition was rare and worth rescuing. The French / authorities had the plane packagedand moved / in parts back to France. Now a group of / enthusiasts are going to have the plane restored. / It has four Rolls-Royce Merlin engines, but the / group will need to have only three of them / rebuilt.
+
+## 00:08:00–00:08:30
+
+包了。为什么拆了呢？你要看后半句话，moved in parts，移动，move，移动回来，对吧？从那个呃小岛上给它 Wallis Island，给它移动回法国，in parts，以部分的形式，就是不是整个飞机调回来了，对吧？给它拆开了啊，跟积木一样拆开了，back to France，给它哎运回到法国，对吧？你看这里不就是 have something done？ Okay， continue. Now a group of enthusiasts are going
+
+### 画面 00:08:19
+
+![课件截图](frames/frame_000026.webp)
+
+文字识别：By this time, a Lancaster bomber in reasonable / condition was rare and worth rescuing. The French / authorities had the plane packagedand moved / in parts back to France. Now a group of / enthusiasts are going to have the plane restored. / It has four Rolls-Royce Merlin engines, but the / group will need to have only three of them / rebuilt.
+
+## 00:08:30–00:09:00
+
+to have the plane restored. Now, a group of一群enthusiasts.你看，如果你给他翻译成热心肠的人，那不就怪了吗？那不就不太对劲了吗？一堆热心肠的人要把这个飞机给他重新啊，找人给他重新弄一下，这个不对劲儿，是吧？一帮发烧友准备怎么样呢？说，哎，要have the plane restored，把它重新给他恢复一下，给他恢复它的荣光，是吧？让它变成它当年的样子。
+
+### 画面 00:08:40
+
+![课件截图](frames/frame_000027.webp)
+
+文字识别：By this time, a Lancaster bomber in reasonable / condition was rare and worth rescuing. The French / authorities had the plane packaged and moved / in parts back to France. Now a group of / enthusiasts are going to have the plane restored. / It has four Rolls-Royce Merlin engines, but the / group will need to have only three of them / rebuilt.
+
+### 画面 00:08:43
+
+![课件截图](frames/frame_000028.webp)
+
+文字识别：By this time, a Lancaster bomber in reasonable / Condition was rare and worth rescuing. The French / authorities had the plane packagedand moved / in parts back to France. Now a group of / enthusiasts are going to have the plane restored. / It has four Rolls-Royce Merlin engines, but the / group will need to have only three of them / rebuilt.
+
+## 00:09:00–00:09:30
+
+it has four Rolls-Royce Merlin engines, but the group will need to have only three of them rebuilt.又是很长一句话，但是有一个but前后又很很简单了。前面那句话，它只有四个Rolls-Royce Merlin engine啊，Rolls-Royce Merlin是一个品牌，对吧？Rolls-Royce，我相信你还有印象，我们学过这个，对吧？然后这个engines呢，就是这个引擎啊，发动机啊，
+
+### 画面 00:09:13
+
+![课件截图](frames/frame_000029.webp)
+
+文字识别：By this time, a Lancaster bomber in reasonable / condition was rare and worth rescuing. The French / authorities had the plane packagedand moved / in parts back to France. Now a group of / enthusiasts are going to have the plane restored. / It has four Rolls-Royce Merlin engines, but the / group will need to have only three of them / rebuilt.
+
+### 画面 00:09:18
+
+![课件截图](frames/frame_000030.webp)
+
+文字识别：By this time, a Lancaster bomber in reasonable / condition was rare and worth rescuing. The French / authorities had the plane packagedand moved / in parts back to France. Now a group of / enthusiasts are going to have the plane restored. / It has four Rolls-Rovce Merlin engines but the / group will need to have only three of them / rebuilt.
+
+### 画面 00:09:24
+
+![课件截图](frames/frame_000031.webp)
+
+文字识别：By this time, a Lancaster bomber in reasonable / condition was rare and worth rescuing. The French / authorities had the plane packagedand moved / in parts back to France. Now a group of / enthusiasts are going to have the plane restored. / It has four Rolls-Royce Merlin engines but the / group will need to have only three of them / rebuilt.
+
+## 00:09:30–00:10:00
+
+它只有四个 Rolls-Royce Merlin 的发动机啊。这个就各位不用单独去记啊，对于各位来说意义不是特别大。但是 the group will need to 将需要怎么样呢？ Have only three of them rebuilt. 首先结构满足 have something done. 那 only three of them 就是仅仅需要他们当中的三个，就是三四个发动机里边的三个，给它 rebuilt 一下就行了。
+
+### 画面 00:09:35
+
+![课件截图](frames/frame_000032.webp)
+
+文字识别：By this time, a Lancaster bomber in reasonable / condition was rare and worth rescuing. The French / authorities had the plane packagedand moved / in parts back to France. Now a group of / enthusiasts are going to have the plane restored. / It has fourRolls-Royce Merlir engines but the / group will need to have only three of them / rebuilt.
+
+### 画面 00:09:46
+
+![课件截图](frames/frame_000033.webp)
+
+文字识别：By this time, a Lancaster bomber in reasonable / condition was rare and worth rescuing. The French / authorities had the plane packagedand moved / in parts back to France. Now a group of / enthusiasts are going to have the plane restored. / It has fourRolls-Royce Merlir engines but the / group will need to have only three of them / rebuilt.
+
+## 00:10:00–00:10:30
+
+好，rebuild又是什么意思？Rediscover叫重新发现。Built本身有建造的意思。Rebuild最最字面的意思就是重新建造，对吧？那关于对于引擎发动机来说，你说重新建造可能就不太好，就是给它恢复正常。其实这个rebuild类似于这个地方的restore，类似于是一个同义词，就是再给它重新恢复一下，给它恢复到机能比较状啊比较良好的状态就可以了啊。Have something done.
+
+### 画面 00:10:16
+
+![课件截图](frames/frame_000034.webp)
+
+文字识别：By this time, a Lancaster bomber in reasonable / Condition was rare and worth rescuing. The French / authorities had the plane packagedand moved / in parts back to France. Now a group of / enthusiasts are going to have the plane restored. / It has fourRolls-Royce Merlir engines b / but the / group will need to have only three of them / rebuilt.
+
+### 画面 00:10:19
+
+![课件截图](frames/frame_000035.webp)
+
+文字识别：By this time, a Lancaster bomber in reasonable / condition was rare and worth rescuing. The French / authorities had the plane packaged and moved / in parts back to France. Now a group of / enthusiasts are going to have the plane restored. / It has fourRolls-Royce Merlir engines b / but the / group will need to have only three of them / rebuilt.
+
+## 00:10:30–00:11:00
+
+Continue. Imagine their surprise. This is in the word. This phrase we have used, right? Imagine their surprise and delight. Delight, delight, delight. Imagine these two things: surprise and delight. When they broke open the packing cases and found that the fourth engine was sweet as honey, still in perfect condition. This sentence is long, but there is a when and a and, so the sentence is short. Actually,
+
+### 画面 00:10:30
+
+![课件截图](frames/frame_000036.webp)
+
+文字识别：Imagine their surprise and delight when / they broke open the packing cases and / found (that the fourth engine was sweet as / honey -- still in perfect condition). A colony / of bees had turned the engine into a hive / and it was totally preserved in beeswax!
+
+## 00:11:00–00:11:30
+
+imagine their surprise and delight 的并不是一句话，对吧？那我们给它连到一起。第一句话，你假想一下他们的这种惊讶与愉悦。当他们 broke open the packing cases，当他们打开这个 packing cases，packing cases 是什么呢？刚才我们说了包装箱。当他们打开包装箱的时候，你想象一下他们这种愉快、愉悦和惊讶，对吧？惊喜。那这地方有一个小的短语值得简单提一句，叫 broke open。broke open 对于各
+
+### 画面 00:11:00
+
+![课件截图](frames/frame_000037.webp)
+
+文字识别：Imagine their surprise and delight when / they broke open the packing cases and / found (that the fourth engine was sweet as / honey -- still in perfect condition). A colony / of bees had turned the engine into a hive / and it was totally preserved in beeswax!
+
+### 画面 00:11:04
+
+![课件截图](frames/frame_000038.webp)
+
+文字识别：Imagine their surprise and delight when / they broke open the packing casedand / found (that the fourth engine was sweet as / honey -- still in perfect condition). A colony / of bees had turned the engine into a hive / and it was totally preserved in beeswax!
+
+### 画面 00:11:21
+
+![课件截图](frames/frame_000039.webp)
+
+文字识别：Imagine their surprise and delight when / they broke open the packing casedand / found (that the fourth engine was sweet as / honey -- still in perfect condition). A colony / of bees had turned the engine into a hive / and it was totally preserved in beeswax!
+
+### 画面 00:11:24
+
+![课件截图](frames/frame_000040.webp)
+
+文字识别：Imagine their surprise and delight when / they broke open the packing casedand / found (that the fourth engine was sweet as / honey -- still in perfect condition). A colony / of bees had turned the engine into a hive / and it was totally preserved in beeswax!
+
+## 00:11:30–00:12:00
+
+位来说，最字面的意思其实跟 open 差别不大，只不过它多了一个 broke 的意思是什么感觉呢？但是在这里，我觉得这样去用呢，又不是特别的对。比如说警察破门而入，那个破门而入，破门 broke open，对吧？就是什么暴力把这个盒子给撕开了，是 broke open。它本身是有这个含义的。为什么？因为有那个 broke嘛，break 弄坏了，对吧？所以在这儿呢，它用到了 broke open。那我们就理解为，也
+
+### 画面 00:11:54
+
+![课件截图](frames/frame_000041.webp)
+
+文字识别：Imagine their surprise and delight when / they broke open the packing casedand / found (that the fourth engine was sweet as / honey -- still in perfect condition). A colony / of bees had turned the engine into a hive / and it was totally preserved in beeswax!
+
+## 00:12:00–00:12:30
+
+许它开的时候比较暴力，但所以我们给它还原成最基本的含义，就等于open，好吧。接下来第二句话，然后呢，found发现了一件事儿，发现了个宾语从句，对吧？The fourth engine was sweet as honey, still in perfect condition.说第四个引擎是跟蜂蜜一样甜，依旧，哎，刚才咱们见的是in reasonable condition，现在出现了in perfect condition。我给你补充了
+
+### 画面 00:12:24
+
+![课件截图](frames/frame_000042.webp)
+
+文字识别：Imagine their surprise and delight when / they broke open the packing casedand / found (that the fourth engine was sweet as / honey -- stillin perfect condition). A colony / of bees had turned the engine into a hive / and it was totally preserved in beeswax!
+
+## 00:12:30–00:13:00
+
+两个 in bad condition 和 in 呃呃 in good condition, 对吧？那 perfect 就是完美, in perfect condition 就是完美的状态。哎，为什么这个和蜂蜜一样甜？依旧在完美的状态。读到这儿依旧不懂。最后一句话揭晓答案了。A colony of bees had turned the engine into a hive, and it was totally preserved in beeswax. And 前后
+
+### 画面 00:12:54
+
+![课件截图](frames/frame_000043.webp)
+
+文字识别：Imagine their surprise and delight when / they broke open the packing casedand / found (that the fourth engine was sweet as / honey -- still in perfect condition). A colony / of bees had turned the engine into a hive / and it was totally preserved in beeswax!
+
+## 00:13:00–00:13:30
+
+两句话，第一句话，A colony of bees，一群蜜蜂，had turned，已经怎么怎么样了，已经怎么样了呢？Turn the engine into a hive，turn A into B，一个习惯用法，把A变成B，对吧？这个turn the engine into a hive叫做把这个引擎发动机变成了一个蜂房，啊，拿它筑了个窝。然后呢，it，那当然指的就是这个engine，对吧？指的就是这个引擎，was totally preserved
+
+### 画面 00:13:24
+
+![课件截图](frames/frame_000044.webp)
+
+文字识别：Imagine their surprise and delight when / they broke open the packing casedand / found (that the fourth engine was sweet as / honey -- still in perfect condition). A colony / of bees had turned the engine into a hive / and it was totally preserved in beeswax!
+
+## 00:13:30–00:14:00
+
+in beeswax,就是完全被保护好，保护的很好，在什么里边呢？哎，在这个蜂蜡当中，完全就被它包裹起来了，保藏起来了，对吧？保护起来了。Okay, very good.呃，本课的文章还行啊，生词稍微有点多，但是文章本身的语法并不难。习惯用法我们摘抄了如下四个，然后带着各位去造句老习惯。首先，over the years就是数年间，对吧？数年间，比
+
+### 画面 00:13:45
+
+![课件截图](frames/frame_000045.webp)
+
+文字识别：习惯用法造句 / over the years / in reasonable condition / be worth doing / turn a into b.
+
+### 画面 00:13:47
+
+![课件截图](frames/frame_000046.webp)
+
+文字识别：习惯用法造句 / over the years / in reasonable condition / be worth doing / turn a into b.
+
+### 画面 00:13:49
+
+![课件截图](frames/frame_000047.webp)
+
+文字识别：习惯用法造句 / over the years / in reasonable condition / be worth doing / turn a into b.
+
+### 画面 00:13:51
+
+![课件截图](frames/frame_000048.webp)
+
+文字识别：习惯用法造句 / over the years / in reasonable condition / be worth doing / turn a into b.
+
+### 画面 00:13:53
+
+![课件截图](frames/frame_000049.webp)
+
+文字识别：习惯用法造句 / over the years / in reasonable condition / be worth doing / turn a into b.
+
+### 画面 00:13:55
+
+![课件截图](frames/frame_000050.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / over the years
+
+### 画面 00:13:58
+
+![课件截图](frames/frame_000051.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / over the years
+
+## 00:14:00–00:14:30
+
+如说，People say they've received letters from him over the years。而人们说，他们收到来自他的信件 over the years。啊，比如说，你可以基本上等同于，比如说 during the last several years，在过去的几年间，对吧？在数年间，人们不停的收到他的来信。Continue。So over the years, my feelings have changed。随着时间的流逝，我的感觉也在变化。啊，我的感受也在变化。Next
+
+### 画面 00:14:00
+
+![课件截图](frames/frame_000052.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / over the years /  People say they've received letters from / him over the years. L4
+
+### 画面 00:14:04
+
+![课件截图](frames/frame_000053.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / over the years /  People say they've received letters from / him over the years. L4
+
+### 画面 00:14:12
+
+![课件截图](frames/frame_000054.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / over the years /  People say they've received letters from / him over the years. L4
+
+### 画面 00:14:16
+
+![课件截图](frames/frame_000055.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / over the years /  People say they've received letters from / him over the years. L4
+
+### 画面 00:14:19
+
+![课件截图](frames/frame_000056.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / over the years /  People say they've received letters from / him over the years. L4
+
+### 画面 00:14:24
+
+![课件截图](frames/frame_000057.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / over the years /  People say they've received letters from / him over the years. L4 /  Over the years, my feelings have changed. / The Painted Veil (2006)
+
+### 画面 00:14:29
+
+![课件截图](frames/frame_000058.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / over the years /  People say they've received letters from / him over the years. L4 /  Over the years, my feelings have changed. / The Painted Veil (2006) / I have heard a lot about you over the years.
+
+## 00:14:30–00:15:00
+
+I have heard a lot about you over the years.对，这么多年我听到了很多关于你的消息. I've heard a lot about you. Very good. Over the years,那注意力集中吧，咱们听个电影片段啊. Now the owner of the studio told me he's had a lot of offers over the years, but he won't sell it. Okay, next one. In reasonable condition.刚才我说了，比它更常见的是这三个. In reasonable condition
+
+### 画面 00:14:34
+
+![课件截图](frames/frame_000059.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / over the years /  People say they've received letters from / him over the years. L4 /  Over the years, my feelings have changed. / The Painted Veil (2006) /  I have heard a lot about you over the years.
+
+### 画面 00:14:38
+
+![课件截图](frames/frame_000060.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / over the years /  People say they've received letters from / him over the years. L4 /  Over the years, my feelings have changed. / The Painted Veil (2006) / I have heard a lot about you over the years.
+
+### 画面 00:14:40
+
+![课件截图](frames/frame_000061.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / over the years /  People say they've received letters from / him over the years. L4 /  Over the years, my feelings have changed. / The Painted Veil (2006) /  I have heard a lot about you over the years.
+
+### 画面 00:14:42
+
+![课件截图](frames/frame_000062.webp)
+
+文字识别：No, the owner of the studio told me he's had a / lot of offers over the years but he won't sell it. / Caos & Consequences / (2011)
+
+### 画面 00:14:48
+
+![课件截图](frames/frame_000063.webp)
+
+文字识别：No, the owner of the studio told me he's had a / lot of offers over the years but he won't sell it. / Caos & Consequences / (2011)
+
+### 画面 00:14:50
+
+![课件截图](frames/frame_000064.webp)
+
+文字识别：No, the owner of the studio told me he's had a / lot of offers over the years but he won't sell it. / Caos & Consequences / (2011)
+
+### 画面 00:14:52
+
+![课件截图](frames/frame_000065.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in reasonable condition
+
+### 画面 00:14:54
+
+![课件截图](frames/frame_000066.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in reasonable condition
+
+### 画面 00:14:59
+
+![课件截图](frames/frame_000067.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in reasonable condition / ■in good/perfect/bad condition
+
+## 00:15:00–00:15:30
+
+并不常见，最常见的是 in good condition, perfect condition 和 bad condition，对吧？可以指物，可以指人啊，那就是都没有问题，就是状态良好。比如说， and the good news is you are in good condition. 好消息是 you are in good condition. 你状态很好，对吧？哎，身体没有什么大病啊。 in good condition. Next one, my father forbids me to touch it, for he wants to keep it in perfect condition. 那你就跟比如说第
+
+### 画面 00:15:08
+
+![课件截图](frames/frame_000068.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in reasonable condition / ■in good/perfect/bad condition
+
+### 画面 00:15:10
+
+![课件截图](frames/frame_000069.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in reasonable condition / ■ in good/perfect/bad condition /  And the good news is you're in good / condition. Flight (2012)
+
+### 画面 00:15:14
+
+![课件截图](frames/frame_000070.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in reasonable condition / ■ in good/perfect/bad condition /  And the good news is you're in good / condition. Flight (2012)
+
+### 画面 00:15:19
+
+![课件截图](frames/frame_000071.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in reasonable condition / ■ in good/perfect/bad condition /  And the good news is you're in good / condition. Flight (2012)
+
+### 画面 00:15:21
+
+![课件截图](frames/frame_000072.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in reasonable condition / ■in good/perfect/bad condition /  And the good news is you're in good / condition. Flight (2012) /  My father forbids me to touch it, for he / wants to keep it in perfect condition. L51
+
+### 画面 00:15:24
+
+![课件截图](frames/frame_000073.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in reasonable condition / ■ in good/perfect/bad condition /  And the good news is you're in good / condition. Flight (2012) /  My father forbids me to touch it, for he / wants to keep it in perfect condition. L51
+
+### 画面 00:15:29
+
+![课件截图](frames/frame_000074.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in reasonable condition / ■ in good/perfect/bad condition /  And the good news is you're in good / condition. Flight (2012) /  My father forbids me to touch it, for he / wants to keep it in perfect condition. L51
+
+## 00:15:30–00:16:00
+
+十课钢琴那课连起来。我爸不想让我碰这个古钢琴啊，禁止我触碰这个古钢琴，因为啊，他希望它保持一个完美的状况，对吧？Next one, be worth doing值得去做某件事儿。我们先看第一句话，比如说It's worth pointing out that he doesn't have a good reputation.两个习惯用法均出自五十八课。Point out that指出，
+
+### 画面 00:15:34
+
+![课件截图](frames/frame_000075.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in reasonable condition / ■ in good/perfect/bad condition /  And the good news is you're in good / condition. Flight (2012) /  My father forbids me to touch it, for he / wants to keep it in perfect condition. L51
+
+### 画面 00:15:38
+
+![课件截图](frames/frame_000076.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in reasonable condition / ■in good/perfect/bad condition /  And the good news is you're in good / condition. Flight (2012) /  My father forbids me to touch it, for he / wants to keep it in perfect condition. L51
+
+### 画面 00:15:41
+
+![课件截图](frames/frame_000077.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in reasonable condition / ■ in good/perfect/bad condition / And the good news is you're in good / condition. Flight (2012) /  My father forbids me to touch it, for he / wants to keep it in perfect condition. L51
+
+### 画面 00:15:43
+
+![课件截图](frames/frame_000078.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be worth doing
+
+### 画面 00:15:45
+
+![课件截图](frames/frame_000079.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be worth doing
+
+### 画面 00:15:47
+
+![课件截图](frames/frame_000080.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be worth doing /  It's worth pointing out that he doesn't have / a good reputation.L58
+
+### 画面 00:15:49
+
+![课件截图](frames/frame_000081.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be worth doing /  It's worth pointing out that he doesn't have / a good reputation. L58
+
+### 画面 00:15:54
+
+![课件截图](frames/frame_000082.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be worth doing /  It's worth pointing out that he doesn't have / a good reputation.L58
+
+### 画面 00:15:59
+
+![课件截图](frames/frame_000083.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be worth doing /  It's worth pointing out that he doesn't have / a good reputation.L58
+
+## 00:16:00–00:16:30
+
+have a good呃这个reputation叫做有一个很好的名声。说值得指出的是，他并没有一个很好的名声啊。我们是否要相信他呢？Next one, I still think is worth doing。说我依旧认为这事儿值得去做，对吧？Be worth doing。再来，I know it's not going to be easy。这个事儿不会很简单。那刚刚我希望你还记得，就等于going to，对吧？哎，不会
+
+### 画面 00:16:04
+
+![课件截图](frames/frame_000084.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be worth doing /  It's worth pointing out that he doesn't have / a good reputation. L58
+
+### 画面 00:16:09
+
+![课件截图](frames/frame_000085.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be worth doing /  It's worth pointing out that he doesn't have / a good reputation. L58
+
+### 画面 00:16:12
+
+![课件截图](frames/frame_000086.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be worth doing /  It's worth pointing out that he doesn't have / a good reputation. L58 / I still think it's worth doing.
+
+### 画面 00:16:14
+
+![课件截图](frames/frame_000087.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be worth doing /  It's worth pointing out that he doesn't have / a good reputation. L58 / I still think it's worth doing.
+
+### 画面 00:16:19
+
+![课件截图](frames/frame_000088.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be worth doing /  It's worth pointing out that he doesn't have / a good reputation. L58 / I still think it's worth doing.
+
+### 画面 00:16:21
+
+![课件截图](frames/frame_000089.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be worth doing /  It's worth pointing out that he doesn't have / a good reputation. L58 / I still think it's worth doing. / I know it's not gonna be easy, but you said / anything Worth doing is difficult. Patch Adams / (1998)
+
+### 画面 00:16:24
+
+![课件截图](frames/frame_000090.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be worth doing /  It's worth pointing out that he doesn't have / a good reputation. L58 / I still think it's worth doing. / I know it's not gonna be easy, but you said / anything Worth doing is difficult. Patch Adams / (1998)
+
+### 画面 00:16:29
+
+![课件截图](frames/frame_000091.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be worth doing /  It's worth pointing out that he doesn't have / a good reputation. L58 / I still think it's worth doing. / I know it's not gonna be easy, but you said / anything Worth doing is difficult. Patch Adams / (1998)
+
+## 00:16:30–00:17:00
+
+很简单。But you said anything worth doing is difficult.但是你说了任何值得去做的事情都很困难。Okay,好。Be worth doing,值得去做。哎，咱们听一个电影片段吧。这电影片段里边连着出现了咱们之前学过的这个语法呀也好，习惯用法也好啊。He used to say the only thing worth doing was what we do for others.我想问一个问题，就是
+
+### 画面 00:16:34
+
+![课件截图](frames/frame_000092.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be worth doing /  It's worth pointing out that he doesn't have / a good reputation. L58 / I still think it's worth doing. / I know it's not gonna be easy, but you said / anything Worth doing is difficult. Patch Adams / (1998)
+
+### 画面 00:16:40
+
+![课件截图](frames/frame_000093.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be worth doing /  It's worth pointing out that he doesn't have / a good reputation. L58 / I still think it's worth doing. / I know it's not gonna be easy, but you said / anything Worth doing is difficult. Patch Adams / (1998)
+
+### 画面 00:16:42
+
+![课件截图](frames/frame_000094.webp)
+
+文字识别：He used to say the only thing worth doing.was / what we do for others. / Alice Through the Looking Glass / (2016)
+
+### 画面 00:16:44
+
+![课件截图](frames/frame_000095.webp)
+
+文字识别：He used to say the only thing worth doing.was / what we do for others. / Alice Through the Looking Glass / (2016)
+
+### 画面 00:16:46
+
+![课件截图](frames/frame_000096.webp)
+
+文字识别：He used to say the only thing worth doing….was / what we do for others. / Alice Through the Looking Glass / (2016)
+
+### 画面 00:16:48
+
+![课件截图](frames/frame_000097.webp)
+
+文字识别：He used to say the only thing worth doing.was / what we do for others. / Alice Through the Looking Glass / (2016)
+
+### 画面 00:16:50
+
+![课件截图](frames/frame_000098.webp)
+
+文字识别：He used to say the only thing worth doing….was / what we do for others. / Alice Through the Looking Glass / (2016)
+
+### 画面 00:16:53
+
+![课件截图](frames/frame_000099.webp)
+
+文字识别：He used to say the only thing worth doing.was / what we do for others. / Alice Through the Looking Glass / (2016)
+
+### 画面 00:16:55
+
+![课件截图](frames/frame_000100.webp)
+
+文字识别：He used to say the only thing worth doing….was / what we do for others. / Alice Through the Looking Glass / (2016)
+
+### 画面 00:16:57
+
+![课件截图](frames/frame_000101.webp)
+
+文字识别：He used to say the only thing worth doing..was / what we do for others. / Alice Through the Looking Glass / (2016)
+
+## 00:17:00–00:17:30
+
+这里的 what 是翻译成什么，还是翻译成咱们原来学过的 the thing that？您自己都带进去，呃，这个试一下，然后哎，尝试留言告诉我，好吧？ Turn A into B，把 A 变成 B。再来， We want to turn this into a real university。哎，比如说我们现在做江江助学计划，那我们就可以说，我我们想把我们现在这个事儿变成一个真正
+
+### 画面 00:17:14
+
+![课件截图](frames/frame_000102.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / turn a into b.
+
+### 画面 00:17:17
+
+![课件截图](frames/frame_000103.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / turn a into b.
+
+### 画面 00:17:19
+
+![课件截图](frames/frame_000104.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / turn a into b. /  We want to turn this into a real university.
+
+### 画面 00:17:24
+
+![课件截图](frames/frame_000105.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / turn a into b. /  We want to turn this into a real university.
+
+### 画面 00:17:29
+
+![课件截图](frames/frame_000106.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / turn a into b. /  We want to turn this into a real university.
+
+## 00:17:30–00:18:00
+
+意义上的大学，turn A into B，对吧？哎，从UP主变成一个真正意义上的大学，有一天有没有这种可能？Next one, we ought to put money together, ought to do something,对吧？我们应该把钱放到一起，然后turn this into a computer center，把这个地方变成一个电脑中心啊，大家都可以来用，对不对？好，ought to do something.六十五课咱们学的，应该怎么怎么样，等于should do. Next one,说Mom,
+
+### 画面 00:17:31
+
+![课件截图](frames/frame_000107.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / turn a into b. /  We want to turn this into a real university.
+
+### 画面 00:17:36
+
+![课件截图](frames/frame_000108.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / turn a into b. /  We want to turn this into a real university.
+
+### 画面 00:17:38
+
+![课件截图](frames/frame_000109.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / turn a into b. /  We want to turn this into a real university. /  We ought to put money together, and / turn this into a computer center. L65
+
+### 画面 00:17:40
+
+![课件截图](frames/frame_000110.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / turn a into b. /  We want to turn this into a real university. /  We ought to put money together, and / turn this into a computer center. L65
+
+### 画面 00:17:55
+
+![课件截图](frames/frame_000111.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / turn a into b. /  We want to turn this into a real university. /  We ought to put money together, and / turn this into a computer center. L65
+
+### 画面 00:17:59
+
+![课件截图](frames/frame_000112.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / turn a into b. /  We want to turn this into a real university. /  We ought to put money together, and / turn this into a computer center. L65 /  Mom, she agreed to turn me into a / unicorn.L65
+
+## 00:18:00–00:18:30
+
+she agreed to turn me into a unicorn.啊，我觉得这个是一个，呃，我造这句话的时候，脑海当中想象的是一个很可爱的小姑娘，她跟她妈妈说，妈妈说，说这个她同意了要把我变成一个独角兽，unicorn啊，这个当然unicorn可能是稍微有一点超纲的单词，但是这个是很多小姑娘很喜欢的一个动物，是吧？OK，神兽啊，当然这里还用到了agree to do啊，这个同意做某
+
+### 画面 00:18:09
+
+![课件截图](frames/frame_000113.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / turn a into b. /  We want to turn this into a real university. /  We ought to put money together, and / turn this into a computer center. L65 /  Mom, she agreed to turn me into a / unicorn.L65
+
+### 画面 00:18:14
+
+![课件截图](frames/frame_000114.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / turn a into b. /  We want to turn this into a real university. /  We ought to put money together, and / turn this into a computer center. L65 /  Mom, she agreed to turn me into a / unicorn.L65
+
+### 画面 00:18:19
+
+![课件截图](frames/frame_000115.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / turn a into b. /  We want to turn this into a real university. /  We ought to put money together, and / turn this into a computer center. L65 /  Mom, she agreed to turn me into a / unicorn.L65
+
+### 画面 00:18:24
+
+![课件截图](frames/frame_000116.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / turn a into b. /  We want to turn this into a real university. /  We ought to put money together, and / turn this into a computer center. L65 /  Mom, she agreed to turn me into a / unicorn.L65
+
+### 画面 00:18:29
+
+![课件截图](frames/frame_000117.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / turn a into b. /  We want to turn this into a real university. /  We ought to put money together, and / turn this into a computer center. L65 /  Mom, she agreed to turn me into a / unicorn.L65
+
+## 00:18:30–00:19:00
+
+件事情。好，那接下来呢，咱们看电影片段啊。哎，首先这个电影片段呢很好，它还用到了over the years，数年间，对吧？妈妈变得越来越好。说尽管说，it seemed like all her fears turned into worries about me。这个不是典型的turn A into B，但是还是A变成了B，是吧？说只是看起来，她所有的恐惧变成了对我的担心。注意力集中，咱们听一下。
+
+### 画面 00:18:31
+
+![课件截图](frames/frame_000118.webp)
+
+文字识别：Over the years,Mom got better, although / it seemed like all her fears / turned into worries about me. / The Joy Luck Club / (1993)
+
+## 00:19:00–00:19:30
+
+years, Mom got better, although it seemed like all her fears turned into worries about me. Okay,下一个啊，很著名的片段《For a Scamp》里边的，对吧？哎，《阿甘正传》说，We pray for God. 我们当时向上帝祈祷，怎么样呢？Turn me into a bird, so I could fly far, far away. 所以我们向上帝祈祷，要把我 a 变成一
+
+### 画面 00:19:01
+
+![课件截图](frames/frame_000119.webp)
+
+文字识别：Over the years, Mom got better, although / it seemed like all her fears / turned into worries about me. / The Joy Luck Club / (1993)
+
+### 画面 00:19:04
+
+![课件截图](frames/frame_000120.webp)
+
+文字识别：Over the years, Mom got better, although / it seemed like all her fears / turned into worries about me. / The Joy Luck Club / (1993)
+
+### 画面 00:19:06
+
+![课件截图](frames/frame_000121.webp)
+
+文字识别：Over the years, Mom got better, although / it seemed like all her fears / turned into worries about me. / The Joy Luck Club / (1993)
+
+### 画面 00:19:08
+
+![课件截图](frames/frame_000122.webp)
+
+文字识别：Over the years,Mom got better, although / it seemed like all her fears / turned into worries about me. / The Joy Luck Club / (1993)
+
+### 画面 00:19:10
+
+![课件截图](frames/frame_000123.webp)
+
+文字识别：We prayed for God to turn / me into a bird so I could fly far, far away? / Forrest Gump / (1994)
+
+## 00:19:30–00:20:00
+
+个小鸟，所以我才能飞的，我能飞到很远很远的地方去。啊，为什么他要做这个祈祷呢？感兴趣，您可以看一下这个电影，很不错，是吧？ We pray for God to turn me into a bird so I could fly far, far away. Okay, recap expression很重要啊。家庭作业，习惯用法造句，这个每个五个对吧？当然也可以造对话、文章熟读成诵，这是必须要完成的
+
+### 画面 00:19:40
+
+![课件截图](frames/frame_000124.webp)
+
+文字识别：We prayed for God to turn / me into a bird so I could fly far, far away? / Forrest Gump / (1994)
+
+### 画面 00:19:42
+
+![课件截图](frames/frame_000125.webp)
+
+文字识别：We prayed for God to turn / me into a bird so I could fly far, far away? / Forrest Gump / (1994)
+
+### 画面 00:19:45
+
+![课件截图](frames/frame_000126.webp)
+
+文字识别：Recap / over the years / in reasonable condition / Expression / be worth doing / turn a into b.
+
+### 画面 00:19:47
+
+![课件截图](frames/frame_000127.webp)
+
+文字识别：Recap / over the years / in reasonable condition / Expression / be worth doing / turn a into b.
+
+### 画面 00:19:49
+
+![课件截图](frames/frame_000128.webp)
+
+文字识别：Recap / over the years / in reasonable condition / Expression / be worth doing / turn a into b.
+
+### 画面 00:19:51
+
+![课件截图](frames/frame_000129.webp)
+
+文字识别：1. / 习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句
+
+### 画面 00:19:54
+
+![课件截图](frames/frame_000130.webp)
+
+文字识别：1. / 习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句
+
+### 画面 00:19:57
+
+![课件截图](frames/frame_000131.webp)
+
+文字识别：习惯用法造句/对话 / 1. / 【习惯用法造句指南】 / 每个5句 / 文章跟读至熟读成诵 / 内化单词+语法+习惯用法 / 听力+口语+写作练习
+
+### 画面 00:19:59
+
+![课件截图](frames/frame_000132.webp)
+
+文字识别：习惯用法造句/对话 / 1. / 【习惯用法造句指南】 / 每个5句 / 文章跟读至熟读成诵 / 内化单词+语法+习惯用法 / 听力+口语+写作练习
+
+## 00:20:00–00:20:30
+
+最核心的任务啊！然后呢，置顶留言找那些重复间隔的学习材料。那以上呢就是本期视频的全部内容了。如果各位喜欢我们的课程呢，欢迎各位关注、订阅、一键三连，分享给那些需要的朋友，来帮助我们快速成长。See you next time.
+
+### 画面 00:20:01
+
+![课件截图](frames/frame_000133.webp)
+
+文字识别：1 / 习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句 / 文章跟读至熟读成诵 / 内化单词+语法+习惯用法 / 听力+口语+写作练习 / 3. / 重复间隔（置顶留言）
+
+### 画面 00:20:03
+
+![课件截图](frames/frame_000134.webp)
+
+文字识别：1. / 习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句 / 文章跟读至熟读成诵 / 内化单词+语法+习惯用法 / 听力+口语+写作练习 / 重复间隔（置顶留言）
+
+### 画面 00:20:05
+
+![课件截图](frames/frame_000135.webp)
+
+文字识别：1. / 习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句 / 文章跟读至熟读成诵 / 内化单词+语法+习惯用法 / 听力+口语+写作练习 / 3. / 重复间隔（置顶留言）
+
+### 画面 00:20:07
+
+![课件截图](frames/frame_000136.webp)
+
+文字识别：不
+
+### 画面 00:20:18
+
+![课件截图](frames/frame_000137.webp)
+
+### 画面 00:20:20
+
+![课件截图](frames/frame_000138.webp)
+
+文字识别：CAPSULEACADEMY / 胶囊助学计划 / 『 / 小红书 / Lecturer / □ / 口 / Leo / OE
+
+### 画面 00:20:23
+
+![课件截图](frames/frame_000139.webp)
+
+文字识别：CAPSULEACADEMY / 胶囊助学计划 / 小红书
+
+### 画面 00:20:26
+
+![课件截图](frames/frame_000140.webp)
+
+文字识别：CAPSULEACADEMY / 胶囊助学计划 / 小红书 / Creator / □ / Leo & Berlin / OE
+
+### 画面 00:20:28
+
+![课件截图](frames/frame_000141.webp)
+
+文字识别：biltbili / 胶囊助学计划 / CAPSULEACADEMY / 胶囊助学计划 / 小红书 / OE
+
+## 00:20:30–00:20:31
+
+
+
+### 画面 00:20:30
+
+![课件截图](frames/frame_000142.webp)
+
+文字识别：bilibili / 胶囊助学计划
+
