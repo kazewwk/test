@@ -1,0 +1,1176 @@
+# L047 文章
+
+快速机器解析：语音为单模型转写，未进行独立交叉校对或人工复核；画面每秒采样并按变化选帧，短时文字和标记可能遗漏。截图时间约有 1 秒误差。图片有损压缩；遇到疑点请按时间查看 Google Drive 原视频。
+
+## 00:00:00–00:00:30
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we are going to learn New Concept English Book Two Lesson Forty Seven Story. Hope you can enjoy it.来了，那我们直接进入原文啊。第一句话叫 a public house. Public house基本上不会这么去用。它呃 public house首先是什么？就是 pub 啊，就是 pub pub 就是 public house 的一个简称。呃，我
+
+### 画面 00:00:00
+
+![课件截图](frames/frame_000000.webp)
+
+文字识别：NCE / BOOK"I / Lesson 47 / Story
+
+### 画面 00:00:02
+
+![课件截图](frames/frame_000001.webp)
+
+文字识别：NCE / BOOKⅡI / Lesson 47 / Story
+
+### 画面 00:00:05
+
+![课件截图](frames/frame_000002.webp)
+
+文字识别：NCE / BOOKⅡI / Lesson 47 / Story
+
+### 画面 00:00:10
+
+![课件截图](frames/frame_000003.webp)
+
+文字识别：胶囊助学计划b出l / •
+
+### 画面 00:00:14
+
+![课件截图](frames/frame_000004.webp)
+
+### 画面 00:00:16
+
+![课件截图](frames/frame_000005.webp)
+
+文字识别：HOOA2 / A public house(pub) which was recently / bought by Mr. lan Thompson is up for sale. / Mr.Thompson is going to sellit because it is / haunted. He told me that he could not go to / sleep one night because he heard a strange / noise coming from the bar.
+
+## 00:00:30–00:01:00
+
+基本上在新西兰待了两年半，没听人说过 public house，大多数人都会说 pub 或者 bar，对吧？ Something like that， public house 就指的是酒吧啊，那你就可以理解为一个 pub 啊，一个酒吧， which was recently， which was recently bought by Mr. In Thompson，哎，定语从句对吧？就是这个酒吧啊， was recently bought，一个一
+
+### 画面 00:00:46
+
+![课件截图](frames/frame_000006.webp)
+
+文字识别：HOOA2 / A public house(pub) which was recently / bought by Mr. lan Thompson is up for sale. / Mr.Thompson is going to sellit because it is / haunted. He told me that he could not go to / sleep one night because he heard a strange / noise coming from the bar.
+
+### 画面 00:00:57
+
+![课件截图](frames/frame_000007.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr. lan Thompson jis up for sale. / Mr.Thompson is going to sell it because it is / haunted. He told me that he could not go to / sleep one night because he heard a strange / noise coming from the bar.
+
+## 00:01:00–00:01:30
+
+般过去时的被动叫做最近被买了。被谁呢？被Mr. In Thompson，被In Thompson先生买了。好，这地方我再多提一句，就是我们每个单元的最后两课一般都是没有新的语法的。它唯一的目的就是把这个单元的前二十二课复习一下。每个单元新概念二册都是二十四个单元，按二十四课。每个单元的第二十三课和第
+
+### 画面 00:01:27
+
+![课件截图](frames/frame_000008.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr. lan Thompson js up for sale. / Mr.Thompson is going to sell it because it is / haunted. He told me that he could not go to / sleep one night because he heard a strange / noise coming from the bar.
+
+## 00:01:30–00:02:00
+
+二十四课都是在复习这个单元的第一课到第二十二课，对吧？那所以，比如说对于本课来说，四十七课它就是第二单元的倒数第二课啊，也就是第二十三课。它的目的就是复习一下本单元啊，从这个二十五课一直到四十六课出现的一些语法啊。所以，我这课重点就是把语法带着各位简单溜一遍啊。呃，最近被 Mister In
+
+### 画面 00:01:54
+
+![课件截图](frames/frame_000009.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr. lan Thompson js up for sale. / Mr.Thompson is going to sell it because it is / haunted. He told me that he could not go to / sleep one night because he heard a strange / noise coming from the bar.
+
+## 00:02:00–00:02:30
+
+购买了。注意 was a bought，是吧？哎，刚刚被他买了的，特别神奇。接下来叫 is up for sale。这地方有一个习惯用法叫 be up for sale。 Be up for sale 就指的是代售啊，可以买，你可以买。 Be up for sale。其实我们新应该是见过九十一课，各位如果没学过，可以过去看一眼标题，是吧？好， is up for sale，叫做代售。那这句话上来就很有意思，为什么呢？ Mister In Thompson
+
+### 画面 00:02:07
+
+![课件截图](frames/frame_000010.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr. lan Thompson js up for sale. / Mr.Thompson is going to sellit because it is / haunted. He told me that he could not go to / sleep one night because he heard a strange / noise coming from the bar.
+
+## 00:02:30–00:03:00
+
+最近刚刚买的这个酒吧，他要给他卖了。哎，如果从故事的角度，您看懂这句话，从故事的角度，那就很好奇，自然你会勾引起你的一个阅读欲望，叫做为啥呀？刚买为啥就要卖了呀？对吧？刚结为什么就要离呀？总一定要有非常重要的原因，对不对？好看他怎么说？说Mr. Thompson is going to sell it.非常简单，这咱新一就学过无数遍了。Be going to do
+
+### 画面 00:02:37
+
+![课件截图](frames/frame_000011.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr.lan Thompson js up for sale. / Mr.Thompson is going to sell it because it is / haunted. He told me that he could not go to / sleep one night because he heard a strange / noise coming from the bar.
+
+## 00:03:00–00:03:30
+
+计划打算sell it卖掉它because it is haunted because it is haunted好因为对吧？它被鬼啊闹鬼了对吧？就是翻译成汉语就是闹鬼了啊。然后如果是英文飞掉一个单词一个单词翻译呢，就是这个酒吧被鬼缠上了对吧？He told me that好了，一看told me that一直到最后整个that后边的内容都是他告诉我
+
+### 画面 00:03:01
+
+![课件截图](frames/frame_000012.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr. lan Thompson js up for sale. / Mr.Thompson is going to pell because it is / haunted. He told me that he could not go to / sleep one night because he heard a strange / noise coming from the bar.
+
+## 00:03:30–00:04:00
+
+的，都做了宾语，整个是个宾语从句，对吧？只不过这个宾语从句当中还有一个 because 啊，原因，所谓叫原因状语从句。如果状语您不懂呢，我们有另一种理解，就是原因从句啊，一句话表示一个原因。好，我们先不管它，先看这句话，叫 He could not go to sleep one night。说他不能 go to sleep 睡觉 one night，有一天晚上，为什么呢？因为注
+
+### 画面 00:03:31
+
+![课件截图](frames/frame_000013.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr. lan Thompson js up for sale. / Mr.Thompson is going to pell b / because it is / haunted. He told methat he could not go to / sleep one night because he heard a strange / noise coming from the bar.
+
+## 00:04:00–00:04:30
+
+意，because是一个连词，要连接一个句子啊，独立的句子。各位，新概念二册第一课我们就说过，一个正确独立的句子的特点，至少要有一和二，对吧？至少要有主语跟谓语啊。因为 he heard a strange noise，因为他听到了，就是一个单词一个单词翻译就行了，一个很奇怪的声响 coming from
+
+### 画面 00:04:01
+
+![课件截图](frames/frame_000014.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr. lan Thompson js up for sale. / Mr.Thompson is going to pell b / because it is / haunted. He told methat he could not go to / sleep one night because he heard a strange / noise coming from the bar.
+
+## 00:04:30–00:05:00
+
+the bar.首先，coming在这为什么用ing？各位可能不太了解。我们先不管它，它可能并不影响我们的阅读啊。Come就是来，from就是从哪地方传来。The bar,哎，bar就是pub一码事儿。刚才我提到了啊，呃，都指的是酒吧。所以我们在一个单词一个单词翻译一下，叫做他没有办法入睡。有一天晚上，因为他听到了一个奇怪的声音来自于酒吧，对吧？好，到目前为止这句
+
+### 画面 00:04:31
+
+![课件截图](frames/frame_000015.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr.lan Thompson js up for sale. / Mr.Thompson is going to pell b / because it is / haunted. He told methat he could not go to / sleep one night because he heard a strange / noise coming from the bar.
+
+## 00:05:00–00:05:30
+
+话我们看懂了，但是这儿留了一个小的问题，就是这里为什么是用 coming？我提一下，这里实际上我们有两种理解方式，这两种理解方式呢，我个人偏向于第二种，但我先把第一种简单跟各位说一下。第二种理解，呃，第一种理解方式叫做宾语的补足语。我们还有一类东西，你看我们经常说主谓宾，这个是大家最熟悉的定
+
+### 画面 00:05:01
+
+![课件截图](frames/frame_000016.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr. lan Thompson jis up for sale. / Mr.Thompson is going topell b / because it is / haunted. He told methat he could not go to / sleep one night because he heard a strange / noise coming from the bar.
+
+### 画面 00:05:08
+
+![课件截图](frames/frame_000017.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr. lan Thompson js up for sale. / Mr.Thompson is going topell / because it is / haunted. He told methat he could not go to / sleep one night because he heard a strange / Comingfrom the bar. / noise
+
+## 00:05:30–00:06:00
+
+状补，各位可能比较熟悉的是定啊，主谓宾就是主语、谓语、宾语，这个很熟悉，我就不多说了。定语啊，我们二十八、二十九、三十一直在说的就是定语，而且我们经常提定语从句，对吧？所以定语应该各位不是非常的陌生。呃，状语，状语实际上我们原来说说状语，你懂也行，不懂也行，我不认为非要懂，对吧？呃，如果你能懂呢，其实它就是一个时间状语，对吧？这其实就是
+
+### 画面 00:05:38
+
+![课件截图](frames/frame_000018.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr.lan Thompson js up for sale. / Mr.Thompson is going to pell / because it is / haunted. He told methat he could not go to / sleep one night because he heard a strange / comingfrom the bar. / noise
+
+## 00:06:00–00:06:30
+
+个语法名称啊。呃，时间状语从句，我说过，我说你可以管它叫时间从句，一点问题没有。有的是语法书写的就是时间从句，不用状语这个概念，对吧？好，那就描述描述的是主句当中的那个动词什么时候发生。比如说可以是时间状语从句，可以是条件状语从句。比如说十六课咱们学的 if a 发生 b 就发生，那个就是条件状语从句。我印象当中，我讲的时候也提过了，你也可以把它变成叫条件从句。
+
+### 画面 00:06:08
+
+![课件截图](frames/frame_000019.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr. lan Thompson js up for sale. / Mr.Thompson is going to pell because it is / haunted. He told methat he could not go to / sleep one night because he heard a strange / comingfrom the bar. / noise
+
+## 00:06:30–00:07:00
+
+所以状语应该也不是我们特别嗯不熟悉的，对吧？所以主谓宾定状大家多少应该都听过，但定状补的补，呃，不同的老师的讲解方式不一样啊，因为你可能听过以前别的老师的课，或者你在学校听过，所以我一定要提一句，叫补语。补语最常见的有两种，一种叫做主语补语，另外一种叫做宾语补语。呃，宾语补语一般学明白了，主语补语
+
+### 画面 00:06:38
+
+![课件截图](frames/frame_000020.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr. lan Thompson js up for sale. / Mr.Thompson is going to pell because it is / haunted. He told methat he could not go to / sleep one night because he heard a strange / comingfrom the bar. / noise
+
+## 00:07:00–00:07:30
+
+相对来说就简单很多了啊，往往就是调个被动。这个我们新概念三册第一课一般来说就会提这个事儿啊，主语补语的事儿。好，回到这个地方啊，我们提到了这个补语，对吧？宾语补语。所以这里的 coming from the bar 为什么要用 coming 的 ing 呢？两种模式，第一种叫做它是一个分词做了补语，这叫非谓语动词，分词做了补语。但是这里有两个问
+
+### 画面 00:07:08
+
+![课件截图](frames/frame_000021.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr. lan Thompson js up for sale. / Mr.Thompson is going toell / because it is / haunted. He told methat he could not go to / sleep one night because he heard a strange / comindfrom the bar. / noise
+
+### 画面 00:07:16
+
+![课件截图](frames/frame_000022.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr.lan Thompson js up for sale. / Mr.Thompson is going to pell / because it is / haunted. He told methat he could not go to / sleep one night because he heard a strange / noise / comingf / from the bar.
+
+## 00:07:30–00:08:00
+
+题啊。第一，各位已经学过了分词做定语，在二十九课、三十课，对吧？但是四十九课你才能学到分词做状语，所以呢，分词做状语的出现频率又远远高于分词做补语啊。我不知道给给各位绕没绕懵啊，尽量去跟着啊。所以，我们一定是先讲四十九课的分词做状语，我们才会再花时间去讲，也许啊，去讲分词做补语，对吧？好，这是第一个。第二，
+
+### 画面 00:07:46
+
+![课件截图](frames/frame_000023.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr. lan Thompson js up for sale. / Mr.Thompson is going to pell b / because it is / haunted. He told methat he could not go to / sleep one night because he heard a strange / comindfrom the bar. / noise
+
+## 00:08:00–00:08:30
+
+哎，刚才那那一套就是给你解释了为什么这是ing，因为它叫做呃这个宾语补足语，对吧？主谓宾定状补的那个补语啊，但为它为什么是补语呢？这个我可能就不会细讲了啊，我会偏向于第二种方式。第二种方式就是你去看一些，比如说我给大家推荐的红皮书啊，你去拿索引查一下here或者see这个单词，我印象当中是三十五课啊，我们见过see somebody doing something啊，呃，
+
+### 画面 00:08:01
+
+![课件截图](frames/frame_000024.webp)
+
+文字识别：HOOQA2 / A public house(pub)which was recently / bought by Mr. lan Thompson js up for sale. / Mr.Thompson is going to pell b / because it is / haunted. He told methat he could not go to / sleep one night because he heard a strange / Comingf / from the bar. / noise
+
+### 画面 00:08:13
+
+![课件截图](frames/frame_000025.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr. lan Thompson js up for sale. / Mr.Thompson is going to pell because it is / haunted. He told methat he could not go to / sleep one night because he heard a strange / comingfrom the bar. / noise
+
+## 00:08:30–00:09:00
+
+he actually directly treats it as a fixed collocation,而不去讲补语这个概念，因为对于大多数英语是母语的人，他也不太明白什么叫补语，他只是会这么用。听见了啊？所以这里其实是有一个习惯用法的。这个习惯用法叫 hear somebody or something，然后叫 doing something。如果三十五课你学的还不错，你可以回顾一下。三十五课我们学过叫
+
+### 画面 00:08:43
+
+![课件截图](frames/frame_000026.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr.lan Thompson js up for sale. / Mr.Thompson is going to pell / because it is / haunted. He told methat he could not go to / sleep one night because he heard a strange / comingfrom the bar. / noise
+
+### 画面 00:08:54
+
+![课件截图](frames/frame_000027.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr. lan Thompson js up for sale. / Mr.Thompson is going to pell because it is / haunted. He told methat he could not go to / sleep one night because he heard a strange / comingfrom the bar. / noise
+
+## 00:09:00–00:09:30
+
+see somebody doing something，叫做看到某人正在做某件事情。那里的正在做某件事情就是宾语补语，对吧？OK，所以我们呢叫做高难语法，把它习惯用法化，这是很多外国语法书的一个共同特点。比如说各位的红皮书就是剑桥，我印象当中啊，就是外国人去编写的这样的语法书。这对于我们学习实际上能帮我们减轻一些负担。也就是说，你如果
+
+### 画面 00:09:05
+
+![课件截图](frames/frame_000028.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr. lan Thompson js up for sale. / Mr.Thompson is going to pell because it is / haunted. He told methat he could not go to / sleep one night because he heard a strange / comingfrom the bar. / noise
+
+### 画面 00:09:29
+
+![课件截图](frames/frame_000029.webp)
+
+文字识别：HOOA2 / A public house(pub)which was recently / bought by Mr. lan Thompson js up for sale. / Mr.Thompson is going to pell b / because it is / haunted. He told methat he could not go to / sleep one night because he heard a strange / comingfrom the bar. / noise
+
+## 00:09:30–00:10:00
+
+喜欢我这样的一个思路呢，就是你不用管什么是补语，你只要知道它是个习惯用法，你会用这事儿就搞定了。好了，也解释了 here somebody or something doing something。一会儿我们再造句啊。好，接下来他说 the next morning，第二天早晨呢， he found 他发现了一件事儿，发现的又是宾语从句，对吧？啊，之前我们学的三十九课吧，我印象当中， the doors 门 had been blocked，哎，过去完成时的被动， have been done，已经
+
+### 画面 00:09:41
+
+![课件截图](frames/frame_000030.webp)
+
+文字识别：HOOA2 / The next morning, he found that the doors had / been blocked by chairs and the furniture had / been moved. Though Mr.Thompson had turned / the lights off before he went to bed, they were / on in the morning. He also said that he had / found five empty whisky bottles which the ghost / must have drunk the night before.
+
+### 画面 00:09:56
+
+![课件截图](frames/frame_000031.webp)
+
+文字识别：HOOA2 / The next morning, he foundthat the doors had / been blocked by chairs and the furniture had / been moved / Though Mr.Thompson had turned / the lights off before he went to bed, they were / on in the morning. He also said that he had / found five empty whisky bottles which the ghost / must have drunk the night before.
+
+## 00:10:00–00:10:30
+
+被怎么样了呢？已经被堵上了。By chairs and furniture,啊啊，by by chairs没有到and后面啊，已经被椅子给堵上了。And然后the furniture had been moved，说家具呢还在变大，已经被移动过了。Very good. Though这个单词我们今天也是先不着急讲，我们之前已经学过了though, even though,
+
+### 画面 00:10:13
+
+![课件截图](frames/frame_000032.webp)
+
+文字识别：HOOA2 / The next morning, he foundthat the doors had / been blocked by chairsand the furniture had / been moved / Though Mr.Thompson had turned / the lights off before he went to bed, they were / on in the morning. He also said that he had / found five empty whisky bottles which the ghost / must have drunk the night before.
+
+### 画面 00:10:22
+
+![课件截图](frames/frame_000033.webp)
+
+文字识别：HOOA2 / The next morning, he foundthat the doors had / been blocked by chairsand the furniture had / been moved / Fhough Mr.Thompson had turned / the lights off before he went to bed, they were / on in the morning. He also said that he had / found five empty whisky bottles which the ghost / must have drunk the night before.
+
+## 00:10:30–00:11:00
+
+although,我们都是见了一下，对吧？呃，在未来的某一课当中，因为本课是复习，我觉得没有必要把它讲语法啊。我们未来的过程当中会给大家讲一次啊，但不是这一课。你现在只要知道这个though就指的是即使啊，尽管。好，你比如说，我们看它怎么翻译，叫尽管。Mr. Thompson had turned the lights off，说已经把这个灯给关了。Turn the
+
+### 画面 00:10:45
+
+![课件截图](frames/frame_000034.webp)
+
+文字识别：HOOA2 / The next morning,he foundthat the doors had / been blocked by Lhairsand the furniture had / been moved / ThoughMr.Thompson had turned / the lights off before he went to bed, they were / on in the morning. He also said that he had / found five empty whisky bottles which the ghost / must have drunk the night before.
+
+## 00:11:00–00:11:30
+
+lights off。新一学过的一个小的短语，对吧？关了灯啊，我就不再提了。各位如果没印象了，你就把它再标一下。Before在什么之前呢？He went to bed在他去上床睡觉之前。They were on in the morning。说这些灯呢，on啊，turn them off。Off就是关了，on就是开着的。他们They were on，他们是开着的。In the morning叫在早晨，好吧。所以我再
+
+### 画面 00:11:05
+
+![课件截图](frames/frame_000035.webp)
+
+文字识别：HOOA2 / The next morning,he foundthat the doors had / been blocked by Yb/airsand the furniture had / been moved / Fhough Mr.Thompson had turned / the lights off before he went to bed, they were / on in the morning. He also said that he had / found five empty whisky bottles which the ghost / must have drunk the night before.
+
+## 00:11:30–00:12:00
+
+说一下这里的一个小点，就是各位只要记住 though 跟我们之前见过的 although even though 啊是一个意思，表示尽管即使就可以了。在未来我会统一给各位整理一遍啊，这个我们管它叫一个也是一个状语从句啊，我们以后再说。今天你知道知道它的意思就可以了。 He also said，他也说了 that 后边又是一句话，整个是一个宾从，对不对？我们看他说了什么事儿。
+
+### 画面 00:11:31
+
+![课件截图](frames/frame_000036.webp)
+
+文字识别：HOOA2 / The next morning,he foundthat the doors had / been blocked byyairsand the furniture had / been moved / ThoughMr.Thompson had turned / the lights off before he went to bed, they were / on in the morning. He also said that he had / found five empty whisky bottles which the ghost / must have drunk the night before.
+
+### 画面 00:11:53
+
+![课件截图](frames/frame_000037.webp)
+
+文字识别：HOOA2 / The next morning,he foundthat the doors had / been blocked by\yairsand the furniture had / been moved / fhougr)Mr.Thompson had turned / the lights off before he went to bed, they were / on in the morning. He also saidthat he had / found five empty whisky bottles which the ghost / must have drunk the night before.
+
+## 00:12:00–00:12:30
+
+He had found five empty whiskey bottles.说他已经发现了找到了五个空的威士忌的瓶子。注意后边又这个宾语从句当中又套了一个定语从句，看见了吧？而这个定语从句 which 指的肯定是 whiskey bottles 啊，这些空啊 empty whiskey bottles 对吧？这些空的威士忌的瓶子，什么样的
+
+### 画面 00:12:07
+
+![课件截图](frames/frame_000038.webp)
+
+文字识别：HOOA2 / The next morning, he foundthat the doors had / been blocked byY/airsand the furniture had / been moved / fhougl)Mr.Thompson had turned / the lights off before he went to bed, they were / on in the morning. He also saidthat he had / found five empty whisky bottles which the ghost / must have drunk the night before.
+
+### 画面 00:12:20
+
+![课件截图](frames/frame_000039.webp)
+
+文字识别：HOOA2 / The next morning,he foundthat the doors had / been blocked by\y/airsand the furniture had / been moved / fhough)Mr.Thompson had turned / the lights off before he went to bed, they were / on in the morning. He also saidthat he had / found five empty whisky bottlesWhich the ghost / must have drunk the night before.
+
+## 00:12:30–00:13:00
+
+瓶子呢？The ghost must have drunk the night before.好，首先注意一个小点啊，说the ghost叫做这些鬼魂must have drunk. 十七个咱们就学过了，must have done叫当时一定是。那the night before就last night啊，这两个一模一样啊。The night before等于last night，昨晚。那因为是过去对过去的一个非常肯定的推测，must have done，对吧？好，说那这些鬼魂昨天晚
+
+### 画面 00:12:40
+
+![课件截图](frames/frame_000040.webp)
+
+文字识别：HOOA2 / The next morning, he foundthat the doors had / been blocked by\/airsand the furniture had / been moved / fhougl)Mr.Thompson had turned / the lights off before he went to bed, they were / on in the morning. He also saidthat he had / found five empty whisky bottles which the ghost / must have drunk the night before.
+
+### 画面 00:12:59
+
+![课件截图](frames/frame_000041.webp)
+
+文字识别：HOOA2 / The next morning, he foundthat the doors had / been blocked by\/airsand the furniture had / been moved / fhough)Mr.Thompson had turned / the lights off before he went to bed, they were / on in the morning. He also saidthat he had / found five empty whisky bottles which the ghost / must have drunk the night before.
+
+## 00:13:00–00:13:30
+
+上一定喝空了这五个啊，一定喝了这五个空瓶子。他其实喝的是酒嘛？不过在这里，他其实就是拿这五个空瓶子去替代了这个酒，或者去指代了这个酒啊。你这样去理解就行了。他喝空瓶子干嘛呢？他喝的就是这个空瓶子里边的酒嘛。OK啊，呃，OK，continue。问当这实际上不就是咱们第七课学的问一般引导的大多数情况下，目前
+
+### 画面 00:13:02
+
+![课件截图](frames/frame_000042.webp)
+
+文字识别：HOOA2 / The next morning,he foundthat the doors had / been blocked by\yairsand the furniture had / been moved / fhougl)Mr.Thompson had turned / the lights off before he went to bed, they were / on in the morning. He also saidthat he had / found five empty whisky bottleswhich the ghost / must have drunk the night before.
+
+### 画面 00:13:21
+
+![课件截图](frames/frame_000043.webp)
+
+文字识别：HOOA2 / When I suggested that some villagers must / have come in for a free drink, Mr. Thompson / shook his head. The villagers have told him / that they will not accept the pub even if he / gives it away.
+
+## 00:13:30–00:14:00
+
+各位能见到的都叫做时间从句或时间状语从句，对吧？当 I suggested，当我提议提议什么呢？后边又是一个小的宾语从句啊，又是一个小的宾语从句。提的叫 Some villagers must have come， must have come 十七课学的 must have done，叫当时一定是是吧？说一些这些这个 villagers 就是这些村民啊啊，昨天晚上一定是
+
+### 画面 00:13:49
+
+![课件截图](frames/frame_000044.webp)
+
+文字识别：HO04A2 / When I suggested that some villagers must / have come in for a free drink, Mr. Thompson / shook his head.The villagers have told him / that they will not accept the pub even if he / gives it away.
+
+## 00:14:00–00:14:30
+
+进来，come in，一定是进来。目的是什么呢？For a free drink，喝了一次免费的酒，对吧？这个 drink 啊，我这么单独放，你可能觉得你没见过啊。但是我首先第一，它表示动词喝，你肯定是认识的。第二，我们新一提过，我印象当中新二也提过十八课，叫做 have a drink。 Have a drink指的意思就是喝杯酒。那 a free drink 其实单独出现的时候就是免费喝了杯酒，对吧？
+
+### 画面 00:14:19
+
+![课件截图](frames/frame_000045.webp)
+
+文字识别：V / HO0A2 / When I suggested that some villagers must / have come in for a free drink, Mr. Thompson / shook his head.The villagers have told him / that they will not accept the pub even if he / gives it away.
+
+## 00:14:30–00:15:00
+
+Mr. Thompson shook his head,摇了摇头。啊，The villagers have told him that又告诉他了一件事儿，又是一个什么宾语从句？哎，已经告诉他了一件事儿，叫They will not accept the pub，他们将不会接受这个pub这个酒吧，Even if he gives it away，哪怕甚至即使he
+
+### 画面 00:14:38
+
+![课件截图](frames/frame_000046.webp)
+
+文字识别：V / HOOA2 / When I suggested that some villagers must / have come in for a free drink, Mr. Thompson / shook his head.The villagers have told him / that they will not accept the pub even if he / gives it away.
+
+### 画面 00:14:49
+
+![课件截图](frames/frame_000047.webp)
+
+文字识别：V / HO01A2 / When I suggested that some villagers must / have come in for a free drink, Mr. Thompson / shook his head.The villagers have told him / that they will not accept the pub even if he / gives it away.
+
+## 00:15:00–00:15:30
+
+gives it away, 甚至即使他把他送走啊，就是就是免费给你，他们也不会接受。而这里的 even if 就是将来我们会和 though, even though, although, even if 这四个单词是吧，或者四个词组或单词词组吧，我们会放到一起去统一给大家讲的。OK，玩一个，意思一样，尽管即使啊，尽管即使他免费送给他。OK，玩一个。接下来
+
+### 画面 00:15:08
+
+![课件截图](frames/frame_000048.webp)
+
+文字识别：V / HOQ1A2 / When I suggested that some villagers must / have come in for a free drink, Mr. Thompson / shook his head. The villagers have told him / that they will not accept the / )even if he / pub / gives it away.
+
+### 画面 00:15:23
+
+![课件截图](frames/frame_000049.webp)
+
+文字识别：V / HOQ1A2 / When I suggested that some villagers must / have come in for a free drink, Mr. Thompson / shook his head.The villagers have told him / that they will not accept the / even if he / pub / gives it away.
+
+### 画面 00:15:28
+
+![课件截图](frames/frame_000050.webp)
+
+文字识别：习惯用法造句 / be up for sale / hear sb./sth. doing sth.
+
+## 00:15:30–00:16:00
+
+习惯用法造句文章我们说完了啊，本课没有什么新的语法对吧？你就是习惯用法造造句就可以了，复习一下啊。刚才我说我都告诉你了，大多数呃关键的语法是在哪课出现的。如果你发现那句话的语法你熟悉啊淡忘了，你就翻到那一刻就好了，对不对？首先，be up for sale代售是吧？比如说，哎，正好我看到这句话，我再去查，我想去查一下be up for sale，想确定一下的时候，我正好看到了这样一句话，
+
+### 画面 00:15:30
+
+![课件截图](frames/frame_000051.webp)
+
+文字识别：习惯用法造句 / be up for sale / hear sb./sth. doing sth.
+
+### 画面 00:15:35
+
+![课件截图](frames/frame_000052.webp)
+
+文字识别：习惯用法造句 / be up for sale / hear sb./sth. doing sth.
+
+### 画面 00:15:37
+
+![课件截图](frames/frame_000053.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale
+
+### 画面 00:15:39
+
+![课件截图](frames/frame_000054.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale
+
+### 画面 00:15:41
+
+![课件截图](frames/frame_000055.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale
+
+### 画面 00:15:45
+
+![课件截图](frames/frame_000056.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale
+
+### 画面 00:15:50
+
+![课件截图](frames/frame_000057.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale
+
+### 画面 00:15:52
+
+![课件截图](frames/frame_000058.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale / If a property or company is up for sale , its / owner is trying to sell it. L16
+
+### 画面 00:15:54
+
+![课件截图](frames/frame_000059.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale / If a property or company is up for sale , its / owner is trying to sell it. L16
+
+### 画面 00:15:56
+
+![课件截图](frames/frame_000060.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale / If a property or company is up for sale ,its / owner is trying to sell it. L16
+
+## 00:16:00–00:16:30
+
+用到就是咱十六课的语法，叫做 If a property or company is up for sale，说如果一个哎 property 或者 company， property 就是财产， company 就是公司，一个财产或公司 is up for sale 的话， its owner is trying to sell it。说它的拥有者正在尝试着去卖掉它啊，就是这个事儿是代售的是吧？我要把它卖掉， up for sale，很常见，口语一句话叫 This is up for sale，
+
+### 画面 00:16:00
+
+![课件截图](frames/frame_000061.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale / If a property or company is up for sale ,its / 'owner is trying to sell it. L16
+
+### 画面 00:16:05
+
+![课件截图](frames/frame_000062.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale / If a property or company is up for sale ,its / 'owner is trying to sell it. L16
+
+### 画面 00:16:07
+
+![课件截图](frames/frame_000063.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale / If a property or company is up for sale , its / 'owner is trying to sell it. L16
+
+### 画面 00:16:10
+
+![课件截图](frames/frame_000064.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale / If a property or company is up for sale , its / 'owner is trying to sellit. L16
+
+### 画面 00:16:15
+
+![课件截图](frames/frame_000065.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale / If a property or company is up for sale , its / 'owner is trying to sellit. L16
+
+### 画面 00:16:18
+
+![课件截图](frames/frame_000066.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale / If a property or company is up for sale , its / 'owner is trying to sellit. L16
+
+### 画面 00:16:20
+
+![课件截图](frames/frame_000067.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale / If a property or company is up for sale , its / 'owner is trying to sellit. L16
+
+### 画面 00:16:22
+
+![课件截图](frames/frame_000068.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale / If a property or company is up for sale , its / 'owner is trying to sellit. L16
+
+### 画面 00:16:25
+
+![课件截图](frames/frame_000069.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale / If a property or company is up for sale , its / 'owner is trying to sellit. L16
+
+### 画面 00:16:27
+
+![课件截图](frames/frame_000070.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale / If a property or company is up for sale , its / 'owner is trying to sell it. L16 / Thls is up for sale.
+
+### 画面 00:16:29
+
+![课件截图](frames/frame_000071.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale / If a property or company is up for sale , its / 'owner is trying to sell it. L16 / This is up for sale.
+
+## 00:16:30–00:17:00
+
+说这个是代售的。那我想问这玩意儿卖吗？怎么怎么怎么问？是不是特别简单了，各位？这个怎么卖？这个卖不卖？Is this up for sale? 啊，是不是很简单？OK。呃，电影片段，电影片段直接出现了一句话叫 "They are up for sale if you want them." 如果你想要它们，这些代售啊，来了。 How long have you had these? About three, four seasons. They're up for sale if you want them. Let me see
+
+### 画面 00:16:31
+
+![课件截图](frames/frame_000072.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale / If a property or company is up for sale , its / 'owner is trying to sell it. L16 / This is up for sale.
+
+### 画面 00:16:35
+
+![课件截图](frames/frame_000073.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale / If a property or company is up for sale , its / 'owner is trying to sell it. L16 / This is up for sale.
+
+### 画面 00:16:40
+
+![课件截图](frames/frame_000074.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be up for sale / If a property or company is up for sale , its / 'owner is trying to sell it. 16 / This is up for sale. / Is this up for sale?
+
+### 画面 00:16:43
+
+![课件截图](frames/frame_000075.webp)
+
+文字识别：They're up for sale if you want / them. / 星球大战 / Star Wars / (1977)
+
+### 画面 00:16:46
+
+![课件截图](frames/frame_000076.webp)
+
+文字识别：They're up for sale if you want / them. / 星球大战 / Star Wars / (1977)
+
+### 画面 00:16:54
+
+![课件截图](frames/frame_000077.webp)
+
+文字识别：They're up for sale if you want / them. / 星球大战 / Star Wars / 你们拥有这两个机器人多久了 / (1977) / How long have you had these droids?
+
+### 画面 00:16:56
+
+![课件截图](frames/frame_000078.webp)
+
+文字识别：They're up for sale if you want / them. / 星球大战 / Star Wars / 你们拥有这两个机器人多久了 / (1977) / How long have you had these droids?
+
+### 画面 00:16:58
+
+![课件截图](frames/frame_000079.webp)
+
+文字识别：They're up for sale if you want / them. / 星球大战 / Star Wars / 如果你们需要可以卖给你们 / (1977) / They're up for sale if you want them.
+
+## 00:17:00–00:17:30
+
+your identification. You don't need to see his identification. We don't need to see his identification. These aren't the droids you're looking for. These aren't the droids we're looking for. You can go about your business. You can go about your business. Move along. Move along. Move along. Very good. 接下来就是刚才我们提到了，是吧？说叫 hear somebody or something doing
+
+### 画面 00:17:00
+
+![课件截图](frames/frame_000080.webp)
+
+文字识别：They're up for sale if you want / them. / 星球大战 / Star Wars / 让我看看你们的证件 / (1977) / Let me see your identification.
+
+### 画面 00:17:02
+
+![课件截图](frames/frame_000081.webp)
+
+文字识别：They're up for sale if you want / them. / 星球大战 / Star Wars / 你不需要看他的证件 / (1977) / You don't need to see his identification.
+
+### 画面 00:17:04
+
+![课件截图](frames/frame_000082.webp)
+
+文字识别：They're up for sale if you want / them. / 星球大战 / Star Wars / 你不需要看他的证件 / (1977) / You don't need to see his identification.
+
+### 画面 00:17:06
+
+![课件截图](frames/frame_000083.webp)
+
+文字识别：They're up for sale if you want / them. / 星球大战 / Star Wars / 我们不需要看他的证件 / (1977) / We don't need to see his identification.
+
+### 画面 00:17:08
+
+![课件截图](frames/frame_000084.webp)
+
+文字识别：They're up for sale if you want / them. / 星球大战 / Star Wars / 这些不是你要找的机器人 / (1977) / These aren't the droids you're looking for.
+
+### 画面 00:17:10
+
+![课件截图](frames/frame_000085.webp)
+
+文字识别：They're up for sale if you want / them. / 星球大战 / Star Wars / 这些不是我们要找的机器人 / (1977) / These aren't the droids we're looking for.
+
+### 画面 00:17:12
+
+![课件截图](frames/frame_000086.webp)
+
+文字识别：They're up for sale if you want / them. / 星球大战 / Star Wars / 这些不是我们要找的机器人 / (1977) / These aren't the droids we're looking for.
+
+### 画面 00:17:14
+
+![课件截图](frames/frame_000087.webp)
+
+文字识别：They're up for sale if you want / them. / 星球大战 / Star Wars / 他能去忙自己的事情了 / (1977) / He can go about his business.
+
+### 画面 00:17:16
+
+![课件截图](frames/frame_000088.webp)
+
+文字识别：They're up for sale if you want / them. / 星球大战 / Star Wars / 你去忙自己的事情吧 / (1977) / You can go about your business.
+
+### 画面 00:17:18
+
+![课件截图](frames/frame_000089.webp)
+
+文字识别：They're up for sale if you want / them. / 星球大战 / Star Wars / 开走 / (1977) / Move along.
+
+### 画面 00:17:20
+
+![课件截图](frames/frame_000090.webp)
+
+文字识别：They're up for sale if you want / them. / 星球大战 / Star Wars / 开走 / (1977) / Move along.
+
+### 画面 00:17:22
+
+![课件截图](frames/frame_000091.webp)
+
+文字识别：They're up for sale if you want / them. / 星球大战 / Star Wars / (1977)
+
+### 画面 00:17:24
+
+![课件截图](frames/frame_000092.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. L35 see
+
+### 画面 00:17:26
+
+![课件截图](frames/frame_000093.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. L35 see
+
+## 00:17:30–00:18:00
+
+something, 对吧？有两种理解方式，一种叫做你去理解什么叫宾语补足语，这个比较费劲。实话实说，你可以去听一下啊。很多老师其实是讲不太清楚什么叫宾语补足语或主语补足语的。好，他可能就是告诉你这是宾语补足语，所以要用ing，没了，是吧？然后第二种呢，就我我个人比较呃觉得比较推崇的，对于大家学习也比较呃，我个人认为啊，也可能比较舒服的，就是我们把高难语法习惯用法化，直接给它就是记这个公式就行了。叫 hear somebody
+
+### 画面 00:17:30
+
+![课件截图](frames/frame_000094.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. L35 see
+
+### 画面 00:17:35
+
+![课件截图](frames/frame_000095.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. L35 see
+
+### 画面 00:17:40
+
+![课件截图](frames/frame_000096.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. L35 see
+
+### 画面 00:17:43
+
+![课件截图](frames/frame_000097.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. L35 see
+
+### 画面 00:17:45
+
+![课件截图](frames/frame_000098.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. L35 see
+
+### 画面 00:17:49
+
+![课件截图](frames/frame_000099.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. L35 see
+
+### 画面 00:17:51
+
+![课件截图](frames/frame_000100.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. L35 see
+
+### 画面 00:17:55
+
+![课件截图](frames/frame_000101.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. L35 see
+
+### 画面 00:17:57
+
+![课件截图](frames/frame_000102.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth.doing sth. L35 see
+
+## 00:18:00–00:18:30
+
+or something doing something，叫听见某人某事儿正在做什么什么就可以了。就类似于我们三十五课学过那个 see，如果你还记得的话，是吧？比如说，我们先说 hear somebody something doing something，啊，其实跟 see 一样， see 原来如果是 see somebody doing something，就是看见某人正在做某事儿，不是一个全程的，就是表示知道他正在进行就可以了，对吧？比如说 I heard them talking，我听见他们正在说话了，但我没有从头听到尾，对吧？我就是听他正在说。再来，
+
+### 画面 00:18:00
+
+![课件截图](frames/frame_000103.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth.doing sth. L35 see
+
+### 画面 00:18:02
+
+![课件截图](frames/frame_000104.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth.doing sth. L35 see
+
+### 画面 00:18:05
+
+![课件截图](frames/frame_000105.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see
+
+### 画面 00:18:07
+
+![课件截图](frames/frame_000106.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see
+
+### 画面 00:18:10
+
+![课件截图](frames/frame_000107.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行)
+
+### 画面 00:18:15
+
+![课件截图](frames/frame_000108.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行)
+
+### 画面 00:18:18
+
+![课件截图](frames/frame_000109.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行)
+
+### 画面 00:18:20
+
+![课件截图](frames/frame_000110.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth. doing sth.(非全程，进行)
+
+### 画面 00:18:23
+
+![课件截图](frames/frame_000111.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth.doing sth. L35 see / hear sb./sth.doing sth(非全程，进行) / ) I heard them talking. / 1
+
+### 画面 00:18:25
+
+![课件截图](frames/frame_000112.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth. doing sth.(非全程，进行) / I heard them talking. / ①
+
+### 画面 00:18:29
+
+![课件截图](frames/frame_000113.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / ① / I could hear it raining.
+
+## 00:18:30–00:19:00
+
+I could hear it raining。我能听见外面正在下雨。对吧？我没有说从头开始听到尾啊。再来说，Can you hear a baby crying？你不是从头听到尾，你就是听到一阵一阵的正在哭的声音，叫做 see somebody or something doing something。另外一种呢，跟 see 是一样的，叫做 hear somebody or something do something。这就是全程了啊。哎，这个地方还是有两种理解方式啊。我还是给各位分享
+
+### 画面 00:18:31
+
+![课件截图](frames/frame_000114.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / ① / I could hear it raining.
+
+### 画面 00:18:35
+
+![课件截图](frames/frame_000115.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth(非全程，进行) / ① I / I heard them talking. / I could hear it raining.
+
+### 画面 00:18:38
+
+![课件截图](frames/frame_000116.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth(非全程，进行) / I heard them talking. / ① / I could hear it raining. / Can you hear a baby crying?
+
+### 画面 00:18:40
+
+![课件截图](frames/frame_000117.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / 1 / I could hear it raining. / Can you hear a baby crying?
+
+### 画面 00:18:45
+
+![课件截图](frames/frame_000118.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / ① / I could hear it raining. / Can you hear a baby crying?
+
+### 画面 00:18:48
+
+![课件截图](frames/frame_000119.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / ① / I could hear it raining. / Can you hear a baby crying? / 3 / hear sb./sth. do sth.(全程)
+
+### 画面 00:18:50
+
+![课件截图](frames/frame_000120.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / ① / I could hear it raining. / 2 / Can you hear a baby crying? / 3 / hear sb./sth.do sth.(全程)
+
+### 画面 00:18:55
+
+![课件截图](frames/frame_000121.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / ① / I could hear it raining. / 3 / Can you hear a baby crying? / hear sb./sth.do sth.(全程)
+
+### 画面 00:18:59
+
+![课件截图](frames/frame_000122.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / ① / I could hear it raining. / Can you hear a baby crying? / 3 / hear sb./sth.do sth.(全程)
+
+## 00:19:00–00:19:30
+
+一下，呃，第一个，我们国内的很多语法在这个地方会给它理解为叫做去掉to的不定式，不定式叫to do嘛，对吧？我们认为这个地方加的不是动词原形，是叫去掉to了的不定式啊，就就是，但是形式其实上就是一个do动词原形放在这儿啊，它只对于变成被动的时候可能会有影响，但是在主动上是没有区别的。所以呢，我们在这儿呢，就是两个都告诉你，因
+
+### 画面 00:19:01
+
+![课件截图](frames/frame_000123.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / I could hear it raining. / 3 / Can you hear a baby crying? / hear sb./sth.do sth.(全程)
+
+### 画面 00:19:05
+
+![课件截图](frames/frame_000124.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / ① / I could hear it raining. / Can you hear a baby crying? / 3 / hear sb./sth.do sth.(全程)
+
+### 画面 00:19:09
+
+![课件截图](frames/frame_000125.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / 1 / I could hear it raining. / Can you hear a baby crying? / 3 / hear sb./sth.do sth.(全程)
+
+### 画面 00:19:11
+
+![课件截图](frames/frame_000126.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / ch / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth(非全程，进行) / I heard them talking. / 1 / I could hear it raining. / Can you hear a baby crying? / hear sb./sth.do sth.(全程)
+
+### 画面 00:19:14
+
+![课件截图](frames/frame_000127.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / ch / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth(非全程，进行) / I heard them talking. / I could hear it raining. / Can you hear a baby crying? / hear sb./sth.do sth.(全程)
+
+### 画面 00:19:16
+
+![课件截图](frames/frame_000128.webp)
+
+文字识别：b / 网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / 1 / I could hear it raining. / Can you hear a baby crying? / 3 / hear sb./sth.do sth.(全程)
+
+### 画面 00:19:20
+
+![课件截图](frames/frame_000129.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / 1 / I could hear it raining. / Can you hear a baby crying? / 3 / hear sb./sth.do sth.(全程)
+
+### 画面 00:19:25
+
+![课件截图](frames/frame_000130.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / ch / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / 1 / I could hear it raining. / Can you hear a baby crying? / 3 / hear sb./sth.do sth.(全程)
+
+## 00:19:30–00:20:00
+
+为总有学员问，是吧？有的学员会问说，哎，不对呀，你讲的它是原型，我知道它是去掉 to 的不定式，我没有必要想那样讲，我就是告诉你这个地方加动词原形就可以了啊。而且对于你来说，知道它是去掉 to 的不定式，可能你就跟懵了，为什么这里的不定式可以去掉，对吧？OK，这是第一个。第二个呢，就是很简单，很粗暴，就跟我们当年学 C 是一样的。对于你来说，学起来也很容易，就是 see somebody do something，你知道那个地方要动词原形就可以了
+
+### 画面 00:19:30
+
+![课件截图](frames/frame_000131.webp)
+
+文字识别：习惯用法造句指南 / 网：v.+v.变化 / ch / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / I could hear it raining. / Can you hear a baby crying? / 3 / hear sb./sth.do sth.(全程)
+
+### 画面 00:19:32
+
+![课件截图](frames/frame_000132.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / ch / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / I could hear it raining. / Can you hear a baby crying? / hear sb./sth.do sth.(全程)
+
+### 画面 00:19:35
+
+![课件截图](frames/frame_000133.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / ch / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / 1 / I could hear it raining. / Can you hear a baby crying? / hear sb./sth.do sth.(全程)
+
+### 画面 00:19:40
+
+![课件截图](frames/frame_000134.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / 1 / I could hear it raining. / Can you hear a baby crying? / 3 / hear sb./sthdosth.(全程)
+
+### 画面 00:19:43
+
+![课件截图](frames/frame_000135.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / ch / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / 1 / I could hear it raining. / Can you hear a baby crying? / 3 / hear sb./sthdosth.(全程)
+
+### 画面 00:19:45
+
+![课件截图](frames/frame_000136.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / ch / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / ① / I could hear it raining. / Can you hear a baby crying? / 3 / hear sb./sthdosth.(全程)
+
+### 画面 00:19:50
+
+![课件截图](frames/frame_000137.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / clo / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / ① / I could hear it raining. / Can you hear a baby crying? / 3 / hear sb./sthdosth.(全程)
+
+### 画面 00:19:53
+
+![课件截图](frames/frame_000138.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / co / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / I could hear it raining. / Can yoy hear a baby crying? / 3 / hear sb./sthdosth.(全程)
+
+### 画面 00:19:55
+
+![课件截图](frames/frame_000139.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / co / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / 1 / I could hear it raining. / Can you hear a baby crying? / 3 / hear sb./sthdosth.(全程)
+
+### 画面 00:19:59
+
+![课件截图](frames/frame_000140.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / co / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / 1 / I could hear it raining. / Can youhear a baby crying? / 3 / hear sb./sthdosth.(全程)
+
+## 00:20:00–00:20:30
+
+啊。然后表示的就是一个全程，比如说 I heard them go out. 我听到了他们出去啊，从他们收拾开始，一直到最后关上门，这整个过程我都听到了，叫全程，对吧？它的用法跟 see 一模一样啊。我希望我今天给各位讲清楚了啊。好，那接下来我们看一个电影片段呗，对吧？呃，这个电影片段当中就出现了刚才我说的呃这呃这这个小的这个
+
+### 画面 00:20:01
+
+![课件截图](frames/frame_000141.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / cbo / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / 1 / I could hear it raining. / Can youhear a baby crying? / 3 / hear sb./sthdosth.(全程)
+
+### 画面 00:20:03
+
+![课件截图](frames/frame_000142.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / ch / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / ① / I could hear it raining. / Can yoy hear a baby crying? / 3 / hear sb./sthdosth.(全程) / ① I heardthem go out.
+
+### 画面 00:20:05
+
+![课件截图](frames/frame_000143.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / co / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / ① / I could hear it raining. / Can you hear a baby crying? / 3 / hear sb./sthdosth.(全程) / ① I heardthem go out.
+
+### 画面 00:20:09
+
+![课件截图](frames/frame_000144.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / cho / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / ① / I could hear it raining. / Can yoy hear a baby crying? / 3 / hear sb./sthdosth.(全程) / ① I heardthem go out.
+
+### 画面 00:20:13
+
+![课件截图](frames/frame_000145.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / clo / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / ① / I could hear it raining. / Can you hear a baby crying? / 3 / hear sb./sthdosth.(全程) / ① I heardthem go out.
+
+### 画面 00:20:15
+
+![课件截图](frames/frame_000146.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / co / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / hear sb./sth. doing sth. / L35 see / hear sb./sth.doing sth.(非全程，进行) / I heard them talking. / ① / I could hear it raining. / Can you hear a baby crying? / 3 / hear sb./sthdosth.(全程) / ① I heardthem go out.
+
+### 画面 00:20:19
+
+![课件截图](frames/frame_000147.webp)
+
+文字识别：I can hear you breathing. / 肖申克的救赎 / The Shawshank / Redemption / (1994)
+
+## 00:20:30–00:21:00
+
+短语叫 hear somebody doing something。那我们注意力集中来了啊。 Fat ass. Dream. You gonna dream about me? Fat ass. Talk to me, boy. Know you there? I can hear you breathing. Know you listen to these nitwits? You hear me? This place ain't so bad. 好，那咱们看完这个视频了之后呢，哎， recap，对吧？除了文章以外，两个习惯用法
+
+### 画面 00:20:36
+
+![课件截图](frames/frame_000148.webp)
+
+文字识别：I can hear you breathing. / 肖申克的救赎 / 嗨大屁股 / The Shawshank / Hey,Fat Ass. / Redemption / (1994)
+
+### 画面 00:20:39
+
+![课件截图](frames/frame_000149.webp)
+
+文字识别：I can hear you breathing. / 肖申克的救赎 / 大屁股 / The Shawshank / Fat Ass. / Redemption / (1994)
+
+### 画面 00:20:44
+
+![课件截图](frames/frame_000150.webp)
+
+文字识别：I can hear you breathing. / 肖申克的救赎 / 我知道你在哪儿 我都听见你喘气儿了 / The Shawshank / I know you're there. I can hear you breathing. / Redemption / (1994)
+
+### 画面 00:20:49
+
+![课件截图](frames/frame_000151.webp)
+
+文字识别：I can hear you breathing. / 肖申克的救赎 / 别听那些白痴瞎掰你听到没有？ / The Shawshank / Don't you listen to these nitwits. You hear me? / Redemption / (1994)
+
+### 画面 00:20:52
+
+![课件截图](frames/frame_000152.webp)
+
+文字识别：I can hear you breathing. / 肖申克的救赎 / The Shawshank / Redemption / (1994)
+
+### 画面 00:20:54
+
+![课件截图](frames/frame_000153.webp)
+
+文字识别：Recap / be up for sale / Expression / hear sb./sth. doing sth.
+
+### 画面 00:20:57
+
+![课件截图](frames/frame_000154.webp)
+
+文字识别：Recap / be up for sale / Expression / hear sb./sth. doing sth.
+
+### 画面 00:20:59
+
+![课件截图](frames/frame_000155.webp)
+
+文字识别：Recap / be up for sale / Expression / hear sb./sth. doing sth.
+
+## 00:21:00–00:21:30
+
+非常重要。第一个叫 be up for sale，第二个叫 hear somebody doing something。 OK，交作业，习惯用法造句，这是您必须要做的。文章跟读至熟读成诵，对我们帮助非常的大，好吧？那以上就是本期视频的全部内容了。如果各位喜欢我们的课程呢，欢迎各位一键三连啊，长按点赞，强烈推荐。 OK， see you next time.
+
+### 画面 00:21:02
+
+![课件截图](frames/frame_000156.webp)
+
+文字识别：Recap / be up for sale / Expression / hear sb./sth. doing sth.
+
+### 画面 00:21:05
+
+![课件截图](frames/frame_000157.webp)
+
+### 画面 00:21:07
+
+![课件截图](frames/frame_000158.webp)
+
+文字识别：1. / 习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句
+
+### 画面 00:21:09
+
+![课件截图](frames/frame_000159.webp)
+
+文字识别：1. / 习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句 / 文章跟读至熟读成诵 / 内化单词+语法+习惯用法 / 听力+口语+写作练习
+
+### 画面 00:21:14
+
+![课件截图](frames/frame_000160.webp)
+
+### 画面 00:21:26
+
+![课件截图](frames/frame_000161.webp)
+
+文字识别：CAPSULEACADEMY / 胶囊助学计划 / 小红书 / 品
+
+### 画面 00:21:28
+
+![课件截图](frames/frame_000162.webp)
+
+文字识别：CAPSULEACADEMY / 胶囊助学计划 / 小红书 / OE
+
+## 00:21:30–00:21:38
+
+
+
+### 画面 00:21:31
+
+![课件截图](frames/frame_000163.webp)
+
+文字识别：CAPSULEACADEMY / 胶囊助学计划 / 小红书 / Editor / □ / Berlin / OE
+
+### 画面 00:21:34
+
+![课件截图](frames/frame_000164.webp)
+
+文字识别：CAPSULEACADEMY / 胶囊助学计划 / 『 / 小红书 / 品 / Leo & Berlin / ato
+
+### 画面 00:21:36
+
+![课件截图](frames/frame_000165.webp)
+
+文字识别：bilibili / 胶囊助学计划
+
+### 画面 00:21:37
+
+![课件截图](frames/frame_000166.webp)
+
+文字识别：bilibili / 胶囊助学计划
+
