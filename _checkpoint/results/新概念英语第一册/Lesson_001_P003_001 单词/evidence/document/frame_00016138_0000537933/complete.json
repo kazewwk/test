@@ -1,0 +1,74 @@
+{
+  "artifacts": {
+    "1793147054_7352.md": "a3f4cb82f23ac6051fade1c556eb67620aaf745800b88f47a36db1e99de357c6",
+    "1793147054_7352_res.json": "89038f1842035df3be0b225d98442a2c82d799ed2c8e04e2718349973928ec27",
+    "imgs/img_in_header_image_box_1651_29_1891_102.jpg": "fb61c1817eb6493b6151fbbdec385c12b9c919563eeddbcf20d14c1489332b61",
+    "region_repairs.md": "72722163b41fd89c72bcd6f370fea10f7ef2bc21f677a7cec826698d59de6dcd",
+    "repairs/region_005/1793147054_7575.md": "ecab89fd68b2879583a9dc295d6cb6012066a7b87c6c5479e9a0bfe0d17e7a44",
+    "repairs/region_005/1793147054_7575_res.json": "fabbcbc9d0fd280e19ef6a6c6279e621b0b72b6d935a7baee1dbf1b9fd964ba7",
+    "repairs/region_005/source.png": "f239f09ab195b2897e094390cd26460ac9d2ded98abc4fb6c19f13186b1cfb1d"
+  },
+  "input_fingerprint": "bc712d2c25aa17b618e10173b387ad57aab54a9b96db404fcec206cc8df437f7",
+  "image_sha256": "63f8ae19adcda8ed62f8191a628a4a08a8e01be466993d239197c5b58cb57818",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 1.1189230460004183,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1651,
+        29,
+        1891,
+        102
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1651.0,
+          29.0
+        ],
+        [
+          1891.0,
+          29.0
+        ],
+        [
+          1891.0,
+          102.0
+        ],
+        [
+          1651.0,
+          102.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "旺旺",
+      "block_bbox": [
+        1342,
+        850,
+        1836,
+        1030
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1342,
+        850,
+        1836,
+        1030
+      ],
+      "ppocr_candidate": "珍",
+      "recovered_text": "旺旺",
+      "source_crop": "repairs/region_005/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

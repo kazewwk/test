@@ -1,0 +1,169 @@
+{
+  "artifacts": {
+    "1793147134_6606.md": "d225f66f24b790416372b4d72c5fa88b5ef0255c84da7f6e8ba0b380263c0471",
+    "1793147134_6606_res.json": "be77fa605d3a7b423486eb0b4afda21fa0b08c708eb23d9b9b604837e6640aad",
+    "imgs/img_in_header_image_box_1649_30_1891_102.jpg": "9bbc3458eedee602057bdf66c5a63c37878dc51f93405def9870e3b1853288e5",
+    "imgs/img_in_image_box_1182_304_1757_1078.jpg": "ba74aa5089c115dd31951187aa69aa21bc85b78664bd406d0b1263ddb46a460f",
+    "imgs/img_in_image_box_72_69_476_472.jpg": "4793f79e2f8e596630d819d008aebf5f4417eaa693eefbd69f04045818ff8b31",
+    "region_repairs.md": "03059ef1c614848c5dff38138fbb014d374d16a0d9e98cf0ca3ca5de499cda4b",
+    "repairs/region_002/1793147134_5611.md": "2b86755e268bf6c9cdfedda838d0b2a537c9a458540b391f753bc5fcd189186b",
+    "repairs/region_002/1793147134_5611_res.json": "f9c172d99a69bf33517e2a8ee1a2245ff53732f2005f99a3ff32f73c0953a3e9",
+    "repairs/region_002/source.png": "a467c8d1afc5024edbbe728462fc183dcc99ffe168e321cde557da6d1d797cb5"
+  },
+  "input_fingerprint": "127ea74239d74f1d239622bcc52534267df8588e235cfbf693c2c2d67d412927",
+  "image_sha256": "b06a8888608628383ec5eb0245025919665c3c632967e31f09aa6b8c337e15d8",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 2.2923445570013428,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1649,
+        30,
+        1891,
+        102
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1649.0,
+          30.0
+        ],
+        [
+          1891.0,
+          30.0
+        ],
+        [
+          1891.0,
+          102.0
+        ],
+        [
+          1649.0,
+          102.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "Ply",
+      "block_bbox": [
+        72,
+        69,
+        476,
+        472
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          72.0,
+          69.0
+        ],
+        [
+          476.0,
+          69.0
+        ],
+        [
+          476.0,
+          472.0
+        ],
+        [
+          72.0,
+          472.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "/ 'pa:dn/\npardon",
+      "block_bbox": [
+        520,
+        73,
+        779,
+        213
+      ],
+      "block_id": 2,
+      "block_order": 1,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          520.0,
+          73.0
+        ],
+        [
+          779.0,
+          73.0
+        ],
+        [
+          779.0,
+          213.0
+        ],
+        [
+          520.0,
+          213.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1182,
+        304,
+        1757,
+        1078
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1182.0,
+          304.0
+        ],
+        [
+          1757.0,
+          304.0
+        ],
+        [
+          1757.0,
+          1078.0
+        ],
+        [
+          1182.0,
+          1078.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "/ 'pɑːdn/",
+      "block_bbox": [
+        521,
+        63,
+        779,
+        128
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        521,
+        63,
+        779,
+        128
+      ],
+      "ppocr_candidate": "/p α:dn/",
+      "recovered_text": "/ 'pɑːdn/",
+      "source_crop": "repairs/region_002/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

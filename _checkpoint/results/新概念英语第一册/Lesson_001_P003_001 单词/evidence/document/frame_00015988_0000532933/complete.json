@@ -1,0 +1,73 @@
+{
+  "artifacts": {
+    "1793147042_3547.md": "1c1e1fe6cb66c4090e4c848b10c3083593bdd7d0944167f052136ff51fcacc37",
+    "1793147042_3547_res.json": "a3915eca9405617f038a1332d42adf2f993128654fba5bc01d2584cc82c281d5",
+    "region_repairs.md": "34bd1af2d90c85ea30d925df5b226c201e28de94f6d72451d1d85d7aa2ee8212",
+    "repairs/region_002/1793147043_2377.md": "8f9c0c3ff5c50a03058a2ec2a7c6ea05ddfcd01a737fea6d5c844c1649a94e05",
+    "repairs/region_002/1793147043_2377_res.json": "302a0eceb3e6a05302fd059564d384f9b19968818c2ec39272658f96c51fe59a",
+    "repairs/region_002/source.png": "0093e9a1c259ad3b569600505cf9125b603c157bfe9526864c2531d824232fac"
+  },
+  "input_fingerprint": "7a42afd7ff852ea2a7c0a26d32d43250c3acc4128c05687d4a7249e27eab3499",
+  "image_sha256": "08e8563499f27d52eeb994043cd7a49dbd00e0e8ce1b362269f20dc7121969c2",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 1.1122927510004956,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1651,
+        26,
+        1895,
+        104
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1651.0,
+          26.0
+        ],
+        [
+          1895.0,
+          26.0
+        ],
+        [
+          1895.0,
+          104.0
+        ],
+        [
+          1651.0,
+          104.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "JAMBES",
+      "block_bbox": [
+        1318,
+        297,
+        1502,
+        433
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1318,
+        297,
+        1502,
+        433
+      ],
+      "ppocr_candidate": "JAMR",
+      "recovered_text": "JAMBES",
+      "source_crop": "repairs/region_002/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

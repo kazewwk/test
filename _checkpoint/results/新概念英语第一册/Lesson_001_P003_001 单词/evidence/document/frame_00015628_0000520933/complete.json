@@ -1,0 +1,98 @@
+{
+  "artifacts": {
+    "1793147030_7799.md": "1c1e1fe6cb66c4090e4c848b10c3083593bdd7d0944167f052136ff51fcacc37",
+    "1793147030_7799_res.json": "15ccd011afdeb9a1f794c424e2ef4823b06bcc05cbe84d44b124d6e1c7fa12e2",
+    "region_repairs.md": "9445aff59ea7fe9a60f33f31ca7f623cbfe72b386fcedc5022bae8a000d29f95",
+    "repairs/region_000/1793147031_8646.md": "5acb7efa8ac5b65dad2fe9e8132b5f6d04d059b38fef010b1630a238a1fa8fb0",
+    "repairs/region_000/1793147031_8646_res.json": "3cf4948291e2e021969f31fc944809fbf9322b17d87ef8a474a1dc263e7d1c60",
+    "repairs/region_000/source.png": "e37aa8c2ae00478cab0a061095d78bda51b76c9fa78cf24f9bffc88320fdc504",
+    "repairs/region_005/1793147031_6280.md": "a298be235cfb2c2bab1a0ca23ec1e07946c257e1f106162280aa01a3abb99cd4",
+    "repairs/region_005/1793147031_6280_res.json": "e8f60438bd642dc918ee0fd59e16bc895898fbb4889cfc126b5203f697887e80",
+    "repairs/region_005/source.png": "022447cb813a6422841532b556b68fff0c9ab7c8937ad49e92bdb834b72a0012"
+  },
+  "input_fingerprint": "3180c2da2ef82c4c07b9ecf9b170d7b69360d5a639c6e29b913696e96c3c8aa1",
+  "image_sha256": "056f91881165d4125e837356e963a948e13affa0588175384cada42d16de4e51",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 1.617247745001805,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1651,
+        26,
+        1892,
+        103
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1651.0,
+          26.0
+        ],
+        [
+          1892.0,
+          26.0
+        ],
+        [
+          1892.0,
+          103.0
+        ],
+        [
+          1651.0,
+          103.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "bilibili",
+      "block_bbox": [
+        1730,
+        22,
+        1901,
+        112
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "AMHO",
+      "block_bbox": [
+        837,
+        806,
+        1178,
+        997
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1730,
+        22,
+        1901,
+        112
+      ],
+      "ppocr_candidate": "billibili",
+      "recovered_text": "bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        837,
+        806,
+        1178,
+        997
+      ],
+      "ppocr_candidate": "AMBO",
+      "recovered_text": "AMHO",
+      "source_crop": "repairs/region_005/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}

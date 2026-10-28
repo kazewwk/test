@@ -1,0 +1,104 @@
+{
+  "artifacts": {
+    "1793147041_3575.md": "fcbfe8e65b18b7e93eb3c3be1350c733d42d648132ddfffa9e14461ab89895d0",
+    "1793147041_3575_res.json": "e25197aea6e8de9adeb7f41114d2875b7860b3643c493d77d50ab33a0f736d8a",
+    "region_repairs.md": "ab41f021233638718d1aceb4006428097128338a381fa6eda877a55d55ddc791",
+    "repairs/region_002/1793147042_4541.md": "17c34d1503d6e308b7dfa6d7434d88c1fbef9e4aa81613ce960fbe7871cbf672",
+    "repairs/region_002/1793147042_4541_res.json": "86fa0fa6fe23410f6c3a36d8760e7314313d2ac86090ccc4e3008325fda131b1",
+    "repairs/region_002/source.png": "11efe29e2f4c3504efeb1b730082d1316e3c116b352a9e9b27b1885417c11edc"
+  },
+  "input_fingerprint": "16353718dae9c2aba00ba2fce1b6aec933cc8b32bcbf3e1deed4cab9420beee3",
+  "image_sha256": "ee52f8e28ecc7d49a0897c566cc15f1f58d2127ef1531bf13b28da283a837892",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 1.5791369569997187,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1652,
+        27,
+        1891,
+        104
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1652.0,
+          27.0
+        ],
+        [
+          1891.0,
+          27.0
+        ],
+        [
+          1891.0,
+          104.0
+        ],
+        [
+          1652.0,
+          104.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "不人不不不\nNo, no, no, no, no, no, no!",
+      "block_bbox": [
+        555,
+        869,
+        1356,
+        1029
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          555.0,
+          869.0
+        ],
+        [
+          1356.0,
+          869.0
+        ],
+        [
+          1356.0,
+          1029.0
+        ],
+        [
+          555.0,
+          1029.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "不无不不",
+      "block_bbox": [
+        733,
+        855,
+        1187,
+        953
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        733,
+        855,
+        1187,
+        953
+      ],
+      "ppocr_candidate": "不不不不不",
+      "recovered_text": "不无不不",
+      "source_crop": "repairs/region_002/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}
