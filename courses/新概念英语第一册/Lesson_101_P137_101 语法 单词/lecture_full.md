@@ -1,0 +1,1050 @@
+# 101 语法 单词
+
+快速机器解析：语音为单模型转写，未进行独立交叉校对或人工复核；画面每秒采样并按变化选帧，短时文字和标记可能遗漏。截图时间约有 1 秒误差。图片有损压缩；遇到疑点请按时间查看 Google Drive 原视频。
+
+## 00:00:00–00:00:30
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn new concept English book one lesson one hundred and one grammar and words. 那老习惯进入正式课程之前呢，我们先看几个问题。那首先，直接引语和间接引语，这个到底是什么东西啊？那再然后呢，如何表达写信给某人？带着这两个问题，Hope you gonna enjoy it. 好，
+
+### 画面 00:00:00
+
+![课件截图](frames/frame_000000.webp)
+
+文字识别：胶囊助学计划 / NCE / BOOKI / Lesson 101 / Grammar+Words
+
+### 画面 00:00:02
+
+![课件截图](frames/frame_000001.webp)
+
+文字识别：胶囊助学计划 / NCE / BOOKI / Lesson 101 / Grammar+Words
+
+### 画面 00:00:05
+
+![课件截图](frames/frame_000002.webp)
+
+文字识别：biibili / 胶囊助学计划 / NCE / BOOKI / Lesson 101 / Grammar+Words
+
+### 画面 00:00:11
+
+![课件截图](frames/frame_000003.webp)
+
+文字识别：胶囊助学计划blb出
+
+### 画面 00:00:14
+
+![课件截图](frames/frame_000004.webp)
+
+文字识别：胶囊助学计划bilb出 / 直接引|语与间接引|语?
+
+### 画面 00:00:20
+
+![课件截图](frames/frame_000005.webp)
+
+文字识别：biibili / 胶囊助学计划 / 直接引语与间接引语？ / D / 如何表达“写信给某人”?
+
+### 画面 00:00:26
+
+![课件截图](frames/frame_000006.webp)
+
+文字识别：胶囊助学计划bill / •
+
+## 00:00:30–00:01:00
+
+好，那我们先说直接引语和间接引语啊。其实我没有记错的话，这是我们小学语文学的东西啊，就是年代太久远，各位可能忘了，但我一提您一定能想起来。直接引语就是把别人说的话加上引号直接拿过来，而间接引语呢，就是把别人说的引号这个话调整一下人称，然后呢再给别人说一遍啊。这个两个唯一的区别，跟英语呢差
+
+### 画面 00:00:30
+
+![课件截图](frames/frame_000007.webp)
+
+### 画面 00:00:32
+
+![课件截图](frames/frame_000008.webp)
+
+文字识别：胶囊助学计划 / 直接引语- 间接引语
+
+### 画面 00:00:42
+
+![课件截图](frames/frame_000009.webp)
+
+文字识别：胶囊助学计划 / 直接引语- 间接引语
+
+## 00:01:00–00:01:30
+
+别其实不太大，比如说 The doctor says I will come at once。啊，医生说的原话是我立刻就来，这叫引号里边了，我们管它叫直接引语。那如果你想给别人转述一下，对吧？你说 I will come at once 就很怪了，对吧？医生说我很快就来，那应该说医生说的是他很快就来，对不对？哎，稍微换了一下人称，叫做 The doctor says that he will come at once。看到了哈，很简单，各位
+
+### 画面 00:01:00
+
+![课件截图](frames/frame_000010.webp)
+
+文字识别：胶囊助学计划bilb出 / 直接引语- 间接引语 / The doctor says, "I will come at once."
+
+### 画面 00:01:11
+
+![课件截图](frames/frame_000011.webp)
+
+文字识别：胶囊助学计划bib出 / 直接引语- 间接引语 / The doctor says, "I will come at once." / The doctor says that he will come at once.
+
+### 画面 00:01:15
+
+![课件截图](frames/frame_000012.webp)
+
+文字识别：胶囊助学计划 / 直接引语-间接引语 / The doctor says, "I will come at once." / The doctor says that he will come at once.
+
+### 画面 00:01:18
+
+![课件截图](frames/frame_000013.webp)
+
+文字识别：胶囊助学计划b出b出 / 直接引语-间接引语 / The doctor says, "I will come at once." / The doctor says that he will come at once.
+
+### 画面 00:01:23
+
+![课件截图](frames/frame_000014.webp)
+
+文字识别：胶囊助学计划 / 直接引语- 间接引语 / The doctor says, "I will come at once." / The doctor says that he will come at once.
+
+### 画面 00:01:28
+
+![课件截图](frames/frame_000015.webp)
+
+文字识别：胶囊助学计划bil出 / 直接引语-间接引语 / The doctor says, "I will come at once." / The doctor says that he will come at once.
+
+## 00:01:30–00:02:00
+
+记住这个就行了。这个语法对于各位来说，其实就是小学语文的这种级别的水平。OK，好，然后但是我们要注意几个点啊。我们再回顾一下，首先你引号肯定要去掉，对吧？你从直接的引用别人的话变成间接引用的时候，你引号要去掉。其次呢，你人称你要转化一下。他原话说的是“我立刻就来”，你给别人转述的时候说的叫“他立刻就来”，对吧？最后呢，你要添加一个小的引导词 that。
+
+### 画面 00:01:31
+
+![课件截图](frames/frame_000016.webp)
+
+文字识别：胶囊助学计划 / 直接引语-间接引语 / The doctor says, "I will come at once." / The doctor says that he will come at once.
+
+### 画面 00:01:40
+
+![课件截图](frames/frame_000017.webp)
+
+文字识别：Bilbil / 胶囊助学计划 / 直接引语- 间接引语 / The doctor says, "I will come at once." / The doctor says that he will come at once. / 1．引号去掉
+
+## 00:02:00–00:02:30
+
+当然了，鉴于您还学过宾语从句，您想一想这个 that 还可以怎么样来着？九十九课我们刚刚教过，对吧？OK，接下来呢，我们就利用这三点，尝试做一点小的变化。很简单啊，比如说 he says I can do it，来你看，直接引号当中直接引语，你把它变成间接引语，你首先你把引号先去掉，对吧？再然后你转化一下人称，他说的肯定
+
+### 画面 00:02:01
+
+![课件截图](frames/frame_000018.webp)
+
+文字识别：胶囊助学计划 / 直接引语- 间接引语 / The doctor says,"I will come at once." / The doctor says that he will come at once. / 1．引号去掉 / 2．转换人称 / 3．添加引导词that
+
+### 画面 00:02:10
+
+![课件截图](frames/frame_000019.webp)
+
+文字识别：胶囊助学计划 / 直接引语- 间接引语 / 1．引号去掉 / 2．转换人称 / 3．添加引导词that / 2
+
+### 画面 00:02:15
+
+![课件截图](frames/frame_000020.webp)
+
+文字识别：Jbibili / 胶囊助学计划 / 直接引语- 间接引语 / 1．引号去掉 / 2．转换人称 / 3．添加引导词that
+
+### 画面 00:02:18
+
+![课件截图](frames/frame_000021.webp)
+
+文字识别：胶囊助学计划 / 直接引语- 间接引语 / 1．引号去掉 / 2.转换人称 / 3．添加引导词that / He says "I can do it ."
+
+### 画面 00:02:28
+
+![课件截图](frames/frame_000022.webp)
+
+文字识别：biibili / 胶囊助学计划 / 直接引语- 间接引语 / 1．引号去掉 / 2.车 / 转换人称 / 3．添加引导词that / He says "I can do it.
+
+## 00:02:30–00:03:00
+
+不是我，他说的是他，对吧？他能做这件事情，然后您再加一个 that，然后这个 that 还是可以被怎么样的省略掉的，对吧？ He says he can do it。他说他能这么去做，他能去做这件事情，非常简单，对不对？我们再来一个，比如说 I have just arrived in Scotland， says Leo。啊，Leo 说，我刚刚到达苏格兰，引号去掉，人称转化。Leo
+
+### 画面 00:02:39
+
+![课件截图](frames/frame_000023.webp)
+
+文字识别：biibili / 胶囊助学计划 / 直接引语- 间接引语 / 1．引号去掉 / 2.转换人称 / 3．添加引导词that / He says "Lcan do it ." / He says thathe can do it .
+
+### 画面 00:02:44
+
+![课件截图](frames/frame_000024.webp)
+
+文字识别：胶囊助学计划 / 直接引语- 间接引语 / 1．引号去掉 / 2.转换人称 / 3．添加引|导词that / He says "L can do it ." / He says thathe can do it .
+
+### 画面 00:02:49
+
+![课件截图](frames/frame_000025.webp)
+
+文字识别：biltbili / 胶囊助学计划 / 直接引语- 间接引语 / 1.引号去掉 / 2.转换人称 / 3．添加引导词that / "I have just arrived in Scotland."' says Leo.
+
+## 00:03:00–00:03:30
+
+说那就是他刚刚到达。你看啊，这比我们汉语稍微麻烦一点的，就是当你把I换成He的时候，Have后面的这个单词你要记住，还要把它换成第三人称单数对应的，叫做Has，对吧？所以这句话就变成Leo says that that还可以被省略掉。He has just arrived in Scotland. Very good. 再来一个，He says I feel tired. 他说我感到很累。引号
+
+### 画面 00:03:00
+
+![课件截图](frames/frame_000026.webp)
+
+文字识别：胶囊助学计划 / 直接引语- 间接引语 / 1．引号去掉 / 2．转换人称 / 3．添加引导词that / "I have just arrived in Scotland."' says Leo.
+
+### 画面 00:03:06
+
+![课件截图](frames/frame_000027.webp)
+
+文字识别：Bilbl / 胶囊助学计划 / 直接引语- 间接引语 / 1．引号去掉 / 2.转换人称 / 3.添加引导词that / "I have just arrived in Scotland." says Leo.
+
+### 画面 00:03:10
+
+![课件截图](frames/frame_000028.webp)
+
+文字识别：胶囊助学计划bilb出 / 直接引语- 间接引语 / 1．引号去掉 / 2.转换人称 / 3.添加引|导词that / "I have just arrived in Scotland."' says Leo.
+
+### 画面 00:03:15
+
+![课件截图](frames/frame_000029.webp)
+
+文字识别：胶囊助学计划bi出 / 直接引语- 间接引语 / 1．引号去掉 / 2.转换人称 / 3.添加引导词that / "I have just arrived in Scotland." says Leo. / Leo says that he has just arrived in Scotland. / L
+
+### 画面 00:03:20
+
+![课件截图](frames/frame_000030.webp)
+
+文字识别：biibili / 胶囊助学计划 / 直接引语- 间接引语 / 1．引号去掉 / 2.转换人称 / 3.添加引导词that / "I have just arrived in Scotland." says Leo. / Leo says tbat he has just arrived in Scotland.
+
+### 画面 00:03:22
+
+![课件截图](frames/frame_000031.webp)
+
+文字识别：biibili / 胶囊助学计划 / 直接引语- 间接引语 / 1．引号去掉 / 2.转换人称 / 3.添加引|导词that / "I have just arrived in Scotland." says Leo. / Leo says tbat he has just arrived in Scotland. / し
+
+### 画面 00:03:24
+
+![课件截图](frames/frame_000032.webp)
+
+文字识别：胶囊助学计划 / 直接引语- 间接引语 / 1.引号去掉 / 2.转换人称 / 3．添加引|导词that / He says, "I feel tired."
+
+## 00:03:30–00:04:00
+
+去掉，人称改变，动词现在是 feel，你人称变了，feel 就要跟着去变，变成 feels，对吧？这是唯一一个您可能会跟汉语不一样，并且导致错误的地方，就是后面那个动词也要跟着去进行一些改变，还不是必然的，对吧？一般就只是出现在第三人称单数的时候才会进行一些改变。OK，好，再来一个，说 they say we will win
+
+### 画面 00:03:30
+
+![课件截图](frames/frame_000033.webp)
+
+文字识别：Bilbili / 胶囊助学计划 / 直接引语- 间接引语 / 1．引号去掉 / 2.转换人称 / 3．添加引导词that / He says, "I feel tired."
+
+### 画面 00:03:43
+
+![课件截图](frames/frame_000034.webp)
+
+文字识别：胶囊助学计划 / 直接引语- 间接引语 / 1．引号去掉 / 2.转换人称 / 3．添加引导词that / He says, "I feel tired." / He says that he feels tired.
+
+### 画面 00:03:55
+
+![课件截图](frames/frame_000035.webp)
+
+文字识别：Bilibli / 胶囊助学计划 / 直接引语- 间接引语 / 1．引号去掉 / 2．转换人称 / 3．添加引导词that
+
+## 00:04:00–00:04:30
+
+the game.你看，他们说的是他们将赢得这个比赛，就是小学语文嘛。They say that they will win the game.你看，这还不涉及到动词的改变，这只是把人称改变一下就可以了。所以我希望这三个点各位把它记住。一会儿我们进入一百零一课文章的时候呢，我们一起看一下它是如何去变的，是吧？是否能印证我说的这三点？Very good.所以你看，如果说 he says
+
+### 画面 00:04:05
+
+![课件截图](frames/frame_000036.webp)
+
+文字识别： bilibili / 胶囊助学计划 / 直接引语- 间接引语 / 1.引号去掉 / 2.转换人称 / 3．添加引导词that / They say, "we will win the game." / They say that they will win the game.
+
+### 画面 00:04:08
+
+![课件截图](frames/frame_000037.webp)
+
+文字识别：biibili / 胶囊助学计划 / 直接引语- 间接引语 / 1.引号去掉 / 2.转换人称 / 3．添加引导词that / They say, "we will win the game." / They say that they will win the game.
+
+### 画面 00:04:14
+
+![课件截图](frames/frame_000038.webp)
+
+文字识别：biibili / 胶囊助学计划 / 直接引语- 间接引语 / 1．引号去掉 / 2.转换人称 / 3．添加引导词that / They say, "we will win the game." / They say that they will win the game.
+
+### 画面 00:04:18
+
+![课件截图](frames/frame_000039.webp)
+
+文字识别：胶囊助学计划 / 直接引语- 间接引语 / 1．引号去掉 / 2．转换人称 / 3．添加引|导词that / They say, "we will win the game." / They say that they will win the game.
+
+### 画面 00:04:21
+
+![课件截图](frames/frame_000040.webp)
+
+文字识别：胶囊助学计划 / 直接引语- 间接引语 / 1．引号去掉 / 2．转换人称 / 3．添加引导词that / They say, "we will win the game." / They say that they will win the game.
+
+### 画面 00:04:25
+
+![课件截图](frames/frame_000041.webp)
+
+文字识别：胶囊助学计划bilbi / 直接引语- 间接引语
+
+### 画面 00:04:27
+
+![课件截图](frames/frame_000042.webp)
+
+文字识别：bilbli / 胶囊助学计划 / 直接引语- 间接引语 / He says that he must wait for his friends. / 结论：间接引语属于宾语从句
+
+## 00:04:30–00:05:00
+
+that we must wait for his friends这句话，其实各位就能理解，叫间接引语，它其实就是属于宾语从句，或者换一句话来，它就是宾语从句。您再回想一下一百课偶数课我们刚刚做的那些练习，谁说谁说，然后一句话一句话做了宾语，我们管这句话叫宾语从句。所以各位其实能理解啊，间接引语就是一个宾语从句。OK，好，那那些我们不多说了，
+
+### 画面 00:04:31
+
+![课件截图](frames/frame_000043.webp)
+
+文字识别：bilbil / 胶囊助学计划 / 直接引语-间接引语 / He says thal he must wait for his friends. / 结论：间接引语属于宾语从句
+
+### 画面 00:04:33
+
+![课件截图](frames/frame_000044.webp)
+
+文字识别：bibli / 胶囊助学计划 / 直接引语- 间接引语 / He says thal he must wait for his friends. / 结论：间接引语属于宾语从句
+
+### 画面 00:04:35
+
+![课件截图](frames/frame_000045.webp)
+
+文字识别：胶囊助学计划 / 直接引语- 间接引语 / He says thal he must wait for his friends. / 结论：间接引语属于宾语从句
+
+### 画面 00:04:37
+
+![课件截图](frames/frame_000046.webp)
+
+文字识别：bilibili / 胶囊助学计划 / 直接引语- 间接引语 / He says thal he must wait for his friends. / 结论：间接引语属于宾语从句
+
+### 画面 00:04:40
+
+![课件截图](frames/frame_000047.webp)
+
+文字识别：胶囊助学计划 / 直接引语- 间接引语 / He says thal he must wait for his friends. / 结论：间接引语属于宾语从句
+
+### 画面 00:04:58
+
+![课件截图](frames/frame_000048.webp)
+
+文字识别：胶囊助学计划blb出 / /'skptland/ / Scotland / IRELAND / ENGLAND / UNITED KINGDOM
+
+## 00:05:00–00:05:30
+
+我们来看一下本课的单词啊。我们先看第一个单词，跟我读，叫Scotland，Scotland，记住要变成g Scotland，OK，苏格兰。那英国啊，全称叫什么来着？叫大不列颠及北爱尔兰联合王国，United Kingdom，联合王国，对吧？它为什么叫联合王国？联合这个字儿在汉语当中一定不是一个地方才能联合，至少是两个地方，对
+
+### 画面 00:05:01
+
+![课件截图](frames/frame_000049.webp)
+
+文字识别：胶囊助学计划 / /'skotland/ / Scotland / IRELAND / ENGLAND / UNITED KINGDOM
+
+### 画面 00:05:05
+
+![课件截图](frames/frame_000050.webp)
+
+文字识别：胶囊助学计划bilb出 / /'skotland/ / Scotland / IRELAND / ENGLAND / UNITED KINGDOM
+
+### 画面 00:05:16
+
+![课件截图](frames/frame_000051.webp)
+
+文字识别：g / 胶囊助学计划 / /'skptland/ / Scotland / IRELAND / ENGLAND / UNITED KINGDOM
+
+## 00:05:30–00:06:00
+
+吧？那英国 U K 它实际上是四个地方的联合，苏格兰啊，之前不是还闹过公投独立嘛，对吧？叫 Scotland。再然后 England，这是大家最熟悉的啊，英格兰队，对吧？比如说足球。再然后呢，Wales 很小的一个地方，各位在图中可以看到，在这个地方，在英格兰的西部是吧？上北下南，左西右东啊，在它的西部 Wales，威尔士以及 Northern Ireland，叫做北爱尔
+
+### 画面 00:05:31
+
+![课件截图](frames/frame_000052.webp)
+
+文字识别：g / 胶囊助学计划bil出 / /'skptland/ / Scotland / IRELAND / ENGLAND / UNITED KINGDOM
+
+### 画面 00:05:33
+
+![课件截图](frames/frame_000053.webp)
+
+文字识别：g / 胶囊助学计划bi出 / /'skptland/ / Scotland / ① Scotland / IRELAND / ENGLAND / UNITED KINGDOM
+
+### 画面 00:05:47
+
+![课件截图](frames/frame_000054.webp)
+
+文字识别：胶囊助学计划bib出 / /'skptland/ / Scotland / ① Scotland / IRELAND / ENGLAND / England / 2 / UNITED KINGDOM / Wales /weilz/ / 人
+
+### 画面 00:05:49
+
+![课件截图](frames/frame_000055.webp)
+
+文字识别：g / 胶囊助学计划bi出 / /'skotland/ / Scotland / ① Scotland / IRELAND / NGLAND / 2 / England / Wales /weilz/ / UNITED KINGDOM / 3
+
+### 画面 00:05:51
+
+![课件截图](frames/frame_000056.webp)
+
+文字识别：g / 胶囊助学计划 / /'skptland/ / Scotland / ① Scotland / IRELAND / NGLAND / England / 2 / Wales /weilz/ / UNITED KINGDOM
+
+### 画面 00:05:55
+
+![课件截图](frames/frame_000057.webp)
+
+文字识别：胶囊助学计划blbl / /'skotland/ / Scotland / ① Scotland / IRELAND / NGLAND / England / 2 / UNITED KINGDOM / Wales /weilz/ / Northern Ireland /'aialand/
+
+## 00:06:00–00:06:30
+
+兰，各位看啊，整个这个岛其实就爱尔兰岛是吧？然后底下是一个国家叫爱尔兰，最北面有一小块地方，我们管它叫做 Northern Ireland，叫做北爱尔兰。好，这四个地方合起来其实才叫英国，但大多数人其实理解为的就是 England，对吧？啊，我们如果不去细想，那你可能就会把 England 当作英国。所以在这儿我提一个小点，
+
+### 画面 00:06:02
+
+![课件截图](frames/frame_000058.webp)
+
+文字识别：胶囊助学计划bilb出 / /'skot land / / Scotland / ① Scotland / IRELAND / NGLAND / England / UNITED KINGDOM / Wales /weilz/ / Northern Ireland /'aialand/
+
+### 画面 00:06:15
+
+![课件截图](frames/frame_000059.webp)
+
+文字识别：胶囊助学计划 / /'skot land / / Scotland / ① Scotland / IRELAND / NGLAND / England / 2 / UNITED KINGDOM / Wales /weilz/ / Northern Ireland /'aialand/
+
+### 画面 00:06:21
+
+![课件截图](frames/frame_000060.webp)
+
+文字识别：胶囊助学计划b鼎b出 / /'s kot land / / Scotland / ① Scotland / IRELAND / NGLAND / England / 2 / Wales /weilz/ / UNITED KINGDOM / Northern Ireland /'aialand/
+
+### 画面 00:06:25
+
+![课件截图](frames/frame_000061.webp)
+
+文字识别：g / 胶囊助学计划 / /'s kot land / / Scotland / IRELAND / ① Scotland / NGLAND / England / UNITED KINGDOM / Wales /weilz/ / Northern Ireland /'aialand/
+
+## 00:06:30–00:07:00
+
+以后我们再细讲，就是英国英腔这个概念，各位实际上它不一定是真实存在的。如果您听过，比如说北爱尔兰和苏格兰人的发音，甚至英格兰不同地区的发音，你都会发现，在我们脑海当中那个 stereotype 那个刻板印象当中的那个所谓的英式发音，在英国其实是不太存在的。啊，各位去想，他们的发音是千
+
+### 画面 00:06:30
+
+![课件截图](frames/frame_000062.webp)
+
+文字识别：胶囊助学计划 / /'skotland / / Scotland / ① Scotland / IRELAND / NGLAND / England / UNITED KINGDOM / Wales /weilz/ / Northern Ireland /'aialand/
+
+### 画面 00:06:35
+
+![课件截图](frames/frame_000063.webp)
+
+文字识别：胶囊助学计划b鼎b出 / /'s kot land / / Scotland / ① Scotland / IRELAND / NGLAND / England / UNITED KINGDOM / Wales /weilz/ / Northern Ireland /'aialand/
+
+### 画面 00:06:39
+
+![课件截图](frames/frame_000064.webp)
+
+文字识别：胶囊助学计划 / /'skotland / / Scotland / ① Scotland / IRELAND / NGLAND / England / UNITED KINGDOM / Wales /weilz/ / Northern Ireland /'aialand/
+
+### 画面 00:06:47
+
+![课件截图](frames/frame_000065.webp)
+
+文字识别：g / 胶囊助学计划 / /'skotland / / Scotland / ① Scotland / IRELAND / NGLAND / England / 2 / Wales /weilz/ / UNITED KINGDOM / Northern Ireland /'aialand/
+
+## 00:07:00–00:07:30
+
+千变万化的，差别非常非常的大。OK，好，那我们在这儿先不多说了，我们造几个句子，各位您张嘴跟我读就行了。出处八十五课，来，Have you ever been to Scotland？啊，你要是听过苏格兰人的发音，你会有一种怀疑，就是你的英语都白学了，是吧？哎，为什么呢？因为我曾经去留学的地方，那个新西兰，新西兰最开始的时候，大部分移民来自于的就是苏格兰，所以新
+
+### 画面 00:07:05
+
+![课件截图](frames/frame_000066.webp)
+
+文字识别：胶囊助学计划 / /'skotland/ / Scotland / ① Scotland / IRELAND / NGLAND / England / 2 / UNITED KINGDOM / Wales /weilz/ / Northern Ireland /'aialand/ / Have you ever been to Scotland?
+
+### 画面 00:07:18
+
+![课件截图](frames/frame_000067.webp)
+
+文字识别：胶囊助学计划 / /'skotland / / Scotland / ① Scotland / IRELAND / NGLAND / England / 2 / UNITED KINGDOM / Wales /weilz/ / Northern Ireland /'aialand/ / Have you ever been to Scotland?
+
+### 画面 00:07:24
+
+![课件截图](frames/frame_000068.webp)
+
+文字识别：胶囊助学计划 / /'skotland / / Scotland / ① Scotland / IRELAND / NGLAND / England / UNITED KINGDOM / Wales /weilz/ / Northern Ireland /'aialand/ / Have you ever been to Scotland?
+
+## 00:07:30–00:08:00
+
+西兰的发音也是有一点土土和怪怪的。当然，它在苏格兰的发音基础上又进行了一些变化，对吧？Okay, next one. Say where's John? John去哪了？Say he has gone to Scotland. 如果到这儿，你现在很清楚的能分清have been to和have gone to的区别，说明八十五课您上课认真听讲了，下课按照我的思路去做练习，去查红皮书了。如果您现在发现你没办法区分这两
+
+### 画面 00:07:46
+
+![课件截图](frames/frame_000069.webp)
+
+文字识别：Bilibili / 胶囊助学计划 / /'s kotland / / Scotland / ① Scotland / IRELAND / NGLAND / England / 2 / UNITED KINGDOM / Wales /weilz/ / Northern Ireland /'aialand/ / Have you ever been to Scotland? / Where's John? He has gone to / Scotland.
+
+### 画面 00:07:50
+
+![课件截图](frames/frame_000070.webp)
+
+文字识别：胶囊助学计划bilb出 / /'skptland/ / Scotland / ① Scotland / IRELAND / NGLAND / England / 2 / UNITED KINGDOM / Wales /weilz/ / Northern Ireland /'aialand/ / Have you ever been to Scotland? / Where's John? He has gone to / Scotland.
+
+## 00:08:00–00:08:30
+
+个 have been to 和 have gone to 的区别。您赶紧翻到八十五课文章那个地方，仔细的找到 have been to 和 have gone to 的讲解。再来一遍，说明之前这个基础打的不够牢固，好吧？OK，再来一句说，They will fly to Scotland next week。说下周啊，他们会搬到哎，他们会飞去苏格兰啊，很简单的句子，不多说了。下一个单词跟我一起读一下，叫做 card
+
+### 画面 00:08:10
+
+![课件截图](frames/frame_000071.webp)
+
+文字识别：胶囊助学计划 / /'skotland/ / Scotland / ① Scotland / IRELAND / NGLAND / England / 2 / UNITED KINGDOM / Wales /weilz/ / Northern Ireland /'aialand/ / Have you ever been to Scotland? / Where's John? He has gone to / Scotland.
+
+### 画面 00:08:15
+
+![课件截图](frames/frame_000072.webp)
+
+文字识别：胶囊助学计划 / /'s kotland / / Scotland / ① Scotland / IRELAND / NGLAND / England / 2 / UNITED KINGDOM / Wales /weilz/ / Northern Ireland /'aialand/ / Have you ever been to Scotland? / Where's John? He has gone to / 6 / Scotland. / ⑦ They will fly to Scotland next week.
+
+### 画面 00:08:24
+
+![课件截图](frames/frame_000073.webp)
+
+文字识别：胶囊助学计划 / /ka:d/ / RRAFCON / card n.
+
+### 画面 00:08:28
+
+![课件截图](frames/frame_000074.webp)
+
+文字识别：胶囊助学计划blb出 / /ka:d/ / RRAFCON / card n. / 心
+
+## 00:08:30–00:09:00
+
+card,卡片啊。那卡片实际上可以组成很多不同的卡片，比如说 postcard, 明信卡片是吧？就明信片。business card，就是我们图中这个是吧？商务的这个卡片啊，名片也叫 ID card 啊，这是我们中国有的，我们管它叫做身份证啊。西方国家大多数没有身份证这个概念，它大多数就用 driving license 啊，就是我们说的这个驾照就可以起到身份证的
+
+### 画面 00:08:37
+
+![课件截图](frames/frame_000075.webp)
+
+文字识别：胶囊助学计划bil出 / /ka:d/ / RRAFCON / card n. / ① postcard
+
+### 画面 00:08:48
+
+![课件截图](frames/frame_000076.webp)
+
+文字识别：胶囊助学计划 / /ka:d/ / RRAFCON / card n. / ① postcard / 2 / business card / ③ ID card
+
+### 画面 00:08:54
+
+![课件截图](frames/frame_000077.webp)
+
+文字识别：胶囊助学计划bll / /ka:d/ / RRAFCON / card n. / 心 / ① postcard / 2 / business card / ③ ID card
+
+## 00:09:00–00:09:30
+
+作用了。Okay, very good.那我们造一些句子吧。说We bought some postcards yesterday.哎，bought是buy的过去式。您是不是可以把这句话变成各种各样的句型，对吧？否定句、一般疑问句和各种特殊疑问句。这是各位学完新一了之后，必须在在在各位进入啊学习我们新二课程之前，必须要掌握的一个知识点。Okay，来换一个时态，说He buys a postcard
+
+### 画面 00:09:12
+
+![课件截图](frames/frame_000078.webp)
+
+文字识别：胶囊助学计划 / /ka:d/ / RRAFCON / card n. / 心 / ① / postcard / business card / ID card / 3 / We bought some postcards yesterday.
+
+### 画面 00:09:24
+
+![课件截图](frames/frame_000079.webp)
+
+文字识别：胶囊助学计划 / /ka:d/ / RRAFCON / card n. / 心 / 1 / postcard / business card / ID card / We bought some postcards yesterday.
+
+## 00:09:30–00:10:00
+
+every summer. 换了个时态，对不对？一般现在时了。说 Do you have a business card? 你有名片吗？给我一张，对吧？哪一个？我都说 Show me your ID card, please. 哎，这个可能是警察会跟你说的。当然，他说的可能不一定是 ID card。比如说你的这个呃，这个你的 passport 啊，你的护照啊，或者说你的 driving license 啊，或者你的驾照啊，它不一定是 ID card 了啊。
+
+### 画面 00:09:34
+
+![课件截图](frames/frame_000080.webp)
+
+文字识别：bilbli / 胶囊助学计划 / /ka:d/ / RRAFCON / card n. / ① / postcard / 2 / business card / ID card / 3 / We bought some postcards yesterday. / He buys a postcard every summer. / 5 / 6 /  Do you have a business card?
+
+### 画面 00:09:39
+
+![课件截图](frames/frame_000081.webp)
+
+文字识别：胶囊助学计划 / /ka:d/ / RRAFCON / card n. / 心 / ① / postcard / 2 / business card / ID card / 3 / We bought some postcards yesterday. / He buys a postcard every summer. / 6 / Do you have a business card?
+
+### 画面 00:09:45
+
+![课件截图](frames/frame_000082.webp)
+
+文字识别：胶囊助学计划 / /ka:d/ / RRAFCON / card n. / 心 / ① / postcard / 2 / business card / ID card / 3 / We bought some postcards yesterday. / He buys a postcard every summer. / 5 / ⑥ / Do you have a business card? / Show me your ID card please.
+
+### 画面 00:09:54
+
+![课件截图](frames/frame_000083.webp)
+
+文字识别：胶囊助学计划 / /ka:d/ / RRAFCON / card n. / 心 / ① / postcard / 2 / business card / ID card / 3 / We bought some postcards yesterday / He buys a postcard every summer. / 5 / 6 / Do you have a business card? / Show me your ID card please.
+
+## 00:10:00–00:10:30
+
+OK，下面三个单词，这三个单词从我的个人思路上来说，您都不用着急去记，您只要知道它合起来是什么就行了。我们拼一下音标先啊，来 Youth 青年 Hostel 哎住宿 Association Association 啊一个协会青年住宿协会，它其实就是三个字母叫 Y H A。比如说看到这个地方了吗？这个标志，我们管它就叫做 Y H A，
+
+### 画面 00:10:00
+
+![课件截图](frames/frame_000084.webp)
+
+文字识别：bilbili / 胶囊助学计划 / /ju:θ/ /'hpstal/ /asausi'ei∫an/ / youth hostel association
+
+### 画面 00:10:11
+
+![课件截图](frames/frame_000085.webp)
+
+文字识别：biibili / 胶囊助学计划 / /ju:θ/ /'hpstal/ / lasausi'eifan/ / youth hostel / association
+
+### 画面 00:10:19
+
+![课件截图](frames/frame_000086.webp)
+
+文字识别：胶囊助学计划 / /ju:θ/ /'hpstal/ / lasausi'ei∫an/ / youth / n hostel / association
+
+### 画面 00:10:23
+
+![课件截图](frames/frame_000087.webp)
+
+文字识别：biibili / 胶囊助学计划 / 1ju:θ1 / /'hpstal/ / lasausi'el∫an/ / youth / hostel / association / ①YHA
+
+### 画面 00:10:26
+
+![课件截图](frames/frame_000088.webp)
+
+文字识别：bilbli / 胶囊助学计划 / 1ju:θ1 / /'hpstal/ / lasausi'ei∫an/ / youth / hostel / association / ① YHA
+
+## 00:10:30–00:11:00
+
+叫青年旅社啊。青年旅社这个地方是一个西方传过到中东方的一个文化。我没有记错的话，他们应该西方是在六十年代、七十年代左右就开始盛行了的，非常便宜。然后呢，你进去了之后呢，就像我们中国大学住宿的那个条件一样，上下铺啊，在一些国家还是可以男女混住的。当然，你也可以多花一点点钱，只住女生宿舍，对吧？
+
+### 画面 00:10:30
+
+![课件截图](frames/frame_000089.webp)
+
+文字识别：Bilbi / 胶囊助学计划 / /ju:θ1 / /'hpstal/ / /asausi'ei∫an/ / youth / hostel / association / ① YHA
+
+### 画面 00:10:33
+
+![课件截图](frames/frame_000090.webp)
+
+文字识别：胶囊助学计划 / /ju:θ/ / /'hpstal/ / lasausi'ei∫an/ / hostel / association / youth / ① YHA
+
+### 画面 00:10:40
+
+![课件截图](frames/frame_000091.webp)
+
+文字识别：Bib出 / 胶囊助学计划 / /ju:θ/ / /'hpstal/ / lasausi'ei∫an/ / youth / hostel / association / ①YHA
+
+### 画面 00:10:48
+
+![课件截图](frames/frame_000092.webp)
+
+文字识别：胶囊助学计划 / /ju:θ/ / /'hpstal/ / lasausi'ei∫an/ / hostel / association / youth / ①YHA
+
+## 00:11:00–00:11:30
+
+OK，然后呢，非常的便宜，便宜到我举一个小的例子，比如说我在奥克兰住的时候，紧挨着皇后街 Queen Street，才花大概一百，注意是人民币对吧？包括你比如说我去查，像去柏林这个地方，柏林这个地方对吧？一百二十块钱你就能住一宿，注意是人民币，不是欧元，非常非常的便宜啊。OK，那不多说了，各位知道这个就行了。如果您感兴趣，可以去试一试啊，叫做
+
+### 画面 00:11:01
+
+![课件截图](frames/frame_000093.webp)
+
+文字识别：胶囊助学计划 / 1ju:θ1 / /'hpstal/ / lasausi'ei∫an/ / youth / hostel / association / ① YHA
+
+### 画面 00:11:05
+
+![课件截图](frames/frame_000094.webp)
+
+文字识别：Bilbili / 胶囊助学计划 / /ju:θ1 / /'hpstal/ / lasausi'ei∫an/ / youth / hostel / association / ① YHA
+
+### 画面 00:11:25
+
+![课件截图](frames/frame_000095.webp)
+
+文字识别：胶囊助学计划 / 1ju:θ1 / /'hpstal/ / /asausi'eifan/ / hostel / association / youth / ①YHA
+
+### 画面 00:11:28
+
+![课件截图](frames/frame_000096.webp)
+
+文字识别：胶囊助学计划 / /juiθ/ / /'hpstal/ / lasausi'erfan/ / youth / hostel / association / ①YHA
+
+## 00:11:30–00:12:00
+
+国际青年旅社啊，Y H A，OK，Very good。接下来下一个单词跟我一起读一下，叫做soon。它其实有点像我们刚刚学过的那个单词at once，立刻、马上啊，很快啊，所以它很多的时候可以跟一般将来时连。比如说，He will write a letter soon。他很快就会写一封信的。一般疑问句，Will he write a letter soon？然后我们再给大家各种特殊疑问词，这就变成您
+
+### 画面 00:11:33
+
+![课件截图](frames/frame_000097.webp)
+
+文字识别：胶囊助学计划 / /suin/ / soon / Coming / SOON
+
+### 画面 00:11:36
+
+![课件截图](frames/frame_000098.webp)
+
+文字识别：胶囊助学计划blb出 / /su:n/ / soon / Coming / SOON
+
+### 画面 00:11:53
+
+![课件截图](frames/frame_000099.webp)
+
+文字识别：胶囊助学计划bib出 / /suin/ / soon / Coming / ① He will write a letter soon. / SOON / Will he write a letter soon?
+
+### 画面 00:11:59
+
+![课件截图](frames/frame_000100.webp)
+
+文字识别：胶囊助学计划 / /suin/ / soon / Coming / ① He will write a letter soon. / SOON / Will he write a letter soon? / when/why/who...
+
+## 00:12:00–00:12:30
+
+今天的家庭作业了，三句话，对吧？Very good。下面这个单词并不难，我们之前应该可能我印象当中也见过，write, wrote, written，原形、过去式、过去分词。我们补一个小的短语叫 write to somebody，叫做写信给某人。我们造一个句子叫做 You haven't written to me for a long time。先看确定时态，现在
+
+### 画面 00:12:03
+
+![课件截图](frames/frame_000101.webp)
+
+文字识别：胶囊助学计划 / /rait/ /raut/ /'ritan/ / write wrote written
+
+### 画面 00:12:05
+
+![课件截图](frames/frame_000102.webp)
+
+文字识别：胶囊助学计划blb出 / /rait/ /raut/ /'ritan/ / write wrote written
+
+### 画面 00:12:09
+
+![课件截图](frames/frame_000103.webp)
+
+文字识别：bilbili / 胶囊助学计划 / /rait//raut/ /ritan/ / write wrote written
+
+### 画面 00:12:17
+
+![课件截图](frames/frame_000104.webp)
+
+文字识别：bilibili / 胶囊助学计划 / /rait//raut/ /ritan/ / write wrote written / write to sb.
+
+### 画面 00:12:29
+
+![课件截图](frames/frame_000105.webp)
+
+文字识别：bibli / 胶囊助学计划 / /rait//raut/ /'ritan/ / write wrote written / write to sb. / You haven't written to me for a long tim
+
+## 00:12:30–00:13:00
+
+完成时。确定完了之后，还要再确定现在完成时至少有两个用法，言之过去意在当下。八十三课咱学的，从过去重复或持续到现在。八十九课咱学的，你看后边又有一个 for a long time，基本就是八十九课的第二个用法，从过去持续到现在。那他这句话是否定，就是你从过去持续到现在一直都没有做这件事情，一直都没给我写信了，对吧？OK，
+
+### 画面 00:12:31
+
+![课件截图](frames/frame_000106.webp)
+
+文字识别：胶囊助学计划 / /rait//raut//ritan/ / write wrote written / write to sb. / You haven't written to me for a long time!
+
+### 画面 00:12:34
+
+![课件截图](frames/frame_000107.webp)
+
+文字识别：胶囊助学计划 / /rait//raut//'ritan/ / write wrote written / write to sb. / You haven't written to me for a long tin
+
+### 画面 00:12:42
+
+![课件截图](frames/frame_000108.webp)
+
+文字识别：胶囊助学计划 / /rait//raut/ /ritan/ / write wrote written / write to sb. / You haven't written to me for a long tin
+
+### 画面 00:12:46
+
+![课件截图](frames/frame_000109.webp)
+
+文字识别：胶囊助学计划 / /rait//raut//ritan/ / write wrote written / write to sb. / You haven't written to me for a long tin
+
+## 00:13:00–00:13:30
+
+再来。I wrote a letter to him last week.我上周给他写了一封信，肯定句出来了。您今天家庭作业就可以往下去写了，对不对？好，再来说。I'm gonna write you a letter soon.我很快就要给你写一封信了。OK，好，都不多说了。接下来我们看一个非常有名的爱情电影的片段，是吧？叫做Did you write me？你之前有给我
+
+### 画面 00:13:11
+
+![课件截图](frames/frame_000110.webp)
+
+文字识别：胶囊助学计划 / /rait//raut//ritan/ / write wrote written / write to sb. / You haven't written to me for a long tinme / I wrote a letter to him last week. / I'm gonna write you a letter soon.
+
+### 画面 00:13:19
+
+![课件截图](frames/frame_000111.webp)
+
+文字识别：JUDE / NICOLE / REI / 胶囊助学计划 / LAW / KIDMAN / ZELLWE / Did / you write / FIND YOUR WAY HOME / COLD / to me? / MOUNTAIN / 冷山 Cold Mountain (2003) / ROM ACADEMY AWARD WINNING WRITER &I
+
+### 画面 00:13:21
+
+![课件截图](frames/frame_000112.webp)
+
+文字识别：JUDE / NICOLE / REI / 胶囊助学计划 / LAW / KIDMAN / ZELLWE / Did / you write / FIND YOUR WAY HOME / COLD / to me? / MOUNTAIN / 冷山 Cold Mountain (2003) / ROM ACADENY AWARD WINNING WRITER &I
+
+### 画面 00:13:23
+
+![课件截图](frames/frame_000113.webp)
+
+文字识别：JUDE / NICOLE / REI / 胶囊助学计划 / LAW / KIDMAN / ZELLWE / Did / you write / FIND YOUR WAY HOME / COLD / to me? / MOUNTAIN / 冷山 Cold Mountain (2003) / ROV ACADEMY AWARD WINNING WRITERA
+
+### 画面 00:13:25
+
+![课件截图](frames/frame_000114.webp)
+
+文字识别：JUDE / NICOLE / REI / 胶囊助学计划 / LAW / KIDMAN / ZELLWE / Did / you write / FIND YOUR WAY HOME / COLD / to me? / MOUNTAIN / 冷山 Cold Mountain (2003) / RON ACADEMY AWARD WINNING WRITER&I
+
+### 画面 00:13:28
+
+![课件截图](frames/frame_000115.webp)
+
+文字识别：JUDE / NICOLE / REI / 胶囊助学计划 / LAW / KIDMAN / ZELLWE / Did / you write / FIND YOUR WAY HOME / COLD / to me? / MOUNTAIN / 冷山 Cold Mountain (2003) / ROM ACADENY AWARD WINNING WRITER&I
+
+## 00:13:30–00:14:00
+
+写过信吗？好，注意力集中，来了。 Did you get my letters? I got three letters. I carried them. I carried them in the book you gave me. Bartram. I probably sent a hundred and three. Did you write to me?
+
+### 画面 00:13:30
+
+![课件截图](frames/frame_000116.webp)
+
+文字识别：JUDE / NICOLE / REI / 胶囊助学计划 / LAW / KIDMAN / ZELLWE / Did / you write / FIND YOUR WAY HOME / COLD / to me? / MOUNTAI / 冷山 Cold Mountain (2003) / RON ACADEMY AWARD WINNING WRITER &I
+
+### 画面 00:13:33
+
+![课件截图](frames/frame_000117.webp)
+
+文字识别：bilibili / 胶囊助学计划
+
+### 画面 00:13:35
+
+![课件截图](frames/frame_000118.webp)
+
+文字识别：bilibili / 胶囊助学计划 / 你收到过我的信吗 / Did you get my letters?
+
+### 画面 00:13:37
+
+![课件截图](frames/frame_000119.webp)
+
+文字识别：bilibili / 胶囊助学计划
+
+### 画面 00:13:39
+
+![课件截图](frames/frame_000120.webp)
+
+文字识别：Bilibili / 胶囊助学计划 / 我收到过三封 / I got three letters.
+
+### 画面 00:13:41
+
+![课件截图](frames/frame_000121.webp)
+
+文字识别：Bilbili / 胶囊助学计划
+
+### 画面 00:13:43
+
+![课件截图](frames/frame_000122.webp)
+
+文字识别：bilibili / 胶囊助学计划 / 我带着 我把它们夹在你给我的书里面了 / I carried them. I carried them in the book you gave me.
+
+### 画面 00:13:45
+
+![课件截图](frames/frame_000123.webp)
+
+文字识别：bilibili / 胶囊助学计划 / 我带着 我把它们夹在你给我的书里面了 / I carried them. I carried them in the book you gave me.
+
+### 画面 00:13:47
+
+![课件截图](frames/frame_000124.webp)
+
+文字识别：Bilbili / 胶囊助学计划 / 巴特姆的那本书 / The Bartram.
+
+### 画面 00:13:49
+
+![课件截图](frames/frame_000125.webp)
+
+文字识别：bilibili / 胶囊助学计划 / 我一共寄了一百零三封信 / I probably sent 103.
+
+### 画面 00:13:51
+
+![课件截图](frames/frame_000126.webp)
+
+文字识别：Bilbili / 胶囊助学计划 / 我一共寄了一百零三封信 / I probably sent 103.
+
+### 画面 00:13:53
+
+![课件截图](frames/frame_000127.webp)
+
+文字识别：Bilibili / 胶囊助学计划
+
+### 画面 00:13:55
+
+![课件截图](frames/frame_000128.webp)
+
+文字识别：Bilibili / 胶囊助学计划
+
+### 画面 00:13:57
+
+![课件截图](frames/frame_000129.webp)
+
+文字识别：Bilibili / 胶囊助学计划
+
+### 画面 00:13:59
+
+![课件截图](frames/frame_000130.webp)
+
+文字识别：Bilibili / 胶囊助学计划
+
+## 00:14:00–00:14:30
+
+Anywhere good? Okay,啊，女主问男主说，Did you write to me?你给我写过信吗？你看，一般过去时，我描述的是之前发生的事情，对吧？Anywhere good? Recap本课，哎，我们除了还是除了单词以外，直接英语变间接英语，我们简单的学习了一下，包括各位能清楚的知道，其实间接英语就是宾语从句，对吧？然后呢，我们补了一个小的短
+
+### 画面 00:14:01
+
+![课件截图](frames/frame_000131.webp)
+
+文字识别：bilibili / 胶囊助学计划 / 有机会就写 / WheneverI could.
+
+### 画面 00:14:03
+
+![课件截图](frames/frame_000132.webp)
+
+文字识别：JUDE / NICOLE / REI / 胶囊助学计划 / LAW / KIDMAN / ZELLWE / Did / you write / FIND YOUR WAY HOME / COLD / to me? / MOUNTAIN / 冷山 Cold Mountain (2003) / RON ACADEMY AWARDWINNING WRITER&I
+
+### 画面 00:14:05
+
+![课件截图](frames/frame_000133.webp)
+
+文字识别：JUDE / NICOLE / REI / 胶囊助学计划 / LAW / KIDMAN / ZELLWE / Did / you write / FIND YOUR WAY HOME / COLD / to me? / MOUNTAIN / 冷山 Cold Mountain (2003) / ROM ACADEMY AWARD WINNING WRITER&I
+
+### 画面 00:14:09
+
+![课件截图](frames/frame_000134.webp)
+
+文字识别：JUDE / NICOLE / REI / 胶囊助学计划 / LAW / KIDMAN / ZELLWE / Did / you write / FIND YOUR WAY HOME / COLD / to me? / MOUNTAIN / 冷山 Cold Mountain (2003) / RON ACADEMY AWARD WINNING WRITER&I
+
+### 画面 00:14:14
+
+![课件截图](frames/frame_000135.webp)
+
+文字识别：Recap / 胶囊助学计划 / Patterns / 直接引语变间接引语 / 宾语从句 / Grammar / Words / Expression / write to sb.
+
+### 画面 00:14:17
+
+![课件截图](frames/frame_000136.webp)
+
+文字识别：Bilbili / 胶囊助学计划 / Recap / Patterns / 直接引语变间接引语 / & / 宾语从句 / Grammar / Words / Expression / write to sb.
+
+### 画面 00:14:19
+
+![课件截图](frames/frame_000137.webp)
+
+文字识别：Bilbili / 胶囊助学计划 / Recap / Patterns / 直接引语变间接引语 / 宾语从句 / Grammar / Words / Expression / write to sb.
+
+### 画面 00:14:23
+
+![课件截图](frames/frame_000138.webp)
+
+文字识别：bilbili / 胶囊助学计划 / Recap / Patterns / 直接引语变间接引语 / 宾语从句 / Grammar / Words / Expression / write to sb.
+
+### 画面 00:14:29
+
+![课件截图](frames/frame_000139.webp)
+
+文字识别：bilbil / 胶囊助学计划 / Recap / Patterns / 直接引语变间接引语 / 宾语从句 / Grammar / Words / Expression / write to sb.
+
+## 00:14:30–00:15:00
+
+语，叫 write to somebody，叫给某人写信。Did you write to me? 你给我写过信吗？Very good. 加上作业，单词造句，老习惯，三个句子，给自己讲解一遍今天的核心知识点。比如说，直接引语变间接引语的时候，有哪三个步骤，对吧？OK。那如果各位喜欢我们的课程呢，欢迎大家关注、订阅、一键三连，分享给那些需要的朋友，来帮助我们快速成长。
+
+### 画面 00:14:37
+
+![课件截图](frames/frame_000140.webp)
+
+文字识别：胶囊助学计划bib出
+
+### 画面 00:14:45
+
+![课件截图](frames/frame_000141.webp)
+
+文字识别：胶囊助学计划 / 单词造句3 / 请给自己讲解一遍今天的 / 核心知识点
+
+### 画面 00:14:49
+
+![课件截图](frames/frame_000142.webp)
+
+文字识别：胶囊助学计划 / 单词造句3 / 请给自己讲解一遍今天的 / 核心知识点
+
+### 画面 00:14:51
+
+![课件截图](frames/frame_000143.webp)
+
+文字识别：胶囊助学计划
+
+### 画面 00:14:54
+
+![课件截图](frames/frame_000144.webp)
+
+文字识别：胶囊助学计划
+
+### 画面 00:14:59
+
+![课件截图](frames/frame_000145.webp)
+
+文字识别：胶囊助学计划 / Procrastination is like a credit card: it's a lot / of fun until you get the bill. / Christopher Parker
+
+## 00:15:00–00:15:26
+
+最后，我们再来看一句名人名言。 Procrastination is like a credit card; it's a lot of fun until you get the bill. Yeah, it makes sense. Okay, see you next time.
+
+### 画面 00:15:03
+
+![课件截图](frames/frame_000146.webp)
+
+文字识别：胶囊助学计划 / Procrastination is like a credit card: it's a lot / of fun until you get the bill. / Christopher Parker
+
+### 画面 00:15:13
+
+![课件截图](frames/frame_000147.webp)
+
+文字识别：胶囊助学计划 / Procrastination is like a credit card: it's a lot / of fun until you get the bill. / Christopher Parker
+
+### 画面 00:15:15
+
+![课件截图](frames/frame_000148.webp)
+
+文字识别：CAPSULEACADEMY / 胶囊助学计划 / 小红书 / □ / Lecturer / OE
+
+### 画面 00:15:17
+
+![课件截图](frames/frame_000149.webp)
+
+文字识别：CAPSULEACADEMY / 胶囊助学计划 / 小红书 / Photographer / OE
+
+### 画面 00:15:20
+
+![课件截图](frames/frame_000150.webp)
+
+文字识别：CAPSULEACADEMY / 胶囊助学计划 / 小红书 / Editor / □ / Berlin / OE
+
+### 画面 00:15:23
+
+![课件截图](frames/frame_000151.webp)
+
+文字识别：CAPSULEACADEMY / 胶囊助学计划 / 小红书
+
+### 画面 00:15:25
+
+![课件截图](frames/frame_000152.webp)
+
+文字识别：bilibili / 胶囊助学计划
+
+### 画面 00:15:26
+
+![课件截图](frames/frame_000153.webp)
+
+文字识别：bilibili / 胶囊助学计划
+
