@@ -1,0 +1,160 @@
+# L006 文章
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we are going to learn New Concept English Book Two, Lesson Six, Story and Expressions. 好习惯，进入正式课程之前，我们先看一下三个问题：第一，如何用英文去表达倒立；第二，如何表达作为回报；第三，如何表达搬去某地。带着这三个问题，Hope you really enjoy it. 好，那我们直接进入文章。
+
+## 00:00:28–00:01:02
+
+好，那我们直接进入文章。我们看第一句话，说 I have just moved to a house in Bridge Street. 首先 have just moved，这是我们之前学过的，刚刚学过的叫做现在完成时。我刚刚搬到了。好， moved to a house in Bridge Street. Move to 加上一个地点，叫表达搬到去某个地方。我搬到了在大桥街的一个房子里面。
+
+## 00:00:58–00:01:32
+
+搬到了在大桥街的一个房子里面，刚刚搬过去的。那你想一下啊，现在完成时搬家一定是发生在过去，对现在的影响是什么？一定是我接下来讲搬到这个新房子当中发生的一些事情，而不会跟你说，哎，要不明天咱俩开车出去玩一圈？这个逻辑是不通的，对吧？一定是讲跟这个房子相关的事情。我们看一下是不是这样的。Yesterday, 好注意这个单词一出来，接下来可能是跟过去相关的时态了。比
+
+## 00:01:28–00:02:02
+
+这个单词一出来，接下来可能是跟过去相关的时态了，比如说一般过去时。A beggar knocked at my door.好了，注意，一个乞丐啊敲了我们家的门啊，敲了敲我们家的门。那注意 knock at my door，这叫做敲门。一般过去时，昨天发生了这么一件事情。He asked me for a meal，还是一般过去时？Ask somebody for something，叫做找某人要某物。他找。
+
+## 00:01:58–00:02:32
+
+叫做找某人要某物，他找我要了一顿饭，还有什么呢？A glass of beer，还有一哎一玻璃杯的啤酒，还挺有生活情趣啊！不光要饭，还要酒。In return for this，这是一个小的短语，叫做作为这件事情的回报。各位应该有印象，return这个单词叫做返回、往返、回来。那in return for就作为一个回报，对什么事情的回报呢？
+
+## 00:02:28–00:03:02
+
+Return for就作为一个回报，对什么事情的回报呢？This this指的是 he asked me for a meal and a glass of beer，作为做这件事情的一个回报。The beggar，这个乞丐呀，stood on his head。你看 stood叫做站 on his head，字面的意思叫在他的头上，站在他自己的头上。这个是高难度操作，是吧？它实际上指的是图中的这句话。Okay，他是倒立了啊。
+
+## 00:02:58–00:03:32
+
+图中的这句话，OK，他是倒立了，OK，倒立了，用他的头站了起来，and sang songs，然后开始唱歌，这是卖艺，对吧？就是说，哎，你给了我一顿免费的饭，我不只要张手要，我还要给你一些回馈，那就是倒立，stood on his head and sang songs，都是一般过去时，对吧？目前我们看到两个时态了，continue，I gave him a meal，我给了他一顿饭，gave一般过去时，he ate the food，他。
+
+## 00:03:28–00:04:02
+
+他一顿饭 gave 一般过去时 he ate the food 啊吃了这个食物 and drank the beer 然后喝了这杯酒还是一般过去时表示昨天发生的事情 then 然后 he put a piece of cheese in his pocket 他把这一片儿奶酪放到了 his pocket 放在他的口袋当中 and went away 然后走开了这地方有一个小点就是 put 这个单词到底是不是动词啊到底是不是原形啊不是动它是动词啊到底是。
+
+## 00:03:58–00:04:32
+
+词啊，到底是不是原形啊？不是，它是动词啊，到底是不是原形？它不是原形，它是动词的过去式。注意，它全是在说过去发生的事情啊。他过去把这个，昨天把这个一片奶酪，一片起司放到了他的口袋当中，然后走开了。Continue later，稍后呢？A neighbor told me about him。一个邻居告诉了我关于他的事情。Everybody knows.
+
+## 00:04:28–00:05:02
+
+关于他的事情，Everybody knows him. Everybody knows him.每个人都认识他。注意时态又切换了，从一般过去时切换成了一般现在时。为什么呢？因为现在在陈述客观事实，说每个人呢都认识他。然后一个，His name is Percy Buttons.说他的名字叫 Percy Buttons。陈述客观事实还是一般现在时，对吧？He calls at.注意主语是第三人称单数。语
+
+## 00:04:58–00:05:32
+
+Calls at.注意主语是第三人称单数，于是后面用的是calls at。跟这个地方各位注意一下，它虽然叫everybody，叫每一个人，但这个单词认为它是第三人称单数，所以后边用的是knows，而不是认为它是个复数。虽然在汉语当中每一个人好像是一群人，指的是复数，但在英文当中认为这个单词是一个单数。OK，说他呀拜访就是visits every house in the street。
+
+## 00:05:28–00:06:02
+
+房就是 visits every house in the street. 说这个街上的每一间，每一个屋子啊，每每每一家 once a month 叫一个月一次。那一会儿我们就可以去那他造一下句。我想说一年一次怎么办呢？ Once a year. 来触类旁通，举一反三。 And 然后怎么样呢？ Always 总是 asks for 一般现在时第三人称单数总是要 ask for 和 ask somebody.
+
+## 00:05:58–00:06:32
+
+总是要 ask for 和 ask somebody for something 意思几乎是一样的，只不过一个是直接说要一些东西，另一个是找谁要了一些东西。要了一顿饭和 a glass of beer，要了一瓶啤，啊，要了一玻璃杯的啤酒。那一个，那接下来呢？这是我们本课从文章当中摘出来的一些习惯用法。习惯用法最重要的事情一定是要去拿它造句了。那我们就一个一个来。第一个叫 move to。
+
+## 00:06:28–00:07:02
+
+就一个一个来。第一个叫 move to somewhere, S W 点叫 somewhere, 叫某地，叫做搬到某地。那我们来一些动词加动词变化，所谓往的横向变化，就是时态之间进行一些切换。比如说，He always moves to Hainan every winter. 一般现在时讲的是他的生活习惯。然后呢，我把它变成一般过去时，叫做 He moved to Hainan last winter. 上一个冬天他这么哎搬到了海南。
+
+## 00:06:58–00:07:32
+
+Last winter,上一个冬天，他这么哎搬到了海南。再然后呢，我再来一个have加d，表示的是现在完成时，说他刚刚搬到海南去了。跟我们本课的第一句话是不是非常像啊？He has just moved to a new house in Bray Street.我只不过把它做了一点点的改变，变成了moved to Hainan. Okay,那接下来呢，我们还可以用am is are表doing，这是我们第二课学过的am is are加doing，表示的是将来的计划和打算。比如说，He
+
+## 00:07:28–00:08:02
+
+表示的是将来的计划和打算，比如说 He is moving to Hainan next month. 下周下个月呀，他要搬去海南了。 Is 加 moving，再加上将来的时间和 be going to do 的含义几乎是保持一致的。当然，我们在语法单项的这个视频当中也有给大家专门去讲过。 Continue，下一个哦。那我们实际上回来啊，再看一遍这四句话。我们现在做了动词加动词变化的横向改变。如
+
+## 00:07:58–00:08:32
+
+现在做了动词加动词变化的横向改变，如果你再把这四句肯定句做一个四句型的纵向改变，所谓叫四句型的转化，否定句、一般疑问句和各种特殊疑问句。您想一下，这四个肯定句，我们好像很轻松，四五二十二十多句话就造出来了。我们用 move to somewhere，对吧？OK，接下来 knock at the door，叫做敲门。我们拿它去造句，来了一句话叫 someone is knocking at the door。这要注意一个小的事情，我们实际上只加。
+
+## 00:08:28–00:09:02
+
+At the door, this要注意一个小的事情。我们实际上只加了两个东西。第一个叫做主语，随便来了一个someone。第二，加了一个动词加动词的变化，也就是时态，说某人正在敲门，但别的地方几乎完全没变。注意六一二三四五六，肯定句出来了，四句型转化，一般疑问句is提前，再来一个叫做对主语提问，直接替代主语，Who is knocking at the door? Again,敲门。下一个ask.
+
+## 00:08:58–00:09:32
+
+Again,敲门下一个，ask somebody for something叫做找某人要某物。我们想一下，某人好说，某物好说，主语好说，无非就是选一下动词加动词的变化，造一个肯定句出来，然后再来点四形性转化。当然了，您愿意的话，可以再加点方式、地点和时间。这事儿是发生在昨天还是前天？发生在什么地点？以什么样的方式去找我要的？啊，这是您自己随便去添加的。好，比如说新概念。
+
+## 00:09:28–00:10:02
+
+啊，这是您自己随便去添加的。好，比如说新概念，我们配合着新概念一册一百一十七课学过的这样一句话，我们把它连在一起，叫 When I was young，当我还很小的时候，I always asked my mom for pocket money。我总是找我的母亲要零用钱。Ask my mom for something，找妈妈要零用钱。好，我们也可以来一句话，叫 I have just asked my mom for some food。我刚刚找我的 my brother。
+
+## 00:09:58–00:10:32
+
+My mom for some food. 我刚刚找我的 my brother 啊，刚刚找我兄弟要了一些食物. Ask somebody for something. 各位要做的事情就是把我们之前学过的单词、语法、习惯用法，把它添加进去. OK. 下一个. In return for this, 对这件事情作为一个回报，那你想一下，它在六一二三四五六当中，它不做主语，不做谓语，不做宾语，它其实就是表达一个，它甚至不是时。
+
+## 00:10:28–00:11:02
+
+宾语，它其实就是表达一个，它甚至不是时间、方式、地点，它就是一个类似于语言上，我们不用给它，比如不不用去想它到底做什么结构，它就是一个含义叫对这件事情作为一个回报，然后你要造一句话，那其实你结合前面的习惯用法，我们前六课学到的习惯用法往里去拽，很容易就做出来。比如说，In return for this, I made that decision. 作为对这件事情的回报，我做出了那个决定。但是你看这句话本身。
+
+## 00:10:58–00:11:32
+
+回报，我做出了那个决定。但是你看这句话本身，我们只看这句话，并不能很清楚的明白你对什么事情回报，做出了什么样的决定。但是随着我们语言越学越多，你就可以把他做了什么事情描述出来，我做了什么决定的具体内容描述出来，对吧？这句话起到一个你可以理解为是承前启后的作用，对吧？前面说的是他做了什么事儿，后面要说的是我做了一个什么决定，OK。
+
+## 00:11:28–00:12:02
+
+这是他做了什么事儿？后面要说的是我做了一个什么决定？OK，接下来那我也可以说我给了一点小的细节。我做了什么决定呢？叫做I'm going to give him some money every year.我打算接下来啊，每年都会给他一些钱。这就是我做的决定。那In return for this，的this指的是对这作为回报。我们接下来呢？哎，比如说The farmer gave us some food in return for our work.我们就把this换成了our work，作为。
+
+## 00:11:58–00:12:32
+
+我们就把 this 换成了 our work，作为对我们工作上的一些回报。这个老农啊，给了我们一些食物，我们帮他种地了，对吧？或者我们帮他打扫这个，比如说清理野草了。然后呢，这个老农给了我们一些回报，回报的是我们的工作，给了我们一些食物，作为对我们工作上的回报。我们把 this 就改成了 our work，我们的工作。接下来我们在电影当中。
+
+## 00:12:28–00:13:02
+
+Work,我们的工作。接下来我们在电影当中会看到这样一句话叫做In return for your services.那service是不是叫做服务或业务？我们在呃拿这个鸽子啊，运送运送当电话去使用那一刻，我没记错的话，这应该是第四课，是不是？我们是不是学了这个东西叫做In return for your呃service？那个service叫做服务电My own private telephone service.各位还记得吧？拿鸽子去当电话业务的那一刻，我们学过了service。
+
+## 00:12:58–00:13:32
+
+还记得吧？拿鸽子去当电话业务的那一刻，我们学过了 service 叫做服务。那 in return for your service 的意思叫做作为对你服务的，或者说对你这样服务的一个回报。我们看一下这个小的电影片段。 I'm ashamed to say that Her Majesty's government is willing to offer you amnesty in return for your services. You want to go home? Okay，啊，作为对你
+
+## 00:13:28–00:14:02
+
+Okay, ah, as a reward for your service, the queen decided to give you a pardon. Okay, continue. Stand on somebody's head,站在某人的头上，不是，就是俩字儿叫倒立。Okay,那我们造一句话说，Look, he's standing on his head.瞧，他正在倒立。肯定句有了，一般疑问句，特殊疑问句，是不是随便来了，是吧？比如说，Why is he standing on his head?为什么要现在倒立啊？Next one, call.
+
+## 00:13:58–00:14:32
+
+现在倒立啊，下一个，next one，call at，拜访跟visit差不多，对吧？原文给出的是 he calls at every house in the street once a month。我们叫原文摘抄再加变，这句肯定句给各位了，各位回去下课要做的事情是，这两件事情，第一，你能不能把它变成一个一般过去时，或者是现在完成时，或者是现在进行时表将来，对。
+
+## 00:14:28–00:15:02
+
+是，或者是现在进行时表将来，对吧？比如说他刚刚拜访了我们家，或者说他去昨天拜访了我们家，或者说他要去拜访我们家，没问题吧？这是横向的改变，所谓动词加动词变化的改变。那四句型的改变就是您把它往下去深挖，变成一般疑问句、特殊疑问句、否定句。比如说我现在想对 he 提问，应该用 who 直接替代 who calls at every house in the street once a month。哎，对。接下来 once a month，我们把
+
+## 00:14:58–00:15:32
+
+接下来，once a month，我们把它总结成了叫做 once a sometime，叫做某些时间。比如说 once a year，叫做一年一次。这是个时间。各位在六一二三四五六当中，它只占到了六。你要自己去造出来个一二三四五。比如说，my brother sends a postcard to me. Send something to somebody，我们之前学过的习惯用法。我的兄弟啊，一年一次会给我寄一次明信片，肯定具
+
+## 00:15:28–00:16:02
+
+Yeah,一年一次会给我寄一次明信片，肯定句有了，变一般疑问句，再变特殊疑问句，这个事情就简单多了。 How often does your brother send you a postcard? 接下来我们在电影当中看到会看到这样一些台词，叫 Once a year, he sent flowers to someone with his Visa card. 来了，注意 What? I just went over Swagger's financials again. Once a year, he sent flowers.
+
+## 00:15:58–00:16:32
+
+Financials again. Once a year, he sent flowers to someone with his visa card. Okay,一年一次，他会用他自己的银行卡去送一些花给某人。There you go.好，接下来 ask for something叫做要索要某物，索取某物。我们直接来一句话叫 Can I ask for some water? 我能要一些水吗？想一下这句话怎么来的？这句话直接给出的是结果。我们要想一下这句。
+
+## 00:16:28–00:17:02
+
+How did it come? This sentence directly gives us the result. We need to think about how this sentence came. We can make a positive sentence. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water. You can ask for some water.
+
+## 00:16:58–00:17:32
+
+From me, from我这儿刚刚要了一些, ask for some money. Okay,好各位要做的事情就是选一个时态。你看我选的是现在完成时，对吧？你可以选成一般过去时嘛。他昨天找我要了一些啊，或者说我准备要他，准备去要一些。Okay,然后呢，你自己可以，我只造出来了肯定句，你可以再去做一些四句型转化嘛，对吧？玩一个。接下来我们看一个小电影片段，《肖申克的救赎》，它既出现了ask for something，又出现了ask somebody。
+
+## 00:17:28–00:18:02
+
+出现了 ask for something, 又出现了 ask somebody for something. 各位注意力要集中了. How about expanding the library? Get some new books in there. Gonna ask for something. Ask for a pool table. Right. How do you expect to do that? I'm getting new books in here, Mr. Dufray, if you please. Ask the warden for funds. I will ask the warden for funds. 啊，我找他要钱是吧？找监狱长要钱。好，那 recap 复习一下，这就是我们本课非常重要的一些。
+
+## 00:17:58–00:18:32
+
+Recap,复习一下，这就是我们本课非常重要的一些习惯用法。能，如果我们去把它们通过造句和朗读的方式，深深的把它学会，会帮助我们听说读写极大程度上的提高我们听说读写上面表达的复杂性。OK，好的，我们看一下本课的家庭作业，各位要做的事情，老习惯，习惯用法造句，一定要利用我们的习惯用法造句指南去造句，而不要自己去造句。如果您自己去造句，错误率是非常非常高的。但
+
+## 00:18:28–00:19:02
+
+如果您自己去造句，错误率是非常非常高的。但你用这个指南去造句，错误率会非常非常的低。OK，那每个习惯用法造五句话，老习惯文章一定要跟读至熟读成诵的地步，它能帮助我们去内化单词、语法和本课的习惯用法，一举三得啊！文章如何跟读？新概念一册的开篇，我们仔仔细细的解释过。接下来呢，只有当各位把文章跟读熟读成诵的时候，我们才能去进行下一个视频当中。
+
+## 00:18:58–00:19:27
+
+读熟读成诵的时候，我们才能去进行下一个视频当中的听力、口语和写作的练习。OK，那以上呢就是本期视频的全部内容了。大家如果喜欢我们的课程，欢迎大家关注、订阅、一键三连，并分享给那些需要的朋友们。See you next time.
+
