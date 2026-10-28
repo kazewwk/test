@@ -1,0 +1,201 @@
+{
+  "artifacts": {
+    "1793145794_6412.md": "cde458ef0e68cb43676781c9094a8d93a28932bf385d35d00031cade07f3ec75",
+    "1793145794_6412_res.json": "9a0ca07557e8c537459f100f46702b9d7537d5d7ffd4c528ff803f81e2ffb327",
+    "imgs/img_in_header_image_box_1648_30_1890_102.jpg": "23d3231ba9ed4bae18d030b82553685dd8f483d6ba10756e09667a59bc6c1522",
+    "imgs/img_in_image_box_1073_242_1234_370.jpg": "973f3ecb5f07d0aec8aec65e8c8e25fb776733c9bb43287624d283be1c4d57ef",
+    "imgs/img_in_image_box_1079_250_1800_1079.jpg": "291b5ee7df5558bb8a2ff7d9d01607f29d6abfa294dc97217e9557932e22a7ef",
+    "imgs/img_in_image_box_92_59_434_420.jpg": "0cdb3eff49cede56dc78e14ea24e3250c5023bbf72ffd98e4799c0863778076f",
+    "region_repairs.md": "e0d539f531f680ac06e5df13f26d436acb098995dabd855cad48eb5f2ebde75c",
+    "repairs/region_002/1793145795_7420.md": "3ead97b44ff93e0d758596be0206c2355f8780b61997ef76c15c2027d95ef4c5",
+    "repairs/region_002/1793145795_7420_res.json": "08fe62c4330e43804596991d3b155269f32da67e1e34c2c3218d3b95447526c7",
+    "repairs/region_002/source.png": "d9365edf4501b488726100b856348d3fee234b6b47a2b17b122f1872993ec6f6"
+  },
+  "input_fingerprint": "9019855bcce203fef680ab80820e42213f3122696e506f2d25d4fa1089cab844",
+  "image_sha256": "1792878129580c5ace6723d9af911719e61279c911e9fe8791786a7094ef0e36",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 3.3830321690002165,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1648,
+        30,
+        1890,
+        102
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1648.0,
+          30.0
+        ],
+        [
+          1890.0,
+          30.0
+        ],
+        [
+          1890.0,
+          102.0
+        ],
+        [
+          1648.0,
+          102.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        92,
+        59,
+        434,
+        420
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          92.0,
+          59.0
+        ],
+        [
+          434.0,
+          59.0
+        ],
+        [
+          434.0,
+          420.0
+        ],
+        [
+          92.0,
+          420.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "/ˈhændbæɡ/\nhandbag n.",
+      "block_bbox": [
+        491,
+        63,
+        893,
+        201
+      ],
+      "block_id": 2,
+      "block_order": 1,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          491.0,
+          63.0
+        ],
+        [
+          893.0,
+          63.0
+        ],
+        [
+          893.0,
+          201.0
+        ],
+        [
+          491.0,
+          201.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "① hand+bag\n② /æ/ /e/ yes /jes/",
+      "block_bbox": [
+        489,
+        261,
+        947,
+        390
+      ],
+      "block_id": 3,
+      "block_order": 2,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          489.0,
+          261.0
+        ],
+        [
+          947.0,
+          261.0
+        ],
+        [
+          947.0,
+          390.0
+        ],
+        [
+          489.0,
+          390.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1079,
+        250,
+        1800,
+        1079
+      ],
+      "block_id": 4,
+      "block_order": null,
+      "group_id": 4,
+      "block_polygon_points": [
+        [
+          1079.0,
+          250.0
+        ],
+        [
+          1800.0,
+          250.0
+        ],
+        [
+          1800.0,
+          1079.0
+        ],
+        [
+          1079.0,
+          1079.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "/ 'hændbæg/",
+      "block_bbox": [
+        495,
+        56,
+        810,
+        111
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        495,
+        56,
+        810,
+        111
+      ],
+      "ppocr_candidate": "/'hæn dbæg/",
+      "recovered_text": "/ 'hændbæg/",
+      "source_crop": "repairs/region_002/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}
