@@ -1,0 +1,790 @@
+# 080 文章
+
+快速机器解析：语音为单模型转写，未进行独立交叉校对或人工复核；画面每秒采样并按变化选帧，短时文字和标记可能遗漏。截图时间约有 1 秒误差。图片有损压缩；遇到疑点请按时间查看 Google Drive 原视频。
+
+## 00:00:00–00:00:30
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn New Concept English Book Two, Lesson Eighty Story. Hope you gonna enjoy.那我们上来先看一下这个标题叫 Crystal Palace. Crystal就是水晶的意思，那就水晶宫嘛。它所谓水晶宫其实就是玻璃很多啊，像水晶一样。然后呢，他问的问题是 How many people visited the Great Exhibition
+
+### 画面 00:00:00
+
+![课件截图](frames/frame_000000.webp)
+
+文字识别：NCE / BOOKⅡI / Lesson 80 / Story
+
+### 画面 00:00:02
+
+![课件截图](frames/frame_000001.webp)
+
+文字识别：NCE / BOOKⅡI / Lesson 80 / Story
+
+### 画面 00:00:05
+
+![课件截图](frames/frame_000002.webp)
+
+文字识别：NCE / BOOKⅡI / Lesson 80 / Story
+
+### 画面 00:00:09
+
+![课件截图](frames/frame_000003.webp)
+
+文字识别： bibli / 胶囊助学计划 / •
+
+### 画面 00:00:12
+
+![课件截图](frames/frame_000004.webp)
+
+文字识别：胶囊助学计划册 / 胶囊助学计划
+
+### 画面 00:00:14
+
+![课件截图](frames/frame_000005.webp)
+
+文字识别：The Crystal Palace / How many people visited the Great / Exhibition of 1851?
+
+## 00:00:30–00:01:00
+
+of 1851. Ah, we China in uh,过去的不到二十年间，我印象当中十多年前是吧？刚刚举办了我们中国第一次举办的世博会，这个人类的第一次世博会。如果我当时没有记错的话，就是在一八五一年，大英帝国当时的大英帝国如日中天，对吧？刚刚打完了，应该是第一次、第二次鸦片战争嘛，对吧？一八五一年打开了中当时清帝国的大门嘛，啊，
+
+### 画面 00:00:44
+
+![课件截图](frames/frame_000006.webp)
+
+文字识别：The Crystal Palace / How many people visited the Great / Exhibition of 1851?
+
+## 00:01:00–00:01:30
+
+所以他们呃，这个这个 Great Exhibition 就是世博会啊，就是世博会啊，一八五一年是第一期啊。他问多少人参加了一八五一年的这个世博会啊？那我们看一下这篇文章。Perhaps the most extraordinary buildings of the nineteenth century was the Crystal Palace.逗号，我拿汉语跟你说一下，which was built in Hyde Park for
+
+### 画面 00:01:10
+
+![课件截图](frames/frame_000007.webp)
+
+文字识别：The Crystal Palace / How many people visited the Great / Exhibition of 1851?
+
+### 画面 00:01:12
+
+![课件截图](frames/frame_000008.webp)
+
+文字识别：Perhaps the most extraordinary building of the / nineteenth century was the Crystal Palace, / which was built in Hyde Park for the Great / Exhibition of 1851. The Crystal Palace / L56, / °was / different from all other buildings in the world, / for it was made of iron and glass. It was one of / the biggest buildings of all time and a lot of / people from many countries came / to see it.
+
+## 00:01:30–00:02:00
+
+the Great Exhibition of 1851.这句话好长，好长，但是因为有这个逗号，后边来个which，其实即可，咱刚学非限定性定语从句解决了。那我们看一下，所以也许最不同凡响、最了不起的建筑物 of the 19th century.由a由后往前翻译，就19世纪，就1800年开始到1899
+
+### 画面 00:01:39
+
+![课件截图](frames/frame_000009.webp)
+
+文字识别：Perhaps the most extraordinary building of the / nineteenth century was the Crystal Palace, / which was built in Hyde Park for the Great / Exhibition of 1851. The Crystal Palace / L56, / °was / different from all other buildings in the world, / for it was made of iron and glass. It was one of / the biggest buildings of alltime and a lot of / people from many countries came / to see it.
+
+### 画面 00:01:44
+
+![课件截图](frames/frame_000010.webp)
+
+文字识别：Perhaps the most extraordinary building of the / nineteenth century was the Crystal Palace / whic / Was built in Hyde Park for the Great / Exhibition of 1851. The Crystal Palace / L56, / °was / different from all other buildings in the world, / for it was made of iron and glass. It was one of / the biggest buildings of all time and a lot of / people from many countries came / to see it.
+
+## 00:02:00–00:02:30
+
+九九年，十九世纪，对吧？这一百年，然后呢？十九世纪最令人瞩目的、最不同凡响的建筑物就是什么呢？是 Crystal Palace 啊，Crystal Palace 就是水晶宫啊，水晶宫就是我们本课的这个呃这个重点的一个地方啊，叫 Crystal Palace 水晶宫。Which 后边给了一个定语从句，那但是它给了一个非限定性定语从句，非限定性定语从句当时我们提到了，主要是起到了一个补充说
+
+### 画面 00:02:14
+
+![课件截图](frames/frame_000011.webp)
+
+文字识别：Perhaps the most extraordinary building of the / nineteenth century was the Crystal Palace, / whic / Was built in Hyde Park for the Great / Exhibition of 1851.The Crystal Palace / L56, / °was / different from all other buildings in the world, / for it was made of iron and glass. It was one of / the biggest buildings of alltime and a lot of / people from many countries came / to see it.
+
+### 画面 00:02:24
+
+![课件截图](frames/frame_000012.webp)
+
+文字识别：Perhaps the most extraordinary building of the / nineteenth century was the Crystal Palace, / whic /  Was built in Hyde Park for the Great / Exhibition of 1851. The Crystal Palace / L56, / °was / different from all other buildings in the world, / for it was made of iron and glass. It was one of / the biggest buildings of all time and a lot of / people from many countries came / to see it.
+
+### 画面 00:02:27
+
+![课件截图](frames/frame_000013.webp)
+
+文字识别：Perhaps the most extraordinary building of the / nineteenth century was the Crystal Palace, / whic /  Was built in Hyde Park for the Great / Exhibition of 1851.The Crystal Palace / L56, / °was / different from all other buildings in the world, / for it was made of iron and glass. It was one of / the biggest buildings of alltime and a lot of / people from many countries came / to see it.
+
+## 00:02:30–00:03:00
+
+明的一个信息的作用，对吧？为什么呢？因为就类似于我作为一个中国人，当我和您去分享，我说“哎呀，你在哪儿？”我说在北京啊，中国的首都的时候，其实大多数他不用一个限定，补充说明一下就可以了，对吧？为什么不用限定呢？因为全世界就是一个地儿啊，而且你你知我知，我不需要去限定它是。然后，which was built，那which指的就是这个Crystal Palace，对吧？水晶宫
+
+### 画面 00:02:57
+
+![课件截图](frames/frame_000014.webp)
+
+文字识别：Perhaps the most extraordinary building of the / nineteenth century was the Crystal Palace, / whic /  Was built in Hyde Park for the Great / Exhibition of 1851. The Crystal Palace / L56, / °was / different from all other buildings in the world, / for it was made of iron and glass. It was one of / the biggest buildings of alltime and a lot of / people from many countries came / to see it.
+
+## 00:03:00–00:03:30
+
+被建造于第十课咱们学的一般过去时被动，在 Hyde Park 海德公园啊，也是一个到现在还有的非常著名的一个英国的公园，伦敦啊，应该是在。然后 for 目的是什么呢？The Great Exhibition，刚才我讲过了，世博会 of 1851，在一八五一年。The Crystal Palace was different from all other buildings in the world. For it was made of iron and glass.
+
+### 画面 00:03:27
+
+![课件截图](frames/frame_000015.webp)
+
+文字识别：Perhaps the most extraordinary building of the / nineteenth century was the Crystal Palace, / whic / Was built in Hyde Park for the Great / Exhibition of 1851. The Crystal Palace / L56, / °was / different from all other buildings in the world, / for it was made of iron and glass. It was one of / the biggest buildings of alltime and a lot of / people from many countries came / to see it.
+
+## 00:03:30–00:04:00
+
+说这个水晶宫啊，be different from和什么什么不一样？这儿的五十六指的是五十六课，咱们学过啊。呃，和什么不一样呢？所有其他的世界上所有其他的建筑物都不一样，因为be made of本课的习惯用法，哎，叫做呃A被B制造，对吧？说它啊由由什么什么组成啊或者制造成由的是什么呢？叫做iron and glasses，由呃这
+
+### 画面 00:03:37
+
+![课件截图](frames/frame_000016.webp)
+
+文字识别：Perhaps the most extraordinary building of the / nineteenth century was the Crystal Palace, / whic / Was built in Hyde Park for the Great / Exhibition of 1851.The Crystal Palace / L56, / °was / different from all other buildings in the world, / for it was made of iron and glass. It was one of / the biggest buildings of alltime and a lot of / people from many countries came / to see it.
+
+## 00:04:00–00:04:30
+
+个铁钢铁与玻璃组成组建成的这样的一个建筑物叫 Crystal Palace。再来，It was one of the biggest buildings of all time, and a lot of people from many countries came to see it.说它是one of the biggest buildings是最大的建筑物之一of all time，就有史以来of all time有史以来啊有史以来它几乎
+
+### 画面 00:04:07
+
+![课件截图](frames/frame_000017.webp)
+
+文字识别：Perhaps the most extraordinary building of the / nineteenth century was the Crystal Palace, / whic / Was built in Hyde Park for the Great / Exhibition of 1851. The Crystal Palace / L56, / °was / different from all other buildings in the world, / for it was made of iron and glass. It was one of / the biggest buildings of alltime and a lot of / people from many countries came / to see it.
+
+## 00:04:30–00:05:00
+
+是最大的建筑物之一。然后呢，这个 and 起到的作用就是前后断句嘛。A lot of people，许多的人，from many countries，从很多国家来的许多的人，came 来了，目的是 to see 来看一看它，啊，没见过嘛，就跟很多的老外，我们说外国人来到中国去看看天坛，去看看紫禁城故宫一样，对吧？目的就是
+
+### 画面 00:04:35
+
+![课件截图](frames/frame_000018.webp)
+
+文字识别：Perhaps the most extraordinary building of the / nineteenth century was the Crystal Palace, / whic was built in Hyde Park for the Great / Exhibition of 1851. The Crystal Palace / L56, / was / different from all other buildings in the world, / for it was made of iron and glass. Ilt was one of / the biggest buildings of alltime a/d a lot of / people from many countries came / to see it.
+
+### 画面 00:04:37
+
+![课件截图](frames/frame_000019.webp)
+
+文字识别：Perhaps the most extraordinary building of the / nineteenth century was the Crystal Palace, / whicv /  Was built in Hyde Park for the Great / Exhibition of 1851. The Crystal Palace / L56, / °was / different from all other buildings in the world, / for it was made of iron and glass. Ilt was one of / the biggest buildings of alltime a/d a lot of / people from many countries came / to see it.
+
+### 画面 00:04:53
+
+![课件截图](frames/frame_000020.webp)
+
+文字识别：Perhaps the most extraordinary building of the / nineteenth century was the Crystal Palace, / whichv /  was built in Hyde Park for the Great / Exhibition of 1851. The Crystal Palace / L56, / was / different from all other buildings in the world, / for it was made of iron and glass. It was one of / the biggest buildings of alltime a/d a lot of / people from many countries came / to see it.
+
+### 画面 00:04:55
+
+![课件截图](frames/frame_000021.webp)
+
+文字识别：Perhaps the most extraordinary building of the / nineteenth century was the Crystal Palace, / whic) was built in Hyde Park for the Great / Exhibition of 1851.The Crystal Palace / L56, / was / different from all other buildings in the world, / for it was made of iron and glass. It was one of / the biggest buildings of alltime aAd a lot of / people from many countries came / to see it.
+
+### 画面 00:04:57
+
+![课件截图](frames/frame_000022.webp)
+
+文字识别：Perhaps the most extraordinary building of the / nineteenth century was the Crystal Palace, / whic was built in Hyde Park for the Great / Exhibition of 1851. The Crystal Palace / L56, / was / different from all other buildings in the world, / for it was made of iron and glass. It was one of / the biggest buildings of alltime a/d a lot of / people from many countries came / to see it.
+
+## 00:05:00–00:05:30
+
+你想看一眼它，对吧？好，a great many goods，五十六课咱们学的加可数单词，对吧？许多的这个goods，good你会，bad good，那这个goods加s了之后的表示货物啊货品，were sent to the exhibition被发往了，被送往了这个exhibition被送往了这个世博会嘛？From various parts of the world，从世界不同的地方，various parts of the
+
+### 画面 00:05:01
+
+![课件截图](frames/frame_000023.webp)
+
+文字识别：Perhaps the most extraordinary building of the / nineteenth century was the Crystal Palace, / whicv /  Was built in Hyde Park for the Great / Exhibition of 1851. The Crystal Palace / L56, / °was / different from all other buildings in the world, / for it was made of iron and glass. It was one of / the biggest buildings of alltime a/d a lot of / people from many countries came / to see it.
+
+### 画面 00:05:03
+
+![课件截图](frames/frame_000024.webp)
+
+文字识别：L56 / A great many goods were sent to the exhibition / from various parts of the world. There was also / L56_ / 'a great deal of machinery on display. The most / wonderful piece of machinery on show was / Nasmyth's steam hammer. Though in those days, / traveling was not as easy as it is today, steam / boats carried thousands of visitors across the / Channel from Europe.
+
+## 00:05:30–00:06:00
+
+world,对吧？All parts of the world就是全世界各地。Various part就是全世界不同的地方。其实整体表达的意思差不多。There was also a great deal of machinery on display.首先，第一个a great deal of加不可数，对吧？Machinery它是一个总称啊，说也有许多的机器啊on display展出了。The most wonderful piece of machinery on show
+
+### 画面 00:05:33
+
+![课件截图](frames/frame_000025.webp)
+
+文字识别：L56 / A great many goods were sent to the exhibition / from various parts of the world. There was also / L56_ / 'a great deal of machinery on display. The most / wonderful piece of machinery on show was / Nasmyth's steam hammer. Though in those days, / traveling was not as easy as it is today, steam / boats carried thousands of visitors across the / Channel from Europe.
+
+## 00:06:00–00:06:30
+
+was Nasmith's steam hammer.说这个最棒的一片机器，那部机器是吧？最棒的那部机器是这个展出的那部机器呢？是 Nasmith这个人的steam hammer，蒸汽锤，咣咣咣啊！Though in those days traveling was not as easy as it is today, steamboats carried thousands
+
+### 画面 00:06:03
+
+![课件截图](frames/frame_000026.webp)
+
+文字识别：L56 / A great many goods were sent to the exhibition / from various parts of the world. There was also / L56_ / 'a great deal of machinery on display. The most / wonderful piece of machinery on show was / Nasmyth's steam hammer. Though in those days, / traveling was not as easy as it is today, steam / boats carried thousands of visitors across the / Channel from Europe.
+
+## 00:06:30–00:07:00
+
+of visitors across the channel from Europe. 开头问的问题答案就出来了. Thousands of visitors, 对吧? Though, although, even though, even if, 都是这样。啊，尽管在那些日子里啊，在哪些日子里？就在一八五一年那些日子里，旅行航行 traveling，二十个咱们学动名词在主语的位置，travel 加了 ing traveling，对吧? Fish 加了 ing fishing，啊 fishing
+
+### 画面 00:06:33
+
+![课件截图](frames/frame_000027.webp)
+
+文字识别：L56 / A great many goods were sent to the exhibition / from various parts of the world. There was also / L56_ / 'a great deal of machinery on display. The most / wonderful piece of machinery on show was / Nasmyth's steam hammer. Though in those days, / traveling was not as easy as it is today, steam / boats carried thousands of visitors across the / Channel from Europe.
+
+## 00:07:00–00:07:30
+
+traveling,怎么样呢？并不是同样的简单，像今天那样。Ah, people were not as honest as they used to be.想起来了吧？三十二个咱学的基本是一码事。同样的，像怎么怎么样，as点儿点儿as。啊，说航行不是同样的简单，像今天那样，对吧？你从今天从我们北京飞到新西兰也就十一二个小时，啊，你飞到美国也就十一二个小时，飞到欧洲还是十一二个小时。你飞这么两回，你就会发现，
+
+### 画面 00:07:03
+
+![课件截图](frames/frame_000028.webp)
+
+文字识别：L56 / A great many goods were sent to the exhibition / from various parts of the world. There was also / L56, / 'a great deal of machinery on display. The most / wonderful piece of machinery on show was / Nasmyth's steam hammer. Though in those days, / traveling was not as easy as it is today, steam / boats carried thousands of visitors across the / Channel from Europe.
+
+### 画面 00:07:20
+
+![课件截图](frames/frame_000029.webp)
+
+文字识别：L56 / A great many goods were sent to the exhibition / from various parts of the world. There was also / L56_ / 'a great deal of machinery on display. The most / wonderful piece of machinery on show was / Nasmyth's steam hammer. Though in those days, / traveling was not as easy as it is today, steam / boats carried thousands of visitors across the / Channel from Europe.
+
+## 00:07:30–00:08:00
+
+哇，这个世界好小，对不对？哎，Traveling was not as easy as it is today.所以这句话的意思就是，过去traveling比较困难，现在的traveling要比过去简单多了，对吧？Steamboats,蒸汽船，携带着数以千计的拜访者、来访者across the Channel from Europe，是吧？穿过了什么呢？穿过了这个Channel。C大写的时候，
+
+### 画面 00:07:50
+
+![课件截图](frames/frame_000030.webp)
+
+文字识别：L56 / A great many goods were sent to the exhibition / from various parts of the world. There was also / L56_ / 'a great deal of machinery on display. The most / wonderful piece of machinery on show was / Nasmyth's steam hammer. Though in those days, / traveling was not as easy as it is today, steam / boats carried thousands of visitors across the / Channel from Europe.
+
+## 00:08:00–00:08:30
+
+之前咱们说过 English Channel 英吉利海峡 from Europe 从欧洲这个地方，有一部分同学可能就有点蒙圈，是吧？说你这个英国不也属于欧洲吗？你怎么还从欧洲带过来？那他这里其实想说的是，你可以理解为叫 European continent，类似于这样的一个感觉，就是它类似于像欧洲大陆，是吧？哎，又类似于有点像欧洲大陆，就是这个我说的不一定非常准确啊，但是有这样一种感觉，就是你看
+
+### 画面 00:08:06
+
+![课件截图](frames/frame_000031.webp)
+
+文字识别：L56 / Agreat many goods were sent to the exhibition / from various parts of the world. There was also / L56_ / 'a great deal of machinery on display. The most / wonderful piece of machinery on show was / Nasmyth's steam hammer. Though in those days, / traveling was not as easy as it is today, steam / boats carried thousands of visitors across the / Channel from Europe.
+
+### 画面 00:08:08
+
+![课件截图](frames/frame_000032.webp)
+
+文字识别：L56 / A great many goods were sent to the exhibition / from various parts of the world. There was also / L56_ / 'a great deal of machinery on display. The most / wonderful piece of machinery on show was / Nasmyth's steam hammer. Though in those days, / traveling was not as easy as it is today, steam / boats carried thousands of visitors across the / Channel from Europe.
+
+### 画面 00:08:11
+
+![课件截图](frames/frame_000033.webp)
+
+文字识别：L56 / Agreat many goods were sent to the exhibition / from various parts of the world. There was also / L56_ / 'a great deal of machinery on display. The most / wonderful piece of machinery on show was / Nasmyth's steam hammer. Though in those days, / traveling was not as easy as it is today, steam / boats carried thousands of visitors across the / Channel from Europe.
+
+## 00:08:30–00:09:00
+
+英国在它历史上一直到今天，比如说前几年他们进行的脱欧啊，他们会一直有一种感觉，叫他们会希望脱离欧洲这个整体大陆嘛，主要是这个整体，他不认为，至少他心理上不完全认为这个它是一个欧洲国家，有点像比如说我们的呃这个友邻或者说这个邻国日本啊，一直想脱亚入欧一样，是吧？对，日本是总想往那儿挤，呃，这个英国呢是总想脱离
+
+### 画面 00:08:41
+
+![课件截图](frames/frame_000034.webp)
+
+文字识别：L56 / A great many goods were sent to the exhibition / from various parts of the world. There was also / L56_ / 'a great deal of machinery on display. The most / wonderful piece of machinery on show was / Nasmyth's steam hammer. Though in those days, / traveling was not as easy as it is today, steam / boats carried thousands of visitors across the / Channel from Europe.
+
+## 00:09:00–00:09:30
+
+欧洲，对吧？所以它包括包括后来也确实脱离了，对吧？好啊，所以它这个地方用的 Europe 指的就是欧洲大陆啊，比如说这个呃法德啊这个所在的那片大陆，它叫 Europe. Next one. On arriving in England, they were taken to the Crystal Palace by train. 这个 on arriving 三十三课咱们学过，类似于 as soon as 一怎么怎么样就怎么怎么样，一到达
+
+### 画面 00:09:07
+
+![课件截图](frames/frame_000035.webp)
+
+文字识别：L56 / Agreat many goods were sent to the exhibition / from various parts of the world. There was also / L56_ / 'a great deal of machinery on display. The most / wonderful piece of machinery on show was / Nasmyth's steam hammer. Though in those days, / traveling was not as easy as it is today, steam / boats carried thousands of visitors across the / Channel from Europe.
+
+### 画面 00:09:13
+
+![课件截图](frames/frame_000036.webp)
+
+文字识别：L33 / 3On arriving in England, they were taken to / the Crystal Palace by train. There Were six / million visitors in all, and the profits (from the / exhibition) / L55. / 5were used to build museums / and colleges. Later, the Crystal Palace was / 'moved to South London. It remained one of / the most famous buildings in the world until / it was "'burnt down in 1936.
+
+## 00:09:30–00:10:00
+
+英格兰，他们就被带往了 Crystal Palace 水晶宫 by train 用火车就拉过去了。There were six million visitors in all, and the profits from the exhibition were used to build museums and colleges. 看着又很长，拆吧。有 six million visitors 六百万访客 in all 总共是吧？有六百万访客。然后呢？
+
+### 画面 00:09:36
+
+![课件截图](frames/frame_000037.webp)
+
+文字识别：L33 / 3On arriving in England, they were taken to / the Crystal Palace by train. There were six / million visitors in all, and the profits (from the / exhibition) / L55, / 5were used to build museums / and colleges. Later, the Crystal Palace was / 'moved to South London. It remained one of / the most famous buildings in the world until / it was "'burnt down in 1936.
+
+## 00:10:00–00:10:30
+
+The profits后边一个介词引导的这个短语后是做定语了。来自于什么地方的这个盈利呢？From the exhibition，从这次世博会展览当中获得的盈利啊，比如说卖门票，对吧？获得的这个盈利呢？Be used to do something。五十五课啊，咱们这个找海盗在山洞里埋金子那一刻，咱们学过的叫做be used
+
+### 画面 00:10:06
+
+![课件截图](frames/frame_000038.webp)
+
+文字识别：L33 / 3On arriving in England, they were taken to / the Crystal Palace by train. There were six / million visitors in all,/and the profits (from the / exhibition)" / L55, / 5were used to build museums / and colleges. Later, the Crystal Palace was / 'moved to South London. It remained one of / the most famous buildings in the world until / it was 7"'burnt down in 1936.
+
+## 00:10:30–00:11:00
+
+to do something 被使用来去做某件事儿，这个我们还学过一个叫 be used to doing something 习惯于怎么样，还有一个三十一课学过的 used to do something 叫做过去常常怎么怎么样，这个是各位很容易混的三个东西，对吧？说被使用来去建建建了什么呢？Museums and colleges 去建了这个博物馆，然后建了这个大学，对吧？Later 后来稍后，
+
+### 画面 00:10:36
+
+![课件截图](frames/frame_000039.webp)
+
+文字识别：L33 / 3On arriving in England, they were taken to / the Crystal Palace by train. There were six / million visitors in all/and the profits (from the / exhibition) / L55, / 5were used to build museums / and colleges. Later, the Crystal Palace was / 'moved to South London. It remained one of / the most famous buildings in the world until / it was "'burnt down in 1936.
+
+### 画面 00:10:55
+
+![课件截图](frames/frame_000040.webp)
+
+文字识别：L33 / 3On arriving in England, they were taken to / the Crystal Palace by train. There were six / million visitors in all/and the profits (from the / exhibition) / L55, / 5were used to build museums / and colleges. Later, the Crystal Palace was / 'moved to South London. It remained one of / the most famous buildings in the world until / it was "'burnt down in 1936.
+
+## 00:11:00–00:11:30
+
+The Crystal Palace was moved to South London. 所以这个水晶宫啊被搬到了伦敦的南部，South London，伦敦南部啊，南伦敦。It remained one of the most famous buildings in the world until it was burned down in 196呃36. 看一下这句话，首先有一个until，一个until你就知道了，它其实前后两句话，对吧？我们先看
+
+### 画面 00:11:25
+
+![课件截图](frames/frame_000041.webp)
+
+文字识别：L33 / 3On arriving in England, they were taken to / the Crystal Palace by train. There were six / million visitors in all/and the profits (from the / exhibition) / L55, / 5were used to build museums / and colleges. Later, the Crystal Palace was / 'moved to South London. It remained one of / the most famous buildings in the world ugcil / it was "'burnt down in 1936.
+
+## 00:11:30–00:12:00
+
+前面这句话，叫做它remain。我们早在新一就学过，叫remain in bed，停留在床上对吧？停在床上，待在床上，就类似于stay对吧？那这里的remain其实就有点像，你甚至可以不单独翻，它就有点像it was是啊，保持这个状态，保持哪个状态呢？One of the most famous buildings，说最著名的建筑
+
+### 画面 00:11:36
+
+![课件截图](frames/frame_000042.webp)
+
+文字识别：L33 / 3On arriving in England, they were taken to / the Crystal Palace by train. There were six / million visitors in all/and the profits (from the / exhibition) / L55, / 5were used to build museums / and colleges. Later, the Crystal Palace was / 'moved to South London. It remained one of / the most famous buildings in the world ugcil / it was ~7"burnt down in 1936.
+
+### 画面 00:11:42
+
+![课件截图](frames/frame_000043.webp)
+
+文字识别：L33 / 3On arriving in England, they were taken to / the Crystal Palace by train. There were six / million visitors in all/and the profits (from the / exhibition) / L55, / 5were used to build museums / and colleges. Later, the Crystal Palace was / 'moved to South London. It remained one of / the most famous buildings in the world ugcil / it was "'burnt down in 1936.
+
+## 00:12:00–00:12:30
+
+物之一在全世界，就它呀一直保持着这样一个，就是全世界都很有名的这样建筑物的这个状态，直到 until 直到 it was burned down in 1960 uh 36，直到它被焚毁了，这是个被动啊，burned down 是七十一课咱们学过的一个短语，对吧？啊，被焚毁了，在一九三六年，对吧？你看英国的好多东西都被焚毁了，对吧？这国会大
+
+### 画面 00:12:12
+
+![课件截图](frames/frame_000044.webp)
+
+文字识别：L33 / 3On arriving in England, they were taken to / the Crystal Palace by train. There were six / million visitors in all/and the profits (from the / exhibition) / L55, / 5were used to build museums / and colleges. Later, the Crystal Palace was / 'moved to South London. It remained one of / the most famous buildings in the world upcil / it was "'burnt down in 1936.
+
+## 00:12:30–00:13:00
+
+厦啊，等等等等啊，都被焚毁了。这 Crystal Palace 被焚毁了。 Okay, 那 on arriving, 刚才我们刚说完，立刻来个电影片段复习一下。三十三课，对吧？ But on arriving, I found that it was no longer there. 好，本课的习惯用法呢，主要有三个，我们简单的迅速过一遍就好了。第一个叫 be made of。 那你看，我可以就问一个问题，说，哎，What is this made of？啊，这是什么玩意儿制成的呢？ Next one,
+
+### 画面 00:12:35
+
+![课件截图](frames/frame_000045.webp)
+
+文字识别：But on arriving, / I found that it was no longer there. / Lolita / (1997)
+
+### 画面 00:12:43
+
+![课件截图](frames/frame_000046.webp)
+
+文字识别：But on arriving, / I found that it was no longer there. / Lolita / (1997)
+
+### 画面 00:12:45
+
+![课件截图](frames/frame_000047.webp)
+
+文字识别：But on arriving, / I found that it was no longer there. / Lolita / (1997)
+
+### 画面 00:12:47
+
+![课件截图](frames/frame_000048.webp)
+
+文字识别：习惯用法造句 / be made of... / of all time / in all
+
+### 画面 00:12:49
+
+![课件截图](frames/frame_000049.webp)
+
+文字识别：习惯用法造句 / be made of... / of all time / in all
+
+### 画面 00:12:51
+
+![课件截图](frames/frame_000050.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 囊助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be made of...
+
+### 画面 00:12:53
+
+![课件截图](frames/frame_000051.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 囊助子计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be made of... /  What is this made of?
+
+### 画面 00:12:55
+
+![课件截图](frames/frame_000052.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be made of... /  What is this made of?
+
+### 画面 00:12:57
+
+![课件截图](frames/frame_000053.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be made of... /  What is this made of?
+
+### 画面 00:12:59
+
+![课件截图](frames/frame_000054.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be made of... /  What is this made of? /  It's like that he is made of iron.
+
+## 00:13:00–00:13:30
+
+so it's like that. He's made of iron. You注意，你看这里说就好像是他是由铁制成，好像是这个like不是喜欢，是像，就像他是由铁铸成的一样。其实就说这个人很，对吧？很结实，或者说这个呃有用不完的力气等等，对吧？哎，或者说这个很强壮啊，就像他是由铁铸成的一样啊。Next
+
+### 画面 00:13:01
+
+![课件截图](frames/frame_000055.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be made of... /  What is this made of? /  It's like that he is made of iron.
+
+### 画面 00:13:04
+
+![课件截图](frames/frame_000056.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 妻助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be made of... /  What is this made of? /  It's like that he is made of iron.
+
+### 画面 00:13:07
+
+![课件截图](frames/frame_000057.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 辜助子计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be made of... /  What is this made of? /  It's like that he is made of iron.
+
+### 画面 00:13:09
+
+![课件截图](frames/frame_000058.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be made of... /  What is this made of? /  It's like that he is made of iron.
+
+### 画面 00:13:14
+
+![课件截图](frames/frame_000059.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be made of... /  What is this made of? /  It's like that he is made of iron.
+
+### 画面 00:13:18
+
+![课件截图](frames/frame_000060.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be made of... /  What is this made of? /  It's like that he is made of iron.
+
+### 画面 00:13:20
+
+![课件截图](frames/frame_000061.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 喜助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be made of... /  What is this made of? /  It's like that he is made of iron.
+
+### 画面 00:13:23
+
+![课件截图](frames/frame_000062.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 辜助子计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be made of... /  What is this made of? /  It's like that he is made of iron.
+
+### 画面 00:13:25
+
+![课件截图](frames/frame_000063.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be made of... /  What is this made of? /  It's like that he is made of iron.
+
+### 画面 00:13:29
+
+![课件截图](frames/frame_000064.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be made of... /  What is this made of? /  It's like that he is made of iron. /  The bridge is made of wood. is/what/ / why...
+
+## 00:13:30–00:14:00
+
+one, so the bridge is made of wood. 这个就很简单了啊。桥是这个木头制成的，对吧？四句型转换，对不对？Of all time, 有史以来，对吧？始终啊。So he is still the greatest basketball player of all time. 说他现在还依旧是啊，始终还是最伟大的篮球运动员。Of all time, 有史以来，对吧？他依旧是有史以来最伟
+
+### 画面 00:13:34
+
+![课件截图](frames/frame_000065.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be made of... /  What is this made of? /  It's like that he is made of iron. /  The bridge is made of wood. is/what/ / why...
+
+### 画面 00:13:39
+
+![课件截图](frames/frame_000066.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 妻助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / of all time
+
+### 画面 00:13:44
+
+![课件截图](frames/frame_000067.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 囊助学计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / of all time /  He is still the greatest basketball player of / all time.
+
+### 画面 00:13:46
+
+![课件截图](frames/frame_000068.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 喜助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / of all time /  He is still the greatest basketball player of / all time.
+
+### 画面 00:13:49
+
+![课件截图](frames/frame_000069.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 辜助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / of all time /  He is still the greatest basketball player of / all time.
+
+### 画面 00:13:54
+
+![课件截图](frames/frame_000070.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / of all time /  He is still the greatest basketball player of / all time.
+
+### 画面 00:13:57
+
+![课件截图](frames/frame_000071.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / of all time /  He is still the greatest basketball player of / all time.
+
+### 画面 00:13:59
+
+![课件截图](frames/frame_000072.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 奏助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / of all time /  He is still the greatest basketball player of / all time.
+
+## 00:14:00–00:14:30
+
+大的，比如说 Michael Jordan，对吧？Okay, so he's one of the greatest actors of all time. 哎，他是这个呃有史以来啊，始终都是怎么样的最伟大的演员之一啊。比如说 Charles Chaplin，对吧？哎啊，这个卓别林。Okay, of all time, 有史以来。那注意力集中吧，咱听这个电影片段啊。 It's one of my favorite shows of all time.
+
+### 画面 00:14:02
+
+![课件截图](frames/frame_000073.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 妻助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / of all time /  He is still the greatest basketball player of / all time.
+
+### 画面 00:14:04
+
+![课件截图](frames/frame_000074.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / of all time /  He is still the greatest basketball player of / all time. /  He's one of the greatest actors of all time.
+
+### 画面 00:14:09
+
+![课件截图](frames/frame_000075.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 子计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / of all time /  He is still the greatest basketball player of / all time. /  He's one of the greatest actors of all time.
+
+### 画面 00:14:14
+
+![课件截图](frames/frame_000076.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / of all time /  He is still the greatest basketball player of / all time. /  He's one of the greatest actors of all time.
+
+### 画面 00:14:19
+
+![课件截图](frames/frame_000077.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / of all time /  He is still the greatest basketball player of / all time. /  He's one of the greatest actors of all time.
+
+### 画面 00:14:23
+
+![课件截图](frames/frame_000078.webp)
+
+文字识别：It's one of my favorite shows of all time. / CAUIFORNI / LLYWOO / Waiting for Guffman / (1996)
+
+### 画面 00:14:28
+
+![课件截图](frames/frame_000079.webp)
+
+文字识别：It's one of my favorite shows of all time. / CALIFORNI / LIYWOO / Waiting for Guffman / (1996)
+
+## 00:14:30–00:15:00
+
+Okay,下一个 in all啊，那我们看这样一个话，总共嘛。说 There are six people in all in my family. 说在我们家里边总共是有六个人的啊，总共是有六个人的。 Okay，啊，这个 in all 是一个比较边边角角的小的短语啊，这个基本多看几遍就可以了。比如再来一句话说， It said that there were about five thousand people in all. 说据说五十八课咱们学的， It said that，对吧？据说说总共有五千个人
+
+### 画面 00:14:30
+
+![课件截图](frames/frame_000080.webp)
+
+文字识别：It's one of my favorite shows of all time. / Waiting for Guffman / (1996)
+
+### 画面 00:14:32
+
+![课件截图](frames/frame_000081.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 美助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in all
+
+### 画面 00:14:34
+
+![课件截图](frames/frame_000082.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in all /  There are six people in allin my family.
+
+### 画面 00:14:39
+
+![课件截图](frames/frame_000083.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 妻助字计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in all /  There are six people in allin my family.
+
+### 画面 00:14:44
+
+![课件截图](frames/frame_000084.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in all /  There are six people in allin my family.
+
+### 画面 00:14:49
+
+![课件截图](frames/frame_000085.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in all /  There are six people in all in my family. /  It's said that there were about 5,000 / people in all. L58
+
+### 画面 00:14:54
+
+![课件截图](frames/frame_000086.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 子计划 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in all /  There are six people in all in my family. /  It's said that there were about 5,000 / people in all. L58
+
+### 画面 00:14:57
+
+![课件截图](frames/frame_000087.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in all /  There are six people in allin my family. / It's said that there were about 5,000 / people in all. L58
+
+### 画面 00:14:59
+
+![课件截图](frames/frame_000088.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in all /  There are six people in allin my family. /  It's said that there were about 5,000 / people in all. L58
+
+## 00:15:00–00:15:30
+
+啊，这个你加不加这个 in all 是其实没有问题，不加可以啊，完全没有问题，对吧？好，recap 一共三个习惯用法啊，三个习惯用法。家庭作业，习惯用法造句或造对话，文章熟读成诵啊，这个是我们课课都要完成的任务，对吧？你完成的越好，你自己心里提升的越大啊，这个玩意儿是不能偷懒的啊。到本课其实偷懒和不偷懒差别已经非常大了，
+
+### 画面 00:15:05
+
+![课件截图](frames/frame_000089.webp)
+
+文字识别：网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / in all /  There are six people in all in my family. / It's said that there were about 5,000 / people in all. L58
+
+### 画面 00:15:07
+
+![课件截图](frames/frame_000090.webp)
+
+文字识别：Recap / be made of... / Expression / of all time / in all
+
+### 画面 00:15:09
+
+![课件截图](frames/frame_000091.webp)
+
+文字识别：Recap / be made of... / Expression / of all time / in all
+
+### 画面 00:15:11
+
+![课件截图](frames/frame_000092.webp)
+
+文字识别：Recap / be made of... / Expression / of all time / in all
+
+### 画面 00:15:13
+
+![课件截图](frames/frame_000093.webp)
+
+文字识别：1. / 习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句
+
+### 画面 00:15:15
+
+![课件截图](frames/frame_000094.webp)
+
+文字识别：1. / 习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句
+
+### 画面 00:15:17
+
+![课件截图](frames/frame_000095.webp)
+
+文字识别：习惯用法造句/对话 / 1. / 【习惯用法造句指南】 / 每个5句 / 文章跟读至熟读成诵 / 内化单词+语法+习惯用法 / 听力+口语+写作练习
+
+### 画面 00:15:19
+
+![课件截图](frames/frame_000096.webp)
+
+文字识别：习惯用法造句/对话 / 1. / 【习惯用法造句指南】 / 每个5句 / 文章跟读至熟读成诵 / 内化单词+语法+习惯用法 / 听力+口语+写作练习
+
+### 画面 00:15:24
+
+![课件截图](frames/frame_000097.webp)
+
+文字识别：习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句 / 文章跟读至熟读成诵 / 内化单词+语法+习惯用法 / 听力+口语+写作练习 / 3. / 重复间隔（置顶留言）
+
+### 画面 00:15:27
+
+![课件截图](frames/frame_000098.webp)
+
+文字识别：1. / 习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句 / 文章跟读至熟读成诵 / 内化单词+语法+习惯用法 / 听力+口语+写作练习 / 3. / 重复间隔（置顶留言）
+
+### 画面 00:15:29
+
+![课件截图](frames/frame_000099.webp)
+
+文字识别：1. / 习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句 / 文章跟读至熟读成诵 / 内化单词+语法+习惯用法 / 听力+口语+写作练习 / 3. / 重复间隔（置顶留言）
+
+## 00:15:30–00:16:00
+
+因为已经八十克了啊。然后置顶留言去找这个课堂笔记啊、学习材料啊等等等等。那以上呢就是本期视频的全部内容了。如果各位喜欢我们的课程呢，欢迎各位关注、订阅、一键三连、分享给那些需要的朋友，来帮助我们快速成长。See you next time.
+
+### 画面 00:15:32
+
+![课件截图](frames/frame_000100.webp)
+
+文字识别：1. / 习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句 / 文章跟读至熟读成诵 / 内化单词+语法+习惯用法 / 听力+口语+写作练习 / 3. / 重复间隔（置顶留言）
+
+### 画面 00:15:34
+
+![课件截图](frames/frame_000101.webp)
+
+文字识别：1. / 习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句 / 文章跟读至熟读成诵 / 内化单词+语法+习惯用法 / 听力+口语+写作练习 / 3. / 重复间隔（置顶留言）
+
+### 画面 00:15:36
+
+![课件截图](frames/frame_000102.webp)
+
+文字识别：毫助字计划一們 / 👍
+
+### 画面 00:15:41
+
+![课件截图](frames/frame_000103.webp)
+
+文字识别：助字计划 / 不
+
+### 画面 00:15:49
+
+![课件截图](frames/frame_000104.webp)
+
+文字识别：CAPSULEACADEMY / 胶囊助学计划 / 『 / 小红书 / OE
+
+### 画面 00:15:51
+
+![课件截图](frames/frame_000105.webp)
+
+文字识别：CAPSULEACADEMY / 胶囊助学计划 / 『 / 小红书 / OE
+
+### 画面 00:15:57
+
+![课件截图](frames/frame_000106.webp)
+
+文字识别：珈字計物 / CAPSULEACADEMY / 胶囊助学计划 / 『 / 小红书 / Creator / Leo & Berlin / OE
+
+### 画面 00:15:59
+
+![课件截图](frames/frame_000107.webp)
+
+文字识别：bilbili / 胶囊助学计划
+
+## 00:16:00–00:16:01
+
+
+
+### 画面 00:16:00
+
+![课件截图](frames/frame_000108.webp)
+
+文字识别：bilbili / 胶囊助学计划
+
