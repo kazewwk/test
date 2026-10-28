@@ -1,0 +1,132 @@
+# L041 单词
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello, everyone. Welcome to Capsule Academy. This is Leo. Today we're going to learn New Concept English Book Two, Lesson Forty One, Words. Okay, hope you guys enjoy it.那我们先看第一个单词啊，跟我一起读一下，看着音标，合起来读起来叫做 rude, rude. Okay, very good.那这个单词其实我们在第一课咱们就见过了，只不过第一课我们见的它是副词，叫 rudely，对吧？非常粗鲁地。然后呢？
+
+## 00:00:28–00:01:02
+
+它是副词，叫 rudely，对吧？非常粗鲁的。然后呢，现在见的是形容词，叫做 rude，啊，粗鲁的，对吧？OK，呃，它是一个形容词。那你想，我们形容词去单词造句的时候，我们由词性就可以给它加个名词，然后再想个动词，对吧？就是形容词往往是附着于名词的上面的。OK，比如说 the hostess who we met last night was very rude。你看啊，the hostess was very rude。其实这句话对于各位来说。
+
+## 00:00:58–00:01:32
+
+Is was very rude.其实这句话对于各位来说，它的语法难度就是新概念一册前二十课的语法，只不过我们把 is 换成了 was，对吧？然后中间为了修饰这个 hostess，又加了一个小的二十八课咱们学过的定语从句，叫做昨晚我们见到的那个女主人当时特别的粗鲁，对不对啊？但本质上就是 the hostess is very rude，是吧？前二十课咱们就学过了，新概念还是一册啊。
+
+## 00:01:28–00:02:02
+
+吧，前二十课咱们就学过了，新概念还是一册啊。OK，接下来呢，比如说我们四十课刚刚学过的虚拟语气，不知道各位还记不记得？我们如何判断呢？第一，对吧？啊，第一啊，were，然后if引导，然后were，哎，一个圈两个这个下划线，就告诉各位它是定语从句了，对吧？这是基本啊，这它是这个虚拟语气了啊，这是它基本的结构。然后呢，它的含义叫与现在事实相反或发生情况几率极低，所以if I were you叫如果。
+
+## 00:01:58–00:02:32
+
+生情况几率极低，所以 if I were you，叫如果我是你，与现在事实情况相反。 I wouldn't be so rude，我就不会这样的粗鲁，对吧？ I wouldn't be so rude。 OK，再来一个，比如说三十五课我们学过叫 so 点点点 that so 后边加形容词，比如说 he is so rude that they 点点点，对吧？哎，他是如此的粗鲁，以至于他们不管是怎么样了，对吧？这是您自己尝试去补充一下，这是咱们的家庭作业啊。但是呢，我们利用。
+
+## 00:02:28–00:03:02
+
+是去补充一下，这是咱们的家庭作业啊。但是呢，我们利用这句话尝试去复习的是 so 形容词 that OK，玩一个。好，那下一个单词跟我们一起读一下，叫做 mirror mirror。 OK，玩一个。那这个单词呢，就是镜子的意思，对吧？呃，那它本质上是个名词。其实名词想去造句，你就想一下六一二三四五六最常见的，像这种名词镜子最常见的，要么主语，要么宾语，要么一，要么三，对吧？所以这句话就变成了叫做 the mirror。
+
+## 00:02:58–00:03:32
+
+宾语要么一要么三，对吧？所以这句话就变成了叫做 the mirror was broken by the hostess. Okay, 说这个镜子被打碎了，被谁打碎的呢？被这个 hostess，被这个女主人打碎了。这是我们第十课学的。Okay, continue. 说 they must have bought the mirror last year. 他们之前啊，哎，这十七课学的叫 must have done，对吧？他们当时一定是去年买的这个镜子。Must have done, must have bought. Okay, very good. 这是复习了一下之前我们学过的。
+
+## 00:03:28–00:04:02
+
+Must have bought. Okay, one, one. 这是复习了一下之前我们学过的这个动词加动词的变化，对吧？ Next one, 我们还可以说三十八课的这句话叫做 She had no sooner taken out the mirror than it fell on the floor. 说她几乎是刚刚拿出这个镜子，这个镜子就掉在地面上，摔碎了，对吧？ Okay, 这是三十八课啊。 No sooner than这样的一个句式，那儿一个。那 mirror 这个单词，各位能造非常非常多的句子，对吧？啊， Okay, 呃。
+
+## 00:03:58–00:04:32
+
+各位能造非常非常多的句子，对吧？啊，OK，呃，那不多说了。下一个单词跟我读一下，叫做 hole。 hole，它是洞的意思，对吧？比如说我们墙上现在这个地方，你看到有一个洞，那我们管它叫做 a hole in the wall。所以我们可以造一个句子叫做 Look, there is a hole in the wall。说，瞧这个图片当中，说在墙里面有一个洞，对吧？OK，啊，很简单。原文呢给了我们这样的一个小的短语啊，在文章当中出现的，叫做
+
+## 00:04:28–00:05:02
+
+给了我们这样的一个小的短语啊，在文章当中出现的叫做 modern chairs with holes in it. Very good. 好，那这地方呢， modern chairs 叫做现代的这种椅子 with holes in it. OK，首先 with 其实就是和，在这个地方你可以这样去理解啊，它是比这个要复杂一点的一个语法，或者说你把它当做一个小的介词引导的定语，对吧？呃，有洞的，在上面有洞的那个现代的椅子，你可以理解为，比如说是编织的，或者说反正编。
+
+## 00:04:58–00:05:32
+
+现代的椅子，你可以理解为，比如说是编织的，或者说反正编完了之后，这个椅子后边背靠着都是洞，对吧？OK，呃，那这个 modern chairs with holes in it，其实这里边的核心词是 chairs。OK， modern 是说 chairs 的，with holes in it 放在后面还是说 chairs 的。所以其实你看，我们现在本来我是要用 hole 去造句，但 hole 这个单词其实不是那么好造句。但是呢，我拿来了一个短语叫 modern chairs with holes in it。
+
+## 00:05:28–00:06:02
+
+那我拿来了一个短语叫 modern chairs with holes in it，所以现在我们又判断了这一堆单词的核心单词其实是 chair，但我只要把这个带着 modern 带着 with holes in it 的这个 chair 的这个小的短语啊，造出句子来之后，holes 已经在里边了，对吧？OK，啊，刚才这句话说的稍微有一点点复杂，那我们直接看就行了，对吧？这样说容易大家懵。比如说 she dreamed of buying a modern chair。
+
+## 00:05:58–00:06:32
+
+She dreamed of buying a modern chair with holes in it for a long time.你看啊，这里面我们再去造句子的时候，其实 hole 不是重点，重点是 chair。看见了吧？她 dreamed of buying 的是 chair，而不是 holes。但是因为 with holes in it 是连着这个 chair 的，或者说后置去修饰这个 chair 的，所以造这句话的时候必然就带着 hole 这个单词了。我不知道各位能不能理解我们这个地方的思路啊？就是说，我想用后句造。
+
+## 00:06:28–00:07:02
+
+各位能不能理解我们这个地方的思路啊？就是说，我想用后句造句，但是不是那么容易。但是呢，modern chairs with holes in it，这里边的核心单词是 chair。chair 很容易造句，对吧？修啊，买啊，卖啊，都很容易造句。我只要带着后边的 with holes in it 就可以了，对吧？OK，比如说，你看，我们再来一个说，his eyes were fixed on that hole in the wall。那这是我直接用后句造了一个句子啊，就不是 chair 了。不过他用
+
+## 00:06:58–00:07:32
+
+又去造了一个句子啊，就不是 chair 了。不过他用的是第四十课的那个叫 eyes be fixed on，对吧？他的眼睛被固定在了，或者叫做凝视着墙上的那个洞。OK，玩一个，我们可以说是一个猫嘛，对不对啊？Next one，下一个单词我们一起读，叫做 remark。remark，好，remark 这个单词呢，我们真拿它去造句不是特别容易，就立刻能造出来，对吧？你比如说像我，乍一想我就没有想到说我用 remark 应该如何去造句。
+
+## 00:07:28–00:08:02
+
+我就没有想到，说我用 remark 应该如何去造句，确保对于各位来说，各位这个水平之下能完全理解，对吧？所以啊，我们就用了一个小的方法，叫做原文摘抄再加上变。那我们在这儿就处理一下这个思路啊。比如说原文其实给了一句话叫 I remarked suddenly，我突然间评论到。好，然后呢，我在后边加了个斜线，告诉你 rudely，也就是说，你看啊，你分析一下 I remarked suddenly，它其实如果我们用六一二三四五六的思，
+
+## 00:07:58–00:08:32
+
+它其实，如果我们用六一二三四五六的思路去理解它，I 是一，remark 是二，suddenly 就是四，对吧？那我一旦知道了 suddenly 是四，我可以突然间评论，我是不是也可以 rudely 去评论？我可以很粗鲁的去评论，对吧？也可以 angrily 去评论。于是，在四这个地方，你去换各种各样的单词的时候，换各种副词的时候，我可能就造了一个新的句子。比如说，对于各位来说最简单的原文。
+
+## 00:08:28–00:09:02
+
+能就造了一个新的句子，比如说，对于各位来说最简单的原文给的是 I remarked sadly。对于各位来说，你如果能造出来 I remarked rudely，我就觉得这是你的新的句子了。其次，各位想这个思路啊，主语现在是 I，我很简单，最简单粗暴一个思路，我能不能把 I 换成 Leo？能不能换成 He、 She、 They？ Very good，都是可以的，对不对？我主语又能换，但你二是不能换的，二要放在那个地方不能动啊。其次，我现在判断了他的六一二三四五六。
+
+## 00:08:58–00:09:32
+
+其次，我现在判断了他的六一二三四五六，他没有地点，没有时间，我再加上地点时间不就行了嘛？比如说，She remarked rudely at the dinner party last night. 那我们再看一下底下这句话是怎么来的。底下这句话其实是你现在看的是不是比我们原文长了很多？原文就三个单词，对吧？现在变得很长很长了。但是各位要注意这个思路是怎么走过去的。首先，我把 I 换成了 She，这很容易。 Remark 不要变。 Suddenly 我换成了 rudely。
+
+## 00:09:28–00:10:02
+
+这很容易. Remark不要变. Suddenly，我换成了rudely，然后我自己随便加了一个地点，随便加了一个时间。您自己也能做到。你可不可以说She remarked rudely at the theater this morning？完全可以，对吧？这您就随便换了地点、时间，您随便换了，对不对？只要保证它是过去而不是将来就可以了。OK，玩一个。好，再接下来，我现在已经把原文很简单的一句话叫I remarked suddenly变成了这么长的一句话了。之后这个事儿还。
+
+## 00:09:58–00:10:32
+
+Remarked sadly变成了这么长的一句话了之后，这个事儿还没有结束。我们还可以继续啊，我们现在已经用到这三个了，对吧？我们还可以继续去进行四句型的转换，比如说d的提前变一般疑问句，对吧？比如说各种特殊疑问词。各位，我希望通过这个点告诉各位，还是叫做如何用单词去造句，对吧？当我不会的前提之下，你看我如果现在想用remark去造句，我至少造出来了一个句子、两个句子、三个句子、四个句子和五个句子。
+
+## 00:10:28–00:11:02
+
+一个句子，两个句子，三个句子，四个句子和五个句子。家庭作业，一个单词造五个句子。您完成了是不是？OK，不多说了啊。下一个单词，跟我一起读一下，叫做 remind。Remind。好，这个单词我想提一个小点。十六课咱们见过这个单词的名词叫 reminder。啊，说 this note is only a reminder。我不知道各位记不记得，这是我们十六课对吧？把车停错位置，交警给贴了一张，还不是罚单，贴了一张便签儿在车上。
+
+## 00:10:58–00:11:32
+
+一张还不是罚单，贴了一张便签儿在车上，对吧？说 this note is only a reminder，叫提醒。那动词呢？其实之前我们也见过，今天我们再复习一下，叫 remind somebody of something或者somebody，叫做使某人想起了某事或某人。比如说， she reminds me。好，你看 me 就是 somebody，对吧？后面是 somebody 或 something。哎， of the hostess，对吧？她
+
+## 00:11:28–00:12:02
+
+Of the hostess,对吧？他使我想起了那个女主人，哪个女主人呢？We met last night.我们昨天晚上遇到的那个女主人。您想一下，这句话当中我们用到了多少的语法学过的语法、单词和习惯用法？第一，Remind somebody of something or somebody是我们之前学过的。第二，这地方有一个一般现在时，对吧？第三，后边有一个定语从句，who还被省略掉。
+
+## 00:11:58–00:12:32
+
+吧。第三后边有一个定语从句，who还被省略掉了，对不对？Hostess是我们上一课刚刚学过新的单词，这就叫做用单词造句的一个奥秘，就是把之前的各种东西拉过来和今天的东西连到一起，好吧？Next one，我们还可以说叫做He reminds me of my father，他使我想起了我的父亲。Okay，very good。好，然后你再变四个句型，这是一个最基础、最经典的单词造句的手段，对吧？
+
+## 00:12:28–00:13:02
+
+最基础、最经典的单词造句的手段，对吧？啊，不要放弃它啊！OK。接下来呢，我们看一个经典的电影。这个电影当中就有这样一句话，叫“It reminds me of Beethoven.” OK，他说他使我想起了贝多芬啊。OK，Very good。那注意力集中啊。I like these calm little moments before the storm. It reminds me of Beethoven.
+
+## 00:12:58–00:13:32
+
+Can you hear it? It's like when you put your head to the grass, you can hear it crawling. You can hear the insects. Okay, another one. It reminds me,是吧？它使我想起了贝多芬。Another one.下一个单词，我们看这个单词其实是两个单词组成的，一个叫做 light，灯光，一个叫做
+
+## 00:13:28–00:14:02
+
+单词组成的一个叫做 light，灯光；一个叫做 house，房子；lighthouse，灯塔。啊，它本质上是个名词。你想，我单词现在想去造句，我要首先第一，我肯定要找一堆动词，对吧？其次，它在六一二三四五六当中，一三五肯定是它经常出现的位置，对吧？它经常可能，比如说作为主语，这个灯塔怎么怎么样了？经常处于的是谓语啊，呃，宾语，对吧？也可以当做一个地点，对吧？比如说，那我们拿它去造句，叫做 the lighthouse。六一二三四五六当中。
+
+## 00:13:58–00:14:32
+
+造句叫做 the lighthouse. 六一二三四五六当中，我选择把它放在一的位置上了。后面呢叫 must have been built，叫当时一定被建造。二十一课咱们学的语法 must have been done。哎，我们几乎是经常是能复习，我就把它拿出来复习一下。这个是各位最容易忘的，叫当时一定是被，对吧？好， years ago，许多年一定是被许多一定是许多年前被哎这个建造的。 OK，这个灯塔。 Next one，四十课咱们刚学的虚拟语气。 If we were on holiday， we
+
+## 00:14:28–00:15:02
+
+学的虚拟语气，If we were on holiday, we would go to that lighthouse.说如果我们是在度假，那我们会去那个灯塔的。但很可惜，We were not on holiday at that.啊，We are not on holiday，对吧？与现在事实相反。OK， next one，说She dreamed of climbing up the lighthouse when she was young.说她当她还是小孩的时候，她一直很渴望爬上这个灯塔，对吧？OK，不多说了。那Recap。
+
+## 00:14:58–00:15:32
+
+灯塔对吧？OK，不多说了。那 recap expression 本课最重要的是这些呃，这个小的除了单词以外是这个小的习惯用法。之前我们还学过对吧？所以我们不多说了。家庭作业单词造句或者是对话，对话就是你可以很简单，你不用造很多是吧？就一问一答这事儿就结了，可以啊。然后呢，反复听这个电影片段。OK，那以上就是本期视频的全部内容了。如果各位喜欢我们的课程呢，欢迎各位关注、订阅、一键三连，分享给那些需要的朋友来帮。
+
+## 00:15:28–00:15:47
+
+关注、订阅、一键三连，分享给那些需要的朋友，来帮助我们快速成长。See you next time.
+
