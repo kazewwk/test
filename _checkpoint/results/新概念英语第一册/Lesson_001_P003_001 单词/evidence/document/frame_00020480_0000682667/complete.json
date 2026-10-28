@@ -1,0 +1,98 @@
+{
+  "artifacts": {
+    "1793147555_1148.md": "1c1e1fe6cb66c4090e4c848b10c3083593bdd7d0944167f052136ff51fcacc37",
+    "1793147555_1148_res.json": "e42c8554ca9c347115d4b3bd22bc7e9ff12db61d79d2c0feaa583618178b550b",
+    "region_repairs.md": "7ccd87155fd85dc59e5057b46d300b9fe2fba3550e1ac42aa6ffa55b7f27f138",
+    "repairs/region_000/1793147555_4046.md": "1b16b1df538ba12dc3f97edbb85caa7050d46c148134290feba80f8236c83db9",
+    "repairs/region_000/1793147555_4046_res.json": "9303ba106a512ecdceae7665ee78fb176c6fb546b5c5695cbf2bcbd2a6776fb6",
+    "repairs/region_000/source.png": "88019e1ec72658764141f1918280aa9a3e5d4eace99f312855f617f7df2efffb",
+    "repairs/region_003/1793147556_7462.md": "2cda85e504e155f30a40f1f1cc4e83f3f8ec178033f6b6170cc9381f5e4f9d3d",
+    "repairs/region_003/1793147556_7462_res.json": "89354b7463f097efad900c1d19eb4c27be7cc58f7973297960442083337eeec2",
+    "repairs/region_003/source.png": "65407957d570f58a1f58e0b162710e4707d00e3c6d837cf58c9c059e617d59d6"
+  },
+  "input_fingerprint": "180a3bb4f6351756df82a88d4c17115342c9c700fd474071e3c38cfedc00fd0e",
+  "image_sha256": "bef859813047c44f6433b601df2f4cd0820c327f61b45491684a071809bb9e26",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 1.6265587620000588,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1654,
+        25,
+        1891,
+        104
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1654.0,
+          25.0
+        ],
+        [
+          1891.0,
+          25.0
+        ],
+        [
+          1891.0,
+          104.0
+        ],
+        [
+          1654.0,
+          104.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "n",
+      "block_bbox": [
+        960,
+        29,
+        1280,
+        228
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "she",
+      "block_bbox": [
+        215,
+        116,
+        344,
+        197
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        960,
+        29,
+        1280,
+        228
+      ],
+      "ppocr_candidate": "m市",
+      "recovered_text": "n",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        215,
+        116,
+        344,
+        197
+      ],
+      "ppocr_candidate": "she",
+      "recovered_text": "she",
+      "source_crop": "repairs/region_003/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "verification": "machine_extracted_unverified"
+}
