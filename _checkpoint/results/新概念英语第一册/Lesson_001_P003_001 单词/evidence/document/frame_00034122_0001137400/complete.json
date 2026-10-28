@@ -1,0 +1,203 @@
+{
+  "artifacts": {
+    "1793152345_5533.md": "456f421082539e57757411a0f074c3c99d50b751e3e5555e856578d6189076c7",
+    "1793152345_5533_res.json": "ed8e71f054e35922867ea4d92c3a2d66f893d923f33b34172fae21e1f4d77c8f",
+    "imgs/img_in_header_image_box_1649_30_1890_101.jpg": "3ac9f6a5f97d1d7422d2d740a0af4bbf71b15189b76025260063b9e429556fbf",
+    "imgs/img_in_image_box_0_0_642_1077.jpg": "2f0b933d9fa686522f5c6fc01b125529c6ee683ac8f80f301692c73882e3c53d",
+    "imgs/img_in_image_box_1251_299_1754_1080.jpg": "89a6f6e9716552a90339a2668378026f2063df631e9696b1c1d7c72acd0fb56b",
+    "region_repairs.md": "09d8abe1aa30d9994daa5bc3410ec5a5caf69beb6dfc39a4ee8b08f866de16be",
+    "repairs/region_000/1793152350_6691.md": "f78bebf2440692091456f22163be9444f5141bb202719ba05b10698a6037fdb2",
+    "repairs/region_000/1793152350_6691_res.json": "ad17e2ea3e52974742dc468ad48c6d2785adb8b47ba3d0f36f31ed4789ae26df",
+    "repairs/region_000/source.png": "e28e4b42b1f92beeb8a0010302549b66a47f8dc53b52f86e5d58ed9edae5d5e1"
+  },
+  "input_fingerprint": "d30fed7ed1edb1bd376ce3b660826ebfb3e2d38905aa92854e64eda81a45d729",
+  "image_sha256": "894b3aa43995b0af4266472f74fe76456f2e00a377d7241f748206bfbd72e100",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 84.62623276503291,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 billibil",
+      "block_bbox": [
+        1649,
+        30,
+        1890,
+        101
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1649.0,
+          30.0
+        ],
+        [
+          1890.0,
+          30.0
+        ],
+        [
+          1890.0,
+          101.0
+        ],
+        [
+          1649.0,
+          101.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "unspeaka",
+      "block_bbox": [
+        0,
+        0,
+        642,
+        1077
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          0.0,
+          -3.0
+        ],
+        [
+          642.0,
+          -3.0
+        ],
+        [
+          642.0,
+          1077.0
+        ],
+        [
+          0.0,
+          1077.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "Thank you very much",
+      "block_bbox": [
+        646,
+        505,
+        1278,
+        578
+      ],
+      "block_id": 2,
+      "block_order": 1,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          646.0,
+          505.0
+        ],
+        [
+          1278.0,
+          505.0
+        ],
+        [
+          1278.0,
+          578.0
+        ],
+        [
+          646.0,
+          578.0
+        ]
+      ]
+    },
+    {
+      "block_label": "footer",
+      "block_content": "unspeakable",
+      "block_bbox": [
+        511,
+        909,
+        695,
+        948
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          511.0,
+          909.0
+        ],
+        [
+          695.0,
+          909.0
+        ],
+        [
+          695.0,
+          948.0
+        ],
+        [
+          511.0,
+          948.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1251,
+        299,
+        1754,
+        1080
+      ],
+      "block_id": 4,
+      "block_order": null,
+      "group_id": 4,
+      "block_polygon_points": [
+        [
+          1251.0,
+          299.0
+        ],
+        [
+          1754.0,
+          299.0
+        ],
+        [
+          1754.0,
+          1080.0
+        ],
+        [
+          1251.0,
+          1080.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "Bilibili",
+      "block_bbox": [
+        1732,
+        21,
+        1899,
+        114
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1732,
+        21,
+        1899,
+        114
+      ],
+      "ppocr_candidate": "bilibi",
+      "recovered_text": "Bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "engine": "transformers",
+  "device": "cpu",
+  "dtype": "float32",
+  "verification": "machine_extracted_unverified"
+}
