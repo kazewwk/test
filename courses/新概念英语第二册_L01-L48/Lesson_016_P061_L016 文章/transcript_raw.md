@@ -1,0 +1,80 @@
+# L016 文章
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn new concept English book two lesson sixteen story. Hope you gonna enjoy.好，那接下来我们一起直接看一下文章啊。说 is 如果对吧？我们看一下 you park your car 一般现在时，你停你的车 in the wrong place 在一个错误的地点。 A traffic policeman
+
+## 00:00:28–00:01:02
+
+一个错误的地点，a traffic policeman，一个交通警察 will soon find it，将会非常快的发现它。注意 will 这个是不是就是我们说的叫做主将？你看 if 引导的这个从句用的是一般现在时，而后面这个用的是一般将来时，对吧？OK，注意啊，它不是唯一的情况，很快我们就会发现特例了啊。规则以外必定有特例啊，这就是学语法的一个好玩的地方。我们先学会规则，然后再去找到你。
+
+## 00:00:58–00:01:32
+
+语法的一个好玩的地方，我们先学会规则，然后再去找到那些特例。You'll be very lucky，你将会非常的幸运。主将从句 if 引导的叫做 he lets you go，他让你走了。你看 lets you go，你可能不是特别清楚，但 lets go 你特别清楚，叫我们走吧，对吧？Let's go。那 lets you go 就多了个你嘛，让你走。Without a ticket，without 叫做而没有一张罚单，你将会非常的幸运。
+
+## 00:01:28–00:02:02
+
+有一张罚单，你将会非常的幸运啊。However,然而啊，this does not always happen.这不经常发生。注意它的时态，does not always happen.陈述客观事实，对吧？这不经常发生嘛？当然了，大部分情况下你肯定是要被罚了，对不对？这个没跑了。那注意，所以它用的是一般现在时啊。我们注意它的时态之间的转化。The traffic police are some.
+
+## 00:01:58–00:02:32
+
+The traffic police are sometimes very polite. 注意 sometimes 这个单词，我们讲新一五十一课的时候就提过。Sometimes 这个单词比较的特殊，您放在哪儿，这个句子当中的所有地方都不会显得特别的违和，都很舒服。Sometimes traffic police are very polite. Okay. Uh, traffic police, you know, sometimes are very polite. 都可以啊，不用特别的纠结说 sometimes 到底放在。
+
+## 00:02:28–00:03:02
+
+都可以啊，不用特别的纠结说 sometimes 到底放在哪。那 polite 就是很有礼貌，是一个小的形容词。 During a holiday in Sweden, during 在什么什么期间， a holiday 一次度假 in Sweden 啊，在瑞典，在瑞典的一次度假呢当中呢， I found this note on my car. 我发现了这个便条在我的汽车上。接下来就是便条的内容了，对吧？所以它给了一个引号。
+
+## 00:02:58–00:03:32
+
+接下来就是便条的内容了，对吧？所以他给了一个引号，Sir先生，We welcome you to our city.我们都是字面意思，Welcome to Beijing，对吧？欢迎来到北京零八年奥运会。我们欢迎您来到我们的城市。This is a no parking area.说这是一个禁止停车的区域。这个我们在讲单词的部分就提到了。You will enjoy your stay here.说你将享
+
+## 00:03:28–00:04:02
+
+You will enjoy your stay here.说你将享受你在这里的停留，在这里的停留。If主将从现是吧？如果怎么样呢？You pay attention to our street signs.如果你注意我们的街道 signs 标志啊，比如说这儿写了一个大圈儿，然后一个P一个叉，是吧？通用标志。如果你注意这个东西 street signs 的话，那
+
+## 00:03:58–00:04:32
+
+如果你注意这个东西 street signs 的话，那 pay attention to 算是一个习惯用法。其实我们早在第一节课就见过了。 But he did not pay any attention. 但是他根本没注意，对吧？如果各位还有印象的话， this note is only a reminder. 说这个便条啊，仅仅是一个提醒啊，不是一个罚单，就是提醒您。一看您这是外地车、外国车，对吧？提醒您啊，要注意我们的这个 street signs. 第一次就不罚您钱了，特别有礼貌。 If
+
+## 00:04:28–00:05:02
+
+次就不罚您钱了，特别有礼貌。If如果 you receive a request like this，你看 request 在哪课咱们学？在鸽子和车库那课学的，对吧？Send a great many requests。如果你收到了一个请求 like this，注意这个 like 常见的两个意思，一个叫喜欢，一个叫像，对吧？那像这样的一个便签，You cannot fail to obey it。说你是
+
+## 00:04:58–00:05:32
+
+Fail to abide it.说你是没有办法，你是不能怎么样呢？失败去遵守它的。你想一下，什么叫你是不会失败去遵守它的？其实啊，这个地方如果你绕不过来，你就想一个最简单的事情就行了。很巧，英语和汉语的双重否定都表肯定，并且把肯定的语气加强了。啊，他不可能不是一个好老师啊。
+
+## 00:05:28–00:06:02
+
+啊，他不可能不是一个好老师啊。意思本身和他是一个好老师是一样的，只不过多了一点修饰，我们管它叫修辞，对吧？Oratory变成了叫他一定是个特别好的老师啊，语气加强了。所以这个地方您看，第一层否定，fail是第二层否定。所以这个地方的意思就是 you will obey it，你会遵守他的。Very good. 那本课的习惯用法并不多，只有两个啊。其中那两个我们还其实在不同的地方。
+
+## 00:05:58–00:06:32
+
+不多，只有两个啊，其中那两个我们还其实在不同的地方或多或少都提过。第一个叫停某人的车，第二个叫注意力啊，注意在什么事情上。OK，那我们先来一个 park somebody's car 吧。好，比如说 she parked her car in front of the theater last night。你看，我们在这加了什么东西？其实就是方式、地点、时间。地点是 in front of the theater，第一课您就会了。last night 我已经想不起来，各位可能在哪课就学过了，是吧？加了个时间。
+
+## 00:06:28–00:07:02
+
+想不起来，各位可能在哪课就学过了，是吧？加了个时间，然后呢，我们加了动词，动词的变化，因为是 last night，所以不能用原形，要用一般过去式。一句话就造出来了，非常简单，对吧？肯定句有了，接下来四句型的转化，一般疑问句和各种特殊疑问句，您是不是就是张嘴或暂停屏幕自己哎来一下就可以了？造句子的时候把这些句子造出来，是不是您的家庭作业就完成了，对吧？OK，那再然后呢？Pay attention to啊，表示的是对什么？
+
+## 00:06:58–00:07:32
+
+再然后呢? Pay attention to啊，表示的是对什么什么表示呃有注意，对吧？注意某件事情或注意某个人。比如说，pay attention to him啊，注意他一下。OK，那这个视频当中出现了第一个叫pay attention to，第二个是我们刚刚学过的这个语法点叫做if啊，注意力啊，各位pay attention to this video。OK，来了。Of course, I know how to spot a cop. What's that? If he's not paying attention to us, he's a cop. Look, you see that guy over there? Where are
+
+## 00:07:28–00:08:02
+
+Look it, you see that guy over there? Right over there. Yeah, not paying attention to us. He's a cop. Ah, okay. You get it now, do you? Okay,你看这个 if 引导的这句话在电影当中出现这句话说 if is not pay atten is if he's not paying attention to us, 逗号 he is a cop. 你看他就没有用主将从现，他的主句也是一般现。
+
+## 00:07:58–00:08:32
+
+主将从现，它的主句也是一般现在时。我没有记错的话，我们十八课立刻就会见到类似的句子，这个也不是错的。您可以理解为是不是我今天讲的这些以内的，不是说只有符合我今天讲的才是对的。今天讲的是最常见的一些情况，但它之外还有例外。比如说文章当中就出现啊，这个电影当中啊就出现了，叫做如果他对我们没有注意，那他就是一个警察。He is a cop. OK, one more, good. 好。
+
+## 00:08:28–00:09:02
+
+He is a cop. Okay, one more. Good. That recap. This lesson, besides reading the article, there are two small habits. The usage is very simple, not particularly difficult. Ah, let's look at the homework. Habit usage sentence. Ah, each word five sentences. Not too difficult. The article must be read until it is memorized. Right? Help us to internalize the words, grammar, and usage of this lesson. Ah, we can start using them as soon as we open our mouths. And the listening, speaking, and writing exercises in the next video are based on this article.
+
+## 00:08:58–00:09:28
+
+写作练习都是基于这篇文章，要读到非常熟才能进行的。OK，好，那以上呢就是本期视频的全部内容。如果大家喜欢我们的课程，欢迎大家关注、订阅、一键三连，分享给那些需要的朋友来支持我们。那See you next time.
+
