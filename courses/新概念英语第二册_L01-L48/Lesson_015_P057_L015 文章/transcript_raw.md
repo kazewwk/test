@@ -1,0 +1,68 @@
+# L015 文章
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Liu. Today we're going to learn new concept English book two lesson fifteen story. Hope you gonna enjoy it.那我们上来直接看文章啊。The secretary,护士啊，这个秘书啊，told me that好看后边一宾语从句对吧？That引导的。Mr. Hamsworth would see me啊，Hamsworth先生呢？
+
+## 00:00:28–00:01:02
+
+Would see me,啊，Hamsworth先生呢要见我，其实就是their boss，就是他们的老板啊。老板跟他们说，老板想见我。你看这儿用的是told，这儿把will换成了would。在语法的部分我们专门讲过。I felt very nervous.我感到非常的紧张。When当第七课咱学的，went into his office.当我进入他办公室的时候，He did not.他没有look up.
+
+## 00:00:58–00:01:32
+
+He did not. He
+
+## 00:01:28–00:02:02
+
+Set down. 注意，你看，这是十四课咱们刚学的，叫在什么什么之后，然后后边是先发生的 set down，然后他才说了一些事情，对吧？ He said. 他说到说的这句话，宾语从句. Business was very bad. 他说啊，说了一个这么事儿，就是说这个最近这个生意啊特别差啊。您看这个图是吧？啊，都跌出天际线了是吧？跌出海平面了是吧？往下跌. He told me that.
+
+## 00:01:58–00:02:32
+
+面了，是吧？往下跌。He told me that他又告诉我一件事儿啊，这件事儿还是宾语从句，是吧？告诉我了一件事儿，说The firm could not afford to pay，没有办法。你看，本是 can't afford to pay，因为前面是 told，情态动词要变成他们的过去式，所以就变成了 could not afford to pay，是吧？没有办法支付如此 such large salaries，如此巨大的薪水。你看，老板一进来跟你。
+
+## 00:02:28–00:03:02
+
+如此巨大的薪水，你看，老板一进来跟你聊说，最近生意特别差，公司支付不了这么大的薪水了。你看，你想到的事情，要么降薪，要么我就要被炒鱿鱼了，对吧？Twenty people had already left。在咱们说这句话的之前啊，二十个人就已经离开了。你看，典型的过去的过去嘛，对吧？OK，二十个人已经离开了，全是不好的消息。I knew that。你看 that 后边宾语从句啊，非常舒服，主谓。
+
+## 00:02:58–00:03:32
+
+你看 that 后边宾语从句啊，非常舒服，主谓宾，对吧？我知道的一件事情是 my turn had come. 你看 one good turn deserves another. 在那一课我就讲过 turn 有一个非常常见的用法，对吧？表示的是轮到什么什么了。那 my turn 就是我的轮次 had come，叫已经来了。这句话其实不是，倒不是那么常见。一会儿我教大家一个也许更常见的表示轮到我了的说法，对吧？那 my turn had come 就是我的轮次已经来了，就是轮到我了。
+
+## 00:03:28–00:04:02
+
+法对吧？那 my turn had come，就是我的轮次已经来了，就是轮到我了。Mr. Holmesworth，啊，Holmesworth先生，I said，我说到，in a weak voice，用一种非常微弱的声嗓音说道，Don't interrupt，啊，别打断我。He said，啊，他老板还说，别打断我。Then，来了个大反转。He smiled，啊，然后他笑了，and told me，告诉我了一件事儿。你看这儿后边，你有没有一眼？
+
+## 00:03:58–00:04:32
+
+And told me,告诉我了一件事儿。你看这儿后边，你有没有一眼看出来它是个宾语从句呢？如果没看出来，就是因为它的that怎么样被省略了，对不对？所以我说初期嘛，各位如果对这个语法不是很熟的时候，有that对于各位来说反而是好事儿。他告诉我了一件事情是，I would receive我将收到an extra thousand pounds，额外的thousand，an thousand，extra thousand，一千pounds。
+
+## 00:04:28–00:05:02
+
+Ten thousand extra thousand,一千 pounds a year,一年啊。告诉我，我一年要将额外收入一千磅啊。你很重要，你不能走，对吧？二十个人都走了，你要给我留下来。OK， one more.那本课的习惯用法不是非常的多，也都比较的简单啊。单词部分甚至我们有一些已经讲过了啊。我们简单的一起看一下。首先，afford to pay叫支付得起，对吧？OK，比如说，那当然你加了can't，就是支付不起了嘛。He
+
+## 00:04:58–00:05:32
+
+那当然，你加了 can't 就是支付不起了嘛。 He gets a good salary. 第十一课的习惯用法叫他收入还不错，陈述客观事实，一般现在时。 But still, 但依旧， he can't afford to pay such an expensive car. 他依旧没办法支付得起如此昂贵的一辆车，对吧？一年一百万，依旧买不起宾利，对吧？太贵了啊！他薪水真好，但依旧买不起这么昂贵的车。 Very good. Continue. 常用的另一个叫做 Can we afford to?
+
+## 00:05:28–00:06:02
+
+Continue,常用的另一个叫做Can we afford to pay this?我们能支付得起吗？其实它不用afford to pay也可以，直接就说Can we afford this?各位想一下，单词部分我讲过对吧？他们俩其实意思是一样的。OK，下来My turn had come.这个我刚才讲到，在讲文章的时候提到，我说它的意思您懂就行了啊，知道turn有这么一个轮次啊的意思就可以了，轮到谁谁谁的一个轮次，对吧？就可以。
+
+## 00:05:58–00:06:32
+
+啊的意思就可以了，轮到谁谁谁的一个轮次，对吧？就可以了。它比它更常见的就是这样非常简单一句话叫做 It's my turn。啊， It's my turn。口语当中非常常用。所以接下来我们看一个小的电影片段，出现了就是 It's my turn。注意力集中了。 I want to see it. It's my turn. New choice. Okay. I want to see It's my turn. 然后你看。
+
+## 00:06:28–00:07:02
+
+Okay, I want to say it's my turn. Then you see, it's my turn. There you go. Next, in a weak voice,要用一种非常微弱的嗓音。但是各位要注意，这地方缺少主啊，缺少动词，是吧？这里边没有动词的啊，所以你要加上一个动词，以什么样说，对吧？说said啊，或者speak都OK. Talk啊. Please help me. She said in a weak voice. Please help me. She said in a weak voice.
+
+## 00:06:58–00:07:32
+
+Help me," she said in a weak voice. "请帮助我."她用一种非常微弱的嗓音说道，就这么简单。OK，本课recap很简单，习惯用法不多，文章也并不是很难啊，就这么几个习惯用法。各位啊，家庭作业固然习惯用法造句或者对话，每个五句话，文章要熟读成诵，一定要读到非常非常流利啊，就差能背下来了到这样一种水平。OK，好，那以上呢就。
+
+## 00:07:28–00:07:55
+
+下来了，到这样一种水平。OK，好，那以上的就是本期视频的全部内容了。如果大家喜欢我们的课程，欢迎大家关注、订阅、一键三连支持我们，分享给那些需要的朋友。See you next time.
+

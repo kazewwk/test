@@ -1,0 +1,80 @@
+# L015 听说读写复述练习
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Now today we're going to learn New Concept English Book Two Lesson Fifteen Practices. That注意啊，进行如下练习的唯一前提就是文章一定要跟读至熟读成诵，否则请勿开始。Hope you gonna enjoy.那我们看第一题，comprehension，听懂一般疑问句和特殊疑问句。您看着文章或者完全脱离文。
+
+## 00:00:28–00:01:02
+
+都属于文句。您看着文章或者完全脱离文章，对吧？眼睛不要看着这个地方。我们做听力，我问您答的练习基于文章来了。第一个，What did the secretary tell you? Mr. Humphreys would see me. Next one, Where did you go? To his office. Next one, How did you feel when you went in?
+
+## 00:00:58–00:01:32
+
+How did you feel when you went in? Nervous, very nervous. Next one. Where was Mr. Holmesworth sitting? At his desk. Next one. What did he say about business? It was very bad. Next one. When did he tell you this? After I had sat down. Next one. What did
+
+## 00:01:28–00:02:02
+
+Down. Next one, what did he tell you about the firm and salaries? Business was very bad. The firm could not afford to pay such large salaries. Next one, how many people had already left? Twenty. Did you think it was your turn to lose your job?
+
+## 00:01:58–00:02:32
+
+It was your turn to lose your job. Yes, I did. 完. How did you speak to him? In a big voice. Okay, 好，第二题，会说一般疑问句和特殊疑问句啊，这个地方来，我们可以看着我们的这个屏幕啊。第一题还是示范啊，Mr. Hemsworth is my employer. Okay, employer, employee指的是雇员，employer指的是雇主，也就是老板，boss. Okay, 很简单，一般。
+
+## 00:02:28–00:03:02
+
+employer指的是雇主，也就是老板，boss，OK，很简单，一般疑问句is提前就可以了，然后who啊就对主语提问呗，Who is your employer啊，就这么简单。好，那我们看第二题，His secretary told me that，看后边是宾语从句，各位要注意一个小点，这地方貌似出现了两个动词，对吧？一个是told，一个是would加c，你要用谁去变一般疑问句呢？各位永远不用从句。
+
+## 00:02:58–00:03:32
+
+谁去变一般疑问句呢？各位永远不用从句去变啊，用主句用 his secretary told me 的那个 told 去变，或者再换一个思路，就是六一二三四五六当中的二由二去决定谁提前变一般疑问句。比如说 his secretary 是一 told 是二，对吧？那 me 和后边的这些啊都是三啊，只不过是两种不同的三啊，我们就不提它的那个学术术语了。所以你要用二 told 去变，也就是把 did 提前啊。我说一下答案。
+
+## 00:03:28–00:04:02
+
+Old去变，也就是把did提起来啊。我说一下答案。Did his secretary tell you that he would see you? OK，就这么简单啊。那What就是对宾语从句提问。What did his secretary tell you?他的秘书告诉你什么问题了？Who？那您自己确定吧。这里边这么多人呢，对吧？OK，只是要注意一个点，对主语提问，直接替代就行了。OK，别变一般疑问句了啊。
+
+## 00:03:58–00:04:32
+
+直接替代就行了，OK，别变一般疑问句了啊。I went into his office. Did 提前，动词换原形，Where 对 into his office 提问。I felt very nervous. Did 提前，How 对 very nervous 提问，Why 对整句话提问。The firm couldn't afford to pay such large salaries. 好，你看这就很神奇，我们一般是肯定句变一般疑问句，这个地方巧了，他给了一个否定句，没事儿。
+
+## 00:04:28–00:05:02
+
+句，这个地方巧了，他给了一个否定句，没事儿，您先把它变肯定句，把 not 去掉， could afford to pay，对吧？然后把 could 提前， could the firm afford to pay such large salaries？一般疑问句不就出来了吗？至于 what 对 such large salaries 提问，并且这儿我提一个小点，如果这儿给的是 couldn't，接下来都是这样的啊，您别变成了叫做 what could the firm afford to pay？他们能支付得起什么？你把它
+
+## 00:04:58–00:05:32
+
+Could the firm afford to pay? They can pay. What could the firm afford to pay? Why is a reason? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why couldn't the firm? Why
+
+## 00:05:28–00:06:02
+
+Left,对吧？非常简单。I thought he would tell me to leave too.啊，他用thought嘛，对吧？Did提前，What对整个宾语从句提问啊？What did you think？你是怎么认为的？你是怎么想的这件事？Okay, he told me not to interrupt. Did提前，对吧？那What did he tell you？就完了啊。答案是not to interrupt。这个不是非常典型哈。这我直接告诉各位答案。下一个tell the story，我们练的就是口语复述能力，练的是流利性啊。老习惯还。
+
+## 00:05:58–00:06:32
+
+练的就是口语复述能力，练的是流利性啊。老习惯还是我给大家做一个展示。各位要做的事情是文章读熟，下课自己去啊，这个呃呃看着这些关键词，像我现在这样去复述来了啊。 The secretary told me that Mr. Hemsworth would see me. I felt very nervous when I went into his office. He did not look up from his desk when I entered. After I had sat down, he said that business was very bad.
+
+## 00:06:28–00:07:02
+
+After I had sat down, uh, he said that business was very bad. He told me that uh the firm could not afford to pay such large salaries, and twenty people had already left. I knew it's my turn. Mister Hump's words. I said in a big voice, "Don't interrupt." He said. Then he smiled and told me that I would receive an extra thousand pounds a year. Okay,好，那这个地方就是我们今天关于口语复述做的一个展示了，接下来。
+
+## 00:06:58–00:07:32
+
+今天关于口语复述做的一个展示了，接下来呢，summary writing就是我们摘要写作，在这儿只提供答案，各位不妨可以截屏，对吧？或者说去我们专栏当中找答案，各位自己去对一下就行了。OK，接下来呢，topic for discussion这永远是我们的这个bonus环节，对吧？我们管它叫做这个奖奖赏环节啊。这个各位现在也许还不行，但我们先看一下这些话题都让我们聊什么。第一个，describe an interview you have had啊，给我们聊一聊你。
+
+## 00:07:28–00:08:02
+
+Interview you have had, ah,给我们聊一聊你经历过的一个啊，这个那 interview 啊，其实有两个意思，面试和采访啊。您经历过哪一个啊？就说哪个，OK. Have you ever felt nervous? 你有感觉到紧张的时候吗？What makes you nervous? 什么会让你感觉到紧张？OK. 担心啊。What would you do with an extra thousand pounds a year? 啊，你会做什么？如果你一年能多
+
+## 00:07:58–00:08:32
+
+A year. Ah,你会做什么？如果你一年能多拿一千英镑啊，你愿意拿这个钱去做什么？OK，好，那家庭作业，ask me if老习惯，各位先写，保证对，然后看着自己的对的答案，大声朗读啊，别偷懒啊，各位直接口语变，按照目前各位的水平很容易错，你只有写下来才知道自己对没对，是吧？这要写作，先写，再来这对答案。Tell the story，就像我一样，口语进行一个复述，当然前提是文。
+
+## 00:08:28–00:09:02
+
+Tell the story,就像我一样，口语进行一个复述。当然，前提是文章读的特别流利了。你像我现在就是，是吧？我文章并不能背下来，我只是读的非常熟了。OK，最后专栏当中可以找得到啊。那以上呢就是本期视频的全部内容了。如果大家喜欢我们的课程，欢迎大家关注、订阅、一键三连，分享给那些需要的朋友来支持我们。See you next time.
+
+## 00:08:58–00:09:05
+
+
+
