@@ -1,0 +1,184 @@
+# 076 单词
+
+快速模式：仅按词时间去除重叠，未经第二模型或人工校对。
+
+## 00:00:00–00:00:30
+
+Hi, everyone. Welcome to Capsule Academy. This is Leo. Today, we're going to learn New Concept English Book Two, Lesson Seventy Six Words. 那老习惯进入正式课程之前，咱们看几个小的问题。第一，如何表达布告栏、公告栏啊？接下来呢，如何表达主要原因？最后一个，如何表达这个主意极好？那带着这三个问题，Hope you gonna enjoy.
+
+## 00:00:30–00:01:00
+
+本文呃文章非常有趣啊，那随之而来的好像总有一个代价一样，就是单词特别的多。我们放慢脚步，有点耐心，一个单词一个单词的看一下。第一个单词叫做 fool，OK，那 fool 呢就是笨、蠢、傻，哎哎傻蛋啊，就是 fool，OK，愚蠢。那它是个名词，首先您要知道一个节日，就我们所谓 April
+
+## 00:01:00–00:01:30
+
+Fool's Day，对吧？四月一号愚人节，那它在口语当中很常用的一个短语，两个单词组合到一起叫做 you fool。哎，啊，你这个愚蠢的人啊，你这个蠢蛋。Don't be too hard on us。哎，不要对我们那么的怎么样？哎，就是过于的严苛、严厉啊。You fool。OK，这个咱们不多说了，直接看一个电影片段啊。
+
+## 00:01:30–00:02:00
+
+这个其实还有很多 for 能引导的习惯用法，这个我们以后慢慢再说啊。我们不做太多的拓展，您在这儿能把它的基本意思和这个用法，口语当中很常用的，哎，能学到就可以了。那注意力集中啊，咱听这个电影片段。OK，那正好还呼应了一下第一节课 None of your business，哎，这不是你的，不关你的事儿，对吧？注意力集中啊。 Stop! Stop, you fool! This is not your business. Next one, 下一个单词
+
+## 00:02:00–00:02:30
+
+bulletin, bulletin, bulletin这个单词有两个意思，一个是咱们文文章当中啊给的叫做新闻简报啊简讯，第二个呢叫bulletin board这个东西呃，我至少在呃澳澳大读书的时候还是挺常见的啊，他们很多的那个学院楼里面都会有自己学院的一些简讯，对吧？比如像art faculty啊，这个艺术学院他们就很多演出的
+
+## 00:02:30–00:03:00
+
+的那些信息，或者那种 seminar 啊，等等一些 workshop 啊，那些信息，它叫做 bulletin board，就是这种公告栏，对吧？所以 bulletin 你至少知道有两个常见的意思。那我们去造个句子啊，说 we've just read the notice on the bulletin board。说我们刚刚读了这个在公告栏上面的这个 notice。上一节课咱们刚学叫就这个通知对吧？公告。四句型转换不多说，接下来 the
+
+## 00:03:00–00:03:30
+
+board was covered with messages.哎，充满了什么什么东西，对吧？那您看到这里，实际上我们第一句话做了地点，第二句话做了主语，对吧？那做主语的时候能想到，往往可能是被动的。Next one说，Let's make it official and put it on the bulletin board.说咱们把它正式定一下。OK，其实一课咱们学过的，make it official，来一个。那再读一遍这个单词bulletin，记住，再说一遍。
+
+## 00:03:30–00:04:00
+
+虽然在这儿我们基本上都是拿 bulletin board 去造句的，但是你一定要啊记住，它有一个额外的含义，就是新闻简报啊。 Next one, 注意力集中，咱们听一下电影片段。 It's been on the bulletin board for weeks. 哎，呃，这个 It's 是 It has been on the bulletin board，是吧？现在完成时，从过去持续到现在，持续了多长时间了呢？ For weeks，数周了。 Next one，下一个单词叫
+
+## 00:04:00–00:04:30
+
+做看音标announcer. Announcer,这个announcer后边加了er,你大概就能猜出来它是呃做某件事情的人. Announce这个单词本身是一个动词,你可以理解为叫做通知,对吧?通知.然后这个announcer呢,指的是我们这个播报员啊,我们的这个广播或电视当中的这个播报员.当然,它还有更多的意思,比如说在电视当中的个解说员也可以叫
+
+## 00:04:30–00:05:00
+
+announcer，对吧？就是基本上就是宣告某些事情的这样的一个人啊。那看这句话说，it was not long before。刚学，哎，不久后怎么样了呢？The announcer told us the plane had flown off course。哎，不久后，播报员告诉我们说飞机远离了航线。Next one， the announcer tried to stay out the out of the limelight after work。对啊，那他上班的时候啊，经常
+
+## 00:05:00–00:05:30
+
+是这个在这个聚光灯底下的。那下班了，他可能想享受自己私人的生活。Continue下一个单词，看一下音标，叫做 macaroni。好，macaroni。那 macaroni 就我们所谓通心粉，对吧？哎，这个意面当中的一种吧。我呃，这个这个我不是美食家，我也不敢判断。但我确实知道 macaroni 就是通心粉，通心粉就长成这个样子。它算不算意面？我这个还真不太知道啊。那我们看一下这句话，
+
+## 00:05:30–00:06:00
+
+说If you were here, you wouldn't eat the macaroni too.说如果你在这儿，你也不会吃这个这个通心粉的，对吧？Okay, next one.说Please make yourself comfortable, and I will cook some macaroni for you.说哎，让你自己舒服一点，对吧？哎，让自己放松下来，make yourself comfortable.然后我给你做一些通心粉. Next one.说The macaroni my mom cooked last night was brilliant and put every macaroni to
+
+## 00:06:00–00:06:30
+
+shame.哎，这里面连续用到了定语从句，对吧？我妈妈昨天晚上做的那个特别的棒。然后呢，是其他的所有通心粉都相形见绌了，对吧？哎，都不怎么地了，显得都很很一般了，对吧？Macaroni，通心粉。那注意力集中吧，咱听一下这个电影片段啊。I haven't liked macaroni and cheese since I was like ten. Very good. 下一个单词叫做 leading。那 leading 这个单词它是形容词，它很
+
+## 00:06:30–00:07:00
+
+Transcribe the exact words in their original spoken languages. Never translate. Preserve repetitions, questions and examples. Leading这个单词它是形容词，它很常见的和这个cause会连到一起，叫做主要的原因啊，首当其冲的原因，对吧？Leading就像这个图中红色小人一样，主要的，首当其冲的leading cause。比如说，我们可以造一句话叫Smoking is one of the leading causes of lung cancer啊。所以说，抽烟呢是最主要的什么的主要原因呢？哎，肺癌的最主要的原因啊。那这实际上这个smoking之所以加ing是
+
+## 00:07:00–00:07:30
+
+二十个咱们学的动名词。 Next one, say breast cancer is the leading cause of death for American women in their forties. So, uh, this this breast cancer, right? Is the main cause of death, the main cause of death for American women in their forties. So, uh, this this breast cancer, right? Is the main cause of death, the main cause of death for American women in their forties. So, uh, this this breast cancer, right? Is the main cause of death, the main cause of death for American women in their forties. So, uh, this this breast cancer, right? Is the main cause of death, the main
+
+## 00:07:30–00:08:00
+
+说，My father became a leading authority on volcanoes. 说我父亲呢变成了一个什么呢？ Leading authority，哎，一个非常主要的权威啊，在哎这个火山这件事情上。 OK，那再读一遍这个单词，leading， very good。 那接下来呢，咱们这个看一下一个电影片段啊，说这个离婚的主要原因很多都是因为孩子。 OK， Did you know that the leading
+
+## 00:08:00–00:08:30
+
+cause of divorce is children? Very good. 下一个单词叫 grower. 哎， grower 这个单词依旧很有意思。我觉得如果你认识 grow，那 grower 这个单词应该就瞬间会了。 grow 种植加 er 表示做这件事的人，对吧？比如说， as a vegetable grower，作为一个蔬菜的种植者。 He is busy with his land all the time. 他总是在忙着
+
+## 00:08:30–00:09:00
+
+land. Ah, as a vegetable grower. Next one, my father would do anything to prevent me from becoming a vegetable grower. Ah, in our Confucian culture, this is a very common thing, right? Ah, uh, all things are inferior, only reading is high. You have read so many books, and then you go back to farming. Even if you are actually starting a business, uh, maybe some of the older generations will do this. Something called would do anything to prevent
+
+## 00:09:00–00:09:30
+
+me from becoming a vegetable grower. Ah,一说孩子出去上大学，回来又回来种地了。啊，这事儿好像乍一听有点丢人。所以 prevent me from becoming. Okay. Ah,这是儒家文化一个特点，万般皆下品，唯有读书高。啊，Next one. So the vegetable grower,哎，蔬菜种植者managed to set up his camp under the tree.这没什么可说的。六十七课manage to do,然后set up somebody's camp,建立了一个营地。啊，
+
+## 00:09:30–00:10:00
+
+再读一遍那个单词 grower。Next one，下一个单词啊，splendid，splendid。我记得有一些年，好像中国有一个呃，我叫什么什么环传是吧？叫我不说全名了，这个应该很多人知道啊。我印象当中有一段网络用语，总说那个什么什么是极好的是吧？splendid是吧？哎，极好的主意，splendid idea，极好的呃这个例子，
+
+## 00:10:00–00:10:30
+
+splendid example 啊，view 观点 garden 花园，哎，小主什么什么是极好的 splendid。我们造个句子，比如说你这是一个极好的主意，what a splendid idea。在讲 brilliant 这个单词的时候，我希望你还记得是吧？我们当时造了一个句子叫 what a brilliant idea，其实意思差不多。 Okay， next one，说 I've noticed that you have a splendid garden。我注意到你有一个非常棒的院子。
+
+## 00:10:30–00:11:00
+
+Continue,说I'm really happy to work for such a splendid company.说我非常的开心去为如此棒哎如此好的一个splendid company如此棒的一个公司去工作。Work for什么什么company或work for somebody.第四课咱们学的啊，再读一遍这个单词splendid. Next one, stock. Stock这个东西呢，就是那个梗啊。这个我
+
+## 00:11:00–00:11:30
+
+刚啊，这个一个木字旁一个更啊，它和我们那个网络用语那个梗啊，几乎是一个字儿。我刚发现是吧？啊，stock就是比如说我们植物的这个梗啊。那比如说，我造一句话啊：There are many baby corns on one corn stock。所以有许多的哎，baby corns。corn是什么？corn就是玉米嘛，对吧？我们北方叫玉薯，是吧？有一部分呃，
+
+## 00:11:30–00:12:00
+
+东北包括这个河北啊，华北平原上叫玉薯啊，也叫玉米。那 baby corns 就是很小很小的这个玉米啊，就比如说刚长出来不多大的啊玉米，在一个玉米的梗上，哎，就会有很多很多。如果各位去见过的话，对吧？哎，如果你去见过的话， next one 说 we should have cut down all the baby 啊 all the corn stalks，说我们本应该砍掉所有的这些玉米的根
+
+## 00:12:00–00:12:30
+
+茎啊，这个在我很小很小的时候回农村老家啊，那个时候我印象当中，农村老家还没有煤气呀，什么呃天然气啊这些东西都没有。那个时候烧的就是 corn stalk。每到冬天，一定会秋收的时候把这些东西都哎收到家里面去，然后给它呃积攒起来，然后到冬天的时候，那当然夏天其实也是烧这些啊，哎就会去烧这个 corn stalks.
+
+## 00:12:30–00:13:00
+
+Okay,好. Next one.那所以我造了一句话。我说 Chinese farmers.那我爷爷就是半个农民，对吧？哎，呃，他既是一个读书人，也是一个农民啊。这是当时很多的一个呃呃，就就是这样的一个状态啊。所以我造了一句话，有感而发，叫做 Chinese farmers used to collect corn stalks.说中国的农民过去常常都会收集 corn stalks，收集玉
+
+## 00:13:00–00:13:30
+
+米梗啊。OK啊，不多说了啊。就本课这个单词，嗯，像这两个单词，gather and thresh。首先，gather，你基本上其实呃，get together啊，什么gather under the tower clock啊，这我们在新一都学过。gather对于各位来说就是收集，所以它本课说了一个叫做gather crop，crop是庄稼的意思，对吧？一个统称，你可以理解为。好，那gather crop就是收集这些庄稼。那这个thresh，也是
+
+## 00:13:30–00:14:00
+
+一样的叫 thresh crop，这个 thresh 是什么呢？这个实话实说我也不是非常懂，我也不是农学方面的专家。然后呢，小的时候确实也没见过，但隐约听别人说过。专门去查了一下，就是打谷子。现在应该是不需要人为去这么打了，让它掉下来应该是啊。现在可能是机器直接就剥离了，是吧？应该就不需要人手工的了。OK，但是它基本就是我找到了一个图，图
+
+## 00:14:00–00:14:30
+
+中大概显示的就就是thresh crop的意思。所以这个东西其实对于各位来说可能挑战。我相信啊，很多同学可能挑战并不在于它的英文，而是汉语到底什么叫打庄稼、打谷子，对吧？OK，那这两个单词呢？因为第一个单词我们之前学过，而第二个单词呢过于的呃呃呃狭小化了，我们都不用过多的去造句了啊，我就不多提了。下一个单词，下一个单词叫
+
+## 00:14:30–00:15:00
+
+process. Process叫加工啊。你比如说，你看这个，我觉得在我的概念当中，就像是 thresh crop，只不过不是 by hand，是 by machine，啊，是用机器而不是用手去打这个谷子，对吧？叫 process，叫做处理。那它最常见的这个是我在二零一九年啊那个时候研究这个健身，同时不也得研究营养学嘛？然后就学会了一个单词，在
+
+## 00:15:00–00:15:30
+
+那之前还真不会，叫 processed food，但是非常常见，叫做加工过的食物啊。比如说，呃，你买一块牛肉，新鲜的牛肉，那什么叫 processed beef 呢？就是你把这块牛肉，你在超市买来的时候，它它是已经给你腌制好的啊，已经放了一些呃肉料啊、盐呢、酱油啊，人家自己调的一些东西啊，包括一些新鲜的蔬菜啊，都给你放到那儿了。这叫 processed food 啊，我们常吃的
+
+## 00:15:30–00:16:00
+
+eat the wheat, uh, this this processed food, right? Uh, pickled any kind of vacuum-packed food, it's called processed food, called processed food, it's called processed food. Processed food, that you see, we first make a sentence. Its basic meaning is processing, right? I say the crop is being processed at the factory right now. Say this crop is being processed at the factory right now. Say this crop is being processed at the factory right now. Say this crop is being processed at the factory right now. Say this crop is being processed at the factory right now. Say this crop is being processed at the factory right now. Say this crop is being processed at the
+
+## 00:16:00–00:16:30
+
+Next one, 这个是各位需要知道的，对吧？很多人其实我们买东西的时候，并不看它那个食品的那个叫 information, 呃，这个这个汉语应该叫什么？就是告诉你，比如说含多少盐，多少糖，对吧？那个东西啊。而 remember 它记住, processed food is usually full of salt and sugar. 好，我们首先用到了 before of, 所加工过的食物往往是充满了大量的糖跟盐，对吧？你比如
+
+## 00:16:30–00:17:00
+
+说，我经常看到有的人可能说，哎，我要我要这个减肥啊，但是吃了很多小零食，是吧？说，哎，我要做饭的时候少放盐，但是又吃了很多的，比如说某些这个这个很甜的啊，水果干。其实你仔细去看，它里边加的盐都非常的多，对吧？就是你可能纳闷说，为什么甜它还要加盐呢？啊，它就为了让它更甜，所以要加盐，对吧？所以你那个盐往往是超标的。如果你吃了很多 processed food，那
+
+## 00:17:00–00:17:30
+
+next one. 那我们再造一句话说, we should be responsible for our own health and eat less processed food. 说我们应该 be responsible for 对什么什么负责，对我们自己的健康负责，然后少吃一些加工过的食物，对吧？或者过度加工的食物。 OK，啊，各种炸的东西啊。 下一个单词就跟英语没关系，您记就记，不记就拉倒啊。就跟那个呃，
+
+## 00:17:30–00:18:00
+
+你好是吧？一个很多外国人可能都会你好啊啊，很多这个学会英语的人可能也会什么grazia是吧？啊grazia，然后你像这个叫senor啊senor，它是一个意大利语啊，就是你不用管它，就你就知道它的意思就是sir就是先生啊就可以了。呃，您不用专门记它，原文会出现一次。present这个单词现在我们十三课就学过一个非常重要的短语叫at present叫做现在就跟now一样对吧？造句
+
+## 00:18:00–00:18:30
+
+吧。那个单词因为见过很多次了，我就不多废话了。I can't use my office right now. I at right now at present，对吧？一个意思啊。For it is being repaired. Okay. Next one. So are you talking? Are you taking? Sorry, taking any other drugs或者是medicines at present？你现在有在吃其他的药吗？对吧？Next one. At present moment, nobody is aware of it.说在
+
+## 00:18:30–00:19:00
+
+现在这一刻，没有人很清楚的意识到它，对吧？没有人有对它有意识啊。Nobody is aware of it.这个be aware of啊，包括还有一个叫做be unaware of啊，都是咱们一起学的嘛。这个单词不多说了啊。下一个单词，下一个单词。如果你是一个品牌的这个比较了解，这个单词我相信你可能都认得啊。叫做有一牌子不就叫这个嘛？叫做champion啊，
+
+## 00:19:00–00:19:30
+
+champion champion 冠军啊啊！就包括有一首歌说 We are the champion，是吧？我唱歌跑调，但大概就是这个意思，叫 champion，是吧？我们是这个冠军。那你把刚才那个单词连起来，叫 present champion，叫做呃目前的啊现在的冠军啊当下的冠军，这个就很容易造句了。比如说 I am a huge fan of the present champion。哎，我我是现在这个冠军的狂热粉丝，是吧？比如
+
+## 00:19:30–00:20:00
+
+说，Oh, ah, you can do that too. Ah, said the present champion. 注意后边有三个关键单词 with a sneer. 所以第一句话我们还要再重新读一遍，说啊，You can do that too, right? 要阴阳怪气一点啊，要祖安一点，阴阳人一点，对不对？哎，就给他读的阴阳怪气一点。为什么？因为后边有一个叫做 with a sneer. There you go. Next one, say they are all put to shame by the present champion. 这个七十三课逃课那
+
+## 00:20:00–00:20:30
+
+learned in the class. We learned in the class. All the other competitors are how? Be put to shame. They are all very ordinary. They are all compared to the current champion. The strength is too far. Champion. Pay attention. Let's listen to a movie clip. Wow, this is my husband Bill. He is a bowling champion. Okay, one more. The next word is studio.
+
+## 00:20:30–00:21:00
+
+studio studio studio 最基本的意思就是工作室啊，包括也有录音棚啊，都可以叫做 studio。你比如说，most of the scenes were filmed in a studio，对吧？哎，说大多数的场景都是被在这个工作室当中拍摄出来的。哎，你比如说好莱坞很多大片儿，对吧？比如说阿凡阿凡阿凡达，对吧？哎，我就差点想说阿凡提阿凡达，对吧？它很多都是在 in a studio 里面
+
+## 00:21:00–00:21:30
+
+拍摄，它不是实景拍摄，上哪儿找实景去，对吧？Next one,说It was not long before they could buy a new studio.没有不久，他们就A有钱去买了一个新的工作室。Next one,说The studio which he just bought last week burned down.哎，sad story,是吧？哎，上周刚刚买过的那个studio burned down，焚毁了。There you go,这是咱们七十一个学过的啊。再读一遍这个单词studio。
+
+## 00:21:30–00:22:00
+
+注意力集中，咱听个电影片段吧。No, the owner of the studio told me he's had a lot of offers over the years, but he won't sell it. 哎，我觉得这个电影片段各位可以多听几遍，单词应该是都认得的，我没有看到哪个陌生的单词，但依旧你可能听不出来，你听好多好多遍，慢慢耳朵才能越来越熟啊。行了，Recap，除了单词以外，三个小的习惯用法啊，呃，单词该造句造句，电影片段该反复听反复听。置顶留言有咱们重复间隔的学习
+
+## 00:22:00–00:22:25
+
+材料。那以上呢就是本期视频的全部内容了。如果各位喜欢我们的课程呢，欢迎各位关注、订阅、一键三连，分享给那些需要的朋友，来帮助我们快速成长。See you next time.
+

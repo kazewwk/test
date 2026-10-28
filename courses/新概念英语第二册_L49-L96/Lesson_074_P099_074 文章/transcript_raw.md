@@ -1,0 +1,168 @@
+# 074 文章
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we will learn New Concept English Book Two, Lesson Seventy Four, Story. Hope you gonna enjoy it.我们上来看标题, Out of the Limelight, 远离这个聚光灯, 对吧? 远离这个舞台的灯光。下一个说, Why was their disguise disguise too perfect? 加了引号, 说为啥说他们的这个伪装过于的好了? 我们单看这些, 基本上不太能懂。
+
+## 00:00:28–00:01:02
+
+过于的好了，我们单看这些基本上不太能懂文章在讲啥，看文章就好了。文章一来不难，呃，二来呢还很有趣啊。习惯用法和生词还是稍微会多一点点，这个是二册跟三册的共同特点啊。那我们精读嘛，哎，一句一句来吧。An ancient bus stopped by a dry riverbed, and a party of famous actors and actresses.
+
+## 00:00:58–00:01:32
+
+And a party of famous actors and actresses got off.说一个Asian bus. Asian早在二十八课咱们学过，对吧？那叫古代的新三新三还会见古代很常见的一个单词。那你说古代的公交车大巴不太逻辑不太通，其实就是一个比较古老的、比较旧的、比较破的。你可以这样理解，对吧？比如说现在马路上突然间跑了一下北京八十年代跑的公交车，就叫Asian bus，好理解是吧？呃。
+
+## 00:01:28–00:02:02
+
+公交车就叫 Asian bus，好理解是吧？呃，然后这里的 bus 呢，因为结合上下文，你要给它翻译成公交汽车就明显会怪，你给它翻译成大巴就可以了啊。那种比如说你如果原来出去旅游，地导接你来的时候，都是一个地导带着一个司机，然后有一个大巴，对吧？那种大巴你可以叫 bus，停了。然后 by a dry river bed，然后一个 and 就告诉你，那第二句话开始咱不管它。这个呃 dry river bed 说一个干燥。
+
+## 00:01:58–00:02:32
+
+这个呃 dry riverbed 说一个干燥的河床啊，真的就一个字儿一个字儿翻译啊，干燥的河床。然后这个三十个呢是 I like sitting by wills on fun afternoons，三十个原句在什么什么旁边，类似于 near， OK，呃，一个比较旧的大巴停在了河床的旁边，干枯的河床的旁边。然后呢，呃， a party of 本课的习惯用法 party 这个单词我们除了知道它 have a party，啊， let's party tonight。
+
+## 00:02:28–00:03:02
+
+我们除了知道它 have a party, ah, let's party tonight,这样的一个最常见的意思以外，它还有一个意思指的是，呃，一小一小组人，一小群人啊，party of其实就是 several people, some people的感觉啊。那 famous actors and actresses got off, 没什么可说的啊，很有名的男男女演员们就从这个大巴上下来了。Dressed in dark glasses and old clothes, they had to take precaution.
+
+## 00:02:58–00:03:32
+
+Glasses and old clothes. They had taken precautions so that no one should recognize. And here are a few key points. One, this one, this one, are all helping you to break the sentence. Ah, let's first look at this sentence. It says they had taken precautions, meaning they took some special precautions, ah, preventive measures. If we just look at this sentence, we don't really understand what it means to take some preventive measures. It doesn't matter if you look forward or backward. Actually, when your level is high, you can look at this part.
+
+## 00:03:28–00:04:02
+
+往后看无所谓啊，其实等你水平很高的时候，从这儿看到这儿啊，其实这句话就懂了。我们现在只是说，我带着各位尝试先去分析句子。然后 dressed in dark glasses and old clothes，就比 dressed in 五十七课咱们学过对吧？哎，分词作状语了，哎，穿着着这个啊暗色的这个这个镜子啊，其实你理解为就是墨镜呗，墨镜呗。然后 old clothes，然后穿的还是旧衣服对吧？哎，穿啊，穿戴着啊，戴着就
+
+## 00:03:58–00:04:32
+
+对吧？哎，啊穿啊穿戴着啊戴着旧暗的眼镜，然后穿着旧衣服，然后他们做了一些特殊的这个预防措施，那就是这些呗，对吧？以便以便什么呢？No one五十九课咱学过了，没有人可以应该说能recognize的，没有人应该能怎么样的这个把他们给识别出来认出来，对吧？哎，非常好，在这儿的so that多说一句啊，其实这个so that既可以表目的，又可以表
+
+## 00:04:28–00:05:02
+
+再多说一句啊，其实这个 so that 既可以表目的，又可以表结果，但大多数情况下就是还是五十九课咱学的那个，以便就可以了。而且很多的时候，我个人觉得，以至于你其实你不，你不管它就没问题。就 so that 你看到你不翻译它，你看我举个例子啊，说他们做了一些特殊的这个呃预防措施啊，戴着黑眼镜，戴着墨镜，然后穿着旧衣服，然后呢没有人可以呃识别出来，没有人能认出来他们，对吧？
+
+## 00:04:58–00:05:32
+
+呃，识别出来的没有人能认出来他们，对吧？哎，就我觉得还是可以的，没有什么太大的问题啊。就是这个连词，它的大多数情况下，你不用死抠它到这儿到底是目的还是结果，其实都可以。But下一句话是要至少七十七课之后咱们才能学的，但是现在看懂很容易。But就是就这个单词你可能看不懂。As咱不管它，They soon discovered，他们飞快的就发现了一件事儿。Discusses can sometimes be
+
+## 00:05:28–00:06:02
+
+发现了一件事儿，Disguises can sometimes be too perfect. 说这些伪装有的时候可能会过于的完美了。好，呃，在这儿我只拖第一句，一百零三课新一咱们就提过，新二也提过，就是这个 too 它其实是一个否定词啊，所以这句话的意思是说这个不是太完美了啊，太棒了，太完美不是那个意思，是吧？说过于了，说这个伪装有的时候可能就过于完美了。那我们看这句话，如果不管 as 的话，这句话读起来无比。
+
+## 00:05:58–00:06:32
+
+那我们看这句话，如果不管 as 的话，这句话读起来无比的舒服，叫做他们很快就意识到伪装可能过于的完美了，跟汉语的语序都是保持一致的，对吧？OK，所以就像这个语法我说的，它其实对于我们而言是并不影响我们去理解这句话的，不懂也不影响理解这句话。这样的语法呢，很多的时候我们可以不去分析，但我会教你，但是要七十七课之后教。原因呢，简单提一句，我们二十八课不是学过定语从句嘛？呃，七十七课咱们会学一个。
+
+## 00:06:28–00:07:02
+
+课不是学过定语从句吗？呃，七十七课咱们会学一个东西叫非限定性定语从句。非限定性定语从句这个玩意儿学完了之后呢，你就知道 as 是非限定性定语从句里边的一个特殊形式。然后呢，它还是在 as 特殊形式里边的特殊形式，放到句首来了。所以我得先把前面的知识给各位讲清楚，我们再说后边的。所以这个不着急，等到讲那课的时候，我会拿过来再跟各位说的，好吧？呃，正好也给大家一个机会，勾着你把新二学完，对吧？别到最后一个单元不。
+
+## 00:06:58–00:07:32
+
+给大家一个机会，勾着你把新二学完，对吧？别到最后一个单元不好好学了啊！This is a wonderful place for picnic.啊，这个都很简单了。说这这个地方是一个野餐的好地方。Said Gloria Glim.一个人说道。G G啊，挂了是吧？G G了。It couldn't be better.啊，Gloria，没办法更好了。这句话我都不想当习惯用法了，你直接当口语的一个很常见的句子给它背下来就完事儿了，就这么简单。啊，Briskly mirrors gray.他
+
+## 00:07:28–00:08:02
+
+Ah, basically, mirrors agree. He agreed. Ah, no newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans. Ah, say no. No newspaperman, no film fans.
+
+## 00:07:58–00:08:32
+
+这个 Why don't we? 很常用的一个句式叫为啥咱们不怎么怎么样呢？哎，要要不咱们这样去吧？要不咱为啥不这么干呢？对吧？就为啥咱们不怎么怎么样啊？那为啥咱不 come more often 来的更哎频率更高一点呢？为啥不咱为啥咱不常来这地儿呢？对吧？哎，咱要不常来这个地儿，其实就这个意思。只不过这个呃，他用的是这个 Why don't we 啊？用的是这样一个否定啊，其实表示的就是咱常来啊。一会儿习惯用法，咱。
+
+## 00:08:28–00:09:02
+
+否定啊，其实表示的就是咱常来啊，一会儿习惯用法咱造句的。Meanwhile, two other actors, Raquel Slinger and Merlin Graves, had carried two large food baskets to a shady spot under some trees. 这句话虽然还真挺长，但它还真不是长难句，就是因为它杂七杂八的东西太多了。我们先看一下啊，Meanwhile，跟
+
+## 00:08:58–00:09:32
+
+东西太多了，我们先看一下啊。Meanwhile,跟上节课学的in the meantime一个意思。与此同时，two other actors，两个其他的演员，男演员啊，actors actresses，对吧？男演员，女演员，其两个其他的演员呢，一个人叫Rocco Slainer，另外一个人叫Merlin Graves，同位语吧。然后怎么样了呢？Carried two large food baskets to a shady spot under some trees. Shady spot.
+
+## 00:09:28–00:10:02
+
+To a shady spot under some trees. Shady spot under some trees.单词部分咱们讲过了，对吧？一个树底下的阴凉地儿。然后这里有一个小的习惯用法，并不难，叫 carry something to some place or somewhere.带着两大包食物的这个 baskets 食物篮啊，去了树底下的一个阴凉地儿啊，其实是简单句啊。When they had all made themselves comfortable, a stranger appeared.
+
+## 00:09:58–00:10:32
+
+All made themselves comfortable. A stranger appeared.当怎么怎么样啊，第一句话就结束了嘛，对吧？说当他们都 made themselves comfortable，让他们自己变舒服了。字面意思就是让他们变舒服了嘛。那这句话其实口语当中很常用。别人来你家，你说哎，找个舒服点地儿坐啊，自让自己说 make yourself comfortable, man. 哎，就是放松下来，让你自己舒服一点。哎，口语当中经常用。说当他们都找到了舒适的地方，都让他们自己。
+
+## 00:10:28–00:11:02
+
+当中经常用说，当他们都找到了舒适的地方，都让他们自己坐下了。哎，这找到阴凉地儿了，也坐舒服了。一个陌生人突然出现了，完了，是不是粉丝狗仔队来了呢？哎，下一句话给的是 he looked very angry. 这不像粉丝和狗仔队，粉丝狗仔队看到喜欢的明星，应该是很亢奋、很激动啊，不应该是生气呀。 Now you get out of here, out of you! He shouted. I来个连读. You get out of here, out of you! He shouted.
+
+## 00:10:58–00:11:32
+
+Do you get out of here, all of you? He shouted, "对吧？哎，说你们现在都给我从这儿滚！哎，注意，get out of here，是有走的意思的。但是因为是 he shouted，因为是 angry，所以 get out of here，气开这儿，走，哎，走你滚！All of you 的意思就是你们所有人啊。I'm sheriff here. 我是这儿的警察长官。Do you see that?
+
+## 00:11:28–00:12:02
+
+呃，警察长官，Do you see that notice? It says no camping in case you can't read. 所以你注意到，你有没有看到那个通告标志？那儿这个你看图是吧？他说的是 no camping，这儿不可以野营哦。 In case you can't read，损了他一句，说除非你不会，你看这个 read呀，不是阅读，就是类似于识字儿。除非你读不懂字儿，对吧？否则你就不要给我在这儿 camping。
+
+## 00:11:58–00:12:32
+
+对吧？否则你就不要给我在这 camping 啊。那在这里 in case 就是除非啊，一个小短语，可以理解呗。 Look, sheriff. 我说，瞧啊，这个 sheriff said Rocco, don't be too hard on us. 这地方我觉得从字面意思比较好猜，不要过于的艰难强硬对于我们，对吧？对于我们不要太强硬。 I'm Rocco Sandler, and this is Merlin Graves. 我是这个大明星，这个是另一个大明星。 Oh.
+
+## 00:12:28–00:13:02
+
+个大明星，这个是另一个大明星。Oh, is it?他说，哦，是吗？注意这个语句，这个语序不是那种被信、被说服了，是那种讽刺。说，Oh, is it?哎，不是，是那种。Oh, is it?哎，是那种，就瞧不起你啊！你就明显知道你撒谎。你看你开这破车，穿这破衣服，你怎么可能是两个大明星呢？Oh, is it?所以他接下来跟了一句话，叫said the sheriff with a sneer，冷笑嘲笑道，哎。
+
+## 00:12:58–00:13:32
+
+冷笑嘲笑道：“哎，好吧，我要 I'm Briskly Mears and my other name is Glory Gleam. Now you get out of here fast.”他说：“我是这个B M，然后我另一个名字是G G。这就是跟他们来的那两个人吧？对吧？那两个人也没看出来，就这两个人我没看出来是谁，那两个人我也没看出来是谁，对吧？”他说：“现在赶紧从这儿走，对吧？这是好听的，不好听点就是赶紧从这儿滚，对吧？”OK。
+
+## 00:13:28–00:14:02
+
+听的不好听点儿就是赶紧从这儿滚，对吧？OK，习惯用法咱们造句吧，有这么多，咱们挨个看。首先，a party of并不难，我们迅速过一遍就完了。叫a party of young men are responsible for this。哎，有一群年轻人，哎，年轻男子对这件事情要负责。Next one说，a party of school children play truant from school and went to Paris。说有这么一帮学校里的孩子，他们逃学了，然后去巴黎。A party of men and women some
+
+## 00:13:58–00:14:32
+
+A party of men and women sang the same ah sang the same song over and over again. Sang the same song over and over again. Ah,一遍又一遍的唱相同的歌啊. Okay,那注意力集中吧，咱听一下这个电影片段. We had heard there was a party of brave men here. Okay, very good. Next one. Why don't we? Ah,一个建议，咱们咱咱们为什么不怎么怎么样呢？比如说，Why don't we go into the kitchen? 咱为啥不去厨房呢？比如说抽烟啊，你说。
+
+## 00:14:28–00:15:02
+
+Go into the kitchen. 咱为啥不去厨房呢？比如说抽烟啊，你说咱为啥不去厨房抽呢？或者说这个聊个天儿是吧？咱为啥不去厨房呢？啊， next one. 说 Why don't we hitchhike to Beijing? Hitchhike to somewhere.搭便车去某地. Why don't we make it official? Official. 两个常见的含义，回顾一下。如果是形容词，正式的；如果是名词，行政官员，对吧？那 make it official 让这个事儿成为正式的。啊，对啊，哎，咱正式定下来。 OK. 那注意力集中，咱听一个电影片段. Why don't we try?
+
+## 00:14:58–00:15:32
+
+Okay, but attention, please. Let's listen to a movie clip. Why don't we try on this beautiful, handsome white shirt? Very good. Next word is carry something to somewhere.携带某物去某地，啊，对吧？携带某物去某地。比如说，Why don't we carry this table to our yard?说为啥咱不带着这个桌子去咱的这个院子里啊？哎，啊，你看我还用到了Why don't we是吧？刚学了。说If you can carry it to the top.
+
+## 00:15:28–00:16:02
+
+We是吧？刚学了。So if you can carry it to the top of the mountain, you may find what you were looking for.如果你能带着它去这个山顶上，那也许你就会发现你正在找的那些东西。注意这里的what是四十六课咱们学过的，不是翻译成什么，而翻译成the things that，对吧？So you may find the things that you were looking for.哎，你能找到那些你正在找的东西。OK，接下来说the man who carried the bag.
+
+## 00:15:58–00:16:32
+
+接下来说 the man who carried the bag to our house lives across the street. 说这个男子，什么男子呢？说带着这个包来咱房子的这个男子，他就住在街对面啊。 Carry something to somewhere. Very good. Next one. Say make oneself comfortable. 就让某人舒服嘛。比如说 please come in, make yourself comfortable. 这个是我们很常用的一句话。就别人来你家，对吧？你说哎， come on in, come in, make yourself comfortable. 你愿意喝点水，喝点水；愿意喝点茶，喝点茶；愿意吃点糖，吃。
+
+## 00:16:28–00:17:02
+
+Oh, you want to drink some water, drink some water. You want to drink some tea, drink some tea. You want to eat some candy, eat some candy. You want to嗑瓜子儿，嗑瓜子儿. Make yourself comfortable. Okay. Next one. So why don't we make ourselves comfortable first? 咱为啥不让自己先哎放松下来，舒服下来呢？ Next one. So why don't you lie down on the bed and make yourself comfortable? 说哎呀，你看你这么累了，要不你为啥不躺床上让你自己舒服一下，就是睡个觉啊？大概就这样意思，或者让你自己休息休息. Okay.
+
+## 00:16:58–00:17:32
+
+啊，大概就这样意思，或者让你自己休息休息。OK，下一个叫Don't be too hard on somebody。那你也可以其实把Don't去掉，叫Be too hard on somebody。叫对某人来说，我们看它的肯定意思叫做太难了，对吧？哎，太这个强硬了啊，或者说要求过严了。OK，比如说Don't be too hard on yourself。比如说你有一个朋友，哎，学习特别的刻苦，然后呢，呃，大多数考。
+
+## 00:17:28–00:18:02
+
+特别的刻苦，然后呢，呃，大多数考试都是都是恨不得满分。然后呢，有一个考试呢，他丢了两分，然后他就一直在想这个两分的事儿啊，就有有些懊恼，有些自责。得了九十八，很不满意。你就可以跟他说，哎，Don't be too hard on yourself，对吧？哎，Next one说，If I were you，I wouldn't be too hard on myself。你劝他用的就是这句话，说如果我是你，我就不对我自己要求这么这么的严格，哎，容易焦虑的，对吧？
+
+## 00:17:58–00:18:32
+
+要求这么这么的严格，哎，容易焦虑的，对吧？Next one，说 you needn't have been too hard on him，你本不必啊，他对他父亲说的，对吧？啊，说啊，妈对他父亲说，你本不必对他这么严格。你看现在出事了吧？啊，你可以不这样吧？好，Next one，说 don't be too hard on them for they're very young，哎，别对他们要求太严啊，他们还很年轻嘛。OK， don't be too hard on somebody，那注意力集中，咱听个。
+
+## 00:18:28–00:19:02
+
+那注意力集中，咱听个电影片段啊。 Come on, guys, don't be too hard on yourselves. Very good. Now get out of here.远离这里，离开这里。 He wants to know when we can get out of here.他想知道咱什么时候能离开这儿。那就不是滚了，对吧？这个就是平步直趋了嘛。离开这里。 Next one, say I will deal with that situation as soon as I get out of here.我会处理这个情况的。
+
+## 00:18:58–00:19:32
+
+As I get out of here,我会处理这个情况的。一怎么怎么样就怎么怎么样。我一离开这里，我就会去处理这件事情的。这个 deal with咱们现在还没学过呢，是吧？但 as soon as咱们十四课学的。Next one说 we should have got out of here.我们本应该就离开这里了。咱们当时怎么没走呢？哎，very good，注意力集中。咱听个电影片段。Recap除了。
+
+## 00:19:28–00:20:02
+
+Recap.除了这些 expression 之外啊，文章也很重要。那但 expression 也很重要，听说读写都用得到。那咱们就造句，造完句子大声朗读啊。然后文章呢，还是熟读成诵。然后呢，置顶留言可以找到重复间隔的学习材料。那以上呢，就是本期视频的全部内容了。如果各位喜欢我们的课程呢，欢迎各位关注、订阅、一键三连，分享给那些需要的朋友，来帮助我们快速成长。See you next time.
+
+## 00:19:58–00:20:13
+
+祝我们快速成长。See you next time.
+

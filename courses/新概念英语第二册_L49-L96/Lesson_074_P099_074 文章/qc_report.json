@@ -1,0 +1,29 @@
+{
+  "state": "machine_processed_approximate",
+  "human_reviewed": false,
+  "accuracy": null,
+  "audio_duration_seconds": 1213.637375,
+  "processed_audio_seconds": 1213.637375,
+  "frame_count": 208,
+  "screenshot_timestamp_uncertainty_seconds": 1,
+  "issues": [
+    {
+      "type": "approximate_fast_mode",
+      "detail": "1-second visual sampling, compressed screenshots, lightweight OCR, one ASR model and no human review"
+    },
+    {
+      "type": "short_visual_events_may_be_missing",
+      "detail": "Use original video timestamps for review"
+    },
+    {
+      "type": "no_independent_asr_cross_check",
+      "detail": "Qwen output is not independently verified"
+    }
+  ],
+  "omitted_stages": [
+    "Whisper cross-check",
+    "PaddleOCR-VL",
+    "MinerU",
+    "human review"
+  ]
+}

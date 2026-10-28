@@ -1,0 +1,128 @@
+# 075 单词 语法
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn new concept English Book Two Lesson Seventy Five Words and Grammar. 那老习惯进入正式课程之前呢，咱们看几个小的问题。第一，如何表达发送信号？第二，如何表达把火给踩灭了？第三，如何表达抵达现场？那带着这三个问题，Hope you gonna enjoy. 好，我们先看本课。
+
+## 00:00:28–00:01:02
+
+好，我们先看本课的单词啊。第一个 thick thick 这个这个音啊，就是我们现在音标写成这个样子的。希望您还记得要咬一下舌啊，这样的一个音，对吧？然后给它连起来叫做 thick thick。 OK， thick 指的是厚啊，它是个形容词。那你想拿它去造句就比较容易了，你形容词加名词或者形容词单独去用，对吧？比如说你看这句话说 The ice can't be thick enough for us to walk on。
+
+## 00:00:58–00:01:32
+
+Be thick enough for us to walk on. This ice, ah,一定还没有足够的厚，对于我们来说，在上面去走，对吧？哎，就是不够厚，你别上上面去走啊！Can't be加形容词，一定不怎么怎么样。OK，是一个推测。Next one说，The fog must have been too thick to drive to Beijing.说这个雾啊太厚了。哎，其实什么叫雾厚呢？就是我们至少北方话大多数就雾太大了啊，太而不能啊。
+
+## 00:01:28–00:02:02
+
+啊，太而不能啊，too thick to do something，对吧？哎，呃，太大了，以至于没办法开车去北京。Next one说，cleaning thick snow is one of my source of income。这可能是一个小孩子说的话，尤其是西方国家。小的时候，如果咱们看过那有一个电影《小鬼当家》，那个里边那个小男主不就是cleaning thick snow嘛，对吧？哎，叫做打扫这个厚的雪是我收入来源的主要，呃，是我的这个收入来源之一啊。One of my source of income。
+
+## 00:01:58–00:02:32
+
+主要是我的这个收入来源之一啊，one of my source of income。这个咱们之前学过啊，再读一遍这个单词 thick。OK，那我们看下一个单词，下一个单词跟我读一下，叫做 signal。signal signal，但注意它是名词，对吧？我们配的图是 S O S，什么？就是信号啊，发出信号，名词 S O S 就是求救信号啊。那这个 signal 呢，就是信号的意思。那它最常见，我们要造句，肯定要是跟动词连起来。那发送一个信号，send 这个单词各位非常熟悉。
+
+## 00:02:28–00:03:02
+
+连起来，那发送一个信号，send这个单词各位非常熟悉，叫做send a signal，发送一个信号。接下来想拿它去造句，跟其他的习惯用法去联合起来是比较容易的一件事情，对吧？比如说，our captain ordered us to send a signal. Order somebody to do something.啊，命令某人做某事儿。再来说，it is impossible for us to send a signal in this thick fog day.刚才咱们学了thick fog，对吧？哎，说在这个大雾天儿。
+
+## 00:02:58–00:03:32
+
+刚才咱们学了 thick fog，对吧？哎，说在这个大雾天儿，对于我们来说，想发出信号是太难、太困难的一件事情了，对吧？这个信号穿不过这个雾。 Next one，说 Why did you inquire about how to send a signal? Inquire about something，询问关于某件事情。 Okay，这是咱们三十九课学过的。接下来呢，咱们注意力集中，听一个电影片段啊。 I was hoping you would send a signal so people would realize what was down here. Okay， next one，下一个单词跟我读一下，叫做 stamp， stamp。
+
+## 00:03:28–00:04:02
+
+Next one,下一个单词跟我读一下，叫做stamp. Stamp后边这个p，哎，轻轻读出来就可以了。Stamp, stamp最基本的意思就是踩的意思。那stamp out，哎，就是踩灭啊。比如说，说I saw you stamp out the fire.哎，我看到了你踩灭这个火的全过程。那saw somebody do something，三十五课咱们学的那课咱们还学过叫see somebody doing something，对吧？那还两者的区别。首先，红皮书里面我们上课讲过，红皮书我让各位写过，对吧？如果您又忘。
+
+## 00:03:58–00:04:32
+
+我们上课讲过红皮书，我让各位写过，对吧？如果您又忘了，那我们再回顾一下，叫做 see somebody do something 是全过程， see somebody doing something 指的是这个那个看见正在进行的一瞬间。接下来我们看一下原文，原文给了这样一句话，叫做 she stamp out the letter S O S in the snow。好，这句话就结束了。然后呢，我跟你说，那呃原文咱写不出来，你来个四旬经转换，里面的每一句话都是您自己造的句子，对吧？好，那这句话就不是踩灭火了，就是踩。
+
+## 00:04:28–00:05:02
+
+造的句子对吧？好，那这句话就不是踩灭火了，就是踩出啊，踩出了一个呃三个字母 S O S 的三个字母对吧？有求救的字母。Next one，咱再造一句话说，As soon as he stepped out of the bedroom, someone rang the bell. 那你看这里的 stepped out of the bedroom 是什么意思啊？不是 stepped out 啊，是 stepped out of the bedroom 是吧？走出了这个这个呃卧室。你看他这里还用的不是走，他是 step 啊。
+
+## 00:04:58–00:05:32
+
+这个呃，卧室，你看他这里还用的不是走，他是 stand 啊，其实什么意思？有点那种带着小情绪，比如说怒气冲冲的啊，咚咚咚咚啊，踩着地板，踩着地面，很生气的跺着脚就出去了，对吧？还是这样一种感觉。As soon as he stamped out of the bedroom，啊，其实就是 he went out of the bedroom，啊，如果我们不加上那种呃副词的感受的话，OK，就不去形容这个动词就 went 就可以了，OK。那再读一遍这个单词。
+
+## 00:05:28–00:06:02
+
+个动词就问就可以了。OK，那再读一遍这个单词stamp，OK，very good。下一个单词哎，helicopter连起来helicopter，helicopter，直升飞机哒哒哒哒哒哒哒，对吧？helicopter，helicopter。想去造句的话，你看，注意它的词性是一个名词。六一二三四五六当中最常见的位置一三五，对吧？它可以作为一个地点，比如说我把我的手机忘在这个helicopter里面了，对吧？没有问题的，或者helicopter，呃，这个。
+
+## 00:05:58–00:06:32
+
+Copter里面了，对吧？没有问题的。或者helicopter，呃，这个上面有一个什么什么东西都没有问题啊。那我们再造一个句子，比如说She's been studying helicopter for nearly thirty years.啊，这里的studying就不是学习，我们给它翻译成研究。说他已经研究这个直升飞机啊，将近三十年了。五十课咱们学的Have been doing，对吧？Next one，说It takes him ten years to learn how to drive a helicopter.说这花了他将近十年的时间去学习如何驾驶一辆直升飞机。It takes somebody
+
+## 00:06:28–00:07:02
+
+如何驾驶一辆直升飞机？It takes somebody some time to do something.五十课咱们学的。Next one, so he is fairly confident that he could drive this helicopter.他很自信的事情是，他觉得他能驾驶这辆直升飞机。五十五课学的，fairly confident that，对吧？包括你看，confident既然这个形容词出现了，我们再回顾一下confidence那个名词。OK，再读一遍这个单词helicopter. Very good.下一个单词thin.
+
+## 00:06:58–00:07:32
+
+Very good.下一个单词 scene scene 啊 scene 现场。你比如说，我们如果看这种什么警匪片儿啊，类似于对吧？说警察抵达现场叫 arrive on the scene。哎，注意一下，看这个小的短语，原文也出现了，我们拿出来直接用，非常棒的一个短语，arrive on the scene，抵达现场，到达现场。那我们再有这样一句话，说 before the police arrived on the scene, they had already escaped。说在警察到达现场之前，这帮人。
+
+## 00:07:28–00:08:02
+
+Had already escaped.说在警察到达现场之前，这帮人已经逃跑了。好，我想问一个问题，这个答案你要去四十九课。如果您不知道，去四十九课去找啊。这个说明您忘了，就是这里的place可不可以被省略成把before去掉，把the place去掉，给它变成arriving on the scene they had already escaped。能？为什么能？你不要告诉我能就行了啊。不能？为什么不能？你一定要告诉我为。
+
+## 00:07:58–00:08:32
+
+不行了啊！不能，为什么不能？你一定要告诉我为什么不能？这个是很关键的这个语法。OK，好，如果您能解答出来，这个语法其实就七七八八的就你很熟悉了啊。Next one,说The police who first arrive on the scene recognized the woman.第一个到达现场的这个警察啊，比如说我们加个戏，在人群当中认出了这个女人。OK, next one说We should have arrived on the scene early.说我们本应该早一点就到达这个现场的。But we didn't.
+
+## 00:08:28–00:09:02
+
+早一点就到达这个现场的，but we didn't. 注意 should have done，总是有这种 I didn't， we didn't， she didn't 的这样一个含义在里面，就是我当时并没有这么去做，好吧？好，那再读一遍这个单词，seen， very good。那接下来这句话很有意思，是吧？哎，我们看一下这句话，那 pay for your service，在这儿我就多提一句，叫支付你的，哎，付钱给你，购买你的服务，哎，注意力集中，咱看一下。
+
+## 00:08:58–00:09:32
+
+给你购买你的服务，哎，注意力集中，咱看一下。哎，每个月给你这么多钱，然而我们竟然是首先到达现场的，这不合适吧？来，next one，下一个单词叫 survivor，哎，survivor，survive，指的是幸存下来，survivor，幸存下来的人，e r 或 o r 表示做这件事的人，对吧？幸存者啊，那像这个图里边这个人。
+
+## 00:09:28–00:10:02
+
+是做这件事的人，对吧？幸存者啊，那像这个图里边这个人撞车了啊，后边是一辆报废的汽车，那他人竟然没什么事儿。Survivor，玩一个一个名词想去造句，而且还是表示什么什么人，这个您应该是熟门熟路了。比如说，The survivors need to stay out of the limelight。说这些幸存者呀，他们需要远离聚光灯，直到他们自己愿意的时候，您再去采访他，否则不要打打这个打乱他平静的生活，对吧？哎，不要去呃骚扰别人。
+
+## 00:09:58–00:10:32
+
+一个打乱他平静的生活，对吧？哎，不要去呃骚扰别人。Next one说，they talk to the survivors over and over again。好，你看这里其实用到了两个习惯用法。第一个，哎，你看我造这一句话，我就想六一二三四五六当中我用在哪儿？也许不是这样想的，但是我至少先结合一下之前的习惯用法。首先，talk to somebody，talk with somebody是一个很常见的。主语随便来一个，那我还要复习之前学的东西，我再加一个over and over again啊，他们一遍又一遍的和这些幸存者去进行一个对话啊，对。
+
+## 00:10:28–00:11:02
+
+一遍又一遍的和这些幸存者去进行一个对话啊，对吧？Okay, 然后词性转换，完事儿一个。接下来下一句话说，All the survivors burst into tears when they finally met their family. 很合理，对吧？当他们最终见到他们的家人的时候，这些幸存者痛哭流涕啊，突然间就哭出来了。再读一遍这个单词，survivor. 那咱注意力集中听一个电影片段啊，I'm Legend. 啊，威尔史密斯演的这个也挺有意思一个电影。一个一句话，我们听一下。I'm a survivor living in.
+
+## 00:10:58–00:11:32
+
+一个一句话，我们听一下。 I am a survivor living in New York City. OK，啊，我是一个住在纽约市的幸存者。玩一个，接下来呢，本课单词结束了，语法没有新的语法，还是复习，复习的知识点也无比的简单，就是 was, were 和 did。换一句话来说，是咱们从新概念一册六十七课开始就接触到的一个时态，叫做一般过去式，对吧？所以整篇文章我们一会儿会不停。
+
+## 00:11:28–00:12:02
+
+一般过去式，对吧？所以整篇文章我们一会儿会不停的出现像这样的语法，因为过于的简单了，所以我们永远是以练代讲，对吧？到今天基本上不需要你。如果还竟然还不会，那我很怀疑你怎么竟然学到这一课的，对吧？那咱不都说了，pattern drill老习惯。我说 S1 S2是什么？各位下课自己去带一下，以练代讲，这个事儿就搞定了啊。第一个，Did he really enter for a race? He entered for several, and he won one.
+
+## 00:11:58–00:12:32
+
+He entered for several, and he won one.哎，他就是他确实参加了数个，一般过去时。然后他甚至还赢了一个，对吧？还获奖了，对吧？人家还这个，比如说得了个第一、第二、第三，对吧？冠亚季军。往里面去带 S E S 二啊，都是一般过去时。接下来说 Why did you punish that boy yesterday? I didn't punish him. No one did.说你昨天为什么要惩罚那个小男孩？我没有惩罚他呀，没有人惩罚他了呀。这个 did 就是，其实就是 punished him。
+
+## 00:12:28–00:13:02
+
+了呀，这个 did 就是其实就是 punished him 的一个缩写形式，对吧？ Okay，那你看这里是否定句和特殊疑问句，上一句话是一般疑问句和肯定句，对吧？你都在复习啊。下一个说，You look hot. What have you been doing？那你看起来好热，你之前一直干嘛呢？你看之前一直干嘛呢？你看这个其实它把一般过去时跟五十二课咱们学过的现在完成进行时也很好的联系到一起了。我之前一直在做这件事情，然后在当下停止了，对当下有一个影响。 What have you？
+
+## 00:12:58–00:13:32
+
+情，然后在当下停止了，对当下有一个影响。What have you been doing? You look,你当下的影响是you look hot,你看起来浑身冒汗，好热呀。他给的答案是I went climbing this morning and got very hot.啊，我今天早上攀岩去了，挺有意思。这个我还干过，是吧？呃，然后说现在特别的热啊，还是一般过去时和现在完成进行时两个时态的联合。哎，第四个说Did you remember to thank your host?说Yes, I thanked him as politely as I could.说你有记
+
+## 00:13:28–00:14:02
+
+说 Yes, I thanked him as proudly as I could. 说你有记得去感谢你的这个主，这这个这叫什么？就是呃，招待你的这个主人吗？对吧？说 Yes, I thanked him. I 是我感谢他了. As proudly as I could. 说我尽可能的，哎，说同样的怎么样？有礼貌，像我能的那样，就是呃，越有礼，就是我尽可能有礼貌的去感谢了他，对吧？尽我最大可能，记得往里面去带。不都说了啊？那你像什么？As quickly as I could. 就是尽快. As
+
+## 00:13:58–00:14:32
+
+那你像什么？As quickly as I could就是尽快，as carefully as I could就是尽可能的小心，as soon as I could跟quickly是一样的，as well as could就是尽可能的好，对吧？呃，Recap本课除了单词、expression和这个小的语法，都算是本课的一个小的重点。家庭作业呢，老习惯这些我们看一下，对吧？跟之前没有任何区别。造句啊，听电影片段啊，置顶留言呢。然后因为它还有语法呢，我们还有这样三个作业。Pendrive，您别忘了写，对吧？然后回顾。
+
+## 00:14:28–00:15:02
+
+这样三个作业，Pilot Drill，您别忘了写，对吧？然后回顾这个语法，其实就是一般过去时，简单三言两语，您应该就能给自己讲完。红皮书如果到今天还没写的，哎，那我觉得第四单元您就可以做这样的事儿，扫尾，把初级跟中级我们买过的两本红皮书都认认真真的给他做了。OK，那以上呢就是本期视频的全部内容了。如果各位喜欢我们的课程呢，欢迎各位关注、订阅、一键三连，分享给那些需要的朋友，来帮助我们快速成长。See
+
+## 00:14:58–00:15:16
+
+给那些需要的朋友来帮助我们快速成长。See you next time.
+
