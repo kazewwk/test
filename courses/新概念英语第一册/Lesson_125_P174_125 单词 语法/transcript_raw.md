@@ -1,0 +1,172 @@
+# 125 单词 语法
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn New Concept English Book One, Lesson One Hundred and Twenty Five, Grammar and Words. 那老习惯进入正式课程之前呢，我们先看三个小的问题。第一，如何去使用 have to，也就是本课的核心语法。第二， have to 与 must 有什么异同呢？好，最后一个问题，如何表达某人非常的讨厌？带着这三个问题， hope you can enjoy.
+
+## 00:00:28–00:01:02
+
+Enjoy it.好，那我们上来先看一下 have to 它自己本身的含义，表示的是必须或不得不。那你看我一说它表示必须，你可能就会有一些小的点出来啊。如果您之前学的还不错，首先我们原先明显学过有一个单词叫 must，也表示必须，对吧？那 have to 也表示必须，自然而然我就可能会去问，这二者是完全相同，完全不同，或者有什么？
+
+## 00:00:58–00:01:32
+
+二者是完全相同、完全不同，或者有什么区别，有什么相同的点，这些自然就您会想问的问题，对吧？其次呢，很很好玩的事情是 have 这个单词和 to 这个单词您分别都见过，但 have to 放在一起的时候，可能对于各位来说很难去理解它为什么表示必须或者是不得不。各位啊，在这个地方您不要把它看成 have 再加上 to，你去理解为是两个单词放到一起变成了一个新的东西，就类似于我们九十五课。
+
+## 00:01:28–00:02:02
+
+变成了一个新的东西，就类似于我们九十五课学的 had better，对吧？你如果单独先去理解什么是 had 什么意思，再去理解 better 是什么意思，放到一起你完全驴唇不对马嘴，不知道想说什么。 have to 是一个道理，您不要分开去理解，就是两个单词放到一起表示了必须，就这么简单，好吧？比如说，那我们先看它在一般现在时当中的应用，比如说 I have to leave now。我 have to 表示必须或不得不 leave 叫离开，now 叫。
+
+## 00:01:58–00:02:32
+
+Have to表示必须或不得不，leave叫离开，now叫现在，叫我现在必须或不得不离开了。那我们看到这句肯定句，应该就会想问问题，否定句长啥样？一般疑问句长啥样？特殊疑问句长啥样？对吧？我现在不是必须得离开，怎么办啊？我现在可以不离开，对吧？啊，你现在必须要离开吗？怎么问？对吧？很简单，就用do啊！注意，这是由时态决定的，它是一般现在时。
+
+## 00:02:28–00:03:02
+
+Do啊，注意这是由时态决定的，它是一般现在时，在这儿我们就用do啊。说I don't have to leave now，我现在不必走。好，玩一个。那说你现在必须要走吗？叫Do you have to leave now？OK，玩一个。以及Why do you have to leave now？说你现在为什么必须要走呢？玩一个。那另外一种方式就是，它其实是有三单的，在一般现在时当中，当主语是第三人称单数的时候，这个have to它还有一个变化，就变成has加to，所以这句话就变。
+
+## 00:02:58–00:03:32
+
+一个变化就变成 has 加 to，所以这句话就变成了 she has to leave now。她现在必须要走了。那这句话我怎么把它变成否定和一般疑问句呢？其实跟原先没有任何区别，还是一般现在时那一套。三单用谁？用 does。这是各位四十九课学过的啊。所以 she doesn't have to leave now。你看老习惯，你如果用 doesn't 了，后边的动词就给它换回原形。所以 she doesn't have to leave now，叫做她现在。
+
+## 00:03:28–00:04:02
+
+换回原形，所以 she doesn't have to leave now，叫做她现在不必离开，对吧？包括 does she have to leave now？她现在必须要离开了吗？Okay，以及 why does she have to leave now？她为什么必须现在要离开呢？Very good。所以在这个地方给我们提供了这样几个小点：第一，我们需要掌握的叫 have to 本身的含义；第二，在一般现在时这个状态之下，have to 是可以有三单的，用的是 has to，对吧？用的是 has to 啊，以及
+
+## 00:03:58–00:04:32
+
+Has to,对吧？用的是has to啊，以及have to一般现在时do去变否定和一般疑问句。如果是has to，那你变一般疑问句和否定，你就要用does了，对不对？我们做几个练习啊，配合着这一页的知识点来了。比如说，She has to work from nine to five.啊，她不得不或者她必须要朝九晚五的工作。迅速变否定句，She doesn't have to work from nine to five.以及Does she?
+
+## 00:04:28–00:05:02
+
+Doesn't have to work from nine to five,以及Does she have to work from nine to five? Okay,下一个说They have to go to New York.他们必须去纽约。你注意，因为是they，所以后面用原形have to就可以了，对吧？它不是第三人啊，它是第三人称，但它并不是单数啊。否定句They don't have to go to New York.一般疑问句Do they have to go to New York? Okay,玩一个。那包括我们还可以再加一个叫做特殊疑问句How often?
+
+## 00:04:58–00:05:32
+
+那包括我们还可以再加一个叫做特殊疑问句，How often问频率，说How often do they have to go to New York啊？他们不得不多久去一次纽约呢？玩一个，Next one，刚才我们讲的是have to在一般现在时的应用，接下来我们一起去说一下have to在一般将来时的应用。好，我们看例子啊，含义是不变的，在一般将来时之下，我们造一个句子叫I have lost my key， so所以I will have to stay at
+
+## 00:05:28–00:06:02
+
+所以 I will have to stay at home this afternoon. 这可能是早晨说的这句话，说我把我已经把钥匙给弄丢了，所以呀，我不得不待在家里。今天下午一般将来时的这个肯定句叫 will 加 have to，叫将不得不，对吧？那你变否定句，will 怎么变否定句，它就怎么变，叫做 I won't have to stay at home this afternoon. 啊，以及一般疑问句叫 Will you?
+
+## 00:05:58–00:06:32
+
+This afternoon,啊，以及一般疑问句叫Will you have to stay at home this afternoon? Okay,所以各位记住了，Will have to的时候表示的是一般将来时，叫将不得不或将必须啊。否定句和一般疑问句就是由Will跟Will本身去用的时候没有任何的区别。Okay,好，那我们再来一个特殊疑问句，叫做When will you have to stay at home?你将什么时候不得不待在家里呢？或者必须待在家里呢？Okay.
+
+## 00:06:28–00:07:02
+
+待在家里呢，或者必须待在家里呢。OK，接下来依旧是我们做一个练习啊。肯定句给各位叫 He will have to leave tonight. 他将今晚必须离开。否定句 He won't have to leave tonight. 一般疑问句 Will 提前 Will he have to leave tonight? OK，玩一个啊。我的个人建议是在电脑对面的你跟我一起大声张开嘴朗读这些啊。总要是有这么个习惯，我读一句，您读一句，好吧？好，那 When
+
+## 00:06:58–00:07:32
+
+我读一句，您读一句，好吧？好，那 When will he have to leave？他将什么时候不得不离开？好，接下来我们再看一下 have to 如何用在一般过去时当中。那老习惯含义不会变，一般过去时当中我们造一个句子叫 I had to work for my family when I was sixteen。叫注意，你看 have to 又变成了 had to，对不对？含义不变，只是这件事情发生在过去了。叫我十六岁的时候，当时我不得不。
+
+## 00:07:28–00:08:02
+
+过去了，叫我十六岁的时候，当时我不得不，哎，没法去上学了，要为我的家庭去工作赚钱了，对不对？好，怎么变否定句？你一般过去时否定句怎么变？怎么变，它就怎么变，很简单。I didn't have to，对吧？我当时不必 work for my family，不需要为我的家庭而去工作，对吧？包括 Did you have to work for your family？把 did 一提前，这事儿又搞定了。OK，玩一个。
+
+## 00:07:58–00:08:32
+
+D的一提前，这事儿又搞定了。OK，Very good.再来最后一个叫Why did you have to work for your family when you were sixteen?啊，当你十六岁的时候。OK，接下来我们做一个练习，说She had to get up very early this morning.她今天早晨不得不早早起床。一般过去时怎么办呢？She didn't have to get up very early this morning.一般疑问句Did she have to get up very early this morning?
+
+## 00:08:28–00:09:02
+
+Did she have to get up very early this morning? Okay, very good.那我们刚才回顾一下啊，我们刚才讲了 have to，我们需要学到哪些知识点呢？第一，have to的含义，必须或不得不。哎，那它跟 must 是一个含义了，好像听上去都是必须，对吧？我们看一下它会有什么区别。第二，它至少可以用在三个不同的时态当中，一般现在时不是只能用在这三个时态啊。我们现在只讲这三个时态，一般现在时、一般过去时和一般将来时。
+
+## 00:08:58–00:09:32
+
+讲这三个时态，一般现在时、一般过去时和一般将来时。然后它如何去变？在不同的时态之下，如何去变否定句、一般疑问句和特殊疑问句呢？那最主要其实借助的还是它那个时态本身需要借助的东西。比如说，在一般现在时时态之下，我们就借助 do 和 does；在一般过去时之下，我们借助的就是 did；在一般将来时之下，我们借助的就是 will 这个单词，对不对？OK，玩一个。那它跟 must 有何异同呢？
+
+## 00:09:28–00:10:02
+
+Okay, one more.那它跟 must 有何异同呢？首先，must 也表示必须，这就是二人最这两者最大的共同点，就是二者都表必须。但是有一点点区别是什么呢？就是 must 是说话人主观的一个看法，也就是他自己想怎么样。比如说，I must go now，说我必须要走了，没有任何人和客观情况逼着我要走，就是我想走了，就这么简单啊。那
+
+## 00:09:58–00:10:32
+
+我要走，就是我想走了，就这么简单啊。那 have to 其实除了必须，我们还给了第二个含义，叫不得不，对不对？所以它是某种程度上一个客观需要，叫被逼迫的，我不得不这样去做，我必须要这样去做。所以比如说像章程或者说他人的一些命令啊，包括但不限于这些。比如说 I have to go now，这两句话虽然貌似翻译起来都可以翻译成叫我必须走了，但区别在哪？区别在于底下这句话。
+
+## 00:10:28–00:11:02
+
+但区别在哪？区别在于底下这句话叫客观情况，什么意思？我举个例子，假设你去别人家参加聚会，然后你说 I have to go 的，叫做我不得不走了，别人就会问你为什么呢？别人就会能知道，其实你不是很想走，但是要么比如说太晚了，你第二天有工作；要么比如说孩子还在家里面，一个人你不太放心，或者等等等等一系列的原因，你表达的其实是你其实不想走，但
+
+## 00:10:58–00:11:32
+
+列的原因，你表达的其实是你其实不想走，但是基于客观的原因，你必须要走了。这叫 I have to go，而 I must go 是有点什么感觉呢？就是哎，你做的这饭也不好吃是吧？你们家待着我也挺没意思的。哎，我必须要走了。但大多数人不会这样说话，能感觉到吧？对吧？他不是我主观想走了，所以他往往会找一个客观的情况。OK，玩一个。那接下来呢？我们尝试去给他一些场景，比如说 This is a terrible party.
+
+## 00:11:28–00:12:02
+
+尝试去给他一些场景，比如说 This is a terrible party. We really must go home. 说这聚会太太糟糕了，我们真的必须要赶紧回家了。就是我自己想走，因为你这玩的没意思。那另一种情况呢？你可以这样说，叫 This is a lovely place. 哎，您这地儿真好。 But I have to go home because of my daughter. 说但是呢，我不得不走了，因为我家里边还有小女儿还没吃饭呢，对吧？你这真好，但是你看到这点了，我必须。
+
+## 00:11:58–00:12:32
+
+还没吃饭呢，对吧？你这真好，但是你看到这点了，我必须不得不走了，客观情况。OK，好，接下来呢，我们还是尝试去找一些啊，尝试去找一些例子，我们带进来啊。比如说，I must stop smoking和I have to stop smoking这两句话有什么区别？我们想一下啊，must表示的是主观的感受，就是我自己想不抽烟了，而I have to stop smoking。
+
+## 00:12:28–00:13:02
+
+想不抽烟了，而 I have to stop smoking 表示客观的一种逼迫，我不得不不抽烟了。我想抽，但是可能比如说我得了某个病，再抽就抽没了，是吧？人就抽没了，所以我不得不不抽烟了，叫 I have to stop smoking，好理解吧？OK，啊，再来，接下来呢？刚才说完了那些啊，我还要在这个地方再稍微多说一句啊，我还要在这个地方稍微多说一句。二者其实还有一个小的区别就。
+
+## 00:12:58–00:13:32
+
+句，二者其实还有一个小的区别，就是我不知道各位有没有印象，must这个单词变否定的时候的mustn't，这是我们当时在六十一、六十三课认真给大家讲过的，它表示的不是不必，表示的是禁止，它的否定不是不必，是禁止。那不必怎么说呢？当时我们就提到了，那咱们等到一百二十五课再学，其实就是have to的否定，即为不必，好理解哈。OK，好，讲完了刚才那。
+
+## 00:13:28–00:14:02
+
+极为不必，好理解哈。OK，好，讲完了刚才那些呢语法，我们接下来看一下本课的单词啊。首先第一个单词给我读一下，叫做water，water啊，水是吧？很简单一个单词，各位之前也认得。那今天我们来见一下它的动词用法。以前肯定是名词嘛，水对吧？喝的水啊啊，浇花用的水啊。那它做动词意思的时候，它其实指的真的就是浇水，是吧？比如说我们造一个句子啊，说My father waters。
+
+## 00:13:58–00:14:32
+
+我们造一个句子啊，说 My father waters the garden every day. 哎，我父亲每天都浇花园。一般现在时。再来说 My mom watered the flowers last night. 一般过去时。 OK，那再来一个，加上刚才我们之前刚刚学过的定语从句，说 The man who is watering the garden is my brother. 啊，正在给这个花园浇水的那个男人是我兄弟。 OK， very good. 接下来。
+
+## 00:14:28–00:15:02
+
+浇水的那个男人是我兄弟。OK，Very good。接下来两个单词，先看第一个叫做 terribly，terribly啊，叫做非常的啊。它其实跟 very 是有点像，但区别在哪个地方呢？very 其实本身是一个偏中性的副词，哎，也就是说你可以说 very good，你可以说 very bad，都可以，对吧？而 terribly 往往指的是那种糟糕的非常，比如说 dry 叫做干旱，所以你可以把这两者。
+
+## 00:14:58–00:15:32
+
+比如说 dry 叫做干旱，所以你可以把这两者放到一起叫 terribly dry 叫做特别特别的干啊，特别不好的那种情况啊。比如说我们造一个句子叫 I watered the garden yesterday, but is terribly dry right now. 我昨天刚浇了花园，但为什么今天这么干呢？ Okay, 现在这么干呢？ Very good. 以及我们可以造一个句子说 Why is it terribly dry this summer? 说
+
+## 00:15:28–00:16:02
+
+Is it terribly dry this summer?说今年夏天怎么这么干燥啊？OK，玩一个下一个单词，跟我一起读一下，叫做 nuisance。我们直接找了一个夏天啊，最最最令人烦恼的动物是吧？蚊子啊，它就叫 nuisance。 nuisance不是说蚊子的意思， nuisance叫令人讨厌的人或物啊，叫 nuisance。比如说，What a nuisance!啊，就真烦人啊，真烦人，就是这样一个感觉。或者说，She is a nuisance.
+
+## 00:15:58–00:16:32
+
+烦人就是这样一个感觉，或者说 she is a nuisance。说这个这个人啊，太烦人了，很讨厌，对吧？接下来我们看一个小电影片段，当中直接出现了一句话，叫做 Billy is a nuisance。说 Billy 这个人呢，非常令人讨厌啊。我们接下来一起看一下。 Class, say hello to Billy Madison. Hello, Billy Madison. Billy is a nuisance. He will be gone in two weeks. I apologize for this inconvenience.
+
+## 00:16:28–00:17:02
+
+In two weeks, I apologize for this inconvenience. Okay,啊直接老师说说Billy is a nuisance,说麻烦精讨厌鬼是吧？Okay,下一个单词我们一起读一下，叫做mean, mean叫做含义意味啊，你是什么意思啊？什么含义啊？而后面这两个单词，一个叫meant，另外一个还叫meant，叫过去式和过去分词。比如说，It means we can't help him.说这意味着我们没有办法帮助。
+
+## 00:16:58–00:17:32
+
+说这意味着我们没有办法帮助到他，叫 It means we can't help him, 对吧？我们把它变一般疑问句，叫做 Does it mean we can't help him？那我直接对 We can't help him 提问，那就变成了 What does it mean？它到底是什么意思呢？好，我们另外一个跟 mean 非常常用的单词呢，是呃常用的句型呢，在这句话当中叫 What do you mean？那你什么意思呢？OK，比如说在这段对话当中，一个人说 What do you do？说你
+
+## 00:17:28–00:18:02
+
+在这段对话当中，一个人说 What do you do? 说你是干嘛的？另外一个人问他你什么意思啊？另外一个人啊又问了他一遍说 What do you do for a living? 就是你其实靠什么生活啊？做什么营生啊？做什么工作？其实就是 OK。好，那接下来我们一起看一下这个小的电影片段。 What do you do? What do you mean? What do you do for a living? Why? You seem like you're interested. OK, very good. 啊，说 What do you do? 啊。
+
+## 00:17:58–00:18:32
+
+Okay, very good. Ah, so what do you do? Ah, what do you mean? Ah,你什么意思呢？那我问的是What do you do for a living? Okay, very good.下一个单词跟我读一下，叫做surprise. Surprise. Ah,叫做惊讶啊，令人惊奇的事情啊。比如说What do you want?别人问你说你想要什么的时候，有一个非常好用的口语叫surprise me.啊，令我感到惊讶吧，啊，惊奇我吧，对吧？啊，让我感到惊喜。
+
+## 00:18:28–00:19:02
+
+惊讶吧啊，惊奇我吧，对吧啊，让我感到惊喜吧。你做什么都行啊，包括比如说，What do you want to eat for lunch for dinner? 哎，你想呃吃什么啊？晚餐啊，晚餐吃什么呢？午餐吃什么呢？你就可以回答，特别偷懒的一个方式。Surprise me, OK? Very good. 我们原文呢出现了一句话叫 That was a pleasant surprise. 说哎，那刚才这件事儿是一个特别令人感到哎愉快的惊喜。
+
+## 00:18:58–00:19:32
+
+别令人感到哎愉快的惊喜啊！肯定句给你了，一般疑问句、特殊疑问句就可以造出来了。叫 Why was that a pleasant surprise? Okay, very good. Recap: 本课啊，本视频非常重要的 have to 和 must. Have to 自己本身的用法，以及它与 must 之间的异同啊。然后呢，我们在 expression 这个地方学到了两个小的短语，比较常用，一个叫 She's a nuisance.
+
+## 00:19:28–00:20:02
+
+的短语比较常用，一个叫 she's a nuisance，或者说 you are a nuisance，he is a nuisance，very good。下一个呢叫做 what do you mean？啊，别人说一句话，你没特别明白他这句话，不注意啊，不是你没听懂啊，是你听懂了，但你不确定他这句话到底内涵指什么，你才会 what do you mean？啊，他说了一句话，你听都没听懂，那就不要问 what do you mean了啊。OK，单词造句老习惯，初级红皮书查找一下本课的语法，也就是 have to，然后呢给。
+
+## 00:19:58–00:20:32
+
+一下本课的语法，也就是 have to。然后呢，给自己讲解一遍今天的核心知识点。如果大家喜欢我们的课程呢，欢迎大家关注、订阅、一键三连，分享给那些需要的朋友，来帮助我们快速成长。最后，我们再来看一句名人名言。My memories mean a lot to me, and I hold them close to my heart. See you next time.
+
+## 00:20:28–00:20:37
+
+
+
