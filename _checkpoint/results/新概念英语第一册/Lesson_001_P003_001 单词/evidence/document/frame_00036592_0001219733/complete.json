@@ -1,0 +1,170 @@
+{
+  "artifacts": {
+    "1793158187_1576.md": "44faf1d88d26948c8b96fcb2bdcfa19db2ff8159bd4f001d481348d02ec8585c",
+    "1793158187_1576_res.json": "3c80616ef3d749c7d158916714875f95ef89c7208f6490769ff2db8a16ae426d",
+    "imgs/img_in_image_box_1173_299_1798_1077.jpg": "9a9f86d64720340412f7c60f984d2bb196b5aa456a187ba9b65d1a25e3ab84bb",
+    "region_repairs.md": "bd5b79f77f9a89389b949b5a419e641a87ea21fc35c373c47c06b20c524184ab",
+    "repairs/region_001/1793158197_2368.md": "5acb7efa8ac5b65dad2fe9e8132b5f6d04d059b38fef010b1630a238a1fa8fb0",
+    "repairs/region_001/1793158197_2368_res.json": "5bd7298e57d0bac2719883ee70eb38dee823391d8abb6bafe65470c2429c6d80",
+    "repairs/region_001/source.png": "dd58d6a289106b0212721196425e97619d274be0edd6bfec75b17f59b9425d49"
+  },
+  "input_fingerprint": "19c14628a1ac623adb769114daf5abcbc41c8d6f7299898ceefb5e6290a8817d",
+  "image_sha256": "cb962c1f5821fda75b1dfd03467764195959201a69edc9bfb0c9c8b2ecb79337",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 100.53152143995976,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1648,
+        30,
+        1891,
+        103
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1648.0,
+          30.0
+        ],
+        [
+          1891.0,
+          30.0
+        ],
+        [
+          1891.0,
+          103.0
+        ],
+        [
+          1648.0,
+          103.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "号",
+      "block_bbox": [
+        167,
+        109,
+        254,
+        192
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          167.0,
+          109.0
+        ],
+        [
+          254.0,
+          109.0
+        ],
+        [
+          254.0,
+          192.0
+        ],
+        [
+          167.0,
+          192.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "1. 关闭视频后请回忆刚刚讲解的知识点，看能回忆出多少？基于 studytest 理论。吸收效率更高。",
+      "block_bbox": [
+        161,
+        232,
+        719,
+        457
+      ],
+      "block_id": 2,
+      "block_order": 2,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          161.0,
+          232.0
+        ],
+        [
+          719.0,
+          232.0
+        ],
+        [
+          719.0,
+          457.0
+        ],
+        [
+          161.0,
+          457.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1173,
+        299,
+        1798,
+        1077
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1173.0,
+          299.0
+        ],
+        [
+          1798.0,
+          299.0
+        ],
+        [
+          1798.0,
+          1077.0
+        ],
+        [
+          1173.0,
+          1077.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "bilibili",
+      "block_bbox": [
+        1728,
+        23,
+        1900,
+        112
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1728,
+        23,
+        1900,
+        112
+      ],
+      "ppocr_candidate": "bilbi",
+      "recovered_text": "bilibili",
+      "source_crop": "repairs/region_001/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "engine": "transformers",
+  "device": "cpu",
+  "dtype": "float32",
+  "verification": "machine_extracted_unverified"
+}
