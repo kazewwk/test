@@ -1,0 +1,72 @@
+# L020 听说读写复述练习
+
+快速模式：仅按词时间去除重叠，未经第二模型或人工校对。
+
+## 00:00:00–00:00:30
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn the Concept English Book Two Lesson Twenty Practices. 那注意一小下进行如下练习，唯一的前提就是文章一定要熟读成诵，否则请勿开始。 Okay, hope you can enjoy it. 我们先看第一题 comprehension，锻炼大家能听懂别人问问题的能力啊。这个前提一定是
+
+## 00:00:30–00:01:00
+
+各位文章读的很熟了。OK，那我问您答来了。What's your favorite sport?啊，基于文章啊，您现在就是这个作者。What's your favorite sport?答案fishing. Next one, does it worry you if you don't catch anything? No, it doesn't. Next one, do you often fish, uh, without catching anything? Yes, I do. Next one, are
+
+## 00:01:00–00:01:30
+
+all fishermen unlucky? No, they aren't. Continue, but some are unlucky, aren't they? Yes, they are. They catch old boots,嘛对吧? Next one, what do they catch instead of fish? Old boots and rubbish. Next one, why do you think they are even less lucky than these fishermen?
+
+## 00:01:30–00:02:00
+
+I never catch anything.啊，我甚至连就就学的垃圾都抓不着，啊都钓不着。Where have you spent whole mornings on the river? Next one. What do you always go home with? An empty bag. Next one. What do your friends say you must do? Give up fishing. What do they
+
+## 00:02:00–00:02:30
+
+say about fishing? Is a waste of time. Next one. What don't they realize? One important thing. Next one. What are you really interested in? Sitting in a boat and doing nothing at all. There you go. Asking questions. 训练目标是各位发问的能力，用英文能问出来一般疑问句和特殊疑问句。我们先
+
+## 00:02:30–00:03:00
+
+看例子。Ask me if fishing is my favorite sport.变一般疑问句，is提前就可以了。如果是what的话，那就是对主语提问。What is your favorite sport? Okay,你最喜欢的运动是什么？第二题，I fish for hours without catching anything. Fish谁提前do对不对？那how long肯定是对for hours提问，对吧？对数个小时提问。Some fishermen are unlucky.
+
+## 00:03:00–00:03:30
+
+Are提前Who对主语提问Why对整句提问整句提问就是Why加整句一般疑问句。比如说答案叫Why are some fishermen unlucky? Okay, continue. They catch old boots.一陈述客观事实，一般现在是Do提前What对old boots提问. They catch rubbish too.一模一样，我就不提了。但是只是多了一
+
+## 00:03:30–00:04:00
+
+个 what else 四五连起来看 what 叫什么 what else 叫做还有什么啊还有什么？下一题 I'm even less lucky. Are you even less lucky? Why are you even less lucky? 很简单，这新概念前二十课就学过. I never catch anything. 也很简单，您看一下 catch 就可以了，您别被 never 这个单词迷惑住，对吧？Do you never catch anything? What do you never catch? 是吧？I spend whole
+
+## 00:04:00–00:04:30
+
+mornings on the river. Spend一般现在是do提前。How long对whole mornings提问，对吧？How long do you spend on the river? Where对on the river提问？Who对主语提问？记住别变一般疑问句，对吧？You must give up fishing.肯定是must提前。What对fishing提问？注意what往往是问名词，这儿的fishing就是个名词，对吧？叫What must you give up？或者是What must I give up？Okay，
+
+## 00:04:30–00:05:00
+
+that why is the whole sentence. We don't say much. They don't realize one important thing. First, pay attention. This is a negative sentence. When we want to change it into a general question, we need to first change it into a positive sentence, and then put the question mark. It is called Do they realize one important thing? Okay, good. But if we want to change it into a special question, we keep the don't. It is called What do they realize? They don't realize one important thing.
+
+## 00:05:00–00:05:30
+
+
+
+## 00:05:30–00:06:00
+
+一事儿，是吧？本来两分钟能讲完，你讲俩小时，别人能乐意听吗？OK，所以我接下来还是尝试给大家做一个示范。您下课自己去做。来了，Fishing is my favorite sport. I often fish for hours without catching anything. Some fishermen are unlucky. Instead of catching fish, they catch old boots and rubbish. I'm even less lucky. I never catch anything, not even old boots. I always spend the whole mornings
+
+## 00:06:00–00:06:30
+
+on the river and when home go home with an empty bag. You must give up fishing, my friend said. It's a waste of time. But they don't realize one important thing. I'm not really interested in fishing. I'm only interested in sitting in a boat and doing nothing at all. Okay,好，接下来摘要写作 summer writing练习的是各位写作复述能力，对吧？考试当中考写作，工作当中写邮件，这都是非常重要的能力。各位，
+
+## 00:06:30–00:07:00
+
+简单自己写完来这儿对一下答案就可以了。OK，没什么太多可讲的。Topic for discussion，我们只是看一下他问了我们什么问题啊？What's your favorite pastime? How pastime其实就是个生词，您查一下就知道了。就业余时间，业余时间愿意干啥啊？其实就度过时间，对吧？花费时间就Q time啊？Do you think the writer is wasting his time? Why not? 说你认为这个记者呃，问这个作者是在浪费他的时间吗？注意，哎，
+
+## 00:07:00–00:07:30
+
+浪不浪费？您自己随便说。关键点是 why 和 why not，对吧？这个是让我们能聊下去的一个点。Okay， so do you think the writer would like to work as a fisherman？说你认为说这个作者呀，愿意真的去当一名渔夫吗？Would you？你愿意当渔夫吗？Why or why not？你看，这个是核心能聊下来的点。为什么啊？或者为什么不？那家庭作业 ask me if 先写保证它是对
+
+## 00:07:30–00:08:00
+
+的，然后看自己写的答案，大声朗读出来。摘要写作写完对答案，tell the story，不要忘了做口语复述，这个非常难，我能理解，但是您把文章读到特别熟，难度就会大幅度下降。OK，最后呢，专栏当中可以找得到。以上就是本期视频的全部内容了。如果大家喜欢我们的课程呢，欢迎大家关注、订阅、一键三连啊，分享给那些需要的朋友来支持我们。See you next time.
+
+## 00:08:00–00:08:11
+
+
+

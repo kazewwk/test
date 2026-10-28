@@ -1,0 +1,76 @@
+# L021 单词
+
+快速模式：仅按词时间去除重叠，未经第二模型或人工校对。
+
+## 00:00:00–00:00:30
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we are going to learn New Concept English Book Two Lesson Twenty One Words. 那老习惯进入正式课程之前呢，我们看几个问题。第一啊，如何表达生某人的气？第二，如何表达出于某些原因？最后一个问题，如何表达下定决心做某件事情？啊，带着这三个问题，Hope you guys enjoy.
+
+## 00:00:30–00:01:00
+
+好，那我们先看第一个单词，跟我一起读一下，非常的简单，mad, mad, OK，它表示的是我非常的生气，是吧？OK啊，当然它也有说 driving me mad，啊，这个是我们在文章当中会见到的，不是让我生气就是发疯了啊。OK, mad，愤怒。那 be mad at somebody 指的是对某人很生气，好，注意这个 be，那我们目前为止经常用到的 am, is, are, was, were，对吧？如果
+
+## 00:01:00–00:01:30
+
+表示过去对某人生气呢，那就是 was war。如果是现在呢，I'm mad。那 at somebody就是对于某人。OK，比如说我们造句，很简单，He is mad at me。他生我的气。嗯，那把它变一般疑问句叫做 Is he mad at you？以及为什么他对你生气呢？叫做 Why is he mad at you？ Think about it. Why is he mad at you？啊，说你想一想为什么他生你的气。OK，
+
+## 00:01:30–00:02:00
+
+非常简单。这个单词再跟我读一遍，mad， very good。好，那我们直接看一个小的电影片段。这个电影片段当中就出现了叫做 mad at you。OK，注意力集中。Have you been here all night? Yes. Oh Christ. Why am I mad at you already? OK.
+
+## 00:02:00–00:02:30
+
+why am I mad at you already? Why为什么我已经快我已经在生你的气了呢？Okay, one more.好，下一个小的单词跟我读一下，很简单，reason, reason. Okay，叫原因。那这个单词呢，我们文章当中给了大家一个短语，我们直接就拿出来用一下啊，叫做for some reason，叫做出于基于某些原因，我们不知道啊是什么样的原因，但是基于某些原因叫做for some
+
+## 00:02:30–00:03:00
+
+reason。接下来呢，我们结合其他的习惯用法，尝试去造一些句子。OK，比如说 for some reason，你看到它可以放在句首，对吧？OK， he hurried to the hospital。说基于某些原因呢，他匆忙的赶去了医院。那L十九是告诉各位，hurry to some place 是我们十九课学过的习惯用法，我让各位总结出来了，对吧？您可以在笔记本当中自己去找一下啊。他匆忙的赶去了医院。再来说
+
+## 00:03:00–00:03:30
+
+for some reason she is keen on fishing.啊，这是我们第二十课呃语法的那个视频当中讲学过的，叫做be keen on doing something，叫热衷于做某些事情，对吧？说出于某些原因，我们也说不好是为什么，对吧？是跟比如说不愿意在家待着呀，还是说他喜欢吃鱼啊？反正我们也说不清。但for some reason啊，基于某些原因，she is keen on fishing. Okay, continue.说
+
+## 00:03:30–00:04:00
+
+some reason. Okay, the sixteenth lesson is called you remind me of my father. Okay, based on some reasons, you remind me of my father. Okay, there you go. Next, the next little word is also very simple. Pay attention to this. You see, we basically don't use phonetic symbols. We know s s makes s sound, m makes m sound. You, you think about but that word, right? But it makes a sound. This is one of
+
+## 00:04:00–00:04:30
+
+啊的音啊，这是它的可能性之一，在这儿就是发啊，所以这个单词我们管它叫做some，some，呃，它的发音和这个单词的发音几乎是一样的，就是some any那个some，对吧？好，那它其实我们在这儿呢，给它来一个小的短语，叫a large sum of大量的。那我们现在就直接给大家一个叫做a large sum of money。其实呢，你比如说，那你说它和a lot of
+
+## 00:04:30–00:05:00
+
+有什么明显的区别吗？其实并没有，大概的意思都是表达许多、大量、充足的啊，都是往这个方向去走。你可以理解为是同义词啊，叫做 a large sum of money。来，那我们造句子说 a large sum of money。好，这儿注意一个小点，其实 a large sum of money 这地方你要造句的时候，核心点是 money，它是名词。a large sum of 它其实有点像 some, any, a
+
+## 00:05:00–00:05:30
+
+lot of, many, much, ah, plenty of 这些单词一样, a great number of. 它们某种程度上我们管它叫限定词啊, 是放在名词前面去做一个限定的。所以造句子的时候, 我们由名词去考虑造句, 也就是结合六页三四五六。比如说, a large sum of money was stolen last night. 你看到这里面的 a large sum of money 在句子当中就是做到了一, 对吧? 哎, 它就是一个主语, 这是一个被动。
+
+## 00:05:30–00:06:00
+
+再来说，He must have paid a large sum of money。他当时一定是支付了大量的钱。OK，你看这是我们十七课学过叫 must have done。那在这句话当中，a large sum of money 其实就是做了一个宾语，对吧？OK，还有一个，那我们看再来一个句子叫做 He borrowed a large sum of money from me。这个我们就不是看六二三四五六了，我
+
+## 00:06:00–00:06:30
+
+们实际上是结合了一下其他的习惯用法。第十一课学过叫 borrow something from somebody，OK，哪一个？好，接下来最后一个单词跟我读一下，叫做 determined。determined，好了，注意它虽然是 e d 结尾的，但是你看它的词性，所以在这儿要明白一件事情，虽然我们说这个逻辑是动词加 e d 变过去式或过去分词，
+
+## 00:06:30–00:07:00
+
+但不是说不能反推，也就是说不是说一个单词如果后边是 e d 结尾，它必是动词的过去式或动句过去分词啊，在这儿就是个形容词，对吧？ Determined. Okay, 那它呢经常出现的一个短语叫做 be determined to do something. 好，叫下定决心去做某件事情。比如说我们拿它造句啊，文章当中一会儿也会出现。我们待会儿学视频的时候啊，学文章那个视频的时候，
+
+## 00:07:00–00:07:30
+
+说 he is determined to go to the theater. 好，你看 go to the theater 其实就是我们第一课学的，对吧？好，那你看 be determined to do something 啊，他下定决心啊要去这个戏院。OK，再来说 she is determined to teach me English. Teach somebody something. 第十第三课学的啊，下定决心要教我英文。再来说 they are determined to take part
+
+## 00:07:30–00:08:00
+
+the new play.第十二课学叫 take part in，对吧？当然我没有记错，应该是我们第十八课，哎，第十七课也学过 take part in，是吧？A new play，那儿一个。他下定，他们下定决心要去参加这个新的话剧。OK，这是我们第十二课学的，那儿一个。那 recap 本课呢？呃，你别看单词不是太难，对吧？也不多啊，只有那么几个，但是习惯用法呢还真
+
+## 00:08:00–00:08:30
+
+不少啊！今天我们造句的时候呢，大家都尽量用上这些，好吧？好，那家庭作业我们看一下，首先单词造句或者是对话，对话更好，因为对话有问有答，对不对？造句就是凭空来编一个句子，OK，不需要考虑句子之间的逻辑关系、上下文场景，但是对话是需要这个场景的，所以您自己去试啊。好，老习惯，接下来呢反复听刚才那个电影片段，直到能听出来那个
+
+## 00:08:30–00:08:56
+
+关键的短语或者是句子。OK，好，那以上呢就是本期视频的全部内容了。如果大家喜欢我们的课程呢，欢迎大家关注、订阅、一键三连，分享给那些需要的朋友。See you next time.
+
