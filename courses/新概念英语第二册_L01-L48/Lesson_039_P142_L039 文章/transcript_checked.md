@@ -1,0 +1,60 @@
+# L039 文章
+
+快速模式：仅按词时间去除重叠，未经第二模型或人工校对。
+
+## 00:00:00–00:00:30
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn New Concept English Book Two, Lesson Thirty Nine, Story. Hope you gonna enjoy it.好，那我们直接看文章啊。说Well, John Gilbert. Okay, 注意这是一个人，对吧？说当他 was in hospital，当他在医院的时候，He asked his doctor to tell him，他问要求
+
+## 00:00:30–00:01:00
+
+他的医生去告诉他，告诉他一件事儿。这件事儿，宾语从句，什么事儿呢？Whether his operation had been successful，说是否，你注意啊，whether我们就把它当if就可以了。说是否 his operation叫做他的手术 had been successful，是成功的。But the doctor，但是这个医生呢，refused to do so。这是我们第九课学过的一个知识点，叫refuse to do something，对吧？拒
+
+## 00:01:00–00:01:30
+
+绝怎么怎么样？Refuse to do so叫拒绝这样去做。The following day，讲单词部分我们提过了，叫第二天。The patient asked for the patient就是John Gilbert啊，说他呢就要了一个什么东西，叫a bedside telephone。好，你看bedside这个单词我们从来没学过，我也没讲过，但是我总觉得我给你讲几个单词，你可能就明白什么叫bedside了。Inside,
+
+## 00:01:30–00:02:00
+
+outside, inside里边, outside外面, bedside床边对吧？那bedside telephone床边的一个电话对吧？他要了这么一个床边电话。When he was alone，当他一个人的时候，其实像这小半句，你就完全可以把它多读几遍，通过反复读文章记下来。然后我们经常说，当他当我一个人的时候，When I
+
+## 00:02:00–00:02:30
+
+was alone,对吧？He telephoned the hospital exchange.他给医院的交换台打了个电话，是吧？呃，我感觉现在可能我们都是人工的，是吧？呃，比如说，呃，往哪转接，请按一；往哪转接，请按二，对吧？都是这个样子。And ask for Doctor Millington.啊，然后呃，要找谁呢？Millington，这个我们管他就叫M吧，是吧？M医生啊。Next one.说When the
+
+## 00:02:30–00:03:00
+
+doctor answered the phone, Mr. Gilbert said he was inquiring about a certain patient, a Mr. John Gilbert.说当这个医生啊接这个电话的时候，Mr. Gilbert就说说的其实是一句话，说的是that宾语从句，对吧？各位回想一下啊，说的是什么呢？叫做He was inquiring about.好，他正在询问是一个哎某一个病人是谁呢？
+
+## 00:03:00–00:03:30
+
+叫做一个叫做 Mister John Gilbert 的人。也就是说，他其实给他的医生打电话，问他自己的病情，但是他装作另一个人，对吧？所以他问他自己的病情。 He asked. 他问说，If Mister Gilbert's operation had been successful. 他问啊，说是否 Mister Gilbert's 的手术呢是成功的？ And the doctor told him that it had been. 啊，
+
+## 00:03:30–00:04:00
+
+面其实省略了一个单词叫 successful。说然后啊，这个医生告诉他说他是成功的，对吧？Next one, he then asked.他然后又问到，你看后边这个地方就是一个宾语从句，由 when 引导的宾语从句。说 when Mr. Gilbert would be allowed to go home. Mr. Gilbert 将 be allowed to do something.第十课咱们学的，对吧？我们第十课学的是 now we are not allowed to
+
+## 00:04:00–00:04:30
+
+touch it, 是吧？就我们现在不被允许去摸这个五钢琴了。就是我们第十课学的那句话。那在这儿就变成了我不被允许回家。那在这儿想问的是, Mr. Gilbert将什么时候被允许回家？对不对？And the doctor told him, 医生告诉他什么呢？He would have to stay in hospital for another two weeks. 医生告诉他他将不得不停留在医院 for another two weeks,
+
+## 00:04:30–00:05:00
+
+再来两周。那你看，would have to啊，这地方其实有几个知识点，我说一下，你可以记一下，然后自己去查一下啊。第一个叫做would have to，实际上我们在新二呃第十七课，我印象当中啊，我们学的是will have to。当然了，新一一百二十五课我们也学过啊，叫will have to。那在这儿怎么变成了would have to
+
+## 00:05:00–00:05:30
+
+呢？原因是这里边用的是 told，这就要结合叫新概念一册一百三十三课那个语法。如果主句是一般过去时，那后面的这个从句你就要时态或者情态动词要往后迁一百啊，应该是一百三十五课咱们学的，对吧？所以就变成了 would have to 啊。再来，Then Doctor Millington asked the caller，问了这个什么呢？
+
+## 00:05:30–00:06:00
+
+问了这个打电话的人，if叫做是否，he was a relative of the patient？问他是否是哎病人的这个亲戚是吧？亲人？No，the哎the patient answered说这个病人回答到，I'm Mr. John Gilbert。说我就是Mr. John Gilbert是吧？他无非其实就是他直接问医生，医生不告诉他，他要了个电话，装作另一个人给他打电话是吧？Okay，那本课的习惯用法其实都是我们之前
+
+## 00:06:00–00:06:30
+
+学过的啊，我们简单看一下就可以了，我们不再去造句了，叫 refuse to do something，拒绝做某事，ask for something 和 be allowed to do something，OK，好，recap expression 这三个啊，那老习惯习惯用法造句，您不妨可以再造一下，对吧？我们又再次见到了，就再次造造一下，但我上课就不给大家造了，因为之前造过了啊。然后呢，文章跟读至熟读成诵，这对我们下一
+
+## 00:06:30–00:06:58
+
+个视频做练习是非常有帮助的，好吧？那如呃，以上就是本期视频的全部内容了。如果各位喜欢我们的课程呢，欢迎各位关注、订阅、一键三连，分享给那些需要的朋友，来帮助我们快速成长。See you next time.
+
