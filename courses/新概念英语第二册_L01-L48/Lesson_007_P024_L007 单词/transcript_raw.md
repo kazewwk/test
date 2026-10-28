@@ -1,0 +1,144 @@
+# L007 单词
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn new concept in English book two, lesson seven. Words or拼音呢? Enjoy it.好，那我们上来先看第一个单词，跟我一起读一下，来叫做 detective detective，三个音节，注意重音在第二个音节上，第二个音节往上提一点，叫 detective，侦探的意思。好，那它是。
+
+## 00:00:28–00:01:02
+
+Detective,侦探的意思。好，那它是一个名词。我们单词造句肯定是要找其他的词性的，对吧？因为一个句子当中至少要有一个动词。那我们接下来呢，再结合其他的习惯用法，给大家做一些小的类比啊。比如说，一 go to the theater。我们第一课学过，叫做去剧院，对吧？那我们就可以把它和 detective 连起来，再加上时态。比如说 last week the detective went to the theater。接下来。
+
+## 00:00:58–00:01:32
+
+The detective went to the theater.接下来呢，第二课我们又说过 have breakfast 表示吃早饭，那我们也可以说他吃早饭。第三课我们学过说每天都想一些什么事情，那我们就可以造一个句子说 the detective think about it every day，每天都在想这件事情，对吧？好，我们也可以说 work for somebody，我们可以说 the detective work for a very big company，说他为一个 works for a very big company，说他为这个一个大公司工作，这是我们第四课学过的习惯用法。
+
+## 00:01:28–00:02:02
+
+他为这个一个大公司工作，这是我们第四课学过的习惯用法。然后呢，第五课学过一个习惯用法叫 get something for somebody，给某人拿某拿某个东西，对吧？比如说我们可以说 I can get some coffee for the detective，我能给这些侦探，我给能给这个侦探拿一杯咖啡，拿一些咖啡，对吧？最后一个 knock at the door，我们可以说 yesterday a detective knocked at my door，昨天敲了我的门。那各位可以注意到，我在这个地方后面都给大家。
+
+## 00:01:58–00:02:32
+
+的门，那各位可以注意到，我在这个地方后面都给大家标上了，它是第几课出现的习惯用法。之前给大家留过一个家庭作业，就是让大家去把每一课的习惯用法都给它整理出来，以后我们造句的时候用得到，对吧？单词造句指南结合习惯用法去造句，肯定句造出来了，您再做一些四句型的转化。您想一下，这儿就已经有六个肯定句了，做一下四句型的转化，肯定句、否定句、一般疑问句和各种特殊疑问句。我们至少接下来六再乘个四，四六就二十四句话。
+
+## 00:02:28–00:03:02
+
+我们至少接下来六再乘个四，四六就二十四句话。拿 detective，您至少能造出来二十六句话了，对吧？OK，这是我们说造句的一个思路啊。下一个单词跟我一起读，叫做 airport。好，airport 这个单词实际上是两个单词组成的，第一是 air，第二是 port。air 空气，空中，对吧？然后这个 port 指的是港口，空港啊，又叫飞机场。OK，那我们还是结合习惯用法。第三课的 think about something 和第六课的 once 啊。
+
+## 00:02:58–00:03:32
+
+第三课的 think about something 和第六课的 once a year, once a month, 一年一次或一个月一次。比如说，那这是大型机场对吧？叫 I think about Beijing Daxing International Airport, 大兴国际机场. Almost once a week, 几乎是一周想一次啊，一直想去那个地方参观一下。之前在新西兰就知道这个地方啊，到现在来到北京还是没有时间，但总想去参观一下，就可以这样说，叫 I think about Beijing Daxing International Airport almost once a.
+
+## 00:03:28–00:04:02
+
+Daxing International Airport almost once a week.肯定句出来了，是不是各种否定句、一般疑问句？各位可以自己去做了四句型转换，对吧？好，接下来那我就可以问说，Why do you think about that airport once a week?你为什么总去想它呢？对，那我们就来说一个find名词加形容词，第四课学到的叫I find this airport very cool.那我觉得这个机场看起来特别的帅，对吧？你看它造型也很有意思，像一个。
+
+## 00:03:58–00:04:32
+
+帅，对吧？你看它造型也很有意思，像一个海星一样啊，看起来很酷。所以，那 I find the airport very cool. That's why I think about it almost once a week. Okay, 然后一个下一个单词，跟我一起读，叫做 expect。注意不读 expect，要把它浊化变成 b。啊，这个我们在音标课程当中给大家录制的这些视频当中有进行非常详细的讲解。好，expect 它有两个意思，一个是。
+
+## 00:04:28–00:05:02
+
+好，expect它有两个意思，一个是期待，一个是等待。等待这个含义是我们今天想重点给大家提的，非常像我们之前学过的一个短语叫wait for，叫等，对吧？好，那我们原文给了一句话叫做They were expecting a valuable parcel，说他们正在等一个很贵重的包裹。这两个单词一会儿我们就学到啊，肯定句给大家了。我们现在进行的是原文摘抄再加变，变其实就是四句型转化。
+
+## 00:04:58–00:05:32
+
+摘抄再加变，变其实就是四句型转化，把它变成一般疑问句。Were they expecting a valuable parcel？好，那我们还可以再问一下，说 Why were they expecting a valuable parcel？也可以问 What were they expecting？他们正在等什么呢？Very good，这是我们造句的思路啊。再跟我读一遍这个单词，expect，千万注意不读spect，OK？好，那接下来我们看一个电影片段，里面就用到了叫做 You were。
+
+## 00:05:28–00:06:02
+
+那接下来我们看一个电影片段，里面就用到了叫做 you were expecting 你正在等什么什么 you you're an ogre oh you were expecting Prince Charming well yes actually oh no this is all wrong ah you were expecting
+
+## 00:05:58–00:06:32
+
+This is all wrong. Ah, you were expecting Prince Charming. Ah,你正在等白马王子吗？Okay, Prince Charming.好，那接下来呢，我们再看两个单词。第一个单词 valuable, valuable.第二个单词 diamond, diamond.好，diamond的意思指的是钻石。那 valuable指的是宝贵的啊，很贵重的钻石。比如说泰坦尼克号当中出现的Rose戴的那个海洋之心，我们就可以管它叫做 valuable diamond.
+
+## 00:06:28–00:07:02
+
+心，我们就可以管它叫做 valuable diamond. Very good. 形容词加名词放在一起也很容易造句，对吧？Valuable diamond. 那我们用一个 receive something from somebody 这样一个习惯用法啊，结合其他习惯用法，我们放在一起去造句。比如说 Rose 啊啊，这个 Rose 就是她对吧？女主啊， received this valuable diamond from Carol. Okay, 它来自于谁对吧？收到了这个宝贵的这个呃钻石啊，这个珠宝来自于谁谁谁？
+
+## 00:06:58–00:07:32
+
+这个呃，钻石啊，这个珠宝来自于谁谁谁？那我们可以说 Did Rose receive this valuable diamond from Carl? Okay, one more. 那我们当然了，我们可以对 Rose 提问，可以对 this valuable diamond 提问，也可以对 Carl 提问，对吧？那接下来各位要去想的事情是，我如果对 Rose 进行提问的时候，它是主语，要怎么样来着？如果是 who，直接替代它，叫做 Who received this valuable parcel from Carl? Okay.
+
+## 00:07:28–00:08:02
+
+Who received this valuable parcel from Carol? Okay, very good.一定要记住啊，不变一般疑问句了。好，接下来下一个单词，跟我读 parcel, parcel.好，注意这有一个字母r，我们可以加个软化音 parcel, parcel, parcel.包裹的意思。Okay.好，那我们拿它造句，还是结合第六课的习惯用法啊。今天我这一课大多数让各位单词造句的时候，都是在重点强调结合之前学过的习惯用法啊。好。
+
+## 00:07:58–00:08:32
+
+和之前学过的习惯用法啊，好叫找某人要某物，对吧？啊，但是这没有某人啊，直接说 ask for something 就是直接要某物。比如说 he asked for，他要了一些什么呢？ Some parcels, parcels this morning。他今儿早上要了一些包裹。肯定句给各位了，四句型转化，各位课下直接可以去做了，对吧？ OK，我们提供的是思路啊，而不是让各位把这些句子去把它背下来。 OK，那我们对主语提问，直接说 who asked for。
+
+## 00:08:28–00:09:02
+
+Okay,那我们对主语提问，直接说Who asked for some parcels this morning?今儿早上谁要的一些包裹，我给忘了。Who? Very good.对主语提问啊。接下来一个动词，还是同理不读steal，一定要把它浊化变成the steal steal. Very good.好，它的过去式呢，读stole，过去分词呢，stolen. Okay,接下来我们造句，比如说He stole that valuable.
+
+## 00:08:58–00:09:32
+
+比如说, he stole that valuable diamond. 各位要想的其实是要动词造句是比较简单的。从六一二三四五六的角度来说，最核心的其实就是二，就是这个动词，对吧？句子当中必须有动词。你动词有了，主语随便找一个，宾语随便找一个，这个句子就出来了。至于他偷的是什么，谁偷的什么，这都是不是那么重要的，您都可以随便替换的，对吧？时态要选好啊。所谓动词加动词的变化，好，是他正在偷，已经偷了，还是偷过？
+
+## 00:09:28–00:10:02
+
+动词的变化，好，是他正在偷，已经偷了，还是偷过？时态要选好。肯定句给各位了，接下来的一般疑问句，比如说 Did he steal that valuable 呃 diamond？ OK，肯一般疑问句出来了，那随之各种特殊疑问句也就出来了，比如说 How did he steal that valuable diamond？他是如何把那个贵重的钻石给偷到手的呢？Very good。接下来下一个单词跟我们一起读 main main 叫做主要的，它是个形容词，我们就要配合名词。
+
+## 00:09:58–00:10:32
+
+叫做主要的，它是个形容词，我们就要配合名词了。比如说 main building 指的是主建筑物或者说主楼，我们汉语当中经常说的主楼。我们再结合第六课的 call at 类似于 visit，不知道各位还记不记得讲 beggar 那一课的啊，说他每每每个月都会去呃这个这条街上的每一家里去拜访一下，要一些食物，对吧？OK，好，那我们就可以造一个句子说 This is the main building of UOA, 啊, Auckland of University.
+
+## 00:10:28–00:11:02
+
+This is the main building of UOA,啊，Oxford of University,啊，University of Auckland,奥大是吧？我的研究生母校啊，说这个是奥大的主建筑楼啊，唯一能拿得出手、看的像比较好看的商商这个商科的楼哈。那接下来我就可以造一个句子叫做I called at为什么用的是一般过去时？因为我现在人已经在北京了，不在奥大了，对吧？好，所以它是我过去做的事情。At the main building of UOA once a month.好，你注意once a month，第六课。
+
+## 00:10:58–00:11:32
+
+A once a month.好，你注意 once a month.第六课 beggar 那一课我们学的，对吧？乞丐那一课，一个月一次。呃，我都得去一趟。OK，好。那 main street 就是什么呢？叫做主干道。哎，这个地方其实重点想跟各位提的就是，既然它是一个形容词，你后面就要找一个名词配合着它去造句。OK，好。下一个单词，跟我读 airfield。你看，刚才我们学了 airport， air 加 port，那
+
+## 00:11:28–00:12:02
+
+你看，刚才我们学了 airport, air加port。那现在的air加field, field指的是田地的意思。那airfield是什么呢？指的是我们这些飞机起落的场地。OK，好，那我们有一个小的短语叫做on the airfield，在这个飞机起落的这个场地上。OK，那我们结合第一课turn around造一个句子试一下，比如说he turned around，他转了头，and然后怎么样呢？Found his girlfriend on the airfield，发现。
+
+## 00:11:58–00:12:32
+
+Found his girlfriend on the airfield. 发现他女朋友在这个飞机的这个起落这个这个地地地面上，对吧？在这个地方待着，起落坪啊，起落停机坪这个地方啊，在这个地方待着。OK，那肯定句出来了，四句型转化，各位课下自己去做好吧。下一个单词跟我读，guard guard。好，注意它是个名词，我们直接给大家一个短语叫做 keep guard，叫做守卫在某个地方，叫做 keep guard。比如说，我们造一句话，说看图。
+
+## 00:12:28–00:13:02
+
+叫做keep guard。比如说，我们造一句话，说看图造句，说he is keeping guard，他正在站岗守卫at the door，在门旁边。肯定句给大家给出来了。比如说，我现在想造一个，谁正在门旁边站岗呢？对主语提问直接替代，who is keeping guard at the door？Very good。好，那body guard是什么呢？body是身体，对吧？body。那body guard指的是保镖啊，这是一个小的单词。那两个单词其实我们都学过，放在一起跟大家直接。
+
+## 00:12:58–00:13:32
+
+词那两个单词其实我们都学过，放在一起跟大家直接哎组成了一个新的词组叫做保镖。接下来呢，我们看一个小的电影，电影当中出现了叫做 keep guard，守卫在这个地方啊。 OK。 I wanna meet Angie. You'll be there later, man. Look, look, I need you to stay out here. Keep guard, okay? It's really important. Watch my back, okay? Thanks. All right. Just be yourself. I'll keep guard. Okay, keep guard. 啊，我守在这里。你看这个场景也非常的好啊。我不进去了。 I'll keep guard.
+
+## 00:13:28–00:14:02
+
+在这里，你看这个场景也非常的好，啊，我不进去了，I'll keep guard at the door，我在门口这儿帮你看着。所谓咱们汉语，好，来，接下来下一个单词，跟我一起读，precious，precious，后面也是同样要浊化，叫做stone，precious指的是珍贵的、宝贵的，那stone指的是石头啊。不知道大家看没看过这个电影叫《复仇者联盟》，对吧？里边最大的那个反派叫做灭灭霸，是吧？我们管他叫，然后他现在。
+
+## 00:13:58–00:14:32
+
+反派叫做灭灭霸是吧？我们管他叫。然后他现在手上的这些石头啊，集齐了打响指，对吧？叫做 precious stone。那我们就可以看图造一句话。In this way啊，配合，比如说 in this way，用这样的一种方式，he got all the precious stones。他获得了所有这些珍贵的石头或者这些宝石啊，这些石头啊，stone 更主要是石头的意思。OK，好，那用什么样的一种方式呢？你就得去看电影才能知道了。OK，好。
+
+## 00:14:28–00:15:02
+
+什么样的一种方式呢？你就得去看电影才能知道了。OK，好，那我还可以提问说，How did he get all the precious stones？他是如何获得了所有这些珍贵的这些宝贵的石头的呢？还是要看电影才能解决了。OK，那句子其实从这句话变到下面这句话，只是做了一个简单的四句型转换。接下来最后一个单词，跟我们一起读，sand， sand，沙子的意思啊，沙子的意思。注意说 in。
+
+## 00:14:58–00:15:32
+
+的意思啊，沙子的意思。注意说 in return for my help，各位还记不记得我们在 beggar 那一课，乞丐那一课学过叫做 in return for this，对于这件事的回报，这件事指的是我给他了一些食物，对吧？然后他开始倒立唱歌，那我们就可以说说 in return for my help，作为对我帮忙的一个回馈，怎么样呢？ He sent some sand to me. Sent something to somebody，之前学过的习惯用法，他给。
+
+## 00:15:28–00:16:02
+
+Something to somebody,之前学过的习惯用法。他给我邮寄了一点沙子。那当然了，可能不是普通的沙子。这个沙子可能是，比如说很美丽、很漂亮的一些，对吧？比如说会有固定颜色的一些沙子啊。我们就没有再往下去想了。这个各位靠想象力把它补齐一下。好，肯定句给各位了，又可以进行四句型转换，对吧？比如说 Why did he send some sand to you? 为什么？Any sand to you? 他为什么要给你寄一些沙子呢？Okay, very good. 好。
+
+## 00:15:58–00:16:32
+
+要给你寄一些沙子呢。Okay, very good.好，那本课呢，除了本课所有的单词以外，还有一个小的习惯用法叫做 keep guard。我们在文章当中也会再次见到，叫做守卫、保卫在某个地方啊，站岗或者说看守。Okay，好，那看一下本课的家庭作业。第一，还是老习惯，单词造句或者对话，不要凭自己的想象力去造，错误率很容易很高。各位就用我这个单词造句指南去拿它造句。
+
+## 00:16:28–00:17:02
+
+各位就用我这个单词造句指南去拿它造句，正确率会非常的高啊！每个单词五句话，我都说。接下来呢，各位可以去反复听我们这个文章当中啊，这个视频当中出现那些电影片段，直到你能听出来那些关键的短语或者句子。比如说，我想 keep guard，那你就关键要听 keep guard，别的听不懂不用焦虑，无所谓啊，我们慢慢来。好，那以上呢就是本期视频的全部内容了。如果大家喜欢我们的视频，欢迎大家关注啊，订阅，一键三连支持，并分享给那些。
+
+## 00:16:58–00:17:17
+
+关注啊，订阅一键三连支持，并分享给那些需要的朋友。See you next time.
+
