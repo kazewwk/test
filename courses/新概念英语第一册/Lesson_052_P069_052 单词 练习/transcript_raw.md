@@ -1,0 +1,60 @@
+# 052 单词 练习
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we are going to learn in Concept English Book One Lesson Fifty Two Practices and Words. Hope you guys enjoy it.好，我们先看前两个单词啊。第一个，美国叫做跟我读，the U S.美国是吧？它是缩写 United States，啊，美利坚合众国的缩写叫做 the U S. OK，所以你看这两个点儿就是在告诉各位这两。
+
+## 00:00:28–00:01:02
+
+OK，所以你看这两个点儿就是在告诉各位，这两个大写的U跟S是一个单词的缩写。接下来跟我读这个单词叫做Brazil，它在哎刚才这是美国对吧？那它在下面啊，上上北下南，它在南美啊，南美应该是最大的国家了，叫做Brazil，巴西。那我们拿它们去尝试造句啊。接下来啊，我们本课讲的都是跟国家相关的单词。我还是那句话，各位您不用着急，今天把它全背下来啊。
+
+## 00:00:58–00:01:32
+
+还是那句话，各位，您不用着急，今天把它全背下来啊。各位要做的事情是什么呢？比如说，我个人建议啊，除非你是为了考试而考试有这些东西啊，如果不是为了这些，那你就不妨把，比如说这个国家我特感兴趣，我想去，你就先把它记下来，然后先拿它造句。OK，剩下那些国家，比如说我暂时没兴趣，可以暂时先不管它，以后出现咱们再查啊。但是今天更多的是得通过音标把它们拼出来啊，以及我们的重点呢是这些句型，张嘴跟我读。
+
+## 00:01:28–00:02:02
+
+以及我们的重点呢是这些句型，张嘴跟我读，Does he come from the U.S.? No, he doesn't come from the U.S. He comes from Brazil. 注意重音在后面，所以是Brazil, Brazil. OK, very good. Continue. Do you come from Brazil? No, I don't come from Brazil. I come from the U.S. 哎，关键句型其实就是这些啊。我们今天真正要练。
+
+## 00:01:58–00:02:32
+
+关键句型其实就是这些啊！我们今天真正要练的是来自于什么地方，用的是这个 come from 这个句型。下一个单词跟我读，Holland，荷兰。之前应该学过啊。Does she come from England? No, she doesn't come from England. She comes from Holland. 她来自于荷兰。Continue, England. 啊，我们说过对吧？英国实际上分四个部分，其中我现在。
+
+## 00:02:28–00:03:02
+
+英国实际上分四个部分，其中我现在给大家标的这个部分是 England，是英格兰，对吧？比如说上边是苏格兰，对吧？这是北爱尔兰，这是威尔士。 Okay, Wales. Another one.来，Do you both come from Poland? Both叫做都，你们都来自于荷兰吗？注意，you有两个意思，你和你们。 No, we don't come from Poland. We come from England. Continue. France and Germany.啊，这两个国家其实是紧挨。
+
+## 00:02:58–00:03:32
+
+France and Germany, ah,这两个国家其实是紧挨着了啊。德国在上面地图上，对吧？法国在它的下面。OK，好，那我们上面是法国，底下是德国，这是法国啊。来，Do they come from Germany? No, they don't come from Germany. They come from France.注意，这儿为什么不加s？它不是第三啊，是第三人称，但它不是单数，它是复数，对吧？
+
+## 00:03:28–00:04:02
+
+啊，是第三人称，但它不是单数，它是复数，对吧？ Continue. Do I come from France? 啊，我来自于法国吗？你猜一猜。啊，我回答说，No, you don't come from France. 你没有French accent啊，你没有法语的那个英文腔啊。 You come from Germany. 啊，你这一听就是来自于德国的。 You come from Germany. There you go. Continue. Italy. 这应该我们之前也学过，意大利，对吧？啊，一个靴子踢着一个球，球是西西里岛。 There you go.
+
+## 00:03:58–00:04:32
+
+啊，一个靴子踢着一个球，球是西西里岛。Very good.跟我读。Does he come from Italy? No, he doesn't come from Italy. He comes from Greece.他来自于希腊。Continue. Norway.这个之前也见过了。挪威，对吧？我们就是拿它造一下句子。Does he come from Norway? No, he doesn't come from Norway. He comes from Italy.来自于意大利。Continue.
+
+## 00:04:28–00:05:02
+
+Italy,来自于意大利. Continue, Russia,俄国啊这么大一块儿对吧？底下地图上的底下是咱们中国. Russia. Continue. Does he come from Russia? No, he doesn't come from Russia. It comes from Norway. Continue, Spain.西班牙啊. Does he come?
+
+## 00:04:58–00:05:32
+
+Does he come from Spain? No, he doesn't come from Spain. He comes from Russia. Ah, Russia in this place, right? Ah, then Spain in this place, connecting North Africa. Continue. Sweden, the oil five countries, right? Sweden. Does he come from Sweden? Sweden. No, he doesn't come from Sweden. He comes from Spain.
+
+## 00:05:28–00:06:02
+
+Come from Sweden. He comes from Spain. Ah, Spain in this place, right? Portugal, Spain are both in this peninsula. Okay, break up. This lesson practice is these three sentences: affirmative, negative, general question. Okay, then you should pay attention to this place. When to add s, when not to add s, when to appear does or doesn't. Okay, this lesson homework. First, 52 sentences you can write. Then, you should explain to yourself today's core knowledge points. Okay, if you.
+
+## 00:05:58–00:06:32
+
+讲解一遍今天的核心知识点。OK，如果各位喜欢我们的课程呢，欢迎大家关注、订阅、一键三连，分享给那些需要的朋友。最后，我们再来看一句名人名言：A smile is so sexy yet so warm. When someone genuinely smiles at you, is the greatest feeling in the world. See you next time.
+
+## 00:06:28–00:06:34
+
+
+

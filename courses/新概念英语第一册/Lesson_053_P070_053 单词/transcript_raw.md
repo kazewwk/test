@@ -1,0 +1,136 @@
+# 053 单词
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we are going to learn new concept English Book One Lesson Fifty Three Words. 那我们看一个问题啊，如何用英文去表达对话？带着这个问题，Hope you guys enjoy it. 好，我们上来先看两个小的单词啊。后面这个单词实际上在上一篇文章当中我们已经见过了，但是呢，我们没给它的音标啊。我们今天一起来看一下这音标，叫做。
+
+## 00:00:28–00:01:02
+
+我们没给它的音标啊，我们今天一起来看一下它的音标，叫做 all，最后舌尖上牙龈对吧？Always, always, always. OK.那前面这个单词单音节啊，双元音 mild, mild, mild, mild. Always就是总是 mild就是呃很温和啊这样的一个天气，我们用它来形容天气。比如说，我我说 this is a photo of Auckland啊，我常提的一个城市是吧？
+
+## 00:00:58–00:01:32
+
+This is a photo of Auckland. 然后我常提的一个城市是吧？说这是奥克兰的一座啊一一个一一张照片儿。然后我们说呢，说 What's the climate like in Auckland? 那奥克兰气候怎么样呢？非常简单，说 It's always mild. 上一篇视频我们讲过了，对吧？几乎是一年四季如春啊，从冬天、夏天、春夏秋冬全算上，温差是大概七，最低温度是七度，常年不结冰是吧？然后最高温度是二十二三度，二十三四度这样的一个温度，中年。
+
+## 00:01:28–00:02:02
+
+二十二三度，二十三四度这样的一个温度，中年都是这样，所以叫做 is always mild，总是天气特别的温和，叫做 mild。 OK， ready go， continue。接下来四个单词东南西北啊，它的顺序当然不是这样。首先我们看一个指南针，对吧？最上面是 N，那就是 North，北 North，注意有一个小人化音啊 North。然后 E，上北下南左西右东，对吧？东 East，读一下音标 East，然后。
+
+## 00:01:58–00:02:32
+
+东 East 读一下音标 East，然后 W 就是 West，West 就是西，然后呢最后剩了一个南，叫做 South South。OK，那各位能看到在这个地方还有 S W S E N E 和 N W，你猜我觉得也能猜出来是什么意思了吧？N 是北 North，E 是 East 是东，对吧？我们管它叫，当然只不过这个地方给的是 N E，那我们汉语说的是东。
+
+## 00:02:28–00:03:02
+
+它叫，但只不过这地方给的是 N E，那我们汉语说的是东北方向，不是北东方向，对吧？North East， OK， There you go。那说在哪个方向？注意这儿要多一个小的单词叫做 the，在北部叫做 in the north。比如说， right now I'm in the south of Beijing，是吧？我现在在北京的南部， OK，所以那我们叫做 in the south， There you go。好，下面接下来下一个小单词，形容词。
+
+## 00:02:58–00:03:32
+
+好，下面接下来下一个小单词，形容词，跟我先一起读一下，叫做 wet, wet，好，叫做湿了，对吧？OK，那说 the dog is wet，这个狗啊浑身都湿了，怎么回事呢？Why is the dog wet？你看它是怎么过来的？一般疑问句 is 提前，why 提句首，这事儿就搞定了。OK，那我们给了一个答案，说 it swims in that river every day，说这个狗啊特别喜欢去那个河里边游泳，swims，注意为什么加 s？
+
+## 00:03:28–00:04:02
+
+河里边游泳 swims，注意为什么加 s，首先 every day 给你了，这是貌似是这个狗的一个习惯，对吧？那习惯是一般现在时，主语是第三人称单数 it，动词就要用动词的第三人称单数 swim，后边加了一个 s，对吧？那它是肯定句，变一般疑问句 does 提前，叫 does it swim in that river every day？它每天都去那儿游泳吗？这狗？那对 every day 提问，你要用什么？
+
+## 00:03:58–00:04:32
+
+去那儿游泳吗？这狗。那对 every day 提问，你要用什么？How often，对不对？对 in that river 提问用什么？用 where，对不对？OK，那狗每天在哪游泳？玩一个。那我们就可以造一句话叫 How often does it swim in that river？OK，那我们这是从上面这两句话倒出来的底下这句话啊。虽然这些话跟 wet 没有直接的联系。OK，玩一个。那我们复习了一下之前的知识点。下一个单词跟我读，叫做 season。
+
+## 00:04:28–00:05:02
+
+下之前的知识点，下一个单词跟我读，叫做 season， season 叫做季节。那季节呢，这个地方我们暂时不用拿它去造句，但是你要知道，我们上一节课学过的四季的单词，我们复习一下。春张嘴跟我读 spring，夏张嘴 summer，秋 autumn，冬 winter，啊，这样的单词就是我们一遍一遍的在以后的单词造句当中，我会不停的把它拿出来，各位慢慢就记住了。OK，好。
+
+## 00:04:58–00:05:32
+
+把它拿出来，各位慢慢就记住了。OK，好，下一个单词呢叫做 best 啊。我们下一次再真正把它当语法去讲，就要到一百零九课了。这是我们说形容词的比较级最高级的那个知识点。在今天，各位就把它当做一个小单词去记下来就行了，叫做最好的。比如说，This is who is this? Do you know who is this? OK, who this is actually? So who is this? This is Michael Jordan, right? Michael Jordan. OK, 这是迈克乔丹，对吧？这是迈克乔丹。说 he is the best in.
+
+## 00:05:28–00:06:02
+
+对吧？这是迈克尔乔丹说，He is the best in NBA history. 在NBA历史当中啊，他是最棒的player. OK，是最棒的那个运动员了。或者我可以说造一句话叫做，You are my best friend. 你是我最好的朋友啊，挚友，对吧？铁词啊，You are my best friend. OK, there you go. Continue. Night. 其实我们之前学过一个单词啊，叫做day，是吧？早在三十三课我们就学过了，叫做天，白天。那night。
+
+## 00:05:58–00:06:32
+
+吧，早在三十三课我们就学过了，叫做天白天，那 night 就是夜晚。我们可以造首先一个小的短语叫做 at night，这是一个时间表示时间，叫在晚上。 OK，那其次呢，我们可以造一句话叫做 the nights are short in summer。这和我们北面对吧，北方人啊，就是我们中国北部的人的思路是一致的啊，或者说北半球是一样的，叫做夏天的时候啊啊，说这个夜呀叫更短啊啊，其实南半。
+
+## 00:06:28–00:07:02
+
+个夜呀，叫更短啊啊！其实南半球也是一样的，只不过南半球、北半球这个啊南北呃，这个这个什么时候是夏天，什么时候是冬天不太一样，对吧？北南半球正好和咱们是反过来，但是他们也是夏天，夜晚要更短啊！我在南半球住了好多年嘛，对吧？所以 the nights are short，夜晚更短。那你注意，我们现在想把它变一般疑问句，就是把二提前，然后我想对 in summer 提问，是不是就要用 when 了？说什么时候的夜晚更短？夜晚是短的，叫做 when。
+
+## 00:06:58–00:07:32
+
+说什么时候的夜晚更短？夜晚是短的，叫做 When are the nights short? 对吧？什么时候的夜晚更短呢？答案叫做 In summer. Okay, very good. Continue. 接下来两个单词，两个单词的去处理。第一个 rise，它是一个动词，叫做升起啊，太阳升起了。 Early 叫做早。那比如说，我们造一个句子叫做 The sun rises early in summer. 注意一个小点，为什么 rise 这用了 rises，加了一个 s。
+
+## 00:07:28–00:08:02
+
+这儿用了 rises，加了一个 s，不是它是动词对吧？不是名词复数。为什么动词加 s 呢？想一下，首先要满足是一般现在时，陈述客观事实。夏天呢，太阳升的早，客观事实没问题，时态满足了。其次，主语要是第三人称，并且是单数。太阳是第三人称，并且是单数， it 可以替代它，没问题。所以用的是 rises early in summer。太阳夏天升起的很早，或者说 the sun。
+
+## 00:07:58–00:08:32
+
+夏天升起的很早，或者说 the sun rises late in winter. 注意 late 就是底下这个单词叫做晚，在冬天它升起的很晚。想变一般疑问句，这两句话没有任何区别，就是把 does d啊 sorry d o e s does 提到句首，然后动词化为原形，后边加一问号，声调上扬，这个事儿就搞定了。我们给大家造一个口语上，比如说 does the sun rise early in summer? There you go. 好，那 set.
+
+## 00:08:28–00:09:02
+
+Early in summer, there you go.好，那set指的就是落啊，落日啊，太阳落下来了。说 the sun sets early in winter. 冬天啊，它落的特别的早。OK，夜长嘛。包括 the sun sets late in summer. 在夏天呢，夜啊，这个这个夜长啊。然后呢，我们就说它太阳落的非常的晚啊，夜短啊，夏天应该是夜短，所以 the sun sets late in summer. 同理。
+
+## 00:08:58–00:09:32
+
+The sun sets late in summer.同理，甭管它是rise还是set，后边都是动词后边加了s，因为时态是一样的。变一般疑问句都是does提前，没区别，动词都要换回原形。OK，好，接下来下一个选单词叫做interesting，interesting。好，这个地方我就想简单说一下，以后会给各位去解释所谓标准发音啊，以及发音什么带着口音accent这个东西有没有。
+
+## 00:09:28–00:10:02
+
+发音什么带着口音accent这个东西有没有问题？比如说就说interesting这个单词，我确确实实的在电影当中、现实生活当中，在我留学和别人啊外国人沟通的过程当中，见过很多的人读这个单词叫不读成interesting，他读成的是interesting，interesting。OK，结合上下文语境，再结合他说interesting，你依旧能听懂他想表达什么，而且这个发音你几乎不能算他是错，你更。
+
+## 00:09:58–00:10:32
+
+这个发音，你几乎不能算它是错，你更多的可能是会理解为它带了一些口音。这个知识点以后我们再慢慢带着大家去讲啊。OK，那我们现在先看着音标读一下，叫做 interesting， interesting。OK，好，造一个句子，说 this book is very interesting。新概念第一课第一册第一课我们就学过了这个句型，对吧？这本书啊非常有趣。编一般疑问句，is 提前就行了。这本书有趣吗？Is this book in
+
+## 00:10:28–00:11:02
+
+is提前就行了。这本书有趣吗？Is this book interesting？玩一个啊，Why is this book interesting？都可以。或者我们造一句话说，He is an interesting man。注意为什么用了an？注意这个地方是e对吧？是元音音标，所以前面用了是an这样的一个小的单词。然后注意，我想提一个interesting这个单词，它表示有趣啊，和我们汉语这个有趣稍有不同的是什么样子呢？还有一个单词。
+
+## 00:10:58–00:11:32
+
+这个有趣稍有不同的是什么样子呢？还有一个单词叫做 funny，f u n n y， funny 指的是滑稽的、搞笑的。一个人可以非常的严肃，但可以 interesting，他几乎没办法非常的严肃，同时也 funny，不是说完全不行啊。我是想跟各位辨析这两个单词的区别。比如说你说的内容可以一点不搞笑，但我觉得很有趣。比如说你给我讲了一堆啊，你像我经常就是这个样子，对吧？经常给人讲。
+
+## 00:11:28–00:12:02
+
+你给我讲了一堆啊！你像我经常就是这个样子，对吧？经常给人讲了一堆什么理论上的事儿啊！如果你恰好觉得这些理论很有意思，比如心理学理论如何用在现实生活当中，那你就可以叫它 interesting。但你永远没法管它叫做滑稽的、搞笑的，它不是 funny。 OK，你可以读一本非常枯燥，在别人看来枯燥，但在你看来很有趣的历史学著作，你可以说这本书 interesting，但这本书不叫 funny。明白了吧，各位？ OK，下一个单词。
+
+## 00:11:58–00:12:32
+
+不叫 money，明白了吧，各位？OK，下一个单词，我们只看一下音标和它的汉语意思，先不拿它造句，进入文章再说。读一下，叫做 subject， subject， subject， 它有两个常见的意思。第一个是本课我们见到，其实类似于 topic，啊，其实这个单词更常见，叫 topic，聊天的话题。它更常见的，应该是在咱们一百零三课会见到的，表示的是学科啊，你。
+
+## 00:12:28–00:13:02
+
+一百零三课会见到的，表示的是学科啊，你想学什么学科？数学语语数外对吧？啊，生物地理化学，这个我们也叫做subject。OK，玩一个，那我们先不管它造句了。接下来下一个单词，新概念二册第一课的关键核心单词叫做conversation。你别看它这么长，但音标还是很简单的。conversation，注意重音在这里，对吧？重音符号在这儿。conversation，注意它的意思。
+
+## 00:12:58–00:13:32
+
+号在这儿，conversation。注意它的意思虽然叫做谈话对话，但它是个名词，意味着你造句子的时候它是没办法起到动词作用的。怎么让它起到动词作用呢？给各位补充一个小的短语，很简单，叫做 have a conversation，叫做谈话对话，它就变成了动词了。比如说，they are having a conversation。注意我们是用 have 去做动词时态的改变，他们。
+
+## 00:13:28–00:14:02
+
+是用 have 去做动词时态的改变，他们正在谈话，或者说我们要去谈一谈了，叫做 We are going to have a conversation about this. 关于这件事情，我们要认真的去谈一谈了。 Going, be going to do, 对吧？啊，比如说，那我们能聊一聊吗？ Can we have a conversation about this? Okay, 关于这件事情，能有一个对话吗？当然，可能 have a conversation 放在这并不是很好。比如说， Can we talk about
+
+## 00:13:58–00:14:32
+
+Have a conversation.放在这儿并不是很好。比如说，Can we talk about this?可能是更好的。但是我们还没学到，是吧？我们暂时先用Have a conversation. Very good.接下来我们看一个小的电影片段，当中出现了一句话，叫做I'm having this conversation with my computer.我正和我电脑在对话，谈这件事情来了。I can't believe I'm having this conversation with my computer. You're not. You're having this conversation with me. You want me to email her? You've got nothing to lose. Do it. Do it.
+
+## 00:14:28–00:15:02
+
+We got nothing to lose. Do it, do it, do it. Yeah. Yes. Emar. Okay. Perfect. Okay. So I can't believe I'm having this conversation with my computer. 我难以想象我正在和我的电脑去智能人工AI是吧？这是一个科幻电影，说在聊这件事情。 Okay. 叫做 having this conversation. There we go. 接下来 recap 本课除了他自己本身各位就要掌握的单词以外，还多了一个小的 expression 小的短语叫做 have a
+
+## 00:14:58–00:15:32
+
+一个小的 expression，小的短语叫做 have a conversation，叫对话。OK，好，接下来看一下本课家庭作业。老习惯单词，各位能造句的，或者说，我给您造句子，您都要课下再去造一下句子。不妨试着模仿我给大家已经造出来的那些句子，您做一些四句型转换也好，甚至哪怕你就换一个时态，换一个主语，这都算是各位去造句了啊！千万不要照着抄好几遍，然后背下来，这个意义就全失了。OK，接下来给自己讲。
+
+## 00:15:28–00:16:02
+
+这个意义就全失了。OK，接下来给自己讲解一遍今天的核心知识点，老生常谈的内容。那如果大家喜欢我们的课程，欢迎大家关注、订阅、一键三连、分享给那些需要的朋友。最后，我们再来看一句曼德拉的名人名言：“It always seems impossible until it's done.” See you next time.
+
+## 00:15:58–00:16:06
+
+
+
