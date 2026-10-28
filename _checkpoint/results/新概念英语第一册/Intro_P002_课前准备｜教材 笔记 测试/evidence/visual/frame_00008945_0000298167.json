@@ -1,0 +1,202 @@
+{
+  "model": "gpt-6.1-terra",
+  "returned_model": "gpt-6.1-terra",
+  "provider": "user_configured_api",
+  "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"考试介绍\",\n    \"[无法确认].h5.xet.citv.cn\",\n    \"第①册\",\n    \"学前测试\",\n    \"学前测试\",\n    \"等18341人参与\",\n    \"考试信息\",\n    \"不限\",\n    \"108\",\n    \"115\",\n    \"时长(分钟)\",\n    \"题目量\",\n    \"考试总分\",\n    \"共5个\",\n    \"学前测试\",\n    \"学间测试L1—L30\",\n    \"考试\",\n    \"考试\",\n    \"店铺主页\",\n    \"个人中心\",\n    \"店铺信息\",\n    \"投诉建议\",\n    \"小鹅通提供技术支持\",\n    \"成绩\",\n    \"再次考试\",\n    \"[无法确认] bilibili\"\n  ],\n  \"description\": \"画面中央是一张竖向网页截图，顶部有关闭和省略号图标，右侧有滚动条。网页顶部横幅中有书本图案；标题下方有一排圆形头像。页面下部有两个并排的卡片，底部是蓝色圆角按钮。画面右下方有一个黑白二维码，二维码中央有小图案。\",\n  \"annotations\": [\n    {\n      \"type\": \"勾\",\n      \"color\": \"白色，蓝色圆形底\",\n      \"target\": \"学前测试\",\n      \"position\": \"左侧卡片标题左边\",\n      \"uncertain\": false\n    },\n    {\n      \"type\": \"勾\",\n      \"color\": \"白色，蓝色圆形底\",\n      \"target\": \"学间测试L1—L30\",\n      \"position\": \"右侧卡片标题左边\",\n      \"uncertain\": false\n    },\n    {\n      \"type\": \"边框\",\n      \"color\": \"浅蓝色\",\n      \"target\": \"学前测试；考试\",\n      \"position\": \"左侧卡片四周\",\n      \"uncertain\": false\n    }\n  ],\n  \"checkmarks_count\": 2,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"顶部网址的子域名字符较小，无法完整确认。\",\n    \"右上角水印中 bilibili 左侧的中文无法确认。\",\n    \"右侧卡片标题中的“间”及 L1 与 L30 之间的横线形式不完全清晰。\"\n  ]\n}",
+  "parsed": {
+    "kind": "screen",
+    "text_lines": [
+      "考试介绍",
+      "[无法确认].h5.xet.citv.cn",
+      "第①册",
+      "学前测试",
+      "学前测试",
+      "等18341人参与",
+      "考试信息",
+      "不限",
+      "108",
+      "115",
+      "时长(分钟)",
+      "题目量",
+      "考试总分",
+      "共5个",
+      "学前测试",
+      "学间测试L1—L30",
+      "考试",
+      "考试",
+      "店铺主页",
+      "个人中心",
+      "店铺信息",
+      "投诉建议",
+      "小鹅通提供技术支持",
+      "成绩",
+      "再次考试",
+      "[无法确认] bilibili"
+    ],
+    "description": "画面中央是一张竖向网页截图，顶部有关闭和省略号图标，右侧有滚动条。网页顶部横幅中有书本图案；标题下方有一排圆形头像。页面下部有两个并排的卡片，底部是蓝色圆角按钮。画面右下方有一个黑白二维码，二维码中央有小图案。",
+    "annotations": [
+      {
+        "type": "勾",
+        "color": "白色，蓝色圆形底",
+        "target": "学前测试",
+        "position": "左侧卡片标题左边",
+        "uncertain": false,
+        "requires_review": false,
+        "grounding": "api_visual_observation_not_human_verified"
+      },
+      {
+        "type": "勾",
+        "color": "白色，蓝色圆形底",
+        "target": "学间测试L1—L30",
+        "position": "右侧卡片标题左边",
+        "uncertain": false,
+        "requires_review": false,
+        "grounding": "api_visual_observation_not_human_verified"
+      },
+      {
+        "type": "边框",
+        "color": "浅蓝色",
+        "target": "学前测试；考试",
+        "position": "左侧卡片四周",
+        "uncertain": false,
+        "requires_review": false,
+        "grounding": "api_visual_observation_not_human_verified"
+      }
+    ],
+    "checkmarks_count": 2,
+    "circled_text": [],
+    "tables": [],
+    "formulas": [],
+    "uncertain": [
+      "顶部网址的子域名字符较小，无法完整确认。",
+      "右上角水印中 bilibili 左侧的中文无法确认。",
+      "右侧卡片标题中的“间”及 L1 与 L30 之间的横线形式不完全清晰。"
+    ],
+    "ocr_missing_text": [],
+    "ocr_disagreements": [],
+    "table_present": false,
+    "formula_present": false,
+    "visible_text": "考试介绍\n[无法确认].h5.xet.citv.cn\n第①册\n学前测试\n学前测试\n等18341人参与\n考试信息\n不限\n108\n115\n时长(分钟)\n题目量\n考试总分\n共5个\n学前测试\n学间测试L1—L30\n考试\n考试\n店铺主页\n个人中心\n店铺信息\n投诉建议\n小鹅通提供技术支持\n成绩\n再次考试\n[无法确认] bilibili"
+  },
+  "usage": {
+    "completion_tokens": 599,
+    "total_tokens": 3279,
+    "prompt_tokens": 2680,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_creation_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 54
+    }
+  },
+  "finish_reason": "stop",
+  "elapsed_seconds": 7.649439996002911,
+  "image_sha256": "71650bf6e38d953e658f3fec0d132c9ee0098e02f525d0fee62c044d8f934e63",
+  "request_parameters": {
+    "detail": "original",
+    "reasoning_effort": "high",
+    "max_completion_tokens": 8192,
+    "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+  },
+  "verification": "model_image_extraction_not_human_verified",
+  "cross_review": {
+    "model": "gpt-6-luna",
+    "returned_model": "gpt-6-luna",
+    "provider": "user_configured_api",
+    "raw": "{\n  \"kind\": \"screen\",\n  \"text_lines\": [\n    \"考试介绍\",\n    \"appmprxxtlw1092.h5.zet.citv.cn\",\n    \"第①册 学前测试\",\n    \"学前测试\",\n    \"等18341人参与\",\n    \"考试信息\",\n    \"不限\",\n    \"时长(分钟)\",\n    \"108\",\n    \"题目量\",\n    \"115\",\n    \"考试总分\",\n    \"共5个\",\n    \"学前测试\",\n    \"考试\",\n    \"学间测试L1—L30\",\n    \"考试\",\n    \"店铺主页 | 个人中心 | 店铺信息 | 投诉建议\",\n    \"小鹅通提供技术支持\",\n    \"成绩\",\n    \"再次考试\",\n    \"胶学 bilibili\"\n  ],\n  \"description\": \"画面中央是一张纵向手机页面截图，页面顶部有书本图案；页面中部有头像缩略图、两张考试卡片和底部蓝色按钮。画面右下方有二维码，二维码中心覆盖一小块图案。画面右上方有白色水印。\",\n  \"annotations\": [\n    {\n      \"type\": \"蓝色圆形勾选图标\",\n      \"color\": \"蓝色\",\n      \"target\": \"学前测试\",\n      \"position\": \"手机页面中部左侧考试卡片内，文字左侧\",\n      \"uncertain\": false\n    },\n    {\n      \"type\": \"蓝色圆形勾选图标\",\n      \"color\": \"蓝色\",\n      \"target\": \"学间测试L1—L30\",\n      \"position\": \"手机页面中部右侧考试卡片内，文字左侧\",\n      \"uncertain\": false\n    }\n  ],\n  \"checkmarks_count\": 2,\n  \"circled_text\": [],\n  \"tables\": [],\n  \"formulas\": [],\n  \"uncertain\": [\n    \"页面顶部网址字符较小，读取为“appmprxxtlw1092.h5.zet.citv.cn”，部分字符无法确认。\",\n    \"右侧考试卡片文字读取为“学间测试L1—L30”，其中“间”字无法确认。\",\n    \"右上角水印读取为“胶学 bilibili”，字样无法完全确认。\",\n    \"二维码中心覆盖图案上的小字无法确认。\"\n  ]\n}",
+    "parsed": {
+      "kind": "screen",
+      "text_lines": [
+        "考试介绍",
+        "appmprxxtlw1092.h5.zet.citv.cn",
+        "第①册 学前测试",
+        "学前测试",
+        "等18341人参与",
+        "考试信息",
+        "不限",
+        "时长(分钟)",
+        "108",
+        "题目量",
+        "115",
+        "考试总分",
+        "共5个",
+        "学前测试",
+        "考试",
+        "学间测试L1—L30",
+        "考试",
+        "店铺主页 | 个人中心 | 店铺信息 | 投诉建议",
+        "小鹅通提供技术支持",
+        "成绩",
+        "再次考试",
+        "胶学 bilibili"
+      ],
+      "description": "画面中央是一张纵向手机页面截图，页面顶部有书本图案；页面中部有头像缩略图、两张考试卡片和底部蓝色按钮。画面右下方有二维码，二维码中心覆盖一小块图案。画面右上方有白色水印。",
+      "annotations": [
+        {
+          "type": "蓝色圆形勾选图标",
+          "color": "蓝色",
+          "target": "学前测试",
+          "position": "手机页面中部左侧考试卡片内，文字左侧",
+          "uncertain": false,
+          "requires_review": false,
+          "grounding": "api_visual_observation_not_human_verified"
+        },
+        {
+          "type": "蓝色圆形勾选图标",
+          "color": "蓝色",
+          "target": "学间测试L1—L30",
+          "position": "手机页面中部右侧考试卡片内，文字左侧",
+          "uncertain": false,
+          "requires_review": false,
+          "grounding": "api_visual_observation_not_human_verified"
+        }
+      ],
+      "checkmarks_count": 2,
+      "circled_text": [],
+      "tables": [],
+      "formulas": [],
+      "uncertain": [
+        "页面顶部网址字符较小，读取为“appmprxxtlw1092.h5.zet.citv.cn”，部分字符无法确认。",
+        "右侧考试卡片文字读取为“学间测试L1—L30”，其中“间”字无法确认。",
+        "右上角水印读取为“胶学 bilibili”，字样无法完全确认。",
+        "二维码中心覆盖图案上的小字无法确认。"
+      ],
+      "ocr_missing_text": [],
+      "ocr_disagreements": [],
+      "table_present": false,
+      "formula_present": false,
+      "visible_text": "考试介绍\nappmprxxtlw1092.h5.zet.citv.cn\n第①册 学前测试\n学前测试\n等18341人参与\n考试信息\n不限\n时长(分钟)\n108\n题目量\n115\n考试总分\n共5个\n学前测试\n考试\n学间测试L1—L30\n考试\n店铺主页 | 个人中心 | 店铺信息 | 投诉建议\n小鹅通提供技术支持\n成绩\n再次考试\n胶学 bilibili"
+    },
+    "usage": {
+      "completion_tokens": 1299,
+      "total_tokens": 3979,
+      "prompt_tokens": 2680,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_creation_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 778
+      }
+    },
+    "finish_reason": "stop",
+    "elapsed_seconds": 13.011195413997484,
+    "image_sha256": "71650bf6e38d953e658f3fec0d132c9ee0098e02f525d0fee62c044d8f934e63",
+    "request_parameters": {
+      "detail": "original",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 8192,
+      "prompt_sha256": "b91c60b965bf5a86b922e7b934b9401d4d6fe44a9a6bc91e9e43740618dd7840"
+    },
+    "verification": "model_image_extraction_not_human_verified"
+  },
+  "path": "frames/frame_00008945_0000298167.webp",
+  "time": 298.166688,
+  "cache_fingerprint": "f82f933e6cdc3b116af0463d1a32d4ae5306bda512c6bc9435c17b682023fc9b",
+  "selection_reason": [
+    "visible_annotation_change_or_changed_target_text"
+  ]
+}
