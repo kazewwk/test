@@ -1,0 +1,40 @@
+# 076 练习
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn New Concept English Book One Lesson Seventy Six Practices. Hope you gonna enjoy it.本课没有新的单词啊，也没有新的语法，都是复习我们之前学到的内容。各位张开嘴跟我朗读就可以了啊，我读一句，您读一句，看着屏幕来了。When did you look at that photograph?
+
+## 00:00:28–00:01:02
+
+When did you look at that photograph? I looked at that photograph an hour ago. When did they watch TV? They watched TV every day last week. When did he paint that bouquets? 哎，都是我们之前学过的短语，对吧？那我提一个小点，the year before last其实指的是the year before last year啊，去年之前的那一年。
+
+## 00:00:58–00:01:32
+
+Year before last year,啊，去年之前的那一年，前年。He painted that bookcase the year before last.注意这个地方的发音，这个e d读成painted, OK, painted. Next one. When did the cat jump off the wall? It jumped off the wall a minute ago. When did you work in an office?
+
+## 00:01:28–00:02:02
+
+When did you work in an office? The year before last.刚才我们讲了前年，对吧？I worked in an office the year before last. When did she dust the cupboard? She dusted the cupboard three days ago. When did she thank her father? She thanked her father and.
+
+## 00:01:58–00:02:32
+
+Father. She sent her father an hour ago. When did she type those letters? She typed those letters a month ago. When did he walk across the park? He walked across the park last week. Okay,好，这个地方有一个小的课后练习，我教。
+
+## 00:02:28–00:03:02
+
+这个地方有一个小的课后练习，我教给各位了。我只是告诉各位这个练习应该怎么做啊。She goes to town every day，这是一个非常棒的课后练习。你看，让各位把 goes 换成它的过去式。首先你要判断它是原形还是三单，然后换回原形，再想一下它的过去式长成什么样子。这儿的答案当然是 went，对吧？接下来呢，我不一一给大家对了。各位要做的事情是把它所有现在都是三单换。
+
+## 00:02:58–00:03:32
+
+的事情是把它所有现在都是三单换回原形，再换回它的过去式，全是我们讲过的之前。OK，您翻一下笔记本当中应该能找得到。那本课 recap 复习的关键点其实还是停留在 did 这个非常简单的一般过去时这个时态。OK，好，家庭作业呢，七十六课绿皮书各位可以写了，给自己讲解一遍今天的核心知识点。如果大家喜欢我们的课程啊，欢迎大家关注定。
+
+## 00:03:28–00:04:02
+
+如果大家喜欢我们的课程啊，欢迎大家关注、订阅、一键三连支持，并分享给那些需要的朋友。OK，好，那最后我们再来看一句名人名言：Money can buy happiness, but it can make you awfully comfortable while you are being miserable. See you next time.
+
+## 00:03:58–00:04:03
+
+
+
