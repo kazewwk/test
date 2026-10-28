@@ -1,0 +1,788 @@
+# 069 文章
+
+快速机器解析：语音为单模型转写，未进行独立交叉校对或人工复核；画面每秒采样并按变化选帧，短时文字和标记可能遗漏。截图时间约有 1 秒误差。图片有损压缩；遇到疑点请按时间查看 Google Drive 原视频。
+
+## 00:00:00–00:00:30
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we are going to learn New Concept English Book Two, Lesson Sixty Nine, Story. Hope you gonna enjoy it. We,们先看一下标题叫 But Not Murder. 他说但是他不是谋杀，是吧？我不就单看这三个单词和标题汉语翻译，基本上你不太能理解他到底想说啥。我们还是要看故事。那我们看一下这个亚历山大
+
+### 画面 00:00:00
+
+![课件截图](frames/frame_000000.webp)
+
+文字识别：bilibili / 胶囊助学计划 / NCE / BOOKII / Lesson 69 / Story
+
+### 画面 00:00:04
+
+![课件截图](frames/frame_000001.webp)
+
+文字识别：Bibii / 胶囊助学计划 / NCE / BOOKII / Lesson 69 / Story
+
+### 画面 00:00:06
+
+![课件截图](frames/frame_000002.webp)
+
+文字识别：Bitbili / 胶囊助学计划 / NCE / BOOKII / Lesson 69 / Story
+
+### 画面 00:00:08
+
+![课件截图](frames/frame_000003.webp)
+
+文字识别：Bilbli / 胶囊助学计划 / NCE / BOOKII / Lesson 69 / Story
+
+### 画面 00:00:10
+
+![课件截图](frames/frame_000004.webp)
+
+文字识别：胶囊助学计划 bil
+
+### 画面 00:00:13
+
+![课件截图](frames/frame_000005.webp)
+
+文字识别：動学計也。
+
+### 画面 00:00:15
+
+![课件截图](frames/frame_000006.webp)
+
+文字识别：Biltbili / 胶囊助学计划 / But not murder / Do you think that the writer passed his / driving test? Why?
+
+## 00:00:30–00:01:00
+
+问了我们什么样一个问题啊？他说，Do you think that the writer passed his driving license? Why? 说你认为作者通过了他这个这个驾这个驾照的考试吗？为什么啊？你看这个两这两个事儿好像有点风马牛不相及，是吧？我们看一下文章，文章还是很有意思的，也不是很难，基本上全是复习啊。我们看第一句话叫I was being tested for a driving license for
+
+### 画面 00:00:45
+
+![课件截图](frames/frame_000007.webp)
+
+文字识别：胶囊助学计划 / But not murder / Do you think that the writer passed his / driving test? Why?
+
+### 画面 00:00:50
+
+![课件截图](frames/frame_000008.webp)
+
+文字识别：胶囊助学计划bi / I was being tested for a driving licence for / the third time. I had been asked to drive in / heavy traffic and had done so successfully. / After having been instructed to drive Out / of town, I began to acquire confidence.
+
+### 画面 00:00:53
+
+![课件截图](frames/frame_000009.webp)
+
+文字识别：胶囊助学计划bi出 / I was being tested for a driving licence for / the third time. I had been asked to drive in / heavy traffic and had done so successfully. / After having been instructed to drive Out / of town, I began to acquire confidence.
+
+### 画面 00:00:56
+
+![课件截图](frames/frame_000010.webp)
+
+文字识别：胶囊助学计划bii / I was being tested for a driving licence for / the third time. I had been asked to drive in / heavy traffic and had done so successfully. / After having been instructed to drive out / of town, I began to acquire confidence.
+
+## 00:01:00–00:01:30
+
+the third time.好，首先这句话很简单。Was being tested叫做当时正在被测试。测试什么呢？For目的是for a driving license去考这个驾照嘛。第几次呢？For the for for the third time.这个是for加一个时间，对吧？哎，第三次啊，这应该是次数是吧？哎，不能算时间啊。第三次啊。然后接下来这是一般啊，这过去进行时的被动复习。I had
+
+### 画面 00:01:26
+
+![课件截图](frames/frame_000011.webp)
+
+文字识别：胶囊助学计划bii / I was being tested for a driving licence for / the third time. I had been asked to drive in / heavy traffic and had done so successfully. / After having been instructed to drive out / of town, I began to acquire confidence.
+
+## 00:01:30–00:02:00
+
+been asked, 说说已经被要求啊 to do something, 对吧？这个之前我们见过很多次了。Ask somebody to do something的被动嘛，对吧？啊，要求某人去做某件事情，就是我被要求过去完成时的被动，干嘛呢？去 drive in heavy traffic, and had done so successfully. 好，这地方有两个小点要注意啊。首先，第一个 and
+
+### 画面 00:01:51
+
+![课件截图](frames/frame_000012.webp)
+
+文字识别：胶囊助学计划bi山 / I was being tested for a driving licence for / the third time. I had been asked to drive in / heavy traffic and had done so successfully. / After having been instructed to drive out / of town, I began to acquire confidence.
+
+## 00:02:00–00:02:30
+
+二十五课咱们学连接两个并列句，对吧？你看它主语一致就没有必要后边那再来一个 I 了。那我们先看 and 前面那句话叫做我已经被要求去开车，在哪儿开呢？Heavy traffic 这个地方要注意一下，我们表示交通非常的拥堵，用的是 heavy 这个形容词，纯是英语的习惯，就类似于大雨，我们一般也是 heavy rain，对吧？所以这种这种就是你光学会了 heavy 这个，所以我们为什么一直说单词这个
+
+### 画面 00:02:16
+
+![课件截图](frames/frame_000013.webp)
+
+文字识别：胶囊助学计划bi出 / I was being tested for a driving licence for / the third time. I had been asked to drive in / heavy traffic and had done so successfully. / After having been instructed to drive out / of town, I began to acquire confidence.
+
+### 画面 00:02:20
+
+![课件截图](frames/frame_000014.webp)
+
+文字识别：胶囊助学计划bii / I was being tested for a driving licence for / the third time. I had been asked to drive in / heavy traffic and had done so successfully. / After having been instructed to drive Out / of town, I began to acquire confidence.
+
+### 画面 00:02:23
+
+![课件截图](frames/frame_000015.webp)
+
+文字识别：胶囊助学计划ii出 / I was being tested for a driving licence for / the third time. I had been asked to drive in / heavy traffic and had done so successfully. / After having been instructed to drive out / of town, I began to acquire confidence.
+
+## 00:02:30–00:03:00
+
+事儿？你不要单独去背它，你一定要还还原到文章当中去，结合上下文语境去学它。我们汉语也是这样去学的，对不对？我们也不是单独去背字典嘛，一个道理。你如果背heavy只背到了沉重，一到heavy traffic，一到heavy rain，你该不会还是不会？你只能通过上下文语境去猜，对吧？好，说我被要求在这个呃这个非常拥堵的交通
+
+### 画面 00:02:53
+
+![课件截图](frames/frame_000016.webp)
+
+文字识别：胶囊助学计划出 / I was being tested for a driving licence for / the third time. I had been asked to drive in / heavy traffic and had done so successfully. / After having been instructed to drive Out / of town, I began to acquire confidence.
+
+## 00:03:00–00:03:30
+
+状况下去开车，然后呢，had done so successfully. 注意这个 so 不是跟 successfully 连到一起，不是 so successfully 啊，had done so successfully 不是，是 had done so successfully. 那这个 so 是什么意思呢？就是一个类似于替代，就是 this，就是这。那这指的是什么呢？就是之前说的 drive in heavy traffic 这件事儿，对吧？哎，就是 had done so，这
+
+### 画面 00:03:23
+
+![课件截图](frames/frame_000017.webp)
+
+文字识别：胶囊助学计划bl山 / I was being tested for a driving licence for / the third time. I had been asked to drive in / heavy traffic and had done so successfully. / After having been instructed to drive Out / of town, I began to acquire confidence.
+
+## 00:03:30–00:04:00
+
+这样啊，这指的是 drive in heavy traffic successfully,很成功。接下来, after having been instructed to drive out of town, I began to acquire confidence.好，这句话在讲语法的时候我们已经讲过了，在这就不多提了。我们只是提一句，叫做注意前半句话的主语是I，对吧？你给它还原回去呢，它基本上就是完成加被动，对吧？哎，我被要求开出小镇，
+
+### 画面 00:03:53
+
+![课件截图](frames/frame_000018.webp)
+
+文字识别：胶囊助学计划l出 / I was being tested for a driving licence for / the third time. I had been asked to drive in / heavy traffic and had done so successfully. / After having been instructed to drive out / of town, I began to acquire confidence.
+
+## 00:04:00–00:04:30
+
+对吧？在这件事儿之后呢，我已经开始获得了一些信心啊。Let's continue，继续看啊。我们先看这个大字的部分啊。说Sure that I had passed, I was almost beginning to enjoy my test.这里就有一个问题，叫做这个sure后边加了一句话叫做that I had passed。然后呢，你sure的主语是谁呢？其实还是那句话，四十九课你学的好，在这儿应该很快。我一提你就能反应过来。sure
+
+### 画面 00:04:04
+
+![课件截图](frames/frame_000019.webp)
+
+文字识别：胶囊助学计划出 / Sure that I had passed, I was almost / beginning to enjoy my test. / I was sure that I had passed. / I was almost beginning to enjoy my test. / Because I was sure that I had passed, I was almost beginning / to enjoy my test. /  Being sure that ., I was almost .. / Sure that ..,I was almost ... /  L49: (Being) Tired of sleeping on the floor, a young man in / Teheran saved up for years to buy a real bed.
+
+## 00:04:30–00:05:00
+
+的主语就是I，就是I was sure，就是这句话I was sure that I had passed。然后呢，后面那句话是不变的。你要把，比如说这两句话连起来，怎么连呢？就变成了说Because I was sure that I had passed, I was almost beginning to enjoy my test。所以你看，它的前后主语是保持一致的。那四十九课咱们其实学过，前后主语保持一致，前面又是个状语从
+
+### 画面 00:04:34
+
+![课件截图](frames/frame_000020.webp)
+
+文字识别：胶囊助学计划ill / Sure that I had passed, I was almost / beginning to enjoy my test. / I was sure that I had passed. / I was almost beginning to enjoy my test. / Because I was sure that I had passed, I was almost beginning / to enjoy my test. /  Being sure that ., I was almost .. / Sure that .,I was almost .. /  L49: (Being) Tired of sleeping on the floor, a young man in / Teheran saved up for years to buy a real bed.
+
+## 00:05:00–00:05:30
+
+句，前面这个主语完全可以去掉，所以这个 was 其实就可以变成 being sure that 布拉布拉，后边那些照抄我们就挨个写了啊。好，然后四十九课咱们又学过，说因为这个 being 没有含义，就可以直接省略掉，所以就可以给它变成叫 sure that 点点，然后 I was almost，也就是说回到了原文这句话。那类似于四十九课的第一句话叫做 being tired of sleeping on the floor，那
+
+### 画面 00:05:04
+
+![课件截图](frames/frame_000021.webp)
+
+文字识别：胶囊助学计划biii / Sure that I had passed, I was almost / beginning to enjoy my test. / I was sure that I had passed. / I was almost beginning to enjoy my test. / Because I was sure that I had passed, I was almost beginning / to enjoy my test. / Being sure that . I was almost ... / Sure that .., I was almost  /  L49: (Being) Tired of sleeping on the floor, a young man in / Teheran saved up for years to buy a real bed.
+
+### 画面 00:05:17
+
+![课件截图](frames/frame_000022.webp)
+
+文字识别：胶囊助学计划bibil / Sure that I had passed, I was almost / beginning to enjoy my test. / I was sure that I had passed. / I was almost beginning to enjoy my test. / Because I was sure thatI had passed, I was almost beginning / to enjoy my test. /  Being sure that , I was almost .. / Sure that … / as almost ... /  L49: (Being) Tired of sleeping on the floor, a young man in / Teheran saved up for years to buy a real bed.
+
+## 00:05:30–00:06:00
+
+being, we don't also give it omitted. So you see, actually, this sentence, if we 49, this sentence give it complete, also his meaning is because he was tired of sleeping on the floor. Blah blah blah blah, right? Before and after the subject is omitted, and then this was replaced with being. Because this being here has no meaning. English default that it can be omitted, right? Especially if the back if connected with a like sure
+
+### 画面 00:05:34
+
+![课件截图](frames/frame_000023.webp)
+
+文字识别：胶囊助学计划biL出 / Sure that I had passed, I was almost / beginning to enjoy my test. / I was sure that I had passed. / I was almost beginning to enjoy my test. / Because I was sure thatI had passed, I was almost beginning / to enjoy my test. /  Being sure that , I was almost .. /  Sure that ..,I was almost ... / L49: (Being) Tired of sleeping on thO / Soor, a young man in / Teheran saved up for years to buy a real bed.
+
+## 00:06:00–00:06:30
+
+啊，像 tired 呀这样的一个单词的时候，它可以省略掉。所以原文 sure that I had passed 就是这样一句话。如果给它补全，补全的就是现在我这个呃给大家指的这句话叫 because I was sure，好吧，哎，因为我很确信我已经通过了，所以我几乎已经开始享受我这个考试了，对吧？这个测试了。再来，the examiner 说这个主考官
+
+### 画面 00:06:04
+
+![课件截图](frames/frame_000024.webp)
+
+文字识别：胶囊助学计划biii / Sure that I had passed, I was almost / beginning to enjoy my test. / Iwas sure that I had passed. / I was almost beginning to enjoy my test. / Because I was sure that I had passed, I was almost beginning / to enjoy my test. /  Being sure that ., I was almost .. /  Sure that ..,I was almost ... /  L49: (Being) Tired of sleeping on the floor, a young man in / Teheran saved up for years to buy a real bed.
+
+### 画面 00:06:09
+
+![课件截图](frames/frame_000025.webp)
+
+文字识别：胶囊助学计划bi / Sure that I had passed, I was almost / beginning to enjoy my test. / I was sure that I had passed. / I was almost beginning to enjoy my test. / Because I was sure thatI had passed, I was almost beginning / to enjoy my test. /  Being sure that ., I was almost .. / Sure that ..., I was almost ... /  L49: (Being) Tired of sleeping on the floor, a young man in / Teheran saved up for years to buy a real bed.
+
+### 画面 00:06:18
+
+![课件截图](frames/frame_000026.webp)
+
+文字识别：胶囊助学计划bibi / Sure that I had passed, I was almost / beginning to enjoy my test. / I was sure that I had passed. / I was almost beginning to enjoy my test. / Because I was sure thatI had passed, I was almost beginning / to enjoy my test. /  Being sure that ., I was almost .. / Sure that ,I was almost ... /  L49: (Being) Tired of sleeping on the floor, a young man in / Teheran saved up for years to buy a real bed.
+
+### 画面 00:06:23
+
+![课件截图](frames/frame_000027.webp)
+
+文字识别：胶囊助学计划bli出 / The examiner 17must have been pleased / with my performance, for he smiled and / said, 'Just one more thing, Mr. Eames. Let us / suppose that a child suddenly crosses the / road in front of you. As soon asI tap on the / window, you must stop within five feet.'
+
+### 画面 00:06:25
+
+![课件截图](frames/frame_000028.webp)
+
+文字识别：胶囊助学计划bib山 / The examiner 17must have been pleased / with my performance, for he smiled and / said,'Just one more thing, Mr. Eames. Let us / Suppose that a child suddenly crosses the / road in front of you. As soon as I tap on the / window, you must stop within five feet.'
+
+### 画面 00:06:28
+
+![课件截图](frames/frame_000029.webp)
+
+文字识别：胶囊助学计划bi出 / The examiner [1'must have been pleased / with my performance, for he smiled and / said, 'Just one more thing, Mr. Eames. Let us / suppose that a child suddenly crosses the / road in front of you. As soon as I tap on the / window, you must stop within five feet.'
+
+## 00:06:30–00:07:00
+
+must have been pleased with my performance, for he smiled, and said, "Just one more thing, Mr. Ames." 好了，你看这句话还挺长的，不过还好，因为有一个 for 和逗号，我们知道其实就已经拆开了，对吧？那我们看前半句话，叫做这个考主考官呢，当时一定是 must have been，再加形容词，对吧？这个地方有一个
+
+### 画面 00:06:48
+
+![课件截图](frames/frame_000030.webp)
+
+文字识别：胶囊助学计划bi出 / The examiner 1'must have been pleased / with my performance, for he smiled and / said, 'Just one more thing, Mr. Eames. Let us / suppose that a child suddenly crosses the / road in front of you. As soon as I tap on the / window, you must stop within five feet.'
+
+## 00:07:00–00:07:30
+
+小的习惯用法叫 be pleased with，叫对什么什么特别的满意啊。那 must have been pleased with my performance，就是主考官当时一定是对于我的这个表现非常的满意。这是我们十七课学的 must have been 加形容词名词，对吧？哎，因为 for he smiled，其实这里的 and 也可以加重一下，但因为这里太短了就没必要了啊。因为他笑了，然后说
+
+### 画面 00:07:18
+
+![课件截图](frames/frame_000031.webp)
+
+文字识别：胶囊助学计划bi出 / The examiner 17must have been pleased / with my performance, for he smiled and / said, 'Just one more thing, Mr. Eames. Let us / suppose that a child suddenly crosses the / road in front of you. As soon as I tap on the / window, you must stop within five feet.'
+
+### 画面 00:07:25
+
+![课件截图](frames/frame_000032.webp)
+
+文字识别：胶囊助学计划bil山 / The examiner 1'must have been pleased / with my performance, for he smiled / and / said, 'Just one more thing, Mr. Eames. Let us / suppose that a child suddenly crosses the / road in front of you. As soon as I tap on the / window, you must stop within five feet.'
+
+## 00:07:30–00:08:00
+
+just one more thing，还有一件小事儿，Mr. Ames。Let us suppose that a child suddenly crosses the road in front of you。说让我们来假设一下，说一个孩子突然间，注意这里的crosses，它可是个动词，不是across，对吧？这两个单词我们单独曾经辨析过啊，那个是介词，这个是动
+
+### 画面 00:07:30
+
+![课件截图](frames/frame_000033.webp)
+
+文字识别：胶囊助学计划bli出 / The examiner [17must have been pleased / with my performance, for he smiled / and / said, 'Just one more thing, Mr. Eames. Let us / suppose that a child suddenly crosses the / road in front of you. As soon as I tap on the / window, you must stop within five feet.'
+
+### 画面 00:07:34
+
+![课件截图](frames/frame_000034.webp)
+
+文字识别：胶囊助学计划blii / The examiner 1'must have been pleased / with my performance, for he smiled / and / said, 'Just one more thing, Mr. Eames. Let us / Suppose that a child suddenly crosses the / road in front of you. As soon as I tap on the / window, you must stop within five feet.'
+
+### 画面 00:07:36
+
+![课件截图](frames/frame_000035.webp)
+
+文字识别：胶囊助学计划bibi / The examiner 17must have been pleased / with my performance, for he smiled / and / said, 'Just one more thing, Mr. Eames. Let us / suppose that a child suddenly crosses the / road in front of you. As soon as I tap on the / window, you must stop within five feet.'
+
+## 00:08:00–00:08:30
+
+词，所以它会有动词的三单过去式，对吧？等等等等，叫做穿过。所以让我们假设一个孩子突然间穿过了这个马路。In front of you，在你的前方，对吧？As soon as I tap on the window, you must stop within five feet. As soon as一怎么怎么样就怎么怎么样啊，这个咱们之前学过了。I tap on the window，也就
+
+### 画面 00:08:06
+
+![课件截图](frames/frame_000036.webp)
+
+文字识别：胶囊助学计划bi山 / The examiner 17must have been pleased / with my performance, for he smiled / and / said, 'Just one more thing, Mr. Eames. Let us / suppose that a child suddenly crosses the / road in front of you. As soon as I tap on the / window, you must stop within five feet.'
+
+## 00:08:30–00:09:00
+
+是说，我一敲玻璃。You must stop within five feet.你必须停下来。Within叫在什么什么范围之内？在什么范围之内呢？Five feet，五英尺之内停下来。好，这里我想问一个小的问题。既然咱们本课跟四十九课有这个呃千丝万缕的关系，对吧？那我想问一个问题，叫这里的I可不可以被省略呢？如果
+
+### 画面 00:08:36
+
+![课件截图](frames/frame_000037.webp)
+
+文字识别：胶囊助学计划bii出 / The examiner 17must have been pleased / with my performance, for he smiled / and / said, 'Just one more thing, Mr. Eames. Let us / suppose that a child suddenly crosses the / road in front of you. As soon as I tap on the / window, you must stop within five feet.'
+
+## 00:09:00–00:09:30
+
+你不知道答案，一定要回四十九课，认真真花半个小时到一个小时把那些语法再看一遍，对吧？这个是非常重要的语法，学到今天应该是会了的。Okay, continuing.啊，你看，我经常说这个单词continuing.啊，I continued driving.我继续开车. Continue doing something跟continue to do something含义差不多啊。然后呢，After some time, the examiner tapped loudly.过了一些时间，这个
+
+### 画面 00:09:06
+
+![课件截图](frames/frame_000038.webp)
+
+文字识别：胶囊助学计划bi出 / The examiner 17must have been pleased / with my performance, for he smiled / and / said, 'Just one more thing, Mr. Eames. Let us / suppose that a child suddenly crosses the / road in front of you. As soon as I tap on the / window, you must stop within five feet.'
+
+### 画面 00:09:11
+
+![课件截图](frames/frame_000039.webp)
+
+文字识别：胶囊助学计划blii / I continued driving and after some time, the / examiner tapped loudly. Though the sound / could be heard clearly, 5ºit took me a long / time to react.I suddenly pressed the brake / pedal hard and we were both thrown / forward. The examiner looked at me sadly. / 'Mr. Eames,' he said," / L15in a mournful voice, / 'you have just killed that child!'
+
+## 00:09:30–00:10:00
+
+主考官呢 tapped loudly，很大声的啊，咣咣咣啊，敲敲这个玻璃。Though, although, even though, even if, 对吧？这四个，咱们一提就都提到啊。The sound could be heard clearly. It took me a long time to react. 这句话很简单，有一个逗号，有一个 though，就给你拆成了两句。说尽管这个声音 could be heard。
+
+### 画面 00:09:39
+
+![课件截图](frames/frame_000040.webp)
+
+文字识别：胶囊助学计划bi山 / I continued driving and after some time, the / examiner tapped loudly. Though the sound / Could be heard clearly, 5ºit took me a long / time to react. I suddenly pressed the brake / pedal hard and we were both thrown / forward. The examiner looked at me sadly. / 'Mr. Eames,' he said, -5in a mournful voice, / 'you have just killed that child!'
+
+## 00:10:00–00:10:30
+
+a tense verb's passive, right? Can be heard. That clearly is very clear. Can be heard. It took somebody some time to do something. Fifty-five. We learned the common usage called "spent a long time" to react. I heard the sound, but I forgot the sound and the action the examiner asked me to do. The connection is gone, right? I heard the sound. I suddenly pressed.
+
+### 画面 00:10:01
+
+![课件截图](frames/frame_000041.webp)
+
+文字识别：胶囊助学计划bi山 / I continued driving and after some time, the / examiner tapped loudly. Though the sound / Could be heard clearly, 5it took me a long / time to react. I suddenly pressed the brake / pedal hard and we were both thrown / forward. The examiner looked at me sadly. / 'Mr. Eames,' he said, 15in a mournful voice, / 'you have just killed that child!'
+
+## 00:10:30–00:11:00
+
+I suddenly pressed the brake pedal hard, and we were both thrown forward. Okay,说我突然间猛踩这个刹车踏板，然后你看and连接前后两个并列句，你看当后边的主语跟前面主语不一致的时候就不能省略。其实这个很容易理解，就是你省略了我怎么那我就默认为你前后主语是一致的嘛，对吧？然后呢，我们都both
+
+### 画面 00:10:31
+
+![课件截图](frames/frame_000042.webp)
+
+文字识别：胶囊助学计划bib出 / I continued driving and after some time, the / examiner tapped loudly. Though the sound / Could be heard clearly, 5oit took me a long / time to react.I suddenly pressed the bo / ke / pedal hard and we were both thrown / forward. The examiner looked at me sadly. / 'Mr. Eames,' he said, 15in a mournful voice, / 'you have just killed that child!'
+
+## 00:11:00–00:11:30
+
+我们都 were thrown forward. Throw 的意思就是扔，对吧？那什么叫 we were thrown forward？我们都被往前扔。其实这个地方完全就可以由各位的生活常识去判断。什么生活常识呢？很简单，一件事情叫做你如果坐过车，司机猛刹车，人会怎么样嘛？我们都会被猛的往前这么一扔啊，也就是往前这么一使劲儿，
+
+### 画面 00:11:01
+
+![课件截图](frames/frame_000043.webp)
+
+文字识别：胶囊助学计划bibl / I continued driving and after some time, the / examiner tapped loudly. Though the sound / could be heard clearly, 5it took me a long / time to react.I suddenly pressed the brake / pedal hard and we were both thrown / forward. The examiner looked at me sadly. / 'Mr. Eames,' he said,  / L15: / 15in a mournful voice, / 'you have just killed that child!'
+
+### 画面 00:11:07
+
+![课件截图](frames/frame_000044.webp)
+
+文字识别：胶囊助学计划ib山 / I continued driving and after some time, the / examiner tapped loudly. Though the sound / could be heard clearly, 5it took me a long / time to react. I suddenly pressed the brake / pedal hard and we were both thrown / forward. The examiner looked at me sadly. / 'Mr. Eames,' he said, " / [15in a mournful voice, / L15: / 'you have just killed that child!'
+
+### 画面 00:11:21
+
+![课件截图](frames/frame_000045.webp)
+
+文字识别：胶囊助学计划ilbl / I continued driving and after some time, the / examiner tapped loudly. Though the sound / could be heard clearly, 5oit took me a long / time to react.I suddenly pressed the brake / pedal hard and we were both thrown / forward. The examiner looked at me sadly. / 'Mr. Eames,' he said,' / L15: / 15in a mournful voice, / 'you have just killed that child!'
+
+### 画面 00:11:24
+
+![课件截图](frames/frame_000046.webp)
+
+文字识别：胶囊助学计划lbl / I continued driving and after some time, the / examiner tapped loudly. Though the sound / could be heard clearly, 5it took me a long / time to react.I suddenly pressed the brake / pedal hard and we were both thrown / forward. The examiner looked at me sadly. / 'Mr. Eames,' he said,' / L15in a mournful voice, / L15: / 'you have just killed that child!'
+
+### 画面 00:11:27
+
+![课件截图](frames/frame_000047.webp)
+
+文字识别：胶囊助学计划bu / I continued driving and after some time, the / examiner tapped loudly. Though the sound / could be heard clearly, 5it took me a long / time to react. I suddenly pressed the brake / pedal hard and we were both thrown / forward. The examiner looked at me sadly. / 'Mr. Eames,' he said,' / L15: / 15in a mournful voice, / 'you have just killed that child!'
+
+## 00:11:30–00:12:00
+
+哎，就可以了。你去理解这个意思就可以了。The examiner looked at me sadly, 很悲伤的看着我。Mr. Ames, he said, 他说, in a mournful voice. 十五课咱们学过 in a什么什么 voice嘛，对吧？哎，当时我印象当中，咱们学的叫做 in a weak voice。说我我以为我要被裁员了，对吧？没想到加薪了，是吧？哎，没想到走到人生巅峰了啊！当时学的是 in a weak voice，
+
+### 画面 00:11:44
+
+![课件截图](frames/frame_000048.webp)
+
+文字识别：胶囊助学计划bilbl / I continued driving and after some time, the / examiner tapped loudly. Though the sound / could be heard clearly, 5oit took me a long / time to react.I suddenly pressed the brake / pedal hard and we were both thrown / forward. The examiner looked at me sadly. / 'Mr. Eames,' he said," / L15in a mournful voice, / L15 / 'you have just killed that child!'
+
+### 画面 00:11:47
+
+![课件截图](frames/frame_000049.webp)
+
+文字识别：胶囊助学计划bibi / I continued driving and after some time, the / examiner tapped loudly. Though the sound / could be heard clearly, 5it took me a long / time to react. I suddenly pressed the brake / pedal hard and we were both thrown / forward. The examiner looked at me sadly. / 'Mr. Eames,' he said, / L15: / 15in a mournful voice, / 'you have just killed that child!'
+
+## 00:12:00–00:12:30
+
+现在叫做 in a mournful voice。啊，用一种特别悲伤的语气说到，You have just killed that child。说你刚刚杀死了那个孩子。哎，所以它的文章标题叫 But not murder，但并非谋杀，因为它是一个 imaginary，是吧？Imagination，它是一个想象，它不是一个真实的事情。OK，那本课的习惯用法有两个，并不多。第一个叫 continue doing to do
+
+### 画面 00:12:17
+
+![课件截图](frames/frame_000050.webp)
+
+文字识别：胶囊助学计划i / I continued driving and after some time, the / examiner tapped loudly. Though the sound / could be heard clearly, 5oit took me along / time to react. I suddenly pressed the brake / pedal hard and we were both thrown / forward. The examiner looked at me sadly. / 'Mr. Eames,' he said, / 15in a mournful voice, / 'you have just killed that child!'
+
+### 画面 00:12:24
+
+![课件截图](frames/frame_000051.webp)
+
+文字识别：bibii / 胶囊助学计划 / 习惯用法造句 / continue doing / to do / be pleased with
+
+### 画面 00:12:26
+
+![课件截图](frames/frame_000052.webp)
+
+文字识别：bilbili / 胶囊助学计划 / 习惯用法造句 / continue doing / to do / be pleased with
+
+### 画面 00:12:29
+
+![课件截图](frames/frame_000053.webp)
+
+文字识别：Bibii / 胶囊助学计划 / 习惯用法造句 / continue doing / to do / be pleased with
+
+## 00:12:30–00:13:00
+
+something啊，第二个叫做 be pleased with，对吧？对什么什么满意。首先 continue to do something or continue doing something，含义都可以保持的是一致的。比如说 if you want to continue working，或者是 to work for us，如果你想继续为我们工作，you will have to follow our rules。说你将必须要遵循我们的规则啊。Next one就
+
+### 画面 00:12:31
+
+![课件截图](frames/frame_000054.webp)
+
+文字识别：bilbii / 胶囊助学计划 / 习惯用法造句 / continue doing / to do / be pleased with
+
+### 画面 00:12:33
+
+![课件截图](frames/frame_000055.webp)
+
+文字识别：bibi / 网：v.+v.变化 / 胶囊助学计划 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / continue doing / to do
+
+### 画面 00:12:35
+
+![课件截图](frames/frame_000056.webp)
+
+文字识别：网：v.+v.变化 / 胶囊助学计划 / Bib / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / continue doing / to do /  If you want to continue working/to work / for us, you wil have to follow our rules. L16
+
+### 画面 00:12:37
+
+![课件截图](frames/frame_000057.webp)
+
+文字识别：胶囊助学计划i / 网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / continue doing / to do /  If you want to continue working/to work / for us, you wil have to follow our rules. L16
+
+### 画面 00:12:40
+
+![课件截图](frames/frame_000058.webp)
+
+文字识别：网：v.+v.变化 / 胶囊助学计划 / Bibii / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / continue doing / to do /  If you want to continue working/to work / for us, you wil have to follow our rules. L16
+
+### 画面 00:12:45
+
+![课件截图](frames/frame_000059.webp)
+
+文字识别：胶囊助学计划bibi / 网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / continue doing / to do /  If you want to continue working/to work / for us, you will have to follow our rules. L16
+
+### 画面 00:12:50
+
+![课件截图](frames/frame_000060.webp)
+
+文字识别：网：v.+v.变化 / 胶囊助学计划 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / continue doing / to do /  If you want to continue working/to work / for us, you will have to follow our rules. L16
+
+### 画面 00:12:55
+
+![课件截图](frames/frame_000061.webp)
+
+文字识别：网：v.+v.变化 / 胶囊助学计划 / Bibii / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / continue doing / to do /  If you want to continue working/to work / for us, you will have to follow our rules. L16
+
+### 画面 00:12:58
+
+![课件截图](frames/frame_000062.webp)
+
+文字识别：网：v.+v.变化 / 胶囊助学计划 / biibii / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / continue doing / to do /  If you want to continue working/to work / for us, you will have to follow our rules. L16 /  She continued going/to go on a diet. L51
+
+## 00:13:00–00:13:30
+
+不能我们说往东，你非要往西啊。我们的规则是往南，你非要往北，那不行啊。She continued going,或者是to go on a diet.哎，她继续节食啊。胖子那课咱们学的，对吧？胖胖的那课说No one could account for the fact that四十六课，这是我们其实No one could account for the fact that咱们基本上造过很多句子了，直接当做一个同位语从句，对吧？说She continued to do this.
+
+### 画面 00:13:00
+
+![课件截图](frames/frame_000063.webp)
+
+文字识别：网：v.+v.变化 / 胶囊助学计划 / Bibi / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / continue doing / to do /  If you want to continue working/to work / for us, you will have to follow our rules. L16 /  She continued going/to go on a diet. L51
+
+### 画面 00:13:02
+
+![课件截图](frames/frame_000064.webp)
+
+文字识别：网：v.+v.变化 / 胶囊助学计划 / ilbil / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / continue doing / to do /  If you want to continue working/to work / for us, you will have to follow our rules. L16 /  She continued going/to go on a diet. L51
+
+### 画面 00:13:05
+
+![课件截图](frames/frame_000065.webp)
+
+文字识别：网：v.+v.变化 / 胶囊助学计划 / bilbii / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / continue doing / to do /  If you want to continue working/to work / for us, you will have to follow our rules. L16 /  She continued going/to go on a diet. L51
+
+### 画面 00:13:09
+
+![课件截图](frames/frame_000066.webp)
+
+文字识别：网：v.+v.变化 / 胶囊助学计划 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / continue doing / to do /  If you want to continue working/to work / for us, you will have to follow our rules. L16 /  She continued going/to go on a diet. L51
+
+### 画面 00:13:11
+
+![课件截图](frames/frame_000067.webp)
+
+文字识别：网：v.+v.变化 / 胶囊助学计划 / bilibii / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / continue doing / to do /  If you want to continue working/to work / for us, you will have to follow our rules. L16 /  She continued going/to go on a diet. L51
+
+### 画面 00:13:13
+
+![课件截图](frames/frame_000068.webp)
+
+文字识别：网：v.+v.变化 / 胶囊助学计划 / bibl / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / continue doing / to do /  If you want to continue working/to work / for us, you will have to follow our rules. L16 /  She continued going/to go on a diet. L51
+
+### 画面 00:13:15
+
+![课件截图](frames/frame_000069.webp)
+
+文字识别：胶囊助学计划i / 网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / Continue doing / to do /  If you want to continue working/to work / for us, you will have to follow our rules. L16 /  She continued going/to go on a diet. L51 /  No one could account for the fact that she / continued to do this. L46
+
+### 画面 00:13:17
+
+![课件截图](frames/frame_000070.webp)
+
+文字识别：胶囊助学计划i出 / 网：v.+v.变化 / 习惯 / 四句型转换 / 伙用法造句指南 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / continue doing / to do /  If you want to continue working/to work / for us, you will have to follow our rules. L16 /  She continued going/to go on a diet. L51 /  No one could account for the fact that she / continued to do this. L46
+
+### 画面 00:13:19
+
+![课件截图](frames/frame_000071.webp)
+
+文字识别：胶囊助学计划bibi / 网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / Continue doing / to do /  If you want to continue working/to work / for us, you will have to follow our rules. L16 /  She continued going/to go on a diet. L51 /  No one could account for the fact that she / continued to do this. L46
+
+### 画面 00:13:21
+
+![课件截图](frames/frame_000072.webp)
+
+文字识别：胶囊助学计划bilii / 网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / continue doing / to do /  If you want to continue working/to work / for us, you will have to follow our rules. L16 /  She continued going/to go on a diet. L51 /  No one could account for the fact that she / continued to do this. L46
+
+### 画面 00:13:25
+
+![课件截图](frames/frame_000073.webp)
+
+文字识别：胶囊助学计划li / 网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / continue doing / to do /  If you want to continue working/to work / for us, you will have to follow our rules. L16 /  She continued going/to go on a diet. L51 /  No one could account for the fact that she / continued to do this. L46
+
+## 00:13:30–00:14:00
+
+她继续去做这件事，没有人能解释清楚为啥她继续做这件事，对吧？ Okay. 那注意力集中，咱们听个电影片段. Until I'm sure, I'm going to continue to do things the way I think they should be done. Okay. Next one, be pleased with 就对什么什么满意嘛。比如说，你看这句话叫 Were you pleased with his work? 那什么老板问啊问乙方，老板你你对他的工作满意吗？ Were you pleased with
+
+### 画面 00:13:30
+
+![课件截图](frames/frame_000074.webp)
+
+文字识别：胶囊助学计划bibi / 网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / continue doing / to do /  If you want to continue working/to work / for us, you will have to follow our rules. L16 /  She continued going/to go on a diet. L51 /  No one could account for the fact that she / continued to do this. L46
+
+### 画面 00:13:34
+
+![课件截图](frames/frame_000075.webp)
+
+文字识别：胶囊助学计划bibi / 网：v.+v.变化 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / continue doing / to do /  If you want to continue working/to work / for us, you will have to follow our rules. L16 /  She continued going/to go on a diet. L51 /  No one could account for the fact that she / continued to do this. L46
+
+### 画面 00:13:36
+
+![课件截图](frames/frame_000076.webp)
+
+文字识别：bilbii / 胶囊助学计划 / And until I'm sure, / I'm going to continue to do things / the way I think they should be done. / Indiana Jones and the Last Crusade / (1989)
+
+### 画面 00:13:41
+
+![课件截图](frames/frame_000077.webp)
+
+文字识别：胶囊助学计划bib出 / And until I'm sure, / I'm going to continue to do things / the way I think they should be done. / Indiana Jones and the Last Crusade / (1989)
+
+### 画面 00:13:43
+
+![课件截图](frames/frame_000078.webp)
+
+文字识别：Bilbi / 胶囊助学计划 / And until I'm sure, / I'm going to continue to do things / the way I think they should be done. / Indiana Jones and the Last Crusade / (1989)
+
+### 画面 00:13:45
+
+![课件截图](frames/frame_000079.webp)
+
+文字识别：bilbii / 胶囊助学计划 / And until I'm sure, / I'm going to continue to do things / the way I think they should be done. / Indiana Jones and the Last Crusade / (1989)
+
+### 画面 00:13:47
+
+![课件截图](frames/frame_000080.webp)
+
+文字识别：网：v.+v.变化 / 胶囊助学计划 / bilbili / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be pleased with
+
+### 画面 00:13:49
+
+![课件截图](frames/frame_000081.webp)
+
+文字识别：Blbii / 网：v.+v.变化 / 胶囊助学计划 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be pleased with /  Were you pleased with his work?
+
+### 画面 00:13:51
+
+![课件截图](frames/frame_000082.webp)
+
+文字识别：网：v.+v.变化 / 胶囊助学计划 / bibii / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be pleased with /  Were you pleased with his work?
+
+### 画面 00:13:53
+
+![课件截图](frames/frame_000083.webp)
+
+文字识别：bibl / 网：v.+v.变化 / 胶囊助学计划 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be pleased with /  Were you pleased with his work?
+
+### 画面 00:13:55
+
+![课件截图](frames/frame_000084.webp)
+
+文字识别：Bibii / 网：v.+v.变化 / 胶囊助学计划 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be pleased with /  Were you pleased with his work?
+
+### 画面 00:13:58
+
+![课件截图](frames/frame_000085.webp)
+
+文字识别：网：v.+v.变化 / 胶囊助学计划 / bilbili / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be pleased with /  Were you pleased with his work?
+
+## 00:14:00–00:14:30
+
+his work? Next one说Why weren't you pleased with his work? 那你为什么对他的工作不满意呢？Next one说I'm not pleased with this。那口语当中就很常用的一句话叫做我对这件事儿不是很满意啊。OK，那注意力集中，我们听一下电影片段。Think they're all pretty pleased with themselves. Very good. 那Recap两个习惯用法，您一定要造句，对吧？好，然后文章熟读成诵啊，原
+
+### 画面 00:14:00
+
+![课件截图](frames/frame_000086.webp)
+
+文字识别：网：v.+v.变化 / 胶囊助学计划 / Bibii / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be pleased with /  Were you pleased with his work?
+
+### 画面 00:14:02
+
+![课件截图](frames/frame_000087.webp)
+
+文字识别：网：v.+v.变化 / 胶囊助学计划 / bibii / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be pleased with /  Were you pleased with his work? /  Why weren't you pleased with his work?
+
+### 画面 00:14:05
+
+![课件截图](frames/frame_000088.webp)
+
+文字识别：网：v.+v.变化 / 胶囊助学计划 / Bibii / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be pleased with /  Were you pleased with his work? /  Why weren't you pleased with his work?
+
+### 画面 00:14:07
+
+![课件截图](frames/frame_000089.webp)
+
+文字识别：网：v.+v.变化 / 胶囊助学计划 / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be pleased with /  Were you pleased with his work? /  Why weren't you pleased with his work? / I'm not pleased with this.
+
+### 画面 00:14:09
+
+![课件截图](frames/frame_000090.webp)
+
+文字识别：网：v.+v.变化 / 胶囊助学计划 / Bitbli / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be pleased with /  Were you pleased with his work? /  Why weren't you pleased with his work? / I'm not pleased with this.
+
+### 画面 00:14:11
+
+![课件截图](frames/frame_000091.webp)
+
+文字识别：网：v.+v.变化 / 胶囊助学计划 / bibl / 习惯用法造句指南 / 四句型转换 / 方式/地点/时间 / 其他习惯用法 / 其他单词+词性 / 原文摘抄+变 / 6123456 / be pleased with /  Were you pleased with his work? /  Why weren't you pleased with his work? / I'm not pleased with this.
+
+### 画面 00:14:14
+
+![课件截图](frames/frame_000092.webp)
+
+文字识别：胶囊助学计划bibi / I think they're all pretty pleased with / themselves. / Mean Girls / (2004)
+
+### 画面 00:14:16
+
+![课件截图](frames/frame_000093.webp)
+
+文字识别：胶囊助学计划bii出 / I think they're all pretty pleased with / themselves. / Mean Girls / (2004)
+
+### 画面 00:14:18
+
+![课件截图](frames/frame_000094.webp)
+
+文字识别：胶囊助学计划biii出 / I think they're all pretty pleased with / themselves. / Mean Girls / (2004)
+
+### 画面 00:14:20
+
+![课件截图](frames/frame_000095.webp)
+
+文字识别：胶囊助学计划bii出 / I think they're all pretty pleased with / themselves. / Mean Girls / (2004)
+
+### 画面 00:14:22
+
+![课件截图](frames/frame_000096.webp)
+
+文字识别：Biltbili / 胶囊助学计划 / Recap / continue / doing /to do / Expression / be pleased with
+
+### 画面 00:14:24
+
+![课件截图](frames/frame_000097.webp)
+
+文字识别：biibii / 胶囊助学计划 / 1. / 习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句
+
+### 画面 00:14:26
+
+![课件截图](frames/frame_000098.webp)
+
+文字识别：bilbili / 胶囊助学计划 / 习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句 / 文章跟读至熟读成诵 / 内化单词+语法+习惯用法 / 听力+口语+写作练习
+
+### 画面 00:14:29
+
+![课件截图](frames/frame_000099.webp)
+
+文字识别：Bilbili / 胶囊助学计划 / 习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句 / 文章跟读至熟读成诵 / 内化单词+语法+习惯用法 / 听力+口语+写作练习
+
+## 00:14:30–00:15:00
+
+因有如下两个，对吧？然后呢，置顶留言可以找到重复间隔的学习材料。OK，那以上呢就是本期视频的全部内容了。如果各位喜欢我们的课程呢，欢迎各位关注、订阅、一键三连，分享给需要的朋友，来帮助我们快速成长。See you next time.
+
+### 画面 00:14:31
+
+![课件截图](frames/frame_000100.webp)
+
+文字识别：Bibli / 胶囊助学计划 / 1. / 习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句 / 文章跟读至熟读成诵 / 内化单词+语法+习惯用法 / 听力+口语+写作练习
+
+### 画面 00:14:33
+
+![课件截图](frames/frame_000101.webp)
+
+文字识别：Biibii / 胶囊助学计划 / 1. / 习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句 / 文章跟读至熟读成诵 / 内化单词+语法+习惯用法 / 听力+口语+写作练习 / 3. / 重复间隔（置顶留言）
+
+### 画面 00:14:35
+
+![课件截图](frames/frame_000102.webp)
+
+文字识别：Bibii / 胶囊助学计划 / 1. / 习惯用法造句/对话 / 【习惯用法造句指南】 / 每个5句 / 文章跟读至熟读成诵 / 内化单词+语法+习惯用法 / 听力+口语+写作练习 / 3. / 重复间隔（置顶留言）
+
+### 画面 00:14:37
+
+![课件截图](frames/frame_000103.webp)
+
+文字识别：胶囊助学计划bilbil / 不
+
+### 画面 00:14:49
+
+![课件截图](frames/frame_000104.webp)
+
+文字识别：胶囊助学计划
+
+### 画面 00:14:51
+
+![课件截图](frames/frame_000105.webp)
+
+文字识别：CAPSULEACADEMY / 胶囊助学计划 / 小红书 / Lecturer / □ / Leo / OE
+
+### 画面 00:14:54
+
+![课件截图](frames/frame_000106.webp)
+
+文字识别：CAPSULEACADEMY / 胶囊助学计划 / 小红书 / Berlin / pner / OE
+
+### 画面 00:14:57
+
+![课件截图](frames/frame_000107.webp)
+
+文字识别：CAPSULEACADEMY / 胶囊助学计划 / 『 / 小红书 / Creator / Leo & Berlin / OE
+
+## 00:15:00–00:15:02
+
+
+
+### 画面 00:15:00
+
+![课件截图](frames/frame_000108.webp)
+
+文字识别：bilbili / 胶囊助学计划
+
+### 画面 00:15:01
+
+![课件截图](frames/frame_000109.webp)
+
+文字识别：bilbili / 胶囊助学计划
+
