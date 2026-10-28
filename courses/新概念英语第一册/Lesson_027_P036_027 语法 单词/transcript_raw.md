@@ -1,0 +1,128 @@
+# 027 语法 单词
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn New Concept English Book One Lesson Twenty Seven Grammar and Words.拿老习惯，进入正式的课程之前呢，我们先看一个问题。How many引导的特殊疑问句长成什么样子？带着这个问题，Hope you gonna enjoy it.好，那我们上来先看第一个单词，先跟我一起读一下，叫做living living room，实际上是两个单词。
+
+## 00:00:28–00:01:02
+
+Living living room实际上是两个单词合起来变成了一个单词，各位可以理解为就是我们的卧室。再跟我读一下 living room，OK。那这个单词其实你可以把它两个单词啊放在一起，可以理解为它是一个名词卧室嘛，对吧？接下来我们要造句子。那造句子之前呢，先给大家一个小的短语叫做 in the living room，叫做在卧室当中，在卧室里面啊，应该是里面。OK。那我们造一个小句子叫做 This is my living.
+
+## 00:00:58–00:01:32
+
+Okay,那么造一个学句子叫做This is my living room.肯定句出来了，第一课我们就学过了，到目前已经练过很多很多遍了。接下来变一般疑问句叫做Is this your living room?对吧？Okay, very good.那接下来我们拿There be造一个，二十五课刚刚学过，叫做There is a table in the living room.肯定句出来了，各位接下来养成习惯，立刻变一般疑问句叫做Is there a table in the living room? Okay, very good.好了，别忘了加一个小的问号就可以了，很简单，在。
+
+## 00:01:28–00:02:02
+
+别忘了加一个小的问号就可以了，很简单。再再读一遍 living room， OK，卧室啊，这客厅啊，客厅。好，接下来下一个单词跟我一起读，叫做 near。好，注意一个小点，先跟我一起看一下双元音 ear ear。其次呢，字母 r 加个儿化音，所以不读 near 啊，可以读 near， OK，也可以读 near near。Very good。然后字母 n 呢，放在单词当中去读的是舌尖上牙音，嗯，这。
+
+## 00:01:58–00:02:32
+
+放在单词当中去读的是舌尖上牙音，嗯，这个音好。P R E P点儿是什么呢？它其实是介词的一个英文缩写，所以一出现您知道它是介词就可以了。目前我们已经见过的，没有记错的话，一个 on，一个 in，对吧？好，那我们造一句话，说 the man is near the woman。来一个肯定句来了，一般疑问句 is the man near the woman？好，然后我想对 near the woman 提问，用什么？用 where，对不？
+
+## 00:02:28–00:03:02
+
+好，然后我想对 near the woman 提问，用什么？用 where，对不对？于是这句话就变成了 Where is the man? 啊，这男的在哪儿呢？ Where is the man? Very good. 好，接下来下一个单词，跟我一起读一下啊。我们先分一下音节，一个元音，两个元音，中间两个辅音，一边一个。第一个音节 window，第二个音节 door，连起来 window window. Very good. 好了，行。那然后呢，我们看一下，比如说 w, o, n.
+
+## 00:02:58–00:03:32
+
+比如说 w o n 发嗯 d 发的哎，然后 o w 发的是 o，这个我们就不管它了。在自然拼读法则部分，我们也没有专门教大家，对吧？好，跟我读一下，叫做 windows。好，那其实大家这个单词很可能您是认得的，因为你可能用过这个操作系统，叫做 windows。我们管它叫窗口化，对吧？你一下能打开很多个窗口，所以加了 s 变成了复数，还正好复习了一下我们十五课学过的名词。
+
+## 00:03:28–00:04:02
+
+变成了复数，还正好复习了一下我们十五课学过的名词变复数的一个方式。接下来呢，我们造句话啊，跟我一起读。The woman is near the window。肯定句有了，一般疑问句 is the woman near the window？把 is 提前就可以了。对，near the window 提问，Where is the woman？这个女人在哪儿呢？Very good。好，下一个单词，跟我一起读。Armchair，armchair，armchair。Very good。注意一个小点，c h 字母组合放在单词。
+
+## 00:03:58–00:04:32
+
+Very good.注意一个小点，ch字母组合放在单词当中去，经常发的是ch。比如说，您回想一下，watch，能不能想起来这个单词，对吧？OK，那armchair呢，实际上指的是这种手扶的椅子。您看，我给各位标了两个单词，arm. This is my arm. This is my arm. OK, armchair. Chair means您坐的那个位置，对吧？您坐的那个椅子，我们管它叫做chair。那armchair带着这个手扶椅的啊，带着这个手。
+
+## 00:04:28–00:05:02
+
+Chair.那armchair带着这个手扶椅的啊，带着这个手扶这个位置的叫做armchair. Okay.好，那它是一个名词嘛？我们造一句话，看图，叫做There are two armchairs in the living room. Living room刚刚学对吧？叫做客厅啊。好，那我们也可以把它变一般疑问句，二提前就可以了呗。Are there two armchairs in the living room?非常的简单啊。有一个下一个单词跟我一起读，door.好，注意d放在单。
+
+## 00:04:58–00:05:32
+
+读 door，好，注意 d 放在单词当中去读的是 the 字母 r，现在它是一个儿化音啊。 This is a door. Okay，门。那我们造一句话，先来一个小的短语，叫做 near the door。 near 我们说了叫在什么什么的附近，对吧？ Okay，好，接下来我们就可以看图造一句话，叫 the boy is near the door。想变一般疑问句，is the boy near the door？然后我想对 near the door 提问，用 where，where？
+
+## 00:05:28–00:06:02
+
+我想对 near the door 提问，用 where Where is the boy? OK，来一个，好了，我们不一一说了啊。接下来下一个单词，so this is a picture. This is a picture. 图片、照片都可以用 picture. OK，好 picture，你看一下啊。这地方我们正好在顺便复习一下您学单词的时候那五个点，对吧？除了造句以外，它的拼写 p i c t u r e。好，这个拼写是各位在初期很多同学。
+
+## 00:05:58–00:06:32
+
+好，这个拼写是各位在初期很多同学会特别焦虑的事情啊。我先说一个小的点，就是我们去背它，不要像我小时候那样傻傻的背。我小时候怎么背呢？P I C T U R E。我相信很多人可能到今天还是这样背，P I C T U R E，P I C T U R E，然后依次类推，写了很多很多遍，最后好像把它记下来了，然后特别的浪费时间。这个方法不是不可以，是可以，但是速度效率比较的慢。各位呢，其实。
+
+## 00:06:28–00:07:02
+
+可以，但是速度效率比较的慢。各位呢，其实我们想一下吧，自然拼读法则是干什么的，对吧？picture，好，你注意，你如果会读它，p字母，c字母，t字母，ch二字母，其实基本已经出来了。那p e e这个实际上i这个字母还真的经常发e，p i c您出来了，t出来了，u不能确定，最后的e不能确定。您想一下，结合。
+
+## 00:06:58–00:07:32
+
+不能确定，最后的 e 不能确定。您想一下，结合自然拼读法则，结合音标，会了它的发音，再去想这个单词的拼写，就容易很多很多了。 OK，好，我们分享一下这个小的思路啊。我们造一句话叫 There are some pictures near the TV。 OK， near the TV， near 在什么什么的附近。我现在想把它变一般疑问句、特殊疑问句怎么办呢？哎，确定下回分解，马上我们就讲到，因为这地方涉及到了一个小的单词，叫做 some，在下一个视频。
+
+## 00:07:28–00:08:02
+
+因为这地方涉及到了一个小的单词叫做 some，在下一个视频当中会给大家给大家去解释它跟 any 之间的异同。好，不多说了。下一个单词跟我一起读一下，叫做 wall wall。 Okay, so this is a wall. This is a wall. Okay, 我们说这就是一面墙。 Okay，好，那 Berlin wall. What is Berlin wall? Okay，世界上非常著名的一堵墙啊，叫做柏林墙，对吧？二战期间把东德和西德分开的一堵墙，叫做 Berlin wall，柏林墙，对吧？好，那接下来。
+
+## 00:07:58–00:08:32
+
+叫做 Berlin Wall，柏林墙，对吧？好，那接下来我们想说这个东西在墙上怎么说呢？叫做 on the wall。注意这个小的介词要用的是 are。于是我们看这个肯定句叫做 the pictures are on the wall。 OK，注意两个小点：第一，pictures，别忘了是复数；第二，单数用 is，复数用 are。这个小点我们在二十五课的时候刚刚学过，把 are 提前就变一般疑问句了，对不对？OK，我们也可以造一句话叫。
+
+## 00:08:28–00:09:02
+
+对不对？OK，我们也可以造一句话叫 There are some pictures on the wall. 在墙上啊有一些图片。OK， There you go. There be句型嘛。接下来我们就可以用 How many 去问一下，说这个墙上有多少个图片呢？就引出了我们接下来想说的叫 How many 引导的特殊疑问句。那首先它的含义非常的简单，就是问多少，对吧？刚才我说墙上有多少个图片呢？叫做 How many。OK，好，接下来呢，它如何去用呢？
+
+## 00:08:58–00:09:32
+
+How many? Okay.好，接下来呢，它如何去用呢？跟我们之前学到的那个公式给大家特别重要，从第五课啊就开始出现了的那个公式非常的相似，叫做肯呃特殊疑问句等于特殊疑问词how many加上去掉答案之后的一般疑问句。那我们先看图说话，造一个肯定句出来，叫做There are three armchairs in the living room.好，都是我们今天新学的单词armchair扶手椅，对吧？Living.
+
+## 00:09:28–00:10:02
+
+今天新学的单词 armchair，扶手椅，对吧？Living room，客厅。肯定句变一般疑问句，二二十五课我们刚学过，二提前就行了。Are there three armchairs in the living room？好，How many是问多少，这里边唯一的答案就是 three。我们之前一直做的是把这个特殊疑问词直接提前，除了在不知道各位还有没有印象，有一个单词叫做 whose，谁的那个地方，我们有两种提法，第一种是把 whose 单独提前，第二种是把 whose。
+
+## 00:09:58–00:10:32
+
+第一种是把 whose 单独提前，第二种是把 whose 加名词一起提前。 How many 这个地方我们只用一种方式，就是把 how many 跟 armchairs 一起提前。问有多少个扶手椅？我们看一下答案啊，叫做 how many armchairs。注意把它们一起提前了，对吧？ How many 去替代了 three，剩下的照抄。 Are there？ Are there？ In the living room？ In the living room？ How many armchairs？ 加去掉答案之后的一般疑问句，这是第一个。
+
+## 00:10:28–00:11:02
+
+去掉答案之后的一般疑问句，这是第一个。我们再来一个，看图说话，造一个句子，说图中啊有三只小猫，非常简单，叫做 there are。首先选择 there be 句型，二十五课刚刚学过。Three kids, three cats, not kids. Kids 是小孩。Three cats. Okay, 三只小猫 in the picture，在这个图片当中。接下来变一般疑问句。Are there three cats in the in the picture? 我现在想对 three 提问。How many?
+
+## 00:10:58–00:11:32
+
+The in the picture. 我现在想对 three 提问 how many，把它替换掉，然后把 how many 加 cats 一起提到句首，后面的单词完全不用变就可以了。我们看一下 how many cats are there in the picture？注意到了吧？ How many cats 提前，are there 不变，in the picture 不变。图片当中有多少只猫啊？下一个，接下来下一个 how many？ There are four windows in my living room. 有四。
+
+## 00:11:28–00:12:02
+
+There are four windows in my living room.有四扇窗户在我的卧室当中，哎还不错，通风肯定特别好。变一般疑问句，二提前，Are there four windows in your living room？我们现在想对 four 提问，用谁？How many？对吧？直接提前，How many windows？有多少个窗户？剩下照抄，Are there in your living room？各位看到这个点了哈，Very good。好，接下来我们再继续来一个，There are three students in my class。说在我
+
+## 00:11:58–00:12:32
+
+There are three students in my class.说在我的课堂当中啊，有三个学生，稍微有点少。把are提前变一般疑问句。Are there three students in your class?我现在对three提问，用how many，带着students一起提到句首，剩下照抄，变成了How many students are there in your class?你的课堂当中有多少个学生啊？Here we go.好，接下来呢，我们一起听一首啊，诺贝尔文学奖获得者啊，并且是。
+
+## 00:12:28–00:13:02
+
+一起听一首啊，诺贝尔文学奖获得者啊，并且是一个歌手，很牛，Bob Dylan唱的一首歌叫做《Blowing in the Wind》。他的每一句话最开始都是由How many去引导出来的。接下来我们一起听一下。
+
+## 00:12:58–00:13:32
+
+Before she sleeps in the sand, isn't how many times must the cannonballs fly before they fall out of line? The answer, my friend, is blowing in the wind. The answer is blowing in the wind.注意一下啊，就 how many 引导的所有这些句子是吧？ OK，那。
+
+## 00:13:28–00:14:02
+
+是吧？OK，那 how many 引导的特殊疑问句是我们本课本课程学习的一个小的重点，记住它一定要加上前面的那个名词一起提到句首去。OK，好，那 recap 还是 how many 啊？各位回去今天的家庭作业就跟 how many 有关系，我们一起看一下今天家庭作业，参考自己的客厅 living room in your living room，您用 there be 句型跟 how many 合起来去造句啊，造。
+
+## 00:13:58–00:14:32
+
+跟 how many 合起来去造句啊，造三十个句子。您可以十五个用 there be 句型，用然后十五个用 how many 句型。我个人更建议的是，您不妨直接用 how many 去提问，然后用 there be 去回答。不会的单词当然还是自己去查。三十个句子就可以了啊，一定要去做好这个作作业。然后呢，给自己讲解一遍今天的核心知识点，这些单词，尤其是 how many 它的用法，对吧？OK，那这个是我们基于两个呃学习理论会让大家学习吸收的效率是。
+
+## 00:14:28–00:15:02
+
+基于两个呃学习理论，会让大家学习吸收的效率是非常高的啊！别看您可能只花很少的时间，但是它的效果比一遍一遍看视频效果其实要好很多。OK，好，那以上呢就是本期视频的全部内容了。如果大家喜欢我们的课程呢，欢迎大家关注订阅，一键三连支持，并分享给那些需要的朋友们。那最后的最后呢，我们在一起看一句名人名言：Education is the key to unlock the golden door of freedom. See you next time.
+
+## 00:14:58–00:15:12
+
+See you next time.
+
