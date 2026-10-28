@@ -1,0 +1,156 @@
+# 052 文章
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn New Concept English Book Two Lesson Fifty Two Story. Hope you gonna enjoy it. Good. That we come up first to look at the title of this article, called Pretty Carpet, right? It's called a beautiful carpet. What is carpet? You guys can see in the picture that it's a book, right? OK, so the answer is already there. After you read the article, try to answer.
+
+## 00:00:28–00:01:02
+
+所以这个答案已经有了啊！你看完文章了之后，尝试去回答一个答案，叫 What is the writer's carpet made of？啊，be made of由什么制成的，对吧？就是它这个地毯是由什么组成的呢？OK，啊，实际上是由书组成的。那我们直接进入文章吧。来了，说 We have just moved into a new house and and告诉我们可以先不着急往后看，先看前面。说我们刚刚搬进了一个新的房子。你看，注意这个，接下来就是重点了。我们
+
+## 00:00:58–00:01:32
+
+房子，你看，注意这个，接下来就是重点了。我们其实早在第三、四、五课就提过啊，第四课啊，第五课就提过这样的一个思路，叫做：如果你第一句话用现在完成时，你告诉我说我们刚刚搬进了一个新的房子，那这里的重点，你接下来一定要给我讲的是房子，对吧？我预期的一定也是你接下来讲的房子。我举个例子，就原来我上课总举总举的例子，对吧？你好，朋友，跟你 show off 一下，说，哎呀，我最近刚刚买了一辆好。
+
+## 00:01:28–00:02:02
+
+跟你 show off 一下，说哎，我最近刚刚买了一辆豪车。你注意，你接下来的心理预期一定是他接下来会跟你聊这关于豪车的事儿，而不是说呃什么哎，然后呢，我读了一本书是吧？然后这本书里面说了什么？然后去年我去哪旅了个游是吧？一定不是这些不相干的。所以，我们猜一下，接下来肯定是讲这个跟 new house 相关的一些事情。我们看啊， and I have been working hard all morning. 然后呢，整个。
+
+## 00:01:58–00:02:32
+
+All morning,然后呢，整个早晨我一直都在非常努力的工作。早晨现在还没有结束，为什么？现在完成进行时，从过去持续到现在，对吧？现在还是早晨。I have been trying to get my new rooms in and my new room in order.好，注意have been trying，现在完成进行时。各位学时态的第一步，一定要先迅速确定它的结构。结构have been trying。
+
+## 00:02:28–00:03:02
+
+要先迅速确定它的结构，结构 have been trying 没问题，现在完成进行时。接下来再想它的用法。我一直都在 try to do something。第七课咱们就学过，尝试做某事儿。我一直都在尝试干什么呢？ Get my new room in order。啊，我们这个地方两个学的方式。第一个，我直接告诉您，这地方有一个习惯用法叫 get something in order，它的意思叫做把什么什么整理好，对吧？第二个呢，就我们去猜硬。
+
+## 00:02:58–00:03:32
+
+要整理好，对吧？第二个呢，就我们去猜，硬猜嘛，对吧？好，首先这个 get my new room，我的新房间 get 对于各位来说其实不是特别难理解。为什么我这样去说？因为 get 是一个万能动词。我原来跟各位说了，结合上下文，很多的时候叫做怎么翻译舒服怎么来，对吧？好，说那我一直都在尝试着使我的新房间，让我的新房间怎么样呢？In order，这个也许我们没见过，但我们见过 keep。
+
+## 00:03:28–00:04:02
+
+In order, this maybe we haven't seen, but we've seen keep order, right? Okay, ah, this in order, order we know, for example, it means rules, right? It means order. Get my new room in order. We guess, I think, maybe we can guess, that is, make it orderly, right? It means orderly. Okay, this has not been easy because don't look back. This has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy. It means this has not been easy.
+
+## 00:03:58–00:04:32
+
+一直都不是一个很简单的事情，从过去持续到现在。你说这个地方啊，这是我们很多同学的一个疑惑。那很多同学说，那这个地方为什么不用 This is not easy 啊？为什么非要用现在完成时，对吧？而不用一般现在时呢？好，我在这个地方统一作答一下。很多的时候啊，去表达一句话的时候，其实有好几个时态都可以去用。没有人说说，呃，比如说亚历山大用了现在完成时就不能。
+
+## 00:04:28–00:05:02
+
+说，哎，比如说亚历山大用了现在完成时，就不能用别的时态了。但是鉴于你写文章和说话，你总得要选一个你认为比较合适的，所以他选择用了这个时态，这是一个理解方式。各位能理解吧？没有人说这地方不可以变成叫 This is not easy，对吧？只不过也许它不如 This has not been easy 更好一点点。但是你注意，我们说话的时候就是很即兴的，张嘴就来的，不是那么讲究逻辑的一件事情。
+
+## 00:04:58–00:05:32
+
+张嘴就来的不是那么讲究逻辑的一件事情，对吧？就算用的不是那么的好，但是意思我表达到了也是对的。所以很多的时候，同学会问这样的一个问题：叫这里为什么不能用这个时态呢？我觉得可以的。其实很多的时候，它真的就是可以的。当然，除了少数的情况，确实，那您对那个时态的理解不对，对吧？OK，那我们接着往下走啊。因为什么呢？I own over a thousand books。说因为连词，对吧？原因状语从句。那因为我拥有超过了一。
+
+## 00:05:28–00:06:02
+
+原因状语从句，那因为我拥有超过了一千本书，那真的是挺难搬家的啊。To make matters worse，使事情变得更糟的是什么呢？一个习惯用法，一会儿我们去造句啊。使事情变得更糟。The room is rather small，说这个房间还相当的小。So连词，I have temporarily put my books on the floor，因为我所以啊，我已经暂时性把我所有的书都放在了地。
+
+## 00:05:58–00:06:32
+
+所以啊，我已经暂时性把我所有的书都放在了地板上，对吧？地面上。好，continue。At the moment，说现在，They cover every inch of floor space. At the moment, now，他们呢 cover，哎，首先单词造句的时候我已经用过了，新概念一册一百四十三课咱们也学过，对吧？哎，然后呢，其实咱们之前 penguin 啊，这个第一单元也学过呃 cover 这个单词，但那个时候。
+
+## 00:06:28–00:07:02
+
+啊，这个第一单元也学过，呃，cover这个单词，但那个时候学的cover是越过，现在不是了。现在的cover是什么意思呢？就覆盖啊。说他们覆盖着 every inch of floor space. Every inch 单词部分我们讲过了，每一寸 floor space，对吧？哎，他们覆盖着地面的每一寸。And 哎，又是一个 and，告诉你，其实前后是两句话。然后怎么样呢？I actually have to walk on them. 说我实际上不得不走在
+
+## 00:06:58–00:07:32
+
+Walk on them.说，我实际上不得不走在这些书的上面，目的是to do结构，对吧？哎，这个我们还没来及讲，但是你要先看懂，后边加了个to do结构，目的是get in or out of the room，进入房间，get in the room，那get out of the room叫走出房间，对吧？OK，就实际上我不得不怎么样呢？哎，走在这些书的上面，其实这里呢，我觉得有两种不同的理解，但是对于各位来，
+
+## 00:07:28–00:08:02
+
+其实这里呢，我觉得有两种不同的理解，但是对于各位来说，现在没有必要去过多纠结。我只是简单提一句啊，以防有的这个我们所谓的这个学员啊，或者说大拿跟我在这儿问啊，或者说这个事儿，这个 to get in or out of the room 呢，有两种理解，一种是说我走在这些书上的目的是进出这些房间，另外一个逻辑呢，可能是指的是当什么什么时候，就是它指的是一个时间状语啊，说当我要进出这个。
+
+## 00:07:58–00:08:32
+
+是一个时间状语啊，说当我要进出这个房间的时候，我实际上不得不走在这些书的上面，对吧？或者说我走在这些书的上面的目的是什么呢？是进出房间，我觉得都可以啊。这个东西我们管它叫非谓语嘛，非谓语其实很多的时候就省略了这样的连词，使逻辑关系变得不那么的明朗。但是我还是那句话，我们平常去说话的时候，不是搞学术研究，是不太一样的。各位只要能理解，对吧？至于你理解成目的还是理解成。
+
+## 00:08:28–00:09:02
+
+能理解，对吧？至于你理解成目的还是理解成时间状语，我觉得是没有过多的影响的。OK，所以我都接受，我个人层面上都是觉得没有问题的啊。所以对于这句话，对于你来说，就是我进出房间必须要走在这些书的上面，好吧？A short while ago，习惯用法一很短的a while for a while，对吧？一段时间之前，My sister helped me to carry one of my old bookcases up the stairs。说我的。
+
+## 00:08:58–00:09:32
+
+Old bookcases up the stairs.说我的姐妹嘛啊，姐姐help me to carry help somebody to do something帮助某人做某事儿，帮助我去携带了one of my old bookcases哎，我的旧书柜的其中之一，帮助我扛着它一起up the stairs上了这个楼梯，对吧？Continue. She went into my room.她进入了我的房间。And又是一个and对吧？Got a big surprise.二十三课咱们学过，咱们学的是。
+
+## 00:09:28–00:10:02
+
+对吧? Got a big surprise. 二十三课咱们学过，咱们学的是 get a surprise，对吧？那 got a big surprise 也没什么多说的，多加了个 big 嘛。大吃一惊。When 当你看这句话，其实啊，我们可以理解为从这儿到这儿就被拆成了如下一些部分。这是第一个部分，got a big surprise。这是第二个部分。When she saw all these books on the floor，这是第三个部分，对吧？当他看到所 those books on the floor，当他看到所有那些书在地面上的时候，他大吃了一。
+
+## 00:09:58–00:10:32
+
+On the floor. When he saw all those books on the floor, he was shocked. This is the prettiest carpet I have ever seen. If the eighth lesson, second volume, the eighth lesson's homework, you did it carefully, I believe this is too comfortable for you. The eighth lesson is the key sentence, right? Including the first volume of new concepts, right? Lesson 107, we also learned this key sentence. This is the most beautiful carpet I have ever seen. She said. She.
+
+## 00:10:28–00:11:02
+
+She said. He said. She gazed at it. This place has a little bit of a connection. It. We don't connect it. We gazed at it. Connect it. See it. Gazed at it for some time. It lasted for some time. Then added.
+
+## 00:10:58–00:11:32
+
+All. Say you呀根本就不需要书柜. You can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can sit here. Say you can
+
+## 00:11:28–00:12:02
+
+是由书组成的嘛，对吧？The carpet is made of all the books, over a thousand books. Okay,好，那文章就讲完了。接下来我们拿习惯用法去造一些小的句子。第一个，get something in order指的是这个使井然有序，对吧？Okay,啊，那我们来了。呃，I haven't been able to get my new room in order.说我一直都没有办法去使
+
+## 00:11:58–00:12:32
+
+我一直都没有办法去使我的这个新房间变得井然有序。你注意，have been able to，四十三课咱学的，对吧？一直都不能变。我直接把它变成了一个否定的特殊疑问句啊。Why haven't you been able to get your new room in order?为什么你不能呢？再来，说Their mom asked somebody to do something.十一课咱们学的，说要求他们去get their bedroom in order，让他们整理好他们的卧室。
+
+## 00:12:28–00:13:02
+
+Their bedroom in order,让他们整理好他们的卧室。Okay,好get something in order. Very good.接下来to make matters worse,这个其实去造句的时候很简单，你就永远给它放句首，后边随便造一句话，基本都可以。但是你要给上下文。我举个例子，to make matters worse, she went on a diet.说使事情更糟糕的事情是她还节食了。好，我举个例子，那什么时候叫做使事情变得更糟糕呢？这个地方你就要去脑补一下。举个例子，有没有这种使用场景？
+
+## 00:12:58–00:13:32
+
+这个地方你就要去脑补一下。举个例子，有没有这种使用场景呢？比如说，女子怀孕了，女子怀孕是不能节食的，对吧？哎，我们一定要稍微还要增加一点点重量。当然，我不是这方面的专家啊，这是我自己储备的知识，对吧？你节食是对于怀孕是不好的，所以那我们就可以这样去说，叫 to make matters worse, she went on a diet. 那是不是就这个使用场景就搭建出来了，对吧？好，再来，比如说 he went on an excursion yesterday. 使事情变得更糟糕的事情呢，叫做他。
+
+## 00:13:28–00:14:02
+
+Excursion yesterday.使事情变得更糟糕的事情呢，叫做他昨天还自己出去郊游了，对吧？OK，再来说，Leo wanted went to sleep very early last night.说使事情更糟糕的事情是呢，我昨天晚上睡得还特别的早。那为什么他会让事情变得更糟糕呢？这不是我在这儿造句的重点，那个你要自己去想，对吧？我在这儿造造句的重点叫做带你去使用一些我们之前学过的习惯用法，对吧？然后你可以像我一样自己去想它的使用场景是什么？OK。
+
+## 00:13:58–00:14:32
+
+你可以像我一样自己去想它的使用场景是什么。OK，再来，a short while ago，一段时间之前，造句子，比如说一段时间之前，He smashed everything in the living room to pieces.他把卧室的一切都砸碎了。OK，你看这个思路叫smash something to pieces，对吧？哎，很容易造，对吧？再来说，They heard little crying.那么听见我哭了，是吧？四十七个，Hear somebody doing something，还是那句话，叫我们这里的重点叫结合起。
+
+## 00:14:28–00:15:02
+
+Thing,还是那句话，叫我们这里的重点叫结合其他习惯用法，对吧？好，They had a picnic at the edge of a forest. 四十四课咱们学的两个习惯用法。好，下一个，help somebody to do something，帮助某人做某事。造句子，比如说很常见的一句话叫Can you help me to carry this？说你能帮助我携带一下这个东西吗？那可能是扛一下，或者搬一下，或者抬一下，对吧？这个汉语的动词太多了，咱们不挨个说了啊。拿
+
+## 00:14:58–00:15:32
+
+或者抬一下，对吧？这个汉语的动词太多了，咱们不挨个说了啊。拿一下，对吧？啊，再来说，Would you help me to ring the bell？你愿意帮我 ring the bell？叮叮 ring the bell，对吧？你看我手里现在有东西，你如果不能帮我拿，那你帮我至少摁一下门铃行不行？对吧？再来说，They helped my family to settle down here。很多年前啊，比如说也可以说 short while ago，也可以说 many years ago。They helped my family to settle down here。settle down，定居在这里，对。
+
+## 00:15:28–00:16:02
+
+Family to settle down here. Settle down,定居在这里，对吧？Okay,啊，接下来呢，咱们看一个电影片段，它出现了说，Sam, it might help you to talk about it.说这个事儿可能对你是有帮助的，如果你去聊一聊它。Okay,来了啊。Sam, it might help you to talk about it. Okay,好，接下来 gaze at something就盯着凝视着某个东西看啊，比如说 she was so cute啊，她是如此的可爱以至于
+
+## 00:15:58–00:16:32
+
+She was so cute. Ah,她是如此的可爱，以至于Leo又出来了，叫做gazed at her for a long time，盯着她看，看了半天。这样不好，对吧？但是没办法，so cute，对吧？Okay，玩一个。三十五课咱们学的如此以至于so怎么怎么样that好又复习了。再来，我也可以问说Why did you gaze at her？说你为什么要盯着人家不看啊？盯着人家看呢？Okay，好In somebody's spare time，叫做在某人空闲的时间，我们造句子，比如说。
+
+## 00:16:28–00:17:02
+
+Spare time叫做在某人空闲的时间，我们造句子，比如说 in my spare time，你看剩下的又是重复的东西了。I prefer, ah, ah, ah, 又是不一样的了啊。前面都是 in my spare time，叫在我业余时间，对吧？I prefer prefer swimming to running. 哎，我这个更愿意游泳，比跑步相比，对吧？不费膝盖啊。再来说，I'd prefer to take a walk with my family. 业余时间我愿意跟我的家人出去溜达溜达，好吧？再来，比如说 I love reading.
+
+## 00:16:58–00:17:32
+
+跟我的家人出去溜达溜的好吧，再来，比如说 I love reading all kinds of books. 我喜欢读不同类型的书，都是我们五十课学过的习惯用法。习惯用法加习惯用法造句组合越来越多，对吧？各位，造句能力也就变得越来越强。呃，电影片段直接给了一句话，叫 What do you do in your spare time? 说你这个空闲时间、业余时间都干嘛呀？哎，其实原来我我也愿意跟别人聊这个问题，对吧？让你更好的能理解别人，对吧？
+
+## 00:17:28–00:18:02
+
+你愿意跟别人聊这个问题，对吧？让你更好的能理解别人，对吧？哎，我就会问他说 What do you do in your spare time？比如说，有的人可能说我愿意去划划船，有的人说我愿意去这个看看书啊，看看电影，对吧？哎，刷刷短视频啊。OK，注意力集中来了。 What do you do in your spare time？ OK， recap，本课除了文章重要以外，这些习惯用法也是无比的重要。听说读写全用得到，好吧？那老习惯，咱们家庭作业单词造。
+
+## 00:17:58–00:18:32
+
+得到好吧？那老习惯，咱们家庭作业单词造句配合单词造句，哎，这个习惯用法造句指南，每个单词啊，每个习惯用法咱造五个啊。接下来呢，你文章要跟读至熟读成诵，这个有很多的帮助啊。呃，最后呢，各位在置顶留言可以去找到这个练习，帮助我们去做重复间隔。具体的使用说明，各入进去自己看好吧。那以上呢就是本期视频的全部内容了。如果各位喜欢我们的课程呢，欢迎各位关注订阅，一键三。
+
+## 00:18:28–00:18:50
+
+如果各位喜欢我们的课程呢，欢迎各位关注、订阅、一键三连、分享给那些需要的朋友，来帮助我们快速成长。See you next time.
+
