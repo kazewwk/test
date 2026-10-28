@@ -1,0 +1,202 @@
+{
+  "artifacts": {
+    "1793152865_3312.md": "6dc1f896c0b97d50313611d95c364b91123ea24ee0a1d7363f66a231017e147b",
+    "1793152865_3312_res.json": "69fdc7b1dd09a152b00762e7fd867bd7db48e721efa8c71fd1f850f082fa9e3d",
+    "imgs/img_in_header_image_box_1650_32_1889_100.jpg": "7f2d70454b0800ba1488f3c53268aead7294e1b16cd34b55d3a832921dde83cd",
+    "imgs/img_in_image_box_1109_292_1789_1078.jpg": "57e291002beda31a6f01f896153e4b9344657deacbd8ac39d19d8bac053eebf2",
+    "region_repairs.md": "7621a9bdf5c367ac45cbcec1dda7412b82933dcadd53022ca99b00b2ba3b8d99",
+    "repairs/region_005/1793152871_8317.md": "3d3bc389df58f47aef91bc1182122d181e2c628a2d5b93939c903507938814de",
+    "repairs/region_005/1793152871_8317_res.json": "51f2535196ca345edf6a1e093f26030eccb89c316753a58d75608e773e4ce86a",
+    "repairs/region_005/source.png": "e4b5528049a448a52ad9ca3732e01fe7e7d0fe63bcc5d6b0cf748dddb3fc0b40"
+  },
+  "input_fingerprint": "6933dda2f8a4070e1252b88d950a6f6d77715e1bf141d54513c57baeb8fb50b7",
+  "image_sha256": "a56d4e850f3e22d5711ccb05145e2715df77a846aad328e354aa3574726ee593",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 58.684815434971824,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1650,
+        32,
+        1889,
+        100
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1650.0,
+          32.0
+        ],
+        [
+          1889.0,
+          32.0
+        ],
+        [
+          1889.0,
+          100.0
+        ],
+        [
+          1650.0,
+          100.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "① 如何引起他人注意？",
+      "block_bbox": [
+        34,
+        206,
+        535,
+        264
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          34.0,
+          206.0
+        ],
+        [
+          535.0,
+          206.0
+        ],
+        [
+          535.0,
+          264.0
+        ],
+        [
+          34.0,
+          264.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "② 如何让对方再讲一遍？",
+      "block_bbox": [
+        34,
+        361,
+        583,
+        419
+      ],
+      "block_id": 2,
+      "block_order": 2,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          34.0,
+          361.0
+        ],
+        [
+          583.0,
+          361.0
+        ],
+        [
+          583.0,
+          419.0
+        ],
+        [
+          34.0,
+          419.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "③ 当我谈单词时我谈些什么？",
+      "block_bbox": [
+        36,
+        516,
+        685,
+        574
+      ],
+      "block_id": 3,
+      "block_order": 3,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          36.0,
+          516.0
+        ],
+        [
+          685.0,
+          516.0
+        ],
+        [
+          685.0,
+          574.0
+        ],
+        [
+          36.0,
+          574.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1109,
+        292,
+        1789,
+        1078
+      ],
+      "block_id": 4,
+      "block_order": null,
+      "group_id": 4,
+      "block_polygon_points": [
+        [
+          1109.0,
+          292.0
+        ],
+        [
+          1789.0,
+          292.0
+        ],
+        [
+          1789.0,
+          1078.0
+        ],
+        [
+          1109.0,
+          1078.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "③",
+      "block_bbox": [
+        46,
+        519,
+        87,
+        570
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        46,
+        519,
+        87,
+        570
+      ],
+      "ppocr_candidate": "3",
+      "recovered_text": "③",
+      "source_crop": "repairs/region_005/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "engine": "transformers",
+  "device": "cpu",
+  "dtype": "float32",
+  "verification": "machine_extracted_unverified"
+}
