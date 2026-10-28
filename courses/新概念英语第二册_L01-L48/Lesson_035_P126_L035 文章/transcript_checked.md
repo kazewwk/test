@@ -1,0 +1,96 @@
+# L035 文章
+
+快速模式：仅按词时间去除重叠，未经第二模型或人工校对。
+
+## 00:00:00–00:00:30
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn New Concept English Book Two Lesson Thirty Five Story. Hope you gonna enjoy it.那我们直接看文章啊，说 Roy Chantin 啊一个人的名字 used to drive a taxi. 咱们呃之前刚刚学过 used to do, 应该是三十一课对吧？说过去哎，过去的工作是 drive a taxi 啊，过去开出租车
+
+## 00:00:30–00:01:00
+
+的是吧？哎，那他往往有一个潜台词叫什么来着？现在不开了，对不对？A short while ago,讲单词的时候我们已经提到了不久前。However,然而呢，He became a bus driver.哎，你看，和咱们刚才的used to do也是连着的。呃，他原来开出租车，他现在变成了一个公交车司机。And然后呢，He has not regretted
+
+## 00:01:00–00:01:30
+
+regretted it. 注意这个地方要连读啊, regretted it. 好，不连读叫做 regretted it. 啊，最后有一个连读是这个 did，所以是 regretted did. 啊，OK，听见了吧？regretted did, regretted it. OK，说他到现在都没有后悔。从他变成公交车司机到现在都没有后悔。我有一个问题是，您在视频下
+
+## 00:01:30–00:02:00
+
+方告诉我，这是现在完成时的第一个用法还是第二个用法？如果您忘了的话，赶紧去回顾一下现在完成时，好吧？ He is finding his new work far more exciting. 这不第四课原文吧？ He is finding this trip very exciting, 对吧？你们文章你要读的很熟，到这儿就迅速就懂了。这是咱们当时学的习惯用法，叫做 find something 形容词，对吧？比如说 I find her beautiful.
+
+## 00:02:00–00:02:30
+
+说我觉得她真漂亮. I find him cute. 我觉得他真可爱，对吧？那 he find his new work. 他发现他的新工作 far more exciting. 远远的更有趣。那和什么比？和的就是他原来开出租车比呗，对吧？就是说他现在开公交车，他发现啊，和比他原来开出租车有趣的多的多的多啊，叫做 far more exciting. 啊，更刺激，对吧？那我们就很好
+
+## 00:02:30–00:03:00
+
+奇了，为什么你开个出租车、公交车有多大本质的区别吗？我们看接下来，问当哎，He was driving along Catford Street recently。说当啊，他最近开车沿着哪儿开呢？Catford Street就一个街道的名字，不太用管它。Recently叫最近，He saw他看见了two thieves，看见了两个贼，Rush out
+
+## 00:03:00–00:03:30
+
+of a shop,跑出了一个商店, and ran towards a waiting car. Ran towards叫冲什么什么跑, a waiting car三十个咱们学的现在分词做定语对吧？做单词的时候放在名词的前面, waiting car叫正在等待的一辆车或者等待的一辆车。这个地方我觉得翻译成现在进行和呃这个一般现在区别不大是吧？您放心翻译啊。
+
+## 00:03:30–00:04:00
+
+OK，那这个地方就有一个小的习惯用法叫做 saw somebody do something。一会儿我们讲，好吧，现在先不讲啊。我们现在知道它什么意思就行了，就很字面的意思，叫看见两个贼冲出了商店，然后呢，冲着一辆等着的车跑了过去。One of them was carrying a bag。说其他们当中其中一个一个贼啊，说 was carrying a bag。说正携带着一个包。先不
+
+## 00:04:00–00:04:30
+
+管括号当中的东西啊，叫做 full of money，叫做充满了钱。课文注释也告诉我们了，我们也给它补齐一下，叫做补齐成 which was full of money。我相信二十八课定语从句你只要学的好，在这个地方瞬间就明白了，which was full of money 是定语从句，在说的是 bag，就指的是这个包充满了钱，所以 full of money 其实就也是一个定语，指的是这个包
+
+## 00:04:30–00:05:00
+
+充满了钱，对吧？哎，就携带着一个充满了钱的包啊，全是钱的包，是吧？Roy acted quickly. 单词部分我们已经讲过了，他快速的行动，and drove the bus，然后开的他的公交车，straight，径直的开，at the thieves，冲向这个贼，是吧？冲向这两个贼，the one with the money got such a fright that. 好了，我们
+
+## 00:05:00–00:05:30
+
+先不往后看了，我们就看前面这句话。The one with the money.好，这个地方又要涉及到三十课，我给大家总结的那个定语的位置，那个非常的重要。With是一个什么词性？介词。新一三十五课咱们就学过，还是三十三课啊？三十三课咱们就学过，对吧？说带着钱的那一个 got such a fright. 先把 such 去掉，got a fright 就吓了一大跳。那 such a fright
+
+## 00:05:30–00:06:00
+
+就吓了如此大的一跳 that 以至于 such 点点点 that such 后边要加名词 fright 是个名词，对吧？哎，吓了如此大的一跳，以至于怎么样呢？ He dropped the bag. 他把这个包就给掉地上了。这地方用了一个很好的动词叫做 drop，而没有用 through。 Through 是什么意思？ Through 是扔，而 drop 就是比如说这个笔，什么叫 through？我
+
+## 00:06:00–00:06:30
+
+从这儿扔过去才叫 through。如果我一松手，我一下一跳松手了，它叫做 drop。那你设想一下，人被吓了一跳，本能的反应一般可能不是扔，是吧？扔还要你想，你还要抬手再扔，是吧？你可能本能的反应是就松手了，对不对？于是它就 drop 下去了。这个小单词用的很好。as 好出现了，这个 as 有很多的意思。首先三十二课我们本课复习嘛，对
+
+## 00:06:30–00:07:00
+
+吧？我们就简单复习一下。三十二课咱们学了 as 点点点 as，第一个 as 什么意思？第二个 as 什么意思？我需要您回顾一下。我在这儿不讲了。您如果忘了，翻看三十二课啊。接下来我们三十一课还学了一个叫做 as a young man，它是什么意思来着？这个您还记不记得？再接下来呢，我还告诉各位， as 如果放在句首这样去用的时候，很常见的一个情况是它类似
+
+## 00:07:00–00:07:30
+
+于 when 或者 while，叫做当啊。我们看一下，说 the thieves were trying to get away in their car。说这两个贼呀，正在尝试着 get away in their car。好，这儿有一个小的短语叫 get away。 get away。首先我们要明白 away 叫做离开。 get away 其实它的意思还是离开，对吧？In their car 就在他们的车里离开啊，就在这儿可以理解为叫跑开，对吧？
+
+## 00:07:30–00:08:00
+
+跑跑跑跑开，get away get其实是一个万能动词，我跟大家说过很多遍了。所以在这个地方，如果您拿不准，你第一次去猜的时候，你怎么猜呢？就是把上下文都看懂，然后去猜get away away叫离开。那get away在这个地方翻译成什么是舒服的，对吧？当然了，如果您直接见到它就明白get away，以后记下来就指的是跑开，对吧？那就
+
+## 00:08:00–00:08:30
+
+可以了，是吧？这里的 as 就是 when，你可以在旁边写一个 when，啊，w h e n。好，当这两个贼正尝试着开着他们的车跑开的时候呢，Royan 呢开着他的公交车就撞进去了，就撞进了 the back of it，back 叫后面，it 指的是这辆车，就撞进了他们车的后面，对吧？ Continue， while the
+
+## 00:08:30–00:09:00
+
+battered car was moving away, well,跟当一样的，对吧？叫做当这个被撞坏的车was moving away，正在离开的时候，Royal stopped his car. Royal停下了他的，a stop his bus，停下了他的公交车，and telephoned the police.然后给这个警察就打了电话。The thieves' car was badly damaged.说贼们的车呢被严
+
+## 00:09:00–00:09:30
+
+重的损毁了，was badly damaged，一般过去时的被动，and easy to recognize，然后很容易被识别出来。Shortly afterwards，单词部分我们讲过了，叫不久之后，soon啊。The police stopped the car，停了这辆车，and both men were arrested，说两个男人都被逮捕了。OK，那were arrested，一般过去时的被动，又复习了一下这个知识点。Very good。本课的习惯用法，
+
+## 00:09:30–00:10:00
+
+我们就摘出来这两个是最重要的，叫 see somebody do something。另一个我们没见到，但是经常放到一起去讲，叫 see somebody doing something。好，我们看一下它二者的区别，其实也很简单。我们造一句话叫做 I saw Tom get into his car and drive away。你看，用的是 do 动词原形，指的是什么意思呢？指的是我看到了这个全程，我亲眼看见了他进了车，然后开
+
+## 00:10:00–00:10:30
+
+走了，叫做全程。OK，这个点要记住。那如果我说的是 I saw Kate waiting for a bus，它往往指的是什么呢？进行，就是我没有看到全程，我只看到他在那儿做这个动作了，对吧？这个地方呢，各位回去要查一下中级的红皮书，see somebody do something， see somebody doing something。哎，这个您不用造句了，您直接去找到中级红皮书，在里面去把它的练习做一下，这事儿就搞定了。
+
+## 00:10:30–00:11:00
+
+我说清楚了啊，OK。那 recap 还是这两个习惯用法，那还有文章了。当然，造句呢，习惯用法您造句，我们本课不用您单独去造句，找到红皮书，把它的对应练习做了就可以了，对吧？然后呢，文章那是老习惯，你必须要跟读至熟读成诵，好吧？好，那以上呢就是本期视频的全部内容了。如果各位喜欢我们的课程呢，欢迎各位关注、订阅、一键三连，分享给那些需要的
+
+## 00:11:00–00:11:15
+
+朋友，来帮助我们快速成长。See you next time.
+

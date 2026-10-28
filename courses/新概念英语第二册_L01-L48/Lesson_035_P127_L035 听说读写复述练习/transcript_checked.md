@@ -1,0 +1,60 @@
+# L035 听说读写复述练习
+
+快速模式：仅按词时间去除重叠，未经第二模型或人工校对。
+
+## 00:00:00–00:00:30
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn New Concept English Book Two, Lesson Thirty Five Practices. That注意进行如下练习的唯一前提叫做文章跟读制，熟读成诵，否则请勿开始。Hope you gonna enjoy.那我们先看第一题，我们的任务叫做听懂一般疑问句和特殊疑问句，对吧？我问您答，在文章当中可以找
+
+## 00:00:30–00:01:00
+
+答案来了。What did Roy Trenton used to do? Drive a taxi. Next one, what does he drive now? A bus. Next one, does he regret the change? No, he doesn't. Next one, how is he finding his new work? Hey, far more exciting. Okay, next one, say where was
+
+## 00:01:00–00:01:30
+
+he driving recently? Along Catford Street. Next one, who did he see rush out of a shop? Two thieves. Next one, where did they run? Towards a waiting car. Next one, what was one of them carrying? A bag full of money. Next one, which way
+
+## 00:01:30–00:02:00
+
+did Roy drive his bus? Straight at the thieves. Next one, were the thieves frightened? Yes, they were. Next one, what did the one with the money do? He dropped the bag. Next one, where did Roy drive his bus next?
+
+## 00:02:00–00:02:30
+
+into the back of the thieves' car. Okay, asking questions.练习的是我们能说出来啊，一般疑问句和特殊疑问句的能力，就是我们发问的能力，对吧？好了，那我们先看一个简单的例子，说 Roy Trenton used to drive a taxi. 这个我们在三十一课讲过了。Did提前，used换回原形，对吧？然后What那那肯定就对a taxi提问，直接替代，这事儿就搞定了啊。好，
+
+## 00:02:30–00:03:00
+
+那我们来看接下来的。说 He changed his job recently. Changed，一般过去时，did提前，动词换原形。Where？你想他 changed to where，是吧？各位自己去想一下。你在视频下方告诉我，这个还是有一点点很有意思的。你要想一下，它翻译过来是什么意思？好吧。接下来呢？说 He became a bus driver. Did提前 What对a bus driver提问。
+
+## 00:03:00–00:03:30
+
+He is finding his new work far more exciting. Is提前，How，其实答案叫做How is he finding his new work，对吧？哎，感觉如何啊？那What对 his new work提问，对吧？He was driving along Catford Street recently.过去进行时was提前。Where呢？对Catford Street。When呢？对Recently。Who do对主语提问？Next one. He saw two thieves.
+
+## 00:03:30–00:04:00
+
+Did提前, what对two thieves提问, where对整句提问，直接加一般疑问句. They rushed out of a shop. Did提前, what点点点do是标准答案，叫What did they do? Okay.第八个说They ran towards a waiting car. Did提前, which way其实可以理解为是对towards a waiting car提问，所以叫做Which way did they run?他们冲哪条路跑
+
+## 00:04:00–00:04:30
+
+
+
+## 00:04:30–00:05:00
+
+以错一点点，但绝对不能慢，对吧？所以文章要读到非常非常的熟啊，才可以出现说. Right and Trenton used to drive a taxi a short while ago. He became a bus driver and he has not regretted it. Okay, and he is finding his new work far more exciting.你要读到很熟，对吧？Okay, uh, summary writing.只要写作写完来这儿对答案就可以了。我们不多说，有问题视频下方留言告诉我啊。Topic for
+
+## 00:05:00–00:05:30
+
+discussion.我们先看一下，第一题说In your experience, which are the better or worse drivers, taxi or bus drivers? Why?说在你的这个体验当中啊，说公交车司机和出租车司机谁开的驾驾这个你可以理解为谁的驾驶技术更强？为什么？第二，说Imagine you were a passenger on Roy Trenton's car. Tell the story from your point of view.这道题我觉得倒是
+
+## 00:05:30–00:06:00
+
+挺适合各位去写一下，其实就是复述一下文章，叫做假设你是 Roy Trenton 那个公交车上的一名乘客，那你给我去从你的这个视角去讲一下这个故事。最后一道题说 What would you do if you saw some thieves? Would you try to stop them? Why? Why not? 说你如果看到一些贼，你会尝试去制止他们吗？如果会，为什么会？如果不会，为什么不会？好吧，
+
+## 00:06:00–00:06:30
+
+OK，呃，家庭作业 ask me if 先写再大声朗读，只要写作先写，然后来这里对答案， tell the story 进行一个口语复述，专栏当中可以找的。好，那以上呢就是本期视频的全部内容了。如果各位喜欢我们的课程呢，欢迎各位关注、订阅、一键三连，分享给那些需要的朋友，来帮助我们快速成长。See you next time.
+
+## 00:06:30–00:06:39
+
+
+
