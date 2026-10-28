@@ -1,0 +1,116 @@
+# 016 单词 练习
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Liu. Today we're going to learn New Concept English Book One, Lesson Sixteen, Practices and Words.老习惯，进入正式课程之前，我们先提出三个问题。第一，如何表达生活呀，不是非黑即白的，black white。第二，如何表达我请客，或者说咱AA制吧。第三，如何判断什么时候用is，什么时候用are呢？那带着这三个问题，Hope you gonna enjoy it.
+
+## 00:00:28–00:01:02
+
+Enjoy it. 上来，我们先看第一个单词，来跟我一起读一下 Russian, Russian, Russian. OK，带一点小舌音。那俄国 Russia，其实就是少了个字母 n，各位看到了吧？也就是说少了一个 n 的发音。那上面俄国 人，俄国的，底下俄国啊。那我们先看上面 Russian. OK, so do you know who who is this? OK, so this is.
+
+## 00:00:58–00:01:32
+
+Do you know who who is this? Okay, so this is Leo Tolstoy, Tolstoy. Okay,这是列夫托尔斯泰啊，非常著名的俄国作家。So he is Russian. Okay, very good.那Tolstoy is from Russia.没有鼻音了啊，这个时候n字母少掉了，他来自于俄国。那一般疑问句，他来自于俄国吗？叫做Is Tolstoy from Russia? The Russia提问是一个地点，用什么来着？Where? So.
+
+## 00:01:28–00:02:02
+
+The Russia提问是一个地点，用什么来着？Where? So where is Toy Story from? Very good. Next one, Dutch. Ah,这是德语Dutch. Okay,各位一起读Dutch.荷兰人或荷兰的，那Holland.各位看地图是吧？还是在欧洲，在西欧。各位一起读Holland，叫做荷兰，而Dutch叫荷兰人。So知道这是谁吗？So who is this? Okay,那在这个地方呢，我们先说Dutch.由
+
+## 00:01:58–00:02:32
+
+那在这个地方呢，我们先说 Dutch，有几个小的用法很有意思。那第一个用法，Let's go Dutch. Go Dutch 就是让我们 A A 制吧。那还有另一个表达叫 Let's split the bill. Let's split 啊 split，让我们分账付款吧。其实跟 Go Dutch 是一样，都是 A A 制。那还有一个表达呢，就是 It's on me. On me 算在我身上，我请客，或者是 My treat，还是我请客的意思啊。那我们再回到它的。
+
+## 00:02:28–00:03:02
+
+Treat还是我请客的意思啊？那我们再回到他的身上，叫做This is Vincent van Gogh. This is Vincent van Gogh啊，这个Gogh我还专门去学了一下。呃，这个英语我们管它叫Gogh啊。那这地方其实也是我们说自然拼读法则的一个例外，对不对？G放在单词当中去，并没有发G，而在这个地方，它翻成了荷兰语的发音叫Gogh Gogh啊，Vincent van Gogh。呃，那He is.
+
+## 00:02:58–00:03:32
+
+Vincent Van Hock, good. That he is Dutch. He is Dutch.
+
+## 00:03:28–00:04:02
+
+两个桥段，哎，用到了叫 my treat，我请客，或者说 it's on me， on me，我请客，on you，那就是你请客，对吧？来，我们连续一起看一下，先看第一个 my treat. Can I have the spinach omelet? Only egg whites, no fat, no oil, no butter, and extra mushrooms. Absolutely. My treat. No, no, no, no, don't. My treat. My pro bono. That means she doesn't have to pay. I pay. Okay, my treat.
+
+## 00:03:58–00:04:32
+
+I pay. Okay, my treat. Let's continue.下一个. On me? No, on you. I do pro bono.好，各位看到了，my treat, my treat，我请客。那 on me 就是我请客，on you 就是你请客。Okay, very good.那接下来我们看一个单词，跟我一起读 red。哎，这个字母 r 啊，放在单词当中去，我们之前讲音标就提过了。我在这儿再重复一下，您需要做的更多的事情就是撅嘴。
+
+## 00:04:28–00:05:02
+
+再重复一下，您需要做的更多的事情就是撅嘴，舌尖往后卷，red，哎哎，red，甩过来发哎，red，OK，very good，那跟我们一起做一些造句练习，Repeat after me，Her head is red，Is her head red？那你想这个地方我们就可以对her或者red提问，用不同的特殊疑问词，对吧？Whose head is red？What color is？
+
+## 00:04:58–00:05:32
+
+Is red. What color is her hat? So this is her hat. 希望您还记得这个名词哦. Let's continue. Gray, gray,灰色.那注意啊，它有两种不同的书写方式，一个英式，一个美式。大多数情况下，您随便混用。如果非想搞清楚，第一，新概念当中是英式的拼写方式。第二，您可以自己用网络引擎搜索一下就可以了。跟我一起读. His tie is.
+
+## 00:05:28–00:06:02
+
+搜索一下就可以了。跟我一起读，His tie is gray. Is his tie gray? Whose tie is gray? What color is his tie? Very good. Next one,跟我一起读，yellow.两个元音如何分音节？如果您不会，一定要看我们的音标视频。中间一个辅音给后面啊。来跟我读，yellow, yellow. Very good. Repeat that.
+
+## 00:05:58–00:06:32
+
+Yellow, yellow. Very good. Repeat that to me. His keyboard is yellow. Is his keyboard yellow? Whose keyboard is yellow? What color is his keyboard? Very good. Black, white. So this is black and this is white. Very good. That life is not black or white. Very simple. Only, only one word you may not recognize is life. Life is life.
+
+## 00:06:28–00:07:02
+
+各位只可能有一个单词不认得，叫 life，叫做生活生命。Isn't is not否定句，第三课咱们就学了。Black and white，生活并不是非黑即白的，很简单的一句话。Let's continue下一个单词 orange。Orange，橘色。Her umbrella is orange. Is her umbrella orange? Whose umbrella is orange?
+
+## 00:06:58–00:07:32
+
+Orange. Whose umbrella is orange? What color is her umbrella?肯定句变一般疑问句变特殊疑问句，对吧？这个练习各位不要小瞧啊！等大概在五十五课的时候，我带各位去做一个练习，你会发现一句肯定句，你能引申出来，由你自己去造出来一个一般疑问句，一个否定句和 n 个特殊疑问句，你会有一种自我创造的能力。这个比老师给一个句子自
+
+## 00:07:28–00:08:02
+
+自我创造的能力，这个比老师给一个句子自己去背下来的效果要好的多得多啊！我们耐下心来，一点一点往那儿走，我们拭目以待，好吧？接下来一组单词：these, this, this，这个；that，那个；those，那些；that，那个；these boxes，这些；这个；这些；那个；那些。哈，各位容易懵。
+
+## 00:07:58–00:08:32
+
+这些、那个、那些，哈，各位容易懵是吧？我们造几个小的句子。This is his box，这是他的箱子。那 these are his boxes，来，各位注意，单数、复数，单数 is，复数 are。Next one， that is his box， and those 那些 are his boxes，那些是他的箱子。那单数 is，复数 are。我们迅速做一个练习。My shirt is.
+
+## 00:08:28–00:09:02
+
+单数 is 复数 are 我们迅速做一个练习 My shirt is red. My shirt 单数复数很容易想到单数一般疑问句 Is your shirt red? 对 red 提问 What color is your shirt? 复数 My shirts are red. 看这个关键点 shirts 变一般疑问句没有太大的区别，把 are 提前 Are your shirts red? What color are your shirts? 接下来跟我进入大
+
+## 00:08:58–00:09:32
+
+What color are your shirts? 接下来跟我进入大量的练习，张开嘴就好了。Repeat after me，跟我去读。What color are your books? Our books are black. 好，这儿我就要提一个小的问题。上一期视频刚刚讲过，your有两个意思，叫你的或者你们的。那他回答的叫我们的书是黑色的，our， right？那你自己去猜一下，这地方问的是你的还是你们的呢？这是汉语，跟英语没关系。
+
+## 00:09:28–00:10:02
+
+方问的是你的还是你们的呢？这是汉语跟英语没关系。接下来，shirt， shirts， what color are your shirts？ Our shirts are white. Repeat after me. What color are your coats？ Our coats are gray. What color are his tickets？ His tickets are yellow. Continuing.
+
+## 00:09:58–00:10:32
+
+Is are yellow. Continue. What color are his suits? His suits are blue. Continue. What color are her hats? Her hats are gray and black. Very good. Passports. What color are their passports? Their他们都 their passports are black.
+
+## 00:10:28–00:11:02
+
+Their passports are black. Umbrella. What color are their umbrellas?张开嘴跟我读哦. Their umbrellas are black. Continue. What color are her dogs? Her dogs are brown and white. Very good. What color are your pens? My pens are blue.那你想一下。
+
+## 00:10:58–00:11:32
+
+My pens are blue. 那你想一下，回答是我的笔 are oh 单数意思复数二啊。然后那你说这儿是你的还是你们的呢？我相信你知道答案了。 Continue. What color are her handbags? Her handbags are white. Ties. What color are their ties? Their ties are orange. What color are
+
+## 00:11:28–00:12:02
+
+What color are their cars? Their cars are red. There,他们的，Okay, very good. Blouses. What color are your blouses?注意这儿有一个变成了is，这我们在下一课立刻会立刻会讲到s, e, s这些名词复数的词尾应该如何去发音的问题。Our blouses are yellow.
+
+## 00:11:58–00:12:32
+
+的问题，Our blouses are yellow. 回答的是我们的 blouses，复数，所以用二。那这儿是你的还是你们的呢？自己想一想。如何表达生活不是非黑即白的？Life isn't white and black or black and white, right? 如何表达我请客？My treat is on me. A A制，Go Dutch，或者说的是，Let's split. Okay? 如何判断何时用 is r？目前最简单的一个标准就是单数 is。
+
+## 00:12:28–00:13:02
+
+何时用 is 二？目前最简单的一个标准就是单数 is，复数二。Racket，单数 is，复数二。关键的两个单词 these 这些，those 那些。其次是关于一些颜色的表达，再然后是我们刚刚讲到的 A A 制，以及如何说我请客啊，怎么去表达？来一个，那我们看一下今天的家庭作业。第一，绿皮书讲完了十六课，您可以开始写了。其次呢，给自己讲解一遍今天的核心知识点。即
+
+## 00:12:58–00:13:32
+
+写了。其次呢，给自己讲解一遍今天的核心知识点，基于的是 learning pyramid 学习金字塔和 study test 学习测试这样两个非常重要的理论，会帮助大家提高学习的效率效果。OK，那本期的视频呢，到这就结束了。如果大家喜欢呢，欢迎大家关注、订阅、一键三连，并转发给那些需要的朋友们，帮助我们。好，那最后的最后，我们再来看一句名人名言：Life isn't black and white; it's a million gray areas.
+
+## 00:13:28–00:13:50
+
+And white, it's a million gray areas. Don't you find? Very good. See you next time.
+
