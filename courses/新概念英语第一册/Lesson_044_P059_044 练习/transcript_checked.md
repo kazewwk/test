@@ -1,0 +1,56 @@
+# 044 练习
+
+快速模式：仅按词时间去除重叠，未经第二模型或人工校对。
+
+## 00:00:00–00:00:30
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we're going to learn new concept English book one lesson forty four practices. Hope you gonna enjoy it.好，那我们本课练的是什么呢？本课我们先不着急练 can，我们先练一下四十一课四十二课我们学过的那个不可数名词，比如说 bread. Is there
+
+## 00:00:30–00:01:00
+
+bread here? 注意，首先第一件事，bread后边不加 s，为什么它是不可数名词？可数名词讲单数、复数，而不可数名词不提这件事儿，对吧？但是注意的是，首先它可以用 some, any 去修饰 some bread, any bread, OK，没问题。其次一定要注意前面用的是这个单数的 is，而不用 are，这是英文的习惯。OK，所以是
+
+## 00:01:00–00:01:30
+
+is there？好，那回答叫 Yes， there is。接下来呢，我们可以回答说 There is some on the table。说有一些在桌子上。注意这个撇 s 就是 is 这个点，各位要通过练习把它记住。OK，好，接下来我们看一个小的电影片段当中出现了这样一句话叫 There is some food in the ice box。啊，在这个冰的这个盒子当中啊，是
+
+## 00:01:30–00:02:00
+
+有一些什么的呢？食物的，注意 there is food 后边没有 as，并且可以用 some 和我们讲的语法高度统一一致的，对吧？我之所以总给大家去找这些电影啊，就是告诉各位，我们学的语法不是说在书本上这种，就这个脱离了实际，这个啊语言情况的啊，它是在现实生活当中人们真的就是这么用的，好吧？来，我们开始了。
+
+## 00:02:00–00:02:30
+
+You want me to hang around? Yeah, hang around. You all right? Yeah, I'm fine. Yeah. Some food in the icebox. You hungry or anything? No, it's all right. How about a drink? Have a little brand. Yes, good to sweat it out. All right, come ahead. Okay, there is some food in the icebox. There you go. 啊，和我们今天接下来要练的一模一样啊。那接下来呢，我们就注意力集中，张开嘴跟我去读就好了。我读一句，您读一句。来了。 Are there any hammers here?
+
+## 00:02:30–00:03:00
+
+Yes, there are. There are some behind that box. Continue. Is there any milk here? Yes, there is. There is some in front of the door. Continue. Is there any soap here? 注意啊，各位的重点就是前面这个单词和后
+
+## 00:03:00–00:03:30
+
+边这个地方。Yes, there is. There is some on the cupboard. Continue. You看复数对吧？那你预计到它是用are. Are there any newspapers here? Yes, there are. There are some behind that vase. Continue. Water. Is
+
+## 00:03:30–00:04:00
+
+there any water here? Yes, there is. There is some in those glasses. Continue, tea,不可数. Is there any tea here?张嘴跟我读. Yes, there is.每句话都读啊. There is some in those cups. Continue, cups,
+
+## 00:04:00–00:04:30
+
+count. Are there any cups here? Yes, there are. There are some in front of that kettle. Continue. Chocolate. You看不可数. Is there any chocolate here? Yes, there is. There is some behind that book. Continue.
+
+## 00:04:30–00:05:00
+
+teapots, we just learned, right? Forty-three. Tea cups. Are there any teapots here? Yes, there are. There are some in the cupboard. Okay, cars,不可可数. Are there any cars here? Yes, there are. There are some in front of the building.
+
+## 00:05:00–00:05:30
+
+Coffee. Is there any coffee here? Yes, there is. There is some on the table. Okay, recap.本课关键点就是There is some bread类似的这样的句型。第一，它是不可数，后边不加s。第二，可以用some修饰。第三，即使用了some，前面也用是is这个小点。Okay，本课的家作业呢，
+
+## 00:05:30–00:06:00
+
+绿皮书第四十四课的写作练习，各位可以处理了。接下来给自己讲解一遍今天的核心知识点，无非就是There is some bread。刚才我讲的那三句话，有三十秒到一分钟，各位足以给自己讲解清楚了。但是这个会很大程度上提升我们的吸收效率啊！不要小瞧这一分钟的讲解。那如果大家喜欢我们的课程，欢迎大家关注、订阅、一键三连，分享给那些需要的朋友们啊！最后我们再来看
+
+## 00:06:00–00:06:25
+
+句名人名言。The best and most beautiful things in the world cannot be seen or even touched. They must be felt with the heart. See you next time.
+
