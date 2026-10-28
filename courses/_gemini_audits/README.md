@@ -1,6 +1,6 @@
 # Gemini 音画片段复核
 
-每节只抽查标出的两分钟左右片段；这不是整节课的完整转写。机器可能漏字、错字、误判标记或生成超出片段时长的时间码，原视频和主课程解析可用于复核。
+多数条目只抽查标出的两分钟左右片段；标注“含整课候选”的条目另附分段结果。机器可能漏字、错字、误判标记或生成超出片段时长的时间码，原视频和主课程解析可用于复核。
 
 | 系列 | 课程 | 原视频时间 | Gemini 复核 | 主课程 |
 |---|---|---|---|---|
@@ -52,3 +52,6 @@
 | 新概念英语第二册_L01-L48 | L029 听说读写复述练习 | 00:02:30–00:04:30 | [阅读](1NqVLoCgedY2aecnwspvaRzWQ-RUZSask.md) · [数据](1NqVLoCgedY2aecnwspvaRzWQ-RUZSask.json) | [课程](../%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%86%8C_L01-L48/Lesson_029_P106_L029%20%E5%90%AC%E8%AF%B4%E8%AF%BB%E5%86%99%E5%A4%8D%E8%BF%B0%E7%BB%83%E4%B9%A0/lecture_full.md) |
 | 新概念英语第二册_L01-L48 | L030 文章 | 00:04:26–00:06:26 | [阅读](1yb3Nsjd4pukdbU689HLF1bxCYeMYC-_f.md) · [数据](1yb3Nsjd4pukdbU689HLF1bxCYeMYC-_f.json) | [课程](../%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%86%8C_L01-L48/Lesson_030_P108_L030%20%E6%96%87%E7%AB%A0/lecture_full.md) |
 | 新概念英语第二册_L01-L48 | L031 单词 | 00:05:55–00:07:55 | [阅读](1TV1hiV5DwN9WLd6dzYRKF1OfrmfKRe-n.md) · [数据](1TV1hiV5DwN9WLd6dzYRKF1OfrmfKRe-n.json) | [课程](../%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%86%8C_L01-L48/Lesson_031_P110_L031%20%E5%8D%95%E8%AF%8D/lecture_full.md) |
+| 新概念英语第二册_L01-L48 | L031 文章 | 00:04:37–00:06:37 | [阅读](1GxGZInLV7A88b1drFXReqTSJehU8HW-i.md) · [数据](1GxGZInLV7A88b1drFXReqTSJehU8HW-i.json) | [课程](../%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%86%8C_L01-L48/Lesson_031_P112_L031%20%E6%96%87%E7%AB%A0/lecture_full.md) |
+| 新概念英语第二册_L01-L48 | L032 单词 | 00:03:11–00:05:11 | [阅读](1zRUxvx5kmqwU0x2P1SY_RmMG1WTokMtG.md) · [数据](1zRUxvx5kmqwU0x2P1SY_RmMG1WTokMtG.json) | [课程](../%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%86%8C_L01-L48/Lesson_032_P114_L032%20%E5%8D%95%E8%AF%8D/lecture_full.md) |
+| 新概念英语第二册_L01-L48 | L032 文章 | 00:04:58–00:06:58 | [阅读](1AwUDQyXoZ69sJtyC-EYl13RbDZefxowR.md) · [数据](1AwUDQyXoZ69sJtyC-EYl13RbDZefxowR.json) | [课程](../%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%86%8C_L01-L48/Lesson_032_P116_L032%20%E6%96%87%E7%AB%A0/lecture_full.md) |
