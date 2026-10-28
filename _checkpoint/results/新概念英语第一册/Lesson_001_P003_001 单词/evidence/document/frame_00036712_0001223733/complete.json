@@ -1,0 +1,195 @@
+{
+  "artifacts": {
+    "1793158387_2677.md": "5e3c76ba8a780266030a4eb4e4086d21dc5d2219ed459c3ff18917c97c474a56",
+    "1793158387_2677_res.json": "4ada59f1d218d79c37ed0653abf26cddaaeb76bda4db7130fffb544af8f8d525",
+    "imgs/img_in_image_box_1166_296_1842_1078.jpg": "81e58a8db060418998e8743871c7b5f8d67163dd6bd38e0d89b069c9f1791f3e",
+    "region_repairs.md": "471037bc82acdd4954f78bd2aba078bf0076d71cf3f9e64b38b67152fea74dc6",
+    "repairs/region_000/1793158398_6931.md": "5acb7efa8ac5b65dad2fe9e8132b5f6d04d059b38fef010b1630a238a1fa8fb0",
+    "repairs/region_000/1793158398_6931_res.json": "3d4f1b21ad4f8a89289fa78c22e74948072c767a1b07cff011285cc81693ab54",
+    "repairs/region_000/source.png": "5e34fe6a2e56beb8a2100f476db78822023850bd840453fc49e35ee31aa17b46",
+    "repairs/region_002/1793158408_6477.md": "e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb",
+    "repairs/region_002/1793158408_6477_res.json": "7d3fc08ee9be187ec683e6ae30688d94d413d68abcff1413642678e7aec03a7b",
+    "repairs/region_002/source.png": "9a9da126608b05ebf6a8a647776c1baf0ad4c128b7e90b78f1ad65198457dacb"
+  },
+  "input_fingerprint": "13b33ce017f1b5c7f402e7fe1663be908ee847c7053952ad7c5b18de7208b782",
+  "image_sha256": "2c22298959ef70fa192b405ea1fcb3c4e069901224ea27f37c4a87ce384e0e27",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 116.50677339202957,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1649,
+        30,
+        1892,
+        103
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1649.0,
+          30.0
+        ],
+        [
+          1892.0,
+          30.0
+        ],
+        [
+          1892.0,
+          103.0
+        ],
+        [
+          1649.0,
+          103.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "号",
+      "block_bbox": [
+        167,
+        109,
+        254,
+        192
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          167.0,
+          109.0
+        ],
+        [
+          254.0,
+          109.0
+        ],
+        [
+          254.0,
+          192.0
+        ],
+        [
+          167.0,
+          192.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "1. 关闭视频后请回忆刚刚讲解的知识点，看能回忆出多少？基于 studytest 理论。吸收效率更高。",
+      "block_bbox": [
+        161,
+        233,
+        719,
+        457
+      ],
+      "block_id": 2,
+      "block_order": 2,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          161.0,
+          233.0
+        ],
+        [
+          719.0,
+          233.0
+        ],
+        [
+          719.0,
+          457.0
+        ],
+        [
+          161.0,
+          457.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1166,
+        296,
+        1842,
+        1078
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1166.0,
+          296.0
+        ],
+        [
+          1842.0,
+          296.0
+        ],
+        [
+          1842.0,
+          1078.0
+        ],
+        [
+          1166.0,
+          1078.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "bilibili",
+      "block_bbox": [
+        1730,
+        23,
+        1900,
+        112
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "15",
+      "block_bbox": [
+        158,
+        101,
+        265,
+        202
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1730,
+        23,
+        1900,
+        112
+      ],
+      "ppocr_candidate": "bibili",
+      "recovered_text": "bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        158,
+        101,
+        265,
+        202
+      ],
+      "ppocr_candidate": "5",
+      "recovered_text": "15",
+      "source_crop": "repairs/region_002/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "engine": "transformers",
+  "device": "cpu",
+  "dtype": "float32",
+  "verification": "machine_extracted_unverified"
+}

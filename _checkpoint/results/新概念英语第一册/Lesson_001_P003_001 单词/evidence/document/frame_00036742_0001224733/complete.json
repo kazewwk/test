@@ -1,0 +1,171 @@
+{
+  "artifacts": {
+    "1793158374_3989.md": "a5f79ab178119f57e615f9f2bf96ce7e7e9861971656e13c01761e15d72c148f",
+    "1793158374_3989_res.json": "7a57feee39e0c8b89c30854582aa86ffb2bdbe4f9f93e620d5a07364027cc098",
+    "imgs/img_in_header_image_box_1649_30_1891_103.jpg": "7316f3993ce5bebf3439e7954379f4de358ad2ac2eca2964314a2a2eacc8acd0",
+    "imgs/img_in_image_box_1175_295_1826_1078.jpg": "82b7cb0d1a6f3267e68a013f1cdfae7298f1a7489ad722df8da2918ba8804df0",
+    "region_repairs.md": "43b09ac87c9916e0b824bb96aabb8d36ca12aebd086e009da575c53bd697bda6",
+    "repairs/region_005/1793158386_3209.md": "982ff95f72ea0a44e9fbc48ab9945505200560d4620f94ba58a54141e2cb18ee",
+    "repairs/region_005/1793158386_3209_res.json": "c69abae01304c8fcb00313251382c545066e9b2934659d2da1a872d4e4512b71",
+    "repairs/region_005/source.png": "3e5cde96f5adc46cc1532feb4a59757d0ee305f04619c8df72b477b09190afbe"
+  },
+  "input_fingerprint": "256671f43582091acb1bf549931d824030c5f31c4de054cd50b5fc9de719c183",
+  "image_sha256": "035c4cc0a4c61f0a66aefce581a4c0d3a38a3e5860da3511faa8b62c9ff75dd2",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 104.19939334498486,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1649,
+        30,
+        1891,
+        103
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1649.0,
+          30.0
+        ],
+        [
+          1891.0,
+          30.0
+        ],
+        [
+          1891.0,
+          103.0
+        ],
+        [
+          1649.0,
+          103.0
+        ]
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "号",
+      "block_bbox": [
+        167,
+        109,
+        254,
+        192
+      ],
+      "block_id": 1,
+      "block_order": 1,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          166.0,
+          109.0
+        ],
+        [
+          252.0,
+          109.0
+        ],
+        [
+          252.0,
+          190.0
+        ],
+        [
+          166.0,
+          190.0
+        ]
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "1. 关闭视频后请回忆刚刚讲解的知识点，看能回忆出多少？基于 studytest 理论。吸收效率更高。",
+      "block_bbox": [
+        161,
+        233,
+        719,
+        457
+      ],
+      "block_id": 2,
+      "block_order": 2,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          161.0,
+          233.0
+        ],
+        [
+          719.0,
+          233.0
+        ],
+        [
+          719.0,
+          457.0
+        ],
+        [
+          161.0,
+          457.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1175,
+        295,
+        1826,
+        1078
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1175.0,
+          295.0
+        ],
+        [
+          1826.0,
+          295.0
+        ],
+        [
+          1826.0,
+          1078.0
+        ],
+        [
+          1175.0,
+          1078.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "忆出多少？基于 study-test",
+      "block_bbox": [
+        237,
+        339,
+        722,
+        405
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        237,
+        339,
+        722,
+        405
+      ],
+      "ppocr_candidate": "忆出多少？基于studytet",
+      "recovered_text": "忆出多少？基于 study-test",
+      "source_crop": "repairs/region_005/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "engine": "transformers",
+  "device": "cpu",
+  "dtype": "float32",
+  "verification": "machine_extracted_unverified"
+}
