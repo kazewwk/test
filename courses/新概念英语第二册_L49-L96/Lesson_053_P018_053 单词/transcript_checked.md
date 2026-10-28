@@ -1,0 +1,220 @@
+# 053 单词
+
+快速模式：仅按词时间去除重叠，未经第二模型或人工校对。
+
+## 00:00:00–00:00:30
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we are going to learn New Concept English Book Two Lesson Fifty Three Words. 那老习惯，进入正式课程之前，咱们看几个小的问题啊。首先，如何表达电线？接下来呢，如何表达解决问题？最后一个叫做如何表达，仍然是个谜。OK，那带着这三个问题，后边呢，Enjoy. 好，那我们
+
+## 00:00:30–00:01:00
+
+先看前两个单词啊，我把这两个单词放到一起去讲了。第一个叫做 hot，那也可以读成 hot，对吧？英式发音、美式发音都可以啊，都我们都要去学 hot or hot，OK。然后呢，它其实我们原来最熟悉的它的意思叫做热，对吧？现在夏天到了，那我们说 hot 啊，OK。然后呢，后边这个单词呢叫做 wire，wire 其实是线啊，比如说各种各样的电线啊、铁丝线都可
+
+## 00:01:00–00:01:30
+
+以叫做 wire。那为什么我把 hot 跟 wire 放到一起了呢？这个要看咱们本课的标题了，对吧？ Hot snake。它这里面的 hot 其实有几个呃有点双关的感觉，对吧？这个蛇如果各位看了文章，提前预习了的话，您可能知道被电熟了就很烫，对吧？很热。其次呢， hot 还有一个不是很常见的用法，表示的叫带电的啊。那 hot wire 啊，各位看这个给各位找的这个图，对吧？就指的是这
+
+## 00:01:30–00:02:00
+
+样带电的这种电线，对不对？OK，那其实它并不是特别常用，比它更常用的是这两个单词，叫 electrical or electric。啊，原文给的叫做 electric wire。这 electric 这个单词还是咱们新一二十五课学的单词呢，对吧？那 electrical 就是它的形容词啊， electrical wire 和 electric wire 都可以。我们如果现在想拿它们去造句，那你看，其实不管是
+
+## 00:02:00–00:02:30
+
+hot wire、 electrical wire 还是 electric wire，它的核心都是名词。于是，其实就涉及到了这个地方，叫我们单词造句的时候要结合其他的单词加词性，对不对？也就是说，我们接下来要找的是各种各样的动词。这个地方呢，我专门留一个家庭作业。我总说让各位去找，然后每次我都给各位把找好的放到这儿。你可能从来也没有动手自己去找过啊。所以今天呢，我们我不造句了啊，我专
+
+## 00:02:30–00:03:00
+
+门的留到这个地方，当做各位的家作业啊。各位怎么去找？不要拿不不好的一个思路是，你先去想汉语，然后想哪个汉语经常跟它去连，或者说不那么好，对吧？然后你去查一下这个汉语的英文单词，很可能那个英文单词和它不一定能连起来用。但有一些特别简单的，比如说 buy 啊，是很可能是能连起来用。比如说你汉语想是买，对吧？英文是 buy 啊，很可能是能连起来用的。但
+
+## 00:03:00–00:03:30
+
+是这样错误率特别高。我们呢，其实现在单词造句的时候有一个非常重要的思路，就是连着之前我们学过的，对吧？所以那您就往前翻，往新概念二册前五十二课，对吧？以及整个新一那本书，你去翻着找，看哪些动词，对不对？以及哪些哎，以动词为主的习惯用法能和它连起来，对吧？比如说 needn't have bought，我印象当中这是我们四十一课学的，
+
+## 00:03:30–00:04:00
+
+本不必买，哎，是不是就可以跟它连起来，对吧？所以这算是咱们一个小的家庭作业，不多说了啊。好，下一个单词很有意思啊，Superman啊，Spiderman对吧？啊，这个Batman都是各种超人啊。然后呢，Fireman他不是指的是火超人了，是吧？他指的是什么呢？就是我们图中的这个消防员，叫做Fire，再加上一个Man。但是呢，这个是很有意思的啊。这个实际上在美国的文化当中啊，
+
+## 00:04:00–00:04:30
+
+比如说如果你有机会去看一些美剧，你重点去看，比如说《欲望都市》Sex and City，对吧？哎，我印象当中特别深，里面就会去解释，就会把 Fireman，他们是很崇拜 Fireman，尤其女性啊， Fireman浑身大肌肉块又很帅，对吧？哎，他们很崇拜这些人，很愿意和这些人去 date，所谓的叫约会啊，这很有意思，它的构词法也很好玩，对吧？火人啊，然后又像超人的那些构词法一样， Fireman，消防
+
+## 00:04:30–00:05:00
+
+员。那它的复数啊，这地方简单提一句，就是我们在文章当中也会见到，就是把a这个字母变成e啊，跟man人man或者男人变复数的方式是一样的。它本身是个名词，是一个职业，跟我们原来学过的什么captain对吧，detective这都是第一单元咱们就学过的单词了，本质上没什么太大区别。所以拿它去造句还是比较容易的。比如说，Why is that fireman out
+
+## 00:05:00–00:05:30
+
+of breath?啊，他为什么上气不接下气的呢？四十四课咱们学的习惯用法，我把这两个两句话正好一问一答结合到了一起，叫做That fireman has been running，说那个消防员之前一直在跑步。注意，在说话的这一刻，他其实已经不跑步了。这是五十二课咱们刚刚学过的语法，现在完成进行时，对吧？哎，第一个用法，过去一直在进行，然后呢，结束了，对现
+
+## 00:05:30–00:06:00
+
+在产生了一个影响，对不对？哎，他之前一直在跑步，现在他不跑了，并且他现在上气不接下气。再读一遍这个单词，fireman. Okay,好，我们再造一个句子，叫做We can help that fireman to get his room in order.啊，get this room in order.啊，读错了this啊. Okay,那注意这个地方，其实用了两个习惯用法，help somebody to do something，帮助某人做某事儿，和get something in order，把什么什
+
+## 00:06:00–00:06:30
+
+么整理好，对吧？OK，这是五十二课刚刚用到的两个习惯用法，学过的两个习惯用法。Continue, next one，下一个单词跟我读一下，叫做cause, cause. OK, very good.本课呢，它其实既出现了动词的用法，又出现了名词的用法。它的动词指的是引发、引起、导致；它的名词有点像reason啊，就是原因啊。OK，那我们造句，比如说
+
+## 00:06:30–00:07:00
+
+文章的标题啊的下面给了一句话叫 What caused the fire? Okay,说什么引起了这场火灾呢? Okay, very good. 接下来原文给了一句话叫做 Forest fires are often caused by broken glass. 我们就截了一部分，对吧？说森林大火经常是被什么引起的呢？被破碎的这个玻璃啊，这个咱们小的时候学过，我不知道各位有没有印象，拿放大镜，很
+
+## 00:07:00–00:07:30
+
+小很小的时候拿放大镜，对吧？哎，去点火啊，由太阳去用放大镜点火，其实跟这个思路是一样的啊。OK，好，那我们把它变一般疑问句，叫做 Are forest fires often caused by broken glass？OK，接下来变成各种特殊疑问句，要么您暂停屏幕，对吧？要么您课下的时候去把它写出来，要么是口语练习，要么写作练习，您自己决定。反正这个家庭作业是您自己的，对吧？
+
+## 00:07:30–00:08:00
+
+接下来，呃，如果哎这里叫做引起导致，这是个动词，明显能看出来是被动，对不对？好，然后如果你把它当做名词呢，就是说这个原因，对吧？OK，那你前面就要加动词。原文给了一个还不错的动词，叫做 discover，对吧？叫做发现。比如说，呃，fireman discovered the cause yesterday。哎，一个消防员昨天发现了这个原因啊。OK，
+
+## 00:08:00–00:08:30
+
+那你注意，我们其实单词造句还有一个思路，就是结合之前刚刚学过的单词，拿它一块儿去造句，对不对？好，然后四句型转换我们就不再多说了啊。再读一遍这个单词，cause，OK，continue，下一个单词跟我读一下，叫做，ex，examine，examine，examine。好，examine首先是一个动词的意思，它指的是检查啊。然后呢，你想，那动
+
+## 00:08:30–00:09:00
+
+词往往肯定是跟名词连到一起嘛，对不对？好，那 examine 都可以和，比如说都可以用来表示检查什么呢？我可以说检查这个房间啊，没有问题。你看五十五课，我们很快就会见到这个用法啊，检查一个洞，山洞啊。其次呢，我说医生对你做检查也可以用 examine。像这个图里面呢，比如说你自己养了一个猫，像我们这样养猫了，然后你可以拿着猫猫，对吧？去医生那个地方，每年让医生
+
+## 00:09:00–00:09:30
+
+给这个猫猫去做一个身体上类似于体检上的事情，也叫做 examine 检查啊，它是动词。我们造个句子，比如说，The police emptied her bag.你看，这都是新意的单词，对吧？And examined the contents. Contents实际上就是我们四十四课学的一个单词，叫 the contents of the bag.我们四十四课学的是这个短语，对吧？好，那 contents 就是内容啊，这个包里面的内容。好，你看，这就是警察把
+
+## 00:09:30–00:10:00
+
+他的包倒倒空了，然后检查里面的内容东西，对不对？好，next one，原文呢，我们没有。你看，我现在又给它变得稍微活了一点点。原来我们是直接在原文当中把整个句子摘出来。今天我们会出现更多像这样的事情，叫做你既然告诉我 examine 要加名词，我看一下原文的 examine 加的是什么名词，加的是 ground，叫做地面。好，那我就自己造一个句子，叫做 this
+
+## 00:10:00–00:10:30
+
+fireman examined the ground last night. 说他昨晚检查了这个地面，很好的一个肯定句，对吧？你看啊，examine the ground，其实我上面原文已经给您了，这是我们从原文摘抄出来的。至于主语是谁，时间是什么，您自己决定。你说我不想用 last night，我想用 last year，我想用呃 yesterday morning，都可以。这样的肯定句造出来，四句型转换就是咱逃脱不了的事儿了，对吧？比如说我
+
+## 00:10:30–00:11:00
+
+们现在张嘴，各位可以做一下听力练习。当然，这个看着也可以，没有问题啊。您不看了也行。比如说，Did this fireman examine the ground last night? When did this fireman examine the ground? Why did the fireman this fireman examine the ground last night? 对吧？你看，叫张嘴就来，各位要练到这个地步啊。Continue，我们结合图，再结合第六课咱学过的一个习惯用法，造一个句子。Your cat's
+
+## 00:11:00–00:11:30
+
+teeth must be examined once a year.说叫做你这个猫猫的牙齿啊，这个很简单对吧？猫猫的牙齿 must be examined，必须要被检查。二十一课学过的语法，once a year。第六课乞丐那一课我们学过的叫做 once a month，对吧？哎，我们把它变成叫 once a year， once a month 一个月一次，
+
+## 00:11:30–00:12:00
+
+Once a year,一年一次。Continue,接下来我们听几个电影片段，各位锻炼我们的听力。第一个叫May I examine you?叫做我能检查一下你吗？来了，May I examine you?好，非常快，对吧？啊，各位如果没听清，不妨哎倒过去，重新再多听几遍啊啊，包括进行跟读。Next one,下一个，读一下这个单词叫做accidentally
+
+## 00:12:00–00:12:30
+
+ah, accidentally, accidentally. Okay, that accidentally is what it means. It's called accidental, coincidental, right? Hey, accidentally, you notice it's a副词.副词在六一二三四五六当中往往做的是四这个位置。我想拿它去造句，基本上我自己必须要做出来一二三。也就是说，相对而言，我自己的灵活度还是比较大的啊。比如说，我举个例子，To make matters
+
+## 00:12:30–00:13:00
+
+worse, he accidentally rang the bell,是吧？使事情变得更糟糕的事情是他不小心的就按到了这个门铃。好，你注意，我们分别用到了五十一课和五十二课咱们学过的习惯用法，to make matters worse和ring the bell。注意一小下叫accidentally的位置。注意啊，我们按说六一二三四五六，它应该是这样去造的句子，叫做he rang the bell
+
+## 00:13:00–00:13:30
+
+对不对？好，我们在第一课就说过了，这个东西不是金科玉律，是可以被打破的，是由人们，呃，语言习惯去决定的。Accidentally，根据我的这个大量的这个语料的输入，一般来说放在两个位置比较多。第一个叫做句尾，第二个就是主谓的中间啊。一会儿我们看，是吧？好，再来一个句子叫 I cut myself accidentally。各位能看到我在
+
+## 00:13:30–00:14:00
+
+cup 底下加了个下划线。我想问的问题是，如果我让各位去造一般疑问句，这地方你是把 do 提前还是把 did 提前？那比它更深层次的一个问题叫，这里到底是一般现在时还是一般过去时？各位要自己去想，对吧？你不妨发弹幕或者留言，哎，告诉我和包括告诉其他的学员，这里到底是一个什
+
+## 00:14:00–00:14:30
+
+么时态？这个由各位前面时态学的越好，你越能理解它到底应该是个什么时态。二选一，一般现在时还是一般过去时？包括四句型转换，各位自己去处理啊。OK，接下来呢，我们听一些小的电影片段，好吧？注意力集中来了。No, I mean yes, I I saw that guy accidentally. 好，各位能看到这里的 accidentally 就放到了最
+
+## 00:14:30–00:15:00
+
+后，叫 I saw that guy accidentally，对吧？完全可以变成叫 I accidentally saw that guy。那有一些，比如说比较较真的学员，学习很认真的学员，可能就问了，那我为什么这句话没有把 accidentally，他为什么没有放到 I 跟 saw 中间呢？因为他就没想到，对吧？他就其实同理，当他如果把 accidentally 放到 I 跟 saw 中间的时候呢，你又会问另一个问题，accidentally 为什么没有放到句尾，对吧？好，都
+
+## 00:15:00–00:15:30
+
+可以啊，都可以。Continue，下一个叫 I accidentally sent an email to the wrong person。好，注意力集中来了。I accidentally sent an email to the wrong person。好，他的语速一定是比我快的啊。我故意没有说那么快，就是为了让你听清楚。那你要慢慢跟上他的语速，你就要把你的语速提升到他的那个水平，对吧？哎，多听几遍，多跟读几遍。好，下一个，看这个单词，跟我一起读一下，叫做
+
+## 00:15:30–00:16:00
+
+remains remains。好，remain。如果把 s 那个字母去掉，动词各位特别熟悉，对吧？哎，新一的六十三课、六十五课，我们多少都见过，叫 remain in bed，对吧？哎，保持停留在这个床上待着，对吧？他那个 have a bad cold，嘛，对吧？啊，那课他感冒了。那注意在这里的 remains remain 这个单词加了 s 之后变成了名词，或者说你不用去管它，它
+
+## 00:16:00–00:16:30
+
+就是 remains 这个单词啊，跟 remain 你当没有关系，好吧？ remains 它指的是残骸、遗骸，它可以指的是人、动物啊，这个植物的尸体啊，然后呢变成那样骨头啊这样的残骸、遗骸，也可以指的是比如说一个城市，呃，一栋楼啊，然后的残骸、遗骸也可以叫 remains， OK，留下的那些剩余的部分。原文呢给了我们一个
+
+## 00:16:30–00:17:00
+
+小的短语叫 the remains of a snake，叫做一个蛇的尸体或者蛇的残骸。那你看它其实本质上是一个名词短语嘛，你就要去找各种动词跟它去做一个配合。我们造句子啊，比如说 she accidentally glanced at the remains of a snake. Glance at 四十九课学的，扫到了，对不对？好，然后你看我们在这造句的
+
+## 00:17:00–00:17:30
+
+时候，又把刚刚学过的 accidentally 立刻就连到一起，这也是各位造句的一个思路，对吧？然后包括你说 she 我不用 she 了，我用 the fireman 行不行？当然可以了啊， the firewoman，对吧？ Okay，啊， firewoman 好像还真的不是特别多啊。 Next one，说 she gazed at the remains of a snake， gazed at 五十二课学的，对吧？盯着看。接下来说， Can you help me to move the remains of a snake or
+
+## 00:17:30–00:18:00
+
+this snake,都可以啊。我只是在这选了 a snake. Help somebody to do something. Move,移动，好吧。再读一遍这个单词。Remains，在这儿各位学到的一个小的思路叫什么呢？叫做其实我从原文不一定非要摘整个句子出来，我可以摘一部分，没有问题啊。Continue下一个单词啊，读一下叫做 vote 啊 vote。为什么配了这个 Pikachu 是吧？皮这个皮卡丘
+
+## 00:18:00–00:18:30
+
+的那个图呢？Volt不就是这个呃十万伏特是吧？就是这个福特叫做Volt这个单词一般不太用于造句啊。我拿它去造句的时候，其实也想了一些。然后呢，我突然间想到了一个各位可能还真的有点用的一个东西，叫I want to buy a啊two to old啊或者two hundred and twenty volt transformer。如果你出出国旅游过，你一定知道，你其实要买那个呃外接口。
+
+## 00:18:30–00:19:00
+
+我也不知道它的这个汉语名字应该叫什么。就是你比如说你去欧洲旅游或者去日本旅游，他们的那个呃电伏啊电压跟咱们是不一样的。我们要买那个转接头，对吧？然后我们才可以把我们国内买的这些东西啊到那儿才能充电啊。这个东西叫做transformer，是吧？哎，我想买这么一个东西。好，这一般你是在国内买的，一般你可能不是去国外买啊。当然国外也有卖的啊。好，四极型转换，咱们就顺便练一下这个单词，
+
+## 00:19:00–00:19:30
+
+再跟我读一下，叫做 vote vote 啊啊 Why do you want to buy a two hundred twenty volt transformer? Very good. 好，下一个单词其实是两个单词放到一起了。第一个单词叫做 power power，其实有能量、力量的意思。那 line 是什么意思呢？叫做线 power line 电线，对吧？ Power line 好，来，比如说，呃，原文给了这样一个小的短语叫做
+
+## 00:19:30–00:20:00
+
+electric wires of a sixteen thousand volt power line啊，这样的高压电线。好，好，比如说我们可以这样说，叫 Don't touch the power line，好吧？也可以怎么说，叫 Stay away from the power line。这个都是口语当中比较常见的一些小的起始句。那我们想给它造个句子，我们就用到五十一课学的一个习惯用法吧，硬硬的复习一下，叫做 forbid somebody to do something，
+
+## 00:20:00–00:20:30
+
+禁止某人去做某事儿。咱给它变成被动。We are forbidden to walk near the power line.说我们被禁止走进这个power line啊，输电线，对吧？OK，玩一个，再读一遍power line。OK，好。接下来下一个小单词默读一下，叫做solve solve，叫做解决。那一说解决，你是不是就想到了问题，
+
+## 00:20:30–00:21:00
+
+对吧？还真是英文跟汉语在这儿是一样的，都是解决问题，叫做 solve the problem，或者 solve the mystery。 mystery 是下一个单词啊，叫做这个谜啊，解解谜啊，也可以用。那我们先说 problem。好，比如说 in the end he was able to solve that problem. In the end，第一课学的叫最后，那 was able to 四十三课咱们学的叫做能，对吧？说最后呢，他能
+
+## 00:21:00–00:21:30
+
+成功的解决了那个问题。那was able to如果用在具体事件当中，表示的是成功的啊，successfully. Okay.再接下来，so we are trying to solve the problem here.说我们正在尝试去解决这个问题。您看，这既是我用第七课try to do something造的句子，也是口语当中非常常用的一个小的句子，是吧？一会儿我们就能听到啊。好，接下来
+
+## 00:21:30–00:22:00
+
+电影片段第一个叫做 Well, I'm here to help you solve that problem. 说我在这里就是为了帮助你去解决那个问题的。来了啊， Well, I'm here to help you solve that problem. 啊， I'm here to help you solve that problem. Next one, 说 All you can do in life is to try to solve the problem in front of you. 说你在你这个生命当中能做的所有事情就是尝试
+
+## 00:22:00–00:22:30
+
+着去解决出现在你面前的那些问题 in front of you，对吧？注意力集中，听一下。 All you can do in life is try to solve the problem in front of you. Okay，好，第三个叫 we're trying to solve the problem here， Bill. I believe. Okay， where are you? We're trying to solve the problem here, Bill. 好，还是啊，如果刚才那些他的语速肯定比我要快很多。您第一遍乍一听没跟上，反过去再听，多多听几遍，好吧？下
+
+## 00:22:30–00:23:00
+
+一个单词看一下，叫做 mystery， mystery 啊，谜啊，谜啊，就是这个谜底的那个谜啊，谜案的这个谜。比如说跟这个名词经常连到一起，我们去查一下语料库，会发现有两个小的动词经常跟它连到一起。第一个叫做 solve，第二个叫做 remain。好，那 solve 叫解决，刚才我们已经提到了 solve the problem，对吧？是这课刚学的。remain 呢，其实是我们之前很
+
+## 00:23:00–00:23:30
+
+久以前就学过的一个单词。今天又见到了跟它类似的remains，对吧？OK，叫做残骸、遗骸。Remain a mystery是什么意思呢？一会儿我们已经见到啊。比如说啊，这是我找了个电影片段啊，他给的一个台词叫“What happened next remains a mystery.”好，接下来发生的那件事情remains a mystery是什么意思呢？叫做到现在为止啊，它仍然
+
+## 00:23:30–00:24:00
+
+是一个谜啊，就是我们在最开始问大家三个问题的第三个问题，叫做仍然是一个谜啊，仍然保持的是一个谜题的这样的状态。OK，我们造句子。To make matters worse，又复习了一遍刚刚学过的五十二课，对吧？哎，使事情变得更糟糕的事情呢，叫做The fireman couldn't solve the mystery，他没有办法解决这个问题。你看，咱们在这里用到了全
+
+## 00:24:00–00:24:30
+
+是之前刚刚学过的单词，是不是？好，呃，下一个单词读一下，叫做 snatch，snatch，啊，就各位看这个图，这个鸟把这个蛇啊，水蛇从水里边抓起来的这个过程啊，就叫做 snatch 这个动作 snatch，OK，我们造句子，说 the bird snatched the snake from the sea，啊，说这个鸟啊抓起了这个蛇从海里面，
+
+## 00:24:30–00:25:00
+
+四句型转化一定逃不了，对吧？好，再来，比如说 she snatched an apple and ran out of the house，说她抓了一个苹果，然后就跑出了这个房子。OK，那儿一个下一个单词，别忘了浊化，不是 spark 啊，读一下叫做 spark spark 火花啊，火花。好，比如说 a cigarette spark started the forest fire，说一个烟火
+
+## 00:25:00–00:25:30
+
+花啊，然后引起了这场森林大火。这是我直接给各位的肯定句。您把它在做四句型转换，spark，你就至少练了一二三四四次，对吧？哎，基本就达标了。原文呢给了一句话叫做 It sent sparks down to the ground。这个 send 特别像四十九课咱们学的那个 send。原来咱们学的 send 就是类似于刚才咱们刚刚看到电影
+
+## 00:25:30–00:26:00
+
+那个对吧？发送寄送啊，把这个邮件寄错人了啊，发送寄送。而这个地方的 send 呢，哎，稍有不同，但非常像四十九课说这个 send bed off the roof 对吧？把这个一阵风啊，把这个床从呃屋顶上面给送下去了对吧？OK 好，四字形转换对吧？这是我们原文摘抄再加变的一个造句方式，好吧？啊，再读一遍这个单词
+
+## 00:26:00–00:26:30
+
+叫做 spark，玩一个 recap。本课除了单词以外，我们加到了这些小的短语也好，习惯用法也好，各位一定要记得去造句啊。加上作业，单词造句，反复听这些电影片段，然后呢，看置顶留言，可以找到帮助各位进行重复间隔练习的这些文章。好吧，好，那以上呢就是本期视频的全部内容了。如果
+
+## 00:26:30–00:26:51
+
+各位喜欢我们的课程呢，欢迎各位关注、订阅、一键三连啊，分享给更多的朋友，来帮助我们快速成长。See you next time.
+
