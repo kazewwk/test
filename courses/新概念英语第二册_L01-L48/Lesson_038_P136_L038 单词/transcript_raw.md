@@ -1,0 +1,96 @@
+# L038 单词
+
+Qwen 原始分段（含两秒重叠上下文），未经人工校对。
+
+## 00:00:00–00:00:32
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we are going to learn New Concept English Book Two Lesson Thirty Eight Words. 那老习惯进入正式课程之前呢，我先问大家几个小的问题啊。首先，如何表达抱怨啊？接下来呢，如何表达刺骨的冷？OK，那带着这两个问题，Hope you can enjoy it. 好的，我们先看第一个小的单词，看音标，跟一起读一下，叫做 egg。
+
+## 00:00:28–00:01:02
+
+先看第一个小的单词，看音标，跟我一起读一下，叫做 except， except， OK， very good。那你注意啊，你看我们看这个图，这个标志叫做 no dogs except guide dogs， OK，那它什么意思呢？就是说狗不能进入，除了什么样的狗呢？ Guide dogs，导盲导盲犬，对吧？除了这样的狗，呃，其他所有的狗都不可以进入啊。所以这个 except 就是除了的意思啊。这个单词各位要记住。比如说， we work every day。
+
+## 00:00:58–00:01:32
+
+啊，这个单词各位要记住。比如说，we work every day except Sunday. 啊，除了周日，我们每天都工作。再接下来呢，我们可以把这句话变成四句型转换。啊，再然后我们还可以造一句话叫做 There was no one else in the room except myself. 啊，你像 except 这种单词，它不是一个特别重要的动词或者名词啊，甚至它不是一个特别重要的形容词或者副词这样的东西。所以大部分情况下呢，这个单词对于各位来说其实不。
+
+## 00:01:28–00:02:02
+
+所以大部分情况下呢，这个单词对于各位来说其实不需要你主动去造句，你只要在文章当中见到它，多见啊，你只要保证你多读多学，见多了，慢慢这个单词就记下来了。也就是说，我们在这地方简单说一下，我们去背单词的时候，可以有一些单词是主动去记忆的，比如说非常重要的各种动词，有一些单词呢，像except这样的单词，我就会告诉各位，你被动去记忆就完全足够了啊，就所谓被动记忆就是多见啊。
+
+## 00:01:58–00:02:32
+
+全句够了啊，就所谓被动记忆就是多见啊。OK，下一个单词我们不去造句，各位要注意一个小点。我们看一下这个图啊，这边是欧洲，这边是非洲，欧洲和非洲的中间有一片海，我们管它叫地中海，对吧？这个单词的英文就长成这个样子，非常非常的长。我们一起来看着音标读一下，叫做Mediterranean，来合起来读Mediterranean，Medit。
+
+## 00:02:28–00:03:02
+
+来合起来读 Mediterranean Mediterranean OK 好这个地方呢，我们就要把音标跟自然拼读法则尝试连到一起。为什么？我们先读一下啊，Medita。其实这三个音节读出来了之后，M这个字母，对吧？D这个字母，T这个字母，基本上就出来了。也就是说辅音字母基本上是可以确定的。然后ra二肯定出来了，ne。
+
+## 00:02:58–00:03:32
+
+确定的，然后 ray 二肯定出来了，念 n 和最后的 n 肯定就出来了，对吧？ OK，所以叫 Mediterranean 这个单词对于各位来说去拼写其实是比较相对来说可能是困难的，但是实际上你见到它知道它是什么含义，怎么去读应该是比较容易的啊。这个单词格外的长，也比较有特色。那这个对于我们大家来说背单词的时候，音标跟自然拼读法则，这实际上是我们新一啊，我们在讲新一的时候说了无数遍的一个东西，然后包括专。
+
+## 00:03:28–00:04:02
+
+讲新一的时候说了无数遍的一个东西，然后包括专门给大家录了四个视频，讲的就是音标和自然拼读法则，各位不妨去看一下啊。再跟我读一遍这个单词，叫做 Mediterranean。 OK，玩一个。下一个单词跟我一起读一下，叫做 complain。 Complain 啊，它就是抱怨的意思。那如果我们想说抱怨某件事情，叫 complain about something。 OK，比如说 It is easy for them to complain about the weather。 说对于他们来说，去抱怨这个天气是很容易的一件事情啊，经常抱怨，对吧？好。
+
+## 00:03:58–00:04:32
+
+天气是很容易的一件事情啊，经常抱怨，对吧？好，我们还可以用之前学的习惯用法，叫做 She is keen on complaining about the neighbor，是吧？她很热衷于抱怨她的邻居。如果各位读过《哈利波特》或看过《哈利波特》这个系列的话，那你应该就记得啊，《哈利波特》的姑妈就是这样的一个人，热衷于吐槽他的邻居，是吧？抱怨他的邻居啊。 Okay， next one， the man who complained about the hotel room lost his wallet this morning.
+
+## 00:04:28–00:05:02
+
+About the hotel room, lost his wallet this morning.好，我们就结合了其实之前学过的一个语法叫做定语从句，对吧？抱怨这个酒店房间的这名男士今天早上把他的钱包给丢了。OK, very good.好，那接下来呢，我们看一个小电影片段。这个电影片段当中出现了叫做complain about it all the time啊，叫做一直在抱怨这件事情。注意力集中来了。
+
+## 00:04:58–00:05:32
+
+抱怨这件事情，注意力集中来了。 My wife used to say I'm a hard man to know, like a closed book. Complained about it all the time. She was beautiful. God, I loved her. 好，注意啊，你看这个男主他第一句话说的叫做 used to say，好，过去常常说，代表现在不说了，对吧？啊，那在这个电影当中就是。
+
+## 00:05:28–00:06:02
+
+现在不说了，对吧？啊，那在这个电影当中，就是他的老婆已经没了啊，人已经去世了，对吧？OK，啊，呃，那这个地方另一个点叫做 complain about，是我们刚刚学过的这个习惯用法，抱怨这件事情，抱怨的是呃， I I am like a closed book，是吧？就像一个关闭的书一样，读不懂我到底在想什么，叫做抱怨这件事情，叫 complain about it all the time。OK，好，那下一个单词跟我一起看音标，叫做 continually，来 continue。
+
+## 00:05:58–00:06:32
+
+标叫做 continually，来 continually 叫做持续不断的 continually，OK。比如说，我们造造一个句子叫做 The baby cried continually last night. 好了，注意一个小点，continually 虽然表示持续不断的啊，持续的，但它并不是表示说一秒钟都不断啊，它表示的往往是断断续续的。比如说，我们说小孩啊，大部分晚上可能是一两个小时，假设醒一次，饿醒了还想吃，想。
+
+## 00:06:28–00:07:02
+
+是一两个小时，假设醒一次，饿醒了，想吃，想吃，想吃奶，对吧？那它可能是断断续续的，但是呢，哭了一晚上，对吧？比如说，呃，这个隔两每假设啊，每隔两个小时哭了三十哭了三十分钟，那这个就叫做 the baby cried continually last night. OK，好，注意这个点。再比如说，说 it rained continually last summer，指的并不是说去年夏天从进入夏天的第一天开始连续。
+
+## 00:06:58–00:07:32
+
+夏天从进入夏天的第一天开始，连续不断的下到了最后一天，那是不可能的，对吧？所以它指的是去年在持续不断的下雨，总在下雨，断断续续总在下雨，对吧？持续不断啊，注意这个小点。当然，我们也可以造一个非常简单的句子，叫做 It snowed continuously last winter. 所以在这个地方，其实我们可以理解为是借助了一下六一二三四五六，我们非常简单的把动词做了一些转换，对吧？然后我们把时间去做了一些转换。 Okay, there we go.
+
+## 00:07:28–00:08:02
+
+然后我们把时间去做了一些转换，OK，Very good。接下来呢，然后说did when where why这些东西啊，就是各种句型的转换。那这个就是各位现在应该非常熟悉的了。家庭作业啊，不多说了。下一个单词跟我一起读，叫做bitterly，bitterly，bitterly，bitterly，OK，Very good，bitterly，OK，好。那bitterly这个单词的意思指的是，首先它是个副词，它是刺骨地寒冷，叫做bitterly cold，bitterly cold，OK。你说very cold啊，那大。
+
+## 00:07:58–00:08:32
+
+Cold, bitterly cold. Okay,你说very cold啊，那大家大家就是一个模糊的感觉，翻译成汉语就是非常冷啊，多冷也不知道，对吧？你基本上想表达非常冷，你基本上啊表达很很冷啊，那感觉的时候，你只能表达用语气啊去表达，哎，非常冷，对吧？那你可以直接换一个词叫做bitterly cold啊，就是刺骨的冷，那别人立刻就明白了，这个比very实际上要更准确一点点啊，这个副词。那我们造个句子说，It was bitterly cold.啊，就是刺骨的冷，那别人立刻就明白了，这个比very实际上要更准确一点点啊，这个副词。那我们造个句子说，It was bitterly cold.
+
+## 00:08:28–00:09:02
+
+这个副词，那我们造个句子说 It was bitterly cold last night, 是吧？哎，去这个昨晚嘛，刺骨的寒冷啊！ It was bitterly cold. OK. 再然后，那你像这句话很简单，但我们也能做一些四句型的转换，对吧？我们可以再造一句话叫做 She looks forward to traveling to a bitterly cold city. 这是我们三十七课学过的，说她期冀于去这个特别冷的这个城市，对吧？ Looks forward to travel.
+
+## 00:08:58–00:09:32
+
+去这个特别冷的这个城市，对吧？Looks forward to traveling to a bitterly cold city. Okay, there you go.好，这是我们三十七个刚刚学的。Look forward to doing something. Okay,好下最后一个单词很简单。这其实我们新一就学过了，叫做sunshine，对吧？这单词其实也可以分开，sun叫太阳，shine叫闪耀着，对吧？动词。那sunshine就是太阳光，对吧？那我们造一个句子说，We walked in the warm sunshine.我们可以再加一个时间，比如。
+
+## 00:09:28–00:10:02
+
+Warm sunshine. We can add another time, for example, ah yesterday, right? Ah, you can add a location or something. This is OK. Ah, very, very, uh, oh, no, too big of a problem. We can add a word, for example, slowly, ah, quickly, are OK. Good. That such a, uh, this affirmative sentence, we can add it with various general questions, into various general questions and special questions, right? Well, not much to say. Ah, then, for example, her hair was like the sunshine, saying that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like the sunshine, that her hair was like
+
+## 00:09:58–00:10:32
+
+说他这个头发就像阳光一样啊，这实际上是一个呃我在电影当中看过的，但他读的实际上是一首诗，所以呢我就没有把那个电影拿出来。但是我们看这句话就很棒，说他的头发就像阳光一样啊！注意啊，它不是一个日常的表达，它是一个 poetry 是吧？是英文的一个嗯诗歌对吧？但是我们可以理解为这肯定是对他的一种夸赞，比如说要么是阳光的颜色对吧？要么是那种。
+
+## 00:10:28–00:11:02
+
+一种夸赞，比如说要么是阳光的颜色，对吧？要不是那种铺下来的感觉，就像阳光一样。OK，玩一个。那 Recap 本视频当中，对于各位来说非常重要的事情，Expression 啊，我们去学习了这样两个小的表达，第一个叫做抱怨，第二个叫刺骨地冷，对吧？那本科单词当然也很重要，所以加上作业，单词造句，老习惯啊，反复听电影片段。然后呢，以上就是本期视频的全部内容了。如果您喜欢我们的课程呢，欢迎跟
+
+## 00:10:58–00:11:21
+
+本期视频的全部内容了。如果您喜欢我们的课程呢，欢迎各位关注、订阅、一键三连，分享给那些需要的朋友，来帮助我们快速成长。See you next time.
+
