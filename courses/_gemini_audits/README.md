@@ -1,6 +1,6 @@
 # Gemini 音画片段复核
 
-每节只抽查标出的两分钟左右片段；这不是整节课的完整转写。机器可能漏字、错字或误判标记，原视频和主课程解析可用于复核。
+每节只抽查标出的两分钟左右片段；这不是整节课的完整转写。机器可能漏字、错字、误判标记或生成超出片段时长的时间码，原视频和主课程解析可用于复核。
 
 | 系列 | 课程 | 原视频时间 | Gemini 复核 | 主课程 |
 |---|---|---|---|---|
@@ -13,6 +13,12 @@
 | 新概念英语第二册_L01-L48 | L007 单词 | 00:07:38–00:09:38 | [阅读](1RcEKM6TW1hx9WtKZH567CPQAB7Ao0pKA.md) · [数据](1RcEKM6TW1hx9WtKZH567CPQAB7Ao0pKA.json) | [课程](../%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%86%8C_L01-L48/Lesson_007_P024_L007%20%E5%8D%95%E8%AF%8D/lecture_full.md) |
 | 新概念英语第二册_L01-L48 | L008 单词 | 00:06:32–00:08:32 | [阅读](1hetXZEYjZ36X_yZFdmwAgwXfP6ATElBI.md) · [数据](1hetXZEYjZ36X_yZFdmwAgwXfP6ATElBI.json) | [课程](../%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%86%8C_L01-L48/Lesson_008_P028_L008%20%E5%8D%95%E8%AF%8D/lecture_full.md) |
 | 新概念英语第二册_L01-L48 | L009 单词 | 00:06:07–00:08:07 | [阅读](14Skv0ifCi976jUWyB6vTKG7_7MgtvL4j.md) · [数据](14Skv0ifCi976jUWyB6vTKG7_7MgtvL4j.json) | [课程](../%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%86%8C_L01-L48/Lesson_009_P032_L009%20%E5%8D%95%E8%AF%8D/lecture_full.md) |
+| 新概念英语第二册_L01-L48 | L009 文章 | 00:08:26–00:10:26 | [阅读](1ZvCzPgtOJaHKAaFtT6i6Qoudjy5BqQEF.md) · [数据](1ZvCzPgtOJaHKAaFtT6i6Qoudjy5BqQEF.json) | [课程](../%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%86%8C_L01-L48/Lesson_009_P034_L009%20%E6%96%87%E7%AB%A0/lecture_full.md) |
 | 新概念英语第二册_L01-L48 | L010 单词 | 00:07:53–00:09:53 | [阅读](170rsaOmOTtIPkJ2yK9Yuy3rr6YHqS-Qu.md) · [数据](170rsaOmOTtIPkJ2yK9Yuy3rr6YHqS-Qu.json) | [课程](../%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%86%8C_L01-L48/Lesson_010_P036_L010%20%E5%8D%95%E8%AF%8D/lecture_full.md) |
 | 新概念英语第二册_L01-L48 | L010 文章 | 00:04:06–00:06:06 | [阅读](1ZoWWeBrLHeUmqz47PsYBY7zKXlcZwUJ2.md) · [数据](1ZoWWeBrLHeUmqz47PsYBY7zKXlcZwUJ2.json) | [课程](../%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%86%8C_L01-L48/Lesson_010_P038_L010%20%E6%96%87%E7%AB%A0/lecture_full.md) |
 | 新概念英语第二册_L01-L48 | L011 单词 | 00:06:15–00:08:15 | [阅读](1YoKHa328qLI6vSGDwcylX9_bVNziknc_.md) · [数据](1YoKHa328qLI6vSGDwcylX9_bVNziknc_.json) | [课程](../%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%86%8C_L01-L48/Lesson_011_P040_L011%20%E5%8D%95%E8%AF%8D/lecture_full.md) |
+| 新概念英语第二册_L01-L48 | L011 听说读写复述练习 | 00:03:56–00:05:56 | [阅读](1x2oiv6qNN5DsZAsPFfBXu-0v1V8NshtD.md) · [数据](1x2oiv6qNN5DsZAsPFfBXu-0v1V8NshtD.json) | [课程](../%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%86%8C_L01-L48/Lesson_011_P042_L011%20%E5%90%AC%E8%AF%B4%E8%AF%BB%E5%86%99%E5%A4%8D%E8%BF%B0%E7%BB%83%E4%B9%A0/lecture_full.md) |
+| 新概念英语第二册_L01-L48 | L012 语法 | 00:07:40–00:09:40 | [阅读](1QfSbiulQd_qF1Ps8HE4tOuGEGdBo0kbv.md) · [数据](1QfSbiulQd_qF1Ps8HE4tOuGEGdBo0kbv.json) | [课程](../%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%86%8C_L01-L48/Lesson_012_P044_L012%20%E8%AF%AD%E6%B3%95/lecture_full.md) |
+| 新概念英语第二册_L01-L48 | L012 听说读写复述练习 | 00:03:13–00:05:13 | [阅读](1p16LGRXtfyB5i5KP-lSJ-WFihz-U_fyS.md) · [数据](1p16LGRXtfyB5i5KP-lSJ-WFihz-U_fyS.json) | [课程](../%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%86%8C_L01-L48/Lesson_012_P046_L012%20%E5%90%AC%E8%AF%B4%E8%AF%BB%E5%86%99%E5%A4%8D%E8%BF%B0%E7%BB%83%E4%B9%A0/lecture_full.md) |
+| 新概念英语第二册_L01-L48 | L013 语法 | 00:06:17–00:08:17 | [阅读](1RWgY4iKys5gMwS0daugnyP-jyWzia76s.md) · [数据](1RWgY4iKys5gMwS0daugnyP-jyWzia76s.json) | [课程](../%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%86%8C_L01-L48/Lesson_013_P048_L013%20%E8%AF%AD%E6%B3%95/lecture_full.md) |
+| 新概念英语第二册_L01-L48 | L013 听说读写复述练习 | 00:04:02–00:06:02 | [阅读](1miv_jjlmPN2242aC811XksMEjjeNdw2y.md) · [数据](1miv_jjlmPN2242aC811XksMEjjeNdw2y.json) | [课程](../%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%86%8C_L01-L48/Lesson_013_P050_L013%20%E5%90%AC%E8%AF%B4%E8%AF%BB%E5%86%99%E5%A4%8D%E8%BF%B0%E7%BB%83%E4%B9%A0/lecture_full.md) |
