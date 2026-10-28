@@ -1,0 +1,166 @@
+{
+  "artifacts": {
+    "1793156789_7380.md": "49c2789d0aec6c15e1d93062acae799ee00b1f0dc646c39d7982b8c0183b53e1",
+    "1793156789_7380_res.json": "db52eedc453ebe91d437d96b1995177aa96c9eee5696314968c00f23393e8ff3",
+    "imgs/img_in_header_image_box_1652_31_1889_102.jpg": "ecbff2a51dcea44db1c83f22920c24bc43ca0e9439e221a3107c5e0950044e5b",
+    "imgs/img_in_image_box_1173_294_1813_1079.jpg": "efc9d08d9f7f1372ade1ac6c5ffeb5260257805c4ccfd68b4a74c68f5b205dca",
+    "imgs/img_in_image_box_133_63_762_918.jpg": "8c36ef2fe12264ac6b9cd824e4fa085cca313988fbd8ba8dfe15a8684fc9444c",
+    "region_repairs.md": "56e32780a0076eb6f080c2f79a046adab09a7cbdf15dd995202b99424037be54",
+    "repairs/region_001/1793156800_6295.md": "5acb7efa8ac5b65dad2fe9e8132b5f6d04d059b38fef010b1630a238a1fa8fb0",
+    "repairs/region_001/1793156800_6295_res.json": "3cf4948291e2e021969f31fc944809fbf9322b17d87ef8a474a1dc263e7d1c60",
+    "repairs/region_001/source.png": "3dac1fb1c98f9bbc354696af0e035db60ae157b599ac4a1ef19dc4ce0189a3d7",
+    "repairs/region_002/1793156810_9516.md": "f9376c98b6cb1cb49f4c6a9ef0efaa60159bac7d5b69003a6514fd7ea91ed90a",
+    "repairs/region_002/1793156810_9516_res.json": "92f07698b7dbceba2b2f785e450b92aa44934831107c686d898535cb138b08a4",
+    "repairs/region_002/source.png": "6ec0356dfcc72015dda38da07a9c9e7131b6b488bde3db668b84d44b7ab6a042"
+  },
+  "input_fingerprint": "12cb1bd6fd428c95c318251264f5eab595468c014e48bed45369fa0b447a891a",
+  "image_sha256": "c427babbd0aafd46009d774f4ad29d6eff1186e5ded2cf0305c9faee2db13194",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 141.737622354005,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1652,
+        31,
+        1889,
+        102
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          1652.0,
+          31.0
+        ],
+        [
+          1889.0,
+          31.0
+        ],
+        [
+          1889.0,
+          102.0
+        ],
+        [
+          1652.0,
+          102.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "号",
+      "block_bbox": [
+        133,
+        63,
+        762,
+        918
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          133.0,
+          63.0
+        ],
+        [
+          762.0,
+          63.0
+        ],
+        [
+          762.0,
+          918.0
+        ],
+        [
+          133.0,
+          918.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1173,
+        294,
+        1813,
+        1079
+      ],
+      "block_id": 2,
+      "block_order": null,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          1173.0,
+          294.0
+        ],
+        [
+          1813.0,
+          294.0
+        ],
+        [
+          1813.0,
+          1079.0
+        ],
+        [
+          1173.0,
+          1079.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "bilibili",
+      "block_bbox": [
+        1729,
+        22,
+        1900,
+        112
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "号",
+      "block_bbox": [
+        158,
+        103,
+        263,
+        201
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1729,
+        22,
+        1900,
+        112
+      ],
+      "ppocr_candidate": "bilbili",
+      "recovered_text": "bilibili",
+      "source_crop": "repairs/region_001/source.png",
+      "status": "recovered_candidate"
+    },
+    {
+      "source_bbox": [
+        158,
+        103,
+        263,
+        201
+      ],
+      "ppocr_candidate": "5",
+      "recovered_text": "号",
+      "source_crop": "repairs/region_002/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "engine": "transformers",
+  "device": "cpu",
+  "dtype": "float32",
+  "verification": "machine_extracted_unverified"
+}

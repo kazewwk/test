@@ -1,0 +1,171 @@
+{
+  "artifacts": {
+    "1793156811_1313.md": "31974a71beb799114e7148d52e8460fef94ce4b93f8c0c7bca4c331bfdfa3596",
+    "1793156811_1313_res.json": "b8e8545e1345015dbc5dd27308b51b7ad3393867e960be464ab03683eaa87fe7",
+    "imgs/img_in_header_image_box_1650_30_1890_102.jpg": "2345f735c021e43b35a7dba581e1ee6e42ed442789c90bede0e968630113caa1",
+    "imgs/img_in_image_box_1165_292_1779_1078.jpg": "48200724266a7bab858b82d52337a00fee119187e79995f32f953572e4eb9ea6",
+    "region_repairs.md": "7af6572343efd69c6628155c36a10c8aed16156896164c96706d286e66627dea",
+    "repairs/region_000/1793156822_8921.md": "5acb7efa8ac5b65dad2fe9e8132b5f6d04d059b38fef010b1630a238a1fa8fb0",
+    "repairs/region_000/1793156822_8921_res.json": "d84ff38a536b8343097a00f9a097a8bb2584bb6205ebe3c02f4e236043b0c697",
+    "repairs/region_000/source.png": "b18c638f73fe6913ef4e6225a2cb87b5743bc14047bb458eb2cbab65b0932d99"
+  },
+  "input_fingerprint": "8b8ff71c03696297c6d885d87c71d1e72c19cc542af9b6da63c0dbb3fc03fd0d",
+  "image_sha256": "dd6f72be8f1689cce115c7dae1553a5a863a077d7edfeb853ca59da98feb8881",
+  "cache_fingerprint": "7172d74f43e8e2f4b041fc1f87a8a621c671220d0a46c97b8ad895e70e5a5a25",
+  "elapsed_seconds": 172.31124598300084,
+  "model": "PaddleOCR-VL-1.6",
+  "blocks": [
+    {
+      "block_label": "header",
+      "block_content": "Recap",
+      "block_bbox": [
+        127,
+        68,
+        282,
+        120
+      ],
+      "block_id": 0,
+      "block_order": null,
+      "group_id": 0,
+      "block_polygon_points": [
+        [
+          127.0,
+          68.0
+        ],
+        [
+          282.0,
+          68.0
+        ],
+        [
+          282.0,
+          120.0
+        ],
+        [
+          127.0,
+          120.0
+        ]
+      ]
+    },
+    {
+      "block_label": "header_image",
+      "block_content": "胶学 bilibili",
+      "block_bbox": [
+        1650,
+        30,
+        1890,
+        102
+      ],
+      "block_id": 1,
+      "block_order": null,
+      "group_id": 1,
+      "block_polygon_points": [
+        [
+          1650.0,
+          30.0
+        ],
+        [
+          1890.0,
+          30.0
+        ],
+        [
+          1890.0,
+          102.0
+        ],
+        [
+          1650.0,
+          102.0
+        ]
+      ]
+    },
+    {
+      "block_label": "table",
+      "block_content": "<table><tr><td>Patterns &amp; Grammar</td><td></td></tr><tr><td>Words</td><td>handbag he she it</td></tr><tr><td>Expression</td><td>Excuse me Pardon? Thank you very(so) much</td></tr></table>",
+      "block_bbox": [
+        110,
+        220,
+        1038,
+        992
+      ],
+      "block_id": 2,
+      "block_order": null,
+      "group_id": 2,
+      "block_polygon_points": [
+        [
+          110.0,
+          220.0
+        ],
+        [
+          1038.0,
+          220.0
+        ],
+        [
+          1038.0,
+          992.0
+        ],
+        [
+          110.0,
+          992.0
+        ]
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "",
+      "block_bbox": [
+        1165,
+        292,
+        1779,
+        1078
+      ],
+      "block_id": 3,
+      "block_order": null,
+      "group_id": 3,
+      "block_polygon_points": [
+        [
+          1165.0,
+          292.0
+        ],
+        [
+          1779.0,
+          292.0
+        ],
+        [
+          1779.0,
+          1078.0
+        ],
+        [
+          1165.0,
+          1078.0
+        ]
+      ]
+    },
+    {
+      "block_label": "roi_repair",
+      "block_content": "bilibili",
+      "block_bbox": [
+        1727,
+        20,
+        1900,
+        114
+      ]
+    }
+  ],
+  "region_repairs": [
+    {
+      "source_bbox": [
+        1727,
+        20,
+        1900,
+        114
+      ],
+      "ppocr_candidate": "bilbilk",
+      "recovered_text": "bilibili",
+      "source_crop": "repairs/region_000/source.png",
+      "status": "recovered_candidate"
+    }
+  ],
+  "engine": "transformers",
+  "device": "cpu",
+  "dtype": "float32",
+  "verification": "machine_extracted_unverified"
+}
