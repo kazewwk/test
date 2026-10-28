@@ -1,0 +1,96 @@
+# 087 单词
+
+快速模式：仅按词时间去除重叠，未经第二模型或人工校对。
+
+## 00:00:00–00:00:30
+
+Hello everyone, welcome to Capsule Academy. This is Leo. Today we are going to learn New Concept English Book Two Lesson Eighty Seven Words. 那老习惯进入正式课程之前呢，咱们看几个小的问题。首先，如何表达不在场的证明啊？接下来，如何表达某人证实了某件事情？接下来，最后一个问题，如何表达你在暗示什么啊？带着这三个问题，hope you guys enjoyed.
+
+## 00:00:30–00:01:00
+
+We look at the first word. Look at the phonetic spelling. It's called alibi. Alibi. Alibi. This word's Chinese meaning is very long. It's called alibi. It's a noun. If you say I have alibi, you need to add have, right? For example, we make a sentence: He had a perfect alibi, and the police
+
+## 00:01:00–00:01:30
+
+let him go.说他有一个完美的不在现场的证明，对吧？不在犯罪现场的证明。然后警察就让他走了。Okay, next one.再来，我们结合虚拟语气啊。If he had had a perfect alibi, the police wouldn't have continued to search his place.说如果他当时有一个完美的，对吧？不在现场的犯罪证明，那警察就不会当时就不会
+
+## 00:01:30–00:02:00
+
+继续去搜他的地方了，对不对？好，所以你看这里的黑字部分告诉你是过去相反的虚拟语气，所以这句话其实告诉我们的事情是他当时没有不在犯罪现场的证明，于是警察还是继续去搜了他的地方啊。Next one, his lawyer has stated that he has an alibi. 哎，说他的这个律师啊，声称啊，发言说他有
+
+## 00:02:00–00:02:30
+
+这个不在线犯罪现场的证明啊。再读一遍这个单词 alibi。好，那注意力集中，咱听一下这个电影片段啊。 Is there anybody at the station who doesn't have an alibi? Okay, 啊，下一个单词叫 commit。 commit 这个单词呢，它是一个动词，但它最常用的都是 commit a crime, commit a murder。就是它后边这个宾语啊，往往都是固定的，比如说 commit a murder。所
+
+## 00:02:30–00:03:00
+
+以 commit 这个单词你单独记它就是犯，对吧？然后犯了什么呢？犯了错或犯了罪啊，往往是这样去连起来的。比如说 commit a murder，谋杀，对吧？犯了一个谋杀的罪啊，或者说你杀了人啊，叫做 commit a murder，啊，谋杀。比如说我们造个句子叫做 If you had committed a murder, the police would have known that. 说如果你当时确实对吧有这个谋杀，
+
+## 00:03:00–00:03:30
+
+这个犯了这样的罪，那警察当时是知道的。但是你注意啊，这不是两个杀人犯之间的聊天啊，这是一个虚拟语气，对吧？所以其实他当时并没有犯谋杀罪啊。Next one说，He devoted himself to finding out who committed the murder。说他致力于搞明白、弄清楚谁犯了这个罪，对吧？谁谋杀了别人？Okay. Next one
+
+## 00:03:30–00:04:00
+
+say the police stated that they had found out who committed the murder. Ah,谁犯了这个谋杀罪啊? Very good.再读一遍这个单词, commit.那注意力集中，咱听一个电影片段啊。这里边的乍一看，每一个单词应该都是认得的。I just don't think you're the kind of person that could commit a murder. Okay. Next one,注意浊化, inspector, inspector, inspector,探
+
+## 00:04:00–00:04:30
+
+长的意思啊。Inspector这个单词是我们之前学过动词，不知道您还有没有印象？没印象，你不妨查一下字典。然后我们说，在很多单词动词，尤其是动词后面去加o r或e r的时候，表示做这件事情的人。那inspector做这件事的人，对吧？好，我们造个句子啊。其实它跟captain是一样的啊。就你是一个人嘛？那我想造句。六一二三四五六一和三呗。The inspector has lost his patience.
+
+## 00:04:30–00:05:00
+
+已经丧失耐心。Next one, the inspector Leo has just decided to volunteer to find out who committed the murder.那他怎么样呢？决定啊，要志愿去调查清楚谁犯的这个谋杀罪，对吧？下一个，The inspector was relieved to hear that the murder was murderer was caught last night.这地方看似可能有一个小小超纲的
+
+## 00:05:00–00:05:30
+
+单词，就是 murder 这个单词又加了个 e r murderer 啊，它是什么意思？就是谋杀犯嘛，对吧？犯这个罪的那个人嘛，啊，做这件事儿的那个人嘛，啊，呃，这个探长啊，听到这样一个消息，长出了一口气，对吧？哎，松了一口气，哎， was relieved to hear that。这样一件事儿。Next one，下一个单词 employer 这个单词对于各位来说，
+
+## 00:05:30–00:06:00
+
+employee早在新一前二十课第十五课咱就学过，employ也学过，employer雇主嘛，就是他。employer后边是一帮employee，对吧？好，employer也是一个人，造句就很容易了，还是跟captain一个逻辑，对吧？所有之前我们造过的句子随便往里拽就可以了。那我们自己造几个句子啊？说The employer claimed to have fired five hundred people last week.他声称上周
+
+## 00:06:00–00:06:30
+
+怎么样？Fire怎么样？怎么样？哎，这个直接开除了啊！这个五百个人。Next one, our employer is used to getting up very early in the morning.他习惯于每天早上很早就起床。Next one, she is such a huge fan of her employer.说她实际上是她这个雇主的一个大粉丝，是吧？Okay,啊，就是其实这地方的大
+
+## 00:06:30–00:07:00
+
+粉丝是什么意思？就是非常狂热的迷恋着他的这个粉丝。但你注意啊，这个啊，狂热的迷恋着他的这个雇主啊，他这个狂热迷恋不一定是男女之情的那种迷恋啊啊，你要注意一下啊，因为迷恋在汉语当中有更多的其他的意思。其实如果从字面意思，就是呃，觉得他老板特别牛啊，特别崇拜啊，特别崇敬啊，大概就是这样一个含义啊。Next one,下一个单词叫confirm,
+
+## 00:07:00–00:07:30
+
+confirm.你看我配的这个图 cancel, confirm.这两个单词你一定要记住 cancel 取消, confirm 确定,确认对吧？确定确认。那它呢有一个常用的习惯用法叫 somebody confirmed that 加句子叫某人确定了，确认了这件事情。我们造个句子，比如说 he just confirmed that the volcano was erupting violently.说他刚刚通过比如说某种信息确认了前方的火山正在剧烈的喷发
+
+## 00:07:30–00:08:00
+
+着，确认了这件事儿，对吧？Next one,比如说，Can you confirm that he hitchhiked to Paris last week?那Can you confirm that就是你能对这件事情确认吗？哎，保证他这个信息是无疑的，是没有问题的呢？Can you confirm this?口语当中也很常见，对吧？好，那hitchhiked to Paris，七十三课咱学了嘛？搭便车去巴黎。Next one, I can confirm that they
+
+## 00:08:00–00:08:30
+
+have made it official. Make something official,使之成为正式的，对吧？两个人，两人谈恋爱，什么叫 make it official了呢？哎，两个人，哎，同意了，你是我男朋友，我是你女朋友，make it official。那结婚怎么就 make it official了呢？你得领证啊，对吧？Make it official. Okay. 那注意力集中，咱听一个电影片段. Can you confirm that this is the vehicle you saw? Okay. Next one, 这个单词很有意思啊。我们在这儿要多提一点啊。虽然这个单
+
+## 00:08:30–00:09:00
+
+词之前我们学过，suggest建议，suggest作为建议这个含义，各位应该是非常熟悉的，所以在这儿我今天就不多说了。比如说，包括suggestion box，对吧？这种建议箱啊，那我们今天要学它两个，一个在文章当中提，一个在这里去提。它还有一个暗示的意思。比如说，我们造一句话叫做"I'm not suggesting she was responsible for this accident."我们先看后面，叫做她对这
+
+## 00:09:00–00:09:30
+
+个事故是有责任的。那什么叫 I'm not suggesting？那你翻译成我不是在建议他对这个有有有有这个对这个呃事故是负有责任的，有点翻译不太通，是吧？他这个地方理解为暗示，是吧？我不是在暗示啊，我不是在暗示含沙射影的说某件事儿，对吧？他对这个责任有事儿，我不是在这个意思啊。再来，比如说 Are you suggesting I'm lazy？说你是在暗示说我很懒吗？啊，
+
+## 00:09:30–00:10:00
+
+你这指桑骂槐的、含沙射影的，对吧？暗度陈仓的是吧？你这是不是搁我这儿啊？所以这个这个搞暗示呢？哎，你是不是在暗示我很懒？那下一个呢？Suggest to take taxi，这就是咱们很熟悉的suggest的用法，之前也见过很多次了，就是建议。我建议你打个出租车赶紧走吧，对吧？好，呃，再读一遍这个单词啊，suggest。进入文章我们会见到它的另一个含义，这个我们在这儿没有给例句，所以就不多
+
+## 00:10:00–00:10:30
+
+提了。进入文章咱再说啊。好，呃，truth，新一就学过，to tell you the truth，对吧？所以我们在这儿就简单造几个句子就完了啊。第一个，张嘴跟我读，It was Leo who told us the truth, not you. 啊，强调句。Continue, I'm fairly certain that he told the police the truth. 啊，我相当确信。再来，Until we discover the cause, repeat after me, we won't be able to tell
+
+## 00:10:30–00:11:00
+
+the truth. Okay,单词除了一万，习惯用法肯定重要，对吧？该造句造句啊。呃，我们看一下家庭作业。那单词造句肯定是第一个，然后老习惯电影，然后置顶留言，对吧？以上呢就是本期视频的全部内容了。如果各位喜欢我们的课程呢，欢迎各位关注、订阅、一键三连，分享给那些需要的朋友，来帮助我们快速成长。
+
+## 00:11:00–00:11:14
+
+you next time.
+

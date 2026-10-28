@@ -1,0 +1,168 @@
+{
+  "state": "machine_processed_approximate",
+  "human_reviewed": false,
+  "accuracy": null,
+  "audio_duration_seconds": 849.4091875,
+  "processed_audio_seconds": 849.4091875,
+  "frame_count": 87,
+  "screenshot_timestamp_uncertainty_seconds": 1,
+  "issues": [
+    {
+      "type": "approximate_fast_mode",
+      "detail": "1-second visual sampling, compressed screenshots, lightweight OCR, one ASR model and no human review"
+    },
+    {
+      "type": "short_visual_events_may_be_missing",
+      "detail": "Use original video timestamps for review"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 0.0,
+      "end": 30.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 60.0,
+      "end": 90.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 90.0,
+      "end": 120.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 120.0,
+      "end": 150.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 150.0,
+      "end": 180.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 210.0,
+      "end": 240.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 270.0,
+      "end": 300.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 300.0,
+      "end": 330.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 330.0,
+      "end": 360.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 360.0,
+      "end": 390.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 390.0,
+      "end": 420.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 420.0,
+      "end": 450.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 450.0,
+      "end": 480.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 480.0,
+      "end": 510.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 510.0,
+      "end": 540.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 540.0,
+      "end": 570.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 600.0,
+      "end": 630.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 630.0,
+      "end": 660.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 660.0,
+      "end": 690.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 690.0,
+      "end": 720.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 720.0,
+      "end": 750.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 810.0,
+      "end": 840.0,
+      "detail": "Qwen and Whisper differ; review against original video"
+    },
+    {
+      "type": "asr_model_disagreement",
+      "start": 840.0,
+      "end": 849.4091875,
+      "detail": "Qwen and Whisper differ; review against original video"
+    }
+  ],
+  "omitted_stages": [
+    "PaddleOCR-VL",
+    "MinerU",
+    "human review"
+  ],
+  "cross_check": {
+    "method": "Existing independently generated Whisper candidates compared with fast Qwen",
+    "segments": 29,
+    "segments_flagged": 23,
+    "human_reviewed": false
+  }
+}
