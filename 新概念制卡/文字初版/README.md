@@ -34,3 +34,9 @@
 - [未完成项目](未完成项目.csv)
 
 30张卡在390px手机宽度下的日间、夜间共60个视图已检查，结果见 `mobile_preview_check.json`。这是显示抽查，不等于全量内容审核。
+
+## 独立闭卷练习
+
+[下载独立闭卷练习 HTML](独立闭卷练习.html?raw=true)，下载后用现代浏览器打开。包含本次两份 APKG 的全部13,165张实际卡题和55张内嵌图片，可按册、课、题型筛选，先输入答案再揭晓并自行核对。可断网使用；作答记录仅保留在本次打开期间，刷新会清空。本页不含设备朗读，浏览器需支持 DecompressionStream。
+
+离线交互和55张图片解码均已实测通过，见 `practice_validation.json`。两份线上 APKG 已完整下载并与本地逐份比较 SHA256，一致结果见 `github_download_verification.json`。
