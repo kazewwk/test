@@ -1,6 +1,6 @@
 # 生化 Anki 卡组与闭卷练习
 
-已完成第一至第十四章，共 **1548 张日常卡片、96 道独立闭卷练习**。APKG 内含所需图片，导入后沿用“生化 → 各章”卡组结构。
+已完成第一至第十五章，共 **1601 张日常卡片、102 道独立闭卷练习**。APKG 内含所需图片，导入后沿用“生化 → 各章”卡组结构。
 
 | 章节 | 日常卡片 | APKG | 独立闭卷练习 |
 | --- | ---: | --- | --- |
@@ -18,10 +18,12 @@
 | 第十二章 | 96 | [下载 APKG](https://raw.githubusercontent.com/kazewwk/test/main/%E7%94%9F%E5%8C%96%E5%88%B6%E5%8D%A1/%E5%B7%B2%E5%AE%8C%E6%88%90%E5%8D%A1%E7%BB%84/%E7%94%9F%E5%8C%96_%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AB%A0_%E6%A0%B8%E9%85%B8%E7%9A%84%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6%E6%80%A7%E8%B4%A8%E5%92%8C%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95.apkg) | [9 道练习（HTML）](https://raw.githubusercontent.com/kazewwk/test/main/%E7%94%9F%E5%8C%96%E5%88%B6%E5%8D%A1/%E5%B7%B2%E5%AE%8C%E6%88%90%E5%8D%A1%E7%BB%84/%E7%94%9F%E5%8C%96_%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AB%A0_%E7%8B%AC%E7%AB%8B%E9%97%AD%E5%8D%B7%E7%BB%83%E4%B9%A0.html) |
 | 第十三章 | 87 | [下载 APKG](https://raw.githubusercontent.com/kazewwk/test/main/%E7%94%9F%E5%8C%96%E5%88%B6%E5%8D%A1/%E5%B7%B2%E5%AE%8C%E6%88%90%E5%8D%A1%E7%BB%84/%E7%94%9F%E5%8C%96_%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0_%E7%BB%B4%E7%94%9F%E7%B4%A0%E5%92%8C%E8%BE%85%E9%85%B6.apkg) | [8 道练习（HTML）](https://raw.githubusercontent.com/kazewwk/test/main/%E7%94%9F%E5%8C%96%E5%88%B6%E5%8D%A1/%E5%B7%B2%E5%AE%8C%E6%88%90%E5%8D%A1%E7%BB%84/%E7%94%9F%E5%8C%96_%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0_%E7%8B%AC%E7%AB%8B%E9%97%AD%E5%8D%B7%E7%BB%83%E4%B9%A0.html) |
 | 第十四章 | 153 | [下载 APKG](https://raw.githubusercontent.com/kazewwk/test/main/%E7%94%9F%E5%8C%96%E5%88%B6%E5%8D%A1/%E5%B7%B2%E5%AE%8C%E6%88%90%E5%8D%A1%E7%BB%84/%E7%94%9F%E5%8C%96_%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0_%E6%BF%80%E7%B4%A0%E5%92%8C%E4%BF%A1%E5%8F%B7%E8%BD%AC%E5%AF%BC.apkg) | [12 道练习（HTML）](https://raw.githubusercontent.com/kazewwk/test/main/%E7%94%9F%E5%8C%96%E5%88%B6%E5%8D%A1/%E5%B7%B2%E5%AE%8C%E6%88%90%E5%8D%A1%E7%BB%84/%E7%94%9F%E5%8C%96_%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0_%E7%8B%AC%E7%AB%8B%E9%97%AD%E5%8D%B7%E7%BB%83%E4%B9%A0.html) |
+| 第十五章 | 53 | [下载 APKG](https://raw.githubusercontent.com/kazewwk/test/main/%E7%94%9F%E5%8C%96%E5%88%B6%E5%8D%A1/%E5%B7%B2%E5%AE%8C%E6%88%90%E5%8D%A1%E7%BB%84/%E7%94%9F%E5%8C%96_%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0_%E6%96%B0%E9%99%88%E4%BB%A3%E8%B0%A2%E6%80%BB%E8%AE%BA.apkg) | [6 道练习（HTML）](https://raw.githubusercontent.com/kazewwk/test/main/%E7%94%9F%E5%8C%96%E5%88%B6%E5%8D%A1/%E5%B7%B2%E5%AE%8C%E6%88%90%E5%8D%A1%E7%BB%84/%E7%94%9F%E5%8C%96_%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0_%E7%8B%AC%E7%AB%8B%E9%97%AD%E5%8D%B7%E7%BB%83%E4%B9%A0.html) |
 
 APKG 下载后导入 Anki。各章保留稳定、独立的笔记标识；已用原生 Anki 验证连续导入和重复导入。
 
 闭卷练习的题目、答案及图片均包含在独立 HTML 中；下载保存后用浏览器打开，先作答再展开答案。这些完整题不进入日常 Anki 队列。
 
 后续制卡默认将最终 APKG 和独立闭卷练习同步到本目录，并更新本表、提供 GitHub 下载链接。
+
 
