@@ -1,0 +1,38 @@
+{
+  "status": "success",
+  "id": "IHB_2006_bio",
+  "title": "中国科学院水生生物研究所2006年硕士研究生入学考试生物化学",
+  "subject_group": "生物化学",
+  "tier": "advanced",
+  "effort": "xhigh",
+  "ocr_mode": "ocr",
+  "image_analysis": true,
+  "backend": "gpu",
+  "small_backend": "onnx",
+  "vlm_engine": "vllm",
+  "quantization": "original weights",
+  "versions": {
+    "mineru": "4.1.5",
+    "docvortex": "0.6.11",
+    "mineru-llama-cpp": "0.2.0",
+    "torch": "2.13.0",
+    "vllm": "0.28.0",
+    "PyMuPDF": "1.28.2"
+  },
+  "python": "3.13.16",
+  "input_sha256": "96e65a1ad8136887f96ad2840f827926b56cbe07940aa874ca24a723773939a7",
+  "original_physical_pages": 3,
+  "processed_pages": 3,
+  "seconds": 27.264,
+  "input_method": "existing_converted_pdf_subject_boundary_redaction",
+  "page_mapping": null,
+  "warnings": [
+    "输入为已有LibreOffice转换PDF，原始DOC保留；勿冒充官方原PDF。",
+    "分科PDF首/尾实际混入邻科，不能将整份解析文本直接全部归入本套。"
+  ],
+  "output_sha256": {
+    "structured_content.json": "e7c6864bc595d811c29306accb400e16b8bba824b8623b42be01b1e9c1320ce6",
+    "markdown.md": "0de5e82f08c2db8a927c54778de19b60a112e9cea3b25009be3ba85300a6f7e2",
+    "middle_json.json": "f7a2ac6177dd47f4c2c3e8cebf2254cd201292045fd37780a61c414a57c53422"
+  }
+}

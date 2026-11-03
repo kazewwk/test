@@ -1,0 +1,38 @@
+{
+  "status": "success",
+  "id": "IHB_2007_cell",
+  "title": "中国科学院水生生物研究所2007年硕士研究生入学考试细胞生物学",
+  "subject_group": "细胞生物学",
+  "tier": "advanced",
+  "effort": "xhigh",
+  "ocr_mode": "ocr",
+  "image_analysis": true,
+  "backend": "gpu",
+  "small_backend": "onnx",
+  "vlm_engine": "vllm",
+  "quantization": "original weights",
+  "versions": {
+    "mineru": "4.1.5",
+    "docvortex": "0.6.11",
+    "mineru-llama-cpp": "0.2.0",
+    "torch": "2.13.0",
+    "vllm": "0.28.0",
+    "PyMuPDF": "1.28.2"
+  },
+  "python": "3.13.16",
+  "input_sha256": "cafabb6abbd02417cb8d20b3fa998f5c62ea33a69f1be1abaf12d5b75e69b3b2",
+  "original_physical_pages": 3,
+  "processed_pages": 3,
+  "seconds": 28.653,
+  "input_method": "existing_converted_pdf_subject_boundary_redaction",
+  "page_mapping": null,
+  "warnings": [
+    "输入为已有LibreOffice转换PDF，原始DOC保留；勿冒充官方原PDF。",
+    "分科PDF首/尾实际混入邻科，不能将整份解析文本直接全部归入本套。"
+  ],
+  "output_sha256": {
+    "structured_content.json": "955b2ea19ebb1ef7cfb751ed6d2b10ea280827561802bc63c706d7a5dd48a2cf",
+    "markdown.md": "224ecb9ca403d8ff51d07566a9372b1e9093e315af37047863416c9c070e3d17",
+    "middle_json.json": "93cdfe761436bb0251701ddb83f0d23a8e137d5141dda8850d697a7bd89fe5fb"
+  }
+}
