@@ -35,7 +35,7 @@ def main():
                 if ref and not ref.startswith(('https:','http:','data:')):assert (out/ref).is_file(),('missing asset',ref)
             output=normalize(md);output_shingles=shingles(output)
             refs=paper.get('existing_text_files',[]);ref=next((Path(x) for x in refs if 'reviewed' in x),None)
-            if ref is None and paper.get('subject_boundary'):ref=Path(paper['subject_boundary']['canonical_subject_text_path'])
+            if ref is None and paper.get('subject_boundary',{}).get('canonical_subject_text_path'):ref=Path(paper['subject_boundary']['canonical_subject_text_path'])
             metrics={}
             if ref is not None:
                 raw=ref.read_text();lines=[]

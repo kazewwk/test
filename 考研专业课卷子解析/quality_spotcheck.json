@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "task": "本轮已完成4套MinerU结果的定向只读质量抽查",
+  "scope": {
+    "focus": [
+      "SHU-BIOCHEM-2000：3页新结果与人工reviewed末题、关键符号及填空位",
+      "IHB_2012_bio：填空固定文字、空位与官方DOC/canonical对照"
+    ],
+    "not_repeated": [
+      "SHU-BIOCHEM-2001",
+      "CN_1028216"
+    ],
+    "not_repeated_reason": "按委托，这两套已由主agent检查；本次不重复，不另行作无风险保证。",
+    "not_exhaustive": true,
+    "constraints_observed": [
+      "未运行模型、未启动解析",
+      "未安装依赖",
+      "未执行git",
+      "未操作现有T4批次或PID8231",
+      "未修改MinerU原始结果或来源文件",
+      "唯一新增文件为本报告"
+    ]
+  },
+  "conclusion": {
+    "recognition_notes_required": true,
+    "affected_papers": 2,
+    "affected_questions": 4,
+    "missing_answer_blank_groups": 5,
+    "summary": "6字串覆盖无flags不能验证答题空位；SHU2000缺4个空位、IHB2012缺1个空位。应旁注，不学术补字，不覆盖原始结果。"
+  },
+  "papers": [
+    {
+      "id": "SHU-BIOCHEM-2000",
+      "status": "needs_recognition_note",
+      "source": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_20261031/01_上海大学_优先/SHU_2000_biochemistry_ocr_reviewed.md",
+      "mineru_markdown": "/home/kazewwk/Documents/DSH/专业课卷子MinerU解析_20261103/results/生物化学/SHU-BIOCHEM-2000/markdown.md",
+      "processed_pages": 3,
+      "page_verification": "run.json记录original_physical_pages=processed_pages=3；structured_content按page_idx 0、1、2保留正文。三·8跨第2、3页的续句完整；四·6末题完整。",
+      "blank_counts": {
+        "reviewed_by_question": [
+          2,
+          4,
+          2,
+          2,
+          1,
+          3,
+          5,
+          3,
+          1,
+          1
+        ],
+        "mineru_by_question": [
+          2,
+          4,
+          0,
+          2,
+          1,
+          3,
+          4,
+          3,
+          1,
+          0
+        ],
+        "expected_total": 24,
+        "mineru_total": 20
+      },
+      "checks_passed": [
+        "末题四·6：‘简述解偶联剂DNP的作用。’完整；四·1–6题干均在。",
+        "一·4 pCpTpGpApC / pGpApCpTpG 与reviewed一致。",
+        "一·6 FADH₂的P/O比是3按题目原文保留；本次不判定陈述真伪。",
+        "三·5 Vmax、三·7 CO₂、三·8 mRNA的3′/5′方向与reviewed无实质差异；下标LaTeX与撇号显示属格式差异。"
+      ]
+    },
+    {
+      "id": "IHB_2012_bio",
+      "status": "needs_recognition_note",
+      "canonical": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/text/IHB_2012_bio.txt",
+      "original_doc": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/originals/P020250828544941387081.doc",
+      "derived_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/derived/IHB_2012_bio.pdf",
+      "mineru_markdown": "/home/kazewwk/Documents/DSH/专业课卷子MinerU解析_20261103/results/生物化学/IHB_2012_bio/markdown.md",
+      "blank_counts": {
+        "source_by_question": [
+          6,
+          6,
+          5,
+          5,
+          4,
+          4
+        ],
+        "mineru_by_question": [
+          6,
+          6,
+          5,
+          5,
+          3,
+          4
+        ],
+        "expected_total": 30,
+        "mineru_total": 29
+      },
+      "checks_passed": [
+        "三·1–4、6的固定汉字与canonical无实质差异；纯空格/下划线显示形式差异不算漏字。",
+        "三·1为6空；三·2‘原料’与‘为’间、‘后氧化’后空位均在，并非应补固定词。",
+        "三·5在/中间是原始DOC中的6个空格，不是被OCR漏掉的固定词；不得擅补‘血液’等答案。",
+        "四·13的ATP上5′-磷酸等判断性说法与canonical一致；不把原题判断错误当OCR错。"
+      ]
+    },
+    {
+      "id": "SHU-BIOCHEM-2001",
+      "status": "not_repeated_parent_review_exists"
+    },
+    {
+      "id": "CN_1028216",
+      "status": "not_repeated_parent_review_exists"
+    }
+  ],
+  "findings": [
+    {
+      "id": "SHU2000-III-3",
+      "paper_id": "SHU-BIOCHEM-2000",
+      "question": "三、填空题第3题",
+      "physical_page": 2,
+      "type": "missing_answer_blank",
+      "confidence": "high",
+      "missing_blank_groups": 2,
+      "expected": "a. ______侧链向外侧，b. ______侧链彼此相互作用而中和。",
+      "observed": "a.侧链向外侧，b.侧链彼此相互作用而中和。",
+      "evidence": {
+        "reviewed_lines": [
+          35
+        ],
+        "markdown_lines": [
+          38
+        ],
+        "structured_content_lines": [
+          167
+        ]
+      },
+      "note": "a./b.后的两个答题空位在新结果中消失；须旁注，不补答案。"
+    },
+    {
+      "id": "SHU2000-III-7",
+      "paper_id": "SHU-BIOCHEM-2000",
+      "question": "三、填空题第7题",
+      "physical_page": 2,
+      "type": "missing_answer_blank",
+      "confidence": "high",
+      "missing_blank_groups": 1,
+      "expected": "转变为______、______、______、______和______等五种物质",
+      "observed": "转变为____、____、____和____等五种物质",
+      "evidence": {
+        "reviewed_lines": [
+          39
+        ],
+        "markdown_lines": [
+          42
+        ],
+        "structured_content_lines": [
+          167
+        ]
+      },
+      "note": "reviewed列5个空位，新结果只列4个；不得据学科知识填入物质名称。"
+    },
+    {
+      "id": "SHU2000-III-10",
+      "paper_id": "SHU-BIOCHEM-2000",
+      "question": "三、填空题第10题",
+      "physical_page": 3,
+      "type": "missing_answer_blank",
+      "confidence": "high",
+      "missing_blank_groups": 1,
+      "expected": "______复制可以由环状亲代双链产生线性拷贝。",
+      "observed": "复制可以由环状亲代双链产生线性拷贝。",
+      "evidence": {
+        "reviewed_lines": [
+          42
+        ],
+        "markdown_lines": [
+          48
+        ],
+        "structured_content_lines": [
+          213
+        ]
+      },
+      "note": "题首答题空位消失，填空题变成陈述句；须旁注，不补答案。"
+    },
+    {
+      "id": "IHB2012-III-5",
+      "paper_id": "IHB_2012_bio",
+      "question": "三、填空第5题",
+      "physical_page": 2,
+      "type": "missing_answer_blank",
+      "confidence": "high",
+      "missing_blank_groups": 1,
+      "expected": "两种形式在      中运输。",
+      "observed": "两种形式在中运输。",
+      "evidence": {
+        "canonical_lines": [
+          57,
+          59
+        ],
+        "markdown_lines": [
+          37
+        ],
+        "structured_content_lines": [
+          138
+        ],
+        "original_doc_check": "只读从原DOC的OLE WordDocument流定位UTF-16LE文字，原段落确为‘两种形式在      中运输。’（在/中间6个空格）；PDF文本在‘在’后换行而吞掉行尾答题空白。"
+      },
+      "note": "第4个答题空位遗漏；不是应由识别恢复的‘血液’等固定文字。旁注恢复空位意识即可，保留原始结果。"
+    }
+  ],
+  "recommended_action": "在外置质量说明/上传说明中标注上述4题的5个漏空位；勿把这两套标为完全无疑点。无需另起解析，不修改MinerU输出，不学术改题。"
+}

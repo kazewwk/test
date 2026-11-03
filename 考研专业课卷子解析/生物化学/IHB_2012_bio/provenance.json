@@ -61,5 +61,32 @@
   "warnings": [
     "输入为已有LibreOffice转换PDF，原始DOC保留；勿冒充官方原PDF。",
     "来自DOC合订本的已分科PDF；抽查首尾未见邻科文字，仍依标题与末题核验。"
+  ],
+  "recognition_notes": [
+    {
+      "id": "IHB2012-III-5",
+      "paper_id": "IHB_2012_bio",
+      "question": "三、填空第5题",
+      "physical_page": 2,
+      "type": "missing_answer_blank",
+      "confidence": "high",
+      "missing_blank_groups": 1,
+      "expected": "两种形式在      中运输。",
+      "observed": "两种形式在中运输。",
+      "evidence": {
+        "canonical_lines": [
+          57,
+          59
+        ],
+        "markdown_lines": [
+          37
+        ],
+        "structured_content_lines": [
+          138
+        ],
+        "original_doc_check": "只读从原DOC的OLE WordDocument流定位UTF-16LE文字，原段落确为‘两种形式在      中运输。’（在/中间6个空格）；PDF文本在‘在’后换行而吞掉行尾答题空白。"
+      },
+      "note": "第4个答题空位遗漏；不是应由识别恢复的‘血液’等固定文字。旁注恢复空位意识即可，保留原始结果。"
+    }
   ]
 }
