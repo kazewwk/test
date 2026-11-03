@@ -208,7 +208,28 @@
         "original_doc_check": "只读从原DOC的OLE WordDocument流定位UTF-16LE文字，原段落确为‘两种形式在      中运输。’（在/中间6个空格）；PDF文本在‘在’后换行而吞掉行尾答题空白。"
       },
       "note": "第4个答题空位遗漏；不是应由识别恢复的‘血液’等固定文字。旁注恢复空位意识即可，保留原始结果。"
+    },
+    {
+      "id": "CAS2005-source-missing-figures",
+      "paper_id": "CAS-2005-1019911",
+      "question": "原稿二·16、二·23、三·3、三·4、四·4的给定题图",
+      "type": "source_missing_figures",
+      "confidence": "high",
+      "expected": "原稿题干引用SDS-PAGE、发病率、电镜、细胞周期曲线及Western图，但原稿本身未提供。",
+      "observed": "原PDF与MinerU正文末尾均注明“有图的题没有图”。",
+      "note": "这是源整理稿先天缺图，不是MinerU漏提；这些读图小问不能据此完整作答，不得补造图或答案。"
+    },
+    {
+      "id": "CAS2006-answer-superscript",
+      "paper_id": "CAS-2006-1012396",
+      "question": "物理第3页参考答案一·1及一·4分子量",
+      "type": "lost_superscript_semantics",
+      "confidence": "high",
+      "expected": "300–400×10³；35×10³–40×10³",
+      "observed": "300-400X103；35X103-40X103",
+      "note": "表格HTML/Markdown丢失10的3次方上标语义，核对本卷images/page_2_table_1.jpg；仅旁注，不改原始输出。"
     }
   ],
-  "recommended_action": "在外置质量说明/上传说明中标注上述4题的5个漏空位；勿把这两套标为完全无疑点。无需另起解析，不修改MinerU输出，不学术改题。"
+  "recommended_action": "在外置质量说明/上传说明中标注上述4题的5个漏空位；勿把这两套标为完全无疑点。无需另起解析，不修改MinerU输出，不学术改题。",
+  "figure_audit_scope": "17套细胞结果的结构筛查，重点目视原PDF/资产CAS2005、CAS2006、HEBNU2020、USTC2012；不能代表全量页图精确保留。"
 }

@@ -16,6 +16,12 @@ MinerU 4.1.5，Advanced（xhigh），OCR模式，图像分析开启。处理页�
 
 本卷使用 Tesla T4、原始VLM权重（float16、未做GGUF量化）＋vLLM；小模型后端为 onnx。
 
+## 识别时保留的图像资产
+
+部分表格图仅在结构化JSON中引用，Markdown不一定显示；可在这里直接查看。图片可能是题图、表格或页眉，按原卷判断。
+- [page_0_table_19.jpg](<images/page_0_table_19.jpg>)
+- [page_4_image_7.jpg](<images/page_4_image_7.jpg>)
+
 ## 原卷及输入说明
 
 - 官方样题，无明确考试年份；2025为附件路径年份，2024相近版已false排除。

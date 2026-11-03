@@ -1,0 +1,38 @@
+{
+  "status": "success",
+  "id": "IHB_2011_cell",
+  "title": "中国科学院水生生物研究所2011年硕士研究生入学考试细胞生物学",
+  "subject_group": "细胞生物学",
+  "tier": "advanced",
+  "effort": "xhigh",
+  "ocr_mode": "ocr",
+  "image_analysis": true,
+  "backend": "gpu",
+  "small_backend": "onnx",
+  "vlm_engine": "vllm",
+  "quantization": "original weights",
+  "versions": {
+    "mineru": "4.1.5",
+    "docvortex": "0.6.11",
+    "mineru-llama-cpp": "0.2.0",
+    "torch": "2.13.0",
+    "vllm": "0.28.0",
+    "PyMuPDF": "1.28.2"
+  },
+  "python": "3.13.16",
+  "input_sha256": "66666694723f464c4897028c253571842be39c25fa3f599ae81dfea46600e27d",
+  "original_physical_pages": 2,
+  "processed_pages": 2,
+  "seconds": 15.483,
+  "input_method": "existing_converted_pdf_subject_boundary_redaction",
+  "page_mapping": null,
+  "warnings": [
+    "输入为已有LibreOffice转换PDF，原始DOC保留；勿冒充官方原PDF。",
+    "分科PDF首/尾实际混入邻科，不能将整份解析文本直接全部归入本套。"
+  ],
+  "output_sha256": {
+    "structured_content.json": "ffe8310001f002442060f0927fe624ab3409852723f6f530eccadc8213574a63",
+    "markdown.md": "0e01b5242f3aeca2379498f098b928fae30d4ff22eee268439b4266a87e0edcf",
+    "middle_json.json": "48e91bef18409e3015dc9c84d347daf15b88707f3d5b0d7ce57e5fe1549e445d"
+  }
+}
