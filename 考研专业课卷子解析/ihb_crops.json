@@ -1,0 +1,1256 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-03T09:06:21.566353+00:00",
+  "root": "/home/kazewwk/Documents/DSH/专业课卷子MinerU解析_20261103",
+  "inventory": "/home/kazewwk/Documents/DSH/专业课卷子MinerU解析_20261103/inventory.json",
+  "tool": {
+    "PyMuPDF": "1.28.2",
+    "pdftotext": "/usr/bin/pdftotext"
+  },
+  "method": "Actual white-filled PyMuPDF redactions of boundary text and graphics; no cropbox-only masking, OCR, reflow or academic correction. Four clean inputs are byte-identical copies.",
+  "summary": {
+    "papers": 15,
+    "pages": 47,
+    "papers_with_neighbors_removed": 11,
+    "redacted_boundary_regions": 15,
+    "fulltext_exact_passed": 15,
+    "retained_render_spot_checks_passed": 3
+  },
+  "papers": [
+    {
+      "id": "IHB_2012_bio",
+      "source_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/derived/IHB_2012_bio.pdf",
+      "source_sha256": "6c812e54d98f77cb65a83aca6f8b93e358d336630c0f2ed73100a32d509a57b6",
+      "compiled_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/originals/P020250828544941387081.pdf",
+      "compiled_pages_1based_inclusive": [
+        1,
+        3
+      ],
+      "canonical_subject_text_path": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/text/IHB_2012_bio.txt",
+      "output_pdf": "/home/kazewwk/Documents/DSH/专业课卷子MinerU解析_20261103/inputs/IHB_2012_bio.pdf",
+      "output_sha256": "6c812e54d98f77cb65a83aca6f8b93e358d336630c0f2ed73100a32d509a57b6",
+      "pages": 3,
+      "had_neighbor_text": false,
+      "removed_prefix_nonwhitespace_characters": 0,
+      "removed_suffix_nonwhitespace_characters": 0,
+      "redactions": [],
+      "existing_output_verified_not_overwritten": false,
+      "verification": {
+        "canonical_start_lines": {
+          "all_present": true,
+          "count": 6,
+          "anchors": [
+            "中国科学院研究生院水生生物研究所",
+            "2012 年招收攻读硕士学位研究生入学考试试题",
+            "生物化学",
+            "一、名词解释（共 30 分，每小题 3 分）",
+            "1. 超分子复合物 (supermolecular complexe)：",
+            "2. 多巴胺（dopamine）："
+          ]
+        },
+        "canonical_end_lines": {
+          "all_present": true,
+          "count": 5,
+          "anchors": [
+            "19. 绝大多数编码蛋白质或酶的基因属于单一序列。",
+            "20. DNA 分子是纯粹的刚性棒。",
+            "五、思考题（共 50 分，每题 25 分）",
+            "1. 请介绍细胞水平的物质代谢调节。",
+            "2. 请举例比较两种不同生化实验技术的原理及应用。"
+          ]
+        },
+        "normalized_poppler_fulltext_equals_canonical": true,
+        "retained_character_text_and_coordinates_unchanged": true,
+        "retained_nonwhitespace_characters": 1130,
+        "redacted_regions_have_no_extractable_text": true,
+        "page_count_and_mediabox_cropbox_unchanged": true,
+        "render_spot_checks": []
+      }
+    },
+    {
+      "id": "IHB_2012_cell",
+      "source_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/derived/IHB_2012_cell.pdf",
+      "source_sha256": "3337ff010675c052806912f73fbef36cfe8a0ae3a0bd06da5c8dd58bb9a3ddbe",
+      "compiled_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/originals/P020250828544941387081.pdf",
+      "compiled_pages_1based_inclusive": [
+        10,
+        12
+      ],
+      "canonical_subject_text_path": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/text/IHB_2012_cell.txt",
+      "output_pdf": "/home/kazewwk/Documents/DSH/专业课卷子MinerU解析_20261103/inputs/IHB_2012_cell.pdf",
+      "output_sha256": "2423f93e9416da6ec249b5747d6befcdd9ee79a9719966ee3e3e62a5d3011828",
+      "pages": 3,
+      "had_neighbor_text": true,
+      "removed_prefix_nonwhitespace_characters": 200,
+      "removed_suffix_nonwhitespace_characters": 0,
+      "redactions": [
+        {
+          "page_1based": 1,
+          "side": "above_subject_start",
+          "rect": [
+            0,
+            0,
+            595.303955078125,
+            474.0837707519531
+          ],
+          "retained_anchor": {
+            "text": "细胞生物学",
+            "bbox": [
+              90.0999984741211,
+              596.634765625,
+              170.10000610351562,
+              619.6267700195312
+            ]
+          },
+          "neighbor_anchor": {
+            "text": "4．",
+            "bbox": [
+              99.0999984741211,
+              334.28875732421875,
+              117.75,
+              351.53277587890625
+            ]
+          },
+          "reason": "Remove preceding subject before canonical heading"
+        }
+      ],
+      "existing_output_verified_not_overwritten": false,
+      "verification": {
+        "canonical_start_lines": {
+          "all_present": true,
+          "count": 6,
+          "anchors": [
+            "细胞生物学",
+            "一、名词解释(每题 2 分，共 20 分)",
+            "1.   半自主性细胞器（semi-autonomous organelles）",
+            "2.   门通道（gate channel ）",
+            "3.   核内有丝分裂（endomitosis）",
+            "4.   过氧化物酶体 （peroxisome）"
+          ]
+        },
+        "canonical_end_lines": {
+          "all_present": true,
+          "count": 5,
+          "anchors": [
+            "四、论述题(每题 20 分，共 40 分)",
+            "1. 生殖细胞的发生是发育和遗传的基础。假设你从文库中筛选到了一段在生",
+            "殖细胞中     特异表达的 cDNA 序列，请设计实验研究其功能。",
+            "2. 说明细胞识别与通讯中“第一信使”、“第二信使”、“第三信使”的含",
+            "义、作用及其意义。"
+          ]
+        },
+        "normalized_poppler_fulltext_equals_canonical": true,
+        "retained_character_text_and_coordinates_unchanged": true,
+        "retained_nonwhitespace_characters": 923,
+        "redacted_regions_have_no_extractable_text": true,
+        "page_count_and_mediabox_cropbox_unchanged": true,
+        "render_spot_checks": []
+      }
+    },
+    {
+      "id": "IHB_2011_bio",
+      "source_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/derived/IHB_2011_bio.pdf",
+      "source_sha256": "6c2b9bb9542d3c329d2bca542040829a8ab6a2b1f2c648344a4cc7b5d8ccf343",
+      "compiled_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/originals/P020250828502478225683.pdf",
+      "compiled_pages_1based_inclusive": [
+        6,
+        8
+      ],
+      "canonical_subject_text_path": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/text/IHB_2011_bio.txt",
+      "output_pdf": "/home/kazewwk/Documents/DSH/专业课卷子MinerU解析_20261103/inputs/IHB_2011_bio.pdf",
+      "output_sha256": "d5883040e1a8120ac9df3f65c9ce56778fcbd43aa0d4bb66bdfc997b0e9d5383",
+      "pages": 3,
+      "had_neighbor_text": true,
+      "removed_prefix_nonwhitespace_characters": 0,
+      "removed_suffix_nonwhitespace_characters": 32,
+      "redactions": [
+        {
+          "page_1based": 3,
+          "side": "below_subject_end",
+          "rect": [
+            0,
+            527.8682403564453,
+            595.303955078125,
+            841.8897705078125
+          ],
+          "retained_anchor": {
+            "text": "2. 举例试说明质谱的分析原理及其在蛋白质组研究中的应用。",
+            "bbox": [
+              90.0999984741211,
+              368.6152648925781,
+              373.6000061035156,
+              383.7037658691406
+            ]
+          },
+          "neighbor_anchor": {
+            "text": "生物学",
+            "bbox": [
+              90.0999984741211,
+              672.03271484375,
+              144.10000610351562,
+              697.8987426757812
+            ]
+          },
+          "reason": "Remove next subject after complete canonical final question"
+        }
+      ],
+      "existing_output_verified_not_overwritten": false,
+      "verification": {
+        "canonical_start_lines": {
+          "all_present": true,
+          "count": 6,
+          "anchors": [
+            "生物化学",
+            "一、名词解释（共 30 分，每小题 3 分）",
+            "1. 延伸肽(extension peptides)",
+            "2. 细胞骨架(cytoskeleton)",
+            "3. 尿酸 (uric acid)",
+            "4. 端粒酶(telomerase)"
+          ]
+        },
+        "canonical_end_lines": {
+          "all_present": true,
+          "count": 5,
+          "anchors": [
+            "19. 磷酸化和去磷酸化接受 cAMP 水平调节。",
+            "20. 孕激素在卵巢中合成。",
+            "五、思考题（共 50 分，每题 25 分）",
+            "1 介绍线粒体的结构与代谢功能。",
+            "2. 举例试说明质谱的分析原理及其在蛋白质组研究中的应用。"
+          ]
+        },
+        "normalized_poppler_fulltext_equals_canonical": true,
+        "retained_character_text_and_coordinates_unchanged": true,
+        "retained_nonwhitespace_characters": 1989,
+        "redacted_regions_have_no_extractable_text": true,
+        "page_count_and_mediabox_cropbox_unchanged": true,
+        "render_spot_checks": []
+      }
+    },
+    {
+      "id": "IHB_2011_cell",
+      "source_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/derived/IHB_2011_cell.pdf",
+      "source_sha256": "8b0d5016386f2637504f970d2b9c437b9783dddd02c4b21743dcf8031181c793",
+      "compiled_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/originals/P020250828502478225683.pdf",
+      "compiled_pages_1based_inclusive": [
+        4,
+        5
+      ],
+      "canonical_subject_text_path": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/text/IHB_2011_cell.txt",
+      "output_pdf": "/home/kazewwk/Documents/DSH/专业课卷子MinerU解析_20261103/inputs/IHB_2011_cell.pdf",
+      "output_sha256": "66666694723f464c4897028c253571842be39c25fa3f599ae81dfea46600e27d",
+      "pages": 2,
+      "had_neighbor_text": true,
+      "removed_prefix_nonwhitespace_characters": 28,
+      "removed_suffix_nonwhitespace_characters": 0,
+      "redactions": [
+        {
+          "page_1based": 1,
+          "side": "above_subject_start",
+          "rect": [
+            0,
+            0,
+            595.303955078125,
+            116.00778579711914
+          ],
+          "retained_anchor": {
+            "text": "细胞生物学",
+            "bbox": [
+              90.0999984741211,
+              142.7827911376953,
+              180.10000610351562,
+              168.64878845214844
+            ]
+          },
+          "neighbor_anchor": {
+            "text": "为除少数RNA 病毒以外的几乎所有生物体遗传信息的携带者？",
+            "bbox": [
+              126.05000305175781,
+              71.98878479003906,
+              456.20001220703125,
+              89.23278045654297
+            ]
+          },
+          "reason": "Remove preceding subject before canonical heading"
+        }
+      ],
+      "existing_output_verified_not_overwritten": false,
+      "verification": {
+        "canonical_start_lines": {
+          "all_present": true,
+          "count": 6,
+          "anchors": [
+            "细胞生物学",
+            "一、名词解释(每题 2 分，共 20 分)",
+            "1．间隙连接",
+            "2．核纤层",
+            "3．肌醇磷脂信号通路",
+            "4. G 蛋白偶联受体"
+          ]
+        },
+        "canonical_end_lines": {
+          "all_present": true,
+          "count": 5,
+          "anchors": [
+            "7. 简述溶酶体的结构类型和溶酶体的功能。",
+            "四、论述题(每题 20 分，共 40 分)",
+            "1． 什么是 cyclin 和 CDK?请介绍一下它们在调节真核细胞有丝分裂中所",
+            "发挥的调节作用。",
+            "2．试述细胞生物学研究方法对生命科学领域相关学科发展的重要作用。"
+          ]
+        },
+        "normalized_poppler_fulltext_equals_canonical": true,
+        "retained_character_text_and_coordinates_unchanged": true,
+        "retained_nonwhitespace_characters": 802,
+        "redacted_regions_have_no_extractable_text": true,
+        "page_count_and_mediabox_cropbox_unchanged": true,
+        "render_spot_checks": []
+      }
+    },
+    {
+      "id": "IHB_2010_bio",
+      "source_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/derived/IHB_2010_bio.pdf",
+      "source_sha256": "10072d63d864bf3910249abafb3ff69aeec13a11085b1becd2400dd1ae61c39e",
+      "compiled_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/originals/P020250828543427614142.pdf",
+      "compiled_pages_1based_inclusive": [
+        8,
+        10
+      ],
+      "canonical_subject_text_path": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/text/IHB_2010_bio.txt",
+      "output_pdf": "/home/kazewwk/Documents/DSH/专业课卷子MinerU解析_20261103/inputs/IHB_2010_bio.pdf",
+      "output_sha256": "10072d63d864bf3910249abafb3ff69aeec13a11085b1becd2400dd1ae61c39e",
+      "pages": 3,
+      "had_neighbor_text": false,
+      "removed_prefix_nonwhitespace_characters": 0,
+      "removed_suffix_nonwhitespace_characters": 0,
+      "redactions": [],
+      "existing_output_verified_not_overwritten": false,
+      "verification": {
+        "canonical_start_lines": {
+          "all_present": true,
+          "count": 6,
+          "anchors": [
+            "生物化学",
+            "一、名词解释（共 30 分，每小题 3 分）",
+            "1. 超螺旋（supercoil）",
+            "2. 分子伴侣 (molecular chaperones)",
+            "3. 结合能（binding energy）",
+            "4. 亲和标记（affinity labels）"
+          ]
+        },
+        "canonical_end_lines": {
+          "all_present": true,
+          "count": 5,
+          "anchors": [
+            "19. 两条单链核酸分子，它们不需足够的互补核苷酸序列就可形成双链结构(杂交)。",
+            "20. 从 2 个丙酮酸分子合成 1 个葡萄糖分子需要 6 个 ATP 分子。",
+            "五、思考题（共 50 分，每题 25 分）",
+            "1 阐述并比较细胞内外生物大分子运转的几种不同方式及其特点",
+            "2. 请你设计：采用不同的生化方法，从某种水生生物中筛选鉴定一个功能基因的实验。"
+          ]
+        },
+        "normalized_poppler_fulltext_equals_canonical": true,
+        "retained_character_text_and_coordinates_unchanged": true,
+        "retained_nonwhitespace_characters": 2255,
+        "redacted_regions_have_no_extractable_text": true,
+        "page_count_and_mediabox_cropbox_unchanged": true,
+        "render_spot_checks": []
+      }
+    },
+    {
+      "id": "IHB_2010_cell",
+      "source_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/derived/IHB_2010_cell.pdf",
+      "source_sha256": "a337de132c5ec2d368200651bc59eacde286c542796868ff02227f1b2d87e7fa",
+      "compiled_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/originals/P020250828543427614142.pdf",
+      "compiled_pages_1based_inclusive": [
+        5,
+        7
+      ],
+      "canonical_subject_text_path": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/text/IHB_2010_cell.txt",
+      "output_pdf": "/home/kazewwk/Documents/DSH/专业课卷子MinerU解析_20261103/inputs/IHB_2010_cell.pdf",
+      "output_sha256": "77bc6a2c71fd6c2a14ff95324dce910cfdbdbcf2add2f5c388dc137d61340b9a",
+      "pages": 3,
+      "had_neighbor_text": true,
+      "removed_prefix_nonwhitespace_characters": 545,
+      "removed_suffix_nonwhitespace_characters": 0,
+      "redactions": [
+        {
+          "page_1based": 1,
+          "side": "above_subject_start",
+          "rect": [
+            0,
+            0,
+            595.303955078125,
+            699.5577697753906
+          ],
+          "retained_anchor": {
+            "text": "细胞生物学",
+            "bbox": [
+              90.0999984741211,
+              704.3827514648438,
+              180.10000610351562,
+              730.248779296875
+            ]
+          },
+          "neighbor_anchor": {
+            "text": "体细胞克隆羊“多莉”成功的原因。",
+            "bbox": [
+              108.05000305175781,
+              677.48876953125,
+              300.04998779296875,
+              694.7327880859375
+            ]
+          },
+          "reason": "Remove preceding subject before canonical heading"
+        }
+      ],
+      "existing_output_verified_not_overwritten": false,
+      "verification": {
+        "canonical_start_lines": {
+          "all_present": true,
+          "count": 6,
+          "anchors": [
+            "细胞生物学",
+            "一、名词解释(每题 2 分，共 20 分)",
+            "1.旁分泌",
+            "2.核酶",
+            "3.核内有丝分裂",
+            "4.胚胎诱导"
+          ]
+        },
+        "canonical_end_lines": {
+          "all_present": true,
+          "count": 5,
+          "anchors": [
+            "四、论述题(每题 20 分，共 40 分)",
+            "1.试述细胞通过哪些途径维持染色体的稳定性。",
+            "2. 一个有机体的发生，隐含着极其精妙的发育调控机制，试述复杂的发育过程是",
+            "通过什么调控机制来产生机体的细胞多样性和时序性，同时又保证世代相传的连",
+            "续性。"
+          ]
+        },
+        "normalized_poppler_fulltext_equals_canonical": true,
+        "retained_character_text_and_coordinates_unchanged": true,
+        "retained_nonwhitespace_characters": 610,
+        "redacted_regions_have_no_extractable_text": true,
+        "page_count_and_mediabox_cropbox_unchanged": true,
+        "render_spot_checks": [
+          {
+            "page_1based": 1,
+            "scale": 1.5,
+            "retained_clip": [
+              0.0,
+              700.5577697753906,
+              595.303955078125,
+              841.8897705078125
+            ],
+            "pixels_identical": true,
+            "pixel_sha256": "67bcbfbdbd6e8d96ca384b8357d4a09ecc6b10a6dd6ce7ed531f6b7c86a540b0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "IHB_2009_bio",
+      "source_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/derived/IHB_2009_bio.pdf",
+      "source_sha256": "3a119bc9f8c6f68835e0f39e2871864eb05f891bdcb70fbaad1888e2a9039ca5",
+      "compiled_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/originals/P020250828508003768894.pdf",
+      "compiled_pages_1based_inclusive": [
+        1,
+        3
+      ],
+      "canonical_subject_text_path": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/text/IHB_2009_bio.txt",
+      "output_pdf": "/home/kazewwk/Documents/DSH/专业课卷子MinerU解析_20261103/inputs/IHB_2009_bio.pdf",
+      "output_sha256": "d33a3fc0fdac4c8c3c2bb1a2519a1d81b1b9399af39a096f9f78064a8b5da416",
+      "pages": 3,
+      "had_neighbor_text": true,
+      "removed_prefix_nonwhitespace_characters": 0,
+      "removed_suffix_nonwhitespace_characters": 35,
+      "redactions": [
+        {
+          "page_1based": 3,
+          "side": "below_subject_end",
+          "rect": [
+            0,
+            613.8729553222656,
+            515.905517578125,
+            728.5039672851562
+          ],
+          "retained_anchor": {
+            "text": "化物质，简介其最新研究进展。",
+            "bbox": [
+              56.79999923706055,
+              590.6709594726562,
+              203.8000030517578,
+              605.8749389648438
+            ]
+          },
+          "neighbor_anchor": {
+            "text": "（2）考试科目：动物学",
+            "bbox": [
+              56.79999923706055,
+              621.8709716796875,
+              168.0,
+              637.074951171875
+            ]
+          },
+          "reason": "Remove next subject after complete canonical final question"
+        }
+      ],
+      "existing_output_verified_not_overwritten": false,
+      "verification": {
+        "canonical_start_lines": {
+          "all_present": true,
+          "count": 6,
+          "anchors": [
+            "中国科学院水生生物研究所",
+            "2009 年硕士研究生入学考试试题",
+            "（1）考试科目： 生物化学",
+            "一、名词翻译与解释（共 30 分，每小题 5 分）",
+            "1. 还原糖",
+            "2. G 蛋白"
+          ]
+        },
+        "canonical_end_lines": {
+          "all_present": true,
+          "count": 5,
+          "anchors": [
+            "五、思考题（共 50 分，每题 25 分）",
+            "1 简介绿色荧光蛋白在生物化学研究中的应用及其发现过程对培养创造性思维的启",
+            "示。",
+            "2、从水生生物的蛋白质、多肽、核酸、多糖、脂类或酶类中，选择一种你很感兴趣的生",
+            "化物质，简介其最新研究进展。"
+          ]
+        },
+        "normalized_poppler_fulltext_equals_canonical": true,
+        "retained_character_text_and_coordinates_unchanged": true,
+        "retained_nonwhitespace_characters": 2598,
+        "redacted_regions_have_no_extractable_text": true,
+        "page_count_and_mediabox_cropbox_unchanged": true,
+        "render_spot_checks": []
+      }
+    },
+    {
+      "id": "IHB_2009_cell",
+      "source_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/derived/IHB_2009_cell.pdf",
+      "source_sha256": "0307e42393a51315a5d24b26b5c969e9b501f4d6e3af4ace3ae2ac52354a7be2",
+      "compiled_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/originals/P020250828508003768894.pdf",
+      "compiled_pages_1based_inclusive": [
+        7,
+        9
+      ],
+      "canonical_subject_text_path": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/text/IHB_2009_cell.txt",
+      "output_pdf": "/home/kazewwk/Documents/DSH/专业课卷子MinerU解析_20261103/inputs/IHB_2009_cell.pdf",
+      "output_sha256": "1ca4d5380d38dc2480e1cc01d90830d8c8b3ad65158774bb71f5a51b9053a5c2",
+      "pages": 3,
+      "had_neighbor_text": true,
+      "removed_prefix_nonwhitespace_characters": 474,
+      "removed_suffix_nonwhitespace_characters": 0,
+      "redactions": [
+        {
+          "page_1based": 1,
+          "side": "above_subject_start",
+          "rect": [
+            0,
+            0,
+            515.905517578125,
+            434.47296142578125
+          ],
+          "retained_anchor": {
+            "text": "（4）考试科目： 细胞生物学   ",
+            "bbox": [
+              56.79999923706055,
+              450.2709655761719,
+              198.5504913330078,
+              465.4749450683594
+            ]
+          },
+          "neighbor_anchor": {
+            "text": "素更有可能成为湖泊藻类生长的限制因子。",
+            "bbox": [
+              56.79999923706055,
+              403.4709777832031,
+              256.29998779296875,
+              418.6749572753906
+            ]
+          },
+          "reason": "Remove preceding subject before canonical heading"
+        }
+      ],
+      "existing_output_verified_not_overwritten": false,
+      "verification": {
+        "canonical_start_lines": {
+          "all_present": true,
+          "count": 6,
+          "anchors": [
+            "（4）考试科目： 细胞生物学",
+            "（答案必须写在答题纸上，写在试题上不给分）",
+            "一、名词解释(每题 2 分，共 20 分)",
+            "1．联会复合体",
+            "2．基粒",
+            "3．微管组织中心"
+          ]
+        },
+        "canonical_end_lines": {
+          "all_present": true,
+          "count": 5,
+          "anchors": [
+            "………………………………..",
+            "五、论述题(每题 20 分，共 40 分)",
+            "1． 举例说明 CDK 激酶在细胞周期中是如何执行调节功能的。",
+            "2． 细胞外信号分子繁多，细胞怎样根据自己的需要对这些信号分子作出选择和精确",
+            "调控。"
+          ]
+        },
+        "normalized_poppler_fulltext_equals_canonical": true,
+        "retained_character_text_and_coordinates_unchanged": true,
+        "retained_nonwhitespace_characters": 1303,
+        "redacted_regions_have_no_extractable_text": true,
+        "page_count_and_mediabox_cropbox_unchanged": true,
+        "render_spot_checks": []
+      }
+    },
+    {
+      "id": "IHB_2008_bio",
+      "source_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/derived/IHB_2008_bio.pdf",
+      "source_sha256": "c6c352b5695507536b3910a85f5eee28bb334a2ffd4a91e42cd4cfb011fd3e54",
+      "compiled_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/originals/P020250828510387136736.pdf",
+      "compiled_pages_1based_inclusive": [
+        1,
+        4
+      ],
+      "canonical_subject_text_path": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/text/IHB_2008_bio.txt",
+      "output_pdf": "/home/kazewwk/Documents/DSH/专业课卷子MinerU解析_20261103/inputs/IHB_2008_bio.pdf",
+      "output_sha256": "c6c352b5695507536b3910a85f5eee28bb334a2ffd4a91e42cd4cfb011fd3e54",
+      "pages": 4,
+      "had_neighbor_text": false,
+      "removed_prefix_nonwhitespace_characters": 0,
+      "removed_suffix_nonwhitespace_characters": 0,
+      "redactions": [],
+      "existing_output_verified_not_overwritten": false,
+      "verification": {
+        "canonical_start_lines": {
+          "all_present": true,
+          "count": 6,
+          "anchors": [
+            "2008 年水生生物研究所硕士入学考试题 1",
+            "（一）考试科目：生物化学",
+            "一、填空（共 25 分，每空 1 分）。",
+            "1. 当氨基酸溶液的 pH=pI 时，氨基酸以_____离子形式存在；当 pH>pI 时，氨基酸以____离",
+            "子形式存在。",
+            "2. 含有羟基的天然氨基酸有_____、_____、和_____。"
+          ]
+        },
+        "canonical_end_lines": {
+          "all_present": true,
+          "count": 5,
+          "anchors": [
+            "6. homologous recombination",
+            "五、 思考题（共 50 分，每题 25 分）",
+            "1. 请介绍基因敲除的原理、技术路线及应用。",
+            "2. 任选下列一小题论述之",
+            "从生化角度来探讨：① 动物学、② 水生生物学、③ 遗传学 或 ④ 环境科学的理论问题。"
+          ]
+        },
+        "normalized_poppler_fulltext_equals_canonical": true,
+        "retained_character_text_and_coordinates_unchanged": true,
+        "retained_nonwhitespace_characters": 2414,
+        "redacted_regions_have_no_extractable_text": true,
+        "page_count_and_mediabox_cropbox_unchanged": true,
+        "render_spot_checks": []
+      }
+    },
+    {
+      "id": "IHB_2008_cell",
+      "source_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/derived/IHB_2008_cell.pdf",
+      "source_sha256": "3faaadda3d9a8a0103a2a840f73791ddce2b2435af6ca4ab8132e7605da2bcb6",
+      "compiled_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/originals/P020250828542517867005.pdf",
+      "compiled_pages_1based_inclusive": [
+        2,
+        4
+      ],
+      "canonical_subject_text_path": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/text/IHB_2008_cell.txt",
+      "output_pdf": "/home/kazewwk/Documents/DSH/专业课卷子MinerU解析_20261103/inputs/IHB_2008_cell.pdf",
+      "output_sha256": "dd495884b614ff25461eef9036f48f7a8bb446afd933c1158a2098f47775daca",
+      "pages": 3,
+      "had_neighbor_text": true,
+      "removed_prefix_nonwhitespace_characters": 224,
+      "removed_suffix_nonwhitespace_characters": 46,
+      "redactions": [
+        {
+          "page_1based": 1,
+          "side": "above_subject_start",
+          "rect": [
+            0,
+            0,
+            515.905517578125,
+            260.49796295166016
+          ],
+          "retained_anchor": {
+            "text": "考试科目：细胞生物学",
+            "bbox": [
+              89.94999694824219,
+              277.470947265625,
+              269.95001220703125,
+              303.5349426269531
+            ]
+          },
+          "neighbor_anchor": {
+            "text": "生物分别说明以其开展遗传学研究的资源和技术的优劣（25 分）。",
+            "bbox": [
+              89.94999694824219,
+              228.32098388671875,
+              398.45001220703125,
+              243.5249786376953
+            ]
+          },
+          "reason": "Remove preceding subject before canonical heading"
+        },
+        {
+          "page_1based": 3,
+          "side": "below_subject_end",
+          "rect": [
+            0,
+            478.89796447753906,
+            515.905517578125,
+            728.5039672851562
+          ],
+          "retained_anchor": {
+            "text": "机制。",
+            "bbox": [
+              89.94999694824219,
+              415.5209655761719,
+              121.44999694824219,
+              430.7249450683594
+            ]
+          },
+          "neighbor_anchor": {
+            "text": "考试科目： 分析化学",
+            "bbox": [
+              89.94999694824219,
+              527.0709838867188,
+              256.45001220703125,
+              553.135009765625
+            ]
+          },
+          "reason": "Remove next subject after complete canonical final question"
+        }
+      ],
+      "existing_output_verified_not_overwritten": false,
+      "verification": {
+        "canonical_start_lines": {
+          "all_present": true,
+          "count": 6,
+          "anchors": [
+            "考试科目：细胞生物学",
+            "（答案必须写在答题纸上，写在试题上不给分）",
+            "一、名词解释(每题 2 分，共 20 分)",
+            "1．二价体",
+            "2．染色体消减",
+            "3．间隙连接"
+          ]
+        },
+        "canonical_end_lines": {
+          "all_present": true,
+          "count": 5,
+          "anchors": [
+            "五、论述题(每题 20 分，共 40 分)",
+            "1．何为细胞骨架？它的主要功能是什么？怎样用实验的方法证实细胞",
+            "中是否存在某一类骨架结构或组分？",
+            "2．试论述干细胞的一般生物学特性及干细胞存活、增殖和分化的调控",
+            "机制。"
+          ]
+        },
+        "normalized_poppler_fulltext_equals_canonical": true,
+        "retained_character_text_and_coordinates_unchanged": true,
+        "retained_nonwhitespace_characters": 942,
+        "redacted_regions_have_no_extractable_text": true,
+        "page_count_and_mediabox_cropbox_unchanged": true,
+        "render_spot_checks": []
+      }
+    },
+    {
+      "id": "IHB_2007_cell",
+      "source_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/derived/IHB_2007_cell.pdf",
+      "source_sha256": "e9241c55146c4c4b5094a6ea769103e556a3892e1772febed893bf6fb3b255bf",
+      "compiled_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/originals/P020250828504013909872.pdf",
+      "compiled_pages_1based_inclusive": [
+        4,
+        6
+      ],
+      "canonical_subject_text_path": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/text/IHB_2007_cell.txt",
+      "output_pdf": "/home/kazewwk/Documents/DSH/专业课卷子MinerU解析_20261103/inputs/IHB_2007_cell.pdf",
+      "output_sha256": "cafabb6abbd02417cb8d20b3fa998f5c62ea33a69f1be1abaf12d5b75e69b3b2",
+      "pages": 3,
+      "had_neighbor_text": true,
+      "removed_prefix_nonwhitespace_characters": 636,
+      "removed_suffix_nonwhitespace_characters": 71,
+      "redactions": [
+        {
+          "page_1based": 1,
+          "side": "above_subject_start",
+          "rect": [
+            0,
+            0,
+            515.905517578125,
+            503.2229919433594
+          ],
+          "retained_anchor": {
+            "text": "（3）考试科目：细胞生物学",
+            "bbox": [
+              56.79999923706055,
+              511.22100830078125,
+              189.0,
+              526.4249877929688
+            ]
+          },
+          "neighbor_anchor": {
+            "text": "3．从胚胎学的角度论述动物的进化。",
+            "bbox": [
+              74.80000305175781,
+              480.02099609375,
+              248.64999389648438,
+              495.2249755859375
+            ]
+          },
+          "reason": "Remove preceding subject before canonical heading"
+        },
+        {
+          "page_1based": 3,
+          "side": "below_subject_end",
+          "rect": [
+            0,
+            503.2229919433594,
+            515.905517578125,
+            728.5039672851562
+          ],
+          "retained_anchor": {
+            "text": "2．解释细胞分化的全能性，如何证明已分化体细胞的细胞核仍具有全能性？",
+            "bbox": [
+              74.80000305175781,
+              480.02099609375,
+              427.1499938964844,
+              495.2249755859375
+            ]
+          },
+          "neighbor_anchor": {
+            "text": "（4）考试科目： 分析化学   ",
+            "bbox": [
+              56.79999923706055,
+              511.22100830078125,
+              188.03399658203125,
+              526.4249877929688
+            ]
+          },
+          "reason": "Remove next subject after complete canonical final question"
+        }
+      ],
+      "existing_output_verified_not_overwritten": false,
+      "verification": {
+        "canonical_start_lines": {
+          "all_present": true,
+          "count": 6,
+          "anchors": [
+            "（3）考试科目：细胞生物学",
+            "一、名词解释(每题 2 分，共 20 分)",
+            "1．衰老小体",
+            "2．自分泌",
+            "3．协同运输",
+            "4. 核内有丝分裂"
+          ]
+        },
+        "canonical_end_lines": {
+          "all_present": true,
+          "count": 5,
+          "anchors": [
+            "5. 试述线粒体的超微结构。",
+            "6. 试述蛋白质的运输和分选。",
+            "五、论述题(每题 20 分，共 40 分)",
+            "1． 如何理解细胞生长和细胞分裂之间的辨正关系？",
+            "2．解释细胞分化的全能性，如何证明已分化体细胞的细胞核仍具有全能性？"
+          ]
+        },
+        "normalized_poppler_fulltext_equals_canonical": true,
+        "retained_character_text_and_coordinates_unchanged": true,
+        "retained_nonwhitespace_characters": 917,
+        "redacted_regions_have_no_extractable_text": true,
+        "page_count_and_mediabox_cropbox_unchanged": true,
+        "render_spot_checks": []
+      }
+    },
+    {
+      "id": "IHB_2006_bio",
+      "source_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/derived/IHB_2006_bio.pdf",
+      "source_sha256": "5e60cda7d0488c6b8d195630fc02a021c17997f17d497d4bedcf1dde36c57727",
+      "compiled_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/originals/P020250828511981563591.pdf",
+      "compiled_pages_1based_inclusive": [
+        6,
+        8
+      ],
+      "canonical_subject_text_path": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/text/IHB_2006_bio.txt",
+      "output_pdf": "/home/kazewwk/Documents/DSH/专业课卷子MinerU解析_20261103/inputs/IHB_2006_bio.pdf",
+      "output_sha256": "96e65a1ad8136887f96ad2840f827926b56cbe07940aa874ca24a723773939a7",
+      "pages": 3,
+      "had_neighbor_text": true,
+      "removed_prefix_nonwhitespace_characters": 227,
+      "removed_suffix_nonwhitespace_characters": 0,
+      "redactions": [
+        {
+          "page_1based": 1,
+          "side": "above_subject_start",
+          "rect": [
+            0,
+            0,
+            595.303955078125,
+            320.7122497558594
+          ],
+          "retained_anchor": {
+            "text": "中国科学院水生生物研究所 ",
+            "bbox": [
+              189.75,
+              345.520751953125,
+              409.83599853515625,
+              371.5847473144531
+            ]
+          },
+          "neighbor_anchor": {
+            "text": "3．比较陆地生态系统和水域生态系统结构和功能的差异。",
+            "bbox": [
+              108.0999984741211,
+              280.81524658203125,
+              376.8500061035156,
+              295.90374755859375
+            ]
+          },
+          "reason": "Remove preceding subject before canonical heading"
+        }
+      ],
+      "existing_output_verified_not_overwritten": false,
+      "verification": {
+        "canonical_start_lines": {
+          "all_present": true,
+          "count": 6,
+          "anchors": [
+            "中国科学院水生生物研究所",
+            "2006 年硕士研究生入学考试试题",
+            "考试科目：生 物 化 学",
+            "（答案必须写在答题纸上，写在试题上不给分）",
+            "一、填空（共 20 分，每空 1 分）。",
+            "1. 蛋白质中的氨基酸均是_______。"
+          ]
+        },
+        "canonical_end_lines": {
+          "all_present": true,
+          "count": 5,
+          "anchors": [
+            "是 β－折叠状态， 其长度又为多少 nm？",
+            "五、 思考题（每题 25 分，共 50 分）",
+            "1. 食物中糖类在小肠内是如何被吸收进入细胞内的？糖代谢与脂肪代谢是通过哪些反",
+            "应联系起来的 ？",
+            "2. 试论：非编码 RNA 的作用及与基因的关系"
+          ]
+        },
+        "normalized_poppler_fulltext_equals_canonical": true,
+        "retained_character_text_and_coordinates_unchanged": true,
+        "retained_nonwhitespace_characters": 1740,
+        "redacted_regions_have_no_extractable_text": true,
+        "page_count_and_mediabox_cropbox_unchanged": true,
+        "render_spot_checks": []
+      }
+    },
+    {
+      "id": "IHB_2006_cell",
+      "source_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/derived/IHB_2006_cell.pdf",
+      "source_sha256": "cc815d75c7084ae07ad79734f3cab84dfaad788fee42bb1c7d5bc71ca5085886",
+      "compiled_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/originals/P020250828511648914727.pdf",
+      "compiled_pages_1based_inclusive": [
+        8,
+        10
+      ],
+      "canonical_subject_text_path": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/text/IHB_2006_cell.txt",
+      "output_pdf": "/home/kazewwk/Documents/DSH/专业课卷子MinerU解析_20261103/inputs/IHB_2006_cell.pdf",
+      "output_sha256": "cc815d75c7084ae07ad79734f3cab84dfaad788fee42bb1c7d5bc71ca5085886",
+      "pages": 3,
+      "had_neighbor_text": false,
+      "removed_prefix_nonwhitespace_characters": 0,
+      "removed_suffix_nonwhitespace_characters": 0,
+      "redactions": [],
+      "existing_output_verified_not_overwritten": false,
+      "verification": {
+        "canonical_start_lines": {
+          "all_present": true,
+          "count": 6,
+          "anchors": [
+            "中国科学院水生生物研究所",
+            "2006 年 硕 士研究生入学考试试",
+            "题",
+            "考试科目： 细胞生物学",
+            "（答案必须写在答题纸上，写在试题上不给分）",
+            "一、名词解释(每题 2 分，共 20 分)"
+          ]
+        },
+        "canonical_end_lines": {
+          "all_present": true,
+          "count": 5,
+          "anchors": [
+            "6. 举例说明诱导细胞凋亡的因子有哪些。",
+            "五、论述题(每题 20 分，共 40 分)",
+            "1． 动物和植物的发育模式差异较大，但发育过程中许多事件带有",
+            "普遍性，试从细胞水平论述发育的细胞共性事件有哪些。",
+            "2．如何研究一个基因在细胞和发育中的功能？"
+          ]
+        },
+        "normalized_poppler_fulltext_equals_canonical": true,
+        "retained_character_text_and_coordinates_unchanged": true,
+        "retained_nonwhitespace_characters": 1001,
+        "redacted_regions_have_no_extractable_text": true,
+        "page_count_and_mediabox_cropbox_unchanged": true,
+        "render_spot_checks": []
+      }
+    },
+    {
+      "id": "IHB_2005_bio",
+      "source_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/derived/IHB_2005_bio.pdf",
+      "source_sha256": "65a478eb33f94a4d6cfc8e805ec01c116706026e062bd0c3d84f7b8b47784351",
+      "compiled_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/originals/P020250828531738207269.pdf",
+      "compiled_pages_1based_inclusive": [
+        4,
+        7
+      ],
+      "canonical_subject_text_path": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/text/IHB_2005_bio.txt",
+      "output_pdf": "/home/kazewwk/Documents/DSH/专业课卷子MinerU解析_20261103/inputs/IHB_2005_bio.pdf",
+      "output_sha256": "368b4e00e69424ef9e647cfbe8da03a95f56c7f73097054c181c49780a81079c",
+      "pages": 4,
+      "had_neighbor_text": true,
+      "removed_prefix_nonwhitespace_characters": 333,
+      "removed_suffix_nonwhitespace_characters": 115,
+      "redactions": [
+        {
+          "page_1based": 1,
+          "side": "above_subject_start",
+          "rect": [
+            0,
+            0,
+            498.89764404296875,
+            398.74742126464844
+          ],
+          "retained_anchor": {
+            "text": "中国科学院水生生物研究所",
+            "bbox": [
+              180.3000030517578,
+              415.7204284667969,
+              396.29998779296875,
+              441.784423828125
+            ]
+          },
+          "neighbor_anchor": {
+            "text": "3．全球性环境问题有哪些？有何解决措施？",
+            "bbox": [
+              107.94999694824219,
+              366.5704345703125,
+              313.6499938964844,
+              381.7744140625
+            ]
+          },
+          "reason": "Remove preceding subject before canonical heading"
+        },
+        {
+          "page_1based": 4,
+          "side": "below_subject_end",
+          "rect": [
+            0,
+            328.54742431640625,
+            498.89764404296875,
+            708.6614379882812
+          ],
+          "retained_anchor": {
+            "text": "   2.简述tRNA 二级结构的组成特点及每一部分功能。",
+            "bbox": [
+              89.94999694824219,
+              288.5704345703125,
+              334.54998779296875,
+              303.7744140625
+            ]
+          },
+          "neighbor_anchor": {
+            "text": "中国科学院水生生物研究所",
+            "bbox": [
+              141.5500030517578,
+              353.3204345703125,
+              357.54998779296875,
+              379.3844299316406
+            ]
+          },
+          "reason": "Remove next subject after complete canonical final question"
+        }
+      ],
+      "existing_output_verified_not_overwritten": false,
+      "verification": {
+        "canonical_start_lines": {
+          "all_present": true,
+          "count": 6,
+          "anchors": [
+            "中国科学院水生生物研究所",
+            "2005 年硕士研究生入学考试试",
+            "题",
+            "考试科目： 生物化学",
+            "（答案必须写在答题纸上，写在试题上不给分）",
+            "一、填空（共 30 分，每空 1 分）。"
+          ]
+        },
+        "canonical_end_lines": {
+          "all_present": true,
+          "count": 5,
+          "anchors": [
+            "10.在 pH7.0, 0.165mol/L NaCl 条件下，测得某一 DNA 样品的 Tm",
+            "为 89.3℃。求出四种碱基的百分组成。",
+            "五、 思考题（每题 20 分，共 40 分）",
+            "1.何为呼吸链？其排列顺序可用哪些实验方法来确定？",
+            "2.简述 tRNA 二级结构的组成特点及每一部分功能。"
+          ]
+        },
+        "normalized_poppler_fulltext_equals_canonical": true,
+        "retained_character_text_and_coordinates_unchanged": true,
+        "retained_nonwhitespace_characters": 2088,
+        "redacted_regions_have_no_extractable_text": true,
+        "page_count_and_mediabox_cropbox_unchanged": true,
+        "render_spot_checks": [
+          {
+            "page_1based": 4,
+            "scale": 1.5,
+            "retained_clip": [
+              0.0,
+              0.0,
+              498.89764404296875,
+              327.54742431640625
+            ],
+            "pixels_identical": true,
+            "pixel_sha256": "22132e287838097b922cf5b65156625f0ed7d1ebc06c20507c80502be374d235"
+          }
+        ]
+      }
+    },
+    {
+      "id": "IHB_2005_cell",
+      "source_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/derived/IHB_2005_cell.pdf",
+      "source_sha256": "8142ed4679dca3aa4a2d79361a460624c7a87a772f2cce442a9d5674a96342c5",
+      "compiled_pdf": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/originals/P020250828533050814179.pdf",
+      "compiled_pages_1based_inclusive": [
+        5,
+        8
+      ],
+      "canonical_subject_text_path": "/home/kazewwk/Documents/DSH/github-test-exams-20261103/考研试卷/生化细胞_新增50套_20261103/01_UCAS_IHB/text/IHB_2005_cell.txt",
+      "output_pdf": "/home/kazewwk/Documents/DSH/专业课卷子MinerU解析_20261103/inputs/IHB_2005_cell.pdf",
+      "output_sha256": "5558914d12eef438d7a35f926af28d7dc90188bb29b10eaeb32f9343e223df73",
+      "pages": 4,
+      "had_neighbor_text": true,
+      "removed_prefix_nonwhitespace_characters": 378,
+      "removed_suffix_nonwhitespace_characters": 183,
+      "redactions": [
+        {
+          "page_1based": 1,
+          "side": "above_subject_start",
+          "rect": [
+            0,
+            0,
+            498.89764404296875,
+            414.34742736816406
+          ],
+          "retained_anchor": {
+            "text": "中国科学院水生生物研究所",
+            "bbox": [
+              141.5500030517578,
+              478.12042236328125,
+              357.54998779296875,
+              504.1844177246094
+            ]
+          },
+          "neighbor_anchor": {
+            "text": "2．论述DNA 结合蛋白及其调控作用。",
+            "bbox": [
+              107.94999694824219,
+              335.3704528808594,
+              287.45001220703125,
+              350.5744323730469
+            ]
+          },
+          "reason": "Remove preceding subject before canonical heading"
+        },
+        {
+          "page_1based": 4,
+          "side": "below_subject_end",
+          "rect": [
+            0,
+            195.94745635986328,
+            498.89764404296875,
+            708.6614379882812
+          ],
+          "retained_anchor": {
+            "text": "2．介绍3 种研究发育生物学的模式生物及其作为模式生物的优点。",
+            "bbox": [
+              107.94999694824219,
+              70.17046356201172,
+              413.5,
+              85.37446594238281
+            ]
+          },
+          "neighbor_anchor": {
+            "text": "中国科学院水生生物研究所",
+            "bbox": [
+              180.3000030517578,
+              306.52044677734375,
+              396.29998779296875,
+              332.5844421386719
+            ]
+          },
+          "reason": "Remove next subject after complete canonical final question"
+        }
+      ],
+      "existing_output_verified_not_overwritten": false,
+      "verification": {
+        "canonical_start_lines": {
+          "all_present": true,
+          "count": 6,
+          "anchors": [
+            "中国科学院水生生物研究所",
+            "2005 年硕士研究生入学考试试题",
+            "考试科目：细胞生物学",
+            "（答案必须写在答题纸上，写在试题上不给分）",
+            "一、名词解释(每题 2 分，共 10 分)",
+            "1．核酶        2．顺式作用元件"
+          ]
+        },
+        "canonical_end_lines": {
+          "all_present": true,
+          "count": 5,
+          "anchors": [
+            "5．简述早期卵裂细胞的特殊性。",
+            "6．简述 mRNA 的结构特征及其调控区域。",
+            "五、论述题(每题 20 分，共 40 分)",
+            "1． 什么是胚胎干细胞？其增殖有何特点？其研究有何意义？",
+            "2．介绍 3 种研究发育生物学的模式生物及其作为模式生物的优点。"
+          ]
+        },
+        "normalized_poppler_fulltext_equals_canonical": true,
+        "retained_character_text_and_coordinates_unchanged": true,
+        "retained_nonwhitespace_characters": 1037,
+        "redacted_regions_have_no_extractable_text": true,
+        "page_count_and_mediabox_cropbox_unchanged": true,
+        "render_spot_checks": [
+          {
+            "page_1based": 4,
+            "scale": 1.5,
+            "retained_clip": [
+              0.0,
+              0.0,
+              498.89764404296875,
+              194.94745635986328
+            ],
+            "pixels_identical": true,
+            "pixel_sha256": "af8c6eff3514faebcd8438ce907b590154b29b68725dd6f5de7c91fa512718d2"
+          }
+        ]
+      }
+    }
+  ]
+}
