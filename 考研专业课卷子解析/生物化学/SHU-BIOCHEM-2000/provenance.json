@@ -29,28 +29,30 @@
     "effort": "xhigh",
     "ocr_mode": "ocr",
     "image_analysis": true,
-    "backend": "cpu",
+    "backend": "gpu",
     "small_backend": "onnx",
-    "vlm_engine": "llama-cpp",
-    "quantization": "Q8_0",
+    "vlm_engine": "vllm",
+    "quantization": "original weights",
     "versions": {
       "mineru": "4.1.5",
       "docvortex": "0.6.11",
       "mineru-llama-cpp": "0.2.0",
+      "torch": "2.13.0",
+      "vllm": "0.28.0",
       "PyMuPDF": "1.28.2"
     },
-    "python": "3.12.3",
+    "python": "3.13.16",
     "input_sha256": "59231b1b744e151df560a30c26c53168fc7f37f0b8629697c9014fe2023c7543",
     "original_physical_pages": 3,
     "processed_pages": 3,
-    "seconds": 1171.98,
+    "seconds": 31.097,
     "input_method": "original_pdf_byte_copy",
     "page_mapping": null,
     "warnings": [],
     "output_sha256": {
-      "middle_json.json": "81b8ce22c7ffbd592b0734ab5e9cadf39e42c07dfa71decd0fd4581c29e4d7d3",
-      "structured_content.json": "bf278faafa5141bb2fa63d28467a91d0e595e5869c5e6e452f902f5bacc3f64c",
-      "markdown.md": "c6ad436d81516b5aabc41f6927ac51196b6e2a2374d3696ecf4a6530d2cf4218"
+      "structured_content.json": "ff57600ef3d28efa8e5d7c6e0c9f8dfe5110c25f67b2d2778e59b9c17c2f9e7c",
+      "markdown.md": "7b319a0589187ff742f3f6b006c73664b5c8d9a050d7756f7b410fdf86bb19d3",
+      "middle_json.json": "66d6e24c7f82c250c8e370d6ba27cae38585244e2e36bad35841a8963d590361"
     }
   },
   "warnings": [],

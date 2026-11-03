@@ -1,0 +1,37 @@
+{
+  "status": "success",
+  "id": "BNU_2001_biochemistry",
+  "title": "北京师范大学2001年生物化学考研试题",
+  "subject_group": "生物化学",
+  "tier": "advanced",
+  "effort": "xhigh",
+  "ocr_mode": "ocr",
+  "image_analysis": true,
+  "backend": "gpu",
+  "small_backend": "onnx",
+  "vlm_engine": "vllm",
+  "quantization": "original weights",
+  "versions": {
+    "mineru": "4.1.5",
+    "docvortex": "0.6.11",
+    "mineru-llama-cpp": "0.2.0",
+    "torch": "2.13.0",
+    "vllm": "0.28.0",
+    "PyMuPDF": "1.28.2"
+  },
+  "python": "3.13.16",
+  "input_sha256": "61c5651e22afb8a3f4d106fb18dc1da88eec5cfdda0158e451c9312529cb4899",
+  "original_physical_pages": 2,
+  "processed_pages": 2,
+  "seconds": 20.909,
+  "input_method": "original_pdf_byte_copy",
+  "page_mapping": null,
+  "warnings": [
+    "原PDF文本层字库乱码，优先高精度图像OCR/视觉模型，不直接信任嵌入文字。"
+  ],
+  "output_sha256": {
+    "structured_content.json": "293a9759912308bd5a7898dcabccb1913cdc93428b7211eb2b524875e51957bb",
+    "markdown.md": "a48ddd1fd3c157ad87bad29450d69ef51d0e5cebebcfe3b131302fb30a3199be",
+    "middle_json.json": "37d8d05df111c24d9492ed3401e12fa6bf8faf8eb4c025a42eb7f8c28ebfc993"
+  }
+}
