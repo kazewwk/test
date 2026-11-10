@@ -30,8 +30,10 @@ APKG 下载后导入 Anki。各章保留稳定、独立的笔记标识；已用�
 
 后续制卡默认将最终 APKG 和独立闭卷练习同步到本目录，并更新本表、提供 GitHub 下载链接。
 
+## 答辩专题
 
+| 专题 | 卡片 | APKG | 独立闭卷练习 |
+| --- | ---: | --- | --- |
+| TNFα 综合大实验答辩 | 72 | [下载 APKG](https://raw.githubusercontent.com/kazewwk/test/main/%E7%94%9F%E5%8C%96%E5%88%B6%E5%8D%A1/%E5%B7%B2%E5%AE%8C%E6%88%90%E5%8D%A1%E7%BB%84/TNF%CE%B1%E7%BB%BC%E5%90%88%E5%A4%A7%E5%AE%9E%E9%AA%8C_%E7%AD%94%E8%BE%A9%E7%B2%BE%E7%AE%80%E5%8D%A1.apkg) | [8 道综合口述＋72 张全卡预览（离线 HTML）](https://raw.githubusercontent.com/kazewwk/test/main/%E7%94%9F%E5%8C%96%E5%88%B6%E5%8D%A1/%E5%B7%B2%E5%AE%8C%E6%88%90%E5%8D%A1%E7%BB%84/TNF%CE%B1%E7%BB%BC%E5%90%88%E5%A4%A7%E5%AE%9E%E9%AA%8C_%E7%8B%AC%E7%AB%8B%E9%97%AD%E5%8D%B7%E7%BB%83%E4%B9%A0.html) |
 
-
-
-
+TNFα 专题依据用户提供的 43 页复习手册，核对了 141 道编号问答及图表、计算和纠错内容。62 张由 Claude Code 的 Fable 5.2 extra（xhigh）逐段完成，10 张仅在缩到单页仍被拒答后补作，卡内来源注明作者。保留 4 幅原图；APKG 已验证原生导入 72 张、重复导入不增加重复卡。目录、来源索引和个人记录核对表保留在 HTML 说明中，不占背诵卡。
