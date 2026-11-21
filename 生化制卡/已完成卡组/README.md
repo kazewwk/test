@@ -1,6 +1,6 @@
 # 生化 Anki 卡组与闭卷练习
 
-已完成第一至第二十八章、第三十一至第三十四章，共 **2760 张日常卡片、258 道独立闭卷练习**（上海大学 858 精简版，其中 452 张带真题标签）。APKG 内含所需图片，导入后沿用“生化 → 各章”卡组结构。
+已完成第一至第二十八章、第三十一至第三十四章、第三十六章，共 **2782 张日常卡片、262 道独立闭卷练习**（上海大学 858 精简版，其中 452 张带真题标签）。APKG 内含所需图片，导入后沿用“生化 → 各章”卡组结构。
 
 | 章节 | 日常卡片 | APKG | 独立闭卷练习 |
 | --- | ---: | --- | --- |
@@ -39,6 +39,7 @@
 | 第三十二章 | 107 | [下载 APKG](https://raw.githubusercontent.com/kazewwk/test/main/%E7%94%9F%E5%8C%96%E5%88%B6%E5%8D%A1/%E5%B7%B2%E5%AE%8C%E6%88%90%E5%8D%A1%E7%BB%84/%E7%94%9F%E5%8C%96_%E7%AC%AC%E4%B8%89%E5%8D%81%E4%BA%8C%E7%AB%A0_RNA%E7%9A%84%E7%94%9F%E7%89%A9%E5%90%88%E6%88%90%E5%92%8C%E5%8A%A0%E5%B7%A5.apkg) | [10 道练习（HTML）](https://raw.githubusercontent.com/kazewwk/test/main/%E7%94%9F%E5%8C%96%E5%88%B6%E5%8D%A1/%E5%B7%B2%E5%AE%8C%E6%88%90%E5%8D%A1%E7%BB%84/%E7%94%9F%E5%8C%96_%E7%AC%AC%E4%B8%89%E5%8D%81%E4%BA%8C%E7%AB%A0_%E7%8B%AC%E7%AB%8B%E9%97%AD%E5%8D%B7%E7%BB%83%E4%B9%A0.html) |
 | 第三十三章 | 107 | [下载 APKG](https://raw.githubusercontent.com/kazewwk/test/main/%E7%94%9F%E5%8C%96%E5%88%B6%E5%8D%A1/%E5%B7%B2%E5%AE%8C%E6%88%90%E5%8D%A1%E7%BB%84/%E7%94%9F%E5%8C%96_%E7%AC%AC%E4%B8%89%E5%8D%81%E4%B8%89%E7%AB%A0_%E8%9B%8B%E7%99%BD%E8%B4%A8%E5%90%88%E6%88%90%E3%80%81%E5%8A%A0%E5%B7%A5%E5%92%8C%E5%AE%9A%E4%BD%8D.apkg) | [9 道练习（HTML）](https://raw.githubusercontent.com/kazewwk/test/main/%E7%94%9F%E5%8C%96%E5%88%B6%E5%8D%A1/%E5%B7%B2%E5%AE%8C%E6%88%90%E5%8D%A1%E7%BB%84/%E7%94%9F%E5%8C%96_%E7%AC%AC%E4%B8%89%E5%8D%81%E4%B8%89%E7%AB%A0_%E7%8B%AC%E7%AB%8B%E9%97%AD%E5%8D%B7%E7%BB%83%E4%B9%A0.html) |
 | 第三十四章 | 89 | [下载 APKG](https://raw.githubusercontent.com/kazewwk/test/main/%E7%94%9F%E5%8C%96%E5%88%B6%E5%8D%A1/%E5%B7%B2%E5%AE%8C%E6%88%90%E5%8D%A1%E7%BB%84/%E7%94%9F%E5%8C%96_%E7%AC%AC%E4%B8%89%E5%8D%81%E5%9B%9B%E7%AB%A0_%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E8%B0%83%E8%8A%82.apkg) | [8 道练习（HTML）](https://raw.githubusercontent.com/kazewwk/test/main/%E7%94%9F%E5%8C%96%E5%88%B6%E5%8D%A1/%E5%B7%B2%E5%AE%8C%E6%88%90%E5%8D%A1%E7%BB%84/%E7%94%9F%E5%8C%96_%E7%AC%AC%E4%B8%89%E5%8D%81%E5%9B%9B%E7%AB%A0_%E7%8B%AC%E7%AB%8B%E9%97%AD%E5%8D%B7%E7%BB%83%E4%B9%A0.html) |
+| 第三十六章 | 22 | [下载 APKG](https://raw.githubusercontent.com/kazewwk/test/main/%E7%94%9F%E5%8C%96%E5%88%B6%E5%8D%A1/%E5%B7%B2%E5%AE%8C%E6%88%90%E5%8D%A1%E7%BB%84/%E7%94%9F%E5%8C%96_%E7%AC%AC%E4%B8%89%E5%8D%81%E5%85%AD%E7%AB%A0_%E5%9F%BA%E5%9B%A0%E7%BB%84%E5%AD%A6%E5%8F%8A%E8%9B%8B%E7%99%BD%E8%B4%A8%E7%BB%84%E5%AD%A6.apkg) | [4 道练习（HTML）](https://raw.githubusercontent.com/kazewwk/test/main/%E7%94%9F%E5%8C%96%E5%88%B6%E5%8D%A1/%E5%B7%B2%E5%AE%8C%E6%88%90%E5%8D%A1%E7%BB%84/%E7%94%9F%E5%8C%96_%E7%AC%AC%E4%B8%89%E5%8D%81%E5%85%AD%E7%AB%A0_%E7%8B%AC%E7%AB%8B%E9%97%AD%E5%8D%B7%E7%BB%83%E4%B9%A0.html) |
 
 
 ## 精简版说明（2026-11）
